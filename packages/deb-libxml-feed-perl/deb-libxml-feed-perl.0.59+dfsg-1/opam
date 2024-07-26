@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libxml-feed-perl_0.59+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libxml-feed-perl"]
+]
+depends: [
+  "deb-libclass-errorhandler-perl"
+  "deb-libdatetime-format-flexible-perl"
+  "deb-libdatetime-format-iso8601-perl"
+  "deb-libdatetime-format-mail-perl"
+  "deb-libdatetime-format-natural-perl"
+  "deb-libdatetime-format-w3cdtf-perl"
+  "deb-libdatetime-perl"
+  "deb-libfeed-find-perl"
+  "deb-libhtml-parser-perl"
+  "deb-liburi-fetch-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-libxml-atom-perl"
+  "deb-libxml-libxml-perl"
+  "deb-libxml-rss-perl"
+  "deb-perl"
+  ("deb-libmodule-pluggable-perl" | "deb- perl" {< "5.17.9"})
+]
+extra-source "libxml-feed-perl_0.59+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libx/libxml-feed-perl/libxml-feed-perl_0.59+dfsg-1_all.deb"
+}

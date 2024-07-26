@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kirigami-gallery_20.12.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kirigami-gallery"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5qml5" {>= "5.8.0~"}
+  "deb-libqt5widgets5" {>= "5.8.0~"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-qml-module-org-kde-kitemmodels"
+  "deb-qml-module-qtgraphicaleffects"
+]
+extra-source "kirigami-gallery_20.12.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kirigami-gallery/kirigami-gallery_20.12.0-1_amd64.deb"
+}

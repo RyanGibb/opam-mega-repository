@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsearpc-dev_3.2.0-7-g50ff08b-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsearpc-dev"]
+]
+depends: [
+  "deb-libglib2-0-dev"
+  "deb-libjansson-dev"
+  "deb-libsearpc1" {= "3.2.0-7-g50ff08b-1"}
+  "deb-python3-any"
+  "deb-python3-searpc" {>= "3.2.0-7-g50ff08b-1"}
+]
+extra-source "libsearpc-dev_3.2.0-7-g50ff08b-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libs/libsearpc/libsearpc-dev_3.2.0-7-g50ff08b-1_amd64.deb"
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i plplot-driver-cairo_5.15.0+dfsg-19_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r plplot-driver-cairo"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libcairo2" {>= "1.6.0"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libpango-1-0-0" {>= "1.22.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libplplot17" {>= "5.15.0+dfsg"}
+  "deb-libx11-6"
+]
+conflicts: [
+  "deb-plplot12-driver-cairo"
+]
+extra-source "plplot-driver-cairo_5.15.0+dfsg-19_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/plplot/plplot-driver-cairo_5.15.0+dfsg-19_amd64.deb"
+}

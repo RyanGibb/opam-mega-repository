@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gsequencer_4.4.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gsequencer"]
+]
+depends: [
+  "deb-gsequencer-data" {<= "4.4.3+"}
+  "deb-gsequencer-data" {>= "4.4.3"}
+  "deb-gstreamer1-0-plugins-bad"
+  "deb-gstreamer1-0-plugins-base"
+  "deb-gstreamer1-0-plugins-good"
+  "deb-libags-audio4" {>= "4.0.2"}
+  "deb-libags-gui4" {>= "4.0.2"}
+  "deb-libags4" {>= "4.0.2"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.14.0"}
+  "deb-libglib2-0-0" {>= "2.53.1"}
+  "deb-libgraphene-1-0-0" {>= "1.5.4"}
+  "deb-libgstreamer1-0-0" {>= "1.0.0"}
+  "deb-libgtk-4-1" {>= "4.6.0"}
+  "deb-libinstpatch-1-0-2" {>= "1.0.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpoppler-glib8" {>= "0.18.0"}
+  "deb-libpulse0" {>= "0.99.1"}
+  "deb-libxml2" {>= "2.7.4"}
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+]
+extra-source "gsequencer_4.4.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gsequencer/gsequencer_4.4.3-1_amd64.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-vulcand-oxy-dev_1.3.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-vulcand-oxy-dev"]
+]
+depends: [
+  "deb-golang-github-codahale-hdrhistogram-dev"
+  "deb-golang-github-gorilla-websocket-dev"
+  "deb-golang-github-mailgun-multibuf-dev"
+  "deb-golang-github-mailgun-timetools-dev"
+  "deb-golang-github-mailgun-ttlmap-dev"
+  "deb-golang-github-segmentio-fasthash-dev"
+  "deb-golang-github-sirupsen-logrus-dev"
+  "deb-golang-github-vulcand-predicate-dev"
+  "deb-golang-golang-x-net-dev"
+]
+extra-source "golang-github-vulcand-oxy-dev_1.3.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-vulcand-oxy/golang-github-vulcand-oxy-dev_1.3.0-3_all.deb"
+}

@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fmit_1.2.14-0.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fmit"]
+]
+depends: [
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libfftw3-double3" {>= "3.3.5"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgl1"
+  "deb-libportaudio2" {>= "19+svn20101113"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5multimedia5" {>= "5.6.0~beta"}
+  "deb-libqt5widgets5" {>= "5.15.1"}
+  "deb-libstdc++6" {>= "11"}
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libqt5gui5" {>= "5.2.0"} | "deb- libqt5gui5-gles" {>= "5.2.0"})
+]
+extra-source "fmit_1.2.14-0.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fmit/fmit_1.2.14-0.1_amd64.deb"
+}

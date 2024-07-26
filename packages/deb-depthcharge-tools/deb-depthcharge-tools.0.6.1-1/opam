@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i depthcharge-tools_0.6.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r depthcharge-tools"]
+]
+depends: [
+  "deb-cgpt"
+  "deb-device-tree-compiler"
+  "deb-linux-base"
+  "deb-lz4"
+  "deb-python3-any" {>= "3.7~"}
+  "deb-python3-pkg-resources"
+  "deb-u-boot-tools"
+  "deb-vboot-kernel-utils"
+  "deb-vboot-utils"
+  "deb-xz-utils"
+]
+extra-source "depthcharge-tools_0.6.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/depthcharge-tools/depthcharge-tools_0.6.1-1_all.deb"
+}

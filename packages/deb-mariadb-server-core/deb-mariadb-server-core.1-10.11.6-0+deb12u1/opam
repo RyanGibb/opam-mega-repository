@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mariadb-server-core_1:10.11.6-0+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mariadb-server-core"]
+]
+depends: [
+  "deb-libc6" {>= "2.35"}
+  "deb-libcrypt1" {>= "1-4.1.0"}
+  "deb-libelogind0"
+  "deb-libnuma1" {>= "2.0.11"}
+  "deb-libpcre2-8-0" {>= "10.22"}
+  "deb-libpmem1" {>= "1.4"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libstdc++6" {>= "12"}
+  "deb-liburing2" {>= "2.3"}
+  "deb-mariadb-common" {>= "1-10.11.6-0+deb12u1"}
+  "deb-zlib1g" {>= "1-1.2.0"}
+]
+conflicts: [
+  "deb-mariadb-galera-server-5-5"
+  "deb-mysql-server-5-5"
+  "deb-mysql-server-5-6"
+  "deb-mysql-server-5-7"
+  "deb-mysql-server-8-0"
+  "deb-virtual-mysql-server-core"
+]
+extra-source "mariadb-server-core_1:10.11.6-0+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mariadb/mariadb-server-core_10.11.6-0+deb12u1_amd64.deb"
+}

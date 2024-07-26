@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tox_3.7.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tox"]
+]
+depends: [
+  "deb-libjs-sphinxdoc" {>= "1.0"}
+  "deb-python3"
+  "deb-python3-any"
+  "deb-python3-filelock" {>= "3.0.0-1~"}
+  "deb-python3-pkg-resources"
+  "deb-python3-pluggy"
+  "deb-python3-py"
+  "deb-python3-setuptools"
+  "deb-python3-six" {< "2"}
+  "deb-python3-six" {>= "1.0.0"}
+  "deb-python3-toml" {>= "0.9.4-1~"}
+  "deb-python3-virtualenv"
+  "deb-virtualenv"
+]
+extra-source "tox_3.7.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tox/tox_3.7.0-2_all.deb"
+}

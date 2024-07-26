@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libapache2-mod-passenger_5.0.30-1.2+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libapache2-mod-passenger"]
+]
+depends: [
+  "deb-apache2-bin"
+  "deb-apache2-bin" {>= "2.4.16"}
+  "deb-libapr1" {>= "1.2.7"}
+  "deb-libaprutil1" {>= "1.2.7+dfsg"}
+  "deb-libc6" {>= "2.17"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-passenger" {= "5.0.30-1.2+deb11u1"}
+]
+extra-source "libapache2-mod-passenger_5.0.30-1.2+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/passenger/libapache2-mod-passenger_5.0.30-1.2+deb11u1_amd64.deb"
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add dbus-1.12.24-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del dbus"]
+]
+depends: [
+  "apk-busybox" {= "1.33.1-r8"}
+  "apk-dbus-libs" {= "1.12.24-r0"}
+  "apk-expat" {= "2.5.0-r0"}
+  "apk-musl" {= "1.2.2-r5"}
+]
+extra-source "dbus-1.12.24-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/dbus-1.12.24-r0.apk"
+}

@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libimlib2-dev_1.10.0-4+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libimlib2-dev"]
+]
+depends: [
+  "deb-libbz2-dev"
+  "deb-libc6" {>= "2.34"}
+  "deb-libfreetype6-dev"
+  "deb-libgif-dev"
+  "deb-libheif-dev"
+  "deb-libid3tag0-dev"
+  "deb-libimlib2" {= "1.10.0-4+deb12u1"}
+  "deb-libjpeg-dev"
+  "deb-libjxl-dev"
+  "deb-libopenjp2-7-dev"
+  "deb-libpng-dev"
+  "deb-librsvg2-dev"
+  "deb-libspectre-dev"
+  "deb-libtiff-dev"
+  "deb-libwebp-dev"
+  "deb-libx11-6"
+  "deb-libx11-dev"
+  "deb-libxext-dev"
+  "deb-zlib1g-dev"
+]
+extra-source "libimlib2-dev_1.10.0-4+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/imlib2/libimlib2-dev_1.10.0-4+deb12u1_amd64.deb"
+}

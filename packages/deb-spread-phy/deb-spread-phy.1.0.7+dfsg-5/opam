@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i spread-phy_1.0.7+dfsg-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r spread-phy"]
+]
+depends: [
+  "deb-default-jre"
+  "deb-libcolt-free-java"
+  "deb-libjebl2-java"
+  "deb-libprocessing-core-java"
+]
+conflicts: [
+  "deb-phy-spread"
+]
+extra-source "spread-phy_1.0.7+dfsg-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/spread-phy/spread-phy_1.0.7+dfsg-5_all.deb"
+}

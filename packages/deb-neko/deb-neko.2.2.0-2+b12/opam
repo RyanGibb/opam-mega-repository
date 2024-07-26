@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i neko_2.2.0-2+b12_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r neko"]
+]
+depends: [
+  "deb-libapr1" {>= "1.2.7"}
+  "deb-libaprutil1" {>= "1.2.7+dfsg"}
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.17"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgc1c2" {>= "1-7.2d"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.16.0"}
+  "deb-libgtk2-0-0" {>= "2.8.0"}
+  "deb-libmariadb3" {>= "3.0.0"}
+  "deb-libmbedcrypto3" {>= "2.13"}
+  "deb-libmbedtls12" {>= "2.13"}
+  "deb-libmbedx509-0" {>= "2.0"}
+  "deb-libneko2"
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpangoft2-1-0-0" {>= "1.14.0"}
+  "deb-libpcre3"
+  "deb-libsqlite3-0" {>= "3.5.9"}
+  "deb-zlib1g" {>= "1-1.2.0"}
+]
+extra-source "neko_2.2.0-2+b12_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/neko/neko_2.2.0-2+b12_amd64.deb"
+}

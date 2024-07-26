@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-taurus-pyqtgraph_0.4.6-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-taurus-pyqtgraph"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-click"
+  "deb-python3-lxml"
+  "deb-python3-ply"
+  "deb-python3-pyqtgraph"
+  "deb-python3-taurus"
+]
+extra-source "python3-taurus-pyqtgraph_0.4.6-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/taurus-pyqtgraph/python3-taurus-pyqtgraph_0.4.6-1_all.deb"
+}

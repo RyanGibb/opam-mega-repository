@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i less_487-0.1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r less"]
+]
+depends: [
+  "deb-debianutils" {>= "1.8"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libtinfo6" {>= "6"}
+]
+extra-source "less_487-0.1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/less/less_487-0.1+b1_amd64.deb"
+}

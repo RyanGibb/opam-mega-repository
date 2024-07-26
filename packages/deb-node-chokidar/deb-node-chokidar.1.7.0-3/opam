@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-chokidar_1.7.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-chokidar"]
+]
+depends: [
+  "deb-node-anymatch"
+  "deb-node-async-each"
+  "deb-node-glob-parent"
+  "deb-node-inherits"
+  "deb-node-is-binary-path"
+  "deb-node-is-glob"
+  "deb-node-path-is-absolute"
+  "deb-node-readdirp" {>= "2.0.0"}
+  "deb-nodejs"
+]
+extra-source "node-chokidar_1.7.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-chokidar/node-chokidar_1.7.0-3_all.deb"
+}

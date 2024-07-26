@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tucnak_4.25-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tucnak"]
+]
+depends: [
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libfftw3-double3" {>= "3.3.5"}
+  "deb-libftdi1-2" {>= "1.2"}
+  "deb-libglib2-0-0" {>= "2.31.8"}
+  "deb-libhamlib4"
+  "deb-libportaudio2" {>= "19+svn20101113"}
+  "deb-librtlsdr0" {>= "0.6.0"}
+  "deb-libsdl2-2-0-0" {>= "2.0.12"}
+  "deb-libsndfile1" {>= "1.0.20"}
+  "deb-libzia" {>= "4.25"}
+  "deb-passwd"
+  "deb-udev"
+]
+conflicts: [
+  "deb-tucnak2"
+]
+extra-source "tucnak_4.25-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tucnak/tucnak_4.25-1_amd64.deb"
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-superagent_8.0.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-superagent"]
+]
+depends: [
+  "deb-node-component-emitter" {>= "1.3.0"}
+  "deb-node-cookiejar" {>= "2.1.2"}
+  "deb-node-debug"
+  "deb-node-fast-safe-stringify"
+  "deb-node-form-data" {>= "2.3.3"}
+  "deb-node-formidable" {>= "3"}
+  "deb-node-methods" {>= "1.1.2"}
+  "deb-node-mime" {>= "2.4.4"}
+  "deb-node-qs" {>= "6.7.0"}
+  "deb-node-readable-stream"
+  "deb-node-semver"
+]
+extra-source "node-superagent_8.0.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-superagent/node-superagent_8.0.5-1_all.deb"
+}

@@ -1,0 +1,48 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kinfocenter_4:5.14.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kinfocenter"]
+]
+depends: [
+  "deb-ieee-data"
+  "deb-kio"
+  "deb-libc6" {>= "2.14"}
+  "deb-libegl1"
+  "deb-libgl1"
+  "deb-libkf5completion5" {>= "4.97.0"}
+  "deb-libkf5configcore5" {>= "4.97.0"}
+  "deb-libkf5configwidgets5" {>= "5.23.0"}
+  "deb-libkf5coreaddons5" {>= "5.20.0"}
+  "deb-libkf5crash5" {>= "5.15.0"}
+  "deb-libkf5dbusaddons5" {>= "4.99.0"}
+  "deb-libkf5i18n5" {>= "4.97.0"}
+  "deb-libkf5iconthemes5" {>= "4.96.0"}
+  "deb-libkf5kcmutils5" {>= "4.96.0"}
+  "deb-libkf5kiocore5" {>= "4.96.0"}
+  "deb-libkf5kiowidgets5" {>= "4.96.0"}
+  "deb-libkf5quickaddons5" {>= "5.50~"}
+  "deb-libkf5service-bin"
+  "deb-libkf5service5" {>= "4.96.0"}
+  "deb-libkf5solid5" {>= "5.50~"}
+  "deb-libkf5waylandclient5" {>= "4-5.5.0"}
+  "deb-libkf5widgetsaddons5" {>= "5.35.0"}
+  "deb-libkf5windowsystem5" {>= "4.96.0"}
+  "deb-libkf5xmlgui5" {>= "4.98.0"}
+  "deb-libpci3" {>= "1-3.5.2-1"}
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5dbus5" {>= "5.11.0~"}
+  "deb-libqt5gui5" {>= "5.11.0~"}
+  "deb-libqt5qml5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.11.0~rc1"}
+  "deb-libraw1394-11"
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-libx11-6"
+  "deb-plasma-workspace" {>= "4-5.14"}
+  "deb-usbutils"
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+extra-source "kinfocenter_4:5.14.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kinfocenter/kinfocenter_5.14.5-1_amd64.deb"
+}

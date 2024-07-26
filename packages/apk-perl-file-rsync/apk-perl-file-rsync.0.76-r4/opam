@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-file-rsync-0.76-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-file-rsync"]
+]
+depends: [
+  "apk-musl" {= "1.2.4-r2"}
+  "apk-perl" {= "5.36.2-r0"}
+]
+extra-source "perl-file-rsync-0.76-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-file-rsync-0.76-r4.apk"
+}

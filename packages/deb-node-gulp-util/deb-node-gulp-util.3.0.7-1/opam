@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-gulp-util_3.0.7-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-gulp-util"]
+]
+depends: [
+  "deb-node-array-differ" {>= "1.0.0"}
+  "deb-node-array-uniq" {>= "1.0.2"}
+  "deb-node-beeper" {>= "1.0.0"}
+  "deb-node-chalk" {>= "1.0.0"}
+  "deb-node-dateformat" {>= "1.0.11"}
+  "deb-node-fancy-log" {>= "1.1.0"}
+  "deb-node-gulplog" {>= "1.0.0"}
+  "deb-node-has-gulplog" {>= "0.1.0"}
+  "deb-node-lodash-packages" {>= "3.0.0"}
+  "deb-node-lodash-reescape" {>= "3.0.0"}
+  "deb-node-lodash-reevaluate" {>= "3.0.0"}
+  "deb-node-minimist" {>= "1.1.0"}
+  "deb-node-multipipe" {>= "0.1.2"}
+  "deb-node-object-assign" {>= "3.0.0"}
+  "deb-node-replace-ext" {>= "0.0.1"}
+  "deb-node-through2" {>= "2.0.0"}
+  "deb-node-vinyl" {>= "0.5.0"}
+  "deb-nodejs"
+]
+extra-source "node-gulp-util_3.0.7-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-gulp-util/node-gulp-util_3.0.7-1_all.deb"
+}

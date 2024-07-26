@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-ixset-typed-dev_0.5-1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-ixset-typed-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-safecopy-dev"
+  "deb-libghc-syb-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-ixset-typed-dev_0.5-1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-ixset-typed/libghc-ixset-typed-dev_0.5-1+b3_amd64.deb"
+}

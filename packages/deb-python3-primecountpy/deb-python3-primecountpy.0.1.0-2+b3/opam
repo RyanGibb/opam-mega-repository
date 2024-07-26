@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-primecountpy_0.1.0-2+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-primecountpy"]
+]
+depends: [
+  "deb-cython3"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libprimecount7" {>= "7.6+ds"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-any"
+]
+extra-source "python3-primecountpy_0.1.0-2+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/primecountpy/python3-primecountpy_0.1.0-2+b3_amd64.deb"
+}

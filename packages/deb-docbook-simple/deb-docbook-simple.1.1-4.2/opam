@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i docbook-simple_1.1-4.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r docbook-simple"]
+]
+depends: [
+  "deb-docbook-xml" {>= "4.2-7"}
+  "deb-sgml-base" {>= "1.26+nmu2"}
+  "deb-sgml-data" {>= "2.0.2"}
+  "deb-xml-core" {>= "0.12"}
+]
+extra-source "docbook-simple_1.1-4.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/docbook-simple/docbook-simple_1.1-4.2_all.deb"
+}

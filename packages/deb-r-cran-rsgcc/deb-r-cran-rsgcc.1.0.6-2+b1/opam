@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-rsgcc_1.0.6-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-rsgcc"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libgomp1" {>= "6"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.0-3"}
+  "deb-r-cran-biwt"
+  "deb-r-cran-cairodevice"
+  "deb-r-cran-fbasics"
+  "deb-r-cran-gplots"
+  "deb-r-cran-gwidgets"
+  "deb-r-cran-gwidgetsrgtk2"
+  "deb-r-cran-minerva"
+  "deb-r-cran-parmigene"
+  "deb-r-cran-snowfall"
+  "deb-r-cran-stringr"
+]
+extra-source "r-cran-rsgcc_1.0.6-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-rsgcc/r-cran-rsgcc_1.0.6-2+b1_amd64.deb"
+}

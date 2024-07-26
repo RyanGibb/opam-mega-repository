@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dh-lua_29_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dh-lua"]
+]
+depends: [
+  "deb-dctrl-tools"
+  "deb-debhelper" {>= "8.0.0"}
+  "deb-libfile-find-rule-perl"
+  "deb-liblua5-1-0-dev"
+  "deb-liblua5-2-dev"
+  "deb-liblua5-3-dev"
+  "deb-liblua5-4-dev"
+  "deb-libtool"
+  "deb-lua5-1"
+  "deb-lua5-2"
+  "deb-lua5-3"
+  "deb-lua5-4"
+  "deb-perl-any"
+  "deb-pkg-config"
+]
+extra-source "dh-lua_29_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dh-lua/dh-lua_29_all.deb"
+}

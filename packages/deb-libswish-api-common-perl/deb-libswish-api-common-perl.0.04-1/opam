@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libswish-api-common-perl_0.04-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libswish-api-common-perl"]
+]
+depends: [
+  "deb-liblog-log4perl-perl"
+  "deb-libsysadm-install-perl"
+  "deb-libwww-perl"
+  "deb-perl"
+  "deb-swish-e"
+]
+extra-source "libswish-api-common-perl_0.04-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libs/libswish-api-common-perl/libswish-api-common-perl_0.04-1_all.deb"
+}

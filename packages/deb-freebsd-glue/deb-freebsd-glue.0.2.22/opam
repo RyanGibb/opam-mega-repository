@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i freebsd-glue_0.2.22_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r freebsd-glue"]
+]
+depends: [
+  "deb-byacc"
+  "deb-libbsd-dev" {>= "0.7.0-1~"}
+  "deb-libdb-dev"
+  "deb-libexpat1-dev"
+  "deb-libfreebsd-glue-0" {= "0.2.22"}
+  "deb-libgdbm-dev"
+  "deb-original-awk"
+  "deb-zlib1g-dev"
+]
+conflicts: [
+  "deb-kfreebsd-kernel-headers" {< "0.80"}
+]
+extra-source "freebsd-glue_0.2.22_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/freebsd-glue/freebsd-glue_0.2.22_amd64.deb"
+}

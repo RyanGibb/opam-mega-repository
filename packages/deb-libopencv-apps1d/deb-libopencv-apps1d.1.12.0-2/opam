@@ -1,0 +1,62 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libopencv-apps1d_1.12.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libopencv-apps1d"]
+]
+depends: [
+  "deb-libbondcpp1d"
+  "deb-libboost-atomic1-67-0"
+  "deb-libboost-chrono1-67-0"
+  "deb-libboost-date-time1-67-0"
+  "deb-libboost-filesystem1-67-0"
+  "deb-libboost-program-options1-67-0"
+  "deb-libboost-regex1-67-0" {>= "1.67.0-10"}
+  "deb-libboost-signals1-67-0"
+  "deb-libboost-system1-67-0"
+  "deb-libboost-thread1-67-0"
+  "deb-libc6" {>= "2.14"}
+  "deb-libclass-loader1d"
+  "deb-libconsole-bridge0-4"
+  "deb-libcpp-common0d"
+  "deb-libcv-bridge1d"
+  "deb-libdynamic-reconfigure-config-init-mutex0d"
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libimage-transport0d"
+  "deb-liblog4cxx10v5"
+  "deb-libmessage-filters1d"
+  "deb-libnodeletlib1d"
+  "deb-libopencv-calib3d3-2"
+  "deb-libopencv-contrib3-2"
+  "deb-libopencv-core3-2"
+  "deb-libopencv-features2d3-2"
+  "deb-libopencv-flann3-2"
+  "deb-libopencv-highgui3-2"
+  "deb-libopencv-imgcodecs3-2"
+  "deb-libopencv-imgproc3-2"
+  "deb-libopencv-ml3-2"
+  "deb-libopencv-objdetect3-2"
+  "deb-libopencv-photo3-2"
+  "deb-libopencv-shape3-2"
+  "deb-libopencv-stitching3-2"
+  "deb-libopencv-superres3-2"
+  "deb-libopencv-video3-2"
+  "deb-libopencv-videoio3-2"
+  "deb-libopencv-videostab3-2"
+  "deb-libopencv-viz3-2"
+  "deb-libpocofoundation60"
+  "deb-libpython2-7" {>= "2.7"}
+  "deb-librosconsole2d"
+  "deb-libroscpp-serialization0d"
+  "deb-libroscpp2d"
+  "deb-libroslib0d"
+  "deb-librospack0d"
+  "deb-librostime0d"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtinyxml2-6a" {>= "5.0.0"}
+  "deb-libxmlrpcpp2d"
+]
+extra-source "libopencv-apps1d_1.12.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ros-opencv-apps/libopencv-apps1d_1.12.0-2_amd64.deb"
+}

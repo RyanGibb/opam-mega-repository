@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mir-test-tools_1.8.0+dfsg1-18_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mir-test-tools"]
+]
+depends: [
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.30"}
+  "deb-libegl1"
+  "deb-libgcc-s1" {>= "3.3.1"}
+  "deb-libgflags2-2" {>= "2.2.2"}
+  "deb-libgles2"
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libgoogle-glog0v5" {>= "0.4.0"}
+  "deb-liblttng-ust0" {>= "2.5.0"}
+  "deb-libmiral3" {>= "2.6"}
+  "deb-libmirclient9" {>= "1.7"}
+  "deb-libmircommon7" {>= "1.7"}
+  "deb-libmircore1" {>= "1.7"}
+  "deb-libmirplatform18" {>= "1.7"}
+  "deb-libmirserver53" {>= "1.7"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libuuid1" {>= "2.16"}
+  "deb-libwayland-client0" {>= "1.9.91"}
+  "deb-libwayland-egl1" {>= "1.15.0"}
+]
+extra-source "mir-test-tools_1.8.0+dfsg1-18_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mir/mir-test-tools_1.8.0+dfsg1-18_amd64.deb"
+}

@@ -1,0 +1,54 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcollada-urdf0d_1.12.6-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcollada-urdf0d"]
+]
+depends: [
+  "deb-libactionlib0d"
+  "deb-libassimp4"
+  "deb-libboost-atomic1-67-0"
+  "deb-libboost-chrono1-67-0"
+  "deb-libboost-date-time1-67-0"
+  "deb-libboost-filesystem1-67-0"
+  "deb-libboost-program-options1-67-0"
+  "deb-libboost-regex1-67-0" {>= "1.67.0-10"}
+  "deb-libboost-signals1-67-0"
+  "deb-libboost-system1-67-0"
+  "deb-libboost-thread1-67-0"
+  "deb-libc6" {>= "2.14"}
+  "deb-libclass-loader1d"
+  "deb-libcollada-dom2-4-dp0"
+  "deb-libcollada-parser0d"
+  "deb-libconsole-bridge0-4"
+  "deb-libcpp-common0d"
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgeometric-shapes3d"
+  "deb-liblog4cxx10v5"
+  "deb-libmessage-filters1d"
+  "deb-liboctomap1-8"
+  "deb-libpocofoundation60"
+  "deb-librandom-numbers0d"
+  "deb-libresource-retriever0d"
+  "deb-librosconsole-bridge0d"
+  "deb-librosconsole2d"
+  "deb-libroscpp-serialization0d"
+  "deb-libroscpp2d"
+  "deb-librostime0d"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtf1d"
+  "deb-libtf2-1d"
+  "deb-libtf2-ros0d"
+  "deb-libtinyxml2-6-2v5"
+  "deb-libtinyxml2-6a" {>= "5.0.0"}
+  "deb-liburdf0d"
+  "deb-liburdfdom-model"
+  "deb-liburdfdom-model-state"
+  "deb-liburdfdom-sensor"
+  "deb-liburdfdom-world"
+  "deb-libxmlrpcpp2d"
+]
+extra-source "libcollada-urdf0d_1.12.6-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ros-robot-model/libcollada-urdf0d_1.12.6-5_amd64.deb"
+}

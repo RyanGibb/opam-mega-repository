@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i seqan-raptor_2.0.0.0.git.fecfbca+ds-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r seqan-raptor"]
+]
+depends: [
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgomp1" {>= "6"}
+  "deb-libstdc++6" {>= "12"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "seqan-raptor_2.0.0.0.git.fecfbca+ds-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/seqan-raptor/seqan-raptor_2.0.0.0.git.fecfbca+ds-3_amd64.deb"
+}

@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i notedeln_1.4.6-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r notedeln"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5multimedia5" {>= "5.6.0~beta"}
+  "deb-libqt5multimediawidgets5" {>= "5.6.0~beta"}
+  "deb-libqt5network5" {>= "5.5"}
+  "deb-libqt5printsupport5" {>= "5.5"}
+  "deb-libqt5svg5" {>= "5.6.0~beta"}
+  "deb-libqt5webkit5" {>= "5.6.0~rc"}
+  "deb-libqt5widgets5" {>= "5.6.0~beta"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "notedeln_1.4.6-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/eln/notedeln_1.4.6-1_amd64.deb"
+}

@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnome-dvb-daemon_1:0.2.91~git20170110-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnome-dvb-daemon"]
+]
+depends: [
+  "deb-gstreamer1-0-plugins-bad" {>= "1.4"}
+  "deb-gstreamer1-0-plugins-base" {>= "1.4"}
+  "deb-gstreamer1-0-plugins-good" {>= "1.4"}
+  "deb-libc6" {>= "2.7"}
+  "deb-libgee-0-8-2" {>= "0.8.3"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libgstreamer-plugins-bad1-0-0" {< "1.15"}
+  "deb-libgstreamer-plugins-bad1-0-0" {>= "1.14.4"}
+  "deb-libgstreamer1-0-0" {>= "1.4"}
+  "deb-libgstrtspserver-1-0-0" {>= "1.4.5"}
+  "deb-libgudev-1-0-0" {>= "146"}
+  "deb-libsqlite3-0" {>= "3.5.9"}
+]
+extra-source "gnome-dvb-daemon_1:0.2.91~git20170110-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnome-dvb-daemon/gnome-dvb-daemon_0.2.91~git20170110-4_amd64.deb"
+}

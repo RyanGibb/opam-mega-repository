@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-heterocephalus-prof_1.0.5.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-heterocephalus-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-blaze-html-prof"
+  "deb-libghc-blaze-markup-prof"
+  "deb-libghc-dlist-prof"
+  "deb-libghc-heterocephalus-dev" {= "1.0.5.2-1"}
+  "deb-libghc-shakespeare-prof"
+]
+extra-source "libghc-heterocephalus-prof_1.0.5.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-heterocephalus/libghc-heterocephalus-prof_1.0.5.2-1_amd64.deb"
+}

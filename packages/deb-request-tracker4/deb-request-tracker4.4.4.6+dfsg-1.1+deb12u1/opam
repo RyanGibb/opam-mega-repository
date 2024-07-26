@@ -1,0 +1,114 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i request-tracker4_4.4.6+dfsg-1.1+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r request-tracker4"]
+]
+depends: [
+  "deb-fonts-droid-fallback"
+  "deb-fonts-noto-hinted"
+  "deb-libapache-session-perl"
+  "deb-libbusiness-hours-perl"
+  "deb-libcgi-emulate-psgi-perl"
+  "deb-libcgi-pm-perl"
+  "deb-libcgi-psgi-perl"
+  "deb-libclass-accessor-perl"
+  "deb-libclone-perl"
+  "deb-libconvert-color-perl"
+  "deb-libcpanel-json-xs-perl"
+  "deb-libcrypt-eksblowfish-perl"
+  "deb-libcrypt-x509-perl"
+  "deb-libcss-minifier-xs-perl"
+  "deb-libcss-squish-perl"
+  "deb-libdata-guid-perl"
+  "deb-libdata-ical-perl"
+  "deb-libdata-page-pageset-perl"
+  "deb-libdate-extract-perl"
+  "deb-libdate-manip-perl"
+  "deb-libdatetime-format-natural-perl"
+  "deb-libdatetime-locale-perl" {>= "1-1.02"}
+  "deb-libdatetime-perl"
+  "deb-libdbi-perl"
+  "deb-libdbix-searchbuilder-perl" {>= "1.66"}
+  "deb-libdevel-globaldestruction-perl"
+  "deb-libemail-address-list-perl"
+  "deb-libemail-address-perl" {>= "1.908"}
+  "deb-libfile-sharedir-perl"
+  "deb-libfile-which-perl"
+  "deb-libgd-graph-perl" {>= "1.47"}
+  "deb-libgd-text-perl"
+  "deb-libgnupg-interface-perl"
+  "deb-libgraphviz-perl"
+  "deb-libhtml-formattext-withlinks-andtables-perl"
+  "deb-libhtml-formattext-withlinks-perl"
+  "deb-libhtml-gumbo-perl"
+  "deb-libhtml-mason-perl"
+  "deb-libhtml-mason-psgihandler-perl"
+  "deb-libhtml-quoted-perl"
+  "deb-libhtml-rewriteattributes-perl" {>= "0.05"}
+  "deb-libhtml-scrubber-perl"
+  "deb-libhttp-message-perl"
+  "deb-libipc-run-perl"
+  "deb-libipc-run3-perl"
+  "deb-libjavascript-minifier-xs-perl"
+  "deb-libjson-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-liblocale-maketext-fuzzy-perl"
+  "deb-liblocale-maketext-lexicon-perl"
+  "deb-liblog-dispatch-perl"
+  "deb-libmailtools-perl" {>= "2.12"}
+  "deb-libmime-tools-perl" {>= "5.504"}
+  "deb-libmime-types-perl"
+  "deb-libmodule-refresh-perl"
+  "deb-libmodule-versions-report-perl"
+  "deb-libnet-cidr-perl"
+  "deb-libnet-ip-perl"
+  "deb-libnet-ldap-perl"
+  "deb-libnet-ssleay-perl"
+  "deb-libparallel-forkmanager-perl"
+  "deb-libperlio-eol-perl"
+  "deb-libplack-perl" {>= "1.0002"}
+  "deb-libpod-parser-perl"
+  "deb-libregexp-common-net-cidr-perl"
+  "deb-libregexp-common-perl"
+  "deb-libregexp-ipv6-perl"
+  "deb-librole-basic-perl"
+  "deb-libscope-upper-perl"
+  "deb-libstring-shellquote-perl"
+  "deb-libsymbol-global-name-perl"
+  "deb-libtext-autoformat-perl"
+  "deb-libtext-password-pronounceable-perl"
+  "deb-libtext-quoted-perl" {>= "2.07"}
+  "deb-libtext-template-perl"
+  "deb-libtext-wikiformat-perl"
+  "deb-libtext-wrapper-perl"
+  "deb-libtime-parsedate-perl"
+  "deb-libtimedate-perl"
+  "deb-libtree-simple-perl"
+  "deb-libuniversal-require-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-libxml-rss-perl"
+  "deb-libxml-simple-perl"
+  "deb-lsb-base"
+  "deb-perl"
+  "deb-perl-any"
+  "deb-perl-doc"
+  "deb-rt4-clients" {= "4.4.6+dfsg-1.1+deb12u1"}
+  "deb-ucf"
+  ("deb-dbconfig-common" | "deb- dbconfig-no-thanks")
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-default-mta" | "deb- mail-transport-agent")
+  ("deb-rt4-db-sqlite" {= "4.4.6+dfsg-1.1+deb12u1"} | "deb- rt4-db-postgresql" {= "4.4.6+dfsg-1.1+deb12u1"} | "deb- rt4-db-mysql" {= "4.4.6+dfsg-1.1+deb12u1"})
+  ("deb-rt4-standalone" {= "4.4.6+dfsg-1.1+deb12u1"} | "deb- rt4-apache2" {= "4.4.6+dfsg-1.1+deb12u1"} | "deb- rt4-fcgi" {= "4.4.6+dfsg-1.1+deb12u1"})
+]
+conflicts: [
+  "deb-rt4-extension-assettracker"
+  "deb-rt4-extension-authenexternalauth"
+  "deb-rt4-extension-sla"
+  "deb-rt4-extension-spawnlinkedticketinqueue"
+]
+extra-source "request-tracker4_4.4.6+dfsg-1.1+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/request-tracker4/request-tracker4_4.4.6+dfsg-1.1+deb12u1_all.deb"
+}

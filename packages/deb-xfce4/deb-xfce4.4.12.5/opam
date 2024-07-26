@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xfce4_4.12.5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xfce4"]
+]
+depends: [
+  "deb-gtk2-engines-xfce" {>= "3.2.0"}
+  "deb-libxfce4ui-utils" {>= "4.12"}
+  "deb-thunar" {>= "1.6.6"}
+  "deb-xfce4-appfinder" {>= "4.12.0"}
+  "deb-xfce4-panel" {>= "4.12.0"}
+  "deb-xfce4-pulseaudio-plugin"
+  "deb-xfce4-session" {>= "4.12.0"}
+  "deb-xfce4-settings" {>= "4.12.0"}
+  "deb-xfconf" {>= "4.12.0"}
+  "deb-xfdesktop4" {>= "4.12.0"}
+  "deb-xfwm4" {>= "4.12.0"}
+]
+extra-source "xfce4_4.12.5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xfce4/xfce4_4.12.5_all.deb"
+}

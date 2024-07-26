@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmoosex-multimethods-perl_0.10-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmoosex-multimethods-perl"]
+]
+depends: [
+  "deb-libaliased-perl"
+  "deb-libdevel-declare-perl"
+  "deb-libdevel-partialdump-perl"
+  "deb-libmoose-perl"
+  "deb-libmoosex-method-signatures-perl"
+  "deb-libmoosex-types-perl"
+  "deb-libmoosex-types-varianttable-perl"
+  "deb-libnamespace-autoclean-perl"
+  "deb-libsub-install-perl"
+  "deb-perl"
+]
+extra-source "libmoosex-multimethods-perl_0.10-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libm/libmoosex-multimethods-perl/libmoosex-multimethods-perl_0.10-2_all.deb"
+}

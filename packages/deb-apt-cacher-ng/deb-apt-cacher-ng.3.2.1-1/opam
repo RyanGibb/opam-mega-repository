@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i apt-cacher-ng_3.2.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r apt-cacher-ng"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.28"}
+  "deb-libgcc1" {>= "1-3.3.1"}
+  "deb-liblzma5" {>= "5.1.1alpha+20120614"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libstdc++6" {>= "6"}
+  "deb-libsystemd0" {>= "210"}
+  "deb-libwrap0" {>= "7.6-4~"}
+  "deb-lsb-base" {>= "3.0-6"}
+  "deb-zlib1g" {>= "1-1.2.0"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+conflicts: [
+  "deb-logrotate" {< "3.8.0"}
+]
+extra-source "apt-cacher-ng_3.2.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/apt-cacher-ng/apt-cacher-ng_3.2.1-1_amd64.deb"
+}

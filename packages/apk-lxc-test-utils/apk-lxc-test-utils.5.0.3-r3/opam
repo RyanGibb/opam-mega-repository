@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lxc-test-utils-5.0.3-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lxc-test-utils"]
+]
+depends: [
+  "apk-libcap2" {= "2.69-r0"}
+  "apk-libgcc" {= "12.2.1_git20220924-r10"}
+  "apk-libseccomp" {= "2.5.4-r2"}
+  "apk-musl" {= "1.2.4-r2"}
+]
+extra-source "lxc-test-utils-5.0.3-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/lxc-test-utils-5.0.3-r3.apk"
+}

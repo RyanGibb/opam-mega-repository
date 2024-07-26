@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libqcustomplot-dev_2.1.0+dfsg1-3.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libqcustomplot-dev"]
+]
+depends: [
+  "deb-libqcustomplot2-1" {= "2.1.0+dfsg1-3.1"}
+  "deb-libqcustomplot2-1-qt6" {= "2.1.0+dfsg1-3.1"}
+  "deb-qt6-base-dev"
+  "deb-qtbase5-dev"
+]
+conflicts: [
+  "deb-libqcustomplot-dev"
+]
+extra-source "libqcustomplot-dev_2.1.0+dfsg1-3.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qcustomplot/libqcustomplot-dev_2.1.0+dfsg1-3.1_amd64.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-pre-gyp_1.0.10+~2.0.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-pre-gyp"]
+]
+depends: [
+  "deb-node-fetch"
+  "deb-node-https-proxy-agent"
+  "deb-node-make-dir"
+  "deb-node-nopt"
+  "deb-node-npmlog"
+  "deb-node-rimraf"
+  "deb-node-semver"
+  "deb-node-tar"
+  "deb-nodejs-any"
+]
+extra-source "node-pre-gyp_1.0.10+~2.0.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-pre-gyp/node-pre-gyp_1.0.10+~2.0.1-1_all.deb"
+}

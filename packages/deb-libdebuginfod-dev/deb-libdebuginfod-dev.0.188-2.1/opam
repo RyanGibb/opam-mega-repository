@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdebuginfod-dev_0.188-2.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdebuginfod-dev"]
+]
+depends: [
+  "deb-libdebuginfod1" {= "0.188-2.1"}
+  "deb-libelf-dev"
+]
+extra-source "libdebuginfod-dev_0.188-2.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/elfutils/libdebuginfod-dev_0.188-2.1_amd64.deb"
+}

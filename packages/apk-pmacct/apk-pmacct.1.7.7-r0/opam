@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add pmacct-1.7.7-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del pmacct"]
+]
+depends: [
+  "apk-hiredis" {= "1.0.2-r1"}
+  "apk-jansson" {= "2.14-r0"}
+  "apk-libmaxminddb-libs" {= "1.7.1-r0"}
+  "apk-libnetfilter_log" {= "1.0.2-r0"}
+  "apk-libpcap" {= "1.10.1-r1"}
+  "apk-libpq" {= "15.7-r0"}
+  "apk-libstdc++" {= "12.2.1_git20220924-r4"}
+  "apk-mariadb-connector-c" {= "3.3.3-r0"}
+  "apk-musl" {= "1.2.3-r5"}
+  "apk-rabbitmq-c" {= "0.11.0-r5"}
+  "apk-sqlite-libs" {= "3.40.1-r1"}
+]
+extra-source "pmacct-1.7.7-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/pmacct-1.7.7-r0.apk"
+}

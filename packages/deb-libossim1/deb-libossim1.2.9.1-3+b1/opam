@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libossim1_2.9.1-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libossim1"]
+]
+depends: [
+  "deb-libc6" {>= "2.30"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgeos-c1v5" {>= "3.8.0"}
+  "deb-libgeotiff5" {>= "1.3.0"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libjsoncpp24" {>= "1.9.4"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libtiff5" {>= "4.0.3"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libossim1_2.9.1-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/ossim/libossim1_2.9.1-3+b1_amd64.deb"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcrowbar-ocaml-dev_0.2.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcrowbar-ocaml-dev"]
+]
+depends: [
+  "deb-libafl-persistent-ocaml-dev"
+  "deb-libcmdliner-ocaml-dev"
+  "deb-libcrowbar-ocaml"
+  "deb-libocplib-endian-ocaml-dev"
+  "deb-ocaml"
+]
+extra-source "libcrowbar-ocaml-dev_0.2.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/crowbar/libcrowbar-ocaml-dev_0.2.1-2_amd64.deb"
+}

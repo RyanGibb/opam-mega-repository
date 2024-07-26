@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mediawiki2latex_7.46-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mediawiki2latex"]
+]
+depends: [
+  "deb-cm-super-minimal"
+  "deb-djvulibre-bin"
+  "deb-fonts-cmu"
+  "deb-fonts-freefont-ttf"
+  "deb-fonts-unifont"
+  "deb-fonts-wqy-zenhei"
+  "deb-imagemagick"
+  "deb-latex-cjk-common"
+  "deb-libc6" {>= "2.34"}
+  "deb-libffi8" {>= "3.4"}
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-librsvg2-bin"
+  "deb-lmodern"
+  "deb-poppler-utils"
+  "deb-texlive-fonts-extra"
+  "deb-texlive-fonts-recommended"
+  "deb-texlive-lang-all"
+  "deb-texlive-latex-extra"
+  "deb-texlive-latex-recommended"
+  "deb-texlive-plain-generic"
+  "deb-texlive-xetex"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "mediawiki2latex_7.46-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mediawiki2latex/mediawiki2latex_7.46-1_amd64.deb"
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkf5libkdepim5_4:22.12.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkf5libkdepim5"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libkf5i18n5" {>= "5.99.0~"}
+  "deb-libkf5libkdepim-data" {>= "4-22.12.3-1"}
+  "deb-libkf5widgetsaddons5" {>= "5.99.0~"}
+  "deb-libqt5core5a" {>= "5.15.2~"}
+  "deb-libqt5widgets5" {>= "5.15.2~"}
+  "deb-libstdc++6" {>= "5"}
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+]
+extra-source "libkf5libkdepim5_4:22.12.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libk/libkf5libkdepim/libkf5libkdepim5_22.12.3-1_amd64.deb"
+}

@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i systemd_252.26-1~deb12u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r systemd"]
+]
+depends: [
+  "deb-libacl1" {>= "2.2.23"}
+  "deb-libaudit1" {>= "1-2.2.1"}
+  "deb-libblkid1" {>= "2.24.2"}
+  "deb-libcryptsetup12" {>= "2-2.4"}
+  "deb-libelogind0"
+  "deb-libfdisk1" {>= "2.33"}
+  "deb-libkmod2" {>= "15"}
+  "deb-libp11-kit0" {>= "0.23.18.1"}
+  "deb-libseccomp2" {>= "2.3.1"}
+  "deb-libsystemd-shared" {= "252.26-1~deb12u2"}
+  "deb-mount"
+]
+conflicts: [
+  "deb-consolekit"
+  "deb-libpam-ck-connector"
+  "deb-systemd-shim"
+]
+extra-source "systemd_252.26-1~deb12u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/systemd/systemd_252.26-1~deb12u2_amd64.deb"
+}

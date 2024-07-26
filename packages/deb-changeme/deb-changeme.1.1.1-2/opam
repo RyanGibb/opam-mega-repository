@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i changeme_1.1.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r changeme"]
+]
+depends: [
+  "deb-python3-any" {>= "3.3.2-2~"}
+  "deb-python3-cerberus"
+  "deb-python3-jinja2"
+  "deb-python3-libnmap"
+  "deb-python3-logutils"
+  "deb-python3-lxml"
+  "deb-python3-memcache"
+  "deb-python3-netaddr"
+  "deb-python3-nose"
+  "deb-python3-paramiko"
+  "deb-python3-psycopg2"
+  "deb-python3-pymongo"
+  "deb-python3-pyodbc"
+  "deb-python3-pysnmp4"
+  "deb-python3-redis"
+  "deb-python3-requests"
+  "deb-python3-selenium"
+  "deb-python3-shodan"
+  "deb-python3-sqlalchemy"
+  "deb-python3-tabulate"
+  "deb-python3-yaml"
+]
+extra-source "changeme_1.1.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/changeme/changeme_1.1.1-2_all.deb"
+}

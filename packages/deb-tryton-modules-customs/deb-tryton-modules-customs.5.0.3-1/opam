@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tryton-modules-customs_5.0.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tryton-modules-customs"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-pkg-resources"
+  "deb-python3-simpleeval"
+  "deb-python3-sql"
+  "deb-tryton-modules-country" {>= "5.0"}
+  "deb-tryton-modules-currency" {>= "5.0"}
+  "deb-tryton-modules-product" {>= "5.0"}
+  "deb-tryton-server" {>= "5.0"}
+]
+extra-source "tryton-modules-customs_5.0.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tryton-modules-customs/tryton-modules-customs_5.0.3-1_all.deb"
+}

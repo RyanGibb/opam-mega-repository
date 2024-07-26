@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xpuzzles_7.7.1-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xpuzzles"]
+]
+depends: [
+  "deb-libaudiofile1" {>= "0.3.6"}
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libgl1"
+  "deb-libice6" {>= "1-1.0.0"}
+  "deb-libsm6"
+  "deb-libx11-6"
+  "deb-libxpm4"
+  "deb-libxt6"
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+conflicts: [
+  "deb-xmpuzzles"
+]
+extra-source "xpuzzles_7.7.1-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xpuzzles/xpuzzles_7.7.1-1.1_amd64.deb"
+}

@@ -1,0 +1,48 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libperl5i-perl_2.13.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libperl5i-perl"]
+]
+depends: [
+  "deb-libautobox-core-perl"
+  "deb-libautobox-dump-perl"
+  "deb-libautobox-list-util-perl"
+  "deb-libautobox-perl"
+  "deb-libautovivification-perl"
+  "deb-libc6" {>= "2.4"}
+  "deb-libcapture-tiny-perl"
+  "deb-libcarp-fix-1-25-perl"
+  "deb-libchild-perl"
+  "deb-libclass-perl"
+  "deb-libdatetime-format-epoch-perl"
+  "deb-libdatetime-perl"
+  "deb-libdatetime-timezone-tzfile-perl"
+  "deb-libdevel-declare-perl"
+  "deb-libfile-chdir-perl"
+  "deb-libhash-fieldhash-perl"
+  "deb-libhash-merge-simple-perl"
+  "deb-libhash-storediterator-perl"
+  "deb-libindirect-perl"
+  "deb-libipc-system-simple-perl"
+  "deb-libjson-maybexs-perl" {>= "1.003005"}
+  "deb-liblist-moreutils-perl"
+  "deb-libmodern-perl-perl"
+  "deb-libobject-id-perl"
+  "deb-libpath-tiny-perl"
+  "deb-libperl6-caller-perl"
+  "deb-libsub-name-perl"
+  "deb-libtaint-util-perl"
+  "deb-libtime-y2038-perl"
+  "deb-libtrue-perl"
+  "deb-libtry-tiny-perl"
+  "deb-libutf8-all-perl" {>= "0.015"}
+  "deb-libwant-perl"
+  "deb-libyaml-perl"
+  "deb-perl"
+  ("deb-perl" {>= "5.17.2"} | "deb- libautodie-perl" {>= "2.12"})
+]
+extra-source "libperl5i-perl_2.13.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libp/libperl5i-perl/libperl5i-perl_2.13.2-1_amd64.deb"
+}

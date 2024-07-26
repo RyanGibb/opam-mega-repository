@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i wininfo_0.7-8_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r wininfo"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libgtk2-0-0" {>= "2.24.0"}
+  "deb-libx11-6"
+  "deb-libxres1" {>= "2-1.2.0"}
+]
+extra-source "wininfo_0.7-8_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/w/wininfo/wininfo_0.7-8_amd64.deb"
+}

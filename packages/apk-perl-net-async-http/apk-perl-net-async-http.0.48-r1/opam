@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-net-async-http-0.48-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-net-async-http"]
+]
+depends: [
+  "apk-perl" {= "5.34.2-r0"}
+  "apk-perl-future" {= "0.48-r0"}
+  "apk-perl-http-message" {= "6.36-r0"}
+  "apk-perl-io-async" {= "0.79-r0"}
+  "apk-perl-metrics-any" {= "0.07-r0"}
+  "apk-perl-struct-dumb" {= "0.12-r1"}
+  "apk-perl-uri" {= "5.10-r0"}
+]
+extra-source "perl-net-async-http-0.48-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/perl-net-async-http-0.48-r1.apk"
+}

@@ -1,0 +1,50 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i warzone2100_4.3.3-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r warzone2100"]
+]
+depends: [
+  "deb-libasound2" {>= "1.0.27"}
+  "deb-libc6" {>= "2.35"}
+  "deb-libcurl3-gnutls" {>= "7.56.1"}
+  "deb-libdecor-0-0" {>= "0.1.0"}
+  "deb-libdrm2" {>= "2.4.47"}
+  "deb-libfreetype6" {>= "2.10.1"}
+  "deb-libfribidi0" {>= "1.0.0"}
+  "deb-libgbm1" {>= "8.1~0"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libharfbuzz0b" {>= "1.2.6"}
+  "deb-libminiupnpc17" {>= "1.9.20140610"}
+  "deb-libogg0" {>= "1.1.0"}
+  "deb-libopenal1" {>= "1.14"}
+  "deb-libopus0" {>= "1.1"}
+  "deb-libphysfs1" {>= "3.0.2"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libpulse0" {>= "0.99.1"}
+  "deb-libsamplerate0" {>= "0.1.7"}
+  "deb-libsodium23" {>= "1.0.14"}
+  "deb-libsqlite3-0" {>= "3.14.0"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libtheora0" {>= "1.0"}
+  "deb-libvorbis0a" {>= "1.1.2"}
+  "deb-libvorbisfile3" {>= "1.1.2"}
+  "deb-libwayland-client0" {>= "1.20.0"}
+  "deb-libwayland-cursor0" {>= "1.0.2"}
+  "deb-libwayland-egl1" {>= "1.15.0"}
+  "deb-libx11-6" {>= "2-1.2.99.901"}
+  "deb-libxcursor1" {> "1.1.2"}
+  "deb-libxext6"
+  "deb-libxfixes3" {>= "1-5.0"}
+  "deb-libxi6" {>= "2-1.6.99.1"}
+  "deb-libxkbcommon0" {>= "0.5.0"}
+  "deb-libxrandr2" {>= "2-1.2.99.3"}
+  "deb-libxss1"
+  "deb-warzone2100-data" {<= "4.3.3-3"}
+  "deb-warzone2100-data" {>= "4.3.3"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "warzone2100_4.3.3-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/w/warzone2100/warzone2100_4.3.3-3_amd64.deb"
+}

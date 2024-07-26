@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-hoauth2-dev_1.7.2-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-hoauth2-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-aeson-dev"
+  "deb-libghc-exceptions-dev"
+  "deb-libghc-http-conduit-dev"
+  "deb-libghc-http-types-dev"
+  "deb-libghc-microlens-dev"
+  "deb-libghc-unordered-containers-dev"
+  "deb-libghc-uri-bytestring-aeson-dev"
+  "deb-libghc-uri-bytestring-dev"
+  "deb-libgmp10"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libghc-hoauth2-dev_1.7.2-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-hoauth2/libghc-hoauth2-dev_1.7.2-4+b1_amd64.deb"
+}

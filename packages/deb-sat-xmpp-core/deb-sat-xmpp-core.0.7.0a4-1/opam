@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sat-xmpp-core_0.7.0a4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sat-xmpp-core"]
+]
+depends: [
+  "deb-python-any"
+  "deb-python-babel"
+  "deb-python-crypto" {>= "2.6.1"}
+  "deb-python-dateutil" {>= "2.7.3~"}
+  "deb-python-dbus"
+  "deb-python-feed"
+  "deb-python-lxml"
+  "deb-python-mutagen"
+  "deb-python-pil"
+  "deb-python-potr"
+  "deb-python-shortuuid"
+  "deb-python-twisted-core"
+  "deb-python-twisted-mail"
+  "deb-python-twisted-web"
+  "deb-python-twisted-words"
+  "deb-python-wokkel" {>= "18.0"}
+  "deb-python-xdg"
+  "deb-python-xe"
+  "deb-python-zope-interface"
+]
+extra-source "sat-xmpp-core_0.7.0a4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/salutatoi/sat-xmpp-core_0.7.0a4-1_all.deb"
+}

@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-sinon_14.0.2+ds+~cs74.13.25-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-sinon"]
+]
+depends: [
+  "deb-node-array-from"
+  "deb-node-diff" {>= "5.0.0~dfsg+~5.0.1-3~"}
+  "deb-node-event-emitter"
+  "deb-node-is-object"
+  "deb-node-lodash-packages"
+  "deb-node-merge-descriptors"
+  "deb-node-object-assign"
+  "deb-node-path-to-regexp" {>= "6"}
+  "deb-node-resolve"
+  "deb-node-supports-color"
+  "deb-node-type-detect"
+  "deb-node-util"
+]
+extra-source "node-sinon_14.0.2+ds+~cs74.13.25-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-sinon/node-sinon_14.0.2+ds+~cs74.13.25-2_all.deb"
+}

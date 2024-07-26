@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-tasty-golden-dev_2.3.2-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-tasty-golden-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-async-dev"
+  "deb-libghc-optparse-applicative-dev"
+  "deb-libghc-tagged-dev"
+  "deb-libghc-tasty-dev"
+  "deb-libghc-temporary-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-tasty-golden-dev_2.3.2-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-tasty-golden/libghc-tasty-golden-dev_2.3.2-3+b1_amd64.deb"
+}

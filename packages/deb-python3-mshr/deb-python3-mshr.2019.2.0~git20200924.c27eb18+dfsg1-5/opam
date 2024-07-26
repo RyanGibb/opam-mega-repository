@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-mshr_2019.2.0~git20200924.c27eb18+dfsg1-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-mshr"]
+]
+depends: [
+  "deb-dolfin-bin" {>= "2019.2"}
+  "deb-libmshr-dev" {>= "2019.2.0~git20200924.c27eb18+dfsg1-5"}
+  "deb-python3"
+  "deb-python3-dolfin" {>= "2019.2"}
+  "deb-python3-numpy"
+  ("deb-python3-mshr-real" | "deb- python3-mshr64-real")
+]
+extra-source "python3-mshr_2019.2.0~git20200924.c27eb18+dfsg1-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mshr/python3-mshr_2019.2.0~git20200924.c27eb18+dfsg1-5_all.deb"
+}

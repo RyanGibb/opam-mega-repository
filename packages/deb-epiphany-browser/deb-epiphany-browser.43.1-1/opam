@@ -1,0 +1,43 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i epiphany-browser_43.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r epiphany-browser"]
+]
+depends: [
+  "deb-epiphany-browser-data" {>= "43.1-1"}
+  "deb-gsettings-desktop-schemas"
+  "deb-iso-codes"
+  "deb-libarchive13" {>= "3.0.4"}
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.14.0"}
+  "deb-libdazzle-1-0-0" {>= "3.37.1"}
+  "deb-libgcr-base-3-1" {>= "3.8.0"}
+  "deb-libgcr-ui-3-1" {>= "3.8.0"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.36.5"}
+  "deb-libglib2-0-0" {>= "2.67.4"}
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-libgtk-3-0" {>= "3.23.1"}
+  "deb-libhandy-1-0" {>= "1.5.0"}
+  "deb-libhogweed6" {>= "3.4"}
+  "deb-libjavascriptcoregtk-4-1-0" {>= "2.38.5"}
+  "deb-libjson-glib-1-0-0" {>= "1.6"}
+  "deb-libnettle8" {>= "3.4"}
+  "deb-libpango-1-0-0" {>= "1.37.5"}
+  "deb-libportal-gtk3-1" {>= "0.6"}
+  "deb-libportal1" {>= "0.6"}
+  "deb-libsecret-1-0" {>= "0.19.1"}
+  "deb-libsoup-3-0-0" {>= "3.0.3"}
+  "deb-libsqlite3-0" {>= "3.7.15"}
+  "deb-libwebkit2gtk-4-1-0" {>= "2.37.1"}
+  "deb-libxml2" {>= "2.7.4"}
+  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
+]
+conflicts: [
+  "deb-swfdec-mozilla"
+]
+extra-source "epiphany-browser_43.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/epiphany-browser/epiphany-browser_43.1-1_amd64.deb"
+}

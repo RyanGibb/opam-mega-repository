@@ -1,0 +1,43 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-ruma-common-dev_0.10.5-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-ruma-common-dev"]
+]
+depends: [
+  "deb-librust-base64-0-13+default-dev"
+  "deb-librust-bytes-dev"
+  "deb-librust-form-urlencoded-1+default-dev"
+  "deb-librust-getrandom-dev"
+  "deb-librust-html5ever-0-26+default-dev"
+  "deb-librust-http-dev"
+  "deb-librust-indexmap-dev"
+  "deb-librust-itoa-dev"
+  "deb-librust-js-int-0-2+default-dev"
+  "deb-librust-js-int-0-2+serde-dev"
+  "deb-librust-js-option-0-1+default-dev"
+  "deb-librust-percent-encoding-dev"
+  "deb-librust-phf+macros-dev"
+  "deb-librust-phf+std-dev"
+  "deb-librust-pulldown-cmark-dev"
+  "deb-librust-rand-dev"
+  "deb-librust-regex+perf-dev"
+  "deb-librust-regex-dev"
+  "deb-librust-ruma-identifiers-validation-0-9+compat-dev"
+  "deb-librust-ruma-identifiers-validation-0-9-dev"
+  "deb-librust-ruma-macros-dev"
+  "deb-librust-serde+serde-derive-dev"
+  "deb-librust-serde-dev"
+  "deb-librust-serde-json-dev"
+  "deb-librust-thiserror-dev"
+  "deb-librust-tracing-dev"
+  "deb-librust-url-dev"
+  "deb-librust-uuid-1+default-dev"
+  "deb-librust-uuid-1+v4-dev"
+  "deb-librust-wildmatch-2+default-dev"
+  ("deb-librust-criterion-dev" | "deb-librust-criterion-0-3-dev")
+]
+extra-source "librust-ruma-common-dev_0.10.5-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-ruma-common/librust-ruma-common-dev_0.10.5-2_amd64.deb"
+}

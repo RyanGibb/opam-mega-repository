@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py3-setuptools-59.4.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py3-setuptools"]
+]
+depends: [
+  "apk-py3-appdirs" {= "1.4.4-r3"}
+  "apk-py3-more-itertools" {= "8.13.0-r0"}
+  "apk-py3-ordered-set" {= "4.0.2-r3"}
+  "apk-py3-packaging" {= "21.3-r0"}
+  "apk-py3-parsing" {= "2.4.7-r3"}
+  "apk-python3" {= "3.10.14-r1"}
+]
+extra-source "py3-setuptools-59.4.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/py3-setuptools-59.4.0-r0.apk"
+}

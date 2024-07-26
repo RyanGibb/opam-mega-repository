@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i veyon-master_4.5.3+repack1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r veyon-master"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libkf5itemmodels5" {>= "5.25.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.11.0~rc1"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-libveyon-core" {= "4.5.3+repack1-1"}
+  "deb-policykit-1"
+  "deb-veyon-service" {= "4.5.3+repack1-1"}
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+]
+extra-source "veyon-master_4.5.3+repack1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/veyon/veyon-master_4.5.3+repack1-1_amd64.deb"
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libtk-img_1:1.4.14+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libtk-img"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libtiff6" {>= "4.5.0~rc1"}
+  "deb-libtk8-6"
+  "deb-libx11-6"
+  "deb-zlib1g" {>= "1-1.2.11.dfsg"}
+]
+extra-source "libtk-img_1:1.4.14+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libt/libtk-img/libtk-img_1.4.14+dfsg-2_amd64.deb"
+}

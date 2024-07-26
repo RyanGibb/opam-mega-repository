@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-pcp_6.0.3-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-pcp"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libpcp-gui2" {= "6.0.3-1.1"}
+  "deb-libpcp-import1" {= "6.0.3-1.1"}
+  "deb-libpcp-mmv1" {= "6.0.3-1.1"}
+  "deb-libpcp-pmda3" {= "6.0.3-1.1"}
+  "deb-libpcp3" {= "6.0.3-1.1"}
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-any" {>= "3.3~"}
+]
+extra-source "python3-pcp_6.0.3-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pcp/python3-pcp_6.0.3-1.1_amd64.deb"
+}

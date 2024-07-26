@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i postgresql-all_225+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r postgresql-all"]
+]
+depends: [
+  "deb-libecpg-dev"
+  "deb-libpq-dev"
+  "deb-postgresql-13"
+  "deb-postgresql-common" {= "225+deb11u1"}
+  "deb-postgresql-plperl-13"
+  "deb-postgresql-plpython3-13"
+  "deb-postgresql-pltcl-13"
+  "deb-postgresql-server-dev-all"
+]
+extra-source "postgresql-all_225+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/postgresql-common/postgresql-all_225+deb11u1_all.deb"
+}

@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-clash-ghc-prof_1.6.4-1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-clash-ghc-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-clash-ghc-dev" {= "1.6.4-1+b3"}
+  "deb-libghc-clash-lib-prof"
+  "deb-libghc-clash-prelude-prof"
+  "deb-libghc-concurrent-supply-prof"
+  "deb-libghc-data-binary-ieee754-prof"
+  "deb-libghc-extra-prof"
+  "deb-libghc-ghc-typelits-extra-prof"
+  "deb-libghc-ghc-typelits-knownnat-prof"
+  "deb-libghc-ghc-typelits-natnormalise-prof"
+  "deb-libghc-hashable-prof"
+  "deb-libghc-lens-prof"
+  "deb-libghc-primitive-prof"
+  "deb-libghc-reflection-prof"
+  "deb-libghc-split-prof"
+  "deb-libghc-uniplate-prof"
+  "deb-libghc-unordered-containers-prof"
+  "deb-libghc-utf8-string-prof"
+  "deb-libghc-vector-prof"
+]
+extra-source "libghc-clash-ghc-prof_1.6.4-1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-clash-ghc/libghc-clash-ghc-prof_1.6.4-1+b3_amd64.deb"
+}

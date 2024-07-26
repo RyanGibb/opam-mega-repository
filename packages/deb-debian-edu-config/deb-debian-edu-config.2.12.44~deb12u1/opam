@@ -1,0 +1,56 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i debian-edu-config_2.12.44~deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r debian-edu-config"]
+]
+depends: [
+  "deb-adduser"
+  "deb-bind9-host"
+  "deb-cfengine3"
+  "deb-debconf-utils"
+  "deb-debian-edu-artwork"
+  "deb-e2fsprogs"
+  "deb-education-tasks"
+  "deb-fping"
+  "deb-gnutls-bin"
+  "deb-iptables"
+  "deb-isenkram-cli"
+  "deb-ldap-utils"
+  "deb-libconfig-inifiles-perl"
+  "deb-libfilesys-df-perl"
+  "deb-libglib2-0-bin"
+  "deb-libhtml-fromtext-perl"
+  "deb-libio-socket-ssl-perl"
+  "deb-libnet-ldap-perl"
+  "deb-libnet-netmask-perl"
+  "deb-libnss3-tools"
+  "deb-libpacparser1"
+  "deb-libpam-python" {>= "1.1.0~git20220701.1d4e111-0.3~"}
+  "deb-libproxy1-plugin-kconfig"
+  "deb-libproxy1-plugin-networkmanager"
+  "deb-libproxy1-plugin-webkit"
+  "deb-libsitesummary-perl"
+  "deb-libterm-readkey-perl"
+  "deb-libtext-unaccent-perl"
+  "deb-lockfile-progs"
+  "deb-lsb-release"
+  "deb-media-types"
+  "deb-net-tools"
+  "deb-ng-utils"
+  "deb-openssl"
+  "deb-patch"
+  "deb-python3"
+  "deb-python3-notify2"
+  "deb-ssl-cert"
+  "deb-swaks"
+  "deb-uuid"
+  "deb-wget"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-tftp-hpa" | "deb- tftp")
+]
+extra-source "debian-edu-config_2.12.44~deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/debian-edu-config/debian-edu-config_2.12.44~deb12u1_all.deb"
+}

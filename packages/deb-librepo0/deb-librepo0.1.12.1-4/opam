@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librepo0_1.12.1-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librepo0"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libcurl3-gnutls" {>= "7.28.0"}
+  "deb-libglib2-0-0" {>= "2.31.8"}
+  "deb-libgpgme11" {>= "1.2.0"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libxml2" {>= "2.7.4"}
+]
+extra-source "librepo0_1.12.1-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libr/librepo/librepo0_1.12.1-4_amd64.deb"
+}

@@ -1,0 +1,46 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pcl-tools_1.13.0+dfsg-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pcl-tools"]
+]
+depends: [
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libglut3-12" {>= "3.4.0"}
+  "deb-libglx0"
+  "deb-libgomp1" {>= "4.9"}
+  "deb-libopengl0"
+  "deb-libopenni0" {>= "1.5.4.0+dfsg"}
+  "deb-libpcl-common1-13" {>= "1.13.0+dfsg"}
+  "deb-libpcl-features1-13" {>= "1.13.0+dfsg"}
+  "deb-libpcl-filters1-13" {>= "1.13.0+dfsg"}
+  "deb-libpcl-io1-13" {>= "1.13.0+dfsg"}
+  "deb-libpcl-kdtree1-13" {>= "1.13.0+dfsg"}
+  "deb-libpcl-keypoints1-13" {>= "1.13.0+dfsg"}
+  "deb-libpcl-octree1-13" {>= "1.13.0+dfsg"}
+  "deb-libpcl-outofcore1-13" {>= "1.13.0+dfsg"}
+  "deb-libpcl-people1-13" {>= "1.13.0+dfsg"}
+  "deb-libpcl-recognition1-13" {>= "1.13.0+dfsg"}
+  "deb-libpcl-registration1-13" {>= "1.13.0+dfsg"}
+  "deb-libpcl-sample-consensus1-13" {>= "1.13.0+dfsg"}
+  "deb-libpcl-search1-13" {>= "1.13.0+dfsg"}
+  "deb-libpcl-segmentation1-13" {>= "1.13.0+dfsg"}
+  "deb-libpcl-stereo1-13" {>= "1.13.0+dfsg"}
+  "deb-libpcl-surface1-13" {>= "1.13.0+dfsg"}
+  "deb-libpcl-tracking1-13" {>= "1.13.0+dfsg"}
+  "deb-libpcl-visualization1-13" {>= "1.13.0+dfsg"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5opengl5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.14.1"}
+  "deb-libstdc++6" {>= "12"}
+  "deb-libvtk9-1" {>= "9.1.0+really9.1.0+dfsg2"}
+  "deb-libvtk9-1-qt" {>= "9.1.0+really9.1.0+dfsg2"}
+  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libqt5gui5" {>= "5.4.0"} | "deb- libqt5gui5-gles" {>= "5.4.0"})
+]
+extra-source "pcl-tools_1.13.0+dfsg-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pcl/pcl-tools_1.13.0+dfsg-3_amd64.deb"
+}

@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i rebar3_3.19.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r rebar3"]
+]
+depends: [
+  "deb-erlang-asn1-any"
+  "deb-erlang-base-any"
+  "deb-erlang-common-test-any"
+  "deb-erlang-crypto-any"
+  "deb-erlang-dev-any"
+  "deb-erlang-dialyzer-any"
+  "deb-erlang-edoc-any"
+  "deb-erlang-eunit-any"
+  "deb-erlang-parsetools-any"
+  "deb-erlang-reltool-any"
+  "deb-erlang-syntax-tools-any"
+  "deb-erlang-tools-any"
+]
+extra-source "rebar3_3.19.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rebar3/rebar3_3.19.0-1_all.deb"
+}

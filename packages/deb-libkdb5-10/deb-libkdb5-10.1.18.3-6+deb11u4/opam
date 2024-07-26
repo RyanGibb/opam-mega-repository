@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkdb5-10_1.18.3-6+deb11u4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkdb5-10"]
+]
+depends: [
+  "deb-libc6" {>= "2.25"}
+  "deb-libcom-err2" {>= "1.43.9"}
+  "deb-libgssrpc4" {>= "1.7dfsg~alpha1"}
+  "deb-libk5crypto3" {>= "1.7+dfsg"}
+  "deb-libkrb5-3" {>= "1.14+dfsg"}
+  "deb-libkrb5support0" {>= "1.15~beta1"}
+]
+extra-source "libkdb5-10_1.18.3-6+deb11u4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/krb5/libkdb5-10_1.18.3-6+deb11u4_amd64.deb"
+}

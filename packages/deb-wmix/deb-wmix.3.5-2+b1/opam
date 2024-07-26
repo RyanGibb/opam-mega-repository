@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i wmix_3.5-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r wmix"]
+]
+depends: [
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxpm4"
+  "deb-libxrandr2" {>= "2-1.2.0"}
+]
+extra-source "wmix_3.5-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/w/wmix/wmix_3.5-2+b1_amd64.deb"
+}

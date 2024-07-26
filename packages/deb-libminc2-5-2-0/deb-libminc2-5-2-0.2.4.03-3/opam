@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libminc2-5.2.0_2.4.03-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libminc2-5.2.0"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libhdf5-103-1"
+  "deb-libnetcdf18" {>= "3.6.1"}
+  "deb-libstdc++6" {>= "5.2"}
+]
+extra-source "libminc2-5.2.0_2.4.03-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libm/libminc/libminc2-5.2.0_2.4.03-3_amd64.deb"
+}

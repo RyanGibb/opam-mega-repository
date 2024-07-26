@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i connman-gtk_1.1.1+git20180626.b72c6ab-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r connman-gtk"]
+]
+depends: [
+  "deb-connman"
+  "deb-libc6" {>= "2.4"}
+  "deb-libglib2-0-0" {>= "2.50"}
+  "deb-libgtk-3-0" {>= "3.22"}
+  "deb-libopenconnect5" {>= "7.00"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "connman-gtk_1.1.1+git20180626.b72c6ab-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/connman-gtk/connman-gtk_1.1.1+git20180626.b72c6ab-3_amd64.deb"
+}

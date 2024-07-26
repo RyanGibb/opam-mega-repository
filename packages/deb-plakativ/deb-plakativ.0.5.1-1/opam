@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i plakativ_0.5.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r plakativ"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-fitz"
+  "deb-python3-img2pdf"
+  "deb-python3-pkg-resources"
+  "deb-python3-plakativ" {= "0.5.1-1"}
+  "deb-python3-tk"
+]
+extra-source "plakativ_0.5.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/plakativ/plakativ_0.5.1-1_all.deb"
+}

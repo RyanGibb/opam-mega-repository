@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i autogen_1:5.18.16-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r autogen"]
+]
+depends: [
+  "deb-guile-3-0-libs"
+  "deb-libc6" {>= "2.33"}
+  "deb-libopts25" {>= "1-5.18.16"}
+  "deb-libopts25-dev" {= "1-5.18.16-5"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-perl-any"
+]
+extra-source "autogen_1:5.18.16-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/autogen/autogen_5.18.16-5_amd64.deb"
+}

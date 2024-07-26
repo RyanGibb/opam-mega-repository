@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i vdr-plugin-dvd_0.3.6~b03+cvs20090426.0013-25_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r vdr-plugin-dvd"]
+]
+depends: [
+  "deb-liba52-0-7-4"
+  "deb-libc6" {>= "2.14"}
+  "deb-libdvdnav4" {>= "4.1.3"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-vdr"
+]
+extra-source "vdr-plugin-dvd_0.3.6~b03+cvs20090426.0013-25_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/vdr-plugin-dvd/vdr-plugin-dvd_0.3.6~b03+cvs20090426.0013-25_amd64.deb"
+}

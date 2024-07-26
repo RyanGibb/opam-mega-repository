@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-gganimate_1.0.7-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-gganimate"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.3-1"}
+  "deb-r-cran-ggplot2" {>= "3.0.0"}
+  "deb-r-cran-glue"
+  "deb-r-cran-plyr"
+  "deb-r-cran-progress"
+  "deb-r-cran-rlang"
+  "deb-r-cran-scales"
+  "deb-r-cran-stringi"
+  "deb-r-cran-tweenr" {>= "1.0.1"}
+]
+extra-source "r-cran-gganimate_1.0.7-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-gganimate/r-cran-gganimate_1.0.7-1_all.deb"
+}

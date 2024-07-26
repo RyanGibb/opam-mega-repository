@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-soap-tls-prof_0.1.1.4-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-soap-tls-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-configurator-prof"
+  "deb-libghc-connection-prof"
+  "deb-libghc-data-default-prof"
+  "deb-libghc-http-client-prof"
+  "deb-libghc-http-client-tls-prof"
+  "deb-libghc-soap-prof"
+  "deb-libghc-soap-tls-dev" {= "0.1.1.4-3+b1"}
+  "deb-libghc-tls-prof"
+  "deb-libghc-x509-prof"
+  "deb-libghc-x509-store-prof"
+  "deb-libghc-x509-validation-prof"
+]
+extra-source "libghc-soap-tls-prof_0.1.1.4-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-soap-tls/libghc-soap-tls-prof_0.1.1.4-3+b1_amd64.deb"
+}

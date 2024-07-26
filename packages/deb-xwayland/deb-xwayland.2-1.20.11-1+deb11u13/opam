@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xwayland_2:1.20.11-1+deb11u13_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xwayland"]
+]
+depends: [
+  "deb-libaudit1" {>= "1-2.2.1"}
+  "deb-libbsd0" {>= "0.7.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libdrm2" {>= "2.4.75"}
+  "deb-libepoxy0" {>= "1.0"}
+  "deb-libgbm1" {>= "17.1.0~rc2"}
+  "deb-libgcrypt20" {>= "1.8.0"}
+  "deb-libgl1"
+  "deb-libpixman-1-0" {>= "0.30.0"}
+  "deb-libselinux1" {>= "3.1~"}
+  "deb-libsystemd0"
+  "deb-libunwind8"
+  "deb-libwayland-client0" {>= "1.9.91"}
+  "deb-libxau6" {>= "1-1.0.9"}
+  "deb-libxdmcp6"
+  "deb-libxfont2" {>= "1-2.0.1"}
+  "deb-libxshmfence1"
+  "deb-xserver-common" {>= "2-1.20.11-1+deb11u13"}
+]
+extra-source "xwayland_2:1.20.11-1+deb11u13_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xorg-server/xwayland_1.20.11-1+deb11u13_amd64.deb"
+}

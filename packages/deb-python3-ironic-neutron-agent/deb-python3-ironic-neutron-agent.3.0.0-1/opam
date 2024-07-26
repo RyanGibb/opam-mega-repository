@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-ironic-neutron-agent_3.0.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-ironic-neutron-agent"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-keystoneauth1" {>= "3.14.0"}
+  "deb-python3-neutron" {>= "2-14.0.2"}
+  "deb-python3-neutron-lib" {>= "1.28.0"}
+  "deb-python3-openstacksdk" {>= "0.31.2"}
+  "deb-python3-oslo-config"
+  "deb-python3-oslo-i18n"
+  "deb-python3-oslo-log"
+  "deb-python3-oslo-messaging"
+  "deb-python3-oslo-service"
+  "deb-python3-oslo-utils"
+  "deb-python3-pbr"
+  "deb-python3-tenacity" {>= "6.0.0"}
+  "deb-python3-tooz" {>= "2.5.1"}
+]
+extra-source "python3-ironic-neutron-agent_3.0.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/networking-baremetal/python3-ironic-neutron-agent_3.0.0-1_all.deb"
+}

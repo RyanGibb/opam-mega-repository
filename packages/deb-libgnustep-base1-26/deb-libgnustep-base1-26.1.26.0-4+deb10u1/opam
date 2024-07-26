@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgnustep-base1.26_1.26.0-4+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgnustep-base1.26"]
+]
+depends: [
+  "deb-gnustep-base-common" {= "1.26.0-4+deb10u1"}
+  "deb-libavahi-client3" {>= "0.6.16"}
+  "deb-libavahi-common3" {>= "0.6.16"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libffi6" {>= "3.0.4"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgnutls30" {>= "3.6.6"}
+  "deb-libicu63" {>= "63.1-1~"}
+  "deb-libobjc4" {>= "4.6"}
+  "deb-libxml2" {>= "2.9.0"}
+  "deb-libxslt1-1" {>= "1.1.25"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libgnustep-base1.26_1.26.0-4+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnustep-base/libgnustep-base1.26_1.26.0-4+deb10u1_amd64.deb"
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i piuparts_1.0.0+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r piuparts"]
+]
+depends: [
+  "deb-debootstrap" {>= "1.0.89~"}
+  "deb-debsums" {>= "2.2.2~"}
+  "deb-lsb-release"
+  "deb-lsof"
+  "deb-mount"
+  "deb-piuparts-common" {= "1.0.0+deb10u1"}
+  "deb-python-any"
+  "deb-python-debian"
+]
+extra-source "piuparts_1.0.0+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/piuparts/piuparts_1.0.0+deb10u1_all.deb"
+}

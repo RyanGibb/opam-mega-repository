@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gl-117_1.3.2-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gl-117"]
+]
+depends: [
+  "deb-freeglut3"
+  "deb-gl-117-data" {= "1.3.2-3"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libsdl-mixer1-2"
+  "deb-libsdl1-2debian" {>= "1.2.11"}
+  "deb-libstdc++6" {>= "5"}
+  ("deb-libgl1-mesa-glx" | "deb- libgl1")
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+extra-source "gl-117_1.3.2-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gl-117/gl-117_1.3.2-3+b1_amd64.deb"
+}

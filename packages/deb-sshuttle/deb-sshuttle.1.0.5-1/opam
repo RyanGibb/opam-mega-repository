@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sshuttle_1.0.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sshuttle"]
+]
+depends: [
+  "deb-iptables"
+  "deb-libjs-sphinxdoc" {>= "2.4.3-5~"}
+  "deb-python3-any"
+  "deb-python3-distutils"
+  "deb-python3-pkg-resources"
+  "deb-python3-psutil"
+  ("deb-openssh-client" | "deb- lsh-client" | "deb- dropbear" | "deb- ssh-client")
+]
+extra-source "sshuttle_1.0.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sshuttle/sshuttle_1.0.5-1_all.deb"
+}

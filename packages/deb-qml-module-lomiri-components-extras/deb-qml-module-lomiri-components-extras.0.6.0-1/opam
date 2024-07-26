@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qml-module-lomiri-components-extras_0.6.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qml-module-lomiri-components-extras"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libcups2" {>= "1.6.0"}
+  "deb-libexiv2-27" {>= "0.25"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-libqt5concurrent5" {>= "5.6.0~rc"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.0.2"}
+  "deb-libqt5printsupport5" {>= "5.4.0"}
+  "deb-libqt5qml5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-qml-module-lomiri-components"
+  "deb-qml-module-qtqml-models2"
+  "deb-qml-module-qtquick-window2"
+  "deb-qml-module-qtquick2"
+  ("deb-libqt5gui5" {>= "5.5.0"} | "deb- libqt5gui5-gles" {>= "5.5.0"})
+  ("deb-libqt5quick5" {>= "5.0.2"} | "deb- libqt5quick5-gles" {>= "5.0.2"})
+]
+extra-source "qml-module-lomiri-components-extras_0.6.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lomiri-ui-extras/qml-module-lomiri-components-extras_0.6.0-1_amd64.deb"
+}

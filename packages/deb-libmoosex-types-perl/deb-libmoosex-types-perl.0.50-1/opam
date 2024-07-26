@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmoosex-types-perl_0.50-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmoosex-types-perl"]
+]
+depends: [
+  "deb-libcarp-clan-perl"
+  "deb-libmodule-runtime-perl"
+  "deb-libmoose-perl"
+  "deb-libnamespace-autoclean-perl" {>= "0.16"}
+  "deb-libsub-exporter-formethods-perl" {>= "0.100052"}
+  "deb-libsub-exporter-perl"
+  "deb-libsub-install-perl"
+  "deb-libsub-name-perl"
+  "deb-perl"
+]
+extra-source "libmoosex-types-perl_0.50-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libm/libmoosex-types-perl/libmoosex-types-perl_0.50-1_all.deb"
+}

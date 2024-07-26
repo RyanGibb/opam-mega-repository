@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgxr-dev_0.15.1-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgxr-dev"]
+]
+depends: [
+  "deb-libcogl-dev"
+  "deb-libcogl-path-dev"
+  "deb-libglib2-0-dev"
+  "deb-libgraphene-1-0-dev"
+  "deb-libgtk-3-dev"
+  "deb-libgulkan-dev"
+  "deb-libgxr-0-15-0" {= "0.15.1-4"}
+  "deb-libopenxr-dev"
+  "deb-libvulkan-dev"
+  "deb-mesa-common-dev"
+  ("deb-libgdk-pixbuf-2-0-dev" | "deb- libgdk-pixbuf2-0-dev")
+]
+extra-source "libgxr-dev_0.15.1-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gxr/libgxr-dev_0.15.1-4_amd64.deb"
+}

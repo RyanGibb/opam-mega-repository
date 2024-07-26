@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lxc-download-6.0.1-r7.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lxc-download"]
+]
+depends: [
+  "apk-gnupg-dirmngr" {= "2.4.5-r0"}
+  "apk-gpg" {= "2.4.5-r0"}
+  "apk-lxc" {= "6.0.1-r7"}
+  "apk-tar" {= "1.35-r2"}
+  "apk-wget" {= "1.24.5-r0"}
+  "apk-xz" {= "5.6.1-r3"}
+]
+extra-source "lxc-download-6.0.1-r7.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lxc-download-6.0.1-r7.apk"
+}

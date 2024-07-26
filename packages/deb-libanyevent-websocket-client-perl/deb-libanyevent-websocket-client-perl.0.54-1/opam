@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libanyevent-websocket-client-perl_0.54-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libanyevent-websocket-client-perl"]
+]
+depends: [
+  "deb-libanyevent-connector-perl"
+  "deb-libanyevent-perl"
+  "deb-libmoo-perl"
+  "deb-libperlx-maybe-perl"
+  "deb-libprotocol-websocket-perl"
+  "deb-liburi-perl"
+  "deb-liburi-ws-perl"
+  "deb-perl-any"
+]
+extra-source "libanyevent-websocket-client-perl_0.54-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/liba/libanyevent-websocket-client-perl/libanyevent-websocket-client-perl_0.54-1_all.deb"
+}

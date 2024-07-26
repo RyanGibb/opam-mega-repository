@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gubbins_2.4.1-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gubbins"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-python3"
+  "deb-python3-any"
+  "deb-python3-biopython"
+  "deb-python3-dendropy"
+  "deb-raxml"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "gubbins_2.4.1-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gubbins/gubbins_2.4.1-4_amd64.deb"
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libwebsockets-test-server_2.0.3-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libwebsockets-test-server"]
+]
+depends: [
+  "deb-libc6" {>= "2.16"}
+  "deb-libev4" {>= "1-4.04"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libuv1" {>= "1.4.2"}
+  "deb-libwebsockets-test-server-common" {= "2.0.3-3"}
+  "deb-libwebsockets8" {= "2.0.3-3"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libwebsockets-test-server_2.0.3-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libw/libwebsockets/libwebsockets-test-server_2.0.3-3_amd64.deb"
+}

@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-bioc-cner_1.18.1+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-bioc-cner"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "3.5.1-1"}
+  "deb-r-bioc-annotate" {>= "1.50.0"}
+  "deb-r-bioc-biocgenerics"
+  "deb-r-bioc-biostrings" {>= "2.33.4"}
+  "deb-r-bioc-genomeinfodb" {>= "1.1.3"}
+  "deb-r-bioc-genomicalignments" {>= "1.1.9"}
+  "deb-r-bioc-genomicranges" {>= "1.23.16"}
+  "deb-r-bioc-go-db" {>= "3.3.0"}
+  "deb-r-bioc-iranges" {>= "2.5.27"}
+  "deb-r-bioc-keggrest" {>= "1.14.0"}
+  "deb-r-bioc-rtracklayer" {>= "1.25.5"}
+  "deb-r-bioc-s4vectors" {>= "0.13.13"}
+  "deb-r-bioc-xvector" {>= "0.5.4"}
+  "deb-r-cran-dbi" {>= "0.7"}
+  "deb-r-cran-ggplot2" {>= "2.1.0"}
+  "deb-r-cran-powerlaw" {>= "0.60.3"}
+  "deb-r-cran-r-utils" {>= "2.3.0"}
+  "deb-r-cran-readr" {>= "0.2.2"}
+  "deb-r-cran-reshape2" {>= "1.4.1"}
+  "deb-r-cran-rsqlite" {>= "0.11.4"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "r-bioc-cner_1.18.1+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-bioc-cner/r-bioc-cner_1.18.1+dfsg-1_amd64.deb"
+}

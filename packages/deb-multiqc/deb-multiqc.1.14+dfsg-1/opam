@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i multiqc_1.14+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r multiqc"]
+]
+depends: [
+  "deb-fonts-glyphicons-halflings"
+  "deb-libjs-bootstrap"
+  "deb-libjs-jquery"
+  "deb-libjs-jquery-tablesorter"
+  "deb-libjs-jquery-ui"
+  "deb-python3-any"
+  "deb-python3-click"
+  "deb-python3-coloredlogs"
+  "deb-python3-distutils"
+  "deb-python3-future"
+  "deb-python3-humanfriendly" {>= "8.1-2"}
+  "deb-python3-jinja2"
+  "deb-python3-lzstring"
+  "deb-python3-markdown"
+  "deb-python3-matplotlib"
+  "deb-python3-networkx"
+  "deb-python3-numpy"
+  "deb-python3-requests"
+  "deb-python3-rich"
+  "deb-python3-rich-click"
+  "deb-python3-simplejson"
+  "deb-python3-spectra"
+  "deb-python3-yaml"
+]
+extra-source "multiqc_1.14+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/multiqc/multiqc_1.14+dfsg-1_all.deb"
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-test-script-1.26-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-test-script"]
+]
+depends: [
+  "apk-perl-ipc-run3" {= "0.048-r1"}
+  "apk-perl-probe-perl" {= "0.03-r1"}
+  "apk-perl-test-simple" {= "1.302175-r0"}
+]
+extra-source "perl-test-script-1.26-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-test-script-1.26-r0.apk"
+}

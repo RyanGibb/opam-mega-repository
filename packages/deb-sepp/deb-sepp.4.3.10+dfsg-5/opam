@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sepp_4.3.10+dfsg-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sepp"]
+]
+depends: [
+  "deb-hmmer"
+  "deb-libcommons-beanutils-java"
+  "deb-libcommons-collections3-java"
+  "deb-libcommons-lang-java"
+  "deb-libcommons-logging-java"
+  "deb-libgoogle-gson-java"
+  "deb-libjenkins-json-java"
+  "deb-libjson-java"
+  "deb-ncbi-blast+"
+  "deb-pplacer"
+  "deb-python3-any"
+  "deb-python3-dendropy"
+]
+extra-source "sepp_4.3.10+dfsg-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sepp/sepp_4.3.10+dfsg-5_amd64.deb"
+}

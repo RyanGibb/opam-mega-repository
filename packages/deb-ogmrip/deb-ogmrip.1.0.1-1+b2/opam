@@ -1,0 +1,52 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ogmrip_1.0.1-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ogmrip"]
+]
+depends: [
+  "deb-gconf-service"
+  "deb-gconf2" {>= "2.28.1-2"}
+  "deb-gpac"
+  "deb-lame" {>= "3.96"}
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libdbus-1-3" {>= "1.9.14"}
+  "deb-libdbus-glib-1-2" {>= "0.78"}
+  "deb-libdvdread4" {>= "4.1.3-4~"}
+  "deb-libenca0" {>= "1.9"}
+  "deb-libenchant1c2a" {>= "1.6.0"}
+  "deb-libfontconfig1" {>= "2.11"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgconf-2-4" {>= "3.2.5"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglade2-0" {>= "1-2.6.4-2~"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libgtk2-0-0" {>= "2.24.0"}
+  "deb-libnotify4" {>= "0.7.0"}
+  "deb-libogg0" {>= "1.0rc3"}
+  "deb-libogmrip1" {>= "1.0.1"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpangoft2-1-0-0" {>= "1.14.0"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libtheora0" {>= "0.0.0.alpha7.dfsg"}
+  "deb-libtiff5" {>= "4.0.3"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-mencoder"
+  "deb-mkvtoolnix" {>= "0.9.5"}
+  "deb-ogmrip-plugins" {= "1.0.1-1+b2"}
+  "deb-ogmtools"
+  "deb-vorbis-tools" {>= "1.0"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-mplayer-nogui" | "deb- mplayer")
+  ("deb-tesseract-ocr" | "deb- ocrad" | "deb- gocr")
+]
+conflicts: [
+  "deb-libogmrip0"
+]
+extra-source "ogmrip_1.0.1-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/ogmrip/ogmrip_1.0.1-1+b2_amd64.deb"
+}

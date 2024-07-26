@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ecflow-server_5.6.0-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ecflow-server"]
+]
+depends: [
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0"}
+  "deb-libboost-program-options1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcrypt1" {>= "1-4.1.0"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libstdc++6" {>= "9"}
+  ("deb-ksh" | "deb- mksh" | "deb- pdksh" | "deb- zsh")
+]
+extra-source "ecflow-server_5.6.0-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/ecflow/ecflow-server_5.6.0-1+b2_amd64.deb"
+}

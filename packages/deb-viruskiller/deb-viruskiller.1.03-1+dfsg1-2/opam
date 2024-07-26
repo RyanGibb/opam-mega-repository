@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i viruskiller_1.03-1+dfsg1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r viruskiller"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libsdl-image1-2" {>= "1.2.10"}
+  "deb-libsdl-mixer1-2"
+  "deb-libsdl-net1-2"
+  "deb-libsdl-ttf2-0-0"
+  "deb-libsdl1-2-compat-shim"
+  "deb-libstdc++6" {>= "5"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "viruskiller_1.03-1+dfsg1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/viruskiller/viruskiller_1.03-1+dfsg1-2_amd64.deb"
+}

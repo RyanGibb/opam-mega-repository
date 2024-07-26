@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmoosex-method-signatures-perl_0.49-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmoosex-method-signatures-perl"]
+]
+depends: [
+  "deb-libaliased-perl"
+  "deb-libb-hooks-endofscope-perl" {>= "0.10"}
+  "deb-libcontext-preserve-perl"
+  "deb-libdevel-declare-perl"
+  "deb-libmoose-perl"
+  "deb-libmoosex-lazyrequire-perl"
+  "deb-libmoosex-meta-typeconstraint-forcecoercion-perl"
+  "deb-libmoosex-types-perl" {>= "0.35"}
+  "deb-libmoosex-types-structured-perl" {>= "0.24"}
+  "deb-libnamespace-autoclean-perl" {>= "0.19"}
+  "deb-libparse-method-signatures-perl" {>= "1.003014"}
+  "deb-libsub-name-perl"
+  "deb-libtask-weaken-perl"
+  "deb-perl"
+]
+extra-source "libmoosex-method-signatures-perl_0.49-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libm/libmoosex-method-signatures-perl/libmoosex-method-signatures-perl_0.49-1_all.deb"
+}

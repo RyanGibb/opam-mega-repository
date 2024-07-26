@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openldap-2.6.3-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openldap"]
+]
+depends: [
+  "apk-busybox" {= "1.35.0-r18"}
+  "apk-libldap" {= "2.6.3-r3"}
+  "apk-libltdl" {= "2.4.7-r0"}
+  "apk-libsasl" {= "2.1.28-r1"}
+  "apk-libuuid" {= "2.38-r1"}
+  "apk-musl" {= "1.2.3-r3"}
+]
+extra-source "openldap-2.6.3-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/openldap-2.6.3-r3.apk"
+}

@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kdeedu_4:17.08.3+5.102_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kdeedu"]
+]
+depends: [
+  "deb-artikulate" {>= "4-17.08.3"}
+  "deb-blinken" {>= "4-17.08.3"}
+  "deb-cantor" {>= "4-17.08.3"}
+  "deb-kalgebra" {>= "4-17.08.3"}
+  "deb-kalzium" {>= "4-17.08.3"}
+  "deb-kanagram" {>= "4-17.08.3"}
+  "deb-kbruch" {>= "4-17.08.3"}
+  "deb-kgeography" {>= "4-17.08.3"}
+  "deb-khangman" {>= "4-17.08.3"}
+  "deb-kig" {>= "4-17.08.3"}
+  "deb-kiten" {>= "4-17.08.3"}
+  "deb-klettres" {>= "4-17.08.3"}
+  "deb-kmplot" {>= "4-17.08.3"}
+  "deb-ktouch" {>= "4-17.08.3"}
+  "deb-kturtle" {>= "4-17.08.3"}
+  "deb-kwordquiz" {>= "4-17.08.3"}
+  "deb-marble" {>= "4-17.08.3"}
+  "deb-minuet" {>= "17.08.3"}
+  "deb-parley" {>= "4-17.08.3"}
+  "deb-rocs" {>= "4-17.08.3"}
+  "deb-step" {>= "4-17.08.3"}
+]
+extra-source "kdeedu_4:17.08.3+5.102_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/meta-kde/kdeedu_17.08.3+5.102_amd64.deb"
+}

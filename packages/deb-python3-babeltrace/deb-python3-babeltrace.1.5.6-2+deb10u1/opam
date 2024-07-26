@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-babeltrace_1.5.6-2+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-babeltrace"]
+]
+depends: [
+  "deb-libbabeltrace1" {>= "1.5.4"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libdw1" {>= "0.126"}
+  "deb-libelf1" {>= "0.131"}
+  "deb-libglib2-0-0" {>= "2.16"}
+  "deb-libpopt0" {>= "1.14"}
+  "deb-libuuid1" {>= "2.16"}
+  "deb-python3" {< "3.8"}
+  "deb-python3" {>= "3.7~"}
+  "deb-python3-any"
+]
+extra-source "python3-babeltrace_1.5.6-2+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/babeltrace/python3-babeltrace_1.5.6-2+deb10u1_amd64.deb"
+}

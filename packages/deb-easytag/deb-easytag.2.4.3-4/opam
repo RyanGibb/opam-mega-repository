@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i easytag_2.4.3-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r easytag"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libflac8" {>= "1.3.0"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.30.1"}
+  "deb-libglib2-0-0" {>= "2.38"}
+  "deb-libgtk-3-0" {>= "3.10"}
+  "deb-libid3-3-8-3v5"
+  "deb-libid3tag0" {>= "0.15.1b"}
+  "deb-libogg0" {>= "1.0rc3"}
+  "deb-libopus0" {>= "1.1"}
+  "deb-libopusfile0" {>= "0.5"}
+  "deb-libspeex1" {>= "1.2~beta3-1"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libtag1v5" {>= "1.9.1-2.2~"}
+  "deb-libvorbis0a" {>= "1.1.2"}
+  "deb-libvorbisfile3" {>= "1.1.2"}
+  "deb-libwavpack1" {>= "4.40.0"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "easytag_2.4.3-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/easytag/easytag_2.4.3-4_amd64.deb"
+}

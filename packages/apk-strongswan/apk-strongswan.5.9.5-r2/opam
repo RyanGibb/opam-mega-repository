@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add strongswan-5.9.5-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del strongswan"]
+]
+depends: [
+  "apk-busybox" {= "1.35.0-r18"}
+  "apk-gmp" {= "6.2.1-r2"}
+  "apk-iproute2" {= "5.17.0-r0"}
+  "apk-libcap" {= "2.64-r1"}
+  "apk-libcrypto1-1" {= "1.1.1w-r1"}
+  "apk-libcurl" {= "8.5.0-r0"}
+  "apk-musl" {= "1.2.3-r3"}
+  "apk-sqlite-libs" {= "3.40.1-r1"}
+]
+extra-source "strongswan-5.9.5-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/strongswan-5.9.5-r2.apk"
+}

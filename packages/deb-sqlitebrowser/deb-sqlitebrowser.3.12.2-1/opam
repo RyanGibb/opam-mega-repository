@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sqlitebrowser_3.12.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sqlitebrowser"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqscintilla2-qt5-15" {>= "2.11.2"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5network5" {>= "5.15.1"}
+  "deb-libqt5printsupport5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.14.1"}
+  "deb-libqt5xml5" {>= "5.0.2"}
+  "deb-libsqlite3-0" {>= "3.7.3"}
+  "deb-libstdc++6" {>= "12"}
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "sqlitebrowser_3.12.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sqlitebrowser/sqlitebrowser_3.12.2-1_amd64.deb"
+}

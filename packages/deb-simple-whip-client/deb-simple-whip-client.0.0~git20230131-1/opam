@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i simple-whip-client_0.0~git20230131-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r simple-whip-client"]
+]
+depends: [
+  "deb-gstreamer1-0-libav"
+  "deb-gstreamer1-0-nice"
+  "deb-gstreamer1-0-plugins-bad"
+  "deb-gstreamer1-0-plugins-base"
+  "deb-gstreamer1-0-plugins-good"
+  "deb-gstreamer1-0-plugins-ugly"
+  "deb-libc6" {>= "2.34"}
+  "deb-libglib2-0-0" {>= "2.16.0"}
+  "deb-libgstreamer-plugins-bad1-0-0" {>= "1.22.0"}
+  "deb-libgstreamer-plugins-base1-0-0" {>= "1.0.0"}
+  "deb-libgstreamer1-0-0" {>= "1.14.0"}
+  "deb-libsoup2-4-1" {>= "2.41.90"}
+]
+extra-source "simple-whip-client_0.0~git20230131-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/simple-whip-client/simple-whip-client_0.0~git20230131-1_amd64.deb"
+}

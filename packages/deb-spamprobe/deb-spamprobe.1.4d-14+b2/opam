@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i spamprobe_1.4d-14+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r spamprobe"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libdb5-3"
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgif7" {>= "5.1"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libstdc++6" {>= "5.2"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "spamprobe_1.4d-14+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/spamprobe/spamprobe_1.4d-14+b2_amd64.deb"
+}

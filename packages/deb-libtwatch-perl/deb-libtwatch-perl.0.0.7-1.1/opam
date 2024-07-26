@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libtwatch-perl_0.0.7-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libtwatch-perl"]
+]
+depends: [
+  "deb-libfile-path-perl"
+  "deb-libhtml-tree-perl"
+  "deb-libhtml-treebuilder-xpath-perl"
+  "deb-libmime-lite-perl"
+  "deb-libmime-tools-perl"
+  "deb-libwww-mechanize-perl"
+  "deb-libwww-perl"
+  "deb-libxml-simple-perl"
+  "deb-perl-any"
+]
+extra-source "libtwatch-perl_0.0.7-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/twatch/libtwatch-perl_0.0.7-1.1_all.deb"
+}

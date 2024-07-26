@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-openshot_0.2.5+dfsg1-4+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-openshot"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libjsoncpp24" {>= "1.9.4"}
+  "deb-libopenshot-audio7" {>= "0.2.0+dfsg1"}
+  "deb-libopenshot19" {>= "0.2.5+dfsg1"}
+  "deb-libpython3-9" {>= "3.9.0~b4"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-python3" {< "3.10"}
+  "deb-python3" {>= "3.9~"}
+  "deb-python3-any"
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+]
+extra-source "python3-openshot_0.2.5+dfsg1-4+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libo/libopenshot/python3-openshot_0.2.5+dfsg1-4+b2_amd64.deb"
+}

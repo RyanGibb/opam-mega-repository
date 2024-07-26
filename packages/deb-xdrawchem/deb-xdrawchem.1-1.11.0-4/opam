@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xdrawchem_1:1.11.0-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xdrawchem"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libopenbabel7" {>= "3.1.1+dfsg"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5network5" {>= "5.14.1"}
+  "deb-libqt5printsupport5" {>= "5.0.2"}
+  "deb-libqt5svg5" {>= "5.6.0~beta"}
+  "deb-libqt5widgets5" {>= "5.15.1"}
+  "deb-libstdc++6" {>= "11"}
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+]
+extra-source "xdrawchem_1:1.11.0-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xdrawchem/xdrawchem_1.11.0-4_amd64.deb"
+}

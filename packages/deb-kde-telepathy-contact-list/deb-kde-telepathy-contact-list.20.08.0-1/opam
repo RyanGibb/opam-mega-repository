@@ -1,0 +1,42 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kde-telepathy-contact-list_20.08.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kde-telepathy-contact-list"]
+]
+depends: [
+  "deb-kde-telepathy-data" {>= "0.8.1"}
+  "deb-kde-telepathy-kpeople"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libkf5completion5" {>= "4.97.0"}
+  "deb-libkf5configcore5" {>= "4.97.0"}
+  "deb-libkf5configgui5" {>= "4.97.0"}
+  "deb-libkf5configwidgets5" {>= "4.96.0"}
+  "deb-libkf5coreaddons5" {>= "4.100.0"}
+  "deb-libkf5dbusaddons5" {>= "5.11~"}
+  "deb-libkf5i18n5" {>= "5.11~"}
+  "deb-libkf5iconthemes5" {>= "5.11~"}
+  "deb-libkf5notifications5" {>= "5.11~"}
+  "deb-libkf5people5" {>= "5.69.0"}
+  "deb-libkf5peoplewidgets5" {>= "5.69.0"}
+  "deb-libkf5service-bin"
+  "deb-libkf5service5" {>= "4.96.0"}
+  "deb-libkf5widgetsaddons5" {>= "4.96.0"}
+  "deb-libkf5windowsystem5" {>= "5.11~"}
+  "deb-libkf5xmlgui5" {>= "5.11~"}
+  "deb-libktpcommoninternals9abi1" {>= "20.08.0~"}
+  "deb-libktplogger9abi1" {>= "20.08.0~"}
+  "deb-libktpmodels9abi1" {>= "20.08.0~"}
+  "deb-libktpwidgets9" {>= "20.08.0~"}
+  "deb-libqt5core5a" {>= "5.14.1"}
+  "deb-libqt5dbus5" {>= "5.4"}
+  "deb-libqt5widgets5" {>= "5.11.0~rc1"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-libtelepathy-qt5-0" {>= "0.9.7~"}
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "kde-telepathy-contact-list_20.08.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/ktp-contact-list/kde-telepathy-contact-list_20.08.0-1_amd64.deb"
+}

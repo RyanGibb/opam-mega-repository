@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i solid-pop3d_0.15-30_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r solid-pop3d"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libc6" {>= "2.14"}
+  "deb-liblockfile1" {>= "1.0"}
+  "deb-libpam-runtime"
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-lsb-base"
+  "deb-netbase"
+  "deb-update-inetd"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+conflicts: [
+  "deb-pop3-server"
+]
+extra-source "solid-pop3d_0.15-30_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/solid-pop3d/solid-pop3d_0.15-30_amd64.deb"
+}

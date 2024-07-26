@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libbiojava5-java_5.4.0+dfsg-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libbiojava5-java"]
+]
+depends: [
+  "deb-libactivation-java"
+  "deb-libciftools-java" {>= "4.0.4"}
+  "deb-libcommons-codec-java" {>= "1.15"}
+  "deb-libcommons-math-java" {>= "2.2"}
+  "deb-libguava-java"
+  "deb-libitext5-java" {>= "5.5.13.3"}
+  "deb-libjaxb-api-java" {>= "2.3.1"}
+  "deb-libjaxb-java"
+  "deb-libjgrapht-java" {>= "1.5.1"}
+  "deb-libjmol-java"
+  "deb-libjson-simple-java"
+  "deb-liblog4j2-java" {>= "2.19.0"}
+  "deb-libmmtf-java" {>= "1.0.11"}
+  "deb-libslf4j-java" {>= "1.7.32"}
+  "deb-libvecmath-java"
+]
+extra-source "libbiojava5-java_5.4.0+dfsg-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/biojava5-live/libbiojava5-java_5.4.0+dfsg-5_all.deb"
+}

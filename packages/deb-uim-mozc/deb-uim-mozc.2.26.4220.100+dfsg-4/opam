@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i uim-mozc_2.26.4220.100+dfsg-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r uim-mozc"]
+]
+depends: [
+  "deb-libabsl20200923" {>= "0~20200923-1"}
+  "deb-libc6" {>= "2.15"}
+  "deb-libprotobuf23" {>= "3.12.4"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libuim-scm0" {>= "1-1.5.7"}
+  "deb-libuim8" {>= "1-1.5.7"}
+  "deb-mozc-data"
+  "deb-mozc-server" {= "2.26.4220.100+dfsg-4"}
+]
+extra-source "uim-mozc_2.26.4220.100+dfsg-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mozc/uim-mozc_2.26.4220.100+dfsg-4_amd64.deb"
+}

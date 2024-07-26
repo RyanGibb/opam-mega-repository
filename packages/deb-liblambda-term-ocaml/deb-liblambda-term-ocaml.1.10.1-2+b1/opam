@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i liblambda-term-ocaml_1.10.1-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r liblambda-term-ocaml"]
+]
+depends: [
+  "deb-libc6" {>= "2.17"}
+  "deb-libev4" {>= "1-4.04"}
+  "deb-liblwt-ocaml"
+  "deb-libreact-ocaml"
+  "deb-libresult-ocaml"
+  "deb-libzed-ocaml"
+  "deb-ocaml-base-nox"
+]
+extra-source "liblambda-term-ocaml_1.10.1-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lambda-term/liblambda-term-ocaml_1.10.1-2+b1_amd64.deb"
+}

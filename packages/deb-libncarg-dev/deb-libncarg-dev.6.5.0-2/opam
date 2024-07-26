@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libncarg-dev_6.5.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libncarg-dev"]
+]
+depends: [
+  "deb-libncarg0" {= "6.5.0-2"}
+  "deb-libudunits2-dev"
+  "deb-libxgks-dev"
+  "deb-ncl-ncarg"
+  ("deb-ksh" | "deb- mksh" | "deb- pdksh" | "deb- zsh")
+]
+extra-source "libncarg-dev_6.5.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/ncl/libncarg-dev_6.5.0-2_amd64.deb"
+}

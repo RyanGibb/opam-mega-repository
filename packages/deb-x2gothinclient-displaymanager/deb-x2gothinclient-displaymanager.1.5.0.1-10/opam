@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i x2gothinclient-displaymanager_1.5.0.1-10_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r x2gothinclient-displaymanager"]
+]
+depends: [
+  "deb-dbus-x11"
+  "deb-libfile-path-expand-perl"
+  "deb-locales"
+  "deb-pinentry-x2go"
+  "deb-polkitd"
+  "deb-psmisc"
+  "deb-x2gothinclient-common" {< "1.5.0.1-10.1"}
+  "deb-x2gothinclient-common" {>= "1.5.0.1-10"}
+  "deb-xauth"
+  "deb-xinit"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "x2gothinclient-displaymanager_1.5.0.1-10_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/x2gothinclient/x2gothinclient-displaymanager_1.5.0.1-10_all.deb"
+}

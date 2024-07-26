@@ -1,0 +1,54 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-termonad-dev_4.0.0.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-termonad-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libghc-adjunctions-dev"
+  "deb-libghc-classy-prelude-dev"
+  "deb-libghc-colour-dev"
+  "deb-libghc-constraints-dev"
+  "deb-libghc-data-default-dev"
+  "deb-libghc-distributive-dev"
+  "deb-libghc-dyre-dev"
+  "deb-libghc-file-embed-dev"
+  "deb-libghc-focuslist-dev"
+  "deb-libghc-gi-gdk-dev"
+  "deb-libghc-gi-gio-dev"
+  "deb-libghc-gi-glib-dev"
+  "deb-libghc-gi-gtk-dev"
+  "deb-libghc-gi-pango-dev"
+  "deb-libghc-gi-vte-dev"
+  "deb-libghc-haskell-gi-base-dev"
+  "deb-libghc-inline-c-dev"
+  "deb-libghc-lens-dev"
+  "deb-libghc-mono-traversable-dev"
+  "deb-libghc-pretty-simple-dev"
+  "deb-libghc-quickcheck2-dev"
+  "deb-libghc-xml-conduit-dev"
+  "deb-libghc-xml-html-qq-dev"
+  "deb-libghc-yaml-dev"
+  "deb-libgirepository-1-0-1" {>= "0.9.2"}
+  "deb-libglib2-0-0" {>= "2.16.0"}
+  "deb-libgmp10"
+  "deb-libgtk-3-0" {>= "3.0.0"}
+  "deb-libharfbuzz-gobject0" {>= "0.9.20"}
+  "deb-libharfbuzz0b" {>= "0.6.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpcre2-8-0" {>= "10.22"}
+  "deb-libvte-2-91-0"
+  "deb-libyaml-0-2"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libghc-termonad-dev_4.0.0.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-termonad/libghc-termonad-dev_4.0.0.1-1_amd64.deb"
+}

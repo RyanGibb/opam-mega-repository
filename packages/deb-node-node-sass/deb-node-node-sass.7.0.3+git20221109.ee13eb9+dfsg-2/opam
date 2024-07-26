@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-node-sass_7.0.3+git20221109.ee13eb9+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-node-sass"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libnode108" {>= "18.12.1+dfsg"}
+  "deb-libsass1" {>= "3.5.5-4~"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-node-chalk"
+  "deb-node-get-stdin"
+  "deb-node-glob"
+  "deb-node-globule"
+  "deb-node-gyp" {>= "3.8.0"}
+  "deb-node-lodash"
+  "deb-node-meow" {>= "8"}
+  "deb-node-mkdirp"
+  "deb-node-nan" {>= "2.13.2"}
+  "deb-node-npmlog"
+  "deb-node-readable-stream" {>= "3"}
+  "deb-node-source-map"
+  "deb-node-yargs"
+  "deb-nodejs-any" {>= "18.12.1+dfsg"}
+]
+extra-source "node-node-sass_7.0.3+git20221109.ee13eb9+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-node-sass/node-node-sass_7.0.3+git20221109.ee13eb9+dfsg-2_amd64.deb"
+}

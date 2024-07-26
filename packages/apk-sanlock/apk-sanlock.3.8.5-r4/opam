@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add sanlock-3.8.5-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del sanlock"]
+]
+depends: [
+  "apk-libaio" {= "0.3.113-r2"}
+  "apk-libblkid" {= "2.39.3-r0"}
+  "apk-libuuid" {= "2.39.3-r0"}
+  "apk-musl" {= "1.2.4_git20230717-r4"}
+  ("apk-busybox-binsh" {= "1.36.1-r19"} | "apk-dash-binsh" {= "0.5.12-r2"} | "apk-yash-binsh" {= "2.55-r0"})
+]
+extra-source "sanlock-3.8.5-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/sanlock-3.8.5-r4.apk"
+}

@@ -1,0 +1,41 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-gio-dev_0.14.8-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-gio-dev"]
+]
+depends: [
+  "deb-librust-bitflags-1+default-dev"
+  "deb-librust-futures-channel-0-3+default-dev"
+  "deb-librust-futures-core-0-3-dev"
+  "deb-librust-futures-io-0-3+default-dev"
+  "deb-librust-gio-sys-0-14+default-dev"
+  "deb-librust-gio-sys-0-14+dox-dev"
+  "deb-librust-gio-sys-0-14+v2-50-dev"
+  "deb-librust-gio-sys-0-14+v2-52-dev"
+  "deb-librust-gio-sys-0-14+v2-54-dev"
+  "deb-librust-gio-sys-0-14+v2-56-dev"
+  "deb-librust-gio-sys-0-14+v2-58-dev"
+  "deb-librust-gio-sys-0-14+v2-60-dev"
+  "deb-librust-gio-sys-0-14+v2-62-dev"
+  "deb-librust-gio-sys-0-14+v2-64-dev"
+  "deb-librust-gio-sys-0-14+v2-66-dev"
+  "deb-librust-glib-0-14+default-dev"
+  "deb-librust-glib-0-14+dox-dev"
+  "deb-librust-glib-0-14+v2-50-dev"
+  "deb-librust-glib-0-14+v2-52-dev"
+  "deb-librust-glib-0-14+v2-54-dev"
+  "deb-librust-glib-0-14+v2-56-dev"
+  "deb-librust-glib-0-14+v2-58-dev"
+  "deb-librust-glib-0-14+v2-60-dev"
+  "deb-librust-glib-0-14+v2-62-dev"
+  "deb-librust-glib-0-14+v2-64-dev"
+  "deb-librust-glib-0-14+v2-66-dev"
+  "deb-librust-libc-0-2+default-dev"
+  "deb-librust-once-cell-1+default-dev"
+  "deb-librust-thiserror-1+default-dev"
+]
+extra-source "librust-gio-dev_0.14.8-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-gio/librust-gio-dev_0.14.8-1_amd64.deb"
+}

@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i vistrails_2.2.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r vistrails"]
+]
+depends: [
+  "deb-jupyter-qtconsole"
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7.5-5~"}
+  "deb-python-matplotlib"
+  "deb-python-numpy"
+  "deb-python-qt4"
+  "deb-python-qt4-gl"
+  "deb-python-qt4-sql"
+  "deb-python-scipy"
+  "deb-python-sip"
+  "deb-python-sklearn"
+  "deb-python-sqlalchemy"
+  "deb-python-suds"
+  "deb-python-usagestats"
+  "deb-python-vtk6"
+  "deb-python-xlrd"
+]
+extra-source "vistrails_2.2.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/vistrails/vistrails_2.2.4-1_all.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librhonabwy-dev_1.1.11-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librhonabwy-dev"]
+]
+depends: [
+  "deb-libgnutls28-dev"
+  "deb-libjansson-dev"
+  "deb-liborcania-dev"
+  "deb-librhonabwy1-1" {= "1.1.11-1"}
+  "deb-libyder-dev"
+  "deb-zlib1g-dev"
+]
+extra-source "librhonabwy-dev_1.1.11-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rhonabwy/librhonabwy-dev_1.1.11-1_amd64.deb"
+}

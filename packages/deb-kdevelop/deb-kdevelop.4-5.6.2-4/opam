@@ -1,0 +1,83 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kdevelop_4:5.6.2-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kdevelop"]
+]
+depends: [
+  "deb-kdevelop-data" {>= "4-5.6.2-4"}
+  "deb-kdevelop56-libs" {= "4-5.6.2-4"}
+  "deb-kinit"
+  "deb-kio"
+  "deb-libapr1" {>= "1.2.7"}
+  "deb-libaprutil1" {>= "1.2.7+dfsg"}
+  "deb-libastyle3"
+  "deb-libc6" {>= "2.29"}
+  "deb-libclang1-11" {>= "1-6.0~svn321745-1~"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgrantlee-templates5" {>= "5.0.0"}
+  "deb-libkasten4controllers0" {>= "5-0.26.2"}
+  "deb-libkasten4core0" {>= "5-0.26.2~"}
+  "deb-libkasten4okteta2controllers0" {>= "5-0.26.2"}
+  "deb-libkasten4okteta2core0" {>= "5-0.26.2~"}
+  "deb-libkasten4okteta2gui0" {>= "5-0.26.2~"}
+  "deb-libkf5archive5" {>= "5.50.0~"}
+  "deb-libkf5bookmarks5" {>= "5.69.0"}
+  "deb-libkf5codecs5" {>= "4.96.0"}
+  "deb-libkf5completion5" {>= "4.97.0"}
+  "deb-libkf5configcore5" {>= "5.50.0~"}
+  "deb-libkf5configgui5" {>= "5.50.0~"}
+  "deb-libkf5configwidgets5" {>= "4.96.0"}
+  "deb-libkf5coreaddons5" {>= "5.77.0"}
+  "deb-libkf5crash5" {>= "5.50.0~"}
+  "deb-libkf5declarative5" {>= "5.50.0~"}
+  "deb-libkf5guiaddons5" {>= "5.50.0~"}
+  "deb-libkf5i18n5" {>= "5.50.0~"}
+  "deb-libkf5iconthemes5" {>= "5.50.0~"}
+  "deb-libkf5itemmodels5" {>= "5.50.0~"}
+  "deb-libkf5itemviews5" {>= "5.50.0~"}
+  "deb-libkf5jobwidgets5" {>= "5.50.0~"}
+  "deb-libkf5kiocore5" {>= "5.69.0"}
+  "deb-libkf5kiofilewidgets5" {>= "5.69.0"}
+  "deb-libkf5kiogui5" {>= "5.69.0"}
+  "deb-libkf5kiowidgets5" {>= "5.70.0"}
+  "deb-libkf5newstuff5" {>= "5.50.0~"}
+  "deb-libkf5parts5" {>= "5.50.0~"}
+  "deb-libkf5purpose-bin"
+  "deb-libkf5purpose5" {>= "5.44.0"}
+  "deb-libkf5service-bin"
+  "deb-libkf5service5" {>= "5.69.0"}
+  "deb-libkf5sonnetui5" {>= "5.50.0~"}
+  "deb-libkf5texteditor5" {>= "5.50.0"}
+  "deb-libkf5textwidgets5" {>= "4.96.0"}
+  "deb-libkf5threadweaver5" {>= "5.50.0~"}
+  "deb-libkf5widgetsaddons5" {>= "5.50.0~"}
+  "deb-libkf5xmlgui5" {>= "5.50.0~"}
+  "deb-libkomparediff2-5" {>= "4-14.12.50"}
+  "deb-libokteta3core0" {>= "5-0.26.2~"}
+  "deb-libokteta3gui0" {>= "5-0.26.2~"}
+  "deb-libprocesscore9" {>= "4-5.18.90"}
+  "deb-libprocessui9" {>= "4-5.18.90"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.14.1"}
+  "deb-libqt5help5" {>= "5.15.1"}
+  "deb-libqt5network5" {>= "5.15.1"}
+  "deb-libqt5qml5" {>= "5.8.0~"}
+  "deb-libqt5quickwidgets5" {>= "5.11.0"}
+  "deb-libqt5widgets5" {>= "5.14.1"}
+  "deb-libqt5xml5" {>= "5.8.0~"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libsvn1" {>= "1.8"}
+  "deb-qml-module-qtquick-controls"
+  "deb-qml-module-qtquick-layouts"
+  "deb-qml-module-qtquick-window2"
+  "deb-qml-module-qtquick-xmllistmodel"
+  "deb-qml-module-qtquick2"
+  "deb-qml-module-qtwebkit"
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+  ("deb-libqt5quick5" {>= "5.9.0~beta"} | "deb- libqt5quick5-gles" {>= "5.9.0~beta"})
+]
+extra-source "kdevelop_4:5.6.2-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kdevelop/kdevelop_5.6.2-4_amd64.deb"
+}

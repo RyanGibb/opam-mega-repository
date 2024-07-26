@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i freecad-python3_0.20.2+dfsg1-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r freecad-python3"]
+]
+depends: [
+  "deb-freecad-common" {= "0.20.2+dfsg1-4"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libfreecad-python3-0-20" {= "0.20.2+dfsg1-4"}
+  "deb-libgcc-s1" {>= "3.3.1"}
+  "deb-libpython3-11" {>= "3.11.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-python3-matplotlib"
+  "deb-python3-pivy"
+  "deb-python3-ply"
+  "deb-python3-pyside2-qtcore"
+  "deb-python3-pyside2-qtgui"
+  "deb-python3-pyside2-qtnetwork"
+  "deb-python3-pyside2-qtsvg"
+  "deb-python3-pyside2-qtuitools"
+  "deb-python3-pyside2-qtwidgets"
+  "deb-python3-pyside2-qtxml"
+  "deb-python3-yaml"
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+]
+extra-source "freecad-python3_0.20.2+dfsg1-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/freecad/freecad-python3_0.20.2+dfsg1-4_amd64.deb"
+}

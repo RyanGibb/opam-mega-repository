@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fts-fai-ldap_1.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fts-fai-ldap"]
+]
+depends: [
+  "deb-fts"
+  "deb-python" {< "2.8"}
+  "deb-python" {>= "2.7"}
+  "deb-python-ldap"
+]
+extra-source "fts-fai-ldap_1.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fts/fts-fai-ldap_1.1-2_all.deb"
+}

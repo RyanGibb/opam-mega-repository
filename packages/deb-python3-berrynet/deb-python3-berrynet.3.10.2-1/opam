@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-berrynet_3.10.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-berrynet"]
+]
+depends: [
+  "deb-darknet"
+  "deb-python3-any"
+  "deb-python3-logzero"
+  "deb-python3-opencv"
+  "deb-python3-opengl"
+  "deb-python3-paho-mqtt"
+  "deb-python3-python-telegram-bot"
+]
+extra-source "python3-berrynet_3.10.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/berrynet/python3-berrynet_3.10.2-1_all.deb"
+}

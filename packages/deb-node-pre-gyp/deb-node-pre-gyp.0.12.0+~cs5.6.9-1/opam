@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-pre-gyp_0.12.0+~cs5.6.9-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-pre-gyp"]
+]
+depends: [
+  "deb-node-mkdirp"
+  "deb-node-nopt"
+  "deb-node-npmlog"
+  "deb-node-rc"
+  "deb-node-rimraf"
+  "deb-node-semver"
+  "deb-node-tar"
+  "deb-nodejs"
+]
+extra-source "node-pre-gyp_0.12.0+~cs5.6.9-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-pre-gyp/node-pre-gyp_0.12.0+~cs5.6.9-1_all.deb"
+}

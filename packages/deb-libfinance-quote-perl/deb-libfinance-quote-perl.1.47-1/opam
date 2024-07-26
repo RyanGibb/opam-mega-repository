@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libfinance-quote-perl_1.47-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libfinance-quote-perl"]
+]
+depends: [
+  "deb-libdatetime-perl"
+  "deb-libhtml-tableextract-perl"
+  "deb-libjson-perl"
+  "deb-liblwp-protocol-https-perl"
+  "deb-libwww-perl"
+  "deb-perl"
+  ("deb-libcgi-pm-perl" | "deb- perl" {< "5.19"})
+]
+extra-source "libfinance-quote-perl_1.47-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libf/libfinance-quote-perl/libfinance-quote-perl_1.47-1_all.deb"
+}

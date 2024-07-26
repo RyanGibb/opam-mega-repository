@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gbemol_0.3.2-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gbemol"]
+]
+depends: [
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.15"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libfontconfig1" {>= "2.11"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.35.9"}
+  "deb-libgtk2-0-0" {>= "2.10.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpangoft2-1-0-0" {>= "1.14.0"}
+  "deb-libxml2" {>= "2.7.4"}
+]
+extra-source "gbemol_0.3.2-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gbemol/gbemol_0.3.2-2+b1_amd64.deb"
+}

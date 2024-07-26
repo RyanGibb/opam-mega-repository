@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pytagsfs_0.9.2-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pytagsfs"]
+]
+depends: [
+  "deb-python" {< "2.8"}
+  "deb-python" {>= "2.6.6-7~"}
+  "deb-python-fuse" {>= "0.2"}
+  "deb-python-inotifyx"
+  "deb-python-mutagen"
+  "deb-python-sclapp" {>= "0.5.2"}
+  ("deb-python2-7" | "deb- python2-6")
+]
+extra-source "pytagsfs_0.9.2-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pytagsfs/pytagsfs_0.9.2-6_all.deb"
+}

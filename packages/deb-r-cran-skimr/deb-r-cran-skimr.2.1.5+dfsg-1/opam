@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-skimr_2.1.5+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-skimr"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.2.20221110-1"}
+  "deb-r-cran-cli"
+  "deb-r-cran-dplyr" {>= "0.8.0"}
+  "deb-r-cran-knitr" {>= "1.2"}
+  "deb-r-cran-magrittr" {>= "1.5"}
+  "deb-r-cran-pillar" {>= "1.6.4"}
+  "deb-r-cran-purrr"
+  "deb-r-cran-repr"
+  "deb-r-cran-rlang" {>= "0.3.1"}
+  "deb-r-cran-stringr" {>= "1.1"}
+  "deb-r-cran-tibble" {>= "2.0.0"}
+  "deb-r-cran-tidyr" {>= "1.0"}
+  "deb-r-cran-tidyselect" {>= "1.0.0"}
+  "deb-r-cran-vctrs"
+]
+extra-source "r-cran-skimr_2.1.5+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-skimr/r-cran-skimr_2.1.5+dfsg-1_all.deb"
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-mono-traversable-prof_1.0.9.0-2+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-mono-traversable-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-hashable-prof"
+  "deb-libghc-mono-traversable-dev" {= "1.0.9.0-2+b2"}
+  "deb-libghc-split-prof"
+  "deb-libghc-unordered-containers-prof"
+  "deb-libghc-vector-algorithms-prof"
+  "deb-libghc-vector-prof"
+]
+extra-source "libghc-mono-traversable-prof_1.0.9.0-2+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-mono-traversable/libghc-mono-traversable-prof_1.0.9.0-2+b2_amd64.deb"
+}

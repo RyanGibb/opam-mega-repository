@@ -1,0 +1,51 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-istanbul_0.4.5+repack10+~cs97.25.57-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-istanbul"]
+]
+depends: [
+  "deb-handlebars"
+  "deb-libjs-prettify"
+  "deb-node-abbrev"
+  "deb-node-archy"
+  "deb-node-async"
+  "deb-node-convert-source-map"
+  "deb-node-decamelize"
+  "deb-node-es6-error" {>= "4.1.1-4~"}
+  "deb-node-escodegen"
+  "deb-node-esprima"
+  "deb-node-find-cache-dir"
+  "deb-node-find-up"
+  "deb-node-foreground-child"
+  "deb-node-glob"
+  "deb-node-graceful-fs"
+  "deb-node-is-stream"
+  "deb-node-is-windows"
+  "deb-node-js-yaml"
+  "deb-node-lodash-packages"
+  "deb-node-make-dir"
+  "deb-node-mkdirp"
+  "deb-node-nopt"
+  "deb-node-once"
+  "deb-node-p-map"
+  "deb-node-path-key"
+  "deb-node-resolve"
+  "deb-node-resolve-from"
+  "deb-node-rimraf"
+  "deb-node-shebang-command"
+  "deb-node-signal-exit"
+  "deb-node-strip-bom"
+  "deb-node-supports-color"
+  "deb-node-type-fest"
+  "deb-node-uuid"
+  "deb-node-which"
+  "deb-node-wordwrap"
+  "deb-node-write-file-atomic"
+  "deb-node-yargs"
+  "deb-nodejs-any" {>= "12"}
+]
+extra-source "node-istanbul_0.4.5+repack10+~cs97.25.57-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-istanbul/node-istanbul_0.4.5+repack10+~cs97.25.57-3_all.deb"
+}

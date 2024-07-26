@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libopencv-contrib-dev_3.2.0+dfsg-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libopencv-contrib-dev"]
+]
+depends: [
+  "deb-libopencv-calib3d-dev" {= "3.2.0+dfsg-6"}
+  "deb-libopencv-contrib3-2" {= "3.2.0+dfsg-6"}
+  "deb-libopencv-core-dev" {= "3.2.0+dfsg-6"}
+  "deb-libopencv-features2d-dev" {= "3.2.0+dfsg-6"}
+  "deb-libopencv-flann-dev" {= "3.2.0+dfsg-6"}
+  "deb-libopencv-highgui-dev" {= "3.2.0+dfsg-6"}
+  "deb-libopencv-imgcodecs-dev" {= "3.2.0+dfsg-6"}
+  "deb-libopencv-imgproc-dev" {= "3.2.0+dfsg-6"}
+  "deb-libopencv-ml-dev" {= "3.2.0+dfsg-6"}
+  "deb-libopencv-objdetect-dev" {= "3.2.0+dfsg-6"}
+  "deb-libopencv-photo-dev" {= "3.2.0+dfsg-6"}
+  "deb-libopencv-shape-dev" {= "3.2.0+dfsg-6"}
+  "deb-libopencv-stitching-dev" {= "3.2.0+dfsg-6"}
+  "deb-libopencv-superres-dev" {= "3.2.0+dfsg-6"}
+  "deb-libopencv-video-dev" {= "3.2.0+dfsg-6"}
+  "deb-libopencv-videoio-dev" {= "3.2.0+dfsg-6"}
+  "deb-libopencv-videostab-dev" {= "3.2.0+dfsg-6"}
+  "deb-libopencv-viz-dev" {= "3.2.0+dfsg-6"}
+]
+extra-source "libopencv-contrib-dev_3.2.0+dfsg-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/opencv/libopencv-contrib-dev_3.2.0+dfsg-6_amd64.deb"
+}

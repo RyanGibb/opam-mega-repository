@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libwildmagic-examples_5.13-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libwildmagic-examples"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libwildmagic5" {= "5.13-1+b2"}
+  "deb-libx11-6"
+  "deb-libxext6"
+  ("deb-libgl1-mesa-glx" | "deb- libgl1")
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+extra-source "libwildmagic-examples_5.13-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libw/libwildmagic/libwildmagic-examples_5.13-1+b2_amd64.deb"
+}

@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-tape_5.6.1+~cs8.20.19-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-tape"]
+]
+depends: [
+  "deb-node-debbundle-es-to-primitive"
+  "deb-node-deep-equal" {>= "2.0.5~"}
+  "deb-node-define-properties"
+  "deb-node-defined"
+  "deb-node-es-abstract"
+  "deb-node-function-bind"
+  "deb-node-glob"
+  "deb-node-inherits"
+  "deb-node-istanbul"
+  "deb-node-minimatch"
+  "deb-node-minimist"
+  "deb-node-object-inspect"
+  "deb-node-object-keys"
+  "deb-node-resolve"
+  "deb-node-resumer"
+  "deb-node-through"
+  "deb-nodejs-any"
+]
+extra-source "node-tape_5.6.1+~cs8.20.19-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-tape/node-tape_5.6.1+~cs8.20.19-1_all.deb"
+}

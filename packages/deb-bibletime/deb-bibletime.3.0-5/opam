@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i bibletime_3.0-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r bibletime"]
+]
+depends: [
+  "deb-bibletime-data" {= "3.0-5"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libclucene-core1v5" {>= "2.3.3.4+dfsg"}
+  "deb-libgcc-s1" {>= "3.3.1"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5printsupport5" {>= "5.0.2"}
+  "deb-libqt5qml5" {>= "5.0.2"}
+  "deb-libqt5quickwidgets5" {>= "5.11.0"}
+  "deb-libqt5widgets5" {>= "5.14.1"}
+  "deb-libqt5xml5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libsword1-9-0" {>= "1.9.0+dfsg"}
+  "deb-qml-module-qtquick2"
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+]
+extra-source "bibletime_3.0-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/bibletime/bibletime_3.0-5_amd64.deb"
+}

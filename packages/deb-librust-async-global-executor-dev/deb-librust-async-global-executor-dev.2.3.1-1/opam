@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-async-global-executor-dev_2.3.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-async-global-executor-dev"]
+]
+depends: [
+  "deb-librust-async-channel-dev"
+  "deb-librust-async-executor-dev"
+  "deb-librust-async-io-dev"
+  "deb-librust-async-lock-dev"
+  "deb-librust-blocking-dev"
+  "deb-librust-futures-lite-1+default-dev"
+  "deb-librust-once-cell-dev"
+  "deb-librust-tokio-1+rt-dev"
+  "deb-librust-tokio-1+rt-multi-thread-dev"
+]
+extra-source "librust-async-global-executor-dev_2.3.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-async-global-executor/librust-async-global-executor-dev_2.3.1-1_amd64.deb"
+}

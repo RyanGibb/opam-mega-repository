@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdist-inkt-profile-tobyink-perl_0.024-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdist-inkt-profile-tobyink-perl"]
+]
+depends: [
+  "deb-libdist-inkt-doap-perl"
+  "deb-libdist-inkt-perl" {>= "0.24"}
+  "deb-libdist-inkt-role-hg-perl"
+  "deb-libdist-inkt-role-release-perl"
+  "deb-libdist-inkt-role-test-kwalitee-perl"
+  "deb-libdist-inkt-role-test-perl"
+  "deb-libtest-eol-perl"
+  "deb-libtest-tabs-perl"
+  "deb-perl-any"
+  "deb-sgml-base" {>= "1.28"}
+]
+extra-source "libdist-inkt-profile-tobyink-perl_0.024-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libd/libdist-inkt-profile-tobyink-perl/libdist-inkt-profile-tobyink-perl_0.024-2_all.deb"
+}

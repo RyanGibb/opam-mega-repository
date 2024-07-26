@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libplib-dev_1.8.5-8+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libplib-dev"]
+]
+depends: [
+  "deb-freeglut3-dev"
+  "deb-libplib1" {= "1.8.5-8+deb11u1"}
+  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
+]
+conflicts: [
+  "deb-plib1-8-4-dev"
+]
+extra-source "libplib-dev_1.8.5-8+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/plib/libplib-dev_1.8.5-8+deb11u1_amd64.deb"
+}

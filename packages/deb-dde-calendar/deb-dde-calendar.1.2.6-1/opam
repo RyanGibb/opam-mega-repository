@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dde-calendar_1.2.6-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dde-calendar"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libdtkcore2" {>= "2.0.9.9"}
+  "deb-libdtkwidget2" {>= "2.0.9.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5dbus5" {>= "5.0.2"}
+  "deb-libqt5gui5" {>= "5.8.0"}
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "4.1.1"}
+]
+extra-source "dde-calendar_1.2.6-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dde-calendar/dde-calendar_1.2.6-1_amd64.deb"
+}

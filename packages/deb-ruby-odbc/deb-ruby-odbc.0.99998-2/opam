@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-odbc_0.99998-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-odbc"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libodbc1" {>= "2.3.1"}
+  "deb-libruby2-7" {>= "2.7.0"}
+  "deb-odbcinst1debian2" {>= "2.3.1"}
+  "deb-ruby" {< "1-2.8~"}
+  "deb-ruby" {>= "1-2.7~0"}
+  ("deb-unixodbc" | "deb- libiodbc2")
+]
+extra-source "ruby-odbc_0.99998-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-odbc/ruby-odbc_0.99998-2_amd64.deb"
+}

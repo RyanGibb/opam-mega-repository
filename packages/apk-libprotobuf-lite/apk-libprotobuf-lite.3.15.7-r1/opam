@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libprotobuf-lite-3.15.7-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libprotobuf-lite"]
+]
+depends: [
+  "apk-libgcc" {= "10.3.1_git20210424-r2"}
+  "apk-libstdc++" {= "10.3.1_git20210424-r2"}
+  "apk-musl" {= "1.2.2-r5"}
+]
+extra-source "libprotobuf-lite-3.15.7-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/libprotobuf-lite-3.15.7-r1.apk"
+}

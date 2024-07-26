@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-pysaml2_4.5.0-4+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-pysaml2"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-cryptography"
+  "deb-python3-dateutil"
+  "deb-python3-defusedxml"
+  "deb-python3-future"
+  "deb-python3-mako"
+  "deb-python3-memcache"
+  "deb-python3-openssl"
+  "deb-python3-pyasn1"
+  "deb-python3-repoze-who"
+  "deb-python3-requests"
+  "deb-python3-responses"
+  "deb-python3-six"
+  "deb-python3-tz"
+  "deb-xmlsec1"
+]
+extra-source "python3-pysaml2_4.5.0-4+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-pysaml2/python3-pysaml2_4.5.0-4+deb10u1_all.deb"
+}

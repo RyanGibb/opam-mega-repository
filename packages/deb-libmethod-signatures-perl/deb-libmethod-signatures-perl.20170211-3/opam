@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmethod-signatures-perl_20170211-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmethod-signatures-perl"]
+]
+depends: [
+  "deb-libany-moose-perl"
+  "deb-libconst-fast-perl"
+  "deb-libdevel-declare-perl"
+  "deb-liblexical-sealrequirehints-perl"
+  "deb-libmouse-perl"
+  "deb-libppi-perl"
+  "deb-libsub-name-perl"
+  "deb-perl-any"
+]
+extra-source "libmethod-signatures-perl_20170211-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libm/libmethod-signatures-perl/libmethod-signatures-perl_20170211-3_all.deb"
+}

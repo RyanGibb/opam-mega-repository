@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdose3-ocaml-dev_7.0.0-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdose3-ocaml-dev"]
+]
+depends: [
+  "deb-libbase64-ocaml-dev"
+  "deb-libbz2-ocaml-dev"
+  "deb-libcudf-ocaml-dev"
+  "deb-libextlib-ocaml-dev"
+  "deb-libocamlgraph-ocaml-dev"
+  "deb-libre-ocaml-dev"
+  "deb-libzip-ocaml-dev"
+  "deb-ocaml"
+]
+extra-source "libdose3-ocaml-dev_7.0.0-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dose3/libdose3-ocaml-dev_7.0.0-1+b2_amd64.deb"
+}

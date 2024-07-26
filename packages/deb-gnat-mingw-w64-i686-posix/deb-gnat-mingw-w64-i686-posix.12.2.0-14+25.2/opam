@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnat-mingw-w64-i686-posix_12.2.0-14+25.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnat-mingw-w64-i686-posix"]
+]
+depends: [
+  "deb-gcc-mingw-w64-base" {= "12.2.0-14+25.2"}
+  "deb-gcc-mingw-w64-i686-posix" {= "12.2.0-14+25.2"}
+  "deb-libc6" {>= "2.35"}
+  "deb-libgcc-s1" {>= "4.2"}
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-libisl23" {>= "0.15"}
+  "deb-libmpc3" {>= "1.1.0"}
+  "deb-libmpfr6" {>= "3.1.3"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "gnat-mingw-w64-i686-posix_12.2.0-14+25.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gcc-mingw-w64/gnat-mingw-w64-i686-posix_12.2.0-14+25.2_amd64.deb"
+}

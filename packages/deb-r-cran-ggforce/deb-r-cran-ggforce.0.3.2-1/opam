@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-ggforce_0.3.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-ggforce"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.2-1"}
+  "deb-r-cran-ggplot2" {>= "3.0.0"}
+  "deb-r-cran-gtable"
+  "deb-r-cran-mass"
+  "deb-r-cran-polyclip"
+  "deb-r-cran-rcpp" {>= "0.12.2"}
+  "deb-r-cran-rcppeigen"
+  "deb-r-cran-rlang"
+  "deb-r-cran-scales"
+  "deb-r-cran-tidyselect"
+  "deb-r-cran-tweenr" {>= "0.1.5"}
+  "deb-r-cran-withr"
+]
+extra-source "r-cran-ggforce_0.3.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-ggforce/r-cran-ggforce_0.3.2-1_amd64.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i miniupnpd_2.3.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r miniupnpd"]
+]
+depends: [
+  "deb-debconf"
+  "deb-init-system-helpers" {>= "1.51"}
+  "deb-lsb-base"
+  "deb-uuid-runtime"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-miniupnpd-nftables" | "deb- miniupnpd-iptables")
+]
+extra-source "miniupnpd_2.3.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/miniupnpd/miniupnpd_2.3.1-1_all.deb"
+}

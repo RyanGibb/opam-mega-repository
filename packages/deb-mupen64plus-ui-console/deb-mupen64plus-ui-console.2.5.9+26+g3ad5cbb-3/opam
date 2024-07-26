@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mupen64plus-ui-console_2.5.9+26+g3ad5cbb-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mupen64plus-ui-console"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libmupen64plus2"
+  "deb-libsdl2-2-0-0" {>= "2.0.12"}
+  "deb-mupen64plus-data"
+  ("deb-mupen64plus-audio-all" | "deb- mupen64plus-audio")
+  ("deb-mupen64plus-input-all" | "deb- mupen64plus-input")
+  ("deb-mupen64plus-rsp-all" | "deb- mupen64plus-rsp")
+  ("deb-mupen64plus-video-all" | "deb- mupen64plus-video")
+]
+extra-source "mupen64plus-ui-console_2.5.9+26+g3ad5cbb-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mupen64plus-ui-console/mupen64plus-ui-console_2.5.9+26+g3ad5cbb-3_amd64.deb"
+}

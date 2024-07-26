@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i bacula-director-pgsql_9.6.7-7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r bacula-director-pgsql"]
+]
+depends: [
+  "deb-bacula-common-pgsql" {< "9.6.7-7.1~"}
+  "deb-bacula-common-pgsql" {>= "9.6.7-7"}
+  "deb-postgresql-client"
+  ("deb-dbconfig-pgsql" | "deb- dbconfig-no-thanks")
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+conflicts: [
+  "deb-bacula-director-database"
+]
+extra-source "bacula-director-pgsql_9.6.7-7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/bacula/bacula-director-pgsql_9.6.7-7_all.deb"
+}

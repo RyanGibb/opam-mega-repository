@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i thunderbolt-tools_0.9.3-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r thunderbolt-tools"]
+]
+depends: [
+  "deb-libboost-filesystem1-67-0"
+  "deb-libboost-system1-67-0"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libstdc++6" {>= "5.2"}
+]
+extra-source "thunderbolt-tools_0.9.3-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/thunderbolt-tools/thunderbolt-tools_0.9.3-4+b1_amd64.deb"
+}

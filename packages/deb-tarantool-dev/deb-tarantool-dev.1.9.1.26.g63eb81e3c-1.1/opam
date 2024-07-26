@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tarantool-dev_1.9.1.26.g63eb81e3c-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tarantool-dev"]
+]
+depends: [
+  "deb-tarantool" {= "1.9.1.26.g63eb81e3c-1.1"}
+]
+conflicts: [
+  "deb-libtarantool-dev" {< "1.6~"}
+  "deb-tarantool-client" {< "1.6~"}
+  "deb-tarantool-client-dbg" {< "1.6~"}
+  "deb-tarantool-common" {< "1.6~"}
+  "deb-tarantool-dbg" {< "1.5.2"}
+  "deb-tarantool-lts-client"
+  "deb-tarantool-lts-dev"
+  "deb-tarantool-lts-modules"
+  "deb-tarantool-lts-mysql-module"
+  "deb-tarantool-lts-postgresql-module"
+  "deb-tarantool-mysql-plugin" {< "1.6~"}
+  "deb-tarantool-plugins" {< "1.6~"}
+  "deb-tarantool-postgresql-plugin" {< "1.6~"}
+]
+extra-source "tarantool-dev_1.9.1.26.g63eb81e3c-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tarantool/tarantool-dev_1.9.1.26.g63eb81e3c-1.1_amd64.deb"
+}

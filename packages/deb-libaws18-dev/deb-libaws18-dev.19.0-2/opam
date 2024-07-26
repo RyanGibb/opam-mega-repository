@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libaws18-dev_19.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libaws18-dev"]
+]
+depends: [
+  "deb-gnat"
+  "deb-gnat-8"
+  "deb-libaws4" {= "19.0-2"}
+  "deb-libgnutls28-dev"
+  "deb-libldap2-dev"
+  "deb-libtemplates-parser12-dev"
+  "deb-libxmlada-dom8-dev"
+  "deb-libxmlada-input8-dev"
+  "deb-libxmlada-sax8-dev"
+  "deb-libxmlada-schema8-dev"
+  "deb-libxmlada-unicode8-dev"
+  "deb-zlib1g-dev"
+]
+extra-source "libaws18-dev_19.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/liba/libaws/libaws18-dev_19.0-2_amd64.deb"
+}

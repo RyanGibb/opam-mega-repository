@@ -1,0 +1,44 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-containers-image-dev_5.23.1-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-containers-image-dev"]
+]
+depends: [
+  "deb-golang-github-acarl005-stripansi-dev"
+  "deb-golang-github-burntsushi-toml-dev"
+  "deb-golang-github-containers-ocicrypt-dev"
+  "deb-golang-github-containers-storage-dev" {>= "1.43"}
+  "deb-golang-github-coreos-bbolt-dev" {>= "1.3.3~"}
+  "deb-golang-github-docker-distribution-dev"
+  "deb-golang-github-docker-docker-credential-helpers-dev"
+  "deb-golang-github-docker-docker-dev"
+  "deb-golang-github-docker-go-connections-dev"
+  "deb-golang-github-docker-libtrust-dev"
+  "deb-golang-github-ghodss-yaml-dev"
+  "deb-golang-github-imdario-mergo-dev"
+  "deb-golang-github-klauspost-pgzip-dev"
+  "deb-golang-github-manifoldco-promptui-dev"
+  "deb-golang-github-moby-sys-dev"
+  "deb-golang-github-opencontainers-go-digest-dev"
+  "deb-golang-github-opencontainers-image-spec-dev" {>= "1.1.0~rc2-2~"}
+  "deb-golang-github-opencontainers-selinux-dev"
+  "deb-golang-github-ostreedev-ostree-go-dev"
+  "deb-golang-github-pkg-errors-dev"
+  "deb-golang-github-proglottis-gpgme-dev"
+  "deb-golang-github-sirupsen-logrus-dev"
+  "deb-golang-github-stretchr-testify-dev"
+  "deb-golang-github-sylabs-sif-dev" {> "2.3.1"}
+  "deb-golang-github-ulikunitz-xz-dev"
+  "deb-golang-github-vbatts-tar-split-dev"
+  "deb-golang-github-vbauerster-mpb-dev" {>= "7"}
+  "deb-golang-github-xeipuuv-gojsonschema-dev"
+  "deb-golang-golang-x-crypto-dev"
+  "deb-golang-golang-x-net-dev"
+  "deb-golang-golang-x-sync-dev"
+  "deb-golang-gopkg-cheggaaa-pb-v1-dev"
+]
+extra-source "golang-github-containers-image-dev_5.23.1-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-containers-image/golang-github-containers-image-dev_5.23.1-4_all.deb"
+}

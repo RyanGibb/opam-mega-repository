@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kdepim_4:17.12.3+5.102_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kdepim"]
+]
+depends: [
+  "deb-accountwizard" {>= "4-17.12.3"}
+  "deb-akonadiconsole" {>= "4-17.12.3"}
+  "deb-akregator" {>= "4-17.12.3"}
+  "deb-kaddressbook" {>= "4-17.12.3"}
+  "deb-kalarm" {>= "4-17.12.3"}
+  "deb-kdepim-runtime" {>= "4-17.12.3"}
+  "deb-kleopatra" {>= "4-17.12.3"}
+  "deb-kmail" {>= "4-17.12.3"}
+  "deb-knotes" {>= "4-17.12.3"}
+  "deb-konsolekalendar" {>= "4-17.12.3"}
+  "deb-kontact" {>= "4-17.12.3"}
+  "deb-korganizer" {>= "4-17.12.3"}
+]
+extra-source "kdepim_4:17.12.3+5.102_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/meta-kde/kdepim_17.12.3+5.102_amd64.deb"
+}

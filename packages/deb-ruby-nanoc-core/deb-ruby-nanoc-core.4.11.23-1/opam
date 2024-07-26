@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-nanoc-core_4.11.23-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-nanoc-core"]
+]
+depends: [
+  "deb-ruby-brandur-json-schema" {>= "0.19"}
+  "deb-ruby-concurrent" {>= "1.1"}
+  "deb-ruby-ddmemoize" {>= "1.0"}
+  "deb-ruby-ddmetrics" {>= "1.0"}
+  "deb-ruby-ddplugin" {>= "1.0"}
+  "deb-ruby-hamster" {>= "3.0"}
+  "deb-ruby-slow-enumerator-tools" {>= "1.0"}
+  "deb-ruby-tomlrb" {>= "1.2"}
+  "deb-ruby-tty-platform" {>= "0.2"}
+  "deb-ruby-zeitwerk" {>= "2.1"}
+]
+extra-source "ruby-nanoc-core_4.11.23-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/nanoc/ruby-nanoc-core_4.11.23-1_all.deb"
+}

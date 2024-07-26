@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i eso-midas_19.02pl1.1-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r eso-midas"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libgfortran5" {>= "8"}
+  "deb-liblockfile-bin"
+  "deb-libreadline8" {>= "6.0"}
+  "deb-libx11-6"
+  "deb-libxm4" {>= "2.3.4"}
+  "deb-libxt6"
+]
+extra-source "eso-midas_19.02pl1.1-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/eso-midas/eso-midas_19.02pl1.1-6_amd64.deb"
+}

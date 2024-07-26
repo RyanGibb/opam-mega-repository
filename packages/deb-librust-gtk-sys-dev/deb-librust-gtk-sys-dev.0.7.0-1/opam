@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-gtk-sys-dev_0.7.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-gtk-sys-dev"]
+]
+depends: [
+  "deb-libgtk-3-dev"
+  "deb-librust-atk-sys-0-7+default-dev"
+  "deb-librust-cairo-sys-rs-0-7+default-dev"
+  "deb-librust-gdk-pixbuf-sys-0-7+default-dev"
+  "deb-librust-gdk-sys-0-7+default-dev"
+  "deb-librust-gio-sys-0-7+default-dev"
+  "deb-librust-glib-sys-0-7+default-dev"
+  "deb-librust-gobject-sys-0-7+default-dev"
+  "deb-librust-libc-0-2+default-dev"
+  "deb-librust-pango-sys-0-7+default-dev"
+  "deb-librust-pkg-config-dev"
+]
+extra-source "librust-gtk-sys-dev_0.7.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-gtk-sys/librust-gtk-sys-dev_0.7.0-1_amd64.deb"
+}

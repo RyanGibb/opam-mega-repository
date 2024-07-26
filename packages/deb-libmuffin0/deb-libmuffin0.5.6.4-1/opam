@@ -1,0 +1,54 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmuffin0_5.6.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmuffin0"]
+]
+depends: [
+  "deb-adwaita-icon-theme"
+  "deb-libatk1-0-0" {>= "2.2.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.14.0"}
+  "deb-libcanberra0" {>= "0.2"}
+  "deb-libcinnamon-desktop4" {>= "5.6"}
+  "deb-libegl1"
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libfribidi0" {>= "0.19.2"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libgl1"
+  "deb-libglib2-0-0" {>= "2.61.1"}
+  "deb-libgraphene-1-0-0" {>= "1.9.4"}
+  "deb-libgtk-3-0" {>= "3.19.12"}
+  "deb-libgudev-1-0-0" {>= "146"}
+  "deb-libice6" {>= "1-1.0.0"}
+  "deb-libjson-glib-1-0-0" {>= "1.5.2"}
+  "deb-libpango-1-0-0" {>= "1.37.5"}
+  "deb-libpangocairo-1-0-0" {>= "1.18.0"}
+  "deb-libpangoft2-1-0-0" {>= "1.14.0"}
+  "deb-libsm6"
+  "deb-libstartup-notification0" {>= "0.11"}
+  "deb-libwacom9" {>= "2.0.0"}
+  "deb-libx11-6" {>= "2-1.2.99.901"}
+  "deb-libx11-xcb1" {>= "2-1.8.4"}
+  "deb-libxcb-randr0" {>= "1.3"}
+  "deb-libxcb-res0" {>= "1.10"}
+  "deb-libxcb1"
+  "deb-libxcomposite1" {>= "1-0.4.5"}
+  "deb-libxcursor1" {> "1.1.2"}
+  "deb-libxdamage1" {>= "1-1.1"}
+  "deb-libxext6" {>= "2-1.3.0"}
+  "deb-libxfixes3" {>= "1-5.0"}
+  "deb-libxi6" {>= "2-1.6.99.1"}
+  "deb-libxinerama1" {>= "2-1.1.4"}
+  "deb-libxkbcommon-x11-0" {>= "0.5.0"}
+  "deb-libxkbcommon0" {>= "0.5.0"}
+  "deb-libxkbfile1" {>= "1-1.1.0"}
+  "deb-libxrandr2" {>= "2-1.5.0"}
+  "deb-libxtst6"
+  "deb-muffin-common" {>= "5.6.4-1"}
+]
+extra-source "libmuffin0_5.6.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/muffin/libmuffin0_5.6.4-1_amd64.deb"
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-wordcloud_1.8.1+dfsg-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-wordcloud"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-python3" {< "3.10"}
+  "deb-python3" {>= "3.9~"}
+  "deb-python3-any"
+  "deb-python3-matplotlib"
+  "deb-python3-numpy"
+  "deb-python3-pil"
+  "deb-texlive-fonts-extra"
+]
+extra-source "python3-wordcloud_1.8.1+dfsg-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-wordcloud/python3-wordcloud_1.8.1+dfsg-1+b1_amd64.deb"
+}

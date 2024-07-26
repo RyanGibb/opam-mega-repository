@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libtaglib-ocaml_0.3.10-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libtaglib-ocaml"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libtag1v5" {>= "1.9.1-2.2~"}
+  "deb-ocaml-base"
+]
+extra-source "libtaglib-ocaml_0.3.10-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/ocaml-taglib/libtaglib-ocaml_0.3.10-1_amd64.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i barbican-tempest-plugin_1.7.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r barbican-tempest-plugin"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-cryptography"
+  "deb-python3-oslo-config"
+  "deb-python3-pbr"
+  "deb-python3-tempest"
+  "deb-tempest" {>= "27.0.0"}
+]
+extra-source "barbican-tempest-plugin_1.7.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/barbican-tempest-plugin/barbican-tempest-plugin_1.7.0-1_all.deb"
+}

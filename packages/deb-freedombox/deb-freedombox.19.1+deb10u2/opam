@@ -1,0 +1,77 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i freedombox_19.1+deb10u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r freedombox"]
+]
+depends: [
+  "deb-adduser"
+  "deb-apache2"
+  "deb-augeas-tools"
+  "deb-avahi-daemon"
+  "deb-avahi-utils"
+  "deb-batctl"
+  "deb-certbot"
+  "deb-curl"
+  "deb-debconf"
+  "deb-dnsutils"
+  "deb-e2fsprogs"
+  "deb-fail2ban"
+  "deb-firewalld"
+  "deb-flite"
+  "deb-fonts-fork-awesome"
+  "deb-fonts-lato"
+  "deb-gettext"
+  "deb-gir1-2-glib-2-0"
+  "deb-gir1-2-nm-1-0"
+  "deb-gir1-2-udisks-2-0"
+  "deb-javascript-common"
+  "deb-ldap-utils"
+  "deb-ldapscripts"
+  "deb-libapache2-mod-auth-pubtkt"
+  "deb-libjs-bootstrap"
+  "deb-libjs-jquery"
+  "deb-libjs-modernizr"
+  "deb-libnss-ldapd"
+  "deb-libpam-ldapd"
+  "deb-lsof"
+  "deb-netcat-openbsd"
+  "deb-network-manager"
+  "deb-nftables"
+  "deb-node-turbolinks"
+  "deb-nslcd"
+  "deb-openssh-server"
+  "deb-openssl"
+  "deb-parted"
+  "deb-php-fpm"
+  "deb-ppp"
+  "deb-pppoe"
+  "deb-python3-any"
+  "deb-python3-apt"
+  "deb-python3-argon2"
+  "deb-python3-augeas"
+  "deb-python3-bootstrapform"
+  "deb-python3-cherrypy3"
+  "deb-python3-configobj"
+  "deb-python3-dbus"
+  "deb-python3-django" {>= "1.11"}
+  "deb-python3-django-axes" {>= "3.0.3"}
+  "deb-python3-django-captcha"
+  "deb-python3-django-stronghold" {>= "0.3.0"}
+  "deb-python3-gi"
+  "deb-python3-openssl"
+  "deb-python3-psutil"
+  "deb-python3-requests"
+  "deb-python3-ruamel-yaml"
+  "deb-python3-yaml"
+  "deb-slapd"
+  "deb-sudo"
+  "deb-udiskie"
+  "deb-unattended-upgrades"
+  "deb-wget"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "freedombox_19.1+deb10u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/plinth/freedombox_19.1+deb10u2_all.deb"
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i jack_3.1.1+cvs20050801-31_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r jack"]
+]
+depends: [
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7~"}
+  "deb-python-cddb"
+  "deb-python-eyed3" {>= "0.7"}
+  "deb-sensible-utils"
+  ("deb-cdparanoia" | "deb- cdda2wav")
+  ("deb-python-pyvorbis" {>= "0.5"} | "deb- python-mutagen")
+  ("deb-vorbis-tools" | "deb- flac" | "deb- lame")
+]
+extra-source "jack_3.1.1+cvs20050801-31_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/j/jack/jack_3.1.1+cvs20050801-31_amd64.deb"
+}

@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpetsc-real3.10_3.10.3+dfsg1-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpetsc-real3.10"]
+]
+depends: [
+  "deb-libamd2" {>= "1-4.5.2"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcholmod3" {>= "1-4.5.2"}
+  "deb-libfftw3-double3" {>= "3.3.5"}
+  "deb-libfftw3-mpi3"
+  "deb-libgcc1" {>= "1-4.0"}
+  "deb-libgfortran5" {>= "8"}
+  "deb-libhdf5-openmpi-103" {>= "1.10.3"}
+  "deb-libhypre-2-15-1"
+  "deb-libklu1" {>= "1-4.5.2"}
+  "deb-libmumps-5-1-2"
+  "deb-libopenmpi3"
+  "deb-libptscotch-6-0"
+  "deb-libquadmath0" {>= "4.6"}
+  "deb-libscalapack-openmpi2-0"
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-libsuperlu-dist6"
+  "deb-libsuperlu5"
+  "deb-libumfpack5" {>= "1-4.5.2"}
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+conflicts: [
+  "deb-libpetsc3-6" {< "3.6.2.dfsg1-4"}
+]
+extra-source "libpetsc-real3.10_3.10.3+dfsg1-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/petsc/libpetsc-real3.10_3.10.3+dfsg1-5_amd64.deb"
+}

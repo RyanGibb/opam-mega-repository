@@ -1,0 +1,53 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i jmeter_2.13-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r jmeter"]
+]
+depends: [
+  "deb-java-wrappers" {>= "0.1.14"}
+  "deb-junit4"
+  "deb-libavalon-framework-java"
+  "deb-libbcmail-java"
+  "deb-libbcpkix-java"
+  "deb-libbcprov-java"
+  "deb-libbsf-java"
+  "deb-libbsh-java"
+  "deb-libcommons-codec-java"
+  "deb-libcommons-collections3-java"
+  "deb-libcommons-httpclient-java"
+  "deb-libcommons-io-java"
+  "deb-libcommons-jexl-java"
+  "deb-libcommons-jexl2-java"
+  "deb-libcommons-lang-java"
+  "deb-libcommons-lang3-java"
+  "deb-libcommons-math3-java"
+  "deb-libcommons-net-java"
+  "deb-libcommons-pool2-java"
+  "deb-libdnsjava-java"
+  "deb-libexcalibur-logger-java"
+  "deb-libexcalibur-logkit-java"
+  "deb-libgeronimo-jms-1-1-spec-java"
+  "deb-libhtmlparser-java"
+  "deb-libhttpclient-java"
+  "deb-libhttpcore-java"
+  "deb-libhttpmime-java"
+  "deb-libjcharts-java"
+  "deb-libjdom1-java"
+  "deb-libjsoup-java"
+  "deb-libjtidy-java"
+  "deb-libmail-java"
+  "deb-libmongodb-java"
+  "deb-liboro-java"
+  "deb-librhino-java"
+  "deb-librsyntaxtextarea-java"
+  "deb-libxalan2-java"
+  "deb-libxmlgraphics-commons-java"
+  "deb-libxstream-java"
+  "deb-velocity"
+  ("deb-default-jre" | "deb- java2-runtime")
+]
+extra-source "jmeter_2.13-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/j/jakarta-jmeter/jmeter_2.13-4_all.deb"
+}

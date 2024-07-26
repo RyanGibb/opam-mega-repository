@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i vdr-plugin-mp3_0.10.4-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r vdr-plugin-mp3"]
+]
+depends: [
+  "deb-eject"
+  "deb-libc6" {>= "2.33"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libid3tag0" {>= "0.15.1b"}
+  "deb-libmad0" {>= "0.15.1b-3"}
+  "deb-libsndfile1" {>= "1.0.20"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libvorbisfile3" {>= "1.1.2"}
+  "deb-vdr"
+]
+extra-source "vdr-plugin-mp3_0.10.4-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/vdr-plugin-mp3/vdr-plugin-mp3_0.10.4-2_amd64.deb"
+}

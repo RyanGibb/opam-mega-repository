@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mariadb-plugin-rocksdb_1:10.11.6-0+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mariadb-plugin-rocksdb"]
+]
+depends: [
+  "deb-libc6" {>= "2.35"}
+  "deb-liblz4-1" {>= "0.0~r130"}
+  "deb-libsnappy1v5" {>= "1.1.9"}
+  "deb-libstdc++6" {>= "12"}
+  "deb-libzstd1" {>= "1.5.2"}
+  "deb-mariadb-server" {= "1-10.11.6-0+deb12u1"}
+  "deb-python3-any"
+  "deb-rocksdb-tools"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "mariadb-plugin-rocksdb_1:10.11.6-0+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mariadb/mariadb-plugin-rocksdb_10.11.6-0+deb12u1_amd64.deb"
+}

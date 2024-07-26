@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gr-rds_3.7.0.2.a542331-2+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gr-rds"]
+]
+depends: [
+  "deb-gnuradio-dev"
+  "deb-libboost-system1-67-0"
+  "deb-libc6" {>= "2.17"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgnuradio-pmt3-7-13"
+  "deb-libgnuradio-rds3-7-11" {= "3.7.0.2.a542331-2+b3"}
+  "deb-libgnuradio-runtime3-7-13"
+  "deb-liblog4cpp5v5"
+  "deb-libpython2-7" {>= "2.7"}
+  "deb-libstdc++6" {>= "5.2"}
+]
+extra-source "gr-rds_3.7.0.2.a542331-2+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gr-rds/gr-rds_3.7.0.2.a542331-2+b3_amd64.deb"
+}

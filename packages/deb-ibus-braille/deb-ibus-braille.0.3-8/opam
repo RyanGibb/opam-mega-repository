@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ibus-braille_0.3-8_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ibus-braille"]
+]
+depends: [
+  "deb-gir1-2-ibus-1-0"
+  "deb-gir1-2-pango-1-0"
+  "deb-python3"
+  "deb-python3-espeak"
+  "deb-python3-gi"
+  "deb-python3-louis"
+]
+extra-source "ibus-braille_0.3-8_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/ibus-braille/ibus-braille_0.3-8_all.deb"
+}

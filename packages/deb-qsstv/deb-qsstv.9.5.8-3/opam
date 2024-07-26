@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qsstv_9.5.8-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qsstv"]
+]
+depends: [
+  "deb-libasound2" {>= "1.0.18"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libfftw3-double3" {>= "3.3.5"}
+  "deb-libfftw3-single3" {>= "3.3.5"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libhamlib4"
+  "deb-libopenjp2-7" {>= "2.0.0"}
+  "deb-libpulse0" {>= "0.99.1"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5network5" {>= "5.14.1"}
+  "deb-libqt5widgets5" {>= "5.15.1"}
+  "deb-libqt5xml5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libv4l-0" {>= "0.5.0"}
+  "deb-libv4lconvert0" {>= "0.5.0"}
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "qsstv_9.5.8-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qsstv/qsstv_9.5.8-3_amd64.deb"
+}

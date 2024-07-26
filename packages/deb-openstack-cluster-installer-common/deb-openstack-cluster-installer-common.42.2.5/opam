@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openstack-cluster-installer-common_42.2.5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openstack-cluster-installer-common"]
+]
+depends: [
+  "deb-curl"
+  "deb-dmidecode"
+  "deb-ethtool"
+  "deb-ipmitool"
+  "deb-iproute2"
+  "deb-jq"
+  "deb-libxml-xpath-perl"
+  "deb-lldpd"
+  "deb-lsb-base"
+  "deb-lshw"
+  "deb-lsscsi"
+  "deb-mokutil"
+  "deb-netcat-traditional"
+  "deb-nmap"
+  "deb-pciutils"
+]
+extra-source "openstack-cluster-installer-common_42.2.5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openstack-cluster-installer/openstack-cluster-installer-common_42.2.5_all.deb"
+}

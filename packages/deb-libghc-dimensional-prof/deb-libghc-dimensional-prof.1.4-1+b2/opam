@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-dimensional-prof_1.4-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-dimensional-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-dimensional-dev" {= "1.4-1+b2"}
+  "deb-libghc-exact-pi-prof"
+  "deb-libghc-ieee754-prof"
+  "deb-libghc-numtype-dk-prof"
+  "deb-libghc-semigroups-prof"
+  "deb-libghc-vector-prof"
+]
+extra-source "libghc-dimensional-prof_1.4-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-dimensional/libghc-dimensional-prof_1.4-1+b2_amd64.deb"
+}

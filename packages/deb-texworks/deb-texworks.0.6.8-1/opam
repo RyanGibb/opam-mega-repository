@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i texworks_0.6.8-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r texworks"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libhunspell-1-7-0"
+  "deb-libpoppler-qt5-1" {>= "0.81.0"}
+  "deb-libqt5concurrent5" {>= "5.6.0~rc"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.14.1"}
+  "deb-libqt5qml5" {>= "5.6.0~beta"}
+  "deb-libqt5script5" {>= "5.6.0~beta"}
+  "deb-libqt5scripttools5" {>= "5.6.0~beta"}
+  "deb-libqt5widgets5" {>= "5.15.1"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libsynctex2" {>= "2022.20220321.62855"}
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "texworks_0.6.8-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/texworks/texworks_0.6.8-1_amd64.deb"
+}

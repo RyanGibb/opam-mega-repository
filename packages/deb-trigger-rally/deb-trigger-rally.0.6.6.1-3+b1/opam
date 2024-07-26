@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i trigger-rally_0.6.6.1-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r trigger-rally"]
+]
+depends: [
+  "deb-libalut0" {>= "1.0.1"}
+  "deb-libc6" {>= "2.27"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgl1"
+  "deb-libglew2-1" {>= "1.12.0"}
+  "deb-libopenal1" {>= "1.14"}
+  "deb-libphysfs1" {>= "3.0.2"}
+  "deb-libsdl2-2-0-0" {>= "2.0.10"}
+  "deb-libsdl2-image-2-0-0" {>= "2.0.2"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libtinyxml2-8" {>= "8.0.0"}
+  "deb-trigger-rally-data" {= "0.6.6.1-3"}
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+extra-source "trigger-rally_0.6.6.1-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/trigger-rally/trigger-rally_0.6.6.1-3+b1_amd64.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mosquitto-1.6.9-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mosquitto"]
+]
+depends: [
+  "apk-busybox" {= "1.31.1-r22"}
+  "apk-libcrypto1-1" {= "1.1.1o-r0"}
+  "apk-libssl1-1" {= "1.1.1o-r0"}
+  "apk-libwebsockets" {= "3.2.2-r0"}
+  "apk-mosquitto-libs" {= "1.6.9-r1"}
+  "apk-musl" {= "1.1.24-r10"}
+]
+extra-source "mosquitto-1.6.9-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/mosquitto-1.6.9-r1.apk"
+}

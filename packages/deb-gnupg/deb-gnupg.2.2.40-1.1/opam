@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnupg_2.2.40-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnupg"]
+]
+depends: [
+  "deb-dirmngr" {< "2.2.40-1.1.1~"}
+  "deb-dirmngr" {>= "2.2.40-1.1"}
+  "deb-gnupg-l10n" {= "2.2.40-1.1"}
+  "deb-gnupg-utils" {< "2.2.40-1.1.1~"}
+  "deb-gnupg-utils" {>= "2.2.40-1.1"}
+  "deb-gpg" {< "2.2.40-1.1.1~"}
+  "deb-gpg" {>= "2.2.40-1.1"}
+  "deb-gpg-agent" {< "2.2.40-1.1.1~"}
+  "deb-gpg-agent" {>= "2.2.40-1.1"}
+  "deb-gpg-wks-client" {< "2.2.40-1.1.1~"}
+  "deb-gpg-wks-client" {>= "2.2.40-1.1"}
+  "deb-gpg-wks-server" {< "2.2.40-1.1.1~"}
+  "deb-gpg-wks-server" {>= "2.2.40-1.1"}
+  "deb-gpgsm" {< "2.2.40-1.1.1~"}
+  "deb-gpgsm" {>= "2.2.40-1.1"}
+  "deb-gpgv" {< "2.2.40-1.1.1~"}
+  "deb-gpgv" {>= "2.2.40-1.1"}
+]
+extra-source "gnupg_2.2.40-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnupg2/gnupg_2.2.40-1.1_all.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libnet-trac-perl_0.16-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libnet-trac-perl"]
+]
+depends: [
+  "deb-libany-moose-perl"
+  "deb-libdatetime-perl"
+  "deb-liblingua-en-inflect-perl"
+  "deb-libparams-validate-perl"
+  "deb-libtext-csv-perl"
+  "deb-liburi-perl"
+  "deb-libwww-mechanize-perl"
+  "deb-libwww-perl"
+  "deb-perl"
+]
+extra-source "libnet-trac-perl_0.16-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libn/libnet-trac-perl/libnet-trac-perl_0.16-2_all.deb"
+}

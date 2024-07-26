@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-pyspoa_0.0.8-3+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-pyspoa"]
+]
+depends: [
+  "deb-libc6" {>= "2.32"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libspoa7-0-0" {>= "4.0.5"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-pybind11"
+]
+extra-source "python3-pyspoa_0.0.8-3+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-pyspoa/python3-pyspoa_0.0.8-3+b2_amd64.deb"
+}

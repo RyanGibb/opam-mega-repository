@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i micropolis_0.0.20071228-10_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r micropolis"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libsdl-mixer1-2"
+  "deb-libsdl1-2-compat-shim"
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxpm4"
+  "deb-micropolis-data" {= "0.0.20071228-10"}
+]
+extra-source "micropolis_0.0.20071228-10_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/micropolis-activity/micropolis_0.0.20071228-10_amd64.deb"
+}

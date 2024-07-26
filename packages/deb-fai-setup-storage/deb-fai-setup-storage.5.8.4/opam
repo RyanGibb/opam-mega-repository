@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fai-setup-storage_5.8.4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fai-setup-storage"]
+]
+depends: [
+  "deb-e2fsprogs"
+  "deb-liblinux-lvm-perl"
+  "deb-libparse-recdescent-perl"
+  "deb-parted"
+  "deb-perl"
+]
+extra-source "fai-setup-storage_5.8.4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fai/fai-setup-storage_5.8.4_all.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libgd-2.3.3-r9.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libgd"]
+]
+depends: [
+  "apk-fontconfig" {= "2.15.0-r1"}
+  "apk-freetype" {= "2.13.2-r0"}
+  "apk-libavif" {= "1.0.4-r0"}
+  "apk-libjpeg-turbo" {= "3.0.3-r0"}
+  "apk-libpng" {= "1.6.43-r0"}
+  "apk-libwebp" {= "1.3.2-r0"}
+  "apk-libxpm" {= "3.5.17-r0"}
+  "apk-musl" {= "1.2.5-r0"}
+  "apk-tiff" {= "4.6.0t-r0"}
+]
+extra-source "libgd-2.3.3-r9.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libgd-2.3.3-r9.apk"
+}

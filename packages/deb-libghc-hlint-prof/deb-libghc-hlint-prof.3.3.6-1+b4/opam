@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-hlint-prof_3.3.6-1+b4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-hlint-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-aeson-prof"
+  "deb-libghc-ansi-terminal-prof"
+  "deb-libghc-cmdargs-prof"
+  "deb-libghc-cpphs-prof"
+  "deb-libghc-data-default-prof"
+  "deb-libghc-extra-prof"
+  "deb-libghc-file-embed-prof"
+  "deb-libghc-filepattern-prof"
+  "deb-libghc-ghc-lib-parser-ex-prof"
+  "deb-libghc-hlint-dev" {= "3.3.6-1+b4"}
+  "deb-libghc-hscolour-prof"
+  "deb-libghc-refact-prof"
+  "deb-libghc-uniplate-prof"
+  "deb-libghc-unordered-containers-prof"
+  "deb-libghc-utf8-string-prof"
+  "deb-libghc-vector-prof"
+  "deb-libghc-yaml-prof"
+]
+extra-source "libghc-hlint-prof_3.3.6-1+b4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/hlint/libghc-hlint-prof_3.3.6-1+b4_amd64.deb"
+}

@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xorg_1:7.7+19_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xorg"]
+]
+depends: [
+  "deb-libgl1-mesa-dri"
+  "deb-libglu1-mesa"
+  "deb-x11-apps"
+  "deb-x11-session-utils"
+  "deb-x11-utils"
+  "deb-x11-xkb-utils"
+  "deb-x11-xserver-utils"
+  "deb-xauth"
+  "deb-xfonts-100dpi" {>= "1-1.0.0-1"}
+  "deb-xfonts-75dpi" {>= "1-1.0.0-1"}
+  "deb-xfonts-base" {>= "1-1.0.0-1"}
+  "deb-xfonts-scalable" {>= "1-1.0.0-1"}
+  "deb-xfonts-utils"
+  "deb-xinit"
+  "deb-xkb-data"
+  "deb-xorg-docs-core"
+  "deb-xserver-xorg" {>= "1-7.7+19"}
+  ("deb-libgl1-mesa-glx" | "deb- libgl1")
+  ("deb-xterm" | "deb- x-terminal-emulator")
+]
+extra-source "xorg_1:7.7+19_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xorg/xorg_7.7+19_amd64.deb"
+}

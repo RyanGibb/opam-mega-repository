@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i rpm-common_4.14.2.1+dfsg1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r rpm-common"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libdbus-1-3" {>= "1.9.14"}
+  "deb-librpm8" {>= "4.14.0+dfsg1"}
+  "deb-librpmio8" {>= "4.14.0+dfsg1"}
+  "deb-libselinux1" {>= "2.3"}
+]
+extra-source "rpm-common_4.14.2.1+dfsg1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rpm/rpm-common_4.14.2.1+dfsg1-1_amd64.deb"
+}

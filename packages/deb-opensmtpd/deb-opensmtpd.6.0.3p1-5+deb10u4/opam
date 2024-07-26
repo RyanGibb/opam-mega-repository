@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i opensmtpd_6.0.3p1-5+deb10u4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r opensmtpd"]
+]
+depends: [
+  "deb-adduser"
+  "deb-ed"
+  "deb-libasr0" {>= "1.0.2"}
+  "deb-libc6" {>= "2.25"}
+  "deb-libdb5-3"
+  "deb-libevent-2-1-6" {>= "2.1.8-stable"}
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-lsb-base" {>= "3.0-6"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+conflicts: [
+  "deb-mail-transport-agent"
+  "deb-sendmail-base"
+]
+extra-source "opensmtpd_6.0.3p1-5+deb10u4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/opensmtpd/opensmtpd_6.0.3p1-5+deb10u4_amd64.deb"
+}

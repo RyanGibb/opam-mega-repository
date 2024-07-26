@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libhtml-widget-perl_1.11-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libhtml-widget-perl"]
+]
+depends: [
+  "deb-libclass-accessor-chained-perl"
+  "deb-libclass-accessor-perl"
+  "deb-libclass-data-accessor-perl"
+  "deb-libdate-calc-perl"
+  "deb-libemail-valid-perl"
+  "deb-libhtml-scrubber-perl"
+  "deb-libhtml-tree-perl"
+  "deb-libmodule-pluggable-fast-perl"
+  "deb-perl-any"
+]
+extra-source "libhtml-widget-perl_1.11-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libh/libhtml-widget-perl/libhtml-widget-perl_1.11-6_all.deb"
+}

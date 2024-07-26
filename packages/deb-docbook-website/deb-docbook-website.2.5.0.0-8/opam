@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i docbook-website_2.5.0.0-8_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r docbook-website"]
+]
+depends: [
+  "deb-docbook-xml" {>= "4.2-7"}
+  "deb-docbook-xsl"
+  "deb-sgml-base" {>= "1.26+nmu2"}
+  "deb-xml-core" {>= "0.12"}
+]
+conflicts: [
+  "deb-docbook-xml-website"
+]
+extra-source "docbook-website_2.5.0.0-8_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/docbook-website/docbook-website_2.5.0.0-8_all.deb"
+}

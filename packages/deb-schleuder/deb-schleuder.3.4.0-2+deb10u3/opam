@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i schleuder_3.4.0-2+deb10u3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r schleuder"]
+]
+depends: [
+  "deb-adduser"
+  "deb-dirmngr"
+  "deb-lsb-base"
+  "deb-rake" {>= "10.5.0~"}
+  "deb-ruby-activerecord" {>= "5.2~"}
+  "deb-ruby-charlock-holmes"
+  "deb-ruby-gpgme" {>= "2.0.13~"}
+  "deb-ruby-mail" {>= "2.7.1~"}
+  "deb-ruby-mail-gpg" {>= "0.3.3~"}
+  "deb-ruby-sinatra" {>= "2~"}
+  "deb-ruby-sinatra-contrib" {>= "2~"}
+  "deb-ruby-sqlite3"
+  "deb-ruby-thor"
+  "deb-thin"
+  ("deb-cron" | "deb- cron-daemon")
+  ("deb-default-mta" | "deb- postfix" | "deb- mail-transport-agent")
+  ("deb-ruby" | "deb- ruby-interpreter")
+]
+extra-source "schleuder_3.4.0-2+deb10u3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/schleuder/schleuder_3.4.0-2+deb10u3_all.deb"
+}

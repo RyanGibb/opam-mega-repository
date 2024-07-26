@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mailutils-imap4d_1:3.10-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mailutils-imap4d"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libcom-err2" {>= "1.43.9"}
+  "deb-libcrypt1" {>= "1-4.1.0"}
+  "deb-libgnutls30" {>= "3.6.5"}
+  "deb-libgsasl7" {>= "1.1"}
+  "deb-libgssapi-krb5-2" {>= "1.17"}
+  "deb-libk5crypto3" {>= "1.6.dfsg.2"}
+  "deb-libkrb5-3" {>= "1.6.dfsg.2"}
+  "deb-libldap-2-4-2" {>= "2.4.7"}
+  "deb-libmailutils7"
+  "deb-libnsl2" {>= "1.0"}
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-libunistring2" {>= "0.9.7"}
+  "deb-libwrap0" {>= "7.6-4~"}
+  "deb-mailutils-common" {= "1-3.10-3"}
+  "deb-netbase"
+]
+conflicts: [
+  "deb-imap-server"
+]
+extra-source "mailutils-imap4d_1:3.10-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mailutils/mailutils-imap4d_3.10-3+b1_amd64.deb"
+}

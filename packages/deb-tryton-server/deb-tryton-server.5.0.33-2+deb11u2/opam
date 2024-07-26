@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tryton-server_5.0.33-2+deb11u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tryton-server"]
+]
+depends: [
+  "deb-adduser"
+  "deb-init-system-helpers" {>= "1.51"}
+  "deb-lsb-base"
+  "deb-python3-any"
+  "deb-python3-bcrypt"
+  "deb-python3-dateutil"
+  "deb-python3-defusedxml"
+  "deb-python3-genshi"
+  "deb-python3-lxml"
+  "deb-python3-passlib"
+  "deb-python3-pkg-resources"
+  "deb-python3-polib"
+  "deb-python3-relatorio" {>= "0.7"}
+  "deb-python3-sql"
+  "deb-python3-werkzeug"
+  "deb-python3-wrapt"
+]
+extra-source "tryton-server_5.0.33-2+deb11u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tryton-server/tryton-server_5.0.33-2+deb11u2_all.deb"
+}

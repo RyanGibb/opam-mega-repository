@@ -1,0 +1,49 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libfreecad-python3-0.19_0.19.1+dfsg1-2+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libfreecad-python3-0.19"]
+]
+depends: [
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0"}
+  "deb-libboost-program-options1-74-0" {>= "1.74.0"}
+  "deb-libboost-regex1-74-0"
+  "deb-libboost-thread1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libcoin80c" {>= "4.0.0+ds"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgcc-s1" {>= "3.4"}
+  "deb-libgl1"
+  "deb-libmedc11"
+  "deb-libocct-data-exchange-7-5" {>= "7.5.1+dfsg1"}
+  "deb-libocct-foundation-7-5" {>= "7.5.1+dfsg1"}
+  "deb-libocct-modeling-algorithms-7-5" {>= "7.5.1+dfsg1"}
+  "deb-libocct-modeling-data-7-5" {>= "7.5.1+dfsg1"}
+  "deb-libocct-ocaf-7-5" {>= "7.5.1+dfsg1"}
+  "deb-libocct-visualization-7-5" {>= "7.5.1+dfsg1"}
+  "deb-libpyside2-py3-5-15" {>= "5.15.2"}
+  "deb-libpython3-9" {>= "3.9.1"}
+  "deb-libqt5concurrent5" {>= "5.6.0~rc"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5network5" {>= "5.14.1"}
+  "deb-libqt5opengl5" {>= "5.0.2"}
+  "deb-libqt5printsupport5" {>= "5.0.2"}
+  "deb-libqt5svg5" {>= "5.6.0~beta"}
+  "deb-libqt5webkit5" {>= "5.212.0~alpha3"}
+  "deb-libqt5widgets5" {>= "5.15.1"}
+  "deb-libqt5xml5" {>= "5.0.2"}
+  "deb-libqt5xmlpatterns5" {>= "5.9.0"}
+  "deb-libshiboken2-py3-5-15" {>= "5.15.2"}
+  "deb-libspnav0" {>= "0.2.2"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libvtk7-1p"
+  "deb-libxerces-c3-2"
+  "deb-libzipios++0v5"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "libfreecad-python3-0.19_0.19.1+dfsg1-2+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/freecad/libfreecad-python3-0.19_0.19.1+dfsg1-2+deb11u1_amd64.deb"
+}

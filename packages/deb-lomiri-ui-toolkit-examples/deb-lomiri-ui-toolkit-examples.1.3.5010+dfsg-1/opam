@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lomiri-ui-toolkit-examples_1.3.5010+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lomiri-ui-toolkit-examples"]
+]
+depends: [
+  "deb-lomiri-ui-toolkit-theme" {= "1.3.5010+dfsg-1"}
+  "deb-lomiri-ui-toolkit-tools" {>= "1.3.5010+dfsg-1"}
+  "deb-qml-module-qt-labs-folderlistmodel"
+  "deb-qml-module-qtqml-models2"
+  "deb-qml-module-qtquick-xmllistmodel"
+  ("deb-qml-module-lomiri-components" {= "1.3.5010+dfsg-1"} | "deb- qml-module-lomiri-components-gles")
+]
+conflicts: [
+  "deb-qt-components-lomiri-demos"
+  "deb-qt-components-lomiri-examples"
+]
+extra-source "lomiri-ui-toolkit-examples_1.3.5010+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lomiri-ui-toolkit/lomiri-ui-toolkit-examples_1.3.5010+dfsg-1_amd64.deb"
+}

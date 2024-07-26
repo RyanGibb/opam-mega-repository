@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gtk-update-icon-cache-2.24.32-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gtk-update-icon-cache"]
+]
+depends: [
+  "apk-busybox" {= "1.31.1-r22"}
+  "apk-gdk-pixbuf" {= "2.40.0-r4"}
+  "apk-glib" {= "2.64.6-r0"}
+  "apk-hicolor-icon-theme" {= "0.17-r1"}
+  "apk-libintl" {= "0.20.2-r0"}
+  "apk-musl" {= "1.1.24-r10"}
+]
+extra-source "gtk-update-icon-cache-2.24.32-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/gtk-update-icon-cache-2.24.32-r1.apk"
+}

@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libglom-1.30-0_1.30.4-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libglom-1.30-0"]
+]
+depends: [
+  "deb-libarchive13" {>= "3.0.4"}
+  "deb-libavahi-client3" {>= "0.6.16"}
+  "deb-libavahi-common3" {>= "0.6.16"}
+  "deb-libavahi-glib1" {>= "0.6.16"}
+  "deb-libboost-python1-67-0"
+  "deb-libc6" {>= "2.14"}
+  "deb-libepc-1-0-3" {>= "0.4.2"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgda-5-0-4" {>= "5.2.1"}
+  "deb-libgdamm-5-0-13" {>= "4.99.11"}
+  "deb-libgettextpo0"
+  "deb-libglib2-0-0" {>= "2.31.18"}
+  "deb-libglibmm-2-4-1v5" {>= "2.54.0"}
+  "deb-libgnutls30" {>= "3.6.5"}
+  "deb-libpython3-7" {>= "3.7.0"}
+  "deb-libsigc++-2-0-0v5" {>= "2.8.0"}
+  "deb-libsoup2-4-1" {>= "2.4.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libxml++2-6-2v5" {>= "2.40.0"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libxslt1-1" {>= "1.1.25"}
+]
+extra-source "libglom-1.30-0_1.30.4-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/glom/libglom-1.30-0_1.30.4-3_amd64.deb"
+}

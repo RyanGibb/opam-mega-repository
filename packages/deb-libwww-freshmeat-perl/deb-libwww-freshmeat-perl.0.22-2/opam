@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libwww-freshmeat-perl_0.22-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libwww-freshmeat-perl"]
+]
+depends: [
+  "deb-libmouse-perl"
+  "deb-libwww-perl"
+  "deb-libxml-parser-perl"
+  "deb-libxml-simple-perl"
+  "deb-perl"
+]
+extra-source "libwww-freshmeat-perl_0.22-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libw/libwww-freshmeat-perl/libwww-freshmeat-perl_0.22-2_all.deb"
+}

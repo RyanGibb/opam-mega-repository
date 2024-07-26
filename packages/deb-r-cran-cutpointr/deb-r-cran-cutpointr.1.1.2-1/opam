@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-cutpointr_1.1.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-cutpointr"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.0-1"}
+  "deb-r-cran-dplyr" {>= "0.8.0"}
+  "deb-r-cran-foreach" {>= "1.4.3"}
+  "deb-r-cran-ggplot2" {>= "3.0.0"}
+  "deb-r-cran-gridextra" {>= "2.2.1"}
+  "deb-r-cran-purrr" {>= "0.3.0"}
+  "deb-r-cran-rcpp" {>= "0.12.12"}
+  "deb-r-cran-rlang" {>= "0.4.0"}
+  "deb-r-cran-tibble" {>= "3.0.0"}
+  "deb-r-cran-tidyr" {>= "1.0.0"}
+  "deb-r-cran-tidyselect" {>= "1.1.0"}
+]
+extra-source "r-cran-cutpointr_1.1.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-cutpointr/r-cran-cutpointr_1.1.2-1_amd64.deb"
+}

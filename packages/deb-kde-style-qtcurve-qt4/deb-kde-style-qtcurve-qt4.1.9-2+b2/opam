@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kde-style-qtcurve-qt4_1.9-2+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kde-style-qtcurve-qt4"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libqt4-dbus" {>= "4-4.5.3"}
+  "deb-libqt4-svg" {>= "4-4.5.3"}
+  "deb-libqtcore4" {>= "4-4.8.0"}
+  "deb-libqtcurve-utils2"
+  "deb-libqtgui4" {>= "4-4.5.3"}
+  "deb-libstdc++6" {>= "4.4.0"}
+]
+conflicts: [
+  "deb-kde-style-qtcurve"
+]
+extra-source "kde-style-qtcurve-qt4_1.9-2+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qtcurve/kde-style-qtcurve-qt4_1.9-2+b2_amd64.deb"
+}

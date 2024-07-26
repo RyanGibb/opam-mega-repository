@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ctwm_4.0.3-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ctwm"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libice6" {>= "1-1.0.0"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libsm6"
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxmu6" {>= "2-1.1.3"}
+  "deb-libxpm4"
+  "deb-libxt6"
+  "deb-m4"
+]
+extra-source "ctwm_4.0.3-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/ctwm/ctwm_4.0.3-2_amd64.deb"
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i bolt-lmm_2.3.2+dfsg-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r bolt-lmm"]
+]
+depends: [
+  "deb-libboost-iostreams1-67-0"
+  "deb-libboost-program-options1-67-0"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgfortran5" {>= "8"}
+  "deb-libgomp1" {>= "4.9"}
+  "deb-libnlopt0" {>= "2.2.4"}
+  "deb-libopenblas-base"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "bolt-lmm_2.3.2+dfsg-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/bolt-lmm/bolt-lmm_2.3.2+dfsg-3+b1_amd64.deb"
+}

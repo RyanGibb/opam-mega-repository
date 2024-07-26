@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i exfalso_4.5.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r exfalso"]
+]
+depends: [
+  "deb-gir1-2-gtk-3-0"
+  "deb-gir1-2-soup-2-4"
+  "deb-libjs-sphinxdoc" {>= "4.3"}
+  "deb-python3-any"
+  "deb-python3-feedparser"
+  "deb-python3-gi"
+  "deb-python3-gi-cairo"
+  "deb-python3-mutagen"
+  "deb-sphinx-rtd-theme-common" {>= "1.0.0+dfsg"}
+]
+extra-source "exfalso_4.5.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/quodlibet/exfalso_4.5.0-2_all.deb"
+}

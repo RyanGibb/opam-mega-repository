@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i nemo_4.8.6-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r nemo"]
+]
+depends: [
+  "deb-cinnamon-desktop-data" {>= "4.6~"}
+  "deb-desktop-file-utils" {>= "0.7"}
+  "deb-gsettings-desktop-schemas"
+  "deb-gvfs" {>= "1.3.2"}
+  "deb-libatk1-0-0" {>= "1.32.0"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.10.0"}
+  "deb-libcinnamon-desktop4" {>= "4.8~"}
+  "deb-libexempi8" {>= "2.5.0"}
+  "deb-libexif12" {>= "0.6.21-1~"}
+  "deb-libgail-3-0" {>= "3.0.0"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.49.2"}
+  "deb-libglib2-0-data"
+  "deb-libgtk-3-0" {>= "3.21.5"}
+  "deb-libnemo-extension1" {= "4.8.6-2"}
+  "deb-libnotify4" {>= "0.7.0"}
+  "deb-libpango-1-0-0" {>= "1.44.6"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libselinux1" {>= "3.1~"}
+  "deb-libx11-6"
+  "deb-libxapp1" {>= "2.0.0"}
+  "deb-libxml2" {>= "2.7.8"}
+  "deb-nemo-data" {= "4.8.6-2"}
+  "deb-shared-mime-info" {>= "0.50"}
+]
+extra-source "nemo_4.8.6-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/nemo/nemo_4.8.6-2_amd64.deb"
+}

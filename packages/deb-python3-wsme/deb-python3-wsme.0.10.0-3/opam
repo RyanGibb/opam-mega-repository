@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-wsme_0.10.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-wsme"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-jinja2"
+  "deb-python3-netaddr"
+  "deb-python3-pkg-resources"
+  "deb-python3-simplegeneric"
+  "deb-python3-simplejson"
+  "deb-python3-six" {>= "1.9.0"}
+  "deb-python3-tz"
+  "deb-python3-webob"
+]
+extra-source "python3-wsme_0.10.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-wsme/python3-wsme_0.10.0-3_all.deb"
+}

@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i djview4_4.12-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r djview4"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libdjvulibre21" {>= "3.5.28"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5network5" {>= "5.14.1"}
+  "deb-libqt5opengl5" {>= "5.0.2"}
+  "deb-libqt5printsupport5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.14.1"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libtiff5" {>= "4.0.3"}
+  "deb-sensible-utils"
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+]
+conflicts: [
+  "deb-djview" {<= "3.5.20-5"}
+]
+extra-source "djview4_4.12-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/djview4/djview4_4.12-2_amd64.deb"
+}

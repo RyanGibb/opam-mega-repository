@@ -1,0 +1,42 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mitmproxy_8.1.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mitmproxy"]
+]
+depends: [
+  "deb-fonts-font-awesome" {>= "4.2.0~dfsg"}
+  "deb-python3-any"
+  "deb-python3-asgiref" {>= "3.2.10"}
+  "deb-python3-blinker" {>= "1.4"}
+  "deb-python3-brotli" {>= "1.0"}
+  "deb-python3-certifi" {>= "2019.9.11"}
+  "deb-python3-cryptography" {>= "36"}
+  "deb-python3-flask" {>= "1.1.1"}
+  "deb-python3-h11"
+  "deb-python3-h2" {>= "4.0"}
+  "deb-python3-hyperframe" {>= "6.0"}
+  "deb-python3-kaitaistruct" {>= "0.7"}
+  "deb-python3-ldap3" {>= "2.8"}
+  "deb-python3-msgpack" {>= "1.0.0"}
+  "deb-python3-openssl" {>= "19.1.0"}
+  "deb-python3-passlib" {>= "1.6.5"}
+  "deb-python3-pkg-resources"
+  "deb-python3-protobuf" {>= "3.6.0"}
+  "deb-python3-publicsuffix2" {>= "2.20190812"}
+  "deb-python3-pyparsing" {>= "2.4.2"}
+  "deb-python3-pyperclip" {>= "1.6.0"}
+  "deb-python3-ruamel-yaml" {>= "0.16"}
+  "deb-python3-sortedcontainers" {>= "2.1.0"}
+  "deb-python3-tornado" {>= "4.3"}
+  "deb-python3-urwid" {>= "2.1.0"}
+  "deb-python3-wsproto" {>= "0.14"}
+  "deb-python3-zstandard"
+]
+conflicts: [
+  "deb-python-netlib"
+]
+extra-source "mitmproxy_8.1.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mitmproxy/mitmproxy_8.1.1-2_all.deb"
+}

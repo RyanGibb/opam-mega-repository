@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add rabbitmq-c-utils-0.11.0-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del rabbitmq-c-utils"]
+]
+depends: [
+  "apk-musl" {= "1.2.3-r5"}
+  "apk-popt" {= "1.19-r0"}
+  "apk-rabbitmq-c" {= "0.11.0-r5"}
+]
+extra-source "rabbitmq-c-utils-0.11.0-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/rabbitmq-c-utils-0.11.0-r5.apk"
+}

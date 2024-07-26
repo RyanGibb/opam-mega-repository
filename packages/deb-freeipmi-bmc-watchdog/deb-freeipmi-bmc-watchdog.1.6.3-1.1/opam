@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i freeipmi-bmc-watchdog_1.6.3-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r freeipmi-bmc-watchdog"]
+]
+depends: [
+  "deb-freeipmi-common" {= "1.6.3-1.1"}
+  "deb-freeipmi-tools"
+  "deb-init-system-helpers" {>= "1.51"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libfreeipmi17" {>= "1.1.5"}
+  "deb-libgcrypt20" {>= "1.7.0"}
+]
+extra-source "freeipmi-bmc-watchdog_1.6.3-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/freeipmi/freeipmi-bmc-watchdog_1.6.3-1.1_amd64.deb"
+}

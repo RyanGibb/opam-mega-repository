@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpdl-graphics-gnuplot-perl_2.023-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpdl-graphics-gnuplot-perl"]
+]
+depends: [
+  "deb-libalien-gnuplot-perl"
+  "deb-libipc-run-perl"
+  "deb-libsafe-isa-perl"
+  "deb-pdl"
+  "deb-perl-any"
+  ("deb-gnuplot-nox" | "deb- gnuplot-x11" | "deb- gnuplot-qt")
+]
+extra-source "libpdl-graphics-gnuplot-perl_2.023-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libp/libpdl-graphics-gnuplot-perl/libpdl-graphics-gnuplot-perl_2.023-1_all.deb"
+}

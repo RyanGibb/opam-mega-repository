@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsbuild-perl_0.78.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsbuild-perl"]
+]
+depends: [
+  "deb-apt"
+  "deb-dpkg-dev"
+  "deb-gnupg" {>= "2.1"}
+  "deb-libdpkg-perl" {>= "1.18.14"}
+  "deb-libexception-class-perl"
+  "deb-libfilesys-df-perl"
+  "deb-libmime-lite-perl"
+  "deb-perl"
+]
+extra-source "libsbuild-perl_0.78.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sbuild/libsbuild-perl_0.78.1-2_all.deb"
+}

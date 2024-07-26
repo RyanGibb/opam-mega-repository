@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pmacct_1.7.7-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pmacct"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libjansson4" {>= "2.14"}
+  "deb-libmariadb3" {>= "3.0.0"}
+  "deb-libmaxminddb0" {>= "1.0.2"}
+  "deb-libnetfilter-log1" {>= "0.0.15"}
+  "deb-libpcap0-8" {>= "1.0.0"}
+  "deb-libpq5" {>= "9.1~"}
+  "deb-librabbitmq4" {>= "0.6.0"}
+  "deb-librdkafka1" {>= "0.9.1"}
+  "deb-libsqlite3-0" {>= "3.5.9"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libzmq5" {>= "4.0.1+dfsg"}
+  "deb-lsb-base"
+  "deb-net-tools"
+  "deb-psmisc"
+]
+extra-source "pmacct_1.7.7-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pmacct/pmacct_1.7.7-1+b1_amd64.deb"
+}

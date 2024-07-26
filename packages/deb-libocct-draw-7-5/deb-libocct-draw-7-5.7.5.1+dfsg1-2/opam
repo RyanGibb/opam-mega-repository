@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libocct-draw-7.5_7.5.1+dfsg1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libocct-draw-7.5"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libfreetype6-dev"
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgl1"
+  "deb-libocct-data-exchange-7-5" {>= "7.5.1+dfsg1"}
+  "deb-libocct-foundation-7-5" {>= "7.5.1+dfsg1"}
+  "deb-libocct-modeling-algorithms-7-5" {>= "7.5.1+dfsg1"}
+  "deb-libocct-modeling-data-7-5" {>= "7.5.1+dfsg1"}
+  "deb-libocct-ocaf-7-5" {>= "7.5.1+dfsg1"}
+  "deb-libocct-visualization-7-5" {>= "7.5.1+dfsg1"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libtbb2" {>= "2017~U7"}
+  "deb-libtcl8-6" {>= "8.6.0"}
+  "deb-libtk8-6" {>= "8.6.0"}
+  "deb-libx11-6"
+  "deb-libx11-dev"
+  "deb-tcl8-6-dev"
+  "deb-tk8-6-dev"
+]
+extra-source "libocct-draw-7.5_7.5.1+dfsg1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/opencascade/libocct-draw-7.5_7.5.1+dfsg1-2_amd64.deb"
+}

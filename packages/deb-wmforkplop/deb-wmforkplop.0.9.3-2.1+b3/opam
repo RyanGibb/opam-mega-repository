@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i wmforkplop_0.9.3-2.1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r wmforkplop"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libglib2-0-0" {>= "2.16.0"}
+  "deb-libgtop-2-0-11" {>= "2.22.3"}
+  "deb-libice6" {>= "1-1.0.0"}
+  "deb-libimlib2" {>= "1.4.5"}
+  "deb-libsm6"
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-ttf-dejavu"
+]
+extra-source "wmforkplop_0.9.3-2.1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/w/wmforkplop/wmforkplop_0.9.3-2.1+b3_amd64.deb"
+}

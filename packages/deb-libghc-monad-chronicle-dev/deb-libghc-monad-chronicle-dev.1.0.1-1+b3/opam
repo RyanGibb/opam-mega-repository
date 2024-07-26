@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-monad-chronicle-dev_1.0.1-1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-monad-chronicle-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-data-default-class-dev"
+  "deb-libghc-semigroupoids-dev"
+  "deb-libghc-these-dev"
+  "deb-libghc-transformers-compat-dev"
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+]
+extra-source "libghc-monad-chronicle-dev_1.0.1-1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-monad-chronicle/libghc-monad-chronicle-dev_1.0.1-1+b3_amd64.deb"
+}

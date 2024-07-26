@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i open-iscsi_2.1.8-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r open-iscsi"]
+]
+depends: [
+  "deb-init-system-helpers" {>= "1.51"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libisns0"
+  "deb-libkmod2" {>= "5~"}
+  "deb-libmount1" {>= "2.24.2"}
+  "deb-libopeniscsiusr" {>= "2.1.8"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libsystemd0"
+  "deb-udev"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "open-iscsi_2.1.8-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/open-iscsi/open-iscsi_2.1.8-1_amd64.deb"
+}

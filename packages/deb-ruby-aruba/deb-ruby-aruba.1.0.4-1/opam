@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-aruba_1.0.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-aruba"]
+]
+depends: [
+  "deb-cucumber" {< "6.0"}
+  "deb-cucumber" {>= "2.4"}
+  "deb-libjs-jquery"
+  "deb-ruby"
+  "deb-ruby-childprocess" {< "5.0"}
+  "deb-ruby-childprocess" {>= "3.0"}
+  "deb-ruby-contracts" {< "1.0"}
+  "deb-ruby-contracts" {>= "0.16.0"}
+  "deb-ruby-rspec-expectations" {< "4.0"}
+  "deb-ruby-rspec-expectations" {>= "3.4"}
+  "deb-ruby-thor" {< "2.0"}
+  "deb-ruby-thor" {>= "1.0"}
+]
+extra-source "ruby-aruba_1.0.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-aruba/ruby-aruba_1.0.4-1_all.deb"
+}

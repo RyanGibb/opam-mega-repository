@@ -1,0 +1,43 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mate-panel_1.20.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mate-panel"]
+]
+depends: [
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.6.0"}
+  "deb-libdbus-1-3" {>= "1.9.14"}
+  "deb-libdbus-glib-1-2" {>= "0.78"}
+  "deb-libdconf1" {>= "0.14.0"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.25.2"}
+  "deb-libglib2-0-0" {>= "2.41.1"}
+  "deb-libgtk-3-0" {>= "3.21.5"}
+  "deb-libice6" {>= "1-1.0.0"}
+  "deb-libmate-desktop-2-17" {>= "1.18"}
+  "deb-libmate-menu2" {>= "1.18"}
+  "deb-libmate-panel-applet-4-1" {= "1.20.5-1"}
+  "deb-libmateweather1" {>= "1.18"}
+  "deb-libpango-1-0-0" {>= "1.18.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-librda0" {>= "0.0.3-2~"}
+  "deb-librsvg2-2" {>= "2.32.0"}
+  "deb-libsm6"
+  "deb-libstartup-notification0" {>= "0.2"}
+  "deb-libwnck-3-0" {>= "3.4.7"}
+  "deb-libx11-6"
+  "deb-libxau6"
+  "deb-libxrandr2" {>= "2-1.2.99.3"}
+  "deb-mate-desktop"
+  "deb-mate-menus"
+  "deb-mate-panel-common" {= "1.20.5-1"}
+  "deb-mate-polkit"
+  "deb-menu-xdg"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "mate-panel_1.20.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mate-panel/mate-panel_1.20.5-1_amd64.deb"
+}

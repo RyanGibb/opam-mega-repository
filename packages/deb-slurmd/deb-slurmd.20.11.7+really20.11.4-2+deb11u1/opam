@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i slurmd_20.11.7+really20.11.4-2+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r slurmd"]
+]
+depends: [
+  "deb-libc6" {>= "2.27"}
+  "deb-libhwloc15" {>= "2.4.1+dfsg"}
+  "deb-liblz4-1" {>= "0.0~r130"}
+  "deb-libnuma1" {>= "2.0.11"}
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-lsb-base" {>= "3.2-12"}
+  "deb-munge"
+  "deb-slurm-wlm-basic-plugins" {= "20.11.7+really20.11.4-2+deb11u1"}
+  "deb-ucf"
+  "deb-zlib1g" {>= "1-1.2.0"}
+]
+extra-source "slurmd_20.11.7+really20.11.4-2+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/slurm-wlm/slurmd_20.11.7+really20.11.4-2+deb11u1_amd64.deb"
+}

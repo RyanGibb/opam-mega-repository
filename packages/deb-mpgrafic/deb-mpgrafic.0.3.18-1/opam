@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mpgrafic_0.3.18-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mpgrafic"]
+]
+depends: [
+  "deb-fftw2"
+  "deb-libc6" {>= "2.27"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgfortran5" {>= "8"}
+  "deb-libgsl23" {>= "2.5"}
+  "deb-libgslcblas0" {>= "2.4"}
+  "deb-libopenmpi3"
+  "deb-libquadmath0" {>= "4.6"}
+  "deb-mpi-default-bin"
+]
+extra-source "mpgrafic_0.3.18-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mpgrafic/mpgrafic_0.3.18-1_amd64.deb"
+}

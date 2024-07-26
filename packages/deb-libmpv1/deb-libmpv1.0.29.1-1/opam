@@ -1,0 +1,61 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmpv1_0.29.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmpv1"]
+]
+depends: [
+  "deb-libarchive13" {>= "3.1.2"}
+  "deb-libasound2" {>= "1.0.27"}
+  "deb-libass9" {>= "1-0.13.6"}
+  "deb-libavcodec-extra58"
+  "deb-libavdevice58" {>= "7-4.0"}
+  "deb-libavfilter-extra7"
+  "deb-libavformat58" {>= "7-4.0"}
+  "deb-libavutil56" {>= "7-4.0"}
+  "deb-libbluray2" {>= "1-0.2.2"}
+  "deb-libc6" {>= "2.27"}
+  "deb-libcaca0" {>= "0.99.beta17-1"}
+  "deb-libcdio-cdda2" {>= "10.2+0.94+2"}
+  "deb-libcdio-paranoia2" {>= "10.2+0.94+2"}
+  "deb-libcdio18" {>= "2.0.0"}
+  "deb-libdrm2" {>= "2.4.62"}
+  "deb-libdvdnav4" {>= "4.1.3"}
+  "deb-libdvdread4" {>= "4.1.3"}
+  "deb-libegl1"
+  "deb-libgbm1" {>= "8.1~0"}
+  "deb-libgl1"
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-liblcms2-2" {>= "2.6"}
+  "deb-liblua5-2-0"
+  "deb-libpulse0" {>= "0.99.4"}
+  "deb-librubberband2"
+  "deb-libsdl2-2-0-0" {>= "2.0.8"}
+  "deb-libsmbclient" {>= "2-4.0.3+dfsg1"}
+  "deb-libsndio7-0" {>= "1.1.0"}
+  "deb-libswresample3" {>= "7-4.0"}
+  "deb-libswscale5" {>= "7-4.0"}
+  "deb-libuchardet0" {>= "0.0.1"}
+  "deb-libva-drm2" {>= "1.1.0"}
+  "deb-libva-wayland2" {>= "1.3.0"}
+  "deb-libva-x11-2" {>= "1.0.3"}
+  "deb-libva2" {>= "2.1.0"}
+  "deb-libvdpau1" {>= "0.2"}
+  "deb-libvulkan1"
+  "deb-libwayland-client0" {>= "1.9.91"}
+  "deb-libwayland-cursor0" {>= "1.0.2"}
+  "deb-libwayland-egl1" {>= "1.15.0"}
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxinerama1"
+  "deb-libxkbcommon0" {>= "0.5.0"}
+  "deb-libxrandr2" {>= "2-1.2.99.2"}
+  "deb-libxss1"
+  "deb-libxv1"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+]
+extra-source "libmpv1_0.29.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mpv/libmpv1_0.29.1-1_amd64.deb"
+}

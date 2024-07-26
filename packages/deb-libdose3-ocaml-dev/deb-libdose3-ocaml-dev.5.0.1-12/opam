@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdose3-ocaml-dev_5.0.1-12_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdose3-ocaml-dev"]
+]
+depends: [
+  "deb-libbz2-ocaml-dev"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libcudf-ocaml-dev"
+  "deb-libdose3-ocaml"
+  "deb-libextlib-ocaml-dev"
+  "deb-libocamlgraph-ocaml-dev"
+  "deb-libre-ocaml-dev"
+  "deb-librpm8" {>= "4.14.0+dfsg1"}
+  "deb-librpmio8" {>= "4.14.0+dfsg1"}
+  "deb-libzip-ocaml-dev"
+  "deb-ocaml-nox"
+]
+extra-source "libdose3-ocaml-dev_5.0.1-12_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dose3/libdose3-ocaml-dev_5.0.1-12_amd64.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnupod-tools_0.99.8-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnupod-tools"]
+]
+depends: [
+  "deb-curl"
+  "deb-libaudio-flac-header-perl"
+  "deb-libmp3-info-perl"
+  "deb-libogg-vorbis-header-pureperl-perl"
+  "deb-libtimedate-perl"
+  "deb-libunicode-string-perl"
+  "deb-libxml-parser-perl"
+  "deb-libxml-simple-perl"
+  "deb-perl"
+]
+extra-source "gnupod-tools_0.99.8-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnupod-tools/gnupod-tools_0.99.8-5_all.deb"
+}

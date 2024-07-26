@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i arctica-greeter-theme-debian_0.99.1.5-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r arctica-greeter-theme-debian"]
+]
+depends: [
+  "deb-arctica-greeter"
+  "deb-desktop-base"
+  "deb-fonts-cabin"
+  "deb-fonts-cantarell"
+  "deb-libglib2-0-bin"
+  "deb-numix-gtk-theme"
+  "deb-numix-icon-theme"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "arctica-greeter-theme-debian_0.99.1.5-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/arctica-greeter/arctica-greeter-theme-debian_0.99.1.5-2_all.deb"
+}

@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i wesnoth-1.16-core_1:1.16.9-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r wesnoth-1.16-core"]
+]
+depends: [
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-iostreams1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-locale1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-program-options1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-random1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-regex1-74-0"
+  "deb-libc6" {>= "2.35"}
+  "deb-libcairo2" {>= "1.6.0"}
+  "deb-libdbus-1-3" {>= "1.9.14"}
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libgcc-s1" {>= "3.4"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libpango-1-0-0" {>= "1.22.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libreadline8" {>= "6.0"}
+  "deb-libsdl2-2-0-0" {>= "2.0.12"}
+  "deb-libsdl2-image-2-0-0" {>= "2.0.5"}
+  "deb-libsdl2-mixer-2-0-0" {>= "2.6.0"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libstdc++6" {>= "12"}
+  "deb-libvorbisfile3" {>= "1.2.0"}
+  "deb-wesnoth-1-16-data" {= "1-1.16.9-1"}
+]
+extra-source "wesnoth-1.16-core_1:1.16.9-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/w/wesnoth-1.16/wesnoth-1.16-core_1.16.9-1_amd64.deb"
+}

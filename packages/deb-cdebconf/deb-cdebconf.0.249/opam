@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cdebconf_0.249_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cdebconf"]
+]
+depends: [
+  "deb-debconf"
+  "deb-dpkg" {>= "1.15.4"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libdebian-installer4" {>= "0.118"}
+  "deb-libnewt0-52" {>= "0.52.20"}
+  "deb-libselinux1" {>= "2.3"}
+  "deb-libslang2" {>= "2.2.4"}
+  "deb-libtextwrap1"
+]
+extra-source "cdebconf_0.249_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.249_amd64.deb"
+}

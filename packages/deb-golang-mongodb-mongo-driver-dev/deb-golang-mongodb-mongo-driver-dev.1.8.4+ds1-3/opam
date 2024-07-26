@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-mongodb-mongo-driver-dev_1.8.4+ds1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-mongodb-mongo-driver-dev"]
+]
+depends: [
+  "deb-golang-github-go-stack-stack-dev"
+  "deb-golang-github-golang-snappy-dev"
+  "deb-golang-github-google-go-cmp-dev"
+  "deb-golang-github-klauspost-compress-dev"
+  "deb-golang-github-kr-pretty-dev"
+  "deb-golang-github-montanaflynn-stats-dev"
+  "deb-golang-github-pkg-errors-dev"
+  "deb-golang-github-stretchr-testify-dev"
+  "deb-golang-github-tidwall-pretty-dev"
+  "deb-golang-github-xdg-go-scram-dev"
+  "deb-golang-github-xdg-go-stringprep-dev"
+  "deb-golang-github-youmark-pkcs8-dev"
+  "deb-golang-golang-x-crypto-dev"
+  "deb-golang-golang-x-sync-dev"
+  "deb-golang-golang-x-tools-dev"
+]
+extra-source "golang-mongodb-mongo-driver-dev_1.8.4+ds1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-mongodb-mongo-driver/golang-mongodb-mongo-driver-dev_1.8.4+ds1-3_all.deb"
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkreport3-plugin-web_3.1.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkreport3-plugin-web"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libkf5coreaddons5" {>= "4.99.0"}
+  "deb-libkpropertycore3-4" {>= "3.1.0"}
+  "deb-libkreport3-4" {= "3.1.0-2"}
+  "deb-libqt5core5a" {>= "5.9.0~beta"}
+  "deb-libqt5gui5" {>= "5.4.0"}
+  "deb-libqt5webkit5" {>= "5.6.0~rc"}
+  "deb-libqt5widgets5" {>= "5.4.0"}
+  "deb-libqt5xml5" {>= "5.4.0"}
+  "deb-libstdc++6" {>= "4.1.1"}
+]
+extra-source "libkreport3-plugin-web_3.1.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kreport/libkreport3-plugin-web_3.1.0-2_amd64.deb"
+}

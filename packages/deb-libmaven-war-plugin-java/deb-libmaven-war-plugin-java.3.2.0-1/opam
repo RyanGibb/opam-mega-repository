@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmaven-war-plugin-java_3.2.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmaven-war-plugin-java"]
+]
+depends: [
+  "deb-libcommons-io-java" {>= "2.5"}
+  "deb-libmaven-archiver-java" {>= "3.1.1"}
+  "deb-libmaven-filtering-java" {>= "3.1.1"}
+  "deb-libmaven-mapping-java" {>= "3.0.0"}
+  "deb-libmaven3-core-java" {>= "3.5.0"}
+  "deb-libplexus-archiver-java" {>= "3.5"}
+  "deb-libplexus-interpolation-java" {>= "1.24"}
+  "deb-libplexus-utils-java"
+  "deb-libxstream-java" {>= "1.4.10"}
+]
+extra-source "libmaven-war-plugin-java_3.2.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/maven-war-plugin/libmaven-war-plugin-java_3.2.0-1_all.deb"
+}

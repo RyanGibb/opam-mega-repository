@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-hypercorn_0.11.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-hypercorn"]
+]
+depends: [
+  "deb-python3-any" {>= "3.7~"}
+  "deb-python3-h11" {>= "0.11.0"}
+  "deb-python3-h2" {>= "3.1.0"}
+  "deb-python3-priority"
+  "deb-python3-toml"
+  "deb-python3-typing-extensions"
+  "deb-python3-wsproto" {>= "0.14.0"}
+]
+extra-source "python3-hypercorn_0.11.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/hypercorn/python3-hypercorn_0.11.2-1_all.deb"
+}

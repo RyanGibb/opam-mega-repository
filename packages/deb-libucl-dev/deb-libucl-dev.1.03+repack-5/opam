@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libucl-dev_1.03+repack-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libucl-dev"]
+]
+depends: [
+  "deb-libucl1" {= "1.03+repack-5"}
+  ("deb-libc6-dev" | "deb- libc-dev")
+]
+extra-source "libucl-dev_1.03+repack-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/u/ucl/libucl-dev_1.03+repack-5_amd64.deb"
+}

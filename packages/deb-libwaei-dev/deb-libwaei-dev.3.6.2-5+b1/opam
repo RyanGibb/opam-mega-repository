@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libwaei-dev_3.6.2-5+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libwaei-dev"]
+]
+depends: [
+  "deb-libwaei2" {< "3.6.2+1~"}
+  "deb-libwaei2" {>= "3.6.2"}
+]
+extra-source "libwaei-dev_3.6.2-5+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gwaei/libwaei-dev_3.6.2-5+b1_amd64.deb"
+}

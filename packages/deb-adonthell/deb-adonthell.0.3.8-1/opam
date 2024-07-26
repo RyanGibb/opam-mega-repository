@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i adonthell_0.3.8-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r adonthell"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libogg0" {>= "1.0rc3"}
+  "deb-libpython3-7" {>= "3.7.0"}
+  "deb-libsdl2-2-0-0" {>= "2.0.8"}
+  "deb-libsdl2-mixer-2-0-0" {>= "2.0.2"}
+  "deb-libsdl2-ttf-2-0-0" {>= "2.0.14"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libvorbis0a" {>= "1.1.2"}
+  "deb-python3-any"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "adonthell_0.3.8-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/adonthell/adonthell_0.3.8-1_amd64.deb"
+}

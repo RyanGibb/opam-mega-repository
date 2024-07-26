@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i php-symfony-cache_5.4.23+dfsg-1+deb12u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r php-symfony-cache"]
+]
+depends: [
+  "deb-php-common"
+  "deb-php-psr-cache"
+  "deb-php-psr-log"
+  "deb-php-symfony-cache-contracts"
+  "deb-php-symfony-deprecation-contracts"
+  "deb-php-symfony-service-contracts"
+  "deb-php-symfony-var-exporter"
+]
+extra-source "php-symfony-cache_5.4.23+dfsg-1+deb12u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/symfony/php-symfony-cache_5.4.23+dfsg-1+deb12u2_all.deb"
+}

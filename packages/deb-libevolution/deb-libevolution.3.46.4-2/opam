@@ -1,0 +1,49 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libevolution_3.46.4-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libevolution"]
+]
+depends: [
+  "deb-evolution-common" {= "3.46.4-2"}
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.35"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.10.0"}
+  "deb-libcamel-1-2-64" {>= "3.46.4"}
+  "deb-libcanberra0" {>= "0.2"}
+  "deb-libcmark0-30-2" {>= "0.30.2"}
+  "deb-libebook-1-2-21" {>= "3.46.4"}
+  "deb-libebook-contacts-1-2-4" {>= "3.16.2"}
+  "deb-libecal-2-0-2" {>= "3.46.4"}
+  "deb-libedataserver-1-2-27" {>= "3.46.4"}
+  "deb-libedataserverui-1-2-4" {>= "3.46.4"}
+  "deb-libenchant-2-2" {>= "2.2.3"}
+  "deb-libgail-3-0" {>= "3.0.2"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.24.0"}
+  "deb-libgeocode-glib-2-0" {>= "3.26.3"}
+  "deb-libglib2-0-0" {>= "2.66"}
+  "deb-libgnome-autoar-0-0" {>= "0.1.1"}
+  "deb-libgnome-autoar-gtk-0-0" {>= "0.1.1"}
+  "deb-libgnome-desktop-3-20" {>= "3.17.92"}
+  "deb-libgspell-1-2" {>= "1.8.2"}
+  "deb-libgtk-3-0" {>= "3.22.6"}
+  "deb-libgweather-4-0" {>= "4.1"}
+  "deb-libical3" {>= "3.0.15"}
+  "deb-libjavascriptcoregtk-4-1-0" {>= "2.40.0"}
+  "deb-libldap-2-5-0" {>= "2.5.4"}
+  "deb-libnspr4" {>= "2-4.9-2~"}
+  "deb-libnss3" {>= "2-3.72-1~"}
+  "deb-libpango-1-0-0" {>= "1.37.2"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libsecret-1-0" {>= "0.7"}
+  "deb-libsoup-3-0-0" {>= "3.1"}
+  "deb-libsqlite3-0" {>= "3.5.9"}
+  "deb-libwebkit2gtk-4-1-0" {>= "2.25.1"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libytnef0"
+]
+extra-source "libevolution_3.46.4-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/evolution/libevolution_3.46.4-2_amd64.deb"
+}

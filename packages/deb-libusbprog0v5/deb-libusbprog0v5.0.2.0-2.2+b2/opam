@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libusbprog0v5_0.2.0-2.2+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libusbprog0v5"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libreadline7" {>= "6.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libusb-0-1-4" {>= "2-0.1.12"}
+  "deb-libxml2" {>= "2.7.4"}
+]
+conflicts: [
+  "deb-libusbprog0"
+]
+extra-source "libusbprog0v5_0.2.0-2.2+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/u/usbprog/libusbprog0v5_0.2.0-2.2+b2_amd64.deb"
+}

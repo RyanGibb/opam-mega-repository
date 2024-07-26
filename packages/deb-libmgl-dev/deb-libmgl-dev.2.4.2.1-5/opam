@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmgl-dev_2.4.2.1-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmgl-dev"]
+]
+depends: [
+  "deb-libgsl-dev"
+  "deb-libmgl-fltk7-5-0" {= "2.4.2.1-5"}
+  "deb-libmgl-glut7-5-0" {= "2.4.2.1-5"}
+  "deb-libmgl-mpi7-5-0" {= "2.4.2.1-5"}
+  "deb-libmgl-qt5-7-5-0" {= "2.4.2.1-5"}
+  "deb-libmgl-wnd7-5-0" {= "2.4.2.1-5"}
+  "deb-libmgl-wx7-5-0" {= "2.4.2.1-5"}
+  "deb-libmgl7-5-0" {= "2.4.2.1-5"}
+  "deb-libpng-dev"
+  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
+]
+extra-source "libmgl-dev_2.4.2.1-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mathgl/libmgl-dev_2.4.2.1-5_amd64.deb"
+}

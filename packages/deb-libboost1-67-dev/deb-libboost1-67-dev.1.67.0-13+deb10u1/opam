@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libboost1.67-dev_1.67.0-13+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libboost1.67-dev"]
+]
+depends: [
+  ("deb-libstdc++-7-dev" | "deb-libstdc++-8-dev")
+]
+conflicts: [
+  "deb-bjam"
+  "deb-boost-build"
+  "deb-libboost1-42-dev"
+  "deb-libboost1-46-dev"
+  "deb-libboost1-48-dev"
+  "deb-libboost1-49-dev"
+  "deb-libboost1-50-dev"
+  "deb-libboost1-52-dev"
+  "deb-libboost1-53-dev"
+  "deb-libboost1-54-dev"
+  "deb-libboost1-55-dev"
+  "deb-libboost1-57-dev"
+  "deb-libboost1-58-dev"
+  "deb-libboost1-60-dev"
+  "deb-libboost1-61-dev"
+  "deb-libboost1-62-dev"
+  "deb-libboost1-63-dev"
+  "deb-libboost1-65-dev"
+]
+extra-source "libboost1.67-dev_1.67.0-13+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/boost1.67/libboost1.67-dev_1.67.0-13+deb10u1_amd64.deb"
+}

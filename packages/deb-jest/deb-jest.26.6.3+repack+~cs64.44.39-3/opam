@@ -1,0 +1,58 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i jest_26.6.3+repack+~cs64.44.39-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r jest"]
+]
+depends: [
+  "deb-node-ansi-regex"
+  "deb-node-ansi-styles"
+  "deb-node-anymatch"
+  "deb-node-babel-plugin-add-module-exports"
+  "deb-node-babel7"
+  "deb-node-camelcase"
+  "deb-node-chalk"
+  "deb-node-co"
+  "deb-node-convert-source-map"
+  "deb-node-cosmiconfig"
+  "deb-node-deepmerge"
+  "deb-node-detect-newline"
+  "deb-node-emittery"
+  "deb-node-execa"
+  "deb-node-exit"
+  "deb-node-glob"
+  "deb-node-graceful-fs"
+  "deb-node-is-generator-fn"
+  "deb-node-istanbul"
+  "deb-node-jest-debbundle"
+  "deb-node-jest-worker"
+  "deb-node-jsdom"
+  "deb-node-json-stable-stringify"
+  "deb-node-leven"
+  "deb-node-micromatch"
+  "deb-node-minimist"
+  "deb-node-prompts"
+  "deb-node-react"
+  "deb-node-read-pkg" {>= "5.2~"}
+  "deb-node-read-pkg-up"
+  "deb-node-resolve"
+  "deb-node-rimraf"
+  "deb-node-sane"
+  "deb-node-semver"
+  "deb-node-sinon"
+  "deb-node-slash"
+  "deb-node-source-map"
+  "deb-node-source-map-support"
+  "deb-node-stack-utils"
+  "deb-node-strip-bom"
+  "deb-node-types-babel-core"
+  "deb-node-types-babel-traverse"
+  "deb-node-which"
+  "deb-node-write-file-atomic"
+  "deb-node-yargs"
+  "deb-nodejs"
+]
+extra-source "jest_26.6.3+repack+~cs64.44.39-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-jest/jest_26.6.3+repack+~cs64.44.39-3_amd64.deb"
+}

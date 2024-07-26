@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i policycoreutils-gui_2.8-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r policycoreutils-gui"]
+]
+depends: [
+  "deb-gir1-2-glib-2-0"
+  "deb-gir1-2-gtk-3-0"
+  "deb-policycoreutils" {>= "2.8"}
+  "deb-policycoreutils-dbus" {>= "2.8"}
+  "deb-policycoreutils-dev" {>= "2.8"}
+  "deb-policykit-1"
+  "deb-python3-any"
+  "deb-python3-dbus"
+  "deb-python3-gi"
+  "deb-python3-selinux" {>= "2.8"}
+  "deb-python3-sepolicy" {= "2.8-3"}
+  "deb-python3-slip-dbus"
+]
+extra-source "policycoreutils-gui_2.8-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/selinux-python/policycoreutils-gui_2.8-3_all.deb"
+}

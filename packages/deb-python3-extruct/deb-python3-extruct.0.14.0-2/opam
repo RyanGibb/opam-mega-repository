@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-extruct_0.14.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-extruct"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-html-text"
+  "deb-python3-jstyleson"
+  "deb-python3-lxml"
+  "deb-python3-mf2py"
+  "deb-python3-pyrdfa"
+  "deb-python3-rdflib"
+  "deb-python3-rdflib-jsonld"
+  "deb-python3-six"
+  "deb-python3-w3lib"
+]
+extra-source "python3-extruct_0.14.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/extruct/python3-extruct_0.14.0-2_all.deb"
+}

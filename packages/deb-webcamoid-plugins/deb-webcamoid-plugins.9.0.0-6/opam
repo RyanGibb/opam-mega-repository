@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i webcamoid-plugins_9.0.0-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r webcamoid-plugins"]
+]
+depends: [
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libavcodec-extra59"
+  "deb-libavdevice59" {>= "7-5.0"}
+  "deb-libavformat-extra59"
+  "deb-libavkys9" {>= "9.0.0"}
+  "deb-libavutil57" {>= "7-5.1"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.31.8"}
+  "deb-libgstreamer-plugins-base1-0-0" {>= "1.6.0"}
+  "deb-libgstreamer1-0-0" {>= "1.4.0"}
+  "deb-libkmod2" {>= "5~"}
+  "deb-libpipewire-0-3-0" {>= "0.3.6"}
+  "deb-libpulse0" {>= "0.99.1"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.14.1"}
+  "deb-libqt5qml5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libswscale6" {>= "7-5.0"}
+  "deb-libusb-1-0-0" {>= "2-1.0.16"}
+  "deb-libuvc0" {>= "0.0.6~"}
+  "deb-libv4l-0" {>= "0.5.0"}
+  "deb-libvlc5" {>= "3.0.0"}
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libqt5gui5" {>= "5.4.0"} | "deb- libqt5gui5-gles" {>= "5.4.0"})
+]
+extra-source "webcamoid-plugins_9.0.0-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/w/webcamoid/webcamoid-plugins_9.0.0-6_amd64.deb"
+}

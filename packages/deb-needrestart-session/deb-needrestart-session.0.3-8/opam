@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i needrestart-session_0.3-8_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r needrestart-session"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libnet-dbus-perl"
+  "deb-libproc-processtable-perl"
+  "deb-libwx-perl"
+  "deb-needrestart" {>= "2.0"}
+  "deb-perl-any"
+  "deb-policykit-1"
+  "deb-wmctrl"
+]
+extra-source "needrestart-session_0.3-8_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/needrestart-session/needrestart-session_0.3-8_all.deb"
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-bayesplot_1.8.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-bayesplot"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.3-1"}
+  "deb-r-cran-dplyr" {>= "0.8.0"}
+  "deb-r-cran-ggplot2" {>= "3.0.0"}
+  "deb-r-cran-ggridges"
+  "deb-r-cran-glue"
+  "deb-r-cran-reshape2"
+  "deb-r-cran-rlang" {>= "0.3.0"}
+  "deb-r-cran-tibble"
+  "deb-r-cran-tidyselect"
+]
+extra-source "r-cran-bayesplot_1.8.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-bayesplot/r-cran-bayesplot_1.8.0-1_all.deb"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openjpeg-tools-2.5.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openjpeg-tools"]
+]
+depends: [
+  "apk-lcms2" {= "2.14-r0"}
+  "apk-libpng" {= "1.6.39-r0"}
+  "apk-musl" {= "1.2.3-r5"}
+  "apk-openjpeg" {= "2.5.0-r0"}
+  "apk-tiff" {= "4.4.0-r4"}
+]
+extra-source "openjpeg-tools-2.5.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/openjpeg-tools-2.5.0-r0.apk"
+}

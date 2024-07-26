@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i poppass-cgi_3-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r poppass-cgi"]
+]
+depends: [
+  "deb-libcgi-pm-perl"
+  "deb-libwww-perl"
+  "deb-perl"
+]
+extra-source "poppass-cgi_3-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/poppass-cgi/poppass-cgi_3-6_all.deb"
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-rust-ini-dev_0.18.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-rust-ini-dev"]
+]
+depends: [
+  "deb-librust-cfg-if-1+default-dev"
+  "deb-librust-unicase-dev"
+  ("deb-librust-ordered-multimap-0-4+default-dev" | "deb- librust-ordered-multimap-0-3+default-dev")
+]
+extra-source "librust-rust-ini-dev_0.18.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-rust-ini/librust-rust-ini-dev_0.18.0-1_amd64.deb"
+}

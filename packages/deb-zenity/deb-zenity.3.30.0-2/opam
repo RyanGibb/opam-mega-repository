@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i zenity_3.30.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r zenity"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.24.0"}
+  "deb-libgtk-3-0" {>= "3.19.12"}
+  "deb-libnotify4" {>= "0.7.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libwebkit2gtk-4-0-37" {>= "2.15.1"}
+  "deb-libx11-6"
+  "deb-zenity-common" {>= "3.30.0-2"}
+]
+extra-source "zenity_3.30.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/z/zenity/zenity_3.30.0-2_amd64.deb"
+}

@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libreoffice_1:6.1.5-3+deb10u7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libreoffice"]
+]
+depends: [
+  "deb-libreoffice-base"
+  "deb-libreoffice-calc"
+  "deb-libreoffice-core" {= "1-6.1.5-3+deb10u7"}
+  "deb-libreoffice-draw"
+  "deb-libreoffice-impress"
+  "deb-libreoffice-math"
+  "deb-libreoffice-report-builder-bin"
+  "deb-libreoffice-writer"
+  "deb-python3-uno" {>= "4.4.0~beta2"}
+  ("deb-libreoffice-avmedia-backend-gstreamer" | "deb- libreoffice-avmedia-backend-vlc")
+]
+conflicts: [
+  "deb-libreoffice-dev" {<= "1-5.0.3~rc1-2"}
+  "deb-libreoffice-dev-doc" {<= "1-5.0.3~rc1-2"}
+]
+extra-source "libreoffice_1:6.1.5-3+deb10u7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libr/libreoffice/libreoffice_6.1.5-3+deb10u7_amd64.deb"
+}

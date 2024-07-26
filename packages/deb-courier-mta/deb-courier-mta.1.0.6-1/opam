@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i courier-mta_1.0.6-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r courier-mta"]
+]
+depends: [
+  "deb-courier-authlib" {>= "0.66.4-5~"}
+  "deb-courier-base" {= "1.0.6-1"}
+  "deb-libc6" {>= "2.15"}
+  "deb-libcourier-unicode4" {>= "1.4"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgdbm6" {>= "1.16"}
+  "deb-libidn11" {>= "1.13"}
+  "deb-libnet-cidr-perl"
+  "deb-libperl5-28" {>= "5.28.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-sysvinit-utils" {>= "2.88dsf-50"} | "deb- init-d-script")
+]
+conflicts: [
+  "deb-mail-transport-agent"
+]
+extra-source "courier-mta_1.0.6-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/courier/courier-mta_1.0.6-1_amd64.deb"
+}

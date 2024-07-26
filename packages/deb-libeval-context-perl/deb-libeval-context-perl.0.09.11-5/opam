@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libeval-context-perl_0.09.11-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libeval-context-perl"]
+]
+depends: [
+  "deb-libfile-slurp-perl"
+  "deb-libreadonly-perl"
+  "deb-libsub-install-perl"
+  "deb-perl-any"
+]
+extra-source "libeval-context-perl_0.09.11-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libe/libeval-context-perl/libeval-context-perl_0.09.11-5_all.deb"
+}

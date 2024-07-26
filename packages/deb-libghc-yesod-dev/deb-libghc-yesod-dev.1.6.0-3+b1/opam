@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-yesod-dev_1.6.0-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-yesod-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-aeson-dev"
+  "deb-libghc-blaze-html-dev"
+  "deb-libghc-blaze-markup-dev"
+  "deb-libghc-conduit-dev"
+  "deb-libghc-data-default-class-dev"
+  "deb-libghc-fast-logger-dev"
+  "deb-libghc-monad-logger-dev"
+  "deb-libghc-resourcet-dev"
+  "deb-libghc-semigroups-dev"
+  "deb-libghc-shakespeare-dev"
+  "deb-libghc-streaming-commons-dev"
+  "deb-libghc-unordered-containers-dev"
+  "deb-libghc-wai-dev"
+  "deb-libghc-wai-extra-dev"
+  "deb-libghc-wai-logger-dev"
+  "deb-libghc-warp-dev"
+  "deb-libghc-yaml-dev"
+  "deb-libghc-yesod-core-dev"
+  "deb-libghc-yesod-form-dev"
+  "deb-libghc-yesod-persistent-dev"
+  "deb-libgmp10"
+  "deb-libyaml-0-2"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libghc-yesod-dev_1.6.0-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-yesod/libghc-yesod-dev_1.6.0-3+b1_amd64.deb"
+}

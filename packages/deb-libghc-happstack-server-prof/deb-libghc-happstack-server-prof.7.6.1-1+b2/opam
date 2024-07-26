@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-happstack-server-prof_7.6.1-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-happstack-server-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-base64-bytestring-prof"
+  "deb-libghc-blaze-html-prof"
+  "deb-libghc-exceptions-prof"
+  "deb-libghc-extensible-exceptions-prof"
+  "deb-libghc-happstack-server-dev" {= "7.6.1-1+b2"}
+  "deb-libghc-hslogger-prof"
+  "deb-libghc-html-prof"
+  "deb-libghc-monad-control-prof"
+  "deb-libghc-network-bsd-prof"
+  "deb-libghc-network-prof"
+  "deb-libghc-network-uri-prof"
+  "deb-libghc-old-locale-prof"
+  "deb-libghc-semigroups-prof"
+  "deb-libghc-sendfile-prof"
+  "deb-libghc-syb-prof"
+  "deb-libghc-system-filepath-prof"
+  "deb-libghc-threads-prof"
+  "deb-libghc-transformers-base-prof"
+  "deb-libghc-transformers-compat-prof"
+  "deb-libghc-utf8-string-prof"
+  "deb-libghc-zlib-prof"
+]
+extra-source "libghc-happstack-server-prof_7.6.1-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-happstack-server/libghc-happstack-server-prof_7.6.1-1+b2_amd64.deb"
+}

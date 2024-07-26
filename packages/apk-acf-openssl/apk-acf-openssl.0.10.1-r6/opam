@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add acf-openssl-0.10.1-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del acf-openssl"]
+]
+depends: [
+  "apk-acf-core" {= "0.22.0-r2"}
+  "apk-openssl" {= "1.1.1w-r1"}
+]
+extra-source "acf-openssl-0.10.1-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/acf-openssl-0.10.1-r6.apk"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i signtos_1:8.1.0+r23-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r signtos"]
+]
+depends: [
+  "deb-jarwrapper" {>= "0.5"}
+  "deb-libapksig-java"
+  "deb-libbcpkix-java"
+  "deb-libbcprov-java"
+  ("deb-default-jre" | "deb- java10-runtime" | "deb- java11-runtime")
+]
+extra-source "signtos_1:8.1.0+r23-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/android-platform-build/signtos_8.1.0+r23-2_all.deb"
+}

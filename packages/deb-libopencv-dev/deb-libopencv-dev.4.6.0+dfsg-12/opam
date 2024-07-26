@@ -1,0 +1,45 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libopencv-dev_4.6.0+dfsg-12_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libopencv-dev"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libimath-dev"
+  "deb-libopencv-calib3d-dev" {= "4.6.0+dfsg-12"}
+  "deb-libopencv-calib3d406" {>= "4.6.0+dfsg"}
+  "deb-libopencv-contrib-dev" {= "4.6.0+dfsg-12"}
+  "deb-libopencv-contrib406" {>= "4.6.0+dfsg"}
+  "deb-libopencv-core-dev" {= "4.6.0+dfsg-12"}
+  "deb-libopencv-core406" {>= "4.6.0+dfsg"}
+  "deb-libopencv-dnn-dev" {= "4.6.0+dfsg-12"}
+  "deb-libopencv-dnn406" {>= "4.6.0+dfsg"}
+  "deb-libopencv-features2d-dev" {= "4.6.0+dfsg-12"}
+  "deb-libopencv-features2d406" {>= "4.6.0+dfsg"}
+  "deb-libopencv-flann-dev" {= "4.6.0+dfsg-12"}
+  "deb-libopencv-highgui-dev" {= "4.6.0+dfsg-12"}
+  "deb-libopencv-highgui406" {>= "4.6.0+dfsg"}
+  "deb-libopencv-imgcodecs-dev" {= "4.6.0+dfsg-12"}
+  "deb-libopencv-imgcodecs406" {>= "4.6.0+dfsg"}
+  "deb-libopencv-imgproc-dev" {= "4.6.0+dfsg-12"}
+  "deb-libopencv-imgproc406" {>= "4.6.0+dfsg"}
+  "deb-libopencv-ml-dev" {= "4.6.0+dfsg-12"}
+  "deb-libopencv-objdetect-dev" {= "4.6.0+dfsg-12"}
+  "deb-libopencv-photo-dev" {= "4.6.0+dfsg-12"}
+  "deb-libopencv-shape-dev" {= "4.6.0+dfsg-12"}
+  "deb-libopencv-stitching-dev" {= "4.6.0+dfsg-12"}
+  "deb-libopencv-superres-dev" {= "4.6.0+dfsg-12"}
+  "deb-libopencv-video-dev" {= "4.6.0+dfsg-12"}
+  "deb-libopencv-videoio-dev" {= "4.6.0+dfsg-12"}
+  "deb-libopencv-videoio406" {>= "4.6.0+dfsg"}
+  "deb-libopencv-videostab-dev" {= "4.6.0+dfsg-12"}
+  "deb-libopencv-viz-dev" {= "4.6.0+dfsg-12"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-pkg-config"
+]
+extra-source "libopencv-dev_4.6.0+dfsg-12_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/opencv/libopencv-dev_4.6.0+dfsg-12_amd64.deb"
+}

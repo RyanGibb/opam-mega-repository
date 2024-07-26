@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add freetype-2.13.0-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del freetype"]
+]
+depends: [
+  "apk-brotli-libs" {= "1.0.9-r14"}
+  "apk-libbz2" {= "1.0.8-r5"}
+  "apk-libpng" {= "1.6.39-r3"}
+  "apk-musl" {= "1.2.4-r2"}
+  "apk-zlib" {= "1.2.13-r1"}
+]
+extra-source "freetype-2.13.0-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/freetype-2.13.0-r5.apk"
+}

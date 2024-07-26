@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libben-ocaml-dev_0.10.1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libben-ocaml-dev"]
+]
+depends: [
+  "deb-libben-ocaml"
+  "deb-libextlib-ocaml-dev"
+  "deb-libfileutils-ocaml-dev"
+  "deb-libocamlgraph-ocaml-dev"
+  "deb-libparmap-ocaml-dev"
+  "deb-libpostgresql-ocaml-dev"
+  "deb-libre-ocaml-dev"
+  "deb-libtyxml-ocaml-dev"
+  "deb-ocaml"
+]
+extra-source "libben-ocaml-dev_0.10.1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/ben/libben-ocaml-dev_0.10.1+b1_amd64.deb"
+}

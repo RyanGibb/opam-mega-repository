@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-postcss-cli_10.1.0+~cs16.11.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-postcss-cli"]
+]
+depends: [
+  "deb-node-chokidar" {>= "3.3.0"}
+  "deb-node-fs-extra" {>= "10.0.0"}
+  "deb-node-get-stdin"
+  "deb-node-globby" {>= "12.0.0"}
+  "deb-node-picocolors"
+  "deb-node-postcss"
+  "deb-node-postcss-load-config"
+  "deb-node-postcss-reporter"
+  "deb-node-postcss-value-parser"
+  "deb-node-pretty-hrtime"
+  "deb-node-resolve"
+  "deb-node-slash" {>= "4.0.0"}
+  "deb-node-yargs"
+  "deb-nodejs-any"
+]
+extra-source "node-postcss-cli_10.1.0+~cs16.11.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-postcss-cli/node-postcss-cli_10.1.0+~cs16.11.1-1_all.deb"
+}

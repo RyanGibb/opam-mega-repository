@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libboost-graph1.67-dev_1.67.0-13+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libboost-graph1.67-dev"]
+]
+depends: [
+  "deb-libboost-graph1-67-0" {= "1.67.0-13+deb10u1"}
+  "deb-libboost-serialization1-67-dev" {= "1.67.0-13+deb10u1"}
+  "deb-libboost-test1-67-dev" {= "1.67.0-13+deb10u1"}
+  "deb-libboost1-67-dev" {= "1.67.0-13+deb10u1"}
+]
+conflicts: [
+  "deb-libboost-graph1-42-dev"
+  "deb-libboost-graph1-46-dev"
+  "deb-libboost-graph1-48-dev"
+  "deb-libboost-graph1-49-dev"
+  "deb-libboost-graph1-50-dev"
+  "deb-libboost-graph1-52-dev"
+  "deb-libboost-graph1-53-dev"
+  "deb-libboost-graph1-54-dev"
+  "deb-libboost-graph1-55-dev"
+  "deb-libboost-graph1-57-dev"
+  "deb-libboost-graph1-58-dev"
+  "deb-libboost-graph1-60-dev"
+  "deb-libboost-graph1-61-dev"
+  "deb-libboost-graph1-62-dev"
+  "deb-libboost-graph1-63-dev"
+  "deb-libboost-graph1-65-dev"
+]
+extra-source "libboost-graph1.67-dev_1.67.0-13+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/boost1.67/libboost-graph1.67-dev_1.67.0-13+deb10u1_amd64.deb"
+}

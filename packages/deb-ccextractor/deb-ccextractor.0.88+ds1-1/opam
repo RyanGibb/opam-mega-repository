@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ccextractor_0.88+ds1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ccextractor"]
+]
+depends: [
+  "deb-libavcodec-extra58"
+  "deb-libavformat58" {>= "7-4.1"}
+  "deb-libavutil56" {>= "7-4.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-liblept5"
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libswscale5" {>= "7-4.0"}
+  "deb-libtesseract4"
+  "deb-libutf8proc2" {>= "1.3"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "ccextractor_0.88+ds1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/ccextractor/ccextractor_0.88+ds1-1_amd64.deb"
+}

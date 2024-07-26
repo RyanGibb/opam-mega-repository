@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i inn_1:1.7.2q-47_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r inn"]
+]
+depends: [
+  "deb-cron"
+  "deb-libc6" {>= "2.34"}
+  "deb-libcrypt1" {>= "1-4.1.0"}
+  "deb-libperl5-36" {>= "5.36.0"}
+  "deb-libsystemd0"
+  "deb-lsb-base"
+  "deb-perl"
+  "deb-perl-base"
+  "deb-time"
+  ("deb-bsd-mailx" | "deb- mailx")
+  ("deb-default-mta" | "deb- mail-transport-agent")
+]
+conflicts: [
+  "deb-inewsinn"
+  "deb-inn2"
+  "deb-inn2-dev"
+  "deb-inn2-inews"
+  "deb-news-transport-system"
+]
+extra-source "inn_1:1.7.2q-47_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/inn/inn_1.7.2q-47_amd64.deb"
+}

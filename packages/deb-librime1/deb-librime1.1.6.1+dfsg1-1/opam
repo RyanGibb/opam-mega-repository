@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librime1_1.6.1+dfsg1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librime1"]
+]
+depends: [
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0"}
+  "deb-libboost-regex1-74-0"
+  "deb-libc6" {>= "2.29"}
+  "deb-libcapnp-0-7-0"
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgoogle-glog0v5"
+  "deb-libleveldb1d"
+  "deb-libmarisa0" {>= "0.2.6"}
+  "deb-libopencc1-1" {>= "1.1.1~"}
+  "deb-libstdc++6" {>= "7"}
+  "deb-libyaml-cpp0-6" {>= "0.6.2"}
+]
+extra-source "librime1_1.6.1+dfsg1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libr/librime/librime1_1.6.1+dfsg1-1_amd64.deb"
+}

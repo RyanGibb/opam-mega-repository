@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i perl-stacktrace_0.09-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r perl-stacktrace"]
+]
+depends: [
+  "deb-gdb"
+  "deb-libc6" {>= "2.3"}
+  "deb-perl" {>= "5.36.0-4"}
+  "deb-perl-base"
+  "deb-perl-debug"
+]
+extra-source "perl-stacktrace_0.09-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/liba/libapp-stacktrace-perl/perl-stacktrace_0.09-4+b1_amd64.deb"
+}

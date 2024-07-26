@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i diodon_1.13.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r diodon"]
+]
+depends: [
+  "deb-libayatana-appindicator3-1" {>= "0.5.3"}
+  "deb-libc6" {>= "2.4"}
+  "deb-libdiodon0" {= "1.13.0-1"}
+  "deb-libglib2-0-0" {>= "2.46"}
+  "deb-libgtk-3-0" {>= "3.22"}
+  "deb-libpeas-1-0-0" {>= "1.1.1"}
+  "deb-zeitgeist-core" {>= "0.9.14"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "diodon_1.13.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/diodon/diodon_1.13.0-1_amd64.deb"
+}

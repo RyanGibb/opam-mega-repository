@@ -1,0 +1,45 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libboost1.74-all-dev_1.74.0+ds1-21_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libboost1.74-all-dev"]
+]
+depends: [
+  "deb-libboost-atomic1-74-dev"
+  "deb-libboost-chrono1-74-dev"
+  "deb-libboost-container1-74-dev"
+  "deb-libboost-context1-74-dev"
+  "deb-libboost-coroutine1-74-dev"
+  "deb-libboost-date-time1-74-dev"
+  "deb-libboost-exception1-74-dev"
+  "deb-libboost-fiber1-74-dev"
+  "deb-libboost-filesystem1-74-dev"
+  "deb-libboost-graph-parallel1-74-dev"
+  "deb-libboost-graph1-74-dev"
+  "deb-libboost-iostreams1-74-dev"
+  "deb-libboost-locale1-74-dev"
+  "deb-libboost-log1-74-dev"
+  "deb-libboost-math1-74-dev"
+  "deb-libboost-mpi-python1-74-dev"
+  "deb-libboost-mpi1-74-dev"
+  "deb-libboost-nowide1-74-dev"
+  "deb-libboost-numpy1-74-dev"
+  "deb-libboost-program-options1-74-dev"
+  "deb-libboost-python1-74-dev"
+  "deb-libboost-random1-74-dev"
+  "deb-libboost-regex1-74-dev"
+  "deb-libboost-serialization1-74-dev"
+  "deb-libboost-stacktrace1-74-dev"
+  "deb-libboost-system1-74-dev"
+  "deb-libboost-test1-74-dev"
+  "deb-libboost-thread1-74-dev"
+  "deb-libboost-timer1-74-dev"
+  "deb-libboost-type-erasure1-74-dev"
+  "deb-libboost-wave1-74-dev"
+  "deb-libboost1-74-dev"
+  "deb-libboost1-74-tools-dev"
+]
+extra-source "libboost1.74-all-dev_1.74.0+ds1-21_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/boost1.74/libboost1.74-all-dev_1.74.0+ds1-21_amd64.deb"
+}

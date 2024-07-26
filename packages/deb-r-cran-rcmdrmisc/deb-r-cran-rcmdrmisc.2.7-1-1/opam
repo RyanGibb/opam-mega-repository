@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-rcmdrmisc_2.7-1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-rcmdrmisc"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.2-1"}
+  "deb-r-cran-abind"
+  "deb-r-cran-car" {>= "3.0-0"}
+  "deb-r-cran-class"
+  "deb-r-cran-colorspace"
+  "deb-r-cran-e1071"
+  "deb-r-cran-foreign"
+  "deb-r-cran-haven"
+  "deb-r-cran-hmisc" {>= "4.1-0"}
+  "deb-r-cran-lattice"
+  "deb-r-cran-mass"
+  "deb-r-cran-nnet"
+  "deb-r-cran-nortest"
+  "deb-r-cran-readstata13"
+  "deb-r-cran-readxl"
+  "deb-r-cran-sandwich"
+]
+extra-source "r-cran-rcmdrmisc_2.7-1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-rcmdrmisc/r-cran-rcmdrmisc_2.7-1-1_all.deb"
+}

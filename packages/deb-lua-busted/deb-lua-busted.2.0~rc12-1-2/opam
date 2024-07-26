@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lua-busted_2.0~rc12-1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lua-busted"]
+]
+depends: [
+  "deb-lua-cliargs" {>= "3.0-1-1"}
+  "deb-lua-dkjson"
+  "deb-lua-filesystem"
+  "deb-lua-luassert"
+  "deb-lua-mediator"
+  "deb-lua-penlight"
+  "deb-lua-say"
+  "deb-lua-system"
+  "deb-lua-term"
+  ("deb-lua5-2" | "deb- lua")
+]
+extra-source "lua-busted_2.0~rc12-1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lua-busted/lua-busted_2.0~rc12-1-2_all.deb"
+}

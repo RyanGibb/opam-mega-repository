@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add rtmpdump-dev-2.4_git20190330-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del rtmpdump-dev"]
+]
+depends: [
+  "apk-gnutls-dev" {= "3.7.8-r3"}
+  "apk-librtmp" {= "2.4_git20190330-r2"}
+  "apk-nettle-dev" {= "3.8.1-r0"}
+  "apk-pkgconf" {= "1.9.4-r0"}
+  "apk-zlib-dev" {= "1.2.13-r0"}
+]
+extra-source "rtmpdump-dev-2.4_git20190330-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/rtmpdump-dev-2.4_git20190330-r2.apk"
+}

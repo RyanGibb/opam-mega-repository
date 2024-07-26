@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pepper_0.3.3-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pepper"]
+]
+depends: [
+  "deb-gnuplot"
+  "deb-libapr1" {>= "1.5.0"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-liblua5-1-0"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libsvn1" {>= "1.5"}
+  "deb-lua5-1"
+  "deb-zlib1g" {>= "1-1.2.0"}
+]
+extra-source "pepper_0.3.3-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pepper/pepper_0.3.3-4_amd64.deb"
+}

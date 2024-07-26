@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i glances_3.3.1.1+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r glances"]
+]
+depends: [
+  "deb-adduser"
+  "deb-python3-any"
+  "deb-python3-defusedxml"
+  "deb-python3-packaging"
+  "deb-python3-pkg-resources"
+  "deb-python3-psutil" {>= "2.0.0"}
+  "deb-sysvinit-utils" {>= "3.05-4~"}
+  ("deb-python3-ujson" | "deb- python3" {< "3.7"})
+]
+extra-source "glances_3.3.1.1+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/glances/glances_3.3.1.1+dfsg-1_all.deb"
+}

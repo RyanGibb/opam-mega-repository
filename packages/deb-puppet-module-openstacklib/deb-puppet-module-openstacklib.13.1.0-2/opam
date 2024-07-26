@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i puppet-module-openstacklib_13.1.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r puppet-module-openstacklib"]
+]
+depends: [
+  "deb-puppet-common"
+  "deb-puppet-module-puppetlabs-apache"
+  "deb-puppet-module-puppetlabs-inifile"
+  "deb-puppet-module-puppetlabs-mysql"
+  "deb-puppet-module-puppetlabs-postgresql"
+  "deb-puppet-module-puppetlabs-rabbitmq"
+  "deb-puppet-module-puppetlabs-stdlib"
+]
+extra-source "puppet-module-openstacklib_13.1.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/puppet-module-openstacklib/puppet-module-openstacklib_13.1.0-2_all.deb"
+}

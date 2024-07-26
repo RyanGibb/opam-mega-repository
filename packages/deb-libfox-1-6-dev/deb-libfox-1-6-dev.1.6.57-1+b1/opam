@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libfox-1.6-dev_1.6.57-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libfox-1.6-dev"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libcups2-dev"
+  "deb-libfox-1-6-0" {= "1.6.57-1+b1"}
+  "deb-libgl1-mesa-dev"
+  "deb-libglu1-mesa-dev"
+  "deb-libjpeg-dev"
+  "deb-libpng-dev"
+  "deb-libtiff5-dev"
+  "deb-libx11-dev"
+  "deb-libxcursor-dev"
+  "deb-libxext-dev"
+  "deb-libxft-dev"
+  "deb-zlib1g-dev"
+]
+conflicts: [
+  "deb-libfox1-0-dev"
+  "deb-libfox1-2-dev"
+  "deb-libfox1-4-dev"
+]
+extra-source "libfox-1.6-dev_1.6.57-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fox1.6/libfox-1.6-dev_1.6.57-1+b1_amd64.deb"
+}

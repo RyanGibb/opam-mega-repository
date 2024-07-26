@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libplplotqt2_5.15.0+dfsg-19_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libplplotqt2"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libplplot17" {>= "5.15.0+dfsg"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5printsupport5" {>= "5.0.2"}
+  "deb-libqt5svg5" {>= "5.6.0~beta"}
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "5"}
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+conflicts: [
+  "deb-plplot12-driver-qt"
+]
+extra-source "libplplotqt2_5.15.0+dfsg-19_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/plplot/libplplotqt2_5.15.0+dfsg-19_amd64.deb"
+}

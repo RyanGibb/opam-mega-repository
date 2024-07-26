@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libnet-duo-perl_1.02-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libnet-duo-perl"]
+]
+depends: [
+  "deb-libjson-perl"
+  "deb-libperl6-slurp-perl"
+  "deb-libsub-install-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-perl"
+]
+extra-source "libnet-duo-perl_1.02-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libn/libnet-duo-perl/libnet-duo-perl_1.02-1_all.deb"
+}

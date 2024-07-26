@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i weechat-php_2.3-1+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r weechat-php"]
+]
+depends: [
+  "deb-libargon2-1" {>= "0~20171227"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libpcre2-8-0" {>= "10.32"}
+  "deb-libphp-embed"
+  "deb-libsodium23" {>= "0.6.0"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libxml2" {>= "2.6.27"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-weechat-curses" {= "2.3-1+deb10u1"} | "deb- weechat-headless" {= "2.3-1+deb10u1"})
+]
+extra-source "weechat-php_2.3-1+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/w/weechat/weechat-php_2.3-1+deb10u1_amd64.deb"
+}

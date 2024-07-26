@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ocserv_0.12.2-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ocserv"]
+]
+depends: [
+  "deb-dbus"
+  "deb-libc6" {>= "2.17"}
+  "deb-libev4" {>= "1-4.04"}
+  "deb-libgeoip1"
+  "deb-libgnutls30" {>= "3.6.6"}
+  "deb-libgssapi-krb5-2" {>= "1.14+dfsg"}
+  "deb-libhttp-parser2-8" {>= "2.1"}
+  "deb-liblz4-1" {>= "0.0~r130"}
+  "deb-libnettle6"
+  "deb-libnl-3-200" {>= "3.2.7"}
+  "deb-libnl-route-3-200" {>= "3.2.7"}
+  "deb-liboath0" {>= "1.8.0"}
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-libpcl1"
+  "deb-libprotobuf-c1" {>= "1.0.1"}
+  "deb-libradcli4"
+  "deb-libreadline7" {>= "6.0"}
+  "deb-libseccomp2" {>= "0.0.0~20120605"}
+  "deb-libsystemd0"
+  "deb-libtalloc2" {>= "2.0.4~git20101213"}
+  "deb-libtasn1-6" {>= "4.12"}
+  "deb-libwrap0" {>= "7.6-4~"}
+  "deb-lsb-base"
+  "deb-ssl-cert"
+]
+extra-source "ocserv_0.12.2-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/ocserv/ocserv_0.12.2-3_amd64.deb"
+}

@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-pil_5.4.1-2+deb10u3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-pil"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libimagequant0" {>= "2.11.10"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-liblcms2-2" {>= "2.2+git20110628"}
+  "deb-libtiff5" {>= "4.0.3"}
+  "deb-libwebp6" {>= "0.5.1"}
+  "deb-libwebpdemux2" {>= "0.5.1"}
+  "deb-libwebpmux3" {>= "0.6.1-2+deb10u1"}
+  "deb-python3" {< "3.8"}
+  "deb-python3" {>= "3.7~"}
+  "deb-python3-any"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-mime-support" | "deb- python3-pil-imagetk")
+]
+conflicts: [
+  "deb-python3-imaging" {< "1.1.7+2.0.0-1.1"}
+]
+extra-source "python3-pil_5.4.1-2+deb10u3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pillow/python3-pil_5.4.1-2+deb10u3_amd64.deb"
+}

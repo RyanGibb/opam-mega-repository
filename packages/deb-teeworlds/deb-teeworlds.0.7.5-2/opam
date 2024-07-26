@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i teeworlds_0.7.5-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r teeworlds"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgl1"
+  "deb-libjsonparser1-1" {>= "1.1.0"}
+  "deb-libpnglite0" {>= "0.1.17"}
+  "deb-libsdl2-2-0-0" {>= "2.0.12"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libwavpack1" {>= "4.40.0"}
+  "deb-teeworlds-data" {= "0.7.5-2"}
+  "deb-zlib1g" {>= "1-1.2.0"}
+]
+extra-source "teeworlds_0.7.5-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/teeworlds/teeworlds_0.7.5-2_amd64.deb"
+}

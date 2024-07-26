@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libvirt-dev-6.6.0-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libvirt-dev"]
+]
+depends: [
+  "apk-libtirpc-dev" {= "1.2.6-r0"}
+  "apk-libvirt-libs" {= "6.6.0-r4"}
+  "apk-pkgconf" {= "1.7.2-r0"}
+]
+extra-source "libvirt-dev-6.6.0-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/libvirt-dev-6.6.0-r4.apk"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsoup-3.0-dev_3.2.2-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsoup-3.0-dev"]
+]
+depends: [
+  "deb-gir1-2-soup-3-0" {= "3.2.2-2"}
+  "deb-libbrotli-dev"
+  "deb-libglib2-0-dev" {>= "2.69"}
+  "deb-libnghttp2-dev"
+  "deb-libpsl-dev" {>= "0.20"}
+  "deb-libsoup-3-0-0" {= "3.2.2-2"}
+  "deb-libsqlite3-dev"
+  "deb-libsysprof-capture-4-dev"
+  "deb-zlib1g-dev"
+]
+extra-source "libsoup-3.0-dev_3.2.2-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libs/libsoup3/libsoup-3.0-dev_3.2.2-2_amd64.deb"
+}

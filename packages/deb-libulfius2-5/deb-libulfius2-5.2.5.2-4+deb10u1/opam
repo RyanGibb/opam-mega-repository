@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libulfius2.5_2.5.2-4+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libulfius2.5"]
+]
+depends: [
+  "deb-libc6" {>= "2.17"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libgnutls30" {>= "3.6.6"}
+  "deb-libjansson4" {>= "2.1"}
+  "deb-libmicrohttpd12" {>= "0.9.52"}
+  "deb-liborcania1-2" {>= "1.2.2"}
+  "deb-libyder2-0" {>= "1.3.3"}
+]
+extra-source "libulfius2.5_2.5.2-4+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/u/ulfius/libulfius2.5_2.5.2-4+deb10u1_amd64.deb"
+}

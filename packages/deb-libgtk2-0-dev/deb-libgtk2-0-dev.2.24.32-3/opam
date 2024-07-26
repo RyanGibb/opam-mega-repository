@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgtk2.0-dev_2.24.32-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgtk2.0-dev"]
+]
+depends: [
+  "deb-gir1-2-gtk-2-0" {= "2.24.32-3"}
+  "deb-libatk1-0-dev" {>= "1.29.2"}
+  "deb-libcairo2-dev" {>= "1.6.4-6.1"}
+  "deb-libgdk-pixbuf2-0-dev" {>= "2.21.0"}
+  "deb-libglib2-0-dev" {>= "2.27.3"}
+  "deb-libgtk2-0-0" {= "2.24.32-3"}
+  "deb-libgtk2-0-common"
+  "deb-libpango1-0-dev" {>= "1.20"}
+  "deb-libx11-dev" {>= "2-1.0.0-6"}
+  "deb-libxcomposite-dev" {>= "1-0.2.0-3"}
+  "deb-libxcursor-dev"
+  "deb-libxdamage-dev" {>= "1-1.0.1-3"}
+  "deb-libxext-dev" {>= "1-1.0.1-2"}
+  "deb-libxfixes-dev" {>= "1-3.0.0-3"}
+  "deb-libxi-dev" {>= "1-1.0.1-4"}
+  "deb-libxinerama-dev" {>= "1-1.0.1-4.1"}
+  "deb-libxml2-utils"
+  "deb-libxrandr-dev" {>= "2-1.2.99"}
+  "deb-pkgconf"
+]
+extra-source "libgtk2.0-dev_2.24.32-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gtk+2.0/libgtk2.0-dev_2.24.32-3_amd64.deb"
+}

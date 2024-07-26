@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libffms2-5_2.40+git20211209-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libffms2-5"]
+]
+depends: [
+  "deb-libavcodec-extra59"
+  "deb-libavformat-extra59"
+  "deb-libavutil57" {>= "7-5.0"}
+  "deb-libc6" {>= "2.32"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libswresample4" {>= "7-5.0"}
+  "deb-libswscale6" {>= "7-5.0"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libffms2-5_2.40+git20211209-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/ffms2/libffms2-5_2.40+git20211209-2+b1_amd64.deb"
+}

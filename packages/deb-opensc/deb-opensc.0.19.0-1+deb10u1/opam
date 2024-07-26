@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i opensc_0.19.0-1+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r opensc"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libglib2-0-0" {>= "2.16.0"}
+  "deb-libreadline7" {>= "6.0"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-opensc-pkcs11" {= "0.19.0-1+deb10u1"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+conflicts: [
+  "deb-mozilla-opensc"
+]
+extra-source "opensc_0.19.0-1+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/opensc/opensc_0.19.0-1+deb10u1_amd64.deb"
+}

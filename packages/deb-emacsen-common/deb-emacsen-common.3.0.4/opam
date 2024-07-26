@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i emacsen-common_3.0.4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r emacsen-common"]
+]
+conflicts: [
+  "deb-emacs19"
+  "deb-emacs20"
+  "deb-emacs21-common"
+  "deb-emacs22-common"
+  "deb-emacs23-common"
+  "deb-emacs24-common"
+  "deb-emacs25-common"
+  "deb-xemacs21-support" {< "21.4.24-6~"}
+]
+extra-source "emacsen-common_3.0.4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/emacsen-common/emacsen-common_3.0.4_all.deb"
+}

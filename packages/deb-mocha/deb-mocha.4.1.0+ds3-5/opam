@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mocha_4.1.0+ds3-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mocha"]
+]
+depends: [
+  "deb-node-browser-stdout"
+  "deb-node-commander" {>= "2.11.0"}
+  "deb-node-debug" {>= "3.1"}
+  "deb-node-diff" {>= "1.3.0"}
+  "deb-node-escape-string-regexp"
+  "deb-node-glob" {>= "7.1.2"}
+  "deb-node-growl"
+  "deb-node-he"
+  "deb-node-mkdirp" {>= "0.5.1"}
+  "deb-node-supports-color" {>= "4.4.0"}
+  "deb-nodejs" {>= "4"}
+  "deb-oxygen-icon-theme"
+]
+extra-source "mocha_4.1.0+ds3-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-mocha/mocha_4.1.0+ds3-5_all.deb"
+}

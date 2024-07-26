@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpdal-plugin-hdf_2.2.0+ds-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpdal-plugin-hdf"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libhdf5-103-1"
+  "deb-libhdf5-cpp-103-1" {>= "1.10.5"}
+  "deb-libpdal-base12" {>= "2.2.0"}
+  "deb-libpdal-util12" {>= "1.1.0"}
+  "deb-libstdc++6" {>= "9"}
+]
+extra-source "libpdal-plugin-hdf_2.2.0+ds-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pdal/libpdal-plugin-hdf_2.2.0+ds-1+b1_amd64.deb"
+}

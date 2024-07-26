@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gbsplay_0.0.94+git20210915-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gbsplay"]
+]
+depends: [
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libaudio2"
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.6.4-5~"}
+  "deb-libpulse0" {>= "0.99.1"}
+  "deb-libsdl2-2-0-0" {>= "2.0.12"}
+  "deb-libxcb-icccm4" {>= "0.4.1"}
+  "deb-libxcb1"
+]
+extra-source "gbsplay_0.0.94+git20210915-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gbsplay/gbsplay_0.0.94+git20210915-1+b1_amd64.deb"
+}

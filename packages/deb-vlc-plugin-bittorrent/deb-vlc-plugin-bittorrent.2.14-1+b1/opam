@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i vlc-plugin-bittorrent_2.14-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r vlc-plugin-bittorrent"]
+]
+depends: [
+  "deb-libc6" {>= "2.32"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libtorrent-rasterbar2-0" {>= "2.0.6"}
+  "deb-libvlccore9" {>= "3.0.0"}
+]
+extra-source "vlc-plugin-bittorrent_2.14-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/vlc-plugin-bittorrent/vlc-plugin-bittorrent_2.14-1+b1_amd64.deb"
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i zkg_2.13.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r zkg"]
+]
+depends: [
+  "deb-btest"
+  "deb-python3-any"
+  "deb-python3-git"
+  "deb-python3-semantic-version"
+]
+conflicts: [
+  "deb-bro-pkg"
+]
+extra-source "zkg_2.13.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/z/zkg/zkg_2.13.0-1_all.deb"
+}

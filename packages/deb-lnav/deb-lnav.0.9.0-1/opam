@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lnav_0.9.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lnav"]
+]
+depends: [
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.29"}
+  "deb-libcurl3-gnutls" {>= "7.28.0"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libncursesw6" {>= "6"}
+  "deb-libpcre3"
+  "deb-libpcrecpp0v5" {>= "7.7"}
+  "deb-libreadline8" {>= "6.1"}
+  "deb-libsqlite3-0" {>= "3.9.1"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-zlib1g" {>= "1-1.2.2.4"}
+]
+extra-source "lnav_0.9.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lnav/lnav_0.9.0-1_amd64.deb"
+}

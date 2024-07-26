@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i natbraille_2.0rc3-14_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r natbraille"]
+]
+depends: [
+  "deb-fonts-dejavu-core"
+  "deb-javahelp2"
+  "deb-libcommons-io-java"
+  "deb-libfop-java"
+  "deb-libjazzy-java"
+  "deb-libjeuclid-core-java"
+  "deb-libjing-java"
+  "deb-libjodconverter-java"
+  "deb-libjoptsimple-java"
+  "deb-liblibreoffice-java"
+  "deb-liblog4j1-2-java"
+  "deb-libreoffice-java-common"
+  "deb-libsaxonb-java"
+  "deb-libslf4j-java"
+  "deb-libwriter2latex-java"
+  "deb-libxalan2-java"
+  "deb-libxstream-java"
+  "deb-ure"
+  "deb-writer2latex"
+  ("deb-default-jre" | "deb- java-runtime")
+]
+extra-source "natbraille_2.0rc3-14_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/natbraille/natbraille_2.0rc3-14_all.deb"
+}

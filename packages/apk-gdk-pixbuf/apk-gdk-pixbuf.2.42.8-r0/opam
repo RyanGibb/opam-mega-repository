@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gdk-pixbuf-2.42.8-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gdk-pixbuf"]
+]
+depends: [
+  "apk-busybox" {= "1.35.0-r18"}
+  "apk-glib" {= "2.72.4-r0"}
+  "apk-libintl" {= "0.21-r2"}
+  "apk-libjpeg-turbo" {= "2.1.3-r1"}
+  "apk-libpng" {= "1.6.37-r1"}
+  "apk-musl" {= "1.2.3-r3"}
+  "apk-shared-mime-info" {= "2.2-r2"}
+  "apk-tiff" {= "4.4.0-r4"}
+]
+extra-source "gdk-pixbuf-2.42.8-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/gdk-pixbuf-2.42.8-r0.apk"
+}

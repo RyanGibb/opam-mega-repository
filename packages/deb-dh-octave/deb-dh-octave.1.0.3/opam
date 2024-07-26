@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dh-octave_1.0.3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dh-octave"]
+]
+depends: [
+  "deb-cme"
+  "deb-dh-octave-autopkgtest"
+  "deb-libconfig-model-dpkg-perl"
+  "deb-libfile-find-rule-perl"
+  "deb-libmime-tools-perl"
+  "deb-liboctave-dev" {>= "5.1.0-4"}
+  "deb-libparse-debcontrol-perl"
+  "deb-perl-any"
+  ("deb-debhelper" | "deb-debhelper" | "deb-debhelper" | "deb-debhelper" | "deb-debhelper")
+]
+extra-source "dh-octave_1.0.3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dh-octave/dh-octave_1.0.3_all.deb"
+}

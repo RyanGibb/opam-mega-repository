@@ -1,0 +1,45 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-hakyll-dev_4.15.1.1-1+b6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-hakyll-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.34"}
+  "deb-libffi8" {>= "3.4"}
+  "deb-libghc-aeson-dev"
+  "deb-libghc-blaze-html-dev"
+  "deb-libghc-blaze-markup-dev"
+  "deb-libghc-data-default-dev"
+  "deb-libghc-file-embed-dev"
+  "deb-libghc-fsnotify-dev"
+  "deb-libghc-hashable-dev"
+  "deb-libghc-http-conduit-dev"
+  "deb-libghc-http-types-dev"
+  "deb-libghc-lifted-async-dev"
+  "deb-libghc-lrucache-dev"
+  "deb-libghc-network-uri-dev"
+  "deb-libghc-optparse-applicative-dev"
+  "deb-libghc-pandoc-dev"
+  "deb-libghc-random-dev"
+  "deb-libghc-regex-tdfa-dev"
+  "deb-libghc-resourcet-dev"
+  "deb-libghc-scientific-dev"
+  "deb-libghc-tagsoup-dev"
+  "deb-libghc-time-locale-compat-dev"
+  "deb-libghc-unordered-containers-dev"
+  "deb-libghc-vector-dev"
+  "deb-libghc-wai-app-static-dev"
+  "deb-libghc-wai-dev"
+  "deb-libghc-warp-dev"
+  "deb-libghc-yaml-dev"
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-liblua5-3-0"
+  "deb-libyaml-0-2"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libghc-hakyll-dev_4.15.1.1-1+b6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-hakyll/libghc-hakyll-dev_4.15.1.1-1+b6_amd64.deb"
+}

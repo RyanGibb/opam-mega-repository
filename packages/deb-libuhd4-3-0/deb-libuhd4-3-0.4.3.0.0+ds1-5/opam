@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libuhd4.3.0_4.3.0.0+ds1-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libuhd4.3.0"]
+]
+depends: [
+  "deb-libboost-chrono1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-serialization1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-thread1-74-0" {>= "1.74.0+ds1"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libpython3-11" {>= "3.11.0"}
+  "deb-libstdc++6" {>= "12"}
+  "deb-libusb-1-0-0" {>= "2-1.0.22"}
+]
+extra-source "libuhd4.3.0_4.3.0.0+ds1-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/u/uhd/libuhd4.3.0_4.3.0.0+ds1-5_amd64.deb"
+}

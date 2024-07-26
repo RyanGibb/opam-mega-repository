@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-biopython_1.80+dfsg-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-biopython"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-any"
+  "deb-python3-numpy"
+  "deb-python3-numpy" {>= "1-1.22.0"}
+  "deb-python3-renderpm"
+  "deb-python3-reportlab"
+  "deb-w3c-sgml-lib"
+]
+extra-source "python3-biopython_1.80+dfsg-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-biopython/python3-biopython_1.80+dfsg-4+b1_amd64.deb"
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gdebi_0.9.5.7+nmu3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gdebi"]
+]
+depends: [
+  "deb-gdebi-core" {= "0.9.5.7+nmu3"}
+  "deb-gir1-2-gtk-3-0"
+  "deb-gir1-2-vte-2-91"
+  "deb-gnome-icon-theme"
+  "deb-policykit-1"
+  "deb-python3-any" {>= "3.3~"}
+  "deb-python3-gi"
+]
+extra-source "gdebi_0.9.5.7+nmu3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gdebi/gdebi_0.9.5.7+nmu3_all.deb"
+}

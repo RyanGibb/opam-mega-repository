@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpa-bench-camlp4-dev_113.00.00-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpa-bench-camlp4-dev"]
+]
+depends: [
+  "deb-camlp4"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libcamlp4-ocaml-dev"
+  "deb-libpa-ounit-camlp4-dev"
+  "deb-libtype-conv-camlp4-dev"
+  "deb-ocaml-findlib"
+  "deb-ocaml-nox"
+]
+extra-source "libpa-bench-camlp4-dev_113.00.00-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pa-bench/libpa-bench-camlp4-dev_113.00.00-2+b1_amd64.deb"
+}

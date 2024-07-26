@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add squid-5.9-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del squid"]
+]
+depends: [
+  "apk-libcap2" {= "2.69-r0"}
+  "apk-libcrypto3" {= "3.1.6-r0"}
+  "apk-libgcc" {= "12.2.1_git20220924-r10"}
+  "apk-libltdl" {= "2.4.7-r2"}
+  "apk-libssl3" {= "3.1.6-r0"}
+  "apk-libstdc++" {= "12.2.1_git20220924-r10"}
+  "apk-logrotate" {= "3.21.0-r1"}
+  "apk-musl" {= "1.2.4-r2"}
+  ("apk-busybox-binsh" {= "1.36.1-r7"} | "apk-dash-binsh" {= "0.5.12-r2"} | "apk-yash-binsh" {= "2.54-r3"})
+]
+extra-source "squid-5.9-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/squid-5.9-r0.apk"
+}

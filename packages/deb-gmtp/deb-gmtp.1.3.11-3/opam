@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gmtp_1.3.11-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gmtp"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libflac8" {>= "1.3.0"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.31.8"}
+  "deb-libgtk-3-0" {>= "3.11.5"}
+  "deb-libid3tag0" {>= "0.15.1b"}
+  "deb-libmtp9" {>= "1.1.0"}
+  "deb-libvorbisfile3" {>= "1.1.2"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "gmtp_1.3.11-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gmtp/gmtp_1.3.11-3_amd64.deb"
+}

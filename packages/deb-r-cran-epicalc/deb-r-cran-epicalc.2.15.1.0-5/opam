@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-epicalc_2.15.1.0-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-epicalc"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.0-3"}
+  "deb-r-cran-foreign"
+  "deb-r-cran-mass"
+  "deb-r-cran-nnet"
+  "deb-r-cran-survival"
+]
+extra-source "r-cran-epicalc_2.15.1.0-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-epicalc/r-cran-epicalc_2.15.1.0-5_all.deb"
+}

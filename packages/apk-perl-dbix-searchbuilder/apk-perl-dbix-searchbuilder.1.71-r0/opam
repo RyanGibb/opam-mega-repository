@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-dbix-searchbuilder-1.71-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-dbix-searchbuilder"]
+]
+depends: [
+  "apk-perl" {= "5.36.2-r0"}
+  "apk-perl-cache-simple-timedexpiry" {= "0.27-r3"}
+  "apk-perl-class-accessor" {= "0.51-r2"}
+  "apk-perl-class-returnvalue" {= "0.55-r3"}
+  "apk-perl-clone" {= "0.46-r0"}
+  "apk-perl-dbi" {= "1.643-r4"}
+  "apk-perl-dbix-dbschema" {= "0.47-r0"}
+  "apk-perl-want" {= "0.29-r7"}
+]
+extra-source "perl-dbix-searchbuilder-1.71-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-dbix-searchbuilder-1.71-r0.apk"
+}

@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libopencv-contrib406_4.6.0+dfsg-12_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libopencv-contrib406"]
+]
+depends: [
+  "deb-libc6" {>= "2.35"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libharfbuzz0b" {>= "0.9.9"}
+  "deb-libhdf5-103-1"
+  "deb-libopencv-calib3d406" {>= "4.6.0+dfsg"}
+  "deb-libopencv-core406" {>= "4.6.0+dfsg"}
+  "deb-libopencv-dnn406" {>= "4.6.0+dfsg"}
+  "deb-libopencv-features2d406" {>= "4.6.0+dfsg"}
+  "deb-libopencv-flann406" {>= "4.6.0+dfsg"}
+  "deb-libopencv-highgui406" {>= "4.6.0+dfsg"}
+  "deb-libopencv-imgcodecs406" {>= "4.6.0+dfsg"}
+  "deb-libopencv-imgproc406" {>= "4.6.0+dfsg"}
+  "deb-libopencv-ml406" {>= "4.6.0+dfsg"}
+  "deb-libopencv-objdetect406" {>= "4.6.0+dfsg"}
+  "deb-libopencv-video406" {>= "4.6.0+dfsg"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5widgets5" {>= "5.2.0"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libtesseract5" {>= "5.3.0"}
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "libopencv-contrib406_4.6.0+dfsg-12_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/opencv/libopencv-contrib406_4.6.0+dfsg-12_amd64.deb"
+}

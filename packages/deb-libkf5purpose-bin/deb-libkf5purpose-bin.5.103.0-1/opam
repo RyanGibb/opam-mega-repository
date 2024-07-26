@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkf5purpose-bin_5.103.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkf5purpose-bin"]
+]
+depends: [
+  "deb-kio"
+  "deb-libaccounts-qt5-1" {>= "1.13"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libkaccounts2" {>= "4-20.08.0~"}
+  "deb-libkf5coreaddons5" {>= "5.103.0~"}
+  "deb-libkf5i18n5" {>= "5.103.0~"}
+  "deb-libkf5kiocore5" {>= "5.103.0~"}
+  "deb-libkf5kiogui5" {>= "5.103.0~"}
+  "deb-libkf5kiowidgets5" {>= "5.103.0~"}
+  "deb-libkf5notifications5" {>= "5.103.0~"}
+  "deb-libkf5purpose5" {= "5.103.0-1"}
+  "deb-libkf5service-bin"
+  "deb-libkf5service5" {>= "4.96.0"}
+  "deb-libqt5core5a" {>= "5.15.2~"}
+  "deb-libqt5network5" {>= "5.15.2~"}
+  "deb-libqt5widgets5" {>= "5.15.2~"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-qml-module-org-kde-bluezqt" {>= "5.70.0~"}
+  "deb-qml-module-org-kde-kquickcontrolsaddons" {>= "5.70.0~"}
+  "deb-qml-module-org-kde-prison"
+  "deb-qml-module-qtquick-dialogs"
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+]
+extra-source "libkf5purpose-bin_5.103.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/purpose/libkf5purpose-bin_5.103.0-1_amd64.deb"
+}

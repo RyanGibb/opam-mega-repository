@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i q2-alignment_2020.11.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r q2-alignment"]
+]
+depends: [
+  "deb-mafft"
+  "deb-python3-any"
+  "deb-python3-setuptools"
+  "deb-python3-skbio"
+  "deb-q2-types"
+  "deb-qiime"
+]
+extra-source "q2-alignment_2020.11.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/q2-alignment/q2-alignment_2020.11.1-2_all.deb"
+}

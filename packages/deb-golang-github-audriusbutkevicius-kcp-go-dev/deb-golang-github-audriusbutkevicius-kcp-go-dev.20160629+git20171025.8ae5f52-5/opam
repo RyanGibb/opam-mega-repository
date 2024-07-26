@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-audriusbutkevicius-kcp-go-dev_20160629+git20171025.8ae5f52-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-audriusbutkevicius-kcp-go-dev"]
+]
+depends: [
+  "deb-golang-github-pkg-errors-dev"
+  "deb-golang-github-templexxx-reedsolomon-dev"
+  "deb-golang-github-templexxx-xor-dev"
+  "deb-golang-github-tjfoc-gmsm-dev"
+  "deb-golang-golang-x-crypto-dev"
+  "deb-golang-golang-x-net-dev"
+]
+extra-source "golang-github-audriusbutkevicius-kcp-go-dev_20160629+git20171025.8ae5f52-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-audriusbutkevicius-kcp-go/golang-github-audriusbutkevicius-kcp-go-dev_20160629+git20171025.8ae5f52-5_all.deb"
+}

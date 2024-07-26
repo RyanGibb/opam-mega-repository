@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-bytes-prof_0.17.2-1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-bytes-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-binary-orphans-prof"
+  "deb-libghc-bytes-dev" {= "0.17.2-1+b3"}
+  "deb-libghc-cereal-prof"
+  "deb-libghc-hashable-prof"
+  "deb-libghc-scientific-prof"
+  "deb-libghc-transformers-compat-prof"
+  "deb-libghc-unordered-containers-prof"
+  "deb-libghc-void-prof"
+]
+extra-source "libghc-bytes-prof_0.17.2-1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-bytes/libghc-bytes-prof_0.17.2-1+b3_amd64.deb"
+}

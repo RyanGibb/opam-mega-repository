@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-rails-assets-diaspora-jsxc_0.1.5+dfsg2~develop.7-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-rails-assets-diaspora-jsxc"]
+]
+depends: [
+  "deb-libjs-i18next"
+  "deb-libjs-jquery"
+  "deb-libjs-jsxc" {>= "3.0~"}
+  "deb-libjs-strophe"
+  "deb-ruby-rails-assets-emojione"
+  "deb-ruby-rails-assets-favico-js" {>= "0.3.10~"}
+  "deb-ruby-rails-assets-jquery"
+  "deb-ruby-rails-assets-jquery-colorbox" {>= "1.6.3~"}
+  "deb-ruby-rails-assets-jquery-fullscreen-plugin"
+  "deb-ruby-rails-assets-jquery-slimscroll"
+  "deb-ruby-rails-assets-jquery-ui"
+  ("deb-ruby" | "deb- ruby-interpreter")
+]
+extra-source "ruby-rails-assets-diaspora-jsxc_0.1.5+dfsg2~develop.7-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-rails-assets-diaspora-jsxc/ruby-rails-assets-diaspora-jsxc_0.1.5+dfsg2~develop.7-3_all.deb"
+}

@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openmw-launcher_0.47.0-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openmw-launcher"]
+]
+depends: [
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0"}
+  "deb-libboost-program-options1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libopenal1" {>= "1.14"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5widgets5" {>= "5.11.0~rc1"}
+  "deb-libsdl2-2-0-0" {>= "2.0.12"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libunshield0" {>= "0.5"}
+  "deb-openmw" {>= "0.47.0-3"}
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+]
+extra-source "openmw-launcher_0.47.0-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openmw/openmw-launcher_0.47.0-3+b1_amd64.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpgocaml-ocaml-dev_2.3-1+b9_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpgocaml-ocaml-dev"]
+]
+depends: [
+  "deb-libbatteries-ocaml-dev"
+  "deb-libcalendar-ocaml-dev"
+  "deb-libcalendar-ocaml-dev" {>= "2"}
+  "deb-libcamlp4-ocaml-dev"
+  "deb-libcsv-ocaml-dev"
+  "deb-libpgocaml-ocaml"
+  "deb-libpgocaml-ocaml" {= "2.3-1+b9"}
+  "deb-libre-ocaml-dev"
+  "deb-ocaml-nox"
+]
+extra-source "libpgocaml-ocaml-dev_2.3-1+b9_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pgocaml/libpgocaml-ocaml-dev_2.3-1+b9_amd64.deb"
+}

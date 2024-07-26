@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py3-pillow-7.2.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py3-pillow"]
+]
+depends: [
+  "apk-freetype" {= "2.10.4-r3"}
+  "apk-lcms2" {= "2.11-r0"}
+  "apk-libimagequant" {= "2.13.1-r0"}
+  "apk-libjpeg-turbo" {= "2.1.0-r0"}
+  "apk-libwebp" {= "1.1.0-r0"}
+  "apk-libxcb" {= "1.14-r1"}
+  "apk-musl" {= "1.2.2-r2"}
+  "apk-openjpeg" {= "2.4.0-r1"}
+  "apk-py3-olefile" {= "0.46-r4"}
+  "apk-tiff" {= "4.4.0-r0"}
+  "apk-zlib" {= "1.2.12-r3"}
+]
+extra-source "py3-pillow-7.2.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/py3-pillow-7.2.0-r2.apk"
+}

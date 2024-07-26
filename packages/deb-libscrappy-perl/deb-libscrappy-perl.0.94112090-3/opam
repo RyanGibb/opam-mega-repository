@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libscrappy-perl_0.94112090-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libscrappy-perl"]
+]
+depends: [
+  "deb-libarray-unique-perl"
+  "deb-libdatetime-format-sqlite-perl"
+  "deb-libdatetime-perl"
+  "deb-libfile-find-rule-perl"
+  "deb-libfile-sharedir-install-perl"
+  "deb-libfile-sharedir-perl"
+  "deb-libfile-slurp-perl"
+  "deb-libfile-util-perl"
+  "deb-libhtml-tree-perl"
+  "deb-libmoose-perl"
+  "deb-libparallel-forkmanager-perl"
+  "deb-libstring-tt-perl"
+  "deb-libtemplate-perl"
+  "deb-liburi-perl"
+  "deb-libweb-scraper-perl"
+  "deb-libwww-mechanize-perl"
+  "deb-libyaml-syck-perl"
+  "deb-perl-any"
+]
+extra-source "libscrappy-perl_0.94112090-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libs/libscrappy-perl/libscrappy-perl_0.94112090-3_all.deb"
+}

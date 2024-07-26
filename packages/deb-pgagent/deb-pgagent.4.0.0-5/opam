@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pgagent_4.0.0-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pgagent"]
+]
+depends: [
+  "deb-libboost-atomic1-67-0"
+  "deb-libboost-chrono1-67-0"
+  "deb-libboost-date-time1-67-0"
+  "deb-libboost-filesystem1-67-0"
+  "deb-libboost-regex1-67-0" {>= "1.67.0-10"}
+  "deb-libboost-system1-67-0"
+  "deb-libboost-thread1-67-0"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libpq5" {>= "8.4~"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-postgresql-11"
+]
+extra-source "pgagent_4.0.0-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pgagent/pgagent_4.0.0-5_amd64.deb"
+}

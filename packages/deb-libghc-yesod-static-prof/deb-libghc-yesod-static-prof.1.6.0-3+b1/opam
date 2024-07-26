@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-yesod-static-prof_1.6.0-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-yesod-static-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-async-prof"
+  "deb-libghc-attoparsec-prof"
+  "deb-libghc-base64-bytestring-prof"
+  "deb-libghc-blaze-builder-prof"
+  "deb-libghc-byteable-prof"
+  "deb-libghc-conduit-prof"
+  "deb-libghc-cryptonite-conduit-prof"
+  "deb-libghc-cryptonite-prof"
+  "deb-libghc-css-text-prof"
+  "deb-libghc-data-default-prof"
+  "deb-libghc-exceptions-prof"
+  "deb-libghc-file-embed-prof"
+  "deb-libghc-hashable-prof"
+  "deb-libghc-hjsmin-prof"
+  "deb-libghc-http-types-prof"
+  "deb-libghc-memory-prof"
+  "deb-libghc-mime-types-prof"
+  "deb-libghc-old-time-prof"
+  "deb-libghc-resourcet-prof"
+  "deb-libghc-unix-compat-prof"
+  "deb-libghc-unordered-containers-prof"
+  "deb-libghc-wai-app-static-prof"
+  "deb-libghc-wai-prof"
+  "deb-libghc-yesod-core-prof"
+  "deb-libghc-yesod-static-dev" {= "1.6.0-3+b1"}
+]
+extra-source "libghc-yesod-static-prof_1.6.0-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-yesod-static/libghc-yesod-static-prof_1.6.0-3+b1_amd64.deb"
+}

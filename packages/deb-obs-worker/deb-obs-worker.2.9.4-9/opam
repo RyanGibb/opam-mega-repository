@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i obs-worker_2.9.4-9_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r obs-worker"]
+]
+depends: [
+  "deb-adduser"
+  "deb-apt-utils"
+  "deb-binutils"
+  "deb-cpio"
+  "deb-curl"
+  "deb-debootstrap"
+  "deb-init-system-helpers" {>= "1.51"}
+  "deb-libcompress-raw-zlib-perl"
+  "deb-libtimedate-perl"
+  "deb-libxml-parser-perl"
+  "deb-libxml-simple-perl"
+  "deb-lvm2"
+  "deb-lzma"
+  "deb-psmisc"
+  "deb-rpm"
+  "deb-screen"
+  "deb-sysvinit-utils"
+  "deb-tar" {>= "1.27"}
+  ("deb-fdisk" | "deb- util-linux" {< "2.29.2-3~"})
+]
+extra-source "obs-worker_2.9.4-9_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/open-build-service/obs-worker_2.9.4-9_all.deb"
+}

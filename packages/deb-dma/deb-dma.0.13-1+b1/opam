@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dma_0.13-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dma"]
+]
+depends: [
+  "deb-libc6" {>= "2.33"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-ucf" {>= "0.28"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+conflicts: [
+  "deb-mail-transport-agent"
+]
+extra-source "dma_0.13-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dma/dma_0.13-1+b1_amd64.deb"
+}

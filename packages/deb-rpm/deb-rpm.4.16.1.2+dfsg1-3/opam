@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i rpm_4.16.1.2+dfsg1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r rpm"]
+]
+depends: [
+  "deb-debugedit" {= "4.16.1.2+dfsg1-3"}
+  "deb-libc6" {>= "2.17"}
+  "deb-libelf1" {>= "0.131"}
+  "deb-libpopt0" {>= "1.14"}
+  "deb-librpm9" {>= "4.16"}
+  "deb-librpmbuild9" {>= "4.14.0+dfsg1"}
+  "deb-librpmio9" {>= "4.14.0+dfsg1"}
+  "deb-librpmsign9" {>= "4.14.0+dfsg1"}
+  "deb-perl-any"
+  "deb-rpm-common" {= "4.16.1.2+dfsg1-3"}
+  "deb-rpm2cpio"
+]
+extra-source "rpm_4.16.1.2+dfsg1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rpm/rpm_4.16.1.2+dfsg1-3_amd64.deb"
+}

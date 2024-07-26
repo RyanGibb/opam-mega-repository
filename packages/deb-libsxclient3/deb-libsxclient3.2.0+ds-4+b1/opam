@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsxclient3_2.0+ds-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsxclient3"]
+]
+depends: [
+  "deb-libc6" {>= "2.17"}
+  "deb-libcurl4" {>= "7.28.0"}
+  "deb-libltdl7" {>= "2.4.6"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libyajl2" {>= "2.0.4"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+conflicts: [
+  "deb-libsxclient2"
+]
+extra-source "libsxclient3_2.0+ds-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sx/libsxclient3_2.0+ds-4+b1_amd64.deb"
+}

@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cockpit-ws_239-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cockpit-ws"]
+]
+depends: [
+  "deb-adduser"
+  "deb-glib-networking"
+  "deb-libc6" {>= "2.27"}
+  "deb-libcrypt1" {>= "1-4.1.0"}
+  "deb-libelogind0"
+  "deb-libglib2-0-0" {>= "2.50"}
+  "deb-libgnutls30" {>= "3.7.0"}
+  "deb-libgssapi-krb5-2" {>= "1.14+dfsg"}
+  "deb-libjson-glib-1-0-0" {>= "1.5.2"}
+  "deb-libkrb5-3" {>= "1.6.dfsg.2"}
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-openssl"
+  "deb-systemd" {>= "235"}
+]
+extra-source "cockpit-ws_239-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cockpit/cockpit-ws_239-1_amd64.deb"
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-omniauth-crowd_2.4.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-omniauth-crowd"]
+]
+depends: [
+  "deb-ruby-activesupport"
+  "deb-ruby-nokogiri" {>= "1.4.4"}
+  "deb-ruby-omniauth" {>= "1.0"}
+  ("deb-ruby" | "deb- ruby-interpreter")
+]
+extra-source "ruby-omniauth-crowd_2.4.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-omniauth-crowd/ruby-omniauth-crowd_2.4.0-1_all.deb"
+}

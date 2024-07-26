@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnat-9-powerpc64le-linux-gnu_9.3.0-22cross1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnat-9-powerpc64le-linux-gnu"]
+]
+depends: [
+  "deb-gcc-9-powerpc64le-linux-gnu" {>= "8"}
+  "deb-gcc-9-powerpc64le-linux-gnu-base" {= "9.3.0-22cross1"}
+  "deb-libc6" {>= "2.28"}
+  "deb-libc6-dev-ppc64el-cross" {>= "2.13-5"}
+  "deb-libgmp10" {>= "2-5.0.1~"}
+  "deb-libgnat-9-ppc64el-cross" {>= "9.3.0-22cross1"}
+  "deb-libisl23" {>= "0.15"}
+  "deb-libmpc3" {>= "1.1.0"}
+  "deb-libmpfr6" {>= "3.1.3"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+conflicts: [
+  "deb-gnat-4-9"
+  "deb-gnat-5-powerpc64le-linux-gnu"
+  "deb-gnat-6-powerpc64le-linux-gnu"
+  "deb-gnat-7-powerpc64le-linux-gnu"
+  "deb-gnat-8-powerpc64le-linux-gnu"
+]
+extra-source "gnat-9-powerpc64le-linux-gnu_9.3.0-22cross1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gcc-9-cross/gnat-9-powerpc64le-linux-gnu_9.3.0-22cross1_amd64.deb"
+}

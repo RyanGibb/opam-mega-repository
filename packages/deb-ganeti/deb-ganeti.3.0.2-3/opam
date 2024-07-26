@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ganeti_3.0.2-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ganeti"]
+]
+depends: [
+  "deb-adduser"
+  "deb-ganeti-3-0" {= "3.0.2-3"}
+  "deb-ganeti-haskell-3-0" {< "3.0.2-3.1~"}
+  "deb-ganeti-haskell-3-0" {>= "3.0.2-3"}
+  "deb-ganeti-htools-3-0" {< "3.0.2-3.1~"}
+  "deb-ganeti-htools-3-0" {>= "3.0.2-3"}
+  "deb-python3"
+  "deb-sysvinit-utils"
+]
+conflicts: [
+  "deb-ganeti-htools"
+]
+extra-source "ganeti_3.0.2-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/ganeti/ganeti_3.0.2-3_all.deb"
+}

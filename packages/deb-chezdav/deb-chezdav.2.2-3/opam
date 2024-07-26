@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i chezdav_2.2-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r chezdav"]
+]
+depends: [
+  "deb-libavahi-gobject0" {>= "0.6.22"}
+  "deb-libc6" {>= "2.4"}
+  "deb-libglib2-0-0" {>= "2.51"}
+  "deb-libphodav-2-0-0" {>= "2.0"}
+  "deb-libsoup2-4-1" {>= "2.48.0"}
+]
+extra-source "chezdav_2.2-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/phodav/chezdav_2.2-3_amd64.deb"
+}

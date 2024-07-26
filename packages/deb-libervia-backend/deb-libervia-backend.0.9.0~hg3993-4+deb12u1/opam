@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libervia-backend_0.9.0~hg3993-4+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libervia-backend"]
+]
+depends: [
+  "deb-python3"
+  "deb-python3-aiosqlite"
+  "deb-python3-alembic"
+  "deb-python3-babel"
+  "deb-python3-dateutil" {>= "2.7.3~"}
+  "deb-python3-idna"
+  "deb-python3-lxml"
+  "deb-python3-mutagen"
+  "deb-python3-openssl"
+  "deb-python3-pil"
+  "deb-python3-potr"
+  "deb-python3-pycryptodome"
+  "deb-python3-service-identity"
+  "deb-python3-shortuuid"
+  "deb-python3-sqlalchemy"
+  "deb-python3-treq"
+  "deb-python3-twisted"
+  "deb-python3-txdbus"
+  "deb-python3-wokkel"
+  "deb-python3-xdg"
+  "deb-python3-xmlschema"
+  "deb-python3-zope-interface"
+]
+extra-source "libervia-backend_0.9.0~hg3993-4+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libe/libervia-backend/libervia-backend_0.9.0~hg3993-4+deb12u1_all.deb"
+}

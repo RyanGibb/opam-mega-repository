@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add imlib2-dev-1.12.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del imlib2-dev"]
+]
+depends: [
+  "apk-freetype-dev" {= "2.13.2-r0"}
+  "apk-imlib2" {= "1.12.1-r0"}
+  "apk-libsm-dev" {= "1.2.4-r3"}
+  "apk-libxext-dev" {= "1.3.5-r3"}
+  "apk-pkgconf" {= "2.1.0-r0"}
+]
+extra-source "imlib2-dev-1.12.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/imlib2-dev-1.12.1-r0.apk"
+}

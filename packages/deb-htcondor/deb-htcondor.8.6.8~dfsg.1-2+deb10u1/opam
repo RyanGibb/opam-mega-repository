@@ -1,0 +1,61 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i htcondor_8.6.8~dfsg.1-2+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r htcondor"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libc6" {>= "2.27"}
+  "deb-libcgroup1" {>= "0.37.1"}
+  "deb-libclassad8" {= "8.6.8~dfsg.1-2+deb10u1"}
+  "deb-libcom-err2" {>= "1.43.9"}
+  "deb-libcurl4" {>= "7.16.2"}
+  "deb-libdate-manip-perl"
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libglobus-callout0" {>= "3"}
+  "deb-libglobus-common0" {>= "17"}
+  "deb-libglobus-ftp-client2" {>= "7"}
+  "deb-libglobus-gass-transfer2" {>= "7"}
+  "deb-libglobus-gram-client3" {>= "12"}
+  "deb-libglobus-gram-protocol3" {>= "11"}
+  "deb-libglobus-gsi-callback0" {>= "4"}
+  "deb-libglobus-gsi-cert-utils0" {>= "8"}
+  "deb-libglobus-gsi-credential1" {>= "6"}
+  "deb-libglobus-gsi-openssl-error0" {>= "2"}
+  "deb-libglobus-gsi-proxy-core0" {>= "8"}
+  "deb-libglobus-gsi-proxy-ssl1" {>= "4"}
+  "deb-libglobus-gsi-sysconfig1" {>= "8"}
+  "deb-libglobus-gss-assist3" {>= "11"}
+  "deb-libglobus-gssapi-error2" {>= "4"}
+  "deb-libglobus-gssapi-gsi4" {>= "13"}
+  "deb-libglobus-io3" {>= "11"}
+  "deb-libglobus-openssl-module0" {>= "3"}
+  "deb-libglobus-rsl2" {>= "9"}
+  "deb-libglobus-xio0" {>= "5"}
+  "deb-libgomp1" {>= "4.9"}
+  "deb-libgssapi-krb5-2" {>= "1.6.dfsg.2"}
+  "deb-libk5crypto3" {>= "1.6.dfsg.2"}
+  "deb-libkrb5-3" {>= "1.13~alpha1+dfsg"}
+  "deb-libkrb5support0" {>= "1.7dfsg~beta2"}
+  "deb-libldap-2-4-2" {>= "2.4.7"}
+  "deb-libltdl7" {>= "2.4.6"}
+  "deb-libpcre3"
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libuuid1" {>= "2.16"}
+  "deb-libvirt0" {>= "0.5.0"}
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxss1"
+  "deb-lsb-base" {>= "3.0-6"}
+  "deb-perl-any"
+  "deb-python"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "htcondor_8.6.8~dfsg.1-2+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/condor/htcondor_8.6.8~dfsg.1-2+deb10u1_amd64.deb"
+}

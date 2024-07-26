@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-backtrace-dev_0.3.67-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-backtrace-dev"]
+]
+depends: [
+  "deb-librust-addr2line-0-19-dev"
+  "deb-librust-cc-dev"
+  "deb-librust-cfg-if-1+default-dev"
+  "deb-librust-flate2-dev" {>= "1.0.25"}
+  "deb-librust-libc-dev"
+  "deb-librust-miniz-oxide-0-6-dev"
+  "deb-librust-object-0-30+archive-dev"
+  "deb-librust-object-0-30+elf-dev"
+  "deb-librust-object-0-30+macho-dev"
+  "deb-librust-object-0-30+pe-dev"
+  "deb-librust-object-0-30+read-core-dev"
+  "deb-librust-object-0-30+unaligned-dev"
+  "deb-librust-rustc-demangle-dev"
+]
+extra-source "librust-backtrace-dev_0.3.67-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-backtrace/librust-backtrace-dev_0.3.67-2_amd64.deb"
+}

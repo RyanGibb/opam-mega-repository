@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-tsk_20200117-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-tsk"]
+]
+depends: [
+  "deb-libafflib0v5" {>= "3.7.6"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libewf2" {>= "20121209"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtalloc2" {>= "2.0.4~git20101213"}
+  "deb-libvhdi1" {>= "20150110"}
+  "deb-libvmdk1" {>= "20150516"}
+  "deb-python3" {< "3.10"}
+  "deb-python3" {>= "3.9~"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "python3-tsk_20200117-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pytsk/python3-tsk_20200117-3_amd64.deb"
+}

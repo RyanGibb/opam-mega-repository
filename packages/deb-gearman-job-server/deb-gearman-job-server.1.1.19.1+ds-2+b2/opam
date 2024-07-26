@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gearman-job-server_1.1.19.1+ds-2+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gearman-job-server"]
+]
+depends: [
+  "deb-libboost-program-options1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.17"}
+  "deb-libevent-2-1-7" {>= "2.1.8-stable"}
+  "deb-libevent-pthreads-2-1-7" {>= "2.1.8-stable"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libhiredis0-14" {>= "0.14.0"}
+  "deb-libmariadb3" {>= "3.0.0"}
+  "deb-libmemcached11"
+  "deb-libpq5"
+  "deb-libsqlite3-0" {>= "3.5.9"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-lsb-base"
+]
+extra-source "gearman-job-server_1.1.19.1+ds-2+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gearmand/gearman-job-server_1.1.19.1+ds-2+b2_amd64.deb"
+}

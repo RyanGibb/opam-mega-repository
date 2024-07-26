@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i adun.app_0.81-14_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r adun.app"]
+]
+depends: [
+  "deb-adun-core" {= "0.81-14"}
+  "deb-gnustep-back0-28" {>= "0.28.0"}
+  "deb-gnustep-base-runtime" {>= "1.27.0"}
+  "deb-gnustep-gui-runtime" {>= "0.28.0"}
+  "deb-libc6" {>= "2.4"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgnustep-base1-27" {>= "1.27.0"}
+  "deb-libgnustep-gui0-28" {>= "0.28.0"}
+  "deb-libobjc4" {>= "4.2.1"}
+  "deb-libsqlclient1-8"
+  "deb-libsteptalk0" {>= "0.10.0"}
+  "deb-steptalk"
+]
+extra-source "adun.app_0.81-14_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/adun.app/adun.app_0.81-14_amd64.deb"
+}

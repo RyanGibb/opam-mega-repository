@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lld-libs-16.0.6-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lld-libs"]
+]
+depends: [
+  "apk-libgcc" {= "12.2.1_git20220924-r10"}
+  "apk-libstdc++" {= "12.2.1_git20220924-r10"}
+  "apk-llvm16-libs" {= "16.0.6-r1"}
+  "apk-musl" {= "1.2.4-r2"}
+  "apk-zlib" {= "1.2.13-r1"}
+  "apk-zstd-libs" {= "1.5.5-r4"}
+]
+extra-source "lld-libs-16.0.6-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/lld-libs-16.0.6-r0.apk"
+}

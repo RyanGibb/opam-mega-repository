@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-ganeti-rapi_3.0.2-1~deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-ganeti-rapi"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-pycurl"
+  "deb-python3-simplejson"
+]
+extra-source "python3-ganeti-rapi_3.0.2-1~deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/ganeti/python3-ganeti-rapi_3.0.2-1~deb11u1_all.deb"
+}

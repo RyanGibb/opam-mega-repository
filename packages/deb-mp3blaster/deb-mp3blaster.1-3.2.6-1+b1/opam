@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mp3blaster_1:3.2.6-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mp3blaster"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-4.0"}
+  "deb-libncurses6" {>= "6"}
+  "deb-libsdl1-2debian" {>= "1.2.11"}
+  "deb-libsidplay1v5"
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-libvorbis0a" {>= "1.1.2"}
+  "deb-libvorbisfile3" {>= "1.1.2"}
+]
+extra-source "mp3blaster_1:3.2.6-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mp3blaster/mp3blaster_3.2.6-1+b1_amd64.deb"
+}

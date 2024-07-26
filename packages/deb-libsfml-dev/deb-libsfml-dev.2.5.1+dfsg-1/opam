@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsfml-dev_2.5.1+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsfml-dev"]
+]
+depends: [
+  "deb-libsfml-audio2-5" {= "2.5.1+dfsg-1"}
+  "deb-libsfml-graphics2-5" {= "2.5.1+dfsg-1"}
+  "deb-libsfml-network2-5" {= "2.5.1+dfsg-1"}
+  "deb-libsfml-system2-5" {= "2.5.1+dfsg-1"}
+  "deb-libsfml-window2-5" {= "2.5.1+dfsg-1"}
+  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
+]
+extra-source "libsfml-dev_2.5.1+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libs/libsfml/libsfml-dev_2.5.1+dfsg-1_amd64.deb"
+}

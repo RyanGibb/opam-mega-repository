@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gscan2pdf_2.3.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gscan2pdf"]
+]
+depends: [
+  "deb-imagemagick"
+  "deb-libconfig-general-perl" {>= "2.40"}
+  "deb-libdate-calc-perl"
+  "deb-libfilesys-df-perl"
+  "deb-libgoocanvas2-perl"
+  "deb-libgtk3-perl" {>= "0.028"}
+  "deb-libgtk3-simplelist-perl"
+  "deb-libhtml-parser-perl"
+  "deb-libimage-magick-perl"
+  "deb-libimage-sane-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-liblocale-gettext-perl" {>= "1.05"}
+  "deb-liblog-log4perl-perl"
+  "deb-libpdf-api2-perl"
+  "deb-libproc-processtable-perl"
+  "deb-libreadonly-perl"
+  "deb-librsvg2-common"
+  "deb-libset-intspan-perl" {>= "1.10"}
+  "deb-libtiff-tools"
+  "deb-libtry-tiny-perl"
+  "deb-sane-utils" {>= "1.0.17"}
+  ("deb-libossp-uuid-perl" | "deb- libdata-uuid-perl")
+]
+extra-source "gscan2pdf_2.3.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gscan2pdf/gscan2pdf_2.3.0-1_all.deb"
+}

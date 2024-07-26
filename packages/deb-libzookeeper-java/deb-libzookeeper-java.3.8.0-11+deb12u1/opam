@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libzookeeper-java_3.8.0-11+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libzookeeper-java"]
+]
+depends: [
+  "deb-junit4"
+  "deb-libcommons-cli-java"
+  "deb-libcommons-io-java"
+  "deb-libdropwizard-metrics-java"
+  "deb-libfindbugs-annotations-java"
+  "deb-libguava-java"
+  "deb-libjackson2-annotations-java"
+  "deb-libjackson2-core-java"
+  "deb-libjackson2-databind-java"
+  "deb-libjetty9-extra-java"
+  "deb-libjetty9-java"
+  "deb-liblog4j1-2-java"
+  "deb-libnetty-java"
+  "deb-libnetty-tcnative-java"
+  "deb-libslf4j-java"
+  "deb-libsnappy-java"
+]
+extra-source "libzookeeper-java_3.8.0-11+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/z/zookeeper/libzookeeper-java_3.8.0-11+deb12u1_all.deb"
+}

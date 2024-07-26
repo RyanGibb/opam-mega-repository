@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pure-ftpd-ldap_1.0.50-2.1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pure-ftpd-ldap"]
+]
+depends: [
+  "deb-libc6" {>= "2.33"}
+  "deb-libcap2" {>= "1-2.10"}
+  "deb-libcrypt1" {>= "1-4.1.0"}
+  "deb-libldap-2-5-0" {>= "2.5.4"}
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-libsodium23" {>= "1.0.10"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-pure-ftpd-common" {= "1.0.50-2.1"}
+  "deb-sysvinit-utils"
+  ("deb-openbsd-inetd" | "deb- inet-superserver")
+]
+conflicts: [
+  "deb-ftp-server"
+  "deb-pure-ftpd"
+]
+extra-source "pure-ftpd-ldap_1.0.50-2.1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pure-ftpd/pure-ftpd-ldap_1.0.50-2.1+b2_amd64.deb"
+}

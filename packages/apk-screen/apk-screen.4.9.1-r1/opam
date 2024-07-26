@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add screen-4.9.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del screen"]
+]
+depends: [
+  "apk-libncursesw" {= "6.4_p20240420-r0"}
+  "apk-libutempter" {= "1.2.1-r9"}
+  "apk-musl" {= "1.2.5-r0"}
+  "apk-utmps-libs" {= "0.1.2.2-r1"}
+]
+extra-source "screen-4.9.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/screen-4.9.1-r1.apk"
+}

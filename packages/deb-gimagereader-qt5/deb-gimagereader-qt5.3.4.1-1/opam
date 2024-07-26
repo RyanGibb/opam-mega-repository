@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gimagereader-qt5_3.4.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gimagereader-qt5"]
+]
+depends: [
+  "deb-gimagereader-common" {= "3.4.1-1"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libdjvulibre21" {>= "3.5.28"}
+  "deb-libenchant-2-2" {>= "2.2.3"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgomp1" {>= "4.9"}
+  "deb-libpodofo0-9-8" {>= "0.9.8+dfsg"}
+  "deb-libpoppler-qt5-1" {>= "0.46.0"}
+  "deb-libqt5concurrent5" {>= "5.6.0~rc"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.0.2"}
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libqt5printsupport5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.2.0"}
+  "deb-libqt5xml5" {>= "5.0.2"}
+  "deb-libqtspell-qt5-1" {>= "1.0.1"}
+  "deb-libquazip5-1" {>= "0.7.3"}
+  "deb-libsane1" {>= "1.0.27"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libtesseract5" {>= "5.3.0"}
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "gimagereader-qt5_3.4.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gimagereader/gimagereader-qt5_3.4.1-1_amd64.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i finch_2.14.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r finch"]
+]
+depends: [
+  "deb-libc6" {>= "2.7"}
+  "deb-libglib2-0-0" {>= "2.16.0"}
+  "deb-libgnt0" {>= "2.14.0"}
+  "deb-libgstreamer1-0-0" {>= "1.0.0"}
+  "deb-libncursesw6" {>= "6"}
+  "deb-libpurple0" {>= "2.8.0"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-pidgin-data" {< "2.14.1-z"}
+  "deb-pidgin-data" {>= "2.14.1"}
+]
+extra-source "finch_2.14.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pidgin/finch_2.14.1-1_amd64.deb"
+}

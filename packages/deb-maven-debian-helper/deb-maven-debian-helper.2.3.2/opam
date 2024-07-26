@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i maven-debian-helper_2.3.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r maven-debian-helper"]
+]
+depends: [
+  "deb-libmaven-clean-plugin-java"
+  "deb-libmaven-compiler-plugin-java"
+  "deb-libmaven-jar-plugin-java"
+  "deb-libmaven-resources-plugin-java"
+  "deb-libmaven-site-plugin-java"
+  "deb-libplexus-velocity-java"
+  "deb-libsurefire-java"
+  "deb-libxml2-utils"
+  "deb-maven" {>= "3.3"}
+  "deb-maven-repo-helper" {>= "1.9"}
+  "deb-unzip"
+  "deb-velocity"
+  ("deb-default-jdk-headless" | "deb- default-jdk")
+]
+extra-source "maven-debian-helper_2.3.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/maven-debian-helper/maven-debian-helper_2.3.2_all.deb"
+}

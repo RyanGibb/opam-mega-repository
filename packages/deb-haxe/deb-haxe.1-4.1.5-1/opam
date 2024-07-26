@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i haxe_1:4.1.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r haxe"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libmbedcrypto3" {>= "2.13"}
+  "deb-libmbedtls12" {>= "2.13"}
+  "deb-libmbedx509-0" {>= "2.0"}
+  "deb-libneko2"
+  "deb-libpcre3"
+  "deb-neko" {>= "2.0.0"}
+  "deb-zlib1g" {>= "1-1.2.0"}
+]
+extra-source "haxe_1:4.1.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haxe/haxe_4.1.5-1_amd64.deb"
+}

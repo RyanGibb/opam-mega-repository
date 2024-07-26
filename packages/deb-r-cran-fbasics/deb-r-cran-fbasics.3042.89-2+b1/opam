@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-fbasics_3042.89-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-fbasics"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libgfortran5" {>= "8"}
+  "deb-libquadmath0" {>= "4.6"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "3.5.1-1"}
+  "deb-r-cran-gss"
+  "deb-r-cran-mass"
+  "deb-r-cran-spatial"
+  "deb-r-cran-stabledist"
+  "deb-r-cran-timedate"
+  "deb-r-cran-timeseries" {>= "2100.84"}
+  ("deb-libblas3" | "deb- libblas-so-3")
+]
+extra-source "r-cran-fbasics_3042.89-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fbasics/r-cran-fbasics_3042.89-2+b1_amd64.deb"
+}

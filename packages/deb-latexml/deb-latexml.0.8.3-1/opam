@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i latexml_0.8.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r latexml"]
+]
+depends: [
+  "deb-imagemagick"
+  "deb-libarchive-zip-perl"
+  "deb-libfile-which-perl"
+  "deb-libimage-magick-perl"
+  "deb-libimage-size-perl"
+  "deb-libio-string-perl"
+  "deb-libjson-xs-perl"
+  "deb-libparse-recdescent-perl"
+  "deb-libtext-unidecode-perl"
+  "deb-liburi-perl"
+  "deb-libuuid-tiny-perl"
+  "deb-libwww-perl"
+  "deb-libxml-libxml-perl"
+  "deb-libxml-libxslt-perl"
+  "deb-libxml2"
+  "deb-libxslt1-1"
+  "deb-perl"
+  "deb-tex-common" {>= "6"}
+  "deb-texlive-latex-base"
+]
+extra-source "latexml_0.8.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/latexml/latexml_0.8.3-1_all.deb"
+}

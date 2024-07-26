@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-bornagain_1.19.0-3+b5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-bornagain"]
+]
+depends: [
+  "deb-libboost-iostreams1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.35"}
+  "deb-libcerf1"
+  "deb-libfftw3-double3" {>= "3.3.10"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libgsl27" {>= "2.7.1"}
+  "deb-libopenmpi3" {>= "4.1.4"}
+  "deb-libpython3-11" {>= "3.11.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5designer5" {>= "5.6.0~beta"}
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libqt5printsupport5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.15.1"}
+  "deb-libqt5xml5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libtiff6" {>= "4.0.3"}
+  "deb-libtiffxx6" {>= "4.0"}
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-any"
+  "deb-python3-matplotlib"
+  "deb-python3-numpy"
+  "deb-python3-yaml"
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "python3-bornagain_1.19.0-3+b5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/bornagain/python3-bornagain_1.19.0-3+b5_amd64.deb"
+}

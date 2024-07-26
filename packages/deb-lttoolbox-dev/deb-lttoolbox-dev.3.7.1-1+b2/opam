@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lttoolbox-dev_3.7.1-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lttoolbox-dev"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libicu-dev"
+  "deb-libicu72" {>= "72.1~rc-1~"}
+  "deb-liblttoolbox3" {>= "3.7.1"}
+  "deb-libstdc++6" {>= "12.2.0-12"}
+  "deb-libutfcpp-dev"
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-lttoolbox" {= "3.7.1-1+b2"}
+]
+conflicts: [
+  "deb-liblttoolbox3-dev"
+]
+extra-source "lttoolbox-dev_3.7.1-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lttoolbox/lttoolbox-dev_3.7.1-1+b2_amd64.deb"
+}

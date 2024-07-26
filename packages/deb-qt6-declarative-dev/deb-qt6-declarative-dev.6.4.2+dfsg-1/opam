@@ -1,0 +1,41 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qt6-declarative-dev_6.4.2+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qt6-declarative-dev"]
+]
+depends: [
+  "deb-libqt6labsanimation6" {= "6.4.2+dfsg-1"}
+  "deb-libqt6labsfolderlistmodel6" {= "6.4.2+dfsg-1"}
+  "deb-libqt6labsqmlmodels6" {= "6.4.2+dfsg-1"}
+  "deb-libqt6labssettings6" {= "6.4.2+dfsg-1"}
+  "deb-libqt6labssharedimage6" {= "6.4.2+dfsg-1"}
+  "deb-libqt6labswavefrontmesh6" {= "6.4.2+dfsg-1"}
+  "deb-libqt6opengl6-dev"
+  "deb-libqt6qml6" {= "6.4.2+dfsg-1"}
+  "deb-libqt6qmlcompiler6" {= "6.4.2+dfsg-1"}
+  "deb-libqt6qmlcore6" {= "6.4.2+dfsg-1"}
+  "deb-libqt6qmllocalstorage6" {= "6.4.2+dfsg-1"}
+  "deb-libqt6qmlmodels6" {= "6.4.2+dfsg-1"}
+  "deb-libqt6qmlworkerscript6" {= "6.4.2+dfsg-1"}
+  "deb-libqt6qmlxmllistmodel6" {= "6.4.2+dfsg-1"}
+  "deb-libqt6quick6" {= "6.4.2+dfsg-1"}
+  "deb-libqt6quickcontrols2-6" {= "6.4.2+dfsg-1"}
+  "deb-libqt6quickcontrols2impl6" {= "6.4.2+dfsg-1"}
+  "deb-libqt6quickdialogs2-6" {= "6.4.2+dfsg-1"}
+  "deb-libqt6quickdialogs2quickimpl6" {= "6.4.2+dfsg-1"}
+  "deb-libqt6quickdialogs2utils6" {= "6.4.2+dfsg-1"}
+  "deb-libqt6quicklayouts6" {= "6.4.2+dfsg-1"}
+  "deb-libqt6quickparticles6" {= "6.4.2+dfsg-1"}
+  "deb-libqt6quickshapes6" {= "6.4.2+dfsg-1"}
+  "deb-libqt6quicktemplates2-6" {= "6.4.2+dfsg-1"}
+  "deb-libqt6quicktest6" {= "6.4.2+dfsg-1"}
+  "deb-libqt6quickwidgets6" {= "6.4.2+dfsg-1"}
+  "deb-qt6-base-dev"
+  "deb-qt6-declarative-dev-tools"
+  "deb-qt6-qmltooling-plugins"
+]
+extra-source "qt6-declarative-dev_6.4.2+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qt6-declarative/qt6-declarative-dev_6.4.2+dfsg-1_amd64.deb"
+}

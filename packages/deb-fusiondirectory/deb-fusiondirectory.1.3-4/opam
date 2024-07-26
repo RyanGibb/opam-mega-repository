@@ -1,0 +1,42 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fusiondirectory_1.3-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fusiondirectory"]
+]
+depends: [
+  "deb-fusiondirectory-smarty3-acl-render" {= "1.3-4"}
+  "deb-gettext"
+  "deb-javascript-common"
+  "deb-libarchive-extract-perl"
+  "deb-libcrypt-cbc-perl"
+  "deb-libdigest-sha-perl"
+  "deb-libfile-copy-recursive-perl"
+  "deb-libjs-prototype"
+  "deb-libjs-scriptaculous"
+  "deb-libnet-ldap-perl"
+  "deb-libpath-class-perl"
+  "deb-libterm-readkey-perl"
+  "deb-libxml-twig-perl"
+  "deb-openssl"
+  "deb-php"
+  "deb-php-cas"
+  "deb-php-cli"
+  "deb-php-curl"
+  "deb-php-fpdf"
+  "deb-php-gd"
+  "deb-php-imagick"
+  "deb-php-imap"
+  "deb-php-ldap"
+  "deb-php-mbstring"
+  "deb-php-xml"
+  "deb-schema2ldif" {>= "1.3"}
+  "deb-smarty-gettext" {>= "1.1"}
+  "deb-smarty3"
+  ("deb-apache2" | "deb- lighttpd" | "deb- httpd" | "deb- nginx")
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "fusiondirectory_1.3-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fusiondirectory/fusiondirectory_1.3-4_all.deb"
+}

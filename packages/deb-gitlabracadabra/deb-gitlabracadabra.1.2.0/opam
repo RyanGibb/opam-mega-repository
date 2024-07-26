@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gitlabracadabra_1.2.0_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gitlabracadabra"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-github"
+  "deb-python3-gitlab" {>= "1.6.0"}
+  "deb-python3-jsonschema" {>= "2.6.0"}
+  "deb-python3-pygit2"
+  "deb-python3-semantic-version"
+  "deb-python3-yaml"
+]
+extra-source "gitlabracadabra_1.2.0_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gitlabracadabra/gitlabracadabra_1.2.0_all.deb"
+}

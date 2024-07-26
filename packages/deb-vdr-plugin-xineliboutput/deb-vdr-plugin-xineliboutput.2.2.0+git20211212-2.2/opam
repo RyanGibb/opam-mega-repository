@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i vdr-plugin-xineliboutput_2.2.0+git20211212-2.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r vdr-plugin-xineliboutput"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libextractor3" {>= "0.6.3"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-vdr"
+]
+extra-source "vdr-plugin-xineliboutput_2.2.0+git20211212-2.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/vdr-plugin-xineliboutput/vdr-plugin-xineliboutput_2.2.0+git20211212-2.2_amd64.deb"
+}

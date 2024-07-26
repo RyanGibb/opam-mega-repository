@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpetsc64-real3.14-dev_3.14.5+dfsg1-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpetsc64-real3.14-dev"]
+]
+depends: [
+  "deb-gfortran"
+  "deb-libfftw3-dev"
+  "deb-libfftw3-mpi-dev"
+  "deb-libhdf5-mpi-dev" {>= "1.8.8"}
+  "deb-libhypre-dev" {>= "2.15.1"}
+  "deb-libmumps64-dev"
+  "deb-libopenmpi-dev" {< "4.2"}
+  "deb-libopenmpi-dev" {>= "4.1.0"}
+  "deb-libpetsc3-14-dev-common" {= "3.14.5+dfsg1-4"}
+  "deb-libpetsc64-real3-14" {= "3.14.5+dfsg1-4"}
+  "deb-libptscotch-dev"
+  "deb-libscalapack-mpi-dev"
+  "deb-libssl-dev"
+  "deb-libsuitesparse-dev"
+  "deb-libsuperlu-dev" {>= "5.2"}
+  "deb-libsuperlu-dist-dev"
+  "deb-python3"
+  ("deb-gfortran-10" | "deb- gfortran-mod-15")
+  ("deb-ocl-icd-opencl-dev" | "deb- opencl-dev")
+]
+extra-source "libpetsc64-real3.14-dev_3.14.5+dfsg1-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/petsc/libpetsc64-real3.14-dev_3.14.5+dfsg1-4_amd64.deb"
+}

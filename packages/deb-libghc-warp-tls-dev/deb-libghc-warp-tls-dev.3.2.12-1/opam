@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-warp-tls-dev_3.2.12-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-warp-tls-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.14"}
+  "deb-libghc-cryptonite-dev"
+  "deb-libghc-data-default-class-dev"
+  "deb-libghc-network-dev"
+  "deb-libghc-streaming-commons-dev"
+  "deb-libghc-tls-dev"
+  "deb-libghc-tls-session-manager-dev"
+  "deb-libghc-wai-dev"
+  "deb-libghc-warp-dev"
+  "deb-libgmp10"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libghc-warp-tls-dev_3.2.12-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-warp-tls/libghc-warp-tls-dev_3.2.12-1_amd64.deb"
+}

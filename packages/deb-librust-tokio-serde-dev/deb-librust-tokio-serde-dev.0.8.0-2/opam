@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-tokio-serde-dev_0.8.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-tokio-serde-dev"]
+]
+depends: [
+  "deb-librust-bincode-1+default-dev"
+  "deb-librust-bytes-1+default-dev"
+  "deb-librust-educe-0-4+debug-dev"
+  "deb-librust-educe-0-4+default-dev"
+  "deb-librust-educe-0-4-dev"
+  "deb-librust-futures-core-0-3+default-dev"
+  "deb-librust-futures-sink-0-3+default-dev"
+  "deb-librust-pin-project-1+default-dev"
+  "deb-librust-rmp-serde-1+default-dev"
+  "deb-librust-serde-1+default-dev"
+  "deb-librust-serde-cbor-0-11+default-dev"
+  "deb-librust-serde-json-1+default-dev"
+]
+extra-source "librust-tokio-serde-dev_0.8.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-tokio-serde/librust-tokio-serde-dev_0.8.0-2_amd64.deb"
+}

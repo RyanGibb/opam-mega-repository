@@ -1,0 +1,44 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkf5kdelibs4support-dev_5.54.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkf5kdelibs4support-dev"]
+]
+depends: [
+  "deb-kgendesignerplugin" {>= "5.54.0~"}
+  "deb-kinit-dev" {>= "5.54"}
+  "deb-kross-dev" {>= "5.54"}
+  "deb-libkf5configwidgets-dev" {>= "5.54.0~"}
+  "deb-libkf5crash-dev" {>= "5.54.0~"}
+  "deb-libkf5dnssd-dev" {>= "5.54"}
+  "deb-libkf5doctools-dev" {>= "5.54.0~"}
+  "deb-libkf5emoticons-dev" {>= "5.54.0~"}
+  "deb-libkf5guiaddons-dev" {>= "5.54.0~"}
+  "deb-libkf5iconthemes-dev" {>= "5.54.0~"}
+  "deb-libkf5idletime-dev" {>= "5.54"}
+  "deb-libkf5itemmodels-dev" {>= "5.54"}
+  "deb-libkf5kcmutils-dev" {>= "5.54"}
+  "deb-libkf5kdelibs4support5" {= "5.54.0-1"}
+  "deb-libkf5kdelibs4support5-bin" {= "5.54.0-1"}
+  "deb-libkf5khtml-dev" {>= "5.54"}
+  "deb-libkf5mediaplayer-dev" {>= "5.54"}
+  "deb-libkf5newstuff-dev" {>= "5.54"}
+  "deb-libkf5notifications-dev" {>= "5.54.0~"}
+  "deb-libkf5notifyconfig-dev" {>= "5.54"}
+  "deb-libkf5parts-dev" {>= "5.54.0~"}
+  "deb-libkf5plotting-dev" {>= "5.54"}
+  "deb-libkf5style-dev" {>= "5.54"}
+  "deb-libkf5su-dev" {>= "5.54"}
+  "deb-libkf5textwidgets-dev" {>= "5.54.0~"}
+  "deb-libkf5threadweaver-dev" {>= "5.54"}
+  "deb-libkf5unitconversion-dev" {>= "5.54.0~"}
+  "deb-libkf5wallet-dev" {>= "5.54"}
+  "deb-libkf5webkit-dev" {>= "5.54"}
+  "deb-libkf5windowsystem-dev" {>= "5.54.0~"}
+  "deb-libssl-dev"
+  "deb-qtbase5-dev" {>= "5.9.0~"}
+]
+extra-source "libkf5kdelibs4support-dev_5.54.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kdelibs4support/libkf5kdelibs4support-dev_5.54.0-1_amd64.deb"
+}

@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-pwntools_4.9.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-pwntools"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-capstone"
+  "deb-python3-colored-traceback"
+  "deb-python3-dateutil"
+  "deb-python3-intervaltree"
+  "deb-python3-mako" {>= "1.0.0"}
+  "deb-python3-packaging"
+  "deb-python3-paramiko"
+  "deb-python3-pip"
+  "deb-python3-psutil"
+  "deb-python3-pyelftools"
+  "deb-python3-pygments"
+  "deb-python3-requests"
+  "deb-python3-ropgadget"
+  "deb-python3-rpyc"
+  "deb-python3-serial"
+  "deb-python3-six" {>= "1.12.0"}
+  "deb-python3-socks"
+  "deb-python3-sortedcontainers"
+  "deb-python3-unicorn"
+]
+extra-source "python3-pwntools_4.9.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pwntools/python3-pwntools_4.9.0-1_all.deb"
+}

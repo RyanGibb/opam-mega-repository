@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnome-terminal_3.30.2-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnome-terminal"]
+]
+depends: [
+  "deb-gnome-terminal-data" {< "3.31"}
+  "deb-gnome-terminal-data" {>= "3.30"}
+  "deb-gsettings-desktop-schemas" {>= "0.1.0"}
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.9"}
+  "deb-libdconf1" {>= "0.14.0"}
+  "deb-libglib2-0-0" {>= "2.49.3"}
+  "deb-libgtk-3-0" {>= "3.21.5"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libuuid1" {>= "2.16"}
+  "deb-libvte-2-91-0" {>= "0.54.1"}
+  "deb-libx11-6"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
+]
+extra-source "gnome-terminal_3.30.2-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnome-terminal/gnome-terminal_3.30.2-2_amd64.deb"
+}

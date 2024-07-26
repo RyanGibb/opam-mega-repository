@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i rpki-client_8.2-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r rpki-client"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libc6" {>= "2.34"}
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libtls26" {>= "3.5.0"}
+  "deb-rpki-trust-anchors"
+  "deb-rsync"
+]
+extra-source "rpki-client_8.2-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rpki-client/rpki-client_8.2-2+b1_amd64.deb"
+}

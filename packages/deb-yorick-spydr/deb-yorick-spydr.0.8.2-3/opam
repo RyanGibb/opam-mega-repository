@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i yorick-spydr_0.8.2-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r yorick-spydr"]
+]
+depends: [
+  "deb-python"
+  "deb-python-glade2"
+  "deb-yorick" {>= "2.1.05"}
+  "deb-yorick-yao"
+  "deb-yorick-yutils" {>= "1.3"}
+  "deb-zenity" {>= "2.0"}
+]
+extra-source "yorick-spydr_0.8.2-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/y/yorick-spydr/yorick-spydr_0.8.2-3_all.deb"
+}

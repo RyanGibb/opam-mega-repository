@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-os-collect-config_12.0.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-os-collect-config"]
+]
+depends: [
+  "deb-locales-all"
+  "deb-python3-any"
+  "deb-python3-anyjson"
+  "deb-python3-dogpile-cache"
+  "deb-python3-eventlet"
+  "deb-python3-heatclient"
+  "deb-python3-iso8601"
+  "deb-python3-keystoneclient"
+  "deb-python3-lxml"
+  "deb-python3-oslo-config"
+  "deb-python3-oslo-log"
+  "deb-python3-pbr"
+  "deb-python3-requests"
+  "deb-python3-six" {>= "1.10.0"}
+  "deb-python3-zaqarclient"
+]
+extra-source "python3-os-collect-config_12.0.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-os-collect-config/python3-os-collect-config_12.0.0-1_all.deb"
+}

@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qml-module-org-kde-kirigami2_5.78.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qml-module-org-kde-kirigami2"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libkf5kirigami2-5" {= "5.78.0-3"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5network5" {>= "5.14.0~"}
+  "deb-libqt5qml5" {>= "5.14.0~"}
+  "deb-libqt5quickcontrols2-5" {>= "5.14.0~"}
+  "deb-libstdc++6" {>= "4.8"}
+  "deb-qml-module-qtgraphicaleffects"
+  "deb-qml-module-qtqml-models2"
+  "deb-qml-module-qtquick-controls2"
+  "deb-qml-module-qtquick-layouts"
+  "deb-qml-module-qtquick-templates2"
+  "deb-qml-module-qtquick2"
+  ("deb-libqt5gui5" {>= "5.14.0~"} | "deb- libqt5gui5-gles" {>= "5.14.0~"})
+  ("deb-libqt5quick5" {>= "5.14.0~"} | "deb- libqt5quick5-gles" {>= "5.14.0~"})
+]
+extra-source "qml-module-org-kde-kirigami2_5.78.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kirigami2/qml-module-org-kde-kirigami2_5.78.0-3_amd64.deb"
+}

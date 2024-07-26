@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i nanook_1.33+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r nanook"]
+]
+depends: [
+  "deb-default-jre-headless"
+  "deb-hdf5-tools"
+  "deb-last-align"
+  "deb-libcommons-io-java"
+  "deb-r-cran-ggplot2"
+  "deb-r-cran-gridextra"
+  "deb-r-cran-reshape"
+  "deb-r-cran-scales"
+  "deb-texlive-latex-base"
+]
+extra-source "nanook_1.33+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/nanook/nanook_1.33+dfsg-1_all.deb"
+}

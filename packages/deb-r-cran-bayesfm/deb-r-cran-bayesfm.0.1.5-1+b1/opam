@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-bayesfm_0.1.5-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-bayesfm"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgfortran5" {>= "10"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.1-2"}
+  "deb-r-cran-checkmate" {>= "1.8.0"}
+  "deb-r-cran-coda"
+  "deb-r-cran-ggplot2" {>= "2.1.0"}
+  "deb-r-cran-gridextra"
+  "deb-r-cran-plyr" {>= "1.8.0"}
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "r-cran-bayesfm_0.1.5-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-bayesfm/r-cran-bayesfm_0.1.5-1+b1_amd64.deb"
+}

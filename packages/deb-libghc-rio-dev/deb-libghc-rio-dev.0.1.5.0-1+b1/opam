@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-rio-dev_0.1.5.0-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-rio-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libghc-exceptions-dev"
+  "deb-libghc-hashable-dev"
+  "deb-libghc-microlens-dev"
+  "deb-libghc-primitive-dev"
+  "deb-libghc-typed-process-dev"
+  "deb-libghc-unliftio-dev"
+  "deb-libghc-unordered-containers-dev"
+  "deb-libghc-vector-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-rio-dev_0.1.5.0-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-rio/libghc-rio-dev_0.1.5.0-1+b1_amd64.deb"
+}

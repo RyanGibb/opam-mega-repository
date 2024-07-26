@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libtext-recordparser-perl_1.6.5-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libtext-recordparser-perl"]
+]
+depends: [
+  "deb-libclass-accessor-perl"
+  "deb-libio-stringy-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-libreadonly-perl"
+  "deb-libtext-autoformat-perl"
+  "deb-perl-any"
+]
+extra-source "libtext-recordparser-perl_1.6.5-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libt/libtext-recordparser-perl/libtext-recordparser-perl_1.6.5-4_all.deb"
+}

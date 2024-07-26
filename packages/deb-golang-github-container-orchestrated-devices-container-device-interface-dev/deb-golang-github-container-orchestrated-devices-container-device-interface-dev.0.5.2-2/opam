@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-container-orchestrated-devices-container-device-interface-dev_0.5.2-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-container-orchestrated-devices-container-device-interface-dev"]
+]
+depends: [
+  "deb-golang-github-fsnotify-fsnotify-dev"
+  "deb-golang-github-hashicorp-go-multierror-dev"
+  "deb-golang-github-opencontainers-runc-dev"
+  "deb-golang-github-opencontainers-runtime-tools-dev"
+  "deb-golang-github-opencontainers-specs-dev"
+  "deb-golang-github-pkg-errors-dev"
+  "deb-golang-github-spf13-cobra-dev"
+  "deb-golang-github-xeipuuv-gojsonschema-dev"
+  "deb-golang-golang-x-sys-dev"
+  "deb-golang-k8s-sigs-yaml-dev"
+]
+extra-source "golang-github-container-orchestrated-devices-container-device-interface-dev_0.5.2-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-container-orchestrated-devices-container-device-interface/golang-github-container-orchestrated-devices-container-device-interface-dev_0.5.2-2_all.deb"
+}

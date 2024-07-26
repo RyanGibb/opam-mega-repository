@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i regina-normal-mpi_5.1-6+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r regina-normal-mpi"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgmp10" {>= "4.1.4-10"}
+  "deb-libgmpxx4ldbl"
+  "deb-libjansson4" {>= "2.0.1"}
+  "deb-libopenmpi3"
+  "deb-libpopt0" {>= "1.14"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-mpi-default-bin"
+  "deb-perl-any"
+  "deb-regina-normal" {< "5.1.1-0"}
+  "deb-regina-normal" {>= "5.1-1"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "regina-normal-mpi_5.1-6+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/regina-normal/regina-normal-mpi_5.1-6+b1_amd64.deb"
+}

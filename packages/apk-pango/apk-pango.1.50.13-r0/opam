@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add pango-1.50.13-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del pango"]
+]
+depends: [
+  "apk-cairo" {= "1.17.6-r3"}
+  "apk-fontconfig" {= "2.14.1-r0"}
+  "apk-freetype" {= "2.12.1-r0"}
+  "apk-fribidi" {= "1.0.12-r0"}
+  "apk-glib" {= "2.74.7-r0"}
+  "apk-harfbuzz" {= "5.3.1-r1"}
+  "apk-libx11" {= "1.8.7-r0"}
+  "apk-libxft" {= "2.3.7-r0"}
+  "apk-libxrender" {= "0.9.11-r0"}
+  "apk-musl" {= "1.2.3-r5"}
+  ("apk-yash-binsh" {= "2.53-r2"} | "apk-busybox-binsh" {= "1.35.0-r31"} | "apk-dash-binsh" {= "0.5.11.5-r2"})
+]
+extra-source "pango-1.50.13-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/pango-1.50.13-r0.apk"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsoci-dev_4.0.1-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsoci-dev"]
+]
+depends: [
+  "deb-libsoci-core4-0" {= "4.0.1-5"}
+  "deb-libsoci-firebird4-0" {= "4.0.1-5"}
+  "deb-libsoci-mysql4-0" {= "4.0.1-5"}
+  "deb-libsoci-odbc4-0" {= "4.0.1-5"}
+  "deb-libsoci-postgresql4-0" {= "4.0.1-5"}
+  "deb-libsoci-sqlite3-4-0" {= "4.0.1-5"}
+]
+extra-source "libsoci-dev_4.0.1-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/soci/libsoci-dev_4.0.1-5_amd64.deb"
+}

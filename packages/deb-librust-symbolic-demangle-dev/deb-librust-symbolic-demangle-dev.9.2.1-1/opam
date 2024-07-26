@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-symbolic-demangle-dev_9.2.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-symbolic-demangle-dev"]
+]
+depends: [
+  "deb-librust-cc-dev"
+  "deb-librust-cpp-demangle-0-4+default-dev"
+  "deb-librust-rustc-demangle-dev"
+  "deb-librust-symbolic-common-dev"
+]
+extra-source "librust-symbolic-demangle-dev_9.2.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-symbolic-demangle/librust-symbolic-demangle-dev_9.2.1-1_amd64.deb"
+}

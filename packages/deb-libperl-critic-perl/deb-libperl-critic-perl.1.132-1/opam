@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libperl-critic-perl_1.132-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libperl-critic-perl"]
+]
+depends: [
+  "deb-libb-keywords-perl"
+  "deb-libconfig-tiny-perl"
+  "deb-libexception-class-perl"
+  "deb-libfile-homedir-perl"
+  "deb-libfile-which-perl"
+  "deb-libio-string-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-libpod-spell-perl"
+  "deb-libppi-perl" {>= "1.224"}
+  "deb-libppix-quotelike-perl"
+  "deb-libppix-regexp-perl"
+  "deb-libppix-utilities-perl"
+  "deb-libreadonly-perl" {>= "2.000"}
+  "deb-libstring-format-perl"
+  "deb-libtask-weaken-perl"
+  "deb-perl"
+  "deb-perltidy"
+  ("deb-libmodule-pluggable-perl" | "deb- perl" {< "5.17.9"})
+]
+extra-source "libperl-critic-perl_1.132-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libp/libperl-critic-perl/libperl-critic-perl_1.132-1_all.deb"
+}

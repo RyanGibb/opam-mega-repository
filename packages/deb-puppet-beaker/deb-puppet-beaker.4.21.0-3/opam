@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i puppet-beaker_4.21.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r puppet-beaker"]
+]
+depends: [
+  "deb-ruby-beaker-hostgenerator"
+  "deb-ruby-hocon"
+  "deb-ruby-in-parallel"
+  "deb-ruby-minitar"
+  "deb-ruby-minitest"
+  "deb-ruby-net-scp"
+  "deb-ruby-open-uri-redirections"
+  "deb-ruby-pry-byebug"
+  "deb-ruby-rsync"
+  "deb-ruby-thor" {>= "0.20"}
+  ("deb-ruby" | "deb- ruby-interpreter")
+]
+extra-source "puppet-beaker_4.21.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/puppet-beaker/puppet-beaker_4.21.0-3_all.deb"
+}

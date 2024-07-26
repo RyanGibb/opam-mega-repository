@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libchipcard-tools_5.1.0beta-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libchipcard-tools"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libchipcard-data" {>= "5.1.0beta-3"}
+  "deb-libchipcard6" {>= "4.99.4"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgwenhywfar60" {>= "4.17.0"}
+  "deb-libstdc++6" {>= "5.2"}
+]
+extra-source "libchipcard-tools_5.1.0beta-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libchipcard/libchipcard-tools_5.1.0beta-3_amd64.deb"
+}

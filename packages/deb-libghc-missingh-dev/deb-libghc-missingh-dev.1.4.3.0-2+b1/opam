@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-missingh-dev_1.4.3.0-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-missingh-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.29"}
+  "deb-libghc-hslogger-dev"
+  "deb-libghc-network-bsd-dev"
+  "deb-libghc-network-dev"
+  "deb-libghc-old-locale-dev"
+  "deb-libghc-old-time-dev"
+  "deb-libghc-random-dev"
+  "deb-libghc-regex-compat-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-missingh-dev_1.4.3.0-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/missingh/libghc-missingh-dev_1.4.3.0-2+b1_amd64.deb"
+}

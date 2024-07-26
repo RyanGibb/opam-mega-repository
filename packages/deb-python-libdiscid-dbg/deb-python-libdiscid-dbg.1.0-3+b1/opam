@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-libdiscid-dbg_1.0-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-libdiscid-dbg"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libdiscid0" {>= "0.6.0"}
+  "deb-python-dbg" {< "2.8"}
+  "deb-python-dbg" {>= "2.7~"}
+  "deb-python-dbg-any" {< "2.8"}
+  "deb-python-dbg-any" {>= "2.7~"}
+  "deb-python-libdiscid" {= "1.0-3+b1"}
+]
+extra-source "python-libdiscid-dbg_1.0-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-libdiscid/python-libdiscid-dbg_1.0-3+b1_amd64.deb"
+}

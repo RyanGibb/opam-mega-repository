@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i four-in-a-row_1:3.28.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r four-in-a-row"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libcanberra-gtk3-0" {>= "0.25"}
+  "deb-libcanberra0" {>= "0.2"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libgtk-3-0" {>= "3.13.2"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "four-in-a-row_1:3.28.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/four-in-a-row/four-in-a-row_3.28.0-2_amd64.deb"
+}

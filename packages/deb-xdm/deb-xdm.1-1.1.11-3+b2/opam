@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xdm_1:1.1.11-3+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xdm"]
+]
+depends: [
+  "deb-cpp"
+  "deb-libc6" {>= "2.15"}
+  "deb-libcrypt1" {>= "1-4.1.0"}
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-libselinux1" {>= "3.1~"}
+  "deb-libx11-6"
+  "deb-libxau6"
+  "deb-libxaw7"
+  "deb-libxdmcp6"
+  "deb-libxext6"
+  "deb-libxft2" {> "2.1.1"}
+  "deb-libxinerama1"
+  "deb-libxmu6"
+  "deb-libxpm4"
+  "deb-libxrender1"
+  "deb-libxt6"
+  "deb-procps"
+  "deb-sysvinit-utils"
+  "deb-x11-xserver-utils"
+  ("deb-debconf" {>= "1.2.9"} | "deb- debconf-2-0")
+  ("deb-x11-utils" | "deb- xbase-clients" | "deb- xmessage")
+]
+extra-source "xdm_1:1.1.11-3+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xdm/xdm_1.1.11-3+b2_amd64.deb"
+}

@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-qgraph_1.9.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-qgraph"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.2.20221110-1"}
+  "deb-r-cran-abind"
+  "deb-r-cran-colorspace"
+  "deb-r-cran-corpcor"
+  "deb-r-cran-fdrtool"
+  "deb-r-cran-ggplot2"
+  "deb-r-cran-glasso"
+  "deb-r-cran-gtools"
+  "deb-r-cran-hmisc"
+  "deb-r-cran-igraph"
+  "deb-r-cran-jpeg"
+  "deb-r-cran-lavaan"
+  "deb-r-cran-matrix"
+  "deb-r-cran-pbapply"
+  "deb-r-cran-plyr"
+  "deb-r-cran-png"
+  "deb-r-cran-psych"
+  "deb-r-cran-rcpp" {>= "1.0.0"}
+  "deb-r-cran-reshape2"
+]
+extra-source "r-cran-qgraph_1.9.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-qgraph/r-cran-qgraph_1.9.3-1_amd64.deb"
+}

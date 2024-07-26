@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i nemo-fileroller_5.6.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r nemo-fileroller"]
+]
+depends: [
+  "deb-file-roller"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libglib2-0-0" {>= "2.18.0"}
+  "deb-libnemo-extension1" {>= "4.6"}
+  "deb-nemo" {>= "4.6"}
+]
+extra-source "nemo-fileroller_5.6.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/nemo-fileroller/nemo-fileroller_5.6.1-1_amd64.deb"
+}

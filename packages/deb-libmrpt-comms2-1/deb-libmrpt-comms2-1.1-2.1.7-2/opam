@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmrpt-comms2.1_1:2.1.7-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmrpt-comms2.1"]
+]
+depends: [
+  "deb-libc6" {>= "2.15"}
+  "deb-libftdi1-2" {>= "1.2"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libmrpt-core2-1" {>= "1-2.1.7"}
+  "deb-libmrpt-io2-1" {>= "1-2.1.7"}
+  "deb-libmrpt-system2-1" {>= "1-2.1.7"}
+  "deb-libstdc++6" {>= "7"}
+  "deb-libusb-1-0-0" {>= "2-1.0.8"}
+]
+extra-source "libmrpt-comms2.1_1:2.1.7-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mrpt/libmrpt-comms2.1_2.1.7-2_amd64.deb"
+}

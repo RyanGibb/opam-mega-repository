@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libvalijson-dev_1.0+repack-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libvalijson-dev"]
+]
+depends: [
+  "deb-libjsoncpp-dev"
+  "deb-libpoco-dev"
+  "deb-libyaml-cpp-dev"
+  "deb-nlohmann-json3-dev"
+  "deb-picojson-dev"
+  "deb-qtbase5-dev"
+  "deb-rapidjson-dev"
+]
+extra-source "libvalijson-dev_1.0+repack-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/valijson/libvalijson-dev_1.0+repack-2_all.deb"
+}

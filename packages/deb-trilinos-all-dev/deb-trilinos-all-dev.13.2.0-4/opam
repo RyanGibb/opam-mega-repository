@@ -1,0 +1,54 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i trilinos-all-dev_13.2.0-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r trilinos-all-dev"]
+]
+depends: [
+  "deb-libtrilinos-amesos-dev"
+  "deb-libtrilinos-amesos2-dev"
+  "deb-libtrilinos-anasazi-dev"
+  "deb-libtrilinos-aztecoo-dev"
+  "deb-libtrilinos-belos-dev"
+  "deb-libtrilinos-epetra-dev"
+  "deb-libtrilinos-epetraext-dev"
+  "deb-libtrilinos-galeri-dev"
+  "deb-libtrilinos-ifpack-dev"
+  "deb-libtrilinos-ifpack2-dev"
+  "deb-libtrilinos-intrepid-dev"
+  "deb-libtrilinos-intrepid2-dev"
+  "deb-libtrilinos-isorropia-dev"
+  "deb-libtrilinos-kokkos-dev"
+  "deb-libtrilinos-kokkos-kernels-dev"
+  "deb-libtrilinos-komplex-dev"
+  "deb-libtrilinos-ml-dev"
+  "deb-libtrilinos-moertel-dev"
+  "deb-libtrilinos-muelu-dev"
+  "deb-libtrilinos-nox-dev"
+  "deb-libtrilinos-pamgen-dev"
+  "deb-libtrilinos-phalanx-dev"
+  "deb-libtrilinos-pike-dev"
+  "deb-libtrilinos-piro-dev"
+  "deb-libtrilinos-pliris-dev"
+  "deb-libtrilinos-rol-dev"
+  "deb-libtrilinos-rtop-dev"
+  "deb-libtrilinos-rythmos-dev"
+  "deb-libtrilinos-sacado-dev"
+  "deb-libtrilinos-shards-dev"
+  "deb-libtrilinos-shylu-dev"
+  "deb-libtrilinos-stokhos-dev"
+  "deb-libtrilinos-stratimikos-dev"
+  "deb-libtrilinos-teko-dev"
+  "deb-libtrilinos-teuchos-dev"
+  "deb-libtrilinos-thyra-dev"
+  "deb-libtrilinos-tpetra-dev"
+  "deb-libtrilinos-trilinoscouplings-dev"
+  "deb-libtrilinos-triutils-dev"
+  "deb-libtrilinos-xpetra-dev"
+  "deb-libtrilinos-zoltan-dev"
+  "deb-libtrilinos-zoltan2-dev"
+]
+extra-source "trilinos-all-dev_13.2.0-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/trilinos/trilinos-all-dev_13.2.0-4_amd64.deb"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i diffoscope-minimal_240_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r diffoscope-minimal"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-distro"
+  "deb-python3-libarchive-c"
+  "deb-python3-magic"
+  "deb-python3-pkg-resources"
+]
+extra-source "diffoscope-minimal_240_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/diffoscope/diffoscope-minimal_240_all.deb"
+}

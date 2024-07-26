@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpowerdevilcore2_4:5.20.5-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpowerdevilcore2"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libkf5activities5" {>= "5.74.0~"}
+  "deb-libkf5authcore5" {>= "5.74.0~"}
+  "deb-libkf5bluezqt6" {>= "5.74.0~"}
+  "deb-libkf5configcore5" {>= "5.74.0~"}
+  "deb-libkf5configgui5" {>= "5.74.0~"}
+  "deb-libkf5coreaddons5" {>= "4.99.0"}
+  "deb-libkf5globalaccel-bin"
+  "deb-libkf5globalaccel5" {>= "5.74.0~"}
+  "deb-libkf5i18n5" {>= "5.74.0~"}
+  "deb-libkf5idletime5" {>= "5.74.0~"}
+  "deb-libkf5networkmanagerqt6" {>= "5.74.0~"}
+  "deb-libkf5notifications5" {>= "5.74.0~"}
+  "deb-libkf5screen-bin" {>= "4-5.17.5~"}
+  "deb-libkf5screen7" {>= "4-5.6.2"}
+  "deb-libkf5service-bin"
+  "deb-libkf5service5" {>= "4.99.0"}
+  "deb-libkf5solid5" {>= "5.74.0~"}
+  "deb-libkf5xmlgui5" {>= "4.96.0"}
+  "deb-libkworkspace5-5" {>= "4-5.20.5~"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.15.0~"}
+  "deb-libqt5widgets5" {>= "5.15.0~"}
+  "deb-libqt5x11extras5" {>= "5.15.0~"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-libxcb1"
+  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb- libqt5gui5-gles" {>= "5.15.0~"})
+]
+extra-source "libpowerdevilcore2_4:5.20.5-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/powerdevil/libpowerdevilcore2_5.20.5-2_amd64.deb"
+}

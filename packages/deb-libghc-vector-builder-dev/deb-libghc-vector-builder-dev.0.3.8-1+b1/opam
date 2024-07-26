@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-vector-builder-dev_0.3.8-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-vector-builder-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-base-prelude-dev"
+  "deb-libghc-semigroups-dev"
+  "deb-libghc-vector-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-vector-builder-dev_0.3.8-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-vector-builder/libghc-vector-builder-dev_0.3.8-1+b1_amd64.deb"
+}

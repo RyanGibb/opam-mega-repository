@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lprint_1.1.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lprint"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libcups2" {>= "1.7.0"}
+  "deb-libpappl1" {>= "1.1.0"}
+]
+extra-source "lprint_1.1.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lprint/lprint_1.1.0-3_amd64.deb"
+}

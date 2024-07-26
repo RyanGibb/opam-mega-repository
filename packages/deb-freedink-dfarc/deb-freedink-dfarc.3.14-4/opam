@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i freedink-dfarc_3.14-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r freedink-dfarc"]
+]
+depends: [
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libwxbase3-0-0v5" {>= "3.0.5.1+dfsg"}
+  "deb-libwxgtk3-0-gtk3-0v5" {>= "3.0.5.1+dfsg"}
+]
+extra-source "freedink-dfarc_3.14-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/freedink-dfarc/freedink-dfarc_3.14-4_amd64.deb"
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tumiki-fighters_0.2.dfsg1-10_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tumiki-fighters"]
+]
+depends: [
+  "deb-libbulletml0v5"
+  "deb-libc6" {>= "2.17"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgl1"
+  "deb-libgphobos3" {>= "12"}
+  "deb-libsdl-mixer1-2" {>= "1.2.12"}
+  "deb-libsdl1-2-compat-shim"
+  "deb-tumiki-fighters-data" {= "0.2.dfsg1-10"}
+]
+extra-source "tumiki-fighters_0.2.dfsg1-10_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tumiki-fighters/tumiki-fighters_0.2.dfsg1-10_amd64.deb"
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i megan-ce_6.21.1+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r megan-ce"]
+]
+depends: [
+  "deb-default-jre"
+  "deb-libcolt-free-java"
+  "deb-libcommons-math3-java"
+  "deb-libgoogle-gson-java"
+  "deb-libjama-java"
+  "deb-libjbcrypt-java"
+  "deb-libjloda-java"
+  "deb-libopenjfx-java"
+  "deb-libsis-jhdf5-java"
+  "deb-libxerial-sqlite-jdbc-java"
+]
+extra-source "megan-ce_6.21.1+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/megan-ce/megan-ce_6.21.1+dfsg-2_all.deb"
+}

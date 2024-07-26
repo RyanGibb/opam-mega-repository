@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libreoffice-l10n-za_1:7.0.4-4+deb11u9_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libreoffice-l10n-za"]
+]
+depends: [
+  "deb-libreoffice-l10n-af"
+  "deb-libreoffice-l10n-en-za"
+  "deb-libreoffice-l10n-nr"
+  "deb-libreoffice-l10n-nso"
+  "deb-libreoffice-l10n-ss"
+  "deb-libreoffice-l10n-st"
+  "deb-libreoffice-l10n-tn"
+  "deb-libreoffice-l10n-ts"
+  "deb-libreoffice-l10n-ve"
+  "deb-libreoffice-l10n-xh"
+  "deb-libreoffice-l10n-zu"
+]
+extra-source "libreoffice-l10n-za_1:7.0.4-4+deb11u9_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libr/libreoffice/libreoffice-l10n-za_7.0.4-4+deb11u9_all.deb"
+}

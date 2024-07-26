@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add wasi-sdk-21-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del wasi-sdk"]
+]
+depends: [
+  "apk-wasi-compiler-rt" {= "17.0.6-r1"}
+  "apk-wasi-libc" {= "0.20231215-r0"}
+  "apk-wasi-libcxx" {= "17.0.6-r1"}
+]
+extra-source "wasi-sdk-21-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/wasi-sdk-21-r0.apk"
+}

@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fdroidserver_2.0.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fdroidserver"]
+]
+depends: [
+  "deb-androguard" {>= "3.1.0~rc2"}
+  "deb-python3-any"
+  "deb-python3-clint"
+  "deb-python3-defusedxml"
+  "deb-python3-git"
+  "deb-python3-libcloud"
+  "deb-python3-mwclient"
+  "deb-python3-paramiko"
+  "deb-python3-pil"
+  "deb-python3-pyasn1" {< "0.5.0"}
+  "deb-python3-pyasn1" {>= "0.4.1"}
+  "deb-python3-pyasn1-modules"
+  "deb-python3-qrcode"
+  "deb-python3-requests"
+  "deb-python3-ruamel-yaml"
+  "deb-python3-vagrant"
+  "deb-python3-yaml"
+  "deb-rsync"
+  "deb-yamllint"
+  ("deb-default-jdk-headless" | "deb- java-compiler")
+]
+extra-source "fdroidserver_2.0.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fdroidserver/fdroidserver_2.0.3-1_all.deb"
+}

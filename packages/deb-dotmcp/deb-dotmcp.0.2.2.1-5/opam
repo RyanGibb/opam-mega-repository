@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dotmcp_0.2.2.1-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dotmcp"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libg3d-plugins"
+  "deb-libs3d2" {>= "0.2.2.1"}
+  "deb-s3d-data" {= "0.2.2.1-5"}
+]
+extra-source "dotmcp_0.2.2.1-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/s3d/dotmcp_0.2.2.1-5_amd64.deb"
+}

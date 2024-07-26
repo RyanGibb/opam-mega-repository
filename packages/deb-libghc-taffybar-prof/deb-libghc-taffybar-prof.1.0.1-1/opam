@@ -1,0 +1,43 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-taffybar-prof_1.0.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-taffybar-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-alsa-mixer-prof"
+  "deb-libghc-cairo-prof"
+  "deb-libghc-configfile-prof"
+  "deb-libghc-dbus-prof"
+  "deb-libghc-dyre-prof"
+  "deb-libghc-either-prof"
+  "deb-libghc-enclosed-exceptions-prof"
+  "deb-libghc-glib-prof"
+  "deb-libghc-gtk-traymanager-prof"
+  "deb-libghc-gtk3-prof"
+  "deb-libghc-hstringtemplate-prof"
+  "deb-libghc-http-prof"
+  "deb-libghc-multimap-prof"
+  "deb-libghc-network-prof"
+  "deb-libghc-network-uri-prof"
+  "deb-libghc-old-locale-prof"
+  "deb-libghc-rate-limit-prof"
+  "deb-libghc-safe-prof"
+  "deb-libghc-split-prof"
+  "deb-libghc-taffybar-dev" {= "1.0.1-1"}
+  "deb-libghc-time-locale-compat-prof"
+  "deb-libghc-time-units-prof"
+  "deb-libghc-tuple-prof"
+  "deb-libghc-utf8-string-prof"
+  "deb-libghc-x11-prof"
+  "deb-libghc-xdg-basedir-prof"
+  "deb-libghc-xml-helpers-prof"
+  "deb-libghc-xml-prof"
+  "deb-libghc-xmonad-contrib-prof"
+  "deb-libghc-xmonad-prof"
+]
+extra-source "libghc-taffybar-prof_1.0.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/taffybar/libghc-taffybar-prof_1.0.1-1_amd64.deb"
+}

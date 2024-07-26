@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libtest-routine-perl_0.031-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libtest-routine-perl"]
+]
+depends: [
+  "deb-libclass-load-perl"
+  "deb-libmoose-perl"
+  "deb-libnamespace-autoclean-perl"
+  "deb-libnamespace-clean-perl"
+  "deb-libparams-util-perl"
+  "deb-libsub-exporter-perl"
+  "deb-libtest-abortable-perl"
+  "deb-libtest-simple-perl"
+  "deb-libtry-tiny-perl"
+  "deb-perl-any"
+]
+extra-source "libtest-routine-perl_0.031-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libt/libtest-routine-perl/libtest-routine-perl_0.031-1_all.deb"
+}

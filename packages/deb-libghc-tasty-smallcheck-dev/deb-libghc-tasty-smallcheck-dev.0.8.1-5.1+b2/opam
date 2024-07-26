@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-tasty-smallcheck-dev_0.8.1-5.1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-tasty-smallcheck-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-async-dev"
+  "deb-libghc-smallcheck-dev"
+  "deb-libghc-tagged-dev"
+  "deb-libghc-tasty-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-tasty-smallcheck-dev_0.8.1-5.1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-tasty-smallcheck/libghc-tasty-smallcheck-dev_0.8.1-5.1+b2_amd64.deb"
+}

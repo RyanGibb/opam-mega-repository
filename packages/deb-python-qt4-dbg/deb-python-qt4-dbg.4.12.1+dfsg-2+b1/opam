@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-qt4-dbg_4.12.1+dfsg-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-qt4-dbg"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libqt4-dbus" {>= "4-4.8.0-1~"}
+  "deb-libqt4-declarative" {>= "4-4.8.0-1~"}
+  "deb-libqt4-designer" {>= "4-4.8.0-1~"}
+  "deb-libqt4-help" {>= "4-4.8.0-1~"}
+  "deb-libqt4-network" {>= "4-4.8.0-1~"}
+  "deb-libqt4-script" {>= "4-4.8.0-1~"}
+  "deb-libqt4-scripttools" {>= "4-4.8.0-1~"}
+  "deb-libqt4-svg" {>= "4-4.8.0-1~"}
+  "deb-libqt4-test" {>= "4-4.8.0-1~"}
+  "deb-libqt4-xml" {>= "4-4.8.0-1~"}
+  "deb-libqt4-xmlpatterns" {>= "4-4.8.0-1~"}
+  "deb-libqtassistantclient4" {>= "4.6.3"}
+  "deb-libqtcore4" {>= "4-4.8.0-1~"}
+  "deb-libqtgui4" {>= "4-4.8.0-1~"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-python-dbg"
+  "deb-python-qt4" {= "4.12.1+dfsg-2+b1"}
+  "deb-python-sip-dbg"
+]
+extra-source "python-qt4-dbg_4.12.1+dfsg-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-qt4/python-qt4-dbg_4.12.1+dfsg-2+b1_amd64.deb"
+}

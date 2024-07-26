@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i firewall-config_0.6.3-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r firewall-config"]
+]
+depends: [
+  "deb-firewalld" {= "0.6.3-5"}
+  "deb-gir1-2-glib-2-0"
+  "deb-gir1-2-gtk-3-0"
+  "deb-gir1-2-nm-1-0"
+  "deb-gir1-2-pango-1-0"
+  "deb-python3-any"
+  "deb-python3-dbus"
+  "deb-python3-gi"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "firewall-config_0.6.3-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/firewalld/firewall-config_0.6.3-5_all.deb"
+}

@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-gabbi_2.0.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-gabbi"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-certifi"
+  "deb-python3-colorama"
+  "deb-python3-httplib2"
+  "deb-python3-jsonpath-rw"
+  "deb-python3-jsonpath-rw-ext"
+  "deb-python3-pbr"
+  "deb-python3-pytest"
+  "deb-python3-six" {>= "1.7.0"}
+  "deb-python3-testtools"
+  "deb-python3-urllib3"
+  "deb-python3-wsgi-intercept" {>= "1.0.0"}
+  "deb-python3-yaml"
+]
+extra-source "python3-gabbi_2.0.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-gabbi/python3-gabbi_2.0.1-1_all.deb"
+}

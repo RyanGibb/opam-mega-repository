@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i rosidl-generator-c-cpp_3.3.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r rosidl-generator-c-cpp"]
+]
+depends: [
+  "deb-librcutils-dev"
+  "deb-librosidl-runtime-c-cpp-dev"
+  "deb-librosidl-typesupport-interface-dev"
+  "deb-librosidl-typesupport-introspection-c-cpp-dev"
+  "deb-python3-any"
+  "deb-python3-rosidl"
+  "deb-rosidl-cmake"
+]
+extra-source "rosidl-generator-c-cpp_3.3.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ros2-rosidl/rosidl-generator-c-cpp_3.3.1-1_all.deb"
+}

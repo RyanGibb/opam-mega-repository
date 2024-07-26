@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mrtrix3_3.0~rc3+git135-g2b8e7d0c2-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mrtrix3"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libfftw3-double3" {>= "3.3.5"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libgl1"
+  "deb-libgomp1" {>= "4.9"}
+  "deb-libqt5core5a" {>= "5.12.2"}
+  "deb-libqt5widgets5" {>= "5.11.0~rc1"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libtiff5" {>= "4.0.3"}
+  "deb-python3"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libqt5gui5" {>= "5.4.0"} | "deb- libqt5gui5-gles" {>= "5.4.0"})
+]
+conflicts: [
+  "deb-mrtrix"
+]
+extra-source "mrtrix3_3.0~rc3+git135-g2b8e7d0c2-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mrtrix3/mrtrix3_3.0~rc3+git135-g2b8e7d0c2-5_amd64.deb"
+}

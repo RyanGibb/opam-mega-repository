@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fortunes-fr_0.65+nmu2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fortunes-fr"]
+]
+depends: [
+  "deb-coreutils" {>= "5.0-4"}
+  "deb-fortune-mod" {>= "9708-31"}
+  "deb-grep" {>= "2.4.2-3"}
+  "deb-sed" {>= "3.02-8"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "fortunes-fr_0.65+nmu2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fortunes-fr/fortunes-fr_0.65+nmu2_all.deb"
+}

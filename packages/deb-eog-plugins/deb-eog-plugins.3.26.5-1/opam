@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i eog-plugins_3.26.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r eog-plugins"]
+]
+depends: [
+  "deb-eog-plugin-disable-dark-theme"
+  "deb-eog-plugin-exif-display"
+  "deb-eog-plugin-export-to-folder"
+  "deb-eog-plugin-fit-to-width"
+  "deb-eog-plugin-fullscreen-background"
+  "deb-eog-plugin-hide-titlebar"
+  "deb-eog-plugin-map"
+  "deb-eog-plugin-maximize-windows"
+  "deb-eog-plugin-picasa"
+  "deb-eog-plugin-python-console"
+  "deb-eog-plugin-send-by-mail"
+  "deb-eog-plugin-slideshow-shuffle"
+]
+extra-source "eog-plugins_3.26.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/eog-plugins/eog-plugins_3.26.5-1_amd64.deb"
+}

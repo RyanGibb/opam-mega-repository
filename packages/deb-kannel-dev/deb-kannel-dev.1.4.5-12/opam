@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kannel-dev_1.4.5-12_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kannel-dev"]
+]
+depends: [
+  "deb-default-libmysqlclient-dev"
+  "deb-freetds-dev"
+  "deb-libhiredis-dev"
+  "deb-libpam0g-dev"
+  "deb-libpcre3-dev"
+  "deb-libpq-dev"
+  "deb-libsqlite3-dev"
+  "deb-libssl-dev"
+  "deb-libxml2-dev"
+]
+extra-source "kannel-dev_1.4.5-12_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kannel/kannel-dev_1.4.5-12_amd64.deb"
+}

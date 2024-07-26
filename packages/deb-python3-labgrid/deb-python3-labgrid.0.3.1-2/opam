@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-labgrid_0.3.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-labgrid"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-attr"
+  "deb-python3-autobahn"
+  "deb-python3-colors"
+  "deb-python3-docker"
+  "deb-python3-graphviz"
+  "deb-python3-jinja2"
+  "deb-python3-onewire"
+  "deb-python3-packaging"
+  "deb-python3-pexpect"
+  "deb-python3-pkg-resources"
+  "deb-python3-pymodbus"
+  "deb-python3-pysnmp4"
+  "deb-python3-pysnmp4-mibs"
+  "deb-python3-pytest"
+  "deb-python3-pyudev"
+  "deb-python3-requests"
+  "deb-python3-serial"
+  "deb-python3-xmodem"
+  "deb-python3-yaml"
+]
+extra-source "python3-labgrid_0.3.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/labgrid/python3-labgrid_0.3.1-2_all.deb"
+}

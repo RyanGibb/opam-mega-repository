@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kuvert_2.2.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kuvert"]
+]
+depends: [
+  "deb-libauthen-sasl-perl"
+  "deb-libc6" {>= "2.4"}
+  "deb-libencode-locale-perl"
+  "deb-libfile-slurp-perl"
+  "deb-libio-socket-ssl-perl"
+  "deb-libmailtools-perl"
+  "deb-libmime-tools-perl"
+  "deb-libnet-server-mail-perl"
+  "deb-libnet-smtps-perl"
+  "deb-libproc-processtable-perl"
+  "deb-perl" {>= "5.24"}
+  ("deb-gnupg" | "deb- gnupg1")
+  ("deb-sendmail" | "deb- mail-transport-agent")
+]
+extra-source "kuvert_2.2.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kuvert/kuvert_2.2.2_amd64.deb"
+}

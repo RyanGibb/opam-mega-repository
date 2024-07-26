@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpappsomspp-widget0-qt6_0.9.6-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpappsomspp-widget0-qt6"]
+]
+depends: [
+  "deb-libc6" {>= "2.32"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libpappsomspp0-qt6" {= "0.9.6-1"}
+  "deb-libqcustomplot2-1-qt6" {>= "2.1.0+dfsg1"}
+  "deb-libqt6core6" {>= "6.4.0"}
+  "deb-libqt6gui6" {>= "6.4.0"}
+  "deb-libqt6svg6" {>= "6.2.0"}
+  "deb-libqt6widgets6" {>= "6.1.2"}
+  "deb-libstdc++6" {>= "11"}
+]
+conflicts: [
+  "deb-libpappsomspp-widget0"
+]
+extra-source "libpappsomspp-widget0-qt6_0.9.6-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libp/libpappsomspp/libpappsomspp-widget0-qt6_0.9.6-1_amd64.deb"
+}

@@ -1,0 +1,41 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mailman3_3.3.8-2~deb12u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mailman3"]
+]
+depends: [
+  "deb-logrotate"
+  "deb-python3-aiosmtpd"
+  "deb-python3-alembic"
+  "deb-python3-any"
+  "deb-python3-authheaders"
+  "deb-python3-authres"
+  "deb-python3-click"
+  "deb-python3-dateutil"
+  "deb-python3-dnspython"
+  "deb-python3-falcon" {> "1.0.0"}
+  "deb-python3-flufl-bounce"
+  "deb-python3-flufl-i18n"
+  "deb-python3-flufl-lock"
+  "deb-python3-gunicorn"
+  "deb-python3-importlib-resources"
+  "deb-python3-lazr-config"
+  "deb-python3-passlib"
+  "deb-python3-public"
+  "deb-python3-requests"
+  "deb-python3-sqlalchemy" {>= "1.4.0"}
+  "deb-python3-zope-component"
+  "deb-python3-zope-configuration"
+  "deb-python3-zope-event"
+  "deb-python3-zope-interface" {>= "5.0"}
+  "deb-ucf"
+  ("deb-cron" | "deb- cron-daemon")
+  ("deb-dbconfig-sqlite3" | "deb- dbconfig-pgsql" | "deb- dbconfig-mysql" | "deb- dbconfig-no-thanks")
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-python3-psycopg2" | "deb- python3-pymysql")
+]
+extra-source "mailman3_3.3.8-2~deb12u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mailman3/mailman3_3.3.8-2~deb12u2_all.deb"
+}

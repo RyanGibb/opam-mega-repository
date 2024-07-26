@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add coreutils-9.4-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del coreutils"]
+]
+depends: [
+  "apk-coreutils-env" {= "9.4-r2"}
+  "apk-coreutils-fmt" {= "9.4-r2"}
+  "apk-coreutils-sha512sum" {= "9.4-r2"}
+  "apk-libacl" {= "2.3.1-r4"}
+  "apk-libattr" {= "2.5.1-r5"}
+  "apk-libcrypto3" {= "3.1.6-r2"}
+  "apk-musl" {= "1.2.4_git20230717-r4"}
+  "apk-utmps-libs" {= "0.1.2.2-r0"}
+  ("apk-busybox-binsh" {= "1.36.1-r19"} | "apk-dash-binsh" {= "0.5.12-r2"} | "apk-yash-binsh" {= "2.55-r0"})
+]
+extra-source "coreutils-9.4-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/coreutils-9.4-r2.apk"
+}

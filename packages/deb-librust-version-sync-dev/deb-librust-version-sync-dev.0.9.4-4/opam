@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-version-sync-dev_0.9.4-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-version-sync-dev"]
+]
+depends: [
+  "deb-librust-proc-macro2-1+span-locations-dev"
+  "deb-librust-pulldown-cmark-0-9-dev"
+  "deb-librust-regex-1+std-dev"
+  "deb-librust-regex-1+unicode-dev"
+  "deb-librust-semver-1+default-dev"
+  "deb-librust-syn-1+full-dev"
+  "deb-librust-syn-1+parsing-dev"
+  "deb-librust-syn-1+printing-dev"
+  "deb-librust-toml-0-5+default-dev"
+  "deb-librust-url-2+default-dev"
+]
+extra-source "librust-version-sync-dev_0.9.4-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-version-sync/librust-version-sync-dev_0.9.4-4_all.deb"
+}

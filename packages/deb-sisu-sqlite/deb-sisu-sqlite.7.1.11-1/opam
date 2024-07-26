@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sisu-sqlite_7.1.11-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sisu-sqlite"]
+]
+depends: [
+  "deb-ruby-sqlite3"
+  "deb-sisu" {= "7.1.11-1"}
+  "deb-sqlite3"
+  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby-fcgi" | "deb- libfcgi-ruby")
+]
+extra-source "sisu-sqlite_7.1.11-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sisu/sisu-sqlite_7.1.11-1_all.deb"
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pyxplot_0.9.2-12_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pyxplot"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libcfitsio9" {>= "3.480~"}
+  "deb-libfftw3-double3" {>= "3.3.5"}
+  "deb-libgsl25" {>= "2.6"}
+  "deb-libkpathsea6" {>= "2020.20200327.54578"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libreadline8" {>= "6.0"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-texlive-latex-base"
+  "deb-texlive-latex-extra"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "pyxplot_0.9.2-12_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pyxplot/pyxplot_0.9.2-12_amd64.deb"
+}

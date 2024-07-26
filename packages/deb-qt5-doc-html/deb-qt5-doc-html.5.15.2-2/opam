@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qt5-doc-html_5.15.2-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qt5-doc-html"]
+]
+depends: [
+  "deb-qt3d5-doc-html"
+  "deb-qtbase5-doc-html" {>= "5.15.2+dfsg~"}
+  "deb-qtcharts5-doc-html"
+  "deb-qtconnectivity5-doc-html"
+  "deb-qtdatavisualization5-doc-html"
+  "deb-qtdeclarative5-doc-html"
+  "deb-qtgraphicaleffects5-doc-html"
+  "deb-qtlocation5-doc-html"
+  "deb-qtmultimedia5-doc-html"
+  "deb-qtnetworkauth5-doc-html"
+  "deb-qtquickcontrols2-5-doc-html"
+  "deb-qtquickcontrols5-doc-html"
+  "deb-qtscript5-doc-html"
+  "deb-qtscxml5-doc-html"
+  "deb-qtsensors5-doc-html"
+  "deb-qtserialbus5-doc-html"
+  "deb-qtserialport5-doc-html"
+  "deb-qtsvg5-doc-html"
+  "deb-qttools5-doc-html"
+  "deb-qtvirtualkeyboard5-doc-html"
+  "deb-qtwayland5-doc-html"
+  "deb-qtwebchannel5-doc-html"
+  "deb-qtwebengine5-doc-html"
+  "deb-qtwebsockets5-doc-html"
+  "deb-qtwebview5-doc-html"
+  "deb-qtx11extras5-doc-html"
+  "deb-qtxmlpatterns5-doc-html"
+]
+extra-source "qt5-doc-html_5.15.2-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qtdoc-opensource-src/qt5-doc-html_5.15.2-2_all.deb"
+}

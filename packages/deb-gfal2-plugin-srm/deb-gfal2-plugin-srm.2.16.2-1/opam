@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gfal2-plugin-srm_2.16.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gfal2-plugin-srm"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgfal-srm-ifce1" {>= "1.23.1"}
+  "deb-libgfal-transfer2" {= "2.16.2-1"}
+  "deb-libgfal2-2" {= "2.16.2-1"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libglobus-common0" {>= "17"}
+  "deb-libglobus-gss-assist3" {>= "11"}
+  "deb-libglobus-gssapi-gsi4" {>= "13"}
+  "deb-libjson-c3" {>= "0.10"}
+  "deb-libldap-2-4-2" {>= "2.4.7"}
+  "deb-libstdc++6" {>= "4.1.1"}
+]
+extra-source "gfal2-plugin-srm_2.16.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gfal2/gfal2-plugin-srm_2.16.2-1_amd64.deb"
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libhwloc5_1.11.12-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libhwloc5"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libltdl7" {>= "2.4.6"}
+  "deb-libnuma1" {>= "2.0.11"}
+]
+conflicts: [
+  "deb-libhwloc0"
+  "deb-libhwloc1"
+  "deb-libhwloc2"
+  "deb-libhwloc3"
+  "deb-libhwloc4"
+]
+extra-source "libhwloc5_1.11.12-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/hwloc/libhwloc5_1.11.12-3_amd64.deb"
+}

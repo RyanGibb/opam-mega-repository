@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libclanapp-1.0v5_1.0~svn3827-8_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libclanapp-1.0v5"]
+]
+depends: [
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libc6" {>= "2.15"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgl1"
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libmikmod3" {>= "3.3.3"}
+  "deb-libogg0" {>= "1.0rc3"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libvorbis0a" {>= "1.1.2"}
+  "deb-libx11-6"
+  "deb-libxi6"
+  "deb-libxxf86vm1"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+conflicts: [
+  "deb-libclanapp-1-0"
+]
+extra-source "libclanapp-1.0v5_1.0~svn3827-8_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/clanlib/libclanapp-1.0v5_1.0~svn3827-8_amd64.deb"
+}

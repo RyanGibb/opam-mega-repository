@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgit-annex-perl_0.007-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgit-annex-perl"]
+]
+depends: [
+  "deb-libdata-compare-perl"
+  "deb-libdigest-md5-file-perl"
+  "deb-libfile-chdir-perl"
+  "deb-libfile-chmod-perl"
+  "deb-libgit-repository-perl"
+  "deb-libgit-wrapper-perl"
+  "deb-libipc-system-simple-perl"
+  "deb-libscalar-list-utils-perl"
+  "deb-libterm-readkey-perl"
+  "deb-libtry-tiny-perl"
+  "deb-perl" {>= "5.28.0"}
+  "deb-perl-any"
+]
+extra-source "libgit-annex-perl_0.007-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libg/libgit-annex-perl/libgit-annex-perl_0.007-1_all.deb"
+}

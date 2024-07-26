@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgradle-core-java_4.4.1-18_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgradle-core-java"]
+]
+depends: [
+  "deb-ant"
+  "deb-groovy" {>= "2.4.7"}
+  "deb-ivy"
+  "deb-libasm-java" {>= "7.0"}
+  "deb-libatinject-jsr330-api-java"
+  "deb-libcommons-collections3-java"
+  "deb-libcommons-compress-java"
+  "deb-libcommons-io-java"
+  "deb-libcommons-lang-java" {>= "2.6"}
+  "deb-libguava-java" {>= "23.0"}
+  "deb-libhttpclient-java"
+  "deb-libhttpcore-java"
+  "deb-libjansi1-java"
+  "deb-libjarjar-java"
+  "deb-libjcip-annotations-java"
+  "deb-libjna-java"
+  "deb-libjsch-java"
+  "deb-libkryo-java"
+  "deb-liblogback-java"
+  "deb-libnative-platform-java" {>= "0.11"}
+  "deb-libnekohtml-java"
+  "deb-libreflectasm-java"
+  "deb-libslf4j-java"
+  "deb-libxbean-reflect-java"
+]
+extra-source "libgradle-core-java_4.4.1-18_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gradle/libgradle-core-java_4.4.1-18_all.deb"
+}

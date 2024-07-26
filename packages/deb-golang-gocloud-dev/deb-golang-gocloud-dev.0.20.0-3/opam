@@ -1,0 +1,45 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-gocloud-dev_0.20.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-gocloud-dev"]
+]
+depends: [
+  "deb-golang-github-aws-aws-sdk-go-dev"
+  "deb-golang-github-azure-azure-pipeline-go-dev"
+  "deb-golang-github-azure-azure-sdk-for-go-dev"
+  "deb-golang-github-azure-azure-storage-blob-go-dev"
+  "deb-golang-github-azure-go-autorest-dev"
+  "deb-golang-github-dgrijalva-jwt-go-dev"
+  "deb-golang-github-fsnotify-fsnotify-dev"
+  "deb-golang-github-go-sql-driver-mysql-dev"
+  "deb-golang-github-google-go-cmp-dev"
+  "deb-golang-github-google-go-github-dev"
+  "deb-golang-github-google-subcommands-dev"
+  "deb-golang-github-google-uuid-dev"
+  "deb-golang-github-google-wire-dev"
+  "deb-golang-github-googleapis-gax-go-dev"
+  "deb-golang-github-googlecloudplatform-cloudsql-proxy-dev"
+  "deb-golang-github-gorilla-mux-dev"
+  "deb-golang-github-shopify-sarama-dev"
+  "deb-golang-github-streadway-amqp-dev"
+  "deb-golang-go-opencensus-dev"
+  "deb-golang-golang-x-crypto-dev"
+  "deb-golang-golang-x-net-dev"
+  "deb-golang-golang-x-oauth2-google-dev"
+  "deb-golang-golang-x-sync-dev"
+  "deb-golang-golang-x-sys-dev"
+  "deb-golang-golang-x-tools-dev"
+  "deb-golang-golang-x-xerrors-dev"
+  "deb-golang-google-api-dev"
+  "deb-golang-google-appengine-dev"
+  "deb-golang-google-cloud-dev"
+  "deb-golang-google-genproto-dev"
+  "deb-golang-google-grpc-dev"
+  "deb-golang-goprotobuf-dev"
+  "deb-golang-pq-dev"
+]
+extra-source "golang-gocloud-dev_0.20.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-gocloud/golang-gocloud-dev_0.20.0-3_all.deb"
+}

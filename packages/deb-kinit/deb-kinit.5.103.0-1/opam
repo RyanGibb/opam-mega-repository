@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kinit_5.103.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kinit"]
+]
+depends: [
+  "deb-kio"
+  "deb-libc6" {>= "2.34"}
+  "deb-libcap2" {>= "1-2.10"}
+  "deb-libcap2-bin"
+  "deb-libkf5configcore5" {>= "5.103.0~"}
+  "deb-libkf5coreaddons5" {>= "4.99.0"}
+  "deb-libkf5crash5" {>= "5.103.0~"}
+  "deb-libkf5dbusaddons5" {>= "5.103.0~"}
+  "deb-libkf5i18n5" {>= "5.103.0~"}
+  "deb-libkf5kiocore5" {>= "5.103.0~"}
+  "deb-libkf5kiogui5" {>= "5.103.0~"}
+  "deb-libkf5service-bin"
+  "deb-libkf5service5" {>= "5.103.0~"}
+  "deb-libkf5windowsystem5" {>= "5.103.0~"}
+  "deb-libqt5core5a" {>= "5.15.2~"}
+  "deb-libqt5dbus5" {>= "5.15.2~"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libx11-6"
+  "deb-libxcb1"
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+]
+extra-source "kinit_5.103.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kinit/kinit_5.103.0-1_amd64.deb"
+}

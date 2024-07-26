@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openmw_0.47.0-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openmw"]
+]
+depends: [
+  "deb-libavcodec-extra59"
+  "deb-libavformat-extra59"
+  "deb-libavutil57" {>= "7-5.0"}
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0"}
+  "deb-libboost-iostreams1-74-0" {>= "1.74.0"}
+  "deb-libboost-program-options1-74-0" {>= "1.74.0"}
+  "deb-libbullet3-24" {>= "3.24+dfsg"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgl1"
+  "deb-liblz4-1" {>= "0.0~r127"}
+  "deb-libmyguiengine3debian1v5" {>= "3.4.1"}
+  "deb-libopenal1" {>= "1.14"}
+  "deb-libopenscenegraph161" {>= "3.6.5+dfsg1"}
+  "deb-libopenthreads21" {>= "3.6.5+dfsg1"}
+  "deb-librecast1" {>= "1.5.1+git20210215.e75adf8"}
+  "deb-libsdl2-2-0-0" {>= "2.0.12"}
+  "deb-libstdc++6" {>= "12"}
+  "deb-libswresample4" {>= "7-5.0"}
+  "deb-libswscale6" {>= "7-5.0"}
+  "deb-libtinyxml2-6-2v5" {>= "2.6.2"}
+  "deb-openmw-data" {= "0.47.0-3"}
+]
+extra-source "openmw_0.47.0-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openmw/openmw_0.47.0-3+b1_amd64.deb"
+}

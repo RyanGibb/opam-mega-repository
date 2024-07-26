@@ -1,0 +1,42 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-lambdahack-dev_0.11.0.0-2+b4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-lambdahack-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.14"}
+  "deb-libghc-ansi-terminal-dev"
+  "deb-libghc-assert-failure-dev"
+  "deb-libghc-async-dev"
+  "deb-libghc-base-compat-dev"
+  "deb-libghc-enummapset-dev"
+  "deb-libghc-file-embed-dev"
+  "deb-libghc-hashable-dev"
+  "deb-libghc-hsini-dev"
+  "deb-libghc-keys-dev"
+  "deb-libghc-miniutter-dev"
+  "deb-libghc-open-browser-dev"
+  "deb-libghc-optparse-applicative-dev"
+  "deb-libghc-pretty-show-dev"
+  "deb-libghc-primitive-dev"
+  "deb-libghc-quickcheck2-dev"
+  "deb-libghc-sdl2-dev"
+  "deb-libghc-sdl2-ttf-dev"
+  "deb-libghc-splitmix-dev"
+  "deb-libghc-th-lift-instances-dev"
+  "deb-libghc-unordered-containers-dev"
+  "deb-libghc-vector-binary-instances-dev"
+  "deb-libghc-vector-dev"
+  "deb-libghc-witch-dev"
+  "deb-libghc-zlib-dev"
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-libsdl2-2-0-0" {>= "2.0.12"}
+  "deb-libsdl2-ttf-2-0-0" {>= "2.0.15"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libghc-lambdahack-dev_0.11.0.0-2+b4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-lambdahack/libghc-lambdahack-dev_0.11.0.0-2+b4_amd64.deb"
+}

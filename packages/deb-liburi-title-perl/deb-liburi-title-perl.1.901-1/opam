@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i liburi-title-perl_1.901-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r liburi-title-perl"]
+]
+depends: [
+  "deb-libfile-type-perl"
+  "deb-libhtml-parser-perl"
+  "deb-libimage-size-perl"
+  "deb-libmp3-info-perl"
+  "deb-libwww-perl"
+  "deb-perl"
+  ("deb-libmodule-pluggable-perl" | "deb- perl" {< "5.17.0"})
+]
+extra-source "liburi-title-perl_1.901-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libu/liburi-title-perl/liburi-title-perl_1.901-1_all.deb"
+}

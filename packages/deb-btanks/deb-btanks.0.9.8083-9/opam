@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i btanks_0.9.8083-9_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r btanks"]
+]
+depends: [
+  "deb-btanks-data" {= "0.9.8083-9"}
+  "deb-libc6" {>= "2.27"}
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libgcc1" {>= "1-4.0"}
+  "deb-liblua5-1-0"
+  "deb-libsdl-image1-2" {>= "1.2.10"}
+  "deb-libsdl1-2-compat-shim"
+  "deb-libsmpeg0"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libvorbisfile3" {>= "1.1.2"}
+  "deb-libx11-6"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "btanks_0.9.8083-9_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/btanks/btanks_0.9.8083-9_amd64.deb"
+}

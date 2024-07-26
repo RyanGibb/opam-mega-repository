@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i isenkram-cli_0.51_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r isenkram-cli"]
+]
+depends: [
+  "deb-appstream"
+  "deb-curl"
+  "deb-gir1-2-appstream-1-0"
+  "deb-lsb-release"
+  "deb-python3-any"
+  "deb-python3-apt"
+  "deb-python3-gi"
+  "deb-usb-ids"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "isenkram-cli_0.51_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/isenkram/isenkram-cli_0.51_all.deb"
+}

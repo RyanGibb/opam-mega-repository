@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pki-tools_10.10.2-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pki-tools"]
+]
+depends: [
+  "deb-ldap-utils"
+  "deb-libc6" {>= "2.14"}
+  "deb-libjackson2-annotations-java"
+  "deb-libldap-2-4-2" {>= "2.4.7"}
+  "deb-libnspr4" {>= "2-4.10.9"}
+  "deb-libnss3" {>= "2-3.44.0"}
+  "deb-libnss3-tools"
+  "deb-openssl"
+  "deb-p11-kit-modules"
+  "deb-pki-base-java" {= "10.10.2-3"}
+  "deb-python3-pki-base" {>= "10.10.2-3"}
+]
+conflicts: [
+  "deb-strongswan-pki"
+  "deb-strongswan-starter"
+]
+extra-source "pki-tools_10.10.2-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dogtag-pki/pki-tools_10.10.2-3_amd64.deb"
+}

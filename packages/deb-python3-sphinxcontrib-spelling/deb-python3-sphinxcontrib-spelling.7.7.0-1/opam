@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-sphinxcontrib.spelling_7.7.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-sphinxcontrib.spelling"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-docutils"
+  "deb-python3-enchant"
+  "deb-python3-importlib-metadata"
+  "deb-python3-sphinx"
+]
+extra-source "python3-sphinxcontrib.spelling_7.7.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sphinxcontrib-spelling/python3-sphinxcontrib.spelling_7.7.0-1_all.deb"
+}

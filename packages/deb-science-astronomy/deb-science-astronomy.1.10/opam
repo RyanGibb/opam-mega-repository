@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i science-astronomy_1.10_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r science-astronomy"]
+]
+depends: [
+  "deb-astro-catalogs"
+  "deb-astro-datareduction"
+  "deb-astro-education"
+  "deb-astro-frameworks"
+  "deb-astro-gdl"
+  "deb-astro-publication"
+  "deb-astro-python3"
+  "deb-astro-radioastronomy"
+  "deb-astro-simulation"
+  "deb-astro-telescopecontrol"
+  "deb-astro-tools"
+  "deb-astro-viewers"
+  "deb-astro-virtual-observatory"
+]
+extra-source "science-astronomy_1.10_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/debian-science/science-astronomy_1.10_all.deb"
+}

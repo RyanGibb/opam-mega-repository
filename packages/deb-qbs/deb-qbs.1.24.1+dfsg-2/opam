@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qbs_1.24.1+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qbs"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqbscore1-24" {>= "1.24.0"}
+  "deb-libqt6core6" {>= "6.4.0"}
+  "deb-libqt6gui6" {>= "6.1.2"}
+  "deb-libqt6network6" {>= "6.1.2"}
+  "deb-libqt6widgets6" {>= "6.1.2"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-qbs-common" {= "1.24.1+dfsg-2"}
+]
+extra-source "qbs_1.24.1+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qbs/qbs_1.24.1+dfsg-2_amd64.deb"
+}

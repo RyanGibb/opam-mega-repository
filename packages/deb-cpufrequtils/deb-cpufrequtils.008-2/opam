@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cpufrequtils_008-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cpufrequtils"]
+]
+depends: [
+  "deb-libc6" {>= "2.7"}
+  "deb-libcpufreq0" {>= "006"}
+  "deb-sysvinit-utils"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "cpufrequtils_008-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cpufrequtils/cpufrequtils_008-2_amd64.deb"
+}

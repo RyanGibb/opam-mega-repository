@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libxatracker2_22.3.6-1+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libxatracker2"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libdrm-intel1" {>= "2.4.38"}
+  "deb-libdrm-nouveau2" {>= "2.4.66"}
+  "deb-libdrm2" {>= "2.4.75"}
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libgcc-s1" {>= "3.4"}
+  "deb-libllvm15"
+  "deb-libstdc++6" {>= "11"}
+  "deb-libzstd1" {>= "1.5.2"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libxatracker2_22.3.6-1+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mesa/libxatracker2_22.3.6-1+deb12u1_amd64.deb"
+}

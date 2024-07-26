@@ -1,0 +1,44 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cinnamon-settings-daemon_5.6.2-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cinnamon-settings-daemon"]
+]
+depends: [
+  "deb-cinnamon-desktop-data" {>= "5.6.1~"}
+  "deb-gir1-2-cvc-1-0"
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libcanberra-gtk3-0" {>= "0.25"}
+  "deb-libcanberra0" {>= "0.2"}
+  "deb-libcinnamon-desktop4" {>= "5.6.1~"}
+  "deb-libcolord2" {>= "1.4.3"}
+  "deb-libcups2" {>= "1.6.0"}
+  "deb-libcvc0" {>= "5.6.1~"}
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.43.92"}
+  "deb-libgnomekbd8" {>= "3.6.0"}
+  "deb-libgtk-3-0" {>= "3.19.12"}
+  "deb-libgudev-1-0-0" {>= "146"}
+  "deb-liblcms2-2" {>= "2.2+git20110628"}
+  "deb-libnotify4" {>= "0.7.3"}
+  "deb-libnspr4" {>= "2-4.9-2~"}
+  "deb-libnss3" {>= "2-3.13.4-2~"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpolkit-gobject-1-0" {>= "0.99"}
+  "deb-libsystemd0"
+  "deb-libupower-glib3" {>= "0.99.0"}
+  "deb-libwacom9" {>= "2.0.0"}
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxi6" {>= "2-1.2.99.4"}
+  "deb-libxklavier16" {>= "5.0"}
+  "deb-python3-tinycss"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "cinnamon-settings-daemon_5.6.2-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cinnamon-settings-daemon/cinnamon-settings-daemon_5.6.2-2_amd64.deb"
+}

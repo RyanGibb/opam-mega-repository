@@ -1,0 +1,56 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libyade_2023.02a-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libyade"]
+]
+depends: [
+  "deb-libamd2" {>= "1-4.5.2"}
+  "deb-libboost-atomic1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-chrono1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-date-time1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-iostreams1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-log1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-python1-74-0"
+  "deb-libboost-python1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-regex1-74-0"
+  "deb-libboost-serialization1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-system1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-thread1-74-0" {>= "1.74.0+ds1"}
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.35"}
+  "deb-libcamd2" {>= "1-4.5.2"}
+  "deb-libccolamd2" {>= "1-4.5.2"}
+  "deb-libcholmod3" {>= "1-4.5.2"}
+  "deb-libcolamd2" {>= "1-4.5.2"}
+  "deb-libgcc-s1" {>= "4.3"}
+  "deb-libgl1"
+  "deb-libgl2ps1-4" {>= "1.4.2+dfsg1"}
+  "deb-libglut3-12" {>= "3.4.0"}
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-libgmpxx4ldbl" {>= "2-6.2.1+dfsg1"}
+  "deb-libgomp1" {>= "6"}
+  "deb-libgts-0-7-5" {>= "0.7.6"}
+  "deb-libmetis5" {>= "5.1.0.dfsg"}
+  "deb-libopenblas0"
+  "deb-libopenmpi3" {>= "4.1.4"}
+  "deb-libpython3-11" {>= "3.11.0"}
+  "deb-libqglviewer2-qt5" {>= "2.8.0+dfsg1"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5opengl5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.4.0"}
+  "deb-libqt5xml5" {>= "5.0.2"}
+  "deb-libquadmath0" {>= "4.6"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libsuitesparseconfig5" {>= "1-5.0.0"}
+  "deb-libtbb12" {>= "2021.4.0"}
+  "deb-libvtk9-1" {>= "9.1.0+really9.1.0+dfsg2"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+]
+extra-source "libyade_2023.02a-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/y/yade/libyade_2023.02a-1_amd64.deb"
+}

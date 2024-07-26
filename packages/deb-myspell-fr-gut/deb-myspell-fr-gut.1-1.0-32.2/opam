@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i myspell-fr-gut_1:1.0-32.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r myspell-fr-gut"]
+]
+depends: [
+  ("deb-dictionaries-common" {>= "0.10"} | "deb- openoffice-org-updatedicts")
+]
+conflicts: [
+  "deb-myspell-fr"
+  "deb-myspell-fr-fr"
+  "deb-openoffice-org" {<= "1.0.3-2"}
+  "deb-openoffice-org-spellcheck-fr-fr"
+]
+extra-source "myspell-fr-gut_1:1.0-32.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/ifrench-gut/myspell-fr-gut_1.0-32.2_all.deb"
+}

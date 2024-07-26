@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcasa-python3-7_3.5.0-2+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcasa-python3-7"]
+]
+depends: [
+  "deb-libboost-python1-74-0"
+  "deb-libboost-python1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.32"}
+  "deb-libcasa-casa7" {>= "3.5.0"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libpython3-11" {>= "3.11.0"}
+  "deb-libstdc++6" {>= "11"}
+]
+extra-source "libcasa-python3-7_3.5.0-2+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/casacore/libcasa-python3-7_3.5.0-2+b3_amd64.deb"
+}

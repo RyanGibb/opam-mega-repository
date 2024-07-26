@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ptex2tex_0.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ptex2tex"]
+]
+depends: [
+  "deb-dpkg" {>= "1.14.18"}
+  "deb-preprocess"
+  "deb-python" {< "2.8"}
+  "deb-python" {>= "2.6.6-7~"}
+  "deb-tex-common" {>= "2.00"}
+  "deb-texlive-latex-base"
+  "deb-texlive-latex-extra"
+  "deb-texlive-latex-recommended"
+  ("deb-python2-7" | "deb- python2-6")
+]
+extra-source "ptex2tex_0.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/ptex2tex/ptex2tex_0.4-1_all.deb"
+}

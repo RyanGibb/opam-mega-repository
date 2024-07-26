@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gettext_0.19.8.1-9_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gettext"]
+]
+depends: [
+  "deb-gettext-base"
+  "deb-libc6" {>= "2.17"}
+  "deb-libcroco3" {>= "0.6.2"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libgomp1" {>= "4.9"}
+  "deb-libncurses6" {>= "6"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-libunistring2" {>= "0.9.7"}
+  "deb-libxml2" {>= "2.9.1"}
+  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+]
+extra-source "gettext_0.19.8.1-9_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gettext/gettext_0.19.8.1-9_amd64.deb"
+}

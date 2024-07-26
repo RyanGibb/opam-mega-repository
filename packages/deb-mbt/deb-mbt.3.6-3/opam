@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mbt_3.6-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mbt"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libmbt1" {>= "3.6"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libticcutils8" {>= "0.24"}
+  "deb-libtimbl4" {>= "6.5"}
+]
+extra-source "mbt_3.6-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mbt/mbt_3.6-3_amd64.deb"
+}

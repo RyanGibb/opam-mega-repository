@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-sctransform_0.3.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-sctransform"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.1-2"}
+  "deb-r-cran-dplyr"
+  "deb-r-cran-future"
+  "deb-r-cran-future-apply"
+  "deb-r-cran-ggplot2"
+  "deb-r-cran-gridextra"
+  "deb-r-cran-magrittr"
+  "deb-r-cran-mass"
+  "deb-r-cran-matrix" {>= "1.5-0"}
+  "deb-r-cran-matrixstats"
+  "deb-r-cran-rcpp" {>= "0.11.0"}
+  "deb-r-cran-rcpparmadillo"
+  "deb-r-cran-reshape2"
+  "deb-r-cran-rlang"
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "r-cran-sctransform_0.3.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-sctransform/r-cran-sctransform_0.3.5-1_amd64.deb"
+}

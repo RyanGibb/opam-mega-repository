@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libatombus-perl_1.0405-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libatombus-perl"]
+]
+depends: [
+  "deb-libatompub-perl"
+  "deb-libdancer-perl"
+  "deb-libdancer-plugin-dbic-perl"
+  "deb-libdbd-sqlite3-perl"
+  "deb-libdbix-class-perl"
+  "deb-libsql-translator-perl"
+  "deb-libuuid-tiny-perl"
+  "deb-libxml-atom-perl"
+  "deb-libxml-xpath-perl"
+  "deb-perl-any"
+  "deb-sgml-base" {>= "1.28"}
+]
+extra-source "libatombus-perl_1.0405-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/liba/libatombus-perl/libatombus-perl_1.0405-6_all.deb"
+}

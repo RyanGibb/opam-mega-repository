@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnumeric_1.12.48-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnumeric"]
+]
+depends: [
+  "deb-gnumeric-common" {= "1.12.48-1"}
+  "deb-gsfonts"
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libcairo2" {>= "1.10.0"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.25.2"}
+  "deb-libglib2-0-0" {>= "2.39.4"}
+  "deb-libgoffice-0-10-10" {>= "0.10.48"}
+  "deb-libgsf-1-114" {>= "1.14.27"}
+  "deb-libgtk-3-0" {>= "3.13.7"}
+  "deb-libpango-1-0-0" {>= "1.29.4"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-procps"
+  "deb-pxlib1"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "gnumeric_1.12.48-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnumeric/gnumeric_1.12.48-1+b2_amd64.deb"
+}

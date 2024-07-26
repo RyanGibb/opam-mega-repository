@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add at-spi2-core-2.52.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del at-spi2-core"]
+]
+depends: [
+  "apk-dbus-libs" {= "1.14.10-r1"}
+  "apk-glib" {= "2.80.2-r0"}
+  "apk-libintl" {= "0.22.5-r0"}
+  "apk-libx11" {= "1.8.9-r1"}
+  "apk-libxi" {= "1.8.1-r4"}
+  "apk-libxtst" {= "1.2.4-r6"}
+  "apk-musl" {= "1.2.5-r0"}
+]
+extra-source "at-spi2-core-2.52.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/at-spi2-core-2.52.0-r0.apk"
+}

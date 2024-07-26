@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libqgis-core3.10.14_3.10.14+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libqgis-core3.10.14"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgdal28" {>= "3.0.0"}
+  "deb-libgeos-c1v5" {>= "3.5.0"}
+  "deb-libproj19" {>= "6.2.0"}
+  "deb-libqca-qt5-2" {>= "2.0.2"}
+  "deb-libqt5concurrent5" {>= "5.6.0~rc"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5keychain1" {>= "0.7.0"}
+  "deb-libqt5network5" {>= "5.14.1"}
+  "deb-libqt5positioning5" {>= "5.6.0"}
+  "deb-libqt5printsupport5" {>= "5.2.0"}
+  "deb-libqt5serialport5" {>= "5.6.0"}
+  "deb-libqt5sql5" {>= "5.0.2"}
+  "deb-libqt5svg5" {>= "5.6.0~beta"}
+  "deb-libqt5webkit5" {>= "5.212.0~alpha3"}
+  "deb-libqt5widgets5" {>= "5.11.0~rc1"}
+  "deb-libqt5xml5" {>= "5.0.2"}
+  "deb-libspatialindex6" {>= "1.8.5"}
+  "deb-libspatialite7" {>= "4.1.0"}
+  "deb-libsqlite3-0" {>= "3.7.14"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libzip4" {>= "0.11.2"}
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-ocl-icd-libopencl1" {>= "1.0"} | "deb- libopencl-1-2-1")
+  ("deb-ocl-icd-libopencl1" {>= "2.2.0"} | "deb- libopencl-2-0-1")
+  ("deb-ocl-icd-libopencl1" | "deb- libopencl1")
+]
+extra-source "libqgis-core3.10.14_3.10.14+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qgis/libqgis-core3.10.14_3.10.14+dfsg-1_amd64.deb"
+}

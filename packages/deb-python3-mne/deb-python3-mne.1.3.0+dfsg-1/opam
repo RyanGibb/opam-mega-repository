@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-mne_1.3.0+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-mne"]
+]
+depends: [
+  "deb-help2man"
+  "deb-libgl1-mesa-dri"
+  "deb-libjs-bootstrap"
+  "deb-libjs-d3"
+  "deb-libjs-jquery"
+  "deb-libjs-jquery-ui"
+  "deb-python3-any"
+  "deb-python3-decorator"
+  "deb-python3-jinja2"
+  "deb-python3-joblib"
+  "deb-python3-matplotlib"
+  "deb-python3-numpy"
+  "deb-python3-packaging"
+  "deb-python3-pooch"
+  "deb-python3-scipy"
+  "deb-python3-sklearn"
+  "deb-python3-tqdm"
+  "deb-xauth"
+  "deb-xvfb"
+]
+extra-source "python3-mne_1.3.0+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-mne/python3-mne_1.3.0+dfsg-1_all.deb"
+}

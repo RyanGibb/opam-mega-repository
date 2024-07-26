@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libbpf-1.2.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libbpf"]
+]
+depends: [
+  "apk-libelf" {= "0.189-r2"}
+  "apk-musl" {= "1.2.4-r2"}
+  "apk-zlib" {= "1.2.13-r1"}
+]
+extra-source "libbpf-1.2.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/libbpf-1.2.2-r0.apk"
+}

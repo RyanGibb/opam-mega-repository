@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i geomview_1.9.5-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r geomview"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgeomview-1-9-5" {>= "1.9.5"}
+  "deb-libgl1"
+  "deb-libstdc++6" {>= "5"}
+  "deb-libx11-6"
+  "deb-libxm4" {>= "2.3.4"}
+  "deb-libxt6"
+]
+extra-source "geomview_1.9.5-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/geomview/geomview_1.9.5-4+b1_amd64.deb"
+}

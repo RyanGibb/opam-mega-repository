@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pacpl_6.1.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pacpl"]
+]
+depends: [
+  "deb-libaudio-flac-header-perl"
+  "deb-libaudio-scan-perl"
+  "deb-libcddb-get-perl"
+  "deb-libcddb-perl"
+  "deb-libmp3-tag-perl"
+  "deb-libparallel-forkmanager-perl"
+  "deb-libstring-shellquote-perl"
+  "deb-perl-any"
+  "deb-vorbis-tools"
+]
+extra-source "pacpl_6.1.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pacpl/pacpl_6.1.3-1_all.deb"
+}

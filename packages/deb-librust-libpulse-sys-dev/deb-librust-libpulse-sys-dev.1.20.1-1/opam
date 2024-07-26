@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-libpulse-sys-dev_1.20.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-libpulse-sys-dev"]
+]
+depends: [
+  "deb-libpulse-dev"
+  "deb-librust-libc-0-2+default-dev"
+  "deb-librust-num-derive-0-3+default-dev"
+  "deb-librust-num-traits-0-2+default-dev"
+  "deb-librust-pkg-config-dev"
+  "deb-librust-winapi-0-3+winsock2-dev"
+]
+extra-source "librust-libpulse-sys-dev_1.20.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-libpulse-sys/librust-libpulse-sys-dev_1.20.1-1_amd64.deb"
+}

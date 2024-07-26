@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-datalad_0.11.2-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-datalad"]
+]
+depends: [
+  "deb-patool"
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7~"}
+  "deb-python-appdirs"
+  "deb-python-boto"
+  "deb-python-chardet"
+  "deb-python-fasteners"
+  "deb-python-git" {>= "2.1.6~"}
+  "deb-python-humanize"
+  "deb-python-iso8601"
+  "deb-python-keyring"
+  "deb-python-mock"
+  "deb-python-msgpack"
+  "deb-python-pil"
+  "deb-python-requests"
+  "deb-python-secretstorage"
+  "deb-python-simplejson"
+  "deb-python-six" {>= "1.8.0"}
+  "deb-python-tqdm"
+  "deb-python-wrapt"
+  ("deb-git-annex" {>= "6.20180913~"} | "deb- git-annex-standalone" {>= "6.20180913~"})
+  ("deb-python-keyrings-alt" | "deb- python-keyring" {<= "8"})
+]
+extra-source "python-datalad_0.11.2-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/datalad/python-datalad_0.11.2-2_all.deb"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mupen64plus-audio-sdl_2.5-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mupen64plus-audio-sdl"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libmupen64plus2"
+  "deb-libsamplerate0" {>= "0.1.7"}
+  "deb-libsdl2-2-0-0" {>= "2.0.9"}
+  "deb-libspeexdsp1" {>= "1.2~beta3.2-1"}
+]
+extra-source "mupen64plus-audio-sdl_2.5-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mupen64plus-audio-sdl/mupen64plus-audio-sdl_2.5-5_amd64.deb"
+}

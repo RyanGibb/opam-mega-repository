@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-criterion-prof_1.4.1.0-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-criterion-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-aeson-prof"
+  "deb-libghc-ansi-wl-pprint-prof"
+  "deb-libghc-base-compat-batteries-prof"
+  "deb-libghc-cassava-prof"
+  "deb-libghc-code-page-prof"
+  "deb-libghc-criterion-dev" {= "1.4.1.0-3+b1"}
+  "deb-libghc-exceptions-prof"
+  "deb-libghc-glob-prof"
+  "deb-libghc-js-flot-prof"
+  "deb-libghc-js-jquery-prof"
+  "deb-libghc-microstache-prof"
+  "deb-libghc-mwc-random-prof"
+  "deb-libghc-optparse-applicative-prof"
+  "deb-libghc-semigroups-prof"
+  "deb-libghc-statistics-prof"
+  "deb-libghc-transformers-compat-prof"
+  "deb-libghc-vector-algorithms-prof"
+  "deb-libghc-vector-prof"
+]
+extra-source "libghc-criterion-prof_1.4.1.0-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-criterion/libghc-criterion-prof_1.4.1.0-3+b1_amd64.deb"
+}

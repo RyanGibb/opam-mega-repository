@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pinball_0.3.20201218-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pinball"]
+]
+depends: [
+  "deb-libc6" {>= "2.27"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgl1"
+  "deb-libltdl7" {>= "2.4.6"}
+  "deb-libsdl-image1-2" {>= "1.2.10"}
+  "deb-libsdl-mixer1-2"
+  "deb-libsdl1-2-compat-shim"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-pinball-data" {>= "0.3.20201218-4"}
+]
+extra-source "pinball_0.3.20201218-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pinball/pinball_0.3.20201218-4_amd64.deb"
+}

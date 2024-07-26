@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libperl5.28_5.28.1-6+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libperl5.28"]
+]
+depends: [
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.28"}
+  "deb-libdb5-3"
+  "deb-libgdbm-compat4" {>= "1.18-3"}
+  "deb-libgdbm6" {>= "1.18-3"}
+  "deb-perl-modules-5-28" {>= "5.28.1-6+deb10u1"}
+  "deb-zlib1g" {>= "1-1.2.2.3"}
+]
+extra-source "libperl5.28_5.28.1-6+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/perl/libperl5.28_5.28.1-6+deb10u1_amd64.deb"
+}

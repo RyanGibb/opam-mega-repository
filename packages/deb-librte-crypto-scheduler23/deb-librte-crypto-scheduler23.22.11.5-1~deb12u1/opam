@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librte-crypto-scheduler23_22.11.5-1~deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librte-crypto-scheduler23"]
+]
+depends: [
+  "deb-libbsd0" {>= "0.0"}
+  "deb-libc6" {>= "2.4"}
+  "deb-libfdt1" {>= "1.6.1"}
+  "deb-libnuma1" {>= "2.0.11"}
+  "deb-librte-bus-vdev23" {>= "22.11"}
+  "deb-librte-cryptodev23" {>= "22.11"}
+  "deb-librte-eal23" {>= "22.11"}
+  "deb-librte-kvargs23" {>= "22.11"}
+  "deb-librte-mbuf23" {>= "19.08"}
+  "deb-librte-mempool23" {>= "22.11"}
+  "deb-librte-rcu23" {>= "19.11"}
+  "deb-librte-reorder23" {>= "20.11~rc3"}
+  "deb-librte-ring23" {>= "22.11"}
+  "deb-librte-telemetry23" {>= "21.08"}
+]
+conflicts: [
+  "deb-libdpdk0"
+]
+extra-source "librte-crypto-scheduler23_22.11.5-1~deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dpdk/librte-crypto-scheduler23_22.11.5-1~deb12u1_amd64.deb"
+}

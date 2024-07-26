@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fastd_21-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fastd"]
+]
+depends: [
+  "deb-libc6" {>= "2.17"}
+  "deb-libcap2" {>= "1-2.10"}
+  "deb-libjson-c5" {>= "0.15"}
+  "deb-libsodium23" {>= "0.6.0"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libuecc0" {>= "6"}
+]
+extra-source "fastd_21-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fastd/fastd_21-1_amd64.deb"
+}

@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-astropy_4.2-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-astropy"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libcfitsio9" {>= "3.480~"}
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libwcs7" {>= "7.1"}
+  "deb-python3" {< "3.10"}
+  "deb-python3" {>= "3.9~"}
+  "deb-python3-any"
+  "deb-python3-configobj"
+  "deb-python3-distutils"
+  "deb-python3-erfa"
+  "deb-python3-numpy"
+  "deb-python3-numpy" {>= "1-1.16.0~rc1"}
+  "deb-python3-ply"
+  "deb-python3-pytest" {>= "3.1"}
+  "deb-python3-pytest-astropy"
+  "deb-python3-six" {>= "1.10.0"}
+]
+extra-source "python3-astropy_4.2-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/astropy/python3-astropy_4.2-6_amd64.deb"
+}

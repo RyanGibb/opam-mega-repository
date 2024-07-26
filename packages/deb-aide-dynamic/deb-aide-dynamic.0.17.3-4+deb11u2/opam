@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i aide-dynamic_0.17.3-4+deb11u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r aide-dynamic"]
+]
+depends: [
+  "deb-libacl1" {>= "2.2.23"}
+  "deb-libaudit1" {>= "1-2.2.1"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcap2" {>= "1-2.10"}
+  "deb-libext2fs2" {>= "1.37"}
+  "deb-libmhash2" {>= "0.9.9.9"}
+  "deb-libpcre3"
+  "deb-libselinux1" {>= "3.1~"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+conflicts: [
+  "deb-aide"
+  "deb-aide-xen"
+]
+extra-source "aide-dynamic_0.17.3-4+deb11u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/aide/aide-dynamic_0.17.3-4+deb11u2_amd64.deb"
+}

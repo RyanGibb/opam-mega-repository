@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libpq-15.7-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libpq"]
+]
+depends: [
+  "apk-libcrypto3" {= "3.1.6-r0"}
+  "apk-libssl3" {= "3.1.6-r0"}
+  "apk-musl" {= "1.2.4-r2"}
+]
+extra-source "libpq-15.7-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/libpq-15.7-r0.apk"
+}

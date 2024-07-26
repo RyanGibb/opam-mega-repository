@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-tufte_0.12-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-tufte"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.0-1"}
+  "deb-r-cran-htmltools"
+  "deb-r-cran-knitr" {>= "1.28"}
+  "deb-r-cran-rmarkdown" {>= "2.11"}
+  "deb-r-cran-xfun" {>= "0.13"}
+]
+extra-source "r-cran-tufte_0.12-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-tufte/r-cran-tufte_0.12-1_all.deb"
+}

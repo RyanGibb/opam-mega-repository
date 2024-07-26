@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i liblammps0_20220106.git7586adbb6a+ds1-2+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r liblammps0"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libcurl4" {>= "7.16.2"}
+  "deb-libfftw3-double3" {>= "3.3.10"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgomp1" {>= "4.9"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libkim-api2" {>= "2.3.0"}
+  "deb-libopenmpi3" {>= "4.1.4"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libpython3-11" {>= "3.11.0"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libvoro++1" {>= "0.4.6"}
+  "deb-libzstd1" {>= "1.5.2"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "liblammps0_20220106.git7586adbb6a+ds1-2+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lammps/liblammps0_20220106.git7586adbb6a+ds1-2+b2_amd64.deb"
+}

@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i hinge_0.5.0-7+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r hinge"]
+]
+depends: [
+  "deb-daligner"
+  "deb-dascrubber"
+  "deb-dazzdb"
+  "deb-libc6" {>= "2.34"}
+  "deb-libfmt9" {>= "9.0.0+ds1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgomp1" {>= "4.2.1"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-python3"
+  "deb-python3-colormap"
+  "deb-python3-matplotlib"
+  "deb-python3-networkx"
+  "deb-python3-numpy"
+  "deb-python3-pbcore"
+  "deb-python3-ujson"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "hinge_0.5.0-7+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/hinge/hinge_0.5.0-7+b1_amd64.deb"
+}

@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qbittorrent_4.2.5-0.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qbittorrent"]
+]
+depends: [
+  "deb-geoip-database"
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqt5core5a" {>= "5.12.2"}
+  "deb-libqt5dbus5" {>= "5.2.0"}
+  "deb-libqt5network5" {>= "5.9.0~beta"}
+  "deb-libqt5widgets5" {>= "5.11.0~rc1"}
+  "deb-libqt5xml5" {>= "5.2.0"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtorrent-rasterbar10" {>= "1.2.5"}
+  "deb-python3"
+  "deb-zlib1g" {>= "1-1.2.0"}
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+]
+extra-source "qbittorrent_4.2.5-0.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qbittorrent/qbittorrent_4.2.5-0.1_amd64.deb"
+}

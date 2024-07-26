@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmail-dkim-perl_1.20230212-2~deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmail-dkim-perl"]
+]
+depends: [
+  "deb-libcrypt-openssl-rsa-perl"
+  "deb-libdigest-sha-perl"
+  "deb-liberror-perl"
+  "deb-libgetopt-long-descriptive-perl"
+  "deb-libmail-authenticationresults-perl"
+  "deb-libmailtools-perl"
+  "deb-libnet-dns-perl"
+  "deb-perl-any"
+]
+extra-source "libmail-dkim-perl_1.20230212-2~deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libm/libmail-dkim-perl/libmail-dkim-perl_1.20230212-2~deb12u1_all.deb"
+}

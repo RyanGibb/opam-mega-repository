@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i auto-editor_22w52a+ds-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r auto-editor"]
+]
+depends: [
+  "deb-ffmpeg"
+  "deb-python3-any"
+  "deb-python3-av"
+  "deb-python3-numpy"
+  "deb-python3-opencv"
+  "deb-python3-pil"
+]
+extra-source "auto-editor_22w52a+ds-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/auto-editor/auto-editor_22w52a+ds-1_all.deb"
+}

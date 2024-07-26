@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libfile-flat-perl_1.07-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libfile-flat-perl"]
+]
+depends: [
+  "deb-libfile-copy-recursive-perl"
+  "deb-libfile-ncopy-perl"
+  "deb-libfile-remove-perl"
+  "deb-libfile-slurp-perl"
+  "deb-libparams-util-perl"
+  "deb-libprefork-perl"
+  "deb-libtest-classapi-perl"
+  "deb-perl-any"
+]
+extra-source "libfile-flat-perl_1.07-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libf/libfile-flat-perl/libfile-flat-perl_1.07-1_all.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libimejyutping1_1.0.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libimejyutping1"]
+]
+depends: [
+  "deb-libc6" {>= "2.32"}
+  "deb-libfcitx5utils2" {>= "5.0.21"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libime-data-jyutping" {= "1.0.5-1"}
+  "deb-libimecore0" {>= "1.0.16"}
+  "deb-libstdc++6" {>= "11"}
+]
+extra-source "libimejyutping1_1.0.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libi/libime-jyutping/libimejyutping1_1.0.5-1_amd64.deb"
+}

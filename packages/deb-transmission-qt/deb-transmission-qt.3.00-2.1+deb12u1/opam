@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i transmission-qt_3.00-2.1+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r transmission-qt"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libcurl4" {>= "7.18.0"}
+  "deb-libevent-2-1-7" {>= "2.1.8-stable"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libminiupnpc17" {>= "1.9.20140610"}
+  "deb-libnatpmp1" {>= "20150609"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.0.2"}
+  "deb-libqt5network5" {>= "5.14.1"}
+  "deb-libqt5widgets5" {>= "5.11.0~rc1"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-transmission-common" {= "3.00-2.1+deb12u1"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libqt5gui5" {>= "5.8.0"} | "deb- libqt5gui5-gles" {>= "5.8.0"})
+]
+extra-source "transmission-qt_3.00-2.1+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/transmission/transmission-qt_3.00-2.1+deb12u1_amd64.deb"
+}

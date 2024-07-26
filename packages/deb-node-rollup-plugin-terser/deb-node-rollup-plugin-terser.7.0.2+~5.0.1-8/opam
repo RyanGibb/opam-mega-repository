@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-rollup-plugin-terser_7.0.2+~5.0.1-8_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-rollup-plugin-terser"]
+]
+depends: [
+  "deb-node-babel7"
+  "deb-node-jest-worker" {>= "27~"}
+  "deb-node-serialize-javascript"
+  "deb-node-terser" {>= "5"}
+]
+extra-source "node-rollup-plugin-terser_7.0.2+~5.0.1-8_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-rollup-plugin-terser/node-rollup-plugin-terser_7.0.2+~5.0.1-8_all.deb"
+}

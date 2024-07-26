@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dyssol-gui_1.1.1+ds1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dyssol-gui"]
+]
+depends: [
+  "deb-dyssol-data"
+  "deb-libc6" {>= "2.34"}
+  "deb-libcgraph6"
+  "deb-libdyssol1-0" {= "1.1.1+ds1-1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgvc6"
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5widgets5" {>= "5.14.1"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libsundials-nvecserial6" {>= "6.4.1+dfsg1"}
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+]
+extra-source "dyssol-gui_1.1.1+ds1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dyssol/dyssol-gui_1.1.1+ds1-1_amd64.deb"
+}

@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-ipalib_4.7.2-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-ipalib"]
+]
+depends: [
+  "deb-freeipa-common" {= "4.7.2-3"}
+  "deb-gnupg-agent"
+  "deb-gnupg2"
+  "deb-keyutils"
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7~"}
+  "deb-python-cffi"
+  "deb-python-cryptography" {>= "1.6"}
+  "deb-python-dbus"
+  "deb-python-dnspython"
+  "deb-python-gssapi"
+  "deb-python-ldap"
+  "deb-python-libipa-hbac"
+  "deb-python-lxml"
+  "deb-python-netaddr"
+  "deb-python-netifaces" {>= "0.10.4"}
+  "deb-python-nss" {>= "0.16.0"}
+  "deb-python-pyasn1"
+  "deb-python-pyasn1-modules"
+  "deb-python-qrcode" {>= "5.0.0"}
+  "deb-python-requests"
+  "deb-python-setuptools"
+  "deb-python-six"
+  "deb-python-usb" {>= "1.0.0~b2"}
+  "deb-python-yubico"
+  "deb-systemd"
+]
+extra-source "python-ipalib_4.7.2-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/freeipa/python-ipalib_4.7.2-3_all.deb"
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i boxbackup-client_0.13~~git20200326.g8e8b63c-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r boxbackup-client"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libedit2" {>= "2.11-20080614-0"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-lsb-base" {>= "3.0-6"}
+  "deb-openssl"
+  "deb-perl"
+  "deb-ucf"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "boxbackup-client_0.13~~git20200326.g8e8b63c-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/boxbackup/boxbackup-client_0.13~~git20200326.g8e8b63c-1_amd64.deb"
+}

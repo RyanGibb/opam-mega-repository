@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i clutter-1.0-tests_1.26.4+dfsg-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r clutter-1.0-tests"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libclutter-1-0-0" {= "1.26.4+dfsg-4"}
+  "deb-libcogl20" {>= "1.21.2"}
+  "deb-libglib2-0-0" {>= "2.53.4"}
+  "deb-libpango-1-0-0" {>= "1.30"}
+]
+extra-source "clutter-1.0-tests_1.26.4+dfsg-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/clutter-1.0/clutter-1.0-tests_1.26.4+dfsg-4_amd64.deb"
+}

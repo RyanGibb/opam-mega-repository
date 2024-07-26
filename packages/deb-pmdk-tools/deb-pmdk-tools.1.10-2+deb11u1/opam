@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pmdk-tools_1.10-2+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pmdk-tools"]
+]
+depends: [
+  "deb-libc6" {>= "2.17"}
+  "deb-libdaxctl1" {>= "64"}
+  "deb-libfabric1" {>= "1.11.0"}
+  "deb-libndctl6" {>= "64"}
+  "deb-libpmem1" {>= "1.5"}
+  "deb-libpmemblk1" {>= "1.4"}
+  "deb-libpmemlog1" {>= "1.4"}
+  "deb-libpmemobj1" {>= "1.4"}
+  "deb-libpmempool1" {>= "1.5"}
+]
+extra-source "pmdk-tools_1.10-2+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pmdk/pmdk-tools_1.10-2+deb11u1_amd64.deb"
+}

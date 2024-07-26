@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmailtools-perl_2.21-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmailtools-perl"]
+]
+depends: [
+  "deb-libnet-perl"
+  "deb-libnet-smtp-ssl-perl"
+  "deb-libtest-simple-perl"
+  "deb-libtimedate-perl"
+  "deb-perl"
+]
+extra-source "libmailtools-perl_2.21-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libm/libmailtools-perl/libmailtools-perl_2.21-1_all.deb"
+}

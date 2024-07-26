@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i zemberek-server_0.7.1-12.3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r zemberek-server"]
+]
+depends: [
+  "deb-adduser" {>= "3.48"}
+  "deb-dbus"
+  "deb-libcommons-logging-java"
+  "deb-libdbus-java"
+  "deb-libmatthew-debug-java"
+  "deb-libmina-java"
+  "deb-libslf4j-java"
+  "deb-libunixsocket-java"
+  "deb-libzemberek-java"
+  "deb-libzemberek-tr-java"
+  ("deb-default-jre-headless" | "deb- openjdk-6-jre-headless")
+]
+extra-source "zemberek-server_0.7.1-12.3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/z/zemberek-server/zemberek-server_0.7.1-12.3_all.deb"
+}

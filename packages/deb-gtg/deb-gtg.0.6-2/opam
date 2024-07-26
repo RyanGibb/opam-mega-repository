@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gtg_0.6-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gtg"]
+]
+depends: [
+  "deb-gir1-2-gdk-3-0"
+  "deb-gir1-2-gtksource-4"
+  "deb-gir1-2-pango-1-0"
+  "deb-gir1-2-secret-1"
+  "deb-pdftk"
+  "deb-python3-any"
+  "deb-python3-caldav"
+  "deb-python3-cheetah"
+  "deb-python3-gi"
+  "deb-python3-gi-cairo"
+  "deb-python3-liblarch"
+  "deb-python3-lxml"
+  "deb-texlive-extra-utils"
+  "deb-texlive-latex-base"
+]
+extra-source "gtg_0.6-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gtg/gtg_0.6-2_all.deb"
+}

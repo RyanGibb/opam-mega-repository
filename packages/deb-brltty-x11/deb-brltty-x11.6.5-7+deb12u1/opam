@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i brltty-x11_6.5-7+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r brltty-x11"]
+]
+depends: [
+  "deb-brltty" {= "6.5-7+deb12u1"}
+  "deb-libatspi2-0-0" {>= "2.9.90"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libdbus-1-3" {>= "1.9.14"}
+  "deb-libx11-6" {>= "2-1.7.0"}
+  "deb-libxaw7" {>= "2-1.0.14"}
+  "deb-libxfixes3"
+  "deb-libxt6"
+]
+extra-source "brltty-x11_6.5-7+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/brltty/brltty-x11_6.5-7+deb12u1_amd64.deb"
+}

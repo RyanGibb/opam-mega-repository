@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgmic1_2.9.4-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgmic1"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libcurl4" {>= "7.16.2"}
+  "deb-libfftw3-double3" {>= "3.3.5"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgomp1" {>= "4.9"}
+  "deb-libgraphicsmagick++-q16-12" {>= "1.3.26-5~"}
+  "deb-libilmbase25" {>= "2.5.4"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libopencv-core4-5" {>= "4.5.1+dfsg"}
+  "deb-libopencv-videoio4-5" {>= "4.5.1+dfsg"}
+  "deb-libopenexr25" {>= "2.5.4"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtiff5" {>= "4.0.3"}
+  "deb-libx11-6"
+  "deb-zlib1g" {>= "1-1.2.0"}
+]
+extra-source "libgmic1_2.9.4-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gmic/libgmic1_2.9.4-4_amd64.deb"
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-splitmix-dev_0.0.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-splitmix-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-random-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-splitmix-dev_0.0.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-splitmix/libghc-splitmix-dev_0.0.5-1_amd64.deb"
+}

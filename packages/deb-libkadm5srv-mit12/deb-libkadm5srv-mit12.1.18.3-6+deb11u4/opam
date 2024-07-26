@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkadm5srv-mit12_1.18.3-6+deb11u4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkadm5srv-mit12"]
+]
+depends: [
+  "deb-libc6" {>= "2.25"}
+  "deb-libcom-err2" {>= "1.43.9"}
+  "deb-libgssapi-krb5-2" {>= "1.6.dfsg.2"}
+  "deb-libgssrpc4" {>= "1.6.dfsg.2"}
+  "deb-libk5crypto3" {>= "1.6.dfsg.2"}
+  "deb-libkdb5-10" {>= "1.18.3"}
+  "deb-libkrb5-3" {>= "1.15~beta1"}
+  "deb-libkrb5support0" {>= "1.17"}
+]
+conflicts: [
+  "deb-libkdb5-8"
+]
+extra-source "libkadm5srv-mit12_1.18.3-6+deb11u4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/krb5/libkadm5srv-mit12_1.18.3-6+deb11u4_amd64.deb"
+}

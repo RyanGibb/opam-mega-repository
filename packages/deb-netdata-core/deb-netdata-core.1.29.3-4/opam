@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i netdata-core_1.29.3-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r netdata-core"]
+]
+depends: [
+  "deb-libc6" {>= "2.28"}
+  "deb-libcap2" {>= "1-2.10"}
+  "deb-libcap2-bin"
+  "deb-libgcc-s1" {>= "3.3.1"}
+  "deb-libjson-c5" {>= "0.15"}
+  "deb-libjudydebian1"
+  "deb-liblz4-1" {>= "0.0~r130"}
+  "deb-libmnl0" {>= "1.0.3-4~"}
+  "deb-libnetfilter-acct1" {>= "1.0.3"}
+  "deb-libprotobuf23" {>= "3.12.4"}
+  "deb-libsnappy1v5" {>= "1.1.8"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libuuid1" {>= "2.16"}
+  "deb-libuv1" {>= "1.4.2"}
+  "deb-lsb-base"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+conflicts: [
+  "deb-netdata-core-no-sse"
+]
+extra-source "netdata-core_1.29.3-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/netdata/netdata-core_1.29.3-4_amd64.deb"
+}

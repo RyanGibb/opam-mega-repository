@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i peony-extension-computer-view_3.2.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r peony-extension-computer-view"]
+]
+depends: [
+  "deb-libc6" {>= "2.32"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.51.0"}
+  "deb-libgsettings-qt1" {>= "0.1+14.04.20140408"}
+  "deb-libpeony3" {>= "3.0.2"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.2.0~rc1"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "peony-extension-computer-view_3.2.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/peony-extensions/peony-extension-computer-view_3.2.4-1_amd64.deb"
+}

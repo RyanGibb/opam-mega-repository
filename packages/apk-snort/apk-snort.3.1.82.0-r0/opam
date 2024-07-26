@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add snort-3.1.82.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del snort"]
+]
+depends: [
+  "apk-bash" {= "5.2.26-r0"}
+  "apk-daq" {= "3.0.14-r0"}
+  "apk-hwloc" {= "2.10.0-r0"}
+  "apk-libcrypto3" {= "3.3.1-r3"}
+  "apk-libdnet" {= "1.17.0-r0"}
+  "apk-libgcc" {= "13.2.1_git20240309-r0"}
+  "apk-libmnl" {= "1.0.5-r2"}
+  "apk-libpcap" {= "1.10.4-r1"}
+  "apk-libstdc++" {= "13.2.1_git20240309-r0"}
+  "apk-libtirpc" {= "1.3.4-r0"}
+  "apk-libuuid" {= "2.40.1-r1"}
+  "apk-luajit" {= "2.1_p20240314-r0"}
+  "apk-musl" {= "1.2.5-r0"}
+  "apk-pcre" {= "8.45-r3"}
+  "apk-xz-libs" {= "5.6.1-r3"}
+  "apk-zlib" {= "1.3.1-r1"}
+  ("apk-busybox-binsh" {= "1.36.1-r29"} | "apk-dash-binsh" {= "0.5.12-r2"} | "apk-yash-binsh" {= "2.56.1-r1"})
+]
+extra-source "snort-3.1.82.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/snort-3.1.82.0-r0.apk"
+}

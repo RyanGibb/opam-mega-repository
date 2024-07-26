@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-caret_6.0-93+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-caret"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.1-2"}
+  "deb-r-cran-e1071"
+  "deb-r-cran-foreach"
+  "deb-r-cran-ggplot2"
+  "deb-r-cran-lattice" {>= "0.20"}
+  "deb-r-cran-modelmetrics" {>= "1.2.2.2"}
+  "deb-r-cran-nlme"
+  "deb-r-cran-plyr"
+  "deb-r-cran-proc"
+  "deb-r-cran-recipes" {>= "0.1.10"}
+  "deb-r-cran-reshape2"
+  "deb-r-cran-withr" {>= "2.0.0"}
+]
+extra-source "r-cran-caret_6.0-93+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-caret/r-cran-caret_6.0-93+dfsg-1_amd64.deb"
+}

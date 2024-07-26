@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libthunarx-3-0_4.16.8-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libthunarx-3-0"]
+]
+depends: [
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.4"}
+  "deb-libexif12" {>= "0.6.21-1~"}
+  "deb-libexo-2-0" {>= "0.11.0"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libgtk-3-0" {>= "3.21.4"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpcre3"
+  "deb-libx11-6"
+  "deb-libxfce4ui-2-0" {>= "4.15.3"}
+  "deb-libxfce4util7" {>= "4.15.3"}
+  "deb-libxfconf-0-3" {>= "4.6.0"}
+  "deb-thunar-data"
+]
+extra-source "libthunarx-3-0_4.16.8-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/thunar/libthunarx-3-0_4.16.8-1_amd64.deb"
+}

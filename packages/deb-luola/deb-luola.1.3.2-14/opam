@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i luola_1.3.2-14_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r luola"]
+]
+depends: [
+  "deb-libc6" {>= "2.35"}
+  "deb-libsdl-gfx1-2-5" {>= "2.0.25"}
+  "deb-libsdl-image1-2" {>= "1.2.10"}
+  "deb-libsdl-mixer1-2" {>= "1.2.12"}
+  "deb-libsdl-ttf2-0-0"
+  "deb-libsdl1-2-compat-shim"
+  "deb-luola-data" {= "1.3.2-14"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "luola_1.3.2-14_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/luola/luola_1.3.2-14_amd64.deb"
+}

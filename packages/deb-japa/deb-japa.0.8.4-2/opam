@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i japa_0.8.4-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r japa"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libclthreads2"
+  "deb-libclxclient3"
+  "deb-libfftw3-single3"
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libx11-6"
+  "deb-libzita-alsa-pcmi0" {>= "0.2.0"}
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+]
+extra-source "japa_0.8.4-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/j/japa/japa_0.8.4-2_amd64.deb"
+}

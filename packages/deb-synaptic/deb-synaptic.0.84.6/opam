@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i synaptic_0.84.6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r synaptic"]
+]
+depends: [
+  "deb-hicolor-icon-theme"
+  "deb-libapt-inst2-0" {>= "0.8.16~exp12"}
+  "deb-libapt-pkg5-0" {>= "1.1~exp9"}
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libept1-5-0"
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.16.0"}
+  "deb-libgnutls30" {>= "3.6.5"}
+  "deb-libgtk-3-0" {>= "3.11.7"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpcre2-8-0" {>= "10.32"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libvte-2-91-0"
+  "deb-libx11-6"
+  "deb-libxapian30" {>= "1.4.11~"}
+  "deb-policykit-1"
+  "deb-zenity"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+conflicts: [
+  "deb-menu" {< "2.1.11"}
+]
+extra-source "synaptic_0.84.6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/synaptic/synaptic_0.84.6_amd64.deb"
+}

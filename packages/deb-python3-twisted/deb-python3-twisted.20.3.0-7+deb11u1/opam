@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-twisted_20.3.0-7+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-twisted"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-attr" {>= "17.1.0"}
+  "deb-python3-automat" {>= "0.6.0"}
+  "deb-python3-bcrypt" {>= "3.0.0"}
+  "deb-python3-constantly"
+  "deb-python3-cryptography" {>= "2.5"}
+  "deb-python3-hamcrest"
+  "deb-python3-hyperlink"
+  "deb-python3-idna"
+  "deb-python3-incremental"
+  "deb-python3-openssl"
+  "deb-python3-service-identity" {>= "18.1.0"}
+  "deb-python3-twisted-bin" {>= "20.3.0-7+deb11u1"}
+  "deb-python3-zope-interface" {>= "4.0.2"}
+]
+conflicts: [
+  "deb-python3-twisted-experimental"
+]
+extra-source "python3-twisted_20.3.0-7+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/twisted/python3-twisted_20.3.0-7+deb11u1_all.deb"
+}

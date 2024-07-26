@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libatteanx-endpoint-perl_0.002-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libatteanx-endpoint-perl"]
+]
+depends: [
+  "deb-libattean-perl"
+  "deb-libfile-sharedir-perl"
+  "deb-libhtml-html5-writer-perl"
+  "deb-libhttp-negotiate-perl"
+  "deb-libjs-codemirror"
+  "deb-libjson-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-libmoo-perl"
+  "deb-libmoox-log-any-perl"
+  "deb-libnamespace-clean-perl"
+  "deb-libplack-perl"
+  "deb-libtrycatch-perl"
+  "deb-libtype-tiny-perl"
+  "deb-libxml-libxml-perl"
+  "deb-perl-any"
+]
+extra-source "libatteanx-endpoint-perl_0.002-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/liba/libatteanx-endpoint-perl/libatteanx-endpoint-perl_0.002-6_all.deb"
+}

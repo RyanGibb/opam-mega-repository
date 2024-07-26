@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xfdesktop4_4.16.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xfdesktop4"]
+]
+depends: [
+  "deb-exo-utils"
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo2" {>= "1.10.0"}
+  "deb-libexo-2-0" {>= "0.11.0"}
+  "deb-libgarcon-1-0" {>= "0.3.0"}
+  "deb-libgarcon-gtk3-1-0" {>= "0.6.0"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libgtk-3-0" {>= "3.22"}
+  "deb-libnotify4" {>= "0.7.0"}
+  "deb-libpango-1-0-0" {>= "1.44.6"}
+  "deb-libthunarx-3-0" {>= "1.7.0"}
+  "deb-libwnck-3-0" {>= "3.14"}
+  "deb-libx11-6"
+  "deb-libxfce4ui-2-0" {>= "4.13.0"}
+  "deb-libxfce4util7" {>= "4.13.0"}
+  "deb-libxfconf-0-3" {>= "4.12.1"}
+  "deb-xfdesktop4-data" {= "4.16.0-1"}
+]
+extra-source "xfdesktop4_4.16.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xfdesktop4/xfdesktop4_4.16.0-1_amd64.deb"
+}

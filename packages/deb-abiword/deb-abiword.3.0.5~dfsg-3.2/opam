@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i abiword_3.0.5~dfsg-3.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r abiword"]
+]
+depends: [
+  "deb-abiword-common" {>= "3.0.5~dfsg-3.2"}
+  "deb-libabiword-3-0" {>= "3.0.5~dfsg"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgcrypt20" {>= "1.10.0"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libgoffice-0-10-10" {>= "0.10.2"}
+  "deb-libgsf-1-114" {>= "1.14.9"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libots0" {>= "0.5.0"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-librdf0" {>= "1.0.17"}
+  "deb-libreadline8" {>= "6.0"}
+  "deb-librevenge-0-0-0"
+  "deb-libstdc++6" {>= "11"}
+  "deb-libtidy5deb1" {>= "1-5.2.0"}
+  "deb-libwmf-0-2-7" {>= "0.2.12"}
+  "deb-libwmflite-0-2-7" {>= "0.2.12"}
+  "deb-libwpd-0-10-10"
+  "deb-libwpg-0-3-3"
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-fonts-urw-base35" {>= "20200910-2~"} | "deb- gsfonts")
+]
+extra-source "abiword_3.0.5~dfsg-3.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/abiword/abiword_3.0.5~dfsg-3.2_amd64.deb"
+}

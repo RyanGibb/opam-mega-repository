@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kde-config-mobile-networking_4:5.20.5-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kde-config-mobile-networking"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libkf5coreaddons5" {>= "5.74.0~"}
+  "deb-libkf5i18n5" {>= "5.74.0~"}
+  "deb-libkf5modemmanagerqt6" {>= "5.74.0~"}
+  "deb-libkf5networkmanagerqt6" {>= "5.74.0~"}
+  "deb-libkf5quickaddons5" {>= "5.74.0~"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.15.0~"}
+  "deb-libqt5network5" {>= "5.15.0~"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-plasma-framework"
+  "deb-qml-module-org-kde-kirigami2"
+  "deb-qml-module-qtquick-controls2"
+  "deb-qml-module-qtquick-layouts"
+  "deb-qml-module-qtquick2"
+]
+extra-source "kde-config-mobile-networking_4:5.20.5-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/plasma-nm/kde-config-mobile-networking_5.20.5-3_amd64.deb"
+}

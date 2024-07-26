@@ -1,0 +1,45 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mariadb-server_1:10.11.6-0+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mariadb-server"]
+]
+depends: [
+  "deb-galera-4" {>= "26.4"}
+  "deb-gawk"
+  "deb-iproute2"
+  "deb-libc6" {>= "2.35"}
+  "deb-libdbi-perl"
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-lsof"
+  "deb-mariadb-client" {>= "1-10.11.6-0+deb12u1"}
+  "deb-mariadb-server-core" {>= "1-10.11.6-0+deb12u1"}
+  "deb-passwd"
+  "deb-perl" {>= "5.6"}
+  "deb-procps"
+  "deb-psmisc"
+  "deb-rsync"
+  "deb-socat"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+conflicts: [
+  "deb-handlersocket-mysql-5-5"
+  "deb-mariadb-tokudb-engine-10-0"
+  "deb-mariadb-tokudb-engine-10-1"
+  "deb-mariadb-tokudb-engine-5-5"
+  "deb-mysql-server-core-5-5"
+  "deb-mysql-server-core-5-6"
+  "deb-mysql-server-core-5-7"
+  "deb-mysql-server-core-8-0"
+  "deb-percona-server-server-5-6"
+  "deb-percona-xtradb-cluster-server-5-6"
+  "deb-percona-xtradb-cluster-server-5-7"
+  "deb-virtual-mysql-server"
+]
+extra-source "mariadb-server_1:10.11.6-0+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mariadb/mariadb-server_10.11.6-0+deb12u1_amd64.deb"
+}

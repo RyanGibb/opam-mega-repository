@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i liblog4cpp5v5_1.1.3-3.1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r liblog4cpp5v5"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "11"}
+]
+conflicts: [
+  "deb-liblog4cpp1c102"
+  "deb-liblog4cpp3"
+  "deb-liblog4cpp4"
+  "deb-liblog4cpp5"
+]
+extra-source "liblog4cpp5v5_1.1.3-3.1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/log4cpp/liblog4cpp5v5_1.1.3-3.1+b1_amd64.deb"
+}

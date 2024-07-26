@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-cacache_17.0.3+~cs10.3.7-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-cacache"]
+]
+depends: [
+  "deb-node-chownr"
+  "deb-node-glob"
+  "deb-node-graceful-fs"
+  "deb-node-lru-cache" {>= "7"}
+  "deb-node-minipass"
+  "deb-node-mkdirp" {>= "1.0.3"}
+  "deb-node-move-concurrently"
+  "deb-node-p-map" {>= "3.0.0"}
+  "deb-node-promise-inflight"
+  "deb-node-rimraf"
+  "deb-node-semver"
+  "deb-node-ssri" {>= "9"}
+  "deb-node-unique-filename"
+]
+extra-source "node-cacache_17.0.3+~cs10.3.7-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-cacache/node-cacache_17.0.3+~cs10.3.7-1_all.deb"
+}

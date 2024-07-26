@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kdeedu_4:20.12.0+5.111_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kdeedu"]
+]
+depends: [
+  "deb-artikulate" {>= "4-20.12.0"}
+  "deb-blinken" {>= "4-20.12.0"}
+  "deb-cantor" {>= "4-20.12.0"}
+  "deb-kalgebra" {>= "4-20.12.0"}
+  "deb-kalzium" {>= "4-20.12.0"}
+  "deb-kanagram" {>= "4-20.12.0"}
+  "deb-kbruch" {>= "4-20.12.0"}
+  "deb-kgeography" {>= "4-20.12.0"}
+  "deb-khangman" {>= "4-20.12.0"}
+  "deb-kig" {>= "4-20.12.0"}
+  "deb-kiten" {>= "4-20.12.0"}
+  "deb-klettres" {>= "4-20.12.0"}
+  "deb-kmplot" {>= "4-20.12.0"}
+  "deb-ktouch" {>= "4-20.12.0"}
+  "deb-kturtle" {>= "4-20.12.0"}
+  "deb-kwordquiz" {>= "4-20.12.0"}
+  "deb-marble" {>= "4-20.12.0"}
+  "deb-minuet" {>= "20.12.0"}
+  "deb-parley" {>= "4-20.12.0"}
+  "deb-rocs" {>= "4-20.12.0"}
+  "deb-step" {>= "4-20.12.0"}
+]
+extra-source "kdeedu_4:20.12.0+5.111_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/meta-kde/kdeedu_20.12.0+5.111_amd64.deb"
+}

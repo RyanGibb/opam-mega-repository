@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cenon.app_4.0.6+ds1-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cenon.app"]
+]
+depends: [
+  "deb-cenon-app-common" {= "4.0.6+ds1-2"}
+  "deb-gnustep-back0-27" {>= "0.27.0"}
+  "deb-gnustep-base-runtime" {>= "1.26.0"}
+  "deb-gnustep-gui-runtime" {>= "0.27.0"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgnustep-base1-26" {>= "1.26.0"}
+  "deb-libgnustep-gui0-27" {>= "0.27.0"}
+  "deb-libobjc4" {>= "4.6"}
+]
+extra-source "cenon.app_4.0.6+ds1-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cenon.app/cenon.app_4.0.6+ds1-2+b1_amd64.deb"
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gst-plugins-base-dev-1.18.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gst-plugins-base-dev"]
+]
+depends: [
+  "apk-glib-dev" {= "2.68.3-r0"}
+  "apk-gst-plugins-base" {= "1.18.4-r0"}
+  "apk-gstreamer-dev" {= "1.18.4-r0"}
+  "apk-libx11-dev" {= "1.7.3.1-r0"}
+  "apk-mesa-dev" {= "21.1.8-r0"}
+  "apk-orc-dev" {= "0.4.32-r0"}
+  "apk-pkgconf" {= "1.7.4-r1"}
+  "apk-wayland-dev" {= "1.19.0-r0"}
+]
+extra-source "gst-plugins-base-dev-1.18.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/gst-plugins-base-dev-1.18.4-r0.apk"
+}

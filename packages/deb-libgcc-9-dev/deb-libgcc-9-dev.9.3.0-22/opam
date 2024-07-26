@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgcc-9-dev_9.3.0-22_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgcc-9-dev"]
+]
+depends: [
+  "deb-gcc-9-base" {= "9.3.0-22"}
+  "deb-libasan5" {>= "9.3.0-22"}
+  "deb-libatomic1" {>= "9.3.0-22"}
+  "deb-libgcc-s1" {>= "9.3.0-22"}
+  "deb-libgomp1" {>= "9.3.0-22"}
+  "deb-libitm1" {>= "9.3.0-22"}
+  "deb-liblsan0" {>= "9.3.0-22"}
+  "deb-libquadmath0" {>= "9.3.0-22"}
+  "deb-libtsan0" {>= "9.3.0-22"}
+  "deb-libubsan1" {>= "9.3.0-22"}
+]
+extra-source "libgcc-9-dev_9.3.0-22_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gcc-9/libgcc-9-dev_9.3.0-22_amd64.deb"
+}

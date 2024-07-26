@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i wims-lti_0.4.4.1-12_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r wims-lti"]
+]
+depends: [
+  "deb-acl"
+  "deb-adduser"
+  "deb-apache2"
+  "deb-fonts-font-awesome"
+  "deb-libapache2-mod-wsgi-py3"
+  "deb-libjs-bootstrap"
+  "deb-libjs-jquery"
+  "deb-libjs-popper-js"
+  "deb-python3"
+  "deb-python3-apscheduler"
+  "deb-python3-defusedxml"
+  "deb-python3-django"
+  "deb-python3-httplib2"
+  "deb-python3-lti"
+  "deb-python3-memcache"
+  "deb-python3-oauthlib"
+  "deb-python3-pymongo"
+  "deb-python3-redis"
+  "deb-python3-wimsapi"
+  "deb-sqlite3"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "wims-lti_0.4.4.1-12_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/w/wims-lti/wims-lti_0.4.4.1-12_all.deb"
+}

@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-ontospy_2.1.1~dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-ontospy"]
+]
+depends: [
+  "deb-libjs-bootstrap"
+  "deb-libjs-bootswatch"
+  "deb-libjs-chart-js"
+  "deb-libjs-d3"
+  "deb-libjs-jquery"
+  "deb-python3-any"
+  "deb-python3-click" {>= "8"}
+  "deb-python3-colorama"
+  "deb-python3-html5lib"
+  "deb-python3-jinja2"
+  "deb-python3-jinja2-time"
+  "deb-python3-pyfiglet"
+  "deb-python3-pygments"
+  "deb-python3-pyparsing"
+  "deb-python3-rdflib" {>= "6"}
+  "deb-python3-requests"
+  "deb-python3-sparqlwrapper"
+]
+extra-source "python3-ontospy_2.1.1~dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/ontospy/python3-ontospy_2.1.1~dfsg-1_all.deb"
+}

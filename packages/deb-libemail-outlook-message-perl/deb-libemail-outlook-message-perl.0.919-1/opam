@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libemail-outlook-message-perl_0.919-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libemail-outlook-message-perl"]
+]
+depends: [
+  "deb-libemail-mime-contenttype-perl"
+  "deb-libemail-mime-perl" {>= "1.923"}
+  "deb-libemail-sender-perl" {>= "1.300000"}
+  "deb-libemail-simple-perl" {>= "2.206"}
+  "deb-libio-all-perl"
+  "deb-libio-string-perl"
+  "deb-libole-storage-lite-perl"
+  "deb-perl"
+]
+extra-source "libemail-outlook-message-perl_0.919-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libe/libemail-outlook-message-perl/libemail-outlook-message-perl_0.919-1_all.deb"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lvm2-libs-2.03.23-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lvm2-libs"]
+]
+depends: [
+  "apk-device-mapper-event-libs" {= "2.03.23-r3"}
+  "apk-device-mapper-libs" {= "2.03.23-r3"}
+  "apk-libaio" {= "0.3.113-r2"}
+  "apk-libblkid" {= "2.40.1-r1"}
+  "apk-musl" {= "1.2.5-r0"}
+]
+extra-source "lvm2-libs-2.03.23-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lvm2-libs-2.03.23-r3.apk"
+}

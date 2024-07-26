@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fwupd_1.2.14-1~deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fwupd"]
+]
+depends: [
+  "deb-libarchive13" {>= "3.0.4"}
+  "deb-libc6" {>= "2.17"}
+  "deb-libefiboot1" {>= "37"}
+  "deb-libefivar1" {>= "37"}
+  "deb-libelf1" {>= "0.142"}
+  "deb-libfwupd2" {>= "1.2.9"}
+  "deb-libgcab-1-0-0" {>= "1.0"}
+  "deb-libglib2-0-0" {>= "2.53.2"}
+  "deb-libgnutls30" {>= "3.6.5"}
+  "deb-libgpg-error0" {>= "1.14"}
+  "deb-libgpgme11" {>= "1.2.0"}
+  "deb-libgudev-1-0-0" {>= "212"}
+  "deb-libgusb2" {>= "0.2.10"}
+  "deb-libjson-glib-1-0-0" {>= "1.2.0"}
+  "deb-libpolkit-gobject-1-0" {>= "0.99"}
+  "deb-libsmbios-c2"
+  "deb-libsoup2-4-1" {>= "2.41.90"}
+  "deb-libsqlite3-0" {>= "3.5.9"}
+  "deb-libxmlb1"
+  "deb-shared-mime-info"
+]
+extra-source "fwupd_1.2.14-1~deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fwupd/fwupd_1.2.14-1~deb10u1_amd64.deb"
+}

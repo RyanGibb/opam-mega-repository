@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnome-calls_0.2.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnome-calls"]
+]
+depends: [
+  "deb-callaudiod"
+  "deb-libc6" {>= "2.4"}
+  "deb-libcallaudio-0-1" {>= "0.0.5"}
+  "deb-libebook-contacts-1-2-3" {>= "3.16.2"}
+  "deb-libfeedback-0-0-0" {>= "0.0.0+git20200305"}
+  "deb-libfolks25" {>= "0.11.1"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.23.0"}
+  "deb-libgee-0-8-2" {>= "0.8.3"}
+  "deb-libglib2-0-0" {>= "2.63.3"}
+  "deb-libgom-1-0-0" {>= "0.3.2"}
+  "deb-libgtk-3-0" {>= "3.21.5"}
+  "deb-libhandy-1-0" {>= "0.82.0"}
+  "deb-libmm-glib0" {>= "1.5.993"}
+  "deb-libpeas-1-0-0" {>= "1.0.0"}
+  "deb-libwayland-client0" {>= "1.9.91"}
+  "deb-modemmanager"
+]
+extra-source "gnome-calls_0.2.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnome-calls/gnome-calls_0.2.0-2_amd64.deb"
+}

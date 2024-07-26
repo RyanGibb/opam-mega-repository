@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pglistener_5.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pglistener"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libnss-db"
+  "deb-libnss-myhostname"
+  "deb-libterm-readline-gnu-perl"
+  "deb-perl-any"
+  "deb-python3-any"
+  "deb-python3-bsddb3"
+  "deb-python3-psycopg2"
+  "deb-python3-sdnotify"
+]
+extra-source "pglistener_5.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pglistener/pglistener_5.0-2_all.deb"
+}

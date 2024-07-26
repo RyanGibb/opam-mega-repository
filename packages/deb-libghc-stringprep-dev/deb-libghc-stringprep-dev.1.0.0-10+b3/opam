@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-stringprep-dev_1.0.0-10+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-stringprep-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-text-icu-dev"
+  "deb-libgmp10"
+  "deb-libicu63" {>= "63.1-1~"}
+]
+extra-source "libghc-stringprep-dev_1.0.0-10+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-stringprep/libghc-stringprep-dev_1.0.0-10+b3_amd64.deb"
+}

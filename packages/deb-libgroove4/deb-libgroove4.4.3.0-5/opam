@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgroove4_4.3.0-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgroove4"]
+]
+depends: [
+  "deb-libavcodec-extra58"
+  "deb-libavfilter-extra7"
+  "deb-libavformat58" {>= "7-4.0"}
+  "deb-libavutil56" {>= "7-4.0"}
+  "deb-libc6" {>= "2.14"}
+]
+extra-source "libgroove4_4.3.0-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libg/libgroove/libgroove4_4.3.0-5_amd64.deb"
+}

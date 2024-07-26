@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libterm-readline-gnu-perl_1.45-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libterm-readline-gnu-perl"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libreadline8" {>= "8.2~beta"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-perl" {>= "5.36.0-4"}
+  "deb-perl-base"
+]
+extra-source "libterm-readline-gnu-perl_1.45-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libt/libterm-readline-gnu-perl/libterm-readline-gnu-perl_1.45-1_amd64.deb"
+}

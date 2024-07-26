@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i emacs-goodies-el_42.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r emacs-goodies-el"]
+]
+depends: [
+  "deb-elpa-apache-mode"
+  "deb-elpa-bar-cursor"
+  "deb-elpa-bm"
+  "deb-elpa-boxquote"
+  "deb-elpa-browse-kill-ring"
+  "deb-elpa-csv-mode"
+  "deb-elpa-diminish"
+  "deb-elpa-eproject"
+  "deb-elpa-folding"
+  "deb-elpa-graphviz-dot-mode"
+  "deb-elpa-htmlize"
+  "deb-elpa-initsplit"
+  "deb-elpa-markdown-mode"
+  "deb-elpa-mutt-alias"
+  "deb-elpa-muttrc-mode"
+  "deb-elpa-pod-mode"
+  "deb-elpa-session"
+  "deb-elpa-tabbar"
+]
+extra-source "emacs-goodies-el_42.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/emacs-goodies-el/emacs-goodies-el_42.2_all.deb"
+}

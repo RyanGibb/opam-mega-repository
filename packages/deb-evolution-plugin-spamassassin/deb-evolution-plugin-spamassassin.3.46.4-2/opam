@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i evolution-plugin-spamassassin_3.46.4-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r evolution-plugin-spamassassin"]
+]
+depends: [
+  "deb-evolution" {= "3.46.4-2"}
+  "deb-libc6" {>= "2.4"}
+  "deb-libcamel-1-2-64" {>= "3.46.4"}
+  "deb-libedataserver-1-2-27" {>= "3.46.4"}
+  "deb-libevolution" {< "3.47"}
+  "deb-libevolution" {>= "3.46.4"}
+  "deb-libglib2-0-0" {>= "2.66"}
+  "deb-libgtk-3-0" {>= "3.10.0"}
+  "deb-spamassassin"
+]
+extra-source "evolution-plugin-spamassassin_3.46.4-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/evolution/evolution-plugin-spamassassin_3.46.4-2_amd64.deb"
+}

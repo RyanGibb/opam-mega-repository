@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add amavis-2.13.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del amavis"]
+]
+depends: [
+  "apk-file" {= "5.45-r1"}
+  "apk-perl" {= "5.38.2-r0"}
+  "apk-perl-archive-zip" {= "1.68-r3"}
+  "apk-perl-carp" {= "1.50-r3"}
+  "apk-perl-compress-raw-zlib" {= "2.212-r0"}
+  "apk-perl-convert-tnef" {= "0.18-r7"}
+  "apk-perl-convert-uulib" {= "1.8-r3"}
+  "apk-perl-digest-md5" {= "2.59-r1"}
+  "apk-perl-exporter" {= "5.78-r1"}
+  "apk-perl-io" {= "1.55-r1"}
+  "apk-perl-io-socket-inet6" {= "2.73-r2"}
+  "apk-perl-io-socket-ssl" {= "2.085-r0"}
+  "apk-perl-io-stringy" {= "2.113-r3"}
+  "apk-perl-mail-dkim" {= "1.20240124-r0"}
+  "apk-perl-mail-spamassassin" {= "3.4.6-r7"}
+  "apk-perl-mailtools" {= "2.21-r4"}
+  "apk-perl-mime-tools" {= "5.515-r0"}
+  "apk-perl-net-libidn" {= "0.12-r15"}
+  "apk-perl-net-server" {= "2.014-r2"}
+  "apk-perl-socket" {= "2.038-r0"}
+  "apk-perl-time-hires" {= "1.9764-r7"}
+  "apk-perl-unix-syslog" {= "1.1-r21"}
+  "apk-sed" {= "4.9-r2"}
+  ("apk-busybox-binsh" {= "1.36.1-r29"} | "apk-dash-binsh" {= "0.5.12-r2"} | "apk-yash-binsh" {= "2.56.1-r1"})
+]
+extra-source "amavis-2.13.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/amavis-2.13.0-r1.apk"
+}

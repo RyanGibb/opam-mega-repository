@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i density-fitness_1.0.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r density-fitness"]
+]
+depends: [
+  "deb-libboost-iostreams1-74-0" {>= "1.74.0"}
+  "deb-libboost-program-options1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcifpp1" {>= "1.0.1"}
+  "deb-libclipper2" {>= "2.1.20201109"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libpdb-redo1" {>= "1.0.2"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libzeep5" {>= "5.0.2"}
+]
+extra-source "density-fitness_1.0.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/density-fitness/density-fitness_1.0.0-2_amd64.deb"
+}

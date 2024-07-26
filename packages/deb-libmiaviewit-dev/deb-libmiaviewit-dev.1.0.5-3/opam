@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmiaviewit-dev_1.0.5-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmiaviewit-dev"]
+]
+depends: [
+  "deb-libboost-thread-dev"
+  "deb-libgle3-dev"
+  "deb-libgtkglextmm-x11-1-2-dev"
+  "deb-libgtkmm-2-4-dev"
+  "deb-libmia-2-4-dev"
+  "deb-libmiaviewit0" {= "1.0.5-3"}
+  "deb-libvistaio-dev"
+]
+extra-source "libmiaviewit-dev_1.0.5-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/miaviewit/libmiaviewit-dev_1.0.5-3_amd64.deb"
+}

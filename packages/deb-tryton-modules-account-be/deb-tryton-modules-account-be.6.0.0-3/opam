@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tryton-modules-account-be_6.0.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tryton-modules-account-be"]
+]
+depends: [
+  "deb-libjs-sphinxdoc" {>= "5.2"}
+  "deb-python3-any"
+  "deb-python3-pkg-resources"
+  "deb-tryton-modules-account" {>= "6.0"}
+  "deb-tryton-modules-account-eu" {>= "6.0"}
+  "deb-tryton-server"
+  "deb-tryton-server" {>= "6.0"}
+]
+extra-source "tryton-modules-account-be_6.0.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tryton-modules-account-be/tryton-modules-account-be_6.0.0-3_all.deb"
+}

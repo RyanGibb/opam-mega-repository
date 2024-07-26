@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnuastro_0.8-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnuastro"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libcfitsio7" {>= "3.450~"}
+  "deb-libgit2-27" {>= "0.26.0"}
+  "deb-libgnuastro6" {= "0.8-1"}
+  "deb-libgsl23" {>= "2.5"}
+  "deb-libgslcblas0" {>= "2.4"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-liblzma5" {>= "5.1.1alpha+20110809"}
+  "deb-libtiff5" {>= "4.0.3"}
+  "deb-libwcs6" {>= "4.8.2"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "gnuastro_0.8-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnuastro/gnuastro_0.8-1_amd64.deb"
+}

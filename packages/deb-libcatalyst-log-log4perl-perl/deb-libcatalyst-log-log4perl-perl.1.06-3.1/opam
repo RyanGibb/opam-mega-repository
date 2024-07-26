@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcatalyst-log-log4perl-perl_1.06-3.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcatalyst-log-log4perl-perl"]
+]
+depends: [
+  "deb-libcatalyst-perl" {>= "5.60"}
+  "deb-libdata-dump-perl"
+  "deb-liblog-log4perl-perl" {>= "1.04"}
+  "deb-libmro-compat-perl"
+  "deb-libparams-validate-perl"
+  "deb-perl-any"
+]
+extra-source "libcatalyst-log-log4perl-perl_1.06-3.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libcatalyst-log-log4perl-perl/libcatalyst-log-log4perl-perl_1.06-3.1_all.deb"
+}

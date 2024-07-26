@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i intel-opencl-icd_22.43.24595.41-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r intel-opencl-icd"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.4"}
+  "deb-libigc1"
+  "deb-libigc1" {< "1.0.12504.6+~"}
+  "deb-libigc1" {>= "1.0.12504.6"}
+  "deb-libigdfcl1"
+  "deb-libigdfcl1" {< "1.0.12504.6+~"}
+  "deb-libigdfcl1" {>= "1.0.12504.6"}
+  "deb-libigdgmm12" {>= "22.3.2+ds1"}
+  "deb-libstdc++6" {>= "12"}
+  "deb-ocl-icd-libopencl1"
+]
+extra-source "intel-opencl-icd_22.43.24595.41-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/intel-compute-runtime/intel-opencl-icd_22.43.24595.41-1_amd64.deb"
+}

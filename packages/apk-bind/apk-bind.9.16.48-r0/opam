@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add bind-9.16.48-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del bind"]
+]
+depends: [
+  "apk-bind-dnssec-root" {= "9.16.48-r0"}
+  "apk-bind-libs" {= "9.16.48-r0"}
+  "apk-bind-tools" {= "9.16.48-r0"}
+  "apk-busybox" {= "1.35.0-r18"}
+  "apk-dns-root-hints" {= "2019073000-r3"}
+  "apk-fstrm" {= "0.6.1-r0"}
+  "apk-json-c" {= "0.16-r0"}
+  "apk-libcap" {= "2.64-r1"}
+  "apk-libcrypto1-1" {= "1.1.1w-r1"}
+  "apk-libldap" {= "2.6.3-r3"}
+  "apk-libuv" {= "1.44.1-r0"}
+  "apk-libxml2" {= "2.9.14-r2"}
+  "apk-musl" {= "1.2.3-r3"}
+  "apk-protobuf-c" {= "1.4.1-r0"}
+  "apk-zlib" {= "1.2.12-r3"}
+]
+extra-source "bind-9.16.48-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/bind-9.16.48-r0.apk"
+}

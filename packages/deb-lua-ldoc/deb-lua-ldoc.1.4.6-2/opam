@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lua-ldoc_1.4.6-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lua-ldoc"]
+]
+depends: [
+  "deb-lua-any"
+  "deb-lua-filesystem"
+  "deb-lua-penlight"
+  ("deb-lua5-1" | "deb- lua5-2" | "deb- lua5-3" | "deb- lua5-4")
+]
+extra-source "lua-ldoc_1.4.6-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lua-ldoc/lua-ldoc_1.4.6-2_all.deb"
+}

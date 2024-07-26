@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i firewall-applet_0.6.3-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r firewall-applet"]
+]
+depends: [
+  "deb-firewall-config" {= "0.6.3-5"}
+  "deb-firewalld" {= "0.6.3-5"}
+  "deb-gir1-2-nm-1-0"
+  "deb-gir1-2-notify-0-7"
+  "deb-python3-any"
+  "deb-python3-dbus"
+  "deb-python3-dbus-mainloop-pyqt5"
+  "deb-python3-gi"
+  "deb-python3-pyqt5"
+  "deb-python3-slip-dbus"
+]
+extra-source "firewall-applet_0.6.3-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/firewalld/firewall-applet_0.6.3-5_all.deb"
+}

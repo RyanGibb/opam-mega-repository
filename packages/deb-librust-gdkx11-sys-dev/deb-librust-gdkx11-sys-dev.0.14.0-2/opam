@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-gdkx11-sys-dev_0.14.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-gdkx11-sys-dev"]
+]
+depends: [
+  "deb-librust-cairo-sys-rs-0-14+default-dev"
+  "deb-librust-gdk-sys-0-14+default-dev"
+  "deb-librust-glib-sys-0-14+default-dev"
+  "deb-librust-libc-0-2+default-dev"
+  "deb-librust-system-deps-6+default-dev"
+  "deb-librust-x11-dev"
+]
+extra-source "librust-gdkx11-sys-dev_0.14.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-gdkx11-sys/librust-gdkx11-sys-dev_0.14.0-2_amd64.deb"
+}

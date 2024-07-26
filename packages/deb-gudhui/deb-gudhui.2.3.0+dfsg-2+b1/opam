@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gudhui_2.3.0+dfsg-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gudhui"]
+]
+depends: [
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcgal13"
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgl1"
+  "deb-libgmp10"
+  "deb-libgmpxx4ldbl"
+  "deb-libmpfr6" {>= "3.1.3"}
+  "deb-libqglviewer2-qt5"
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5gui5" {>= "5.0.2"}
+  "deb-libqt5opengl5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-libqt5xml5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtbb2"
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+extra-source "gudhui_2.3.0+dfsg-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gudhi/gudhui_2.3.0+dfsg-2+b1_amd64.deb"
+}

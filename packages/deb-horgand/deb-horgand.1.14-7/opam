@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i horgand_1.14-7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r horgand"]
+]
+depends: [
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libc6" {>= "2.15"}
+  "deb-libfltk1-1" {>= "1.1.7"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libsndfile1" {>= "1.0.20"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libx11-6"
+  "deb-libxpm4"
+  ("deb-libjack-jackd2-0" {>= "1.9.5~dfsg-14"} | "deb- libjack-0-116")
+]
+extra-source "horgand_1.14-7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/horgand/horgand_1.14-7_amd64.deb"
+}

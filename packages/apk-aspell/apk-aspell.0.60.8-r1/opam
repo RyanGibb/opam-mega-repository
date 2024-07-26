@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add aspell-0.60.8-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del aspell"]
+]
+depends: [
+  "apk-aspell-libs" {= "0.60.8-r1"}
+  "apk-libintl" {= "0.21-r2"}
+  "apk-libstdc++" {= "11.2.1_git20220219-r2"}
+  "apk-musl" {= "1.2.3-r3"}
+  "apk-ncurses-libs" {= "6.3_p20220521-r1"}
+]
+extra-source "aspell-0.60.8-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/aspell-0.60.8-r1.apk"
+}

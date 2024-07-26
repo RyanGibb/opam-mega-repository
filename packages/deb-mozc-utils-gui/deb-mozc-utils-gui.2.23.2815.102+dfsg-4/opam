@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mozc-utils-gui_2.23.2815.102+dfsg-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mozc-utils-gui"]
+]
+depends: [
+  "deb-libc6" {>= "2.15"}
+  "deb-libprotobuf17"
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5gui5" {>= "5.2.0"}
+  "deb-libqt5widgets5" {>= "5.11.0~rc1"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libzinnia0"
+  "deb-mozc-data"
+  "deb-tegaki-zinnia-japanese"
+]
+extra-source "mozc-utils-gui_2.23.2815.102+dfsg-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mozc/mozc-utils-gui_2.23.2815.102+dfsg-4_amd64.deb"
+}

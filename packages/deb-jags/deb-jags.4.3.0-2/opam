@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i jags_4.3.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r jags"]
+]
+depends: [
+  "deb-libc6" {>= "2.23"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libltdl7" {>= "2.4.6"}
+  "deb-libstdc++6" {>= "5.2"}
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "jags_4.3.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/j/jags/jags_4.3.0-2_amd64.deb"
+}

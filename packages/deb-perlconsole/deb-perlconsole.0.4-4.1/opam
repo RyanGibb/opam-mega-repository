@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i perlconsole_0.4-4.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r perlconsole"]
+]
+depends: [
+  "deb-libb-keywords-perl"
+  "deb-liblexical-persistence-perl"
+  "deb-libmodule-refresh-perl"
+  "deb-libterm-readline-gnu-perl"
+  "deb-perl-any"
+]
+extra-source "perlconsole_0.4-4.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/perlconsole/perlconsole_0.4-4.1_all.deb"
+}

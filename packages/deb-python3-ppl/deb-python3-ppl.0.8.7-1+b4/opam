@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-ppl_0.8.7-1+b4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-ppl"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-libppl14"
+  "deb-libstdc++6" {>= "11"}
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-any"
+  "deb-python3-cysignals-pari"
+  "deb-python3-gmpy2"
+]
+extra-source "python3-ppl_0.8.7-1+b4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pplpy/python3-ppl_0.8.7-1+b4_amd64.deb"
+}

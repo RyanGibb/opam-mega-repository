@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mate-indicator-applet_1.24.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mate-indicator-applet"]
+]
+depends: [
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libayatana-ido3-0-4-0" {>= "0.4.0"}
+  "deb-libayatana-indicator3-7" {>= "0.6.0"}
+  "deb-libc6" {>= "2.4"}
+  "deb-libglib2-0-0" {>= "2.22.0"}
+  "deb-libgtk-3-0" {>= "3.0.0"}
+  "deb-libmate-panel-applet-4-1" {>= "1.18"}
+  "deb-libx11-6"
+  "deb-mate-indicator-applet-common" {= "1.24.0-2"}
+  "deb-mate-panel"
+]
+extra-source "mate-indicator-applet_1.24.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mate-indicator-applet/mate-indicator-applet_1.24.0-2_amd64.deb"
+}

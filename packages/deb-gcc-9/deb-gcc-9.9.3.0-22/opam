@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gcc-9_9.3.0-22_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gcc-9"]
+]
+depends: [
+  "deb-binutils" {>= "2.35.1"}
+  "deb-cpp-9" {= "9.3.0-22"}
+  "deb-gcc-9-base" {= "9.3.0-22"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcc1-0" {>= "9.3.0-22"}
+  "deb-libgcc-9-dev" {= "9.3.0-22"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgmp10" {>= "2-5.0.1~"}
+  "deb-libisl23" {>= "0.15"}
+  "deb-libmpc3" {>= "1.1.0"}
+  "deb-libmpfr6" {>= "3.1.3"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "gcc-9_9.3.0-22_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gcc-9/gcc-9_9.3.0-22_amd64.deb"
+}

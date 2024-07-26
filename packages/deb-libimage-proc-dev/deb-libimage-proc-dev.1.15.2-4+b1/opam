@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libimage-proc-dev_1.15.2-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libimage-proc-dev"]
+]
+depends: [
+  "deb-libcv-bridge-dev"
+  "deb-libdynamic-reconfigure-config-init-mutex-dev"
+  "deb-libimage-geometry-dev"
+  "deb-libimage-proc0d" {= "1.15.2-4+b1"}
+  "deb-libimage-transport-dev"
+  "deb-libnodelet-dev"
+  "deb-libnodelet-topic-tools-dev"
+  "deb-libsensor-msgs-dev"
+]
+extra-source "libimage-proc-dev_1.15.2-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ros-image-pipeline/libimage-proc-dev_1.15.2-4+b1_amd64.deb"
+}

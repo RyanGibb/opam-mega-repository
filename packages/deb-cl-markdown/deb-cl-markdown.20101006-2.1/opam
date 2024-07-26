@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cl-markdown_20101006-2.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cl-markdown"]
+]
+depends: [
+  "deb-cl-anaphora"
+  "deb-cl-containers"
+  "deb-cl-dynamic-classes"
+  "deb-cl-metabang-bind"
+  "deb-cl-metatilities-base"
+  "deb-cl-ppcre"
+]
+extra-source "cl-markdown_20101006-2.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cl-markdown/cl-markdown_20101006-2.1_all.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libwxsvg-dev_2:1.5.15+dfsg.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libwxsvg-dev"]
+]
+depends: [
+  "deb-libart-2-0-dev"
+  "deb-libavcodec-dev"
+  "deb-libavformat-dev"
+  "deb-libexpat1-dev"
+  "deb-libpango1-0-dev"
+  "deb-libswscale-dev"
+  "deb-libwxgtk3-0-dev"
+  "deb-libwxsvg3" {= "2-1.5.15+dfsg.2-1"}
+  "deb-pkg-config"
+]
+extra-source "libwxsvg-dev_2:1.5.15+dfsg.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/w/wxsvg/libwxsvg-dev_1.5.15+dfsg.2-1_amd64.deb"
+}

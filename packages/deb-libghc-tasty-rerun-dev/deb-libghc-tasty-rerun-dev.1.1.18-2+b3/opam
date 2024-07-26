@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-tasty-rerun-dev_1.1.18-2+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-tasty-rerun-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-optparse-applicative-dev"
+  "deb-libghc-split-dev"
+  "deb-libghc-tagged-dev"
+  "deb-libghc-tasty-dev"
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+]
+extra-source "libghc-tasty-rerun-dev_1.1.18-2+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-tasty-rerun/libghc-tasty-rerun-dev_1.1.18-2+b3_amd64.deb"
+}

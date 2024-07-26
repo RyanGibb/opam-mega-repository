@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ledger-autosync_1.0.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ledger-autosync"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-ofxclient"
+  "deb-python3-ofxparse" {>= "0.14"}
+  "deb-python3-pkg-resources"
+  ("deb-hledger" | "deb- ledger")
+]
+extra-source "ledger-autosync_1.0.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/ledger-autosync/ledger-autosync_1.0.2-1_all.deb"
+}

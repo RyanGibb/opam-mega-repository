@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i liblog-dispatch-config-perl_1.04-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r liblog-dispatch-config-perl"]
+]
+depends: [
+  "deb-libappconfig-perl"
+  "deb-libio-stringy-perl"
+  "deb-liblog-dispatch-perl"
+  "deb-perl-any"
+]
+extra-source "liblog-dispatch-config-perl_1.04-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libl/liblog-dispatch-config-perl/liblog-dispatch-config-perl_1.04-3_all.deb"
+}

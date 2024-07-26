@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-monad-unlift-dev_0.2.0-6+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-monad-unlift-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-constraints-dev"
+  "deb-libghc-monad-control-dev"
+  "deb-libghc-transformers-base-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-monad-unlift-dev_0.2.0-6+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-monad-unlift/libghc-monad-unlift-dev_0.2.0-6+b2_amd64.deb"
+}

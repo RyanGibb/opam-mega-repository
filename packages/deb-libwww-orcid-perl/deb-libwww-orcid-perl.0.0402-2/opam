@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libwww-orcid-perl_0.0402-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libwww-orcid-perl"]
+]
+depends: [
+  "deb-libclass-load-perl"
+  "deb-libhttp-tiny-perl"
+  "deb-libjson-perl"
+  "deb-liblog-any-perl"
+  "deb-libmoo-perl"
+  "deb-libnamespace-clean-perl"
+  "deb-libsub-quote-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-perl-any"
+]
+extra-source "libwww-orcid-perl_0.0402-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libw/libwww-orcid-perl/libwww-orcid-perl_0.0402-2_all.deb"
+}

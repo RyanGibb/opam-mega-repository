@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-jacobsa-gcloud-dev_0.0~git20150709-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-jacobsa-gcloud-dev"]
+]
+depends: [
+  "deb-golang-github-jacobsa-fuse-dev"
+  "deb-golang-github-jacobsa-oglematchers-dev"
+  "deb-golang-github-jacobsa-oglemock-dev"
+  "deb-golang-github-jacobsa-ogletest-dev"
+  "deb-golang-github-jacobsa-reqtrace-dev"
+  "deb-golang-github-jacobsa-syncutil-dev"
+  "deb-golang-github-jacobsa-timeutil-dev"
+  "deb-golang-github-jacobsa-util-dev"
+  "deb-golang-golang-x-net-dev"
+  "deb-golang-golang-x-oauth2-dev"
+  "deb-golang-golang-x-sys-dev"
+  "deb-golang-google-api-dev"
+]
+extra-source "golang-github-jacobsa-gcloud-dev_0.0~git20150709-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-jacobsa-gcloud/golang-github-jacobsa-gcloud-dev_0.0~git20150709-3_all.deb"
+}

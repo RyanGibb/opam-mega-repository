@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xmlto-0.0.28-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xmlto"]
+]
+depends: [
+  "apk-bash" {= "5.2.26-r0"}
+  "apk-docbook-xsl" {= "1.79.2-r9"}
+  "apk-libxslt" {= "1.1.39-r1"}
+  "apk-musl" {= "1.2.5-r0"}
+  "apk-perl-test-pod" {= "1.52-r4"}
+  "apk-perl-yaml-syck" {= "1.34-r4"}
+]
+extra-source "xmlto-0.0.28-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/xmlto-0.0.28-r4.apk"
+}

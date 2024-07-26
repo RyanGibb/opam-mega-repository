@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-zodb_1:3.10.7-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-zodb"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-python" {< "2.8"}
+  "deb-python" {>= "2.7~"}
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7.5-5~"}
+  "deb-python-persistent"
+  "deb-python-transaction" {>= "1.1.0"}
+  "deb-python-zc-lockfile"
+  "deb-python-zconfig"
+  "deb-python-zdaemon"
+  "deb-python-zope-event"
+  "deb-python-zope-interface"
+]
+extra-source "python-zodb_1:3.10.7-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/z/zodb/python-zodb_3.10.7-1_amd64.deb"
+}

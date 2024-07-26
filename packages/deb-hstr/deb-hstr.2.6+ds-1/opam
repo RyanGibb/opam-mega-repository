@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i hstr_2.6+ds-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r hstr"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libncursesw6" {>= "6"}
+  "deb-libreadline8" {>= "6.0"}
+  "deb-libtinfo6" {>= "6"}
+]
+extra-source "hstr_2.6+ds-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/hstr/hstr_2.6+ds-1_amd64.deb"
+}

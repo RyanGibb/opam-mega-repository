@@ -1,0 +1,63 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i budgie-control-center_1.2.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r budgie-control-center"]
+]
+depends: [
+  "deb-accountsservice"
+  "deb-apg"
+  "deb-budgie-control-center-data"
+  "deb-colord" {>= "0.1.30"}
+  "deb-desktop-file-utils"
+  "deb-gnome-desktop3-data"
+  "deb-gnome-settings-daemon" {>= "41"}
+  "deb-gsettings-desktop-schemas" {>= "40"}
+  "deb-libaccountsservice0" {>= "0.6.40"}
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.14.0"}
+  "deb-libcheese-gtk25" {>= "3.18.0"}
+  "deb-libcheese8" {>= "3.28.0"}
+  "deb-libcolord-gtk1" {>= "0.1.24"}
+  "deb-libcolord2" {>= "1.4.3"}
+  "deb-libcups2" {>= "1.7.0"}
+  "deb-libepoxy0" {>= "1.0"}
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libgcr-base-3-1" {>= "3.8.0"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.25.2"}
+  "deb-libglib2-0-0" {>= "2.70.0"}
+  "deb-libgnome-bluetooth13" {>= "3.18.2"}
+  "deb-libgnome-desktop-3-20" {>= "42.3"}
+  "deb-libgnutls30" {>= "3.7.0"}
+  "deb-libgoa-1-0-0b" {>= "3.25.3"}
+  "deb-libgoa-backend-1-0-1" {>= "3.25.3"}
+  "deb-libgsound0" {>= "1.0.1"}
+  "deb-libgtk-3-0" {>= "3.22.20"}
+  "deb-libgtop-2-0-11" {>= "2.22.3"}
+  "deb-libgudev-1-0-0" {>= "232"}
+  "deb-libhandy-1-0" {>= "1.2.0"}
+  "deb-libibus-1-0-5" {>= "1.5.2"}
+  "deb-libkrb5-3" {>= "1.8+dfsg"}
+  "deb-libmm-glib0" {>= "1.6.8"}
+  "deb-libnm0" {>= "1.24.0"}
+  "deb-libnma0" {>= "1.8.0"}
+  "deb-libpango-1-0-0" {>= "1.37.2"}
+  "deb-libpangocairo-1-0-0" {>= "1.18.0"}
+  "deb-libpolkit-gobject-1-0" {>= "0.103"}
+  "deb-libpulse-mainloop-glib0" {>= "13.0~"}
+  "deb-libpulse0" {>= "13.0~"}
+  "deb-libpwquality1" {>= "1.1.0"}
+  "deb-libsecret-1-0" {>= "0.7"}
+  "deb-libsmbclient" {>= "2-4.0.3+dfsg1"}
+  "deb-libudisks2-0" {>= "2.0.0"}
+  "deb-libupower-glib3" {>= "0.99.8"}
+  "deb-libwacom9" {>= "2.0.0"}
+  "deb-libx11-6"
+  "deb-libxi6" {>= "2-1.2.99.4"}
+  "deb-libxml2" {>= "2.7.4"}
+]
+extra-source "budgie-control-center_1.2.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/budgie-control-center/budgie-control-center_1.2.0-1_amd64.deb"
+}

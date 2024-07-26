@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pianobooster_1.0.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pianobooster"]
+]
+depends: [
+  "deb-fluid-soundfont-gm"
+  "deb-fluid-soundfont-gs"
+  "deb-fonts-dejavu-core"
+  "deb-hicolor-icon-theme"
+  "deb-libc6" {>= "2.34"}
+  "deb-libfluidsynth3" {>= "2.2.0"}
+  "deb-libftgl2" {>= "2.4.0"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgl1"
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5gui5" {>= "5.1.0"}
+  "deb-libqt5widgets5" {>= "5.4.0"}
+  "deb-libqt5xml5" {>= "5.0.2"}
+  "deb-librtmidi6" {>= "5.0.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-timidity"
+  "deb-unzip"
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+]
+extra-source "pianobooster_1.0.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pianobooster/pianobooster_1.0.0-3_amd64.deb"
+}

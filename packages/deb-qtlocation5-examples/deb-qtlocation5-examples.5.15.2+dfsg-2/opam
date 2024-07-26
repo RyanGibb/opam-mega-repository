@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qtlocation5-examples_5.15.2+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qtlocation5-examples"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5location5" {>= "5.14.1"}
+  "deb-libqt5location5-plugins" {= "5.15.2+dfsg-2"}
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libqt5positioning5" {>= "5.9.0"}
+  "deb-libqt5positioning5-plugins" {= "5.15.2+dfsg-2"}
+  "deb-libqt5qml5" {>= "5.15.2+dfsg~"}
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-qml-module-qtlocation" {= "5.15.2+dfsg-2"}
+  "deb-qml-module-qtpositioning" {= "5.15.2+dfsg-2"}
+  ("deb-libqt5gui5" {>= "5.2.0"} | "deb- libqt5gui5-gles" {>= "5.2.0"})
+  ("deb-libqt5quick5" {>= "5.15.2+dfsg~"} | "deb- libqt5quick5-gles" {>= "5.15.2+dfsg~"})
+]
+extra-source "qtlocation5-examples_5.15.2+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qtlocation-opensource-src/qtlocation5-examples_5.15.2+dfsg-2_amd64.deb"
+}

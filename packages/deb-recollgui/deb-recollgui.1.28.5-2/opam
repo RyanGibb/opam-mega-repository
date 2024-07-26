@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i recollgui_1.28.5-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r recollgui"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5printsupport5" {>= "5.0.2"}
+  "deb-libqt5webkit5" {>= "5.212.0~alpha3"}
+  "deb-libqt5widgets5" {>= "5.14.1"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-recollcmd" {= "1.28.5-2"}
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+]
+extra-source "recollgui_1.28.5-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/recoll/recollgui_1.28.5-2_amd64.deb"
+}

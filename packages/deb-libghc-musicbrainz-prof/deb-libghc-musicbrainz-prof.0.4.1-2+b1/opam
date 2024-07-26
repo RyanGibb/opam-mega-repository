@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-musicbrainz-prof_0.4.1-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-musicbrainz-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-aeson-prof"
+  "deb-libghc-conduit-extra-prof"
+  "deb-libghc-conduit-prof"
+  "deb-libghc-http-conduit-prof"
+  "deb-libghc-http-prof"
+  "deb-libghc-http-types-prof"
+  "deb-libghc-monad-control-prof"
+  "deb-libghc-musicbrainz-dev" {= "0.4.1-2+b1"}
+  "deb-libghc-resourcet-prof"
+  "deb-libghc-time-locale-compat-prof"
+  "deb-libghc-unliftio-core-prof"
+  "deb-libghc-vector-prof"
+  "deb-libghc-xml-conduit-prof"
+  "deb-libghc-xml-types-prof"
+]
+extra-source "libghc-musicbrainz-prof_0.4.1-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-musicbrainz/libghc-musicbrainz-prof_0.4.1-2+b1_amd64.deb"
+}

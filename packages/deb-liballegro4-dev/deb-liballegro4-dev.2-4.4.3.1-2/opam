@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i liballegro4-dev_2:4.4.3.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r liballegro4-dev"]
+]
+depends: [
+  "deb-liballegro4-4" {= "2-4.4.3.1-2"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libjpgalleg4-4" {>= "2-4.4.3.1"}
+  "deb-libx11-dev"
+  "deb-libxcursor-dev"
+  "deb-libxext-dev"
+  "deb-libxpm-dev"
+  "deb-libxxf86vm-dev"
+]
+conflicts: [
+  "deb-liballegro-dev"
+  "deb-liballegro-dev-common"
+  "deb-liballegro4-2-dev"
+  "deb-liballegro4a"
+]
+extra-source "liballegro4-dev_2:4.4.3.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/allegro4.4/liballegro4-dev_4.4.3.1-2_amd64.deb"
+}

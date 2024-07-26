@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gnupg-2.2.23-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gnupg"]
+]
+depends: [
+  "apk-gnutls" {= "3.6.15-r1"}
+  "apk-libassuan" {= "2.5.3-r0"}
+  "apk-libbz2" {= "1.0.8-r1"}
+  "apk-libgcrypt" {= "1.8.8-r1"}
+  "apk-libgpg-error" {= "1.37-r0"}
+  "apk-libksba" {= "1.4.0-r0"}
+  "apk-libldap" {= "2.4.58-r0"}
+  "apk-musl" {= "1.1.24-r10"}
+  "apk-npth" {= "1.6-r0"}
+  "apk-pinentry" {= "1.1.0-r2"}
+  "apk-sqlite-libs" {= "3.32.1-r1"}
+  "apk-zlib" {= "1.2.12-r3"}
+]
+extra-source "gnupg-2.2.23-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/gnupg-2.2.23-r1.apk"
+}

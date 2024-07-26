@@ -1,0 +1,52 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i paraview_5.4.1+dfsg4-3.1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r paraview"]
+]
+depends: [
+  "deb-libavcodec-extra58"
+  "deb-libavformat58" {>= "7-4.0"}
+  "deb-libavutil56" {>= "7-4.0"}
+  "deb-libc6" {>= "2.27"}
+  "deb-libcgns3-3" {>= "3.1.4.2"}
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libfreetype6" {>= "2.3.5"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgl1"
+  "deb-libgl2ps1-4"
+  "deb-libglew2-1" {>= "1.12.0"}
+  "deb-libhdf5-103"
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libjsoncpp1" {>= "1.7.4"}
+  "deb-libnetcdf13" {>= "4.0.1"}
+  "deb-libogg0" {>= "1.0rc3"}
+  "deb-libopenmpi3"
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libprotobuf17"
+  "deb-libpython2-7" {>= "2.7"}
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5gui5" {>= "5.8.0"}
+  "deb-libqt5help5" {>= "5.6.0~beta"}
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.11.0~rc1"}
+  "deb-libqt5x11extras5" {>= "5.6.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libswscale5" {>= "7-4.0"}
+  "deb-libtheora0" {>= "1.0"}
+  "deb-libtiff5" {>= "4.0.3"}
+  "deb-libx11-6"
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libxt6"
+  "deb-python-autobahn"
+  "deb-python-matplotlib"
+  "deb-python-mpi4py"
+  "deb-python-six"
+  "deb-python-twisted"
+  "deb-tcl"
+  "deb-zlib1g" {>= "1-1.2.3.4"}
+]
+extra-source "paraview_5.4.1+dfsg4-3.1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/paraview/paraview_5.4.1+dfsg4-3.1+b2_amd64.deb"
+}

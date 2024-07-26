@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-authenticate-dev_1.3.5.1-1+b4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-authenticate-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-aeson-dev"
+  "deb-libghc-attoparsec-dev"
+  "deb-libghc-blaze-builder-dev"
+  "deb-libghc-case-insensitive-dev"
+  "deb-libghc-conduit-dev"
+  "deb-libghc-html-conduit-dev"
+  "deb-libghc-http-conduit-dev"
+  "deb-libghc-http-types-dev"
+  "deb-libghc-network-uri-dev"
+  "deb-libghc-resourcet-dev"
+  "deb-libghc-unordered-containers-dev"
+  "deb-libghc-xml-conduit-dev"
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libghc-authenticate-dev_1.3.5.1-1+b4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-authenticate/libghc-authenticate-dev_1.3.5.1-1+b4_amd64.deb"
+}

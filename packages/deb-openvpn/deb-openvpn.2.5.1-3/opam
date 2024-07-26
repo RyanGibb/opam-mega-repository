@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openvpn_2.5.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openvpn"]
+]
+depends: [
+  "deb-iproute2"
+  "deb-libc6" {>= "2.15"}
+  "deb-liblz4-1" {>= "0.0~r130"}
+  "deb-liblzo2-2" {>= "2.02"}
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-libpkcs11-helper1" {>= "1.11"}
+  "deb-libssl1-1" {>= "1.1.1"}
+  "deb-libsystemd0"
+  "deb-lsb-base" {>= "3.0-6"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "openvpn_2.5.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openvpn/openvpn_2.5.1-3_amd64.deb"
+}

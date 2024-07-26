@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-glob-stream_6.1.0+~6.1.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-glob-stream"]
+]
+depends: [
+  "deb-node-extend" {>= "3.0~"}
+  "deb-node-glob" {>= "7.1.1~"}
+  "deb-node-glob-parent" {>= "3.1~"}
+  "deb-node-is-negated-glob"
+  "deb-node-ordered-read-streams"
+  "deb-node-pumpify"
+  "deb-node-readable-stream"
+  "deb-node-remove-trailing-separator"
+  "deb-node-to-absolute-glob"
+  "deb-node-unique-stream"
+  "deb-nodejs"
+]
+extra-source "node-glob-stream_6.1.0+~6.1.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-glob-stream/node-glob-stream_6.1.0+~6.1.0-1_all.deb"
+}

@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mate-utils_1.20.2-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mate-utils"]
+]
+depends: [
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.7"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.10.0"}
+  "deb-libcanberra-gtk3-0" {>= "0.25"}
+  "deb-libcanberra0" {>= "0.2"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libgtk-3-0" {>= "3.21.4"}
+  "deb-libgtop-2-0-11" {>= "2.22.3"}
+  "deb-libice6" {>= "1-1.0.0"}
+  "deb-libmate-panel-applet-4-1" {>= "1.18"}
+  "deb-libmatedict6" {= "1.20.2-3"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libsm6"
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-mate-desktop-common"
+  "deb-mate-utils-common" {>= "1.20.2-3"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "mate-utils_1.20.2-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mate-utils/mate-utils_1.20.2-3_amd64.deb"
+}

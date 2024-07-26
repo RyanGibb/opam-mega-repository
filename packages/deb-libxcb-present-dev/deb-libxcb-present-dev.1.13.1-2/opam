@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libxcb-present-dev_1.13.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libxcb-present-dev"]
+]
+depends: [
+  "deb-libxcb-present0" {= "1.13.1-2"}
+  "deb-libxcb-randr0-dev"
+  "deb-libxcb-sync-dev"
+  "deb-libxcb-xfixes0-dev"
+  "deb-libxcb1-dev"
+]
+extra-source "libxcb-present-dev_1.13.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libx/libxcb/libxcb-present-dev_1.13.1-2_amd64.deb"
+}

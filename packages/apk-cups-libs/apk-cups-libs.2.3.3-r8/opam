@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add cups-libs-2.3.3-r8.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del cups-libs"]
+]
+depends: [
+  "apk-avahi-libs" {= "0.8-r5"}
+  "apk-gnutls" {= "3.7.1-r2"}
+  "apk-musl" {= "1.2.2-r9"}
+  "apk-zlib" {= "1.2.12-r3"}
+]
+extra-source "cups-libs-2.3.3-r8.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/cups-libs-2.3.3-r8.apk"
+}

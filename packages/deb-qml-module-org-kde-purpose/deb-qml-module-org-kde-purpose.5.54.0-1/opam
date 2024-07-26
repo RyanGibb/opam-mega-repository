@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qml-module-org-kde-purpose_5.54.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qml-module-org-kde-purpose"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libkf5coreaddons5" {>= "4.97.0"}
+  "deb-libkf5purpose-bin" {= "5.54.0-1"}
+  "deb-libkf5purpose5" {= "5.54.0-1"}
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5gui5" {>= "5.9.0~"}
+  "deb-libqt5qml5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-qml-module-qtquick-controls"
+  "deb-qml-module-qtquick-controls2"
+  "deb-qml-module-qtquick-layouts"
+  "deb-qml-module-qtquick2"
+]
+extra-source "qml-module-org-kde-purpose_5.54.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/purpose/qml-module-org-kde-purpose_5.54.0-1_amd64.deb"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i axiom-graphics_20170501-12_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r axiom-graphics"]
+]
+depends: [
+  "deb-axiom" {= "20170501-12"}
+  "deb-axiom-graphics-data" {= "20170501-12"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libx11-6"
+  "deb-libxpm4"
+]
+extra-source "axiom-graphics_20170501-12_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/axiom/axiom-graphics_20170501-12_amd64.deb"
+}

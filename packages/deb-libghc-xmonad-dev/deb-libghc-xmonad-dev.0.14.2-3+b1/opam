@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-xmonad-dev_0.14.2-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-xmonad-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-data-default-dev"
+  "deb-libghc-extensible-exceptions-dev"
+  "deb-libghc-setlocale-dev"
+  "deb-libghc-utf8-string-dev"
+  "deb-libghc-x11-dev"
+  "deb-libgmp10"
+  "deb-libx11-6"
+  "deb-libx11-dev"
+  "deb-libxext6"
+  "deb-libxinerama-dev"
+  "deb-libxinerama1"
+  "deb-libxrandr2"
+  "deb-libxss1"
+]
+extra-source "libghc-xmonad-dev_0.14.2-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xmonad/libghc-xmonad-dev_0.14.2-3+b1_amd64.deb"
+}

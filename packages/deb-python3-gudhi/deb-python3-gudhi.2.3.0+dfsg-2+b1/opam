@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-gudhi_2.3.0+dfsg-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-gudhi"]
+]
+depends: [
+  "deb-libboost-system1-67-0"
+  "deb-libc6" {>= "2.14"}
+  "deb-libcgal13"
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgmp10"
+  "deb-libgmpxx4ldbl"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtbb2"
+  "deb-python3" {< "3.8"}
+  "deb-python3" {>= "3.6~"}
+  "deb-python3-matplotlib"
+  "deb-python3-tk"
+]
+extra-source "python3-gudhi_2.3.0+dfsg-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gudhi/python3-gudhi_2.3.0+dfsg-2+b1_amd64.deb"
+}

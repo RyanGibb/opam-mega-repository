@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dicod_2.11-2+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dicod"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libcrypt1" {>= "1-4.1.0"}
+  "deb-libdico2" {>= "2.8"}
+  "deb-libgsasl18" {>= "1.1"}
+  "deb-libldap-2-5-0" {>= "2.5.4"}
+  "deb-libltdl7" {>= "2.4.7"}
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-libpcre3"
+  "deb-m4"
+  "deb-sysvinit-utils"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+conflicts: [
+  "deb-dico-module-dictorg"
+  "deb-dico-module-outline"
+  "deb-dictd"
+]
+extra-source "dicod_2.11-2+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dico/dicod_2.11-2+b3_amd64.deb"
+}

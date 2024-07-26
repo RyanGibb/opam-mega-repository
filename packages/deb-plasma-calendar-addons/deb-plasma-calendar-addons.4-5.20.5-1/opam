@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i plasma-calendar-addons_4:5.20.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r plasma-calendar-addons"]
+]
+depends: [
+  "deb-kdeplasma-addons-data" {= "4-5.20.5-1"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libkf5calendarevents5" {>= "5.72.0~"}
+  "deb-libkf5configcore5" {>= "5.72.0~"}
+  "deb-libkf5holidays5" {>= "1-5.72.0~"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5qml5" {>= "5.14.0~"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-plasma-framework" {>= "5.74.0~"}
+  "deb-qml-module-qtquick-controls"
+  "deb-qml-module-qtquick-layouts"
+  "deb-qml-module-qtquick2"
+]
+extra-source "plasma-calendar-addons_4:5.20.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kdeplasma-addons/plasma-calendar-addons_5.20.5-1_amd64.deb"
+}

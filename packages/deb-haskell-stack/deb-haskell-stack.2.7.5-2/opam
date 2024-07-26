@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i haskell-stack_2.7.5-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r haskell-stack"]
+]
+depends: [
+  "deb-ca-certificates"
+  "deb-gcc"
+  "deb-libc6" {>= "2.34"}
+  "deb-libffi8" {>= "3.4"}
+  "deb-libgmp-dev"
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-libsqlite3-0" {>= "3.7.3"}
+  "deb-libyaml-0-2"
+  "deb-make"
+  "deb-xz-utils"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "haskell-stack_2.7.5-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-stack/haskell-stack_2.7.5-2_amd64.deb"
+}

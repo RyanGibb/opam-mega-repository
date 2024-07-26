@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgnatcoll-python3-2-dev_23.0.0-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgnatcoll-python3-2-dev"]
+]
+depends: [
+  "deb-gnat" {< "13"}
+  "deb-gnat" {>= "12"}
+  "deb-libgnatcoll-python3-1" {= "23.0.0-6"}
+  "deb-libgnatcoll21-dev"
+  "deb-libgnatprj10-dev"
+  "deb-libpython3-11-dev"
+  "deb-libxmlada-dom12-dev"
+  "deb-libxmlada-input12-dev"
+  "deb-libxmlada-sax12-dev"
+  "deb-libxmlada-schema12-dev"
+  "deb-libxmlada-unicode12-dev"
+]
+extra-source "libgnatcoll-python3-2-dev_23.0.0-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libg/libgnatcoll-bindings/libgnatcoll-python3-2-dev_23.0.0-6_amd64.deb"
+}

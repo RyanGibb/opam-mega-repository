@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-googledrive_2.0.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-googledrive"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.1.2-1"}
+  "deb-r-cran-cli" {>= "3.0.0"}
+  "deb-r-cran-gargle" {>= "1.2.0"}
+  "deb-r-cran-glue" {>= "1.4.2"}
+  "deb-r-cran-httr"
+  "deb-r-cran-jsonlite"
+  "deb-r-cran-lifecycle"
+  "deb-r-cran-magrittr"
+  "deb-r-cran-pillar"
+  "deb-r-cran-purrr" {>= "0.2.3"}
+  "deb-r-cran-rlang" {>= "0.4.9"}
+  "deb-r-cran-tibble" {>= "2.0.0"}
+  "deb-r-cran-uuid"
+  "deb-r-cran-vctrs" {>= "0.3.0"}
+  "deb-r-cran-withr"
+]
+extra-source "r-cran-googledrive_2.0.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-googledrive/r-cran-googledrive_2.0.0-2_all.deb"
+}

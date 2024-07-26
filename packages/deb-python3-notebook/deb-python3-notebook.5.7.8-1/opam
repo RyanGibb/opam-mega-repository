@@ -1,0 +1,44 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-notebook_5.7.8-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-notebook"]
+]
+depends: [
+  "deb-fonts-font-awesome" {>= "4.2"}
+  "deb-libjs-backbone" {>= "1.2"}
+  "deb-libjs-bootstrap" {>= "3.3"}
+  "deb-libjs-bootstrap-tour" {>= "0.9"}
+  "deb-libjs-codemirror"
+  "deb-libjs-es6-promise" {>= "1.0"}
+  "deb-libjs-jed" {>= "1.1.1"}
+  "deb-libjs-jquery"
+  "deb-libjs-jquery-typeahead" {>= "2.0"}
+  "deb-libjs-jquery-ui" {>= "1.12"}
+  "deb-libjs-marked" {>= "0.3"}
+  "deb-libjs-mathjax" {>= "2.5"}
+  "deb-libjs-moment" {>= "2.8.4"}
+  "deb-libjs-requirejs" {>= "2.1"}
+  "deb-libjs-requirejs-text"
+  "deb-libjs-term-js"
+  "deb-libjs-text-encoding" {>= "0.1"}
+  "deb-libjs-underscore" {>= "1.5"}
+  "deb-python3-any"
+  "deb-python3-ipykernel"
+  "deb-python3-ipython-genutils"
+  "deb-python3-jinja2"
+  "deb-python3-jupyter-client"
+  "deb-python3-jupyter-core"
+  "deb-python3-nbconvert" {>= "5"}
+  "deb-python3-nbformat" {>= "4.4"}
+  "deb-python3-prometheus-client"
+  "deb-python3-send2trash"
+  "deb-python3-terminado" {>= "0.8.1"}
+  "deb-python3-tornado"
+  "deb-python3-traitlets"
+  "deb-python3-zmq"
+]
+extra-source "python3-notebook_5.7.8-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/j/jupyter-notebook/python3-notebook_5.7.8-1_all.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kbdd_0.6-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kbdd"]
+]
+depends: [
+  "deb-dbus-x11"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libdbus-1-3" {>= "1.9.14"}
+  "deb-libdbus-glib-1-2" {>= "0.88"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libx11-6"
+]
+extra-source "kbdd_0.6-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kbdd/kbdd_0.6-4+b1_amd64.deb"
+}

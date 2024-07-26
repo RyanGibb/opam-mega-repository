@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libhdf5-mpich-dev_1.10.8+repack1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libhdf5-mpich-dev"]
+]
+depends: [
+  "deb-libaec-dev"
+  "deb-libhdf5-mpich-103-1" {= "1.10.8+repack1-1"}
+  "deb-libhdf5-mpich-cpp-103-1" {= "1.10.8+repack1-1"}
+  "deb-libhdf5-mpich-fortran-102" {= "1.10.8+repack1-1"}
+  "deb-libhdf5-mpich-hl-100" {= "1.10.8+repack1-1"}
+  "deb-libhdf5-mpich-hl-cpp-100" {= "1.10.8+repack1-1"}
+  "deb-libhdf5-mpich-hl-fortran-100" {= "1.10.8+repack1-1"}
+  "deb-libjpeg-dev"
+  "deb-libmpich-dev" {>= "3.3-3~"}
+  "deb-libssl-dev"
+  "deb-zlib1g-dev"
+  ("deb-libcurl4-openssl-dev" | "deb- libcurl-dev")
+]
+extra-source "libhdf5-mpich-dev_1.10.8+repack1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/hdf5/libhdf5-mpich-dev_1.10.8+repack1-1_amd64.deb"
+}

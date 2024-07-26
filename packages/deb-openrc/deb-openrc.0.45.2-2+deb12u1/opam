@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openrc_0.45.2-2+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openrc"]
+]
+depends: [
+  "deb-insserv"
+  "deb-libaudit1" {>= "1-2.2.1"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libeinfo1" {>= "0.45.2"}
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-librc1" {>= "0.45.2"}
+  "deb-libselinux1" {>= "3.1~"}
+]
+conflicts: [
+  "deb-file-rc"
+  "deb-sysv-rc"
+]
+extra-source "openrc_0.45.2-2+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openrc/openrc_0.45.2-2+deb12u1_amd64.deb"
+}

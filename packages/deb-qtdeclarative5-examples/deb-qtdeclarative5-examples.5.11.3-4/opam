@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qtdeclarative5-examples_5.11.3-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qtdeclarative5-examples"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libqt5core5a"
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5gui5" {>= "5.9.0~beta"}
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libqt5qml5"
+  "deb-libqt5qml5" {>= "5.2.0~rc1"}
+  "deb-libqt5quick5" {>= "5.11.0"}
+  "deb-libqt5quicktest5" {>= "5.0.2"}
+  "deb-libqt5quickwidgets5" {>= "5.4.0"}
+  "deb-libqt5test5" {>= "5.5.0"}
+  "deb-libqt5widgets5" {>= "5.1.0"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-qml-module-qtqml-models2"
+  "deb-qml-module-qtquick-dialogs"
+  "deb-qml-module-qtquick-layouts"
+  "deb-qml-module-qtquick-localstorage"
+  "deb-qml-module-qtquick-particles2"
+  "deb-qml-module-qtquick-xmllistmodel"
+  "deb-qml-module-qttest"
+]
+extra-source "qtdeclarative5-examples_5.11.3-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qtdeclarative-opensource-src/qtdeclarative5-examples_5.11.3-4_amd64.deb"
+}

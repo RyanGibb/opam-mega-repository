@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lava_2023.01-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lava"]
+]
+depends: [
+  "deb-bridge-utils"
+  "deb-debootstrap"
+  "deb-lava-coordinator" {= "2023.01-2"}
+  "deb-lava-dev" {= "2023.01-2"}
+  "deb-lava-dispatcher" {= "2023.01-2"}
+  "deb-lava-server" {= "2023.01-2"}
+  "deb-lava-server-doc" {= "2023.01-2"}
+  "deb-lavacli"
+  "deb-openssh-client"
+  "deb-rsync"
+  "deb-sudo"
+  "deb-tftpd-hpa"
+  ("deb-telnet" | "deb- telnet-client")
+]
+extra-source "lava_2023.01-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lava/lava_2023.01-2_all.deb"
+}

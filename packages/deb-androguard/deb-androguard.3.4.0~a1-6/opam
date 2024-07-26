@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i androguard_3.4.0~a1-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r androguard"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-asn1crypto"
+  "deb-python3-click"
+  "deb-python3-colorama"
+  "deb-python3-ipython"
+  "deb-python3-lxml"
+  "deb-python3-magic"
+  "deb-python3-matplotlib"
+  "deb-python3-networkx"
+  "deb-python3-oscrypto"
+  "deb-python3-pydot"
+  "deb-python3-pygments"
+  "deb-python3-yaml"
+]
+extra-source "androguard_3.4.0~a1-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/androguard/androguard_3.4.0~a1-6_all.deb"
+}

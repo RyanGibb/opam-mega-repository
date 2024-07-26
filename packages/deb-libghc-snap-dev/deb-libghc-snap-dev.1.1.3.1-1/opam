@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-snap-dev_1.1.3.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-snap-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.14"}
+  "deb-libghc-aeson-dev"
+  "deb-libghc-attoparsec-dev"
+  "deb-libghc-cereal-dev"
+  "deb-libghc-clientsession-dev"
+  "deb-libghc-configurator-dev"
+  "deb-libghc-directory-tree-dev"
+  "deb-libghc-dlist-dev"
+  "deb-libghc-hashable-dev"
+  "deb-libghc-heist-dev"
+  "deb-libghc-lens-dev"
+  "deb-libghc-lifted-base-dev"
+  "deb-libghc-map-syntax-dev"
+  "deb-libghc-monad-control-dev"
+  "deb-libghc-mwc-random-dev"
+  "deb-libghc-pwstore-fast-dev"
+  "deb-libghc-snap-core-dev"
+  "deb-libghc-snap-server-dev"
+  "deb-libghc-transformers-base-dev"
+  "deb-libghc-unordered-containers-dev"
+  "deb-libghc-xmlhtml-dev"
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libghc-snap-dev_1.1.3.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-snap/libghc-snap-dev_1.1.3.1-1_amd64.deb"
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libevent-dev-2.1.12-r7.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libevent-dev"]
+]
+depends: [
+  "apk-libevent" {= "2.1.12-r7"}
+  "apk-pkgconf" {= "2.2.0-r0"}
+  "apk-python3" {= "3.12.3-r1"}
+]
+extra-source "libevent-dev-2.1.12-r7.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libevent-dev-2.1.12-r7.apk"
+}

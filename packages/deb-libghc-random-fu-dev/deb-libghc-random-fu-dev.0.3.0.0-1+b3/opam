@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-random-fu-dev_0.3.0.0-1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-random-fu-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.29"}
+  "deb-libghc-erf-dev"
+  "deb-libghc-math-functions-dev"
+  "deb-libghc-monad-loops-dev"
+  "deb-libghc-random-dev"
+  "deb-libghc-random-shuffle-dev"
+  "deb-libghc-rvar-dev"
+  "deb-libghc-syb-dev"
+  "deb-libghc-vector-dev"
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+]
+extra-source "libghc-random-fu-dev_0.3.0.0-1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-random-fu/libghc-random-fu-dev_0.3.0.0-1+b3_amd64.deb"
+}

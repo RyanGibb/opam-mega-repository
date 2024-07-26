@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-bioc-drimseq_1.26.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-bioc-drimseq"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.2.20221110-1"}
+  "deb-r-bioc-biocgenerics"
+  "deb-r-bioc-biocparallel"
+  "deb-r-bioc-edger"
+  "deb-r-bioc-genomicranges"
+  "deb-r-bioc-iranges"
+  "deb-r-bioc-limma"
+  "deb-r-bioc-s4vectors"
+  "deb-r-cran-ggplot2"
+  "deb-r-cran-mass"
+  "deb-r-cran-reshape2"
+]
+extra-source "r-bioc-drimseq_1.26.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-bioc-drimseq/r-bioc-drimseq_1.26.0-1_all.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-pgmagick_0.7.6-1+b5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-pgmagick"]
+]
+depends: [
+  "deb-libboost-python1-74-0"
+  "deb-libboost-python1-74-0" {>= "1.74.0+ds1"}
+  "deb-libc6" {>= "2.32"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgraphicsmagick++-q16-12" {>= "1.3.26-5~"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-any"
+]
+extra-source "python3-pgmagick_0.7.6-1+b5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-pgmagick/python3-pgmagick_0.7.6-1+b5_amd64.deb"
+}

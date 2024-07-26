@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lynkeos.app_3.4+dfsg1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lynkeos.app"]
+]
+depends: [
+  "deb-dcraw"
+  "deb-gnustep-back0-28" {>= "0.28.0"}
+  "deb-gnustep-base-runtime" {>= "1.27.0"}
+  "deb-gnustep-gui-runtime" {>= "0.28.0"}
+  "deb-libavcodec-extra58"
+  "deb-libavformat58" {>= "7-4.1"}
+  "deb-libavutil56" {>= "7-4.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libcfitsio9" {>= "3.480~"}
+  "deb-libfftw3-single3" {>= "3.3.5"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgnustep-base1-27" {>= "1.27.0"}
+  "deb-libgnustep-gui0-28" {>= "0.28.0"}
+  "deb-libobjc4" {>= "4.6"}
+  "deb-libswscale5" {>= "7-4.0"}
+  "deb-libtiff5" {>= "4.0.3"}
+  "deb-lynkeos-app-common" {= "3.4+dfsg1-2"}
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "lynkeos.app_3.4+dfsg1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lynkeos.app/lynkeos.app_3.4+dfsg1-2_amd64.deb"
+}

@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-yi-core-dev_0.19.2-2+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-yi-core-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-attoparsec-dev"
+  "deb-libghc-data-default-dev"
+  "deb-libghc-dlist-dev"
+  "deb-libghc-dynamic-state-dev"
+  "deb-libghc-hashable-dev"
+  "deb-libghc-listlike-dev"
+  "deb-libghc-microlens-platform-dev"
+  "deb-libghc-old-locale-dev"
+  "deb-libghc-oo-prototypes-dev"
+  "deb-libghc-pointedlist-dev"
+  "deb-libghc-process-extras-dev"
+  "deb-libghc-split-dev"
+  "deb-libghc-transformers-base-dev"
+  "deb-libghc-unix-compat-dev"
+  "deb-libghc-unordered-containers-dev"
+  "deb-libghc-xdg-basedir-dev"
+  "deb-libghc-yi-language-dev"
+  "deb-libghc-yi-rope-dev"
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+]
+extra-source "libghc-yi-core-dev_0.19.2-2+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-yi-core/libghc-yi-core-dev_0.19.2-2+b2_amd64.deb"
+}

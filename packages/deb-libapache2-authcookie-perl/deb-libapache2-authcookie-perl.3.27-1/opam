@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libapache2-authcookie-perl_3.27-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libapache2-authcookie-perl"]
+]
+depends: [
+  "deb-libapache2-mod-perl2" {>= "2.0.9~rc1"}
+  "deb-libclass-load-perl"
+  "deb-libhash-multivalue-perl"
+  "deb-libhttp-body-perl"
+  "deb-libwww-form-urlencoded-perl"
+  "deb-perl"
+]
+extra-source "libapache2-authcookie-perl_3.27-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/liba/libapache2-authcookie-perl/libapache2-authcookie-perl_3.27-1_all.deb"
+}

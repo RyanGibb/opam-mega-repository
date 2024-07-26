@@ -1,0 +1,42 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gvfs-backends_1.50.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gvfs-backends"]
+]
+depends: [
+  "deb-gvfs" {= "1.50.3-1"}
+  "deb-gvfs-common" {= "1.50.3-1"}
+  "deb-gvfs-daemons" {= "1.50.3-1"}
+  "deb-gvfs-libs" {= "1.50.3-1"}
+  "deb-libarchive13" {>= "3.0.4"}
+  "deb-libavahi-client3" {>= "0.6.16"}
+  "deb-libavahi-common3" {>= "0.6.16"}
+  "deb-libavahi-glib1" {>= "0.6.16"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcdio-cdda2" {>= "10.2+2.0.0"}
+  "deb-libcdio-paranoia2" {>= "10.2+2.0.0"}
+  "deb-libcdio19" {>= "2.1.0"}
+  "deb-libgcrypt20" {>= "1.10.0"}
+  "deb-libgdata22" {>= "0.18.0"}
+  "deb-libglib2-0-0" {>= "2.70.0"}
+  "deb-libgoa-1-0-0b" {>= "3.17.1"}
+  "deb-libgphoto2-6" {>= "2.5.10"}
+  "deb-libgphoto2-port12" {>= "2.5.10"}
+  "deb-libgudev-1-0-0" {>= "147"}
+  "deb-libimobiledevice6" {>= "1.3.0"}
+  "deb-libmtp9" {>= "1.1.16"}
+  "deb-libnfs13" {>= "1.9.8"}
+  "deb-libplist3" {>= "2.2.0"}
+  "deb-libpolkit-gobject-1-0" {>= "0.101"}
+  "deb-libsmbclient" {>= "2-4.12.0+dfsg"}
+  "deb-libsoup-3-0-0" {>= "3.0.3"}
+  "deb-libusb-1-0-0" {>= "2-1.0.21"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-psmisc"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "gvfs-backends_1.50.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gvfs/gvfs-backends_1.50.3-1_amd64.deb"
+}

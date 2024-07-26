@@ -1,0 +1,54 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i octavia-agent_7.1.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r octavia-agent"]
+]
+depends: [
+  "deb-acl"
+  "deb-acpid"
+  "deb-adduser"
+  "deb-anacron"
+  "deb-apparmor"
+  "deb-at"
+  "deb-cron"
+  "deb-cryptsetup"
+  "deb-curl"
+  "deb-dbconfig-common"
+  "deb-dbus"
+  "deb-debconf"
+  "deb-dirmngr"
+  "deb-dkms"
+  "deb-dmeventd"
+  "deb-ethtool"
+  "deb-gawk"
+  "deb-gpg"
+  "deb-gpg-agent"
+  "deb-haproxy"
+  "deb-haveged"
+  "deb-ifenslave"
+  "deb-ifupdown"
+  "deb-iptables"
+  "deb-iputils-ping"
+  "deb-iputils-tracepath"
+  "deb-ipvsadm"
+  "deb-irqbalance"
+  "deb-keepalived"
+  "deb-lsb-base" {>= "3.0-6"}
+  "deb-net-tools"
+  "deb-netbase"
+  "deb-netcat-openbsd"
+  "deb-octavia-common" {= "7.1.0-2"}
+  "deb-pollinate"
+  "deb-psmisc"
+  "deb-python3-openstackclient"
+  "deb-python3-q-text-as-data"
+  "deb-rsyslog"
+  "deb-socat"
+  "deb-uuid-runtime"
+  "deb-vlan"
+]
+extra-source "octavia-agent_7.1.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/octavia/octavia-agent_7.1.0-2_all.deb"
+}

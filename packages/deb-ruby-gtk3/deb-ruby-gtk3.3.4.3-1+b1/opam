@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-gtk3_3.4.3-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-gtk3"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libgirepository-1-0-1" {>= "1.62.0-4~"}
+  "deb-libglib2-0-0" {>= "2.22.0"}
+  "deb-libgtk-3-0" {>= "3.0.0"}
+  "deb-libruby2-7" {>= "2.7.0"}
+  "deb-ruby" {< "1-2.8~"}
+  "deb-ruby" {>= "1-2.7~0"}
+  "deb-ruby-atk" {>= "3.4.3-1"}
+  "deb-ruby-gdk3" {>= "3.4.3-1"}
+]
+extra-source "ruby-gtk3_3.4.3-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-gnome/ruby-gtk3_3.4.3-1+b1_amd64.deb"
+}

@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i licensecheck_3.1.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r licensecheck"]
+]
+depends: [
+  "deb-libarray-intspan-perl"
+  "deb-libgetopt-long-descriptive-perl"
+  "deb-liblist-someutils-perl"
+  "deb-liblog-any-adapter-screen-perl"
+  "deb-liblog-any-perl"
+  "deb-libmoo-perl"
+  "deb-libmoox-struct-perl"
+  "deb-libnamespace-clean-perl"
+  "deb-libpath-iterator-rule-perl"
+  "deb-libpath-tiny-perl" {>= "0.062"}
+  "deb-libpod-constants-perl"
+  "deb-libre-engine-re2-perl"
+  "deb-libregexp-pattern-license-perl" {>= "3.4"}
+  "deb-libregexp-pattern-perl" {>= "0.2.12"}
+  "deb-libsort-key-perl"
+  "deb-libstrictures-perl"
+  "deb-libstring-copyright-perl"
+  "deb-libstring-escape-perl"
+  "deb-libtry-tiny-perl"
+  "deb-perl-any"
+  ("deb-libscalar-list-utils-perl" {>= "1-1.45"} | "deb- perl" {>= "5.25.1"})
+]
+extra-source "licensecheck_3.1.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/licensecheck/licensecheck_3.1.1-2_all.deb"
+}

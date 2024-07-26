@@ -1,0 +1,62 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add nagios-plugins-all-2.3.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del nagios-plugins-all"]
+]
+depends: [
+  "apk-nagios-plugins-breeze" {= "2.3.2-r0"}
+  "apk-nagios-plugins-by_ssh" {= "2.3.2-r0"}
+  "apk-nagios-plugins-cluster" {= "2.3.2-r0"}
+  "apk-nagios-plugins-dbi" {= "2.3.2-r0"}
+  "apk-nagios-plugins-dhcp" {= "2.3.2-r0"}
+  "apk-nagios-plugins-dig" {= "2.3.2-r0"}
+  "apk-nagios-plugins-disk" {= "2.3.2-r0"}
+  "apk-nagios-plugins-disk_smb" {= "2.3.2-r0"}
+  "apk-nagios-plugins-dns" {= "2.3.2-r0"}
+  "apk-nagios-plugins-dummy" {= "2.3.2-r0"}
+  "apk-nagios-plugins-file_age" {= "2.3.2-r0"}
+  "apk-nagios-plugins-fping" {= "2.3.2-r0"}
+  "apk-nagios-plugins-hpjd" {= "2.3.2-r0"}
+  "apk-nagios-plugins-http" {= "2.3.2-r0"}
+  "apk-nagios-plugins-icmp" {= "2.3.2-r0"}
+  "apk-nagios-plugins-ide_smart" {= "2.3.2-r0"}
+  "apk-nagios-plugins-ifoperstatus" {= "2.3.2-r0"}
+  "apk-nagios-plugins-ifstatus" {= "2.3.2-r0"}
+  "apk-nagios-plugins-ircd" {= "2.3.2-r0"}
+  "apk-nagios-plugins-ldap" {= "2.3.2-r0"}
+  "apk-nagios-plugins-load" {= "2.3.2-r0"}
+  "apk-nagios-plugins-log" {= "2.3.2-r0"}
+  "apk-nagios-plugins-mailq" {= "2.3.2-r0"}
+  "apk-nagios-plugins-mrtg" {= "2.3.2-r0"}
+  "apk-nagios-plugins-mrtgtraf" {= "2.3.2-r0"}
+  "apk-nagios-plugins-mysql" {= "2.3.2-r0"}
+  "apk-nagios-plugins-nagios" {= "2.3.2-r0"}
+  "apk-nagios-plugins-nt" {= "2.3.2-r0"}
+  "apk-nagios-plugins-ntp" {= "2.3.2-r0"}
+  "apk-nagios-plugins-nwstat" {= "2.3.2-r0"}
+  "apk-nagios-plugins-openrc" {= "2.3.2-r0"}
+  "apk-nagios-plugins-overcr" {= "2.3.2-r0"}
+  "apk-nagios-plugins-pgsql" {= "2.3.2-r0"}
+  "apk-nagios-plugins-ping" {= "2.3.2-r0"}
+  "apk-nagios-plugins-procs" {= "2.3.2-r0"}
+  "apk-nagios-plugins-radius" {= "2.3.2-r0"}
+  "apk-nagios-plugins-real" {= "2.3.2-r0"}
+  "apk-nagios-plugins-rpc" {= "2.3.2-r0"}
+  "apk-nagios-plugins-sensors" {= "2.3.2-r0"}
+  "apk-nagios-plugins-smtp" {= "2.3.2-r0"}
+  "apk-nagios-plugins-snmp" {= "2.3.2-r0"}
+  "apk-nagios-plugins-ssh" {= "2.3.2-r0"}
+  "apk-nagios-plugins-ssl_validity" {= "2.3.2-r0"}
+  "apk-nagios-plugins-swap" {= "2.3.2-r0"}
+  "apk-nagios-plugins-tcp" {= "2.3.2-r0"}
+  "apk-nagios-plugins-time" {= "2.3.2-r0"}
+  "apk-nagios-plugins-ups" {= "2.3.2-r0"}
+  "apk-nagios-plugins-uptime" {= "2.3.2-r0"}
+  "apk-nagios-plugins-users" {= "2.3.2-r0"}
+  "apk-nagios-plugins-wave" {= "2.3.2-r0"}
+]
+extra-source "nagios-plugins-all-2.3.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/nagios-plugins-all-2.3.2-r0.apk"
+}

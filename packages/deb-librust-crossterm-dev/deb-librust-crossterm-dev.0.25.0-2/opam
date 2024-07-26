@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-crossterm-dev_0.25.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-crossterm-dev"]
+]
+depends: [
+  "deb-librust-bitflags-dev"
+  "deb-librust-libc-0-2+default-dev"
+  "deb-librust-mio-0-8+default-dev"
+  "deb-librust-mio-0-8+os-poll-dev"
+  "deb-librust-parking-lot-0-12+default-dev"
+  "deb-librust-signal-hook-dev"
+  "deb-librust-signal-hook-mio-dev"
+]
+extra-source "librust-crossterm-dev_0.25.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-crossterm/librust-crossterm-dev_0.25.0-2_amd64.deb"
+}

@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i neomutt_20180716+dfsg.1-1+deb10u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r neomutt"]
+]
+depends: [
+  "deb-libc6" {>= "2.15"}
+  "deb-libcom-err2" {>= "1.43.9"}
+  "deb-libgnutls30" {>= "3.6.6"}
+  "deb-libgpgme11" {>= "1.8.0"}
+  "deb-libgssapi-krb5-2" {>= "1.17"}
+  "deb-libidn11" {>= "1.13"}
+  "deb-libk5crypto3" {>= "1.6.dfsg.2"}
+  "deb-libkrb5-3" {>= "1.6.dfsg.2"}
+  "deb-liblua5-3-0"
+  "deb-libncursesw6" {>= "6"}
+  "deb-libnotmuch5" {>= "0.26~rc0"}
+  "deb-libsasl2-2" {>= "2.1.27+dfsg"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-libtokyocabinet9" {>= "1.4.47"}
+]
+extra-source "neomutt_20180716+dfsg.1-1+deb10u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/neomutt/neomutt_20180716+dfsg.1-1+deb10u2_amd64.deb"
+}

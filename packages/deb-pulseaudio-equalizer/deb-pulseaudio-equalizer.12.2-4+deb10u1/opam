@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pulseaudio-equalizer_12.2-4+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pulseaudio-equalizer"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libcap2" {>= "1-2.10"}
+  "deb-libdbus-1-3" {>= "1.9.14"}
+  "deb-libfftw3-single3" {>= "3.3.5"}
+  "deb-libpulse0" {= "12.2-4+deb10u1"}
+  "deb-pulseaudio" {= "12.2-4+deb10u1"}
+  "deb-python"
+  "deb-python-dbus"
+  "deb-python-dbus-mainloop-pyqt5"
+  "deb-python-pyqt5"
+  "deb-python-sip"
+]
+extra-source "pulseaudio-equalizer_12.2-4+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pulseaudio/pulseaudio-equalizer_12.2-4+deb10u1_amd64.deb"
+}

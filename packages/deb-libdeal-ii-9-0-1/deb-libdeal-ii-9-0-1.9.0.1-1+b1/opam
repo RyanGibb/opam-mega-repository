@@ -1,0 +1,52 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdeal.ii-9.0.1_9.0.1-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdeal.ii-9.0.1"]
+]
+depends: [
+  "deb-libassimp4"
+  "deb-libboost-iostreams1-67-0"
+  "deb-libboost-serialization1-67-0"
+  "deb-libc6" {>= "2.27"}
+  "deb-libgcc1" {>= "1-4.0"}
+  "deb-libgsl23" {>= "2.5"}
+  "deb-libhdf5-openmpi-103" {>= "1.8.14"}
+  "deb-libmuparser2v5" {>= "2.2.3"}
+  "deb-libnetcdf-c++4" {>= "4.2"}
+  "deb-liboce-foundation11"
+  "deb-liboce-modeling11"
+  "deb-libopenmpi3"
+  "deb-libp4est-1-1"
+  "deb-libp4est-sc-1-1"
+  "deb-libpetsc-real3-10"
+  "deb-libscalapack-openmpi2-0"
+  "deb-libslepc-real3-10"
+  "deb-libstdc++6" {>= "6"}
+  "deb-libsundials-arkode2" {>= "3.1.1"}
+  "deb-libsundials-idas2" {>= "3.1.1"}
+  "deb-libsundials-kinsol3" {>= "3.1.1"}
+  "deb-libsundials-nvecparallel-mpi3" {>= "3.1.1"}
+  "deb-libtbb2" {>= "2017~U7"}
+  "deb-libtrilinos-amesos12"
+  "deb-libtrilinos-aztecoo12"
+  "deb-libtrilinos-epetra12"
+  "deb-libtrilinos-epetraext12"
+  "deb-libtrilinos-ifpack12"
+  "deb-libtrilinos-kokkos12"
+  "deb-libtrilinos-ml12"
+  "deb-libtrilinos-muelu12"
+  "deb-libtrilinos-shylu12"
+  "deb-libtrilinos-teuchos12"
+  "deb-libtrilinos-tpetra12"
+  "deb-libtrilinos-xpetra12"
+  "deb-libtrilinos-zoltan12"
+  "deb-libumfpack5" {>= "1-4.5.2"}
+  "deb-zlib1g" {>= "1-1.2.0"}
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "libdeal.ii-9.0.1_9.0.1-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/deal.ii/libdeal.ii-9.0.1_9.0.1-1+b1_amd64.deb"
+}

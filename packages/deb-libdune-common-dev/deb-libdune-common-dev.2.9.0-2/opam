@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdune-common-dev_2.9.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdune-common-dev"]
+]
+depends: [
+  "deb-cmake" {>= "3.13"}
+  "deb-gfortran"
+  "deb-libatlas-base-dev"
+  "deb-libatlas3-base"
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-liblapack-dev"
+  "deb-libstdc++6" {>= "11"}
+  "deb-mpi-default-bin"
+  "deb-mpi-default-dev"
+  "deb-pkg-config"
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "libdune-common-dev_2.9.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dune-common/libdune-common-dev_2.9.0-2_amd64.deb"
+}

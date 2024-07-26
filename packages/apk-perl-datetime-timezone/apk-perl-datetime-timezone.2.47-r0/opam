@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-datetime-timezone-2.47-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-datetime-timezone"]
+]
+depends: [
+  "apk-perl" {= "5.30.3-r0"}
+  "apk-perl-class-singleton" {= "1.5-r1"}
+  "apk-perl-module-runtime" {= "0.016-r3"}
+  "apk-perl-namespace-autoclean" {= "0.29-r1"}
+  "apk-perl-params-validationcompiler" {= "0.30-r0"}
+  "apk-perl-specio" {= "0.46-r0"}
+  "apk-perl-try-tiny" {= "0.30-r1"}
+]
+extra-source "perl-datetime-timezone-2.47-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-datetime-timezone-2.47-r0.apk"
+}

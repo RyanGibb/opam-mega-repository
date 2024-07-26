@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-lazy-regex-dev_2.4.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-lazy-regex-dev"]
+]
+depends: [
+  "deb-librust-once-cell-dev"
+  "deb-librust-proc-macro2-1+default-dev"
+  "deb-librust-quote-1+default-dev"
+  "deb-librust-regex+default-dev"
+  "deb-librust-regex+perf-dev"
+  "deb-librust-regex+perf-literal-dev"
+  "deb-librust-regex+unicode-age-dev"
+  "deb-librust-regex+unicode-bool-dev"
+  "deb-librust-regex+unicode-case-dev"
+  "deb-librust-regex+unicode-dev"
+  "deb-librust-regex+unicode-gencat-dev"
+  "deb-librust-regex+unicode-perl-dev"
+  "deb-librust-regex+unicode-script-dev"
+  "deb-librust-regex+unicode-segment-dev"
+  "deb-librust-regex-dev"
+  "deb-librust-syn-dev"
+]
+extra-source "librust-lazy-regex-dev_2.4.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-lazy-regex/librust-lazy-regex-dev_2.4.1-2_all.deb"
+}

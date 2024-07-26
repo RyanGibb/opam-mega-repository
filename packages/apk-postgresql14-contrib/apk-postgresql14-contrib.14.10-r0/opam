@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add postgresql14-contrib-14.10-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del postgresql14-contrib"]
+]
+depends: [
+  "apk-libcrypto1-1" {= "1.1.1w-r1"}
+  "apk-libpq" {= "14.10-r0"}
+  "apk-libuuid" {= "2.37.4-r0"}
+  "apk-libxml2" {= "2.9.14-r2"}
+  "apk-musl" {= "1.2.2-r9"}
+  "apk-postgresql14" {= "14.10-r0"}
+  "apk-zlib" {= "1.2.12-r3"}
+]
+extra-source "postgresql14-contrib-14.10-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/postgresql14-contrib-14.10-r0.apk"
+}

@@ -1,0 +1,58 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-pandoc-dev_2.2.1-3+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-pandoc-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libghc-aeson-dev"
+  "deb-libghc-aeson-pretty-dev"
+  "deb-libghc-base64-bytestring-dev"
+  "deb-libghc-blaze-html-dev"
+  "deb-libghc-blaze-markup-dev"
+  "deb-libghc-case-insensitive-dev"
+  "deb-libghc-cmark-gfm-dev"
+  "deb-libghc-data-default-dev"
+  "deb-libghc-doctemplates-dev"
+  "deb-libghc-exceptions-dev"
+  "deb-libghc-glob-dev"
+  "deb-libghc-haddock-library-dev"
+  "deb-libghc-hslua-dev"
+  "deb-libghc-hslua-module-text-dev"
+  "deb-libghc-http-client-dev"
+  "deb-libghc-http-client-tls-dev"
+  "deb-libghc-http-dev"
+  "deb-libghc-http-types-dev"
+  "deb-libghc-juicypixels-dev"
+  "deb-libghc-network-dev"
+  "deb-libghc-network-uri-dev"
+  "deb-libghc-pandoc-types-dev"
+  "deb-libghc-random-dev"
+  "deb-libghc-safe-dev"
+  "deb-libghc-scientific-dev"
+  "deb-libghc-sha-dev"
+  "deb-libghc-skylighting-dev"
+  "deb-libghc-split-dev"
+  "deb-libghc-syb-dev"
+  "deb-libghc-tagsoup-dev"
+  "deb-libghc-temporary-dev"
+  "deb-libghc-texmath-dev"
+  "deb-libghc-unordered-containers-dev"
+  "deb-libghc-vector-dev"
+  "deb-libghc-xml-dev"
+  "deb-libghc-yaml-dev"
+  "deb-libghc-zip-archive-dev"
+  "deb-libghc-zlib-dev"
+  "deb-libgmp10"
+  "deb-liblua5-1-0"
+  "deb-libpcre3"
+  "deb-libyaml-0-2"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libghc-pandoc-dev_2.2.1-3+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pandoc/libghc-pandoc-dev_2.2.1-3+b2_amd64.deb"
+}

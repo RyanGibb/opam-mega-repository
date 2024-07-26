@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmaven-plugin-tools-java_3.6.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmaven-plugin-tools-java"]
+]
+depends: [
+  "deb-ant"
+  "deb-libasm-java" {>= "7.0"}
+  "deb-libbsh-java" {>= "2.0b4"}
+  "deb-libdoxia-core-java" {>= "1.7"}
+  "deb-libdoxia-sitetools-java" {>= "1.7.5"}
+  "deb-libjtidy-java"
+  "deb-libmaven-reporting-api-java" {>= "3.0"}
+  "deb-libmaven-reporting-impl-java" {>= "3.0.0"}
+  "deb-libmaven3-core-java" {>= "3.6.0"}
+  "deb-libplexus-ant-factory-java"
+  "deb-libplexus-archiver-java" {>= "3.6.0"}
+  "deb-libplexus-bsh-factory-java"
+  "deb-libplexus-component-annotations-java"
+  "deb-libplexus-utils2-java" {>= "2.x"}
+  "deb-libplexus-velocity-java" {>= "1.2"}
+  "deb-libqdox2-java"
+  "deb-libsurefire-java" {>= "2.22.1"}
+  "deb-velocity"
+]
+extra-source "libmaven-plugin-tools-java_3.6.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/maven-plugin-tools/libmaven-plugin-tools-java_3.6.0-1_all.deb"
+}

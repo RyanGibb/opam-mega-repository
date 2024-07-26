@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libocct-ocaf-7.3_7.3.0+dfsg1-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libocct-ocaf-7.3"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libfreeimage3"
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgl1"
+  "deb-libocct-foundation-7-3"
+  "deb-libocct-modeling-algorithms-7-3"
+  "deb-libocct-modeling-data-7-3"
+  "deb-libocct-visualization-7-3"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtbb2" {>= "2017~U7"}
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxi6"
+  "deb-libxmu6"
+]
+extra-source "libocct-ocaf-7.3_7.3.0+dfsg1-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/opencascade/libocct-ocaf-7.3_7.3.0+dfsg1-5_amd64.deb"
+}

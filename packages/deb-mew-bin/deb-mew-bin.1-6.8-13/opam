@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mew-bin_1:6.8-13_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mew-bin"]
+]
+depends: [
+  "deb-libc6" {>= "2.7"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+conflicts: [
+  "deb-mew" {< "1-4"}
+  "deb-mew-beta-bin"
+]
+extra-source "mew-bin_1:6.8-13_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mew/mew-bin_6.8-13_amd64.deb"
+}

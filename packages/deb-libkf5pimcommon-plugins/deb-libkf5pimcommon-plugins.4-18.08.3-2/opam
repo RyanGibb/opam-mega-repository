@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkf5pimcommon-plugins_4:18.08.3-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkf5pimcommon-plugins"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libkf5pimcommon5abi2" {>= "4-18.07.90"}
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5gui5" {>= "5.9.0~"}
+  "deb-libstdc++6" {>= "4.1.1"}
+]
+extra-source "libkf5pimcommon-plugins_4:18.08.3-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libk/libkf5pimcommon/libkf5pimcommon-plugins_18.08.3-2_amd64.deb"
+}

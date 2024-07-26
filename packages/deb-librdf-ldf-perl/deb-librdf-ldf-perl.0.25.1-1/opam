@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librdf-ldf-perl_0.25.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librdf-ldf-perl"]
+]
+depends: [
+  "deb-libcache-lru-perl"
+  "deb-libclone-perl"
+  "deb-libdata-compare-perl"
+  "deb-libhttp-message-perl"
+  "deb-libjson-perl"
+  "deb-liblog-any-perl"
+  "deb-liblwp-useragent-chicaching-perl"
+  "deb-libmoo-perl"
+  "deb-librdf-ns-perl"
+  "deb-librdf-query-perl"
+  "deb-librdf-trine-perl"
+  "deb-libthrowable-perl"
+  "deb-liburi-perl"
+  "deb-liburi-template-perl"
+  "deb-libwww-perl"
+  "deb-perl-any"
+]
+extra-source "librdf-ldf-perl_0.25.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libr/librdf-ldf-perl/librdf-ldf-perl_0.25.1-1_all.deb"
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libppx-custom-printf-ocaml-dev_0.15.0-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libppx-custom-printf-ocaml-dev"]
+]
+depends: [
+  "deb-libbase-ocaml-dev"
+  "deb-libc6" {>= "2.35"}
+  "deb-libocaml-compiler-libs-ocaml-dev"
+  "deb-libppx-custom-printf-ocaml"
+  "deb-libppx-sexp-conv-ocaml-dev"
+  "deb-libppxlib-ocaml-dev"
+  "deb-libsexplib0-ocaml-dev"
+  "deb-ocaml"
+]
+extra-source "libppx-custom-printf-ocaml-dev_0.15.0-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/ppx-custom-printf/libppx-custom-printf-ocaml-dev_0.15.0-1+b1_amd64.deb"
+}

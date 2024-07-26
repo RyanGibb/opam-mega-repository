@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i apbs_3.4.1-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r apbs"]
+]
+depends: [
+  "deb-apbs-data" {= "3.4.1-5"}
+  "deb-libamd2" {>= "1-4.5.2"}
+  "deb-libapbs3" {= "3.4.1-5"}
+  "deb-libarpack2" {>= "2.1"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcamd2" {>= "1-4.5.2"}
+  "deb-libccolamd2" {>= "1-4.5.2"}
+  "deb-libcholmod3" {>= "1-4.5.2"}
+  "deb-libcolamd2" {>= "1-4.5.2"}
+  "deb-libfetk1-9" {>= "3.4.1"}
+  "deb-libgomp1" {>= "4.2.1"}
+  "deb-libjs-mathjax"
+  "deb-libmaloc1" {>= "0.2-1"}
+  "deb-libopenmpi3" {>= "4.1.4"}
+  "deb-libspqr2" {>= "1-5.12.0+dfsg"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-libsuitesparseconfig5" {>= "1-5.0.0"}
+  "deb-libsuperlu5" {>= "5.3.0+dfsg1"}
+  "deb-libumfpack5" {>= "1-4.5.2"}
+  ("deb-libblas3" | "deb- libblas-so-3")
+]
+extra-source "apbs_3.4.1-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/apbs/apbs_3.4.1-5_amd64.deb"
+}

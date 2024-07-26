@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openqa-worker_4.6.1674490999.b00c12673-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openqa-worker"]
+]
+depends: [
+  "deb-libfile-map-perl"
+  "deb-libmojo-ioloop-readwriteprocess-perl"
+  "deb-libnet-dns-native-perl"
+  "deb-libsql-splitstatement-perl"
+  "deb-openqa-client" {>= "4.6.1674490999.b00c12673-2"}
+  "deb-os-autoinst" {>= "4.6.1631608584"}
+  "deb-perl-any"
+  "deb-vde2"
+]
+extra-source "openqa-worker_4.6.1674490999.b00c12673-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openqa/openqa-worker_4.6.1674490999.b00c12673-2_all.deb"
+}

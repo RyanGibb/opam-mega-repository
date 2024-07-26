@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libvirt-common-drivers-6.6.0-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libvirt-common-drivers"]
+]
+depends: [
+  "apk-dbus-libs" {= "1.12.18-r0"}
+  "apk-eudev-libs" {= "3.2.9-r3"}
+  "apk-glib" {= "2.64.6-r0"}
+  "apk-libblkid" {= "2.37.4-r0"}
+  "apk-libgcc" {= "9.3.0-r2"}
+  "apk-libintl" {= "0.20.2-r0"}
+  "apk-libpcap" {= "1.9.1-r2"}
+  "apk-libpciaccess" {= "0.16-r0"}
+  "apk-libvirt-libs" {= "6.6.0-r4"}
+  "apk-libxml2" {= "2.9.14-r0"}
+  "apk-lvm2" {= "2.02.186-r1"}
+  "apk-musl" {= "1.1.24-r10"}
+  "apk-netcf-libs" {= "0.2.8-r6"}
+]
+extra-source "libvirt-common-drivers-6.6.0-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/libvirt-common-drivers-6.6.0-r4.apk"
+}

@@ -1,0 +1,56 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i oca-core_11.0.20180730-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r oca-core"]
+]
+depends: [
+  "deb-adduser"
+  "deb-fonts-glewlwyd"
+  "deb-fonts-inconsolata"
+  "deb-libjs-underscore"
+  "deb-lsb-base"
+  "deb-node-less"
+  "deb-postgresql-client"
+  "deb-python3-any"
+  "deb-python3-babel"
+  "deb-python3-dateutil"
+  "deb-python3-decorator"
+  "deb-python3-docutils"
+  "deb-python3-feedparser"
+  "deb-python3-gevent"
+  "deb-python3-html2text"
+  "deb-python3-jinja2"
+  "deb-python3-lxml"
+  "deb-python3-mako"
+  "deb-python3-mock"
+  "deb-python3-ofxparse"
+  "deb-python3-passlib"
+  "deb-python3-pil"
+  "deb-python3-psutil"
+  "deb-python3-psycopg2"
+  "deb-python3-pydot"
+  "deb-python3-pyldap"
+  "deb-python3-pyparsing"
+  "deb-python3-pypdf2"
+  "deb-python3-qrcode"
+  "deb-python3-reportlab"
+  "deb-python3-requests"
+  "deb-python3-serial"
+  "deb-python3-suds"
+  "deb-python3-tz"
+  "deb-python3-usb"
+  "deb-python3-vatnumber"
+  "deb-python3-vobject"
+  "deb-python3-werkzeug"
+  "deb-python3-xlsxwriter"
+  "deb-python3-xlwt"
+  "deb-python3-yaml"
+]
+conflicts: [
+  "deb-odoo"
+]
+extra-source "oca-core_11.0.20180730-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/oca-core/oca-core_11.0.20180730-1_all.deb"
+}

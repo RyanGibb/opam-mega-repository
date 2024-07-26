@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libquazip-dev_0.7.6-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libquazip-dev"]
+]
+depends: [
+  "deb-libquazip-headers" {= "0.7.6-2"}
+  "deb-libquazip1" {= "0.7.6-2"}
+  "deb-zlib1g-dev"
+]
+conflicts: [
+  "deb-libquazip0-dev"
+  "deb-libquazip1-dev"
+]
+extra-source "libquazip-dev_0.7.6-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libq/libquazip/libquazip-dev_0.7.6-2_amd64.deb"
+}

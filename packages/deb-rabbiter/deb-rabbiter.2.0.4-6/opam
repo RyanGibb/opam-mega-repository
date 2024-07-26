@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i rabbiter_2.0.4-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r rabbiter"]
+]
+depends: [
+  "deb-rabbit"
+  "deb-ruby-any"
+  "deb-ruby-gettext"
+  "deb-ruby-gio2"
+  "deb-ruby-twitter"
+  "deb-ruby-twitter-oauth"
+]
+extra-source "rabbiter_2.0.4-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rabbiter/rabbiter_2.0.4-6_all.deb"
+}

@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-electrum_4.3.4+dfsg1-1+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-electrum"]
+]
+depends: [
+  "deb-libjs-jquery"
+  "deb-libjs-jquery-ui"
+  "deb-libjs-jquery-ui-theme-ui-lightness"
+  "deb-libsecp256k1-1"
+  "deb-node-qrcode-generator"
+  "deb-python3-aiohttp"
+  "deb-python3-aiohttp-socks" {>= "0.3"}
+  "deb-python3-aiorpcx" {>= "0.22"}
+  "deb-python3-any"
+  "deb-python3-attr" {>= "19.2.0"}
+  "deb-python3-bitstring"
+  "deb-python3-certifi"
+  "deb-python3-cryptography"
+  "deb-python3-distutils"
+  "deb-python3-dnspython" {>= "2.0"}
+  "deb-python3-protobuf" {>= "3.12"}
+  "deb-python3-qrcode"
+]
+extra-source "python3-electrum_4.3.4+dfsg1-1+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/electrum/python3-electrum_4.3.4+dfsg1-1+deb12u1_all.deb"
+}

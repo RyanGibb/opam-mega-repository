@@ -1,0 +1,47 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i suricata_1:4.1.2-2+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r suricata"]
+]
+depends: [
+  "deb-libc6" {>= "2.27"}
+  "deb-libcap-ng0" {>= "0.7.9"}
+  "deb-libevent-2-1-6" {>= "2.1.8-stable"}
+  "deb-libevent-pthreads-2-1-6" {>= "2.1.8-stable"}
+  "deb-libgcc1" {>= "1-4.2"}
+  "deb-libgeoip1"
+  "deb-libgnutls30" {>= "3.6.5"}
+  "deb-libhiredis0-14" {>= "0.14.0"}
+  "deb-libhtp2" {>= "0.5.24+1git0439eed"}
+  "deb-libhyperscan5"
+  "deb-libjansson4" {>= "2.3"}
+  "deb-libltdl7" {>= "2.4.6"}
+  "deb-libluajit-5-1-2" {>= "2.0.4+dfsg"}
+  "deb-liblz4-1" {>= "0.0~r127"}
+  "deb-libmagic1" {>= "5.12"}
+  "deb-libnet1" {>= "1.1.5"}
+  "deb-libnetfilter-log1"
+  "deb-libnetfilter-queue1"
+  "deb-libnfnetlink0"
+  "deb-libnspr4" {>= "2-4.9-2~"}
+  "deb-libnss3" {>= "2-3.13.4-2~"}
+  "deb-libpcap0-8" {>= "1.0.0"}
+  "deb-libpcre3"
+  "deb-libprelude23" {>= "4.1"}
+  "deb-libyaml-0-2"
+  "deb-lsb-base" {>= "3.0-6"}
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7~"}
+  "deb-python-simplejson"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-python" {>= "2.7"} | "deb- python-argparse")
+]
+conflicts: [
+  "deb-libhtp1" {< "0.5.16"}
+  "deb-suricata-hyperscan" {< "3.2"}
+]
+extra-source "suricata_1:4.1.2-2+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/suricata/suricata_4.1.2-2+deb10u1_amd64.deb"
+}

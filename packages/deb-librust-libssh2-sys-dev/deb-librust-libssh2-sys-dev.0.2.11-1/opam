@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-libssh2-sys-dev_0.2.11-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-libssh2-sys-dev"]
+]
+depends: [
+  "deb-librust-cc-dev"
+  "deb-librust-libc-0-2+default-dev"
+  "deb-librust-libz-sys-dev"
+  "deb-librust-openssl-sys-dev"
+  "deb-librust-pkg-config-dev"
+  "deb-librust-vcpkg-0-2+default-dev"
+  "deb-libssh2-1-dev"
+]
+extra-source "librust-libssh2-sys-dev_0.2.11-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-libssh2-sys/librust-libssh2-sys-dev_0.2.11-1_amd64.deb"
+}

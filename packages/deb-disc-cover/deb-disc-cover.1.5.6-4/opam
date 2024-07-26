@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i disc-cover_1.5.6-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r disc-cover"]
+]
+depends: [
+  "deb-libaudio-cd-perl" {>= "0.05"}
+  "deb-perl-any"
+  "deb-texlive-base"
+  "deb-texlive-fonts-recommended"
+  "deb-texlive-latex-base"
+  "deb-texlive-latex-recommended"
+  "deb-wget"
+]
+extra-source "disc-cover_1.5.6-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/disc-cover/disc-cover_1.5.6-4_all.deb"
+}

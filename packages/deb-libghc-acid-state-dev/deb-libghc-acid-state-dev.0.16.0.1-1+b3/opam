@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-acid-state-dev_0.16.0.1-1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-acid-state-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.14"}
+  "deb-libghc-cereal-dev"
+  "deb-libghc-filelock-dev"
+  "deb-libghc-network-bsd-dev"
+  "deb-libghc-network-dev"
+  "deb-libghc-safecopy-dev"
+  "deb-libghc-th-expand-syns-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-acid-state-dev_0.16.0.1-1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-acid-state/libghc-acid-state-dev_0.16.0.1-1+b3_amd64.deb"
+}

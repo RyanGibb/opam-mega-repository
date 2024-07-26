@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdbix-dbstag-perl_0.12-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdbix-dbstag-perl"]
+]
+depends: [
+  "deb-libdata-stag-perl"
+  "deb-libdbd-pg-perl"
+  "deb-libdbi-perl"
+  "deb-libdbix-dbschema-perl"
+  "deb-libparse-recdescent-perl"
+  "deb-libxml-perl"
+  "deb-perl"
+]
+extra-source "libdbix-dbstag-perl_0.12-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libd/libdbix-dbstag-perl/libdbix-dbstag-perl_0.12-2_all.deb"
+}

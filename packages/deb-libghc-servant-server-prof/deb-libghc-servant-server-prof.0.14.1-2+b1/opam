@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-servant-server-prof_0.14.1-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-servant-server-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-base-compat-prof"
+  "deb-libghc-base64-bytestring-prof"
+  "deb-libghc-exceptions-prof"
+  "deb-libghc-http-api-data-prof"
+  "deb-libghc-http-media-prof"
+  "deb-libghc-http-types-prof"
+  "deb-libghc-monad-control-prof"
+  "deb-libghc-network-prof"
+  "deb-libghc-network-uri-prof"
+  "deb-libghc-resourcet-prof"
+  "deb-libghc-servant-prof"
+  "deb-libghc-servant-server-dev" {= "0.14.1-2+b1"}
+  "deb-libghc-string-conversions-prof"
+  "deb-libghc-tagged-prof"
+  "deb-libghc-transformers-base-prof"
+  "deb-libghc-transformers-compat-prof"
+  "deb-libghc-wai-app-static-prof"
+  "deb-libghc-wai-prof"
+  "deb-libghc-word8-prof"
+]
+extra-source "libghc-servant-server-prof_0.14.1-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-servant-server/libghc-servant-server-prof_0.14.1-2+b1_amd64.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i groonga-httpd_13.0.0+dfsg-3~deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r groonga-httpd"]
+]
+depends: [
+  "deb-curl"
+  "deb-groonga-server-common" {= "13.0.0+dfsg-3~deb12u1"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcrypt1" {>= "1-4.1.0"}
+  "deb-libgroonga0" {>= "13.0.0+dfsg"}
+  "deb-libpcre2-8-0" {>= "10.22"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-sysvinit-utils" {>= "3.05-4"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "groonga-httpd_13.0.0+dfsg-3~deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/groonga/groonga-httpd_13.0.0+dfsg-3~deb12u1_amd64.deb"
+}

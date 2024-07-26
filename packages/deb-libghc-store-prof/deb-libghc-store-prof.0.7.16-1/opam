@@ -1,0 +1,42 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-store-prof_0.7.16-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-store-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-async-prof"
+  "deb-libghc-base-orphans-prof"
+  "deb-libghc-base64-bytestring-prof"
+  "deb-libghc-bifunctors-prof"
+  "deb-libghc-contravariant-prof"
+  "deb-libghc-cryptohash-prof"
+  "deb-libghc-free-prof"
+  "deb-libghc-hashable-prof"
+  "deb-libghc-hspec-prof"
+  "deb-libghc-hspec-smallcheck-prof"
+  "deb-libghc-lifted-base-prof"
+  "deb-libghc-monad-control-prof"
+  "deb-libghc-mono-traversable-prof"
+  "deb-libghc-network-prof"
+  "deb-libghc-primitive-prof"
+  "deb-libghc-resourcet-prof"
+  "deb-libghc-safe-prof"
+  "deb-libghc-smallcheck-prof"
+  "deb-libghc-store-core-prof"
+  "deb-libghc-store-dev" {= "0.7.16-1"}
+  "deb-libghc-syb-prof"
+  "deb-libghc-th-lift-instances-prof"
+  "deb-libghc-th-lift-prof"
+  "deb-libghc-th-orphans-prof"
+  "deb-libghc-th-reify-many-prof"
+  "deb-libghc-th-utilities-prof"
+  "deb-libghc-unordered-containers-prof"
+  "deb-libghc-vector-prof"
+  "deb-libghc-void-prof"
+]
+extra-source "libghc-store-prof_0.7.16-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-store/libghc-store-prof_0.7.16-1_amd64.deb"
+}

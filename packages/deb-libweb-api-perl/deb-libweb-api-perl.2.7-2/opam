@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libweb-api-perl_2.7-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libweb-api-perl"]
+]
+depends: [
+  "deb-libdata-printer-perl"
+  "deb-libdata-random-perl"
+  "deb-libhttp-cookies-perl"
+  "deb-libjson-perl"
+  "deb-libmouse-perl"
+  "deb-libnet-oauth-perl"
+  "deb-liburi-escape-xs-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-libxml-simple-perl"
+  "deb-perl-any"
+]
+extra-source "libweb-api-perl_2.7-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libw/libweb-api-perl/libweb-api-perl_2.7-2_all.deb"
+}

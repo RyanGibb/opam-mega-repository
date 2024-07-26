@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i osmpbf-bin_1.5.0-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r osmpbf-bin"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libprotobuf23" {>= "3.12.4"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "osmpbf-bin_1.5.0-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/osmpbf/osmpbf-bin_1.5.0-1+b1_amd64.deb"
+}

@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-copy-webpack-plugin_5.1.2+~cs9.0.2-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-copy-webpack-plugin"]
+]
+depends: [
+  "deb-node-ansi-colors"
+  "deb-node-cacache"
+  "deb-node-find-cache-dir" {>= "2.1~"}
+  "deb-node-glob-parent" {>= "3.1~"}
+  "deb-node-globby" {>= "7.1.1~"}
+  "deb-node-is-glob" {>= "4.0~"}
+  "deb-node-loader-utils" {>= "1.2.3~"}
+  "deb-node-minimatch" {>= "3.0.4"}
+  "deb-node-normalize-path" {>= "3.0~"}
+  "deb-node-p-limit" {>= "2.2.1~"}
+  "deb-node-randombytes" {>= "2.1~"}
+  "deb-node-schema-utils" {>= "1.0~"}
+  "deb-node-uuid"
+  "deb-nodejs"
+]
+extra-source "node-copy-webpack-plugin_5.1.2+~cs9.0.2-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-copy-webpack-plugin/node-copy-webpack-plugin_5.1.2+~cs9.0.2-4_all.deb"
+}

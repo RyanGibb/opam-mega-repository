@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libca-certs-ocaml_0.2.3-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libca-certs-ocaml"]
+]
+depends: [
+  "deb-libasn1-combinators-ocaml"
+  "deb-libastring-ocaml"
+  "deb-libbos-ocaml"
+  "deb-libcstruct-ocaml"
+  "deb-libdomain-name-ocaml"
+  "deb-libfmt-ocaml"
+  "deb-libfpath-ocaml"
+  "deb-libgmap-ocaml"
+  "deb-libipaddr-ocaml"
+  "deb-liblogs-ocaml"
+  "deb-libmirage-crypto-ocaml"
+  "deb-libptime-ocaml"
+  "deb-librresult-ocaml"
+  "deb-libsexplib0-ocaml"
+  "deb-libx509-ocaml"
+  "deb-libzarith-ocaml"
+  "deb-ocaml-base"
+]
+extra-source "libca-certs-ocaml_0.2.3-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/ocaml-ca-certs/libca-certs-ocaml_0.2.3-1+b2_amd64.deb"
+}

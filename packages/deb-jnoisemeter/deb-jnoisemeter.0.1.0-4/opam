@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i jnoisemeter_0.1.0-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r jnoisemeter"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libclthreads2"
+  "deb-libclxclient3"
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libx11-6"
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+]
+extra-source "jnoisemeter_0.1.0-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/j/jnoisemeter/jnoisemeter_0.1.0-4_amd64.deb"
+}

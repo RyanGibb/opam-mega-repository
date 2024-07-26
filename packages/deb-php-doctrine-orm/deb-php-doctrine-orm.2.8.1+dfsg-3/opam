@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i php-doctrine-orm_2.8.1+dfsg-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r php-doctrine-orm"]
+]
+depends: [
+  "deb-php-cli"
+  "deb-php-common"
+  "deb-php-doctrine-annotations" {< "2~~"}
+  "deb-php-doctrine-annotations" {>= "1.11.1"}
+  "deb-php-doctrine-cache" {< "2~~"}
+  "deb-php-doctrine-cache" {>= "1.9.1"}
+  "deb-php-doctrine-collections" {< "2~~"}
+  "deb-php-doctrine-collections" {>= "1.5"}
+  "deb-php-doctrine-common" {< "4~~"}
+  "deb-php-doctrine-common" {>= "3.0"}
+  "deb-php-doctrine-dbal" {< "3~~"}
+  "deb-php-doctrine-dbal" {>= "2.10.0"}
+  "deb-php-doctrine-event-manager" {< "2~~"}
+  "deb-php-doctrine-event-manager" {>= "1.1"}
+  "deb-php-doctrine-inflector" {< "3~~"}
+  "deb-php-doctrine-inflector" {>= "2.0"}
+  "deb-php-doctrine-instantiator" {< "2~~"}
+  "deb-php-doctrine-instantiator" {>= "1.3"}
+  "deb-php-doctrine-lexer" {< "2~~"}
+  "deb-php-doctrine-lexer" {>= "1.0"}
+  "deb-php-doctrine-persistence" {< "3~~"}
+  "deb-php-doctrine-persistence" {>= "2.0"}
+  "deb-php-symfony-console"
+  ("deb-php-mysql" | "deb- php-pgsql" | "deb- php-sqlite3" | "deb- php-sybase")
+]
+extra-source "php-doctrine-orm_2.8.1+dfsg-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/doctrine/php-doctrine-orm_2.8.1+dfsg-3_all.deb"
+}

@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i displaycal_3.9.10-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r displaycal"]
+]
+depends: [
+  "deb-argyll"
+  "deb-dbus-x11"
+  "deb-libc6" {>= "2.34"}
+  "deb-libjs-jquery"
+  "deb-libsdl2-mixer-2-0-0"
+  "deb-libx11-6"
+  "deb-libxinerama1" {>= "2-1.1.4"}
+  "deb-libxrandr2" {>= "2-1.2.0"}
+  "deb-libxxf86vm1"
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-any"
+  "deb-python3-distro"
+  "deb-python3-gi"
+  "deb-python3-numpy"
+  "deb-python3-send2trash"
+  "deb-python3-wxgtk4-0"
+]
+extra-source "displaycal_3.9.10-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/displaycal-py3/displaycal_3.9.10-2_amd64.deb"
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fetchyahoo_2.14.7-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fetchyahoo"]
+]
+depends: [
+  "deb-libcrypt-ssleay-perl"
+  "deb-libhtml-parser-perl"
+  "deb-libio-socket-ssl-perl"
+  "deb-libmime-tools-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-perl-any"
+]
+extra-source "fetchyahoo_2.14.7-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fetchyahoo/fetchyahoo_2.14.7-1.1_all.deb"
+}

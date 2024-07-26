@@ -1,0 +1,71 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-glance_2:21.0.0-2+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-glance"]
+]
+depends: [
+  "deb-alembic"
+  "deb-libxml2-dev"
+  "deb-libxslt1-dev"
+  "deb-procps"
+  "deb-python3-alembic"
+  "deb-python3-any"
+  "deb-python3-boto"
+  "deb-python3-boto3" {>= "1.9.199"}
+  "deb-python3-castellan"
+  "deb-python3-cinderclient"
+  "deb-python3-cryptography" {>= "2.1"}
+  "deb-python3-cursive"
+  "deb-python3-debtcollector"
+  "deb-python3-defusedxml" {>= "0.6.0"}
+  "deb-python3-eventlet" {>= "0.25.1"}
+  "deb-python3-futurist"
+  "deb-python3-glance-store" {>= "2.3.0"}
+  "deb-python3-httplib2"
+  "deb-python3-iso8601"
+  "deb-python3-jsonschema" {>= "3.2.0"}
+  "deb-python3-keystoneauth1"
+  "deb-python3-keystonemiddleware"
+  "deb-python3-migrate"
+  "deb-python3-monotonic"
+  "deb-python3-mysqldb"
+  "deb-python3-openssl"
+  "deb-python3-os-win"
+  "deb-python3-oslo-concurrency"
+  "deb-python3-oslo-config"
+  "deb-python3-oslo-context"
+  "deb-python3-oslo-db" {>= "5.0.0"}
+  "deb-python3-oslo-i18n"
+  "deb-python3-oslo-log"
+  "deb-python3-oslo-messaging"
+  "deb-python3-oslo-middleware"
+  "deb-python3-oslo-policy" {>= "2.4.1"}
+  "deb-python3-oslo-reports"
+  "deb-python3-oslo-upgradecheck"
+  "deb-python3-oslo-utils"
+  "deb-python3-osprofiler"
+  "deb-python3-paste"
+  "deb-python3-pastedeploy"
+  "deb-python3-pbr"
+  "deb-python3-prettytable"
+  "deb-python3-psycopg2" {>= "2.8.4"}
+  "deb-python3-pymysql"
+  "deb-python3-requests"
+  "deb-python3-retrying"
+  "deb-python3-routes"
+  "deb-python3-six" {>= "1.10.0"}
+  "deb-python3-sqlalchemy"
+  "deb-python3-sqlparse"
+  "deb-python3-stevedore"
+  "deb-python3-swiftclient"
+  "deb-python3-taskflow"
+  "deb-python3-webob"
+  "deb-python3-wsme"
+  "deb-python3-xattr"
+  "deb-qemu-utils"
+]
+extra-source "python3-glance_2:21.0.0-2+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/glance/python3-glance_21.0.0-2+deb11u1_all.deb"
+}

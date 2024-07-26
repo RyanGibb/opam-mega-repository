@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpoco-dev_1.11.0-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpoco-dev"]
+]
+depends: [
+  "deb-default-libmysqlclient-dev"
+  "deb-libexpat1-dev"
+  "deb-libpcre3-dev"
+  "deb-libpocoactiverecord80" {= "1.11.0-3+b1"}
+  "deb-libpococrypto80" {= "1.11.0-3+b1"}
+  "deb-libpocodata80" {= "1.11.0-3+b1"}
+  "deb-libpocodatamysql80" {= "1.11.0-3+b1"}
+  "deb-libpocodataodbc80" {= "1.11.0-3+b1"}
+  "deb-libpocodatapostgresql80" {= "1.11.0-3+b1"}
+  "deb-libpocodatasqlite80" {= "1.11.0-3+b1"}
+  "deb-libpocoencodings80" {= "1.11.0-3+b1"}
+  "deb-libpocofoundation80" {= "1.11.0-3+b1"}
+  "deb-libpocojson80" {= "1.11.0-3+b1"}
+  "deb-libpocojwt80" {= "1.11.0-3+b1"}
+  "deb-libpocomongodb80" {= "1.11.0-3+b1"}
+  "deb-libpoconet80" {= "1.11.0-3+b1"}
+  "deb-libpoconetssl80" {= "1.11.0-3+b1"}
+  "deb-libpocoredis80" {= "1.11.0-3+b1"}
+  "deb-libpocoutil80" {= "1.11.0-3+b1"}
+  "deb-libpocoxml80" {= "1.11.0-3+b1"}
+  "deb-libpocozip80" {= "1.11.0-3+b1"}
+  "deb-libsqlite3-dev"
+  "deb-libssl-dev"
+  "deb-zlib1g-dev"
+]
+extra-source "libpoco-dev_1.11.0-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/poco/libpoco-dev_1.11.0-3+b1_amd64.deb"
+}

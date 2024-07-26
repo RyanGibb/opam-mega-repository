@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libevdev-dev-1.9.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libevdev-dev"]
+]
+depends: [
+  "apk-libevdev" {= "1.9.0-r0"}
+  "apk-pkgconf" {= "1.7.2-r0"}
+]
+extra-source "libevdev-dev-1.9.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/libevdev-dev-1.9.0-r0.apk"
+}

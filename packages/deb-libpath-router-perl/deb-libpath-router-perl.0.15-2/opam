@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpath-router-perl_0.15-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpath-router-perl"]
+]
+depends: [
+  "deb-libclone-pp-perl" {>= "1.04"}
+  "deb-libeval-closure-perl" {>= "0.13"}
+  "deb-libmoo-perl" {>= "2.000001"}
+  "deb-libnamespace-clean-perl" {>= "0.23"}
+  "deb-libsub-exporter-perl"
+  "deb-libtest-deep-perl" {>= "0.113"}
+  "deb-libtry-tiny-perl" {>= "0.19"}
+  "deb-libtype-tiny-perl" {>= "1.000005"}
+  "deb-perl" {>= "5.17.4"}
+  "deb-perl-any"
+  "deb-sgml-base" {>= "1.28"}
+  ("deb-perl" {>= "5.17.7"} | "deb- libterm-readline-perl" {>= "1.11"})
+  ("deb-perl" {>= "5.17.8"} | "deb- libfile-spec-perl" {>= "3.40"})
+  ("deb-perl" {>= "5.21.10"} | "deb- libtest-simple-perl" {>= "1.001013"})
+  ("deb-perl" {>= "5.21.4"} | "deb- libdata-dumper-perl" {>= "2.154"})
+]
+extra-source "libpath-router-perl_0.15-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libp/libpath-router-perl/libpath-router-perl_0.15-2_all.deb"
+}

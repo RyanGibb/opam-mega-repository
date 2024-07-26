@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i zatacka_0.1.8-5.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r zatacka"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libsdl-image1-2" {>= "1.2.10"}
+  "deb-libsdl-ttf2-0-0"
+  "deb-libsdl1-2debian" {>= "1.2.11"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-ttf-dejavu-core"
+]
+extra-source "zatacka_0.1.8-5.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/z/zatacka/zatacka_0.1.8-5.2_amd64.deb"
+}

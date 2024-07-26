@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add netcf-0.2.8-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del netcf"]
+]
+depends: [
+  "apk-musl" {= "1.2.3-r3"}
+  "apk-netcf-libs" {= "0.2.8-r6"}
+  "apk-readline" {= "8.1.2-r0"}
+]
+extra-source "netcf-0.2.8-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/netcf-0.2.8-r6.apk"
+}

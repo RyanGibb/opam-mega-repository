@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i invesalius_3.1.99992-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r invesalius"]
+]
+depends: [
+  "deb-invesalius-bin"
+  "deb-python3-any"
+  "deb-python3-gdcm"
+  "deb-python3-nibabel"
+  "deb-python3-numpy"
+  "deb-python3-pil"
+  "deb-python3-psutil"
+  "deb-python3-scipy"
+  "deb-python3-serial"
+  "deb-python3-skimage"
+  "deb-python3-vtk7"
+  "deb-python3-vtkgdcm"
+  "deb-python3-wxgtk4-0"
+]
+extra-source "invesalius_3.1.99992-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/invesalius/invesalius_3.1.99992-3_all.deb"
+}

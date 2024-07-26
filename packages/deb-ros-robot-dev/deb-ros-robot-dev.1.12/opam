@@ -1,0 +1,58 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ros-robot-dev_1.12_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ros-robot-dev"]
+]
+depends: [
+  "deb-libactionlib-msgs-dev"
+  "deb-libangles-dev"
+  "deb-libcollada-parser-dev"
+  "deb-libcollada-urdf-dev"
+  "deb-libdiagnostic-msgs-dev"
+  "deb-libeigen-stl-containers-dev"
+  "deb-libgeometric-shapes-dev"
+  "deb-libgeometry-msgs-dev"
+  "deb-libkdl-parser-dev"
+  "deb-libmap-msgs-dev"
+  "deb-libmove-base-msgs-dev"
+  "deb-libnav-msgs-dev"
+  "deb-liborocos-kdl-dev"
+  "deb-librandom-numbers-dev"
+  "deb-libresource-retriever-dev"
+  "deb-libsensor-msgs-dev"
+  "deb-libshape-msgs-dev"
+  "deb-libstereo-msgs-dev"
+  "deb-libtf-conversions-dev"
+  "deb-libtf-dev"
+  "deb-libtf2-bullet-dev"
+  "deb-libtf2-dev"
+  "deb-libtf2-eigen-dev"
+  "deb-libtf2-geometry-msgs-dev"
+  "deb-libtf2-kdl-dev"
+  "deb-libtf2-msgs-dev"
+  "deb-libtf2-ros-dev"
+  "deb-libtf2-sensor-msgs-dev"
+  "deb-libtrajectory-msgs-dev"
+  "deb-liburdf-dev"
+  "deb-liburdf-parser-plugin-dev"
+  "deb-libvisualization-msgs-dev"
+  "deb-ros-actionlib-msgs"
+  "deb-ros-base-dev"
+  "deb-ros-diagnostic-msgs"
+  "deb-ros-geometry-msgs"
+  "deb-ros-map-msgs"
+  "deb-ros-move-base-msgs"
+  "deb-ros-nav-msgs"
+  "deb-ros-robot"
+  "deb-ros-sensor-msgs"
+  "deb-ros-shape-msgs"
+  "deb-ros-stereo-msgs"
+  "deb-ros-tf2-msgs"
+  "deb-ros-trajectory-msgs"
+  "deb-ros-visualization-msgs"
+]
+extra-source "ros-robot-dev_1.12_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ros-metapackages/ros-robot-dev_1.12_all.deb"
+}

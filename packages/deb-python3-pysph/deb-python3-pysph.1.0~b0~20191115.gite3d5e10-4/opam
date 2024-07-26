@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-pysph_1.0~b0~20191115.gite3d5e10-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-pysph"]
+]
+depends: [
+  "deb-build-essential"
+  "deb-cython3"
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgomp1" {>= "4.9"}
+  "deb-libopenmpi3" {>= "4.1.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-python3" {< "3.10"}
+  "deb-python3" {>= "3.9~"}
+  "deb-python3-all-dev"
+  "deb-python3-any"
+  "deb-python3-beaker"
+  "deb-python3-compyle"
+  "deb-python3-cyarray"
+  "deb-python3-mako" {>= "1.1.0"}
+  "deb-python3-mock"
+  "deb-python3-nose"
+  "deb-python3-numpy"
+  "deb-python3-numpy" {>= "1-1.16.0~rc1"}
+  "deb-python3-pkg-resources"
+  "deb-python3-pytools"
+]
+extra-source "python3-pysph_1.0~b0~20191115.gite3d5e10-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pysph/python3-pysph_1.0~b0~20191115.gite3d5e10-4_amd64.deb"
+}

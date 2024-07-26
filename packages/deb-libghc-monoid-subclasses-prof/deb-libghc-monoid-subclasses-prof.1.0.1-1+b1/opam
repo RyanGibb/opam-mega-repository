@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-monoid-subclasses-prof_1.0.1-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-monoid-subclasses-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-monoid-subclasses-dev" {= "1.0.1-1+b1"}
+  "deb-libghc-primes-prof"
+  "deb-libghc-vector-prof"
+]
+extra-source "libghc-monoid-subclasses-prof_1.0.1-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-monoid-subclasses/libghc-monoid-subclasses-prof_1.0.1-1+b1_amd64.deb"
+}

@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i 389-ds-base-legacy-tools_1.4.0.21-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r 389-ds-base-legacy-tools"]
+]
+depends: [
+  "deb-389-ds-base" {= "1.4.0.21-1"}
+  "deb-389-ds-base-libs"
+  "deb-libc6" {>= "2.14"}
+  "deb-libcrack2" {>= "2.8.12"}
+  "deb-libldap-2-4-2" {>= "2.4.25"}
+  "deb-libmozilla-ldap-perl"
+  "deb-libnetaddr-ip-perl"
+  "deb-libnspr4" {>= "2-4.10.9"}
+  "deb-libnss3" {>= "2-3.13.4-2~"}
+  "deb-libsasl2-2" {>= "2.1.27+dfsg"}
+  "deb-libsocket-getaddrinfo-perl"
+  ("deb-libperl4-corelibs-perl" | "deb- perl" {< "5.12.3-7"})
+]
+conflicts: [
+  "deb-389-ds-base" {< "1.4.0.20-1"}
+]
+extra-source "389-ds-base-legacy-tools_1.4.0.21-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/3/389-ds-base/389-ds-base-legacy-tools_1.4.0.21-1_amd64.deb"
+}

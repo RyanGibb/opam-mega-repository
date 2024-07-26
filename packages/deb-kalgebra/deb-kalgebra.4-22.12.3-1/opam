@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kalgebra_4:22.12.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kalgebra"]
+]
+depends: [
+  "deb-kalgebra-common" {= "4-22.12.3-1"}
+  "deb-kio"
+  "deb-libanalitza8" {>= "4-22.12.1"}
+  "deb-libanalitzagui8" {>= "4-22.12.1"}
+  "deb-libanalitzaplot8" {>= "4-22.12.1"}
+  "deb-libanalitzawidgets8" {>= "4-22.12.1"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libkf5configcore5" {>= "4.97.0"}
+  "deb-libkf5configwidgets5" {>= "5.90.0~"}
+  "deb-libkf5coreaddons5" {>= "5.90.0~"}
+  "deb-libkf5i18n5" {>= "5.90.0~"}
+  "deb-libkf5kiocore5" {>= "5.90.0~"}
+  "deb-libkf5widgetsaddons5" {>= "5.90.0~"}
+  "deb-libkf5xmlgui5" {>= "4.96.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5webenginewidgets5" {>= "5.14.1"}
+  "deb-libqt5widgets5" {>= "5.15~"}
+  "deb-libreadline8" {>= "6.0"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  ("deb-libqt5gui5" {>= "5.15~"} | "deb- libqt5gui5-gles" {>= "5.15~"})
+]
+conflicts: [
+  "deb-calgebra"
+]
+extra-source "kalgebra_4:22.12.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kalgebra/kalgebra_22.12.3-1_amd64.deb"
+}

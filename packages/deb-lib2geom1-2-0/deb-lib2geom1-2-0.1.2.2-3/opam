@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lib2geom1.2.0_1.2.2-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lib2geom1.2.0"]
+]
+depends: [
+  "deb-libc6" {>= "2.35"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libdouble-conversion3" {>= "2.0.0"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libgsl27" {>= "2.7.1"}
+  "deb-libstdc++6" {>= "11"}
+]
+extra-source "lib2geom1.2.0_1.2.2-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/lib2/lib2geom/lib2geom1.2.0_1.2.2-3_amd64.deb"
+}

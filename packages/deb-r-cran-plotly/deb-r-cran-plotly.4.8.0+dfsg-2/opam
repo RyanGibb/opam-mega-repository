@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-plotly_4.8.0+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-plotly"]
+]
+depends: [
+  "deb-libjs-jquery-selectize-js"
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "3.5.1-1"}
+  "deb-r-cran-base64enc"
+  "deb-r-cran-colourpicker"
+  "deb-r-cran-crosstalk"
+  "deb-r-cran-data-table"
+  "deb-r-cran-digest"
+  "deb-r-cran-dplyr"
+  "deb-r-cran-ggplot2" {>= "3.0.0"}
+  "deb-r-cran-hexbin"
+  "deb-r-cran-htmltools"
+  "deb-r-cran-htmlwidgets" {>= "1.2"}
+  "deb-r-cran-httr"
+  "deb-r-cran-jsonlite"
+  "deb-r-cran-lazyeval" {>= "0.2.0"}
+  "deb-r-cran-magrittr"
+  "deb-r-cran-promises"
+  "deb-r-cran-purrr"
+  "deb-r-cran-rcolorbrewer"
+  "deb-r-cran-rlang"
+  "deb-r-cran-scales"
+  "deb-r-cran-tibble"
+  "deb-r-cran-tidyr"
+  "deb-r-cran-viridislite"
+]
+extra-source "r-cran-plotly_4.8.0+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-plotly/r-cran-plotly_4.8.0+dfsg-2_all.deb"
+}

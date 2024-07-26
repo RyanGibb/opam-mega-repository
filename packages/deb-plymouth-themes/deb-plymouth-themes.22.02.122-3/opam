@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i plymouth-themes_22.02.122-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r plymouth-themes"]
+]
+depends: [
+  "deb-fontconfig"
+  "deb-fontconfig-config"
+  "deb-fonts-cantarell"
+  "deb-fonts-dejavu-core"
+  "deb-libc6" {>= "2.29"}
+  "deb-libplymouth5" {>= "0.9.5"}
+  "deb-plymouth" {= "22.02.122-3"}
+  "deb-plymouth-label" {= "22.02.122-3"}
+]
+conflicts: [
+  "deb-plymouth-themes-all"
+  "deb-plymouth-themes-fade-in"
+  "deb-plymouth-themes-glow"
+  "deb-plymouth-themes-script"
+  "deb-plymouth-themes-solar"
+  "deb-plymouth-themes-spinfinity"
+  "deb-plymouth-themes-spinner"
+]
+extra-source "plymouth-themes_22.02.122-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/plymouth/plymouth-themes_22.02.122-3_amd64.deb"
+}

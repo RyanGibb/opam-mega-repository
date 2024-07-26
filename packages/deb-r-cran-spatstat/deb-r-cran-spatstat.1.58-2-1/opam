@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-spatstat_1.58-2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-spatstat"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "3.5.2-1"}
+  "deb-r-cran-abind"
+  "deb-r-cran-deldir" {>= "0.0-21"}
+  "deb-r-cran-goftest"
+  "deb-r-cran-matrix"
+  "deb-r-cran-mgcv"
+  "deb-r-cran-nlme"
+  "deb-r-cran-polyclip" {>= "1.5-0"}
+  "deb-r-cran-rpart"
+  "deb-r-cran-spatstat-data" {>= "1.4-0"}
+  "deb-r-cran-spatstat-utils" {>= "1.13-0"}
+  "deb-r-cran-tensor"
+]
+extra-source "r-cran-spatstat_1.58-2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-spatstat/r-cran-spatstat_1.58-2-1_amd64.deb"
+}

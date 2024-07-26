@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgtkhex-3-0_3.18.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgtkhex-3-0"]
+]
+depends: [
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libgail-3-0" {>= "3.0.0"}
+  "deb-libglib2-0-0" {>= "2.31.10"}
+  "deb-libgtk-3-0" {>= "3.3.8"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+]
+extra-source "libgtkhex-3-0_3.18.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/ghex/libgtkhex-3-0_3.18.4-1_amd64.deb"
+}

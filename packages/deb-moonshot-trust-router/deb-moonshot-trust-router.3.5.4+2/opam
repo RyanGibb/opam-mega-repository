@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i moonshot-trust-router_3.5.4+2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r moonshot-trust-router"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libc6" {>= "2.34"}
+  "deb-libcom-err2" {>= "1.43.9"}
+  "deb-libevent-2-1-7" {>= "2.1.8-stable"}
+  "deb-libevent-pthreads-2-1-7" {>= "2.1.8-stable"}
+  "deb-libglib2-0-0" {>= "2.61.2"}
+  "deb-libgssapi-krb5-2" {>= "1.17"}
+  "deb-libjansson4" {>= "2.14"}
+  "deb-libsqlite3-0" {>= "3.5.9"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libtalloc2" {>= "2.0.4~git20101213"}
+  "deb-libtr-tid2" {>= "3.5.4+2"}
+  "deb-moonshot-gss-eap" {>= "0.9.2-3+deb8u1"}
+  "deb-sqlite3"
+]
+extra-source "moonshot-trust-router_3.5.4+2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/moonshot-trust-router/moonshot-trust-router_3.5.4+2_amd64.deb"
+}

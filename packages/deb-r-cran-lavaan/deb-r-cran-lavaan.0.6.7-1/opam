@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-lavaan_0.6.7-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-lavaan"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.2-1"}
+  "deb-r-cran-mass"
+  "deb-r-cran-mnormt"
+  "deb-r-cran-numderiv"
+  "deb-r-cran-pbivnorm"
+]
+extra-source "r-cran-lavaan_0.6.7-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-lavaan/r-cran-lavaan_0.6.7-1_all.deb"
+}

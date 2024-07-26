@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i regina-normal_6.0.1-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r regina-normal"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libcgraph6"
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libgmp10" {>= "4.1.4-10"}
+  "deb-libgmpxx4ldbl" {>= "2-6.2.1+dfsg"}
+  "deb-libgvc6"
+  "deb-libjansson4" {>= "2.0.1"}
+  "deb-libpopt0" {>= "1.14"}
+  "deb-libpython3-9" {>= "3.9.1"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5svg5" {>= "5.6.0~beta"}
+  "deb-libqt5widgets5" {>= "5.14.1"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libtokyocabinet9" {>= "1.4.47"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-perl-any"
+  "deb-python3" {< "3.10"}
+  "deb-python3" {>= "3.9~"}
+  "deb-python3-any"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+]
+extra-source "regina-normal_6.0.1-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/regina-normal/regina-normal_6.0.1-4_amd64.deb"
+}

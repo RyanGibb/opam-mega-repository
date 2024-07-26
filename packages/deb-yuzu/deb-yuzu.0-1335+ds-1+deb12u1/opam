@@ -1,0 +1,41 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i yuzu_0-1335+ds-1+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r yuzu"]
+]
+depends: [
+  "deb-libavcodec-extra59"
+  "deb-libavutil57" {>= "7-5.0"}
+  "deb-libboost-context1-74-0" {>= "1.74.0+ds1"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcpp-httplib0-11" {>= "0.11.4+ds"}
+  "deb-libcubeb0" {>= "0.0~git20210801.6ce9596"}
+  "deb-libdynarmic6" {>= "6.4.5+ds"}
+  "deb-libenet7"
+  "deb-libfmt9" {>= "9.1.0+ds1"}
+  "deb-libgcc-s1" {>= "3.3.1"}
+  "deb-libinireader0" {>= "48"}
+  "deb-liblz4-1" {>= "0.0~r113"}
+  "deb-libmbedcrypto7" {>= "2.28.0"}
+  "deb-libopus0" {>= "1.1"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.14.1"}
+  "deb-libqt5multimedia5" {>= "5.6.0~beta"}
+  "deb-libqt5webenginecore5" {>= "5.7.1"}
+  "deb-libqt5webenginewidgets5" {>= "5.14.1"}
+  "deb-libqt5widgets5" {>= "5.14.1"}
+  "deb-libsdl2-2-0-0" {>= "2.0.18"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libstdc++6" {>= "12"}
+  "deb-libswscale6" {>= "7-5.0"}
+  "deb-libusb-1-0-0" {>= "2-1.0.9"}
+  "deb-libva2" {>= "1.0.3"}
+  "deb-libzstd1" {>= "1.5.2"}
+  "deb-sse4-2-support"
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "yuzu_0-1335+ds-1+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/y/yuzu/yuzu_0-1335+ds-1+deb12u1_amd64.deb"
+}

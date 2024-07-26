@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cinder-volume_2:21.1.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cinder-volume"]
+]
+depends: [
+  "deb-adduser"
+  "deb-cinder-common" {= "2-21.1.0-3"}
+  "deb-lvm2"
+  "deb-python3-any"
+  "deb-qemu-utils"
+  "deb-sysvinit-utils"
+  ("deb-tgt" | "deb- open-iscsi")
+]
+extra-source "cinder-volume_2:21.1.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cinder/cinder-volume_21.1.0-3_all.deb"
+}

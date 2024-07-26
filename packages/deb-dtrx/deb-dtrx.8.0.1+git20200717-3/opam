@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dtrx_8.0.1+git20200717-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dtrx"]
+]
+depends: [
+  "deb-binutils"
+  "deb-bzip2"
+  "deb-cabextract"
+  "deb-cpio"
+  "deb-lzma"
+  "deb-p7zip-full"
+  "deb-python3-any"
+  "deb-rpm"
+  "deb-unshield"
+  "deb-unzip"
+  "deb-xz-utils"
+]
+extra-source "dtrx_8.0.1+git20200717-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dtrx/dtrx_8.0.1+git20200717-3_all.deb"
+}

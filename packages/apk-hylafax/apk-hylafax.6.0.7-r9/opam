@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add hylafax-6.0.7-r9.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del hylafax"]
+]
+depends: [
+  "apk-bash" {= "5.2.15-r5"}
+  "apk-ghostscript" {= "10.02.0-r0"}
+  "apk-libgcc" {= "12.2.1_git20220924-r10"}
+  "apk-libintl" {= "0.21.1-r7"}
+  "apk-libstdc++" {= "12.2.1_git20220924-r10"}
+  "apk-musl" {= "1.2.4-r2"}
+  "apk-tiff" {= "4.5.1-r0"}
+  "apk-tiff-tools" {= "4.5.1-r0"}
+  "apk-zlib" {= "1.2.13-r1"}
+]
+extra-source "hylafax-6.0.7-r9.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/hylafax-6.0.7-r9.apk"
+}

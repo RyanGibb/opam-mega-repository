@@ -1,0 +1,68 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i plaso_20190131-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r plaso"]
+]
+depends: [
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7~"}
+  "deb-python-artifacts" {>= "20170818"}
+  "deb-python-biplist" {>= "1.0.3"}
+  "deb-python-certifi" {>= "2016.9.26"}
+  "deb-python-chardet" {>= "2.0.1"}
+  "deb-python-crypto" {>= "2.6"}
+  "deb-python-dateutil" {>= "1.5"}
+  "deb-python-dfdatetime" {>= "20180704"}
+  "deb-python-dfvfs" {>= "20181209"}
+  "deb-python-dfwinreg" {>= "20180712"}
+  "deb-python-dtfabric" {>= "20181128"}
+  "deb-python-efilter" {>= "1.5"}
+  "deb-python-elasticsearch" {>= "5.4.0"}
+  "deb-python-fsapfs" {>= "20181205"}
+  "deb-python-future"
+  "deb-python-hachoir-core" {>= "1.3.3"}
+  "deb-python-hachoir-metadata" {>= "1.3.3"}
+  "deb-python-hachoir-parser" {>= "1.3.4"}
+  "deb-python-idna"
+  "deb-python-libbde" {>= "20140531"}
+  "deb-python-libesedb" {>= "20150409"}
+  "deb-python-libevt" {>= "20120410"}
+  "deb-python-libevtx" {>= "20141112"}
+  "deb-python-libewf" {>= "20131210"}
+  "deb-python-libfsntfs" {>= "20151130"}
+  "deb-python-libfvde" {>= "20160719"}
+  "deb-python-libfwnt" {>= "20160418"}
+  "deb-python-libfwsi" {>= "20150606"}
+  "deb-python-liblnk" {>= "20150830"}
+  "deb-python-libmsiecf" {>= "20150314"}
+  "deb-python-libolecf" {>= "20151223"}
+  "deb-python-libqcow" {>= "20131204"}
+  "deb-python-libregf" {>= "20150315"}
+  "deb-python-libscca" {>= "20151226"}
+  "deb-python-libsigscan" {>= "20150627"}
+  "deb-python-libsmdev" {>= "20140529"}
+  "deb-python-libsmraw" {>= "20140612"}
+  "deb-python-libvhdi" {>= "20131210"}
+  "deb-python-libvmdk" {>= "20140421"}
+  "deb-python-libvshadow" {>= "20160109"}
+  "deb-python-libvslvm" {>= "20160109"}
+  "deb-python-lz4"
+  "deb-python-lzma"
+  "deb-python-pefile"
+  "deb-python-psutil" {>= "1.2.1"}
+  "deb-python-pyparsing" {>= "2.0.3"}
+  "deb-python-requests" {>= "2.2.1"}
+  "deb-python-six" {>= "1.1.0"}
+  "deb-python-tsk" {>= "20160721"}
+  "deb-python-tz"
+  "deb-python-urllib3"
+  "deb-python-xlsxwriter" {>= "0.9.3"}
+  "deb-python-yaml" {>= "3.10"}
+  "deb-python-yara" {>= "3.4.0"}
+  "deb-python-zmq" {>= "2.1.11"}
+]
+extra-source "plaso_20190131-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/plaso/plaso_20190131-1_all.deb"
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lomiri-indicator-transfer-download-manager_1.0.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lomiri-indicator-transfer-download-manager"]
+]
+depends: [
+  "deb-libc6" {>= "2.32"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.35.4"}
+  "deb-libindicator-transfer1" {>= "1.0.0"}
+  "deb-liblomiri-app-launch0" {>= "0.0.90"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-lomiri-indicator-transfer" {= "1.0.0-2"}
+]
+extra-source "lomiri-indicator-transfer-download-manager_1.0.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lomiri-indicator-transfer/lomiri-indicator-transfer-download-manager_1.0.0-2_amd64.deb"
+}

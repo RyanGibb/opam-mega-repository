@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgraphics-tiff-perl_7-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgraphics-tiff-perl"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libreadonly-perl"
+  "deb-libtiff5" {>= "4.0.3"}
+  "deb-perl" {>= "5.32.0-4"}
+  "deb-perl-base"
+]
+extra-source "libgraphics-tiff-perl_7-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libg/libgraphics-tiff-perl/libgraphics-tiff-perl_7-1+b1_amd64.deb"
+}

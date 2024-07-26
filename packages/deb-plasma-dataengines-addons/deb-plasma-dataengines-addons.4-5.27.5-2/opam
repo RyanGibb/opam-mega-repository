@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i plasma-dataengines-addons_4:5.27.5-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r plasma-dataengines-addons"]
+]
+depends: [
+  "deb-kdeplasma-addons-data" {= "4-5.27.5-2"}
+  "deb-kio"
+  "deb-kpackagetool5"
+  "deb-kross"
+  "deb-libc6" {>= "2.4"}
+  "deb-libkf5configcore5" {>= "5.90.0~"}
+  "deb-libkf5coreaddons5" {>= "5.90.0~"}
+  "deb-libkf5i18n5" {>= "5.90.0~"}
+  "deb-libkf5kiocore5" {>= "5.90.0~"}
+  "deb-libkf5package5" {>= "5.17.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-plasma-framework" {>= "5.79.0~"}
+  "deb-qml-module-qtquick-layouts"
+  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb- libqt5gui5-gles" {>= "5.15.0~"})
+]
+extra-source "plasma-dataengines-addons_4:5.27.5-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kdeplasma-addons/plasma-dataengines-addons_5.27.5-2_amd64.deb"
+}

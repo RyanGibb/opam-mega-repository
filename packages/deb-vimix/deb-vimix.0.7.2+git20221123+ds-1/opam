@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i vimix_0.7.2+git20221123+ds-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r vimix"]
+]
+depends: [
+  "deb-fonts-hack"
+  "deb-fonts-roboto-unhinted"
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglfw3" {>= "3.3"}
+  "deb-libglib2-0-0" {>= "2.22.0"}
+  "deb-libgstreamer-plugins-base1-0-0" {>= "1.10.0"}
+  "deb-libgstreamer1-0-0" {>= "1.6.0"}
+  "deb-libgtk-3-0" {>= "3.0.0"}
+  "deb-libicu72" {>= "72.1~rc-1~"}
+  "deb-libstdc++6" {>= "12.2.0-9"}
+  "deb-libtinyxml2-9" {>= "8.0.0"}
+  "deb-zlib1g" {>= "1-1.2.0"}
+]
+extra-source "vimix_0.7.2+git20221123+ds-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/vimix/vimix_0.7.2+git20221123+ds-1_amd64.deb"
+}

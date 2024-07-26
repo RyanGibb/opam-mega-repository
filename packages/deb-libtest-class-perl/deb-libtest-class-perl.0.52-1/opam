@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libtest-class-perl_0.52-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libtest-class-perl"]
+]
+depends: [
+  "deb-libcontextual-return-perl"
+  "deb-libmodule-runtime-perl"
+  "deb-libmro-compat-perl"
+  "deb-libtest-exception-perl"
+  "deb-libtry-tiny-perl"
+  "deb-perl-any"
+]
+extra-source "libtest-class-perl_0.52-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libt/libtest-class-perl/libtest-class-perl_0.52-1_all.deb"
+}

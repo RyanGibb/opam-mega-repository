@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libqt4-dev-bin_4:4.8.7+dfsg-18+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libqt4-dev-bin"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libqt4-qt3support" {= "4-4.8.7+dfsg-18+deb10u1"}
+  "deb-libqt4-xml" {= "4-4.8.7+dfsg-18+deb10u1"}
+  "deb-libqtcore4" {= "4-4.8.7+dfsg-18+deb10u1"}
+  "deb-libqtdbus4" {= "4-4.8.7+dfsg-18+deb10u1"}
+  "deb-libqtgui4" {= "4-4.8.7+dfsg-18+deb10u1"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-qtchooser" {>= "55-gc9562a1-1~"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libqt4-dev-bin_4:4.8.7+dfsg-18+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qt4-x11/libqt4-dev-bin_4.8.7+dfsg-18+deb10u1_amd64.deb"
+}

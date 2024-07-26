@@ -1,0 +1,45 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i deepin-music_6.0.1.54+ds.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r deepin-music"]
+]
+depends: [
+  "deb-gstreamer1-0-libav"
+  "deb-gstreamer1-0-plugins-bad"
+  "deb-gstreamer1-0-plugins-base"
+  "deb-gstreamer1-0-plugins-good"
+  "deb-gstreamer1-0-plugins-ugly"
+  "deb-gstreamer1-0-pulseaudio"
+  "deb-libavcodec-extra58"
+  "deb-libavformat58" {>= "7-4.1"}
+  "deb-libavutil56" {>= "7-4.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libcue2"
+  "deb-libdtkcore5" {>= "5.2.2"}
+  "deb-libdtkgui5" {>= "5.2.2.4"}
+  "deb-libdtkwidget5" {>= "5.2.1"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libglib2-0-bin"
+  "deb-libicu67" {>= "67.1-1~"}
+  "deb-libkf5codecs5" {>= "4.96.0"}
+  "deb-libmpris-qt5-1" {>= "1.0.3"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.14.1"}
+  "deb-libqt5multimedia5" {>= "5.6.0~beta"}
+  "deb-libqt5multimedia5-plugins"
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libqt5sql5" {>= "5.0.2"}
+  "deb-libqt5sql5-sqlite"
+  "deb-libqt5widgets5" {>= "5.15.1"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtag1v5" {>= "1.9.1-2.2~"}
+  "deb-libvlc5" {>= "2.2.0~pre1"}
+  "deb-libvlccore9" {>= "2.0.0"}
+  "deb-vlc-plugin-base"
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "deepin-music_6.0.1.54+ds.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/deepin-music/deepin-music_6.0.1.54+ds.1-2_amd64.deb"
+}

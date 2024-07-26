@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libppxlib-ocaml-dev_0.27.0-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libppxlib-ocaml-dev"]
+]
+depends: [
+  "deb-libc6" {>= "2.35"}
+  "deb-libocaml-compiler-libs-ocaml-dev"
+  "deb-libppx-derivers-ocaml-dev"
+  "deb-libsexplib0-ocaml-dev"
+  "deb-ocaml"
+]
+extra-source "libppxlib-ocaml-dev_0.27.0-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/ppxlib/libppxlib-ocaml-dev_0.27.0-2+b1_amd64.deb"
+}

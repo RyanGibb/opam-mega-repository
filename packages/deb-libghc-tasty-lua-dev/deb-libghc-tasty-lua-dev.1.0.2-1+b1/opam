@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-tasty-lua-dev_1.0.2-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-tasty-lua-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.14"}
+  "deb-libghc-file-embed-dev"
+  "deb-libghc-hslua-core-dev"
+  "deb-libghc-hslua-marshalling-dev"
+  "deb-libghc-lua-arbitrary-dev"
+  "deb-libghc-quickcheck2-dev"
+  "deb-libghc-tasty-dev"
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-liblua5-3-0"
+]
+extra-source "libghc-tasty-lua-dev_1.0.2-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-tasty-lua/libghc-tasty-lua-dev_1.0.2-1+b1_amd64.deb"
+}

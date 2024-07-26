@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i linuxcnc-uspace-dev_2.9.0~pre1+git20230208.f1270d6ed7-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r linuxcnc-uspace-dev"]
+]
+depends: [
+  "deb-linuxcnc-uspace" {= "2.9.0~pre1+git20230208.f1270d6ed7-1"}
+  "deb-python3-any"
+  "deb-python3-serial"
+  "deb-python3-yapps"
+  "deb-udev"
+]
+conflicts: [
+  "deb-linuxcnc-dev"
+  "deb-linuxcnc-sim-dev"
+]
+extra-source "linuxcnc-uspace-dev_2.9.0~pre1+git20230208.f1270d6ed7-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/linuxcnc/linuxcnc-uspace-dev_2.9.0~pre1+git20230208.f1270d6ed7-1_amd64.deb"
+}

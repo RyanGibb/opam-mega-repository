@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsearch-elasticsearch-perl_7.30-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsearch-elasticsearch-perl"]
+]
+depends: [
+  "deb-libany-uri-escape-perl"
+  "deb-libdevel-globaldestruction-perl"
+  "deb-libhttp-message-perl"
+  "deb-libjson-maybexs-perl"
+  "deb-liblog-any-perl" {>= "1.02"}
+  "deb-libmodule-runtime-perl"
+  "deb-libmoo-perl" {>= "2.001000"}
+  "deb-libnamespace-clean-perl"
+  "deb-libnet-ip-perl"
+  "deb-libpackage-stash-perl"
+  "deb-libsub-exporter-perl"
+  "deb-libtry-tiny-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-perl"
+  "deb-perl-any"
+]
+extra-source "libsearch-elasticsearch-perl_7.30-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libs/libsearch-elasticsearch-perl/libsearch-elasticsearch-perl_7.30-1_all.deb"
+}

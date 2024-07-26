@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add pgtcl-2.1.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del pgtcl"]
+]
+depends: [
+  "apk-libpq" {= "12.10-r0"}
+  "apk-musl" {= "1.1.24-r10"}
+]
+extra-source "pgtcl-2.1.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/pgtcl-2.1.0-r0.apk"
+}

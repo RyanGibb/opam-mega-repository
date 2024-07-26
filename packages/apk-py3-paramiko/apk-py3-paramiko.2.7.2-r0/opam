@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py3-paramiko-2.7.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py3-paramiko"]
+]
+depends: [
+  "apk-py3-asn1" {= "0.4.8-r0"}
+  "apk-py3-bcrypt" {= "3.2.0-r2"}
+  "apk-py3-cryptography" {= "3.3.2-r0"}
+  "apk-py3-pynacl" {= "1.4.0-r0"}
+  "apk-python3" {= "3.8.15-r0"}
+]
+extra-source "py3-paramiko-2.7.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/py3-paramiko-2.7.2-r0.apk"
+}

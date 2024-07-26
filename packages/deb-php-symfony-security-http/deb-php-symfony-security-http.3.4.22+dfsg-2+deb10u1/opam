@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i php-symfony-security-http_3.4.22+dfsg-2+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r php-symfony-security-http"]
+]
+depends: [
+  "deb-php-common"
+  "deb-php-symfony-event-dispatcher"
+  "deb-php-symfony-http-foundation"
+  "deb-php-symfony-http-kernel" {> "3.3"}
+  "deb-php-symfony-property-access"
+  "deb-php-symfony-security-core" {> "3.2"}
+]
+extra-source "php-symfony-security-http_3.4.22+dfsg-2+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/symfony/php-symfony-security-http_3.4.22+dfsg-2+deb10u1_all.deb"
+}

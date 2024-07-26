@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpdb-redo1_1.0.2-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpdb-redo1"]
+]
+depends: [
+  "deb-libboost-iostreams1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libcifpp1" {>= "1.0.1"}
+  "deb-libclipper2" {>= "2.1.20201109"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgsl25" {>= "2.6"}
+  "deb-libnewuoa0" {>= "0.1.1"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libzeep5" {>= "5.0.2"}
+]
+extra-source "libpdb-redo1_1.0.2-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libp/libpdb-redo/libpdb-redo1_1.0.2-2_amd64.deb"
+}

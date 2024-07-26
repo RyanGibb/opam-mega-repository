@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnunet_0.13.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnunet"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libc6" {>= "2.29"}
+  "deb-libcurl3-gnutls" {>= "7.35.0"}
+  "deb-libextractor3" {>= "1-0.6.3"}
+  "deb-libgcrypt20" {>= "1.8.0"}
+  "deb-libgnutls-dane0" {>= "3.7.0"}
+  "deb-libgnutls30" {>= "3.7.0"}
+  "deb-libidn2-0" {>= "2.0.0"}
+  "deb-libjansson4" {>= "2.3"}
+  "deb-libltdl7" {>= "2.4.6"}
+  "deb-libmariadb3" {>= "3.0.0"}
+  "deb-libmicrohttpd12" {>= "0.9.50"}
+  "deb-libogg0" {>= "1.3.0"}
+  "deb-libopus0" {>= "1.1"}
+  "deb-libpq5" {>= "9.5"}
+  "deb-libpulse0" {>= "2.0"}
+  "deb-libsodium23" {>= "1.0.17"}
+  "deb-libsqlite3-0" {>= "3.8.7"}
+  "deb-libunistring2" {>= "0.9.7"}
+  "deb-libzbar0" {>= "0.10"}
+  "deb-lsb-base"
+  "deb-netbase"
+  "deb-zlib1g" {>= "1-1.2.0"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "gnunet_0.13.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnunet/gnunet_0.13.1-2_amd64.deb"
+}

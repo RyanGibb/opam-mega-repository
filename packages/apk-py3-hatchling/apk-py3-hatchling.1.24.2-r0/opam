@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py3-hatchling-1.24.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py3-hatchling"]
+]
+depends: [
+  "apk-py3-editables" {= "0.5-r2"}
+  "apk-py3-packaging" {= "24.0-r1"}
+  "apk-py3-pathspec" {= "0.12.1-r2"}
+  "apk-py3-pluggy" {= "1.5.0-r0"}
+  "apk-py3-trove-classifiers" {= "2024.5.17-r0"}
+  "apk-python3" {= "3.12.3-r1"}
+  "apk-python3" {>= "3.12"}
+]
+extra-source "py3-hatchling-1.24.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/py3-hatchling-1.24.2-r0.apk"
+}

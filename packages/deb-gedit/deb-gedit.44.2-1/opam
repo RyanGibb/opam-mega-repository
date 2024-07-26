@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gedit_44.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gedit"]
+]
+depends: [
+  "deb-gedit-common" {< "45~"}
+  "deb-gedit-common" {>= "44~"}
+  "deb-gir1-2-glib-2-0"
+  "deb-gir1-2-gtk-3-0" {>= "3.22"}
+  "deb-gir1-2-gtksource-4"
+  "deb-gir1-2-pango-1-0"
+  "deb-gir1-2-peas-1-0"
+  "deb-gsettings-desktop-schemas"
+  "deb-iso-codes"
+  "deb-libamtk-5-0" {>= "5.6.0"}
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libgirepository-1-0-1" {>= "0.9.3"}
+  "deb-libglib2-0-0" {>= "2.70.0"}
+  "deb-libgspell-1-2" {>= "1.8.2"}
+  "deb-libgtk-3-0" {>= "3.22"}
+  "deb-libgtksourceview-4-0" {>= "3.18.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpeas-1-0-0" {>= "1.14.1"}
+  "deb-libtepl-6-2" {>= "6.4.0"}
+  "deb-python3-11"
+  "deb-python3-any"
+  "deb-python3-gi" {>= "3.0"}
+  "deb-python3-gi-cairo" {>= "3.0"}
+]
+extra-source "gedit_44.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gedit/gedit_44.2-1_amd64.deb"
+}

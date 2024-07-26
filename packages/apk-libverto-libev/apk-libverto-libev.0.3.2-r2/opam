@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libverto-libev-0.3.2-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libverto-libev"]
+]
+depends: [
+  "apk-libev" {= "4.33-r1"}
+  "apk-libverto" {= "0.3.2-r2"}
+  "apk-musl" {= "1.2.5-r0"}
+]
+extra-source "libverto-libev-0.3.2-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libverto-libev-0.3.2-r2.apk"
+}

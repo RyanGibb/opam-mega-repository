@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i wireshark-dev_2.6.20-0+deb10u4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r wireshark-dev"]
+]
+depends: [
+  "deb-autoconf"
+  "deb-automake"
+  "deb-autotools-dev"
+  "deb-cdbs"
+  "deb-debhelper"
+  "deb-libglib2-0-dev"
+  "deb-libpcap0-8-dev"
+  "deb-libtool"
+  "deb-libwireshark-dev"
+  "deb-libwiretap-dev"
+  "deb-omniidl" {>= "4.0.1-2"}
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7~"}
+  "deb-python-ply"
+  "deb-snacc"
+]
+conflicts: [
+  "deb-ethereal-dev" {< "1.0.0-3"}
+]
+extra-source "wireshark-dev_2.6.20-0+deb10u4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/w/wireshark/wireshark-dev_2.6.20-0+deb10u4_amd64.deb"
+}

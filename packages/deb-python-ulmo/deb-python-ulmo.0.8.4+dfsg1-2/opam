@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-ulmo_0.8.4+dfsg1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-ulmo"]
+]
+depends: [
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7~"}
+  "deb-python-appdirs"
+  "deb-python-bs4"
+  "deb-python-future"
+  "deb-python-geojson"
+  "deb-python-html5lib"
+  "deb-python-isodate"
+  "deb-python-lxml"
+  "deb-python-numpy"
+  "deb-python-pandas"
+  "deb-python-pytest"
+  "deb-python-requests"
+  "deb-python-suds"
+  "deb-python-sympy"
+  "deb-python-tables"
+]
+extra-source "python-ulmo_0.8.4+dfsg1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-ulmo/python-ulmo_0.8.4+dfsg1-2_all.deb"
+}

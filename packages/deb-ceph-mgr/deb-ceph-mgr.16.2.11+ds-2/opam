@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ceph-mgr_16.2.11+ds-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ceph-mgr"]
+]
+depends: [
+  "deb-ceph-base" {= "16.2.11+ds-2"}
+  "deb-ceph-mgr-modules-core" {< "16.2.11+ds-2.1~"}
+  "deb-ceph-mgr-modules-core" {>= "16.2.11+ds-2"}
+  "deb-libboost-python1-74-0"
+  "deb-libboost-python1-74-0" {>= "1.74.0+ds1"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libfmt9" {>= "9.1.0+ds1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libpython3-11" {>= "3.11.0"}
+  "deb-librados2" {>= "16.2.11+ds"}
+  "deb-libstdc++6" {>= "12"}
+  "deb-python3-bcrypt"
+  "deb-python3-cherrypy3"
+  "deb-python3-jwt"
+  "deb-python3-openssl"
+  "deb-python3-pecan"
+  "deb-python3-requests"
+  "deb-python3-werkzeug"
+]
+extra-source "ceph-mgr_16.2.11+ds-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/ceph/ceph-mgr_16.2.11+ds-2_amd64.deb"
+}

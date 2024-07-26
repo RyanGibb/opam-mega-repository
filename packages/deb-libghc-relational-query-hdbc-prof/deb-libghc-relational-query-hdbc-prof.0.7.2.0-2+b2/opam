@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-relational-query-hdbc-prof_0.7.2.0-2+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-relational-query-hdbc-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-convertible-prof"
+  "deb-libghc-dlist-prof"
+  "deb-libghc-hdbc-prof"
+  "deb-libghc-hdbc-session-prof"
+  "deb-libghc-names-th-prof"
+  "deb-libghc-persistable-record-prof"
+  "deb-libghc-product-isomorphic-prof"
+  "deb-libghc-relational-query-hdbc-dev" {= "0.7.2.0-2+b2"}
+  "deb-libghc-relational-query-prof"
+  "deb-libghc-relational-schemas-prof"
+  "deb-libghc-sql-words-prof"
+  "deb-libghc-th-data-compat-prof"
+]
+extra-source "libghc-relational-query-hdbc-prof_0.7.2.0-2+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-relational-query-hdbc/libghc-relational-query-hdbc-prof_0.7.2.0-2+b2_amd64.deb"
+}

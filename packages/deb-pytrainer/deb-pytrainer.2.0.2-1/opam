@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pytrainer_2.0.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pytrainer"]
+]
+depends: [
+  "deb-gir1-2-gtk-3-0"
+  "deb-python3-any"
+  "deb-python3-cairo"
+  "deb-python3-dateutil"
+  "deb-python3-gi"
+  "deb-python3-lxml"
+  "deb-python3-matplotlib"
+  "deb-python3-migrate"
+  "deb-python3-sqlalchemy"
+]
+extra-source "pytrainer_2.0.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pytrainer/pytrainer_2.0.2-1_all.deb"
+}

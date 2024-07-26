@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-gstreamer_3.4.3-2+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-gstreamer"]
+]
+depends: [
+  "deb-gir1-2-gstreamer-1-0"
+  "deb-libc6" {>= "2.4"}
+  "deb-libgirepository-1-0-1" {>= "1.62.0-4~"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libgstreamer1-0-0" {>= "1.4.0"}
+  "deb-libruby" {< "1-3.2~"}
+  "deb-libruby" {>= "1-3.1~0"}
+  "deb-libruby3-1" {>= "3.1.0~preview1"}
+  "deb-ruby-atk" {>= "3.4.3-2"}
+  "deb-ruby-gdk-pixbuf2" {>= "3.4.3-2"}
+  "deb-ruby-gobject-introspection" {= "3.4.3-2+b2"}
+  "deb-ruby-pango" {= "3.4.3-2+b2"}
+  ("deb-ruby" | "deb- ruby-interpreter")
+]
+extra-source "ruby-gstreamer_3.4.3-2+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-gnome/ruby-gstreamer_3.4.3-2+b2_amd64.deb"
+}

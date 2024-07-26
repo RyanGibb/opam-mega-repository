@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add nmap-7.93-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del nmap"]
+]
+depends: [
+  "apk-libcrypto3" {= "3.0.14-r0"}
+  "apk-libgcc" {= "12.2.1_git20220924-r4"}
+  "apk-libpcap" {= "1.10.1-r1"}
+  "apk-libssh2" {= "1.11.0-r0"}
+  "apk-libssl3" {= "3.0.14-r0"}
+  "apk-libstdc++" {= "12.2.1_git20220924-r4"}
+  "apk-lua5-3-libs" {= "5.3.6-r4"}
+  "apk-musl" {= "1.2.3-r5"}
+  "apk-pcre" {= "8.45-r2"}
+  "apk-zlib" {= "1.2.13-r0"}
+]
+extra-source "nmap-7.93-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nmap-7.93-r0.apk"
+}

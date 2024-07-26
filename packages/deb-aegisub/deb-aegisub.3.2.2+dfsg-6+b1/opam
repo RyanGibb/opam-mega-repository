@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i aegisub_3.2.2+dfsg-6+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r aegisub"]
+]
+depends: [
+  "deb-libasound2" {>= "1.0.18"}
+  "deb-libass9" {>= "1-0.13.6"}
+  "deb-libboost-chrono1-74-0" {>= "1.74.0"}
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0"}
+  "deb-libboost-locale1-74-0" {>= "1.74.0"}
+  "deb-libboost-regex1-74-0"
+  "deb-libboost-thread1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.30"}
+  "deb-libffms2-4" {>= "2.19"}
+  "deb-libfftw3-double3" {>= "3.3.5"}
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgl1"
+  "deb-libhunspell-1-7-0"
+  "deb-libicu67" {>= "67.1-1~"}
+  "deb-libluajit-5-1-2" {>= "2.0.4+dfsg"}
+  "deb-libpulse0" {>= "0.99.1"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libwxbase3-0-0v5" {>= "3.0.5.1+dfsg"}
+  "deb-libwxgtk3-0-gtk3-0v5" {>= "3.0.5.1+dfsg"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "aegisub_3.2.2+dfsg-6+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/aegisub/aegisub_3.2.2+dfsg-6+b1_amd64.deb"
+}

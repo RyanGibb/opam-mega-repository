@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i s3ql_3.0+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r s3ql"]
+]
+depends: [
+  "deb-fuse"
+  "deb-libc6" {>= "2.14"}
+  "deb-libjs-sphinxdoc" {>= "1.0"}
+  "deb-libsqlite3-0" {>= "3.6.23"}
+  "deb-procps"
+  "deb-psmisc"
+  "deb-python3" {< "3.8"}
+  "deb-python3" {>= "3.7~"}
+  "deb-python3-any"
+  "deb-python3-apsw" {>= "3.7.0"}
+  "deb-python3-cryptography"
+  "deb-python3-defusedxml"
+  "deb-python3-dugong" {< "4.0"}
+  "deb-python3-dugong" {>= "3.4"}
+  "deb-python3-llfuse" {< "2.0"}
+  "deb-python3-llfuse" {>= "1.0"}
+  "deb-python3-pkg-resources"
+  "deb-python3-requests"
+]
+extra-source "s3ql_3.0+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/s3ql/s3ql_3.0+dfsg-1_amd64.deb"
+}

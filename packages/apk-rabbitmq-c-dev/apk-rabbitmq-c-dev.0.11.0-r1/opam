@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add rabbitmq-c-dev-0.11.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del rabbitmq-c-dev"]
+]
+depends: [
+  "apk-openssl-dev" {= "1.1.1w-r1"}
+  "apk-pkgconf" {= "1.8.1-r0"}
+  "apk-popt-dev" {= "1.18-r0"}
+  "apk-rabbitmq-c" {= "0.11.0-r1"}
+]
+extra-source "rabbitmq-c-dev-0.11.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/rabbitmq-c-dev-0.11.0-r1.apk"
+}

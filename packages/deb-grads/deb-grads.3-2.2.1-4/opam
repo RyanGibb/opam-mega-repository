@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i grads_3:2.2.1-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r grads"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libcairo2" {>= "1.6.0"}
+  "deb-libdap27" {>= "3.20.7"}
+  "deb-libdapclient6v5" {>= "3.20.7"}
+  "deb-libedit2" {>= "3.1-20160903-0"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgd3" {>= "2.1.0~alpha~"}
+  "deb-libgeotiff5" {>= "1.3.0"}
+  "deb-libgrib2c0d"
+  "deb-libhdf4-0-alt" {>= "4.2r4"}
+  "deb-libhdf5-103-1"
+  "deb-libnetcdf18" {>= "4.0.1"}
+  "deb-libshp2" {>= "1.3.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtiff5" {>= "4.0.3"}
+  "deb-libudunits2-0" {>= "2.2.14"}
+  "deb-libx11-6"
+]
+extra-source "grads_3:2.2.1-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/grads/grads_2.2.1-4_amd64.deb"
+}

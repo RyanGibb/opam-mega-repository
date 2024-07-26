@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-v2ray-core-dev_4.34.0+ds-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-v2ray-core-dev"]
+]
+depends: [
+  "deb-golang-github-gorilla-websocket-dev"
+  "deb-golang-github-lucas-clemente-quic-go-dev"
+  "deb-golang-github-miekg-dns-dev"
+  "deb-golang-github-pires-go-proxyproto-dev"
+  "deb-golang-google-grpc-dev"
+  "deb-golang-refraction-networking-utls-dev"
+]
+extra-source "golang-v2ray-core-dev_4.34.0+ds-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-v2ray-core/golang-v2ray-core-dev_4.34.0+ds-1_all.deb"
+}

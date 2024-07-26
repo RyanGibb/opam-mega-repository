@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add smokeping-2.8.2-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del smokeping"]
+]
+depends: [
+  "apk-font-dejavu" {= "2.37-r5"}
+  "apk-fping" {= "5.2-r0"}
+  "apk-perl" {= "5.38.2-r0"}
+  "apk-perl-cgi" {= "4.64-r0"}
+  "apk-perl-cgi-fast" {= "2.17-r1"}
+  "apk-perl-cgi-session" {= "4.48-r5"}
+  "apk-perl-config-grammar" {= "1.13-r4"}
+  "apk-perl-data-hexdump" {= "0.04-r1"}
+  "apk-perl-digest-hmac" {= "1.04-r2"}
+  "apk-perl-fcgi" {= "0.82-r3"}
+  "apk-perl-io-socket-ssl" {= "2.085-r0"}
+  "apk-perl-io-tty" {= "1.20-r0"}
+  "apk-perl-ldap" {= "0.68-r2"}
+  "apk-perl-libwww" {= "6.77-r0"}
+  "apk-perl-mozilla-ca" {= "20240313-r0"}
+  "apk-perl-net-dns" {= "1.45-r0"}
+  "apk-perl-net-ip" {= "1.26-r7"}
+  "apk-perl-net-openssh" {= "0.84-r1"}
+  "apk-perl-net-snmp" {= "6.0.1-r8"}
+  "apk-perl-net-telnet" {= "3.05-r1"}
+  "apk-perl-rrd" {= "1.8.0-r6"}
+  "apk-perl-snmp-session" {= "1.16-r2"}
+  "apk-perl-text-soundex" {= "3.05-r9"}
+  "apk-perl-uri" {= "5.28-r0"}
+  "apk-rrdtool" {= "1.8.0-r6"}
+  ("apk-busybox-binsh" {= "1.36.1-r29"} | "apk-dash-binsh" {= "0.5.12-r2"} | "apk-yash-binsh" {= "2.56.1-r1"})
+]
+extra-source "smokeping-2.8.2-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/smokeping-2.8.2-r3.apk"
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i uxplay_1.62-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r uxplay"]
+]
+depends: [
+  "deb-libavahi-compat-libdnssd1" {>= "0.6.16"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.30.0"}
+  "deb-libgstreamer-plugins-base1-0-0" {>= "1.6.0"}
+  "deb-libgstreamer1-0-0" {>= "1.0.0"}
+  "deb-libplist3" {>= "2.2.0"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libx11-6"
+]
+extra-source "uxplay_1.62-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/u/uxplay/uxplay_1.62-1_amd64.deb"
+}

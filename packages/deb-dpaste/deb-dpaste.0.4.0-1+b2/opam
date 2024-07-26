@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dpaste_0.4.0-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dpaste"]
+]
+depends: [
+  "deb-libargon2-1" {>= "0~20171227"}
+  "deb-libb64-0d" {>= "1.2"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libcurlpp0" {>= "0.8.1-2~"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglibmm-2-4-1v5" {>= "2.64.2"}
+  "deb-libgnutls30" {>= "3.6.12"}
+  "deb-libgpgmepp6" {>= "1.13.1"}
+  "deb-libnettle8"
+  "deb-libstdc++6" {>= "9"}
+]
+extra-source "dpaste_0.4.0-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dpaste/dpaste_0.4.0-1+b2_amd64.deb"
+}

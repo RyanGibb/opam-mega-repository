@@ -1,0 +1,63 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-taffybar-dev_1.0.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-taffybar-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libghc-alsa-mixer-dev"
+  "deb-libghc-cairo-dev"
+  "deb-libghc-configfile-dev"
+  "deb-libghc-dbus-dev"
+  "deb-libghc-dyre-dev"
+  "deb-libghc-either-dev"
+  "deb-libghc-enclosed-exceptions-dev"
+  "deb-libghc-glib-dev"
+  "deb-libghc-gtk-traymanager-dev"
+  "deb-libghc-gtk3-dev"
+  "deb-libghc-hstringtemplate-dev"
+  "deb-libghc-http-dev"
+  "deb-libghc-multimap-dev"
+  "deb-libghc-network-dev"
+  "deb-libghc-network-uri-dev"
+  "deb-libghc-old-locale-dev"
+  "deb-libghc-rate-limit-dev"
+  "deb-libghc-safe-dev"
+  "deb-libghc-split-dev"
+  "deb-libghc-time-locale-compat-dev"
+  "deb-libghc-time-units-dev"
+  "deb-libghc-tuple-dev"
+  "deb-libghc-utf8-string-dev"
+  "deb-libghc-x11-dev"
+  "deb-libghc-xdg-basedir-dev"
+  "deb-libghc-xml-dev"
+  "deb-libghc-xml-helpers-dev"
+  "deb-libghc-xmonad-contrib-dev"
+  "deb-libghc-xmonad-dev"
+  "deb-libglib2-0-0" {>= "2.16.0"}
+  "deb-libgmp10"
+  "deb-libgtk-3-0" {>= "3.0.0"}
+  "deb-libgtk2-0-dev"
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxft2" {> "2.1.1"}
+  "deb-libxinerama1"
+  "deb-libxml2" {>= "2.6.27"}
+  "deb-libxrandr2" {>= "2-1.2.99.3"}
+  "deb-libxss1"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libghc-taffybar-dev_1.0.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/taffybar/libghc-taffybar-dev_1.0.1-1_amd64.deb"
+}

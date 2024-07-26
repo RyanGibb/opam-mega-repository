@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i apertium-all-dev_3.8.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r apertium-all-dev"]
+]
+depends: [
+  "deb-apertium-anaphora" {>= "1.1.0"}
+  "deb-apertium-dev" {>= "3.8.1"}
+  "deb-apertium-eval-translator"
+  "deb-apertium-get" {>= "1.0.0"}
+  "deb-apertium-lex-tools-dev" {>= "0.3.1"}
+  "deb-apertium-recursive" {>= "1.1.0"}
+  "deb-apertium-regtest" {>= "0.9.1"}
+  "deb-apertium-separable" {>= "0.5.0"}
+  "deb-autoconf"
+  "deb-build-essential"
+  "deb-cg3-dev" {>= "1.3.6"}
+  "deb-gawk"
+  "deb-git"
+  "deb-hfst" {>= "3.16.0"}
+  "deb-libhfst-dev" {>= "3.16.0"}
+  "deb-locales"
+  "deb-lttoolbox-dev" {>= "3.6.1"}
+  "deb-pkg-config"
+  "deb-transfuse" {>= "0.5.8"}
+]
+extra-source "apertium-all-dev_3.8.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/apertium-all-dev/apertium-all-dev_3.8.1-2_all.deb"
+}

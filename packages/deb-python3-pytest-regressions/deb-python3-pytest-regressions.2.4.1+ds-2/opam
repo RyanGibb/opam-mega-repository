@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-pytest-regressions_2.4.1+ds-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-pytest-regressions"]
+]
+depends: [
+  "deb-libjs-sphinxdoc"
+  "deb-node-html5shiv"
+  "deb-python3-any"
+  "deb-python3-pytest"
+  "deb-python3-pytest-datadir"
+  "deb-python3-yaml"
+]
+extra-source "python3-pytest-regressions_2.4.1+ds-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pytest-regressions/python3-pytest-regressions_2.4.1+ds-2_all.deb"
+}

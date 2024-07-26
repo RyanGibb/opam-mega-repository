@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add unbound-migrate-1.10.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del unbound-migrate"]
+]
+depends: [
+  "apk-apk-tools" {= "2.10.8-r1"}
+  "apk-busybox" {= "1.31.1-r22"}
+  "apk-dns-root-hints" {= "2019073000-r2"}
+  "apk-openrc" {= "0.42.1-r14"}
+]
+extra-source "unbound-migrate-1.10.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/unbound-migrate-1.10.1-r0.apk"
+}

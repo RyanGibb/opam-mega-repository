@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpdal-dev_1.8.0+ds-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpdal-dev"]
+]
+depends: [
+  "deb-libboost-filesystem-dev"
+  "deb-libboost-iostreams-dev"
+  "deb-libboost-program-options-dev"
+  "deb-libboost-system-dev"
+  "deb-libboost-thread-dev"
+  "deb-libgdal-dev"
+  "deb-libgeos++-dev"
+  "deb-libgeotiff-dev"
+  "deb-libpdal-base7" {= "1.8.0+ds-1+b2"}
+  "deb-libpdal-util7" {= "1.8.0+ds-1+b2"}
+  "deb-libproj-dev"
+  "deb-libxml2-dev"
+]
+extra-source "libpdal-dev_1.8.0+ds-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pdal/libpdal-dev_1.8.0+ds-1+b2_amd64.deb"
+}

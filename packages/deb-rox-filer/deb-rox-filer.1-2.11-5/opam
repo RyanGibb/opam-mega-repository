@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i rox-filer_1:2.11-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r rox-filer"]
+]
+depends: [
+  "deb-libc6" {>= "2.27"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.35.9"}
+  "deb-libgtk2-0-0" {>= "2.24.0"}
+  "deb-libice6" {>= "1-1.0.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libsm6"
+  "deb-libx11-6"
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-sensible-utils"
+  "deb-shared-mime-info" {>= "0.16"}
+]
+extra-source "rox-filer_1:2.11-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rox/rox-filer_2.11-5_amd64.deb"
+}

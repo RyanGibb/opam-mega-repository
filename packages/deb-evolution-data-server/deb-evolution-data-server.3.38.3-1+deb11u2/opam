@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i evolution-data-server_3.38.3-1+deb11u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r evolution-data-server"]
+]
+depends: [
+  "deb-evolution-data-server-common" {>= "3.38.3-1+deb11u2"}
+  "deb-gnome-keyring"
+  "deb-libc6" {>= "2.14"}
+  "deb-libcamel-1-2-62" {= "3.38.3-1+deb11u2"}
+  "deb-libcanberra-gtk3-0" {>= "0.25"}
+  "deb-libcanberra0" {>= "0.2"}
+  "deb-libdb5-3"
+  "deb-libebackend-1-2-10" {= "3.38.3-1+deb11u2"}
+  "deb-libebook-1-2-20" {>= "3.17"}
+  "deb-libebook-contacts-1-2-3" {>= "3.25.90"}
+  "deb-libecal-2-0-1" {>= "3.38.0"}
+  "deb-libedata-book-1-2-26" {>= "3.33.91"}
+  "deb-libedata-cal-2-0-1" {>= "3.26.2"}
+  "deb-libedataserver-1-2-25" {>= "3.38.2"}
+  "deb-libedataserverui-1-2-2" {= "3.38.3-1+deb11u2"}
+  "deb-libgcr-base-3-1" {>= "3.8.0"}
+  "deb-libgcr-ui-3-1" {>= "3.8.0"}
+  "deb-libgdata22" {>= "0.17.10"}
+  "deb-libglib2-0-0" {>= "2.45.6"}
+  "deb-libgoa-1-0-0b" {>= "3.11.90"}
+  "deb-libgtk-3-0" {>= "3.10"}
+  "deb-libgweather-3-16" {>= "3.10.0"}
+  "deb-libical3" {>= "3.0.7"}
+  "deb-libldap-2-4-2" {>= "2.4.7"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libsecret-1-0" {>= "0.7"}
+  "deb-libsoup2-4-1" {>= "2.42"}
+  "deb-libxml2" {>= "2.9.0"}
+]
+extra-source "evolution-data-server_3.38.3-1+deb11u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/evolution-data-server/evolution-data-server_3.38.3-1+deb11u2_amd64.deb"
+}

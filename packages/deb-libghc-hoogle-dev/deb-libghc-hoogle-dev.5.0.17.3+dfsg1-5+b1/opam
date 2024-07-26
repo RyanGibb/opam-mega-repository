@@ -1,0 +1,45 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-hoogle-dev_5.0.17.3+dfsg1-5+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-hoogle-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libghc-aeson-dev"
+  "deb-libghc-cmdargs-dev"
+  "deb-libghc-conduit-dev"
+  "deb-libghc-conduit-extra-dev"
+  "deb-libghc-connection-dev"
+  "deb-libghc-extra-dev"
+  "deb-libghc-http-conduit-dev"
+  "deb-libghc-http-types-dev"
+  "deb-libghc-js-flot-dev"
+  "deb-libghc-js-jquery-dev"
+  "deb-libghc-mmap-dev"
+  "deb-libghc-network-dev"
+  "deb-libghc-network-uri-dev"
+  "deb-libghc-old-locale-dev"
+  "deb-libghc-process-extras-dev"
+  "deb-libghc-quickcheck2-dev"
+  "deb-libghc-resourcet-dev"
+  "deb-libghc-src-exts-dev"
+  "deb-libghc-storable-tuple-dev"
+  "deb-libghc-tar-dev"
+  "deb-libghc-uniplate-dev"
+  "deb-libghc-utf8-string-dev"
+  "deb-libghc-vector-dev"
+  "deb-libghc-wai-dev"
+  "deb-libghc-wai-logger-dev"
+  "deb-libghc-warp-dev"
+  "deb-libghc-warp-tls-dev"
+  "deb-libghc-zlib-dev"
+  "deb-libgmp10"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libghc-hoogle-dev_5.0.17.3+dfsg1-5+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-hoogle/libghc-hoogle-dev_5.0.17.3+dfsg1-5+b1_amd64.deb"
+}

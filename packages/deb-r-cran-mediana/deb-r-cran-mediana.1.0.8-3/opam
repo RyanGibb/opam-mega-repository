@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-mediana_1.0.8-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-mediana"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.0-3"}
+  "deb-r-cran-doparallel"
+  "deb-r-cran-dorng"
+  "deb-r-cran-foreach"
+  "deb-r-cran-mass"
+  "deb-r-cran-mvtnorm"
+  "deb-r-cran-survival"
+]
+extra-source "r-cran-mediana_1.0.8-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-mediana/r-cran-mediana_1.0.8-3_all.deb"
+}

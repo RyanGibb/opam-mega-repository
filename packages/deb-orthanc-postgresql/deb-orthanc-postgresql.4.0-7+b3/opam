@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i orthanc-postgresql_4.0-7+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r orthanc-postgresql"]
+]
+depends: [
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-iostreams1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-locale1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-regex1-74-0"
+  "deb-libboost-thread1-74-0" {>= "1.74.0+ds1"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libjsoncpp25" {>= "1.9.5"}
+  "deb-libpq5"
+  "deb-libpugixml1v5" {>= "1.4"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libuuid1" {>= "2.16"}
+  "deb-orthanc" {>= "1.9.7+dfsg-6"}
+]
+extra-source "orthanc-postgresql_4.0-7+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/orthanc-postgresql/orthanc-postgresql_4.0-7+b3_amd64.deb"
+}

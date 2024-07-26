@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i vvmplayer_2.1.0-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r vvmplayer"]
+]
+depends: [
+  "deb-libadwaita-1-0" {>= "1.2~alpha"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcallaudio-0-1" {>= "0.0.5"}
+  "deb-libebook-1-2-21" {>= "3.17"}
+  "deb-libebook-contacts-1-2-4" {>= "3.16.2"}
+  "deb-libedataserver-1-2-27" {>= "3.17"}
+  "deb-libglib2-0-0" {>= "2.63.3"}
+  "deb-libgstreamer-plugins-base1-0-0" {>= "1.0.0"}
+  "deb-libgstreamer1-0-0" {>= "1.0.0"}
+  "deb-libgtk-4-1" {>= "4.0.0"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "vvmplayer_2.1.0-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/vvmplayer/vvmplayer_2.1.0-1+b1_amd64.deb"
+}

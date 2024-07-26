@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i vdradmin-am_3.6.10-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r vdradmin-am"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libcgi-pm-perl"
+  "deb-libio-compress-perl"
+  "deb-libio-socket-inet6-perl"
+  "deb-libsocket6-perl"
+  "deb-libtemplate-perl"
+  "deb-libtemplate-plugin-javascript-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-lsb-base"
+  "deb-perl-any"
+  ("deb-liblocale-gettext-perl" | "deb- libintl-perl")
+]
+conflicts: [
+  "deb-vdradmin"
+]
+extra-source "vdradmin-am_3.6.10-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/vdradmin-am/vdradmin-am_3.6.10-4_all.deb"
+}

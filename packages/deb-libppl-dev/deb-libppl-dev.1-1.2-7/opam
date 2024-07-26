@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libppl-dev_1:1.2-7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libppl-dev"]
+]
+depends: [
+  "deb-libppl-c4" {= "1-1.2-7"}
+  "deb-libppl14" {= "1-1.2-7"}
+]
+conflicts: [
+  "deb-libppl0-10-dev"
+  "deb-libppl0-11-dev"
+  "deb-libppl0-12-dev"
+]
+extra-source "libppl-dev_1:1.2-7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/ppl/libppl-dev_1.2-7_amd64.deb"
+}

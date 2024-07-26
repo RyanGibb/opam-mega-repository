@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i parl-desktop-strict_1.9.27+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r parl-desktop-strict"]
+]
+depends: [
+  "deb-parl-desktop"
+]
+conflicts: [
+  "deb-bluez-cups"
+  "deb-cpufrequtils"
+  "deb-cups"
+  "deb-evince-gtk"
+  "deb-hplip"
+  "deb-hunspell-da"
+  "deb-hunspell-de-at-frami"
+  "deb-hunspell-de-ch-frami"
+  "deb-hunspell-de-de-frami"
+  "deb-libreoffice-base"
+  "deb-libreoffice-java-common"
+  "deb-mplayer2"
+  "deb-myspell-de-de-1901"
+  "deb-printer-driver-foo2zjs"
+  "deb-printer-driver-gutenprint"
+  "deb-printer-driver-hpcups"
+  "deb-printer-driver-hpijs"
+  "deb-printer-driver-min12xxw"
+  "deb-printer-driver-pnm2ppa"
+  "deb-printer-driver-postscript-hp"
+  "deb-printer-driver-pxljr"
+  "deb-printer-driver-sag-gdi"
+  "deb-printer-driver-splix"
+  "deb-pulseaudio-esound-compat"
+]
+extra-source "parl-desktop-strict_1.9.27+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/debian-parl/parl-desktop-strict_1.9.27+deb11u1_all.deb"
+}

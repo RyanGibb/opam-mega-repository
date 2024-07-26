@@ -1,0 +1,163 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i plasma-workspace_4:5.20.5-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r plasma-workspace"]
+]
+depends: [
+  "deb-drkonqi" {>= "5.20~"}
+  "deb-frameworkintegration"
+  "deb-iso-codes"
+  "deb-kactivitymanagerd" {>= "5.20~"}
+  "deb-kded5"
+  "deb-kinit"
+  "deb-kio"
+  "deb-kpackagetool5"
+  "deb-kwin-common" {>= "4-5.20~"}
+  "deb-libappstreamqt2" {>= "0.14.2"}
+  "deb-libc6" {>= "2.15"}
+  "deb-libcolorcorrect5" {= "4-5.20.5-6"}
+  "deb-libegl1"
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgl1"
+  "deb-libgps28" {>= "3.3"}
+  "deb-libice6" {>= "1-1.0.0"}
+  "deb-libkf5activities5" {>= "5.74.0~"}
+  "deb-libkf5activitiesstats1" {>= "5.74.0~"}
+  "deb-libkf5archive5" {>= "4.96.0"}
+  "deb-libkf5authcore5" {>= "5.61.0"}
+  "deb-libkf5baloo5" {>= "5.13~"}
+  "deb-libkf5bookmarks5" {>= "4.96.0"}
+  "deb-libkf5calendarevents5" {>= "5.74.0~"}
+  "deb-libkf5completion5" {>= "4.97.0"}
+  "deb-libkf5config-bin"
+  "deb-libkf5configcore5" {>= "5.74.0~"}
+  "deb-libkf5configgui5" {>= "5.74.0~"}
+  "deb-libkf5configwidgets5" {>= "5.69.0"}
+  "deb-libkf5coreaddons5" {>= "5.74.0~"}
+  "deb-libkf5crash5" {>= "5.74.0~"}
+  "deb-libkf5dbusaddons5" {>= "5.74.0~"}
+  "deb-libkf5declarative5" {>= "5.74.0~"}
+  "deb-libkf5globalaccel-bin" {>= "5.7.0"}
+  "deb-libkf5globalaccel5" {>= "5.74.0~"}
+  "deb-libkf5guiaddons5" {>= "4.96.0"}
+  "deb-libkf5holidays5" {>= "15.12.0"}
+  "deb-libkf5i18n5" {>= "5.74.0~"}
+  "deb-libkf5iconthemes5" {>= "5.25.0"}
+  "deb-libkf5idletime5" {>= "5.74.0~"}
+  "deb-libkf5itemmodels5" {>= "5.74.0~"}
+  "deb-libkf5jobwidgets5" {>= "5.70.0"}
+  "deb-libkf5kcmutils5" {>= "5.74.0"}
+  "deb-libkf5kdelibs4support5" {>= "5.74.0~"}
+  "deb-libkf5kiocore5" {>= "5.77.0"}
+  "deb-libkf5kiofilewidgets5" {>= "5.74.0~"}
+  "deb-libkf5kiogui5" {>= "5.74.0"}
+  "deb-libkf5kiowidgets5" {>= "5.74.0~"}
+  "deb-libkf5networkmanagerqt6" {>= "5.74.0~"}
+  "deb-libkf5newstuff5" {>= "5.74.0~"}
+  "deb-libkf5newstuffcore5" {>= "5.74.0~"}
+  "deb-libkf5notifications5" {>= "5.70.0"}
+  "deb-libkf5notifyconfig5" {>= "5.74.0~"}
+  "deb-libkf5package5" {>= "5.74.0~"}
+  "deb-libkf5parts5" {>= "4.96.0"}
+  "deb-libkf5people5" {>= "5.74.0~"}
+  "deb-libkf5peoplewidgets5" {>= "5.74.0~"}
+  "deb-libkf5plasma5" {>= "5.74.0~"}
+  "deb-libkf5plasmaquick5" {>= "5.74.0~"}
+  "deb-libkf5prison5" {>= "5.74.0~"}
+  "deb-libkf5quickaddons5" {>= "5.74.0~"}
+  "deb-libkf5runner5" {>= "5.74.0~"}
+  "deb-libkf5service-bin"
+  "deb-libkf5service5" {>= "5.74.0"}
+  "deb-libkf5solid5" {>= "5.74.0~"}
+  "deb-libkf5texteditor5" {>= "5.74.0"}
+  "deb-libkf5textwidgets5" {>= "5.74.0~"}
+  "deb-libkf5wallet-bin"
+  "deb-libkf5wallet5" {>= "5.74.0~"}
+  "deb-libkf5waylandclient5" {>= "4-5.74.0"}
+  "deb-libkf5widgetsaddons5" {>= "5.69.0"}
+  "deb-libkf5windowsystem5" {>= "5.69.0"}
+  "deb-libkf5xmlgui5" {>= "5.69.0"}
+  "deb-libkfontinst5" {= "4-5.20.5-6"}
+  "deb-libkfontinstui5" {= "4-5.20.5-6"}
+  "deb-libkscreenlocker5" {>= "5.20~"}
+  "deb-libksgrd9" {>= "4-5.20.0~"}
+  "deb-libksysguardsensorfaces1" {>= "4-5.20.0~"}
+  "deb-libkuserfeedbackcore1" {>= "1.0.0"}
+  "deb-libkworkspace5-5" {= "4-5.20.5-6"}
+  "deb-libnotificationmanager1" {= "4-5.20.5-6"}
+  "deb-libphonon4qt5-4" {>= "4-4.8.0-5"}
+  "deb-libpipewire-0-3-0" {>= "0.3.1"}
+  "deb-libplasma-geolocation-interface5" {= "4-5.20.5-6"}
+  "deb-libprocesscore9" {>= "4-5.20.0~"}
+  "deb-libprocessui9" {>= "4-5.20.0~"}
+  "deb-libqalculate20"
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.15.0~"}
+  "deb-libqt5network5" {>= "5.15.0~"}
+  "deb-libqt5printsupport5" {>= "5.15.0~"}
+  "deb-libqt5qml5" {>= "5.15.0~"}
+  "deb-libqt5sql5" {>= "5.15.0~"}
+  "deb-libqt5svg5" {>= "5.15.0~"}
+  "deb-libqt5waylandclient5" {>= "5.15.0~"}
+  "deb-libqt5widgets5" {>= "5.15.1"}
+  "deb-libqt5x11extras5" {>= "5.15.0~"}
+  "deb-libqt5xml5" {>= "5.15.0~"}
+  "deb-libsm6"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtaskmanager6abi1" {= "4-5.20.5-6"}
+  "deb-libwayland-client0" {>= "1.9.91"}
+  "deb-libweather-ion7" {= "4-5.20.5-6"}
+  "deb-libx11-6"
+  "deb-libxcb-composite0"
+  "deb-libxcb-damage0"
+  "deb-libxcb-image0" {>= "0.2"}
+  "deb-libxcb-randr0"
+  "deb-libxcb-shape0"
+  "deb-libxcb-util1" {>= "0.4.0"}
+  "deb-libxcb1" {>= "1.6"}
+  "deb-libxcursor1" {> "1.1.2"}
+  "deb-libxfixes3"
+  "deb-libxft2" {> "2.1.1"}
+  "deb-libxrender1"
+  "deb-libxtst6"
+  "deb-milou" {>= "4-5.20~"}
+  "deb-phonon4qt5"
+  "deb-plasma-framework"
+  "deb-plasma-integration" {>= "5.20~"}
+  "deb-plasma-workspace-data" {>= "4-5.20.5-6"}
+  "deb-qdbus-qt5"
+  "deb-qml-module-org-kde-draganddrop"
+  "deb-qml-module-org-kde-kcoreaddons"
+  "deb-qml-module-org-kde-kholidays"
+  "deb-qml-module-org-kde-kquickcontrols"
+  "deb-qml-module-org-kde-kquickcontrolsaddons"
+  "deb-qml-module-org-kde-ksysguard"
+  "deb-qml-module-org-kde-kwindowsystem"
+  "deb-qml-module-org-kde-prison"
+  "deb-qml-module-org-kde-quickcharts"
+  "deb-qml-module-org-kde-solid"
+  "deb-qml-module-org-kde-userfeedback"
+  "deb-qml-module-qt-labs-folderlistmodel"
+  "deb-qml-module-qtgraphicaleffects"
+  "deb-qml-module-qtqml-models2"
+  "deb-qml-module-qtquick-controls"
+  "deb-qml-module-qtquick-dialogs"
+  "deb-qml-module-qtquick-layouts"
+  "deb-qml-module-qtquick-window2"
+  "deb-qml-module-qtquick2"
+  "deb-udisks2"
+  "deb-x11-utils"
+  "deb-x11-xserver-utils"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
+  ("deb-gdb-minimal" | "deb- gdb")
+  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb- libqt5gui5-gles" {>= "5.15.0~"})
+  ("deb-libqt5quick5" {>= "5.15.1"} | "deb- libqt5quick5-gles" {>= "5.15.1"})
+]
+extra-source "plasma-workspace_4:5.20.5-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/plasma-workspace/plasma-workspace_5.20.5-6_amd64.deb"
+}

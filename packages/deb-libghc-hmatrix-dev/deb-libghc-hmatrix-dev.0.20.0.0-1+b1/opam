@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-hmatrix-dev_0.20.0.0-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-hmatrix-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libblas-dev"
+  "deb-libc6" {>= "2.29"}
+  "deb-libghc-random-dev"
+  "deb-libghc-semigroups-dev"
+  "deb-libghc-split-dev"
+  "deb-libghc-storable-complex-dev"
+  "deb-libghc-vector-dev"
+  "deb-libgmp10"
+  "deb-liblapack-dev"
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "libghc-hmatrix-dev_0.20.0.0-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-hmatrix/libghc-hmatrix-dev_0.20.0.0-1+b1_amd64.deb"
+}

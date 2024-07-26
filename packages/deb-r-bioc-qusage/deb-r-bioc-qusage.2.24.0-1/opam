@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-bioc-qusage_2.24.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-bioc-qusage"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.3-1"}
+  "deb-r-bioc-biobase"
+  "deb-r-bioc-biocgenerics"
+  "deb-r-bioc-limma" {>= "3.14"}
+  "deb-r-cran-emmeans"
+  "deb-r-cran-fftw"
+  "deb-r-cran-nlme"
+]
+extra-source "r-bioc-qusage_2.24.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-bioc-qusage/r-bioc-qusage_2.24.0-1_all.deb"
+}

@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-x509-validation-dev_1.6.10-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-x509-validation-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libghc-asn1-encoding-dev"
+  "deb-libghc-asn1-types-dev"
+  "deb-libghc-cryptonite-dev"
+  "deb-libghc-data-default-class-dev"
+  "deb-libghc-hourglass-dev"
+  "deb-libghc-memory-dev"
+  "deb-libghc-pem-dev"
+  "deb-libghc-x509-dev"
+  "deb-libghc-x509-store-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-x509-validation-dev_1.6.10-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-x509-validation/libghc-x509-validation-dev_1.6.10-3+b1_amd64.deb"
+}

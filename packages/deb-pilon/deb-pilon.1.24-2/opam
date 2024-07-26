@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pilon_1.24-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pilon"]
+]
+depends: [
+  "deb-default-jre"
+  "deb-java-wrappers"
+  "deb-libcommons-lang-java"
+  "deb-libhtsjdk-java"
+  "deb-scala-library"
+]
+conflicts: [
+  "deb-pilon-non-free"
+]
+extra-source "pilon_1.24-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pilon/pilon_1.24-2_all.deb"
+}

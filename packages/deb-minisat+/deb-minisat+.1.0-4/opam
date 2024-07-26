@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i minisat+_1.0-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r minisat+"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgmp10"
+  "deb-libstdc++6" {>= "5"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "minisat+_1.0-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/minisat+/minisat+_1.0-4_amd64.deb"
+}

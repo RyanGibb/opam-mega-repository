@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cl-cffi_1:0.24.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cl-cffi"]
+]
+depends: [
+  "deb-cl-alexandria"
+  "deb-cl-babel"
+  "deb-cl-trivial-features" {>= "20210228.gitf6e8dd7-2~"}
+  "deb-gcc"
+  "deb-libffi-dev"
+  "deb-pkg-config"
+  "deb-zlib1g-dev"
+  ("deb-libc6-dev" | "deb- libc-dev")
+]
+extra-source "cl-cffi_1:0.24.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cffi/cl-cffi_0.24.1-3_all.deb"
+}

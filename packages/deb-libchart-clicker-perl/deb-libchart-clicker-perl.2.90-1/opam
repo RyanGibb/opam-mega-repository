@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libchart-clicker-perl_2.90-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libchart-clicker-perl"]
+]
+depends: [
+  "deb-libclass-load-perl"
+  "deb-libcolor-scheme-perl"
+  "deb-libdatetime-perl"
+  "deb-libdatetime-set-perl"
+  "deb-libgeometry-primitive-perl"
+  "deb-libgraphics-color-perl"
+  "deb-libgraphics-primitive-driver-cairo-perl"
+  "deb-libgraphics-primitive-perl"
+  "deb-liblayout-manager-perl"
+  "deb-libmath-gradient-perl"
+  "deb-libmoose-perl"
+  "deb-perl"
+]
+extra-source "libchart-clicker-perl_2.90-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libchart-clicker-perl/libchart-clicker-perl_2.90-1_all.deb"
+}

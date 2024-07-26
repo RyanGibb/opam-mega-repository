@@ -1,0 +1,47 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-syncthing-syncthing-dev_1.0.0~ds1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-syncthing-syncthing-dev"]
+]
+depends: [
+  "deb-genxdr"
+  "deb-golang-github-audriusbutkevicius-go-nat-pmp-dev"
+  "deb-golang-github-audriusbutkevicius-pfilter-dev"
+  "deb-golang-github-bkaradzic-go-lz4-dev"
+  "deb-golang-github-calmh-du-dev"
+  "deb-golang-github-calmh-luhn-dev"
+  "deb-golang-github-calmh-xdr-dev"
+  "deb-golang-github-ccding-go-stun-dev"
+  "deb-golang-github-chmduquesne-rollinghash-dev"
+  "deb-golang-github-cznic-ql-dev"
+  "deb-golang-github-d4l3k-messagediff-dev"
+  "deb-golang-github-go-ldap-ldap-dev"
+  "deb-golang-github-gobwas-glob-dev" {>= "0.2.1"}
+  "deb-golang-github-golang-groupcache-dev"
+  "deb-golang-github-jackpal-gateway-dev"
+  "deb-golang-github-juju-ratelimit-dev"
+  "deb-golang-github-kballard-go-shellquote-dev"
+  "deb-golang-github-lib-pq-dev"
+  "deb-golang-github-minio-sha256-simd-dev"
+  "deb-golang-github-oschwald-geoip2-golang-dev"
+  "deb-golang-github-prometheus-client-golang-dev" {>= "0.9.0"}
+  "deb-golang-github-rcrowley-go-metrics-dev"
+  "deb-golang-github-sasha-s-go-deadlock-dev"
+  "deb-golang-github-syncthing-notify-dev"
+  "deb-golang-github-syndtr-goleveldb-dev"
+  "deb-golang-github-thejerf-suture-dev" {>= "3.0.0"}
+  "deb-golang-github-vitrun-qart-dev"
+  "deb-golang-github-xtaci-kcp-dev"
+  "deb-golang-github-xtaci-smux-dev"
+  "deb-golang-go"
+  "deb-golang-gogoprotobuf-dev"
+  "deb-golang-golang-x-crypto-dev"
+  "deb-golang-golang-x-net-dev"
+  "deb-golang-golang-x-text-dev"
+  "deb-golang-golang-x-time-dev"
+]
+extra-source "golang-github-syncthing-syncthing-dev_1.0.0~ds1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/syncthing/golang-github-syncthing-syncthing-dev_1.0.0~ds1-1_all.deb"
+}

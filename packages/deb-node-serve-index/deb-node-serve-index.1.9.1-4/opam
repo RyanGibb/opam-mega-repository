@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-serve-index_1.9.1-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-serve-index"]
+]
+depends: [
+  "deb-famfamfam-silk"
+  "deb-node-accepts"
+  "deb-node-after"
+  "deb-node-batch"
+  "deb-node-debug"
+  "deb-node-escape-html"
+  "deb-node-http-errors"
+  "deb-node-mime-types"
+  "deb-node-parseurl"
+  "deb-nodejs"
+]
+extra-source "node-serve-index_1.9.1-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-serve-index/node-serve-index_1.9.1-4_all.deb"
+}

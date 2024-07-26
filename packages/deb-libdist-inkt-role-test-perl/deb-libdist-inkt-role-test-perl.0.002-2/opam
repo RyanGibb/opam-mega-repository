@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdist-inkt-role-test-perl_0.002-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdist-inkt-role-test-perl"]
+]
+depends: [
+  "deb-libfile-chdir-perl"
+  "deb-libmoose-perl"
+  "deb-libnamespace-autoclean-perl"
+  "deb-libpath-iterator-rule-perl"
+  "deb-libpath-tiny-perl"
+  "deb-libtry-tiny-perl"
+  "deb-libtype-tiny-perl"
+  "deb-perl-any"
+  "deb-sgml-base" {>= "1.28"}
+  ("deb-perl" {>= "5.13.9"} | "deb- libhttp-tiny-perl")
+  ("deb-perl" {>= "5.13.9"} | "deb- libjson-pp-perl")
+  ("deb-perl" {>= "5.13.9"} | "deb- libmodule-metadata-perl")
+]
+extra-source "libdist-inkt-role-test-perl_0.002-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libd/libdist-inkt-role-test-perl/libdist-inkt-role-test-perl_0.002-2_all.deb"
+}

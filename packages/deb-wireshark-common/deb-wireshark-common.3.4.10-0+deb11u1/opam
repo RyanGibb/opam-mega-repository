@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i wireshark-common_3.4.10-0+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r wireshark-common"]
+]
+depends: [
+  "deb-debconf"
+  "deb-libc6" {>= "2.15"}
+  "deb-libcap2" {>= "1-2.10"}
+  "deb-libcap2-bin"
+  "deb-libelogind0"
+  "deb-libgcrypt20" {>= "1.8.0"}
+  "deb-libglib2-0-0" {>= "2.35.8"}
+  "deb-libmaxminddb0" {>= "1.0.2"}
+  "deb-libnl-3-200" {>= "3.2.7"}
+  "deb-libnl-genl-3-200" {>= "3.2.21"}
+  "deb-libpcap0-8" {>= "1.5.1"}
+  "deb-libspeexdsp1" {>= "1.2~beta3.2-1"}
+  "deb-libssh-gcrypt-4" {>= "0.8.0"}
+  "deb-libwireshark14" {>= "3.4.10-0+deb11u1"}
+  "deb-libwiretap11" {>= "3.4.10-0+deb11u1"}
+  "deb-libwsutil12" {>= "3.1.1"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "wireshark-common_3.4.10-0+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/w/wireshark/wireshark-common_3.4.10-0+deb11u1_amd64.deb"
+}

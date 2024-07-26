@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tulip_5.4.0+dfsg-3+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tulip"]
+]
+depends: [
+  "deb-fonts-dejavu-core"
+  "deb-fonts-font-awesome"
+  "deb-fonts-materialdesignicons-webfont"
+  "deb-libc6" {>= "2.34"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libftgl2" {>= "2.4.0"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgl1"
+  "deb-libglew2-2" {>= "2.2.0-4+b1"}
+  "deb-libgomp1" {>= "4.9"}
+  "deb-libjs-leaflet"
+  "deb-libogdf-tulip-5-4-0" {>= "5.4.0+dfsg"}
+  "deb-libpython3-11" {>= "3.11.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5network5" {>= "5.14.1"}
+  "deb-libqt5webkit5" {>= "5.6.0~rc"}
+  "deb-libqt5widgets5" {>= "5.15.1"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libtulip-core-5-4" {>= "5.4.0+dfsg"}
+  "deb-libtulip-gui-5-4" {>= "5.4.0+dfsg"}
+  "deb-libtulip-ogdf-5-4" {>= "5.4.0+dfsg"}
+  "deb-libtulip-ogl-5-4" {>= "5.4.0+dfsg"}
+  "deb-libtulip-python-5-4" {>= "5.4.0+dfsg"}
+  "deb-python3"
+  "deb-python3-sip"
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "tulip_5.4.0+dfsg-3+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tulip/tulip_5.4.0+dfsg-3+b3_amd64.deb"
+}

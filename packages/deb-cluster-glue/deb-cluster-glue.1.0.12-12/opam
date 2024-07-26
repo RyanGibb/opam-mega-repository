@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cluster-glue_1.0.12-12_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cluster-glue"]
+]
+depends: [
+  "deb-adduser"
+  "deb-bzip2"
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.15"}
+  "deb-libcurl4" {>= "7.16.2"}
+  "deb-libdbus-1-3" {>= "1.9.14"}
+  "deb-libdbus-glib-1-2" {>= "0.84"}
+  "deb-libglib2-0-0" {>= "2.24.0"}
+  "deb-liblrm2" {>= "1.0.12-12"}
+  "deb-libltdl7" {>= "2.4.6"}
+  "deb-libopenhpi3"
+  "deb-libopenipmi0"
+  "deb-libpils2" {>= "1.0.12-12"}
+  "deb-libplumb2" {>= "1.0.12-12"}
+  "deb-libplumbgpl2" {>= "1.0.12-12"}
+  "deb-libsnmp30" {>= "5.7.3+dfsg"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libstonith1" {>= "1.0.12-12"}
+  "deb-libtimedate-perl"
+  "deb-libuuid1" {>= "2.16"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-lsb-base" {>= "3.0-6"}
+  "deb-perl-any"
+  "deb-python3-7"
+  "deb-python3-any"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "cluster-glue_1.0.12-12_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cluster-glue/cluster-glue_1.0.12-12_amd64.deb"
+}

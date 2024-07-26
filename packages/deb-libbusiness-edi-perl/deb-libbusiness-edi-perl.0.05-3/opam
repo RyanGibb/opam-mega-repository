@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libbusiness-edi-perl_0.05-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libbusiness-edi-perl"]
+]
+depends: [
+  "deb-libexporter-easy-perl"
+  "deb-libfile-find-rule-perl"
+  "deb-libjson-xs-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-libuniversal-require-perl"
+  "deb-perl-any"
+  ("deb-libcgi-pm-perl" | "deb- perl" {< "5.19"})
+]
+extra-source "libbusiness-edi-perl_0.05-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libb/libbusiness-edi-perl/libbusiness-edi-perl_0.05-3_all.deb"
+}

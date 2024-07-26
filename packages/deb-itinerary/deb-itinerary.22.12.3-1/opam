@@ -1,0 +1,64 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i itinerary_22.12.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r itinerary"]
+]
+depends: [
+  "deb-kio"
+  "deb-libc6" {>= "2.34"}
+  "deb-libkf5calendarcore5abi2" {>= "5-5.96.0"}
+  "deb-libkf5contacts5" {>= "5-5.94~"}
+  "deb-libkf5coreaddons5" {>= "5.94~"}
+  "deb-libkf5crash5" {>= "5.94~"}
+  "deb-libkf5dbusaddons5" {>= "5.94~"}
+  "deb-libkf5filemetadata3" {>= "5.94~"}
+  "deb-libkf5holidays5" {>= "1-5.94.0"}
+  "deb-libkf5i18n5" {>= "5.94~"}
+  "deb-libkf5i18nlocaledata5" {>= "5.103.0"}
+  "deb-libkf5kiowidgets5" {>= "5.94~"}
+  "deb-libkf5networkmanagerqt6" {>= "5.94~"}
+  "deb-libkf5notifications5" {>= "5.94~"}
+  "deb-libkf5unitconversion5" {>= "5.94~"}
+  "deb-libkf5windowsystem5" {>= "5.94~"}
+  "deb-libkosmindoormap1" {>= "22.08.2"}
+  "deb-libkpimitinerary5"
+  "deb-libkpimitinerary5" {>= "22.12.3"}
+  "deb-libkpimpkpass5"
+  "deb-libkpimpkpass5" {>= "22.12.3"}
+  "deb-libkpublictransport1" {>= "21.12.3"}
+  "deb-libqt5core5a"
+  "deb-libqt5core5a" {>= "5.15.2~"}
+  "deb-libqt5dbus5" {>= "5.15.2~"}
+  "deb-libqt5network5" {>= "5.15.2~"}
+  "deb-libqt5positioning5" {>= "5.15.2~"}
+  "deb-libqt5qml5" {>= "5.15.2~"}
+  "deb-libqt5quickcontrols2-5" {>= "5.15.2~"}
+  "deb-libqt5widgets5" {>= "5.15.2~"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-plasma-framework"
+  "deb-qml-module-org-kde-i18n-localedata"
+  "deb-qml-module-org-kde-kirigami2"
+  "deb-qml-module-org-kde-kitemmodels"
+  "deb-qml-module-org-kde-kopeninghours"
+  "deb-qml-module-org-kde-kosmindoormap"
+  "deb-qml-module-org-kde-kpublictransport"
+  "deb-qml-module-org-kde-prison"
+  "deb-qml-module-qt-labs-platform"
+  "deb-qml-module-qt-labs-qmlmodels"
+  "deb-qml-module-qtgraphicaleffects"
+  "deb-qml-module-qtlocation"
+  "deb-qml-module-qtmultimedia"
+  "deb-qml-module-qtpositioning"
+  "deb-qml-module-qtquick-controls2"
+  "deb-qml-module-qtquick-layouts"
+  "deb-qml-module-qtquick-window2"
+  "deb-qml-module-qtquick2"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+  ("deb-libqt5quick5" {>= "5.15.2~"} | "deb- libqt5quick5-gles" {>= "5.15.2~"})
+]
+extra-source "itinerary_22.12.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/itinerary/itinerary_22.12.3-1_amd64.deb"
+}

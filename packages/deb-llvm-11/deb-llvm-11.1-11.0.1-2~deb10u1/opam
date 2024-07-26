@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i llvm-11_1:11.0.1-2~deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r llvm-11"]
+]
+depends: [
+  "deb-libc6" {>= "2.27"}
+  "deb-libgcc1" {>= "1-3.3"}
+  "deb-libllvm11" {>= "1-9~svn298832-1~"}
+  "deb-libpfm4"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-llvm-11-runtime" {= "1-11.0.1-2~deb10u1"}
+  "deb-zlib1g" {>= "1-1.2.0"}
+]
+extra-source "llvm-11_1:11.0.1-2~deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/llvm-toolchain-11/llvm-11_11.0.1-2~deb10u1_amd64.deb"
+}

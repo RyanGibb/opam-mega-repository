@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-cryptonite-conduit-dev_0.2.2-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-cryptonite-conduit-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libghc-conduit-dev"
+  "deb-libghc-conduit-extra-dev"
+  "deb-libghc-cryptonite-dev"
+  "deb-libghc-exceptions-dev"
+  "deb-libghc-memory-dev"
+  "deb-libghc-resourcet-dev"
+  "deb-libgmp10"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libghc-cryptonite-conduit-dev_0.2.2-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-cryptonite-conduit/libghc-cryptonite-conduit-dev_0.2.2-4+b1_amd64.deb"
+}

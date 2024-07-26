@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add linux-lts-dev-5.15.163-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del linux-lts-dev"]
+]
+depends: [
+  "apk-bash" {= "5.2.15-r0"}
+  "apk-bison" {= "3.8.2-r0"}
+  "apk-elfutils-dev" {= "0.187-r2"}
+  "apk-flex" {= "2.6.4-r3"}
+  "apk-gmp-dev" {= "6.2.1-r2"}
+  "apk-libcrypto3" {= "3.0.14-r0"}
+  "apk-libelf" {= "0.187-r2"}
+  "apk-libstdc++" {= "12.2.1_git20220924-r4"}
+  "apk-mpc1-dev" {= "1.2.1-r1"}
+  "apk-mpfr-dev" {= "4.1.0-r0"}
+  "apk-musl" {= "1.2.3-r5"}
+  "apk-perl" {= "5.36.2-r0"}
+  "apk-zstd" {= "1.5.5-r0"}
+]
+extra-source "linux-lts-dev-5.15.163-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/linux-lts-dev-5.15.163-r0.apk"
+}

@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i w3c-markup-validator_1.3+dfsg-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r w3c-markup-validator"]
+]
+depends: [
+  "deb-libconfig-general-perl"
+  "deb-libencode-hanextra-perl"
+  "deb-libhtml-encoding-perl"
+  "deb-libhtml-parser-perl" {>= "3.60"}
+  "deb-libhtml-template-perl"
+  "deb-libjson-perl"
+  "deb-liblwp-protocol-https-perl"
+  "deb-libnet-ip-perl"
+  "deb-libset-intspan-perl"
+  "deb-libsgml-parser-opensp-perl"
+  "deb-libtext-iconv-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl" {>= "6"}
+  "deb-libxml-libxml-perl" {>= "1.70"}
+  "deb-perl-any"
+  "deb-w3c-sgml-lib" {>= "1.3"}
+]
+extra-source "w3c-markup-validator_1.3+dfsg-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/w/w3c-markup-validator/w3c-markup-validator_1.3+dfsg-4_all.deb"
+}

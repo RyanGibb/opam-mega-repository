@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libanyevent-xmpp-perl_0.55-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libanyevent-xmpp-perl"]
+]
+depends: [
+  "deb-libanyevent-perl"
+  "deb-libauthen-sasl-perl"
+  "deb-libnet-libidn-perl"
+  "deb-libnet-ssleay-perl"
+  "deb-libobject-event-perl"
+  "deb-libxml-parser-perl"
+  "deb-libxml-writer-perl"
+  "deb-perl"
+]
+extra-source "libanyevent-xmpp-perl_0.55-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/liba/libanyevent-xmpp-perl/libanyevent-xmpp-perl_0.55-5_all.deb"
+}

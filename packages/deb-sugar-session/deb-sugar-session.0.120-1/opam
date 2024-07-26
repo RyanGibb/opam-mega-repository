@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sugar-session_0.120-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sugar-session"]
+]
+depends: [
+  "deb-gir1-2-glib-2-0"
+  "deb-gir1-2-gtk-3-0"
+  "deb-gir1-2-gudev-1-0"
+  "deb-gir1-2-nm-1-0"
+  "deb-gir1-2-pango-1-0"
+  "deb-gir1-2-upowerglib-1-0"
+  "deb-gir1-2-xkl-1-0"
+  "deb-python3"
+  "deb-python3-any"
+  "deb-python3-cairo"
+  "deb-python3-dbus"
+  "deb-python3-jarabe"
+  "deb-python3-sugar3"
+  "deb-sugar-themes" {>= "0.120"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "sugar-session_0.120-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sugar/sugar-session_0.120-1_all.deb"
+}

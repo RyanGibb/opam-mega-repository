@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpawlib-lesstif3-gfortran_1:2.14.04.dfsg.2-9.1+b4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpawlib-lesstif3-gfortran"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgfortran5" {>= "8"}
+  "deb-libgraflib1-gfortran"
+  "deb-libgrafx11-1-gfortran"
+  "deb-libkernlib1-gfortran"
+  "deb-libmathlib2-gfortran"
+  "deb-libpacklib-lesstif1-gfortran"
+  "deb-libpacklib1-gfortran"
+  "deb-libpawlib2-gfortran"
+  "deb-libquadmath0" {>= "4.6"}
+  "deb-libx11-6"
+  "deb-libxaw7"
+  "deb-libxbae4m" {>= "4.60.2"}
+  "deb-libxm4" {>= "2.3.4"}
+  "deb-libxt6"
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "libpawlib-lesstif3-gfortran_1:2.14.04.dfsg.2-9.1+b4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/paw/libpawlib-lesstif3-gfortran_2.14.04.dfsg.2-9.1+b4_amd64.deb"
+}

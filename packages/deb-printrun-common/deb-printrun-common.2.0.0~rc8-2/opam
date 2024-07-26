@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i printrun-common_2.0.0~rc8-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r printrun-common"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-appdirs"
+  "deb-python3-cairocffi"
+  "deb-python3-cairosvg"
+  "deb-python3-cffi"
+  "deb-python3-dbus"
+  "deb-python3-lxml"
+  "deb-python3-numpy"
+  "deb-python3-psutil"
+  "deb-python3-pyglet"
+  "deb-python3-serial"
+  "deb-python3-wxgtk4-0"
+]
+extra-source "printrun-common_2.0.0~rc8-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/printrun/printrun-common_2.0.0~rc8-2_all.deb"
+}

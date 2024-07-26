@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ballz_1.0.4-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ballz"]
+]
+depends: [
+  "deb-ballz-data" {= "1.0.4-1.1"}
+  "deb-libaldmb1"
+  "deb-liballegro4-4" {>= "2-4.4.3.1"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libdumb1"
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libguichan-0-8-1-1v5" {>= "0.8.2"}
+  "deb-libguichan-allegro-0-8-1-1v5" {>= "0.8.2"}
+  "deb-libstdc++6" {>= "5.2"}
+]
+extra-source "ballz_1.0.4-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/ballz/ballz_1.0.4-1.1_amd64.deb"
+}

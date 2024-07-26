@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-smcfcs_1.7.1+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-smcfcs"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.2.20221110-1"}
+  "deb-r-cran-abind"
+  "deb-r-cran-brglm2"
+  "deb-r-cran-checkmate"
+  "deb-r-cran-mass"
+  "deb-r-cran-rlang"
+  "deb-r-cran-survival"
+  "deb-r-cran-vgam"
+]
+extra-source "r-cran-smcfcs_1.7.1+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-smcfcs/r-cran-smcfcs_1.7.1+dfsg-1_all.deb"
+}

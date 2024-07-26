@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-flexible-defaults-dev_0.0.3-2+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-flexible-defaults-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-th-extras-dev"
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+]
+extra-source "libghc-flexible-defaults-dev_0.0.3-2+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-flexible-defaults/libghc-flexible-defaults-dev_0.0.3-2+b3_amd64.deb"
+}

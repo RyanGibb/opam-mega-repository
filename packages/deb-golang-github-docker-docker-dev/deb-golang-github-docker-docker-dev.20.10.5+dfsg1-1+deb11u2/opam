@@ -1,0 +1,43 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-docker-docker-dev_20.10.5+dfsg1-1+deb11u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-docker-docker-dev"]
+]
+depends: [
+  "deb-golang-dbus-dev" {>= "5.0.2~"}
+  "deb-golang-github-burntsushi-toml-dev"
+  "deb-golang-github-containerd-containerd-dev" {>= "1.4.2~ds1-2~"}
+  "deb-golang-github-containerd-continuity-dev" {>= "0.0~git20190426~"}
+  "deb-golang-github-deckarep-golang-set-dev"
+  "deb-golang-github-docker-distribution-dev" {>= "2.7.1~"}
+  "deb-golang-github-docker-docker-credential-helpers-dev" {>= "0.6.1~"}
+  "deb-golang-github-docker-go-connections-dev" {>= "0.4.0~"}
+  "deb-golang-github-docker-go-events-dev"
+  "deb-golang-github-docker-go-metrics-dev"
+  "deb-golang-github-docker-go-units-dev" {>= "0.4.0~"}
+  "deb-golang-github-docker-libkv-dev"
+  "deb-golang-github-fsnotify-fsnotify-dev"
+  "deb-golang-github-gorilla-mux-dev" {>= "1.7.1~"}
+  "deb-golang-github-hashicorp-memberlist-dev" {>= "0.1.0~"}
+  "deb-golang-github-hashicorp-serf-dev"
+  "deb-golang-github-ishidawataru-sctp-dev"
+  "deb-golang-github-moby-term-dev"
+  "deb-golang-github-morikuni-aec-dev"
+  "deb-golang-github-opencontainers-go-digest-dev"
+  "deb-golang-github-opencontainers-image-spec-dev" {>= "1.0.1~"}
+  "deb-golang-github-opencontainers-runc-dev" {>= "1.0.0~rc8~"}
+  "deb-golang-github-opencontainers-selinux-dev" {>= "1.8.0~"}
+  "deb-golang-github-opentracing-opentracing-go-dev"
+  "deb-golang-github-sirupsen-logrus-dev" {>= "1.0.2~"}
+  "deb-golang-github-tchap-go-patricia-dev"
+  "deb-golang-github-vishvananda-netlink-dev" {>= "1.0.0~"}
+  "deb-golang-github-vishvananda-netns-dev"
+  "deb-golang-golang-x-net-dev"
+  "deb-golang-golang-x-sys-dev" {>= "0.0~git20190726~"}
+  "deb-golang-google-grpc-dev"
+]
+extra-source "golang-github-docker-docker-dev_20.10.5+dfsg1-1+deb11u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/docker.io/golang-github-docker-docker-dev_20.10.5+dfsg1-1+deb11u2_all.deb"
+}

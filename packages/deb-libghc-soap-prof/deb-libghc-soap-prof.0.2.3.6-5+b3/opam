@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-soap-prof_0.2.3.6-5+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-soap-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-conduit-prof"
+  "deb-libghc-configurator-prof"
+  "deb-libghc-data-default-prof"
+  "deb-libghc-http-client-prof"
+  "deb-libghc-http-types-prof"
+  "deb-libghc-iconv-prof"
+  "deb-libghc-resourcet-prof"
+  "deb-libghc-soap-dev" {= "0.2.3.6-5+b3"}
+  "deb-libghc-unordered-containers-prof"
+  "deb-libghc-xml-conduit-prof"
+  "deb-libghc-xml-conduit-writer-prof"
+  "deb-libghc-xml-types-prof"
+]
+extra-source "libghc-soap-prof_0.2.3.6-5+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-soap/libghc-soap-prof_0.2.3.6-5+b3_amd64.deb"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdata-entropy-perl_0.007-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdata-entropy-perl"]
+]
+depends: [
+  "deb-libcrypt-rijndael-perl"
+  "deb-libdata-float-perl"
+  "deb-libhttp-lite-perl"
+  "deb-libparams-classify-perl"
+  "deb-perl"
+]
+extra-source "libdata-entropy-perl_0.007-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libd/libdata-entropy-perl/libdata-entropy-perl_0.007-3_all.deb"
+}

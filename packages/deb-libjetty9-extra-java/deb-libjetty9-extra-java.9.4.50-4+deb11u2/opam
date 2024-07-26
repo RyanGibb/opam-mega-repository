@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libjetty9-extra-java_9.4.50-4+deb11u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libjetty9-extra-java"]
+]
+depends: [
+  "deb-libasm-java" {>= "7.0"}
+  "deb-libjetty9-java" {>= "9.4.50-4+deb11u2"}
+  "deb-libjnr-unixsocket-java"
+  "deb-libmail-java"
+  "deb-libspring-beans-java"
+  "deb-libtaglibs-standard-impl-java"
+  "deb-libtaglibs-standard-spec-java"
+  "deb-libtomcat9-java"
+]
+extra-source "libjetty9-extra-java_9.4.50-4+deb11u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/j/jetty9/libjetty9-extra-java_9.4.50-4+deb11u2_all.deb"
+}

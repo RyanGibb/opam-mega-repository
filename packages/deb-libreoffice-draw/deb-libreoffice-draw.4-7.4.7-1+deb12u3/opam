@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libreoffice-draw_4:7.4.7-1+deb12u3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libreoffice-draw"]
+]
+depends: [
+  "deb-libavahi-client3" {>= "0.6.16"}
+  "deb-libavahi-common3" {>= "0.6.16"}
+  "deb-libc6" {>= "2.35"}
+  "deb-libcdr-0-1-1"
+  "deb-libdbus-1-3" {>= "1.9.14"}
+  "deb-libfreehand-0-1-1"
+  "deb-libgcc-s1" {>= "3.3.1"}
+  "deb-libglib2-0-0" {>= "2.38.0"}
+  "deb-libmspub-0-1-1"
+  "deb-libmwaw-0-3-3"
+  "deb-libodfgen-0-1-1"
+  "deb-libpagemaker-0-0-0"
+  "deb-libqxp-0-0-0"
+  "deb-libreoffice-common" {>= "1-7.0.0~alpha~"}
+  "deb-libreoffice-core" {= "4-7.4.7-1+deb12u3"}
+  "deb-librevenge-0-0-0"
+  "deb-libstaroffice-0-0-0"
+  "deb-libstdc++6" {>= "11"}
+  "deb-libuno-cppu3" {>= "4.4.0~alpha"}
+  "deb-libuno-cppuhelpergcc3-3" {>= "1-7.4.0~alpha"}
+  "deb-libuno-sal3" {>= "1-7.3.0~beta1"}
+  "deb-libuno-salhelpergcc3-3" {>= "3.6.0~beta"}
+  "deb-libvisio-0-1-1"
+  "deb-libwpg-0-3-3"
+  "deb-libxml2" {>= "2.8"}
+  "deb-libzmf-0-0-0"
+  "deb-ucf" {>= "0.8"}
+  "deb-uno-libs-private"
+]
+extra-source "libreoffice-draw_4:7.4.7-1+deb12u3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libr/libreoffice/libreoffice-draw_7.4.7-1+deb12u3_amd64.deb"
+}

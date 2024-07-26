@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i olive-editor_20200620-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r olive-editor"]
+]
+depends: [
+  "deb-ffmpeg"
+  "deb-frei0r-plugins"
+  "deb-libavcodec-extra58"
+  "deb-libavfilter-extra7"
+  "deb-libavformat58" {>= "7-4.2"}
+  "deb-libavutil56" {>= "7-4.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libilmbase25" {>= "2.5.3"}
+  "deb-libopencolorio1v5" {>= "1.1.1~dfsg0"}
+  "deb-libopenexr25" {>= "2.5.3"}
+  "deb-libopenimageio2-2" {>= "2.2.7.0+dfsg"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5multimedia5" {>= "5.9.0~rc"}
+  "deb-libqt5multimedia5-plugins"
+  "deb-libqt5widgets5" {>= "5.15.1"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libswresample3" {>= "7-4.0"}
+  "deb-libswscale5" {>= "7-4.0"}
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "olive-editor_20200620-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/olive-editor/olive-editor_20200620-2_amd64.deb"
+}

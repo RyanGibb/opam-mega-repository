@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fonts-thai-tlwg_1:0.7.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fonts-thai-tlwg"]
+]
+depends: [
+  "deb-fonts-tlwg-garuda"
+  "deb-fonts-tlwg-kinnari"
+  "deb-fonts-tlwg-laksaman"
+  "deb-fonts-tlwg-loma"
+  "deb-fonts-tlwg-mono"
+  "deb-fonts-tlwg-norasi"
+  "deb-fonts-tlwg-purisa"
+  "deb-fonts-tlwg-sawasdee"
+  "deb-fonts-tlwg-typewriter"
+  "deb-fonts-tlwg-typist"
+  "deb-fonts-tlwg-typo"
+  "deb-fonts-tlwg-umpush"
+  "deb-fonts-tlwg-waree"
+]
+extra-source "fonts-thai-tlwg_1:0.7.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fonts-tlwg/fonts-thai-tlwg_0.7.2-1_all.deb"
+}

@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i rasmol_2.7.6.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r rasmol"]
+]
+depends: [
+  "deb-libc6" {>= "2.15"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libcbf1" {>= "0.9.5.18"}
+  "deb-libcneartree7" {>= "5.1.1"}
+  "deb-libcqrlib2" {>= "1.1.2"}
+  "deb-libcvector2" {>= "1.0.3"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libgtk-3-0" {>= "3.21.5"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libvte-2-91-0"
+  "deb-libx11-6"
+  "deb-libxext6"
+]
+extra-source "rasmol_2.7.6.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rasmol/rasmol_2.7.6.0-1_amd64.deb"
+}

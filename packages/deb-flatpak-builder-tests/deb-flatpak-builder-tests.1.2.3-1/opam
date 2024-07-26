@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i flatpak-builder-tests_1.2.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r flatpak-builder-tests"]
+]
+depends: [
+  "deb-attr"
+  "deb-ca-certificates"
+  "deb-desktop-file-utils"
+  "deb-flatpak-builder" {= "1.2.3-1"}
+  "deb-git"
+  "deb-gtk-update-icon-cache"
+  "deb-hicolor-icon-theme"
+  "deb-make"
+  "deb-ostree" {>= "2017.14"}
+  "deb-shared-mime-info"
+]
+extra-source "flatpak-builder-tests_1.2.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/flatpak-builder/flatpak-builder-tests_1.2.3-1_amd64.deb"
+}

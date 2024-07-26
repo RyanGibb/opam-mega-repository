@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i logstalgia_1.1.0-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r logstalgia"]
+]
+depends: [
+  "deb-fonts-freefont-ttf"
+  "deb-libc6" {>= "2.27"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgl1"
+  "deb-libglew2-1" {>= "1.12.0"}
+  "deb-libpcre3"
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libsdl2-2-0-0" {>= "2.0.8"}
+  "deb-libsdl2-image-2-0-0" {>= "2.0.2"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+extra-source "logstalgia_1.1.0-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/logstalgia/logstalgia_1.1.0-2+b1_amd64.deb"
+}

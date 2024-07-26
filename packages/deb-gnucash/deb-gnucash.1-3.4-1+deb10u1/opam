@@ -1,0 +1,54 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnucash_1:3.4-1+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnucash"]
+]
+depends: [
+  "deb-gnucash-common" {= "1-3.4-1+deb10u1"}
+  "deb-guile-2-2-libs"
+  "deb-libaqbanking35" {>= "5.3.1beta"}
+  "deb-libaqbanking35-plugins"
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libboost-date-time1-67-0"
+  "deb-libboost-filesystem1-67-0"
+  "deb-libboost-locale1-67-0"
+  "deb-libboost-regex1-67-0" {>= "1.67.0-10"}
+  "deb-libboost-system1-67-0"
+  "deb-libc6" {>= "2.27"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libcrypt-ssleay-perl"
+  "deb-libdate-manip-perl"
+  "deb-libdbi1" {>= "0.9.0"}
+  "deb-libfinance-quote-perl"
+  "deb-libgc1c2" {>= "1-7.2d"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.45.3"}
+  "deb-libgtk-3-0" {>= "3.21.5"}
+  "deb-libgwenhywfar60" {>= "3.99.16"}
+  "deb-libhtml-tableextract-perl"
+  "deb-libhtml-tree-perl"
+  "deb-libicu63" {>= "63.1-1~"}
+  "deb-libjavascriptcoregtk-4-0-18"
+  "deb-libktoblzcheck1v5"
+  "deb-libofx7" {>= "1-0.9.14"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpython3-7" {>= "3.7.0"}
+  "deb-libsecret-1-0" {>= "0.7"}
+  "deb-libsoup2-4-1" {>= "2.4.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libwebkit2gtk-4-0-37" {>= "2.15.1"}
+  "deb-libwww-perl"
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libxslt1-1" {>= "1.1.25"}
+  "deb-perl-any"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-guile-2-2" | "deb- guile-2-0")
+]
+extra-source "gnucash_1:3.4-1+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnucash/gnucash_3.4-1+deb10u1_amd64.deb"
+}

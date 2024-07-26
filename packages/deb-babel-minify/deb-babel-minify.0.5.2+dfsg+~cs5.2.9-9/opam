@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i babel-minify_0.5.2+dfsg+~cs5.2.9-9_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r babel-minify"]
+]
+depends: [
+  "deb-node-babel7"
+  "deb-node-call-bind"
+  "deb-node-define-properties"
+  "deb-node-es-abstract"
+  "deb-node-esutils"
+  "deb-node-fs-readdir-recursive"
+  "deb-node-has-symbols"
+  "deb-node-lodash"
+  "deb-node-mkdirp"
+  "deb-node-plugin-error"
+  "deb-node-tape"
+  "deb-node-through2"
+  "deb-node-vinyl-sourcemaps-apply"
+  "deb-node-yargs-parser"
+  "deb-nodejs-any"
+]
+extra-source "babel-minify_0.5.2+dfsg+~cs5.2.9-9_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/babel-minify/babel-minify_0.5.2+dfsg+~cs5.2.9-9_all.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-gpgme-dev_0.10.0-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-gpgme-dev"]
+]
+depends: [
+  "deb-librust-bitflags-1+default-dev"
+  "deb-librust-conv-0-3+default-dev"
+  "deb-librust-cstr-argument-0-1+default-dev"
+  "deb-librust-gpg-error-dev"
+  "deb-librust-gpgme-sys-0-10+default-dev"
+  "deb-librust-libc-0-2+default-dev"
+  "deb-librust-once-cell-1+default-dev"
+  "deb-librust-smallvec-1+default-dev"
+  "deb-librust-static-assertions-dev"
+]
+extra-source "librust-gpgme-dev_0.10.0-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-gpgme/librust-gpgme-dev_0.10.0-4_amd64.deb"
+}

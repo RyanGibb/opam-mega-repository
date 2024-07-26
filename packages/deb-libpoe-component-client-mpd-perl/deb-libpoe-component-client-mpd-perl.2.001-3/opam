@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpoe-component-client-mpd-perl_2.001-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpoe-component-client-mpd-perl"]
+]
+depends: [
+  "deb-libaudio-mpd-common-perl" {>= "2.002"}
+  "deb-liblist-allutils-perl"
+  "deb-libmoose-perl"
+  "deb-libmoosex-has-sugar-perl"
+  "deb-libmoosex-poe-perl"
+  "deb-libmoosex-semiaffordanceaccessor-perl"
+  "deb-libmoosex-types-perl"
+  "deb-libpoe-perl"
+  "deb-libreadonly-perl"
+  "deb-libsub-exporter-perl"
+  "deb-perl"
+]
+extra-source "libpoe-component-client-mpd-perl_2.001-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libp/libpoe-component-client-mpd-perl/libpoe-component-client-mpd-perl_2.001-3_all.deb"
+}

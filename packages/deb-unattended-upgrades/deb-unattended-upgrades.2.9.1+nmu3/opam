@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i unattended-upgrades_2.9.1+nmu3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r unattended-upgrades"]
+]
+depends: [
+  "deb-debconf"
+  "deb-lsb-base"
+  "deb-lsb-release"
+  "deb-python3"
+  "deb-python3-apt" {>= "1.9.6~"}
+  "deb-python3-dbus"
+  "deb-python3-distro-info"
+  "deb-ucf"
+  "deb-xz-utils"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "unattended-upgrades_2.9.1+nmu3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/u/unattended-upgrades/unattended-upgrades_2.9.1+nmu3_all.deb"
+}

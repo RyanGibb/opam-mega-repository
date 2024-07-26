@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-dfvfs_20201219-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-dfvfs"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-cffi-backend" {>= "1.9.1"}
+  "deb-python3-cryptography" {>= "2.0.2"}
+  "deb-python3-dfdatetime" {>= "20180324"}
+  "deb-python3-dtfabric" {>= "20170524"}
+  "deb-python3-fsapfs" {>= "20181205"}
+  "deb-python3-idna" {>= "2.5"}
+  "deb-python3-libbde" {>= "20140531"}
+  "deb-python3-libewf" {>= "20131210"}
+  "deb-python3-libfsext" {>= "20200819"}
+  "deb-python3-libfshfs" {>= "20201103"}
+  "deb-python3-libfsntfs" {>= "20151130"}
+  "deb-python3-libfsxfs" {>= "20201114"}
+  "deb-python3-libfvde" {>= "20160719"}
+  "deb-python3-libfwnt" {>= "20160418"}
+  "deb-python3-libluksde" {>= "20200101"}
+  "deb-python3-libqcow" {>= "20201213"}
+  "deb-python3-libsigscan" {>= "20150627"}
+  "deb-python3-libsmdev" {>= "20140529"}
+  "deb-python3-libsmraw" {>= "20140612"}
+  "deb-python3-libvhdi" {>= "20131210"}
+  "deb-python3-libvmdk" {>= "20140421"}
+  "deb-python3-libvshadow" {>= "20160109"}
+  "deb-python3-libvslvm" {>= "20160109"}
+  "deb-python3-protobuf"
+  "deb-python3-six" {>= "1.1.0"}
+  "deb-python3-tsk" {>= "20200117-3"}
+]
+extra-source "python3-dfvfs_20201219-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dfvfs/python3-dfvfs_20201219-1_all.deb"
+}

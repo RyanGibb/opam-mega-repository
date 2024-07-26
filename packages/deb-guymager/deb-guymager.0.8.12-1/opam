@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i guymager_0.8.12-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r guymager"]
+]
+depends: [
+  "deb-hdparm"
+  "deb-libc6" {>= "2.14"}
+  "deb-libewf2" {>= "20121209"}
+  "deb-libgcc-s1" {>= "3.3.1"}
+  "deb-libguytools2" {>= "2.1.0"}
+  "deb-libqt5core5a" {>= "5.12.2"}
+  "deb-libqt5dbus5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.11.0~rc1"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-smartmontools"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libparted0" | "deb- libparted")
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+]
+extra-source "guymager_0.8.12-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/guymager/guymager_0.8.12-1_amd64.deb"
+}

@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ompl-plannerarena_1.5.2+ds1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ompl-plannerarena"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-cran-dbplyr"
+  "deb-r-cran-dplyr"
+  "deb-r-cran-ggplot2"
+  "deb-r-cran-hmisc"
+  "deb-r-cran-markdown"
+  "deb-r-cran-rsqlite"
+  "deb-r-cran-shiny"
+  "deb-r-cran-shinyjs"
+  "deb-r-cran-tidyr"
+  "deb-r-cran-v8"
+  "deb-ruby"
+]
+extra-source "ompl-plannerarena_1.5.2+ds1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/ompl/ompl-plannerarena_1.5.2+ds1-1_all.deb"
+}

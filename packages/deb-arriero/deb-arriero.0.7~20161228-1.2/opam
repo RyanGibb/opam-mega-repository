@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i arriero_0.7~20161228-1.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r arriero"]
+]
+depends: [
+  "deb-debhelper"
+  "deb-devscripts"
+  "deb-dpkg-dev"
+  "deb-fakeroot"
+  "deb-file"
+  "deb-git-buildpackage"
+  "deb-gpgv"
+  "deb-libcrypt-ssleay-perl"
+  "deb-libwww-perl"
+  "deb-lintian"
+  "deb-lzma"
+  "deb-python3-any"
+  "deb-python3-debian"
+  "deb-python3-git"
+  "deb-python3-lxml"
+  "deb-python3-pexpect"
+  "deb-sudo"
+  "deb-unzip"
+]
+extra-source "arriero_0.7~20161228-1.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/arriero/arriero_0.7~20161228-1.2_all.deb"
+}

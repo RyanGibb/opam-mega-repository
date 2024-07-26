@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-wai-app-static-prof_3.1.7.1-1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-wai-app-static-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-blaze-html-prof"
+  "deb-libghc-blaze-markup-prof"
+  "deb-libghc-cryptonite-prof"
+  "deb-libghc-file-embed-prof"
+  "deb-libghc-http-date-prof"
+  "deb-libghc-http-types-prof"
+  "deb-libghc-memory-prof"
+  "deb-libghc-mime-types-prof"
+  "deb-libghc-old-locale-prof"
+  "deb-libghc-optparse-applicative-prof"
+  "deb-libghc-unix-compat-prof"
+  "deb-libghc-unordered-containers-prof"
+  "deb-libghc-wai-app-static-dev" {= "3.1.7.1-1+b3"}
+  "deb-libghc-wai-extra-prof"
+  "deb-libghc-wai-prof"
+  "deb-libghc-warp-prof"
+  "deb-libghc-zlib-prof"
+]
+extra-source "libghc-wai-app-static-prof_3.1.7.1-1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-wai-app-static/libghc-wai-app-static-prof_3.1.7.1-1+b3_amd64.deb"
+}

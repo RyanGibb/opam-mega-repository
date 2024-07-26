@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-cryptohash-cryptoapi-prof_0.1.4-7+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-cryptohash-cryptoapi-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-cereal-prof"
+  "deb-libghc-crypto-api-prof"
+  "deb-libghc-cryptohash-cryptoapi-dev" {= "0.1.4-7+b2"}
+  "deb-libghc-cryptonite-prof"
+  "deb-libghc-memory-prof"
+  "deb-libghc-tagged-prof"
+]
+extra-source "libghc-cryptohash-cryptoapi-prof_0.1.4-7+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-cryptohash-cryptoapi/libghc-cryptohash-cryptoapi-prof_0.1.4-7+b2_amd64.deb"
+}

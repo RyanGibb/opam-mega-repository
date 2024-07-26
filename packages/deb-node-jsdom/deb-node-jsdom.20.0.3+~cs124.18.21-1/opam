@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-jsdom_20.0.3+~cs124.18.21-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-jsdom"]
+]
+depends: [
+  "deb-node-abab"
+  "deb-node-acorn"
+  "deb-node-cssom"
+  "deb-node-cssstyle"
+  "deb-node-entities"
+  "deb-node-escodegen"
+  "deb-node-form-data"
+  "deb-node-https-proxy-agent" {>= "5.0.0+~cs8.0.0-2~"}
+  "deb-node-iconv-lite"
+  "deb-node-lodash-packages"
+  "deb-node-parse5"
+  "deb-node-punycode"
+  "deb-node-tough-cookie"
+  "deb-node-webidl-conversions"
+  "deb-node-ws"
+]
+extra-source "node-jsdom_20.0.3+~cs124.18.21-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-jsdom/node-jsdom_20.0.3+~cs124.18.21-1_all.deb"
+}

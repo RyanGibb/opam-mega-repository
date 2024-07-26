@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libui-utilcpp-dev_1.10.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libui-utilcpp-dev"]
+]
+depends: [
+  "deb-libboost-all-dev" {>= "1.35"}
+  "deb-libc6-dev"
+  "deb-libcap-dev"
+  "deb-libidn11-dev"
+  "deb-libreadline-dev"
+  "deb-librecode-dev"
+  "deb-libucommon-dev"
+  "deb-libui-utilcpp9v5" {= "1.10.2-1"}
+  "deb-xfslibs-dev"
+]
+extra-source "libui-utilcpp-dev_1.10.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/u/ui-utilcpp/libui-utilcpp-dev_1.10.2-1_amd64.deb"
+}

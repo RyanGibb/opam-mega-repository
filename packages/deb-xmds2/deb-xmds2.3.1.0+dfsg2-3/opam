@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xmds2_3.1.0+dfsg2-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xmds2"]
+]
+depends: [
+  "deb-g++"
+  "deb-libatlas-base-dev"
+  "deb-libfftw3-dev"
+  "deb-libfftw3-mpi-dev"
+  "deb-libgsl-dev"
+  "deb-libhdf5-dev"
+  "deb-mpi-default-bin"
+  "deb-mpi-default-dev"
+  "deb-python3-any" {>= "3.7~"}
+  "deb-python3-cheetah" {< "4"}
+  "deb-python3-cheetah" {>= "3"}
+  "deb-python3-h5py-mpi"
+  "deb-python3-lxml"
+  "deb-python3-mpmath"
+  "deb-python3-numpy"
+  "deb-python3-pkg-resources"
+  "deb-python3-pyparsing"
+]
+extra-source "xmds2_3.1.0+dfsg2-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xmds2/xmds2_3.1.0+dfsg2-3_all.deb"
+}

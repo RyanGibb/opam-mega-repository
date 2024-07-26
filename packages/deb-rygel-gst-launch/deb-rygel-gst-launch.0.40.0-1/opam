@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i rygel-gst-launch_0.40.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r rygel-gst-launch"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libgee-0-8-2" {>= "0.8.3"}
+  "deb-libglib2-0-0" {>= "2.56.0"}
+  "deb-librygel-core-2-6-2" {>= "0.40.0"}
+  "deb-librygel-server-2-6-2" {>= "0.40.0"}
+  "deb-libsoup2-4-1" {>= "2.44.0"}
+  "deb-rygel" {= "0.40.0-1"}
+]
+extra-source "rygel-gst-launch_0.40.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rygel/rygel-gst-launch_0.40.0-1_amd64.deb"
+}

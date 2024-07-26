@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add librrd-1.7.2-r7.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del librrd"]
+]
+depends: [
+  "apk-cairo" {= "1.17.6-r3"}
+  "apk-glib" {= "2.74.7-r0"}
+  "apk-libpng" {= "1.6.39-r0"}
+  "apk-libxml2" {= "2.10.4-r0"}
+  "apk-musl" {= "1.2.3-r5"}
+  "apk-pango" {= "1.50.13-r0"}
+]
+extra-source "librrd-1.7.2-r7.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/librrd-1.7.2-r7.apk"
+}

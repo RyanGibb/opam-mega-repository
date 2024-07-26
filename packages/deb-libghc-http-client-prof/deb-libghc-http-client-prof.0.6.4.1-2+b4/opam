@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-http-client-prof_0.6.4.1-2+b4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-http-client-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-blaze-builder-prof"
+  "deb-libghc-case-insensitive-prof"
+  "deb-libghc-cookie-prof"
+  "deb-libghc-exceptions-prof"
+  "deb-libghc-http-client-dev" {= "0.6.4.1-2+b4"}
+  "deb-libghc-http-types-prof"
+  "deb-libghc-memory-prof"
+  "deb-libghc-mime-types-prof"
+  "deb-libghc-network-prof"
+  "deb-libghc-network-uri-prof"
+  "deb-libghc-random-prof"
+  "deb-libghc-streaming-commons-prof"
+]
+extra-source "libghc-http-client-prof_0.6.4.1-2+b4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-http-client/libghc-http-client-prof_0.6.4.1-2+b4_amd64.deb"
+}

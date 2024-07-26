@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add kamailio-perl-5.6.3-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del kamailio-perl"]
+]
+depends: [
+  "apk-kamailio" {= "5.6.3-r6"}
+  "apk-musl" {= "1.2.4-r2"}
+  "apk-perl" {= "5.36.2-r0"}
+]
+extra-source "kamailio-perl-5.6.3-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/kamailio-perl-5.6.3-r6.apk"
+}

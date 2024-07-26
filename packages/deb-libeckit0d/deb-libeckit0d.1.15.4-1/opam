@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libeckit0d_1.15.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libeckit0d"]
+]
+depends: [
+  "deb-libaec0" {>= "1.0.4"}
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.29"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-liblz4-1" {>= "0.0~r130"}
+  "deb-libopenblas0"
+  "deb-libopenmpi3" {>= "4.1.0"}
+  "deb-librsync2" {>= "1.0.0"}
+  "deb-libsnappy1v5" {>= "1.1.8"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-libxxhash0" {>= "0.6.5"}
+]
+extra-source "libeckit0d_1.15.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/eckit/libeckit0d_1.15.4-1_amd64.deb"
+}

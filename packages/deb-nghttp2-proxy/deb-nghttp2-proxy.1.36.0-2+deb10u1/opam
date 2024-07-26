@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i nghttp2-proxy_1.36.0-2+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r nghttp2-proxy"]
+]
+depends: [
+  "deb-libc-ares2" {>= "1.7.0"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libev4" {>= "1-4.15"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libjansson4" {>= "2.0.1"}
+  "deb-libjemalloc2" {>= "5.0.0"}
+  "deb-libnghttp2-14" {= "1.36.0-2+deb10u1"}
+  "deb-libssl1-1" {>= "1.1.1"}
+  "deb-libstdc++6" {>= "7"}
+  "deb-libsystemd0"
+  "deb-libxml2" {>= "2.6.27"}
+  "deb-lsb-base"
+  "deb-openssl"
+  "deb-python3"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "nghttp2-proxy_1.36.0-2+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/nghttp2/nghttp2-proxy_1.36.0-2+deb10u1_amd64.deb"
+}

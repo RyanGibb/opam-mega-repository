@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i x2goserver_4.1.0.3-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r x2goserver"]
+]
+depends: [
+  "deb-bc"
+  "deb-libfile-basedir-perl"
+  "deb-libfile-which-perl"
+  "deb-libswitch-perl"
+  "deb-libtry-tiny-perl"
+  "deb-libx2go-server-perl" {< "4.1.0.3-5.1~"}
+  "deb-libx2go-server-perl" {>= "4.1.0.3-5"}
+  "deb-lsb-base"
+  "deb-lsof"
+  "deb-net-tools"
+  "deb-openssh-client"
+  "deb-openssh-server"
+  "deb-perl"
+  "deb-psmisc"
+  "deb-pwgen"
+  "deb-x2goserver-common" {< "4.1.0.3-5.1~"}
+  "deb-x2goserver-common" {>= "4.1.0.3-5"}
+  "deb-x2goserver-x2goagent" {< "4.1.0.3-5.1~"}
+  "deb-x2goserver-x2goagent" {>= "4.1.0.3-5"}
+  "deb-xauth"
+  "deb-xkb-data"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "x2goserver_4.1.0.3-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/x2goserver/x2goserver_4.1.0.3-5_amd64.deb"
+}

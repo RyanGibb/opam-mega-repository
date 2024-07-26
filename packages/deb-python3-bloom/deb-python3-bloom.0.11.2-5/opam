@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-bloom_0.11.2-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-bloom"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-catkin-pkg"
+  "deb-python3-dateutil"
+  "deb-python3-empy"
+  "deb-python3-packaging"
+  "deb-python3-pkg-resources"
+  "deb-python3-rosdep2"
+  "deb-python3-rosdistro"
+  "deb-python3-vcstools"
+  "deb-python3-yaml"
+]
+extra-source "python3-bloom_0.11.2-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ros-bloom/python3-bloom_0.11.2-5_all.deb"
+}

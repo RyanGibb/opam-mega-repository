@@ -1,0 +1,57 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gulp_4.0.2+~cs54.26.36-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gulp"]
+]
+depends: [
+  "deb-node-ansi-colors"
+  "deb-node-anymatch"
+  "deb-node-archy"
+  "deb-node-arr-flatten"
+  "deb-node-array-each"
+  "deb-node-array-slice"
+  "deb-node-chokidar"
+  "deb-node-concat-stream"
+  "deb-node-end-of-stream"
+  "deb-node-es6-iterator"
+  "deb-node-es6-symbol"
+  "deb-node-es6-weak-map"
+  "deb-node-expand-tilde"
+  "deb-node-fancy-log"
+  "deb-node-fast-levenshtein"
+  "deb-node-findup-sync"
+  "deb-node-fined"
+  "deb-node-for-own"
+  "deb-node-get-value"
+  "deb-node-gulplog"
+  "deb-node-interpret"
+  "deb-node-is-negated-glob"
+  "deb-node-is-number"
+  "deb-node-is-plain-object" {>= "5.0.0-5~"}
+  "deb-node-is-unc-path"
+  "deb-node-is-windows"
+  "deb-node-isobject"
+  "deb-node-kind-of"
+  "deb-node-liftoff"
+  "deb-node-make-iterator"
+  "deb-node-micromatch"
+  "deb-node-minimist"
+  "deb-node-normalize-path"
+  "deb-node-object-inspect"
+  "deb-node-once"
+  "deb-node-parse-node-version"
+  "deb-node-pretty-hrtime"
+  "deb-node-process-nextick-args"
+  "deb-node-remove-trailing-separator"
+  "deb-node-resolve"
+  "deb-node-stack-trace"
+  "deb-node-v8flags"
+  "deb-node-vinyl-fs"
+  "deb-node-yargs"
+  "deb-nodejs-any"
+]
+extra-source "gulp_4.0.2+~cs54.26.36-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-gulp/gulp_4.0.2+~cs54.26.36-6_all.deb"
+}

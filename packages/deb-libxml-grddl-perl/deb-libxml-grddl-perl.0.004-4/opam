@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libxml-grddl-perl_0.004-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libxml-grddl-perl"]
+]
+depends: [
+  "deb-libcss-perl"
+  "deb-libossp-uuid-perl"
+  "deb-librdf-rdfa-parser-perl"
+  "deb-librdf-trine-perl"
+  "deb-liburi-perl"
+  "deb-libxml-libxml-perl"
+  "deb-libxml-libxslt-perl"
+  "deb-perl-any"
+]
+extra-source "libxml-grddl-perl_0.004-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libx/libxml-grddl-perl/libxml-grddl-perl_0.004-4_all.deb"
+}

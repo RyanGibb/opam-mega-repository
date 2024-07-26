@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-postgres-types-dev_0.2.4-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-postgres-types-dev"]
+]
+depends: [
+  "deb-librust-array-init-2+default-dev"
+  "deb-librust-bit-vec-0-6+default-dev"
+  "deb-librust-bytes-1+default-dev"
+  "deb-librust-chrono-dev"
+  "deb-librust-eui48-1+default-dev"
+  "deb-librust-fallible-iterator-0-2+default-dev"
+  "deb-librust-geo-types-0-7+default-dev"
+  "deb-librust-postgres-derive-dev"
+  "deb-librust-postgres-protocol-dev"
+  "deb-librust-serde-1+default-dev"
+  "deb-librust-serde-json-1+default-dev"
+  "deb-librust-time-0-3-dev"
+  "deb-librust-uuid-1+default-dev"
+]
+extra-source "librust-postgres-types-dev_0.2.4-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-postgres-types/librust-postgres-types-dev_0.2.4-3_amd64.deb"
+}

@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-prometheus-common-dev_0.39.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-prometheus-common-dev"]
+]
+depends: [
+  "deb-golang-github-aws-aws-sdk-go-dev"
+  "deb-golang-github-go-kit-log-dev"
+  "deb-golang-github-julienschmidt-httprouter-dev"
+  "deb-golang-github-mwitkow-go-conntrack-dev"
+  "deb-golang-github-prometheus-client-golang-dev"
+  "deb-golang-github-prometheus-client-model-dev" {>= "0.2.0"}
+  "deb-golang-golang-x-net-dev"
+  "deb-golang-golang-x-oauth2-dev"
+  "deb-golang-google-protobuf-dev"
+  "deb-golang-gopkg-alecthomas-kingpin-v2-dev"
+  "deb-golang-gopkg-yaml-v2-dev" {>= "2.2.1"}
+  "deb-golang-protobuf-extensions-dev"
+  ("deb-golang-github-golang-protobuf-1-3-dev" | "deb- golang-github-golang-protobuf-1-5-dev")
+]
+extra-source "golang-github-prometheus-common-dev_0.39.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-prometheus-common/golang-github-prometheus-common-dev_0.39.0-2_all.deb"
+}

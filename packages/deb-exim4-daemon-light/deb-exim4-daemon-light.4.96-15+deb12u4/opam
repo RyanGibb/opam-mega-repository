@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i exim4-daemon-light_4.96-15+deb12u4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r exim4-daemon-light"]
+]
+depends: [
+  "deb-exim4-base" {>= "4.96"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcrypt1" {>= "1-4.1.0"}
+  "deb-libdb5-3"
+  "deb-libgnutls-dane0" {>= "3.7.0"}
+  "deb-libgnutls30" {>= "3.7.5"}
+  "deb-libidn12" {>= "1.13"}
+  "deb-libidn2-0" {>= "0.6"}
+  "deb-libnsl2" {>= "1.0"}
+  "deb-libpcre2-8-0" {>= "10.22"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+conflicts: [
+  "deb-mail-transport-agent"
+]
+extra-source "exim4-daemon-light_4.96-15+deb12u4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/exim4/exim4-daemon-light_4.96-15+deb12u4_amd64.deb"
+}

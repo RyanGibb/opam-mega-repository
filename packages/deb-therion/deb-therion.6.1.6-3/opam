@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i therion_6.1.6-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r therion"]
+]
+depends: [
+  "deb-bwidget"
+  "deb-libc6" {>= "2.35"}
+  "deb-libfmt9" {>= "9.1.0+ds1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libproj25" {>= "7.1.0"}
+  "deb-libshp2" {>= "1.3.0"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-tcl"
+  "deb-texlive-base"
+  "deb-texlive-metapost"
+  "deb-tk"
+]
+extra-source "therion_6.1.6-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/therion/therion_6.1.6-3_amd64.deb"
+}

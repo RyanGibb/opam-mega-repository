@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sssd-krb5_1.16.3-3.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sssd-krb5"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libcom-err2" {>= "1.43.9"}
+  "deb-libdhash1" {>= "0.4.0"}
+  "deb-libk5crypto3" {>= "1.6.dfsg.2"}
+  "deb-libkrb5-3" {>= "1.6.dfsg.2"}
+  "deb-libpcre3"
+  "deb-libtalloc2" {>= "2.0.4~git20101213"}
+  "deb-sssd-common" {= "1.16.3-3.2"}
+  "deb-sssd-krb5-common" {= "1.16.3-3.2"}
+]
+extra-source "sssd-krb5_1.16.3-3.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sssd/sssd-krb5_1.16.3-3.2_amd64.deb"
+}

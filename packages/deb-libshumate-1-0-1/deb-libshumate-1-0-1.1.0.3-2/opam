@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libshumate-1.0-1_1.0.3-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libshumate-1.0-1"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libcairo2" {>= "1.16"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.68.0"}
+  "deb-libgraphene-1-0-0" {>= "1.5.4"}
+  "deb-libgtk-4-1" {>= "4.0.0"}
+  "deb-libshumate-common" {>= "1.0.3-2"}
+  "deb-libsoup-3-0-0" {>= "3.0.3"}
+  "deb-libsqlite3-0" {>= "3.5.9"}
+]
+extra-source "libshumate-1.0-1_1.0.3-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libs/libshumate/libshumate-1.0-1_1.0.3-2_amd64.deb"
+}

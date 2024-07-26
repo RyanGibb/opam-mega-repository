@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pre-commit_2.10.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pre-commit"]
+]
+depends: [
+  "deb-nodeenv"
+  "deb-python3-any"
+  "deb-python3-cfgv"
+  "deb-python3-identify"
+  "deb-python3-importlib-metadata"
+  "deb-python3-toml"
+  "deb-python3-virtualenv"
+  "deb-python3-yaml"
+]
+extra-source "pre-commit_2.10.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pre-commit/pre-commit_2.10.1-1_all.deb"
+}

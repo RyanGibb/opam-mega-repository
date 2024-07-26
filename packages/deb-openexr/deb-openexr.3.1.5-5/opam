@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openexr_3.1.5-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openexr"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libimath-3-1-29" {>= "3.1.6"}
+  "deb-libopenexr-3-1-30" {>= "3.1.5"}
+  "deb-libstdc++6" {>= "11"}
+]
+extra-source "openexr_3.1.5-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openexr/openexr_3.1.5-5_amd64.deb"
+}

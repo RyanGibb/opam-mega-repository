@@ -1,0 +1,64 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openrefine_3.6.2-2+deb12u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openrefine"]
+]
+depends: [
+  "deb-curl"
+  "deb-jython"
+  "deb-libapache-jena-java"
+  "deb-libapache-poi-java"
+  "deb-libclojure-java"
+  "deb-libcommons-codec-java" {>= "1.15"}
+  "deb-libcommons-collections3-java"
+  "deb-libcommons-collections4-java"
+  "deb-libcommons-compress-java" {>= "1.22"}
+  "deb-libcommons-fileupload-java"
+  "deb-libcommons-io-java" {>= "2.11.0"}
+  "deb-libcommons-lang-java"
+  "deb-libcommons-lang3-java" {>= "3.12.0"}
+  "deb-libcommons-text-java" {>= "1.10.0"}
+  "deb-libcommons-validator-java" {>= "1.7"}
+  "deb-libgoogle-api-services-drive-java"
+  "deb-libgoogle-api-services-sheets-java"
+  "deb-libgoogle-http-client-java"
+  "deb-libguava-java"
+  "deb-libhttpclient5-java"
+  "deb-libhttpcore-java" {>= "4.4.16"}
+  "deb-libjackson2-annotations-java" {>= "2.14.0"}
+  "deb-libjackson2-core-java" {>= "2.14.1"}
+  "deb-libjackson2-databind-java"
+  "deb-libjasypt-java" {>= "1.9.3"}
+  "deb-libjaxb-api-java" {>= "2.3.1"}
+  "deb-libjetty9-java"
+  "deb-libjoda-time-java"
+  "deb-libjsoup-java" {>= "1.15.3"}
+  "deb-libjsr305-java"
+  "deb-libjuniversalchardet-java"
+  "deb-liblanguage-detector-java"
+  "deb-liblog4j2-java" {>= "2.19.0"}
+  "deb-libmarc4j-java"
+  "deb-libmariadb-java" {>= "2.7.6"}
+  "deb-libodfdom-java"
+  "deb-libokhttp-java"
+  "deb-libopenrefine-butterfly-java"
+  "deb-libopenrefine-opencsv-java"
+  "deb-libopenrefine-vicino-java"
+  "deb-liboro-java"
+  "deb-libowasp-encoder-java"
+  "deb-libpostgresql-jdbc-java" {>= "42.5.4"}
+  "deb-libservlet-api-java"
+  "deb-libslf4j-java" {>= "1.7.32"}
+  "deb-libsweble-common-java"
+  "deb-libsweble-wikitext-java"
+  "deb-libwikidata-toolkit-java"
+  "deb-libxerial-sqlite-jdbc-java" {>= "3.40.1.0"}
+  "deb-procps"
+  "deb-velocity" {>= "1.7"}
+  ("deb-default-jre" | "deb- java9-runtime")
+]
+extra-source "openrefine_3.6.2-2+deb12u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openrefine/openrefine_3.6.2-2+deb12u2_all.deb"
+}

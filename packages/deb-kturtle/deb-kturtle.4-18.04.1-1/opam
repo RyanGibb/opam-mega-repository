@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kturtle_4:18.04.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kturtle"]
+]
+depends: [
+  "deb-kio"
+  "deb-libc6" {>= "2.14"}
+  "deb-libkf5configcore5" {>= "4.97.0"}
+  "deb-libkf5configwidgets5" {>= "4.98.0"}
+  "deb-libkf5coreaddons5" {>= "5.2.0"}
+  "deb-libkf5crash5" {>= "5.15.0"}
+  "deb-libkf5i18n5" {>= "4.97.0"}
+  "deb-libkf5kiocore5" {>= "5.10.0"}
+  "deb-libkf5newstuff5" {>= "5.27.0"}
+  "deb-libkf5textwidgets5" {>= "4.96.0"}
+  "deb-libkf5widgetsaddons5" {>= "4.96.0"}
+  "deb-libkf5xmlgui5" {>= "4.98.0"}
+  "deb-libqt5core5a" {>= "5.10.0"}
+  "deb-libqt5dbus5" {>= "5.4"}
+  "deb-libqt5gui5" {>= "5.7.0"}
+  "deb-libqt5printsupport5" {>= "5.4"}
+  "deb-libqt5svg5" {>= "5.6.0~beta"}
+  "deb-libqt5widgets5" {>= "5.4"}
+  "deb-libstdc++6" {>= "4.4.0"}
+]
+extra-source "kturtle_4:18.04.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kturtle/kturtle_18.04.1-1_amd64.deb"
+}

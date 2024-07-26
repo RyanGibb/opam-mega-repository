@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i compton_0.1~beta2+20150922-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r compton"]
+]
+depends: [
+  "deb-libc6" {>= "2.15"}
+  "deb-libconfig9"
+  "deb-libdbus-1-3" {>= "1.9.14"}
+  "deb-libpcre3"
+  "deb-libx11-6"
+  "deb-libxcomposite1" {>= "1-0.3-1"}
+  "deb-libxdamage1" {>= "1-1.1"}
+  "deb-libxext6" {>= "2-1.3.0"}
+  "deb-libxfixes3"
+  "deb-libxinerama1"
+  "deb-libxrandr2" {>= "4.3"}
+  "deb-libxrender1"
+  ("deb-libgl1-mesa-glx" | "deb- libgl1")
+]
+extra-source "compton_0.1~beta2+20150922-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/compton/compton_0.1~beta2+20150922-1_amd64.deb"
+}

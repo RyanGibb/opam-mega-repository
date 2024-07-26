@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libosinfo-1.0-0_1.8.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libosinfo-1.0-0"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.3.1"}
+  "deb-libglib2-0-0" {>= "2.43.1"}
+  "deb-libsoup2-4-1" {>= "2.41.90"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libxslt1-1" {>= "1.1.25"}
+  "deb-osinfo-db"
+  "deb-pci-ids"
+  "deb-usb-ids"
+]
+extra-source "libosinfo-1.0-0_1.8.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libo/libosinfo/libosinfo-1.0-0_1.8.0-1_amd64.deb"
+}

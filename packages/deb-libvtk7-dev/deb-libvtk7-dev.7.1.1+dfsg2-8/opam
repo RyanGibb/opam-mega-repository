@@ -1,0 +1,57 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libvtk7-dev_7.1.1+dfsg2-8_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libvtk7-dev"]
+]
+depends: [
+  "deb-default-libmysqlclient-dev"
+  "deb-libavcodec-dev"
+  "deb-libavformat-dev"
+  "deb-libavutil-dev"
+  "deb-libc6-dev"
+  "deb-libeigen3-dev"
+  "deb-libexpat1-dev"
+  "deb-libfreetype6-dev"
+  "deb-libgdal-dev"
+  "deb-libgl2ps-dev"
+  "deb-libglew-dev"
+  "deb-libhdf5-mpi-dev"
+  "deb-libjpeg-dev"
+  "deb-libjsoncpp-dev"
+  "deb-libnetcdf-cxx-legacy-dev"
+  "deb-libnetcdf-dev"
+  "deb-libogg-dev"
+  "deb-libpng-dev"
+  "deb-libpq-dev"
+  "deb-libproj-dev"
+  "deb-libpython3-dev"
+  "deb-libswscale-dev"
+  "deb-libtheora-dev"
+  "deb-libtiff-dev"
+  "deb-libvtk7-1p" {= "7.1.1+dfsg2-8"}
+  "deb-libvtk7-java" {= "7.1.1+dfsg2-8"}
+  "deb-libx11-dev"
+  "deb-libxft-dev"
+  "deb-libxml2-dev"
+  "deb-libxss-dev"
+  "deb-libxt-dev"
+  "deb-mpi-default-dev"
+  "deb-python3-vtk7" {= "7.1.1+dfsg2-8"}
+  "deb-python3-zope-interface"
+  "deb-tcl-dev"
+  "deb-tcl-vtk7" {= "7.1.1+dfsg2-8"}
+  "deb-tk-dev"
+  "deb-vtk7" {= "7.1.1+dfsg2-8"}
+  "deb-x11proto-core-dev"
+  "deb-zlib1g-dev"
+  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
+  ("deb-libglu1-mesa-dev" | "deb- libglu-dev")
+]
+conflicts: [
+  "deb-libvtk5-dev"
+]
+extra-source "libvtk7-dev_7.1.1+dfsg2-8_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/vtk7/libvtk7-dev_7.1.1+dfsg2-8_amd64.deb"
+}

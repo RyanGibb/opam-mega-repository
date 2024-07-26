@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i puppet-module-nova_13.1.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r puppet-module-nova"]
+]
+depends: [
+  "deb-puppet-common"
+  "deb-puppet-module-cinder" {>= "13.1.0"}
+  "deb-puppet-module-duritong-sysctl"
+  "deb-puppet-module-glance" {>= "13.1.0"}
+  "deb-puppet-module-ironic" {>= "13.1.0"}
+  "deb-puppet-module-joshuabaird-ipaclient"
+  "deb-puppet-module-keystone" {>= "13.1.0"}
+  "deb-puppet-module-openstacklib" {>= "13.1.0"}
+  "deb-puppet-module-oslo" {>= "13.1.0"}
+  "deb-puppet-module-puppetlabs-apache"
+  "deb-puppet-module-puppetlabs-inifile"
+  "deb-puppet-module-puppetlabs-rabbitmq"
+  "deb-puppet-module-puppetlabs-stdlib"
+]
+extra-source "puppet-module-nova_13.1.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/puppet-module-nova/puppet-module-nova_13.1.0-3_all.deb"
+}

@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-tap_12.0.1+ds-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-tap"]
+]
+depends: [
+  "deb-node-clean-yaml-object" {>= "0.1.0"}
+  "deb-node-foreground-child" {>= "1.3.3"}
+  "deb-node-glob" {>= "7"}
+  "deb-node-isexe" {>= "2.0"}
+  "deb-node-js-yaml" {>= "3.11.0"}
+  "deb-node-mkdirp" {>= "0.5.1"}
+  "deb-node-rimraf" {>= "2.6.2"}
+  "deb-node-signal-exit" {>= "3.0.0"}
+  "deb-node-source-map-support" {>= "0.5.6"}
+  "deb-node-stack-utils" {>= "1.0"}
+  "deb-node-supports-color"
+  "deb-node-tap-mocha-reporter" {>= "3.0.7"}
+  "deb-node-tap-parser" {>= "7.0.0"}
+  "deb-node-tmatch" {>= "4.0.0"}
+  "deb-node-write-file-atomic" {>= "2.3.0"}
+  "deb-nodejs" {>= "6"}
+]
+extra-source "node-tap_12.0.1+ds-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-tap/node-tap_12.0.1+ds-1_all.deb"
+}

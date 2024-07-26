@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-ixset-prof_1.1.1.2-1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-ixset-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-ixset-dev" {= "1.1.1.2-1+b3"}
+  "deb-libghc-safecopy-prof"
+  "deb-libghc-syb-prof"
+  "deb-libghc-syb-with-class-prof"
+]
+extra-source "libghc-ixset-prof_1.1.1.2-1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-ixset/libghc-ixset-prof_1.1.1.2-1+b3_amd64.deb"
+}

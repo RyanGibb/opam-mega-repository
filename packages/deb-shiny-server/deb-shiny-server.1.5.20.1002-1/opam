@@ -1,0 +1,50 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i shiny-server_1.5.20.1002-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r shiny-server"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libnode108" {>= "18.13.0+dfsg1"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-mocha"
+  "deb-node-bash"
+  "deb-node-client-sessions"
+  "deb-node-compression"
+  "deb-node-express"
+  "deb-node-faye-websocket"
+  "deb-node-graceful-fs"
+  "deb-node-handlebars"
+  "deb-node-http-proxy"
+  "deb-node-ip-address"
+  "deb-node-log4js"
+  "deb-node-moment"
+  "deb-node-morgan"
+  "deb-node-nan"
+  "deb-node-optimist"
+  "deb-node-pause"
+  "deb-node-q"
+  "deb-node-qs"
+  "deb-node-send" {>= "0.18.0+~cs1.19.1-1~"}
+  "deb-node-shiny-server-client"
+  "deb-node-should"
+  "deb-node-sinon"
+  "deb-node-sockjs" {>= "0.3.24+~0.3.33-6~"}
+  "deb-node-sockjs-client"
+  "deb-node-split"
+  "deb-node-stable"
+  "deb-node-underscore"
+  "deb-nodejs"
+  "deb-npm"
+  "deb-pandoc"
+  "deb-python3"
+  "deb-r-base"
+  "deb-r-cran-shiny"
+]
+extra-source "shiny-server_1.5.20.1002-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-shiny-server/shiny-server_1.5.20.1002-1_amd64.deb"
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i liblinphone-dev_4.4.21-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r liblinphone-dev"]
+]
+depends: [
+  "deb-libbelcard-dev" {>= "4.4.0~"}
+  "deb-libbellesip-dev" {>= "4.4.0~"}
+  "deb-libbelr-dev" {>= "4.4.0~"}
+  "deb-liblinphone++10" {= "4.4.21-2"}
+  "deb-liblinphone10" {= "4.4.21-2"}
+  "deb-libmediastreamer-dev" {>= "4.4.0~"}
+  "deb-libortp-dev" {>= "4.4.0~"}
+]
+extra-source "liblinphone-dev_4.4.21-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/linphone/liblinphone-dev_4.4.21-2_amd64.deb"
+}

@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xcrysden_1.6.2-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xcrysden"]
+]
+depends: [
+  "deb-bwidget"
+  "deb-gawk"
+  "deb-imagemagick"
+  "deb-libc6" {>= "2.29"}
+  "deb-libfftw3-double3" {>= "3.3.5"}
+  "deb-libgfortran5" {>= "10"}
+  "deb-libgl1"
+  "deb-libgl2ps1-4" {>= "1.4.2+dfsg1"}
+  "deb-libtcl8-6" {>= "8.6.0"}
+  "deb-libtk8-6" {>= "8.6.0"}
+  "deb-libtogl2"
+  "deb-libx11-6"
+  "deb-openbabel"
+  "deb-xcrysden-data"
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+extra-source "xcrysden_1.6.2-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xcrysden/xcrysden_1.6.2-4_amd64.deb"
+}

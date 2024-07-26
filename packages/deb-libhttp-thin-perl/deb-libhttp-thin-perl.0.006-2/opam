@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libhttp-thin-perl_0.006-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libhttp-thin-perl"]
+]
+depends: [
+  "deb-libclass-method-modifiers-perl"
+  "deb-libhash-multivalue-perl"
+  "deb-libhttp-message-perl"
+  "deb-libsafe-isa-perl"
+  "deb-perl"
+  "deb-perl-any"
+]
+extra-source "libhttp-thin-perl_0.006-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libh/libhttp-thin-perl/libhttp-thin-perl_0.006-2_all.deb"
+}

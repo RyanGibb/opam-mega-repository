@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dkopp_6.5-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dkopp"]
+]
+depends: [
+  "deb-dvd+rw-tools"
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.14.0"}
+  "deb-libgtk-3-0" {>= "3.3.16"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-udev"
+]
+extra-source "dkopp_6.5-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dkopp/dkopp_6.5-2_amd64.deb"
+}

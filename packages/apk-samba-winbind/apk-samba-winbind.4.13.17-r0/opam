@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add samba-winbind-4.13.17-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del samba-winbind"]
+]
+depends: [
+  "apk-gnutls" {= "3.7.1-r1"}
+  "apk-libldap" {= "2.4.57-r1"}
+  "apk-musl" {= "1.2.2-r2"}
+  "apk-popt" {= "1.18-r0"}
+  "apk-samba-common" {= "4.13.17-r0"}
+  "apk-samba-common-server-libs" {= "4.13.17-r0"}
+  "apk-samba-libs" {= "4.13.17-r0"}
+  "apk-samba-server-libs" {= "4.13.17-r0"}
+  "apk-samba-util-libs" {= "4.13.17-r0"}
+  "apk-talloc" {= "2.3.1-r0"}
+  "apk-tdb-libs" {= "1.4.3-r0"}
+  "apk-tevent" {= "0.10.2-r0"}
+]
+extra-source "samba-winbind-4.13.17-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/samba-winbind-4.13.17-r0.apk"
+}

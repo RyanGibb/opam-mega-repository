@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-cylc_8.0~a2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-cylc"]
+]
+depends: [
+  "deb-fonts-font-awesome"
+  "deb-libjs-bootstrap"
+  "deb-libjs-jquery"
+  "deb-libjs-moment"
+  "deb-libjs-prettify"
+  "deb-python3"
+  "deb-python3-ansimarkup"
+  "deb-python3-any"
+  "deb-python3-click"
+  "deb-python3-colorama"
+  "deb-python3-isodatetime"
+  "deb-python3-jinja2"
+  "deb-python3-josepy"
+  "deb-python3-protobuf"
+  "deb-python3-psutil"
+  "deb-python3-urwid"
+  "deb-python3-zmq"
+]
+extra-source "python3-cylc_8.0~a2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cylc/python3-cylc_8.0~a2-1_all.deb"
+}

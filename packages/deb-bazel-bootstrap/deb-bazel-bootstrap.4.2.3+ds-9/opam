@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i bazel-bootstrap_4.2.3+ds-9_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r bazel-bootstrap"]
+]
+depends: [
+  "deb-bazel-bootstrap-data" {= "4.2.3+ds-9"}
+  "deb-build-essential"
+  "deb-default-jdk-headless"
+  "deb-libabsl20220623" {>= "0~20220623.0-1"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libchecker-framework-java"
+  "deb-libdiffutils-java"
+  "deb-liberror-prone-java"
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgeronimo-annotation-1-3-spec-java"
+  "deb-libgoogle-api-client-java"
+  "deb-libgoogle-auth-java"
+  "deb-libgoogle-auto-common-java"
+  "deb-libgoogle-auto-service-java"
+  "deb-libgoogle-auto-value-java"
+  "deb-libgoogle-flogger-java"
+  "deb-libgrpc++1-51" {>= "1.51.1"}
+  "deb-libgrpc-java"
+  "deb-libgrpc29" {>= "1.51.1"}
+  "deb-libopencensus-java"
+  "deb-libprotobuf32" {>= "3.21.12"}
+  "deb-libprotoc32" {>= "3.21.12"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-protobuf-compiler-grpc-java-plugin" {>= "1.26.0~"}
+  "deb-python3"
+  "deb-unzip"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  "deb-zlib1g-dev"
+]
+extra-source "bazel-bootstrap_4.2.3+ds-9_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/bazel-bootstrap/bazel-bootstrap_4.2.3+ds-9_amd64.deb"
+}

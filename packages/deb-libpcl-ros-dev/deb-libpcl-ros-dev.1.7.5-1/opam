@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpcl-ros-dev_1.7.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpcl-ros-dev"]
+]
+depends: [
+  "deb-libdynamic-reconfigure-config-init-mutex-dev"
+  "deb-libgeometry-msgs-dev"
+  "deb-libmessage-filters-dev"
+  "deb-libnodelet-topic-tools-dev"
+  "deb-libnodeletlib-dev"
+  "deb-libpcl-conversions-dev"
+  "deb-libpcl-ros-features0d" {= "1.7.5-1"}
+  "deb-libpcl-ros-filter1d" {= "1.7.5-1"}
+  "deb-libpcl-ros-filters0d" {= "1.7.5-1"}
+  "deb-libpcl-ros-io0d" {= "1.7.5-1"}
+  "deb-libpcl-ros-segmentation0d" {= "1.7.5-1"}
+  "deb-libpcl-ros-surface0d" {= "1.7.5-1"}
+  "deb-libpcl-ros-tf1d" {= "1.7.5-1"}
+  "deb-librosbag-dev"
+  "deb-libtf-dev"
+  "deb-libtf2-eigen-dev"
+]
+extra-source "libpcl-ros-dev_1.7.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ros-perception-pcl/libpcl-ros-dev_1.7.5-1_amd64.deb"
+}

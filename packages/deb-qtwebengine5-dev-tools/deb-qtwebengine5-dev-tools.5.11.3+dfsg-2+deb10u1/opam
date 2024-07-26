@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qtwebengine5-dev-tools_5.11.3+dfsg-2+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qtwebengine5-dev-tools"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libevent-2-1-6" {>= "2.1.8-stable"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libicu63" {>= "63.1-1~"}
+  "deb-libqt5core5a" {>= "5.11.3+dfsg~"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-qtchooser"
+]
+extra-source "qtwebengine5-dev-tools_5.11.3+dfsg-2+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qtwebengine-opensource-src/qtwebengine5-dev-tools_5.11.3+dfsg-2+deb10u1_amd64.deb"
+}

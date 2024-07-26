@@ -1,0 +1,41 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i squid-openssl_4.13-10+deb11u3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r squid-openssl"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libcap2" {>= "1-2.10"}
+  "deb-libcom-err2" {>= "1.43.9"}
+  "deb-libcrypt1" {>= "1-4.1.0"}
+  "deb-libdb5-3"
+  "deb-libdbi-perl"
+  "deb-libecap3" {>= "1.0.1"}
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgssapi-krb5-2" {>= "1.17"}
+  "deb-libkrb5-3" {>= "1.10+dfsg~"}
+  "deb-libldap-2-4-2" {>= "2.4.7"}
+  "deb-libltdl7" {>= "2.4.6"}
+  "deb-libnetfilter-conntrack3" {>= "1.0.1"}
+  "deb-libnettle8"
+  "deb-libnsl2" {>= "1.0"}
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-libsasl2-2" {>= "2.1.27+dfsg"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libsystemd0"
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-logrotate" {>= "3.5.4-1"}
+  "deb-lsb-base"
+  "deb-netbase"
+  "deb-squid-common" {>= "4.13-10+deb11u3"}
+]
+conflicts: [
+  "deb-squid"
+]
+extra-source "squid-openssl_4.13-10+deb11u3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/squid/squid-openssl_4.13-10+deb11u3_amd64.deb"
+}

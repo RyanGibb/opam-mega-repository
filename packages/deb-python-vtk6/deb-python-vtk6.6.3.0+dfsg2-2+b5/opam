@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-vtk6_6.3.0+dfsg2-2+b5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-vtk6"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libopenmpi3"
+  "deb-libpython2-7" {>= "2.7"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtcl8-6" {>= "8.6.0"}
+  "deb-libtk8-6" {>= "8.6.0"}
+  "deb-libvtk6-3" {= "6.3.0+dfsg2-2+b5"}
+  "deb-libvtk6-3-qt" {= "6.3.0+dfsg2-2+b5"}
+  "deb-libx11-6"
+  "deb-python" {< "2.8"}
+  "deb-python" {>= "2.7~"}
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7~"}
+  "deb-python-autobahn"
+  "deb-python-mpi4py"
+  "deb-python-six"
+  "deb-python-twisted"
+  "deb-python-zope-interface"
+]
+conflicts: [
+  "deb-python-vtk"
+]
+extra-source "python-vtk6_6.3.0+dfsg2-2+b5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/vtk6/python-vtk6_6.3.0+dfsg2-2+b5_amd64.deb"
+}

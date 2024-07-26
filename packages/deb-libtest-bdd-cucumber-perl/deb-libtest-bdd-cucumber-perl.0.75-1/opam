@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libtest-bdd-cucumber-perl_0.75-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libtest-bdd-cucumber-perl"]
+]
+depends: [
+  "deb-libclone-perl"
+  "deb-libfile-find-rule-perl"
+  "deb-libjson-maybexs-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-libmodule-runtime-perl"
+  "deb-libmoo-perl" {>= "2.002002"}
+  "deb-libmoox-handlesvia-perl"
+  "deb-libnumber-range-perl"
+  "deb-libpath-class-perl"
+  "deb-libscalar-list-utils-perl"
+  "deb-libtest-harness-perl"
+  "deb-libtest2-suite-perl"
+  "deb-libtype-tiny-perl"
+  "deb-libyaml-syck-perl"
+  "deb-perl"
+  "deb-perl-any"
+]
+extra-source "libtest-bdd-cucumber-perl_0.75-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libt/libtest-bdd-cucumber-perl/libtest-bdd-cucumber-perl_0.75-1_all.deb"
+}

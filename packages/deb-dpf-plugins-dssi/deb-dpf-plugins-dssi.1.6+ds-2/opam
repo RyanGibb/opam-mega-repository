@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dpf-plugins-dssi_1.6+ds-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dpf-plugins-dssi"]
+]
+depends: [
+  "deb-dpf-plugins-common"
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.3.1"}
+  "deb-libgl1"
+  "deb-liblo7" {>= "0.26~repack"}
+  "deb-libstdc++6" {>= "4.6"}
+  "deb-libx11-6"
+  "deb-libxcursor1" {> "1.1.2"}
+  "deb-libxext6"
+  "deb-libxrandr2" {>= "4.3"}
+]
+extra-source "dpf-plugins-dssi_1.6+ds-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dpf-plugins/dpf-plugins-dssi_1.6+ds-2_amd64.deb"
+}

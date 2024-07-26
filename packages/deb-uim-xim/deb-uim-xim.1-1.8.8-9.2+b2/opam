@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i uim-xim_1:1.8.8-9.2+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r uim-xim"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libuim-scm0" {>= "1-1.5.7"}
+  "deb-libuim8" {>= "1-1.8.0~alpha"}
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxft2" {> "2.1.1"}
+  "deb-uim" {>= "1-1.8.8-9.2"}
+  "deb-uim-data" {>= "1-1.8.8-9.2"}
+]
+extra-source "uim-xim_1:1.8.8-9.2+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/u/uim/uim-xim_1.8.8-9.2+b2_amd64.deb"
+}

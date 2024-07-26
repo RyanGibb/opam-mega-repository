@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-tree-sitter-loader-dev_0.20.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-tree-sitter-loader-dev"]
+]
+depends: [
+  "deb-librust-anyhow-1+default-dev"
+  "deb-librust-cc-dev"
+  "deb-librust-libloading-0-7+default-dev"
+  "deb-librust-once-cell-dev"
+  "deb-librust-regex-1+default-dev"
+  "deb-librust-serde+serde-derive-dev"
+  "deb-librust-serde-dev"
+  "deb-librust-serde-json-1+default-dev"
+  "deb-librust-serde-json-1+preserve-order-dev"
+  "deb-librust-tree-sitter-0-20+default-dev"
+  "deb-librust-tree-sitter-highlight-0-20+default-dev"
+  "deb-librust-tree-sitter-tags-0-20+default-dev"
+  ("deb-librust-dirs-4+default-dev" | "deb- librust-dirs-3+default-dev")
+]
+extra-source "librust-tree-sitter-loader-dev_0.20.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-tree-sitter-loader/librust-tree-sitter-loader-dev_0.20.0-2_amd64.deb"
+}

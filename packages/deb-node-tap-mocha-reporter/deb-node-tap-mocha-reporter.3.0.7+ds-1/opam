@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-tap-mocha-reporter_3.0.7+ds-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-tap-mocha-reporter"]
+]
+depends: [
+  "deb-node-debug" {>= "2.1.3"}
+  "deb-node-diff" {>= "1.3.2"}
+  "deb-node-escape-string-regexp" {>= "1.0.3"}
+  "deb-node-glob" {>= "7.0.5"}
+  "deb-node-js-yaml" {>= "3.3.1"}
+  "deb-node-strip-ansi" {>= "3"}
+  "deb-node-supports-color" {>= "3"}
+  "deb-node-tap-parser" {>= "3"}
+  "deb-nodejs"
+]
+extra-source "node-tap-mocha-reporter_3.0.7+ds-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-tap-mocha-reporter/node-tap-mocha-reporter_3.0.7+ds-1_all.deb"
+}

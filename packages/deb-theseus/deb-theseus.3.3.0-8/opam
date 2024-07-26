@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i theseus_3.3.0-8_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r theseus"]
+]
+depends: [
+  "deb-clustalo"
+  "deb-libc6" {>= "2.22"}
+  "deb-libgsl23" {>= "2.5"}
+  "deb-libgslcblas0" {>= "2.4"}
+  "deb-muscle"
+]
+extra-source "theseus_3.3.0-8_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/theseus/theseus_3.3.0-8_amd64.deb"
+}

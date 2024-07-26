@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libbondcpp-dev_1.8.6-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libbondcpp-dev"]
+]
+depends: [
+  "deb-libbond-dev"
+  "deb-libbondcpp1d" {= "1.8.6-3"}
+  "deb-libroscpp-dev"
+  "deb-libsmc-dev"
+  "deb-ros-cmake-modules"
+  "deb-uuid-dev"
+]
+extra-source "libbondcpp-dev_1.8.6-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ros-bond-core/libbondcpp-dev_1.8.6-3_amd64.deb"
+}

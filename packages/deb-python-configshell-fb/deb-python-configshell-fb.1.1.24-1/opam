@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-configshell-fb_1.1.24-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-configshell-fb"]
+]
+depends: [
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7~"}
+  "deb-python-pyparsing"
+  "deb-python-six"
+  "deb-python-urwid"
+]
+conflicts: [
+  "deb-python-configshell"
+]
+extra-source "python-configshell-fb_1.1.24-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-configshell-fb/python-configshell-fb_1.1.24-1_all.deb"
+}

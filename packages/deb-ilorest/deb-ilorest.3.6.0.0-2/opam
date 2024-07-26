@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ilorest_3.6.0.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ilorest"]
+]
+depends: [
+  "deb-libjs-sphinxdoc" {>= "5.2"}
+  "deb-python3-any"
+  "deb-python3-certifi" {>= "2020.6.20"}
+  "deb-python3-colorama" {>= "0.3.9"}
+  "deb-python3-decorator"
+  "deb-python3-ilorest" {>= "3.6.0.0"}
+  "deb-python3-json-pointer"
+  "deb-python3-jsondiff" {>= "1.2.0"}
+  "deb-python3-jsonpatch" {>= "1.28"}
+  "deb-python3-jsonpath-rw"
+  "deb-python3-pbr"
+  "deb-python3-ply"
+  "deb-python3-prompt-toolkit" {>= "2.0.8"}
+  "deb-python3-pyaes"
+  "deb-python3-pyudev"
+  "deb-python3-setproctitle"
+  "deb-python3-setuptools"
+  "deb-python3-six" {>= "1.15.0"}
+  "deb-python3-tabulate"
+  "deb-python3-urllib3"
+  "deb-python3-wcwidth" {>= "0.2.5"}
+]
+extra-source "ilorest_3.6.0.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/ilorest/ilorest_3.6.0.0-2_all.deb"
+}

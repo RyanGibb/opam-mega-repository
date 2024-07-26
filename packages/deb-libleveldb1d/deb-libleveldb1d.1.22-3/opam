@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libleveldb1d_1.22-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libleveldb1d"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libsnappy1v5"
+  "deb-libstdc++6" {>= "6"}
+]
+conflicts: [
+  "deb-libleveldb1"
+]
+extra-source "libleveldb1d_1.22-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/leveldb/libleveldb1d_1.22-3_amd64.deb"
+}

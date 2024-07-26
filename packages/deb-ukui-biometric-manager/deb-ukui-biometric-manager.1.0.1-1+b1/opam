@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ukui-biometric-manager_1.0.1-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ukui-biometric-manager"]
+]
+depends: [
+  "deb-biometric-auth"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libpam-biometric"
+  "deb-libqt5core5a" {>= "5.12.2"}
+  "deb-libqt5dbus5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.2.0~alpha1"}
+  "deb-libstdc++6" {>= "5"}
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+]
+conflicts: [
+  "deb-kylin-fingerprint"
+  "deb-kylin-fprint-login"
+]
+extra-source "ukui-biometric-manager_1.0.1-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/u/ukui-biometric-manager/ukui-biometric-manager_1.0.1-1+b1_amd64.deb"
+}

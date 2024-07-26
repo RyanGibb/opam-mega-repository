@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-rubenv-sql-migrate-dev_0.0~git20191213.0633851-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-rubenv-sql-migrate-dev"]
+]
+depends: [
+  "deb-golang-github-denisenkom-go-mssqldb-dev"
+  "deb-golang-github-go-sql-driver-mysql-dev"
+  "deb-golang-github-lib-pq-dev"
+  "deb-golang-github-mattn-go-sqlite3-dev"
+  "deb-golang-github-mitchellh-cli-dev"
+  "deb-golang-github-olekukonko-tablewriter-dev"
+  "deb-golang-gopkg-check-v1-dev"
+  "deb-golang-gopkg-gorp-v1-dev"
+  "deb-golang-gopkg-yaml-v2-dev"
+]
+extra-source "golang-github-rubenv-sql-migrate-dev_0.0~git20191213.0633851-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-rubenv-sql-migrate/golang-github-rubenv-sql-migrate-dev_0.0~git20191213.0633851-3_all.deb"
+}

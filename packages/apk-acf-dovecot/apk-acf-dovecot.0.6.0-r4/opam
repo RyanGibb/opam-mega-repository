@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add acf-dovecot-0.6.0-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del acf-dovecot"]
+]
+depends: [
+  "apk-acf-core" {= "0.24.0-r0"}
+  "apk-dovecot" {= "2.3.21-r17"}
+]
+extra-source "acf-dovecot-0.6.0-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/acf-dovecot-0.6.0-r4.apk"
+}

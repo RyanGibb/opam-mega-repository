@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i debian-edu-install_2.11.13_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r debian-edu-install"]
+]
+depends: [
+  "deb-debian-edu-config"
+  "deb-eatmydata"
+  "deb-etckeeper"
+  "deb-libgtk3-perl"
+  "deb-lsb-base"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "debian-edu-install_2.11.13_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/debian-edu-install/debian-edu-install_2.11.13_all.deb"
+}

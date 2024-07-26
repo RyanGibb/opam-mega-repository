@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgs-dev_9.27~dfsg-2+deb10u5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgs-dev"]
+]
+depends: [
+  "deb-libcups2-dev"
+  "deb-libcupsimage2-dev"
+  "deb-libexpat1-dev"
+  "deb-libfontconfig1-dev"
+  "deb-libfreetype6-dev"
+  "deb-libgs9" {= "9.27~dfsg-2+deb10u5"}
+  "deb-libidn11-dev"
+  "deb-libijs-dev"
+  "deb-libjbig2dec0-dev"
+  "deb-libjpeg-dev"
+  "deb-liblcms2-dev"
+  "deb-libopenjp2-7-dev"
+  "deb-libpaper-dev"
+  "deb-libpng-dev"
+  "deb-libtiff5-dev"
+  "deb-zlib1g-dev"
+]
+extra-source "libgs-dev_9.27~dfsg-2+deb10u5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/ghostscript/libgs-dev_9.27~dfsg-2+deb10u5_amd64.deb"
+}

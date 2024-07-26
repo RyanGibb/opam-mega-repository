@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add asterisk-18.20.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del asterisk"]
+]
+depends: [
+  "apk-c-client" {= "2007f-r15"}
+  "apk-jansson" {= "2.14-r3"}
+  "apk-libcap2" {= "2.69-r0"}
+  "apk-libcrypto3" {= "3.1.6-r0"}
+  "apk-libcurl" {= "8.9.0-r0"}
+  "apk-libedit" {= "20221030.3.1-r1"}
+  "apk-libssl3" {= "3.1.6-r0"}
+  "apk-libuuid" {= "2.38.1-r8"}
+  "apk-libxml2" {= "2.11.8-r0"}
+  "apk-lua5-1-libs" {= "5.1.5-r12"}
+  "apk-musl" {= "1.2.4-r2"}
+  "apk-pjproject" {= "2.14-r0"}
+  "apk-portaudio" {= "19.7.0-r1"}
+  "apk-sqlite-libs" {= "3.41.2-r3"}
+  "apk-unbound-libs" {= "1.20.0-r0"}
+  "apk-zlib" {= "1.2.13-r1"}
+  ("apk-busybox-binsh" {= "1.36.1-r7"} | "apk-dash-binsh" {= "0.5.12-r2"} | "apk-yash-binsh" {= "2.54-r3"})
+]
+extra-source "asterisk-18.20.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/asterisk-18.20.2-r0.apk"
+}

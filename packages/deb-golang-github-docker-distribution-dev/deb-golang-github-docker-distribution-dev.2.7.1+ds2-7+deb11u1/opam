@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-docker-distribution-dev_2.7.1+ds2-7+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-docker-distribution-dev"]
+]
+depends: [
+  "deb-golang-github-aws-aws-sdk-go-dev"
+  "deb-golang-github-bugsnag-bugsnag-go-dev"
+  "deb-golang-github-docker-go-metrics-dev"
+  "deb-golang-github-docker-libtrust-dev"
+  "deb-golang-github-garyburd-redigo-dev"
+  "deb-golang-github-gorilla-handlers-dev"
+  "deb-golang-github-gorilla-mux-dev"
+  "deb-golang-github-mitchellh-mapstructure-dev"
+  "deb-golang-github-ncw-swift-dev"
+  "deb-golang-github-opencontainers-go-digest-dev"
+  "deb-golang-github-opencontainers-image-spec-dev"
+  "deb-golang-github-sirupsen-logrus-dev" {>= "1.0.2~"}
+  "deb-golang-github-spf13-cobra-dev"
+  "deb-golang-golang-x-crypto-dev"
+  "deb-golang-golang-x-net-dev"
+  "deb-golang-gopkg-check-v1-dev"
+  "deb-golang-gopkg-yaml-v2-dev"
+]
+extra-source "golang-github-docker-distribution-dev_2.7.1+ds2-7+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/docker-registry/golang-github-docker-distribution-dev_2.7.1+ds2-7+deb11u1_all.deb"
+}

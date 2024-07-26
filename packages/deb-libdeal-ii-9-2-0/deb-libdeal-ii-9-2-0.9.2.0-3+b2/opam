@@ -1,0 +1,48 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdeal.ii-9.2.0_9.2.0-3+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdeal.ii-9.2.0"]
+]
+depends: [
+  "deb-libassimp5" {>= "5.0.1~ds0"}
+  "deb-libboost-iostreams1-74-0" {>= "1.74.0"}
+  "deb-libboost-serialization1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libgsl25" {>= "2.6"}
+  "deb-libhdf5-openmpi-103-1" {>= "1.8.14"}
+  "deb-libmetis5" {>= "5.1.0.dfsg"}
+  "deb-libmuparser2v5" {>= "2.2.6.1+dfsg"}
+  "deb-libnetcdf-c++4" {>= "4.2"}
+  "deb-libocct-data-exchange-7-5"
+  "deb-libocct-foundation-7-5"
+  "deb-libocct-modeling-algorithms-7-5"
+  "deb-libocct-modeling-data-7-5"
+  "deb-libopenmpi3" {>= "4.1.0"}
+  "deb-libp4est-2-2" {>= "2.2"}
+  "deb-libp4est-sc-2-2" {>= "2.2"}
+  "deb-libpetsc-real3-14" {>= "3.14.2+dfsg1"}
+  "deb-libscalapack-openmpi2-1" {>= "2.1.0"}
+  "deb-libslepc-real3-14" {>= "3.14.1+dfsg1"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libtbb2" {>= "2017~U7"}
+  "deb-libtrilinos-amesos12" {>= "12.18.1"}
+  "deb-libtrilinos-aztecoo12" {>= "12.18.1"}
+  "deb-libtrilinos-epetra12" {>= "12.18.1"}
+  "deb-libtrilinos-epetraext12" {>= "12.18.1"}
+  "deb-libtrilinos-ifpack12" {>= "12.18.1"}
+  "deb-libtrilinos-kokkos12" {>= "12.18.1"}
+  "deb-libtrilinos-ml12" {>= "12.18.1"}
+  "deb-libtrilinos-muelu12" {>= "12.18.1"}
+  "deb-libtrilinos-teuchos12" {>= "12.18.1"}
+  "deb-libtrilinos-zoltan12" {>= "12.18.1"}
+  "deb-libumfpack5" {>= "1-4.5.2"}
+  "deb-zlib1g" {>= "1-1.2.0"}
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "libdeal.ii-9.2.0_9.2.0-3+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/deal.ii/libdeal.ii-9.2.0_9.2.0-3+b2_amd64.deb"
+}

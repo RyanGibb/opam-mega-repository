@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkf5incidenceeditor-bin_18.08.3-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkf5incidenceeditor-bin"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libkf5akonadicalendar5abi1" {>= "4-17.12.2"}
+  "deb-libkf5akonadicore5abi2" {>= "4-18.08.3~"}
+  "deb-libkf5calendarcore5abi2" {>= "4-18.07.90"}
+  "deb-libkf5calendarsupport5abi1" {>= "4-17.12.2"}
+  "deb-libkf5incidenceeditor5abi1" {>= "17.12.2"}
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5widgets5" {>= "5.9.0~"}
+  "deb-libstdc++6" {>= "4.2.1"}
+]
+extra-source "libkf5incidenceeditor-bin_18.08.3-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libk/libkf5incidenceeditor/libkf5incidenceeditor-bin_18.08.3-3_amd64.deb"
+}

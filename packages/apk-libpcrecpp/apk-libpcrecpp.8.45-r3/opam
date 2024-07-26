@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libpcrecpp-8.45-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libpcrecpp"]
+]
+depends: [
+  "apk-libgcc" {= "13.2.1_git20240309-r0"}
+  "apk-libstdc++" {= "13.2.1_git20240309-r0"}
+  "apk-musl" {= "1.2.5-r0"}
+  "apk-pcre" {= "8.45-r3"}
+]
+extra-source "libpcrecpp-8.45-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libpcrecpp-8.45-r3.apk"
+}

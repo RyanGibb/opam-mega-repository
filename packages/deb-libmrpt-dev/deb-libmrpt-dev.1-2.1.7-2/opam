@@ -1,0 +1,48 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmrpt-dev_1:2.1.7-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmrpt-dev"]
+]
+depends: [
+  "deb-libmrpt-apps-dev" {>= "1-2.1.7-2"}
+  "deb-libmrpt-bayes-dev" {>= "1-2.1.7-2"}
+  "deb-libmrpt-comms-dev" {>= "1-2.1.7-2"}
+  "deb-libmrpt-config-dev" {>= "1-2.1.7-2"}
+  "deb-libmrpt-containers-dev" {>= "1-2.1.7-2"}
+  "deb-libmrpt-core-dev" {>= "1-2.1.7-2"}
+  "deb-libmrpt-detectors-dev" {>= "1-2.1.7-2"}
+  "deb-libmrpt-expr-dev" {>= "1-2.1.7-2"}
+  "deb-libmrpt-graphs-dev" {>= "1-2.1.7-2"}
+  "deb-libmrpt-graphslam-dev" {>= "1-2.1.7-2"}
+  "deb-libmrpt-gui-dev" {>= "1-2.1.7-2"}
+  "deb-libmrpt-hmtslam-dev" {>= "1-2.1.7-2"}
+  "deb-libmrpt-hwdrivers-dev" {>= "1-2.1.7-2"}
+  "deb-libmrpt-img-dev" {>= "1-2.1.7-2"}
+  "deb-libmrpt-io-dev" {>= "1-2.1.7-2"}
+  "deb-libmrpt-kinematics-dev" {>= "1-2.1.7-2"}
+  "deb-libmrpt-maps-dev" {>= "1-2.1.7-2"}
+  "deb-libmrpt-math-dev" {>= "1-2.1.7-2"}
+  "deb-libmrpt-nanoflann-dev" {>= "1-2.1.7-2"}
+  "deb-libmrpt-nanogui-dev" {>= "1-2.1.7-2"}
+  "deb-libmrpt-nav-dev" {>= "1-2.1.7-2"}
+  "deb-libmrpt-obs-dev" {>= "1-2.1.7-2"}
+  "deb-libmrpt-opengl-dev" {>= "1-2.1.7-2"}
+  "deb-libmrpt-poses-dev" {>= "1-2.1.7-2"}
+  "deb-libmrpt-random-dev" {>= "1-2.1.7-2"}
+  "deb-libmrpt-ros1bridge-dev" {>= "1-2.1.7-2"}
+  "deb-libmrpt-rtti-dev" {>= "1-2.1.7-2"}
+  "deb-libmrpt-serialization-dev" {>= "1-2.1.7-2"}
+  "deb-libmrpt-slam-dev" {>= "1-2.1.7-2"}
+  "deb-libmrpt-system-dev" {>= "1-2.1.7-2"}
+  "deb-libmrpt-tclap-dev" {>= "1-2.1.7-2"}
+  "deb-libmrpt-tfest-dev" {>= "1-2.1.7-2"}
+  "deb-libmrpt-topography-dev" {>= "1-2.1.7-2"}
+  "deb-libmrpt-typemeta-dev" {>= "1-2.1.7-2"}
+  "deb-libmrpt-vision-dev" {>= "1-2.1.7-2"}
+  "deb-libmrpt-vision-lgpl-dev" {>= "1-2.1.7-2"}
+]
+extra-source "libmrpt-dev_1:2.1.7-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mrpt/libmrpt-dev_2.1.7-2_all.deb"
+}

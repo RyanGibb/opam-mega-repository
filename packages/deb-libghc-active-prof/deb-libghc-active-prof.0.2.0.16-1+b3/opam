@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-active-prof_0.2.0.16-1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-active-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-active-dev" {= "0.2.0.16-1+b3"}
+  "deb-libghc-lens-prof"
+  "deb-libghc-linear-prof"
+  "deb-libghc-semigroupoids-prof"
+  "deb-libghc-semigroups-prof"
+  "deb-libghc-vector-prof"
+]
+extra-source "libghc-active-prof_0.2.0.16-1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-active/libghc-active-prof_0.2.0.16-1+b3_amd64.deb"
+}

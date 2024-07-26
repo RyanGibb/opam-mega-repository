@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-click-package_0.5.0-9_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-click-package"]
+]
+depends: [
+  "deb-gir1-2-click-0-4" {= "0.5.0-9"}
+  "deb-gir1-2-glib-2-0"
+  "deb-python3-any"
+  "deb-python3-apt"
+  "deb-python3-debian"
+  "deb-python3-gi"
+]
+extra-source "python3-click-package_0.5.0-9_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/click/python3-click-package_0.5.0-9_amd64.deb"
+}

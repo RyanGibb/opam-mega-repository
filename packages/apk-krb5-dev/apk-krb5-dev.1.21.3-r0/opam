@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add krb5-dev-1.21.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del krb5-dev"]
+]
+depends: [
+  "apk-e2fsprogs-dev" {= "1.47.0-r5"}
+  "apk-krb5-libs" {= "1.21.3-r0"}
+  "apk-krb5-server-ldap" {= "1.21.3-r0"}
+  "apk-libverto-dev" {= "0.3.2-r2"}
+  "apk-pkgconf" {= "2.2.0-r0"}
+]
+extra-source "krb5-dev-1.21.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/krb5-dev-1.21.3-r0.apk"
+}

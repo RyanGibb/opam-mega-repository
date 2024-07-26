@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gettext-dev-0.21.1-r7.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gettext-dev"]
+]
+depends: [
+  "apk-gettext" {= "0.21.1-r7"}
+  "apk-gettext-asprintf" {= "0.21.1-r7"}
+  "apk-gettext-libs" {= "0.21.1-r7"}
+  "apk-libintl" {= "0.21.1-r7"}
+  "apk-xz" {= "5.4.3-r0"}
+]
+conflicts: [
+  "musl-libintl"
+]
+extra-source "gettext-dev-0.21.1-r7.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/gettext-dev-0.21.1-r7.apk"
+}

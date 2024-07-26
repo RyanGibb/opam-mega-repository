@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add llvm15-test-utils-15.0.7-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del llvm15-test-utils"]
+]
+depends: [
+  "apk-libgcc" {= "12.2.1_git20220924-r10"}
+  "apk-libstdc++" {= "12.2.1_git20220924-r10"}
+  "apk-musl" {= "1.2.4-r2"}
+  "apk-python3" {= "3.11.8-r0"}
+  "apk-python3" {>= "3.11"}
+]
+extra-source "llvm15-test-utils-15.0.7-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/llvm15-test-utils-15.0.7-r6.apk"
+}

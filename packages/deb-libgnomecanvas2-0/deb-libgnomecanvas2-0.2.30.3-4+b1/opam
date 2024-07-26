@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgnomecanvas2-0_2.30.3-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgnomecanvas2-0"]
+]
+depends: [
+  "deb-libart-2-0-2" {>= "2.3.19"}
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libgail-common"
+  "deb-libgail18" {>= "1.18.0"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglade2-0" {>= "1-2.6.4-2~"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libgnomecanvas2-common" {= "2.30.3-4"}
+  "deb-libgtk2-0-0" {>= "2.8.17"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangoft2-1-0-0" {>= "1.14.0"}
+]
+extra-source "libgnomecanvas2-0_2.30.3-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libg/libgnomecanvas/libgnomecanvas2-0_2.30.3-4+b1_amd64.deb"
+}

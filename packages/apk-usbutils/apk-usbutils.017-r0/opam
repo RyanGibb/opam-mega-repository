@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add usbutils-017-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del usbutils"]
+]
+depends: [
+  "apk-eudev-dev" {= "3.2.14-r1"}
+  "apk-eudev-libs" {= "3.2.14-r1"}
+  "apk-hwdata-usb" {= "0.377.2-r0"}
+  "apk-libusb" {= "1.0.26-r3"}
+  "apk-libusb-dev" {= "1.0.26-r3"}
+  "apk-musl" {= "1.2.4_git20230717-r4"}
+  "apk-pkgconf" {= "2.1.0-r0"}
+]
+extra-source "usbutils-017-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/usbutils-017-r0.apk"
+}

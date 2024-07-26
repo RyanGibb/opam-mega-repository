@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmail-spf-perl_2.9.0-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmail-spf-perl"]
+]
+depends: [
+  "deb-liberror-perl"
+  "deb-libnet-dns-perl"
+  "deb-libnetaddr-ip-perl"
+  "deb-liburi-perl"
+  "deb-perl-any"
+]
+extra-source "libmail-spf-perl_2.9.0-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mail-spf-perl/libmail-spf-perl_2.9.0-5_all.deb"
+}

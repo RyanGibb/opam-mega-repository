@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qpsmtpd_0.94-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qpsmtpd"]
+]
+depends: [
+  "deb-adduser" {>= "3.0"}
+  "deb-debconf" {>= "1.0.0"}
+  "deb-libclamav-client-perl"
+  "deb-libdigest-hmac-perl"
+  "deb-libio-socket-inet6-perl"
+  "deb-libipc-shareable-perl"
+  "deb-libmail-spf-perl" {>= "2.8.0"}
+  "deb-libmailtools-perl"
+  "deb-libnet-dns-perl"
+  "deb-libnet-perl"
+  "deb-libsocket6-perl"
+  "deb-lsb-base"
+  "deb-perl-any"
+]
+extra-source "qpsmtpd_0.94-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qpsmtpd/qpsmtpd_0.94-5_all.deb"
+}

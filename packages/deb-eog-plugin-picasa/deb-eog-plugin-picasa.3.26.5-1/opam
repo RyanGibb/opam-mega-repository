@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i eog-plugin-picasa_3.26.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r eog-plugin-picasa"]
+]
+depends: [
+  "deb-eog" {>= "3.20.3-1~"}
+  "deb-eog-plugins-common" {>= "3.26.5-1"}
+  "deb-libc6" {>= "2.4"}
+  "deb-libgdata22" {>= "0.15.0"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.41.1"}
+  "deb-libgtk-3-0" {>= "3.3.16"}
+  "deb-libpeas-1-0-0" {>= "1.0.0"}
+]
+extra-source "eog-plugin-picasa_3.26.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/eog-plugins/eog-plugin-picasa_3.26.5-1_amd64.deb"
+}

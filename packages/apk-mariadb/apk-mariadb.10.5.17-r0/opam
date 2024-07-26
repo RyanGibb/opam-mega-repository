@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mariadb-10.5.17-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mariadb"]
+]
+depends: [
+  "apk-busybox" {= "1.32.1-r9"}
+  "apk-libaio" {= "0.3.112-r1"}
+  "apk-libcrypto1-1" {= "1.1.1s-r0"}
+  "apk-libcurl" {= "7.79.1-r3"}
+  "apk-libgcc" {= "10.2.1_pre1-r3"}
+  "apk-libssl1-1" {= "1.1.1s-r0"}
+  "apk-libstdc++" {= "10.2.1_pre1-r3"}
+  "apk-libxml2" {= "2.9.14-r2"}
+  "apk-linux-pam" {= "1.5.1-r0"}
+  "apk-mariadb-common" {= "10.5.17-r0"}
+  "apk-musl" {= "1.2.2-r2"}
+  "apk-ncurses-libs" {= "6.2_p20210109-r1"}
+  "apk-pcre2" {= "10.36-r1"}
+  "apk-xz-libs" {= "5.2.5-r1"}
+  "apk-zlib" {= "1.2.12-r3"}
+]
+extra-source "mariadb-10.5.17-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/mariadb-10.5.17-r0.apk"
+}

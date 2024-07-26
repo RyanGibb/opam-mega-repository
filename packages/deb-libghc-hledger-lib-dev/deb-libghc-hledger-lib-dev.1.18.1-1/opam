@@ -1,0 +1,44 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-hledger-lib-dev_1.18.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-hledger-lib-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-aeson-dev"
+  "deb-libghc-aeson-pretty-dev"
+  "deb-libghc-ansi-terminal-dev"
+  "deb-libghc-base-compat-batteries-dev"
+  "deb-libghc-blaze-markup-dev"
+  "deb-libghc-call-stack-dev"
+  "deb-libghc-cassava-dev"
+  "deb-libghc-cassava-megaparsec-dev"
+  "deb-libghc-cmdargs-dev"
+  "deb-libghc-data-default-dev"
+  "deb-libghc-decimal-dev"
+  "deb-libghc-extra-dev"
+  "deb-libghc-fgl-dev"
+  "deb-libghc-file-embed-dev"
+  "deb-libghc-glob-dev"
+  "deb-libghc-hashtables-dev"
+  "deb-libghc-megaparsec-dev"
+  "deb-libghc-old-time-dev"
+  "deb-libghc-parser-combinators-dev"
+  "deb-libghc-pretty-show-dev"
+  "deb-libghc-regex-tdfa-dev"
+  "deb-libghc-safe-dev"
+  "deb-libghc-split-dev"
+  "deb-libghc-tabular-dev"
+  "deb-libghc-tasty-dev"
+  "deb-libghc-tasty-hunit-dev"
+  "deb-libghc-timeit-dev"
+  "deb-libghc-uglymemo-dev"
+  "deb-libghc-utf8-string-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-hledger-lib-dev_1.18.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-hledger-lib/libghc-hledger-lib-dev_1.18.1-1_amd64.deb"
+}

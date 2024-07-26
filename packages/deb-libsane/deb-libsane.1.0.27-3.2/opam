@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsane_1.0.27-3.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsane"]
+]
+depends: [
+  "deb-acl"
+  "deb-adduser"
+  "deb-libavahi-client3" {>= "0.6.16"}
+  "deb-libavahi-common3" {>= "0.6.16"}
+  "deb-libc6" {>= "2.15"}
+  "deb-libgphoto2-6" {>= "2.5.10"}
+  "deb-libgphoto2-port12" {>= "2.5.10"}
+  "deb-libieee1284-3"
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libsane-common" {= "1.0.27-3.2"}
+  "deb-libsnmp30" {>= "5.7.3+dfsg"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libtiff5" {>= "4.0.3"}
+  "deb-libusb-1-0-0" {>= "2-1.0.8"}
+  "deb-udev"
+]
+extra-source "libsane_1.0.27-3.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sane-backends/libsane_1.0.27-3.2_amd64.deb"
+}

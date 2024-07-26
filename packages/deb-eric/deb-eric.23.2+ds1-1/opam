@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i eric_23.2+ds1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r eric"]
+]
+depends: [
+  "deb-black"
+  "deb-libjs-jquery"
+  "deb-libjs-jquery-hotkeys"
+  "deb-libjs-jquery-isonscreen"
+  "deb-libjs-jquery-tablesorter"
+  "deb-libjs-jquery-ui"
+  "deb-python3-any"
+  "deb-python3-asttokens"
+  "deb-python3-chardet"
+  "deb-python3-coverage"
+  "deb-python3-distutils"
+  "deb-python3-editorconfig"
+  "deb-python3-isort"
+  "deb-python3-jedi"
+  "deb-python3-parso"
+  "deb-python3-pygments"
+  "deb-python3-pyqt6"
+  "deb-python3-pyqt6-qsci"
+  "deb-python3-pyqt6-qtcharts"
+  "deb-python3-pyqt6-qthelp"
+  "deb-python3-pyqt6-qtserialport"
+  "deb-python3-pyqt6-qtsvg"
+  "deb-python3-pyqt6-qtwebengine"
+  "deb-python3-send2trash"
+  "deb-python3-trove-classifiers"
+]
+extra-source "eric_23.2+ds1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/eric/eric_23.2+ds1-1_all.deb"
+}

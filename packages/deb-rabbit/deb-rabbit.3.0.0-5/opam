@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i rabbit_3.0.0-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r rabbit"]
+]
+depends: [
+  "deb-libjs-prototype"
+  "deb-ruby-any"
+  "deb-ruby-coderay"
+  "deb-ruby-faraday"
+  "deb-ruby-gettext"
+  "deb-ruby-gtk3"
+  "deb-ruby-hikidoc"
+  "deb-ruby-kramdown-parser-gfm"
+  "deb-ruby-nokogiri"
+  "deb-ruby-poppler"
+  "deb-ruby-rd"
+  "deb-ruby-rouge"
+  "deb-ruby-rsvg2"
+  "deb-ruby-rt"
+]
+extra-source "rabbit_3.0.0-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rabbit/rabbit_3.0.0-5_all.deb"
+}

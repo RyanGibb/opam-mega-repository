@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i jython_2.7.2+repack1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r jython"]
+]
+depends: [
+  "deb-antlr3-2"
+  "deb-libantlr-java"
+  "deb-libasm-java"
+  "deb-libcommons-compress-java"
+  "deb-libguava-java"
+  "deb-libicu4j-java"
+  "deb-libjaxb-api-java"
+  "deb-libjffi-java"
+  "deb-libjline2-java"
+  "deb-libjnr-constants-java"
+  "deb-libjnr-ffi-java"
+  "deb-libjnr-netdb-java"
+  "deb-libjnr-posix-java"
+  "deb-libnetty-java"
+  "deb-libservlet-api-java"
+  "deb-libstringtemplate-java"
+  ("deb-default-jre-headless" {>= "2-1.8"} | "deb- java8-runtime-headless")
+]
+extra-source "jython_2.7.2+repack1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/j/jython/jython_2.7.2+repack1-3_all.deb"
+}

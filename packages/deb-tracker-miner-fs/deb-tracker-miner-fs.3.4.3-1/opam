@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tracker-miner-fs_3.4.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tracker-miner-fs"]
+]
+depends: [
+  "deb-init-system-helpers" {>= "1.52"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libglib2-0-0" {>= "2.70.0"}
+  "deb-libtracker-sparql-3-0-0" {>= "3.4.0~"}
+  "deb-libupower-glib3" {>= "0.99.0"}
+  "deb-procps"
+  "deb-tracker" {>= "3.4.0~"}
+  "deb-tracker-extract" {= "3.4.3-1"}
+]
+extra-source "tracker-miner-fs_3.4.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tracker-miners/tracker-miner-fs_3.4.3-1_amd64.deb"
+}

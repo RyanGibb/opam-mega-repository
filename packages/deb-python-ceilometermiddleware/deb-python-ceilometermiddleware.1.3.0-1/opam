@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-ceilometermiddleware_1.3.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-ceilometermiddleware"]
+]
+depends: [
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7~"}
+  "deb-python-babel"
+  "deb-python-keystoneauth1" {>= "2.18.0"}
+  "deb-python-keystoneclient" {>= "3.8.0"}
+  "deb-python-oslo-config"
+  "deb-python-oslo-context" {>= "0.2.0"}
+  "deb-python-oslo-messaging" {>= "5.2.0"}
+  "deb-python-oslo-utils" {>= "3.33.0"}
+  "deb-python-pbr"
+  "deb-python-pycadf"
+  "deb-python-six" {>= "1.9.0"}
+]
+extra-source "python-ceilometermiddleware_1.3.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-ceilometermiddleware/python-ceilometermiddleware_1.3.0-1_all.deb"
+}

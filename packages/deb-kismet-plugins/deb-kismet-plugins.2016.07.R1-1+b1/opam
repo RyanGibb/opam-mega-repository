@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kismet-plugins_2016.07.R1-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kismet-plugins"]
+]
+depends: [
+  "deb-kismet" {= "2016.07.R1-1+b1"}
+  "deb-libbluetooth3" {>= "4.91"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcap2" {>= "1-2.10"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libpcre3"
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libstdc++6" {>= "5.2"}
+]
+extra-source "kismet-plugins_2016.07.R1-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kismet/kismet-plugins_2016.07.R1-1+b1_amd64.deb"
+}

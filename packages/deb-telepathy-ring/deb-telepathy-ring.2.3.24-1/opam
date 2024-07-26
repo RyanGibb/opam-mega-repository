@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i telepathy-ring_2.3.24-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r telepathy-ring"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libdbus-1-3" {>= "1.9.14"}
+  "deb-libdbus-glib-1-2" {>= "0.88"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libtelepathy-glib0" {>= "0.19.1"}
+  "deb-libuuid1" {>= "2.16"}
+  "deb-ofono" {>= "0.33"}
+]
+extra-source "telepathy-ring_2.3.24-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/telepathy-ring/telepathy-ring_2.3.24-1_amd64.deb"
+}

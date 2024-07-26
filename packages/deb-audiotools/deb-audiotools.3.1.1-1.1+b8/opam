@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i audiotools_3.1.1-1.1+b8_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r audiotools"]
+]
+depends: [
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcdio-cdda2" {>= "10.2+2.0.0"}
+  "deb-libcdio-paranoia2" {>= "10.2+2.0.0"}
+  "deb-libcdio19" {>= "2.1.0"}
+  "deb-libmp3lame0" {>= "3.100"}
+  "deb-libmpg123-0" {>= "1.13.7"}
+  "deb-libopus0" {>= "1.1"}
+  "deb-libopusfile0" {>= "0.5"}
+  "deb-libpulse0" {>= "0.99.1"}
+  "deb-libtwolame0" {>= "0.3.6"}
+  "deb-libvorbisenc2" {>= "1.1.2"}
+  "deb-libvorbisfile3" {>= "1.2.0"}
+  "deb-libwavpack1" {>= "4.40.0"}
+  "deb-python3" {< "3.10"}
+  "deb-python3" {>= "3.9~"}
+  "deb-python3-any"
+]
+extra-source "audiotools_3.1.1-1.1+b8_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/audiotools/audiotools_3.1.1-1.1+b8_amd64.deb"
+}

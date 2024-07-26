@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fcitx-frontend-gtk3_1:4.2.9.9-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fcitx-frontend-gtk3"]
+]
+depends: [
+  "deb-fcitx-module-dbus"
+  "deb-libc6" {>= "2.4"}
+  "deb-libfcitx-gclient1" {>= "1-4.2.9.5"}
+  "deb-libfcitx-utils0" {>= "4.2.7"}
+  "deb-libglib2-0-0" {>= "2.16.0"}
+  "deb-libgtk-3-0" {>= "3.9.10"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libxkbcommon0" {>= "0.5.0"}
+]
+extra-source "fcitx-frontend-gtk3_1:4.2.9.9-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fcitx/fcitx-frontend-gtk3_4.2.9.9-1_amd64.deb"
+}

@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-nipype_1.8.5-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-nipype"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-click"
+  "deb-python3-dateutil"
+  "deb-python3-dipy"
+  "deb-python3-etelemetry"
+  "deb-python3-filelock"
+  "deb-python3-funcsigs"
+  "deb-python3-future"
+  "deb-python3-networkx"
+  "deb-python3-nibabel"
+  "deb-python3-numpy"
+  "deb-python3-packaging"
+  "deb-python3-prov"
+  "deb-python3-psutil"
+  "deb-python3-rdflib"
+  "deb-python3-scipy"
+  "deb-python3-simplejson"
+  "deb-python3-traits"
+]
+extra-source "python3-nipype_1.8.5-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/nipype/python3-nipype_1.8.5-3_all.deb"
+}

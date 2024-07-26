@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-metap_1.8-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-metap"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.1.2-2"}
+  "deb-r-cran-lattice"
+  "deb-r-cran-mathjaxr" {>= "0.8-3"}
+  "deb-r-cran-mutoss"
+  "deb-r-cran-qqconf"
+  "deb-r-cran-rdpack" {>= "0.7"}
+  "deb-r-cran-tfisher"
+]
+extra-source "r-cran-metap_1.8-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-metap/r-cran-metap_1.8-1_all.deb"
+}

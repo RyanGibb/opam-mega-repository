@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add pax-utils-1.2.6-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del pax-utils"]
+]
+depends: [
+  "apk-libcap" {= "2.27-r0"}
+  "apk-musl" {= "1.1.24-r10"}
+  "apk-py3-elftools" {= "0.26-r0"}
+  "apk-python3" {= "3.8.10-r0"}
+  "apk-scanelf" {= "1.2.6-r0"}
+]
+extra-source "pax-utils-1.2.6-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/pax-utils-1.2.6-r0.apk"
+}

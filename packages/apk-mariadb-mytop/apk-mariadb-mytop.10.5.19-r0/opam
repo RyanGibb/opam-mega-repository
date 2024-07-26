@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mariadb-mytop-10.5.19-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mariadb-mytop"]
+]
+depends: [
+  "apk-perl" {= "5.32.1-r0"}
+  "apk-perl-dbd-mysql" {= "4.050-r3"}
+  "apk-perl-dbi" {= "1.643-r1"}
+  "apk-perl-getopt-long" {= "2.52-r1"}
+  "apk-perl-socket" {= "2.032-r0"}
+  "apk-perl-term-readkey" {= "2.38-r5"}
+]
+extra-source "mariadb-mytop-10.5.19-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/mariadb-mytop-10.5.19-r0.apk"
+}

@@ -1,0 +1,61 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-pandoc-prof_2.9.2.1-1+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-pandoc-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-aeson-pretty-prof"
+  "deb-libghc-aeson-prof"
+  "deb-libghc-attoparsec-prof"
+  "deb-libghc-base64-bytestring-prof"
+  "deb-libghc-blaze-html-prof"
+  "deb-libghc-blaze-markup-prof"
+  "deb-libghc-case-insensitive-prof"
+  "deb-libghc-cmark-gfm-prof"
+  "deb-libghc-data-default-prof"
+  "deb-libghc-doclayout-prof"
+  "deb-libghc-doctemplates-prof"
+  "deb-libghc-emojis-prof"
+  "deb-libghc-exceptions-prof"
+  "deb-libghc-glob-prof"
+  "deb-libghc-haddock-library-prof"
+  "deb-libghc-hslua-module-system-prof"
+  "deb-libghc-hslua-module-text-prof"
+  "deb-libghc-hslua-prof"
+  "deb-libghc-hsyaml-prof"
+  "deb-libghc-http-client-prof"
+  "deb-libghc-http-client-tls-prof"
+  "deb-libghc-http-prof"
+  "deb-libghc-http-types-prof"
+  "deb-libghc-ipynb-prof"
+  "deb-libghc-jira-wiki-markup-prof"
+  "deb-libghc-juicypixels-prof"
+  "deb-libghc-network-prof"
+  "deb-libghc-network-uri-prof"
+  "deb-libghc-pandoc-dev" {= "2.9.2.1-1+deb11u1"}
+  "deb-libghc-pandoc-types-prof"
+  "deb-libghc-random-prof"
+  "deb-libghc-safe-prof"
+  "deb-libghc-scientific-prof"
+  "deb-libghc-sha-prof"
+  "deb-libghc-skylighting-core-prof"
+  "deb-libghc-skylighting-prof"
+  "deb-libghc-split-prof"
+  "deb-libghc-syb-prof"
+  "deb-libghc-tagsoup-prof"
+  "deb-libghc-temporary-prof"
+  "deb-libghc-texmath-prof"
+  "deb-libghc-text-conversions-prof"
+  "deb-libghc-unicode-transforms-prof"
+  "deb-libghc-unordered-containers-prof"
+  "deb-libghc-vector-prof"
+  "deb-libghc-xml-prof"
+  "deb-libghc-zip-archive-prof"
+  "deb-libghc-zlib-prof"
+]
+extra-source "libghc-pandoc-prof_2.9.2.1-1+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pandoc/libghc-pandoc-prof_2.9.2.1-1+deb11u1_amd64.deb"
+}

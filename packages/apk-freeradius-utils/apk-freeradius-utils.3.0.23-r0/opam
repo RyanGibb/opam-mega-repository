@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add freeradius-utils-3.0.23-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del freeradius-utils"]
+]
+depends: [
+  "apk-freeradius-lib" {= "3.0.23-r0"}
+  "apk-gdbm" {= "1.19-r0"}
+  "apk-libcrypto1-1" {= "1.1.1t-r2"}
+  "apk-libpcap" {= "1.10.0-r0"}
+  "apk-musl" {= "1.2.2-r5"}
+  "apk-talloc" {= "2.3.2-r1"}
+]
+extra-source "freeradius-utils-3.0.23-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/freeradius-utils-3.0.23-r0.apk"
+}

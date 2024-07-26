@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i emboss_6.6.0+dfsg-7+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r emboss"]
+]
+depends: [
+  "deb-emboss-data" {= "6.6.0+dfsg-7"}
+  "deb-emboss-lib" {= "6.6.0+dfsg-7+b1"}
+  "deb-libc6" {>= "2.15"}
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libgd3" {>= "2.1.0~alpha~"}
+  "deb-libhpdf-2-3-0" {>= "2.3.0"}
+  "deb-libmariadb3" {>= "3.0.0"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libpq5"
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libx11-6"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "emboss_6.6.0+dfsg-7+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/emboss/emboss_6.6.0+dfsg-7+b1_amd64.deb"
+}

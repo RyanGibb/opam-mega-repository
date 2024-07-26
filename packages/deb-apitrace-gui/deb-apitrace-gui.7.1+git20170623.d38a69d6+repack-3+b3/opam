@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i apitrace-gui_7.1+git20170623.d38a69d6+repack-3+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r apitrace-gui"]
+]
+depends: [
+  "deb-apitrace" {= "7.1+git20170623.d38a69d6+repack-3+b3"}
+  "deb-libbsd0" {>= "0.0"}
+  "deb-libc6" {>= "2.27"}
+  "deb-libgcc1" {>= "1-4.2"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5gui5" {>= "5.8.0"}
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-libsnappy1v5"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "apitrace-gui_7.1+git20170623.d38a69d6+repack-3+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/apitrace/apitrace-gui_7.1+git20170623.d38a69d6+repack-3+b3_amd64.deb"
+}

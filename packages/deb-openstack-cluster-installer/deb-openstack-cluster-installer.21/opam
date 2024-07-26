@@ -1,0 +1,50 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openstack-cluster-installer_21_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openstack-cluster-installer"]
+]
+depends: [
+  "deb-adduser"
+  "deb-apache2"
+  "deb-apache2-utils"
+  "deb-approx"
+  "deb-bind9"
+  "deb-bind9-host"
+  "deb-bind9utils"
+  "deb-bridge-utils"
+  "deb-ceph-common"
+  "deb-curl"
+  "deb-dbconfig-common"
+  "deb-default-mysql-server"
+  "deb-ipcalc"
+  "deb-ipmitool"
+  "deb-isc-dhcp-server"
+  "deb-jq"
+  "deb-live-build"
+  "deb-lsb-base"
+  "deb-net-tools"
+  "deb-openstack-debian-images"
+  "deb-openstack-pkg-tools"
+  "deb-openstack-puppet-modules"
+  "deb-php"
+  "deb-php-cli"
+  "deb-php-mysql"
+  "deb-php-radius"
+  "deb-php-ssh2"
+  "deb-puppet-master"
+  "deb-puppet-module-heini-wait-for"
+  "deb-puppet-module-icann-quagga"
+  "deb-puppet-module-oci" {= "21"}
+  "deb-puppet-module-puppetlabs-firewall"
+  "deb-pxelinux"
+  "deb-qemu-utils"
+  "deb-sudo"
+  "deb-swift"
+  "deb-tftpd-hpa"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "openstack-cluster-installer_21_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openstack-cluster-installer/openstack-cluster-installer_21_all.deb"
+}

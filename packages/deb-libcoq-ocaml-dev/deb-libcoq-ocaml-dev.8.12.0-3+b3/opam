@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcoq-ocaml-dev_8.12.0-3+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcoq-ocaml-dev"]
+]
+depends: [
+  "deb-coq" {= "8.12.0-3+b3"}
+  "deb-libcairo2-ocaml-dev"
+  "deb-libcoq-ocaml"
+  "deb-liblablgtk3-ocaml-dev"
+  "deb-liblablgtksourceview3-ocaml-dev"
+  "deb-libnum-ocaml-dev"
+  "deb-ocaml-nox"
+]
+extra-source "libcoq-ocaml-dev_8.12.0-3+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/coq/libcoq-ocaml-dev_8.12.0-3+b3_amd64.deb"
+}

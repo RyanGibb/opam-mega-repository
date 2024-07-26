@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-gdcm_2.8.8-9_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-gdcm"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgdcm2-8" {= "2.8.8-9"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-python3" {< "3.8"}
+  "deb-python3" {>= "3.7~"}
+  "deb-python3-any"
+]
+conflicts: [
+  "deb-python-gdcm"
+]
+extra-source "python3-gdcm_2.8.8-9_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gdcm/python3-gdcm_2.8.8-9_amd64.deb"
+}

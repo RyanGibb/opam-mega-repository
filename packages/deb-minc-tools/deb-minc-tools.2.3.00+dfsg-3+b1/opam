@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i minc-tools_2.3.00+dfsg-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r minc-tools"]
+]
+depends: [
+  "deb-imagemagick"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgetopt-tabular-perl"
+  "deb-libhdf5-103"
+  "deb-libminc2-5-2-0"
+  "deb-libnetcdf13" {>= "3.6.1"}
+  "deb-libnifti2"
+  "deb-libsz2"
+  "deb-libtext-format-perl"
+  "deb-netcdf-bin"
+  "deb-sensible-utils"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "minc-tools_2.3.00+dfsg-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/minc-tools/minc-tools_2.3.00+dfsg-3+b1_amd64.deb"
+}

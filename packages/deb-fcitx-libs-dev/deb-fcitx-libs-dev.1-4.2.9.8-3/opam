@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fcitx-libs-dev_1:4.2.9.8-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fcitx-libs-dev"]
+]
+depends: [
+  "deb-fcitx-bin" {>= "1-4.2.9.8-3"}
+  "deb-gir1-2-fcitx-1-0" {= "1-4.2.9.8-3"}
+  "deb-libfcitx-config4" {= "1-4.2.9.8-3"}
+  "deb-libfcitx-core0" {= "1-4.2.9.8-3"}
+  "deb-libfcitx-gclient1" {= "1-4.2.9.8-3"}
+  "deb-libfcitx-utils0" {= "1-4.2.9.8-3"}
+]
+extra-source "fcitx-libs-dev_1:4.2.9.8-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fcitx/fcitx-libs-dev_4.2.9.8-3_amd64.deb"
+}

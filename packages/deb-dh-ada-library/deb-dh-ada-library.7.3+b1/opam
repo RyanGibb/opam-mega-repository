@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dh-ada-library_7.3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dh-ada-library"]
+]
+depends: [
+  "deb-binutils"
+  "deb-debhelper"
+  "deb-dpkg-dev"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgnat-10" {>= "10.2.1"}
+  "deb-libgnatprj8" {>= "2021.0.0.0778b109"}
+  "deb-libxmlada-dom7" {>= "21.0.0"}
+  "deb-libxmlada-input7" {>= "21.0.0"}
+  "deb-libxmlada-sax7" {>= "21.0.0"}
+  "deb-libxmlada-schema7" {>= "21.0.0"}
+  "deb-libxmlada-unicode7" {>= "21.0.0"}
+  "deb-perl-any"
+]
+extra-source "dh-ada-library_7.3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dh-ada-library/dh-ada-library_7.3+b1_amd64.deb"
+}

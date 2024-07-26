@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-jupyter-sphinx-theme_0.0.6+ds1-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-jupyter-sphinx-theme"]
+]
+depends: [
+  "deb-jupyter-sphinx-theme-common" {= "0.0.6+ds1-6"}
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7~"}
+  "deb-python-nbsphinx"
+  "deb-python-pkg-resources"
+  "deb-python-recommonmark"
+]
+extra-source "python-jupyter-sphinx-theme_0.0.6+ds1-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/j/jupyter-sphinx-theme/python-jupyter-sphinx-theme_0.0.6+ds1-6_all.deb"
+}

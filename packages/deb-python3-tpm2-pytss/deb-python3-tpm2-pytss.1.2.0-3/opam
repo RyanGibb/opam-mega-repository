@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-tpm2-pytss_1.2.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-tpm2-pytss"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libtss2-esys-3-0-2-0" {>= "3.1.0"}
+  "deb-libtss2-fapi1" {>= "3.0.1"}
+  "deb-libtss2-mu0" {>= "3.1.0"}
+  "deb-libtss2-rc0" {>= "3.0.1"}
+  "deb-libtss2-tctildr0" {>= "3.0.1"}
+  "deb-python3" {>= "3~"}
+  "deb-python3-any"
+  "deb-python3-asn1crypto"
+  "deb-python3-cffi" {>= "1.0.0"}
+  "deb-python3-cffi-backend"
+  "deb-python3-cryptography" {>= "3.0"}
+  "deb-python3-packaging"
+  "deb-python3-yaml"
+]
+extra-source "python3-tpm2-pytss_1.2.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tpm2-pytss/python3-tpm2-pytss_1.2.0-3_amd64.deb"
+}

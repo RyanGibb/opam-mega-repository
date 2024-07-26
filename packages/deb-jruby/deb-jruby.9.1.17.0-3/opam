@@ -1,0 +1,44 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i jruby_9.1.17.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r jruby"]
+]
+depends: [
+  "deb-ant"
+  "deb-junit4"
+  "deb-libasm-java" {>= "5.0"}
+  "deb-libbsf-java"
+  "deb-libbytelist-java" {>= "1.0.13~"}
+  "deb-libdirgra-java"
+  "deb-libheadius-options-java"
+  "deb-libinvokebinder-java" {>= "1.7~"}
+  "deb-libjansi-java"
+  "deb-libjcodings-java"
+  "deb-libjffi-jni"
+  "deb-libjitescript-java"
+  "deb-libjnr-constants-java" {>= "0.9.5~"}
+  "deb-libjnr-enxio-java"
+  "deb-libjnr-ffi-java" {>= "2.1.1~"}
+  "deb-libjnr-netdb-java"
+  "deb-libjnr-posix-java" {>= "3.0.44~"}
+  "deb-libjnr-unixsocket-java" {>= "0.14~"}
+  "deb-libjnr-x86asm-java"
+  "deb-libjoda-time-java"
+  "deb-libjruby-joni-java"
+  "deb-libjzlib-java"
+  "deb-libmodulator-java"
+  "deb-libosgi-core-java"
+  "deb-libpsych-java"
+  "deb-libunsafe-fences-java"
+  "deb-libunsafe-mock-java"
+  "deb-libyaml-snake-java"
+  "deb-nailgun"
+  "deb-ruby-jar-dependencies"
+  "deb-ruby-psych"
+  ("deb-default-jre" | "deb- java9-runtime")
+]
+extra-source "jruby_9.1.17.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/j/jruby/jruby_9.1.17.0-3_all.deb"
+}

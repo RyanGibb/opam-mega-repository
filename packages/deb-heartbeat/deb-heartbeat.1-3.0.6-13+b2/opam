@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i heartbeat_1:3.0.6-13+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r heartbeat"]
+]
+depends: [
+  "deb-adduser"
+  "deb-cluster-glue"
+  "deb-gawk"
+  "deb-iproute2"
+  "deb-libc6" {>= "2.34"}
+  "deb-libglib2-0-0" {>= "2.16.0"}
+  "deb-libheartbeat2" {>= "1-3.0.6"}
+  "deb-libpam-runtime"
+  "deb-libpils2"
+  "deb-libplumb2"
+  "deb-libplumbgpl2"
+  "deb-libstonith1"
+  "deb-libxml2-utils"
+  "deb-psmisc"
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-any"
+  "deb-resource-agents"
+  ("deb-inetutils-ping" | "deb- iputils-ping" | "deb- ping")
+]
+extra-source "heartbeat_1:3.0.6-13+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/heartbeat/heartbeat_3.0.6-13+b2_amd64.deb"
+}

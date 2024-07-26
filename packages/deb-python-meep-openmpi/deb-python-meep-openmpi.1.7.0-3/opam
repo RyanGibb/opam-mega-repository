@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-meep-openmpi_1.7.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-meep-openmpi"]
+]
+depends: [
+  "deb-libatlas3-base"
+  "deb-libc6" {>= "2.14"}
+  "deb-libctl7" {>= "4.1.0"}
+  "deb-libfftw3-double3" {>= "3.3.5"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgfortran5" {>= "8"}
+  "deb-libgsl23" {>= "2.5"}
+  "deb-libgslcblas0" {>= "2.4"}
+  "deb-libharminv3" {>= "1.4"}
+  "deb-libhdf5-openmpi-103" {>= "1.8.13"}
+  "deb-libmeep-openmpi12" {= "1.7.0-3"}
+  "deb-libopenmpi3"
+  "deb-libquadmath0" {>= "4.6"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-python"
+  "deb-python-numpy"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "python-meep-openmpi_1.7.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/meep-openmpi/python-meep-openmpi_1.7.0-3_amd64.deb"
+}

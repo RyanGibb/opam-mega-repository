@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i neovim_0.4.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r neovim"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libluajit-5-1-2" {>= "2.0.4+dfsg"}
+  "deb-libmsgpackc2" {>= "2.1.0"}
+  "deb-libtermkey1" {>= "0.19"}
+  "deb-libunibilium4" {>= "2.0"}
+  "deb-libuv1" {>= "1.20.2"}
+  "deb-libvterm0" {>= "0.1"}
+  "deb-lua-luv" {>= "1.36.0-0"}
+  "deb-neovim-runtime" {= "0.4.4-1"}
+]
+extra-source "neovim_0.4.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/neovim/neovim_0.4.4-1_amd64.deb"
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkernlib1-dev_20061220+dfsg3-4.4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkernlib1-dev"]
+]
+depends: [
+  "deb-cernlib-base-dev" {>= "2006.dfsg.2-6"}
+  "deb-cfortran" {>= "4.4-10"}
+  "deb-libkernlib1-gfortran" {= "20061220+dfsg3-4.4"}
+  ("deb-libc6-dev" | "deb- libc-dev")
+]
+extra-source "libkernlib1-dev_20061220+dfsg3-4.4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cernlib/libkernlib1-dev_20061220+dfsg3-4.4_amd64.deb"
+}

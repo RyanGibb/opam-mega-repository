@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i emscripten_2.0.12~dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r emscripten"]
+]
+depends: [
+  "deb-binaryen" {>= "99"}
+  "deb-clang" {>= "1-11.0"}
+  "deb-lld" {>= "1-11.0"}
+  "deb-llvm" {>= "1-11.0"}
+  "deb-node-acorn"
+  "deb-nodejs"
+  "deb-python3-any"
+]
+extra-source "emscripten_2.0.12~dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/emscripten/emscripten_2.0.12~dfsg-2_all.deb"
+}

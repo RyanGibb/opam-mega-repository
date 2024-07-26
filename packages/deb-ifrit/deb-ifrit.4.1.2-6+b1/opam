@@ -1,0 +1,46 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ifrit_4.1.2-6+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ifrit"]
+]
+depends: [
+  "deb-libc6" {>= "2.27"}
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgl1"
+  "deb-libgl2ps1-4"
+  "deb-libhdf5-openmpi-103" {>= "1.8.13"}
+  "deb-libice6" {>= "1-1.0.0"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libjsoncpp1" {>= "1.7.4"}
+  "deb-libnetcdf-c++4" {>= "4.2"}
+  "deb-libnetcdf13" {>= "3.6.1"}
+  "deb-libogg0" {>= "1.0rc3"}
+  "deb-libopenmpi3"
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libproj13" {>= "4.8.0"}
+  "deb-libpython2-7" {>= "2.7"}
+  "deb-libqt4-opengl" {>= "4-4.5.3"}
+  "deb-libqt4-qt3support" {>= "4-4.5.3"}
+  "deb-libqtcore4" {>= "4-4.7.0~beta1"}
+  "deb-libqtgui4" {>= "4-4.8.0"}
+  "deb-libsm6"
+  "deb-libsqlite3-0" {>= "3.5.9"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libsz2"
+  "deb-libtheora0" {>= "1.0"}
+  "deb-libtiff5" {>= "4.0.3"}
+  "deb-libvtk6-3"
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxml2" {>= "2.6.27"}
+  "deb-libxt6"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+extra-source "ifrit_4.1.2-6+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/ifrit/ifrit_4.1.2-6+b1_amd64.deb"
+}

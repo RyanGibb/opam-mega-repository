@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add syslog-ng-python-4.5.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del syslog-ng-python"]
+]
+depends: [
+  "apk-musl" {= "1.2.4_git20230717-r4"}
+  "apk-python3" {= "3.11.9-r0"}
+  "apk-syslog-ng" {= "4.5.0-r0"}
+]
+extra-source "syslog-ng-python-4.5.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/syslog-ng-python-4.5.0-r0.apk"
+}

@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xen-utils-4.17_4.17.3+10-g091466ba55-1~deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xen-utils-4.17"]
+]
+depends: [
+  "deb-libc6" {>= "2.35"}
+  "deb-libncurses6" {>= "6"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-libxencall1" {>= "4.17.3+10-g091466ba55"}
+  "deb-libxenevtchn1" {>= "4.17.3+10-g091466ba55"}
+  "deb-libxenforeignmemory1" {>= "4.17.3+10-g091466ba55"}
+  "deb-libxengnttab1" {>= "4.17.3+10-g091466ba55"}
+  "deb-libxenmisc4-17" {>= "4.17.3+10-g091466ba55"}
+  "deb-libxenstore4" {>= "4.16.0"}
+  "deb-libxentoollog1" {>= "4.17.3+10-g091466ba55"}
+  "deb-libyajl2" {>= "2.0.4"}
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-any"
+  "deb-xen-utils-common" {>= "4.17.3+10-g091466ba55-1~deb12u1"}
+]
+extra-source "xen-utils-4.17_4.17.3+10-g091466ba55-1~deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xen/xen-utils-4.17_4.17.3+10-g091466ba55-1~deb12u1_amd64.deb"
+}

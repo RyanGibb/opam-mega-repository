@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-bioc-ioniser_2.22.0+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-bioc-ioniser"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.2.20221110-1"}
+  "deb-r-bioc-biocgenerics"
+  "deb-r-bioc-biocparallel"
+  "deb-r-bioc-biostrings"
+  "deb-r-bioc-rhdf5"
+  "deb-r-bioc-shortread"
+  "deb-r-bioc-xvector"
+  "deb-r-cran-bit64"
+  "deb-r-cran-dplyr"
+  "deb-r-cran-ggplot2"
+  "deb-r-cran-magrittr"
+  "deb-r-cran-stringr"
+  "deb-r-cran-tibble"
+  "deb-r-cran-tidyr"
+]
+extra-source "r-bioc-ioniser_2.22.0+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-bioc-ioniser/r-bioc-ioniser_2.22.0+dfsg-1_all.deb"
+}

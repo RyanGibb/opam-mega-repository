@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgvpr2_2.40.1-6+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgvpr2"]
+]
+depends: [
+  "deb-libc6" {>= "2.15"}
+  "deb-libcdt5"
+  "deb-libcgraph6"
+]
+conflicts: [
+  "deb-libgraphviz4"
+]
+extra-source "libgvpr2_2.40.1-6+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/graphviz/libgvpr2_2.40.1-6+deb10u1_amd64.deb"
+}

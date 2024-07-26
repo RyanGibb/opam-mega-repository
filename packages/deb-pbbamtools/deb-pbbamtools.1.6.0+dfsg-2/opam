@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pbbamtools_1.6.0+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pbbamtools"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libhts3" {>= "1.10"}
+  "deb-libpbbam1-6-0" {= "1.6.0+dfsg-2"}
+  "deb-libpbcopper1-8-0" {>= "1.8.0+dfsg"}
+  "deb-libstdc++6" {>= "5.2"}
+]
+extra-source "pbbamtools_1.6.0+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pbbam/pbbamtools_1.6.0+dfsg-2_amd64.deb"
+}

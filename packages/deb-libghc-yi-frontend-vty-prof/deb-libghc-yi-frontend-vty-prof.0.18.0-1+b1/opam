@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-yi-frontend-vty-prof_0.18.0-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-yi-frontend-vty-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-data-default-prof"
+  "deb-libghc-dlist-prof"
+  "deb-libghc-microlens-platform-prof"
+  "deb-libghc-pointedlist-prof"
+  "deb-libghc-vty-prof"
+  "deb-libghc-yi-core-prof"
+  "deb-libghc-yi-frontend-vty-dev" {= "0.18.0-1+b1"}
+  "deb-libghc-yi-language-prof"
+  "deb-libghc-yi-rope-prof"
+]
+extra-source "libghc-yi-frontend-vty-prof_0.18.0-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-yi-frontend-vty/libghc-yi-frontend-vty-prof_0.18.0-1+b1_amd64.deb"
+}

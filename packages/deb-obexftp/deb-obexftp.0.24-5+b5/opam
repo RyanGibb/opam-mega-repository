@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i obexftp_0.24-5+b5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r obexftp"]
+]
+depends: [
+  "deb-libbfb0"
+  "deb-libbluetooth3" {>= "4.91"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libmulticobex1"
+  "deb-libobexftp0"
+  "deb-libopenobex2"
+]
+conflicts: [
+  "deb-libobexftp1"
+]
+extra-source "obexftp_0.24-5+b5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/obexftp/obexftp_0.24-5+b5_amd64.deb"
+}

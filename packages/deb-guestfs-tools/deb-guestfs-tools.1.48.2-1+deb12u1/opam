@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i guestfs-tools_1.48.2-1+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r guestfs-tools"]
+]
+depends: [
+  "deb-curl"
+  "deb-libc6" {>= "2.35"}
+  "deb-libcrypt1" {>= "1-4.1.0"}
+  "deb-libguestfs-perl"
+  "deb-libguestfs0" {>= "1-1.43.3"}
+  "deb-libintl-perl"
+  "deb-libjansson4" {>= "2.14"}
+  "deb-liblzma5" {>= "5.1.1alpha+20120614"}
+  "deb-libpcre2-8-0" {>= "10.22"}
+  "deb-libstring-shellquote-perl"
+  "deb-libsys-virt-perl"
+  "deb-libtinfo6" {>= "6"}
+  "deb-libvirt0" {>= "0.4.0"}
+  "deb-libwin-hivex-perl"
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-perl-any"
+]
+extra-source "guestfs-tools_1.48.2-1+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/guestfs-tools/guestfs-tools_1.48.2-1+deb12u1_amd64.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gpg-agent-2.2.31-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gpg-agent"]
+]
+depends: [
+  "apk-gnupg-gpgconf" {= "2.2.31-r2"}
+  "apk-libassuan" {= "2.5.6-r0"}
+  "apk-libgcrypt" {= "1.9.4-r0"}
+  "apk-libgpg-error" {= "1.42-r1"}
+  "apk-musl" {= "1.2.2-r9"}
+  "apk-npth" {= "1.6-r1"}
+]
+extra-source "gpg-agent-2.2.31-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/gpg-agent-2.2.31-r2.apk"
+}

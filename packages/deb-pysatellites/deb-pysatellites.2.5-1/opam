@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pysatellites_2.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pysatellites"]
+]
+depends: [
+  "deb-ffmpeg"
+  "deb-python3-any" {>= "3.3.2-2~"}
+  "deb-python3-matplotlib"
+  "deb-python3-numpy"
+  "deb-python3-pyqt4"
+  "deb-python3-tk"
+  "deb-xplanet"
+  ("deb-iceweasel" | "deb- firefox-esr" | "deb- www-browser")
+]
+extra-source "pysatellites_2.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pysatellites/pysatellites_2.5-1_all.deb"
+}

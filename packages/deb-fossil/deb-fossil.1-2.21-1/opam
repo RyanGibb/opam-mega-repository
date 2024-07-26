@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fossil_1:2.21-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fossil"]
+]
+depends: [
+  "deb-libc6" {>= "2.35"}
+  "deb-libfuse2" {>= "2.6"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-zlib1g" {>= "1-1.2.0"}
+  ("deb-libtcl8-6" | "deb- libtcl")
+]
+extra-source "fossil_1:2.21-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fossil/fossil_2.21-1_amd64.deb"
+}

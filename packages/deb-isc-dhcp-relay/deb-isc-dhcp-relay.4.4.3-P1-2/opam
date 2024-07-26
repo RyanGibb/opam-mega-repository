@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i isc-dhcp-relay_4.4.3-P1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r isc-dhcp-relay"]
+]
+depends: [
+  "deb-debianutils" {>= "2.8.2"}
+  "deb-libc6" {>= "2.36"}
+  "deb-sysvinit-utils"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+conflicts: [
+  "deb-dhcp-relay"
+]
+extra-source "isc-dhcp-relay_4.4.3-P1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/isc-dhcp/isc-dhcp-relay_4.4.3-P1-2_amd64.deb"
+}

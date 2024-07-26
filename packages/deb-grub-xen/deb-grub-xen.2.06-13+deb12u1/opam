@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i grub-xen_2.06-13+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r grub-xen"]
+]
+depends: [
+  "deb-grub-common" {= "2.06-13+deb12u1"}
+  "deb-grub-xen-bin" {= "2.06-13+deb12u1"}
+  "deb-grub2-common" {= "2.06-13+deb12u1"}
+  "deb-ucf"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+conflicts: [
+  "deb-grub" {< "0.97-54"}
+  "deb-grub-coreboot"
+  "deb-grub-efi-amd64"
+  "deb-grub-efi-ia32"
+  "deb-grub-ieee1275"
+  "deb-grub-legacy"
+  "deb-grub-pc"
+]
+extra-source "grub-xen_2.06-13+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/grub2/grub-xen_2.06-13+deb12u1_amd64.deb"
+}

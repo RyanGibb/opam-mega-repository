@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libinsighttoolkit4.13_4.13.3withdata-dfsg1-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libinsighttoolkit4.13"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libdouble-conversion3" {>= "2.0.0"}
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libfftw3-double3" {>= "3.3.5"}
+  "deb-libfftw3-single3" {>= "3.3.5"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libgdcm3-0" {>= "3.0.8"}
+  "deb-libhdf5-103-1"
+  "deb-libhdf5-cpp-103-1" {>= "1.10.5"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libminc2-5-2-0" {>= "2.4.03"}
+  "deb-libniftiio2" {>= "3.0.1"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libtiff5" {>= "4.0.3"}
+  "deb-zlib1g" {>= "1-1.2.3.4"}
+]
+extra-source "libinsighttoolkit4.13_4.13.3withdata-dfsg1-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/insighttoolkit4/libinsighttoolkit4.13_4.13.3withdata-dfsg1-4_amd64.deb"
+}

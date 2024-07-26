@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libzonemaster-perl_1.0.16-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libzonemaster-perl"]
+]
+depends: [
+  "deb-libfile-sharedir-perl"
+  "deb-libfile-slurp-perl"
+  "deb-libhash-merge-perl"
+  "deb-libintl-perl"
+  "deb-libio-socket-inet6-perl"
+  "deb-libjson-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-libmail-rfc822-address-perl"
+  "deb-libmodule-find-perl"
+  "deb-libmoose-perl"
+  "deb-libnet-ip-perl"
+  "deb-libnet-ldns-perl"
+  "deb-libreadonly-perl"
+  "deb-perl"
+]
+extra-source "libzonemaster-perl_1.0.16-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libz/libzonemaster-perl/libzonemaster-perl_1.0.16-2_all.deb"
+}

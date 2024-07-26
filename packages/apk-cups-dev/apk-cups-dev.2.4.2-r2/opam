@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add cups-dev-2.4.2-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del cups-dev"]
+]
+depends: [
+  "apk-avahi-dev" {= "0.8-r6"}
+  "apk-cups-libs" {= "2.4.2-r2"}
+  "apk-gnutls-dev" {= "3.7.7-r1"}
+  "apk-libgcrypt-dev" {= "1.10.1-r0"}
+  "apk-pkgconf" {= "1.8.1-r0"}
+  "apk-zlib-dev" {= "1.2.12-r3"}
+]
+extra-source "cups-dev-2.4.2-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/cups-dev-2.4.2-r2.apk"
+}

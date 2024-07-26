@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-crypto-pubkey-dev_0.2.8-10+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-crypto-pubkey-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.29"}
+  "deb-libghc-byteable-dev"
+  "deb-libghc-crypto-numbers-dev"
+  "deb-libghc-crypto-pubkey-types-dev"
+  "deb-libghc-crypto-random-dev"
+  "deb-libghc-cryptohash-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-crypto-pubkey-dev_0.2.8-10+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-crypto-pubkey/libghc-crypto-pubkey-dev_0.2.8-10+b1_amd64.deb"
+}

@@ -1,0 +1,49 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i shutter_0.99.2-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r shutter"]
+]
+depends: [
+  "deb-gir1-2-ayatanaappindicator3-0-1"
+  "deb-gir1-2-wnck-3-0"
+  "deb-imagemagick"
+  "deb-libcarp-always-perl"
+  "deb-libfile-basedir-perl"
+  "deb-libfile-copy-recursive-perl"
+  "deb-libfile-which-perl"
+  "deb-libglib-object-introspection-perl"
+  "deb-libglib-perl"
+  "deb-libgoocanvas2-cairotypes-perl"
+  "deb-libgoocanvas2-perl"
+  "deb-libgtk3-imageview-perl" {>= "10"}
+  "deb-libgtk3-perl"
+  "deb-libimage-exiftool-perl"
+  "deb-libimage-magick-perl"
+  "deb-libjson-maybexs-perl"
+  "deb-libjson-perl"
+  "deb-liblocale-gettext-perl"
+  "deb-liblwp-protocol-https-perl"
+  "deb-libnet-dbus-glib-perl"
+  "deb-libnet-dbus-perl"
+  "deb-libnet-oauth-perl"
+  "deb-libnumber-bytes-human-perl"
+  "deb-libpango-perl"
+  "deb-libpath-class-perl"
+  "deb-libproc-processtable-perl"
+  "deb-libproc-simple-perl"
+  "deb-libreadonly-perl"
+  "deb-librsvg2-common"
+  "deb-libsort-naturally-perl"
+  "deb-libwww-mechanize-perl"
+  "deb-libwww-perl"
+  "deb-libx11-protocol-other-perl"
+  "deb-libx11-protocol-perl"
+  "deb-libxml-simple-perl"
+  "deb-procps"
+  "deb-xdg-utils"
+]
+extra-source "shutter_0.99.2-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/shutter/shutter_0.99.2-4_all.deb"
+}

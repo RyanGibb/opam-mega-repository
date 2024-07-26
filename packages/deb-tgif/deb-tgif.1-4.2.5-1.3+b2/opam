@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tgif_1:4.2.5-1.3+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tgif"]
+]
+depends: [
+  "deb-gettext-base"
+  "deb-ghostscript"
+  "deb-libc6" {>= "2.29"}
+  "deb-libx11-6"
+  "deb-libxt6"
+  "deb-netpbm"
+  "deb-texlive-latex-base"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "tgif_1:4.2.5-1.3+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tgif/tgif_4.2.5-1.3+b2_amd64.deb"
+}

@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i triplea_1.9.0.0.7062-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r triplea"]
+]
+depends: [
+  "deb-java-wrappers"
+  "deb-libandroid-json-java"
+  "deb-libcommons-codec-java"
+  "deb-libcommons-io-java"
+  "deb-libcommons-logging-java"
+  "deb-libcommons-math3-java"
+  "deb-libflamingo-java" {>= "7.3"}
+  "deb-libguava-java"
+  "deb-libhttpclient-java"
+  "deb-libhttpcore-java"
+  "deb-libjbcrypt-java"
+  "deb-liblaf-plugin-java" {>= "7.3"}
+  "deb-liblaf-widget-java" {>= "7.3"}
+  "deb-libmail-java"
+  "deb-libpostgresql-jdbc-java"
+  "deb-libtrident-java" {>= "7.3"}
+  "deb-libyaml-snake-java"
+  "deb-substance" {>= "7.3"}
+  "deb-substance-flamingo" {>= "7.3"}
+  ("deb-default-jre" | "deb- java8-runtime")
+]
+extra-source "triplea_1.9.0.0.7062-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/triplea/triplea_1.9.0.0.7062-2_all.deb"
+}

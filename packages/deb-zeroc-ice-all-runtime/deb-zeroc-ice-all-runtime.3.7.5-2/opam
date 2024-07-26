@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i zeroc-ice-all-runtime_3.7.5-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r zeroc-ice-all-runtime"]
+]
+depends: [
+  "deb-libzeroc-ice3-7" {>= "3.7.5-2"}
+  "deb-libzeroc-ice3-7-java" {= "3.7.5-2"}
+  "deb-libzeroc-icestorm3-7" {>= "3.7.5-2"}
+  "deb-php-zeroc-ice" {>= "3.7.5-2"}
+  "deb-python3-zeroc-ice" {>= "3.7.5-2"}
+  "deb-zeroc-glacier2" {>= "3.7.5-2"}
+  "deb-zeroc-ice-slice" {>= "3.7.5-2"}
+  "deb-zeroc-ice-utils" {>= "3.7.5-2"}
+  "deb-zeroc-icebox" {>= "3.7.5-2"}
+  "deb-zeroc-icebridge" {>= "3.7.5-2"}
+  "deb-zeroc-icegrid" {>= "3.7.5-2"}
+  "deb-zeroc-icegridgui" {>= "3.7.5-2"}
+  "deb-zeroc-icepatch2" {>= "3.7.5-2"}
+]
+extra-source "zeroc-ice-all-runtime_3.7.5-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/z/zeroc-ice/zeroc-ice-all-runtime_3.7.5-2_all.deb"
+}

@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i abci_0.0~git20170124.0.f94ae5e-2+b33_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r abci"]
+]
+depends: [
+  "deb-golang-github-tendermint-go-common-dev"
+  "deb-golang-github-tendermint-go-crypto-dev"
+  "deb-golang-github-tendermint-go-db-dev"
+  "deb-golang-github-tendermint-go-logger-dev"
+  "deb-golang-github-tendermint-go-merkle-dev"
+  "deb-golang-github-tendermint-go-process-dev" {>= "0.1~20170125~0gitb27edfd"}
+  "deb-golang-github-tendermint-go-wire-dev"
+  "deb-golang-github-urfave-cli-dev"
+  "deb-golang-golang-x-net-dev"
+  "deb-golang-google-grpc-dev"
+  "deb-golang-goprotobuf-dev"
+  "deb-libc6" {>= "2.3.2"}
+]
+extra-source "abci_0.0~git20170124.0.f94ae5e-2+b33_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/abci/abci_0.0~git20170124.0.f94ae5e-2+b33_amd64.deb"
+}

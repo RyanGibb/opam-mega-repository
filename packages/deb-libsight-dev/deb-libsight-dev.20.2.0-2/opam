@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsight-dev_20.2.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsight-dev"]
+]
+depends: [
+  "deb-libann-dev"
+  "deb-libboost-all-dev"
+  "deb-libcamp-dev"
+  "deb-libcppunit-dev"
+  "deb-libexpat1-dev"
+  "deb-libgdcm-dev"
+  "deb-libglm-dev"
+  "deb-libhdf5-dev"
+  "deb-libinsighttoolkit4-dev"
+  "deb-libpng-dev"
+  "deb-libqt5opengl5-dev"
+  "deb-libqt5x11extras5-dev"
+  "deb-libsight" {= "20.2.0-2"}
+  "deb-libtiff5-dev"
+  "deb-libvtk7-dev"
+  "deb-libvtk7-qt-dev"
+  "deb-libvtkgdcm-dev"
+  "deb-qttools5-dev"
+  "deb-zlib1g-dev"
+]
+extra-source "libsight-dev_20.2.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sight/libsight-dev_20.2.0-2_amd64.deb"
+}

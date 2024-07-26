@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpeony3_3.0.6-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpeony3"]
+]
+depends: [
+  "deb-gvfs"
+  "deb-libc6" {>= "2.14"}
+  "deb-libcanberra0" {>= "0.2"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.59.2"}
+  "deb-libgsettings-qt1" {>= "0.1+14.04.20140408"}
+  "deb-libkf5windowsystem5" {>= "4.96.0"}
+  "deb-libnotify4" {>= "0.7.0"}
+  "deb-libpoppler-qt5-1" {>= "0.24.5"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5widgets5" {>= "5.15.1"}
+  "deb-libqt5xml5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libudisks2-0" {>= "2.0.0"}
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "libpeony3_3.0.6-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/peony/libpeony3_3.0.6-1+b1_amd64.deb"
+}

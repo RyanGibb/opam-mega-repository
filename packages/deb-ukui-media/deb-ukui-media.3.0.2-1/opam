@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ukui-media_3.0.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ukui-media"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libcanberra-gtk3-0" {>= "0.25"}
+  "deb-libcanberra0" {>= "0.2"}
+  "deb-libdconf1" {>= "0.14.0"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libglib2-0-bin"
+  "deb-libgsettings-qt1" {>= "0.1+14.04.20140408"}
+  "deb-libgtk-3-0" {>= "3.21.4"}
+  "deb-libkf5windowsystem5" {>= "4.96.0"}
+  "deb-libmate-desktop-2-17" {>= "1.18"}
+  "deb-libmatemixer0" {>= "1.10.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libqt5core5a" {>= "5.14.1"}
+  "deb-libqt5dbus5" {>= "5.14.1"}
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.5.0"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-libx11-6"
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-mate-desktop-common" {>= "1.18"}
+  "deb-ukui-media-common" {= "3.0.2-1"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+]
+extra-source "ukui-media_3.0.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/u/ukui-media/ukui-media_3.0.2-1_amd64.deb"
+}

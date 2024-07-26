@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnome-session-canberra_0.30-10_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnome-session-canberra"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libcanberra-gtk3-0" {>= "0.25"}
+  "deb-libcanberra0" {>= "0.2"}
+  "deb-libglib2-0-0" {>= "2.16.0"}
+  "deb-libgtk-3-0" {>= "3.0.0"}
+]
+extra-source "gnome-session-canberra_0.30-10_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libcanberra/gnome-session-canberra_0.30-10_amd64.deb"
+}

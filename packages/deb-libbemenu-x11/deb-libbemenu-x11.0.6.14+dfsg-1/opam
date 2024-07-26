@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libbemenu-x11_0.6.14+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libbemenu-x11"]
+]
+depends: [
+  "deb-libbemenu0" {= "0.6.14+dfsg-1"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo2" {>= "1.14.0"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libpango-1-0-0" {>= "1.22.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.22.0"}
+  "deb-libx11-6"
+  "deb-libxinerama1" {>= "2-1.1.4"}
+]
+extra-source "libbemenu-x11_0.6.14+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/bemenu/libbemenu-x11_0.6.14+dfsg-1_amd64.deb"
+}

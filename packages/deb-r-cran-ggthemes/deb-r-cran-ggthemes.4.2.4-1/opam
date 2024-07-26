@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-ggthemes_4.2.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-ggthemes"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.3-1"}
+  "deb-r-cran-ggplot2" {>= "3.0.0"}
+  "deb-r-cran-purrr"
+  "deb-r-cran-scales"
+  "deb-r-cran-stringr"
+  "deb-r-cran-tibble"
+]
+extra-source "r-cran-ggthemes_4.2.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-ggthemes/r-cran-ggthemes_4.2.4-1_all.deb"
+}

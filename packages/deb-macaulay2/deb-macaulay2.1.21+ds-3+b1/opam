@@ -1,0 +1,42 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i macaulay2_1.21+ds-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r macaulay2"]
+]
+depends: [
+  "deb-gdbmtool"
+  "deb-libboost-regex1-74-0"
+  "deb-libboost-stacktrace1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libffi8" {>= "3.4"}
+  "deb-libflint17"
+  "deb-libfrobby0" {>= "0.9.5"}
+  "deb-libgc1" {>= "1-8.0"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgdbm6" {>= "1.16"}
+  "deb-libgivaro9" {>= "4.0.2-8~"}
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-libgmpxx4ldbl" {>= "2-6.2.1+dfsg1"}
+  "deb-libmathic0v5" {>= "1.0~git20220426"}
+  "deb-libmathicgb0" {>= "1.0~git20220621"}
+  "deb-libmemtailor0" {>= "1.0~git20160302"}
+  "deb-libmpfi0" {>= "1.5.1"}
+  "deb-libmpfr6" {>= "4.0.0"}
+  "deb-libmps3" {>= "3.1.8"}
+  "deb-libntl44" {>= "11.5.1"}
+  "deb-libpython3-11" {>= "3.11.0"}
+  "deb-libreadline8" {>= "6.0"}
+  "deb-libsingular4m3n0" {>= "1-4.3.1-p3+ds"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libtbb12" {>= "2021.4.0"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-macaulay2-common" {= "1.21+ds-3"}
+  "deb-singular-data"
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "macaulay2_1.21+ds-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/macaulay2/macaulay2_1.21+ds-3+b1_amd64.deb"
+}

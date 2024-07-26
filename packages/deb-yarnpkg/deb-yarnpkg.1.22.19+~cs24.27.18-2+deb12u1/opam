@@ -1,0 +1,64 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i yarnpkg_1.22.19+~cs24.27.18-2+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r yarnpkg"]
+]
+depends: [
+  "deb-ca-certificates"
+  "deb-node-asap"
+  "deb-node-babel7-runtime"
+  "deb-node-bytes"
+  "deb-node-camelcase"
+  "deb-node-chalk"
+  "deb-node-chownr"
+  "deb-node-ci-info"
+  "deb-node-cli-table"
+  "deb-node-commander" {>= "7"}
+  "deb-node-death"
+  "deb-node-debug"
+  "deb-node-deep-equal"
+  "deb-node-detect-indent"
+  "deb-node-duplexify"
+  "deb-node-emoji"
+  "deb-node-fast-levenshtein"
+  "deb-node-glob"
+  "deb-node-imports-loader"
+  "deb-node-ini"
+  "deb-node-inquirer"
+  "deb-node-invariant"
+  "deb-node-is-builtin-module"
+  "deb-node-js-yaml" {>= "3.13.1"}
+  "deb-node-loud-rejection"
+  "deb-node-micromatch"
+  "deb-node-minimatch"
+  "deb-node-mkdirp" {>= "1.0~"}
+  "deb-node-object-path"
+  "deb-node-path-root"
+  "deb-node-prepend-http"
+  "deb-node-proper-lockfile"
+  "deb-node-puka"
+  "deb-node-pump"
+  "deb-node-pumpify"
+  "deb-node-read"
+  "deb-node-request" {>= "2.88.1-5~"}
+  "deb-node-request-capture-har"
+  "deb-node-resolve" {>= "1.19.0+~cs5.20.8~"}
+  "deb-node-rimraf"
+  "deb-node-semver"
+  "deb-node-sort-keys"
+  "deb-node-ssri"
+  "deb-node-strict-uri-encode"
+  "deb-node-strip-ansi"
+  "deb-node-strip-bom"
+  "deb-node-tar-stream"
+  "deb-node-through2"
+  "deb-node-uuid"
+  "deb-node-validate-npm-package-license"
+  "deb-node-yn"
+  "deb-nodejs-any"
+]
+extra-source "yarnpkg_1.22.19+~cs24.27.18-2+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-yarnpkg/yarnpkg_1.22.19+~cs24.27.18-2+deb12u1_all.deb"
+}

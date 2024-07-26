@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ytalk_3.3.0-9+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ytalk"]
+]
+depends: [
+  "deb-libc6" {>= "2.15"}
+  "deb-libncurses6" {>= "6"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-talkd"
+]
+extra-source "ytalk_3.3.0-9+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/y/ytalk/ytalk_3.3.0-9+b3_amd64.deb"
+}

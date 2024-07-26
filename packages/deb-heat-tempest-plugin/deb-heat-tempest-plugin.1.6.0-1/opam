@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i heat-tempest-plugin_1.6.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r heat-tempest-plugin"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-cinderclient"
+  "deb-python3-gabbi" {>= "2.0.1"}
+  "deb-python3-gnocchiclient"
+  "deb-python3-heatclient"
+  "deb-python3-keystoneauth1"
+  "deb-python3-kombu"
+  "deb-python3-neutronclient"
+  "deb-python3-novaclient"
+  "deb-python3-os-collect-config"
+  "deb-python3-oslo-config"
+  "deb-python3-oslo-log"
+  "deb-python3-oslo-messaging"
+  "deb-python3-paramiko"
+  "deb-python3-pbr"
+  "deb-python3-swiftclient"
+  "deb-python3-tempest"
+  "deb-python3-testscenarios"
+  "deb-python3-testtools"
+  "deb-python3-zaqarclient"
+  "deb-tempest"
+]
+extra-source "heat-tempest-plugin_1.6.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/heat-tempest-plugin/heat-tempest-plugin_1.6.0-1_all.deb"
+}

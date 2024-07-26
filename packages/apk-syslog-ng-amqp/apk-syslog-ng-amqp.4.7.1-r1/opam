@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add syslog-ng-amqp-4.7.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del syslog-ng-amqp"]
+]
+depends: [
+  "apk-glib" {= "2.80.2-r0"}
+  "apk-ivykis" {= "0.43-r0"}
+  "apk-musl" {= "1.2.5-r0"}
+  "apk-rabbitmq-c" {= "0.14.0-r0"}
+  "apk-syslog-ng" {= "4.7.1-r1"}
+]
+extra-source "syslog-ng-amqp-4.7.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/syslog-ng-amqp-4.7.1-r1.apk"
+}

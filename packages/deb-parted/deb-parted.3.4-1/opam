@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i parted_3.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r parted"]
+]
+depends: [
+  "deb-libc6" {>= "2.11"}
+  "deb-libparted2" {= "3.4-1"}
+  "deb-libreadline8" {>= "6.0"}
+  "deb-libtinfo6" {>= "6"}
+]
+conflicts: [
+  "deb-fsresize"
+  "deb-parted1-6"
+]
+extra-source "parted_3.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/parted/parted_3.4-1_amd64.deb"
+}

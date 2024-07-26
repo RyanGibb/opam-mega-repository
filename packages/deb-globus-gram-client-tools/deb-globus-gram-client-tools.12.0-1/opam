@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i globus-gram-client-tools_12.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r globus-gram-client-tools"]
+]
+depends: [
+  "deb-globus-common-progs" {>= "15"}
+  "deb-libc6" {>= "2.4"}
+  "deb-libglobus-common0" {>= "17"}
+  "deb-libglobus-gass-server-ez2" {>= "4"}
+  "deb-libglobus-gass-transfer2" {>= "7"}
+  "deb-libglobus-gram-client3" {>= "12"}
+  "deb-libglobus-gram-protocol3" {>= "11"}
+  "deb-libglobus-gss-assist3" {>= "11"}
+  "deb-libglobus-rsl2" {>= "9"}
+]
+extra-source "globus-gram-client-tools_12.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/globus-gram-client-tools/globus-gram-client-tools_12.0-1_amd64.deb"
+}

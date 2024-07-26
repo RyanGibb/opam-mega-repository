@@ -1,0 +1,43 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdancer2-perl_0.207000+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdancer2-perl"]
+]
+depends: [
+  "deb-libapp-cmd-perl"
+  "deb-libclone-perl"
+  "deb-libconfig-any-perl"
+  "deb-libexporter-tiny-perl"
+  "deb-libfile-share-perl"
+  "deb-libhash-merge-simple-perl"
+  "deb-libhash-multivalue-perl"
+  "deb-libhttp-date-perl"
+  "deb-libhttp-headers-fast-perl" {>= "0.21"}
+  "deb-libhttp-message-perl"
+  "deb-libimport-into-perl"
+  "deb-libjs-jquery"
+  "deb-libjson-maybexs-perl"
+  "deb-libmime-types-perl"
+  "deb-libmodule-runtime-perl"
+  "deb-libmoo-perl" {>= "2.003000"}
+  "deb-libplack-middleware-fixmissingbodyinredirect-perl"
+  "deb-libplack-perl" {>= "1.0040"}
+  "deb-libref-util-perl"
+  "deb-libreturn-multilevel-perl"
+  "deb-librole-tiny-perl" {>= "2.000000"}
+  "deb-libsafe-isa-perl"
+  "deb-libsub-quote-perl"
+  "deb-libtemplate-perl"
+  "deb-libtemplate-tiny-perl"
+  "deb-libtype-tiny-perl" {>= "1.000006"}
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-libyaml-perl" {>= "0.86"}
+  "deb-perl"
+  "deb-perl-base"
+]
+extra-source "libdancer2-perl_0.207000+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libd/libdancer2-perl/libdancer2-perl_0.207000+dfsg-1_all.deb"
+}

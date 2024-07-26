@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i apt-build_0.12.49_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r apt-build"]
+]
+depends: [
+  "deb-apt" {>= "0.8.16~exp3"}
+  "deb-apt-utils"
+  "deb-devscripts"
+  "deb-dpkg-dev" {>= "1.9"}
+  "deb-g++"
+  "deb-gcc"
+  "deb-libappconfig-perl" {>= "1.5"}
+  "deb-libapt-pkg-perl" {>= "0.1.11"}
+  "deb-libc6" {>= "2.7"}
+  "deb-perl-any"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "apt-build_0.12.49_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/apt-build/apt-build_0.12.49_amd64.deb"
+}

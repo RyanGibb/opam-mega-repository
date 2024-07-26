@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openarena-server_0.8.8+dfsg-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openarena-server"]
+]
+depends: [
+  "deb-adduser"
+  "deb-ioquake3-server" {>= "1.36+u20130504"}
+  "deb-libc6" {>= "2.14"}
+  "deb-lsb-base"
+  "deb-openarena-081-maps"
+  "deb-openarena-081-misc"
+  "deb-openarena-081-players"
+  "deb-openarena-081-players-mature"
+  "deb-openarena-081-textures"
+  "deb-openarena-085-data"
+  "deb-openarena-088-data"
+  "deb-openarena-data" {< "0.8.6~"}
+  "deb-openarena-data" {>= "0.8.5"}
+]
+extra-source "openarena-server_0.8.8+dfsg-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openarena/openarena-server_0.8.8+dfsg-5_amd64.deb"
+}

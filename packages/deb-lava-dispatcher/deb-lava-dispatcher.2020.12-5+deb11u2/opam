@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lava-dispatcher_2020.12-5+deb11u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lava-dispatcher"]
+]
+depends: [
+  "deb-bmap-tools"
+  "deb-file"
+  "deb-lava-common" {= "2020.12-5+deb11u2"}
+  "deb-lava-dispatcher-host" {= "2020.12-5+deb11u2"}
+  "deb-python3-aiohttp"
+  "deb-python3-any" {>= "3.6~"}
+  "deb-python3-configobj"
+  "deb-python3-guestfs"
+  "deb-python3-jinja2"
+  "deb-python3-magic"
+  "deb-python3-netifaces" {>= "0.10.0"}
+  "deb-python3-pexpect" {>= "4.2"}
+  "deb-python3-pyudev" {>= "0.21"}
+  "deb-python3-requests"
+  "deb-python3-setproctitle" {>= "1.1.8"}
+  "deb-python3-tz"
+  "deb-python3-yaml"
+  "deb-systemd-sysv"
+  "deb-tar" {>= "1.27"}
+]
+extra-source "lava-dispatcher_2020.12-5+deb11u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lava/lava-dispatcher_2020.12-5+deb11u2_all.deb"
+}

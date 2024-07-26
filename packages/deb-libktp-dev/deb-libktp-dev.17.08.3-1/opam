@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libktp-dev_17.08.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libktp-dev"]
+]
+depends: [
+  "deb-libkf5wallet-dev" {>= "5.11~"}
+  "deb-libktpcommoninternals9" {= "17.08.3-1"}
+  "deb-libktplogger9" {= "17.08.3-1"}
+  "deb-libktpmodels9" {= "17.08.3-1"}
+  "deb-libktpotr9" {= "17.08.3-1"}
+  "deb-libktpwidgets9" {= "17.08.3-1"}
+  "deb-libtelepathy-logger-qt-dev" {>= "17.08~"}
+]
+extra-source "libktp-dev_17.08.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/ktp-common-internals/libktp-dev_17.08.3-1_amd64.deb"
+}

@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i slurm-wlm-basic-plugins_20.11.7+really20.11.4-2+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r slurm-wlm-basic-plugins"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libc6" {>= "2.29"}
+  "deb-libcurl4" {>= "7.16.2"}
+  "deb-libfreeipmi17" {>= "1.4.4"}
+  "deb-libhdf5-103-1"
+  "deb-libhdf5-hl-100"
+  "deb-libhwloc15" {>= "2.4.1+dfsg"}
+  "deb-libipmimonitoring6" {>= "1.1.5"}
+  "deb-libjson-c5" {>= "0.15"}
+  "deb-libjwt0" {>= "1.9.0"}
+  "deb-liblua5-1-0"
+  "deb-libmariadb3" {>= "3.0.0"}
+  "deb-libmunge2" {>= "0.5.8"}
+  "deb-libnuma1" {>= "2.0.11"}
+  "deb-librrd8" {>= "1.3.0"}
+]
+extra-source "slurm-wlm-basic-plugins_20.11.7+really20.11.4-2+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/slurm-wlm/slurm-wlm-basic-plugins_20.11.7+really20.11.4-2+deb11u1_amd64.deb"
+}

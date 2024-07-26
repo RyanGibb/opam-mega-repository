@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-cairosvg_2.5.2-1.1+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-cairosvg"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-cairocffi"
+  "deb-python3-cssselect2"
+  "deb-python3-defusedxml"
+  "deb-python3-lxml"
+  "deb-python3-pil"
+  "deb-python3-tinycss2"
+]
+extra-source "python3-cairosvg_2.5.2-1.1+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cairosvg/python3-cairosvg_2.5.2-1.1+deb12u1_all.deb"
+}

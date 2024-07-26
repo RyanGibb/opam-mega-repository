@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdist-zilla-plugin-git-perl_2.045-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdist-zilla-plugin-git-perl"]
+]
+depends: [
+  "deb-libdatetime-perl"
+  "deb-libdist-zilla-perl"
+  "deb-libdist-zilla-plugin-config-git-perl"
+  "deb-libfile-chdir-perl"
+  "deb-libgit-wrapper-perl"
+  "deb-libipc-system-simple-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-libmodule-runtime-perl"
+  "deb-libmoose-perl"
+  "deb-libmoosex-has-sugar-perl"
+  "deb-libmoosex-types-path-tiny-perl"
+  "deb-libmoosex-types-perl"
+  "deb-libnamespace-autoclean-perl"
+  "deb-libpath-tiny-perl"
+  "deb-libstring-formatter-perl"
+  "deb-libtry-tiny-perl"
+  "deb-libversion-next-perl"
+  "deb-perl"
+  ("deb-perl" {>= "5.25.1"} | "deb- libscalar-list-utils-perl" {>= "1-1.45"})
+]
+extra-source "libdist-zilla-plugin-git-perl_2.045-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libd/libdist-zilla-plugin-git-perl/libdist-zilla-plugin-git-perl_2.045-1_all.deb"
+}

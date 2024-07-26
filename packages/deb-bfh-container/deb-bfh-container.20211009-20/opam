@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i bfh-container_20211009-20_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r bfh-container"]
+]
+depends: [
+  "deb-bfh-base-system"
+  "deb-dbus"
+  "deb-polkitd"
+  "deb-systemd-sysv"
+]
+conflicts: [
+  "deb-molly-guard"
+  "deb-progress-linux-container"
+]
+extra-source "bfh-container_20211009-20_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/bfh-metapackages/bfh-container_20211009-20_all.deb"
+}

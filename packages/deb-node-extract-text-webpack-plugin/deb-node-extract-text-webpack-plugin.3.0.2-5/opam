@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-extract-text-webpack-plugin_3.0.2-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-extract-text-webpack-plugin"]
+]
+depends: [
+  "deb-node-loader-utils" {>= "1.1.0"}
+  "deb-node-neo-async"
+  "deb-node-schema-utils" {>= "3.0.0~"}
+  "deb-node-webpack-sources"
+  "deb-nodejs"
+  "deb-webpack"
+]
+extra-source "node-extract-text-webpack-plugin_3.0.2-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-extract-text-webpack-plugin/node-extract-text-webpack-plugin_3.0.2-5_all.deb"
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add liburing-dev-2.3-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del liburing-dev"]
+]
+depends: [
+  "apk-liburing" {= "2.3-r2"}
+  "apk-pkgconf" {= "1.9.5-r0"}
+]
+extra-source "liburing-dev-2.3-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/liburing-dev-2.3-r2.apk"
+}

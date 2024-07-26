@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pink-pony_1.4.1-3.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pink-pony"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libdevil1c2"
+  "deb-libftgl2" {>= "2.4.0"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgl1"
+  "deb-libglfw3" {>= "3.0"}
+  "deb-libimath-3-1-29" {>= "3.1.5"}
+  "deb-libprotobuf32" {>= "3.21.9"}
+  "deb-libsdl-mixer1-2" {>= "1.2.12"}
+  "deb-libsdl1-2-compat-shim"
+  "deb-libsigc++-2-0-0v5" {>= "2.8.0"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libtinyxml2-6-2v5" {>= "2.6.2"}
+  "deb-pink-pony-data" {= "1.4.1-3.1"}
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+extra-source "pink-pony_1.4.1-3.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pink-pony/pink-pony_1.4.1-3.1_amd64.deb"
+}

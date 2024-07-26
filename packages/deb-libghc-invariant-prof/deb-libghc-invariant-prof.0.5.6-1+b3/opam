@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-invariant-prof_0.5.6-1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-invariant-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-bifunctors-prof"
+  "deb-libghc-comonad-prof"
+  "deb-libghc-contravariant-prof"
+  "deb-libghc-invariant-dev" {= "0.5.6-1+b3"}
+  "deb-libghc-profunctors-prof"
+  "deb-libghc-statevar-prof"
+  "deb-libghc-tagged-prof"
+  "deb-libghc-th-abstraction-prof"
+  "deb-libghc-transformers-compat-prof"
+  "deb-libghc-unordered-containers-prof"
+]
+extra-source "libghc-invariant-prof_0.5.6-1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-invariant/libghc-invariant-prof_0.5.6-1+b3_amd64.deb"
+}

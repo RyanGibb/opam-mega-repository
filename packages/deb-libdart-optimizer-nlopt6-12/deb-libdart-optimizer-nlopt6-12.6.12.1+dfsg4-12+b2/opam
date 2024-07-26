@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdart-optimizer-nlopt6.12_6.12.1+dfsg4-12+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdart-optimizer-nlopt6.12"]
+]
+depends: [
+  "deb-libc6" {>= "2.32"}
+  "deb-libdart6-12" {>= "6.12.1+dfsg4"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libnlopt0" {>= "2.6.1"}
+  "deb-libstdc++6" {>= "5.2"}
+]
+extra-source "libdart-optimizer-nlopt6.12_6.12.1+dfsg4-12+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dart/libdart-optimizer-nlopt6.12_6.12.1+dfsg4-12+b2_amd64.deb"
+}

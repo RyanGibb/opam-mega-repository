@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i printer-driver-escpr_1.7.17-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r printer-driver-escpr"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libcups2" {>= "1.4.0"}
+  "deb-libcupsimage2" {>= "1.4.0"}
+  "deb-python3-any"
+  "deb-xz-utils"
+]
+extra-source "printer-driver-escpr_1.7.17-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/epson-inkjet-printer-escpr/printer-driver-escpr_1.7.17-3_amd64.deb"
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcatmandu-filestore-perl_1.16-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcatmandu-filestore-perl"]
+]
+depends: [
+  "deb-libcatmandu-perl" {>= "1.0600"}
+  "deb-libclone-perl"
+  "deb-libhash-merge-simple-perl"
+  "deb-libio-string-perl"
+  "deb-libmoo-perl"
+  "deb-libnamespace-clean-perl"
+  "deb-libpackage-stash-perl"
+  "deb-libpath-iterator-rule-perl"
+  "deb-libpath-tiny-perl"
+  "deb-liburi-perl"
+  "deb-perl-any"
+]
+extra-source "libcatmandu-filestore-perl_1.16-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libcatmandu-filestore-perl/libcatmandu-filestore-perl_1.16-1_all.deb"
+}

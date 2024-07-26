@@ -1,0 +1,54 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i daps_3.3.2+cleaned1-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r daps"]
+]
+depends: [
+  "deb-bash" {>= "4"}
+  "deb-bzip2"
+  "deb-dia"
+  "deb-ditaa"
+  "deb-docbook-mathml"
+  "deb-docbook-xml"
+  "deb-docbook-xsl"
+  "deb-docbook-xsl-ns"
+  "deb-docbook5-xml"
+  "deb-epubcheck"
+  "deb-fonts-mathjax"
+  "deb-fonts-mathjax-extras"
+  "deb-fop"
+  "deb-ghostscript"
+  "deb-imagemagick"
+  "deb-inkscape"
+  "deb-jing"
+  "deb-libavalon-framework-java"
+  "deb-libimage-exiftool-perl"
+  "deb-libjeuclid-core-java"
+  "deb-libjeuclid-fop-java"
+  "deb-libjs-mathjax"
+  "deb-libsaxon-java"
+  "deb-libsaxonb-java"
+  "deb-libsaxonhe-java"
+  "deb-libxml-commons-external-java"
+  "deb-libxml2-utils"
+  "deb-libxmlgraphics-commons-java"
+  "deb-make"
+  "deb-optipng"
+  "deb-poppler-utils"
+  "deb-python3"
+  "deb-python3-libxml2"
+  "deb-python3-lxml"
+  "deb-remake"
+  "deb-sgml-base"
+  "deb-sgml-data"
+  "deb-w3m"
+  "deb-xml-core" {>= "0.14"}
+  "deb-xmlstarlet"
+  "deb-xsltproc"
+  "deb-zip"
+]
+extra-source "daps_3.3.2+cleaned1-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/daps/daps_3.3.2+cleaned1-4_all.deb"
+}

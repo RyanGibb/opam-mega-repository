@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-rugged_1.5.1+ds-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-rugged"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgit2-1-5" {>= "1.5.0"}
+  "deb-libruby" {< "1-3.2~"}
+  "deb-libruby" {>= "1-3.1~0"}
+  "deb-libruby3-1" {>= "3.1.2"}
+]
+extra-source "ruby-rugged_1.5.1+ds-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-rugged/ruby-rugged_1.5.1+ds-1_amd64.deb"
+}

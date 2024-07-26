@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmodule-depends-perl_0.16-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmodule-depends-perl"]
+]
+depends: [
+  "deb-libclass-accessor-chained-perl"
+  "deb-libenv-sanctify-perl"
+  "deb-libfile-chdir-perl"
+  "deb-perl"
+  ("deb-perl" {>= "5.13.10"} | "deb- libcpan-meta-perl")
+]
+extra-source "libmodule-depends-perl_0.16-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libm/libmodule-depends-perl/libmodule-depends-perl_0.16-3_all.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i torus-trooper_0.22.dfsg1-13_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r torus-trooper"]
+]
+depends: [
+  "deb-libbulletml0v5"
+  "deb-libc6" {>= "2.17"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgl1"
+  "deb-libgphobos3" {>= "12"}
+  "deb-libsdl-mixer1-2" {>= "1.2.12"}
+  "deb-libsdl1-2-compat-shim"
+  "deb-torus-trooper-data" {= "0.22.dfsg1-13"}
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+extra-source "torus-trooper_0.22.dfsg1-13_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/torus-trooper/torus-trooper_0.22.dfsg1-13_amd64.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ironic-conductor_1:16.0.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ironic-conductor"]
+]
+depends: [
+  "deb-ipmitool"
+  "deb-ipxe"
+  "deb-ironic-common" {= "1-16.0.3-1"}
+  "deb-lsb-base" {>= "3.0.6"}
+  "deb-open-iscsi"
+  "deb-pxelinux"
+  "deb-qemu-utils"
+  "deb-tftpd-hpa"
+  "deb-xinetd"
+]
+extra-source "ironic-conductor_1:16.0.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/ironic/ironic-conductor_16.0.3-1_all.deb"
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-alecthomas-chroma-dev_0.8.2-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-alecthomas-chroma-dev"]
+]
+depends: [
+  "deb-golang-github-alecthomas-assert-dev"
+  "deb-golang-github-alecthomas-kong-dev" {>= "0.2.4"}
+  "deb-golang-github-alecthomas-kong-hcl-dev" {>= "0.2.0"}
+  "deb-golang-github-danwakefield-fnmatch-dev"
+  "deb-golang-github-dlclark-regexp2-dev" {>= "1.2.0"}
+  "deb-golang-github-geertjohan-go-rice-dev" {>= "1.0.0+git20191102.d954009"}
+  "deb-golang-github-gorilla-csrf-dev" {>= "1.6.2"}
+  "deb-golang-github-gorilla-handlers-dev" {>= "1.4.2"}
+  "deb-golang-github-gorilla-mux-dev" {>= "1.7.3"}
+  "deb-golang-github-mattn-go-colorable-dev" {>= "0.0.16"}
+  "deb-golang-github-mattn-go-isatty-dev" {>= "0.0.12"}
+]
+extra-source "golang-github-alecthomas-chroma-dev_0.8.2-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-alecthomas-chroma/golang-github-alecthomas-chroma-dev_0.8.2-3_all.deb"
+}

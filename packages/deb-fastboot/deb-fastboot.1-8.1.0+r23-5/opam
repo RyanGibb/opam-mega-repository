@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fastboot_1:8.1.0+r23-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fastboot"]
+]
+depends: [
+  "deb-android-libadb"
+  "deb-android-libbase"
+  "deb-android-libcutils"
+  "deb-android-libf2fs-utils"
+  "deb-android-libsparse"
+  "deb-android-libutils"
+  "deb-android-libziparchive"
+  "deb-libc6" {>= "2.15"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libstdc++6" {>= "5.2"}
+]
+extra-source "fastboot_1:8.1.0+r23-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/android-platform-system-core/fastboot_8.1.0+r23-5_amd64.deb"
+}

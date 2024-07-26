@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i llvm-13-dev_1:13.0.1-11+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r llvm-13-dev"]
+]
+depends: [
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libclang-cpp13" {= "1-13.0.1-11+b2"}
+  "deb-libffi-dev"
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libllvm13" {= "1-13.0.1-11+b2"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-libtinfo-dev"
+  "deb-libxml2-dev"
+  "deb-libz3-dev"
+  "deb-llvm-13" {= "1-13.0.1-11+b2"}
+  "deb-llvm-13-tools" {= "1-13.0.1-11+b2"}
+]
+extra-source "llvm-13-dev_1:13.0.1-11+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/llvm-toolchain-13/llvm-13-dev_13.0.1-11+b2_amd64.deb"
+}

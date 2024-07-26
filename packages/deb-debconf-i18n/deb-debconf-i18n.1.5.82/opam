@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i debconf-i18n_1.5.82_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r debconf-i18n"]
+]
+depends: [
+  "deb-debconf" {= "1.5.82"}
+  "deb-liblocale-gettext-perl"
+  "deb-libtext-charwidth-perl"
+  "deb-libtext-iconv-perl"
+  "deb-libtext-wrapi18n-perl"
+]
+conflicts: [
+  "deb-debconf-english"
+]
+extra-source "debconf-i18n_1.5.82_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/debconf/debconf-i18n_1.5.82_all.deb"
+}

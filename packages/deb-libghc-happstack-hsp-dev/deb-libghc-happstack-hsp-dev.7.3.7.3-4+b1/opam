@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-happstack-hsp-dev_7.3.7.3-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-happstack-hsp-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-happstack-server-dev"
+  "deb-libghc-harp-dev"
+  "deb-libghc-hsp-dev"
+  "deb-libghc-hsx2hs-dev"
+  "deb-libghc-syb-dev"
+  "deb-libghc-utf8-string-dev"
+  "deb-libgmp10"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libghc-happstack-hsp-dev_7.3.7.3-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-happstack-hsp/libghc-happstack-hsp-dev_7.3.7.3-4+b1_amd64.deb"
+}

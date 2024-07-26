@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-tidygraph_1.2.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-tidygraph"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.0-3"}
+  "deb-r-cran-dplyr" {>= "0.8.5"}
+  "deb-r-cran-igraph"
+  "deb-r-cran-magrittr"
+  "deb-r-cran-pillar"
+  "deb-r-cran-r6"
+  "deb-r-cran-rcpp"
+  "deb-r-cran-rlang"
+  "deb-r-cran-tibble"
+  "deb-r-cran-tidyr"
+]
+extra-source "r-cran-tidygraph_1.2.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-tidygraph/r-cran-tidygraph_1.2.0-1_amd64.deb"
+}

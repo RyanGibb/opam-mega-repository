@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cl-qmynd_20180131-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cl-qmynd"]
+]
+depends: [
+  "deb-cl-babel"
+  "deb-cl-flexi-streams"
+  "deb-cl-ironclad"
+  "deb-cl-trivial-gray-streams"
+  "deb-cl-usocket"
+]
+extra-source "cl-qmynd_20180131-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cl-qmynd/cl-qmynd_20180131-1.1_all.deb"
+}

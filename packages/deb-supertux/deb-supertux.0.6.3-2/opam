@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i supertux_0.6.3-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r supertux"]
+]
+depends: [
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgl1"
+  "deb-libglew2-2" {>= "2.2.0-4"}
+  "deb-libopenal1" {>= "1.14"}
+  "deb-libphysfs1" {>= "3.0.2"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libraqm0" {>= "0.3.0"}
+  "deb-libsdl2-2-0-0" {>= "2.0.12"}
+  "deb-libsdl2-image-2-0-0" {>= "2.0.5"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libvorbisfile3" {>= "1.1.2"}
+  "deb-supertux-data" {= "0.6.3-2"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "supertux_0.6.3-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/supertux/supertux_0.6.3-2_amd64.deb"
+}

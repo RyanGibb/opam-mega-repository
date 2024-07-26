@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i plasma-nano_5.27.5-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r plasma-nano"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libkf5service-bin"
+  "deb-libkf5service5" {>= "5.69.0"}
+  "deb-libkf5waylandclient5" {>= "4-5.102.0~"}
+  "deb-libkf5windowsystem5" {>= "5.102.0~"}
+  "deb-libqt5core5a" {>= "5.15.2~"}
+  "deb-libqt5qml5" {>= "5.15.2~"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-plasma-workspace"
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+  ("deb-libqt5quick5" {>= "5.15.2~"} | "deb- libqt5quick5-gles" {>= "5.15.2~"})
+]
+extra-source "plasma-nano_5.27.5-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/plasma-nano/plasma-nano_5.27.5-2_amd64.deb"
+}

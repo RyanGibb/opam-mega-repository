@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mpdcon.app_1.1.99-5+b12_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mpdcon.app"]
+]
+depends: [
+  "deb-gnustep-back0-29" {>= "0.29.0"}
+  "deb-gnustep-base-runtime" {>= "1.28.0"}
+  "deb-gnustep-gui-runtime" {>= "0.29.0"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgnustep-base1-28" {>= "1.28.0"}
+  "deb-libgnustep-gui0-29" {>= "0.29.0"}
+  "deb-libobjc4" {>= "4.2.1"}
+]
+extra-source "mpdcon.app_1.1.99-5+b12_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mpdcon.app/mpdcon.app_1.1.99-5+b12_amd64.deb"
+}

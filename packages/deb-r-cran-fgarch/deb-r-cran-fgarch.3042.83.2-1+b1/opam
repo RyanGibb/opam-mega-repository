@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-fgarch_3042.83.2-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-fgarch"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.0-3"}
+  "deb-r-cran-fastica"
+  "deb-r-cran-fbasics" {>= "2100.78"}
+  "deb-r-cran-matrix"
+  "deb-r-cran-timedate"
+  "deb-r-cran-timeseries"
+]
+extra-source "r-cran-fgarch_3042.83.2-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fgarch/r-cran-fgarch_3042.83.2-1+b1_amd64.deb"
+}

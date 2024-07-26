@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmessage-passing-perl_0.116-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmessage-passing-perl"]
+]
+depends: [
+  "deb-libanyevent-handle-udp-perl"
+  "deb-libanyevent-perl"
+  "deb-libconfig-any-perl"
+  "deb-libdatetime-perl"
+  "deb-libjson-maybexs-perl"
+  "deb-libjson-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-libmodule-runtime-perl" {>= "0.013"}
+  "deb-libmoo-perl"
+  "deb-libmoox-options-perl"
+  "deb-libmoox-types-mooselike-perl"
+  "deb-libnamespace-clean-perl" {>= "0.23"}
+  "deb-libpackage-variant-perl"
+  "deb-libstring-rewriteprefix-perl"
+  "deb-libsys-hostname-long-perl"
+  "deb-libtask-weaken-perl"
+  "deb-libtry-tiny-perl"
+  "deb-perl"
+]
+extra-source "libmessage-passing-perl_0.116-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libm/libmessage-passing-perl/libmessage-passing-perl_0.116-4_all.deb"
+}

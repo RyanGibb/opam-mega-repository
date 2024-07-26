@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fractalnow_0.8.2-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fractalnow"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libmpc3" {>= "1.1.0"}
+  "deb-libmpfr6" {>= "3.1.3"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5widgets5" {>= "5.15.1"}
+  "deb-libstdc++6" {>= "5.2"}
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "fractalnow_0.8.2-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fractalnow/fractalnow_0.8.2-5_amd64.deb"
+}

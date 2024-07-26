@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i nethack-x11_3.6.6-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r nethack-x11"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libncurses6" {>= "6"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-libx11-6"
+  "deb-libxaw7"
+  "deb-libxpm4"
+  "deb-libxt6"
+  "deb-nethack-common" {= "3.6.6-2+b1"}
+  "deb-xfonts-utils"
+]
+extra-source "nethack-x11_3.6.6-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/nethack/nethack-x11_3.6.6-2+b1_amd64.deb"
+}

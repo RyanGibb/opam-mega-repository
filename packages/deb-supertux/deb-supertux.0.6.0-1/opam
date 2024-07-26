@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i supertux_0.6.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r supertux"]
+]
+depends: [
+  "deb-libboost-date-time1-67-0"
+  "deb-libboost-filesystem1-67-0"
+  "deb-libboost-locale1-67-0"
+  "deb-libboost-system1-67-0"
+  "deb-libc6" {>= "2.27"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgl1"
+  "deb-libglew2-1" {>= "1.12.0"}
+  "deb-libogg0" {>= "1.0rc3"}
+  "deb-libopenal1" {>= "1.14"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libraqm0" {>= "0.3.0"}
+  "deb-libsdl2-2-0-0" {>= "2.0.8"}
+  "deb-libsdl2-image-2-0-0" {>= "2.0.2"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libvorbis0a" {>= "1.1.2"}
+  "deb-libvorbisfile3" {>= "1.1.2"}
+  "deb-supertux-data" {= "0.6.0-1"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+extra-source "supertux_0.6.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/supertux/supertux_0.6.0-1_amd64.deb"
+}

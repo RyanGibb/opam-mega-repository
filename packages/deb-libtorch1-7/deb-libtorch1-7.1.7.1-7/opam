@@ -1,0 +1,53 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libtorch1.7_1.7.1-7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libtorch1.7"]
+]
+depends: [
+  "deb-libavcodec-extra58"
+  "deb-libavformat58" {>= "7-4.1"}
+  "deb-libavutil56" {>= "7-4.0"}
+  "deb-libc6" {>= "2.30"}
+  "deb-libcpuinfo0" {>= "0.0~git20181113.3bf2c72"}
+  "deb-libdnnl2" {>= "2.0"}
+  "deb-libfmt7" {>= "7.1.3+ds1"}
+  "deb-libgcc-s1" {>= "3.4"}
+  "deb-libgflags2-2" {>= "2.2.2"}
+  "deb-libgloo0" {>= "0.0~git20200918.3dc0328"}
+  "deb-libgomp1" {>= "4.9"}
+  "deb-libgoogle-glog0v5" {>= "0.4.0"}
+  "deb-libleveldb1d"
+  "deb-liblmdb0" {>= "0.9.7"}
+  "deb-libonnx1" {>= "1.7.0+dfsg"}
+  "deb-libopencv-calib3d4-5" {>= "4.5.1+dfsg"}
+  "deb-libopencv-contrib4-5" {>= "4.5.1+dfsg"}
+  "deb-libopencv-core4-5" {>= "4.5.1+dfsg"}
+  "deb-libopencv-dnn4-5" {>= "4.5.1+dfsg"}
+  "deb-libopencv-features2d4-5" {>= "4.5.1+dfsg"}
+  "deb-libopencv-flann4-5" {>= "4.5.1+dfsg"}
+  "deb-libopencv-highgui4-5" {>= "4.5.1+dfsg"}
+  "deb-libopencv-imgcodecs4-5" {>= "4.5.1+dfsg"}
+  "deb-libopencv-imgproc4-5" {>= "4.5.1+dfsg"}
+  "deb-libopencv-video4-5" {>= "4.5.1+dfsg"}
+  "deb-libopencv-videoio4-5" {>= "4.5.1+dfsg"}
+  "deb-libprotobuf23" {>= "3.12.4"}
+  "deb-libpthreadpool0" {>= "0.0~git20200423.6acde9c"}
+  "deb-libsleef3" {>= "3.3"}
+  "deb-libsnappy1v5" {>= "1.1.8"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libswresample3" {>= "7-4.0"}
+  "deb-libswscale5" {>= "7-4.0"}
+  "deb-libtensorpipe0" {>= "0.0~git20200928.95ff931"}
+  "deb-libunwind8"
+  "deb-libxnnpack0" {>= "0.0~git20201031.beca652+really.git20200323.1b35463"}
+  "deb-libzmq5" {>= "3.2.3+dfsg"}
+  "deb-libzstd1" {>= "1.3.2"}
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-ocl-icd-libopencl1" | "deb- libopencl1")
+]
+extra-source "libtorch1.7_1.7.1-7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pytorch/libtorch1.7_1.7.1-7_amd64.deb"
+}

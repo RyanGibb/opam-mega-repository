@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i spatialite-bin_5.0.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r spatialite-bin"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libreadline8" {>= "6.0"}
+  "deb-libreadosm1" {>= "1.1.0"}
+  "deb-libspatialite7" {>= "5.0.1"}
+  "deb-libsqlite3-0" {>= "3.6.18"}
+  "deb-libxml2" {>= "2.7.4"}
+]
+extra-source "spatialite-bin_5.0.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/spatialite-tools/spatialite-bin_5.0.1-2_amd64.deb"
+}

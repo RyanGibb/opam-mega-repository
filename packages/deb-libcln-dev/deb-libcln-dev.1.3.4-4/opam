@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcln-dev_1.3.4-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcln-dev"]
+]
+depends: [
+  "deb-g++"
+  "deb-install-info"
+  "deb-libcln6" {= "1.3.4-4"}
+  "deb-libgmp-dev"
+  ("deb-libc6-dev" | "deb- libc-dev")
+]
+conflicts: [
+  "deb-cln-dev"
+]
+extra-source "libcln-dev_1.3.4-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cln/libcln-dev_1.3.4-4_amd64.deb"
+}

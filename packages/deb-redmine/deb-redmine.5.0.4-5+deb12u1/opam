@@ -1,0 +1,54 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i redmine_5.0.4-5+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r redmine"]
+]
+depends: [
+  "deb-dbconfig-common"
+  "deb-libjs-chart-js"
+  "deb-libjs-jquery"
+  "deb-libjs-jquery-ui"
+  "deb-libjs-raphael"
+  "deb-libruby3-1"
+  "deb-ruby-actionpack-action-caching" {>= "1.2.2~"}
+  "deb-ruby-actionpack-xml-parser"
+  "deb-ruby-addressable"
+  "deb-ruby-any"
+  "deb-ruby-bundler"
+  "deb-ruby-coderay" {>= "1.0.6~"}
+  "deb-ruby-commonmarker" {>= "0.23.1~"}
+  "deb-ruby-html-pipeline" {>= "2.13.2~"}
+  "deb-ruby-i18n" {>= "1.10.0~"}
+  "deb-ruby-jquery-rails" {>= "4.0.5~"}
+  "deb-ruby-mail" {>= "2.7.1~"}
+  "deb-ruby-marcel"
+  "deb-ruby-mini-magick" {>= "4.11.0~"}
+  "deb-ruby-mini-mime" {>= "1.0.1~"}
+  "deb-ruby-mocha" {>= "1.4.0~"}
+  "deb-ruby-net-ldap" {>= "0.17.0~"}
+  "deb-ruby-nokogiri" {>= "1.13.5~"}
+  "deb-ruby-rack" {>= "1.4.5~"}
+  "deb-ruby-rack-test" {>= "0.7.0~"}
+  "deb-ruby-rails" {>= "2-6.1.7~"}
+  "deb-ruby-rails-dom-testing" {>= "1.0.6-2~"}
+  "deb-ruby-rails-observers"
+  "deb-ruby-rbpdf" {>= "1.19~"}
+  "deb-ruby-redcarpet" {>= "3.5.1~"}
+  "deb-ruby-request-store" {>= "1.5.0~"}
+  "deb-ruby-rmagick" {>= "2.14.0~"}
+  "deb-ruby-roadie" {>= "3.2.2~"}
+  "deb-ruby-roadie-rails" {>= "3.0.0~"}
+  "deb-ruby-rotp" {>= "5.0.0~"}
+  "deb-ruby-rouge" {>= "3.28.0~"}
+  "deb-ruby-rqrcode"
+  "deb-ruby-sanitize" {>= "6.0~"}
+  "deb-ruby-task-list" {>= "2.3.2~"}
+  "deb-ruby-zip" {>= "2.3.0~"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-redmine-sqlite" | "deb- redmine-mysql" | "deb- redmine-pgsql")
+]
+extra-source "redmine_5.0.4-5+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/redmine/redmine_5.0.4-5+deb12u1_all.deb"
+}

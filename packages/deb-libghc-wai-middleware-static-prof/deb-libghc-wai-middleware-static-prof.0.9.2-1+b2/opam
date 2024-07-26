@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-wai-middleware-static-prof_0.9.2-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-wai-middleware-static-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-base16-bytestring-prof"
+  "deb-libghc-cryptohash-sha1-prof"
+  "deb-libghc-expiring-cache-map-prof"
+  "deb-libghc-http-types-prof"
+  "deb-libghc-mime-types-prof"
+  "deb-libghc-old-locale-prof"
+  "deb-libghc-semigroups-prof"
+  "deb-libghc-wai-middleware-static-dev" {= "0.9.2-1+b2"}
+  "deb-libghc-wai-prof"
+]
+extra-source "libghc-wai-middleware-static-prof_0.9.2-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-wai-middleware-static/libghc-wai-middleware-static-prof_0.9.2-1+b2_amd64.deb"
+}

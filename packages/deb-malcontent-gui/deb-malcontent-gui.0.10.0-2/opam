@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i malcontent-gui_0.10.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r malcontent-gui"]
+]
+depends: [
+  "deb-libaccountsservice0" {>= "0.6.30"}
+  "deb-libc6" {>= "2.4"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.60"}
+  "deb-libgtk-3-0" {>= "3.21.4"}
+  "deb-libmalcontent-ui-0-0" {>= "0.6.0"}
+  "deb-libpolkit-gobject-1-0" {>= "0.99"}
+  "deb-malcontent" {= "0.10.0-2"}
+]
+extra-source "malcontent-gui_0.10.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/malcontent/malcontent-gui_0.10.0-2_amd64.deb"
+}

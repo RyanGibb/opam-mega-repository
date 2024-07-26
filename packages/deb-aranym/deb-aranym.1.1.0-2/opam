@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i aranym_1.1.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r aranym"]
+]
+depends: [
+  "deb-libc6" {>= "2.11"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgmp10"
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libmpfr6" {>= "3.1.3"}
+  "deb-libsdl1-2-compat-shim"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libusb-1-0-0" {>= "2-1.0.8"}
+  "deb-libx11-6"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+conflicts: [
+  "deb-aranym-jit"
+  "deb-aranym-mmu"
+]
+extra-source "aranym_1.1.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/aranym/aranym_1.1.0-2_amd64.deb"
+}

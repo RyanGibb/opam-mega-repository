@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tcm_2.20+TSQD-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tcm"]
+]
+depends: [
+  "deb-fig2dev"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libx11-6"
+  "deb-libxm4" {>= "2.3.4"}
+  "deb-libxt6"
+]
+extra-source "tcm_2.20+TSQD-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tcm/tcm_2.20+TSQD-6_amd64.deb"
+}

@@ -1,0 +1,52 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i texlive-binaries_2022.20220321.62855-5.1+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r texlive-binaries"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libfreetype6" {>= "2.3.9"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libgraphite2-3" {>= "1.2.2"}
+  "deb-libharfbuzz0b" {>= "2.6.0"}
+  "deb-libicu72" {>= "72.1~rc-1~"}
+  "deb-libkpathsea6" {< "2022.20220321.62855-5.1+deb12u1.1~"}
+  "deb-libkpathsea6" {>= "2022.20220321.62855-5.1+deb12u1"}
+  "deb-libmpfr6" {>= "3.1.3"}
+  "deb-libpaper1"
+  "deb-libpixman-1-0" {>= "0.10.0"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libptexenc1" {< "2022.20220321.62855-5.1+deb12u1.1~"}
+  "deb-libptexenc1" {>= "2022.20220321.62855-5.1+deb12u1"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libsynctex2" {< "2022.20220321.62855-5.1+deb12u1.1~"}
+  "deb-libsynctex2" {>= "2022.20220321.62855-5.1+deb12u1"}
+  "deb-libteckit0" {>= "2.5.10+ds1-1"}
+  "deb-libtexlua53-5" {< "2022.20220321.62855-5.1+deb12u1.1~"}
+  "deb-libtexlua53-5" {>= "2022.20220321.62855-5.1+deb12u1"}
+  "deb-libtexluajit2" {< "2022.20220321.62855-5.1+deb12u1.1~"}
+  "deb-libtexluajit2" {>= "2022.20220321.62855-5.1+deb12u1"}
+  "deb-libx11-6" {>= "2-1.2.99.901"}
+  "deb-libxaw7" {>= "2-1.0.14"}
+  "deb-libxi6" {>= "2-1.2.99.4"}
+  "deb-libxmu6" {>= "2-1.1.3"}
+  "deb-libxpm4"
+  "deb-libxt6"
+  "deb-libzzip-0-13" {>= "0.13.56"}
+  "deb-perl-any"
+  "deb-t1utils"
+  "deb-tex-common"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+conflicts: [
+  "deb-jmpost"
+  "deb-makejvf"
+  "deb-mendexk"
+]
+extra-source "texlive-binaries_2022.20220321.62855-5.1+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/texlive-bin/texlive-binaries_2022.20220321.62855-5.1+deb12u1_amd64.deb"
+}

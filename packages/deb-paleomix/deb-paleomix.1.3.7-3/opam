@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i paleomix_1.3.7-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r paleomix"]
+]
+depends: [
+  "deb-adapterremoval"
+  "deb-bcftools"
+  "deb-bedtools"
+  "deb-bowtie2"
+  "deb-bwa"
+  "deb-examl"
+  "deb-mafft"
+  "deb-mapdamage"
+  "deb-phylip"
+  "deb-picard-tools"
+  "deb-python3-any"
+  "deb-python3-coloredlogs"
+  "deb-python3-configargparse"
+  "deb-python3-pysam"
+  "deb-python3-ruamel-yaml"
+  "deb-python3-setproctitle"
+  "deb-r-base-core"
+  "deb-radiant"
+  "deb-raxml"
+  "deb-samtools"
+]
+extra-source "paleomix_1.3.7-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/paleomix/paleomix_1.3.7-3_amd64.deb"
+}

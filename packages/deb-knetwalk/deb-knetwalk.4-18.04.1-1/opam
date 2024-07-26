@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i knetwalk_4:18.04.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r knetwalk"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libkf5configcore5" {>= "4.98.0"}
+  "deb-libkf5configgui5" {>= "4.97.0"}
+  "deb-libkf5configwidgets5" {>= "4.96.0"}
+  "deb-libkf5coreaddons5" {>= "5.2.0"}
+  "deb-libkf5crash5" {>= "5.15.0"}
+  "deb-libkf5dbusaddons5" {>= "4.97.0"}
+  "deb-libkf5i18n5" {>= "4.97.0"}
+  "deb-libkf5kdegames7" {>= "4-14.12.50"}
+  "deb-libkf5textwidgets5" {>= "5.0.0"}
+  "deb-libkf5widgetsaddons5" {>= "4.96.0"}
+  "deb-libkf5xmlgui5" {>= "4.98.0"}
+  "deb-libqt5core5a" {>= "5.10.0"}
+  "deb-libqt5gui5" {>= "5.7.0"}
+  "deb-libqt5quickwidgets5" {>= "5.9.0~beta"}
+  "deb-libqt5widgets5" {>= "5.7.0~"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-qml-module-org-kde-games-core"
+  "deb-qml-module-qtquick2"
+]
+extra-source "knetwalk_4:18.04.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/knetwalk/knetwalk_18.04.1-1_amd64.deb"
+}

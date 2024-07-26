@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mopac_22.0.6+dfsg-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mopac"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libgfortran5" {>= "10"}
+  "deb-libgomp1" {>= "4.2.1"}
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "mopac_22.0.6+dfsg-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mopac/mopac_22.0.6+dfsg-1+b1_amd64.deb"
+}

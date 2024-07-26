@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i clblast-tests_1.5.3-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r clblast-tests"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libclblast1" {>= "1.5.1"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libstdc++6" {>= "11"}
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-ocl-icd-libopencl1" | "deb- libopencl1")
+]
+extra-source "clblast-tests_1.5.3-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/clblast/clblast-tests_1.5.3-3_amd64.deb"
+}

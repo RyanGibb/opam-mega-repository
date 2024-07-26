@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i freeradius-utils_3.2.1+dfsg-4+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r freeradius-utils"]
+]
+depends: [
+  "deb-freeradius-common"
+  "deb-freeradius-config"
+  "deb-libc6" {>= "2.34"}
+  "deb-libfreeradius3" {= "3.2.1+dfsg-4+deb12u1"}
+  "deb-libgdbm6" {>= "1.16"}
+  "deb-libpcap0-8" {>= "0.9.8"}
+  "deb-libpcre3"
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libtalloc2" {>= "2.0.4~git20101213"}
+]
+conflicts: [
+  "deb-radiusd-livingston"
+  "deb-yardradius"
+]
+extra-source "freeradius-utils_3.2.1+dfsg-4+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/freeradius/freeradius-utils_3.2.1+dfsg-4+deb12u1_amd64.deb"
+}

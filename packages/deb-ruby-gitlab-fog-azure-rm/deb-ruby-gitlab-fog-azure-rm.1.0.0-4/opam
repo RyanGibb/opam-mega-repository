@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-gitlab-fog-azure-rm_1.0.0-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-gitlab-fog-azure-rm"]
+]
+depends: [
+  "deb-ruby-azure-storage-blob" {>= "2.0~"}
+  "deb-ruby-azure-storage-common" {>= "2.0~"}
+  "deb-ruby-fog-core" {>= "2.1~"}
+  "deb-ruby-fog-json" {>= "1.2~"}
+  "deb-ruby-mime-types"
+  "deb-ruby-ms-rest-azure" {>= "0.12~"}
+]
+extra-source "ruby-gitlab-fog-azure-rm_1.0.0-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-gitlab-fog-azure-rm/ruby-gitlab-fog-azure-rm_1.0.0-4_all.deb"
+}

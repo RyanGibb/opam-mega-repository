@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i obsession_20140608-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r obsession"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.31.8"}
+  "deb-libgtk2-0-0" {>= "2.14.0"}
+]
+extra-source "obsession_20140608-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/obsession/obsession_20140608-2+b1_amd64.deb"
+}

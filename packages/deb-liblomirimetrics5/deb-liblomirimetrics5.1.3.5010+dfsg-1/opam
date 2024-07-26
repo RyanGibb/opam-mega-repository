@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i liblomirimetrics5_1.3.5010+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r liblomirimetrics5"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libegl1"
+  "deb-liblttng-ust1" {>= "2.13.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libstdc++6" {>= "10.2"}
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+  ("deb-libqt5quick5" {>= "5.12.8~"} | "deb- libqt5quick5-gles" {>= "5.12.8~"})
+]
+extra-source "liblomirimetrics5_1.3.5010+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lomiri-ui-toolkit/liblomirimetrics5_1.3.5010+dfsg-1_amd64.deb"
+}

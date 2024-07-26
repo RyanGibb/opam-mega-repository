@@ -1,0 +1,42 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-docker-docker-dev_18.09.1+dfsg1-7.1+deb10u3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-docker-docker-dev"]
+]
+depends: [
+  "deb-golang-dbus-dev" {>= "3~"}
+  "deb-golang-github-azure-go-ansiterm-dev"
+  "deb-golang-github-burntsushi-toml-dev"
+  "deb-golang-github-deckarep-golang-set-dev"
+  "deb-golang-github-docker-distribution-dev"
+  "deb-golang-github-docker-docker-credential-helpers-dev" {>= "0.6.1~"}
+  "deb-golang-github-docker-go-connections-dev"
+  "deb-golang-github-docker-go-events-dev"
+  "deb-golang-github-docker-go-units-dev"
+  "deb-golang-github-docker-libkv-dev"
+  "deb-golang-github-fsnotify-fsnotify-dev"
+  "deb-golang-github-gogo-protobuf-dev"
+  "deb-golang-github-gorilla-mux-dev"
+  "deb-golang-github-hashicorp-memberlist-dev" {>= "0.1.0~"}
+  "deb-golang-github-hashicorp-serf-dev"
+  "deb-golang-github-mattn-go-shellwords-dev"
+  "deb-golang-github-opencontainers-go-digest-dev"
+  "deb-golang-github-opencontainers-image-spec-dev"
+  "deb-golang-github-opencontainers-runc-dev" {>= "1.0.0~rc6~"}
+  "deb-golang-github-opencontainers-selinux-dev"
+  "deb-golang-github-pkg-errors-dev"
+  "deb-golang-github-sirupsen-logrus-dev" {>= "1.0.2~"}
+  "deb-golang-github-stretchr-testify-dev"
+  "deb-golang-github-tchap-go-patricia-dev"
+  "deb-golang-github-vishvananda-netlink-dev" {>= "1.0.0~"}
+  "deb-golang-github-vishvananda-netns-dev"
+  "deb-golang-golang-x-net-dev"
+  "deb-golang-golang-x-sys-dev"
+  "deb-golang-google-grpc-dev"
+  "deb-golang-gopkg-check-v1-dev"
+]
+extra-source "golang-github-docker-docker-dev_18.09.1+dfsg1-7.1+deb10u3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/docker.io/golang-github-docker-docker-dev_18.09.1+dfsg1-7.1+deb10u3_all.deb"
+}

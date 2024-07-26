@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libfindbugs-java_3.1.0~preview2-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libfindbugs-java"]
+]
+depends: [
+  "deb-libasm-java" {>= "5.0"}
+  "deb-libbcel-java" {>= "6.0"}
+  "deb-libcommons-lang-java" {>= "2.4"}
+  "deb-libdom4j-java" {>= "1.6.1"}
+  "deb-libjaxen-java" {>= "1.1.1"}
+  "deb-libjcip-annotations-java"
+  "deb-libjformatstring-java" {>= "0.10~20131207-2~"}
+  "deb-libjsr305-java"
+]
+extra-source "libfindbugs-java_3.1.0~preview2-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/findbugs/libfindbugs-java_3.1.0~preview2-3_all.deb"
+}

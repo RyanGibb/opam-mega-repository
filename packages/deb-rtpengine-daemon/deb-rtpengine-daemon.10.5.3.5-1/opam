@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i rtpengine-daemon_10.5.3.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r rtpengine-daemon"]
+]
+depends: [
+  "deb-iptables"
+  "deb-libavcodec-extra59"
+  "deb-libavformat-extra59"
+  "deb-libavutil57" {>= "7-5.1"}
+  "deb-libbcg729-0" {>= "1.0.0"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libevent-2-1-7" {>= "2.1.8-stable"}
+  "deb-libevent-pthreads-2-1-7" {>= "2.1.8-stable"}
+  "deb-libglib2-0-0" {>= "2.67.3"}
+  "deb-libhiredis0-14" {>= "0.14.1"}
+  "deb-libip4tc2" {>= "1.8.3"}
+  "deb-libip6tc2" {>= "1.8.3"}
+  "deb-libjson-glib-1-0-0" {>= "1.5.2"}
+  "deb-libmariadb3" {>= "3.0.0"}
+  "deb-libmosquitto1" {>= "1.4"}
+  "deb-libpcap0-8" {>= "0.9.8"}
+  "deb-libpcre3"
+  "deb-libspandsp2" {>= "0.0.6"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libswresample4" {>= "7-5.1"}
+  "deb-libsystemd0"
+  "deb-libwebsockets17" {>= "2.4.1"}
+  "deb-libxmlrpc-core-c3"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-sysvinit-utils" {>= "3.05-4~"} | "deb- lsb-base" {>= "3.0-6"})
+]
+conflicts: [
+  "deb-ngcp-rtpengine-daemon"
+]
+extra-source "rtpengine-daemon_10.5.3.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rtpengine/rtpengine-daemon_10.5.3.5-1_amd64.deb"
+}

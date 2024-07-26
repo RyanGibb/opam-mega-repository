@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-doctemplates-prof_0.10.0.1-1+b5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-doctemplates-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-aeson-prof"
+  "deb-libghc-doclayout-prof"
+  "deb-libghc-doctemplates-dev" {= "0.10.0.1-1+b5"}
+  "deb-libghc-hsyaml-prof"
+  "deb-libghc-safe-prof"
+  "deb-libghc-scientific-prof"
+  "deb-libghc-text-conversions-prof"
+  "deb-libghc-vector-prof"
+]
+extra-source "libghc-doctemplates-prof_0.10.0.1-1+b5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-doctemplates/libghc-doctemplates-prof_0.10.0.1-1+b5_amd64.deb"
+}

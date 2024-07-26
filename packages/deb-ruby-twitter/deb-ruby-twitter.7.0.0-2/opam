@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-twitter_7.0.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-twitter"]
+]
+depends: [
+  "deb-ruby-addressable"
+  "deb-ruby-buftok"
+  "deb-ruby-equalizer"
+  "deb-ruby-http" {>= "4.0~"}
+  "deb-ruby-http-form-data"
+  "deb-ruby-http-parser-rb" {>= "0.6.0-5~"}
+  "deb-ruby-memoizable"
+  "deb-ruby-multipart-post"
+  "deb-ruby-naught"
+  "deb-ruby-simple-oauth"
+]
+conflicts: [
+  "deb-ruby-twitter4r"
+]
+extra-source "ruby-twitter_7.0.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-twitter/ruby-twitter_7.0.0-2_all.deb"
+}

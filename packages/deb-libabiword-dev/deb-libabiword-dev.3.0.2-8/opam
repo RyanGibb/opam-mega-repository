@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libabiword-dev_3.0.2-8_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libabiword-dev"]
+]
+depends: [
+  "deb-gir1-2-abi-3-0" {= "3.0.2-8"}
+  "deb-libabiword-3-0" {= "3.0.2-8"}
+  "deb-libebook1-2-dev"
+  "deb-libecal1-2-dev"
+  "deb-libenchant-dev"
+  "deb-libfribidi-dev"
+  "deb-libglib2-0-dev"
+  "deb-libgoffice-0-10-dev"
+  "deb-libgsf-1-dev"
+  "deb-libgtk-3-dev"
+  "deb-libical-dev" {>= "3.0"}
+  "deb-libpango1-0-dev"
+  "deb-librasqal3-dev"
+  "deb-librdf0-dev"
+  "deb-librsvg2-dev"
+  "deb-libwv-dev"
+  "deb-libx11-dev"
+  ("deb-libcairo-dev" | "deb- libcairo2-dev")
+  ("deb-libxslt-dev" | "deb- libxslt1-dev")
+]
+extra-source "libabiword-dev_3.0.2-8_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/abiword/libabiword-dev_3.0.2-8_amd64.deb"
+}

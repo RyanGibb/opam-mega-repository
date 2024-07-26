@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i docknot_7.01-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r docknot"]
+]
+depends: [
+  "deb-libfile-basedir-perl"
+  "deb-libfile-sharedir-perl"
+  "deb-libgit-repository-perl"
+  "deb-libimage-size-perl"
+  "deb-libio-compress-lzma-perl"
+  "deb-libio-compress-perl"
+  "deb-libipc-run-perl"
+  "deb-libipc-system-simple-perl"
+  "deb-libjson-maybexs-perl"
+  "deb-liblist-someutils-perl"
+  "deb-libpath-iterator-rule-perl"
+  "deb-libpath-tiny-perl"
+  "deb-libperl6-slurp-perl"
+  "deb-libpod-thread-perl" {>= "3.01"}
+  "deb-libsort-versions-perl"
+  "deb-libtemplate-perl"
+  "deb-libtimedate-perl"
+  "deb-libyaml-libyaml-perl"
+  "deb-pandoc"
+  "deb-perl-any"
+  "deb-pkwalify"
+]
+extra-source "docknot_7.01-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/docknot/docknot_7.01-1_all.deb"
+}

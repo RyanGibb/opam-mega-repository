@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xdmx_2:1.20.11-1+deb11u13_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xdmx"]
+]
+depends: [
+  "deb-libaudit1" {>= "1-2.2.1"}
+  "deb-libbsd0" {>= "0.7.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcrypt20" {>= "1.8.0"}
+  "deb-libpixman-1-0" {>= "0.30.0"}
+  "deb-libselinux1" {>= "3.1~"}
+  "deb-libsystemd0"
+  "deb-libunwind8"
+  "deb-libx11-6" {>= "2-1.6.0"}
+  "deb-libxau6" {>= "1-1.0.9"}
+  "deb-libxdmcp6"
+  "deb-libxext6"
+  "deb-libxfixes3"
+  "deb-libxfont2" {>= "1-2.0.1"}
+  "deb-libxi6"
+  "deb-libxmuu1"
+  "deb-libxrender1"
+  "deb-xserver-common" {>= "2-1.20.11-1+deb11u13"}
+]
+extra-source "xdmx_2:1.20.11-1+deb11u13_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xorg-server/xdmx_1.20.11-1+deb11u13_amd64.deb"
+}

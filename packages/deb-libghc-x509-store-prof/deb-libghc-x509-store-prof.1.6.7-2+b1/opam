@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-x509-store-prof_1.6.7-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-x509-store-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-asn1-encoding-prof"
+  "deb-libghc-asn1-types-prof"
+  "deb-libghc-cryptonite-prof"
+  "deb-libghc-pem-prof"
+  "deb-libghc-x509-prof"
+  "deb-libghc-x509-store-dev" {= "1.6.7-2+b1"}
+]
+extra-source "libghc-x509-store-prof_1.6.7-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-x509-store/libghc-x509-store-prof_1.6.7-2+b1_amd64.deb"
+}

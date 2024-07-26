@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libboost1.67-doc_1.67.0-13+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libboost1.67-doc"]
+]
+depends: [
+  "deb-libjs-mathjax"
+]
+conflicts: [
+  "deb-libboost1-42-doc"
+  "deb-libboost1-46-doc"
+  "deb-libboost1-48-doc"
+  "deb-libboost1-49-doc"
+  "deb-libboost1-50-doc"
+  "deb-libboost1-52-doc"
+  "deb-libboost1-53-doc"
+  "deb-libboost1-54-doc"
+  "deb-libboost1-55-doc"
+  "deb-libboost1-57-doc"
+  "deb-libboost1-58-doc"
+  "deb-libboost1-60-doc"
+  "deb-libboost1-61-doc"
+  "deb-libboost1-62-doc"
+  "deb-libboost1-63-doc"
+  "deb-libboost1-65-doc"
+]
+extra-source "libboost1.67-doc_1.67.0-13+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/boost1.67/libboost1.67-doc_1.67.0-13+deb10u1_all.deb"
+}

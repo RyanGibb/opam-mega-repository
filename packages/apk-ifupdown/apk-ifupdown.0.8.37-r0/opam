@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ifupdown-0.8.37-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ifupdown"]
+]
+depends: [
+  "apk-musl" {= "1.2.3-r3"}
+  "apk-run-parts" {= "4.11.2-r0"}
+]
+extra-source "ifupdown-0.8.37-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/ifupdown-0.8.37-r0.apk"
+}

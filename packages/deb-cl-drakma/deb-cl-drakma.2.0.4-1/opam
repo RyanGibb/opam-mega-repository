@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cl-drakma_2.0.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cl-drakma"]
+]
+depends: [
+  "deb-cl-base64"
+  "deb-cl-chipz"
+  "deb-cl-chunga"
+  "deb-cl-fiveam"
+  "deb-cl-flexi-streams"
+  "deb-cl-plus-ssl"
+  "deb-cl-ppcre"
+  "deb-cl-puri"
+  "deb-cl-usocket"
+]
+extra-source "cl-drakma_2.0.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cl-drakma/cl-drakma_2.0.4-1_all.deb"
+}

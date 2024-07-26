@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libnet-z3950-simple2zoom-perl_1.04-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libnet-z3950-simple2zoom-perl"]
+]
+depends: [
+  "deb-libmarc-record-perl"
+  "deb-libmarc-xml-perl"
+  "deb-libnet-z3950-simpleserver-perl"
+  "deb-libnet-z3950-zoom-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-libxml-libxml-perl"
+  "deb-libxml-simple-perl"
+  "deb-perl"
+]
+extra-source "libnet-z3950-simple2zoom-perl_1.04-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libn/libnet-z3950-simple2zoom-perl/libnet-z3950-simple2zoom-perl_1.04-1_all.deb"
+}

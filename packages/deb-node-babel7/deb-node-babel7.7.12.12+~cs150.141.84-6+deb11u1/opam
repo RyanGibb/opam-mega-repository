@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-babel7_7.12.12+~cs150.141.84-6+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-babel7"]
+]
+depends: [
+  "deb-node-babel7-runtime" {= "7.12.12+~cs150.141.84-6+deb11u1"}
+  "deb-node-browserslist" {>= "4.16~"}
+  "deb-node-chalk" {>= "4~"}
+  "deb-node-commander" {>= "4.1.1"}
+  "deb-node-convert-source-map"
+  "deb-node-core-js" {>= "3.1.1~"}
+  "deb-node-debug"
+  "deb-node-esutils"
+  "deb-node-find-cache-dir"
+  "deb-node-fs-readdir-recursive" {>= "1.1.0~"}
+  "deb-node-glob"
+  "deb-node-globals"
+  "deb-node-js-tokens"
+  "deb-node-jsesc"
+  "deb-node-json5"
+  "deb-node-lodash" {>= "4.17.19+dfsg1~"}
+  "deb-node-make-dir"
+  "deb-node-quick-lru"
+  "deb-node-regenerator-transform" {>= "0.14~"}
+  "deb-node-regexpu-core"
+  "deb-node-resolve"
+  "deb-node-semver" {>= "7.0~"}
+  "deb-node-slash"
+  "deb-node-source-map"
+  "deb-node-source-map-support"
+  "deb-node-to-fast-properties"
+  "deb-node-v8flags"
+  "deb-nodejs"
+]
+extra-source "node-babel7_7.12.12+~cs150.141.84-6+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-babel7/node-babel7_7.12.12+~cs150.141.84-6+deb11u1_all.deb"
+}

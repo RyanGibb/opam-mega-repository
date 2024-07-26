@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i model-builder_0.4.1-6.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r model-builder"]
+]
+depends: [
+  "deb-python" {< "2.8"}
+  "deb-python" {>= "2.7"}
+  "deb-python-matplotlib"
+  "deb-python-numpy"
+  "deb-python-pkg-resources"
+  "deb-python-scipy"
+  "deb-python-wxgtk3-0"
+  "deb-python-wxtools"
+]
+extra-source "model-builder_0.4.1-6.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/model-builder/model-builder_0.4.1-6.2_all.deb"
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-behave_1.2.6-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-behave"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-parse"
+  "deb-python3-parse-type"
+  "deb-python3-six" {>= "1.11"}
+]
+extra-source "python3-behave_1.2.6-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/behave/python3-behave_1.2.6-4_all.deb"
+}

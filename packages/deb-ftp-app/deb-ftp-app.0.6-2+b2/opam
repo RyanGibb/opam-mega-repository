@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ftp.app_0.6-2+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ftp.app"]
+]
+depends: [
+  "deb-gnustep-back0-28" {>= "0.28.0"}
+  "deb-gnustep-base-runtime" {>= "1.27.0"}
+  "deb-gnustep-gui-runtime" {>= "0.28.0"}
+  "deb-libc6" {>= "2.4"}
+  "deb-libgnustep-base1-27" {>= "1.27.0"}
+  "deb-libgnustep-gui0-28" {>= "0.28.0"}
+  "deb-libobjc4" {>= "4.2.1"}
+]
+extra-source "ftp.app_0.6-2+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/ftp.app/ftp.app_0.6-2+b2_amd64.deb"
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lighttpd_1.4.69-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lighttpd"]
+]
+depends: [
+  "deb-libc6" {>= "2.36"}
+  "deb-libcrypt1" {>= "1-4.1.0"}
+  "deb-libnettle8"
+  "deb-libpcre2-8-0" {>= "10.22"}
+  "deb-libxxhash0" {>= "0.6.5"}
+  ("deb-media-types" | "deb- mime-support")
+  ("deb-systemd-sysv" | "deb- lsb-base")
+]
+conflicts: [
+  "deb-lighttpd-mod-geoip"
+  "deb-lighttpd-mod-trigger-b4-dl"
+]
+extra-source "lighttpd_1.4.69-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lighttpd/lighttpd_1.4.69-1_amd64.deb"
+}

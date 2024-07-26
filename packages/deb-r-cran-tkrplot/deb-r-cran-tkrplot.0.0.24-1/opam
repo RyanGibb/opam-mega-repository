@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-tkrplot_0.0.24-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-tkrplot"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libtcl8-6" {>= "8.6.0"}
+  "deb-libtk8-6" {>= "8.6.0"}
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxss1"
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "3.5.1-1"}
+]
+extra-source "r-cran-tkrplot_0.0.24-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tkrplot/r-cran-tkrplot_0.0.24-1_amd64.deb"
+}

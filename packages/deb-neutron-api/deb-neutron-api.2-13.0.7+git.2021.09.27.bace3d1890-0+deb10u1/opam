@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i neutron-api_2:13.0.7+git.2021.09.27.bace3d1890-0+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r neutron-api"]
+]
+depends: [
+  "deb-adduser"
+  "deb-debconf"
+  "deb-lsb-base" {>= "3.0.6"}
+  "deb-neutron-common" {= "2-13.0.7+git.2021.09.27.bace3d1890-0+deb10u1"}
+  "deb-python-q-text-as-data"
+  "deb-python3-keystoneclient"
+  "deb-python3-openstackclient"
+  "deb-python3-pastescript"
+  "deb-uwsgi-plugin-python3"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "neutron-api_2:13.0.7+git.2021.09.27.bace3d1890-0+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/neutron/neutron-api_13.0.7+git.2021.09.27.bace3d1890-0+deb10u1_all.deb"
+}

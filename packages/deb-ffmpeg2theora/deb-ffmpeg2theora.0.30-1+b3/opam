@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ffmpeg2theora_0.30-1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ffmpeg2theora"]
+]
+depends: [
+  "deb-libavdevice58" {>= "7-4.0"}
+  "deb-libavformat58" {>= "7-4.0"}
+  "deb-libavutil56" {>= "7-4.0"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libkate1" {>= "0.3.0"}
+  "deb-libogg0" {>= "1.0rc3"}
+  "deb-liboggkate1" {>= "0.3.0"}
+  "deb-libpostproc55" {>= "7-4.0"}
+  "deb-libswresample3" {>= "7-4.0"}
+  "deb-libswscale5" {>= "7-4.0"}
+  "deb-libtheora0" {>= "1.0"}
+  "deb-libvorbis0a" {>= "1.2.3"}
+  "deb-libvorbisenc2" {>= "1.1.2"}
+  ("deb-libavcodec58" {>= "7-4.0"} | "deb- libavcodec-extra58" {>= "7-4.0"})
+  ("deb-libavfilter7" {>= "7-4.0"} | "deb- libavfilter-extra7" {>= "7-4.0"})
+]
+extra-source "ffmpeg2theora_0.30-1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/ffmpeg2theora/ffmpeg2theora_0.30-1+b3_amd64.deb"
+}

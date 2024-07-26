@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-osrg-gobgp-dev_2.25.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-osrg-gobgp-dev"]
+]
+depends: [
+  "deb-golang-github-armon-go-radix-dev"
+  "deb-golang-github-influxdb-influxdb-dev"
+  "deb-golang-github-kr-pretty-dev"
+  "deb-golang-github-satori-go-uuid-dev"
+  "deb-golang-github-sirupsen-logrus-dev"
+  "deb-golang-github-socketplane-libovsdb-dev"
+  "deb-golang-github-spf13-cobra-dev"
+  "deb-golang-github-spf13-viper-dev"
+  "deb-golang-github-stretchr-testify-dev"
+  "deb-golang-github-vishvananda-netlink-dev"
+  "deb-golang-go"
+  "deb-golang-go-flags-dev"
+  "deb-golang-golang-x-net-dev"
+  "deb-golang-google-grpc-dev"
+  "deb-golang-gopkg-eapache-channels-v1-dev"
+  "deb-golang-gopkg-tomb-v2-dev"
+  "deb-golang-goprotobuf-dev"
+  "deb-golang-toml-dev"
+]
+extra-source "golang-github-osrg-gobgp-dev_2.25.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gobgp/golang-github-osrg-gobgp-dev_2.25.0-2_all.deb"
+}

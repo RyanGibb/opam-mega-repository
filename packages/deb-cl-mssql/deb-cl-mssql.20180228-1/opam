@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cl-mssql_20180228-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cl-mssql"]
+]
+depends: [
+  "deb-cl-cffi"
+  "deb-cl-garbage-pools"
+  "deb-cl-iterate"
+  "deb-freetds-dev"
+]
+extra-source "cl-mssql_20180228-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cl-mssql/cl-mssql_20180228-1_all.deb"
+}

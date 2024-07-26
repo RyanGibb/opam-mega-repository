@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-inquirer_3.3.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-inquirer"]
+]
+depends: [
+  "deb-node-ansi-escapes" {>= "3.0.0"}
+  "deb-node-chalk" {>= "2.0.0"}
+  "deb-node-cli-cursor" {>= "2.1.0"}
+  "deb-node-cli-width"
+  "deb-node-external-editor"
+  "deb-node-lodash" {>= "4.3.0"}
+  "deb-node-mute-stream" {>= "0.0.7"}
+  "deb-node-run-async"
+  "deb-node-rx"
+  "deb-node-string-width" {>= "2.1.0"}
+  "deb-node-strip-ansi" {>= "4.0.0"}
+  "deb-node-through2" {>= "2.0"}
+  "deb-nodejs"
+]
+extra-source "node-inquirer_3.3.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-inquirer/node-inquirer_3.3.0-3_all.deb"
+}

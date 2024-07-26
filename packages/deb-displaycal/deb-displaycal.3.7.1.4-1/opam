@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i displaycal_3.7.1.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r displaycal"]
+]
+depends: [
+  "deb-argyll"
+  "deb-libc6" {>= "2.4"}
+  "deb-libjs-jquery"
+  "deb-libx11-6"
+  "deb-libxinerama1"
+  "deb-libxrandr2" {>= "2-1.2.0"}
+  "deb-libxxf86vm1"
+  "deb-python" {< "2.8"}
+  "deb-python" {>= "2.7~"}
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7~"}
+  "deb-python-numpy"
+  "deb-python-wxgtk3-0"
+]
+extra-source "displaycal_3.7.1.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/displaycal/displaycal_3.7.1.4-1_amd64.deb"
+}

@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i wims_1:4.17b+svn13454~dfsg1-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r wims"]
+]
+depends: [
+  "deb-chemeq" {>= "2.12"}
+  "deb-cpp"
+  "deb-fortunes"
+  "deb-gnuplot"
+  "deb-graphviz"
+  "deb-ldap-utils"
+  "deb-libapache2-mod-fcgid"
+  "deb-libc6" {>= "2.29"}
+  "deb-libcrypt1" {>= "1-4.1.0"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgd3" {>= "2.1.0~alpha~"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-maxima" {>= "5.26.0"}
+  "deb-maxima-share"
+  "deb-octave"
+  "deb-pari-gp"
+  "deb-qrencode"
+  "deb-texlive-base"
+  "deb-texlive-fonts-recommended"
+  "deb-texlive-latex-base"
+  "deb-units-filter" {>= "3.5"}
+  "deb-wims-modules" {>= "1-4.17b+svn13454~dfsg1-6"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-imagemagick" {>= "4-5.4.4.5-1"} | "deb- graphicsmagick-imagemagick-compat")
+  ("deb-mailutils" | "deb- mailx")
+]
+extra-source "wims_1:4.17b+svn13454~dfsg1-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/w/wims/wims_4.17b+svn13454~dfsg1-6_amd64.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libepc-1.0-3_0.4.6-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libepc-1.0-3"]
+]
+depends: [
+  "deb-libavahi-client3" {>= "0.6.16"}
+  "deb-libavahi-common3" {>= "0.6.16"}
+  "deb-libavahi-glib1" {>= "0.6.16"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libepc-common" {>= "0.4.6-2"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libgnutls30" {>= "3.7.0"}
+  "deb-libsoup2-4-1" {>= "2.4.0"}
+  "deb-libuuid1" {>= "2.16"}
+]
+extra-source "libepc-1.0-3_0.4.6-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libe/libepc/libepc-1.0-3_0.4.6-2+b1_amd64.deb"
+}

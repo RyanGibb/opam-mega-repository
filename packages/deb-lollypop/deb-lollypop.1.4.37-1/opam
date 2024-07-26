@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lollypop_1.4.37-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lollypop"]
+]
+depends: [
+  "deb-gir1-2-gst-plugins-base-1-0"
+  "deb-gir1-2-gstreamer-1-0"
+  "deb-gir1-2-handy-1"
+  "deb-gir1-2-secret-1"
+  "deb-gir1-2-soup-3-0"
+  "deb-gir1-2-totemplparser-1-0"
+  "deb-libhandy-1-0"
+  "deb-python3"
+  "deb-python3-any"
+  "deb-python3-bs4"
+  "deb-python3-cairo"
+  "deb-python3-gi"
+  "deb-python3-gi-cairo"
+  "deb-python3-gst-1-0"
+  "deb-python3-pil"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "lollypop_1.4.37-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lollypop/lollypop_1.4.37-1_all.deb"
+}

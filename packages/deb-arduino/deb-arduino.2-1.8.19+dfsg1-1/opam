@@ -1,0 +1,46 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i arduino_2:1.8.19+dfsg1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r arduino"]
+]
+depends: [
+  "deb-arduino-builder" {>= "1.3.25-2"}
+  "deb-arduino-core-avr"
+  "deb-avrdude"
+  "deb-dpkg-dev"
+  "deb-libastylej-jni"
+  "deb-libbatik-java"
+  "deb-libbcpg-java"
+  "deb-libbcprov-java"
+  "deb-libcommons-codec-java"
+  "deb-libcommons-compress-java"
+  "deb-libcommons-exec-java"
+  "deb-libcommons-io-java"
+  "deb-libcommons-lang3-java"
+  "deb-libcommons-logging-java"
+  "deb-libcommons-net-java"
+  "deb-libhttpclient-java"
+  "deb-libjackson2-annotations-java"
+  "deb-libjackson2-core-java"
+  "deb-libjackson2-databind-java"
+  "deb-libjaxp1-3-java"
+  "deb-libjmdns-java"
+  "deb-libjna-java"
+  "deb-libjna-platform-java"
+  "deb-libjsch-java"
+  "deb-libjssc-java"
+  "deb-liblistserialsj-dev"
+  "deb-liblog4j2-java"
+  "deb-librsyntaxtextarea-java"
+  "deb-librxtx-java"
+  "deb-libsemver-java"
+  "deb-libslf4j-java"
+  "deb-libxml-commons-external-java"
+  "deb-libxmlgraphics-commons-java"
+  ("deb-default-jre" | "deb- openjdk-11-jre")
+]
+extra-source "arduino_2:1.8.19+dfsg1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/arduino/arduino_1.8.19+dfsg1-1_amd64.deb"
+}

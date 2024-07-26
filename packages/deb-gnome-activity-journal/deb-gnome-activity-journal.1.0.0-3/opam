@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnome-activity-journal_1.0.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnome-activity-journal"]
+]
+depends: [
+  "deb-gir1-2-gnomedesktop-3-0"
+  "deb-gir1-2-pango-1-0"
+  "deb-python3-any"
+  "deb-python3-cairo"
+  "deb-python3-dbus"
+  "deb-python3-gi-cairo"
+  "deb-python3-xdg"
+  "deb-python3-zeitgeist" {>= "1.0.3"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "gnome-activity-journal_1.0.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnome-activity-journal/gnome-activity-journal_1.0.0-3_all.deb"
+}

@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libboost-context1.74-dev_1.74.0+ds1-21_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libboost-context1.74-dev"]
+]
+depends: [
+  "deb-libboost-context1-74-0" {= "1.74.0+ds1-21"}
+  "deb-libboost-thread1-74-dev" {= "1.74.0+ds1-21"}
+  "deb-libboost1-74-dev" {= "1.74.0+ds1-21"}
+]
+conflicts: [
+  "deb-libboost-context1-53-dev"
+  "deb-libboost-context1-54-dev"
+  "deb-libboost-context1-55-dev"
+  "deb-libboost-context1-57-dev"
+  "deb-libboost-context1-58-dev"
+  "deb-libboost-context1-60-dev"
+  "deb-libboost-context1-61-dev"
+  "deb-libboost-context1-62-dev"
+  "deb-libboost-context1-63-dev"
+  "deb-libboost-context1-65-dev"
+  "deb-libboost-context1-67-dev"
+  "deb-libboost-context1-70-dev"
+  "deb-libboost-context1-71-dev"
+]
+extra-source "libboost-context1.74-dev_1.74.0+ds1-21_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/boost1.74/libboost-context1.74-dev_1.74.0+ds1-21_amd64.deb"
+}

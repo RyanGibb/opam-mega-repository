@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i minetest-mod-homedecor_20181109.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r minetest-mod-homedecor"]
+]
+depends: [
+  "deb-minetest-mod-basic-materials"
+  "deb-minetest-mod-currency"
+  "deb-minetest-mod-unifieddyes"
+  ("deb-minetest" | "deb- minetest-server")
+]
+extra-source "minetest-mod-homedecor_20181109.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/minetest-mod-homedecor/minetest-mod-homedecor_20181109.2-1_all.deb"
+}

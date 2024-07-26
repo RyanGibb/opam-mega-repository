@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libaws20-dev_20.2-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libaws20-dev"]
+]
+depends: [
+  "deb-gnat"
+  "deb-gnat-10"
+  "deb-libaws6" {= "20.2-2"}
+  "deb-libc6-dev"
+  "deb-libgnutls28-dev"
+  "deb-libldap2-dev"
+  "deb-libtemplates-parser14-dev"
+  "deb-libxmlada-dom10-dev"
+  "deb-libxmlada-input10-dev"
+  "deb-libxmlada-sax10-dev"
+  "deb-libxmlada-schema10-dev"
+  "deb-libxmlada-unicode10-dev"
+  "deb-zlib1g-dev"
+]
+extra-source "libaws20-dev_20.2-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/liba/libaws/libaws20-dev_20.2-2_amd64.deb"
+}

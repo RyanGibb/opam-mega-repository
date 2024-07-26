@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pydoctor_19.11.0+git20200303.47424e7-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pydoctor"]
+]
+depends: [
+  "deb-libjs-bootstrap"
+  "deb-python3-any"
+  "deb-python3-appdirs"
+  "deb-python3-astor"
+  "deb-python3-cachecontrol"
+  "deb-python3-incremental"
+  "deb-python3-lockfile"
+  "deb-python3-requests"
+  "deb-python3-six"
+  "deb-python3-twisted"
+]
+extra-source "pydoctor_19.11.0+git20200303.47424e7-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pydoctor/pydoctor_19.11.0+git20200303.47424e7-1_all.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i liblivemedia64_2018.11.26-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r liblivemedia64"]
+]
+depends: [
+  "deb-libbasicusageenvironment1" {>= "2018.11.26"}
+  "deb-libc6" {>= "2.15"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgroupsock8" {>= "2018.11.26"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libusageenvironment3" {>= "2018.11.26"}
+]
+extra-source "liblivemedia64_2018.11.26-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libl/liblivemedia/liblivemedia64_2018.11.26-1.1_amd64.deb"
+}

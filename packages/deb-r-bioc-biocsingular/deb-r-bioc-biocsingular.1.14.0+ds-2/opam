@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-bioc-biocsingular_1.14.0+ds-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-bioc-biocsingular"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.2.20221110-1"}
+  "deb-r-bioc-beachmat"
+  "deb-r-bioc-biocgenerics"
+  "deb-r-bioc-biocparallel"
+  "deb-r-bioc-delayedarray"
+  "deb-r-bioc-s4vectors"
+  "deb-r-bioc-scaledmatrix"
+  "deb-r-cran-irlba"
+  "deb-r-cran-matrix"
+  "deb-r-cran-rcpp"
+  "deb-r-cran-rsvd"
+]
+extra-source "r-bioc-biocsingular_1.14.0+ds-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-bioc-biocsingular/r-bioc-biocsingular_1.14.0+ds-2_amd64.deb"
+}

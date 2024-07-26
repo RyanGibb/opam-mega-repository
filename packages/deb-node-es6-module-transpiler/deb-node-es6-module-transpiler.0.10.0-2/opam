@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-es6-module-transpiler_0.10.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-es6-module-transpiler"]
+]
+depends: [
+  "deb-node-ast-util"
+  "deb-node-esprima-fb"
+  "deb-node-posix-getopt"
+  "deb-node-recast"
+  "deb-node-reserved"
+  "deb-nodejs"
+]
+extra-source "node-es6-module-transpiler_0.10.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-es6-module-transpiler/node-es6-module-transpiler_0.10.0-2_all.deb"
+}

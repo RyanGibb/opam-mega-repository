@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ayatana-webmail_22.12.15+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ayatana-webmail"]
+]
+depends: [
+  "deb-gir1-2-gtk-3-0"
+  "deb-gir1-2-messagingmenu-1-0"
+  "deb-gir1-2-notify-0-7"
+  "deb-gnome-session-canberra"
+  "deb-python3-any" {>= "3.6~"}
+  "deb-python3-babel"
+  "deb-python3-gi"
+  "deb-python3-imaplib2"
+  "deb-python3-psutil"
+  "deb-python3-secretstorage"
+  "deb-python3-urllib3"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "ayatana-webmail_22.12.15+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/ayatana-webmail/ayatana-webmail_22.12.15+dfsg-1_all.deb"
+}

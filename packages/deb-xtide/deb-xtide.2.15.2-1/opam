@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xtide_2.15.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xtide"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libtcd0"
+  "deb-libx11-6"
+  "deb-libxaw7"
+  "deb-libxpm4"
+  "deb-libxt6"
+  "deb-xfonts-base"
+]
+conflicts: [
+  "deb-xtide-data" {< "20030409-1"}
+]
+extra-source "xtide_2.15.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xtide/xtide_2.15.2-1_amd64.deb"
+}

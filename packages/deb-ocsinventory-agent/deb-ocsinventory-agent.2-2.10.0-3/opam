@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ocsinventory-agent_2:2.10.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ocsinventory-agent"]
+]
+depends: [
+  "deb-debconf"
+  "deb-fdisk"
+  "deb-libc6" {>= "2.34"}
+  "deb-libcrypt-ssleay-perl"
+  "deb-libnet-ip-perl"
+  "deb-libproc-daemon-perl"
+  "deb-libwww-perl"
+  "deb-libxml-simple-perl"
+  "deb-perl-any"
+  "deb-ucf"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "ocsinventory-agent_2:2.10.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/ocsinventory-agent/ocsinventory-agent_2.10.0-3_amd64.deb"
+}

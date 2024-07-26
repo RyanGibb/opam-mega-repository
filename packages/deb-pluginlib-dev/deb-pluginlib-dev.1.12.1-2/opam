@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pluginlib-dev_1.12.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pluginlib-dev"]
+]
+depends: [
+  "deb-libboost-dev"
+  "deb-libboost-filesystem-dev"
+  "deb-libboost-system-dev"
+  "deb-libclass-loader-dev"
+  "deb-librosconsole-dev"
+  "deb-libroslib-dev"
+  "deb-libtinyxml2-dev"
+  "deb-python"
+  "deb-ros-cmake-modules"
+]
+extra-source "pluginlib-dev_1.12.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ros-pluginlib/pluginlib-dev_1.12.1-2_amd64.deb"
+}

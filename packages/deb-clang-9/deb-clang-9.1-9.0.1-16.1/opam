@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i clang-9_1:9.0.1-16.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r clang-9"]
+]
+depends: [
+  "deb-binutils"
+  "deb-libc6" {>= "2.14"}
+  "deb-libc6-dev"
+  "deb-libclang-common-9-dev" {= "1-9.0.1-16.1"}
+  "deb-libclang-cpp9" {= "1-9.0.1-16.1"}
+  "deb-libgcc-10-dev"
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libllvm9" {>= "1-9~svn298832-1~"}
+  "deb-libobjc-10-dev"
+  "deb-libstdc++-10-dev"
+  "deb-libstdc++6" {>= "9"}
+]
+extra-source "clang-9_1:9.0.1-16.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/llvm-toolchain-9/clang-9_9.0.1-16.1_amd64.deb"
+}

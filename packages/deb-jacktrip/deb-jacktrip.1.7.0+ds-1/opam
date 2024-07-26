@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i jacktrip_1.7.0+ds-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r jacktrip"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5network5" {>= "5.5.0"}
+  "deb-libstdc++6" {>= "11"}
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+]
+extra-source "jacktrip_1.7.0+ds-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/j/jacktrip/jacktrip_1.7.0+ds-1_amd64.deb"
+}

@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-cryptol-prof_2.8.0-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-cryptol-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-base-compat-prof"
+  "deb-libghc-cryptohash-sha1-prof"
+  "deb-libghc-cryptol-dev" {= "2.8.0-1+b2"}
+  "deb-libghc-gitrev-prof"
+  "deb-libghc-graphscc-prof"
+  "deb-libghc-heredoc-prof"
+  "deb-libghc-monad-control-prof"
+  "deb-libghc-monadlib-prof"
+  "deb-libghc-panic-prof"
+  "deb-libghc-random-prof"
+  "deb-libghc-sbv-prof"
+  "deb-libghc-simple-smt-prof"
+  "deb-libghc-strict-prof"
+  "deb-libghc-tf-random-prof"
+  "deb-libghc-transformers-base-prof"
+]
+extra-source "libghc-cryptol-prof_2.8.0-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-cryptol/libghc-cryptol-prof_2.8.0-1+b2_amd64.deb"
+}

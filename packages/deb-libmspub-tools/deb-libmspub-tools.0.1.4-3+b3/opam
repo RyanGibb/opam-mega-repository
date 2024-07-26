@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmspub-tools_0.1.4-3+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmspub-tools"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libmspub-0-1-1"
+  "deb-librevenge-0-0-0"
+  "deb-libstdc++6" {>= "4.4"}
+]
+extra-source "libmspub-tools_0.1.4-3+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libm/libmspub/libmspub-tools_0.1.4-3+b3_amd64.deb"
+}

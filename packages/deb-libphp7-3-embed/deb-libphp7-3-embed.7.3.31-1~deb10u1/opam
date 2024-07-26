@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libphp7.3-embed_7.3.31-1~deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libphp7.3-embed"]
+]
+depends: [
+  "deb-libargon2-1" {>= "0~20171227"}
+  "deb-libc6" {>= "2.27"}
+  "deb-libmagic1"
+  "deb-libpcre2-8-0" {>= "10.32"}
+  "deb-libsodium23" {>= "1.0.14"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libxml2" {>= "2.8.0"}
+  "deb-mime-support"
+  "deb-php7-3-cli"
+  "deb-php7-3-common" {= "7.3.31-1~deb10u1"}
+  "deb-php7-3-json"
+  "deb-php7-3-opcache"
+  "deb-tzdata"
+  "deb-ucf"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libphp7.3-embed_7.3.31-1~deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/php7.3/libphp7.3-embed_7.3.31-1~deb10u1_amd64.deb"
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnome-usage_3.38.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnome-usage"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libdazzle-1-0-0" {>= "3.30"}
+  "deb-libglib2-0-0" {>= "2.43.92"}
+  "deb-libgtk-3-0" {>= "3.21.5"}
+  "deb-libgtop-2-0-11" {>= "2.34.0"}
+  "deb-libhandy-1-0" {>= "1.0.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libtracker-sparql-3-0-0" {>= "3.1.1"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "gnome-usage_3.38.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnome-usage/gnome-usage_3.38.1-3_amd64.deb"
+}

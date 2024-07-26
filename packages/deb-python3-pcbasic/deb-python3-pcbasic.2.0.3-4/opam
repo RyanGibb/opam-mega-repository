@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-pcbasic_2.0.3-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-pcbasic"]
+]
+depends: [
+  "deb-libsdl2-2-0-0"
+  "deb-libsdl2-gfx-1-0-0"
+  "deb-python3-any"
+  "deb-python3-parallel"
+  "deb-python3-pkg-resources"
+  "deb-python3-serial"
+]
+extra-source "python3-pcbasic_2.0.3-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pcbasic/python3-pcbasic_2.0.3-4_all.deb"
+}

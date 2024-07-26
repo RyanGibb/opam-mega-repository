@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i w3m-el-snapshot_1.4.632+0.20210201.2305.54c3ccd-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r w3m-el-snapshot"]
+]
+depends: [
+  "deb-emacsen-common" {>= "2.0.8"}
+  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-emacs-nox" | "deb- emacs" | "deb- emacs-snapshot")
+  ("deb-w3m" {>= "0.3"} | "deb- w3m-ssl" {>= "0.3"} | "deb- w3mmee" {>= "0.3"})
+]
+conflicts: [
+  "deb-apel" {< "10.5"}
+  "deb-flim" {< "1-1.14.3"}
+  "deb-w3m-el"
+]
+extra-source "w3m-el-snapshot_1.4.632+0.20210201.2305.54c3ccd-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/w/w3m-el-snapshot/w3m-el-snapshot_1.4.632+0.20210201.2305.54c3ccd-1_all.deb"
+}

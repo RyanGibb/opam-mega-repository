@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-pykeepass_4.0.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-pykeepass"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-argon2"
+  "deb-python3-construct" {>= "2.10.52"}
+  "deb-python3-dateutil"
+  "deb-python3-future"
+  "deb-python3-lxml"
+  "deb-python3-pycryptodome" {>= "3.9.4"}
+]
+extra-source "python3-pykeepass_4.0.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pykeepass/python3-pykeepass_4.0.3-1_all.deb"
+}

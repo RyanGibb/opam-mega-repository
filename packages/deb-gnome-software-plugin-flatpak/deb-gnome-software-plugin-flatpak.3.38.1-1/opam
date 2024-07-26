@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnome-software-plugin-flatpak_3.38.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnome-software-plugin-flatpak"]
+]
+depends: [
+  "deb-flatpak"
+  "deb-gnome-software" {= "3.38.1-1"}
+  "deb-libappstream-glib8" {>= "0.7.16"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libflatpak0" {>= "1.7.3"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.56.0"}
+  "deb-libgtk-3-0" {>= "3.22.4"}
+  "deb-libjson-glib-1-0-0" {>= "1.5.2"}
+  "deb-libostree-1-1" {>= "2017.10"}
+  "deb-libpolkit-gobject-1-0" {>= "0.99"}
+  "deb-libsoup2-4-1" {>= "2.52.0"}
+  "deb-libxmlb1" {>= "0.1.7"}
+]
+extra-source "gnome-software-plugin-flatpak_3.38.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnome-software/gnome-software-plugin-flatpak_3.38.1-1_amd64.deb"
+}

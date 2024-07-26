@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsql-translator-perl_0.11024-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsql-translator-perl"]
+]
+depends: [
+  "deb-libcarp-clan-perl"
+  "deb-libclass-makemethods-perl"
+  "deb-libdbi-perl"
+  "deb-libfile-sharedir-perl"
+  "deb-libmoo-perl" {>= "1.000003"}
+  "deb-libpackage-variant-perl"
+  "deb-libparse-recdescent-perl"
+  "deb-libtry-tiny-perl"
+  "deb-perl"
+]
+conflicts: [
+  "deb-sqlfairy"
+]
+extra-source "libsql-translator-perl_0.11024-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libs/libsql-translator-perl/libsql-translator-perl_0.11024-1_all.deb"
+}

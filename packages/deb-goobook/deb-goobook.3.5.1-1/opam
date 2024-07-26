@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i goobook_3.5.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r goobook"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-googleapi" {>= "1.7.11"}
+  "deb-python3-oauth2client"
+  "deb-python3-simplejson" {>= "3.16.0"}
+  "deb-python3-xdg"
+]
+extra-source "goobook_3.5.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/goobook/goobook_3.5.1-1_all.deb"
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dssp_3.0.0-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dssp"]
+]
+depends: [
+  "deb-libboost-iostreams1-67-0"
+  "deb-libboost-program-options1-67-0"
+  "deb-libboost-system1-67-0"
+  "deb-libboost-thread1-67-0"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-4.0"}
+  "deb-libstdc++6" {>= "5.2"}
+]
+extra-source "dssp_3.0.0-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dssp/dssp_3.0.0-3+b1_amd64.deb"
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-whiteboard_1.0+git20211001-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-whiteboard"]
+]
+depends: [
+  "deb-python3"
+  "deb-python3-any"
+  "deb-python3-bluez"
+  "deb-python3-cwiid"
+  "deb-python3-numpy"
+  "deb-python3-pyqt5"
+  "deb-python3-xlib"
+]
+conflicts: [
+  "deb-python-whiteboard" {< "1.0+git20170915-4"}
+]
+extra-source "python3-whiteboard_1.0+git20211001-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-whiteboard/python3-whiteboard_1.0+git20211001-1_all.deb"
+}

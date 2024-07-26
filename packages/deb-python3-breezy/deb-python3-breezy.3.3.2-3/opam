@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-breezy_3.3.2-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-breezy"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "4.2"}
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-any"
+  "deb-python3-configobj" {>= "4.7.2+ds-2"}
+  "deb-python3-dulwich" {>= "0.21.2"}
+  "deb-python3-fastbencode"
+  "deb-python3-merge3"
+  "deb-python3-patiencediff"
+  "deb-python3-six"
+  "deb-python3-urllib3"
+  "deb-python3-yaml"
+]
+conflicts: [
+  "deb-python3-dulwich" {< "0.19.11"}
+  "deb-python3-paramiko" {< "1.14.1"}
+]
+extra-source "python3-breezy_3.3.2-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/breezy/python3-breezy_3.3.2-3_amd64.deb"
+}

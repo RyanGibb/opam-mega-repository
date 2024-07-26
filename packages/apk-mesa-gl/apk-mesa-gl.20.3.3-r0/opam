@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mesa-gl-20.3.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mesa-gl"]
+]
+depends: [
+  "apk-expat" {= "2.2.10-r8"}
+  "apk-libdrm" {= "2.4.104-r0"}
+  "apk-libx11" {= "1.7.1-r0"}
+  "apk-libxcb" {= "1.14-r1"}
+  "apk-libxdamage" {= "1.1.5-r1"}
+  "apk-libxext" {= "1.3.4-r0"}
+  "apk-libxfixes" {= "5.0.3-r2"}
+  "apk-libxshmfence" {= "1.3-r1"}
+  "apk-libxxf86vm" {= "1.1.4-r2"}
+  "apk-mesa" {= "20.3.3-r0"}
+  "apk-mesa-glapi" {= "20.3.3-r0"}
+  "apk-musl" {= "1.2.2-r2"}
+]
+extra-source "mesa-gl-20.3.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/mesa-gl-20.3.3-r0.apk"
+}

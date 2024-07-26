@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gpg-agent_2.2.40-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gpg-agent"]
+]
+depends: [
+  "deb-gpgconf" {= "2.2.40-1.1"}
+  "deb-init-system-helpers" {>= "1.52"}
+  "deb-libassuan0" {>= "2.5.1"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcrypt20" {>= "1.10.0"}
+  "deb-libgpg-error0" {>= "1.42"}
+  "deb-libnpth0" {>= "0.90"}
+  ("deb-pinentry-curses" | "deb- pinentry")
+]
+extra-source "gpg-agent_2.2.40-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnupg2/gpg-agent_2.2.40-1.1_amd64.deb"
+}

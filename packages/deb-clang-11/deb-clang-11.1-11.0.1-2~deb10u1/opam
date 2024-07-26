@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i clang-11_1:11.0.1-2~deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r clang-11"]
+]
+depends: [
+  "deb-binutils"
+  "deb-libc6" {>= "2.14"}
+  "deb-libc6-dev"
+  "deb-libclang-common-11-dev" {= "1-11.0.1-2~deb10u1"}
+  "deb-libclang-cpp11" {>= "1-11.0.1"}
+  "deb-libclang1-11" {= "1-11.0.1-2~deb10u1"}
+  "deb-libgcc-8-dev"
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libllvm11" {>= "1-9~svn298832-1~"}
+  "deb-libobjc-8-dev"
+  "deb-libstdc++-8-dev"
+  "deb-libstdc++6" {>= "5.2"}
+]
+extra-source "clang-11_1:11.0.1-2~deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/llvm-toolchain-11/clang-11_11.0.1-2~deb10u1_amd64.deb"
+}

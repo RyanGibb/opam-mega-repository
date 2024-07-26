@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i clang-14_1:14.0.6-12_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r clang-14"]
+]
+depends: [
+  "deb-binutils"
+  "deb-libc6" {>= "2.34"}
+  "deb-libc6-dev"
+  "deb-libclang-common-14-dev" {= "1-14.0.6-12"}
+  "deb-libclang-cpp14" {>= "1-14.0.6"}
+  "deb-libclang1-14" {= "1-14.0.6-12"}
+  "deb-libgcc-12-dev"
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libllvm14"
+  "deb-libobjc-12-dev"
+  "deb-libstdc++-12-dev"
+  "deb-libstdc++6" {>= "11"}
+  "deb-llvm-14-linker-tools" {= "1-14.0.6-12"}
+]
+extra-source "clang-14_1:14.0.6-12_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/llvm-toolchain-14/clang-14_14.0.6-12_amd64.deb"
+}

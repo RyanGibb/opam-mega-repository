@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-node-stringprep_0.8.0-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-node-stringprep"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libicu63" {>= "63.1-1~"}
+  "deb-libnode64"
+  "deb-libstdc++6" {>= "5"}
+  "deb-node-bindings" {>= "1.2.1"}
+  "deb-node-debug"
+  "deb-nodejs"
+]
+extra-source "node-node-stringprep_0.8.0-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-stringprep/node-node-stringprep_0.8.0-4_amd64.deb"
+}

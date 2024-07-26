@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i asclock_2.0.12-29_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r asclock"]
+]
+depends: [
+  "deb-asclock-themes"
+  "deb-libc6" {>= "2.4"}
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxpm4"
+]
+extra-source "asclock_2.0.12-29_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/asclock/asclock_2.0.12-29_amd64.deb"
+}

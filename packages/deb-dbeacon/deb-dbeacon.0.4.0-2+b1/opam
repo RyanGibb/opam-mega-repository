@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dbeacon_0.4.0-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dbeacon"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libc6" {>= "2.15"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-lsb-base"
+]
+extra-source "dbeacon_0.4.0-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dbeacon/dbeacon_0.4.0-2+b1_amd64.deb"
+}

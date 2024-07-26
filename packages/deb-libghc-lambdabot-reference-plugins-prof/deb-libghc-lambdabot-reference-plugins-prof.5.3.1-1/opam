@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-lambdabot-reference-plugins-prof_5.3.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-lambdabot-reference-plugins-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-http-prof"
+  "deb-libghc-lambdabot-core-prof"
+  "deb-libghc-lambdabot-reference-plugins-dev" {= "5.3.1-1"}
+  "deb-libghc-network-prof"
+  "deb-libghc-network-uri-prof"
+  "deb-libghc-oeis-prof"
+  "deb-libghc-regex-tdfa-prof"
+  "deb-libghc-split-prof"
+  "deb-libghc-tagsoup-prof"
+  "deb-libghc-utf8-string-prof"
+]
+extra-source "libghc-lambdabot-reference-plugins-prof_5.3.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-lambdabot-reference-plugins/libghc-lambdabot-reference-plugins-prof_5.3.1-1_amd64.deb"
+}

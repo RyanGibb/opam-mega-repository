@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i svn-buildpackage_0.8.8_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r svn-buildpackage"]
+]
+depends: [
+  "deb-devscripts" {>= "2.10.54"}
+  "deb-file"
+  "deb-libcapture-tiny-perl"
+  "deb-libfile-libmagic-perl"
+  "deb-liblocale-gettext-perl"
+  "deb-libsvn-perl"
+  "deb-liburi-perl"
+  "deb-perl-any"
+  "deb-subversion"
+  "deb-unp"
+  "deb-wget"
+]
+extra-source "svn-buildpackage_0.8.8_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/svn-buildpackage/svn-buildpackage_0.8.8_all.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libqbscore1.24_1.24.1+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libqbscore1.24"]
+]
+depends: [
+  "deb-libc6" {>= "2.33"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqbsscriptengine1-24" {>= "1.23.1"}
+  "deb-libqt6core5compat6" {>= "6.2.1"}
+  "deb-libqt6core6" {>= "6.4.0"}
+  "deb-libqt6network6" {>= "6.1.2"}
+  "deb-libqt6xml6" {>= "6.1.2"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-qbs-common" {= "1.24.1+dfsg-2"}
+]
+extra-source "libqbscore1.24_1.24.1+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qbs/libqbscore1.24_1.24.1+dfsg-2_amd64.deb"
+}

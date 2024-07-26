@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i grunt_1.0.1-8+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r grunt"]
+]
+depends: [
+  "deb-coffeescript" {>= "1.10.0~"}
+  "deb-node-dateformat" {>= "1.0.11"}
+  "deb-node-eventemitter2" {>= "0.4.13"}
+  "deb-node-exit" {>= "0.1.1"}
+  "deb-node-findup-sync" {>= "0.3.0"}
+  "deb-node-glob" {>= "4.0.5"}
+  "deb-node-grunt-cli" {>= "1.2.0"}
+  "deb-node-grunt-known-options" {>= "1.1.0"}
+  "deb-node-grunt-legacy-log" {>= "1.0.0"}
+  "deb-node-grunt-legacy-util" {>= "1.0.0"}
+  "deb-node-iconv-lite" {>= "0.4.13"}
+  "deb-node-js-yaml" {>= "3.5.2"}
+  "deb-node-minimatch" {>= "3.0.0"}
+  "deb-node-nopt" {>= "3.0.6"}
+  "deb-node-path-is-absolute" {>= "1.0.0"}
+  "deb-node-rimraf" {>= "2.2.8"}
+  "deb-nodejs" {>= "6.11~"}
+]
+extra-source "grunt_1.0.1-8+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/grunt/grunt_1.0.1-8+deb10u1_all.deb"
+}

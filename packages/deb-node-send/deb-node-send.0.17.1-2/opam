@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-send_0.17.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-send"]
+]
+depends: [
+  "deb-node-debug"
+  "deb-node-depd"
+  "deb-node-encodeurl"
+  "deb-node-escape-html"
+  "deb-node-etag"
+  "deb-node-fresh"
+  "deb-node-http-errors"
+  "deb-node-mime-types"
+  "deb-node-on-finished"
+  "deb-node-range-parser" {>= "1.2.0"}
+  "deb-nodejs"
+]
+extra-source "node-send_0.17.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-send/node-send_0.17.1-2_all.deb"
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i micro-httpd_20051212-15.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r micro-httpd"]
+]
+depends: [
+  "deb-init-system-helpers" {>= "1.18~"}
+  "deb-libc6" {>= "2.7"}
+  ("deb-openbsd-inetd" | "deb- inet-superserver" | "deb- micro-inetd" | "deb- netcat-traditional" | "deb- systemd-sysv")
+]
+extra-source "micro-httpd_20051212-15.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/micro-httpd/micro-httpd_20051212-15.1_amd64.deb"
+}

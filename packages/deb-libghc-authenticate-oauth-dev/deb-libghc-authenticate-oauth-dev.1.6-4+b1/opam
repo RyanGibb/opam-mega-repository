@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-authenticate-oauth-dev_1.6-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-authenticate-oauth-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libghc-base64-bytestring-dev"
+  "deb-libghc-blaze-builder-dev"
+  "deb-libghc-crypto-pubkey-types-dev"
+  "deb-libghc-data-default-dev"
+  "deb-libghc-http-client-dev"
+  "deb-libghc-http-types-dev"
+  "deb-libghc-random-dev"
+  "deb-libghc-rsa-dev"
+  "deb-libghc-sha-dev"
+  "deb-libghc-transformers-compat-dev"
+  "deb-libgmp10"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libghc-authenticate-oauth-dev_1.6-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-authenticate-oauth/libghc-authenticate-oauth-dev_1.6-4+b1_amd64.deb"
+}

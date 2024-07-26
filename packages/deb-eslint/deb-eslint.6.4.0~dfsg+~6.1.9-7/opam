@@ -1,0 +1,46 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i eslint_6.4.0~dfsg+~6.1.9-7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r eslint"]
+]
+depends: [
+  "deb-node-ajv"
+  "deb-node-concat-stream"
+  "deb-node-debug"
+  "deb-node-doctrine"
+  "deb-node-eslint-scope"
+  "deb-node-eslint-utils"
+  "deb-node-eslint-visitor-keys"
+  "deb-node-espree" {>= "7.3.0"}
+  "deb-node-esquery"
+  "deb-node-estraverse"
+  "deb-node-esutils"
+  "deb-node-file-entry-cache"
+  "deb-node-functional-red-black-tree"
+  "deb-node-glob-parent"
+  "deb-node-globals"
+  "deb-node-ignore" {>= "5.2.0"}
+  "deb-node-import-fresh"
+  "deb-node-imurmurhash"
+  "deb-node-is-glob"
+  "deb-node-json-stable-stringify"
+  "deb-node-levn"
+  "deb-node-lodash"
+  "deb-node-memfs"
+  "deb-node-mkdirp"
+  "deb-node-optionator"
+  "deb-node-progress"
+  "deb-node-regenerate-unicode-properties" {>= "10"}
+  "deb-node-regexpp"
+  "deb-node-semver"
+  "deb-node-strip-json-comments"
+  "deb-node-types-estree"
+  "deb-node-types-json-schema"
+  "deb-node-v8-compile-cache"
+  "deb-nodejs-any" {>= "12.22.0"}
+]
+extra-source "eslint_6.4.0~dfsg+~6.1.9-7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/eslint/eslint_6.4.0~dfsg+~6.1.9-7_all.deb"
+}

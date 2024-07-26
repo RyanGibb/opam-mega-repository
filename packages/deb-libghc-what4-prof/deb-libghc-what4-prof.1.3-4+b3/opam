@@ -1,0 +1,42 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-what4-prof_1.3-4+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-what4-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-async-prof"
+  "deb-libghc-attoparsec-prof"
+  "deb-libghc-bifunctors-prof"
+  "deb-libghc-bimap-prof"
+  "deb-libghc-bv-sized-prof"
+  "deb-libghc-concurrent-extra-prof"
+  "deb-libghc-config-value-prof"
+  "deb-libghc-data-binary-ieee754-prof"
+  "deb-libghc-deriving-compat-prof"
+  "deb-libghc-fingertree-prof"
+  "deb-libghc-hashable-prof"
+  "deb-libghc-hashtables-prof"
+  "deb-libghc-io-streams-prof"
+  "deb-libghc-lens-prof"
+  "deb-libghc-libbf-prof"
+  "deb-libghc-panic-prof"
+  "deb-libghc-parameterized-utils-prof"
+  "deb-libghc-prettyprinter-prof"
+  "deb-libghc-scientific-prof"
+  "deb-libghc-temporary-prof"
+  "deb-libghc-th-abstraction-prof"
+  "deb-libghc-th-lift-instances-prof"
+  "deb-libghc-th-lift-prof"
+  "deb-libghc-unordered-containers-prof"
+  "deb-libghc-utf8-string-prof"
+  "deb-libghc-vector-prof"
+  "deb-libghc-versions-prof"
+  "deb-libghc-what4-dev" {= "1.3-4+b3"}
+  "deb-libghc-zenc-prof"
+]
+extra-source "libghc-what4-prof_1.3-4+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-what4/libghc-what4-prof_1.3-4+b3_amd64.deb"
+}

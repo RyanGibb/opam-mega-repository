@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-gtk2_2.24.0-5.1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-gtk2"]
+]
+depends: [
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libfontconfig1" {>= "2.12"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.24.0"}
+  "deb-libgtk2-0-0" {>= "2.24.0"}
+  "deb-libpango-1-0-0" {>= "1.22.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.21.4"}
+  "deb-libpangoft2-1-0-0" {>= "1.21.4"}
+  "deb-python" {< "2.8"}
+  "deb-python" {>= "2.7"}
+  "deb-python-any" {>= "2.6.6-7~"}
+  "deb-python-cairo" {>= "1.0.2-1.1"}
+  "deb-python-gobject-2" {>= "2.21.3"}
+  "deb-python-numpy"
+  "deb-python-numpy" {>= "1-1.13.1"}
+]
+extra-source "python-gtk2_2.24.0-5.1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pygtk/python-gtk2_2.24.0-5.1+b1_amd64.deb"
+}

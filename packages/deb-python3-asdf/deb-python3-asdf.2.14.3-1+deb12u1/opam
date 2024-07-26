@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-asdf_2.14.3-1+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-asdf"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-asdf-standard"
+  "deb-python3-asdf-transform-schemas"
+  "deb-python3-importlib-metadata"
+  "deb-python3-jmespath"
+  "deb-python3-jsonschema" {>= "4.0.1~"}
+  "deb-python3-numpy"
+  "deb-python3-packaging"
+  "deb-python3-semantic-version" {>= "2.8"}
+  "deb-python3-yaml"
+  ("deb-python3-importlib-resources" | "deb- python3" {> "3.9"})
+]
+extra-source "python3-asdf_2.14.3-1+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-asdf/python3-asdf_2.14.3-1+deb12u1_all.deb"
+}

@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i picom_9.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r picom"]
+]
+depends: [
+  "deb-libc6" {>= "2.33"}
+  "deb-libconfig9"
+  "deb-libdbus-1-3" {>= "1.9.14"}
+  "deb-libev4" {>= "1-4.04"}
+  "deb-libgl1"
+  "deb-libpcre3"
+  "deb-libpixman-1-0" {>= "0.25.2"}
+  "deb-libx11-6"
+  "deb-libx11-xcb1" {>= "2-1.7.5"}
+  "deb-libxcb-composite0"
+  "deb-libxcb-damage0"
+  "deb-libxcb-glx0"
+  "deb-libxcb-image0" {>= "0.2.1"}
+  "deb-libxcb-present0"
+  "deb-libxcb-randr0" {>= "1.10"}
+  "deb-libxcb-render-util0"
+  "deb-libxcb-render0" {>= "1.12"}
+  "deb-libxcb-shape0"
+  "deb-libxcb-sync1"
+  "deb-libxcb-xfixes0"
+  "deb-libxcb-xinerama0"
+  "deb-libxcb1" {>= "1.9.2"}
+  "deb-python3"
+]
+extra-source "picom_9.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/picom/picom_9.1-1_amd64.deb"
+}

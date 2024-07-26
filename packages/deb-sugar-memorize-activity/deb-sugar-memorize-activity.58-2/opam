@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sugar-memorize-activity_58-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sugar-memorize-activity"]
+]
+depends: [
+  "deb-base-files" {>= "11"}
+  "deb-gir1-2-gdkpixbuf-2-0"
+  "deb-gir1-2-glib-2-0"
+  "deb-gir1-2-gstreamer-1-0"
+  "deb-gir1-2-gtk-3-0"
+  "deb-gir1-2-pango-1-0"
+  "deb-gir1-2-telepathyglib-0-12"
+  "deb-python3"
+  "deb-python3-dbus"
+  "deb-python3-gi"
+  "deb-python3-gi-cairo"
+  "deb-python3-sugar3"
+]
+extra-source "sugar-memorize-activity_58-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sugar-memorize-activity/sugar-memorize-activity_58-2_all.deb"
+}

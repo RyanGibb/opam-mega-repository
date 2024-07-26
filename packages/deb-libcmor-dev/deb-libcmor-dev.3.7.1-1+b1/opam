@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcmor-dev_3.7.1-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcmor-dev"]
+]
+depends: [
+  "deb-libcmor2" {= "3.7.1-1+b1"}
+  "deb-libjson-c-dev"
+  "deb-python3"
+  "deb-python3-any"
+  "deb-python3-numpy"
+  "deb-python3-numpy" {>= "1-1.22.0"}
+  ("deb-gfortran-12" | "deb- gfortran-mod-15")
+]
+extra-source "libcmor-dev_3.7.1-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cmor/libcmor-dev_3.7.1-1+b1_amd64.deb"
+}

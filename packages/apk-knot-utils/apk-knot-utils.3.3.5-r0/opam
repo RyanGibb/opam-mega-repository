@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add knot-utils-3.3.5-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del knot-utils"]
+]
+depends: [
+  "apk-gnutls" {= "3.8.5-r0"}
+  "apk-knot-libs" {= "3.3.5-r0"}
+  "apk-libedit" {= "20240517.3.1-r0"}
+  "apk-libidn2" {= "2.3.7-r0"}
+  "apk-lmdb" {= "0.9.32-r0"}
+  "apk-musl" {= "1.2.5-r0"}
+  "apk-nghttp2-libs" {= "1.62.1-r0"}
+  "apk-ngtcp2" {= "1.5.0-r0"}
+  "apk-ngtcp2-gnutls" {= "1.5.0-r0"}
+  "apk-userspace-rcu" {= "0.14.0-r2"}
+]
+extra-source "knot-utils-3.3.5-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/knot-utils-3.3.5-r0.apk"
+}

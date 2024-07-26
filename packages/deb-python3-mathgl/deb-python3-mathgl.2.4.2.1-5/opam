@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-mathgl_2.4.2.1-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-mathgl"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgif7" {>= "5.1"}
+  "deb-libgl1"
+  "deb-libgsl23" {>= "2.5"}
+  "deb-libgslcblas0" {>= "2.4"}
+  "deb-libhdf4-0" {>= "4.1r2"}
+  "deb-libhdf5-103"
+  "deb-libhpdf-2-3-0" {>= "2.3.0"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libltdl7" {>= "2.4.6"}
+  "deb-libmgl7-5-0"
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libpython3-7" {>= "3.7.0"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libsz2"
+  "deb-python3"
+  "deb-python3-numpy"
+  "deb-python3-numpy" {>= "1-1.14.3"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+extra-source "python3-mathgl_2.4.2.1-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mathgl/python3-mathgl_2.4.2.1-5_amd64.deb"
+}

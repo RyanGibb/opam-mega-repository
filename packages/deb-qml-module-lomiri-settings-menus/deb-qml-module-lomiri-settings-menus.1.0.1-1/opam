@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qml-module-lomiri-settings-menus_1.0.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qml-module-lomiri-settings-menus"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5qml5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-qml-module-lomiri-components" {>= "1.1"}
+  "deb-qml-module-lomiri-settings-components"
+  "deb-qml-module-lomiri-thumbnailer"
+  "deb-qml-module-qtquick-layouts"
+  "deb-qml-module-qtquick2"
+  "deb-suru-icon-theme"
+]
+extra-source "qml-module-lomiri-settings-menus_1.0.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lomiri-settings-components/qml-module-lomiri-settings-menus_1.0.1-1_amd64.deb"
+}

@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-docker-notary-dev_0.7.0+ds1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-docker-notary-dev"]
+]
+depends: [
+  "deb-golang-github-bugsnag-bugsnag-go-dev"
+  "deb-golang-github-cloudflare-cfssl-dev"
+  "deb-golang-github-docker-go-connections-dev"
+  "deb-golang-github-docker-go-dev"
+  "deb-golang-github-dvsekhvalnov-jose2go-dev"
+  "deb-golang-github-go-sql-driver-mysql-dev"
+  "deb-golang-github-golang-protobuf-1-3-dev"
+  "deb-golang-github-gorilla-mux-dev"
+  "deb-golang-github-jinzhu-gorm-dev"
+  "deb-golang-github-lib-pq-dev"
+  "deb-golang-github-mattn-go-sqlite3-dev"
+  "deb-golang-github-miekg-pkcs11-dev"
+  "deb-golang-github-shopify-logrus-bugsnag-dev"
+  "deb-golang-github-sirupsen-logrus-dev"
+  "deb-golang-github-spf13-cobra-dev"
+  "deb-golang-github-spf13-viper-dev"
+  "deb-golang-github-stretchr-testify-dev"
+  "deb-golang-golang-x-crypto-dev"
+  "deb-golang-golang-x-net-dev"
+  "deb-golang-golang-x-sys-dev"
+  "deb-golang-google-grpc-dev"
+  "deb-golang-gopkg-rethinkdb-rethinkdb-go-v6-dev"
+]
+extra-source "golang-github-docker-notary-dev_0.7.0+ds1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/notary/golang-github-docker-notary-dev_0.7.0+ds1-2_all.deb"
+}

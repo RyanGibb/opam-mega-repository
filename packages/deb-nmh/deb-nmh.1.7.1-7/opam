@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i nmh_1.7.1-7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r nmh"]
+]
+depends: [
+  "deb-libc6" {>= "2.15"}
+  "deb-libcurl4" {>= "7.16.2"}
+  "deb-libdb5-3"
+  "deb-liblockfile1" {>= "1.0"}
+  "deb-libreadline8" {>= "6.0"}
+  "deb-libsasl2-2" {>= "2.1.27+dfsg"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-mime-support"
+  "deb-netbase" {>= "3.16-1"}
+  "deb-sensible-utils"
+]
+conflicts: [
+  "deb-mh"
+]
+extra-source "nmh_1.7.1-7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/nmh/nmh_1.7.1-7_amd64.deb"
+}

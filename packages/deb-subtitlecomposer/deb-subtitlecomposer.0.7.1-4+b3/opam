@@ -1,0 +1,43 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i subtitlecomposer_0.7.1-4+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r subtitlecomposer"]
+]
+depends: [
+  "deb-kio"
+  "deb-libavcodec-extra59"
+  "deb-libavformat-extra59"
+  "deb-libavutil57" {>= "7-5.0"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libicu72" {>= "72.1~rc-1~"}
+  "deb-libkf5codecs5" {>= "5.44.0~"}
+  "deb-libkf5completion5" {>= "4.97.0"}
+  "deb-libkf5configcore5" {>= "5.44.0~"}
+  "deb-libkf5configgui5" {>= "5.44.0~"}
+  "deb-libkf5configwidgets5" {>= "5.44.0~"}
+  "deb-libkf5coreaddons5" {>= "5.44.0~"}
+  "deb-libkf5i18n5" {>= "5.44.0~"}
+  "deb-libkf5kiocore5" {>= "5.69.0"}
+  "deb-libkf5kiogui5" {>= "5.74.0"}
+  "deb-libkf5kiowidgets5" {>= "5.70.0"}
+  "deb-libkf5krosscore5" {>= "5.44.0~"}
+  "deb-libkf5sonnetcore5" {>= "5.44.0~"}
+  "deb-libkf5sonnetui5" {>= "5.69.0"}
+  "deb-libkf5textwidgets5" {>= "5.83.0"}
+  "deb-libkf5widgetsaddons5" {>= "5.78.0"}
+  "deb-libkf5xmlgui5" {>= "5.44.0~"}
+  "deb-libopenal1" {>= "1.14"}
+  "deb-libpocketsphinx3" {>= "0.8+5prealpha+1"}
+  "deb-libqt5core5a"
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5widgets5" {>= "5.15.1"}
+  "deb-libsphinxbase3" {>= "0.8+5prealpha"}
+  "deb-libstdc++6" {>= "4.6"}
+  "deb-libswresample4" {>= "7-5.0"}
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "subtitlecomposer_0.7.1-4+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/subtitlecomposer/subtitlecomposer_0.7.1-4+b3_amd64.deb"
+}

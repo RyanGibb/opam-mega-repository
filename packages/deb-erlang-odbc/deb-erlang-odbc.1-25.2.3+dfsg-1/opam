@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i erlang-odbc_1:25.2.3+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r erlang-odbc"]
+]
+depends: [
+  "deb-erlang-base" {= "1-25.2.3+dfsg-1"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libodbc2" {>= "2.3.1"}
+]
+extra-source "erlang-odbc_1:25.2.3+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/erlang/erlang-odbc_25.2.3+dfsg-1_amd64.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-libtiff_0.4.2-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-libtiff"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libtiff-dev"
+  "deb-python" {< "2.8"}
+  "deb-python" {>= "2.7~"}
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7~"}
+  "deb-python-bitarray"
+  "deb-python-numpy"
+  "deb-python-numpy" {>= "1-1.16.0~rc1"}
+]
+extra-source "python-libtiff_0.4.2-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pylibtiff/python-libtiff_0.4.2-5_amd64.deb"
+}

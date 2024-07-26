@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pyspf-milter_3.0.4-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pyspf-milter"]
+]
+depends: [
+  "deb-adduser"
+  "deb-python3-any"
+  "deb-python3-milter"
+  "deb-python3-pkg-resources"
+  "deb-python3-spf-engine" {= "3.0.4-2"}
+  ("deb-postfix" | "deb- sendmail")
+]
+extra-source "pyspf-milter_3.0.4-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/spf-engine/pyspf-milter_3.0.4-2_all.deb"
+}

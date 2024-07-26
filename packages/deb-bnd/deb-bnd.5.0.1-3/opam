@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i bnd_5.0.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r bnd"]
+]
+depends: [
+  "deb-java-wrappers"
+  "deb-junit4"
+  "deb-libfelix-framework-java"
+  "deb-libfelix-gogo-runtime-java"
+  "deb-libfelix-resolver-java" {>= "1.16"}
+  "deb-libjline2-java"
+  "deb-libosgi-annotation-java"
+  "deb-libosgi-compendium-java" {>= "7"}
+  "deb-libosgi-core-java" {>= "7.0.0"}
+  "deb-libslf4j-java"
+  "deb-libxz-java"
+  "deb-libyaml-snake-java"
+  ("deb-default-jre-headless" | "deb- java8-runtime-headless")
+]
+extra-source "bnd_5.0.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/bnd/bnd_5.0.1-3_all.deb"
+}

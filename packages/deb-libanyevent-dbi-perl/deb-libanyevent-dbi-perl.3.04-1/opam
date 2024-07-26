@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libanyevent-dbi-perl_3.04-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libanyevent-dbi-perl"]
+]
+depends: [
+  "deb-libanyevent-fork-perl"
+  "deb-libanyevent-perl"
+  "deb-libcbor-xs-perl"
+  "deb-libcommon-sense-perl"
+  "deb-libconvert-scalar-perl"
+  "deb-libdbi-perl"
+  "deb-perl"
+]
+extra-source "libanyevent-dbi-perl_3.04-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/liba/libanyevent-dbi-perl/libanyevent-dbi-perl_3.04-1_all.deb"
+}

@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libchado-perl_1.31-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libchado-perl"]
+]
+depends: [
+  "deb-bioperl"
+  "deb-libbio-chado-schema-perl"
+  "deb-libcgi-session-perl"
+  "deb-libclass-dbi-pager-perl"
+  "deb-libclass-dbi-perl"
+  "deb-libclass-dbi-pg-perl"
+  "deb-libdata-stag-perl"
+  "deb-libdbd-pg-perl"
+  "deb-libdbi-perl"
+  "deb-libdbix-dbstag-perl"
+  "deb-libdigest-md5-file-perl"
+  "deb-libgd-perl"
+  "deb-libgo-perl"
+  "deb-libgraph-perl"
+  "deb-liblog-log4perl-perl"
+  "deb-libmodule-build-perl"
+  "deb-libsql-translator-perl"
+  "deb-libtemplate-perl"
+  "deb-libwww-perl"
+  "deb-libxml-libxslt-perl"
+  "deb-libxml-perl"
+  "deb-libxml-simple-perl"
+  "deb-make"
+  "deb-perl"
+  "deb-postgresql-client"
+]
+extra-source "libchado-perl_1.31-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libchado-perl/libchado-perl_1.31-6_all.deb"
+}

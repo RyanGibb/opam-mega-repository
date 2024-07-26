@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mpg321_0.3.2-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mpg321"]
+]
+depends: [
+  "deb-libao4" {>= "1.1.0"}
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libid3tag0" {>= "0.15.1b"}
+  "deb-libmad0" {>= "0.15.1b-3"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "mpg321_0.3.2-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mpg321/mpg321_0.3.2-3_amd64.deb"
+}

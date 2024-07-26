@@ -1,0 +1,67 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ikiwiki-hosting-web_0.20180719-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ikiwiki-hosting-web"]
+]
+depends: [
+  "deb-acl"
+  "deb-adduser"
+  "deb-apache2"
+  "deb-dnsutils"
+  "deb-git" {>= "1-1.7.0"}
+  "deb-gitweb" {>= "1-1.7.0"}
+  "deb-ikiwiki" {>= "3.20100723"}
+  "deb-ikiwiki-hosting-common"
+  "deb-libauthen-passphrase-perl"
+  "deb-libc6" {>= "2.8"}
+  "deb-libcgi-formbuilder-perl" {>= "3.05"}
+  "deb-libcgi-pm-perl"
+  "deb-libcgi-session-perl" {>= "4.14-1"}
+  "deb-libcoy-perl"
+  "deb-libcrypt-ssleay-perl"
+  "deb-libdata-compare-perl"
+  "deb-libdatetime-perl"
+  "deb-libfile-mimeinfo-perl"
+  "deb-libgravatar-url-perl"
+  "deb-libhighlight-perl"
+  "deb-libhtml-tree-perl"
+  "deb-liblocale-gettext-perl" {>= "1.05-1"}
+  "deb-liblwpx-paranoidagent-perl"
+  "deb-libmail-sendmail-perl"
+  "deb-libmailtools-perl"
+  "deb-libnet-inet6glue-perl"
+  "deb-libnet-openid-consumer-perl" {>= "1.03"}
+  "deb-librpc-xml-perl"
+  "deb-libtext-csv-perl"
+  "deb-libtext-markdown-perl" {>= "1.0.26-1~bpo50+1"}
+  "deb-libtext-multimarkdown-perl"
+  "deb-libtext-textile-perl"
+  "deb-libtext-typography-perl"
+  "deb-libtext-wikicreole-perl"
+  "deb-libtext-wikiformat-perl"
+  "deb-libtimedate-perl"
+  "deb-libxml-feed-perl"
+  "deb-libxml-simple-perl"
+  "deb-libyaml-perl"
+  "deb-libyaml-syck-perl"
+  "deb-lsb-base"
+  "deb-moreutils" {>= "0.43"}
+  "deb-openssl"
+  "deb-perl-any"
+  "deb-polygen"
+  "deb-polygen-data"
+  "deb-python-docutils"
+  "deb-uuid"
+  ("deb-apache2-suexec-pristine" | "deb- apache2-suexec")
+  ("deb-gcc" | "deb- c-compiler")
+  ("deb-libc6-dev" | "deb- libc-dev")
+  ("deb-libimage-magick-perl" | "deb- perlmagick")
+]
+conflicts: [
+  "deb-parallel"
+]
+extra-source "ikiwiki-hosting-web_0.20180719-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/ikiwiki-hosting/ikiwiki-hosting-web_0.20180719-1_amd64.deb"
+}

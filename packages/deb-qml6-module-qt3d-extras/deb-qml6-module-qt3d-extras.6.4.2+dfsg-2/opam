@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qml6-module-qt3d-extras_6.4.2+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qml6-module-qt3d-extras"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libqt63dcore6" {>= "6.2.1"}
+  "deb-libqt63dextras6" {>= "6.2.1"}
+  "deb-libqt63dquickextras6" {>= "6.2.1"}
+  "deb-libqt6core6" {>= "6.4.2+dfsg~"}
+  "deb-libqt6qml6" {>= "6.4.2+dfsg~"}
+  "deb-libstdc++6" {>= "5"}
+]
+extra-source "qml6-module-qt3d-extras_6.4.2+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qt6-3d/qml6-module-qt3d-extras_6.4.2+dfsg-2_amd64.deb"
+}

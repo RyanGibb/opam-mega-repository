@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-tilelive-mapnik_0.6.8-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-tilelive-mapnik"]
+]
+depends: [
+  "deb-node-generic-pool" {>= "2.0.3~"}
+  "deb-node-mapnik" {>= "1.1.3~"}
+  "deb-node-mime"
+  "deb-node-sphericalmercator" {>= "1.0.1"}
+  "deb-node-step" {>= "0.0.5"}
+  "deb-node-underscore" {>= "1.3.1"}
+  "deb-nodejs"
+]
+extra-source "node-tilelive-mapnik_0.6.8-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-tilelive-mapnik/node-tilelive-mapnik_0.6.8-1_all.deb"
+}

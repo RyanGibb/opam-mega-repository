@@ -1,0 +1,43 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-rally-openstack_2.0.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-rally-openstack"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-barbicanclient"
+  "deb-python3-ceilometerclient"
+  "deb-python3-cinderclient"
+  "deb-python3-designateclient"
+  "deb-python3-glanceclient"
+  "deb-python3-gnocchiclient"
+  "deb-python3-heatclient"
+  "deb-python3-ironicclient"
+  "deb-python3-keystoneauth1"
+  "deb-python3-keystoneclient"
+  "deb-python3-kubernetes"
+  "deb-python3-magnumclient"
+  "deb-python3-manilaclient"
+  "deb-python3-mistralclient"
+  "deb-python3-monascaclient"
+  "deb-python3-muranoclient"
+  "deb-python3-neutronclient"
+  "deb-python3-novaclient"
+  "deb-python3-octaviaclient"
+  "deb-python3-os-faults"
+  "deb-python3-osprofiler"
+  "deb-python3-rally" {>= "3.1.0"}
+  "deb-python3-requests"
+  "deb-python3-saharaclient"
+  "deb-python3-senlinclient"
+  "deb-python3-swiftclient"
+  "deb-python3-troveclient"
+  "deb-python3-watcherclient"
+  "deb-python3-zaqarclient"
+  "deb-rally" {>= "3.1.0"}
+]
+extra-source "python3-rally-openstack_2.0.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rally-openstack/python3-rally-openstack_2.0.0-2_all.deb"
+}

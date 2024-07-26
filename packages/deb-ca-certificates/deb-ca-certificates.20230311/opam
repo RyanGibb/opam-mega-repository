@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ca-certificates_20230311_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ca-certificates"]
+]
+depends: [
+  "deb-openssl" {>= "1.1.1"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "ca-certificates_20230311_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20230311_all.deb"
+}

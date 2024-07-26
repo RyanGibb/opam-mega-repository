@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdcmtk17_3.6.7-9~deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdcmtk17"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libtiff6" {>= "4.0.3"}
+  "deb-libwrap0" {>= "7.6-4~"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libdcmtk17_3.6.7-9~deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dcmtk/libdcmtk17_3.6.7-9~deb12u1_amd64.deb"
+}

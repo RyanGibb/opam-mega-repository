@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-double-conversion-dev_2.0.2.0+ds1-5+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-double-conversion-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libdouble-conversion-dev"
+  "deb-libdouble-conversion3" {>= "2.0.0"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgmp10"
+  "deb-libstdc++6" {>= "4.1.1"}
+]
+extra-source "libghc-double-conversion-dev_2.0.2.0+ds1-5+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-double-conversion/libghc-double-conversion-dev_2.0.2.0+ds1-5+b1_amd64.deb"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-expand-brackets_4.0.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-expand-brackets"]
+]
+depends: [
+  "deb-node-posix-character-classes"
+  "deb-node-regex-not"
+  "deb-node-snapdragon" {>= "0.12.0"}
+  "deb-node-to-regex"
+  "deb-nodejs"
+]
+extra-source "node-expand-brackets_4.0.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-expand-brackets/node-expand-brackets_4.0.0-2_all.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsliplu1_1:5.8.1+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsliplu1"]
+]
+depends: [
+  "deb-libamd2" {>= "1-4.5.2"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libcolamd2" {>= "1-4.5.2"}
+  "deb-libgmp10"
+  "deb-libmpfr6" {>= "4.0.0"}
+  "deb-libsuitesparseconfig5" {>= "1-5.0.0"}
+]
+extra-source "libsliplu1_1:5.8.1+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/suitesparse/libsliplu1_5.8.1+dfsg-2_amd64.deb"
+}

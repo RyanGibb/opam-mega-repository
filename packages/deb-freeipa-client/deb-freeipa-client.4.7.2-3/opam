@@ -1,0 +1,46 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i freeipa-client_4.7.2-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r freeipa-client"]
+]
+depends: [
+  "deb-bind9utils"
+  "deb-certmonger" {>= "0.79.5-2"}
+  "deb-curl"
+  "deb-dnsutils"
+  "deb-freeipa-common" {= "4.7.2-3"}
+  "deb-krb5-user"
+  "deb-libbasicobjects0" {>= "0.4.0"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcollection4" {>= "0.4.0"}
+  "deb-libcom-err2" {>= "1.43.9"}
+  "deb-libini-config5" {>= "0.4.0"}
+  "deb-libk5crypto3" {>= "1.9+dfsg~beta1"}
+  "deb-libkrb5-3" {>= "1.13~alpha1+dfsg"}
+  "deb-libldap-2-4-2" {>= "2.4.7"}
+  "deb-libnspr4" {>= "2-4.9-2~"}
+  "deb-libnss-sss"
+  "deb-libnss3" {>= "2-3.13.4-2~"}
+  "deb-libnss3-tools"
+  "deb-libpam-sss"
+  "deb-libpopt0" {>= "1.14"}
+  "deb-libref-array1" {>= "0.4.0"}
+  "deb-libsasl2-2" {>= "2.1.27+dfsg"}
+  "deb-libsasl2-modules-gssapi-mit"
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libsss-sudo"
+  "deb-libxmlrpc-core-c3" {>= "1.16.33-3.1ubuntu5"}
+  "deb-oddjob-mkhomedir"
+  "deb-python-any"
+  "deb-python-dnspython"
+  "deb-python-gssapi"
+  "deb-python-ipaclient" {= "4.7.2-3"}
+  "deb-python-ldap"
+  "deb-python-sss"
+  "deb-sssd" {>= "1.14.0"}
+]
+extra-source "freeipa-client_4.7.2-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/freeipa/freeipa-client_4.7.2-3_amd64.deb"
+}

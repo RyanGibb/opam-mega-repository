@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-module-deps_6.2.3-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-module-deps"]
+]
+depends: [
+  "deb-node-browser-resolve"
+  "deb-node-cached-path-relative" {>= "1.0.2"}
+  "deb-node-concat-stream"
+  "deb-node-defined"
+  "deb-node-detective"
+  "deb-node-duplexer3"
+  "deb-node-inherits"
+  "deb-node-jsonstream"
+  "deb-node-parents"
+  "deb-node-readable-stream"
+  "deb-node-resolve"
+  "deb-node-stream-combiner2"
+  "deb-node-subarg"
+  "deb-node-through2"
+  "deb-node-xtend"
+  "deb-nodejs-any"
+]
+extra-source "node-module-deps_6.2.3-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-module-deps/node-module-deps_6.2.3-3_all.deb"
+}

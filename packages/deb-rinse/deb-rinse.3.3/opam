@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i rinse_3.3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r rinse"]
+]
+depends: [
+  "deb-cpio" {>= "2.11+dfsg-4.1"}
+  "deb-libterm-size-perl"
+  "deb-libwww-perl"
+  "deb-perl"
+  "deb-rpm"
+  "deb-rpm2cpio"
+  "deb-wget"
+]
+extra-source "rinse_3.3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rinse/rinse_3.3_all.deb"
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gtk+2.0-lang-2.24.32-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gtk+2.0-lang"]
+]
+depends: [
+  "apk-gtk-update-icon-cache" {= "2.24.32-r1"}
+  "apk-shared-mime-info" {= "1.15-r0"}
+]
+extra-source "gtk+2.0-lang-2.24.32-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/gtk+2.0-lang-2.24.32-r1.apk"
+}

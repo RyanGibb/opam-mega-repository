@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i anki_2.1.15+dfsg-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r anki"]
+]
+depends: [
+  "deb-libjs-jquery"
+  "deb-libjs-jquery-flot"
+  "deb-libjs-jquery-ui"
+  "deb-libjs-mathjax"
+  "deb-libqt5core5a" {>= "5.11"}
+  "deb-python3-any" {>= "3.6~"}
+  "deb-python3-bs4"
+  "deb-python3-decorator"
+  "deb-python3-distro"
+  "deb-python3-distutils"
+  "deb-python3-jsonschema"
+  "deb-python3-markdown"
+  "deb-python3-pyaudio"
+  "deb-python3-pyqt5" {> "5.11"}
+  "deb-python3-pyqt5-qtwebchannel" {> "5.11"}
+  "deb-python3-pyqt5-qtwebengine" {> "5.11"}
+  "deb-python3-requests"
+  "deb-python3-send2trash"
+]
+extra-source "anki_2.1.15+dfsg-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/anki/anki_2.1.15+dfsg-3_all.deb"
+}

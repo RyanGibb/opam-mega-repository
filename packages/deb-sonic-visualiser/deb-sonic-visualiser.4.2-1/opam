@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sonic-visualiser_4.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sonic-visualiser"]
+]
+depends: [
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.29"}
+  "deb-libcapnp-0-7-0"
+  "deb-libfftw3-double3" {>= "3.3.5"}
+  "deb-libfftw3-single3" {>= "3.3.5"}
+  "deb-libfishsound1" {>= "0.9.2"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libid3tag0" {>= "0.15.1b"}
+  "deb-liblo7" {>= "0.26~repack"}
+  "deb-liblrdf0" {>= "0.4.0-1.2"}
+  "deb-libmad0" {>= "0.15.1b-3"}
+  "deb-liboggz2" {>= "1.1.0"}
+  "deb-libopusfile0" {>= "0.5"}
+  "deb-libportaudio2" {>= "19+svn20101113"}
+  "deb-libpulse0" {>= "0.99.1"}
+  "deb-libqt5core5a" {>= "5.14.1"}
+  "deb-libqt5network5" {>= "5.14.1"}
+  "deb-libqt5svg5" {>= "5.6.0~beta"}
+  "deb-libqt5widgets5" {>= "5.4.0"}
+  "deb-libqt5xml5" {>= "5.1.0"}
+  "deb-librubberband2" {>= "1.8.2"}
+  "deb-libsamplerate0" {>= "0.1.7"}
+  "deb-libserd-0-0" {>= "0.5.0"}
+  "deb-libsndfile1" {>= "1.0.20"}
+  "deb-libsord-0-0" {>= "0.12.0~dfsg0"}
+  "deb-libstdc++6" {>= "9"}
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "sonic-visualiser_4.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sonic-visualiser/sonic-visualiser_4.2-1_amd64.deb"
+}

@@ -1,0 +1,59 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-seurat_4.0.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-seurat"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.3-1"}
+  "deb-r-cran-cluster"
+  "deb-r-cran-cowplot"
+  "deb-r-cran-fitdistrplus"
+  "deb-r-cran-future"
+  "deb-r-cran-future-apply"
+  "deb-r-cran-ggplot2" {>= "3.3.0"}
+  "deb-r-cran-ggrepel"
+  "deb-r-cran-ggridges"
+  "deb-r-cran-httr"
+  "deb-r-cran-ica"
+  "deb-r-cran-igraph"
+  "deb-r-cran-irlba"
+  "deb-r-cran-jsonlite"
+  "deb-r-cran-kernsmooth"
+  "deb-r-cran-leiden" {>= "0.3.1"}
+  "deb-r-cran-lmtest"
+  "deb-r-cran-mass"
+  "deb-r-cran-matrix" {>= "1.2-14"}
+  "deb-r-cran-matrixstats"
+  "deb-r-cran-miniui"
+  "deb-r-cran-patchwork"
+  "deb-r-cran-pbapply"
+  "deb-r-cran-plotly" {>= "4.9.0"}
+  "deb-r-cran-png"
+  "deb-r-cran-rann"
+  "deb-r-cran-rcolorbrewer"
+  "deb-r-cran-rcpp" {>= "0.11.0"}
+  "deb-r-cran-rcppannoy" {>= "0.0.18"}
+  "deb-r-cran-rcppeigen"
+  "deb-r-cran-rcppprogress"
+  "deb-r-cran-reticulate"
+  "deb-r-cran-rlang"
+  "deb-r-cran-rocr"
+  "deb-r-cran-rtsne"
+  "deb-r-cran-scales"
+  "deb-r-cran-scattermore" {>= "0.7"}
+  "deb-r-cran-sctransform" {>= "0.3.2"}
+  "deb-r-cran-seuratobject"
+  "deb-r-cran-shiny"
+  "deb-r-cran-spatstat"
+  "deb-r-cran-tibble"
+  "deb-r-cran-uwot" {>= "0.1.9"}
+]
+extra-source "r-cran-seurat_4.0.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-seurat/r-cran-seurat_4.0.0-2_amd64.deb"
+}

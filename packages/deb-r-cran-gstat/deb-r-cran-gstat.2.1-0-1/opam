@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-gstat_2.1-0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-gstat"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.2.20221110-1"}
+  "deb-r-cran-fnn"
+  "deb-r-cran-lattice"
+  "deb-r-cran-sf" {>= "0.7-2"}
+  "deb-r-cran-sftime"
+  "deb-r-cran-sp" {>= "0.9-72"}
+  "deb-r-cran-spacetime" {>= "1.2-8"}
+  "deb-r-cran-stars"
+  "deb-r-cran-zoo"
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "r-cran-gstat_2.1-0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-gstat/r-cran-gstat_2.1-0-1_amd64.deb"
+}

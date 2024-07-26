@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i isso_0.12.2-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r isso"]
+]
+depends: [
+  "deb-lsb-base" {>= "3.0-6"}
+  "deb-python3-any"
+  "deb-python3-bleach"
+  "deb-python3-html5lib"
+  "deb-python3-itsdangerous"
+  "deb-python3-jinja2"
+  "deb-python3-misaka"
+  "deb-python3-werkzeug"
+]
+extra-source "isso_0.12.2-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/isso/isso_0.12.2-2_all.deb"
+}

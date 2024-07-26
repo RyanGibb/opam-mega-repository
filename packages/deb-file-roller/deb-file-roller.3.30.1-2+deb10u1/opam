@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i file-roller_3.30.1-2+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r file-roller"]
+]
+depends: [
+  "deb-bzip2"
+  "deb-libarchive13" {>= "3.1.2"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo2" {>= "1.4.10"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libgtk-3-0" {>= "3.13.2"}
+  "deb-libjson-glib-1-0-0" {>= "0.12.0"}
+  "deb-libnautilus-extension1a" {>= "3.14.1"}
+  "deb-libnotify4" {>= "0.7.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-p7zip-full"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "file-roller_3.30.1-2+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/file-roller/file-roller_3.30.1-2+deb10u1_amd64.deb"
+}

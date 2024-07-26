@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-luminescence_0.9.21-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-luminescence"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.2.20221110-2"}
+  "deb-r-cran-bbmle" {>= "1.0.25"}
+  "deb-r-cran-data-table" {>= "1.14.6"}
+  "deb-r-cran-deoptim" {>= "2.2-8"}
+  "deb-r-cran-httr" {>= "1.4.4"}
+  "deb-r-cran-lamw" {>= "2.1.1"}
+  "deb-r-cran-matrixstats" {>= "0.63.0"}
+  "deb-r-cran-mclust" {>= "6.0.0"}
+  "deb-r-cran-minpack-lm" {>= "1.2-3"}
+  "deb-r-cran-plotrix" {>= "3.8-2"}
+  "deb-r-cran-rcpp" {>= "1.0.10"}
+  "deb-r-cran-rcpparmadillo" {>= "0.11.4.0.0"}
+  "deb-r-cran-readxl" {>= "1.4.1"}
+  "deb-r-cran-shape" {>= "1.4.6"}
+  "deb-r-cran-xml" {>= "3.99"}
+  "deb-r-cran-zoo" {>= "1.8"}
+]
+extra-source "r-cran-luminescence_0.9.21-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-luminescence/r-cran-luminescence_0.9.21-1_amd64.deb"
+}

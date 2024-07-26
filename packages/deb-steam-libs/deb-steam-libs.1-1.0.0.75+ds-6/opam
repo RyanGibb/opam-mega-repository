@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i steam-libs_1:1.0.0.75+ds-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r steam-libs"]
+]
+depends: [
+  "deb-ca-certificates"
+  "deb-curl"
+  "deb-file"
+  "deb-libgl1"
+  "deb-libgl1-mesa-dri"
+  "deb-libgpg-error0"
+  "deb-libstdc++6"
+  "deb-libudev1"
+  "deb-libva-x11-2"
+  "deb-libva2"
+  "deb-libxcb-dri3-0"
+  "deb-libxcb1"
+  "deb-libxi6"
+  "deb-libxinerama1"
+  "deb-xz-utils"
+  ("deb- libgcc1")
+  ("deb-libcrypt1" | "deb- libc6" {< "2.29-4"})
+]
+extra-source "steam-libs_1:1.0.0.75+ds-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/steam-installer/steam-libs_1.0.0.75+ds-6_amd64.deb"
+}

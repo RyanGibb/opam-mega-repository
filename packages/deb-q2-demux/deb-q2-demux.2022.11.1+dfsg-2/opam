@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i q2-demux_2022.11.1+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r q2-demux"]
+]
+depends: [
+  "deb-node-d3"
+  "deb-python3-any"
+  "deb-python3-ipywidgets"
+  "deb-python3-numpy"
+  "deb-python3-pandas"
+  "deb-python3-psutil"
+  "deb-python3-seaborn"
+  "deb-python3-setuptools"
+  "deb-python3-skbio"
+  "deb-python3-yaml"
+  "deb-q2-types" {>= "2022.11.1"}
+  "deb-q2templates" {>= "2022.11.1"}
+  "deb-qiime" {>= "2022.11.1"}
+]
+extra-source "q2-demux_2022.11.1+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/q2-demux/q2-demux_2022.11.1+dfsg-2_all.deb"
+}

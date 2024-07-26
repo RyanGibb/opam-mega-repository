@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-flow-remove-types_1.2.3-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-flow-remove-types"]
+]
+depends: [
+  "deb-node-babylon" {>= "6.15.0"}
+  "deb-node-vlq" {>= "0.2.1"}
+  "deb-nodejs"
+]
+extra-source "node-flow-remove-types_1.2.3-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-flow-remove-types/node-flow-remove-types_1.2.3-2_all.deb"
+}

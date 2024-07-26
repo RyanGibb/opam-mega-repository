@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-hakyll-prof_4.13.4.0-2+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-hakyll-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-blaze-html-prof"
+  "deb-libghc-blaze-markup-prof"
+  "deb-libghc-cryptonite-prof"
+  "deb-libghc-data-default-prof"
+  "deb-libghc-file-embed-prof"
+  "deb-libghc-fsnotify-prof"
+  "deb-libghc-hakyll-dev" {= "4.13.4.0-2+b2"}
+  "deb-libghc-http-conduit-prof"
+  "deb-libghc-http-types-prof"
+  "deb-libghc-lrucache-prof"
+  "deb-libghc-memory-prof"
+  "deb-libghc-network-uri-prof"
+  "deb-libghc-optparse-applicative-prof"
+  "deb-libghc-pandoc-citeproc-prof"
+  "deb-libghc-pandoc-prof"
+  "deb-libghc-random-prof"
+  "deb-libghc-regex-tdfa-prof"
+  "deb-libghc-resourcet-prof"
+  "deb-libghc-scientific-prof"
+  "deb-libghc-tagsoup-prof"
+  "deb-libghc-time-locale-compat-prof"
+  "deb-libghc-unordered-containers-prof"
+  "deb-libghc-vector-prof"
+  "deb-libghc-wai-app-static-prof"
+  "deb-libghc-wai-prof"
+  "deb-libghc-warp-prof"
+  "deb-libghc-yaml-prof"
+]
+extra-source "libghc-hakyll-prof_4.13.4.0-2+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-hakyll/libghc-hakyll-prof_4.13.4.0-2+b2_amd64.deb"
+}

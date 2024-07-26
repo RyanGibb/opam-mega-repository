@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gmpc_11.8.16-15_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gmpc"]
+]
+depends: [
+  "deb-gmpc-data" {= "11.8.16-15"}
+  "deb-libappindicator1" {>= "0.2.96"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libgtk2-0-0" {>= "2.24.32"}
+  "deb-libmpd1"
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libsoup2-4-1" {>= "2.4.1"}
+  "deb-libsqlite3-0" {>= "3.5.9"}
+  "deb-libunique-1-0-0" {>= "1.0.2"}
+  "deb-libx11-6"
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "gmpc_11.8.16-15_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gmpc/gmpc_11.8.16-15_amd64.deb"
+}

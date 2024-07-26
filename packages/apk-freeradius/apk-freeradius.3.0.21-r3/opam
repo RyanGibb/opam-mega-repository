@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add freeradius-3.0.21-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del freeradius"]
+]
+depends: [
+  "apk-busybox" {= "1.31.1-r22"}
+  "apk-freeradius-lib" {= "3.0.21-r3"}
+  "apk-gdbm" {= "1.13-r1"}
+  "apk-libcrypto1-1" {= "1.1.1o-r0"}
+  "apk-libssl1-1" {= "1.1.1o-r0"}
+  "apk-musl" {= "1.1.24-r10"}
+  "apk-readline" {= "8.0.4-r0"}
+  "apk-talloc" {= "2.3.1-r0"}
+]
+extra-source "freeradius-3.0.21-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/freeradius-3.0.21-r3.apk"
+}

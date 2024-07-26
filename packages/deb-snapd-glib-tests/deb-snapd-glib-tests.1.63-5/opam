@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i snapd-glib-tests_1.63-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r snapd-glib-tests"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.65.1"}
+  "deb-libjson-glib-1-0-0" {>= "1.5.2"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libsnapd-glib-2-1" {>= "1.60"}
+  "deb-libsnapd-qt-2-1" {>= "1.63"}
+  "deb-libsoup-3-0-0" {>= "3.0.3"}
+  "deb-libstdc++6" {>= "5.2"}
+]
+extra-source "snapd-glib-tests_1.63-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/snapd-glib/snapd-glib-tests_1.63-5_amd64.deb"
+}

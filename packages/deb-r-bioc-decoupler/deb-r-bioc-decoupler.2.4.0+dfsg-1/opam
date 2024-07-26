@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-bioc-decoupler_2.4.0+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-bioc-decoupler"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.2.20221110-1"}
+  "deb-r-bioc-biocgenerics"
+  "deb-r-cran-broom"
+  "deb-r-cran-dplyr"
+  "deb-r-cran-magrittr"
+  "deb-r-cran-matrix"
+  "deb-r-cran-purrr"
+  "deb-r-cran-rlang"
+  "deb-r-cran-stringr"
+  "deb-r-cran-tibble"
+  "deb-r-cran-tidyr"
+  "deb-r-cran-tidyselect"
+  "deb-r-cran-withr"
+]
+extra-source "r-bioc-decoupler_2.4.0+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-bioc-decoupler/r-bioc-decoupler_2.4.0+dfsg-1_all.deb"
+}

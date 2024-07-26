@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ghdl-gcc_2.0.0+dfsg-6.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ghdl-gcc"]
+]
+depends: [
+  "deb-gcc"
+  "deb-ghdl-common" {= "2.0.0+dfsg-6.2"}
+  "deb-libc6" {>= "2.36"}
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-libgnat-12" {>= "12.2.0"}
+  "deb-libisl23" {>= "0.15"}
+  "deb-libmpc3" {>= "1.1.0"}
+  "deb-libmpfr6" {>= "3.1.3"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+  "deb-zlib1g-dev"
+]
+extra-source "ghdl-gcc_2.0.0+dfsg-6.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/ghdl/ghdl-gcc_2.0.0+dfsg-6.2_amd64.deb"
+}

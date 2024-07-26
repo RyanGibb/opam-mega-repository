@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpcp3_6.0.3-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpcp3"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-liblzma5" {>= "5.1.1alpha+20120614"}
+  "deb-libsasl2-2" {>= "2.1.28+dfsg"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libsystemd0"
+  "deb-pcp-conf" {= "6.0.3-1.1"}
+]
+conflicts: [
+  "deb-pgpool2"
+]
+extra-source "libpcp3_6.0.3-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pcp/libpcp3_6.0.3-1.1_amd64.deb"
+}

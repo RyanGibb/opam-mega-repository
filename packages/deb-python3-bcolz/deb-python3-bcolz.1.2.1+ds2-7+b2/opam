@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-bcolz_1.2.1+ds2-7+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-bcolz"]
+]
+depends: [
+  "deb-libblosc1" {>= "1.20.1+ds1"}
+  "deb-libc6" {>= "2.14"}
+  "deb-python3" {< "3.10"}
+  "deb-python3" {>= "3.9~"}
+  "deb-python3-any"
+  "deb-python3-numpy"
+  "deb-python3-numpy" {>= "1-1.16.0~rc1"}
+  "deb-python3-pkg-resources"
+]
+extra-source "python3-bcolz_1.2.1+ds2-7+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/bcolz/python3-bcolz_1.2.1+ds2-7+b2_amd64.deb"
+}

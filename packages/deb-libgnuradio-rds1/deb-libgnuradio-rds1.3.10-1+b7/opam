@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgnuradio-rds1_3.10-1+b7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgnuradio-rds1"]
+]
+depends: [
+  "deb-libboost-locale1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.32"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgnuradio-pmt3-10-5" {>= "3.10.5.0"}
+  "deb-libgnuradio-runtime3-10-5" {>= "3.10.5.0"}
+  "deb-libstdc++6" {>= "11"}
+]
+extra-source "libgnuradio-rds1_3.10-1+b7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gr-rds/libgnuradio-rds1_3.10-1+b7_amd64.deb"
+}

@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsynfig-dev_1.5.1+dfsg-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsynfig-dev"]
+]
+depends: [
+  "deb-etl-dev" {>= "1.4.0~"}
+  "deb-libavcodec-dev"
+  "deb-libavformat-dev"
+  "deb-libavutil-dev"
+  "deb-libcairo2-dev"
+  "deb-libfftw3-dev"
+  "deb-libfontconfig1-dev"
+  "deb-libfreetype6-dev"
+  "deb-libglibmm-2-4-dev"
+  "deb-libmlt++-dev"
+  "deb-libopenexr-dev"
+  "deb-libpango1-0-dev"
+  "deb-libsigc++-2-0-dev"
+  "deb-libswscale-dev"
+  "deb-libsynfig0a" {= "1.5.1+dfsg-3+b1"}
+  "deb-libxml++2-6-dev"
+]
+extra-source "libsynfig-dev_1.5.1+dfsg-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/synfig/libsynfig-dev_1.5.1+dfsg-3+b1_amd64.deb"
+}

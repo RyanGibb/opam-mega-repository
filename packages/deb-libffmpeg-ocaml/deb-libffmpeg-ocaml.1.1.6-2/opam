@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libffmpeg-ocaml_1.1.6-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libffmpeg-ocaml"]
+]
+depends: [
+  "deb-libavcodec-extra59"
+  "deb-libavdevice59" {>= "7-5.0"}
+  "deb-libavfilter-extra8"
+  "deb-libavformat-extra59"
+  "deb-libavutil57" {>= "7-5.1"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libswresample4" {>= "7-5.0"}
+  "deb-libswscale6" {>= "7-5.0"}
+  "deb-ocaml-base"
+]
+extra-source "libffmpeg-ocaml_1.1.6-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/ocaml-ffmpeg/libffmpeg-ocaml_1.1.6-2_amd64.deb"
+}

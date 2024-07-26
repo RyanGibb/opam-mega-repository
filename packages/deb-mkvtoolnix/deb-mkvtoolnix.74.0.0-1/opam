@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mkvtoolnix_74.0.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mkvtoolnix"]
+]
+depends: [
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0+ds1"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libdvdread8" {>= "4.1.3"}
+  "deb-libebml5" {>= "1.4.4"}
+  "deb-libflac12" {>= "1.3.0"}
+  "deb-libfmt9" {>= "9.1.0+ds1"}
+  "deb-libgcc-s1" {>= "3.4"}
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-libmatroska7" {>= "1.7.1"}
+  "deb-libogg0" {>= "1.0rc3"}
+  "deb-libpugixml1v5" {>= "1.7"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libvorbis0a" {>= "1.1.2"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "mkvtoolnix_74.0.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mkvtoolnix/mkvtoolnix_74.0.0-1_amd64.deb"
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-language-python-prof_0.5.8-2+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-language-python-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-language-python-dev" {= "0.5.8-2+b2"}
+  "deb-libghc-monads-tf-prof"
+  "deb-libghc-utf8-string-prof"
+]
+extra-source "libghc-language-python-prof_0.5.8-2+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-language-python/libghc-language-python-prof_0.5.8-2+b2_amd64.deb"
+}

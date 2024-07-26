@@ -1,0 +1,45 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdolfinx-dev_1:0.5.2-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdolfinx-dev"]
+]
+depends: [
+  "deb-cmake" {>= "3.12"}
+  "deb-libboost-chrono-dev"
+  "deb-libboost-dev"
+  "deb-libboost-filesystem-dev"
+  "deb-libboost-iostreams-dev"
+  "deb-libboost-math-dev"
+  "deb-libboost-mpi-dev"
+  "deb-libboost-program-options-dev"
+  "deb-libboost-serialization-dev"
+  "deb-libboost-thread-dev"
+  "deb-libboost-timer-dev"
+  "deb-libeigen3-dev"
+  "deb-libhdf5-mpi-dev"
+  "deb-libpugixml-dev"
+  "deb-libscotch-dev"
+  "deb-libsuitesparse-dev"
+  "deb-libxml2-dev"
+  "deb-libxsimd-dev" {>= "8.1.0~"}
+  "deb-libxtensor-dev" {>= "0.24.3~"}
+  "deb-pkg-config"
+  "deb-python3-ffcx" {< "1-0.6.0"}
+  "deb-python3-ffcx" {>= "1-0.5.0~"}
+  ("deb-g++" | "deb- c++-compiler")
+  ("deb-libdolfinx-real-dev" {< "1-0.6~"} | "deb- libdolfinx-complex-dev" {< "1-0.6~"})
+  ("deb-libdolfinx-real-dev" {>= "1-0.5.2-2"} | "deb- libdolfinx-complex-dev" {>= "1-0.5.2-2"})
+]
+conflicts: [
+  "deb-libdolfin0-dev"
+  "deb-libdolfin1-0-dev"
+  "deb-libdolfin1-1-dev"
+  "deb-libdolfin1-2-dev"
+  "deb-libdolfin1-3-dev"
+  "deb-libdolfin1-4-dev"
+]
+extra-source "libdolfinx-dev_1:0.5.2-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fenics-dolfinx/libdolfinx-dev_0.5.2-2+b1_amd64.deb"
+}

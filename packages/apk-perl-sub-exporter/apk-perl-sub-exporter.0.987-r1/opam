@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-sub-exporter-0.987-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-sub-exporter"]
+]
+depends: [
+  "apk-perl-data-optlist" {= "0.110-r1"}
+  "apk-perl-params-util" {= "1.07-r8"}
+  "apk-perl-sub-install" {= "0.928-r1"}
+]
+extra-source "perl-sub-exporter-0.987-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-sub-exporter-0.987-r1.apk"
+}

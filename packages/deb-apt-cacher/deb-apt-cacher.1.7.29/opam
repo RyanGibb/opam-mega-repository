@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i apt-cacher_1.7.29_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r apt-cacher"]
+]
+depends: [
+  "deb-distro-info-data"
+  "deb-ed"
+  "deb-libdpkg-perl"
+  "deb-libfilesys-df-perl"
+  "deb-libio-interactive-perl"
+  "deb-libio-interface-perl"
+  "deb-libipc-sharelite-perl"
+  "deb-libnetaddr-ip-perl"
+  "deb-libsys-syscall-perl"
+  "deb-libwww-curl-perl"
+  "deb-libwww-perl"
+  "deb-perl-any"
+  "deb-sysvinit-utils"
+  "deb-update-inetd"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "apt-cacher_1.7.29_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/apt-cacher/apt-cacher_1.7.29_all.deb"
+}

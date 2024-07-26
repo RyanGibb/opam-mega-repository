@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-jdkato-prose-dev_1.1.0+git20171031.e27abfd-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-jdkato-prose-dev"]
+]
+depends: [
+  "deb-golang-github-montanaflynn-stats-dev"
+  "deb-golang-github-shogo82148-go-shuffle-dev"
+  "deb-golang-github-stretchr-testify-dev"
+  "deb-golang-github-urfave-cli-dev"
+  "deb-golang-gopkg-neurosnap-sentences-v1-dev"
+]
+extra-source "golang-github-jdkato-prose-dev_1.1.0+git20171031.e27abfd-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-jdkato-prose/golang-github-jdkato-prose-dev_1.1.0+git20171031.e27abfd-2_all.deb"
+}

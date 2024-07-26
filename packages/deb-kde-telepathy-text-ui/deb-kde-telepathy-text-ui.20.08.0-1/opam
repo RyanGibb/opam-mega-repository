@@ -1,0 +1,57 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kde-telepathy-text-ui_20.08.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kde-telepathy-text-ui"]
+]
+depends: [
+  "deb-kde-telepathy-data" {>= "0.8.1"}
+  "deb-kio"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libjs-jquery" {>= "1.7"}
+  "deb-libkf5archive5" {>= "4.96.0"}
+  "deb-libkf5configcore5" {>= "4.98.0"}
+  "deb-libkf5configgui5" {>= "4.97.0"}
+  "deb-libkf5configwidgets5" {>= "4.96.0"}
+  "deb-libkf5coreaddons5" {>= "5.2.0"}
+  "deb-libkf5dbusaddons5" {>= "4.97.0"}
+  "deb-libkf5emoticons-bin"
+  "deb-libkf5emoticons5" {>= "5.16-2"}
+  "deb-libkf5i18n5" {>= "4.97.0"}
+  "deb-libkf5iconthemes5" {>= "4.96.0"}
+  "deb-libkf5itemviews5" {>= "4.96.0"}
+  "deb-libkf5kcmutils5" {>= "4.96.0"}
+  "deb-libkf5kiocore5" {>= "5.69.0"}
+  "deb-libkf5kiowidgets5" {>= "5.69.0"}
+  "deb-libkf5notifications5" {>= "4.96.0"}
+  "deb-libkf5notifyconfig5" {>= "4.96.0"}
+  "deb-libkf5people5" {>= "5.69.0"}
+  "deb-libkf5peoplewidgets5" {>= "5.69.0"}
+  "deb-libkf5service-bin"
+  "deb-libkf5service5" {>= "4.96.0"}
+  "deb-libkf5sonnetcore5" {>= "4.96.0"}
+  "deb-libkf5sonnetui5" {>= "4.96.0"}
+  "deb-libkf5textwidgets5" {>= "5.0.0"}
+  "deb-libkf5widgetsaddons5" {>= "4.96.0"}
+  "deb-libkf5windowsystem5" {>= "4.96.0"}
+  "deb-libkf5xmlgui5" {>= "4.98.0"}
+  "deb-libktpcommoninternals9abi1" {>= "20.08.0~"}
+  "deb-libktplogger9abi1" {>= "20.08.0~"}
+  "deb-libktpmodels9abi1" {>= "20.08.0~"}
+  "deb-libktpotr9" {>= "20.08.0~"}
+  "deb-libktpwidgets9" {>= "20.08.0~"}
+  "deb-libqt5core5a" {>= "5.14.1"}
+  "deb-libqt5dbus5" {>= "5.14.1"}
+  "deb-libqt5texttospeech5" {>= "5.8.0~alpha"}
+  "deb-libqt5webenginewidgets5" {>= "5.14.1"}
+  "deb-libqt5widgets5" {>= "5.14.1"}
+  "deb-libqt5xml5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-libtelepathy-qt5-0" {>= "0.9.7~"}
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "kde-telepathy-text-ui_20.08.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/ktp-text-ui/kde-telepathy-text-ui_20.08.0-1_amd64.deb"
+}

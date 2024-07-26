@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-azure_20230112+git-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-azure"]
+]
+depends: [
+  "deb-python3-aiohttp"
+  "deb-python3-any"
+  "deb-python3-avro" {>= "1.10.0~"}
+  "deb-python3-azure-storage"
+  "deb-python3-colorama"
+  "deb-python3-cryptography" {>= "2.5"}
+  "deb-python3-dateutil"
+  "deb-python3-isodate"
+  "deb-python3-jsonschema"
+  "deb-python3-jwt"
+  "deb-python3-marshmallow"
+  "deb-python3-msal"
+  "deb-python3-msal-extensions"
+  "deb-python3-msrest" {>= "0.5~"}
+  "deb-python3-msrestazure" {>= "0.5~"}
+  "deb-python3-requests"
+  "deb-python3-six" {>= "1.12.0"}
+  "deb-python3-strictyaml"
+  "deb-python3-tqdm"
+  "deb-python3-typing-extensions" {>= "3.10~"}
+  "deb-python3-uamqp"
+  "deb-python3-yaml"
+  "deb-python3-yarl"
+]
+extra-source "python3-azure_20230112+git-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-azure/python3-azure_20230112+git-1_all.deb"
+}

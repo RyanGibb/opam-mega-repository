@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i llvm-15-runtime_1:15.0.6-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r llvm-15-runtime"]
+]
+depends: [
+  "deb-libc6" {>= "2.36"}
+  "deb-libgcc-s1" {>= "3.3"}
+  "deb-libllvm15"
+  "deb-libstdc++6" {>= "12"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-libz3-4" {>= "4.8.12"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "llvm-15-runtime_1:15.0.6-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/llvm-toolchain-15/llvm-15-runtime_15.0.6-4+b1_amd64.deb"
+}

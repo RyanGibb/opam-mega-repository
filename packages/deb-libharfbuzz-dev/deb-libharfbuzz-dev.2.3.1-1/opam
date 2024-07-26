@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libharfbuzz-dev_2.3.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libharfbuzz-dev"]
+]
+depends: [
+  "deb-gir1-2-harfbuzz-0-0" {= "2.3.1-1"}
+  "deb-libglib2-0-dev" {>= "2.19.1"}
+  "deb-libgraphite2-dev"
+  "deb-libharfbuzz-gobject0" {= "2.3.1-1"}
+  "deb-libharfbuzz-icu0" {= "2.3.1-1"}
+  "deb-libharfbuzz0b" {= "2.3.1-1"}
+  "deb-libicu-dev"
+]
+extra-source "libharfbuzz-dev_2.3.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/harfbuzz/libharfbuzz-dev_2.3.1-1_amd64.deb"
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i projectm-pulseaudio_3.1.7-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r projectm-pulseaudio"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgl1"
+  "deb-libpulse0" {>= "0.99.1"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5opengl5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.11.0~rc1"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-pulseaudio"
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+]
+extra-source "projectm-pulseaudio_3.1.7-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/projectm/projectm-pulseaudio_3.1.7-1.1_amd64.deb"
+}

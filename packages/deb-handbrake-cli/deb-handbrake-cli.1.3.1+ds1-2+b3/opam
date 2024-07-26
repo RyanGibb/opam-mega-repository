@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i handbrake-cli_1.3.1+ds1-2+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r handbrake-cli"]
+]
+depends: [
+  "deb-libass9" {>= "1-0.13.6"}
+  "deb-libavcodec-extra58"
+  "deb-libavfilter-extra7"
+  "deb-libavformat58" {>= "7-4.2"}
+  "deb-libavutil56" {>= "7-4.1~"}
+  "deb-libbluray2" {>= "1-1.0.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libdvdnav4" {>= "4.9.0"}
+  "deb-libdvdread8" {>= "4.2.0+20120521"}
+  "deb-libjansson4" {>= "2.0.1"}
+  "deb-libswresample3" {>= "7-4.1~"}
+  "deb-libswscale5" {>= "7-4.1~"}
+  "deb-libtheora0" {>= "1.0"}
+  "deb-libvorbis0a" {>= "1.1.2"}
+  "deb-libvorbisenc2" {>= "1.1.2"}
+  "deb-libx264-160" {>= "2-0.160.3011+gitcde9a93"}
+  "deb-libx265-192" {>= "1.8"}
+  "deb-libxml2" {>= "2.7.4"}
+]
+extra-source "handbrake-cli_1.3.1+ds1-2+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/handbrake/handbrake-cli_1.3.1+ds1-2+b3_amd64.deb"
+}

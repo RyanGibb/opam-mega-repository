@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gedit-plugins_44.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gedit-plugins"]
+]
+depends: [
+  "deb-gedit-plugin-bookmarks"
+  "deb-gedit-plugin-bracket-completion"
+  "deb-gedit-plugin-character-map"
+  "deb-gedit-plugin-code-comment"
+  "deb-gedit-plugin-color-picker"
+  "deb-gedit-plugin-color-schemer"
+  "deb-gedit-plugin-draw-spaces"
+  "deb-gedit-plugin-git"
+  "deb-gedit-plugin-join-lines"
+  "deb-gedit-plugin-multi-edit"
+  "deb-gedit-plugin-session-saver"
+  "deb-gedit-plugin-smart-spaces"
+  "deb-gedit-plugin-synctex"
+  "deb-gedit-plugin-terminal"
+  "deb-gedit-plugin-text-size"
+  "deb-gedit-plugin-word-completion"
+]
+extra-source "gedit-plugins_44.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gedit-plugins/gedit-plugins_44.1-2_all.deb"
+}

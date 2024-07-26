@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-alacritty-terminal-dev_0.17.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-alacritty-terminal-dev"]
+]
+depends: [
+  "deb-librust-alacritty-config-0-1+default-dev"
+  "deb-librust-alacritty-config-derive-0-2+default-dev"
+  "deb-librust-base64-0-13+default-dev"
+  "deb-librust-bitflags-1+default-dev"
+  "deb-librust-dirs-4+default-dev"
+  "deb-librust-libc-0-2+default-dev"
+  "deb-librust-log-0-4+default-dev"
+  "deb-librust-mio-0-6-dev"
+  "deb-librust-mio-extras-2+default-dev"
+  "deb-librust-nix-0+default-dev"
+  "deb-librust-parking-lot-0-12+default-dev"
+  "deb-librust-regex-automata+std-dev"
+  "deb-librust-serde-1+default-dev"
+  "deb-librust-serde-1+derive-dev"
+  "deb-librust-serde-1+rc-dev"
+  "deb-librust-serde-yaml-0-8+default-dev"
+  "deb-librust-signal-hook-dev"
+  "deb-librust-signal-hook-mio-dev"
+  "deb-librust-unicode-width-0-1+default-dev"
+  "deb-librust-vte-0-10-dev"
+]
+extra-source "librust-alacritty-terminal-dev_0.17.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-alacritty-terminal/librust-alacritty-terminal-dev_0.17.0-1_amd64.deb"
+}

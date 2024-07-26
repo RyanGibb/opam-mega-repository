@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libweb-scraper-perl_0.38-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libweb-scraper-perl"]
+]
+depends: [
+  "deb-libhtml-parser-perl"
+  "deb-libhtml-selector-xpath-perl"
+  "deb-libhtml-tagset-perl"
+  "deb-libhtml-tree-perl"
+  "deb-libhtml-treebuilder-xpath-perl"
+  "deb-libuniversal-require-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-libxml-xpathengine-perl"
+  "deb-libyaml-perl"
+  "deb-perl-any"
+]
+extra-source "libweb-scraper-perl_0.38-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libw/libweb-scraper-perl/libweb-scraper-perl_0.38-1.1_all.deb"
+}

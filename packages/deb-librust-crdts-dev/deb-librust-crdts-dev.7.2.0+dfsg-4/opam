@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-crdts-dev_7.2.0+dfsg-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-crdts-dev"]
+]
+depends: [
+  "deb-librust-num-0-4+default-dev"
+  "deb-librust-num-0-4+serde-dev"
+  "deb-librust-quickcheck-1+default-dev"
+  "deb-librust-rand-0-8+default-dev"
+  "deb-librust-serde-1-0+default-dev"
+  "deb-librust-serde-1-0+derive-dev"
+  "deb-librust-tiny-keccak-2+default-dev"
+  "deb-librust-tiny-keccak-2+sha3-dev"
+]
+extra-source "librust-crdts-dev_7.2.0+dfsg-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-crdts/librust-crdts-dev_7.2.0+dfsg-4_all.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libjs-jsxc_3.0.0+dfsg3-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libjs-jsxc"]
+]
+depends: [
+  "deb-libjs-bootstrap"
+  "deb-libjs-i18next"
+  "deb-libjs-jquery"
+  "deb-libjs-jquery-colorbox"
+  "deb-libjs-jquery-fullscreen"
+  "deb-libjs-jquery-slimscroll"
+  "deb-libjs-jquery-ui"
+  "deb-libjs-prettify"
+  "deb-libjs-strophe"
+]
+extra-source "libjs-jsxc_3.0.0+dfsg3-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libj/libjs-jsxc/libjs-jsxc_3.0.0+dfsg3-3_all.deb"
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add bitlbee-dev-3.6-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del bitlbee-dev"]
+]
+depends: [
+  "apk-glib-dev" {= "2.66.8-r0"}
+  "apk-pkgconf" {= "1.7.3-r0"}
+]
+extra-source "bitlbee-dev-3.6-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/bitlbee-dev-3.6-r0.apk"
+}

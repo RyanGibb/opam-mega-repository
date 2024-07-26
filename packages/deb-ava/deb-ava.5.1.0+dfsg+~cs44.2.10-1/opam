@@ -1,0 +1,55 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ava_5.1.0+dfsg+~cs44.2.10-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ava"]
+]
+depends: [
+  "deb-node-acorn"
+  "deb-node-ansi-styles"
+  "deb-node-arrify"
+  "deb-node-cbor"
+  "deb-node-chalk" {>= "5"}
+  "deb-node-chokidar"
+  "deb-node-ci-info"
+  "deb-node-clean-yaml-object"
+  "deb-node-cli-truncate"
+  "deb-node-cliui" {>= "7.0.4+repack+~cs3.1.0-3~"}
+  "deb-node-concordance"
+  "deb-node-currently-unhandled"
+  "deb-node-debug"
+  "deb-node-del" {>= "7"}
+  "deb-node-emittery"
+  "deb-node-escape-string-regexp"
+  "deb-node-execa"
+  "deb-node-find-up" {>= "6"}
+  "deb-node-globby"
+  "deb-node-ignore-by-default"
+  "deb-node-indent-string"
+  "deb-node-inquirer"
+  "deb-node-is-plain-object"
+  "deb-node-is-promise"
+  "deb-node-js-yaml"
+  "deb-node-load-json-file" {>= "7"}
+  "deb-node-matcher"
+  "deb-node-mem"
+  "deb-node-ms"
+  "deb-node-p-map"
+  "deb-node-p-timeout"
+  "deb-node-picomatch"
+  "deb-node-plur"
+  "deb-node-pretty-ms"
+  "deb-node-read-pkg"
+  "deb-node-resolve-cwd"
+  "deb-node-resolve-from"
+  "deb-node-slash"
+  "deb-node-stack-utils"
+  "deb-node-strip-ansi"
+  "deb-node-write-file-atomic"
+  "deb-node-yargs"
+  "deb-nodejs-any" {>= "14"}
+]
+extra-source "ava_5.1.0+dfsg+~cs44.2.10-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-ava/ava_5.1.0+dfsg+~cs44.2.10-1_all.deb"
+}

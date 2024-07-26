@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dgit_8.5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dgit"]
+]
+depends: [
+  "deb-apt"
+  "deb-ca-certificates"
+  "deb-coreutils" {>= "8.23-1~"}
+  "deb-curl"
+  "deb-devscripts"
+  "deb-dpkg-dev"
+  "deb-dput"
+  "deb-git"
+  "deb-git-buildpackage"
+  "deb-libdigest-sha-perl"
+  "deb-libdpkg-perl"
+  "deb-libjson-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-liblocale-gettext-perl"
+  "deb-libtext-glob-perl"
+  "deb-libtext-iconv-perl"
+  "deb-libwww-perl"
+  "deb-perl"
+]
+extra-source "dgit_8.5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dgit/dgit_8.5_all.deb"
+}

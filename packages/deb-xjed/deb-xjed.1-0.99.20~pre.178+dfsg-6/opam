@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xjed_1:0.99.20~pre.178+dfsg-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xjed"]
+]
+depends: [
+  "deb-jed-common" {= "1-0.99.20~pre.178+dfsg-6"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libslang2" {>= "2.2.4"}
+  "deb-libx11-6"
+  "deb-libxft2" {> "2.1.1"}
+]
+extra-source "xjed_1:0.99.20~pre.178+dfsg-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/j/jed/xjed_0.99.20~pre.178+dfsg-6_amd64.deb"
+}

@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lives_3.0.2-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lives"]
+]
+depends: [
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libavc1394-0" {>= "0.5.3"}
+  "deb-libavutil56" {>= "7-4.0"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo2" {>= "1.6.0"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.41.1"}
+  "deb-libgtk-3-0" {>= "3.21.5"}
+  "deb-libmjpegutils-2-1-0"
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libpulse0" {>= "0.99.1"}
+  "deb-libraw1394-11" {>= "2.1.2"}
+  "deb-libswscale5" {>= "7-4.0"}
+  "deb-libunicap2" {>= "0.9.12~"}
+  "deb-libweed0" {>= "3.0.2-1.1"}
+  "deb-libx11-6"
+  "deb-lives-data"
+  "deb-lives-plugins" {= "3.0.2-1.1"}
+  "deb-ogmtools"
+  "deb-perl-any"
+  "deb-procps"
+  "deb-sox"
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-mpv" | "deb- mplayer")
+]
+extra-source "lives_3.0.2-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lives/lives_3.0.2-1.1_amd64.deb"
+}

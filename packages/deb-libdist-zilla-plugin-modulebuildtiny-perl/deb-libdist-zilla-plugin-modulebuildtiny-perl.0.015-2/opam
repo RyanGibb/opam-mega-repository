@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdist-zilla-plugin-modulebuildtiny-perl_0.015-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdist-zilla-plugin-modulebuildtiny-perl"]
+]
+depends: [
+  "deb-libdist-zilla-perl"
+  "deb-libmodule-build-tiny-perl"
+  "deb-libmoose-perl"
+  "deb-libmoosex-types-perl-perl"
+  "deb-perl-any"
+  ("deb-perl" | "deb- libscalar-list-utils-perl")
+]
+extra-source "libdist-zilla-plugin-modulebuildtiny-perl_0.015-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libd/libdist-zilla-plugin-modulebuildtiny-perl/libdist-zilla-plugin-modulebuildtiny-perl_0.015-2_all.deb"
+}

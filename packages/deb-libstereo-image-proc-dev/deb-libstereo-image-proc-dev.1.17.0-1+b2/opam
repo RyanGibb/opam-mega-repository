@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libstereo-image-proc-dev_1.17.0-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libstereo-image-proc-dev"]
+]
+depends: [
+  "deb-libcv-bridge-dev" {>= "1.15.0+ds-8~"}
+  "deb-libdynamic-reconfigure-config-init-mutex-dev"
+  "deb-libimage-geometry-dev"
+  "deb-libimage-proc-dev"
+  "deb-libimage-transport-dev"
+  "deb-libmessage-filters-dev"
+  "deb-libnodelet-dev"
+  "deb-libsensor-msgs-dev"
+  "deb-libstereo-image-proc0d" {= "1.17.0-1+b2"}
+  "deb-libstereo-msgs-dev"
+]
+extra-source "libstereo-image-proc-dev_1.17.0-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ros-image-pipeline/libstereo-image-proc-dev_1.17.0-1+b2_amd64.deb"
+}

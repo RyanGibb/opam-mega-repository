@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i disk-manager_1.1.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r disk-manager"]
+]
+depends: [
+  "deb-menu"
+  "deb-python" {< "2.8"}
+  "deb-python" {>= "2.6.6-7~"}
+  "deb-python-glade2"
+  "deb-python-gtk2"
+  ("deb-python2-6" | "deb- python2-7")
+]
+extra-source "disk-manager_1.1.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/disk-manager/disk-manager_1.1.1-2_all.deb"
+}

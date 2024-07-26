@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmartchus-qtutilities-dev_6.10.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmartchus-qtutilities-dev"]
+]
+depends: [
+  "deb-libmartchus-c++utilities-dev"
+  "deb-libmartchus-qtutilities6" {= "6.10.0-1"}
+  "deb-qtbase5-dev"
+]
+extra-source "libmartchus-qtutilities-dev_6.10.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/martchus-qtutilities/libmartchus-qtutilities-dev_6.10.0-1_amd64.deb"
+}

@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dde-store_1.2.3+dfsg-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dde-store"]
+]
+depends: [
+  "deb-libappstreamqt2" {>= "0.15.5"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libdtkcore5" {>= "5.5.33~"}
+  "deb-libdtkgui5" {>= "5.5.25~"}
+  "deb-libdtkwidget5" {>= "5.5.48"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libpackagekitqt5-1" {>= "1.1.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.0.2"}
+  "deb-libqt5network5" {>= "5.14.1"}
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-libsnapd-qt-2-1" {>= "1.58"}
+  "deb-libstdc++6" {>= "5"}
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+]
+extra-source "dde-store_1.2.3+dfsg-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dde-store/dde-store_1.2.3+dfsg-2+b1_amd64.deb"
+}

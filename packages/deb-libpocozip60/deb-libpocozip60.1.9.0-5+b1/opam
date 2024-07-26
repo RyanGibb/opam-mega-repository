@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpocozip60_1.9.0-5+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpocozip60"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libpcre3"
+  "deb-libpocofoundation60"
+  "deb-libpocojson60"
+  "deb-libpocoutil60"
+  "deb-libpocoxml60"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libpocozip60_1.9.0-5+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/poco/libpocozip60_1.9.0-5+b1_amd64.deb"
+}

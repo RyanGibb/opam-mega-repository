@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i osmo-ggsn_1.6.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r osmo-ggsn"]
+]
+depends: [
+  "deb-libc6" {>= "2.15"}
+  "deb-libgtp6" {>= "1.6.0"}
+  "deb-libosmocore16" {>= "1.4.0"}
+  "deb-libosmoctrl0" {>= "1.4.0"}
+  "deb-libosmogsm15" {>= "1.4.0"}
+  "deb-libosmovty4" {>= "1.4.0"}
+  "deb-libtalloc2" {>= "2.0.4~git20101213"}
+  "deb-lsb-base"
+]
+extra-source "osmo-ggsn_1.6.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/osmo-ggsn/osmo-ggsn_1.6.0-2_amd64.deb"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libelf-0.186-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libelf"]
+]
+depends: [
+  "apk-fts" {= "1.2.7-r1"}
+  "apk-libbz2" {= "1.0.8-r1"}
+  "apk-musl" {= "1.2.3-r3"}
+  "apk-xz-libs" {= "5.2.5-r1"}
+  "apk-zlib" {= "1.2.12-r3"}
+]
+extra-source "libelf-0.186-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/libelf-0.186-r0.apk"
+}

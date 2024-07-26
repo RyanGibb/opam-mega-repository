@@ -1,0 +1,68 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lomiri_0.1.2-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lomiri"]
+]
+depends: [
+  "deb-ayatana-indicator-bluetooth"
+  "deb-ayatana-indicator-datetime"
+  "deb-ayatana-indicator-display"
+  "deb-ayatana-indicator-keyboard"
+  "deb-ayatana-indicator-messages"
+  "deb-ayatana-indicator-power"
+  "deb-ayatana-indicator-session"
+  "deb-ayatana-indicator-sound"
+  "deb-dmz-cursor-theme"
+  "deb-gsettings-desktop-schemas"
+  "deb-libc6" {>= "2.34"}
+  "deb-libcap2-bin"
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-bin"
+  "deb-libgsettings-qt1" {>= "0.1+14.04.20140408"}
+  "deb-liblomiri-connectivity-qt1-1" {>= "1.0.0~git20220718.2ca3619"}
+  "deb-liblomiri-private0"
+  "deb-liblomiri-private0" {= "0.1.2-3"}
+  "deb-libmiral5" {>= "3.6.0"}
+  "deb-libmiroil3" {>= "2.11.0"}
+  "deb-libqt5core5a"
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.6"}
+  "deb-libqt5network5" {>= "5.6"}
+  "deb-libqt5qml5" {>= "5.6"}
+  "deb-libqt5test5" {>= "5.6"}
+  "deb-libqtmirserver2" {>= "0.8.0~git20230223.bd21224-3~"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libsystemd0"
+  "deb-libx11-6"
+  "deb-libxi6" {>= "2-1.2.99.4"}
+  "deb-lomiri-app-launch" {>= "0.1.5"}
+  "deb-lomiri-common" {< "0.1.2-3.1~"}
+  "deb-lomiri-common" {>= "0.1.2-3"}
+  "deb-lomiri-indicator-network"
+  "deb-lomiri-system-settings" {>= "0.4"}
+  "deb-lomiri-url-dispatcher"
+  "deb-qml-module-biometryd"
+  "deb-qml-module-hfd"
+  "deb-qml-module-lomiri-components"
+  "deb-qml-module-lomiri-layouts"
+  "deb-qml-module-lomiri-settings-menus"
+  "deb-qml-module-lomiri-telephony"
+  "deb-qml-module-qmenumodel1"
+  "deb-qml-module-qt-labs-folderlistmodel"
+  "deb-qml-module-qt-labs-settings"
+  "deb-qml-module-qtmir" {>= "0.4.8"}
+  "deb-qml-module-qtqml-statemachine"
+  "deb-qml-module-qtquick-xmllistmodel"
+  "deb-qml-module-qtsysteminfo"
+  "deb-qtmir"
+  ("deb-libqt5gui5" {>= "5.6"} | "deb- libqt5gui5-gles" {>= "5.6"})
+  ("deb-libqt5quick5" {>= "5.6"} | "deb- libqt5quick5-gles" {>= "5.6"})
+]
+conflicts: [
+  "deb-lomiri-system-settings-wizard"
+]
+extra-source "lomiri_0.1.2-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lomiri/lomiri_0.1.2-3_amd64.deb"
+}

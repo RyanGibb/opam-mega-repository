@@ -1,0 +1,146 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdpdk-dev_18.11.11-1~deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdpdk-dev"]
+]
+depends: [
+  "deb-libbsd-dev"
+  "deb-libelf-dev"
+  "deb-libibverbs-dev"
+  "deb-libipsec-mb-dev"
+  "deb-libjansson-dev"
+  "deb-libmnl-dev"
+  "deb-libnuma-dev"
+  "deb-libpcap-dev"
+  "deb-librte-acl18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-bbdev18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-bitratestats18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-bpf18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-bus-dpaa18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-bus-fslmc18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-bus-ifpga18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-bus-pci18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-bus-vdev18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-bus-vmbus18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-cfgfile18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-cmdline18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-common-cpt18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-common-dpaax18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-common-octeontx18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-compressdev18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-cryptodev18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-distributor18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-eal18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-efd18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-ethdev18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-eventdev18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-flow-classify18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-gro18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-gso18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-hash18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-ip-frag18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-jobstats18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-kni18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-kvargs18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-latencystats18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-lpm18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-mbuf18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-member18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-mempool-bucket18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-mempool-dpaa18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-mempool-dpaa2-18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-mempool-octeontx18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-mempool-ring18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-mempool-stack18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-mempool18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-meter18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-metrics18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-net18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pci18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pdump18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pipeline18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-aesni-gcm18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-aesni-mb18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-af-packet18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-ark18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-atlantic18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-avf18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-avp18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-axgbe18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-bbdev-null18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-bnx2x18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-bnxt18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-bond18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-caam-jr18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-ccp18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-crypto-scheduler18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-cxgbe18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-dpaa-event18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-dpaa-sec18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-dpaa18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-dpaa2-18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-dpaa2-cmdif18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-dpaa2-event18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-dpaa2-qdma18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-dpaa2-sec18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-dsw-event18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-e1000-18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-ena18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-enetc18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-enic18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-failsafe18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-fm10k18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-i40e18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-ifc18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-ifpga-rawdev18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-ixgbe18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-kni18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-liquidio18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-mlx4-18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-mlx5-18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-netvsc18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-nfp18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-null-crypto18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-null18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-octeontx-compress18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-octeontx-crypto18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-octeontx-event18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-octeontx18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-opdl-event18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-openssl18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-pcap18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-qat18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-qede18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-ring18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-sfc18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-skeleton-event18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-skeleton-rawdev18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-softnic18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-sw-event18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-tap18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-thunderx18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-vdev-netvsc18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-vhost18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-virtio-crypto18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-virtio18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-vmxnet3-18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-pmd-zlib18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-port18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-power18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-rawdev18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-reorder18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-ring18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-sched18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-security18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-table18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-telemetry18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-timer18-11" {= "18.11.11-1~deb10u1"}
+  "deb-librte-vhost18-11" {= "18.11.11-1~deb10u1"}
+  "deb-libssl-dev"
+  "deb-zlib1g-dev"
+]
+extra-source "libdpdk-dev_18.11.11-1~deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dpdk/libdpdk-dev_18.11.11-1~deb10u1_amd64.deb"
+}

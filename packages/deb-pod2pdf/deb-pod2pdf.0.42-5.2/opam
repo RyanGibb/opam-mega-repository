@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pod2pdf_0.42-5.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pod2pdf"]
+]
+depends: [
+  "deb-libfile-spec-perl"
+  "deb-libgetopt-argvfile-perl"
+  "deb-libpdf-api2-perl" {>= "0.6"}
+  "deb-libpod-escapes-perl"
+  "deb-libpod-parser-perl" {>= "1.63"}
+  "deb-perl-any"
+]
+extra-source "pod2pdf_0.42-5.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pod2pdf/pod2pdf_0.42-5.2_all.deb"
+}

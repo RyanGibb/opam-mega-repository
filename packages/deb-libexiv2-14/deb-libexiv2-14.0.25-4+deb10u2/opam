@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libexiv2-14_0.25-4+deb10u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libexiv2-14"]
+]
+depends: [
+  "deb-libc6" {>= "2.27"}
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libexiv2-14_0.25-4+deb10u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/exiv2/libexiv2-14_0.25-4+deb10u2_amd64.deb"
+}

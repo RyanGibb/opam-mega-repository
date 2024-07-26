@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-ns3_3.29+dfsg-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-ns3"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-4.2"}
+  "deb-libgsl23" {>= "2.5"}
+  "deb-libgslcblas0" {>= "2.4"}
+  "deb-libns3-3v5"
+  "deb-libopenmpi3"
+  "deb-libpython2-7" {>= "2.7"}
+  "deb-libsqlite3-0" {>= "3.5.9"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libxml2" {>= "2.6.27"}
+  "deb-python" {< "2.8"}
+  "deb-python" {>= "2.7~"}
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7~"}
+  "deb-python-pygraphviz"
+]
+extra-source "python-ns3_3.29+dfsg-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/ns3/python-ns3_3.29+dfsg-3_amd64.deb"
+}

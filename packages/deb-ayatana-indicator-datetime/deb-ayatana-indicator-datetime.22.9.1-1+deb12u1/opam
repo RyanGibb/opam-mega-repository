@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ayatana-indicator-datetime_22.9.1-1+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ayatana-indicator-datetime"]
+]
+depends: [
+  "deb-ayatana-indicator-common" {>= "0.8.0"}
+  "deb-init-system-helpers" {>= "1.52"}
+  "deb-libaccounts-glib0" {>= "1.18"}
+  "deb-libayatana-common0" {>= "0.9.4"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libecal-2-0-2" {>= "3.33.4"}
+  "deb-libedataserver-1-2-27" {>= "3.17"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.67.1"}
+  "deb-libglib2-0-bin"
+  "deb-libgstreamer1-0-0" {>= "1.0.0"}
+  "deb-libical3" {>= "3.0.0"}
+  "deb-liblomiri-url-dispatcher0" {>= "0.1.0"}
+  "deb-libmessaging-menu0" {>= "0.6.0"}
+  "deb-libnotify4" {>= "0.7.6"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libuuid1" {>= "2.16"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "ayatana-indicator-datetime_22.9.1-1+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/ayatana-indicator-datetime/ayatana-indicator-datetime_22.9.1-1+deb12u1_amd64.deb"
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-jochenvg-go-udev-dev_0.0~git20171110.d6b62d5-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-jochenvg-go-udev-dev"]
+]
+depends: [
+  "deb-golang-github-jkeiser-iter-dev"
+  "deb-golang-golang-x-sys-dev"
+  "deb-libudev-dev"
+]
+extra-source "golang-github-jochenvg-go-udev-dev_0.0~git20171110.d6b62d5-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-jochenvg-go-udev/golang-github-jochenvg-go-udev-dev_0.0~git20171110.d6b62d5-2_all.deb"
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libjsonld-perl_0.005-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libjsonld-perl"]
+]
+depends: [
+  "deb-libclone-perl"
+  "deb-libiri-perl"
+  "deb-libjson-perl"
+  "deb-liblwp-protocol-https-perl"
+  "deb-libmoo-perl"
+  "deb-libnamespace-clean-perl"
+  "deb-libwww-perl"
+  "deb-perl-any"
+]
+extra-source "libjsonld-perl_0.005-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libj/libjsonld-perl/libjsonld-perl_0.005-1_all.deb"
+}

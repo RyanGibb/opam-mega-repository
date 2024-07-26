@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-extglob_3.0.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-extglob"]
+]
+depends: [
+  "deb-node-array-unique" {>= "0.3.2"}
+  "deb-node-define-property" {>= "1.0.0"}
+  "deb-node-expand-brackets" {>= "4.0.0"}
+  "deb-node-extend-shallow"
+  "deb-node-fragment-cache" {>= "0.2.1"}
+  "deb-node-regex-not"
+  "deb-node-snapdragon" {>= "0.12.0"}
+  "deb-node-to-regex"
+  "deb-nodejs"
+]
+extra-source "node-extglob_3.0.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-extglob/node-extglob_3.0.0-2_all.deb"
+}

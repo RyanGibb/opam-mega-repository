@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ts-node_9.1.1-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ts-node"]
+]
+depends: [
+  "deb-node-arg"
+  "deb-node-create-require"
+  "deb-node-diff"
+  "deb-node-make-error"
+  "deb-node-source-map-support"
+  "deb-node-yn"
+  "deb-nodejs"
+]
+extra-source "ts-node_9.1.1-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/ts-node/ts-node_9.1.1-4_all.deb"
+}

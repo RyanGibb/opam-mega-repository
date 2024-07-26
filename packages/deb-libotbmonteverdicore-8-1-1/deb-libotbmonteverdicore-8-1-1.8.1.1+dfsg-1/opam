@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libotbmonteverdicore-8.1-1_8.1.1+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libotbmonteverdicore-8.1-1"]
+]
+depends: [
+  "deb-libc6" {>= "2.35"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgdal32" {>= "1.10.0"}
+  "deb-libinsighttoolkit4-13" {>= "4.13.3withdata-dfsg2"}
+  "deb-libotbapplicationengine-8-1-1" {>= "5.2.0"}
+  "deb-libotbcarto-8-1-1" {>= "5.2.0"}
+  "deb-libotbcommon-8-1-1" {>= "7.0.0"}
+  "deb-libotbgdaladapters-8-1-1" {>= "7.1.0"}
+  "deb-libotbimagebase-8-1-1" {>= "8.0.0"}
+  "deb-libotbimageio-8-1-1" {>= "7.0.0"}
+  "deb-libotbiogdal-8-1-1" {>= "8.1.1"}
+  "deb-libotbmetadata-8-1-1" {>= "8.0.0"}
+  "deb-libotbstreaming-8-1-1" {>= "6.6.0"}
+  "deb-libotbtransform-8-1-1" {>= "8.0.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-otb-i18n" {>= "8.1.1+dfsg-1"}
+]
+extra-source "libotbmonteverdicore-8.1-1_8.1.1+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/otb/libotbmonteverdicore-8.1-1_8.1.1+dfsg-1_amd64.deb"
+}

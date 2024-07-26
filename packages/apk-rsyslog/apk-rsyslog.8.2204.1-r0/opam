@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add rsyslog-8.2204.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del rsyslog"]
+]
+depends: [
+  "apk-busybox" {= "1.35.0-r18"}
+  "apk-libestr" {= "0.1.11-r1"}
+  "apk-libfastjson" {= "1.2304.0-r0"}
+  "apk-libuuid" {= "2.38-r1"}
+  "apk-musl" {= "1.2.3-r3"}
+  "apk-zlib" {= "1.2.12-r3"}
+]
+extra-source "rsyslog-8.2204.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/rsyslog-8.2204.1-r0.apk"
+}

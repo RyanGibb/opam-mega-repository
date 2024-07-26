@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add wayland-dev-1.20.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del wayland-dev"]
+]
+depends: [
+  "apk-expat" {= "2.6.2-r0"}
+  "apk-expat-dev" {= "2.6.2-r0"}
+  "apk-libffi-dev" {= "3.4.2-r1"}
+  "apk-libxml2" {= "2.9.14-r2"}
+  "apk-musl" {= "1.2.3-r3"}
+  "apk-pkgconf" {= "1.8.1-r0"}
+  "apk-wayland-libs-client" {= "1.20.0-r0"}
+  "apk-wayland-libs-cursor" {= "1.20.0-r0"}
+  "apk-wayland-libs-egl" {= "1.20.0-r0"}
+  "apk-wayland-libs-server" {= "1.20.0-r0"}
+]
+extra-source "wayland-dev-1.20.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/wayland-dev-1.20.0-r0.apk"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add cups-client-2.3.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del cups-client"]
+]
+depends: [
+  "apk-avahi-libs" {= "0.8-r4"}
+  "apk-cups-libs" {= "2.3.3-r0"}
+  "apk-libgcc" {= "9.3.0-r2"}
+  "apk-libstdc++" {= "9.3.0-r2"}
+  "apk-musl" {= "1.1.24-r10"}
+]
+extra-source "cups-client-2.3.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/cups-client-2.3.3-r0.apk"
+}

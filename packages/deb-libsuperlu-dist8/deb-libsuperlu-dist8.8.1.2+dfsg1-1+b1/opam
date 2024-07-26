@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsuperlu-dist8_8.1.2+dfsg1-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsuperlu-dist8"]
+]
+depends: [
+  "deb-libc6" {>= "2.32"}
+  "deb-libcombblas1-16-0" {>= "1.6.2"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgomp1" {>= "6"}
+  "deb-libmetis5" {>= "5.1.0.dfsg"}
+  "deb-libopenmpi3" {>= "4.1.4"}
+  "deb-libptscotch-7-0" {>= "7.0.3"}
+  "deb-libstdc++6" {>= "11"}
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "libsuperlu-dist8_8.1.2+dfsg1-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/superlu-dist/libsuperlu-dist8_8.1.2+dfsg1-1+b1_amd64.deb"
+}

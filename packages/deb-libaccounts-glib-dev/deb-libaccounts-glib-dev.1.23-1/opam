@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libaccounts-glib-dev_1.23-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libaccounts-glib-dev"]
+]
+depends: [
+  "deb-gir1-2-accounts-1-0"
+  "deb-libaccounts-glib0" {= "1.23-1"}
+  "deb-libdbus-glib-1-dev"
+  "deb-libglib2-0-dev"
+  "deb-libsqlite3-dev"
+  "deb-libxml2-dev"
+]
+extra-source "libaccounts-glib-dev_1.23-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/liba/libaccounts-glib/libaccounts-glib-dev_1.23-1_amd64.deb"
+}

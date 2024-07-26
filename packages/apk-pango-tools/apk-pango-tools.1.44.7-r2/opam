@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add pango-tools-1.44.7-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del pango-tools"]
+]
+depends: [
+  "apk-cairo" {= "1.16.0-r5"}
+  "apk-fontconfig" {= "2.13.1-r2"}
+  "apk-glib" {= "2.64.6-r0"}
+  "apk-harfbuzz" {= "2.6.6-r0"}
+  "apk-libx11" {= "1.6.12-r1"}
+  "apk-libxft" {= "2.3.3-r0"}
+  "apk-musl" {= "1.1.24-r10"}
+  "apk-pango" {= "1.44.7-r2"}
+]
+extra-source "pango-tools-1.44.7-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/pango-tools-1.44.7-r2.apk"
+}

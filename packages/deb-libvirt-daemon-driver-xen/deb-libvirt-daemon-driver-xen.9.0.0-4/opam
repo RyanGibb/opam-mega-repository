@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libvirt-daemon-driver-xen_9.0.0-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libvirt-daemon-driver-xen"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.3.1"}
+  "deb-libglib2-0-0" {>= "2.30.0"}
+  "deb-libvirt-daemon" {= "9.0.0-4"}
+  "deb-libvirt0" {= "9.0.0-4"}
+  "deb-libxenmisc4-17" {>= "4.17.1+2-gb773c48e36"}
+  "deb-libxenstore4" {>= "4.16.0"}
+  "deb-libxentoollog1" {>= "4.17.1+2-gb773c48e36"}
+  "deb-libxml2" {>= "2.7.4"}
+]
+extra-source "libvirt-daemon-driver-xen_9.0.0-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libv/libvirt/libvirt-daemon-driver-xen_9.0.0-4_amd64.deb"
+}

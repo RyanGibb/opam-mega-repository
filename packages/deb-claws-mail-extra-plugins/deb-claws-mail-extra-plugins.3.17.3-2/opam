@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i claws-mail-extra-plugins_3.17.3-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r claws-mail-extra-plugins"]
+]
+depends: [
+  "deb-claws-mail-acpi-notifier"
+  "deb-claws-mail-address-keeper"
+  "deb-claws-mail-archiver-plugin"
+  "deb-claws-mail-attach-remover"
+  "deb-claws-mail-attach-warner"
+  "deb-claws-mail-bsfilter-plugin"
+  "deb-claws-mail-clamd-plugin"
+  "deb-claws-mail-dillo-viewer"
+  "deb-claws-mail-feeds-reader"
+  "deb-claws-mail-fetchinfo-plugin"
+  "deb-claws-mail-gdata-plugin"
+  "deb-claws-mail-libravatar"
+  "deb-claws-mail-mailmbox-plugin"
+  "deb-claws-mail-managesieve"
+  "deb-claws-mail-multi-notifier"
+  "deb-claws-mail-newmail-plugin"
+  "deb-claws-mail-pdf-viewer"
+  "deb-claws-mail-perl-filter"
+  "deb-claws-mail-python-plugin"
+  "deb-claws-mail-spam-report"
+  "deb-claws-mail-tnef-parser"
+  "deb-claws-mail-vcalendar-plugin"
+]
+extra-source "claws-mail-extra-plugins_3.17.3-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/claws-mail/claws-mail-extra-plugins_3.17.3-2_all.deb"
+}

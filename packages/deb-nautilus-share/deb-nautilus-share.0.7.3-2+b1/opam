@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i nautilus-share_0.7.3-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r nautilus-share"]
+]
+depends: [
+  "deb-gnome-session-bin"
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.7"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.35.9"}
+  "deb-libgtk-3-0" {>= "3.0.0"}
+  "deb-libnautilus-extension1a" {>= "3.14.1"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-nautilus" {>= "2.10"}
+  "deb-samba-common" {>= "3.0.27a"}
+  ("deb-samba-common-bin" | "deb- samba-common" {< "2-3.4.0~pre2-1~0"})
+]
+extra-source "nautilus-share_0.7.3-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/nautilus-share/nautilus-share_0.7.3-2+b1_amd64.deb"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add nginx-mod-http-vod-1.24.0-r7.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del nginx-mod-http-vod"]
+]
+depends: [
+  "apk-libcrypto3" {= "3.1.6-r0"}
+  "apk-libxml2" {= "2.11.8-r0"}
+  "apk-musl" {= "1.2.4-r2"}
+  "apk-nginx" {= "1.24.0-r7"}
+  "apk-zlib" {= "1.2.13-r1"}
+]
+extra-source "nginx-mod-http-vod-1.24.0-r7.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/nginx-mod-http-vod-1.24.0-r7.apk"
+}

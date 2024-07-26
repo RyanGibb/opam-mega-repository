@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openarena-data_0.8.5split-14_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openarena-data"]
+]
+depends: [
+  "deb-openarena-081-maps"
+  "deb-openarena-081-misc"
+  "deb-openarena-081-players"
+  "deb-openarena-081-players-mature"
+  "deb-openarena-081-textures"
+  "deb-openarena-085-data"
+]
+extra-source "openarena-data_0.8.5split-14_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openarena-data/openarena-data_0.8.5split-14_all.deb"
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sugar-log-activity_42-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sugar-log-activity"]
+]
+depends: [
+  "deb-base-files" {>= "11"}
+  "deb-gir1-2-glib-2-0"
+  "deb-gir1-2-gtk-3-0"
+  "deb-gir1-2-pango-1-0"
+  "deb-python3"
+  "deb-python3-gi"
+  "deb-python3-sugar3"
+]
+extra-source "sugar-log-activity_42-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sugar-log-activity/sugar-log-activity_42-2_all.deb"
+}

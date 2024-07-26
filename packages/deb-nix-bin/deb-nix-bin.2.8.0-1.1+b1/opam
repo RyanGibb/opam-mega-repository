@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i nix-bin_2.8.0-1.1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r nix-bin"]
+]
+depends: [
+  "deb-bzip2"
+  "deb-curl"
+  "deb-libarchive13" {>= "3.2.1"}
+  "deb-libboost-context1-74-0" {>= "1.74.0"}
+  "deb-libbrotli1" {>= "0.6.0"}
+  "deb-libbsd0" {>= "0.7.0"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcpuid16" {>= "0.6.0"}
+  "deb-libcurl3-gnutls" {>= "7.28.0"}
+  "deb-libdbd-sqlite3-perl"
+  "deb-libgc1" {>= "1-7.2d"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libreadline8" {>= "6.0"}
+  "deb-libseccomp2" {>= "1.0.1"}
+  "deb-libsodium23" {>= "0.7.0"}
+  "deb-libsqlite3-0" {>= "3.14.0"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libstdc++6" {>= "12"}
+  "deb-libwww-curl-perl"
+  "deb-perl"
+  "deb-sysvinit-utils"
+  "deb-xz-utils"
+]
+extra-source "nix-bin_2.8.0-1.1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/nix/nix-bin_2.8.0-1.1+b1_amd64.deb"
+}

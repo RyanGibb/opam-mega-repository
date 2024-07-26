@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i imagination_3.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r imagination"]
+]
+depends: [
+  "deb-imagination-common" {= "3.4-1"}
+  "deb-libc6" {>= "2.4"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libgtk2-0-0" {>= "2.18.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libsox3" {>= "14.4.2~"}
+  "deb-sox"
+]
+extra-source "imagination_3.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/imagination/imagination_3.4-1_amd64.deb"
+}

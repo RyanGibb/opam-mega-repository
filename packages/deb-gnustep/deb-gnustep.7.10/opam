@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnustep_7.10_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnustep"]
+]
+depends: [
+  "deb-gworkspace-app"
+  "deb-systempreferences-app"
+  "deb-terminal-app"
+  "deb-textedit-app"
+  "deb-zipper-app"
+  ("deb-price-app" | "deb- preview-app")
+]
+extra-source "gnustep_7.10_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/meta-gnustep/gnustep_7.10_all.deb"
+}

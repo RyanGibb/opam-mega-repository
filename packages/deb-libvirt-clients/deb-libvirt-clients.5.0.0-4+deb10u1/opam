@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libvirt-clients_5.0.0-4+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libvirt-clients"]
+]
+depends: [
+  "deb-libacl1" {>= "2.2.23"}
+  "deb-libapparmor1" {>= "2.6~devel"}
+  "deb-libaudit1" {>= "1-2.2.1"}
+  "deb-libavahi-client3" {>= "0.6.16"}
+  "deb-libavahi-common3" {>= "0.6.16"}
+  "deb-libc6" {>= "2.17"}
+  "deb-libcap-ng0" {>= "0.7.9"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libdbus-1-3" {>= "1.9.14"}
+  "deb-libdevmapper1-02-1" {>= "2-1.02.20"}
+  "deb-libgcc1" {>= "1-3.3.1"}
+  "deb-libgnutls30" {>= "3.6.5"}
+  "deb-libnl-3-200" {>= "3.2.7"}
+  "deb-libnl-route-3-200" {>= "3.2.7"}
+  "deb-libnuma1" {>= "2.0.11"}
+  "deb-libreadline7" {>= "6.0"}
+  "deb-libsasl2-2" {>= "2.1.27+dfsg"}
+  "deb-libselinux1" {>= "2.0.82"}
+  "deb-libssh2-1" {>= "1.0"}
+  "deb-libvirt0" {= "5.0.0-4+deb10u1"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libyajl2" {>= "2.0.4"}
+  "deb-sensible-utils"
+]
+extra-source "libvirt-clients_5.0.0-4+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libv/libvirt/libvirt-clients_5.0.0-4+deb10u1_amd64.deb"
+}

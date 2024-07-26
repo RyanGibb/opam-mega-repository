@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i nextepc-pcrf_0.3.10+nods-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r nextepc-pcrf"]
+]
+depends: [
+  "deb-libbson-1-0-0" {>= "1.13.0"}
+  "deb-libc6" {>= "2.17"}
+  "deb-libmongoc-1-0-0" {>= "1.13.0"}
+  "deb-libyaml-0-2"
+  "deb-nextepc-core" {= "0.3.10+nods-3"}
+]
+extra-source "nextepc-pcrf_0.3.10+nods-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/nextepc/nextepc-pcrf_0.3.10+nods-3_amd64.deb"
+}

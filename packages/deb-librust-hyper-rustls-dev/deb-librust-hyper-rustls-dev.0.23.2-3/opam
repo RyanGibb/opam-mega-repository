@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-hyper-rustls-dev_0.23.2-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-hyper-rustls-dev"]
+]
+depends: [
+  "deb-librust-http-0-2+default-dev"
+  "deb-librust-hyper-0-14+client-dev"
+  "deb-librust-hyper-0-14+http1-dev"
+  "deb-librust-hyper-0-14+http2-dev"
+  "deb-librust-hyper-0-14+runtime-dev"
+  "deb-librust-log-dev"
+  "deb-librust-rustls-dev"
+  "deb-librust-rustls-native-certs-0-6+default-dev"
+  "deb-librust-tokio-1+default-dev"
+  "deb-librust-tokio-rustls-0-23+logging-dev"
+  "deb-librust-tokio-rustls-0-23+tls12-dev"
+  "deb-librust-tokio-rustls-0-23-dev"
+]
+extra-source "librust-hyper-rustls-dev_0.23.2-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-hyper-rustls/librust-hyper-rustls-dev_0.23.2-3_all.deb"
+}

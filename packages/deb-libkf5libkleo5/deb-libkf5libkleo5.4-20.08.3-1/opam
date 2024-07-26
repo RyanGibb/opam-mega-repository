@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkf5libkleo5_4:20.08.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkf5libkleo5"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgpgmepp6" {>= "1.14.0"}
+  "deb-libkf5codecs5" {>= "5.71.0~"}
+  "deb-libkf5completion5" {>= "5.71.0~"}
+  "deb-libkf5configcore5" {>= "5.71.0~"}
+  "deb-libkf5coreaddons5" {>= "5.71.0~"}
+  "deb-libkf5i18n5" {>= "5.71.0~"}
+  "deb-libkf5itemmodels5" {>= "5.74.0"}
+  "deb-libkf5libkleo-data" {= "4-20.08.3-1"}
+  "deb-libkf5pimtextedit5abi2"
+  "deb-libkf5pimtextedit5abi2" {>= "20.08.3"}
+  "deb-libkf5widgetsaddons5" {>= "5.71.0~"}
+  "deb-libqgpgme7" {>= "1.14.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5widgets5" {>= "5.14.1"}
+  "deb-libstdc++6" {>= "5.2"}
+  ("deb-libqt5gui5" {>= "5.13.0~"} | "deb- libqt5gui5-gles" {>= "5.13.0~"})
+]
+extra-source "libkf5libkleo5_4:20.08.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libk/libkf5libkleo/libkf5libkleo5_20.08.3-1_amd64.deb"
+}

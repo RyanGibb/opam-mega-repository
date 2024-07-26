@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-fsnotify-dev_0.3.0.1-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-fsnotify-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libghc-async-dev"
+  "deb-libghc-hinotify-dev"
+  "deb-libghc-shelly-dev"
+  "deb-libghc-unix-compat-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-fsnotify-dev_0.3.0.1-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-fsnotify/libghc-fsnotify-dev_0.3.0.1-2+b1_amd64.deb"
+}

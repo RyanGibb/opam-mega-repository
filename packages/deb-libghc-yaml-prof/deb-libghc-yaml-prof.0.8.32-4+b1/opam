@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-yaml-prof_0.8.32-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-yaml-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-aeson-prof"
+  "deb-libghc-attoparsec-prof"
+  "deb-libghc-conduit-prof"
+  "deb-libghc-resourcet-prof"
+  "deb-libghc-scientific-prof"
+  "deb-libghc-semigroups-prof"
+  "deb-libghc-unordered-containers-prof"
+  "deb-libghc-vector-prof"
+  "deb-libghc-yaml-dev" {= "0.8.32-4+b1"}
+]
+extra-source "libghc-yaml-prof_0.8.32-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-yaml/libghc-yaml-prof_0.8.32-4+b1_amd64.deb"
+}

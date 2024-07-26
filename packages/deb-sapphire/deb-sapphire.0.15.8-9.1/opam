@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sapphire_0.15.8-9.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sapphire"]
+]
+depends: [
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libx11-6"
+  "deb-libxext6"
+]
+extra-source "sapphire_0.15.8-9.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sapphire/sapphire_0.15.8-9.1_amd64.deb"
+}

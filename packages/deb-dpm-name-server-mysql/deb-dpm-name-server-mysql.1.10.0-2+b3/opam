@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dpm-name-server-mysql_1.10.0-2+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dpm-name-server-mysql"]
+]
+depends: [
+  "deb-adduser"
+  "deb-finger"
+  "deb-libc6" {>= "2.15"}
+  "deb-libdpm1" {= "1.10.0-2+b3"}
+  "deb-liblcgdm1"
+  "deb-libmariadb3" {>= "3.0.0"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-libuuid1" {>= "2.16"}
+  ("deb-default-mysql-client" | "deb- virtual-mysql-client")
+]
+conflicts: [
+  "deb-dpm-mysql-nameserver" {< "1.8.1.2-2~"}
+]
+extra-source "dpm-name-server-mysql_1.10.0-2+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lcgdm/dpm-name-server-mysql_1.10.0-2+b3_amd64.deb"
+}

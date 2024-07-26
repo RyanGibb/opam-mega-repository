@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ayatana-indicator-bluetooth_22.9.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ayatana-indicator-bluetooth"]
+]
+depends: [
+  "deb-ayatana-indicator-common"
+  "deb-bluez" {>= "5"}
+  "deb-init-system-helpers" {>= "1.52"}
+  "deb-libayatana-common0" {>= "0.9.4"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  ("deb-blueman" | "deb- blueman-manager" | "deb- lomiri-system-settings" | "deb- gnome-bluetooth")
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-unity-control-center" | "deb- mate-control-center" | "deb- gnome-control-center" | "deb- lomiri-system-settings")
+]
+extra-source "ayatana-indicator-bluetooth_22.9.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/ayatana-indicator-bluetooth/ayatana-indicator-bluetooth_22.9.1-1_amd64.deb"
+}

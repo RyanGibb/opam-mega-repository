@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-emayili_0.7.13-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-emayili"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.2.20221110-1"}
+  "deb-r-cran-base64enc"
+  "deb-r-cran-commonmark"
+  "deb-r-cran-curl" {>= "4.0"}
+  "deb-r-cran-digest"
+  "deb-r-cran-dplyr"
+  "deb-r-cran-glue"
+  "deb-r-cran-htmltools"
+  "deb-r-cran-httr"
+  "deb-r-cran-logger"
+  "deb-r-cran-magrittr" {>= "2.0.1"}
+  "deb-r-cran-mime"
+  "deb-r-cran-purrr"
+  "deb-r-cran-rmarkdown"
+  "deb-r-cran-rvest"
+  "deb-r-cran-stringi"
+  "deb-r-cran-stringr"
+  "deb-r-cran-tidyr"
+  "deb-r-cran-urltools"
+  "deb-r-cran-xfun"
+  "deb-r-cran-xml2"
+]
+extra-source "r-cran-emayili_0.7.13-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-emayili/r-cran-emayili_0.7.13-1_all.deb"
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fcitx5-mozc_2.26.4220.100+dfsg-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fcitx5-mozc"]
+]
+depends: [
+  "deb-fcitx-mozc-data"
+  "deb-fcitx5"
+  "deb-libabsl20200923" {>= "0~20200923-1"}
+  "deb-libc6" {>= "2.15"}
+  "deb-libfcitx5config6" {>= "5.0.5"}
+  "deb-libfcitx5core7" {>= "5.0.5"}
+  "deb-libfcitx5utils2" {>= "5.0.5"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libprotobuf23" {>= "3.12.4"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-mozc-server" {= "2.26.4220.100+dfsg-4"}
+]
+extra-source "fcitx5-mozc_2.26.4220.100+dfsg-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mozc/fcitx5-mozc_2.26.4220.100+dfsg-4_amd64.deb"
+}

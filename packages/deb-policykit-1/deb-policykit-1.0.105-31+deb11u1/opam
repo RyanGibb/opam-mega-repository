@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i policykit-1_0.105-31+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r policykit-1"]
+]
+depends: [
+  "deb-dbus"
+  "deb-libc6" {>= "2.7"}
+  "deb-libelogind0"
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-libpolkit-agent-1-0" {= "0.105-31+deb11u1"}
+  "deb-libpolkit-gobject-1-0" {= "0.105-31+deb11u1"}
+  ("deb-default-logind" | "deb- logind")
+]
+extra-source "policykit-1_0.105-31+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/policykit-1/policykit-1_0.105-31+deb11u1_amd64.deb"
+}

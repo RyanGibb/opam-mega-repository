@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cava_0.7.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cava"]
+]
+depends: [
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libfftw3-double3" {>= "3.3.5"}
+  "deb-libiniparser1" {>= "4.0"}
+  "deb-libncursesw6" {>= "6"}
+  "deb-libpulse0" {>= "0.99.1"}
+  "deb-libtinfo6" {>= "6"}
+]
+extra-source "cava_0.7.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cava-alsa/cava_0.7.4-1_amd64.deb"
+}

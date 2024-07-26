@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i phog_0.1.3-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r phog"]
+]
+depends: [
+  "deb-fonts-lato"
+  "deb-gnome-shell-common"
+  "deb-greetd" {>= "0.9.0-3"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libelogind0"
+  "deb-libgcr-ui-3-1" {>= "3.8.0"}
+  "deb-libglib2-0-0" {>= "2.72.0"}
+  "deb-libgnome-desktop-3-20" {>= "3.17.92"}
+  "deb-libgtk-3-0" {>= "3.21.5"}
+  "deb-libhandy-1-0" {>= "1.1.90"}
+  "deb-libjson-glib-1-0-0" {>= "1.5.2"}
+  "deb-libnm0" {>= "1.24.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libupower-glib3" {>= "0.99.4-3~"}
+  "deb-libwayland-client0" {>= "1.20.0"}
+  "deb-phoc" {>= "0.21.0+ds1"}
+  "deb-polkitd"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-squeekboard" | "deb- phosh-osk-stub")
+]
+extra-source "phog_0.1.3-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/phog/phog_0.1.3-2_amd64.deb"
+}

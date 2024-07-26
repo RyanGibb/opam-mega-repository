@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libconfig-model-tkui-perl_1.373-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libconfig-model-tkui-perl"]
+]
+depends: [
+  "deb-libconfig-model-perl" {>= "2.139"}
+  "deb-libfile-homedir-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-liblog-log4perl-perl"
+  "deb-libpath-tiny-perl"
+  "deb-libpod-pom-perl" {>= "2.01-2"}
+  "deb-libtext-diff-perl"
+  "deb-libtk-dirselect-perl"
+  "deb-libtk-doubleclick-perl"
+  "deb-libtk-fontdialog-perl"
+  "deb-libtk-pod-perl"
+  "deb-libtry-tiny-perl"
+  "deb-libyaml-perl"
+  "deb-perl-any"
+  "deb-perl-tk"
+]
+extra-source "libconfig-model-tkui-perl_1.373-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libconfig-model-tkui-perl/libconfig-model-tkui-perl_1.373-1_all.deb"
+}

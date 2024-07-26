@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libksysguardsensors1_4:5.20.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libksysguardsensors1"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libkf5i18n5" {>= "5.74.0~"}
+  "deb-libkf5sysguard-data" {= "4-5.20.5-1"}
+  "deb-libksysguardformatter1" {>= "4-5.19.4"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.15.0~"}
+  "deb-libqt5qml5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "5"}
+]
+extra-source "libksysguardsensors1_4:5.20.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libk/libksysguard/libksysguardsensors1_5.20.5-1_amd64.deb"
+}

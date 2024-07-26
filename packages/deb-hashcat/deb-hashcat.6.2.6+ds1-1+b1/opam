@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i hashcat_6.2.6+ds1-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r hashcat"]
+]
+depends: [
+  "deb-hashcat-data" {>= "6.2.6+ds1-1"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libminizip1" {>= "1.1"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libxxhash0" {>= "0.6.5"}
+  "deb-zlib1g" {>= "1-1.2.11.dfsg"}
+  ("deb-pocl-opencl-icd" | "deb- opencl-icd")
+]
+extra-source "hashcat_6.2.6+ds1-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/hashcat/hashcat_6.2.6+ds1-1+b1_amd64.deb"
+}

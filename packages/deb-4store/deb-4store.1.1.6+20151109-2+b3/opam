@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i 4store_1.1.6+20151109-2+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r 4store"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libavahi-client3" {>= "0.6.16"}
+  "deb-libavahi-common3" {>= "0.6.16"}
+  "deb-libavahi-glib1" {>= "0.6.16"}
+  "deb-libc6" {>= "2.15"}
+  "deb-libglib2-0-0" {>= "2.35.9"}
+  "deb-libncurses6" {>= "6"}
+  "deb-libpcre3"
+  "deb-libraptor2-0" {>= "2.0.14"}
+  "deb-librasqal3" {>= "0.9.31"}
+  "deb-libreadline7" {>= "6.0"}
+  "deb-libstemmer0d" {>= "0+svn527"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-libuuid1" {>= "2.16"}
+  "deb-libxml2" {>= "2.6.27"}
+  "deb-netbase"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "4store_1.1.6+20151109-2+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/4/4store/4store_1.1.6+20151109-2+b3_amd64.deb"
+}

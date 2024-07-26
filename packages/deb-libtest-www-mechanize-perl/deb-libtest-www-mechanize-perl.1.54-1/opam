@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libtest-www-mechanize-perl_1.54-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libtest-www-mechanize-perl"]
+]
+depends: [
+  "deb-libcarp-assert-more-perl" {>= "1.16"}
+  "deb-libhtml-form-perl"
+  "deb-libhtml-parser-perl"
+  "deb-libhttp-server-simple-perl"
+  "deb-libtest-longstring-perl"
+  "deb-liburi-perl"
+  "deb-libwww-mechanize-perl"
+  "deb-libwww-perl"
+  "deb-perl-any"
+]
+extra-source "libtest-www-mechanize-perl_1.54-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libt/libtest-www-mechanize-perl/libtest-www-mechanize-perl_1.54-1_all.deb"
+}

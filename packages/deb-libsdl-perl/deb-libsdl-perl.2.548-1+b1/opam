@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsdl-perl_2.548-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsdl-perl"]
+]
+depends: [
+  "deb-fonts-sil-gentium-basic"
+  "deb-libalien-sdl-perl"
+  "deb-libc6" {>= "2.14"}
+  "deb-libsdl-gfx1-2-5" {>= "2.0.25"}
+  "deb-libsdl-image1-2" {>= "1.2.10"}
+  "deb-libsdl-mixer1-2"
+  "deb-libsdl-pango1"
+  "deb-libsdl-ttf2-0-0"
+  "deb-libsdl1-2debian" {>= "1.2.11"}
+  "deb-libtie-simple-perl"
+  "deb-perl" {>= "5.28.0-3"}
+  "deb-perl-base"
+]
+extra-source "libsdl-perl_2.548-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libs/libsdl-perl/libsdl-perl_2.548-1+b1_amd64.deb"
+}

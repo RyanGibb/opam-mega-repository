@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-regenerator_0.15.1+~0.10.8-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-regenerator"]
+]
+depends: [
+  "deb-node-babel7"
+  "deb-node-commoner"
+  "deb-node-regenerator-runtime"
+  "deb-node-regenerator-transform"
+  "deb-node-through"
+  "deb-nodejs-any"
+]
+extra-source "node-regenerator_0.15.1+~0.10.8-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-regenerator/node-regenerator_0.15.1+~0.10.8-1_all.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i a2jmidid_9-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r a2jmidid"]
+]
+depends: [
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libdbus-1-3" {>= "1.9.14"}
+  "deb-python3-any"
+  "deb-python3-dbus"
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+]
+extra-source "a2jmidid_9-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/a2jmidid/a2jmidid_9-3_amd64.deb"
+}

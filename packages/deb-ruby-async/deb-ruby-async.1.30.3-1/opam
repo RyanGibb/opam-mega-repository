@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-async_1.30.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-async"]
+]
+depends: [
+  "deb-ruby"
+  "deb-ruby-console" {< "2.0"}
+  "deb-ruby-console" {>= "1.10"}
+  "deb-ruby-nio4r" {< "3.0"}
+  "deb-ruby-nio4r" {>= "2.3"}
+  "deb-ruby-timers" {< "5.0"}
+  "deb-ruby-timers" {>= "4.1"}
+]
+extra-source "ruby-async_1.30.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-async/ruby-async_1.30.3-1_all.deb"
+}

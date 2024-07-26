@@ -1,0 +1,49 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-babel7_7.20.15+ds1+~cs214.269.168-3+deb12u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-babel7"]
+]
+depends: [
+  "deb-node-ampproject-remapping"
+  "deb-node-babel-plugin-add-module-exports"
+  "deb-node-babel-plugin-polyfill-corejs2"
+  "deb-node-babel-plugin-polyfill-corejs3"
+  "deb-node-babel-plugin-polyfill-regenerator"
+  "deb-node-babel7-runtime" {= "7.20.15+ds1+~cs214.269.168-3+deb12u2"}
+  "deb-node-browserslist" {>= "4.16~"}
+  "deb-node-chalk" {>= "4~"}
+  "deb-node-clone-deep"
+  "deb-node-commander" {>= "4.1.1"}
+  "deb-node-convert-source-map"
+  "deb-node-core-js" {>= "3.1.1~"}
+  "deb-node-core-js-compat"
+  "deb-node-core-js-pure"
+  "deb-node-debug"
+  "deb-node-esutils"
+  "deb-node-find-cache-dir"
+  "deb-node-fs-readdir-recursive" {>= "1.1.0~"}
+  "deb-node-glob"
+  "deb-node-globals"
+  "deb-node-js-tokens"
+  "deb-node-jsesc"
+  "deb-node-json5"
+  "deb-node-lodash" {>= "4.17.19+dfsg1~"}
+  "deb-node-lodash-packages"
+  "deb-node-make-dir"
+  "deb-node-quick-lru"
+  "deb-node-regenerator-transform" {>= "0.14~"}
+  "deb-node-regexpu-core" {>= "5.2.1~"}
+  "deb-node-resolve"
+  "deb-node-semver" {>= "7.0~"}
+  "deb-node-slash"
+  "deb-node-source-map"
+  "deb-node-source-map-support"
+  "deb-node-to-fast-properties"
+  "deb-node-v8flags"
+  "deb-nodejs-any"
+]
+extra-source "node-babel7_7.20.15+ds1+~cs214.269.168-3+deb12u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-babel7/node-babel7_7.20.15+ds1+~cs214.269.168-3+deb12u2_all.deb"
+}

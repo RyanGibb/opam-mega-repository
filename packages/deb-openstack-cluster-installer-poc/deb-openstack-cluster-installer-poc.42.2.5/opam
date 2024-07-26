@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openstack-cluster-installer-poc_42.2.5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openstack-cluster-installer-poc"]
+]
+depends: [
+  "deb-bridge-utils"
+  "deb-curl"
+  "deb-haproxy"
+  "deb-ipcalc"
+  "deb-iptables"
+  "deb-ipxe"
+  "deb-jq"
+  "deb-lsb-base"
+  "deb-net-tools"
+  "deb-openipmi" {>= "2.0.25"}
+  "deb-openstack-cluster-installer-cli" {= "42.2.5"}
+  "deb-openstack-debian-images"
+  "deb-openstack-pkg-tools"
+  "deb-ovmf"
+  "deb-python3-q-text-as-data"
+  "deb-qemu-system"
+  "deb-qemu-utils"
+  "deb-shim-signed"
+]
+extra-source "openstack-cluster-installer-poc_42.2.5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openstack-cluster-installer/openstack-cluster-installer-poc_42.2.5_all.deb"
+}

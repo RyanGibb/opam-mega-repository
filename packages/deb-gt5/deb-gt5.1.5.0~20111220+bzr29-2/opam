@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gt5_1.5.0~20111220+bzr29-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gt5"]
+]
+depends: [
+  "deb-bash" {>= "2.5"}
+  ("deb-w3m" | "deb- lynx" | "deb- links" | "deb- elinks" | "deb- links2")
+]
+extra-source "gt5_1.5.0~20111220+bzr29-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gt5/gt5_1.5.0~20111220+bzr29-2_all.deb"
+}

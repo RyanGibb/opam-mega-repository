@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libopencv-apps-dev_2.0.2-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libopencv-apps-dev"]
+]
+depends: [
+  "deb-libcv-bridge-dev"
+  "deb-libdynamic-reconfigure-config-init-mutex-dev"
+  "deb-libimage-transport-dev"
+  "deb-libnodeletlib-dev"
+  "deb-libopencv-apps2d" {= "2.0.2-3+b1"}
+  "deb-libroscpp-dev"
+  "deb-ros-message-generation"
+]
+extra-source "libopencv-apps-dev_2.0.2-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ros-opencv-apps/libopencv-apps-dev_2.0.2-3+b1_amd64.deb"
+}

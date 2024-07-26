@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i budgie-recentlyused-applet_0.7.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r budgie-recentlyused-applet"]
+]
+depends: [
+  "deb-budgie-extras-common"
+  "deb-libbudgie-plugin0" {>= "10.4"}
+  "deb-libc6" {>= "2.4"}
+  "deb-libgee-0-8-2" {>= "0.8.3"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libgtk-3-0" {>= "3.16.2"}
+  "deb-libpeas-1-0-0" {>= "1.0.0"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "budgie-recentlyused-applet_0.7.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/budgie-extras/budgie-recentlyused-applet_0.7.1-3_amd64.deb"
+}

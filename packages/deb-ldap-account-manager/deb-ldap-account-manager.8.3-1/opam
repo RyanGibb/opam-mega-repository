@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ldap-account-manager_8.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ldap-account-manager"]
+]
+depends: [
+  "deb-fonts-dejavu"
+  "deb-gettext"
+  "deb-php" {>= "7.4"}
+  "deb-php-curl"
+  "deb-php-gmp"
+  "deb-php-json"
+  "deb-php-ldap"
+  "deb-php-mbstring"
+  "deb-php-xml"
+  "deb-php-zip"
+  ("deb-apache2" {>= "2.4.0"} | "deb- httpd")
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-libapache2-mod-php" | "deb- libapache2-mod-fcgid" | "deb- php-fpm")
+  ("deb-php-gd" | "deb- php-imagick")
+]
+conflicts: [
+  "deb-libapache2-mod-php5"
+  "deb-php5"
+  "deb-php5-fpm"
+]
+extra-source "ldap-account-manager_8.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/ldap-account-manager/ldap-account-manager_8.3-1_all.deb"
+}

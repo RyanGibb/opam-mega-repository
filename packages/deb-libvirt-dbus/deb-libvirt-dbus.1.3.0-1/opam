@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libvirt-dbus_1.3.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libvirt-dbus"]
+]
+depends: [
+  "deb-dbus"
+  "deb-libc6" {>= "2.4"}
+  "deb-libgcc1" {>= "1-3.3.1"}
+  "deb-libglib2-0-0" {>= "2.44.0"}
+  "deb-libvirt-daemon"
+  "deb-libvirt-daemon-system"
+  "deb-libvirt-glib-1-0-0" {>= "0.0.7~"}
+  "deb-libvirt0" {>= "3.0.0"}
+  "deb-policykit-1"
+  "deb-sysuser-helper" {< "1.4"}
+  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
+]
+extra-source "libvirt-dbus_1.3.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libv/libvirt-dbus/libvirt-dbus_1.3.0-1_amd64.deb"
+}

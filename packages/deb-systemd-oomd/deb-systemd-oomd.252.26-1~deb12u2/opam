@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i systemd-oomd_252.26-1~deb12u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r systemd-oomd"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libsystemd-shared" {= "252.26-1~deb12u2"}
+  ("deb-systemd" | "deb- systemd-standalone-sysusers" | "deb- systemd-sysusers")
+]
+extra-source "systemd-oomd_252.26-1~deb12u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/systemd/systemd-oomd_252.26-1~deb12u2_amd64.deb"
+}

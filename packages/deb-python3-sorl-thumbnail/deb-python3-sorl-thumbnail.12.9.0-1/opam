@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-sorl-thumbnail_12.9.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-sorl-thumbnail"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-django"
+  ("deb-python3-pil" | "deb- python3-pgmagick" | "deb- imagemagick" | "deb- graphicsmagick")
+]
+extra-source "python3-sorl-thumbnail_12.9.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sorl-thumbnail/python3-sorl-thumbnail_12.9.0-1_all.deb"
+}

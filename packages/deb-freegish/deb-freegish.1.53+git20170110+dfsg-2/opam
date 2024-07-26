@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i freegish_1.53+git20170110+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r freegish"]
+]
+depends: [
+  "deb-freegish-data" {= "1.53+git20170110+dfsg-2"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libgl1"
+  "deb-libopenal1" {>= "1.14"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libsdl1-2-compat-shim"
+  "deb-libvorbisfile3" {>= "1.1.2"}
+  "deb-xdg-utils"
+]
+extra-source "freegish_1.53+git20170110+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/freegish/freegish_1.53+git20170110+dfsg-2_amd64.deb"
+}

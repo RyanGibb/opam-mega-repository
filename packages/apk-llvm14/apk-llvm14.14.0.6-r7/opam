@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add llvm14-14.0.6-r7.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del llvm14"]
+]
+depends: [
+  "apk-libgcc" {= "12.2.1_git20220924-r4"}
+  "apk-libstdc++" {= "12.2.1_git20220924-r4"}
+  "apk-llvm14-libs" {= "14.0.6-r7"}
+  "apk-musl" {= "1.2.3-r5"}
+  "apk-zlib" {= "1.2.13-r0"}
+]
+extra-source "llvm14-14.0.6-r7.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/llvm14-14.0.6-r7.apk"
+}

@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i liblablgtk2-ocaml_2.18.5+dfsg-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r liblablgtk2-ocaml"]
+]
+depends: [
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglade2-0" {>= "1-2.6.4-2~"}
+  "deb-libglib2-0-0" {>= "2.35.9"}
+  "deb-libgtk2-0-0" {>= "2.24.32"}
+  "deb-libgtkspell0" {>= "2.0.10"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpangoft2-1-0-0" {>= "1.14.0"}
+  "deb-libxml2" {>= "2.6.27"}
+  "deb-ocaml-base-nox"
+]
+extra-source "liblablgtk2-ocaml_2.18.5+dfsg-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lablgtk2/liblablgtk2-ocaml_2.18.5+dfsg-3_amd64.deb"
+}

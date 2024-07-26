@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openldap-overlay-all-2.6.3-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openldap-overlay-all"]
+]
+depends: [
+  "apk-openldap-overlay-accesslog" {= "2.6.3-r3"}
+  "apk-openldap-overlay-auditlog" {= "2.6.3-r3"}
+  "apk-openldap-overlay-autoca" {= "2.6.3-r3"}
+  "apk-openldap-overlay-collect" {= "2.6.3-r3"}
+  "apk-openldap-overlay-constraint" {= "2.6.3-r3"}
+  "apk-openldap-overlay-dds" {= "2.6.3-r3"}
+  "apk-openldap-overlay-deref" {= "2.6.3-r3"}
+  "apk-openldap-overlay-dyngroup" {= "2.6.3-r3"}
+  "apk-openldap-overlay-dynlist" {= "2.6.3-r3"}
+  "apk-openldap-overlay-homedir" {= "2.6.3-r3"}
+  "apk-openldap-overlay-lastbind" {= "2.6.3-r3"}
+  "apk-openldap-overlay-memberof" {= "2.6.3-r3"}
+  "apk-openldap-overlay-mqtt" {= "2.6.3-r3"}
+  "apk-openldap-overlay-otp" {= "2.6.3-r3"}
+  "apk-openldap-overlay-ppolicy" {= "2.6.3-r3"}
+  "apk-openldap-overlay-proxycache" {= "2.6.3-r3"}
+  "apk-openldap-overlay-refint" {= "2.6.3-r3"}
+  "apk-openldap-overlay-remoteauth" {= "2.6.3-r3"}
+  "apk-openldap-overlay-retcode" {= "2.6.3-r3"}
+  "apk-openldap-overlay-rwm" {= "2.6.3-r3"}
+  "apk-openldap-overlay-seqmod" {= "2.6.3-r3"}
+  "apk-openldap-overlay-sssvlv" {= "2.6.3-r3"}
+  "apk-openldap-overlay-syncprov" {= "2.6.3-r3"}
+  "apk-openldap-overlay-translucent" {= "2.6.3-r3"}
+  "apk-openldap-overlay-unique" {= "2.6.3-r3"}
+  "apk-openldap-overlay-valsort" {= "2.6.3-r3"}
+]
+extra-source "openldap-overlay-all-2.6.3-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/openldap-overlay-all-2.6.3-r3.apk"
+}

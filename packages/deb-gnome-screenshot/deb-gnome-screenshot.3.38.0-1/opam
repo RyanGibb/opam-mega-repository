@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnome-screenshot_3.38.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnome-screenshot"]
+]
+depends: [
+  "deb-libc6" {>= "2.7"}
+  "deb-libcairo2" {>= "1.10.0"}
+  "deb-libcanberra-gtk3-0" {>= "0.25"}
+  "deb-libcanberra0" {>= "0.2"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.23.0"}
+  "deb-libglib2-0-0" {>= "2.39.90"}
+  "deb-libgtk-3-0" {>= "3.21.4"}
+  "deb-libhandy-1-0" {>= "0.90"}
+  "deb-libx11-6"
+  "deb-libxext6"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "gnome-screenshot_3.38.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnome-screenshot/gnome-screenshot_3.38.0-1_amd64.deb"
+}

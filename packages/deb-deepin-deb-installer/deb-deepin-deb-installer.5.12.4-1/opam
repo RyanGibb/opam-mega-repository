@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i deepin-deb-installer_5.12.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r deepin-deb-installer"]
+]
+depends: [
+  "deb-libc6" {>= "2.33"}
+  "deb-libdtkcore5" {>= "5.5.32~"}
+  "deb-libdtkgui5" {>= "5.5.24~"}
+  "deb-libdtkwidget5" {>= "5.5.46"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libpolkit-qt5-1-1" {>= "0.112.0"}
+  "deb-libqapt3" {>= "3.0.1"}
+  "deb-libqapt3-runtime"
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.11.0~rc1"}
+  "deb-libstdc++6" {>= "5.2"}
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+]
+extra-source "deepin-deb-installer_5.12.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/deepin-deb-installer/deepin-deb-installer_5.12.4-1_amd64.deb"
+}

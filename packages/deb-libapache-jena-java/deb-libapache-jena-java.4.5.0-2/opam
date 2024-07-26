@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libapache-jena-java_4.5.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libapache-jena-java"]
+]
+depends: [
+  "deb-libcommons-cli-java" {>= "1.5.0"}
+  "deb-libcommons-codec-java" {>= "1.15"}
+  "deb-libcommons-compress-java" {>= "1.22"}
+  "deb-libcommons-csv-java" {>= "1.9.0"}
+  "deb-libcommons-io-java" {>= "2.11.0"}
+  "deb-libcommons-lang3-java" {>= "3.12.0"}
+  "deb-libdexx-java"
+  "deb-libgoogle-gson-java"
+  "deb-libguava-java"
+  "deb-libhttpclient-java" {>= "4.5.14"}
+  "deb-libjackson2-core-java" {>= "2.14.1"}
+  "deb-libjackson2-databind-java"
+  "deb-libjsonld-java" {>= "0.13.4"}
+  "deb-libjsonp2-java"
+  "deb-libprotobuf-java"
+  "deb-libslf4j-java" {>= "1.7.32"}
+  "deb-libthrift-java"
+  "deb-libtitanium-json-ld-java"
+]
+extra-source "libapache-jena-java_4.5.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/apache-jena/libapache-jena-java_4.5.0-2_all.deb"
+}

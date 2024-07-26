@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i colplot_5.2.0-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r colplot"]
+]
+depends: [
+  "deb-collectl"
+  "deb-gnuplot" {>= "4.4"}
+  "deb-libgetopt-simple-perl"
+  "deb-libio-socket-ip-perl"
+  "deb-perl"
+  "deb-perl-tk"
+  "deb-ucf"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "colplot_5.2.0-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/colplot/colplot_5.2.0-1.1_all.deb"
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add kamailio-geoip2-5.5.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del kamailio-geoip2"]
+]
+depends: [
+  "apk-kamailio" {= "5.5.4-r0"}
+  "apk-libmaxminddb-libs" {= "1.6.0-r1"}
+  "apk-musl" {= "1.2.3-r3"}
+]
+extra-source "kamailio-geoip2-5.5.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/kamailio-geoip2-5.5.4-r0.apk"
+}

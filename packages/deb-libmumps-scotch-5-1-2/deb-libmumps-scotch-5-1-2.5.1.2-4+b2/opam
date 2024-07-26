@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmumps-scotch-5.1.2_5.1.2-4+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmumps-scotch-5.1.2"]
+]
+depends: [
+  "deb-libc6" {>= "2.27"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgfortran5" {>= "8"}
+  "deb-libquadmath0" {>= "4.6"}
+  "deb-libscotch-6-0"
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "libmumps-scotch-5.1.2_5.1.2-4+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mumps/libmumps-scotch-5.1.2_5.1.2-4+b2_amd64.deb"
+}

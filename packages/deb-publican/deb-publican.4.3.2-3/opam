@@ -1,0 +1,61 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i publican_4.3.2-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r publican"]
+]
+depends: [
+  "deb-docbook-xml"
+  "deb-docbook-xsl" {>= "1.77"}
+  "deb-docbook-xsl-ns" {>= "1.77"}
+  "deb-docbook5-xml"
+  "deb-fonts-font-awesome" {>= "5.0.10+really4.7.0~dfsg"}
+  "deb-fop"
+  "deb-gettext"
+  "deb-libarchive-zip-perl"
+  "deb-libconfig-simple-perl"
+  "deb-libdatetime-format-dateparse-perl"
+  "deb-libdatetime-perl"
+  "deb-libdbd-sqlite3-perl"
+  "deb-libdbi-perl"
+  "deb-libfile-copy-recursive-perl" {>= "0.38"}
+  "deb-libfile-find-rule-perl"
+  "deb-libfile-homedir-perl"
+  "deb-libfile-inplace-perl"
+  "deb-libfile-pushd-perl"
+  "deb-libfile-slurp-perl"
+  "deb-libfile-which-perl"
+  "deb-libhtml-format-perl"
+  "deb-libhtml-formattext-withlinks-andtables-perl" {>= "0.02"}
+  "deb-libhtml-formattext-withlinks-perl"
+  "deb-libhtml-template-perl"
+  "deb-libhtml-tree-perl" {>= "3.23-2"}
+  "deb-libhtml-wikiconverter-markdown-perl" {>= "0.06"}
+  "deb-libhtml-wikiconverter-perl"
+  "deb-libimage-magick-perl"
+  "deb-libimage-size-perl"
+  "deb-libio-string-perl"
+  "deb-liblingua-en-fathom-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-liblocale-codes-perl"
+  "deb-liblocale-maketext-gettext-perl"
+  "deb-liblocale-maketext-lexicon-perl"
+  "deb-liblocale-msgfmt-perl"
+  "deb-liblocale-po-perl" {>= "0.24"}
+  "deb-librsvg2-bin"
+  "deb-libsort-versions-perl"
+  "deb-libstring-similarity-perl"
+  "deb-libsyntax-highlight-engine-kate-perl" {>= "0.09"}
+  "deb-libtemplate-perl"
+  "deb-libtext-csv-xs-perl"
+  "deb-libversion-perl"
+  "deb-libxml-libxml-perl" {>= "1.70"}
+  "deb-libxml-libxslt-perl" {>= "1.70"}
+  "deb-libxml-simple-perl"
+  "deb-libxml-treebuilder-perl" {>= "5.4"}
+  "deb-perl" {>= "5.14"}
+]
+extra-source "publican_4.3.2-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/publican/publican_4.3.2-3_all.deb"
+}

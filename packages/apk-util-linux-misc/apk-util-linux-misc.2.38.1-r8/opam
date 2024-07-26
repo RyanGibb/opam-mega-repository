@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add util-linux-misc-2.38.1-r8.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del util-linux-misc"]
+]
+depends: [
+  "apk-libblkid" {= "2.38.1-r8"}
+  "apk-libfdisk" {= "2.38.1-r8"}
+  "apk-libmount" {= "2.38.1-r8"}
+  "apk-libncursesw" {= "6.4_p20230506-r0"}
+  "apk-libsmartcols" {= "2.38.1-r8"}
+  "apk-libuuid" {= "2.38.1-r8"}
+  "apk-musl" {= "1.2.4-r2"}
+  "apk-setarch" {= "2.38.1-r8"}
+  "apk-zlib" {= "1.2.13-r1"}
+  ("apk-busybox-binsh" {= "1.36.1-r7"} | "apk-dash-binsh" {= "0.5.12-r2"} | "apk-yash-binsh" {= "2.54-r3"})
+]
+extra-source "util-linux-misc-2.38.1-r8.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/util-linux-misc-2.38.1-r8.apk"
+}

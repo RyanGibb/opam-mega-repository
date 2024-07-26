@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libticonv-dev_1.1.5-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libticonv-dev"]
+]
+depends: [
+  "deb-libglib2-0-dev"
+  "deb-libticonv8" {= "1.1.5-2"}
+  "deb-pkg-config"
+]
+extra-source "libticonv-dev_1.1.5-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libt/libticonv/libticonv-dev_1.1.5-2_amd64.deb"
+}

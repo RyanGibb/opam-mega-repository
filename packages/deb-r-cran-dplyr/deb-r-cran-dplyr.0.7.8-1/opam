@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-dplyr_0.7.8-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-dplyr"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "3.5.1-2"}
+  "deb-r-cran-assertthat" {>= "0.2.0"}
+  "deb-r-cran-bindrcpp" {>= "0.2.0.9000"}
+  "deb-r-cran-glue" {>= "1.1.1"}
+  "deb-r-cran-magrittr" {>= "1.5"}
+  "deb-r-cran-pkgconfig" {>= "2.0.1"}
+  "deb-r-cran-r6" {>= "2.2.2"}
+  "deb-r-cran-rcpp" {>= "0.12.19"}
+  "deb-r-cran-rlang" {>= "0.3.0"}
+  "deb-r-cran-tibble" {>= "1.4.2"}
+  "deb-r-cran-tidyselect" {>= "0.2.3"}
+]
+extra-source "r-cran-dplyr_0.7.8-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-dplyr/r-cran-dplyr_0.7.8-1_amd64.deb"
+}

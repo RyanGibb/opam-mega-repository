@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i webpack_4.43.0-6+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r webpack"]
+]
+depends: [
+  "deb-node-ajv" {>= "6.1~"}
+  "deb-node-ajv-keywords" {>= "3.1~"}
+  "deb-node-anymatch" {>= "3.0.3+~2.0.7-2~"}
+  "deb-node-enhanced-resolve" {>= "4.0~"}
+  "deb-node-esrecurse"
+  "deb-node-estraverse"
+  "deb-node-findup-sync"
+  "deb-node-interpret"
+  "deb-node-json-parse-better-errors"
+  "deb-node-libs-browser"
+  "deb-node-loader-runner"
+  "deb-node-loader-utils" {>= "1.1~"}
+  "deb-node-memory-fs"
+  "deb-node-micromatch"
+  "deb-node-mkdirp" {>= "1"}
+  "deb-node-neo-async"
+  "deb-node-resolve-cwd"
+  "deb-node-schema-utils" {>= "3.0.0~"}
+  "deb-node-supports-color"
+  "deb-node-tapable" {>= "1.0~"}
+  "deb-node-uglifyjs-webpack-plugin" {>= "1.3.0-4~"}
+  "deb-node-watchpack" {>= "1.4~"}
+  "deb-node-webassemblyjs"
+  "deb-node-webpack-sources"
+  "deb-node-yargs"
+  "deb-nodejs"
+  ("deb-node-debbundle-acorn" | "deb-node-debbundle-acorn")
+]
+extra-source "webpack_4.43.0-6+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-webpack/webpack_4.43.0-6+deb11u1_all.deb"
+}

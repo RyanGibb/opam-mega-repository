@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fence-agents_4.7.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fence-agents"]
+]
+depends: [
+  "deb-libc6" {>= "2.15"}
+  "deb-python3-any"
+  "deb-python3-boto3"
+  "deb-python3-googleapi"
+  "deb-python3-oauth2client"
+  "deb-python3-pexpect"
+  "deb-python3-pycurl"
+  "deb-python3-requests"
+  "deb-python3-suds"
+]
+extra-source "fence-agents_4.7.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fence-agents/fence-agents_4.7.1-1_amd64.deb"
+}

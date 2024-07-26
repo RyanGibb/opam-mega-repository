@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i frei0r-plugins_1.8.0-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r frei0r-plugins"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libcairo2" {>= "1.6.0"}
+  "deb-libgavl2" {>= "1.1.0"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libopencv-core406" {>= "4.6.0+dfsg"}
+  "deb-libopencv-imgproc406" {>= "4.6.0+dfsg"}
+  "deb-libopencv-objdetect406" {>= "4.6.0+dfsg"}
+  "deb-libopencv-video406" {>= "4.6.0+dfsg"}
+  "deb-libstdc++6" {>= "5.2"}
+]
+extra-source "frei0r-plugins_1.8.0-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/frei0r/frei0r-plugins_1.8.0-1+b1_amd64.deb"
+}

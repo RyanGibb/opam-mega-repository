@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnome-panel_3.38.0-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnome-panel"]
+]
+depends: [
+  "deb-gnome-menus" {>= "3.1.4"}
+  "deb-gnome-panel-data" {= "3.38.0-1"}
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo2" {>= "1.10.0"}
+  "deb-libdconf1" {>= "0.14.0"}
+  "deb-libecal-2-0-1" {>= "3.33.4"}
+  "deb-libedataserver-1-2-25" {>= "3.17"}
+  "deb-libelogind0"
+  "deb-libgdk-pixbuf2-0-0" {>= "2.26.0"}
+  "deb-libgdm1" {>= "3.8.3"}
+  "deb-libglib2-0-0" {>= "2.57.2"}
+  "deb-libgnome-desktop-3-19" {>= "3.17.92"}
+  "deb-libgnome-menu-3-0" {>= "3.7.90"}
+  "deb-libgnome-panel0" {>= "3.37.1"}
+  "deb-libgtk-3-0" {>= "3.22.0"}
+  "deb-libgweather-3-16" {>= "3.28.0"}
+  "deb-libical3" {>= "3.0.0"}
+  "deb-libpango-1-0-0" {>= "1.18.0"}
+  "deb-libpolkit-gobject-1-0" {>= "0.99"}
+  "deb-libwnck-3-0" {>= "3.4.6"}
+  "deb-libx11-6"
+  "deb-libxrandr2" {>= "2-1.2.99.3"}
+  "deb-nautilus-data"
+]
+extra-source "gnome-panel_3.38.0-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnome-panel/gnome-panel_3.38.0-1+b1_amd64.deb"
+}

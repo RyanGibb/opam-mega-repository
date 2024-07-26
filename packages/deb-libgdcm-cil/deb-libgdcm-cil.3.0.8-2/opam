@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgdcm-cil_3.0.8-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgdcm-cil"]
+]
+depends: [
+  "deb-cli-common" {>= "0.5.1"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgdcm3-0" {>= "3.0.8"}
+  "deb-libmono-corlib4-5-cil" {>= "5.18.0.240"}
+  "deb-libstdc++6" {>= "9"}
+]
+extra-source "libgdcm-cil_3.0.8-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gdcm/libgdcm-cil_3.0.8-2_amd64.deb"
+}

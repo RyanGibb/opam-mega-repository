@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i nagios4-common_4.4.6-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r nagios4-common"]
+]
+depends: [
+  "deb-adduser"
+  "deb-coreutils" {>= "4.5.3"}
+  "deb-libjs-jquery"
+  "deb-monitoring-plugins-basic"
+  "deb-sysvinit-utils"
+  "deb-ucf" {>= "0.28"}
+  ("deb-bsd-mailx" | "deb- mailx")
+]
+extra-source "nagios4-common_4.4.6-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/nagios4/nagios4-common_4.4.6-4_all.deb"
+}

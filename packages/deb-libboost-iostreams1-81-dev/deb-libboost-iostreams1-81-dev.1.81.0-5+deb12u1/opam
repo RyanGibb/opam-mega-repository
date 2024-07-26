@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libboost-iostreams1.81-dev_1.81.0-5+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libboost-iostreams1.81-dev"]
+]
+depends: [
+  "deb-libboost-iostreams1-81-0" {= "1.81.0-5+deb12u1"}
+  "deb-libboost-regex1-81-dev" {= "1.81.0-5+deb12u1"}
+  "deb-libboost1-81-dev" {= "1.81.0-5+deb12u1"}
+]
+conflicts: [
+  "deb-libboost-iostreams1-42-dev"
+  "deb-libboost-iostreams1-46-dev"
+  "deb-libboost-iostreams1-48-dev"
+  "deb-libboost-iostreams1-49-dev"
+  "deb-libboost-iostreams1-50-dev"
+  "deb-libboost-iostreams1-52-dev"
+  "deb-libboost-iostreams1-53-dev"
+  "deb-libboost-iostreams1-54-dev"
+  "deb-libboost-iostreams1-55-dev"
+  "deb-libboost-iostreams1-57-dev"
+  "deb-libboost-iostreams1-58-dev"
+  "deb-libboost-iostreams1-60-dev"
+  "deb-libboost-iostreams1-61-dev"
+  "deb-libboost-iostreams1-62-dev"
+  "deb-libboost-iostreams1-63-dev"
+  "deb-libboost-iostreams1-65-dev"
+  "deb-libboost-iostreams1-67-dev"
+  "deb-libboost-iostreams1-70-dev"
+  "deb-libboost-iostreams1-71-dev"
+  "deb-libboost-iostreams1-74-dev"
+  "deb-libboost-iostreams1-80-dev"
+]
+extra-source "libboost-iostreams1.81-dev_1.81.0-5+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/boost1.81/libboost-iostreams1.81-dev_1.81.0-5+deb12u1_amd64.deb"
+}

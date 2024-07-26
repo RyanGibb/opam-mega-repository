@@ -1,0 +1,47 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xorg-dev_1:7.7+22_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xorg-dev"]
+]
+depends: [
+  "deb-libdmx-dev"
+  "deb-libfontenc-dev"
+  "deb-libfs-dev"
+  "deb-libice-dev"
+  "deb-libsm-dev"
+  "deb-libx11-dev"
+  "deb-libxau-dev"
+  "deb-libxaw7-dev"
+  "deb-libxcomposite-dev"
+  "deb-libxcursor-dev"
+  "deb-libxdamage-dev"
+  "deb-libxdmcp-dev"
+  "deb-libxext-dev"
+  "deb-libxfixes-dev"
+  "deb-libxfont-dev"
+  "deb-libxft-dev"
+  "deb-libxi-dev"
+  "deb-libxinerama-dev"
+  "deb-libxkbfile-dev"
+  "deb-libxmu-dev"
+  "deb-libxmuu-dev"
+  "deb-libxpm-dev"
+  "deb-libxrandr-dev"
+  "deb-libxrender-dev"
+  "deb-libxres-dev"
+  "deb-libxss-dev"
+  "deb-libxt-dev"
+  "deb-libxtst-dev"
+  "deb-libxv-dev"
+  "deb-libxvmc-dev"
+  "deb-libxxf86dga-dev"
+  "deb-libxxf86vm-dev"
+  "deb-x11proto-dev"
+  "deb-xserver-xorg-dev"
+  "deb-xtrans-dev"
+]
+extra-source "xorg-dev_1:7.7+22_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xorg/xorg-dev_7.7+22_all.deb"
+}

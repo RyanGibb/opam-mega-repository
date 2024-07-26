@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libglib2.0-dev_2.74.6-2+deb12u3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libglib2.0-dev"]
+]
+depends: [
+  "deb-libffi-dev" {>= "3.3"}
+  "deb-libglib2-0-0" {= "2.74.6-2+deb12u3"}
+  "deb-libglib2-0-bin" {= "2.74.6-2+deb12u3"}
+  "deb-libglib2-0-dev-bin" {= "2.74.6-2+deb12u3"}
+  "deb-libmount-dev" {>= "2.35.2-7~"}
+  "deb-libpcre2-dev"
+  "deb-libselinux1-dev"
+  "deb-pkg-config"
+  "deb-zlib1g-dev"
+]
+extra-source "libglib2.0-dev_2.74.6-2+deb12u3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/glib2.0/libglib2.0-dev_2.74.6-2+deb12u3_amd64.deb"
+}

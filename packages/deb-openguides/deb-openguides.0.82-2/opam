@@ -1,0 +1,43 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openguides_0.82-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openguides"]
+]
+depends: [
+  "deb-libalgorithm-diff-perl" {>= "0.13"}
+  "deb-libcgi-pm-perl"
+  "deb-libclass-accessor-perl"
+  "deb-libconfig-tiny-perl"
+  "deb-libdata-validate-uri-perl"
+  "deb-libgeo-coordinates-itm-perl"
+  "deb-libgeo-coordinates-osgb-perl"
+  "deb-libgeo-coordinates-utm-perl"
+  "deb-libgeo-helmerttransform-perl"
+  "deb-libhtml-parser-perl"
+  "deb-libjson-perl"
+  "deb-libmime-lite-perl"
+  "deb-libnet-netmask-perl"
+  "deb-libparse-recdescent-perl"
+  "deb-libplucene-perl"
+  "deb-libtemplate-perl" {>= "2.24"}
+  "deb-libtemplate-plugin-json-escape-perl"
+  "deb-liburi-perl"
+  "deb-libwiki-toolkit-formatter-usemod-perl" {>= "0.25"}
+  "deb-libwiki-toolkit-perl" {>= "0.84"}
+  "deb-libwiki-toolkit-plugin-categoriser-perl"
+  "deb-libwiki-toolkit-plugin-diff-perl"
+  "deb-libwiki-toolkit-plugin-json-perl"
+  "deb-libwiki-toolkit-plugin-locator-grid-perl"
+  "deb-libwiki-toolkit-plugin-ping-perl"
+  "deb-libwww-perl"
+  "deb-libxml-rss-perl"
+  "deb-perl"
+  ("deb-apache2" | "deb- httpd")
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-libdbd-sqlite3-perl" | "deb- libdbd-pg-perl" | "deb- libdbd-mysql-perl")
+]
+extra-source "openguides_0.82-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openguides/openguides_0.82-2_all.deb"
+}

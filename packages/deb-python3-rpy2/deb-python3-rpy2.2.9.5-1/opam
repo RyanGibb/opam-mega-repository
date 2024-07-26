@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-rpy2_2.9.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-rpy2"]
+]
+depends: [
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgomp1" {>= "4.2.1"}
+  "deb-libicu63" {>= "63.1-1~"}
+  "deb-liblzma5" {>= "5.1.1alpha+20110809"}
+  "deb-libpcre3"
+  "deb-python3" {< "3.8"}
+  "deb-python3" {>= "3.6~"}
+  "deb-python3-any" {>= "3.0~"}
+  "deb-python3-jinja2"
+  "deb-python3-numpy"
+  "deb-python3-six"
+  "deb-r-base-core" {>= "3.5.0"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "python3-rpy2_2.9.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rpy2/python3-rpy2_2.9.5-1_amd64.deb"
+}

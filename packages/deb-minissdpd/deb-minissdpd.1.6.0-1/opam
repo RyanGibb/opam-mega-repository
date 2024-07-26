@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i minissdpd_1.6.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r minissdpd"]
+]
+depends: [
+  "deb-debconf"
+  "deb-init-system-helpers" {>= "1.51"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libnfnetlink0" {>= "1.0.2"}
+  "deb-lsb-base"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "minissdpd_1.6.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/minissdpd/minissdpd_1.6.0-1_amd64.deb"
+}

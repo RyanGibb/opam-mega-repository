@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add nginx-mod-http-image-filter-1.24.0-r7.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del nginx-mod-http-image-filter"]
+]
+depends: [
+  "apk-libgd" {= "2.3.3-r7"}
+  "apk-musl" {= "1.2.4-r2"}
+  "apk-nginx" {= "1.24.0-r7"}
+]
+extra-source "nginx-mod-http-image-filter-1.24.0-r7.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/nginx-mod-http-image-filter-1.24.0-r7.apk"
+}

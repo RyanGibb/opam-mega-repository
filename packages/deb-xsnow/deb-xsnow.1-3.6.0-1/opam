@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xsnow_1:3.6.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xsnow"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.14.0"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.28.0"}
+  "deb-libgsl27" {>= "2.7.1"}
+  "deb-libgtk-3-0" {>= "3.9.10"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxinerama1" {>= "2-1.1.4"}
+  "deb-libxkbcommon0" {>= "0.5.0"}
+  "deb-libxpm4"
+  "deb-libxtst6"
+]
+extra-source "xsnow_1:3.6.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xsnow/xsnow_3.6.0-1_amd64.deb"
+}

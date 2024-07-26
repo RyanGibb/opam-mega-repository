@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dkim-rotate_0.4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dkim-rotate"]
+]
+depends: [
+  "deb-bash" {>= "4"}
+  "deb-libgetopt-long-descriptive-perl"
+  "deb-libmime-tools-perl"
+  "deb-openssl"
+  "deb-perl-any"
+]
+extra-source "dkim-rotate_0.4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dkim-rotate/dkim-rotate_0.4_all.deb"
+}

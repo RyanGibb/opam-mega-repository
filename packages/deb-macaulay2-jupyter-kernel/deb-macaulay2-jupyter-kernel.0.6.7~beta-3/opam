@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i macaulay2-jupyter-kernel_0.6.7~beta-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r macaulay2-jupyter-kernel"]
+]
+depends: [
+  "deb-jupyter"
+  "deb-macaulay2"
+  "deb-python3-any"
+  "deb-python3-ipykernel"
+  "deb-python3-notebook"
+  "deb-python3-pexpect"
+]
+extra-source "macaulay2-jupyter-kernel_0.6.7~beta-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/macaulay2-jupyter-kernel/macaulay2-jupyter-kernel_0.6.7~beta-3_all.deb"
+}

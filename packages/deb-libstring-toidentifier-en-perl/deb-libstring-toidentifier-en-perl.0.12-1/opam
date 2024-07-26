@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libstring-toidentifier-en-perl_0.12-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libstring-toidentifier-en-perl"]
+]
+depends: [
+  "deb-liblingua-en-inflect-phrase-perl" {>= "0.16"}
+  "deb-libnamespace-clean-perl"
+  "deb-libtext-unidecode-perl"
+  "deb-perl"
+]
+extra-source "libstring-toidentifier-en-perl_0.12-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libs/libstring-toidentifier-en-perl/libstring-toidentifier-en-perl_0.12-1_all.deb"
+}

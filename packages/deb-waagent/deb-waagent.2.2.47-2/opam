@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i waagent_2.2.47-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r waagent"]
+]
+depends: [
+  "deb-bind9-host"
+  "deb-ca-certificates"
+  "deb-eject"
+  "deb-iptables"
+  "deb-net-tools"
+  "deb-openssh-server"
+  "deb-openssl"
+  "deb-parted"
+  "deb-python3-any"
+  "deb-python3-distro"
+  "deb-python3-pkg-resources"
+  "deb-sudo"
+  ("deb-fdisk" | "deb- util-linux" {< "2.29.2-3~"})
+]
+conflicts: [
+  "deb-network-manager"
+  "deb-walinuxagent"
+]
+extra-source "waagent_2.2.47-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/w/waagent/waagent_2.2.47-2_all.deb"
+}

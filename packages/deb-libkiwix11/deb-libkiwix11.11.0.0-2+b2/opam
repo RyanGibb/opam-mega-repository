@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkiwix11_11.0.0-2+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkiwix11"]
+]
+depends: [
+  "deb-aria2"
+  "deb-libc6" {>= "2.34"}
+  "deb-libcurl4" {>= "7.16.2"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libicu72" {>= "72.1~rc-1~"}
+  "deb-libmicrohttpd12" {>= "0.9.50"}
+  "deb-libpugixml1v5" {>= "1.6"}
+  "deb-libstdc++6" {>= "12.2.0-9"}
+  "deb-libxapian30" {>= "1.4.19~"}
+  "deb-libzim8" {>= "8.0.0"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+conflicts: [
+  "deb-libkiwix0"
+  "deb-libkiwix10"
+  "deb-libkiwix3"
+  "deb-libkiwix9"
+]
+extra-source "libkiwix11_11.0.0-2+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libk/libkiwix/libkiwix11_11.0.0-2+b2_amd64.deb"
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tuxtype_1.8.3-5.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tuxtype"]
+]
+depends: [
+  "deb-fonts-sil-andika"
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-librsvg2-2" {>= "2.14.4"}
+  "deb-libsdl-image1-2" {>= "1.2.10"}
+  "deb-libsdl-mixer1-2" {>= "1.2.12"}
+  "deb-libsdl-pango1"
+  "deb-libsdl1-2-compat-shim"
+  "deb-tuxtype-data"
+]
+extra-source "tuxtype_1.8.3-5.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tuxtype/tuxtype_1.8.3-5.1_amd64.deb"
+}

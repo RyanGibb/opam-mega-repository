@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i telegram-cli_1.3.1+git20160323.6547c0b21-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r telegram-cli"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libconfig9"
+  "deb-libevent-2-1-7" {>= "2.1.8-stable"}
+  "deb-libjansson4" {>= "2.0.1"}
+  "deb-liblua5-2-0"
+  "deb-libreadline8" {>= "6.0"}
+  "deb-libtgl-0-0-0-20160623-0"
+]
+extra-source "telegram-cli_1.3.1+git20160323.6547c0b21-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/telegram-cli/telegram-cli_1.3.1+git20160323.6547c0b21-2_amd64.deb"
+}

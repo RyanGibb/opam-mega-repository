@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-broom_1.0.3+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-broom"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.2.20221110-2"}
+  "deb-r-cran-backports"
+  "deb-r-cran-dplyr" {>= "1.0.0"}
+  "deb-r-cran-ellipsis"
+  "deb-r-cran-generics" {>= "0.0.2"}
+  "deb-r-cran-glue"
+  "deb-r-cran-purrr"
+  "deb-r-cran-rlang"
+  "deb-r-cran-stringr"
+  "deb-r-cran-tibble" {>= "3.0.0"}
+  "deb-r-cran-tidyr" {>= "1.0.0"}
+]
+extra-source "r-cran-broom_1.0.3+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-broom/r-cran-broom_1.0.3+dfsg-2_all.deb"
+}

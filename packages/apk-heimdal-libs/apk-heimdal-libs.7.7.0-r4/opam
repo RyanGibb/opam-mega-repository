@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add heimdal-libs-7.7.0-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del heimdal-libs"]
+]
+depends: [
+  "apk-krb5-conf" {= "1.0-r2"}
+  "apk-libcom_err" {= "1.45.7-r0"}
+  "apk-musl" {= "1.2.2-r2"}
+  "apk-readline" {= "8.1.0-r0"}
+  "apk-sqlite-libs" {= "3.34.1-r0"}
+]
+extra-source "heimdal-libs-7.7.0-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/heimdal-libs-7.7.0-r4.apk"
+}

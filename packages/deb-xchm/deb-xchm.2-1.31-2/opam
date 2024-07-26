@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xchm_2:1.31-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xchm"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libchm1" {>= "2-0.40a"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libwxbase3-0-0v5" {>= "3.0.5.1+dfsg"}
+  "deb-libwxgtk3-0-gtk3-0v5" {>= "3.0.5.1+dfsg"}
+]
+conflicts: [
+  "deb-chmlib"
+]
+extra-source "xchm_2:1.31-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xchm/xchm_1.31-2_amd64.deb"
+}

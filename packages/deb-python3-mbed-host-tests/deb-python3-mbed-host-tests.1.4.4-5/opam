@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-mbed-host-tests_1.4.4-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-mbed-host-tests"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-future"
+  "deb-python3-intelhex"
+  "deb-python3-mbed-ls"
+  "deb-python3-pkg-resources"
+  "deb-python3-prettytable" {>= "0.7.2"}
+  "deb-python3-requests"
+  "deb-python3-serial" {>= "3.0"}
+]
+extra-source "python3-mbed-host-tests_1.4.4-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-mbed-host-tests/python3-mbed-host-tests_1.4.4-5_all.deb"
+}

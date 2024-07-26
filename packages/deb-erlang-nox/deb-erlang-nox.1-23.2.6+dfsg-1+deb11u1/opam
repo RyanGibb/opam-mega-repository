@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i erlang-nox_1:23.2.6+dfsg-1+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r erlang-nox"]
+]
+depends: [
+  "deb-erlang-asn1-any"
+  "deb-erlang-crypto-any"
+  "deb-erlang-diameter-any"
+  "deb-erlang-edoc-any"
+  "deb-erlang-eldap-any"
+  "deb-erlang-erl-docgen-any"
+  "deb-erlang-eunit-any"
+  "deb-erlang-ftp-any"
+  "deb-erlang-inets-any"
+  "deb-erlang-mnesia-any"
+  "deb-erlang-odbc-any"
+  "deb-erlang-os-mon-any"
+  "deb-erlang-parsetools-any"
+  "deb-erlang-public-key-any"
+  "deb-erlang-runtime-tools-any"
+  "deb-erlang-snmp-any"
+  "deb-erlang-ssh-any"
+  "deb-erlang-ssl-any"
+  "deb-erlang-syntax-tools-any"
+  "deb-erlang-tftp-any"
+  "deb-erlang-tools-any"
+  "deb-erlang-xmerl-any"
+  ("deb-erlang-base-any" | "deb- erlang-base-hipe-any")
+]
+extra-source "erlang-nox_1:23.2.6+dfsg-1+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/erlang/erlang-nox_23.2.6+dfsg-1+deb11u1_all.deb"
+}

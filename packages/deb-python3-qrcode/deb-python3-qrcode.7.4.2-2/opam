@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-qrcode_7.4.2-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-qrcode"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-pil"
+  "deb-python3-png"
+  "deb-python3-typing-extensions"
+]
+extra-source "python3-qrcode_7.4.2-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-qrcode/python3-qrcode_7.4.2-2_all.deb"
+}

@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-markdown-dev_0.1.17.4-2+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-markdown-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-attoparsec-dev"
+  "deb-libghc-blaze-html-dev"
+  "deb-libghc-blaze-markup-dev"
+  "deb-libghc-conduit-dev"
+  "deb-libghc-conduit-extra-dev"
+  "deb-libghc-data-default-dev"
+  "deb-libghc-xml-conduit-dev"
+  "deb-libghc-xml-types-dev"
+  "deb-libghc-xss-sanitize-dev"
+  "deb-libgmp10"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libghc-markdown-dev_0.1.17.4-2+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-markdown/libghc-markdown-dev_0.1.17.4-2+b3_amd64.deb"
+}

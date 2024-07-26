@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libglib2.0-tests_2.66.8-1+deb11u4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libglib2.0-tests"]
+]
+depends: [
+  "deb-gir1-2-glib-2-0"
+  "deb-libc6" {>= "2.29"}
+  "deb-libdbus-1-3" {>= "1.9.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {= "2.66.8-1+deb11u4"}
+  "deb-libglib2-0-dev-bin"
+  "deb-libpcre3"
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-python3-9"
+  "deb-python3-any"
+  "deb-python3-dbus"
+  "deb-python3-dbusmock"
+  "deb-python3-gi"
+  "deb-shared-mime-info"
+]
+extra-source "libglib2.0-tests_2.66.8-1+deb11u4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/glib2.0/libglib2.0-tests_2.66.8-1+deb11u4_amd64.deb"
+}

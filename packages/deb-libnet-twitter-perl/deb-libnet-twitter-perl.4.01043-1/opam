@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libnet-twitter-perl_4.01043-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libnet-twitter-perl"]
+]
+depends: [
+  "deb-libcarp-clan-perl"
+  "deb-libclass-load-perl"
+  "deb-libcrypt-ssleay-perl"
+  "deb-libdata-visitor-perl"
+  "deb-libdatetime-format-strptime-perl"
+  "deb-libdatetime-perl"
+  "deb-libdevel-stacktrace-perl"
+  "deb-libdigest-hmac-perl"
+  "deb-libhtml-parser-perl"
+  "deb-libio-socket-ssl-perl" {>= "2.005"}
+  "deb-libjson-maybexs-perl"
+  "deb-liblwp-protocol-https-perl"
+  "deb-libmoose-perl"
+  "deb-libmoosex-role-parameterized-perl"
+  "deb-libnamespace-autoclean-perl"
+  "deb-libnet-oauth-perl"
+  "deb-libtry-tiny-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-perl"
+  ("deb-libnet-http-perl" {>= "6.06"} | "deb- libnet-http-perl" {< "6.04"})
+]
+extra-source "libnet-twitter-perl_4.01043-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libn/libnet-twitter-perl/libnet-twitter-perl_4.01043-1_all.deb"
+}

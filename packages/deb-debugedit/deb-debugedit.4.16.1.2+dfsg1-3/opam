@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i debugedit_4.16.1.2+dfsg1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r debugedit"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libdw1" {>= "0.167"}
+  "deb-libelf1" {>= "0.144"}
+  "deb-libpopt0" {>= "1.14"}
+  "deb-librpmio9" {= "4.16.1.2+dfsg1-3"}
+]
+extra-source "debugedit_4.16.1.2+dfsg1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rpm/debugedit_4.16.1.2+dfsg1-3_amd64.deb"
+}

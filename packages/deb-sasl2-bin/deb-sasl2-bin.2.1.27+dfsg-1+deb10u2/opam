@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sasl2-bin_2.1.27+dfsg-1+deb10u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sasl2-bin"]
+]
+depends: [
+  "deb-db-util"
+  "deb-libc6" {>= "2.15"}
+  "deb-libdb5-3"
+  "deb-libkrb5-3" {>= "1.13~alpha1+dfsg"}
+  "deb-libldap-2-4-2" {>= "2.4.7"}
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-libsasl2-2" {>= "2.1.27+dfsg-1+deb10u2"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-lsb-base" {>= "3.0-6"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "sasl2-bin_2.1.27+dfsg-1+deb10u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cyrus-sasl2/sasl2-bin_2.1.27+dfsg-1+deb10u2_amd64.deb"
+}

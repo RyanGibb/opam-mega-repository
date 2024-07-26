@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i freemat_4.2+dfsg1-6+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r freemat"]
+]
+depends: [
+  "deb-freemat-data" {= "4.2+dfsg1-6"}
+  "deb-libarpack2" {>= "2.1"}
+  "deb-libboost-math1-67-0"
+  "deb-libc6" {>= "2.27"}
+  "deb-libffi6" {>= "3.0.4"}
+  "deb-libfftw3-double3" {>= "3.3.5"}
+  "deb-libfftw3-single3" {>= "3.3.5"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgfortran5" {>= "8"}
+  "deb-libgl1"
+  "deb-libncurses6" {>= "6"}
+  "deb-libpcre3"
+  "deb-libportaudio2" {>= "19+svn20101113"}
+  "deb-libqt4-network" {>= "4-4.5.3"}
+  "deb-libqt4-opengl" {>= "4-4.5.3"}
+  "deb-libqt4-svg" {>= "4-4.5.3"}
+  "deb-libqt4-xml" {>= "4-4.5.3"}
+  "deb-libqtcore4" {>= "4-4.8.0"}
+  "deb-libqtgui4" {>= "4-4.5.3"}
+  "deb-libquadmath0" {>= "4.6"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+extra-source "freemat_4.2+dfsg1-6+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/freemat/freemat_4.2+dfsg1-6+b3_amd64.deb"
+}

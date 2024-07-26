@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libframe6_2.5.0-3+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libframe6"]
+]
+depends: [
+  "deb-libc6" {>= "2.7"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxi6" {>= "2-1.5.99.2"}
+]
+extra-source "libframe6_2.5.0-3+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/frame/libframe6_2.5.0-3+b2_amd64.deb"
+}

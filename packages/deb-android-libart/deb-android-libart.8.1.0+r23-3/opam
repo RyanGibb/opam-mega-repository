@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i android-libart_8.1.0+r23-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r android-libart"]
+]
+depends: [
+  "deb-android-libbacktrace"
+  "deb-android-libbase"
+  "deb-android-libcutils"
+  "deb-android-libnativebridge"
+  "deb-android-libnativehelper"
+  "deb-android-libnativeloader"
+  "deb-android-libziparchive"
+  "deb-libc6" {>= "2.17"}
+  "deb-libgcc1" {>= "1-3.3"}
+  "deb-liblz4-1" {>= "0.0~r113"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-zlib1g" {>= "1-1.2.0"}
+]
+extra-source "android-libart_8.1.0+r23-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/android-platform-art/android-libart_8.1.0+r23-3_amd64.deb"
+}

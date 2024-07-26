@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i budgie-appmenu-applet_0.7.6+dfsg1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r budgie-appmenu-applet"]
+]
+depends: [
+  "deb-appmenu-registrar" {>= "0.7.1"}
+  "deb-bamfdaemon"
+  "deb-libbamf3-2" {>= "0.5.0"}
+  "deb-libbudgie-plugin0" {>= "10.4"}
+  "deb-libc6" {>= "2.7"}
+  "deb-libglib2-0-0" {>= "2.52.0"}
+  "deb-libgtk-3-0" {>= "3.22.0"}
+  "deb-libpeas-1-0-0" {>= "1.0.0"}
+  "deb-vala-panel-appmenu-common" {= "0.7.6+dfsg1-3"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "budgie-appmenu-applet_0.7.6+dfsg1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/vala-panel-appmenu/budgie-appmenu-applet_0.7.6+dfsg1-3_amd64.deb"
+}

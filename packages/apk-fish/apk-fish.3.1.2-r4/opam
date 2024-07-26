@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add fish-3.1.2-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del fish"]
+]
+depends: [
+  "apk-bc" {= "1.07.1-r1"}
+  "apk-busybox" {= "1.32.1-r9"}
+  "apk-libpcre2-32" {= "10.36-r1"}
+  "apk-libstdc++" {= "10.2.1_pre1-r3"}
+  "apk-musl" {= "1.2.2-r2"}
+  "apk-ncurses-libs" {= "6.2_p20210109-r1"}
+]
+extra-source "fish-3.1.2-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/fish-3.1.2-r4.apk"
+}

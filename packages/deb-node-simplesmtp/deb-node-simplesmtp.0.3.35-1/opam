@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-simplesmtp_0.3.35-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-simplesmtp"]
+]
+depends: [
+  "deb-node-rai" {>= "0.1.11"}
+  "deb-node-xoauth2" {>= "0.1.8"}
+  "deb-nodejs"
+]
+extra-source "node-simplesmtp_0.3.35-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-simplesmtp/node-simplesmtp_0.3.35-1_all.deb"
+}

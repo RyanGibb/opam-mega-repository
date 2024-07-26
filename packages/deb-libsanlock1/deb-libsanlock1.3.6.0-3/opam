@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsanlock1_3.6.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsanlock1"]
+]
+depends: [
+  "deb-libaio1" {>= "0.3.93"}
+  "deb-libblkid1" {>= "2.17.2"}
+  "deb-libc6" {>= "2.14"}
+]
+extra-source "libsanlock1_3.6.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sanlock/libsanlock1_3.6.0-3_amd64.deb"
+}

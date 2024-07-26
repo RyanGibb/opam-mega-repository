@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xrestop_0.4+git20130926-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xrestop"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libncurses6" {>= "6"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-libx11-6"
+  "deb-libxres1"
+]
+extra-source "xrestop_0.4+git20130926-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xrestop/xrestop_0.4+git20130926-2_amd64.deb"
+}

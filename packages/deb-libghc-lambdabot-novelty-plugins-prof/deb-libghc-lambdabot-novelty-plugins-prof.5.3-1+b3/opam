@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-lambdabot-novelty-plugins-prof_5.3-1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-lambdabot-novelty-plugins-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-brainfuck-prof"
+  "deb-libghc-dice-prof"
+  "deb-libghc-lambdabot-core-prof"
+  "deb-libghc-lambdabot-novelty-plugins-dev" {= "5.3-1+b3"}
+  "deb-libghc-misfortune-prof"
+  "deb-libghc-random-fu-prof"
+  "deb-libghc-regex-tdfa-prof"
+  "deb-libghc-unlambda-prof"
+]
+extra-source "libghc-lambdabot-novelty-plugins-prof_5.3-1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-lambdabot-novelty-plugins/libghc-lambdabot-novelty-plugins-prof_5.3-1+b3_amd64.deb"
+}

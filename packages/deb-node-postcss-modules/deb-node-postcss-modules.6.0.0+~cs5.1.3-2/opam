@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-postcss-modules_6.0.0+~cs5.1.3-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-postcss-modules"]
+]
+depends: [
+  "deb-node-icss-replace-symbols"
+  "deb-node-icss-utils"
+  "deb-node-loader-utils"
+  "deb-node-lodash-packages"
+  "deb-node-postcss"
+  "deb-node-postcss-modules-extract-imports"
+  "deb-node-postcss-modules-local-by-default"
+  "deb-node-postcss-modules-scope"
+  "deb-node-postcss-modules-values"
+]
+extra-source "node-postcss-modules_6.0.0+~cs5.1.3-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-postcss-modules/node-postcss-modules_6.0.0+~cs5.1.3-2_all.deb"
+}

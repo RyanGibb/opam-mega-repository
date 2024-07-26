@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-rquantlib_0.4.17-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-rquantlib"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libquantlib0v5" {>= "1.28"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.1-3"}
+  "deb-r-cran-rcpp" {>= "0.11.0"}
+  "deb-r-cran-zoo"
+]
+extra-source "r-cran-rquantlib_0.4.17-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rquantlib/r-cran-rquantlib_0.4.17-1_amd64.deb"
+}

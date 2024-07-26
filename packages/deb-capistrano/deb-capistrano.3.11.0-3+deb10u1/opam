@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i capistrano_3.11.0-3+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r capistrano"]
+]
+depends: [
+  "deb-rake" {>= "10.0.0"}
+  "deb-ruby-i18n"
+  "deb-ruby-sshkit" {>= "1.3"}
+  ("deb-ruby" | "deb- ruby-interpreter")
+]
+extra-source "capistrano_3.11.0-3+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/capistrano/capistrano_3.11.0-3+deb10u1_all.deb"
+}

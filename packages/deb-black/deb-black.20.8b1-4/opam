@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i black_20.8b1-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r black"]
+]
+depends: [
+  "deb-python3-any" {>= "3.6~"}
+  "deb-python3-appdirs"
+  "deb-python3-click"
+  "deb-python3-mypy-extensions"
+  "deb-python3-pathspec"
+  "deb-python3-pkg-resources"
+  "deb-python3-regex" {>= "0.1.202018"}
+  "deb-python3-toml"
+  "deb-python3-typed-ast"
+  "deb-python3-typing-extensions"
+]
+extra-source "black_20.8b1-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/black/black_20.8b1-4_all.deb"
+}

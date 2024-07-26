@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ktouch-data_4:18.04.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ktouch-data"]
+]
+depends: [
+  "deb-qml-module-org-kde-charts"
+  "deb-qml-module-org-kde-kcoreaddons"
+  "deb-qml-module-org-kde-kquickcontrolsaddons"
+  "deb-qml-module-qtgraphicaleffects"
+  "deb-qml-module-qtquick-controls"
+  "deb-qml-module-qtquick-controls2"
+  "deb-qml-module-qtquick-layouts"
+  "deb-qml-module-qtquick2"
+]
+extra-source "ktouch-data_4:18.04.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/ktouch/ktouch-data_18.04.1-1_all.deb"
+}

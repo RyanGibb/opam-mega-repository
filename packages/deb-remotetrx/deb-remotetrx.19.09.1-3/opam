@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i remotetrx_19.09.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r remotetrx"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libasyncaudio1-6" {>= "19.09.1"}
+  "deb-libasynccore1-6" {>= "19.09.1"}
+  "deb-libasynccpp1-6" {>= "19.09.1"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libgcrypt20" {>= "1.8.0"}
+  "deb-libpopt0" {>= "1.14"}
+  "deb-librtlsdr0" {>= "0.6.0"}
+  "deb-libsigc++-2-0-0v5" {>= "2.8.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-lsb-base" {>= "3.0-6"}
+  "deb-svxlink-gpio" {= "19.09.1-3"}
+]
+extra-source "remotetrx_19.09.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/svxlink/remotetrx_19.09.1-3_amd64.deb"
+}

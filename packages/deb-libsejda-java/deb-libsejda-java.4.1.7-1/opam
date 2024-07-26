@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsejda-java_4.1.7-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsejda-java"]
+]
+depends: [
+  "deb-libbcmail-java" {>= "1.65"}
+  "deb-libbcprov-java" {>= "1.65"}
+  "deb-libcommons-io-java" {>= "2.8.0"}
+  "deb-libcommons-lang3-java" {>= "3.11"}
+  "deb-libgeronimo-validation-1-1-spec-java"
+  "deb-libimgscalr-java" {>= "4.2"}
+  "deb-libmetadata-extractor-java" {>= "2.11.0"}
+  "deb-libsejda-commons-java" {>= "1.1.6"}
+  "deb-libsejda-io-java"
+  "deb-libslf4j-java" {>= "1.7.30"}
+  "deb-libtwelvemonkeys-java"
+]
+extra-source "libsejda-java_4.1.7-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libs/libsejda-java/libsejda-java_4.1.7-1_all.deb"
+}

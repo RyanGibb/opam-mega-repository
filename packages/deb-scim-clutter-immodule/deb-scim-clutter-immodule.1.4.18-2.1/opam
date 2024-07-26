@@ -1,0 +1,44 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i scim-clutter-immodule_1.4.18-2.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r scim-clutter-immodule"]
+]
+depends: [
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.15"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libclutter-1-0-0" {>= "1.10.0"}
+  "deb-libclutter-imcontext-0-1-0"
+  "deb-libcogl-pango20" {>= "1.17.4"}
+  "deb-libcogl-path20" {>= "1.17.4"}
+  "deb-libcogl20" {>= "1.17.4"}
+  "deb-libdrm2" {>= "2.3.1"}
+  "deb-libegl1"
+  "deb-libgbm1" {>= "7.11~1"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.16.0"}
+  "deb-libgtk-3-0" {>= "3.0.0"}
+  "deb-libjson-glib-1-0-0" {>= "0.12.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libwayland-client0" {>= "1.0.2"}
+  "deb-libwayland-cursor0" {>= "1.0.2"}
+  "deb-libwayland-egl1" {>= "1.15.0"}
+  "deb-libwayland-server0" {>= "1.0.2"}
+  "deb-libx11-6"
+  "deb-libxcomposite1" {>= "1-0.3-1"}
+  "deb-libxdamage1" {>= "1-1.1"}
+  "deb-libxext6"
+  "deb-libxfixes3"
+  "deb-libxi6"
+  "deb-libxkbcommon0" {>= "0.5.0"}
+  "deb-libxrandr2"
+  "deb-scim" {= "1.4.18-2.1"}
+  "deb-scim-im-agent" {= "1.4.18-2.1"}
+]
+extra-source "scim-clutter-immodule_1.4.18-2.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/scim/scim-clutter-immodule_1.4.18-2.1_amd64.deb"
+}

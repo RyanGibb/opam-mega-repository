@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tone-generator_1.6.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tone-generator"]
+]
+depends: [
+  "deb-dbus"
+  "deb-init-system-helpers" {>= "1.52"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libdbus-1-3" {>= "1.9.14"}
+  "deb-libdbus-glib-1-2" {>= "0.78"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libpulse-mainloop-glib0" {>= "0.99.1"}
+  "deb-libpulse0" {>= "0.99.1"}
+  ("deb-pulseaudio" | "deb- pipewire-pulse")
+]
+extra-source "tone-generator_1.6.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tone-generator/tone-generator_1.6.1-3_amd64.deb"
+}

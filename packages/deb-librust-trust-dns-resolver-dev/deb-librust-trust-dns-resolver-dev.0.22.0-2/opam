@@ -1,0 +1,44 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-trust-dns-resolver-dev_0.22.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-trust-dns-resolver-dev"]
+]
+depends: [
+  "deb-librust-cfg-if-1+default-dev"
+  "deb-librust-futures-util-dev"
+  "deb-librust-ipconfig-0-2+default-dev"
+  "deb-librust-lazy-static-dev"
+  "deb-librust-lru-cache-dev"
+  "deb-librust-parking-lot-0-12+default-dev"
+  "deb-librust-resolv-conf-0-7+default-dev"
+  "deb-librust-resolv-conf-0-7+system-dev"
+  "deb-librust-rustls-0-20+default-dev"
+  "deb-librust-rustls-0-20+quic-dev"
+  "deb-librust-rustls-native-certs-0-6+default-dev"
+  "deb-librust-serde-1+default-dev"
+  "deb-librust-serde-1+derive-dev"
+  "deb-librust-smallvec-dev"
+  "deb-librust-thiserror-dev"
+  "deb-librust-tokio-1+default-dev"
+  "deb-librust-tokio-1+rt-dev"
+  "deb-librust-tokio-native-tls-0-3+default-dev"
+  "deb-librust-tokio-openssl-0-6+default-dev"
+  "deb-librust-tokio-rustls-0-23+default-dev"
+  "deb-librust-tracing-dev"
+  "deb-librust-trust-dns-proto-0-22+dns-over-https-dev"
+  "deb-librust-trust-dns-proto-0-22+dns-over-https-rustls-dev"
+  "deb-librust-trust-dns-proto-0-22+dns-over-native-tls-dev"
+  "deb-librust-trust-dns-proto-0-22+dns-over-openssl-dev"
+  "deb-librust-trust-dns-proto-0-22+dns-over-quic-dev"
+  "deb-librust-trust-dns-proto-0-22+dns-over-rustls-dev"
+  "deb-librust-trust-dns-proto-0-22+dnssec-openssl-dev"
+  "deb-librust-trust-dns-proto-0-22+dnssec-ring-dev"
+  "deb-librust-trust-dns-proto-0-22+serde-config-dev"
+  "deb-librust-trust-dns-proto-0-22+tokio-runtime-dev"
+  "deb-librust-trust-dns-proto-0-22-dev"
+]
+extra-source "librust-trust-dns-resolver-dev_0.22.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-trust-dns-resolver/librust-trust-dns-resolver-dev_0.22.0-2_amd64.deb"
+}

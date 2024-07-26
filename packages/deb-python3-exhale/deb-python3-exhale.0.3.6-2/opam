@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-exhale_0.3.6-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-exhale"]
+]
+depends: [
+  "deb-doxygen"
+  "deb-python3-any"
+  "deb-python3-breathe"
+  "deb-python3-bs4"
+  "deb-python3-docutils"
+  "deb-python3-lxml"
+  "deb-python3-six"
+  "deb-python3-sphinx"
+]
+extra-source "python3-exhale_0.3.6-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/exhale/python3-exhale_0.3.6-2_all.deb"
+}

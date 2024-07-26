@@ -1,0 +1,41 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libeliom-ocaml-dev_9.4.0-2+b8_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libeliom-ocaml-dev"]
+]
+depends: [
+  "deb-libangstrom-ocaml-dev"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libcohttp-lwt-ocaml-dev"
+  "deb-libcohttp-lwt-unix-ocaml-dev"
+  "deb-libcohttp-ocaml-dev"
+  "deb-libconduit-lwt-ocaml-dev"
+  "deb-libconduit-ocaml-dev"
+  "deb-libcryptokit-ocaml-dev"
+  "deb-libdomain-name-ocaml-dev"
+  "deb-libipaddr-ocaml-dev"
+  "deb-libjs-of-ocaml-dev"
+  "deb-libjs-of-ocaml-ocamlbuild-ocaml-dev"
+  "deb-liblwt-log-ocaml-dev"
+  "deb-liblwt-ocaml-dev"
+  "deb-libocaml-compiler-libs-ocaml-dev"
+  "deb-libocsigenserver-ocaml-dev"
+  "deb-libocsipersist-lib-ocaml-dev"
+  "deb-libocsipersist-ocaml-dev"
+  "deb-libpcre-ocaml-dev"
+  "deb-libppx-deriving-ocaml-dev"
+  "deb-libppxlib-ocaml-dev"
+  "deb-libre-ocaml-dev"
+  "deb-libreact-ocaml-dev"
+  "deb-libreactivedata-ocaml-dev"
+  "deb-libsexplib0-ocaml-dev"
+  "deb-libtyxml-ocaml-dev"
+  "deb-liburi-ocaml-dev"
+  "deb-libxml-light-ocaml-dev"
+  "deb-ocaml"
+]
+extra-source "libeliom-ocaml-dev_9.4.0-2+b8_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/eliom/libeliom-ocaml-dev_9.4.0-2+b8_amd64.deb"
+}

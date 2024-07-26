@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i q2-phylogeny_2022.11.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r q2-phylogeny"]
+]
+depends: [
+  "deb-fasttree"
+  "deb-iqtree"
+  "deb-mafft"
+  "deb-python3-any"
+  "deb-python3-setuptools"
+  "deb-python3-skbio"
+  "deb-q2-alignment" {>= "2022.11.1"}
+  "deb-q2-types" {>= "2022.11.1"}
+  "deb-qiime"
+  "deb-raxml"
+]
+extra-source "q2-phylogeny_2022.11.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/q2-phylogeny/q2-phylogeny_2022.11.1-3_amd64.deb"
+}

@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i auto-multiple-choice_1.4.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r auto-multiple-choice"]
+]
+depends: [
+  "deb-auto-multiple-choice-common" {= "1.4.0-1"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo2" {>= "1.12.0"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libglib2-0-0" {>= "2.16.0"}
+  "deb-libopencv-core3-2"
+  "deb-libopencv-imgcodecs3-2"
+  "deb-libopencv-imgproc3-2"
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpoppler-glib8" {>= "0.22.1"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-perl"
+]
+extra-source "auto-multiple-choice_1.4.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/auto-multiple-choice/auto-multiple-choice_1.4.0-1_amd64.deb"
+}

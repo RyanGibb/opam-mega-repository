@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gr-rds_3.8.0.0.f1c584a-3+b5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gr-rds"]
+]
+depends: [
+  "deb-gnuradio-dev"
+  "deb-libc6" {>= "2.17"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgnuradio-rds1" {= "3.8.0.0.f1c584a-3+b5"}
+  "deb-libgnuradio-runtime3-8-2" {>= "3.8.2.0"}
+  "deb-liblog4cpp5v5" {>= "1.1.3"}
+  "deb-libpython3-9" {>= "3.9.0~b4"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-python3" {< "3.10"}
+  "deb-python3" {>= "3.9~"}
+  "deb-python3-any"
+]
+extra-source "gr-rds_3.8.0.0.f1c584a-3+b5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gr-rds/gr-rds_3.8.0.0.f1c584a-3+b5_amd64.deb"
+}

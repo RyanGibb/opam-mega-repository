@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i grub-efi-amd64_2.06-3~deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r grub-efi-amd64"]
+]
+depends: [
+  "deb-grub-common" {= "2.06-3~deb10u1"}
+  "deb-grub-efi-amd64-bin" {= "2.06-3~deb10u1"}
+  "deb-grub2-common" {= "2.06-3~deb10u1"}
+  "deb-ucf"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+conflicts: [
+  "deb-elilo"
+  "deb-grub"
+  "deb-grub-coreboot"
+  "deb-grub-efi-ia32"
+  "deb-grub-ieee1275"
+  "deb-grub-legacy"
+  "deb-grub-pc"
+  "deb-grub-xen"
+]
+extra-source "grub-efi-amd64_2.06-3~deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/grub2/grub-efi-amd64_2.06-3~deb10u1_amd64.deb"
+}

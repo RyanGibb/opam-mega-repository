@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add botan-libs-2.18.1-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del botan-libs"]
+]
+depends: [
+  "apk-libbz2" {= "1.0.8-r1"}
+  "apk-libcrypto1-1" {= "1.1.1w-r1"}
+  "apk-libgcc" {= "10.3.1_git20211027-r0"}
+  "apk-libgomp" {= "10.3.1_git20211027-r0"}
+  "apk-libstdc++" {= "10.3.1_git20211027-r0"}
+  "apk-musl" {= "1.2.2-r9"}
+  "apk-sqlite-libs" {= "3.36.0-r0"}
+  "apk-xz-libs" {= "5.2.5-r1"}
+  "apk-zlib" {= "1.2.12-r3"}
+]
+extra-source "botan-libs-2.18.1-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/botan-libs-2.18.1-r4.apk"
+}

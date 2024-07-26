@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-rms_5.1-3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-rms"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libgfortran5" {>= "8"}
+  "deb-libquadmath0" {>= "4.6"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "3.5.2-1"}
+  "deb-r-cran-foreign"
+  "deb-r-cran-ggplot2" {>= "2.2"}
+  "deb-r-cran-hmisc" {>= "4.1-1"}
+  "deb-r-cran-htmltable" {>= "1.11.0"}
+  "deb-r-cran-htmltools"
+  "deb-r-cran-lattice"
+  "deb-r-cran-multcomp"
+  "deb-r-cran-nlme" {>= "3.1-123"}
+  "deb-r-cran-nnet"
+  "deb-r-cran-polspline"
+  "deb-r-cran-quantreg"
+  "deb-r-cran-rpart"
+  "deb-r-cran-sparsem"
+  "deb-r-cran-survival" {>= "2.40-1"}
+]
+conflicts: [
+  "deb-r-noncran-design"
+]
+extra-source "r-cran-rms_5.1-3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-rms/r-cran-rms_5.1-3-1_amd64.deb"
+}

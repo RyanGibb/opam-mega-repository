@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i buskill_0.6.0+git20221227.e1539d2-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r buskill"]
+]
+depends: [
+  "deb-fonts-material-design-icons-iconfont"
+  "deb-fonts-noto-mono"
+  "deb-fonts-roboto"
+  "deb-init-system-helpers" {>= "1.52"}
+  "deb-python3-any"
+  "deb-python3-gnupg"
+  "deb-python3-kivy"
+  "deb-python3-usb1"
+]
+extra-source "buskill_0.6.0+git20221227.e1539d2-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/buskill/buskill_0.6.0+git20221227.e1539d2-4_all.deb"
+}

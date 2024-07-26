@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnome-software_43.5-1~deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnome-software"]
+]
+depends: [
+  "deb-appstream"
+  "deb-apt-config-icons"
+  "deb-gnome-software-common" {= "43.5-1~deb12u1"}
+  "deb-gsettings-desktop-schemas" {>= "3.18"}
+  "deb-libadwaita-1-0" {>= "1.2~alpha"}
+  "deb-libappstream4" {>= "0.14.0"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libfwupd2" {>= "1.5.6"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.70.0"}
+  "deb-libgtk-4-1" {>= "4.6"}
+  "deb-libgtk3-perl"
+  "deb-libgudev-1-0-0" {>= "146"}
+  "deb-libjson-glib-1-0-0" {>= "1.6.0"}
+  "deb-libmalcontent-0-0" {>= "0.6.0"}
+  "deb-libpackagekit-glib2-18" {>= "1.2.5"}
+  "deb-libpango-1-0-0" {>= "1.18.0"}
+  "deb-libpolkit-gobject-1-0" {>= "0.99"}
+  "deb-libsoup-3-0-0" {>= "3.0.3"}
+  "deb-libxmlb2" {>= "0.3.2"}
+  "deb-packagekit" {>= "1.1.11"}
+  "deb-software-properties-gtk"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+conflicts: [
+  "deb-sessioninstaller"
+]
+extra-source "gnome-software_43.5-1~deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnome-software/gnome-software_43.5-1~deb12u1_amd64.deb"
+}

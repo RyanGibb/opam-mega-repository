@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcgi-application-perl_4.61+~1.21+~1.00+~1.01-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcgi-application-perl"]
+]
+depends: [
+  "deb-libcgi-pm-perl" {>= "4.21"}
+  "deb-libclass-isa-perl"
+  "deb-libmodule-build-perl"
+  "deb-libparams-validate-perl"
+  "deb-libscalar-list-utils-perl"
+  "deb-libtest-requires-perl"
+  "deb-libtest-simple-perl"
+  "deb-perl-any"
+]
+extra-source "libcgi-application-perl_4.61+~1.21+~1.00+~1.01-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libcgi-application-perl/libcgi-application-perl_4.61+~1.21+~1.00+~1.01-1_all.deb"
+}

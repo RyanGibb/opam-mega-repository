@@ -1,0 +1,43 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i glusterfs-common_5.5-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r glusterfs-common"]
+]
+depends: [
+  "deb-attr"
+  "deb-e2fsprogs"
+  "deb-libacl1" {>= "2.2.23"}
+  "deb-libaio1" {>= "0.3.93"}
+  "deb-libc6" {>= "2.28"}
+  "deb-libgfapi0"
+  "deb-libgfchangelog0"
+  "deb-libgfdb0"
+  "deb-libgfrpc0"
+  "deb-libgfxdr0"
+  "deb-libglusterfs-dev"
+  "deb-libglusterfs0"
+  "deb-libibverbs1" {>= "1.1.6"}
+  "deb-libncurses6" {>= "6"}
+  "deb-libpython3-7" {>= "3.7.0"}
+  "deb-librdmacm1" {>= "1.0.15"}
+  "deb-libreadline7" {>= "6.0"}
+  "deb-libsqlite3-0" {>= "3.5.9"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-libtirpc3" {>= "1.1.4"}
+  "deb-liburcu6" {>= "0.10.0"}
+  "deb-libuuid1" {>= "2.16"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-psmisc"
+  "deb-python3-any"
+  "deb-python3-jwt"
+  "deb-python3-prettytable"
+  "deb-python3-requests"
+  "deb-xfsprogs"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "glusterfs-common_5.5-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/glusterfs/glusterfs-common_5.5-3_amd64.deb"
+}

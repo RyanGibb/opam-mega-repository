@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcollada-urdf-dev_1.12.13-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcollada-urdf-dev"]
+]
+depends: [
+  "deb-libangles-dev"
+  "deb-libassimp-dev"
+  "deb-libcollada-dom-dev"
+  "deb-libcollada-parser-dev"
+  "deb-libcollada-urdf1d" {= "1.12.13-3"}
+  "deb-libgeometric-shapes-dev"
+  "deb-libresource-retriever-dev"
+  "deb-libtf-dev"
+  "deb-liburdf-dev"
+]
+extra-source "libcollada-urdf-dev_1.12.13-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ros-collada-urdf/libcollada-urdf-dev_1.12.13-3_amd64.deb"
+}

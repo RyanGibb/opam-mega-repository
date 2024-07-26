@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-mpoly_1.1.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-mpoly"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.1.2-1"}
+  "deb-r-cran-ggplot2"
+  "deb-r-cran-orthopolynom"
+  "deb-r-cran-partitions"
+  "deb-r-cran-plyr"
+  "deb-r-cran-polynom"
+  "deb-r-cran-stringi"
+  "deb-r-cran-stringr" {>= "1.0.0"}
+  "deb-r-cran-tidyr"
+]
+extra-source "r-cran-mpoly_1.1.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-mpoly/r-cran-mpoly_1.1.1-2_all.deb"
+}

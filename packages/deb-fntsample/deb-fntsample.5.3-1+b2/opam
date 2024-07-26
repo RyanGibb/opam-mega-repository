@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fntsample_5.3-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fntsample"]
+]
+depends: [
+  "deb-libc6" {>= "2.7"}
+  "deb-libcairo2" {>= "1.15.8"}
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libintl-perl"
+  "deb-libpango-1-0-0" {>= "1.22.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.18.0"}
+  "deb-libpangoft2-1-0-0" {>= "1.37.2"}
+  "deb-libpdf-api2-perl"
+  "deb-perl-any"
+]
+extra-source "fntsample_5.3-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fntsample/fntsample_5.3-1+b2_amd64.deb"
+}

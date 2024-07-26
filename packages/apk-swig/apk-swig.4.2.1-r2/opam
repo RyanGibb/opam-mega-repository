@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add swig-4.2.1-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del swig"]
+]
+depends: [
+  "apk-guile" {= "3.0.9-r0"}
+  "apk-libgcc" {= "13.2.1_git20240309-r0"}
+  "apk-libstdc++" {= "13.2.1_git20240309-r0"}
+  "apk-musl" {= "1.2.5-r0"}
+  "apk-pcre2" {= "10.43-r0"}
+  "apk-zlib" {= "1.3.1-r1"}
+]
+extra-source "swig-4.2.1-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/swig-4.2.1-r2.apk"
+}

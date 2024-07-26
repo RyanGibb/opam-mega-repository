@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gr-hpsdr_3.0-2+b7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gr-hpsdr"]
+]
+depends: [
+  "deb-libc6" {>= "2.32"}
+  "deb-libgcc-s1" {>= "3.3.1"}
+  "deb-libgnuradio-hpsdr1-0-0" {= "3.0-2+b7"}
+  "deb-libgnuradio-runtime3-10-5" {>= "3.10.5.0"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-any"
+  "deb-python3-numpy"
+  "deb-python3-numpy" {>= "1-1.22.0"}
+]
+extra-source "gr-hpsdr_3.0-2+b7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gr-hpsdr/gr-hpsdr_3.0-2+b7_amd64.deb"
+}

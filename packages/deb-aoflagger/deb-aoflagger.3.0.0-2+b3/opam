@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i aoflagger_3.0.0-2+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r aoflagger"]
+]
+depends: [
+  "deb-libaoflagger0" {>= "3.0.0"}
+  "deb-libatkmm-1-6-1v5" {>= "2.24.0"}
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libcairomm-1-0-1v5" {>= "1.12.0"}
+  "deb-libcasa-casa5" {>= "3.3.0"}
+  "deb-libcasa-ms5" {>= "3.3.0"}
+  "deb-libcasa-tables5" {>= "3.3.0"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libglibmm-2-4-1v5" {>= "2.64.2"}
+  "deb-libgtkmm-3-0-1v5" {>= "3.24.0"}
+  "deb-libpangomm-1-4-1v5" {>= "2.42.0"}
+  "deb-libsigc++-2-0-0v5" {>= "2.8.0"}
+  "deb-libstdc++6" {>= "9"}
+]
+extra-source "aoflagger_3.0.0-2+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/aoflagger/aoflagger_3.0.0-2+b3_amd64.deb"
+}

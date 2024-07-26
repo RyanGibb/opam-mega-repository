@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i squid-cgi_4.6-1+deb10u7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r squid-cgi"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libnettle6"
+  "deb-libstdc++6" {>= "5.2"}
+  ("deb-apache2" | "deb- httpd")
+]
+conflicts: [
+  "deb-squid3-cgi"
+]
+extra-source "squid-cgi_4.6-1+deb10u7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/squid/squid-cgi_4.6-1+deb10u7_amd64.deb"
+}

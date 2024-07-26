@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libvirt-daemon-system_5.0.0-4+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libvirt-daemon-system"]
+]
+depends: [
+  "deb-adduser"
+  "deb-gettext-base"
+  "deb-libacl1" {>= "2.2.23"}
+  "deb-libapparmor1" {>= "2.6~devel"}
+  "deb-libaudit1" {>= "1-2.2.1"}
+  "deb-libblkid1" {>= "2.16"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcap-ng0" {>= "0.7.9"}
+  "deb-libdbus-1-3" {>= "1.9.14"}
+  "deb-libdevmapper1-02-1" {>= "2-1.02.20"}
+  "deb-libgnutls30" {>= "3.6.5"}
+  "deb-libnl-3-200" {>= "3.2.7"}
+  "deb-libnl-route-3-200" {>= "3.2.7"}
+  "deb-libnuma1" {>= "2.0.11"}
+  "deb-libselinux1" {>= "2.0.82"}
+  "deb-libvirt-clients" {= "5.0.0-4+deb10u1"}
+  "deb-libvirt-daemon" {= "5.0.0-4+deb10u1"}
+  "deb-libvirt0" {>= "5.0.0"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libyajl2" {>= "2.0.4"}
+  "deb-logrotate"
+  "deb-lsb-base"
+  "deb-policykit-1"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-iptables" {>= "1.8.1-1"} | "deb- firewalld")
+]
+extra-source "libvirt-daemon-system_5.0.0-4+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libv/libvirt/libvirt-daemon-system_5.0.0-4+deb10u1_amd64.deb"
+}

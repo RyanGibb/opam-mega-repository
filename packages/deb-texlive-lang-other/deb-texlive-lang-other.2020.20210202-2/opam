@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i texlive-lang-other_2020.20210202-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r texlive-lang-other"]
+]
+depends: [
+  "deb-fonts-sil-padauk" {>= "3.003-1"}
+  "deb-fonts-tlwg-garuda-otf"
+  "deb-fonts-tlwg-kinnari-otf"
+  "deb-fonts-tlwg-laksaman-otf"
+  "deb-fonts-tlwg-loma-otf"
+  "deb-fonts-tlwg-mono-otf"
+  "deb-fonts-tlwg-norasi-otf"
+  "deb-fonts-tlwg-purisa-otf"
+  "deb-fonts-tlwg-sawasdee-otf"
+  "deb-fonts-tlwg-typewriter-otf"
+  "deb-fonts-tlwg-typist-otf"
+  "deb-fonts-tlwg-typo-otf"
+  "deb-fonts-tlwg-umpush-otf"
+  "deb-fonts-tlwg-waree-otf"
+  "deb-tex-common" {>= "6.13"}
+  "deb-texlive-base" {>= "2020.20200417"}
+  "deb-texlive-binaries" {>= "2020.20200327"}
+]
+extra-source "texlive-lang-other_2020.20210202-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/texlive-lang/texlive-lang-other_2020.20210202-2_all.deb"
+}

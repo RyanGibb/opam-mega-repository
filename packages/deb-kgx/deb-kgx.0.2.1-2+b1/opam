@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kgx_0.2.1-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kgx"]
+]
+depends: [
+  "deb-gsettings-desktop-schemas" {>= "0.1.0"}
+  "deb-libc6" {>= "2.4"}
+  "deb-libglib2-0-0" {>= "2.58.0"}
+  "deb-libgtk-3-0" {>= "3.24.0"}
+  "deb-libgtop-2-0-11" {>= "2.22.3"}
+  "deb-libhandy-0-0-0" {>= "0.0.9"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libvte-2-91-0" {>= "0.54.2"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "kgx_0.2.1-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kgx/kgx_0.2.1-2+b1_amd64.deb"
+}

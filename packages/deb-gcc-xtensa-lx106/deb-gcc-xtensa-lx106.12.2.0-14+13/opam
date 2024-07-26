@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gcc-xtensa-lx106_12.2.0-14+13_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gcc-xtensa-lx106"]
+]
+depends: [
+  "deb-binutils-xtensa-lx106"
+  "deb-libc6" {>= "2.36"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-libisl23" {>= "0.15"}
+  "deb-libmpc3" {>= "1.1.0"}
+  "deb-libmpfr6" {>= "3.1.3"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "gcc-xtensa-lx106_12.2.0-14+13_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gcc-xtensa-lx106/gcc-xtensa-lx106_12.2.0-14+13_amd64.deb"
+}

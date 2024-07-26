@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sublime-music_0.11.16-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sublime-music"]
+]
+depends: [
+  "deb-gir1-2-gtk-3-0"
+  "deb-gir1-2-nm-1-0"
+  "deb-libjs-sphinxdoc" {>= "4.3"}
+  "deb-python3-any" {>= "3.8~"}
+  "deb-python3-bleach"
+  "deb-python3-dataclasses-json"
+  "deb-python3-dateutil"
+  "deb-python3-deepdiff"
+  "deb-python3-fuzzywuzzy"
+  "deb-python3-gi"
+  "deb-python3-levenshtein"
+  "deb-python3-mpv"
+  "deb-python3-peewee"
+  "deb-python3-requests"
+  "deb-python3-semver"
+  "deb-sphinx-rtd-theme-common" {>= "1.1.1+dfsg"}
+]
+extra-source "sublime-music_0.11.16-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sublime-music/sublime-music_0.11.16-4_all.deb"
+}

@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-pandoc-citeproc-prof_0.14.3.1-4+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-pandoc-citeproc-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-aeson-prof"
+  "deb-libghc-data-default-prof"
+  "deb-libghc-hs-bibutils-prof"
+  "deb-libghc-old-locale-prof"
+  "deb-libghc-pandoc-citeproc-dev" {= "0.14.3.1-4+b3"}
+  "deb-libghc-pandoc-prof"
+  "deb-libghc-pandoc-types-prof"
+  "deb-libghc-setenv-prof"
+  "deb-libghc-split-prof"
+  "deb-libghc-syb-prof"
+  "deb-libghc-tagsoup-prof"
+  "deb-libghc-text-icu-prof"
+  "deb-libghc-unordered-containers-prof"
+  "deb-libghc-vector-prof"
+  "deb-libghc-xml-conduit-prof"
+  "deb-libghc-yaml-prof"
+]
+extra-source "libghc-pandoc-citeproc-prof_0.14.3.1-4+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-pandoc-citeproc/libghc-pandoc-citeproc-prof_0.14.3.1-4+b3_amd64.deb"
+}

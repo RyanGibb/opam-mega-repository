@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ceferino_0.97.8+svn37-2.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ceferino"]
+]
+depends: [
+  "deb-ceferino-data" {= "0.97.8+svn37-2.2"}
+  "deb-libc6" {>= "2.4"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libsdl-image1-2" {>= "1.2.10"}
+  "deb-libsdl-mixer1-2" {>= "1.2.12"}
+  "deb-libsdl1-2-compat-shim"
+  "deb-libstdc++6" {>= "5"}
+]
+extra-source "ceferino_0.97.8+svn37-2.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/ceferino/ceferino_0.97.8+svn37-2.2_amd64.deb"
+}

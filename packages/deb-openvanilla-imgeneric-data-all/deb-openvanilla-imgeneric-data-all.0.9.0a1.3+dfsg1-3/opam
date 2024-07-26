@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openvanilla-imgeneric-data-all_0.9.0a1.3+dfsg1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openvanilla-imgeneric-data-all"]
+]
+depends: [
+  "deb-openvanilla-imgeneric-data-ja"
+  "deb-openvanilla-imgeneric-data-ko"
+  "deb-openvanilla-imgeneric-data-th"
+  "deb-openvanilla-imgeneric-data-vi"
+  "deb-openvanilla-imgeneric-data-zh-cn"
+  "deb-openvanilla-imgeneric-data-zh-hk"
+  "deb-openvanilla-imgeneric-data-zh-tw"
+]
+conflicts: [
+  "deb-libopenvanilla-data"
+]
+extra-source "openvanilla-imgeneric-data-all_0.9.0a1.3+dfsg1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openvanilla-modules/openvanilla-imgeneric-data-all_0.9.0a1.3+dfsg1-3_all.deb"
+}

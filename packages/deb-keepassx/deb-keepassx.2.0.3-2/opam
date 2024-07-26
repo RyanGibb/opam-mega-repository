@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i keepassx_2.0.3-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r keepassx"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcrypt20" {>= "1.8.0"}
+  "deb-libqtcore4" {>= "4-4.8.0"}
+  "deb-libqtgui4" {>= "4-4.8.0"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-libx11-6"
+  "deb-libxi6"
+  "deb-libxtst6"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "keepassx_2.0.3-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/keepassx/keepassx_2.0.3-2_amd64.deb"
+}

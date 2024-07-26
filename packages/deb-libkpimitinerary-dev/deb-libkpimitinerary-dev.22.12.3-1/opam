@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkpimitinerary-dev_22.12.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkpimitinerary-dev"]
+]
+depends: [
+  "deb-libkf5calendarcore-dev" {>= "5-5.91.0~"}
+  "deb-libkf5contacts-dev" {>= "5-5.91.0~"}
+  "deb-libkf5i18n-dev" {>= "5.91.0~"}
+  "deb-libkf5mime-dev" {>= "22.12.3~"}
+  "deb-libkpimitinerary5" {= "22.12.3-1"}
+  "deb-libkpimpkpass-dev" {>= "22.12.3~"}
+  "deb-qtbase5-dev" {>= "5.15.2~"}
+  "deb-qtbase5-private-dev" {>= "5.15.2~"}
+  "deb-qtdeclarative5-dev" {>= "5.15.2~"}
+  "deb-qtdeclarative5-private-dev" {>= "5.15.2~"}
+]
+extra-source "libkpimitinerary-dev_22.12.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kitinerary/libkpimitinerary-dev_22.12.3-1_amd64.deb"
+}

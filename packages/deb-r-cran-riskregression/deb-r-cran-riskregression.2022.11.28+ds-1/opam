@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-riskregression_2022.11.28+ds-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-riskregression"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgomp1" {>= "4.9"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.2.20221110-1"}
+  "deb-r-cran-cmprsk"
+  "deb-r-cran-data-table" {>= "1.12.2"}
+  "deb-r-cran-doparallel"
+  "deb-r-cran-foreach"
+  "deb-r-cran-ggplot2" {>= "3.1.0"}
+  "deb-r-cran-lattice"
+  "deb-r-cran-lava" {>= "1.6.5"}
+  "deb-r-cran-mets"
+  "deb-r-cran-mvtnorm"
+  "deb-r-cran-plotrix"
+  "deb-r-cran-prodlim" {>= "2018.4.18"}
+  "deb-r-cran-publish"
+  "deb-r-cran-ranger"
+  "deb-r-cran-rcpp"
+  "deb-r-cran-rcpparmadillo"
+  "deb-r-cran-rms" {>= "5.1.3"}
+  "deb-r-cran-survival" {>= "2.44.1"}
+  "deb-r-cran-timereg" {>= "1.9.3"}
+  ("deb-libblas3" | "deb- libblas-so-3")
+]
+extra-source "r-cran-riskregression_2022.11.28+ds-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-riskregression/r-cran-riskregression_2022.11.28+ds-1_amd64.deb"
+}

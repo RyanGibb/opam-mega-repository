@@ -1,0 +1,42 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i bluedevil_4:5.14.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r bluedevil"]
+]
+depends: [
+  "deb-bluez" {>= "5"}
+  "deb-bluez-obexd"
+  "deb-kio"
+  "deb-libc6" {>= "2.14"}
+  "deb-libkf5bluezqt6" {>= "5.13.0"}
+  "deb-libkf5configcore5" {>= "4.98.0"}
+  "deb-libkf5configgui5" {>= "4.97.0"}
+  "deb-libkf5configwidgets5" {>= "4.96.0"}
+  "deb-libkf5coreaddons5" {>= "4.100.0"}
+  "deb-libkf5dbusaddons5" {>= "4.99.0"}
+  "deb-libkf5i18n5" {>= "4.97.0"}
+  "deb-libkf5iconthemes5" {>= "4.96.0"}
+  "deb-libkf5kiocore5" {>= "4.96.0"}
+  "deb-libkf5kiofilewidgets5" {>= "4.96.0"}
+  "deb-libkf5kiowidgets5" {>= "4.96.0"}
+  "deb-libkf5notifications5" {>= "4.96.0"}
+  "deb-libkf5widgetsaddons5" {>= "4.96.0"}
+  "deb-libkf5windowsystem5" {>= "4.96.0"}
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5dbus5" {>= "5.11.0~"}
+  "deb-libqt5gui5" {>= "5.11.0~"}
+  "deb-libqt5qml5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.11.0~"}
+  "deb-libstdc++6" {>= "4.5"}
+  "deb-plasma-framework"
+  "deb-qml-module-org-kde-bluezqt"
+  "deb-qml-module-org-kde-kio"
+  "deb-qml-module-org-kde-kquickcontrolsaddons"
+  "deb-qml-module-qtquick-layouts"
+  "deb-qml-module-qtquick2"
+]
+extra-source "bluedevil_4:5.14.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/bluedevil/bluedevil_5.14.5-1_amd64.deb"
+}

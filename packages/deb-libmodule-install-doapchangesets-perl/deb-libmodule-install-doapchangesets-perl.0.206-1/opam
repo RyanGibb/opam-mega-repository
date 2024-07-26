@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmodule-install-doapchangesets-perl_0.206-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmodule-install-doapchangesets-perl"]
+]
+depends: [
+  "deb-libfile-slurp-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-libmodule-install-perl"
+  "deb-libperl-version-perl"
+  "deb-librdf-query-perl"
+  "deb-librdf-trine-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-perl"
+]
+extra-source "libmodule-install-doapchangesets-perl_0.206-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libm/libmodule-install-doapchangesets-perl/libmodule-install-doapchangesets-perl_0.206-1_all.deb"
+}

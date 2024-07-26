@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-torch_1.7.1-7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-torch"]
+]
+depends: [
+  "deb-libc6" {>= "2.30"}
+  "deb-libdnnl2" {>= "2.0"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgloo0" {>= "0.0~git20200918.3dc0328"}
+  "deb-libgoogle-glog0v5" {>= "0.4.0"}
+  "deb-libonnx1" {>= "1.7.0+dfsg"}
+  "deb-libprotobuf23" {>= "3.12.4"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libtorch1-7" {= "1.7.1-7"}
+  "deb-libunwind8"
+  "deb-python3" {< "3.10"}
+  "deb-python3" {>= "3.9~"}
+  "deb-python3-9-any"
+  "deb-python3-any"
+  "deb-python3-future"
+  "deb-python3-numpy"
+  "deb-python3-numpy" {>= "1-1.16.0~rc1"}
+  "deb-python3-pkg-resources"
+  "deb-python3-requests"
+  "deb-python3-six"
+  "deb-python3-typing-extensions"
+  "deb-python3-yaml"
+]
+extra-source "python3-torch_1.7.1-7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pytorch/python3-torch_1.7.1-7_amd64.deb"
+}

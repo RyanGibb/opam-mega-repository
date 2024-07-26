@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add pspg-3.1.5-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del pspg"]
+]
+depends: [
+  "apk-musl" {= "1.2.2-r2"}
+  "apk-ncurses-libs" {= "6.2_p20210109-r1"}
+  "apk-readline" {= "8.1.0-r0"}
+]
+extra-source "pspg-3.1.5-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/pspg-3.1.5-r0.apk"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ognibuild_0.0.18+git20230208.1.9b890a2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ognibuild"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-apt"
+  "deb-python3-breezy"
+  "deb-python3-buildlog-consultant" {>= "0.0.4"}
+  "deb-python3-lz4"
+  "deb-python3-pkg-resources"
+  "deb-python3-requirement-parser"
+  "deb-python3-ruamel-yaml"
+  "deb-python3-toml"
+]
+extra-source "ognibuild_0.0.18+git20230208.1.9b890a2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/ognibuild/ognibuild_0.0.18+git20230208.1.9b890a2-1_all.deb"
+}

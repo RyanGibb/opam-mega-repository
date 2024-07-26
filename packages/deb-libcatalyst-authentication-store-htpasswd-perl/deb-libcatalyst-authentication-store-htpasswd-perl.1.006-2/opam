@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcatalyst-authentication-store-htpasswd-perl_1.006-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcatalyst-authentication-store-htpasswd-perl"]
+]
+depends: [
+  "deb-libauthen-htpasswd-perl"
+  "deb-libcatalyst-plugin-authentication-perl"
+  "deb-libclass-accessor-perl"
+  "deb-libcrypt-passwdmd5-perl"
+  "deb-perl"
+]
+extra-source "libcatalyst-authentication-store-htpasswd-perl_1.006-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libcatalyst-authentication-store-htpasswd-perl/libcatalyst-authentication-store-htpasswd-perl_1.006-2_all.deb"
+}

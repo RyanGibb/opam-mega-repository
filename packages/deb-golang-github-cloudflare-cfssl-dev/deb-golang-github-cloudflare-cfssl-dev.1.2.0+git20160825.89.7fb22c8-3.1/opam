@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-cloudflare-cfssl-dev_1.2.0+git20160825.89.7fb22c8-3.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-cloudflare-cfssl-dev"]
+]
+depends: [
+  "deb-golang-any"
+  "deb-golang-github-cloudflare-go-metrics-dev"
+  "deb-golang-github-cloudflare-redoctober-dev"
+  "deb-golang-github-geertjohan-go-rice-dev"
+  "deb-golang-github-google-certificate-transparency-dev"
+  "deb-golang-github-jmhodges-clock-dev"
+  "deb-golang-github-jmoiron-sqlx-dev"
+  "deb-golang-github-juju-ratelimit-dev"
+  "deb-golang-github-kisielk-sqlstruct-dev"
+  "deb-golang-github-kisom-goutils-dev"
+  "deb-golang-github-mattn-go-sqlite3-dev"
+]
+extra-source "golang-github-cloudflare-cfssl-dev_1.2.0+git20160825.89.7fb22c8-3.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-cloudflare-cfssl/golang-github-cloudflare-cfssl-dev_1.2.0+git20160825.89.7fb22c8-3.1_all.deb"
+}

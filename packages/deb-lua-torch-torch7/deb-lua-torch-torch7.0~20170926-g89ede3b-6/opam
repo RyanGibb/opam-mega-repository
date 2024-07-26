@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lua-torch-torch7_0~20170926-g89ede3b-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lua-torch-torch7"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libtorch-luat" {>= "0~20161013-g4f7843e"}
+  "deb-libtorch-th" {>= "0~20170720-gaed3171"}
+  "deb-lua-torch-cwrap"
+  "deb-lua-torch-paths"
+  ("deb-luajit" | "deb- lua5-1")
+]
+extra-source "lua-torch-torch7_0~20170926-g89ede3b-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lua-torch-torch7/lua-torch-torch7_0~20170926-g89ede3b-6_amd64.deb"
+}

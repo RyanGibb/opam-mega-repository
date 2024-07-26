@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xfce4-sntray-plugin_0.4.13.1-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xfce4-sntray-plugin"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libcairo2" {>= "1.6.0"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.50"}
+  "deb-libgtk-3-0" {>= "3.22"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libxfce4panel-2-0-4" {>= "4.11.0"}
+  "deb-libxfconf-0-3" {>= "4.6.0"}
+  "deb-xfce4-sntray-plugin-common"
+]
+extra-source "xfce4-sntray-plugin_0.4.13.1-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xfce4-sntray-plugin/xfce4-sntray-plugin_0.4.13.1-2+b1_amd64.deb"
+}

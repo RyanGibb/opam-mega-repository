@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add pinentry-curses-ss-1.2.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del pinentry-curses-ss"]
+]
+depends: [
+  "apk-busybox" {= "1.35.0-r18"}
+  "apk-glib" {= "2.72.4-r0"}
+  "apk-libassuan" {= "2.5.6-r0"}
+  "apk-libcap" {= "2.64-r1"}
+  "apk-libgpg-error" {= "1.45-r0"}
+  "apk-libsecret" {= "0.20.5-r0"}
+  "apk-musl" {= "1.2.3-r3"}
+  "apk-ncurses-libs" {= "6.3_p20220521-r1"}
+]
+extra-source "pinentry-curses-ss-1.2.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/pinentry-curses-ss-1.2.0-r0.apk"
+}

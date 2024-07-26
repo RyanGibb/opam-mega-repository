@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i thonny_3.1.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r thonny"]
+]
+depends: [
+  "deb-mypy"
+  "deb-pylint3"
+  "deb-python3-any"
+  "deb-python3-astroid"
+  "deb-python3-asttokens"
+  "deb-python3-docutils"
+  "deb-python3-jedi" {>= "0.10.1~"}
+  "deb-python3-mypy"
+  "deb-python3-pip"
+  "deb-python3-pkg-resources"
+  "deb-python3-pyperclip"
+  "deb-python3-serial"
+  "deb-python3-tk"
+  "deb-python3-venv"
+]
+extra-source "thonny_3.1.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/thonny/thonny_3.1.2-1_all.deb"
+}

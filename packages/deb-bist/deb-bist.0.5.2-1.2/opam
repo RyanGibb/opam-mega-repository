@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i bist_0.5.2-1.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r bist"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libcairo2" {>= "1.6.0"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libfltk-images1-3"
+  "deb-libfltk1-3" {>= "1.3.4"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libgsl25" {>= "2.6"}
+  "deb-libncurses6" {>= "6"}
+  "deb-libpango-1-0-0" {>= "1.18.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-libxpm4"
+]
+extra-source "bist_0.5.2-1.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/bist/bist_0.5.2-1.2_amd64.deb"
+}

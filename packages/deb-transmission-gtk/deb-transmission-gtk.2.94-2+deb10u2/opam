@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i transmission-gtk_2.94-2+deb10u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r transmission-gtk"]
+]
+depends: [
+  "deb-libayatana-appindicator3-1" {>= "0.4.90"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcurl4" {>= "7.18.0"}
+  "deb-libevent-2-1-6" {>= "2.1.8-stable"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.25.2"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libgtk-3-0" {>= "3.3.16"}
+  "deb-libminiupnpc17" {>= "1.9.20140610"}
+  "deb-libnatpmp1" {>= "20150609"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-transmission-common" {= "2.94-2+deb10u2"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "transmission-gtk_2.94-2+deb10u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/transmission/transmission-gtk_2.94-2+deb10u2_amd64.deb"
+}

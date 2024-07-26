@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add hunspell-1.7.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del hunspell"]
+]
+depends: [
+  "apk-libgcc" {= "11.2.1_git20220219-r2"}
+  "apk-libhunspell" {= "1.7.0-r1"}
+  "apk-libintl" {= "0.21-r2"}
+  "apk-libstdc++" {= "11.2.1_git20220219-r2"}
+  "apk-musl" {= "1.2.3-r3"}
+  "apk-ncurses-libs" {= "6.3_p20220521-r1"}
+  "apk-readline" {= "8.1.2-r0"}
+]
+extra-source "hunspell-1.7.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/hunspell-1.7.0-r1.apk"
+}

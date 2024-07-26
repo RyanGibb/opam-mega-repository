@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librdf-generator-http-perl_0.003-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librdf-generator-http-perl"]
+]
+depends: [
+  "deb-libhttp-message-perl"
+  "deb-libmoo-perl"
+  "deb-librdf-trine-perl"
+  "deb-libtype-tiny-perl"
+  "deb-liburi-namespacemap-perl"
+  "deb-liburi-perl"
+  "deb-perl"
+]
+extra-source "librdf-generator-http-perl_0.003-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libr/librdf-generator-http-perl/librdf-generator-http-perl_0.003-2_all.deb"
+}

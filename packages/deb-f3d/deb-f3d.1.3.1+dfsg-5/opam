@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i f3d_1.3.1+dfsg-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r f3d"]
+]
+depends: [
+  "deb-libassimp5" {>= "5.2.5~ds0"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglew2-2" {>= "2.2.0-4+b1"}
+  "deb-libocct-data-exchange-7-6" {>= "7.6.3+dfsg1"}
+  "deb-libocct-foundation-7-6" {>= "7.6.3+dfsg1"}
+  "deb-libocct-modeling-algorithms-7-6" {>= "7.6.3+dfsg1"}
+  "deb-libocct-modeling-data-7-6" {>= "7.6.3+dfsg1"}
+  "deb-libocct-ocaf-7-6" {>= "7.6.3+dfsg1"}
+  "deb-libopengl0"
+  "deb-libstdc++6" {>= "11"}
+  "deb-libvtk9-1" {>= "9.1.0+really9.1.0+dfsg2"}
+]
+extra-source "f3d_1.3.1+dfsg-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/f3d/f3d_1.3.1+dfsg-5_amd64.deb"
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcgi-application-plugin-viewcode-perl_1.02-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcgi-application-plugin-viewcode-perl"]
+]
+depends: [
+  "deb-libcgi-application-perl"
+  "deb-libpod-xhtml-perl"
+  "deb-libsyntax-highlight-perl-improved-perl"
+  "deb-perl-any"
+]
+extra-source "libcgi-application-plugin-viewcode-perl_1.02-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libcgi-application-plugin-viewcode-perl/libcgi-application-plugin-viewcode-perl_1.02-5_all.deb"
+}

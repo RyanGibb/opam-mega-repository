@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i debci_2.0_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r debci"]
+]
+depends: [
+  "deb-adduser"
+  "deb-amqp-tools"
+  "deb-bsdmainutils"
+  "deb-curl"
+  "deb-dctrl-tools"
+  "deb-debootstrap"
+  "deb-devscripts"
+  "deb-fonts-font-awesome" {>= "4.0.3~"}
+  "deb-jq"
+  "deb-libjs-bootstrap"
+  "deb-libjs-jquery"
+  "deb-libjs-jquery-flot"
+  "deb-moreutils"
+  "deb-patchutils"
+  "deb-rsync"
+  "deb-ruby"
+  "deb-ruby-activerecord"
+  "deb-ruby-bunny"
+  "deb-ruby-minitar"
+  "deb-ruby-sinatra"
+  "deb-ruby-sinatra-contrib"
+  "deb-ruby-thor"
+  "deb-sudo"
+  ("deb-ruby-sqlite3" | "deb- ruby-pg")
+]
+extra-source "debci_2.0_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/debci/debci_2.0_all.deb"
+}

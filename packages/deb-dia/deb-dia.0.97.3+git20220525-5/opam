@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dia_0.97.3+git20220525-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dia"]
+]
+depends: [
+  "deb-dia-common" {= "0.97.3+git20220525-5"}
+  "deb-gir1-2-gtk-2-0"
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.12.0"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.30.1"}
+  "deb-libglib2-0-0" {>= "2.57.2"}
+  "deb-libgraphene-1-0-0" {>= "1.9.4"}
+  "deb-libgtk2-0-0" {>= "2.24.0"}
+  "deb-libpango-1-0-0" {>= "1.22.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpoppler126" {>= "22.12.0"}
+  "deb-libpython3-11" {>= "3.11.0"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "dia_0.97.3+git20220525-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dia/dia_0.97.3+git20220525-5_amd64.deb"
+}

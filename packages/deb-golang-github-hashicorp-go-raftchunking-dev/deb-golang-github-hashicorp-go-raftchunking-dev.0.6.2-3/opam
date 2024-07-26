@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-hashicorp-go-raftchunking-dev_0.6.2-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-hashicorp-go-raftchunking-dev"]
+]
+depends: [
+  "deb-golang-github-go-test-deep-dev"
+  "deb-golang-github-hashicorp-errwrap-dev"
+  "deb-golang-github-hashicorp-raft-dev" {>= "1.1.1~"}
+  "deb-golang-github-mitchellh-copystructure-dev"
+  "deb-golang-goprotobuf-dev" {>= "1.3.2~"}
+]
+extra-source "golang-github-hashicorp-go-raftchunking-dev_0.6.2-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-hashicorp-go-raftchunking/golang-github-hashicorp-go-raftchunking-dev_0.6.2-3_all.deb"
+}

@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sra-toolkit_3.0.3+dfsg-6~deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sra-toolkit"]
+]
+depends: [
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libhdf5-103-1"
+  "deb-libmagic1" {>= "5.12"}
+  "deb-libncbi-vdb3" {>= "3.0.2+dfsg"}
+  "deb-libncbi-wvdb3" {>= "3.0.2+dfsg"}
+  "deb-libre2-9" {>= "20201101+dfsg"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libstdc++6" {>= "12"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-zlib1g" {>= "1-1.2.2"}
+]
+extra-source "sra-toolkit_3.0.3+dfsg-6~deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sra-sdk/sra-toolkit_3.0.3+dfsg-6~deb12u1_amd64.deb"
+}

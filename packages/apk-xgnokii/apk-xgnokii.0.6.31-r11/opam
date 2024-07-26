@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xgnokii-0.6.31-r11.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xgnokii"]
+]
+depends: [
+  "apk-glib" {= "2.66.8-r0"}
+  "apk-gnokii-libs" {= "0.6.31-r11"}
+  "apk-gtk+2-0" {= "2.24.33-r0"}
+  "apk-libintl" {= "0.20.2-r2"}
+  "apk-musl" {= "1.2.2-r2"}
+]
+extra-source "xgnokii-0.6.31-r11.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/xgnokii-0.6.31-r11.apk"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpandoc-elements-perl_0.38-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpandoc-elements-perl"]
+]
+depends: [
+  "deb-libhash-multivalue-perl"
+  "deb-libipc-run3-perl"
+  "deb-libjson-perl"
+  "deb-libpandoc-wrapper-perl" {>= "0.9.1-5"}
+  "deb-perl-any"
+]
+extra-source "libpandoc-elements-perl_0.38-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libp/libpandoc-elements-perl/libpandoc-elements-perl_0.38-6_all.deb"
+}

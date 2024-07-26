@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgnuradio-wavelet3.8.2_3.8.2.0-14_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgnuradio-wavelet3.8.2"]
+]
+depends: [
+  "deb-libboost-atomic1-74-0" {>= "1.74.0"}
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0"}
+  "deb-libboost-program-options1-74-0" {>= "1.74.0"}
+  "deb-libboost-regex1-74-0"
+  "deb-libboost-system1-74-0" {>= "1.74.0"}
+  "deb-libboost-thread1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgmp10"
+  "deb-libgmpxx4ldbl" {>= "2-6.2.1+dfsg"}
+  "deb-libgnuradio-blocks3-8-2" {>= "3.8.2.0"}
+  "deb-libgnuradio-pmt3-8-2" {>= "3.8.2.0"}
+  "deb-libgnuradio-runtime3-8-2" {>= "3.8.2.0"}
+  "deb-libgsl25" {>= "2.6"}
+  "deb-libgslcblas0" {>= "2.6"}
+  "deb-liblog4cpp5v5" {>= "1.1.3"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libthrift-0-13-0" {>= "0.13.0-1~"}
+  "deb-libvolk2-4" {>= "2.4.1"}
+]
+extra-source "libgnuradio-wavelet3.8.2_3.8.2.0-14_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnuradio/libgnuradio-wavelet3.8.2_3.8.2.0-14_amd64.deb"
+}

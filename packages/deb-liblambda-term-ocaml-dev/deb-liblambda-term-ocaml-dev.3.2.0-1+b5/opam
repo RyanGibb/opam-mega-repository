@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i liblambda-term-ocaml-dev_3.2.0-1+b5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r liblambda-term-ocaml-dev"]
+]
+depends: [
+  "deb-libcamomile-ocaml-dev"
+  "deb-liblambda-term-ocaml"
+  "deb-liblwt-log-ocaml-dev"
+  "deb-liblwt-ocaml-dev"
+  "deb-libmew-ocaml-dev"
+  "deb-libmew-vi-ocaml-dev"
+  "deb-libreact-ocaml-dev"
+  "deb-libresult-ocaml-dev"
+  "deb-libtrie-ocaml-dev"
+  "deb-libzed-ocaml-dev"
+  "deb-ocaml"
+]
+extra-source "liblambda-term-ocaml-dev_3.2.0-1+b5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lambda-term/liblambda-term-ocaml-dev_3.2.0-1+b5_amd64.deb"
+}

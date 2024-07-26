@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i grub-emu_2.06-13+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r grub-emu"]
+]
+depends: [
+  "deb-grub-common" {= "2.06-13+deb12u1"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libdevmapper1-02-1" {>= "2-1.02.36"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libsdl1-2-compat-shim"
+]
+extra-source "grub-emu_2.06-13+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/grub2/grub-emu_2.06-13+deb12u1_amd64.deb"
+}

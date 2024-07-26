@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i luarocks_2.4.2+dfsg-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r luarocks"]
+]
+depends: [
+  "deb-lua-any"
+  "deb-unzip"
+  "deb-wget"
+  "deb-zip"
+  ("deb-liblua5-1-dev" | "deb- liblua5-2-dev" | "deb- liblua5-3-dev")
+  ("deb-lua5-1" | "deb- lua5-2" | "deb- lua5-3")
+]
+extra-source "luarocks_2.4.2+dfsg-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/luarocks/luarocks_2.4.2+dfsg-1.1_all.deb"
+}

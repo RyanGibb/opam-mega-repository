@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-pcl_0.3.0~rc1+dfsg-14+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-pcl"]
+]
+depends: [
+  "deb-cython3"
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libpcl-common1-13" {>= "1.13.0+dfsg"}
+  "deb-libpcl-features1-13" {>= "1.13.0+dfsg"}
+  "deb-libpcl-filters1-13" {>= "1.13.0+dfsg"}
+  "deb-libpcl-io1-13" {>= "1.13.0+dfsg"}
+  "deb-libpcl-kdtree1-13" {>= "1.13.0+dfsg"}
+  "deb-libpcl-octree1-13" {>= "1.13.0+dfsg"}
+  "deb-libpcl-sample-consensus1-13" {>= "1.13.0+dfsg"}
+  "deb-libpcl-search1-13" {>= "1.13.0+dfsg"}
+  "deb-libpcl-segmentation1-13" {>= "1.13.0+dfsg"}
+  "deb-libpcl-surface1-13" {>= "1.13.0+dfsg"}
+  "deb-libpcl-visualization1-13" {>= "1.13.0+dfsg"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-any"
+  "deb-python3-filelock"
+  "deb-python3-nose"
+  "deb-python3-numpy"
+  "deb-python3-numpy" {>= "1-1.22.0"}
+]
+extra-source "python3-pcl_0.3.0~rc1+dfsg-14+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-pcl/python3-pcl_0.3.0~rc1+dfsg-14+b2_amd64.deb"
+}

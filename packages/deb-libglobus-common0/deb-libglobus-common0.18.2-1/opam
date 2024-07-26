@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libglobus-common0_18.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libglobus-common0"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libltdl7" {>= "2.4.6"}
+  "deb-perl"
+]
+conflicts: [
+  "deb-globus-rls-client-progs" {< "6"}
+  "deb-globus-rls-server" {< "5"}
+  "deb-libglobus-libtool" {< "2"}
+  "deb-libglobus-libxml2" {< "2"}
+  "deb-libglobus-openssl" {< "6"}
+  "deb-libglobus-rls-client-doc" {< "6"}
+  "deb-libglobus-rls-client5" {< "6"}
+]
+extra-source "libglobus-common0_18.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/globus-common/libglobus-common0_18.2-1_amd64.deb"
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-average-dev_0.13.1-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-average-dev"]
+]
+depends: [
+  "deb-librust-easy-cast-0-4+libm-dev"
+  "deb-librust-easy-cast-0-4+std-dev"
+  "deb-librust-easy-cast-0-4-dev"
+  "deb-librust-float-ord-0-3+default-dev"
+  "deb-librust-num-traits-0-2+libm-dev"
+  "deb-librust-num-traits-0-2+std-dev"
+  "deb-librust-num-traits-0-2-dev"
+  "deb-librust-rayon-dev"
+  "deb-librust-serde-1+derive-dev"
+  "deb-librust-serde-big-array-0-4+default-dev"
+  "deb-librust-serde-derive-1+default-dev"
+]
+extra-source "librust-average-dev_0.13.1-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-average/librust-average-dev_0.13.1-5_amd64.deb"
+}

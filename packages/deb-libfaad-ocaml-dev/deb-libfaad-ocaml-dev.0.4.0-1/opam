@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libfaad-ocaml-dev_0.4.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libfaad-ocaml-dev"]
+]
+depends: [
+  "deb-libfaad-dev"
+  "deb-libfaad-ocaml"
+  "deb-libfaad-ocaml" {= "0.4.0-1"}
+  "deb-ocaml-findlib"
+  "deb-ocaml-nox"
+]
+extra-source "libfaad-ocaml-dev_0.4.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/ocaml-faad/libfaad-ocaml-dev_0.4.0-1_amd64.deb"
+}

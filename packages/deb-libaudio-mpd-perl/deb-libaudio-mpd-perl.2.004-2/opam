@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libaudio-mpd-perl_2.004-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libaudio-mpd-perl"]
+]
+depends: [
+  "deb-libaudio-mpd-common-perl" {>= "2.001"}
+  "deb-libgetopt-euclid-perl"
+  "deb-liblist-allutils-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-libmoose-perl"
+  "deb-libmoosex-has-sugar-perl"
+  "deb-libmoosex-semiaffordanceaccessor-perl"
+  "deb-libproc-daemon-perl"
+  "deb-perl"
+  ("deb-perl" {>= "5.19.8"} | "deb- libio-socket-ip-perl")
+]
+extra-source "libaudio-mpd-perl_2.004-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/liba/libaudio-mpd-perl/libaudio-mpd-perl_2.004-2_all.deb"
+}

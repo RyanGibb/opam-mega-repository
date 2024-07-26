@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add subversion-1.14.2-r10.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del subversion"]
+]
+depends: [
+  "apk-apr" {= "1.7.4-r0"}
+  "apk-apr-util" {= "1.6.3-r1"}
+  "apk-musl" {= "1.2.4-r2"}
+  "apk-subversion-libs" {= "1.14.2-r10"}
+  ("apk-busybox-binsh" {= "1.36.1-r7"} | "apk-dash-binsh" {= "0.5.12-r2"} | "apk-yash-binsh" {= "2.54-r3"})
+]
+extra-source "subversion-1.14.2-r10.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/subversion-1.14.2-r10.apk"
+}

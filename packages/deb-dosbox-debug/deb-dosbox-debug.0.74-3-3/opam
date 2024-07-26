@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dosbox-debug_0.74-3-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dosbox-debug"]
+]
+depends: [
+  "deb-dosbox" {= "0.74-3-3"}
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgl1"
+  "deb-libncurses6" {>= "6"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libsdl-net1-2"
+  "deb-libsdl-sound1-2" {>= "1.0.1"}
+  "deb-libsdl1-2debian" {>= "1.2.11"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-libx11-6"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "dosbox-debug_0.74-3-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dosbox/dosbox-debug_0.74-3-3_amd64.deb"
+}

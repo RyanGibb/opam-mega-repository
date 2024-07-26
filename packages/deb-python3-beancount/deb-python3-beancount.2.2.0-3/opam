@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-beancount_2.2.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-beancount"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-python3" {< "3.8"}
+  "deb-python3" {>= "3.7~"}
+  "deb-python3-any"
+  "deb-python3-bottle"
+  "deb-python3-bs4"
+  "deb-python3-chardet"
+  "deb-python3-dateutil"
+  "deb-python3-googleapi"
+  "deb-python3-lxml"
+  "deb-python3-magic"
+  "deb-python3-ply"
+  "deb-python3-pytest"
+  "deb-python3-requests"
+]
+extra-source "python3-beancount_2.2.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/beancount/python3-beancount_2.2.0-3_amd64.deb"
+}

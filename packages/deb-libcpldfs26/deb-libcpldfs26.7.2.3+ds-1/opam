@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcpldfs26_7.2.3+ds-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcpldfs26"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libcext0" {>= "6.6"}
+  "deb-libcfitsio10" {>= "4.2.0~"}
+  "deb-libcplcore26" {>= "7.2.2"}
+  "deb-libcplui26" {>= "6.4"}
+]
+extra-source "libcpldfs26_7.2.3+ds-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cpl/libcpldfs26_7.2.3+ds-1_amd64.deb"
+}

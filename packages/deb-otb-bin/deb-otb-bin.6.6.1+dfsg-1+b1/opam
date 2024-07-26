@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i otb-bin_6.6.1+dfsg-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r otb-bin"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libinsighttoolkit4-12" {>= "4.12.0-dfsg1-2~"}
+  "deb-libotb-apps" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbcommandline-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbcommandlineparser-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbcommon-6-6-1" {>= "6.6.1"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtinyxml2-6-2v5"
+]
+extra-source "otb-bin_6.6.1+dfsg-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/otb/otb-bin_6.6.1+dfsg-1+b1_amd64.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-lmertest_3.1-3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-lmertest"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.3-1"}
+  "deb-r-cran-ggplot2"
+  "deb-r-cran-lme4" {>= "1.1-10"}
+  "deb-r-cran-mass"
+  "deb-r-cran-numderiv"
+]
+extra-source "r-cran-lmertest_3.1-3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-lmertest/r-cran-lmertest_3.1-3-1_all.deb"
+}

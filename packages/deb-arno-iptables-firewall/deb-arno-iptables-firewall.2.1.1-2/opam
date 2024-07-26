@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i arno-iptables-firewall_2.1.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r arno-iptables-firewall"]
+]
+depends: [
+  "deb-gawk"
+  "deb-iproute2"
+  "deb-iptables"
+  "deb-kmod"
+  "deb-procps"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+conflicts: [
+  "deb-iptables-persistent"
+]
+extra-source "arno-iptables-firewall_2.1.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/arno-iptables-firewall/arno-iptables-firewall_2.1.1-2_all.deb"
+}

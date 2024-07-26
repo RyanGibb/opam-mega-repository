@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qbs_1.18.0-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qbs"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqbscore1-18" {>= "1.18.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5network5" {>= "5.15.1"}
+  "deb-libqt5widgets5" {>= "5.14.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-qbs-common" {= "1.18.0-5"}
+  ("deb-libqt5gui5" {>= "5.14.0"} | "deb- libqt5gui5-gles" {>= "5.14.0"})
+]
+extra-source "qbs_1.18.0-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qbs/qbs_1.18.0-5_amd64.deb"
+}

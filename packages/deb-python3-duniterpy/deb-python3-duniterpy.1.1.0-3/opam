@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-duniterpy_1.1.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-duniterpy"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-attr" {>= "21.2.0"}
+  "deb-python3-base58"
+  "deb-python3-graphql-core"
+  "deb-python3-jsonschema" {>= "3.2.0"}
+  "deb-python3-libnacl" {>= "1.7.2"}
+  "deb-python3-mnemonic"
+  "deb-python3-pyaes"
+  "deb-python3-pypeg2"
+  "deb-python3-websocket"
+]
+extra-source "python3-duniterpy_1.1.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-duniterpy/python3-duniterpy_1.1.0-3_all.deb"
+}

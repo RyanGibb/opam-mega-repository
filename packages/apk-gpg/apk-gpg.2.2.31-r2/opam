@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gpg-2.2.31-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gpg"]
+]
+depends: [
+  "apk-gnupg-gpgconf" {= "2.2.31-r2"}
+  "apk-libassuan" {= "2.5.6-r0"}
+  "apk-libbz2" {= "1.0.8-r1"}
+  "apk-libgcrypt" {= "1.9.4-r0"}
+  "apk-libgpg-error" {= "1.42-r1"}
+  "apk-musl" {= "1.2.2-r9"}
+  "apk-sqlite-libs" {= "3.36.0-r0"}
+  "apk-zlib" {= "1.2.12-r3"}
+]
+conflicts: [
+  "gnupg1"
+]
+extra-source "gpg-2.2.31-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/gpg-2.2.31-r2.apk"
+}

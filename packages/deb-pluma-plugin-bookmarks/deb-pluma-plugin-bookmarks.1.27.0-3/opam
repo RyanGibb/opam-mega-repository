@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pluma-plugin-bookmarks_1.27.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pluma-plugin-bookmarks"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libgtk-3-0" {>= "3.0.0"}
+  "deb-libgtksourceview-4-0" {>= "2.91.4"}
+  "deb-libpeas-1-0-0" {>= "1.14.1"}
+  "deb-pluma"
+  "deb-pluma-plugins-common"
+]
+extra-source "pluma-plugin-bookmarks_1.27.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pluma-plugins/pluma-plugin-bookmarks_1.27.0-3_amd64.deb"
+}

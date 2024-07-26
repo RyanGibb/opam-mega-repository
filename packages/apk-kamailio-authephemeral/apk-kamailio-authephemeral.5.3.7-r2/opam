@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add kamailio-authephemeral-5.3.7-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del kamailio-authephemeral"]
+]
+depends: [
+  "apk-kamailio" {= "5.3.7-r2"}
+  "apk-libcrypto1-1" {= "1.1.1o-r0"}
+  "apk-musl" {= "1.1.24-r10"}
+]
+extra-source "kamailio-authephemeral-5.3.7-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/kamailio-authephemeral-5.3.7-r2.apk"
+}

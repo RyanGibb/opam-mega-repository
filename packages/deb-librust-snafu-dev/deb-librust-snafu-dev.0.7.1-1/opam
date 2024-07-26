@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-snafu-dev_0.7.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-snafu-dev"]
+]
+depends: [
+  "deb-librust-backtrace-0-3+default-dev"
+  "deb-librust-doc-comment-dev"
+  "deb-librust-futures-0-3-dev"
+  "deb-librust-futures-core-0-3-dev"
+  "deb-librust-pin-project-1-dev"
+  "deb-librust-snafu-derive-dev"
+]
+extra-source "librust-snafu-dev_0.7.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-snafu/librust-snafu-dev_0.7.1-1_amd64.deb"
+}

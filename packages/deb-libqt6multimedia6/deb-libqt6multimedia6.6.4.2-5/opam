@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libqt6multimedia6_6.4.2-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libqt6multimedia6"]
+]
+depends: [
+  "deb-libavcodec-extra59"
+  "deb-libavformat-extra59"
+  "deb-libavutil57" {>= "7-5.1"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libegl1"
+  "deb-libgcc-s1" {>= "3.4"}
+  "deb-libglib2-0-0" {>= "2.31.8"}
+  "deb-libgstreamer-gl1-0-0" {>= "1.14.0"}
+  "deb-libgstreamer-plugins-base1-0-0" {>= "1.2.0"}
+  "deb-libgstreamer1-0-0" {>= "1.20.0"}
+  "deb-libpulse0" {>= "5.0"}
+  "deb-libqt6core6"
+  "deb-libqt6core6" {>= "6.4.2+dfsg~"}
+  "deb-libqt6gui6" {>= "6.4.2+dfsg~"}
+  "deb-libqt6network6" {>= "6.4.2+dfsg~"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libswresample4" {>= "7-5.1"}
+  "deb-libswscale6" {>= "7-5.0"}
+]
+extra-source "libqt6multimedia6_6.4.2-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qt6-multimedia/libqt6multimedia6_6.4.2-5_amd64.deb"
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-conting_1.7-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-conting"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.0-3"}
+  "deb-r-cran-bms"
+  "deb-r-cran-coda"
+  "deb-r-cran-gtools"
+  "deb-r-cran-mvtnorm"
+  "deb-r-cran-tseries"
+]
+extra-source "r-cran-conting_1.7-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-conting/r-cran-conting_1.7-2_all.deb"
+}

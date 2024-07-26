@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i systemd-timesyncd_252.26-1~deb12u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r systemd-timesyncd"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libsystemd-shared" {= "252.26-1~deb12u2"}
+  "deb-systemd"
+]
+conflicts: [
+  "deb-time-daemon"
+]
+extra-source "systemd-timesyncd_252.26-1~deb12u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/systemd/systemd-timesyncd_252.26-1~deb12u2_amd64.deb"
+}

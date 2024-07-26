@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i minetest-server_0.4.17.1+repack-1+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r minetest-server"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libc6" {>= "2.27"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgmp10"
+  "deb-libjsoncpp1" {>= "1.7.4"}
+  "deb-libleveldb1d"
+  "deb-libluajit-5-1-2" {>= "2.0.4+dfsg"}
+  "deb-libncursesw6" {>= "6"}
+  "deb-libpq5" {>= "9.1~"}
+  "deb-libsqlite3-0" {>= "3.5.9"}
+  "deb-libstdc++6" {>= "6"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-lsb-base" {>= "3.0-6"}
+  "deb-minetest-data" {= "0.4.17.1+repack-1+deb10u1"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "minetest-server_0.4.17.1+repack-1+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/minetest/minetest-server_0.4.17.1+repack-1+deb10u1_amd64.deb"
+}

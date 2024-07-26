@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fcitx5-module-chttrans_5.0.4-1+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fcitx5-module-chttrans"]
+]
+depends: [
+  "deb-fcitx5-chinese-addons-data"
+  "deb-libboost-iostreams1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libfcitx5config6" {>= "5.0.5"}
+  "deb-libfcitx5core7" {>= "5.0.5"}
+  "deb-libfcitx5utils2" {>= "5.0.5"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libopencc1-1" {>= "1.1.1+git20200624+ds2"}
+  "deb-libstdc++6" {>= "5.2"}
+]
+extra-source "fcitx5-module-chttrans_5.0.4-1+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fcitx5-chinese-addons/fcitx5-module-chttrans_5.0.4-1+deb11u1_amd64.deb"
+}

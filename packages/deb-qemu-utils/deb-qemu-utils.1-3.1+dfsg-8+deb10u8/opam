@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qemu-utils_1:3.1+dfsg-8+deb10u8_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qemu-utils"]
+]
+depends: [
+  "deb-libaio1" {>= "0.3.93"}
+  "deb-libc6" {>= "2.28"}
+  "deb-libgcc1" {>= "1-3.4"}
+  "deb-libglib2-0-0" {>= "2.37.1"}
+  "deb-libgnutls30" {>= "3.6.6"}
+  "deb-libnettle6"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "qemu-utils_1:3.1+dfsg-8+deb10u8_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-utils_3.1+dfsg-8+deb10u8_amd64.deb"
+}

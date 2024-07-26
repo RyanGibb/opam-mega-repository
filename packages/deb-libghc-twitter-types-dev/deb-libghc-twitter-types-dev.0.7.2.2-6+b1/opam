@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-twitter-types-dev_0.7.2.2-6+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-twitter-types-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-aeson-dev"
+  "deb-libghc-unordered-containers-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-twitter-types-dev_0.7.2.2-6+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-twitter-types/libghc-twitter-types-dev_0.7.2.2-6+b1_amd64.deb"
+}

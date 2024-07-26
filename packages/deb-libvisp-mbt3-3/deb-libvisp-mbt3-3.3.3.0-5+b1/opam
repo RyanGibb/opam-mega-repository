@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libvisp-mbt3.3_3.3.0-5+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libvisp-mbt3.3"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libcoin80c" {>= "4.0.0+ds"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libogre-1-9-0v5" {>= "1.9.0+dfsg1-9~"}
+  "deb-libopencv-core4-5" {>= "4.5.0+dfsg"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libvisp-ar3-3" {= "3.3.0-5+b1"}
+  "deb-libvisp-core3-3" {>= "3.3.0"}
+  "deb-libvisp-gui3-3" {= "3.3.0-5+b1"}
+  "deb-libvisp-io3-3" {>= "3.3.0"}
+  "deb-libvisp-klt3-3" {= "3.3.0-5+b1"}
+  "deb-libvisp-me3-3" {= "3.3.0-5+b1"}
+  "deb-libvisp-vision3-3" {= "3.3.0-5+b1"}
+  "deb-libvisp-visual-features3-3" {>= "3.3.0"}
+]
+extra-source "libvisp-mbt3.3_3.3.0-5+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/visp/libvisp-mbt3.3_3.3.0-5+b1_amd64.deb"
+}

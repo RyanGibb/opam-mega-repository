@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xqf_1.0.6-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xqf"]
+]
+depends: [
+  "deb-libc6" {>= "2.33"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libgdk-pixbuf-xlib-2-0-0" {>= "2.22.0"}
+  "deb-libgeoip1" {>= "1.6.12"}
+  "deb-libglib2-0-0" {>= "2.35.9"}
+  "deb-libgtk2-0-0" {>= "2.24.0"}
+  "deb-libreadline8" {>= "6.0"}
+  "deb-libx11-6"
+  "deb-qstat" {>= "2.15"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "xqf_1.0.6-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xqf/xqf_1.0.6-5_amd64.deb"
+}

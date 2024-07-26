@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-pkgdown_2.0.7-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-pkgdown"]
+]
+depends: [
+  "deb-libjs-bootstrap"
+  "deb-libjs-bootswatch"
+  "deb-libjs-jquery"
+  "deb-libjs-mathjax"
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.2.20221110-1"}
+  "deb-r-cran-bslib" {>= "0.3.1"}
+  "deb-r-cran-callr" {>= "3.7.3"}
+  "deb-r-cran-cli"
+  "deb-r-cran-desc"
+  "deb-r-cran-digest"
+  "deb-r-cran-downlit" {>= "0.4.0"}
+  "deb-r-cran-fs" {>= "1.4.0"}
+  "deb-r-cran-httr" {>= "1.4.2"}
+  "deb-r-cran-jsonlite"
+  "deb-r-cran-magrittr"
+  "deb-r-cran-memoise"
+  "deb-r-cran-purrr"
+  "deb-r-cran-ragg"
+  "deb-r-cran-rlang" {>= "1.0.0"}
+  "deb-r-cran-rmarkdown" {>= "2.16+dfsg-1~"}
+  "deb-r-cran-tibble"
+  "deb-r-cran-whisker"
+  "deb-r-cran-withr" {>= "2.4.3"}
+  "deb-r-cran-xml2" {>= "1.3.1"}
+  "deb-r-cran-yaml"
+]
+extra-source "r-cran-pkgdown_2.0.7-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-pkgdown/r-cran-pkgdown_2.0.7-1_all.deb"
+}

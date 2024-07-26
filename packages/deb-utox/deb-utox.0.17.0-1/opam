@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i utox_0.17.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r utox"]
+]
+depends: [
+  "deb-libc6" {>= "2.17"}
+  "deb-libdbus-1-3" {>= "1.9.14"}
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libfreetype6" {>= "2.3.5"}
+  "deb-libminini1" {>= "1.2.a"}
+  "deb-libopenal1" {>= "1.14"}
+  "deb-libqrcodegen1" {>= "1.2.1"}
+  "deb-libsodium23" {>= "0.6.0"}
+  "deb-libstb0" {>= "0.0~git20180212.15.e6afb9c"}
+  "deb-libtoxcore2" {>= "0.2.0"}
+  "deb-libv4lconvert0" {>= "0.5.0"}
+  "deb-libvpx5" {>= "1.6.0"}
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxrender1"
+]
+extra-source "utox_0.17.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/u/utox/utox_0.17.0-1_amd64.deb"
+}

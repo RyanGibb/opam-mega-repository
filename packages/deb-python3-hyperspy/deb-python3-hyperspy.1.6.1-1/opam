@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-hyperspy_1.6.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-hyperspy"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-dask"
+  "deb-python3-dateutil"
+  "deb-python3-dill"
+  "deb-python3-h5py-serial"
+  "deb-python3-imageio"
+  "deb-python3-ipyparallel"
+  "deb-python3-matplotlib"
+  "deb-python3-natsort"
+  "deb-python3-numba"
+  "deb-python3-numexpr"
+  "deb-python3-numpy"
+  "deb-python3-pint"
+  "deb-python3-prettytable"
+  "deb-python3-requests"
+  "deb-python3-scipy"
+  "deb-python3-skimage"
+  "deb-python3-sparse"
+  "deb-python3-sympy"
+  "deb-python3-tifffile"
+  "deb-python3-tqdm"
+  "deb-python3-traits"
+  "deb-python3-yaml"
+]
+extra-source "python3-hyperspy_1.6.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/hyperspy/python3-hyperspy_1.6.1-1_amd64.deb"
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnome-api-docs_1:3.30+1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnome-api-docs"]
+]
+depends: [
+  "deb-gnome-devel-docs"
+  "deb-gstreamer1-0-doc"
+  "deb-libatk1-0-doc"
+  "deb-libclutter-1-0-doc"
+  "deb-libclutter-gtk-1-0-doc"
+  "deb-libcogl-doc"
+  "deb-libgail-3-doc"
+  "deb-libgdk-pixbuf2-0-doc"
+  "deb-libglib2-0-doc"
+  "deb-libgtk-3-doc"
+  "deb-libpango1-0-doc"
+]
+extra-source "gnome-api-docs_1:3.30+1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/meta-gnome3/gnome-api-docs_3.30+1_all.deb"
+}

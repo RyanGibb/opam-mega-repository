@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qasconfig_0.23.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qasconfig"]
+]
+depends: [
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqt5core5a" {>= "5.14.1"}
+  "deb-libqt5widgets5" {>= "5.11.0~rc1"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-qastools-common"
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+]
+extra-source "qasconfig_0.23.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qastools/qasconfig_0.23.0-1_amd64.deb"
+}

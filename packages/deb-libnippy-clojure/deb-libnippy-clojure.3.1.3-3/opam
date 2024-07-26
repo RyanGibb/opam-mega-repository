@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libnippy-clojure_3.1.3-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libnippy-clojure"]
+]
+depends: [
+  "deb-libclojure-java"
+  "deb-libencore-clojure"
+  "deb-liblz4-java"
+  "deb-libsnappy-java"
+  "deb-libtools-reader-clojure"
+  "deb-libxz-java"
+]
+extra-source "libnippy-clojure_3.1.3-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/nippy-clojure/libnippy-clojure_3.1.3-3_all.deb"
+}

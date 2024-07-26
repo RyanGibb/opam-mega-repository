@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i zurl_1.11.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r zurl"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libc6" {>= "2.14"}
+  "deb-libcurl4" {>= "7.60.0-2"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqt5core5a" {>= "5.12.2"}
+  "deb-libqt5network5" {>= "5.8.0"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-libzmq5" {>= "3.2.3+dfsg"}
+  "deb-lsb-base" {>= "3.0-6"}
+]
+extra-source "zurl_1.11.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/z/zurl/zurl_1.11.0-2_amd64.deb"
+}

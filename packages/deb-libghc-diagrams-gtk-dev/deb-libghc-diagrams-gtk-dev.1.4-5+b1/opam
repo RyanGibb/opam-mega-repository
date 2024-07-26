@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-diagrams-gtk-dev_1.4-5+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-diagrams-gtk-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libghc-cairo-dev"
+  "deb-libghc-diagrams-cairo-dev"
+  "deb-libghc-diagrams-lib-dev"
+  "deb-libghc-gtk-dev"
+  "deb-libglib2-0-0" {>= "2.16.0"}
+  "deb-libgmp10"
+  "deb-libgtk2-0-0" {>= "2.8.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpangoft2-1-0-0" {>= "1.14.0"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libghc-diagrams-gtk-dev_1.4-5+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-diagrams-gtk/libghc-diagrams-gtk-dev_1.4-5+b1_amd64.deb"
+}

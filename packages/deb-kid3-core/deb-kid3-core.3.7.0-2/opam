@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kid3-core_3.7.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kid3-core"]
+]
+depends: [
+  "deb-libavcodec-extra58"
+  "deb-libavformat58" {>= "7-4.1"}
+  "deb-libavutil56" {>= "7-4.0"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libchromaprint1" {>= "1.3.2"}
+  "deb-libflac++6v5" {>= "1.3.1"}
+  "deb-libflac8" {>= "1.3.0"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libid3-3-8-3v5"
+  "deb-libogg0" {>= "1.0rc3"}
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5dbus5" {>= "5.0.2"}
+  "deb-libqt5gui5" {>= "5.3.0"}
+  "deb-libqt5multimedia5" {>= "5.6.0~beta"}
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libqt5qml5" {>= "5.0.2"}
+  "deb-libqt5quick5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.11.0~rc1"}
+  "deb-libqt5xml5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "4.9"}
+  "deb-libswresample3" {>= "7-4.0"}
+  "deb-libtag1v5" {>= "1.11"}
+  "deb-libvorbis0a" {>= "1.1.2"}
+  "deb-libvorbisfile3" {>= "1.1.2"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "kid3-core_3.7.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kid3/kid3-core_3.7.0-2_amd64.deb"
+}

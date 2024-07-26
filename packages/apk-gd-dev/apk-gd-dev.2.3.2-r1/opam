@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gd-dev-2.3.2-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gd-dev"]
+]
+depends: [
+  "apk-freetype-dev" {= "2.11.1-r2"}
+  "apk-gd" {= "2.3.2-r1"}
+  "apk-libgd" {= "2.3.2-r1"}
+  "apk-libjpeg-turbo-dev" {= "2.1.2-r0"}
+  "apk-libpng-dev" {= "1.6.37-r1"}
+  "apk-libwebp-dev" {= "1.2.2-r2"}
+  "apk-perl" {= "5.34.2-r0"}
+  "apk-pkgconf" {= "1.8.1-r0"}
+  "apk-zlib-dev" {= "1.2.12-r3"}
+]
+extra-source "gd-dev-2.3.2-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/gd-dev-2.3.2-r1.apk"
+}

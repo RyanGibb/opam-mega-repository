@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gtk+3.0-demo-3.24.41-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gtk+3.0-demo"]
+]
+depends: [
+  "apk-cairo" {= "1.18.0-r0"}
+  "apk-gdk-pixbuf" {= "2.42.10-r6"}
+  "apk-glib" {= "2.78.6-r0"}
+  "apk-gtk+3-0" {= "3.24.41-r0"}
+  "apk-gtk-update-icon-cache" {= "3.24.41-r0"}
+  "apk-harfbuzz" {= "8.3.0-r0"}
+  "apk-libatk-1-0" {= "2.50.1-r0"}
+  "apk-libepoxy" {= "1.5.10-r1"}
+  "apk-libintl" {= "0.22.3-r0"}
+  "apk-musl" {= "1.2.4_git20230717-r4"}
+  "apk-pango" {= "1.51.0-r0"}
+  "apk-shared-mime-info" {= "2.4-r0"}
+]
+extra-source "gtk+3.0-demo-3.24.41-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/gtk+3.0-demo-3.24.41-r0.apk"
+}

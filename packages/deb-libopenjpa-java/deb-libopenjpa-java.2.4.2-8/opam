@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libopenjpa-java_2.4.2-8_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libopenjpa-java"]
+]
+depends: [
+  "deb-libcommons-collections3-java"
+  "deb-libcommons-dbcp-java"
+  "deb-libcommons-jci-rhino-java"
+  "deb-libcommons-lang-java"
+  "deb-libcommons-logging-java"
+  "deb-libcommons-pool-java"
+  "deb-libderby-java"
+  "deb-libgeronimo-jms-1-1-spec-java"
+  "deb-libgeronimo-jpa-2-0-spec-java"
+  "deb-libgeronimo-jta-1-2-spec-java"
+  "deb-libgeronimo-validation-1-1-spec-java"
+  "deb-libhsqldb-java"
+  "deb-liblog4j1-2-java"
+  "deb-libpostgresql-jdbc-java"
+  "deb-libserp-java"
+  "deb-libxbean-java"
+]
+extra-source "libopenjpa-java_2.4.2-8_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openjpa/libopenjpa-java_2.4.2-8_all.deb"
+}

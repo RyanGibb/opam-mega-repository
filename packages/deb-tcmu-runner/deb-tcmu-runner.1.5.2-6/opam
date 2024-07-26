@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tcmu-runner_1.5.2-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tcmu-runner"]
+]
+depends: [
+  "deb-libc6" {>= "2.17"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libkmod2" {>= "5~"}
+  "deb-librbd1" {>= "12.1.4"}
+  "deb-libtcmu2" {>= "1.5.2"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "tcmu-runner_1.5.2-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tcmu/tcmu-runner_1.5.2-6_amd64.deb"
+}

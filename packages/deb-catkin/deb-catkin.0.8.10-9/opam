@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i catkin_0.8.10-9_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r catkin"]
+]
+depends: [
+  "deb-cmake-extras"
+  "deb-python3"
+  "deb-python3-any"
+  "deb-python3-catkin"
+  "deb-python3-catkin-pkg"
+  "deb-python3-empy"
+  "deb-python3-setuptools"
+  "deb-ros-environment"
+]
+extra-source "catkin_0.8.10-9_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ros-catkin/catkin_0.8.10-9_all.deb"
+}

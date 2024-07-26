@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libadios-bin_1.13.1-16_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libadios-bin"]
+]
+depends: [
+  "deb-libblosc1"
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.17"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libhdf5-103"
+  "deb-libhdf5-mpich-103" {>= "1.8.14"}
+  "deb-libhdf5-openmpi-103" {>= "1.8.14"}
+  "deb-libibverbs1" {>= "1.1.6"}
+  "deb-liblz4-1" {>= "0.0~r130"}
+  "deb-libmpich12"
+  "deb-libnetcdf-mpi-13"
+  "deb-libnetcdf13" {>= "3.6.1"}
+  "deb-libopenmpi3"
+  "deb-libsz2"
+  "deb-python-any"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libadios-bin_1.13.1-16_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/adios/libadios-bin_1.13.1-16_amd64.deb"
+}

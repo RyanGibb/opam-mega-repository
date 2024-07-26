@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i haci_0.98c-2.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r haci"]
+]
+depends: [
+  "deb-libcgi-ajax-perl"
+  "deb-libcgi-session-perl"
+  "deb-libclass-accessor-perl"
+  "deb-libclass-makemethods-perl"
+  "deb-libconfig-general-perl"
+  "deb-libdbd-mysql-perl"
+  "deb-libdigest-md5-perl"
+  "deb-libdigest-sha-perl"
+  "deb-libfile-temp-perl"
+  "deb-libhtml-parser-perl"
+  "deb-liblocale-gettext-perl"
+  "deb-liblog-loglite-perl"
+  "deb-libmath-bigint-perl"
+  "deb-libnet-cidr-perl"
+  "deb-libnet-ipv6addr-perl"
+  "deb-libnet-snmp-perl"
+  "deb-libstorable-perl"
+  "deb-libtemplate-perl"
+  "deb-libtime-local-perl"
+  ("deb-apache2" | "deb- httpd")
+]
+extra-source "haci_0.98c-2.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haci/haci_0.98c-2.1_all.deb"
+}

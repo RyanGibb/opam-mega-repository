@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i darknet_0.0.0+git20180914.61c9d02e-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r darknet"]
+]
+depends: [
+  "deb-libc6" {>= "2.22"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libopencv-calib3d3-2"
+  "deb-libopencv-contrib3-2"
+  "deb-libopencv-core3-2"
+  "deb-libopencv-features2d3-2"
+  "deb-libopencv-flann3-2"
+  "deb-libopencv-highgui3-2"
+  "deb-libopencv-imgcodecs3-2"
+  "deb-libopencv-imgproc3-2"
+  "deb-libopencv-ml3-2"
+  "deb-libopencv-objdetect3-2"
+  "deb-libopencv-photo3-2"
+  "deb-libopencv-shape3-2"
+  "deb-libopencv-stitching3-2"
+  "deb-libopencv-superres3-2"
+  "deb-libopencv-video3-2"
+  "deb-libopencv-videoio3-2"
+  "deb-libopencv-videostab3-2"
+  "deb-libopencv-viz3-2"
+  "deb-libstdc++6" {>= "5"}
+]
+extra-source "darknet_0.0.0+git20180914.61c9d02e-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/darknet/darknet_0.0.0+git20180914.61c9d02e-1_amd64.deb"
+}

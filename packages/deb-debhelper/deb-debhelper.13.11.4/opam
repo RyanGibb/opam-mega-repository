@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i debhelper_13.11.4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r debhelper"]
+]
+depends: [
+  "deb-autotools-dev"
+  "deb-dh-autoreconf" {>= "17~"}
+  "deb-dh-strip-nondeterminism" {>= "0.028~"}
+  "deb-dpkg" {>= "1.18.0~"}
+  "deb-dpkg-dev" {>= "1.18.2~"}
+  "deb-dwz" {>= "0.12.20190711"}
+  "deb-file" {>= "3.23"}
+  "deb-libdebhelper-perl" {= "13.11.4"}
+  "deb-libdpkg-perl" {>= "1.17.14"}
+  "deb-man-db"
+  "deb-perl-any"
+  "deb-po-debconf"
+]
+extra-source "debhelper_13.11.4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/debhelper/debhelper_13.11.4_all.deb"
+}

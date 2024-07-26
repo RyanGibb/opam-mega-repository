@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i unscd_0.54-1+b6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r unscd"]
+]
+depends: [
+  "deb-libc6" {< "2.37"}
+  "deb-libc6" {> "2.36"}
+  "deb-libsystemd0"
+  "deb-lsb-base"
+]
+conflicts: [
+  "deb-nscd"
+]
+extra-source "unscd_0.54-1+b6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/u/unscd/unscd_0.54-1+b6_amd64.deb"
+}

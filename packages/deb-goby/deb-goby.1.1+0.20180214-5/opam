@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i goby_1.1+0.20180214-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r goby"]
+]
+depends: [
+  "deb-emacsen-common" {>= "2.0.8"}
+  ("deb-emacs-nox" | "deb- emacs" | "deb- emacs25" | "deb- emacs24" | "deb- emacs23" | "deb- emacs22" | "deb- emacs-snapshot")
+]
+extra-source "goby_1.1+0.20180214-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/goby/goby_1.1+0.20180214-5_all.deb"
+}

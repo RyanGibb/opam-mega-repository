@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i subtitleeditor_0.54.0-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r subtitleeditor"]
+]
+depends: [
+  "deb-gstreamer1-0-plugins-base"
+  "deb-gstreamer1-0-plugins-good"
+  "deb-gstreamer1-0-x"
+  "deb-libatkmm-1-6-1v5" {>= "2.24.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libcairomm-1-0-1v5" {>= "1.12.0"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libglibmm-2-4-1v5" {>= "2.64.2"}
+  "deb-libgstreamer-plugins-base1-0-0" {>= "1.0.0"}
+  "deb-libgstreamer1-0-0" {>= "1.0.0"}
+  "deb-libgstreamermm-1-0-1" {>= "1.10.0+dfsg"}
+  "deb-libgtk-3-0" {>= "3.0.0"}
+  "deb-libgtkmm-3-0-1v5" {>= "3.24.0"}
+  "deb-libpangomm-1-4-1v5" {>= "2.42.0"}
+  "deb-libsigc++-2-0-0v5" {>= "2.8.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libsubtitleeditor0" {= "0.54.0-5"}
+]
+extra-source "subtitleeditor_0.54.0-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/subtitleeditor/subtitleeditor_0.54.0-5_amd64.deb"
+}

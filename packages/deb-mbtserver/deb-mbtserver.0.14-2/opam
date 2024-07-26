@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mbtserver_0.14-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mbtserver"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libmbt1" {>= "3.6"}
+  "deb-libmbtserver1" {>= "0.14"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libticcutils8" {>= "0.24"}
+  "deb-libtimbl4" {>= "6.5"}
+]
+extra-source "mbtserver_0.14-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mbtserver/mbtserver_0.14-2_amd64.deb"
+}

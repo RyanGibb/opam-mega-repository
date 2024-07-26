@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-skylighting-core-prof_0.8.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-skylighting-core-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-aeson-prof"
+  "deb-libghc-ansi-terminal-prof"
+  "deb-libghc-attoparsec-prof"
+  "deb-libghc-base64-bytestring-prof"
+  "deb-libghc-blaze-html-prof"
+  "deb-libghc-case-insensitive-prof"
+  "deb-libghc-colour-prof"
+  "deb-libghc-hxt-prof"
+  "deb-libghc-regex-pcre-prof"
+  "deb-libghc-safe-prof"
+  "deb-libghc-skylighting-core-dev" {= "0.8.5-1"}
+  "deb-libghc-utf8-string-prof"
+]
+extra-source "libghc-skylighting-core-prof_0.8.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-skylighting-core/libghc-skylighting-core-prof_0.8.5-1_amd64.deb"
+}

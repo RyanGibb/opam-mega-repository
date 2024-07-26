@@ -1,0 +1,44 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i eslint_5.16.0~dfsg+~4.16.8-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r eslint"]
+]
+depends: [
+  "deb-node-ajv"
+  "deb-node-concat-stream"
+  "deb-node-debug"
+  "deb-node-doctrine"
+  "deb-node-eslint-scope"
+  "deb-node-eslint-utils"
+  "deb-node-eslint-visitor-keys"
+  "deb-node-espree"
+  "deb-node-esquery"
+  "deb-node-estraverse"
+  "deb-node-esutils"
+  "deb-node-file-entry-cache"
+  "deb-node-functional-red-black-tree"
+  "deb-node-glob"
+  "deb-node-globals"
+  "deb-node-ignore"
+  "deb-node-import-fresh"
+  "deb-node-imurmurhash"
+  "deb-node-json-stable-stringify"
+  "deb-node-levn"
+  "deb-node-lodash"
+  "deb-node-mkdirp"
+  "deb-node-optionator"
+  "deb-node-path-is-inside"
+  "deb-node-progress"
+  "deb-node-regenerate-unicode-properties"
+  "deb-node-regexpp"
+  "deb-node-semver"
+  "deb-node-strip-json-comments"
+  "deb-node-types-estree"
+  "deb-node-types-json-schema"
+  "deb-nodejs"
+]
+extra-source "eslint_5.16.0~dfsg+~4.16.8-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/eslint/eslint_5.16.0~dfsg+~4.16.8-5_all.deb"
+}

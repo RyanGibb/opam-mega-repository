@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i janus-dev_1.1.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r janus-dev"]
+]
+depends: [
+  "deb-janus" {= "1.1.2-1"}
+  "deb-libcurl4-openssl-dev"
+  "deb-libglib2-0-dev"
+  "deb-libjansson-dev"
+  "deb-libnice-dev"
+  "deb-libsrtp2-dev"
+]
+extra-source "janus-dev_1.1.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/j/janus/janus-dev_1.1.2-1_amd64.deb"
+}

@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i network-manager_1.14.6-2+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r network-manager"]
+]
+depends: [
+  "deb-adduser"
+  "deb-dbus"
+  "deb-libaudit1" {>= "1-2.2.1"}
+  "deb-libbluetooth3" {>= "4.91"}
+  "deb-libc6" {>= "2.26"}
+  "deb-libcurl3-gnutls" {>= "7.16.3"}
+  "deb-libglib2-0-0" {>= "2.43.2"}
+  "deb-libgnutls30" {>= "3.6.5"}
+  "deb-libjansson4" {>= "2.0.1"}
+  "deb-libmm-glib0" {>= "1.0.0"}
+  "deb-libndp0" {>= "1.2"}
+  "deb-libnewt0-52" {>= "0.52.20"}
+  "deb-libnm0" {= "1.14.6-2+deb10u1"}
+  "deb-libpam-systemd"
+  "deb-libpolkit-agent-1-0" {>= "0.99"}
+  "deb-libpolkit-gobject-1-0" {>= "0.104"}
+  "deb-libpsl5" {>= "0.13.0"}
+  "deb-libreadline7" {>= "6.0"}
+  "deb-libselinux1" {>= "1.32"}
+  "deb-libsystemd0" {>= "221"}
+  "deb-libteamdctl0" {>= "1.9"}
+  "deb-libudev1" {>= "183"}
+  "deb-libuuid1" {>= "2.16"}
+  "deb-lsb-base"
+  "deb-policykit-1"
+  "deb-udev"
+  "deb-wpasupplicant"
+]
+extra-source "network-manager_1.14.6-2+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/network-manager/network-manager_1.14.6-2+deb10u1_amd64.deb"
+}

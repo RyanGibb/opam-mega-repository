@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libbt0_0.70.1-39_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libbt0"]
+]
+depends: [
+  "deb-libc6" {>= "2.33"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxft2" {> "2.1.1"}
+]
+conflicts: [
+  "deb-libbt0v5"
+]
+extra-source "libbt0_0.70.1-39_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/blackbox/libbt0_0.70.1-39_amd64.deb"
+}

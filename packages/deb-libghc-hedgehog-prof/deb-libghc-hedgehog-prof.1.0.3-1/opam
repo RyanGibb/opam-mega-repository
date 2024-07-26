@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-hedgehog-prof_1.0.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-hedgehog-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-ansi-terminal-prof"
+  "deb-libghc-async-prof"
+  "deb-libghc-concurrent-output-prof"
+  "deb-libghc-erf-prof"
+  "deb-libghc-exceptions-prof"
+  "deb-libghc-hedgehog-dev" {= "1.0.3-1"}
+  "deb-libghc-lifted-async-prof"
+  "deb-libghc-mmorph-prof"
+  "deb-libghc-monad-control-prof"
+  "deb-libghc-pretty-show-prof"
+  "deb-libghc-primitive-prof"
+  "deb-libghc-random-prof"
+  "deb-libghc-resourcet-prof"
+  "deb-libghc-semigroups-prof"
+  "deb-libghc-transformers-base-prof"
+  "deb-libghc-wl-pprint-annotated-prof"
+]
+extra-source "libghc-hedgehog-prof_1.0.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-hedgehog/libghc-hedgehog-prof_1.0.3-1_amd64.deb"
+}

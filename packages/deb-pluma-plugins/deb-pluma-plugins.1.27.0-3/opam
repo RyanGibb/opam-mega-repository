@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pluma-plugins_1.27.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pluma-plugins"]
+]
+depends: [
+  "deb-pluma-plugin-bookmarks"
+  "deb-pluma-plugin-bracketcompletion"
+  "deb-pluma-plugin-codecomment"
+  "deb-pluma-plugin-quickhighlight"
+  "deb-pluma-plugin-smartspaces"
+  "deb-pluma-plugin-sourcecodebrowser"
+  "deb-pluma-plugin-synctex"
+  "deb-pluma-plugin-terminal"
+  "deb-pluma-plugin-wordcompletion"
+]
+extra-source "pluma-plugins_1.27.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pluma-plugins/pluma-plugins_1.27.0-3_amd64.deb"
+}

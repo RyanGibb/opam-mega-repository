@@ -1,0 +1,60 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-taffybar-prof_3.3.0-2+b4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-taffybar-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-ansi-terminal-prof"
+  "deb-libghc-broadcast-chan-prof"
+  "deb-libghc-configfile-prof"
+  "deb-libghc-dbus-hslogger-prof"
+  "deb-libghc-dbus-prof"
+  "deb-libghc-dyre-prof"
+  "deb-libghc-either-prof"
+  "deb-libghc-enclosed-exceptions-prof"
+  "deb-libghc-gi-cairo-connector-prof"
+  "deb-libghc-gi-cairo-prof"
+  "deb-libghc-gi-cairo-render-prof"
+  "deb-libghc-gi-gdk-prof"
+  "deb-libghc-gi-gdkpixbuf-prof"
+  "deb-libghc-gi-gdkx11-prof"
+  "deb-libghc-gi-glib-prof"
+  "deb-libghc-gi-gtk-hs-prof"
+  "deb-libghc-gi-gtk-prof"
+  "deb-libghc-gi-pango-prof"
+  "deb-libghc-gtk-sni-tray-prof"
+  "deb-libghc-gtk-strut-prof"
+  "deb-libghc-haskell-gi-base-prof"
+  "deb-libghc-haskell-gi-prof"
+  "deb-libghc-hslogger-prof"
+  "deb-libghc-hstringtemplate-prof"
+  "deb-libghc-http-client-prof"
+  "deb-libghc-http-client-tls-prof"
+  "deb-libghc-http-types-prof"
+  "deb-libghc-multimap-prof"
+  "deb-libghc-old-locale-prof"
+  "deb-libghc-rate-limit-prof"
+  "deb-libghc-regex-compat-prof"
+  "deb-libghc-safe-prof"
+  "deb-libghc-scotty-prof"
+  "deb-libghc-split-prof"
+  "deb-libghc-status-notifier-item-prof"
+  "deb-libghc-taffybar-dev" {= "3.3.0-2+b4"}
+  "deb-libghc-time-locale-compat-prof"
+  "deb-libghc-time-units-prof"
+  "deb-libghc-transformers-base-prof"
+  "deb-libghc-tuple-prof"
+  "deb-libghc-utf8-string-prof"
+  "deb-libghc-x11-prof"
+  "deb-libghc-xdg-basedir-prof"
+  "deb-libghc-xdg-desktop-entry-prof"
+  "deb-libghc-xml-helpers-prof"
+  "deb-libghc-xml-prof"
+  "deb-libghc-xmonad-prof"
+]
+extra-source "libghc-taffybar-prof_3.3.0-2+b4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/taffybar/libghc-taffybar-prof_3.3.0-2+b4_amd64.deb"
+}

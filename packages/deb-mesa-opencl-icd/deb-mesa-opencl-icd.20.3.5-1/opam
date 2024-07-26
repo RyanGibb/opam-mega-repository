@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mesa-opencl-icd_20.3.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mesa-opencl-icd"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libclang-cpp11" {>= "1-11.0.1"}
+  "deb-libclc-amdgcn" {>= "0.2.0+git20180312-1~"}
+  "deb-libclc-r600" {>= "0.2.0+git20180312-1~"}
+  "deb-libdrm-amdgpu1" {>= "2.4.100"}
+  "deb-libdrm-nouveau2" {>= "2.4.66"}
+  "deb-libdrm-radeon1" {>= "2.4.31"}
+  "deb-libdrm2" {>= "2.4.75"}
+  "deb-libelf1" {>= "0.142"}
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libgcc-s1" {>= "3.4"}
+  "deb-libllvm11" {>= "1-9~svn298832-1~"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libzstd1" {>= "1.4.0"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-ocl-icd-libopencl1" | "deb- libopencl1")
+]
+extra-source "mesa-opencl-icd_20.3.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mesa/mesa-opencl-icd_20.3.5-1_amd64.deb"
+}

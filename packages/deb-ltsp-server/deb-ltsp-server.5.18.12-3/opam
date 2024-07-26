@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ltsp-server_5.18.12-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ltsp-server"]
+]
+depends: [
+  "deb-debconf-utils"
+  "deb-debootstrap" {>= "1.0.30"}
+  "deb-gettext-base"
+  "deb-lsb-release"
+  "deb-openssh-client"
+  "deb-tcpd"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-iproute2" | "deb- iproute" | "deb- freebsd-net-tools")
+]
+conflicts: [
+  "deb-ltsp-utils"
+]
+extra-source "ltsp-server_5.18.12-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/ltsp/ltsp-server_5.18.12-3_all.deb"
+}

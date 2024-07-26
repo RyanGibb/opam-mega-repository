@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i plsense_0.3.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r plsense"]
+]
+depends: [
+  "deb-libcache-cache-perl"
+  "deb-libclass-std-perl" {>= "0.011"}
+  "deb-libclass-std-storable-perl"
+  "deb-libconfig-tiny-perl" {>= "2.14"}
+  "deb-liblist-allutils-perl" {>= "0.03"}
+  "deb-liblog-handler-perl" {>= "0.76"}
+  "deb-libmodule-pluggable-perl"
+  "deb-libppi-perl" {>= "1.215"}
+  "deb-libtry-tiny-perl" {>= "0.11"}
+  "deb-perl" {>= "5.13.3"}
+  "deb-perl-doc"
+]
+extra-source "plsense_0.3.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/plsense/plsense_0.3.4-1_all.deb"
+}

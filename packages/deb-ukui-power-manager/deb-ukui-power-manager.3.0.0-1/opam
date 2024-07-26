@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ukui-power-manager_3.0.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ukui-power-manager"]
+]
+depends: [
+  "deb-dbus-x11"
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo2" {>= "1.10.0"}
+  "deb-libcanberra-gtk3-0" {>= "0.25"}
+  "deb-libcanberra0" {>= "0.2"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libgsettings-qt1" {>= "0.1+14.04.20140408"}
+  "deb-libgtk-3-0" {>= "3.21.4"}
+  "deb-libkf5windowsystem5" {>= "4.96.0"}
+  "deb-libnotify4" {>= "0.7.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libqt5charts5" {>= "5.7.1"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.14.1"}
+  "deb-libqt5widgets5" {>= "5.12.2"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libupower-glib3" {>= "0.99.0"}
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxrandr2" {>= "2-1.2.99.2"}
+  "deb-policykit-1"
+  "deb-ukui-power-manager-common" {= "3.0.0-1"}
+  "deb-upower"
+  ("deb-libqt5gui5" {>= "5.8.0"} | "deb- libqt5gui5-gles" {>= "5.8.0"})
+  ("deb-systemd" | "deb- elogind" | "deb- consolekit")
+  ("deb-ukui-notification-daemon" | "deb- notification-daemon" | "deb- mate-notification-daemon")
+]
+extra-source "ukui-power-manager_3.0.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/u/ukui-power-manager/ukui-power-manager_3.0.0-1_amd64.deb"
+}

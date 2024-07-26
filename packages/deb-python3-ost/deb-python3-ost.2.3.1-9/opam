@@ -1,0 +1,46 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-ost_2.3.1-9_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-ost"]
+]
+depends: [
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-python1-74-0"
+  "deb-libboost-python1-74-0" {>= "1.74.0+ds1"}
+  "deb-libc6" {>= "2.32"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libopenmm7-7" {>= "7.7.0+dfsg"}
+  "deb-libost-base2-3" {>= "2.3.1"}
+  "deb-libost-bindings2-3" {>= "2.3.1"}
+  "deb-libost-conop2-3" {>= "2.3.1"}
+  "deb-libost-db2-3" {>= "2.3.1"}
+  "deb-libost-geom2-3" {>= "2.3.1"}
+  "deb-libost-gfx2-3" {>= "2.3.1"}
+  "deb-libost-gui2-3" {>= "2.3.1"}
+  "deb-libost-img-alg2-3" {>= "2.3.1"}
+  "deb-libost-img2-3" {>= "2.3.1"}
+  "deb-libost-info2-3" {>= "2.3.1"}
+  "deb-libost-io2-3" {>= "2.3.1"}
+  "deb-libost-mol-alg2-3" {>= "2.3.1"}
+  "deb-libost-mol-mm2-3" {>= "2.3.1"}
+  "deb-libost-mol2-3" {>= "2.3.1"}
+  "deb-libost-seq-alg2-3" {>= "2.3.1"}
+  "deb-libost-seq2-3" {>= "2.3.1"}
+  "deb-libpython3-11" {>= "3.11.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-any"
+  "deb-python3-matplotlib"
+  "deb-python3-numpy"
+  "deb-python3-pil"
+  "deb-python3-pyqt5"
+  ("deb-libqt5gui5" {>= "5.2.0"} | "deb- libqt5gui5-gles" {>= "5.2.0"})
+]
+extra-source "python3-ost_2.3.1-9_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openstructure/python3-ost_2.3.1-9_amd64.deb"
+}

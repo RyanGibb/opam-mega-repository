@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i maxima-emacs_5.46.0-11_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r maxima-emacs"]
+]
+depends: [
+  "deb-emacsen-common" {>= "1.4.14"}
+  "deb-maxima" {>= "5.46.0-11"}
+  "deb-maxima-doc" {>= "5.46.0-11"}
+  "deb-mmm-mode"
+  "deb-tex-common" {>= "6.13"}
+  "deb-texlive-binaries"
+  "deb-texlive-latex-recommended"
+  ("deb-emacs-gtk" | "deb- emacsen")
+]
+extra-source "maxima-emacs_5.46.0-11_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/maxima/maxima-emacs_5.46.0-11_all.deb"
+}

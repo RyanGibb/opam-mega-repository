@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i prometheus_2.7.1+ds-3+b11_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r prometheus"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libc6" {>= "2.3.2"}
+  "deb-libjs-bootstrap"
+  "deb-libjs-eonasdan-bootstrap-datetimepicker"
+  "deb-libjs-jquery" {>= "1.11.3~"}
+  "deb-libjs-jquery-hotkeys"
+  "deb-libjs-moment"
+  "deb-libjs-moment-timezone"
+  "deb-libjs-mustache" {>= "2.3.0-1~"}
+  "deb-libjs-rickshaw"
+  ("deb-daemon" | "deb- systemd-sysv")
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "prometheus_2.7.1+ds-3+b11_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/prometheus/prometheus_2.7.1+ds-3+b11_amd64.deb"
+}

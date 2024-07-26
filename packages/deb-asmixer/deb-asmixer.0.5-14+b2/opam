@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i asmixer_0.5-14+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r asmixer"]
+]
+depends: [
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxpm4"
+]
+extra-source "asmixer_0.5-14+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/asmixer/asmixer_0.5-14+b2_amd64.deb"
+}

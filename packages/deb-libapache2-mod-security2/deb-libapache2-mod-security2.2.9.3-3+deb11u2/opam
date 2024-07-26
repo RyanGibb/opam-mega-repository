@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libapache2-mod-security2_2.9.3-3+deb11u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libapache2-mod-security2"]
+]
+depends: [
+  "deb-apache2-bin"
+  "deb-apache2-bin" {>= "2.4.16"}
+  "deb-libapr1" {>= "1.2.7"}
+  "deb-libaprutil1" {>= "1.4.0"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-liblua5-1-0"
+  "deb-libpcre3"
+  "deb-libxml2" {>= "2.9.0"}
+  "deb-libyajl2" {>= "2.0.4"}
+]
+extra-source "libapache2-mod-security2_2.9.3-3+deb11u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/modsecurity-apache/libapache2-mod-security2_2.9.3-3+deb11u2_amd64.deb"
+}

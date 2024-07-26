@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i namebench_1.3.1+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r namebench"]
+]
+depends: [
+  "deb-python" {>= "2.6.6-7~"}
+  "deb-python-dnspython"
+  "deb-python-graphy"
+  "deb-python-httplib2"
+  "deb-python-jinja2"
+  "deb-python-simplejson"
+]
+extra-source "namebench_1.3.1+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/namebench/namebench_1.3.1+dfsg-2_all.deb"
+}

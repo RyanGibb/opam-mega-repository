@@ -1,0 +1,52 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-spyder_4.2.1+dfsg1-3+deb11u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-spyder"]
+]
+depends: [
+  "deb-ipython3"
+  "deb-libjs-jquery"
+  "deb-libjs-mathjax"
+  "deb-pylint"
+  "deb-python3-any"
+  "deb-python3-atomicwrites" {>= "1.2.0"}
+  "deb-python3-chardet" {>= "2.0.0"}
+  "deb-python3-cloudpickle"
+  "deb-python3-diff-match-patch" {>= "20181111"}
+  "deb-python3-docutils"
+  "deb-python3-intervaltree"
+  "deb-python3-ipython"
+  "deb-python3-jedi" {>= "0.17.2"}
+  "deb-python3-jsonschema" {>= "3.2.0"}
+  "deb-python3-keyring"
+  "deb-python3-nbconvert"
+  "deb-python3-numpydoc"
+  "deb-python3-parso"
+  "deb-python3-pexpect"
+  "deb-python3-pickleshare"
+  "deb-python3-pkg-resources"
+  "deb-python3-psutil"
+  "deb-python3-pygments" {>= "2.0"}
+  "deb-python3-pyls"
+  "deb-python3-pyls-black"
+  "deb-python3-pyls-spyder"
+  "deb-python3-qdarkstyle"
+  "deb-python3-qtawesome" {>= "0.5.7"}
+  "deb-python3-qtconsole" {>= "5.0.1"}
+  "deb-python3-qtpy"
+  "deb-python3-setuptools"
+  "deb-python3-sphinx"
+  "deb-python3-spyder-kernels" {< "1.11.0"}
+  "deb-python3-spyder-kernels" {>= "1.10.1"}
+  "deb-python3-textdistance"
+  "deb-python3-three-merge"
+  "deb-python3-watchdog" {>= "0.10.3"}
+  "deb-python3-xdg"
+  "deb-python3-zmq"
+  "deb-spyder-common" {= "4.2.1+dfsg1-3+deb11u2"}
+]
+extra-source "python3-spyder_4.2.1+dfsg1-3+deb11u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/spyder/python3-spyder_4.2.1+dfsg1-3+deb11u2_all.deb"
+}

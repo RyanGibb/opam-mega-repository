@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i psortb_3.0.6+dfsg-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r psortb"]
+]
+depends: [
+  "deb-libalgorithm-svm-perl"
+  "deb-libbio-perl-perl"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libmodhmm0"
+  "deb-libsquid1"
+  "deb-libstdc++6" {>= "5"}
+  "deb-libsvm3"
+  "deb-libsvmloc0"
+  "deb-perl" {>= "5.28.0-3"}
+  "deb-perl-base"
+  "deb-pftools"
+]
+extra-source "psortb_3.0.6+dfsg-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/psortb/psortb_3.0.6+dfsg-1+b1_amd64.deb"
+}

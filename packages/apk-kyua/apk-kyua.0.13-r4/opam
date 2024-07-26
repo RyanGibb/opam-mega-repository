@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add kyua-0.13-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del kyua"]
+]
+depends: [
+  "apk-atf" {= "0.21-r2"}
+  "apk-libgcc" {= "11.2.1_git20220219-r2"}
+  "apk-libstdc++" {= "11.2.1_git20220219-r2"}
+  "apk-lutok" {= "0.4-r3"}
+  "apk-musl" {= "1.2.3-r3"}
+  "apk-sqlite-libs" {= "3.40.1-r1"}
+]
+extra-source "kyua-0.13-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/kyua-0.13-r4.apk"
+}

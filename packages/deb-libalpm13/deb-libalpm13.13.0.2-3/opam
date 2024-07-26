@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libalpm13_13.0.2-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libalpm13"]
+]
+depends: [
+  "deb-libarchive13" {>= "3.0.4"}
+  "deb-libc6" {>= "2.33"}
+  "deb-libcurl4" {>= "7.28.0"}
+  "deb-libgpgme11" {>= "1.2.0"}
+  "deb-libssl3" {>= "3.0.0"}
+]
+extra-source "libalpm13_13.0.2-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pacman-package-manager/libalpm13_13.0.2-3_amd64.deb"
+}

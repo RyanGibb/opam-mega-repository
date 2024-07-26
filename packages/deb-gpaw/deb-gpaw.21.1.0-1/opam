@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gpaw_21.1.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gpaw"]
+]
+depends: [
+  "deb-gpaw-data"
+  "deb-libc6" {>= "2.14"}
+  "deb-libelpa15" {>= "2019.11.001"}
+  "deb-libfftw3-double3" {>= "3.3.5"}
+  "deb-libopenmpi3" {>= "4.1.0"}
+  "deb-libscalapack-openmpi2-1" {>= "2.1.0"}
+  "deb-libxc5" {>= "4.2.1"}
+  "deb-openmpi-bin"
+  "deb-python3" {< "3.10"}
+  "deb-python3" {>= "3.9~"}
+  "deb-python3-any"
+  "deb-python3-ase" {>= "3.21.0"}
+  "deb-python3-numpy"
+  "deb-python3-numpy" {>= "1-1.16.0~rc1"}
+  "deb-python3-scipy"
+]
+extra-source "gpaw_21.1.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gpaw/gpaw_21.1.0-1_amd64.deb"
+}

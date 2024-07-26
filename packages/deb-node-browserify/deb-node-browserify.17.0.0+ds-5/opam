@@ -1,0 +1,60 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-browserify_17.0.0+ds-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-browserify"]
+]
+depends: [
+  "deb-node-assert"
+  "deb-node-browser-pack"
+  "deb-node-browser-resolve" {>= "2.0.0"}
+  "deb-node-browserify-zlib"
+  "deb-node-buffer"
+  "deb-node-cached-path-relative"
+  "deb-node-concat-stream"
+  "deb-node-console-browserify"
+  "deb-node-constants-browserify"
+  "deb-node-crypto-browserify"
+  "deb-node-defined"
+  "deb-node-deps-sort" {>= "2.0.1"}
+  "deb-node-domain-browser" {>= "1.2.0"}
+  "deb-node-events" {>= "3.0.0"}
+  "deb-node-function-bind"
+  "deb-node-glob"
+  "deb-node-htmlescape"
+  "deb-node-https-browserify"
+  "deb-node-inherits"
+  "deb-node-jsonstream"
+  "deb-node-labeled-stream-splicer"
+  "deb-node-mkdirp"
+  "deb-node-module-deps" {>= "6.2.3"}
+  "deb-node-os-browserify"
+  "deb-node-parents"
+  "deb-node-path-browserify" {>= "1.0.0"}
+  "deb-node-process"
+  "deb-node-punycode"
+  "deb-node-querystring-es3"
+  "deb-node-read-only-stream"
+  "deb-node-readable-stream" {>= "3.4.0"}
+  "deb-node-resolve"
+  "deb-node-shasum"
+  "deb-node-shell-quote"
+  "deb-node-stream-browserify"
+  "deb-node-stream-http" {>= "3.0.0"}
+  "deb-node-string-decoder"
+  "deb-node-subarg"
+  "deb-node-syntax-error"
+  "deb-node-through2"
+  "deb-node-timers-browserify"
+  "deb-node-tty-browserify" {>= "0.0.1"}
+  "deb-node-url"
+  "deb-node-util" {>= "0.12.0"}
+  "deb-node-vm-browserify" {>= "1.0.0"}
+  "deb-node-xtend"
+  "deb-nodejs-any"
+  ("deb-node-debbundle-insert-module-globals" | "deb-node-debbundle-insert-module-globals")
+]
+extra-source "node-browserify_17.0.0+ds-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-browserify/node-browserify_17.0.0+ds-5_all.deb"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i yorick-curses_0.1-6+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r yorick-curses"]
+]
+depends: [
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libncurses6" {>= "6"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-yorick" {>= "1.6.02"}
+  "deb-yorick-yutils"
+]
+extra-source "yorick-curses_0.1-6+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/y/yorick-curses/yorick-curses_0.1-6+b2_amd64.deb"
+}

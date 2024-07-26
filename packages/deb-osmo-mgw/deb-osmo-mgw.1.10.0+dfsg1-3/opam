@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i osmo-mgw_1.10.0+dfsg1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r osmo-mgw"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libosmoabis10" {>= "1.3.0"}
+  "deb-libosmocore19" {>= "1.7.0"}
+  "deb-libosmoctrl0" {>= "1.7.0"}
+  "deb-libosmogsm18" {>= "1.7.0"}
+  "deb-libosmonetif8" {>= "1.2.0"}
+  "deb-libosmotrau2" {>= "1.3.0"}
+  "deb-libosmovty9" {>= "1.7.0"}
+  "deb-libtalloc2" {>= "2.0.4~git20101213"}
+]
+extra-source "osmo-mgw_1.10.0+dfsg1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/osmo-mgw/osmo-mgw_1.10.0+dfsg1-3_amd64.deb"
+}

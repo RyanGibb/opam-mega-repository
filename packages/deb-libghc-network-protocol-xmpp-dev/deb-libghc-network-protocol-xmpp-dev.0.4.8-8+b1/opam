@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-network-protocol-xmpp-dev_0.4.8-8+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-network-protocol-xmpp-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-gnuidn-dev"
+  "deb-libghc-gnutls-dev"
+  "deb-libghc-gsasl-dev"
+  "deb-libghc-libxml-sax-dev"
+  "deb-libghc-monads-tf-dev"
+  "deb-libghc-network-dev"
+  "deb-libghc-xml-types-dev"
+  "deb-libgmp10"
+  "deb-libgnutls30" {>= "3.5.3"}
+  "deb-libgsasl7" {>= "1.1"}
+  "deb-libidn11" {>= "1.13"}
+  "deb-libxml2" {>= "2.6.27"}
+]
+extra-source "libghc-network-protocol-xmpp-dev_0.4.8-8+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-network-protocol-xmpp/libghc-network-protocol-xmpp-dev_0.4.8-8+b1_amd64.deb"
+}

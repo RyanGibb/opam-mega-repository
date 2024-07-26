@@ -1,0 +1,58 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kdelibs5-dev_4:4.14.38-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kdelibs5-dev"]
+]
+depends: [
+  "deb-automoc" {>= "1.0~version-0.9.88"}
+  "deb-kdelibs-bin" {= "4-4.14.38-3"}
+  "deb-kdoctools" {= "4-4.14.38-3"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libkcmutils4" {= "4-4.14.38-3"}
+  "deb-libkde3support4" {= "4-4.14.38-3"}
+  "deb-libkdeclarative5" {= "4-4.14.38-3"}
+  "deb-libkdecore5" {= "4-4.14.38-3"}
+  "deb-libkdesu5" {= "4-4.14.38-3"}
+  "deb-libkdeui5" {= "4-4.14.38-3"}
+  "deb-libkdewebkit5" {= "4-4.14.38-3"}
+  "deb-libkdnssd4" {= "4-4.14.38-3"}
+  "deb-libkemoticons4" {= "4-4.14.38-3"}
+  "deb-libkfile4" {= "4-4.14.38-3"}
+  "deb-libkhtml5" {= "4-4.14.38-3"}
+  "deb-libkidletime4" {= "4-4.14.38-3"}
+  "deb-libkimproxy4" {= "4-4.14.38-3"}
+  "deb-libkio5" {= "4-4.14.38-3"}
+  "deb-libkjsapi4" {= "4-4.14.38-3"}
+  "deb-libkjsembed4" {= "4-4.14.38-3"}
+  "deb-libkmediaplayer4" {= "4-4.14.38-3"}
+  "deb-libknewstuff2-4" {= "4-4.14.38-3"}
+  "deb-libknewstuff3-4" {= "4-4.14.38-3"}
+  "deb-libknotifyconfig4" {= "4-4.14.38-3"}
+  "deb-libkntlm4" {= "4-4.14.38-3"}
+  "deb-libkparts4" {= "4-4.14.38-3"}
+  "deb-libkprintutils4" {= "4-4.14.38-3"}
+  "deb-libkpty4" {= "4-4.14.38-3"}
+  "deb-libkrosscore4" {= "4-4.14.38-3"}
+  "deb-libkrossui4" {= "4-4.14.38-3"}
+  "deb-libktexteditor4" {= "4-4.14.38-3"}
+  "deb-libkunitconversion4" {= "4-4.14.38-3"}
+  "deb-libkutils4" {= "4-4.14.38-3"}
+  "deb-libphonon-dev" {>= "4-4.6.0really4.4.3"}
+  "deb-libplasma3" {= "4-4.14.38-3"}
+  "deb-libqt4-dev" {>= "4-4.8.0"}
+  "deb-libqt4-xml" {>= "4-4.8.0"}
+  "deb-libqtcore4" {>= "4-4.8.0"}
+  "deb-libsolid4" {= "4-4.14.38-3"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libthreadweaver4" {= "4-4.14.38-3"}
+  "deb-perl-any"
+]
+conflicts: [
+  "deb-kdelibs4-dev"
+  "deb-libkjsembed-dev"
+]
+extra-source "kdelibs5-dev_4:4.14.38-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kde4libs/kdelibs5-dev_4.14.38-3_amd64.deb"
+}

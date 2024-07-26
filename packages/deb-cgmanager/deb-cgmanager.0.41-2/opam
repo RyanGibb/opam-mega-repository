@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cgmanager_0.41-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cgmanager"]
+]
+depends: [
+  "deb-init-system-helpers" {>= "1.18~"}
+  "deb-libc6" {>= "2.15"}
+  "deb-libcgmanager0" {>= "0.33"}
+  "deb-libdbus-1-3" {>= "1.9.14"}
+  "deb-libnih-dbus1" {>= "1.0.0"}
+  "deb-libnih1" {>= "1.0.0"}
+]
+conflicts: [
+  "deb-cgmanager-utils"
+]
+extra-source "cgmanager_0.41-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cgmanager/cgmanager_0.41-2_amd64.deb"
+}

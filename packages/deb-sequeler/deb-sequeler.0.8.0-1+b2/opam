@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sequeler_0.8.0-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sequeler"]
+]
+depends: [
+  "deb-libc6" {>= "2.15"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libgda-5-0-4" {>= "5.0.2"}
+  "deb-libgee-0-8-2" {>= "0.10.1"}
+  "deb-libglib2-0-0" {>= "2.43.92"}
+  "deb-libgranite6" {>= "6.0.0"}
+  "deb-libgtk-3-0" {>= "3.22.29"}
+  "deb-libgtksourceview-3-0-1" {>= "2.91.4"}
+  "deb-libsecret-1-0" {>= "0.7"}
+  "deb-libssh2-1" {>= "1.2.8"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "sequeler_0.8.0-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sequeler/sequeler_0.8.0-1+b2_amd64.deb"
+}

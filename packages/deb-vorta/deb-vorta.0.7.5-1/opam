@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i vorta_0.7.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r vorta"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-appdirs"
+  "deb-python3-apscheduler"
+  "deb-python3-dateutil"
+  "deb-python3-paramiko" {>= "2.6.0-1~"}
+  "deb-python3-peewee"
+  "deb-python3-pkg-resources"
+  "deb-python3-psutil"
+  "deb-python3-pyqt5"
+  "deb-python3-pyqt5-qsci"
+  "deb-python3-secretstorage"
+]
+extra-source "vorta_0.7.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/vorta/vorta_0.7.5-1_all.deb"
+}

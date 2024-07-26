@@ -1,0 +1,46 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkf5eventviews5abi1_4:22.12.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkf5eventviews5abi1"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libkf5akonadicalendar5abi1"
+  "deb-libkf5akonadicalendar5abi1" {>= "4-22.12.3"}
+  "deb-libkf5akonadicore5abi2"
+  "deb-libkf5akonadicore5abi2" {>= "4-22.12.3"}
+  "deb-libkf5akonadiwidgets5abi1"
+  "deb-libkf5akonadiwidgets5abi1" {>= "4-22.12.3"}
+  "deb-libkf5calendarcore5abi2" {>= "5-5.99.0~"}
+  "deb-libkf5calendarsupport5abi1"
+  "deb-libkf5calendarsupport5abi1" {>= "4-22.12.3"}
+  "deb-libkf5calendarutils5"
+  "deb-libkf5calendarutils5" {>= "4-22.12.3"}
+  "deb-libkf5codecs5" {>= "5.99.0~"}
+  "deb-libkf5completion5" {>= "5.99.0~"}
+  "deb-libkf5configcore5" {>= "4.98.0"}
+  "deb-libkf5configgui5" {>= "4.97.0"}
+  "deb-libkf5configwidgets5" {>= "5.99.0~"}
+  "deb-libkf5contacts5" {>= "5-5.99.0~"}
+  "deb-libkf5coreaddons5" {>= "5.96.0"}
+  "deb-libkf5eventviews-data" {>= "4-22.12.3-1"}
+  "deb-libkf5guiaddons5" {>= "5.99.0~"}
+  "deb-libkf5holidays5" {>= "1-5.99.0~"}
+  "deb-libkf5i18n5" {>= "5.99.0~"}
+  "deb-libkf5iconthemes5" {>= "5.99.0~"}
+  "deb-libkf5itemmodels5" {>= "5.99.0~"}
+  "deb-libkf5libkdepim5"
+  "deb-libkf5libkdepim5" {>= "4-22.12.3"}
+  "deb-libkf5widgetsaddons5" {>= "5.94.0"}
+  "deb-libkgantt2" {>= "2.6.0"}
+  "deb-libqt5core5a" {>= "5.15.2~"}
+  "deb-libqt5widgets5" {>= "5.15.2~"}
+  "deb-libstdc++6" {>= "5"}
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+]
+extra-source "libkf5eventviews5abi1_4:22.12.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libk/libkf5eventviews/libkf5eventviews5abi1_22.12.3-1_amd64.deb"
+}

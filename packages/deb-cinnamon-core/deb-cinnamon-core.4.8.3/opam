@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cinnamon-core_4.8.3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cinnamon-core"]
+]
+depends: [
+  "deb-cinnamon" {>= "4.8"}
+  "deb-cinnamon-control-center" {>= "4.8"}
+  "deb-cinnamon-screensaver" {>= "4.8"}
+  "deb-cinnamon-session" {>= "4.8"}
+  "deb-cinnamon-settings-daemon" {>= "4.8"}
+  "deb-desktop-base"
+  "deb-muffin" {>= "4.8"}
+  "deb-nemo" {>= "4.8"}
+  "deb-xserver-xorg"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-gnome-terminal" | "deb- x-terminal-emulator")
+  ("deb-lightdm" | "deb- gdm3" | "deb- x-display-manager")
+]
+extra-source "cinnamon-core_4.8.3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cinnamon-desktop-environment/cinnamon-core_4.8.3_all.deb"
+}

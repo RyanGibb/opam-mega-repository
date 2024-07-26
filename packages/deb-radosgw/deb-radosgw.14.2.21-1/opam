@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i radosgw_14.2.21-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r radosgw"]
+]
+depends: [
+  "deb-ceph-common" {= "14.2.21-1"}
+  "deb-libboost-coroutine1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.30"}
+  "deb-libcurl3-gnutls" {>= "7.28.0"}
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgoogle-perftools4"
+  "deb-libldap-2-4-2" {>= "2.4.7"}
+  "deb-libnspr4" {>= "2-4.9-2~"}
+  "deb-libnss3" {>= "2-3.13.4-2~"}
+  "deb-librabbitmq4" {>= "0.6.0"}
+  "deb-librados2" {>= "14.2.0"}
+  "deb-librgw2" {= "14.2.21-1"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libstdc++6" {>= "9"}
+]
+extra-source "radosgw_14.2.21-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/ceph/radosgw_14.2.21-1_amd64.deb"
+}

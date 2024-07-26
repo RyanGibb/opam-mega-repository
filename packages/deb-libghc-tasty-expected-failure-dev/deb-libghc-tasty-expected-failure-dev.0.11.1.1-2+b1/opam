@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-tasty-expected-failure-dev_0.11.1.1-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-tasty-expected-failure-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-tagged-dev"
+  "deb-libghc-tasty-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-tasty-expected-failure-dev_0.11.1.1-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-tasty-expected-failure/libghc-tasty-expected-failure-dev_0.11.1.1-2+b1_amd64.deb"
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i puppet-module-swift_13.1.0-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r puppet-module-swift"]
+]
+depends: [
+  "deb-e2fsprogs"
+  "deb-puppet-common"
+  "deb-puppet-module-keystone" {>= "13.1.0"}
+  "deb-puppet-module-openstacklib" {>= "13.1.0"}
+  "deb-puppet-module-puppetlabs-concat"
+  "deb-puppet-module-puppetlabs-inifile"
+  "deb-puppet-module-puppetlabs-rsync"
+  "deb-puppet-module-puppetlabs-stdlib"
+  "deb-puppet-module-puppetlabs-xinetd"
+  "deb-puppet-module-saz-memcached"
+  "deb-xfsprogs"
+]
+extra-source "puppet-module-swift_13.1.0-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/puppet-module-swift/puppet-module-swift_13.1.0-4_all.deb"
+}

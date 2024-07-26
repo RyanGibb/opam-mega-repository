@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libfacter3.14.12_3.14.12-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libfacter3.14.12"]
+]
+depends: [
+  "deb-libblkid1" {>= "2.16"}
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0"}
+  "deb-libboost-locale1-74-0" {>= "1.74.0"}
+  "deb-libboost-program-options1-74-0" {>= "1.74.0"}
+  "deb-libboost-regex1-74-0"
+  "deb-libc6" {>= "2.29"}
+  "deb-libcpp-hocon0-3-0" {>= "0.3.0"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libleatherman1-12-1" {>= "1.12.1+dfsg"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libyaml-cpp0-6" {>= "0.6.2"}
+]
+extra-source "libfacter3.14.12_3.14.12-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/facter/libfacter3.14.12_3.14.12-1+b2_amd64.deb"
+}

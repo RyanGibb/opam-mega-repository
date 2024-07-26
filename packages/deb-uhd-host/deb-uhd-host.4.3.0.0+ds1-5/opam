@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i uhd-host_4.3.0.0+ds1-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r uhd-host"]
+]
+depends: [
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-program-options1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-test1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-thread1-74-0" {>= "1.74.0+ds1"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libncurses6" {>= "6"}
+  "deb-libstdc++6" {>= "12"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-libuhd4-3-0" {= "4.3.0.0+ds1-5"}
+  "deb-python3-any"
+  "deb-python3-numpy"
+  "deb-python3-numpy" {>= "1-1.22.0"}
+  "deb-python3-requests"
+]
+extra-source "uhd-host_4.3.0.0+ds1-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/u/uhd/uhd-host_4.3.0.0+ds1-5_amd64.deb"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libapr1_1.7.2-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libapr1"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libuuid1" {>= "2.16"}
+]
+conflicts: [
+  "deb-libapr1-0"
+]
+extra-source "libapr1_1.7.2-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/apr/libapr1_1.7.2-3_amd64.deb"
+}

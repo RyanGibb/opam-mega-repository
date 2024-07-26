@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpappsomspp0_0.8.15-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpappsomspp0"]
+]
+depends: [
+  "deb-libalglib3-17" {>= "3.17.0"}
+  "deb-libboost-atomic1-74-0" {>= "1.74.0"}
+  "deb-libboost-chrono1-74-0" {>= "1.74.0"}
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0"}
+  "deb-libboost-iostreams1-74-0" {>= "1.74.0"}
+  "deb-libboost-thread1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libpwizlite3" {>= "3.0.3"}
+  "deb-libqt5concurrent5" {>= "5.6.0~rc"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5printsupport5" {>= "5.0.2"}
+  "deb-libqt5sql5" {>= "5.3.0"}
+  "deb-libqt5svg5" {>= "5.7.0"}
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-libqt5xml5" {>= "5.1.0"}
+  "deb-libsqlite3-0" {>= "3.5.9"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libzstd1" {>= "1.3.3"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libqt5gui5" {>= "5.8.0"} | "deb- libqt5gui5-gles" {>= "5.8.0"})
+]
+extra-source "libpappsomspp0_0.8.15-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libp/libpappsomspp/libpappsomspp0_0.8.15-1+b1_amd64.deb"
+}

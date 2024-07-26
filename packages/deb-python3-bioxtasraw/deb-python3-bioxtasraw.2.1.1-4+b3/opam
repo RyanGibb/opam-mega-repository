@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-bioxtasraw_2.1.1-4+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-bioxtasraw"]
+]
+depends: [
+  "deb-cython3"
+  "deb-libc6" {>= "2.4"}
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-any"
+  "deb-python3-dbus"
+  "deb-python3-fabio"
+  "deb-python3-h5py"
+  "deb-python3-matplotlib"
+  "deb-python3-numba"
+  "deb-python3-numexpr"
+  "deb-python3-numpy"
+  "deb-python3-numpy" {>= "1-1.22.0"}
+  "deb-python3-pil"
+  "deb-python3-pyfai"
+  "deb-python3-reportlab"
+  "deb-python3-scipy"
+  "deb-python3-silx"
+  "deb-python3-wxgtk4-0"
+]
+extra-source "python3-bioxtasraw_2.1.1-4+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/bioxtasraw/python3-bioxtasraw_2.1.1-4+b3_amd64.deb"
+}

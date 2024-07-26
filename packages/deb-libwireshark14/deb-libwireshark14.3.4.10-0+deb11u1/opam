@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libwireshark14_3.4.10-0+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libwireshark14"]
+]
+depends: [
+  "deb-libbcg729-0" {>= "1.0.0"}
+  "deb-libbrotli1" {>= "0.6.0"}
+  "deb-libc-ares2" {>= "1.7.1"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcrypt20" {>= "1.8.0"}
+  "deb-libglib2-0-0" {>= "2.31.18"}
+  "deb-libgnutls30" {>= "3.7.0"}
+  "deb-libk5crypto3" {>= "1.7+dfsg"}
+  "deb-libkrb5-3" {>= "1.7dfsg"}
+  "deb-liblua5-2-0"
+  "deb-liblz4-1" {>= "0.0~r127"}
+  "deb-libnghttp2-14" {>= "1.11.0"}
+  "deb-libsbc1" {>= "1.5"}
+  "deb-libsmi2ldbl" {>= "0.4.5+dfsg0"}
+  "deb-libsnappy1v5" {>= "1.1.8"}
+  "deb-libspandsp2" {>= "0.0.6~pre18"}
+  "deb-libwireshark-data" {>= "3.4.10-0+deb11u1"}
+  "deb-libwiretap11" {>= "2.9.1"}
+  "deb-libwsutil12" {>= "3.4.10-0+deb11u1"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libzstd1" {>= "1.4.0"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libwireshark14_3.4.10-0+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/w/wireshark/libwireshark14_3.4.10-0+deb11u1_amd64.deb"
+}

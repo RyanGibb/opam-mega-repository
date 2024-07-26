@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-es6-map_0.1.5-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-es6-map"]
+]
+depends: [
+  "deb-node-d"
+  "deb-node-es5-ext"
+  "deb-node-es6-iterator"
+  "deb-node-es6-set"
+  "deb-node-es6-symbol"
+  "deb-node-event-emitter"
+]
+extra-source "node-es6-map_0.1.5-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-es6-map/node-es6-map_0.1.5-3_all.deb"
+}

@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i recon-ng_5.1.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r recon-ng"]
+]
+depends: [
+  "deb-libjs-jquery"
+  "deb-libjs-skeleton"
+  "deb-node-normalize-css"
+  "deb-python3"
+  "deb-python3-any"
+  "deb-python3-dicttoxml"
+  "deb-python3-dnspython"
+  "deb-python3-flasgger"
+  "deb-python3-flask"
+  "deb-python3-flask-restful"
+  "deb-python3-lxml"
+  "deb-python3-mechanize"
+  "deb-python3-redis"
+  "deb-python3-requests"
+  "deb-python3-rq"
+  "deb-python3-unicodecsv"
+  "deb-python3-xlsxwriter"
+  "deb-python3-yaml"
+]
+extra-source "recon-ng_5.1.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/recon-ng/recon-ng_5.1.1-3_all.deb"
+}

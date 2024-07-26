@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i stress-ng_0.15.06-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r stress-ng"]
+]
+depends: [
+  "deb-libapparmor1" {>= "2.10"}
+  "deb-libbsd0" {>= "0.6.0"}
+  "deb-libc6" {>= "2.36"}
+  "deb-libcrypt1" {>= "1-4.1.0"}
+  "deb-libegl1"
+  "deb-libgbm1" {>= "8.1~0"}
+  "deb-libgles2"
+  "deb-libipsec-mb1" {>= "1.3"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libjudydebian1"
+  "deb-libkmod2" {>= "5~"}
+  "deb-libsctp1" {>= "1.0.10+dfsg"}
+  "deb-libxxhash0" {>= "0.6.5"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "stress-ng_0.15.06-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/stress-ng/stress-ng_0.15.06-2_amd64.deb"
+}

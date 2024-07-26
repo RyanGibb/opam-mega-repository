@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-cryptohash-conduit-prof_0.1.1-11+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-cryptohash-conduit-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-conduit-extra-prof"
+  "deb-libghc-conduit-prof"
+  "deb-libghc-cryptohash-conduit-dev" {= "0.1.1-11+b3"}
+  "deb-libghc-cryptohash-prof"
+  "deb-libghc-resourcet-prof"
+]
+extra-source "libghc-cryptohash-conduit-prof_0.1.1-11+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-cryptohash-conduit/libghc-cryptohash-conduit-prof_0.1.1-11+b3_amd64.deb"
+}

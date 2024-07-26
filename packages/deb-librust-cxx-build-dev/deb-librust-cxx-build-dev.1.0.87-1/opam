@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-cxx-build-dev_1.0.87-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-cxx-build-dev"]
+]
+depends: [
+  "deb-librust-cc+jobserver-dev"
+  "deb-librust-cc-dev"
+  "deb-librust-codespan-reporting-dev"
+  "deb-librust-once-cell-dev"
+  "deb-librust-proc-macro2-dev"
+  "deb-librust-quote-1-dev"
+  "deb-librust-scratch-1+default-dev"
+  "deb-librust-syn-dev"
+]
+extra-source "librust-cxx-build-dev_1.0.87-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-cxx-build/librust-cxx-build-dev_1.0.87-1_amd64.deb"
+}

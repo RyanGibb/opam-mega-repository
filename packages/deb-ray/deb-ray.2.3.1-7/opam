@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ray_2.3.1-7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ray"]
+]
+depends: [
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc1" {>= "1-3.4"}
+  "deb-libopenmpi3" {>= "4.0.2"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-mpi-default-bin"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "ray_2.3.1-7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ray/ray_2.3.1-7_amd64.deb"
+}

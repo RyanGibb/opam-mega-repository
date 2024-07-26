@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i irqbalance_1.5.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r irqbalance"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libcap-ng0" {>= "0.7.9"}
+  "deb-libglib2-0-0" {>= "2.35.8"}
+  "deb-libncursesw6" {>= "6"}
+  "deb-libnuma1" {>= "2.0.11"}
+  "deb-libsystemd0"
+  "deb-libtinfo6" {>= "6"}
+  "deb-lsb-base" {>= "3.1"}
+  "deb-runit-helper" {>= "2.8.1~"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "irqbalance_1.5.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/irqbalance/irqbalance_1.5.0-3_amd64.deb"
+}

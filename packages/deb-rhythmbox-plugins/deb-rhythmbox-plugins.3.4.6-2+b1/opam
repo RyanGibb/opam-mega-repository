@@ -1,0 +1,47 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i rhythmbox-plugins_3.4.6-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r rhythmbox-plugins"]
+]
+depends: [
+  "deb-gir1-2-glib-2-0"
+  "deb-gir1-2-gstreamer-1-0"
+  "deb-gir1-2-gtk-3-0"
+  "deb-gir1-2-peas-1-0"
+  "deb-gir1-2-rb-3-0" {= "3.4.6-2+b1"}
+  "deb-gir1-2-secret-1"
+  "deb-gir1-2-webkit2-4-0"
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.33"}
+  "deb-libdmapsharing-3-0-2" {>= "2.9.19"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.38.0"}
+  "deb-libgpod4" {>= "0.8.2-4"}
+  "deb-libgrilo-0-3-0" {>= "0.3.0"}
+  "deb-libgstreamer-plugins-base1-0-0" {>= "1.4.0"}
+  "deb-libgstreamer1-0-0" {>= "1.4.0"}
+  "deb-libgtk-3-0" {>= "3.20.0"}
+  "deb-libgudev-1-0-0" {>= "146"}
+  "deb-libjson-glib-1-0-0" {>= "1.5.2"}
+  "deb-liblirc-client0"
+  "deb-libmtp9" {>= "1.1.0"}
+  "deb-libnotify4" {>= "0.7.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpeas-1-0-0" {>= "1.0.0"}
+  "deb-librhythmbox-core10" {= "3.4.6-2+b1"}
+  "deb-libsecret-1-0" {>= "0.18"}
+  "deb-libsoup2-4-1" {>= "2.42.0"}
+  "deb-libtotem-plparser18" {>= "3.26.0"}
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-11"
+  "deb-python3-any"
+  "deb-python3-gi"
+  "deb-python3-mako"
+  "deb-rhythmbox" {= "3.4.6-2+b1"}
+]
+extra-source "rhythmbox-plugins_3.4.6-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rhythmbox/rhythmbox-plugins_3.4.6-2+b1_amd64.deb"
+}

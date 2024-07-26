@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openmolcas_20.10-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openmolcas"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgfortran5" {>= "10"}
+  "deb-libgomp1" {>= "4.4"}
+  "deb-libopenblas64-0"
+  "deb-openmolcas-data" {= "20.10-2"}
+  "deb-perl-any"
+  "deb-python3"
+  "deb-python3-pyparsing"
+  "deb-python3-six"
+]
+extra-source "openmolcas_20.10-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openmolcas/openmolcas_20.10-2_amd64.deb"
+}

@@ -1,0 +1,46 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-etcd-server-dev_3.2.26+dfsg-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-etcd-server-dev"]
+]
+depends: [
+  "deb-golang-github-bgentry-speakeasy-dev" {>= "0.1.0~"}
+  "deb-golang-github-cockroachdb-cmux-dev"
+  "deb-golang-github-coreos-bbolt-dev"
+  "deb-golang-github-coreos-go-semver-dev" {>= "0.2.0~"}
+  "deb-golang-github-coreos-go-systemd-dev"
+  "deb-golang-github-coreos-pkg-dev"
+  "deb-golang-github-dgrijalva-jwt-go-v3-dev"
+  "deb-golang-github-dustin-go-humanize-dev"
+  "deb-golang-github-ghodss-yaml-dev" {>= "1.0.0~"}
+  "deb-golang-github-gogo-protobuf-dev"
+  "deb-golang-github-golang-groupcache-dev" {>= "0.0~git20160516.0.02826c3~"}
+  "deb-golang-github-google-btree-dev"
+  "deb-golang-github-grpc-ecosystem-go-grpc-prometheus-dev"
+  "deb-golang-github-grpc-ecosystem-grpc-gateway-dev" {>= "1.2.0~"}
+  "deb-golang-github-jonboulle-clockwork-dev"
+  "deb-golang-github-kr-pty-dev" {>= "1.0.0~"}
+  "deb-golang-github-mattn-go-runewidth-dev" {>= "0.0.2~"}
+  "deb-golang-github-olekukonko-tablewriter-dev" {>= "0.0~git20170122.0.a0225b3"}
+  "deb-golang-github-prometheus-client-golang-dev"
+  "deb-golang-github-prometheus-common-dev" {>= "0+git20170220.49fee29"}
+  "deb-golang-github-spf13-cobra-dev"
+  "deb-golang-github-spf13-pflag-dev"
+  "deb-golang-github-ugorji-go-codec-dev" {>= "1.1.1~"}
+  "deb-golang-github-urfave-cli-dev"
+  "deb-golang-github-xiang90-probing-dev" {>= "0.0.1~"}
+  "deb-golang-go-uber-zap-dev"
+  "deb-golang-golang-x-crypto-dev"
+  "deb-golang-golang-x-net-dev"
+  "deb-golang-golang-x-sys-dev"
+  "deb-golang-golang-x-time-dev"
+  "deb-golang-google-grpc-dev"
+  "deb-golang-gopkg-cheggaaa-pb-v1-dev"
+  "deb-golang-goprotobuf-dev"
+  "deb-golang-procfs-dev" {>= "0+git20170216.a1dba9c"}
+]
+extra-source "golang-etcd-server-dev_3.2.26+dfsg-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/etcd/golang-etcd-server-dev_3.2.26+dfsg-3_all.deb"
+}

@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i systemd-tests_247.3-7+deb11u5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r systemd-tests"]
+]
+depends: [
+  "deb-libacl1" {>= "2.2.23"}
+  "deb-libapparmor1" {>= "2.13"}
+  "deb-libaudit1" {>= "1-2.2.1"}
+  "deb-libblkid1" {>= "2.24"}
+  "deb-libc6" {>= "2.30"}
+  "deb-libcap2" {>= "1-2.24-9~"}
+  "deb-libdbus-1-3" {>= "1.9.14"}
+  "deb-libelogind0"
+  "deb-libgcrypt20" {>= "1.8.0"}
+  "deb-libglib2-0-0" {>= "2.26.0"}
+  "deb-libgpg-error0" {>= "1.14"}
+  "deb-libip4tc2" {>= "1.8.3"}
+  "deb-libkmod2" {>= "5~"}
+  "deb-liblz4-1" {>= "0.0~r130"}
+  "deb-libmount1" {>= "2.30"}
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-libseccomp2" {>= "2.4.1"}
+  "deb-libselinux1" {>= "3.1~"}
+  "deb-libudev1" {>= "247"}
+  "deb-python3"
+  "deb-systemd" {= "247.3-7+deb11u5"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "systemd-tests_247.3-7+deb11u5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/systemd/systemd-tests_247.3-7+deb11u5_amd64.deb"
+}

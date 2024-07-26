@@ -1,0 +1,49 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lava-dev_2020.12-5+deb11u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lava-dev"]
+]
+depends: [
+  "deb-build-essential"
+  "deb-ca-certificates"
+  "deb-debhelper" {>= "9.20160709"}
+  "deb-debootstrap" {>= "1.0.86"}
+  "deb-devscripts"
+  "deb-dh-python"
+  "deb-docbook-xsl"
+  "deb-dpkg-dev"
+  "deb-fakeroot"
+  "deb-git"
+  "deb-libdistro-info-perl"
+  "deb-libjs-bootstrap"
+  "deb-libjs-excanvas"
+  "deb-libjs-jquery"
+  "deb-libjs-jquery-flot" {>= "0.8.2"}
+  "deb-libjs-jquery-typeahead"
+  "deb-node-uglify"
+  "deb-python3-any"
+  "deb-python3-configobj"
+  "deb-python3-guestfs"
+  "deb-python3-magic"
+  "deb-python3-netifaces"
+  "deb-python3-pexpect" {>= "4.2"}
+  "deb-python3-pymongo"
+  "deb-python3-pytest"
+  "deb-python3-pytest-django"
+  "deb-python3-pyudev"
+  "deb-python3-requests"
+  "deb-python3-setuptools"
+  "deb-python3-sphinx" {>= "1.4"}
+  "deb-python3-sphinx-bootstrap-theme"
+  "deb-python3-tz"
+  "deb-python3-voluptuous" {>= "0.8.8"}
+  "deb-python3-yaml"
+  "deb-python3-zmq"
+  "deb-xsltproc"
+  ("deb-pep8" | "deb- python3-pep8")
+]
+extra-source "lava-dev_2020.12-5+deb11u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lava/lava-dev_2020.12-5+deb11u2_all.deb"
+}

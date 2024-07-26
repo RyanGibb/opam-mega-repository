@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libglobus-io-dev_12.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libglobus-io-dev"]
+]
+depends: [
+  "deb-libglobus-common-dev" {>= "15"}
+  "deb-libglobus-gss-assist-dev" {>= "8"}
+  "deb-libglobus-gssapi-error-dev" {>= "4"}
+  "deb-libglobus-gssapi-gsi-dev" {>= "10"}
+  "deb-libglobus-io3" {= "12.3-1"}
+  "deb-libglobus-xio-dev" {>= "3"}
+  "deb-libglobus-xio-gsi-driver-dev" {>= "2"}
+]
+extra-source "libglobus-io-dev_12.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/globus-io/libglobus-io-dev_12.3-1_amd64.deb"
+}

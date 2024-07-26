@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openvpn-2.5.6-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openvpn"]
+]
+depends: [
+  "apk-busybox" {= "1.35.0-r18"}
+  "apk-iproute2-minimal" {= "5.17.0-r0"}
+  "apk-libcrypto1-1" {= "1.1.1w-r1"}
+  "apk-libssl1-1" {= "1.1.1w-r1"}
+  "apk-lzo" {= "2.10-r3"}
+  "apk-musl" {= "1.2.3-r3"}
+]
+extra-source "openvpn-2.5.6-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/openvpn-2.5.6-r1.apk"
+}

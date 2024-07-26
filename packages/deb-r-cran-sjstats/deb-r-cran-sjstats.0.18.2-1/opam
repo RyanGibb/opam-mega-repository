@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-sjstats_0.18.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-sjstats"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.2.20221110-1"}
+  "deb-r-cran-bayestestr"
+  "deb-r-cran-broom"
+  "deb-r-cran-datawizard"
+  "deb-r-cran-dplyr"
+  "deb-r-cran-effectsize"
+  "deb-r-cran-emmeans"
+  "deb-r-cran-insight"
+  "deb-r-cran-lme4"
+  "deb-r-cran-magrittr"
+  "deb-r-cran-mass"
+  "deb-r-cran-modelr"
+  "deb-r-cran-parameters"
+  "deb-r-cran-performance"
+  "deb-r-cran-purrr"
+  "deb-r-cran-rlang"
+  "deb-r-cran-sjlabelled"
+  "deb-r-cran-sjmisc"
+  "deb-r-cran-tidyr"
+]
+extra-source "r-cran-sjstats_0.18.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-sjstats/r-cran-sjstats_0.18.2-1_all.deb"
+}

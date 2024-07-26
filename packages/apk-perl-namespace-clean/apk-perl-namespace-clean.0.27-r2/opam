@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-namespace-clean-0.27-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-namespace-clean"]
+]
+depends: [
+  "apk-perl" {= "5.36.2-r0"}
+  "apk-perl-b-hooks-endofscope" {= "0.26-r0"}
+  "apk-perl-package-stash" {= "0.40-r0"}
+  "apk-perl-sub-identify" {= "0.14-r7"}
+  "apk-perl-sub-name" {= "0.26-r4"}
+]
+extra-source "perl-namespace-clean-0.27-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-namespace-clean-0.27-r2.apk"
+}

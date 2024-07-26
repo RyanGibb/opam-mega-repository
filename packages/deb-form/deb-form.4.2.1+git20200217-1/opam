@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i form_4.2.1+git20200217-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r form"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.4"}
+  "deb-libgmp10"
+  "deb-libopenmpi3" {>= "4.0.2"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-strace"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "form_4.2.1+git20200217-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/form/form_4.2.1+git20200217-1_amd64.deb"
+}

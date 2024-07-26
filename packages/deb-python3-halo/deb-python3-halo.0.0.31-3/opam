@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-halo_0.0.31-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-halo"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-colorama"
+  "deb-python3-log-symbols"
+  "deb-python3-six" {>= "1.12.0"}
+  "deb-python3-spinners"
+  "deb-python3-termcolor"
+]
+extra-source "python3-halo_0.0.31-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-halo/python3-halo_0.0.31-3_all.deb"
+}

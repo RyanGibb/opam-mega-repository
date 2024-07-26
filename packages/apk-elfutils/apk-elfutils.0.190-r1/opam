@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add elfutils-0.190-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del elfutils"]
+]
+depends: [
+  "apk-libasm" {= "0.190-r1"}
+  "apk-libdw" {= "0.190-r1"}
+  "apk-libelf" {= "0.190-r1"}
+  "apk-libgcc" {= "13.2.1_git20231014-r0"}
+  "apk-libstdc++" {= "13.2.1_git20231014-r0"}
+  "apk-musl" {= "1.2.4_git20230717-r4"}
+  "apk-musl-obstack" {= "1.2.3-r2"}
+]
+extra-source "elfutils-0.190-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/elfutils-0.190-r1.apk"
+}

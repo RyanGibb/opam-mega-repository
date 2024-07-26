@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-mypy_0.812-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-mypy"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-python3" {< "3.10"}
+  "deb-python3" {>= "3.9~"}
+  "deb-python3-any"
+  "deb-python3-distutils"
+  "deb-python3-mypy-extensions"
+  "deb-python3-pkg-resources"
+  "deb-python3-psutil"
+  "deb-python3-typed-ast" {< "1.5.0"}
+  "deb-python3-typing-extensions"
+]
+extra-source "python3-mypy_0.812-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mypy/python3-mypy_0.812-1_amd64.deb"
+}

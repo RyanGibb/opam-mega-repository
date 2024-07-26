@@ -1,0 +1,89 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cinnamon_4.8.6-2+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cinnamon"]
+]
+depends: [
+  "deb-cinnamon-common" {= "4.8.6-2+deb11u1"}
+  "deb-cinnamon-control-center" {>= "4.8"}
+  "deb-cinnamon-desktop-data" {>= "4.8"}
+  "deb-cinnamon-screensaver" {>= "4.8"}
+  "deb-cinnamon-session" {>= "4.8"}
+  "deb-cinnamon-settings-daemon" {>= "4.8"}
+  "deb-cjs" {>= "4.8"}
+  "deb-cups-pk-helper"
+  "deb-dbus"
+  "deb-gir1-2-accountsservice-1-0"
+  "deb-gir1-2-caribou-1-0"
+  "deb-gir1-2-clutter-1-0"
+  "deb-gir1-2-cmenu-3-0" {>= "4.8"}
+  "deb-gir1-2-cogl-1-0"
+  "deb-gir1-2-cvc-1-0" {>= "4.8"}
+  "deb-gir1-2-gdkpixbuf-2-0"
+  "deb-gir1-2-gkbd-3-0"
+  "deb-gir1-2-glib-2-0"
+  "deb-gir1-2-gnomedesktop-3-0"
+  "deb-gir1-2-gtk-3-0"
+  "deb-gir1-2-gtkclutter-1-0"
+  "deb-gir1-2-keybinder-3-0"
+  "deb-gir1-2-nemo-3-0" {>= "4.8"}
+  "deb-gir1-2-nm-1-0"
+  "deb-gir1-2-nma-1-0"
+  "deb-gir1-2-notify-0-7"
+  "deb-gir1-2-pango-1-0"
+  "deb-gir1-2-polkit-1-0"
+  "deb-gir1-2-soup-2-4"
+  "deb-gir1-2-timezonemap-1-0"
+  "deb-gir1-2-upowerglib-1-0"
+  "deb-gir1-2-xapp-1-0" {>= "1.9.0"}
+  "deb-gkbd-capplet"
+  "deb-gnome-backgrounds"
+  "deb-gnome-themes-extra"
+  "deb-gsettings-desktop-schemas" {>= "0.1.7"}
+  "deb-iso-flags-png-320x240"
+  "deb-libatk-bridge2-0-0" {>= "2.5.3"}
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libcairo2" {>= "1.10.0"}
+  "deb-libcinnamon-desktop4" {>= "4.8"}
+  "deb-libcinnamon-menu-3-0" {>= "4.8.0"}
+  "deb-libcjs0" {>= "4.8"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libgirepository-1-0-1" {>= "1.29.15"}
+  "deb-libgl1"
+  "deb-libglib2-0-0" {>= "2.52.0"}
+  "deb-libglib2-0-bin"
+  "deb-libgstreamer1-0-0" {>= "1.4.0"}
+  "deb-libgtk-3-0" {>= "3.9.12"}
+  "deb-libmuffin0" {>= "4.8"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libstartup-notification0" {>= "0.11"}
+  "deb-libx11-6"
+  "deb-libxfixes3" {>= "1-4.0.1"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-mesa-utils"
+  "deb-muffin" {>= "4.8"}
+  "deb-nemo" {>= "4.8"}
+  "deb-network-manager-gnome"
+  "deb-policykit-1-gnome" {>= "0.105-6"}
+  "deb-python3"
+  "deb-python3-dbus"
+  "deb-python3-distro"
+  "deb-python3-gi"
+  "deb-python3-gi-cairo"
+  "deb-python3-pampy"
+  "deb-python3-pexpect"
+  "deb-python3-pil"
+  "deb-python3-pyinotify"
+  "deb-python3-setproctitle"
+  "deb-python3-tinycss2"
+  "deb-python3-tz"
+  "deb-xapps-common" {>= "1.9.0"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "cinnamon_4.8.6-2+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cinnamon/cinnamon_4.8.6-2+deb11u1_amd64.deb"
+}

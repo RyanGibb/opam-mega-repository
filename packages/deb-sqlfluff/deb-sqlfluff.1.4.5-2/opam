@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sqlfluff_1.4.5-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sqlfluff"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-appdirs"
+  "deb-python3-chardet"
+  "deb-python3-click"
+  "deb-python3-colorama"
+  "deb-python3-jinja2"
+  "deb-python3-pathspec"
+  "deb-python3-pytest"
+  "deb-python3-regex"
+  "deb-python3-tblib"
+  "deb-python3-toml"
+  "deb-python3-tqdm"
+  "deb-python3-typing-extensions"
+  "deb-python3-yaml"
+  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
+]
+extra-source "sqlfluff_1.4.5-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sqlfluff/sqlfluff_1.4.5-2_all.deb"
+}

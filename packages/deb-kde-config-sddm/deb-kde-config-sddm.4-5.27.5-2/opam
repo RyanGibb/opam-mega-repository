@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kde-config-sddm_4:5.27.5-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kde-config-sddm"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libkf5archive5" {>= "5.102.0~"}
+  "deb-libkf5authcore5" {>= "5.102.0~"}
+  "deb-libkf5configcore5" {>= "4.98.0"}
+  "deb-libkf5configgui5" {>= "4.97.0"}
+  "deb-libkf5coreaddons5" {>= "5.102.0~"}
+  "deb-libkf5i18n5" {>= "5.102.0~"}
+  "deb-libkf5kcmutils5" {>= "5.102.0~"}
+  "deb-libkf5kiogui5" {>= "5.102.0~"}
+  "deb-libkf5quickaddons5" {>= "5.102.0~"}
+  "deb-libkf5service-bin"
+  "deb-libkf5service5" {>= "4.96.0"}
+  "deb-libkf5widgetsaddons5" {>= "4.96.0"}
+  "deb-libqt5core5a" {>= "5.15.2~"}
+  "deb-libqt5qml5" {>= "5.15.2~"}
+  "deb-libqt5widgets5" {>= "5.15.2~"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-qml-module-qtquick-layouts"
+  "deb-qml-module-qtquick2"
+  "deb-systemsettings"
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+]
+extra-source "kde-config-sddm_4:5.27.5-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sddm-kcm/kde-config-sddm_5.27.5-2_amd64.deb"
+}

@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libtrilinos-stratimikos12_12.18.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libtrilinos-stratimikos12"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libopenmpi3" {>= "4.1.0"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libtrilinos-amesos12" {>= "12.18.1"}
+  "deb-libtrilinos-amesos2-12" {>= "12.18.1"}
+  "deb-libtrilinos-aztecoo12" {>= "12.18.1"}
+  "deb-libtrilinos-belos12" {>= "12.18.1"}
+  "deb-libtrilinos-epetra12" {>= "12.18.1"}
+  "deb-libtrilinos-epetraext12" {>= "12.18.1"}
+  "deb-libtrilinos-ifpack12" {>= "12.18.1"}
+  "deb-libtrilinos-ml12" {>= "12.18.1"}
+  "deb-libtrilinos-teuchos12" {>= "12.18.1"}
+  "deb-libtrilinos-thyra12" {>= "12.18.1"}
+]
+extra-source "libtrilinos-stratimikos12_12.18.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/trilinos/libtrilinos-stratimikos12_12.18.1-2_amd64.deb"
+}

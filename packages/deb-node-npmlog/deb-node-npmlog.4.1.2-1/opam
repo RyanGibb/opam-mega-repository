@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-npmlog_4.1.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-npmlog"]
+]
+depends: [
+  "deb-node-are-we-there-yet"
+  "deb-node-console-control-strings"
+  "deb-node-gauge"
+  "deb-node-set-blocking"
+  "deb-nodejs"
+]
+extra-source "node-npmlog_4.1.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-npmlog/node-npmlog_4.1.2-1_all.deb"
+}

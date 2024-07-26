@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i recordmydesktop_0.3.8.1+svn602-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r recordmydesktop"]
+]
+depends: [
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libice6" {>= "1-1.0.0"}
+  "deb-libogg0" {>= "1.0rc3"}
+  "deb-libpopt0" {>= "1.14"}
+  "deb-libsm6"
+  "deb-libtheora0" {>= "0.0.0.alpha7.dfsg"}
+  "deb-libvorbis0a" {>= "1.1.2"}
+  "deb-libvorbisenc2" {>= "1.1.2"}
+  "deb-libvorbisfile3" {>= "1.1.2"}
+  "deb-libx11-6" {>= "2-1.4.99.1"}
+  "deb-libxdamage1" {>= "1-1.1"}
+  "deb-libxext6"
+  "deb-libxfixes3"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+]
+conflicts: [
+  "deb-gtk-recordmydesktop" {< "0.3.5"}
+]
+extra-source "recordmydesktop_0.3.8.1+svn602-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/recordmydesktop/recordmydesktop_0.3.8.1+svn602-1+b2_amd64.deb"
+}

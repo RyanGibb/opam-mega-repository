@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librosbag-storage-dev_1.14.3+ds1-5+deb10u3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librosbag-storage-dev"]
+]
+depends: [
+  "deb-libboost-date-time-dev"
+  "deb-libboost-filesystem-dev"
+  "deb-libboost-program-options-dev"
+  "deb-libboost-regex-dev"
+  "deb-libbz2-dev"
+  "deb-libconsole-bridge-dev"
+  "deb-libgpgme-dev"
+  "deb-librosbag-storage3d" {= "1.14.3+ds1-5+deb10u3"}
+  "deb-libroslz4-dev"
+  "deb-pluginlib-dev"
+]
+extra-source "librosbag-storage-dev_1.14.3+ds1-5+deb10u3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ros-ros-comm/librosbag-storage-dev_1.14.3+ds1-5+deb10u3_amd64.deb"
+}

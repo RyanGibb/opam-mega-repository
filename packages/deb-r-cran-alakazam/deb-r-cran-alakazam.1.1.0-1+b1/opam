@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-alakazam_1.1.0-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-alakazam"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.4-1"}
+  "deb-r-bioc-biostrings"
+  "deb-r-bioc-genomicalignments"
+  "deb-r-bioc-iranges"
+  "deb-r-cran-airr"
+  "deb-r-cran-ape"
+  "deb-r-cran-dplyr" {>= "1.0"}
+  "deb-r-cran-ggplot2" {>= "3.2.0"}
+  "deb-r-cran-igraph" {>= "1.0.0"}
+  "deb-r-cran-lazyeval"
+  "deb-r-cran-matrix"
+  "deb-r-cran-progress"
+  "deb-r-cran-rcpp" {>= "0.12.12"}
+  "deb-r-cran-readr"
+  "deb-r-cran-rlang"
+  "deb-r-cran-scales"
+  "deb-r-cran-seqinr"
+  "deb-r-cran-stringi"
+  "deb-r-cran-tibble"
+  "deb-r-cran-tidyr" {>= "1.0.0"}
+]
+extra-source "r-cran-alakazam_1.1.0-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-alakazam/r-cran-alakazam_1.1.0-1+b1_amd64.deb"
+}

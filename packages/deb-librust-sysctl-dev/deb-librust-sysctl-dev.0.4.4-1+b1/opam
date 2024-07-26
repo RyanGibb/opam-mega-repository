@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-sysctl-dev_0.4.4-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-sysctl-dev"]
+]
+depends: [
+  "deb-librust-bitflags-1+default-dev"
+  "deb-librust-byteorder-1+default-dev"
+  "deb-librust-libc-dev"
+  "deb-librust-thiserror-dev"
+  "deb-librust-walkdir-dev"
+]
+extra-source "librust-sysctl-dev_0.4.4-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-sysctl/librust-sysctl-dev_0.4.4-1+b1_amd64.deb"
+}

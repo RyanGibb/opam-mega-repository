@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i isdnutils-xtools_1:3.25+dfsg1-10_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r isdnutils-xtools"]
+]
+depends: [
+  "deb-isdnutils-base" {= "1-3.25+dfsg1-10"}
+  "deb-libc6" {>= "2.15"}
+  "deb-libice6" {>= "1-1.0.0"}
+  "deb-libsm6"
+  "deb-libx11-6"
+  "deb-libxaw7"
+  "deb-libxext6"
+  "deb-libxmu6"
+  "deb-libxpm4"
+  "deb-libxt6"
+]
+extra-source "isdnutils-xtools_1:3.25+dfsg1-10_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/isdnutils/isdnutils-xtools_3.25+dfsg1-10_amd64.deb"
+}

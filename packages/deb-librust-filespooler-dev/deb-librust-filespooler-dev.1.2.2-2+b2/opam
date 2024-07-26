@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-filespooler-dev_1.2.2-2+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-filespooler-dev"]
+]
+depends: [
+  "deb-librust-anyhow-dev"
+  "deb-librust-bytes-dev"
+  "deb-librust-chrono-dev"
+  "deb-librust-clap-3-dev"
+  "deb-librust-crc32fast-dev"
+  "deb-librust-fd-lock-dev"
+  "deb-librust-rmp-serde-dev"
+  "deb-librust-serde+serde-derive-dev"
+  "deb-librust-serde-dev"
+  "deb-librust-tempfile-dev"
+  "deb-librust-tracing-dev"
+  "deb-librust-tracing-subscriber-dev"
+  "deb-librust-uuid-1+default-dev"
+  "deb-librust-uuid-1+v4-dev"
+  "deb-librust-wait-timeout-0-2+default-dev"
+]
+extra-source "librust-filespooler-dev_1.2.2-2+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-filespooler/librust-filespooler-dev_1.2.2-2+b2_amd64.deb"
+}

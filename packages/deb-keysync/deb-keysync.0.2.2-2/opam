@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i keysync_0.2.2-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r keysync"]
+]
+depends: [
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7~"}
+  "deb-python-bs4"
+  "deb-python-crypto"
+  "deb-python-pgpdump"
+  "deb-python-pil"
+  "deb-python-pil-imagetk"
+  "deb-python-pkg-resources"
+  "deb-python-potr"
+  "deb-python-psutil"
+  "deb-python-pyasn1"
+  "deb-python-pyjavaproperties"
+  "deb-python-pymtp" {>= "0.0.6~"}
+  "deb-python-pyparsing"
+  "deb-python-qrcode"
+  "deb-python-six"
+  "deb-python-tk"
+]
+extra-source "keysync_0.2.2-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/keysync/keysync_0.2.2-2_all.deb"
+}

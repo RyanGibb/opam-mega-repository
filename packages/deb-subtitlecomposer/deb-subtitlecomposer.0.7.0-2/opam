@@ -1,0 +1,46 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i subtitlecomposer_0.7.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r subtitlecomposer"]
+]
+depends: [
+  "deb-kio"
+  "deb-libavcodec-extra58"
+  "deb-libavformat58" {>= "7-4.1"}
+  "deb-libavutil56" {>= "7-4.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libgstreamer-plugins-base1-0-0" {>= "1.0.0"}
+  "deb-libgstreamer1-0-0" {>= "1.4.0"}
+  "deb-libicu67" {>= "67.1-1~"}
+  "deb-libkf5codecs5" {>= "4.96.0"}
+  "deb-libkf5completion5" {>= "4.97.0"}
+  "deb-libkf5configcore5" {>= "4.98.0"}
+  "deb-libkf5configgui5" {>= "4.97.0"}
+  "deb-libkf5configwidgets5" {>= "4.96.0"}
+  "deb-libkf5coreaddons5" {>= "4.100.0"}
+  "deb-libkf5i18n5" {>= "4.97.0"}
+  "deb-libkf5kiocore5" {>= "5.69.0"}
+  "deb-libkf5kiofilewidgets5" {>= "5.69.0"}
+  "deb-libkf5kiowidgets5" {>= "5.69.0"}
+  "deb-libkf5krosscore5" {>= "4.96.0"}
+  "deb-libkf5sonnetcore5" {>= "4.96.0"}
+  "deb-libkf5sonnetui5" {>= "4.96.0"}
+  "deb-libkf5textwidgets5" {>= "4.96.0"}
+  "deb-libkf5widgetsaddons5" {>= "4.96.0"}
+  "deb-libkf5xmlgui5" {>= "4.98.0"}
+  "deb-libmpv1" {>= "0.8.0"}
+  "deb-libphonon4qt5-4" {>= "4-4.8.0"}
+  "deb-libqt5core5a" {>= "5.14.1"}
+  "deb-libqt5widgets5" {>= "5.11.0~rc1"}
+  "deb-libstdc++6" {>= "4.9"}
+  "deb-libswresample3" {>= "7-4.0"}
+  "deb-phonon4qt5"
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "subtitlecomposer_0.7.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/subtitlecomposer/subtitlecomposer_0.7.0-2_amd64.deb"
+}

@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libtrilinos-stokhos-13.2_13.2.0-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libtrilinos-stokhos-13.2"]
+]
+depends: [
+  "deb-libc6" {>= "2.32"}
+  "deb-libgcc-s1" {>= "3.4"}
+  "deb-libopenmpi3" {>= "4.1.4"}
+  "deb-libptscotch-7-0" {>= "7.0.3"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libtrilinos-amesos2-13-2" {>= "13.2.0"}
+  "deb-libtrilinos-belos-13-2" {>= "13.2.0"}
+  "deb-libtrilinos-epetra-13-2" {>= "13.2.0"}
+  "deb-libtrilinos-epetraext-13-2" {>= "13.2.0"}
+  "deb-libtrilinos-ifpack-13-2" {>= "13.2.0"}
+  "deb-libtrilinos-ifpack2-13-2" {>= "13.2.0"}
+  "deb-libtrilinos-isorropia-13-2" {>= "13.2.0"}
+  "deb-libtrilinos-kokkos-13-2" {>= "13.2.0"}
+  "deb-libtrilinos-kokkos-kernels-13-2" {>= "13.2.0"}
+  "deb-libtrilinos-ml-13-2" {>= "13.2.0"}
+  "deb-libtrilinos-muelu-13-2" {>= "13.2.0"}
+  "deb-libtrilinos-nox-13-2" {>= "13.2.0"}
+  "deb-libtrilinos-shards-13-2" {>= "13.2.0"}
+  "deb-libtrilinos-teuchos-13-2" {>= "13.2.0"}
+  "deb-libtrilinos-tpetra-13-2" {>= "13.2.0"}
+  "deb-libtrilinos-xpetra-13-2" {>= "13.2.0"}
+  "deb-libtrilinos-zoltan-13-2" {>= "13.2.0"}
+  "deb-libtrilinos-zoltan2-13-2" {>= "13.2.0"}
+]
+extra-source "libtrilinos-stokhos-13.2_13.2.0-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/trilinos/libtrilinos-stokhos-13.2_13.2.0-4_amd64.deb"
+}

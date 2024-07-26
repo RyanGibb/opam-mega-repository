@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i photofilmstrip_4.0.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r photofilmstrip"]
+]
+depends: [
+  "deb-gstreamer1-0-libav"
+  "deb-libjs-sphinxdoc" {>= "4.3"}
+  "deb-python3-any"
+  "deb-python3-ges-1-0"
+  "deb-python3-gst-1-0"
+  "deb-python3-pil"
+  "deb-python3-wxgtk4-0"
+]
+extra-source "photofilmstrip_4.0.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/photofilmstrip/photofilmstrip_4.0.0-1_all.deb"
+}

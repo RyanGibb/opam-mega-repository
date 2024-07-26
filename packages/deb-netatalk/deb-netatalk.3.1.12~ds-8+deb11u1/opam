@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i netatalk_3.1.12~ds-8+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r netatalk"]
+]
+depends: [
+  "deb-libacl1" {>= "2.2.23"}
+  "deb-libavahi-client3" {>= "0.6.16"}
+  "deb-libavahi-common3" {>= "0.6.16"}
+  "deb-libc6" {>= "2.28"}
+  "deb-libcrack2" {>= "2.8.12"}
+  "deb-libcrypt1" {>= "1-4.1.0"}
+  "deb-libdb5-3"
+  "deb-libdbus-glib-1-2" {>= "0.88"}
+  "deb-libevent-2-1-7" {>= "2.1.8-stable"}
+  "deb-libgcrypt20" {>= "1.8.0"}
+  "deb-libglib2-0-0" {>= "2.31.8"}
+  "deb-libgssapi-krb5-2" {>= "1.14+dfsg"}
+  "deb-libkrb5-3" {>= "1.6.dfsg.2"}
+  "deb-libldap-2-4-2" {>= "2.4.7"}
+  "deb-libmariadb3" {>= "3.0.0"}
+  "deb-libpam-modules"
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libtalloc2" {>= "2.0.4~git20101213"}
+  "deb-libtdb1" {>= "1.2.7+git20101214"}
+  "deb-libtracker-sparql-2-0-0" {>= "0.10.0"}
+  "deb-libwrap0" {>= "7.6-4~"}
+  "deb-lsb-base"
+  "deb-netbase"
+  "deb-perl-any"
+]
+extra-source "netatalk_3.1.12~ds-8+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/netatalk/netatalk_3.1.12~ds-8+deb11u1_amd64.deb"
+}

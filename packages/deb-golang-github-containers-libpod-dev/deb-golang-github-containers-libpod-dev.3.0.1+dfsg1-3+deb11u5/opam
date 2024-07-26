@@ -1,0 +1,75 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-containers-libpod-dev_3.0.1+dfsg1-3+deb11u5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-containers-libpod-dev"]
+]
+depends: [
+  "deb-golang-dbus-dev" {>= "5.0.2~"}
+  "deb-golang-ginkgo-dev"
+  "deb-golang-github-appc-cni-dev" {>= "0.8"}
+  "deb-golang-github-buger-goterm-dev"
+  "deb-golang-github-checkpoint-restore-go-criu-dev"
+  "deb-golang-github-containerd-cgroups-dev"
+  "deb-golang-github-containernetworking-plugins-dev" {>= "0.8.7"}
+  "deb-golang-github-containers-buildah-dev" {>= "1.19"}
+  "deb-golang-github-containers-common-dev" {>= "0.33.4+ds1-1+deb11u2"}
+  "deb-golang-github-containers-image-dev" {>= "5.10"}
+  "deb-golang-github-containers-ocicrypt-dev"
+  "deb-golang-github-containers-psgo-dev" {>= "1.5.2-1+deb11u1"}
+  "deb-golang-github-containers-storage-dev" {>= "1.24.8+dfsg1-1+deb11u1"}
+  "deb-golang-github-coreos-bbolt-dev" {>= "1.3.3~"}
+  "deb-golang-github-coreos-go-iptables-dev" {>= "0.4.2~"}
+  "deb-golang-github-coreos-go-systemd-dev" {>= "20~"}
+  "deb-golang-github-cyphar-filepath-securejoin-dev" {>= "0.2.2~"}
+  "deb-golang-github-docker-distribution-dev" {>= "2.7.1~"}
+  "deb-golang-github-docker-docker-dev" {>= "20.10.0~"}
+  "deb-golang-github-docker-go-connections-dev" {>= "0.4.0~"}
+  "deb-golang-github-docker-go-units-dev" {>= "0.4.0~"}
+  "deb-golang-github-docker-spdystream-dev"
+  "deb-golang-github-fullsailor-pkcs7-dev"
+  "deb-golang-github-ghodss-yaml-dev"
+  "deb-golang-github-google-shlex-dev"
+  "deb-golang-github-google-uuid-dev"
+  "deb-golang-github-hashicorp-go-multierror-dev"
+  "deb-golang-github-json-iterator-go-dev"
+  "deb-golang-github-mrunalp-fileutils-dev"
+  "deb-golang-github-opencontainers-go-digest-dev"
+  "deb-golang-github-opencontainers-image-spec-dev"
+  "deb-golang-github-opencontainers-runc-dev" {>= "1.0.0~rc92~"}
+  "deb-golang-github-opencontainers-runtime-tools-dev" {>= "0.9.0~"}
+  "deb-golang-github-opencontainers-selinux-dev" {>= "1.2.2~"}
+  "deb-golang-github-openshift-api-dev"
+  "deb-golang-github-openshift-imagebuilder-dev"
+  "deb-golang-github-pkg-errors-dev"
+  "deb-golang-github-pkg-profile-dev"
+  "deb-golang-github-rootless-containers-rootlesskit-dev"
+  "deb-golang-github-seccomp-containers-golang-dev"
+  "deb-golang-github-seccomp-libseccomp-golang-dev"
+  "deb-golang-github-sirupsen-logrus-dev"
+  "deb-golang-github-stretchr-testify-dev"
+  "deb-golang-github-uber-go-atomic-dev"
+  "deb-golang-github-ulikunitz-xz-dev"
+  "deb-golang-github-vbatts-tar-split-dev"
+  "deb-golang-github-vishvananda-netlink-dev" {>= "1.0.0+git20181030~"}
+  "deb-golang-github-vividcortex-ewma-dev"
+  "deb-golang-go-opencensus-dev"
+  "deb-golang-go-zfs-dev"
+  "deb-golang-golang-x-crypto-dev"
+  "deb-golang-golang-x-sys-dev"
+  "deb-golang-golang-x-text-dev"
+  "deb-golang-golang-x-xerrors-dev"
+  "deb-golang-gomega-dev"
+  "deb-golang-google-genproto-dev"
+  "deb-golang-google-grpc-dev"
+  "deb-golang-gopkg-inf-v0-dev"
+  "deb-golang-gopkg-square-go-jose-v2-dev"
+  "deb-golang-gopkg-yaml-v3-dev"
+  "deb-golang-k8s-sigs-structured-merge-diff-dev"
+  "deb-golang-toml-dev"
+  ("deb-golang-github-influxdata-tail-dev" {>= "1.0.0+git20180327.c434825-2~"} | "deb- golang-github-hpcloud-tail-dev")
+]
+extra-source "golang-github-containers-libpod-dev_3.0.1+dfsg1-3+deb11u5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libp/libpod/golang-github-containers-libpod-dev_3.0.1+dfsg1-3+deb11u5_all.deb"
+}

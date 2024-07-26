@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libtiles-java_3.0.7-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libtiles-java"]
+]
+depends: [
+  "deb-libcommons-digester-java" {>= "1.8.1"}
+  "deb-libguava-java"
+  "deb-libmvel-java"
+  "deb-libognl-java"
+  "deb-libslf4j-java" {>= "1.7.25"}
+  "deb-libtiles-autotag-java" {>= "1.2"}
+  "deb-libtiles-request-java" {>= "1.0.7"}
+  "deb-libvelocity-tools-java"
+]
+extra-source "libtiles-java_3.0.7-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tiles/libtiles-java_3.0.7-4_all.deb"
+}

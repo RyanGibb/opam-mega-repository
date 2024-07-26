@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcaribou0_0.4.21-7.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcaribou0"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libcaribou-common" {= "0.4.21-7.1"}
+  "deb-libgee-0-8-2" {>= "0.8.3"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libgtk-3-0" {>= "3.0.0"}
+  "deb-libx11-6"
+  "deb-libxklavier16" {>= "5.0"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libxtst6"
+]
+extra-source "libcaribou0_0.4.21-7.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/caribou/libcaribou0_0.4.21-7.1_amd64.deb"
+}

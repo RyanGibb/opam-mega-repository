@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-nbconvert_5.6.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-nbconvert"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-bleach"
+  "deb-python3-defusedxml"
+  "deb-python3-entrypoints"
+  "deb-python3-jinja2"
+  "deb-python3-jupyter-core"
+  "deb-python3-mistune"
+  "deb-python3-nbformat"
+  "deb-python3-pandocfilters" {>= "1.4"}
+  "deb-python3-pygments"
+  "deb-python3-testpath"
+  "deb-python3-traitlets"
+]
+extra-source "python3-nbconvert_5.6.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/nbconvert/python3-nbconvert_5.6.1-3_all.deb"
+}

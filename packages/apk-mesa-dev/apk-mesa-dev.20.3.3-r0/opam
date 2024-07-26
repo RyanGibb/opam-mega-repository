@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mesa-dev-20.3.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mesa-dev"]
+]
+depends: [
+  "apk-libdrm-dev" {= "2.4.104-r0"}
+  "apk-libx11-dev" {= "1.7.1-r0"}
+  "apk-libxcb-dev" {= "1.14-r1"}
+  "apk-libxdamage-dev" {= "1.1.5-r1"}
+  "apk-libxext-dev" {= "1.3.4-r0"}
+  "apk-libxfixes-dev" {= "5.0.3-r2"}
+  "apk-libxshmfence-dev" {= "1.3-r1"}
+  "apk-libxxf86vm-dev" {= "1.1.4-r2"}
+  "apk-mesa-egl" {= "20.3.3-r0"}
+  "apk-mesa-gbm" {= "20.3.3-r0"}
+  "apk-mesa-gl" {= "20.3.3-r0"}
+  "apk-mesa-glapi" {= "20.3.3-r0"}
+  "apk-mesa-gles" {= "20.3.3-r0"}
+  "apk-mesa-osmesa" {= "20.3.3-r0"}
+  "apk-mesa-xatracker" {= "20.3.3-r0"}
+  "apk-pkgconf" {= "1.7.3-r0"}
+]
+extra-source "mesa-dev-20.3.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/mesa-dev-20.3.3-r0.apk"
+}

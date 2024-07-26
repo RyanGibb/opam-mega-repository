@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-html-conduit-dev_1.3.2.1-1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-html-conduit-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-attoparsec-dev"
+  "deb-libghc-conduit-dev"
+  "deb-libghc-conduit-extra-dev"
+  "deb-libghc-resourcet-dev"
+  "deb-libghc-xml-conduit-dev"
+  "deb-libghc-xml-types-dev"
+  "deb-libgmp10"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libghc-html-conduit-dev_1.3.2.1-1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-html-conduit/libghc-html-conduit-dev_1.3.2.1-1+b3_amd64.deb"
+}

@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-opensuse-umoci-dev_0.4.7+ds-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-opensuse-umoci-dev"]
+]
+depends: [
+  "deb-golang-github-apex-log-dev"
+  "deb-golang-github-cyphar-filepath-securejoin-dev"
+  "deb-golang-github-docker-go-units-dev"
+  "deb-golang-github-klauspost-compress-dev"
+  "deb-golang-github-klauspost-pgzip-dev"
+  "deb-golang-github-opencontainers-go-digest-dev"
+  "deb-golang-github-opencontainers-image-spec-dev"
+  "deb-golang-github-opencontainers-runc-dev"
+  "deb-golang-github-opencontainers-specs-dev"
+  "deb-golang-github-pkg-errors-dev"
+  "deb-golang-github-rootless-containers-proto-dev"
+  "deb-golang-github-urfave-cli-dev"
+  "deb-golang-github-vbatts-go-mtree-dev"
+  "deb-golang-golang-x-sys-dev"
+  "deb-golang-goprotobuf-dev"
+]
+extra-source "golang-github-opensuse-umoci-dev_0.4.7+ds-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/u/umoci/golang-github-opensuse-umoci-dev_0.4.7+ds-2_all.deb"
+}

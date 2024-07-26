@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-astrometry_0.93+dfsg-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-astrometry"]
+]
+depends: [
+  "deb-file"
+  "deb-libastrometry0" {>= "0.93+dfsg"}
+  "deb-libc6" {>= "2.35"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libgsl27" {>= "2.7.1"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libnetpbm11" {>= "2-10.97.00"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libwcs7" {>= "7.6"}
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-any"
+  "deb-python3-astropy"
+  "deb-python3-numpy"
+  "deb-python3-numpy" {>= "1-1.22.0"}
+]
+extra-source "python3-astrometry_0.93+dfsg-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/astrometry.net/python3-astrometry_0.93+dfsg-1+b1_amd64.deb"
+}

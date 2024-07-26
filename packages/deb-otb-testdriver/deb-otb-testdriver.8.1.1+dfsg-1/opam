@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i otb-testdriver_8.1.1+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r otb-testdriver"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libinsighttoolkit4-13" {>= "4.13.3withdata-dfsg2"}
+  "deb-libotbcommon-8-1-1" {>= "6.6.1"}
+  "deb-libotbgdaladapters-8-1-1" {>= "5.2.0"}
+  "deb-libotbtestkernel-8-1-1" {>= "7.0.0"}
+  "deb-libstdc++6" {>= "9"}
+]
+extra-source "otb-testdriver_8.1.1+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/otb/otb-testdriver_8.1.1+dfsg-1_amd64.deb"
+}

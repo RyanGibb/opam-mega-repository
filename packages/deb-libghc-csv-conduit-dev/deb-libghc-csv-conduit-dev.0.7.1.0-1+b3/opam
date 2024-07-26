@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-csv-conduit-dev_0.7.1.0-1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-csv-conduit-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.27"}
+  "deb-libghc-attoparsec-dev"
+  "deb-libghc-blaze-builder-dev"
+  "deb-libghc-conduit-dev"
+  "deb-libghc-conduit-extra-dev"
+  "deb-libghc-data-default-dev"
+  "deb-libghc-exceptions-dev"
+  "deb-libghc-mmorph-dev"
+  "deb-libghc-monad-control-dev"
+  "deb-libghc-primitive-dev"
+  "deb-libghc-resourcet-dev"
+  "deb-libghc-semigroups-dev"
+  "deb-libghc-unordered-containers-dev"
+  "deb-libghc-vector-dev"
+  "deb-libgmp10"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libghc-csv-conduit-dev_0.7.1.0-1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-csv-conduit/libghc-csv-conduit-dev_0.7.1.0-1+b3_amd64.deb"
+}

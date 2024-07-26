@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lxd_5.0.2-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lxd"]
+]
+depends: [
+  "deb-attr"
+  "deb-ca-certificates"
+  "deb-libacl1" {>= "2.2.23"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcap2" {>= "1-2.10"}
+  "deb-libdqlite0" {>= "1.11.1"}
+  "deb-libgcc-s1" {>= "3.3.1"}
+  "deb-liblxc-common"
+  "deb-liblxc1" {>= "1-4.0.2"}
+  "deb-libsqlite3-0" {>= "3.12.0"}
+  "deb-libudev1" {>= "199"}
+  "deb-lxcfs"
+  "deb-lxd-client" {= "5.0.2-5"}
+  "deb-rsync"
+  "deb-squashfs-tools"
+  "deb-uidmap"
+  "deb-xz-utils"
+]
+extra-source "lxd_5.0.2-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lxd/lxd_5.0.2-5_amd64.deb"
+}

@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i logidee-tools_1.2.19_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r logidee-tools"]
+]
+depends: [
+  "deb-ghostscript"
+  "deb-imagemagick"
+  "deb-perl-any"
+  "deb-psutils"
+  "deb-texlive-fonts-recommended"
+  "deb-texlive-lang-french"
+  "deb-texlive-lang-german"
+  "deb-texlive-latex-extra"
+  "deb-texlive-latex-recommended"
+  "deb-texlive-pictures"
+  "deb-texlive-pstricks"
+  "deb-xsltproc" {>= "1.0"}
+]
+extra-source "logidee-tools_1.2.19_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/logidee-tools/logidee-tools_1.2.19_all.deb"
+}

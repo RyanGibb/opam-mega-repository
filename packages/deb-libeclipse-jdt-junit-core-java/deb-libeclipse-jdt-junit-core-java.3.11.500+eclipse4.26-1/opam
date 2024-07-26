@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libeclipse-jdt-junit-core-java_3.11.500+eclipse4.26-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libeclipse-jdt-junit-core-java"]
+]
+depends: [
+  "deb-libeclipse-core-expressions-java"
+  "deb-libeclipse-core-jobs-java"
+  "deb-libeclipse-core-resources-java"
+  "deb-libeclipse-core-runtime-java"
+  "deb-libeclipse-debug-core-java"
+  "deb-libeclipse-jdt-core-java"
+  "deb-libeclipse-jdt-junit-runtime-java"
+  "deb-libeclipse-jdt-launching-java" {>= "3.11"}
+  "deb-libequinox-common-java"
+  "deb-libequinox-frameworkadmin-java"
+  "deb-libequinox-preferences-java"
+  "deb-libequinox-registry-java"
+  "deb-libequinox-simpleconfigurator-manipulator-java"
+]
+extra-source "libeclipse-jdt-junit-core-java_3.11.500+eclipse4.26-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/eclipse-jdt-ui/libeclipse-jdt-junit-core-java_3.11.500+eclipse4.26-1_all.deb"
+}

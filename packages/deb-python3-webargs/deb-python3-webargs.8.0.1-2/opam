@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-webargs_8.0.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-webargs"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-bottle"
+  "deb-python3-django"
+  "deb-python3-flask"
+  "deb-python3-marshmallow" {>= "3.1.0"}
+  "deb-python3-packaging"
+  "deb-python3-pyramid"
+]
+extra-source "python3-webargs_8.0.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-webargs/python3-webargs_8.0.1-2_all.deb"
+}

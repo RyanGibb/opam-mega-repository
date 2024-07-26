@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i liblwt-glib-ocaml_2.7.1-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r liblwt-glib-ocaml"]
+]
+depends: [
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-liblwt-ocaml"
+  "deb-libresult-ocaml"
+  "deb-ocaml-base-nox"
+]
+extra-source "liblwt-glib-ocaml_2.7.1-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lwt/liblwt-glib-ocaml_2.7.1-4+b1_amd64.deb"
+}

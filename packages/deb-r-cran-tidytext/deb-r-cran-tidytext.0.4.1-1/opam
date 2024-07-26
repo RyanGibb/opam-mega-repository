@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-tidytext_0.4.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-tidytext"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.2.20221110-1"}
+  "deb-r-cran-cli"
+  "deb-r-cran-dplyr"
+  "deb-r-cran-generics"
+  "deb-r-cran-janeaustenr"
+  "deb-r-cran-lifecycle"
+  "deb-r-cran-matrix"
+  "deb-r-cran-purrr" {>= "0.1.1"}
+  "deb-r-cran-rlang" {>= "0.4.10"}
+  "deb-r-cran-stringr"
+  "deb-r-cran-tibble"
+  "deb-r-cran-tokenizers"
+  "deb-r-cran-vctrs"
+]
+extra-source "r-cran-tidytext_0.4.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-tidytext/r-cran-tidytext_0.4.1-1_all.deb"
+}

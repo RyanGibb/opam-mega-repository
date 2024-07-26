@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-atk_3.3.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-atk"]
+]
+depends: [
+  "deb-gir1-2-atk-1-0"
+  "deb-ruby-glib2" {>= "3.3.2-1"}
+  "deb-ruby-gobject-introspection" {>= "3.3.2-1"}
+  ("deb-ruby" | "deb- ruby-interpreter")
+]
+extra-source "ruby-atk_3.3.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-gnome2/ruby-atk_3.3.2-1_all.deb"
+}

@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcatalyst-devel-perl_1.39-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcatalyst-devel-perl"]
+]
+depends: [
+  "deb-libcatalyst-perl" {>= "5.90001"}
+  "deb-libconfig-general-perl"
+  "deb-libfile-changenotify-perl"
+  "deb-libfile-copy-recursive-perl"
+  "deb-libfile-sharedir-perl"
+  "deb-libmoose-perl"
+  "deb-libmoosex-emulate-class-accessor-fast-perl"
+  "deb-libnamespace-autoclean-perl"
+  "deb-libnamespace-clean-perl"
+  "deb-libpath-class-perl"
+  "deb-libtemplate-perl"
+  "deb-libyaml-tiny-perl"
+  "deb-perl"
+]
+extra-source "libcatalyst-devel-perl_1.39-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libcatalyst-devel-perl/libcatalyst-devel-perl_1.39-2_all.deb"
+}

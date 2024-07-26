@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdirectfb-dev_1.7.7-11_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdirectfb-dev"]
+]
+depends: [
+  "deb-lib++dfb-1-7-7" {= "1.7.7-11"}
+  "deb-libdirectfb-1-7-7" {= "1.7.7-11"}
+  "deb-libfreetype6-dev"
+  "deb-libgl1-mesa-dev"
+  "deb-libjpeg-dev"
+  "deb-libmpeg3-dev"
+  "deb-libpng-dev"
+  "deb-libx11-dev"
+  "deb-libxext-dev"
+  "deb-pkg-config"
+  "deb-x11proto-core-dev"
+  "deb-zlib1g-dev"
+]
+extra-source "libdirectfb-dev_1.7.7-11_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/directfb/libdirectfb-dev_1.7.7-11_amd64.deb"
+}

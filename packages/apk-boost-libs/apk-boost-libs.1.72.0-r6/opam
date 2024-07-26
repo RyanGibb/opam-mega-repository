@@ -1,0 +1,42 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add boost-libs-1.72.0-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del boost-libs"]
+]
+depends: [
+  "apk-boost-atomic" {= "1.72.0-r6"}
+  "apk-boost-chrono" {= "1.72.0-r6"}
+  "apk-boost-container" {= "1.72.0-r6"}
+  "apk-boost-context" {= "1.72.0-r6"}
+  "apk-boost-contract" {= "1.72.0-r6"}
+  "apk-boost-coroutine" {= "1.72.0-r6"}
+  "apk-boost-date_time" {= "1.72.0-r6"}
+  "apk-boost-fiber" {= "1.72.0-r6"}
+  "apk-boost-filesystem" {= "1.72.0-r6"}
+  "apk-boost-graph" {= "1.72.0-r6"}
+  "apk-boost-iostreams" {= "1.72.0-r6"}
+  "apk-boost-locale" {= "1.72.0-r6"}
+  "apk-boost-log" {= "1.72.0-r6"}
+  "apk-boost-log_setup" {= "1.72.0-r6"}
+  "apk-boost-math" {= "1.72.0-r6"}
+  "apk-boost-prg_exec_monitor" {= "1.72.0-r6"}
+  "apk-boost-program_options" {= "1.72.0-r6"}
+  "apk-boost-python3" {= "1.72.0-r6"}
+  "apk-boost-random" {= "1.72.0-r6"}
+  "apk-boost-regex" {= "1.72.0-r6"}
+  "apk-boost-serialization" {= "1.72.0-r6"}
+  "apk-boost-stacktrace_basic" {= "1.72.0-r6"}
+  "apk-boost-stacktrace_noop" {= "1.72.0-r6"}
+  "apk-boost-system" {= "1.72.0-r6"}
+  "apk-boost-thread" {= "1.72.0-r6"}
+  "apk-boost-timer" {= "1.72.0-r6"}
+  "apk-boost-type_erasure" {= "1.72.0-r6"}
+  "apk-boost-unit_test_framework" {= "1.72.0-r6"}
+  "apk-boost-wave" {= "1.72.0-r6"}
+  "apk-boost-wserialization" {= "1.72.0-r6"}
+]
+extra-source "boost-libs-1.72.0-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/boost-libs-1.72.0-r6.apk"
+}

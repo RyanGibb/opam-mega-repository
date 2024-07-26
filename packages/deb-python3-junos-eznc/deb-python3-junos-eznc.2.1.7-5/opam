@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-junos-eznc_2.1.7-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-junos-eznc"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-jinja2"
+  "deb-python3-lxml"
+  "deb-python3-ncclient"
+  "deb-python3-netaddr"
+  "deb-python3-paramiko"
+  "deb-python3-scp"
+  "deb-python3-serial"
+  "deb-python3-six"
+  "deb-python3-yaml"
+]
+extra-source "python3-junos-eznc_2.1.7-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/j/junos-eznc/python3-junos-eznc_2.1.7-5_all.deb"
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i jdns_2.0.3-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r jdns"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libjdns2"
+  "deb-libqjdns-qt4-2"
+  "deb-libqt4-network" {>= "4-4.5.3"}
+  "deb-libqtcore4" {>= "4-4.8.0"}
+  "deb-libstdc++6" {>= "5"}
+]
+extra-source "jdns_2.0.3-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libj/libjdns/jdns_2.0.3-1+b2_amd64.deb"
+}

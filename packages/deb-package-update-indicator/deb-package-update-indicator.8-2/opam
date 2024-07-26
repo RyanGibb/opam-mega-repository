@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i package-update-indicator_8-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r package-update-indicator"]
+]
+depends: [
+  "deb-libayatana-appindicator3-1" {>= "0.4.90"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libglib2-0-0" {>= "2.43.2"}
+  "deb-libgtk-3-0" {>= "3.9.10"}
+  "deb-libpackagekit-glib2-18" {>= "0.9.4"}
+  "deb-libpolkit-gobject-1-0" {>= "0.99"}
+  "deb-libupower-glib3" {>= "0.99.0"}
+  "deb-packagekit"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "package-update-indicator_8-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/package-update-indicator/package-update-indicator_8-2_amd64.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i euslisp_9.27+dfsg-7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r euslisp"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgl1"
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libx11-6"
+  "deb-libxext6"
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+extra-source "euslisp_9.27+dfsg-7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/euslisp/euslisp_9.27+dfsg-7_amd64.deb"
+}

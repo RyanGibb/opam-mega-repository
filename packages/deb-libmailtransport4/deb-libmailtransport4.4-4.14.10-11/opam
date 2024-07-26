@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmailtransport4_4:4.14.10-11_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmailtransport4"]
+]
+depends: [
+  "deb-libakonadi-kde4" {= "4-4.14.10-11"}
+  "deb-libakonadi-kmime4" {= "4-4.14.10-11"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libkdecore5" {>= "4-4.14.2"}
+  "deb-libkdeui5" {>= "4-4.14.2"}
+  "deb-libkio5" {>= "4-4.14.2"}
+  "deb-libkmime4" {= "4-4.14.10-11"}
+  "deb-libqt4-dbus" {>= "4-4.8"}
+  "deb-libqt4-network" {>= "4-4.8"}
+  "deb-libqtcore4" {>= "4-4.8"}
+  "deb-libqtgui4" {>= "4-4.8"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-perl-any"
+]
+extra-source "libmailtransport4_4:4.14.10-11_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kdepimlibs/libmailtransport4_4.14.10-11_amd64.deb"
+}

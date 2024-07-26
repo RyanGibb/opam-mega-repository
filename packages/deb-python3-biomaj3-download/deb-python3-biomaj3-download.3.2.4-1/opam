@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-biomaj3-download_3.2.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-biomaj3-download"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-bcrypt"
+  "deb-python3-biomaj3-core" {>= "3.0.26"}
+  "deb-python3-biomaj3-zipkin"
+  "deb-python3-consul"
+  "deb-python3-flask"
+  "deb-python3-ftputil"
+  "deb-python3-humanfriendly"
+  "deb-python3-irodsclient"
+  "deb-python3-pika"
+  "deb-python3-prometheus-client"
+  "deb-python3-protobuf"
+  "deb-python3-pycurl"
+  "deb-python3-redis"
+  "deb-python3-requests"
+  "deb-python3-simpleeval"
+  "deb-python3-tenacity"
+  "deb-python3-yaml"
+]
+extra-source "python3-biomaj3-download_3.2.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/biomaj3-download/python3-biomaj3-download_3.2.4-1_all.deb"
+}

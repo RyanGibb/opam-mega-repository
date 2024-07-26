@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i scsitools_0.12-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r scsitools"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-lsb-base"
+  "deb-sg3-utils" {>= "1.24"}
+]
+conflicts: [
+  "deb-hwtools" {< "0.6"}
+]
+extra-source "scsitools_0.12-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/scsitools/scsitools_0.12-4_amd64.deb"
+}

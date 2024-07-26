@@ -1,0 +1,53 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gdm3_3.38.2.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gdm3"]
+]
+depends: [
+  "deb-accountsservice" {>= "0.6.35"}
+  "deb-adduser"
+  "deb-dbus"
+  "deb-dconf-cli" {>= "0.20"}
+  "deb-dconf-gsettings-backend" {>= "0.20"}
+  "deb-gir1-2-gdm-1-0" {= "3.38.2.1-1"}
+  "deb-gnome-session-bin" {>= "3.37.0"}
+  "deb-gnome-session-common" {>= "3.37.0-2~"}
+  "deb-gnome-settings-daemon" {>= "3.37.0"}
+  "deb-gnome-shell" {>= "3.37.90"}
+  "deb-gsettings-desktop-schemas"
+  "deb-libaccountsservice0" {>= "0.6.37"}
+  "deb-libaudit1" {>= "1-2.2.1"}
+  "deb-libc6" {>= "2.28"}
+  "deb-libcanberra-gtk3-0" {>= "0.25"}
+  "deb-libcanberra0" {>= "0.2"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libgdm1" {= "3.38.2.1-1"}
+  "deb-libglib2-0-0" {>= "2.44.0"}
+  "deb-libglib2-0-bin" {>= "2.35.0"}
+  "deb-libgtk-3-0" {>= "3.0.0"}
+  "deb-libkeyutils1" {>= "1.5.9"}
+  "deb-libpam-modules" {>= "0.72-1"}
+  "deb-libpam-runtime" {>= "0.76-13.1"}
+  "deb-libpam-systemd"
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-librsvg2-common"
+  "deb-libselinux1" {>= "3.1~"}
+  "deb-libsystemd0"
+  "deb-libx11-6"
+  "deb-libxau6"
+  "deb-libxcb1"
+  "deb-libxdmcp6"
+  "deb-lsb-base" {>= "3.2-14"}
+  "deb-policykit-1" {>= "0.105-5~"}
+  "deb-procps"
+  "deb-ucf"
+  "deb-x11-common" {>= "1-7.6+11"}
+  "deb-x11-xserver-utils"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-gnome-session" | "deb- x-session-manager" | "deb- x-window-manager" | "deb- x-terminal-emulator")
+]
+extra-source "gdm3_3.38.2.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gdm3/gdm3_3.38.2.1-1_amd64.deb"
+}

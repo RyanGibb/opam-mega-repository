@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i netplan.io_0.101-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r netplan.io"]
+]
+depends: [
+  "deb-iproute2"
+  "deb-libc6" {>= "2.27"}
+  "deb-libelogind0"
+  "deb-libglib2-0-0" {>= "2.33.14"}
+  "deb-libnetplan0" {>= "0.101-4"}
+  "deb-libuuid1" {>= "2.16"}
+  "deb-python3"
+  "deb-python3-netifaces"
+  "deb-python3-yaml"
+  "deb-systemd" {>= "239~"}
+]
+conflicts: [
+  "deb-netplan"
+]
+extra-source "netplan.io_0.101-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/netplan.io/netplan.io_0.101-4_amd64.deb"
+}

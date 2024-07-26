@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-drr_0.0.4-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-drr"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.0-3"}
+  "deb-r-cran-cvst"
+  "deb-r-cran-kernlab"
+  "deb-r-cran-matrix"
+]
+extra-source "r-cran-drr_0.0.4-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-drr/r-cran-drr_0.0.4-2_all.deb"
+}

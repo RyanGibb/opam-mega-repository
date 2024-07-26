@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i php-horde-listheaders_1.2.5-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r php-horde-listheaders"]
+]
+depends: [
+  "deb-php-common"
+  "deb-php-horde-mail" {< "3.0.0~alpha1"}
+  "deb-php-horde-mail" {>= "2.0.0"}
+  "deb-php-horde-translation" {< "3.0.0~alpha1"}
+  "deb-php-horde-translation" {>= "2.2.0"}
+  "deb-php-horde-util" {< "3.0.0~alpha1"}
+  "deb-php-horde-util" {>= "2.0.0"}
+]
+extra-source "php-horde-listheaders_1.2.5-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/php-horde-listheaders/php-horde-listheaders_1.2.5-3_all.deb"
+}

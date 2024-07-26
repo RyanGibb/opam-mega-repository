@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libticket-simple-perl_0.0.2-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libticket-simple-perl"]
+]
+depends: [
+  "deb-libclass-std-perl" {>= "0.0.9"}
+  "deb-liblog-log4perl-perl" {>= "0.42"}
+  "deb-libreadonly-perl"
+  "deb-libtime-hires-perl"
+  "deb-libversion-perl"
+  "deb-perl"
+]
+extra-source "libticket-simple-perl_0.0.2-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libt/libticket-simple-perl/libticket-simple-perl_0.0.2-4_all.deb"
+}

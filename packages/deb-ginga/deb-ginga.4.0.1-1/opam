@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ginga_4.0.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ginga"]
+]
+depends: [
+  "deb-python3"
+  "deb-python3-astropy"
+  "deb-python3-ginga" {= "4.0.1-1"}
+  "deb-python3-pkg-resources"
+  "deb-python3-pyqt5"
+]
+extra-source "ginga_4.0.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/ginga/ginga_4.0.1-1_all.deb"
+}

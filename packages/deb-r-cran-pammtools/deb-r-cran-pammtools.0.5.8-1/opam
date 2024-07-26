@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-pammtools_0.5.8-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-pammtools"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.1.2-1"}
+  "deb-r-cran-checkmate"
+  "deb-r-cran-dplyr" {>= "1.0.0"}
+  "deb-r-cran-formula"
+  "deb-r-cran-ggplot2" {>= "3.2.2"}
+  "deb-r-cran-lazyeval"
+  "deb-r-cran-magrittr"
+  "deb-r-cran-mgcv"
+  "deb-r-cran-mvtnorm"
+  "deb-r-cran-pec"
+  "deb-r-cran-purrr" {>= "0.2.3"}
+  "deb-r-cran-rlang"
+  "deb-r-cran-survival" {>= "2.39-5"}
+  "deb-r-cran-tibble"
+  "deb-r-cran-tidyr" {>= "1.0.0"}
+  "deb-r-cran-vctrs" {>= "0.3.0"}
+]
+extra-source "r-cran-pammtools_0.5.8-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-pammtools/r-cran-pammtools_0.5.8-1_all.deb"
+}

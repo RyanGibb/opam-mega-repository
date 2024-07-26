@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgoby-io-java_3.3.1+dfsg2-9_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgoby-io-java"]
+]
+depends: [
+  "deb-libcommons-cli-java" {>= "1.4"}
+  "deb-libcommons-collections3-java"
+  "deb-libcommons-configuration-java"
+  "deb-libcommons-exec-java" {>= "1.3"}
+  "deb-libcommons-io-java" {>= "2.11.0"}
+  "deb-libcommons-lang-java" {>= "2.6"}
+  "deb-libcommons-logging-java" {>= "1.2"}
+  "deb-libcommons-math-java" {>= "2.2"}
+  "deb-libdsiutils-java"
+  "deb-libfastutil-java"
+  "deb-libguava-java"
+  "deb-libhtsjdk-java" {>= "3.0.2"}
+  "deb-libicb-utils-java"
+  "deb-libjbzip2-java"
+  "deb-libjsap-java" {>= "2.1"}
+  "deb-libpj-java"
+  "deb-libprotobuf-java"
+  "deb-libreflections-java"
+  "deb-libslf4j-java" {>= "1.7.32"}
+  "deb-libxstream-java" {>= "1.4.19"}
+]
+extra-source "libgoby-io-java_3.3.1+dfsg2-9_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libg/libgoby-java/libgoby-io-java_3.3.1+dfsg2-9_all.deb"
+}

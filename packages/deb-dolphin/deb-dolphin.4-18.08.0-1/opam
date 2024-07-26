@@ -1,0 +1,54 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dolphin_4:18.08.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dolphin"]
+]
+depends: [
+  "deb-baloo-kf5"
+  "deb-kinit"
+  "deb-kio"
+  "deb-libc6" {>= "2.14"}
+  "deb-libdolphinvcs5" {= "4-18.08.0-1"}
+  "deb-libkf5baloo5" {>= "5.3.0+git20150512"}
+  "deb-libkf5baloowidgets5" {>= "4-18.08.0"}
+  "deb-libkf5bookmarks5" {>= "4.96.0"}
+  "deb-libkf5codecs5" {>= "4.96.0"}
+  "deb-libkf5completion5" {>= "4.97.0"}
+  "deb-libkf5configcore5" {>= "4.98.0"}
+  "deb-libkf5configgui5" {>= "5.25.0"}
+  "deb-libkf5configwidgets5" {>= "5.23.0"}
+  "deb-libkf5coreaddons5" {>= "5.2.0"}
+  "deb-libkf5crash5" {>= "5.15.0"}
+  "deb-libkf5dbusaddons5" {>= "4.97.0"}
+  "deb-libkf5filemetadata3" {>= "5.19.0"}
+  "deb-libkf5i18n5" {>= "4.97.0"}
+  "deb-libkf5iconthemes5" {>= "5.0.0"}
+  "deb-libkf5itemviews5" {>= "4.96.0"}
+  "deb-libkf5jobwidgets5" {>= "4.96.0"}
+  "deb-libkf5kcmutils5" {>= "4.96.0"}
+  "deb-libkf5kiocore5" {>= "5.44.0"}
+  "deb-libkf5kiofilewidgets5" {>= "5.44.0"}
+  "deb-libkf5kiowidgets5" {>= "5.41.0"}
+  "deb-libkf5newstuff5" {>= "5.37.0"}
+  "deb-libkf5notifications5" {>= "4.96.0"}
+  "deb-libkf5parts5" {>= "4.96.0"}
+  "deb-libkf5service-bin"
+  "deb-libkf5service5" {>= "4.99.0"}
+  "deb-libkf5solid5" {>= "4.97.0"}
+  "deb-libkf5textwidgets5" {>= "4.96.0"}
+  "deb-libkf5widgetsaddons5" {>= "5.35.0"}
+  "deb-libkf5xmlgui5" {>= "4.98.0"}
+  "deb-libphonon4qt5-4" {>= "4-4.8.0"}
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5dbus5" {>= "5.8.0~"}
+  "deb-libqt5gui5" {>= "5.8.0"}
+  "deb-libqt5widgets5" {>= "5.8.0~"}
+  "deb-libqt5xml5" {>= "5.8.0~"}
+  "deb-libstdc++6" {>= "4.5"}
+  "deb-phonon4qt5"
+]
+extra-source "dolphin_4:18.08.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dolphin/dolphin_18.08.0-1_amd64.deb"
+}

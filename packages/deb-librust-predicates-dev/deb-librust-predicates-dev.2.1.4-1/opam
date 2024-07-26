@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-predicates-dev_2.1.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-predicates-dev"]
+]
+depends: [
+  "deb-librust-concolor-0-0-11+auto-dev"
+  "deb-librust-concolor-0-0-11+default-dev"
+  "deb-librust-concolor-0-0-11+std-dev"
+  "deb-librust-difflib-0-4+default-dev"
+  "deb-librust-float-cmp-0-9+default-dev"
+  "deb-librust-itertools-0-10+default-dev"
+  "deb-librust-normalize-line-endings-0-3+default-dev"
+  "deb-librust-predicates-core-1+default-dev"
+  "deb-librust-regex-1+default-dev"
+  "deb-librust-yansi-dev"
+]
+extra-source "librust-predicates-dev_2.1.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-predicates/librust-predicates-dev_2.1.4-1_amd64.deb"
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-feed-prof_1.0.0.0-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-feed-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-base-compat-prof"
+  "deb-libghc-feed-dev" {= "1.0.0.0-4+b1"}
+  "deb-libghc-old-locale-prof"
+  "deb-libghc-old-time-prof"
+  "deb-libghc-safe-prof"
+  "deb-libghc-time-locale-compat-prof"
+  "deb-libghc-utf8-string-prof"
+  "deb-libghc-xml-conduit-prof"
+  "deb-libghc-xml-types-prof"
+]
+extra-source "libghc-feed-prof_1.0.0.0-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-feed/libghc-feed-prof_1.0.0.0-4+b1_amd64.deb"
+}

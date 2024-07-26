@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pulseaudio-module-raop_14.2-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pulseaudio-module-raop"]
+]
+depends: [
+  "deb-libavahi-client3" {>= "0.6.16"}
+  "deb-libavahi-common3" {>= "0.6.16"}
+  "deb-libc6" {>= "2.4"}
+  "deb-libpulse0" {= "14.2-2"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-pulseaudio" {= "14.2-2"}
+  "deb-pulseaudio-module-zeroconf"
+]
+extra-source "pulseaudio-module-raop_14.2-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pulseaudio/pulseaudio-module-raop_14.2-2_amd64.deb"
+}

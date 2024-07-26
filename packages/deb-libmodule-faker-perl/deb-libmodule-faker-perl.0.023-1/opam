@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmodule-faker-perl_0.023-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmodule-faker-perl"]
+]
+depends: [
+  "deb-libarchive-any-create-perl"
+  "deb-libcpan-distnameinfo-perl"
+  "deb-libcpan-meta-requirements-perl"
+  "deb-libdata-optlist-perl"
+  "deb-libencode-perl"
+  "deb-libfile-next-perl"
+  "deb-libgetopt-long-descriptive-perl"
+  "deb-libmoose-perl"
+  "deb-libpath-class-perl"
+  "deb-libtext-template-perl"
+  "deb-perl-any"
+]
+extra-source "libmodule-faker-perl_0.023-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libm/libmodule-faker-perl/libmodule-faker-perl_0.023-1_all.deb"
+}

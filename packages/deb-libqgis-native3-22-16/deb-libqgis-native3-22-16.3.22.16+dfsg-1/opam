@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libqgis-native3.22.16_3.22.16+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libqgis-native3.22.16"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.14.1"}
+  "deb-libstdc++6" {>= "5"}
+  ("deb-libqt5gui5" {>= "5.10.0"} | "deb- libqt5gui5-gles" {>= "5.10.0"})
+]
+extra-source "libqgis-native3.22.16_3.22.16+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qgis/libqgis-native3.22.16_3.22.16+dfsg-1_amd64.deb"
+}

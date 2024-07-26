@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-smart-open_5.2.1-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-smart-open"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-azure"
+  "deb-python3-azure-storage"
+  "deb-python3-boto3"
+  "deb-python3-paramiko"
+  "deb-python3-requests"
+]
+extra-source "python3-smart-open_5.2.1-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/smart-open/python3-smart-open_5.2.1-5_all.deb"
+}

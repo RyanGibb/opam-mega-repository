@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i policycoreutils-dbus_3.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r policycoreutils-dbus"]
+]
+depends: [
+  "deb-dbus" {>= "1.8"}
+  "deb-policycoreutils" {>= "3.1"}
+  "deb-policycoreutils-python-utils" {>= "3.1"}
+  "deb-policykit-1"
+  "deb-python3-any"
+  "deb-python3-dbus"
+  "deb-python3-gi"
+  "deb-python3-selinux" {>= "3.1"}
+  "deb-python3-slip-dbus"
+]
+extra-source "policycoreutils-dbus_3.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/selinux-dbus/policycoreutils-dbus_3.1-1_all.deb"
+}

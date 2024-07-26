@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-secret-sharing-dev_1.0.1.2-2+b5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-secret-sharing-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-dice-entropy-conduit-dev"
+  "deb-libghc-finite-field-dev"
+  "deb-libghc-vector-dev"
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+]
+extra-source "libghc-secret-sharing-dev_1.0.1.2-2+b5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-secret-sharing/libghc-secret-sharing-dev_1.0.1.2-2+b5_amd64.deb"
+}

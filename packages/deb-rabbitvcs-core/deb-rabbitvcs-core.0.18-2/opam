@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i rabbitvcs-core_0.18-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r rabbitvcs-core"]
+]
+depends: [
+  "deb-hicolor-icon-theme" {>= "0.10-2"}
+  "deb-ipython3" {>= "0.7.1"}
+  "deb-meld" {>= "1.1.2"}
+  "deb-python3-any"
+  "deb-python3-configobj"
+  "deb-python3-dbus"
+  "deb-python3-dulwich"
+  "deb-python3-simplejson"
+  "deb-python3-svn"
+  "deb-python3-tk"
+  "deb-subversion" {>= "1.4.6"}
+]
+conflicts: [
+  "deb-nautilussvn"
+  "deb-rabbitvcs"
+]
+extra-source "rabbitvcs-core_0.18-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rabbitvcs/rabbitvcs-core_0.18-2_all.deb"
+}

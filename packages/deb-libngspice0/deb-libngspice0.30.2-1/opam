@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libngspice0_30.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libngspice0"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libedit2" {>= "2.11-20080614-0"}
+  "deb-libgomp1" {>= "4.9"}
+  "deb-libncurses6" {>= "6"}
+  "deb-libtinfo6" {>= "6"}
+]
+extra-source "libngspice0_30.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/ngspice/libngspice0_30.2-1_amd64.deb"
+}

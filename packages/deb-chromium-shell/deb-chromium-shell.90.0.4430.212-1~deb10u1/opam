@@ -1,0 +1,63 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i chromium-shell_90.0.4430.212-1~deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r chromium-shell"]
+]
+depends: [
+  "deb-chromium-common" {= "90.0.4430.212-1~deb10u1"}
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libatk-bridge2-0-0" {>= "2.5.3"}
+  "deb-libatk1-0-0" {>= "2.2.0"}
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libatspi2-0-0" {>= "2.9.90"}
+  "deb-libavcodec-extra58"
+  "deb-libavformat58" {>= "7-4.1"}
+  "deb-libavutil56" {>= "7-4.0"}
+  "deb-libc6" {>= "2.28"}
+  "deb-libcairo2" {>= "1.6.0"}
+  "deb-libdbus-1-3" {>= "1.9.14"}
+  "deb-libdrm2" {>= "2.4.38"}
+  "deb-libevent-2-1-6" {>= "2.1.8-stable"}
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libflac8" {>= "1.3.0"}
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libfreetype6" {>= "2.3.9"}
+  "deb-libgbm1" {>= "17.1.0~rc2"}
+  "deb-libgcc1" {>= "1-4.0"}
+  "deb-libglib2-0-0" {>= "2.39.4"}
+  "deb-libgtk-3-0" {>= "3.19.12"}
+  "deb-libharfbuzz0b" {>= "2.2.0"}
+  "deb-libicu63" {>= "63.1-1~"}
+  "deb-libjpeg62-turbo" {>= "1.5.0"}
+  "deb-libjsoncpp1" {>= "1.7.4"}
+  "deb-libminizip1" {>= "1.1"}
+  "deb-libnspr4" {>= "2-4.9-2~"}
+  "deb-libnss3" {>= "2-3.13.4-2~"}
+  "deb-libopus0" {>= "1.1"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libpulse0" {>= "0.99.1"}
+  "deb-libre2-5" {>= "20160901"}
+  "deb-libsnappy1v5"
+  "deb-libstdc++6" {>= "7"}
+  "deb-libvpx5" {>= "1.6.0"}
+  "deb-libwebp6" {>= "0.5.1"}
+  "deb-libwebpdemux2" {>= "0.5.1"}
+  "deb-libwebpmux3" {>= "0.6.1-2"}
+  "deb-libx11-6" {>= "2-1.4.99.1"}
+  "deb-libxcb1" {>= "1.9.2"}
+  "deb-libxcomposite1" {>= "1-0.3-1"}
+  "deb-libxdamage1" {>= "1-1.1"}
+  "deb-libxext6"
+  "deb-libxfixes3"
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libxrandr2"
+  "deb-libxshmfence1"
+  "deb-libxslt1-1" {>= "1.1.25"}
+  "deb-zlib1g" {>= "1-1.2.2"}
+]
+extra-source "chromium-shell_90.0.4430.212-1~deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/chromium/chromium-shell_90.0.4430.212-1~deb10u1_amd64.deb"
+}

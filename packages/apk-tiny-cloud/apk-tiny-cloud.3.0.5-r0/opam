@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add tiny-cloud-3.0.5-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del tiny-cloud"]
+]
+depends: [
+  "apk-e2fsprogs-extra" {= "1.47.0-r2"}
+  "apk-openssh-server" {= "9.3_p2-r2"}
+  "apk-partx" {= "2.38.1-r8"}
+  "apk-sfdisk" {= "2.38.1-r8"}
+  "apk-yx" {= "1.0.0-r1"}
+  ("apk-busybox-binsh" {= "1.36.1-r7"} | "apk-dash-binsh" {= "0.5.12-r2"} | "apk-yash-binsh" {= "2.54-r3"})
+]
+extra-source "tiny-cloud-3.0.5-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/tiny-cloud-3.0.5-r0.apk"
+}

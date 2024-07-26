@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i plasma-workspace-dev_4:5.27.5-2+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r plasma-workspace-dev"]
+]
+depends: [
+  "deb-kquickcharts-dev" {>= "5.102.0~"}
+  "deb-libcolorcorrect5" {= "4-5.27.5-2+deb12u1"}
+  "deb-libkf5itemmodels-dev" {>= "5.102.0~"}
+  "deb-libkf5plasma-dev" {>= "5.102.0~"}
+  "deb-libkf5sysguard-dev" {>= "4-5.18"}
+  "deb-libkf5windowsystem-dev" {>= "5.89~"}
+  "deb-libkfontinst5" {= "4-5.27.5-2+deb12u1"}
+  "deb-libkfontinstui5" {= "4-5.27.5-2+deb12u1"}
+  "deb-libkworkspace5-5" {= "4-5.27.5-2+deb12u1"}
+  "deb-libnotificationmanager1" {= "4-5.27.5-2+deb12u1"}
+  "deb-libplasma-geolocation-interface5" {= "4-5.27.5-2+deb12u1"}
+  "deb-libtaskmanager6abi1" {= "4-5.27.5-2+deb12u1"}
+  "deb-libweather-ion7" {= "4-5.27.5-2+deb12u1"}
+  "deb-qtbase5-dev" {>= "5.15.2~"}
+  "deb-qtdeclarative5-dev" {>= "5.15.2~"}
+]
+extra-source "plasma-workspace-dev_4:5.27.5-2+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/plasma-workspace/plasma-workspace-dev_5.27.5-2+deb12u1_amd64.deb"
+}

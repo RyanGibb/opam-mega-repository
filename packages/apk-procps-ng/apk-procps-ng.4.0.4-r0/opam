@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add procps-ng-4.0.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del procps-ng"]
+]
+depends: [
+  "apk-libintl" {= "0.22.5-r0"}
+  "apk-libncursesw" {= "6.4_p20240420-r0"}
+  "apk-libproc2" {= "4.0.4-r0"}
+  "apk-musl" {= "1.2.5-r0"}
+]
+extra-source "procps-ng-4.0.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/procps-ng-4.0.4-r0.apk"
+}

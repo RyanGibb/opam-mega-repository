@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdbix-class-schema-loader-perl_0.07049-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdbix-class-schema-loader-perl"]
+]
+depends: [
+  "deb-libcarp-clan-perl"
+  "deb-libclass-accessor-grouped-perl" {>= "0.10008"}
+  "deb-libclass-c3-componentised-perl"
+  "deb-libclass-inspector-perl"
+  "deb-libclass-unload-perl"
+  "deb-libconfig-any-perl"
+  "deb-libconfig-general-perl"
+  "deb-libcurry-perl"
+  "deb-libdata-dump-perl"
+  "deb-libdbix-class-perl"
+  "deb-libhash-merge-perl"
+  "deb-liblingua-en-inflect-number-perl"
+  "deb-liblingua-en-inflect-perl"
+  "deb-liblingua-en-inflect-phrase-perl" {>= "0.15"}
+  "deb-liblingua-en-tagger-perl" {>= "0.23"}
+  "deb-liblist-moreutils-perl"
+  "deb-libmoosex-markasmethods-perl"
+  "deb-libmro-compat-perl"
+  "deb-libnamespace-autoclean-perl"
+  "deb-libnamespace-clean-perl"
+  "deb-libscope-guard-perl"
+  "deb-libstring-toidentifier-en-perl"
+  "deb-libsub-name-perl"
+  "deb-libtry-tiny-perl"
+  "deb-libuniversal-require-perl"
+  "deb-perl"
+  ("deb-perl" {>= "5.21.4"} | "deb- libscalar-list-utils-perl" {>= "1-1.40~"})
+]
+extra-source "libdbix-class-schema-loader-perl_0.07049-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libd/libdbix-class-schema-loader-perl/libdbix-class-schema-loader-perl_0.07049-1_all.deb"
+}

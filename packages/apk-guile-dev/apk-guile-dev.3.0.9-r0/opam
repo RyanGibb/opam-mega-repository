@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add guile-dev-3.0.9-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del guile-dev"]
+]
+depends: [
+  "apk-gc-dev" {= "8.2.6-r0"}
+  "apk-gmp-dev" {= "6.3.0-r1"}
+  "apk-guile" {= "3.0.9-r0"}
+  "apk-guile-libs" {= "3.0.9-r0"}
+  "apk-pkgconf" {= "2.2.0-r0"}
+]
+extra-source "guile-dev-3.0.9-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/guile-dev-3.0.9-r0.apk"
+}

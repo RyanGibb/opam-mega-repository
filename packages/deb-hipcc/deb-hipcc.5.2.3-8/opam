@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i hipcc_5.2.3-8_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r hipcc"]
+]
+depends: [
+  "deb-clang-15"
+  "deb-clang-tools-15"
+  "deb-file"
+  "deb-libamdhip64-dev"
+  "deb-libfile-which-perl"
+  "deb-liburi-encode-perl"
+  "deb-lld-15"
+  "deb-llvm-15"
+  "deb-rocm-device-libs"
+  "deb-rocminfo"
+  ("deb-libclang-common-15-dev" {< "1-15.0.6-5~exp1"} | "deb- libclang-rt-15-dev" {>= "1-15.0.6-5~exp1"})
+]
+extra-source "hipcc_5.2.3-8_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rocm-hipamd/hipcc_5.2.3-8_amd64.deb"
+}

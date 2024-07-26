@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i okteta-dev_5:0.26.10-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r okteta-dev"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libkasten4controllers0" {= "5-0.26.10-1"}
+  "deb-libkasten4core0" {= "5-0.26.10-1"}
+  "deb-libkasten4gui0" {= "5-0.26.10-1"}
+  "deb-libkasten4okteta2controllers0" {= "5-0.26.10-1"}
+  "deb-libkasten4okteta2core0" {= "5-0.26.10-1"}
+  "deb-libkasten4okteta2gui0" {= "5-0.26.10-1"}
+  "deb-libkf5xmlgui-dev" {>= "5.48.0~"}
+  "deb-libokteta3core0" {= "5-0.26.10-1"}
+  "deb-libokteta3gui0" {= "5-0.26.10-1"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-qtbase5-dev" {>= "5.9~"}
+  ("deb-libqt5gui5" {>= "5.9.0~"} | "deb- libqt5gui5-gles" {>= "5.9.0~"})
+]
+extra-source "okteta-dev_5:0.26.10-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/okteta/okteta-dev_0.26.10-1_amd64.deb"
+}

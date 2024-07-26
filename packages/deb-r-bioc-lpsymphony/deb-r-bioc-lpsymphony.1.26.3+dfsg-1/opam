@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-bioc-lpsymphony_1.26.3+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-bioc-lpsymphony"]
+]
+depends: [
+  "deb-coinor-libsymphony3"
+  "deb-libc6" {>= "2.14"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.2.20221110-2"}
+  "deb-r-bioc-biocgenerics"
+]
+extra-source "r-bioc-lpsymphony_1.26.3+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-bioc-lpsymphony/r-bioc-lpsymphony_1.26.3+dfsg-1_amd64.deb"
+}

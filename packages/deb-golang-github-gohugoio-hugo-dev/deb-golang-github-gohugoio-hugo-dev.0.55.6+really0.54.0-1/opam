@@ -1,0 +1,57 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-gohugoio-hugo-dev_0.55.6+really0.54.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-gohugoio-hugo-dev"]
+]
+depends: [
+  "deb-golang-github-alecthomas-chroma-dev" {>= "0.6.2~"}
+  "deb-golang-github-bep-debounce-dev"
+  "deb-golang-github-bep-gitmap-dev" {>= "1.0.0~"}
+  "deb-golang-github-bep-go-tocss-dev" {>= "0.6.0~"}
+  "deb-golang-github-burntsushi-locker-dev"
+  "deb-golang-github-burntsushi-toml-dev"
+  "deb-golang-github-chaseadamsio-goorgeous-dev"
+  "deb-golang-github-disintegration-imaging-dev"
+  "deb-golang-github-dsnet-golib-dev"
+  "deb-golang-github-eknkc-amber-dev"
+  "deb-golang-github-fortytw2-leaktest-dev"
+  "deb-golang-github-fsnotify-fsnotify-dev"
+  "deb-golang-github-gobwas-glob-dev"
+  "deb-golang-github-gorilla-websocket-dev"
+  "deb-golang-github-hashicorp-go-immutable-radix-dev"
+  "deb-golang-github-jdkato-prose-dev"
+  "deb-golang-github-kyokomi-emoji-dev"
+  "deb-golang-github-markbates-inflect-dev"
+  "deb-golang-github-miekg-mmark-dev"
+  "deb-golang-github-mitchellh-hashstructure-dev"
+  "deb-golang-github-mitchellh-mapstructure-dev" {>= "1.1.2~"}
+  "deb-golang-github-muesli-smartcrop-dev"
+  "deb-golang-github-nicksnyder-go-i18n-dev"
+  "deb-golang-github-olekukonko-tablewriter-dev"
+  "deb-golang-github-pkg-errors-dev"
+  "deb-golang-github-puerkitobio-purell-dev"
+  "deb-golang-github-russross-blackfriday-dev"
+  "deb-golang-github-sanity-io-litter-dev"
+  "deb-golang-github-spf13-afero-dev" {>= "1.2.1~"}
+  "deb-golang-github-spf13-cast-dev" {>= "1.3.0~"}
+  "deb-golang-github-spf13-cobra-dev"
+  "deb-golang-github-spf13-fsync-dev"
+  "deb-golang-github-spf13-jwalterweatherman-dev" {>= "1.0.0+git20181028.94f6ae3~"}
+  "deb-golang-github-spf13-nitro-dev"
+  "deb-golang-github-spf13-pflag-dev"
+  "deb-golang-github-spf13-viper-dev" {>= "1.3.1~"}
+  "deb-golang-github-stretchr-testify-dev"
+  "deb-golang-github-tdewolff-minify-dev" {>= "2.3.8~"}
+  "deb-golang-github-wellington-go-libsass-dev"
+  "deb-golang-github-yosssi-ace-dev"
+  "deb-golang-golang-x-image-dev"
+  "deb-golang-golang-x-net-dev"
+  "deb-golang-golang-x-sync-dev"
+  "deb-golang-golang-x-text-dev"
+  "deb-golang-gopkg-yaml-v2-dev" {>= "2.2.2~"}
+]
+extra-source "golang-github-gohugoio-hugo-dev_0.55.6+really0.54.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/hugo/golang-github-gohugoio-hugo-dev_0.55.6+really0.54.0-1_all.deb"
+}

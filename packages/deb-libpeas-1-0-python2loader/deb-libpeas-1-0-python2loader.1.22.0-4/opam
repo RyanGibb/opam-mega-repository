@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpeas-1.0-python2loader_1.22.0-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpeas-1.0-python2loader"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libgirepository-1-0-1" {>= "1.39.0"}
+  "deb-libglib2-0-0" {>= "2.38.0"}
+  "deb-libpeas-1-0-0" {= "1.22.0-4"}
+  "deb-libpeas-common"
+  "deb-libpython2-7" {>= "2.7"}
+]
+extra-source "libpeas-1.0-python2loader_1.22.0-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libp/libpeas/libpeas-1.0-python2loader_1.22.0-4_amd64.deb"
+}

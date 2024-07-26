@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sylpheed_3.7.0-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sylpheed"]
+]
+depends: [
+  "deb-libassuan0" {>= "2.0.1"}
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.15"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libcompfaceg1"
+  "deb-libenchant1c2a" {>= "1.6.0"}
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libgpg-error0" {>= "1.14"}
+  "deb-libgpgme11" {>= "1.4.1"}
+  "deb-libgtk2-0-0" {>= "2.24.32"}
+  "deb-libgtkspell0" {>= "2.0.10"}
+  "deb-libldap-2-4-2" {>= "2.4.7"}
+  "deb-libonig5" {>= "6.8.1"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpangoft2-1-0-0" {>= "1.14.0"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-pinentry-gtk2"
+  "deb-sensible-utils"
+]
+extra-source "sylpheed_3.7.0-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sylpheed/sylpheed_3.7.0-4_amd64.deb"
+}

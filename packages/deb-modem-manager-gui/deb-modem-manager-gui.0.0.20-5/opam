@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i modem-manager-gui_0.0.20-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r modem-manager-gui"]
+]
+depends: [
+  "deb-libayatana-appindicator3-1" {>= "0.2.92"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libgdbm6" {>= "1.16"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.37.0"}
+  "deb-libgtk-3-0" {>= "3.21.4"}
+  "deb-libgtkspell3-3-0" {>= "3.0.3"}
+  "deb-mobile-broadband-provider-info"
+  "deb-policykit-1"
+  ("deb-modemmanager" | "deb- ofono")
+  ("deb-network-manager" | "deb- connman" | "deb- ppp")
+]
+extra-source "modem-manager-gui_0.0.20-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/modem-manager-gui/modem-manager-gui_0.0.20-5_amd64.deb"
+}

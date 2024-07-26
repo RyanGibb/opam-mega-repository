@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mnemosyne_2.7.3+ds1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mnemosyne"]
+]
+depends: [
+  "deb-libjs-sphinxdoc" {>= "2.4.3-5~"}
+  "deb-libqt5sql5-sqlite"
+  "deb-python3" {>= "3.5"}
+  "deb-python3-any"
+  "deb-python3-cheroot"
+  "deb-python3-cherrypy3"
+  "deb-python3-gtts"
+  "deb-python3-matplotlib"
+  "deb-python3-pil"
+  "deb-python3-pyqt5"
+  "deb-python3-pyqt5-qtsql"
+  "deb-python3-pyqt5-qtwebchannel"
+  "deb-python3-pyqt5-qtwebengine"
+  "deb-python3-webob"
+]
+extra-source "mnemosyne_2.7.3+ds1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mnemosyne/mnemosyne_2.7.3+ds1-2_all.deb"
+}

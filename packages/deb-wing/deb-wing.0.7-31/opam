@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i wing_0.7-31_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r wing"]
+]
+depends: [
+  "deb-liballegro4-4"
+  "deb-libc6" {>= "2.4"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-wing-data" {= "0.7-31"}
+]
+extra-source "wing_0.7-31_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/w/wing/wing_0.7-31_amd64.deb"
+}

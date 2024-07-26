@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cl-csv_20200929.git68ecb5d-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cl-csv"]
+]
+depends: [
+  "deb-cl-alexandria"
+  "deb-cl-interpol"
+  "deb-cl-iterate"
+]
+conflicts: [
+  "deb-cl-csv-clsql"
+  "deb-cl-csv-data-table"
+]
+extra-source "cl-csv_20200929.git68ecb5d-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cl-csv/cl-csv_20200929.git68ecb5d-1_all.deb"
+}

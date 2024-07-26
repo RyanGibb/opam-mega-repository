@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libapache2-mod-parser3_3.4.6-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libapache2-mod-parser3"]
+]
+depends: [
+  "deb-apache2-bin"
+  "deb-apache2-bin" {>= "2.4.16"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libcrypt1" {>= "1-4.1.0"}
+  "deb-libgc1" {>= "1-7.2d"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libltdl7" {>= "2.4.6"}
+  "deb-libpcre3"
+  "deb-libstdc++6" {>= "5"}
+  "deb-libxml2" {>= "2.9.0"}
+  "deb-libxslt1-1" {>= "1.1.25"}
+  "deb-parser3-common" {= "3.4.6-2"}
+]
+extra-source "libapache2-mod-parser3_3.4.6-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/parser/libapache2-mod-parser3_3.4.6-2_amd64.deb"
+}

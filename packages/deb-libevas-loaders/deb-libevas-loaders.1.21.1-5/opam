@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libevas-loaders_1.21.1-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libevas-loaders"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libeina1a" {>= "1.21.1-0~eo"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libgstreamer1-0-0" {>= "1.0.0"}
+  "deb-libpoppler-cpp0v5" {>= "0.46.0"}
+  "deb-libraw19" {>= "0.16.0"}
+  "deb-librsvg2-2" {>= "2.14.4"}
+  "deb-libspectre1" {>= "0.2.3"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libevas-loaders_1.21.1-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/efl/libevas-loaders_1.21.1-5_amd64.deb"
+}

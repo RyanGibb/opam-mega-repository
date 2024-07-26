@@ -1,0 +1,70 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-rclone-rclone-dev_1.60.1+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-rclone-rclone-dev"]
+]
+depends: [
+  "deb-golang-bazil-fuse-dev"
+  "deb-golang-github-a8m-tree-dev"
+  "deb-golang-github-abbot-go-http-auth-dev" {>= "0.4.0"}
+  "deb-golang-github-anacrolix-dms-dev" {>= "1.5.0"}
+  "deb-golang-github-artyom-mtab-dev"
+  "deb-golang-github-atotto-clipboard-dev"
+  "deb-golang-github-aws-aws-sdk-go-dev" {>= "1.43.26"}
+  "deb-golang-github-azure-azure-storage-blob-go-dev" {>= "0.15.0"}
+  "deb-golang-github-azure-go-autorest-dev"
+  "deb-golang-github-azure-go-ntlmssp-dev"
+  "deb-golang-github-buengese-sgzip-dev"
+  "deb-golang-github-colinmarc-hdfs-dev"
+  "deb-golang-github-coreos-bbolt-dev"
+  "deb-golang-github-coreos-go-systemd-dev"
+  "deb-golang-github-djherbis-times-dev"
+  "deb-golang-github-dropbox-dropbox-sdk-go-unofficial-dev" {>= "6.0.4"}
+  "deb-golang-github-gabriel-vasile-mimetype-dev"
+  "deb-golang-github-gdamore-tcell-v2-dev"
+  "deb-golang-github-go-chi-chi-dev" {>= "5.0.7"}
+  "deb-golang-github-google-uuid-dev"
+  "deb-golang-github-hirochachacha-go-smb2-dev"
+  "deb-golang-github-iguanesolutions-go-systemd-dev"
+  "deb-golang-github-jcmturner-gokrb5-v8-dev"
+  "deb-golang-github-jlaffaye-ftp-dev"
+  "deb-golang-github-jzelinskie-whirlpool-dev"
+  "deb-golang-github-koofr-go-httpclient-dev"
+  "deb-golang-github-koofr-go-koofrclient-dev"
+  "deb-golang-github-mattn-go-colorable-dev" {>= "0.1.7"}
+  "deb-golang-github-max-sum-base32768-dev"
+  "deb-golang-github-mitchellh-go-homedir-dev"
+  "deb-golang-github-ncw-go-acd-dev"
+  "deb-golang-github-ncw-swift-v2-dev"
+  "deb-golang-github-nsf-termbox-go-dev"
+  "deb-golang-github-okzk-sdnotify-dev"
+  "deb-golang-github-patrickmn-go-cache-dev"
+  "deb-golang-github-pkg-errors-dev" {>= "0.9.1"}
+  "deb-golang-github-pkg-sftp-dev" {>= "1.13.4"}
+  "deb-golang-github-pkg-xattr-dev"
+  "deb-golang-github-protonmail-go-crypto-dev"
+  "deb-golang-github-putdotio-go-putio-dev"
+  "deb-golang-github-rclone-ftp-dev"
+  "deb-golang-github-rfjakob-eme-dev"
+  "deb-golang-github-sevlyar-go-daemon-dev"
+  "deb-golang-github-shirou-gopsutil-dev" {>= "3.22.4"}
+  "deb-golang-github-sirupsen-logrus-dev"
+  "deb-golang-github-skratchdot-open-golang-dev"
+  "deb-golang-github-spf13-cobra-dev"
+  "deb-golang-github-spf13-pflag-dev"
+  "deb-golang-github-stretchr-testify-dev"
+  "deb-golang-github-unknwon-goconfig-dev"
+  "deb-golang-github-xanzy-ssh-agent-dev"
+  "deb-golang-golang-x-crypto-dev"
+  "deb-golang-golang-x-net-dev"
+  "deb-golang-golang-x-oauth2-google-dev"
+  "deb-golang-golang-x-sys-dev"
+  "deb-golang-golang-x-text-dev"
+  "deb-golang-golang-x-time-dev"
+  "deb-golang-google-api-dev" {>= "0.61.0"}
+]
+extra-source "golang-github-rclone-rclone-dev_1.60.1+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rclone/golang-github-rclone-rclone-dev_1.60.1+dfsg-2_all.deb"
+}

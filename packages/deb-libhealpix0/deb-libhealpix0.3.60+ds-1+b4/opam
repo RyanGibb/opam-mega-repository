@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libhealpix0_3.60+ds-1+b4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libhealpix0"]
+]
+depends: [
+  "deb-libc6" {>= "2.35"}
+  "deb-libcfitsio10" {>= "4.2.0~"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libgfortran5" {>= "10"}
+  "deb-libgomp1" {>= "6"}
+  "deb-libsharp0" {>= "1.0.0"}
+]
+extra-source "libhealpix0_3.60+ds-1+b4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/healpix-fortran/libhealpix0_3.60+ds-1+b4_amd64.deb"
+}

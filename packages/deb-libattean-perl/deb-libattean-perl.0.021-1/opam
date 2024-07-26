@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libattean-perl_0.021-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libattean-perl"]
+]
+depends: [
+  "deb-libalgorithm-combinatorics-perl"
+  "deb-libdatetime-format-w3cdtf-perl"
+  "deb-libexporter-tiny-perl"
+  "deb-libfile-slurp-perl"
+  "deb-libhttp-negotiate-perl"
+  "deb-libiri-perl" {>= "0.005"}
+  "deb-libjson-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-libmath-cartesian-product-perl"
+  "deb-libmodule-pluggable-perl"
+  "deb-libmoo-perl" {>= "2.000002"}
+  "deb-libmoox-log-any-perl"
+  "deb-libnamespace-clean-perl"
+  "deb-libossp-uuid-perl"
+  "deb-librole-tiny-perl" {>= "2.000003"}
+  "deb-libscalar-list-utils-perl"
+  "deb-libset-scalar-perl"
+  "deb-libsub-install-perl"
+  "deb-libtext-csv-perl"
+  "deb-libtry-tiny-perl"
+  "deb-libtype-tiny-perl"
+  "deb-liburi-namespacemap-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-libxml-sax-perl"
+  "deb-perl"
+]
+extra-source "libattean-perl_0.021-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/liba/libattean-perl/libattean-perl_0.021-1_all.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perdition-2.2-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perdition"]
+]
+depends: [
+  "apk-gdbm" {= "1.23-r0"}
+  "apk-libcrypto3" {= "3.0.14-r0"}
+  "apk-libssl3" {= "3.0.14-r0"}
+  "apk-musl" {= "1.2.3-r5"}
+  "apk-popt" {= "1.19-r0"}
+  "apk-vanessa_adt" {= "0.0.9-r1"}
+  "apk-vanessa_logger" {= "0.0.10-r2"}
+  "apk-vanessa_socket" {= "0.0.13-r1"}
+  ("apk-yash-binsh" {= "2.53-r2"} | "apk-busybox-binsh" {= "1.35.0-r31"} | "apk-dash-binsh" {= "0.5.11.5-r2"})
+]
+extra-source "perdition-2.2-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perdition-2.2-r4.apk"
+}

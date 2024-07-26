@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnuplot-qt_5.2.6+dfsg1-1+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnuplot-qt"]
+]
+depends: [
+  "deb-gnuplot-data" {= "5.2.6+dfsg1-1+deb10u1"}
+  "deb-libc6" {>= "2.23"}
+  "deb-libcairo2" {>= "1.6.0"}
+  "deb-libedit2" {>= "2.11-20080614-0"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgd3" {>= "2.1.0~alpha~"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-liblua5-3-0"
+  "deb-libpango-1-0-0" {>= "1.22.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5gui5" {>= "5.2.0"}
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libqt5printsupport5" {>= "5.2.0"}
+  "deb-libqt5svg5" {>= "5.6.0~beta"}
+  "deb-libqt5widgets5" {>= "5.2.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libwxbase3-0-0v5" {>= "3.0.4+dfsg"}
+  "deb-libwxgtk3-0-0v5" {>= "3.0.4+dfsg"}
+  "deb-libx11-6"
+]
+conflicts: [
+  "deb-gnuplot-nox"
+  "deb-gnuplot-x11"
+]
+extra-source "gnuplot-qt_5.2.6+dfsg1-1+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnuplot/gnuplot-qt_5.2.6+dfsg1-1+deb10u1_amd64.deb"
+}

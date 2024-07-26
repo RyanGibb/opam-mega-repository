@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libopencv-contrib-dev_4.5.1+dfsg-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libopencv-contrib-dev"]
+]
+depends: [
+  "deb-libopencv-calib3d-dev" {= "4.5.1+dfsg-5"}
+  "deb-libopencv-contrib4-5" {= "4.5.1+dfsg-5"}
+  "deb-libopencv-core-dev" {= "4.5.1+dfsg-5"}
+  "deb-libopencv-dnn-dev" {= "4.5.1+dfsg-5"}
+  "deb-libopencv-features2d-dev" {= "4.5.1+dfsg-5"}
+  "deb-libopencv-flann-dev" {= "4.5.1+dfsg-5"}
+  "deb-libopencv-highgui-dev" {= "4.5.1+dfsg-5"}
+  "deb-libopencv-imgcodecs-dev" {= "4.5.1+dfsg-5"}
+  "deb-libopencv-imgproc-dev" {= "4.5.1+dfsg-5"}
+  "deb-libopencv-ml-dev" {= "4.5.1+dfsg-5"}
+  "deb-libopencv-objdetect-dev" {= "4.5.1+dfsg-5"}
+  "deb-libopencv-photo-dev" {= "4.5.1+dfsg-5"}
+  "deb-libopencv-shape-dev" {= "4.5.1+dfsg-5"}
+  "deb-libopencv-stitching-dev" {= "4.5.1+dfsg-5"}
+  "deb-libopencv-superres-dev" {= "4.5.1+dfsg-5"}
+  "deb-libopencv-video-dev" {= "4.5.1+dfsg-5"}
+  "deb-libopencv-videoio-dev" {= "4.5.1+dfsg-5"}
+  "deb-libopencv-videostab-dev" {= "4.5.1+dfsg-5"}
+  "deb-libopencv-viz-dev" {= "4.5.1+dfsg-5"}
+]
+extra-source "libopencv-contrib-dev_4.5.1+dfsg-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/opencv/libopencv-contrib-dev_4.5.1+dfsg-5_amd64.deb"
+}

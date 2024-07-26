@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libhttp-throwable-perl_0.026-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libhttp-throwable-perl"]
+]
+depends: [
+  "deb-liblist-allutils-perl"
+  "deb-libmoo-perl" {>= "1.004003"}
+  "deb-libmoox-strictconstructor-perl"
+  "deb-libnamespace-clean-perl"
+  "deb-libpackage-variant-perl"
+  "deb-libplack-perl"
+  "deb-libsub-exporter-perl"
+  "deb-libthrowable-perl"
+  "deb-libtype-tiny-perl"
+  "deb-perl"
+]
+extra-source "libhttp-throwable-perl_0.026-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libh/libhttp-throwable-perl/libhttp-throwable-perl_0.026-2_all.deb"
+}

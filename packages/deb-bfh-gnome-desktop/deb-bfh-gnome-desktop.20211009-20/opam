@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i bfh-gnome-desktop_20211009-20_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r bfh-gnome-desktop"]
+]
+depends: [
+  "deb-bfh-desktop"
+  "deb-gnome-shell-extension-bluetooth-quick-connect"
+  "deb-gnome-shell-extension-impatience"
+  "deb-gnome-shell-extension-no-annoyance"
+  "deb-nautilus-admin"
+  "deb-network-manager-ssh-gnome"
+  "deb-task-gnome-desktop"
+]
+extra-source "bfh-gnome-desktop_20211009-20_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/bfh-metapackages/bfh-gnome-desktop_20211009-20_all.deb"
+}

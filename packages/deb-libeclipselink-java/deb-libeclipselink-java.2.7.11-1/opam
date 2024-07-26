@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libeclipselink-java_2.7.11-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libeclipselink-java"]
+]
+depends: [
+  "deb-libcdi-api-java"
+  "deb-libgeronimo-j2ee-connector-1-5-spec-java"
+  "deb-libgeronimo-jms-1-1-spec-java"
+  "deb-libgeronimo-jta-1-2-spec-java"
+  "deb-libgeronimo-validation-1-1-spec-java"
+  "deb-libjaxb-java" {>= "2.3"}
+  "deb-libjaxrs-api-java"
+  "deb-libjpa-2-1-spec-java"
+  "deb-libjsonp-java"
+  "deb-libmail-java"
+  "deb-libslf4j-java"
+  "deb-libstringtemplate-java"
+]
+extra-source "libeclipselink-java_2.7.11-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/eclipselink/libeclipselink-java_2.7.11-1_all.deb"
+}

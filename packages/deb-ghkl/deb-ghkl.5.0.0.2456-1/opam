@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ghkl_5.0.0.2456-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ghkl"]
+]
+depends: [
+  "deb-libbullet2-87"
+  "deb-libc6" {>= "2.4"}
+  "deb-libg3d0" {>= "0.0.7"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgl1"
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libgtk2-0-0" {>= "2.24.32"}
+  "deb-libgtkglext1"
+  "deb-libhkl5" {>= "4.99.99.1950"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libyaml-0-2"
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+extra-source "ghkl_5.0.0.2456-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/hkl/ghkl_5.0.0.2456-1_amd64.deb"
+}

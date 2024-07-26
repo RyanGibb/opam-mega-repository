@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i php-uopz_6.1.2-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r php-uopz"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  ("deb-libapache2-mod-php7-4" | "deb-libphp7-4-embed" | "deb-php7-4-cgi" | "deb-php7-4-cli" | "deb-php7-4-fpm" | "deb-php7-4-phpdbg")
+]
+extra-source "php-uopz_6.1.2-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/php-uopz/php-uopz_6.1.2-4_amd64.deb"
+}

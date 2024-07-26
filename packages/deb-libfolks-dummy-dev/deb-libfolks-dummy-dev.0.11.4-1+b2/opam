@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libfolks-dummy-dev_0.11.4-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libfolks-dummy-dev"]
+]
+depends: [
+  "deb-libfolks-dev" {= "0.11.4-1+b2"}
+  "deb-libfolks-dummy25" {= "0.11.4-1+b2"}
+  "deb-libfolks-eds25" {= "0.11.4-1+b2"}
+  "deb-libglib2-0-dev" {>= "2.40"}
+]
+extra-source "libfolks-dummy-dev_0.11.4-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/folks/libfolks-dummy-dev_0.11.4-1+b2_amd64.deb"
+}

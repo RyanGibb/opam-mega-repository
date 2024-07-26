@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i php-doctrine-bundle_2.2.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r php-doctrine-bundle"]
+]
+depends: [
+  "deb-php-common"
+  "deb-php-doctrine-dbal"
+  "deb-php-doctrine-persistence"
+  "deb-php-sql-formatter"
+  "deb-php-symfony-cache"
+  "deb-php-symfony-config"
+  "deb-php-symfony-console"
+  "deb-php-symfony-dependency-injection"
+  "deb-php-symfony-doctrine-bridge"
+  "deb-php-symfony-framework-bundle"
+  "deb-php-symfony-service-contracts"
+]
+extra-source "php-doctrine-bundle_2.2.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/php-doctrine-bundle/php-doctrine-bundle_2.2.3-1_all.deb"
+}

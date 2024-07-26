@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-lambdabot-irc-plugins-prof_5.3-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-lambdabot-irc-plugins-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-lambdabot-core-prof"
+  "deb-libghc-lambdabot-irc-plugins-dev" {= "5.3-1+b2"}
+  "deb-libghc-lifted-base-prof"
+  "deb-libghc-network-prof"
+  "deb-libghc-safesemaphore-prof"
+  "deb-libghc-split-prof"
+]
+extra-source "libghc-lambdabot-irc-plugins-prof_5.3-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-lambdabot-irc-plugins/libghc-lambdabot-irc-plugins-prof_5.3-1+b2_amd64.deb"
+}

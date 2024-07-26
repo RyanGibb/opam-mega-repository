@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i timeshift_19.01+ds-2+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r timeshift"]
+]
+depends: [
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libgee-0-8-2" {>= "0.8.3"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libgnutls30" {>= "3.6.5"}
+  "deb-libgtk-3-0" {>= "3.16.2"}
+  "deb-libjson-glib-1-0-0" {>= "0.13.2"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpcre2-8-0" {>= "10.32"}
+  "deb-libvte-2-91-0"
+  "deb-libx11-6"
+  "deb-psmisc"
+  "deb-rsync"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "timeshift_19.01+ds-2+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/timeshift/timeshift_19.01+ds-2+deb10u1_amd64.deb"
+}

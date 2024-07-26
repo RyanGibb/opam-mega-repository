@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sat-xmpp-primitivus_0.7.0a4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sat-xmpp-primitivus"]
+]
+depends: [
+  "deb-python-any"
+  "deb-python-dbus"
+  "deb-python-gi"
+  "deb-python-urwid" {>= "1.2"}
+  "deb-python-urwid-satext" {>= "0.7"}
+  "deb-sat-xmpp-core" {= "0.7.0a4-1"}
+]
+extra-source "sat-xmpp-primitivus_0.7.0a4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/salutatoi/sat-xmpp-primitivus_0.7.0a4-1_all.deb"
+}

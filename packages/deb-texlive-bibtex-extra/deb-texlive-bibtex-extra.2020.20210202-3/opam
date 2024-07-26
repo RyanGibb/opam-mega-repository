@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i texlive-bibtex-extra_2020.20210202-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r texlive-bibtex-extra"]
+]
+depends: [
+  "deb-tex-common" {>= "6.13"}
+  "deb-texlive-base" {>= "2020.20200417"}
+  "deb-texlive-binaries" {>= "2020.20200327"}
+  "deb-texlive-latex-base" {>= "2020.20200417"}
+]
+conflicts: [
+  "deb-biblatex"
+  "deb-biblatex-dw"
+  "deb-logreq"
+]
+extra-source "texlive-bibtex-extra_2020.20210202-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/texlive-extra/texlive-bibtex-extra_2020.20210202-3_all.deb"
+}

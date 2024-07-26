@@ -1,0 +1,169 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sagemath_8.6-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sagemath"]
+]
+depends: [
+  "deb-cysignals-tools" {>= "1.8.1"}
+  "deb-cython" {>= "0.29.1"}
+  "deb-ecl" {>= "16.1.3"}
+  "deb-eclib-tools" {>= "20180815"}
+  "deb-fflas-ffpack" {>= "2.3.2"}
+  "deb-flintqs"
+  "deb-gap-atlasrep"
+  "deb-gap-core" {>= "4r10p0-3"}
+  "deb-gap-dev" {>= "4r10p0-3"}
+  "deb-gap-online-help"
+  "deb-gap-primgrp"
+  "deb-gap-smallgrp"
+  "deb-gap-table-of-marks"
+  "deb-gap-transgrp"
+  "deb-gfan" {>= "0.6.2"}
+  "deb-gmp-ecm"
+  "deb-ipython" {>= "5.5.0"}
+  "deb-iso-codes"
+  "deb-jmol" {>= "14.6.4"}
+  "deb-lcalc" {>= "1.23+dfsg-10"}
+  "deb-less"
+  "deb-libbraiding0"
+  "deb-libbrial-groebner3"
+  "deb-libbrial3"
+  "deb-libc6" {>= "2.15"}
+  "deb-libcdd-tools" {>= "094j"}
+  "deb-libcliquer1"
+  "deb-libec4"
+  "deb-libecm1"
+  "deb-libflint-2-5-2"
+  "deb-libflint-arb2"
+  "deb-libgc1c2" {>= "1-7.2d"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgd3" {>= "2.1.0~alpha~"}
+  "deb-libgivaro9" {>= "4.0.2-8~"}
+  "deb-libglpk40" {>= "4.59"}
+  "deb-libgmp10" {>= "2-6.1.0"}
+  "deb-libgmpxx4ldbl"
+  "deb-libgomp1" {>= "4.9"}
+  "deb-libgsl23" {>= "2.5"}
+  "deb-libgslcblas0" {>= "2.4"}
+  "deb-libhomfly0"
+  "deb-libiml0"
+  "deb-libjs-mathjax"
+  "deb-libjs-three" {>= "80"}
+  "deb-liblfunction0"
+  "deb-liblinbox-1-5-2-0"
+  "deb-liblinboxsage-1-5-2-0"
+  "deb-liblrcalc1"
+  "deb-libm4ri-0-0-20140914"
+  "deb-libm4rie-0-0-20150908"
+  "deb-libmpc3"
+  "deb-libmpfi0" {>= "1.5.1"}
+  "deb-libmpfr6" {>= "4.0.0"}
+  "deb-libntl35"
+  "deb-libpari-gmp-tls6" {>= "2.11.0-1"}
+  "deb-libplanarity0"
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libppl14"
+  "deb-libpynac18"
+  "deb-libratpoints-2-1-3"
+  "deb-libreadline7" {>= "6.0"}
+  "deb-librw0"
+  "deb-libsingular4m1"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libsymmetrica2" {>= "2.0"}
+  "deb-libzn-poly-0-9"
+  "deb-maxima-sage" {>= "5.41.0+ds-3"}
+  "deb-maxima-sage-share" {>= "5.41.0+ds-3"}
+  "deb-nauty"
+  "deb-palp" {>= "2.1-2"}
+  "deb-pari-galdata"
+  "deb-pari-gp" {>= "2.11.0"}
+  "deb-pari-seadata"
+  "deb-python" {< "2.8"}
+  "deb-python" {>= "2.7~"}
+  "deb-python-alabaster"
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7~"}
+  "deb-python-babel"
+  "deb-python-backports-abc"
+  "deb-python-backports-functools-lru-cache"
+  "deb-python-backports-shutil-get-terminal-size"
+  "deb-python-brial" {>= "1.2.4"}
+  "deb-python-configparser"
+  "deb-python-cvxopt"
+  "deb-python-cycler"
+  "deb-python-cypari2" {>= "1.3.1"}
+  "deb-python-cysignals-pari" {>= "1.8.1"}
+  "deb-python-decorator"
+  "deb-python-docutils"
+  "deb-python-enum34"
+  "deb-python-fpylll" {>= "0.4.1"}
+  "deb-python-functools32"
+  "deb-python-future"
+  "deb-python-imagesize"
+  "deb-python-ipython-genutils"
+  "deb-python-itsdangerous"
+  "deb-python-matplotlib" {>= "2.1"}
+  "deb-python-mistune"
+  "deb-python-mpmath"
+  "deb-python-networkx" {>= "2.2"}
+  "deb-python-numpy"
+  "deb-python-numpy" {>= "1-1.16.0~rc1"}
+  "deb-python-openid"
+  "deb-python-packaging"
+  "deb-python-path"
+  "deb-python-pathlib2"
+  "deb-python-pexpect" {>= "4.1"}
+  "deb-python-pickleshare"
+  "deb-python-pil"
+  "deb-python-pip"
+  "deb-python-pkgconfig"
+  "deb-python-prompt-toolkit"
+  "deb-python-psutil"
+  "deb-python-ptyprocess"
+  "deb-python-pygments"
+  "deb-python-rpy2"
+  "deb-python-sagenb" {>= "1.0.1+ds1-5"}
+  "deb-python-scipy" {>= "0.19.1"}
+  "deb-python-setuptools"
+  "deb-python-setuptools-scm"
+  "deb-python-simplegeneric"
+  "deb-python-singledispatch"
+  "deb-python-snowballstemmer"
+  "deb-python-sphinx" {>= "1.8"}
+  "deb-python-stemmer"
+  "deb-python-subprocess32"
+  "deb-python-sympy"
+  "deb-python-terminado"
+  "deb-python-tornado"
+  "deb-python-traitlets"
+  "deb-python-twisted"
+  "deb-python-typing"
+  "deb-python-tz"
+  "deb-python-vcversioner"
+  "deb-python-wcwidth"
+  "deb-python-werkzeug"
+  "deb-python-zmq"
+  "deb-python-zope-interface"
+  "deb-r-base-core"
+  "deb-rubiks"
+  "deb-sagemath-common" {= "8.6-6"}
+  "deb-sagemath-database-conway-polynomials" {>= "0.5-2"}
+  "deb-sagemath-database-elliptic-curves"
+  "deb-sagemath-database-graphs"
+  "deb-sagemath-database-mutually-combinatorial-designs"
+  "deb-sagemath-database-polytopes"
+  "deb-singular" {< "1-4.1.1-p3+ds-1"}
+  "deb-singular" {>= "1-4.1.1-p2"}
+  "deb-sqlite3"
+  "deb-sympow" {>= "1.023-9"}
+  "deb-tachyon"
+  "deb-xcas"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "sagemath_8.6-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sagemath/sagemath_8.6-6_amd64.deb"
+}

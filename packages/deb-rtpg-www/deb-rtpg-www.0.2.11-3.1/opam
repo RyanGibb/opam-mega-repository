@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i rtpg-www_0.2.11-3.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r rtpg-www"]
+]
+depends: [
+  "deb-debconf"
+  "deb-famfamfam-flag-png"
+  "deb-libcgi-simple-perl"
+  "deb-libgeo-ipfree-perl"
+  "deb-libjs-jquery" {>= "1.4.2"}
+  "deb-libjson-xs-perl"
+  "deb-liblocale-po-perl"
+  "deb-libmime-types-perl"
+  "deb-librpc-xml-perl" {>= "0.69"}
+  "deb-libtemplate-perl"
+  "deb-libtree-simple-perl"
+  "deb-rtorrent" {>= "0.7.9"}
+  ("deb-apache2" | "deb- httpd")
+]
+extra-source "rtpg-www_0.2.11-3.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rtpg/rtpg-www_0.2.11-3.1_all.deb"
+}

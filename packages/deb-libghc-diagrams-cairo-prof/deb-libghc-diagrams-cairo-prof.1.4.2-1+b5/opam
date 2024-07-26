@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-diagrams-cairo-prof_1.4.2-1+b5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-diagrams-cairo-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-cairo-prof"
+  "deb-libghc-colour-prof"
+  "deb-libghc-data-default-class-prof"
+  "deb-libghc-diagrams-cairo-dev" {= "1.4.2-1+b5"}
+  "deb-libghc-diagrams-core-prof"
+  "deb-libghc-diagrams-lib-prof"
+  "deb-libghc-hashable-prof"
+  "deb-libghc-juicypixels-prof"
+  "deb-libghc-lens-prof"
+  "deb-libghc-optparse-applicative-prof"
+  "deb-libghc-pango-prof"
+  "deb-libghc-split-prof"
+  "deb-libghc-statestack-prof"
+  "deb-libghc-vector-prof"
+]
+extra-source "libghc-diagrams-cairo-prof_1.4.2-1+b5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-diagrams-cairo/libghc-diagrams-cairo-prof_1.4.2-1+b5_amd64.deb"
+}

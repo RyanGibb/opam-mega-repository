@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tuxpaint_1:0.9.23-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tuxpaint"]
+]
+depends: [
+  "deb-libc6" {>= "2.22"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libfribidi0" {>= "0.19.2"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.16.0"}
+  "deb-libpaper1"
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-librsvg2-2" {>= "2.14.4"}
+  "deb-libsdl-image1-2" {>= "1.2.10"}
+  "deb-libsdl-mixer1-2"
+  "deb-libsdl-pango1"
+  "deb-libsdl-ttf2-0-0"
+  "deb-libsdl1-2debian" {>= "1.2.11"}
+  "deb-libvorbis0a" {>= "1.0.0-2"}
+  "deb-libvorbisfile3" {>= "1.0.0-2"}
+  "deb-netpbm"
+  "deb-tuxpaint-data" {= "1-0.9.23-1"}
+  "deb-zlib1g" {>= "1-1.2.0"}
+  ("deb-tuxpaint-plugins-default" {>= "1-0.9.22-1"} | "deb- tuxpaint-plugins")
+]
+extra-source "tuxpaint_1:0.9.23-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tuxpaint/tuxpaint_0.9.23-1_amd64.deb"
+}

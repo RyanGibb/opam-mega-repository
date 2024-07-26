@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-async-std-dev_1.12.0-12_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-async-std-dev"]
+]
+depends: [
+  "deb-librust-async-attributes-1+default-dev"
+  "deb-librust-async-channel-1+default-dev"
+  "deb-librust-async-global-executor-2+async-io-dev"
+  "deb-librust-async-global-executor-2+default-dev"
+  "deb-librust-async-global-executor-2+tokio-dev"
+  "deb-librust-async-io-1+default-dev"
+  "deb-librust-async-lock-2+default-dev"
+  "deb-librust-async-process-1+default-dev"
+  "deb-librust-crossbeam-utils-0-8+default-dev"
+  "deb-librust-futures-core-0-3+alloc-dev"
+  "deb-librust-futures-io-0-3+default-dev"
+  "deb-librust-futures-lite-1+default-dev"
+  "deb-librust-kv-log-macro-1+default-dev"
+  "deb-librust-log-0-4+default-dev"
+  "deb-librust-log-0-4+kv-unstable-dev"
+  "deb-librust-memchr-2+default-dev"
+  "deb-librust-once-cell-1+default-dev"
+  "deb-librust-pin-project-lite-0-2+default-dev"
+  "deb-librust-pin-utils-0-1+default-dev"
+  "deb-librust-slab-dev"
+]
+extra-source "librust-async-std-dev_1.12.0-12_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-async-std/librust-async-std-dev_1.12.0-12_all.deb"
+}

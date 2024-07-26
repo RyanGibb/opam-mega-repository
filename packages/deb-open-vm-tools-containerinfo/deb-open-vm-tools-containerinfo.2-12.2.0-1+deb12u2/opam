@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i open-vm-tools-containerinfo_2:12.2.0-1+deb12u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r open-vm-tools-containerinfo"]
+]
+depends: [
+  "deb-libabsl20220623" {>= "0~20220623.0-1"}
+  "deb-libc6" {>= "2.32"}
+  "deb-libcurl4" {>= "7.16.2"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.31.8"}
+  "deb-libgrpc++1-51" {>= "1.51.1"}
+  "deb-libgrpc29" {>= "1.51.1"}
+  "deb-libprotobuf32" {>= "3.21.12"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-open-vm-tools" {= "2-12.2.0-1+deb12u2"}
+]
+extra-source "open-vm-tools-containerinfo_2:12.2.0-1+deb12u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/open-vm-tools/open-vm-tools-containerinfo_12.2.0-1+deb12u2_amd64.deb"
+}

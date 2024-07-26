@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libalcotest-ocaml-dev_1.6.0-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libalcotest-ocaml-dev"]
+]
+depends: [
+  "deb-libastring-ocaml-dev"
+  "deb-libc6" {>= "2.4"}
+  "deb-libcmdliner-ocaml-dev"
+  "deb-libfmt-ocaml-dev"
+  "deb-libre-ocaml-dev"
+  "deb-libuutf-ocaml-dev"
+  "deb-ocaml"
+]
+extra-source "libalcotest-ocaml-dev_1.6.0-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/ocaml-alcotest/libalcotest-ocaml-dev_1.6.0-1+b1_amd64.deb"
+}

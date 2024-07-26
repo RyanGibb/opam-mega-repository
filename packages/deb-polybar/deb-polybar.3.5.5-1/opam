@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i polybar_3.5.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r polybar"]
+]
+depends: [
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libc6" {>= "2.30"}
+  "deb-libcairo2" {>= "1.10.0"}
+  "deb-libcurl4" {>= "7.16.2"}
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libjsoncpp24" {>= "1.9.4"}
+  "deb-libmpdclient2" {>= "2.0"}
+  "deb-libnl-3-200" {>= "3.2.7"}
+  "deb-libnl-genl-3-200" {>= "3.2.7"}
+  "deb-libpulse0" {>= "0.99.1"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libxcb-composite0"
+  "deb-libxcb-cursor0" {>= "0.0.99"}
+  "deb-libxcb-ewmh2" {>= "0.4.1"}
+  "deb-libxcb-icccm4" {>= "0.4.1"}
+  "deb-libxcb-randr0" {>= "1.12"}
+  "deb-libxcb-xkb1"
+  "deb-libxcb-xrm0" {>= "0.0.0"}
+  "deb-libxcb1" {>= "1.9.2"}
+]
+extra-source "polybar_3.5.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/polybar/polybar_3.5.5-1_amd64.deb"
+}

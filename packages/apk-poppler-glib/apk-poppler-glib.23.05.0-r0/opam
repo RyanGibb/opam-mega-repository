@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add poppler-glib-23.05.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del poppler-glib"]
+]
+depends: [
+  "apk-cairo" {= "1.17.8-r1"}
+  "apk-freetype" {= "2.13.0-r5"}
+  "apk-glib" {= "2.76.6-r0"}
+  "apk-libstdc++" {= "12.2.1_git20220924-r10"}
+  "apk-musl" {= "1.2.4-r2"}
+  "apk-poppler" {= "23.05.0-r0"}
+]
+extra-source "poppler-glib-23.05.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/poppler-glib-23.05.0-r0.apk"
+}

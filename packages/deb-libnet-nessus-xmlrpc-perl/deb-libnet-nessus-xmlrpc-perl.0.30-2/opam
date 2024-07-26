@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libnet-nessus-xmlrpc-perl_0.30-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libnet-nessus-xmlrpc-perl"]
+]
+depends: [
+  "deb-libhttp-message-perl"
+  "deb-libwww-perl"
+  "deb-libxml-simple-perl"
+  "deb-perl"
+]
+extra-source "libnet-nessus-xmlrpc-perl_0.30-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libn/libnet-nessus-xmlrpc-perl/libnet-nessus-xmlrpc-perl_0.30-2_all.deb"
+}

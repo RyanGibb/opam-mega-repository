@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add partx-2.40.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del partx"]
+]
+depends: [
+  "apk-libblkid" {= "2.40.1-r1"}
+  "apk-libsmartcols" {= "2.40.1-r1"}
+  "apk-musl" {= "1.2.5-r0"}
+]
+extra-source "partx-2.40.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/partx-2.40.1-r1.apk"
+}

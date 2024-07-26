@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-kubernetes-gengo-dev_0.0~git20210915.39e73c8-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-kubernetes-gengo-dev"]
+]
+depends: [
+  "deb-golang-github-davecgh-go-spew-dev"
+  "deb-golang-github-gogo-protobuf-dev"
+  "deb-golang-github-google-go-cmp-dev"
+  "deb-golang-github-kr-pretty-dev"
+  "deb-golang-github-spf13-pflag-dev"
+  "deb-golang-glog-dev"
+  "deb-golang-go"
+  "deb-golang-golang-x-tools-dev"
+  "deb-golang-gopkg-check-v1-dev"
+  "deb-golang-k8s-klog-dev"
+  "deb-golang-k8s-sigs-yaml-dev"
+]
+extra-source "golang-github-kubernetes-gengo-dev_0.0~git20210915.39e73c8-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-kubernetes-gengo/golang-github-kubernetes-gengo-dev_0.0~git20210915.39e73c8-2_all.deb"
+}

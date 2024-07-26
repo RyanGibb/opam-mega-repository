@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i evolution-rss_0.3.96-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r evolution-rss"]
+]
+depends: [
+  "deb-evolution" {< "3.39"}
+  "deb-evolution" {>= "3.38"}
+  "deb-evolution-data-server" {< "3.39"}
+  "deb-evolution-data-server" {>= "3.38"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcamel-1-2-62" {>= "3.21.90"}
+  "deb-libebackend-1-2-10" {>= "3.17.90"}
+  "deb-libedataserver-1-2-25" {>= "3.17"}
+  "deb-libevolution" {< "3.39"}
+  "deb-libevolution" {>= "3.38.1"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.41.1"}
+  "deb-libgtk-3-0" {>= "3.16.2"}
+  "deb-libsoup2-4-1" {>= "2.41.90"}
+  "deb-libxml2" {>= "2.7.4"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "evolution-rss_0.3.96-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/evolution-rss/evolution-rss_0.3.96-2+b1_amd64.deb"
+}

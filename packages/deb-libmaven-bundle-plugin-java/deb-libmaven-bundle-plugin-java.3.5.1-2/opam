@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmaven-bundle-plugin-java_3.5.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmaven-bundle-plugin-java"]
+]
+depends: [
+  "deb-bnd"
+  "deb-libdoxia-core-java" {>= "1.7"}
+  "deb-libdoxia-sitetools-java" {>= "1.7.5"}
+  "deb-libfelix-bundlerepository-java" {>= "2.0.10"}
+  "deb-libfelix-utils-java"
+  "deb-libjdom1-java" {>= "1.1.3"}
+  "deb-libmaven-archiver-java" {>= "3.2.0"}
+  "deb-libmaven-dependency-tree-java" {>= "3.0.1"}
+  "deb-libmaven-deploy-plugin-java"
+  "deb-libmaven-install-plugin-java"
+  "deb-libmaven-reporting-api-java" {>= "3.0"}
+  "deb-libmaven3-core-java" {>= "3.5.3"}
+  "deb-libosgi-core-java"
+  "deb-libplexus-build-api-java" {>= "0.0.7"}
+  "deb-libplexus-utils2-java" {>= "2.x"}
+]
+extra-source "libmaven-bundle-plugin-java_3.5.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/maven-bundle-plugin/libmaven-bundle-plugin-java_3.5.1-2_all.deb"
+}

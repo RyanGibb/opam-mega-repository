@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i matrix-synapse-ldap3_0.1.3-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r matrix-synapse-ldap3"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-ldap3"
+  "deb-python3-service-identity"
+  "deb-python3-twisted" {>= "15.1.0"}
+]
+extra-source "matrix-synapse-ldap3_0.1.3-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/matrix-synapse-ldap3/matrix-synapse-ldap3_0.1.3-4_all.deb"
+}

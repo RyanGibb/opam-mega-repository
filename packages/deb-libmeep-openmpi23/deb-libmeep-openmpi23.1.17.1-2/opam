@@ -1,0 +1,65 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmeep-openmpi23_1.17.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmeep-openmpi23"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libctl7" {>= "4.5.0-8"}
+  "deb-libfftw3-double3" {>= "3.3.5"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libgdsii0"
+  "deb-libgsl25" {>= "2.6"}
+  "deb-libharminv3" {>= "1.4"}
+  "deb-libhdf5-openmpi-103-1" {>= "1.8.14"}
+  "deb-libopenmpi3" {>= "4.1.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+conflicts: [
+  "deb-libmeep-lam4-12"
+  "deb-libmeep-lam4-16"
+  "deb-libmeep-lam4-17"
+  "deb-libmeep-lam4-22"
+  "deb-libmeep-lam4-23"
+  "deb-libmeep-lam4-6"
+  "deb-libmeep-lam4-7"
+  "deb-libmeep-lam4-8"
+  "deb-libmeep-mpi-default12"
+  "deb-libmeep-mpi-default16"
+  "deb-libmeep-mpi-default17"
+  "deb-libmeep-mpi-default22"
+  "deb-libmeep-mpi-default23"
+  "deb-libmeep-mpi-default6"
+  "deb-libmeep-mpi-default7"
+  "deb-libmeep-mpi-default8"
+  "deb-libmeep-mpich2-12"
+  "deb-libmeep-mpich2-16"
+  "deb-libmeep-mpich2-17"
+  "deb-libmeep-mpich2-22"
+  "deb-libmeep-mpich2-23"
+  "deb-libmeep-mpich2-6"
+  "deb-libmeep-mpich2-7"
+  "deb-libmeep-mpich2-8"
+  "deb-libmeep-openmpi12"
+  "deb-libmeep-openmpi16"
+  "deb-libmeep-openmpi17"
+  "deb-libmeep-openmpi22"
+  "deb-libmeep-openmpi6"
+  "deb-libmeep-openmpi7"
+  "deb-libmeep-openmpi8"
+  "deb-libmeep10"
+  "deb-libmeep12"
+  "deb-libmeep16"
+  "deb-libmeep17"
+  "deb-libmeep22"
+  "deb-libmeep23"
+  "deb-libmeep6"
+  "deb-libmeep7"
+  "deb-libmeep8"
+]
+extra-source "libmeep-openmpi23_1.17.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/meep-openmpi/libmeep-openmpi23_1.17.1-2_amd64.deb"
+}

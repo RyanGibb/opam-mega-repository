@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libectrans-0_1.1.0-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libectrans-0"]
+]
+depends: [
+  "deb-libc6" {>= "2.35"}
+  "deb-libfftw3-double3" {>= "3.3.10"}
+  "deb-libfftw3-single3" {>= "3.3.10"}
+  "deb-libfiat-0" {>= "1.0.0"}
+  "deb-libgfortran5" {>= "10"}
+  "deb-libgomp1" {>= "6"}
+  "deb-libopenblas0"
+]
+extra-source "libectrans-0_1.1.0-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/ectrans/libectrans-0_1.1.0-4_amd64.deb"
+}

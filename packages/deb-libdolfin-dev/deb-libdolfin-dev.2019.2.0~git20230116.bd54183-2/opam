@@ -1,0 +1,44 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdolfin-dev_2019.2.0~git20230116.bd54183-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdolfin-dev"]
+]
+depends: [
+  "deb-cmake" {>= "2.8.0"}
+  "deb-libboost-chrono-dev"
+  "deb-libboost-dev"
+  "deb-libboost-filesystem-dev"
+  "deb-libboost-iostreams-dev"
+  "deb-libboost-math-dev"
+  "deb-libboost-mpi-dev"
+  "deb-libboost-program-options-dev"
+  "deb-libboost-serialization-dev"
+  "deb-libboost-thread-dev"
+  "deb-libboost-timer-dev"
+  "deb-libdolfin-dev-common" {>= "2019.2.0~git20200218.027d9cc-7"}
+  "deb-libdolfin2019-2" {= "2019.2.0~git20230116.bd54183-2"}
+  "deb-libeigen3-dev"
+  "deb-libhdf5-mpi-dev"
+  "deb-libscotch-dev"
+  "deb-libsuitesparse-dev"
+  "deb-libxml2-dev"
+  "deb-pkg-config"
+  "deb-python3-ffc" {< "2019.3~"}
+  "deb-python3-ffc" {>= "2019.2"}
+  ("deb-g++" | "deb- c++-compiler")
+  ("deb-libpetsc-real3-18-dev" | "deb- libpetsc3-18-4-dev")
+  ("deb-libslepc-real3-18-dev" | "deb- libslepc3-18-2-dev")
+]
+conflicts: [
+  "deb-libdolfin0-dev"
+  "deb-libdolfin1-0-dev"
+  "deb-libdolfin1-1-dev"
+  "deb-libdolfin1-2-dev"
+  "deb-libdolfin1-3-dev"
+  "deb-libdolfin1-4-dev"
+]
+extra-source "libdolfin-dev_2019.2.0~git20230116.bd54183-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dolfin/libdolfin-dev_2019.2.0~git20230116.bd54183-2_amd64.deb"
+}

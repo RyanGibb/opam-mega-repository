@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i texworks-scripting-lua_0.6.5-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r texworks-scripting-lua"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-liblua5-3-0"
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-texworks"
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+]
+extra-source "texworks-scripting-lua_0.6.5-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/texworks/texworks-scripting-lua_0.6.5-2_amd64.deb"
+}

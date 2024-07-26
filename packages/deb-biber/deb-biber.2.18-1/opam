@@ -1,0 +1,53 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i biber_2.18-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r biber"]
+]
+depends: [
+  "deb-libautovivification-perl"
+  "deb-libbusiness-isbn-perl"
+  "deb-libbusiness-ismn-perl"
+  "deb-libbusiness-issn-perl"
+  "deb-libclass-accessor-perl"
+  "deb-libdata-compare-perl"
+  "deb-libdata-dump-perl"
+  "deb-libdata-uniqid-perl"
+  "deb-libdate-simple-perl"
+  "deb-libdatetime-calendar-julian-perl"
+  "deb-libdatetime-format-builder-perl"
+  "deb-libdatetime-perl"
+  "deb-libencode-eucjpascii-perl"
+  "deb-libencode-eucjpms-perl"
+  "deb-libencode-hanextra-perl"
+  "deb-libencode-jis2k-perl"
+  "deb-libfile-slurper-perl"
+  "deb-libipc-run3-perl"
+  "deb-liblingua-translit-perl"
+  "deb-liblist-allutils-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-liblog-log4perl-perl"
+  "deb-liblwp-protocol-https-perl"
+  "deb-libparse-recdescent-perl"
+  "deb-libreadonly-perl"
+  "deb-libregexp-common-perl"
+  "deb-libsort-key-perl"
+  "deb-libtext-bibtex-perl" {>= "0.88"}
+  "deb-libtext-csv-perl"
+  "deb-libtext-csv-xs-perl"
+  "deb-libtext-roman-perl"
+  "deb-libunicode-collate-perl"
+  "deb-libunicode-linebreak-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-libxml-libxml-simple-perl"
+  "deb-libxml-libxslt-perl"
+  "deb-libxml-writer-perl"
+  "deb-perl" {>= "5.30"}
+  "deb-perl-any"
+  "deb-tex-common" {>= "6.13"}
+]
+extra-source "biber_2.18-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/biber/biber_2.18-1_all.deb"
+}

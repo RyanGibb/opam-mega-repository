@@ -1,0 +1,51 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kdegames_4:22.12.3+5.142_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kdegames"]
+]
+depends: [
+  "deb-bomber" {>= "4-22.12.3"}
+  "deb-bovo" {>= "4-22.12.3"}
+  "deb-granatier" {>= "4-22.12.3"}
+  "deb-kapman" {>= "4-22.12.3"}
+  "deb-katomic" {>= "4-22.12.3"}
+  "deb-kblackbox" {>= "4-22.12.3"}
+  "deb-kblocks" {>= "4-22.12.3"}
+  "deb-kbounce" {>= "4-22.12.3"}
+  "deb-kbreakout" {>= "4-22.12.3"}
+  "deb-kdiamond" {>= "4-22.12.3"}
+  "deb-kfourinline" {>= "4-22.12.3"}
+  "deb-kgoldrunner" {>= "4-22.12.3"}
+  "deb-kigo" {>= "4-22.12.3"}
+  "deb-killbots" {>= "4-22.12.3"}
+  "deb-kiriki" {>= "4-22.12.3"}
+  "deb-kjumpingcube" {>= "4-22.12.3"}
+  "deb-klickety" {>= "4-22.12.3"}
+  "deb-klines" {>= "4-22.12.3"}
+  "deb-kmahjongg" {>= "4-22.12.3"}
+  "deb-kmines" {>= "4-22.12.3"}
+  "deb-knavalbattle" {>= "4-22.12.3"}
+  "deb-knetwalk" {>= "4-22.12.3"}
+  "deb-knights" {>= "22.12.3"}
+  "deb-kolf" {>= "4-22.12.3"}
+  "deb-kollision" {>= "4-22.12.3"}
+  "deb-konquest" {>= "4-22.12.3"}
+  "deb-kpat" {>= "4-22.12.3"}
+  "deb-kreversi" {>= "4-22.12.3"}
+  "deb-kshisen" {>= "4-22.12.3"}
+  "deb-ksirk" {>= "4-22.12.3"}
+  "deb-ksnakeduel" {>= "4-22.12.3"}
+  "deb-kspaceduel" {>= "4-22.12.3"}
+  "deb-ksquares" {>= "4-22.12.3"}
+  "deb-ksudoku" {>= "4-22.12.3"}
+  "deb-ktuberling" {>= "4-22.12.3"}
+  "deb-kubrick" {>= "4-22.12.3"}
+  "deb-lskat" {>= "4-22.12.3"}
+  "deb-palapeli" {>= "4-22.12.3"}
+  "deb-picmi" {>= "4-22.12.3"}
+]
+extra-source "kdegames_4:22.12.3+5.142_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/meta-kde/kdegames_22.12.3+5.142_amd64.deb"
+}

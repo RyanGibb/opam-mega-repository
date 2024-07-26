@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mate-applets_1.26.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mate-applets"]
+]
+depends: [
+  "deb-gsettings-desktop-schemas"
+  "deb-gvfs"
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.33"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libcpupower1" {>= "4.7~rc2-1~exp1"}
+  "deb-libdbus-glib-1-2" {>= "0.88"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.59.0"}
+  "deb-libgtk-3-0" {>= "3.21.5"}
+  "deb-libgtksourceview-3-0-1" {>= "2.91.4"}
+  "deb-libgtop-2-0-11" {>= "2.22.3"}
+  "deb-libgucharmap-2-90-7" {>= "1-3.0.0"}
+  "deb-libmate-panel-applet-4-1" {>= "1.26"}
+  "deb-libmateweather1" {>= "1.18"}
+  "deb-libnl-3-200" {>= "3.2.7"}
+  "deb-libnl-genl-3-200" {>= "3.2.7"}
+  "deb-libnotify4" {>= "0.7.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpolkit-gobject-1-0" {>= "0.99"}
+  "deb-libupower-glib3" {>= "0.99.8"}
+  "deb-libwnck-3-0" {>= "2.91.6"}
+  "deb-libx11-6"
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-mate-applets-common" {= "1.26.1-1"}
+  "deb-mate-panel"
+  "deb-sgml-base" {>= "1.28"}
+]
+extra-source "mate-applets_1.26.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mate-applets/mate-applets_1.26.1-1_amd64.deb"
+}

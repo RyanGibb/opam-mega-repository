@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-rubyvis_0.6.1+dfsg1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-rubyvis"]
+]
+depends: [
+  "deb-ruby-coderay"
+  "deb-ruby-haml"
+  "deb-ruby-nokogiri"
+  "deb-ruby-redcloth"
+  "deb-ruby-rspec"
+  "deb-ruby-rspec-mocks"
+  ("deb-ruby" | "deb- ruby-interpreter")
+]
+extra-source "ruby-rubyvis_0.6.1+dfsg1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-rubyvis/ruby-rubyvis_0.6.1+dfsg1-2_all.deb"
+}

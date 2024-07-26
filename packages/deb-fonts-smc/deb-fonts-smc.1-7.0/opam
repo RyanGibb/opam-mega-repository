@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fonts-smc_1:7.0_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fonts-smc"]
+]
+depends: [
+  "deb-fonts-smc-anjalioldlipi" {>= "7.0"}
+  "deb-fonts-smc-chilanka" {>= "1.2.0"}
+  "deb-fonts-smc-dyuthi" {>= "2.0"}
+  "deb-fonts-smc-karumbi" {>= "1.0"}
+  "deb-fonts-smc-keraleeyam" {>= "2.0"}
+  "deb-fonts-smc-manjari" {>= "1.0.0"}
+  "deb-fonts-smc-meera" {>= "7.0"}
+  "deb-fonts-smc-rachana" {>= "7.0"}
+  "deb-fonts-smc-raghumalayalamsans" {>= "2.1.1"}
+  "deb-fonts-smc-suruma" {>= "3.2.1"}
+  "deb-fonts-smc-uroob" {>= "2.0"}
+]
+extra-source "fonts-smc_1:7.0_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fonts-smc/fonts-smc_7.0_all.deb"
+}

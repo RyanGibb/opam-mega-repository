@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i git-mediawiki_1:2.20.1-2+deb10u3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r git-mediawiki"]
+]
+depends: [
+  "deb-git" {< "1-2.20.1-."}
+  "deb-git" {> "1-2.20.1"}
+  "deb-libdatetime-format-iso8601-perl"
+  "deb-liblwp-protocol-https-perl"
+  "deb-libmediawiki-api-perl" {>= "0.39"}
+]
+extra-source "git-mediawiki_1:2.20.1-2+deb10u3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/git/git-mediawiki_2.20.1-2+deb10u3_all.deb"
+}

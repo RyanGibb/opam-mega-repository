@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libqpdf28_10.1.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libqpdf28"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgnutls30" {>= "3.7.0"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libqpdf28_10.1.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qpdf/libqpdf28_10.1.0-1_amd64.deb"
+}

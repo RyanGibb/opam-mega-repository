@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cpanoutdated_0.32-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cpanoutdated"]
+]
+depends: [
+  "deb-libcpan-distnameinfo-perl"
+  "deb-liblocal-lib-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-perl-any"
+  ("deb-perl" {>= "5.15.8"} | "deb- libmodule-metadata-perl")
+]
+extra-source "cpanoutdated_0.32-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cpanoutdated/cpanoutdated_0.32-1.1_all.deb"
+}

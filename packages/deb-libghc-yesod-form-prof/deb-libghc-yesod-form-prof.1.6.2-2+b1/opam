@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-yesod-form-prof_1.6.2-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-yesod-form-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-aeson-prof"
+  "deb-libghc-attoparsec-prof"
+  "deb-libghc-blaze-builder-prof"
+  "deb-libghc-blaze-html-prof"
+  "deb-libghc-blaze-markup-prof"
+  "deb-libghc-byteable-prof"
+  "deb-libghc-data-default-prof"
+  "deb-libghc-email-validate-prof"
+  "deb-libghc-network-uri-prof"
+  "deb-libghc-persistent-prof"
+  "deb-libghc-resourcet-prof"
+  "deb-libghc-semigroups-prof"
+  "deb-libghc-shakespeare-prof"
+  "deb-libghc-wai-prof"
+  "deb-libghc-xss-sanitize-prof"
+  "deb-libghc-yesod-core-prof"
+  "deb-libghc-yesod-form-dev" {= "1.6.2-2+b1"}
+  "deb-libghc-yesod-persistent-prof"
+]
+extra-source "libghc-yesod-form-prof_1.6.2-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-yesod-form/libghc-yesod-form-prof_1.6.2-2+b1_amd64.deb"
+}

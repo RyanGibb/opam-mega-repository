@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-jrc_0.5.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-jrc"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.1.2-1"}
+  "deb-r-cran-httpuv"
+  "deb-r-cran-jsonlite"
+  "deb-r-cran-mime"
+  "deb-r-cran-r-utils"
+  "deb-r-cran-r6"
+  "deb-r-cran-stringi"
+  "deb-r-cran-stringr"
+]
+extra-source "r-cran-jrc_0.5.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-jrc/r-cran-jrc_0.5.1-1_all.deb"
+}

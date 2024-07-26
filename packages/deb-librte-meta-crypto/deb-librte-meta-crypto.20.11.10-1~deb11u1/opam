@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librte-meta-crypto_20.11.10-1~deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librte-meta-crypto"]
+]
+depends: [
+  "deb-librte-crypto-aesni-gcm21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-crypto-aesni-mb21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-crypto-bcmfs21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-crypto-caam-jr21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-crypto-ccp21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-crypto-dpaa-sec21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-crypto-dpaa2-sec21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-crypto-kasumi21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-crypto-nitrox21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-crypto-null21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-crypto-octeontx2-21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-crypto-octeontx21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-crypto-openssl21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-crypto-scheduler21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-crypto-snow3g21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-crypto-virtio21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-crypto-zuc21" {= "20.11.10-1~deb11u1"}
+]
+extra-source "librte-meta-crypto_20.11.10-1~deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dpdk/librte-meta-crypto_20.11.10-1~deb11u1_amd64.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i docbook-utils_0.6.14-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r docbook-utils"]
+]
+depends: [
+  "deb-docbook-dsssl"
+  "deb-opensp"
+  "deb-perl-any"
+  "deb-sgmlspl"
+  "deb-texlive-formats-extra"
+  ("deb-lynx" | "deb- links" | "deb- links2" | "deb- w3m")
+]
+extra-source "docbook-utils_0.6.14-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/docbook-utils/docbook-utils_0.6.14-4_all.deb"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcommons-validator-java_1:1.6-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcommons-validator-java"]
+]
+depends: [
+  "deb-libcommons-beanutils-java" {>= "1.7"}
+  "deb-libcommons-collections3-java"
+  "deb-libcommons-digester-java" {>= "1.6"}
+  "deb-libcommons-logging-java" {>= "1.0.4"}
+  "deb-sgml-base" {>= "1.28"}
+]
+extra-source "libcommons-validator-java_1:1.6-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libcommons-validator-java/libcommons-validator-java_1.6-2_all.deb"
+}

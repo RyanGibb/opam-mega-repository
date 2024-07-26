@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i in-toto_1.0.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r in-toto"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-attr"
+  "deb-python3-colorama"
+  "deb-python3-cryptography"
+  "deb-python3-dateutil"
+  "deb-python3-iso8601"
+  "deb-python3-nacl"
+  "deb-python3-pathspec"
+  "deb-python3-pkg-resources"
+  "deb-python3-securesystemslib" {>= "0.18.0"}
+  "deb-python3-six"
+]
+extra-source "in-toto_1.0.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/in-toto/in-toto_1.0.1-1_all.deb"
+}

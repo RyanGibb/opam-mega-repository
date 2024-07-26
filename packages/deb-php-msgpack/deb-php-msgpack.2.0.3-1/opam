@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i php-msgpack_2.0.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r php-msgpack"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  ("deb-libapache2-mod-php7-3" | "deb-libphp7-3-embed" | "deb-php7-3-cgi" | "deb-php7-3-cli" | "deb-php7-3-fpm" | "deb-php7-3-phpdbg")
+]
+extra-source "php-msgpack_2.0.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/php-msgpack/php-msgpack_2.0.3-1_amd64.deb"
+}

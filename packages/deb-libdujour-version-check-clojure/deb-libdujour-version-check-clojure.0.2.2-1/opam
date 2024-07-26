@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdujour-version-check-clojure_0.2.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdujour-version-check-clojure"]
+]
+depends: [
+  "deb-libcheshire-clojure"
+  "deb-libclojure-java"
+  "deb-libprismatic-schema-clojure"
+  "deb-libpuppetlabs-http-client-clojure"
+  "deb-libring-codec-clojure"
+  "deb-libslingshot-clojure"
+  "deb-libtools-logging-clojure"
+  "deb-libversioneer-clojure"
+]
+extra-source "libdujour-version-check-clojure_0.2.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dujour-version-check-clojure/libdujour-version-check-clojure_0.2.2-1_all.deb"
+}

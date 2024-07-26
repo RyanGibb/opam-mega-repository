@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-rjava_0.9-13-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-rjava"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.2-1"}
+  ("deb-openjdk-9-jre" | "deb- default-jre")
+]
+extra-source "r-cran-rjava_0.9-13-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rjava/r-cran-rjava_0.9-13-1_amd64.deb"
+}

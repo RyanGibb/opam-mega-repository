@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dleyna-renderer_0.4.0-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dleyna-renderer"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libdleyna-connector-dbus-1-0-1" {>= "0.2.0"}
+  "deb-libdleyna-core-1-0-3" {>= "0.4.0"}
+  "deb-libglib2-0-0" {>= "2.31.8"}
+  "deb-libgssdp-1-0-3" {>= "0.12.0"}
+  "deb-libgupnp-1-0-4" {>= "0.20.7"}
+  "deb-libgupnp-av-1-0-2" {>= "0.11.5"}
+  "deb-libgupnp-dlna-2-0-3" {>= "0.9.4"}
+  "deb-libsoup2-4-1" {>= "2.26.1"}
+]
+extra-source "dleyna-renderer_0.4.0-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dleyna-renderer/dleyna-renderer_0.4.0-1+b1_amd64.deb"
+}

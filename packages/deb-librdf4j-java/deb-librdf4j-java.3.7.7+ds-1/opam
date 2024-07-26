@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librdf4j-java_3.7.7+ds-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librdf4j-java"]
+]
+depends: [
+  "deb-libcommons-text-java" {>= "1.9"}
+  "deb-libguava-java"
+  "deb-libhttpclient-java" {>= "4.5.13"}
+  "deb-libjackson2-annotations-java" {>= "2.13.0"}
+  "deb-libjackson2-core-java" {>= "2.13.0"}
+  "deb-libjackson2-databind-java"
+  "deb-libjaxb-api-java" {>= "2.3.1"}
+  "deb-libjsonld-java" {>= "0.13.4"}
+  "deb-libslf4j-java" {>= "1.7.32"}
+]
+extra-source "librdf4j-java_3.7.7+ds-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rdf4j/librdf4j-java_3.7.7+ds-1_all.deb"
+}

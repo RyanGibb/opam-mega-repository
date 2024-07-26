@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-formatting-prof_6.3.6-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-formatting-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-clock-prof"
+  "deb-libghc-formatting-dev" {= "6.3.6-2+b1"}
+  "deb-libghc-old-locale-prof"
+  "deb-libghc-scientific-prof"
+  "deb-libghc-semigroups-prof"
+]
+extra-source "libghc-formatting-prof_6.3.6-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-formatting/libghc-formatting-prof_6.3.6-2+b1_amd64.deb"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libjava3d-jni_1.5.2+dfsg-17_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libjava3d-jni"]
+]
+depends: [
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libgl1"
+  "deb-libnsl2" {>= "1.0"}
+  "deb-libx11-6"
+  "deb-libxext6"
+]
+extra-source "libjava3d-jni_1.5.2+dfsg-17_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/j/java3d/libjava3d-jni_1.5.2+dfsg-17_amd64.deb"
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libjson-java_2.4-3.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libjson-java"]
+]
+depends: [
+  "deb-groovy"
+  "deb-libcommons-beanutils-java"
+  "deb-libcommons-collections3-java" {>= "3.2.1-7~"}
+  "deb-libcommons-lang-java"
+  "deb-libcommons-logging-java"
+  "deb-libezmorph-java"
+  "deb-liboro-java"
+  "deb-libxom-java"
+]
+extra-source "libjson-java_2.4-3.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libj/libjson-java/libjson-java_2.4-3.1_all.deb"
+}

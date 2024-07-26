@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sentencepiece_0.1.97-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sentencepiece"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libsentencepiece0" {>= "0.1.97"}
+  "deb-libstdc++6" {>= "11"}
+]
+extra-source "sentencepiece_0.1.97-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sentencepiece/sentencepiece_0.1.97-3+b1_amd64.deb"
+}

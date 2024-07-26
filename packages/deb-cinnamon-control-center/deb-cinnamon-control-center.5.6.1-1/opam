@@ -1,0 +1,44 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cinnamon-control-center_5.6.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cinnamon-control-center"]
+]
+depends: [
+  "deb-accountsservice"
+  "deb-apg"
+  "deb-cinnamon-control-center-data" {= "5.6.1-1"}
+  "deb-cinnamon-desktop-data" {>= "5.4"}
+  "deb-cinnamon-settings-daemon" {>= "5.4"}
+  "deb-desktop-file-utils"
+  "deb-gettext"
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.10.0"}
+  "deb-libcinnamon-control-center1" {= "5.6.1-1"}
+  "deb-libcinnamon-desktop4" {>= "5.4"}
+  "deb-libcinnamon-menu-3-0" {>= "2.2.0"}
+  "deb-libcolord2" {>= "1.4.3"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.23.0"}
+  "deb-libglib2-0-0" {>= "2.43.2"}
+  "deb-libgnomekbd8" {>= "3.6.0"}
+  "deb-libgtk-3-0" {>= "3.21.5"}
+  "deb-libgudev-1-0-0" {>= "146"}
+  "deb-libmm-glib0" {>= "0.7.991"}
+  "deb-libnm0" {>= "1.2.0"}
+  "deb-libnma0" {>= "1.1.90"}
+  "deb-libnotify4" {>= "0.7.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpolkit-gobject-1-0" {>= "0.99"}
+  "deb-libupower-glib3" {>= "0.99.0"}
+  "deb-libwacom9" {>= "2.0.0"}
+  "deb-libx11-6"
+  "deb-libxi6" {>= "2-1.2.99.4"}
+  "deb-libxklavier16" {>= "5.1"}
+  "deb-policykit-1-gnome"
+  "deb-xdg-utils"
+]
+extra-source "cinnamon-control-center_5.6.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cinnamon-control-center/cinnamon-control-center_5.6.1-1_amd64.deb"
+}

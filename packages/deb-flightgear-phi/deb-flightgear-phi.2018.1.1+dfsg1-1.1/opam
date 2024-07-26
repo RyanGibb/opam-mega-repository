@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i flightgear-phi_2018.1.1+dfsg1-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r flightgear-phi"]
+]
+depends: [
+  "deb-libjs-bootstrap"
+  "deb-libjs-jquery"
+  "deb-libjs-jquery-flot"
+  "deb-libjs-jquery-ui" {>= "1.11"}
+  "deb-libjs-jquery-ui-theme-smoothness"
+  "deb-libjs-leaflet"
+  "deb-libjs-requirejs"
+  "deb-libjs-requirejs-text"
+  "deb-node-sprintf-js"
+]
+extra-source "flightgear-phi_2018.1.1+dfsg1-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/flightgear-phi/flightgear-phi_2018.1.1+dfsg1-1.1_all.deb"
+}

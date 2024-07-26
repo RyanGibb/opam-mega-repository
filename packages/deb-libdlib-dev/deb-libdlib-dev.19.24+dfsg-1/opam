@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdlib-dev_19.24+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdlib-dev"]
+]
+depends: [
+  "deb-libdlib19-1" {= "19.24+dfsg-1"}
+  "deb-libopencv-core-dev"
+  "deb-libpng-dev"
+  "deb-libsqlite3-dev"
+  "deb-libx11-dev"
+  "deb-pybind11-dev"
+]
+extra-source "libdlib-dev_19.24+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dlib/libdlib-dev_19.24+dfsg-1_amd64.deb"
+}

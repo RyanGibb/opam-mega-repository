@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gchempaint_0.14.17-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gchempaint"]
+]
+depends: [
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.6.0"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgcu0v5" {= "0.14.17-1.1"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.36.0"}
+  "deb-libgoffice-0-10-10" {>= "0.10.12"}
+  "deb-libgtk-3-0" {>= "3.1.6"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libxml2" {>= "2.7.4"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "gchempaint_0.14.17-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnome-chemistry-utils/gchempaint_0.14.17-1.1_amd64.deb"
+}

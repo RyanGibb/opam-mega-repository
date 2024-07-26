@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i codeblocks-contrib_20.03+svn13046-0.1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r codeblocks-contrib"]
+]
+depends: [
+  "deb-codeblocks" {= "20.03+svn13046-0.1+b2"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libgamin0"
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libwxbase3-2-1" {>= "3.2.1+dfsg"}
+  "deb-libwxgtk3-2-1" {>= "3.2.1+dfsg-2"}
+  "deb-libwxsmithlib0" {= "20.03+svn13046-0.1+b2"}
+]
+extra-source "codeblocks-contrib_20.03+svn13046-0.1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/codeblocks/codeblocks-contrib_20.03+svn13046-0.1+b2_amd64.deb"
+}

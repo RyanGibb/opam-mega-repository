@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add psqlodbc-16.00.0000-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del psqlodbc"]
+]
+depends: [
+  "apk-libpq" {= "16.3-r0"}
+  "apk-musl" {= "1.2.5-r0"}
+  "apk-unixodbc" {= "2.3.12-r0"}
+]
+extra-source "psqlodbc-16.00.0000-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/psqlodbc-16.00.0000-r0.apk"
+}

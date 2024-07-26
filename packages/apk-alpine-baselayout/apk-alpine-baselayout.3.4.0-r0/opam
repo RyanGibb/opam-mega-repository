@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add alpine-baselayout-3.4.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del alpine-baselayout"]
+]
+depends: [
+  "apk-alpine-baselayout-data" {= "3.4.0-r0"}
+  ("apk-yash-binsh" {= "2.53-r2"} | "apk-busybox-binsh" {= "1.35.0-r31"} | "apk-dash-binsh" {= "0.5.11.5-r2"})
+]
+extra-source "alpine-baselayout-3.4.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/alpine-baselayout-3.4.0-r0.apk"
+}

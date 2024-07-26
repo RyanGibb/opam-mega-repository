@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pgcli_3.5.0-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pgcli"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-cli-helpers"
+  "deb-python3-click"
+  "deb-python3-configobj"
+  "deb-python3-pendulum"
+  "deb-python3-pgspecial" {>= "2"}
+  "deb-python3-pkg-resources"
+  "deb-python3-prompt-toolkit" {>= "3.0"}
+  "deb-python3-psycopg" {>= "3.0.14"}
+  "deb-python3-pygments"
+  "deb-python3-setproctitle"
+  "deb-python3-sqlparse" {>= "0.3"}
+  "deb-python3-tabulate"
+  "deb-python3-terminaltables"
+]
+extra-source "pgcli_3.5.0-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pgcli/pgcli_3.5.0-5_all.deb"
+}

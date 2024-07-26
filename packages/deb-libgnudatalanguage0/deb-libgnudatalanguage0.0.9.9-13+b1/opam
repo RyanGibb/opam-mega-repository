@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgnudatalanguage0_0.9.9-13+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgnudatalanguage0"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libeccodes0" {>= "2.19.1"}
+  "deb-libfftw3-double3" {>= "3.3.5"}
+  "deb-libfftw3-single3" {>= "3.3.5"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libgeotiff5" {>= "1.3.0"}
+  "deb-libglpk40" {>= "4.59"}
+  "deb-libgomp1" {>= "4.9"}
+  "deb-libgraphicsmagick++-q16-12" {>= "1.3.26-5~"}
+  "deb-libgsl25" {>= "2.6"}
+  "deb-libhdf4-0-alt" {>= "4.2r4"}
+  "deb-libnetcdf18" {>= "4.0.1"}
+  "deb-libplplot17" {>= "5.15.0+dfsg"}
+  "deb-libplplotcxx15" {>= "5.15.0+dfsg"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libproj19" {>= "4.8.0"}
+  "deb-libpython3-9" {>= "3.9.0~b4"}
+  "deb-libreadline8" {>= "6.0"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libtiff5" {>= "4.0.3"}
+  "deb-libtirpc3" {>= "1.0.2"}
+  "deb-libudunits2-0" {>= "2.2.14"}
+  "deb-libwxbase3-0-0v5" {>= "3.0.5.1+dfsg"}
+  "deb-libwxgtk3-0-gtk3-0v5" {>= "3.0.5.1+dfsg"}
+  "deb-libx11-6"
+  "deb-pslib1"
+  "deb-zlib1g" {>= "1-1.2.3.4"}
+]
+extra-source "libgnudatalanguage0_0.9.9-13+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnudatalanguage/libgnudatalanguage0_0.9.9-13+b1_amd64.deb"
+}

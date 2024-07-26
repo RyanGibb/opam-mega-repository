@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-list-moreutils-0.430-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-list-moreutils"]
+]
+depends: [
+  "apk-perl" {= "5.38.2-r0"}
+  "apk-perl-exporter-tiny" {= "1.006002-r1"}
+  "apk-perl-list-moreutils-xs" {= "0.430-r4"}
+]
+extra-source "perl-list-moreutils-0.430-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-list-moreutils-0.430-r1.apk"
+}

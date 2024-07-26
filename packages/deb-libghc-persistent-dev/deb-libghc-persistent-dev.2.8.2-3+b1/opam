@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-persistent-dev_2.8.2-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-persistent-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-aeson-dev"
+  "deb-libghc-attoparsec-dev"
+  "deb-libghc-base64-bytestring-dev"
+  "deb-libghc-blaze-html-dev"
+  "deb-libghc-blaze-markup-dev"
+  "deb-libghc-conduit-dev"
+  "deb-libghc-fast-logger-dev"
+  "deb-libghc-http-api-data-dev"
+  "deb-libghc-monad-logger-dev"
+  "deb-libghc-old-locale-dev"
+  "deb-libghc-path-pieces-dev"
+  "deb-libghc-resource-pool-dev"
+  "deb-libghc-resourcet-dev"
+  "deb-libghc-scientific-dev"
+  "deb-libghc-silently-dev"
+  "deb-libghc-src-meta-dev"
+  "deb-libghc-tagged-dev"
+  "deb-libghc-unliftio-core-dev"
+  "deb-libghc-unordered-containers-dev"
+  "deb-libghc-vector-dev"
+  "deb-libghc-void-dev"
+  "deb-libgmp10"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libghc-persistent-dev_2.8.2-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-persistent/libghc-persistent-dev_2.8.2-3+b1_amd64.deb"
+}

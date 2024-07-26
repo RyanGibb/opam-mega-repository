@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i caja-owncloud_2.11.0.8354+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r caja-owncloud"]
+]
+depends: [
+  "deb-caja"
+  "deb-owncloud-client" {< "2.11.0.8354+dfsg-1.1~"}
+  "deb-owncloud-client" {>= "2.11.0.8354+dfsg-1"}
+  "deb-owncloud-client-data"
+  "deb-python3-any"
+  "deb-python3-caja"
+  "deb-python3-gi"
+]
+extra-source "caja-owncloud_2.11.0.8354+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/owncloud-client/caja-owncloud_2.11.0.8354+dfsg-1_all.deb"
+}

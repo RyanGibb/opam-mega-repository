@@ -1,0 +1,203 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdpdk-dev_20.11.10-1~deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdpdk-dev"]
+]
+depends: [
+  "deb-libbpf-dev"
+  "deb-libbsd-dev"
+  "deb-libelf-dev"
+  "deb-libfdt-dev"
+  "deb-libibverbs-dev"
+  "deb-libipsec-mb-dev"
+  "deb-libisal-dev"
+  "deb-libjansson-dev"
+  "deb-libmnl-dev"
+  "deb-libnuma-dev"
+  "deb-libpcap-dev"
+  "deb-librte-acl21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-baseband-acc100-21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-baseband-fpga-5gnr-fec21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-baseband-fpga-lte-fec21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-baseband-null21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-baseband-turbo-sw21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-bbdev21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-bitratestats21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-bpf21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-bus-dpaa21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-bus-fslmc21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-bus-ifpga21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-bus-pci21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-bus-vdev21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-bus-vmbus21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-cfgfile21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-cmdline21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-common-cpt21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-common-dpaax21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-common-iavf21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-common-mlx5-21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-common-octeontx2-21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-common-octeontx21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-common-qat21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-common-sfc-efx21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-compress-isal21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-compress-octeontx21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-compress-zlib21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-compressdev21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-crypto-aesni-gcm21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-crypto-aesni-mb21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-crypto-bcmfs21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-crypto-caam-jr21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-crypto-ccp21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-crypto-dpaa-sec21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-crypto-dpaa2-sec21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-crypto-kasumi21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-crypto-nitrox21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-crypto-null21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-crypto-octeontx2-21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-crypto-octeontx21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-crypto-openssl21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-crypto-scheduler21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-crypto-snow3g21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-crypto-virtio21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-crypto-zuc21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-cryptodev21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-distributor21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-eal21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-efd21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-ethdev21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-event-dlb2-21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-event-dlb21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-event-dpaa2-21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-event-dpaa21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-event-dsw21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-event-octeontx2-21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-event-octeontx21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-event-opdl21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-event-skeleton21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-event-sw21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-eventdev21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-fib21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-flow-classify21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-graph21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-gro21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-gso21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-hash21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-ip-frag21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-ipsec21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-jobstats21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-kni21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-kvargs21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-latencystats21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-lpm21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-mbuf21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-member21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-mempool-bucket21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-mempool-dpaa2-21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-mempool-dpaa21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-mempool-octeontx2-21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-mempool-octeontx21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-mempool-ring21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-mempool-stack21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-mempool21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-meta-all" {= "20.11.10-1~deb11u1"}
+  "deb-librte-meta-allpmds" {= "20.11.10-1~deb11u1"}
+  "deb-librte-meta-baseband" {= "20.11.10-1~deb11u1"}
+  "deb-librte-meta-bus" {= "20.11.10-1~deb11u1"}
+  "deb-librte-meta-compress" {= "20.11.10-1~deb11u1"}
+  "deb-librte-meta-crypto" {= "20.11.10-1~deb11u1"}
+  "deb-librte-meta-event" {= "20.11.10-1~deb11u1"}
+  "deb-librte-meta-mempool" {= "20.11.10-1~deb11u1"}
+  "deb-librte-meta-net" {= "20.11.10-1~deb11u1"}
+  "deb-librte-meta-raw" {= "20.11.10-1~deb11u1"}
+  "deb-librte-meter21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-metrics21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-af-packet21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-af-xdp21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-ark21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-atlantic21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-avp21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-axgbe21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-bnx2x21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-bnxt21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-bond21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-cxgbe21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-dpaa2-21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-dpaa21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-e1000-21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-ena21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-enetc21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-enic21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-failsafe21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-fm10k21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-hinic21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-hns3-21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-i40e21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-iavf21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-ice21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-igc21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-ipn3ke21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-ixgbe21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-kni21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-liquidio21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-memif21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-mlx4-21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-mlx5-21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-netvsc21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-nfp21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-null21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-octeontx2-21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-octeontx21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-pcap21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-pfe21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-qede21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-ring21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-sfc21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-softnic21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-tap21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-thunderx21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-txgbe21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-vdev-netvsc21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-vhost21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-virtio21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net-vmxnet3-21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-net21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-node21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-pci21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-pdump21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-pipeline21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-port21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-power21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-raw-dpaa2-cmdif21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-raw-dpaa2-qdma21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-raw-ifpga21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-raw-ioat21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-raw-ntb21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-raw-octeontx2-dma21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-raw-octeontx2-ep21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-raw-skeleton21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-rawdev21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-rcu21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-regex-mlx5-21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-regex-octeontx2-21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-regexdev21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-reorder21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-rib21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-ring21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-sched21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-security21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-stack21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-table21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-telemetry21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-timer21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-vdpa-ifc21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-vdpa-mlx5-21" {= "20.11.10-1~deb11u1"}
+  "deb-librte-vhost21" {= "20.11.10-1~deb11u1"}
+  "deb-libssl-dev"
+  "deb-zlib1g-dev"
+]
+extra-source "libdpdk-dev_20.11.10-1~deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dpdk/libdpdk-dev_20.11.10-1~deb11u1_amd64.deb"
+}

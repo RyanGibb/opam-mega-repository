@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i flamerobin_0.9.3.6-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r flamerobin"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libfbclient2" {>= "2.5.0.25784~ReleaseCandidate1.ds2"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "7"}
+  "deb-libwxbase3-0-0v5" {>= "3.0.5.1+dfsg"}
+  "deb-libwxgtk3-0-gtk3-0v5" {>= "3.0.5.1+dfsg"}
+]
+extra-source "flamerobin_0.9.3.6-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/flamerobin/flamerobin_0.9.3.6-2_amd64.deb"
+}

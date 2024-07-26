@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ddrutility_2.8-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ddrutility"]
+]
+depends: [
+  "deb-fdisk"
+  "deb-libc6" {>= "2.7"}
+  "deb-ntfs-3g"
+  "deb-sleuthkit"
+]
+extra-source "ddrutility_2.8-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/ddrutility/ddrutility_2.8-1.1_amd64.deb"
+}

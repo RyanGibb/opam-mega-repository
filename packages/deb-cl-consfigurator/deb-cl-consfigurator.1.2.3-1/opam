@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cl-consfigurator_1.2.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cl-consfigurator"]
+]
+depends: [
+  "deb-cl-agnostic-lizard"
+  "deb-cl-alexandria"
+  "deb-cl-anaphora"
+  "deb-cl-babel"
+  "deb-cl-bordeaux-threads"
+  "deb-cl-cffi"
+  "deb-cl-closer-mop"
+  "deb-cl-heredoc"
+  "deb-cl-interpol"
+  "deb-cl-named-readtables"
+  "deb-cl-osicat"
+  "deb-cl-ppcre"
+  "deb-cl-trivial-backtrace"
+  "deb-dh-elpa-helper"
+  "deb-emacsen-common"
+  "deb-libacl1-dev"
+  "deb-libcap-dev"
+]
+extra-source "cl-consfigurator_1.2.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/consfigurator/cl-consfigurator_1.2.3-1_all.deb"
+}

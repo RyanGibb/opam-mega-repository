@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-pygame-sdl2_7.4.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-pygame-sdl2"]
+]
+depends: [
+  "deb-fonts-dejavu-core"
+  "deb-libc6" {>= "2.14"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libsdl2-2-0-0" {>= "2.0.12"}
+  "deb-libsdl2-image-2-0-0" {>= "2.0.2"}
+  "deb-libsdl2-mixer-2-0-0" {>= "2.0.2"}
+  "deb-libsdl2-ttf-2-0-0" {>= "2.0.14"}
+  "deb-python3" {< "3.10"}
+  "deb-python3" {>= "3.9~"}
+  "deb-python3-any"
+]
+extra-source "python3-pygame-sdl2_7.4.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pygame-sdl2/python3-pygame-sdl2_7.4.2-1_amd64.deb"
+}

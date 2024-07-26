@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libwnck-3-dev_43.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libwnck-3-dev"]
+]
+depends: [
+  "deb-gir1-2-wnck-3-0" {= "43.0-3"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2-dev"
+  "deb-libglib2-0-0" {>= "2.44"}
+  "deb-libglib2-0-dev" {>= "2.32"}
+  "deb-libgtk-3-0" {>= "3.22.0"}
+  "deb-libgtk-3-dev" {>= "3.4"}
+  "deb-libpango1-0-dev"
+  "deb-libstartup-notification0-dev" {>= "0.7"}
+  "deb-libwnck-3-0" {= "43.0-3"}
+  "deb-libx11-6"
+  "deb-libx11-dev"
+  "deb-libxres-dev"
+]
+extra-source "libwnck-3-dev_43.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libw/libwnck3/libwnck-3-dev_43.0-3_amd64.deb"
+}

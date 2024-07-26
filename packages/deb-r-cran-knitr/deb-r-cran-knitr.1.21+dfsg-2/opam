@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-knitr_1.21+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-knitr"]
+]
+depends: [
+  "deb-libjs-bootstrap"
+  "deb-libjs-highlight-js"
+  "deb-libjs-jquery"
+  "deb-libjs-jquery-datatables"
+  "deb-libjs-mathjax"
+  "deb-libjs-normalize-css"
+  "deb-node-highlight-js"
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "3.5.1.20181215-1"}
+  "deb-r-cran-evaluate" {>= "0.10"}
+  "deb-r-cran-highr"
+  "deb-r-cran-markdown"
+  "deb-r-cran-stringr" {>= "0.6"}
+  "deb-r-cran-xfun"
+  "deb-r-cran-yaml" {>= "2.1.19"}
+]
+extra-source "r-cran-knitr_1.21+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-knitr/r-cran-knitr_1.21+dfsg-2_all.deb"
+}

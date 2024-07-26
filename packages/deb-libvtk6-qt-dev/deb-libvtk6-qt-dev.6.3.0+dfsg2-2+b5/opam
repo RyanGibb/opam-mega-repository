@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libvtk6-qt-dev_6.3.0+dfsg2-2+b5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libvtk6-qt-dev"]
+]
+depends: [
+  "deb-libqt5opengl5-dev"
+  "deb-libqt5webkit5-dev"
+  "deb-libvtk6-3-qt" {= "6.3.0+dfsg2-2+b5"}
+  "deb-libvtk6-dev" {= "6.3.0+dfsg2-2+b5"}
+  "deb-qtbase5-dev"
+  "deb-qttools5-private-dev"
+]
+extra-source "libvtk6-qt-dev_6.3.0+dfsg2-2+b5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/vtk6/libvtk6-qt-dev_6.3.0+dfsg2-2+b5_amd64.deb"
+}

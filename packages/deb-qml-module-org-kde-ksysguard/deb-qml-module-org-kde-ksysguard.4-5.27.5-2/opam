@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qml-module-org-kde-ksysguard_4:5.27.5-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qml-module-org-kde-ksysguard"]
+]
+depends: [
+  "deb-kpackagetool5"
+  "deb-libc6" {>= "2.14"}
+  "deb-libkf5configqml5" {>= "5.102.0~"}
+  "deb-libkf5coreaddons5" {>= "5.102.0~"}
+  "deb-libkf5i18n5" {>= "5.102.0~"}
+  "deb-libkf5package5" {>= "5.102.0~"}
+  "deb-libksysguardformatter1" {= "4-5.27.5-2"}
+  "deb-libksysguardsensorfaces1" {= "4-5.27.5-2"}
+  "deb-libksysguardsensors1" {= "4-5.27.5-2"}
+  "deb-libprocesscore9" {= "4-5.27.5-2"}
+  "deb-libqt5core5a" {>= "5.15.2~"}
+  "deb-libqt5qml5" {>= "5.15.2~"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-qml-module-org-kde-kirigami2"
+  "deb-qml-module-org-kde-quickcharts"
+  "deb-qml-module-qtquick-layouts"
+  "deb-qml-module-qtquick2"
+  ("deb-libqt5quick5" {>= "5.15.2~"} | "deb- libqt5quick5-gles" {>= "5.15.2~"})
+]
+extra-source "qml-module-org-kde-ksysguard_4:5.27.5-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libk/libksysguard/qml-module-org-kde-ksysguard_5.27.5-2_amd64.deb"
+}

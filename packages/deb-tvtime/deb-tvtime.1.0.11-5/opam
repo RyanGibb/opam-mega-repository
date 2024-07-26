@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tvtime_1.0.11-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tvtime"]
+]
+depends: [
+  "deb-fonts-freefont-ttf"
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libice6" {>= "1-1.0.0"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libsm6"
+  "deb-libstdc++6" {>= "5"}
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxinerama1"
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libxss1"
+  "deb-libxv1"
+  "deb-libxxf86vm1"
+  "deb-perl"
+  "deb-ucf"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "tvtime_1.0.11-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tvtime/tvtime_1.0.11-5_amd64.deb"
+}

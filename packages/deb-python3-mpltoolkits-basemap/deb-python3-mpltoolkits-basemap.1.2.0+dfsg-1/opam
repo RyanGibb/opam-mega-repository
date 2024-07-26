@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-mpltoolkits.basemap_1.2.0+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-mpltoolkits.basemap"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libgeos-c1v5" {>= "3.4.2"}
+  "deb-python-mpltoolkits-basemap-data" {>= "1.2.0+dfsg-1"}
+  "deb-python3" {< "3.8"}
+  "deb-python3" {>= "3.7~"}
+  "deb-python3-any"
+  "deb-python3-matplotlib"
+  "deb-python3-numpy"
+  "deb-python3-pyproj"
+  "deb-python3-pyshp"
+  "deb-python3-six"
+]
+extra-source "python3-mpltoolkits.basemap_1.2.0+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/basemap/python3-mpltoolkits.basemap_1.2.0+dfsg-1_amd64.deb"
+}

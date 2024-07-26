@@ -1,0 +1,79 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libguestfs0_1:1.40.2-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libguestfs0"]
+]
+depends: [
+  "deb-acl"
+  "deb-attr"
+  "deb-binutils"
+  "deb-bsdmainutils"
+  "deb-btrfs-progs"
+  "deb-bzip2"
+  "deb-cpio"
+  "deb-cryptsetup-bin"
+  "deb-curl"
+  "deb-dash"
+  "deb-db-util"
+  "deb-diffutils"
+  "deb-dosfstools"
+  "deb-e2fsprogs"
+  "deb-exfat-utils"
+  "deb-extlinux"
+  "deb-file"
+  "deb-gawk"
+  "deb-gdisk"
+  "deb-genisoimage"
+  "deb-grub2-common"
+  "deb-icoutils"
+  "deb-isc-dhcp-client"
+  "deb-ldmtool"
+  "deb-less"
+  "deb-libacl1" {>= "2.2.23"}
+  "deb-libaugeas0" {>= "1.8.0"}
+  "deb-libc6" {>= "2.28"}
+  "deb-libcap2" {>= "1-2.10"}
+  "deb-libfuse2" {>= "2.8"}
+  "deb-libhivex0" {>= "1.3.14"}
+  "deb-libjansson4" {>= "2.7"}
+  "deb-libpcre3"
+  "deb-libselinux1" {>= "1.32"}
+  "deb-libsystemd0"
+  "deb-libtinfo6" {>= "6"}
+  "deb-libtsk13" {>= "4.2.0"}
+  "deb-libvirt0" {>= "0.9.4~rc1"}
+  "deb-libxml2" {>= "2.8.0"}
+  "deb-libyara3" {>= "3.4.0"}
+  "deb-lsscsi"
+  "deb-lvm2"
+  "deb-lzop"
+  "deb-mdadm"
+  "deb-mtools"
+  "deb-netpbm"
+  "deb-ntfs-3g"
+  "deb-openssh-client"
+  "deb-osinfo-db"
+  "deb-parted"
+  "deb-procps"
+  "deb-psmisc"
+  "deb-qemu-system-x86"
+  "deb-qemu-utils"
+  "deb-scrub"
+  "deb-sgabios"
+  "deb-sleuthkit"
+  "deb-squashfs-tools"
+  "deb-supermin" {>= "5"}
+  "deb-syslinux"
+  "deb-udev"
+  "deb-xz-utils"
+  "deb-zerofree"
+  ("deb-fdisk" | "deb- util-linux" {< "2.29.2"})
+  ("deb-iproute2" | "deb- iproute")
+  ("deb-kmod" | "deb- module-init-tools")
+  ("deb-systemd-sysv" | "deb- sysvinit-core")
+]
+extra-source "libguestfs0_1:1.40.2-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libg/libguestfs/libguestfs0_1.40.2-2_amd64.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libime-bin_1.0.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libime-bin"]
+]
+depends: [
+  "deb-libboost-iostreams1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.17"}
+  "deb-libdouble-conversion3" {>= "3.1.5-5~"}
+  "deb-libfcitx5utils2" {>= "5.0.4"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libimecore0" {= "1.0.4-1"}
+  "deb-libimepinyin0" {= "1.0.4-1"}
+  "deb-libimetable0" {= "1.0.4-1"}
+  "deb-libstdc++6" {>= "9"}
+]
+extra-source "libime-bin_1.0.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libi/libime/libime-bin_1.0.4-1_amd64.deb"
+}

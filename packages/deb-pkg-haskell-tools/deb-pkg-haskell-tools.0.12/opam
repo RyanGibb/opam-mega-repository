@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pkg-haskell-tools_0.12_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pkg-haskell-tools"]
+]
+depends: [
+  "deb-cabal-debian" {>= "4.31"}
+  "deb-dctrl-tools"
+  "deb-devscripts" {>= "2.16.6"}
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.27"}
+  "deb-libffi6" {>= "3.0.4"}
+  "deb-libfile-slurp-perl"
+  "deb-libgmp10"
+  "deb-perl"
+  "deb-reprepro"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "pkg-haskell-tools_0.12_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pkg-haskell-tools/pkg-haskell-tools_0.12_amd64.deb"
+}

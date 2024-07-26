@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-reform-happstack-dev_0.2.5.2-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-reform-happstack-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-happstack-server-dev"
+  "deb-libghc-random-dev"
+  "deb-libghc-reform-dev"
+  "deb-libghc-utf8-string-dev"
+  "deb-libgmp10"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libghc-reform-happstack-dev_0.2.5.2-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-reform-happstack/libghc-reform-happstack-dev_0.2.5.2-4+b1_amd64.deb"
+}

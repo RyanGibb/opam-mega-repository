@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnome-subtitles_1.6-2.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnome-subtitles"]
+]
+depends: [
+  "deb-enchant-2"
+  "deb-gstreamer1-0-gtk3"
+  "deb-gstreamer1-0-libav"
+  "deb-gstreamer1-0-plugins-good"
+  "deb-gstreamer1-0-x"
+  "deb-libc6" {>= "2.4"}
+  "deb-libcairo1-10-cil" {>= "2.99.3"}
+  "deb-libenchant-2-2" {>= "2.2.8"}
+  "deb-libgdk3-0-cil" {>= "2.99.3"}
+  "deb-libgio3-0-cil" {>= "2.99.3"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libglib3-0-cil" {>= "2.99.3"}
+  "deb-libgstreamer1-0-0" {>= "1.4.0"}
+  "deb-libgtk-3-0" {>= "3.24.18"}
+  "deb-libgtk3-0-cil" {>= "2.99.3"}
+  "deb-libgtkspell3-3-0" {>= "3.0.10"}
+  "deb-libmono-corlib4-5-cil" {>= "5.18.0.240"}
+  "deb-libmono-i18n4-0-all" {>= "4.0"}
+  "deb-libmono-posix4-0-cil" {>= "4.6.1.3"}
+  "deb-libmono-system4-0-cil" {>= "5.18.0.240"}
+  "deb-libpango3-0-cil" {>= "2.99.3"}
+  "deb-mono-runtime" {>= "4.0"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-libc6" {>= "2.30"} | "deb- libc6-1" {>= "2.30"} | "deb- libc0-1" {>= "2.30"})
+]
+extra-source "gnome-subtitles_1.6-2.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnome-subtitles/gnome-subtitles_1.6-2.1_amd64.deb"
+}

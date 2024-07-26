@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libhtml-formhandler-perl_0.40068-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libhtml-formhandler-perl"]
+]
+depends: [
+  "deb-libaliased-perl"
+  "deb-libclass-load-perl"
+  "deb-libcrypt-blowfish-perl"
+  "deb-libcrypt-cbc-perl"
+  "deb-libdata-clone-perl"
+  "deb-libdatetime-format-strptime-perl"
+  "deb-libdatetime-perl"
+  "deb-libemail-valid-perl"
+  "deb-libfile-sharedir-perl"
+  "deb-libhtml-parser-perl"
+  "deb-libhtml-tree-perl"
+  "deb-libjson-maybexs-perl" {>= "1.003003"}
+  "deb-libjson-perl"
+  "deb-libmoose-perl" {>= "2.1403"}
+  "deb-libmoosex-getopt-perl"
+  "deb-libmoosex-types-common-perl"
+  "deb-libmoosex-types-loadableclass-perl"
+  "deb-libmoosex-types-perl"
+  "deb-libnamespace-autoclean-perl"
+  "deb-libsub-exporter-perl"
+  "deb-libsub-name-perl"
+  "deb-libtry-tiny-perl"
+  "deb-perl"
+  ("deb-perl" {>= "5.19.5"} | "deb- libscalar-list-utils-perl" {>= "1-1.33"})
+]
+extra-source "libhtml-formhandler-perl_0.40068-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libh/libhtml-formhandler-perl/libhtml-formhandler-perl_0.40068-1_all.deb"
+}

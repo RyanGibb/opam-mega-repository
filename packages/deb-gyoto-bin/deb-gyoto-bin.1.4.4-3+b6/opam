@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gyoto-bin_1.4.4-3+b6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gyoto-bin"]
+]
+depends: [
+  "deb-libboost-mpi1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcfitsio9" {>= "3.480~"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgyoto8" {>= "1.4.4"}
+  "deb-libopenmpi3" {>= "4.0.5"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libxerces-c3-2"
+]
+extra-source "gyoto-bin_1.4.4-3+b6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gyoto/gyoto-bin_1.4.4-3+b6_amd64.deb"
+}

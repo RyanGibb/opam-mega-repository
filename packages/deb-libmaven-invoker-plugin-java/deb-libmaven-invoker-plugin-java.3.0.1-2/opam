@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmaven-invoker-plugin-java_3.0.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmaven-invoker-plugin-java"]
+]
+depends: [
+  "deb-groovy"
+  "deb-libbsh-java" {>= "2.0b4"}
+  "deb-libcommons-io-java"
+  "deb-libdoxia-core-java" {>= "1.7"}
+  "deb-libdoxia-sitetools-java" {>= "1.7.4"}
+  "deb-libmaven-artifact-transfer-java" {>= "0.9.1"}
+  "deb-libmaven-invoker-java" {>= "3.0.0"}
+  "deb-libmaven-reporting-api-java" {>= "3.0"}
+  "deb-libmaven-reporting-impl-java"
+  "deb-libmaven-script-interpreter-java" {>= "1.2"}
+  "deb-libmaven-shared-utils-java" {>= "3.1.0"}
+  "deb-libmaven3-core-java" {>= "3.5.0"}
+  "deb-libplexus-i18n-java"
+  "deb-libplexus-interpolation-java" {>= "1.24"}
+  "deb-libplexus-utils2-java" {>= "2.x"}
+]
+extra-source "libmaven-invoker-plugin-java_3.0.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/maven-invoker-plugin/libmaven-invoker-plugin-java_3.0.1-2_all.deb"
+}

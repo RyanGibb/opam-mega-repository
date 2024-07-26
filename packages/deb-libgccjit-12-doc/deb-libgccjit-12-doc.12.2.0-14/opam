@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgccjit-12-doc_12.2.0-14_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgccjit-12-doc"]
+]
+depends: [
+  "deb-gcc-12-base" {= "12.2.0-14"}
+]
+conflicts: [
+  "deb-libgccjit-10-doc"
+  "deb-libgccjit-11-doc"
+  "deb-libgccjit-5-doc"
+  "deb-libgccjit-6-doc"
+  "deb-libgccjit-7-doc"
+  "deb-libgccjit-8-doc"
+  "deb-libgccjit-9-doc"
+]
+extra-source "libgccjit-12-doc_12.2.0-14_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gcc-12/libgccjit-12-doc_12.2.0-14_all.deb"
+}

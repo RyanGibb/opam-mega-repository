@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnome-weather_43.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnome-weather"]
+]
+depends: [
+  "deb-geoclue-2-0" {>= "2.3.1"}
+  "deb-gir1-2-adw-1" {>= "1.2~alpha"}
+  "deb-gir1-2-geoclue-2-0" {>= "0.12.99"}
+  "deb-gir1-2-glib-2-0" {>= "1.35.9"}
+  "deb-gir1-2-gtk-4-0" {>= "4.5"}
+  "deb-gir1-2-gweather-4-0" {>= "3.90.0"}
+  "deb-gjs" {>= "1.71.0"}
+  "deb-libglib2-0-bin" {>= "2.40"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "gnome-weather_43.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnome-weather/gnome-weather_43.0-1_all.deb"
+}

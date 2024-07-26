@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ppp-2.5.0-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ppp"]
+]
+depends: [
+  "apk-ppp-atm" {= "2.5.0-r5"}
+  "apk-ppp-chat" {= "2.5.0-r5"}
+  "apk-ppp-daemon" {= "2.5.0-r5"}
+  "apk-ppp-l2tp" {= "2.5.0-r5"}
+  "apk-ppp-minconn" {= "2.5.0-r5"}
+  "apk-ppp-passprompt" {= "2.5.0-r5"}
+  "apk-ppp-passwordfd" {= "2.5.0-r5"}
+  "apk-ppp-pppoe" {= "2.5.0-r5"}
+  "apk-ppp-radius" {= "2.5.0-r5"}
+  "apk-ppp-winbind" {= "2.5.0-r5"}
+]
+extra-source "ppp-2.5.0-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ppp-2.5.0-r5.apk"
+}

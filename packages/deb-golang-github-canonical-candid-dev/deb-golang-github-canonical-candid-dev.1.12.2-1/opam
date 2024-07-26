@@ -1,0 +1,53 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-canonical-candid-dev_1.12.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-canonical-candid-dev"]
+]
+depends: [
+  "deb-golang-github-coreos-go-oidc-dev"
+  "deb-golang-github-duo-labs-webauthn-dev"
+  "deb-golang-github-frankban-quicktest-dev"
+  "deb-golang-github-go-ldap-ldap-dev"
+  "deb-golang-github-go-macaroon-bakery-macaroon-bakery-dev"
+  "deb-golang-github-gomodule-oauth1-dev"
+  "deb-golang-github-google-go-cmp-dev"
+  "deb-golang-github-google-uuid-dev"
+  "deb-golang-github-gorilla-handlers-dev"
+  "deb-golang-github-juju-aclstore-dev"
+  "deb-golang-github-juju-clock-dev"
+  "deb-golang-github-juju-cmd-dev" {>= "3.0.2"}
+  "deb-golang-github-juju-gnuflag-dev"
+  "deb-golang-github-juju-loggo-dev"
+  "deb-golang-github-juju-names-dev"
+  "deb-golang-github-juju-persistent-cookiejar-dev"
+  "deb-golang-github-juju-qthttptest-dev"
+  "deb-golang-github-juju-schema-dev"
+  "deb-golang-github-juju-simplekv-dev"
+  "deb-golang-github-juju-testing-dev"
+  "deb-golang-github-juju-usso-dev"
+  "deb-golang-github-juju-utils-dev"
+  "deb-golang-github-julienschmidt-httprouter-dev"
+  "deb-golang-github-lib-pq-dev"
+  "deb-golang-github-mhilton-openid-dev"
+  "deb-golang-github-prometheus-client-golang-dev"
+  "deb-golang-github-yohcop-openid-go-dev"
+  "deb-golang-golang-x-crypto-dev"
+  "deb-golang-golang-x-net-dev"
+  "deb-golang-golang-x-oauth2-dev"
+  "deb-golang-gopkg-asn1-ber-v1-dev"
+  "deb-golang-gopkg-errgo-v1-dev"
+  "deb-golang-gopkg-goose-v1-dev"
+  "deb-golang-gopkg-httprequest-v1-dev"
+  "deb-golang-gopkg-juju-environschema-v1-dev"
+  "deb-golang-gopkg-macaroon-v2-dev"
+  "deb-golang-gopkg-mgo-v2-dev"
+  "deb-golang-gopkg-natefinch-lumberjack-v2-dev"
+  "deb-golang-gopkg-square-go-jose-v2-dev"
+  "deb-golang-gopkg-tomb-v2-dev"
+  "deb-golang-gopkg-yaml-v2-dev"
+]
+extra-source "golang-github-canonical-candid-dev_1.12.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-canonical-candid/golang-github-canonical-candid-dev_1.12.2-1_all.deb"
+}

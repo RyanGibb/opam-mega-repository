@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tkgate_2.1+repack-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tkgate"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libpango-1-0-0" {>= "1.22.0"}
+  "deb-libpangoxft-1-0-0" {>= "1.14.0"}
+  "deb-libtcl8-6" {>= "8.6.0"}
+  "deb-libtk8-6" {>= "8.6.0"}
+  "deb-libx11-6"
+  "deb-libxft2" {> "2.1.1"}
+  "deb-tkgate-data" {= "2.1+repack-4"}
+]
+extra-source "tkgate_2.1+repack-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tkgate/tkgate_2.1+repack-4_amd64.deb"
+}

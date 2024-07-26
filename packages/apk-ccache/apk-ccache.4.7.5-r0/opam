@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ccache-4.7.5-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ccache"]
+]
+depends: [
+  "apk-hiredis" {= "1.0.2-r1"}
+  "apk-libgcc" {= "12.2.1_git20220924-r4"}
+  "apk-libstdc++" {= "12.2.1_git20220924-r4"}
+  "apk-musl" {= "1.2.3-r5"}
+  "apk-zstd-libs" {= "1.5.5-r0"}
+]
+extra-source "ccache-4.7.5-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ccache-4.7.5-r0.apk"
+}

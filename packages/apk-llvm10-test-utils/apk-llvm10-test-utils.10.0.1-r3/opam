@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add llvm10-test-utils-10.0.1-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del llvm10-test-utils"]
+]
+depends: [
+  "apk-libgcc" {= "10.3.1_git20210424-r2"}
+  "apk-libstdc++" {= "10.3.1_git20210424-r2"}
+  "apk-musl" {= "1.2.2-r5"}
+  "apk-py3-setuptools" {= "52.0.0-r3"}
+  "apk-python3" {= "3.9.17-r0"}
+]
+extra-source "llvm10-test-utils-10.0.1-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/llvm10-test-utils-10.0.1-r3.apk"
+}

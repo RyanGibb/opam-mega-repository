@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libwebinject-perl_1.94-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libwebinject-perl"]
+]
+depends: [
+  "deb-libcrypt-ssleay-perl"
+  "deb-liberror-perl"
+  "deb-libhttp-cookies-perl"
+  "deb-libhttp-message-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-libxml-parser-perl"
+  "deb-libxml-simple-perl"
+  "deb-perl-any"
+]
+extra-source "libwebinject-perl_1.94-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libw/libwebinject-perl/libwebinject-perl_1.94-2_all.deb"
+}

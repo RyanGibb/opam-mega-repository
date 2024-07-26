@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add bluez-obexd-5.55-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del bluez-obexd"]
+]
+depends: [
+  "apk-dbus" {= "1.12.24-r0"}
+  "apk-dbus-libs" {= "1.12.24-r0"}
+  "apk-glib" {= "2.66.8-r0"}
+  "apk-libical" {= "3.0.8-r5"}
+  "apk-musl" {= "1.2.2-r2"}
+]
+extra-source "bluez-obexd-5.55-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/bluez-obexd-5.55-r1.apk"
+}

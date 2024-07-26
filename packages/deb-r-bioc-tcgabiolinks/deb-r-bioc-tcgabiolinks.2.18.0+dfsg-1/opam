@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-bioc-tcgabiolinks_2.18.0+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-bioc-tcgabiolinks"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.3-1"}
+  "deb-r-bioc-biocgenerics"
+  "deb-r-bioc-biomart"
+  "deb-r-bioc-genomicranges"
+  "deb-r-bioc-iranges"
+  "deb-r-bioc-s4vectors"
+  "deb-r-bioc-summarizedexperiment" {>= "1.4.0"}
+  "deb-r-bioc-tcgabiolinksgui-data"
+  "deb-r-cran-data-table"
+  "deb-r-cran-downloader" {>= "0.4"}
+  "deb-r-cran-dplyr"
+  "deb-r-cran-ggplot2"
+  "deb-r-cran-httr" {>= "1.2.1"}
+  "deb-r-cran-jsonlite" {>= "1.0.0"}
+  "deb-r-cran-knitr"
+  "deb-r-cran-plyr"
+  "deb-r-cran-purrr"
+  "deb-r-cran-r-utils"
+  "deb-r-cran-readr"
+  "deb-r-cran-rvest" {>= "0.3.0"}
+  "deb-r-cran-stringr" {>= "1.0.0"}
+  "deb-r-cran-tibble"
+  "deb-r-cran-tidyr"
+  "deb-r-cran-xml" {>= "3.98.0"}
+  "deb-r-cran-xml2"
+]
+extra-source "r-bioc-tcgabiolinks_2.18.0+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-bioc-tcgabiolinks/r-bioc-tcgabiolinks_2.18.0+dfsg-1_all.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i revelation_0.5.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r revelation"]
+]
+depends: [
+  "deb-gir1-2-gtk-3-0"
+  "deb-python3-any"
+  "deb-python3-cracklib"
+  "deb-python3-dbus"
+  "deb-python3-defusedxml"
+  "deb-python3-gi"
+  "deb-python3-pwquality"
+  "deb-python3-pycryptodome"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "revelation_0.5.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/revelation/revelation_0.5.5-1_amd64.deb"
+}

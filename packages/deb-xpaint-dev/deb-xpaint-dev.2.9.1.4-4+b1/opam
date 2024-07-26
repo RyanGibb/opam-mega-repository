@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xpaint-dev_2.9.1.4-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xpaint-dev"]
+]
+depends: [
+  "deb-libc-dev"
+  "deb-libice-dev"
+  "deb-libsm-dev"
+  "deb-libx11-dev"
+  "deb-libxaw3dxft6" {= "2.9.1.4-4+b1"}
+  "deb-libxext-dev"
+  "deb-libxft-dev"
+  "deb-libxmu-dev"
+  "deb-libxpm-dev"
+  "deb-libxt-dev"
+  "deb-x11proto-core-dev"
+  "deb-x11proto-xext-dev"
+  "deb-xutils-dev"
+]
+extra-source "xpaint-dev_2.9.1.4-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xpaint/xpaint-dev_2.9.1.4-4+b1_amd64.deb"
+}

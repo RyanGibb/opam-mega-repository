@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librestfuldb-perl_0.16.0+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librestfuldb-perl"]
+]
+depends: [
+  "deb-libarchive-zip-perl"
+  "deb-libcgi-pm-perl"
+  "deb-libclone-perl"
+  "deb-libdata-uuid-perl"
+  "deb-libdatetime-perl"
+  "deb-libdbd-mysql-perl"
+  "deb-libdbd-sqlite3-perl"
+  "deb-libdbi-perl"
+  "deb-libexcel-writer-xlsx-perl"
+  "deb-libexception-class-perl"
+  "deb-libfile-libmagic-perl"
+  "deb-libhash-merge-perl"
+  "deb-libio-string-perl"
+  "deb-libjson-perl"
+  "deb-libobject-lazy-perl"
+  "deb-liboptimade-filter-perl" {>= "0.9.0"}
+  "deb-libspreadsheet-read-perl"
+  "deb-libspreadsheet-wright-perl"
+  "deb-libspreadsheet-xlsx-perl"
+  "deb-libtext-csv-encoded-perl"
+  "deb-libwww-perl"
+  "deb-perl-any"
+]
+extra-source "librestfuldb-perl_0.16.0+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/restfuldb/librestfuldb-perl_0.16.0+dfsg-1_all.deb"
+}

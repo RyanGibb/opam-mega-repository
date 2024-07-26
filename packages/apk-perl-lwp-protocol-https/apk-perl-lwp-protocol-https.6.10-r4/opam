@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-lwp-protocol-https-6.10-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-lwp-protocol-https"]
+]
+depends: [
+  "apk-perl" {= "5.36.2-r0"}
+  "apk-perl-io-socket-ssl" {= "2.081-r0"}
+  "apk-perl-libwww" {= "6.68-r1"}
+  "apk-perl-mozilla-ca" {= "20240313-r0"}
+  "apk-perl-net-http" {= "6.22-r0"}
+]
+extra-source "perl-lwp-protocol-https-6.10-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-lwp-protocol-https-6.10-r4.apk"
+}

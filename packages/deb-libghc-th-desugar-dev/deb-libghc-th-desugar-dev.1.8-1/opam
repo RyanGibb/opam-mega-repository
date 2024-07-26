@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-th-desugar-dev_1.8-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-th-desugar-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-syb-dev"
+  "deb-libghc-th-expand-syns-dev"
+  "deb-libghc-th-lift-dev"
+  "deb-libghc-th-orphans-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-th-desugar-dev_1.8-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-th-desugar/libghc-th-desugar-dev_1.8-1_amd64.deb"
+}

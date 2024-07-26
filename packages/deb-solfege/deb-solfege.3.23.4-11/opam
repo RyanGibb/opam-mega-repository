@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i solfege_3.23.4-11_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r solfege"]
+]
+depends: [
+  "deb-freepats"
+  "deb-gir1-2-gtk-3-0"
+  "deb-python3-any"
+  "deb-python3-apt"
+  "deb-python3-gi"
+  "deb-python3-gi-cairo"
+  "deb-sensible-utils"
+  "deb-timidity"
+]
+extra-source "solfege_3.23.4-11_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/solfege/solfege_3.23.4-11_all.deb"
+}

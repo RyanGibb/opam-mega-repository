@@ -1,0 +1,90 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i php-symfony_5.4.23+dfsg-1+deb12u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r php-symfony"]
+]
+depends: [
+  "deb-php-common"
+  "deb-php-doctrine-event-manager"
+  "deb-php-doctrine-persistence"
+  "deb-php-intl"
+  "deb-php-mbstring"
+  "deb-php-proxy-manager"
+  "deb-php-psr-cache"
+  "deb-php-psr-container" {< "2~~"}
+  "deb-php-psr-container" {>= "1.1.1"}
+  "deb-php-psr-event-dispatcher" {< "2~~"}
+  "deb-php-psr-event-dispatcher" {>= "1.0"}
+  "deb-php-psr-link" {< "2~~"}
+  "deb-php-psr-link" {>= "1.0"}
+  "deb-php-psr-log"
+  "deb-php-symfony-asset" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-browser-kit" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-cache" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-config" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-console" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-contracts" {< "3~~"}
+  "deb-php-symfony-contracts" {>= "2.1"}
+  "deb-php-symfony-css-selector" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-debug-bundle" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-dependency-injection" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-doctrine-bridge" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-dom-crawler" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-dotenv" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-error-handler" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-event-dispatcher" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-expression-language" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-filesystem" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-finder" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-form" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-framework-bundle" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-http-client" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-http-foundation" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-http-kernel" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-inflector" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-intl" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-ldap" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-lock" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-mailer" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-messenger" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-mime" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-monolog-bridge" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-notifier" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-options-resolver" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-password-hasher" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-process" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-property-access" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-property-info" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-proxy-manager-bridge" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-rate-limiter" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-routing" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-security-bundle" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-security-core" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-security-csrf" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-security-guard" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-security-http" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-semaphore" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-serializer" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-stopwatch" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-string" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-templating" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-translation" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-twig-bridge" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-twig-bundle" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-uid" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-validator" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-var-dumper" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-var-exporter" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-web-link" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-web-profiler-bundle" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-workflow" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-symfony-yaml" {= "5.4.23+dfsg-1+deb12u2"}
+  "deb-php-twig"
+  "deb-php-uuid"
+  "deb-php-xml"
+]
+extra-source "php-symfony_5.4.23+dfsg-1+deb12u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/symfony/php-symfony_5.4.23+dfsg-1+deb12u2_all.deb"
+}

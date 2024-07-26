@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gosa_2.7.4+reloaded3-8+deb10u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gosa"]
+]
+depends: [
+  "deb-fonts-liberation"
+  "deb-gettext"
+  "deb-libcrypt-smbhash-perl"
+  "deb-libjs-scriptaculous"
+  "deb-php"
+  "deb-php-cgi"
+  "deb-php-cli"
+  "deb-php-curl"
+  "deb-php-gd"
+  "deb-php-imap"
+  "deb-php-ldap"
+  "deb-php-mbstring"
+  "deb-php-mysql"
+  "deb-php-recode"
+  "deb-php-xml"
+  "deb-smarty-gettext"
+  "deb-smarty3"
+  ("deb-apache2" | "deb- lighttpd" | "deb- httpd")
+  ("deb-default-mta" | "deb- mail-transport-agent")
+  ("deb-php-imagick" | "deb- imagemagick" | "deb- graphicsmagick-im-compat")
+]
+conflicts: [
+  "deb-smarty-acl-render"
+  "deb-smarty3-gosa"
+]
+extra-source "gosa_2.7.4+reloaded3-8+deb10u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gosa/gosa_2.7.4+reloaded3-8+deb10u2_all.deb"
+}

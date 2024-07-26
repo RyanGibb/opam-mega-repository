@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdevel-mat-perl_0.51-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdevel-mat-perl"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libcommandable-perl"
+  "deb-libdevel-mat-dumper-perl"
+  "deb-libfeature-compat-try-perl"
+  "deb-libfile-sharedir-perl"
+  "deb-libheap-perl"
+  "deb-liblist-utilsby-perl"
+  "deb-libmodule-pluggable-perl"
+  "deb-libscalar-list-utils-perl"
+  "deb-libstring-tagged-perl"
+  "deb-libstring-tagged-terminal-perl"
+  "deb-libstruct-dumb-perl"
+  "deb-libsyntax-keyword-match-perl"
+  "deb-perl" {>= "5.36.0-7"}
+  "deb-perl-base"
+]
+extra-source "libdevel-mat-perl_0.51-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libd/libdevel-mat-perl/libdevel-mat-perl_0.51-1_amd64.deb"
+}

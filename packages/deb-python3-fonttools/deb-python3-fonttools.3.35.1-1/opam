@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-fonttools_3.35.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-fonttools"]
+]
+depends: [
+  "deb-gir1-2-atk-1-0"
+  "deb-gir1-2-gtk-3-0"
+  "deb-python3-any"
+  "deb-python3-brotli" {>= "1.0.7"}
+  "deb-python3-fs" {>= "2.1.3"}
+  "deb-python3-gi"
+  "deb-python3-numpy"
+  "deb-python3-pkg-resources"
+  "deb-python3-reportlab"
+  "deb-python3-scipy" {>= "1.1.0"}
+  "deb-python3-sympy"
+]
+extra-source "python3-fonttools_3.35.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fonttools/python3-fonttools_3.35.1-1_all.deb"
+}

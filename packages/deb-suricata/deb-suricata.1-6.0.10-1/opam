@@ -1,0 +1,42 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i suricata_1:6.0.10-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r suricata"]
+]
+depends: [
+  "deb-libbpf1" {>= "1-0.7.0"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcap-ng0" {>= "0.7.9"}
+  "deb-libevent-2-1-7" {>= "2.1.8-stable"}
+  "deb-libevent-pthreads-2-1-7" {>= "2.1.8-stable"}
+  "deb-libgcc-s1" {>= "4.2"}
+  "deb-libhiredis0-14" {>= "0.14.1"}
+  "deb-libhtp2" {>= "1-0.5.42-1~"}
+  "deb-libhyperscan5" {>= "5.4.0"}
+  "deb-libjansson4" {>= "2.14"}
+  "deb-liblz4-1" {>= "0.0~r127"}
+  "deb-libmagic1" {>= "5.12"}
+  "deb-libmaxminddb0" {>= "1.0.2"}
+  "deb-libnet1" {>= "1.1.5"}
+  "deb-libnetfilter-log1" {>= "0.0.13"}
+  "deb-libnetfilter-queue1" {>= "1.0.2"}
+  "deb-libnfnetlink0" {>= "1.0.2"}
+  "deb-libnspr4" {>= "2-4.9-2~"}
+  "deb-libnss3" {>= "2-3.13.4-2~"}
+  "deb-libpcap0-8" {>= "1.0.0"}
+  "deb-libpcre3"
+  "deb-libyaml-0-2"
+  "deb-python3-any"
+  "deb-sysvinit-utils"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libluajit-5-1-2" {>= "2.0.4+dfsg"} | "deb- libluajit2-5-1-2" {>= "2.1~"})
+]
+conflicts: [
+  "deb-libhtp1" {< "0.5.16"}
+  "deb-suricata-hyperscan" {< "3.2"}
+]
+extra-source "suricata_1:6.0.10-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/suricata/suricata_6.0.10-1_amd64.deb"
+}

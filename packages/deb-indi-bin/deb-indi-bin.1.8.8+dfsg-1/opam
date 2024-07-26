@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i indi-bin_1.8.8+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r indi-bin"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libcfitsio9" {>= "3.480~"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libindi-data" {>= "1.8.8+dfsg-1"}
+  "deb-libindialignmentdriver1" {= "1.8.8+dfsg-1"}
+  "deb-libindidriver1" {= "1.8.8+dfsg-1"}
+  "deb-libnova-0-16-0" {>= "0.16"}
+  "deb-libstdc++6" {>= "7"}
+  "deb-libusb-1-0-0" {>= "2-1.0.9"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "indi-bin_1.8.8+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/indi/indi-bin_1.8.8+dfsg-1_amd64.deb"
+}

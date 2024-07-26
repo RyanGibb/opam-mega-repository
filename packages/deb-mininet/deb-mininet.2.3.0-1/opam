@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mininet_2.3.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mininet"]
+]
+depends: [
+  "deb-cgroup-tools"
+  "deb-iperf"
+  "deb-libc6" {>= "2.4"}
+  "deb-net-tools"
+  "deb-python3"
+  "deb-python3-any"
+  "deb-python3-pkg-resources"
+  "deb-socat"
+  "deb-telnet"
+]
+extra-source "mininet_2.3.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mininet/mininet_2.3.0-1_amd64.deb"
+}

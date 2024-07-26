@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i spotweb_20130826+dfsg3-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r spotweb"]
+]
+depends: [
+  "deb-dbconfig-common"
+  "deb-dbconfig-mysql"
+  "deb-default-mysql-client"
+  "deb-fonts-liberation"
+  "deb-libjs-jquery" {>= "1.6.2"}
+  "deb-libjs-jquery-cookie"
+  "deb-libjs-jquery-easing"
+  "deb-libjs-jquery-fancybox"
+  "deb-libjs-jquery-form"
+  "deb-libjs-jquery-mousewheel"
+  "deb-libjs-jquery-ui" {>= "1.8.ooops.14"}
+  "deb-php-curl"
+  "deb-php-gd"
+  "deb-php-gmp"
+  "deb-php-json"
+  "deb-php-net-nntp" {>= "1.5.0~rc1"}
+  "deb-php-seclib"
+  "deb-ucf"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-libapache2-mod-php" | "deb- php")
+  ("deb-php-mysql" | "deb- php-mysqlnd")
+]
+extra-source "spotweb_20130826+dfsg3-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/spotweb/spotweb_20130826+dfsg3-4_all.deb"
+}

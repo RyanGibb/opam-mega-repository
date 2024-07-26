@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i forensics-samples-all_1.1.4-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r forensics-samples-all"]
+]
+depends: [
+  "deb-forensics-samples-btrfs"
+  "deb-forensics-samples-exfat"
+  "deb-forensics-samples-ext2"
+  "deb-forensics-samples-ext4"
+  "deb-forensics-samples-files"
+  "deb-forensics-samples-multiple"
+  "deb-forensics-samples-ntfs"
+  "deb-forensics-samples-vfat"
+]
+extra-source "forensics-samples-all_1.1.4-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/forensics-samples/forensics-samples-all_1.1.4-2_all.deb"
+}

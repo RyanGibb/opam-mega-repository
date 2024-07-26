@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpod-elemental-perlmunger-perl_0.200007-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpod-elemental-perlmunger-perl"]
+]
+depends: [
+  "deb-libmoose-perl"
+  "deb-libnamespace-autoclean-perl"
+  "deb-libparams-util-perl"
+  "deb-libpod-elemental-perl"
+  "deb-libppi-perl"
+  "deb-libscalar-list-utils-perl"
+  "deb-perl-any"
+]
+extra-source "libpod-elemental-perlmunger-perl_0.200007-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libp/libpod-elemental-perlmunger-perl/libpod-elemental-perlmunger-perl_0.200007-1_all.deb"
+}

@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-bioc-dexseq_1.36.0+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-bioc-dexseq"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.3-1"}
+  "deb-r-bioc-annotationdbi"
+  "deb-r-bioc-biobase"
+  "deb-r-bioc-biocgenerics"
+  "deb-r-bioc-biocparallel"
+  "deb-r-bioc-biomart"
+  "deb-r-bioc-deseq2" {>= "1.9.11"}
+  "deb-r-bioc-genefilter"
+  "deb-r-bioc-geneplotter"
+  "deb-r-bioc-genomicranges" {>= "1.23.7"}
+  "deb-r-bioc-iranges" {>= "2.5.17"}
+  "deb-r-bioc-rsamtools"
+  "deb-r-bioc-s4vectors" {>= "0.23.18"}
+  "deb-r-bioc-summarizedexperiment"
+  "deb-r-cran-hwriter"
+  "deb-r-cran-rcolorbrewer"
+  "deb-r-cran-statmod"
+  "deb-r-cran-stringr"
+]
+extra-source "r-bioc-dexseq_1.36.0+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-bioc-dexseq/r-bioc-dexseq_1.36.0+dfsg-1_all.deb"
+}

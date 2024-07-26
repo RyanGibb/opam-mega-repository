@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i madbomber_0.2.5-8_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r madbomber"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libsdl-image1-2" {>= "1.2.10"}
+  "deb-libsdl-mixer1-2"
+  "deb-libsdl1-2debian" {>= "1.2.11"}
+  "deb-madbomber-data"
+]
+extra-source "madbomber_0.2.5-8_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/madbomber/madbomber_0.2.5-8_amd64.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i osmo-pcu_1.1.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r osmo-pcu"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libosmocore19" {>= "1.7.0"}
+  "deb-libosmoctrl0" {>= "1.7.0"}
+  "deb-libosmogb14" {>= "1.7.0"}
+  "deb-libosmogsm18" {>= "1.7.0"}
+  "deb-libosmovty9" {>= "1.7.0"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-libtalloc2" {>= "2.0.4~git20101213"}
+]
+extra-source "osmo-pcu_1.1.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/osmo-pcu/osmo-pcu_1.1.0-2_amd64.deb"
+}

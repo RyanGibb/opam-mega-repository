@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsox-fmt-mp3_14.4.2+git20190427-2+deb11u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsox-fmt-mp3"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libid3tag0" {>= "0.15.1b"}
+  "deb-libmad0" {>= "0.15.1b-3"}
+  "deb-libmp3lame0" {>= "3.100"}
+  "deb-libsox3" {>= "14.4.2~"}
+  "deb-libtwolame0" {>= "0.3.10"}
+]
+extra-source "libsox-fmt-mp3_14.4.2+git20190427-2+deb11u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sox/libsox-fmt-mp3_14.4.2+git20190427-2+deb11u2_amd64.deb"
+}

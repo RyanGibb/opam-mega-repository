@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i heat-common_1:15.0.0-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r heat-common"]
+]
+depends: [
+  "deb-adduser"
+  "deb-dbconfig-common"
+  "deb-python3-any"
+  "deb-python3-heat" {= "1-15.0.0-4"}
+  "deb-python3-q-text-as-data"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "heat-common_1:15.0.0-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/heat/heat-common_15.0.0-4_all.deb"
+}

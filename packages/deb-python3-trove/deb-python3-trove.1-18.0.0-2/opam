@@ -1,0 +1,65 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-trove_1:18.0.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-trove"]
+]
+depends: [
+  "deb-e2fsprogs"
+  "deb-python3-any"
+  "deb-python3-cinderclient"
+  "deb-python3-cryptography" {>= "2.1.4"}
+  "deb-python3-designateclient"
+  "deb-python3-diskimage-builder"
+  "deb-python3-docker"
+  "deb-python3-eventlet"
+  "deb-python3-glanceclient"
+  "deb-python3-heatclient"
+  "deb-python3-httplib2"
+  "deb-python3-iso8601"
+  "deb-python3-jinja2"
+  "deb-python3-jsonschema"
+  "deb-python3-keystoneclient"
+  "deb-python3-keystonemiddleware"
+  "deb-python3-lxml"
+  "deb-python3-migrate"
+  "deb-python3-netaddr"
+  "deb-python3-neutronclient"
+  "deb-python3-novaclient"
+  "deb-python3-oslo-cache"
+  "deb-python3-oslo-concurrency"
+  "deb-python3-oslo-config"
+  "deb-python3-oslo-context"
+  "deb-python3-oslo-db"
+  "deb-python3-oslo-i18n"
+  "deb-python3-oslo-log"
+  "deb-python3-oslo-messaging"
+  "deb-python3-oslo-middleware"
+  "deb-python3-oslo-policy" {>= "3.6.0"}
+  "deb-python3-oslo-serialization"
+  "deb-python3-oslo-service"
+  "deb-python3-oslo-upgradecheck" {>= "1.3.0"}
+  "deb-python3-oslo-utils"
+  "deb-python3-osprofiler"
+  "deb-python3-passlib"
+  "deb-python3-paste"
+  "deb-python3-pastedeploy"
+  "deb-python3-pbr"
+  "deb-python3-pexpect"
+  "deb-python3-pymysql"
+  "deb-python3-routes"
+  "deb-python3-semantic-version"
+  "deb-python3-sqlalchemy"
+  "deb-python3-stevedore"
+  "deb-python3-swiftclient"
+  "deb-python3-troveclient"
+  "deb-python3-webob"
+  "deb-python3-xmltodict"
+]
+conflicts: [
+  "deb-python3-cjson"
+]
+extra-source "python3-trove_1:18.0.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openstack-trove/python3-trove_18.0.0-2_all.deb"
+}

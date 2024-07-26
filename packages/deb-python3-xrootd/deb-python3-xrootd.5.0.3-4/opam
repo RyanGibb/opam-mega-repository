@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-xrootd_5.0.3-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-xrootd"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libxrdcl3" {>= "5.0.3"}
+  "deb-python3" {< "3.10"}
+  "deb-python3" {>= "3.9~"}
+  "deb-python3-any"
+  "deb-xrootd-client-plugins" {= "5.0.3-4"}
+  "deb-xrootd-plugins" {= "5.0.3-4"}
+]
+extra-source "python3-xrootd_5.0.3-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xrootd/python3-xrootd_5.0.3-4_amd64.deb"
+}

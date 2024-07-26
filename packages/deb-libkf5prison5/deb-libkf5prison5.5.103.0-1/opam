@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkf5prison5_5.103.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkf5prison5"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libdmtx0b" {>= "0.7.0"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqrencode4" {>= "3.2.0"}
+  "deb-libqt5core5a" {>= "5.15.2~"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libzxing2" {>= "1.4.0"}
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+]
+extra-source "libkf5prison5_5.103.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/prison-kf5/libkf5prison5_5.103.0-1_amd64.deb"
+}

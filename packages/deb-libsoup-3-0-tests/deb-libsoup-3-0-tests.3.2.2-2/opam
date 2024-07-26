@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsoup-3.0-tests_3.2.2-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsoup-3.0-tests"]
+]
+depends: [
+  "deb-apache2" {>= "2.4"}
+  "deb-curl"
+  "deb-libapache2-mod-php" {< "2-9"}
+  "deb-libapache2-mod-php" {>= "2-7"}
+  "deb-libbrotli1" {>= "0.6.0"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libglib2-0-0" {>= "2.70.0"}
+  "deb-libgnutls30" {>= "3.7.3"}
+  "deb-libnghttp2-14" {>= "1.50.0"}
+  "deb-libnss-myhostname"
+  "deb-libpsl5" {>= "0.20"}
+  "deb-libsoup-3-0-0" {= "3.2.2-2"}
+  "deb-libsqlite3-0" {>= "3.5.9"}
+  "deb-php"
+  "deb-python3"
+  "deb-python3-quart"
+  "deb-zlib1g" {>= "1-1.2.0"}
+]
+extra-source "libsoup-3.0-tests_3.2.2-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libs/libsoup3/libsoup-3.0-tests_3.2.2-2_amd64.deb"
+}

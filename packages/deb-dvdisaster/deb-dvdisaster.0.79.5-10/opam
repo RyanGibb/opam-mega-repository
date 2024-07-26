@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dvdisaster_0.79.5-10_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dvdisaster"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.31.8"}
+  "deb-libgtk2-0-0" {>= "2.8.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-xdg-utils"
+]
+extra-source "dvdisaster_0.79.5-10_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dvdisaster/dvdisaster_0.79.5-10_amd64.deb"
+}

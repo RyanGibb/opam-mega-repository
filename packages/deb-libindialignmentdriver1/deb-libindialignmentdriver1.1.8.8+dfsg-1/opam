@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libindialignmentdriver1_1.8.8+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libindialignmentdriver1"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgsl25" {>= "2.6"}
+  "deb-libgslcblas0" {>= "2.6"}
+  "deb-libindi-plugins" {= "1.8.8+dfsg-1"}
+  "deb-libstdc++6" {>= "5.2"}
+]
+extra-source "libindialignmentdriver1_1.8.8+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/indi/libindialignmentdriver1_1.8.8+dfsg-1_amd64.deb"
+}

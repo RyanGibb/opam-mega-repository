@@ -1,0 +1,43 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openscad_2021.01-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openscad"]
+]
+depends: [
+  "deb-lib3mf1" {>= "1.8.1+ds"}
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-program-options1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-regex1-74-0"
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.15.8"}
+  "deb-libdouble-conversion3" {>= "2.0.0"}
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgl1"
+  "deb-libglew2-2" {>= "2.2.0-4+b1"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-libharfbuzz0b" {>= "0.9.9"}
+  "deb-libmpfr6" {>= "3.1.3"}
+  "deb-libopencsg1" {>= "1.5.0"}
+  "deb-libqscintilla2-qt5-15" {>= "2.11.2"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.4"}
+  "deb-libqt5gamepad5" {>= "5.10.1"}
+  "deb-libqt5gui5" {>= "5.8.0"}
+  "deb-libqt5multimedia5" {>= "5.6.0~beta"}
+  "deb-libqt5network5" {>= "5.4"}
+  "deb-libqt5widgets5" {>= "5.11.0~rc1"}
+  "deb-libspnav0" {>= "1.0"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libx11-6"
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libzip4" {>= "0.10"}
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+extra-source "openscad_2021.01-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openscad/openscad_2021.01-6_amd64.deb"
+}

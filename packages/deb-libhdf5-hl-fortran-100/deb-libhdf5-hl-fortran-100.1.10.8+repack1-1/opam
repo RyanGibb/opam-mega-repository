@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libhdf5-hl-fortran-100_1.10.8+repack1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libhdf5-hl-fortran-100"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgfortran5" {>= "8"}
+  "deb-libhdf5-fortran-102"
+  "deb-libhdf5-hl-100"
+]
+conflicts: [
+  "deb-libhdf5-100"
+  "deb-libhdf5-101"
+  "deb-libhdf5-102"
+  "deb-libhdf5-103" {< "1.10.5"}
+]
+extra-source "libhdf5-hl-fortran-100_1.10.8+repack1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/hdf5/libhdf5-hl-fortran-100_1.10.8+repack1-1_amd64.deb"
+}

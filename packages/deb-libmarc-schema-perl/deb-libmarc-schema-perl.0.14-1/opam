@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmarc-schema-perl_0.14-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmarc-schema-perl"]
+]
+depends: [
+  "deb-libcpanel-json-xs-perl"
+  "deb-libfile-share-perl"
+  "deb-libfile-slurper-perl"
+  "deb-libmarc-parser-raw-perl"
+  "deb-libmarc-parser-xml-perl"
+  "deb-libscalar-list-utils-perl"
+  "deb-perl-any"
+]
+extra-source "libmarc-schema-perl_0.14-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libm/libmarc-schema-perl/libmarc-schema-perl_0.14-1_all.deb"
+}

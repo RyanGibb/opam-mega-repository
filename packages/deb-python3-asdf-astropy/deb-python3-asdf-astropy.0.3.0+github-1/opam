@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-asdf-astropy_0.3.0+github-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-asdf-astropy"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-asdf"
+  "deb-python3-asdf-coordinates-schemas"
+  "deb-python3-asdf-transform-schemas"
+  "deb-python3-astropy"
+  "deb-python3-numpy"
+  "deb-python3-packaging"
+  ("deb-python3-importlib-resources" | "deb- python3" {> "3.9"})
+]
+extra-source "python3-asdf-astropy_0.3.0+github-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/asdf-astropy/python3-asdf-astropy_0.3.0+github-1_all.deb"
+}

@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-shake-dev_0.16.4+dfsg-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-shake-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libghc-extra-dev"
+  "deb-libghc-hashable-dev"
+  "deb-libghc-js-flot-dev"
+  "deb-libghc-js-jquery-dev"
+  "deb-libghc-primitive-dev"
+  "deb-libghc-random-dev"
+  "deb-libghc-shake-data" {>= "0.16.4+dfsg-3"}
+  "deb-libghc-unordered-containers-dev"
+  "deb-libghc-utf8-string-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-shake-dev_0.16.4+dfsg-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-shake/libghc-shake-dev_0.16.4+dfsg-3_amd64.deb"
+}

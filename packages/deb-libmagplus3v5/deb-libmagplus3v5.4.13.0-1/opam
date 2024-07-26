@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmagplus3v5_4.13.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmagplus3v5"]
+]
+depends: [
+  "deb-fonts-dejavu-core"
+  "deb-fonts-dejavu-extra"
+  "deb-ghostscript"
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.15.8"}
+  "deb-libeccodes0" {>= "2.27.0"}
+  "deb-libeckit0d" {>= "1.20.2"}
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgeotiff5" {>= "1.4.0"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libmagics++-data"
+  "deb-libnetcdf19" {>= "4.0.1"}
+  "deb-libodc-0d" {>= "1.4.6"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libproj25" {>= "6.1.0"}
+  "deb-libqt6core6" {>= "6.3.0"}
+  "deb-libqt6gui6" {>= "6.1.2"}
+  "deb-libqt6widgets6" {>= "6.1.2"}
+  "deb-libstdc++6" {>= "12"}
+  "deb-libterralib3" {>= "4.3.0+dfsg.2"}
+]
+extra-source "libmagplus3v5_4.13.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/magics++/libmagplus3v5_4.13.0-1_amd64.deb"
+}

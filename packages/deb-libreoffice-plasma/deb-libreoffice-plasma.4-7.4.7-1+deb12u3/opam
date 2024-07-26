@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libreoffice-plasma_4:7.4.7-1+deb12u3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libreoffice-plasma"]
+]
+depends: [
+  "deb-kio"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.3.1"}
+  "deb-libkf5configcore5" {>= "4.97.0"}
+  "deb-libkf5kiocore5" {>= "5.69.0"}
+  "deb-libqt5core5a" {>= "5.6"}
+  "deb-libqt5widgets5" {>= "5.6"}
+  "deb-libreoffice-core" {= "4-7.4.7-1+deb12u3"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libuno-cppu3" {>= "4.4.0~alpha"}
+  "deb-libuno-cppuhelpergcc3-3" {>= "1.4.0"}
+  "deb-libuno-sal3" {>= "5.1.0~alpha"}
+  "deb-uno-libs-private"
+  ("deb-libqt5gui5" {>= "5.6"} | "deb- libqt5gui5-gles" {>= "5.6"})
+]
+extra-source "libreoffice-plasma_4:7.4.7-1+deb12u3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libr/libreoffice/libreoffice-plasma_7.4.7-1+deb12u3_amd64.deb"
+}

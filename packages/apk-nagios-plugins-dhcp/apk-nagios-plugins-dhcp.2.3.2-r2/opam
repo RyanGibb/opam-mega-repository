@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add nagios-plugins-dhcp-2.3.2-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del nagios-plugins-dhcp"]
+]
+depends: [
+  "apk-libcrypto1-1" {= "1.1.1t-r2"}
+  "apk-musl" {= "1.2.2-r5"}
+  "apk-nagios-plugins" {= "2.3.2-r2"}
+]
+extra-source "nagios-plugins-dhcp-2.3.2-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/nagios-plugins-dhcp-2.3.2-r2.apk"
+}

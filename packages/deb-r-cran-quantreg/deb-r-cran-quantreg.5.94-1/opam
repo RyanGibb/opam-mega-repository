@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-quantreg_5.94-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-quantreg"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgfortran5" {>= "8"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.1-1"}
+  "deb-r-cran-conquer"
+  "deb-r-cran-mass"
+  "deb-r-cran-matrix"
+  "deb-r-cran-matrixmodels"
+  "deb-r-cran-sparsem"
+  "deb-r-cran-survival"
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "r-cran-quantreg_5.94-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-quantreg/r-cran-quantreg_5.94-1_amd64.deb"
+}

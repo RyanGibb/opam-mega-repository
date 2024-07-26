@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpersalys0_13.1.1+ds-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpersalys0"]
+]
+depends: [
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0"}
+  "deb-libboost-locale1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.32"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libopenturns0-21" {>= "1.20"}
+  "deb-libpython3-11" {>= "3.11.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5gui5" {>= "5.1.0"}
+  "deb-libqt5widgets5" {>= "5.15.1"}
+  "deb-libqwt-qt5-6" {>= "6.1.2"}
+  "deb-libstdc++6" {>= "11"}
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+]
+extra-source "libpersalys0_13.1.1+ds-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/persalys/libpersalys0_13.1.1+ds-1+b1_amd64.deb"
+}

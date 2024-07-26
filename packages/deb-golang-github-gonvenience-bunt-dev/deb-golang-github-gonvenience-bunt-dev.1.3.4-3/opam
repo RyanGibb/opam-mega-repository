@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-gonvenience-bunt-dev_1.3.4-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-gonvenience-bunt-dev"]
+]
+depends: [
+  "deb-golang-github-gonvenience-term-dev"
+  "deb-golang-github-lucasb-eyer-go-colorful-dev"
+  "deb-golang-github-mattn-go-ciede2000-dev"
+  "deb-golang-gomega-dev"
+]
+extra-source "golang-github-gonvenience-bunt-dev_1.3.4-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-gonvenience-bunt/golang-github-gonvenience-bunt-dev_1.3.4-3_all.deb"
+}

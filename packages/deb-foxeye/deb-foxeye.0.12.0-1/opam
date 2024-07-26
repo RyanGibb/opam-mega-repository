@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i foxeye_0.12.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r foxeye"]
+]
+depends: [
+  "deb-libc6" {>= "2.17"}
+  "deb-libidn11" {>= "1.13"}
+  "deb-liblua5-2-0"
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libtcl8-6" {>= "8.6.0"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "foxeye_0.12.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/foxeye/foxeye_0.12.0-1_amd64.deb"
+}

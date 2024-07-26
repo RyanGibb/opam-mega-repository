@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cups_2.2.10-6+deb10u6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cups"]
+]
+depends: [
+  "deb-cups-client" {>= "2.2.10-6+deb10u6"}
+  "deb-cups-common" {>= "2.2.10-6+deb10u6"}
+  "deb-cups-core-drivers" {>= "2.2.10-6+deb10u6"}
+  "deb-cups-daemon" {>= "2.2.10-6+deb10u6"}
+  "deb-cups-filters" {>= "1.0.24-3~"}
+  "deb-cups-ppdc"
+  "deb-cups-server-common" {>= "2.2.10-6+deb10u6"}
+  "deb-ghostscript"
+  "deb-libavahi-client3" {>= "0.6.16"}
+  "deb-libavahi-common3" {>= "0.6.16"}
+  "deb-libc6" {>= "2.16"}
+  "deb-libcups2" {= "2.2.10-6+deb10u6"}
+  "deb-libcupsimage2" {>= "1.4.0"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libusb-1-0-0" {>= "2-1.0.8"}
+  "deb-poppler-utils"
+  "deb-procps"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "cups_2.2.10-6+deb10u6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cups/cups_2.2.10-6+deb10u6_amd64.deb"
+}

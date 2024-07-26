@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-recipes_1.0.4+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-recipes"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.2.20221110-1"}
+  "deb-r-cran-cli"
+  "deb-r-cran-clock" {>= "0.6.1"}
+  "deb-r-cran-dplyr"
+  "deb-r-cran-ellipsis"
+  "deb-r-cran-generics" {>= "0.1.2"}
+  "deb-r-cran-glue"
+  "deb-r-cran-gower"
+  "deb-r-cran-hardhat" {>= "1.2.0"}
+  "deb-r-cran-ipred" {>= "0.9-12"}
+  "deb-r-cran-lifecycle" {>= "1.0.3"}
+  "deb-r-cran-lubridate" {>= "1.8.0"}
+  "deb-r-cran-magrittr"
+  "deb-r-cran-matrix"
+  "deb-r-cran-purrr" {>= "0.2.3"}
+  "deb-r-cran-rlang" {>= "1.0.3"}
+  "deb-r-cran-tibble"
+  "deb-r-cran-tidyr" {>= "1.0.0"}
+  "deb-r-cran-tidyselect" {>= "1.2.0"}
+  "deb-r-cran-timedate"
+  "deb-r-cran-vctrs" {>= "0.5.0"}
+  "deb-r-cran-withr"
+]
+extra-source "r-cran-recipes_1.0.4+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-recipes/r-cran-recipes_1.0.4+dfsg-1_all.deb"
+}

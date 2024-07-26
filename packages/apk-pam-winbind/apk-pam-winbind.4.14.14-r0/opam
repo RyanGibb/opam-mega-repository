@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add pam-winbind-4.14.14-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del pam-winbind"]
+]
+depends: [
+  "apk-libwbclient" {= "4.14.14-r0"}
+  "apk-linux-pam" {= "1.5.1-r1"}
+  "apk-musl" {= "1.2.2-r5"}
+  "apk-samba-util-libs" {= "4.14.14-r0"}
+  "apk-talloc" {= "2.3.2-r1"}
+]
+extra-source "pam-winbind-4.14.14-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/pam-winbind-4.14.14-r0.apk"
+}

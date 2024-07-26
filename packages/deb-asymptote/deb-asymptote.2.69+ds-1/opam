@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i asymptote_2.69+ds-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r asymptote"]
+]
+depends: [
+  "deb-freeglut3" {>= "2.8.1"}
+  "deb-ghostscript"
+  "deb-imagemagick"
+  "deb-install-info"
+  "deb-libc6" {>= "2.29"}
+  "deb-libfftw3-double3" {>= "3.3.5"}
+  "deb-libgc1" {>= "1-7.2d"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgl1"
+  "deb-libglew2-1" {>= "1.12.0"}
+  "deb-libglx0"
+  "deb-libgsl25" {>= "2.6"}
+  "deb-libreadline8" {>= "6.0"}
+  "deb-libsigsegv2" {>= "2.9"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-python3-any"
+  "deb-tex-common" {>= "6.13"}
+  "deb-texlive-binaries"
+  "deb-texlive-latex-base"
+  "deb-texlive-plain-generic"
+  "deb-texlive-pstricks"
+  "deb-xdg-utils"
+  "deb-zlib1g" {>= "1-1.2.0"}
+]
+extra-source "asymptote_2.69+ds-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/asymptote/asymptote_2.69+ds-1_amd64.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgraphics-primitive-driver-cairo-perl_0.47-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgraphics-primitive-driver-cairo-perl"]
+]
+depends: [
+  "deb-libcairo-perl"
+  "deb-libgeometry-primitive-perl"
+  "deb-libgraphics-primitive-perl"
+  "deb-libmoose-perl"
+  "deb-libtext-flow-perl"
+  "deb-perl-any"
+]
+extra-source "libgraphics-primitive-driver-cairo-perl_0.47-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libg/libgraphics-primitive-driver-cairo-perl/libgraphics-primitive-driver-cairo-perl_0.47-2_all.deb"
+}

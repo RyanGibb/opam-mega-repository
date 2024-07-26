@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-recommended_3.5.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-recommended"]
+]
+depends: [
+  "deb-r-base-core" {>= "3.5.2-1"}
+  "deb-r-cran-boot" {>= "1.2.19"}
+  "deb-r-cran-class"
+  "deb-r-cran-cluster" {>= "1.9.6-2"}
+  "deb-r-cran-codetools"
+  "deb-r-cran-foreign" {>= "0.7-2"}
+  "deb-r-cran-kernsmooth" {>= "2.2.14"}
+  "deb-r-cran-lattice" {>= "0.10.11"}
+  "deb-r-cran-mass"
+  "deb-r-cran-matrix"
+  "deb-r-cran-mgcv" {>= "1.1.5"}
+  "deb-r-cran-nlme" {>= "3.1.52"}
+  "deb-r-cran-nnet"
+  "deb-r-cran-rpart" {>= "3.1.20"}
+  "deb-r-cran-spatial"
+  "deb-r-cran-survival" {>= "2.13.2-1"}
+]
+extra-source "r-recommended_3.5.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-base/r-recommended_3.5.2-1_all.deb"
+}

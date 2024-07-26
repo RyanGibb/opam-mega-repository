@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-pyfai_0.17.0+dfsg1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-pyfai"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgomp1" {>= "4.9"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-python" {< "2.8"}
+  "deb-python" {>= "2.7~"}
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7~"}
+  "deb-python-fabio"
+  "deb-python-h5py"
+  "deb-python-matplotlib"
+  "deb-python-numexpr"
+  "deb-python-numpy"
+  "deb-python-numpy" {>= "1-1.16.0~rc1"}
+  "deb-python-pkg-resources"
+  "deb-python-pyopencl"
+  "deb-python-pyqt5"
+  "deb-python-scipy"
+  "deb-python-silx"
+  "deb-python-six"
+]
+extra-source "python-pyfai_0.17.0+dfsg1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pyfai/python-pyfai_0.17.0+dfsg1-3_amd64.deb"
+}

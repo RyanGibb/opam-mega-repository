@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-marshmallow-dataclass_8.5.10-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-marshmallow-dataclass"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-marshmallow"
+  "deb-python3-typing-inspect"
+  ("deb-python3-dataclasses" | "deb- python3" {< "3.6"} | "deb- python3" {> "3.7"})
+  ("deb-python3-typeshed" | "deb- python3" {< "3.6"} | "deb- python3" {> "3.7"})
+]
+extra-source "python3-marshmallow-dataclass_8.5.10-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-marshmallow-dataclass/python3-marshmallow-dataclass_8.5.10-1_all.deb"
+}

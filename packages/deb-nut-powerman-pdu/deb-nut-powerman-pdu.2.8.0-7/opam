@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i nut-powerman-pdu_2.8.0-7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r nut-powerman-pdu"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libpowerman0" {>= "2.3.27"}
+  "deb-nut-server" {= "2.8.0-7"}
+  "deb-powerman"
+]
+extra-source "nut-powerman-pdu_2.8.0-7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/nut/nut-powerman-pdu_2.8.0-7_amd64.deb"
+}

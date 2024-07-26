@@ -1,0 +1,53 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i os-autoinst_4.6.1604525166.912dfbd-0.3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r os-autoinst"]
+]
+depends: [
+  "deb-git"
+  "deb-libautodie-perl"
+  "deb-libc6" {>= "2.14"}
+  "deb-libcarp-always-perl"
+  "deb-libclass-accessor-perl"
+  "deb-libcrypt-des-perl"
+  "deb-libdata-dump-perl"
+  "deb-libdevel-cover-perl"
+  "deb-libexception-class-perl"
+  "deb-libfftw3-double3" {>= "3.3.5"}
+  "deb-libfile-which-perl"
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libipc-run-perl"
+  "deb-libipc-system-simple-perl"
+  "deb-libjson-perl"
+  "deb-libjson-xs-perl"
+  "deb-libmojolicious-perl" {>= "5.60"}
+  "deb-libnet-dbus-perl"
+  "deb-libnet-ip-perl"
+  "deb-libnet-snmp-perl"
+  "deb-libnet-ssh2-perl"
+  "deb-libogg0" {>= "1.0rc3"}
+  "deb-libopencv-core4-5" {>= "4.5.1+dfsg"}
+  "deb-libopencv-highgui4-5" {>= "4.5.1+dfsg"}
+  "deb-libopencv-imgcodecs4-5" {>= "4.5.1+dfsg"}
+  "deb-libopencv-imgproc4-5" {>= "4.5.1+dfsg"}
+  "deb-libpod-coverage-perl"
+  "deb-libsndfile1" {>= "1.0.20"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtest-fatal-perl"
+  "deb-libtest-mockmodule-perl"
+  "deb-libtest-output-perl"
+  "deb-libtest-pod-perl"
+  "deb-libtest-warnings-perl"
+  "deb-libtheora0" {>= "1.0"}
+  "deb-libxml-libxml-perl"
+  "deb-optipng"
+  "deb-python3"
+  "deb-qemu-system-x86" {>= "2.0.0"}
+  "deb-qemu-utils"
+  "deb-tesseract-ocr-all"
+]
+extra-source "os-autoinst_4.6.1604525166.912dfbd-0.3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/os-autoinst/os-autoinst_4.6.1604525166.912dfbd-0.3_amd64.deb"
+}

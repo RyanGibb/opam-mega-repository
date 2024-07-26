@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i elastalert_0.2.4-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r elastalert"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-apscheduler"
+  "deb-python3-aws-requests-auth"
+  "deb-python3-boto3"
+  "deb-python3-cffi-backend"
+  "deb-python3-croniter"
+  "deb-python3-dateutil"
+  "deb-python3-elasticsearch"
+  "deb-python3-envparse"
+  "deb-python3-exotel"
+  "deb-python3-jira"
+  "deb-python3-jsonschema" {>= "3.0.2"}
+  "deb-python3-magic"
+  "deb-python3-mock"
+  "deb-python3-prison" {>= "0.1.2"}
+  "deb-python3-requests"
+  "deb-python3-sortedcontainers"
+  "deb-python3-staticconf"
+  "deb-python3-stomp" {>= "5.0.0"}
+  "deb-python3-texttable"
+  "deb-python3-twilio"
+  "deb-python3-yaml"
+]
+extra-source "elastalert_0.2.4-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/elastalert/elastalert_0.2.4-3_all.deb"
+}

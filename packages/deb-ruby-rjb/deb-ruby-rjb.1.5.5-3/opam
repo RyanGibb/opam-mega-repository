@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-rjb_1.5.5-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-rjb"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgmp10"
+  "deb-libruby2-5" {>= "2.5.0~preview1"}
+  "deb-ruby" {< "1-2.6~"}
+  "deb-ruby" {>= "1-2.5~0"}
+  ("deb-default-jre" | "deb- java5-runtime")
+]
+extra-source "ruby-rjb_1.5.5-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-rjb/ruby-rjb_1.5.5-3_amd64.deb"
+}

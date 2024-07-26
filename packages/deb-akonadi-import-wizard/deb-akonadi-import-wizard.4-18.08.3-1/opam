@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i akonadi-import-wizard_4:18.08.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r akonadi-import-wizard"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libkf5akonadicore5abi2" {>= "4-18.07.90"}
+  "deb-libkf5akonadiwidgets5abi1" {>= "4-17.12.1"}
+  "deb-libkf5completion5" {>= "4.97.0"}
+  "deb-libkf5configcore5" {>= "4.97.0"}
+  "deb-libkf5contacts5" {>= "4-17.08.0"}
+  "deb-libkf5coreaddons5" {>= "5.2.0"}
+  "deb-libkf5crash5" {>= "5.15.0"}
+  "deb-libkf5dbusaddons5" {>= "4.97.0"}
+  "deb-libkf5i18n5" {>= "4.97.0"}
+  "deb-libkf5identitymanagement5" {>= "16.08.0"}
+  "deb-libkf5libkdepim-plugins"
+  "deb-libkf5libkdepim5" {>= "4-16.04.0"}
+  "deb-libkf5mailcommon5abi2" {>= "4-18.07.90"}
+  "deb-libkf5mailimporter5" {>= "4-17.08.0"}
+  "deb-libkf5mailimporterakonadi5" {>= "4-17.12.2"}
+  "deb-libkf5mailtransport5" {>= "18.08.3~"}
+  "deb-libkf5messageviewer5abi1" {>= "4-18.07.90"}
+  "deb-libkf5widgetsaddons5" {>= "4.98.0"}
+  "deb-libkf5xmlgui5" {>= "4.96.0"}
+  "deb-libkpimimportwizard5" {= "4-18.08.3-1"}
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5gui5" {>= "5.9.0~"}
+  "deb-libqt5widgets5" {>= "5.11.0~rc1"}
+  "deb-libqt5xml5" {>= "5.9.0~"}
+  "deb-libstdc++6" {>= "4.1.1"}
+]
+extra-source "akonadi-import-wizard_4:18.08.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/akonadi-import-wizard/akonadi-import-wizard_18.08.3-1_amd64.deb"
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ament-lint_0.13.2-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ament-lint"]
+]
+depends: [
+  "deb-ament-cmake-copyright"
+  "deb-ament-cmake-core"
+  "deb-ament-cmake-cppcheck"
+  "deb-ament-cmake-cpplint"
+  "deb-ament-cmake-flake8"
+  "deb-ament-cmake-lint-cmake"
+  "deb-ament-cmake-pep257"
+  "deb-ament-cmake-uncrustify"
+  "deb-ament-cmake-xmllint"
+  "deb-python3-ament-lint"
+]
+extra-source "ament-lint_0.13.2-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ros2-ament-lint/ament-lint_0.13.2-4_all.deb"
+}

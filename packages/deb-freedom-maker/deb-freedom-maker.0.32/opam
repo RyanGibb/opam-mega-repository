@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i freedom-maker_0.32_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r freedom-maker"]
+]
+depends: [
+  "deb-btrfs-progs"
+  "deb-debootstrap"
+  "deb-dmsetup"
+  "deb-dosfstools"
+  "deb-fdisk"
+  "deb-git"
+  "deb-kpartx"
+  "deb-parted"
+  "deb-psmisc"
+  "deb-python3-any"
+  "deb-python3-cliapp"
+  "deb-qemu-user-static"
+  "deb-qemu-utils"
+  "deb-sshpass"
+  "deb-sudo"
+  "deb-u-boot-tools"
+  "deb-xz-utils"
+  ("deb-binfmt-support" | "deb- systemd")
+]
+extra-source "freedom-maker_0.32_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/freedom-maker/freedom-maker_0.32_all.deb"
+}

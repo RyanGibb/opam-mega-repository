@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libweb-query-perl_0.39-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libweb-query-perl"]
+]
+depends: [
+  "deb-libhtml-parser-perl"
+  "deb-libhtml-selector-xpath-perl" {>= "0.20"}
+  "deb-libhtml-treebuilder-libxml-perl"
+  "deb-libhtml-treebuilder-xpath-perl"
+  "deb-libwww-perl"
+  "deb-perl"
+  ("deb-perl" {>= "5.25.1"} | "deb- libscalar-list-utils-perl" {>= "1-1.44"})
+]
+extra-source "libweb-query-perl_0.39-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libw/libweb-query-perl/libweb-query-perl_0.39-1_all.deb"
+}

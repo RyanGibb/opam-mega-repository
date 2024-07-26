@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-websocket-stream_5.4.0-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-websocket-stream"]
+]
+depends: [
+  "deb-node-duplexify" {>= "3.5.1"}
+  "deb-node-inherits"
+  "deb-node-readable-stream"
+  "deb-node-safe-buffer"
+  "deb-node-ws" {>= "8"}
+  "deb-node-xtend"
+]
+extra-source "node-websocket-stream_5.4.0-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-websocket-stream/node-websocket-stream_5.4.0-5_all.deb"
+}

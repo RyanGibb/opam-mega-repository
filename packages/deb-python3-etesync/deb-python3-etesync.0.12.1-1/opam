@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-etesync_0.12.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-etesync"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-appdirs"
+  "deb-python3-asn1crypto"
+  "deb-python3-cffi"
+  "deb-python3-cryptography" {>= "3.0"}
+  "deb-python3-dateutil" {>= "2.6"}
+  "deb-python3-furl"
+  "deb-python3-idna" {>= "2.5"}
+  "deb-python3-orderedmultidict"
+  "deb-python3-packaging"
+  "deb-python3-peewee"
+  "deb-python3-py"
+  "deb-python3-pyasn1"
+  "deb-python3-pycparser"
+  "deb-python3-pyparsing" {>= "2.2"}
+  "deb-python3-requests"
+  "deb-python3-six" {>= "1.10"}
+  "deb-python3-tz" {>= "2019.1"}
+  "deb-python3-vobject"
+]
+extra-source "python3-etesync_0.12.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-etesync/python3-etesync_0.12.1-1_all.deb"
+}

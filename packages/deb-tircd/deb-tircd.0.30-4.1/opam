@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tircd_0.30-4.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tircd"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libhtml-parser-perl"
+  "deb-libjson-any-perl"
+  "deb-libnet-twitter-lite-perl" {>= "0.12002-3"}
+  "deb-libpoe-filter-ircd-perl"
+  "deb-libpoe-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-lsb-base"
+  "deb-perl-any"
+]
+extra-source "tircd_0.30-4.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tircd/tircd_0.30-4.1_all.deb"
+}

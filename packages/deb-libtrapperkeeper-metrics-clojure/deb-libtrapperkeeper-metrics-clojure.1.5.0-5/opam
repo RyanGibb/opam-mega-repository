@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libtrapperkeeper-metrics-clojure_1.5.0-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libtrapperkeeper-metrics-clojure"]
+]
+depends: [
+  "deb-libcheshire-clojure"
+  "deb-libclojure-java"
+  "deb-libcomidi-clojure"
+  "deb-libdropwizard-metrics-java"
+  "deb-libjava-jmx-clojure"
+  "deb-libjolokia-core-java"
+  "deb-libkitchensink-clojure" {>= "3.1.1-2"}
+  "deb-libprismatic-schema-clojure" {>= "1.1.12"}
+  "deb-libpuppetlabs-i18n-clojure" {>= "0.9.0-2"}
+  "deb-libpuppetlabs-ring-middleware-clojure" {>= "1.3.0"}
+  "deb-libring-defaults-clojure"
+  "deb-libring-servlet-clojure"
+  "deb-libtools-logging-clojure"
+  "deb-libtrapperkeeper-authorization-clojure" {>= "1.0.0-2"}
+  "deb-libtrapperkeeper-clojure" {>= "3.1.0"}
+]
+extra-source "libtrapperkeeper-metrics-clojure_1.5.0-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/trapperkeeper-metrics-clojure/libtrapperkeeper-metrics-clojure_1.5.0-5_all.deb"
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libjuff0.10_0.10-89-g3690b60-7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libjuff0.10"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libenca0" {>= "1.9"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqscintilla2-qt5-15" {>= "2.11.2"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5printsupport5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-libqt5xml5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "5"}
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "libjuff0.10_0.10-89-g3690b60-7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/j/juffed/libjuff0.10_0.10-89-g3690b60-7_amd64.deb"
+}

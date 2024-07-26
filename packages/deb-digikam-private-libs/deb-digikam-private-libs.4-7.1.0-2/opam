@@ -1,0 +1,83 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i digikam-private-libs_4:7.1.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r digikam-private-libs"]
+]
+depends: [
+  "deb-kio"
+  "deb-libavcodec-extra58"
+  "deb-libavfilter-extra7"
+  "deb-libavformat58" {>= "7-4.1"}
+  "deb-libavutil56" {>= "7-4.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libexiv2-27" {>= "0.27.3"}
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgl1"
+  "deb-libgomp1" {>= "6"}
+  "deb-libgphoto2-6" {>= "2.5.10"}
+  "deb-libgphoto2-port12" {>= "2.5.10"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libkf5akonadicontact5"
+  "deb-libkf5akonadicontact5" {>= "4-20.08.3"}
+  "deb-libkf5calendarcore5abi2" {>= "5-5.67.0"}
+  "deb-libkf5completion5" {>= "4.97.0"}
+  "deb-libkf5configcore5" {>= "4.98.0"}
+  "deb-libkf5configgui5" {>= "4.97.0"}
+  "deb-libkf5configwidgets5" {>= "4.96.0"}
+  "deb-libkf5contacts5" {>= "4-5.69.0"}
+  "deb-libkf5coreaddons5" {>= "5.2.0"}
+  "deb-libkf5filemetadata3" {>= "5.1.0.1"}
+  "deb-libkf5i18n5" {>= "4.97.0"}
+  "deb-libkf5iconthemes5" {>= "4.96.0"}
+  "deb-libkf5kiocore5" {>= "5.69.0"}
+  "deb-libkf5kiowidgets5" {>= "5.69.0"}
+  "deb-libkf5notifications5" {>= "4.96.0"}
+  "deb-libkf5notifyconfig5" {>= "4.96.0"}
+  "deb-libkf5sane5" {>= "4.3.4"}
+  "deb-libkf5service-bin"
+  "deb-libkf5service5" {>= "4.96.0"}
+  "deb-libkf5solid5" {>= "4.97.0"}
+  "deb-libkf5threadweaver5" {>= "4.98.0"}
+  "deb-libkf5widgetsaddons5" {>= "4.96.0"}
+  "deb-libkf5windowsystem5" {>= "4.100.0"}
+  "deb-libkf5xmlgui5" {>= "5.35.0"}
+  "deb-liblcms2-2" {>= "2.2+git20110628"}
+  "deb-liblensfun1" {>= "0.3.2"}
+  "deb-liblqr-1-0" {>= "0.4.0"}
+  "deb-libmagick++-6-q16-8"
+  "deb-libmagickcore-6-q16-6" {>= "8-6.9.10.2"}
+  "deb-libmarblewidget-qt5-28" {>= "4-17.08.3"}
+  "deb-libopencv-core4-5" {>= "4.5.1+dfsg"}
+  "deb-libopencv-dnn4-5" {>= "4.5.1+dfsg"}
+  "deb-libopencv-imgcodecs4-5" {>= "4.5.1+dfsg"}
+  "deb-libopencv-imgproc4-5" {>= "4.5.1+dfsg"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libqt5concurrent5" {>= "5.6.0~rc"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.14.1"}
+  "deb-libqt5network5" {>= "5.14.1"}
+  "deb-libqt5printsupport5" {>= "5.4.0"}
+  "deb-libqt5sql5" {>= "5.4.0"}
+  "deb-libqt5webenginecore5" {>= "5.7.1"}
+  "deb-libqt5webenginewidgets5" {>= "5.14.1"}
+  "deb-libqt5widgets5" {>= "5.15.1"}
+  "deb-libqt5x11extras5" {>= "5.6.0"}
+  "deb-libqt5xml5" {>= "5.4.0"}
+  "deb-libqt5xmlpatterns5" {>= "5.0.2"}
+  "deb-libqtav1"
+  "deb-libqtavwidgets1"
+  "deb-libstdc++6" {>= "9"}
+  "deb-libswscale5" {>= "7-4.0"}
+  "deb-libtiff5" {>= "4.0.3"}
+  "deb-libx11-6"
+  "deb-libx265-192" {>= "3.2"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libxslt1-1" {>= "1.1.25"}
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "digikam-private-libs_4:7.1.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/digikam/digikam-private-libs_7.1.0-2_amd64.deb"
+}

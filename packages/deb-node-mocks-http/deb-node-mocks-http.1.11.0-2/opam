@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-mocks-http_1.11.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-mocks-http"]
+]
+depends: [
+  "deb-node-accepts"
+  "deb-node-content-disposition"
+  "deb-node-depd"
+  "deb-node-fresh"
+  "deb-node-merge-descriptors"
+  "deb-node-methods"
+  "deb-node-mime"
+  "deb-node-parseurl"
+  "deb-node-range-parser"
+  "deb-node-type-is"
+]
+extra-source "node-mocks-http_1.11.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-mocks-http/node-mocks-http_1.11.0-2_all.deb"
+}

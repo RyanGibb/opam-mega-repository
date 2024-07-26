@@ -1,0 +1,58 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i konqueror_4:20.12.0-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r konqueror"]
+]
+depends: [
+  "deb-dolphin"
+  "deb-install-info"
+  "deb-kio"
+  "deb-libc6" {>= "2.29"}
+  "deb-libkf5archive5" {>= "5.71.0~"}
+  "deb-libkf5bookmarks5" {>= "5.69.0"}
+  "deb-libkf5codecs5" {>= "4.96.0"}
+  "deb-libkf5completion5" {>= "4.98.0"}
+  "deb-libkf5configcore5" {>= "5.24.0"}
+  "deb-libkf5configgui5" {>= "4.97.0"}
+  "deb-libkf5configwidgets5" {>= "5.69.0"}
+  "deb-libkf5coreaddons5" {>= "5.61.0"}
+  "deb-libkf5crash5" {>= "5.71.0~"}
+  "deb-libkf5dbusaddons5" {>= "5.71.0~"}
+  "deb-libkf5i18n5" {>= "4.97.0"}
+  "deb-libkf5iconthemes5" {>= "5.71.0~"}
+  "deb-libkf5itemviews5" {>= "4.96.0"}
+  "deb-libkf5jobwidgets5" {>= "5.70.0"}
+  "deb-libkf5kcmutils5" {>= "5.71.0~"}
+  "deb-libkf5kiocore5" {>= "5.69.0"}
+  "deb-libkf5kiofilewidgets5" {>= "5.69.0"}
+  "deb-libkf5kiogui5" {>= "5.74.0"}
+  "deb-libkf5kiowidgets5" {>= "5.70.0"}
+  "deb-libkf5konq6" {>= "4-20.12.0"}
+  "deb-libkf5parts5" {>= "5.71.0~"}
+  "deb-libkf5service-bin"
+  "deb-libkf5service5" {>= "4.99.0"}
+  "deb-libkf5sonnetcore5" {>= "4.96.0"}
+  "deb-libkf5sonnetui5" {>= "5.69.0"}
+  "deb-libkf5textwidgets5" {>= "5.0.0"}
+  "deb-libkf5wallet-bin"
+  "deb-libkf5wallet5" {>= "5.71.0~"}
+  "deb-libkf5widgetsaddons5" {>= "5.13.0"}
+  "deb-libkf5windowsystem5" {>= "5.71.0~"}
+  "deb-libkf5xmlgui5" {>= "4.98.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.14.1"}
+  "deb-libqt5network5" {>= "5.12.0~"}
+  "deb-libqt5printsupport5" {>= "5.12.0~"}
+  "deb-libqt5webenginecore5" {>= "5.12.2"}
+  "deb-libqt5webenginewidgets5" {>= "5.14.1"}
+  "deb-libqt5widgets5" {>= "5.14.1"}
+  "deb-libqt5x11extras5" {>= "5.6.0"}
+  "deb-libqt5xml5" {>= "5.12.0~"}
+  "deb-libstdc++6" {>= "4.6"}
+  ("deb-libqt5gui5" {>= "5.12.0~"} | "deb- libqt5gui5-gles" {>= "5.12.0~"})
+]
+extra-source "konqueror_4:20.12.0-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/konqueror/konqueror_20.12.0-4_amd64.deb"
+}

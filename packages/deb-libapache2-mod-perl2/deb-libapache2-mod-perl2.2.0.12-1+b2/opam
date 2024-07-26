@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libapache2-mod-perl2_2.0.12-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libapache2-mod-perl2"]
+]
+depends: [
+  "deb-apache2-bin"
+  "deb-apache2-bin" {>= "2.4.16"}
+  "deb-libapr1" {>= "1.2.7"}
+  "deb-libaprutil1" {>= "1.2.7+dfsg"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libdevel-symdump-perl"
+  "deb-libperl5-36" {>= "5.36.0"}
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-netbase"
+  "deb-perl" {>= "5.36.0-4"}
+  "deb-perl-base"
+]
+extra-source "libapache2-mod-perl2_2.0.12-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/liba/libapache2-mod-perl2/libapache2-mod-perl2_2.0.12-1+b2_amd64.deb"
+}

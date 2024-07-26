@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-module-implementation-0.09-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-module-implementation"]
+]
+depends: [
+  "apk-perl" {= "5.38.2-r0"}
+  "apk-perl-module-runtime" {= "0.016-r6"}
+  "apk-perl-try-tiny" {= "0.31-r2"}
+]
+extra-source "perl-module-implementation-0.09-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-module-implementation-0.09-r5.apk"
+}

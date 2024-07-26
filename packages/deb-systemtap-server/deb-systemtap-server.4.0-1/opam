@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i systemtap-server_4.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r systemtap-server"]
+]
+depends: [
+  "deb-avahi-utils"
+  "deb-libavahi-client3" {>= "0.6.16"}
+  "deb-libavahi-common3" {>= "0.6.16"}
+  "deb-libc6" {>= "2.27"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libnspr4" {>= "2-4.9-2~"}
+  "deb-libnss3" {>= "2-3.13.4-2~"}
+  "deb-libnss3-tools"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-net-tools"
+  "deb-systemtap" {= "4.0-1"}
+  "deb-systemtap-client" {= "4.0-1"}
+  "deb-unzip"
+  "deb-zip"
+]
+extra-source "systemtap-server_4.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/systemtap/systemtap-server_4.0-1_amd64.deb"
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i inetutils-telnet_2:1.9.4-7+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r inetutils-telnet"]
+]
+depends: [
+  "deb-libc6" {>= "2.15"}
+  "deb-libcom-err2" {>= "1.43.9"}
+  "deb-libidn11" {>= "1.13"}
+  "deb-libk5crypto3" {>= "1.6.dfsg.2"}
+  "deb-libkrb5-3" {>= "1.13~alpha1+dfsg"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-netbase"
+]
+extra-source "inetutils-telnet_2:1.9.4-7+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/inetutils/inetutils-telnet_1.9.4-7+deb10u1_amd64.deb"
+}

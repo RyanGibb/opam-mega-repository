@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i php7.3-gd_7.3.31-1~deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r php7.3-gd"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgd3" {>= "2.1.1"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libwebp6" {>= "0.5.1"}
+  "deb-libx11-6"
+  "deb-libxpm4"
+  "deb-php-common" {>= "1-35"}
+  "deb-php7-3-common" {= "7.3.31-1~deb10u1"}
+  "deb-ucf"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "php7.3-gd_7.3.31-1~deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/php7.3/php7.3-gd_7.3.31-1~deb10u1_amd64.deb"
+}

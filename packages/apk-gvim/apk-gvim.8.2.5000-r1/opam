@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gvim-8.2.5000-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gvim"]
+]
+depends: [
+  "apk-cairo" {= "1.17.4-r2"}
+  "apk-gdk-pixbuf" {= "2.42.8-r0"}
+  "apk-glib" {= "2.72.4-r0"}
+  "apk-gtk+3-0" {= "3.24.41-r0"}
+  "apk-libice" {= "1.0.10-r0"}
+  "apk-libsm" {= "1.2.3-r0"}
+  "apk-libx11" {= "1.8.7-r0"}
+  "apk-libxt" {= "1.2.1-r0"}
+  "apk-lua5-4-libs" {= "5.4.4-r5"}
+  "apk-musl" {= "1.2.3-r3"}
+  "apk-ncurses-libs" {= "6.3_p20220521-r1"}
+  "apk-pango" {= "1.50.7-r0"}
+  "apk-xxd" {= "8.2.5000-r1"}
+]
+extra-source "gvim-8.2.5000-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/gvim-8.2.5000-r1.apk"
+}

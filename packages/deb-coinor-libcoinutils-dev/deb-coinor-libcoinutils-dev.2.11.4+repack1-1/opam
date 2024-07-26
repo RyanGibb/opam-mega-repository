@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i coinor-libcoinutils-dev_2.11.4+repack1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r coinor-libcoinutils-dev"]
+]
+depends: [
+  "deb-coinor-libcoinutils3v5" {= "2.11.4+repack1-1"}
+  "deb-libbz2-dev"
+  "deb-liblapack-dev"
+]
+conflicts: [
+  "deb-libcoinutils-dev"
+]
+extra-source "coinor-libcoinutils-dev_2.11.4+repack1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/coinutils/coinor-libcoinutils-dev_2.11.4+repack1-1_amd64.deb"
+}

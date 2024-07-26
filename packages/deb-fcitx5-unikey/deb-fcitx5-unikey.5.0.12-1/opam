@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fcitx5-unikey_5.0.12-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fcitx5-unikey"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libfcitx5-qt1" {>= "5.0.16"}
+  "deb-libfcitx5config6" {>= "5.0.20"}
+  "deb-libfcitx5core7" {>= "5.0.20"}
+  "deb-libfcitx5utils2" {>= "5.0.20"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5widgets5" {>= "5.2.0~alpha1"}
+  "deb-libstdc++6" {>= "11"}
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+]
+extra-source "fcitx5-unikey_5.0.12-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fcitx5-unikey/fcitx5-unikey_5.0.12-1_amd64.deb"
+}

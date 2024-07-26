@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libhttp-headers-actionpack-perl_0.09-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libhttp-headers-actionpack-perl"]
+]
+depends: [
+  "deb-libhttp-date-perl"
+  "deb-libhttp-message-perl"
+  "deb-libmodule-runtime-perl"
+  "deb-libsub-exporter-perl"
+  "deb-liburi-perl"
+  "deb-perl-any"
+]
+extra-source "libhttp-headers-actionpack-perl_0.09-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libh/libhttp-headers-actionpack-perl/libhttp-headers-actionpack-perl_0.09-1.1_all.deb"
+}

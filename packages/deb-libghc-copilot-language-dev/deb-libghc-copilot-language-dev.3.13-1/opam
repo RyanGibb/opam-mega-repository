@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-copilot-language-dev_3.13-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-copilot-language-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-copilot-core-dev"
+  "deb-libghc-copilot-interpreter-dev"
+  "deb-libghc-copilot-prettyprinter-dev"
+  "deb-libghc-copilot-theorem-dev"
+  "deb-libghc-data-reify-dev"
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libghc-copilot-language-dev_3.13-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-copilot-language/libghc-copilot-language-dev_3.13-1_amd64.deb"
+}

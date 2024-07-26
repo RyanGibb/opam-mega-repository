@@ -1,0 +1,45 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-yesod-auth-prof_1.6.10-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-yesod-auth-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-aeson-prof"
+  "deb-libghc-authenticate-prof"
+  "deb-libghc-base16-bytestring-prof"
+  "deb-libghc-base64-bytestring-prof"
+  "deb-libghc-blaze-builder-prof"
+  "deb-libghc-blaze-html-prof"
+  "deb-libghc-blaze-markup-prof"
+  "deb-libghc-conduit-extra-prof"
+  "deb-libghc-conduit-prof"
+  "deb-libghc-cryptonite-prof"
+  "deb-libghc-data-default-prof"
+  "deb-libghc-email-validate-prof"
+  "deb-libghc-file-embed-prof"
+  "deb-libghc-http-client-prof"
+  "deb-libghc-http-client-tls-prof"
+  "deb-libghc-http-conduit-prof"
+  "deb-libghc-http-types-prof"
+  "deb-libghc-memory-prof"
+  "deb-libghc-network-uri-prof"
+  "deb-libghc-nonce-prof"
+  "deb-libghc-persistent-prof"
+  "deb-libghc-random-prof"
+  "deb-libghc-safe-prof"
+  "deb-libghc-shakespeare-prof"
+  "deb-libghc-unliftio-core-prof"
+  "deb-libghc-unliftio-prof"
+  "deb-libghc-unordered-containers-prof"
+  "deb-libghc-wai-prof"
+  "deb-libghc-yesod-auth-dev" {= "1.6.10-1+b1"}
+  "deb-libghc-yesod-core-prof"
+  "deb-libghc-yesod-form-prof"
+  "deb-libghc-yesod-persistent-prof"
+]
+extra-source "libghc-yesod-auth-prof_1.6.10-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-yesod-auth/libghc-yesod-auth-prof_1.6.10-1+b1_amd64.deb"
+}

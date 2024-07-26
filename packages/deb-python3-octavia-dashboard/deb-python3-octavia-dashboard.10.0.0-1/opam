@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-octavia-dashboard_10.0.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-octavia-dashboard"]
+]
+depends: [
+  "deb-openstack-dashboard" {>= "3-20.0.0+git2020.09.21.27036cc0eb"}
+  "deb-python3-any"
+  "deb-python3-babel"
+  "deb-python3-barbicanclient"
+  "deb-python3-django"
+  "deb-python3-django-horizon"
+  "deb-python3-keystoneclient"
+  "deb-python3-openstacksdk" {>= "0.53.0"}
+  "deb-python3-pbr"
+]
+extra-source "python3-octavia-dashboard_10.0.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/octavia-dashboard/python3-octavia-dashboard_10.0.0-1_all.deb"
+}

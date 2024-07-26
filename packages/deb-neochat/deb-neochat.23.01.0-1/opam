@@ -1,0 +1,59 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i neochat_23.01.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r neochat"]
+]
+depends: [
+  "deb-kio"
+  "deb-libc6" {>= "2.34"}
+  "deb-libcmark0-30-2" {>= "0.30.2"}
+  "deb-libkf5configcore5" {>= "5.91.0~"}
+  "deb-libkf5configgui5" {>= "5.91.0~"}
+  "deb-libkf5configwidgets5" {>= "5.91.0~"}
+  "deb-libkf5coreaddons5" {>= "5.91.0~"}
+  "deb-libkf5dbusaddons5" {>= "5.91.0~"}
+  "deb-libkf5i18n5" {>= "5.91.0~"}
+  "deb-libkf5itemmodels5" {>= "5.91.0~"}
+  "deb-libkf5kiocore5" {>= "5.91.0~"}
+  "deb-libkf5kiogui5" {>= "5.91.0~"}
+  "deb-libkf5kiowidgets5" {>= "5.91.0~"}
+  "deb-libkf5notifications5" {>= "5.91.0~"}
+  "deb-libkf5sonnetcore5" {>= "5.91.0~"}
+  "deb-libkf5windowsystem5" {>= "5.92.0"}
+  "deb-libqt5core5a" {>= "5.15.8~"}
+  "deb-libqt5dbus5" {>= "5.15.8~"}
+  "deb-libqt5keychain1" {>= "0.7.0"}
+  "deb-libqt5multimedia5" {>= "5.15.8~"}
+  "deb-libqt5network5" {>= "5.15.8~"}
+  "deb-libqt5qml5" {>= "5.15.8~"}
+  "deb-libqt5quickcontrols2-5" {>= "5.15.8~"}
+  "deb-libqt5widgets5" {>= "5.15.8~"}
+  "deb-libquotient0-6" {>= "0.6.11"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-qml-module-org-kde-kirigami-addons-labs-mobileform"
+  "deb-qml-module-org-kde-kirigami2"
+  "deb-qml-module-org-kde-kitemmodels"
+  "deb-qml-module-org-kde-kquickimageeditor"
+  "deb-qml-module-org-kde-notifications"
+  "deb-qml-module-org-kde-purpose"
+  "deb-qml-module-org-kde-qqc2desktopstyle"
+  "deb-qml-module-org-kde-sonnet"
+  "deb-qml-module-org-kde-syntaxhighlighting"
+  "deb-qml-module-qt-labs-platform"
+  "deb-qml-module-qt-labs-qmlmodels"
+  "deb-qml-module-qtmultimedia"
+  "deb-qml-module-qtqml"
+  "deb-qml-module-qtqml-models2"
+  "deb-qml-module-qtquick-controls2"
+  "deb-qml-module-qtquick-layouts"
+  "deb-qml-module-qtquick-particles2"
+  "deb-qml-module-qtquick-window2"
+  "deb-qml-module-qtquick2"
+  ("deb-libqt5gui5" {>= "5.15.8~"} | "deb- libqt5gui5-gles" {>= "5.15.8~"})
+  ("deb-libqt5quick5" {>= "5.15.8~"} | "deb- libqt5quick5-gles" {>= "5.15.8~"})
+]
+extra-source "neochat_23.01.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/neochat/neochat_23.01.0-1_amd64.deb"
+}

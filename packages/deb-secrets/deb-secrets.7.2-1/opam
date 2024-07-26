@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i secrets_7.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r secrets"]
+]
+depends: [
+  "deb-gir1-2-adw-1"
+  "deb-gir1-2-gtk-4-0"
+  "deb-python3-any"
+  "deb-python3-pwquality"
+  "deb-python3-pykeepass"
+  "deb-python3-pyotp"
+  "deb-python3-validators"
+  "deb-python3-zxcvbn"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "secrets_7.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/secrets/secrets_7.2-1_all.deb"
+}

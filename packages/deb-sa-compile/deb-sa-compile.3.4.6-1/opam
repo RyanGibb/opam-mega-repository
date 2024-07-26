@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sa-compile_3.4.6-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sa-compile"]
+]
+depends: [
+  "deb-gcc"
+  "deb-libc6-dev"
+  "deb-make"
+  "deb-re2c"
+  "deb-spamassassin"
+]
+extra-source "sa-compile_3.4.6-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/spamassassin/sa-compile_3.4.6-1_all.deb"
+}

@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fastnetmon_1.2.4-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fastnetmon"]
+]
+depends: [
+  "deb-libabsl20220623" {>= "0~20220623.0-1"}
+  "deb-libboost-program-options1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-regex1-74-0"
+  "deb-libboost-thread1-74-0" {>= "1.74.0+ds1"}
+  "deb-libbpf1" {>= "1-0.7.0"}
+  "deb-libbson-1-0-0" {>= "1.23.1"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcapnp-0-9-2"
+  "deb-libgcc-s1" {>= "3.3"}
+  "deb-libgrpc++1-51" {>= "1.51.1"}
+  "deb-libgrpc29" {>= "1.51.1"}
+  "deb-libhiredis0-14" {>= "0.14.0"}
+  "deb-liblog4cpp5v5" {>= "1.1.3"}
+  "deb-libmongoc-1-0-0" {>= "1.23.1"}
+  "deb-libncurses6" {>= "6"}
+  "deb-libpcap0-8" {>= "1.0.0"}
+  "deb-libprotobuf32" {>= "3.21.12"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libtinfo6" {>= "6"}
+]
+extra-source "fastnetmon_1.2.4-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fastnetmon/fastnetmon_1.2.4-2_amd64.deb"
+}

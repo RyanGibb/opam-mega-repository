@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i soundscaperenderer_0.5.0~dfsg-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r soundscaperenderer"]
+]
+depends: [
+  "deb-jackd"
+  "deb-libc6" {>= "2.27"}
+  "deb-libecasoundc1v5"
+  "deb-libfftw3-single3" {>= "3.3.5"}
+  "deb-libgcc1" {>= "1-4.0"}
+  "deb-libgl1"
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5gui5" {>= "5.2.0"}
+  "deb-libqt5opengl5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-libsndfile1" {>= "1.0.20"}
+  "deb-libstdc++6" {>= "6"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-soundscaperenderer-common" {= "0.5.0~dfsg-4"}
+  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+]
+extra-source "soundscaperenderer_0.5.0~dfsg-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/soundscaperenderer/soundscaperenderer_0.5.0~dfsg-4_amd64.deb"
+}

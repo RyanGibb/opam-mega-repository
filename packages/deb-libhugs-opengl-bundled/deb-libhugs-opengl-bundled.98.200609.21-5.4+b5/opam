@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libhugs-opengl-bundled_98.200609.21-5.4+b5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libhugs-opengl-bundled"]
+]
+depends: [
+  "deb-hugs" {= "98.200609.21-5.4+b5"}
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libgl1"
+  "deb-libhugs-base-bundled"
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+conflicts: [
+  "deb-libhugs-opengl"
+]
+extra-source "libhugs-opengl-bundled_98.200609.21-5.4+b5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/hugs98/libhugs-opengl-bundled_98.200609.21-5.4+b5_amd64.deb"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i yanosim_0.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r yanosim"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-click"
+  "deb-python3-numpy"
+  "deb-python3-pysam"
+  "deb-python3-scipy"
+]
+extra-source "yanosim_0.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/y/yanosim/yanosim_0.1-3_amd64.deb"
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libxcomposite-0.4.5-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libxcomposite"]
+]
+depends: [
+  "apk-libx11" {= "1.8.7-r0"}
+  "apk-musl" {= "1.2.3-r3"}
+]
+extra-source "libxcomposite-0.4.5-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/libxcomposite-0.4.5-r0.apk"
+}

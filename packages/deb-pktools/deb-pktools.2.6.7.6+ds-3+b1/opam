@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pktools_2.6.7.6+ds-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pktools"]
+]
+depends: [
+  "deb-libalgorithms1" {>= "2.6.7"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libfann2" {>= "2.1.0~beta~dfsg"}
+  "deb-libfileclasses1" {>= "2.6.4"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgdal28" {>= "2.3.0"}
+  "deb-libgsl25" {>= "2.6"}
+  "deb-libimageclasses1" {>= "2.6.7"}
+  "deb-libstdc++6" {>= "9"}
+]
+extra-source "pktools_2.6.7.6+ds-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pktools/pktools_2.6.7.6+ds-3+b1_amd64.deb"
+}

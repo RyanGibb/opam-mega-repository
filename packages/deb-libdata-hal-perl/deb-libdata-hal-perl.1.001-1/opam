@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdata-hal-perl_1.001-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdata-hal-perl"]
+]
+depends: [
+  "deb-libboolean-perl"
+  "deb-libclone-perl"
+  "deb-libdata-visitor-perl"
+  "deb-libfailures-perl"
+  "deb-libhttp-message-perl"
+  "deb-libjson-perl"
+  "deb-libmime-types-perl"
+  "deb-libmoo-perl"
+  "deb-libsafe-isa-perl"
+  "deb-libstrictures-perl"
+  "deb-libtype-tiny-perl"
+  "deb-liburi-namespacemap-perl"
+  "deb-liburi-perl"
+  "deb-liburi-template-perl"
+  "deb-libxml-regexp-perl"
+  "deb-perl-any"
+  ("deb-liblog-any-perl" {>= "1.00"} | "deb- liblog-any-adapter-perl")
+]
+extra-source "libdata-hal-perl_1.001-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libd/libdata-hal-perl/libdata-hal-perl_1.001-1_all.deb"
+}

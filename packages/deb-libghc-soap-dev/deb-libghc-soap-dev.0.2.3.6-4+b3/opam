@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-soap-dev_0.2.3.6-4+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-soap-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-conduit-dev"
+  "deb-libghc-configurator-dev"
+  "deb-libghc-data-default-dev"
+  "deb-libghc-exceptions-dev"
+  "deb-libghc-http-client-dev"
+  "deb-libghc-http-types-dev"
+  "deb-libghc-iconv-dev"
+  "deb-libghc-resourcet-dev"
+  "deb-libghc-unordered-containers-dev"
+  "deb-libghc-xml-conduit-dev"
+  "deb-libghc-xml-conduit-writer-dev"
+  "deb-libghc-xml-types-dev"
+  "deb-libgmp10"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libghc-soap-dev_0.2.3.6-4+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-soap/libghc-soap-dev_0.2.3.6-4+b3_amd64.deb"
+}

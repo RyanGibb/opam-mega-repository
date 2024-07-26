@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i liblinphone10_5.1.65-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r liblinphone10"]
+]
+depends: [
+  "deb-libbctoolbox1" {< "5.2.0"}
+  "deb-libbctoolbox1" {>= "5.1.64"}
+  "deb-libbelcard1" {< "5.2.0"}
+  "deb-libbelcard1" {>= "5.1.64"}
+  "deb-libbellesip1" {< "5.2.0"}
+  "deb-libbellesip1" {>= "5.1.64"}
+  "deb-libbelr1" {< "5.2.0"}
+  "deb-libbelr1" {>= "5.1.64"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libjsoncpp25" {>= "1.9.5"}
+  "deb-libldap-2-5-0" {>= "2.5.4"}
+  "deb-liblime0" {< "5.2.0"}
+  "deb-liblime0" {>= "5.1.64"}
+  "deb-libmediastreamer12" {< "1-5.2.0"}
+  "deb-libmediastreamer12" {>= "1-5.1.64"}
+  "deb-libortp16" {< "1-5.2.0"}
+  "deb-libortp16" {>= "1-5.1.64"}
+  "deb-libsoci-sqlite3-4-0" {>= "4.0.3"}
+  "deb-libsqlite3-0" {>= "3.6.0"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libxerces-c3-2"
+  "deb-libxml2" {>= "2.8.0"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "liblinphone10_5.1.65-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/linphone/liblinphone10_5.1.65-4_amd64.deb"
+}

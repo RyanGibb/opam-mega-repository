@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libutop-ocaml-dev_2.7.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libutop-ocaml-dev"]
+]
+depends: [
+  "deb-libcamomile-ocaml-dev"
+  "deb-libfindlib-ocaml-dev"
+  "deb-liblambda-term-ocaml-dev"
+  "deb-liblwt-log-ocaml-dev"
+  "deb-liblwt-ocaml-dev"
+  "deb-libmew-ocaml-dev"
+  "deb-libmew-vi-ocaml-dev"
+  "deb-libreact-ocaml-dev"
+  "deb-libresult-ocaml-dev"
+  "deb-libtrie-ocaml-dev"
+  "deb-libutop-ocaml"
+  "deb-libzed-ocaml-dev"
+  "deb-ocaml-nox"
+]
+extra-source "libutop-ocaml-dev_2.7.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/u/utop/libutop-ocaml-dev_2.7.0-2_amd64.deb"
+}

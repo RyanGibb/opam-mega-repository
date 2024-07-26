@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-heatmaply_1.4.2+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-heatmaply"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.2.20221110-1"}
+  "deb-r-cran-assertthat"
+  "deb-r-cran-colorspace"
+  "deb-r-cran-dendextend" {>= "1.12.0"}
+  "deb-r-cran-egg"
+  "deb-r-cran-ggplot2" {>= "2.2.0"}
+  "deb-r-cran-htmlwidgets"
+  "deb-r-cran-magrittr" {>= "1.0.1"}
+  "deb-r-cran-plotly" {>= "4.7.1"}
+  "deb-r-cran-rcolorbrewer"
+  "deb-r-cran-reshape2"
+  "deb-r-cran-scales"
+  "deb-r-cran-seriation"
+  "deb-r-cran-viridis"
+  "deb-r-cran-webshot"
+]
+extra-source "r-cran-heatmaply_1.4.2+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-heatmaply/r-cran-heatmaply_1.4.2+dfsg-1_all.deb"
+}

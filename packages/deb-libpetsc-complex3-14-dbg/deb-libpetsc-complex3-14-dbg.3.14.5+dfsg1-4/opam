@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpetsc-complex3.14-dbg_3.14.5+dfsg1-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpetsc-complex3.14-dbg"]
+]
+depends: [
+  "deb-libamd2" {>= "1-5.6.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libcholmod3" {>= "1-5.6.0"}
+  "deb-libfftw3-double3" {>= "3.3.5"}
+  "deb-libfftw3-mpi3"
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libgfortran5" {>= "10"}
+  "deb-libhdf5-openmpi-103-1" {>= "1.10.5"}
+  "deb-libklu1" {>= "1-5.6.0"}
+  "deb-libmumps-5-3" {>= "5.3.5"}
+  "deb-libopenmpi3" {>= "4.1.0"}
+  "deb-libpetsc-complex3-14-dev" {= "3.14.5+dfsg1-4"}
+  "deb-libpetsc3-14-dev-common" {= "3.14.5+dfsg1-4"}
+  "deb-libptscotch-6-1" {>= "6.1.0"}
+  "deb-libscalapack-openmpi2-1" {>= "2.1.0"}
+  "deb-libsuperlu-dist6" {>= "6.2.0+dfsg1"}
+  "deb-libsuperlu5" {>= "5.2.2+dfsg1"}
+  "deb-libumfpack5" {>= "1-5.6.0"}
+  "deb-python3"
+  ("deb-gfortran-10" | "deb- gfortran-mod-15")
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-ocl-icd-libopencl1" | "deb- libopencl1")
+]
+extra-source "libpetsc-complex3.14-dbg_3.14.5+dfsg1-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/petsc/libpetsc-complex3.14-dbg_3.14.5+dfsg1-4_amd64.deb"
+}

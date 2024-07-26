@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libxmltv-perl_1.0.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libxmltv-perl"]
+]
+depends: [
+  "deb-libdate-manip-perl"
+  "deb-libfile-slurp-perl"
+  "deb-libperlio-gzip-perl"
+  "deb-libwww-perl"
+  "deb-libxml-parser-perl"
+  "deb-libxml-twig-perl"
+  "deb-libxml-writer-perl"
+  "deb-perl-any"
+]
+extra-source "libxmltv-perl_1.0.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xmltv/libxmltv-perl_1.0.0-1_all.deb"
+}

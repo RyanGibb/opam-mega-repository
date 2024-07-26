@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkdeui5_4:4.14.38-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkdeui5"]
+]
+depends: [
+  "deb-libattica0-4" {>= "0.4.2"}
+  "deb-libc6" {>= "2.27"}
+  "deb-libdbusmenu-qt2" {>= "0.3.2"}
+  "deb-libice6" {>= "1-1.0.0"}
+  "deb-libkdecore5" {= "4-4.14.38-3"}
+  "deb-libqt4-dbus" {>= "4-4.8.0"}
+  "deb-libqt4-network" {>= "4-4.8.0"}
+  "deb-libqt4-svg" {>= "4-4.8.0"}
+  "deb-libqt4-xml" {>= "4-4.8.0"}
+  "deb-libqtcore4" {>= "4-4.8.0"}
+  "deb-libqtgui4" {>= "4-4.8.0"}
+  "deb-libsm6"
+  "deb-libstdc++6" {>= "5"}
+  "deb-libx11-6"
+  "deb-libxfixes3"
+  "deb-libxrender1"
+]
+extra-source "libkdeui5_4:4.14.38-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kde4libs/libkdeui5_4.14.38-3_amd64.deb"
+}

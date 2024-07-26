@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-ddalpha_1.3.13-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-ddalpha"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.1.3.20220328-1"}
+  "deb-r-cran-bh"
+  "deb-r-cran-class"
+  "deb-r-cran-geometry"
+  "deb-r-cran-mass"
+  "deb-r-cran-rcpp" {>= "0.11.0"}
+  "deb-r-cran-robustbase"
+  "deb-r-cran-sfsmisc"
+]
+extra-source "r-cran-ddalpha_1.3.13-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-ddalpha/r-cran-ddalpha_1.3.13-1_amd64.deb"
+}

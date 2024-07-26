@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i puppet-module-oci_42.2.5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r puppet-module-oci"]
+]
+depends: [
+  "deb-openstack-puppet-modules"
+  "deb-puppet-module-aboe-chrony"
+  "deb-puppet-module-camptocamp-postfix"
+  "deb-puppet-module-cristifalcas-etcd"
+  "deb-puppet-module-deric-zookeeper"
+  "deb-puppet-module-etcddiscovery"
+  "deb-puppet-module-magnum"
+  "deb-puppet-module-pcfens-filebeat"
+  "deb-puppet-module-placement"
+  "deb-puppet-module-puppetlabs-cron-core"
+  "deb-puppet-module-puppetlabs-mount-core"
+  "deb-puppet-module-puppetlabs-mysql" {>= "8.1.0"}
+  "deb-puppet-module-saz-ssh"
+  "deb-puppet-module-tempest"
+  "deb-puppet-module-voxpupuli-alternatives"
+  "deb-puppet-module-voxpupuli-collectd"
+]
+extra-source "puppet-module-oci_42.2.5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openstack-cluster-installer/puppet-module-oci_42.2.5_all.deb"
+}

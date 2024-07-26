@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libxen-dev_4.17.3+10-g091466ba55-1~deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libxen-dev"]
+]
+depends: [
+  "deb-libxencall1" {= "4.17.3+10-g091466ba55-1~deb12u1"}
+  "deb-libxendevicemodel1" {= "4.17.3+10-g091466ba55-1~deb12u1"}
+  "deb-libxenevtchn1" {= "4.17.3+10-g091466ba55-1~deb12u1"}
+  "deb-libxenforeignmemory1" {= "4.17.3+10-g091466ba55-1~deb12u1"}
+  "deb-libxengnttab1" {= "4.17.3+10-g091466ba55-1~deb12u1"}
+  "deb-libxenhypfs1" {= "4.17.3+10-g091466ba55-1~deb12u1"}
+  "deb-libxenmisc4-17" {= "4.17.3+10-g091466ba55-1~deb12u1"}
+  "deb-libxenstore4" {= "4.17.3+10-g091466ba55-1~deb12u1"}
+  "deb-libxentoolcore1" {= "4.17.3+10-g091466ba55-1~deb12u1"}
+  "deb-libxentoollog1" {= "4.17.3+10-g091466ba55-1~deb12u1"}
+]
+extra-source "libxen-dev_4.17.3+10-g091466ba55-1~deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xen/libxen-dev_4.17.3+10-g091466ba55-1~deb12u1_amd64.deb"
+}

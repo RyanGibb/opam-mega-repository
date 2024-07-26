@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libhtml-microformats-perl_0.105-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libhtml-microformats-perl"]
+]
+depends: [
+  "deb-libdatetime-format-builder-perl"
+  "deb-libdatetime-format-natural-perl"
+  "deb-libdatetime-format-strptime-perl"
+  "deb-libdatetime-perl"
+  "deb-libdatetime-set-perl"
+  "deb-libhtml-html5-parser-perl"
+  "deb-libhtml-html5-sanity-perl"
+  "deb-libhttp-date-perl"
+  "deb-libjson-perl"
+  "deb-liblocale-codes-perl"
+  "deb-libmodule-pluggable-perl"
+  "deb-librdf-trine-perl"
+  "deb-librole-commons-perl"
+  "deb-liburi-perl"
+  "deb-libxml-libxml-perl"
+  "deb-perl-any"
+]
+extra-source "libhtml-microformats-perl_0.105-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libh/libhtml-microformats-perl/libhtml-microformats-perl_0.105-6_all.deb"
+}

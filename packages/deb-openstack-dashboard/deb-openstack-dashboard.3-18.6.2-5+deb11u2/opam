@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openstack-dashboard_3:18.6.2-5+deb11u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openstack-dashboard"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libjs-jquery"
+  "deb-libjs-jquery-cookie"
+  "deb-python3-any"
+  "deb-python3-django-horizon" {= "3-18.6.2-5+deb11u2"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "openstack-dashboard_3:18.6.2-5+deb11u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/horizon/openstack-dashboard_18.6.2-5+deb11u2_all.deb"
+}

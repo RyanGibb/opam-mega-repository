@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgcc-9-dev-ppc64-cross_9.3.0-22cross1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgcc-9-dev-ppc64-cross"]
+]
+depends: [
+  "deb-gcc-9-cross-base-ports" {= "9.3.0-22cross1"}
+  "deb-libasan5-ppc64-cross" {>= "9.3.0-22cross1"}
+  "deb-libatomic1-ppc64-cross" {>= "9.3.0-22cross1"}
+  "deb-libgcc-s1-ppc64-cross" {>= "9.3.0-22cross1"}
+  "deb-libgomp1-ppc64-cross" {>= "9.3.0-22cross1"}
+  "deb-libitm1-ppc64-cross" {>= "9.3.0-22cross1"}
+  "deb-liblsan0-ppc64-cross" {>= "9.3.0-22cross1"}
+  "deb-libtsan0-ppc64-cross" {>= "9.3.0-22cross1"}
+  "deb-libubsan1-ppc64-cross" {>= "9.3.0-22cross1"}
+]
+extra-source "libgcc-9-dev-ppc64-cross_9.3.0-22cross1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gcc-9-cross-ports/libgcc-9-dev-ppc64-cross_9.3.0-22cross1_all.deb"
+}

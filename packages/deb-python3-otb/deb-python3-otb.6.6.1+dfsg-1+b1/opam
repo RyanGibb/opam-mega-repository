@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-otb_6.6.1+dfsg-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-otb"]
+]
+depends: [
+  "deb-dh-python"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libinsighttoolkit4-12" {>= "4.12.0-dfsg1-2~"}
+  "deb-libotb-apps" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbapplicationengine-6-6-1" {>= "6.6.0~rc1"}
+  "deb-libotbmetadata-6-6-1" {>= "5.2.0"}
+  "deb-libotbossimadapters-6-6-1" {>= "5.2.0"}
+  "deb-libotbvectordatabase-6-6-1" {>= "5.2.0"}
+  "deb-libpython3-7" {>= "3.7.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-python3"
+]
+extra-source "python3-otb_6.6.1+dfsg-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/otb/python3-otb_6.6.1+dfsg-1+b1_amd64.deb"
+}

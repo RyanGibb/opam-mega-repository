@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-taxize_0.9.100-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-taxize"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.0-1"}
+  "deb-r-cran-ape"
+  "deb-r-cran-bold" {>= "0.8.6"}
+  "deb-r-cran-cli"
+  "deb-r-cran-conditionz"
+  "deb-r-cran-crayon"
+  "deb-r-cran-crul" {>= "0.7.0"}
+  "deb-r-cran-data-table"
+  "deb-r-cran-foreach"
+  "deb-r-cran-jsonlite"
+  "deb-r-cran-natserv" {>= "1.0.0"}
+  "deb-r-cran-phangorn"
+  "deb-r-cran-r6"
+  "deb-r-cran-ritis" {>= "0.7.6"}
+  "deb-r-cran-rotl" {>= "3.0.0"}
+  "deb-r-cran-rredlist"
+  "deb-r-cran-tibble" {>= "1.2"}
+  "deb-r-cran-wikitaxa" {>= "0.3.0"}
+  "deb-r-cran-worrms" {>= "0.4.0"}
+  "deb-r-cran-xml2" {>= "1.2.0"}
+  "deb-r-cran-zoo"
+]
+extra-source "r-cran-taxize_0.9.100-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-taxize/r-cran-taxize_0.9.100-1_all.deb"
+}

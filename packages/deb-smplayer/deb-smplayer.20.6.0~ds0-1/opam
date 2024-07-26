@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i smplayer_20.6.0~ds0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r smplayer"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqt5core5a" {>= "5.14.1"}
+  "deb-libqt5dbus5" {>= "5.14.1"}
+  "deb-libqt5network5" {>= "5.14.1"}
+  "deb-libqt5widgets5" {>= "5.14.1"}
+  "deb-libqt5xml5" {>= "5.1"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libx11-6"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-mpv" {>= "0.6.2"} | "deb- mplayer")
+]
+extra-source "smplayer_20.6.0~ds0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/smplayer/smplayer_20.6.0~ds0-1_amd64.deb"
+}

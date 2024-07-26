@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i osmo-msc_1.6.3+dfsg1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r osmo-msc"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libdbi1" {>= "0.9.0"}
+  "deb-libosmo-gsup-client0" {>= "1.2.0"}
+  "deb-libosmo-mgcp-client6" {>= "1.7.0"}
+  "deb-libosmo-ranap3" {>= "0.6.1"}
+  "deb-libosmo-sigtran5" {>= "1.3.0"}
+  "deb-libosmocore16" {>= "1.4.0"}
+  "deb-libosmoctrl0" {>= "1.4.0"}
+  "deb-libosmogsm15" {>= "1.4.0"}
+  "deb-libosmonetif8" {>= "1.0.0"}
+  "deb-libosmovty4" {>= "1.4.0"}
+  "deb-libsctp1" {>= "1.0.10+dfsg"}
+  "deb-libsmpp34-1" {>= "1.14.0"}
+  "deb-libtalloc2" {>= "2.0.4~git20101213"}
+  "deb-osmo-libasn1c1" {>= "0.9.28"}
+]
+extra-source "osmo-msc_1.6.3+dfsg1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/osmo-msc/osmo-msc_1.6.3+dfsg1-2_amd64.deb"
+}

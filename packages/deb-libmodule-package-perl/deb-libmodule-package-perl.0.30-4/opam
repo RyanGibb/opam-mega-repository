@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmodule-package-perl_0.30-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmodule-package-perl"]
+]
+depends: [
+  "deb-libio-all-perl" {>= "0.41"}
+  "deb-libmodule-install-authorrequires-perl"
+  "deb-libmodule-install-manifestskip-perl"
+  "deb-libmodule-install-perl" {>= "1.01"}
+  "deb-libmoo-perl"
+  "deb-perl-any"
+  "deb-sgml-base" {>= "1.28"}
+]
+extra-source "libmodule-package-perl_0.30-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libm/libmodule-package-perl/libmodule-package-perl_0.30-4_all.deb"
+}

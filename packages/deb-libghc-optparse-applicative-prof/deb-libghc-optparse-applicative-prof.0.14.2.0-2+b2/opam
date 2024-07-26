@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-optparse-applicative-prof_0.14.2.0-2+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-optparse-applicative-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-ansi-wl-pprint-prof"
+  "deb-libghc-optparse-applicative-dev" {= "0.14.2.0-2+b2"}
+  "deb-libghc-transformers-compat-prof"
+]
+extra-source "libghc-optparse-applicative-prof_0.14.2.0-2+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-optparse-applicative/libghc-optparse-applicative-prof_0.14.2.0-2+b2_amd64.deb"
+}

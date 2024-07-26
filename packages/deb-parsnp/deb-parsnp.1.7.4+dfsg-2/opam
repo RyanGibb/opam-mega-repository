@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i parsnp_1.7.4+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r parsnp"]
+]
+depends: [
+  "deb-fasttree"
+  "deb-harvest-tools"
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgomp1" {>= "6"}
+  "deb-libmuscle1" {>= "3.7+4565"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-mummer"
+  "deb-phipack"
+  "deb-python3"
+  "deb-python3-any"
+  "deb-python3-biopython"
+  "deb-python3-numpy"
+  "deb-raxml"
+]
+extra-source "parsnp_1.7.4+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/parsnp/parsnp_1.7.4+dfsg-2_amd64.deb"
+}

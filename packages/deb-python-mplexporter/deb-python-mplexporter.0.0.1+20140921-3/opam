@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-mplexporter_0.0.1+20140921-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-mplexporter"]
+]
+depends: [
+  "deb-python" {< "2.8"}
+  "deb-python" {>= "2.7"}
+  "deb-python-any" {>= "2.6.6-7~"}
+  "deb-python-matplotlib"
+  "deb-python-numpy"
+]
+extra-source "python-mplexporter_0.0.1+20140921-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-mplexporter/python-mplexporter_0.0.1+20140921-3_all.deb"
+}

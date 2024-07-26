@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i chai_4.3.7~ds1+~cs9.7.21-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r chai"]
+]
+depends: [
+  "deb-node-assertion-error"
+  "deb-node-check-error"
+  "deb-node-deep-eql"
+  "deb-node-get-func-name"
+  "deb-node-pathval"
+  "deb-node-type-detect"
+  "deb-nodejs-any"
+]
+extra-source "chai_4.3.7~ds1+~cs9.7.21-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-chai/chai_4.3.7~ds1+~cs9.7.21-1_all.deb"
+}

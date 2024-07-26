@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-devise-two-factor_4.0.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-devise-two-factor"]
+]
+depends: [
+  "deb-ruby-activesupport"
+  "deb-ruby-attr-encrypted" {>= "3.0.0~"}
+  "deb-ruby-devise" {>= "4.0~"}
+  "deb-ruby-railties"
+  "deb-ruby-rotp" {>= "6.0~"}
+  ("deb-ruby" | "deb- ruby-interpreter")
+]
+extra-source "ruby-devise-two-factor_4.0.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-devise-two-factor/ruby-devise-two-factor_4.0.2-1_all.deb"
+}

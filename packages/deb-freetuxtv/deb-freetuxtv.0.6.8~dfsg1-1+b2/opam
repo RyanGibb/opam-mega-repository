@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i freetuxtv_0.6.8~dfsg1-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r freetuxtv"]
+]
+depends: [
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.7"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libcurl4" {>= "7.16.2"}
+  "deb-libdbus-1-3" {>= "1.9.14"}
+  "deb-libdbus-glib-1-2" {>= "0.78"}
+  "deb-libfribidi0" {>= "0.19.2"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libgtk-3-0" {>= "3.0.0"}
+  "deb-libnotify4" {>= "0.7.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libsqlite3-0" {>= "3.5.9"}
+  "deb-libvlc5" {>= "1.1.0"}
+  "deb-vlc"
+]
+extra-source "freetuxtv_0.6.8~dfsg1-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/freetuxtv/freetuxtv_0.6.8~dfsg1-1+b2_amd64.deb"
+}

@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpublicinbox-perl_1.9.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpublicinbox-perl"]
+]
+depends: [
+  "deb-git"
+  "deb-libdbd-sqlite3-perl"
+  "deb-libemail-address-xs-perl"
+  "deb-libemail-mime-perl"
+  "deb-libinline-c-perl"
+  "deb-libmail-imapclient-perl"
+  "deb-libnet-server-perl"
+  "deb-libparse-recdescent-perl"
+  "deb-libplack-perl"
+  "deb-libsearch-xapian-perl"
+  "deb-libsocket-msghdr-perl"
+  "deb-liburi-perl"
+  "deb-perl-any"
+  "deb-xapian-tools"
+]
+extra-source "libpublicinbox-perl_1.9.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/public-inbox/libpublicinbox-perl_1.9.0-1_all.deb"
+}

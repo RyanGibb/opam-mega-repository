@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmodule-build-withxspp-perl_0.14-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmodule-build-withxspp-perl"]
+]
+depends: [
+  "deb-libextutils-cppguess-perl"
+  "deb-libextutils-xspp-perl"
+  "deb-libmodule-build-perl"
+  "deb-perl"
+  ("deb-perl" {>= "5.15.1"} | "deb- libextutils-parsexs-perl" {>= "3.040000"})
+]
+extra-source "libmodule-build-withxspp-perl_0.14-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libm/libmodule-build-withxspp-perl/libmodule-build-withxspp-perl_0.14-3_all.deb"
+}

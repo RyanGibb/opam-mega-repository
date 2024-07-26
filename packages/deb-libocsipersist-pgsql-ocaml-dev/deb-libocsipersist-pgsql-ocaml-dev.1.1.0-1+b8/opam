@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libocsipersist-pgsql-ocaml-dev_1.1.0-1+b8_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libocsipersist-pgsql-ocaml-dev"]
+]
+depends: [
+  "deb-libangstrom-ocaml-dev"
+  "deb-libcalendar-ocaml-dev"
+  "deb-libcohttp-lwt-ocaml-dev"
+  "deb-libcohttp-ocaml-dev"
+  "deb-libdomain-name-ocaml-dev"
+  "deb-libipaddr-ocaml-dev"
+  "deb-liblwt-log-ocaml-dev"
+  "deb-liblwt-ocaml-dev"
+  "deb-libocsigenserver-ocaml-dev"
+  "deb-libocsipersist-lib-ocaml-dev"
+  "deb-libocsipersist-pgsql-ocaml"
+  "deb-libpcre-ocaml-dev"
+  "deb-libpgocaml-ocaml-dev"
+  "deb-libppx-deriving-ocaml-dev"
+  "deb-librresult-ocaml-dev"
+  "deb-libsexplib0-ocaml-dev"
+  "deb-liburi-ocaml-dev"
+  "deb-libxml-light-ocaml-dev"
+  "deb-ocaml"
+]
+extra-source "libocsipersist-pgsql-ocaml-dev_1.1.0-1+b8_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/ocsipersist/libocsipersist-pgsql-ocaml-dev_1.1.0-1+b8_amd64.deb"
+}

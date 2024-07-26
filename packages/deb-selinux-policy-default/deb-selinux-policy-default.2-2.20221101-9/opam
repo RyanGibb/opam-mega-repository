@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i selinux-policy-default_2:2.20221101-9_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r selinux-policy-default"]
+]
+depends: [
+  "deb-libselinux1" {>= "3.4"}
+  "deb-libsemanage2" {>= "3.4"}
+  "deb-libsepol2" {>= "3.4"}
+  "deb-policycoreutils" {>= "3.4"}
+  "deb-selinux-utils" {>= "3.4"}
+]
+conflicts: [
+  "deb-mcstrans"
+]
+extra-source "selinux-policy-default_2:2.20221101-9_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/refpolicy/selinux-policy-default_2.20221101-9_all.deb"
+}

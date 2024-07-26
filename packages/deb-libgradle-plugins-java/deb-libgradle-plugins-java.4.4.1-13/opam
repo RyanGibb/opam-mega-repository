@@ -1,0 +1,45 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgradle-plugins-java_4.4.1-13_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgradle-plugins-java"]
+]
+depends: [
+  "deb-ant-optional"
+  "deb-bnd" {>= "3.5.0"}
+  "deb-junit4"
+  "deb-libantlr-java"
+  "deb-libatinject-jsr330-api-java"
+  "deb-libbcpg-java"
+  "deb-libbsh-java"
+  "deb-libcommons-cli-java"
+  "deb-libdd-plist-java"
+  "deb-libdom4j-java"
+  "deb-libfindbugs-java"
+  "deb-libgoogle-gson-java"
+  "deb-libgradle-core-java" {>= "4.4.1-13"}
+  "deb-libguice-java"
+  "deb-libjatl-java"
+  "deb-libjaxen-java"
+  "deb-libjcifs-java"
+  "deb-libjgit-java"
+  "deb-libjs-jquery"
+  "deb-libmaven-resolver-java"
+  "deb-libmaven3-core-java" {>= "3.5.0"}
+  "deb-libobjenesis-java"
+  "deb-libplexus-component-annotations-java"
+  "deb-libplexus-container-default-java"
+  "deb-libplexus-interpolation-java"
+  "deb-libplexus-utils-java"
+  "deb-libpolyglot-maven-java"
+  "deb-librhino-java"
+  "deb-libsimple-http-java"
+  "deb-libwagon-file-java"
+  "deb-libwagon-http-java"
+  "deb-libxerces2-java"
+  "deb-testng"
+]
+extra-source "libgradle-plugins-java_4.4.1-13_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gradle/libgradle-plugins-java_4.4.1-13_all.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kiwi_9.24.56-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kiwi"]
+]
+depends: [
+  "deb-debootstrap"
+  "deb-python3-any"
+  "deb-python3-docopt"
+  "deb-python3-lxml"
+  "deb-python3-pyxattr"
+  "deb-python3-requests"
+  "deb-python3-simplejson"
+  "deb-python3-yaml"
+  "deb-screen"
+]
+extra-source "kiwi_9.24.56-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kiwi/kiwi_9.24.56-1_amd64.deb"
+}

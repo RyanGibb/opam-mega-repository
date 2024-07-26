@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pure-ftpd-mysql_1.0.47-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pure-ftpd-mysql"]
+]
+depends: [
+  "deb-libc6" {>= "2.25"}
+  "deb-libcap2" {>= "1-2.10"}
+  "deb-libmariadb3" {>= "3.0.0"}
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-lsb-base" {>= "3.2-14"}
+  "deb-pure-ftpd-common" {= "1.0.47-3"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-openbsd-inetd" | "deb- inet-superserver")
+]
+conflicts: [
+  "deb-ftp-server"
+  "deb-pure-ftpd"
+]
+extra-source "pure-ftpd-mysql_1.0.47-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pure-ftpd/pure-ftpd-mysql_1.0.47-3_amd64.deb"
+}

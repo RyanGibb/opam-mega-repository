@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-gobject-introspection_3.4.3-2+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-gobject-introspection"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgirepository-1-0-1"
+  "deb-libgirepository-1-0-1" {>= "1.62.0-4~"}
+  "deb-libglib2-0-0" {>= "2.31.8"}
+  "deb-libruby" {< "1-3.2~"}
+  "deb-libruby" {>= "1-3.1~0"}
+  "deb-libruby3-1" {>= "3.1.2"}
+  "deb-ruby-glib2" {= "3.4.3-2+b2"}
+  ("deb-ruby" | "deb- ruby-interpreter")
+]
+extra-source "ruby-gobject-introspection_3.4.3-2+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-gnome/ruby-gobject-introspection_3.4.3-2+b2_amd64.deb"
+}

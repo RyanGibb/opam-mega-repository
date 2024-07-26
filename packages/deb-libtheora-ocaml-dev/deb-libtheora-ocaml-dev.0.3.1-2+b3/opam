@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libtheora-ocaml-dev_0.3.1-2+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libtheora-ocaml-dev"]
+]
+depends: [
+  "deb-libogg-ocaml-dev"
+  "deb-libogg-ocaml-dev" {>= "0.3.0-1"}
+  "deb-libtheora-dev"
+  "deb-libtheora-ocaml"
+  "deb-libtheora-ocaml" {= "0.3.1-2+b3"}
+  "deb-ocaml-findlib"
+  "deb-ocaml-nox"
+]
+extra-source "libtheora-ocaml-dev_0.3.1-2+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/ocaml-theora/libtheora-ocaml-dev_0.3.1-2+b3_amd64.deb"
+}

@@ -1,0 +1,46 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i goldendict-webengine_23.02.05-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r goldendict-webengine"]
+]
+depends: [
+  "deb-libavcodec-extra59"
+  "deb-libavformat-extra59"
+  "deb-libavutil57" {>= "7-5.0"}
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.34"}
+  "deb-libeb16" {>= "4.4.3"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libhunspell-1-7-0"
+  "deb-libjs-jquery"
+  "deb-liblzma5" {>= "5.1.1alpha+20120614"}
+  "deb-liblzo2-2" {>= "2.02"}
+  "deb-libopencc1-1" {>= "1.1.4+ds1"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5help5" {>= "5.15.1"}
+  "deb-libqt5multimedia5" {>= "5.6.0~beta"}
+  "deb-libqt5multimedia5-plugins"
+  "deb-libqt5network5" {>= "5.15.1"}
+  "deb-libqt5printsupport5" {>= "5.0.2"}
+  "deb-libqt5svg5" {>= "5.6.0~beta"}
+  "deb-libqt5webchannel5" {>= "5.6.1"}
+  "deb-libqt5webenginecore5" {>= "5.12.2"}
+  "deb-libqt5webenginewidgets5" {>= "5.14.1"}
+  "deb-libqt5widgets5" {>= "5.15.1"}
+  "deb-libqt5x11extras5" {>= "5.6.0"}
+  "deb-libqt5xml5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libswresample4" {>= "7-5.0"}
+  "deb-libtiff6" {>= "4.0.3"}
+  "deb-libvorbisfile3" {>= "1.1.2"}
+  "deb-libx11-6"
+  "deb-libxtst6"
+  "deb-libzstd1" {>= "1.5.2"}
+  "deb-zlib1g" {>= "1-1.2.2.3"}
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "goldendict-webengine_23.02.05-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/goldendict-webengine/goldendict-webengine_23.02.05-1_amd64.deb"
+}

@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-oslo.db_4.40.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-oslo.db"]
+]
+depends: [
+  "deb-alembic" {>= "0.9.6"}
+  "deb-python-alembic" {>= "0.9.6"}
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7~"}
+  "deb-python-debtcollector"
+  "deb-python-migrate" {>= "0.11.0"}
+  "deb-python-oslo-config" {>= "1-5.2.0"}
+  "deb-python-oslo-i18n"
+  "deb-python-oslo-utils" {>= "3.20.0"}
+  "deb-python-pbr" {>= "2.0.0"}
+  "deb-python-six" {>= "1.10.0"}
+  "deb-python-sqlalchemy" {>= "1.0.10"}
+  "deb-python-stevedore" {>= "1.20.0"}
+  "deb-python-testresources" {>= "2.0.0"}
+  "deb-python-testscenarios"
+]
+extra-source "python-oslo.db_4.40.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-oslo.db/python-oslo.db_4.40.0-3_all.deb"
+}

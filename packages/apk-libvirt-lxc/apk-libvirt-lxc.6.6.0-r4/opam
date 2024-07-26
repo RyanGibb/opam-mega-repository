@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libvirt-lxc-6.6.0-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libvirt-lxc"]
+]
+depends: [
+  "apk-fuse" {= "2.9.9-r1"}
+  "apk-glib" {= "2.64.6-r0"}
+  "apk-libblkid" {= "2.37.4-r0"}
+  "apk-libcap-ng" {= "0.7.10-r1"}
+  "apk-libgcc" {= "9.3.0-r2"}
+  "apk-libintl" {= "0.20.2-r0"}
+  "apk-libtirpc" {= "1.2.6-r0"}
+  "apk-libvirt-common-drivers" {= "6.6.0-r4"}
+  "apk-libvirt-daemon" {= "6.6.0-r4"}
+  "apk-libvirt-libs" {= "6.6.0-r4"}
+  "apk-musl" {= "1.1.24-r10"}
+]
+extra-source "libvirt-lxc-6.6.0-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/libvirt-lxc-6.6.0-r4.apk"
+}

@@ -1,0 +1,47 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libvtk6-dev_6.3.0+dfsg2-8.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libvtk6-dev"]
+]
+depends: [
+  "deb-default-libmysqlclient-dev"
+  "deb-libavcodec-dev"
+  "deb-libavformat-dev"
+  "deb-libavutil-dev"
+  "deb-libc6-dev"
+  "deb-libeigen3-dev"
+  "deb-libexpat1-dev"
+  "deb-libfreetype6-dev"
+  "deb-libgdal-dev"
+  "deb-libgl2ps-dev"
+  "deb-libhdf5-mpi-dev"
+  "deb-libjpeg-dev"
+  "deb-libjsoncpp-dev"
+  "deb-libnetcdf-cxx-legacy-dev"
+  "deb-libnetcdf-dev"
+  "deb-libogg-dev"
+  "deb-libpng-dev"
+  "deb-libpq-dev"
+  "deb-libswscale-dev"
+  "deb-libtheora-dev"
+  "deb-libtiff-dev"
+  "deb-libvtk6-3" {= "6.3.0+dfsg2-8.1"}
+  "deb-libx11-dev"
+  "deb-libxft-dev"
+  "deb-libxml2-dev"
+  "deb-libxss-dev"
+  "deb-libxt-dev"
+  "deb-mpi-default-dev"
+  "deb-x11proto-core-dev"
+  "deb-zlib1g-dev"
+  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
+  ("deb-libglu1-mesa-dev" | "deb- libglu-dev")
+]
+conflicts: [
+  "deb-libvtk5-dev"
+]
+extra-source "libvtk6-dev_6.3.0+dfsg2-8.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/vtk6/libvtk6-dev_6.3.0+dfsg2-8.1_amd64.deb"
+}

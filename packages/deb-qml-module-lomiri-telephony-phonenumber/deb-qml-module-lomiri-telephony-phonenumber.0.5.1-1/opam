@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qml-module-lomiri-telephony-phonenumber_0.5.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qml-module-lomiri-telephony-phonenumber"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libphonenumber8"
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5qml5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-qml-module-lomiri-components"
+]
+extra-source "qml-module-lomiri-telephony-phonenumber_0.5.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lomiri-telephony-service/qml-module-lomiri-telephony-phonenumber_0.5.1-1_amd64.deb"
+}

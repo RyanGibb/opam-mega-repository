@@ -1,0 +1,42 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i jameica_2.10.0+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r jameica"]
+]
+depends: [
+  "deb-libactivation-java"
+  "deb-libbcpkix-java"
+  "deb-libbcprov-java"
+  "deb-libcommons-cli-java"
+  "deb-libcommons-collections3-java"
+  "deb-libcommons-lang-java"
+  "deb-libcommons-logging-java"
+  "deb-libeclipse-core-commands-java"
+  "deb-libeclipse-core-runtime-java"
+  "deb-libeclipse-jface-databinding-java"
+  "deb-libeclipse-osgi-java"
+  "deb-libeclipse-ui-forms-java"
+  "deb-libequinox-common-java"
+  "deb-libgeronimo-annotation-1-3-spec-java"
+  "deb-libh2-java"
+  "deb-libicu4j-java"
+  "deb-libistack-commons-java"
+  "deb-libjameica-datasource-java"
+  "deb-libjameica-util-java"
+  "deb-libjaxb-api-java"
+  "deb-libjaxb-java"
+  "deb-libmariadb-java"
+  "deb-libmckoisqldb-java"
+  "deb-libnanoxml2-java"
+  "deb-liboro-java"
+  "deb-libpaperclips-java"
+  "deb-libswt-cairo-gtk-4-jni"
+  "deb-libswtcalendar-java"
+  "deb-libtxw2-java"
+  "deb-velocity"
+]
+extra-source "jameica_2.10.0+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/j/jameica/jameica_2.10.0+dfsg-1_all.deb"
+}

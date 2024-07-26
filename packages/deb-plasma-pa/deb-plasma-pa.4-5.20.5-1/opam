@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i plasma-pa_4:5.20.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r plasma-pa"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libcanberra0" {>= "0.16"}
+  "deb-libglib2-0-0" {>= "2.31.8"}
+  "deb-libkf5coreaddons5" {>= "5.74.0~"}
+  "deb-libkf5globalaccel-bin"
+  "deb-libkf5globalaccel5" {>= "5.74.0~"}
+  "deb-libkf5i18n5" {>= "5.74.0~"}
+  "deb-libkf5notifications5" {>= "5.74.0~"}
+  "deb-libkf5quickaddons5" {>= "5.74.0~"}
+  "deb-libpulse-mainloop-glib0" {>= "5.0.0~"}
+  "deb-libpulse0" {>= "5.0.0~"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.15.0~"}
+  "deb-libqt5qml5" {>= "5.15.0~"}
+  "deb-libqt5widgets5" {>= "5.15.0~"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-perl-any"
+  "deb-plasma-framework"
+  "deb-pulseaudio"
+  "deb-qml-module-org-kde-draganddrop"
+  "deb-qml-module-org-kde-kquickcontrolsaddons"
+  "deb-qml-module-qtquick-controls"
+  "deb-qml-module-qtquick-layouts"
+  "deb-qml-module-qtquick2"
+  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb- libqt5gui5-gles" {>= "5.15.0~"})
+  ("deb-libqt5quick5" {>= "5.15.0~"} | "deb- libqt5quick5-gles" {>= "5.15.0~"})
+]
+extra-source "plasma-pa_4:5.20.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/plasma-pa/plasma-pa_5.20.5-1_amd64.deb"
+}

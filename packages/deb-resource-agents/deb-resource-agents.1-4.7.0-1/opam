@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i resource-agents_1:4.7.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r resource-agents"]
+]
+depends: [
+  "deb-cluster-glue"
+  "deb-gawk"
+  "deb-libc6" {>= "2.4"}
+  "deb-libnet1" {>= "1.1.2.1"}
+  "deb-libplumb2" {>= "1.0.12~"}
+  "deb-python3-any"
+]
+conflicts: [
+  "deb-cluster-agents" {<= "1-1.0.4-1"}
+  "deb-resource-agents-dev" {< "1-3.9.6"}
+  "deb-rgmanager" {<= "3.0.12-2+b1"}
+]
+extra-source "resource-agents_1:4.7.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/resource-agents/resource-agents_4.7.0-1_amd64.deb"
+}

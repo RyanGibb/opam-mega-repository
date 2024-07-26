@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgyoto8-dev_1.4.4-3+b6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgyoto8-dev"]
+]
+depends: [
+  "deb-libboost-dev" {>= "1.53.1"}
+  "deb-libboost-mpi-dev"
+  "deb-libc6-dev"
+  "deb-libcfitsio-dev"
+  "deb-libgyoto8" {= "1.4.4-3+b6"}
+  "deb-libudunits2-dev"
+  "deb-libxerces-c-dev"
+  "deb-mpi-default-dev"
+  "deb-pkg-config"
+]
+extra-source "libgyoto8-dev_1.4.4-3+b6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gyoto/libgyoto8-dev_1.4.4-3+b6_amd64.deb"
+}

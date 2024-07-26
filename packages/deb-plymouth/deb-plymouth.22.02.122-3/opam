@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i plymouth_22.02.122-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r plymouth"]
+]
+depends: [
+  "deb-init-system-helpers" {>= "1.18"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libdrm2" {>= "2.4.47"}
+  "deb-libplymouth5" {>= "0.9.5+git20211018"}
+  "deb-systemd" {>= "232-8~"}
+  "deb-sysvinit-utils"
+  "deb-udev" {>= "232-8~"}
+  ("deb-initramfs-tools" | "deb- dracut")
+]
+conflicts: [
+  "deb-console-common"
+]
+extra-source "plymouth_22.02.122-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/plymouth/plymouth_22.02.122-3_amd64.deb"
+}

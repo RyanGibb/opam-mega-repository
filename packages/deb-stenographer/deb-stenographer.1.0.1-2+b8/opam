@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i stenographer_1.0.1-2+b8_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r stenographer"]
+]
+depends: [
+  "deb-libaio1" {>= "0.3.93"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libleveldb1d" {>= "1.23"}
+  "deb-libseccomp2" {>= "0.0.0~20120605"}
+  "deb-libstdc++6" {>= "12"}
+  "deb-stenographer-common"
+  "deb-sysvinit-utils"
+]
+extra-source "stenographer_1.0.1-2+b8_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/stenographer/stenographer_1.0.1-2+b8_amd64.deb"
+}

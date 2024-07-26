@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i liblxi1_1.13-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r liblxi1"]
+]
+depends: [
+  "deb-libavahi-client3" {>= "0.6.16"}
+  "deb-libavahi-common3" {>= "0.6.16"}
+  "deb-libc6" {>= "2.17"}
+  "deb-libxml2" {>= "2.7.4"}
+]
+extra-source "liblxi1_1.13-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libl/liblxi/liblxi1_1.13-1_amd64.deb"
+}

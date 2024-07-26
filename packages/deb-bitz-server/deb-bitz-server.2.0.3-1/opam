@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i bitz-server_2.0.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r bitz-server"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libconfig++9v5" {>= "1.5-0.4~"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libicap1" {>= "1.0.0"}
+  "deb-libpsocksxx0" {>= "0.0.5"}
+  "deb-libstdc++6" {>= "6"}
+  "deb-lsb-base" {>= "3.0-6"}
+]
+extra-source "bitz-server_2.0.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/bitz-server/bitz-server_2.0.3-1_amd64.deb"
+}

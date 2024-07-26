@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i hfsutils-tcltk_3.2.6-14_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r hfsutils-tcltk"]
+]
+depends: [
+  "deb-hfsutils"
+  "deb-libc6" {>= "2.14"}
+  "deb-libfontconfig1" {>= "2.12"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libtcl8-6" {>= "8.6.0"}
+  "deb-libtk8-6" {>= "8.6.0"}
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxft2" {> "2.1.1"}
+  "deb-libxss1"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "hfsutils-tcltk_3.2.6-14_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/hfsutils/hfsutils-tcltk_3.2.6-14_amd64.deb"
+}

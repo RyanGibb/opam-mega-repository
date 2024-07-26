@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i rsplib-all_3.4.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r rsplib-all"]
+]
+depends: [
+  "deb-libcpprspserver-dev" {>= "3.4.4-1"}
+  "deb-libcpprspserver3" {= "3.4.4-1"}
+  "deb-librsplib-dev" {>= "3.4.4-1"}
+  "deb-librsplib3" {= "3.4.4-1"}
+  "deb-rsplib-doc" {>= "3.4.4-1"}
+  "deb-rsplib-fgp-cfgfiles" {>= "3.4.4-1"}
+  "deb-rsplib-registrar" {= "3.4.4-1"}
+  "deb-rsplib-services" {= "3.4.4-1"}
+  "deb-rsplib-tools" {= "3.4.4-1"}
+]
+extra-source "rsplib-all_3.4.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rsplib/rsplib-all_3.4.4-1_amd64.deb"
+}

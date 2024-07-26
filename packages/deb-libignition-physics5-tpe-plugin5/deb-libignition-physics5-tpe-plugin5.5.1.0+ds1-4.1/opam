@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libignition-physics5-tpe-plugin5_5.1.0+ds1-4.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libignition-physics5-tpe-plugin5"]
+]
+depends: [
+  "deb-libc6" {>= "2.32"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libignition-common4-4" {>= "4.5.1+ds"}
+  "deb-libignition-common4-profiler4" {>= "4.5.1+ds"}
+  "deb-libignition-math6-6" {>= "6.10.0+ds3"}
+  "deb-libignition-physics5-5" {>= "5.1.0+ds1"}
+  "deb-libignition-physics5-tpelib5" {>= "5.1.0+ds1"}
+  "deb-libsdformat12-12" {>= "12.3.0+ds"}
+  "deb-libstdc++6" {>= "11"}
+]
+extra-source "libignition-physics5-tpe-plugin5_5.1.0+ds1-4.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/ignition-physics/libignition-physics5-tpe-plugin5_5.1.0+ds1-4.1_amd64.deb"
+}

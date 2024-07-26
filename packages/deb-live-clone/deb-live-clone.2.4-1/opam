@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i live-clone_2.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r live-clone"]
+]
+depends: [
+  "deb-dosfstools"
+  "deb-fdisk"
+  "deb-gir1-2-udisks-2-0"
+  "deb-python3-any"
+  "deb-python3-markdown"
+  "deb-python3-mdx-math"
+  "deb-python3-pyqt5"
+]
+extra-source "live-clone_2.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/live-clone/live-clone_2.4-1_all.deb"
+}

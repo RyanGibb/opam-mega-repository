@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-yi-misc-modes-dev_0.19.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-yi-misc-modes-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-data-default-dev"
+  "deb-libghc-microlens-platform-dev"
+  "deb-libghc-yi-core-dev"
+  "deb-libghc-yi-language-dev"
+  "deb-libghc-yi-rope-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-yi-misc-modes-dev_0.19.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-yi-misc-modes/libghc-yi-misc-modes-dev_0.19.0-1_amd64.deb"
+}

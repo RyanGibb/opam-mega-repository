@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libtrapperkeeper-authorization-clojure_1.0.0-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libtrapperkeeper-authorization-clojure"]
+]
+depends: [
+  "deb-libclojure-java"
+  "deb-libkitchensink-clojure"
+  "deb-libprismatic-schema-clojure" {>= "1.1.12"}
+  "deb-libpuppetlabs-i18n-clojure" {>= "0.9.0-2"}
+  "deb-libpuppetlabs-ring-middleware-clojure" {>= "1.3.0"}
+  "deb-librbac-client-clojure"
+  "deb-libring-mock-clojure"
+  "deb-libslingshot-clojure"
+  "deb-libssl-utils-clojure" {>= "3.1.0"}
+  "deb-libtools-logging-clojure"
+  "deb-libtools-nrepl-clojure"
+  "deb-libtrapperkeeper-clojure" {>= "3.1.0"}
+]
+extra-source "libtrapperkeeper-authorization-clojure_1.0.0-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/trapperkeeper-authorization-clojure/libtrapperkeeper-authorization-clojure_1.0.0-4_all.deb"
+}

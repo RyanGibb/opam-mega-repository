@@ -1,0 +1,87 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i texlive-full_2022.20230122-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r texlive-full"]
+]
+depends: [
+  "deb-asymptote"
+  "deb-biber"
+  "deb-chktex"
+  "deb-cm-super" {>= "0.3.3-3"}
+  "deb-context"
+  "deb-dvidvi"
+  "deb-dvipng"
+  "deb-feynmf"
+  "deb-fragmaster"
+  "deb-info" {>= "4.8"}
+  "deb-lacheck"
+  "deb-latex-cjk-all" {>= "4.6.0+cvs20060714-2"}
+  "deb-latexdiff"
+  "deb-latexmk"
+  "deb-lcdf-typetools"
+  "deb-lmodern" {>= "0.93.3"}
+  "deb-prerex" {> "6.5.3-1"}
+  "deb-psutils"
+  "deb-purifyeps"
+  "deb-t1utils"
+  "deb-tex-gyre"
+  "deb-texinfo" {>= "4.8"}
+  "deb-texlive-base" {>= "2022.20220405"}
+  "deb-texlive-bibtex-extra" {>= "2022.20220405"}
+  "deb-texlive-binaries" {>= "2022.20220321"}
+  "deb-texlive-extra-utils" {>= "2022.20220405"}
+  "deb-texlive-font-utils" {>= "2022.20220405"}
+  "deb-texlive-fonts-extra" {>= "2022.20220405"}
+  "deb-texlive-fonts-extra-doc" {>= "2022.20220405"}
+  "deb-texlive-fonts-extra-links" {>= "2022.20220405"}
+  "deb-texlive-fonts-recommended" {>= "2022.20220405"}
+  "deb-texlive-fonts-recommended-doc" {>= "2022.20220405"}
+  "deb-texlive-formats-extra" {>= "2022.20220405"}
+  "deb-texlive-games" {>= "2022.20220405"}
+  "deb-texlive-humanities" {>= "2022.20220405"}
+  "deb-texlive-humanities-doc" {>= "2022.20220405"}
+  "deb-texlive-lang-arabic" {>= "2022.20220405"}
+  "deb-texlive-lang-chinese" {>= "2022.20220405"}
+  "deb-texlive-lang-cjk" {>= "2022.20220405"}
+  "deb-texlive-lang-cyrillic" {>= "2022.20220405"}
+  "deb-texlive-lang-czechslovak" {>= "2022.20220405"}
+  "deb-texlive-lang-english" {>= "2022.20220405"}
+  "deb-texlive-lang-european" {>= "2022.20220405"}
+  "deb-texlive-lang-french" {>= "2022.20220405"}
+  "deb-texlive-lang-german" {>= "2022.20220405"}
+  "deb-texlive-lang-greek" {>= "2022.20220405"}
+  "deb-texlive-lang-italian" {>= "2022.20220405"}
+  "deb-texlive-lang-japanese" {>= "2022.20220405"}
+  "deb-texlive-lang-korean" {>= "2022.20220405"}
+  "deb-texlive-lang-other" {>= "2022.20220405"}
+  "deb-texlive-lang-polish" {>= "2022.20220405"}
+  "deb-texlive-lang-portuguese" {>= "2022.20220405"}
+  "deb-texlive-lang-spanish" {>= "2022.20220405"}
+  "deb-texlive-latex-base" {>= "2022.20220405"}
+  "deb-texlive-latex-base-doc" {>= "2022.20220405"}
+  "deb-texlive-latex-extra" {>= "2022.20220405"}
+  "deb-texlive-latex-extra-doc" {>= "2022.20220405"}
+  "deb-texlive-latex-recommended" {>= "2022.20220405"}
+  "deb-texlive-latex-recommended-doc" {>= "2022.20220405"}
+  "deb-texlive-luatex" {>= "2022.20220405"}
+  "deb-texlive-metapost" {>= "2022.20220405"}
+  "deb-texlive-metapost-doc" {>= "2022.20220405"}
+  "deb-texlive-music" {>= "2022.20220405"}
+  "deb-texlive-pictures" {>= "2022.20220405"}
+  "deb-texlive-pictures-doc" {>= "2022.20220405"}
+  "deb-texlive-plain-generic" {>= "2022.20220405"}
+  "deb-texlive-pstricks" {>= "2022.20220405"}
+  "deb-texlive-pstricks-doc" {>= "2022.20220405"}
+  "deb-texlive-publishers" {>= "2022.20220405"}
+  "deb-texlive-publishers-doc" {>= "2022.20220405"}
+  "deb-texlive-science" {>= "2022.20220405"}
+  "deb-texlive-science-doc" {>= "2022.20220405"}
+  "deb-texlive-xetex" {>= "2022.20220405"}
+  "deb-tipa" {>= "2-1.2-2.1"}
+  "deb-vprerex" {> "6.5.3-1"}
+]
+extra-source "texlive-full_2022.20230122-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/texlive-base/texlive-full_2022.20230122-3_all.deb"
+}

@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdune-grid-dev_2.9.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdune-grid-dev"]
+]
+depends: [
+  "deb-libalberta-dev" {>= "2.0.1-5"}
+  "deb-libalberta4" {>= "3.0.3"}
+  "deb-libc6" {>= "2.32"}
+  "deb-libdune-common-dev"
+  "deb-libdune-common-dev" {>= "2.9.0"}
+  "deb-libdune-geometry-dev"
+  "deb-libdune-geometry-dev" {>= "2.9.0"}
+  "deb-libdune-uggrid-dev"
+  "deb-libdune-uggrid-dev" {>= "2.9.0"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libopenmpi3" {>= "4.1.4"}
+  "deb-libstdc++6" {>= "11"}
+]
+extra-source "libdune-grid-dev_2.9.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dune-grid/libdune-grid-dev_2.9.0-2_amd64.deb"
+}

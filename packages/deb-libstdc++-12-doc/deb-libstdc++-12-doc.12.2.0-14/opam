@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libstdc++-12-doc_12.2.0-14_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libstdc++-12-doc"]
+]
+depends: [
+  "deb-gcc-12-base" {>= "12"}
+]
+conflicts: [
+  "deb-libstdc++-10-doc"
+  "deb-libstdc++-11-doc"
+  "deb-libstdc++-4-8-doc"
+  "deb-libstdc++-4-9-doc"
+  "deb-libstdc++-5-doc"
+  "deb-libstdc++-6-doc"
+  "deb-libstdc++-7-doc"
+  "deb-libstdc++-8-doc"
+  "deb-libstdc++-9-doc"
+  "deb-libstdc++5-3-3-doc"
+  "deb-libstdc++5-doc"
+  "deb-libstdc++6-4-0-doc"
+  "deb-libstdc++6-4-1-doc"
+  "deb-libstdc++6-4-2-doc"
+  "deb-libstdc++6-4-3-doc"
+  "deb-libstdc++6-4-4-doc"
+  "deb-libstdc++6-4-5-doc"
+  "deb-libstdc++6-4-6-doc"
+  "deb-libstdc++6-4-7-doc"
+  "deb-libstdc++6-doc"
+]
+extra-source "libstdc++-12-doc_12.2.0-14_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gcc-12/libstdc++-12-doc_12.2.0-14_all.deb"
+}

@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i evince_43.1-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r evince"]
+]
+depends: [
+  "deb-evince-common" {>= "43.1-2"}
+  "deb-gsettings-desktop-schemas"
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.14.0"}
+  "deb-libevdocument3-4" {= "43.1-2+b1"}
+  "deb-libevview3-3" {= "43.1-2+b1"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.40"}
+  "deb-libglib2-0-0" {>= "2.61.2"}
+  "deb-libgnome-desktop-3-20" {>= "3.17.92"}
+  "deb-libgtk-3-0" {>= "3.22.0"}
+  "deb-libhandy-1-0" {>= "1.5.90"}
+  "deb-libpango-1-0-0" {>= "1.37.5"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libsecret-1-0" {>= "0.7"}
+  "deb-shared-mime-info"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "evince_43.1-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/evince/evince_43.1-2+b1_amd64.deb"
+}

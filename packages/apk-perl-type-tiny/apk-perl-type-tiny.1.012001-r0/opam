@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-type-tiny-1.012001-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-type-tiny"]
+]
+depends: [
+  "apk-perl" {= "5.32.0-r0"}
+  "apk-perl-exporter-tiny" {= "1.002002-r1"}
+]
+extra-source "perl-type-tiny-1.012001-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/perl-type-tiny-1.012001-r0.apk"
+}

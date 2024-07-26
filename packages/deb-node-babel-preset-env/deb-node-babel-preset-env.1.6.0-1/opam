@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-babel-preset-env_1.6.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-babel-preset-env"]
+]
+depends: [
+  "deb-node-babel-plugin-syntax-trailing-function-commas" {>= "6.22.0"}
+  "deb-node-babel-plugin-transform-async-to-generator" {>= "6.22.0"}
+  "deb-node-babel-plugin-transform-exponentiation-operator" {>= "6.22.0"}
+  "deb-node-babel-plugin-transform-regenerator" {>= "6.22.0"}
+  "deb-node-babel-preset-es2015"
+  "deb-node-browserslist" {>= "2.1.2"}
+  "deb-node-invariant" {>= "2.2.2"}
+  "deb-node-semver" {>= "5.3.0"}
+  "deb-nodejs"
+]
+extra-source "node-babel-preset-env_1.6.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-babel-preset-env/node-babel-preset-env_1.6.0-1_all.deb"
+}

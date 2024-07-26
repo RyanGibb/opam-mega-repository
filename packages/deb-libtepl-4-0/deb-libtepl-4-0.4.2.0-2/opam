@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libtepl-4-0_4.2.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libtepl-4-0"]
+]
+depends: [
+  "deb-libamtk-5-0" {>= "5.0.0"}
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.52"}
+  "deb-libgtk-3-0" {>= "3.22"}
+  "deb-libgtksourceview-4-0" {>= "4.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libuchardet0" {>= "0.0.1"}
+  "deb-libxml2" {>= "2.7.4"}
+]
+extra-source "libtepl-4-0_4.2.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tepl/libtepl-4-0_4.2.0-2_amd64.deb"
+}

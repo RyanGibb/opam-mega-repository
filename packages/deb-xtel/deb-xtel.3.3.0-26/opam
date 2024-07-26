@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xtel_3.3.0-26_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xtel"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libx11-6"
+  "deb-libxm4" {>= "2.3.4"}
+  "deb-libxpm4"
+  "deb-libxt6"
+  "deb-netpbm"
+  "deb-xfonts-utils"
+  ("deb-openbsd-inetd" | "deb- inet-superserver")
+]
+extra-source "xtel_3.3.0-26_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xtel/xtel_3.3.0-26_amd64.deb"
+}

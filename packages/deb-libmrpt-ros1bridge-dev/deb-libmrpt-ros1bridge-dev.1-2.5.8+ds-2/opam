@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmrpt-ros1bridge-dev_1:2.5.8+ds-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmrpt-ros1bridge-dev"]
+]
+depends: [
+  "deb-libcv-bridge-dev"
+  "deb-libgeometry-msgs-dev"
+  "deb-libmrpt-maps-dev"
+  "deb-libmrpt-ros1bridge2-5" {= "1-2.5.8+ds-2"}
+  "deb-librosbag-storage-dev"
+  "deb-libroscpp-dev"
+  "deb-libsensor-msgs-dev"
+  "deb-libstereo-msgs-dev"
+  "deb-libtf2-dev"
+  "deb-libtf2-msgs-dev"
+]
+extra-source "libmrpt-ros1bridge-dev_1:2.5.8+ds-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mrpt/libmrpt-ros1bridge-dev_2.5.8+ds-2_amd64.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i glue-sprite_0.13-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r glue-sprite"]
+]
+depends: [
+  "deb-libjs-sphinxdoc" {>= "1.0"}
+  "deb-python3-any"
+  "deb-python3-jinja2" {< "2.12"}
+  "deb-python3-jinja2" {>= "2.7"}
+  "deb-python3-pil"
+  "deb-python3-pkg-resources"
+]
+extra-source "glue-sprite_0.13-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/glue/glue-sprite_0.13-4_all.deb"
+}

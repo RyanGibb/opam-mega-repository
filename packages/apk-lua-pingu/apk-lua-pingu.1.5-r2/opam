@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lua-pingu-1.5-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lua-pingu"]
+]
+depends: [
+  "apk-musl" {= "1.2.3-r3"}
+]
+extra-source "lua-pingu-1.5-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/lua-pingu-1.5-r2.apk"
+}

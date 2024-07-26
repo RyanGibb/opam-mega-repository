@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i superkb_0.23-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r superkb"]
+]
+depends: [
+  "deb-libc6" {>= "2.15"}
+  "deb-libcairo2" {>= "1.4.10"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libimlib2" {>= "1.4.5"}
+  "deb-libnotify-bin"
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxft2" {> "2.1.1"}
+  "deb-libxinerama1"
+  "deb-libxrender1"
+  "deb-tango-icon-theme"
+]
+extra-source "superkb_0.23-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/superkb/superkb_0.23-2_amd64.deb"
+}

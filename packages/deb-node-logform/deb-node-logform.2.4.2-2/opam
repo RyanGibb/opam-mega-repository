@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-logform_2.4.2-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-logform"]
+]
+depends: [
+  "deb-node-colors" {>= "1.2.1"}
+  "deb-node-fecha"
+  "deb-node-ms"
+  "deb-node-safe-stable-stringify"
+  "deb-node-triple-beam"
+]
+extra-source "node-logform_2.4.2-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-logform/node-logform_2.4.2-2_all.deb"
+}

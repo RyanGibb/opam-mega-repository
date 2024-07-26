@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libssl-utils-clojure_3.1.0-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libssl-utils-clojure"]
+]
+depends: [
+  "deb-libbcpkix-java"
+  "deb-libclj-time-clojure" {>= "0.15.2"}
+  "deb-libclojure-java"
+  "deb-libcommons-codec-java"
+  "deb-libprismatic-schema-clojure" {>= "1.1.12"}
+  "deb-libpuppetlabs-i18n-clojure" {>= "0.9.0-2"}
+  "deb-libtools-logging-clojure"
+]
+extra-source "libssl-utils-clojure_3.1.0-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/ssl-utils-clojure/libssl-utils-clojure_3.1.0-4_all.deb"
+}

@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gst-plugins-base-1.18.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gst-plugins-base"]
+]
+depends: [
+  "apk-alsa-lib" {= "1.2.4-r2"}
+  "apk-cairo" {= "1.16.0-r4"}
+  "apk-cdparanoia-libs" {= "10.2-r9"}
+  "apk-glib" {= "2.66.8-r0"}
+  "apk-gstreamer" {= "1.18.4-r0"}
+  "apk-libintl" {= "0.20.2-r2"}
+  "apk-libogg" {= "1.3.4-r0"}
+  "apk-libpng" {= "1.6.37-r1"}
+  "apk-libtheora" {= "1.1.1-r16"}
+  "apk-libvorbis" {= "1.3.7-r0"}
+  "apk-libx11" {= "1.7.1-r0"}
+  "apk-libxcb" {= "1.14-r1"}
+  "apk-libxext" {= "1.3.4-r0"}
+  "apk-libxv" {= "1.0.11-r2"}
+  "apk-mesa-egl" {= "20.3.3-r0"}
+  "apk-mesa-gl" {= "20.3.3-r0"}
+  "apk-musl" {= "1.2.2-r2"}
+  "apk-opus" {= "1.3.1-r1"}
+  "apk-orc" {= "0.4.32-r0"}
+  "apk-pango" {= "1.48.2-r0"}
+  "apk-wayland-libs-client" {= "1.18.0-r5"}
+  "apk-wayland-libs-cursor" {= "1.18.0-r5"}
+  "apk-wayland-libs-egl" {= "1.18.0-r5"}
+  "apk-zlib" {= "1.2.12-r3"}
+]
+extra-source "gst-plugins-base-1.18.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/gst-plugins-base-1.18.3-r0.apk"
+}

@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dpm-copy-server-postgres_1.10.0-2+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dpm-copy-server-postgres"]
+]
+depends: [
+  "deb-adduser"
+  "deb-finger"
+  "deb-libc6" {>= "2.15"}
+  "deb-libcgsi-gsoap1"
+  "deb-libdpm1" {= "1.10.0-2+b3"}
+  "deb-libglobus-common0" {>= "17"}
+  "deb-libglobus-ftp-client2" {>= "7"}
+  "deb-libglobus-gass-copy2" {>= "8"}
+  "deb-libgsoap-2-8-75"
+  "deb-liblcgdm1"
+  "deb-libpq5"
+]
+conflicts: [
+  "deb-dpm-postgres-copyd" {< "1.8.1.2-2~"}
+]
+extra-source "dpm-copy-server-postgres_1.10.0-2+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lcgdm/dpm-copy-server-postgres_1.10.0-2+b3_amd64.deb"
+}

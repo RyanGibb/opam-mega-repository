@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i piuparts-slave_1.1.4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r piuparts-slave"]
+]
+depends: [
+  "deb-adduser"
+  "deb-openssh-client"
+  "deb-piuparts" {= "1.1.4"}
+  "deb-piuparts-common" {= "1.1.4"}
+  "deb-screen"
+  "deb-sudo"
+]
+extra-source "piuparts-slave_1.1.4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/piuparts/piuparts-slave_1.1.4_all.deb"
+}

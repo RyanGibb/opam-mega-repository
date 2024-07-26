@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libfwupdplugin1_1.5.7-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libfwupdplugin1"]
+]
+depends: [
+  "deb-libarchive13" {>= "3.0.4"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libfwupd2" {>= "1.5.5"}
+  "deb-libgcab-1-0-0" {>= "1.0"}
+  "deb-libglib2-0-0" {>= "2.53.2"}
+  "deb-libgudev-1-0-0" {>= "212"}
+  "deb-libgusb2" {>= "0.3.5"}
+  "deb-libjcat1" {>= "0.1.0"}
+  "deb-libxmlb1" {>= "0.1.15"}
+]
+extra-source "libfwupdplugin1_1.5.7-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fwupd/libfwupdplugin1_1.5.7-4_amd64.deb"
+}

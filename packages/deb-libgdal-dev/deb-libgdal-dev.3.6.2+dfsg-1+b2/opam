@@ -1,0 +1,53 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgdal-dev_3.6.2+dfsg-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgdal-dev"]
+]
+depends: [
+  "deb-default-libmysqlclient-dev"
+  "deb-libarmadillo-dev"
+  "deb-libblosc-dev"
+  "deb-libc6-dev"
+  "deb-libcfitsio-dev"
+  "deb-libdeflate-dev"
+  "deb-libexpat1-dev"
+  "deb-libfreexl-dev"
+  "deb-libfyba-dev"
+  "deb-libgdal32" {= "3.6.2+dfsg-1+b2"}
+  "deb-libgeos-dev"
+  "deb-libgeotiff-dev" {>= "1.5.0"}
+  "deb-libgif-dev"
+  "deb-libhdf4-alt-dev"
+  "deb-libhdf5-dev"
+  "deb-libheif-dev"
+  "deb-libjpeg-dev"
+  "deb-libjson-c-dev"
+  "deb-libkml-dev"
+  "deb-libltdl-dev"
+  "deb-liblz4-dev"
+  "deb-liblzma-dev"
+  "deb-libnetcdf-dev"
+  "deb-libogdi-dev"
+  "deb-libopenjp2-7-dev"
+  "deb-libpcre2-dev"
+  "deb-libpng-dev"
+  "deb-libpoppler-private-dev"
+  "deb-libpq-dev"
+  "deb-libproj-dev" {>= "6.0.0"}
+  "deb-libqhull-dev"
+  "deb-libspatialite-dev"
+  "deb-libsqlite3-dev"
+  "deb-libtiff-dev"
+  "deb-liburiparser-dev"
+  "deb-libwebp-dev"
+  "deb-libxerces-c-dev"
+  "deb-libxml2-dev"
+  "deb-libzstd-dev"
+  "deb-unixodbc-dev"
+  ("deb-libcurl4-gnutls-dev" | "deb- libcurl-ssl-dev")
+]
+extra-source "libgdal-dev_3.6.2+dfsg-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gdal/libgdal-dev_3.6.2+dfsg-1+b2_amd64.deb"
+}

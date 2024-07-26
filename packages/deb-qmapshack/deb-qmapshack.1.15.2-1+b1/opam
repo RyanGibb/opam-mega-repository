@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qmapshack_1.15.2-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qmapshack"]
+]
+depends: [
+  "deb-libalglib3-17" {>= "3.17.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgdal28" {>= "3.0.0"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libproj19" {>= "4.8.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.0.2"}
+  "deb-libqt5help5" {>= "5.9.0"}
+  "deb-libqt5network5" {>= "5.14.1"}
+  "deb-libqt5printsupport5" {>= "5.0.2"}
+  "deb-libqt5qml5" {>= "5.0.2"}
+  "deb-libqt5sql5" {>= "5.0.2"}
+  "deb-libqt5sql5-sqlite"
+  "deb-libqt5webenginewidgets5" {>= "5.7.1"}
+  "deb-libqt5widgets5" {>= "5.14.1"}
+  "deb-libqt5xml5" {>= "5.0.2"}
+  "deb-libquazip5-1" {>= "0.7.3"}
+  "deb-libroutino0" {>= "3.1"}
+  "deb-libstdc++6" {>= "5.2"}
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "qmapshack_1.15.2-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qmapshack/qmapshack_1.15.2-1+b1_amd64.deb"
+}

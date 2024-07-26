@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i onionshare-cli_2.6-5~deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r onionshare-cli"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-click"
+  "deb-python3-colorama"
+  "deb-python3-eventlet"
+  "deb-python3-flask" {< "3.0.0"}
+  "deb-python3-flask" {>= "2.0.0"}
+  "deb-python3-flask-socketio"
+  "deb-python3-gevent-websocket"
+  "deb-python3-nacl"
+  "deb-python3-pkg-resources"
+  "deb-python3-psutil"
+  "deb-python3-requests"
+  "deb-python3-socks"
+  "deb-python3-stem" {>= "1.8.1"}
+  "deb-python3-unidecode"
+  "deb-python3-urllib3"
+  "deb-python3-werkzeug"
+  "deb-tor"
+]
+extra-source "onionshare-cli_2.6-5~deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/onionshare/onionshare-cli_2.6-5~deb12u1_all.deb"
+}

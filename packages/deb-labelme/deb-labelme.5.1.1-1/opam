@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i labelme_5.1.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r labelme"]
+]
+depends: [
+  "deb-python3-any" {>= "3.6~"}
+  "deb-python3-imgviz"
+  "deb-python3-matplotlib"
+  "deb-python3-natsort"
+  "deb-python3-numpy"
+  "deb-python3-pil"
+  "deb-python3-qtpy"
+  "deb-python3-termcolor"
+  "deb-python3-yaml"
+]
+extra-source "labelme_5.1.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/labelme/labelme_5.1.1-1_all.deb"
+}

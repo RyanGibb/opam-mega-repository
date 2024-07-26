@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i colobot_0.1.11.1-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r colobot"]
+]
+depends: [
+  "deb-colobot-common" {>= "0.1.11.1-6"}
+  "deb-colobot-common-sounds" {>= "0.1.11.1-6"}
+  "deb-colobot-common-textures" {>= "0.1.11.1-6"}
+  "deb-fonts-dejavu-core"
+  "deb-fonts-dejavu-extra"
+  "deb-libboost-filesystem1-67-0"
+  "deb-libboost-regex1-67-0" {>= "1.67.0-10"}
+  "deb-libboost-system1-67-0"
+  "deb-libc6" {>= "2.27"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgl1"
+  "deb-libglew2-1" {>= "1.12.0"}
+  "deb-libopenal1" {>= "1.14"}
+  "deb-libphysfs1"
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libsdl2-2-0-0" {>= "2.0.8"}
+  "deb-libsdl2-image-2-0-0" {>= "2.0.2"}
+  "deb-libsdl2-ttf-2-0-0" {>= "2.0.14"}
+  "deb-libsndfile1" {>= "1.0.20"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+extra-source "colobot_0.1.11.1-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/colobot/colobot_0.1.11.1-6_amd64.deb"
+}

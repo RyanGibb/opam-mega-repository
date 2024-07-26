@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mpg123_1.25.10-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mpg123"]
+]
+depends: [
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libaudio2"
+  "deb-libc6" {>= "2.15"}
+  "deb-libmpg123-0" {>= "1.25.0"}
+  "deb-libopenal1" {>= "1.14"}
+  "deb-libout123-0" {>= "1.23.8"}
+  "deb-libportaudio2" {>= "19+svn20101113"}
+  "deb-libpulse0" {>= "0.99.1"}
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+]
+extra-source "mpg123_1.25.10-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mpg123/mpg123_1.25.10-2_amd64.deb"
+}

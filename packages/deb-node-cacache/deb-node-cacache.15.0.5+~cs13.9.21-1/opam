@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-cacache_15.0.5+~cs13.9.21-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-cacache"]
+]
+depends: [
+  "deb-node-chownr"
+  "deb-node-glob" {>= "7.1.2"}
+  "deb-node-graceful-fs" {>= "4.1.11"}
+  "deb-node-lru-cache" {>= "4.1.1"}
+  "deb-node-mkdirp" {>= "1.0.3"}
+  "deb-node-move-concurrently"
+  "deb-node-p-map" {>= "3.0.0"}
+  "deb-node-promise-inflight"
+  "deb-node-rimraf" {>= "2.6.1"}
+  "deb-node-ssri"
+  "deb-node-unique-filename"
+  "deb-nodejs"
+]
+extra-source "node-cacache_15.0.5+~cs13.9.21-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-cacache/node-cacache_15.0.5+~cs13.9.21-1_all.deb"
+}

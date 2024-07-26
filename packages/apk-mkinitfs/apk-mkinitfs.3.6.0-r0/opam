@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mkinitfs-3.6.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mkinitfs"]
+]
+depends: [
+  "apk-apk-tools" {>= "2.9.1"}
+  "apk-busybox" {>= "1.28.2-r1"}
+  "apk-cryptsetup-libs" {= "2.4.3-r0"}
+  "apk-kmod" {= "29-r2"}
+  "apk-kmod-libs" {= "29-r2"}
+  "apk-lddtree" {>= "1.25"}
+  "apk-libblkid" {= "2.37.4-r0"}
+  "apk-musl" {= "1.2.2-r9"}
+]
+extra-source "mkinitfs-3.6.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/mkinitfs-3.6.0-r0.apk"
+}

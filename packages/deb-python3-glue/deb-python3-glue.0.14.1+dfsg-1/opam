@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-glue_0.14.1+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-glue"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-astropy" {>= "1.3"}
+  "deb-python3-bottleneck"
+  "deb-python3-dill" {>= "0.2.1"}
+  "deb-python3-h5py" {>= "2.2.1"}
+  "deb-python3-ipykernel"
+  "deb-python3-ipython"
+  "deb-python3-matplotlib" {>= "2.0"}
+  "deb-python3-mpl-scatter-density"
+  "deb-python3-numpy" {>= "1.9"}
+  "deb-python3-pandas" {>= "0.14.1"}
+  "deb-python3-pkg-resources"
+  "deb-python3-plotly" {>= "1.2.9"}
+  "deb-python3-pyavm" {>= "0.9.1"}
+  "deb-python3-pygments" {>= "1.6"}
+  "deb-python3-qtconsole" {>= "4.2.0"}
+  "deb-python3-qtpy"
+  "deb-python3-skimage" {>= "0.10.1"}
+  "deb-python3-xlrd" {>= "1.0"}
+  "deb-python3-zmq" {>= "14.3.1"}
+]
+conflicts: [
+  "deb-glue-sprite"
+]
+extra-source "python3-glue_0.14.1+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/glueviz/python3-glue_0.14.1+dfsg-1_all.deb"
+}

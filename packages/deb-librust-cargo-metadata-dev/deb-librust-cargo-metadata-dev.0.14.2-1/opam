@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-cargo-metadata-dev_0.14.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-cargo-metadata-dev"]
+]
+depends: [
+  "deb-librust-camino-dev"
+  "deb-librust-cargo-platform-0-1+default-dev"
+  "deb-librust-derive-builder-0-9+default-dev"
+  "deb-librust-semver-1+default-dev"
+  "deb-librust-semver-1+serde-dev"
+  "deb-librust-serde+serde-derive-dev"
+  "deb-librust-serde-dev"
+  "deb-librust-serde-json-dev"
+]
+extra-source "librust-cargo-metadata-dev_0.14.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-cargo-metadata/librust-cargo-metadata-dev_0.14.2-1_amd64.deb"
+}

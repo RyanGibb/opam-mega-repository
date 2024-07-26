@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-bioc-progeny_1.20.0+ds-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-bioc-progeny"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.2.20221110-1"}
+  "deb-r-bioc-biobase"
+  "deb-r-bioc-biocgenerics"
+  "deb-r-bioc-decoupler"
+  "deb-r-cran-dplyr"
+  "deb-r-cran-ggplot2"
+  "deb-r-cran-ggrepel"
+  "deb-r-cran-gridextra"
+  "deb-r-cran-reshape2"
+  "deb-r-cran-tidyr"
+]
+extra-source "r-bioc-progeny_1.20.0+ds-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-bioc-progeny/r-bioc-progeny_1.20.0+ds-1_all.deb"
+}

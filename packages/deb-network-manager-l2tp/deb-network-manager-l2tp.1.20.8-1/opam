@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i network-manager-l2tp_1.20.8-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r network-manager-l2tp"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libglib2-0-0" {>= "2.39.4"}
+  "deb-libnm0" {>= "1.20.0"}
+  "deb-libnspr4" {>= "2-4.9-2~"}
+  "deb-libnss3" {>= "2-3.13.4-2~"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-network-manager"
+  "deb-ppp" {< "2.4.9-2~"}
+  "deb-ppp" {>= "2.4.9-1+~"}
+  "deb-xl2tpd"
+  ("deb-strongswan" | "deb- libreswan")
+]
+extra-source "network-manager-l2tp_1.20.8-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/network-manager-l2tp/network-manager-l2tp_1.20.8-1_amd64.deb"
+}

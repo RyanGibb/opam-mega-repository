@@ -1,0 +1,54 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libotb_6.6.1+dfsg-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libotb"]
+]
+depends: [
+  "deb-libotbapplicationengine-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbcarto-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbcommandline-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbcommandlineparser-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbcommon-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbcurladapters-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbedge-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbextendedfilename-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbfuzzy-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbgdaladapters-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbice-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbimagebase-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbimageio-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbimagemanipulation-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbiobsq-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbiogdal-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbiokml-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbiolum-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbiomstar-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbioonera-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbiorad-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbiotilemap-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotblearningbase-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbmathparser-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbmetadata-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbopenthreadsadapters-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbossimadapters-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbossimplugins-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbpolarimetry-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbprojection-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbqtwidget-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbrcc8-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbsampling-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbsiftfast-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbstatistics-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbstreaming-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbsupervised-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbtestkernel-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbtransform-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbvectordatabase-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbvectordataio-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbwavelet-6-6-1" {= "6.6.1+dfsg-1+b1"}
+]
+extra-source "libotb_6.6.1+dfsg-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/otb/libotb_6.6.1+dfsg-1+b1_amd64.deb"
+}

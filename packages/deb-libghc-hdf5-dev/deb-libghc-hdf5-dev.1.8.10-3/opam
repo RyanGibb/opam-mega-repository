@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-hdf5-dev_1.8.10-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-hdf5-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.14"}
+  "deb-libffi8" {>= "3.4"}
+  "deb-libghc-bindings-dsl-dev"
+  "deb-libghc-libffi-dev"
+  "deb-libghc-lifted-base-dev"
+  "deb-libghc-monad-control-dev"
+  "deb-libghc-primitive-dev"
+  "deb-libghc-tagged-dev"
+  "deb-libghc-vector-dev"
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-libhdf5-103-1"
+]
+extra-source "libghc-hdf5-dev_1.8.10-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-hdf5/libghc-hdf5-dev_1.8.10-3_amd64.deb"
+}

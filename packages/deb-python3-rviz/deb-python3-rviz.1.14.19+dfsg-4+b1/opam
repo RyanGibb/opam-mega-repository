@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-rviz_1.14.19+dfsg-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-rviz"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-librviz7d" {>= "1.14.19+dfsg"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-any"
+  "deb-python3-python-qt-binding"
+  "deb-python3-sip"
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+]
+extra-source "python3-rviz_1.14.19+dfsg-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ros-rviz/python3-rviz_1.14.19+dfsg-4+b1_amd64.deb"
+}

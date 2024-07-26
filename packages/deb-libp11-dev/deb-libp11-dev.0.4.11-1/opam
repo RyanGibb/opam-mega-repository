@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libp11-dev_0.4.11-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libp11-dev"]
+]
+depends: [
+  "deb-libp11-3" {= "0.4.11-1"}
+  "deb-libssl-dev"
+  "deb-pkg-config"
+]
+extra-source "libp11-dev_0.4.11-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libp/libp11/libp11-dev_0.4.11-1_amd64.deb"
+}

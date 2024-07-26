@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libvtkgdcm-tools_3.0.21-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libvtkgdcm-tools"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgdcm3-0" {>= "3.0.21"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libvtk9-1" {>= "9.1.0+really9.1.0+dfsg2"}
+  "deb-libvtkgdcm-9-1" {>= "3.0.21"}
+]
+extra-source "libvtkgdcm-tools_3.0.21-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gdcm/libvtkgdcm-tools_3.0.21-1_amd64.deb"
+}

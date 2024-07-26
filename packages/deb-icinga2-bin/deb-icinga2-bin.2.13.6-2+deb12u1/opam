@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i icinga2-bin_2.13.6-2+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r icinga2-bin"]
+]
+depends: [
+  "deb-icinga2-common" {= "2.13.6-2+deb12u1"}
+  "deb-libboost-coroutine1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-iostreams1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-program-options1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-regex1-74-0"
+  "deb-libboost-thread1-74-0" {>= "1.74.0+ds1"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libedit2" {>= "2.11-20080614-0"}
+  "deb-libgcc-s1" {>= "3.3"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libstdc++6" {>= "12"}
+  "deb-libsystemd0"
+  "deb-sysvinit-utils" {>= "3.05-4~"}
+]
+extra-source "icinga2-bin_2.13.6-2+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/icinga2/icinga2-bin_2.13.6-2+deb12u1_amd64.deb"
+}

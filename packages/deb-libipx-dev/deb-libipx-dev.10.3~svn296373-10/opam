@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libipx-dev_10.3~svn296373-10_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libipx-dev"]
+]
+depends: [
+  "deb-libipx2" {= "10.3~svn296373-10"}
+  ("deb-libc0-1-dev" | "deb- libc-dev")
+]
+extra-source "libipx-dev_10.3~svn296373-10_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/freebsd-libs/libipx-dev_10.3~svn296373-10_amd64.deb"
+}

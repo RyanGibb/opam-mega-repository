@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libopenfoam_1812+dfsg1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libopenfoam"]
+]
+depends: [
+  "deb-libc6" {>= "2.23"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libopenmpi3"
+  "deb-libstdc++6" {>= "6"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libopenfoam_1812+dfsg1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openfoam/libopenfoam_1812+dfsg1-2_amd64.deb"
+}

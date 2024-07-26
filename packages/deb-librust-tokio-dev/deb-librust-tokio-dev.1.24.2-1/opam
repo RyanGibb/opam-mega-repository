@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-tokio-dev_1.24.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-tokio-dev"]
+]
+depends: [
+  "deb-librust-autocfg-dev"
+  "deb-librust-bytes-1+default-dev"
+  "deb-librust-libc-dev"
+  "deb-librust-memchr-dev"
+  "deb-librust-mio-dev"
+  "deb-librust-num-cpus-dev"
+  "deb-librust-parking-lot-0-12+default-dev"
+  "deb-librust-pin-project-lite-0-2+default-dev"
+  "deb-librust-signal-hook-registry-dev"
+  "deb-librust-socket2-dev"
+  "deb-librust-tokio-macros-dev"
+  "deb-librust-tracing-dev"
+  "deb-librust-winapi-dev"
+]
+extra-source "librust-tokio-dev_1.24.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-tokio/librust-tokio-dev_1.24.2-1_amd64.deb"
+}

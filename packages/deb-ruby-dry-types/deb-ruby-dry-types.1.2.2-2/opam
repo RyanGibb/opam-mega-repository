@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-dry-types_1.2.2-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-dry-types"]
+]
+depends: [
+  "deb-ruby-concurrent" {>= "1.0"}
+  "deb-ruby-dry-container" {>= "0.3"}
+  "deb-ruby-dry-core" {>= "0.4.4"}
+  "deb-ruby-dry-equalizer" {>= "0.3"}
+  "deb-ruby-dry-inflector" {>= "0.1.2"}
+  "deb-ruby-dry-logic" {>= "1.0.2"}
+]
+extra-source "ruby-dry-types_1.2.2-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-dry-types/ruby-dry-types_1.2.2-2_all.deb"
+}

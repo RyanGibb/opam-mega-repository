@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkf5kiocore5_5.54.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkf5kiocore5"]
+]
+depends: [
+  "deb-libacl1" {>= "2.2.51-8"}
+  "deb-libc6" {>= "2.15"}
+  "deb-libkf5auth5" {>= "4.96.0"}
+  "deb-libkf5configcore5" {>= "4.97.0"}
+  "deb-libkf5coreaddons5" {>= "5.2.0"}
+  "deb-libkf5crash5" {>= "5.15.0"}
+  "deb-libkf5dbusaddons5" {>= "4.97.0"}
+  "deb-libkf5i18n5" {>= "4.97.0"}
+  "deb-libkf5service-bin"
+  "deb-libkf5service5" {>= "4.99.0"}
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5dbus5" {>= "5.9.0~"}
+  "deb-libqt5network5" {>= "5.9.0~"}
+  "deb-libqt5xml5" {>= "5.9.0~"}
+  "deb-libstdc++6" {>= "4.1.1"}
+]
+extra-source "libkf5kiocore5_5.54.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kio/libkf5kiocore5_5.54.1-1_amd64.deb"
+}

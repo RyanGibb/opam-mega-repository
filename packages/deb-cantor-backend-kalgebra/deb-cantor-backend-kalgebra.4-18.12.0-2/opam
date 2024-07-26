@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cantor-backend-kalgebra_4:18.12.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cantor-backend-kalgebra"]
+]
+depends: [
+  "deb-cantor" {= "4-18.12.0-2"}
+  "deb-libanalitza8" {>= "4-17.08.3"}
+  "deb-libanalitzagui8" {>= "4-17.08.3"}
+  "deb-libc6" {>= "2.4"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libkf5completion5" {>= "4.97.0"}
+  "deb-libkf5configcore5" {>= "4.98.0"}
+  "deb-libkf5configgui5" {>= "4.97.0"}
+  "deb-libkf5coreaddons5" {>= "4.99.0"}
+  "deb-libkf5i18n5" {>= "4.97.0"}
+  "deb-libkf5widgetsaddons5" {>= "4.96.0"}
+  "deb-libkf5xmlgui5" {>= "4.96.0"}
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5widgets5" {>= "5.4"}
+  "deb-libstdc++6" {>= "4.1.1"}
+]
+extra-source "cantor-backend-kalgebra_4:18.12.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cantor/cantor-backend-kalgebra_18.12.0-2_amd64.deb"
+}

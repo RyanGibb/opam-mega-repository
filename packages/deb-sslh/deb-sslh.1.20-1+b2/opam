@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sslh_1.20-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sslh"]
+]
+depends: [
+  "deb-adduser"
+  "deb-debconf" {>= "0.5"}
+  "deb-init-system-helpers" {>= "1.51"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcap2" {>= "1-2.10"}
+  "deb-libconfig9"
+  "deb-libpcre3"
+  "deb-libwrap0" {>= "7.6-4~"}
+  "deb-sysvinit-utils"
+  "deb-update-inetd"
+]
+conflicts: [
+  "deb-libnet-proxy-perl"
+]
+extra-source "sslh_1.20-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sslh/sslh_1.20-1+b2_amd64.deb"
+}

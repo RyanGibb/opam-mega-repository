@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add dhcp-server-ldap-4.4.3_p1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del dhcp-server-ldap"]
+]
+depends: [
+  "apk-dhcp" {= "4.4.3_p1-r0"}
+  "apk-krb5-libs" {= "1.19.4-r0"}
+  "apk-libgcc" {= "11.2.1_git20220219-r2"}
+  "apk-libldap" {= "2.6.3-r3"}
+  "apk-musl" {= "1.2.3-r3"}
+]
+conflicts: [
+  "dhcp-server-vanilla"
+]
+extra-source "dhcp-server-ldap-4.4.3_p1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/dhcp-server-ldap-4.4.3_p1-r0.apk"
+}

@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkf5sysguard-dev_4:5.14.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkf5sysguard-dev"]
+]
+depends: [
+  "deb-libkf5config-dev"
+  "deb-libkf5i18n-dev"
+  "deb-libkf5sysguard-bin" {= "4-5.14.5-1"}
+  "deb-libksgrd7" {= "4-5.14.5-1"}
+  "deb-libksignalplotter7" {= "4-5.14.5-1"}
+  "deb-liblsofui7" {= "4-5.14.5-1"}
+  "deb-libprocesscore7" {= "4-5.14.5-1"}
+  "deb-libprocessui7" {= "4-5.14.5-1"}
+  "deb-qtbase5-dev" {>= "5.5.0~"}
+]
+conflicts: [
+  "deb-kde-workspace-dev"
+]
+extra-source "libkf5sysguard-dev_4:5.14.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libk/libksysguard/libkf5sysguard-dev_5.14.5-1_amd64.deb"
+}

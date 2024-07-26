@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i asciio_1.51.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r asciio"]
+]
+depends: [
+  "deb-libalgorithm-diff-perl"
+  "deb-libclone-perl"
+  "deb-libcompress-bzip2-perl"
+  "deb-libdata-treedumper-perl"
+  "deb-libdata-treedumper-renderer-gtk-perl"
+  "deb-libeval-context-perl"
+  "deb-libfile-slurp-perl"
+  "deb-libglib-perl"
+  "deb-libgtk2-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-libmodule-util-perl"
+  "deb-libreadonly-perl"
+  "deb-perl" {>= "5.9.3"}
+]
+extra-source "asciio_1.51.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/asciio/asciio_1.51.3-1_all.deb"
+}

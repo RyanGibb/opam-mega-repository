@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pidgin-encryption_3.1-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pidgin-encryption"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-pidgin" {< "3.0"}
+  "deb-pidgin" {>= "2.10"}
+  ("deb-libnspr4" {>= "2-4.9-2~"} | "deb- libnspr4-0d" {>= "1.8.0.10"})
+  ("deb-libnss3" {>= "2-3.13.4-2~"} | "deb- libnss3-1d" {>= "3.12.0~beta2"})
+]
+extra-source "pidgin-encryption_3.1-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pidgin-encryption/pidgin-encryption_3.1-1.1_amd64.deb"
+}

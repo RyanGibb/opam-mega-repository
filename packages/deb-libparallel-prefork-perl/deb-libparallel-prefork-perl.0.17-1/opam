@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libparallel-prefork-perl_0.17-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libparallel-prefork-perl"]
+]
+depends: [
+  "deb-libclass-accessor-lite-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-libproc-wait3-perl"
+  "deb-libscope-guard-perl"
+  "deb-libsignal-mask-perl"
+  "deb-perl"
+]
+extra-source "libparallel-prefork-perl_0.17-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libp/libparallel-prefork-perl/libparallel-prefork-perl_0.17-1_all.deb"
+}

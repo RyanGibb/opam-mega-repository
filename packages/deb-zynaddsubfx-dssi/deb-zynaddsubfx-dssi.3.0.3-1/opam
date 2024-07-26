@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i zynaddsubfx-dssi_3.0.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r zynaddsubfx-dssi"]
+]
+depends: [
+  "deb-libc6" {>= "2.22"}
+  "deb-libfftw3-double3" {>= "3.3.5"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-liblo7" {>= "0.26~repack"}
+  "deb-libmxml1"
+  "deb-libstdc++6" {>= "7"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "zynaddsubfx-dssi_3.0.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/z/zynaddsubfx/zynaddsubfx-dssi_3.0.3-1_amd64.deb"
+}

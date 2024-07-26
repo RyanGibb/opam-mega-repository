@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lame-libs-3.100-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lame-libs"]
+]
+depends: [
+  "apk-musl" {= "1.2.5-r0"}
+]
+extra-source "lame-libs-3.100-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lame-libs-3.100-r5.apk"
+}

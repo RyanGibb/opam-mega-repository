@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i evolution-ews_3.46.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r evolution-ews"]
+]
+depends: [
+  "deb-evolution" {< "3.47"}
+  "deb-evolution" {>= "3.46"}
+  "deb-evolution-data-server" {< "3.47"}
+  "deb-evolution-data-server" {>= "3.46"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcamel-1-2-64" {>= "3.46.4"}
+  "deb-libebackend-1-2-11" {>= "3.46.4"}
+  "deb-libebook-1-2-21" {>= "3.46.4"}
+  "deb-libebook-contacts-1-2-4" {>= "3.25.90"}
+  "deb-libecal-2-0-2" {>= "3.46.4"}
+  "deb-libedata-book-1-2-27" {>= "3.46.4"}
+  "deb-libedata-cal-2-0-2" {>= "3.46.4"}
+  "deb-libedataserver-1-2-27" {>= "3.46.4"}
+  "deb-libedataserverui-1-2-4" {>= "3.16.2"}
+  "deb-libevolution" {< "3.47"}
+  "deb-libevolution" {>= "3.46.4"}
+  "deb-libglib2-0-0" {>= "2.67.3"}
+  "deb-libgtk-3-0" {>= "3.0.0"}
+  "deb-libical3" {>= "3.0.0"}
+  "deb-libjson-glib-1-0-0" {>= "1.5.2"}
+  "deb-libmspack0" {>= "0.4"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libsoup-3-0-0" {>= "3.0.3"}
+  "deb-libxml2" {>= "2.9.0"}
+]
+extra-source "evolution-ews_3.46.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/evolution-ews/evolution-ews_3.46.4-1_amd64.deb"
+}

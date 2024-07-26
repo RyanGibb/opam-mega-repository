@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libjava-gnome-jni_4.1.3-10_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libjava-gnome-jni"]
+]
+depends: [
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libcairo2" {>= "1.10.0"}
+  "deb-libenchant-2-2" {>= "2.2.3"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.31.18"}
+  "deb-libgtk-3-0" {>= "3.4"}
+  "deb-libgtksourceview-3-0-1" {>= "3.0"}
+  "deb-libnotify4" {>= "0.7.0"}
+  "deb-libpango-1-0-0" {>= "1.28"}
+  "deb-libpangocairo-1-0-0" {>= "1.28"}
+  "deb-librsvg2-2" {>= "2.32"}
+]
+extra-source "libjava-gnome-jni_4.1.3-10_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/j/java-gnome/libjava-gnome-jni_4.1.3-10_amd64.deb"
+}

@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-mqtt_4.2.6-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-mqtt"]
+]
+depends: [
+  "deb-node-base64-js" {>= "1.3.0"}
+  "deb-node-commist" {>= "1.0.0"}
+  "deb-node-concat-stream" {>= "1.6.2"}
+  "deb-node-end-of-stream" {>= "1.4.1"}
+  "deb-node-es6-map" {>= "0.1.5"}
+  "deb-node-extend"
+  "deb-node-help-me" {>= "1.0.1"}
+  "deb-node-inherits" {>= "2.0.3"}
+  "deb-node-minimist" {>= "1.2.0"}
+  "deb-node-mqtt-packet" {>= "6.0.0"}
+  "deb-node-pump" {>= "3.0.0"}
+  "deb-node-readable-stream" {>= "2.3.6"}
+  "deb-node-reinterval" {>= "1.1.0"}
+  "deb-node-split2" {>= "3.1.0"}
+  "deb-node-websocket-stream" {>= "5.1.2"}
+  "deb-node-xtend" {>= "4.0.1"}
+  "deb-nodejs" {>= "6"}
+]
+extra-source "node-mqtt_4.2.6-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-mqtt/node-mqtt_4.2.6-2_all.deb"
+}

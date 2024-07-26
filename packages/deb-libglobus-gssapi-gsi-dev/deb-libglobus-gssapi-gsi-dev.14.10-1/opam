@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libglobus-gssapi-gsi-dev_14.10-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libglobus-gssapi-gsi-dev"]
+]
+depends: [
+  "deb-libglobus-common-dev" {>= "15"}
+  "deb-libglobus-gsi-callback-dev" {>= "4"}
+  "deb-libglobus-gsi-cert-utils-dev" {>= "8"}
+  "deb-libglobus-gsi-credential-dev" {>= "5"}
+  "deb-libglobus-gsi-openssl-error-dev" {>= "2"}
+  "deb-libglobus-gsi-proxy-core-dev" {>= "8"}
+  "deb-libglobus-gsi-sysconfig-dev" {>= "8"}
+  "deb-libglobus-gssapi-gsi4" {= "14.10-1"}
+  "deb-libglobus-openssl-module-dev" {>= "3"}
+  "deb-libssl-dev"
+]
+extra-source "libglobus-gssapi-gsi-dev_14.10-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/globus-gssapi-gsi/libglobus-gssapi-gsi-dev_14.10-1_amd64.deb"
+}

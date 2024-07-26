@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gnupg-utils-2.2.31-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gnupg-utils"]
+]
+depends: [
+  "apk-libbz2" {= "1.0.8-r1"}
+  "apk-libgcrypt" {= "1.9.4-r0"}
+  "apk-libgpg-error" {= "1.42-r1"}
+  "apk-libksba" {= "1.6.4-r0"}
+  "apk-musl" {= "1.2.2-r9"}
+  "apk-zlib" {= "1.2.12-r3"}
+]
+conflicts: [
+  "gnupg1"
+]
+extra-source "gnupg-utils-2.2.31-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/gnupg-utils-2.2.31-r2.apk"
+}

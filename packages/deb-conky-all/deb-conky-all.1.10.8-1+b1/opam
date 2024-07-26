@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i conky-all_1.10.8-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r conky-all"]
+]
+depends: [
+  "deb-libaudclient2" {>= "2.3"}
+  "deb-libc6" {>= "2.27"}
+  "deb-libcairo2" {>= "1.8.0"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libdbus-glib-1-2" {>= "0.78"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libimlib2" {>= "1.4.5"}
+  "deb-libiw30" {>= "30~pre1"}
+  "deb-liblua5-1-0"
+  "deb-libncurses6" {>= "6"}
+  "deb-libpulse0" {>= "0.99.1"}
+  "deb-librsvg2-2" {>= "2.35.2"}
+  "deb-libstdc++6" {>= "6"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-libx11-6"
+  "deb-libxdamage1" {>= "1-1.1"}
+  "deb-libxext6"
+  "deb-libxfixes3"
+  "deb-libxft2" {> "2.1.1"}
+  "deb-libxinerama1"
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libxmmsclient6" {>= "0.7DrNo"}
+  "deb-libxnvctrl0"
+]
+conflicts: [
+  "deb-conky-cli"
+  "deb-conky-std"
+]
+extra-source "conky-all_1.10.8-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/conky/conky-all_1.10.8-1+b1_amd64.deb"
+}

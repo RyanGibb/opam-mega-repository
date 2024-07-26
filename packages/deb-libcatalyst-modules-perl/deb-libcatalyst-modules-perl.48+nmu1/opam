@@ -1,0 +1,45 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcatalyst-modules-perl_48+nmu1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcatalyst-modules-perl"]
+]
+depends: [
+  "deb-libcatalyst-action-renderview-perl"
+  "deb-libcatalyst-authentication-credential-authen-simple-perl"
+  "deb-libcatalyst-authentication-store-dbix-class-perl"
+  "deb-libcatalyst-component-instancepercontext-perl"
+  "deb-libcatalyst-controller-formbuilder-perl"
+  "deb-libcatalyst-controller-html-formfu-perl"
+  "deb-libcatalyst-log-log4perl-perl"
+  "deb-libcatalyst-model-dbi-perl"
+  "deb-libcatalyst-model-dbic-schema-perl"
+  "deb-libcatalyst-plugin-authentication-perl"
+  "deb-libcatalyst-plugin-authorization-acl-perl"
+  "deb-libcatalyst-plugin-authorization-roles-perl"
+  "deb-libcatalyst-plugin-cache-perl"
+  "deb-libcatalyst-plugin-cache-store-fastmmap-perl"
+  "deb-libcatalyst-plugin-configloader-perl"
+  "deb-libcatalyst-plugin-i18n-perl"
+  "deb-libcatalyst-plugin-session-perl"
+  "deb-libcatalyst-plugin-session-state-cookie-perl"
+  "deb-libcatalyst-plugin-session-store-cache-perl"
+  "deb-libcatalyst-plugin-session-store-dbi-perl"
+  "deb-libcatalyst-plugin-session-store-dbic-perl"
+  "deb-libcatalyst-plugin-session-store-delegate-perl"
+  "deb-libcatalyst-plugin-session-store-fastmmap-perl"
+  "deb-libcatalyst-plugin-session-store-file-perl"
+  "deb-libcatalyst-plugin-stacktrace-perl"
+  "deb-libcatalyst-plugin-static-simple-perl"
+  "deb-libcatalyst-plugin-subrequest-perl"
+  "deb-libcatalyst-plugin-unicode-perl"
+  "deb-libcatalyst-view-email-perl"
+  "deb-libcatalyst-view-json-perl"
+  "deb-libcatalyst-view-mason-perl"
+  "deb-libcatalyst-view-tt-perl"
+  "deb-libcatalystx-component-traits-perl"
+]
+extra-source "libcatalyst-modules-perl_48+nmu1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libcatalyst-modules-perl/libcatalyst-modules-perl_48+nmu1_all.deb"
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libavdevice-dev_7:4.1.9-0+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libavdevice-dev"]
+]
+depends: [
+  "deb-libavcodec-dev" {= "7-4.1.9-0+deb10u1"}
+  "deb-libavdevice58" {= "7-4.1.9-0+deb10u1"}
+  "deb-libavfilter-dev" {= "7-4.1.9-0+deb10u1"}
+  "deb-libavformat-dev" {= "7-4.1.9-0+deb10u1"}
+  "deb-libavutil-dev" {= "7-4.1.9-0+deb10u1"}
+  "deb-libpostproc-dev" {= "7-4.1.9-0+deb10u1"}
+  "deb-libswresample-dev" {= "7-4.1.9-0+deb10u1"}
+  "deb-libswscale-dev" {= "7-4.1.9-0+deb10u1"}
+]
+extra-source "libavdevice-dev_7:4.1.9-0+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/ffmpeg/libavdevice-dev_4.1.9-0+deb10u1_amd64.deb"
+}

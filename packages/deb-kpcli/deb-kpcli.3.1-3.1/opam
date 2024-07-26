@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kpcli_3.1-3.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kpcli"]
+]
+depends: [
+  "deb-libclone-perl"
+  "deb-libcrypt-rijndael-perl"
+  "deb-libfile-keepass-perl"
+  "deb-libsort-naturally-perl"
+  "deb-libterm-readkey-perl"
+  "deb-libterm-readline-gnu-perl"
+  "deb-libterm-shellui-perl"
+  "deb-perl-any"
+]
+extra-source "kpcli_3.1-3.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kpcli/kpcli_3.1-3.1_all.deb"
+}

@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i baloo-kf5_5.78.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r baloo-kf5"]
+]
+depends: [
+  "deb-kio"
+  "deb-libc6" {>= "2.14"}
+  "deb-libkf5baloo5" {>= "5.16.0"}
+  "deb-libkf5balooengine5" {>= "5.78.0"}
+  "deb-libkf5configcore5" {>= "5.78.0~"}
+  "deb-libkf5coreaddons5" {>= "5.78.0~"}
+  "deb-libkf5crash5" {>= "5.78.0~"}
+  "deb-libkf5dbusaddons5" {>= "5.78.0~"}
+  "deb-libkf5filemetadata3" {>= "5.78.0~"}
+  "deb-libkf5i18n5" {>= "5.78.0~"}
+  "deb-libkf5idletime5" {>= "5.78.0~"}
+  "deb-libkf5kiocore5" {>= "5.78.0~"}
+  "deb-libkf5solid5" {>= "5.78.0~"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.14.0~"}
+  "deb-libqt5qml5" {>= "5.14.0~"}
+  "deb-libstdc++6" {>= "4.4.0"}
+  ("deb-libqt5gui5" {>= "5.14.0~"} | "deb- libqt5gui5-gles" {>= "5.14.0~"})
+]
+extra-source "baloo-kf5_5.78.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/baloo-kf5/baloo-kf5_5.78.0-3_amd64.deb"
+}

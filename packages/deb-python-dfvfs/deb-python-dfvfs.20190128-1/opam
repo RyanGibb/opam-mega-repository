@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-dfvfs_20190128-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-dfvfs"]
+]
+depends: [
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7~"}
+  "deb-python-crypto" {>= "2.6.0"}
+  "deb-python-dfdatetime" {>= "20180324"}
+  "deb-python-dtfabric" {>= "20170524"}
+  "deb-python-fsapfs" {>= "20181205"}
+  "deb-python-libbde" {>= "20140531"}
+  "deb-python-libewf" {>= "20131210"}
+  "deb-python-libfsntfs" {>= "20151130"}
+  "deb-python-libfvde" {>= "20160719"}
+  "deb-python-libfwnt" {>= "20160418"}
+  "deb-python-libqcow" {>= "20131204"}
+  "deb-python-libsigscan" {>= "20150627"}
+  "deb-python-libsmdev" {>= "20140529"}
+  "deb-python-libsmraw" {>= "20140612"}
+  "deb-python-libvhdi" {>= "20131210"}
+  "deb-python-libvmdk" {>= "20140421"}
+  "deb-python-libvshadow" {>= "20160109"}
+  "deb-python-libvslvm" {>= "20160109"}
+  "deb-python-lzma"
+  "deb-python-protobuf"
+  "deb-python-six" {>= "1.1.0"}
+  "deb-python-tsk" {>= "20160721"}
+]
+extra-source "python-dfvfs_20190128-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dfvfs/python-dfvfs_20190128-1_all.deb"
+}

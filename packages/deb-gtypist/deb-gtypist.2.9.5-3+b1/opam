@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gtypist_2.9.5-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gtypist"]
+]
+depends: [
+  "deb-fortune-mod"
+  "deb-libc6" {>= "2.14"}
+  "deb-libncursesw6" {>= "6"}
+  "deb-libtinfo6" {>= "6"}
+]
+conflicts: [
+  "deb-typist"
+]
+extra-source "gtypist_2.9.5-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gtypist/gtypist_2.9.5-3+b1_amd64.deb"
+}

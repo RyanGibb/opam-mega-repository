@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsemanage2_3.4-1+b5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsemanage2"]
+]
+depends: [
+  "deb-libaudit1" {>= "1-2.2.1"}
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.34"}
+  "deb-libselinux1" {>= "3.4"}
+  "deb-libsemanage-common" {>= "3.4-1"}
+  "deb-libsepol2" {>= "3.4"}
+]
+extra-source "libsemanage2_3.4-1+b5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libs/libsemanage/libsemanage2_3.4-1+b5_amd64.deb"
+}

@@ -1,0 +1,46 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cyrus-common_3.0.8-6+deb10u6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cyrus-common"]
+]
+depends: [
+  "deb-adduser"
+  "deb-db-upgrade-util"
+  "deb-db-util"
+  "deb-e2fsprogs"
+  "deb-gawk"
+  "deb-libc6" {>= "2.15"}
+  "deb-libclamav9" {>= "0.101.4"}
+  "deb-libcom-err2" {>= "1.43.9"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgssapi-krb5-2" {>= "1.6.dfsg.2"}
+  "deb-libical3" {>= "3.0.0"}
+  "deb-libicu63" {>= "63.1-1~"}
+  "deb-libjansson4" {>= "2.3"}
+  "deb-libk5crypto3" {>= "1.6.dfsg.2"}
+  "deb-libkrb5-3" {>= "1.6.dfsg.2"}
+  "deb-libkrb5support0" {>= "1.7dfsg~beta2"}
+  "deb-libldap-2-4-2" {>= "2.4.7"}
+  "deb-libpcre3"
+  "deb-libsasl2-2" {>= "2.1.27+dfsg"}
+  "deb-libsasl2-modules"
+  "deb-libsnmp30" {>= "5.7.3+dfsg"}
+  "deb-libsqlite3-0" {>= "3.6.0"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libwrap0" {>= "7.6-4~"}
+  "deb-libxapian30" {>= "1.4.11~"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libzephyr4"
+  "deb-lsb-base"
+  "deb-netbase" {>= "4.07"}
+  "deb-perl-any"
+  "deb-zlib1g" {>= "1-1.2.6"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-default-mta" | "deb- mail-transport-agent")
+]
+extra-source "cyrus-common_3.0.8-6+deb10u6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cyrus-imapd/cyrus-common_3.0.8-6+deb10u6_amd64.deb"
+}

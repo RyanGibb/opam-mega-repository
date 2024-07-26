@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-debug-inspector_0.0.2-1.1+b5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-debug-inspector"]
+]
+depends: [
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libgmp10"
+  "deb-libruby2-5" {>= "2.5.0~preview1"}
+  "deb-ruby" {< "1-2.6~"}
+  "deb-ruby" {>= "1-2.5~0"}
+]
+extra-source "ruby-debug-inspector_0.0.2-1.1+b5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-debug-inspector/ruby-debug-inspector_0.0.2-1.1+b5_amd64.deb"
+}

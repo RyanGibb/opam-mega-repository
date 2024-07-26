@@ -1,0 +1,42 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i haskell-platform-prof_2014.2.0.0.debian8_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r haskell-platform-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-haskell-platform"
+  "deb-libghc-async-prof"
+  "deb-libghc-attoparsec-prof"
+  "deb-libghc-case-insensitive-prof"
+  "deb-libghc-fgl-prof"
+  "deb-libghc-gluraw-prof"
+  "deb-libghc-glut-prof"
+  "deb-libghc-hashable-prof"
+  "deb-libghc-haskell-src-prof"
+  "deb-libghc-html-prof"
+  "deb-libghc-http-prof"
+  "deb-libghc-hunit-prof"
+  "deb-libghc-network-prof"
+  "deb-libghc-opengl-prof"
+  "deb-libghc-openglraw-prof"
+  "deb-libghc-parallel-prof"
+  "deb-libghc-primitive-prof"
+  "deb-libghc-quickcheck2-prof"
+  "deb-libghc-random-prof"
+  "deb-libghc-regex-base-prof"
+  "deb-libghc-regex-compat-prof"
+  "deb-libghc-regex-posix-prof"
+  "deb-libghc-split-prof"
+  "deb-libghc-syb-prof"
+  "deb-libghc-transformers-prof"
+  "deb-libghc-unordered-containers-prof"
+  "deb-libghc-vector-prof"
+  "deb-libghc-xhtml-prof"
+  "deb-libghc-zlib-prof"
+]
+extra-source "haskell-platform-prof_2014.2.0.0.debian8_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-platform/haskell-platform-prof_2014.2.0.0.debian8_all.deb"
+}

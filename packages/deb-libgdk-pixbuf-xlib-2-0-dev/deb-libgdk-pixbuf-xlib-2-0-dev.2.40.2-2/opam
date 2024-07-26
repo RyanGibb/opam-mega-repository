@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgdk-pixbuf-xlib-2.0-dev_2.40.2-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgdk-pixbuf-xlib-2.0-dev"]
+]
+depends: [
+  "deb-libgdk-pixbuf-2-0-dev" {>= "2.40.0"}
+  "deb-libgdk-pixbuf-xlib-2-0-0" {= "2.40.2-2"}
+  "deb-libglib2-0-dev" {>= "2.38.0"}
+  "deb-libx11-dev"
+  "deb-shared-mime-info"
+]
+extra-source "libgdk-pixbuf-xlib-2.0-dev_2.40.2-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gdk-pixbuf-xlib/libgdk-pixbuf-xlib-2.0-dev_2.40.2-2_amd64.deb"
+}

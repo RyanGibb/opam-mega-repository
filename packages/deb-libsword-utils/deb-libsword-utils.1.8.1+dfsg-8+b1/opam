@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsword-utils_1.8.1+dfsg-8+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsword-utils"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libclucene-core1v5" {>= "2.3.3.4+dfsg"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libicu63" {>= "63.1-1~"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libsword-1-8-1"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+conflicts: [
+  "deb-libsword6"
+  "deb-libsword7"
+  "deb-libsword8"
+]
+extra-source "libsword-utils_1.8.1+dfsg-8+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sword/libsword-utils_1.8.1+dfsg-8+b1_amd64.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libwx-perl_1:0.9932-8+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libwx-perl"]
+]
+depends: [
+  "deb-libalien-wxwidgets-perl"
+  "deb-libalien-wxwidgets-perl" {>= "0.69+dfsg-4~"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libwxbase3-2-1" {>= "3.2.2+dfsg"}
+  "deb-libwxgtk-media3-2-1" {>= "3.2.2+dfsg"}
+  "deb-libwxgtk3-2-1" {>= "3.2.1+dfsg-2"}
+  "deb-perl" {>= "5.36.0-7"}
+  "deb-perl-base"
+]
+extra-source "libwx-perl_1:0.9932-8+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libw/libwx-perl/libwx-perl_0.9932-8+b1_amd64.deb"
+}

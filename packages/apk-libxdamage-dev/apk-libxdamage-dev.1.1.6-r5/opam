@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libxdamage-dev-1.1.6-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libxdamage-dev"]
+]
+depends: [
+  "apk-libx11-dev" {= "1.8.9-r1"}
+  "apk-libxdamage" {= "1.1.6-r5"}
+  "apk-libxfixes-dev" {= "6.0.1-r4"}
+  "apk-pkgconf" {= "2.2.0-r0"}
+  "apk-xorgproto" {= "2024.1-r0"}
+]
+extra-source "libxdamage-dev-1.1.6-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libxdamage-dev-1.1.6-r5.apk"
+}

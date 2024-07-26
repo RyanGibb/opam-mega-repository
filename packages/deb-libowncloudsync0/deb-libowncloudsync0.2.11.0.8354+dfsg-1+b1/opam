@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libowncloudsync0_2.11.0.8354+dfsg-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libowncloudsync0"]
+]
+depends: [
+  "deb-libc6" {>= "2.33"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5keychain1" {>= "0.7.0"}
+  "deb-libqt5network5" {>= "5.14.1"}
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-libsqlite3-0" {>= "3.12.0"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+]
+extra-source "libowncloudsync0_2.11.0.8354+dfsg-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/owncloud-client/libowncloudsync0_2.11.0.8354+dfsg-1+b1_amd64.deb"
+}

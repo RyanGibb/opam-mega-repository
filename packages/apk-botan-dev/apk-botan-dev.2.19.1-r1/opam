@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add botan-dev-2.19.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del botan-dev"]
+]
+depends: [
+  "apk-boost-dev" {= "1.78.0-r1"}
+  "apk-botan-libs" {= "2.19.1-r1"}
+  "apk-bzip2-dev" {= "1.0.8-r1"}
+  "apk-openssl-dev" {= "1.1.1w-r1"}
+  "apk-pkgconf" {= "1.8.1-r0"}
+  "apk-sqlite-dev" {= "3.40.1-r1"}
+  "apk-xz-dev" {= "5.2.5-r1"}
+  "apk-zlib-dev" {= "1.2.12-r3"}
+]
+extra-source "botan-dev-2.19.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/botan-dev-2.19.1-r1.apk"
+}

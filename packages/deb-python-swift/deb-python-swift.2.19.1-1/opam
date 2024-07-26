@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-swift_2.19.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-swift"]
+]
+depends: [
+  "deb-adduser"
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7~"}
+  "deb-python-cryptography"
+  "deb-python-dnspython"
+  "deb-python-eventlet"
+  "deb-python-greenlet"
+  "deb-python-ipaddress"
+  "deb-python-lxml"
+  "deb-python-netifaces"
+  "deb-python-openssl"
+  "deb-python-pastedeploy"
+  "deb-python-pyeclib"
+  "deb-python-requests"
+  "deb-python-six" {>= "1.9.0"}
+  "deb-python-xattr"
+]
+extra-source "python-swift_2.19.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/swift/python-swift_2.19.1-1_all.deb"
+}

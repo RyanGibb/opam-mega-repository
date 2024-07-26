@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-dns-dev_4.0.1-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-dns-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.14"}
+  "deb-libghc-async-dev"
+  "deb-libghc-attoparsec-dev"
+  "deb-libghc-auto-update-dev"
+  "deb-libghc-base16-bytestring-dev"
+  "deb-libghc-base64-bytestring-dev"
+  "deb-libghc-cryptonite-dev"
+  "deb-libghc-hourglass-dev"
+  "deb-libghc-iproute-dev"
+  "deb-libghc-network-dev"
+  "deb-libghc-psqueues-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-dns-dev_4.0.1-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-dns/libghc-dns-dev_4.0.1-1+b2_amd64.deb"
+}

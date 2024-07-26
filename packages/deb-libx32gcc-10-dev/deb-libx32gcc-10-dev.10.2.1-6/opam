@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libx32gcc-10-dev_10.2.1-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libx32gcc-10-dev"]
+]
+depends: [
+  "deb-gcc-10-base" {= "10.2.1-6"}
+  "deb-lib32asan6" {>= "10.2.1-6"}
+  "deb-lib32atomic1" {>= "10.2.1-6"}
+  "deb-lib32gcc-s1" {>= "10.2.1-6"}
+  "deb-lib32gomp1" {>= "10.2.1-6"}
+  "deb-lib32itm1" {>= "10.2.1-6"}
+  "deb-lib32quadmath0" {>= "10.2.1-6"}
+  "deb-lib32ubsan1" {>= "10.2.1-6"}
+  "deb-libx32asan6" {>= "10.2.1-6"}
+  "deb-libx32atomic1" {>= "10.2.1-6"}
+  "deb-libx32gcc-s1" {>= "10.2.1-6"}
+  "deb-libx32gomp1" {>= "10.2.1-6"}
+  "deb-libx32itm1" {>= "10.2.1-6"}
+  "deb-libx32quadmath0" {>= "10.2.1-6"}
+  "deb-libx32ubsan1" {>= "10.2.1-6"}
+]
+extra-source "libx32gcc-10-dev_10.2.1-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gcc-10/libx32gcc-10-dev_10.2.1-6_amd64.deb"
+}

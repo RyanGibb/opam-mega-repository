@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i graphite-web_1.1.8-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r graphite-web"]
+]
+depends: [
+  "deb-adduser"
+  "deb-python3-any"
+  "deb-python3-cairo"
+  "deb-python3-cairocffi"
+  "deb-python3-django"
+  "deb-python3-django-tagging"
+  "deb-python3-pyparsing"
+  "deb-python3-simplejson"
+  "deb-python3-six"
+  "deb-python3-tz"
+  "deb-python3-urllib3"
+  "deb-python3-whisper" {>= "1.1.4"}
+]
+extra-source "graphite-web_1.1.8-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/graphite-web/graphite-web_1.1.8-2_all.deb"
+}

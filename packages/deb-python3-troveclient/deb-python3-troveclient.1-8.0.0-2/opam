@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-troveclient_1:8.0.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-troveclient"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-babel"
+  "deb-python3-keystoneauth1"
+  "deb-python3-mistralclient"
+  "deb-python3-openstackclient"
+  "deb-python3-osc-lib"
+  "deb-python3-oslo-i18n"
+  "deb-python3-oslo-utils"
+  "deb-python3-pbr"
+  "deb-python3-prettytable"
+  "deb-python3-requests"
+  "deb-python3-simplejson"
+  "deb-python3-six"
+  "deb-python3-swiftclient"
+]
+extra-source "python3-troveclient_1:8.0.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-troveclient/python3-troveclient_8.0.0-2_all.deb"
+}

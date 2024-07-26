@@ -1,0 +1,87 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libefl-all-dev_1.26.3-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libefl-all-dev"]
+]
+depends: [
+  "deb-libblkid-dev"
+  "deb-libc6" {>= "2.34"}
+  "deb-libcurl4-openssl-dev"
+  "deb-libdbus-1-dev"
+  "deb-libecore-audio1" {= "1.26.3-1+b1"}
+  "deb-libecore-con1" {= "1.26.3-1+b1"}
+  "deb-libecore-drm2-1" {= "1.26.3-1+b1"}
+  "deb-libecore-evas1" {= "1.26.3-1+b1"}
+  "deb-libecore-fb1" {= "1.26.3-1+b1"}
+  "deb-libecore-file1" {= "1.26.3-1+b1"}
+  "deb-libecore-imf1" {= "1.26.3-1+b1"}
+  "deb-libecore-input1" {= "1.26.3-1+b1"}
+  "deb-libecore-ipc1" {= "1.26.3-1+b1"}
+  "deb-libecore-wl2-1" {= "1.26.3-1+b1"}
+  "deb-libecore-x1" {= "1.26.3-1+b1"}
+  "deb-libecore1" {= "1.26.3-1+b1"}
+  "deb-libector1" {= "1.26.3-1+b1"}
+  "deb-libedje-bin" {= "1.26.3-1+b1"}
+  "deb-libedje1" {= "1.26.3-1+b1"}
+  "deb-libeet1" {= "1.26.3-1+b1"}
+  "deb-libeeze1" {= "1.26.3-1+b1"}
+  "deb-libefreet1a" {= "1.26.3-1+b1"}
+  "deb-libeina1a" {= "1.26.3-1+b1"}
+  "deb-libeio1" {= "1.26.3-1+b1"}
+  "deb-libelementary1" {= "1.26.3-1+b1"}
+  "deb-libelput1" {= "1.26.3-1+b1"}
+  "deb-libembryo1" {= "1.26.3-1+b1"}
+  "deb-libemile1" {= "1.26.3-1+b1"}
+  "deb-libemotion1" {= "1.26.3-1+b1"}
+  "deb-libeolian-bin" {= "1.26.3-1+b1"}
+  "deb-libeolian1" {= "1.26.3-1+b1"}
+  "deb-libethumb-client1" {= "1.26.3-1+b1"}
+  "deb-libethumb1" {= "1.26.3-1+b1"}
+  "deb-libevas1" {= "1.26.3-1+b1"}
+  "deb-libevas1-engines-wayland" {>= "1.26.3-0~eo"}
+  "deb-libfontconfig1-dev"
+  "deb-libfreetype6-dev"
+  "deb-libfribidi-dev"
+  "deb-libgbm-dev"
+  "deb-libglib2-0-dev"
+  "deb-libgstreamer-plugins-base1-0-dev"
+  "deb-libgstreamer1-0-dev"
+  "deb-libharfbuzz-dev"
+  "deb-libinput-dev"
+  "deb-libjpeg-dev"
+  "deb-liblua5-2-dev"
+  "deb-liblz4-dev"
+  "deb-libmount-dev"
+  "deb-libpng-dev"
+  "deb-libpulse-dev"
+  "deb-libsndfile1-dev"
+  "deb-libssl-dev"
+  "deb-libsystemd-dev"
+  "deb-libudev-dev"
+  "deb-libunwind-dev"
+  "deb-libwayland-dev"
+  "deb-libx11-dev"
+  "deb-libx11-xcb-dev"
+  "deb-libxcb1-dev"
+  "deb-libxcomposite-dev"
+  "deb-libxcursor-dev"
+  "deb-libxdamage-dev"
+  "deb-libxext-dev"
+  "deb-libxi-dev"
+  "deb-libxinerama-dev"
+  "deb-libxkbcommon-x11-dev"
+  "deb-libxrandr-dev"
+  "deb-libxrender-dev"
+  "deb-libxss-dev"
+  "deb-libxtst-dev"
+  "deb-mesa-common-dev"
+  "deb-pkg-config"
+  "deb-python3"
+  "deb-x11proto-xext-dev"
+  "deb-zlib1g-dev"
+]
+extra-source "libefl-all-dev_1.26.3-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/efl/libefl-all-dev_1.26.3-1+b1_amd64.deb"
+}

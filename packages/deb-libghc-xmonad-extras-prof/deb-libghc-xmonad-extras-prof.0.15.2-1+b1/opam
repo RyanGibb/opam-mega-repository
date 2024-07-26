@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-xmonad-extras-prof_0.15.2-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-xmonad-extras-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-alsa-mixer-prof"
+  "deb-libghc-hint-prof"
+  "deb-libghc-libmpd-prof"
+  "deb-libghc-network-prof"
+  "deb-libghc-regex-posix-prof"
+  "deb-libghc-x11-prof"
+  "deb-libghc-xmonad-contrib-prof"
+  "deb-libghc-xmonad-extras-dev" {= "0.15.2-1+b1"}
+  "deb-libghc-xmonad-prof"
+]
+extra-source "libghc-xmonad-extras-prof_0.15.2-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xmonad-extras/libghc-xmonad-extras-prof_0.15.2-1+b1_amd64.deb"
+}

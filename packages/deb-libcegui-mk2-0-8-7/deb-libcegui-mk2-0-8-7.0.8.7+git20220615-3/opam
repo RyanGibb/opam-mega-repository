@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcegui-mk2-0.8.7_0.8.7+git20220615-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcegui-mk2-0.8.7"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libcegui-mk2-data" {= "0.8.7+git20220615-3"}
+  "deb-libdevil1c2"
+  "deb-libegl1"
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libfreeimage3" {>= "3.18.0+ds2"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libfribidi0" {>= "0.19.2"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgles1" {>= "1.0.0+git20180308"}
+  "deb-libglew2-2" {>= "2.2.0-4+b1"}
+  "deb-libglx0"
+  "deb-liblua5-1-0"
+  "deb-libminizip1" {>= "1.1"}
+  "deb-libogre1-12-10" {>= "1.12.10+dfsg1-1~"}
+  "deb-libopengl0"
+  "deb-libsilly" {>= "0.1.0-8.1"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libtinyxml2-6-2v5" {>= "2.6.2"}
+  "deb-libxerces-c3-2"
+  "deb-libxml2" {>= "2.7.4"}
+]
+conflicts: [
+  "deb-libcegui-mk2-0-8-4"
+  "deb-libcegui-mk2-0c2a"
+]
+extra-source "libcegui-mk2-0.8.7_0.8.7+git20220615-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cegui-mk2/libcegui-mk2-0.8.7_0.8.7+git20220615-3_amd64.deb"
+}

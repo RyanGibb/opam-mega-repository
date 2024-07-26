@@ -1,0 +1,49 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pki-server_10.10.2-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pki-server"]
+]
+depends: [
+  "deb-adduser"
+  "deb-dogtag-pki-server-theme" {>= "10.10.2-3"}
+  "deb-keyutils"
+  "deb-ldap-utils"
+  "deb-libactivation-java"
+  "deb-libatk-wrapper-java"
+  "deb-libcommons-collections3-java"
+  "deb-libcommons-dbcp-java"
+  "deb-libcommons-pool-java"
+  "deb-libgeronimo-annotation-1-3-spec-java"
+  "deb-libjackson-json-java"
+  "deb-libjackson2-annotations-java"
+  "deb-libjackson2-jaxrs-providers-java"
+  "deb-libjaxb-java"
+  "deb-libjboss-logging-java"
+  "deb-libjna-java"
+  "deb-libjs-jquery"
+  "deb-libjs-underscore"
+  "deb-libsymkey-java" {= "10.10.2-3"}
+  "deb-libtomcatjss-java" {>= "7.6.1~"}
+  "deb-libxml-commons-external-java"
+  "deb-libxml-commons-resolver1-1-java"
+  "deb-openssl"
+  "deb-pki-base" {= "10.10.2-3"}
+  "deb-pki-base-java" {= "10.10.2-3"}
+  "deb-pki-tools" {= "10.10.2-3"}
+  "deb-python3-any"
+  "deb-python3-cryptography"
+  "deb-python3-ipahealthcheck-core"
+  "deb-python3-ldap"
+  "deb-python3-lxml"
+  "deb-python3-selinux"
+  "deb-tomcat9-user"
+  "deb-velocity"
+]
+conflicts: [
+  "deb-libtomcat7-java"
+]
+extra-source "pki-server_10.10.2-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dogtag-pki/pki-server_10.10.2-3_amd64.deb"
+}

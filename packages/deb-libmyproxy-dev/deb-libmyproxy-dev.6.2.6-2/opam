@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmyproxy-dev_6.2.6-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmyproxy-dev"]
+]
+depends: [
+  "deb-libglobus-common-dev" {>= "14"}
+  "deb-libglobus-gsi-callback-dev" {>= "4"}
+  "deb-libglobus-gsi-cert-utils-dev" {>= "8"}
+  "deb-libglobus-gsi-credential-dev" {>= "5"}
+  "deb-libglobus-gsi-proxy-core-dev" {>= "6"}
+  "deb-libglobus-gsi-sysconfig-dev" {>= "5"}
+  "deb-libglobus-gss-assist-dev" {>= "8"}
+  "deb-libglobus-gssapi-gsi-dev" {>= "9"}
+  "deb-libmyproxy6" {= "6.2.6-2"}
+]
+extra-source "libmyproxy-dev_6.2.6-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/myproxy/libmyproxy-dev_6.2.6-2_amd64.deb"
+}

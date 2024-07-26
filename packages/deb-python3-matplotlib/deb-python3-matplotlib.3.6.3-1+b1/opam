@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-matplotlib_3.6.3-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-matplotlib"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgcc-s1" {>= "3.3.1"}
+  "deb-libjs-jquery"
+  "deb-libjs-jquery-ui"
+  "deb-libqhull-r8-0" {>= "2020.1"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-python-matplotlib-data" {>= "3.6.3"}
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-any"
+  "deb-python3-contourpy"
+  "deb-python3-cycler" {>= "0.10.0"}
+  "deb-python3-dateutil"
+  "deb-python3-fonttools"
+  "deb-python3-kiwisolver"
+  "deb-python3-numpy"
+  "deb-python3-numpy" {>= "1-1.22.0"}
+  "deb-python3-packaging"
+  "deb-python3-pil"
+  "deb-python3-pil-imagetk"
+  "deb-python3-pyparsing" {>= "1.5.6"}
+  "deb-python3-six" {>= "1.4"}
+]
+extra-source "python3-matplotlib_3.6.3-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/matplotlib/python3-matplotlib_3.6.3-1+b1_amd64.deb"
+}

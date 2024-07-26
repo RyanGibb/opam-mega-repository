@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i deepin-terminal_5.0.0+ds1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r deepin-terminal"]
+]
+depends: [
+  "deb-dbus-x11"
+  "deb-deepin-menu"
+  "deb-expect"
+  "deb-libc6" {>= "2.29"}
+  "deb-libcairo2" {>= "1.14.0"}
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libgee-0-8-2" {>= "0.8.3"}
+  "deb-libglib2-0-0" {>= "2.40.0"}
+  "deb-libgtk-3-0" {>= "3.21.4"}
+  "deb-libjson-glib-1-0-0" {>= "1.5.2"}
+  "deb-libpango-1-0-0" {>= "1.22.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.22.0"}
+  "deb-librsvg2-2" {>= "2.14.4"}
+  "deb-libsecret-1-0" {>= "0.7"}
+  "deb-libvte-2-91-0" {>= "0.51.90"}
+  "deb-libwnck-3-0" {>= "2.91.6"}
+  "deb-libx11-6"
+  "deb-lrzsz"
+  "deb-zssh"
+]
+extra-source "deepin-terminal_5.0.0+ds1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/deepin-terminal/deepin-terminal_5.0.0+ds1-3_amd64.deb"
+}

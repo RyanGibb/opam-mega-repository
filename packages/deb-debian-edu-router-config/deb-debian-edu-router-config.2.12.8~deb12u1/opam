@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i debian-edu-router-config_2.12.8~deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r debian-edu-router-config"]
+]
+depends: [
+  "deb-ifupdown"
+  "deb-iproute2"
+  "deb-iptraf-ng"
+  "deb-procps"
+  "deb-uif" {>= "1.99.0-3~"}
+  "deb-vlan"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+conflicts: [
+  "deb-connman"
+  "deb-firehol"
+  "deb-ifupdown2"
+  "deb-netplan-io"
+  "deb-network-manager"
+  "deb-shorewall"
+  "deb-ufw"
+]
+extra-source "debian-edu-router-config_2.12.8~deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/debian-edu-router/debian-edu-router-config_2.12.8~deb12u1_all.deb"
+}

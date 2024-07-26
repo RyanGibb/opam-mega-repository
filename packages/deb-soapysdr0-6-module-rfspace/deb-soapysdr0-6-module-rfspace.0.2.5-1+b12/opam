@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i soapysdr0.6-module-rfspace_0.2.5-1+b12_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r soapysdr0.6-module-rfspace"]
+]
+depends: [
+  "deb-libboost-chrono1-67-0"
+  "deb-libboost-system1-67-0"
+  "deb-libboost-thread1-67-0"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libsoapysdr0-6"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-soapyosmo-common0-6" {= "0.2.5-1+b12"}
+]
+extra-source "soapysdr0.6-module-rfspace_0.2.5-1+b12_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/soapyosmo/soapysdr0.6-module-rfspace_0.2.5-1+b12_amd64.deb"
+}

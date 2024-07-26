@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cnvkit_0.9.8-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cnvkit"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-biopython"
+  "deb-python3-matplotlib"
+  "deb-python3-numpy"
+  "deb-python3-pandas"
+  "deb-python3-pomegranate"
+  "deb-python3-pyfaidx"
+  "deb-python3-pysam"
+  "deb-python3-reportlab"
+  "deb-python3-scipy"
+  "deb-python3-sklearn"
+  "deb-r-bioc-dnacopy"
+]
+extra-source "cnvkit_0.9.8-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cnvkit/cnvkit_0.9.8-1_amd64.deb"
+}

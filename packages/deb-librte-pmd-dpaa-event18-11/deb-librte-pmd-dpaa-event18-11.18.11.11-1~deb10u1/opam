@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librte-pmd-dpaa-event18.11_18.11.11-1~deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librte-pmd-dpaa-event18.11"]
+]
+depends: [
+  "deb-libbsd0" {>= "0.0"}
+  "deb-libc6" {>= "2.15"}
+  "deb-libnuma1" {>= "2.0.11"}
+  "deb-librte-bus-dpaa18-11"
+  "deb-librte-bus-pci18-11" {>= "17.11"}
+  "deb-librte-bus-vdev18-11" {>= "17.11"}
+  "deb-librte-cmdline18-11" {>= "16.04"}
+  "deb-librte-common-dpaax18-11" {>= "18.11"}
+  "deb-librte-cryptodev18-11" {>= "16.04"}
+  "deb-librte-eal18-11" {>= "16.04"}
+  "deb-librte-ethdev18-11" {>= "16.07~rc1"}
+  "deb-librte-eventdev18-11" {>= "17.05"}
+  "deb-librte-hash18-11" {>= "16.04"}
+  "deb-librte-kvargs18-11" {>= "16.04"}
+  "deb-librte-mbuf18-11" {>= "16.04"}
+  "deb-librte-mempool-dpaa18-11"
+  "deb-librte-mempool18-11" {>= "16.07~rc1"}
+  "deb-librte-net18-11" {>= "16.11"}
+  "deb-librte-pci18-11" {>= "17.11"}
+  "deb-librte-pmd-dpaa18-11" {>= "18.08"}
+  "deb-librte-ring18-11" {>= "16.04"}
+  "deb-librte-timer18-11" {>= "16.04"}
+]
+conflicts: [
+  "deb-libdpdk0"
+]
+extra-source "librte-pmd-dpaa-event18.11_18.11.11-1~deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dpdk/librte-pmd-dpaa-event18.11_18.11.11-1~deb10u1_amd64.deb"
+}

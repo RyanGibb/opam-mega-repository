@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i prometheus_2.42.0+ds-5+b5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r prometheus"]
+]
+depends: [
+  "deb-adduser"
+  "deb-fonts-glyphicons-halflings"
+  "deb-libc6" {>= "2.34"}
+  "deb-libjs-bootstrap4"
+  "deb-libjs-eonasdan-bootstrap-datetimepicker"
+  "deb-libjs-jquery" {>= "3.5.1~"}
+  "deb-libjs-jquery-hotkeys"
+  "deb-libjs-moment"
+  "deb-libjs-moment-timezone"
+  "deb-libjs-mustache" {>= "2.3.0-1~"}
+  "deb-libjs-popper-js"
+  "deb-libjs-rickshaw"
+]
+extra-source "prometheus_2.42.0+ds-5+b5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/prometheus/prometheus_2.42.0+ds-5+b5_amd64.deb"
+}

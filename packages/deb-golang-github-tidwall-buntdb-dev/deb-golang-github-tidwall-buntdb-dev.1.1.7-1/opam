@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-tidwall-buntdb-dev_1.1.7-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-tidwall-buntdb-dev"]
+]
+depends: [
+  "deb-golang-github-tidwall-btree-dev" {>= "0.2.2"}
+  "deb-golang-github-tidwall-gjson-dev"
+  "deb-golang-github-tidwall-grect-dev"
+  "deb-golang-github-tidwall-match-dev"
+  "deb-golang-github-tidwall-rtree-dev"
+]
+extra-source "golang-github-tidwall-buntdb-dev_1.1.7-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-tidwall-buntdb/golang-github-tidwall-buntdb-dev_1.1.7-1_all.deb"
+}

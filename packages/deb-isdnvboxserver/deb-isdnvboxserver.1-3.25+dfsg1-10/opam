@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i isdnvboxserver_1:3.25+dfsg1-10_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r isdnvboxserver"]
+]
+depends: [
+  "deb-debconf"
+  "deb-isdnutils-base" {= "1-3.25+dfsg1-10"}
+  "deb-libc6" {>= "2.15"}
+  "deb-libtcl8-6" {>= "8.6.0"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-openbsd-inetd" | "deb- inet-superserver")
+]
+extra-source "isdnvboxserver_1:3.25+dfsg1-10_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/isdnutils/isdnvboxserver_3.25+dfsg1-10_amd64.deb"
+}

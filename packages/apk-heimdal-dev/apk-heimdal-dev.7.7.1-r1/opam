@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add heimdal-dev-7.7.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del heimdal-dev"]
+]
+depends: [
+  "apk-e2fsprogs-dev" {= "1.46.2-r1"}
+  "apk-heimdal-libs" {= "7.7.1-r1"}
+  "apk-openssl-dev" {= "1.1.1t-r2"}
+  "apk-pkgconf" {= "1.7.4-r1"}
+]
+extra-source "heimdal-dev-7.7.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/heimdal-dev-7.7.1-r1.apk"
+}

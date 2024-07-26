@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-wai-extra-dev_3.0.24.2-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-wai-extra-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libghc-aeson-dev"
+  "deb-libghc-ansi-terminal-dev"
+  "deb-libghc-base64-bytestring-dev"
+  "deb-libghc-case-insensitive-dev"
+  "deb-libghc-cookie-dev"
+  "deb-libghc-data-default-class-dev"
+  "deb-libghc-fast-logger-dev"
+  "deb-libghc-http-types-dev"
+  "deb-libghc-iproute-dev"
+  "deb-libghc-lifted-base-dev"
+  "deb-libghc-network-dev"
+  "deb-libghc-old-locale-dev"
+  "deb-libghc-resourcet-dev"
+  "deb-libghc-streaming-commons-dev"
+  "deb-libghc-stringsearch-dev"
+  "deb-libghc-unix-compat-dev"
+  "deb-libghc-vault-dev"
+  "deb-libghc-void-dev"
+  "deb-libghc-wai-dev"
+  "deb-libghc-wai-logger-dev"
+  "deb-libghc-word8-dev"
+  "deb-libghc-zlib-dev"
+  "deb-libgmp10"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libghc-wai-extra-dev_3.0.24.2-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-wai-extra/libghc-wai-extra-dev_3.0.24.2-2+b1_amd64.deb"
+}

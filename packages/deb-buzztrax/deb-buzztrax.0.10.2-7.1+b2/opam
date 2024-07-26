@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i buzztrax_0.10.2-7.1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r buzztrax"]
+]
+depends: [
+  "deb-gstreamer1-0-plugins-bad" {>= "1.1.0"}
+  "deb-gstreamer1-0-plugins-base" {>= "1.1.0"}
+  "deb-gstreamer1-0-plugins-good" {>= "1.1.0"}
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libclutter-1-0-0" {>= "1.11.10"}
+  "deb-libclutter-gtk-1-0-0" {>= "0.91.8"}
+  "deb-libfluidsynth3" {>= "2.0.5"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.39.4"}
+  "deb-libgsf-1-114" {>= "1.14.8"}
+  "deb-libgstreamer-plugins-base1-0-0" {>= "1.1.0"}
+  "deb-libgstreamer1-0-0" {>= "1.6.0"}
+  "deb-libgtk-3-0" {>= "3.9.10"}
+  "deb-libgudev-1-0-0" {>= "146"}
+  "deb-liborc-0-4-0" {>= "1-0.4.25"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libxml2" {>= "2.7.4"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-gstreamer1-0-pulseaudio" | "deb- gstreamer1-0-audiosink")
+]
+extra-source "buzztrax_0.10.2-7.1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/buzztrax/buzztrax_0.10.2-7.1+b2_amd64.deb"
+}

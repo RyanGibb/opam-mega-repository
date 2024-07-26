@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnome-photos_43.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnome-photos"]
+]
+depends: [
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libbabl-0-1-0" {>= "0.1.72"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo-gobject2" {>= "1.14.0"}
+  "deb-libcairo2" {>= "1.14.0"}
+  "deb-libdazzle-1-0-0" {>= "3.26.0"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.36.9"}
+  "deb-libgegl-0-4-0" {>= "1-0.4.0"}
+  "deb-libgeocode-glib-2-0" {>= "3.26.3"}
+  "deb-libgexiv2-2" {>= "0.14.0"}
+  "deb-libglib2-0-0" {>= "2.68.0"}
+  "deb-libgoa-1-0-0b" {>= "3.45.1"}
+  "deb-libgtk-3-0" {>= "3.22.16"}
+  "deb-libhandy-1-0" {>= "1.1.90"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libportal-gtk3-1" {>= "0.5"}
+  "deb-libportal1" {>= "0.3"}
+  "deb-libtracker-sparql-3-0-0" {>= "3.1.1"}
+  "deb-tracker" {>= "3.0"}
+  "deb-tracker-extract" {>= "3.0"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "gnome-photos_43.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnome-photos/gnome-photos_43.0-2_amd64.deb"
+}

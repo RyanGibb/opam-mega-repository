@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kodi-data_2:19.1+dfsg2-2+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kodi-data"]
+]
+depends: [
+  "deb-libjs-iscroll"
+  "deb-libjs-jquery"
+  "deb-mesa-utils"
+  "deb-python3-pil"
+  "deb-python3-pycryptodome"
+  "deb-x11-utils"
+]
+extra-source "kodi-data_2:19.1+dfsg2-2+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kodi/kodi-data_19.1+dfsg2-2+deb11u1_all.deb"
+}

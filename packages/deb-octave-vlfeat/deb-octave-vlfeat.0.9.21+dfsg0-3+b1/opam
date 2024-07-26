@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i octave-vlfeat_0.9.21+dfsg0-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r octave-vlfeat"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgomp1" {>= "4.2.1"}
+  "deb-liboctave6"
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-libvlfeat1" {>= "0.9.21+dfsg0-3+b1"}
+  "deb-octave" {>= "4.4.1"}
+]
+extra-source "octave-vlfeat_0.9.21+dfsg0-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/vlfeat/octave-vlfeat_0.9.21+dfsg0-3+b1_amd64.deb"
+}

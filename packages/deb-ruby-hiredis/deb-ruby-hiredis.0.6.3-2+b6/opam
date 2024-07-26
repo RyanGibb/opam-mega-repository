@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-hiredis_0.6.3-2+b6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-hiredis"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libhiredis0-14" {>= "0.14.0"}
+  "deb-libruby" {< "1-3.2~"}
+  "deb-libruby" {>= "1-3.1~0"}
+  "deb-libruby3-1" {>= "3.1.2"}
+  ("deb-ruby" | "deb- ruby-interpreter")
+]
+extra-source "ruby-hiredis_0.6.3-2+b6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-hiredis/ruby-hiredis_0.6.3-2+b6_amd64.deb"
+}

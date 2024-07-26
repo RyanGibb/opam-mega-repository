@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libode8_2:0.16.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libode8"]
+]
+depends: [
+  "deb-libc6" {>= "2.17"}
+  "deb-libccd2"
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "5"}
+]
+extra-source "libode8_2:0.16.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/ode/libode8_0.16.2-1_amd64.deb"
+}

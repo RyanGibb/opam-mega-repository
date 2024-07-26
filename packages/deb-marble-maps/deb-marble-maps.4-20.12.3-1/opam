@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i marble-maps_4:20.12.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r marble-maps"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5qml5" {>= "5.7.0~"}
+  "deb-libqt5widgets5" {>= "5.7.0~"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-marble-data" {>= "4-20.12.3-1"}
+  "deb-marble-plugins" {= "4-20.12.3-1"}
+  "deb-qml-module-qtgraphicaleffects"
+  "deb-qml-module-qtmultimedia"
+  "deb-qml-module-qtquick-controls"
+  "deb-qml-module-qtquick-controls2"
+  "deb-qml-module-qtquick-dialogs"
+  "deb-qml-module-qtquick-window2"
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+  ("deb-libqt5quick5" {>= "5.7.0~"} | "deb- libqt5quick5-gles" {>= "5.7.0~"})
+]
+extra-source "marble-maps_4:20.12.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/marble/marble-maps_20.12.3-1_amd64.deb"
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xen-utils-4.11_4.11.4+107-gef32c7afa2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xen-utils-4.11"]
+]
+depends: [
+  "deb-libc6" {>= "2.28"}
+  "deb-libncurses6" {>= "6"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-libxenevtchn1"
+  "deb-libxengnttab1"
+  "deb-libxenmisc4-11"
+  "deb-libxenstore3-0" {>= "4.2~"}
+  "deb-libxentoolcore1"
+  "deb-libxentoollog1"
+  "deb-libyajl2" {>= "2.0.4"}
+  "deb-xen-utils-common" {>= "4.11.4+107-gef32c7afa2-1"}
+]
+extra-source "xen-utils-4.11_4.11.4+107-gef32c7afa2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xen/xen-utils-4.11_4.11.4+107-gef32c7afa2-1_amd64.deb"
+}

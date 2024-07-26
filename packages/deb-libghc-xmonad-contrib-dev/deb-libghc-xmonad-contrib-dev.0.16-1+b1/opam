@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-xmonad-contrib-dev_0.16-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-xmonad-contrib-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-extensible-exceptions-dev"
+  "deb-libghc-old-locale-dev"
+  "deb-libghc-old-time-dev"
+  "deb-libghc-random-dev"
+  "deb-libghc-semigroups-dev"
+  "deb-libghc-utf8-string-dev"
+  "deb-libghc-x11-dev"
+  "deb-libghc-x11-xft-dev"
+  "deb-libghc-xmonad-dev"
+  "deb-libgmp10"
+  "deb-libx11-6"
+  "deb-libx11-dev"
+  "deb-libxext6"
+  "deb-libxft2" {> "2.1.1"}
+  "deb-libxinerama-dev"
+  "deb-libxinerama1"
+  "deb-libxrandr2"
+  "deb-libxss1"
+]
+conflicts: [
+  "deb-xmonadcontrib"
+]
+extra-source "libghc-xmonad-contrib-dev_0.16-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xmonad-contrib/libghc-xmonad-contrib-dev_0.16-1+b1_amd64.deb"
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i scid_1:4.6.4+dfsg1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r scid"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libstdc++6" {>= "6"}
+  "deb-libtcl8-6" {>= "8.6.0"}
+  "deb-python"
+  "deb-scid-data" {= "1-4.6.4+dfsg1-3"}
+  "deb-tcl"
+  "deb-tk"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "scid_1:4.6.4+dfsg1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/scid/scid_4.6.4+dfsg1-3_amd64.deb"
+}

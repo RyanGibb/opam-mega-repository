@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmathlib2-dev_20061220+dfsg3-4.4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmathlib2-dev"]
+]
+depends: [
+  "deb-cfortran" {>= "4.4-10"}
+  "deb-libkernlib1-dev" {= "20061220+dfsg3-4.4"}
+  "deb-libmathlib2-gfortran" {= "20061220+dfsg3-4.4"}
+  "deb-libpacklib1-dev" {= "20061220+dfsg3-4.4"}
+  ("deb-libblas-dev" | "deb- libatlas-base-dev" | "deb- libblas-3gf-so")
+  ("deb-libc6-dev" | "deb- libc-dev")
+  ("deb-liblapack-dev" | "deb- libatlas-base-dev" | "deb- liblapack-3gf-so")
+]
+conflicts: [
+  "deb-blas2-dev"
+  "deb-lapack2-dev"
+  "deb-lapack3-dev"
+  "deb-refblas3-dev"
+]
+extra-source "libmathlib2-dev_20061220+dfsg3-4.4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cernlib/libmathlib2-dev_20061220+dfsg3-4.4_amd64.deb"
+}

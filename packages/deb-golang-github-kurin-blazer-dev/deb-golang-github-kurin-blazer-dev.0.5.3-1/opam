@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-kurin-blazer-dev_0.5.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-kurin-blazer-dev"]
+]
+depends: [
+  "deb-golang-github-google-subcommands-dev"
+  "deb-golang-github-google-uuid-dev"
+  "deb-golang-github-grpc-ecosystem-grpc-gateway-dev"
+  "deb-golang-golang-x-net-dev"
+  "deb-golang-google-genproto-dev"
+  "deb-golang-google-grpc-dev"
+  "deb-golang-goprotobuf-dev"
+]
+extra-source "golang-github-kurin-blazer-dev_0.5.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-kurin-blazer/golang-github-kurin-blazer-dev_0.5.3-1_all.deb"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add llvm11-test-utils-11.1.0-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del llvm11-test-utils"]
+]
+depends: [
+  "apk-libgcc" {= "10.3.1_git20211027-r0"}
+  "apk-libstdc++" {= "10.3.1_git20211027-r0"}
+  "apk-musl" {= "1.2.2-r9"}
+  "apk-py3-setuptools" {= "52.0.0-r4"}
+  "apk-python3" {= "3.9.18-r0"}
+]
+extra-source "llvm11-test-utils-11.1.0-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/llvm11-test-utils-11.1.0-r5.apk"
+}

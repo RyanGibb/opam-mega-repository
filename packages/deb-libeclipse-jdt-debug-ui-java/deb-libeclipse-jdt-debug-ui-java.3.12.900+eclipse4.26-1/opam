@@ -1,0 +1,41 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libeclipse-jdt-debug-ui-java_3.12.900+eclipse4.26-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libeclipse-jdt-debug-ui-java"]
+]
+depends: [
+  "deb-libeclipse-core-commands-java"
+  "deb-libeclipse-core-filebuffers-java"
+  "deb-libeclipse-core-jobs-java"
+  "deb-libeclipse-core-resources-java"
+  "deb-libeclipse-core-runtime-java"
+  "deb-libeclipse-core-variables-java"
+  "deb-libeclipse-debug-core-java" {>= "3.12"}
+  "deb-libeclipse-debug-ui-java" {>= "3.13.100"}
+  "deb-libeclipse-jdt-core-java" {>= "3.28"}
+  "deb-libeclipse-jdt-core-manipulation-java"
+  "deb-libeclipse-jdt-debug-java"
+  "deb-libeclipse-jdt-launching-java"
+  "deb-libeclipse-jdt-ui-java" {>= "3.26"}
+  "deb-libeclipse-jface-java"
+  "deb-libeclipse-jface-text-java"
+  "deb-libeclipse-ltk-core-refactoring-java"
+  "deb-libeclipse-search-java"
+  "deb-libeclipse-text-java"
+  "deb-libeclipse-ui-console-java"
+  "deb-libeclipse-ui-editors-java"
+  "deb-libeclipse-ui-forms-java"
+  "deb-libeclipse-ui-ide-java"
+  "deb-libeclipse-ui-workbench-java"
+  "deb-libeclipse-ui-workbench-texteditor-java"
+  "deb-libequinox-common-java"
+  "deb-libequinox-preferences-java"
+  "deb-libequinox-registry-java"
+  "deb-libicu4j-java"
+  "deb-libswt-gtk-4-java"
+]
+extra-source "libeclipse-jdt-debug-ui-java_3.12.900+eclipse4.26-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/eclipse-jdt-debug/libeclipse-jdt-debug-ui-java_3.12.900+eclipse4.26-1_all.deb"
+}

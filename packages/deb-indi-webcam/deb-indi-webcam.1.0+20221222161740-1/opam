@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i indi-webcam_1.0+20221222161740-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r indi-webcam"]
+]
+depends: [
+  "deb-libavcodec-extra59"
+  "deb-libavdevice59" {>= "7-5.0"}
+  "deb-libavformat-extra59"
+  "deb-libavutil57" {>= "7-5.0"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libindidriver1" {>= "1.9.9+dfsg"}
+  "deb-libstdc++6" {>= "6"}
+  "deb-libswscale6" {>= "7-5.0"}
+]
+extra-source "indi-webcam_1.0+20221222161740-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/indi-webcam/indi-webcam_1.0+20221222161740-1_amd64.deb"
+}

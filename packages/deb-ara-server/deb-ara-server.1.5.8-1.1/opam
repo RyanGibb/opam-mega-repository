@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ara-server_1.5.8-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ara-server"]
+]
+depends: [
+  "deb-adduser"
+  "deb-python3-ara" {= "1.5.8-1.1"}
+  "deb-python3-django" {>= "2-2.1.5"}
+  "deb-python3-django-cors-headers"
+  "deb-python3-django-filters"
+  "deb-python3-django-health-check"
+  "deb-python3-djangorestframework" {>= "3.9.1"}
+  "deb-python3-dynaconf" {>= "3.0.0"}
+  "deb-python3-pygments"
+  "deb-python3-ruamel-yaml"
+  "deb-python3-tzlocal"
+  "deb-python3-whitenoise"
+]
+extra-source "ara-server_1.5.8-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-ara/ara-server_1.5.8-1.1_all.deb"
+}

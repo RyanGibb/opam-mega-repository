@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libwaffle-dev_1.6.3-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libwaffle-dev"]
+]
+depends: [
+  "deb-libegl-dev"
+  "deb-libgbm-dev"
+  "deb-libgl-dev"
+  "deb-libudev-dev"
+  "deb-libwaffle-1-0" {= "1.6.3-3"}
+  "deb-libwayland-dev"
+  "deb-libx11-xcb-dev"
+]
+extra-source "libwaffle-dev_1.6.3-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/w/waffle/libwaffle-dev_1.6.3-3_amd64.deb"
+}

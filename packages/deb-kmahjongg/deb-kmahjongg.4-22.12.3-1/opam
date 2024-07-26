@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kmahjongg_4:22.12.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kmahjongg"]
+]
+depends: [
+  "deb-kdegames-mahjongg-data-kf5"
+  "deb-libc6" {>= "2.34"}
+  "deb-libkf5completion5" {>= "5.90.0~"}
+  "deb-libkf5configcore5" {>= "5.90.0~"}
+  "deb-libkf5configgui5" {>= "5.90.0~"}
+  "deb-libkf5configwidgets5" {>= "5.23.0"}
+  "deb-libkf5coreaddons5" {>= "5.90.0~"}
+  "deb-libkf5crash5" {>= "5.90.0~"}
+  "deb-libkf5dbusaddons5" {>= "5.90.0~"}
+  "deb-libkf5i18n5" {>= "4.97.0"}
+  "deb-libkf5kdegames7" {>= "4-21.04.0"}
+  "deb-libkf5kmahjongglib5" {>= "4-21.04.0~"}
+  "deb-libkf5widgetsaddons5" {>= "5.100.0"}
+  "deb-libkf5xmlgui5" {>= "5.90.0~"}
+  "deb-libqt5core5a" {>= "5.15.2~"}
+  "deb-libqt5widgets5" {>= "5.15.2~"}
+  "deb-libstdc++6" {>= "5"}
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+]
+extra-source "kmahjongg_4:22.12.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kmahjongg/kmahjongg_22.12.3-1_amd64.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i vde2_2.3.2+r586-8+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r vde2"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libc6" {>= "2.33"}
+  "deb-libpcap0-8" {>= "0.9.8"}
+  "deb-libvde0"
+  "deb-libvdeplug2" {>= "4.0.1"}
+  "deb-sgml-base" {>= "1.28"}
+  "deb-vde-switch"
+  "deb-vde-wirefilter"
+  "deb-vdeplug"
+]
+extra-source "vde2_2.3.2+r586-8+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/vde2/vde2_2.3.2+r586-8+b1_amd64.deb"
+}

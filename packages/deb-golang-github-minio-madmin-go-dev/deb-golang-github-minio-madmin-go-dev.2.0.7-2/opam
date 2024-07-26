@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-minio-madmin-go-dev_2.0.7-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-minio-madmin-go-dev"]
+]
+depends: [
+  "deb-golang-github-cespare-xxhash-dev"
+  "deb-golang-github-minio-minio-go-v7-dev"
+  "deb-golang-github-secure-io-sio-go-dev"
+  "deb-golang-github-shirou-gopsutil-dev"
+  "deb-golang-github-tinylib-msgp-dev"
+  "deb-golang-golang-x-crypto-dev"
+  "deb-golang-golang-x-net-dev"
+  "deb-golang-procfs-dev"
+]
+extra-source "golang-github-minio-madmin-go-dev_2.0.7-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-minio-madmin-go/golang-github-minio-madmin-go-dev_2.0.7-2_all.deb"
+}

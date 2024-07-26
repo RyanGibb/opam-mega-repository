@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i image-transport-tools_1.11.13-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r image-transport-tools"]
+]
+depends: [
+  "deb-libboost-atomic1-67-0"
+  "deb-libboost-chrono1-67-0"
+  "deb-libboost-date-time1-67-0"
+  "deb-libboost-filesystem1-67-0"
+  "deb-libboost-program-options1-67-0"
+  "deb-libboost-regex1-67-0" {>= "1.67.0-10"}
+  "deb-libboost-signals1-67-0"
+  "deb-libboost-system1-67-0"
+  "deb-libboost-thread1-67-0"
+  "deb-libc6" {>= "2.14"}
+  "deb-libclass-loader1d"
+  "deb-libconsole-bridge0-4"
+  "deb-libcpp-common0d"
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libimage-transport0d"
+  "deb-liblog4cxx10v5"
+  "deb-libmessage-filters1d"
+  "deb-libpocofoundation60"
+  "deb-libpython2-7" {>= "2.7"}
+  "deb-librosconsole2d"
+  "deb-libroscpp-serialization0d"
+  "deb-libroscpp2d"
+  "deb-libroslib0d"
+  "deb-librospack0d"
+  "deb-librostime0d"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtinyxml2-6a" {>= "5.0.0"}
+  "deb-libxmlrpcpp2d"
+]
+extra-source "image-transport-tools_1.11.13-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ros-image-common/image-transport-tools_1.11.13-3+b1_amd64.deb"
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-ahoy-email_1.1.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-ahoy-email"]
+]
+depends: [
+  "deb-bundler"
+  "deb-ruby-actionmailer"
+  "deb-ruby-activerecord"
+  "deb-ruby-addressable"
+  "deb-ruby-minitest"
+  "deb-ruby-nokogiri"
+  "deb-ruby-railties"
+  "deb-ruby-safely-block"
+]
+extra-source "ruby-ahoy-email_1.1.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-ahoy-email/ruby-ahoy-email_1.1.0-2_all.deb"
+}

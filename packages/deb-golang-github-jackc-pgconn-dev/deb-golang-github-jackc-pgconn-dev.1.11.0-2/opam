@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-jackc-pgconn-dev_1.11.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-jackc-pgconn-dev"]
+]
+depends: [
+  "deb-golang-github-jackc-chunkreader-v2-dev"
+  "deb-golang-github-jackc-pgio-dev"
+  "deb-golang-github-jackc-pgpassfile-dev"
+  "deb-golang-github-jackc-pgproto3-v2-dev"
+  "deb-golang-github-jackc-pgservicefile-dev"
+  "deb-golang-github-stretchr-testify-dev"
+  "deb-golang-golang-x-crypto-dev"
+  "deb-golang-golang-x-text-dev"
+]
+extra-source "golang-github-jackc-pgconn-dev_1.11.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-jackc-pgconn/golang-github-jackc-pgconn-dev_1.11.0-2_all.deb"
+}

@@ -1,0 +1,41 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i jami-daemon_20210112.2.b757bac~ds1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r jami-daemon"]
+]
+depends: [
+  "deb-libarchive13" {>= "3.0.4"}
+  "deb-libargon2-1" {>= "0~20171227"}
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libavcodec-extra58"
+  "deb-libavdevice58" {>= "7-4.0"}
+  "deb-libavfilter-extra7"
+  "deb-libavformat58" {>= "7-4.2"}
+  "deb-libavutil56" {>= "7-4.0"}
+  "deb-libc6" {>= "2.30"}
+  "deb-libdbus-c++-1-0v5"
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgnutls30" {>= "3.7.0"}
+  "deb-libhttp-parser2-9" {>= "2.7.1"}
+  "deb-libixml10" {>= "1-1.8.0"}
+  "deb-libjsoncpp24" {>= "1.9.4"}
+  "deb-libnatpmp1" {>= "20150609"}
+  "deb-libnettle8"
+  "deb-libpulse0" {>= "0.99.1"}
+  "deb-libsecp256k1-0" {>= "0.1~20160216"}
+  "deb-libspeexdsp1" {>= "1.2~beta3.2-1"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libswresample3" {>= "7-4.0"}
+  "deb-libswscale5" {>= "7-4.0"}
+  "deb-libudev1" {>= "183"}
+  "deb-libupnp13" {>= "1-1.8.3"}
+  "deb-libuuid1" {>= "2.16"}
+  "deb-libyaml-cpp0-6" {>= "0.6.2"}
+  "deb-zlib1g" {>= "1-1.2.3.3"}
+]
+extra-source "jami-daemon_20210112.2.b757bac~ds1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ring/jami-daemon_20210112.2.b757bac~ds1-1_amd64.deb"
+}

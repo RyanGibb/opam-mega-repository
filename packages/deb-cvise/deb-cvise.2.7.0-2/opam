@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cvise_2.7.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cvise"]
+]
+depends: [
+  "deb-clang-format-15"
+  "deb-libc6" {>= "2.34"}
+  "deb-libclang-cpp15" {>= "1-15.0.6"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libllvm15"
+  "deb-libstdc++6" {>= "11"}
+  "deb-python3"
+  "deb-python3-any"
+  "deb-python3-chardet"
+  "deb-python3-pebble"
+  "deb-python3-psutil"
+  "deb-unifdef"
+]
+extra-source "cvise_2.7.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cvise/cvise_2.7.0-2_amd64.deb"
+}

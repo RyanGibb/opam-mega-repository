@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i beast-mcmc_1.10.4+dfsg-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r beast-mcmc"]
+]
+depends: [
+  "deb-junit4"
+  "deb-libcolt-free-java"
+  "deb-libcommons-math-java"
+  "deb-libhmsbeagle-java"
+  "deb-libitext1-java"
+  "deb-libjam-java"
+  "deb-libjdom1-java"
+  "deb-libjebl2-java"
+  "deb-libmpj-java"
+  "deb-libmtj-java"
+  "deb-libnetlib-java"
+  "deb-libnucleotidelikelihoodcore0" {< "1.10.4+dfsg-5.1~"}
+  "deb-libnucleotidelikelihoodcore0" {>= "1.10.4+dfsg-5"}
+  ("deb-default-jre" | "deb- java6-runtime")
+]
+extra-source "beast-mcmc_1.10.4+dfsg-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/beast-mcmc/beast-mcmc_1.10.4+dfsg-5_all.deb"
+}

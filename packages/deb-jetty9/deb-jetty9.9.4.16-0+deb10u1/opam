@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i jetty9_9.4.16-0+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r jetty9"]
+]
+depends: [
+  "deb-adduser"
+  "deb-apache2-utils"
+  "deb-libjetty9-extra-java" {>= "9.4.16-0+deb10u1"}
+  "deb-libjetty9-java" {>= "9.4.16-0+deb10u1"}
+  "deb-lsb-base"
+  ("deb-default-jre-headless" {>= "2-1.8"} | "deb- java8-runtime-headless")
+]
+extra-source "jetty9_9.4.16-0+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/j/jetty9/jetty9_9.4.16-0+deb10u1_all.deb"
+}

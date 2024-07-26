@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmetkit0d_1.9.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmetkit0d"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libeccodes0" {>= "2.26.2"}
+  "deb-libeckit0d" {>= "1.20.0"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libmetkit-data"
+  "deb-libodc-0d" {>= "1.4.6"}
+  "deb-libstdc++6" {>= "11"}
+]
+extra-source "libmetkit0d_1.9.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/metkit/libmetkit0d_1.9.2-1_amd64.deb"
+}

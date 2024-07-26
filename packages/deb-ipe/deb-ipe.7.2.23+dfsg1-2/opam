@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ipe_7.2.23+dfsg1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ipe"]
+]
+depends: [
+  "deb-gsfonts"
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libipe7-2-23" {>= "7.2.23+dfsg1"}
+  "deb-liblua5-3-0"
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5widgets5" {>= "5.14.1"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-sensible-utils"
+  "deb-texlive-latex-base"
+  "deb-xdg-utils"
+  ("deb-libqt5gui5" {>= "5.3.0"} | "deb- libqt5gui5-gles" {>= "5.3.0"})
+]
+extra-source "ipe_7.2.23+dfsg1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/ipe/ipe_7.2.23+dfsg1-2_amd64.deb"
+}

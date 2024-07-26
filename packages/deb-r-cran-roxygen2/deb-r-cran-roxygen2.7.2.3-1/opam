@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-roxygen2_7.2.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-roxygen2"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.2.20221110-1"}
+  "deb-r-cran-brew"
+  "deb-r-cran-cli" {>= "3.3.0"}
+  "deb-r-cran-commonmark"
+  "deb-r-cran-cpp11"
+  "deb-r-cran-desc" {>= "1.2.0"}
+  "deb-r-cran-knitr"
+  "deb-r-cran-pkgload" {>= "1.0.2"}
+  "deb-r-cran-purrr" {>= "0.3.3"}
+  "deb-r-cran-r6" {>= "2.1.2"}
+  "deb-r-cran-rlang" {>= "1.0.6"}
+  "deb-r-cran-stringi"
+  "deb-r-cran-stringr" {>= "1.0.0"}
+  "deb-r-cran-withr"
+  "deb-r-cran-xml2"
+]
+extra-source "r-cran-roxygen2_7.2.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-roxygen2/r-cran-roxygen2_7.2.3-1_amd64.deb"
+}

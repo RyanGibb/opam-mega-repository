@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i evolution-data-server_3.46.4-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r evolution-data-server"]
+]
+depends: [
+  "deb-evolution-data-server-common" {>= "3.46.4-2"}
+  "deb-gnome-keyring"
+  "deb-libc6" {>= "2.34"}
+  "deb-libcamel-1-2-64" {= "3.46.4-2"}
+  "deb-libcanberra-gtk3-0" {>= "0.25"}
+  "deb-libcanberra0" {>= "0.2"}
+  "deb-libdb5-3"
+  "deb-libebackend-1-2-11" {>= "3.38.0"}
+  "deb-libebook-1-2-21" {>= "3.17"}
+  "deb-libebook-contacts-1-2-4" {>= "3.43.2"}
+  "deb-libecal-2-0-2" {>= "3.39.2"}
+  "deb-libedata-book-1-2-27" {>= "3.43.2"}
+  "deb-libedata-cal-2-0-2" {>= "3.26.2"}
+  "deb-libedataserver-1-2-27" {>= "3.45.2"}
+  "deb-libedataserverui-1-2-4" {>= "3.45.3"}
+  "deb-libglib2-0-0" {>= "2.70.0"}
+  "deb-libgoa-1-0-0b" {>= "3.11.90"}
+  "deb-libgtk-3-0" {>= "3.10"}
+  "deb-libgweather-4-0" {>= "4.1"}
+  "deb-libical3" {>= "3.0.7"}
+  "deb-libjson-glib-1-0-0" {>= "1.5.2"}
+  "deb-libldap-2-5-0" {>= "2.5.4"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libsecret-1-0" {>= "0.7"}
+  "deb-libsoup-3-0-0" {>= "3.1.1"}
+  "deb-libxml2" {>= "2.9.0"}
+]
+extra-source "evolution-data-server_3.46.4-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/evolution-data-server/evolution-data-server_3.46.4-2_amd64.deb"
+}

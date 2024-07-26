@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libbot-basicbot-pluggable-perl_1.20-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libbot-basicbot-pluggable-perl"]
+]
+depends: [
+  "deb-libbot-basicbot-perl" {>= "0.91"}
+  "deb-libconfig-find-perl"
+  "deb-libcrypt-saltedhash-perl"
+  "deb-libdbi-perl"
+  "deb-libdbm-deep-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-liblog-log4perl-perl"
+  "deb-libmoose-perl"
+  "deb-libmoosex-getopt-perl"
+  "deb-libmoosex-simpleconfig-perl"
+  "deb-libpoe-perl"
+  "deb-libtext-unidecode-perl"
+  "deb-libtry-tiny-perl"
+  "deb-liburi-find-simple-perl"
+  "deb-liburi-perl"
+  "deb-liburi-title-perl"
+  "deb-libwww-perl"
+  "deb-libxml-feed-perl"
+  "deb-perl"
+]
+extra-source "libbot-basicbot-pluggable-perl_1.20-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libb/libbot-basicbot-pluggable-perl/libbot-basicbot-pluggable-perl_1.20-1_all.deb"
+}

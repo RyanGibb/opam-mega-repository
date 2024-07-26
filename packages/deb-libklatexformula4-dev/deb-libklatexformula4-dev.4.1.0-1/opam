@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libklatexformula4-dev_4.1.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libklatexformula4-dev"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libklatexformula4" {= "4.1.0-1"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libstdc++6" {>= "5"}
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+]
+extra-source "libklatexformula4-dev_4.1.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/klatexformula/libklatexformula4-dev_4.1.0-1_amd64.deb"
+}

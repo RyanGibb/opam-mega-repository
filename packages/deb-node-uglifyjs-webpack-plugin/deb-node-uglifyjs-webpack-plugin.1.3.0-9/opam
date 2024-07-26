@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-uglifyjs-webpack-plugin_1.3.0-9_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-uglifyjs-webpack-plugin"]
+]
+depends: [
+  "deb-node-cacache" {>= "10.0.4~"}
+  "deb-node-find-cache-dir" {>= "1.0~"}
+  "deb-node-schema-utils" {>= "3.0~"}
+  "deb-node-source-map" {>= "0.6.1~"}
+  "deb-node-terser"
+  "deb-node-webpack-sources" {>= "1.1~"}
+  "deb-nodejs"
+  "deb-webpack"
+]
+extra-source "node-uglifyjs-webpack-plugin_1.3.0-9_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-uglifyjs-webpack-plugin/node-uglifyjs-webpack-plugin_1.3.0-9_all.deb"
+}

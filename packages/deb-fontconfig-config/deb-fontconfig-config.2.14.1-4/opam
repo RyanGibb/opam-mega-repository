@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fontconfig-config_2.14.1-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fontconfig-config"]
+]
+depends: [
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-fonts-dejavu-core" | "deb- ttf-bitstream-vera" | "deb- fonts-liberation" | "deb- fonts-liberation2" | "deb- fonts-croscore" | "deb- fonts-freefont-otf" | "deb- fonts-freefont-ttf" | "deb- fonts-urw-base35" | "deb- fonts-texgyre")
+]
+extra-source "fontconfig-config_2.14.1-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fontconfig/fontconfig-config_2.14.1-4_amd64.deb"
+}

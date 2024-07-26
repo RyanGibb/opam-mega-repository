@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gitolite3_3.6.12-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gitolite3"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libjson-perl"
+  "deb-openssh-client"
+  "deb-perl" {>= "5.6.0-16"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-git" {>= "1-1.7.0.4"} | "deb- git-core" {>= "1-1.6.2"})
+  ("deb-openssh-server" | "deb- ssh-server")
+]
+extra-source "gitolite3_3.6.12-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gitolite3/gitolite3_3.6.12-1_all.deb"
+}

@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libhyena-cil_0.5-4.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libhyena-cil"]
+]
+depends: [
+  "deb-libcairo2" {>= "1.16.0"}
+  "deb-libglib2-0-0" {>= "2.66.4"}
+  "deb-libglib2-0-cil" {>= "2.12.40"}
+  "deb-libgtk2-0-0" {>= "2.24.0"}
+  "deb-libgtk2-0-cil" {>= "2.12.40"}
+  "deb-libmono-cairo4-0-cil" {>= "5.16.0.220"}
+  "deb-libmono-corlib4-5-cil" {>= "5.18.0.240"}
+  "deb-libmono-posix4-0-cil" {>= "4.6.1.3"}
+  "deb-libmono-system-core4-0-cil" {>= "5.18.0.240"}
+  "deb-libmono-system-data4-0-cil" {>= "5.16.0.220"}
+  "deb-libmono-system-transactions4-0-cil" {>= "5.12.0.309"}
+  "deb-libmono-system-xml4-0-cil" {>= "4.6.1.3"}
+  "deb-libmono-system4-0-cil" {>= "5.18.0.240"}
+  "deb-libpangocairo-1-0-0" {>= "1.46.2"}
+  "deb-libsqlite3-0" {>= "3.34.0"}
+  ("deb-libc6" {>= "2.31"} | "deb- libc6-1" {>= "2.31"} | "deb- libc0-1" {>= "2.31"})
+]
+extra-source "libhyena-cil_0.5-4.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/hyena/libhyena-cil_0.5-4.1_all.deb"
+}

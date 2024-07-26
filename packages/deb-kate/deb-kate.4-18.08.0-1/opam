@@ -1,0 +1,57 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kate_4:18.08.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kate"]
+]
+depends: [
+  "deb-kate5-data" {>= "4-18.08.0-1"}
+  "deb-kio"
+  "deb-ktexteditor-katepart"
+  "deb-libc6" {>= "2.14"}
+  "deb-libkf5activities5" {>= "4.96.0"}
+  "deb-libkf5bookmarks5" {>= "4.96.0"}
+  "deb-libkf5completion5" {>= "4.97.0"}
+  "deb-libkf5configcore5" {>= "4.97.0"}
+  "deb-libkf5configgui5" {>= "4.97.0"}
+  "deb-libkf5configwidgets5" {>= "4.98.0"}
+  "deb-libkf5coreaddons5" {>= "5.16.0"}
+  "deb-libkf5crash5" {>= "5.15.0"}
+  "deb-libkf5dbusaddons5" {>= "4.97.0"}
+  "deb-libkf5guiaddons5" {>= "4.96.0"}
+  "deb-libkf5i18n5" {>= "4.97.0"}
+  "deb-libkf5iconthemes5" {>= "4.96.0"}
+  "deb-libkf5itemmodels5" {>= "4.96.0"}
+  "deb-libkf5jobwidgets5" {>= "4.96.0"}
+  "deb-libkf5kiocore5" {>= "4.96.0"}
+  "deb-libkf5kiofilewidgets5" {>= "4.96.0"}
+  "deb-libkf5kiowidgets5" {>= "5.24.0"}
+  "deb-libkf5newstuff5" {>= "5.27.0"}
+  "deb-libkf5parts5" {>= "4.96.0"}
+  "deb-libkf5plasma5" {>= "4.96.0"}
+  "deb-libkf5service-bin"
+  "deb-libkf5service5" {>= "4.99.0"}
+  "deb-libkf5texteditor5"
+  "deb-libkf5textwidgets5" {>= "5.0.0"}
+  "deb-libkf5threadweaver5" {>= "4.98.0"}
+  "deb-libkf5wallet-bin"
+  "deb-libkf5wallet5" {>= "4.96.0"}
+  "deb-libkf5widgetsaddons5" {>= "5.13.0"}
+  "deb-libkf5windowsystem5" {>= "4.96.0"}
+  "deb-libkf5xmlgui5" {>= "4.98.0"}
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5dbus5" {>= "5.4.0~"}
+  "deb-libqt5gui5" {>= "5.7.0"}
+  "deb-libqt5sql5" {>= "5.10.0"}
+  "deb-libqt5widgets5" {>= "5.11.0~rc1"}
+  "deb-libqt5xml5" {>= "5.4.0~"}
+  "deb-libstdc++6" {>= "4.4.0"}
+  "deb-plasma-framework"
+  "deb-qml-module-org-kde-kquickcontrolsaddons"
+  "deb-qml-module-qtquick-layouts"
+  "deb-qml-module-qtquick2"
+]
+extra-source "kate_4:18.08.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kate/kate_18.08.0-1_amd64.deb"
+}

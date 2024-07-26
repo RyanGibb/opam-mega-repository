@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sx_2.0+ds-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sx"]
+]
+depends: [
+  "deb-libc6" {>= "2.17"}
+  "deb-libcurl4" {>= "7.16.2"}
+  "deb-libfcgi0ldbl"
+  "deb-libfuse2" {>= "2.8"}
+  "deb-libltdl7" {>= "2.4.6"}
+  "deb-libsqlite3-0" {>= "3.7.15"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libsxclient3"
+  "deb-libyajl2" {>= "2.0.4"}
+  "deb-logrotate"
+  "deb-lsb-base"
+  "deb-nginx"
+  "deb-openssl"
+  "deb-python-any"
+  "deb-zlib1g" {>= "1-1.2.0"}
+]
+extra-source "sx_2.0+ds-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sx/sx_2.0+ds-4+b1_amd64.deb"
+}

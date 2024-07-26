@@ -1,0 +1,70 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kde-runtime_4:17.08.3-2.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kde-runtime"]
+]
+depends: [
+  "deb-drkonqi"
+  "deb-kde-runtime-data" {>= "4-17.08.3-2.1"}
+  "deb-kdelibs5-plugins"
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libattica0-4" {>= "0.4.0"}
+  "deb-libc6" {>= "2.28"}
+  "deb-libcanberra0" {>= "0.2"}
+  "deb-libexiv2-14" {>= "0.25"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgcrypt20" {>= "1.8.0"}
+  "deb-libgpgme++2v5" {>= "4-4.3.4"}
+  "deb-libgpgme11" {>= "1.1.2"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libkactivities6" {>= "4-4.8.1"}
+  "deb-libkcmutils4" {>= "4-4.9.95~"}
+  "deb-libkdeclarative5" {>= "4-4.10.0"}
+  "deb-libkdecore5" {>= "4-4.9.95~"}
+  "deb-libkdesu5" {>= "4-4.9.95~"}
+  "deb-libkdeui5" {>= "4-4.9.95~"}
+  "deb-libkdewebkit5" {>= "4-4.9.95~"}
+  "deb-libkdnssd4" {>= "4-4.9.95~"}
+  "deb-libkemoticons4" {>= "4-4.9.95~"}
+  "deb-libkfile4" {>= "4-4.9.95~"}
+  "deb-libkhtml5" {>= "4-4.9.95~"}
+  "deb-libkio5" {>= "4-4.11.80"}
+  "deb-libkmediaplayer4" {>= "4-4.9.95~"}
+  "deb-libknewstuff3-4" {>= "4-4.9.95~"}
+  "deb-libknotifyconfig4" {>= "4-4.9.95~"}
+  "deb-libkparts4" {>= "4-4.9.95~"}
+  "deb-libkpty4" {>= "4-4.9.95~"}
+  "deb-libntrack-qt4-1" {>= "005"}
+  "deb-libopenexr23"
+  "deb-libphonon4" {>= "4-4.6.0really4.5.0"}
+  "deb-libplasma3" {>= "4-4.9.95~"}
+  "deb-libpulse-mainloop-glib0" {>= "0.99.1"}
+  "deb-libpulse0" {>= "0.99.1"}
+  "deb-libqt4-dbus" {>= "4-4.6.1"}
+  "deb-libqt4-declarative" {>= "4-4.7.0~rc1"}
+  "deb-libqt4-network" {>= "4-4.5.3"}
+  "deb-libqt4-script" {>= "4-4.6.1"}
+  "deb-libqt4-svg" {>= "4-4.5.3"}
+  "deb-libqt4-xml" {>= "4-4.5.3"}
+  "deb-libqtcore4" {>= "4-4.8.0"}
+  "deb-libqtgui4" {>= "4-4.8.0"}
+  "deb-libqtwebkit4" {>= "2.1.0~2011week13"}
+  "deb-libsmbclient" {>= "2-4.0.3+dfsg1"}
+  "deb-libsolid4" {>= "4-4.9.95~"}
+  "deb-libssh-gcrypt-4" {>= "0.8.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libwebp6" {>= "0.5.1"}
+  "deb-libx11-6"
+  "deb-libxcursor1" {> "1.1.2"}
+  "deb-oxygen-icon-theme"
+  "deb-phonon"
+  "deb-plasma-scriptengine-javascript" {= "4-17.08.3-2.1"}
+]
+conflicts: [
+  "deb-kdelibs4-dev"
+]
+extra-source "kde-runtime_4:17.08.3-2.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kde-runtime/kde-runtime_17.08.3-2.1_amd64.deb"
+}

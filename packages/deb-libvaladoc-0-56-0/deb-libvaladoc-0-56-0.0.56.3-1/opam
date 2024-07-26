@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libvaladoc-0.56-0_0.56.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libvaladoc-0.56-0"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libcgraph6"
+  "deb-libglib2-0-0" {>= "2.48"}
+  "deb-libgvc6"
+  "deb-libvala-0-56-0" {= "0.56.3-1"}
+  "deb-libvalacodegen-0-56-0" {= "0.56.3-1"}
+  "deb-libvaladoc-0-56-data"
+]
+extra-source "libvaladoc-0.56-0_0.56.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/vala/libvaladoc-0.56-0_0.56.3-1_amd64.deb"
+}

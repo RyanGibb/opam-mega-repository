@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkitchensink-clojure_2.3.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkitchensink-clojure"]
+]
+depends: [
+  "deb-libcheshire-clojure"
+  "deb-libclj-digest-clojure"
+  "deb-libclj-time-clojure"
+  "deb-libclojure-java"
+  "deb-libdynapath-clojure"
+  "deb-libini4j-java"
+  "deb-libraynes-fs-clojure"
+  "deb-libslingshot-clojure"
+  "deb-libtools-cli-clojure"
+  "deb-libtools-logging-clojure"
+]
+extra-source "libkitchensink-clojure_2.3.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kitchensink-clojure/libkitchensink-clojure_2.3.0-2_all.deb"
+}

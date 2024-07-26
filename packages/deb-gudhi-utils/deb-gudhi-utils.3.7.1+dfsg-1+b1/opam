@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gudhi-utils_3.7.1+dfsg-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gudhi-utils"]
+]
+depends: [
+  "deb-libboost-program-options1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-libmpfr6" {>= "3.1.3"}
+  "deb-libstdc++6" {>= "11"}
+]
+extra-source "gudhi-utils_3.7.1+dfsg-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gudhi/gudhi-utils_3.7.1+dfsg-1+b1_amd64.deb"
+}

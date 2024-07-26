@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pique_1.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pique"]
+]
+depends: [
+  "deb-eigensoft"
+  "deb-emmax"
+  "deb-libfile-slurp-perl"
+  "deb-libparallel-forkmanager-perl"
+  "deb-libreadonly-perl"
+  "deb-perl-any"
+  "deb-plink"
+  "deb-r-base-core"
+  "deb-r-cran-forecast"
+  "deb-r-cran-getopt"
+  "deb-r-cran-optparse"
+  "deb-r-cran-uroot"
+]
+extra-source "pique_1.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pique/pique_1.0-2_all.deb"
+}

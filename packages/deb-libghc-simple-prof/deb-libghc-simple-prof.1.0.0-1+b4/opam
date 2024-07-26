@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-simple-prof_1.0.0-1+b4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-simple-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-aeson-prof"
+  "deb-libghc-base64-bytestring-prof"
+  "deb-libghc-blaze-builder-prof"
+  "deb-libghc-http-types-prof"
+  "deb-libghc-mime-types-prof"
+  "deb-libghc-monad-control-prof"
+  "deb-libghc-simple-dev" {= "1.0.0-1+b4"}
+  "deb-libghc-simple-templates-prof"
+  "deb-libghc-transformers-base-prof"
+  "deb-libghc-unordered-containers-prof"
+  "deb-libghc-vector-prof"
+  "deb-libghc-wai-extra-prof"
+  "deb-libghc-wai-prof"
+]
+extra-source "libghc-simple-prof_1.0.0-1+b4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-simple/libghc-simple-prof_1.0.0-1+b4_amd64.deb"
+}

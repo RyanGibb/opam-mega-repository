@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i milkytracker_1.03.00+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r milkytracker"]
+]
+depends: [
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-liblhasa0"
+  "deb-librtmidi5" {>= "4.0.0"}
+  "deb-libsdl2-2-0-0" {>= "2.0.12+dfsg1"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libzzip-0-13" {>= "0.13.56"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "milkytracker_1.03.00+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/milkytracker/milkytracker_1.03.00+dfsg-1_amd64.deb"
+}

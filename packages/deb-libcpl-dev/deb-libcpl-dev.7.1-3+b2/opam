@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcpl-dev_7.1-3+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcpl-dev"]
+]
+depends: [
+  "deb-libcext-dev"
+  "deb-libcplcore26" {= "7.1-3+b2"}
+  "deb-libcpldfs26" {= "7.1-3+b2"}
+  "deb-libcpldrs26" {= "7.1-3+b2"}
+  "deb-libcplui26" {= "7.1-3+b2"}
+  "deb-wcslib-dev"
+  ("deb-libcfitsio-dev" | "deb- libcfitsio3-dev" {>= "3.310"})
+]
+extra-source "libcpl-dev_7.1-3+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cpl/libcpl-dev_7.1-3+b2_amd64.deb"
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libeclipse-wst-xml-core-java_1.2.200+eclipse3.18-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libeclipse-wst-xml-core-java"]
+]
+depends: [
+  "deb-libeclipse-jem-util-java"
+  "deb-libeclipse-wst-common-core-java"
+  "deb-libeclipse-wst-common-emf-java"
+  "deb-libeclipse-wst-common-emfworkbench-integration-java"
+  "deb-libeclipse-wst-common-uriresolver-java"
+  "deb-libeclipse-wst-sse-core-java"
+  "deb-libeclipse-wst-validation-java"
+]
+extra-source "libeclipse-wst-xml-core-java_1.2.200+eclipse3.18-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/eclipse-wtp/libeclipse-wst-xml-core-java_1.2.200+eclipse3.18-6_all.deb"
+}

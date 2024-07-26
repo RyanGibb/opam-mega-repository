@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openexr_2.2.1-4.1+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openexr"]
+]
+depends: [
+  "deb-libc6" {>= "2.27"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libilmbase23" {>= "2.2.1"}
+  "deb-libopenexr23"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "openexr_2.2.1-4.1+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openexr/openexr_2.2.1-4.1+deb10u1_amd64.deb"
+}

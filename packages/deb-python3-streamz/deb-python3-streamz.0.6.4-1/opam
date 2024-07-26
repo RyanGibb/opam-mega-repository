@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-streamz_0.6.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-streamz"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-dask"
+  "deb-python3-distributed"
+  "deb-python3-numpy"
+  "deb-python3-pandas"
+  "deb-python3-pkg-resources"
+  "deb-python3-six"
+  "deb-python3-toolz"
+  "deb-python3-tornado"
+  "deb-python3-zict"
+]
+extra-source "python3-streamz_0.6.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-streamz/python3-streamz_0.6.4-1_all.deb"
+}

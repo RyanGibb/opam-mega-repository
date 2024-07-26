@@ -1,0 +1,43 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-bioc-degreport_1.26.0+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-bioc-degreport"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.3-1"}
+  "deb-r-bioc-biobase"
+  "deb-r-bioc-biocgenerics"
+  "deb-r-bioc-complexheatmap"
+  "deb-r-bioc-consensusclusterplus"
+  "deb-r-bioc-deseq2"
+  "deb-r-bioc-edger"
+  "deb-r-bioc-s4vectors"
+  "deb-r-bioc-summarizedexperiment"
+  "deb-r-cran-broom"
+  "deb-r-cran-circlize"
+  "deb-r-cran-cluster"
+  "deb-r-cran-cowplot"
+  "deb-r-cran-dplyr"
+  "deb-r-cran-ggdendro"
+  "deb-r-cran-ggplot2"
+  "deb-r-cran-ggrepel"
+  "deb-r-cran-knitr"
+  "deb-r-cran-lasso2"
+  "deb-r-cran-logging"
+  "deb-r-cran-magrittr"
+  "deb-r-cran-nozzle-r1"
+  "deb-r-cran-psych"
+  "deb-r-cran-rcolorbrewer"
+  "deb-r-cran-reshape"
+  "deb-r-cran-rlang"
+  "deb-r-cran-scales"
+  "deb-r-cran-stringr"
+  "deb-r-cran-tibble"
+  "deb-r-cran-tidyr"
+]
+extra-source "r-bioc-degreport_1.26.0+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-bioc-degreport/r-bioc-degreport_1.26.0+dfsg-1_all.deb"
+}

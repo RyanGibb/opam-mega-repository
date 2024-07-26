@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i orthanc-wsi_1.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r orthanc-wsi"]
+]
+depends: [
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0"}
+  "deb-libboost-iostreams1-74-0" {>= "1.74.0"}
+  "deb-libboost-locale1-74-0" {>= "1.74.0"}
+  "deb-libboost-program-options1-74-0" {>= "1.74.0"}
+  "deb-libboost-regex1-74-0"
+  "deb-libboost-thread1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libcurl4" {>= "7.16.2"}
+  "deb-libdcmtk15" {>= "3.6.5"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libjsoncpp24" {>= "1.9.4"}
+  "deb-libopenjp2-7" {>= "2.0.0"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libpugixml1v5" {>= "1.4"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libtiff5" {>= "4.0.3"}
+  "deb-libuuid1" {>= "2.16"}
+]
+extra-source "orthanc-wsi_1.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/orthanc-wsi/orthanc-wsi_1.0-3_amd64.deb"
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sagemath-jupyter_8.6-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sagemath-jupyter"]
+]
+depends: [
+  "deb-jupyter-client"
+  "deb-jupyter-core"
+  "deb-jupyter-nbextension-jupyter-js-widgets"
+  "deb-python-ipykernel"
+  "deb-python-ipywidgets" {>= "6.0.0"}
+  "deb-python-nbconvert"
+  "deb-python-nbformat"
+  "deb-python-notebook" {>= "4.2.3-3"}
+  "deb-sagemath" {< "8.6-6.1~"}
+  "deb-sagemath" {>= "8.6-6"}
+]
+extra-source "sagemath-jupyter_8.6-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sagemath/sagemath-jupyter_8.6-6_all.deb"
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcasa-fits5_3.3.0-4+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcasa-fits5"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libcasa-casa5" {>= "3.3.0"}
+  "deb-libcasa-measures5" {>= "3.3.0"}
+  "deb-libcasa-tables5" {>= "3.3.0"}
+  "deb-libcfitsio9" {>= "3.480~"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "5.2"}
+]
+extra-source "libcasa-fits5_3.3.0-4+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/casacore/libcasa-fits5_3.3.0-4+b3_amd64.deb"
+}

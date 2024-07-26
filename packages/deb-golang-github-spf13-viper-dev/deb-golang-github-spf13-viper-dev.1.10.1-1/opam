@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-spf13-viper-dev_1.10.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-spf13-viper-dev"]
+]
+depends: [
+  "deb-golang-github-fsnotify-fsnotify-dev" {>= "1.5.1"}
+  "deb-golang-github-hashicorp-hcl-dev" {>= "1.0.0"}
+  "deb-golang-github-magiconair-properties-dev" {>= "1.8.5"}
+  "deb-golang-github-mitchellh-mapstructure-dev" {>= "1.4.3"}
+  "deb-golang-github-pelletier-go-toml-dev" {>= "1.9.4"}
+  "deb-golang-github-spf13-afero-dev" {>= "1.6.0"}
+  "deb-golang-github-spf13-cast-dev" {>= "1.4.1"}
+  "deb-golang-github-spf13-jwalterweatherman-dev" {>= "1.1.0"}
+  "deb-golang-github-spf13-pflag-dev" {>= "1.0.5"}
+  "deb-golang-github-subosito-gotenv-dev" {>= "1.2.0"}
+  "deb-golang-gopkg-ini-v1-dev" {>= "1.66.2"}
+  "deb-golang-gopkg-yaml-v2-dev" {>= "2.4.0"}
+]
+extra-source "golang-github-spf13-viper-dev_1.10.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-spf13-viper/golang-github-spf13-viper-dev_1.10.1-1_all.deb"
+}

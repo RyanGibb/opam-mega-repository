@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i shapelib_1.4.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r shapelib"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libproj13" {>= "4.8.0"}
+  "deb-libshp2" {>= "1.3.0"}
+  "deb-libstdc++6" {>= "4.9"}
+]
+extra-source "shapelib_1.4.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/shapelib/shapelib_1.4.1-3_amd64.deb"
+}

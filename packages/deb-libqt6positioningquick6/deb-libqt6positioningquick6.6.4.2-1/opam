@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libqt6positioningquick6_6.4.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libqt6positioningquick6"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libqt6core6"
+  "deb-libqt6core6" {>= "6.4.2+dfsg~"}
+  "deb-libqt6positioning6" {>= "6.4.0"}
+  "deb-libqt6qml6" {>= "6.4.2+dfsg~"}
+  "deb-libqt6quick6" {>= "6.4.2+dfsg~"}
+  "deb-libstdc++6" {>= "5"}
+]
+extra-source "libqt6positioningquick6_6.4.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qt6-positioning/libqt6positioningquick6_6.4.2-1_amd64.deb"
+}

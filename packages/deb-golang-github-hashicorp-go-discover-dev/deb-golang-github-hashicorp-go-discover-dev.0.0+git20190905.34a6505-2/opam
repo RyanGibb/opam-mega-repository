@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-hashicorp-go-discover-dev_0.0+git20190905.34a6505-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-hashicorp-go-discover-dev"]
+]
+depends: [
+  "deb-golang-github-aws-aws-sdk-go-dev"
+  "deb-golang-github-azure-go-autorest-dev"
+  "deb-golang-github-denverdino-aliyungo-dev"
+  "deb-golang-github-digitalocean-godo-dev"
+  "deb-golang-github-gophercloud-gophercloud-dev"
+  "deb-golang-github-hashicorp-go-multierror-dev"
+  "deb-golang-github-hashicorp-mdns-dev"
+  "deb-golang-github-mitchellh-go-homedir-dev"
+  "deb-golang-github-packethost-packngo-dev"
+  "deb-golang-github-vmware-govmomi-dev"
+  "deb-golang-golang-x-oauth2-google-dev"
+  "deb-golang-google-api-dev"
+]
+extra-source "golang-github-hashicorp-go-discover-dev_0.0+git20190905.34a6505-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-hashicorp-go-discover/golang-github-hashicorp-go-discover-dev_0.0+git20190905.34a6505-2_all.deb"
+}

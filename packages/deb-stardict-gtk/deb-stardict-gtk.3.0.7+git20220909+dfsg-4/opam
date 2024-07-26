@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i stardict-gtk_3.0.7+git20220909+dfsg-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r stardict-gtk"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libcanberra-gtk3-0" {>= "0.25"}
+  "deb-libcanberra0" {>= "0.2"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libgtk-3-0" {>= "3.21.4"}
+  "deb-libjson-glib-1-0-0" {>= "1.5.2"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libsigc++-2-0-0v5" {>= "2.8.0"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libx11-6"
+  "deb-stardict-common" {= "3.0.7+git20220909+dfsg-4"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+conflicts: [
+  "deb-stardict-gnome"
+]
+extra-source "stardict-gtk_3.0.7+git20220909+dfsg-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/stardict/stardict-gtk_3.0.7+git20220909+dfsg-4_amd64.deb"
+}

@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tucnak_4.09-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tucnak"]
+]
+depends: [
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.15"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libfftw3-double3" {>= "3.3.5"}
+  "deb-libfontconfig1" {>= "2.12"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libftdi1-2" {>= "1.2"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.31.8"}
+  "deb-libgtk2-0-0" {>= "2.8.0"}
+  "deb-libhamlib2" {>= "3.1"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpangoft2-1-0-0" {>= "1.14.0"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libsdl1-2debian" {>= "1.2.11"}
+  "deb-libsndfile1" {>= "1.0.20"}
+  "deb-libusb-1-0-0" {>= "2-1.0.8"}
+  "deb-libzia"
+  "deb-passwd"
+  "deb-udev"
+]
+conflicts: [
+  "deb-tucnak2"
+]
+extra-source "tucnak_4.09-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tucnak/tucnak_4.09-1_amd64.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gdb-12.1-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gdb"]
+]
+depends: [
+  "apk-gmp" {= "6.2.1-r2"}
+  "apk-libexpat" {= "2.6.2-r0"}
+  "apk-libgcc" {= "12.2.1_git20220924-r4"}
+  "apk-libstdc++" {= "12.2.1_git20220924-r4"}
+  "apk-musl" {= "1.2.3-r5"}
+  "apk-ncurses-libs" {= "6.3_p20221119-r1"}
+  "apk-python3" {= "3.10.14-r1"}
+  "apk-readline" {= "8.2.0-r0"}
+  "apk-zlib" {= "1.2.13-r0"}
+]
+extra-source "gdb-12.1-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gdb-12.1-r2.apk"
+}

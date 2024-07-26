@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add monit-5.33.0-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del monit"]
+]
+depends: [
+  "apk-libcrypto3" {= "3.3.1-r3"}
+  "apk-libssl3" {= "3.3.1-r3"}
+  "apk-musl" {= "1.2.5-r0"}
+  "apk-zlib" {= "1.3.1-r1"}
+]
+extra-source "monit-5.33.0-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/monit-5.33.0-r3.apk"
+}

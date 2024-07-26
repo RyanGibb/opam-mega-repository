@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i boxer_1.3.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r boxer"]
+]
+depends: [
+  "deb-libapp-cmd-perl"
+  "deb-libcapture-tiny-perl"
+  "deb-libclass-xsaccessor-perl"
+  "deb-libfile-basedir-perl"
+  "deb-libfile-sharedir-perl"
+  "deb-libipc-system-simple-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-liblog-any-adapter-screen-perl"
+  "deb-libmatch-simple-perl"
+  "deb-libmodule-runtime-perl"
+  "deb-libmoo-perl"
+  "deb-libmoox-role-logger-perl"
+  "deb-libmoox-strictconstructor-perl"
+  "deb-libnamespace-autoclean-perl"
+  "deb-libpath-tiny-perl"
+  "deb-librole-commons-perl"
+  "deb-libstrictures-perl" {>= "2"}
+  "deb-libtemplate-tiny-perl"
+  "deb-libtry-tiny-perl"
+  "deb-libtype-tiny-perl"
+  "deb-libtypes-path-tiny-perl"
+  "deb-libyaml-libyaml-perl"
+  "deb-perl"
+  "deb-reclass"
+]
+extra-source "boxer_1.3.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/boxer/boxer_1.3.0-2_all.deb"
+}

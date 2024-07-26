@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i prelude-manager_4.1.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r prelude-manager"]
+]
+depends: [
+  "deb-dbconfig-common"
+  "deb-libc6" {>= "2.17"}
+  "deb-libgnutls30" {>= "3.5.6"}
+  "deb-libltdl7" {>= "2.4.6"}
+  "deb-libmaxminddb0" {>= "1.0.2"}
+  "deb-libprelude23" {>= "4.1"}
+  "deb-libpreludedb7" {>= "4.1"}
+  "deb-libwrap0" {>= "7.6-4~"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-ucf"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "prelude-manager_4.1.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/prelude-manager/prelude-manager_4.1.1-2_amd64.deb"
+}

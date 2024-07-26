@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libponapi-client-perl_0.002012-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libponapi-client-perl"]
+]
+depends: [
+  "deb-libhijk-perl"
+  "deb-libjson-maybexs-perl"
+  "deb-libmoose-perl"
+  "deb-liburi-perl"
+  "deb-libyahc-perl"
+  "deb-perl-any"
+]
+extra-source "libponapi-client-perl_0.002012-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libp/libponapi-client-perl/libponapi-client-perl_0.002012-2_all.deb"
+}

@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openssh-server_1:7.9p1-10+deb10u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openssh-server"]
+]
+depends: [
+  "deb-adduser" {>= "3.9"}
+  "deb-dpkg" {>= "1.9.0"}
+  "deb-libaudit1" {>= "1-2.2.1"}
+  "deb-libc6" {>= "2.26"}
+  "deb-libcom-err2" {>= "1.43.9"}
+  "deb-libgssapi-krb5-2" {>= "1.17"}
+  "deb-libkrb5-3" {>= "1.13~alpha1+dfsg"}
+  "deb-libpam-modules" {>= "0.72-9"}
+  "deb-libpam-runtime" {>= "0.76-14"}
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-libselinux1" {>= "1.32"}
+  "deb-libssl1-1" {>= "1.1.1"}
+  "deb-libsystemd0"
+  "deb-libwrap0" {>= "7.6-4~"}
+  "deb-lsb-base" {>= "4.1+Debian3"}
+  "deb-openssh-client" {= "1-7.9p1-10+deb10u2"}
+  "deb-openssh-sftp-server"
+  "deb-procps"
+  "deb-ucf" {>= "0.28"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+conflicts: [
+  "deb-sftp"
+  "deb-ssh-socks"
+  "deb-ssh2"
+]
+extra-source "openssh-server_1:7.9p1-10+deb10u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openssh/openssh-server_7.9p1-10+deb10u2_amd64.deb"
+}

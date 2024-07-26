@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-bioc-genomicalignments_1.34.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-bioc-genomicalignments"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.2.20221110-1"}
+  "deb-r-bioc-biocgenerics"
+  "deb-r-bioc-biocgenerics" {>= "0.37.0"}
+  "deb-r-bioc-biocparallel"
+  "deb-r-bioc-biostrings" {>= "2.55.7"}
+  "deb-r-bioc-genomeinfodb" {>= "1.13.1"}
+  "deb-r-bioc-genomicranges" {>= "1.41.5"}
+  "deb-r-bioc-iranges" {>= "2.23.9"}
+  "deb-r-bioc-rsamtools" {>= "1.31.2"}
+  "deb-r-bioc-s4vectors" {>= "0.27.12"}
+  "deb-r-bioc-summarizedexperiment" {>= "1.9.13"}
+]
+extra-source "r-bioc-genomicalignments_1.34.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-bioc-genomicalignments/r-bioc-genomicalignments_1.34.0-1_amd64.deb"
+}

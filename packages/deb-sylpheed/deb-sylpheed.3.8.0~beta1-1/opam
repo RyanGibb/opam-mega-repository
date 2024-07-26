@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sylpheed_3.8.0~beta1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sylpheed"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libcompfaceg1"
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libenchant-2-2" {>= "2.2.3"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libgpgme11" {>= "1.4.1"}
+  "deb-libgtk2-0-0" {>= "2.24.0"}
+  "deb-libgtkspell0" {>= "2.0.16-1.3~"}
+  "deb-libldap-2-5-0" {>= "2.5.4"}
+  "deb-libonig5" {>= "6.8.1"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-pinentry-gtk2"
+  "deb-sensible-utils"
+]
+extra-source "sylpheed_3.8.0~beta1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sylpheed/sylpheed_3.8.0~beta1-1_amd64.deb"
+}

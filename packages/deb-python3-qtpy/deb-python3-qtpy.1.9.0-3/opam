@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-qtpy_1.9.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-qtpy"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-mock"
+  "deb-python3-pyqt5"
+  "deb-python3-pyqt5-qtmultimedia"
+  "deb-python3-pyqt5-qtopengl"
+  "deb-python3-pyqt5-qtpositioning"
+  "deb-python3-pyqt5-qtquick"
+  "deb-python3-pyqt5-qtsql"
+  "deb-python3-pyqt5-qtsvg"
+  "deb-python3-pyqt5-qtwebchannel"
+  "deb-python3-pyqt5-qtwebkit"
+  "deb-python3-pyqt5-qtwebsockets"
+  "deb-python3-pyqt5-qtxmlpatterns"
+]
+extra-source "python3-qtpy_1.9.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-qtpy/python3-qtpy_1.9.0-3_all.deb"
+}

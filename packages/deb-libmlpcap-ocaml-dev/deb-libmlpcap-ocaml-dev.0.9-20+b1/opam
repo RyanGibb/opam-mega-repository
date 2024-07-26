@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmlpcap-ocaml-dev_0.9-20+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmlpcap-ocaml-dev"]
+]
+depends: [
+  "deb-camlidl"
+  "deb-libffcall-dev"
+  "deb-libmlpcap-ocaml"
+  "deb-libmlpcap-ocaml" {= "0.9-20+b1"}
+  "deb-libpcap0-8-dev"
+  "deb-ocaml"
+]
+extra-source "libmlpcap-ocaml-dev_0.9-20+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mlpcap/libmlpcap-ocaml-dev_0.9-20+b1_amd64.deb"
+}

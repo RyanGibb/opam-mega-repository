@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmaven-ejb-plugin-java_2.5.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmaven-ejb-plugin-java"]
+]
+depends: [
+  "deb-libcommons-io-java"
+  "deb-libmaven-archiver-java" {>= "3.1.1"}
+  "deb-libmaven-filtering-java" {>= "3.1.1"}
+  "deb-libmaven3-core-java" {>= "3.5.0"}
+  "deb-libplexus-archiver-java" {>= "3.5"}
+  "deb-libplexus-interpolation-java" {>= "1.24"}
+  "deb-libplexus-utils-java"
+]
+extra-source "libmaven-ejb-plugin-java_2.5.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/maven-ejb-plugin/libmaven-ejb-plugin-java_2.5.1-1_all.deb"
+}

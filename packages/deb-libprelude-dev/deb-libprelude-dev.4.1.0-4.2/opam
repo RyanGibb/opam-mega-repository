@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libprelude-dev_4.1.0-4.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libprelude-dev"]
+]
+depends: [
+  "deb-libgcrypt20-dev"
+  "deb-libgnutls28-dev"
+  "deb-libltdl-dev"
+  "deb-libprelude23" {= "4.1.0-4.2"}
+  "deb-libpreludecpp8" {= "4.1.0-4.2"}
+]
+extra-source "libprelude-dev_4.1.0-4.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libp/libprelude/libprelude-dev_4.1.0-4.2_amd64.deb"
+}

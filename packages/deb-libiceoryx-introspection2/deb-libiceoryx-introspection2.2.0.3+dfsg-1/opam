@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libiceoryx-introspection2_2.0.3+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libiceoryx-introspection2"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libiceoryx-hoofs2" {>= "2.0.3+dfsg"}
+  "deb-libiceoryx-posh2" {>= "2.0.3+dfsg"}
+  "deb-libncurses6" {>= "6"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtinfo6" {>= "6"}
+]
+extra-source "libiceoryx-introspection2_2.0.3+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/iceoryx/libiceoryx-introspection2_2.0.3+dfsg-1_amd64.deb"
+}

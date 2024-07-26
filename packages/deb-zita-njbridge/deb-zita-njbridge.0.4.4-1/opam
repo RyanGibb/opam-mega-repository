@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i zita-njbridge_0.4.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r zita-njbridge"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libzita-resampler1"
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+]
+extra-source "zita-njbridge_0.4.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/z/zita-njbridge/zita-njbridge_0.4.4-1_amd64.deb"
+}

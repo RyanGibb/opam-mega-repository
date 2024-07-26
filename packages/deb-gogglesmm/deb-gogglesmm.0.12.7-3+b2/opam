@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gogglesmm_0.12.7-3+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gogglesmm"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libdbus-1-3" {>= "1.9.14"}
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libfox-1-6-0"
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgcrypt20" {>= "1.7.0"}
+  "deb-libsqlite3-0" {>= "3.5.9"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libtag1v5" {>= "1.9.1-2.2~"}
+  "deb-libx11-6"
+  "deb-libxine2" {>= "1.2.0"}
+  ("deb-libgl1-mesa-glx" | "deb- libgl1")
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+extra-source "gogglesmm_0.12.7-3+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gogglesmm/gogglesmm_0.12.7-3+b2_amd64.deb"
+}

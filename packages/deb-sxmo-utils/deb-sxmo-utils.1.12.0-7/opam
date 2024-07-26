@@ -1,0 +1,47 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sxmo-utils_1.12.0-7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sxmo-utils"]
+]
+depends: [
+  "deb-bc"
+  "deb-bemenu"
+  "deb-callaudiod"
+  "deb-fonts-noto-color-emoji"
+  "deb-foot"
+  "deb-gojq"
+  "deb-grim"
+  "deb-inotify-tools"
+  "deb-j4-dmenu-desktop"
+  "deb-libc6" {>= "2.34"}
+  "deb-libcallaudio-tools"
+  "deb-libnotify-bin"
+  "deb-light"
+  "deb-lisgd"
+  "deb-mako-notifier"
+  "deb-mmsd-tng"
+  "deb-net-tools"
+  "deb-pamixer"
+  "deb-pipewire"
+  "deb-pipewire-pulse"
+  "deb-pnc"
+  "deb-pulseaudio-utils"
+  "deb-rfkill"
+  "deb-slurp"
+  "deb-sway"
+  "deb-swayidle"
+  "deb-swaylock"
+  "deb-vvmd"
+  "deb-wayout"
+  "deb-wireplumber"
+  "deb-wl-clipboard"
+  "deb-wob"
+  "deb-wtype"
+  "deb-wvkbd"
+  "deb-xdg-user-dirs"
+]
+extra-source "sxmo-utils_1.12.0-7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sxmo-utils/sxmo-utils_1.12.0-7_amd64.deb"
+}

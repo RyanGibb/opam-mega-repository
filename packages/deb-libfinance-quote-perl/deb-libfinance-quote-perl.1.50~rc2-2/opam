@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libfinance-quote-perl_1.50~rc2-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libfinance-quote-perl"]
+]
+depends: [
+  "deb-libcgi-pm-perl"
+  "deb-libdatetime-format-strptime-perl"
+  "deb-libdatetime-perl"
+  "deb-libencode-perl"
+  "deb-libhtml-parser-perl"
+  "deb-libhtml-tableextract-perl"
+  "deb-libhtml-tokeparser-simple-perl"
+  "deb-libhtml-tree-perl"
+  "deb-libhtml-treebuilder-xpath-perl"
+  "deb-libhttp-cookies-perl"
+  "deb-libhttp-message-perl"
+  "deb-libio-compress-perl"
+  "deb-libjson-parse-perl"
+  "deb-libjson-perl"
+  "deb-liblwp-protocol-https-perl"
+  "deb-libscalar-list-utils-perl"
+  "deb-libspreadsheet-xlsx-perl"
+  "deb-libtext-template-perl"
+  "deb-libtext-trim-perl"
+  "deb-libtry-tiny-perl"
+  "deb-liburi-perl"
+  "deb-libweb-scraper-perl"
+  "deb-libwww-perl"
+  "deb-libxml-libxml-perl"
+  "deb-perl-any"
+]
+extra-source "libfinance-quote-perl_1.50~rc2-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libf/libfinance-quote-perl/libfinance-quote-perl_1.50~rc2-2_all.deb"
+}

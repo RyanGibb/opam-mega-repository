@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libethumb1_1.21.1-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libethumb1"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libecore-evas1" {>= "1.21.1-0~eo"}
+  "deb-libecore-file1" {>= "1.21.1-0~eo"}
+  "deb-libecore-imf1" {>= "1.21.1-0~eo"}
+  "deb-libecore1" {>= "1.21.1-0~eo"}
+  "deb-libedje1" {>= "1.21.1-0~eo"}
+  "deb-libeet1" {>= "1.21.1-0~eo"}
+  "deb-libeina1a" {>= "1.21.1-0~eo"}
+  "deb-libemile1" {>= "1.21.1-0~eo"}
+  "deb-libevas1" {>= "1.21.1-0~eo"}
+]
+extra-source "libethumb1_1.21.1-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/efl/libethumb1_1.21.1-5_amd64.deb"
+}

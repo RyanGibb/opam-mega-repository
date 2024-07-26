@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-tornado_6.1.0-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-tornado"]
+]
+depends: [
+  "deb-ca-certificates"
+  "deb-libc6" {>= "2.4"}
+  "deb-python3" {< "3.10"}
+  "deb-python3" {>= "3.9~"}
+  "deb-python3-any"
+]
+extra-source "python3-tornado_6.1.0-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-tornado/python3-tornado_6.1.0-1+b1_amd64.deb"
+}

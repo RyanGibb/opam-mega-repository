@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-bioc-biocviews_1.66.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-bioc-biocviews"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.2.20221110-1"}
+  "deb-r-bioc-biobase"
+  "deb-r-bioc-biocgenerics"
+  "deb-r-bioc-graph" {>= "1.9.26"}
+  "deb-r-bioc-rbgl" {>= "1.13.5"}
+  "deb-r-cran-biocmanager"
+  "deb-r-cran-rcurl"
+  "deb-r-cran-runit"
+  "deb-r-cran-xml"
+]
+extra-source "r-bioc-biocviews_1.66.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-bioc-biocviews/r-bioc-biocviews_1.66.2-1_all.deb"
+}

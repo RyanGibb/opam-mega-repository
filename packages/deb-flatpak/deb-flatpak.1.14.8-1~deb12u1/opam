@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i flatpak_1.14.8-1~deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r flatpak"]
+]
+depends: [
+  "deb-adduser"
+  "deb-bubblewrap" {>= "0.5.0"}
+  "deb-fuse3"
+  "deb-libappstream4" {>= "0.10.0"}
+  "deb-libarchive13" {>= "3.0.4"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libdconf1" {>= "0.26.0"}
+  "deb-libfuse3-3" {>= "3.2.3"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.67.3+git20210214"}
+  "deb-libgpgme11" {>= "1.1.8"}
+  "deb-libjson-glib-1-0-0" {>= "1.5.2"}
+  "deb-libmalcontent-0-0" {>= "0.6.0"}
+  "deb-libostree-1-1" {>= "2020.8"}
+  "deb-libpolkit-agent-1-0" {>= "0.105"}
+  "deb-libpolkit-gobject-1-0" {>= "0.101"}
+  "deb-libseccomp2" {>= "2.5.2"}
+  "deb-libsystemd0"
+  "deb-libxau6" {>= "1-1.0.9"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libzstd1" {>= "1.5.2"}
+  "deb-xdg-dbus-proxy" {>= "0.1.0"}
+]
+conflicts: [
+  "deb-xdg-app"
+]
+extra-source "flatpak_1.14.8-1~deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/flatpak/flatpak_1.14.8-1~deb12u1_amd64.deb"
+}

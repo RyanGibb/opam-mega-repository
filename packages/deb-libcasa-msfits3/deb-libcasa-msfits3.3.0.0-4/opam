@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcasa-msfits3_3.0.0-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcasa-msfits3"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libcasa-casa3"
+  "deb-libcasa-fits3"
+  "deb-libcasa-measures3"
+  "deb-libcasa-ms3"
+  "deb-libcasa-scimath3"
+  "deb-libcasa-tables3"
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libstdc++6" {>= "5.2"}
+]
+extra-source "libcasa-msfits3_3.0.0-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/casacore/libcasa-msfits3_3.0.0-4_amd64.deb"
+}

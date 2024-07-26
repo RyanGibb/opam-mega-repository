@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i criticalmass_1:1.0.2-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r criticalmass"]
+]
+depends: [
+  "deb-criticalmass-data" {= "1-1.0.2-2"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libgl1"
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libsdl-image1-2" {>= "1.2.10"}
+  "deb-libsdl-mixer1-2"
+  "deb-libsdl1-2debian" {>= "1.2.11"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "criticalmass_1:1.0.2-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/criticalmass/criticalmass_1.0.2-2_amd64.deb"
+}

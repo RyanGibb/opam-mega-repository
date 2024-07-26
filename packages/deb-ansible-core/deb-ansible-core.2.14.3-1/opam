@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ansible-core_2.14.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ansible-core"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-cryptography"
+  "deb-python3-distutils"
+  "deb-python3-dnspython"
+  "deb-python3-httplib2"
+  "deb-python3-jinja2" {>= "3.0.0~"}
+  "deb-python3-netaddr"
+  "deb-python3-packaging"
+  "deb-python3-pycryptodome"
+  "deb-python3-resolvelib" {< "0.10"}
+  "deb-python3-yaml" {>= "5.1~"}
+  ("deb-openssh-client" | "deb- python3-paramiko" {>= "2.6.0"})
+]
+extra-source "ansible-core_2.14.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/ansible-core/ansible-core_2.14.3-1_all.deb"
+}

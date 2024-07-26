@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libruby3.1_3.1.2-7+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libruby3.1"]
+]
+depends: [
+  "deb-libc6" {>= "2.35"}
+  "deb-libcrypt1" {>= "1-4.1.0"}
+  "deb-libedit2" {>= "3.1-20221030-2"}
+  "deb-libffi8" {>= "3.4"}
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-libncurses6" {>= "6"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-libyaml-0-2"
+  "deb-rake" {>= "10.4.2"}
+  "deb-ruby-net-telnet" {>= "0.1.1"}
+  "deb-ruby-sdbm" {>= "1.0.0-3~"}
+  "deb-ruby-webrick" {>= "1.7.0-4~"}
+  "deb-ruby-xmlrpc" {>= "0.3.1~"}
+  "deb-zlib1g" {>= "1-1.2.2"}
+]
+extra-source "libruby3.1_3.1.2-7+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby3.1/libruby3.1_3.1.2-7+deb12u1_amd64.deb"
+}

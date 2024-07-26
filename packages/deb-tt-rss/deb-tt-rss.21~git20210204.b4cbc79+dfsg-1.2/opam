@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tt-rss_21~git20210204.b4cbc79+dfsg-1.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tt-rss"]
+]
+depends: [
+  "deb-dbconfig-common"
+  "deb-fonts-material-design-icons-iconfont"
+  "deb-libjs-dojo-core" {>= "1.9.0"}
+  "deb-libjs-dojo-dijit" {>= "1.9.0"}
+  "deb-libjs-scriptaculous"
+  "deb-php-cli"
+  "deb-php-intl"
+  "deb-php-json"
+  "deb-php-mbstring"
+  "deb-php-php-gettext" {>= "1.0.11-4"}
+  "deb-php-psr-log"
+  "deb-php-xml"
+  "deb-phpqrcode"
+  "deb-sysvinit-utils"
+  ("deb-dbconfig-mysql" | "deb- dbconfig-pgsql" | "deb- dbconfig-no-thanks")
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-libapache2-mod-php" {>= "5.6.0"} | "deb- php-cgi" {>= "5.6.0"} | "deb- php" {>= "5.6.0"})
+  ("deb-php-mysql" | "deb- php-pgsql")
+]
+extra-source "tt-rss_21~git20210204.b4cbc79+dfsg-1.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tt-rss/tt-rss_21~git20210204.b4cbc79+dfsg-1.2_all.deb"
+}

@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i caja_1.20.3-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r caja"]
+]
+depends: [
+  "deb-caja-common" {= "1.20.3-1"}
+  "deb-desktop-file-utils"
+  "deb-gvfs"
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.10.0"}
+  "deb-libcaja-extension1" {= "1.20.3-1+b1"}
+  "deb-libexempi8" {>= "2.5.0"}
+  "deb-libexif12" {>= "0.6.21-1~"}
+  "deb-libgail-3-0" {>= "3.0.0"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.41.1"}
+  "deb-libglib2-0-bin"
+  "deb-libglib2-0-data"
+  "deb-libgtk-3-0" {>= "3.21.4"}
+  "deb-libice6" {>= "1-1.0.0"}
+  "deb-libmate-desktop-2-17" {>= "1.19.2"}
+  "deb-libnotify4" {>= "0.7.0"}
+  "deb-libpango-1-0-0" {>= "1.20.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libselinux1" {>= "1.32"}
+  "deb-libsm6"
+  "deb-libstartup-notification0" {>= "0.2"}
+  "deb-libx11-6"
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-mate-desktop"
+  "deb-shared-mime-info"
+]
+extra-source "caja_1.20.3-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/caja/caja_1.20.3-1+b1_amd64.deb"
+}

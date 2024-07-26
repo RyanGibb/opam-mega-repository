@@ -1,0 +1,106 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add linux-firmware-20230515-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del linux-firmware"]
+]
+depends: [
+  "apk-linux-firmware-3com" {= "20230515-r6"}
+  "apk-linux-firmware-acenic" {= "20230515-r6"}
+  "apk-linux-firmware-adaptec" {= "20230515-r6"}
+  "apk-linux-firmware-advansys" {= "20230515-r6"}
+  "apk-linux-firmware-amd" {= "20230515-r6"}
+  "apk-linux-firmware-amd-ucode" {= "20230515-r6"}
+  "apk-linux-firmware-amdgpu" {= "20230515-r6"}
+  "apk-linux-firmware-amphion" {= "20230515-r6"}
+  "apk-linux-firmware-ar3k" {= "20230515-r6"}
+  "apk-linux-firmware-ath10k" {= "20230515-r6"}
+  "apk-linux-firmware-ath11k" {= "20230515-r6"}
+  "apk-linux-firmware-ath6k" {= "20230515-r6"}
+  "apk-linux-firmware-ath9k_htc" {= "20230515-r6"}
+  "apk-linux-firmware-atmel" {= "20230515-r6"}
+  "apk-linux-firmware-atusb" {= "20230515-r6"}
+  "apk-linux-firmware-av7110" {= "20230515-r6"}
+  "apk-linux-firmware-bnx2" {= "20230515-r6"}
+  "apk-linux-firmware-bnx2x" {= "20230515-r6"}
+  "apk-linux-firmware-brcm" {= "20230515-r6"}
+  "apk-linux-firmware-cadence" {= "20230515-r6"}
+  "apk-linux-firmware-cavium" {= "20230515-r6"}
+  "apk-linux-firmware-cirrus" {= "20230515-r6"}
+  "apk-linux-firmware-cis" {= "20230515-r6"}
+  "apk-linux-firmware-cnm" {= "20230515-r6"}
+  "apk-linux-firmware-cpia2" {= "20230515-r6"}
+  "apk-linux-firmware-cxgb3" {= "20230515-r6"}
+  "apk-linux-firmware-cxgb4" {= "20230515-r6"}
+  "apk-linux-firmware-cypress" {= "20230515-r6"}
+  "apk-linux-firmware-dabusb" {= "20230515-r6"}
+  "apk-linux-firmware-dpaa2" {= "20230515-r6"}
+  "apk-linux-firmware-dsp56k" {= "20230515-r6"}
+  "apk-linux-firmware-e100" {= "20230515-r6"}
+  "apk-linux-firmware-edgeport" {= "20230515-r6"}
+  "apk-linux-firmware-emi26" {= "20230515-r6"}
+  "apk-linux-firmware-emi62" {= "20230515-r6"}
+  "apk-linux-firmware-ene-ub6250" {= "20230515-r6"}
+  "apk-linux-firmware-ess" {= "20230515-r6"}
+  "apk-linux-firmware-go7007" {= "20230515-r6"}
+  "apk-linux-firmware-i915" {= "20230515-r6"}
+  "apk-linux-firmware-imx" {= "20230515-r6"}
+  "apk-linux-firmware-inside-secure" {= "20230515-r6"}
+  "apk-linux-firmware-intel" {= "20230515-r6"}
+  "apk-linux-firmware-isci" {= "20230515-r6"}
+  "apk-linux-firmware-kaweth" {= "20230515-r6"}
+  "apk-linux-firmware-keyspan" {= "20230515-r6"}
+  "apk-linux-firmware-keyspan_pda" {= "20230515-r6"}
+  "apk-linux-firmware-korg" {= "20230515-r6"}
+  "apk-linux-firmware-libertas" {= "20230515-r6"}
+  "apk-linux-firmware-liquidio" {= "20230515-r6"}
+  "apk-linux-firmware-matrox" {= "20230515-r6"}
+  "apk-linux-firmware-mediatek" {= "20230515-r6"}
+  "apk-linux-firmware-mellanox" {= "20230515-r6"}
+  "apk-linux-firmware-meson" {= "20230515-r6"}
+  "apk-linux-firmware-microchip" {= "20230515-r6"}
+  "apk-linux-firmware-moxa" {= "20230515-r6"}
+  "apk-linux-firmware-mrvl" {= "20230515-r6"}
+  "apk-linux-firmware-mwl8k" {= "20230515-r6"}
+  "apk-linux-firmware-mwlwifi" {= "20230515-r6"}
+  "apk-linux-firmware-myricom" {= "20230515-r6"}
+  "apk-linux-firmware-netronome" {= "20230515-r6"}
+  "apk-linux-firmware-nvidia" {= "20230515-r6"}
+  "apk-linux-firmware-nxp" {= "20230515-r6"}
+  "apk-linux-firmware-ositech" {= "20230515-r6"}
+  "apk-linux-firmware-other" {= "20230515-r6"}
+  "apk-linux-firmware-qca" {= "20230515-r6"}
+  "apk-linux-firmware-qcom" {= "20230515-r6"}
+  "apk-linux-firmware-qed" {= "20230515-r6"}
+  "apk-linux-firmware-qlogic" {= "20230515-r6"}
+  "apk-linux-firmware-r128" {= "20230515-r6"}
+  "apk-linux-firmware-radeon" {= "20230515-r6"}
+  "apk-linux-firmware-rockchip" {= "20230515-r6"}
+  "apk-linux-firmware-rsi" {= "20230515-r6"}
+  "apk-linux-firmware-rtl8192e" {= "20230515-r6"}
+  "apk-linux-firmware-rtl_bt" {= "20230515-r6"}
+  "apk-linux-firmware-rtl_nic" {= "20230515-r6"}
+  "apk-linux-firmware-rtlwifi" {= "20230515-r6"}
+  "apk-linux-firmware-rtw88" {= "20230515-r6"}
+  "apk-linux-firmware-rtw89" {= "20230515-r6"}
+  "apk-linux-firmware-sb16" {= "20230515-r6"}
+  "apk-linux-firmware-slicoss" {= "20230515-r6"}
+  "apk-linux-firmware-sun" {= "20230515-r6"}
+  "apk-linux-firmware-sxg" {= "20230515-r6"}
+  "apk-linux-firmware-tehuti" {= "20230515-r6"}
+  "apk-linux-firmware-ti" {= "20230515-r6"}
+  "apk-linux-firmware-ti-connectivity" {= "20230515-r6"}
+  "apk-linux-firmware-ti-keystone" {= "20230515-r6"}
+  "apk-linux-firmware-tigon" {= "20230515-r6"}
+  "apk-linux-firmware-ttusb-budget" {= "20230515-r6"}
+  "apk-linux-firmware-ueagle-atm" {= "20230515-r6"}
+  "apk-linux-firmware-vicam" {= "20230515-r6"}
+  "apk-linux-firmware-vxge" {= "20230515-r6"}
+  "apk-linux-firmware-wfx" {= "20230515-r6"}
+  "apk-linux-firmware-yam" {= "20230515-r6"}
+  "apk-linux-firmware-yamaha" {= "20230515-r6"}
+]
+extra-source "linux-firmware-20230515-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/linux-firmware-20230515-r6.apk"
+}

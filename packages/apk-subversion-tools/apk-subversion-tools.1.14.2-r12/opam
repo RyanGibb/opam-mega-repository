@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add subversion-tools-1.14.2-r12.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del subversion-tools"]
+]
+depends: [
+  "apk-apr" {= "1.7.4-r0"}
+  "apk-musl" {= "1.2.4_git20230717-r4"}
+  "apk-subversion-libs" {= "1.14.2-r12"}
+]
+extra-source "subversion-tools-1.14.2-r12.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/subversion-tools-1.14.2-r12.apk"
+}

@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libnetsds-perl_1.301-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libnetsds-perl"]
+]
+depends: [
+  "deb-libcache-memcached-fast-perl"
+  "deb-libcgi-fast-perl"
+  "deb-libclass-accessor-class-perl"
+  "deb-libclass-accessor-perl"
+  "deb-libclass-errorhandler-perl"
+  "deb-libconfig-general-perl"
+  "deb-libdata-structure-util-perl"
+  "deb-libdbd-pg-perl"
+  "deb-libdbi-perl"
+  "deb-libfcgi-perl"
+  "deb-libhtml-template-pro-perl"
+  "deb-libjson-perl"
+  "deb-libjson-xs-perl"
+  "deb-liblocale-gettext-perl"
+  "deb-libnet-server-mail-perl"
+  "deb-libnetsds-util-perl"
+  "deb-libproc-daemon-perl"
+  "deb-libproc-pid-file-perl"
+  "deb-libunix-syslog-perl"
+  "deb-perl-any"
+]
+extra-source "libnetsds-perl_1.301-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libn/libnetsds-perl/libnetsds-perl_1.301-4_all.deb"
+}

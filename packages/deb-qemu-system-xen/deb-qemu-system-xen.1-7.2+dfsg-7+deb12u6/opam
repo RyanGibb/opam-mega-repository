@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qemu-system-xen_1:7.2+dfsg-7+deb12u6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qemu-system-xen"]
+]
+depends: [
+  "deb-ipxe-qemu"
+  "deb-libc6" {>= "2.34"}
+  "deb-libfdt1" {>= "1.6.1"}
+  "deb-libgcc-s1" {>= "3.4"}
+  "deb-libglib2-0-0" {>= "2.67.3"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libpixman-1-0" {>= "0.19.6"}
+  "deb-libspice-server1" {>= "0.14.2"}
+  "deb-libusb-1-0-0" {>= "2-1.0.23~"}
+  "deb-libxendevicemodel1" {>= "4.17.3+10-g091466ba55"}
+  "deb-libxenevtchn1" {>= "4.17.3+10-g091466ba55"}
+  "deb-libxenforeignmemory1" {>= "4.17.3+10-g091466ba55"}
+  "deb-libxengnttab1" {>= "4.17.3+10-g091466ba55"}
+  "deb-libxenmisc4-17" {>= "4.17.3+10-g091466ba55"}
+  "deb-libxenstore4" {>= "4.16.0"}
+  "deb-libxentoolcore1" {>= "4.17.3+10-g091466ba55"}
+  "deb-qemu-system-data" {> "1-7.2+dfsg~"}
+  "deb-seabios"
+  "deb-zlib1g" {>= "1-1.2.0"}
+]
+extra-source "qemu-system-xen_1:7.2+dfsg-7+deb12u6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-system-xen_7.2+dfsg-7+deb12u6_amd64.deb"
+}

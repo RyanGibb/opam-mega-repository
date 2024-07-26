@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gap-dev_4.11.0-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gap-dev"]
+]
+depends: [
+  "deb-gap-core" {= "4.11.0-4"}
+  "deb-gcc"
+  "deb-libgap-dev" {= "4.11.0-4"}
+  "deb-libgmp-dev"
+]
+extra-source "gap-dev_4.11.0-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gap/gap-dev_4.11.0-4_amd64.deb"
+}

@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i composer_2.5.5-1+deb12u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r composer"]
+]
+depends: [
+  "deb-jsonlint" {< "2~~"}
+  "deb-jsonlint" {>= "1.4"}
+  "deb-php-cli"
+  "deb-php-common"
+  "deb-php-composer-ca-bundle" {< "2~~"}
+  "deb-php-composer-ca-bundle" {>= "1.0"}
+  "deb-php-composer-class-map-generator" {< "2~~"}
+  "deb-php-composer-class-map-generator" {>= "1.0"}
+  "deb-php-composer-metadata-minifier" {< "2~~"}
+  "deb-php-composer-metadata-minifier" {>= "1.0"}
+  "deb-php-composer-pcre" {> "2.1"}
+  "deb-php-composer-semver" {< "4~~"}
+  "deb-php-composer-semver" {>= "3.0"}
+  "deb-php-composer-spdx-licenses" {< "2~~"}
+  "deb-php-composer-spdx-licenses" {>= "1.5.7"}
+  "deb-php-composer-xdebug-handler" {> "2.0.2"}
+  "deb-php-json-schema" {< "6~~"}
+  "deb-php-json-schema" {>= "5.2.11"}
+  "deb-php-psr-log"
+  "deb-php-react-promise" {< "3~~"}
+  "deb-php-react-promise" {>= "2.8"}
+  "deb-php-seld-signal-handler" {< "3~~"}
+  "deb-php-seld-signal-handler" {>= "2.0"}
+  "deb-php-symfony-console" {> "5.4.11"}
+  "deb-php-symfony-filesystem" {> "5.4"}
+  "deb-php-symfony-finder" {> "5.4"}
+  "deb-php-symfony-process" {> "5.4"}
+]
+extra-source "composer_2.5.5-1+deb12u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/composer/composer_2.5.5-1+deb12u2_all.deb"
+}

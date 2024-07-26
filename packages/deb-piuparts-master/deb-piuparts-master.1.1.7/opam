@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i piuparts-master_1.1.7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r piuparts-master"]
+]
+depends: [
+  "deb-adduser"
+  "deb-openssh-server"
+  "deb-piuparts-common" {< "1.1.7+"}
+  "deb-piuparts-common" {>= "1.1.7"}
+  "deb-python3-any"
+  "deb-python3-debianbts"
+  "deb-python3-setproctitle"
+  "deb-python3-yaml"
+  "deb-tango-icon-theme"
+  "deb-xz-utils"
+]
+extra-source "piuparts-master_1.1.7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/piuparts/piuparts-master_1.1.7_amd64.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-glib-dev_0.13.8.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-glib-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.14"}
+  "deb-libghc-utf8-string-dev"
+  "deb-libglib2-0-0" {>= "2.31.8"}
+  "deb-libglib2-0-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-glib-dev_0.13.8.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-glib/libghc-glib-dev_0.13.8.1-1_amd64.deb"
+}

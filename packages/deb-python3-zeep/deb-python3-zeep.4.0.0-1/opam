@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-zeep_4.0.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-zeep"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-appdirs" {>= "1.4.0"}
+  "deb-python3-attr"
+  "deb-python3-cached-property"
+  "deb-python3-defusedxml"
+  "deb-python3-freezegun"
+  "deb-python3-isodate"
+  "deb-python3-lxml"
+  "deb-python3-pkg-resources"
+  "deb-python3-requests"
+  "deb-python3-requests-file"
+  "deb-python3-requests-toolbelt"
+  "deb-python3-six"
+  "deb-python3-tz"
+]
+extra-source "python3-zeep_4.0.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-zeep/python3-zeep_4.0.0-1_all.deb"
+}

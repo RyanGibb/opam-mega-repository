@@ -1,0 +1,42 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openqa_4.6.1674490999.b00c12673-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openqa"]
+]
+depends: [
+  "deb-dbus"
+  "deb-fonts-fork-awesome"
+  "deb-git"
+  "deb-libclass-c3-componentised-perl"
+  "deb-libcommonmark-perl"
+  "deb-libdatetime-format-pg-perl"
+  "deb-libdbix-class-deploymenthandler-perl"
+  "deb-libdbix-class-perl" {>= "0.082801"}
+  "deb-libjs-codemirror"
+  "deb-libjs-cropper"
+  "deb-libjs-jquery"
+  "deb-libjs-jquery-datatables"
+  "deb-libjs-jquery-timeago"
+  "deb-libjs-popper-js"
+  "deb-libjson-validator-perl"
+  "deb-liblwp-protocol-https-perl"
+  "deb-libminion-perl" {>= "10.25"}
+  "deb-libmojo-pg-perl"
+  "deb-libmojo-sqlite-perl"
+  "deb-libsql-splitstatement-perl"
+  "deb-libtext-diff-perl"
+  "deb-liburi-perl"
+  "deb-libyaml-pp-perl"
+  "deb-node-jquery-ujs" {>= "1.2.3-1"}
+  "deb-openqa-client" {>= "4.6.1674490999.b00c12673-2"}
+  "deb-openqa-common" {>= "4.6.1674490999.b00c12673-2"}
+  "deb-optipng"
+  "deb-perl-any"
+  "deb-postgresql"
+  "deb-sqlite3"
+]
+extra-source "openqa_4.6.1674490999.b00c12673-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openqa/openqa_4.6.1674490999.b00c12673-2_all.deb"
+}

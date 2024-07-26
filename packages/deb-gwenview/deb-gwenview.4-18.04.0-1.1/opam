@@ -1,0 +1,58 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gwenview_4:18.04.0-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gwenview"]
+]
+depends: [
+  "deb-kinit"
+  "deb-kio"
+  "deb-libc6" {>= "2.14"}
+  "deb-libcfitsio7" {>= "3.450~"}
+  "deb-libexiv2-14" {>= "0.25"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libkf5activities5" {>= "5.25~"}
+  "deb-libkf5baloo5" {>= "5.3.0+git20150512"}
+  "deb-libkf5completion5" {>= "4.97.0"}
+  "deb-libkf5configcore5" {>= "4.98.0"}
+  "deb-libkf5configgui5" {>= "4.97.0"}
+  "deb-libkf5configwidgets5" {>= "5.23.0"}
+  "deb-libkf5coreaddons5" {>= "4.100.0"}
+  "deb-libkf5filemetadata3" {>= "5.1.0.1"}
+  "deb-libkf5i18n5" {>= "4.97.0"}
+  "deb-libkf5iconthemes5" {>= "4.96.0"}
+  "deb-libkf5itemmodels5" {>= "4.96.0"}
+  "deb-libkf5itemviews5" {>= "4.96.0"}
+  "deb-libkf5jobwidgets5" {>= "4.96.0"}
+  "deb-libkf5kdcraw5" {>= "4.12.3"}
+  "deb-libkf5kiocore5" {>= "5.44.0"}
+  "deb-libkf5kiofilewidgets5" {>= "5.41.0"}
+  "deb-libkf5kiowidgets5" {>= "5.24.0"}
+  "deb-libkf5kipi32-0-0"
+  "deb-libkf5notifications5" {>= "4.96.0"}
+  "deb-libkf5parts5" {>= "4.96.0"}
+  "deb-libkf5service-bin"
+  "deb-libkf5service5" {>= "4.96.0"}
+  "deb-libkf5solid5" {>= "4.97.0"}
+  "deb-libkf5widgetsaddons5" {>= "4.96.0"}
+  "deb-libkf5xmlgui5" {>= "4.98.0"}
+  "deb-liblcms2-2" {>= "2.2+git20110628"}
+  "deb-libphonon4qt5-4" {>= "4-4.8.0"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5dbus5" {>= "5.6.0~"}
+  "deb-libqt5gui5" {>= "5.8.0"}
+  "deb-libqt5opengl5" {>= "5.6.0~"}
+  "deb-libqt5printsupport5" {>= "5.6.0~"}
+  "deb-libqt5svg5" {>= "5.6.0~beta"}
+  "deb-libqt5widgets5" {>= "5.11.0~rc1"}
+  "deb-libqt5x11extras5" {>= "5.6.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libx11-6"
+  "deb-phonon4qt5"
+]
+extra-source "gwenview_4:18.04.0-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gwenview/gwenview_18.04.0-1.1_amd64.deb"
+}

@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-maotai_0.2.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-maotai"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgomp1" {>= "4.9"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.1.2-2"}
+  "deb-r-cran-cluster"
+  "deb-r-cran-dbscan"
+  "deb-r-cran-fastcluster"
+  "deb-r-cran-labdsv"
+  "deb-r-cran-matrix"
+  "deb-r-cran-rann"
+  "deb-r-cran-rcpp"
+  "deb-r-cran-rcpparmadillo"
+  "deb-r-cran-rcppdist"
+  "deb-r-cran-rdpack"
+  "deb-r-cran-rspectra"
+  "deb-r-cran-rtsne"
+  "deb-r-cran-shapes"
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "r-cran-maotai_0.2.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-maotai/r-cran-maotai_0.2.4-1_amd64.deb"
+}

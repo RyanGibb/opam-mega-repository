@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ejabberd-contrib_0.2023.01.25~dfsg0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ejabberd-contrib"]
+]
+depends: [
+  "deb-ejabberd" {= "23.01-1"}
+  "deb-ejabberd-mod-cron"
+  "deb-ejabberd-mod-default-contacts"
+  "deb-ejabberd-mod-default-rooms"
+  "deb-ejabberd-mod-deny-omemo"
+  "deb-ejabberd-mod-filter"
+  "deb-ejabberd-mod-grafite"
+  "deb-ejabberd-mod-irc"
+  "deb-ejabberd-mod-isolation"
+  "deb-ejabberd-mod-log-chat"
+  "deb-ejabberd-mod-logsession"
+  "deb-ejabberd-mod-logxml"
+  "deb-ejabberd-mod-message-log"
+  "deb-ejabberd-mod-muc-log-http"
+  "deb-ejabberd-mod-post-log"
+  "deb-ejabberd-mod-pottymouth"
+  "deb-ejabberd-mod-rest"
+  "deb-ejabberd-mod-s2s-log"
+  "deb-ejabberd-mod-shcommands"
+  "deb-ejabberd-mod-spam-filter"
+  "deb-ejabberd-mod-statsdx"
+  "deb-ejabberd-mod-webpresence"
+  "deb-erlang-base"
+]
+extra-source "ejabberd-contrib_0.2023.01.25~dfsg0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/ejabberd-contrib/ejabberd-contrib_0.2023.01.25~dfsg0-1_all.deb"
+}

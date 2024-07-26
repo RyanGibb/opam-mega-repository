@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lxc-libs-5.0.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lxc-libs"]
+]
+depends: [
+  "apk-libcap2" {= "2.66-r1"}
+  "apk-libgcc" {= "12.2.1_git20220924-r4"}
+  "apk-libseccomp" {= "2.5.4-r0"}
+  "apk-musl" {= "1.2.3-r5"}
+]
+extra-source "lxc-libs-5.0.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lxc-libs-5.0.2-r0.apk"
+}

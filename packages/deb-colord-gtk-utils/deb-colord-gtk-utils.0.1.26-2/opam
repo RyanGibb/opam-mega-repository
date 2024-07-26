@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i colord-gtk-utils_0.1.26-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r colord-gtk-utils"]
+]
+depends: [
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.4"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libcolord-gtk1" {>= "0.1.20"}
+  "deb-libcolord2" {>= "0.1.31"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.28.0"}
+  "deb-libgtk-3-0" {>= "3.0.0"}
+  "deb-liblcms2-2" {>= "2.2+git20110628"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+]
+extra-source "colord-gtk-utils_0.1.26-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/colord-gtk/colord-gtk-utils_0.1.26-2_amd64.deb"
+}

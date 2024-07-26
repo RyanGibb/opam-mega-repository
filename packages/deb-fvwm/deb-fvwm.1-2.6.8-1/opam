@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fvwm_1:2.6.8-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fvwm"]
+]
+depends: [
+  "deb-libc6" {>= "2.15"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libfribidi0" {>= "0.19.2"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.16.0"}
+  "deb-libice6" {>= "1-1.0.0"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libreadline7" {>= "6.0"}
+  "deb-librplay3" {>= "3.3.2-2"}
+  "deb-librsvg2-2" {>= "2.14.4"}
+  "deb-libsm6"
+  "deb-libstroke0"
+  "deb-libtinfo6" {>= "6"}
+  "deb-libx11-6"
+  "deb-libxcursor1" {> "1.1.2"}
+  "deb-libxext6"
+  "deb-libxft2" {> "2.1.1"}
+  "deb-libxinerama1"
+  "deb-libxpm4"
+  "deb-libxrender1"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libperl4-corelibs-perl" | "deb- perl" {< "5.12.3-7"})
+]
+extra-source "fvwm_1:2.6.8-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fvwm/fvwm_2.6.8-1_amd64.deb"
+}

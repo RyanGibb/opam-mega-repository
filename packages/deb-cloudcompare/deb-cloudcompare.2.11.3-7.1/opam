@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cloudcompare_2.11.3-7.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cloudcompare"]
+]
+depends: [
+  "deb-libavcodec-extra59"
+  "deb-libavformat-extra59"
+  "deb-libavutil57" {>= "7-5.0"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgl1"
+  "deb-libgomp1" {>= "6"}
+  "deb-libqt5concurrent5" {>= "5.6.0~rc"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5gui5" {>= "5.1.0"}
+  "deb-libqt5opengl5" {>= "5.0.2"}
+  "deb-libqt5printsupport5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.14.1"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libswscale6" {>= "7-5.0"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "cloudcompare_2.11.3-7.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cloudcompare/cloudcompare_2.11.3-7.1_amd64.deb"
+}

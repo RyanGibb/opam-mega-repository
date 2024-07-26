@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-libnpx_10.2.0+repack-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-libnpx"]
+]
+depends: [
+  "deb-node-npm-package-arg"
+  "deb-node-rimraf" {>= "2.6.1"}
+  "deb-node-safe-buffer"
+  "deb-node-which" {>= "1.2.14"}
+  "deb-node-y18n"
+  "deb-node-yargs" {>= "8.0.2"}
+  "deb-nodejs"
+]
+extra-source "node-libnpx_10.2.0+repack-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-libnpx/node-libnpx_10.2.0+repack-1_all.deb"
+}

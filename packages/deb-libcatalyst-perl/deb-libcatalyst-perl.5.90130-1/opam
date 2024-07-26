@@ -1,0 +1,62 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcatalyst-perl_5.90130-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcatalyst-perl"]
+]
+depends: [
+  "deb-libcgi-simple-perl"
+  "deb-libcgi-struct-xs-perl"
+  "deb-libclass-accessor-perl"
+  "deb-libclass-c3-adopt-next-perl"
+  "deb-libclass-c3-perl"
+  "deb-libclass-inspector-perl"
+  "deb-libclass-load-perl"
+  "deb-libdata-dump-perl"
+  "deb-libencode-perl"
+  "deb-libextutils-autoinstall-perl"
+  "deb-libfile-copy-recursive-perl"
+  "deb-libfile-modified-perl"
+  "deb-libfile-slurp-perl"
+  "deb-libhash-multivalue-perl"
+  "deb-libhtml-parser-perl"
+  "deb-libhttp-body-perl"
+  "deb-libjson-maybexs-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-libmime-types-perl"
+  "deb-libmodule-pluggable-perl"
+  "deb-libmoose-perl"
+  "deb-libmoosex-emulate-class-accessor-fast-perl"
+  "deb-libmoosex-getopt-perl"
+  "deb-libmoosex-methodattributes-perl"
+  "deb-libnamespace-clean-perl"
+  "deb-libpath-class-perl"
+  "deb-libperlio-utf8-strict-perl"
+  "deb-libplack-middleware-fixmissingbodyinredirect-perl"
+  "deb-libplack-middleware-methodoverride-perl"
+  "deb-libplack-middleware-removeredundantbody-perl"
+  "deb-libplack-middleware-reverseproxy-perl"
+  "deb-libplack-perl"
+  "deb-libplack-test-externalserver-perl"
+  "deb-libsafe-isa-perl"
+  "deb-libscalar-list-utils-perl"
+  "deb-libscope-upper-perl"
+  "deb-libstream-buffered-perl"
+  "deb-libstring-rewriteprefix-perl"
+  "deb-libtask-weaken-perl"
+  "deb-libtest-mockobject-perl"
+  "deb-libtext-simpletable-perl"
+  "deb-libtree-simple-perl"
+  "deb-libtree-simple-visitorfactory-perl"
+  "deb-libtry-tiny-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-perl-any"
+]
+conflicts: [
+  "deb-libcatalyst-plugin-unicode-encoding-perl"
+]
+extra-source "libcatalyst-perl_5.90130-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libcatalyst-perl/libcatalyst-perl_5.90130-1_all.deb"
+}

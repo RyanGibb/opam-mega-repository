@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i yangdump_2.11-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r yangdump"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libncurses6" {>= "6"}
+  "deb-libssh2-1" {>= "1.0"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-libxml2" {>= "2.6.27"}
+  "deb-libyangrpc2"
+  "deb-libyuma-base"
+  "deb-libyuma2" {= "2.11-1"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "yangdump_2.11-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/y/yuma123/yangdump_2.11-1_amd64.deb"
+}

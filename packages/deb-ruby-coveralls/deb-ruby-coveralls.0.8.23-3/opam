@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-coveralls_0.8.23-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-coveralls"]
+]
+depends: [
+  "deb-libruby3-1"
+  "deb-ruby"
+  "deb-ruby-multi-json"
+  "deb-ruby-rest-client"
+  "deb-ruby-simplecov" {>= "0.16"}
+  "deb-ruby-simplecov-html"
+  "deb-ruby-term-ansicolor" {>= "1.3"}
+  "deb-ruby-thor" {< "2.0"}
+  "deb-ruby-thor" {>= "0.19.4"}
+]
+extra-source "ruby-coveralls_0.8.23-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-coveralls/ruby-coveralls_0.8.23-3_all.deb"
+}

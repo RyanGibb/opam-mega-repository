@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-google-cadvisor-dev_0.38.7+ds1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-google-cadvisor-dev"]
+]
+depends: [
+  "deb-golang-github-blang-semver-dev"
+  "deb-golang-github-containerd-containerd-dev"
+  "deb-golang-github-docker-go-connections-dev"
+  "deb-golang-github-docker-go-units-dev"
+  "deb-golang-github-euank-go-kmsg-parser-dev"
+  "deb-golang-github-go-logr-logr-dev"
+  "deb-golang-github-gogo-protobuf-dev"
+  "deb-golang-github-karrick-godirwalk-dev"
+  "deb-golang-github-opencontainers-runc-dev" {>= "1.0.0~rc93"}
+  "deb-golang-github-opencontainers-specs-dev"
+  "deb-golang-github-pkg-errors-dev"
+  "deb-golang-github-prometheus-client-golang-dev"
+  "deb-golang-github-prometheus-client-model-dev"
+  "deb-golang-github-prometheus-common-dev"
+  "deb-golang-go-zfs-dev"
+  "deb-golang-golang-x-net-dev"
+  "deb-golang-golang-x-sys-dev"
+  "deb-golang-google-grpc-dev"
+]
+extra-source "golang-github-google-cadvisor-dev_0.38.7+ds1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cadvisor/golang-github-google-cadvisor-dev_0.38.7+ds1-2_all.deb"
+}

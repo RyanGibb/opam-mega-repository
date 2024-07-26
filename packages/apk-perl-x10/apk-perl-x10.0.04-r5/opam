@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-x10-0.04-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-x10"]
+]
+depends: [
+  "apk-perl" {= "5.36.2-r0"}
+  "apk-perl-astro-suntime" {= "0.06-r3"}
+  "apk-perl-device-serialport" {= "1.04-r19"}
+  "apk-perl-time-parsedate" {= "2015.103-r5"}
+]
+extra-source "perl-x10-0.04-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-x10-0.04-r5.apk"
+}

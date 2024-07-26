@@ -1,0 +1,49 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libavcodec-extra58_7:4.1.9-0+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libavcodec-extra58"]
+]
+depends: [
+  "deb-libaom0" {>= "1.0.0"}
+  "deb-libavutil56" {= "7-4.1.9-0+deb10u1"}
+  "deb-libc6" {>= "2.27"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libcodec2-0-8-1"
+  "deb-libcrystalhd3" {>= "1-0.0~git20110715.fdd2f19"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libgsm1" {>= "1.0.18"}
+  "deb-liblzma5" {>= "5.1.1alpha+20120614"}
+  "deb-libmp3lame0" {>= "3.100"}
+  "deb-libopencore-amrnb0"
+  "deb-libopencore-amrwb0"
+  "deb-libopenjp2-7" {>= "2.0.0"}
+  "deb-libopus0" {>= "1.1"}
+  "deb-librsvg2-2" {>= "2.14.4"}
+  "deb-libshine3" {>= "3.1.0"}
+  "deb-libsnappy1v5"
+  "deb-libspeex1" {>= "1.2~beta3-1"}
+  "deb-libswresample3" {= "7-4.1.9-0+deb10u1"}
+  "deb-libtheora0" {>= "1.0"}
+  "deb-libtwolame0" {>= "0.3.10"}
+  "deb-libva2" {>= "2.2.0"}
+  "deb-libvo-amrwbenc0"
+  "deb-libvorbis0a" {>= "1.1.2"}
+  "deb-libvorbisenc2" {>= "1.1.2"}
+  "deb-libvpx5" {>= "1.6.0"}
+  "deb-libwavpack1" {>= "4.40.0"}
+  "deb-libwebp6" {>= "0.5.1"}
+  "deb-libwebpmux3" {>= "0.6.1-2+deb10u1"}
+  "deb-libx264-155"
+  "deb-libx265-165" {>= "2.9"}
+  "deb-libxvidcore4" {>= "1.2.2"}
+  "deb-libzvbi0" {>= "0.2.35"}
+  "deb-zlib1g" {>= "1-1.2.0"}
+]
+conflicts: [
+  "deb-libavcodec58"
+]
+extra-source "libavcodec-extra58_7:4.1.9-0+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/ffmpeg/libavcodec-extra58_4.1.9-0+deb10u1_amd64.deb"
+}

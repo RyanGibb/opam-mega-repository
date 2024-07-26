@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fwbuilder_5.3.7-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fwbuilder"]
+]
+depends: [
+  "deb-fwbuilder-common" {= "5.3.7-3"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgl1"
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5gui5" {>= "5.8.0"}
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libqt5printsupport5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.11.0~rc1"}
+  "deb-libsnmp30" {>= "5.7.3+dfsg-3~dfsg"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libxslt1-1" {>= "1.1.25"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "fwbuilder_5.3.7-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fwbuilder/fwbuilder_5.3.7-3_amd64.deb"
+}

@@ -1,0 +1,54 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qtcreator_9.0.2-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qtcreator"]
+]
+depends: [
+  "deb-clangd" {>= "1-14~"}
+  "deb-libc6" {>= "2.35"}
+  "deb-libclang-cpp14" {>= "1-14.0.6"}
+  "deb-libdw1" {>= "0.158"}
+  "deb-libelf1" {>= "0.142"}
+  "deb-libgcc-s1" {>= "3.4"}
+  "deb-libqt6concurrent6" {>= "6.2.4+dfsg-3~"}
+  "deb-libqt6core5compat6" {>= "6.2.1"}
+  "deb-libqt6core6"
+  "deb-libqt6core6" {>= "6.4.0"}
+  "deb-libqt6designer6" {>= "6.2.4-2~"}
+  "deb-libqt6designercomponents6" {>= "6.4.2~"}
+  "deb-libqt6gui6" {>= "6.4.0"}
+  "deb-libqt6help6" {>= "6.2.4-2~"}
+  "deb-libqt6network6" {>= "6.4.0"}
+  "deb-libqt6printsupport6" {>= "6.2.4+dfsg-3~"}
+  "deb-libqt6qml6" {>= "6.4.0"}
+  "deb-libqt6quick3d6" {>= "6.4.2"}
+  "deb-libqt6quick3dassetimport6" {>= "6.4.0"}
+  "deb-libqt6quick3dassetutils6" {>= "6.2.4-2~"}
+  "deb-libqt6quick3dparticles6" {>= "6.2.4-2~"}
+  "deb-libqt6quick3druntimerender6" {>= "6.4.0"}
+  "deb-libqt6quick3dutils6" {>= "6.2.4-2~"}
+  "deb-libqt6quick6" {>= "6.4.0"}
+  "deb-libqt6quickwidgets6" {>= "6.2.0"}
+  "deb-libqt6serialport6" {>= "6.2.1"}
+  "deb-libqt6sql6" {>= "6.2.4+dfsg-3~"}
+  "deb-libqt6sql6-sqlite"
+  "deb-libqt6svg6" {>= "6.2.0"}
+  "deb-libqt6svgwidgets6" {>= "6.2.0"}
+  "deb-libqt6test6" {>= "6.2.4+dfsg-3~"}
+  "deb-libqt6widgets6" {>= "6.3.0"}
+  "deb-libqt6xml6" {>= "6.2.4+dfsg-3~"}
+  "deb-libstdc++6" {>= "12"}
+  "deb-libyaml-cpp0-7" {>= "0.7.0"}
+  "deb-libzstd1" {>= "1.5.2"}
+  "deb-qml6-module-qtqml-models"
+  "deb-qml6-module-qtqml-workerscript"
+  "deb-qml6-module-qtquick"
+  "deb-qml6-module-qtquick-controls"
+  "deb-qml6-module-qtquick-layouts"
+  "deb-qtcreator-data" {= "9.0.2-2"}
+]
+extra-source "qtcreator_9.0.2-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qtcreator/qtcreator_9.0.2-2_amd64.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libauthen-u2f-tester-perl_0.03-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libauthen-u2f-tester-perl"]
+]
+depends: [
+  "deb-libcrypt-openssl-x509-perl"
+  "deb-libcryptx-perl"
+  "deb-libjson-maybexs-perl"
+  "deb-libmoose-perl"
+  "deb-libmoosex-attributeshortcuts-perl"
+  "deb-libmoosex-singlearg-perl"
+  "deb-libnamespace-autoclean-perl"
+  "deb-libstrictures-perl" {>= "2"}
+  "deb-perl"
+]
+extra-source "libauthen-u2f-tester-perl_0.03-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/liba/libauthen-u2f-tester-perl/libauthen-u2f-tester-perl_0.03-1_all.deb"
+}

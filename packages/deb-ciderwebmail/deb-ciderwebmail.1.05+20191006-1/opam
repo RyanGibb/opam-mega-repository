@@ -1,0 +1,63 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ciderwebmail_1.05+20191006-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ciderwebmail"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libcatalyst-action-renderview-perl"
+  "deb-libcatalyst-authentication-credential-http-perl"
+  "deb-libcatalyst-model-dbic-schema-perl"
+  "deb-libcatalyst-perl"
+  "deb-libcatalyst-plugin-authentication-perl"
+  "deb-libcatalyst-plugin-configloader-perl"
+  "deb-libcatalyst-plugin-log-dispatch-perl"
+  "deb-libcatalyst-plugin-session-state-cookie-perl"
+  "deb-libcatalyst-plugin-session-store-fastmmap-perl"
+  "deb-libcatalyst-plugin-stacktrace-perl"
+  "deb-libcatalyst-plugin-static-simple-perl"
+  "deb-libcatalyst-view-petal-perl"
+  "deb-libclone-perl"
+  "deb-libcrypt-cbc-perl"
+  "deb-libcrypt-random-source-perl"
+  "deb-libcrypt-rijndael-perl"
+  "deb-libcrypt-util-perl"
+  "deb-libdata-ical-perl"
+  "deb-libdatetime-format-iso8601-perl"
+  "deb-libdatetime-format-mail-perl"
+  "deb-libdatetime-perl"
+  "deb-libemail-address-xs-perl"
+  "deb-libemail-sender-perl"
+  "deb-libemail-simple-perl"
+  "deb-libemail-valid-perl"
+  "deb-libhtml-defang-perl"
+  "deb-libhtml-tidy-perl"
+  "deb-libio-socket-ssl-perl"
+  "deb-libjson-xs-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-liblocale-maketext-gettext-perl"
+  "deb-liblog-dispatch-config-perl"
+  "deb-liblog-dispatch-perl"
+  "deb-libmail-imapclient-perl" {>= "3.41"}
+  "deb-libmime-base64-urlsafe-perl"
+  "deb-libmime-tools-perl"
+  "deb-libmoose-perl"
+  "deb-libmoosex-role-withoverloading-perl"
+  "deb-libnet-managesieve-perl"
+  "deb-libparse-recdescent-perl"
+  "deb-libpetal-utils-perl"
+  "deb-libregexp-common-perl"
+  "deb-libtext-autoformat-perl"
+  "deb-libtext-iconv-perl"
+  "deb-libtry-tiny-perl"
+  "deb-libtry-tiny-smartcatch-perl"
+  "deb-liburi-perl"
+  "deb-libyaml-libyaml-perl"
+  "deb-libyaml-perl"
+  "deb-perl-any"
+]
+extra-source "ciderwebmail_1.05+20191006-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/ciderwebmail/ciderwebmail_1.05+20191006-1_all.deb"
+}

@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-dav-prof_1.3.4-2+b5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-dav-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-case-insensitive-prof"
+  "deb-libghc-data-default-prof"
+  "deb-libghc-dav-dev" {= "1.3.4-2+b5"}
+  "deb-libghc-http-client-prof"
+  "deb-libghc-http-client-tls-prof"
+  "deb-libghc-http-types-prof"
+  "deb-libghc-lens-prof"
+  "deb-libghc-transformers-base-prof"
+  "deb-libghc-transformers-compat-prof"
+  "deb-libghc-utf8-string-prof"
+  "deb-libghc-xml-conduit-prof"
+  "deb-libghc-xml-hamlet-prof"
+]
+extra-source "libghc-dav-prof_1.3.4-2+b5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-dav/libghc-dav-prof_1.3.4-2+b5_amd64.deb"
+}

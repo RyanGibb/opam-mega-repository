@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcairo-script-interpreter2_1.16.0-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcairo-script-interpreter2"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libcairo2" {= "1.16.0-5"}
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-liblzo2-2" {>= "2.02"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libcairo-script-interpreter2_1.16.0-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cairo/libcairo-script-interpreter2_1.16.0-5_amd64.deb"
+}

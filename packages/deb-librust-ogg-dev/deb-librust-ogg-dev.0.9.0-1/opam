@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-ogg-dev_0.9.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-ogg-dev"]
+]
+depends: [
+  "deb-librust-byteorder-1+default-dev"
+  "deb-librust-bytes-1+default-dev"
+  "deb-librust-futures-core-0-3+default-dev"
+  "deb-librust-futures-io-0-3+default-dev"
+  "deb-librust-pin-project-1+default-dev"
+  "deb-librust-tokio-1+default-dev"
+  "deb-librust-tokio-util-0-7+codec-dev"
+  "deb-librust-tokio-util-0-7+compat-dev"
+  "deb-librust-tokio-util-0-7+default-dev"
+]
+extra-source "librust-ogg-dev_0.9.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-ogg/librust-ogg-dev_0.9.0-1_amd64.deb"
+}

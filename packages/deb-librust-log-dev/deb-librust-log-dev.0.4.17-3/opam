@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-log-dev_0.4.17-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-log-dev"]
+]
+depends: [
+  "deb-librust-cfg-if-1+default-dev"
+  "deb-librust-serde-1-dev"
+  "deb-librust-sval-1-0-0-dev"
+  "deb-librust-value-bag-1-0-0+error-dev"
+  "deb-librust-value-bag-1-0-0+serde-dev"
+  "deb-librust-value-bag-1-0-0+sval-dev"
+  "deb-librust-value-bag-1-0-0-dev"
+]
+extra-source "librust-log-dev_0.4.17-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-log/librust-log-dev_0.4.17-3_amd64.deb"
+}

@@ -1,0 +1,70 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sympa_6.2.70~dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sympa"]
+]
+depends: [
+  "deb-adduser"
+  "deb-ca-certificates"
+  "deb-fonts-font-awesome"
+  "deb-libarchive-zip-perl" {>= "1.05"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcgi-fast-perl"
+  "deb-libcgi-pm-perl" {>= "3.35"}
+  "deb-libclass-singleton-perl"
+  "deb-libcrypt-eksblowfish-perl"
+  "deb-libcrypt-openssl-x509-perl"
+  "deb-libcrypt-smime-perl"
+  "deb-libdatetime-format-mail-perl"
+  "deb-libdbd-csv-perl"
+  "deb-libdbd-mysql-perl" {>= "4.007"}
+  "deb-libdbd-pg-perl"
+  "deb-libdbd-sqlite3-perl"
+  "deb-libdbi-perl" {>= "1.48"}
+  "deb-libfcgi-perl"
+  "deb-libfile-copy-recursive-perl" {>= "0.36"}
+  "deb-libfile-nfslock-perl"
+  "deb-libhtml-format-perl"
+  "deb-libhtml-stripscripts-parser-perl" {>= "1.0"}
+  "deb-libhtml-tree-perl"
+  "deb-libintl-perl"
+  "deb-libio-stringy-perl"
+  "deb-libjs-jquery" {>= "1.11"}
+  "deb-libjs-jquery-migrate-1"
+  "deb-libjs-jquery-minicolors"
+  "deb-libjs-jquery-ui"
+  "deb-libmail-dkim-perl" {>= "0.56"}
+  "deb-libmailtools-perl" {>= "1.51"}
+  "deb-libmime-charset-perl"
+  "deb-libmime-encwords-perl"
+  "deb-libmime-lite-html-perl"
+  "deb-libmime-tools-perl"
+  "deb-libnet-cidr-perl"
+  "deb-libnet-dns-perl"
+  "deb-libnet-ldap-perl"
+  "deb-libnet-netmask-perl"
+  "deb-libregexp-common-perl"
+  "deb-libsoap-lite-perl"
+  "deb-libtemplate-perl"
+  "deb-libterm-progressbar-perl"
+  "deb-libunicode-linebreak-perl"
+  "deb-libxml-libxml-perl"
+  "deb-mhonarc"
+  "deb-multiwatch"
+  "deb-node-html5shiv"
+  "deb-perl" {>= "5.8"}
+  "deb-perl-any"
+  "deb-sqlite3"
+  ("deb-dbconfig-pgsql" | "deb- dbconfig-mysql" | "deb- dbconfig-sqlite3" | "deb- dbconfig-no-thanks")
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-default-mta" | "deb- mail-transport-agent")
+  ("deb-rsyslog" | "deb- system-log-daemon")
+]
+conflicts: [
+  "deb-wwsympa"
+]
+extra-source "sympa_6.2.70~dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sympa/sympa_6.2.70~dfsg-2_amd64.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libnet-oauth-perl_0.28-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libnet-oauth-perl"]
+]
+depends: [
+  "deb-libclass-accessor-perl"
+  "deb-libclass-data-inheritable-perl"
+  "deb-libcrypt-openssl-rsa-perl"
+  "deb-libdigest-hmac-perl"
+  "deb-libwww-perl"
+  "deb-perl"
+]
+extra-source "libnet-oauth-perl_0.28-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libn/libnet-oauth-perl/libnet-oauth-perl_0.28-3_all.deb"
+}

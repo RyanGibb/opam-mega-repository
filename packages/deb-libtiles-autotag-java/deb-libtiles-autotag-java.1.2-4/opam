@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libtiles-autotag-java_1.2-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libtiles-autotag-java"]
+]
+depends: [
+  "deb-libmaven3-core-java" {>= "3.6.3"}
+  "deb-libplexus-build-api-java" {>= "0.0.7"}
+  "deb-libqdox-java" {>= "1.12.1"}
+  "deb-libxpp3-java"
+  "deb-libxstream-java" {>= "1.4.19"}
+  "deb-velocity" {>= "1.7"}
+]
+extra-source "libtiles-autotag-java_1.2-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tiles-autotag/libtiles-autotag-java_1.2-4_all.deb"
+}

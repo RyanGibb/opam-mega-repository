@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i moreutils_0.67-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r moreutils"]
+]
+depends: [
+  "deb-libc6" {>= "2.33"}
+  "deb-libipc-run-perl"
+  "deb-libtime-duration-perl"
+  "deb-libtimedate-perl"
+  "deb-perl-any"
+]
+conflicts: [
+  "deb-lckdo"
+]
+extra-source "moreutils_0.67-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/moreutils/moreutils_0.67-1_amd64.deb"
+}

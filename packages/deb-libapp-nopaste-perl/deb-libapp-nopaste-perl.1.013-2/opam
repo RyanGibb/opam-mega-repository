@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libapp-nopaste-perl_1.013-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libapp-nopaste-perl"]
+]
+depends: [
+  "deb-libbrowser-open-perl"
+  "deb-libclass-load-perl"
+  "deb-libgetopt-long-descriptive-perl"
+  "deb-libjson-maybexs-perl"
+  "deb-libmodule-pluggable-perl"
+  "deb-libmodule-runtime-perl"
+  "deb-libnamespace-clean-perl"
+  "deb-liburi-perl"
+  "deb-libwww-mechanize-perl"
+  "deb-perl-any"
+]
+extra-source "libapp-nopaste-perl_1.013-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/liba/libapp-nopaste-perl/libapp-nopaste-perl_1.013-2_all.deb"
+}

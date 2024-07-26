@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i shishi-dbg_1.0.2-6.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r shishi-dbg"]
+]
+depends: [
+  ("deb-libshishi0" {= "1.0.2-6.2"} | "deb- libshisa0" {= "1.0.2-6.2"} | "deb- shishi" {= "1.0.2-6.2"} | "deb- shisa" {= "1.0.2-6.2"} | "deb- shishi-kdc" {= "1.0.2-6.2"} | "deb- libpam-shishi" {= "1.0.2-6.2"})
+]
+extra-source "shishi-dbg_1.0.2-6.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/shishi/shishi-dbg_1.0.2-6.2_amd64.deb"
+}

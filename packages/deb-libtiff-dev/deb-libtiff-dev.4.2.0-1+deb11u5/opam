@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libtiff-dev_4.2.0-1+deb11u5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libtiff-dev"]
+]
+depends: [
+  "deb-libdeflate-dev"
+  "deb-libjbig-dev"
+  "deb-libjpeg-dev"
+  "deb-liblzma-dev"
+  "deb-libtiff5" {= "4.2.0-1+deb11u5"}
+  "deb-libtiffxx5" {= "4.2.0-1+deb11u5"}
+  "deb-zlib1g-dev"
+  ("deb-libc6-dev" | "deb- libc-dev")
+]
+extra-source "libtiff-dev_4.2.0-1+deb11u5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tiff/libtiff-dev_4.2.0-1+deb11u5_amd64.deb"
+}

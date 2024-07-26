@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i imv_4.3.0-1.1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r imv"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.14.0"}
+  "deb-libegl1"
+  "deb-libfreeimage3" {>= "3.18.0+ds2"}
+  "deb-libgl1"
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libheif1" {>= "1.3.2"}
+  "deb-libicu72" {>= "72.1~rc-1~"}
+  "deb-libinih1" {>= "40"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-librsvg2-2" {>= "2.14.4"}
+  "deb-libtiff6" {>= "4.0.3"}
+  "deb-libwayland-client0" {>= "1.20.0"}
+  "deb-libwayland-egl1" {>= "1.15.0"}
+  "deb-libx11-6"
+  "deb-libxcb1"
+  "deb-libxkbcommon-x11-0" {>= "0.5.0"}
+  "deb-libxkbcommon0" {>= "0.5.0"}
+]
+extra-source "imv_4.3.0-1.1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/imv/imv_4.3.0-1.1+b3_amd64.deb"
+}

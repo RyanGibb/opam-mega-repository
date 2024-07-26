@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i glasscoder_2.0.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r glasscoder"]
+]
+depends: [
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libc6" {>= "2.33"}
+  "deb-libcurl4" {>= "7.16.2"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libsamplerate0" {>= "0.1.7"}
+  "deb-libsndfile1" {>= "1.0.20"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libtag1v5" {>= "1.9.1-2.2~"}
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+]
+extra-source "glasscoder_2.0.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/glasscoder/glasscoder_2.0.1-2_amd64.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-mail-dkim-1.20240124-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-mail-dkim"]
+]
+depends: [
+  "apk-perl" {= "5.38.2-r0"}
+  "apk-perl-crypt-openssl-rsa" {= "0.33-r3"}
+  "apk-perl-cryptx" {= "0.080-r0"}
+  "apk-perl-mail-authenticationresults" {= "2.20231031-r0"}
+  "apk-perl-mailtools" {= "2.21-r4"}
+  "apk-perl-net-dns" {= "1.45-r0"}
+]
+extra-source "perl-mail-dkim-1.20240124-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-mail-dkim-1.20240124-r0.apk"
+}

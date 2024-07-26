@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-dtplyr_1.2.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-dtplyr"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.1-2"}
+  "deb-r-cran-crayon"
+  "deb-r-cran-data-table" {>= "1.13.0"}
+  "deb-r-cran-dplyr" {>= "1.0.3"}
+  "deb-r-cran-ellipsis"
+  "deb-r-cran-glue"
+  "deb-r-cran-lifecycle"
+  "deb-r-cran-rlang"
+  "deb-r-cran-tibble"
+  "deb-r-cran-tidyselect"
+  "deb-r-cran-vctrs"
+]
+extra-source "r-cran-dtplyr_1.2.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-dtplyr/r-cran-dtplyr_1.2.2-1_all.deb"
+}

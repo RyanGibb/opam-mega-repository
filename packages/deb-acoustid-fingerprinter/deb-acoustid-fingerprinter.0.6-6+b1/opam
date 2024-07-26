@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i acoustid-fingerprinter_0.6-6+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r acoustid-fingerprinter"]
+]
+depends: [
+  "deb-libavformat58" {>= "7-4.0"}
+  "deb-libavutil56" {>= "7-4.0"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libchromaprint1" {>= "1.3.2"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libqt4-network" {>= "4-4.5.3"}
+  "deb-libqtcore4" {>= "4-4.8.0"}
+  "deb-libqtgui4" {>= "4-4.5.3"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtag1v5" {>= "1.11"}
+  ("deb-libavcodec58" {>= "7-4.0"} | "deb- libavcodec-extra58" {>= "7-4.0"})
+]
+extra-source "acoustid-fingerprinter_0.6-6+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/acoustid-fingerprinter/acoustid-fingerprinter_0.6-6+b1_amd64.deb"
+}

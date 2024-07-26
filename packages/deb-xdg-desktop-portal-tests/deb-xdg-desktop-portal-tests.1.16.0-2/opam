@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xdg-desktop-portal-tests_1.16.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xdg-desktop-portal-tests"]
+]
+depends: [
+  "deb-dbus-daemon"
+  "deb-geoclue-2-0"
+  "deb-libc6" {>= "2.34"}
+  "deb-libcap2-bin"
+  "deb-libfuse3-3" {>= "3.2.3"}
+  "deb-libglib2-0-0" {>= "2.67.1"}
+  "deb-libjson-glib-1-0-0" {>= "1.5.2"}
+  "deb-libportal1" {>= "0.3+24+g7355b1e"}
+  "deb-libsystemd0"
+  "deb-pipewire" {>= "0.3.10"}
+  "deb-procps"
+  "deb-python3"
+  "deb-python3-gi"
+  "deb-xdg-desktop-portal"
+]
+extra-source "xdg-desktop-portal-tests_1.16.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xdg-desktop-portal/xdg-desktop-portal-tests_1.16.0-2_amd64.deb"
+}

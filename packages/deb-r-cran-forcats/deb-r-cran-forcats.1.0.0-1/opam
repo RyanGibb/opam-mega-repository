@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-forcats_1.0.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-forcats"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.2.20221110-2"}
+  "deb-r-cran-cli" {>= "3.4.0"}
+  "deb-r-cran-ellipsis"
+  "deb-r-cran-glue"
+  "deb-r-cran-lifecycle"
+  "deb-r-cran-magrittr"
+  "deb-r-cran-rlang" {>= "1.0.0"}
+  "deb-r-cran-tibble"
+  "deb-r-cran-withr"
+]
+extra-source "r-cran-forcats_1.0.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-forcats/r-cran-forcats_1.0.0-1_all.deb"
+}

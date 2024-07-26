@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dcm2niix_1.0.20201102-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dcm2niix"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libopenjp2-7" {>= "2.0.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libturbojpeg0" {>= "1.2.90"}
+  "deb-libyaml-cpp0-6" {>= "0.6.2"}
+]
+extra-source "dcm2niix_1.0.20201102-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dcm2niix/dcm2niix_1.0.20201102-1_amd64.deb"
+}

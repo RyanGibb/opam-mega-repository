@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-xenolf-lego-dev_0.3.1-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-xenolf-lego-dev"]
+]
+depends: [
+  "deb-golang-github-aws-aws-sdk-go-dev"
+  "deb-golang-github-codegangsta-cli-dev"
+  "deb-golang-github-jamesclonk-vultr-dev"
+  "deb-golang-github-stretchr-testify-dev"
+  "deb-golang-github-weppos-dnsimple-go-dev"
+  "deb-golang-golang-x-crypto-dev"
+  "deb-golang-golang-x-net-dev"
+  "deb-golang-golang-x-oauth2-dev"
+  "deb-golang-google-api-dev"
+  "deb-golang-gopkg-square-go-jose-v1-dev"
+  ("deb-golang-dns-dev" | "deb- golang-github-miekg-dns-dev")
+]
+extra-source "golang-github-xenolf-lego-dev_0.3.1-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-xenolf-lego/golang-github-xenolf-lego-dev_0.3.1-5_all.deb"
+}

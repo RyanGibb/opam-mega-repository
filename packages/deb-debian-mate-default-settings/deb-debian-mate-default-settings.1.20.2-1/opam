@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i debian-mate-default-settings_1.20.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r debian-mate-default-settings"]
+]
+depends: [
+  "deb-desktop-file-utils"
+]
+conflicts: [
+  "deb-mint-mate-default-settings"
+  "deb-ubuntu-mate-default-settings"
+]
+extra-source "debian-mate-default-settings_1.20.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mate-session-manager/debian-mate-default-settings_1.20.2-1_all.deb"
+}

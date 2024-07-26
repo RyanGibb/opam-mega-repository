@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dino-im_0.4.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dino-im"]
+]
+depends: [
+  "deb-dino-im-common" {= "0.4.2-1"}
+  "deb-libadwaita-1-0" {>= "1.2~alpha"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgcrypt20" {>= "1.10.0"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.23.0"}
+  "deb-libgee-0-8-2" {>= "0.20.0"}
+  "deb-libglib2-0-0" {>= "2.67.3"}
+  "deb-libgnutls30" {>= "3.7.5"}
+  "deb-libgpgme11" {>= "1.2.0"}
+  "deb-libgraphene-1-0-0" {>= "1.5.4"}
+  "deb-libgstreamer-plugins-base1-0-0" {>= "1.8.0"}
+  "deb-libgstreamer1-0-0" {>= "1.16.0"}
+  "deb-libgtk-4-1" {>= "4.6.0"}
+  "deb-libgtk-4-media-gstreamer"
+  "deb-libicu72" {>= "72.1~rc-1~"}
+  "deb-libnice10" {>= "0.1.13"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libqrencode4" {>= "3.2.0"}
+  "deb-libsignal-protocol-c2-3-2" {>= "2.3.3"}
+  "deb-libsoup-3-0-0" {>= "3.0.3"}
+  "deb-libsqlite3-0" {>= "3.6.0"}
+  "deb-libsrtp2-1" {>= "2.0.0+20170516"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libwebrtc-audio-processing1"
+]
+extra-source "dino-im_0.4.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dino-im/dino-im_0.4.2-1_amd64.deb"
+}

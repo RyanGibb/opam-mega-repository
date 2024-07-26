@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i scim-skk_0.5.2-7.2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r scim-skk"]
+]
+depends: [
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libgcc1" {>= "1-4.1.1"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.16.0"}
+  "deb-libgtk-3-0" {>= "3.0.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libscim8v5" {>= "1.4"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-scim" {< "1.5"}
+  ("deb-skkdic" | "deb- skkdic-extra" | "deb- skkserv" | "deb- dbskkd-cdb")
+]
+extra-source "scim-skk_0.5.2-7.2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/scim-skk/scim-skk_0.5.2-7.2+b1_amd64.deb"
+}

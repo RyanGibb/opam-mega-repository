@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i magnum-common_15.0.1-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r magnum-common"]
+]
+depends: [
+  "deb-adduser"
+  "deb-dbconfig-common"
+  "deb-debconf"
+  "deb-python3-magnum" {= "15.0.1-4"}
+  "deb-ucf"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "magnum-common_15.0.1-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/magnum/magnum-common_15.0.1-4_all.deb"
+}

@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libotbice-7.2-1_7.2.0+dfsg-1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libotbice-7.2-1"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libgdal28" {>= "2.2.0"}
+  "deb-libglew2-1" {>= "1.12.0"}
+  "deb-libinsighttoolkit4-13" {>= "4.13.3withdata-dfsg1"}
+  "deb-libopengl0"
+  "deb-libotbcommon-7-2-1" {>= "6.6.0"}
+  "deb-libotbextendedfilename-7-2-1" {>= "7.2.0~rc2"}
+  "deb-libotbgdaladapters-7-2-1" {>= "7.1.0"}
+  "deb-libotbimagebase-7-2-1" {>= "7.0.0"}
+  "deb-libotbimageio-7-2-1" {>= "7.0.0"}
+  "deb-libotbiogdal-7-2-1" {>= "7.2.0~rc2"}
+  "deb-libotbmetadata-7-2-1" {>= "7.1.0"}
+  "deb-libotbossimadapters-7-2-1" {>= "5.6.0"}
+  "deb-libotbstreaming-7-2-1" {>= "6.6.0"}
+  "deb-libstdc++6" {>= "9"}
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+extra-source "libotbice-7.2-1_7.2.0+dfsg-1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/otb/libotbice-7.2-1_7.2.0+dfsg-1+b3_amd64.deb"
+}

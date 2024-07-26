@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i antlr3.2_3.2-16_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r antlr3.2"]
+]
+depends: [
+  "deb-libstringtemplate-java"
+  ("deb-default-jre-headless" | "deb- java2-runtime-headless" | "deb- java5-runtime-headless" | "deb- java6-runtime-headless")
+]
+extra-source "antlr3.2_3.2-16_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/antlr3.2/antlr3.2_3.2-16_all.deb"
+}

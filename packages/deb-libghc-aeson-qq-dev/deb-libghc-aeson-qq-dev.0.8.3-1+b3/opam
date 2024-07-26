@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-aeson-qq-dev_0.8.3-1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-aeson-qq-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-aeson-dev"
+  "deb-libghc-attoparsec-dev"
+  "deb-libghc-base-compat-dev"
+  "deb-libghc-scientific-dev"
+  "deb-libghc-src-meta-dev"
+  "deb-libghc-vector-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-aeson-qq-dev_0.8.3-1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-aeson-qq/libghc-aeson-qq-dev_0.8.3-1+b3_amd64.deb"
+}

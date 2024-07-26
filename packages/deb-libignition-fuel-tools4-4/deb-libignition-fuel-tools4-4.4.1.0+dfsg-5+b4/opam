@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libignition-fuel-tools4-4_4.1.0+dfsg-5+b4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libignition-fuel-tools4-4"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libcurl4" {>= "7.16.2"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libignition-common3-3" {>= "3.5.0+dfsg1"}
+  "deb-libignition-msgs5-5"
+  "deb-libjsoncpp24" {>= "1.9.4"}
+  "deb-libprotobuf23" {>= "3.12.3"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtinyxml2-8" {>= "8.0.0"}
+  "deb-libyaml-0-2"
+  "deb-libzip4" {>= "0.10"}
+]
+extra-source "libignition-fuel-tools4-4_4.1.0+dfsg-5+b4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/ignition-fuel-tools/libignition-fuel-tools4-4_4.1.0+dfsg-5+b4_amd64.deb"
+}

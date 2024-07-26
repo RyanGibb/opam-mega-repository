@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mahimahi_0.98-1.1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mahimahi"]
+]
+depends: [
+  "deb-apache2-bin"
+  "deb-dnsmasq-base"
+  "deb-gnuplot"
+  "deb-iproute2"
+  "deb-iptables"
+  "deb-libc6" {>= "2.29"}
+  "deb-libcairo2" {>= "1.6.4-5~"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.22.0"}
+  "deb-libprotobuf23" {>= "3.12.3"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libstdc++6" {>= "6"}
+  "deb-libxcb-present0"
+  "deb-libxcb1"
+]
+extra-source "mahimahi_0.98-1.1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mahimahi/mahimahi_0.98-1.1+b2_amd64.deb"
+}

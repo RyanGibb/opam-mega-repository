@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkf5akonadimime5_4:22.12.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkf5akonadimime5"]
+]
+depends: [
+  "deb-akonadi-mime-data" {= "4-22.12.3-1"}
+  "deb-kio"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libkf5akonadicore5abi2"
+  "deb-libkf5akonadicore5abi2" {>= "4-22.12.3"}
+  "deb-libkf5akonadiprivate5abi2"
+  "deb-libkf5akonadiprivate5abi2" {>= "4-22.12.3"}
+  "deb-libkf5akonadiwidgets5abi1"
+  "deb-libkf5akonadiwidgets5abi1" {>= "4-22.12.3"}
+  "deb-libkf5configcore5" {>= "4.98.0"}
+  "deb-libkf5configgui5" {>= "4.97.0"}
+  "deb-libkf5coreaddons5" {>= "5.2.0"}
+  "deb-libkf5i18n5" {>= "5.99.0~"}
+  "deb-libkf5kiocore5" {>= "5.99.0~"}
+  "deb-libkf5mime5abi1"
+  "deb-libkf5mime5abi1" {>= "22.12.3"}
+  "deb-libkf5widgetsaddons5" {>= "5.100.0"}
+  "deb-libkf5xmlgui5" {>= "5.99.0~"}
+  "deb-libqt5core5a" {>= "5.15.2~"}
+  "deb-libqt5dbus5" {>= "5.15.2~"}
+  "deb-libqt5widgets5" {>= "5.15.2~"}
+  "deb-libstdc++6" {>= "5"}
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+]
+extra-source "libkf5akonadimime5_4:22.12.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/akonadi-mime/libkf5akonadimime5_22.12.3-1_amd64.deb"
+}

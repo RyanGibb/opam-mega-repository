@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkfontinst5_4:5.20.5-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkfontinst5"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libkf5i18n5" {>= "5.74.0~"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.15.0~"}
+  "deb-libqt5xml5" {>= "5.15.0~"}
+  "deb-libstdc++6" {>= "4.1.1"}
+]
+extra-source "libkfontinst5_4:5.20.5-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/plasma-workspace/libkfontinst5_5.20.5-6_amd64.deb"
+}

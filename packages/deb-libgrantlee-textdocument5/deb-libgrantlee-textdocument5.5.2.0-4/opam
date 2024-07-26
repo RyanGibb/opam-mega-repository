@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgrantlee-textdocument5_5.2.0-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgrantlee-textdocument5"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libstdc++6" {>= "5"}
+  ("deb-libqt5gui5" {>= "5.4"} | "deb- libqt5gui5-gles" {>= "5.4"})
+]
+extra-source "libgrantlee-textdocument5_5.2.0-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/grantlee5/libgrantlee-textdocument5_5.2.0-4_amd64.deb"
+}

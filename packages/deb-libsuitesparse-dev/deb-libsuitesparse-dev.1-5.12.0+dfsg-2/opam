@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsuitesparse-dev_1:5.12.0+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsuitesparse-dev"]
+]
+depends: [
+  "deb-libamd2" {= "1-5.12.0+dfsg-2"}
+  "deb-libbtf1" {= "1-5.12.0+dfsg-2"}
+  "deb-libcamd2" {= "1-5.12.0+dfsg-2"}
+  "deb-libccolamd2" {= "1-5.12.0+dfsg-2"}
+  "deb-libcholmod3" {= "1-5.12.0+dfsg-2"}
+  "deb-libcolamd2" {= "1-5.12.0+dfsg-2"}
+  "deb-libcxsparse3" {= "1-5.12.0+dfsg-2"}
+  "deb-libklu1" {= "1-5.12.0+dfsg-2"}
+  "deb-libldl2" {= "1-5.12.0+dfsg-2"}
+  "deb-libmongoose2" {= "1-5.12.0+dfsg-2"}
+  "deb-librbio2" {= "1-5.12.0+dfsg-2"}
+  "deb-libsliplu1" {= "1-5.12.0+dfsg-2"}
+  "deb-libspqr2" {= "1-5.12.0+dfsg-2"}
+  "deb-libsuitesparseconfig5" {= "1-5.12.0+dfsg-2"}
+  "deb-libumfpack5" {= "1-5.12.0+dfsg-2"}
+  ("deb-libblas-dev" | "deb- libblas-so")
+  ("deb-liblapack-dev" | "deb- liblapack-so")
+]
+conflicts: [
+  "deb-libsuitesparse-metis-dev"
+]
+extra-source "libsuitesparse-dev_1:5.12.0+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/suitesparse/libsuitesparse-dev_5.12.0+dfsg-2_amd64.deb"
+}

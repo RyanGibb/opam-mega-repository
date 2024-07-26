@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-sjplot_2.8.12+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-sjplot"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.2.20221110-1"}
+  "deb-r-cran-bayestestr"
+  "deb-r-cran-datawizard"
+  "deb-r-cran-dplyr"
+  "deb-r-cran-effectsize"
+  "deb-r-cran-ggeffects"
+  "deb-r-cran-ggplot2" {>= "3.2.0"}
+  "deb-r-cran-insight"
+  "deb-r-cran-knitr"
+  "deb-r-cran-mass"
+  "deb-r-cran-parameters"
+  "deb-r-cran-performance"
+  "deb-r-cran-purrr"
+  "deb-r-cran-rlang"
+  "deb-r-cran-scales"
+  "deb-r-cran-sjlabelled" {>= "1.1.2"}
+  "deb-r-cran-sjmisc" {>= "2.8.2"}
+  "deb-r-cran-sjstats" {>= "0.17.8"}
+  "deb-r-cran-tidyr" {>= "1.0.0"}
+]
+extra-source "r-cran-sjplot_2.8.12+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-sjplot/r-cran-sjplot_2.8.12+dfsg-1_all.deb"
+}

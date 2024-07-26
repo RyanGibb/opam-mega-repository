@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openbox-dev_3.6.1-10_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openbox-dev"]
+]
+depends: [
+  "deb-libglib2-0-dev"
+  "deb-libimlib2-dev"
+  "deb-libobrender32v5" {= "3.6.1-10"}
+  "deb-libobt2v5" {= "3.6.1-10"}
+  "deb-libpango1-0-dev"
+  "deb-librsvg2-dev"
+  "deb-libxcursor-dev"
+  "deb-libxml2-dev"
+]
+extra-source "openbox-dev_3.6.1-10_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openbox/openbox-dev_3.6.1-10_amd64.deb"
+}

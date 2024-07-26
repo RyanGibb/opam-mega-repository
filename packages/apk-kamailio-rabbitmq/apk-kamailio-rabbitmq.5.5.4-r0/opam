@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add kamailio-rabbitmq-5.5.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del kamailio-rabbitmq"]
+]
+depends: [
+  "apk-kamailio" {= "5.5.4-r0"}
+  "apk-libuuid" {= "2.38-r1"}
+  "apk-musl" {= "1.2.3-r3"}
+  "apk-rabbitmq-c" {= "0.11.0-r3"}
+]
+extra-source "kamailio-rabbitmq-5.5.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/kamailio-rabbitmq-5.5.4-r0.apk"
+}

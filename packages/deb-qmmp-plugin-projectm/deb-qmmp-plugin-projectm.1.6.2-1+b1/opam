@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qmmp-plugin-projectm_1.6.2-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qmmp-plugin-projectm"]
+]
+depends: [
+  "deb-fonts-dejavu-core"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgl1"
+  "deb-libprojectm3" {>= "3.1.12"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5widgets5" {>= "5.4.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-qmmp" {>= "1.6.2"}
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+]
+extra-source "qmmp-plugin-projectm_1.6.2-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qmmp/qmmp-plugin-projectm_1.6.2-1+b1_amd64.deb"
+}

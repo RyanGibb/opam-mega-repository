@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libboost-fiber1.67-dev_1.67.0-13+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libboost-fiber1.67-dev"]
+]
+depends: [
+  "deb-libboost-context1-67-dev" {= "1.67.0-13+deb10u1"}
+  "deb-libboost-fiber1-67-0" {= "1.67.0-13+deb10u1"}
+  "deb-libboost1-67-dev" {= "1.67.0-13+deb10u1"}
+]
+conflicts: [
+  "deb-libboost-fiber1-62-dev"
+  "deb-libboost-fiber1-63-dev"
+  "deb-libboost-fiber1-65-dev"
+]
+extra-source "libboost-fiber1.67-dev_1.67.0-13+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/boost1.67/libboost-fiber1.67-dev_1.67.0-13+deb10u1_amd64.deb"
+}

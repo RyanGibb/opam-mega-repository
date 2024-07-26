@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmime-lite-html-perl_1.24-3.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmime-lite-html-perl"]
+]
+depends: [
+  "deb-libhtml-parser-perl"
+  "deb-libmime-lite-perl" {>= "1"}
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-perl-any"
+]
+extra-source "libmime-lite-html-perl_1.24-3.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libm/libmime-lite-html-perl/libmime-lite-html-perl_1.24-3.1_all.deb"
+}

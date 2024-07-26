@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cura_3.3.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cura"]
+]
+depends: [
+  "deb-cura-engine" {< "1-3.4"}
+  "deb-cura-engine" {>= "1-3.3.0"}
+  "deb-fdm-materials" {< "3.4"}
+  "deb-fdm-materials" {>= "3.3.0"}
+  "deb-fonts-open-sans"
+  "deb-python3-any" {>= "3.5~"}
+  "deb-python3-pyqt5"
+  "deb-python3-pyqt5-qtopengl"
+  "deb-python3-savitar" {>= "3.3.0"}
+  "deb-python3-serial"
+  "deb-python3-uranium" {< "3.4"}
+  "deb-python3-uranium" {>= "3.3.0"}
+  "deb-qml-module-qt-labs-folderlistmodel"
+  "deb-qml-module-qt-labs-settings"
+  "deb-qml-module-qtqml-models2"
+  "deb-qml-module-qtquick-controls"
+  "deb-qml-module-qtquick-controls2"
+  "deb-qml-module-qtquick-dialogs"
+  "deb-uranium-plugins" {< "3.4"}
+  "deb-uranium-plugins" {>= "3.3.0"}
+]
+extra-source "cura_3.3.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cura/cura_3.3.1-2_all.deb"
+}

@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-thyme-dev_0.3.5.5-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-thyme-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libghc-aeson-dev"
+  "deb-libghc-attoparsec-dev"
+  "deb-libghc-old-locale-dev"
+  "deb-libghc-profunctors-dev"
+  "deb-libghc-quickcheck2-dev"
+  "deb-libghc-random-dev"
+  "deb-libghc-vector-dev"
+  "deb-libghc-vector-space-dev"
+  "deb-libghc-vector-th-unbox-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-thyme-dev_0.3.5.5-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-thyme/libghc-thyme-dev_0.3.5.5-4+b1_amd64.deb"
+}

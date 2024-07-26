@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-charlock-holmes_0.7.7-3+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-charlock-holmes"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libicu72" {>= "72.1~rc-1~"}
+  "deb-libruby" {< "1-3.2~"}
+  "deb-libruby" {>= "1-3.1~0"}
+  "deb-libruby3-1" {>= "3.1.2"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-ruby"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "ruby-charlock-holmes_0.7.7-3+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-charlock-holmes/ruby-charlock-holmes_0.7.7-3+b2_amd64.deb"
+}

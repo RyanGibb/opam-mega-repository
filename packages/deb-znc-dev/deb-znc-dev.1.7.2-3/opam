@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i znc-dev_1.7.2-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r znc-dev"]
+]
+depends: [
+  "deb-libicu-dev"
+  "deb-libperl-dev"
+  "deb-libsasl2-dev"
+  "deb-libssl-dev"
+  "deb-pkg-config"
+  "deb-python3-dev"
+  "deb-tcl-dev"
+  "deb-znc" {>= "1.7.2-3"}
+]
+extra-source "znc-dev_1.7.2-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/z/znc/znc-dev_1.7.2-3_amd64.deb"
+}

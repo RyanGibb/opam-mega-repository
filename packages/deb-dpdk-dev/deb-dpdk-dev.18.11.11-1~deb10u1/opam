@@ -1,0 +1,73 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dpdk-dev_18.11.11-1~deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dpdk-dev"]
+]
+depends: [
+  "deb-libbsd0" {>= "0.0"}
+  "deb-libc6" {>= "2.17"}
+  "deb-libdpdk-dev" {>= "18.11.11-1~deb10u1"}
+  "deb-libelf1" {>= "0.131"}
+  "deb-libjansson4" {>= "2.0.1"}
+  "deb-libnuma1" {>= "2.0.11"}
+  "deb-libpcap0-8" {>= "0.9.8"}
+  "deb-librte-acl18-11" {>= "16.04"}
+  "deb-librte-bbdev18-11" {>= "18.02"}
+  "deb-librte-bitratestats18-11" {>= "17.05"}
+  "deb-librte-bpf18-11" {>= "18.05"}
+  "deb-librte-bus-dpaa18-11"
+  "deb-librte-bus-pci18-11" {>= "17.11"}
+  "deb-librte-bus-vdev18-11" {>= "17.11"}
+  "deb-librte-cfgfile18-11" {>= "16.04"}
+  "deb-librte-cmdline18-11" {>= "16.04"}
+  "deb-librte-common-dpaax18-11" {>= "18.11"}
+  "deb-librte-compressdev18-11" {>= "18.05"}
+  "deb-librte-cryptodev18-11" {>= "18.08"}
+  "deb-librte-distributor18-11" {>= "17.05"}
+  "deb-librte-eal18-11" {>= "18.11"}
+  "deb-librte-efd18-11" {>= "17.05"}
+  "deb-librte-ethdev18-11" {>= "18.11"}
+  "deb-librte-eventdev18-11" {>= "18.11"}
+  "deb-librte-flow-classify18-11" {>= "18.02"}
+  "deb-librte-gro18-11" {>= "18.11"}
+  "deb-librte-gso18-11" {>= "17.11"}
+  "deb-librte-hash18-11" {>= "18.11"}
+  "deb-librte-ip-frag18-11" {>= "16.04"}
+  "deb-librte-kni18-11" {>= "18.11"}
+  "deb-librte-kvargs18-11" {>= "16.04"}
+  "deb-librte-latencystats18-11" {>= "17.05"}
+  "deb-librte-lpm18-11" {>= "17.05"}
+  "deb-librte-mbuf18-11" {>= "18.08"}
+  "deb-librte-member18-11" {>= "17.11"}
+  "deb-librte-mempool-dpaa18-11"
+  "deb-librte-mempool18-11" {>= "16.07~rc1"}
+  "deb-librte-meter18-11" {>= "18.08"}
+  "deb-librte-metrics18-11" {>= "17.05"}
+  "deb-librte-net18-11" {>= "17.05"}
+  "deb-librte-pci18-11" {>= "17.11"}
+  "deb-librte-pdump18-11" {>= "16.07~rc1"}
+  "deb-librte-pipeline18-11" {>= "16.04"}
+  "deb-librte-pmd-bnxt18-11" {>= "17.08"}
+  "deb-librte-pmd-bond18-11" {>= "17.08"}
+  "deb-librte-pmd-dpaa18-11" {>= "18.08"}
+  "deb-librte-pmd-i40e18-11" {>= "18.02"}
+  "deb-librte-pmd-ixgbe18-11" {>= "17.05"}
+  "deb-librte-pmd-ring18-11" {>= "16.04"}
+  "deb-librte-pmd-softnic18-11" {>= "17.11"}
+  "deb-librte-port18-11" {>= "16.07~rc1"}
+  "deb-librte-power18-11" {>= "16.04"}
+  "deb-librte-rawdev18-11" {>= "18.08"}
+  "deb-librte-reorder18-11" {>= "16.04"}
+  "deb-librte-ring18-11" {>= "16.04"}
+  "deb-librte-sched18-11" {>= "16.04"}
+  "deb-librte-security18-11" {>= "18.11"}
+  "deb-librte-table18-11" {>= "17.11"}
+  "deb-librte-telemetry18-11" {>= "18.11"}
+  "deb-librte-timer18-11" {>= "16.04"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "dpdk-dev_18.11.11-1~deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dpdk/dpdk-dev_18.11.11-1~deb10u1_amd64.deb"
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-network-conduit-tls-prof_1.3.2-4+b4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-network-conduit-tls-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-conduit-extra-prof"
+  "deb-libghc-conduit-prof"
+  "deb-libghc-connection-prof"
+  "deb-libghc-data-default-class-prof"
+  "deb-libghc-network-conduit-tls-dev" {= "1.3.2-4+b4"}
+  "deb-libghc-network-prof"
+  "deb-libghc-streaming-commons-prof"
+  "deb-libghc-tls-prof"
+  "deb-libghc-unliftio-core-prof"
+]
+extra-source "libghc-network-conduit-tls-prof_1.3.2-4+b4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-network-conduit-tls/libghc-network-conduit-tls-prof_1.3.2-4+b4_amd64.deb"
+}

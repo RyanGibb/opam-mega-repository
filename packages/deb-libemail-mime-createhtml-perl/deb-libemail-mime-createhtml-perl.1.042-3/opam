@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libemail-mime-createhtml-perl_1.042-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libemail-mime-createhtml-perl"]
+]
+depends: [
+  "deb-libdata-serializer-perl"
+  "deb-libemail-mime-perl"
+  "deb-libfile-policy-perl"
+  "deb-libhtml-tagset-perl"
+  "deb-libhtml-tokeparser-simple-perl"
+  "deb-liblog-trace-perl"
+  "deb-libmime-types-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-perl-any"
+]
+extra-source "libemail-mime-createhtml-perl_1.042-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libe/libemail-mime-createhtml-perl/libemail-mime-createhtml-perl_1.042-3_all.deb"
+}

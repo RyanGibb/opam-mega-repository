@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-googleauth_0.5.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-googleauth"]
+]
+depends: [
+  "deb-ruby-faraday" {>= "0.9"}
+  "deb-ruby-jwt" {>= "1.4"}
+  "deb-ruby-logging" {>= "2.0"}
+  "deb-ruby-memoist" {>= "0.12"}
+  "deb-ruby-multi-json" {>= "1.11"}
+  "deb-ruby-os" {>= "0.9"}
+  "deb-ruby-signet" {>= "0.7"}
+  ("deb-ruby" | "deb- ruby-interpreter")
+]
+extra-source "ruby-googleauth_0.5.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-googleauth/ruby-googleauth_0.5.1-2_all.deb"
+}

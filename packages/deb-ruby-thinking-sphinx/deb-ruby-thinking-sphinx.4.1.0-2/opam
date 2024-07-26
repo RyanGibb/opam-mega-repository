@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-thinking-sphinx_4.1.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-thinking-sphinx"]
+]
+depends: [
+  "deb-ruby-activerecord" {>= "3.1.0"}
+  "deb-ruby-builder" {>= "2.1.2"}
+  "deb-ruby-innertube" {>= "1.0.2"}
+  "deb-ruby-joiner" {>= "0.2.0"}
+  "deb-ruby-middleware" {>= "0.1.0"}
+  "deb-ruby-riddle" {>= "1.5.11"}
+  ("deb-ruby" | "deb- ruby-interpreter")
+]
+extra-source "ruby-thinking-sphinx_4.1.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-thinking-sphinx/ruby-thinking-sphinx_4.1.0-2_all.deb"
+}

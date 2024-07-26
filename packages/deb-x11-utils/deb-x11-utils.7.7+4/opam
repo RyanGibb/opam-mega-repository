@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i x11-utils_7.7+4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r x11-utils"]
+]
+depends: [
+  "deb-libc6" {>= "2.15"}
+  "deb-libfontconfig1" {>= "2.12"}
+  "deb-libfontenc1"
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgl1"
+  "deb-libx11-6"
+  "deb-libx11-xcb1"
+  "deb-libxaw7"
+  "deb-libxcb-shape0"
+  "deb-libxcb1" {>= "1.6"}
+  "deb-libxcomposite1" {>= "1-0.3-1"}
+  "deb-libxext6"
+  "deb-libxft2" {> "2.1.1"}
+  "deb-libxi6"
+  "deb-libxinerama1"
+  "deb-libxmu6"
+  "deb-libxmuu1"
+  "deb-libxrandr2" {>= "2-1.2.0"}
+  "deb-libxrender1"
+  "deb-libxt6" {>= "1-1.1.0"}
+  "deb-libxtst6"
+  "deb-libxv1"
+  "deb-libxxf86dga1"
+  "deb-libxxf86vm1"
+]
+extra-source "x11-utils_7.7+4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/x11-utils/x11-utils_7.7+4_amd64.deb"
+}

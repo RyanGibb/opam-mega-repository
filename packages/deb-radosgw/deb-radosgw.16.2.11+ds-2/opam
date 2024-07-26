@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i radosgw_16.2.11+ds-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r radosgw"]
+]
+depends: [
+  "deb-ceph-common" {= "16.2.11+ds-2"}
+  "deb-libboost-context1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0+ds1"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcurl3-gnutls" {>= "7.28.0"}
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgoogle-perftools4" {>= "2.10"}
+  "deb-libicu72" {>= "72.1~rc-1~"}
+  "deb-libldap-2-5-0" {>= "2.5.4"}
+  "deb-liblua5-3-0"
+  "deb-librabbitmq4" {>= "0.10.0"}
+  "deb-librados2" {>= "16.2.11+ds"}
+  "deb-librgw2" {= "16.2.11+ds-2"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libstdc++6" {>= "12"}
+  "deb-media-types"
+]
+extra-source "radosgw_16.2.11+ds-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/ceph/radosgw_16.2.11+ds-2_amd64.deb"
+}

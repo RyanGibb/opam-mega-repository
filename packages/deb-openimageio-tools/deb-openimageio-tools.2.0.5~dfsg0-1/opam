@@ -1,0 +1,51 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openimageio-tools_2.0.5~dfsg0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openimageio-tools"]
+]
+depends: [
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libavcodec58"
+  "deb-libavformat58"
+  "deb-libavutil56"
+  "deb-libboost-atomic1-67-0"
+  "deb-libboost-chrono1-67-0"
+  "deb-libboost-date-time1-67-0"
+  "deb-libboost-filesystem1-67-0"
+  "deb-libboost-system1-67-0"
+  "deb-libboost-thread1-67-0"
+  "deb-libc6" {>= "2.27"}
+  "deb-libdcmtk14"
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgif7" {>= "5.1"}
+  "deb-libgl1"
+  "deb-libilmbase23" {>= "2.2.1"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libopencolorio1v5" {>= "1.1.0~dfsg0"}
+  "deb-libopencv-core3-2"
+  "deb-libopencv-imgproc3-2"
+  "deb-libopencv-videoio3-2"
+  "deb-libopenexr23"
+  "deb-libopenimageio2-0"
+  "deb-libopenjp2-7" {>= "2.0.0"}
+  "deb-libopenvdb5-2"
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5gui5" {>= "5.2.0"}
+  "deb-libqt5opengl5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.4.0"}
+  "deb-libraw19" {>= "0.16.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libswscale5" {>= "7-4.0"}
+  "deb-libtbb2" {>= "2017~U7"}
+  "deb-libtiff5" {>= "4.0.3"}
+  "deb-libwebp6" {>= "0.5.1"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+extra-source "openimageio-tools_2.0.5~dfsg0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openimageio/openimageio-tools_2.0.5~dfsg0-1_amd64.deb"
+}

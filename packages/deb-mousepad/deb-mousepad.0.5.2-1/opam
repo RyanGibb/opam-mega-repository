@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mousepad_0.5.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mousepad"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libglib2-0-0" {>= "2.55.2"}
+  "deb-libgtk-3-0" {>= "3.21.5"}
+  "deb-libgtksourceview-3-0-1" {>= "3.23.90"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libxfconf-0-3" {>= "4.12"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "mousepad_0.5.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mousepad/mousepad_0.5.2-1_amd64.deb"
+}

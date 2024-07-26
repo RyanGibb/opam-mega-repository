@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-mrcal_2.2-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-mrcal"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libmrcal2" {= "2.2-4+b1"}
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-any"
+  "deb-python3-gnuplotlib" {>= "0.38"}
+  "deb-python3-ipython"
+  "deb-python3-matplotlib"
+  "deb-python3-numpy"
+  "deb-python3-numpy" {>= "1-1.22.0"}
+  "deb-python3-numpysane" {>= "0.35"}
+  "deb-python3-opencv"
+  "deb-python3-scipy" {>= "0.18"}
+  "deb-python3-shapely"
+]
+extra-source "python3-mrcal_2.2-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mrcal/python3-mrcal_2.2-4+b1_amd64.deb"
+}

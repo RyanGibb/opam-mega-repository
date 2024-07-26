@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sasview_5.0.3-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sasview"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-numpy"
+  "deb-python3-pkg-resources"
+  "deb-python3-sasview"
+]
+extra-source "sasview_5.0.3-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sasview/sasview_5.0.3-3_all.deb"
+}

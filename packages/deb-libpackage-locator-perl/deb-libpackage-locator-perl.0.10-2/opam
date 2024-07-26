@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpackage-locator-perl_0.10-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpackage-locator-perl"]
+]
+depends: [
+  "deb-libcpan-distnameinfo-perl"
+  "deb-libmoose-perl"
+  "deb-libmoosex-markasmethods-perl"
+  "deb-libmoosex-types-path-class-perl"
+  "deb-libmoosex-types-uri-perl"
+  "deb-libpath-class-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-perl"
+]
+extra-source "libpackage-locator-perl_0.10-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libp/libpackage-locator-perl/libpackage-locator-perl_0.10-2_all.deb"
+}

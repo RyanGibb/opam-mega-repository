@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lm-sensors-sensord-3.6.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lm-sensors-sensord"]
+]
+depends: [
+  "apk-bash" {= "5.0.17-r0"}
+  "apk-librrd" {= "1.7.2-r3"}
+  "apk-lm-sensors" {= "3.6.0-r0"}
+  "apk-musl" {= "1.1.24-r10"}
+  "apk-sysfsutils" {= "2.1.0-r9"}
+]
+extra-source "lm-sensors-sensord-3.6.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/lm-sensors-sensord-3.6.0-r0.apk"
+}

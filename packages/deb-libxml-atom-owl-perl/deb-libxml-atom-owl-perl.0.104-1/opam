@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libxml-atom-owl-perl_0.104-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libxml-atom-owl-perl"]
+]
+depends: [
+  "deb-libcommon-sense-perl"
+  "deb-libdatetime-perl"
+  "deb-libhttp-link-parser-perl"
+  "deb-librdf-trine-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-libxml-libxml-perl"
+  "deb-perl"
+]
+extra-source "libxml-atom-owl-perl_0.104-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libx/libxml-atom-owl-perl/libxml-atom-owl-perl_0.104-1_all.deb"
+}

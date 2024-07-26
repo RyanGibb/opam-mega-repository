@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tnseq-transit_2.3.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tnseq-transit"]
+]
+depends: [
+  "deb-bwa"
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7~"}
+  "deb-python-matplotlib"
+  "deb-python-numpy"
+  "deb-python-pil"
+  "deb-python-pkg-resources"
+  "deb-python-scipy"
+  "deb-python-wxgtk3-0"
+]
+extra-source "tnseq-transit_2.3.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tnseq-transit/tnseq-transit_2.3.4-1_amd64.deb"
+}

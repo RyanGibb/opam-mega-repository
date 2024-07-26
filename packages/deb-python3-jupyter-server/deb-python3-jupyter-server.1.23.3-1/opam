@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-jupyter-server_1.23.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-jupyter-server"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-anyio" {>= "3.3.1"}
+  "deb-python3-argon2"
+  "deb-python3-jinja2"
+  "deb-python3-jupyter-client"
+  "deb-python3-jupyter-core"
+  "deb-python3-nbconvert"
+  "deb-python3-nbformat"
+  "deb-python3-packaging"
+  "deb-python3-prometheus-client"
+  "deb-python3-send2trash"
+  "deb-python3-terminado"
+  "deb-python3-tornado"
+  "deb-python3-traitlets"
+  "deb-python3-websocket"
+  "deb-python3-zmq"
+]
+extra-source "python3-jupyter-server_1.23.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/j/jupyter-server/python3-jupyter-server_1.23.3-1_all.deb"
+}

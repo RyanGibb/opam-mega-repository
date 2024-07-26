@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpath-dispatcher-perl_1.08-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpath-dispatcher-perl"]
+]
+depends: [
+  "deb-libmoo-perl"
+  "deb-libmoox-typetiny-perl"
+  "deb-libtry-tiny-perl"
+  "deb-libtype-tiny-perl"
+  "deb-perl-any"
+]
+extra-source "libpath-dispatcher-perl_1.08-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libp/libpath-dispatcher-perl/libpath-dispatcher-perl_1.08-2_all.deb"
+}

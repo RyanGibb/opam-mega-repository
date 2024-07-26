@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lam-runtime_7.1.4-6.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lam-runtime"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-liblam4"
+  "deb-libstdc++6" {>= "5.2"}
+  ("deb-openssh-client" | "deb- ssh-client" | "deb- rsh-client")
+  ("deb-openssh-server" | "deb- ssh-server" | "deb- rsh-server")
+]
+conflicts: [
+  "deb-lam"
+  "deb-lam1-runtime"
+  "deb-lam4-dev" {<= "7.1.2-2"}
+]
+extra-source "lam-runtime_7.1.4-6.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lam/lam-runtime_7.1.4-6.1_amd64.deb"
+}

@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xmpi_2.2.3b8-13.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xmpi"]
+]
+depends: [
+  "deb-lam-runtime"
+  "deb-libc6" {>= "2.4"}
+  "deb-libgcc1" {>= "1-4.1.1"}
+  "deb-liblam4"
+  "deb-libstdc++6" {>= "4.9"}
+  "deb-libx11-6"
+  "deb-libxm4" {>= "2.3.4"}
+  "deb-libxmpi4"
+  "deb-libxt6"
+]
+conflicts: [
+  "deb-xmpi1-runtime"
+]
+extra-source "xmpi_2.2.3b8-13.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xmpi/xmpi_2.2.3b8-13.2_amd64.deb"
+}

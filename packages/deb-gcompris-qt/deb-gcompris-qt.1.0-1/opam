@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gcompris-qt_1.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gcompris-qt"]
+]
+depends: [
+  "deb-gcompris-qt-data" {= "1.0-1"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5multimedia5" {>= "5.6.0~beta"}
+  "deb-libqt5multimedia5-plugins"
+  "deb-libqt5network5" {>= "5.14.1"}
+  "deb-libqt5qml5" {>= "5.1.0"}
+  "deb-libqt5sensors5" {>= "5.6.0"}
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "4.9"}
+  "deb-qml-module-qtgraphicaleffects"
+  "deb-qml-module-qtmultimedia"
+  "deb-qml-module-qtquick-controls"
+  "deb-qml-module-qtquick-particles2"
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+  ("deb-libqt5quick5" {>= "5.9.0~beta"} | "deb- libqt5quick5-gles" {>= "5.9.0~beta"})
+]
+extra-source "gcompris-qt_1.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gcompris-qt/gcompris-qt_1.0-1_amd64.deb"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgetdata-dev_0.11.0-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgetdata-dev"]
+]
+depends: [
+  "deb-libf95getdata7" {= "0.11.0-6"}
+  "deb-libfgetdata6" {= "0.11.0-6"}
+  "deb-libgetdata++7" {= "0.11.0-6"}
+  "deb-libgetdata8" {= "0.11.0-6"}
+  ("deb-gfortran-12" | "deb- gfortran-mod-15")
+]
+extra-source "libgetdata-dev_0.11.0-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libg/libgetdata/libgetdata-dev_0.11.0-6_amd64.deb"
+}

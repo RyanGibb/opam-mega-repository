@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qml-module-org-kde-analitza_4:17.08.3-2+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qml-module-org-kde-analitza"]
+]
+depends: [
+  "deb-analitza-common"
+  "deb-libanalitza8" {>= "4-17.08.3"}
+  "deb-libanalitzagui8" {>= "4-17.08.3"}
+  "deb-libanalitzaplot8" {>= "4-17.08.3"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5gui5" {>= "5.4"}
+  "deb-libqt5qml5"
+  "deb-libqt5qml5" {>= "5.0.2"}
+  "deb-libqt5quick5" {>= "5.6.0~beta"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-qml-module-qtquick-controls"
+  "deb-qml-module-qtquick-layouts"
+  "deb-qml-module-qtquick2"
+]
+extra-source "qml-module-org-kde-analitza_4:17.08.3-2+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/analitza/qml-module-org-kde-analitza_17.08.3-2+b3_amd64.deb"
+}

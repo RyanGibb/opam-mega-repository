@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i naev_0.8.2-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r naev"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libcxsparse3" {>= "1-4.5.2"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-liblua5-1-0"
+  "deb-libopenal1" {>= "1.14"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libsdl2-2-0-0" {>= "2.0.12"}
+  "deb-libsdl2-mixer-2-0-0" {>= "2.6.0"}
+  "deb-libvorbis0a" {>= "1.1.2"}
+  "deb-libvorbisfile3" {>= "1.2.3"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-naev-data" {= "0.8.2-1"}
+]
+extra-source "naev_0.8.2-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/naev/naev_0.8.2-1+b1_amd64.deb"
+}

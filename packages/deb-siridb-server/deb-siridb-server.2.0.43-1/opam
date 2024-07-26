@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i siridb-server_2.0.43-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r siridb-server"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libcleri0" {>= "0.11.0"}
+  "deb-libcrypt1" {>= "1-4.1.0"}
+  "deb-libpcre2-8-0" {>= "10.22"}
+  "deb-libuuid1" {>= "2.16"}
+  "deb-libuv1" {>= "1.4.2"}
+  "deb-libyajl2" {>= "2.0.4"}
+  "deb-ucf"
+]
+extra-source "siridb-server_2.0.43-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/siridb-server/siridb-server_2.0.43-1_amd64.deb"
+}

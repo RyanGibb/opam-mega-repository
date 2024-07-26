@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i solarpowerlog_0.25-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r solarpowerlog"]
+]
+depends: [
+  "deb-libboost-program-options1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-thread1-74-0" {>= "1.74.0+ds1"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libconfig++9v5" {>= "1.5-0.4~"}
+  "deb-libcppdb0" {>= "0.3.1+dfsg"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-liblog4cxx15" {>= "1.0.0"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-sysvinit-utils"
+]
+extra-source "solarpowerlog_0.25-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/solarpowerlog/solarpowerlog_0.25-2_amd64.deb"
+}

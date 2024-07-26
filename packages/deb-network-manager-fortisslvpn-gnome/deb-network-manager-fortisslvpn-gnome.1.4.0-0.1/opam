@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i network-manager-fortisslvpn-gnome_1.4.0-0.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r network-manager-fortisslvpn-gnome"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libglib2-0-0" {>= "2.34"}
+  "deb-libgtk-3-0" {>= "3.4"}
+  "deb-libgtk-4-1" {>= "4.0.0"}
+  "deb-libnm0" {>= "1.8.33"}
+  "deb-libnma-gtk4-0" {>= "1.8.34"}
+  "deb-libnma0" {>= "1.8.33"}
+  "deb-libsecret-1-0" {>= "0.18"}
+  "deb-network-manager-fortisslvpn" {= "1.4.0-0.1"}
+]
+extra-source "network-manager-fortisslvpn-gnome_1.4.0-0.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/network-manager-fortisslvpn/network-manager-fortisslvpn-gnome_1.4.0-0.1_amd64.deb"
+}

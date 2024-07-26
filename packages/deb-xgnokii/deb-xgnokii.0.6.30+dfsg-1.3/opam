@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xgnokii_0.6.30+dfsg-1.3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xgnokii"]
+]
+depends: [
+  "deb-gnokii-common" {= "0.6.30+dfsg-1.3"}
+  "deb-gnome-icon-theme"
+  "deb-libc6" {>= "2.14"}
+  "deb-libglib2-0-0" {>= "2.24.0"}
+  "deb-libgnokii6"
+  "deb-libgtk2-0-0" {>= "2.8.0"}
+]
+conflicts: [
+  "deb-gnokii" {<= "0.6.22.dfsg-1"}
+]
+extra-source "xgnokii_0.6.30+dfsg-1.3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnokii/xgnokii_0.6.30+dfsg-1.3_amd64.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i argonaut-server_1.2.3-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r argonaut-server"]
+]
+depends: [
+  "deb-argonaut-common"
+  "deb-libdatetime-perl"
+  "deb-libpoe-component-pool-thread-perl"
+  "deb-libpoe-component-schedule-perl"
+  "deb-libpoe-component-server-jsonrpc-perl" {>= "0.06-3~"}
+  "deb-libpoe-component-server-simplehttp-perl"
+  "deb-libpoe-component-sslify-perl"
+  "deb-libpoe-perl"
+  "deb-lsb-base" {>= "3.0-6"}
+]
+extra-source "argonaut-server_1.2.3-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/argonaut/argonaut-server_1.2.3-2_all.deb"
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lsyncd-2.3.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lsyncd"]
+]
+depends: [
+  "apk-lua5-4-libs" {= "5.4.6-r0"}
+  "apk-musl" {= "1.2.3-r5"}
+  "apk-rsync" {= "3.2.7-r0"}
+]
+extra-source "lsyncd-2.3.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lsyncd-2.3.1-r0.apk"
+}

@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i photoflow_0.2.8+git20200114-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r photoflow"]
+]
+depends: [
+  "deb-libatkmm-1-6-1v5" {>= "2.24.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libcairomm-1-0-1v5" {>= "1.12.0"}
+  "deb-libexiv2-27" {>= "0.27.3"}
+  "deb-libfftw3-double3" {>= "3.3.5"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libglibmm-2-4-1v5" {>= "2.64.2"}
+  "deb-libgtk-3-0" {>= "3.0.0"}
+  "deb-libgtkmm-3-0-1v5" {>= "3.24.0"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-liblcms2-2" {>= "2.2+git20110628"}
+  "deb-liblensfun1" {>= "0.3.2"}
+  "deb-libpangomm-1-4-1v5" {>= "2.42.0"}
+  "deb-libpugixml1v5" {>= "1.4"}
+  "deb-libsigc++-2-0-0v5" {>= "2.8.0"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libtiff5" {>= "4.0.3"}
+  "deb-libvips42" {> "8.0.2-1~"}
+  "deb-zlib1g" {>= "1-1.2.0"}
+]
+extra-source "photoflow_0.2.8+git20200114-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/photoflow/photoflow_0.2.8+git20200114-3_amd64.deb"
+}

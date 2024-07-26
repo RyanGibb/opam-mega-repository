@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add rdesktop-1.9.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del rdesktop"]
+]
+depends: [
+  "apk-gmp" {= "6.2.1-r1"}
+  "apk-gnutls" {= "3.6.15-r1"}
+  "apk-libsamplerate" {= "0.1.9-r1"}
+  "apk-libtasn1" {= "4.16.0-r1"}
+  "apk-libx11" {= "1.6.12-r1"}
+  "apk-libxcursor" {= "1.2.0-r0"}
+  "apk-libxrandr" {= "1.5.2-r0"}
+  "apk-musl" {= "1.1.24-r10"}
+  "apk-nettle" {= "3.5.1-r2"}
+]
+extra-source "rdesktop-1.9.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/rdesktop-1.9.0-r0.apk"
+}

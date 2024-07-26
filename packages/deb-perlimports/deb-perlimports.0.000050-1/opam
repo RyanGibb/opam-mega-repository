@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i perlimports_0.000050-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r perlimports"]
+]
+depends: [
+  "deb-libcapture-tiny-perl"
+  "deb-libclass-inspector-perl" {>= "1.36"}
+  "deb-libcpanel-json-xs-perl"
+  "deb-libfile-xdg-perl"
+  "deb-libgetopt-long-descriptive-perl"
+  "deb-liblog-dispatch-perl" {>= "2.70"}
+  "deb-libmodule-runtime-perl"
+  "deb-libmoo-perl"
+  "deb-libmoox-strictconstructor-perl"
+  "deb-libossp-uuid-perl"
+  "deb-libpath-iterator-rule-perl"
+  "deb-libpath-tiny-perl"
+  "deb-libppi-perl" {>= "1.276"}
+  "deb-libppix-utils-perl"
+  "deb-libref-util-perl"
+  "deb-libscalar-list-utils-perl"
+  "deb-libsereal-decoder-perl"
+  "deb-libsereal-encoder-perl"
+  "deb-libsub-handlesvia-perl"
+  "deb-libsymbol-get-perl"
+  "deb-libtext-diff-perl"
+  "deb-libtext-simpletable-autowidth-perl"
+  "deb-libtoml-tiny-perl"
+  "deb-libtry-tiny-perl"
+  "deb-libtype-tiny-perl"
+  "deb-perl-any"
+  "deb-perltidy" {>= "20220613"}
+]
+extra-source "perlimports_0.000050-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/perlimports/perlimports_0.000050-1_all.deb"
+}

@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gcc-12-s390x-linux-gnu_12.2.0-14cross1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gcc-12-s390x-linux-gnu"]
+]
+depends: [
+  "deb-binutils-s390x-linux-gnu" {>= "2.40"}
+  "deb-cpp-12-s390x-linux-gnu" {= "12.2.0-14cross1"}
+  "deb-gcc-12-s390x-linux-gnu-base" {= "12.2.0-14cross1"}
+  "deb-libc6" {>= "2.36"}
+  "deb-libcc1-0" {>= "12"}
+  "deb-libgcc-12-dev-s390x-cross" {>= "12.2.0-14cross1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-libisl23" {>= "0.15"}
+  "deb-libmpc3" {>= "1.1.0"}
+  "deb-libmpfr6" {>= "3.1.3"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libzstd1" {>= "1.5.2"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+conflicts: [
+  "deb-gcc-multilib"
+]
+extra-source "gcc-12-s390x-linux-gnu_12.2.0-14cross1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gcc-12-cross/gcc-12-s390x-linux-gnu_12.2.0-14cross1_amd64.deb"
+}

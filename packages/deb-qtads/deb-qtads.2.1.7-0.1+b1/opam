@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qtads_2.1.7-0.1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qtads"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libqt5core5a" {>= "5.12.2"}
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.2.0~alpha1"}
+  "deb-libsdl-mixer1-2"
+  "deb-libsdl-sound1-2" {>= "1.0.1"}
+  "deb-libsdl1-2debian" {>= "1.2.11"}
+  "deb-libstdc++6" {>= "4.9"}
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+]
+extra-source "qtads_2.1.7-0.1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qtads/qtads_2.1.7-0.1+b1_amd64.deb"
+}

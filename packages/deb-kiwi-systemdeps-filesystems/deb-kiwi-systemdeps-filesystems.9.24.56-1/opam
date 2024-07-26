@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kiwi-systemdeps-filesystems_9.24.56-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kiwi-systemdeps-filesystems"]
+]
+depends: [
+  "deb-btrfs-progs"
+  "deb-cryptsetup"
+  "deb-dosfstools"
+  "deb-e2fsprogs"
+  "deb-gdisk"
+  "deb-kiwi-systemdeps-core"
+  "deb-kpartx"
+  "deb-lvm2"
+  "deb-parted"
+  "deb-qemu-utils"
+  "deb-squashfs-tools"
+  "deb-xfsprogs"
+]
+extra-source "kiwi-systemdeps-filesystems_9.24.56-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kiwi/kiwi-systemdeps-filesystems_9.24.56-1_amd64.deb"
+}

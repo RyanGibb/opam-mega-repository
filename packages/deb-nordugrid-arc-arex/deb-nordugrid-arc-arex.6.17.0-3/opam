@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i nordugrid-arc-arex_6.17.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r nordugrid-arc-arex"]
+]
+depends: [
+  "deb-libarccommon3v5" {= "6.17.0-3"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libdb5-3++"
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglibmm-2-4-1v5" {>= "2.66.5"}
+  "deb-libjson-xs-perl"
+  "deb-libsigc++-2-0-0v5" {>= "2.2.0"}
+  "deb-libsqlite3-0" {>= "3.7.15"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libxml-simple-perl"
+  "deb-nordugrid-arc-arcctl-service" {= "6.17.0-3"}
+  "deb-nordugrid-arc-hed" {= "6.17.0-3"}
+  "deb-nordugrid-arc-plugins-needed" {= "6.17.0-3"}
+  "deb-perl-any"
+  "deb-python3-any"
+]
+conflicts: [
+  "deb-nordugrid-arc-cache-service" {< "6.0.0~"}
+  "deb-nordugrid-arc-candypond" {< "6.0.0~"}
+]
+extra-source "nordugrid-arc-arex_6.17.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/nordugrid-arc/nordugrid-arc-arex_6.17.0-3_amd64.deb"
+}

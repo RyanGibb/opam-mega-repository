@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cp2k_2023.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cp2k"]
+]
+depends: [
+  "deb-cp2k-data" {= "2023.1-2"}
+  "deb-libc6" {>= "2.35"}
+  "deb-libelpa19" {>= "2022.11.001"}
+  "deb-libfftw3-double3" {>= "3.3.10"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libgfortran5" {>= "10"}
+  "deb-libgomp1" {>= "6"}
+  "deb-libint2-2"
+  "deb-libopenmpi3" {>= "4.1.4"}
+  "deb-libscalapack-openmpi2-2" {>= "2.2.1"}
+  "deb-libsymspg1" {>= "2.0.2-1+b2"}
+  "deb-libxc9" {>= "5.1.6"}
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "cp2k_2023.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cp2k/cp2k_2023.1-2_amd64.deb"
+}

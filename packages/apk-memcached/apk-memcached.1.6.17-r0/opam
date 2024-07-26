@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add memcached-1.6.17-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del memcached"]
+]
+depends: [
+  "apk-libevent" {= "2.1.12-r5"}
+  "apk-libsasl" {= "2.1.28-r3"}
+  "apk-libseccomp" {= "2.5.4-r0"}
+  "apk-musl" {= "1.2.3-r5"}
+  ("apk-yash-binsh" {= "2.53-r2"} | "apk-busybox-binsh" {= "1.35.0-r31"} | "apk-dash-binsh" {= "0.5.11.5-r2"})
+]
+extra-source "memcached-1.6.17-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/memcached-1.6.17-r0.apk"
+}

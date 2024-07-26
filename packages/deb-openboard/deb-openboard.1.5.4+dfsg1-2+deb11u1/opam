@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openboard_1.5.4+dfsg1-2+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openboard"]
+]
+depends: [
+  "deb-libavcodec-extra58"
+  "deb-libavformat58" {>= "7-4.2"}
+  "deb-libavutil56" {>= "7-4.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgomp1" {>= "4.9"}
+  "deb-libpoppler102" {>= "20.09.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5multimedia5" {>= "5.6.0~beta"}
+  "deb-libqt5multimediawidgets5" {>= "5.6.0~beta"}
+  "deb-libqt5network5" {>= "5.14.1"}
+  "deb-libqt5script5" {>= "5.6.0~beta"}
+  "deb-libqt5svg5" {>= "5.6.0~beta"}
+  "deb-libqt5webkit5" {>= "5.212.0~alpha3"}
+  "deb-libqt5widgets5" {>= "5.15.1"}
+  "deb-libqt5xml5" {>= "5.0.2"}
+  "deb-libquazip5-1" {>= "0.7.3"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libswresample3" {>= "7-4.0"}
+  "deb-libswscale5" {>= "7-4.0"}
+  "deb-libx11-6"
+  "deb-openboard-common" {>= "1.5.4+dfsg1-2+deb11u1"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "openboard_1.5.4+dfsg1-2+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openboard/openboard_1.5.4+dfsg1-2+deb11u1_amd64.deb"
+}

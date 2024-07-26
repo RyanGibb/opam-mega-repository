@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i orthanc-webviewer_2.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r orthanc-webviewer"]
+]
+depends: [
+  "deb-libboost-filesystem1-67-0"
+  "deb-libboost-regex1-67-0" {>= "1.67.0-10"}
+  "deb-libboost-system1-67-0"
+  "deb-libboost-thread1-67-0"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgdcm2-8"
+  "deb-libjsoncpp1" {>= "1.7.4"}
+  "deb-libsqlite3-0" {>= "3.7.3"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libuuid1" {>= "2.16"}
+  "deb-orthanc" {>= "0.9.5"}
+]
+extra-source "orthanc-webviewer_2.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/orthanc-webviewer/orthanc-webviewer_2.5-1_amd64.deb"
+}

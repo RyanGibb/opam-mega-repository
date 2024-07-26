@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-heist-prof_1.1.0.1-3+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-heist-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-aeson-prof"
+  "deb-libghc-attoparsec-prof"
+  "deb-libghc-blaze-builder-prof"
+  "deb-libghc-blaze-html-prof"
+  "deb-libghc-directory-tree-prof"
+  "deb-libghc-dlist-prof"
+  "deb-libghc-hashable-prof"
+  "deb-libghc-heist-dev" {= "1.1.0.1-3+b2"}
+  "deb-libghc-lifted-base-prof"
+  "deb-libghc-map-syntax-prof"
+  "deb-libghc-monad-control-prof"
+  "deb-libghc-random-prof"
+  "deb-libghc-transformers-base-prof"
+  "deb-libghc-unordered-containers-prof"
+  "deb-libghc-vector-prof"
+  "deb-libghc-xmlhtml-prof"
+]
+extra-source "libghc-heist-prof_1.1.0.1-3+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-heist/libghc-heist-prof_1.1.0.1-3+b2_amd64.deb"
+}

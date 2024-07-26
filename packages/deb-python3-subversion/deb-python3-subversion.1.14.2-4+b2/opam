@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-subversion_1.14.2-4+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-subversion"]
+]
+depends: [
+  "deb-libapr1" {>= "1.2.7"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libsvn1" {>= "1.14"}
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-any"
+]
+extra-source "python3-subversion_1.14.2-4+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/subversion/python3-subversion_1.14.2-4+b2_amd64.deb"
+}

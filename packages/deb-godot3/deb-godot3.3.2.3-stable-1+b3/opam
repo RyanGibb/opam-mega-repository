@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i godot3_3.2.3-stable-1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r godot3"]
+]
+depends: [
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libc6" {>= "2.33"}
+  "deb-libenet7"
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgl1"
+  "deb-libogg0" {>= "1.0rc3"}
+  "deb-libopus0" {>= "1.1"}
+  "deb-libpcre2-32-0" {>= "10.22"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libpulse0" {>= "0.99.1"}
+  "deb-libsquish0"
+  "deb-libstdc++6" {>= "11"}
+  "deb-libtheora0" {>= "1.0"}
+  "deb-libvorbis0a" {>= "1.1.2"}
+  "deb-libvpx7" {>= "1.10.0"}
+  "deb-libwebp7"
+  "deb-libx11-6" {>= "2-1.2.99.901"}
+  "deb-libxcursor1" {> "1.1.2"}
+  "deb-libxi6" {>= "2-1.2.99.4"}
+  "deb-libxinerama1" {>= "2-1.1.4"}
+  "deb-libxrandr2"
+  "deb-libxrender1"
+  "deb-zlib1g" {>= "1-1.2.0"}
+]
+extra-source "godot3_3.2.3-stable-1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/godot/godot3_3.2.3-stable-1+b3_amd64.deb"
+}

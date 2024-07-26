@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kid3_3.8.5-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kid3"]
+]
+depends: [
+  "deb-kid3-core" {= "3.8.5-3"}
+  "deb-kio"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libkf5configcore5" {>= "4.97.0"}
+  "deb-libkf5configgui5" {>= "4.97.0"}
+  "deb-libkf5configwidgets5" {>= "5.23.0"}
+  "deb-libkf5coreaddons5" {>= "4.100.0"}
+  "deb-libkf5kiocore5" {>= "5.69.0"}
+  "deb-libkf5widgetsaddons5" {>= "4.96.0"}
+  "deb-libkf5xmlgui5" {>= "4.98.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+]
+extra-source "kid3_3.8.5-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kid3/kid3_3.8.5-3_amd64.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcgi-application-plugin-dbiprofile-perl_0.07-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcgi-application-plugin-dbiprofile-perl"]
+]
+depends: [
+  "deb-libcgi-application-perl"
+  "deb-libdata-javascript-perl"
+  "deb-libdbi-perl"
+  "deb-libhtml-template-perl"
+  "deb-libio-stringy-perl"
+  "deb-perl"
+]
+extra-source "libcgi-application-plugin-dbiprofile-perl_0.07-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libcgi-application-plugin-dbiprofile-perl/libcgi-application-plugin-dbiprofile-perl_0.07-2_all.deb"
+}

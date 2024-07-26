@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-treescape_1.10.18+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-treescape"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "3.5.0-5"}
+  "deb-r-cran-ade4"
+  "deb-r-cran-adegenet"
+  "deb-r-cran-adegraphics"
+  "deb-r-cran-adephylo"
+  "deb-r-cran-ape"
+  "deb-r-cran-combinat"
+  "deb-r-cran-distory"
+  "deb-r-cran-fields"
+  "deb-r-cran-htmlwidgets"
+  "deb-r-cran-mass"
+  "deb-r-cran-phangorn"
+  "deb-r-cran-rcpp"
+  "deb-r-cran-rgl"
+  "deb-r-cran-rlumshiny"
+  "deb-r-cran-scatterd3"
+  "deb-r-cran-shiny"
+  "deb-r-cran-shinybs"
+]
+extra-source "r-cran-treescape_1.10.18+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-treescape/r-cran-treescape_1.10.18+dfsg-1_amd64.deb"
+}

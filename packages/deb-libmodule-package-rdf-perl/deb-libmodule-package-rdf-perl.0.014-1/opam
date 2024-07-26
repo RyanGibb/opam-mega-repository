@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmodule-package-rdf-perl_0.014-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmodule-package-rdf-perl"]
+]
+depends: [
+  "deb-libdatetime-perl"
+  "deb-libfile-homedir-perl"
+  "deb-libgetopt-argvfile-perl"
+  "deb-libio-all-perl"
+  "deb-liblog-log4perl-perl"
+  "deb-libmodule-install-autolicense-perl"
+  "deb-libmodule-install-automanifest-perl"
+  "deb-libmodule-install-copyright-perl"
+  "deb-libmodule-install-doap-perl" {>= "0.006"}
+  "deb-libmodule-install-doapchangesets-perl" {>= "0.206"}
+  "deb-libmodule-install-perl"
+  "deb-libmodule-install-rdf-perl" {>= "0.009"}
+  "deb-libmodule-install-readmefrompod-perl"
+  "deb-libmodule-install-trustmetayml-perl" {>= "0.003"}
+  "deb-libmodule-package-perl"
+  "deb-librdf-trine-perl"
+  "deb-libsoftware-license-perl"
+  "deb-libtest-pod-coverage-perl"
+  "deb-libtest-pod-perl"
+  "deb-libtest-rdf-doap-version-perl"
+  "deb-libtext-template-perl"
+  "deb-liburi-perl"
+  "deb-perl"
+]
+extra-source "libmodule-package-rdf-perl_0.014-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libm/libmodule-package-rdf-perl/libmodule-package-rdf-perl_0.014-1_all.deb"
+}

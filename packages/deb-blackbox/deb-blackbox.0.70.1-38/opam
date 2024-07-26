@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i blackbox_0.70.1-38_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r blackbox"]
+]
+depends: [
+  "deb-libbt0" {>= "0.70.1"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libx11-6"
+  "deb-libxext6"
+]
+extra-source "blackbox_0.70.1-38_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/blackbox/blackbox_0.70.1-38_amd64.deb"
+}

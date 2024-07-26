@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fte-xwindow_0.50.2b6-20110708-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fte-xwindow"]
+]
+depends: [
+  "deb-fte" {= "0.50.2b6-20110708-4"}
+  "deb-libc6" {>= "2.28"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libx11-6"
+  "deb-libxpm4"
+]
+extra-source "fte-xwindow_0.50.2b6-20110708-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fte/fte-xwindow_0.50.2b6-20110708-4_amd64.deb"
+}

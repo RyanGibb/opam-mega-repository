@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnome-network-displays_0.90.5-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnome-network-displays"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libglib2-0-0" {>= "2.53.2"}
+  "deb-libgstreamer-plugins-base1-0-0" {>= "1.6.0"}
+  "deb-libgstreamer1-0-0" {>= "1.14"}
+  "deb-libgstrtspserver-1-0-0" {>= "1.8.0"}
+  "deb-libgtk-3-0" {>= "3.22"}
+  "deb-libnm0" {>= "1.16.0"}
+  "deb-libpulse-mainloop-glib0" {>= "0.99.1"}
+  "deb-libpulse0" {>= "0.99.1"}
+  "deb-network-manager"
+  "deb-wpasupplicant"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "gnome-network-displays_0.90.5-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnome-network-displays/gnome-network-displays_0.90.5-3_amd64.deb"
+}

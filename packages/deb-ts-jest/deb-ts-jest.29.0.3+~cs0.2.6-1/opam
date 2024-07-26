@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ts-jest_29.0.3+~cs0.2.6-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ts-jest"]
+]
+depends: [
+  "deb-jest" {>= "29"}
+  "deb-node-fast-json-stable-stringify"
+  "deb-node-json5"
+  "deb-node-lodash-packages"
+  "deb-node-make-error"
+  "deb-node-mkdirp" {>= "1.0"}
+  "deb-node-semver" {>= "7.0"}
+  "deb-node-typescript"
+  "deb-node-yargs-parser"
+  "deb-nodejs-any" {>= "14"}
+]
+extra-source "ts-jest_29.0.3+~cs0.2.6-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-ts-jest/ts-jest_29.0.3+~cs0.2.6-1_all.deb"
+}

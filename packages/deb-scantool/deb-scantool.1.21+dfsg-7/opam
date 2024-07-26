@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i scantool_1.21+dfsg-7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r scantool"]
+]
+depends: [
+  "deb-liballegro4-4"
+  "deb-libc6" {>= "2.14"}
+  "deb-libx11-6"
+  "deb-libxcursor1" {> "1.1.2"}
+  "deb-libxext6"
+  "deb-libxpm4"
+  "deb-libxxf86vm1"
+]
+extra-source "scantool_1.21+dfsg-7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/scantool/scantool_1.21+dfsg-7_amd64.deb"
+}

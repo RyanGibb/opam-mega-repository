@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openstack-proxy-node_0.31_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openstack-proxy-node"]
+]
+depends: [
+  "deb-aodh-api"
+  "deb-aodh-evaluator"
+  "deb-aodh-notifier"
+  "deb-ceilometer-agent-central"
+  "deb-glance"
+  "deb-heat-api"
+  "deb-heat-api-cfn"
+  "deb-heat-engine"
+  "deb-neutron-common"
+  "deb-neutron-dhcp-agent"
+  "deb-neutron-l3-agent"
+  "deb-neutron-metadata-agent"
+  "deb-neutron-server"
+  "deb-nova-api"
+  "deb-nova-conductor"
+  "deb-nova-consoleproxy"
+  "deb-nova-scheduler"
+  "deb-openstack-dashboard-apache"
+  "deb-openstack-pkg-tools"
+  "deb-placement-api"
+  ("deb-neutron-plugin-openvswitch-agent" | "deb- neutron-openvswitch-agent")
+]
+extra-source "openstack-proxy-node_0.31_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openstack-meta-packages/openstack-proxy-node_0.31_all.deb"
+}

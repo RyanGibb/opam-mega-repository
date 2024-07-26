@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i opensm_3.3.23-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r opensm"]
+]
+depends: [
+  "deb-infiniband-diags"
+  "deb-libc6" {>= "2.34"}
+  "deb-libopensm9" {= "3.3.23-2+b1"}
+  "deb-libosmcomp5" {>= "3.3.22"}
+  "deb-libosmvendor5" {>= "3.3.22"}
+  "deb-libwrap0" {>= "7.6-4~"}
+  "deb-lsb-base"
+]
+extra-source "opensm_3.3.23-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/opensm/opensm_3.3.23-2+b1_amd64.deb"
+}

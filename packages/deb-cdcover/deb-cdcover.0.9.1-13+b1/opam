@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cdcover_0.9.1-13+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cdcover"]
+]
+depends: [
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-texlive-latex-base"
+]
+extra-source "cdcover_0.9.1-13+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cdcover/cdcover_0.9.1-13+b1_amd64.deb"
+}

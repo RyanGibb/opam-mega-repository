@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i solaar_1.1.8+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r solaar"]
+]
+depends: [
+  "deb-gir1-2-ayatanaappindicator3-0-1"
+  "deb-gir1-2-gtk-3-0"
+  "deb-gir1-2-notify-0-7"
+  "deb-python3-any"
+  "deb-python3-evdev"
+  "deb-python3-gi"
+  "deb-python3-psutil"
+  "deb-python3-pyudev"
+  "deb-python3-xlib"
+  "deb-python3-yaml"
+  "deb-udev"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-passwd" | "deb- adduser")
+]
+extra-source "solaar_1.1.8+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/solaar/solaar_1.1.8+dfsg-2_all.deb"
+}

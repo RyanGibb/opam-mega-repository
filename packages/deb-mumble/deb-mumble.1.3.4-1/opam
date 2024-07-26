@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mumble_1.3.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mumble"]
+]
+depends: [
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libavahi-compat-libdnssd1" {>= "0.6.16"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libprotobuf23" {>= "3.12.4"}
+  "deb-libpulse0" {>= "0.99.1"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.14.1"}
+  "deb-libqt5network5" {>= "5.14.1"}
+  "deb-libqt5sql5" {>= "5.3.0"}
+  "deb-libqt5sql5-sqlite"
+  "deb-libqt5svg5" {>= "5.6.0~beta"}
+  "deb-libqt5widgets5" {>= "5.14.1"}
+  "deb-libqt5xml5" {>= "5.0.2"}
+  "deb-libsndfile1" {>= "1.0.20"}
+  "deb-libspeechd2" {>= "0.7.1"}
+  "deb-libspeex1" {>= "1.2~beta3-1"}
+  "deb-libspeexdsp1" {>= "1.2~beta3.2-1"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libx11-6" {>= "2-1.2.99.901"}
+  "deb-libxi6" {>= "2-1.2.99.4"}
+  "deb-lsb-release"
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "mumble_1.3.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mumble/mumble_1.3.4-1_amd64.deb"
+}

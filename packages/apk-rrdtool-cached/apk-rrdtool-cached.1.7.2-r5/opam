@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add rrdtool-cached-1.7.2-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del rrdtool-cached"]
+]
+depends: [
+  "apk-glib" {= "2.70.5-r0"}
+  "apk-librrd" {= "1.7.2-r5"}
+  "apk-musl" {= "1.2.2-r9"}
+]
+extra-source "rrdtool-cached-1.7.2-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/rrdtool-cached-1.7.2-r5.apk"
+}

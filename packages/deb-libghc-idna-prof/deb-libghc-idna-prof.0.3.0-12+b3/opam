@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-idna-prof_0.3.0-12+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-idna-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-idna-dev" {= "0.3.0-12+b3"}
+  "deb-libghc-punycode-prof"
+  "deb-libghc-stringprep-prof"
+]
+extra-source "libghc-idna-prof_0.3.0-12+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-idna/libghc-idna-prof_0.3.0-12+b3_amd64.deb"
+}

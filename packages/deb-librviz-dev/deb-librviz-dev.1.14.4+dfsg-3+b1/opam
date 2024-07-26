@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librviz-dev_1.14.4+dfsg-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librviz-dev"]
+]
+depends: [
+  "deb-libimage-transport-dev"
+  "deb-libinteractive-markers-dev" {>= "1.12.0"}
+  "deb-liblaser-geometry-dev"
+  "deb-libmap-msgs-dev"
+  "deb-libmessage-filters-dev"
+  "deb-libnav-msgs-dev"
+  "deb-libogre-1-12-dev"
+  "deb-libresource-retriever-dev"
+  "deb-librosbag-dev"
+  "deb-librosconsole-dev"
+  "deb-libroscpp-dev"
+  "deb-libroslib-dev"
+  "deb-librviz5d" {= "1.14.4+dfsg-3+b1"}
+  "deb-libsensor-msgs-dev"
+  "deb-libstd-msgs-dev"
+  "deb-libstd-srvs-dev"
+  "deb-libtf-dev"
+  "deb-liburdf-dev"
+  "deb-libvisualization-msgs-dev"
+  "deb-pluginlib-dev"
+  "deb-python3-python-qt-binding"
+  "deb-python3-rospy"
+]
+extra-source "librviz-dev_1.14.4+dfsg-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ros-rviz/librviz-dev_1.14.4+dfsg-3+b1_amd64.deb"
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-body-parser_1.19.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-body-parser"]
+]
+depends: [
+  "deb-node-bytes" {>= "3.0.0"}
+  "deb-node-content-type"
+  "deb-node-debug" {>= "2.6.9"}
+  "deb-node-depd" {>= "1.1.1"}
+  "deb-node-http-errors"
+  "deb-node-iconv" {>= "2.3.0"}
+  "deb-node-on-finished"
+  "deb-node-qs"
+  "deb-node-raw-body"
+  "deb-node-type-is"
+  "deb-nodejs"
+]
+extra-source "node-body-parser_1.19.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-body-parser/node-body-parser_1.19.0-2_all.deb"
+}

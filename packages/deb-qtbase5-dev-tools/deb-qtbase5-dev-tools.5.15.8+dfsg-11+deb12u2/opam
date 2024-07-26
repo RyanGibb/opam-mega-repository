@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qtbase5-dev-tools_5.15.8+dfsg-11+deb12u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qtbase5-dev-tools"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqt5core5a"
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.2.0~alpha1"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libzstd1" {>= "1.5.2"}
+  "deb-perl-any"
+  "deb-qtchooser" {>= "55-gc9562a1-1~"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "qtbase5-dev-tools_5.15.8+dfsg-11+deb12u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qtbase-opensource-src/qtbase5-dev-tools_5.15.8+dfsg-11+deb12u2_amd64.deb"
+}

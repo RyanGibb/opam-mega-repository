@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mesa-osmesa-22.2.5-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mesa-osmesa"]
+]
+depends: [
+  "apk-libgcc" {= "12.2.1_git20220924-r4"}
+  "apk-libstdc++" {= "12.2.1_git20220924-r4"}
+  "apk-llvm15-libs" {= "15.0.7-r0"}
+  "apk-mesa" {= "22.2.5-r1"}
+  "apk-mesa-glapi" {= "22.2.5-r1"}
+  "apk-musl" {= "1.2.3-r5"}
+  "apk-zlib" {= "1.2.13-r0"}
+  "apk-zstd-libs" {= "1.5.5-r0"}
+]
+extra-source "mesa-osmesa-22.2.5-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mesa-osmesa-22.2.5-r1.apk"
+}

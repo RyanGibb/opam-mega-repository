@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-sbv-dev_8.17-1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-sbv-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.29"}
+  "deb-libghc-async-dev"
+  "deb-libghc-libbf-dev"
+  "deb-libghc-quickcheck2-dev"
+  "deb-libghc-random-dev"
+  "deb-libghc-syb-dev"
+  "deb-libghc-uniplate-dev"
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+]
+extra-source "libghc-sbv-dev_8.17-1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-sbv/libghc-sbv-dev_8.17-1+b3_amd64.deb"
+}

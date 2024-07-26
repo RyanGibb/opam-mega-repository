@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pstoedit_3.75-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pstoedit"]
+]
+depends: [
+  "deb-ghostscript"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libpstoedit0c2a" {>= "3.75"}
+  "deb-libstdc++6" {>= "4.1.1"}
+]
+extra-source "pstoedit_3.75-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pstoedit/pstoedit_3.75-1_amd64.deb"
+}

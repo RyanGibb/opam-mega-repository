@@ -1,0 +1,60 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i accountwizard_4:20.08.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r accountwizard"]
+]
+depends: [
+  "deb-kio"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgpgmepp6" {>= "1.14.0"}
+  "deb-libkf5akonadicore5abi2"
+  "deb-libkf5akonadicore5abi2" {>= "4-20.08.3"}
+  "deb-libkf5akonadimime5"
+  "deb-libkf5akonadimime5" {>= "4-20.08.3"}
+  "deb-libkf5akonadiwidgets5abi1"
+  "deb-libkf5akonadiwidgets5abi1" {>= "4-20.08.3"}
+  "deb-libkf5codecs5" {>= "5.71.0~"}
+  "deb-libkf5configcore5" {>= "5.71.0~"}
+  "deb-libkf5coreaddons5" {>= "4.100.0"}
+  "deb-libkf5crash5" {>= "5.71.0~"}
+  "deb-libkf5dbusaddons5" {>= "5.71.0~"}
+  "deb-libkf5i18n5" {>= "5.0.0"}
+  "deb-libkf5identitymanagement5"
+  "deb-libkf5identitymanagement5" {>= "20.08.3"}
+  "deb-libkf5kcmutils5" {>= "5.71.0~"}
+  "deb-libkf5kiocore5" {>= "5.69.0"}
+  "deb-libkf5krosscore5" {>= "5.71.0~"}
+  "deb-libkf5ldap5abi1"
+  "deb-libkf5ldap5abi1" {>= "20.08.3"}
+  "deb-libkf5libkdepim5"
+  "deb-libkf5libkdepim5" {>= "4-20.08.3"}
+  "deb-libkf5libkleo5"
+  "deb-libkf5libkleo5" {>= "4-20.08.3"}
+  "deb-libkf5mailtransport5"
+  "deb-libkf5mailtransport5" {>= "20.08.3"}
+  "deb-libkf5mailtransportakonadi5"
+  "deb-libkf5mailtransportakonadi5" {>= "20.08.3"}
+  "deb-libkf5mime5abi1"
+  "deb-libkf5mime5abi1" {>= "20.08.3"}
+  "deb-libkf5newstuffcore5" {>= "5.71.0~"}
+  "deb-libkf5notifications5" {>= "5.71.0~"}
+  "deb-libkf5pimcommon5abi2"
+  "deb-libkf5pimcommon5abi2" {>= "4-20.08.3"}
+  "deb-libkf5wallet-bin"
+  "deb-libkf5wallet5" {>= "5.71.0~"}
+  "deb-libkf5widgetsaddons5" {>= "5.37.0"}
+  "deb-libkf5xmlgui5" {>= "4.96.0"}
+  "deb-libqgpgme7" {>= "1.14.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.14.1"}
+  "deb-libqt5widgets5" {>= "5.13.0~"}
+  "deb-libqt5xml5" {>= "5.13.0~"}
+  "deb-libstdc++6" {>= "5.2"}
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "accountwizard_4:20.08.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kmail-account-wizard/accountwizard_20.08.3-1_amd64.deb"
+}

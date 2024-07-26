@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ocaml_4.11.1-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ocaml"]
+]
+depends: [
+  "deb-libx11-dev"
+  "deb-ocaml-base"
+  "deb-ocaml-base-nox"
+  "deb-ocaml-nox"
+]
+extra-source "ocaml_4.11.1-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/ocaml/ocaml_4.11.1-4_amd64.deb"
+}

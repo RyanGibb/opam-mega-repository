@@ -1,0 +1,44 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-aws-prof_0.22-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-aws-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-aeson-prof"
+  "deb-libghc-attoparsec-prof"
+  "deb-libghc-aws-dev" {= "0.22-1+b1"}
+  "deb-libghc-base16-bytestring-prof"
+  "deb-libghc-base64-bytestring-prof"
+  "deb-libghc-blaze-builder-prof"
+  "deb-libghc-byteable-prof"
+  "deb-libghc-case-insensitive-prof"
+  "deb-libghc-cereal-prof"
+  "deb-libghc-conduit-extra-prof"
+  "deb-libghc-conduit-prof"
+  "deb-libghc-cryptonite-prof"
+  "deb-libghc-data-default-prof"
+  "deb-libghc-exceptions-prof"
+  "deb-libghc-http-client-tls-prof"
+  "deb-libghc-http-conduit-prof"
+  "deb-libghc-http-types-prof"
+  "deb-libghc-lifted-base-prof"
+  "deb-libghc-memory-prof"
+  "deb-libghc-monad-control-prof"
+  "deb-libghc-network-bsd-prof"
+  "deb-libghc-network-prof"
+  "deb-libghc-old-locale-prof"
+  "deb-libghc-resourcet-prof"
+  "deb-libghc-safe-prof"
+  "deb-libghc-scientific-prof"
+  "deb-libghc-tagged-prof"
+  "deb-libghc-unordered-containers-prof"
+  "deb-libghc-utf8-string-prof"
+  "deb-libghc-vector-prof"
+  "deb-libghc-xml-conduit-prof"
+]
+extra-source "libghc-aws-prof_0.22-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-aws/libghc-aws-prof_0.22-1+b1_amd64.deb"
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add haproxy-2.4.26-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del haproxy"]
+]
+depends: [
+  "apk-busybox" {= "1.35.0-r18"}
+  "apk-libcrypto1-1" {= "1.1.1w-r1"}
+  "apk-libssl1-1" {= "1.1.1w-r1"}
+  "apk-lua5-4-libs" {= "5.4.4-r5"}
+  "apk-musl" {= "1.2.3-r3"}
+  "apk-pcre" {= "8.45-r2"}
+  "apk-zlib" {= "1.2.12-r3"}
+]
+extra-source "haproxy-2.4.26-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/haproxy-2.4.26-r0.apk"
+}

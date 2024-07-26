@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openldap-clients-2.6.5-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openldap-clients"]
+]
+depends: [
+  "apk-libldap" {= "2.6.5-r0"}
+  "apk-libsasl" {= "2.1.28-r4"}
+  "apk-libuuid" {= "2.38.1-r8"}
+  "apk-musl" {= "1.2.4-r2"}
+]
+extra-source "openldap-clients-2.6.5-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/openldap-clients-2.6.5-r0.apk"
+}

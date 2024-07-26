@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i songwrite_3-0.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r songwrite"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-editobj3"
+  "deb-python3-pyqt5"
+  "deb-timidity"
+  ("deb-evince" | "deb- okular" | "deb- mupdf" | "deb- xpdf")
+]
+extra-source "songwrite_3-0.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/songwrite/songwrite_3-0.2-1_all.deb"
+}

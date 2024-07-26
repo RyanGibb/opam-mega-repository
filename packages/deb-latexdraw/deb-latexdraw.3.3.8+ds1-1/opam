@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i latexdraw_3.3.8+ds1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r latexdraw"]
+]
+depends: [
+  "deb-default-jre" {>= "2-1.8"}
+  "deb-java-wrappers"
+  "deb-libjlibeps-java"
+  "deb-libmalai-java"
+  "deb-libpdfrenderer-java"
+  "deb-scala-library" {>= "2.11.8"}
+  "deb-scala-parser-combinators" {>= "1.0.3"}
+]
+extra-source "latexdraw_3.3.8+ds1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/latexdraw/latexdraw_3.3.8+ds1-1_all.deb"
+}

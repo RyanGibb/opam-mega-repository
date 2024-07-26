@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xmoto_0.6.1+repack-9_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xmoto"]
+]
+depends: [
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.34"}
+  "deb-libchipmunk7" {>= "7.0.3"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-liblua5-1-0"
+  "deb-libode8" {>= "2-0.16.2"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libsdl-mixer1-2" {>= "1.2.12"}
+  "deb-libsdl-net1-2"
+  "deb-libsdl-ttf2-0-0"
+  "deb-libsdl1-2-compat-shim"
+  "deb-libsqlite3-0" {>= "3.5.9"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libxdg-basedir1"
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-xmoto-data" {= "0.6.1+repack-9"}
+  "deb-zlib1g" {>= "1-1.2.0"}
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+extra-source "xmoto_0.6.1+repack-9_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xmoto/xmoto_0.6.1+repack-9_amd64.deb"
+}

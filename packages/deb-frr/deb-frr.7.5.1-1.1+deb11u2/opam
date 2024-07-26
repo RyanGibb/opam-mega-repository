@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i frr_7.5.1-1.1+deb11u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r frr"]
+]
+depends: [
+  "deb-libc-ares2" {>= "1.7.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libcap2" {>= "1-2.10"}
+  "deb-libcrypt1" {>= "1-4.1.0"}
+  "deb-libjson-c5" {>= "0.15"}
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-libreadline8" {>= "6.0"}
+  "deb-libsystemd0"
+  "deb-libyang1" {>= "1.0.184-1~"}
+  "deb-logrotate" {>= "3.2-11"}
+  ("deb-iproute2" | "deb- iproute")
+]
+conflicts: [
+  "deb-pimd"
+  "deb-quagga"
+  "deb-quagga-bgpd"
+  "deb-quagga-core"
+  "deb-quagga-isisd"
+  "deb-quagga-ospf6d"
+  "deb-quagga-ospfd"
+  "deb-quagga-pimd"
+  "deb-quagga-ripd"
+  "deb-quagga-ripngd"
+  "deb-zebra"
+  "deb-zebra-pj"
+]
+extra-source "frr_7.5.1-1.1+deb11u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/frr/frr_7.5.1-1.1+deb11u2_amd64.deb"
+}

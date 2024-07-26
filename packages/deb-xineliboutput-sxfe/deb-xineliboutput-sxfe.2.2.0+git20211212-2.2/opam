@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xineliboutput-sxfe_2.2.0+git20211212-2.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xineliboutput-sxfe"]
+]
+depends: [
+  "deb-dbus"
+  "deb-libc6" {>= "2.34"}
+  "deb-libcec6" {>= "6.0.2"}
+  "deb-libglx0"
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libopengl0"
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxine2" {>= "1.2.0"}
+  "deb-libxine2-x"
+  "deb-libxine2-xvdr" {= "2.2.0+git20211212-2.2"}
+  "deb-libxinerama1" {>= "2-1.1.4"}
+  "deb-libxrender1"
+]
+extra-source "xineliboutput-sxfe_2.2.0+git20211212-2.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/vdr-plugin-xineliboutput/xineliboutput-sxfe_2.2.0+git20211212-2.2_amd64.deb"
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcodeblocks0_20.03+svn13046-0.1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcodeblocks0"]
+]
+depends: [
+  "deb-binutils"
+  "deb-file"
+  "deb-libc6" {>= "2.33"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libgtk-3-0" {>= "3.0.0"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libtinyxml2-6-2v5" {>= "2.6.2"}
+  "deb-libwxbase3-2-1" {>= "3.2.1+dfsg"}
+  "deb-libwxgtk3-2-1" {>= "3.2.1+dfsg-2"}
+]
+extra-source "libcodeblocks0_20.03+svn13046-0.1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/codeblocks/libcodeblocks0_20.03+svn13046-0.1+b2_amd64.deb"
+}

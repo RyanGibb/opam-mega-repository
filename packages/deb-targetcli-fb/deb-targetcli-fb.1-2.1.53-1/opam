@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i targetcli-fb_1:2.1.53-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r targetcli-fb"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-configshell-fb"
+  "deb-python3-gi"
+  "deb-python3-rtslib-fb" {>= "2.1.62"}
+  "deb-python3-six"
+]
+conflicts: [
+  "deb-lio-utils"
+  "deb-targetcli"
+]
+extra-source "targetcli-fb_1:2.1.53-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/targetcli-fb/targetcli-fb_2.1.53-1_all.deb"
+}

@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libtrapperkeeper-webserver-jetty9-clojure_4.1.0-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libtrapperkeeper-webserver-jetty9-clojure"]
+]
+depends: [
+  "deb-libclojure-java"
+  "deb-libjanino-java"
+  "deb-libjava-jmx-clojure"
+  "deb-libjetty9-extra-java"
+  "deb-libjetty9-java"
+  "deb-libkitchensink-clojure" {>= "3.1.1-2"}
+  "deb-libordered-clojure"
+  "deb-libprismatic-schema-clojure" {>= "1.1.12"}
+  "deb-libpuppetlabs-i18n-clojure" {>= "0.9.0-2"}
+  "deb-libring-codec-clojure" {>= "1.1.2"}
+  "deb-libring-servlet-clojure"
+  "deb-libservlet-api-java"
+  "deb-libslf4j-java"
+  "deb-libssl-utils-clojure" {>= "3.1.0"}
+  "deb-libtools-logging-clojure"
+  "deb-libtrapperkeeper-clojure" {>= "3.1.0"}
+  "deb-libtrapperkeeper-filesystem-watcher-clojure" {>= "1.2.2-2"}
+]
+extra-source "libtrapperkeeper-webserver-jetty9-clojure_4.1.0-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/trapperkeeper-webserver-jetty9-clojure/libtrapperkeeper-webserver-jetty9-clojure_4.1.0-4_all.deb"
+}

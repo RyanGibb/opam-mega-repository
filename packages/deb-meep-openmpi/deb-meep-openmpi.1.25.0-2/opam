@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i meep-openmpi_1.25.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r meep-openmpi"]
+]
+depends: [
+  "deb-guile-3-0-libs"
+  "deb-libc6" {>= "2.34"}
+  "deb-libctl7" {>= "4.5.0-8"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libmeep-openmpi30" {>= "1.25.0"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-openmpi-bin"
+]
+conflicts: [
+  "deb-meep"
+  "deb-meep-mpi-default"
+  "deb-meep-mpich2"
+]
+extra-source "meep-openmpi_1.25.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/meep-openmpi/meep-openmpi_1.25.0-2_amd64.deb"
+}

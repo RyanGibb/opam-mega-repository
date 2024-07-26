@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-backoff-dev_0.4.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-backoff-dev"]
+]
+depends: [
+  "deb-librust-async-std-dev"
+  "deb-librust-futures-core-dev"
+  "deb-librust-getrandom-0-2+default-dev"
+  "deb-librust-instant-0-1+default-dev"
+  "deb-librust-pin-project-lite-dev"
+  "deb-librust-rand-0-8+default-dev"
+  "deb-librust-tokio-1+default-dev"
+  "deb-librust-tokio-1+time-dev"
+]
+extra-source "librust-backoff-dev_0.4.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-backoff/librust-backoff-dev_0.4.0-3_amd64.deb"
+}

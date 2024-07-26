@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i wesnoth-1.14-core_1:1.14.15-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r wesnoth-1.14-core"]
+]
+depends: [
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0"}
+  "deb-libboost-iostreams1-74-0" {>= "1.74.0"}
+  "deb-libboost-locale1-74-0" {>= "1.74.0"}
+  "deb-libboost-program-options1-74-0" {>= "1.74.0"}
+  "deb-libboost-random1-74-0" {>= "1.74.0"}
+  "deb-libboost-regex1-74-0"
+  "deb-libboost-thread1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libcairo2" {>= "1.6.0"}
+  "deb-libdbus-1-3" {>= "1.9.14"}
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libfribidi0" {>= "0.19.2"}
+  "deb-libgcc-s1" {>= "3.4"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libpango-1-0-0" {>= "1.22.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libreadline8" {>= "6.0"}
+  "deb-libsdl2-2-0-0" {>= "2.0.12+dfsg1"}
+  "deb-libsdl2-image-2-0-0" {>= "2.0.2"}
+  "deb-libsdl2-mixer-2-0-0" {>= "2.0.2"}
+  "deb-libsdl2-ttf-2-0-0" {>= "2.0.14"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libvorbisfile3" {>= "1.2.0"}
+  "deb-wesnoth-1-14-data" {= "1-1.14.15-1"}
+]
+extra-source "wesnoth-1.14-core_1:1.14.15-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/w/wesnoth-1.14/wesnoth-1.14-core_1.14.15-1_amd64.deb"
+}

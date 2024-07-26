@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cyrus-murder_3.6.1-4+deb12u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cyrus-murder"]
+]
+depends: [
+  "deb-cyrus-clients" {= "3.6.1-4+deb12u2"}
+  "deb-cyrus-common" {= "3.6.1-4+deb12u2"}
+  "deb-cyrus-imapd" {= "3.6.1-4+deb12u2"}
+  "deb-cyrus-pop3d" {= "3.6.1-4+deb12u2"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libsasl2-2" {>= "2.1.28+dfsg"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libwrap0" {>= "7.6-4~"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "cyrus-murder_3.6.1-4+deb12u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cyrus-imapd/cyrus-murder_3.6.1-4+deb12u2_amd64.deb"
+}

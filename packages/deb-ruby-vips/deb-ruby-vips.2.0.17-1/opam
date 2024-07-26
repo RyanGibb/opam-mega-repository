@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-vips_2.0.17-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-vips"]
+]
+depends: [
+  "deb-libglib2-0-dev"
+  "deb-libvips-dev"
+  "deb-ruby-ffi"
+  ("deb-ruby" | "deb- ruby-interpreter")
+]
+extra-source "ruby-vips_2.0.17-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-vips/ruby-vips_2.0.17-1_all.deb"
+}

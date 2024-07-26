@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i apachetop_0.18.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r apachetop"]
+]
+depends: [
+  "deb-gamin"
+  "deb-libadns1" {>= "1.5.0~"}
+  "deb-libc6" {>= "2.15"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libncurses6" {>= "6"}
+  "deb-libreadline7" {>= "6.0"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libtinfo6" {>= "6"}
+  ("deb-libgamin0" | "deb- libfam0")
+]
+extra-source "apachetop_0.18.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/apachetop/apachetop_0.18.4-1_amd64.deb"
+}

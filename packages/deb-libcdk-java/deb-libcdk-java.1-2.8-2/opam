@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcdk-java_1:2.8-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcdk-java"]
+]
+depends: [
+  "deb-libbeam-java" {>= "1.3.3"}
+  "deb-libcmlxom-java" {>= "4.3"}
+  "deb-libfreehep-graphicsio-pdf-java"
+  "deb-libfreehep-graphicsio-ps-java"
+  "deb-libjama-java" {>= "1.0.3"}
+  "deb-libjavacc-maven-plugin-java"
+  "deb-liblog4j2-java" {>= "2.17.2"}
+  "deb-libmaven-compiler-plugin-java" {>= "3.8.1"}
+  "deb-libmaven-jar-plugin-java" {>= "3.1.2"}
+  "deb-libsignatures-java"
+  "deb-libslf4j-java" {>= "1.7.32"}
+  "deb-libvecmath-java" {>= "1.5.2"}
+  "deb-libxom-java"
+]
+extra-source "libcdk-java_1:2.8-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cdk/libcdk-java_2.8-2_all.deb"
+}

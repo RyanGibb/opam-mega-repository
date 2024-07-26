@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnumed-server_22.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnumed-server"]
+]
+depends: [
+  "deb-bzip2"
+  "deb-debconf"
+  "deb-openssl"
+  "deb-postgresql" {>= "9.2"}
+  "deb-postgresql-client"
+  "deb-python"
+  "deb-python-egenix-mxdatetime"
+  "deb-python-psycopg2"
+  "deb-rsync"
+  "deb-sudo"
+  ("deb-bsd-mailx" | "deb- mail-reader")
+  ("deb-cron" | "deb- anacron")
+  ("deb-gnupg" | "deb- gnupg2")
+]
+extra-source "gnumed-server_22.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnumed-server/gnumed-server_22.5-1_all.deb"
+}

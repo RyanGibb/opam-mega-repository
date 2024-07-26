@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i rmlint-doc_2.8.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r rmlint-doc"]
+]
+depends: [
+  "deb-fonts-vollkorn"
+  "deb-libjs-bootstrap"
+  "deb-libjs-bootswatch"
+  "deb-libjs-jquery"
+  "deb-libjs-mathjax"
+  "deb-libjs-sphinxdoc" {>= "1.0"}
+]
+extra-source "rmlint-doc_2.8.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rmlint/rmlint-doc_2.8.0-3_all.deb"
+}

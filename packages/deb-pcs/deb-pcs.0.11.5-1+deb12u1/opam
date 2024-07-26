@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pcs_0.11.5-1+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pcs"]
+]
+depends: [
+  "deb-libnss3-tools"
+  "deb-psmisc"
+  "deb-puma"
+  "deb-python3-any"
+  "deb-python3-dacite"
+  "deb-python3-dateutil"
+  "deb-python3-lxml"
+  "deb-python3-openssl"
+  "deb-python3-pkg-resources"
+  "deb-python3-pycurl"
+  "deb-python3-pyparsing"
+  "deb-python3-tornado" {>= "6.0.4"}
+  "deb-ruby"
+  "deb-ruby-backports"
+  "deb-ruby-childprocess"
+  "deb-ruby-ethon"
+  "deb-ruby-json"
+  "deb-ruby-nio4r"
+  "deb-ruby-sinatra"
+]
+conflicts: [
+  "deb-python3-pcs"
+]
+extra-source "pcs_0.11.5-1+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pcs/pcs_0.11.5-1+deb12u1_all.deb"
+}

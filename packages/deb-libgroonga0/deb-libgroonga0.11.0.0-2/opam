@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgroonga0_11.0.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgroonga0"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-liblz4-1" {>= "0.0~r130"}
+  "deb-libmsgpackc2" {>= "2.1.0"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libzstd1" {>= "1.4.0"}
+  "deb-zlib1g" {>= "1-1.2.0"}
+]
+extra-source "libgroonga0_11.0.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/groonga/libgroonga0_11.0.0-2_amd64.deb"
+}

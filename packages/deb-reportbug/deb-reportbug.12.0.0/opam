@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i reportbug_12.0.0_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r reportbug"]
+]
+depends: [
+  "deb-apt"
+  "deb-python3-any"
+  "deb-python3-reportbug" {= "12.0.0"}
+  "deb-sensible-utils"
+]
+extra-source "reportbug_12.0.0_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/reportbug/reportbug_12.0.0_all.deb"
+}

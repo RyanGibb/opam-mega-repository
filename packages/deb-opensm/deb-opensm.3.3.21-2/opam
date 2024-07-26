@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i opensm_3.3.21-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r opensm"]
+]
+depends: [
+  "deb-infiniband-diags"
+  "deb-libc6" {>= "2.16"}
+  "deb-libibumad3" {>= "1.3.9"}
+  "deb-libopensm8" {= "3.3.21-2"}
+  "deb-libosmcomp4" {>= "3.3.21"}
+  "deb-libosmvendor4" {>= "3.3.19"}
+  "deb-libwrap0" {>= "7.6-4~"}
+  "deb-lsb-base"
+]
+extra-source "opensm_3.3.21-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/opensm/opensm_3.3.21-2_amd64.deb"
+}

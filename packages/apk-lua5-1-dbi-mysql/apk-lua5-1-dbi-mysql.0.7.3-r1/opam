@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lua5.1-dbi-mysql-0.7.3-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lua5.1-dbi-mysql"]
+]
+depends: [
+  "apk-lua5-1" {= "5.1.5-r13"}
+  "apk-mariadb-connector-c" {= "3.3.10-r0"}
+  "apk-musl" {= "1.2.5-r0"}
+]
+extra-source "lua5.1-dbi-mysql-0.7.3-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lua5.1-dbi-mysql-0.7.3-r1.apk"
+}

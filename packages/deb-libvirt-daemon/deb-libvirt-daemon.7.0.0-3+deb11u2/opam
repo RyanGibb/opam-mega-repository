@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libvirt-daemon_7.0.0-3+deb11u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libvirt-daemon"]
+]
+depends: [
+  "deb-libblkid1" {>= "2.17.2"}
+  "deb-libc6" {>= "2.28"}
+  "deb-libdevmapper1-02-1" {>= "2-1.02.97"}
+  "deb-libgcc-s1" {>= "3.3.1"}
+  "deb-libglib2-0-0" {>= "2.31.8"}
+  "deb-libnetcf1" {>= "1-0.2.2"}
+  "deb-libparted2" {>= "3.1"}
+  "deb-libpcap0-8" {>= "1.5.1"}
+  "deb-libpciaccess0"
+  "deb-libselinux1" {>= "3.1~"}
+  "deb-libudev1" {>= "183"}
+  "deb-libvirt-daemon-driver-qemu" {= "7.0.0-3+deb11u2"}
+  "deb-libvirt0" {= "7.0.0-3+deb11u2"}
+  "deb-libxml2" {>= "2.9.2+really2.9.1+dfsg1-0.2"}
+]
+extra-source "libvirt-daemon_7.0.0-3+deb11u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libv/libvirt/libvirt-daemon_7.0.0-3+deb11u2_amd64.deb"
+}

@@ -1,0 +1,67 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i php-laravel-lumen-framework_6.3.5-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r php-laravel-lumen-framework"]
+]
+depends: [
+  "deb-php-common"
+  "deb-php-dragonmantank-cron-expression" {< "3~~"}
+  "deb-php-dragonmantank-cron-expression" {>= "2.0"}
+  "deb-php-illuminate-auth" {< "7~~"}
+  "deb-php-illuminate-auth" {>= "6.0"}
+  "deb-php-illuminate-broadcasting" {< "7~~"}
+  "deb-php-illuminate-broadcasting" {>= "6.0"}
+  "deb-php-illuminate-bus" {< "7~~"}
+  "deb-php-illuminate-bus" {>= "6.0"}
+  "deb-php-illuminate-cache" {< "7~~"}
+  "deb-php-illuminate-cache" {>= "6.0"}
+  "deb-php-illuminate-config" {< "7~~"}
+  "deb-php-illuminate-config" {>= "6.0"}
+  "deb-php-illuminate-container" {< "7~~"}
+  "deb-php-illuminate-container" {>= "6.0"}
+  "deb-php-illuminate-contracts" {< "7~~"}
+  "deb-php-illuminate-contracts" {>= "6.0"}
+  "deb-php-illuminate-database" {< "7~~"}
+  "deb-php-illuminate-database" {>= "6.0"}
+  "deb-php-illuminate-encryption" {< "7~~"}
+  "deb-php-illuminate-encryption" {>= "6.0"}
+  "deb-php-illuminate-events" {< "7~~"}
+  "deb-php-illuminate-events" {>= "6.0"}
+  "deb-php-illuminate-filesystem" {< "7~~"}
+  "deb-php-illuminate-filesystem" {>= "6.0"}
+  "deb-php-illuminate-hashing" {< "7~~"}
+  "deb-php-illuminate-hashing" {>= "6.0"}
+  "deb-php-illuminate-http" {< "7~~"}
+  "deb-php-illuminate-http" {>= "6.0"}
+  "deb-php-illuminate-log" {< "7~~"}
+  "deb-php-illuminate-log" {>= "6.0"}
+  "deb-php-illuminate-pagination" {< "7~~"}
+  "deb-php-illuminate-pagination" {>= "6.0"}
+  "deb-php-illuminate-pipeline" {< "7~~"}
+  "deb-php-illuminate-pipeline" {>= "6.0"}
+  "deb-php-illuminate-queue" {< "7~~"}
+  "deb-php-illuminate-queue" {>= "6.0"}
+  "deb-php-illuminate-support" {< "7~~"}
+  "deb-php-illuminate-support" {>= "6.0"}
+  "deb-php-illuminate-translation" {< "7~~"}
+  "deb-php-illuminate-translation" {>= "6.0"}
+  "deb-php-illuminate-validation" {< "7~~"}
+  "deb-php-illuminate-validation" {>= "6.0"}
+  "deb-php-illuminate-view" {< "7~~"}
+  "deb-php-illuminate-view" {>= "6.0"}
+  "deb-php-nikic-fast-route" {< "2~~"}
+  "deb-php-nikic-fast-route" {>= "1.3"}
+  "deb-php-symfony-http-foundation" {< "5~~"}
+  "deb-php-symfony-http-foundation" {>= "4.3"}
+  "deb-php-symfony-http-kernel" {< "5~~"}
+  "deb-php-symfony-http-kernel" {>= "4.3"}
+  "deb-php-symfony-var-dumper" {< "5~~"}
+  "deb-php-symfony-var-dumper" {>= "4.3"}
+  "deb-php-vlucas-phpdotenv" {< "4~~"}
+  "deb-php-vlucas-phpdotenv" {>= "3.3"}
+]
+extra-source "php-laravel-lumen-framework_6.3.5-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/php-laravel-lumen-framework/php-laravel-lumen-framework_6.3.5-2_all.deb"
+}

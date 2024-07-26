@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add glib-2.72.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del glib"]
+]
+depends: [
+  "apk-busybox" {= "1.35.0-r18"}
+  "apk-libffi" {= "3.4.2-r1"}
+  "apk-libintl" {= "0.21-r2"}
+  "apk-libmount" {= "2.38-r1"}
+  "apk-musl" {= "1.2.3-r3"}
+  "apk-pcre" {= "8.45-r2"}
+  "apk-zlib" {= "1.2.12-r3"}
+]
+extra-source "glib-2.72.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/glib-2.72.4-r0.apk"
+}

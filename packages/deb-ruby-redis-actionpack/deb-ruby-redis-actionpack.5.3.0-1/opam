@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-redis-actionpack_5.3.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-redis-actionpack"]
+]
+depends: [
+  "deb-ruby-actionpack" {< "2-8"}
+  "deb-ruby-actionpack" {>= "2-5"}
+  "deb-ruby-redis-rack" {< "3"}
+  "deb-ruby-redis-rack" {>= "2.1.0"}
+  "deb-ruby-redis-store" {< "2"}
+  "deb-ruby-redis-store" {>= "1.1.0"}
+]
+extra-source "ruby-redis-actionpack_5.3.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-redis-actionpack/ruby-redis-actionpack_5.3.0-1_all.deb"
+}

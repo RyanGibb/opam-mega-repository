@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libwings3_0.95.8-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libwings3"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libpango-1-0-0" {>= "1.22.0"}
+  "deb-libpangoft2-1-0-0" {>= "1.14.0"}
+  "deb-libpangoxft-1-0-0" {>= "1.14.0"}
+  "deb-libwraster6" {>= "0.95.8"}
+  "deb-libwutil5" {>= "0.95.5"}
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxft2" {> "2.1.1"}
+  "deb-wmaker-common" {>= "0.95.8-3"}
+]
+extra-source "libwings3_0.95.8-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/w/wmaker/libwings3_0.95.8-3_amd64.deb"
+}

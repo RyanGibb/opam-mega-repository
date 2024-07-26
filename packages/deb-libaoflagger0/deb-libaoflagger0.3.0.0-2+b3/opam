@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libaoflagger0_3.0.0-2+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libaoflagger0"]
+]
+depends: [
+  "deb-libatkmm-1-6-1v5" {>= "2.24.0"}
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libcairomm-1-0-1v5" {>= "1.12.0"}
+  "deb-libcasa-casa5" {>= "3.3.0"}
+  "deb-libcasa-measures5" {>= "3.3.0"}
+  "deb-libcasa-ms5" {>= "3.3.0"}
+  "deb-libcasa-tables5" {>= "3.3.0"}
+  "deb-libcfitsio9" {>= "3.480~"}
+  "deb-libfftw3-double3" {>= "3.3.5"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libglibmm-2-4-1v5" {>= "2.64.2"}
+  "deb-libgtkmm-3-0-1v5" {>= "3.24.0"}
+  "deb-liblua5-3-0"
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libpython3-9" {>= "3.9.0~b4"}
+  "deb-libsigc++-2-0-0v5" {>= "2.6.1"}
+  "deb-libstdc++6" {>= "9"}
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "libaoflagger0_3.0.0-2+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/aoflagger/libaoflagger0_3.0.0-2+b3_amd64.deb"
+}

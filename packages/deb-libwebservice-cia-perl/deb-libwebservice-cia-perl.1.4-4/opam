@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libwebservice-cia-perl_1.4-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libwebservice-cia-perl"]
+]
+depends: [
+  "deb-libcrypt-ssleay-perl"
+  "deb-libmldbm-perl"
+  "deb-libwww-perl"
+  "deb-perl-any"
+]
+extra-source "libwebservice-cia-perl_1.4-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libw/libwebservice-cia-perl/libwebservice-cia-perl_1.4-4_all.deb"
+}

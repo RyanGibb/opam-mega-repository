@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i groonga-plugin-suggest_9.0.0-1+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r groonga-plugin-suggest"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libevent-2-1-6" {>= "2.1.8-stable"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgroonga0" {= "9.0.0-1+deb10u1"}
+  "deb-libmsgpackc2" {>= "2.1.0"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-libzmq5" {>= "3.2.3+dfsg"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "groonga-plugin-suggest_9.0.0-1+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/groonga/groonga-plugin-suggest_9.0.0-1+deb10u1_amd64.deb"
+}

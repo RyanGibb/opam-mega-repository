@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mesa-vulkan-drivers_22.3.6-1+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mesa-vulkan-drivers"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libdrm-amdgpu1" {>= "2.4.110"}
+  "deb-libdrm2" {>= "2.4.99"}
+  "deb-libelf1" {>= "0.142"}
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libgcc-s1" {>= "3.4"}
+  "deb-libllvm15"
+  "deb-libstdc++6" {>= "11"}
+  "deb-libvulkan1"
+  "deb-libwayland-client0" {>= "1.20.0"}
+  "deb-libx11-xcb1" {>= "2-1.8.4"}
+  "deb-libxcb-dri3-0" {>= "1.13"}
+  "deb-libxcb-present0"
+  "deb-libxcb-randr0" {>= "1.13"}
+  "deb-libxcb-shm0"
+  "deb-libxcb-sync1"
+  "deb-libxcb-xfixes0"
+  "deb-libxcb1" {>= "1.9.2"}
+  "deb-libxshmfence1"
+  "deb-libzstd1" {>= "1.5.2"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-python3-any" | "deb- python3-minimal-any")
+]
+extra-source "mesa-vulkan-drivers_22.3.6-1+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mesa/mesa-vulkan-drivers_22.3.6-1+deb12u1_amd64.deb"
+}

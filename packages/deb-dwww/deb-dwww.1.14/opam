@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dwww_1.14_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dwww"]
+]
+depends: [
+  "deb-debianutils" {>= "2.5"}
+  "deb-doc-base" {>= "0.8.12"}
+  "deb-file"
+  "deb-libc6" {>= "2.14"}
+  "deb-libfile-ncopy-perl"
+  "deb-libmime-types-perl" {>= "1.15"}
+  "deb-man-db" {> "2.5.2"}
+  "deb-mime-support"
+  "deb-perl-any"
+  "deb-sensible-utils"
+  "deb-ucf" {>= "3.12"}
+  ("deb-apache2" | "deb- httpd-cgi")
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "dwww_1.14_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dwww/dwww_1.14_amd64.deb"
+}

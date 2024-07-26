@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libllvm-13-ocaml-dev_1:13.0.1-6~deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libllvm-13-ocaml-dev"]
+]
+depends: [
+  "deb-libctypes-ocaml-dev"
+  "deb-libintegers-ocaml-dev"
+  "deb-llvm-13-dev" {= "1-13.0.1-6~deb11u1"}
+  "deb-ocaml-nox"
+]
+conflicts: [
+  "deb-libllvm-x-y-ocaml-dev"
+]
+extra-source "libllvm-13-ocaml-dev_1:13.0.1-6~deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/llvm-toolchain-13/libllvm-13-ocaml-dev_13.0.1-6~deb11u1_amd64.deb"
+}

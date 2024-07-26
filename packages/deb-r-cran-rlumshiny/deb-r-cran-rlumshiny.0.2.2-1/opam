@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-rlumshiny_0.2.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-rlumshiny"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "3.5.2-1"}
+  "deb-r-cran-data-table" {>= "1.10.4"}
+  "deb-r-cran-dt" {>= "0.4"}
+  "deb-r-cran-googlevis" {>= "0.6.2"}
+  "deb-r-cran-knitr" {>= "1.20"}
+  "deb-r-cran-luminescence" {>= "0.8.5"}
+  "deb-r-cran-rcarb" {>= "0.1.0"}
+  "deb-r-cran-readxl" {>= "1.1.0"}
+  "deb-r-cran-rhandsontable" {>= "0.3.4"}
+  "deb-r-cran-rmarkdown" {>= "1.11"}
+  "deb-r-cran-shiny" {>= "1.1.0"}
+  "deb-r-cran-shinydashboard" {>= "0.7.0"}
+  "deb-r-cran-shinyjs" {>= "1.0"}
+]
+extra-source "r-cran-rlumshiny_0.2.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-rlumshiny/r-cran-rlumshiny_0.2.2-1_all.deb"
+}

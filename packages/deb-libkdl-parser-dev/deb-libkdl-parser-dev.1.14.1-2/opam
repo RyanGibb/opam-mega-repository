@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkdl-parser-dev_1.14.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkdl-parser-dev"]
+]
+depends: [
+  "deb-libkdl-parser1d" {= "1.14.1-2"}
+  "deb-liborocos-kdl-dev"
+  "deb-librosconsole-dev"
+  "deb-libroscpp-dev"
+  "deb-libtinyxml2-dev"
+  "deb-liburdf-dev" {>= "1.13.0"}
+  "deb-ros-cmake-modules"
+]
+extra-source "libkdl-parser-dev_1.14.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ros-kdl-parser/libkdl-parser-dev_1.14.1-2_amd64.deb"
+}

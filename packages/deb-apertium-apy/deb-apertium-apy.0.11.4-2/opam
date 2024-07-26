@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i apertium-apy_0.11.4-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r apertium-apy"]
+]
+depends: [
+  "deb-adduser"
+  "deb-logrotate"
+  "deb-python3" {>= "3.4"}
+  "deb-python3-any"
+  "deb-python3-pkg-resources"
+  "deb-python3-tornado" {>= "4.2"}
+]
+extra-source "apertium-apy_0.11.4-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/apertium-apy/apertium-apy_0.11.4-2_all.deb"
+}

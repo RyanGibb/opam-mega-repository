@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-vinyl_2.2.1+~2.0.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-vinyl"]
+]
+depends: [
+  "deb-node-clone"
+  "deb-node-clone-buffer"
+  "deb-node-clone-stats"
+  "deb-node-cloneable-readable"
+  "deb-node-remove-trailing-separator"
+  "deb-node-replace-ext"
+  "deb-nodejs"
+]
+extra-source "node-vinyl_2.2.1+~2.0.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-vinyl/node-vinyl_2.2.1+~2.0.4-1_all.deb"
+}

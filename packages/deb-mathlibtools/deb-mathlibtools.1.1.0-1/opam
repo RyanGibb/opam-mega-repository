@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mathlibtools_1.1.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mathlibtools"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-atomicwrites"
+  "deb-python3-certifi"
+  "deb-python3-click"
+  "deb-python3-git"
+  "deb-python3-github"
+  "deb-python3-networkx"
+  "deb-python3-pydot"
+  "deb-python3-requests"
+  "deb-python3-toml"
+  "deb-python3-tqdm"
+  "deb-python3-yaml"
+]
+extra-source "mathlibtools_1.1.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mathlibtools/mathlibtools_1.1.0-1_all.deb"
+}

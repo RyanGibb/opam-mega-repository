@@ -1,0 +1,49 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libotb_7.2.0+dfsg-1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libotb"]
+]
+depends: [
+  "deb-libotbapplicationengine-7-2-1" {= "7.2.0+dfsg-1+b3"}
+  "deb-libotbcarto-7-2-1" {= "7.2.0+dfsg-1+b3"}
+  "deb-libotbcommandline-7-2-1" {= "7.2.0+dfsg-1+b3"}
+  "deb-libotbcommon-7-2-1" {= "7.2.0+dfsg-1+b3"}
+  "deb-libotbcurladapters-7-2-1" {= "7.2.0+dfsg-1+b3"}
+  "deb-libotbextendedfilename-7-2-1" {= "7.2.0+dfsg-1+b3"}
+  "deb-libotbfuzzy-7-2-1" {= "7.2.0+dfsg-1+b3"}
+  "deb-libotbgdaladapters-7-2-1" {= "7.2.0+dfsg-1+b3"}
+  "deb-libotbice-7-2-1" {= "7.2.0+dfsg-1+b3"}
+  "deb-libotbimagebase-7-2-1" {= "7.2.0+dfsg-1+b3"}
+  "deb-libotbimageio-7-2-1" {= "7.2.0+dfsg-1+b3"}
+  "deb-libotbimagemanipulation-7-2-1" {= "7.2.0+dfsg-1+b3"}
+  "deb-libotbiobsq-7-2-1" {= "7.2.0+dfsg-1+b3"}
+  "deb-libotbiogdal-7-2-1" {= "7.2.0+dfsg-1+b3"}
+  "deb-libotbiokml-7-2-1" {= "7.2.0+dfsg-1+b3"}
+  "deb-libotbiolum-7-2-1" {= "7.2.0+dfsg-1+b3"}
+  "deb-libotbiomstar-7-2-1" {= "7.2.0+dfsg-1+b3"}
+  "deb-libotbioonera-7-2-1" {= "7.2.0+dfsg-1+b3"}
+  "deb-libotbiorad-7-2-1" {= "7.2.0+dfsg-1+b3"}
+  "deb-libotblearningbase-7-2-1" {= "7.2.0+dfsg-1+b3"}
+  "deb-libotbmathparser-7-2-1" {= "7.2.0+dfsg-1+b3"}
+  "deb-libotbmathparserx-7-2-1" {= "7.2.0+dfsg-1+b3"}
+  "deb-libotbmetadata-7-2-1" {= "7.2.0+dfsg-1+b3"}
+  "deb-libotbossimadapters-7-2-1" {= "7.2.0+dfsg-1+b3"}
+  "deb-libotbossimplugins-7-2-1" {= "7.2.0+dfsg-1+b3"}
+  "deb-libotbpolarimetry-7-2-1" {= "7.2.0+dfsg-1+b3"}
+  "deb-libotbprojection-7-2-1" {= "7.2.0+dfsg-1+b3"}
+  "deb-libotbqtwidget-7-2-1" {= "7.2.0+dfsg-1+b3"}
+  "deb-libotbsampling-7-2-1" {= "7.2.0+dfsg-1+b3"}
+  "deb-libotbsiftfast-7-2-1" {= "7.2.0+dfsg-1+b3"}
+  "deb-libotbstatistics-7-2-1" {= "7.2.0+dfsg-1+b3"}
+  "deb-libotbstreaming-7-2-1" {= "7.2.0+dfsg-1+b3"}
+  "deb-libotbsupervised-7-2-1" {= "7.2.0+dfsg-1+b3"}
+  "deb-libotbtestkernel-7-2-1" {= "7.2.0+dfsg-1+b3"}
+  "deb-libotbvectordatabase-7-2-1" {= "7.2.0+dfsg-1+b3"}
+  "deb-libotbvectordataio-7-2-1" {= "7.2.0+dfsg-1+b3"}
+  "deb-libotbwavelet-7-2-1" {= "7.2.0+dfsg-1+b3"}
+]
+extra-source "libotb_7.2.0+dfsg-1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/otb/libotb_7.2.0+dfsg-1+b3_amd64.deb"
+}

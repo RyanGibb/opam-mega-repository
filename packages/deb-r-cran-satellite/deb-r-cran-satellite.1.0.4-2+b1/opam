@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-satellite_1.0.4-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-satellite"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.1-2"}
+  "deb-r-cran-plyr"
+  "deb-r-cran-raster" {>= "3.5-9-1~"}
+  "deb-r-cran-rcpp" {>= "0.10.3"}
+  "deb-r-cran-terra"
+]
+extra-source "r-cran-satellite_1.0.4-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-satellite/r-cran-satellite_1.0.4-2+b1_amd64.deb"
+}

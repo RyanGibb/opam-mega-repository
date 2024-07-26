@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libosmocore_0.12.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libosmocore"]
+]
+depends: [
+  "deb-libosmocodec0" {= "0.12.1-2"}
+  "deb-libosmocore11" {= "0.12.1-2"}
+  "deb-libosmoctrl0" {= "0.12.1-2"}
+  "deb-libosmogb6" {= "0.12.1-2"}
+  "deb-libosmogsm10" {= "0.12.1-2"}
+  "deb-libosmosim0" {= "0.12.1-2"}
+  "deb-libosmovty4" {= "0.12.1-2"}
+]
+extra-source "libosmocore_0.12.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libo/libosmocore/libosmocore_0.12.1-2_amd64.deb"
+}

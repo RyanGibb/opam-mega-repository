@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add nagios-plugins-snmp-2.3.2-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del nagios-plugins-snmp"]
+]
+depends: [
+  "apk-libcrypto1-1" {= "1.1.1t-r2"}
+  "apk-musl" {= "1.2.2-r5"}
+  "apk-nagios-plugins" {= "2.3.2-r2"}
+  "apk-net-snmp-tools" {= "5.9.3-r1"}
+]
+extra-source "nagios-plugins-snmp-2.3.2-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/nagios-plugins-snmp-2.3.2-r2.apk"
+}

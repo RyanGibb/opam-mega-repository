@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dynare_5.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dynare"]
+]
+depends: [
+  "deb-dh-elpa-helper"
+  "deb-emacsen-common"
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.4"}
+  "deb-libgfortran5" {>= "10"}
+  "deb-libgomp1" {>= "4.9"}
+  "deb-libgsl27" {>= "2.7.1"}
+  "deb-libmatio11" {>= "1.5.4"}
+  "deb-libslicot0" {>= "5.0+20101122"}
+  "deb-libstdc++6" {>= "12"}
+  "deb-libumfpack5" {>= "1-4.5.2"}
+  "deb-octave"
+  "deb-octave" {>= "7.3.0"}
+  "deb-octave-jsonlab"
+  "deb-octave-statistics"
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "dynare_5.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dynare/dynare_5.3-1_amd64.deb"
+}

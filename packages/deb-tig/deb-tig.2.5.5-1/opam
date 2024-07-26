@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tig_2.5.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tig"]
+]
+depends: [
+  "deb-libc6" {>= "2.33"}
+  "deb-libncursesw6" {>= "6"}
+  "deb-libpcre2-8-0" {>= "10.22"}
+  "deb-libpcre2-posix3" {>= "10.34"}
+  "deb-libreadline8" {>= "6.3"}
+  "deb-libtinfo6" {>= "6"}
+  ("deb-git" {>= "1-1.7.0.4-2~"} | "deb- git-core" {>= "1-1.5.4"})
+]
+extra-source "tig_2.5.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tig/tig_2.5.5-1_amd64.deb"
+}

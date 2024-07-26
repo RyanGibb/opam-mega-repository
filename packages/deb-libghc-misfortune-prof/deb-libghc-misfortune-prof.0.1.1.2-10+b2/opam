@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-misfortune-prof_0.1.1.2-10+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-misfortune-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-cereal-prof"
+  "deb-libghc-knob-prof"
+  "deb-libghc-misfortune-dev" {= "0.1.1.2-10+b2"}
+  "deb-libghc-monad-loops-prof"
+  "deb-libghc-random-fu-prof"
+  "deb-libghc-regex-base-prof"
+  "deb-libghc-regex-pcre-prof"
+  "deb-libghc-semigroups-prof"
+  "deb-libghc-utf8-string-prof"
+  "deb-libghc-vector-prof"
+]
+extra-source "libghc-misfortune-prof_0.1.1.2-10+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-misfortune/libghc-misfortune-prof_0.1.1.2-10+b2_amd64.deb"
+}

@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcourriel-perl_0.49-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcourriel-perl"]
+]
+depends: [
+  "deb-libdatetime-format-mail-perl"
+  "deb-libdatetime-format-natural-perl"
+  "deb-libdatetime-perl"
+  "deb-libdevel-partialdump-perl"
+  "deb-libemail-abstract-perl"
+  "deb-libemail-address-xs-perl"
+  "deb-libemail-messageid-perl"
+  "deb-libemail-mime-encodings-perl"
+  "deb-libfile-libmagic-perl"
+  "deb-libfile-slurper-perl"
+  "deb-liblist-allutils-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-libmoose-perl"
+  "deb-libmoosex-role-parameterized-perl"
+  "deb-libmoosex-strictconstructor-perl"
+  "deb-libmoosex-types-common-perl"
+  "deb-libmoosex-types-perl"
+  "deb-libnamespace-autoclean-perl"
+  "deb-libparams-validationcompiler-perl" {>= "0.26"}
+  "deb-libsub-exporter-perl"
+  "deb-perl-any"
+]
+extra-source "libcourriel-perl_0.49-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libcourriel-perl/libcourriel-perl_0.49-1_all.deb"
+}

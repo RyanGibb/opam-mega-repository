@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i bpython_0.17.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r bpython"]
+]
+depends: [
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7.5-5~"}
+  "deb-python-curtsies"
+  "deb-python-greenlet"
+  "deb-python-pkg-resources"
+  "deb-python-pygments"
+  "deb-python-requests"
+  "deb-python-six" {>= "1.5"}
+]
+extra-source "bpython_0.17.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/bpython/bpython_0.17.1-1_all.deb"
+}

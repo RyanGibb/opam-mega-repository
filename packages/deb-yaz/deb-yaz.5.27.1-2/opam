@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i yaz_5.27.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r yaz"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libncurses6" {>= "6"}
+  "deb-libreadline7" {>= "6.0"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libxslt1-1" {>= "1.1.25"}
+  "deb-libyaz5" {>= "5.27.1"}
+]
+conflicts: [
+  "deb-yaz-runtime"
+  "deb-yaz-ssl"
+]
+extra-source "yaz_5.27.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/y/yaz/yaz_5.27.1-2_amd64.deb"
+}

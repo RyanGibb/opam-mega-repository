@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i asunder_2.9.7-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r asunder"]
+]
+depends: [
+  "deb-cdparanoia"
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.33"}
+  "deb-libcddb2" {>= "1.3.2"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.31.8"}
+  "deb-libgtk2-0-0" {>= "2.8.0"}
+  "deb-vorbis-tools"
+]
+extra-source "asunder_2.9.7-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/asunder/asunder_2.9.7-2_amd64.deb"
+}

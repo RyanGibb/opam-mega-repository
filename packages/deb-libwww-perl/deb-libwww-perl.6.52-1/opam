@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libwww-perl_6.52-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libwww-perl"]
+]
+depends: [
+  "deb-ca-certificates"
+  "deb-libencode-locale-perl"
+  "deb-libfile-listing-perl"
+  "deb-libhtml-parser-perl"
+  "deb-libhtml-tagset-perl"
+  "deb-libhtml-tree-perl"
+  "deb-libhttp-cookies-perl"
+  "deb-libhttp-date-perl"
+  "deb-libhttp-message-perl" {>= "6.18"}
+  "deb-libhttp-negotiate-perl"
+  "deb-liblwp-mediatypes-perl"
+  "deb-liblwp-protocol-https-perl"
+  "deb-libnet-http-perl" {>= "6.18"}
+  "deb-libtry-tiny-perl"
+  "deb-liburi-perl"
+  "deb-libwww-robotrules-perl"
+  "deb-netbase"
+  "deb-perl-any"
+]
+extra-source "libwww-perl_6.52-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libw/libwww-perl/libwww-perl_6.52-1_all.deb"
+}

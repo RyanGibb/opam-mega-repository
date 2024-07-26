@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdevel-repl-perl_1.003029-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdevel-repl-perl"]
+]
+depends: [
+  "deb-libapp-nopaste-perl"
+  "deb-libb-keywords-perl"
+  "deb-libdata-dump-streamer-perl"
+  "deb-libdata-dumper-concise-perl"
+  "deb-libfile-homedir-perl"
+  "deb-libfile-next-perl"
+  "deb-liblexical-persistence-perl"
+  "deb-libmodule-refresh-perl"
+  "deb-libmodule-runtime-perl"
+  "deb-libmoose-perl"
+  "deb-libmoosex-getopt-perl"
+  "deb-libmoosex-object-pluggable-perl"
+  "deb-libnamespace-autoclean-perl"
+  "deb-libppi-perl"
+  "deb-libscope-guard-perl"
+  "deb-libsys-sigaction-perl"
+  "deb-libtask-weaken-perl"
+  "deb-perl-any"
+]
+extra-source "libdevel-repl-perl_1.003029-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libd/libdevel-repl-perl/libdevel-repl-perl_1.003029-1_all.deb"
+}

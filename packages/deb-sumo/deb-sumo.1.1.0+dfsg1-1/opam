@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sumo_1.1.0+dfsg1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sumo"]
+]
+depends: [
+  "deb-libc6" {>= "2.27"}
+  "deb-libfox-1-6-0"
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgdal20"
+  "deb-libgdal20" {>= "2.3.0"}
+  "deb-libgl1"
+  "deb-libproj13" {>= "4.8.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libxerces-c3-2"
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+extra-source "sumo_1.1.0+dfsg1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sumo/sumo_1.1.0+dfsg1-1_amd64.deb"
+}

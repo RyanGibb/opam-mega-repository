@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libimage-transport0d_1.12.0-12+b5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libimage-transport0d"]
+]
+depends: [
+  "deb-libament-index-cpp0d" {>= "1.5.1"}
+  "deb-libc6" {>= "2.32"}
+  "deb-libclass-loader3d" {>= "2.4.0"}
+  "deb-libconsole-bridge1-0" {>= "1.0.1+dfsg2"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libmessage-filters1d" {>= "1.15.15+ds"}
+  "deb-librcpputils1d" {>= "2.6.0"}
+  "deb-librcutils1d" {>= "6.0.0"}
+  "deb-librosconsole3d" {>= "1.14.3"}
+  "deb-libroscpp-serialization0d" {>= "0.7.2"}
+  "deb-libroscpp4d" {>= "1.15.15+ds"}
+  "deb-libroslib0d" {>= "1.15.8"}
+  "deb-librostime1d" {>= "0.7.2"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libtinyxml2-9" {>= "8.0.0"}
+]
+extra-source "libimage-transport0d_1.12.0-12+b5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ros-image-common/libimage-transport0d_1.12.0-12+b5_amd64.deb"
+}

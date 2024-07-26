@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-mueval-dev_0.9.3-6+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-mueval-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-extensible-exceptions-dev"
+  "deb-libghc-hint-dev"
+  "deb-libghc-quickcheck2-dev"
+  "deb-libghc-show-dev"
+  "deb-libghc-simple-reflect-dev"
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-libtinfo6" {>= "6"}
+]
+extra-source "libghc-mueval-dev_0.9.3-6+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-mueval/libghc-mueval-dev_0.9.3-6+b2_amd64.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i icinga2-classicui_2.10.3-2+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r icinga2-classicui"]
+]
+depends: [
+  "deb-apache2-utils"
+  "deb-dpkg" {>= "1.15.7.2"}
+  "deb-icinga-cgi-bin" {>= "1.11.5~"}
+  "deb-icinga2-bin" {>= "2.2.0~"}
+  "deb-icinga2-common" {= "2.10.3-2+deb10u1"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "icinga2-classicui_2.10.3-2+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/icinga2/icinga2-classicui_2.10.3-2+deb10u1_all.deb"
+}

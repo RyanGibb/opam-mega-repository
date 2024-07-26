@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i macaulay2_1.17.1+ds-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r macaulay2"]
+]
+depends: [
+  "deb-libboost-regex1-74-0"
+  "deb-libboost-stacktrace1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libflint-2-6-3" {>= "2.6.3"}
+  "deb-libfrobby0" {>= "0.9.1"}
+  "deb-libgc1" {>= "1-8.0"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgdbm6" {>= "1.16"}
+  "deb-libgivaro9" {>= "4.0.2-8~"}
+  "deb-libgmp10"
+  "deb-libgmpxx4ldbl" {>= "2-6.2.1+dfsg"}
+  "deb-libmathic0v5" {>= "1.0~git20200526"}
+  "deb-libmathicgb0" {>= "1.0~git20200526"}
+  "deb-libmemtailor0" {>= "1.0~git20160302"}
+  "deb-libmpfr6" {>= "3.1.3"}
+  "deb-libmps3" {>= "3.1.8"}
+  "deb-libntl43" {>= "11.4.3"}
+  "deb-libreadline8" {>= "6.0"}
+  "deb-libsingular4m1"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-macaulay2-common" {= "1.17.1+ds-2"}
+  "deb-singular-data"
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "macaulay2_1.17.1+ds-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/macaulay2/macaulay2_1.17.1+ds-2_amd64.deb"
+}

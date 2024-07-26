@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ulogd-sqlite3-2.0.8-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ulogd-sqlite3"]
+]
+depends: [
+  "apk-musl" {= "1.2.3-r5"}
+  "apk-sqlite-libs" {= "3.40.1-r1"}
+  "apk-ulogd" {= "2.0.8-r0"}
+]
+extra-source "ulogd-sqlite3-2.0.8-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ulogd-sqlite3-2.0.8-r0.apk"
+}

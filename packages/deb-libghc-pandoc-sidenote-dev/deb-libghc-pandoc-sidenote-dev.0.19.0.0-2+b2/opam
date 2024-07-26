@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-pandoc-sidenote-dev_0.19.0.0-2+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-pandoc-sidenote-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-monad-gen-dev"
+  "deb-libghc-pandoc-dev"
+  "deb-libghc-pandoc-types-dev"
+  "deb-libgmp10"
+  "deb-liblua5-1-0"
+  "deb-libpcre3"
+  "deb-libyaml-0-2"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libghc-pandoc-sidenote-dev_0.19.0.0-2+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pandoc-sidenote/libghc-pandoc-sidenote-dev_0.19.0.0-2+b2_amd64.deb"
+}

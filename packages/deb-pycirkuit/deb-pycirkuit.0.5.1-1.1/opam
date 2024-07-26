@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pycirkuit_0.5.1-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pycirkuit"]
+]
+depends: [
+  "deb-circuit-macros"
+  "deb-dpic"
+  "deb-lmodern"
+  "deb-m4"
+  "deb-poppler-utils"
+  "deb-preview-latex-style"
+  "deb-python3-any"
+  "deb-python3-magic"
+  "deb-python3-pyqt5"
+  "deb-python3-setuptools"
+  "deb-python3-wheel"
+  "deb-texlive-binaries"
+  "deb-texlive-extra-utils"
+  "deb-texlive-latex-base"
+  "deb-texlive-latex-extra"
+  "deb-texlive-latex-recommended"
+  "deb-texlive-pictures"
+  "deb-texlive-science"
+]
+extra-source "pycirkuit_0.5.1-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pycirkuit/pycirkuit_0.5.1-1.1_all.deb"
+}

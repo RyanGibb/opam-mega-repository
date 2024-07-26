@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i geophar_18.08.2+dfsg1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r geophar"]
+]
+depends: [
+  "deb-jsmath"
+  "deb-python3-any" {>= "3.5~"}
+  "deb-python3-matplotlib" {>= "1.1"}
+  "deb-python3-numpy" {>= "1.3"}
+  "deb-python3-pep8"
+  "deb-python3-pyqt5"
+  "deb-python3-pyqt5-qsci"
+  "deb-python3-pyqt5-qtsvg"
+  "deb-python3-scipy"
+  "deb-python3-stemmer"
+  "deb-python3-sympy" {>= "0.7.1"}
+]
+conflicts: [
+  "deb-wxgeometrie" {< "1.99"}
+]
+extra-source "geophar_18.08.2+dfsg1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/geophar/geophar_18.08.2+dfsg1-2_all.deb"
+}

@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-brick-prof_0.68.1-1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-brick-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-brick-dev" {= "0.68.1-1+b3"}
+  "deb-libghc-config-ini-prof"
+  "deb-libghc-contravariant-prof"
+  "deb-libghc-data-clist-prof"
+  "deb-libghc-dlist-prof"
+  "deb-libghc-microlens-mtl-prof"
+  "deb-libghc-microlens-prof"
+  "deb-libghc-microlens-th-prof"
+  "deb-libghc-text-zipper-prof"
+  "deb-libghc-vector-prof"
+  "deb-libghc-vty-prof"
+  "deb-libghc-word-wrap-prof"
+]
+extra-source "libghc-brick-prof_0.68.1-1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-brick/libghc-brick-prof_0.68.1-1+b3_amd64.deb"
+}

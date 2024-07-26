@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i php-symfony-security_4.4.19+dfsg-2+deb11u5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r php-symfony-security"]
+]
+depends: [
+  "deb-php-common"
+  "deb-php-symfony-event-dispatcher-contracts"
+  "deb-php-symfony-http-foundation"
+  "deb-php-symfony-http-kernel" {< "5~~"}
+  "deb-php-symfony-http-kernel" {>= "4.4"}
+  "deb-php-symfony-property-access"
+  "deb-php-symfony-security-core" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-security-csrf" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-security-guard" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-security-http" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-service-contracts"
+]
+extra-source "php-symfony-security_4.4.19+dfsg-2+deb11u5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/symfony/php-symfony-security_4.4.19+dfsg-2+deb11u5_all.deb"
+}

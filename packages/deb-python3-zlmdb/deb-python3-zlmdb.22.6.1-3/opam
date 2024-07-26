@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-zlmdb_22.6.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-zlmdb"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-cbor2"
+  "deb-python3-cffi-backend"
+  "deb-python3-click"
+  "deb-python3-flatbuffers"
+  "deb-python3-lmdb"
+  "deb-python3-nacl"
+  "deb-python3-numpy"
+  "deb-python3-txaio"
+  "deb-python3-yaml"
+]
+extra-source "python3-zlmdb_22.6.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/z/zlmdb/python3-zlmdb_22.6.1-3_all.deb"
+}

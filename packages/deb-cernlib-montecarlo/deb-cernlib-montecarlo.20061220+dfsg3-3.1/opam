@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cernlib-montecarlo_20061220+dfsg3-3.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cernlib-montecarlo"]
+]
+depends: [
+  "deb-cernlib-base" {>= "2006.dfsg.2-7"}
+  "deb-libcojets2-dev" {>= "2006.dfsg.2-4"}
+  "deb-libeurodec1-dev" {>= "2006.dfsg.2-4"}
+  "deb-libherwig59-2-dev" {>= "2006.dfsg.2-4"}
+  "deb-libisajet758-3-dev" {>= "2006.dfsg.2-4"}
+  "deb-libpdflib804-2-dev" {>= "2006.dfsg.2-4"}
+  "deb-libphotos202-dev" {>= "2006.dfsg.2-4"}
+  "deb-libphtools2-dev" {>= "2006.dfsg.2-4"}
+  "deb-montecarlo-base" {= "20061220+dfsg3-3.1"}
+  "deb-montecarlo-data" {>= "2006.dfsg.2"}
+]
+extra-source "cernlib-montecarlo_20061220+dfsg3-3.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mclibs/cernlib-montecarlo_20061220+dfsg3-3.1_all.deb"
+}

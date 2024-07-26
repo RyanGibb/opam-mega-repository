@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i propellor_5.6.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r propellor"]
+]
+depends: [
+  "deb-cabal-install"
+  "deb-ghc" {>= "8.4.3"}
+  "deb-git" {>= "1-2.9"}
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.27"}
+  "deb-libffi6" {>= "3.0.4"}
+  "deb-libghc-ansi-terminal-dev"
+  "deb-libghc-async-dev"
+  "deb-libghc-exceptions-dev" {>= "0.6"}
+  "deb-libghc-hashable-dev"
+  "deb-libghc-hslogger-dev"
+  "deb-libghc-ifelse-dev"
+  "deb-libghc-mtl-dev"
+  "deb-libghc-network-dev"
+  "deb-libghc-propellor-dev"
+  "deb-libghc-split-dev"
+  "deb-libghc-text-dev"
+  "deb-libghc-transformers-dev"
+  "deb-libghc-unix-compat-dev"
+  "deb-libgmp10"
+]
+extra-source "propellor_5.6.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/propellor/propellor_5.6.0-1_amd64.deb"
+}

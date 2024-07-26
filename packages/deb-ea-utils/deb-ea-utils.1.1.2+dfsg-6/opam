@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ea-utils_1.1.2+dfsg-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ea-utils"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgsl25" {>= "2.6"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-r-base-core"
+  "deb-r-cran-formula"
+  "deb-r-cran-getopt"
+  "deb-r-cran-ggplot2"
+  "deb-r-cran-hmisc"
+  "deb-r-cran-lattice"
+  "deb-r-cran-survival"
+  "deb-zlib1g" {>= "1-1.2.3.3"}
+]
+extra-source "ea-utils_1.1.2+dfsg-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/ea-utils/ea-utils_1.1.2+dfsg-6_amd64.deb"
+}

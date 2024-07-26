@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-xrt_1.4.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-xrt"]
+]
+depends: [
+  "deb-libjs-mathjax"
+  "deb-python3-any"
+  "deb-python3-matplotlib"
+  "deb-python3-numpy"
+  "deb-python3-opengl"
+  "deb-python3-pandas"
+  "deb-python3-scipy"
+  "deb-python3-sphinx"
+  "deb-python3-spyder"
+  "deb-python3-xdg"
+]
+extra-source "python3-xrt_1.4.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-xrt/python3-xrt_1.4.0-2_all.deb"
+}

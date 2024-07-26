@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mididings_0~20120419~ds0-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mididings"]
+]
+depends: [
+  "deb-python"
+  "deb-python-any"
+  "deb-python-dbus"
+  "deb-python-liblo"
+  "deb-python-mididings" {< "0~20120419~ds0+1~"}
+  "deb-python-mididings" {>= "0~20120419~ds0-6"}
+  "deb-python-pyinotify"
+  "deb-python-tk"
+]
+extra-source "mididings_0~20120419~ds0-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mididings/mididings_0~20120419~ds0-6_all.deb"
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-bioc-pwmenrich_4.26.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-bioc-pwmenrich"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.3-1"}
+  "deb-r-bioc-biocgenerics"
+  "deb-r-bioc-biostrings"
+  "deb-r-bioc-s4vectors"
+  "deb-r-bioc-seqlogo"
+  "deb-r-cran-evd"
+  "deb-r-cran-gdata"
+]
+extra-source "r-bioc-pwmenrich_4.26.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-bioc-pwmenrich/r-bioc-pwmenrich_4.26.0-1_all.deb"
+}

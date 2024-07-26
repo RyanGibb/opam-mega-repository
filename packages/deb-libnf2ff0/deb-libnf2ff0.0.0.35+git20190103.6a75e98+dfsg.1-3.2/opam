@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libnf2ff0_0.0.35+git20190103.6a75e98+dfsg.1-3.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libnf2ff0"]
+]
+depends: [
+  "deb-libboost-thread1-74-0" {>= "1.74.0+ds1"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libhdf5-103-1"
+  "deb-libstdc++6" {>= "11"}
+  "deb-libtinyxml2-6-2v5" {>= "2.6.2"}
+]
+extra-source "libnf2ff0_0.0.35+git20190103.6a75e98+dfsg.1-3.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openems/libnf2ff0_0.0.35+git20190103.6a75e98+dfsg.1-3.2_amd64.deb"
+}

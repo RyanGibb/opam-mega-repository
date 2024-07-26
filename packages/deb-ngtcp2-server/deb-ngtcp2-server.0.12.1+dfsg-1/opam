@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ngtcp2-server_0.12.1+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ngtcp2-server"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libev4" {>= "1-4.04"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgnutls30" {>= "3.7.5"}
+  "deb-libnghttp3-3" {>= "0.7.0"}
+  "deb-libngtcp2-9" {= "0.12.1+dfsg-1"}
+  "deb-libngtcp2-crypto-gnutls2" {>= "0.8.0+dfsg"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-ssl-cert"
+]
+extra-source "ngtcp2-server_0.12.1+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/ngtcp2/ngtcp2-server_0.12.1+dfsg-1_amd64.deb"
+}

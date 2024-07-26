@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-samr_3.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-samr"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.2-1"}
+  "deb-r-bioc-impute"
+  "deb-r-cran-gsa"
+  "deb-r-cran-matrixstats"
+  "deb-r-cran-openxlsx"
+  "deb-r-cran-shiny"
+  "deb-r-cran-shinyfiles"
+]
+extra-source "r-cran-samr_3.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-samr/r-cran-samr_3.0-2_amd64.deb"
+}

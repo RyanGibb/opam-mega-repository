@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-quickcheck-instances-dev_0.3.28-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-quickcheck-instances-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.14"}
+  "deb-libghc-case-insensitive-dev"
+  "deb-libghc-data-fix-dev"
+  "deb-libghc-hashable-dev"
+  "deb-libghc-integer-logarithms-dev"
+  "deb-libghc-old-time-dev"
+  "deb-libghc-onetuple-dev"
+  "deb-libghc-primitive-dev"
+  "deb-libghc-quickcheck2-dev"
+  "deb-libghc-scientific-dev"
+  "deb-libghc-splitmix-dev"
+  "deb-libghc-strict-dev"
+  "deb-libghc-tagged-dev"
+  "deb-libghc-text-short-dev"
+  "deb-libghc-these-dev"
+  "deb-libghc-time-compat-dev"
+  "deb-libghc-transformers-compat-dev"
+  "deb-libghc-unordered-containers-dev"
+  "deb-libghc-uuid-types-dev"
+  "deb-libghc-vector-dev"
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+]
+extra-source "libghc-quickcheck-instances-dev_0.3.28-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-quickcheck-instances/libghc-quickcheck-instances-dev_0.3.28-1_amd64.deb"
+}

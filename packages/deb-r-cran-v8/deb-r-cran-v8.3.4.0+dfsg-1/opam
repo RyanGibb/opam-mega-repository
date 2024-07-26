@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-v8_3.4.0+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-v8"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libjs-underscore"
+  "deb-libnode72" {>= "12.19.0~dfsg"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.3-1"}
+  "deb-r-cran-curl" {>= "1.0"}
+  "deb-r-cran-jsonlite" {>= "1.0"}
+  "deb-r-cran-rcpp" {>= "0.12.12"}
+]
+extra-source "r-cran-v8_3.4.0+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-v8/r-cran-v8_3.4.0+dfsg-1_amd64.deb"
+}

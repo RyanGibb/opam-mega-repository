@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i metaphlan_4.0.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r metaphlan"]
+]
+depends: [
+  "deb-bowtie2"
+  "deb-metaphlan2-data"
+  "deb-python3-any"
+  "deb-python3-biom-format"
+  "deb-python3-biopython"
+  "deb-python3-dendropy"
+  "deb-python3-msgpack"
+  "deb-python3-numpy"
+  "deb-python3-pandas"
+  "deb-python3-pysam"
+  "deb-python3-requests"
+  "deb-python3-scipy"
+]
+conflicts: [
+  "deb-metaphlan2"
+]
+extra-source "metaphlan_4.0.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/metaphlan/metaphlan_4.0.4-1_all.deb"
+}

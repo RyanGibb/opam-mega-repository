@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-conduit-dev_1.3.2-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-conduit-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-exceptions-dev"
+  "deb-libghc-mono-traversable-dev"
+  "deb-libghc-primitive-dev"
+  "deb-libghc-resourcet-dev"
+  "deb-libghc-unliftio-core-dev"
+  "deb-libghc-vector-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-conduit-dev_1.3.2-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-conduit/libghc-conduit-dev_1.3.2-1+b2_amd64.deb"
+}

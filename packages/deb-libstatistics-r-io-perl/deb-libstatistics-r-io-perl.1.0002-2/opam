@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libstatistics-r-io-perl_1.0002-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libstatistics-r-io-perl"]
+]
+depends: [
+  "deb-libclass-method-modifiers-perl"
+  "deb-libclass-tiny-antlers-perl"
+  "deb-libclass-tiny-perl" {>= "1.001"}
+  "deb-libnamespace-clean-perl"
+  "deb-libscalar-list-utils-perl"
+  "deb-perl-any"
+]
+extra-source "libstatistics-r-io-perl_1.0002-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libs/libstatistics-r-io-perl/libstatistics-r-io-perl_1.0002-2_all.deb"
+}

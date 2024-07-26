@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libhandy-1-0_1.8.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libhandy-1-0"]
+]
+depends: [
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libcairo2" {>= "1.14.0"}
+  "deb-libfribidi0" {>= "0.19.2"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.59.0"}
+  "deb-libgtk-3-0" {>= "3.23.1"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+]
+extra-source "libhandy-1-0_1.8.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libh/libhandy-1/libhandy-1-0_1.8.1-1_amd64.deb"
+}

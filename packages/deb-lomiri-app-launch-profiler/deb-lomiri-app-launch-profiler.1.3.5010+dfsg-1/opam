@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lomiri-app-launch-profiler_1.3.5010+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lomiri-app-launch-profiler"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-liblttng-ust1" {>= "2.13.0"}
+  "deb-lttng-tools"
+  "deb-python3"
+  "deb-python3-babeltrace"
+]
+extra-source "lomiri-app-launch-profiler_1.3.5010+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lomiri-ui-toolkit/lomiri-app-launch-profiler_1.3.5010+dfsg-1_amd64.deb"
+}

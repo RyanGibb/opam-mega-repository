@@ -1,0 +1,42 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gtk+3.0-3.24.42-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gtk+3.0"]
+]
+depends: [
+  "apk-cairo" {= "1.18.0-r0"}
+  "apk-cairo-gobject" {= "1.18.0-r0"}
+  "apk-cups-libs" {= "2.4.9-r0"}
+  "apk-fontconfig" {= "2.15.0-r1"}
+  "apk-fribidi" {= "1.0.15-r0"}
+  "apk-gdk-pixbuf" {= "2.42.11-r1"}
+  "apk-glib" {= "2.80.2-r0"}
+  "apk-gtk-update-icon-cache" {= "3.24.42-r0"}
+  "apk-harfbuzz" {= "8.5.0-r0"}
+  "apk-libatk-1-0" {= "2.52.0-r0"}
+  "apk-libatk-bridge-2-0" {= "2.52.0-r0"}
+  "apk-libepoxy" {= "1.5.10-r1"}
+  "apk-libintl" {= "0.22.5-r0"}
+  "apk-libx11" {= "1.8.9-r1"}
+  "apk-libxcomposite" {= "0.4.6-r5"}
+  "apk-libxcursor" {= "1.2.2-r1"}
+  "apk-libxdamage" {= "1.1.6-r5"}
+  "apk-libxext" {= "1.3.6-r2"}
+  "apk-libxfixes" {= "6.0.1-r4"}
+  "apk-libxi" {= "1.8.1-r4"}
+  "apk-libxinerama" {= "1.1.5-r4"}
+  "apk-libxkbcommon" {= "1.7.0-r0"}
+  "apk-libxrandr" {= "1.5.4-r1"}
+  "apk-musl" {= "1.2.5-r0"}
+  "apk-pango" {= "1.52.2-r0"}
+  "apk-shared-mime-info" {= "2.4-r0"}
+  "apk-wayland-libs-client" {= "1.22.0-r4"}
+  "apk-wayland-libs-cursor" {= "1.22.0-r4"}
+  "apk-wayland-libs-egl" {= "1.22.0-r4"}
+  ("apk-busybox-binsh" {= "1.36.1-r29"} | "apk-dash-binsh" {= "0.5.12-r2"} | "apk-yash-binsh" {= "2.56.1-r1"})
+]
+extra-source "gtk+3.0-3.24.42-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/gtk+3.0-3.24.42-r0.apk"
+}

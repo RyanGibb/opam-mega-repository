@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i munge_0.5.14-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r munge"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.25"}
+  "deb-libgcrypt20" {>= "1.8.0"}
+  "deb-libmunge2" {= "0.5.14-4"}
+  "deb-lsb-base" {>= "3.0-6"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "munge_0.5.14-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/munge/munge_0.5.14-4_amd64.deb"
+}

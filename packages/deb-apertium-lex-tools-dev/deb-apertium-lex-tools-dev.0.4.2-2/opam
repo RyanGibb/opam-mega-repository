@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i apertium-lex-tools-dev_0.4.2-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r apertium-lex-tools-dev"]
+]
+depends: [
+  "deb-apertium-lex-tools" {= "0.4.2-2"}
+  "deb-libapertium-lex-tools1" {>= "0.4.2"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-liblttoolbox3" {>= "3.7.1"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libxml2-utils"
+  "deb-lttoolbox-dev" {>= "3.7.1"}
+]
+extra-source "apertium-lex-tools-dev_0.4.2-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/apertium-lex-tools/apertium-lex-tools-dev_0.4.2-2_amd64.deb"
+}

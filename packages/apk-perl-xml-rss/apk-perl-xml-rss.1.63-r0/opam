@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-xml-rss-1.63-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-xml-rss"]
+]
+depends: [
+  "apk-perl" {= "5.38.2-r0"}
+  "apk-perl-datetime-format-mail" {= "0.403-r4"}
+  "apk-perl-datetime-format-w3cdtf" {= "0.08-r4"}
+  "apk-perl-html-parser" {= "3.82-r0"}
+  "apk-perl-xml-parser" {= "2.47-r0"}
+]
+extra-source "perl-xml-rss-1.63-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-xml-rss-1.63-r0.apk"
+}

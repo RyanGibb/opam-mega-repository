@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cantor-backend-python3_4:22.12.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cantor-backend-python3"]
+]
+depends: [
+  "deb-kio"
+  "deb-libc6" {>= "2.34"}
+  "deb-libcantorlibs28abi1" {= "4-22.12.3-1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libkf5completion5" {>= "5.91.0~"}
+  "deb-libkf5configcore5" {>= "5.91.0~"}
+  "deb-libkf5configgui5" {>= "5.91.0~"}
+  "deb-libkf5coreaddons5" {>= "5.91.0~"}
+  "deb-libkf5i18n5" {>= "5.91.0~"}
+  "deb-libkf5iconthemes5" {>= "5.91.0~"}
+  "deb-libkf5kiowidgets5" {>= "5.91.0~"}
+  "deb-libkf5newstuffcore5" {>= "5.91.0~"}
+  "deb-libkf5newstuffwidgets5" {>= "5.93.0"}
+  "deb-libkf5syntaxhighlighting5" {>= "5.91.0~"}
+  "deb-libkf5widgetsaddons5" {>= "4.96.0"}
+  "deb-libkf5xmlgui5" {>= "5.91.0~"}
+  "deb-libpython3-11" {>= "3.11.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5help5" {>= "5.8.0~"}
+  "deb-libqt5widgets5" {>= "5.8.0~"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-python3"
+  ("deb-libqt5gui5" {>= "5.8.0~"} | "deb- libqt5gui5-gles" {>= "5.8.0~"})
+]
+extra-source "cantor-backend-python3_4:22.12.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cantor/cantor-backend-python3_22.12.3-1_amd64.deb"
+}

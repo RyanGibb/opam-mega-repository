@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i bochs_2.7+dfsg-4+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r bochs"]
+]
+depends: [
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libgtk-3-0" {>= "3.0.0"}
+  "deb-libltdl7" {>= "2.4.7"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libreadline8" {>= "6.0"}
+  "deb-libsamplerate0" {>= "0.1.7"}
+  "deb-libstdc++6" {>= "12.2.0-10"}
+  ("deb-bochs-wx" | "deb- bochs-gui")
+  ("deb-bochsbios" {= "2.7+dfsg-4"} | "deb- seabios")
+  ("deb-vgabios" {>= "0.8~"} | "deb- seabios")
+]
+extra-source "bochs_2.7+dfsg-4+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/bochs/bochs_2.7+dfsg-4+b2_amd64.deb"
+}

@@ -1,0 +1,80 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnome-shell_43.9-0+deb12u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnome-shell"]
+]
+depends: [
+  "deb-gir1-2-accountsservice-1-0"
+  "deb-gir1-2-adw-1"
+  "deb-gir1-2-atk-1-0"
+  "deb-gir1-2-atspi-2-0" {>= "2.36"}
+  "deb-gir1-2-freedesktop"
+  "deb-gir1-2-gcr-3"
+  "deb-gir1-2-gdesktopenums-3-0"
+  "deb-gir1-2-gdkpixbuf-2-0"
+  "deb-gir1-2-gdm-1-0"
+  "deb-gir1-2-geoclue-2-0"
+  "deb-gir1-2-glib-2-0"
+  "deb-gir1-2-gnomebluetooth-3-0" {>= "42.3"}
+  "deb-gir1-2-gnomedesktop-3-0" {>= "3.35.90"}
+  "deb-gir1-2-graphene-1-0" {>= "1.10.2"}
+  "deb-gir1-2-gstreamer-1-0"
+  "deb-gir1-2-gtk-3-0"
+  "deb-gir1-2-gtk-4-0"
+  "deb-gir1-2-gweather-4-0" {>= "4.1"}
+  "deb-gir1-2-ibus-1-0" {>= "1.5.22-2ubuntu2~"}
+  "deb-gir1-2-mutter-11" {>= "43.5"}
+  "deb-gir1-2-nm-1-0"
+  "deb-gir1-2-nma-1-0"
+  "deb-gir1-2-pango-1-0"
+  "deb-gir1-2-polkit-1-0"
+  "deb-gir1-2-rsvg-2-0"
+  "deb-gir1-2-soup-3-0"
+  "deb-gir1-2-upowerglib-1-0"
+  "deb-gir1-2-webkit2-4-1"
+  "deb-gnome-backgrounds"
+  "deb-gnome-settings-daemon" {>= "40~"}
+  "deb-gnome-shell-common" {= "43.9-0+deb12u2"}
+  "deb-gsettings-desktop-schemas" {>= "42~beta"}
+  "deb-gstreamer1-0-pipewire" {>= "0.3.10"}
+  "deb-libatk-bridge2-0-0" {>= "2.5.3"}
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.14.0"}
+  "deb-libecal-2-0-2" {>= "3.45"}
+  "deb-libedataserver-1-2-27" {>= "3.45"}
+  "deb-libgcr-base-3-1" {>= "3.8.0"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.23.0"}
+  "deb-libgirepository-1-0-1" {>= "1.35.9"}
+  "deb-libgjs0g" {>= "1.73.1"}
+  "deb-libgles2"
+  "deb-libglib2-0-0" {>= "2.67.3"}
+  "deb-libglib2-0-bin"
+  "deb-libgnome-autoar-0-0" {>= "0.1.1"}
+  "deb-libgnome-desktop-3-20" {>= "3.35.90"}
+  "deb-libgraphene-1-0-0" {>= "1.5.4"}
+  "deb-libgtk-3-0" {>= "3.13.7"}
+  "deb-libgtk-4-1" {>= "4.0.0"}
+  "deb-libical3" {>= "3.0.0"}
+  "deb-libjson-glib-1-0-0" {>= "1.5.2"}
+  "deb-libmutter-11-0" {>= "43.5"}
+  "deb-libnm0" {>= "1.4.0"}
+  "deb-libpango-1-0-0" {>= "1.37.5"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpolkit-agent-1-0" {>= "0.99"}
+  "deb-libpolkit-gobject-1-0" {>= "0.94"}
+  "deb-libpulse-mainloop-glib0" {>= "13"}
+  "deb-libpulse0" {>= "13"}
+  "deb-libsecret-1-0" {>= "0.7"}
+  "deb-libsystemd0"
+  "deb-libwayland-server0" {>= "1.0.2"}
+  "deb-libx11-6"
+  "deb-libxfixes3"
+  "deb-python3"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "gnome-shell_43.9-0+deb12u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnome-shell/gnome-shell_43.9-0+deb12u2_amd64.deb"
+}

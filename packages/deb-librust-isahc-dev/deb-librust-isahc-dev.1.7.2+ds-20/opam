@@ -1,0 +1,44 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-isahc-dev_1.7.2+ds-20_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-isahc-dev"]
+]
+depends: [
+  "deb-librust-async-channel-1+default-dev"
+  "deb-librust-castaway-0-2+default-dev"
+  "deb-librust-crossbeam-utils-dev"
+  "deb-librust-curl+http2-dev"
+  "deb-librust-curl+ssl-dev"
+  "deb-librust-curl+static-curl-dev"
+  "deb-librust-curl+static-ssl-dev"
+  "deb-librust-curl-sys+openssl-sys-dev"
+  "deb-librust-curl-sys-dev"
+  "deb-librust-encoding-rs-0-8+default-dev"
+  "deb-librust-event-listener-2+default-dev"
+  "deb-librust-futures-lite-1+default-dev"
+  "deb-librust-http-0-2+default-dev"
+  "deb-librust-httpdate-1+default-dev"
+  "deb-librust-log-0-4+default-dev"
+  "deb-librust-mime-0-3+default-dev"
+  "deb-librust-once-cell-1+default-dev"
+  "deb-librust-parking-lot-0-12+default-dev"
+  "deb-librust-polling-2+default-dev"
+  "deb-librust-publicsuffix-2+default-dev"
+  "deb-librust-publicsuffix-2+std-dev"
+  "deb-librust-serde-1+default-dev"
+  "deb-librust-serde-json-1+default-dev"
+  "deb-librust-slab-0-4+default-dev"
+  "deb-librust-sluice-0-5+default-dev"
+  "deb-librust-tracing-0-1+default-dev"
+  "deb-librust-tracing-0-1+log-dev"
+  "deb-librust-tracing-futures-0-2+std-dev"
+  "deb-librust-tracing-futures-0-2+std-future-dev"
+  "deb-librust-url-dev"
+  "deb-librust-waker-fn-1+default-dev"
+  "deb-publicsuffix"
+]
+extra-source "librust-isahc-dev_1.7.2+ds-20_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-isahc/librust-isahc-dev_1.7.2+ds-20_all.deb"
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-ipywidgets_6.0.0-11_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-ipywidgets"]
+]
+depends: [
+  "deb-jupyter-nbextension-jupyter-js-widgets" {= "6.0.0-11"}
+  "deb-python3-any"
+  "deb-python3-ipykernel"
+  "deb-python3-ipython"
+  "deb-python3-nbformat"
+  "deb-python3-traitlets"
+  "deb-python3-widgetsnbextension"
+]
+extra-source "python3-ipywidgets_6.0.0-11_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/ipywidgets/python3-ipywidgets_6.0.0-11_all.deb"
+}

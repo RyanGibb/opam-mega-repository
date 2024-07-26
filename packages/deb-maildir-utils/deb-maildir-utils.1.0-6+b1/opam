@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i maildir-utils_1.0-6+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r maildir-utils"]
+]
+depends: [
+  "deb-guile-2-2-libs"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgc1c2" {>= "1-7.2d"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libglib2-0-0" {>= "2.41.1"}
+  "deb-libgmime-2-6-0" {>= "2.6.4"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libxapian30" {>= "1.4.6~"}
+  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+]
+conflicts: [
+  "deb-mailutils" {< "1-2.99.97-3"}
+]
+extra-source "maildir-utils_1.0-6+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/maildir-utils/maildir-utils_1.0-6+b1_amd64.deb"
+}

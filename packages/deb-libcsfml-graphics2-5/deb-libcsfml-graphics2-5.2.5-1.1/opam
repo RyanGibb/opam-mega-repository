@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcsfml-graphics2.5_2.5-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcsfml-graphics2.5"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libsfml-graphics2-5"
+  "deb-libsfml-system2-5"
+  "deb-libsfml-window2-5"
+  "deb-libstdc++6" {>= "5.2"}
+]
+extra-source "libcsfml-graphics2.5_2.5-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libcsfml/libcsfml-graphics2.5_2.5-1.1_amd64.deb"
+}

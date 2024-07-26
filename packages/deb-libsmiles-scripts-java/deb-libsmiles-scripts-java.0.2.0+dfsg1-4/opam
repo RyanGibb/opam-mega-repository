@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsmiles-scripts-java_0.2.0+dfsg1-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsmiles-scripts-java"]
+]
+depends: [
+  "deb-libbeam-java"
+  "deb-libcdk-java"
+  "deb-libfreehep-graphics2d-java"
+  "deb-libfreehep-graphicsbase-java"
+  "deb-libfreehep-graphicsio-java"
+  "deb-libfreehep-graphicsio-pdf-java"
+  "deb-libfreehep-graphicsio-ps-java"
+  "deb-libfreehep-graphicsio-svg-java"
+  "deb-libguava-java"
+  "deb-libsoptions-java"
+]
+extra-source "libsmiles-scripts-java_0.2.0+dfsg1-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/smiles-scripts/libsmiles-scripts-java_0.2.0+dfsg1-4_all.deb"
+}

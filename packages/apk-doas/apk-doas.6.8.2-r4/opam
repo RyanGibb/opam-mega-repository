@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add doas-6.8.2-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del doas"]
+]
+depends: [
+  "apk-musl" {= "1.2.4-r2"}
+  ("apk-busybox-binsh" {= "1.36.1-r7"} | "apk-dash-binsh" {= "0.5.12-r2"} | "apk-yash-binsh" {= "2.54-r3"})
+]
+extra-source "doas-6.8.2-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/doas-6.8.2-r4.apk"
+}

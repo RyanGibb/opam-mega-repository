@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i guestfsd_1:1.40.2-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r guestfsd"]
+]
+depends: [
+  "deb-binutils"
+  "deb-bsdmainutils"
+  "deb-cpio"
+  "deb-diffutils"
+  "deb-dosfstools"
+  "deb-file"
+  "deb-libacl1" {>= "2.2.23"}
+  "deb-libaugeas0" {>= "1.8.0"}
+  "deb-libc6" {>= "2.28"}
+  "deb-libcap2" {>= "1-2.10"}
+  "deb-libhivex0" {>= "1.3.14"}
+  "deb-libjansson4" {>= "2.7"}
+  "deb-libpcre3"
+  "deb-libselinux1" {>= "1.32"}
+  "deb-libsystemd0"
+  "deb-libtinfo6" {>= "6"}
+  "deb-libtsk13" {>= "4.2.0"}
+  "deb-libyara3" {>= "3.4.0"}
+  "deb-lsof"
+  "deb-net-tools"
+  "deb-parted"
+  "deb-procps"
+  "deb-scrub"
+  "deb-strace"
+  "deb-udev"
+  "deb-zerofree"
+  ("deb-iproute2" | "deb- iproute")
+  ("deb-kmod" | "deb- module-init-tools")
+]
+extra-source "guestfsd_1:1.40.2-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libg/libguestfs/guestfsd_1.40.2-2_amd64.deb"
+}

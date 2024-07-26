@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcatmandu-stat-perl_0.13-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcatmandu-stat-perl"]
+]
+depends: [
+  "deb-libalgorithm-hyperloglog-perl"
+  "deb-libcatmandu-exporter-table-perl"
+  "deb-libcatmandu-perl"
+  "deb-libscalar-list-utils-perl"
+  "deb-libstatistics-basic-perl"
+  "deb-libstatistics-descriptive-perl"
+  "deb-libstatistics-topk-perl"
+  "deb-perl-any"
+]
+extra-source "libcatmandu-stat-perl_0.13-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libcatmandu-stat-perl/libcatmandu-stat-perl_0.13-2_all.deb"
+}

@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-opencv_4.5.1+dfsg-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-opencv"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libcharls2"
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libopencv-calib3d4-5" {>= "4.5.1+dfsg"}
+  "deb-libopencv-contrib4-5" {>= "4.5.1+dfsg"}
+  "deb-libopencv-core4-5" {>= "4.5.1+dfsg"}
+  "deb-libopencv-dnn4-5" {>= "4.5.1+dfsg"}
+  "deb-libopencv-features2d4-5" {>= "4.5.1+dfsg"}
+  "deb-libopencv-flann4-5" {>= "4.5.1+dfsg"}
+  "deb-libopencv-highgui4-5" {>= "4.5.1+dfsg"}
+  "deb-libopencv-imgcodecs4-5" {>= "4.5.1+dfsg"}
+  "deb-libopencv-imgproc4-5" {>= "4.5.1+dfsg"}
+  "deb-libopencv-ml4-5" {>= "4.5.1+dfsg"}
+  "deb-libopencv-objdetect4-5" {>= "4.5.1+dfsg"}
+  "deb-libopencv-photo4-5" {>= "4.5.1+dfsg"}
+  "deb-libopencv-shape4-5" {>= "4.5.1+dfsg"}
+  "deb-libopencv-stitching4-5" {>= "4.5.1+dfsg"}
+  "deb-libopencv-video4-5" {>= "4.5.1+dfsg"}
+  "deb-libopencv-videoio4-5" {>= "4.5.1+dfsg"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-python3" {< "3.10"}
+  "deb-python3" {>= "3.9~"}
+  "deb-python3-numpy"
+  "deb-python3-numpy" {>= "1-1.16.0~rc1"}
+]
+extra-source "python3-opencv_4.5.1+dfsg-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/opencv/python3-opencv_4.5.1+dfsg-5_amd64.deb"
+}

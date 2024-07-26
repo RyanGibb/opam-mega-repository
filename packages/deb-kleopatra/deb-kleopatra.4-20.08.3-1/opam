@@ -1,0 +1,50 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kleopatra_4:20.08.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kleopatra"]
+]
+depends: [
+  "deb-dirmngr"
+  "deb-gnupg"
+  "deb-gpgsm"
+  "deb-libassuan0" {>= "2.0.1"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgpg-error0" {>= "1.14"}
+  "deb-libgpgmepp6" {>= "1.14.0"}
+  "deb-libkf5codecs5" {>= "5.71.0~"}
+  "deb-libkf5configcore5" {>= "5.71.0~"}
+  "deb-libkf5configgui5" {>= "5.71.0~"}
+  "deb-libkf5configwidgets5" {>= "5.71.0~"}
+  "deb-libkf5coreaddons5" {>= "5.71.0~"}
+  "deb-libkf5crash5" {>= "5.71.0~"}
+  "deb-libkf5dbusaddons5" {>= "5.71.0~"}
+  "deb-libkf5i18n5" {>= "5.71.0~"}
+  "deb-libkf5iconthemes5" {>= "5.71.0~"}
+  "deb-libkf5itemmodels5" {>= "5.71.0~"}
+  "deb-libkf5kcmutils5" {>= "5.71.0~"}
+  "deb-libkf5libkleo5"
+  "deb-libkf5libkleo5" {>= "4-20.08.3"}
+  "deb-libkf5mime5abi1"
+  "deb-libkf5mime5abi1" {>= "20.08.3"}
+  "deb-libkf5notifications5" {>= "5.71.0~"}
+  "deb-libkf5textwidgets5" {>= "5.71.0~"}
+  "deb-libkf5widgetsaddons5" {>= "5.71.0~"}
+  "deb-libkf5windowsystem5" {>= "5.71.0~"}
+  "deb-libkf5xmlgui5" {>= "5.71.0~"}
+  "deb-libqgpgme7" {>= "1.14.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.13.0~"}
+  "deb-libqt5network5" {>= "5.13.0~"}
+  "deb-libqt5printsupport5" {>= "5.13.0~"}
+  "deb-libqt5widgets5" {>= "5.14.1"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-paperkey"
+  "deb-pinentry-qt"
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "kleopatra_4:20.08.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kleopatra/kleopatra_20.08.3-1_amd64.deb"
+}

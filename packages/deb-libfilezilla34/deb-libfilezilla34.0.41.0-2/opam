@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libfilezilla34_0.41.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libfilezilla34"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libcrypt1" {>= "1-4.1.0"}
+  "deb-libfilezilla-common" {>= "0.41.0-2"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-libgnutls30" {>= "3.7.5"}
+  "deb-libhogweed6" {>= "3.1"}
+  "deb-libnettle8" {>= "3.1"}
+  "deb-libstdc++6" {>= "11"}
+]
+conflicts: [
+  "deb-libfilezilla0"
+  "deb-libfilezilla11"
+  "deb-libfilezilla19"
+  "deb-libfilezilla21"
+]
+extra-source "libfilezilla34_0.41.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libf/libfilezilla/libfilezilla34_0.41.0-2_amd64.deb"
+}

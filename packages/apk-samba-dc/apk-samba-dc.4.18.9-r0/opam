@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add samba-dc-4.18.9-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del samba-dc"]
+]
+depends: [
+  "apk-gnutls" {= "3.8.4-r0"}
+  "apk-ldb" {= "2.7.2-r1"}
+  "apk-musl" {= "1.2.4_git20230717-r4"}
+  "apk-popt" {= "1.19-r3"}
+  "apk-py3-dnspython" {= "2.4.2-r1"}
+  "apk-py3-markdown" {= "3.5.1-r0"}
+  "apk-py3-samba" {= "4.18.9-r0"}
+  "apk-samba-client-libs" {= "4.18.9-r0"}
+  "apk-samba-common" {= "4.18.9-r0"}
+  "apk-samba-common-server-libs" {= "4.18.9-r0"}
+  "apk-samba-dc-libs" {= "4.18.9-r0"}
+  "apk-samba-libs" {= "4.18.9-r0"}
+  "apk-samba-server" {= "4.18.9-r0"}
+  "apk-samba-util-libs" {= "4.18.9-r0"}
+  "apk-samba-winbind" {= "4.18.9-r0"}
+  "apk-talloc" {= "2.4.2-r0"}
+  "apk-tdb" {= "1.4.9-r0"}
+  "apk-tdb-libs" {= "1.4.9-r0"}
+  "apk-tevent" {= "0.15.0-r0"}
+]
+extra-source "samba-dc-4.18.9-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/samba-dc-4.18.9-r0.apk"
+}

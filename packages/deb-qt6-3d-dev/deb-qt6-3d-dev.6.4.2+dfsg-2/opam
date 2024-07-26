@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qt6-3d-dev_6.4.2+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qt6-3d-dev"]
+]
+depends: [
+  "deb-libqt63danimation6" {= "6.4.2+dfsg-2"}
+  "deb-libqt63dcore6" {= "6.4.2+dfsg-2"}
+  "deb-libqt63dextras6" {= "6.4.2+dfsg-2"}
+  "deb-libqt63dinput6" {= "6.4.2+dfsg-2"}
+  "deb-libqt63dlogic6" {= "6.4.2+dfsg-2"}
+  "deb-libqt63dquick6" {= "6.4.2+dfsg-2"}
+  "deb-libqt63dquickanimation6" {= "6.4.2+dfsg-2"}
+  "deb-libqt63dquickextras6" {= "6.4.2+dfsg-2"}
+  "deb-libqt63dquickinput6" {= "6.4.2+dfsg-2"}
+  "deb-libqt63dquickrender6" {= "6.4.2+dfsg-2"}
+  "deb-libqt63dquickscene2d6" {= "6.4.2+dfsg-2"}
+  "deb-libqt63drender6" {= "6.4.2+dfsg-2"}
+  "deb-qt6-base-dev"
+]
+extra-source "qt6-3d-dev_6.4.2+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qt6-3d/qt6-3d-dev_6.4.2+dfsg-2_amd64.deb"
+}

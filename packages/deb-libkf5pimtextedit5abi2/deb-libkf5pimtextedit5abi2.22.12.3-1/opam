@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkf5pimtextedit5abi2_22.12.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkf5pimtextedit5abi2"]
+]
+depends: [
+  "deb-kio"
+  "deb-libc6" {>= "2.14"}
+  "deb-libkf5codecs5" {>= "5.4.0+git20141120.0010+15.04"}
+  "deb-libkf5configcore5" {>= "5.99.0~"}
+  "deb-libkf5configgui5" {>= "5.99.0~"}
+  "deb-libkf5configwidgets5" {>= "5.99.0~"}
+  "deb-libkf5coreaddons5" {>= "5.99.0~"}
+  "deb-libkf5i18n5" {>= "5.99.0~"}
+  "deb-libkf5kiowidgets5" {>= "5.99.0~"}
+  "deb-libkf5pimtextedit-data" {= "22.12.3-1"}
+  "deb-libkf5sonnetcore5" {>= "5.99.0~"}
+  "deb-libkf5sonnetui5" {>= "5.99.0~"}
+  "deb-libkf5syntaxhighlighting5" {>= "5.99.0~"}
+  "deb-libkf5widgetsaddons5" {>= "5.100.0"}
+  "deb-libkf5xmlgui5" {>= "5.99.0~"}
+  "deb-libqt5core5a" {>= "5.15.2~"}
+  "deb-libqt5texttospeech5" {>= "5.8.0~alpha"}
+  "deb-libqt5widgets5" {>= "5.15.2~"}
+  "deb-libstdc++6" {>= "5"}
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+]
+extra-source "libkf5pimtextedit5abi2_22.12.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kpimtextedit/libkf5pimtextedit5abi2_22.12.3-1_amd64.deb"
+}

@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i perlrdf_0.004-3.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r perlrdf"]
+]
+depends: [
+  "deb-libapp-cmd-perl"
+  "deb-libapp-cmd-plugin-prompt-perl"
+  "deb-libjson-perl"
+  "deb-libmoose-perl"
+  "deb-libnamespace-clean-perl"
+  "deb-libossp-uuid-perl"
+  "deb-libpath-class-perl"
+  "deb-libperlx-maybe-perl"
+  "deb-librdf-ns-perl"
+  "deb-librdf-rdfa-parser-perl"
+  "deb-librdf-trin3-perl" {>= "0.200"}
+  "deb-librdf-trine-perl"
+  "deb-librdf-trinex-functions-perl" {>= "0.004"}
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-perl-any"
+  ("deb-librole-commons-perl" | "deb- libobject-authority-perl")
+]
+extra-source "perlrdf_0.004-3.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/perlrdf/perlrdf_0.004-3.1_all.deb"
+}

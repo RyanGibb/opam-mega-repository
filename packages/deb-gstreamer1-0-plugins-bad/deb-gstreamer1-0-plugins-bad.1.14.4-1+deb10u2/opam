@@ -1,0 +1,86 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gstreamer1.0-plugins-bad_1.14.4-1+deb10u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gstreamer1.0-plugins-bad"]
+]
+depends: [
+  "deb-gstreamer1-0-plugins-base"
+  "deb-libass9" {>= "1-0.13.6"}
+  "deb-libbs2b0"
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.15"}
+  "deb-libcairo2" {>= "1.6.0"}
+  "deb-libchromaprint1" {>= "1.3.2"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libdc1394-22"
+  "deb-libdca0" {>= "0.0.5"}
+  "deb-libde265-0" {>= "0.8"}
+  "deb-libdrm2" {>= "2.4.47"}
+  "deb-libdvdnav4" {>= "4.1.3"}
+  "deb-libdvdread4" {>= "4.1.3"}
+  "deb-libfaad2" {>= "2.7"}
+  "deb-libflite1" {>= "1.4-release-9~"}
+  "deb-libfluidsynth1" {>= "1.1.6-4~"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libglib2-0-0" {>= "2.43.2"}
+  "deb-libgme0" {>= "0.6.0"}
+  "deb-libgsm1" {>= "1.0.18"}
+  "deb-libgstreamer-gl1-0-0" {>= "1.14.4"}
+  "deb-libgstreamer-plugins-bad1-0-0" {= "1.14.4-1+deb10u2"}
+  "deb-libgstreamer-plugins-base1-0-0" {>= "1.14.4"}
+  "deb-libgstreamer1-0-0" {>= "1.14.4"}
+  "deb-libgudev-1-0-0" {>= "146"}
+  "deb-libilmbase23" {>= "2.2.1"}
+  "deb-libkate1" {>= "0.4.1"}
+  "deb-liblcms2-2" {>= "2.7"}
+  "deb-liblilv-0-0" {>= "0.22.0~dfsg0"}
+  "deb-libmjpegutils-2-1-0"
+  "deb-libmms0" {>= "0.4"}
+  "deb-libmodplug1" {>= "1-0.8.8.5"}
+  "deb-libmpcdec6" {>= "1-0.1~r435"}
+  "deb-libmpeg2encpp-2-1-0"
+  "deb-libmplex2-2-1-0"
+  "deb-libnettle6"
+  "deb-libnice10" {>= "0.1.13"}
+  "deb-libofa0" {>= "0.9.3"}
+  "deb-libopenal1" {>= "1.14"}
+  "deb-libopenexr23"
+  "deb-libopenjp2-7" {>= "2.0.0"}
+  "deb-libopenmpt0" {>= "0.3.0"}
+  "deb-libopus0" {>= "1.1"}
+  "deb-liborc-0-4-0" {>= "1-0.4.25"}
+  "deb-libpango-1-0-0" {>= "1.22.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-librsvg2-2" {>= "2.36.2"}
+  "deb-librtmp1" {>= "2.3"}
+  "deb-libsbc1"
+  "deb-libsndfile1" {>= "1.0.20"}
+  "deb-libsoundtouch1" {>= "2.0.0"}
+  "deb-libspandsp2" {>= "0.0.6~pre18"}
+  "deb-libsrtp2-1" {>= "2.0.0+20170516"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libusb-1-0-0" {>= "2-1.0.8"}
+  "deb-libvo-aacenc0"
+  "deb-libvo-amrwbenc0"
+  "deb-libvulkan1"
+  "deb-libwayland-client0" {>= "1.9.91"}
+  "deb-libwebp6" {>= "0.5.1"}
+  "deb-libwebrtc-audio-processing1"
+  "deb-libwildmidi2" {>= "0.2.3"}
+  "deb-libx11-6"
+  "deb-libx265-165" {>= "2.9"}
+  "deb-libxcb1"
+  "deb-libxml2" {>= "2.9.0"}
+  "deb-libzbar0" {>= "0.10"}
+  "deb-libzvbi0" {>= "0.2.35"}
+]
+conflicts: [
+  "deb-gstreamer1-0-plugins-bad-faad" {< "1.11.91-1ubuntu1"}
+  "deb-gstreamer1-0-plugins-bad-videoparsers" {< "1.11.91-1ubuntu1"}
+]
+extra-source "gstreamer1.0-plugins-bad_1.14.4-1+deb10u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gst-plugins-bad1.0/gstreamer1.0-plugins-bad_1.14.4-1+deb10u2_amd64.deb"
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libxen-dev_4.14.6-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libxen-dev"]
+]
+depends: [
+  "deb-libxencall1" {= "4.14.6-1"}
+  "deb-libxendevicemodel1" {= "4.14.6-1"}
+  "deb-libxenevtchn1" {= "4.14.6-1"}
+  "deb-libxenforeignmemory1" {= "4.14.6-1"}
+  "deb-libxengnttab1" {= "4.14.6-1"}
+  "deb-libxenhypfs1" {= "4.14.6-1"}
+  "deb-libxenmisc4-14" {= "4.14.6-1"}
+  "deb-libxenstore3-0" {= "4.14.6-1"}
+  "deb-libxentoolcore1" {= "4.14.6-1"}
+  "deb-libxentoollog1" {= "4.14.6-1"}
+]
+extra-source "libxen-dev_4.14.6-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xen/libxen-dev_4.14.6-1_amd64.deb"
+}

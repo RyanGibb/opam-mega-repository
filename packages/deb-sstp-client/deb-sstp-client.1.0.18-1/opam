@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sstp-client_1.0.18-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sstp-client"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libc6" {>= "2.34"}
+  "deb-libevent-2-1-7" {>= "2.1.8-stable"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libsstp-api-0" {= "1.0.18-1"}
+  "deb-ppp" {< "2.4.9-2~"}
+  "deb-ppp" {>= "2.4.9-1+~"}
+]
+extra-source "sstp-client_1.0.18-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sstp-client/sstp-client_1.0.18-1_amd64.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libical-dev-3.0.17-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libical-dev"]
+]
+depends: [
+  "apk-glib-dev" {= "2.78.6-r0"}
+  "apk-gobject-introspection-dev" {= "1.78.1-r0"}
+  "apk-icu-dev" {= "74.1-r0"}
+  "apk-libical" {= "3.0.17-r1"}
+  "apk-libxml2-dev" {= "2.11.8-r0"}
+  "apk-pkgconf" {= "2.1.0-r0"}
+]
+extra-source "libical-dev-3.0.17-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/libical-dev-3.0.17-r1.apk"
+}

@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i rofi_1.5.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r rofi"]
+]
+depends: [
+  "deb-libc6" {>= "2.27"}
+  "deb-libcairo2" {>= "1.6.4-5~"}
+  "deb-libglib2-0-0" {>= "2.35.9"}
+  "deb-libpango-1-0-0" {>= "1.22.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.22.0"}
+  "deb-librsvg2-2" {>= "2.14.4"}
+  "deb-libstartup-notification0" {>= "0.11"}
+  "deb-libxcb-ewmh2" {>= "0.4.1"}
+  "deb-libxcb-icccm4" {>= "0.4.1"}
+  "deb-libxcb-randr0" {>= "1.12"}
+  "deb-libxcb-util0" {>= "0.3.8"}
+  "deb-libxcb-xinerama0"
+  "deb-libxcb-xkb1"
+  "deb-libxcb-xrm0" {>= "0.0.0"}
+  "deb-libxcb1"
+  "deb-libxkbcommon-x11-0" {>= "0.5.0"}
+  "deb-libxkbcommon0" {>= "0.7.0"}
+]
+extra-source "rofi_1.5.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rofi/rofi_1.5.1-1_amd64.deb"
+}

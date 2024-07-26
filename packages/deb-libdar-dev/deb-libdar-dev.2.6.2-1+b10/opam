@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdar-dev_2.6.2-1+b10_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdar-dev"]
+]
+depends: [
+  "deb-libattr1-dev"
+  "deb-libbz2-dev"
+  "deb-libdar64-6000" {= "2.6.2-1+b10"}
+  "deb-libgcrypt20-dev"
+  "deb-liblzo2-dev"
+  "deb-zlib1g-dev"
+]
+extra-source "libdar-dev_2.6.2-1+b10_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dar/libdar-dev_2.6.2-1+b10_amd64.deb"
+}

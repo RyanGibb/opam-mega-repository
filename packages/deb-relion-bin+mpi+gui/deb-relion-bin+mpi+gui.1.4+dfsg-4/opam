@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i relion-bin+mpi+gui_1.4+dfsg-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r relion-bin+mpi+gui"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libfftw3-double3" {>= "3.3.5"}
+  "deb-libfltk1-3"
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libopenmpi3"
+  "deb-librelion+mpi+gui-1-4-1"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libx11-6"
+  ("deb-openmpi-gcc" | "deb- openmpi-bin")
+]
+conflicts: [
+  "deb-relion-bin"
+  "deb-relion-bin+gui"
+  "deb-relion-bin+mpi"
+]
+extra-source "relion-bin+mpi+gui_1.4+dfsg-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/relion/relion-bin+mpi+gui_1.4+dfsg-4_amd64.deb"
+}

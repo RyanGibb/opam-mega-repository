@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libbind-dev_1:9.11.5.P4+dfsg-5.1+deb10u7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libbind-dev"]
+]
+depends: [
+  "deb-libbind9-161" {= "1-9.11.5.P4+dfsg-5.1+deb10u7"}
+  "deb-libdns1104" {= "1-9.11.5.P4+dfsg-5.1+deb10u7"}
+  "deb-libirs161" {= "1-9.11.5.P4+dfsg-5.1+deb10u7"}
+  "deb-libisc1100" {= "1-9.11.5.P4+dfsg-5.1+deb10u7"}
+  "deb-libisccc161" {= "1-9.11.5.P4+dfsg-5.1+deb10u7"}
+  "deb-libisccfg163" {= "1-9.11.5.P4+dfsg-5.1+deb10u7"}
+  "deb-liblwres161" {= "1-9.11.5.P4+dfsg-5.1+deb10u7"}
+]
+extra-source "libbind-dev_1:9.11.5.P4+dfsg-5.1+deb10u7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/bind9/libbind-dev_9.11.5.P4+dfsg-5.1+deb10u7_amd64.deb"
+}

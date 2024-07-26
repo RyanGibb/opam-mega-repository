@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add clang17-extra-tools-17.0.6-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del clang17-extra-tools"]
+]
+depends: [
+  "apk-clang17" {= "17.0.6-r1"}
+  "apk-clang17-libclang" {= "17.0.6-r1"}
+  "apk-clang17-libs" {= "17.0.6-r1"}
+  "apk-libgcc" {= "13.2.1_git20240309-r0"}
+  "apk-libstdc++" {= "13.2.1_git20240309-r0"}
+  "apk-libxml2" {= "2.12.7-r0"}
+  "apk-llvm17-libs" {= "17.0.6-r1"}
+  "apk-musl" {= "1.2.5-r0"}
+]
+extra-source "clang17-extra-tools-17.0.6-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/clang17-extra-tools-17.0.6-r1.apk"
+}

@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i license-reconcile_0.16_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r license-reconcile"]
+]
+depends: [
+  "deb-libclass-xsaccessor-perl"
+  "deb-libconfig-any-perl"
+  "deb-libdebian-copyright-perl" {>= "0.2"}
+  "deb-libdpkg-perl"
+  "deb-libemail-address-xs-perl"
+  "deb-libfile-fnmatch-perl"
+  "deb-libfile-mmagic-perl"
+  "deb-libfile-slurp-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-libparse-debianchangelog-perl"
+  "deb-libset-intspan-perl"
+  "deb-libsmart-comments-perl"
+  "deb-libtext-levenshteinxs-perl"
+  "deb-libuniversal-require-perl"
+  "deb-licensecheck"
+  "deb-perl"
+  ("deb-libreadonly-perl" {>= "1.500"} | "deb- libreadonly-xs-perl")
+  ("deb-libreadonly-perl" {>= "1.600"} | "deb- libreadonly-perl" {< "1.500"})
+]
+extra-source "license-reconcile_0.16_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/license-reconcile/license-reconcile_0.16_all.deb"
+}

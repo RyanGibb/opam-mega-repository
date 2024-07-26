@@ -1,0 +1,45 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pigx-rnaseq_0.1.0-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pigx-rnaseq"]
+]
+depends: [
+  "deb-fastp"
+  "deb-fastqc"
+  "deb-libjs-jquery-datatables"
+  "deb-libjs-jquery-tablesorter"
+  "deb-megadepth"
+  "deb-multiqc"
+  "deb-python3-any"
+  "deb-python3-deeptools"
+  "deb-python3-htseq"
+  "deb-r-bioc-deseq2"
+  "deb-r-bioc-rtracklayer"
+  "deb-r-bioc-summarizedexperiment"
+  "deb-r-bioc-tximport"
+  "deb-r-cran-corrplot"
+  "deb-r-cran-crosstalk"
+  "deb-r-cran-data-table"
+  "deb-r-cran-dt" {>= "0.15+dfsg-2"}
+  "deb-r-cran-ggplot2"
+  "deb-r-cran-ggpubr"
+  "deb-r-cran-ggrepel"
+  "deb-r-cran-gprofiler2"
+  "deb-r-cran-pheatmap"
+  "deb-r-cran-plotly"
+  "deb-r-cran-reshape2"
+  "deb-r-cran-rjson"
+  "deb-r-cran-rlang"
+  "deb-r-cran-rmarkdown"
+  "deb-r-cran-scales"
+  "deb-salmon"
+  "deb-samtools"
+  "deb-snakemake"
+  "deb-trim-galore"
+  ("deb-hisat2" | "deb- rna-star")
+]
+extra-source "pigx-rnaseq_0.1.0-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pigx-rnaseq/pigx-rnaseq_0.1.0-1.1_all.deb"
+}

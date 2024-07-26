@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i rpmlint_2.4.0+ds1-0.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r rpmlint"]
+]
+depends: [
+  "deb-binutils"
+  "deb-bzip2"
+  "deb-cpio"
+  "deb-desktop-file-utils"
+  "deb-python3-any"
+  "deb-python3-enchant"
+  "deb-python3-magic"
+  "deb-python3-pybeam"
+  "deb-python3-rpm"
+  "deb-python3-tomli-w"
+  "deb-python3-xdg"
+  "deb-python3-zstandard"
+  "deb-rpm2cpio"
+  "deb-zstd"
+  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
+  ("deb-python3-tomli" | "deb- python3" {> "3.11"})
+]
+extra-source "rpmlint_2.4.0+ds1-0.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rpmlint/rpmlint_2.4.0+ds1-0.2_all.deb"
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pypy-pytest_3.10.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pypy-pytest"]
+]
+depends: [
+  "deb-pypy"
+  "deb-pypy-atomicwrites"
+  "deb-pypy-attr" {>= "17.4.0"}
+  "deb-pypy-funcsigs"
+  "deb-pypy-more-itertools" {>= "4.0.0"}
+  "deb-pypy-pathlib2" {>= "2.2.1"}
+  "deb-pypy-pkg-resources"
+  "deb-pypy-pluggy" {>= "0.7"}
+  "deb-pypy-py" {>= "1.5.0"}
+  "deb-pypy-setuptools"
+  "deb-pypy-six"
+]
+extra-source "pypy-pytest_3.10.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pytest/pypy-pytest_3.10.1-2_all.deb"
+}

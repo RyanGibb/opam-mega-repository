@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i bdii_5.2.26-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r bdii"]
+]
+depends: [
+  "deb-glue-schema" {>= "2.0.10"}
+  "deb-init-system-helpers" {>= "1.51"}
+  "deb-ldap-utils"
+  "deb-python3-any"
+  "deb-slapd"
+  "deb-ucf"
+  "deb-whois"
+]
+extra-source "bdii_5.2.26-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/bdii/bdii_5.2.26-1_all.deb"
+}

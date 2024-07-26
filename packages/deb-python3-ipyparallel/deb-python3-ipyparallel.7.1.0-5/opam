@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-ipyparallel_7.1.0-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-ipyparallel"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-dateutil"
+  "deb-python3-decorator"
+  "deb-python3-entrypoints"
+  "deb-python3-ipykernel"
+  "deb-python3-ipython"
+  "deb-python3-jupyter-client"
+  "deb-python3-psutil"
+  "deb-python3-tornado"
+  "deb-python3-tqdm"
+  "deb-python3-traitlets"
+  "deb-python3-zmq"
+]
+extra-source "python3-ipyparallel_7.1.0-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/ipyparallel/python3-ipyparallel_7.1.0-5_all.deb"
+}

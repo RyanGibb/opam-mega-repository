@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-lintr_3.0.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-lintr"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.1-3"}
+  "deb-r-cran-backports"
+  "deb-r-cran-codetools"
+  "deb-r-cran-crayon"
+  "deb-r-cran-cyclocomp"
+  "deb-r-cran-digest"
+  "deb-r-cran-glue"
+  "deb-r-cran-jsonlite"
+  "deb-r-cran-knitr"
+  "deb-r-cran-rex"
+  "deb-r-cran-xml2" {>= "1.0.0"}
+  "deb-r-cran-xmlparsedata" {>= "1.0.5"}
+]
+extra-source "r-cran-lintr_3.0.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-lintr/r-cran-lintr_3.0.2-1_all.deb"
+}

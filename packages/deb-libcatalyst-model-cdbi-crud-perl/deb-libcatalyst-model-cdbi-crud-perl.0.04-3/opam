@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcatalyst-model-cdbi-crud-perl_0.04-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcatalyst-model-cdbi-crud-perl"]
+]
+depends: [
+  "deb-libcatalyst-model-cdbi-perl"
+  "deb-libcatalyst-perl" {>= "2.99"}
+  "deb-libcatalyst-view-tt-perl"
+  "deb-libclass-dbi-asform-perl"
+  "deb-libclass-dbi-fromform-perl"
+  "deb-libclass-dbi-loader-perl"
+  "deb-libclass-dbi-perl"
+  "deb-libclass-dbi-plugin-retrieveall-perl"
+  "deb-libtemplate-plugin-class-perl"
+  "deb-perl"
+]
+extra-source "libcatalyst-model-cdbi-crud-perl_0.04-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libcatalyst-model-cdbi-crud-perl/libcatalyst-model-cdbi-crud-perl_0.04-3_all.deb"
+}

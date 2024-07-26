@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libretls-3.3.4-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libretls"]
+]
+depends: [
+  "apk-ca-certificates-bundle" {= "20230506-r0"}
+  "apk-libcrypto1-1" {= "1.1.1w-r1"}
+  "apk-libssl1-1" {= "1.1.1w-r1"}
+  "apk-musl" {= "1.2.2-r9"}
+]
+extra-source "libretls-3.3.4-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libretls-3.3.4-r3.apk"
+}

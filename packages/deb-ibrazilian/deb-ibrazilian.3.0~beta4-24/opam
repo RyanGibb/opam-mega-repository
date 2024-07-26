@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ibrazilian_3.0~beta4-24_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ibrazilian"]
+]
+depends: [
+  "deb-dictionaries-common" {>= "1.23~"}
+  "deb-ispell"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "ibrazilian_3.0~beta4-24_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/br.ispell/ibrazilian_3.0~beta4-24_all.deb"
+}

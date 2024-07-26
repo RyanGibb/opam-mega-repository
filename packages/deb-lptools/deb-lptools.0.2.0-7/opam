@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lptools_0.2.0-7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lptools"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-breezy"
+  "deb-python3-launchpadlib"
+  "deb-python3-xdg"
+  "deb-sensible-utils"
+  ("deb-python3" | "deb- ipython3")
+]
+extra-source "lptools_0.2.0-7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lptools/lptools_0.2.0-7_all.deb"
+}

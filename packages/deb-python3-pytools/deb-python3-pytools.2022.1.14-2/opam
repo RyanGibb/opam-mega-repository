@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-pytools_2022.1.14-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-pytools"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-appdirs" {>= "1.4.0"}
+  "deb-python3-decorator" {>= "3.2.0"}
+  "deb-python3-numpy"
+  "deb-python3-platformdirs"
+  "deb-python3-six"
+  "deb-python3-typing-extensions"
+]
+extra-source "python3-pytools_2022.1.14-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pytools/python3-pytools_2022.1.14-2_all.deb"
+}

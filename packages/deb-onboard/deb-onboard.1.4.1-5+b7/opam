@@ -1,0 +1,41 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i onboard_1.4.1-5+b7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r onboard"]
+]
+depends: [
+  "deb-gir1-2-gdkpixbuf-2-0"
+  "deb-gir1-2-glib-2-0"
+  "deb-gir1-2-gtk-3-0"
+  "deb-gir1-2-pango-1-0" {>= "1.29.3"}
+  "deb-iso-codes"
+  "deb-libc6" {>= "2.29"}
+  "deb-libcairo2" {>= "1.10.0"}
+  "deb-libcanberra0" {>= "0.2"}
+  "deb-libdconf1" {>= "0.14.0"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.31.8"}
+  "deb-libgtk-3-0" {>= "3.9.10"}
+  "deb-libhunspell-1-7-0"
+  "deb-librsvg2-common"
+  "deb-libstdc++6" {>= "11"}
+  "deb-libudev1" {>= "183"}
+  "deb-libx11-6"
+  "deb-libxi6" {>= "2-1.2.99.4"}
+  "deb-libxkbfile1" {>= "1-1.1.0"}
+  "deb-libxtst6"
+  "deb-onboard-common" {< "1.4.1-5.1"}
+  "deb-onboard-common" {>= "1.4.1-5"}
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-any"
+  "deb-python3-cairo"
+  "deb-python3-dbus"
+  "deb-python3-gi-cairo"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "onboard_1.4.1-5+b7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/onboard/onboard_1.4.1-5+b7_amd64.deb"
+}

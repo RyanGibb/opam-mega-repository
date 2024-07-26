@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-fog-libvirt_0.11.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-fog-libvirt"]
+]
+depends: [
+  "deb-ruby"
+  "deb-ruby-fog-core" {>= "1.27.4"}
+  "deb-ruby-fog-json"
+  "deb-ruby-fog-xml" {>= "0.1.1"}
+  "deb-ruby-json"
+  "deb-ruby-libvirt" {>= "0.7.0"}
+]
+extra-source "ruby-fog-libvirt_0.11.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-fog-libvirt/ruby-fog-libvirt_0.11.0-1_all.deb"
+}

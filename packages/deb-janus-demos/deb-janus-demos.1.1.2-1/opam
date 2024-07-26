@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i janus-demos_1.1.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r janus-demos"]
+]
+depends: [
+  "deb-fonts-font-awesome"
+  "deb-libjs-bootbox"
+  "deb-libjs-bootstrap"
+  "deb-libjs-bootswatch"
+  "deb-libjs-janus-gateway"
+  "deb-libjs-jquery"
+  "deb-libjs-jquery-blockui"
+  "deb-libjs-spin-js"
+  "deb-libjs-toastr"
+  "deb-libjs-webrtc-adapter" {>= "8"}
+  "deb-node-blueimp-md5"
+]
+extra-source "janus-demos_1.1.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/j/janus/janus-demos_1.1.2-1_all.deb"
+}

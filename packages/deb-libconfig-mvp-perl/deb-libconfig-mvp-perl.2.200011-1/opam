@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libconfig-mvp-perl_2.200011-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libconfig-mvp-perl"]
+]
+depends: [
+  "deb-libclass-load-perl"
+  "deb-libmoose-perl"
+  "deb-libmoosex-oneargnew-perl"
+  "deb-libparams-util-perl"
+  "deb-librole-hasmessage-perl"
+  "deb-librole-identifiable-perl"
+  "deb-libthrowable-perl"
+  "deb-libtie-ixhash-perl"
+  "deb-libtry-tiny-perl"
+  "deb-perl"
+  ("deb-libmodule-pluggable-perl" | "deb- perl" {< "5.17.9"})
+]
+extra-source "libconfig-mvp-perl_2.200011-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libconfig-mvp-perl/libconfig-mvp-perl_2.200011-1_all.deb"
+}

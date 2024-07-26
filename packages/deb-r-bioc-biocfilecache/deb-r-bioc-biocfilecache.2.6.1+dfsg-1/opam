@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-bioc-biocfilecache_2.6.1+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-bioc-biocfilecache"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.2.20221110-2"}
+  "deb-r-bioc-biocgenerics"
+  "deb-r-cran-curl"
+  "deb-r-cran-dbi"
+  "deb-r-cran-dbplyr" {>= "1.0.0"}
+  "deb-r-cran-dplyr"
+  "deb-r-cran-filelock"
+  "deb-r-cran-httr"
+  "deb-r-cran-rappdirs"
+  "deb-r-cran-rsqlite"
+]
+extra-source "r-bioc-biocfilecache_2.6.1+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-bioc-biocfilecache/r-bioc-biocfilecache_2.6.1+dfsg-1_all.deb"
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-gomega-dev_1.10.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-gomega-dev"]
+]
+depends: [
+  "deb-golang-golang-x-net-dev"
+  "deb-golang-golang-x-xerrors-dev"
+  "deb-golang-gopkg-yaml-v2-dev"
+  "deb-golang-goprotobuf-dev"
+]
+extra-source "golang-gomega-dev_1.10.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-gomega/golang-gomega-dev_1.10.3-1_all.deb"
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i opencolorio-tools_2.1.2+dfsg1-4+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r opencolorio-tools"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglew2-2" {>= "2.2.0-4+b1"}
+  "deb-libglut3-12" {>= "3.4.0"}
+  "deb-libglx0"
+  "deb-liblcms2-2" {>= "2.2+git20110628"}
+  "deb-libopencolorio2-1" {>= "2.1.2+dfsg1"}
+  "deb-libopengl0"
+  "deb-libopenimageio2-4" {>= "2.4.7.1+dfsg"}
+  "deb-libstdc++6" {>= "11"}
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+extra-source "opencolorio-tools_2.1.2+dfsg1-4+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/opencolorio/opencolorio-tools_2.1.2+dfsg1-4+b3_amd64.deb"
+}

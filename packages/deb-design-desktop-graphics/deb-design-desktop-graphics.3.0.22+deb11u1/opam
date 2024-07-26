@@ -1,0 +1,48 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i design-desktop-graphics_3.0.22+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r design-desktop-graphics"]
+]
+depends: [
+  "deb-bookletimposer"
+  "deb-cairosvg"
+  "deb-design-desktop"
+  "deb-diffpdf"
+  "deb-drawing"
+  "deb-font-manager"
+  "deb-fontcustom"
+  "deb-fontmake"
+  "deb-gcolor3"
+  "deb-gimp"
+  "deb-gimp-gmic"
+  "deb-gimp-lensfun"
+  "deb-gpick"
+  "deb-gtk-vector-screenshot"
+  "deb-gucharmap"
+  "deb-inkscape"
+  "deb-jpeginfo"
+  "deb-jpegoptim"
+  "deb-lcdf-typetools"
+  "deb-libpdf-reuse-perl"
+  "deb-libpodofo-utils"
+  "deb-librsvg2-bin"
+  "deb-libtiff-tools"
+  "deb-mypaint"
+  "deb-mypaint-data-extras"
+  "deb-optipng"
+  "deb-pdfarranger"
+  "deb-pdfposter"
+  "deb-poppler-utils"
+  "deb-qpdf"
+  "deb-sassc"
+  "deb-scour"
+  "deb-scribus"
+  "deb-scrot"
+  "deb-shotwell"
+  "deb-ufo2otf"
+]
+extra-source "design-desktop-graphics_3.0.22+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/debian-design/design-desktop-graphics_3.0.22+deb11u1_all.deb"
+}

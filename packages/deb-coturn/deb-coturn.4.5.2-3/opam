@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i coturn_4.5.2-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r coturn"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libc6" {>= "2.28"}
+  "deb-libevent-core-2-1-7" {>= "2.1.8-stable"}
+  "deb-libevent-extra-2-1-7" {>= "2.1.8-stable"}
+  "deb-libevent-openssl-2-1-7" {>= "2.1.8-stable"}
+  "deb-libevent-pthreads-2-1-7" {>= "2.1.8-stable"}
+  "deb-libhiredis0-14" {>= "0.14.0"}
+  "deb-libmariadb3" {>= "3.0.0"}
+  "deb-libpq5" {>= "8.4~"}
+  "deb-libsqlite3-0" {>= "3.6.0"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libsystemd0"
+  "deb-lsb-base" {>= "3.0-6"}
+  "deb-sqlite3"
+  ("deb-telnet" | "deb- telnet-client")
+]
+conflicts: [
+  "deb-rfc5766-turn-server"
+  "deb-turnserver"
+]
+extra-source "coturn_4.5.2-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/coturn/coturn_4.5.2-3_amd64.deb"
+}

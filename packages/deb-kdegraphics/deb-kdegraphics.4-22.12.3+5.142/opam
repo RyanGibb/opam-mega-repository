@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kdegraphics_4:22.12.3+5.142_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kdegraphics"]
+]
+depends: [
+  "deb-gwenview" {>= "4-22.12.3"}
+  "deb-kamera" {>= "4-22.12.3"}
+  "deb-kcolorchooser" {>= "4-22.12.3"}
+  "deb-kde-spectacle" {>= "22.12.3"}
+  "deb-kgamma5" {>= "5.27.2"}
+  "deb-kolourpaint" {>= "4-22.12.3"}
+  "deb-kruler" {>= "4-22.12.3"}
+  "deb-okular" {>= "4-22.12.3"}
+]
+extra-source "kdegraphics_4:22.12.3+5.142_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/meta-kde/kdegraphics_22.12.3+5.142_amd64.deb"
+}

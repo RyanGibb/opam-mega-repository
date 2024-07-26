@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-http-download-prof_0.2.0.0-3+b4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-http-download-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-base64-bytestring-prof"
+  "deb-libghc-conduit-extra-prof"
+  "deb-libghc-conduit-prof"
+  "deb-libghc-cryptonite-conduit-prof"
+  "deb-libghc-cryptonite-prof"
+  "deb-libghc-http-client-prof"
+  "deb-libghc-http-conduit-prof"
+  "deb-libghc-http-download-dev" {= "0.2.0.0-3+b4"}
+  "deb-libghc-http-types-prof"
+  "deb-libghc-memory-prof"
+  "deb-libghc-path-io-prof"
+  "deb-libghc-path-prof"
+  "deb-libghc-retry-prof"
+  "deb-libghc-rio-prettyprint-prof"
+  "deb-libghc-rio-prof"
+]
+extra-source "libghc-http-download-prof_0.2.0.0-3+b4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-http-download/libghc-http-download-prof_0.2.0.0-3+b4_amd64.deb"
+}

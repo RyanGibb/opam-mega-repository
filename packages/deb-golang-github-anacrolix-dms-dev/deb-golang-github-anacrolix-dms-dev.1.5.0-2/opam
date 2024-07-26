@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-anacrolix-dms-dev_1.5.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-anacrolix-dms-dev"]
+]
+depends: [
+  "deb-golang-github-anacrolix-ffprobe-dev"
+  "deb-golang-github-anacrolix-log-dev"
+  "deb-golang-github-nfnt-resize-dev"
+  "deb-golang-golang-x-net-dev"
+]
+extra-source "golang-github-anacrolix-dms-dev_1.5.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-anacrolix-dms/golang-github-anacrolix-dms-dev_1.5.0-2_all.deb"
+}

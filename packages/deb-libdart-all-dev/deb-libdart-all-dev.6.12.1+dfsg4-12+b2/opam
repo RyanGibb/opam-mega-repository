@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdart-all-dev_6.12.1+dfsg4-12+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdart-all-dev"]
+]
+depends: [
+  "deb-libdart-collision-bullet-dev"
+  "deb-libdart-collision-ode-dev"
+  "deb-libdart-dev"
+  "deb-libdart-gui-dev"
+  "deb-libdart-gui-osg-dev"
+  "deb-libdart-optimizer-ipopt-dev"
+  "deb-libdart-optimizer-nlopt-dev"
+  "deb-libdart-utils-dev"
+  "deb-libdart-utils-urdf-dev"
+  "deb-python3-dartpy"
+]
+extra-source "libdart-all-dev_6.12.1+dfsg4-12+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dart/libdart-all-dev_6.12.1+dfsg4-12+b2_amd64.deb"
+}

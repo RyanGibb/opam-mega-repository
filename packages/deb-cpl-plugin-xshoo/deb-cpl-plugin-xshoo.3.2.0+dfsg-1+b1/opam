@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cpl-plugin-xshoo_3.2.0+dfsg-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cpl-plugin-xshoo"]
+]
+depends: [
+  "deb-libc6" {>= "2.23"}
+  "deb-libcext0" {>= "5.3.1"}
+  "deb-libcfitsio7" {>= "3.450~"}
+  "deb-libcplcore26" {>= "6.4"}
+  "deb-libcpldfs26" {>= "6.0"}
+  "deb-libcpldrs26" {>= "6.4"}
+  "deb-libcplui26" {>= "6.4"}
+  "deb-libgomp1" {>= "4.9"}
+  "deb-libgsl23" {>= "2.5"}
+  "deb-libgslcblas0" {>= "2.4"}
+]
+extra-source "cpl-plugin-xshoo_3.2.0+dfsg-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cpl-plugin-xshoo/cpl-plugin-xshoo_3.2.0+dfsg-1+b1_amd64.deb"
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libtomcatjss-java_7.6.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libtomcatjss-java"]
+]
+depends: [
+  "deb-libcommons-lang3-java"
+  "deb-libjss-java" {>= "4.8.0~"}
+  "deb-libslf4j-java"
+  "deb-libtomcat9-java"
+]
+conflicts: [
+  "deb-libtcnative-1"
+]
+extra-source "libtomcatjss-java_7.6.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tomcatjss/libtomcatjss-java_7.6.1-1_all.deb"
+}

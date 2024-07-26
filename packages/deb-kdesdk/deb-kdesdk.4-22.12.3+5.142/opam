@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kdesdk_4:22.12.3+5.142_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kdesdk"]
+]
+depends: [
+  "deb-cervisia" {>= "4-22.12.3"}
+  "deb-dolphin-plugins" {>= "4-22.12.3"}
+  "deb-kapptemplate" {>= "4-22.12.3"}
+  "deb-kate" {>= "4-22.12.3"}
+  "deb-kcachegrind" {>= "4-22.12.3"}
+  "deb-kdesdk-scripts" {>= "4-22.12.3"}
+  "deb-kdesdk-thumbnailers" {>= "4-22.12.3"}
+  "deb-kio-perldoc" {>= "4-22.12.3"}
+  "deb-kompare" {>= "4-22.12.3"}
+  "deb-kpartloader" {>= "4-22.12.3"}
+  "deb-kuiviewer" {>= "4-22.12.3"}
+  "deb-lokalize" {>= "4-22.12.3"}
+  "deb-okteta" {>= "4-22.12.3"}
+  "deb-poxml" {>= "4-22.12.3"}
+  "deb-umbrello" {>= "4-22.12.3"}
+]
+extra-source "kdesdk_4:22.12.3+5.142_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/meta-kde/kdesdk_22.12.3+5.142_amd64.deb"
+}

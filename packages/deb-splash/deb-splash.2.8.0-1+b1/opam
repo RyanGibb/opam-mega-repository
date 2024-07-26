@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i splash_2.8.0-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r splash"]
+]
+depends: [
+  "deb-libc6" {>= "2.27"}
+  "deb-libgcc1" {>= "1-4.0"}
+  "deb-libgfortran5" {>= "8"}
+  "deb-libgiza0"
+  "deb-libgomp1" {>= "4.9"}
+  "deb-libquadmath0" {>= "4.6"}
+]
+extra-source "splash_2.8.0-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/splash/splash_2.8.0-1+b1_amd64.deb"
+}

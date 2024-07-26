@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i compiz-dev_2:0.8.16.1-10_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r compiz-dev"]
+]
+depends: [
+  "deb-compiz-core" {= "2-0.8.16.1-10"}
+  "deb-libice-dev" {>= "1-1.0.1"}
+  "deb-libjpeg62-turbo-dev"
+  "deb-libpng-dev"
+  "deb-libsm-dev" {>= "1-1.0.1"}
+  "deb-libstartup-notification0-dev" {>= "0.7"}
+  "deb-libxcomposite-dev" {>= "1-0.3-2"}
+  "deb-libxcursor-dev"
+  "deb-libxdamage-dev" {>= "1-1.0.3"}
+  "deb-libxfixes-dev" {>= "1-4.0.1"}
+  "deb-libxi-dev"
+  "deb-libxinerama-dev"
+  "deb-libxml2-dev"
+  "deb-libxrandr-dev" {>= "2-1.1.0.2"}
+  "deb-libxslt1-dev"
+  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
+]
+extra-source "compiz-dev_2:0.8.16.1-10_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/compiz/compiz-dev_0.8.16.1-10_amd64.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i adabrowse_4.0.3-10_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r adabrowse"]
+]
+depends: [
+  "deb-gnat"
+  "deb-libasis2018"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgnat-8" {>= "8.2.0-9"}
+  "deb-libgnatvsn8" {>= "8.2.0-9"}
+]
+extra-source "adabrowse_4.0.3-10_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/adabrowse/adabrowse_4.0.3-10_amd64.deb"
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libosmesa6_22.3.6-1+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libosmesa6"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.4"}
+  "deb-libglapi-mesa" {= "22.3.6-1+deb12u1"}
+  "deb-libllvm15"
+  "deb-libstdc++6" {>= "11"}
+  "deb-libzstd1" {>= "1.5.2"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libosmesa6_22.3.6-1+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mesa/libosmesa6_22.3.6-1+deb12u1_amd64.deb"
+}

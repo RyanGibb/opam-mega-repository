@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i liboscar4-java_5.2.0+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r liboscar4-java"]
+]
+depends: [
+  "deb-libautomaton-java"
+  "deb-libcommons-io-java" {>= "2.11.0"}
+  "deb-libcommons-lang-java" {>= "2.6"}
+  "deb-libcommons-math-java" {>= "2.2"}
+  "deb-libguava-java"
+  "deb-libicu4j-java"
+  "deb-libjaxen-java" {>= "1.1.6"}
+  "deb-libjregex-java"
+  "deb-liblog4j2-java" {>= "2.17.2"}
+  "deb-libopennlp-maxent-java" {>= "3.0.0"}
+  "deb-libopsin-java" {>= "2.7.0"}
+  "deb-libslf4j-java" {>= "1.7.32"}
+  "deb-libxom-java"
+]
+extra-source "liboscar4-java_5.2.0+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/oscar4/liboscar4-java_5.2.0+dfsg-2_all.deb"
+}

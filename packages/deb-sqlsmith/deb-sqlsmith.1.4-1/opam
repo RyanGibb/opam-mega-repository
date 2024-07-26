@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sqlsmith_1.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sqlsmith"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libpq5"
+  "deb-libpqxx-6-4" {>= "6.4"}
+  "deb-libsqlite3-0" {>= "3.6.18"}
+  "deb-libstdc++6" {>= "11"}
+]
+extra-source "sqlsmith_1.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sqlsmith/sqlsmith_1.4-1_amd64.deb"
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-keys-prof_3.12.3-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-keys-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-comonad-prof"
+  "deb-libghc-free-prof"
+  "deb-libghc-hashable-prof"
+  "deb-libghc-keys-dev" {= "3.12.3-1+b1"}
+  "deb-libghc-semigroupoids-prof"
+  "deb-libghc-semigroups-prof"
+  "deb-libghc-tagged-prof"
+  "deb-libghc-transformers-compat-prof"
+  "deb-libghc-unordered-containers-prof"
+]
+extra-source "libghc-keys-prof_3.12.3-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-keys/libghc-keys-prof_3.12.3-1+b1_amd64.deb"
+}

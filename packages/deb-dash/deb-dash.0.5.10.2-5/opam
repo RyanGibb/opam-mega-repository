@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dash_0.5.10.2-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dash"]
+]
+depends: [
+  "deb-debianutils" {>= "2.15"}
+  "deb-dpkg" {>= "1.19.1"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "dash_0.5.10.2-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dash/dash_0.5.10.2-5_amd64.deb"
+}

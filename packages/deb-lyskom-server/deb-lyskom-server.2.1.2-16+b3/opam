@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lyskom-server_2.1.2-16+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lyskom-server"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libadns1" {>= "1.5.0~"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcrypt1" {>= "1-4.1.0"}
+  "deb-liboop4" {>= "1.0.1~"}
+  "deb-sysvinit-utils"
+  ("deb-cron" | "deb- cron-daemon")
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-rsyslog" | "deb- system-log-daemon")
+]
+extra-source "lyskom-server_2.1.2-16+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lyskom-server/lyskom-server_2.1.2-16+b3_amd64.deb"
+}

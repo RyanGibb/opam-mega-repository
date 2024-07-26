@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libglvnd-dev_1.1.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libglvnd-dev"]
+]
+depends: [
+  "deb-libegl1" {= "1.1.0-1"}
+  "deb-libgl1" {= "1.1.0-1"}
+  "deb-libgles1" {= "1.1.0-1"}
+  "deb-libgles2" {= "1.1.0-1"}
+  "deb-libglvnd-core-dev" {= "1.1.0-1"}
+  "deb-libglvnd0" {= "1.1.0-1"}
+  "deb-libglx0" {= "1.1.0-1"}
+  "deb-libopengl0" {= "1.1.0-1"}
+]
+extra-source "libglvnd-dev_1.1.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libg/libglvnd/libglvnd-dev_1.1.0-1_amd64.deb"
+}

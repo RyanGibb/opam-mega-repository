@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libimlib2_1.5.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libimlib2"]
+]
+depends: [
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.14"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgif7" {>= "5.1"}
+  "deb-libid3tag0" {>= "0.15.1b"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libtiff5" {>= "4.0.3"}
+  "deb-libx11-6"
+  "deb-libx11-xcb1"
+  "deb-libxcb-shm0" {>= "1.10"}
+  "deb-libxcb1"
+  "deb-libxext6"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libimlib2_1.5.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/imlib2/libimlib2_1.5.1-1_amd64.deb"
+}

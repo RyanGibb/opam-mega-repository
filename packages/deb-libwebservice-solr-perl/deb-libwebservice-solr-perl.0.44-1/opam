@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libwebservice-solr-perl_0.44-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libwebservice-solr-perl"]
+]
+depends: [
+  "deb-libdata-page-perl"
+  "deb-libdata-pageset-perl"
+  "deb-libjson-xs-perl"
+  "deb-libmoo-perl"
+  "deb-libtype-tiny-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-libxml-easy-perl"
+  "deb-perl-any"
+]
+extra-source "libwebservice-solr-perl_0.44-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libw/libwebservice-solr-perl/libwebservice-solr-perl_0.44-1_all.deb"
+}

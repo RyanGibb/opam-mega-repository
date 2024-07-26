@@ -1,0 +1,42 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i jabref_3.8.2+ds-17_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r jabref"]
+]
+depends: [
+  "deb-default-jre"
+  "deb-java-wrappers"
+  "deb-libandroid-json-java"
+  "deb-libantlr3-runtime-java"
+  "deb-libantlr4-runtime-java"
+  "deb-libbcprov-java"
+  "deb-libcommons-cli-java"
+  "deb-libcommons-lang3-java"
+  "deb-libcommons-logging-java"
+  "deb-libglazedlists-java"
+  "deb-libguava-java"
+  "deb-libhttpasyncclient-java"
+  "deb-libhttpclient-java"
+  "deb-libhttpmime-java"
+  "deb-libjava-string-similarity-java"
+  "deb-libjaxb-java"
+  "deb-libjempbox-java"
+  "deb-libjgoodies-common-java"
+  "deb-libjgoodies-forms-java"
+  "deb-libjgoodies-looks-java"
+  "deb-libjhlabs-filters-java"
+  "deb-libjsoup-java" {>= "1.14.2"}
+  "deb-liblibreoffice-java"
+  "deb-liblog4j2-java"
+  "deb-libmicroba-java"
+  "deb-libpdfbox-java" {< "1-2"}
+  "deb-libspin-java"
+  "deb-libswing-layout-java"
+  "deb-libswingx-java" {< "1-1.6.4"}
+  "deb-libunirest-java-java"
+]
+extra-source "jabref_3.8.2+ds-17_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/j/jabref/jabref_3.8.2+ds-17_all.deb"
+}

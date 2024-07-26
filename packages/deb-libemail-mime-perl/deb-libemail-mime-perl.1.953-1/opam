@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libemail-mime-perl_1.953-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libemail-mime-perl"]
+]
+depends: [
+  "deb-libemail-address-xs-perl"
+  "deb-libemail-messageid-perl"
+  "deb-libemail-mime-contenttype-perl" {>= "1.023"}
+  "deb-libemail-mime-encodings-perl"
+  "deb-libemail-simple-perl"
+  "deb-libmime-types-perl"
+  "deb-libmodule-runtime-perl"
+  "deb-perl-any"
+]
+extra-source "libemail-mime-perl_1.953-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libe/libemail-mime-perl/libemail-mime-perl_1.953-1_all.deb"
+}

@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kdebugsettings_20.12.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kdebugsettings"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libkf5completion5" {>= "5.70.0~"}
+  "deb-libkf5configcore5" {>= "5.70.0~"}
+  "deb-libkf5coreaddons5" {>= "5.70.0~"}
+  "deb-libkf5dbusaddons5" {>= "5.70.0~"}
+  "deb-libkf5i18n5" {>= "5.70.0~"}
+  "deb-libkf5itemviews5" {>= "5.70.0~"}
+  "deb-libkf5widgetsaddons5" {>= "5.70.0~"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5widgets5" {>= "5.13.0~"}
+  "deb-libstdc++6" {>= "4.4.0"}
+  ("deb-libqt5gui5" {>= "5.13.0~"} | "deb- libqt5gui5-gles" {>= "5.13.0~"})
+]
+extra-source "kdebugsettings_20.12.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kdebugsettings/kdebugsettings_20.12.0-1_amd64.deb"
+}

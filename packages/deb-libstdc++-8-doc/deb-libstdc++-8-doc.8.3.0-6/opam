@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libstdc++-8-doc_8.3.0-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libstdc++-8-doc"]
+]
+depends: [
+  "deb-gcc-8-base" {>= "8"}
+]
+conflicts: [
+  "deb-libstdc++-4-8-doc"
+  "deb-libstdc++-4-9-doc"
+  "deb-libstdc++-5-doc"
+  "deb-libstdc++-6-doc"
+  "deb-libstdc++-7-doc"
+  "deb-libstdc++5-3-3-doc"
+  "deb-libstdc++5-doc"
+  "deb-libstdc++6-4-0-doc"
+  "deb-libstdc++6-4-1-doc"
+  "deb-libstdc++6-4-2-doc"
+  "deb-libstdc++6-4-3-doc"
+  "deb-libstdc++6-4-4-doc"
+  "deb-libstdc++6-4-5-doc"
+  "deb-libstdc++6-4-6-doc"
+  "deb-libstdc++6-4-7-doc"
+  "deb-libstdc++6-doc"
+]
+extra-source "libstdc++-8-doc_8.3.0-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gcc-8/libstdc++-8-doc_8.3.0-6_all.deb"
+}

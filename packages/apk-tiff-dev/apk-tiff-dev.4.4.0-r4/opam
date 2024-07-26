@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add tiff-dev-4.4.0-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del tiff-dev"]
+]
+depends: [
+  "apk-libjpeg-turbo-dev" {= "2.1.4-r0"}
+  "apk-libtiffxx" {= "4.4.0-r4"}
+  "apk-libwebp-dev" {= "1.2.4-r3"}
+  "apk-pkgconf" {= "1.9.4-r0"}
+  "apk-tiff" {= "4.4.0-r4"}
+  "apk-xz-dev" {= "5.2.9-r0"}
+  "apk-zlib-dev" {= "1.2.13-r0"}
+  "apk-zstd-dev" {= "1.5.5-r0"}
+]
+extra-source "tiff-dev-4.4.0-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/tiff-dev-4.4.0-r4.apk"
+}

@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i nurpawiki_1.2.4-2+b10_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r nurpawiki"]
+]
+depends: [
+  "deb-libangstrom-ocaml"
+  "deb-libcalendar-ocaml"
+  "deb-libcohttp-lwt-ocaml"
+  "deb-libcohttp-ocaml"
+  "deb-libdomain-name-ocaml"
+  "deb-libeliom-ocaml-dev"
+  "deb-libextlib-ocaml"
+  "deb-libipaddr-ocaml"
+  "deb-libjs-of-ocaml"
+  "deb-liblwt-log-ocaml"
+  "deb-liblwt-ocaml"
+  "deb-libocamlnet-ocaml"
+  "deb-libocsigenserver-ocaml"
+  "deb-libocsipersist-lib-ocaml"
+  "deb-libocsipersist-ocaml"
+  "deb-libpcre-ocaml"
+  "deb-libpostgresql-ocaml"
+  "deb-libreact-ocaml"
+  "deb-libsexplib0-ocaml"
+  "deb-libtyxml-ocaml"
+  "deb-liburi-ocaml"
+  "deb-libxml-light-ocaml"
+  "deb-ocaml-base"
+  "deb-ocsigenserver"
+]
+extra-source "nurpawiki_1.2.4-2+b10_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/nurpawiki/nurpawiki_1.2.4-2+b10_amd64.deb"
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i goo_0.155+ds-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r goo"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgc1" {>= "1-7.2d"}
+  "deb-libgmp10"
+]
+extra-source "goo_0.155+ds-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/goo/goo_0.155+ds-4_amd64.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i srslte-core_18.06.1-8+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r srslte-core"]
+]
+depends: [
+  "deb-libbladerf1"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-4.0"}
+  "deb-libsoapysdr0-6"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libuhd3-13-1"
+]
+extra-source "srslte-core_18.06.1-8+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/srslte/srslte-core_18.06.1-8+b1_amd64.deb"
+}

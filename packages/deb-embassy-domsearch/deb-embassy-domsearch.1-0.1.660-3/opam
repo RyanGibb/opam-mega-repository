@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i embassy-domsearch_1:0.1.660-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r embassy-domsearch"]
+]
+depends: [
+  "deb-emboss-lib" {< "6.6.1~"}
+  "deb-emboss-lib" {>= "6.6.0-1~"}
+  "deb-libc6" {>= "2.4"}
+  "deb-libx11-6"
+]
+extra-source "embassy-domsearch_1:0.1.660-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/embassy-domsearch/embassy-domsearch_0.1.660-3_amd64.deb"
+}

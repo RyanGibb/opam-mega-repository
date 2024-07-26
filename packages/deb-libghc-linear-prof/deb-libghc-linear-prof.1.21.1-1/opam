@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-linear-prof_1.21.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-linear-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-adjunctions-prof"
+  "deb-libghc-base-orphans-prof"
+  "deb-libghc-bytes-prof"
+  "deb-libghc-cereal-prof"
+  "deb-libghc-distributive-prof"
+  "deb-libghc-hashable-prof"
+  "deb-libghc-lens-prof"
+  "deb-libghc-linear-dev" {= "1.21.1-1"}
+  "deb-libghc-random-prof"
+  "deb-libghc-reflection-prof"
+  "deb-libghc-semigroupoids-prof"
+  "deb-libghc-semigroups-prof"
+  "deb-libghc-tagged-prof"
+  "deb-libghc-transformers-compat-prof"
+  "deb-libghc-unordered-containers-prof"
+  "deb-libghc-vector-prof"
+  "deb-libghc-void-prof"
+]
+extra-source "libghc-linear-prof_1.21.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-linear/libghc-linear-prof_1.21.1-1_amd64.deb"
+}

@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libtest2-harness-perl_1.000151-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libtest2-harness-perl"]
+]
+depends: [
+  "deb-libdata-uuid-perl"
+  "deb-libfilter-perl"
+  "deb-libgoto-file-perl"
+  "deb-libimporter-perl"
+  "deb-libio-compress-perl"
+  "deb-libjson-pp-perl"
+  "deb-liblong-jump-perl"
+  "deb-libscalar-list-utils-perl"
+  "deb-libscope-guard-perl"
+  "deb-libterm-table-perl" {>= "0.015"}
+  "deb-libtest2-plugin-memusage-perl"
+  "deb-libtest2-plugin-uuid-perl"
+  "deb-libtest2-suite-perl" {>= "0.000127"}
+  "deb-libyaml-tiny-perl"
+  "deb-perl"
+  "deb-perl-any"
+]
+extra-source "libtest2-harness-perl_1.000151-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libt/libtest2-harness-perl/libtest2-harness-perl_1.000151-1_all.deb"
+}

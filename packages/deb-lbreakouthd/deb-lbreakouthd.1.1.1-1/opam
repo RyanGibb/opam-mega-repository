@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lbreakouthd_1.1.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lbreakouthd"]
+]
+depends: [
+  "deb-lbreakouthd-data"
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libsdl2-2-0-0" {>= "2.0.12"}
+  "deb-libsdl2-image-2-0-0" {>= "2.0.5"}
+  "deb-libsdl2-mixer-2-0-0" {>= "2.6.0"}
+  "deb-libsdl2-ttf-2-0-0" {>= "2.0.15"}
+  "deb-libstdc++6" {>= "11"}
+]
+extra-source "lbreakouthd_1.1.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lbreakouthd/lbreakouthd_1.1.1-1_amd64.deb"
+}

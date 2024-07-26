@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkf5filemetadata-bin_5.78.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkf5filemetadata-bin"]
+]
+depends: [
+  "deb-catdoc"
+  "deb-libavformat58" {>= "7-4.1"}
+  "deb-libavutil56" {>= "7-4.0"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libepub0" {>= "0.1.1"}
+  "deb-libexiv2-27" {>= "0.25"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libkf5archive5" {>= "5.78.0~"}
+  "deb-libkf5filemetadata3" {>= "5.77.0"}
+  "deb-libpoppler-qt5-1" {>= "0.24.5"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5xml5" {>= "5.14.0~"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtag1v5" {>= "1.11"}
+]
+extra-source "libkf5filemetadata-bin_5.78.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kfilemetadata-kf5/libkf5filemetadata-bin_5.78.0-2_amd64.deb"
+}

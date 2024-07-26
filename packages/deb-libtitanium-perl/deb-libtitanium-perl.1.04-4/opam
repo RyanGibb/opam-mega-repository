@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libtitanium-perl_1.04-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libtitanium-perl"]
+]
+depends: [
+  "deb-libcgi-application-dispatch-perl"
+  "deb-libcgi-application-perl" {>= "4.50-1"}
+  "deb-libcgi-application-plugin-autorunmode-perl"
+  "deb-libcgi-application-plugin-configauto-perl"
+  "deb-libcgi-application-plugin-dbh-perl"
+  "deb-libcgi-application-plugin-devpopup-perl"
+  "deb-libcgi-application-plugin-fillinform-perl"
+  "deb-libcgi-application-plugin-forward-perl"
+  "deb-libcgi-application-plugin-logdispatch-perl"
+  "deb-libcgi-application-plugin-session-perl"
+  "deb-libcgi-application-plugin-stream-perl"
+  "deb-libcgi-application-plugin-validaterm-perl"
+  "deb-libcgi-application-plugin-viewcode-perl"
+  "deb-libcgi-application-server-perl"
+  "deb-libmodule-starter-plugin-cgiapp-perl"
+  "deb-libtest-www-mechanize-cgiapp-perl"
+  "deb-perl"
+]
+extra-source "libtitanium-perl_1.04-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libt/libtitanium-perl/libtitanium-perl_1.04-4_all.deb"
+}

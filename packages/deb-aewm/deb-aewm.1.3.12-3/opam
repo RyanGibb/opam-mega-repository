@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i aewm_1.3.12-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r aewm"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libgtk2-0-0" {>= "2.24.0"}
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxft2" {> "2.1.1"}
+]
+extra-source "aewm_1.3.12-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/aewm/aewm_1.3.12-3_amd64.deb"
+}

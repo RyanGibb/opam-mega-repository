@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i digikam_4:7.9.0-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r digikam"]
+]
+depends: [
+  "deb-digikam-data" {= "4-7.9.0-1"}
+  "deb-digikam-private-libs" {= "4-7.9.0-1+b2"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libkf5configcore5" {>= "4.97.0"}
+  "deb-libkf5coreaddons5" {>= "4.100.0"}
+  "deb-libkf5i18n5" {>= "4.97.0"}
+  "deb-libmagick++-6-q16-8"
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5sql5" {>= "5.4.0"}
+  "deb-libqt5sql5-mysql"
+  "deb-libqt5sql5-sqlite"
+  "deb-libqt5widgets5" {>= "5.4.0"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-perl-any"
+  ("deb-libqt5gui5" {>= "5.4.0"} | "deb- libqt5gui5-gles" {>= "5.4.0"})
+]
+extra-source "digikam_4:7.9.0-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/digikam/digikam_7.9.0-1+b2_amd64.deb"
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py3-gpep517-13-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py3-gpep517"]
+]
+depends: [
+  "apk-py3-installer" {= "0.7.0-r1"}
+  "apk-python3" {= "3.11.8-r0"}
+  "apk-python3" {>= "3.11"}
+]
+extra-source "py3-gpep517-13-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/py3-gpep517-13-r2.apk"
+}

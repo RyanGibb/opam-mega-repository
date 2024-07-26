@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-softlayer_6.1.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-softlayer"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-click"
+  "deb-python3-prettytable"
+  "deb-python3-prompt-toolkit"
+  "deb-python3-pygments"
+  "deb-python3-requests"
+  "deb-python3-rich"
+  "deb-python3-urllib3"
+]
+extra-source "python3-softlayer_6.1.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-softlayer/python3-softlayer_6.1.4-1_all.deb"
+}

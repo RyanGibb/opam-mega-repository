@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add conky-1.21.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del conky"]
+]
+depends: [
+  "apk-cairo" {= "1.18.0-r0"}
+  "apk-fontconfig" {= "2.15.0-r1"}
+  "apk-glib" {= "2.80.2-r0"}
+  "apk-imlib2" {= "1.12.2-r0"}
+  "apk-libcurl" {= "8.9.0-r0"}
+  "apk-libgcc" {= "13.2.1_git20240309-r0"}
+  "apk-libncursesw" {= "6.4_p20240420-r0"}
+  "apk-libstdc++" {= "13.2.1_git20240309-r0"}
+  "apk-libx11" {= "1.8.9-r1"}
+  "apk-libxdamage" {= "1.1.6-r5"}
+  "apk-libxext" {= "1.3.6-r2"}
+  "apk-libxfixes" {= "6.0.1-r4"}
+  "apk-libxft" {= "2.3.8-r3"}
+  "apk-libxi" {= "1.8.1-r4"}
+  "apk-libxinerama" {= "1.1.5-r4"}
+  "apk-libxml2" {= "2.12.7-r0"}
+  "apk-lua5-4-libs" {= "5.4.6-r1"}
+  "apk-musl" {= "1.2.5-r0"}
+  "apk-pango" {= "1.52.2-r0"}
+  "apk-wayland-libs-client" {= "1.22.0-r4"}
+  "apk-wireless-tools-libs" {= "30_pre9-r4"}
+]
+extra-source "conky-1.21.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/conky-1.21.0-r0.apk"
+}

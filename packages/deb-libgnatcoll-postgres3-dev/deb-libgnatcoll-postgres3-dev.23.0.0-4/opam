@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgnatcoll-postgres3-dev_23.0.0-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgnatcoll-postgres3-dev"]
+]
+depends: [
+  "deb-gnat" {< "13"}
+  "deb-gnat" {>= "12"}
+  "deb-libgnatcoll-postgres1" {= "23.0.0-4"}
+  "deb-libgnatcoll-sql5-dev" {= "23.0.0-4"}
+  "deb-libgnatcoll21-dev"
+  "deb-libgnatprj10-dev"
+  "deb-libxmlada-dom12-dev"
+  "deb-libxmlada-input12-dev"
+  "deb-libxmlada-sax12-dev"
+  "deb-libxmlada-schema12-dev"
+  "deb-libxmlada-unicode12-dev"
+]
+extra-source "libgnatcoll-postgres3-dev_23.0.0-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libg/libgnatcoll-db/libgnatcoll-postgres3-dev_23.0.0-4_amd64.deb"
+}

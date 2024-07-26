@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libtest-json-schema-acceptance-perl_1.003+ds-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libtest-json-schema-acceptance-perl"]
+]
+depends: [
+  "deb-json-schema-test-suite"
+  "deb-libjson-maybexs-perl"
+  "deb-libjson-perl"
+  "deb-libmoo-perl"
+  "deb-libmoox-typetiny-perl"
+  "deb-libnamespace-clean-perl"
+  "deb-libpath-tiny-perl" {>= "0.069"}
+  "deb-libtest-fatal-perl"
+  "deb-libtest2-suite-perl"
+  "deb-perl-any"
+]
+extra-source "libtest-json-schema-acceptance-perl_1.003+ds-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libt/libtest-json-schema-acceptance-perl/libtest-json-schema-acceptance-perl_1.003+ds-1_all.deb"
+}

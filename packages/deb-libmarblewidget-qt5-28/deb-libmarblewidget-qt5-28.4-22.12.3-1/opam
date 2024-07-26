@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmarblewidget-qt5-28_4:22.12.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmarblewidget-qt5-28"]
+]
+depends: [
+  "deb-libastro1" {= "4-22.12.3-1"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libphonon4qt5-4" {>= "4-4.8.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.14.0~"}
+  "deb-libqt5network5" {>= "5.14.1"}
+  "deb-libqt5printsupport5" {>= "5.14.0~"}
+  "deb-libqt5svg5" {>= "5.14.0~"}
+  "deb-libqt5webchannel5" {>= "5.14.0~"}
+  "deb-libqt5webenginewidgets5" {>= "5.14.1"}
+  "deb-libqt5widgets5" {>= "5.14.0~"}
+  "deb-libqt5xml5" {>= "5.14.0~"}
+  "deb-libstdc++6" {>= "4.3"}
+  "deb-marble-qt-data" {>= "4-22.12.3-1"}
+  "deb-phonon4qt5"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "libmarblewidget-qt5-28_4:22.12.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/marble/libmarblewidget-qt5-28_22.12.3-1_amd64.deb"
+}

@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgitlab-api-v4-perl_0.16-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgitlab-api-v4-perl"]
+]
+depends: [
+  "deb-libconst-fast-perl" {>= "0.014"}
+  "deb-libhttp-tiny-multipart-perl"
+  "deb-libio-prompter-perl" {>= "0.004014"}
+  "deb-libjson-perl" {>= "2.59"}
+  "deb-liblog-any-adapter-screen-perl" {>= "0.13"}
+  "deb-liblog-any-perl" {>= "1.703"}
+  "deb-libmoo-perl" {>= "2.003000"}
+  "deb-libnamespace-clean-perl" {>= "0.27"}
+  "deb-libpath-tiny-perl" {>= "0.079"}
+  "deb-libstrictures-perl" {>= "2.000003"}
+  "deb-libtry-tiny-perl" {>= "0.28"}
+  "deb-libtype-tiny-perl" {>= "1.002001"}
+  "deb-liburi-perl" {>= "1.62"}
+  "deb-perl"
+]
+extra-source "libgitlab-api-v4-perl_0.16-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libg/libgitlab-api-v4-perl/libgitlab-api-v4-perl_0.16-1_all.deb"
+}

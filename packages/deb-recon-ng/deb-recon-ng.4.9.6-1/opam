@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i recon-ng_4.9.6-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r recon-ng"]
+]
+depends: [
+  "deb-libjs-jquery"
+  "deb-libjs-skeleton"
+  "deb-node-normalize-css"
+  "deb-python"
+  "deb-python-any"
+  "deb-python-dicttoxml"
+  "deb-python-dnspython"
+  "deb-python-flask"
+  "deb-python-jsonrpclib"
+  "deb-python-lxml"
+  "deb-python-mechanize"
+  "deb-python-olefile"
+  "deb-python-pypdf2"
+  "deb-python-slowaes"
+  "deb-python-unicodecsv"
+  "deb-python-xlsxwriter"
+]
+extra-source "recon-ng_4.9.6-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/recon-ng/recon-ng_4.9.6-1_all.deb"
+}

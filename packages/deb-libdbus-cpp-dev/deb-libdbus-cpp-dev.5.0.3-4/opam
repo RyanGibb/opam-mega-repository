@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdbus-cpp-dev_5.0.3-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdbus-cpp-dev"]
+]
+depends: [
+  "deb-dbus"
+  "deb-libboost-filesystem-dev"
+  "deb-libboost-program-options-dev"
+  "deb-libboost-system-dev"
+  "deb-libdbus-1-dev"
+  "deb-libdbus-cpp5" {= "5.0.3-4"}
+  "deb-libproperties-cpp-dev"
+]
+conflicts: [
+  "deb-dbus-cpp-dev"
+]
+extra-source "libdbus-cpp-dev_5.0.3-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dbus-cpp/libdbus-cpp-dev_5.0.3-4_amd64.deb"
+}

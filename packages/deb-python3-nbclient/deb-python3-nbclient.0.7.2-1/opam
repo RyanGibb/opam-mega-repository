@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-nbclient_0.7.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-nbclient"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-jupyter-client"
+  "deb-python3-jupyter-core"
+  "deb-python3-nbformat"
+  "deb-python3-traitlets"
+]
+extra-source "python3-nbclient_0.7.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/nbclient/python3-nbclient_0.7.2-1_all.deb"
+}

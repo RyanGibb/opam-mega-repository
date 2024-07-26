@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-iconv_2.3.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-iconv"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libnode64"
+  "deb-libstdc++6" {>= "5"}
+  "deb-nodejs"
+]
+extra-source "node-iconv_2.3.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-iconv/node-iconv_2.3.2-1_amd64.deb"
+}

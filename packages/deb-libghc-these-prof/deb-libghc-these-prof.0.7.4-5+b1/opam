@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-these-prof_0.7.4-5+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-these-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-aeson-prof"
+  "deb-libghc-bifunctors-prof"
+  "deb-libghc-data-default-class-prof"
+  "deb-libghc-hashable-prof"
+  "deb-libghc-keys-prof"
+  "deb-libghc-profunctors-prof"
+  "deb-libghc-quickcheck2-prof"
+  "deb-libghc-semigroupoids-prof"
+  "deb-libghc-these-dev" {= "0.7.4-5+b1"}
+  "deb-libghc-transformers-compat-prof"
+  "deb-libghc-unordered-containers-prof"
+  "deb-libghc-vector-instances-prof"
+  "deb-libghc-vector-prof"
+]
+extra-source "libghc-these-prof_0.7.4-5+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-these/libghc-these-prof_0.7.4-5+b1_amd64.deb"
+}

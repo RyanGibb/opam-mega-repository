@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libhtml-embedded-turtle-perl_0.404-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libhtml-embedded-turtle-perl"]
+]
+depends: [
+  "deb-libnamespace-clean-perl"
+  "deb-libossp-uuid-perl"
+  "deb-librdf-rdfa-parser-perl"
+  "deb-librdf-trin3-perl"
+  "deb-librdf-trine-perl"
+  "deb-librole-commons-perl"
+  "deb-perl-any"
+]
+extra-source "libhtml-embedded-turtle-perl_0.404-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libh/libhtml-embedded-turtle-perl/libhtml-embedded-turtle-perl_0.404-2_all.deb"
+}

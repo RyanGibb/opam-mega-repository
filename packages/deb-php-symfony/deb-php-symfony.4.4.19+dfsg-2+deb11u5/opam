@@ -1,0 +1,96 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i php-symfony_4.4.19+dfsg-2+deb11u5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r php-symfony"]
+]
+depends: [
+  "deb-php-apcu"
+  "deb-php-common"
+  "deb-php-doctrine-event-manager" {< "2~~"}
+  "deb-php-doctrine-event-manager" {>= "1.0"}
+  "deb-php-doctrine-persistence"
+  "deb-php-intl"
+  "deb-php-mbstring"
+  "deb-php-proxy-manager"
+  "deb-php-psr-cache" {< "2~~"}
+  "deb-php-psr-cache" {>= "1.0"}
+  "deb-php-psr-container" {< "2~~"}
+  "deb-php-psr-container" {>= "1.0"}
+  "deb-php-psr-link" {< "2~~"}
+  "deb-php-psr-link" {>= "1.0"}
+  "deb-php-psr-log" {< "2~~"}
+  "deb-php-psr-log" {>= "1.0"}
+  "deb-php-symfony-amazon-mailer" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-asset" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-browser-kit" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-cache" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-config" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-console" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-contracts" {< "2~~"}
+  "deb-php-symfony-contracts" {>= "1.1.8"}
+  "deb-php-symfony-css-selector" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-debug" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-debug-bundle" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-dependency-injection" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-doctrine-bridge" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-dom-crawler" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-dotenv" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-error-handler" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-event-dispatcher" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-expression-language" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-filesystem" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-finder" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-form" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-framework-bundle" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-google-mailer" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-http-client" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-http-foundation" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-http-kernel" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-inflector" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-intl" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-ldap" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-lock" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-mailchimp-mailer" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-mailer" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-mailgun-mailer" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-messenger" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-mime" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-monolog-bridge" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-options-resolver" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-polyfill-php80" {< "2~~"}
+  "deb-php-symfony-polyfill-php80" {>= "1.15"}
+  "deb-php-symfony-postmark-mailer" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-process" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-property-access" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-property-info" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-proxy-manager-bridge" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-routing" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-security" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-security-bundle" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-security-core" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-security-csrf" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-security-guard" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-security-http" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-sendgrid-mailer" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-serializer" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-stopwatch" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-templating" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-translation" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-twig-bridge" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-twig-bundle" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-validator" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-var-dumper" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-var-exporter" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-web-link" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-web-profiler-bundle" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-web-server-bundle" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-workflow" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-symfony-yaml" {= "4.4.19+dfsg-2+deb11u5"}
+  "deb-php-twig"
+  "deb-php-xml"
+]
+extra-source "php-symfony_4.4.19+dfsg-2+deb11u5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/symfony/php-symfony_4.4.19+dfsg-2+deb11u5_all.deb"
+}

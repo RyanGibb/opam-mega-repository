@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmiaviewit0_1.0.5-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmiaviewit0"]
+]
+depends: [
+  "deb-libc6" {>= "2.27"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgl1"
+  "deb-libgle3"
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libglibmm-2-4-1v5" {>= "2.54.0"}
+  "deb-libmia-2-4-4"
+  "deb-libsigc++-2-0-0v5" {>= "2.6.1"}
+  "deb-libstdc++6" {>= "6"}
+  "deb-libvistaio14" {>= "1.2.14"}
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+extra-source "libmiaviewit0_1.0.5-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/miaviewit/libmiaviewit0_1.0.5-2_amd64.deb"
+}

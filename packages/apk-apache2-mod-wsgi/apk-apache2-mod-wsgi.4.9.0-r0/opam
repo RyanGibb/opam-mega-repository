@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add apache2-mod-wsgi-4.9.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del apache2-mod-wsgi"]
+]
+depends: [
+  "apk-apache2" {= "2.4.59-r0"}
+  "apk-musl" {= "1.2.3-r3"}
+  "apk-python3" {= "3.10.14-r1"}
+]
+extra-source "apache2-mod-wsgi-4.9.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/apache2-mod-wsgi-4.9.0-r0.apk"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libetpan20_1.9.4-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libetpan20"]
+]
+depends: [
+  "deb-libc6" {>= "2.15"}
+  "deb-libdb5-3"
+  "deb-libgnutls30" {>= "3.7.0"}
+  "deb-liblockfile1" {>= "1.0"}
+  "deb-libsasl2-2" {>= "2.1.27+dfsg"}
+]
+extra-source "libetpan20_1.9.4-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libe/libetpan/libetpan20_1.9.4-3_amd64.deb"
+}

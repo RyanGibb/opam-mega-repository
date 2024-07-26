@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py3-cffi-1.15.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py3-cffi"]
+]
+depends: [
+  "apk-libffi" {= "3.4.4-r0"}
+  "apk-musl" {= "1.2.3-r5"}
+  "apk-py3-cparser" {= "2.21-r0"}
+]
+extra-source "py3-cffi-1.15.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-cffi-1.15.1-r0.apk"
+}

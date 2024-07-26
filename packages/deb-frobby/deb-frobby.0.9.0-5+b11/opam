@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i frobby_0.9.0-5+b11_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r frobby"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgmp10" {>= "2-6.1.0"}
+  "deb-libgmpxx4ldbl"
+  "deb-libstdc++6" {>= "5.2"}
+]
+extra-source "frobby_0.9.0-5+b11_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/frobby/frobby_0.9.0-5+b11_amd64.deb"
+}

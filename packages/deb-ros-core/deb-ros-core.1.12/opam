@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ros-core_1.12_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ros-core"]
+]
+depends: [
+  "deb-python-message-filters"
+  "deb-python-rosbag"
+  "deb-python-rosclean"
+  "deb-python-rosgraph"
+  "deb-python-roslaunch"
+  "deb-python-rosmaster"
+  "deb-python-rosmsg"
+  "deb-python-rosnode"
+  "deb-python-rosparam"
+  "deb-python-rosservice"
+  "deb-python-rostopic"
+  "deb-python-roswtf"
+  "deb-rosout"
+  "deb-topic-tools"
+]
+extra-source "ros-core_1.12_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ros-metapackages/ros-core_1.12_all.deb"
+}

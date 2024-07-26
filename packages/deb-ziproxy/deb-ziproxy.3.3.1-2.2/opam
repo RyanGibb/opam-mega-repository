@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ziproxy_3.3.1-2.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ziproxy"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libc6" {>= "2.15"}
+  "deb-libgif7" {>= "5.1"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libsasl2-2" {>= "2.1.27+dfsg"}
+  "deb-lsb-base" {>= "3.0-10"}
+  "deb-passwd"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "ziproxy_3.3.1-2.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/z/ziproxy/ziproxy_3.3.1-2.2_amd64.deb"
+}

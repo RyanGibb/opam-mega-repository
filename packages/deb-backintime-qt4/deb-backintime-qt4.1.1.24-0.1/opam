@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i backintime-qt4_1.1.24-0.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r backintime-qt4"]
+]
+depends: [
+  "deb-backintime-common" {= "1.1.24-0.1"}
+  "deb-libnotify-bin"
+  "deb-policykit-1"
+  "deb-python3-any" {>= "3.3.2-2~"}
+  "deb-python3-dbus-mainloop-qt"
+  "deb-python3-pyqt4"
+  "deb-x11-utils"
+]
+conflicts: [
+  "deb-backintime-kde4"
+]
+extra-source "backintime-qt4_1.1.24-0.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/backintime/backintime-qt4_1.1.24-0.1_all.deb"
+}

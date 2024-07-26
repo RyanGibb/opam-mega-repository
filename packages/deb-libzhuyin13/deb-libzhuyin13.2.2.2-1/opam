@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libzhuyin13_2.2.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libzhuyin13"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libdb5-3"
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libpinyin-data" {= "2.2.2-1"}
+  "deb-libstdc++6" {>= "5"}
+]
+conflicts: [
+  "deb-libzhuyin6"
+  "deb-libzhuyin7"
+]
+extra-source "libzhuyin13_2.2.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libp/libpinyin/libzhuyin13_2.2.2-1_amd64.deb"
+}

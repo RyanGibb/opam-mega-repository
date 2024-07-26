@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i grail-tools_3.1.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r grail-tools"]
+]
+depends: [
+  "deb-libc6" {>= "2.15"}
+  "deb-libframe6" {>= "2.2.4"}
+  "deb-libgrail6" {= "3.1.1-3"}
+  "deb-libx11-6" {>= "2-1.2.99.901"}
+  "deb-libxext6"
+  "deb-libxi6" {>= "2-1.5.99.2"}
+]
+extra-source "grail-tools_3.1.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/grail/grail-tools_3.1.1-3_amd64.deb"
+}

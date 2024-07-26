@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gap-hap_1.47-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gap-hap"]
+]
+depends: [
+  "deb-gap-aclib"
+  "deb-gap-crystcat"
+  "deb-gap-fga"
+  "deb-gap-nq"
+  "deb-gap-polycyclic"
+  "deb-gap-smallgrp"
+  "deb-gap-transgrp"
+]
+extra-source "gap-hap_1.47-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gap-hap/gap-hap_1.47-1_all.deb"
+}

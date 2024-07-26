@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libglom-1.30-dev_1.30.4-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libglom-1.30-dev"]
+]
+depends: [
+  "deb-libepc-dev" {>= "0.3.1"}
+  "deb-libgda-5-0-dev" {>= "5.2.1"}
+  "deb-libgda-5-0-postgres"
+  "deb-libgdamm5-0-dev" {>= "4.99.10"}
+  "deb-libglib2-0-dev"
+  "deb-libglom-1-30-0" {= "1.30.4-3"}
+  "deb-libxml++2-6-dev" {>= "2.24.0"}
+  "deb-libxml-parser-perl"
+  "deb-libxslt1-dev" {>= "1.1.10"}
+  "deb-python-gi-dev"
+  "deb-python3-dev"
+]
+extra-source "libglom-1.30-dev_1.30.4-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/glom/libglom-1.30-dev_1.30.4-3_amd64.deb"
+}

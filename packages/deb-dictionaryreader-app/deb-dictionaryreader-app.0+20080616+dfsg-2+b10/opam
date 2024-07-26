@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dictionaryreader.app_0+20080616+dfsg-2+b10_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dictionaryreader.app"]
+]
+depends: [
+  "deb-gnustep-back0-28" {>= "0.28.0"}
+  "deb-gnustep-base-runtime" {>= "1.27.0"}
+  "deb-gnustep-gui-runtime" {>= "0.28.0"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgnustep-base1-27" {>= "1.27.0"}
+  "deb-libgnustep-gui0-28" {>= "0.28.0"}
+  "deb-libobjc4" {>= "4.2.1"}
+]
+extra-source "dictionaryreader.app_0+20080616+dfsg-2+b10_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/etoile/dictionaryreader.app_0+20080616+dfsg-2+b10_amd64.deb"
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libatlas-ecmwf-dev_0.31.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libatlas-ecmwf-dev"]
+]
+depends: [
+  "deb-libatlas-ecmwf-0" {= "0.31.1-3"}
+  "deb-libatlas-ecmwf-utils" {= "0.31.1-3"}
+  "deb-libcgal-dev"
+  "deb-libeckit-dev"
+  "deb-libeigen3-dev"
+  "deb-libfckit-dev"
+  "deb-libjemalloc-dev"
+  ("deb-gfortran-12" | "deb- gfortran-mod-15")
+]
+extra-source "libatlas-ecmwf-dev_0.31.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/atlas-ecmwf/libatlas-ecmwf-dev_0.31.1-3_amd64.deb"
+}

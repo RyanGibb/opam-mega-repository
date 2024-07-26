@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-milter_1.0.5-1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-milter"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libmilter1-0-1" {>= "8.14.1"}
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-any"
+  "deb-python3-dns"
+]
+extra-source "python3-milter_1.0.5-1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pymilter/python3-milter_1.0.5-1+b3_amd64.deb"
+}

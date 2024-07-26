@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libegl-mesa0_22.3.6-1+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libegl-mesa0"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libdrm2" {>= "2.4.109"}
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libgbm1" {= "22.3.6-1+deb12u1"}
+  "deb-libgcc-s1" {>= "3.4"}
+  "deb-libglapi-mesa" {= "22.3.6-1+deb12u1"}
+  "deb-libwayland-client0" {>= "1.20.0"}
+  "deb-libwayland-server0" {>= "1.15.0"}
+  "deb-libx11-xcb1" {>= "2-1.8.4"}
+  "deb-libxcb-dri2-0" {>= "1.8"}
+  "deb-libxcb-dri3-0" {>= "1.13"}
+  "deb-libxcb-present0"
+  "deb-libxcb-randr0" {>= "1.3"}
+  "deb-libxcb-sync1"
+  "deb-libxcb-xfixes0"
+  "deb-libxcb1" {>= "1.9.2"}
+  "deb-libxshmfence1"
+]
+extra-source "libegl-mesa0_22.3.6-1+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mesa/libegl-mesa0_22.3.6-1+deb12u1_amd64.deb"
+}

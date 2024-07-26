@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libarchive-dev-3.7.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libarchive-dev"]
+]
+depends: [
+  "apk-libarchive" {= "3.7.2-r0"}
+  "apk-openssl-dev" {= "1.1.1w-r1"}
+  "apk-pkgconf" {= "1.8.1-r0"}
+]
+extra-source "libarchive-dev-3.7.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libarchive-dev-3.7.2-r0.apk"
+}

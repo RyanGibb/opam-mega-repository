@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libevview3-3_3.38.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libevview3-3"]
+]
+depends: [
+  "deb-gstreamer1-0-plugins-base"
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libcairo2" {>= "1.14.0"}
+  "deb-libevdocument3-4" {>= "3.38.0"}
+  "deb-libglib2-0-0" {>= "2.38"}
+  "deb-libgspell-1-2" {>= "1.8.2"}
+  "deb-libgstreamer-plugins-base1-0-0" {>= "1.0.0"}
+  "deb-libgstreamer1-0-0" {>= "1.0.0"}
+  "deb-libgtk-3-0" {>= "3.21.4"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+]
+extra-source "libevview3-3_3.38.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/evince/libevview3-3_3.38.2-1_amd64.deb"
+}

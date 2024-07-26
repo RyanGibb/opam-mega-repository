@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librarian-puppet-simple_0.0.5-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librarian-puppet-simple"]
+]
+depends: [
+  "deb-git"
+  "deb-ruby-thor"
+  ("deb-ruby" | "deb- ruby-interpreter")
+]
+conflicts: [
+  "deb-librarian-puppet"
+]
+extra-source "librarian-puppet-simple_0.0.5-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libr/librarian-puppet-simple/librarian-puppet-simple_0.0.5-3_all.deb"
+}

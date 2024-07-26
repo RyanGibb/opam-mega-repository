@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpuppetlabs-ring-middleware-clojure_1.3.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpuppetlabs-ring-middleware-clojure"]
+]
+depends: [
+  "deb-libcheshire-clojure"
+  "deb-libclojure-java"
+  "deb-libkitchensink-clojure"
+  "deb-libprismatic-schema-clojure" {>= "1.1.12"}
+  "deb-libpuppetlabs-http-client-clojure"
+  "deb-libpuppetlabs-i18n-clojure"
+  "deb-libring-core-clojure"
+  "deb-libslingshot-clojure"
+  "deb-libssl-utils-clojure"
+  "deb-libtools-logging-clojure"
+]
+extra-source "libpuppetlabs-ring-middleware-clojure_1.3.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/puppetlabs-ring-middleware-clojure/libpuppetlabs-ring-middleware-clojure_1.3.1-3_all.deb"
+}

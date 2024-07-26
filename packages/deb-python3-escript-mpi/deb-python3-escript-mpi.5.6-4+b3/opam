@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-escript-mpi_5.6-4+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-escript-mpi"]
+]
+depends: [
+  "deb-libboost-iostreams1-74-0" {>= "1.74.0"}
+  "deb-libboost-numpy1-74-0"
+  "deb-libboost-numpy1-74-0" {>= "1.74.0"}
+  "deb-libboost-python1-74-0"
+  "deb-libboost-python1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libgomp1" {>= "4.9"}
+  "deb-libnetcdf-c++4-1" {>= "4.3.0"}
+  "deb-libopenmpi3" {>= "4.1.4"}
+  "deb-libpython3-11" {>= "3.11.0"}
+  "deb-libsiloh5-0" {>= "4.11"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libumfpack5" {>= "1-4.5.2"}
+  "deb-openmpi-bin"
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-11"
+  "deb-python3-any"
+  "deb-python3-numpy"
+]
+extra-source "python3-escript-mpi_5.6-4+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-escript/python3-escript-mpi_5.6-4+b3_amd64.deb"
+}

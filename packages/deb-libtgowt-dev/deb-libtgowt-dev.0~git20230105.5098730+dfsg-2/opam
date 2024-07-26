@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libtgowt-dev_0~git20230105.5098730+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libtgowt-dev"]
+]
+depends: [
+  "deb-libabsl-dev"
+  "deb-libavcodec-dev"
+  "deb-libavformat-dev"
+  "deb-libavutil-dev"
+  "deb-libc6-dev"
+  "deb-libglib2-0-dev"
+  "deb-libjpeg62-turbo-dev"
+  "deb-libopus-dev"
+  "deb-libprotobuf-dev"
+  "deb-libsrtp2-dev"
+  "deb-libssl-dev"
+  "deb-libswresample-dev"
+  "deb-libswscale-dev"
+  "deb-libvpx-dev"
+  "deb-libx11-dev"
+  "deb-libxcomposite-dev"
+  "deb-libxdamage-dev"
+  "deb-libxext-dev"
+  "deb-libxfixes-dev"
+  "deb-libxrandr-dev"
+  "deb-libxrender-dev"
+  "deb-libxtst-dev"
+]
+extra-source "libtgowt-dev_0~git20230105.5098730+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libt/libtgowt/libtgowt-dev_0~git20230105.5098730+dfsg-2_amd64.deb"
+}

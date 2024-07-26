@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i vibe.d_0.8.4-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r vibe.d"]
+]
+depends: [
+  "deb-libvibe-core-dev"
+  "deb-libvibe-http-dev"
+  "deb-libvibe-inet-dev"
+  "deb-libvibe-mail-dev"
+  "deb-libvibe-mongodb-dev"
+  "deb-libvibe-redis-dev"
+  "deb-libvibe-stream-dev"
+  "deb-libvibe-textfilter-dev"
+  "deb-libvibe-tls-dev"
+  "deb-libvibe-web-dev"
+]
+extra-source "vibe.d_0.8.4-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/vibe.d/vibe.d_0.8.4-2_amd64.deb"
+}

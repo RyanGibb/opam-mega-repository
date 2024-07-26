@@ -1,0 +1,66 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librte-meta-net_22.11.5-1~deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librte-meta-net"]
+]
+depends: [
+  "deb-librte-net-af-packet23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-af-xdp23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-ark23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-atlantic23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-avp23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-axgbe23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-bnx2x23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-bnxt23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-bond23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-cnxk23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-cxgbe23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-dpaa2-23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-dpaa23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-e1000-23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-ena23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-enetc23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-enetfec23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-enic23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-failsafe23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-fm10k23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-gve23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-hinic23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-hns3-23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-i40e23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-iavf23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-ice23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-idpf23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-igc23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-ionic23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-ipn3ke23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-ixgbe23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-liquidio23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-memif23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-mlx4-23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-mlx5-23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-netvsc23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-nfp23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-ngbe23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-null23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-octeon-ep23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-octeontx23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-pcap23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-pfe23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-qede23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-ring23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-sfc23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-softnic23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-tap23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-thunderx23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-txgbe23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-vdev-netvsc23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-vhost23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-virtio23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-net-vmxnet3-23" {= "22.11.5-1~deb12u1"}
+]
+extra-source "librte-meta-net_22.11.5-1~deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dpdk/librte-meta-net_22.11.5-1~deb12u1_amd64.deb"
+}

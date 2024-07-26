@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i android-sdk-platform-tools_28.0.2+3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r android-sdk-platform-tools"]
+]
+depends: [
+  "deb-adb" {>= "1-10.0.0+r36~"}
+  "deb-android-sdk-platform-tools-common" {>= "28.0.2~"}
+  "deb-dmtracedump" {>= "10.0.0+r36~"}
+  "deb-e2fsprogs"
+  "deb-etc1tool" {>= "10.0.0+r36~"}
+  "deb-f2fs-tools"
+  "deb-fastboot" {>= "1-10.0.0+r36~"}
+  "deb-hprof-conv" {>= "10.0.0+r36~"}
+  "deb-sqlite3"
+]
+extra-source "android-sdk-platform-tools_28.0.2+3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/android-sdk-meta/android-sdk-platform-tools_28.0.2+3_amd64.deb"
+}

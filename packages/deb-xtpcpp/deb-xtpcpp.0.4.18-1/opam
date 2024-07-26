@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xtpcpp_0.4.18-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xtpcpp"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libodsstream0"
+  "deb-libpappsomspp-widget0"
+  "deb-libpappsomspp0"
+  "deb-libqcustomplot2-0" {>= "2.0.1+dfsg1"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5network5" {>= "5.14.1"}
+  "deb-libqt5printsupport5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.15.1"}
+  "deb-libqt5xml5" {>= "5.1.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  ("deb-libqt5gui5" {>= "5.8.0"} | "deb- libqt5gui5-gles" {>= "5.8.0"})
+]
+extra-source "xtpcpp_0.4.18-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xtpcpp/xtpcpp_0.4.18-1_amd64.deb"
+}

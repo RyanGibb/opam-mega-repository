@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgnuradio-fosphor3.9.0_3.9~0.974ab2f-1+b9_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgnuradio-fosphor3.9.0"]
+]
+depends: [
+  "deb-libboost-chrono1-74-0" {>= "1.74.0"}
+  "deb-libboost-thread1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libfreetype6" {>= "2.3.5"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglfw3" {>= "3.0"}
+  "deb-libglx0"
+  "deb-libgnuradio-fft3-10-5" {>= "3.10.5.0"}
+  "deb-libgnuradio-pmt3-10-5" {>= "3.10.5.0"}
+  "deb-libgnuradio-runtime3-10-5" {>= "3.10.5.0"}
+  "deb-libopengl0"
+  "deb-libpython3-11" {>= "3.11.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5opengl5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-libspdlog1-10"
+  "deb-libstdc++6" {>= "11"}
+  ("deb-ocl-icd-libopencl1" | "deb- libopencl1")
+]
+extra-source "libgnuradio-fosphor3.9.0_3.9~0.974ab2f-1+b9_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gr-fosphor/libgnuradio-fosphor3.9.0_3.9~0.974ab2f-1+b9_amd64.deb"
+}

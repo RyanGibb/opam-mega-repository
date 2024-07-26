@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libboost-exception1.74-dev_1.74.0-9_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libboost-exception1.74-dev"]
+]
+depends: [
+  "deb-libboost1-74-dev" {= "1.74.0-9"}
+]
+conflicts: [
+  "deb-libboost-exception1-50-dev"
+  "deb-libboost-exception1-52-dev"
+  "deb-libboost-exception1-53-dev"
+  "deb-libboost-exception1-54-dev"
+  "deb-libboost-exception1-55-dev"
+  "deb-libboost-exception1-57-dev"
+  "deb-libboost-exception1-58-dev"
+  "deb-libboost-exception1-60-dev"
+  "deb-libboost-exception1-61-dev"
+  "deb-libboost-exception1-62-dev"
+  "deb-libboost-exception1-63-dev"
+  "deb-libboost-exception1-65-dev"
+  "deb-libboost-exception1-67-dev"
+  "deb-libboost-exception1-70-dev"
+  "deb-libboost-exception1-71-dev"
+]
+extra-source "libboost-exception1.74-dev_1.74.0-9_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/boost1.74/libboost-exception1.74-dev_1.74.0-9_amd64.deb"
+}

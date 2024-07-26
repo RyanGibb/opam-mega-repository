@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libtickit-perl_0.65-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libtickit-perl"]
+]
+depends: [
+  "deb-libc6" {>= "2.15"}
+  "deb-libstruct-dumb-perl"
+  "deb-libtermkey1" {>= "0.20"}
+  "deb-libunibilium4" {>= "2.0"}
+  "deb-perl" {>= "5.28.0-3"}
+  "deb-perl-base"
+]
+extra-source "libtickit-perl_0.65-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libt/libtickit-perl/libtickit-perl_0.65-4+b1_amd64.deb"
+}

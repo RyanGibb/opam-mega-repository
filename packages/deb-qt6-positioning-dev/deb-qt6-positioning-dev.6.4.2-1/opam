@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qt6-positioning-dev_6.4.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qt6-positioning-dev"]
+]
+depends: [
+  "deb-libqt6positioning6" {= "6.4.2-1"}
+  "deb-libqt6positioning6-plugins" {= "6.4.2-1"}
+  "deb-libqt6positioningquick6" {= "6.4.2-1"}
+  "deb-qt6-base-dev"
+  "deb-qt6-declarative-dev"
+]
+extra-source "qt6-positioning-dev_6.4.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qt6-positioning/qt6-positioning-dev_6.4.2-1_amd64.deb"
+}

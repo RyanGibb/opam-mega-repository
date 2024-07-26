@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-libmpd-dev_0.10.0.0-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-libmpd-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-attoparsec-dev"
+  "deb-libghc-data-default-class-dev"
+  "deb-libghc-network-dev"
+  "deb-libghc-safe-exceptions-dev"
+  "deb-libghc-utf8-string-dev"
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+]
+extra-source "libghc-libmpd-dev_0.10.0.0-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-libmpd/libghc-libmpd-dev_0.10.0.0-1+b1_amd64.deb"
+}

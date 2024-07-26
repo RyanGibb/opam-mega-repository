@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-debmutate_0.65_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-debmutate"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-debian" {>= "0.1.46"}
+  "deb-python3-merge3"
+  "deb-python3-pcre"
+  "deb-python3-tr"
+]
+extra-source "python3-debmutate_0.65_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/debmutate/python3-debmutate_0.65_all.deb"
+}

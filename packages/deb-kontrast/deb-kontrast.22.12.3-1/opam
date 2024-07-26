@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kontrast_22.12.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kontrast"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libkf5coreaddons5" {>= "5.90.0~"}
+  "deb-libkf5i18n5" {>= "5.90.0~"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.15.0~"}
+  "deb-libqt5qml5" {>= "5.15.0~"}
+  "deb-libqt5sql5" {>= "5.15.0~"}
+  "deb-libqt5widgets5" {>= "5.15.0~"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-qml-module-org-kde-kirigami2"
+  "deb-qml-module-org-kde-kquickcontrolsaddons"
+  "deb-qml-module-qtquick-controls2"
+  "deb-qml-module-qtquick-layouts"
+  "deb-qml-module-qtquick-window2"
+  "deb-qml-module-qtquick2"
+  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb- libqt5gui5-gles" {>= "5.15.0~"})
+]
+extra-source "kontrast_22.12.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kontrast/kontrast_22.12.3-1_amd64.deb"
+}

@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librte-port18.11_18.11.11-1~deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librte-port18.11"]
+]
+depends: [
+  "deb-libbsd0" {>= "0.0"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libnuma1" {>= "2.0.11"}
+  "deb-libpcap0-8" {>= "0.9.8"}
+  "deb-librte-cmdline18-11" {>= "16.04"}
+  "deb-librte-cryptodev18-11" {>= "16.04"}
+  "deb-librte-eal18-11" {>= "16.04"}
+  "deb-librte-ethdev18-11" {>= "16.07~rc1"}
+  "deb-librte-hash18-11" {>= "16.04"}
+  "deb-librte-ip-frag18-11" {>= "17.08"}
+  "deb-librte-kni18-11" {>= "16.04"}
+  "deb-librte-kvargs18-11" {>= "16.04"}
+  "deb-librte-mbuf18-11" {>= "16.04"}
+  "deb-librte-mempool18-11" {>= "16.07~rc1"}
+  "deb-librte-meter18-11" {>= "16.04"}
+  "deb-librte-net18-11" {>= "16.11"}
+  "deb-librte-pci18-11" {>= "17.11"}
+  "deb-librte-ring18-11" {>= "16.04"}
+  "deb-librte-sched18-11" {>= "16.04"}
+]
+conflicts: [
+  "deb-libdpdk0"
+]
+extra-source "librte-port18.11_18.11.11-1~deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dpdk/librte-port18.11_18.11.11-1~deb10u1_amd64.deb"
+}

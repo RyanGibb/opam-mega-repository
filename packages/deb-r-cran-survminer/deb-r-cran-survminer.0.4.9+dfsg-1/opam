@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-survminer_0.4.9+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-survminer"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.1.1-2"}
+  "deb-r-cran-broom"
+  "deb-r-cran-dplyr"
+  "deb-r-cran-ggplot2"
+  "deb-r-cran-ggpubr" {>= "0.1.6"}
+  "deb-r-cran-ggtext" {>= "0.1.0"}
+  "deb-r-cran-gridextra" {>= "2.0"}
+  "deb-r-cran-magrittr"
+  "deb-r-cran-maxstat"
+  "deb-r-cran-purrr"
+  "deb-r-cran-rlang"
+  "deb-r-cran-scales"
+  "deb-r-cran-survival"
+  "deb-r-cran-survmisc"
+  "deb-r-cran-tibble"
+  "deb-r-cran-tidyr"
+]
+extra-source "r-cran-survminer_0.4.9+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-survminer/r-cran-survminer_0.4.9+dfsg-1_all.deb"
+}

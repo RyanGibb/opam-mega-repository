@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdar64-6000_2.7.8-2+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdar64-6000"]
+]
+depends: [
+  "deb-libargon2-1" {>= "0~20171227"}
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgcrypt20" {>= "1.10.0"}
+  "deb-liblz4-1" {>= "0.0~r130"}
+  "deb-liblzma5" {>= "5.1.1alpha+20120614"}
+  "deb-liblzo2-2" {>= "2.02"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libzstd1" {>= "1.5.2"}
+  "deb-zlib1g" {>= "1-1.2.0"}
+]
+extra-source "libdar64-6000_2.7.8-2+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dar/libdar64-6000_2.7.8-2+b3_amd64.deb"
+}

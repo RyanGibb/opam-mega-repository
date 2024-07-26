@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-django-mailman3_1.2.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-django-mailman3"]
+]
+depends: [
+  "deb-python3-any" {>= "3.5~"}
+  "deb-python3-django" {>= "1-1.11~"}
+  "deb-python3-django-allauth"
+  "deb-python3-django-compressor"
+  "deb-python3-django-gravatar2"
+  "deb-python3-mailmanclient" {>= "3.2.0"}
+  "deb-python3-tz"
+]
+conflicts: [
+  "deb-python-django-mailman3"
+]
+extra-source "python3-django-mailman3_1.2.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/django-mailman3/python3-django-mailman3_1.2.0-3_all.deb"
+}

@@ -1,0 +1,41 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmgl-glut7.5.0_2.4.2.1-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmgl-glut7.5.0"]
+]
+depends: [
+  "deb-freeglut3"
+  "deb-libc6" {>= "2.4"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgif7" {>= "5.1"}
+  "deb-libgl1"
+  "deb-libgsl23" {>= "2.5"}
+  "deb-libgslcblas0" {>= "2.4"}
+  "deb-libhdf4-0" {>= "4.1r2"}
+  "deb-libhdf5-103"
+  "deb-libhpdf-2-3-0" {>= "2.3.0"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libltdl7" {>= "2.4.6"}
+  "deb-libmgl-data"
+  "deb-libmgl7-5-0"
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libsz2"
+  "deb-libxi6"
+  "deb-libxmu6"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+conflicts: [
+  "deb-libmgl-glut5"
+  "deb-libmgl-glut6-0-0"
+  "deb-libmgl-glut7-1-0"
+  "deb-libmgl-glut7-2-0"
+  "deb-libmgl-glut7-4-0"
+  "deb-libmgl-glut7-4-1"
+]
+extra-source "libmgl-glut7.5.0_2.4.2.1-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mathgl/libmgl-glut7.5.0_2.4.2.1-5_amd64.deb"
+}

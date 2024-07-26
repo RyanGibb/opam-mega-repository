@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i haproxy_2.6.12-1+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r haproxy"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libc6" {>= "2.34"}
+  "deb-libcrypt1" {>= "1-4.1.0"}
+  "deb-liblua5-3-0"
+  "deb-libopentracing-c-wrapper0" {>= "1.1.0"}
+  "deb-libpcre2-8-0" {>= "10.22"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libsystemd0"
+  "deb-sysvinit-utils"
+]
+extra-source "haproxy_2.6.12-1+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haproxy/haproxy_2.6.12-1+deb12u1_amd64.deb"
+}

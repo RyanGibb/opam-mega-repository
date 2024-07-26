@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdist-zilla-plugin-metaprovides-package-perl_2.004003-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdist-zilla-plugin-metaprovides-package-perl"]
+]
+depends: [
+  "deb-libdata-dump-perl"
+  "deb-libdist-zilla-perl" {>= "5.000"}
+  "deb-libdist-zilla-plugin-metaprovides-perl"
+  "deb-libdist-zilla-role-modulemetadata-perl"
+  "deb-libmoose-perl"
+  "deb-libmoosex-lazyrequire-perl"
+  "deb-libmoosex-types-perl"
+  "deb-libnamespace-autoclean-perl"
+  "deb-libppi-perl"
+  "deb-libsafe-isa-perl"
+  "deb-perl-any"
+]
+extra-source "libdist-zilla-plugin-metaprovides-package-perl_2.004003-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libd/libdist-zilla-plugin-metaprovides-package-perl/libdist-zilla-plugin-metaprovides-package-perl_2.004003-2_all.deb"
+}

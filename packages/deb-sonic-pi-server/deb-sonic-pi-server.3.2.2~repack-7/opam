@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sonic-pi-server_3.2.2~repack-7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sonic-pi-server"]
+]
+depends: [
+  "deb-erlang-base"
+  "deb-jackd"
+  "deb-osmid"
+  "deb-ruby"
+  "deb-ruby-activesupport"
+  "deb-ruby-aubio"
+  "deb-ruby-hamster"
+  "deb-ruby-kramdown"
+  "deb-ruby-memoist"
+  "deb-ruby-multi-json"
+  "deb-ruby-rubame"
+  "deb-ruby-rugged"
+  "deb-ruby-sys-proctable"
+  "deb-ruby-treetop"
+  "deb-ruby-wavefile"
+  "deb-sc3-plugins-server"
+  "deb-sonic-pi-samples" {= "3.2.2~repack-7"}
+  "deb-sox"
+  "deb-supercollider-server"
+]
+extra-source "sonic-pi-server_3.2.2~repack-7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sonic-pi/sonic-pi-server_3.2.2~repack-7_all.deb"
+}

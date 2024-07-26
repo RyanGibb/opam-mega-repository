@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add apr-dev-1.7.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del apr-dev"]
+]
+depends: [
+  "apk-apr" {= "1.7.4-r0"}
+  "apk-pkgconf" {= "2.2.0-r0"}
+  "apk-util-linux-dev" {= "2.40.1-r1"}
+]
+extra-source "apr-dev-1.7.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/apr-dev-1.7.4-r0.apk"
+}

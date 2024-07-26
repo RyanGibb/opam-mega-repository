@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i copyq-plugins_3.7.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r copyq-plugins"]
+]
+depends: [
+  "deb-copyq" {= "3.7.3-1"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5gui5" {>= "5.2.0"}
+  "deb-libqt5widgets5" {>= "5.11.0~rc1"}
+  "deb-libstdc++6" {>= "4.8"}
+]
+extra-source "copyq-plugins_3.7.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/copyq/copyq-plugins_3.7.3-1_amd64.deb"
+}

@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dhelp_0.6.27_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dhelp"]
+]
+depends: [
+  "deb-doc-base"
+  "deb-ghostscript"
+  "deb-libcgi-pm-perl"
+  "deb-libdata-page-perl"
+  "deb-libhtml-parser-perl"
+  "deb-liblocale-gettext-perl"
+  "deb-libtemplate-perl"
+  "deb-liburi-perl"
+  "deb-perl-any"
+  "deb-poppler-utils"
+  "deb-ruby-debian"
+  "deb-ruby-gettext"
+  "deb-sensible-utils"
+  "deb-swish++"
+  "deb-ucf" {>= "0.8"}
+  ("deb-ruby" | "deb- ruby-interpreter")
+]
+extra-source "dhelp_0.6.27_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dhelp/dhelp_0.6.27_all.deb"
+}

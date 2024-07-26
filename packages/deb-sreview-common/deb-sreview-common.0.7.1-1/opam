@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sreview-common_0.7.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sreview-common"]
+]
+depends: [
+  "deb-ffmpeg"
+  "deb-libdatetime-format-iso8601-perl"
+  "deb-libdatetime-perl"
+  "deb-libmojo-pg-perl"
+  "deb-libmojolicious-perl"
+  "deb-libmoose-perl"
+  "deb-libnet-amazon-s3-perl"
+  "deb-pwgen"
+]
+extra-source "sreview-common_0.7.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sreview/sreview-common_0.7.1-1_all.deb"
+}

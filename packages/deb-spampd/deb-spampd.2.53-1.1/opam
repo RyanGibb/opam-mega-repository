@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i spampd_2.53-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r spampd"]
+]
+depends: [
+  "deb-adduser" {>= "3.59"}
+  "deb-dpkg" {>= "1.10.23"}
+  "deb-libnet-server-perl" {>= "0.89"}
+  "deb-lsb-base" {>= "3.0-3"}
+  "deb-perl-any"
+  "deb-spamassassin" {>= "2.6"}
+]
+extra-source "spampd_2.53-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/spampd/spampd_2.53-1.1_all.deb"
+}

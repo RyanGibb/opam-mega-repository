@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i vdr-plugin-skinenigmang_0.1.2+git20190720-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r vdr-plugin-skinenigmang"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libmagick++-6-q16-8"
+  "deb-libstdc++6" {>= "9"}
+  "deb-vdr"
+]
+extra-source "vdr-plugin-skinenigmang_0.1.2+git20190720-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/vdr-plugin-skinenigmang/vdr-plugin-skinenigmang_0.1.2+git20190720-2_amd64.deb"
+}

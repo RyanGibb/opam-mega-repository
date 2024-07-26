@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libplucene-perl_1.25-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libplucene-perl"]
+]
+depends: [
+  "deb-libbit-vector-minimal-perl"
+  "deb-libclass-accessor-perl"
+  "deb-libclass-virtual-perl"
+  "deb-libfile-slurp-perl"
+  "deb-libio-stringy-perl"
+  "deb-liblingua-stem-perl"
+  "deb-libtie-array-sorted-perl"
+  "deb-perl"
+]
+extra-source "libplucene-perl_1.25-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libp/libplucene-perl/libplucene-perl_1.25-5_all.deb"
+}

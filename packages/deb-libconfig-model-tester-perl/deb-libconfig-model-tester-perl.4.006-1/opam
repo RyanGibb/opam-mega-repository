@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libconfig-model-tester-perl_4.006-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libconfig-model-tester-perl"]
+]
+depends: [
+  "deb-libfile-copy-recursive-perl"
+  "deb-liblog-log4perl-perl"
+  "deb-libpath-tiny-perl"
+  "deb-libtest-differences-perl"
+  "deb-libtest-exception-perl"
+  "deb-libtest-file-contents-perl"
+  "deb-libtest-log-log4perl-perl"
+  "deb-libtest-memory-cycle-perl"
+  "deb-libtest-warn-perl"
+  "deb-perl-any"
+]
+extra-source "libconfig-model-tester-perl_4.006-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libconfig-model-tester-perl/libconfig-model-tester-perl_4.006-1_all.deb"
+}

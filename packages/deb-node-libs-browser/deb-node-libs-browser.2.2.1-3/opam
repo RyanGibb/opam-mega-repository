@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-libs-browser_2.2.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-libs-browser"]
+]
+depends: [
+  "deb-node-assert"
+  "deb-node-browserify-zlib"
+  "deb-node-buffer"
+  "deb-node-console-browserify"
+  "deb-node-constants-browserify"
+  "deb-node-crypto-browserify"
+  "deb-node-domain-browser"
+  "deb-node-events"
+  "deb-node-https-browserify"
+  "deb-node-os-browserify"
+  "deb-node-path-browserify"
+  "deb-node-process"
+  "deb-node-punycode"
+  "deb-node-querystring-es3"
+  "deb-node-readable-stream" {>= "3.4.0"}
+  "deb-node-stream-browserify"
+  "deb-node-stream-http"
+  "deb-node-string-decoder"
+  "deb-node-timers-browserify"
+  "deb-node-tty-browserify"
+  "deb-node-url"
+  "deb-node-util"
+  "deb-node-vm-browserify"
+  "deb-nodejs"
+]
+extra-source "node-libs-browser_2.2.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-libs-browser/node-libs-browser_2.2.1-3_all.deb"
+}

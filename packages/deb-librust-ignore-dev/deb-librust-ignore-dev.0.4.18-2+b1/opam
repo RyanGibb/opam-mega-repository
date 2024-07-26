@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-ignore-dev_0.4.18-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-ignore-dev"]
+]
+depends: [
+  "deb-librust-crossbeam-utils-0-8+default-dev"
+  "deb-librust-globset-dev"
+  "deb-librust-lazy-static-dev"
+  "deb-librust-log-dev"
+  "deb-librust-memchr-dev"
+  "deb-librust-regex+default-dev"
+  "deb-librust-same-file-dev"
+  "deb-librust-thread-local-1+default-dev"
+  "deb-librust-walkdir-dev"
+  "deb-librust-winapi-util-dev"
+]
+extra-source "librust-ignore-dev_0.4.18-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-ignore/librust-ignore-dev_0.4.18-2+b1_amd64.deb"
+}

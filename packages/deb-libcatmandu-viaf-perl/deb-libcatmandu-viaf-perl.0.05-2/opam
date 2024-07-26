@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcatmandu-viaf-perl_0.05-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcatmandu-viaf-perl"]
+]
+depends: [
+  "deb-libcatmandu-fix-datahub-perl"
+  "deb-libcatmandu-perl"
+  "deb-libjson-perl"
+  "deb-liblwp-protocol-https-perl"
+  "deb-libmoo-perl"
+  "deb-libwww-perl"
+  "deb-libxml-struct-perl"
+  "deb-perl-any"
+]
+extra-source "libcatmandu-viaf-perl_0.05-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libcatmandu-viaf-perl/libcatmandu-viaf-perl_0.05-2_all.deb"
+}

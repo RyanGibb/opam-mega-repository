@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-hyper-dev_0.14.19-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-hyper-dev"]
+]
+depends: [
+  "deb-librust-bytes-1+default-dev"
+  "deb-librust-futures-channel-0-3+default-dev"
+  "deb-librust-futures-core-0-3-dev"
+  "deb-librust-futures-util-0-3-dev"
+  "deb-librust-h2-dev"
+  "deb-librust-http-0-2+default-dev"
+  "deb-librust-http-body-0-4+default-dev"
+  "deb-librust-httparse-dev"
+  "deb-librust-httpdate-1+default-dev"
+  "deb-librust-itoa-1+default-dev"
+  "deb-librust-libc-0-2+default-dev"
+  "deb-librust-pin-project-lite-dev"
+  "deb-librust-socket2-0-4+default-dev"
+  "deb-librust-tokio-1+default-dev"
+  "deb-librust-tokio-1+net-dev"
+  "deb-librust-tokio-1+rt-dev"
+  "deb-librust-tokio-1+sync-dev"
+  "deb-librust-tokio-1+time-dev"
+  "deb-librust-tower-service-0-3+default-dev"
+  "deb-librust-tracing-0-1+std-dev"
+  "deb-librust-want-0-3+default-dev"
+]
+extra-source "librust-hyper-dev_0.14.19-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-hyper/librust-hyper-dev_0.14.19-1_amd64.deb"
+}

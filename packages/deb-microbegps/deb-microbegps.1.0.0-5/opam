@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i microbegps_1.0.0-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r microbegps"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-matplotlib"
+  "deb-python3-matplotlib-venn"
+  "deb-python3-numpy"
+  "deb-python3-pyqt5"
+  "deb-python3-scipy"
+]
+extra-source "microbegps_1.0.0-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/microbegps/microbegps_1.0.0-5_all.deb"
+}

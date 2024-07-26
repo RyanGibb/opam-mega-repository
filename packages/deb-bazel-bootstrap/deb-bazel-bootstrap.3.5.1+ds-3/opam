@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i bazel-bootstrap_3.5.1+ds-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r bazel-bootstrap"]
+]
+depends: [
+  "deb-bazel-bootstrap-data" {= "3.5.1+ds-3"}
+  "deb-build-essential"
+  "deb-libc6" {>= "2.17"}
+  "deb-libchecker-framework-java" {>= "3.0.1~"}
+  "deb-libdiffutils-java"
+  "deb-liberror-prone-java" {>= "2.4.0~"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgeronimo-annotation-1-3-spec-java"
+  "deb-libgoogle-api-client-java" {>= "1.22.0~"}
+  "deb-libgoogle-auth-java" {>= "0.17.1~"}
+  "deb-libgoogle-auto-common-java" {>= "0.10~"}
+  "deb-libgoogle-auto-service-java" {>= "1.0~rc4~"}
+  "deb-libgoogle-auto-value-java" {>= "1.6.3~rc1~"}
+  "deb-libgoogle-flogger-java" {>= "0.5.1~"}
+  "deb-libgrpc++1" {>= "1.30.2"}
+  "deb-libgrpc-java" {>= "1.26.0~"}
+  "deb-libgrpc10" {>= "1.30.2"}
+  "deb-libopencensus-java" {>= "0.24.0~"}
+  "deb-libprotobuf23" {>= "3.12.4"}
+  "deb-libprotoc23" {>= "3.12.4"}
+  "deb-libstdc++6" {>= "6"}
+  "deb-openjdk-11-jdk-headless"
+  "deb-protobuf-compiler-grpc-java-plugin" {>= "1.26.0~"}
+  "deb-python3"
+  "deb-unzip"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  "deb-zlib1g-dev"
+]
+extra-source "bazel-bootstrap_3.5.1+ds-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/bazel-bootstrap/bazel-bootstrap_3.5.1+ds-3_amd64.deb"
+}

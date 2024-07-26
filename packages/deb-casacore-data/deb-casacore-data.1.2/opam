@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i casacore-data_1.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r casacore-data"]
+]
+depends: [
+  "deb-casacore-data-igrf"
+  "deb-casacore-data-jpl-de200"
+  "deb-casacore-data-jpl-de405"
+  "deb-casacore-data-lines"
+  "deb-casacore-data-observatories"
+  "deb-casacore-data-sources"
+  "deb-casacore-data-tai-utc"
+]
+extra-source "casacore-data_1.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/casacore-data/casacore-data_1.2_all.deb"
+}

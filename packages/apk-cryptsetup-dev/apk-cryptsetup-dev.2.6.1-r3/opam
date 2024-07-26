@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add cryptsetup-dev-2.6.1-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del cryptsetup-dev"]
+]
+depends: [
+  "apk-cryptsetup-libs" {= "2.6.1-r3"}
+  "apk-json-c-dev" {= "0.16-r3"}
+  "apk-lvm2-dev" {= "2.03.21-r3"}
+  "apk-pkgconf" {= "1.9.5-r0"}
+  "apk-util-linux-dev" {= "2.38.1-r8"}
+]
+extra-source "cryptsetup-dev-2.6.1-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/cryptsetup-dev-2.6.1-r3.apk"
+}

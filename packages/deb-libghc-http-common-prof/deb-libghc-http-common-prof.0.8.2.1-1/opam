@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-http-common-prof_0.8.2.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-http-common-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-base64-bytestring-prof"
+  "deb-libghc-blaze-builder-prof"
+  "deb-libghc-case-insensitive-prof"
+  "deb-libghc-http-common-dev" {= "0.8.2.1-1"}
+  "deb-libghc-network-prof"
+  "deb-libghc-unordered-containers-prof"
+]
+extra-source "libghc-http-common-prof_0.8.2.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-http-common/libghc-http-common-prof_0.8.2.1-1_amd64.deb"
+}

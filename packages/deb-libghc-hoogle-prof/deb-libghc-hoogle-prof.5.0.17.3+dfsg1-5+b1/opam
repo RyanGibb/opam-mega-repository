@@ -1,0 +1,42 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-hoogle-prof_5.0.17.3+dfsg1-5+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-hoogle-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-aeson-prof"
+  "deb-libghc-cmdargs-prof"
+  "deb-libghc-conduit-extra-prof"
+  "deb-libghc-conduit-prof"
+  "deb-libghc-connection-prof"
+  "deb-libghc-extra-prof"
+  "deb-libghc-hoogle-dev" {= "5.0.17.3+dfsg1-5+b1"}
+  "deb-libghc-http-conduit-prof"
+  "deb-libghc-http-types-prof"
+  "deb-libghc-js-flot-prof"
+  "deb-libghc-js-jquery-prof"
+  "deb-libghc-mmap-prof"
+  "deb-libghc-network-prof"
+  "deb-libghc-network-uri-prof"
+  "deb-libghc-old-locale-prof"
+  "deb-libghc-process-extras-prof"
+  "deb-libghc-quickcheck2-prof"
+  "deb-libghc-resourcet-prof"
+  "deb-libghc-src-exts-prof"
+  "deb-libghc-storable-tuple-prof"
+  "deb-libghc-tar-prof"
+  "deb-libghc-uniplate-prof"
+  "deb-libghc-utf8-string-prof"
+  "deb-libghc-vector-prof"
+  "deb-libghc-wai-logger-prof"
+  "deb-libghc-wai-prof"
+  "deb-libghc-warp-prof"
+  "deb-libghc-warp-tls-prof"
+  "deb-libghc-zlib-prof"
+]
+extra-source "libghc-hoogle-prof_5.0.17.3+dfsg1-5+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-hoogle/libghc-hoogle-prof_5.0.17.3+dfsg1-5+b1_amd64.deb"
+}

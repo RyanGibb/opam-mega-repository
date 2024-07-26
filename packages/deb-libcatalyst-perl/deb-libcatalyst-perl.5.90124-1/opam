@@ -1,0 +1,63 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcatalyst-perl_5.90124-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcatalyst-perl"]
+]
+depends: [
+  "deb-libcgi-simple-perl"
+  "deb-libcgi-struct-xs-perl"
+  "deb-libclass-accessor-perl"
+  "deb-libclass-c3-adopt-next-perl"
+  "deb-libclass-c3-perl"
+  "deb-libclass-inspector-perl"
+  "deb-libclass-load-perl"
+  "deb-libdata-dump-perl"
+  "deb-libextutils-autoinstall-perl"
+  "deb-libfile-copy-recursive-perl"
+  "deb-libfile-modified-perl"
+  "deb-libfile-slurp-perl"
+  "deb-libhash-multivalue-perl"
+  "deb-libhtml-parser-perl"
+  "deb-libhttp-body-perl" {>= "1.22"}
+  "deb-libjson-maybexs-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-libmime-types-perl"
+  "deb-libmodule-pluggable-perl"
+  "deb-libmoose-perl"
+  "deb-libmoosex-emulate-class-accessor-fast-perl"
+  "deb-libmoosex-getopt-perl" {>= "0.48"}
+  "deb-libmoosex-methodattributes-perl"
+  "deb-libnamespace-clean-perl"
+  "deb-libpath-class-perl"
+  "deb-libperlio-utf8-strict-perl"
+  "deb-libplack-middleware-fixmissingbodyinredirect-perl"
+  "deb-libplack-middleware-methodoverride-perl" {>= "0.12"}
+  "deb-libplack-middleware-removeredundantbody-perl"
+  "deb-libplack-middleware-reverseproxy-perl"
+  "deb-libplack-perl" {>= "0.9991"}
+  "deb-libplack-test-externalserver-perl"
+  "deb-libsafe-isa-perl"
+  "deb-libscope-upper-perl"
+  "deb-libstream-buffered-perl"
+  "deb-libstring-rewriteprefix-perl"
+  "deb-libtask-weaken-perl"
+  "deb-libtest-mockobject-perl"
+  "deb-libtext-simpletable-perl"
+  "deb-libtree-simple-perl"
+  "deb-libtree-simple-visitorfactory-perl"
+  "deb-libtry-tiny-perl" {>= "0.17"}
+  "deb-liburi-perl" {>= "1.65"}
+  "deb-libwww-perl"
+  "deb-perl"
+  "deb-perl" {>= "5.15.8"}
+  "deb-perl-base"
+  ("deb-libmoose-perl" {>= "2.1300"} | "deb- libmoosex-role-withoverloading-perl")
+]
+conflicts: [
+  "deb-libcatalyst-plugin-unicode-encoding-perl"
+]
+extra-source "libcatalyst-perl_5.90124-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libcatalyst-perl/libcatalyst-perl_5.90124-1_all.deb"
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-covr_3.5.1+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-covr"]
+]
+depends: [
+  "deb-libjs-bootstrap"
+  "deb-node-html5shiv"
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.4-1"}
+  "deb-r-cran-crayon"
+  "deb-r-cran-digest"
+  "deb-r-cran-httr"
+  "deb-r-cran-jsonlite"
+  "deb-r-cran-rex"
+  "deb-r-cran-withr" {>= "1.0.2"}
+  "deb-r-cran-yaml"
+]
+extra-source "r-cran-covr_3.5.1+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-covr/r-cran-covr_3.5.1+dfsg-2_amd64.deb"
+}

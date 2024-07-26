@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i igdiscover_0.11-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r igdiscover"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-cutadapt"
+  "deb-python3-matplotlib" {>= "1.5.0"}
+  "deb-python3-numpy"
+  "deb-python3-pandas" {>= "0.16.2"}
+  "deb-python3-ruamel-yaml"
+  "deb-python3-scipy" {>= "0.16.1"}
+  "deb-python3-seaborn" {>= "0.9"}
+  "deb-python3-sqt"
+  "deb-python3-xopen" {>= "0.3.2"}
+]
+extra-source "igdiscover_0.11-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/igdiscover/igdiscover_0.11-3_all.deb"
+}

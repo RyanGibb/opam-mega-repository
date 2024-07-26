@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-base-dev_4.0.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-base-dev"]
+]
+depends: [
+  "deb-build-essential"
+  "deb-g++"
+  "deb-gcc"
+  "deb-gfortran"
+  "deb-libbz2-dev"
+  "deb-libicu-dev"
+  "deb-libjpeg-dev"
+  "deb-liblzma-dev"
+  "deb-libncurses5-dev"
+  "deb-libpcre2-dev"
+  "deb-libpcre3-dev"
+  "deb-libpng-dev"
+  "deb-libreadline-dev"
+  "deb-pkg-config"
+  "deb-r-base-core" {>= "4.0.4-1"}
+  "deb-xauth"
+  "deb-zlib1g-dev"
+  ("deb-libblas-dev" | "deb- libatlas-base-dev")
+  ("deb-liblapack-dev" | "deb- libatlas-base-dev")
+]
+extra-source "r-base-dev_4.0.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-base/r-base-dev_4.0.4-1_all.deb"
+}

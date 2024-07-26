@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-paraview_5.9.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-paraview"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libpython3-9" {>= "3.9.0~b4"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-paraview" {= "5.9.0-2"}
+  "deb-python3" {>= "3~"}
+  "deb-python3-any"
+]
+conflicts: [
+  "deb-python3-vtk9"
+]
+extra-source "python3-paraview_5.9.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/paraview/python3-paraview_5.9.0-2_amd64.deb"
+}

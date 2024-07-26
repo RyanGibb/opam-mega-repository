@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i php-horde-smtp_1.9.5-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r php-horde-smtp"]
+]
+depends: [
+  "deb-php-common"
+  "deb-php-horde-exception" {< "3.0.0~alpha1"}
+  "deb-php-horde-exception" {>= "2.0.0"}
+  "deb-php-horde-mail" {< "3.0.0~alpha1"}
+  "deb-php-horde-mail" {>= "2.0.0"}
+  "deb-php-horde-socket-client" {< "3.0.0~alpha1"}
+  "deb-php-horde-socket-client" {>= "2.0.0"}
+  "deb-php-horde-support" {< "3.0.0~alpha1"}
+  "deb-php-horde-support" {>= "2.0.0"}
+  "deb-php-horde-translation" {< "3.0.0~alpha1"}
+  "deb-php-horde-translation" {>= "2.2.0"}
+  "deb-php-horde-util" {< "3.0.0~alpha1"}
+  "deb-php-horde-util" {>= "2.0.0"}
+]
+extra-source "php-horde-smtp_1.9.5-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/php-horde-smtp/php-horde-smtp_1.9.5-3_all.deb"
+}

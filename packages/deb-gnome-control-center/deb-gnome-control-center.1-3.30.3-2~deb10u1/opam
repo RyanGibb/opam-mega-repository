@@ -1,0 +1,67 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnome-control-center_1:3.30.3-2~deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnome-control-center"]
+]
+depends: [
+  "deb-accountsservice"
+  "deb-apg"
+  "deb-colord" {>= "0.1.30"}
+  "deb-desktop-base" {>= "10.0.0"}
+  "deb-desktop-file-utils"
+  "deb-gnome-control-center-data" {< "1-3.31"}
+  "deb-gnome-control-center-data" {>= "1-3.30.3-2~deb10u1"}
+  "deb-gnome-desktop3-data"
+  "deb-gnome-settings-daemon" {>= "3.29"}
+  "deb-gsettings-desktop-schemas" {>= "3.27.2"}
+  "deb-libaccountsservice0" {>= "0.6.40"}
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.4"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libcanberra-gtk3-0" {>= "0.25"}
+  "deb-libcanberra0" {>= "0.2"}
+  "deb-libcheese-gtk25" {>= "3.18.0"}
+  "deb-libcheese8" {>= "3.28.0"}
+  "deb-libclutter-1-0-0" {>= "1.23.4"}
+  "deb-libclutter-gtk-1-0-0" {>= "0.91.8"}
+  "deb-libcolord-gtk1" {>= "0.1.24"}
+  "deb-libcolord2" {>= "1.4.3"}
+  "deb-libcups2" {>= "1.6.0"}
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.25.2"}
+  "deb-libglib2-0-0" {>= "2.55.1"}
+  "deb-libgnome-bluetooth13" {>= "3.18.2"}
+  "deb-libgnome-desktop-3-17" {>= "3.27.90"}
+  "deb-libgoa-1-0-0b" {>= "3.25.3"}
+  "deb-libgoa-backend-1-0-1" {>= "3.10.0"}
+  "deb-libgrilo-0-3-0" {>= "0.3.0"}
+  "deb-libgtk-3-0" {>= "3.22.20"}
+  "deb-libgtop-2-0-11" {>= "2.22.3"}
+  "deb-libgudev-1-0-0" {>= "146"}
+  "deb-libibus-1-0-5" {>= "1.5.2"}
+  "deb-libkrb5-3" {>= "1.8+dfsg"}
+  "deb-libmm-glib0" {>= "0.7.991"}
+  "deb-libnm0" {>= "1.1.90"}
+  "deb-libnma0" {>= "1.1.90"}
+  "deb-libpango-1-0-0" {>= "1.18.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.18.0"}
+  "deb-libpolkit-gobject-1-0" {>= "0.99"}
+  "deb-libpulse-mainloop-glib0" {>= "0.99.1"}
+  "deb-libpulse0" {>= "0.99.1"}
+  "deb-libpwquality1" {>= "1.1.0"}
+  "deb-libsecret-1-0" {>= "0.7"}
+  "deb-libsmbclient" {>= "2-4.0.3+dfsg1"}
+  "deb-libsoup2-4-1" {>= "2.41.90"}
+  "deb-libupower-glib3" {>= "0.99.0"}
+  "deb-libwacom2" {>= "0.7"}
+  "deb-libwayland-server0" {>= "1.0.2"}
+  "deb-libx11-6"
+  "deb-libxi6" {>= "2-1.2.99.4"}
+  "deb-libxml2" {>= "2.7.4"}
+]
+extra-source "gnome-control-center_1:3.30.3-2~deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnome-control-center/gnome-control-center_3.30.3-2~deb10u1_amd64.deb"
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ipvsadm_1:1.31-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ipvsadm"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libnl-3-200" {>= "3.2.7"}
+  "deb-libnl-genl-3-200" {>= "3.2.7"}
+  "deb-libpopt0" {>= "1.14"}
+  "deb-sysvinit-utils"
+]
+conflicts: [
+  "deb-lvs"
+]
+extra-source "ipvsadm_1:1.31-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/ipvsadm/ipvsadm_1.31-1+b1_amd64.deb"
+}

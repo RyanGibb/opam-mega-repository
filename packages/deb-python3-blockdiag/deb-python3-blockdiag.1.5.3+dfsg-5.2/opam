@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-blockdiag_1.5.3+dfsg-5.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-blockdiag"]
+]
+depends: [
+  "deb-python3-any" {>= "3.3.2-2~"}
+  "deb-python3-docutils"
+  "deb-python3-funcparserlib" {>= "0.3.4"}
+  "deb-python3-pil"
+  "deb-python3-pkg-resources"
+  "deb-python3-reportlab"
+  "deb-python3-webcolors"
+]
+extra-source "python3-blockdiag_1.5.3+dfsg-5.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/blockdiag/python3-blockdiag_1.5.3+dfsg-5.2_all.deb"
+}

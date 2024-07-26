@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openorienteering-mapper_0.8.4-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openorienteering-mapper"]
+]
+depends: [
+  "deb-libc6" {>= "2.27"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgdal20" {>= "2.0.1"}
+  "deb-libpolyclipping22" {>= "6.4.2"}
+  "deb-libproj13" {>= "4.8.0"}
+  "deb-libqt5core5a"
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5gui5" {>= "5.6.0~beta"}
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libqt5printsupport5" {>= "5.3.0"}
+  "deb-libqt5widgets5" {>= "5.11.0~rc1"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-qttools5-dev-tools"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "openorienteering-mapper_0.8.4-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openorienteering-mapper/openorienteering-mapper_0.8.4-1+b1_amd64.deb"
+}

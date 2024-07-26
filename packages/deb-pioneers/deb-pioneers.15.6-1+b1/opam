@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pioneers_15.6-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pioneers"]
+]
+depends: [
+  "deb-fonts-sil-gentium"
+  "deb-libavahi-client3" {>= "0.6.16"}
+  "deb-libavahi-common3" {>= "0.6.16"}
+  "deb-libavahi-glib1" {>= "0.6.16"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo2" {>= "1.12.0"}
+  "deb-libcanberra0" {>= "0.2"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.31.18"}
+  "deb-libgtk-3-0" {>= "3.21.5"}
+  "deb-libnotify4" {>= "0.7.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-librsvg2-common"
+  "deb-pioneers-console" {= "15.6-1+b1"}
+  "deb-pioneers-data" {= "15.6-1"}
+]
+extra-source "pioneers_15.6-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pioneers/pioneers_15.6-1+b1_amd64.deb"
+}

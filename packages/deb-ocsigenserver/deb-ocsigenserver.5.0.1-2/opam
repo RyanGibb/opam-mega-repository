@@ -1,0 +1,52 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ocsigenserver_5.0.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ocsigenserver"]
+]
+depends: [
+  "deb-libangstrom-ocaml"
+  "deb-libastring-ocaml"
+  "deb-libbase-ocaml"
+  "deb-libbase64-ocaml"
+  "deb-libbigstringaf-ocaml"
+  "deb-libc6" {>= "2.35"}
+  "deb-libcohttp-lwt-ocaml"
+  "deb-libcohttp-lwt-unix-ocaml"
+  "deb-libcohttp-ocaml"
+  "deb-libconduit-lwt-ocaml"
+  "deb-libconduit-ocaml"
+  "deb-libcryptokit-ocaml"
+  "deb-libdomain-name-ocaml"
+  "deb-libev4" {>= "1-4.04"}
+  "deb-libfindlib-ocaml"
+  "deb-libfmt-ocaml"
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-libhmap-ocaml"
+  "deb-libipaddr-ocaml"
+  "deb-liblogs-ocaml"
+  "deb-liblwt-log-ocaml"
+  "deb-liblwt-ocaml"
+  "deb-liblwt-ssl-ocaml"
+  "deb-libmagic-mime-ocaml"
+  "deb-libocplib-endian-ocaml"
+  "deb-libocsigenserver-ocaml"
+  "deb-libparsexp-ocaml"
+  "deb-libpcre-ocaml"
+  "deb-libpcre3"
+  "deb-libppx-sexp-conv-ocaml"
+  "deb-libsexplib-ocaml"
+  "deb-libsexplib0-ocaml"
+  "deb-libssl-ocaml"
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libstringext-ocaml"
+  "deb-liburi-ocaml"
+  "deb-libxml-light-ocaml"
+  "deb-libzarith-ocaml"
+  "deb-ocaml-base"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "ocsigenserver_5.0.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/ocsigenserver/ocsigenserver_5.0.1-2_amd64.deb"
+}

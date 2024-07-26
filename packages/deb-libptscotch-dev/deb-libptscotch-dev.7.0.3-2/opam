@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libptscotch-dev_7.0.3-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libptscotch-dev"]
+]
+depends: [
+  "deb-libptscotch-7-0" {= "7.0.3-2"}
+  "deb-libscotch-dev" {= "7.0.3-2"}
+  "deb-mpi-default-dev"
+  "deb-zlib1g-dev"
+]
+extra-source "libptscotch-dev_7.0.3-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/scotch/libptscotch-dev_7.0.3-2_amd64.deb"
+}

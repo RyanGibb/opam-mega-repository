@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-gauge_4.0.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-gauge"]
+]
+depends: [
+  "deb-node-ansi-regex"
+  "deb-node-aproba"
+  "deb-node-color-support"
+  "deb-node-console-control-strings"
+  "deb-node-has-unicode"
+  "deb-node-signal-exit"
+  "deb-node-string-width"
+  "deb-node-strip-ansi"
+  "deb-node-wide-align"
+]
+extra-source "node-gauge_4.0.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-gauge/node-gauge_4.0.4-1_all.deb"
+}

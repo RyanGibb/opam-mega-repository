@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i postgresql-15_15.7-0+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r postgresql-15"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgssapi-krb5-2" {>= "1.14+dfsg"}
+  "deb-libicu72" {>= "72.1~rc-1~"}
+  "deb-libldap-2-5-0" {>= "2.5.4"}
+  "deb-libllvm14"
+  "deb-liblz4-1" {>= "0.0~r130"}
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-libpq5" {>= "14~beta2"}
+  "deb-libselinux1" {>= "3.1~"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libsystemd0"
+  "deb-libuuid1" {>= "2.16"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libxslt1-1" {>= "1.1.25"}
+  "deb-libzstd1" {>= "1.5.2"}
+  "deb-postgresql-client-15"
+  "deb-postgresql-common" {>= "241~"}
+  "deb-ssl-cert"
+  "deb-tzdata"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-locales" | "deb- locales-all")
+]
+extra-source "postgresql-15_15.7-0+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.7-0+deb12u1_amd64.deb"
+}

@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dh-make-perl_0.122_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dh-make-perl"]
+]
+depends: [
+  "deb-debhelper" {>= "13"}
+  "deb-dpkg-dev"
+  "deb-fakeroot"
+  "deb-libapt-pkg-perl"
+  "deb-libarray-unique-perl"
+  "deb-libclass-accessor-perl"
+  "deb-libconfig-ini-perl"
+  "deb-libconfig-model-dpkg-perl"
+  "deb-libdebian-source-perl"
+  "deb-libdpkg-perl"
+  "deb-libemail-address-xs-perl"
+  "deb-libemail-date-format-perl"
+  "deb-libfile-which-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-libmodule-depends-perl"
+  "deb-libpod-parser-perl" {>= "1.63"}
+  "deb-libsoftware-license-perl"
+  "deb-libtie-ixhash-perl"
+  "deb-libwww-mechanize-perl"
+  "deb-libwww-perl"
+  "deb-libyaml-libyaml-perl"
+  "deb-libyaml-perl"
+  "deb-make"
+  "deb-perl-any"
+]
+extra-source "dh-make-perl_0.122_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dh-make-perl/dh-make-perl_0.122_all.deb"
+}

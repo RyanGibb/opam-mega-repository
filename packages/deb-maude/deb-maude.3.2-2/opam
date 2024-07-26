@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i maude_3.2-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r maude"]
+]
+depends: [
+  "deb-libbdd0c2"
+  "deb-libc6" {>= "2.33"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-libgmpxx4ldbl" {>= "2-6.2.1+dfsg1"}
+  "deb-libsigsegv2" {>= "2.9"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libtecla1" {>= "1.6.3"}
+]
+extra-source "maude_3.2-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/maude/maude_3.2-2_amd64.deb"
+}

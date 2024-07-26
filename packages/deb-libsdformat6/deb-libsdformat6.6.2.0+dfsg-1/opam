@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsdformat6_6.2.0+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsdformat6"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libconsole-bridge0-4"
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libignition-math4"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtinyxml2-6-2v5"
+  "deb-liburdfdom-model"
+  "deb-liburdfdom-model-state"
+  "deb-liburdfdom-sensor"
+  "deb-liburdfdom-world"
+  "deb-sdformat-sdf" {>= "6.2.0+dfsg-1"}
+]
+extra-source "libsdformat6_6.2.0+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sdformat/libsdformat6_6.2.0+dfsg-1_amd64.deb"
+}

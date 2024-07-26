@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add charybdis-4.1.2-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del charybdis"]
+]
+depends: [
+  "apk-libcrypto3" {= "3.1.6-r0"}
+  "apk-libltdl" {= "2.4.7-r2"}
+  "apk-libssl3" {= "3.1.6-r0"}
+  "apk-musl" {= "1.2.4-r2"}
+  "apk-sqlite-libs" {= "3.41.2-r3"}
+  "apk-zlib" {= "1.2.13-r1"}
+  ("apk-busybox-binsh" {= "1.36.1-r7"} | "apk-dash-binsh" {= "0.5.12-r2"} | "apk-yash-binsh" {= "2.54-r3"})
+]
+extra-source "charybdis-4.1.2-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/charybdis-4.1.2-r6.apk"
+}

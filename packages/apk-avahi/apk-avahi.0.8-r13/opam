@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add avahi-0.8-r13.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del avahi"]
+]
+depends: [
+  "apk-avahi-libs" {= "0.8-r13"}
+  "apk-dbus-libs" {= "1.14.8-r0"}
+  "apk-libcap2" {= "2.69-r0"}
+  "apk-libdaemon" {= "0.14-r4"}
+  "apk-libevent" {= "2.1.12-r6"}
+  "apk-libexpat" {= "2.6.2-r0"}
+  "apk-musl" {= "1.2.4-r2"}
+  ("apk-busybox-binsh" {= "1.36.1-r7"} | "apk-dash-binsh" {= "0.5.12-r2"} | "apk-yash-binsh" {= "2.54-r3"})
+]
+extra-source "avahi-0.8-r13.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/avahi-0.8-r13.apk"
+}

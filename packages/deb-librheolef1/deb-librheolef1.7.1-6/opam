@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librheolef1_7.1-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librheolef1"]
+]
+depends: [
+  "deb-libboost-iostreams1-74-0" {>= "1.74.0"}
+  "deb-libboost-mpi1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.17"}
+  "deb-libcholmod3" {>= "1-4.5.2"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgmp10"
+  "deb-libmumps-ptscotch-5-3" {>= "5.3.5"}
+  "deb-libopenmpi3" {>= "4.1.0"}
+  "deb-libptscotch-6-1" {>= "6.1.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libumfpack5" {>= "1-4.5.2"}
+]
+extra-source "librheolef1_7.1-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rheolef/librheolef1_7.1-6_amd64.deb"
+}

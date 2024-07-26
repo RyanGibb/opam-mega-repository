@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tmpreaper_1.6.14+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tmpreaper"]
+]
+depends: [
+  "deb-libc6" {>= "2.27"}
+  "deb-libmount1" {>= "2.24.2"}
+  ("deb-debconf" {>= "0.5.0"} | "deb- debconf-2-0")
+]
+conflicts: [
+  "deb-tmpwatch"
+]
+extra-source "tmpreaper_1.6.14+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tmpreaper/tmpreaper_1.6.14+deb10u1_amd64.deb"
+}

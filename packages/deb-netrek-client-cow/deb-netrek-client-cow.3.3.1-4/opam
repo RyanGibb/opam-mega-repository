@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i netrek-client-cow_3.3.1-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r netrek-client-cow"]
+]
+depends: [
+  "deb-libc6" {>= "2.15"}
+  "deb-libgmp10"
+  "deb-libimlib2" {>= "1.4.5"}
+  "deb-libsdl-mixer1-2"
+  "deb-libsdl1-2debian" {>= "1.2.11"}
+  "deb-libx11-6"
+  "deb-libxxf86vm1"
+]
+extra-source "netrek-client-cow_3.3.1-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/netrek-client-cow/netrek-client-cow_3.3.1-4_amd64.deb"
+}

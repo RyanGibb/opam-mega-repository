@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i chatty_0.2.0-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r chatty"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libebook-1-2-20" {>= "3.17"}
+  "deb-libebook-contacts-1-2-3" {>= "3.16.2"}
+  "deb-libedataserver-1-2-25" {>= "3.17"}
+  "deb-libfeedback-0-0-0" {>= "0.0.0+git20200305"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.59.0"}
+  "deb-libgtk-3-0" {>= "3.21.5"}
+  "deb-libhandy-1-0" {>= "1.0.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libphonenumber8"
+  "deb-libpurple0" {>= "2.8.0"}
+  "deb-libsqlite3-0" {>= "3.7.15"}
+  "deb-libstdc++6" {>= "5.2"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "chatty_0.2.0-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/chatty/chatty_0.2.0-1+b1_amd64.deb"
+}

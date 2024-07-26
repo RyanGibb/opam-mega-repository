@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcaffe1_1.0.0+git20180821.99bd997-8+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcaffe1"]
+]
+depends: [
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0"}
+  "deb-libboost-python1-74-0"
+  "deb-libboost-python1-74-0" {>= "1.74.0"}
+  "deb-libboost-thread1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgflags2-2"
+  "deb-libgoogle-glog0v5"
+  "deb-libhdf5-103-1"
+  "deb-libhdf5-hl-100"
+  "deb-libleveldb1d"
+  "deb-liblmdb0" {>= "0.9.7"}
+  "deb-libopencv-core4-5" {>= "4.5.0+dfsg"}
+  "deb-libopencv-imgcodecs4-5" {>= "4.5.0+dfsg"}
+  "deb-libopencv-imgproc4-5" {>= "4.5.0+dfsg"}
+  "deb-libprotobuf23" {>= "3.12.3"}
+  "deb-libpython3-9" {>= "3.9.0~b4"}
+  "deb-libstdc++6" {>= "9"}
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libopenblas-base" | "deb- libatlas3-base" | "deb- libmkl-rt" | "deb- libblas-so-3")
+]
+conflicts: [
+  "deb-libcaffe-cuda1"
+]
+extra-source "libcaffe1_1.0.0+git20180821.99bd997-8+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/caffe/libcaffe1_1.0.0+git20180821.99bd997-8+b2_amd64.deb"
+}

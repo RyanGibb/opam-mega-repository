@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i planner_0.14.6-7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r planner"]
+]
+depends: [
+  "deb-libart-2-0-2" {>= "2.3.17"}
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglade2-0" {>= "1-2.6.4-2~"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libgnomecanvas2-0" {>= "2.11.1"}
+  "deb-libgtk2-0-0" {>= "2.24.32"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpython2-7" {>= "2.7"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libxslt1-1" {>= "1.1.25"}
+  "deb-planner-data" {= "0.14.6-7"}
+  "deb-python" {< "2.8"}
+  "deb-python" {>= "2.7~"}
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7~"}
+  "deb-shared-mime-info"
+]
+extra-source "planner_0.14.6-7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/planner/planner_0.14.6-7_amd64.deb"
+}

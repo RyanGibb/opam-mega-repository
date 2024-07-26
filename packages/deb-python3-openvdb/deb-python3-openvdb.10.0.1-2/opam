@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-openvdb_10.0.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-openvdb"]
+]
+depends: [
+  "deb-libboost-numpy1-74-0"
+  "deb-libboost-numpy1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-python1-74-0"
+  "deb-libboost-python1-74-0" {>= "1.74.0+ds1"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libimath-3-1-29" {>= "3.1.6"}
+  "deb-liblog4cplus-2-0-5" {>= "2.0.8"}
+  "deb-libopenvdb-ax10-0" {>= "10.0.1"}
+  "deb-libopenvdb10-0" {>= "10.0.1"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libtbb12" {>= "2021.4.0"}
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-any" {>= "3.7~"}
+  "deb-python3-numpy"
+  "deb-python3-numpy" {>= "1-1.22.0"}
+]
+extra-source "python3-openvdb_10.0.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openvdb/python3-openvdb_10.0.1-2_amd64.deb"
+}

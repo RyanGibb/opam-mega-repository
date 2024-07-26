@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libjaxws-java_2.3.0.2-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libjaxws-java"]
+]
+depends: [
+  "deb-libasm-java" {>= "9.2"}
+  "deb-libfastinfoset-java" {>= "1.2.12"}
+  "deb-libgeronimo-annotation-1-3-spec-java"
+  "deb-libgmbal-java" {>= "4.0.0-b002"}
+  "deb-libjaxb-api-java" {>= "2.3.1"}
+  "deb-libjaxb-java"
+  "deb-libjaxws-api-java" {>= "2.3.0"}
+  "deb-libjws-api-java"
+  "deb-libmetro-policy-java" {>= "2.7.2"}
+  "deb-libmimepull-java" {>= "1.9.7"}
+  "deb-libsaaj-java" {>= "1.4.0"}
+  "deb-libsaaj-ri-java" {>= "1.4.1"}
+  "deb-libstax-ex-java" {>= "1.7.8"}
+  "deb-libstax2-api-java"
+  "deb-libstreambuffer-java" {>= "1.5.4"}
+  "deb-libwoodstox-java"
+  "deb-libxml-commons-resolver1-1-java" {>= "1.2"}
+]
+extra-source "libjaxws-java_2.3.0.2-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/j/jaxws/libjaxws-java_2.3.0.2-2_all.deb"
+}

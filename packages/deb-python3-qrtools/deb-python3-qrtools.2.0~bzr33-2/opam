@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-qrtools_2.0~bzr33-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-qrtools"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-pil"
+  "deb-python3-zbar"
+  "deb-qrencode"
+]
+extra-source "python3-qrtools_2.0~bzr33-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qr-tools/python3-qrtools_2.0~bzr33-2_all.deb"
+}

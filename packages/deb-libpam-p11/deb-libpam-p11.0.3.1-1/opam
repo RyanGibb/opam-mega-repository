@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpam-p11_0.3.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpam-p11"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libp11-3" {>= "0.4.4"}
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-libssl1-1" {>= "1.1.0"}
+]
+conflicts: [
+  "deb-libpam-opensc"
+]
+extra-source "libpam-p11_0.3.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pam-p11/libpam-p11_0.3.1-1_amd64.deb"
+}

@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-libwww-6.72-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-libwww"]
+]
+depends: [
+  "apk-perl" {= "5.38.2-r0"}
+  "apk-perl-encode-locale" {= "1.05-r5"}
+  "apk-perl-file-listing" {= "6.16-r0"}
+  "apk-perl-html-parser" {= "3.81-r2"}
+  "apk-perl-http-cookiejar" {= "0.014-r1"}
+  "apk-perl-http-cookies" {= "6.10-r1"}
+  "apk-perl-http-date" {= "6.06-r0"}
+  "apk-perl-http-message" {= "6.45-r0"}
+  "apk-perl-http-negotiate" {= "6.01-r4"}
+  "apk-perl-lwp-mediatypes" {= "6.04-r3"}
+  "apk-perl-net-http" {= "6.23-r1"}
+  "apk-perl-try-tiny" {= "0.31-r2"}
+  "apk-perl-uri" {= "5.21-r0"}
+  "apk-perl-www-robotrules" {= "6.02-r4"}
+]
+extra-source "perl-libwww-6.72-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/perl-libwww-6.72-r0.apk"
+}

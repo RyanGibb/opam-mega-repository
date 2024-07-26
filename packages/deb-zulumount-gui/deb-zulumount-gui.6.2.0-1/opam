@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i zulumount-gui_6.2.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r zulumount-gui"]
+]
+depends: [
+  "deb-libblkid1" {>= "2.16"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgcrypt20" {>= "1.10.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.14.1"}
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.14.1"}
+  "deb-libsecret-1-0" {>= "0.7"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libzulucryptpluginmanager1-0-0" {>= "5.0.2"}
+  "deb-zulumount-cli"
+  "deb-zulupolkit"
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+]
+extra-source "zulumount-gui_6.2.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/z/zulucrypt/zulumount-gui_6.2.0-1_amd64.deb"
+}

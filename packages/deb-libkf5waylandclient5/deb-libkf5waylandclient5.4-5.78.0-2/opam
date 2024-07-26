@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkf5waylandclient5_4:5.78.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkf5waylandclient5"]
+]
+depends: [
+  "deb-kwayland-data" {= "4-5.78.0-2"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-libwayland-client0" {>= "1.13~"}
+  ("deb-libqt5gui5" {>= "5.14.0~"} | "deb- libqt5gui5-gles" {>= "5.14.0~"})
+]
+extra-source "libkf5waylandclient5_4:5.78.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kwayland/libkf5waylandclient5_5.78.0-2_amd64.deb"
+}

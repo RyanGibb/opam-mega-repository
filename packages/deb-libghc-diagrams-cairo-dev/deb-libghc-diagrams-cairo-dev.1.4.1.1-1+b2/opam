@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-diagrams-cairo-dev_1.4.1.1-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-diagrams-cairo-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libghc-cairo-dev"
+  "deb-libghc-colour-dev"
+  "deb-libghc-data-default-class-dev"
+  "deb-libghc-diagrams-core-dev"
+  "deb-libghc-diagrams-lib-dev"
+  "deb-libghc-hashable-dev"
+  "deb-libghc-juicypixels-dev"
+  "deb-libghc-lens-dev"
+  "deb-libghc-optparse-applicative-dev"
+  "deb-libghc-pango-dev"
+  "deb-libghc-split-dev"
+  "deb-libghc-statestack-dev"
+  "deb-libghc-vector-dev"
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libgmp10"
+  "deb-libharfbuzz0b" {>= "0.6.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libghc-diagrams-cairo-dev_1.4.1.1-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-diagrams-cairo/libghc-diagrams-cairo-dev_1.4.1.1-1+b2_amd64.deb"
+}

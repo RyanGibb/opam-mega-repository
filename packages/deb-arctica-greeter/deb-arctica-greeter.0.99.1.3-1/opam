@@ -1,0 +1,41 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i arctica-greeter_0.99.1.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r arctica-greeter"]
+]
+depends: [
+  "deb-fonts-cabin"
+  "deb-fonts-cantarell"
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libayatana-ido3-0-4-0" {>= "0.4.0"}
+  "deb-libayatana-indicator3-7" {>= "0.6.0"}
+  "deb-libc6" {>= "2.27"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.14.0"}
+  "deb-libcanberra0" {>= "0.2"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libgtk-3-0" {>= "3.21.4"}
+  "deb-liblightdm-gobject-1-0" {>= "1.16.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpixman-1-0"
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-lightdm"
+  "deb-marco"
+  "deb-mate-settings-daemon"
+  "deb-network-manager"
+  "deb-numix-gtk-theme"
+  "deb-numix-icon-theme"
+  "deb-python3"
+  "deb-systemd"
+  "deb-x11-xkb-utils"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "arctica-greeter_0.99.1.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/arctica-greeter/arctica-greeter_0.99.1.3-1_amd64.deb"
+}

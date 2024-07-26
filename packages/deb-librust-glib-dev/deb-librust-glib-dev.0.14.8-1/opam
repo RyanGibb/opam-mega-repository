@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-glib-dev_0.14.8-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-glib-dev"]
+]
+depends: [
+  "deb-librust-bitflags-1+default-dev"
+  "deb-librust-futures-channel-0-3+default-dev"
+  "deb-librust-futures-core-0-3-dev"
+  "deb-librust-futures-executor-0-3+default-dev"
+  "deb-librust-futures-task-0-3-dev"
+  "deb-librust-glib-macros-0-14+default-dev"
+  "deb-librust-glib-sys-0-14+default-dev"
+  "deb-librust-glib-sys-0-14+dox-dev"
+  "deb-librust-glib-sys-0-14+v2-50-dev"
+  "deb-librust-glib-sys-0-14+v2-52-dev"
+  "deb-librust-glib-sys-0-14+v2-54-dev"
+  "deb-librust-glib-sys-0-14+v2-56-dev"
+  "deb-librust-glib-sys-0-14+v2-58-dev"
+  "deb-librust-glib-sys-0-14+v2-60-dev"
+  "deb-librust-glib-sys-0-14+v2-62-dev"
+  "deb-librust-glib-sys-0-14+v2-64-dev"
+  "deb-librust-glib-sys-0-14+v2-66-dev"
+  "deb-librust-glib-sys-0-14+v2-68-dev"
+  "deb-librust-gobject-sys-0-14+default-dev"
+  "deb-librust-gobject-sys-0-14+dox-dev"
+  "deb-librust-gobject-sys-0-14+v2-54-dev"
+  "deb-librust-gobject-sys-0-14+v2-58-dev"
+  "deb-librust-gobject-sys-0-14+v2-62-dev"
+  "deb-librust-libc-0-2+default-dev"
+  "deb-librust-log-0-4+default-dev"
+  "deb-librust-once-cell-1+default-dev"
+  "deb-librust-smallvec-1+default-dev"
+]
+extra-source "librust-glib-dev_0.14.8-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-glib/librust-glib-dev_0.14.8-1_amd64.deb"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ldb-2.8.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ldb"]
+]
+depends: [
+  "apk-lmdb" {= "0.9.32-r0"}
+  "apk-musl" {= "1.2.5-r0"}
+  "apk-talloc" {= "2.4.2-r1"}
+  "apk-tdb-libs" {= "1.4.9-r1"}
+  "apk-tevent" {= "0.16.1-r0"}
+]
+extra-source "ldb-2.8.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ldb-2.8.0-r1.apk"
+}

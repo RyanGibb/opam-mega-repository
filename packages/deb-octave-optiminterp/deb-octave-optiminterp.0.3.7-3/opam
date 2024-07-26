@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i octave-optiminterp_0.3.7-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r octave-optiminterp"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgfortran5" {>= "10"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-octave"
+  "deb-octave" {>= "7.3.0"}
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "octave-optiminterp_0.3.7-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/octave-optiminterp/octave-optiminterp_0.3.7-3_amd64.deb"
+}

@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnome-boxes_3.30.3-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnome-boxes"]
+]
+depends: [
+  "deb-libarchive13" {>= "3.1.2"}
+  "deb-libc6" {>= "2.15"}
+  "deb-libcairo2" {>= "1.6.0"}
+  "deb-libfreerdp2-2" {>= "2.0.0~git20160317.1.75ae3f5+dfsg1"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.25.2"}
+  "deb-libglib2-0-0" {>= "2.52.0"}
+  "deb-libgovirt2" {>= "0.3.4"}
+  "deb-libgtk-3-0" {>= "3.22.20"}
+  "deb-libgtk-vnc-2-0-0" {>= "0.5.1"}
+  "deb-libgudev-1-0-0" {>= "165"}
+  "deb-libosinfo-1-0-0" {>= "0.2.12~"}
+  "deb-libosinfo-bin"
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-librest-0-7-0" {>= "0.7.90"}
+  "deb-libsecret-1-0" {>= "0.7"}
+  "deb-libsoup2-4-1" {>= "2.44"}
+  "deb-libspice-client-glib-2-0-8" {>= "0.33"}
+  "deb-libspice-client-gtk-3-0-5" {>= "0.32"}
+  "deb-libtracker-sparql-2-0-0" {>= "0.10.0"}
+  "deb-libusb-1-0-0" {>= "2-1.0.8"}
+  "deb-libvirt-daemon"
+  "deb-libvirt-glib-1-0-0" {>= "0.2.3~"}
+  "deb-libwebkit2gtk-4-0-37" {>= "2.15.90"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-mtools"
+  "deb-tracker" {>= "2.0"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "gnome-boxes_3.30.3-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnome-boxes/gnome-boxes_3.30.3-2_amd64.deb"
+}

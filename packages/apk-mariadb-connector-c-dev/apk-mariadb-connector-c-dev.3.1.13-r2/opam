@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mariadb-connector-c-dev-3.1.13-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mariadb-connector-c-dev"]
+]
+depends: [
+  "apk-mariadb-connector-c" {= "3.1.13-r2"}
+  "apk-musl" {= "1.2.2-r9"}
+  "apk-openssl-dev" {= "1.1.1w-r1"}
+  "apk-pkgconf" {= "1.8.1-r0"}
+  "apk-zlib-dev" {= "1.2.12-r3"}
+]
+extra-source "mariadb-connector-c-dev-3.1.13-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/mariadb-connector-c-dev-3.1.13-r2.apk"
+}

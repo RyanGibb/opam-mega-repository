@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kinput2-wnn_3.1-13+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kinput2-wnn"]
+]
+depends: [
+  "deb-freewnn-common"
+  "deb-kinput2-common"
+  "deb-libc6" {>= "2.14"}
+  "deb-libice6" {>= "1-1.0.0"}
+  "deb-libsm6"
+  "deb-libwnn6-1" {>= "1.0.0"}
+  "deb-libx11-6"
+  "deb-libxaw7"
+  "deb-libxext6"
+  "deb-libxmu6"
+  "deb-libxpm4"
+  "deb-libxt6"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "kinput2-wnn_3.1-13+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kinput2/kinput2-wnn_3.1-13+b1_amd64.deb"
+}

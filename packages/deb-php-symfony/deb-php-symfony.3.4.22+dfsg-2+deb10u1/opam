@@ -1,0 +1,83 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i php-symfony_3.4.22+dfsg-2+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r php-symfony"]
+]
+depends: [
+  "deb-php-apcu"
+  "deb-php-common"
+  "deb-php-doctrine-common" {< "3~~"}
+  "deb-php-doctrine-common" {>= "2.4"}
+  "deb-php-fig-link-util" {< "2~~"}
+  "deb-php-fig-link-util" {>= "1.0"}
+  "deb-php-intl"
+  "deb-php-mbstring"
+  "deb-php-psr-cache" {< "2~~"}
+  "deb-php-psr-cache" {>= "1.0"}
+  "deb-php-psr-container" {< "2~~"}
+  "deb-php-psr-container" {>= "1.0"}
+  "deb-php-psr-link" {< "2~~"}
+  "deb-php-psr-link" {>= "1.0"}
+  "deb-php-psr-log" {< "2~~"}
+  "deb-php-psr-log" {>= "1.0"}
+  "deb-php-psr-simple-cache" {< "2~~"}
+  "deb-php-psr-simple-cache" {>= "1.0"}
+  "deb-php-symfony-asset" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-browser-kit" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-cache" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-class-loader" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-config" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-console" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-css-selector" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-debug" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-debug-bundle" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-dependency-injection" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-doctrine-bridge" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-dom-crawler" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-dotenv" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-event-dispatcher" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-expression-language" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-filesystem" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-finder" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-form" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-framework-bundle" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-http-foundation" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-http-kernel" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-inflector" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-intl" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-ldap" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-lock" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-monolog-bridge" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-options-resolver" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-process" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-property-access" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-property-info" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-proxy-manager-bridge" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-routing" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-security" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-security-bundle" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-security-core" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-security-csrf" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-security-guard" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-security-http" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-serializer" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-stopwatch" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-templating" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-translation" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-twig-bridge" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-twig-bundle" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-validator" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-var-dumper" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-web-link" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-web-profiler-bundle" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-web-server-bundle" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-workflow" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-symfony-yaml" {= "3.4.22+dfsg-2+deb10u1"}
+  "deb-php-twig"
+  "deb-php-xml"
+]
+extra-source "php-symfony_3.4.22+dfsg-2+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/symfony/php-symfony_3.4.22+dfsg-2+deb10u1_all.deb"
+}

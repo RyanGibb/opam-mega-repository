@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-simple-logger-dev_1.16.0-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-simple-logger-dev"]
+]
+depends: [
+  "deb-librust-atty-dev"
+  "deb-librust-log-dev"
+  "deb-librust-winapi-0-3+default-dev"
+  "deb-librust-winapi-0-3+handleapi-dev"
+  "deb-librust-winapi-0-3+winbase-dev"
+]
+extra-source "librust-simple-logger-dev_1.16.0-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-simple-logger/librust-simple-logger-dev_1.16.0-1+b1_amd64.deb"
+}

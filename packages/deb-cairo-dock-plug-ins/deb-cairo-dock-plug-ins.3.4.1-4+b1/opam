@@ -1,0 +1,55 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cairo-dock-plug-ins_3.4.1-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cairo-dock-plug-ins"]
+]
+depends: [
+  "deb-cairo-dock-alsamixer-plug-in"
+  "deb-cairo-dock-animated-icons-plug-in"
+  "deb-cairo-dock-cairo-penguin-plug-in"
+  "deb-cairo-dock-clipper-plug-in"
+  "deb-cairo-dock-clock-plug-in"
+  "deb-cairo-dock-dbus-plug-in"
+  "deb-cairo-dock-desklet-rendering-plug-in"
+  "deb-cairo-dock-dialog-rendering-plug-in"
+  "deb-cairo-dock-dnd2share-plug-in"
+  "deb-cairo-dock-drop-indicator-plug-in"
+  "deb-cairo-dock-dustbin-plug-in"
+  "deb-cairo-dock-folders-plug-in"
+  "deb-cairo-dock-gmenu-plug-in"
+  "deb-cairo-dock-icon-effect-plug-in"
+  "deb-cairo-dock-illusion-plug-in"
+  "deb-cairo-dock-impulse-plug-in"
+  "deb-cairo-dock-keyboard-indicator-plug-in"
+  "deb-cairo-dock-logout-plug-in"
+  "deb-cairo-dock-mail-plug-in"
+  "deb-cairo-dock-messaging-menu-plug-in"
+  "deb-cairo-dock-motion-blur-plug-in"
+  "deb-cairo-dock-musicplayer-plug-in"
+  "deb-cairo-dock-netspeed-plug-in"
+  "deb-cairo-dock-powermanager-plug-in"
+  "deb-cairo-dock-quick-browser-plug-in"
+  "deb-cairo-dock-recent-events-plug-in"
+  "deb-cairo-dock-remote-control-plug-in"
+  "deb-cairo-dock-rendering-plug-in"
+  "deb-cairo-dock-rssreader-plug-in"
+  "deb-cairo-dock-shortcuts-plug-in"
+  "deb-cairo-dock-showdesktop-plug-in"
+  "deb-cairo-dock-showmouse-plug-in"
+  "deb-cairo-dock-slider-plug-in"
+  "deb-cairo-dock-stack-plug-in"
+  "deb-cairo-dock-switcher-plug-in"
+  "deb-cairo-dock-system-monitor-plug-in"
+  "deb-cairo-dock-systray-plug-in"
+  "deb-cairo-dock-terminal-plug-in"
+  "deb-cairo-dock-tomboy-plug-in"
+  "deb-cairo-dock-toons-plug-in"
+  "deb-cairo-dock-weather-plug-in"
+  "deb-cairo-dock-wifi-plug-in"
+  "deb-cairo-dock-xgamma-plug-in"
+]
+extra-source "cairo-dock-plug-ins_3.4.1-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cairo-dock-plug-ins/cairo-dock-plug-ins_3.4.1-4+b1_amd64.deb"
+}

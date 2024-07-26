@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i freeorion_0.4.10.1-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r freeorion"]
+]
+depends: [
+  "deb-freeorion-data" {= "0.4.10.1-1"}
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0"}
+  "deb-libboost-iostreams1-74-0" {>= "1.74.0"}
+  "deb-libboost-locale1-74-0" {>= "1.74.0"}
+  "deb-libboost-log1-74-0" {>= "1.74.0"}
+  "deb-libboost-python1-74-0"
+  "deb-libboost-python1-74-0" {>= "1.74.0"}
+  "deb-libboost-regex1-74-0"
+  "deb-libboost-serialization1-74-0" {>= "1.74.0"}
+  "deb-libboost-thread1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libfreetype6" {>= "2.3.9"}
+  "deb-libgcc-s1" {>= "3.4"}
+  "deb-libgl1"
+  "deb-libglew2-1" {>= "1.12.0"}
+  "deb-libopenal1" {>= "1.14"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libpython3-9" {>= "3.9.0~b4"}
+  "deb-libsdl2-2-0-0" {>= "2.0.12+dfsg1"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libvorbis0a" {>= "1.2.3"}
+  "deb-libvorbisfile3" {>= "1.1.2"}
+]
+extra-source "freeorion_0.4.10.1-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/freeorion/freeorion_0.4.10.1-1+b2_amd64.deb"
+}

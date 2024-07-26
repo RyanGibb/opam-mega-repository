@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i nano_7.2-1+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r nano"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libncursesw6" {>= "6"}
+  "deb-libtinfo6" {>= "6"}
+]
+conflicts: [
+  "deb-pico"
+]
+extra-source "nano_7.2-1+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/nano/nano_7.2-1+deb12u1_amd64.deb"
+}

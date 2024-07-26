@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-virtualenv_20.4.0+ds-2+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-virtualenv"]
+]
+depends: [
+  "deb-python-pip-whl" {>= "20.0.2"}
+  "deb-python3-any"
+  "deb-python3-appdirs"
+  "deb-python3-distlib" {>= "0.3.1"}
+  "deb-python3-distutils"
+  "deb-python3-filelock"
+  "deb-python3-importlib-metadata"
+  "deb-python3-pip" {>= "20.1-1~"}
+  "deb-python3-pkg-resources"
+  "deb-python3-six"
+]
+extra-source "python3-virtualenv_20.4.0+ds-2+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-virtualenv/python3-virtualenv_20.4.0+ds-2+deb11u1_all.deb"
+}

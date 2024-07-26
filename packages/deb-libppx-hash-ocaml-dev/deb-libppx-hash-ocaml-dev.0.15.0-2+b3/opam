@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libppx-hash-ocaml-dev_0.15.0-2+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libppx-hash-ocaml-dev"]
+]
+depends: [
+  "deb-libbase-ocaml-dev"
+  "deb-libocaml-compiler-libs-ocaml-dev"
+  "deb-libppx-compare-ocaml-dev"
+  "deb-libppx-hash-ocaml"
+  "deb-libppxlib-ocaml-dev"
+  "deb-libsexplib0-ocaml-dev"
+  "deb-ocaml"
+]
+extra-source "libppx-hash-ocaml-dev_0.15.0-2+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/ppx-hash/libppx-hash-ocaml-dev_0.15.0-2+b3_amd64.deb"
+}

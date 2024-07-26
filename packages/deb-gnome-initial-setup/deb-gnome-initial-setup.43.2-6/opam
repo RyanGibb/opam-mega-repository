@@ -1,0 +1,47 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnome-initial-setup_43.2-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnome-initial-setup"]
+]
+depends: [
+  "deb-adduser"
+  "deb-desktop-base"
+  "deb-gnome-settings-daemon" {>= "3.24"}
+  "deb-libaccountsservice0" {>= "0.6.24"}
+  "deb-libadwaita-1-0" {>= "1.2~alpha"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libgdm1" {>= "3.8.3"}
+  "deb-libgeoclue-2-0" {>= "2.4.0"}
+  "deb-libgeocode-glib-2-0" {>= "0.99.1"}
+  "deb-libglib2-0-0" {>= "2.63.1"}
+  "deb-libgnome-desktop-4-2" {>= "3.17.92"}
+  "deb-libgoa-1-0-0b" {>= "3.45.1"}
+  "deb-libgoa-backend-1-0-1" {>= "3.45.1"}
+  "deb-libgtk-3-0" {>= "3.21.5"}
+  "deb-libgtk-4-1" {>= "4.6.0"}
+  "deb-libgweather-4-0" {>= "4.1"}
+  "deb-libibus-1-0-5" {>= "1.5.2"}
+  "deb-libjson-glib-1-0-0" {>= "1.5.2"}
+  "deb-libkrb5-3" {>= "1.8+dfsg"}
+  "deb-libmalcontent-0-0" {>= "0.6.0"}
+  "deb-libmalcontent-ui-1-1" {>= "0.6.0"}
+  "deb-libnm0" {>= "1.2"}
+  "deb-libnma-gtk4-0" {>= "1.8.34"}
+  "deb-libpango-1-0-0" {>= "1.32.5"}
+  "deb-libpangocairo-1-0-0" {>= "1.32.5"}
+  "deb-libpolkit-gobject-1-0" {>= "0.103"}
+  "deb-libpwquality1" {>= "1.1.0"}
+  "deb-librest-1-0-0" {>= "0.9.1"}
+  "deb-libsecret-1-0" {>= "0.18.8"}
+  "deb-libwebkitgtk-6-0-4" {>= "2.5.3"}
+  "deb-pkexec" {>= "0.103"}
+  "deb-polkitd" {>= "0.103"}
+]
+extra-source "gnome-initial-setup_43.2-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnome-initial-setup/gnome-initial-setup_43.2-6_amd64.deb"
+}

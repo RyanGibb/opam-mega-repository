@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py3-samba-4.19.6-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py3-samba"]
+]
+depends: [
+  "apk-gnutls" {= "3.8.5-r0"}
+  "apk-ldb" {= "2.8.0-r1"}
+  "apk-musl" {= "1.2.5-r0"}
+  "apk-py3-ldb" {= "2.8.0-r1"}
+  "apk-py3-talloc" {= "2.4.2-r1"}
+  "apk-py3-tdb" {= "1.4.9-r1"}
+  "apk-python3" {= "3.12.3-r1"}
+  "apk-python3" {>= "3.12"}
+  "apk-samba-client-libs" {= "4.19.6-r0"}
+  "apk-samba-common-server-libs" {= "4.19.6-r0"}
+  "apk-samba-dc-libs" {= "4.19.6-r0"}
+  "apk-samba-libs" {= "4.19.6-r0"}
+  "apk-samba-libs-py3" {= "4.19.6-r0"}
+  "apk-samba-server" {= "4.19.6-r0"}
+  "apk-samba-server-libs" {= "4.19.6-r0"}
+  "apk-samba-util-libs" {= "4.19.6-r0"}
+  "apk-talloc" {= "2.4.2-r1"}
+  "apk-tevent" {= "0.16.1-r0"}
+]
+extra-source "py3-samba-4.19.6-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/py3-samba-4.19.6-r0.apk"
+}

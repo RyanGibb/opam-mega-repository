@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tortoisehg-caja_5.6.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tortoisehg-caja"]
+]
+depends: [
+  "deb-python3-caja" {>= "1.1-2"}
+  "deb-python3-gi"
+  "deb-tortoisehg" {>= "5.6.1-1"}
+  ("deb-mate-icon-theme" | "deb- gnome-icon-theme-full" | "deb- gnome-icon-theme")
+]
+extra-source "tortoisehg-caja_5.6.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tortoisehg/tortoisehg-caja_5.6.1-1_all.deb"
+}

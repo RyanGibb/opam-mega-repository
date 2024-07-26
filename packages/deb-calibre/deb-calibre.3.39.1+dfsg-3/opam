@@ -1,0 +1,46 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i calibre_3.39.1+dfsg-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r calibre"]
+]
+depends: [
+  "deb-calibre-bin" {>= "3.39.1+dfsg-3"}
+  "deb-fonts-liberation"
+  "deb-imagemagick"
+  "deb-libjpeg-turbo-progs"
+  "deb-libjs-coffeescript"
+  "deb-libjs-mathjax" {>= "2.1+20121028-1"}
+  "deb-optipng"
+  "deb-poppler-utils"
+  "deb-python-apsw" {>= "3.7.17"}
+  "deb-python-chardet"
+  "deb-python-cherrypy3" {>= "3.1.1"}
+  "deb-python-css-parser"
+  "deb-python-cssselect" {>= "0.7.1"}
+  "deb-python-cssutils" {>= "0.9.9~"}
+  "deb-python-dateutil"
+  "deb-python-dbus"
+  "deb-python-feedparser"
+  "deb-python-html5-parser"
+  "deb-python-html5lib"
+  "deb-python-lxml" {>= "3.8"}
+  "deb-python-markdown"
+  "deb-python-mechanize" {>= "0.2.5"}
+  "deb-python-msgpack" {>= "0.5.6~"}
+  "deb-python-netifaces"
+  "deb-python-pil"
+  "deb-python-pkg-resources"
+  "deb-python-pyparsing"
+  "deb-python-pyqt5" {>= "5.11.3+dfsg-1+b3"}
+  "deb-python-pyqt5-qtsvg"
+  "deb-python-pyqt5-qtwebkit"
+  "deb-python-regex"
+  "deb-python-routes"
+  "deb-python2-7"
+  "deb-xdg-utils"
+]
+extra-source "calibre_3.39.1+dfsg-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/calibre/calibre_3.39.1+dfsg-3_all.deb"
+}

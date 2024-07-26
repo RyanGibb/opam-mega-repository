@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libchi-perl_0.60-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libchi-perl"]
+]
+depends: [
+  "deb-libcache-cache-perl"
+  "deb-libcache-fastmmap-perl" {>= "1.45"}
+  "deb-libcarp-assert-perl"
+  "deb-libclass-load-perl"
+  "deb-libdata-serializer-perl"
+  "deb-libdigest-jhash-perl"
+  "deb-libhash-moreutils-perl"
+  "deb-libjson-maybexs-perl" {>= "1.003003"}
+  "deb-liblist-moreutils-perl"
+  "deb-liblog-any-perl"
+  "deb-libmoo-perl" {>= "1.003000"}
+  "deb-libmoox-types-mooselike-perl"
+  "deb-libossp-uuid-perl"
+  "deb-libstring-rewriteprefix-perl"
+  "deb-libtask-weaken-perl"
+  "deb-libtime-duration-parse-perl"
+  "deb-libtime-duration-perl"
+  "deb-libtimedate-perl"
+  "deb-libtry-tiny-perl"
+  "deb-perl"
+  ("deb-libmoox-types-mooselike-numeric-perl" | "deb- libmoox-types-mooselike-perl" {< "0.25-1~"})
+]
+extra-source "libchi-perl_0.60-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libchi-perl/libchi-perl_0.60-4_all.deb"
+}

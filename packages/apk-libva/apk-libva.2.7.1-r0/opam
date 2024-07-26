@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libva-2.7.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libva"]
+]
+depends: [
+  "apk-libdrm" {= "2.4.102-r0"}
+  "apk-libx11" {= "1.6.12-r1"}
+  "apk-libxext" {= "1.3.4-r0"}
+  "apk-libxfixes" {= "5.0.3-r2"}
+  "apk-musl" {= "1.1.24-r10"}
+  "apk-wayland-libs-client" {= "1.18.0-r4"}
+]
+extra-source "libva-2.7.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/libva-2.7.1-r0.apk"
+}

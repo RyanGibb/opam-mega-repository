@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ros-stereo-image-proc_1.15.2-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ros-stereo-image-proc"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libimage-proc0d" {>= "1.15.2"}
+  "deb-libnodeletlib1d" {>= "1.10.0"}
+  "deb-librosconsole3d" {>= "1.14.3"}
+  "deb-libroscpp3d" {>= "1.15.9+ds1"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libstereo-image-proc0d"
+  "deb-libxmlrpcpp3d" {>= "1.15.9+ds1"}
+]
+extra-source "ros-stereo-image-proc_1.15.2-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ros-image-pipeline/ros-stereo-image-proc_1.15.2-4+b1_amd64.deb"
+}

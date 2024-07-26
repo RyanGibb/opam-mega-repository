@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-tldr-dev_0.6.4-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-tldr-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libcmark0-29-0" {>= "0.29.0"}
+  "deb-libghc-ansi-terminal-dev"
+  "deb-libghc-cmark-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-tldr-dev_0.6.4-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-tldr/libghc-tldr-dev_0.6.4-1+b2_amd64.deb"
+}

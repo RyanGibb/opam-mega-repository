@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkuserfeedbackcore1_1.2.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkuserfeedbackcore1"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5network5" {>= "5.8.0~"}
+  "deb-libstdc++6" {>= "5"}
+  ("deb-libqt5gui5" {>= "5.8.0~"} | "deb- libqt5gui5-gles" {>= "5.8.0~"})
+]
+extra-source "libkuserfeedbackcore1_1.2.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kuserfeedback/libkuserfeedbackcore1_1.2.0-2_amd64.deb"
+}

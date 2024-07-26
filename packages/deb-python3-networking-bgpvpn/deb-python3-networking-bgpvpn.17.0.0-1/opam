@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-networking-bgpvpn_17.0.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-networking-bgpvpn"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-debtcollector"
+  "deb-python3-django-horizon" {>= "3-20.0.0+git2020.09.21.27036cc0eb"}
+  "deb-python3-networking-bagpipe"
+  "deb-python3-neutron" {>= "18.0.0~"}
+  "deb-python3-neutron-lib" {>= "2.10.1"}
+  "deb-python3-oslo-config"
+  "deb-python3-oslo-db"
+  "deb-python3-oslo-i18n"
+  "deb-python3-oslo-log"
+  "deb-python3-oslo-utils"
+  "deb-python3-pbr"
+  "deb-python3-sphinx"
+  "deb-python3-sphinxcontrib-blockdiag"
+  "deb-python3-sphinxcontrib-seqdiag"
+]
+extra-source "python3-networking-bgpvpn_17.0.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/networking-bgpvpn/python3-networking-bgpvpn_17.0.0-1_all.deb"
+}

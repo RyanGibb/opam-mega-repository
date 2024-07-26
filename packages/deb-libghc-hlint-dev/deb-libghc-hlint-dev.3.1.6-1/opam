@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-hlint-dev_3.1.6-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-hlint-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-aeson-dev"
+  "deb-libghc-ansi-terminal-dev"
+  "deb-libghc-cmdargs-dev"
+  "deb-libghc-cpphs-dev"
+  "deb-libghc-data-default-dev"
+  "deb-libghc-extra-dev"
+  "deb-libghc-file-embed-dev"
+  "deb-libghc-filepattern-dev"
+  "deb-libghc-ghc-lib-parser-dev"
+  "deb-libghc-ghc-lib-parser-ex-dev"
+  "deb-libghc-hscolour-dev"
+  "deb-libghc-refact-dev"
+  "deb-libghc-uniplate-dev"
+  "deb-libghc-unordered-containers-dev"
+  "deb-libghc-utf8-string-dev"
+  "deb-libghc-vector-dev"
+  "deb-libghc-yaml-dev"
+  "deb-libgmp10"
+  "deb-libyaml-0-2"
+]
+extra-source "libghc-hlint-dev_3.1.6-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/hlint/libghc-hlint-dev_3.1.6-1_amd64.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mtd-utils-ubi-2.1.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mtd-utils-ubi"]
+]
+depends: [
+  "apk-libcrypto1-1" {= "1.1.1o-r0"}
+  "apk-libuuid" {= "2.37.4-r0"}
+  "apk-lzo" {= "2.10-r2"}
+  "apk-musl" {= "1.1.24-r10"}
+  "apk-zlib" {= "1.2.12-r3"}
+  "apk-zstd-libs" {= "1.4.9-r0"}
+]
+extra-source "mtd-utils-ubi-2.1.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/mtd-utils-ubi-2.1.1-r0.apk"
+}

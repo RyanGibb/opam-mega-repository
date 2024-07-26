@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libvirglrenderer1_0.8.2-5+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libvirglrenderer1"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libdrm2" {>= "2.4.38"}
+  "deb-libepoxy0" {>= "1.5.4"}
+  "deb-libgbm1" {>= "8.1~0"}
+  "deb-libx11-6"
+]
+extra-source "libvirglrenderer1_0.8.2-5+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/virglrenderer/libvirglrenderer1_0.8.2-5+deb11u1_amd64.deb"
+}

@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-sahara-plugin-vanilla_4.0.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-sahara-plugin-vanilla"]
+]
+depends: [
+  "deb-openssh-client"
+  "deb-python3-any"
+  "deb-python3-babel"
+  "deb-python3-eventlet" {>= "0.26.0"}
+  "deb-python3-oslo-i18n"
+  "deb-python3-oslo-log"
+  "deb-python3-oslo-serialization"
+  "deb-python3-oslo-utils"
+  "deb-python3-pbr"
+  "deb-python3-requests"
+  "deb-python3-sahara" {>= "10.0.0"}
+  "deb-python3-six" {>= "1.10.0"}
+]
+extra-source "python3-sahara-plugin-vanilla_4.0.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sahara-plugin-vanilla/python3-sahara-plugin-vanilla_4.0.0-1_all.deb"
+}

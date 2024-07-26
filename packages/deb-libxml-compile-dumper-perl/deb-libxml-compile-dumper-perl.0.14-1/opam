@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libxml-compile-dumper-perl_0.14-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libxml-compile-dumper-perl"]
+]
+depends: [
+  "deb-libdata-dump-streamer-perl"
+  "deb-liblog-report-perl"
+  "deb-libxml-compile-perl"
+  "deb-libxml-compile-tester-perl"
+  "deb-libxml-libxml-perl"
+  "deb-perl"
+]
+extra-source "libxml-compile-dumper-perl_0.14-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libx/libxml-compile-dumper-perl/libxml-compile-dumper-perl_0.14-1_all.deb"
+}

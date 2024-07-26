@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fdutils_5.5-20060227-8_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fdutils"]
+]
+depends: [
+  "deb-debianutils" {>= "1.7"}
+  "deb-libc6" {>= "2.7"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+]
+extra-source "fdutils_5.5-20060227-8_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fdutils/fdutils_5.5-20060227-8_amd64.deb"
+}

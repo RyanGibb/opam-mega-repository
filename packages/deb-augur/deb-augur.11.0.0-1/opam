@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i augur_11.0.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r augur"]
+]
+depends: [
+  "deb-fasttree"
+  "deb-iqtree"
+  "deb-mafft"
+  "deb-python3-any"
+  "deb-python3-bcbio-gff"
+  "deb-python3-biopython"
+  "deb-python3-boto" {>= "2.38.0"}
+  "deb-python3-cvxopt"
+  "deb-python3-dendropy"
+  "deb-python3-ipdb"
+  "deb-python3-jsonschema"
+  "deb-python3-matplotlib" {>= "1.5.1"}
+  "deb-python3-packaging"
+  "deb-python3-pandas" {>= "0.16.2"}
+  "deb-python3-schedule"
+  "deb-python3-seaborn" {>= "0.6.0"}
+  "deb-python3-treetime"
+  "deb-raxml"
+  "deb-seqmagick"
+  "deb-vcftools"
+]
+extra-source "augur_11.0.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/augur/augur_11.0.0-1_all.deb"
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libopm-simulators-bin_2022.10+ds-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libopm-simulators-bin"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libdune-common-dev"
+  "deb-libdune-geometry-dev"
+  "deb-libfmt9" {>= "9.1.0+ds1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgomp1" {>= "4.9"}
+  "deb-libopenmpi3" {>= "4.1.4"}
+  "deb-libopm-common"
+  "deb-libopm-grid"
+  "deb-libopm-simulators"
+  "deb-libstdc++6" {>= "12"}
+]
+extra-source "libopm-simulators-bin_2022.10+ds-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/opm-simulators/libopm-simulators-bin_2022.10+ds-2_amd64.deb"
+}

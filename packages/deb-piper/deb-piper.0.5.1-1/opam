@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i piper_0.5.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r piper"]
+]
+depends: [
+  "deb-gettext"
+  "deb-gir1-2-rsvg-2-0"
+  "deb-python3-any"
+  "deb-python3-evdev"
+  "deb-python3-gi"
+  "deb-python3-gi-cairo"
+  "deb-python3-lxml"
+  "deb-ratbagd" {>= "0.14"}
+]
+extra-source "piper_0.5.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/piper/piper_0.5.1-1_all.deb"
+}

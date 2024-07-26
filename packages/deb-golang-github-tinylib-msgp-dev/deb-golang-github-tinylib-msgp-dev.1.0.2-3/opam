@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-tinylib-msgp-dev_1.0.2-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-tinylib-msgp-dev"]
+]
+depends: [
+  "deb-golang-github-philhofer-fwd-dev"
+  "deb-golang-github-ttacon-chalk-dev"
+  "deb-golang-golang-x-mod-dev"
+  "deb-golang-golang-x-tools-dev"
+]
+extra-source "golang-github-tinylib-msgp-dev_1.0.2-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-tinylib-msgp/golang-github-tinylib-msgp-dev_1.0.2-3_all.deb"
+}

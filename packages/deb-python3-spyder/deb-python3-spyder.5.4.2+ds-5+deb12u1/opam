@@ -1,0 +1,77 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-spyder_5.4.2+ds-5+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-spyder"]
+]
+depends: [
+  "deb-ipython3"
+  "deb-libjs-jquery"
+  "deb-libjs-mathjax"
+  "deb-pyflakes3"
+  "deb-pylint" {< "3.0~"}
+  "deb-python3-any"
+  "deb-python3-atomicwrites"
+  "deb-python3-autopep8"
+  "deb-python3-chardet"
+  "deb-python3-cloudpickle"
+  "deb-python3-cookiecutter"
+  "deb-python3-diff-match-patch"
+  "deb-python3-docutils"
+  "deb-python3-flake8"
+  "deb-python3-intervaltree"
+  "deb-python3-ipython" {>= "7.31.1"}
+  "deb-python3-jedi" {< "0.19~"}
+  "deb-python3-jedi" {>= "0.17.2"}
+  "deb-python3-jellyfish"
+  "deb-python3-jsonschema" {>= "3.2.0"}
+  "deb-python3-keyring"
+  "deb-python3-mccabe"
+  "deb-python3-nbconvert"
+  "deb-python3-numpydoc"
+  "deb-python3-parso" {< "0.9~"}
+  "deb-python3-parso" {>= "0.7.0"}
+  "deb-python3-pexpect"
+  "deb-python3-pickleshare"
+  "deb-python3-pkg-resources"
+  "deb-python3-psutil"
+  "deb-python3-pycodestyle"
+  "deb-python3-pydocstyle" {>= "6.2.3"}
+  "deb-python3-pygments"
+  "deb-python3-pylint-venv"
+  "deb-python3-pyls-spyder" {>= "0.4.0"}
+  "deb-python3-pylsp" {< "1.8~"}
+  "deb-python3-pylsp" {>= "1.7.1"}
+  "deb-python3-pylsp-black"
+  "deb-python3-pyqt5" {< "5.16~"}
+  "deb-python3-pyqt5-qtwebengine" {< "5.16~"}
+  "deb-python3-qdarkstyle" {>= "3.0.2"}
+  "deb-python3-qstylizer"
+  "deb-python3-qtawesome" {>= "1.2.1"}
+  "deb-python3-qtconsole" {< "5.5~"}
+  "deb-python3-qtconsole" {>= "5.4.0"}
+  "deb-python3-qtpy" {>= "2.1.0"}
+  "deb-python3-rope"
+  "deb-python3-rtree"
+  "deb-python3-setuptools"
+  "deb-python3-sphinx"
+  "deb-python3-spyder-kernels" {< "2.5~"}
+  "deb-python3-spyder-kernels" {>= "2.4.2"}
+  "deb-python3-textdistance"
+  "deb-python3-three-merge"
+  "deb-python3-watchdog" {>= "0.10.3"}
+  "deb-python3-xdg" {>= "0.26"}
+  "deb-python3-zmq" {>= "22.1.0"}
+  "deb-spyder-common" {= "5.4.2+ds-5+deb12u1"}
+  "deb-yapf3"
+]
+conflicts: [
+  "deb-python3-spyder-line-profiler" {<= "0.2.1-1"}
+  "deb-python3-spyder-memory-profiler" {<= "0.2.1-1"}
+  "deb-python3-spyder-reports" {<= "0.1.1-4"}
+  "deb-python3-spyder-unittest" {<= "0.4.1-1"}
+]
+extra-source "python3-spyder_5.4.2+ds-5+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/spyder/python3-spyder_5.4.2+ds-5+deb12u1_all.deb"
+}

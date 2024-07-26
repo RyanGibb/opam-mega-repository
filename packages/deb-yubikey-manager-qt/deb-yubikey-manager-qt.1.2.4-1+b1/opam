@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i yubikey-manager-qt_1.2.4-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r yubikey-manager-qt"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5qml5" {>= "5.1.0"}
+  "deb-libqt5quickcontrols2-5" {>= "5.7.1"}
+  "deb-libqt5svg5"
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-pcscd"
+  "deb-python3-ykman" {>= "4.0.7"}
+  "deb-qml-module-io-thp-pyotherside"
+  "deb-qml-module-qt-labs-calendar"
+  "deb-qml-module-qt-labs-folderlistmodel"
+  "deb-qml-module-qt-labs-platform"
+  "deb-qml-module-qt-labs-settings"
+  "deb-qml-module-qtgraphicaleffects"
+  "deb-qml-module-qtquick-controls2"
+  "deb-qml-module-qtquick-dialogs"
+  "deb-qml-module-qtquick-layouts"
+  "deb-qml-module-qtquick-window2"
+  "deb-qml-module-qtquick2"
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+]
+extra-source "yubikey-manager-qt_1.2.4-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/y/yubikey-manager-qt/yubikey-manager-qt_1.2.4-1+b1_amd64.deb"
+}

@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libjs-of-ocaml-dev_4.0.0-2+b6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libjs-of-ocaml-dev"]
+]
+depends: [
+  "deb-libc6" {>= "2.35"}
+  "deb-libfindlib-ocaml-dev"
+  "deb-libgraphics-ocaml-dev"
+  "deb-libjs-of-ocaml"
+  "deb-liblwt-log-ocaml-dev"
+  "deb-liblwt-ocaml-dev"
+  "deb-libmenhir-ocaml-dev"
+  "deb-libocaml-compiler-libs-ocaml-dev"
+  "deb-libppxlib-ocaml-dev"
+  "deb-libreact-ocaml-dev"
+  "deb-libreactivedata-ocaml-dev"
+  "deb-libsexplib0-ocaml-dev"
+  "deb-libtyxml-ocaml-dev"
+  "deb-libyojson-ocaml-dev"
+  "deb-ocaml"
+]
+extra-source "libjs-of-ocaml-dev_4.0.0-2+b6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/j/js-of-ocaml/libjs-of-ocaml-dev_4.0.0-2+b6_amd64.deb"
+}

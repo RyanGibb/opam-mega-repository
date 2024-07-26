@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gpg_2.2.12-1+deb10u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gpg"]
+]
+depends: [
+  "deb-gpgconf" {= "2.2.12-1+deb10u2"}
+  "deb-libassuan0" {>= "2.5.0"}
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.25"}
+  "deb-libgcrypt20" {>= "1.8.0"}
+  "deb-libgpg-error0" {>= "1.35"}
+  "deb-libreadline7" {>= "6.0"}
+  "deb-libsqlite3-0" {>= "3.7.15"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "gpg_2.2.12-1+deb10u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnupg2/gpg_2.2.12-1+deb10u2_amd64.deb"
+}

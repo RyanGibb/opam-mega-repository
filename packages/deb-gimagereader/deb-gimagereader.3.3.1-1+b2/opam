@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gimagereader_3.3.1-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gimagereader"]
+]
+depends: [
+  "deb-libatkmm-1-6-1v5" {>= "2.24.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libcairomm-1-0-1v5" {>= "1.12.0"}
+  "deb-libdjvulibre21" {>= "3.5.28"}
+  "deb-libenchant-2-2" {>= "2.2.3"}
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.35.9"}
+  "deb-libglibmm-2-4-1v5" {>= "2.64.2"}
+  "deb-libgomp1" {>= "4.9"}
+  "deb-libgtk-3-0" {>= "3.21.4"}
+  "deb-libgtkmm-3-0-1v5" {>= "3.24.0"}
+  "deb-libgtksourceviewmm-3-0-0v5" {>= "3.18.0"}
+  "deb-libgtkspellmm-3-0-0v5" {>= "3.0.5"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libjson-glib-1-0-0" {>= "1.5.2"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpangomm-1-4-1v5" {>= "2.42.0"}
+  "deb-libpodofo0-9-7" {>= "0.9.7+dfsg"}
+  "deb-libpoppler-glib8" {>= "0.18.0"}
+  "deb-libsane1" {>= "1.0.27"}
+  "deb-libsigc++-2-0-0v5" {>= "2.8.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtesseract4"
+  "deb-libuuid1" {>= "2.16"}
+  "deb-libxml++2-6-2v5" {>= "2.40.0"}
+  "deb-libzip4" {>= "0.11.2"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "gimagereader_3.3.1-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gimagereader/gimagereader_3.3.1-1+b2_amd64.deb"
+}

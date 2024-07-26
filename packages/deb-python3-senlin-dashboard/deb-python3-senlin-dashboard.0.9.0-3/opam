@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-senlin-dashboard_0.9.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-senlin-dashboard"]
+]
+depends: [
+  "deb-openstack-dashboard" {>= "3-14.0.0~rc1"}
+  "deb-python3-any"
+  "deb-python3-babel"
+  "deb-python3-django" {< "2-2"}
+  "deb-python3-django-compressor"
+  "deb-python3-django-horizon"
+  "deb-python3-iso8601"
+  "deb-python3-pbr" {>= "2.0.0"}
+  "deb-python3-senlinclient" {>= "1.1.0"}
+  "deb-python3-yaml"
+]
+extra-source "python3-senlin-dashboard_0.9.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/senlin-dashboard/python3-senlin-dashboard_0.9.0-3_all.deb"
+}

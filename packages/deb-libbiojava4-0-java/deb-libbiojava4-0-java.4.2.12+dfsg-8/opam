@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libbiojava4.0-java_4.2.12+dfsg-8_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libbiojava4.0-java"]
+]
+depends: [
+  "deb-junit4"
+  "deb-libbytecode-java"
+  "deb-libcommons-cli-java"
+  "deb-libcommons-codec-java"
+  "deb-libcommons-collections3-java"
+  "deb-libcommons-dbcp-java"
+  "deb-libcommons-logging-java"
+  "deb-libcommons-math-java"
+  "deb-libcommons-pool-java"
+  "deb-libguava-java"
+  "deb-libhamcrest-java"
+  "deb-libhsqldb-java"
+  "deb-libitext5-java"
+  "deb-libjaxb-api-java"
+  "deb-libjaxb-java"
+  "deb-libjgrapht0-8-java"
+  "deb-libjmol-java"
+  "deb-libjson-simple-java"
+  "deb-liblog4j2-java"
+  "deb-libnetx-java"
+  "deb-libslf4j-java"
+  "deb-libvecmath-java"
+  "deb-libxmlunit-java"
+]
+extra-source "libbiojava4.0-java_4.2.12+dfsg-8_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/biojava4-live/libbiojava4.0-java_4.2.12+dfsg-8_all.deb"
+}

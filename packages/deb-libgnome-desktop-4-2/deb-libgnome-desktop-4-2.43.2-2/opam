@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgnome-desktop-4-2_43.2-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgnome-desktop-4-2"]
+]
+depends: [
+  "deb-bubblewrap"
+  "deb-gnome-desktop3-data" {< "44~"}
+  "deb-gnome-desktop3-data" {>= "43.2-2"}
+  "deb-gsettings-desktop-schemas" {>= "3.27.0"}
+  "deb-iso-codes"
+  "deb-libc6" {>= "2.33"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.36.5"}
+  "deb-libglib2-0-0" {>= "2.70.0"}
+  "deb-libseccomp2" {>= "1.0.1"}
+  "deb-libsystemd0"
+  "deb-libudev1" {>= "196"}
+  "deb-libxkbregistry0" {>= "1.0.0"}
+]
+extra-source "libgnome-desktop-4-2_43.2-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnome-desktop/libgnome-desktop-4-2_43.2-2_amd64.deb"
+}

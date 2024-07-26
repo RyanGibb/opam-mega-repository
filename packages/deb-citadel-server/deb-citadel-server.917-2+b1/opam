@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i citadel-server_917-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r citadel-server"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libc6" {>= "2.15"}
+  "deb-libcitadel4" {>= "917"}
+  "deb-libcurl4" {>= "7.16.2"}
+  "deb-libdb5-3"
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libical3" {>= "3.0.0"}
+  "deb-libldap-2-4-2" {>= "2.4.7"}
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-libsieve2-1"
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-lsb-base" {>= "3.0-6"}
+  "deb-openssl"
+  "deb-patch"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+conflicts: [
+  "deb-citadel-common"
+  "deb-citadel-mta"
+  "deb-imap-server"
+  "deb-mail-transport-agent"
+  "deb-pop3-server"
+]
+extra-source "citadel-server_917-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/citadel/citadel-server_917-2+b1_amd64.deb"
+}

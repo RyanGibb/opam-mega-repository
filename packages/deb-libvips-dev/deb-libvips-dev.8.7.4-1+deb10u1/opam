@@ -1,0 +1,43 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libvips-dev_8.7.4-1+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libvips-dev"]
+]
+depends: [
+  "deb-gettext"
+  "deb-gir1-2-vips-8-0" {= "8.7.4-1+deb10u1"}
+  "deb-libcfitsio-dev"
+  "deb-libexif-gtk-dev"
+  "deb-libexpat1-dev"
+  "deb-libfontconfig1-dev"
+  "deb-libfreetype6-dev"
+  "deb-libgif-dev" {>= "5.1"}
+  "deb-libglib2-0-dev"
+  "deb-libgsf-1-dev"
+  "deb-libice-dev"
+  "deb-libjpeg-dev"
+  "deb-liblcms2-dev"
+  "deb-libmagickcore-dev"
+  "deb-libmagickwand-dev"
+  "deb-libmatio-dev"
+  "deb-libopenexr-dev"
+  "deb-libopenslide-dev"
+  "deb-liborc-0-4-dev"
+  "deb-libpango1-0-dev"
+  "deb-libpng-dev"
+  "deb-libpoppler-glib-dev"
+  "deb-librsvg2-dev"
+  "deb-libtiff-dev"
+  "deb-libvips42" {= "8.7.4-1+deb10u1"}
+  "deb-libwebp-dev"
+  "deb-pkg-config"
+  "deb-python-all-dev"
+  "deb-python-dev" {>= "2.6.6-3~"}
+  "deb-zlib1g-dev"
+  ("deb-fftw3-dev" | "deb- libfftw3-dev")
+]
+extra-source "libvips-dev_8.7.4-1+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/vips/libvips-dev_8.7.4-1+deb10u1_amd64.deb"
+}

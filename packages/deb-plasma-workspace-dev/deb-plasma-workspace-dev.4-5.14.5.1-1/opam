@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i plasma-workspace-dev_4:5.14.5.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r plasma-workspace-dev"]
+]
+depends: [
+  "deb-kwin-common" {>= "4-5.14"}
+  "deb-libcolorcorrect5" {= "4-5.14.5.1-1"}
+  "deb-libkf5itemmodels-dev" {>= "5.37.0~"}
+  "deb-libkf5plasma-dev" {>= "5.50.0~"}
+  "deb-libkf5sysguard-dev" {>= "4-5.14"}
+  "deb-libkf5windowsystem-dev" {>= "5.4.0"}
+  "deb-libkworkspace5-5" {= "4-5.14.5.1-1"}
+  "deb-libplasma-geolocation-interface5" {= "4-5.14.5.1-1"}
+  "deb-libtaskmanager6" {= "4-5.14.5.1-1"}
+  "deb-libweather-ion7" {= "4-5.14.5.1-1"}
+  "deb-plasma-workspace" {= "4-5.14.5.1-1"}
+  "deb-qtbase5-dev" {>= "5.11.0~"}
+  "deb-qtdeclarative5-dev" {>= "5.11.0~"}
+]
+conflicts: [
+  "deb-kde-workspace-dev"
+]
+extra-source "plasma-workspace-dev_4:5.14.5.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/plasma-workspace/plasma-workspace-dev_5.14.5.1-1_amd64.deb"
+}

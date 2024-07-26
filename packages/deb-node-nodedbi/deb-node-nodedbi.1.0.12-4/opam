@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-nodedbi_1.0.12-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-nodedbi"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libdbi1" {>= "0.9.0"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libnode64"
+  "deb-libstdc++6" {>= "5"}
+  "deb-node-nan" {>= "2.4.0"}
+  "deb-nodejs" {>= "10"}
+]
+extra-source "node-nodedbi_1.0.12-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-nodedbi/node-nodedbi_1.0.12-4_amd64.deb"
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libxtensor-blas-dev_0.20.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libxtensor-blas-dev"]
+]
+depends: [
+  "deb-libxtensor-dev" {< "0.25"}
+  "deb-libxtensor-dev" {>= "0.24.0~"}
+  ("deb-libopenblas-dev" | "deb- libatlas-base-dev" | "deb- liblapack-dev" | "deb- liblapack-so")
+  ("deb-libopenblas-dev" | "deb- libblis-dev" | "deb- libatlas-base-dev" | "deb- libblas-dev" | "deb- libblas-so")
+]
+extra-source "libxtensor-blas-dev_0.20.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xtensor-blas/libxtensor-blas-dev_0.20.0-2_amd64.deb"
+}

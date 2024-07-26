@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qfitsview_4.0+dfsg-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qfitsview"]
+]
+depends: [
+  "deb-g++"
+  "deb-libc6" {>= "2.29"}
+  "deb-libc6-dev"
+  "deb-libcpgplot0"
+  "deb-libfftw3-double3" {>= "3.3.5"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgsl25" {>= "2.6"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5datavisualization5" {>= "5.10.1"}
+  "deb-libqt5printsupport5" {>= "5.8~"}
+  "deb-libqt5widgets5" {>= "5.15.1"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libxpa1" {>= "2.1.14"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "qfitsview_4.0+dfsg-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dpuser/qfitsview_4.0+dfsg-3_amd64.deb"
+}

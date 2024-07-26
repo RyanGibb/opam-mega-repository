@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-eco_4.0-3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-eco"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.2.20221110-1"}
+  "deb-r-cran-mass"
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "r-cran-eco_4.0-3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-eco/r-cran-eco_4.0-3-1_amd64.deb"
+}

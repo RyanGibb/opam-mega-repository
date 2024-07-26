@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-wai-extra-dev_3.1.12.1-1+b4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-wai-extra-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.14"}
+  "deb-libghc-aeson-dev"
+  "deb-libghc-ansi-terminal-dev"
+  "deb-libghc-base64-bytestring-dev"
+  "deb-libghc-call-stack-dev"
+  "deb-libghc-case-insensitive-dev"
+  "deb-libghc-cookie-dev"
+  "deb-libghc-data-default-class-dev"
+  "deb-libghc-fast-logger-dev"
+  "deb-libghc-http-types-dev"
+  "deb-libghc-http2-dev"
+  "deb-libghc-hunit-dev"
+  "deb-libghc-iproute-dev"
+  "deb-libghc-network-dev"
+  "deb-libghc-resourcet-dev"
+  "deb-libghc-streaming-commons-dev"
+  "deb-libghc-vault-dev"
+  "deb-libghc-wai-dev"
+  "deb-libghc-wai-logger-dev"
+  "deb-libghc-word8-dev"
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libghc-wai-extra-dev_3.1.12.1-1+b4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-wai-extra/libghc-wai-extra-dev_3.1.12.1-1+b4_amd64.deb"
+}

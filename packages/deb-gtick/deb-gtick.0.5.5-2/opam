@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gtick_0.5.5-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gtick"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.35.9"}
+  "deb-libgtk2-0-0" {>= "2.8.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpulse0" {>= "0.99.1"}
+  "deb-libsndfile1" {>= "1.0.20"}
+  "deb-oss-compat"
+]
+extra-source "gtick_0.5.5-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gtick/gtick_0.5.5-2_amd64.deb"
+}

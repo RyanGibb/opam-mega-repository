@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mistral-api_15.0.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mistral-api"]
+]
+depends: [
+  "deb-adduser"
+  "deb-debconf"
+  "deb-mistral-common" {= "15.0.0-1"}
+  "deb-python3-keystoneclient"
+  "deb-python3-pastescript"
+  "deb-python3-q-text-as-data"
+  "deb-sysvinit-utils"
+  "deb-uwsgi-plugin-python3"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "mistral-api_15.0.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mistral/mistral-api_15.0.0-1_all.deb"
+}

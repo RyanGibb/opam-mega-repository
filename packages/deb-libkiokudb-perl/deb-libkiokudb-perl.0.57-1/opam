@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkiokudb-perl_0.57-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkiokudb-perl"]
+]
+depends: [
+  "deb-libcache-ref-perl"
+  "deb-libclass-load-perl"
+  "deb-libdata-stream-bulk-perl" {>= "0.08"}
+  "deb-libdata-swap-perl"
+  "deb-libdata-uuid-libuuid-perl"
+  "deb-libdata-uuid-perl"
+  "deb-libdata-visitor-perl"
+  "deb-libhash-util-fieldhash-compat-perl"
+  "deb-libjson-perl"
+  "deb-libjson-xs-perl"
+  "deb-libmoose-perl" {>= "2"}
+  "deb-libmoosex-clone-perl"
+  "deb-libmoosex-role-parameterized-perl"
+  "deb-libmoosex-yaml-perl"
+  "deb-libnamespace-clean-perl"
+  "deb-libpadwalker-perl"
+  "deb-libpath-class-perl"
+  "deb-libscope-guard-perl"
+  "deb-libsearch-gin-perl"
+  "deb-libset-object-perl"
+  "deb-libsub-exporter-perl"
+  "deb-libtest-exception-perl"
+  "deb-libthrowable-perl"
+  "deb-libtie-toobject-perl"
+  "deb-libtry-tiny-perl"
+  "deb-libyaml-libyaml-perl"
+  "deb-perl"
+  ("deb-libmodule-pluggable-perl" | "deb- perl" {< "5.17.0"})
+]
+extra-source "libkiokudb-perl_0.57-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libk/libkiokudb-perl/libkiokudb-perl_0.57-1_all.deb"
+}

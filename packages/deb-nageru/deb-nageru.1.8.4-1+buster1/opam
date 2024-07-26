@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i nageru_1.8.4-1+buster1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r nageru"]
+]
+depends: [
+  "deb-libasound2" {>= "1.0.29"}
+  "deb-libavcodec-extra58"
+  "deb-libavformat58" {>= "7-4.1"}
+  "deb-libavutil56" {>= "7-4.0"}
+  "deb-libbmusb5"
+  "deb-libc6" {>= "2.27"}
+  "deb-libepoxy0" {>= "1.0"}
+  "deb-libgcc1" {>= "1-4.0"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libluajit-5-1-2" {>= "2.1.0~beta3+dfsg"}
+  "deb-libmicrohttpd12" {>= "0.9.50"}
+  "deb-libmovit8"
+  "deb-libprotobuf17"
+  "deb-libqcustomplot2-0"
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5gui5" {>= "5.7.0"}
+  "deb-libqt5opengl5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.2.0~alpha1"}
+  "deb-libstdc++6" {>= "6"}
+  "deb-libswresample3" {>= "7-4.0"}
+  "deb-libswscale5" {>= "7-4.0"}
+  "deb-libusb-1-0-0" {>= "2-1.0.8"}
+  "deb-libva-drm2" {>= "1.1.0"}
+  "deb-libva-x11-2" {>= "1.0.3"}
+  "deb-libva2" {>= "2.2.0"}
+  "deb-libx11-6"
+  "deb-libx264-155"
+  "deb-libzita-resampler1"
+]
+extra-source "nageru_1.8.4-1+buster1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/nageru/nageru_1.8.4-1+buster1_amd64.deb"
+}

@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gtk+3.0-dev-3.24.22-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gtk+3.0-dev"]
+]
+depends: [
+  "apk-at-spi2-atk-dev" {= "2.34.2-r1"}
+  "apk-atk-dev" {= "2.36.0-r0"}
+  "apk-cairo-dev" {= "1.16.0-r5"}
+  "apk-fontconfig-dev" {= "2.13.1-r2"}
+  "apk-fribidi-dev" {= "1.0.9-r0"}
+  "apk-gdk-pixbuf-dev" {= "2.40.0-r4"}
+  "apk-glib-dev" {= "2.64.6-r0"}
+  "apk-gtk+3-0" {= "3.24.22-r1"}
+  "apk-libepoxy-dev" {= "1.5.4-r0"}
+  "apk-libx11-dev" {= "1.6.12-r1"}
+  "apk-libxcomposite-dev" {= "0.4.5-r0"}
+  "apk-libxcursor-dev" {= "1.2.0-r0"}
+  "apk-libxdamage-dev" {= "1.1.5-r0"}
+  "apk-libxext-dev" {= "1.3.4-r0"}
+  "apk-libxfixes-dev" {= "5.0.3-r2"}
+  "apk-libxi-dev" {= "1.7.10-r0"}
+  "apk-libxinerama-dev" {= "1.1.4-r1"}
+  "apk-libxkbcommon-dev" {= "0.10.0-r1"}
+  "apk-libxrandr-dev" {= "1.5.2-r0"}
+  "apk-pango-dev" {= "1.44.7-r2"}
+  "apk-pkgconf" {= "1.7.2-r0"}
+  "apk-wayland-dev" {= "1.18.0-r4"}
+  "apk-wayland-libs-client" {= "1.18.0-r4"}
+  "apk-wayland-libs-cursor" {= "1.18.0-r4"}
+  "apk-wayland-protocols" {= "1.20-r0"}
+]
+extra-source "gtk+3.0-dev-3.24.22-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/gtk+3.0-dev-3.24.22-r1.apk"
+}

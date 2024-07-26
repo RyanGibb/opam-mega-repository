@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qv4l2_1.22.1-5+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qv4l2"]
+]
+depends: [
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgl1"
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5opengl5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libv4l-0" {= "1.22.1-5+b2"}
+  "deb-libv4lconvert0" {>= "0.9.0~test5"}
+  ("deb-libqt5gui5" {>= "5.10.0"} | "deb- libqt5gui5-gles" {>= "5.10.0"})
+]
+extra-source "qv4l2_1.22.1-5+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/v4l-utils/qv4l2_1.22.1-5+b2_amd64.deb"
+}

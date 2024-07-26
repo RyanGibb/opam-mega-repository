@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-doctest-parallel-prof_0.2.5-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-doctest-parallel-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-base-compat-prof"
+  "deb-libghc-code-page-prof"
+  "deb-libghc-doctest-parallel-dev" {= "0.2.5-1+b1"}
+  "deb-libghc-extra-prof"
+  "deb-libghc-ghc-paths-prof"
+  "deb-libghc-glob-prof"
+  "deb-libghc-random-prof"
+  "deb-libghc-syb-prof"
+  "deb-libghc-unordered-containers-prof"
+]
+extra-source "libghc-doctest-parallel-prof_0.2.5-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-doctest-parallel/libghc-doctest-parallel-prof_0.2.5-1+b1_amd64.deb"
+}

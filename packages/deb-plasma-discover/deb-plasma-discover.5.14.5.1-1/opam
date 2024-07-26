@@ -1,0 +1,51 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i plasma-discover_5.14.5.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r plasma-discover"]
+]
+depends: [
+  "deb-appstream" {>= "0.8"}
+  "deb-apt-config-icons"
+  "deb-kio"
+  "deb-libappstreamqt2" {>= "0.12.5"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libkf5attica5" {>= "5.23.0"}
+  "deb-libkf5configcore5" {>= "5.24.0"}
+  "deb-libkf5configwidgets5" {>= "5.23.0"}
+  "deb-libkf5coreaddons5" {>= "4.100.0"}
+  "deb-libkf5crash5" {>= "5.15.0"}
+  "deb-libkf5dbusaddons5" {>= "4.99.0"}
+  "deb-libkf5i18n5" {>= "5.17.0"}
+  "deb-libkf5itemmodels5" {>= "5.14.0"}
+  "deb-libkf5kiocore5" {>= "4.96.0"}
+  "deb-libkf5kiowidgets5" {>= "4.96.0"}
+  "deb-libkf5newstuffcore5" {>= "5.54.0"}
+  "deb-libkf5notifications5" {>= "5.35.0"}
+  "deb-libkf5service-bin"
+  "deb-libkf5service5" {>= "4.96.0"}
+  "deb-libkf5widgetsaddons5" {>= "4.96.0"}
+  "deb-libkf5xmlgui5" {>= "4.96.0"}
+  "deb-libpackagekitqt5-1"
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5dbus5" {>= "5.11.0~"}
+  "deb-libqt5gui5" {>= "5.11.0~"}
+  "deb-libqt5network5" {>= "5.11.0~"}
+  "deb-libqt5qml5" {>= "5.2.0~beta1"}
+  "deb-libqt5quick5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.11.0~"}
+  "deb-libqt5xml5" {>= "5.11.0~"}
+  "deb-libstdc++6" {>= "4.5"}
+  "deb-packagekit" {>= "1.0"}
+  "deb-plasma-discover-common" {= "5.14.5.1-1"}
+  "deb-qml-module-org-kde-kcoreaddons"
+  "deb-qml-module-org-kde-kirigami2" {>= "5.42"}
+  "deb-qml-module-org-kde-kquickcontrols"
+  "deb-qml-module-org-kde-kquickcontrolsaddons"
+  "deb-qml-module-org-kde-qqc2desktopstyle"
+  "deb-qml-module-qtquick-dialogs"
+]
+extra-source "plasma-discover_5.14.5.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/plasma-discover/plasma-discover_5.14.5.1-1_amd64.deb"
+}

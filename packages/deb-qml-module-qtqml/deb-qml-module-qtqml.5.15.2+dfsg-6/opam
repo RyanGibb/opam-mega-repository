@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qml-module-qtqml_5.15.2+dfsg-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qml-module-qtqml"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5qml5"
+  "deb-libqt5qml5" {>= "5.15.1"}
+  "deb-libqt5qmlmodels5" {>= "5.14.1"}
+  "deb-libstdc++6" {>= "5"}
+]
+extra-source "qml-module-qtqml_5.15.2+dfsg-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qtdeclarative-opensource-src/qml-module-qtqml_5.15.2+dfsg-6_amd64.deb"
+}

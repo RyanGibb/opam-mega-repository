@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i vdr-plugin-weather_0.2.1e-68_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r vdr-plugin-weather"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libftp4" {>= "3.1"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-vdr"
+]
+extra-source "vdr-plugin-weather_0.2.1e-68_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/vdr-plugin-weather/vdr-plugin-weather_0.2.1e-68_amd64.deb"
+}

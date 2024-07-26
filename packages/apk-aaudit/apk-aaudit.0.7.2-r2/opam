@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add aaudit-0.7.2-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del aaudit"]
+]
+depends: [
+  "apk-lua5-2" {= "5.2.4-r9"}
+  "apk-lua5-2-cjson" {= "2.1.0-r10"}
+  "apk-lua5-2-pc" {= "1.0.0-r11"}
+  "apk-lua5-2-posix" {= "35.1-r0"}
+  "apk-lua5-2-socket" {= "3.0_rc1_git20160306-r3"}
+]
+extra-source "aaudit-0.7.2-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/aaudit-0.7.2-r2.apk"
+}

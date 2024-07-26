@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sqwebmail_6.0.0+1.0.6-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sqwebmail"]
+]
+depends: [
+  "deb-courier-authlib" {>= "0.66.4-5~"}
+  "deb-courier-base" {= "1.0.6-1"}
+  "deb-cron"
+  "deb-expect"
+  "deb-ispell"
+  "deb-libc6" {>= "2.15"}
+  "deb-libcourier-unicode4" {>= "1.4"}
+  "deb-libfam0"
+  "deb-libgdbm6" {>= "1.16"}
+  "deb-libidn11" {>= "1.13"}
+  "deb-libldap-2-4-2" {>= "2.4.7"}
+  "deb-libpcre3"
+  "deb-maildrop"
+  ("deb-apache2" | "deb- httpd-cgi")
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-default-mta" | "deb- mail-transport-agent")
+  ("deb-iamerican" | "deb- ispell-dictionary")
+  ("deb-sysvinit-utils" {>= "2.88dsf-50"} | "deb- init-d-script")
+]
+extra-source "sqwebmail_6.0.0+1.0.6-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/courier/sqwebmail_6.0.0+1.0.6-1_amd64.deb"
+}

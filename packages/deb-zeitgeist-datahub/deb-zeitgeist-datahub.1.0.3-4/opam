@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i zeitgeist-datahub_1.0.3-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r zeitgeist-datahub"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libglib2-0-0" {>= "2.43.92"}
+  "deb-libgtk-3-0" {>= "3.0.0"}
+  "deb-libjson-glib-1-0-0" {>= "1.5.2"}
+  "deb-libtelepathy-glib0" {>= "0.18.0"}
+  "deb-libzeitgeist-2-0-0" {>= "0.9.9"}
+  "deb-zeitgeist-core" {>= "0.9.10~"}
+]
+extra-source "zeitgeist-datahub_1.0.3-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/z/zeitgeist/zeitgeist-datahub_1.0.3-4_amd64.deb"
+}

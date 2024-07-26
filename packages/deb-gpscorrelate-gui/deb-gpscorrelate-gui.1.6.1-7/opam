@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gpscorrelate-gui_1.6.1-7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gpscorrelate-gui"]
+]
+depends: [
+  "deb-gpscorrelate"
+  "deb-libc6" {>= "2.14"}
+  "deb-libexiv2-14" {>= "0.25"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libgtk2-0-0" {>= "2.8.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libxml2" {>= "2.7.4"}
+]
+extra-source "gpscorrelate-gui_1.6.1-7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gpscorrelate/gpscorrelate-gui_1.6.1-7_amd64.deb"
+}

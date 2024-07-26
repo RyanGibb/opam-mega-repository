@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmoosex-types-netaddr-ip-perl_0.07-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmoosex-types-netaddr-ip-perl"]
+]
+depends: [
+  "deb-libmodule-runtime-perl"
+  "deb-libmoose-perl"
+  "deb-libmoosex-types-perl"
+  "deb-libnamespace-clean-perl"
+  "deb-libnetaddr-ip-perl"
+  "deb-perl-any"
+]
+extra-source "libmoosex-types-netaddr-ip-perl_0.07-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libm/libmoosex-types-netaddr-ip-perl/libmoosex-types-netaddr-ip-perl_0.07-3_all.deb"
+}

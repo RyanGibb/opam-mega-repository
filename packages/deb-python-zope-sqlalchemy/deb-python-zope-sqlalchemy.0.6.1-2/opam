@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-zope.sqlalchemy_0.6.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-zope.sqlalchemy"]
+]
+depends: [
+  "deb-python" {< "2.8"}
+  "deb-python" {>= "2.6.6-7~"}
+  "deb-python-pkg-resources"
+  "deb-python-sqlalchemy" {>= "0.5.1"}
+  "deb-python-transaction"
+  "deb-python-zope-interface"
+  ("deb-python2-7" | "deb- python2-6")
+]
+extra-source "python-zope.sqlalchemy_0.6.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/z/zope.sqlalchemy/python-zope.sqlalchemy_0.6.1-2_all.deb"
+}

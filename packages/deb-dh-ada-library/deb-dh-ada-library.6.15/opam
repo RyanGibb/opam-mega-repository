@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dh-ada-library_6.15_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dh-ada-library"]
+]
+depends: [
+  "deb-binutils"
+  "deb-debhelper"
+  "deb-dpkg-dev"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgnat-8" {>= "8.2.0-9"}
+  "deb-libgpr18"
+  "deb-libxmlada-dom5"
+  "deb-libxmlada-input5"
+  "deb-libxmlada-sax5"
+  "deb-libxmlada-schema5"
+  "deb-libxmlada-unicode5"
+  "deb-perl"
+]
+extra-source "dh-ada-library_6.15_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dh-ada-library/dh-ada-library_6.15_amd64.deb"
+}

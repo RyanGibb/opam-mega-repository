@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libguichan-dev_0.8.2-20_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libguichan-dev"]
+]
+depends: [
+  "deb-liballegro4-dev"
+  "deb-libgl1-mesa-dev"
+  "deb-libguichan-0-8-1-1v5" {= "0.8.2-20"}
+  "deb-libguichan-allegro-0-8-1-1v5" {= "0.8.2-20"}
+  "deb-libguichan-opengl-0-8-1-1v5" {= "0.8.2-20"}
+  "deb-libguichan-sdl-0-8-1-1v5" {= "0.8.2-20"}
+  "deb-libsdl-image1-2-dev"
+  "deb-libsdl1-2-dev"
+]
+conflicts: [
+  "deb-libguichan0"
+  "deb-libguichan0-dev"
+  "deb-libguichan1"
+  "deb-libguichan1-dev"
+  "deb-libguichan2"
+  "deb-libguichan2-dev"
+]
+extra-source "libguichan-dev_0.8.2-20_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/guichan/libguichan-dev_0.8.2-20_amd64.deb"
+}

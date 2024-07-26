@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i initscripts_2.93-8_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r initscripts"]
+]
+depends: [
+  "deb-coreutils" {>= "5.93"}
+  "deb-debianutils" {>= "4"}
+  "deb-lsb-base" {>= "3.2-14"}
+  "deb-mount"
+  "deb-sysvinit-utils" {>= "2.88dsf-59.5"}
+  ("deb-sysv-rc" | "deb- file-rc" | "deb- openrc")
+]
+extra-source "initscripts_2.93-8_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sysvinit/initscripts_2.93-8_amd64.deb"
+}

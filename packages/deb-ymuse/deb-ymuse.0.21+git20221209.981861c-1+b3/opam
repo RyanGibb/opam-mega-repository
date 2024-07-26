@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ymuse_0.21+git20221209.981861c-1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ymuse"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.10.0"}
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.31.1"}
+  "deb-libglib2-0-0" {>= "2.45.7"}
+  "deb-libgtk-3-0" {>= "3.22.0"}
+  "deb-libpango-1-0-0" {>= "1.44.6"}
+  "deb-libpangocairo-1-0-0" {>= "1.22.0"}
+]
+extra-source "ymuse_0.21+git20221209.981861c-1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/y/ymuse/ymuse_0.21+git20221209.981861c-1+b3_amd64.deb"
+}

@@ -1,0 +1,45 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-yesod-core-dev_1.6.24.0-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-yesod-core-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.14"}
+  "deb-libghc-aeson-dev"
+  "deb-libghc-auto-update-dev"
+  "deb-libghc-blaze-html-dev"
+  "deb-libghc-blaze-markup-dev"
+  "deb-libghc-case-insensitive-dev"
+  "deb-libghc-cereal-dev"
+  "deb-libghc-clientsession-dev"
+  "deb-libghc-conduit-dev"
+  "deb-libghc-conduit-extra-dev"
+  "deb-libghc-cookie-dev"
+  "deb-libghc-entropy-dev"
+  "deb-libghc-fast-logger-dev"
+  "deb-libghc-http-types-dev"
+  "deb-libghc-memory-dev"
+  "deb-libghc-monad-logger-dev"
+  "deb-libghc-path-pieces-dev"
+  "deb-libghc-primitive-dev"
+  "deb-libghc-random-dev"
+  "deb-libghc-resourcet-dev"
+  "deb-libghc-shakespeare-dev"
+  "deb-libghc-unix-compat-dev"
+  "deb-libghc-unliftio-dev"
+  "deb-libghc-unordered-containers-dev"
+  "deb-libghc-vector-dev"
+  "deb-libghc-wai-dev"
+  "deb-libghc-wai-extra-dev"
+  "deb-libghc-wai-logger-dev"
+  "deb-libghc-warp-dev"
+  "deb-libghc-word8-dev"
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libghc-yesod-core-dev_1.6.24.0-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-yesod-core/libghc-yesod-core-dev_1.6.24.0-1+b1_amd64.deb"
+}

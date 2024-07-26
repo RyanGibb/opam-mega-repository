@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libwebsockets-evlib_uv-4.3.2-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libwebsockets-evlib_uv"]
+]
+depends: [
+  "apk-libuv" {= "1.44.2-r0"}
+  "apk-libwebsockets" {= "4.3.2-r1"}
+  "apk-musl" {= "1.2.3-r5"}
+]
+extra-source "libwebsockets-evlib_uv-4.3.2-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libwebsockets-evlib_uv-4.3.2-r1.apk"
+}

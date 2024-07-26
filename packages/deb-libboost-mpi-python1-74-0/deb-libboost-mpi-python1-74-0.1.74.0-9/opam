@@ -1,0 +1,43 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libboost-mpi-python1.74.0_1.74.0-9_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libboost-mpi-python1.74.0"]
+]
+depends: [
+  "deb-libboost-python1-74-0"
+  "deb-libboost-python1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.4"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-mpi-default-bin"
+  "deb-python3-any"
+]
+conflicts: [
+  "deb-libboost-mpi-python1-40-0"
+  "deb-libboost-mpi-python1-41-0"
+  "deb-libboost-mpi-python1-42-0"
+  "deb-libboost-mpi-python1-46-0"
+  "deb-libboost-mpi-python1-46-1"
+  "deb-libboost-mpi-python1-48-0"
+  "deb-libboost-mpi-python1-49-0"
+  "deb-libboost-mpi-python1-50-0"
+  "deb-libboost-mpi-python1-52-0"
+  "deb-libboost-mpi-python1-53-0"
+  "deb-libboost-mpi-python1-54-0"
+  "deb-libboost-mpi-python1-55-0"
+  "deb-libboost-mpi-python1-57-0"
+  "deb-libboost-mpi-python1-58-0"
+  "deb-libboost-mpi-python1-60-0"
+  "deb-libboost-mpi-python1-61-0"
+  "deb-libboost-mpi-python1-62-0"
+  "deb-libboost-mpi-python1-63-0"
+  "deb-libboost-mpi-python1-65-1"
+  "deb-libboost-mpi-python1-67-0"
+  "deb-libboost-mpi-python1-70-0"
+  "deb-libboost-mpi-python1-71-0"
+]
+extra-source "libboost-mpi-python1.74.0_1.74.0-9_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/boost1.74/libboost-mpi-python1.74.0_1.74.0-9_amd64.deb"
+}

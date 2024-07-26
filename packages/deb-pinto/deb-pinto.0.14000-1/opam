@@ -1,0 +1,64 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pinto_0.14000-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pinto"]
+]
+depends: [
+  "deb-adduser"
+  "deb-apache2-utils"
+  "deb-libapp-cmd-perl"
+  "deb-libarchive-extract-perl"
+  "deb-libauthen-simple-passwd-perl"
+  "deb-libclass-load-perl"
+  "deb-libcpan-checksums-perl"
+  "deb-libcpan-distnameinfo-perl"
+  "deb-libcwd-guard-perl"
+  "deb-libdatetime-perl"
+  "deb-libdatetime-timezone-perl"
+  "deb-libdbd-sqlite3-perl"
+  "deb-libdbix-class-perl" {>= "0.08200"}
+  "deb-libdevel-stacktrace-perl"
+  "deb-libdist-metadata-perl" {>= "0.924"}
+  "deb-libfile-homedir-perl"
+  "deb-libfile-nfslock-perl"
+  "deb-libfile-which-perl"
+  "deb-libhttp-date-perl"
+  "deb-libhttp-message-perl"
+  "deb-libio-interactive-perl"
+  "deb-libio-prompt-perl"
+  "deb-libio-string-perl"
+  "deb-libjson-perl"
+  "deb-libjson-pp-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-libmoose-perl"
+  "deb-libmoosex-aliases-perl"
+  "deb-libmoosex-classattribute-perl"
+  "deb-libmoosex-configuration-perl"
+  "deb-libmoosex-markasmethods-perl"
+  "deb-libmoosex-nonmoose-perl"
+  "deb-libmoosex-setonce-perl"
+  "deb-libmoosex-strictconstructor-perl"
+  "deb-libmoosex-types-perl"
+  "deb-libpath-class-perl"
+  "deb-libplack-perl" {>= "1.0028"}
+  "deb-libproc-fork-perl"
+  "deb-libproc-terminator-perl"
+  "deb-libreadonly-perl"
+  "deb-librouter-simple-perl"
+  "deb-libstring-format-perl"
+  "deb-libthrowable-perl" {>= "0.200005"}
+  "deb-libtry-tiny-perl"
+  "deb-liburi-perl"
+  "deb-libuuid-tiny-perl"
+  "deb-libwww-perl"
+  "deb-lsb-base"
+  "deb-perl"
+  "deb-perl-any"
+  "deb-starman" {>= "0.3014"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "pinto_0.14000-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pinto/pinto_0.14000-1_all.deb"
+}

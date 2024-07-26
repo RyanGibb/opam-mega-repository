@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mutter_3.30.2-9~deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mutter"]
+]
+depends: [
+  "deb-gnome-settings-daemon-common"
+  "deb-gsettings-desktop-schemas" {>= "3.21.4"}
+  "deb-libc6" {>= "2.4"}
+  "deb-libglib2-0-0" {>= "2.57.2"}
+  "deb-libmutter-3-0" {>= "3.28.2"}
+  "deb-libx11-6"
+  "deb-libxcomposite1" {>= "1-0.3-1"}
+  "deb-mutter-common" {>= "3.30.2-9~deb10u1"}
+  "deb-zenity"
+]
+extra-source "mutter_3.30.2-9~deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mutter/mutter_3.30.2-9~deb10u1_amd64.deb"
+}

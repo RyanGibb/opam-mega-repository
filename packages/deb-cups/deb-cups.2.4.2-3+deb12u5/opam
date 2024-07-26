@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cups_2.4.2-3+deb12u5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cups"]
+]
+depends: [
+  "deb-cups-client" {>= "2.4.2-3+deb12u5"}
+  "deb-cups-common" {>= "2.4.2-3+deb12u5"}
+  "deb-cups-core-drivers" {>= "2.4.2-3+deb12u5"}
+  "deb-cups-daemon" {>= "2.4.2-3+deb12u5"}
+  "deb-cups-filters"
+  "deb-cups-ppdc"
+  "deb-cups-server-common" {>= "2.4.2-3+deb12u5"}
+  "deb-ghostscript"
+  "deb-libavahi-client3" {>= "0.6.16"}
+  "deb-libavahi-common3" {>= "0.6.16"}
+  "deb-libc6" {>= "2.36"}
+  "deb-libcups2" {= "2.4.2-3+deb12u5"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libusb-1-0-0" {>= "2-1.0.16"}
+  "deb-poppler-utils"
+  "deb-procps"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "cups_2.4.2-3+deb12u5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cups/cups_2.4.2-3+deb12u5_amd64.deb"
+}

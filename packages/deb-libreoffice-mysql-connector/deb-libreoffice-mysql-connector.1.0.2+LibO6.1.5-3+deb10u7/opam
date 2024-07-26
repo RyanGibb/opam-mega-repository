@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libreoffice-mysql-connector_1.0.2+LibO6.1.5-3+deb10u7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libreoffice-mysql-connector"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libmysqlcppconn7v5" {>= "1.1.9"}
+  "deb-libreoffice-core"
+  "deb-libstdc++6" {>= "5"}
+  "deb-uno-libs3" {>= "4.4.0~alpha"}
+  "deb-ure"
+]
+extra-source "libreoffice-mysql-connector_1.0.2+LibO6.1.5-3+deb10u7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libr/libreoffice/libreoffice-mysql-connector_1.0.2+LibO6.1.5-3+deb10u7_amd64.deb"
+}

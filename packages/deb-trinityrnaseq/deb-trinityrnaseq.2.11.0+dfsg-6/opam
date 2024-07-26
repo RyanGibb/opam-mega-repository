@@ -1,0 +1,64 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i trinityrnaseq_2.11.0+dfsg-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r trinityrnaseq"]
+]
+depends: [
+  "deb-berkeley-express"
+  "deb-bowtie"
+  "deb-bowtie2"
+  "deb-curl"
+  "deb-default-jre-headless"
+  "deb-gmap"
+  "deb-hisat2"
+  "deb-jaligner"
+  "deb-jellyfish"
+  "deb-kallisto"
+  "deb-libc6" {>= "2.27"}
+  "deb-libcommons-collections4-java"
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgetopt-java"
+  "deb-libgomp1" {>= "6"}
+  "deb-libhts3" {>= "1.10"}
+  "deb-libjung-free-java"
+  "deb-libstdc++6" {>= "9"}
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-ncbi-blast+"
+  "deb-parafly"
+  "deb-perl-any"
+  "deb-python3"
+  "deb-python3-hisat2"
+  "deb-python3-htseq"
+  "deb-python3-numpy"
+  "deb-r-base-core"
+  "deb-r-bioc-biobase"
+  "deb-r-bioc-ctc"
+  "deb-r-bioc-deseq2"
+  "deb-r-bioc-dexseq"
+  "deb-r-bioc-edger"
+  "deb-r-bioc-goseq"
+  "deb-r-bioc-qvalue"
+  "deb-r-bioc-rots"
+  "deb-r-bioc-tximport"
+  "deb-r-cran-ape"
+  "deb-r-cran-argparse"
+  "deb-r-cran-cluster"
+  "deb-r-cran-fastcluster"
+  "deb-r-cran-goplot"
+  "deb-r-cran-gplots"
+  "deb-r-cran-readr"
+  "deb-rna-star"
+  "deb-rsem"
+  "deb-salmon"
+  "deb-samtools"
+  "deb-subread"
+  "deb-transdecoder"
+  "deb-trimmomatic"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "trinityrnaseq_2.11.0+dfsg-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/trinityrnaseq/trinityrnaseq_2.11.0+dfsg-6_amd64.deb"
+}

@@ -1,0 +1,115 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add linux-firmware-20240312-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del linux-firmware"]
+]
+depends: [
+  "apk-linux-firmware-3com" {= "20240312-r0"}
+  "apk-linux-firmware-acenic" {= "20240312-r0"}
+  "apk-linux-firmware-adaptec" {= "20240312-r0"}
+  "apk-linux-firmware-advansys" {= "20240312-r0"}
+  "apk-linux-firmware-airoha" {= "20240312-r0"}
+  "apk-linux-firmware-amd" {= "20240312-r0"}
+  "apk-linux-firmware-amd-ucode" {= "20240312-r0"}
+  "apk-linux-firmware-amdgpu" {= "20240312-r0"}
+  "apk-linux-firmware-amdtee" {= "20240312-r0"}
+  "apk-linux-firmware-amlogic" {= "20240312-r0"}
+  "apk-linux-firmware-amphion" {= "20240312-r0"}
+  "apk-linux-firmware-ar3k" {= "20240312-r0"}
+  "apk-linux-firmware-arm" {= "20240312-r0"}
+  "apk-linux-firmware-ath10k" {= "20240312-r0"}
+  "apk-linux-firmware-ath11k" {= "20240312-r0"}
+  "apk-linux-firmware-ath12k" {= "20240312-r0"}
+  "apk-linux-firmware-ath6k" {= "20240312-r0"}
+  "apk-linux-firmware-ath9k_htc" {= "20240312-r0"}
+  "apk-linux-firmware-atmel" {= "20240312-r0"}
+  "apk-linux-firmware-atusb" {= "20240312-r0"}
+  "apk-linux-firmware-av7110" {= "20240312-r0"}
+  "apk-linux-firmware-bnx2" {= "20240312-r0"}
+  "apk-linux-firmware-bnx2x" {= "20240312-r0"}
+  "apk-linux-firmware-brcm" {= "20240312-r0"}
+  "apk-linux-firmware-cadence" {= "20240312-r0"}
+  "apk-linux-firmware-cavium" {= "20240312-r0"}
+  "apk-linux-firmware-cirrus" {= "20240312-r0"}
+  "apk-linux-firmware-cis" {= "20240312-r0"}
+  "apk-linux-firmware-cnm" {= "20240312-r0"}
+  "apk-linux-firmware-cpia2" {= "20240312-r0"}
+  "apk-linux-firmware-cxgb3" {= "20240312-r0"}
+  "apk-linux-firmware-cxgb4" {= "20240312-r0"}
+  "apk-linux-firmware-cypress" {= "20240312-r0"}
+  "apk-linux-firmware-dabusb" {= "20240312-r0"}
+  "apk-linux-firmware-dpaa2" {= "20240312-r0"}
+  "apk-linux-firmware-dsp56k" {= "20240312-r0"}
+  "apk-linux-firmware-e100" {= "20240312-r0"}
+  "apk-linux-firmware-edgeport" {= "20240312-r0"}
+  "apk-linux-firmware-emi26" {= "20240312-r0"}
+  "apk-linux-firmware-emi62" {= "20240312-r0"}
+  "apk-linux-firmware-ene-ub6250" {= "20240312-r0"}
+  "apk-linux-firmware-ess" {= "20240312-r0"}
+  "apk-linux-firmware-go7007" {= "20240312-r0"}
+  "apk-linux-firmware-i915" {= "20240312-r0"}
+  "apk-linux-firmware-imx" {= "20240312-r0"}
+  "apk-linux-firmware-inside-secure" {= "20240312-r0"}
+  "apk-linux-firmware-intel" {= "20240312-r0"}
+  "apk-linux-firmware-isci" {= "20240312-r0"}
+  "apk-linux-firmware-ixp4xx" {= "20240312-r0"}
+  "apk-linux-firmware-kaweth" {= "20240312-r0"}
+  "apk-linux-firmware-keyspan" {= "20240312-r0"}
+  "apk-linux-firmware-keyspan_pda" {= "20240312-r0"}
+  "apk-linux-firmware-korg" {= "20240312-r0"}
+  "apk-linux-firmware-libertas" {= "20240312-r0"}
+  "apk-linux-firmware-liquidio" {= "20240312-r0"}
+  "apk-linux-firmware-matrox" {= "20240312-r0"}
+  "apk-linux-firmware-mediatek" {= "20240312-r0"}
+  "apk-linux-firmware-mellanox" {= "20240312-r0"}
+  "apk-linux-firmware-meson" {= "20240312-r0"}
+  "apk-linux-firmware-microchip" {= "20240312-r0"}
+  "apk-linux-firmware-moxa" {= "20240312-r0"}
+  "apk-linux-firmware-mrvl" {= "20240312-r0"}
+  "apk-linux-firmware-mwl8k" {= "20240312-r0"}
+  "apk-linux-firmware-mwlwifi" {= "20240312-r0"}
+  "apk-linux-firmware-myricom" {= "20240312-r0"}
+  "apk-linux-firmware-netronome" {= "20240312-r0"}
+  "apk-linux-firmware-nvidia" {= "20240312-r0"}
+  "apk-linux-firmware-nxp" {= "20240312-r0"}
+  "apk-linux-firmware-ositech" {= "20240312-r0"}
+  "apk-linux-firmware-other" {= "20240312-r0"}
+  "apk-linux-firmware-powervr" {= "20240312-r0"}
+  "apk-linux-firmware-qca" {= "20240312-r0"}
+  "apk-linux-firmware-qcom" {= "20240312-r0"}
+  "apk-linux-firmware-qed" {= "20240312-r0"}
+  "apk-linux-firmware-qlogic" {= "20240312-r0"}
+  "apk-linux-firmware-r128" {= "20240312-r0"}
+  "apk-linux-firmware-radeon" {= "20240312-r0"}
+  "apk-linux-firmware-rockchip" {= "20240312-r0"}
+  "apk-linux-firmware-rsi" {= "20240312-r0"}
+  "apk-linux-firmware-rtl_bt" {= "20240312-r0"}
+  "apk-linux-firmware-rtl_nic" {= "20240312-r0"}
+  "apk-linux-firmware-rtlwifi" {= "20240312-r0"}
+  "apk-linux-firmware-rtw88" {= "20240312-r0"}
+  "apk-linux-firmware-rtw89" {= "20240312-r0"}
+  "apk-linux-firmware-s5p-mfc" {= "20240312-r0"}
+  "apk-linux-firmware-sb16" {= "20240312-r0"}
+  "apk-linux-firmware-slicoss" {= "20240312-r0"}
+  "apk-linux-firmware-sun" {= "20240312-r0"}
+  "apk-linux-firmware-sxg" {= "20240312-r0"}
+  "apk-linux-firmware-synaptics" {= "20240312-r0"}
+  "apk-linux-firmware-tehuti" {= "20240312-r0"}
+  "apk-linux-firmware-ti" {= "20240312-r0"}
+  "apk-linux-firmware-ti-connectivity" {= "20240312-r0"}
+  "apk-linux-firmware-ti-keystone" {= "20240312-r0"}
+  "apk-linux-firmware-tigon" {= "20240312-r0"}
+  "apk-linux-firmware-ttusb-budget" {= "20240312-r0"}
+  "apk-linux-firmware-ueagle-atm" {= "20240312-r0"}
+  "apk-linux-firmware-vicam" {= "20240312-r0"}
+  "apk-linux-firmware-vxge" {= "20240312-r0"}
+  "apk-linux-firmware-wfx" {= "20240312-r0"}
+  "apk-linux-firmware-xe" {= "20240312-r0"}
+  "apk-linux-firmware-yam" {= "20240312-r0"}
+  "apk-linux-firmware-yamaha" {= "20240312-r0"}
+]
+extra-source "linux-firmware-20240312-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/linux-firmware-20240312-r0.apk"
+}

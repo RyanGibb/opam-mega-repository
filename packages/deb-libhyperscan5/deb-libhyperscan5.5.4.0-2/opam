@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libhyperscan5_5.4.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libhyperscan5"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.4"}
+  "deb-libstdc++6" {>= "9"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+conflicts: [
+  "deb-libhyperscan4" {>= "5"}
+]
+extra-source "libhyperscan5_5.4.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/hyperscan/libhyperscan5_5.4.0-2_amd64.deb"
+}

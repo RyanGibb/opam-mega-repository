@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i abe_1.1+dfsg-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r abe"]
+]
+depends: [
+  "deb-abe-data" {= "1.1+dfsg-3"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libice6" {>= "1-1.0.0"}
+  "deb-libsdl-mixer1-2"
+  "deb-libsdl1-2debian" {>= "1.2.11"}
+  "deb-libsm6"
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxi6"
+  "deb-libxmu6"
+  "deb-libxt6"
+]
+extra-source "abe_1.1+dfsg-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/abe/abe_1.1+dfsg-3_amd64.deb"
+}

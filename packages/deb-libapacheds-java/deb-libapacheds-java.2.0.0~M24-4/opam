@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libapacheds-java_2.0.0~M24-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libapacheds-java"]
+]
+depends: [
+  "deb-libantlr-java"
+  "deb-libapache-directory-api-java"
+  "deb-libapache-directory-jdbm-java"
+  "deb-libapacheds-i18n-java" {= "2.0.0~M24-4"}
+  "deb-libapacheds-kerberos-codec-java" {= "2.0.0~M24-4"}
+  "deb-libbcprov-java" {>= "1.65"}
+  "deb-libcommons-collections3-java"
+  "deb-libcommons-io-java"
+  "deb-libehcache-java"
+  "deb-libjetty9-java"
+  "deb-liblog4j1-2-java"
+  "deb-libmavibot-java"
+  "deb-libmina2-java" {>= "2.1.4"}
+  "deb-libslf4j-java" {>= "1.7.25"}
+]
+extra-source "libapacheds-java_2.0.0~M24-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/apache-directory-server/libapacheds-java_2.0.0~M24-4_all.deb"
+}

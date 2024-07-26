@@ -1,0 +1,59 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kdepimlibs5-dev_4:4.14.10-11_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kdepimlibs5-dev"]
+]
+depends: [
+  "deb-kdelibs5-dev" {>= "4-4.14.2"}
+  "deb-libakonadi-calendar4" {= "4-4.14.10-11"}
+  "deb-libakonadi-contact4" {= "4-4.14.10-11"}
+  "deb-libakonadi-kabc4" {= "4-4.14.10-11"}
+  "deb-libakonadi-kcal4" {= "4-4.14.10-11"}
+  "deb-libakonadi-kde4" {= "4-4.14.10-11"}
+  "deb-libakonadi-kmime4" {= "4-4.14.10-11"}
+  "deb-libakonadi-notes4" {= "4-4.14.10-11"}
+  "deb-libakonadi-socialutils4" {= "4-4.14.10-11"}
+  "deb-libakonadi-xml4" {= "4-4.14.10-11"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgpgme++2v5" {= "4-4.14.10-11"}
+  "deb-libkabc4" {= "4-4.14.10-11"}
+  "deb-libkalarmcal2" {= "4-4.14.10-11"}
+  "deb-libkblog4" {= "4-4.14.10-11"}
+  "deb-libkcal4" {= "4-4.14.10-11"}
+  "deb-libkcalcore4" {= "4-4.14.10-11"}
+  "deb-libkcalutils4" {= "4-4.14.10-11"}
+  "deb-libkdecore5" {>= "4-4.14.2"}
+  "deb-libkdeui5" {>= "4-4.14.2"}
+  "deb-libkholidays4" {= "4-4.14.10-11"}
+  "deb-libkimap4" {= "4-4.14.10-11"}
+  "deb-libkio5" {>= "4-4.14.2"}
+  "deb-libkldap4" {= "4-4.14.10-11"}
+  "deb-libkmbox4" {= "4-4.14.10-11"}
+  "deb-libkmime4" {= "4-4.14.10-11"}
+  "deb-libkontactinterface4a" {= "4-4.14.10-11"}
+  "deb-libkpimidentities4" {= "4-4.14.10-11"}
+  "deb-libkpimtextedit4" {= "4-4.14.10-11"}
+  "deb-libkpimutils4" {= "4-4.14.10-11"}
+  "deb-libkresources4" {= "4-4.14.10-11"}
+  "deb-libktnef4" {= "4-4.14.10-11"}
+  "deb-libkxmlrpcclient4" {= "4-4.14.10-11"}
+  "deb-libmailtransport4" {= "4-4.14.10-11"}
+  "deb-libmicroblog4" {= "4-4.14.10-11"}
+  "deb-libqgpgme1" {= "4-4.14.10-11"}
+  "deb-libqt4-dbus" {>= "4-4.8"}
+  "deb-libqt4-xml" {>= "4-4.8"}
+  "deb-libqtcore4" {>= "4-4.8"}
+  "deb-libqtgui4" {>= "4-4.8"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libsyndication4" {= "4-4.14.10-11"}
+]
+conflicts: [
+  "deb-libkf5akonadi-dev"
+  "deb-libkf5akonadi-dev-bin"
+]
+extra-source "kdepimlibs5-dev_4:4.14.10-11_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kdepimlibs/kdepimlibs5-dev_4.14.10-11_amd64.deb"
+}

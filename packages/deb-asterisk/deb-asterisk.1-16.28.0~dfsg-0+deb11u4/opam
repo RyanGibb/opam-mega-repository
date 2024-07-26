@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i asterisk_1:16.28.0~dfsg-0+deb11u4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r asterisk"]
+]
+depends: [
+  "deb-adduser"
+  "deb-asterisk-core-sounds-en"
+  "deb-asterisk-modules" {= "1-16.28.0~dfsg-0+deb11u4"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libcap2" {>= "1-2.10"}
+  "deb-libcrypt1" {>= "1-4.1.0"}
+  "deb-libedit2" {>= "2.11-20080614-0"}
+  "deb-libjansson4" {>= "2.11"}
+  "deb-libpopt0" {>= "1.14"}
+  "deb-libsqlite3-0" {>= "3.7.15"}
+  "deb-libssl1-1" {>= "1.1.1"}
+  "deb-libsystemd0"
+  "deb-liburiparser1" {>= "0.6.0"}
+  "deb-libuuid1" {>= "2.16"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libxslt1-1" {>= "1.1.25"}
+  "deb-lsb-base" {>= "3.0-6"}
+  ("deb-asterisk-config" {= "1-16.28.0~dfsg-0+deb11u4"} | "deb- asterisk-config-custom")
+]
+extra-source "asterisk_1:16.28.0~dfsg-0+deb11u4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/asterisk/asterisk_16.28.0~dfsg-0+deb11u4_amd64.deb"
+}

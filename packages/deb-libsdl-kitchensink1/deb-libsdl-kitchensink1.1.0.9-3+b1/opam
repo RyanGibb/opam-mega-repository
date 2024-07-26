@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsdl-kitchensink1_1.0.9-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsdl-kitchensink1"]
+]
+depends: [
+  "deb-libavcodec-extra59"
+  "deb-libavformat-extra59"
+  "deb-libavutil57" {>= "7-5.0"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libsdl2-2-0-0" {>= "2.0.12"}
+  "deb-libswresample4" {>= "7-5.0"}
+  "deb-libswscale6" {>= "7-5.0"}
+]
+extra-source "libsdl-kitchensink1_1.0.9-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sdl-kitchensink/libsdl-kitchensink1_1.0.9-3+b1_amd64.deb"
+}

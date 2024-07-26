@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add protobuf-dev-3.12.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del protobuf-dev"]
+]
+depends: [
+  "apk-libprotobuf" {= "3.12.2-r0"}
+  "apk-libprotobuf-lite" {= "3.12.2-r0"}
+  "apk-libprotoc" {= "3.12.2-r0"}
+  "apk-pkgconf" {= "1.7.2-r0"}
+  "apk-protoc" {= "3.12.2-r0"}
+  "apk-zlib-dev" {= "1.2.12-r3"}
+]
+extra-source "protobuf-dev-3.12.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/protobuf-dev-3.12.2-r0.apk"
+}

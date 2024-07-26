@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kicad_6.0.11+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kicad"]
+]
+depends: [
+  "deb-libc6" {>= "2.35"}
+  "deb-libcairo2" {>= "1.14.0"}
+  "deb-libcurl4" {>= "7.16.2"}
+  "deb-libgcc-s1" {>= "3.4"}
+  "deb-libgl1"
+  "deb-libglew2-2" {>= "2.2.0-4+b1"}
+  "deb-libglib2-0-0" {>= "2.49.3"}
+  "deb-libgtk-3-0" {>= "3.16.2"}
+  "deb-libngspice0"
+  "deb-libocct-data-exchange-7-6" {>= "7.6.3+dfsg1"}
+  "deb-libocct-foundation-7-6" {>= "7.6.3+dfsg1"}
+  "deb-libocct-modeling-algorithms-7-6" {>= "7.6.3+dfsg1"}
+  "deb-libocct-modeling-data-7-6" {>= "7.6.3+dfsg1"}
+  "deb-libocct-ocaf-7-6" {>= "7.6.3+dfsg1"}
+  "deb-libpixman-1-0" {>= "0.15.14"}
+  "deb-libpython3-11" {>= "3.11.0"}
+  "deb-libstdc++6" {>= "12"}
+  "deb-libwxbase3-2-1" {>= "3.2.1+dfsg"}
+  "deb-libwxgtk-gl3-2-1" {>= "3.2.1+dfsg"}
+  "deb-libwxgtk3-2-1" {>= "3.2.1+dfsg-2"}
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-any"
+  "deb-python3-wxgtk4-0" {>= "4.2.0+dfsg-1~"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+extra-source "kicad_6.0.11+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kicad/kicad_6.0.11+dfsg-1_amd64.deb"
+}

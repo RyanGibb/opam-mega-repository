@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcatalyst-controller-formbuilder-perl_0.06-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcatalyst-controller-formbuilder-perl"]
+]
+depends: [
+  "deb-libcatalyst-perl"
+  "deb-libcgi-formbuilder-perl"
+  "deb-libclass-data-inheritable-perl"
+  "deb-libclass-inspector-perl"
+  "deb-libmro-compat-perl"
+  "deb-libtest-www-mechanize-catalyst-perl"
+  "deb-libtie-ixhash-perl"
+  "deb-perl-any"
+]
+extra-source "libcatalyst-controller-formbuilder-perl_0.06-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libcatalyst-controller-formbuilder-perl/libcatalyst-controller-formbuilder-perl_0.06-3_all.deb"
+}

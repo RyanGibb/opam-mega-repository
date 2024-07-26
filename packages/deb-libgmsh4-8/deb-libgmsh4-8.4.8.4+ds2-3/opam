@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgmsh4.8_4.8.4+ds2-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgmsh4.8"]
+]
+depends: [
+  "deb-libalglib3-19" {>= "3.19.0"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libfltk-gl1-3" {>= "1.3.0"}
+  "deb-libfltk-images1-3"
+  "deb-libfltk1-3" {>= "1.3.4"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libgl1"
+  "deb-libgl2ps1-4" {>= "1.4.2+dfsg1"}
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-libgomp1" {>= "6"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libmetis5" {>= "5.1.0.dfsg"}
+  "deb-libocct-data-exchange-7-6" {>= "7.6.3+dfsg1"}
+  "deb-libocct-foundation-7-6" {>= "7.6.3+dfsg1"}
+  "deb-libocct-modeling-algorithms-7-6" {>= "7.6.3+dfsg1"}
+  "deb-libocct-modeling-data-7-6" {>= "7.6.3+dfsg1"}
+  "deb-libocct-ocaf-7-6" {>= "7.6.3+dfsg1"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libvoro++1" {>= "0.4.6"}
+  "deb-libx11-6"
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+extra-source "libgmsh4.8_4.8.4+ds2-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gmsh/libgmsh4.8_4.8.4+ds2-3_amd64.deb"
+}

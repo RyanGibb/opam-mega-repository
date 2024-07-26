@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qcumber_2.3.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qcumber"]
+]
+depends: [
+  "deb-libjs-angularjs"
+  "deb-libjs-bootstrap"
+  "deb-libjs-d3"
+  "deb-libjs-jquery"
+  "deb-python3-any"
+  "deb-python3-biopython"
+  "deb-python3-jinja2"
+  "deb-python3-matplotlib"
+  "deb-r-base-core"
+  "deb-r-bioc-savr"
+  "deb-r-cran-ggplot2"
+  "deb-r-cran-quantreg"
+  "deb-snakemake"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+conflicts: [
+  "deb-qc-pipeline"
+]
+extra-source "qcumber_2.3.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qcumber/qcumber_2.3.0-2_all.deb"
+}

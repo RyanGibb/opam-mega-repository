@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libflatpak0_1.14.8-1~deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libflatpak0"]
+]
+depends: [
+  "deb-bubblewrap" {>= "0.5.0"}
+  "deb-libarchive13" {>= "3.0.4"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libdconf1" {>= "0.26.0"}
+  "deb-libglib2-0-0" {>= "2.67.3+git20210214"}
+  "deb-libgpgme11" {>= "1.1.8"}
+  "deb-libjson-glib-1-0-0" {>= "1.5.2"}
+  "deb-libmalcontent-0-0" {>= "0.6.0"}
+  "deb-libostree-1-1" {>= "2020.8"}
+  "deb-libpolkit-gobject-1-0" {>= "0.101"}
+  "deb-libseccomp2" {>= "2.5.2"}
+  "deb-libsystemd0"
+  "deb-libxau6" {>= "1-1.0.9"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libzstd1" {>= "1.5.2"}
+]
+extra-source "libflatpak0_1.14.8-1~deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/flatpak/libflatpak0_1.14.8-1~deb12u1_amd64.deb"
+}

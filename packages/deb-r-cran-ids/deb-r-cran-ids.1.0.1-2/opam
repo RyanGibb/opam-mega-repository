@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-ids_1.0.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-ids"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.1.1-2"}
+  "deb-r-cran-openssl"
+  "deb-r-cran-uuid"
+]
+extra-source "r-cran-ids_1.0.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-ids/r-cran-ids_1.0.1-2_all.deb"
+}

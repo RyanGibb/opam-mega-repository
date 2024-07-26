@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add liblognorm-2.0.6-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del liblognorm"]
+]
+depends: [
+  "apk-libestr" {= "0.1.11-r4"}
+  "apk-libfastjson" {= "1.2304.0-r4"}
+  "apk-musl" {= "1.2.5-r0"}
+]
+extra-source "liblognorm-2.0.6-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/liblognorm-2.0.6-r5.apk"
+}

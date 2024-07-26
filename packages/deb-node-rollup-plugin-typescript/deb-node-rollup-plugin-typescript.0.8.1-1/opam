@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-rollup-plugin-typescript_0.8.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-rollup-plugin-typescript"]
+]
+depends: [
+  "deb-node-compare-versions" {>= "2.0.1"}
+  "deb-node-object-assign" {>= "4.0.1"}
+  "deb-node-rollup-pluginutils" {>= "1.3.1"}
+  "deb-node-tippex" {>= "2.1.1"}
+  "deb-node-typescript" {>= "1.8.9"}
+  "deb-nodejs"
+]
+extra-source "node-rollup-plugin-typescript_0.8.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-rollup-plugin-typescript/node-rollup-plugin-typescript_0.8.1-1_all.deb"
+}

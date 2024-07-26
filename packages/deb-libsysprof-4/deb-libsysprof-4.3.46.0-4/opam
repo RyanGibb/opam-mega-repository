@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsysprof-4_3.46.0-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsysprof-4"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libglib2-0-0" {>= "2.73.0"}
+  "deb-libjson-glib-1-0-0" {>= "1.5.2"}
+  "deb-libpolkit-gobject-1-0" {>= "0.105"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-libunwind8"
+]
+extra-source "libsysprof-4_3.46.0-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sysprof/libsysprof-4_3.46.0-4_amd64.deb"
+}

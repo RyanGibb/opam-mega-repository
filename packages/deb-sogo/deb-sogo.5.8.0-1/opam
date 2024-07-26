@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sogo_5.8.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sogo"]
+]
+depends: [
+  "deb-adduser"
+  "deb-gnustep-base-runtime" {>= "1.28.0"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcrypt1" {>= "1-4.1.0"}
+  "deb-libcurl4" {>= "7.16.2"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.14.0"}
+  "deb-libgnustep-base1-28" {>= "1.28.0"}
+  "deb-liblasso3" {>= "2.3.5"}
+  "deb-libmemcached11" {>= "1.0.18+"}
+  "deb-liboath0" {>= "1.12.0"}
+  "deb-libobjc4" {>= "4.6"}
+  "deb-libsbjson2-3"
+  "deb-libsodium23" {>= "1.0.13"}
+  "deb-libsope1" {>= "5.7.1"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libytnef0"
+  "deb-libzip4" {>= "1.0"}
+  "deb-memcached"
+  "deb-sogo-common" {= "5.8.0-1"}
+  "deb-sysvinit-utils"
+  "deb-zip"
+  ("deb-systemd" | "deb- tmpreaper")
+]
+extra-source "sogo_5.8.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sogo/sogo_5.8.0-1_amd64.deb"
+}

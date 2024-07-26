@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gnupg-keyboxd-2.4.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gnupg-keyboxd"]
+]
+depends: [
+  "apk-libassuan" {= "2.5.6-r1"}
+  "apk-libgcrypt" {= "1.10.3-r0"}
+  "apk-libgpg-error" {= "1.47-r2"}
+  "apk-libksba" {= "1.6.5-r0"}
+  "apk-musl" {= "1.2.4_git20230717-r4"}
+  "apk-npth" {= "1.6-r4"}
+  "apk-sqlite-libs" {= "3.44.2-r0"}
+]
+extra-source "gnupg-keyboxd-2.4.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/gnupg-keyboxd-2.4.4-r0.apk"
+}

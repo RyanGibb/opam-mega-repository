@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libxray-spacegroup-perl_0.1.1-3.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libxray-spacegroup-perl"]
+]
+depends: [
+  "deb-libclass-std-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-libreadonly-perl"
+  "deb-libregexp-optimizer-perl"
+  "deb-perl-any"
+]
+extra-source "libxray-spacegroup-perl_0.1.1-3.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libx/libxray-spacegroup-perl/libxray-spacegroup-perl_0.1.1-3.1_all.deb"
+}

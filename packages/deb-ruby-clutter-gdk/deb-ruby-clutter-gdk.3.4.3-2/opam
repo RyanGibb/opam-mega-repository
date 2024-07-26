@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-clutter-gdk_3.4.3-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-clutter-gdk"]
+]
+depends: [
+  "deb-gir1-2-clutter-1-0"
+  "deb-ruby-clutter" {>= "3.4.3-2"}
+  "deb-ruby-gdk3" {>= "3.4.3-2"}
+  ("deb-ruby" | "deb- ruby-interpreter")
+]
+extra-source "ruby-clutter-gdk_3.4.3-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-gnome/ruby-clutter-gdk_3.4.3-2_all.deb"
+}

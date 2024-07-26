@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i phpdox_0.11.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r phpdox"]
+]
+depends: [
+  "deb-php-cli"
+  "deb-php-common"
+  "deb-php-directory-scanner" {< "2~~"}
+  "deb-php-directory-scanner" {>= "1.3.0"}
+  "deb-php-fdomdocument" {< "2~~"}
+  "deb-php-fdomdocument" {>= "1.6"}
+  "deb-php-fxsl" {< "2~~"}
+  "deb-php-fxsl" {>= "1.1"}
+  "deb-php-mbstring"
+  "deb-php-parser" {< "4~~"}
+  "deb-php-parser" {>= "3.1"}
+  "deb-php-timer" {< "3~~"}
+  "deb-php-timer" {>= "2.0"}
+  "deb-php-xml"
+]
+extra-source "phpdox_0.11.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/phpdox/phpdox_0.11.2-1_all.deb"
+}

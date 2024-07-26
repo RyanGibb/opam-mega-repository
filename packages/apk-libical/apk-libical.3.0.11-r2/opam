@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libical-3.0.11-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libical"]
+]
+depends: [
+  "apk-glib" {= "2.70.5-r0"}
+  "apk-icu-libs" {= "69.1-r1"}
+  "apk-libgcc" {= "10.3.1_git20211027-r0"}
+  "apk-libstdc++" {= "10.3.1_git20211027-r0"}
+  "apk-libxml2" {= "2.9.14-r2"}
+  "apk-musl" {= "1.2.2-r9"}
+]
+extra-source "libical-3.0.11-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libical-3.0.11-r2.apk"
+}

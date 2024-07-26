@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpreludedbcpp2_4.1.0-2+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpreludedbcpp2"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libpreludedb7" {>= "4.1"}
+  "deb-libstdc++6" {>= "5.2"}
+]
+extra-source "libpreludedbcpp2_4.1.0-2+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libp/libpreludedb/libpreludedbcpp2_4.1.0-2+b2_amd64.deb"
+}

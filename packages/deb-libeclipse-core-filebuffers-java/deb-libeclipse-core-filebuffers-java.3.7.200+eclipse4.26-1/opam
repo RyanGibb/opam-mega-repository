@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libeclipse-core-filebuffers-java_3.7.200+eclipse4.26-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libeclipse-core-filebuffers-java"]
+]
+depends: [
+  "deb-libeclipse-core-contenttype-java"
+  "deb-libeclipse-core-filesystem-java"
+  "deb-libeclipse-core-jobs-java"
+  "deb-libeclipse-core-resources-java"
+  "deb-libeclipse-core-runtime-java"
+  "deb-libeclipse-text-java"
+  "deb-libequinox-common-java"
+  "deb-libequinox-preferences-java"
+  "deb-libequinox-registry-java"
+  "deb-libicu4j-java"
+]
+extra-source "libeclipse-core-filebuffers-java_3.7.200+eclipse4.26-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/eclipse-platform-text/libeclipse-core-filebuffers-java_3.7.200+eclipse4.26-1_all.deb"
+}

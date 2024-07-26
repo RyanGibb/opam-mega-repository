@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i snakemake_5.4.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r snakemake"]
+]
+depends: [
+  "deb-ca-certificates"
+  "deb-libjs-d3"
+  "deb-libjs-mathjax"
+  "deb-libjs-sphinxdoc" {>= "1.0"}
+  "deb-python3-any"
+  "deb-python3-appdirs"
+  "deb-python3-configargparse"
+  "deb-python3-datrie"
+  "deb-python3-docutils"
+  "deb-python3-git"
+  "deb-python3-jsonschema"
+  "deb-python3-networkx"
+  "deb-python3-psutil"
+  "deb-python3-pygraphviz"
+  "deb-python3-pytools"
+  "deb-python3-ratelimiter"
+  "deb-python3-recommonmark"
+  "deb-python3-requests"
+  "deb-python3-rpy2"
+  "deb-python3-setuptools"
+  "deb-python3-wrapt"
+  "deb-python3-yaml"
+  "deb-sphinx-rtd-theme-common" {>= "0.4.2+dfsg"}
+]
+extra-source "snakemake_5.4.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/snakemake/snakemake_5.4.0-1_all.deb"
+}

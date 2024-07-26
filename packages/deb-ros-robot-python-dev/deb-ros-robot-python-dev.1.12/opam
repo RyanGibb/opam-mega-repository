@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ros-robot-python-dev_1.12_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ros-robot-python-dev"]
+]
+depends: [
+  "deb-python-actionlib-msgs"
+  "deb-python-diagnostic-msgs"
+  "deb-python-geometry-msgs"
+  "deb-python-map-msgs"
+  "deb-python-move-base-msgs"
+  "deb-python-nav-msgs"
+  "deb-python-resource-retriever"
+  "deb-python-sensor-msgs"
+  "deb-python-shape-msgs"
+  "deb-python-stereo-msgs"
+  "deb-python-tf"
+  "deb-python-tf2"
+  "deb-python-tf2-msgs"
+  "deb-python-tf2-ros"
+  "deb-python-tf2-sensor-msgs"
+  "deb-python-trajectory-msgs"
+  "deb-python-visualization-msgs"
+  "deb-ros-base-python-dev"
+]
+extra-source "ros-robot-python-dev_1.12_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ros-metapackages/ros-robot-python-dev_1.12_all.deb"
+}

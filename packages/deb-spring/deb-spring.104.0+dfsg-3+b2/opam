@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i spring_104.0+dfsg-3+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r spring"]
+]
+depends: [
+  "deb-libboost-regex1-67-0" {>= "1.67.0-10"}
+  "deb-libboost-system1-67-0"
+  "deb-libc6" {>= "2.27"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libdevil1c2"
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgcc1" {>= "1-3.4"}
+  "deb-libgl1"
+  "deb-libglew2-1" {>= "1.12.0"}
+  "deb-libjsoncpp1" {>= "1.7.4"}
+  "deb-libminizip1" {>= "1.1"}
+  "deb-libogg0" {>= "1.0rc3"}
+  "deb-libopenal1" {>= "1.14"}
+  "deb-libsdl2-2-0-0" {>= "2.0.8"}
+  "deb-libstdc++6" {>= "7"}
+  "deb-libunwind8"
+  "deb-libvorbis0a" {>= "1.1.2"}
+  "deb-libvorbisfile3" {>= "1.1.2"}
+  "deb-libx11-6"
+  "deb-libxcursor1" {> "1.1.2"}
+  "deb-spring-common" {= "104.0+dfsg-3"}
+  "deb-zlib1g" {>= "1-1.2.0"}
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+extra-source "spring_104.0+dfsg-3+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/spring/spring_104.0+dfsg-3+b2_amd64.deb"
+}

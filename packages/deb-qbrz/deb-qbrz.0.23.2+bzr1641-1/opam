@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qbrz_0.23.2+bzr1641-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qbrz"]
+]
+depends: [
+  "deb-python3-all"
+  "deb-python3-any"
+  "deb-python3-breezy"
+  "deb-python3-patiencediff"
+  "deb-python3-pyqt5"
+]
+extra-source "qbrz_0.23.2+bzr1641-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qbrz/qbrz_0.23.2+bzr1641-1_all.deb"
+}

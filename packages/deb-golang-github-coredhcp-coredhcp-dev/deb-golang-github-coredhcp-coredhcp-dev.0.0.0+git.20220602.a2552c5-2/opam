@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-coredhcp-coredhcp-dev_0.0.0+git.20220602.a2552c5-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-coredhcp-coredhcp-dev"]
+]
+depends: [
+  "deb-golang-github-bits-and-blooms-bitset-dev"
+  "deb-golang-github-chappjc-logrus-prefix-dev" {>= "0.0.0+git.20180227.3a1d648-1~"}
+  "deb-golang-github-fsnotify-fsnotify-dev"
+  "deb-golang-github-google-gopacket-dev"
+  "deb-golang-github-insomniacslk-dhcp-dev"
+  "deb-golang-github-rifflock-lfshook-dev"
+  "deb-golang-github-sirupsen-logrus-dev"
+  "deb-golang-github-spf13-cast-dev"
+  "deb-golang-github-spf13-pflag-dev"
+  "deb-golang-github-spf13-viper-dev"
+  "deb-golang-github-stretchr-testify-dev"
+  "deb-golang-github-vishvananda-netns-dev"
+  "deb-golang-golang-x-net-dev"
+]
+extra-source "golang-github-coredhcp-coredhcp-dev_0.0.0+git.20220602.a2552c5-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-coredhcp-coredhcp/golang-github-coredhcp-coredhcp-dev_0.0.0+git.20220602.a2552c5-2_all.deb"
+}

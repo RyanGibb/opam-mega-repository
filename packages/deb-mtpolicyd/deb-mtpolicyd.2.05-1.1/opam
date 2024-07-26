@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mtpolicyd_2.05-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mtpolicyd"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libcache-memcached-perl"
+  "deb-libconfig-general-perl"
+  "deb-libdbd-sqlite3-perl"
+  "deb-libdbi-perl"
+  "deb-libgeo-ip-perl"
+  "deb-libjson-perl"
+  "deb-libmail-rbl-perl"
+  "deb-libmail-spf-perl"
+  "deb-libmoose-perl"
+  "deb-libmoosex-getopt-perl"
+  "deb-libmoosex-role-parameterized-perl"
+  "deb-libmoosex-singleton-perl"
+  "deb-libnamespace-autoclean-perl"
+  "deb-libnet-server-perl"
+  "deb-libtie-ixhash-perl"
+  "deb-lsb-base"
+  "deb-perl-any"
+]
+extra-source "mtpolicyd_2.05-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mtpolicyd/mtpolicyd_2.05-1.1_all.deb"
+}

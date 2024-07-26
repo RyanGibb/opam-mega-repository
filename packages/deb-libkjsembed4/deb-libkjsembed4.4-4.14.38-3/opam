@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkjsembed4_4:4.14.38-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkjsembed4"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libkdecore5" {= "4-4.14.38-3"}
+  "deb-libkjsapi4" {= "4-4.14.38-3"}
+  "deb-libqt4-svg" {>= "4-4.8.0"}
+  "deb-libqt4-xml" {>= "4-4.8.0"}
+  "deb-libqtcore4" {>= "4-4.8.0"}
+  "deb-libqtgui4" {>= "4-4.8.0"}
+  "deb-libstdc++6" {>= "5"}
+]
+extra-source "libkjsembed4_4:4.14.38-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kde4libs/libkjsembed4_4.14.38-3_amd64.deb"
+}

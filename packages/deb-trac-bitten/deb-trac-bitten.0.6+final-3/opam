@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i trac-bitten_0.6+final-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r trac-bitten"]
+]
+depends: [
+  "deb-libjs-excanvas"
+  "deb-libjs-flot"
+  "deb-python" {< "2.8"}
+  "deb-python" {>= "2.6.6-7~"}
+  "deb-python-pkg-resources"
+  "deb-trac"
+  "deb-trac-bitten-slave"
+  ("deb-python2-7" | "deb- python2-6")
+]
+extra-source "trac-bitten_0.6+final-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/trac-bitten/trac-bitten_0.6+final-3_all.deb"
+}

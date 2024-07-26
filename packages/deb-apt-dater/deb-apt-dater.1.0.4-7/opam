@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i apt-dater_1.0.4-7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r apt-dater"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libglib-perl"
+  "deb-libglib2-0-0" {>= "2.33.14"}
+  "deb-libncursesw6" {>= "6"}
+  "deb-libpopt0" {>= "1.14"}
+  "deb-libtcl8-6" {>= "8.6.0"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-libxml-writer-perl"
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-openssh-client"
+  "deb-perl-any"
+  "deb-tmux"
+  ("deb-lockfile-progs" | "deb- procmail")
+]
+extra-source "apt-dater_1.0.4-7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/apt-dater/apt-dater_1.0.4-7_amd64.deb"
+}

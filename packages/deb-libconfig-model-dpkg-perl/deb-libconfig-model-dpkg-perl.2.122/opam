@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libconfig-model-dpkg-perl_2.122_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libconfig-model-dpkg-perl"]
+]
+depends: [
+  "deb-libapt-pkg-perl"
+  "deb-libarray-intspan-perl"
+  "deb-libconfig-model-backend-yaml-perl"
+  "deb-libconfig-model-perl" {>= "2.122"}
+  "deb-libexporter-lite-perl"
+  "deb-liblog-log4perl-perl"
+  "deb-libmodule-corelist-perl"
+  "deb-libmouse-perl"
+  "deb-libparse-recdescent-perl"
+  "deb-libsoftware-licensemoreutils-perl"
+  "deb-libtext-autoformat-perl"
+  "deb-libtext-levenshtein-damerau-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-libyaml-perl"
+  "deb-licensecheck"
+  "deb-lintian"
+  "deb-perl"
+]
+extra-source "libconfig-model-dpkg-perl_2.122_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libconfig-model-dpkg-perl/libconfig-model-dpkg-perl_2.122_all.deb"
+}

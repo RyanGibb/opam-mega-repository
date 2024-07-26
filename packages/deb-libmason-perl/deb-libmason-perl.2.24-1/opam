@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmason-perl_2.24-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmason-perl"]
+]
+depends: [
+  "deb-libcapture-tiny-perl"
+  "deb-libclass-load-perl"
+  "deb-libclass-unload-perl"
+  "deb-libdevel-globaldestruction-perl"
+  "deb-libexception-class-perl"
+  "deb-libguard-perl"
+  "deb-libipc-system-simple-perl"
+  "deb-libjson-perl"
+  "deb-liblog-any-perl"
+  "deb-libmethod-signatures-simple-perl"
+  "deb-libmoose-perl"
+  "deb-libmoosex-hasdefaults-perl"
+  "deb-libmoosex-strictconstructor-perl" {>= "0.13"}
+  "deb-libtest-class-most-perl"
+  "deb-libtest-longstring-perl"
+  "deb-libtry-tiny-perl"
+  "deb-perl"
+]
+extra-source "libmason-perl_2.24-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libm/libmason-perl/libmason-perl_2.24-1_all.deb"
+}

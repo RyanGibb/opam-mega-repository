@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ack-3.7.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ack"]
+]
+depends: [
+  "apk-perl" {= "5.38.2-r0"}
+  "apk-perl-file-next" {= "1.18-r3"}
+]
+extra-source "ack-3.7.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ack-3.7.0-r1.apk"
+}

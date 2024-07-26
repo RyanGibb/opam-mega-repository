@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-rcpproll_0.3.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-rcpproll"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.2-1"}
+  "deb-r-cran-rcpp"
+]
+extra-source "r-cran-rcpproll_0.3.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-rcpproll/r-cran-rcpproll_0.3.0-2_amd64.deb"
+}

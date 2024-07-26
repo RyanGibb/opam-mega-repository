@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i x2gothinclient-cdmanager_1.5.0.1-6+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r x2gothinclient-cdmanager"]
+]
+depends: [
+  "deb-eject"
+  "deb-libc6" {>= "2.4"}
+  "deb-libfile-path-expand-perl"
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5widgets5" {>= "5.15.1"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-lsb-base"
+  "deb-lsscsi"
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+]
+extra-source "x2gothinclient-cdmanager_1.5.0.1-6+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/x2gothinclient/x2gothinclient-cdmanager_1.5.0.1-6+deb11u1_amd64.deb"
+}

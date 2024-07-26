@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-promod3_3.2.1+ds-6+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-promod3"]
+]
+depends: [
+  "deb-libboost-python1-74-0"
+  "deb-libboost-python1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.32"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libost-conop2-3" {>= "2.3.1"}
+  "deb-libost-geom2-3" {>= "2.3.1"}
+  "deb-libost-img2-3" {>= "2.3.1"}
+  "deb-libost-mol2-3" {>= "2.3.1"}
+  "deb-libost-seq2-3" {>= "2.3.1"}
+  "deb-libpromod3-core3-2" {>= "3.2.1+ds"}
+  "deb-libpromod3-loop3-2" {>= "3.2.1+ds"}
+  "deb-libpromod3-modelling3-2" {>= "3.2.1+ds"}
+  "deb-libpromod3-scoring3-2" {>= "3.2.1+ds"}
+  "deb-libpromod3-sidechain3-2" {>= "3.2.1+ds"}
+  "deb-libpython3-11" {>= "3.11.0"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-openstructure"
+  "deb-promod3-data"
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-any"
+  "deb-python3-ost"
+]
+extra-source "python3-promod3_3.2.1+ds-6+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/promod3/python3-promod3_3.2.1+ds-6+b1_amd64.deb"
+}

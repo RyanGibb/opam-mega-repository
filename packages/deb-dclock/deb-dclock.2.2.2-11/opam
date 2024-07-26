@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dclock_2.2.2-11_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dclock"]
+]
+depends: [
+  "deb-libc6" {>= "2.7"}
+  "deb-libice6" {>= "1-1.0.0"}
+  "deb-libsm6"
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxft2" {> "2.1.1"}
+  "deb-libxt6"
+]
+extra-source "dclock_2.2.2-11_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dclock/dclock_2.2.2-11_amd64.deb"
+}

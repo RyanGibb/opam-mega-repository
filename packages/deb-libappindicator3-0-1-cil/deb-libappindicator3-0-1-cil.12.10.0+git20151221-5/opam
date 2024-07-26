@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libappindicator3-0.1-cil_12.10.0+git20151221-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libappindicator3-0.1-cil"]
+]
+depends: [
+  "deb-cli-common" {>= "0.5.1"}
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libayatana-appindicator3-1" {>= "0.2.92"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libdbusmenu-glib4" {>= "0.4.2"}
+  "deb-libfribidi0" {>= "0.19.2"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.16.0"}
+  "deb-libglib3-0-cil" {>= "2.99.3"}
+  "deb-libgtk-3-0" {>= "3.0.0"}
+  "deb-libgtk3-0-cil" {>= "2.99.3"}
+  "deb-libmono-corlib4-5-cil" {>= "4.6.1.3"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+]
+extra-source "libappindicator3-0.1-cil_12.10.0+git20151221-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/appindicator3-sharp/libappindicator3-0.1-cil_12.10.0+git20151221-5_amd64.deb"
+}

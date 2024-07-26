@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i knowthelist_2.3.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r knowthelist"]
+]
+depends: [
+  "deb-gstreamer1-0-plugins-bad"
+  "deb-gstreamer1-0-plugins-base"
+  "deb-gstreamer1-0-plugins-good"
+  "deb-gstreamer1-0-plugins-ugly"
+  "deb-gstreamer1-0-pulseaudio"
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgl1"
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libgstreamer1-0-0" {>= "1.0.0"}
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5gui5" {>= "5.8.0"}
+  "deb-libqt5sql5" {>= "5.0.2"}
+  "deb-libqt5sql5-sqlite"
+  "deb-libqt5widgets5" {>= "5.11.0~rc1"}
+  "deb-libqt5xml5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libtag1v5" {>= "1.9.1-2.2~"}
+]
+extra-source "knowthelist_2.3.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/knowthelist/knowthelist_2.3.1-1_amd64.deb"
+}

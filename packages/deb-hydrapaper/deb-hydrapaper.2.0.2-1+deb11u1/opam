@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i hydrapaper_2.0.2-1+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r hydrapaper"]
+]
+depends: [
+  "deb-gir1-2-handy-1"
+  "deb-libhandy-1-0"
+  "deb-python3-any"
+  "deb-python3-gi"
+  "deb-python3-pil"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "hydrapaper_2.0.2-1+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/hydrapaper/hydrapaper_2.0.2-1+deb11u1_all.deb"
+}

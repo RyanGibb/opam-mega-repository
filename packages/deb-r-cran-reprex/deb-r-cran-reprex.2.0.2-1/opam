@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-reprex_2.0.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-reprex"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.1-2"}
+  "deb-r-cran-callr" {>= "3.6.0"}
+  "deb-r-cran-cli" {>= "3.2.0"}
+  "deb-r-cran-clipr" {>= "0.4.0"}
+  "deb-r-cran-fs"
+  "deb-r-cran-glue"
+  "deb-r-cran-knitr" {>= "1.23"}
+  "deb-r-cran-lifecycle"
+  "deb-r-cran-rlang" {>= "1.0.0"}
+  "deb-r-cran-rmarkdown"
+  "deb-r-cran-rstudioapi"
+  "deb-r-cran-withr" {>= "2.3.0"}
+]
+extra-source "r-cran-reprex_2.0.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-reprex/r-cran-reprex_2.0.2-1_all.deb"
+}

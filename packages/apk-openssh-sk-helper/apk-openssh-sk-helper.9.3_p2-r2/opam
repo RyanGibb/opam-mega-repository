@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openssh-sk-helper-9.3_p2-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openssh-sk-helper"]
+]
+depends: [
+  "apk-libcrypto3" {= "3.1.6-r0"}
+  "apk-libfido2" {= "1.13.0-r1"}
+  "apk-musl" {= "1.2.4-r2"}
+  "apk-openssh-keygen" {= "9.3_p2-r2"}
+  "apk-openssh-server-common" {= "9.3_p2-r2"}
+]
+extra-source "openssh-sk-helper-9.3_p2-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/openssh-sk-helper-9.3_p2-r2.apk"
+}

@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libncarg0_6.6.2-7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libncarg0"]
+]
+depends: [
+  "deb-fonts-lyx"
+  "deb-libc6" {>= "2.29"}
+  "deb-libcairo2" {>= "1.10.0"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgdal28" {>= "2.0.1"}
+  "deb-libgfortran5" {>= "10"}
+  "deb-libgrib2c0d"
+  "deb-libhdf4-0-alt" {>= "4.2r4"}
+  "deb-libhdf5-103-1"
+  "deb-libhdfeos0"
+  "deb-libhe5-hdfeos0"
+  "deb-libncarg-data"
+  "deb-libnetcdf18" {>= "4.6.2"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libsphere0d" {>= "3.3~a1"}
+  "deb-libudunits2-0" {>= "2.2.14"}
+  "deb-libx11-6"
+  "deb-ttf-bitstream-vera"
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-tcsh" | "deb- csh" | "deb- c-shell")
+]
+extra-source "libncarg0_6.6.2-7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/ncl/libncarg0_6.6.2-7_amd64.deb"
+}

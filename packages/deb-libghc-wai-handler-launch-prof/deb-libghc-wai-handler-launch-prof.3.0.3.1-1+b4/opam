@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-wai-handler-launch-prof_3.0.3.1-1+b4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-wai-handler-launch-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-async-prof"
+  "deb-libghc-http-types-prof"
+  "deb-libghc-streaming-commons-prof"
+  "deb-libghc-wai-handler-launch-dev" {= "3.0.3.1-1+b4"}
+  "deb-libghc-wai-prof"
+  "deb-libghc-warp-prof"
+]
+extra-source "libghc-wai-handler-launch-prof_3.0.3.1-1+b4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-wai-handler-launch/libghc-wai-handler-launch-prof_3.0.3.1-1+b4_amd64.deb"
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libchicken8_4.13.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libchicken8"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+]
+conflicts: [
+  "deb-chicken"
+  "deb-chicken-dev"
+  "deb-libchicken0"
+  "deb-libchicken3"
+  "deb-libchicken4"
+  "deb-libchicken5"
+  "deb-libchicken6"
+  "deb-libchicken7"
+]
+extra-source "libchicken8_4.13.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/chicken/libchicken8_4.13.0-1_amd64.deb"
+}

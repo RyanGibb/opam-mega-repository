@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i open-infrastructure-compute-tools_20221223-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r open-infrastructure-compute-tools"]
+]
+depends: [
+  "deb-dbus"
+  "deb-systemd-container"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "open-infrastructure-compute-tools_20221223-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/open-infrastructure-compute-tools/open-infrastructure-compute-tools_20221223-3_all.deb"
+}

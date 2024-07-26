@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i neutron-common_2:13.0.7+git.2021.09.27.bace3d1890-0+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r neutron-common"]
+]
+depends: [
+  "deb-adduser"
+  "deb-dbconfig-common"
+  "deb-debconf"
+  "deb-dpkg-dev"
+  "deb-python3-any"
+  "deb-python3-mysqldb"
+  "deb-python3-neutron" {= "2-13.0.7+git.2021.09.27.bace3d1890-0+deb10u1"}
+  "deb-python3-openstackclient"
+  "deb-python3-pyparsing" {>= "1.5.7"}
+  "deb-python3-sqlalchemy" {>= "1.2.0"}
+  "deb-sqlite3"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "neutron-common_2:13.0.7+git.2021.09.27.bace3d1890-0+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/neutron/neutron-common_13.0.7+git.2021.09.27.bace3d1890-0+deb10u1_all.deb"
+}

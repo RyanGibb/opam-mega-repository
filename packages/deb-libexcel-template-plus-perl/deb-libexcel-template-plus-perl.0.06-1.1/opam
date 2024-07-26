@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libexcel-template-plus-perl_0.06-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libexcel-template-plus-perl"]
+]
+depends: [
+  "deb-libexcel-template-perl"
+  "deb-libio-string-perl"
+  "deb-libmodule-runtime-perl"
+  "deb-libmoose-perl"
+  "deb-libmoosex-param-perl"
+  "deb-libspreadsheet-parseexcel-perl"
+  "deb-libtemplate-perl"
+  "deb-libtest-deep-perl"
+  "deb-perl-any"
+]
+extra-source "libexcel-template-plus-perl_0.06-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libe/libexcel-template-plus-perl/libexcel-template-plus-perl_0.06-1.1_all.deb"
+}

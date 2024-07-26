@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i singular-ui-emacs_1:4.1.1-p2+ds-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r singular-ui-emacs"]
+]
+depends: [
+  "deb-emacs"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libmpfr6" {>= "3.1.3"}
+  "deb-libncurses6" {>= "6"}
+  "deb-libreadline7" {>= "6.0"}
+  "deb-libsingular4m1"
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-singular-ui" {= "1-4.1.1-p2+ds-3"}
+]
+extra-source "singular-ui-emacs_1:4.1.1-p2+ds-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/singular/singular-ui-emacs_4.1.1-p2+ds-3_amd64.deb"
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-openscap_1.3.7+dfsg-1+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-openscap"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libopenscap25" {= "1.3.7+dfsg-1+deb12u1"}
+  "deb-libpython3-11" {>= "3.11.0"}
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-any"
+  "deb-python3-docker"
+]
+extra-source "python3-openscap_1.3.7+dfsg-1+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openscap/python3-openscap_1.3.7+dfsg-1+deb12u1_amd64.deb"
+}

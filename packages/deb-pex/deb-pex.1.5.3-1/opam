@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pex_1.5.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pex"]
+]
+depends: [
+  "deb-python3"
+  "deb-python3-any"
+  "deb-python3-pex"
+  "deb-python3-pkg-resources"
+  "deb-python3-requests"
+  "deb-python3-setuptools"
+  "deb-python3-wheel"
+]
+extra-source "pex_1.5.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-pex/pex_1.5.3-1_all.deb"
+}

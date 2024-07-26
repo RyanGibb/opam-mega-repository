@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i esptool_2.8+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r esptool"]
+]
+depends: [
+  "deb-python3"
+  "deb-python3-ecdsa"
+  "deb-python3-pyaes"
+  "deb-python3-serial"
+]
+extra-source "esptool_2.8+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/esptool/esptool_2.8+dfsg-1_all.deb"
+}

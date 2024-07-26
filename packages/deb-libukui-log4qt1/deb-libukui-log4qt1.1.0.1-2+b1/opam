@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libukui-log4qt1_1.0.1-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libukui-log4qt1"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-bin"
+  "deb-libgsettings-qt1" {>= "0.1+14.04.20140408"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "libukui-log4qt1_1.0.1-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/u/ukui-interface/libukui-log4qt1_1.0.1-2+b1_amd64.deb"
+}

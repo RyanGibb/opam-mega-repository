@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-qt4-sql_4.12.1+dfsg-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-qt4-sql"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libqt4-sql" {>= "4-4.8.0-1~"}
+  "deb-libqtcore4" {>= "4-4.8.0-1~"}
+  "deb-libqtgui4" {>= "4-4.8.0-1~"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-python" {< "2.8"}
+  "deb-python" {>= "2.7~"}
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7~"}
+  "deb-python-qt4" {= "4.12.1+dfsg-2+b1"}
+]
+extra-source "python-qt4-sql_4.12.1+dfsg-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-qt4/python-qt4-sql_4.12.1+dfsg-2+b1_amd64.deb"
+}

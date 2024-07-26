@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kannel-sqlbox_0.7.2-5+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kannel-sqlbox"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libct4" {>= "0.64"}
+  "deb-libgnutls30" {>= "3.6.5"}
+  "deb-libhiredis0-14" {>= "0.14.0"}
+  "deb-libmariadb3" {>= "3.0.0"}
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-libpcre3"
+  "deb-libpq5"
+  "deb-libsqlite0" {>= "2.8.17"}
+  "deb-libsqlite3-0" {>= "3.5.9"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "kannel-sqlbox_0.7.2-5+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kannel-sqlbox/kannel-sqlbox_0.7.2-5+b1_amd64.deb"
+}

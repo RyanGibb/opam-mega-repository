@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-sphinx-astropy_1.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-sphinx-astropy"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-astropy-sphinx-theme"
+  "deb-python3-numpydoc"
+  "deb-python3-pil"
+  "deb-python3-sphinx"
+  "deb-python3-sphinx-automodapi"
+  "deb-python3-sphinx-gallery"
+]
+extra-source "python3-sphinx-astropy_1.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sphinx-astropy/python3-sphinx-astropy_1.3-1_all.deb"
+}

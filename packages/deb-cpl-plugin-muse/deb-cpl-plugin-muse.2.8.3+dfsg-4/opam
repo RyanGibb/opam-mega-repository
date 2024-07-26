@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cpl-plugin-muse_2.8.3+dfsg-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cpl-plugin-muse"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libcplcore26" {>= "7.1"}
+  "deb-libcpldfs26" {>= "6.5"}
+  "deb-libcpldrs26" {>= "6.4"}
+  "deb-libcplui26" {>= "6.3"}
+  "deb-libgomp1" {>= "4.9"}
+]
+extra-source "cpl-plugin-muse_2.8.3+dfsg-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cpl-plugin-muse/cpl-plugin-muse_2.8.3+dfsg-4_amd64.deb"
+}

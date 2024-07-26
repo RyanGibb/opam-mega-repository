@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-electrum_4.0.9-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-electrum"]
+]
+depends: [
+  "deb-libsecp256k1-0"
+  "deb-python3-aiohttp" {>= "3.3.0"}
+  "deb-python3-aiohttp-socks" {>= "0.3"}
+  "deb-python3-aiorpcx" {>= "0.18"}
+  "deb-python3-any"
+  "deb-python3-attr" {>= "19.2.0"}
+  "deb-python3-bitstring"
+  "deb-python3-certifi"
+  "deb-python3-cryptography" {>= "2.1"}
+  "deb-python3-dnspython"
+  "deb-python3-protobuf" {>= "3.12"}
+  "deb-python3-qrcode"
+]
+extra-source "python3-electrum_4.0.9-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/electrum/python3-electrum_4.0.9-1_all.deb"
+}

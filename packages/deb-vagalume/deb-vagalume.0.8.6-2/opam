@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i vagalume_0.8.6-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r vagalume"]
+]
+depends: [
+  "deb-gstreamer1-0-plugins-bad"
+  "deb-gstreamer1-0-plugins-base"
+  "deb-gstreamer1-0-plugins-good"
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libdbus-1-3" {>= "1.9.14"}
+  "deb-libdbus-glib-1-2" {>= "0.78"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libgstreamer1-0-0" {>= "1.0.0"}
+  "deb-libgtk-3-0" {>= "3.0.0"}
+  "deb-libnotify4" {>= "0.7.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libproxy1v5" {>= "0.4.11"}
+  "deb-librsvg2-common"
+  "deb-libxml2" {>= "2.7.4"}
+  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
+]
+extra-source "vagalume_0.8.6-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/vagalume/vagalume_0.8.6-2_amd64.deb"
+}

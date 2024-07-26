@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libprimecount-dev_7.6+ds-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libprimecount-dev"]
+]
+depends: [
+  "deb-libprimecount-dev-common" {= "7.6+ds-1"}
+  "deb-libprimecount7" {= "7.6+ds-1"}
+  "deb-libprimesieve-dev"
+]
+conflicts: [
+  "deb-libprimecount-dev"
+]
+extra-source "libprimecount-dev_7.6+ds-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/primecount/libprimecount-dev_7.6+ds-1_amd64.deb"
+}

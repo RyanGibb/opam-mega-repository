@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i shiboken2_5.15.8-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r shiboken2"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libclang1-14" {>= "1-9~svn360566-1~"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libstdc++6" {>= "4.5"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libxslt1-1" {>= "1.1.25"}
+]
+extra-source "shiboken2_5.15.8-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pyside2/shiboken2_5.15.8-2+b1_amd64.deb"
+}

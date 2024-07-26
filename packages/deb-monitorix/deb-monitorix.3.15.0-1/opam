@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i monitorix_3.15.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r monitorix"]
+]
+depends: [
+  "deb-libconfig-general-perl"
+  "deb-libdbi-perl"
+  "deb-libhttp-server-simple-perl"
+  "deb-libio-socket-ssl-perl"
+  "deb-libmailtools-perl"
+  "deb-libmime-lite-perl"
+  "deb-librrds-perl"
+  "deb-libwww-perl"
+  "deb-libxml-libxml-perl"
+  "deb-libxml-simple-perl"
+  "deb-net-tools"
+  "deb-perl-any"
+  "deb-rrdtool"
+]
+extra-source "monitorix_3.15.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/monitorix/monitorix_3.15.0-1_all.deb"
+}

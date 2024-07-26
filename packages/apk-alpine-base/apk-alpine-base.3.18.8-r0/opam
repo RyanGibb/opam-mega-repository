@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add alpine-base-3.18.8-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del alpine-base"]
+]
+depends: [
+  "apk-alpine-baselayout" {= "3.4.3-r1"}
+  "apk-alpine-conf" {= "3.16.2-r0"}
+  "apk-alpine-release" {= "3.18.8-r0"}
+  "apk-apk-tools" {= "2.14.4-r0"}
+  "apk-busybox" {= "1.36.1-r7"}
+  "apk-busybox-mdev-openrc" {= "1.36.1-r7"}
+  "apk-busybox-openrc" {= "1.36.1-r7"}
+  "apk-busybox-suid" {= "1.36.1-r7"}
+  "apk-libc-utils" {= "0.7.2-r5"}
+  "apk-openrc" {= "0.48-r0"}
+]
+extra-source "alpine-base-3.18.8-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/alpine-base-3.18.8-r0.apk"
+}

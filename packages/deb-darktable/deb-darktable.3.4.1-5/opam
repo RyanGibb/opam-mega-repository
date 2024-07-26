@@ -1,0 +1,51 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i darktable_3.4.1-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r darktable"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libcairo2" {>= "1.14.0"}
+  "deb-libcolord-gtk1" {>= "0.1.20"}
+  "deb-libcolord2" {>= "1.4.3"}
+  "deb-libcups2" {>= "1.7.0"}
+  "deb-libcurl3-gnutls" {>= "7.56.1"}
+  "deb-libexiv2-27" {>= "0.27.3"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.39.4"}
+  "deb-libgomp1" {>= "6"}
+  "deb-libgphoto2-6" {>= "2.5.10"}
+  "deb-libgphoto2-port12" {>= "2.5.10"}
+  "deb-libgraphicsmagick-q16-3" {>= "1.3.5"}
+  "deb-libgtk-3-0" {>= "3.21.5"}
+  "deb-libilmbase25" {>= "2.5.4"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libjson-glib-1-0-0" {>= "1.5.2"}
+  "deb-liblcms2-2" {>= "2.8"}
+  "deb-liblensfun1" {>= "0.3.2"}
+  "deb-liblua5-3-0"
+  "deb-libopenexr25" {>= "2.5.4"}
+  "deb-libopenjp2-7" {>= "2.0.0"}
+  "deb-libosmgpsmap-1-0-1" {>= "1.1.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libpugixml1v5" {>= "1.6"}
+  "deb-librsvg2-2" {>= "2.14.4"}
+  "deb-libsecret-1-0" {>= "0.7"}
+  "deb-libsoup2-4-1" {>= "2.47.4"}
+  "deb-libsqlite3-0" {>= "3.7.10"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtiff5" {>= "4.0.3"}
+  "deb-libwebp6" {>= "0.5.1"}
+  "deb-libx11-6"
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libxrandr2" {>= "2-1.2.99.3"}
+  "deb-zlib1g" {>= "1-1.2.0"}
+]
+extra-source "darktable_3.4.1-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/darktable/darktable_3.4.1-5_amd64.deb"
+}

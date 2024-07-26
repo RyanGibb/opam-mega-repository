@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcatmandu-oai-perl_0.19-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcatmandu-oai-perl"]
+]
+depends: [
+  "deb-libcatmandu-perl"
+  "deb-libcatmandu-xml-perl"
+  "deb-libhttp-oai-perl"
+  "deb-libio-socket-ssl-perl"
+  "deb-libio-string-perl"
+  "deb-libmods-record-perl"
+  "deb-libmoo-perl"
+  "deb-liburi-perl"
+  "deb-libxml-libxml-perl"
+  "deb-libxml-struct-perl"
+  "deb-perl-any"
+]
+extra-source "libcatmandu-oai-perl_0.19-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libcatmandu-oai-perl/libcatmandu-oai-perl_0.19-2_all.deb"
+}

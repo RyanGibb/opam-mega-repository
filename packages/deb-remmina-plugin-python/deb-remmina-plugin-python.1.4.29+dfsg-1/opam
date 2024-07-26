@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i remmina-plugin-python_1.4.29+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r remmina-plugin-python"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libgtk-3-0" {>= "3.0.0"}
+  "deb-libpython3-11" {>= "3.11.0"}
+  "deb-remmina" {= "1.4.29+dfsg-1"}
+]
+extra-source "remmina-plugin-python_1.4.29+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/remmina/remmina-plugin-python_1.4.29+dfsg-1_amd64.deb"
+}

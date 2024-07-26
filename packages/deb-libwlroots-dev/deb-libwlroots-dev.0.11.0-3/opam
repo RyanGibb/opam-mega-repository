@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libwlroots-dev_0.11.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libwlroots-dev"]
+]
+depends: [
+  "deb-libcap-dev"
+  "deb-libdrm-dev"
+  "deb-libegl1-mesa-dev"
+  "deb-libgbm-dev" {>= "17.1.0"}
+  "deb-libgles2-mesa-dev"
+  "deb-libinput-dev" {>= "1.7.0"}
+  "deb-libpixman-1-dev"
+  "deb-libsystemd-dev"
+  "deb-libwayland-dev" {>= "1.15"}
+  "deb-libwlroots6" {= "0.11.0-3"}
+  "deb-libx11-xcb-dev"
+  "deb-libxcb-composite0-dev"
+  "deb-libxcb-icccm4-dev"
+  "deb-libxcb-image0-dev"
+  "deb-libxcb-render0-dev"
+  "deb-libxcb-xfixes0-dev"
+  "deb-libxcb-xinput-dev"
+  "deb-libxcb1-dev"
+  "deb-libxkbcommon-dev"
+  "deb-wayland-protocols" {>= "1.15"}
+]
+extra-source "libwlroots-dev_0.11.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/w/wlroots/libwlroots-dev_0.11.0-3_amd64.deb"
+}

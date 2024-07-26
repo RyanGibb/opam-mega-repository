@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i toil_5.9.2-2+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r toil"]
+]
+depends: [
+  "deb-cwltool" {>= "3.1.20221201130942"}
+  "deb-python3-any"
+  "deb-python3-boto"
+  "deb-python3-boto3"
+  "deb-python3-dateutil"
+  "deb-python3-dill"
+  "deb-python3-distutils"
+  "deb-python3-docker"
+  "deb-python3-enlighten"
+  "deb-python3-psutil"
+  "deb-python3-pubsub"
+  "deb-python3-requests"
+  "deb-python3-schema-salad" {>= "8.4.20230128170514"}
+  "deb-python3-typing-extensions"
+  "deb-python3-tz"
+]
+extra-source "toil_5.9.2-2+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/toil/toil_5.9.2-2+deb12u1_all.deb"
+}

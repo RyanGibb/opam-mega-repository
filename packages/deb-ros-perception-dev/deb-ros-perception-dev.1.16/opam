@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ros-perception-dev_1.16_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ros-perception-dev"]
+]
+depends: [
+  "deb-libcamera-calibration-parsers-dev"
+  "deb-libcamera-info-manager-dev"
+  "deb-libcv-bridge-dev"
+  "deb-libimage-geometry-dev"
+  "deb-libimage-transport-dev"
+  "deb-liblaser-geometry-dev"
+  "deb-libopencv-dev"
+  "deb-libpcl-msgs-dev"
+  "deb-libpolled-camera-dev"
+  "deb-ros-base-dev"
+  "deb-ros-pcl-msgs"
+  "deb-ros-perception"
+]
+extra-source "ros-perception-dev_1.16_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ros-metapackages/ros-perception-dev_1.16_all.deb"
+}

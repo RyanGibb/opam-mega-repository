@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-cooler_0.9.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-cooler"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-asciitree"
+  "deb-python3-biopython"
+  "deb-python3-click"
+  "deb-python3-cytoolz"
+  "deb-python3-h5py" {>= "2.5"}
+  "deb-python3-multiprocess"
+  "deb-python3-numpy"
+  "deb-python3-pairix"
+  "deb-python3-pandas"
+  "deb-python3-pyfaidx"
+  "deb-python3-pysam"
+  "deb-python3-scipy" {>= "1.10~"}
+  "deb-python3-simplejson"
+  "deb-python3-six"
+  "deb-python3-yaml"
+]
+extra-source "python3-cooler_0.9.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-cooler/python3-cooler_0.9.1-1_amd64.deb"
+}

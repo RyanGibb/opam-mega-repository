@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libstarpurm-1.3-2_1.3.10+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libstarpurm-1.3-2"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libhwloc15" {>= "2.8.0"}
+  ("deb-libstarpu-1-3-9" {>= "1.3.3+dfsg~"} | "deb- libstarpu-any-1-3-9")
+]
+conflicts: [
+  "deb-libstarpu-contribrm-1-3-2"
+]
+extra-source "libstarpurm-1.3-2_1.3.10+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/starpu/libstarpurm-1.3-2_1.3.10+dfsg-2_amd64.deb"
+}

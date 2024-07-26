@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libglobus-ftp-client-dev_9.8-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libglobus-ftp-client-dev"]
+]
+depends: [
+  "deb-libglobus-common-dev" {>= "15"}
+  "deb-libglobus-ftp-client2" {= "9.8-2"}
+  "deb-libglobus-ftp-control-dev" {>= "4"}
+  "deb-libglobus-gsi-callback-dev" {>= "4"}
+  "deb-libglobus-gsi-credential-dev" {>= "5"}
+  "deb-libglobus-gsi-sysconfig-dev" {>= "5"}
+  "deb-libglobus-gssapi-gsi-dev" {>= "10"}
+  "deb-libglobus-xio-dev" {>= "3"}
+  "deb-libglobus-xio-popen-driver-dev" {>= "2"}
+  "deb-libssl-dev"
+]
+extra-source "libglobus-ftp-client-dev_9.8-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/globus-ftp-client/libglobus-ftp-client-dev_9.8-2_amd64.deb"
+}

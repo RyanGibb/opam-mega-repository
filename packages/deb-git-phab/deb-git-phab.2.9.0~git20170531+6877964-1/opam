@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i git-phab_2.9.0~git20170531+6877964-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r git-phab"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-appdirs"
+  "deb-python3-argcomplete"
+  "deb-python3-git"
+  "deb-python3-phabricator"
+]
+extra-source "git-phab_2.9.0~git20170531+6877964-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/git-phab/git-phab_2.9.0~git20170531+6877964-1_all.deb"
+}

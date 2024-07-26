@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnome-calendar_43.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnome-calendar"]
+]
+depends: [
+  "deb-gsettings-desktop-schemas" {>= "3.21.2"}
+  "deb-libadwaita-1-0" {>= "1.2~alpha"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libecal-2-0-2" {>= "3.45.1"}
+  "deb-libedataserver-1-2-27" {>= "3.45.2"}
+  "deb-libedataserverui4-1-0-0" {>= "3.45.1"}
+  "deb-libgeoclue-2-0" {>= "2.4.0"}
+  "deb-libglib2-0-0" {>= "2.67.5"}
+  "deb-libgraphene-1-0-0" {>= "1.5.4"}
+  "deb-libgtk-4-1" {>= "4.6.0"}
+  "deb-libgweather-4-0" {>= "4.1"}
+  "deb-libical3" {>= "3.0.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libsoup-3-0-0" {>= "3.0.3"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "gnome-calendar_43.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnome-calendar/gnome-calendar_43.1-2_amd64.deb"
+}

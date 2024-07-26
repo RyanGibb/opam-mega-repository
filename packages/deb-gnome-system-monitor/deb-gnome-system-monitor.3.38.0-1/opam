@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnome-system-monitor_3.38.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnome-system-monitor"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.56.0"}
+  "deb-libglibmm-2-4-1v5" {>= "2.64.2"}
+  "deb-libgtk-3-0" {>= "3.22.0"}
+  "deb-libgtkmm-3-0-1v5" {>= "3.24.0"}
+  "deb-libgtop-2-0-11" {>= "2.37.90"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-librsvg2-2" {>= "2.35.0"}
+  "deb-libsigc++-2-0-0v5" {>= "2.2.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libsystemd0"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "gnome-system-monitor_3.38.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnome-system-monitor/gnome-system-monitor_3.38.0-1_amd64.deb"
+}

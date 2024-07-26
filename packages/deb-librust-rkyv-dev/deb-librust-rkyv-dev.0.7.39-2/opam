@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-rkyv-dev_0.7.39-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-rkyv-dev"]
+]
+depends: [
+  "deb-librust-bytecheck+std-dev"
+  "deb-librust-bytecheck-dev"
+  "deb-librust-hashbrown-0-12+default-dev"
+  "deb-librust-indexmap-dev"
+  "deb-librust-ptr-meta-dev"
+  "deb-librust-rend-0-4+std-dev"
+  "deb-librust-rend-0-4+validation-dev"
+  "deb-librust-rend-0-4-dev"
+  "deb-librust-rkyv-derive-0-7-39+arbitrary-enum-discriminant-dev"
+  "deb-librust-rkyv-derive-0-7-39+archive-be-dev"
+  "deb-librust-rkyv-derive-0-7-39+archive-le-dev"
+  "deb-librust-rkyv-derive-0-7-39+copy-dev"
+  "deb-librust-rkyv-derive-0-7-39+default-dev"
+  "deb-librust-rkyv-derive-0-7-39+strict-dev"
+  "deb-librust-seahash-4+default-dev"
+  "deb-librust-smallvec-dev"
+  "deb-librust-tinyvec+tinyvec-macros-dev"
+  "deb-librust-tinyvec-dev"
+  "deb-librust-uuid-1+std-dev"
+  "deb-librust-uuid-1-dev"
+]
+extra-source "librust-rkyv-dev_0.7.39-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-rkyv/librust-rkyv-dev_0.7.39-2_amd64.deb"
+}

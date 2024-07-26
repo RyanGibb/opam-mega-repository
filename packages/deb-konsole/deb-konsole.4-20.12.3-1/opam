@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i konsole_4:20.12.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r konsole"]
+]
+depends: [
+  "deb-kio"
+  "deb-konsole-kpart" {= "4-20.12.3-1"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libkf5configcore5" {>= "5.68.0~"}
+  "deb-libkf5configwidgets5" {>= "5.68.0~"}
+  "deb-libkf5coreaddons5" {>= "5.68.0~"}
+  "deb-libkf5crash5" {>= "5.68.0~"}
+  "deb-libkf5dbusaddons5" {>= "5.68.0~"}
+  "deb-libkf5globalaccel-bin"
+  "deb-libkf5globalaccel5" {>= "5.68.0~"}
+  "deb-libkf5i18n5" {>= "5.68.0~"}
+  "deb-libkf5iconthemes5" {>= "5.68.0~"}
+  "deb-libkf5kiowidgets5" {>= "5.69.0"}
+  "deb-libkf5notifyconfig5" {>= "5.68.0~"}
+  "deb-libkf5widgetsaddons5" {>= "5.68.0~"}
+  "deb-libkf5windowsystem5" {>= "5.68.0~"}
+  "deb-libkf5xmlgui5" {>= "5.68.0~"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5widgets5" {>= "5.12.0~"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  ("deb-libqt5gui5" {>= "5.12.0~"} | "deb- libqt5gui5-gles" {>= "5.12.0~"})
+]
+extra-source "konsole_4:20.12.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/konsole/konsole_20.12.3-1_amd64.deb"
+}

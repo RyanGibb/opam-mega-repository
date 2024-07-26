@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add krb5-pkinit-1.18.5-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del krb5-pkinit"]
+]
+depends: [
+  "apk-krb5-conf" {= "1.0-r2"}
+  "apk-krb5-libs" {= "1.18.5-r0"}
+  "apk-libcom_err" {= "1.46.2-r1"}
+  "apk-libcrypto1-1" {= "1.1.1t-r2"}
+  "apk-musl" {= "1.2.2-r5"}
+]
+extra-source "krb5-pkinit-1.18.5-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/krb5-pkinit-1.18.5-r0.apk"
+}

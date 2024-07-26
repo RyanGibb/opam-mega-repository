@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i swi-prolog-nox_8.0.2+dfsg-3+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r swi-prolog-nox"]
+]
+depends: [
+  "deb-libarchive13" {>= "3.1.2"}
+  "deb-libc6" {>= "2.23"}
+  "deb-libedit-dev"
+  "deb-libedit2" {>= "3.1-20140620-0"}
+  "deb-libgmp-dev"
+  "deb-libgmp10"
+  "deb-libjs-jquery"
+  "deb-libncurses-dev"
+  "deb-libncurses6" {>= "6"}
+  "deb-libossp-uuid16"
+  "deb-libpcre3"
+  "deb-libreadline-dev"
+  "deb-libreadline7" {>= "6.0"}
+  "deb-libssl1-1" {>= "1.1.1"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-libyaml-0-2"
+  "deb-zlib1g" {>= "1-1.2.2"}
+]
+extra-source "swi-prolog-nox_8.0.2+dfsg-3+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/swi-prolog/swi-prolog-nox_8.0.2+dfsg-3+deb10u1_amd64.deb"
+}

@@ -1,0 +1,47 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgtk-4-1_4.8.3+ds-2+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgtk-4-1"]
+]
+depends: [
+  "deb-adwaita-icon-theme"
+  "deb-hicolor-icon-theme"
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo-gobject2" {>= "1.14.0"}
+  "deb-libcairo-script-interpreter2" {>= "1.14.0"}
+  "deb-libcairo2" {>= "1.14.0"}
+  "deb-libcloudproviders0" {>= "0.3.1"}
+  "deb-libcolord2" {>= "0.1.10"}
+  "deb-libcups2" {>= "2.0"}
+  "deb-libepoxy0" {>= "1.4.3"}
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libfribidi0" {>= "0.19.7"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.30.1"}
+  "deb-libglib2-0-0" {>= "2.70.0"}
+  "deb-libgraphene-1-0-0" {>= "1.9.4"}
+  "deb-libgtk-4-common" {>= "4.8.3+ds-2+deb12u1"}
+  "deb-libharfbuzz0b" {>= "5.1.0"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libpango-1-0-0" {>= "1.50.3"}
+  "deb-libpangocairo-1-0-0" {>= "1.50.0"}
+  "deb-libpangoft2-1-0-0" {>= "1.50.0"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libtiff6" {>= "4.0.3"}
+  "deb-libwayland-client0" {>= "1.21.0"}
+  "deb-libwayland-egl1" {>= "1.21.0"}
+  "deb-libx11-6" {>= "2-1.4.99.1"}
+  "deb-libxcursor1" {> "1.1.2"}
+  "deb-libxdamage1" {>= "1-1.1"}
+  "deb-libxext6"
+  "deb-libxfixes3"
+  "deb-libxi6" {>= "2-1.2.99.4"}
+  "deb-libxinerama1" {>= "2-1.1.4"}
+  "deb-libxkbcommon0" {>= "0.5.0"}
+  "deb-libxrandr2" {>= "2-1.5.0"}
+  "deb-shared-mime-info"
+]
+extra-source "libgtk-4-1_4.8.3+ds-2+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gtk4/libgtk-4-1_4.8.3+ds-2+deb12u1_amd64.deb"
+}

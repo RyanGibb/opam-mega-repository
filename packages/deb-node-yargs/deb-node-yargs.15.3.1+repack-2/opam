@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-yargs_15.3.1+repack-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-yargs"]
+]
+depends: [
+  "deb-node-cliui"
+  "deb-node-decamelize"
+  "deb-node-find-up" {>= "2.1~"}
+  "deb-node-get-caller-file"
+  "deb-node-os-locale"
+  "deb-node-require-directory"
+  "deb-node-require-main-filename"
+  "deb-node-set-blocking"
+  "deb-node-string-width"
+  "deb-node-which-module" {>= "2.0~"}
+  "deb-node-y18n"
+  "deb-node-yargs-parser" {>= "18.1.0~"}
+  "deb-nodejs"
+]
+extra-source "node-yargs_15.3.1+repack-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-yargs/node-yargs_15.3.1+repack-2_all.deb"
+}

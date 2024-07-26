@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-bioc-deseq2_1.22.2+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-bioc-deseq2"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgfortran5" {>= "8"}
+  "deb-libquadmath0" {>= "4.6"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "3.5.2-1"}
+  "deb-r-bioc-biobase"
+  "deb-r-bioc-biocgenerics"
+  "deb-r-bioc-biocgenerics" {>= "0.7.5"}
+  "deb-r-bioc-biocparallel"
+  "deb-r-bioc-genefilter"
+  "deb-r-bioc-geneplotter"
+  "deb-r-bioc-genomicranges"
+  "deb-r-bioc-iranges"
+  "deb-r-bioc-s4vectors" {>= "0.9.25"}
+  "deb-r-bioc-summarizedexperiment" {>= "1.1.6"}
+  "deb-r-cran-ggplot2"
+  "deb-r-cran-hmisc"
+  "deb-r-cran-rcpp" {>= "0.11.0"}
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "r-bioc-deseq2_1.22.2+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-bioc-deseq2/r-bioc-deseq2_1.22.2+dfsg-1_amd64.deb"
+}

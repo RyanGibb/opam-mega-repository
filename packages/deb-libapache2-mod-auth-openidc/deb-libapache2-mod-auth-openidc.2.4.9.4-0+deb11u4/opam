@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libapache2-mod-auth-openidc_2.4.9.4-0+deb11u4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libapache2-mod-auth-openidc"]
+]
+depends: [
+  "deb-apache2-bin"
+  "deb-apache2-bin" {>= "2.4.16"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcjose0" {>= "0.4.1"}
+  "deb-libcurl4" {>= "7.16.2"}
+  "deb-libhiredis0-14" {>= "0.14.0"}
+  "deb-libjansson4" {>= "2.0.1"}
+  "deb-libpcre3"
+  "deb-libssl1-1" {>= "1.1.0"}
+]
+extra-source "libapache2-mod-auth-openidc_2.4.9.4-0+deb11u4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/liba/libapache2-mod-auth-openidc/libapache2-mod-auth-openidc_2.4.9.4-0+deb11u4_amd64.deb"
+}

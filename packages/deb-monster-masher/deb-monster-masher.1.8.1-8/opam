@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i monster-masher_1.8.1-8_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r monster-masher"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libcanberra0" {>= "0.2"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libglademm-2-4-1v5" {>= "2.6.0"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libglibmm-2-4-1v5" {>= "2.54.0"}
+  "deb-libgnomecanvasmm-2-6-1v5" {>= "2.23.1"}
+  "deb-libgtk2-0-0" {>= "2.8.0"}
+  "deb-libgtkmm-2-4-1v5" {>= "1-2.24.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libsigc++-2-0-0v5" {>= "2.6.1"}
+  "deb-libstdc++6" {>= "5.2"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "monster-masher_1.8.1-8_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/monster-masher/monster-masher_1.8.1-8_amd64.deb"
+}

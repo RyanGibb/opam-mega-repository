@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libfluidsynth-dev_2.3.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libfluidsynth-dev"]
+]
+depends: [
+  "deb-libasound2-dev"
+  "deb-libdbus-1-dev"
+  "deb-libfluidsynth3" {= "2.3.1-2"}
+  "deb-libinstpatch-dev" {>= "1.1.0"}
+  "deb-libpulse-dev"
+  "deb-libreadline-dev"
+  "deb-libsdl2-dev"
+  "deb-libsndfile1-dev"
+  "deb-libsystemd-dev"
+  ("deb-libjack-dev" | "deb- libjack-jackd2-dev")
+]
+extra-source "libfluidsynth-dev_2.3.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fluidsynth/libfluidsynth-dev_2.3.1-2_amd64.deb"
+}

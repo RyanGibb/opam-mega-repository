@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libxmltooling8_3.0.4-1+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libxmltooling8"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libcurl4" {>= "7.16.2"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-liblog4shib2"
+  "deb-libssl1-1" {>= "1.1.1"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libxerces-c3-2"
+  "deb-libxml-security-c20"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libxmltooling8_3.0.4-1+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xmltooling/libxmltooling8_3.0.4-1+deb10u1_amd64.deb"
+}

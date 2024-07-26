@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i rst2pdf_0.99-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r rst2pdf"]
+]
+depends: [
+  "deb-fontconfig"
+  "deb-python3-any"
+  "deb-python3-docutils"
+  "deb-python3-importlib-metadata"
+  "deb-python3-jinja2"
+  "deb-python3-packaging"
+  "deb-python3-pkg-resources"
+  "deb-python3-pygments"
+  "deb-python3-reportlab"
+  "deb-python3-setuptools"
+  "deb-python3-simplejson"
+  "deb-python3-smartypants"
+  "deb-python3-yaml"
+]
+extra-source "rst2pdf_0.99-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rst2pdf/rst2pdf_0.99-1_all.deb"
+}

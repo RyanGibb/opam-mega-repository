@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i rygel_0.40.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r rygel"]
+]
+depends: [
+  "deb-init-system-helpers" {>= "1.52"}
+  "deb-libc6" {>= "2.4"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.31.1"}
+  "deb-libgee-0-8-2" {>= "0.8.3"}
+  "deb-libges-1-0-0" {>= "1.16"}
+  "deb-libglib2-0-0" {>= "2.56.0"}
+  "deb-libgssdp-1-2-0" {>= "1.1.0"}
+  "deb-libgstreamer-plugins-base1-0-0" {>= "1.12"}
+  "deb-libgstreamer1-0-0" {>= "1.12"}
+  "deb-libgupnp-1-2-0" {>= "1.1.2"}
+  "deb-libgupnp-av-1-0-2" {>= "0.12.8"}
+  "deb-libgupnp-dlna-2-0-3" {>= "0.9.4"}
+  "deb-libmediaart-2-0-0" {>= "1.9.0"}
+  "deb-librygel-core-2-6-2" {>= "0.40.0"}
+  "deb-librygel-db-2-6-2" {>= "0.40.0"}
+  "deb-librygel-renderer-2-6-2" {>= "0.40.0"}
+  "deb-librygel-server-2-6-2" {>= "0.40.0"}
+  "deb-libsoup2-4-1" {>= "2.44.0"}
+  "deb-libsqlite3-0" {>= "3.5.9"}
+  "deb-libxml2" {>= "2.7.4"}
+]
+extra-source "rygel_0.40.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rygel/rygel_0.40.0-1_amd64.deb"
+}

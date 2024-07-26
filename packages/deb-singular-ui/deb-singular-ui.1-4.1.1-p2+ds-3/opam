@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i singular-ui_1:4.1.1-p2+ds-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r singular-ui"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libflint-2-5-2"
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgmp10"
+  "deb-libmpfr6" {>= "3.1.3"}
+  "deb-libncurses6" {>= "6"}
+  "deb-libntl35"
+  "deb-libreadline7" {>= "6.0"}
+  "deb-libsingular4m1" {= "1-4.1.1-p2+ds-3"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-singular-data" {= "1-4.1.1-p2+ds-3"}
+]
+extra-source "singular-ui_1:4.1.1-p2+ds-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/singular/singular-ui_4.1.1-p2+ds-3_amd64.deb"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-hsx-jmacro-prof_7.3.8.2-1+b5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-hsx-jmacro-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-hsp-prof"
+  "deb-libghc-hsx-jmacro-dev" {= "7.3.8.2-1+b5"}
+  "deb-libghc-jmacro-prof"
+  "deb-libghc-wl-pprint-text-prof"
+]
+extra-source "libghc-hsx-jmacro-prof_7.3.8.2-1+b5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-hsx-jmacro/libghc-hsx-jmacro-prof_7.3.8.2-1+b5_amd64.deb"
+}

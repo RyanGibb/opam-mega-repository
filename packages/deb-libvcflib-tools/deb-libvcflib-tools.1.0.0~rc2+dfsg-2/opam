@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libvcflib-tools_1.0.0~rc2+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libvcflib-tools"]
+]
+depends: [
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.23"}
+  "deb-libdisorder0" {>= "0.0.2"}
+  "deb-libfastahack0" {>= "0.0+git20160702.bbc645f"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libhts2" {>= "1.0"}
+  "deb-liblzma5" {>= "5.1.1alpha+20110809"}
+  "deb-libsmithwaterman0" {>= "0.0+git20160702.2610e25"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtabixpp0"
+  "deb-libvcflib1"
+  "deb-python"
+  "deb-r-base-core"
+  "deb-r-cran-ggplot2"
+  "deb-r-cran-gridbase"
+  "deb-r-cran-plyr"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libvcflib-tools_1.0.0~rc2+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libv/libvcflib/libvcflib-tools_1.0.0~rc2+dfsg-2_amd64.deb"
+}

@@ -1,0 +1,49 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-rclone-rclone-dev_1.53.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-rclone-rclone-dev"]
+]
+depends: [
+  "deb-golang-bazil-fuse-dev"
+  "deb-golang-github-a8m-tree-dev"
+  "deb-golang-github-abbot-go-http-auth-dev" {>= "0.4.0"}
+  "deb-golang-github-anacrolix-dms-dev"
+  "deb-golang-github-atotto-clipboard-dev"
+  "deb-golang-github-aws-aws-sdk-go-dev"
+  "deb-golang-github-azure-azure-storage-blob-go-dev"
+  "deb-golang-github-coreos-bbolt-dev"
+  "deb-golang-github-djherbis-times-dev"
+  "deb-golang-github-dropbox-dropbox-sdk-go-unofficial-dev" {>= "5.4.0"}
+  "deb-golang-github-google-uuid-dev"
+  "deb-golang-github-jlaffaye-ftp-dev" {>= "0.0~20200721.13949d3"}
+  "deb-golang-github-jzelinskie-whirlpool-dev"
+  "deb-golang-github-koofr-go-httpclient-dev"
+  "deb-golang-github-koofr-go-koofrclient-dev"
+  "deb-golang-github-ncw-go-acd-dev"
+  "deb-golang-github-ncw-swift-dev" {>= "1.0.52"}
+  "deb-golang-github-nsf-termbox-go-dev"
+  "deb-golang-github-okzk-sdnotify-dev" {>= "0.0~git20180710.d9becc3-1"}
+  "deb-golang-github-patrickmn-go-cache-dev"
+  "deb-golang-github-pkg-errors-dev" {>= "0.9.1"}
+  "deb-golang-github-putdotio-go-putio-dev"
+  "deb-golang-github-rfjakob-eme-dev"
+  "deb-golang-github-sevlyar-go-daemon-dev"
+  "deb-golang-github-skratchdot-open-golang-dev"
+  "deb-golang-github-spf13-cobra-dev"
+  "deb-golang-github-spf13-pflag-dev"
+  "deb-golang-github-stretchr-testify-dev"
+  "deb-golang-github-unknwon-goconfig-dev"
+  "deb-golang-github-xanzy-ssh-agent-dev"
+  "deb-golang-golang-x-crypto-dev"
+  "deb-golang-golang-x-net-dev"
+  "deb-golang-golang-x-oauth2-google-dev"
+  "deb-golang-golang-x-sys-dev"
+  "deb-golang-golang-x-text-dev"
+  "deb-golang-golang-x-time-dev"
+  "deb-golang-google-api-dev" {>= "0.28.0"}
+]
+extra-source "golang-github-rclone-rclone-dev_1.53.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rclone/golang-github-rclone-rclone-dev_1.53.3-1_all.deb"
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add rng-tools-6.12-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del rng-tools"]
+]
+depends: [
+  "apk-jitterentropy-library" {= "3.0.1-r0"}
+  "apk-libcrypto1-1" {= "1.1.1t-r2"}
+  "apk-musl" {= "1.2.2-r5"}
+]
+extra-source "rng-tools-6.12-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/rng-tools-6.12-r0.apk"
+}

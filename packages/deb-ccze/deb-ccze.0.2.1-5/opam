@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ccze_0.2.1-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ccze"]
+]
+depends: [
+  "deb-libc6" {>= "2.8"}
+  "deb-libncurses6" {>= "6"}
+  "deb-libpcre3"
+  "deb-libtinfo6" {>= "6"}
+]
+extra-source "ccze_0.2.1-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/ccze/ccze_0.2.1-5_amd64.deb"
+}

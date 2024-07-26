@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librnd3-hid-lesstif_3.2.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librnd3-hid-lesstif"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libfungw1"
+  "deb-librnd3" {= "3.2.2-1"}
+  "deb-librnd3-lib-gui" {= "3.2.2-1"}
+  "deb-libx11-6"
+  "deb-libxinerama1" {>= "2-1.1.4"}
+  "deb-libxm4" {>= "2.3.4"}
+  "deb-libxrender1"
+  "deb-libxt6"
+]
+extra-source "librnd3-hid-lesstif_3.2.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libr/librnd/librnd3-hid-lesstif_3.2.2-1_amd64.deb"
+}

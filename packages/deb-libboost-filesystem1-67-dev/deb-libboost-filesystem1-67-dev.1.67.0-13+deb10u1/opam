@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libboost-filesystem1.67-dev_1.67.0-13+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libboost-filesystem1.67-dev"]
+]
+depends: [
+  "deb-libboost-filesystem1-67-0" {= "1.67.0-13+deb10u1"}
+  "deb-libboost-system1-67-dev" {= "1.67.0-13+deb10u1"}
+  "deb-libboost1-67-dev" {= "1.67.0-13+deb10u1"}
+]
+conflicts: [
+  "deb-libboost-filesystem1-42-dev"
+  "deb-libboost-filesystem1-46-dev"
+  "deb-libboost-filesystem1-48-dev"
+  "deb-libboost-filesystem1-49-dev"
+  "deb-libboost-filesystem1-50-dev"
+  "deb-libboost-filesystem1-52-dev"
+  "deb-libboost-filesystem1-53-dev"
+  "deb-libboost-filesystem1-54-dev"
+  "deb-libboost-filesystem1-55-dev"
+  "deb-libboost-filesystem1-57-dev"
+  "deb-libboost-filesystem1-58-dev"
+  "deb-libboost-filesystem1-60-dev"
+  "deb-libboost-filesystem1-61-dev"
+  "deb-libboost-filesystem1-62-dev"
+  "deb-libboost-filesystem1-63-dev"
+  "deb-libboost-filesystem1-65-dev"
+]
+extra-source "libboost-filesystem1.67-dev_1.67.0-13+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/boost1.67/libboost-filesystem1.67-dev_1.67.0-13+deb10u1_amd64.deb"
+}

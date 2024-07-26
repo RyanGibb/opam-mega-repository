@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-mets_1.3.2+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-mets"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.2.20221110-2"}
+  "deb-r-cran-lava" {>= "1.7.1"}
+  "deb-r-cran-mvtnorm"
+  "deb-r-cran-numderiv"
+  "deb-r-cran-rcpp"
+  "deb-r-cran-rcpparmadillo"
+  "deb-r-cran-survival" {>= "2.43-1"}
+  "deb-r-cran-timereg" {>= "1.9.4"}
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "r-cran-mets_1.3.2+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-mets/r-cran-mets_1.3.2+dfsg-1_amd64.deb"
+}

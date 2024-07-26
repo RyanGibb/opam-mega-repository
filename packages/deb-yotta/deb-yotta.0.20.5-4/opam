@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i yotta_0.20.5-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r yotta"]
+]
+depends: [
+  "deb-cmake"
+  "deb-mbed-test-wrapper"
+  "deb-python3-any"
+  "deb-python3-argcomplete"
+  "deb-python3-certifi"
+  "deb-python3-colorama"
+  "deb-python3-cryptography" {>= "2.8"}
+  "deb-python3-github"
+  "deb-python3-hgapi"
+  "deb-python3-intelhex"
+  "deb-python3-jinja2"
+  "deb-python3-json-pointer"
+  "deb-python3-jsonschema"
+  "deb-python3-jwt"
+  "deb-python3-requests"
+  "deb-python3-semantic-version"
+  "deb-valinor"
+]
+extra-source "yotta_0.20.5-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/y/yotta/yotta_0.20.5-4_all.deb"
+}

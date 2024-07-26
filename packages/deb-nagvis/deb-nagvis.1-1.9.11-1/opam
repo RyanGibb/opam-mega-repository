@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i nagvis_1:1.9.11-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r nagvis"]
+]
+depends: [
+  "deb-graphviz"
+  "deb-libjs-jquery"
+  "deb-php"
+  "deb-php-common"
+  "deb-php-gd"
+  "deb-php-net-socket"
+  "deb-php-php-gettext"
+  "deb-php-sqlite3"
+  "deb-ucf"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "nagvis_1:1.9.11-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/nagvis/nagvis_1.9.11-1_all.deb"
+}

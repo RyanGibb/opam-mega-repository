@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-haskell-gi-prof_0.21.4-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-haskell-gi-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-attoparsec-prof"
+  "deb-libghc-haskell-gi-base-prof"
+  "deb-libghc-haskell-gi-dev" {= "0.21.4-3+b1"}
+  "deb-libghc-pretty-show-prof"
+  "deb-libghc-regex-tdfa-prof"
+  "deb-libghc-safe-prof"
+  "deb-libghc-xdg-basedir-prof"
+  "deb-libghc-xml-conduit-prof"
+]
+extra-source "libghc-haskell-gi-prof_0.21.4-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-haskell-gi/libghc-haskell-gi-prof_0.21.4-3+b1_amd64.deb"
+}

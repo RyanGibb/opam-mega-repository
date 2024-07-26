@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i transcriber_1.5.1.1-10+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r transcriber"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libtcl8-6" {>= "8.6.0"}
+  "deb-libtk8-6" {>= "8.6.0"}
+  "deb-libx11-6"
+  "deb-sox"
+  "deb-tcl-snack"
+  "deb-tcl-tclex"
+  "deb-tk"
+]
+extra-source "transcriber_1.5.1.1-10+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/transcriber/transcriber_1.5.1.1-10+b1_amd64.deb"
+}

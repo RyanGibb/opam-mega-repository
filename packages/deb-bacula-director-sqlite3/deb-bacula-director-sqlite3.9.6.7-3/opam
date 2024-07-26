@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i bacula-director-sqlite3_9.6.7-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r bacula-director-sqlite3"]
+]
+depends: [
+  "deb-bacula-common-sqlite3" {< "9.6.7-3.1~"}
+  "deb-bacula-common-sqlite3" {>= "9.6.7-3"}
+  "deb-file"
+  "deb-sqlite3"
+  ("deb-dbconfig-sqlite3" | "deb- dbconfig-no-thanks")
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+conflicts: [
+  "deb-bacula-director-database"
+]
+extra-source "bacula-director-sqlite3_9.6.7-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/bacula/bacula-director-sqlite3_9.6.7-3_all.deb"
+}

@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libm17n-0_1.8.0-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libm17n-0"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libfribidi0" {>= "0.19.2"}
+  "deb-libgd3" {>= "2.1.0~alpha~"}
+  "deb-libotf1" {>= "0.9.16"}
+  "deb-libthai0" {>= "0.1.12"}
+  "deb-libx11-6"
+  "deb-libxft2" {> "2.1.1"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libxt6"
+  "deb-m17n-db" {>= "1.6.0"}
+]
+extra-source "libm17n-0_1.8.0-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/m17n-lib/libm17n-0_1.8.0-6_amd64.deb"
+}

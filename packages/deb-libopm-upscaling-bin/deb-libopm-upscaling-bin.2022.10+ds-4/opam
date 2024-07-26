@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libopm-upscaling-bin_2022.10+ds-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libopm-upscaling-bin"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libdune-common-dev"
+  "deb-libdune-geometry-dev"
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgomp1" {>= "4.9"}
+  "deb-libopenmpi3" {>= "4.1.4"}
+  "deb-libopm-common"
+  "deb-libopm-grid"
+  "deb-libopm-upscaling"
+  "deb-libstdc++6" {>= "11"}
+  "deb-libumfpack5" {>= "1-4.5.2"}
+]
+extra-source "libopm-upscaling-bin_2022.10+ds-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/opm-upscaling/libopm-upscaling-bin_2022.10+ds-4_amd64.deb"
+}

@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpopplerkit0_0.0.20051227svn-8+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpopplerkit0"]
+]
+depends: [
+  "deb-gnustep-back0-27" {>= "0.27.0"}
+  "deb-gnustep-base-runtime" {>= "1.26.0"}
+  "deb-gnustep-gui-runtime" {>= "0.27.0"}
+  "deb-gsfonts"
+  "deb-libc6" {>= "2.14"}
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgnustep-base1-26" {>= "1.26.0"}
+  "deb-libgnustep-gui0-27" {>= "0.27.0"}
+  "deb-libobjc4" {>= "4.2.1"}
+  "deb-libpoppler82" {>= "0.71.0"}
+  "deb-libstdc++6" {>= "5.2"}
+]
+extra-source "libpopplerkit0_0.0.20051227svn-8+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/popplerkit.framework/libpopplerkit0_0.0.20051227svn-8+b2_amd64.deb"
+}

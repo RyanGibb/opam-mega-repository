@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ansible-base-2.10.5-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ansible-base"]
+]
+depends: [
+  "apk-py3-cryptography" {= "3.3.2-r1"}
+  "apk-py3-jinja2" {= "3.0.1-r0"}
+  "apk-py3-packaging" {= "20.9-r1"}
+  "apk-py3-paramiko" {= "2.7.2-r1"}
+  "apk-py3-yaml" {= "5.4.1.1-r1"}
+  "apk-python3" {= "3.9.17-r0"}
+]
+extra-source "ansible-base-2.10.5-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/ansible-base-2.10.5-r1.apk"
+}

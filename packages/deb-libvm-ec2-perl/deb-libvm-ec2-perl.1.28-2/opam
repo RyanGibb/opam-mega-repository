@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libvm-ec2-perl_1.28-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libvm-ec2-perl"]
+]
+depends: [
+  "deb-libanyevent-cachedns-perl"
+  "deb-libanyevent-http-perl" {>= "2.15"}
+  "deb-libanyevent-perl" {>= "7.040"}
+  "deb-libjson-perl"
+  "deb-libstring-approx-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-libxml-simple-perl"
+  "deb-perl"
+]
+extra-source "libvm-ec2-perl_1.28-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libv/libvm-ec2-perl/libvm-ec2-perl_1.28-2_all.deb"
+}

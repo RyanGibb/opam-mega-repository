@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gcin-qt5-immodule_2.8.8+dfsg1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gcin-qt5-immodule"]
+]
+depends: [
+  "deb-gcin" {>= "2.8.8+dfsg1-1"}
+  "deb-libc6" {>= "2.4"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgcin" {>= "2.8.8+dfsg1"}
+  "deb-libqt5core5a"
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5gui5" {>= "5.9.0~beta"}
+]
+extra-source "gcin-qt5-immodule_2.8.8+dfsg1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gcin/gcin-qt5-immodule_2.8.8+dfsg1-1_amd64.deb"
+}

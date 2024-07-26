@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i open-isns-server_0.97-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r open-isns-server"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libisns0" {>= "0.96"}
+  "deb-open-isns-utils"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "open-isns-server_0.97-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/open-isns/open-isns-server_0.97-3_amd64.deb"
+}

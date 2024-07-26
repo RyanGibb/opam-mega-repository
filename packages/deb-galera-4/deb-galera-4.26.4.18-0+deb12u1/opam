@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i galera-4_26.4.18-0+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r galera-4"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libstdc++6" {>= "11"}
+]
+conflicts: [
+  "deb-garbd-2"
+  "deb-garbd-3"
+  "deb-garbd2"
+  "deb-garbd3"
+  "deb-percona-galera-3"
+  "deb-percona-galera-4"
+  "deb-percona-xtradb-cluster-galera"
+  "deb-percona-xtradb-cluster-galera-2-x"
+  "deb-percona-xtradb-cluster-galera-3-x"
+  "deb-percona-xtradb-cluster-galera-4-x"
+  "deb-percona-xtradb-cluster-garbd-2-x"
+  "deb-percona-xtradb-cluster-garbd-3-x"
+]
+extra-source "galera-4_26.4.18-0+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/galera-4/galera-4_26.4.18-0+deb12u1_amd64.deb"
+}

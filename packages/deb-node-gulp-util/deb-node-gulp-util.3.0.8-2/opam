@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-gulp-util_3.0.8-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-gulp-util"]
+]
+depends: [
+  "deb-node-array-differ"
+  "deb-node-array-uniq"
+  "deb-node-beeper"
+  "deb-node-chalk"
+  "deb-node-dateformat"
+  "deb-node-fancy-log"
+  "deb-node-gulplog"
+  "deb-node-has-gulplog"
+  "deb-node-lodash-packages"
+  "deb-node-lodash-reescape"
+  "deb-node-lodash-reevaluate"
+  "deb-node-minimist"
+  "deb-node-multipipe"
+  "deb-node-object-assign"
+  "deb-node-replace-ext"
+  "deb-node-through2" {>= "2.0.0"}
+  "deb-node-vinyl"
+  "deb-nodejs"
+]
+extra-source "node-gulp-util_3.0.8-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-gulp-util/node-gulp-util_3.0.8-2_all.deb"
+}

@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-micromatch_2.3.11-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-micromatch"]
+]
+depends: [
+  "deb-node-arr-diff" {>= "2.0.0"}
+  "deb-node-array-unique" {>= "0.2.1"}
+  "deb-node-braces" {>= "1.8.2"}
+  "deb-node-expand-brackets" {>= "0.1.4"}
+  "deb-node-extglob" {>= "0.3.1"}
+  "deb-node-filename-regex" {>= "2.0.0"}
+  "deb-node-is-extglob" {>= "1.0.0"}
+  "deb-node-is-glob" {>= "2.0.1"}
+  "deb-node-kind-of" {>= "3.0.2"}
+  "deb-node-normalize-path" {>= "2.0.1"}
+  "deb-node-object-omit" {>= "2.0.0"}
+  "deb-node-parse-glob" {>= "3.0.4"}
+  "deb-node-regex-cache" {>= "0.4.2"}
+  "deb-nodejs"
+]
+extra-source "node-micromatch_2.3.11-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-micromatch/node-micromatch_2.3.11-1_all.deb"
+}

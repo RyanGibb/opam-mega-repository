@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i iogerman_1:2-35_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r iogerman"]
+]
+depends: [
+  "deb-dictionaries-common" {>= "1.23~"}
+  "deb-ispell"
+  "deb-perl-any"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+conflicts: [
+  "deb-igerman"
+]
+extra-source "iogerman_1:2-35_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/hkgerman/iogerman_2-35_all.deb"
+}

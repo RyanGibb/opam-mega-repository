@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-libxml2-dbg_2.9.4+dfsg1-7+deb10u4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-libxml2-dbg"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libpython2-7-dbg" {>= "2.7"}
+  "deb-libxml2" {>= "2.9.1"}
+  "deb-python-dbg"
+  "deb-python-libxml2" {= "2.9.4+dfsg1-7+deb10u4"}
+]
+extra-source "python-libxml2-dbg_2.9.4+dfsg1-7+deb10u4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libx/libxml2/python-libxml2-dbg_2.9.4+dfsg1-7+deb10u4_amd64.deb"
+}

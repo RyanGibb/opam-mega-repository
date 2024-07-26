@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mtail_3.0.0~rc19-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mtail"]
+]
+depends: [
+  "deb-adduser"
+  "deb-daemon"
+  "deb-init-system-helpers" {>= "1.51"}
+  "deb-libc6" {>= "2.3.2"}
+  "deb-tzdata"
+]
+conflicts: [
+  "deb-monkeytail"
+]
+extra-source "mtail_3.0.0~rc19-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mtail/mtail_3.0.0~rc19-2_amd64.deb"
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add rtapd-dbg-1.7-r10.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del rtapd-dbg"]
+]
+depends: [
+  "apk-rtnppd" {= "1.7b-r12"}
+]
+extra-source "rtapd-dbg-1.7-r10.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/rtapd-dbg-1.7-r10.apk"
+}

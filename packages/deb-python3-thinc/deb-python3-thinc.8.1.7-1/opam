@@ -1,0 +1,43 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-thinc_8.1.7-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-thinc"]
+]
+depends: [
+  "deb-black"
+  "deb-cython3"
+  "deb-libc6" {>= "2.32"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-any"
+  "deb-python3-catalogue"
+  "deb-python3-confection"
+  "deb-python3-coverage"
+  "deb-python3-cymem"
+  "deb-python3-cython-blis"
+  "deb-python3-flake8"
+  "deb-python3-hypothesis"
+  "deb-python3-ipykernel"
+  "deb-python3-mock"
+  "deb-python3-murmurhash"
+  "deb-python3-nbconvert"
+  "deb-python3-nbformat"
+  "deb-python3-numpy"
+  "deb-python3-packaging"
+  "deb-python3-pkg-resources"
+  "deb-python3-preshed"
+  "deb-python3-pydantic"
+  "deb-python3-pytest"
+  "deb-python3-pytest-cov"
+  "deb-python3-srsly"
+  "deb-python3-typeshed"
+  "deb-python3-wasabi"
+  ("deb-python3-mypy" | "deb- python3" {< "3.7"})
+]
+extra-source "python3-thinc_8.1.7-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-thinc/python3-thinc_8.1.7-1_amd64.deb"
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgraphics-color-perl_0.31-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgraphics-color-perl"]
+]
+depends: [
+  "deb-libcolor-library-perl"
+  "deb-libmoose-perl"
+  "deb-libmoosex-aliases-perl"
+  "deb-libmoosex-clone-perl"
+  "deb-libmoosex-storage-perl"
+  "deb-libmoosex-types-perl"
+  "deb-perl-any"
+]
+extra-source "libgraphics-color-perl_0.31-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libg/libgraphics-color-perl/libgraphics-color-perl_0.31-2_all.deb"
+}

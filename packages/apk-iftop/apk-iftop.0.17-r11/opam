@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add iftop-0.17-r11.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del iftop"]
+]
+depends: [
+  "apk-libncursesw" {= "6.4_p20240420-r0"}
+  "apk-libpcap" {= "1.10.4-r1"}
+  "apk-musl" {= "1.2.5-r0"}
+]
+extra-source "iftop-0.17-r11.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/iftop-0.17-r11.apk"
+}

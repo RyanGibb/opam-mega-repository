@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libliberator-clojure_0.15.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libliberator-clojure"]
+]
+depends: [
+  "deb-libclojure-java"
+  "deb-libdata-csv-clojure" {>= "1.0.0"}
+  "deb-libdata-json-clojure" {>= "1.0.0"}
+  "deb-libhiccup-clojure"
+]
+extra-source "libliberator-clojure_0.15.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libe/liberator-clojure/libliberator-clojure_0.15.3-1_all.deb"
+}

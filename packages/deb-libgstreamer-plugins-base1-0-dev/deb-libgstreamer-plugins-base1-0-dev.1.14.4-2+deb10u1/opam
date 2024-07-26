@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgstreamer-plugins-base1.0-dev_1.14.4-2+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgstreamer-plugins-base1.0-dev"]
+]
+depends: [
+  "deb-gir1-2-gst-plugins-base-1-0" {= "1.14.4-2+deb10u1"}
+  "deb-libegl1-mesa-dev"
+  "deb-libgl1-mesa-dev"
+  "deb-libgles2-mesa-dev"
+  "deb-libglib2-0-dev"
+  "deb-libgstreamer-gl1-0-0" {= "1.14.4-2+deb10u1"}
+  "deb-libgstreamer-plugins-base1-0-0" {= "1.14.4-2+deb10u1"}
+  "deb-libgstreamer1-0-dev" {>= "1.14.4"}
+  "deb-liborc-0-4-dev" {>= "1-0.4.24"}
+  "deb-pkg-config"
+  ("deb-libc6-dev" | "deb- libc-dev")
+]
+conflicts: [
+  "deb-libgstreamer-plugins-bad1-0-dev" {< "1.13.1"}
+]
+extra-source "libgstreamer-plugins-base1.0-dev_1.14.4-2+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gst-plugins-base1.0/libgstreamer-plugins-base1.0-dev_1.14.4-2+deb10u1_amd64.deb"
+}

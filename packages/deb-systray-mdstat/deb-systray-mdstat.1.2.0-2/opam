@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i systray-mdstat_1.2.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r systray-mdstat"]
+]
+depends: [
+  "deb-libdesktop-notify-perl"
+  "deb-libfile-sharedir-perl"
+  "deb-libgtk3-perl"
+  "deb-libtry-tiny-perl"
+  "deb-notification-daemon"
+  "deb-perl-any"
+]
+extra-source "systray-mdstat_1.2.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/systray-mdstat/systray-mdstat_1.2.0-2_all.deb"
+}

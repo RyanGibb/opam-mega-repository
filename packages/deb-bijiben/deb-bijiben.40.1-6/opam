@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i bijiben_40.1-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r bijiben"]
+]
+depends: [
+  "deb-evolution-data-server"
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.14.0"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libecal-2-0-2" {>= "3.45.1"}
+  "deb-libedataserver-1-2-27" {>= "3.45.1"}
+  "deb-libglib2-0-0" {>= "2.61.2"}
+  "deb-libgoa-1-0-0b" {>= "3.45"}
+  "deb-libgtk-3-0" {>= "3.21.4"}
+  "deb-libhandy-1-0" {>= "1.0.0"}
+  "deb-libical3" {>= "3.0.0"}
+  "deb-libjavascriptcoregtk-4-1-0" {>= "2.38.2"}
+  "deb-libjson-glib-1-0-0" {>= "1.5.2"}
+  "deb-libpango-1-0-0" {>= "1.20.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libtracker-sparql-3-0-0" {>= "3.1.1"}
+  "deb-libwebkit2gtk-4-1-0" {>= "2.25.1"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-tracker"
+  "deb-xdg-utils"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "bijiben_40.1-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/bijiben/bijiben_40.1-6_amd64.deb"
+}

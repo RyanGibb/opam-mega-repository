@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i liquidctl_1.12.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r liquidctl"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-colorlog"
+  "deb-python3-crcmod"
+  "deb-python3-docopt"
+  "deb-python3-hid"
+  "deb-python3-pil"
+  "deb-python3-smbus"
+  "deb-python3-usb"
+]
+extra-source "liquidctl_1.12.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/liquidctl/liquidctl_1.12.1-1_amd64.deb"
+}

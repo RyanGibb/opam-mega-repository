@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ncmpc-lyrics_0.47-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ncmpc-lyrics"]
+]
+depends: [
+  "deb-ncmpc"
+  "deb-python3"
+  "deb-python3-bs4"
+  "deb-python3-requests"
+  "deb-python3-unidecode"
+]
+extra-source "ncmpc-lyrics_0.47-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/ncmpc/ncmpc-lyrics_0.47-2_all.deb"
+}

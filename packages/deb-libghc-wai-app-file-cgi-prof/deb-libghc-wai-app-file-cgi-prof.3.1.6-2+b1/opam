@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-wai-app-file-cgi-prof_3.1.6-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-wai-app-file-cgi-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-attoparsec-prof"
+  "deb-libghc-case-insensitive-prof"
+  "deb-libghc-conduit-extra-prof"
+  "deb-libghc-conduit-prof"
+  "deb-libghc-data-default-class-prof"
+  "deb-libghc-http-client-prof"
+  "deb-libghc-http-conduit-prof"
+  "deb-libghc-http-date-prof"
+  "deb-libghc-http-types-prof"
+  "deb-libghc-io-choice-prof"
+  "deb-libghc-lifted-base-prof"
+  "deb-libghc-mime-types-prof"
+  "deb-libghc-network-prof"
+  "deb-libghc-sockaddr-prof"
+  "deb-libghc-static-hash-prof"
+  "deb-libghc-wai-app-file-cgi-dev" {= "3.1.6-2+b1"}
+  "deb-libghc-wai-conduit-prof"
+  "deb-libghc-wai-prof"
+  "deb-libghc-warp-prof"
+  "deb-libghc-word8-prof"
+]
+extra-source "libghc-wai-app-file-cgi-prof_3.1.6-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-wai-app-file-cgi/libghc-wai-app-file-cgi-prof_3.1.6-2+b1_amd64.deb"
+}

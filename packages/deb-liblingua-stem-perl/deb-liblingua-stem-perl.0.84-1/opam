@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i liblingua-stem-perl_0.84-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r liblingua-stem-perl"]
+]
+depends: [
+  "deb-liblingua-pt-stemmer-perl"
+  "deb-liblingua-stem-snowball-da-perl"
+  "deb-libsnowball-norwegian-perl" {>= "1.0"}
+  "deb-libsnowball-swedish-perl" {>= "1.01"}
+  "deb-libtext-german-perl"
+  "deb-perl"
+]
+conflicts: [
+  "deb-liblingua-stem-fr-perl"
+  "deb-liblingua-stem-it-perl"
+  "deb-liblingua-stem-ru-perl"
+]
+extra-source "liblingua-stem-perl_0.84-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libl/liblingua-stem-perl/liblingua-stem-perl_0.84-1_all.deb"
+}

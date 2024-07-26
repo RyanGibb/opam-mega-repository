@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i courier-imap_5.0.6+1.0.6-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r courier-imap"]
+]
+depends: [
+  "deb-courier-authlib" {>= "0.66.4-5~"}
+  "deb-courier-base" {= "1.0.6-1"}
+  "deb-libc6" {>= "2.15"}
+  "deb-libcourier-unicode4" {>= "1.4"}
+  "deb-libfam0"
+  "deb-libgdbm6" {>= "1.16"}
+  "deb-libidn11" {>= "1.13"}
+  ("deb-debconf" | "deb- debconf-2-0")
+  ("deb-default-mta" | "deb- mail-transport-agent")
+  ("deb-sysvinit-utils" {>= "2.88dsf-50"} | "deb- init-d-script")
+]
+conflicts: [
+  "deb-imap-server"
+]
+extra-source "courier-imap_5.0.6+1.0.6-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/courier/courier-imap_5.0.6+1.0.6-1_amd64.deb"
+}

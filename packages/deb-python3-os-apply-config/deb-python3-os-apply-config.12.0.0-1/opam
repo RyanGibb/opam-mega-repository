@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-os-apply-config_12.0.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-os-apply-config"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-anyjson"
+  "deb-python3-pbr"
+  "deb-python3-pystache"
+  "deb-python3-six" {>= "1.10.0"}
+  "deb-python3-yaml"
+]
+extra-source "python3-os-apply-config_12.0.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-os-apply-config/python3-os-apply-config_12.0.0-1_all.deb"
+}

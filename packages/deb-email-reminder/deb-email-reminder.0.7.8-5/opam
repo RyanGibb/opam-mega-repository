@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i email-reminder_0.7.8-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r email-reminder"]
+]
+depends: [
+  "deb-adduser"
+  "deb-cron"
+  "deb-debconf"
+  "deb-libdate-manip-perl"
+  "deb-libemail-valid-perl"
+  "deb-libgtk2-perl"
+  "deb-libxml-dom-perl"
+  "deb-perl"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "email-reminder_0.7.8-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/email-reminder/email-reminder_0.7.8-5_all.deb"
+}

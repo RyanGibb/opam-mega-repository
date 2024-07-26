@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pydoctor_22.9.1-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pydoctor"]
+]
+depends: [
+  "deb-libjs-bootstrap"
+  "deb-python3-any"
+  "deb-python3-appdirs"
+  "deb-python3-astor"
+  "deb-python3-attr"
+  "deb-python3-cachecontrol" {>= "0.12.12"}
+  "deb-python3-configargparse"
+  "deb-python3-docutils"
+  "deb-python3-filelock"
+  "deb-python3-lunr"
+  "deb-python3-requests"
+  "deb-python3-toml"
+  "deb-python3-twisted"
+  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
+  ("deb-python3-importlib-resources" | "deb- python3" {> "3.9"})
+]
+extra-source "pydoctor_22.9.1-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pydoctor/pydoctor_22.9.1-4_all.deb"
+}

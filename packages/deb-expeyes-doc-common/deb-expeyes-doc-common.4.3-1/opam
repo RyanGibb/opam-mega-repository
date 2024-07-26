@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i expeyes-doc-common_4.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r expeyes-doc-common"]
+]
+depends: [
+  "deb-evince"
+  "deb-python"
+  "deb-python3"
+]
+conflicts: [
+  "deb-expeyes-doc-common" {< "4.3"}
+]
+extra-source "expeyes-doc-common_4.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/expeyes-doc/expeyes-doc-common_4.3-1_all.deb"
+}

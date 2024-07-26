@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mcabber_1.1.0-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mcabber"]
+]
+depends: [
+  "deb-libaspell15" {>= "0.60.7~20110707"}
+  "deb-libassuan0" {>= "2.0.1"}
+  "deb-libc6" {>= "2.27"}
+  "deb-libglib2-0-0" {>= "2.24.0"}
+  "deb-libgpg-error0" {>= "1.14"}
+  "deb-libgpgme11" {>= "1.2.0"}
+  "deb-libidn11" {>= "1.13"}
+  "deb-libloudmouth1-0" {>= "1.5.1"}
+  "deb-libncursesw6" {>= "6"}
+  "deb-libotr5" {>= "4.0.0"}
+  "deb-libtinfo6" {>= "6"}
+]
+extra-source "mcabber_1.1.0-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mcabber/mcabber_1.1.0-1.1_amd64.deb"
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gcr_3.41.1-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gcr"]
+]
+depends: [
+  "deb-init-system-helpers" {>= "1.52"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgck-1-0" {>= "3.3.90"}
+  "deb-libgcr-base-3-1" {= "3.41.1-1+b1"}
+  "deb-libgcr-ui-3-1" {= "3.41.1-1+b1"}
+  "deb-libglib2-0-0" {>= "2.44.0"}
+  "deb-libgtk-3-0" {>= "3.22.0"}
+  "deb-libsecret-1-0" {>= "0.20"}
+  "deb-libsystemd0"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
+]
+extra-source "gcr_3.41.1-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gcr/gcr_3.41.1-1+b1_amd64.deb"
+}

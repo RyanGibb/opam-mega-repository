@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openhpi_3.8.0-2.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openhpi"]
+]
+depends: [
+  "deb-openhpi-clients"
+  "deb-openhpi-plugin-ilo2-ribcl"
+  "deb-openhpi-plugin-ipmi"
+  "deb-openhpi-plugin-ipmidirect"
+  "deb-openhpi-plugin-oa-soap"
+  "deb-openhpi-plugin-ov-rest"
+  "deb-openhpi-plugin-snmp-bc"
+  "deb-openhpid"
+]
+extra-source "openhpi_3.8.0-2.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openhpi/openhpi_3.8.0-2.1_all.deb"
+}

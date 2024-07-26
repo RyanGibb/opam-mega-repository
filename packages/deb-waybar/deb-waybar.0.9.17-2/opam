@@ -1,0 +1,42 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i waybar_0.9.17-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r waybar"]
+]
+depends: [
+  "deb-init-system-helpers" {>= "1.52"}
+  "deb-libatkmm-1-6-1v5" {>= "2.28.3"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairomm-1-0-1v5" {>= "1.14.4"}
+  "deb-libdate-tz3" {>= "3.0.1"}
+  "deb-libdbusmenu-gtk3-4" {>= "0.4.2"}
+  "deb-libevdev2" {>= "0.9.1"}
+  "deb-libfmt9" {>= "9.1.0+ds1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.67.3"}
+  "deb-libglibmm-2-4-1v5" {>= "2.66.5"}
+  "deb-libgtk-3-0" {>= "3.21.4"}
+  "deb-libgtk-layer-shell0" {>= "0.1.0"}
+  "deb-libgtkmm-3-0-1v5" {>= "3.24.7"}
+  "deb-libinput10" {>= "0.15.0"}
+  "deb-libjsoncpp25" {>= "1.9.5"}
+  "deb-libmpdclient2" {>= "2.0"}
+  "deb-libnl-3-200" {>= "3.2.27"}
+  "deb-libnl-genl-3-200" {>= "3.2.7"}
+  "deb-libpulse0" {>= "0.99.1"}
+  "deb-libsigc++-2-0-0v5" {>= "2.8.0"}
+  "deb-libsndio7-0" {>= "1.8.1"}
+  "deb-libspdlog1-10"
+  "deb-libstdc++6" {>= "11"}
+  "deb-libudev1" {>= "183"}
+  "deb-libupower-glib3" {>= "0.99.8"}
+  "deb-libwayland-client0" {>= "1.20.0"}
+  "deb-libwireplumber-0-4-0" {>= "0.3.95"}
+  "deb-libxkbregistry0" {>= "1.0.0"}
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+]
+extra-source "waybar_0.9.17-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/w/waybar/waybar_0.9.17-2_amd64.deb"
+}

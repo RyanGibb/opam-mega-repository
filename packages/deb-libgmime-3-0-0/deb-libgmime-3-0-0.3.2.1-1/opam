@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgmime-3.0-0_3.2.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgmime-3.0-0"]
+]
+depends: [
+  "deb-libassuan0" {>= "2.0.1"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libglib2-0-0" {>= "2.31.8"}
+  "deb-libgpg-error0" {>= "1.14"}
+  "deb-libgpgme11" {>= "1.7.0"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libgmime-3.0-0_3.2.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gmime/libgmime-3.0-0_3.2.1-1_amd64.deb"
+}

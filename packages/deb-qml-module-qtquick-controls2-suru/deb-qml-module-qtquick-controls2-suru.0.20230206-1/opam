@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qml-module-qtquick-controls2-suru_0.20230206-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qml-module-qtquick-controls2-suru"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libqt5core5a"
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5qml5" {>= "5.14.1"}
+  "deb-libqt5quickcontrols2-5"
+  "deb-libqt5quicktemplates2-5"
+  "deb-libstdc++6" {>= "5"}
+  ("deb-libqt5gui5" {>= "5.8.0"} | "deb- libqt5gui5-gles" {>= "5.8.0"})
+]
+extra-source "qml-module-qtquick-controls2-suru_0.20230206-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qqc2-suru-style/qml-module-qtquick-controls2-suru_0.20230206-1_amd64.deb"
+}

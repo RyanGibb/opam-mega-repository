@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lcms2-dev-2.15-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lcms2-dev"]
+]
+depends: [
+  "apk-lcms2" {= "2.15-r4"}
+  "apk-lcms2-plugins" {= "2.15-r4"}
+  "apk-libjpeg-turbo-dev" {= "3.0.1-r0"}
+  "apk-pkgconf" {= "2.1.0-r0"}
+  "apk-tiff-dev" {= "4.6.0-r0"}
+  "apk-zlib-dev" {= "1.3.1-r0"}
+]
+extra-source "lcms2-dev-2.15-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/lcms2-dev-2.15-r4.apk"
+}

@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libwebkit2-sharp-4.0-cil_2.10.9+git20160917-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libwebkit2-sharp-4.0-cil"]
+]
+depends: [
+  "deb-cli-common" {>= "0.5.1"}
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.16.0"}
+  "deb-libglib3-0-cil" {>= "2.99.3"}
+  "deb-libgtk-3-0" {>= "3.0.0"}
+  "deb-libgtk3-0-cil" {>= "2.99.3"}
+  "deb-libjavascriptcoregtk-4-0-18"
+  "deb-libmono-corlib4-5-cil" {>= "4.6.1.3"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libsoup2-4-1" {>= "2.4.0"}
+  "deb-libwebkit2gtk-4-0-37" {>= "2.5"}
+]
+extra-source "libwebkit2-sharp-4.0-cil_2.10.9+git20160917-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/w/webkit2-sharp/libwebkit2-sharp-4.0-cil_2.10.9+git20160917-1.1_amd64.deb"
+}

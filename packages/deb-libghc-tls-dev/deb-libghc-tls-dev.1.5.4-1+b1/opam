@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-tls-dev_1.5.4-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-tls-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.14"}
+  "deb-libghc-asn1-encoding-dev"
+  "deb-libghc-asn1-types-dev"
+  "deb-libghc-async-dev"
+  "deb-libghc-cereal-dev"
+  "deb-libghc-cryptonite-dev"
+  "deb-libghc-data-default-class-dev"
+  "deb-libghc-hourglass-dev"
+  "deb-libghc-memory-dev"
+  "deb-libghc-network-dev"
+  "deb-libghc-x509-dev"
+  "deb-libghc-x509-store-dev"
+  "deb-libghc-x509-validation-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-tls-dev_1.5.4-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-tls/libghc-tls-dev_1.5.4-1+b1_amd64.deb"
+}

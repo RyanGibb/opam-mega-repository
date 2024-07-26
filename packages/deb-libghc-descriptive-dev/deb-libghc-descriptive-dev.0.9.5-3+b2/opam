@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-descriptive-dev_0.9.5-3+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-descriptive-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-aeson-dev"
+  "deb-libghc-bifunctors-dev"
+  "deb-libghc-scientific-dev"
+  "deb-libghc-vector-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-descriptive-dev_0.9.5-3+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-descriptive/libghc-descriptive-dev_0.9.5-3+b2_amd64.deb"
+}

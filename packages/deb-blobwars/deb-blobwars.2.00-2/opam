@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i blobwars_2.00-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r blobwars"]
+]
+depends: [
+  "deb-blobwars-data" {= "2.00-2"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libsdl2-2-0-0" {>= "2.0.12"}
+  "deb-libsdl2-image-2-0-0" {>= "2.0.5"}
+  "deb-libsdl2-mixer-2-0-0" {>= "2.6.0"}
+  "deb-libsdl2-net-2-0-0" {>= "2.0.1"}
+  "deb-libsdl2-ttf-2-0-0" {>= "2.0.15"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "blobwars_2.00-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/blobwars/blobwars_2.00-2_amd64.deb"
+}

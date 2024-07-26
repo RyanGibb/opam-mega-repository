@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libendless-bin_0~git20180727+ds-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libendless-bin"]
+]
+depends: [
+  "deb-gir1-2-glib-2-0"
+  "deb-gir1-2-json-1-0"
+  "deb-gjs"
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libendless-dev" {>= "0~git20180727+ds-1"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.43.2"}
+  "deb-libgtk-3-0" {>= "3.20"}
+  "deb-libjson-glib-1-0-0" {>= "0.13.2"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-python3"
+]
+extra-source "libendless-bin_0~git20180727+ds-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/eos-sdk/libendless-bin_0~git20180727+ds-1_amd64.deb"
+}

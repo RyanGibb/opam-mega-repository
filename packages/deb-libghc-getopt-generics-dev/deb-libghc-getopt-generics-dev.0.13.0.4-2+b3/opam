@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-getopt-generics-dev_0.13.0.4-2+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-getopt-generics-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-base-compat-dev"
+  "deb-libghc-base-orphans-dev"
+  "deb-libghc-generics-sop-dev"
+  "deb-libghc-tagged-dev"
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+]
+extra-source "libghc-getopt-generics-dev_0.13.0.4-2+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-getopt-generics/libghc-getopt-generics-dev_0.13.0.4-2+b3_amd64.deb"
+}

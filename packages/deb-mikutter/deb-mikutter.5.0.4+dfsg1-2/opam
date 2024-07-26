@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mikutter_5.0.4+dfsg1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mikutter"]
+]
+depends: [
+  "deb-ruby-addressable" {< "2.9"}
+  "deb-ruby-cairo"
+  "deb-ruby-delayer" {< "2.0"}
+  "deb-ruby-delayer-deferred" {< "3.0"}
+  "deb-ruby-diva" {< "3.0"}
+  "deb-ruby-gettext"
+  "deb-ruby-gtk3" {>= "3.4.3"}
+  "deb-ruby-httpclient"
+  "deb-ruby-instance-storage"
+  "deb-ruby-json"
+  "deb-ruby-locale"
+  "deb-ruby-memoist" {< "0.17"}
+  "deb-ruby-moneta"
+  "deb-ruby-nokogiri"
+  "deb-ruby-oauth"
+  "deb-ruby-pluggaloid" {< "2.0"}
+  "deb-ruby-text"
+  "deb-ruby-twitter-text" {< "2.1.0"}
+  "deb-ruby-typed-array" {< "0.2"}
+]
+extra-source "mikutter_5.0.4+dfsg1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mikutter/mikutter_5.0.4+dfsg1-2_all.deb"
+}

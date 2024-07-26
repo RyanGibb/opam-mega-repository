@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xnest_2:1.20.4-1+deb10u4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xnest"]
+]
+depends: [
+  "deb-libaudit1" {>= "1-2.2.1"}
+  "deb-libbsd0" {>= "0.7.0"}
+  "deb-libc6" {>= "2.17"}
+  "deb-libgcrypt20" {>= "1.8.0"}
+  "deb-libgl1"
+  "deb-libpixman-1-0" {>= "0.13.2"}
+  "deb-libselinux1" {>= "2.0.82"}
+  "deb-libsystemd0"
+  "deb-libunwind8"
+  "deb-libx11-6"
+  "deb-libxau6"
+  "deb-libxdmcp6"
+  "deb-libxext6"
+  "deb-libxfont2" {>= "1-2.0.1"}
+  "deb-libxshmfence1"
+  "deb-xserver-common" {>= "2-1.20.4-1+deb10u4"}
+]
+extra-source "xnest_2:1.20.4-1+deb10u4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xorg-server/xnest_1.20.4-1+deb10u4_amd64.deb"
+}

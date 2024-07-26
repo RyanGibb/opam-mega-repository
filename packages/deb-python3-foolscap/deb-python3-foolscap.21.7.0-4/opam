@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-foolscap_21.7.0-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-foolscap"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-openssl"
+  "deb-python3-six"
+  "deb-python3-twisted" {>= "16.0.0~"}
+]
+extra-source "python3-foolscap_21.7.0-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/foolscap/python3-foolscap_21.7.0-4_all.deb"
+}

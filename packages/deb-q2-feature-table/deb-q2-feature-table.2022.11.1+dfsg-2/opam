@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i q2-feature-table_2022.11.1+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r q2-feature-table"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-biom-format"
+  "deb-python3-h5py"
+  "deb-python3-ipywidgets"
+  "deb-python3-numpy"
+  "deb-python3-seaborn"
+  "deb-python3-skbio"
+  "deb-q2-types" {>= "2022.11.1"}
+  "deb-q2templates" {>= "2022.11.1"}
+  "deb-qiime" {>= "2022.11.1"}
+]
+extra-source "q2-feature-table_2022.11.1+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/q2-feature-table/q2-feature-table_2022.11.1+dfsg-2_all.deb"
+}

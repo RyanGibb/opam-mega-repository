@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fcitx-ui-qimpanel_2.1.3-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fcitx-ui-qimpanel"]
+]
+depends: [
+  "deb-fcitx-bin"
+  "deb-fcitx-data" {>= "1-4.2.8.1"}
+  "deb-fcitx-module-dbus" {>= "1-4.2.8.1"}
+  "deb-fcitx-module-kimpanel" {>= "1-4.2.8.1"}
+  "deb-fcitx-modules"
+  "deb-libc6" {>= "2.14"}
+  "deb-libfcitx-config4" {>= "4.2.7"}
+  "deb-libfcitx-utils0" {>= "4.2.7"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libqt5core5a" {>= "5.12.2"}
+  "deb-libqt5dbus5" {>= "5.4.2~"}
+  "deb-libqt5qml5" {>= "5.0.2"}
+  "deb-libqt5quickwidgets5" {>= "5.4.0"}
+  "deb-libqt5widgets5" {>= "5.4.2~"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-qml-module-qtquick2"
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+]
+extra-source "fcitx-ui-qimpanel_2.1.3-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fcitx-qimpanel/fcitx-ui-qimpanel_2.1.3-2+b1_amd64.deb"
+}

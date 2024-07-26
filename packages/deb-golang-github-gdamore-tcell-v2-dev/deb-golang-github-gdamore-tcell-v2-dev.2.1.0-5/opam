@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-gdamore-tcell.v2-dev_2.1.0-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-gdamore-tcell.v2-dev"]
+]
+depends: [
+  "deb-golang-github-gdamore-encoding-dev"
+  "deb-golang-github-lucasb-eyer-go-colorful-dev"
+  "deb-golang-github-mattn-go-runewidth-dev"
+  "deb-golang-github-smartystreets-goconvey-dev"
+  "deb-golang-golang-x-text-dev"
+]
+extra-source "golang-github-gdamore-tcell.v2-dev_2.1.0-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-gdamore-tcell.v2/golang-github-gdamore-tcell.v2-dev_2.1.0-5_all.deb"
+}

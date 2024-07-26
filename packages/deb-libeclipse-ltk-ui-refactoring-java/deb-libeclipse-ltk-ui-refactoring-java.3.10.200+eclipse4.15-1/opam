@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libeclipse-ltk-ui-refactoring-java_3.10.200+eclipse4.15-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libeclipse-ltk-ui-refactoring-java"]
+]
+depends: [
+  "deb-libeclipse-compare-java"
+  "deb-libeclipse-core-commands-java"
+  "deb-libeclipse-core-expressions-java"
+  "deb-libeclipse-core-filebuffers-java"
+  "deb-libeclipse-core-filesystem-java"
+  "deb-libeclipse-core-jobs-java"
+  "deb-libeclipse-core-resources-java"
+  "deb-libeclipse-core-runtime-java"
+  "deb-libeclipse-jface-java" {>= "3.14"}
+  "deb-libeclipse-jface-text-java"
+  "deb-libeclipse-ltk-core-refactoring-java"
+  "deb-libeclipse-team-core-java"
+  "deb-libeclipse-team-ui-java"
+  "deb-libeclipse-text-java"
+  "deb-libeclipse-ui-navigator-java"
+  "deb-libeclipse-ui-workbench-java"
+  "deb-libequinox-common-java"
+  "deb-libequinox-preferences-java"
+  "deb-libequinox-registry-java"
+  "deb-libicu4j-java"
+  "deb-libswt-gtk-4-java"
+]
+extra-source "libeclipse-ltk-ui-refactoring-java_3.10.200+eclipse4.15-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/eclipse-jdt-ui/libeclipse-ltk-ui-refactoring-java_3.10.200+eclipse4.15-1_all.deb"
+}

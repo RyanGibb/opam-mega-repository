@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dracut-core_059-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dracut-core"]
+]
+depends: [
+  "deb-cpio"
+  "deb-e2fsprogs"
+  "deb-kmod"
+  "deb-kpartx"
+  "deb-libc6" {>= "2.34"}
+  "deb-libkmod2" {>= "22~"}
+  "deb-udev"
+]
+extra-source "dracut-core_059-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dracut/dracut-core_059-4_amd64.deb"
+}

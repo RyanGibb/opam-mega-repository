@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-yesod-test-dev_1.6.5-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-yesod-test-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-attoparsec-dev"
+  "deb-libghc-blaze-builder-dev"
+  "deb-libghc-blaze-html-dev"
+  "deb-libghc-case-insensitive-dev"
+  "deb-libghc-conduit-dev"
+  "deb-libghc-cookie-dev"
+  "deb-libghc-hspec-core-dev"
+  "deb-libghc-html-conduit-dev"
+  "deb-libghc-http-types-dev"
+  "deb-libghc-hunit-dev"
+  "deb-libghc-network-dev"
+  "deb-libghc-pretty-show-dev"
+  "deb-libghc-semigroups-dev"
+  "deb-libghc-wai-dev"
+  "deb-libghc-wai-extra-dev"
+  "deb-libghc-xml-conduit-dev"
+  "deb-libghc-xml-types-dev"
+  "deb-libghc-yesod-core-dev"
+  "deb-libgmp10"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libghc-yesod-test-dev_1.6.5-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-yesod-test/libghc-yesod-test-dev_1.6.5-2+b1_amd64.deb"
+}

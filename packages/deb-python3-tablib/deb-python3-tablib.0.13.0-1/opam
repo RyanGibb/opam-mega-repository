@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-tablib_0.13.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-tablib"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-odf"
+  "deb-python3-openpyxl"
+  "deb-python3-xlrd"
+  "deb-python3-xlwt"
+  "deb-python3-yaml"
+]
+extra-source "python3-tablib_0.13.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-tablib/python3-tablib_0.13.0-1_all.deb"
+}

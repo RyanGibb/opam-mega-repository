@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i arctica-greeter_0.99.3.0-1+deb12u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r arctica-greeter"]
+]
+depends: [
+  "deb-fonts-noto-core"
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libayatana-ido3-0-4-0" {>= "0.4.0"}
+  "deb-libayatana-indicator3-7" {>= "0.6.0"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.14.0"}
+  "deb-libcanberra0" {>= "0.2"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.35.4"}
+  "deb-libglib2-0-0" {>= "2.43.92"}
+  "deb-libgtk-3-0" {>= "3.21.6"}
+  "deb-liblightdm-gobject-1-0" {>= "1.16.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-lightdm"
+  "deb-mate-settings-daemon"
+  "deb-network-manager"
+  "deb-numix-gtk-theme"
+  "deb-numix-icon-theme"
+  "deb-python3"
+  "deb-systemd"
+  "deb-x11-xkb-utils"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "arctica-greeter_0.99.3.0-1+deb12u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/arctica-greeter/arctica-greeter_0.99.3.0-1+deb12u2_amd64.deb"
+}

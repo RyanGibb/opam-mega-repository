@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libjcat-tests_0.1.9-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libjcat-tests"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libglib2-0-0" {>= "2.61.2"}
+  "deb-libgnutls30" {>= "3.7.0"}
+  "deb-libgpg-error0" {>= "1.14"}
+  "deb-libgpgme11" {>= "1.2.0"}
+  "deb-libjcat1" {= "0.1.9-1"}
+  "deb-libjson-glib-1-0-0" {>= "1.5.2"}
+  "deb-shared-mime-info"
+]
+extra-source "libjcat-tests_0.1.9-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libj/libjcat/libjcat-tests_0.1.9-1_amd64.deb"
+}

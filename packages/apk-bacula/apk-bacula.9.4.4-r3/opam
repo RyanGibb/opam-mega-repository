@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add bacula-9.4.4-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del bacula"]
+]
+depends: [
+  "apk-bacula-libs" {= "9.4.4-r3"}
+  "apk-busybox" {= "1.31.1-r22"}
+  "apk-libstdc++" {= "9.3.0-r2"}
+  "apk-lzo" {= "2.10-r2"}
+  "apk-musl" {= "1.1.24-r10"}
+  "apk-zlib" {= "1.2.12-r3"}
+]
+extra-source "bacula-9.4.4-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/bacula-9.4.4-r3.apk"
+}

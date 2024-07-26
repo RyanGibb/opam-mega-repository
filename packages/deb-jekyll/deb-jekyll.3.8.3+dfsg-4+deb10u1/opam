@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i jekyll_3.8.3+dfsg-4+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r jekyll"]
+]
+depends: [
+  "deb-bundler"
+  "deb-ruby-addressable"
+  "deb-ruby-classifier-reborn"
+  "deb-ruby-colorator"
+  "deb-ruby-em-websocket"
+  "deb-ruby-i18n"
+  "deb-ruby-jekyll-coffeescript" {>= "1.0.1-2~"}
+  "deb-ruby-jekyll-feed"
+  "deb-ruby-jekyll-gist"
+  "deb-ruby-jekyll-paginate"
+  "deb-ruby-jekyll-sass-converter"
+  "deb-ruby-jekyll-watch"
+  "deb-ruby-kramdown"
+  "deb-ruby-launchy-shim"
+  "deb-ruby-liquid"
+  "deb-ruby-mercenary"
+  "deb-ruby-mime-types"
+  "deb-ruby-pathutil"
+  "deb-ruby-pygments-rb"
+  "deb-ruby-rdiscount"
+  "deb-ruby-redcarpet"
+  "deb-ruby-rouge"
+  "deb-ruby-safe-yaml"
+  "deb-ruby-toml" {>= "0.1.2-2~"}
+  "deb-xdg-utils"
+  ("deb-ruby" | "deb- ruby-interpreter")
+]
+extra-source "jekyll_3.8.3+dfsg-4+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/j/jekyll/jekyll_3.8.3+dfsg-4+deb10u1_all.deb"
+}

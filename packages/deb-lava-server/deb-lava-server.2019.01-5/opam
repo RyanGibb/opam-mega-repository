@@ -1,0 +1,49 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lava-server_2019.01-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lava-server"]
+]
+depends: [
+  "deb-adduser"
+  "deb-apache2"
+  "deb-gunicorn3"
+  "deb-iproute2"
+  "deb-lava-common" {>= "2019.01-5"}
+  "deb-libjs-excanvas"
+  "deb-libjs-jquery"
+  "deb-libjs-jquery-cookie"
+  "deb-libjs-jquery-flot" {>= "0.8.2"}
+  "deb-libjs-jquery-typeahead"
+  "deb-libjs-jquery-ui"
+  "deb-libjs-jquery-watermark"
+  "deb-postgresql"
+  "deb-postgresql-client"
+  "deb-postgresql-common"
+  "deb-python3-any" {>= "3.5~"}
+  "deb-python3-dateutil"
+  "deb-python3-django" {>= "1.10"}
+  "deb-python3-django-auth-ldap" {>= "1.2.12"}
+  "deb-python3-django-restricted-resource" {>= "2016.8"}
+  "deb-python3-django-tables2" {>= "1.14.2"}
+  "deb-python3-djangorestframework"
+  "deb-python3-docutils"
+  "deb-python3-jinja2"
+  "deb-python3-junit-xml"
+  "deb-python3-nose"
+  "deb-python3-psycopg2"
+  "deb-python3-requests"
+  "deb-python3-setuptools"
+  "deb-python3-simplejson"
+  "deb-python3-tap"
+  "deb-python3-tz"
+  "deb-python3-voluptuous" {>= "0.8.8"}
+  "deb-python3-yaml"
+  "deb-python3-zmq"
+  "deb-systemd-sysv"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "lava-server_2019.01-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lava/lava-server_2019.01-5_all.deb"
+}

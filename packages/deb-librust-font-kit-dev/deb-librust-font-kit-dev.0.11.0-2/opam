@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-font-kit-dev_0.11.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-font-kit-dev"]
+]
+depends: [
+  "deb-librust-bitflags-1+default-dev"
+  "deb-librust-byteorder-dev"
+  "deb-librust-dirs-next-2+default-dev"
+  "deb-librust-float-ord-0-3+default-dev"
+  "deb-librust-freetype-0-7+default-dev"
+  "deb-librust-lazy-static-dev"
+  "deb-librust-libc-0-2+default-dev"
+  "deb-librust-log-dev"
+  "deb-librust-pathfinder-geometry-0-5+default-dev"
+  "deb-librust-pathfinder-simd-dev"
+  "deb-librust-walkdir-dev"
+  "deb-librust-yeslogic-fontconfig-sys-3+default-dev"
+  "deb-librust-yeslogic-fontconfig-sys-3+dlopen-dev"
+]
+extra-source "librust-font-kit-dev_0.11.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-font-kit/librust-font-kit-dev_0.11.0-2_amd64.deb"
+}

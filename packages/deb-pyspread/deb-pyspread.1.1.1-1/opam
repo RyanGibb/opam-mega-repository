@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pyspread_1.1.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pyspread"]
+]
+depends: [
+  "deb-gir1-2-pango-1-0"
+  "deb-libcairo-gobject2"
+  "deb-libpangocairo-1-0-0"
+  "deb-python-any" {>= "2.7"}
+  "deb-python-cairo"
+  "deb-python-gnupg"
+  "deb-python-gtk2"
+  "deb-python-matplotlib"
+  "deb-python-numpy" {>= "1-1.1.0"}
+  "deb-python-wxgtk3-0"
+]
+extra-source "pyspread_1.1.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pyspread/pyspread_1.1.1-1_all.deb"
+}

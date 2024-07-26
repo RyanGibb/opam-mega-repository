@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcohttp-lwt-unix-ocaml_4.0.0-3+b5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcohttp-lwt-unix-ocaml"]
+]
+depends: [
+  "deb-libangstrom-ocaml"
+  "deb-libcohttp-lwt-ocaml"
+  "deb-libcohttp-ocaml"
+  "deb-libconduit-lwt-ocaml"
+  "deb-libconduit-ocaml"
+  "deb-libdomain-name-ocaml"
+  "deb-libfmt-ocaml"
+  "deb-libipaddr-ocaml"
+  "deb-liblogs-ocaml"
+  "deb-liblwt-ocaml"
+  "deb-libmagic-mime-ocaml"
+  "deb-libsexplib0-ocaml"
+  "deb-liburi-ocaml"
+  "deb-ocaml-base"
+]
+extra-source "libcohttp-lwt-unix-ocaml_4.0.0-3+b5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/ocaml-cohttp/libcohttp-lwt-unix-ocaml_4.0.0-3+b5_amd64.deb"
+}

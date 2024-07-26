@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add clang16-extra-tools-16.0.6-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del clang16-extra-tools"]
+]
+depends: [
+  "apk-clang16" {= "16.0.6-r1"}
+  "apk-clang16-libclang" {= "16.0.6-r1"}
+  "apk-clang16-libs" {= "16.0.6-r1"}
+  "apk-libgcc" {= "12.2.1_git20220924-r10"}
+  "apk-libstdc++" {= "12.2.1_git20220924-r10"}
+  "apk-libxml2" {= "2.11.8-r0"}
+  "apk-llvm16-libs" {= "16.0.6-r1"}
+  "apk-musl" {= "1.2.4-r2"}
+]
+extra-source "clang16-extra-tools-16.0.6-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/clang16-extra-tools-16.0.6-r1.apk"
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mariadb-client-10.6.14-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mariadb-client"]
+]
+depends: [
+  "apk-libcrypto1-1" {= "1.1.1w-r1"}
+  "apk-libgcc" {= "10.3.1_git20211027-r0"}
+  "apk-libssl1-1" {= "1.1.1w-r1"}
+  "apk-libstdc++" {= "10.3.1_git20211027-r0"}
+  "apk-mariadb-common" {= "10.6.14-r0"}
+  "apk-musl" {= "1.2.2-r9"}
+  "apk-ncurses-libs" {= "6.3_p20211120-r2"}
+  "apk-zlib" {= "1.2.12-r3"}
+]
+extra-source "mariadb-client-10.6.14-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/mariadb-client-10.6.14-r0.apk"
+}

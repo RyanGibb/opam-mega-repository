@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gitolite-3.6.12-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gitolite"]
+]
+depends: [
+  "apk-git" {= "2.40.1-r0"}
+  "apk-perl" {= "5.36.2-r0"}
+  ("apk-busybox-binsh" {= "1.36.1-r7"} | "apk-dash-binsh" {= "0.5.12-r2"} | "apk-yash-binsh" {= "2.54-r3"})
+]
+extra-source "gitolite-3.6.12-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/gitolite-3.6.12-r2.apk"
+}

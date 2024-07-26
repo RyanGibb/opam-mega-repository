@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgrib-api-tools_1.28.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgrib-api-tools"]
+]
+depends: [
+  "deb-libc6" {>= "2.7"}
+  "deb-libeccodes-data"
+  "deb-libgrib-api0" {>= "1.14.3"}
+  "deb-libnetcdf13" {>= "3.6.1"}
+]
+conflicts: [
+  "deb-libeccodes-dev"
+]
+extra-source "libgrib-api-tools_1.28.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/grib-api/libgrib-api-tools_1.28.0-2_amd64.deb"
+}

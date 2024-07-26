@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-fontmake_1.8.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-fontmake"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-booleanoperations" {>= "0.8.1"}
+  "deb-python3-cu2qu" {>= "1.6.5"}
+  "deb-python3-defcon" {>= "0.6.0"}
+  "deb-python3-fonttools" {>= "3.32.0"}
+  "deb-python3-glyphslib" {>= "3.1.3"}
+  "deb-python3-mutatormath" {>= "2.1.2"}
+  "deb-python3-ufo2ft" {>= "2.5.0"}
+  "deb-ttfautohint"
+]
+extra-source "python3-fontmake_1.8.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fontmake/python3-fontmake_1.8.0-1_all.deb"
+}

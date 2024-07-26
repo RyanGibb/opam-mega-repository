@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgyoto8_1.4.4-3+b6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgyoto8"]
+]
+depends: [
+  "deb-libboost-mpi1-74-0" {>= "1.74.0"}
+  "deb-libboost-serialization1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libcfitsio9" {>= "3.480~"}
+  "deb-libflint-arb2" {>= "1-2.19.0"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-liblorene-debian1"
+  "deb-libstdc++6" {>= "9"}
+  "deb-libudunits2-0" {>= "2.2.14"}
+  "deb-libxerces-c3-2"
+  "deb-python3-numpy"
+  "deb-python3-numpy" {>= "1-1.16.0~rc1"}
+]
+extra-source "libgyoto8_1.4.4-3+b6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gyoto/libgyoto8_1.4.4-3+b6_amd64.deb"
+}

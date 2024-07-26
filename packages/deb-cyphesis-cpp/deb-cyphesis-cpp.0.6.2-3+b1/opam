@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cyphesis-cpp_0.6.2-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cyphesis-cpp"]
+]
+depends: [
+  "deb-adduser"
+  "deb-cyphesis-cpp-clients"
+  "deb-cyphesis-cpp-mason"
+  "deb-debconf"
+  "deb-libatlas-cpp-0-6-3" {>= "0.6.3"}
+  "deb-libavahi-client3" {>= "0.6.16"}
+  "deb-libavahi-common3" {>= "0.6.16"}
+  "deb-libbullet2-87"
+  "deb-libc6" {>= "2.27"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgcrypt20" {>= "1.8.0"}
+  "deb-libmercator-0-3-4" {>= "0.3.0"}
+  "deb-libpq5"
+  "deb-libpython2-7" {>= "2.7"}
+  "deb-libsigc++-2-0-0v5" {>= "2.8.0"}
+  "deb-libskstream-0-3-7v5" {>= "0.3.9"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libvarconf-1-0-8v5" {>= "1.0.0"}
+  "deb-libwfmath-1-0-1v5" {>= "1.0.0"}
+  "deb-lsb-base"
+  "deb-postgresql"
+]
+extra-source "cyphesis-cpp_0.6.2-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cyphesis-cpp/cyphesis-cpp_0.6.2-3+b1_amd64.deb"
+}

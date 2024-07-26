@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i glewlwyd_1.4.9-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r glewlwyd"]
+]
+depends: [
+  "deb-glewlwyd-common"
+  "deb-libc6" {>= "2.4"}
+  "deb-libconfig9"
+  "deb-libgnutls30" {>= "3.6.5"}
+  "deb-libhoel1-4" {>= "1.4.2"}
+  "deb-libjansson4" {>= "2.7"}
+  "deb-libjwt0" {>= "1.9.0"}
+  "deb-libldap-2-4-2" {>= "2.4.7"}
+  "deb-libmicrohttpd12" {>= "0.9.50"}
+  "deb-liborcania1-2" {>= "1.2.2"}
+  "deb-libulfius2-5" {>= "2.5.0"}
+  "deb-libuuid1" {>= "2.16"}
+  "deb-libyder2-0" {>= "1.3.3"}
+  "deb-lsb-base" {>= "3.0-6"}
+  "deb-openssl"
+  "deb-sqlite3"
+  "deb-ucf"
+  ("deb-dbconfig-mysql" | "deb- dbconfig-sqlite3" | "deb- dbconfig-no-thanks")
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "glewlwyd_1.4.9-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/glewlwyd/glewlwyd_1.4.9-1_amd64.deb"
+}

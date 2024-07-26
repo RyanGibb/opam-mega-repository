@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i biabam_0.9.7-7.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r biabam"]
+]
+depends: [
+  "deb-bash" {>= "2"}
+  "deb-sharutils"
+  ("deb-exim4" | "deb- mail-transport-agent")
+]
+extra-source "biabam_0.9.7-7.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/biabam/biabam_0.9.7-7.2_all.deb"
+}

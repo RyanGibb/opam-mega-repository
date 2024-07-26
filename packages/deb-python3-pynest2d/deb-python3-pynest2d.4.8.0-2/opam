@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-pynest2d_4.8.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-pynest2d"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libnlopt0" {>= "2.6.1"}
+  "deb-libpolyclipping22" {>= "6.4.2"}
+  "deb-libpython3-9" {>= "3.9.0~b4"}
+  "deb-libstdc++6" {>= "7"}
+  "deb-python3" {< "3.10"}
+  "deb-python3" {>= "3.9~"}
+  "deb-python3-sip"
+]
+extra-source "python3-pynest2d_4.8.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pynest2d/python3-pynest2d_4.8.0-2_amd64.deb"
+}

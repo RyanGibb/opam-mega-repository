@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i graphicsmagick-libmagick-dev-compat_1.4+really1.3.36+hg16481-2+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r graphicsmagick-libmagick-dev-compat"]
+]
+depends: [
+  "deb-libgraphics-magick-perl"
+  "deb-libgraphicsmagick++1-dev"
+  "deb-libgraphicsmagick1-dev"
+]
+conflicts: [
+  "deb-libmagick++-dev"
+  "deb-libmagick++6-dev"
+  "deb-libmagick++9-dev"
+  "deb-libmagick-dev"
+  "deb-libmagick6-dev"
+  "deb-libmagick9-dev"
+  "deb-libmagickcore-dev"
+  "deb-perlmagick"
+]
+extra-source "graphicsmagick-libmagick-dev-compat_1.4+really1.3.36+hg16481-2+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/graphicsmagick/graphicsmagick-libmagick-dev-compat_1.4+really1.3.36+hg16481-2+deb11u1_all.deb"
+}

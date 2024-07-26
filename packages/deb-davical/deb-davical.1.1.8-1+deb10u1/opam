@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i davical_1.1.8-1+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r davical"]
+]
+depends: [
+  "deb-libawl-php" {< "0.61"}
+  "deb-libawl-php" {>= "0.60-1~"}
+  "deb-libdbd-pg-perl"
+  "deb-libyaml-perl"
+  "deb-perl-any"
+  "deb-postgresql-client"
+  ("deb-php" | "deb- php5")
+  ("deb-php-cli" | "deb- php5-cli")
+  ("deb-php-pgsql" | "deb- php5-pgsql")
+  ("deb-php-xml" | "deb- php5")
+]
+extra-source "davical_1.1.8-1+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/davical/davical_1.1.8-1+deb10u1_all.deb"
+}

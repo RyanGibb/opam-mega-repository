@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i octave-sparsersb_1.0.6-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r octave-sparsersb"]
+]
+depends: [
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libgcc1" {>= "1-4.0"}
+  "deb-libgomp1" {>= "4.2.1"}
+  "deb-liboctave6"
+  "deb-librsb0"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-octave" {>= "4.4.1"}
+]
+extra-source "octave-sparsersb_1.0.6-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/octave-sparsersb/octave-sparsersb_1.0.6-2_amd64.deb"
+}

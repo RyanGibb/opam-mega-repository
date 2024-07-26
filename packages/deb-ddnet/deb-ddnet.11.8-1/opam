@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ddnet_11.8-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ddnet"]
+]
+depends: [
+  "deb-ddnet-data" {>= "11.8-1"}
+  "deb-libc6" {>= "2.27"}
+  "deb-libcurl4" {>= "7.16.2"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgl1"
+  "deb-libglew2-1" {>= "1.12.0"}
+  "deb-libmd0" {>= "1.0.1"}
+  "deb-libopusfile0" {>= "0.5"}
+  "deb-libpnglite0" {>= "0.1.17"}
+  "deb-libsdl2-2-0-0" {>= "2.0.9"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libwavpack1" {>= "4.40.0"}
+  "deb-libwebsockets8" {>= "1.6.0"}
+  "deb-libx11-6"
+  "deb-zlib1g" {>= "1-1.2.0"}
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+extra-source "ddnet_11.8-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/ddnet/ddnet_11.8-1_amd64.deb"
+}

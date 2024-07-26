@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdancer-session-cookie-perl_0.30-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdancer-session-cookie-perl"]
+]
+depends: [
+  "deb-libcrypt-cbc-perl"
+  "deb-libcrypt-rijndael-perl"
+  "deb-libdancer-perl"
+  "deb-libperlx-maybe-perl"
+  "deb-libsession-storage-secure-perl" {>= "1.000"}
+  "deb-libstring-crc32-perl"
+  "deb-libtime-duration-parse-perl"
+  "deb-perl-any"
+]
+extra-source "libdancer-session-cookie-perl_0.30-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libd/libdancer-session-cookie-perl/libdancer-session-cookie-perl_0.30-4_all.deb"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cmdtest_0.32.14.gcdfe14e-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cmdtest"]
+]
+depends: [
+  "deb-python3"
+  "deb-python3-any"
+  "deb-python3-cliapp"
+  "deb-python3-markdown"
+  "deb-python3-ttystatus"
+]
+extra-source "cmdtest_0.32.14.gcdfe14e-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cmdtest/cmdtest_0.32.14.gcdfe14e-5_all.deb"
+}

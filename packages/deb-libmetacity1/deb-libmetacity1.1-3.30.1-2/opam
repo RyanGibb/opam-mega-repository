@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmetacity1_1:3.30.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmetacity1"]
+]
+depends: [
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.4"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.55.2"}
+  "deb-libgtk-3-0" {>= "3.22.0"}
+  "deb-libpango-1-0-0" {>= "1.22.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-metacity-common" {= "1-3.30.1-2"}
+]
+extra-source "libmetacity1_1:3.30.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/metacity/libmetacity1_3.30.1-2_amd64.deb"
+}

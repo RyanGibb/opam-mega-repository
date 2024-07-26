@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add cdparanoia-dev-10.2-r14.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del cdparanoia-dev"]
+]
+depends: [
+  "apk-cdparanoia-libs" {= "10.2-r14"}
+]
+extra-source "cdparanoia-dev-10.2-r14.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/cdparanoia-dev-10.2-r14.apk"
+}

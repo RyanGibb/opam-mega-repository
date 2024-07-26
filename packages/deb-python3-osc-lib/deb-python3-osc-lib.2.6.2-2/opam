@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-osc-lib_2.6.2-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-osc-lib"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-cliff"
+  "deb-python3-keystoneauth1"
+  "deb-python3-openstacksdk"
+  "deb-python3-oslo-i18n"
+  "deb-python3-oslo-utils"
+  "deb-python3-pbr"
+  "deb-python3-simplejson"
+  "deb-python3-stevedore"
+]
+extra-source "python3-osc-lib_2.6.2-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-osc-lib/python3-osc-lib_2.6.2-2_all.deb"
+}

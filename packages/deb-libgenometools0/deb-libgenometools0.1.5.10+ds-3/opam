@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgenometools0_1.5.10+ds-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgenometools0"]
+]
+depends: [
+  "deb-genometools-common"
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.27"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-liblua5-1-0"
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libsqlite3-0" {>= "3.5.9"}
+  "deb-libtre5"
+  "deb-lua-filesystem"
+  "deb-lua-lpeg"
+  "deb-lua-md5"
+  "deb-zlib1g" {>= "1-1.2.3.3"}
+]
+extra-source "libgenometools0_1.5.10+ds-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/genometools/libgenometools0_1.5.10+ds-3_amd64.deb"
+}

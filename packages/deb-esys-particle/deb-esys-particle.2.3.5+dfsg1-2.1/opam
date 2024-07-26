@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i esys-particle_2.3.5+dfsg1-2.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r esys-particle"]
+]
+depends: [
+  "deb-libboost-filesystem1-67-0"
+  "deb-libboost-python1-67-0"
+  "deb-libboost-system1-67-0"
+  "deb-libc6" {>= "2.27"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libjs-jquery"
+  "deb-libopenmpi3"
+  "deb-libpython2-7" {>= "2.7"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-mpi-default-bin"
+  "deb-python"
+  "deb-python-demgengeo"
+]
+extra-source "esys-particle_2.3.5+dfsg1-2.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/esys-particle/esys-particle_2.3.5+dfsg1-2.1_amd64.deb"
+}

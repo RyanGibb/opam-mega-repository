@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libslurm-dev_18.08.5.2-1+deb10u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libslurm-dev"]
+]
+depends: [
+  "deb-libslurm33" {= "18.08.5.2-1+deb10u2"}
+]
+conflicts: [
+  "deb-libslurm10-dev"
+  "deb-libslurm11-dev"
+  "deb-libslurm12-dev"
+  "deb-libslurm13-dev"
+  "deb-libslurm20-dev"
+  "deb-libslurm21-dev"
+]
+extra-source "libslurm-dev_18.08.5.2-1+deb10u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/slurm-llnl/libslurm-dev_18.08.5.2-1+deb10u2_amd64.deb"
+}

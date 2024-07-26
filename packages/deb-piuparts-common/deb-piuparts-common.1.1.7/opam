@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i piuparts-common_1.1.7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r piuparts-common"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-apt"
+  "deb-python3-distro-info"
+  "deb-python3-six"
+  "deb-python3-urllib3"
+]
+extra-source "piuparts-common_1.1.7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/piuparts/piuparts-common_1.1.7_all.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add pcre2-tools-10.43-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del pcre2-tools"]
+]
+depends: [
+  "apk-libedit" {= "20240517.3.1-r0"}
+  "apk-libpcre2-16" {= "10.43-r0"}
+  "apk-libpcre2-32" {= "10.43-r0"}
+  "apk-musl" {= "1.2.5-r0"}
+  "apk-pcre2" {= "10.43-r0"}
+  "apk-zlib" {= "1.3.1-r1"}
+]
+extra-source "pcre2-tools-10.43-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/pcre2-tools-10.43-r0.apk"
+}

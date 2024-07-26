@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gettext_0.21-12_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gettext"]
+]
+depends: [
+  "deb-gettext-base"
+  "deb-libc6" {>= "2.34"}
+  "deb-libgomp1" {>= "6"}
+  "deb-libunistring2" {>= "1.0"}
+  "deb-libxml2" {>= "2.9.1"}
+]
+extra-source "gettext_0.21-12_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gettext/gettext_0.21-12_amd64.deb"
+}

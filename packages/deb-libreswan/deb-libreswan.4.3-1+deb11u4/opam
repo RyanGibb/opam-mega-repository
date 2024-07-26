@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libreswan_4.3-1+deb11u4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libreswan"]
+]
+depends: [
+  "deb-bind9-host"
+  "deb-dns-root-data"
+  "deb-iptables"
+  "deb-libaudit1" {>= "1-2.2.1"}
+  "deb-libc6" {>= "2.27"}
+  "deb-libcap-ng0" {>= "0.7.9"}
+  "deb-libcrypt1" {>= "1-4.1.0"}
+  "deb-libcurl3-nss" {>= "7.23.1"}
+  "deb-libevent-2-1-7" {>= "2.1.8-stable"}
+  "deb-libevent-pthreads-2-1-7" {>= "2.1.8-stable"}
+  "deb-libldap-2-4-2" {>= "2.4.7"}
+  "deb-libldns3" {>= "1.7.1"}
+  "deb-libnspr4" {>= "2-4.9-2~"}
+  "deb-libnss3" {>= "2-3.30"}
+  "deb-libnss3-tools"
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-libselinux1" {>= "3.1~"}
+  "deb-libsystemd0"
+  "deb-libunbound8" {>= "1.8.0"}
+  ("deb-iproute2" | "deb- iproute" {>= "20071016"})
+]
+conflicts: [
+  "deb-ike-server"
+  "deb-strongswan-libcharon"
+  "deb-strongswan-starter"
+]
+extra-source "libreswan_4.3-1+deb11u4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libr/libreswan/libreswan_4.3-1+deb11u4_amd64.deb"
+}

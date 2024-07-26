@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add keyutils-dev-1.6.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del keyutils-dev"]
+]
+depends: [
+  "apk-keyutils-libs" {= "1.6.1-r1"}
+  "apk-pkgconf" {= "1.7.2-r0"}
+]
+extra-source "keyutils-dev-1.6.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/keyutils-dev-1.6.1-r1.apk"
+}

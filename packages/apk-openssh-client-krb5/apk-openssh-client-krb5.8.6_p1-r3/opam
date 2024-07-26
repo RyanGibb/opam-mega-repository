@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openssh-client-krb5-8.6_p1-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openssh-client-krb5"]
+]
+depends: [
+  "apk-krb5-libs" {= "1.18.5-r0"}
+  "apk-libcrypto1-1" {= "1.1.1t-r2"}
+  "apk-musl" {= "1.2.2-r5"}
+  "apk-openssh-client-common" {= "8.6_p1-r3"}
+  "apk-openssh-keygen" {= "8.6_p1-r3"}
+  "apk-zlib" {= "1.2.12-r3"}
+]
+conflicts: [
+  "openssh-client-default"
+]
+extra-source "openssh-client-krb5-8.6_p1-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/openssh-client-krb5-8.6_p1-r3.apk"
+}

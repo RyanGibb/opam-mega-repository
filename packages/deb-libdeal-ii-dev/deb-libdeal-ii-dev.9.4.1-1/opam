@@ -1,0 +1,43 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdeal.ii-dev_9.4.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdeal.ii-dev"]
+]
+depends: [
+  "deb-libadolc-dev" {>= "2.6.4"}
+  "deb-libarpack2-dev"
+  "deb-libassimp-dev"
+  "deb-libboost-iostreams-dev"
+  "deb-libboost-math-dev"
+  "deb-libboost-serialization-dev"
+  "deb-libboost-system-dev"
+  "deb-libboost-thread-dev"
+  "deb-libcgal-dev"
+  "deb-libdeal-ii-9-4-1" {= "9.4.1-1"}
+  "deb-libgmsh-dev"
+  "deb-libgsl-dev"
+  "deb-libhdf5-dev"
+  "deb-libhdf5-mpi-dev"
+  "deb-liblapack-dev"
+  "deb-libmetis-dev"
+  "deb-libmuparser-dev"
+  "deb-libocct-data-exchange-dev"
+  "deb-libocct-foundation-dev"
+  "deb-libocct-ocaf-dev"
+  "deb-libocct-visualization-dev"
+  "deb-libp4est-dev" {>= "2.0"}
+  "deb-libscalapack-mpi-dev"
+  "deb-libsuitesparse-dev"
+  "deb-libsundials-dev" {>= "5.7.0"}
+  "deb-libtbb-dev"
+  "deb-mpi-default-dev"
+  "deb-petsc-dev"
+  "deb-slepc-dev"
+  "deb-trilinos-all-dev"
+  "deb-zlib1g-dev"
+]
+extra-source "libdeal.ii-dev_9.4.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/deal.ii/libdeal.ii-dev_9.4.1-1_amd64.deb"
+}

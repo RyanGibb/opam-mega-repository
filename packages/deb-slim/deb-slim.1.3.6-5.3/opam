@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i slim_1.3.6-5.3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r slim"]
+]
+depends: [
+  "deb-dbus"
+  "deb-libc6" {>= "2.33"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxft2" {> "2.1.1"}
+  "deb-libxmu6"
+  "deb-libxrandr2" {>= "2-1.2.99.3"}
+  "deb-sysvinit-utils"
+  ("deb-debconf" {>= "1.2.9"} | "deb- debconf-2-0")
+]
+extra-source "slim_1.3.6-5.3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/slim/slim_1.3.6-5.3_amd64.deb"
+}

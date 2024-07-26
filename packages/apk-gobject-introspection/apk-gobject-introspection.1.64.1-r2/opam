@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gobject-introspection-1.64.1-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gobject-introspection"]
+]
+depends: [
+  "apk-glib" {= "2.64.6-r0"}
+  "apk-libffi" {= "3.3-r2"}
+  "apk-musl" {= "1.1.24-r10"}
+]
+extra-source "gobject-introspection-1.64.1-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/gobject-introspection-1.64.1-r2.apk"
+}

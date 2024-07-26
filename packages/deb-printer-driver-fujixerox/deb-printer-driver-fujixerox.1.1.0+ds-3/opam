@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i printer-driver-fujixerox_1.1.0+ds-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r printer-driver-fujixerox"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libcups2" {>= "1.4.0"}
+  "deb-python3"
+  "deb-xz-utils"
+]
+extra-source "printer-driver-fujixerox_1.1.0+ds-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fxlinuxprint/printer-driver-fujixerox_1.1.0+ds-3_amd64.deb"
+}

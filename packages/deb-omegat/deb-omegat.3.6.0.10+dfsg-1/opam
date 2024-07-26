@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i omegat_3.6.0.10+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r omegat"]
+]
+depends: [
+  "deb-antlr4"
+  "deb-groovy"
+  "deb-libactivation-java"
+  "deb-libcommons-io-java"
+  "deb-libcommons-lang-java"
+  "deb-libcommons-logging-java"
+  "deb-libdictzip-java"
+  "deb-libhtmlparser-java"
+  "deb-libjaxb-api-java"
+  "deb-libjaxb-java"
+  "deb-libjgit-java"
+  "deb-libjna-java"
+  "deb-libjsch-java"
+  "deb-libjuniversalchardet-java"
+  "deb-liblucene3-contrib-java"
+  "deb-liblucene3-java"
+  "deb-libpdfbox-java"
+  "deb-libsequence-library-java"
+  "deb-libslf4j-java"
+  "deb-libswing-layout-java"
+  "deb-libvldocking-java"
+  ("deb-default-jre" | "deb- java-runtime")
+]
+extra-source "omegat_3.6.0.10+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/omegat/omegat_3.6.0.10+dfsg-1_all.deb"
+}

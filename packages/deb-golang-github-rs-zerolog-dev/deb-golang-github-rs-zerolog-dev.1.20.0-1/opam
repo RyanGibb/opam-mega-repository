@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-rs-zerolog-dev_1.20.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-rs-zerolog-dev"]
+]
+depends: [
+  "deb-golang-github-coreos-go-systemd-dev"
+  "deb-golang-github-pkg-errors-dev"
+  "deb-golang-github-rs-xid-dev"
+  "deb-golang-github-zenazn-goji-dev"
+  "deb-golang-golang-x-tools-dev"
+]
+extra-source "golang-github-rs-zerolog-dev_1.20.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-rs-zerolog/golang-github-rs-zerolog-dev_1.20.0-1_all.deb"
+}

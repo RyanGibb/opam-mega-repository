@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmshr2019.2_2019.2.0~git20200924.c27eb18+dfsg1-7+b4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmshr2019.2"]
+]
+depends: [
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libdolfin2019-2" {>= "2019.2.0~git20221205.588d3ac"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-libmpfr6" {>= "3.1.3"}
+  "deb-libopenmpi3" {>= "4.1.4"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libtet1-5"
+]
+extra-source "libmshr2019.2_2019.2.0~git20200924.c27eb18+dfsg1-7+b4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mshr/libmshr2019.2_2019.2.0~git20200924.c27eb18+dfsg1-7+b4_amd64.deb"
+}

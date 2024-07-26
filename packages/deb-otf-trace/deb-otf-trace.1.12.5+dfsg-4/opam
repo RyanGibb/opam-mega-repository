@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i otf-trace_1.12.5+dfsg-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r otf-trace"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libopen-trace-format1"
+  "deb-libopenmpi3"
+  "deb-libotfaux0"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+conflicts: [
+  "deb-lcdf-typetools"
+  "deb-libotf-bin"
+]
+extra-source "otf-trace_1.12.5+dfsg-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/otf/otf-trace_1.12.5+dfsg-4_amd64.deb"
+}

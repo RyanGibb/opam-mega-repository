@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add dhcrelay-4.4.3_p1-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del dhcrelay"]
+]
+depends: [
+  "apk-libgcc" {= "12.2.1_git20220924-r10"}
+  "apk-musl" {= "1.2.4-r2"}
+  ("apk-busybox-binsh" {= "1.36.1-r7"} | "apk-dash-binsh" {= "0.5.12-r2"} | "apk-yash-binsh" {= "2.54-r3"})
+]
+extra-source "dhcrelay-4.4.3_p1-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/dhcrelay-4.4.3_p1-r2.apk"
+}

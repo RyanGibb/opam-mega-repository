@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i staden_2.0.0+b11-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r staden"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-liblzma5" {>= "5.1.1alpha+20120614"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libstaden-read14" {>= "1.14.12"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libtcl8-6" {>= "8.6.0"}
+  "deb-libtk8-6" {>= "8.6.0"}
+  "deb-libx11-6"
+  "deb-staden-common" {= "2.0.0+b11-4"}
+  "deb-staden-io-lib-utils"
+  "deb-tklib"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "staden_2.0.0+b11-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/staden/staden_2.0.0+b11-4+b1_amd64.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdist-zilla-plugin-twitter-perl_0.026-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdist-zilla-plugin-twitter-perl"]
+]
+depends: [
+  "deb-libconfig-ini-perl"
+  "deb-libdist-zilla-perl"
+  "deb-libmoose-perl"
+  "deb-libnamespace-autoclean-perl"
+  "deb-libnet-twitter-perl"
+  "deb-libtry-tiny-perl"
+  "deb-libwww-shorten-perl"
+  "deb-libwww-shorten-simple-perl"
+  "deb-perl-any"
+]
+extra-source "libdist-zilla-plugin-twitter-perl_0.026-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libd/libdist-zilla-plugin-twitter-perl/libdist-zilla-plugin-twitter-perl_0.026-3_all.deb"
+}

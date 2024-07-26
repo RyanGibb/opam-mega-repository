@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sigil_1.9.20+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sigil"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libhunspell-1-7-0"
+  "deb-libhunspell-dev"
+  "deb-libjs-jquery-scrollto"
+  "deb-libminizip1" {>= "1.1"}
+  "deb-libpcre2-16-0" {>= "10.22"}
+  "deb-libpython3-11" {>= "3.11.0"}
+  "deb-libqt5concurrent5" {>= "5.6.0~rc"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5printsupport5" {>= "5.0.2"}
+  "deb-libqt5webenginecore5" {>= "5.12.2"}
+  "deb-libqt5webenginewidgets5" {>= "5.14.1"}
+  "deb-libqt5widgets5" {>= "5.14.1"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-python3-dulwich"
+  "deb-python3-lxml"
+  "deb-sigil-data" {< "1.9.20+dfsg-2+"}
+  "deb-sigil-data" {>= "1.9.20+dfsg-2"}
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "sigil_1.9.20+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sigil/sigil_1.9.20+dfsg-2_amd64.deb"
+}

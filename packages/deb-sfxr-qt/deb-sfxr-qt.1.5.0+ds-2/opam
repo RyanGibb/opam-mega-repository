@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sfxr-qt_1.5.0+ds-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sfxr-qt"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5qml5" {>= "5.9.0~beta"}
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-libsdl1-2-compat-shim"
+  "deb-libstdc++6" {>= "11"}
+  "deb-qml-module-qtquick-controls"
+  "deb-qml-module-qtquick-controls2"
+  "deb-qml-module-qtquick-dialogs"
+  "deb-qml-module-qtquick-extras"
+  "deb-qml-module-qtquick-layouts"
+  "deb-qml-module-qtquick-window2"
+  "deb-qml-module-qtquick2"
+  ("deb-libqt5gui5" {>= "5.2.0"} | "deb- libqt5gui5-gles" {>= "5.2.0"})
+  ("deb-libqt5quick5" {>= "5.6.1"} | "deb- libqt5quick5-gles" {>= "5.6.1"})
+]
+extra-source "sfxr-qt_1.5.0+ds-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sfxr-qt/sfxr-qt_1.5.0+ds-2_amd64.deb"
+}

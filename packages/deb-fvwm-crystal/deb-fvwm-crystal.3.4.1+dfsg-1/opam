@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fvwm-crystal_3.4.1+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fvwm-crystal"]
+]
+depends: [
+  "deb-fvwm" {>= "1-2.5.13"}
+  "deb-gawk"
+  "deb-hsetroot"
+  "deb-imagemagick"
+  "deb-python"
+  "deb-xdg-user-dirs"
+  ("deb-rxvt-unicode" | "deb- x-terminal-emulator")
+  ("deb-trayer" | "deb- stalonetray")
+]
+extra-source "fvwm-crystal_3.4.1+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fvwm-crystal/fvwm-crystal_3.4.1+dfsg-1_all.deb"
+}

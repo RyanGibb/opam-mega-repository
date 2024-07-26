@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libimobiledevice-dev_1.2.1~git20181030.92c5462-2+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libimobiledevice-dev"]
+]
+depends: [
+  "deb-libgcrypt20-dev"
+  "deb-libglib2-0-dev"
+  "deb-libgnutls28-dev"
+  "deb-libimobiledevice6" {= "1.2.1~git20181030.92c5462-2+deb10u1"}
+  "deb-libplist-dev"
+  "deb-libtasn1-6-dev"
+  "deb-libusbmuxd-dev"
+]
+extra-source "libimobiledevice-dev_1.2.1~git20181030.92c5462-2+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libi/libimobiledevice/libimobiledevice-dev_1.2.1~git20181030.92c5462-2+deb10u1_amd64.deb"
+}

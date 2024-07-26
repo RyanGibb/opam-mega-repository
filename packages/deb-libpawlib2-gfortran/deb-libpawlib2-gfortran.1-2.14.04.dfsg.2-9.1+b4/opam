@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpawlib2-gfortran_1:2.14.04.dfsg.2-9.1+b4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpawlib2-gfortran"]
+]
+depends: [
+  "deb-gfortran"
+  "deb-libc6" {>= "2.27"}
+  "deb-libgcc1" {>= "1-4.0"}
+  "deb-libgfortran5" {>= "8"}
+  "deb-libgraflib1-gfortran"
+  "deb-libgrafx11-1-gfortran"
+  "deb-libkernlib1-gfortran"
+  "deb-libmathlib2-gfortran"
+  "deb-libpacklib1-gfortran"
+  "deb-libquadmath0" {>= "4.6"}
+  "deb-libx11-6"
+  "deb-netbase" {>= "4.08"}
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "libpawlib2-gfortran_1:2.14.04.dfsg.2-9.1+b4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/paw/libpawlib2-gfortran_2.14.04.dfsg.2-9.1+b4_amd64.deb"
+}

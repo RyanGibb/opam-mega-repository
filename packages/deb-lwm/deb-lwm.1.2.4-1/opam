@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lwm_1.2.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lwm"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libice6" {>= "1-1.0.0"}
+  "deb-libsm6"
+  "deb-libx11-6"
+  "deb-libxext6"
+  ("deb-xterm" | "deb- urxvt" | "deb- rxvt" | "deb- x-terminal-emulator")
+]
+extra-source "lwm_1.2.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lwm/lwm_1.2.4-1_amd64.deb"
+}

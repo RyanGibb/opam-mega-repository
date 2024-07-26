@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdrilbo-dev_0.2.11-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdrilbo-dev"]
+]
+depends: [
+  "deb-libdrilbo-common"
+  "deb-libfizmo-dev"
+  "deb-libjpeg-dev"
+  "deb-libpng-dev"
+  "deb-libx11-dev"
+]
+extra-source "libdrilbo-dev_0.2.11-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libd/libdrilbo/libdrilbo-dev_0.2.11-2_amd64.deb"
+}

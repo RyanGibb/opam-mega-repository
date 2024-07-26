@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i connectagram_1.2.9-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r connectagram"]
+]
+depends: [
+  "deb-connectagram-data" {>= "1.2.9-2"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgl1"
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5gui5" {>= "5.8.0"}
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.2.0"}
+  "deb-libstdc++6" {>= "5.2"}
+]
+extra-source "connectagram_1.2.9-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/connectagram/connectagram_1.2.9-2_amd64.deb"
+}

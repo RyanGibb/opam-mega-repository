@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i nheko_0.8.0+really0.7.2-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r nheko"]
+]
+depends: [
+  "deb-libboost-iostreams1-74-0" {>= "1.74.0"}
+  "deb-libboost-thread1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libcmark0-29-0" {>= "0.29.0"}
+  "deb-libfmt7" {>= "7.1.3+ds1"}
+  "deb-libgcc-s1" {>= "3.3"}
+  "deb-liblmdb0" {>= "0.9.7"}
+  "deb-libolm3" {>= "3.2.1~dfsg"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.10"}
+  "deb-libqt5network5" {>= "5.10"}
+  "deb-libqt5qml5" {>= "5.9.0~beta"}
+  "deb-libqt5quickwidgets5" {>= "5.3.0"}
+  "deb-libqt5widgets5" {>= "5.15.1"}
+  "deb-libsodium23" {>= "1.0.14"}
+  "deb-libspdlog1"
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libstdc++6" {>= "7"}
+  "deb-qml-module-qt-labs-settings"
+  "deb-qml-module-qtgraphicaleffects"
+  "deb-qml-module-qtmultimedia"
+  "deb-qml-module-qtquick-controls2"
+  "deb-qml-module-qtquick-layouts"
+  "deb-qml-module-qtquick-window2"
+  "deb-qml-module-qtquick2"
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5quick5" {>= "5.6.0~beta"} | "deb- libqt5quick5-gles" {>= "5.6.0~beta"})
+]
+extra-source "nheko_0.8.0+really0.7.2-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/nheko/nheko_0.8.0+really0.7.2-4_amd64.deb"
+}

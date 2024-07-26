@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openmpt123_0.6.9-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openmpt123"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libflac12" {>= "1.3.0"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libopenmpt0" {>= "0.5.10"}
+  "deb-libportaudio2" {>= "19+svn20101113"}
+  "deb-libpulse0" {>= "0.99.1"}
+  "deb-libsndfile1" {>= "1.0.20"}
+  "deb-libstdc++6" {>= "11"}
+]
+extra-source "openmpt123_0.6.9-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libo/libopenmpt/openmpt123_0.6.9-1_amd64.deb"
+}

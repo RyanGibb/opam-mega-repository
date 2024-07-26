@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i hylafax-client_3:6.0.7-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r hylafax-client"]
+]
+depends: [
+  "deb-ghostscript"
+  "deb-gsfonts"
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libtiff6" {>= "4.0.3"}
+  "deb-ucf"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-enscript" | "deb- libgnomeprint-data")
+]
+conflicts: [
+  "deb-mgetty-fax"
+]
+extra-source "hylafax-client_3:6.0.7-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/hylafax/hylafax-client_6.0.7-5_amd64.deb"
+}

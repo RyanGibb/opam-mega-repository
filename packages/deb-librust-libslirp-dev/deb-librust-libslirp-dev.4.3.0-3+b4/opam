@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-libslirp-dev_4.3.0-3+b4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-libslirp-dev"]
+]
+depends: [
+  "deb-librust-enumflags2-dev"
+  "deb-librust-ipnetwork-dev"
+  "deb-librust-lazy-static-dev"
+  "deb-librust-libc-0-2+default-dev"
+  "deb-librust-libslirp-sys-dev"
+  "deb-librust-libsystemd-0-2+default-dev"
+  "deb-librust-mio-0-6-dev"
+  "deb-librust-mio-extras-dev"
+  "deb-librust-nix-dev"
+  "deb-librust-slab-0-4+default-dev"
+  "deb-librust-structopt-0-3+default-dev"
+  "deb-librust-url-dev"
+  "deb-librust-zbus-1+default-dev"
+  "deb-librust-zvariant-2+default-dev"
+]
+extra-source "librust-libslirp-dev_4.3.0-3+b4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-libslirp/librust-libslirp-dev_4.3.0-3+b4_amd64.deb"
+}

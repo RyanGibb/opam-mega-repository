@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libxmlrpc-light-ocaml-dev_0.6.1-5+b5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libxmlrpc-light-ocaml-dev"]
+]
+depends: [
+  "deb-libnethttpd-ocaml-dev"
+  "deb-libocamlnet-ocaml"
+  "deb-libocamlnet-ocaml-dev"
+  "deb-libxml-light-ocaml-dev"
+  "deb-ocaml-nox"
+]
+extra-source "libxmlrpc-light-ocaml-dev_0.6.1-5+b5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xmlrpc-light/libxmlrpc-light-ocaml-dev_0.6.1-5+b5_amd64.deb"
+}

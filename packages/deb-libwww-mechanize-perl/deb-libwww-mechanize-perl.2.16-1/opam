@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libwww-mechanize-perl_2.16-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libwww-mechanize-perl"]
+]
+depends: [
+  "deb-libcgi-pm-perl"
+  "deb-libhtml-form-perl" {>= "6.08"}
+  "deb-libhtml-parser-perl"
+  "deb-libhtml-tree-perl"
+  "deb-libhttp-cookies-perl"
+  "deb-libhttp-message-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl" {>= "6.45"}
+  "deb-perl-any"
+]
+extra-source "libwww-mechanize-perl_2.16-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libw/libwww-mechanize-perl/libwww-mechanize-perl_2.16-1_all.deb"
+}

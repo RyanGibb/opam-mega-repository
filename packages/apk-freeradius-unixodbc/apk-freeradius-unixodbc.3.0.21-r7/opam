@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add freeradius-unixodbc-3.0.21-r7.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del freeradius-unixodbc"]
+]
+depends: [
+  "apk-freeradius" {= "3.0.21-r7"}
+  "apk-musl" {= "1.2.2-r2"}
+  "apk-unixodbc" {= "2.3.9-r1"}
+]
+extra-source "freeradius-unixodbc-3.0.21-r7.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/freeradius-unixodbc-3.0.21-r7.apk"
+}

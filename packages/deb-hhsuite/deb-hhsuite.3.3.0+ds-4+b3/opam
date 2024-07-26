@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i hhsuite_3.3.0+ds-4+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r hhsuite"]
+]
+depends: [
+  "deb-hhsuite-data" {= "3.3.0+ds-4"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgomp1" {>= "6"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-perl-any"
+  "deb-python3"
+]
+conflicts: [
+  "deb-ffindex"
+]
+extra-source "hhsuite_3.3.0+ds-4+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/hhsuite/hhsuite_3.3.0+ds-4+b3_amd64.deb"
+}

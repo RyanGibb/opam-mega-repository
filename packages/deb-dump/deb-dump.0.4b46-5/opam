@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dump_0.4b46-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dump"]
+]
+depends: [
+  "deb-libblkid1" {>= "2.16"}
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.15"}
+  "deb-libcom-err2"
+  "deb-libext2fs2"
+  "deb-liblzo2-2"
+  "deb-libreadline7" {>= "6.0"}
+  "deb-libselinux1" {>= "1.32"}
+  "deb-tar" {>= "1.13.92-3"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "dump_0.4b46-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dump/dump_0.4b46-5_amd64.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkf5filemetadata3_5.54.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkf5filemetadata3"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libkf5filemetadata-data" {= "5.54.0-1"}
+  "deb-libkf5i18n5" {>= "4.97.0"}
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libstdc++6" {>= "4.6"}
+  "deb-libtag1v5" {>= "1.11"}
+]
+extra-source "libkf5filemetadata3_5.54.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kfilemetadata-kf5/libkf5filemetadata3_5.54.0-1_amd64.deb"
+}

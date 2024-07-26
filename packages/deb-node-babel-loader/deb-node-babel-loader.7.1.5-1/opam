@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-babel-loader_7.1.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-babel-loader"]
+]
+depends: [
+  "deb-node-babel-core" {>= "6.18.0"}
+  "deb-node-find-cache-dir" {>= "0.1.1"}
+  "deb-node-loader-utils" {>= "1.0.2"}
+  "deb-node-mkdirp" {>= "0.5"}
+  "deb-node-object-assign" {>= "4.0.1"}
+  "deb-nodejs"
+]
+extra-source "node-babel-loader_7.1.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-babel-loader/node-babel-loader_7.1.5-1_all.deb"
+}

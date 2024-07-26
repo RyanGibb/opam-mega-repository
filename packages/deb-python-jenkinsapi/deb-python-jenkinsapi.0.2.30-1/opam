@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-jenkinsapi_0.2.30-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-jenkinsapi"]
+]
+depends: [
+  "deb-python" {< "2.8"}
+  "deb-python" {>= "2.7"}
+  "deb-python-bs4"
+  "deb-python-lxml"
+  "deb-python-pkg-resources"
+  "deb-python-requests"
+  "deb-python-tz"
+]
+extra-source "python-jenkinsapi_0.2.30-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-jenkinsapi/python-jenkinsapi_0.2.30-1_all.deb"
+}

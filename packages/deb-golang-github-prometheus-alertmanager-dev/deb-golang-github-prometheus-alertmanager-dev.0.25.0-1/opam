@@ -1,0 +1,50 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-prometheus-alertmanager-dev_0.25.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-prometheus-alertmanager-dev"]
+]
+depends: [
+  "deb-golang-github-alecthomas-units-dev" {>= "0.0~git20210927.59d0afb~"}
+  "deb-golang-github-aws-aws-sdk-go-dev"
+  "deb-golang-github-benbjohnson-clock-dev"
+  "deb-golang-github-cenkalti-backoff-dev" {>= "4.0.0~"}
+  "deb-golang-github-cespare-xxhash-dev"
+  "deb-golang-github-go-kit-log-dev"
+  "deb-golang-github-go-openapi-analysis-dev"
+  "deb-golang-github-go-openapi-errors-dev" {>= "0.19.5~"}
+  "deb-golang-github-go-openapi-loads-dev"
+  "deb-golang-github-go-openapi-runtime-dev" {>= "0.21.0~"}
+  "deb-golang-github-go-openapi-spec-dev"
+  "deb-golang-github-go-openapi-strfmt-dev" {>= "0.19.0~"}
+  "deb-golang-github-go-openapi-swag-dev"
+  "deb-golang-github-go-openapi-validate-dev" {>= "0.20.3~"}
+  "deb-golang-github-gofrs-uuid-dev"
+  "deb-golang-github-gogo-protobuf-dev"
+  "deb-golang-github-hashicorp-go-sockaddr-dev"
+  "deb-golang-github-hashicorp-memberlist-dev"
+  "deb-golang-github-jessevdk-go-flags-dev"
+  "deb-golang-github-kylelemons-godebug-dev"
+  "deb-golang-github-oklog-run-dev"
+  "deb-golang-github-oklog-ulid-dev"
+  "deb-golang-github-pkg-errors-dev"
+  "deb-golang-github-prometheus-client-golang-dev" {>= "1.3.0~"}
+  "deb-golang-github-prometheus-common-dev" {>= "0.33.0~"}
+  "deb-golang-github-prometheus-exporter-toolkit-dev" {>= "0.6.1~"}
+  "deb-golang-github-rs-cors-dev"
+  "deb-golang-github-stretchr-testify-dev"
+  "deb-golang-github-xlab-treeprint-dev" {>= "0.0~git20180615"}
+  "deb-golang-go-uber-atomic-dev"
+  "deb-golang-golang-x-mod-dev"
+  "deb-golang-golang-x-net-dev"
+  "deb-golang-golang-x-text-dev"
+  "deb-golang-gopkg-alecthomas-kingpin-v2-dev"
+  "deb-golang-gopkg-telebot-v3-dev"
+  "deb-golang-gopkg-yaml-v2-dev"
+  "deb-golang-protobuf-extensions-dev"
+  "deb-tzdata"
+]
+extra-source "golang-github-prometheus-alertmanager-dev_0.25.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/prometheus-alertmanager/golang-github-prometheus-alertmanager-dev_0.25.0-1_all.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i wogerman_1:2-35_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r wogerman"]
+]
+depends: [
+  "deb-dictionaries-common" {>= "1.0"}
+  "deb-perl-any"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+conflicts: [
+  "deb-wgerman"
+]
+extra-source "wogerman_1:2-35_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/hkgerman/wogerman_2-35_all.deb"
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libopenrefine-vicino-java_1.2-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libopenrefine-vicino-java"]
+]
+depends: [
+  "deb-libcommons-compress-java" {>= "1.21"}
+  "deb-libopenrefine-arithcode-java"
+  "deb-libsecondstring-java"
+]
+extra-source "libopenrefine-vicino-java_1.2-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openrefine-vicino/libopenrefine-vicino-java_1.2-3_all.deb"
+}

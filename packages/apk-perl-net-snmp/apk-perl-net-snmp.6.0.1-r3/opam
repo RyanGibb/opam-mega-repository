@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-net-snmp-6.0.1-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-net-snmp"]
+]
+depends: [
+  "apk-perl-crypt-des" {= "2.07-r7"}
+  "apk-perl-crypt-rijndael" {= "1.14-r1"}
+  "apk-perl-digest-sha1" {= "2.13-r12"}
+]
+extra-source "perl-net-snmp-6.0.1-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-net-snmp-6.0.1-r3.apk"
+}

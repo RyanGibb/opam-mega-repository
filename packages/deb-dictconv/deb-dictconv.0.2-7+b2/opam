@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dictconv_0.2-7+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dictconv"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "dictconv_0.2-7+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dictconv/dictconv_0.2-7+b2_amd64.deb"
+}

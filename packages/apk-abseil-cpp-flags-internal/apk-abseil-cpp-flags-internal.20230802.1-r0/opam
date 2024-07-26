@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add abseil-cpp-flags-internal-20230802.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del abseil-cpp-flags-internal"]
+]
+depends: [
+  "apk-abseil-cpp-flags-commandlineflag" {= "20230802.1-r0"}
+  "apk-abseil-cpp-flags-commandlineflag-internal" {= "20230802.1-r0"}
+  "apk-abseil-cpp-flags-config" {= "20230802.1-r0"}
+  "apk-abseil-cpp-raw-logging-internal" {= "20230802.1-r0"}
+  "apk-abseil-cpp-spinlock-wait" {= "20230802.1-r0"}
+  "apk-abseil-cpp-strings" {= "20230802.1-r0"}
+  "apk-abseil-cpp-synchronization" {= "20230802.1-r0"}
+  "apk-libgcc" {= "13.2.1_git20240309-r0"}
+  "apk-libstdc++" {= "13.2.1_git20240309-r0"}
+  "apk-musl" {= "1.2.5-r0"}
+]
+extra-source "abseil-cpp-flags-internal-20230802.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/abseil-cpp-flags-internal-20230802.1-r0.apk"
+}

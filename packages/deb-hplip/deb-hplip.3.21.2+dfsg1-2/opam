@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i hplip_3.21.2+dfsg1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r hplip"]
+]
+depends: [
+  "deb-adduser"
+  "deb-cups"
+  "deb-hplip-data" {= "3.21.2+dfsg1-2"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcups2" {>= "1.6.0"}
+  "deb-libdbus-1-3" {>= "1.9.14"}
+  "deb-libhpmud0" {= "3.21.2+dfsg1-2"}
+  "deb-libpython3-9" {>= "3.9.1"}
+  "deb-libsane-hpaio" {= "3.21.2+dfsg1-2"}
+  "deb-libsane1" {>= "1.0.27"}
+  "deb-lsb-base"
+  "deb-printer-driver-hpcups" {= "3.21.2+dfsg1-2"}
+  "deb-python3" {< "3.10"}
+  "deb-python3" {>= "3.9~"}
+  "deb-python3-any"
+  "deb-python3-dbus"
+  "deb-python3-gi"
+  "deb-python3-pexpect"
+  "deb-python3-pil"
+  "deb-python3-reportlab"
+  "deb-wget"
+  "deb-xz-utils"
+]
+extra-source "hplip_3.21.2+dfsg1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/hplip/hplip_3.21.2+dfsg1-2_amd64.deb"
+}

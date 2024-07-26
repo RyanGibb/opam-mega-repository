@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i clirr_0.6-7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r clirr"]
+]
+depends: [
+  "deb-java-wrappers"
+  "deb-libbcel-java"
+  "deb-libcommons-cli-java"
+  "deb-libcommons-lang-java"
+  ("deb-default-jre" | "deb- java6-runtime" | "deb- java7-runtime")
+]
+extra-source "clirr_0.6-7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/clirr/clirr_0.6-7_all.deb"
+}

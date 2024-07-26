@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmariadb-dev_1:10.3.34-0+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmariadb-dev"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libgnutls28-dev"
+  "deb-libmariadb3" {= "1-10.3.34-0+deb10u1"}
+  "deb-zlib1g-dev"
+]
+conflicts: [
+  "deb-libmariadbclient16-dev"
+  "deb-libmysqlclient-dev"
+]
+extra-source "libmariadb-dev_1:10.3.34-0+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mariadb-10.3/libmariadb-dev_10.3.34-0+deb10u1_amd64.deb"
+}

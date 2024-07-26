@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kdenetwork-filesharing_4:20.12.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kdenetwork-filesharing"]
+]
+depends: [
+  "deb-kio"
+  "deb-libc6" {>= "2.14"}
+  "deb-libkf5authcore5" {>= "5.69.0"}
+  "deb-libkf5coreaddons5" {>= "5.74.0~"}
+  "deb-libkf5declarative5" {>= "5.74.0~"}
+  "deb-libkf5i18n5" {>= "5.74.0~"}
+  "deb-libkf5kiocore5" {>= "5.74.0"}
+  "deb-libkf5kiogui5" {>= "5.74.0~"}
+  "deb-libkf5kiowidgets5" {>= "5.74.0~"}
+  "deb-libkf5service-bin"
+  "deb-libkf5service5" {>= "4.96.0"}
+  "deb-libkf5widgetsaddons5" {>= "5.74.0~"}
+  "deb-libpackagekitqt5-1" {>= "1.0.2"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.14.1"}
+  "deb-libqt5qml5" {>= "5.0.2"}
+  "deb-libqt5quickwidgets5" {>= "5.5.0"}
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-samba-common-bin"
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5quick5" {>= "5.0.2"} | "deb- libqt5quick5-gles" {>= "5.0.2"})
+]
+extra-source "kdenetwork-filesharing_4:20.12.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kdenetwork-filesharing/kdenetwork-filesharing_20.12.0-2_amd64.deb"
+}

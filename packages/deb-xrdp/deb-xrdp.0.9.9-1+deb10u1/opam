@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xrdp_0.9.9-1+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xrdp"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libc6" {>= "2.15"}
+  "deb-libfuse2" {>= "2.6"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libopus0" {>= "1.1"}
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libx11-6"
+  "deb-libxfixes3"
+  "deb-libxrandr2"
+  "deb-lsb-base" {>= "3.0-6"}
+  "deb-ssl-cert"
+]
+extra-source "xrdp_0.9.9-1+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xrdp/xrdp_0.9.9-1+deb10u1_amd64.deb"
+}

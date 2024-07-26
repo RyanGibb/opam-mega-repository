@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lprint_1.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lprint"]
+]
+depends: [
+  "deb-libavahi-client3" {>= "0.6.16"}
+  "deb-libavahi-common3" {>= "0.6.16"}
+  "deb-libc6" {>= "2.25"}
+  "deb-libcups2" {>= "2.3~b6"}
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libusb-1-0-0" {>= "2-1.0.16"}
+]
+extra-source "lprint_1.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lprint/lprint_1.0-1_amd64.deb"
+}

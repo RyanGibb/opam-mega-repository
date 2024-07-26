@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i apertium-fr-es_0.9.2~r61322-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r apertium-fr-es"]
+]
+depends: [
+  "deb-apertium" {>= "3.4"}
+  "deb-apertium-lex-tools"
+]
+conflicts: [
+  "deb-apertium-es-fr"
+]
+extra-source "apertium-fr-es_0.9.2~r61322-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/apertium-fr-es/apertium-fr-es_0.9.2~r61322-3_all.deb"
+}

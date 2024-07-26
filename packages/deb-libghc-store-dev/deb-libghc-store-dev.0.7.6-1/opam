@@ -1,0 +1,43 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-store-dev_0.7.6-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-store-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.14"}
+  "deb-libghc-async-dev"
+  "deb-libghc-base-orphans-dev"
+  "deb-libghc-base64-bytestring-dev"
+  "deb-libghc-bifunctors-dev"
+  "deb-libghc-contravariant-dev"
+  "deb-libghc-cryptohash-dev"
+  "deb-libghc-free-dev"
+  "deb-libghc-hashable-dev"
+  "deb-libghc-hspec-dev"
+  "deb-libghc-hspec-smallcheck-dev"
+  "deb-libghc-lifted-base-dev"
+  "deb-libghc-monad-control-dev"
+  "deb-libghc-mono-traversable-dev"
+  "deb-libghc-network-dev"
+  "deb-libghc-primitive-dev"
+  "deb-libghc-resourcet-dev"
+  "deb-libghc-safe-dev"
+  "deb-libghc-smallcheck-dev"
+  "deb-libghc-store-core-dev"
+  "deb-libghc-syb-dev"
+  "deb-libghc-th-lift-dev"
+  "deb-libghc-th-lift-instances-dev"
+  "deb-libghc-th-orphans-dev"
+  "deb-libghc-th-reify-many-dev"
+  "deb-libghc-th-utilities-dev"
+  "deb-libghc-unordered-containers-dev"
+  "deb-libghc-vector-dev"
+  "deb-libghc-void-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-store-dev_0.7.6-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-store/libghc-store-dev_0.7.6-1_amd64.deb"
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-aanand-compose-file-dev_0.0~git20161122.0.a3e5876-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-aanand-compose-file-dev"]
+]
+depends: [
+  "deb-golang-github-docker-engine-api-dev"
+  "deb-golang-github-docker-go-units-dev"
+  "deb-golang-github-mattn-go-shellwords-dev"
+  "deb-golang-github-mitchellh-mapstructure-dev"
+  "deb-golang-github-spf13-pflag-dev"
+  "deb-golang-github-stretchr-testify-dev"
+  "deb-golang-github-xeipuuv-gojsonschema-dev"
+  "deb-golang-gopkg-yaml-v2-dev"
+]
+extra-source "golang-github-aanand-compose-file-dev_0.0~git20161122.0.a3e5876-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-aanand-compose-file/golang-github-aanand-compose-file-dev_0.0~git20161122.0.a3e5876-1_all.deb"
+}

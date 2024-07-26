@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i knewstuff-dialog_5.78.0-4+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r knewstuff-dialog"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libkf5configcore5" {>= "5.78.0~"}
+  "deb-libkf5i18n5" {>= "5.78.0~"}
+  "deb-libkf5newstuff-data" {= "5.78.0-4+deb11u1"}
+  "deb-libkf5newstuffcore5" {= "5.78.0-4+deb11u1"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5qml5" {>= "5.14.0~"}
+  "deb-libqt5widgets5" {>= "5.14.0~"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-qml-module-org-kde-newstuff" {= "5.78.0-4+deb11u1"}
+]
+extra-source "knewstuff-dialog_5.78.0-4+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/knewstuff/knewstuff-dialog_5.78.0-4+deb11u1_amd64.deb"
+}

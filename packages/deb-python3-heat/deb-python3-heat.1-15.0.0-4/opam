@@ -1,0 +1,82 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-heat_1:15.0.0-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-heat"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-aodhclient"
+  "deb-python3-babel"
+  "deb-python3-barbicanclient"
+  "deb-python3-blazarclient"
+  "deb-python3-cinderclient"
+  "deb-python3-croniter"
+  "deb-python3-cryptography" {>= "2.1"}
+  "deb-python3-debtcollector"
+  "deb-python3-designateclient"
+  "deb-python3-eventlet"
+  "deb-python3-glanceclient"
+  "deb-python3-greenlet"
+  "deb-python3-heatclient"
+  "deb-python3-ironicclient"
+  "deb-python3-keystoneauth1" {>= "3.18.0"}
+  "deb-python3-keystoneclient"
+  "deb-python3-keystonemiddleware"
+  "deb-python3-lxml" {>= "4.5.0"}
+  "deb-python3-magnumclient"
+  "deb-python3-manilaclient"
+  "deb-python3-memcache"
+  "deb-python3-migrate" {>= "0.13.0"}
+  "deb-python3-mistralclient"
+  "deb-python3-monascaclient"
+  "deb-python3-mysqldb"
+  "deb-python3-netaddr"
+  "deb-python3-neutron-lib"
+  "deb-python3-neutronclient" {>= "1-6.14.0"}
+  "deb-python3-novaclient"
+  "deb-python3-octaviaclient" {>= "1.8.0"}
+  "deb-python3-openstackclient"
+  "deb-python3-openstacksdk"
+  "deb-python3-oslo-cache"
+  "deb-python3-oslo-concurrency"
+  "deb-python3-oslo-config" {>= "8.0.2"}
+  "deb-python3-oslo-context"
+  "deb-python3-oslo-db" {>= "6.0.0"}
+  "deb-python3-oslo-i18n"
+  "deb-python3-oslo-log"
+  "deb-python3-oslo-messaging"
+  "deb-python3-oslo-middleware"
+  "deb-python3-oslo-policy"
+  "deb-python3-oslo-reports"
+  "deb-python3-oslo-serialization"
+  "deb-python3-oslo-service"
+  "deb-python3-oslo-upgradecheck"
+  "deb-python3-oslo-utils" {>= "3.40.3"}
+  "deb-python3-oslo-versionedobjects"
+  "deb-python3-osprofiler"
+  "deb-python3-pastedeploy"
+  "deb-python3-pbr"
+  "deb-python3-psycopg2"
+  "deb-python3-pymysql"
+  "deb-python3-requests"
+  "deb-python3-routes"
+  "deb-python3-saharaclient"
+  "deb-python3-senlinclient"
+  "deb-python3-sqlalchemy"
+  "deb-python3-stevedore" {>= "3.1.0"}
+  "deb-python3-swiftclient"
+  "deb-python3-tenacity" {>= "6.1.0"}
+  "deb-python3-troveclient"
+  "deb-python3-tz"
+  "deb-python3-vitrageclient" {>= "2.7.0"}
+  "deb-python3-webob"
+  "deb-python3-yaml"
+  "deb-python3-yaql"
+  "deb-python3-zaqarclient"
+  "deb-python3-zunclient" {>= "3.4.0"}
+]
+extra-source "python3-heat_1:15.0.0-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/heat/python3-heat_15.0.0-4_all.deb"
+}

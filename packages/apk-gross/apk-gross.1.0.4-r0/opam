@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gross-1.0.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gross"]
+]
+depends: [
+  "apk-c-ares" {= "1.28.1-r0"}
+  "apk-musl" {= "1.2.5-r0"}
+  ("apk-busybox-binsh" {= "1.36.1-r29"} | "apk-dash-binsh" {= "0.5.12-r2"} | "apk-yash-binsh" {= "2.56.1-r1"})
+]
+extra-source "gross-1.0.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/gross-1.0.4-r0.apk"
+}

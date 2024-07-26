@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i php-symfony-form_5.4.23+dfsg-1+deb12u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r php-symfony-form"]
+]
+depends: [
+  "deb-php-common"
+  "deb-php-intl"
+  "deb-php-mbstring"
+  "deb-php-symfony-deprecation-contracts"
+  "deb-php-symfony-event-dispatcher"
+  "deb-php-symfony-options-resolver"
+  "deb-php-symfony-property-access"
+  "deb-php-symfony-service-contracts"
+]
+extra-source "php-symfony-form_5.4.23+dfsg-1+deb12u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/symfony/php-symfony-form_5.4.23+dfsg-1+deb12u2_all.deb"
+}

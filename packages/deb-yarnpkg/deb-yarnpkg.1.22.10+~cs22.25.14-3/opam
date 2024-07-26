@@ -1,0 +1,63 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i yarnpkg_1.22.10+~cs22.25.14-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r yarnpkg"]
+]
+depends: [
+  "deb-ca-certificates"
+  "deb-node-asap"
+  "deb-node-babel7-runtime"
+  "deb-node-bytes" {>= "3.0~"}
+  "deb-node-camelcase" {>= "4.0.0"}
+  "deb-node-chalk" {>= "2.1.0"}
+  "deb-node-chownr"
+  "deb-node-ci-info"
+  "deb-node-cli-table"
+  "deb-node-commander" {>= "2.9.0"}
+  "deb-node-death"
+  "deb-node-debug" {>= "3.0.0"}
+  "deb-node-deep-equal"
+  "deb-node-detect-indent"
+  "deb-node-duplexify"
+  "deb-node-emoji" {>= "1.6.1"}
+  "deb-node-fast-levenshtein"
+  "deb-node-glob" {>= "7.1.1"}
+  "deb-node-imports-loader"
+  "deb-node-ini" {>= "1.3.4"}
+  "deb-node-inquirer" {>= "3.3~"}
+  "deb-node-invariant"
+  "deb-node-is-builtin-module" {>= "2.0~"}
+  "deb-node-js-yaml" {>= "3.13.1"}
+  "deb-node-loud-rejection"
+  "deb-node-micromatch"
+  "deb-node-minimatch" {>= "2.3.11"}
+  "deb-node-mkdirp" {>= "1.0~"}
+  "deb-node-object-path"
+  "deb-node-path-root"
+  "deb-node-prepend-http"
+  "deb-node-proper-lockfile"
+  "deb-node-puka"
+  "deb-node-pump"
+  "deb-node-pumpify"
+  "deb-node-read" {>= "1.0.7"}
+  "deb-node-request" {>= "2.88.1-5~"}
+  "deb-node-request-capture-har" {>= "1.2.2"}
+  "deb-node-resolve" {>= "1.19.0+~cs5.20.8~"}
+  "deb-node-rimraf" {>= "2.5.0"}
+  "deb-node-semver" {>= "5.1.0"}
+  "deb-node-sort-keys"
+  "deb-node-ssri"
+  "deb-node-strict-uri-encode"
+  "deb-node-strip-ansi" {>= "4.0.0"}
+  "deb-node-strip-bom"
+  "deb-node-tar-stream"
+  "deb-node-uuid" {>= "3.0.1"}
+  "deb-node-validate-npm-package-license"
+  "deb-node-yn"
+  "deb-nodejs"
+]
+extra-source "yarnpkg_1.22.10+~cs22.25.14-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-yarnpkg/yarnpkg_1.22.10+~cs22.25.14-3_all.deb"
+}

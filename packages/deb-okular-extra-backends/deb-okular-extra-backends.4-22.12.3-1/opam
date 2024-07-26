@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i okular-extra-backends_4:22.12.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r okular-extra-backends"]
+]
+depends: [
+  "deb-kio"
+  "deb-libc6" {>= "2.14"}
+  "deb-libchm1" {>= "0.40"}
+  "deb-libdjvulibre21" {>= "3.5.28"}
+  "deb-libepub0" {>= "0.1.1"}
+  "deb-libkf5configcore5" {>= "5.68.0~"}
+  "deb-libkf5configwidgets5" {>= "5.68.0~"}
+  "deb-libkf5coreaddons5" {>= "5.68.0~"}
+  "deb-libkf5i18n5" {>= "5.68.0~"}
+  "deb-libkf5khtml5" {>= "5.68.0~"}
+  "deb-libkf5kiocore5" {>= "5.69.0"}
+  "deb-libkf5parts5" {>= "5.68.0~"}
+  "deb-libmarkdown2" {>= "2.0.6"}
+  "deb-libokular5core10" {= "4-22.12.3-1"}
+  "deb-libqt5core5a" {>= "5.15.2~"}
+  "deb-libqt5printsupport5" {>= "5.15.2~"}
+  "deb-libqt5widgets5" {>= "5.15.2~"}
+  "deb-libqt5xml5" {>= "5.15.2~"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libtiff6" {>= "4.0.3"}
+  "deb-libzip4" {>= "0.10"}
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+]
+extra-source "okular-extra-backends_4:22.12.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/okular/okular-extra-backends_22.12.3-1_amd64.deb"
+}

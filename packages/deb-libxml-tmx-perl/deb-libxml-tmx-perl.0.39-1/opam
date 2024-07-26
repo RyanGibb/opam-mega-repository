@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libxml-tmx-perl_0.39-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libxml-tmx-perl"]
+]
+depends: [
+  "deb-libfile-bom-perl"
+  "deb-libutf8-all-perl"
+  "deb-libxml-dt-perl"
+  "deb-perl-any"
+]
+extra-source "libxml-tmx-perl_0.39-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libx/libxml-tmx-perl/libxml-tmx-perl_0.39-1_all.deb"
+}

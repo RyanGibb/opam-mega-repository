@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i php-codecoverage_9.2.5+dfsg-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r php-codecoverage"]
+]
+depends: [
+  "deb-libjs-bootstrap4"
+  "deb-libjs-d3"
+  "deb-libjs-jquery"
+  "deb-php-common"
+  "deb-php-file-iterator" {< "4~~"}
+  "deb-php-file-iterator" {>= "3.0.3"}
+  "deb-php-parser" {< "5~~"}
+  "deb-php-parser" {>= "4.10.2"}
+  "deb-php-text-template" {< "3~~"}
+  "deb-php-text-template" {>= "2.0.2"}
+  "deb-php-tokenizer" {< "2~~"}
+  "deb-php-tokenizer" {>= "1.2.0"}
+  "deb-php-xml"
+  "deb-phpunit-code-unit-reverse-lookup" {< "3~~"}
+  "deb-phpunit-code-unit-reverse-lookup" {>= "2.0.2"}
+  "deb-phpunit-complexity" {< "3~~"}
+  "deb-phpunit-complexity" {>= "2.0"}
+  "deb-phpunit-environment" {< "6~~"}
+  "deb-phpunit-environment" {>= "5.1.2"}
+  "deb-phpunit-lines-of-code" {< "2~~"}
+  "deb-phpunit-lines-of-code" {>= "1.0.3"}
+  "deb-phpunit-version" {< "4~~"}
+  "deb-phpunit-version" {>= "3.0.1"}
+]
+extra-source "php-codecoverage_9.2.5+dfsg-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/php-codecoverage/php-codecoverage_9.2.5+dfsg-3_all.deb"
+}

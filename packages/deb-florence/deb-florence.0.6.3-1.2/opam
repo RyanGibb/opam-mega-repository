@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i florence_0.6.3-1.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r florence"]
+]
+depends: [
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libatspi2-0-0" {>= "2.9.90"}
+  "deb-libc6" {>= "2.7"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libdbus-1-3" {>= "1.9.14"}
+  "deb-libflorence-1-0-1"
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.26.0"}
+  "deb-libgstreamer1-0-0" {>= "1.0.0"}
+  "deb-libgtk-3-0" {>= "3.3.16"}
+  "deb-libnotify4" {>= "0.7.0"}
+  "deb-libpango-1-0-0" {>= "1.18.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-librsvg2-2" {>= "2.14.4"}
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libxtst6"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "florence_0.6.3-1.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/florence/florence_0.6.3-1.2_amd64.deb"
+}

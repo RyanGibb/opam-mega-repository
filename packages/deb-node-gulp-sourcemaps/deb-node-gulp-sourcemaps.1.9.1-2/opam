@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-gulp-sourcemaps_1.9.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-gulp-sourcemaps"]
+]
+depends: [
+  "deb-node-acorn" {>= "4.0"}
+  "deb-node-convert-source-map" {>= "1.0"}
+  "deb-node-css" {>= "2.0"}
+  "deb-node-debug-fabulous" {>= "0.0.0"}
+  "deb-node-detect-newline" {>= "2.0"}
+  "deb-node-graceful-fs" {>= "4.0"}
+  "deb-node-source-map" {>= "0.0"}
+  "deb-node-strip-bom" {>= "2.0"}
+  "deb-node-through2" {>= "2.0"}
+  "deb-node-vinyl" {>= "1.0"}
+  "deb-nodejs"
+]
+extra-source "node-gulp-sourcemaps_1.9.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-gulp-sourcemaps/node-gulp-sourcemaps_1.9.1-2_all.deb"
+}

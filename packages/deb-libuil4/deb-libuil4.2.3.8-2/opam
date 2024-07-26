@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libuil4_2.3.8-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libuil4"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libmrm4" {>= "2.3.4"}
+  "deb-libxm4" {>= "2.3.4"}
+  "deb-libxt6"
+]
+extra-source "libuil4_2.3.8-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/motif/libuil4_2.3.8-2_amd64.deb"
+}

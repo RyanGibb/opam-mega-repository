@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdolfin2018.1_2018.1.0.post1-16_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdolfin2018.1"]
+]
+depends: [
+  "deb-libamd2" {>= "1-4.5.2"}
+  "deb-libboost-chrono1-67-0"
+  "deb-libboost-filesystem1-67-0"
+  "deb-libboost-iostreams1-67-0"
+  "deb-libboost-program-options1-67-0"
+  "deb-libboost-regex1-67-0" {>= "1.67.0-10"}
+  "deb-libboost-system1-67-0"
+  "deb-libboost-timer1-67-0"
+  "deb-libc6" {>= "2.14"}
+  "deb-libcamd2" {>= "1-4.5.2"}
+  "deb-libccolamd2" {>= "1-4.5.2"}
+  "deb-libcholmod3" {>= "1-4.5.2"}
+  "deb-libcolamd2" {>= "1-4.5.2"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgfortran5" {>= "8"}
+  "deb-libhdf5-openmpi-103" {>= "1.10.3"}
+  "deb-libopenmpi3"
+  "deb-libpetsc-real3-10" {>= "3.10.3+dfsg1"}
+  "deb-libptscotch-6-0"
+  "deb-libscotch-6-0"
+  "deb-libslepc-real3-10"
+  "deb-libstdc++6" {>= "6"}
+  "deb-libsuitesparseconfig5" {>= "1-5.0.0"}
+  "deb-libsz2"
+  "deb-libumfpack5" {>= "1-4.5.2"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "libdolfin2018.1_2018.1.0.post1-16_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dolfin/libdolfin2018.1_2018.1.0.post1-16_amd64.deb"
+}

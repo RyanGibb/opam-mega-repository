@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libjni-inchi-java_0.8+dfsg-7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libjni-inchi-java"]
+]
+depends: [
+  "deb-libexec-maven-plugin-java"
+  "deb-libjni-inchi-jni" {>= "0.8+dfsg-7"}
+  "deb-liblog4j1-2-java"
+  "deb-libmaven-compiler-plugin-java" {>= "3.10.1"}
+]
+extra-source "libjni-inchi-java_0.8+dfsg-7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/j/jni-inchi/libjni-inchi-java_0.8+dfsg-7_all.deb"
+}

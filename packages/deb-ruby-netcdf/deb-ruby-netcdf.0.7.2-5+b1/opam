@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-netcdf_0.7.2-5+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-netcdf"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libnetcdf18" {>= "4.0.1"}
+  "deb-libruby2-7" {>= "2.7.0"}
+  "deb-ruby" {< "1-2.8~"}
+  "deb-ruby" {>= "1-2.7~0"}
+  "deb-ruby-narray"
+  "deb-ruby-narray-miss"
+]
+extra-source "ruby-netcdf_0.7.2-5+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-netcdf/ruby-netcdf_0.7.2-5+b1_amd64.deb"
+}

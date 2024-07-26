@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libconfig-model-lcdproc-perl_2.052-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libconfig-model-lcdproc-perl"]
+]
+depends: [
+  "deb-libconfig-model-perl" {>= "2.111"}
+  "deb-libdpkg-perl"
+  "deb-libexception-class-perl"
+  "deb-liblog-log4perl-perl"
+  "deb-libmouse-perl"
+  "deb-libmousex-nativetraits-perl"
+  "deb-perl"
+]
+extra-source "libconfig-model-lcdproc-perl_2.052-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libconfig-model-lcdproc-perl/libconfig-model-lcdproc-perl_2.052-2_all.deb"
+}

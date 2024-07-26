@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i marble-maps_4:22.12.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r marble-maps"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5qml5" {>= "5.14.0~"}
+  "deb-libqt5widgets5" {>= "5.14.0~"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-marble-data" {>= "4-22.12.3-1"}
+  "deb-marble-plugins" {= "4-22.12.3-1"}
+  "deb-qml-module-org-kde-kirigami2"
+  "deb-qml-module-qtgraphicaleffects"
+  "deb-qml-module-qtqml-models2"
+  "deb-qml-module-qtquick-controls"
+  "deb-qml-module-qtquick-controls2"
+  "deb-qml-module-qtquick-dialogs"
+  "deb-qml-module-qtquick-layouts"
+  "deb-qml-module-qtquick-window2"
+  "deb-qml-module-qtquick2"
+  ("deb-libqt5gui5" {>= "5.14.0~"} | "deb- libqt5gui5-gles" {>= "5.14.0~"})
+  ("deb-libqt5quick5" {>= "5.14.0~"} | "deb- libqt5quick5-gles" {>= "5.14.0~"})
+]
+extra-source "marble-maps_4:22.12.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/marble/marble-maps_22.12.3-1_amd64.deb"
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-cyclocomp_1.1.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-cyclocomp"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.1.3.20220401-1"}
+  "deb-r-cran-callr"
+  "deb-r-cran-crayon"
+  "deb-r-cran-desc"
+  "deb-r-cran-remotes"
+  "deb-r-cran-withr"
+]
+extra-source "r-cran-cyclocomp_1.1.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-cyclocomp/r-cran-cyclocomp_1.1.0-2_all.deb"
+}

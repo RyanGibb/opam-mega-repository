@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-monad-par-dev_0.3.5-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-monad-par-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-abstract-deque-dev"
+  "deb-libghc-abstract-par-dev"
+  "deb-libghc-monad-par-extras-dev"
+  "deb-libghc-mwc-random-dev"
+  "deb-libghc-parallel-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-monad-par-dev_0.3.5-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-monad-par/libghc-monad-par-dev_0.3.5-1+b2_amd64.deb"
+}

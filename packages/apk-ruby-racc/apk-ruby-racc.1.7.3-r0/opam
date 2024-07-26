@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ruby-racc-1.7.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ruby-racc"]
+]
+depends: [
+  "apk-musl" {= "1.2.5-r0"}
+  "apk-ruby" {= "3.3.3-r0"}
+  "apk-ruby-libs" {= "3.3.3-r0"}
+]
+extra-source "ruby-racc-1.7.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ruby-racc-1.7.3-r0.apk"
+}

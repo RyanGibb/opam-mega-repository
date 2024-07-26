@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i html2wml_0.4.11+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r html2wml"]
+]
+depends: [
+  "deb-libcgi-pm-perl"
+  "deb-libhtml-parser-perl"
+  "deb-libtext-template-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-perl"
+]
+extra-source "html2wml_0.4.11+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/html2wml/html2wml_0.4.11+dfsg-2_all.deb"
+}

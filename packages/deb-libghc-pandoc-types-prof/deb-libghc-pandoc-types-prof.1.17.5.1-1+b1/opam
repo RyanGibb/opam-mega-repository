@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-pandoc-types-prof_1.17.5.1-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-pandoc-types-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-aeson-prof"
+  "deb-libghc-pandoc-types-dev" {= "1.17.5.1-1+b1"}
+  "deb-libghc-quickcheck2-prof"
+  "deb-libghc-syb-prof"
+]
+extra-source "libghc-pandoc-types-prof_1.17.5.1-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-pandoc-types/libghc-pandoc-types-prof_1.17.5.1-1+b1_amd64.deb"
+}

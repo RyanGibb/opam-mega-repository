@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i heimdal-kdc_7.8.git20221117.28daf24+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r heimdal-kdc"]
+]
+depends: [
+  "deb-heimdal-clients"
+  "deb-krb5-config"
+  "deb-libasn1-8-heimdal" {>= "1.4.0+git20110226"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcap-ng0" {>= "0.7.9"}
+  "deb-libgssapi3-heimdal" {>= "1.4.0+git20110226"}
+  "deb-libhcrypto5-heimdal" {>= "1.4.0+git20110226"}
+  "deb-libhdb9-heimdal" {>= "1.6~git20131117"}
+  "deb-libheimbase1-heimdal" {>= "1.4.0+git20110226"}
+  "deb-libheimntlm0-heimdal" {>= "1.4.0+git20110226"}
+  "deb-libkadm5srv8-heimdal" {>= "7.8.git20221115.a6cf945+dfsg"}
+  "deb-libkdc2-heimdal" {>= "1.4.0+git20110226"}
+  "deb-libkrb5-26-heimdal" {>= "1.7~git20160418"}
+  "deb-libroken19-heimdal" {>= "1.7~git20150920"}
+  "deb-libsl0-heimdal" {>= "1.4.0+git20110226"}
+  ("deb-debconf" {>= "0.5.00"} | "deb- debconf-2-0")
+  ("deb-openbsd-inetd" | "deb- inet-superserver")
+]
+conflicts: [
+  "deb-heimdal-clients" {< "0.4e-3"}
+  "deb-heimdal-servers" {< "0.6.3-3"}
+  "deb-kerberos4kth-kdc"
+  "deb-krb5-admin-server"
+  "deb-krb5-kdc"
+]
+extra-source "heimdal-kdc_7.8.git20221117.28daf24+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/heimdal/heimdal-kdc_7.8.git20221117.28daf24+dfsg-2_amd64.deb"
+}

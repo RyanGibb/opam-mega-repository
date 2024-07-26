@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add syslinux-6.04_pre1-r13.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del syslinux"]
+]
+depends: [
+  "apk-blkid" {= "2.38.1-r8"}
+  "apk-libuuid" {= "2.38.1-r8"}
+  "apk-mkinitfs" {= "3.8.1-r0"}
+  "apk-mtools" {= "4.0.43-r1"}
+  "apk-musl" {= "1.2.4-r2"}
+  ("apk-busybox-binsh" {= "1.36.1-r7"} | "apk-dash-binsh" {= "0.5.12-r2"} | "apk-yash-binsh" {= "2.54-r3"})
+]
+extra-source "syslinux-6.04_pre1-r13.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/syslinux-6.04_pre1-r13.apk"
+}

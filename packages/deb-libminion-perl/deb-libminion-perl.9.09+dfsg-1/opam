@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libminion-perl_9.09+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libminion-perl"]
+]
+depends: [
+  "deb-fonts-font-awesome"
+  "deb-libjs-bootstrap"
+  "deb-libjs-d3"
+  "deb-libjs-moment"
+  "deb-libmojolicious-perl" {>= "8.12"}
+  "deb-perl"
+]
+extra-source "libminion-perl_9.09+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libm/libminion-perl/libminion-perl_9.09+dfsg-1_all.deb"
+}

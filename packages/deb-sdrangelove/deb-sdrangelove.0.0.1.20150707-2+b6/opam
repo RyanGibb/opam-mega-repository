@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sdrangelove_0.0.1.20150707-2+b6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sdrangelove"]
+]
+depends: [
+  "deb-libboost-system1-67-0"
+  "deb-libc6" {>= "2.27"}
+  "deb-libfftw3-single3" {>= "3.3.5"}
+  "deb-libgcc1" {>= "1-4.0"}
+  "deb-libgl1"
+  "deb-libgnuradio-osmosdr0-1-4" {>= "0.1.4-13"}
+  "deb-libgnuradio-runtime3-7-13"
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5gui5" {>= "5.2.0"}
+  "deb-libqt5multimedia5" {>= "5.6.0~beta"}
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libqt5opengl5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.2.0~alpha1"}
+  "deb-librtlsdr0"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libusb-1-0-0" {>= "2-1.0.8"}
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+extra-source "sdrangelove_0.0.1.20150707-2+b6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sdrangelove/sdrangelove_0.0.1.20150707-2+b6_amd64.deb"
+}

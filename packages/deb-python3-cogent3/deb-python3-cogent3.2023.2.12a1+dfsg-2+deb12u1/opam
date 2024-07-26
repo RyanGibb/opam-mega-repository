@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-cogent3_2023.2.12a1+dfsg-2+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-cogent3"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-chardet"
+  "deb-python3-matplotlib"
+  "deb-python3-numba"
+  "deb-python3-numpy"
+  "deb-python3-numpy" {>= "1-1.22.0"}
+  "deb-python3-pandas"
+  "deb-python3-plotly"
+  "deb-python3-scipy"
+  "deb-python3-scitrack"
+  "deb-python3-tinydb"
+  "deb-python3-tqdm"
+  "deb-python3-typing-extensions"
+]
+extra-source "python3-cogent3_2023.2.12a1+dfsg-2+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-cogent/python3-cogent3_2023.2.12a1+dfsg-2+deb12u1_amd64.deb"
+}

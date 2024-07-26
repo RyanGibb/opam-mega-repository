@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cinnamon-session_3.8.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cinnamon-session"]
+]
+depends: [
+  "deb-cinnamon-desktop-data" {>= "3.8"}
+  "deb-cinnamon-session-common" {= "3.8.2-1"}
+  "deb-libc6" {>= "2.17"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libcanberra0" {>= "0.2"}
+  "deb-libdbus-1-3" {>= "1.9.14"}
+  "deb-libdbus-glib-1-2" {>= "0.88"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libgl1"
+  "deb-libglib2-0-0" {>= "2.45.3"}
+  "deb-libgtk-3-0" {>= "3.0.0"}
+  "deb-libice6" {>= "1-1.0.0"}
+  "deb-libsm6"
+  "deb-libsystemd0"
+  "deb-libx11-6"
+  "deb-libxapp1" {>= "1.0.4"}
+  "deb-libxau6"
+  "deb-libxcomposite1" {>= "1-0.3-1"}
+  "deb-libxext6"
+  "deb-libxrender1"
+  "deb-libxtst6"
+  "deb-upower" {>= "0.9.0"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
+]
+extra-source "cinnamon-session_3.8.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cinnamon-session/cinnamon-session_3.8.2-1_amd64.deb"
+}

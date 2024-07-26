@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-lalrpop-dev_0.19.8-4+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-lalrpop-dev"]
+]
+depends: [
+  "deb-librust-ascii-canvas-2-dev"
+  "deb-librust-atty-0-2-dev"
+  "deb-librust-bit-set-dev"
+  "deb-librust-diff-dev"
+  "deb-librust-ena-0-14-dev"
+  "deb-librust-itertools-0-10+use-std-dev"
+  "deb-librust-lalrpop-util-dev"
+  "deb-librust-petgraph-0-6-dev"
+  "deb-librust-pico-args-0-4-dev"
+  "deb-librust-regex-1+std-dev"
+  "deb-librust-regex-syntax-0-6-dev"
+  "deb-librust-string-cache-0-8-dev"
+  "deb-librust-term-0-5-dev"
+  "deb-librust-tiny-keccak-dev"
+  "deb-librust-unicode-xid-0-2-dev"
+]
+extra-source "librust-lalrpop-dev_0.19.8-4+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-lalrpop/librust-lalrpop-dev_0.19.8-4+b2_amd64.deb"
+}

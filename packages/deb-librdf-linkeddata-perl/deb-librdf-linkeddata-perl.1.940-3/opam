@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librdf-linkeddata-perl_1.940-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librdf-linkeddata-perl"]
+]
+depends: [
+  "deb-libhtml-html5-writer-perl"
+  "deb-libmoo-perl"
+  "deb-libmoox-log-any-perl"
+  "deb-libnamespace-autoclean-perl"
+  "deb-libplack-perl"
+  "deb-librdf-helper-properties-perl"
+  "deb-librdf-ns-curated-perl"
+  "deb-librdf-rdfa-generator-perl" {>= "0.200"}
+  "deb-librdf-trine-perl"
+  "deb-librdf-trine-serializer-rdfa-perl"
+  "deb-librdf-trinex-compatibility-attean-perl"
+  "deb-libtry-tiny-perl"
+  "deb-libtype-tiny-perl"
+  "deb-liburi-namespacemap-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-perl-any"
+  ("deb-perl" | "deb- libscalar-list-utils-perl")
+]
+extra-source "librdf-linkeddata-perl_1.940-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libr/librdf-linkeddata-perl/librdf-linkeddata-perl_1.940-3_all.deb"
+}

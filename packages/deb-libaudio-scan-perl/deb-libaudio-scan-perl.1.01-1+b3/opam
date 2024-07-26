@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libaudio-scan-perl_1.01-1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libaudio-scan-perl"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-perl" {>= "5.32.0-4"}
+  "deb-perl-base"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libaudio-scan-perl_1.01-1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/liba/libaudio-scan-perl/libaudio-scan-perl_1.01-1+b3_amd64.deb"
+}

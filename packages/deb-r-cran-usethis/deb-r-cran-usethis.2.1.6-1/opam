@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-usethis_2.1.6-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-usethis"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.0-1"}
+  "deb-r-cran-cli" {>= "3.0.1"}
+  "deb-r-cran-clipr" {>= "0.3.0"}
+  "deb-r-cran-crayon"
+  "deb-r-cran-curl" {>= "2.7"}
+  "deb-r-cran-desc" {>= "1.4.0"}
+  "deb-r-cran-fs" {>= "1.3.0"}
+  "deb-r-cran-gert" {>= "1.4.1"}
+  "deb-r-cran-gh" {>= "1.2.1"}
+  "deb-r-cran-glue" {>= "1.3.0"}
+  "deb-r-cran-jsonlite"
+  "deb-r-cran-lifecycle" {>= "1.0.0"}
+  "deb-r-cran-purrr"
+  "deb-r-cran-rappdirs"
+  "deb-r-cran-rlang" {>= "1.0.0"}
+  "deb-r-cran-rprojroot" {>= "1.2"}
+  "deb-r-cran-rstudioapi"
+  "deb-r-cran-whisker"
+  "deb-r-cran-withr" {>= "2.3.0"}
+  "deb-r-cran-yaml"
+]
+extra-source "r-cran-usethis_2.1.6-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-usethis/r-cran-usethis_2.1.6-1_all.deb"
+}

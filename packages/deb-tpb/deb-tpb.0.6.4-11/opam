@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tpb_0.6.4-11_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tpb"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libc6" {>= "2.14"}
+  "deb-libice6" {>= "1-1.0.0"}
+  "deb-libsm6"
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxinerama1"
+  "deb-libxosd2" {>= "2.2.14"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "tpb_0.6.4-11_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tpb/tpb_0.6.4-11_amd64.deb"
+}

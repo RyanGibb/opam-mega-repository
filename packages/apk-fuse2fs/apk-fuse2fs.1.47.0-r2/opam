@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add fuse2fs-1.47.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del fuse2fs"]
+]
+depends: [
+  "apk-e2fsprogs-libs" {= "1.47.0-r2"}
+  "apk-fuse" {= "2.9.9-r4"}
+  "apk-libblkid" {= "2.38.1-r8"}
+  "apk-libcom_err" {= "1.47.0-r2"}
+  "apk-libuuid" {= "2.38.1-r8"}
+  "apk-musl" {= "1.2.4-r2"}
+]
+extra-source "fuse2fs-1.47.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/fuse2fs-1.47.0-r2.apk"
+}

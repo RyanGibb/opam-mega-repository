@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i samplv1-lv2_0.9.29-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r samplv1-lv2"]
+]
+depends: [
+  "deb-libc6" {>= "2.27"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqt6core6" {>= "6.4.0"}
+  "deb-libqt6gui6" {>= "6.4.0"}
+  "deb-libqt6widgets6" {>= "6.3.0"}
+  "deb-libqt6xml6" {>= "6.1.2"}
+  "deb-libsndfile1" {>= "1.0.20"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-samplv1-common" {= "0.9.29-1"}
+]
+extra-source "samplv1-lv2_0.9.29-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/samplv1/samplv1-lv2_0.9.29-1_amd64.deb"
+}

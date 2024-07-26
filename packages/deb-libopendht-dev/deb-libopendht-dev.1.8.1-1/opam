@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libopendht-dev_1.8.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libopendht-dev"]
+]
+depends: [
+  "deb-libargon2-dev"
+  "deb-libgnutls28-dev"
+  "deb-libmsgpack-dev" {>= "1.2"}
+  "deb-libncurses5-dev"
+  "deb-libreadline-dev"
+]
+extra-source "libopendht-dev_1.8.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/opendht/libopendht-dev_1.8.1-1_amd64.deb"
+}

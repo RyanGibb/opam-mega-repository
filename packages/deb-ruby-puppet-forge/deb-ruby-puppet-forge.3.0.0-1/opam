@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-puppet-forge_3.0.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-puppet-forge"]
+]
+depends: [
+  "deb-ruby-faraday" {>= "1.0.0"}
+  "deb-ruby-faraday-middleware" {>= "1.0.0"}
+  "deb-ruby-gettext-setup"
+  "deb-ruby-minitar"
+  "deb-ruby-semantic-puppet" {>= "0.1.0"}
+  ("deb-ruby" | "deb- ruby-interpreter")
+]
+extra-source "ruby-puppet-forge_3.0.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-puppet-forge/ruby-puppet-forge_3.0.0-1_all.deb"
+}

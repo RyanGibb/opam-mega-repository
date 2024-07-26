@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcatalyst-plugin-authorization-acl-perl_0.16-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcatalyst-plugin-authorization-acl-perl"]
+]
+depends: [
+  "deb-libcatalyst-perl"
+  "deb-libcatalyst-plugin-authentication-perl"
+  "deb-libcatalyst-plugin-authorization-roles-perl"
+  "deb-libclass-data-inheritable-perl"
+  "deb-libclass-throwable-perl"
+  "deb-libmoose-perl"
+  "deb-libmro-compat-perl"
+  "deb-libnamespace-autoclean-perl"
+  "deb-libtree-simple-perl"
+  "deb-libtree-simple-visitorfactory-perl"
+  "deb-perl-any"
+]
+extra-source "libcatalyst-plugin-authorization-acl-perl_0.16-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libcatalyst-plugin-authorization-acl-perl/libcatalyst-plugin-authorization-acl-perl_0.16-1.1_all.deb"
+}

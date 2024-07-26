@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i molds_0.3.1-1+b7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r molds"]
+]
+depends: [
+  "deb-libboost-mpi1-67-0"
+  "deb-libboost-serialization1-67-0"
+  "deb-libboost-system1-67-0"
+  "deb-libboost-thread1-67-0"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgomp1" {>= "4.9"}
+  "deb-liblapacke"
+  "deb-libopenblas-base"
+  "deb-libopenmpi3"
+  "deb-libstdc++6" {>= "5.2"}
+]
+extra-source "molds_0.3.1-1+b7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/molds/molds_0.3.1-1+b7_amd64.deb"
+}

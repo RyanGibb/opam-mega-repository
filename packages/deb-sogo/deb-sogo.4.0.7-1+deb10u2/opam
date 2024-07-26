@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sogo_4.0.7-1+deb10u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sogo"]
+]
+depends: [
+  "deb-adduser"
+  "deb-gnustep-base-runtime" {>= "1.26.0"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libglib2-0-0" {>= "2.14.0"}
+  "deb-libgnustep-base1-26" {>= "1.26.0"}
+  "deb-libgnutls30" {>= "3.6.5"}
+  "deb-liblasso3" {>= "2.3.5"}
+  "deb-libmemcached11"
+  "deb-libobjc4" {>= "4.6"}
+  "deb-libsbjson2-3"
+  "deb-libsope1" {>= "4.0.7"}
+  "deb-lsb-base" {>= "3.0-6"}
+  "deb-memcached"
+  "deb-sogo-common" {= "4.0.7-1+deb10u2"}
+  "deb-zip"
+  ("deb-tmpreaper" | "deb- systemd")
+]
+extra-source "sogo_4.0.7-1+deb10u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sogo/sogo_4.0.7-1+deb10u2_amd64.deb"
+}

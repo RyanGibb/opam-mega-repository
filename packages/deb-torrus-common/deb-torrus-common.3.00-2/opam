@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i torrus-common_3.00-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r torrus-common"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libapache-session-perl"
+  "deb-libcache-ref-perl"
+  "deb-libcgi-fast-perl"
+  "deb-libgit-objectstore-perl"
+  "deb-libjson-perl"
+  "deb-libnet-snmp-perl"
+  "deb-libproc-daemon-perl"
+  "deb-libredis-fast-perl"
+  "deb-librrds-perl"
+  "deb-libtemplate-perl"
+  "deb-libtimedate-perl"
+  "deb-libxml-libxml-perl"
+  "deb-perl"
+  "deb-redis"
+  "deb-rrdtool"
+]
+conflicts: [
+  "deb-torrus-apache2"
+]
+extra-source "torrus-common_3.00-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/torrus/torrus-common_3.00-2_all.deb"
+}

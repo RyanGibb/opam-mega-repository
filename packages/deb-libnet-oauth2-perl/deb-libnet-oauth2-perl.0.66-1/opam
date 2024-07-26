@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libnet-oauth2-perl_0.66-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libnet-oauth2-perl"]
+]
+depends: [
+  "deb-libhttp-message-perl"
+  "deb-libjson-maybexs-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-libyaml-perl"
+  "deb-perl"
+]
+extra-source "libnet-oauth2-perl_0.66-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libn/libnet-oauth2-perl/libnet-oauth2-perl_0.66-1_all.deb"
+}

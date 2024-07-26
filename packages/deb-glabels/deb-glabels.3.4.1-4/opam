@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i glabels_3.4.1-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r glabels"]
+]
+depends: [
+  "deb-barcode" {>= "0.99"}
+  "deb-glabels-data" {= "3.4.1-4"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libebook-1-2-21" {>= "3.17"}
+  "deb-libebook-contacts-1-2-4" {>= "3.16.2"}
+  "deb-libedataserver-1-2-27" {>= "3.17"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libgtk-3-0" {>= "3.0.0"}
+  "deb-libiec16022-0" {>= "0.2.4"}
+  "deb-libpango-1-0-0" {>= "1.22.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libqrencode4" {>= "3.2.0"}
+  "deb-librsvg2-2" {>= "2.14.4"}
+  "deb-libxml2" {>= "2.7.4"}
+]
+extra-source "glabels_3.4.1-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/glabels/glabels_3.4.1-4_amd64.deb"
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libplplot-dev_5.14.0+dfsg-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libplplot-dev"]
+]
+depends: [
+  "deb-libfreetype6-dev"
+  "deb-libltdl-dev"
+  "deb-libplplot16" {= "5.14.0+dfsg-3"}
+  "deb-libplplotcxx14" {= "5.14.0+dfsg-3"}
+  "deb-libplplotfortran0" {= "5.14.0+dfsg-3"}
+  "deb-libplplotqt2" {= "5.14.0+dfsg-3"}
+  "deb-libplplotwxwidgets1" {= "5.14.0+dfsg-3"}
+  "deb-libqhull-dev"
+  "deb-libqsastime-dev"
+  "deb-libshp-dev"
+]
+extra-source "libplplot-dev_5.14.0+dfsg-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/plplot/libplplot-dev_5.14.0+dfsg-3_amd64.deb"
+}

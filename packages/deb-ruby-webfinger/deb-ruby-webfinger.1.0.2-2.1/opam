@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-webfinger_1.0.2-2.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-webfinger"]
+]
+depends: [
+  "deb-ruby-activesupport"
+  "deb-ruby-httpclient" {>= "2.4"}
+  "deb-ruby-multi-json"
+  ("deb-ruby" | "deb- ruby-interpreter")
+]
+extra-source "ruby-webfinger_1.0.2-2.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-webfinger/ruby-webfinger_1.0.2-2.1_all.deb"
+}

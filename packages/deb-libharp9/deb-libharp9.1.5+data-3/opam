@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libharp9_1.5+data-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libharp9"]
+]
+depends: [
+  "deb-libc6" {>= "2.27"}
+  "deb-libcoda15"
+  "deb-libhdf4-0-alt" {>= "4.2r4"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libnetcdf13" {>= "3.6.1"}
+  "deb-libsz2"
+  "deb-libudunits2-0" {>= "2.2.14"}
+  "deb-python3-cffi-backend"
+  "deb-python3-numpy"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libharp9_1.5+data-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/harp/libharp9_1.5+data-3_amd64.deb"
+}

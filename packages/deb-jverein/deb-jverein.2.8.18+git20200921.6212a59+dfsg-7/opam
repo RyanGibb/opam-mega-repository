@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i jverein_2.8.18+git20200921.6212a59+dfsg-7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r jverein"]
+]
+depends: [
+  "deb-hibiscus"
+  "deb-jameica"
+  "deb-jarwrapper"
+  "deb-libhbci4j-core-java"
+  "deb-libitext5-java"
+  "deb-libmail-java"
+  "deb-libmariadb-java"
+  "deb-libobantoo-java"
+  "deb-libpostgresql-jdbc-java"
+  "deb-libsuper-csv-java"
+  "deb-libswtchart-java"
+]
+extra-source "jverein_2.8.18+git20200921.6212a59+dfsg-7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/j/jverein/jverein_2.8.18+git20200921.6212a59+dfsg-7_all.deb"
+}

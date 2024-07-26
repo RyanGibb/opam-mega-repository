@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i doc-central_1.9.0_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r doc-central"]
+]
+depends: [
+  "deb-doc-base" {>= "0.8.10"}
+  "deb-info2www"
+  "deb-python3"
+  "deb-python3-debian"
+  "deb-sensible-utils"
+  ("deb-apache2" | "deb- httpd-cgi")
+]
+extra-source "doc-central_1.9.0_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/doc-central/doc-central_1.9.0_all.deb"
+}

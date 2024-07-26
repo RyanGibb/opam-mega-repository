@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sunclock_3.57-12_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sunclock"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libx11-6"
+  "deb-libxpm4"
+  "deb-sunclock-maps"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "sunclock_3.57-12_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sunclock/sunclock_3.57-12_amd64.deb"
+}

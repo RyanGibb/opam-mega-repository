@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-pillar_1.4.7-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-pillar"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.3-1"}
+  "deb-r-cran-cli"
+  "deb-r-cran-crayon" {>= "1.3.4"}
+  "deb-r-cran-ellipsis"
+  "deb-r-cran-fansi"
+  "deb-r-cran-lifecycle"
+  "deb-r-cran-rlang" {>= "0.3.0"}
+  "deb-r-cran-utf8" {>= "1.1.0"}
+  "deb-r-cran-vctrs" {>= "0.2.0"}
+]
+extra-source "r-cran-pillar_1.4.7-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-pillar/r-cran-pillar_1.4.7-1_all.deb"
+}

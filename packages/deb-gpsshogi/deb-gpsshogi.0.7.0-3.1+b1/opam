@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gpsshogi_0.7.0-3.1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gpsshogi"]
+]
+depends: [
+  "deb-gpsshogi-data" {= "0.7.0-3.1"}
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-program-options1-74-0" {>= "1.74.0+ds1"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgsl27" {>= "2.7.1"}
+  "deb-libosl1v5" {>= "0.8.0"}
+  "deb-libpocofoundation80" {>= "1.11.0"}
+  "deb-libpoconet80" {>= "1.11.0"}
+  "deb-libreadline8" {>= "6.0"}
+  "deb-libstdc++6" {>= "12"}
+  "deb-libtcmalloc-minimal4" {>= "2.10"}
+]
+extra-source "gpsshogi_0.7.0-3.1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gpsshogi/gpsshogi_0.7.0-3.1+b1_amd64.deb"
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgmerlin-dev_2.0.0~svn6298~dfsg0-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgmerlin-dev"]
+]
+depends: [
+  "deb-libgavl-dev" {>= "2~"}
+  "deb-libgmerlin2" {= "2.0.0~svn6298~dfsg0-2+b1"}
+  "deb-libxml2-dev"
+  "deb-pkg-config"
+]
+extra-source "libgmerlin-dev_2.0.0~svn6298~dfsg0-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gmerlin/libgmerlin-dev_2.0.0~svn6298~dfsg0-2+b1_amd64.deb"
+}

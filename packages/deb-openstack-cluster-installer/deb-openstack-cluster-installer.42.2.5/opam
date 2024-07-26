@@ -1,0 +1,57 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openstack-cluster-installer_42.2.5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openstack-cluster-installer"]
+]
+depends: [
+  "deb-adduser"
+  "deb-apache2"
+  "deb-apache2-utils"
+  "deb-bind9"
+  "deb-bind9-host"
+  "deb-bind9utils"
+  "deb-bridge-utils"
+  "deb-ceph-common"
+  "deb-curl"
+  "deb-dbconfig-common"
+  "deb-default-mysql-server"
+  "deb-ilorest"
+  "deb-ipcalc"
+  "deb-ipmitool"
+  "deb-ipxe"
+  "deb-isc-dhcp-server"
+  "deb-jq"
+  "deb-live-build"
+  "deb-lsb-base"
+  "deb-net-tools"
+  "deb-openstack-cluster-installer-cli" {= "42.2.5"}
+  "deb-openstack-debian-images"
+  "deb-openstack-pkg-tools"
+  "deb-openstack-puppet-modules"
+  "deb-php"
+  "deb-php-cli"
+  "deb-php-mysql"
+  "deb-php-ssh2"
+  "deb-php-yaml"
+  "deb-puppet-module-camptocamp-systemd"
+  "deb-puppet-module-heini-wait-for"
+  "deb-puppet-module-icann-quagga"
+  "deb-puppet-module-oci" {= "42.2.5"}
+  "deb-puppet-module-puppetlabs-firewall"
+  "deb-puppet-module-puppetlabs-sshkeys-core"
+  "deb-pxelinux"
+  "deb-qemu-utils"
+  "deb-ssl-cert"
+  "deb-sudo"
+  "deb-swift"
+  "deb-syslinux-common"
+  "deb-tftpd-hpa"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-php-dapphp-radius" | "deb- php-radius")
+  ("deb-puppetserver" | "deb- puppet-master")
+]
+extra-source "openstack-cluster-installer_42.2.5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openstack-cluster-installer/openstack-cluster-installer_42.2.5_all.deb"
+}

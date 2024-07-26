@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpass-otp-perl_1.5-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpass-otp-perl"]
+]
+depends: [
+  "deb-libconvert-base32-perl"
+  "deb-libdigest-hmac-perl"
+  "deb-libdigest-sha-perl"
+  "deb-libmath-bigint-perl"
+  "deb-perl-any"
+]
+extra-source "libpass-otp-perl_1.5-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libp/libpass-otp-perl/libpass-otp-perl_1.5-2_all.deb"
+}

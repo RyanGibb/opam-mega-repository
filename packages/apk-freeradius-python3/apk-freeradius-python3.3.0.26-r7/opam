@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add freeradius-python3-3.0.26-r7.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del freeradius-python3"]
+]
+depends: [
+  "apk-freeradius" {= "3.0.26-r7"}
+  "apk-musl" {= "1.2.4_git20230717-r4"}
+  "apk-python3" {= "3.11.9-r0"}
+]
+extra-source "freeradius-python3-3.0.26-r7.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/freeradius-python3-3.0.26-r7.apk"
+}

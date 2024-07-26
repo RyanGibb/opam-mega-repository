@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ruby-test-unit-3.6.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ruby-test-unit"]
+]
+depends: [
+  "apk-ruby" {= "3.3.3-r0"}
+  "apk-ruby-power_assert" {= "2.0.3-r1"}
+]
+extra-source "ruby-test-unit-3.6.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ruby-test-unit-3.6.2-r0.apk"
+}

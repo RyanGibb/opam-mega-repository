@@ -1,0 +1,59 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lomiri-system-settings_1.0.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lomiri-system-settings"]
+]
+depends: [
+  "deb-accountsservice"
+  "deb-bluez" {>= "5.23"}
+  "deb-fonts-noto-core"
+  "deb-gir1-2-glib-2-0"
+  "deb-gsettings-desktop-schemas"
+  "deb-libaccountsservice0" {>= "0.6.30"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgeonames0" {>= "0.1"}
+  "deb-libglib2-0-0" {>= "2.39.4"}
+  "deb-libgnome-desktop-3-20" {>= "3.17.92"}
+  "deb-libgsettings-qt1" {>= "0.1+14.04.20140408"}
+  "deb-libicu72" {>= "72.1~rc-1~"}
+  "deb-liblomirisystemsettings1" {= "1.0.1-2"}
+  "deb-liblomirisystemsettingsprivate0-0" {>= "1.0.1"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.14.1"}
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libqt5qml5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libupower-glib3" {>= "0.99.8"}
+  "deb-lomiri-indicator-network"
+  "deb-lomiri-schemas"
+  "deb-lomiri-wallpapers"
+  "deb-maliit-keyboard"
+  "deb-python3"
+  "deb-python3-dbus"
+  "deb-python3-gi"
+  "deb-qmenumodel-qml"
+  "deb-qml-module-gsettings1-0"
+  "deb-qml-module-lomiri-components"
+  "deb-qml-module-lomiri-components-extras"
+  "deb-qml-module-lomiri-connectivity" {>= "0.7.1"}
+  "deb-qml-module-lomiri-content"
+  "deb-qml-module-lomiri-settings-components"
+  "deb-qml-module-lomiri-settings-menus"
+  "deb-qml-module-lomiri-settings-vpn"
+  "deb-qml-module-ofono" {>= "0.90~"}
+  "deb-qml-module-qt-labs-folderlistmodel"
+  "deb-qml-module-qtsysteminfo"
+  "deb-suru-icon-theme" {>= "14.04+15.04.20150813~"}
+  ("deb-click" | "deb- ubuntu-snappy-cli")
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-libqt5gui5" {>= "5.2.0"} | "deb- libqt5gui5-gles" {>= "5.2.0"})
+  ("deb-libqt5quick5" {>= "5.0.2"} | "deb- libqt5quick5-gles" {>= "5.0.2"})
+  ("deb-qml-module-qtmultimedia" | "deb- qml-module-qtmultimedia-gles")
+]
+extra-source "lomiri-system-settings_1.0.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lomiri-system-settings/lomiri-system-settings_1.0.1-2_amd64.deb"
+}

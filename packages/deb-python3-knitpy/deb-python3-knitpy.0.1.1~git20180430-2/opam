@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-knitpy_0.1.1~git20180430-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-knitpy"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-ipykernel"
+  "deb-python3-jupyter-client"
+  "deb-python3-jupyter-core"
+  "deb-python3-pypandoc"
+  "deb-python3-traitlets"
+  "deb-python3-yaml"
+  "deb-python3-zmq"
+]
+extra-source "python3-knitpy_0.1.1~git20180430-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/knitpy/python3-knitpy_0.1.1~git20180430-2_all.deb"
+}

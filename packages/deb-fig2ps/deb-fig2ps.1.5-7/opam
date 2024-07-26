@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fig2ps_1.5-7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fig2ps"]
+]
+depends: [
+  "deb-fig2dev"
+  "deb-ghostscript"
+  "deb-perl"
+  "deb-perl-any"
+  "deb-texlive-extra-utils"
+  "deb-texlive-font-utils"
+  "deb-texlive-fonts-recommended"
+  "deb-texlive-latex-base"
+  "deb-texlive-latex-extra"
+  "deb-texlive-latex-recommended"
+]
+extra-source "fig2ps_1.5-7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fig2ps/fig2ps_1.5-7_all.deb"
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i content-hub_1.0.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r content-hub"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libcontent-hub1" {>= "1.0.0"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libgsettings-qt1" {>= "0.1+14.04.20140408"}
+  "deb-liblomiri-app-launch0" {>= "0.1.1"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "5.2"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "content-hub_1.0.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/content-hub/content-hub_1.0.2-1_amd64.deb"
+}

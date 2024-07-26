@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tuxpaint_1:0.9.28-sdl2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tuxpaint"]
+]
+depends: [
+  "deb-libc6" {>= "2.33"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libfribidi0" {>= "0.19.2"}
+  "deb-libimagequant0" {>= "2.11.10"}
+  "deb-libpaper1"
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-librsvg2-2" {>= "2.14.4"}
+  "deb-libsdl2-2-0-0" {>= "2.0.12"}
+  "deb-libsdl2-gfx-1-0-0" {>= "1.0.0"}
+  "deb-libsdl2-image-2-0-0" {>= "2.0.5"}
+  "deb-libsdl2-mixer-2-0-0" {>= "2.0.2"}
+  "deb-libsdl2-ttf-2-0-0" {>= "2.0.15"}
+  "deb-libvorbis0a" {>= "1.0.0-2"}
+  "deb-libvorbisfile3" {>= "1.0.0-2"}
+  "deb-netpbm"
+  "deb-tuxpaint-data" {= "1-0.9.28-sdl2-1"}
+  "deb-zlib1g" {>= "1-1.2.0"}
+  ("deb-tuxpaint-plugins-default" {>= "1-0.9.22-1"} | "deb- tuxpaint-plugins")
+]
+extra-source "tuxpaint_1:0.9.28-sdl2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tuxpaint/tuxpaint_0.9.28-sdl2-1_amd64.deb"
+}

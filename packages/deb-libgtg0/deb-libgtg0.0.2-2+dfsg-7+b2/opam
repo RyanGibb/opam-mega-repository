@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgtg0_0.2-2+dfsg-7+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgtg0"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgfortran5" {>= "8"}
+  "deb-libopen-trace-format1" {>= "1.12.5+dfsg"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libgtg0_0.2-2+dfsg-7+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gtg-trace/libgtg0_0.2-2+dfsg-7+b2_amd64.deb"
+}

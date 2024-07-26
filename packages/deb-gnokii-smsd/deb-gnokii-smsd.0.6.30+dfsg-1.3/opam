@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnokii-smsd_0.6.30+dfsg-1.3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnokii-smsd"]
+]
+depends: [
+  "deb-gnokii-common" {= "0.6.30+dfsg-1.3"}
+  "deb-libc6" {>= "2.3.2"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libgnokii6"
+]
+conflicts: [
+  "deb-smstools"
+]
+extra-source "gnokii-smsd_0.6.30+dfsg-1.3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnokii/gnokii-smsd_0.6.30+dfsg-1.3_amd64.deb"
+}

@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-braces_2.0.2-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-braces"]
+]
+depends: [
+  "deb-node-arr-flatten" {>= "1.0.1"}
+  "deb-node-array-unique" {>= "0.2.1"}
+  "deb-node-debug" {>= "2.1.0"}
+  "deb-node-define-property" {>= "0.2.5"}
+  "deb-node-extend-shallow" {>= "2.0.1"}
+  "deb-node-fill-range" {>= "3.0.3"}
+  "deb-node-isobject" {>= "2.1.0"}
+  "deb-node-regex-not" {>= "1.0.0"}
+  "deb-node-repeat-element" {>= "1.1.2"}
+  "deb-node-snapdragon" {>= "0.8.1"}
+  "deb-node-to-regex" {>= "3.0.1"}
+  "deb-nodejs"
+]
+extra-source "node-braces_2.0.2-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-braces/node-braces_2.0.2-2_all.deb"
+}

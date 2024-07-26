@@ -1,0 +1,50 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-syncthing-syncthing-dev_1.19.2~ds1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-syncthing-syncthing-dev"]
+]
+depends: [
+  "deb-golang-github-alecthomas-kong-dev" {>= "0.2.17"}
+  "deb-golang-github-audriusbutkevicius-pfilter-dev"
+  "deb-golang-github-audriusbutkevicius-recli-dev"
+  "deb-golang-github-calmh-xdr-dev"
+  "deb-golang-github-ccding-go-stun-dev" {>= "0.1.2"}
+  "deb-golang-github-chmduquesne-rollinghash-dev" {>= "4.0.0"}
+  "deb-golang-github-go-ldap-ldap-dev" {>= "3.2.3"}
+  "deb-golang-github-gobwas-glob-dev" {>= "0.2.1"}
+  "deb-golang-github-gogo-protobuf-dev" {>= "1.2.1+git20190611.dadb6258"}
+  "deb-golang-github-golang-groupcache-dev"
+  "deb-golang-github-google-shlex-dev"
+  "deb-golang-github-greatroar-blobloom-dev" {>= "0.7.0"}
+  "deb-golang-github-hashicorp-golang-lru-dev"
+  "deb-golang-github-jackpal-gateway-dev"
+  "deb-golang-github-jackpal-go-nat-pmp-dev"
+  "deb-golang-github-julienschmidt-httprouter-dev"
+  "deb-golang-github-kballard-go-shellquote-dev"
+  "deb-golang-github-lib-pq-dev"
+  "deb-golang-github-lucas-clemente-quic-go-dev" {>= "0.29.0"}
+  "deb-golang-github-minio-sha256-simd-dev"
+  "deb-golang-github-miscreant-miscreant-go-dev"
+  "deb-golang-github-pierrec-lz4-dev"
+  "deb-golang-github-pkg-errors-dev"
+  "deb-golang-github-prometheus-client-golang-dev" {>= "0.9.0"}
+  "deb-golang-github-rcrowley-go-metrics-dev"
+  "deb-golang-github-sasha-s-go-deadlock-dev"
+  "deb-golang-github-shirou-gopsutil-dev" {>= "3.21.12"}
+  "deb-golang-github-syncthing-notify-dev"
+  "deb-golang-github-syndtr-goleveldb-dev"
+  "deb-golang-github-thejerf-suture-dev" {>= "4.0.1"}
+  "deb-golang-github-urfave-cli-dev"
+  "deb-golang-github-vitrun-qart-dev"
+  "deb-golang-golang-x-crypto-dev"
+  "deb-golang-golang-x-net-dev"
+  "deb-golang-golang-x-sys-dev"
+  "deb-golang-golang-x-text-dev"
+  "deb-golang-golang-x-time-dev"
+  "deb-golang-google-protobuf-dev"
+]
+extra-source "golang-github-syncthing-syncthing-dev_1.19.2~ds1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/syncthing/golang-github-syncthing-syncthing-dev_1.19.2~ds1-1_all.deb"
+}

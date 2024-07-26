@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-tar-stream_1.5.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-tar-stream"]
+]
+depends: [
+  "deb-node-bl" {>= "1.0.0"}
+  "deb-node-end-of-stream" {>= "1.0.0"}
+  "deb-node-xtend" {>= "4.0.0"}
+  "deb-nodejs"
+]
+extra-source "node-tar-stream_1.5.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-tar-stream/node-tar-stream_1.5.2-1_all.deb"
+}

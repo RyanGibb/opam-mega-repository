@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsword1.9.0_1.9.0+dfsg-4+b4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsword1.9.0"]
+]
+depends: [
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.33"}
+  "deb-libclucene-core1v5" {>= "2.3.3.4+dfsg"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libicu72" {>= "72.1~rc-1~"}
+  "deb-liblzma5" {>= "5.1.1alpha+20110809"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libsword-common"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libsword1.9.0_1.9.0+dfsg-4+b4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sword/libsword1.9.0_1.9.0+dfsg-4+b4_amd64.deb"
+}

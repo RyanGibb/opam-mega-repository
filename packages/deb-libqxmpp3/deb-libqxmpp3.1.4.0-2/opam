@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libqxmpp3_1.4.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libqxmpp3"]
+]
+depends: [
+  "deb-gstreamer1-0-plugins-base"
+  "deb-gstreamer1-0-plugins-good"
+  "deb-gstreamer1-0-plugins-ugly"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libgstreamer1-0-0" {>= "1.0.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5network5" {>= "5.15.1"}
+  "deb-libqt5xml5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "5"}
+]
+extra-source "libqxmpp3_1.4.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qxmpp/libqxmpp3_1.4.0-2_amd64.deb"
+}

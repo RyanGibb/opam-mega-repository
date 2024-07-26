@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lincity-ng_2.9~git20150314-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lincity-ng"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgl1"
+  "deb-libphysfs1" {>= "3.0.2"}
+  "deb-libsdl-gfx1-2-5" {>= "2.0.25"}
+  "deb-libsdl-image1-2" {>= "1.2.10"}
+  "deb-libsdl-mixer1-2" {>= "1.2.12"}
+  "deb-libsdl-ttf2-0-0"
+  "deb-libsdl1-2-compat-shim"
+  "deb-libstdc++6" {>= "11"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-lincity-ng-data" {= "2.9~git20150314-5"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "lincity-ng_2.9~git20150314-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lincity-ng/lincity-ng_2.9~git20150314-5_amd64.deb"
+}

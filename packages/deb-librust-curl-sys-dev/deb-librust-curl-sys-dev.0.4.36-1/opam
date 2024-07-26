@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-curl-sys-dev_0.4.36-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-curl-sys-dev"]
+]
+depends: [
+  "deb-libcurl4-gnutls-dev"
+  "deb-librust-cc-1+default-dev"
+  "deb-librust-libc-dev"
+  "deb-librust-pkg-config-dev"
+  "deb-librust-vcpkg-0-2+default-dev"
+  "deb-librust-winapi-0-3+default-dev"
+  "deb-librust-winapi-0-3+winsock2-dev"
+  "deb-librust-winapi-0-3+ws2def-dev"
+]
+extra-source "librust-curl-sys-dev_0.4.36-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-curl-sys/librust-curl-sys-dev_0.4.36-1_amd64.deb"
+}

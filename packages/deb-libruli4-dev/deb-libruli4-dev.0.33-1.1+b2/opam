@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libruli4-dev_0.33-1.1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libruli4-dev"]
+]
+depends: [
+  "deb-liboop-dev" {>= "1.0"}
+  "deb-libruli4" {= "0.33-1.1+b2"}
+  ("deb-libc6-dev" | "deb- libc-dev")
+]
+conflicts: [
+  "deb-libruli-dev"
+]
+extra-source "libruli4-dev_0.33-1.1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruli/libruli4-dev_0.33-1.1+b2_amd64.deb"
+}

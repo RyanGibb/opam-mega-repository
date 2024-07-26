@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgenomicsdb0_1.4.4-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgenomicsdb0"]
+]
+depends: [
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.34"}
+  "deb-libcurl4" {>= "7.18.0"}
+  "deb-libfmt9" {>= "9.1.0+ds1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgomp1" {>= "4.9"}
+  "deb-liblzma5" {>= "5.1.1alpha+20120614"}
+  "deb-libmuparserx4-0-11" {>= "4.0.11"}
+  "deb-libprotobuf32" {>= "3.21.12"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libuuid1" {>= "2.16"}
+  "deb-openmpi-bin"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libgenomicsdb0_1.4.4-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/genomicsdb/libgenomicsdb0_1.4.4-3_amd64.deb"
+}

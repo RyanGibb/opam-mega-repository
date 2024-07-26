@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcatalyst-plugin-smarturi-perl_0.041-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcatalyst-plugin-smarturi-perl"]
+]
+depends: [
+  "deb-libcatalyst-perl"
+  "deb-libclass-c3-componentised-perl"
+  "deb-libclass-load-perl"
+  "deb-libmoose-perl"
+  "deb-libnamespace-clean-perl"
+  "deb-libtask-weaken-perl"
+  "deb-liburi-smarturi-perl"
+  "deb-perl"
+]
+extra-source "libcatalyst-plugin-smarturi-perl_0.041-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libcatalyst-plugin-smarturi-perl/libcatalyst-plugin-smarturi-perl_0.041-1_all.deb"
+}

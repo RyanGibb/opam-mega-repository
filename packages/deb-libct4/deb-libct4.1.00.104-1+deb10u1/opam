@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libct4_1.00.104-1+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libct4"]
+]
+depends: [
+  "deb-freetds-common"
+  "deb-libc6" {>= "2.17"}
+  "deb-libgmp10"
+  "deb-libgnutls30" {>= "3.6.6"}
+  "deb-libgssapi-krb5-2" {>= "1.17"}
+  "deb-libhogweed4"
+  "deb-libnettle6"
+]
+extra-source "libct4_1.00.104-1+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/freetds/libct4_1.00.104-1+deb10u1_amd64.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i elan_1.4.2-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r elan"]
+]
+depends: [
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.34"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libgcc-s1" {>= "4.2"}
+  "deb-libzstd1" {>= "1.5.2"}
+  "deb-sensible-utils"
+]
+extra-source "elan_1.4.2-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/elan/elan_1.4.2-5_amd64.deb"
+}

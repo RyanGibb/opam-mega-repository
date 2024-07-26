@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i nghttp2-client_1.43.0-1+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r nghttp2-client"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libev4" {>= "1-4.04"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libjansson4" {>= "2.0.1"}
+  "deb-libjemalloc2" {>= "5.0.0"}
+  "deb-libnghttp2-14" {= "1.43.0-1+deb11u1"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libstdc++6" {>= "7"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-lsb-base"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "nghttp2-client_1.43.0-1+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/nghttp2/nghttp2-client_1.43.0-1+deb11u1_amd64.deb"
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i liblo-ocaml-dev_0.2.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r liblo-ocaml-dev"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-liblo-dev"
+  "deb-liblo-ocaml"
+  "deb-liblo-ocaml" {= "0.2.0-2"}
+  "deb-liblo7" {>= "0.26~repack"}
+  "deb-ocaml"
+  "deb-ocaml-findlib"
+]
+extra-source "liblo-ocaml-dev_0.2.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/ocaml-lo/liblo-ocaml-dev_0.2.0-2_amd64.deb"
+}

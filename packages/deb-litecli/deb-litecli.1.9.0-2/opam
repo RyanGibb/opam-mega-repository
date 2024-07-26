@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i litecli_1.9.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r litecli"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-cli-helpers"
+  "deb-python3-click"
+  "deb-python3-configobj"
+  "deb-python3-prompt-toolkit"
+  "deb-python3-pygments"
+  "deb-python3-sqlparse"
+]
+extra-source "litecli_1.9.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/litecli/litecli_1.9.0-2_all.deb"
+}

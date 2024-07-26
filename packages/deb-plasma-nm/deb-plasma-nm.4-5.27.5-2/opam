@@ -1,0 +1,49 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i plasma-nm_4:5.27.5-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r plasma-nm"]
+]
+depends: [
+  "deb-kio"
+  "deb-libc6" {>= "2.14"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libkf5completion5" {>= "5.102.0~"}
+  "deb-libkf5configcore5" {>= "4.97.0"}
+  "deb-libkf5configwidgets5" {>= "5.102.0~"}
+  "deb-libkf5coreaddons5" {>= "5.102.0~"}
+  "deb-libkf5dbusaddons5" {>= "5.102.0~"}
+  "deb-libkf5i18n5" {>= "5.102.0~"}
+  "deb-libkf5kiogui5" {>= "5.102.0~"}
+  "deb-libkf5kiowidgets5" {>= "5.102.0~"}
+  "deb-libkf5modemmanagerqt6" {>= "5.102.0~"}
+  "deb-libkf5networkmanagerqt6" {>= "5.102.0~"}
+  "deb-libkf5notifications5" {>= "5.102.0~"}
+  "deb-libkf5solid5" {>= "5.102.0~"}
+  "deb-libkf5wallet-bin"
+  "deb-libkf5wallet5" {>= "5.102.0~"}
+  "deb-libkf5widgetsaddons5" {>= "5.102.0~"}
+  "deb-libkf5windowsystem5" {>= "5.102.0~"}
+  "deb-libnm0" {>= "1.40.0"}
+  "deb-libopenconnect5" {>= "9.00"}
+  "deb-libqca-qt5-2" {>= "2.1.0~"}
+  "deb-libqt5core5a" {>= "5.15.2~"}
+  "deb-libqt5dbus5" {>= "5.15.2~"}
+  "deb-libqt5network5" {>= "5.15.2~"}
+  "deb-libqt5qml5" {>= "5.15.2~"}
+  "deb-libqt5quickwidgets5" {>= "5.15.2~"}
+  "deb-libqt5widgets5" {>= "5.15.2~"}
+  "deb-libqt5xml5" {>= "5.15.2~"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-mobile-broadband-provider-info"
+  "deb-network-manager"
+  "deb-plasma-framework"
+  "deb-qml-module-org-kde-kcoreaddons"
+  "deb-qml-module-org-kde-kirigami2"
+  "deb-qml-module-org-kde-prison"
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+]
+extra-source "plasma-nm_4:5.27.5-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/plasma-nm/plasma-nm_5.27.5-2_amd64.deb"
+}

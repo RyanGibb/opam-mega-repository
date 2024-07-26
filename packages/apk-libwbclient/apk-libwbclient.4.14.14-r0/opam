@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libwbclient-4.14.14-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libwbclient"]
+]
+depends: [
+  "apk-musl" {= "1.2.2-r5"}
+  "apk-samba-util-libs" {= "4.14.14-r0"}
+]
+extra-source "libwbclient-4.14.14-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/libwbclient-4.14.14-r0.apk"
+}

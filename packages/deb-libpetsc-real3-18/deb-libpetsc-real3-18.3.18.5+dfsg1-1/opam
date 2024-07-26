@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpetsc-real3.18_3.18.5+dfsg1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpetsc-real3.18"]
+]
+depends: [
+  "deb-libamd2" {>= "1-5.6.0"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcholmod3" {>= "1-5.6.0"}
+  "deb-libfftw3-double3" {>= "3.3.10"}
+  "deb-libfftw3-mpi3" {>= "3.3.10"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libgfortran5" {>= "10"}
+  "deb-libhdf5-openmpi-103-1" {>= "1.10.5"}
+  "deb-libhypre-2-26-0" {>= "2.26.0"}
+  "deb-libklu1" {>= "1-5.6.0"}
+  "deb-libmumps-5-5" {>= "5.5.1"}
+  "deb-libopenmpi3" {>= "4.1.4"}
+  "deb-libptscotch-7-0" {>= "7.0.3"}
+  "deb-libscalapack-openmpi2-2" {>= "2.2.1"}
+  "deb-libspqr2" {>= "1-5.12.0+dfsg"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libsuperlu-dist8" {>= "8.1.2+dfsg1"}
+  "deb-libsuperlu5" {>= "5.3.0+dfsg1"}
+  "deb-libtrilinos-ml-13-2" {>= "13.2.0"}
+  "deb-libumfpack5" {>= "1-5.6.0"}
+  "deb-libx11-6"
+  "deb-libyaml-0-2"
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-ocl-icd-libopencl1" | "deb- libopencl1")
+]
+conflicts: [
+  "deb-libpetsc3-6" {< "3.6.2.dfsg1-4"}
+]
+extra-source "libpetsc-real3.18_3.18.5+dfsg1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/petsc/libpetsc-real3.18_3.18.5+dfsg1-1_amd64.deb"
+}

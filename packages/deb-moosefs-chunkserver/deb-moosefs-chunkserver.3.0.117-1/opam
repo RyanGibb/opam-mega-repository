@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i moosefs-chunkserver_3.0.117-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r moosefs-chunkserver"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-lsb-base"
+  "deb-moosefs-common" {>= "3.0.117-1"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+conflicts: [
+  "deb-lizardfs-chunkserver" {< "3.12.0+dfsg-4"}
+]
+extra-source "moosefs-chunkserver_3.0.117-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/moosefs/moosefs-chunkserver_3.0.117-1_amd64.deb"
+}

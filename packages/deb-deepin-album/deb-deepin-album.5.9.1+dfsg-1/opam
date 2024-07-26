@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i deepin-album_5.9.1+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r deepin-album"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libdtkcore5" {>= "5.5.23~"}
+  "deb-libdtkgui5" {>= "5.5.21"}
+  "deb-libdtkwidget5" {>= "5.5.37"}
+  "deb-libfreeimage3" {>= "3.18.0+ds2"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgio-qt0" {>= "0.0.11"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.0.2"}
+  "deb-libqt5printsupport5" {>= "5.0.2"}
+  "deb-libqt5sql5" {>= "5.0.2"}
+  "deb-libqt5svg5" {>= "5.6.0~beta"}
+  "deb-libqt5widgets5" {>= "5.15.1"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libudisks2-qt5-0" {>= "5.0.6"}
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+]
+extra-source "deepin-album_5.9.1+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/deepin-album/deepin-album_5.9.1+dfsg-1_amd64.deb"
+}

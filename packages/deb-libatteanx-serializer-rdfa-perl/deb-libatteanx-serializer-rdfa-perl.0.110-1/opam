@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libatteanx-serializer-rdfa-perl_0.110-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libatteanx-serializer-rdfa-perl"]
+]
+depends: [
+  "deb-libattean-perl"
+  "deb-libmoo-perl"
+  "deb-libnamespace-clean-perl"
+  "deb-librdf-rdfa-generator-perl"
+  "deb-libtype-tiny-perl"
+  "deb-perl-any"
+]
+extra-source "libatteanx-serializer-rdfa-perl_0.110-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/liba/libatteanx-serializer-rdfa-perl/libatteanx-serializer-rdfa-perl_0.110-1_all.deb"
+}

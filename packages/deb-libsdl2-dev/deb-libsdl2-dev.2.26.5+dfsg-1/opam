@@ -1,0 +1,42 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsdl2-dev_2.26.5+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsdl2-dev"]
+]
+depends: [
+  "deb-libasound2-dev"
+  "deb-libdbus-1-dev"
+  "deb-libdecor-0-dev"
+  "deb-libdrm-dev"
+  "deb-libegl-dev"
+  "deb-libgbm-dev"
+  "deb-libgl-dev"
+  "deb-libgles-dev"
+  "deb-libibus-1-0-dev"
+  "deb-libpulse-dev"
+  "deb-libsamplerate0-dev"
+  "deb-libsdl2-2-0-0" {= "2.26.5+dfsg-1"}
+  "deb-libsndio-dev"
+  "deb-libudev-dev"
+  "deb-libwayland-dev"
+  "deb-libx11-dev"
+  "deb-libxcursor-dev"
+  "deb-libxext-dev"
+  "deb-libxfixes-dev"
+  "deb-libxi-dev"
+  "deb-libxinerama-dev"
+  "deb-libxkbcommon-dev"
+  "deb-libxrandr-dev"
+  "deb-libxss-dev"
+  "deb-libxt-dev"
+  "deb-libxv-dev"
+  "deb-libxxf86vm-dev"
+]
+conflicts: [
+  "deb-libsdl-1-3-dev"
+]
+extra-source "libsdl2-dev_2.26.5+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libs/libsdl2/libsdl2-dev_2.26.5+dfsg-1_amd64.deb"
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnome-multi-writer_3.30.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnome-multi-writer"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libcanberra-gtk3-0" {>= "0.25"}
+  "deb-libcanberra0" {>= "0.2"}
+  "deb-libglib2-0-0" {>= "2.46"}
+  "deb-libgtk-3-0" {>= "3.11.5"}
+  "deb-libgudev-1-0-0" {>= "146"}
+  "deb-libgusb2" {>= "0.2.4"}
+  "deb-libpolkit-gobject-1-0" {>= "0.99"}
+  "deb-libudisks2-0" {>= "2.0.91"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "gnome-multi-writer_3.30.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnome-multi-writer/gnome-multi-writer_3.30.0-2_amd64.deb"
+}

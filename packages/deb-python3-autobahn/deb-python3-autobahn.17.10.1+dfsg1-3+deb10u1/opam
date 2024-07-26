@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-autobahn_17.10.1+dfsg1-3+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-autobahn"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-cbor" {>= "1.0.0"}
+  "deb-python3-lz4"
+  "deb-python3-nacl"
+  "deb-python3-openssl"
+  "deb-python3-pyqrcode"
+  "deb-python3-service-identity"
+  "deb-python3-six" {>= "1.10.0"}
+  "deb-python3-snappy"
+  "deb-python3-trie"
+  "deb-python3-twisted"
+  "deb-python3-txaio"
+  "deb-python3-u-msgpack"
+  "deb-python3-ubjson"
+  "deb-python3-wsaccel"
+  "deb-python3-zope-interface"
+]
+extra-source "python3-autobahn_17.10.1+dfsg1-3+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-autobahn/python3-autobahn_17.10.1+dfsg1-3+deb10u1_all.deb"
+}

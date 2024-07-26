@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libboost1.74-tools-dev_1.74.0+ds1-21_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libboost1.74-tools-dev"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "11"}
+]
+conflicts: [
+  "deb-bjam"
+  "deb-boost-build"
+  "deb-libboost1-49-dev"
+  "deb-libboost1-53-tools-dev"
+  "deb-libboost1-54-tools-dev"
+  "deb-libboost1-55-tools-dev"
+  "deb-libboost1-57-tools-dev"
+  "deb-libboost1-58-tools-dev"
+  "deb-libboost1-60-tools-dev"
+  "deb-libboost1-61-tools-dev"
+  "deb-libboost1-62-tools-dev"
+  "deb-libboost1-63-tools-dev"
+  "deb-libboost1-65-tools-dev"
+  "deb-libboost1-67-tools-dev"
+  "deb-libboost1-70-tools-dev"
+  "deb-libboost1-71-tools-dev"
+]
+extra-source "libboost1.74-tools-dev_1.74.0+ds1-21_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/boost1.74/libboost1.74-tools-dev_1.74.0+ds1-21_amd64.deb"
+}

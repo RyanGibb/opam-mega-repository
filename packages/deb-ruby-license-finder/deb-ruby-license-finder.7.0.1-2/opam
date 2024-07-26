@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-license-finder_7.0.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-license-finder"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-ruby"
+  "deb-ruby-bundler"
+  "deb-ruby-thor" {>= "1.2"}
+  "deb-ruby-tomlrb" {< "2.1"}
+  "deb-ruby-tomlrb" {>= "1.3"}
+  "deb-ruby-with-env" {>= "1.1.0"}
+  "deb-ruby-xml-simple" {>= "1.1.9"}
+  "deb-ruby-zip" {< "3"}
+  "deb-ruby-zip" {>= "1"}
+]
+conflicts: [
+  "deb-license-finder-pip"
+  "deb-ruby-gitlab-license-finder"
+]
+extra-source "ruby-license-finder_7.0.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-license-finder/ruby-license-finder_7.0.1-2_all.deb"
+}

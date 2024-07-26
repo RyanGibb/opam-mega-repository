@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openjade_1.4devel1-22_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openjade"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libosp5" {>= "1.5.2-1"}
+  "deb-libostyle1c2"
+  "deb-libstdc++6" {>= "5"}
+  "deb-sgml-base" {>= "1.28"}
+]
+conflicts: [
+  "deb-libostyle-dev" {< "1.4devel1-14"}
+]
+extra-source "openjade_1.4devel1-22_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openjade/openjade_1.4devel1-22_amd64.deb"
+}

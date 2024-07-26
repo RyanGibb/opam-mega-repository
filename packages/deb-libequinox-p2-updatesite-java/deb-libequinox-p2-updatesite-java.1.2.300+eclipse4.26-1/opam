@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libequinox-p2-updatesite-java_1.2.300+eclipse4.26-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libequinox-p2-updatesite-java"]
+]
+depends: [
+  "deb-libequinox-app-java"
+  "deb-libequinox-common-java"
+  "deb-libequinox-p2-artifact-repository-java"
+  "deb-libequinox-p2-core-java"
+  "deb-libequinox-p2-metadata-java"
+  "deb-libequinox-p2-metadata-repository-java"
+  "deb-libequinox-p2-publisher-eclipse-java"
+  "deb-libequinox-p2-publisher-java"
+  "deb-libequinox-p2-repository-java"
+]
+extra-source "libequinox-p2-updatesite-java_1.2.300+eclipse4.26-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/equinox-p2/libequinox-p2-updatesite-java_1.2.300+eclipse4.26-1_all.deb"
+}

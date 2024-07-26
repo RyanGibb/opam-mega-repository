@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kde-telepathy-kaccounts_22.12.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kde-telepathy-kaccounts"]
+]
+depends: [
+  "deb-libaccounts-qt5-1" {>= "1.13"}
+  "deb-libc6" {>= "2.4"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libkaccounts2" {>= "4-20.07.90"}
+  "deb-libkf5configcore5" {>= "5.11~"}
+  "deb-libkf5coreaddons5" {>= "5.11~"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.4"}
+  "deb-libsignon-qt5-1" {>= "8.57+20150423"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-libtelepathy-qt5-0" {>= "0.9.8~"}
+]
+extra-source "kde-telepathy-kaccounts_22.12.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/ktp-common-internals/kde-telepathy-kaccounts_22.12.3-1_amd64.deb"
+}

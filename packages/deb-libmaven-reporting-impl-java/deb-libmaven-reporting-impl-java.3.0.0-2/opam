@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmaven-reporting-impl-java_3.0.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmaven-reporting-impl-java"]
+]
+depends: [
+  "deb-libdoxia-core-java" {>= "1.7"}
+  "deb-libdoxia-sitetools-java" {>= "1.7.4"}
+  "deb-libmaven-reporting-api-java" {>= "3.0"}
+  "deb-libmaven-shared-utils-java" {>= "3.1.0"}
+  "deb-libmaven3-core-java" {>= "3.5.0"}
+  "deb-libplexus-utils-java"
+]
+extra-source "libmaven-reporting-impl-java_3.0.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/maven-reporting-impl/libmaven-reporting-impl-java_3.0.0-2_all.deb"
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-pyramid_1.10.4+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-pyramid"]
+]
+depends: [
+  "deb-python3"
+  "deb-python3-any"
+  "deb-python3-hupper"
+  "deb-python3-pkg-resources"
+  "deb-python3-plaster"
+  "deb-python3-plaster-pastedeploy"
+  "deb-python3-translationstring"
+  "deb-python3-venusian"
+  "deb-python3-webob"
+  "deb-python3-zope-deprecation"
+  "deb-python3-zope-interface"
+]
+extra-source "python3-pyramid_1.10.4+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-pyramid/python3-pyramid_1.10.4+dfsg-2_all.deb"
+}

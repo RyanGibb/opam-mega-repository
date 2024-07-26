@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsugarext-dev_0.120-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsugarext-dev"]
+]
+depends: [
+  "deb-gir1-2-sugarext-1-0" {= "0.120-1"}
+  "deb-libasound2-dev"
+  "deb-libglib2-0-dev"
+  "deb-libgtk-3-dev"
+  "deb-libice-dev"
+  "deb-libsm-dev"
+  "deb-libsugarext0" {= "0.120-1"}
+  "deb-libx11-dev"
+  "deb-libxfixes-dev"
+  "deb-libxi-dev"
+]
+extra-source "libsugarext-dev_0.120-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sugar-toolkit-gtk3/libsugarext-dev_0.120-1_amd64.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i clipit_1.4.4+git20190202-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r clipit"]
+]
+depends: [
+  "deb-diodon"
+  "deb-libayatana-appindicator3-1" {>= "0.2.92"}
+  "deb-libc6" {>= "2.7"}
+  "deb-libglib2-0-0" {>= "2.30.0"}
+  "deb-libgtk-3-0" {>= "3.19.12"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libx11-6"
+  "deb-xdotool"
+  "deb-zenity"
+]
+extra-source "clipit_1.4.4+git20190202-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/clipit/clipit_1.4.4+git20190202-2_amd64.deb"
+}

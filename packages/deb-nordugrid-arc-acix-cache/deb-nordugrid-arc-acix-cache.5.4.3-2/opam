@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i nordugrid-arc-acix-cache_5.4.3-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r nordugrid-arc-acix-cache"]
+]
+depends: [
+  "deb-init-system-helpers" {>= "1.51"}
+  "deb-lsb-base" {>= "3.0-6"}
+  "deb-nordugrid-arc-acix-core" {= "5.4.3-2"}
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7~"}
+]
+extra-source "nordugrid-arc-acix-cache_5.4.3-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/nordugrid-arc/nordugrid-arc-acix-cache_5.4.3-2_all.deb"
+}

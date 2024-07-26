@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i amide_1.0.6-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r amide"]
+]
+depends: [
+  "deb-libavcodec-extra59"
+  "deb-libavutil57" {>= "7-5.0"}
+  "deb-libc6" {>= "2.33"}
+  "deb-libdcmtk17" {>= "3.6.7"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.35.9"}
+  "deb-libgnomecanvas2-0" {>= "2.11.1"}
+  "deb-libgsl27" {>= "2.7.1"}
+  "deb-libgtk2-0-0" {>= "2.22.0"}
+  "deb-libmdc3" {>= "0.21.2+dfsg"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libvolpack1" {>= "1.0b3"}
+  "deb-libxml2" {>= "2.7.4"}
+]
+extra-source "amide_1.0.6-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/amide/amide_1.0.6-1_amd64.deb"
+}

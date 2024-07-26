@@ -1,0 +1,45 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkf5ksieveui5_4:18.08.3-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkf5ksieveui5"]
+]
+depends: [
+  "deb-kio"
+  "deb-libc6" {>= "2.14"}
+  "deb-libkf5archive5" {>= "4.96.0"}
+  "deb-libkf5completion5" {>= "4.97.0"}
+  "deb-libkf5configcore5" {>= "4.98.0"}
+  "deb-libkf5configgui5" {>= "4.97.0"}
+  "deb-libkf5configwidgets5" {>= "5.23.0"}
+  "deb-libkf5coreaddons5" {>= "4.99.0"}
+  "deb-libkf5i18n5" {>= "4.97.0"}
+  "deb-libkf5iconthemes5" {>= "5.25.0"}
+  "deb-libkf5identitymanagement5" {>= "16.08.0"}
+  "deb-libkf5kiowidgets5" {>= "4.96.0"}
+  "deb-libkf5kmanagesieve5" {= "4-18.08.3-2"}
+  "deb-libkf5ksieve-data" {= "4-18.08.3-2"}
+  "deb-libkf5ksieve5" {= "4-18.08.3-2"}
+  "deb-libkf5libkdepim-plugins"
+  "deb-libkf5libkdepim5" {>= "4-16.04.0"}
+  "deb-libkf5mime5abi1" {>= "17.12.1"}
+  "deb-libkf5newstuff5" {>= "4.95.0"}
+  "deb-libkf5pimcommon5abi2" {>= "4-18.07.90"}
+  "deb-libkf5pimtextedit5abi2" {>= "18.07.90"}
+  "deb-libkf5sonnetui5" {>= "5.12.0"}
+  "deb-libkf5syntaxhighlighting5"
+  "deb-libkf5widgetsaddons5" {>= "5.4.0+git20141119.0013+15.04"}
+  "deb-libkf5windowsystem5" {>= "4.96.0"}
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5dbus5" {>= "5.9.0~"}
+  "deb-libqt5gui5" {>= "5.9.0~"}
+  "deb-libqt5network5" {>= "5.9.0~"}
+  "deb-libqt5printsupport5" {>= "5.9.0~"}
+  "deb-libqt5webenginewidgets5" {>= "5.7.1"}
+  "deb-libqt5widgets5" {>= "5.11.0~rc1"}
+  "deb-libstdc++6" {>= "4.1.1"}
+]
+extra-source "libkf5ksieveui5_4:18.08.3-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libk/libkf5ksieve/libkf5ksieveui5_18.08.3-2_amd64.deb"
+}

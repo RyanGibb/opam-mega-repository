@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libaqebics0_5.7.8-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libaqebics0"]
+]
+depends: [
+  "deb-libaqbanking35" {>= "5.3.1beta"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libgnutls30" {>= "3.6.5"}
+  "deb-libgwenhywfar60" {>= "4.17.0"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libxmlsec1" {>= "1.2.27"}
+  "deb-libxmlsec1-gcrypt" {>= "1.2.27"}
+  "deb-libxmlsec1-gnutls" {>= "1.2.27"}
+  "deb-libxslt1-1" {>= "1.1.25"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libaqebics0_5.7.8-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/liba/libaqbanking/libaqebics0_5.7.8-3_amd64.deb"
+}

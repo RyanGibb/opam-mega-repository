@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i spatialite-bin_4.3.0-2+b4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r spatialite-bin"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libfreexl1" {>= "0.0.2~beta20110817"}
+  "deb-libgeos-c1v5" {>= "3.4.2"}
+  "deb-libproj13" {>= "4.8.0"}
+  "deb-libreadline7" {>= "6.0"}
+  "deb-libreadosm1" {>= "1.0.0a"}
+  "deb-libspatialite7" {>= "4.2.1~"}
+  "deb-libsqlite3-0" {>= "3.6.18"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "spatialite-bin_4.3.0-2+b4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/spatialite-tools/spatialite-bin_4.3.0-2+b4_amd64.deb"
+}

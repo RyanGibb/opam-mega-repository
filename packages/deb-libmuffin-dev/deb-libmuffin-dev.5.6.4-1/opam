@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmuffin-dev_5.6.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmuffin-dev"]
+]
+depends: [
+  "deb-gir1-2-meta-muffin-0-0" {= "5.6.4-1"}
+  "deb-libatk1-0-dev"
+  "deb-libcairo2-dev"
+  "deb-libcinnamon-desktop-dev" {>= "5.6"}
+  "deb-libdrm-dev"
+  "deb-libegl1-mesa-dev"
+  "deb-libgdk-pixbuf-2-0-dev"
+  "deb-libglib2-0-dev"
+  "deb-libgraphene-1-0-dev" {>= "1.9.3"}
+  "deb-libgtk-3-dev"
+  "deb-libinput-dev"
+  "deb-libjson-glib-dev"
+  "deb-libmuffin0" {= "5.6.4-1"}
+  "deb-libpango1-0-dev"
+  "deb-libudev-dev"
+  "deb-libx11-dev"
+  "deb-libxcomposite-dev"
+  "deb-libxdamage-dev"
+  "deb-libxext-dev"
+  "deb-libxfixes-dev"
+  "deb-libxi-dev"
+  "deb-libxrandr-dev"
+  ("deb-libgles2-mesa-dev" | "deb- libgles2-dev")
+]
+extra-source "libmuffin-dev_5.6.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/muffin/libmuffin-dev_5.6.4-1_amd64.deb"
+}

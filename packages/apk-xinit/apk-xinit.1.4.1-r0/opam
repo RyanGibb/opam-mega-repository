@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xinit-1.4.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xinit"]
+]
+depends: [
+  "apk-libx11" {= "1.6.12-r1"}
+  "apk-mcookie" {= "2.37.4-r0"}
+  "apk-musl" {= "1.1.24-r10"}
+  "apk-xauth" {= "1.1-r0"}
+  "apk-xmodmap" {= "1.0.10-r0"}
+  "apk-xrdb" {= "1.2.0-r1"}
+]
+extra-source "xinit-1.4.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/xinit-1.4.1-r0.apk"
+}

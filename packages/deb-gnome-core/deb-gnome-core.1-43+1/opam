@@ -1,0 +1,71 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnome-core_1:43+1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnome-core"]
+]
+depends: [
+  "deb-adwaita-icon-theme"
+  "deb-at-spi2-core" {>= "2.38"}
+  "deb-baobab" {>= "3.38"}
+  "deb-dconf-cli" {>= "0.38"}
+  "deb-dconf-gsettings-backend" {>= "0.38"}
+  "deb-eog" {>= "3.38"}
+  "deb-evince" {>= "3.38"}
+  "deb-evolution-data-server" {>= "3.36"}
+  "deb-fonts-cantarell" {>= "0.111"}
+  "deb-gdm3" {>= "3.38"}
+  "deb-gkbd-capplet" {>= "3.26"}
+  "deb-glib-networking" {>= "2.58"}
+  "deb-gnome-backgrounds" {>= "3.38"}
+  "deb-gnome-bluetooth-sendto" {>= "42"}
+  "deb-gnome-calculator" {>= "3.38"}
+  "deb-gnome-characters" {>= "3.34"}
+  "deb-gnome-contacts" {>= "3.38"}
+  "deb-gnome-control-center" {>= "1-3.38"}
+  "deb-gnome-disk-utility" {>= "3.38"}
+  "deb-gnome-font-viewer" {>= "3.34"}
+  "deb-gnome-keyring" {>= "3.36"}
+  "deb-gnome-logs" {>= "3.36"}
+  "deb-gnome-menus" {>= "3.36"}
+  "deb-gnome-online-accounts" {>= "3.36"}
+  "deb-gnome-session" {>= "3.38"}
+  "deb-gnome-settings-daemon" {>= "3.38"}
+  "deb-gnome-shell" {>= "42"}
+  "deb-gnome-shell-extensions" {>= "42"}
+  "deb-gnome-software" {>= "3.36"}
+  "deb-gnome-sushi" {>= "3.34"}
+  "deb-gnome-system-monitor" {>= "3.38"}
+  "deb-gnome-text-editor"
+  "deb-gnome-themes-extra" {>= "3.28"}
+  "deb-gnome-user-docs" {>= "3.38"}
+  "deb-gnome-user-share" {>= "3.34"}
+  "deb-gsettings-desktop-schemas" {>= "3.38"}
+  "deb-gstreamer1-0-packagekit"
+  "deb-gstreamer1-0-plugins-base" {>= "1.14"}
+  "deb-gstreamer1-0-plugins-good" {>= "1.18"}
+  "deb-gvfs-backends" {>= "1.46"}
+  "deb-gvfs-fuse" {>= "1.46"}
+  "deb-libatk-adaptor" {>= "2.38"}
+  "deb-libcanberra-pulse"
+  "deb-libglib2-0-bin"
+  "deb-libpam-gnome-keyring" {>= "3.36"}
+  "deb-libproxy1-plugin-gsettings"
+  "deb-libproxy1-plugin-webkit"
+  "deb-librsvg2-common"
+  "deb-nautilus" {>= "3.38"}
+  "deb-pipewire-audio"
+  "deb-sound-theme-freedesktop"
+  "deb-system-config-printer-common"
+  "deb-system-config-printer-udev"
+  "deb-totem" {>= "3.38"}
+  "deb-tracker"
+  "deb-xdg-desktop-portal-gnome" {>= "41~"}
+  "deb-yelp" {>= "3.38"}
+  "deb-zenity" {>= "3.32"}
+  ("deb-gnome-terminal" {>= "3.44"} | "deb- gnome-console" {>= "42~beta"})
+]
+extra-source "gnome-core_1:43+1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/meta-gnome3/gnome-core_43+1_amd64.deb"
+}

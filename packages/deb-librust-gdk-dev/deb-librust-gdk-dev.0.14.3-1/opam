@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-gdk-dev_0.14.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-gdk-dev"]
+]
+depends: [
+  "deb-librust-bitflags-1+default-dev"
+  "deb-librust-cairo-rs-0-14+default-dev"
+  "deb-librust-cairo-rs-0-14+dox-dev"
+  "deb-librust-gdk-pixbuf-0-14+default-dev"
+  "deb-librust-gdk-pixbuf-0-14+dox-dev"
+  "deb-librust-gdk-sys-0-14+default-dev"
+  "deb-librust-gdk-sys-0-14+dox-dev"
+  "deb-librust-gdk-sys-0-14+v3-20-dev"
+  "deb-librust-gdk-sys-0-14+v3-22-dev"
+  "deb-librust-gdk-sys-0-14+v3-24-dev"
+  "deb-librust-gio-0-14+default-dev"
+  "deb-librust-gio-0-14+dox-dev"
+  "deb-librust-glib-0-14+default-dev"
+  "deb-librust-glib-0-14+dox-dev"
+  "deb-librust-libc-0-2+default-dev"
+  "deb-librust-pango-0-14+default-dev"
+  "deb-librust-pango-0-14+dox-dev"
+]
+extra-source "librust-gdk-dev_0.14.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-gdk/librust-gdk-dev_0.14.3-1_amd64.deb"
+}

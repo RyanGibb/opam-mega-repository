@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i smbclient_2:4.17.12+dfsg-0+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r smbclient"]
+]
+depends: [
+  "deb-libarchive13" {>= "3.0.4"}
+  "deb-libbsd0" {>= "0.0"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgnutls30" {>= "3.7.0"}
+  "deb-libpopt0" {>= "1.14"}
+  "deb-libreadline8" {>= "6.0"}
+  "deb-libsmbclient" {>= "2-4.10.0+dfsg"}
+  "deb-libtalloc2" {>= "2.3.4~"}
+  "deb-libtevent0" {>= "0.13.0~"}
+  "deb-samba-common" {= "2-4.17.12+dfsg-0+deb12u1"}
+  "deb-samba-libs" {= "2-4.17.12+dfsg-0+deb12u1"}
+]
+extra-source "smbclient_2:4.17.12+dfsg-0+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/samba/smbclient_4.17.12+dfsg-0+deb12u1_amd64.deb"
+}

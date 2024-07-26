@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add grub-2.06-r12.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del grub"]
+]
+depends: [
+  "apk-device-mapper-libs" {= "2.03.21-r3"}
+  "apk-mkinitfs" {= "3.8.1-r0"}
+  "apk-musl" {= "1.2.4-r2"}
+  "apk-xz-libs" {= "5.4.3-r0"}
+  ("apk-busybox-binsh" {= "1.36.1-r7"} | "apk-dash-binsh" {= "0.5.12-r2"} | "apk-yash-binsh" {= "2.54-r3"})
+]
+extra-source "grub-2.06-r12.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/grub-2.06-r12.apk"
+}

@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i orca_3.38.2-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r orca"]
+]
+depends: [
+  "deb-gir1-2-glib-2-0"
+  "deb-gir1-2-gstreamer-1-0"
+  "deb-gir1-2-gtk-3-0" {>= "3.6.2"}
+  "deb-gir1-2-pango-1-0"
+  "deb-gir1-2-wnck-3-0"
+  "deb-gsettings-desktop-schemas"
+  "deb-gstreamer1-0-plugins-good"
+  "deb-python3-any"
+  "deb-python3-brlapi" {>= "0.5.1"}
+  "deb-python3-cairo"
+  "deb-python3-gi" {>= "3.18"}
+  "deb-python3-louis" {>= "1.6.2"}
+  "deb-python3-pyatspi" {>= "2.26"}
+  "deb-python3-speechd" {>= "0.8"}
+  "deb-speech-dispatcher" {>= "0.8"}
+  "deb-xkbset"
+]
+extra-source "orca_3.38.2-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/orca/orca_3.38.2-2_all.deb"
+}

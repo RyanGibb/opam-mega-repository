@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add dbus-glib-0.112-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del dbus-glib"]
+]
+depends: [
+  "apk-dbus-libs" {= "1.14.8-r0"}
+  "apk-glib" {= "2.74.7-r0"}
+  "apk-libexpat" {= "2.6.2-r0"}
+  "apk-musl" {= "1.2.3-r5"}
+]
+extra-source "dbus-glib-0.112-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dbus-glib-0.112-r1.apk"
+}

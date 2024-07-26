@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-brick-dev_0.37.2-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-brick-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-config-ini-dev"
+  "deb-libghc-contravariant-dev"
+  "deb-libghc-data-clist-dev"
+  "deb-libghc-dlist-dev"
+  "deb-libghc-microlens-dev"
+  "deb-libghc-microlens-mtl-dev"
+  "deb-libghc-microlens-th-dev"
+  "deb-libghc-text-zipper-dev"
+  "deb-libghc-vector-dev"
+  "deb-libghc-vty-dev"
+  "deb-libghc-word-wrap-dev"
+  "deb-libgmp10"
+  "deb-libtinfo6" {>= "6"}
+]
+extra-source "libghc-brick-dev_0.37.2-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-brick/libghc-brick-dev_0.37.2-2+b1_amd64.deb"
+}

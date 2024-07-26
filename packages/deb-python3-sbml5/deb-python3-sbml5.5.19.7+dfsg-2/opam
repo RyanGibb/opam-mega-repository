@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-sbml5_5.19.7+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-sbml5"]
+]
+depends: [
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.33"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libpython3-11" {>= "3.11.0"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-11"
+  "deb-python3-any"
+  "deb-swig"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "python3-sbml5_5.19.7+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libs/libsbml/python3-sbml5_5.19.7+dfsg-2_amd64.deb"
+}

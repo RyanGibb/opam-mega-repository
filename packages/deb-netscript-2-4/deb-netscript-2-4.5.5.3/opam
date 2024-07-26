@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i netscript-2.4_5.5.3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r netscript-2.4"]
+]
+depends: [
+  "deb-bash" {>= "2.03"}
+  "deb-bridge-utils" {>= "0.9.3"}
+  "deb-iproute2"
+  "deb-iptables"
+  "deb-lsb-base"
+  "deb-netbase"
+  ("deb-isc-dhcp-client" | "deb- dhcpcd" | "deb- pump")
+]
+conflicts: [
+  "deb-ifupdown"
+  "deb-netscript"
+  "deb-netscript-2-2"
+  "deb-netscript-ipfilter"
+]
+extra-source "netscript-2.4_5.5.3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/netscript-2.4/netscript-2.4_5.5.3_all.deb"
+}

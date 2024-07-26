@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add dnscache-1.05-r47.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del dnscache"]
+]
+depends: [
+  "apk-busybox" {= "1.35.0-r18"}
+  "apk-djbdns-common" {= "1.05-r47"}
+  "apk-musl" {= "1.2.3-r3"}
+]
+extra-source "dnscache-1.05-r47.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/dnscache-1.05-r47.apk"
+}

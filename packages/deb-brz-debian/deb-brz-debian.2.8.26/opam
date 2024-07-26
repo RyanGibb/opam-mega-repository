@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i brz-debian_2.8.26_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r brz-debian"]
+]
+depends: [
+  "deb-brz" {>= "3.0.0~bzr7290"}
+  "deb-devscripts" {>= "2.10.59"}
+  "deb-dpkg-dev"
+  "deb-fakeroot"
+  "deb-patchutils"
+  "deb-pristine-tar"
+  "deb-python3-any"
+  "deb-python3-apt"
+  "deb-python3-breezy"
+  "deb-python3-debian"
+  "deb-python3-yaml"
+  "deb-quilt"
+]
+extra-source "brz-debian_2.8.26_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/breezy-debian/brz-debian_2.8.26_all.deb"
+}

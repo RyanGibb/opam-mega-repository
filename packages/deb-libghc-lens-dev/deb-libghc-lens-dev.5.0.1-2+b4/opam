@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-lens-dev_5.0.1-2+b4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-lens-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.14"}
+  "deb-libghc-assoc-dev"
+  "deb-libghc-base-orphans-dev"
+  "deb-libghc-bifunctors-dev"
+  "deb-libghc-call-stack-dev"
+  "deb-libghc-comonad-dev"
+  "deb-libghc-contravariant-dev"
+  "deb-libghc-distributive-dev"
+  "deb-libghc-free-dev"
+  "deb-libghc-hashable-dev"
+  "deb-libghc-indexed-traversable-dev"
+  "deb-libghc-indexed-traversable-instances-dev"
+  "deb-libghc-kan-extensions-dev"
+  "deb-libghc-parallel-dev"
+  "deb-libghc-profunctors-dev"
+  "deb-libghc-reflection-dev"
+  "deb-libghc-semigroupoids-dev"
+  "deb-libghc-strict-dev"
+  "deb-libghc-tagged-dev"
+  "deb-libghc-th-abstraction-dev"
+  "deb-libghc-these-dev"
+  "deb-libghc-transformers-compat-dev"
+  "deb-libghc-unordered-containers-dev"
+  "deb-libghc-vector-dev"
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+]
+extra-source "libghc-lens-dev_5.0.1-2+b4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-lens/libghc-lens-dev_5.0.1-2+b4_amd64.deb"
+}

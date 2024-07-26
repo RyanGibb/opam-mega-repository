@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i shibboleth-sp-utils_3.0.4+dfsg1-1+deb10u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r shibboleth-sp-utils"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libc6" {>= "2.14"}
+  "deb-libfcgi0ldbl"
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-liblog4shib2"
+  "deb-libsaml10"
+  "deb-libshibsp-plugins" {= "3.0.4+dfsg1-1+deb10u2"}
+  "deb-libshibsp8" {>= "3.0.4+dfsg1"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libsystemd0"
+  "deb-libxerces-c3-2"
+  "deb-libxmltooling8"
+  "deb-lsb-base"
+]
+extra-source "shibboleth-sp-utils_3.0.4+dfsg1-1+deb10u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/shibboleth-sp/shibboleth-sp-utils_3.0.4+dfsg1-1+deb10u2_amd64.deb"
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tksao_8.2+repack-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tksao"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libfuntools1"
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstarlink-ast-err9" {>= "7.0.4"}
+  "deb-libstarlink-ast9" {>= "9.0.0"}
+  "deb-libx11-6"
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-tkblt"
+]
+extra-source "tksao_8.2+repack-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/saods9/tksao_8.2+repack-2_amd64.deb"
+}

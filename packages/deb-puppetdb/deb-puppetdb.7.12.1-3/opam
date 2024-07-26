@@ -1,0 +1,67 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i puppetdb_7.12.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r puppetdb"]
+]
+depends: [
+  "deb-adduser"
+  "deb-default-jre-headless"
+  "deb-libasm-java"
+  "deb-libat-at-clojure"
+  "deb-libbidi-clojure"
+  "deb-libcheshire-clojure"
+  "deb-libclj-digest-clojure"
+  "deb-libclj-http-clojure"
+  "deb-libclj-stacktrace-clojure"
+  "deb-libclj-time-clojure"
+  "deb-libclojure-java"
+  "deb-libcommons-io-java"
+  "deb-libcommons-lang3-java"
+  "deb-libcommons-logging-java"
+  "deb-libcompojure-clojure"
+  "deb-libcore-async-clojure"
+  "deb-libcore-match-clojure"
+  "deb-libcore-memoize-clojure"
+  "deb-libdata-priority-map-clojure"
+  "deb-libdujour-version-check-clojure"
+  "deb-libdynapath-clojure"
+  "deb-libfast-zip-visit-clojure"
+  "deb-libgeronimo-j2ee-management-1-1-spec-java"
+  "deb-libgeronimo-jms-1-1-spec-java"
+  "deb-libhikaricp-java"
+  "deb-libhoneysql-clojure"
+  "deb-libinstaparse-clojure"
+  "deb-libjava-jdbc-clojure"
+  "deb-libjava-jmx-clojure"
+  "deb-libkitchensink-clojure"
+  "deb-libmath-combinatorics-clojure"
+  "deb-libmetrics-clojure"
+  "deb-libmurphy-clojure"
+  "deb-libpostgresql-jdbc-java"
+  "deb-libpuppetlabs-i18n-clojure"
+  "deb-libraynes-fs-clojure"
+  "deb-libring-core-clojure"
+  "deb-librobert-hooke-clojure"
+  "deb-libslf4j-java"
+  "deb-libspecter-clojure"
+  "deb-libstockpile-clojure"
+  "deb-libstructured-logging-clojure"
+  "deb-libtools-logging-clojure"
+  "deb-libtools-macro-clojure"
+  "deb-libtools-namespace-clojure"
+  "deb-libtrapperkeeper-authorization-clojure"
+  "deb-libtrapperkeeper-clojure" {>= "3.2.0-2"}
+  "deb-libtrapperkeeper-metrics-clojure"
+  "deb-libtrapperkeeper-scheduler-clojure"
+  "deb-libtrapperkeeper-status-clojure"
+  "deb-libtrapperkeeper-webserver-jetty9-clojure"
+  "deb-libversioneer-clojure"
+  "deb-ucf"
+  ("deb-dbconfig-pgsql" | "deb- dbconfig-no-thanks")
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "puppetdb_7.12.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/puppetdb/puppetdb_7.12.1-3_all.deb"
+}

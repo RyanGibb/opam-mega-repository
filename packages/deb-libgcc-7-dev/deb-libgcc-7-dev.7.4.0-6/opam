@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgcc-7-dev_7.4.0-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgcc-7-dev"]
+]
+depends: [
+  "deb-gcc-7-base" {= "7.4.0-6"}
+  "deb-libasan4" {>= "7.4.0-6"}
+  "deb-libatomic1" {>= "7.4.0-6"}
+  "deb-libcilkrts5" {>= "7.4.0-6"}
+  "deb-libgcc1" {>= "1-7.4.0-6"}
+  "deb-libgomp1" {>= "7.4.0-6"}
+  "deb-libitm1" {>= "7.4.0-6"}
+  "deb-liblsan0" {>= "7.4.0-6"}
+  "deb-libmpx2" {>= "7.4.0-6"}
+  "deb-libquadmath0" {>= "7.4.0-6"}
+  "deb-libtsan0" {>= "7.4.0-6"}
+  "deb-libubsan0" {>= "7.4.0-6"}
+]
+extra-source "libgcc-7-dev_7.4.0-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gcc-7/libgcc-7-dev_7.4.0-6_amd64.deb"
+}

@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tagua_1.0~alpha2-16-g618c6a0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tagua"]
+]
+depends: [
+  "deb-kio"
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libkf5completion5" {>= "4.97.0"}
+  "deb-libkf5configcore5" {>= "4.97.0"}
+  "deb-libkf5configwidgets5" {>= "4.96.0"}
+  "deb-libkf5coreaddons5" {>= "4.97.0"}
+  "deb-libkf5i18n5" {>= "4.97.0"}
+  "deb-libkf5kdegamesprivate1" {>= "4-14.12.50"}
+  "deb-libkf5kdelibs4support5" {>= "4.96.0"}
+  "deb-libkf5kiowidgets5" {>= "5.69.0"}
+  "deb-libkf5widgetsaddons5" {>= "4.96.0"}
+  "deb-libkf5xmlgui5" {>= "4.98.0"}
+  "deb-liblua5-1-0"
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libqt5svg5" {>= "5.6.0~beta"}
+  "deb-libqt5widgets5" {>= "5.15.1"}
+  "deb-libqt5xml5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "4.6"}
+  "deb-tagua-data" {= "1.0~alpha2-16-g618c6a0-3"}
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "tagua_1.0~alpha2-16-g618c6a0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tagua/tagua_1.0~alpha2-16-g618c6a0-3_amd64.deb"
+}

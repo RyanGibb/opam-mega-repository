@@ -1,0 +1,46 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i jalview_2.11.2.5+dfsg-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r jalview"]
+]
+depends: [
+  "deb-debconf"
+  "deb-default-jre"
+  "deb-groovy"
+  "deb-javahelp2"
+  "deb-libandroid-json-org-java"
+  "deb-libapache-mime4j-java"
+  "deb-libaxis-java"
+  "deb-libbiojava6-java"
+  "deb-libcommons-discovery-java"
+  "deb-libhtsjdk-java"
+  "deb-libhttpclient-java"
+  "deb-libhttpcore-java"
+  "deb-libhttpmime-java"
+  "deb-libintervalstorej-java"
+  "deb-libjaba-client-java"
+  "deb-libjaxb-api-java"
+  "deb-libjaxb-java"
+  "deb-libjaxrs-api-java"
+  "deb-libjaxws-java"
+  "deb-libjersey1-client-java"
+  "deb-libjersey1-core-java"
+  "deb-libjetty9-java"
+  "deb-libjfreesvg-java"
+  "deb-libjmol-java"
+  "deb-libjson-simple-java"
+  "deb-libjsoup-java"
+  "deb-libjswingreader-java"
+  "deb-liblog4j1-2-java"
+  "deb-liblog4j2-java"
+  "deb-libmiglayout-java"
+  "deb-libslf4j-java"
+  "deb-libvamsas-client-java"
+  "deb-varna"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "jalview_2.11.2.5+dfsg-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/j/jalview/jalview_2.11.2.5+dfsg-3_all.deb"
+}

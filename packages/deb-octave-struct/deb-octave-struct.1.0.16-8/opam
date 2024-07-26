@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i octave-struct_1.0.16-8_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r octave-struct"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-liboctave8"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-octave" {>= "6.1.0"}
+]
+extra-source "octave-struct_1.0.16-8_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/octave-struct/octave-struct_1.0.16-8_amd64.deb"
+}

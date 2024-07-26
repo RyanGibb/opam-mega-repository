@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qemu-system-gui_1:7.2+dfsg-7+deb12u6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qemu-system-gui"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libepoxy0" {>= "1.0"}
+  "deb-libgbm1" {>= "12.0.0~0"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libgl1"
+  "deb-libglib2-0-0" {>= "2.61.2"}
+  "deb-libgtk-3-0" {>= "3.21.4"}
+  "deb-libnuma1" {>= "2.0.11"}
+  "deb-libpixman-1-0" {>= "0.19.6"}
+  "deb-libpulse0" {>= "0.99.1"}
+  "deb-libsdl2-2-0-0" {>= "2.0.12"}
+  "deb-libvirglrenderer1" {>= "0.8.0"}
+  "deb-libvte-2-91-0" {>= "0.49.92"}
+  "deb-libx11-6"
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-qemu-system-x86" {= "1-7.2+dfsg-7+deb12u6"} | "deb- qemu-system-arm" {= "1-7.2+dfsg-7+deb12u6"} | "deb- qemu-system-mips" {= "1-7.2+dfsg-7+deb12u6"} | "deb- qemu-system-ppc" {= "1-7.2+dfsg-7+deb12u6"} | "deb- qemu-system-sparc" {= "1-7.2+dfsg-7+deb12u6"} | "deb- qemu-system-misc" {= "1-7.2+dfsg-7+deb12u6"})
+]
+extra-source "qemu-system-gui_1:7.2+dfsg-7+deb12u6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-system-gui_7.2+dfsg-7+deb12u6_amd64.deb"
+}

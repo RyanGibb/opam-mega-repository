@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qml-module-lomiri-content_1.0.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qml-module-lomiri-content"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libcontent-hub1" {>= "1.0.0"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5qml5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-qml-module-qtquick2"
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+  ("deb-libqt5quick5" {>= "5.0.2"} | "deb- libqt5quick5-gles" {>= "5.0.2"})
+]
+extra-source "qml-module-lomiri-content_1.0.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/content-hub/qml-module-lomiri-content_1.0.2-1_amd64.deb"
+}

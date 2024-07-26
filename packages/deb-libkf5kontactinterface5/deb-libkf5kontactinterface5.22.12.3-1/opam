@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkf5kontactinterface5_22.12.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkf5kontactinterface5"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libkf5coreaddons5" {>= "5.99.0~"}
+  "deb-libkf5kiogui5" {>= "5.69.0"}
+  "deb-libkf5kontactinterface-data" {= "22.12.3-1"}
+  "deb-libkf5parts5" {>= "5.99.0~"}
+  "deb-libkf5windowsystem5" {>= "5.99.0~"}
+  "deb-libkf5xmlgui5" {>= "5.99.0~"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.14.1"}
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-libqt5xml5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "5"}
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+]
+extra-source "libkf5kontactinterface5_22.12.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kontactinterface/libkf5kontactinterface5_22.12.3-1_amd64.deb"
+}

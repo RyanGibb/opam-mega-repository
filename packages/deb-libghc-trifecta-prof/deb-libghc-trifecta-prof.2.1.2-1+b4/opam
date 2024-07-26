@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-trifecta-prof_2.1.2-1+b4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-trifecta-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-ansi-terminal-prof"
+  "deb-libghc-blaze-builder-prof"
+  "deb-libghc-blaze-html-prof"
+  "deb-libghc-blaze-markup-prof"
+  "deb-libghc-charset-prof"
+  "deb-libghc-comonad-prof"
+  "deb-libghc-fingertree-prof"
+  "deb-libghc-hashable-prof"
+  "deb-libghc-indexed-traversable-prof"
+  "deb-libghc-lens-prof"
+  "deb-libghc-parsers-prof"
+  "deb-libghc-prettyprinter-ansi-terminal-prof"
+  "deb-libghc-prettyprinter-prof"
+  "deb-libghc-profunctors-prof"
+  "deb-libghc-reducers-prof"
+  "deb-libghc-trifecta-dev" {= "2.1.2-1+b4"}
+  "deb-libghc-unordered-containers-prof"
+  "deb-libghc-utf8-string-prof"
+]
+extra-source "libghc-trifecta-prof_2.1.2-1+b4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-trifecta/libghc-trifecta-prof_2.1.2-1+b4_amd64.deb"
+}

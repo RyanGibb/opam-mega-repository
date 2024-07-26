@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgpr2-dev_2018-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgpr2-dev"]
+]
+depends: [
+  "deb-gnat"
+  "deb-gnat-8"
+  "deb-libgpr18"
+  "deb-libxmlada-dom8-dev"
+  "deb-libxmlada-input8-dev"
+  "deb-libxmlada-sax8-dev"
+  "deb-libxmlada-schema8-dev"
+]
+extra-source "libgpr2-dev_2018-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gprbuild/libgpr2-dev_2018-6_amd64.deb"
+}

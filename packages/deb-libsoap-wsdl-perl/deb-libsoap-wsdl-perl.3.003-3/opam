@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsoap-wsdl-perl_3.003-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsoap-wsdl-perl"]
+]
+depends: [
+  "deb-libclass-load-perl"
+  "deb-libclass-std-fast-perl"
+  "deb-libtemplate-perl"
+  "deb-libterm-readkey-perl"
+  "deb-libtimedate-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-libxml-parser-perl"
+  "deb-perl"
+]
+extra-source "libsoap-wsdl-perl_3.003-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libs/libsoap-wsdl-perl/libsoap-wsdl-perl_3.003-3_all.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libqalculate22_4.5.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libqalculate22"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-libicu72" {>= "72.1~rc-1~"}
+  "deb-libmpfr6" {>= "4.0.0"}
+  "deb-libqalculate-data"
+  "deb-libstdc++6" {>= "11"}
+  "deb-libxml2" {>= "2.7.4"}
+]
+extra-source "libqalculate22_4.5.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libq/libqalculate/libqalculate22_4.5.1-1_amd64.deb"
+}

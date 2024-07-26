@@ -1,0 +1,42 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-ncw-rclone-dev_1.45-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-ncw-rclone-dev"]
+]
+depends: [
+  "deb-golang-bazil-fuse-dev"
+  "deb-golang-github-a8m-tree-dev"
+  "deb-golang-github-abbot-go-http-auth-dev"
+  "deb-golang-github-aws-aws-sdk-go-dev"
+  "deb-golang-github-azure-azure-storage-blob-go-dev"
+  "deb-golang-github-coreos-bbolt-dev"
+  "deb-golang-github-djherbis-times-dev"
+  "deb-golang-github-dropbox-dropbox-sdk-go-unofficial-dev"
+  "deb-golang-github-jlaffaye-ftp-dev"
+  "deb-golang-github-ncw-go-acd-dev"
+  "deb-golang-github-ncw-swift-dev"
+  "deb-golang-github-nsf-termbox-go-dev"
+  "deb-golang-github-okzk-sdnotify-dev" {>= "0.0~git20180710.d9becc3-1"}
+  "deb-golang-github-patrickmn-go-cache-dev"
+  "deb-golang-github-pkg-errors-dev"
+  "deb-golang-github-rfjakob-eme-dev"
+  "deb-golang-github-sevlyar-go-daemon-dev"
+  "deb-golang-github-skratchdot-open-golang-dev"
+  "deb-golang-github-spf13-cobra-dev"
+  "deb-golang-github-spf13-pflag-dev"
+  "deb-golang-github-stretchr-testify-dev"
+  "deb-golang-github-unknwon-goconfig-dev"
+  "deb-golang-github-xanzy-ssh-agent-dev"
+  "deb-golang-golang-x-crypto-dev"
+  "deb-golang-golang-x-net-dev"
+  "deb-golang-golang-x-oauth2-google-dev"
+  "deb-golang-golang-x-sys-dev"
+  "deb-golang-golang-x-text-dev"
+  "deb-golang-golang-x-time-dev"
+  "deb-golang-google-api-dev"
+]
+extra-source "golang-github-ncw-rclone-dev_1.45-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rclone/golang-github-ncw-rclone-dev_1.45-3_all.deb"
+}

@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdist-inkt-doap-perl_0.110-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdist-inkt-doap-perl"]
+]
+depends: [
+  "deb-libdist-inkt-perl"
+  "deb-libmoose-perl"
+  "deb-libmoox-struct-perl"
+  "deb-libnamespace-autoclean-perl"
+  "deb-libpath-iterator-rule-perl"
+  "deb-libpath-tiny-perl"
+  "deb-librdf-doap-perl"
+  "deb-librdf-trin3-perl"
+  "deb-librdf-trine-perl"
+  "deb-librdf-trinex-functions-perl"
+  "deb-librdf-trinex-serializer-mockturtlesoup-perl"
+  "deb-libsoftware-license-perl"
+  "deb-libtype-tiny-perl"
+  "deb-liburi-perl"
+  "deb-perl" {>= "5.25.1"}
+  "deb-perl-any"
+]
+extra-source "libdist-inkt-doap-perl_0.110-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libd/libdist-inkt-doap-perl/libdist-inkt-doap-perl_0.110-3_all.deb"
+}

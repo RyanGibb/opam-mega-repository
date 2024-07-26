@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-cryptocipher-prof_0.6.2-9+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-cryptocipher-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-cipher-aes-prof"
+  "deb-libghc-cipher-blowfish-prof"
+  "deb-libghc-cipher-camellia-prof"
+  "deb-libghc-cipher-des-prof"
+  "deb-libghc-cipher-rc4-prof"
+  "deb-libghc-crypto-cipher-types-prof"
+  "deb-libghc-cryptocipher-dev" {= "0.6.2-9+b3"}
+]
+extra-source "libghc-cryptocipher-prof_0.6.2-9+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-cryptocipher/libghc-cryptocipher-prof_0.6.2-9+b3_amd64.deb"
+}

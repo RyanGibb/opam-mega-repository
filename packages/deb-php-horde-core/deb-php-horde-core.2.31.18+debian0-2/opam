@@ -1,0 +1,95 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i php-horde-core_2.31.18+debian0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r php-horde-core"]
+]
+depends: [
+  "deb-libjs-excanvas"
+  "deb-libjs-prototype"
+  "deb-libjs-scriptaculous"
+  "deb-php-common"
+  "deb-php-horde-alarm" {< "3.0.0~alpha1"}
+  "deb-php-horde-alarm" {>= "2.2.0"}
+  "deb-php-horde-auth" {< "3.0.0~alpha1"}
+  "deb-php-horde-auth" {>= "2.2.0"}
+  "deb-php-horde-autoloader" {< "3.0.0~alpha1"}
+  "deb-php-horde-autoloader" {>= "2.1.0"}
+  "deb-php-horde-browser" {< "3.0.0~alpha1"}
+  "deb-php-horde-browser" {>= "2.0.0"}
+  "deb-php-horde-cache" {< "3.0.0~alpha1"}
+  "deb-php-horde-cache" {>= "2.5.0"}
+  "deb-php-horde-cli" {< "3.0.0~alpha1"}
+  "deb-php-horde-cli" {>= "2.0.0"}
+  "deb-php-horde-compress" {< "3.0.0~alpha1"}
+  "deb-php-horde-compress" {>= "2.0.0"}
+  "deb-php-horde-compress-fast" {< "2.0.0~alpha1"}
+  "deb-php-horde-compress-fast" {>= "1.0.0"}
+  "deb-php-horde-controller" {< "3.0.0~alpha1"}
+  "deb-php-horde-controller" {>= "2.0.0"}
+  "deb-php-horde-cssminify" {< "2.0.0~alpha1"}
+  "deb-php-horde-cssminify" {>= "1.0.0"}
+  "deb-php-horde-data" {< "3.0.0~alpha1"}
+  "deb-php-horde-data" {>= "2.0.0"}
+  "deb-php-horde-date" {< "3.0.0~alpha1"}
+  "deb-php-horde-date" {>= "2.0.0"}
+  "deb-php-horde-exception" {< "3.0.0~alpha1"}
+  "deb-php-horde-exception" {>= "2.0.0"}
+  "deb-php-horde-group" {< "3.0.0~alpha1"}
+  "deb-php-horde-group" {>= "2.1.0"}
+  "deb-php-horde-hashtable" {< "2.0.0~alpha1"}
+  "deb-php-horde-hashtable" {>= "1.2.0"}
+  "deb-php-horde-history" {< "3.0.0~alpha1"}
+  "deb-php-horde-history" {>= "2.0.0"}
+  "deb-php-horde-injector" {< "3.0.0~alpha1"}
+  "deb-php-horde-injector" {>= "2.0.0"}
+  "deb-php-horde-javascriptminify" {< "2.0.0~alpha1"}
+  "deb-php-horde-javascriptminify" {>= "1.0.0"}
+  "deb-php-horde-lock" {< "3.0.0~alpha1"}
+  "deb-php-horde-lock" {>= "2.0.0"}
+  "deb-php-horde-log" {< "3.0.0~alpha1"}
+  "deb-php-horde-log" {>= "2.0.0"}
+  "deb-php-horde-logintasks" {< "3.0.0~alpha1"}
+  "deb-php-horde-logintasks" {>= "2.0.0"}
+  "deb-php-horde-mime" {< "3.0.0~alpha1"}
+  "deb-php-horde-mime" {>= "2.5.0"}
+  "deb-php-horde-mime-viewer" {< "3.0.0~alpha1"}
+  "deb-php-horde-mime-viewer" {>= "2.2.0"}
+  "deb-php-horde-notification" {< "3.0.0~alpha1"}
+  "deb-php-horde-notification" {>= "2.0.0"}
+  "deb-php-horde-pack" {< "2.0.0~alpha1"}
+  "deb-php-horde-pack" {>= "1.0.0"}
+  "deb-php-horde-perms" {< "3.0.0~alpha1"}
+  "deb-php-horde-perms" {>= "2.0.0"}
+  "deb-php-horde-prefs" {< "3.0.0~alpha1"}
+  "deb-php-horde-prefs" {>= "2.9.0"}
+  "deb-php-horde-secret" {< "3.0.0~alpha1"}
+  "deb-php-horde-secret" {>= "2.0.0"}
+  "deb-php-horde-serialize" {< "3.0.0~alpha1"}
+  "deb-php-horde-serialize" {>= "2.0.0"}
+  "deb-php-horde-sessionhandler" {< "3.0.0~alpha1"}
+  "deb-php-horde-sessionhandler" {>= "2.0.0"}
+  "deb-php-horde-share" {< "3.0.0~alpha1"}
+  "deb-php-horde-share" {>= "2.0.0"}
+  "deb-php-horde-support" {< "3.0.0~alpha1"}
+  "deb-php-horde-support" {>= "2.0.0"}
+  "deb-php-horde-template" {< "3.0.0~alpha1"}
+  "deb-php-horde-template" {>= "2.0.0"}
+  "deb-php-horde-text-filter" {< "3.0.0~alpha1"}
+  "deb-php-horde-text-filter" {>= "2.0.0"}
+  "deb-php-horde-token" {< "3.0.0~alpha1"}
+  "deb-php-horde-token" {>= "2.0.0"}
+  "deb-php-horde-translation" {< "3.0.0~alpha1"}
+  "deb-php-horde-translation" {>= "2.2.0"}
+  "deb-php-horde-url" {< "3.0.0~alpha1"}
+  "deb-php-horde-url" {>= "2.1.0"}
+  "deb-php-horde-util" {< "3.0.0~alpha1"}
+  "deb-php-horde-util" {>= "2.0.0"}
+  "deb-php-horde-view" {< "3.0.0~alpha1"}
+  "deb-php-horde-view" {>= "2.0.0"}
+  "deb-php-pear"
+]
+extra-source "php-horde-core_2.31.18+debian0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/php-horde-core/php-horde-core_2.31.18+debian0-2_all.deb"
+}

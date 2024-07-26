@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openvswitch-testcontroller_3.1.0-2+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openvswitch-testcontroller"]
+]
+depends: [
+  "deb-libbpf1" {>= "1-0.7.0"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcap-ng0" {>= "0.7.9"}
+  "deb-libnuma1" {>= "2.0.11"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libunbound8" {>= "1.8.0"}
+  "deb-libxdp1" {>= "1.2.9~"}
+  "deb-openvswitch-common" {= "3.1.0-2+deb12u1"}
+  "deb-openvswitch-pki" {= "3.1.0-2+deb12u1"}
+]
+extra-source "openvswitch-testcontroller_3.1.0-2+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openvswitch/openvswitch-testcontroller_3.1.0-2+deb12u1_amd64.deb"
+}

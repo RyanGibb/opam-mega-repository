@@ -1,0 +1,47 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgazebo9-dev_9.6.0-1+b11_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgazebo9-dev"]
+]
+depends: [
+  "deb-fonts-liberation"
+  "deb-freeglut3-dev"
+  "deb-gazebo9-common" {= "9.6.0-1"}
+  "deb-gazebo9-plugin-base" {= "9.6.0-1+b11"}
+  "deb-libavcodec-dev"
+  "deb-libavformat-dev"
+  "deb-libboost-all-dev"
+  "deb-libbullet-dev"
+  "deb-libccd-dev"
+  "deb-libfreeimage-dev"
+  "deb-libgazebo9" {= "9.6.0-1+b11"}
+  "deb-libgdal-dev"
+  "deb-libgraphviz-dev"
+  "deb-libgts-dev"
+  "deb-libignition-common-dev"
+  "deb-libignition-fuel-tools1-dev"
+  "deb-libignition-math4-dev"
+  "deb-libignition-msgs-dev"
+  "deb-libignition-transport4-dev"
+  "deb-libogre-1-9-dev"
+  "deb-libopenal-dev"
+  "deb-libprotobuf-dev"
+  "deb-libprotoc-dev"
+  "deb-libqt5opengl5-dev"
+  "deb-libqwt-qt5-dev"
+  "deb-libsdformat6-dev"
+  "deb-libsimbody-dev" {< "4.0.0"}
+  "deb-libswscale-dev"
+  "deb-libtar-dev"
+  "deb-libtbb-dev"
+  "deb-libusb-1-0-0-dev"
+  "deb-libxml2-dev"
+  "deb-qtbase5-dev"
+  "deb-ttf-dejavu-core"
+  ("deb-libcurl4-openssl-dev" | "deb- libcurl-dev")
+]
+extra-source "libgazebo9-dev_9.6.0-1+b11_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gazebo/libgazebo9-dev_9.6.0-1+b11_amd64.deb"
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkreport3-plugin-maps_3.2.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkreport3-plugin-maps"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libkf5coreaddons5" {>= "5.16.0"}
+  "deb-libkpropertycore3-4" {>= "3.2.0~"}
+  "deb-libkreport3-4" {= "3.2.0-3"}
+  "deb-libmarblewidget-qt5-28" {>= "4-16.08.0~"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5widgets5" {>= "5.4.0"}
+  "deb-libqt5xml5" {>= "5.4.0"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  ("deb-libqt5gui5" {>= "5.4.0"} | "deb- libqt5gui5-gles" {>= "5.4.0"})
+]
+extra-source "libkreport3-plugin-maps_3.2.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kreport/libkreport3-plugin-maps_3.2.0-3_amd64.deb"
+}

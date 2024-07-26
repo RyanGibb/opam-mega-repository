@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dico-module-mediawiki_2.11-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dico-module-mediawiki"]
+]
+depends: [
+  "deb-dico-module-python"
+  "deb-python3"
+  "deb-python3-simplejson"
+  "deb-python3-wikitrans"
+]
+extra-source "dico-module-mediawiki_2.11-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dico/dico-module-mediawiki_2.11-2_all.deb"
+}

@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnome-contacts_3.38.1-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnome-contacts"]
+]
+depends: [
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.4"}
+  "deb-libcairo2" {>= "1.10.0"}
+  "deb-libcheese-gtk25" {>= "3.18.0"}
+  "deb-libcheese8" {>= "3.18.0"}
+  "deb-libedataserver-1-2-25" {>= "3.30"}
+  "deb-libedataserverui-1-2-2" {>= "3.30"}
+  "deb-libfolks-eds25" {>= "0.14"}
+  "deb-libfolks25" {>= "0.14"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.23.0"}
+  "deb-libgee-0-8-2" {>= "0.20.0"}
+  "deb-libglib2-0-0" {>= "2.58"}
+  "deb-libgnome-desktop-3-19" {>= "3.33"}
+  "deb-libgoa-1-0-0b" {>= "3.5.90"}
+  "deb-libgtk-3-0" {>= "3.22.0"}
+  "deb-libhandy-1-0" {>= "1.0.0"}
+  "deb-libpango-1-0-0" {>= "1.37.5"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libwayland-server0" {>= "1.0.2"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "gnome-contacts_3.38.1-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnome-contacts/gnome-contacts_3.38.1-1+b1_amd64.deb"
+}

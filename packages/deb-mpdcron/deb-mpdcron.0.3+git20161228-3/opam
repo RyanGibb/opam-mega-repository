@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mpdcron_0.3+git20161228-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mpdcron"]
+]
+depends: [
+  "deb-libc6" {>= "2.15"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libdaemon0" {>= "0.14"}
+  "deb-libglib2-0-0" {>= "2.22.0"}
+  "deb-libmpdclient2" {>= "2.1"}
+  "deb-libnotify-bin"
+  "deb-libsqlite3-0" {>= "3.5.9"}
+  "deb-ruby"
+  "deb-ruby-nokogiri"
+]
+extra-source "mpdcron_0.3+git20161228-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mpdcron/mpdcron_0.3+git20161228-3_amd64.deb"
+}

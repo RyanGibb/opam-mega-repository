@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-rcmdcheck_1.3.3-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-rcmdcheck"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.0-3"}
+  "deb-r-cran-callr" {>= "3.1.1.9000"}
+  "deb-r-cran-cli" {>= "1.1.0"}
+  "deb-r-cran-crayon"
+  "deb-r-cran-desc" {>= "1.2.0"}
+  "deb-r-cran-digest"
+  "deb-r-cran-pkgbuild"
+  "deb-r-cran-prettyunits"
+  "deb-r-cran-r6"
+  "deb-r-cran-rprojroot"
+  "deb-r-cran-sessioninfo" {>= "1.1.1"}
+  "deb-r-cran-withr"
+  "deb-r-cran-xopen"
+]
+extra-source "r-cran-rcmdcheck_1.3.3-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-rcmdcheck/r-cran-rcmdcheck_1.3.3-2_all.deb"
+}

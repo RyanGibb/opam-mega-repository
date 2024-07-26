@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-yggdrasil-network-yggdrasil-go-dev_0.4.7-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-yggdrasil-network-yggdrasil-go-dev"]
+]
+depends: [
+  "deb-golang-github-arceliar-ironwood-dev"
+  "deb-golang-github-arceliar-phony-dev"
+  "deb-golang-github-gologme-log-dev"
+  "deb-golang-github-hashicorp-go-syslog-dev"
+  "deb-golang-github-hjson-hjson-go-dev"
+  "deb-golang-github-kardianos-minwinsvc-dev"
+  "deb-golang-github-mitchellh-mapstructure-dev"
+  "deb-golang-github-vishvananda-netlink-dev"
+  "deb-golang-golang-x-net-dev"
+  "deb-golang-golang-x-sys-dev"
+  "deb-golang-golang-x-text-dev"
+  "deb-golang-golang-zx2c4-wireguard-dev"
+  "deb-golang-gopkg-cheggaaa-pb-v1-dev"
+]
+extra-source "golang-github-yggdrasil-network-yggdrasil-go-dev_0.4.7-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/y/yggdrasil/golang-github-yggdrasil-network-yggdrasil-go-dev_0.4.7-1_all.deb"
+}

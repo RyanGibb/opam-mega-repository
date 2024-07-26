@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fwupd_1.5.7-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fwupd"]
+]
+depends: [
+  "deb-libc6" {>= "2.17"}
+  "deb-libcurl3-gnutls" {>= "7.63.0"}
+  "deb-libefiboot1" {>= "37"}
+  "deb-libelf1" {>= "0.142"}
+  "deb-libflashrom1"
+  "deb-libfwupd2" {>= "1.5.6"}
+  "deb-libfwupdplugin1" {>= "1.5.7"}
+  "deb-libglib2-0-0" {>= "2.63.3"}
+  "deb-libgnutls30" {>= "3.7.0"}
+  "deb-libgudev-1-0-0" {>= "146"}
+  "deb-libgusb2" {>= "0.3.5"}
+  "deb-libjcat1" {>= "0.1.3"}
+  "deb-libjson-glib-1-0-0" {>= "1.5.2"}
+  "deb-libpolkit-gobject-1-0" {>= "0.99"}
+  "deb-libsmbios-c2"
+  "deb-libsqlite3-0" {>= "3.6.1"}
+  "deb-libsystemd0"
+  "deb-libtss2-esys-3-0-2-0" {>= "2.3.1"}
+  "deb-libxmlb1" {>= "0.1.13"}
+  "deb-shared-mime-info"
+]
+conflicts: [
+  "deb-fwupdate-amd64-signed"
+  "deb-fwupdate-arm64-signed"
+  "deb-fwupdate-armhf-signed"
+  "deb-fwupdate-i386-signed"
+]
+extra-source "fwupd_1.5.7-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fwupd/fwupd_1.5.7-4_amd64.deb"
+}

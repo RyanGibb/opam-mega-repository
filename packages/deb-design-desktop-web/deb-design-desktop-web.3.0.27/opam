@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i design-desktop-web_3.0.27_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r design-desktop-web"]
+]
+depends: [
+  "deb-compass-blueprint-plugin"
+  "deb-compass-color-schemer-plugin"
+  "deb-compass-fancy-buttons-plugin"
+  "deb-compass-h5bp-plugin"
+  "deb-compass-layoutgala-plugin"
+  "deb-compass-normalize-plugin"
+  "deb-compass-toolkit-plugin"
+  "deb-design-desktop"
+  "deb-epiphany-browser"
+  "deb-sass-stylesheets-gutenberg"
+  "deb-sass-stylesheets-sass-extras"
+  "deb-sass-stylesheets-typey"
+  "deb-sassc"
+  "deb-sgml-base" {>= "1.28"}
+]
+extra-source "design-desktop-web_3.0.27_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/debian-design/design-desktop-web_3.0.27_all.deb"
+}

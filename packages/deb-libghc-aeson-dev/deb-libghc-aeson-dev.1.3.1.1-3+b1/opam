@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-aeson-dev_1.3.1.1-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-aeson-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libghc-attoparsec-dev"
+  "deb-libghc-base-compat-dev"
+  "deb-libghc-dlist-dev"
+  "deb-libghc-hashable-dev"
+  "deb-libghc-scientific-dev"
+  "deb-libghc-tagged-dev"
+  "deb-libghc-th-abstraction-dev"
+  "deb-libghc-time-locale-compat-dev"
+  "deb-libghc-unordered-containers-dev"
+  "deb-libghc-uuid-types-dev"
+  "deb-libghc-vector-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-aeson-dev_1.3.1.1-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-aeson/libghc-aeson-dev_1.3.1.1-3+b1_amd64.deb"
+}

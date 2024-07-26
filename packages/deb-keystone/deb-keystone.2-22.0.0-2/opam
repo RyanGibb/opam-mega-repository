@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i keystone_2:22.0.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r keystone"]
+]
+depends: [
+  "deb-adduser"
+  "deb-dbconfig-common"
+  "deb-debconf"
+  "deb-python3-keystone" {= "2-22.0.0-2"}
+  "deb-python3-keystoneclient"
+  "deb-python3-openstackclient"
+  "deb-python3-pastescript"
+  "deb-python3-q-text-as-data"
+  "deb-sqlite3"
+  "deb-sysvinit-utils"
+  "deb-uwsgi-plugin-apparmor"
+  "deb-uwsgi-plugin-python3"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "keystone_2:22.0.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/keystone/keystone_22.0.0-2_all.deb"
+}

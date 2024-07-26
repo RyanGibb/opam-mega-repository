@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i graphite-api_1.1.3-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r graphite-api"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libjs-sphinxdoc" {>= "1.0"}
+  "deb-python3-any"
+  "deb-python3-cairocffi"
+  "deb-python3-flask"
+  "deb-python3-pyparsing"
+  "deb-python3-six"
+  "deb-python3-structlog" {>= "19.2.0"}
+  "deb-python3-tz"
+  "deb-python3-tzlocal"
+  "deb-python3-yaml"
+  "deb-sphinx-rtd-theme-common" {>= "0.4.3+dfsg"}
+]
+extra-source "graphite-api_1.1.3-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/graphite-api/graphite-api_1.1.3-6_all.deb"
+}

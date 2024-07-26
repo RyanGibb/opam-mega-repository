@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-text-autoformat-1.75-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-text-autoformat"]
+]
+depends: [
+  "apk-perl" {= "5.38.2-r0"}
+  "apk-perl-text-reform" {= "1.20-r4"}
+]
+extra-source "perl-text-autoformat-1.75-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-text-autoformat-1.75-r2.apk"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-spatstat.sparse_1.2-1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-spatstat.sparse"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.3-1"}
+  "deb-r-cran-abind"
+  "deb-r-cran-matrix"
+  "deb-r-cran-spatstat-utils" {>= "1.17-0"}
+  "deb-r-cran-tensor"
+]
+extra-source "r-cran-spatstat.sparse_1.2-1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-spatstat.sparse/r-cran-spatstat.sparse_1.2-1-1_amd64.deb"
+}

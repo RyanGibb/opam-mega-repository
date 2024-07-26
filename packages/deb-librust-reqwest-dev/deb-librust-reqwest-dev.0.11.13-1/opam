@@ -1,0 +1,52 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-reqwest-dev_0.11.13-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-reqwest-dev"]
+]
+depends: [
+  "deb-librust-base64-0-13+default-dev"
+  "deb-librust-bytes-1+default-dev"
+  "deb-librust-cookie-0-16+default-dev"
+  "deb-librust-cookie-store-0-16+default-dev"
+  "deb-librust-encoding-rs-0-8+default-dev"
+  "deb-librust-futures-core-0-3-dev"
+  "deb-librust-futures-util-0-3+io-dev"
+  "deb-librust-futures-util-0-3-dev"
+  "deb-librust-h2-dev"
+  "deb-librust-http-0-2+default-dev"
+  "deb-librust-http-body-0-4+default-dev"
+  "deb-librust-hyper-dev"
+  "deb-librust-hyper-rustls-0-23-dev"
+  "deb-librust-hyper-tls-0-5+default-dev"
+  "deb-librust-ipnet-dev"
+  "deb-librust-log-0-4+default-dev"
+  "deb-librust-mime-dev"
+  "deb-librust-mime-guess-2-dev"
+  "deb-librust-native-tls-dev"
+  "deb-librust-once-cell-1+default-dev"
+  "deb-librust-percent-encoding-dev"
+  "deb-librust-pin-project-lite-0-2+default-dev"
+  "deb-librust-proc-macro-hack-dev"
+  "deb-librust-rustls-0-20+dangerous-configuration-dev"
+  "deb-librust-rustls-0-20+default-dev"
+  "deb-librust-rustls-native-certs-0-6+default-dev"
+  "deb-librust-rustls-pemfile-1+default-dev"
+  "deb-librust-serde-1+default-dev"
+  "deb-librust-serde-json-1+default-dev"
+  "deb-librust-serde-urlencoded-dev"
+  "deb-librust-tokio-1+fs-dev"
+  "deb-librust-tokio-1+net-dev"
+  "deb-librust-tokio-1+rt-multi-thread-dev"
+  "deb-librust-tokio-1+sync-dev"
+  "deb-librust-tokio-1+time-dev"
+  "deb-librust-tokio-native-tls-0-3+default-dev"
+  "deb-librust-tokio-rustls-0-23+default-dev"
+  "deb-librust-tokio-util-dev"
+  "deb-librust-tower-service-0-3+default-dev"
+  "deb-librust-url-dev"
+]
+extra-source "librust-reqwest-dev_0.11.13-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-reqwest/librust-reqwest-dev_0.11.13-1_amd64.deb"
+}

@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i roger-router_2.2.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r roger-router"]
+]
+depends: [
+  "deb-libayatana-appindicator3-1" {>= "0.2.96"}
+  "deb-libc6" {>= "2.7"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libebook-1-2-20" {>= "3.17"}
+  "deb-libebook-contacts-1-2-3" {>= "3.16.2"}
+  "deb-libedataserver-1-2-25" {>= "3.17"}
+  "deb-libgdata22" {>= "0.17.2"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.25.2"}
+  "deb-libglib2-0-0" {>= "2.43.4"}
+  "deb-libgs9" {>= "9.10~dfsg"}
+  "deb-libgtk-3-0" {>= "3.21.5"}
+  "deb-libhandy-1-0" {>= "0.82.0"}
+  "deb-libpango-1-0-0" {>= "1.37.5"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpoppler-glib8" {>= "0.18.0"}
+  "deb-librm0"
+  "deb-libsoup2-4-1" {>= "2.4.0"}
+  "deb-libtiff5" {>= "4.0.3"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "roger-router_2.2.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/roger-router/roger-router_2.2.1-1_amd64.deb"
+}

@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i plasma-mediacenter_5.7.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r plasma-mediacenter"]
+]
+depends: [
+  "deb-baloo-kf5"
+  "deb-kio"
+  "deb-libc6" {>= "2.14"}
+  "deb-libkf5activities5" {>= "4.96.0"}
+  "deb-libkf5baloo5" {>= "5.3.0+git20150512"}
+  "deb-libkf5configcore5" {>= "4.97.0"}
+  "deb-libkf5coreaddons5" {>= "4.99.0"}
+  "deb-libkf5filemetadata3" {>= "5.1.0.1"}
+  "deb-libkf5guiaddons5" {>= "4.96.0"}
+  "deb-libkf5i18n5" {>= "4.97.0"}
+  "deb-libkf5kiocore5" {>= "4.96.0"}
+  "deb-libkf5kiowidgets5" {>= "4.96.0"}
+  "deb-libkf5service-bin"
+  "deb-libkf5service5" {>= "4.96.0"}
+  "deb-libqt5core5a" {>= "5.9.0~beta"}
+  "deb-libqt5dbus5" {>= "5.4"}
+  "deb-libqt5gui5" {>= "5.7.0"}
+  "deb-libqt5network5" {>= "5.4"}
+  "deb-libqt5qml5" {>= "5.0.2"}
+  "deb-libqt5quick5" {>= "5.0.2"}
+  "deb-libqt5xml5" {>= "5.4"}
+  "deb-libstdc++6" {>= "4.6"}
+  "deb-libtag1v5" {>= "1.9.1-2.2~"}
+  "deb-plasma-workspace"
+  "deb-qml-module-qtmultimedia"
+]
+extra-source "plasma-mediacenter_5.7.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/plasma-mediacenter/plasma-mediacenter_5.7.5-1_amd64.deb"
+}

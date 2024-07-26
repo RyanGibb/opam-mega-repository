@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i caja-image-converter_1.26.1-1.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r caja-image-converter"]
+]
+depends: [
+  "deb-caja-extensions-common" {= "1.26.1-1.2"}
+  "deb-imagemagick"
+  "deb-libc6" {>= "2.4"}
+  "deb-libcaja-extension1" {>= "1.22"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libgtk-3-0" {>= "3.9.10"}
+]
+extra-source "caja-image-converter_1.26.1-1.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/caja-extensions/caja-image-converter_1.26.1-1.2_amd64.deb"
+}

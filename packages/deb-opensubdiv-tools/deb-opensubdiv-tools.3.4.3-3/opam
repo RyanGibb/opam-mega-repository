@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i opensubdiv-tools_3.4.3-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r opensubdiv-tools"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglfw3" {>= "3.0"}
+  "deb-libosdcpu3-4-3" {>= "3.4.3"}
+  "deb-libosdgpu3-4-3" {>= "3.4.3"}
+  "deb-libstdc++6" {>= "5.2"}
+]
+extra-source "opensubdiv-tools_3.4.3-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/opensubdiv/opensubdiv-tools_3.4.3-3_amd64.deb"
+}

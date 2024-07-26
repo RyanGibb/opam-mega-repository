@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add heimdal-7.7.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del heimdal"]
+]
+depends: [
+  "apk-heimdal-libs" {= "7.7.1-r0"}
+  "apk-krb5-conf" {= "1.0-r2"}
+  "apk-libcom_err" {= "1.46.6-r0"}
+  "apk-musl" {= "1.2.3-r3"}
+  "apk-readline" {= "8.1.2-r0"}
+]
+extra-source "heimdal-7.7.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/heimdal-7.7.1-r0.apk"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-tasty-hspec-dev_1.1.5.1-3+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-tasty-hspec-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-hspec-core-dev"
+  "deb-libghc-hspec-dev"
+  "deb-libghc-quickcheck2-dev"
+  "deb-libghc-tasty-dev"
+  "deb-libghc-tasty-quickcheck-dev"
+  "deb-libghc-tasty-smallcheck-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-tasty-hspec-dev_1.1.5.1-3+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-tasty-hspec/libghc-tasty-hspec-dev_1.1.5.1-3+b2_amd64.deb"
+}

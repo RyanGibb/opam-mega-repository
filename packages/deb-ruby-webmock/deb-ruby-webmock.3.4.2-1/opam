@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-webmock_3.4.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-webmock"]
+]
+depends: [
+  "deb-ruby-addressable" {>= "2.3.6"}
+  "deb-ruby-crack" {>= "0.3.2"}
+  "deb-ruby-em-http-request"
+  "deb-ruby-hashdiff"
+  "deb-ruby-httpclient"
+  "deb-ruby-typhoeus"
+  ("deb-ruby" | "deb- ruby-interpreter")
+]
+extra-source "ruby-webmock_3.4.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-webmock/ruby-webmock_3.4.2-1_all.deb"
+}

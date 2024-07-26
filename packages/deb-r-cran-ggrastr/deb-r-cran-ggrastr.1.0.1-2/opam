@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-ggrastr_1.0.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-ggrastr"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.2.20221110-1"}
+  "deb-r-cran-cairo" {>= "1.5.9"}
+  "deb-r-cran-ggbeeswarm"
+  "deb-r-cran-ggplot2" {>= "2.1.0"}
+  "deb-r-cran-png"
+  "deb-r-cran-ragg"
+]
+extra-source "r-cran-ggrastr_1.0.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-ggrastr/r-cran-ggrastr_1.0.1-2_all.deb"
+}

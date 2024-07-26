@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-pymca5-dbg_5.4.3+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-pymca5-dbg"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libqhull7"
+  "deb-python-dbg" {< "2.8"}
+  "deb-python-dbg" {>= "2.7~"}
+  "deb-python-dbg-any" {< "2.8"}
+  "deb-python-dbg-any" {>= "2.7~"}
+  "deb-python-fisx-dbg" {>= "1.1.6-1~"}
+  "deb-python-h5py-dbg"
+  "deb-python-matplotlib-dbg"
+  "deb-python-numpy"
+  "deb-python-numpy" {>= "1-1.16.0~rc1"}
+  "deb-python-numpy-dbg"
+  "deb-python-opengl"
+  "deb-python-pymca5" {= "5.4.3+dfsg-1"}
+  "deb-python-pyqt5-dbg"
+  "deb-python-pyqt5-qtopengl-dbg"
+  "deb-python-silx-dbg" {>= "0.8"}
+]
+extra-source "python-pymca5-dbg_5.4.3+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pymca/python-pymca5-dbg_5.4.3+dfsg-1_amd64.deb"
+}

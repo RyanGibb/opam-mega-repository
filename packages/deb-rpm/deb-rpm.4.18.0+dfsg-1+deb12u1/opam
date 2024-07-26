@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i rpm_4.18.0+dfsg-1+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r rpm"]
+]
+depends: [
+  "deb-debugedit" {>= "1-5"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libelf1" {>= "0.131"}
+  "deb-libpopt0" {>= "1.14"}
+  "deb-libreadline8" {>= "6.0"}
+  "deb-librpm9" {>= "4.18.0+dfsg"}
+  "deb-librpmbuild9" {>= "4.17.0+dfsg1"}
+  "deb-librpmio9" {>= "4.14.0+dfsg1"}
+  "deb-librpmsign9" {>= "4.17.0+dfsg1"}
+  "deb-perl-any"
+  "deb-rpm-common" {= "4.18.0+dfsg-1+deb12u1"}
+  "deb-rpm2cpio"
+]
+extra-source "rpm_4.18.0+dfsg-1+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rpm/rpm_4.18.0+dfsg-1+deb12u1_amd64.deb"
+}

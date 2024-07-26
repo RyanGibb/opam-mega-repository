@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mkdocs_1.4.2+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mkdocs"]
+]
+depends: [
+  "deb-fonts-font-awesome"
+  "deb-ghp-import" {>= "1.0"}
+  "deb-libjs-bootstrap4"
+  "deb-libjs-jquery"
+  "deb-libjs-lunr"
+  "deb-libjs-modernizr"
+  "deb-python3-any"
+  "deb-python3-click"
+  "deb-python3-jinja2" {>= "2.10.1"}
+  "deb-python3-livereload"
+  "deb-python3-lunr"
+  "deb-python3-markdown" {>= "3.2.1"}
+  "deb-python3-mergedeep"
+  "deb-python3-packaging"
+  "deb-python3-pkg-resources"
+  "deb-python3-pyyaml-env-tag"
+  "deb-python3-watchdog"
+  "deb-python3-yaml"
+  "deb-sphinx-rtd-theme-common"
+  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.10"})
+  ("deb-python3-typing-extensions" | "deb- python3" {> "3.8"})
+]
+extra-source "mkdocs_1.4.2+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-mkdocs/mkdocs_1.4.2+dfsg-2_all.deb"
+}

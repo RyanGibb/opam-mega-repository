@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-ferret_7.4.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-ferret"]
+]
+depends: [
+  "deb-ferret-vis"
+  "deb-libc6" {>= "2.27"}
+  "deb-libcairo2" {>= "1.10.0"}
+  "deb-libgfortran5" {>= "8"}
+  "deb-libnetcdf13" {>= "4.3.0"}
+  "deb-libnetcdff6" {>= "4.1.1"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpython3-7" {>= "3.7.0"}
+  "deb-libsz2"
+  "deb-python3" {< "3.8"}
+  "deb-python3" {>= "3.7~"}
+  "deb-python3-any" {>= "3.6~"}
+  "deb-python3-future"
+  "deb-python3-numpy"
+  "deb-python3-numpy" {>= "1-1.14.3"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "python3-ferret_7.4.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pyferret/python3-ferret_7.4.4-1_amd64.deb"
+}

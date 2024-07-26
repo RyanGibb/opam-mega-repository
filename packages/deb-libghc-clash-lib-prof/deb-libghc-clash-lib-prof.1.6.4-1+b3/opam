@@ -1,0 +1,43 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-clash-lib-prof_1.6.4-1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-clash-lib-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-aeson-pretty-prof"
+  "deb-libghc-aeson-prof"
+  "deb-libghc-ansi-terminal-prof"
+  "deb-libghc-async-prof"
+  "deb-libghc-attoparsec-prof"
+  "deb-libghc-base16-bytestring-prof"
+  "deb-libghc-clash-lib-dev" {= "1.6.4-1+b3"}
+  "deb-libghc-clash-prelude-prof"
+  "deb-libghc-concurrent-supply-prof"
+  "deb-libghc-cryptohash-sha256-prof"
+  "deb-libghc-data-binary-ieee754-prof"
+  "deb-libghc-data-default-prof"
+  "deb-libghc-dlist-prof"
+  "deb-libghc-extra-prof"
+  "deb-libghc-hashable-prof"
+  "deb-libghc-hint-prof"
+  "deb-libghc-interpolate-prof"
+  "deb-libghc-lens-prof"
+  "deb-libghc-ordered-containers-prof"
+  "deb-libghc-pretty-show-prof"
+  "deb-libghc-prettyprinter-prof"
+  "deb-libghc-primitive-prof"
+  "deb-libghc-src-meta-prof"
+  "deb-libghc-temporary-prof"
+  "deb-libghc-terminal-size-prof"
+  "deb-libghc-trifecta-prof"
+  "deb-libghc-unordered-containers-prof"
+  "deb-libghc-vector-binary-instances-prof"
+  "deb-libghc-vector-prof"
+  "deb-libghc-yaml-prof"
+]
+extra-source "libghc-clash-lib-prof_1.6.4-1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-clash-lib/libghc-clash-lib-prof_1.6.4-1+b3_amd64.deb"
+}

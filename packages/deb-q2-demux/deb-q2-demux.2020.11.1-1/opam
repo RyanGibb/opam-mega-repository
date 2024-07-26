@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i q2-demux_2020.11.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r q2-demux"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-ipywidgets"
+  "deb-python3-numpy"
+  "deb-python3-pandas"
+  "deb-python3-psutil"
+  "deb-python3-seaborn"
+  "deb-python3-setuptools"
+  "deb-python3-skbio"
+  "deb-python3-yaml"
+  "deb-q2-types"
+  "deb-q2templates"
+  "deb-qiime"
+]
+extra-source "q2-demux_2020.11.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/q2-demux/q2-demux_2020.11.1-1_all.deb"
+}

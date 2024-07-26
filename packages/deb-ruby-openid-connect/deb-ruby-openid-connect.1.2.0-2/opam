@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-openid-connect_1.2.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-openid-connect"]
+]
+depends: [
+  "deb-ruby-activemodel"
+  "deb-ruby-attr-required"
+  "deb-ruby-json"
+  "deb-ruby-json-jwt"
+  "deb-ruby-rack-oauth2" {>= "1.6.1"}
+  "deb-ruby-swd"
+  "deb-ruby-tzinfo"
+  "deb-ruby-validate-email"
+  "deb-ruby-validate-url"
+  "deb-ruby-webfinger"
+  ("deb-ruby" | "deb- ruby-interpreter")
+]
+extra-source "ruby-openid-connect_1.2.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-openid-connect/ruby-openid-connect_1.2.0-2_all.deb"
+}

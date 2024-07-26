@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-gst-1.0-dbg_1.14.4-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-gst-1.0-dbg"]
+]
+depends: [
+  "deb-gir1-2-glib-2-0"
+  "deb-gir1-2-gst-plugins-base-1-0" {>= "1.14.4"}
+  "deb-gir1-2-gstreamer-1-0" {>= "1.14.4"}
+  "deb-libc6" {>= "2.4"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libgstreamer1-0-0" {>= "1.14.4"}
+  "deb-python-dbg" {< "2.8"}
+  "deb-python-dbg" {>= "2.7~"}
+  "deb-python-dbg-any" {< "2.8"}
+  "deb-python-dbg-any" {>= "2.7~"}
+  "deb-python-gi" {>= "3.8"}
+]
+extra-source "python-gst-1.0-dbg_1.14.4-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gst-python1.0/python-gst-1.0-dbg_1.14.4-1+b1_amd64.deb"
+}

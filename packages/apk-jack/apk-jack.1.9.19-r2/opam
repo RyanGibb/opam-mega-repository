@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add jack-1.9.19-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del jack"]
+]
+depends: [
+  "apk-alsa-lib" {= "1.2.5.1-r1"}
+  "apk-dbus-libs" {= "1.12.26-r0"}
+  "apk-libgcc" {= "10.3.1_git20211027-r0"}
+  "apk-libsamplerate" {= "0.1.9-r1"}
+  "apk-libstdc++" {= "10.3.1_git20211027-r0"}
+  "apk-musl" {= "1.2.2-r9"}
+  "apk-opus" {= "1.3.1-r1"}
+]
+extra-source "jack-1.9.19-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/jack-1.9.19-r2.apk"
+}

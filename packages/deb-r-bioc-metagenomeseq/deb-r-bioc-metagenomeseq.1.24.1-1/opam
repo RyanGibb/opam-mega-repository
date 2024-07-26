@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-bioc-metagenomeseq_1.24.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-bioc-metagenomeseq"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "3.5.2-1"}
+  "deb-r-bioc-biobase"
+  "deb-r-bioc-biocgenerics"
+  "deb-r-bioc-limma"
+  "deb-r-cran-foreach"
+  "deb-r-cran-glmnet"
+  "deb-r-cran-gplots"
+  "deb-r-cran-matrix"
+  "deb-r-cran-matrixstats"
+  "deb-r-cran-rcolorbrewer"
+]
+extra-source "r-bioc-metagenomeseq_1.24.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-bioc-metagenomeseq/r-bioc-metagenomeseq_1.24.1-1_all.deb"
+}

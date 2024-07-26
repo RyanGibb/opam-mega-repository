@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libf95getdata7_0.10.0-5+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libf95getdata7"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libfgetdata6" {= "0.10.0-5+deb10u1"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgetdata8" {= "0.10.0-5+deb10u1"}
+  "deb-libgfortran5" {>= "8"}
+  "deb-libquadmath0" {>= "4.6"}
+]
+extra-source "libf95getdata7_0.10.0-5+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libg/libgetdata/libf95getdata7_0.10.0-5+deb10u1_amd64.deb"
+}

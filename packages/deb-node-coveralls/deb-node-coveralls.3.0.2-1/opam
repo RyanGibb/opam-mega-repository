@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-coveralls_3.0.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-coveralls"]
+]
+depends: [
+  "deb-node-growl" {>= "1.10.0"}
+  "deb-node-js-yaml" {>= "3.6.1"}
+  "deb-node-lcov-parse" {>= "0.0.10"}
+  "deb-node-log-driver" {>= "1.2.5"}
+  "deb-node-minimist" {>= "1.2.0"}
+  "deb-node-request" {>= "2.26"}
+  "deb-nodejs" {>= "6.11.2~"}
+]
+extra-source "node-coveralls_3.0.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-coveralls/node-coveralls_3.0.2-1_all.deb"
+}

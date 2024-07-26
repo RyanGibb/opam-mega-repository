@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i grads_3:2.2.1-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r grads"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo2" {>= "1.6.0"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libdap25"
+  "deb-libdapclient6v5"
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgd3" {>= "2.1.0~alpha~"}
+  "deb-libgeotiff2" {>= "1.3.0"}
+  "deb-libgrib2c0d"
+  "deb-libhdf4-0-alt" {>= "4.2r4"}
+  "deb-libhdf5-103"
+  "deb-libice6" {>= "1-1.0.0"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libncurses6" {>= "6"}
+  "deb-libnetcdf13" {>= "4.0.1"}
+  "deb-libreadline7" {>= "6.0"}
+  "deb-libshp2" {>= "1.3.0"}
+  "deb-libsm6"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libsz2"
+  "deb-libtiff5" {>= "4.0.3"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-libudunits2-0" {>= "2.2.14"}
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxml2" {>= "2.6.27"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "grads_3:2.2.1-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/grads/grads_2.2.1-1+b1_amd64.deb"
+}

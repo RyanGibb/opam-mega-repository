@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i bcron_0.11-19_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r bcron"]
+]
+depends: [
+  "deb-daemon"
+  "deb-libbg2" {>= "2.03"}
+  "deb-libc6" {>= "2.34"}
+  "deb-runit-helper" {>= "2.14.0~"}
+  "deb-sysuser-helper" {< "2.0"}
+  "deb-ucspi-unix"
+]
+conflicts: [
+  "deb-bcron" {< "0.11-10"}
+  "deb-bcron-run" {< "0.11-3~"}
+  "deb-cron"
+  "deb-cronie"
+  "deb-runit" {< "2.1.2-46~"}
+  "deb-systemd-cron"
+]
+extra-source "bcron_0.11-19_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/bcron/bcron_0.11-19_amd64.deb"
+}

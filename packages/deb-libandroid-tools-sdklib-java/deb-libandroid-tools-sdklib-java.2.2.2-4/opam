@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libandroid-tools-sdklib-java_2.2.2-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libandroid-tools-sdklib-java"]
+]
+depends: [
+  "deb-libandroid-layoutlib-api-java" {>= "2.2.2-4"}
+  "deb-libandroid-tools-dvlib-java" {>= "2.2.2-4"}
+  "deb-libandroid-tools-repository-java" {>= "2.2.2-4"}
+  "deb-libcommons-compress-java"
+  "deb-libgoogle-gson-java"
+  "deb-libhttpclient-java"
+  "deb-libhttpmime-java"
+  "deb-libjaxb-api-java"
+  "deb-libjimfs-java"
+]
+extra-source "libandroid-tools-sdklib-java_2.2.2-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/android-platform-tools-base/libandroid-tools-sdklib-java_2.2.2-4_all.deb"
+}

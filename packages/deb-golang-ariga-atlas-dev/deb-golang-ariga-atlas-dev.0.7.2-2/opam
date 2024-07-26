@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-ariga-atlas-dev_0.7.2-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-ariga-atlas-dev"]
+]
+depends: [
+  "deb-golang-github-antlr-antlr4-dev"
+  "deb-golang-github-apparentlymart-go-textseg-dev" {>= "13.0.0~"}
+  "deb-golang-github-data-dog-go-sqlmock-dev"
+  "deb-golang-github-fatih-color-dev"
+  "deb-golang-github-go-openapi-inflect-dev"
+  "deb-golang-github-go-sql-driver-mysql-dev"
+  "deb-golang-github-hashicorp-hcl-v2-dev"
+  "deb-golang-github-lib-pq-dev"
+  "deb-golang-github-manifoldco-promptui-dev"
+  "deb-golang-github-mattn-go-sqlite3-dev"
+  "deb-golang-github-mitchellh-go-homedir-dev"
+  "deb-golang-github-olekukonko-tablewriter-dev"
+  "deb-golang-github-pkg-diff-dev"
+  "deb-golang-github-rogpeppe-go-internal-dev"
+  "deb-golang-github-spf13-cobra-dev"
+  "deb-golang-github-spf13-pflag-dev"
+  "deb-golang-github-stretchr-testify-dev"
+  "deb-golang-github-zclconf-go-cty-dev"
+  "deb-golang-golang-x-exp-dev"
+  "deb-golang-golang-x-mod-dev"
+]
+extra-source "golang-ariga-atlas-dev_0.7.2-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-ariga-atlas/golang-ariga-atlas-dev_0.7.2-2_all.deb"
+}

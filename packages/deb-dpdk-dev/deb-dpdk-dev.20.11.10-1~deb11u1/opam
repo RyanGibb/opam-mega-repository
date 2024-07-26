@@ -1,0 +1,89 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dpdk-dev_20.11.10-1~deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dpdk-dev"]
+]
+depends: [
+  "deb-libbsd0" {>= "0.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libdpdk-dev" {>= "20.11.10-1~deb11u1"}
+  "deb-libelf1" {>= "0.131"}
+  "deb-libfdt1" {>= "1.6.0"}
+  "deb-libjansson4" {>= "2.0.1"}
+  "deb-libnuma1" {>= "2.0.11"}
+  "deb-libpcap0-8" {>= "0.9.8"}
+  "deb-librte-acl21" {>= "20.11"}
+  "deb-librte-baseband-acc100-21" {>= "20.11"}
+  "deb-librte-baseband-fpga-5gnr-fec21" {>= "20.11"}
+  "deb-librte-baseband-fpga-lte-fec21" {>= "20.11"}
+  "deb-librte-bbdev21" {>= "19.11"}
+  "deb-librte-bitratestats21" {>= "20.11"}
+  "deb-librte-bpf21" {>= "20.11"}
+  "deb-librte-bus-dpaa21" {>= "20.11.10"}
+  "deb-librte-bus-pci21" {>= "20.11"}
+  "deb-librte-bus-vdev21" {>= "20.11"}
+  "deb-librte-cfgfile21" {>= "20.11"}
+  "deb-librte-cmdline21" {>= "20.11"}
+  "deb-librte-common-dpaax21" {>= "20.08"}
+  "deb-librte-compressdev21" {>= "19.11"}
+  "deb-librte-crypto-scheduler21" {>= "20.11"}
+  "deb-librte-cryptodev21" {>= "20.11"}
+  "deb-librte-distributor21" {>= "20.11"}
+  "deb-librte-eal21" {>= "20.11"}
+  "deb-librte-efd21" {>= "20.11"}
+  "deb-librte-ethdev21" {>= "20.11"}
+  "deb-librte-event-skeleton21" {>= "20.11"}
+  "deb-librte-eventdev21" {>= "20.11"}
+  "deb-librte-fib21" {>= "20.11~rc3"}
+  "deb-librte-flow-classify21" {>= "19.11"}
+  "deb-librte-graph21" {>= "20.11"}
+  "deb-librte-gro21" {>= "20.11"}
+  "deb-librte-gso21" {>= "20.11"}
+  "deb-librte-hash21" {>= "20.11"}
+  "deb-librte-ip-frag21" {>= "20.11"}
+  "deb-librte-ipsec21" {>= "20.11"}
+  "deb-librte-kni21" {>= "20.11"}
+  "deb-librte-kvargs21" {>= "20.11"}
+  "deb-librte-latencystats21" {>= "20.11"}
+  "deb-librte-lpm21" {>= "20.11"}
+  "deb-librte-mbuf21" {>= "20.11"}
+  "deb-librte-member21" {>= "20.11"}
+  "deb-librte-mempool-dpaa21" {>= "20.11.10"}
+  "deb-librte-mempool-ring21" {>= "20.11"}
+  "deb-librte-mempool-stack21" {>= "20.11"}
+  "deb-librte-mempool21" {>= "20.11"}
+  "deb-librte-meter21" {>= "20.11"}
+  "deb-librte-metrics21" {>= "20.11"}
+  "deb-librte-net-bnxt21" {>= "20.11"}
+  "deb-librte-net-bond21" {>= "20.11"}
+  "deb-librte-net-dpaa21" {>= "20.11"}
+  "deb-librte-net-i40e21" {>= "20.11"}
+  "deb-librte-net-ixgbe21" {>= "20.11"}
+  "deb-librte-net-ring21" {>= "20.11"}
+  "deb-librte-net21" {>= "20.11"}
+  "deb-librte-node21" {>= "20.11"}
+  "deb-librte-pci21" {>= "20.11"}
+  "deb-librte-pdump21" {>= "20.11"}
+  "deb-librte-pipeline21" {>= "20.11"}
+  "deb-librte-port21" {>= "20.11"}
+  "deb-librte-power21" {>= "20.11"}
+  "deb-librte-rawdev21" {>= "20.11"}
+  "deb-librte-rcu21" {>= "20.11"}
+  "deb-librte-regexdev21" {>= "20.11"}
+  "deb-librte-reorder21" {>= "20.11"}
+  "deb-librte-rib21" {>= "19.11"}
+  "deb-librte-ring21" {>= "20.11"}
+  "deb-librte-sched21" {>= "20.11"}
+  "deb-librte-security21" {>= "20.11"}
+  "deb-librte-stack21" {>= "20.11"}
+  "deb-librte-table21" {>= "20.11"}
+  "deb-librte-telemetry21" {>= "20.11"}
+  "deb-librte-timer21" {>= "20.11"}
+  "deb-python3"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "dpdk-dev_20.11.10-1~deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dpdk/dpdk-dev_20.11.10-1~deb11u1_amd64.deb"
+}

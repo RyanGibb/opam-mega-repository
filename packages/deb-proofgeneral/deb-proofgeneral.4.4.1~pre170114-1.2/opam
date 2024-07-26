@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i proofgeneral_4.4.1~pre170114-1.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r proofgeneral"]
+]
+depends: [
+  "deb-emacs-gtk"
+  "deb-mmm-mode"
+]
+conflicts: [
+  "deb-proofgeneral-coq"
+  "deb-proofgeneral-minlog"
+  "deb-proofgeneral-misc"
+]
+extra-source "proofgeneral_4.4.1~pre170114-1.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/proofgeneral/proofgeneral_4.4.1~pre170114-1.2_all.deb"
+}

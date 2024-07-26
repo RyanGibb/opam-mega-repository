@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libxfce4ui-2-0_4.16.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libxfce4ui-2-0"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libgtk-3-0" {>= "3.21.4"}
+  "deb-libice6" {>= "1-1.0.0"}
+  "deb-libsm6"
+  "deb-libstartup-notification0" {>= "0.4"}
+  "deb-libx11-6"
+  "deb-libxfce4ui-common"
+  "deb-libxfce4util7" {>= "4.15.6"}
+  "deb-libxfconf-0-3" {>= "4.6.0"}
+]
+extra-source "libxfce4ui-2-0_4.16.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libx/libxfce4ui/libxfce4ui-2-0_4.16.0-1_amd64.deb"
+}

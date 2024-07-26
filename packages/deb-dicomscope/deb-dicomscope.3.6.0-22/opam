@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dicomscope_3.6.0-22_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dicomscope"]
+]
+depends: [
+  "deb-default-jre"
+  "deb-jarwrapper" {>= "0.5"}
+  "deb-libdicomscope-jni"
+  ("deb-tk8-6" | "deb- tk8-5" | "deb- tk8-4" | "deb- wish")
+]
+extra-source "dicomscope_3.6.0-22_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dicomscope/dicomscope_3.6.0-22_all.deb"
+}

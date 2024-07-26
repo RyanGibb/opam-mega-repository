@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-liftoff_3.1.0-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-liftoff"]
+]
+depends: [
+  "deb-node-extend"
+  "deb-node-findup-sync" {>= "0.4.2"}
+  "deb-node-fined"
+  "deb-node-flagged-respawn" {>= "1.0~"}
+  "deb-node-for-own"
+  "deb-node-is-plain-object"
+  "deb-node-kind-of"
+  "deb-node-lodash-packages"
+  "deb-node-rechoir"
+  "deb-node-resolve" {>= "1.1.7"}
+  "deb-nodejs"
+]
+extra-source "node-liftoff_3.1.0-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-liftoff/node-liftoff_3.1.0-4_all.deb"
+}

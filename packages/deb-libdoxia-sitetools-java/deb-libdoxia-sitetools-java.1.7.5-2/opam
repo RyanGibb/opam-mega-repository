@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdoxia-sitetools-java_1.7.5-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdoxia-sitetools-java"]
+]
+depends: [
+  "deb-libcommons-collections3-java"
+  "deb-libcommons-io-java" {>= "2.6"}
+  "deb-libcommons-lang3-java" {>= "3.8"}
+  "deb-libdoxia-core-java" {>= "1.7"}
+  "deb-libdoxia-java" {>= "1.7"}
+  "deb-libmaven-parent-java" {>= "31"}
+  "deb-libmaven-reporting-api-java" {>= "3.0"}
+  "deb-libmaven3-core-java" {>= "3.6.3"}
+  "deb-libplexus-component-annotations-java"
+  "deb-libplexus-container-default-java"
+  "deb-libplexus-i18n-java" {>= "1.0-beta-10"}
+  "deb-libplexus-interpolation-java" {>= "1.26"}
+  "deb-libplexus-utils2-java" {>= "2.x"}
+  "deb-libplexus-velocity-java" {>= "1.2"}
+  "deb-libvelocity-tools-java"
+  "deb-libxalan2-java" {>= "2.7.2"}
+  "deb-velocity"
+]
+conflicts: [
+  "deb-libdoxia-java" {<= "1.0-alpha-7-1"}
+]
+extra-source "libdoxia-sitetools-java_1.7.5-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/doxia-sitetools/libdoxia-sitetools-java_1.7.5-2_all.deb"
+}

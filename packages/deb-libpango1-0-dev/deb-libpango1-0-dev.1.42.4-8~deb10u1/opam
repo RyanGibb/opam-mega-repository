@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpango1.0-dev_1.42.4-8~deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpango1.0-dev"]
+]
+depends: [
+  "deb-gir1-2-pango-1-0" {= "1.42.4-8~deb10u1"}
+  "deb-libcairo2-dev" {>= "1.12.10"}
+  "deb-libfontconfig1-dev" {>= "2.11.91"}
+  "deb-libfreetype6-dev"
+  "deb-libfribidi-dev" {>= "0.19.7"}
+  "deb-libglib2-0-dev" {>= "2.34.0"}
+  "deb-libharfbuzz-dev" {>= "0.9.9"}
+  "deb-libpango-1-0-0" {= "1.42.4-8~deb10u1"}
+  "deb-libpangocairo-1-0-0" {= "1.42.4-8~deb10u1"}
+  "deb-libpangoft2-1-0-0" {= "1.42.4-8~deb10u1"}
+  "deb-libpangoxft-1-0-0" {= "1.42.4-8~deb10u1"}
+  "deb-libx11-dev"
+  "deb-libxft-dev"
+  "deb-libxrender-dev"
+  "deb-pango1-0-tools" {= "1.42.4-8~deb10u1"}
+  "deb-pkg-config"
+]
+extra-source "libpango1.0-dev_1.42.4-8~deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pango1.0/libpango1.0-dev_1.42.4-8~deb10u1_amd64.deb"
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i runit-init_2.1.2-25_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r runit-init"]
+]
+depends: [
+  "deb-getty-run"
+  "deb-initscripts"
+  "deb-libc6" {>= "2.4"}
+  "deb-runit" {>= "2.1.2-20~"}
+  "deb-runit-helper" {>= "2.8.1~"}
+  "deb-sysuser-helper" {< "1.4"}
+  "deb-sysv-rc"
+]
+conflicts: [
+  "deb-systemd-sysv"
+  "deb-sysvinit-core"
+]
+extra-source "runit-init_2.1.2-25_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/runit/runit-init_2.1.2-25_amd64.deb"
+}

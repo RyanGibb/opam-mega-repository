@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-subvertpy_0.10.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-subvertpy"]
+]
+depends: [
+  "deb-libapr1" {>= "1.2.7"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libsvn1" {>= "1.9"}
+  "deb-python3" {< "3.8"}
+  "deb-python3" {>= "3.6~"}
+  "deb-python3-any"
+]
+extra-source "python3-subvertpy_0.10.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/subvertpy/python3-subvertpy_0.10.1-2_amd64.deb"
+}

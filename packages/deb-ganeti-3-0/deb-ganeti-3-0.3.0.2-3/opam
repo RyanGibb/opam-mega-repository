@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ganeti-3.0_3.0.2-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ganeti-3.0"]
+]
+depends: [
+  "deb-adduser"
+  "deb-fping"
+  "deb-iproute2"
+  "deb-iputils-arping"
+  "deb-libcap2-bin"
+  "deb-lvm2"
+  "deb-openssh-client"
+  "deb-openssh-server"
+  "deb-openssl"
+  "deb-python3-any"
+  "deb-python3-bitarray"
+  "deb-python3-openssl"
+  "deb-python3-paramiko"
+  "deb-python3-psutil"
+  "deb-python3-pycurl"
+  "deb-python3-pyinotify"
+  "deb-python3-pyparsing"
+  "deb-python3-simplejson"
+  "deb-socat"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "ganeti-3.0_3.0.2-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/ganeti/ganeti-3.0_3.0.2-3_all.deb"
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sup-mail_0.22.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sup-mail"]
+]
+depends: [
+  "deb-ruby-chronic" {>= "0.9.1~"}
+  "deb-ruby-highline"
+  "deb-ruby-locale" {>= "2.0~"}
+  "deb-ruby-lockfile"
+  "deb-ruby-mime-types" {>= "1.0~"}
+  "deb-ruby-ncurses" {>= "1.4.0~"}
+  "deb-ruby-rubymail" {>= "1.0.0~"}
+  "deb-ruby-trollop" {>= "1.12~"}
+  "deb-ruby-unicode" {>= "0.4.4~"}
+  "deb-ruby-xapian" {>= "1.2.15~"}
+  ("deb-ruby" | "deb- ruby-interpreter")
+]
+extra-source "sup-mail_0.22.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sup-mail/sup-mail_0.22.1-2_all.deb"
+}

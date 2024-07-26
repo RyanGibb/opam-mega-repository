@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-vector-instances-prof_3.4-5+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-vector-instances-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-comonad-prof"
+  "deb-libghc-hashable-prof"
+  "deb-libghc-keys-prof"
+  "deb-libghc-pointed-prof"
+  "deb-libghc-semigroupoids-prof"
+  "deb-libghc-semigroups-prof"
+  "deb-libghc-vector-instances-dev" {= "3.4-5+b3"}
+  "deb-libghc-vector-prof"
+]
+extra-source "libghc-vector-instances-prof_3.4-5+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-vector-instances/libghc-vector-instances-prof_3.4-5+b3_amd64.deb"
+}

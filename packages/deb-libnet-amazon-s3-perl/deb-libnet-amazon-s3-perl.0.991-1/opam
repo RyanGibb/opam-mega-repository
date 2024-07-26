@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libnet-amazon-s3-perl_0.991-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libnet-amazon-s3-perl"]
+]
+depends: [
+  "deb-libdata-stream-bulk-perl"
+  "deb-libdatetime-format-http-perl"
+  "deb-libdigest-hmac-perl"
+  "deb-libdigest-md5-file-perl"
+  "deb-libfile-find-rule-perl"
+  "deb-libhttp-date-perl"
+  "deb-libhttp-message-perl"
+  "deb-liblwp-useragent-determined-perl"
+  "deb-libmime-types-perl"
+  "deb-libmoose-perl"
+  "deb-libmoosex-role-parameterized-perl"
+  "deb-libmoosex-strictconstructor-perl"
+  "deb-libmoosex-types-datetime-morecoercions-perl"
+  "deb-libnamespace-clean-perl"
+  "deb-libpath-class-perl"
+  "deb-libref-util-perl"
+  "deb-libregexp-common-perl"
+  "deb-libsafe-isa-perl"
+  "deb-libscalar-list-utils-perl"
+  "deb-libsub-override-perl"
+  "deb-libterm-encoding-perl"
+  "deb-libterm-progressbar-simple-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-libxml-libxml-perl"
+  "deb-perl-any"
+]
+extra-source "libnet-amazon-s3-perl_0.991-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libn/libnet-amazon-s3-perl/libnet-amazon-s3-perl_0.991-1_all.deb"
+}

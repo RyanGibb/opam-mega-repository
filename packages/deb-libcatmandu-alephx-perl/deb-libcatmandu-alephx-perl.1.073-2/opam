@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcatmandu-alephx-perl_1.073-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcatmandu-alephx-perl"]
+]
+depends: [
+  "deb-libcatmandu-perl"
+  "deb-libclone-perl"
+  "deb-libdata-util-perl"
+  "deb-libmoo-perl"
+  "deb-libnamespace-clean-perl"
+  "deb-libsoftware-license-perl"
+  "deb-libtest-exception-perl"
+  "deb-libtest-simple-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-libxml-libxml-perl"
+  "deb-perl-any"
+]
+extra-source "libcatmandu-alephx-perl_1.073-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libcatmandu-alephx-perl/libcatmandu-alephx-perl_1.073-2_all.deb"
+}

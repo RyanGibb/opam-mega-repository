@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-pyqt6.qtcharts_6.4.0+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-pyqt6.qtcharts"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libqt6charts6" {>= "6.2.1"}
+  "deb-libqt6core6" {>= "6.4.0"}
+  "deb-libqt6gui6" {>= "6.1.2"}
+  "deb-libqt6widgets6" {>= "6.1.2"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-python3" {>= "3~"}
+  "deb-python3-pyqt6"
+  "deb-python3-pyqt6-sip" {< "14"}
+  "deb-python3-pyqt6-sip" {>= "13.4"}
+]
+extra-source "python3-pyqt6.qtcharts_6.4.0+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pyqt6-charts/python3-pyqt6.qtcharts_6.4.0+dfsg-2_amd64.deb"
+}

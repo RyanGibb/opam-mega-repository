@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i credential-sheets_0.0.3-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r credential-sheets"]
+]
+depends: [
+  "deb-libarchive-zip-perl"
+  "deb-libtext-csv-perl"
+  "deb-perl-any"
+  "deb-texlive-latex-base"
+  "deb-texlive-latex-extra"
+  "deb-texlive-xetex"
+]
+extra-source "credential-sheets_0.0.3-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/credential-sheets/credential-sheets_0.0.3-4_all.deb"
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add subversion-dev-1.14.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del subversion-dev"]
+]
+depends: [
+  "apk-apr-dev" {= "1.7.2-r0"}
+  "apk-apr-util-dev" {= "1.6.3-r0"}
+  "apk-perl-subversion" {= "1.14.2-r0"}
+  "apk-pkgconf" {= "1.8.1-r0"}
+  "apk-py3-subversion" {= "1.14.2-r0"}
+  "apk-serf-dev" {= "1.3.9-r7"}
+  "apk-sqlite-dev" {= "3.36.0-r0"}
+  "apk-subversion-libs" {= "1.14.2-r0"}
+]
+extra-source "subversion-dev-1.14.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/subversion-dev-1.14.2-r0.apk"
+}

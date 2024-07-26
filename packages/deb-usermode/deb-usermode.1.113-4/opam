@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i usermode_1.113-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r usermode"]
+]
+depends: [
+  "deb-libblkid1" {>= "2.16"}
+  "deb-libc6" {>= "2.27"}
+  "deb-libglib2-0-0" {>= "2.24.0"}
+  "deb-libgtk2-0-0" {>= "2.24.0"}
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-libuser1" {>= "1-0.60~dfsg"}
+]
+extra-source "usermode_1.113-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/u/usermode/usermode_1.113-4_amd64.deb"
+}

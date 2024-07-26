@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-pyxrd_0.8.4-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-pyxrd"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-cairocffi"
+  "deb-python3-deap"
+  "deb-python3-gi"
+  "deb-python3-matplotlib"
+  "deb-python3-numpy"
+  "deb-python3-pkg-resources"
+  "deb-python3-pyro4"
+  "deb-python3-scipy"
+]
+extra-source "python3-pyxrd_0.8.4-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pyxrd/python3-pyxrd_0.8.4-3_amd64.deb"
+}

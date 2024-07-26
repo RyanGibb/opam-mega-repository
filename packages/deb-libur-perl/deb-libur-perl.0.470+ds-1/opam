@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libur-perl_0.470+ds-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libur-perl"]
+]
+depends: [
+  "deb-libclass-autoloadcan-perl"
+  "deb-libclass-autouse-perl"
+  "deb-libclass-inspector-perl"
+  "deb-libclone-pp-perl"
+  "deb-libdata-compare-perl"
+  "deb-libdata-uuid-libuuid-perl"
+  "deb-libdbd-sqlite3-perl"
+  "deb-libdbi-perl"
+  "deb-libdevel-globaldestruction-perl"
+  "deb-libfreezethaw-perl"
+  "deb-libgetopt-complete-perl"
+  "deb-libjson-perl"
+  "deb-liblingua-en-inflect-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-libmodule-runtime-perl"
+  "deb-libmro-compat-perl"
+  "deb-libossp-uuid-perl"
+  "deb-libpath-class-perl"
+  "deb-libplack-perl"
+  "deb-libsub-install-perl"
+  "deb-libsub-name-perl"
+  "deb-libtemplate-perl"
+  "deb-libtest-exception-perl"
+  "deb-libtest-fork-perl"
+  "deb-libtext-diff-perl"
+  "deb-libtext-glob-perl"
+  "deb-libyaml-perl"
+  "deb-perl"
+]
+extra-source "libur-perl_0.470+ds-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libu/libur-perl/libur-perl_0.470+ds-1_all.deb"
+}

@@ -1,0 +1,48 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmediastreamer12_1:5.1.64+dfsg-3+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmediastreamer12"]
+]
+depends: [
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libavcodec-extra59"
+  "deb-libavutil57" {>= "7-5.0"}
+  "deb-libbcg729-0" {>= "1.1.1~"}
+  "deb-libbcmatroska2-5" {< "5.2.0"}
+  "deb-libbcmatroska2-5" {>= "5.1.20"}
+  "deb-libbctoolbox1" {< "5.2.0"}
+  "deb-libbctoolbox1" {>= "5.1.64"}
+  "deb-libbzrtp0" {>= "5.1.64~"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgl1"
+  "deb-libglew2-2" {>= "2.2.0-4+b1"}
+  "deb-libgsm1" {>= "1.0.18"}
+  "deb-libmediastreamer-data" {= "1-5.1.64+dfsg-3"}
+  "deb-libopus0" {>= "1.1"}
+  "deb-libortp16" {< "1-5.2.0"}
+  "deb-libortp16" {>= "1-5.1.64"}
+  "deb-libpcap0-8" {>= "0.9.8"}
+  "deb-libpulse0" {>= "0.99.1"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5qml5"
+  "deb-libspandsp2" {>= "0.0.6~pre18"}
+  "deb-libspeex1" {>= "1.2~"}
+  "deb-libspeexdsp1" {>= "1.2.1"}
+  "deb-libsrtp2-1" {>= "2.0.0"}
+  "deb-libstdc++6" {>= "12"}
+  "deb-libswscale6" {>= "7-5.0"}
+  "deb-libtheora0" {>= "0.0.0.alpha7.dfsg"}
+  "deb-libturbojpeg0" {>= "1-2.0.2"}
+  "deb-libvpx7" {>= "1.12.0"}
+  "deb-libx11-6"
+  "deb-libxv1"
+  "deb-libzxing2" {>= "1.4.0"}
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+  ("deb-libqt5quick5" {>= "5.2.0~beta1"} | "deb- libqt5quick5-gles" {>= "5.2.0~beta1"})
+]
+extra-source "libmediastreamer12_1:5.1.64+dfsg-3+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mediastreamer2/libmediastreamer12_5.1.64+dfsg-3+b3_amd64.deb"
+}

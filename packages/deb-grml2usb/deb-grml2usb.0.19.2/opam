@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i grml2usb_0.19.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r grml2usb"]
+]
+depends: [
+  "deb-kmod"
+  "deb-mtools"
+  "deb-python3"
+  "deb-python3-parted"
+  "deb-rsync"
+  ("deb-syslinux" | "deb- grub-pc-bin")
+  ("deb-syslinux" | "deb- grub2-common")
+]
+extra-source "grml2usb_0.19.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/grml2usb/grml2usb_0.19.2_amd64.deb"
+}

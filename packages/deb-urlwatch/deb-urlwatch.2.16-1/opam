@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i urlwatch_2.16-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r urlwatch"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-appdirs"
+  "deb-python3-cssselect"
+  "deb-python3-lxml"
+  "deb-python3-minidb"
+  "deb-python3-requests"
+  "deb-python3-yaml"
+]
+extra-source "urlwatch_2.16-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/u/urlwatch/urlwatch_2.16-1_all.deb"
+}

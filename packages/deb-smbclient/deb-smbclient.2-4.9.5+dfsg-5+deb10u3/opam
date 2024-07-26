@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i smbclient_2:4.9.5+dfsg-5+deb10u3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r smbclient"]
+]
+depends: [
+  "deb-libarchive13" {>= "3.0.4"}
+  "deb-libbsd0" {>= "0.0"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libpopt0" {>= "1.14"}
+  "deb-libreadline7" {>= "6.0"}
+  "deb-libsmbclient" {>= "2-4.0.3+dfsg1"}
+  "deb-libtalloc2" {>= "2.0.4~git20101213"}
+  "deb-libtevent0" {>= "0.9.9"}
+  "deb-samba-common" {= "2-4.9.5+dfsg-5+deb10u3"}
+  "deb-samba-libs" {= "2-4.9.5+dfsg-5+deb10u3"}
+]
+extra-source "smbclient_2:4.9.5+dfsg-5+deb10u3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/samba/smbclient_4.9.5+dfsg-5+deb10u3_amd64.deb"
+}

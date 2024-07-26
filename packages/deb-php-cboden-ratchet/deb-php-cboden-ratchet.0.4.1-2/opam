@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i php-cboden-ratchet_0.4.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r php-cboden-ratchet"]
+]
+depends: [
+  "deb-php-common"
+  "deb-php-guzzlehttp-psr7" {< "2~~"}
+  "deb-php-guzzlehttp-psr7" {>= "1.0"}
+  "deb-php-ratchet-rfc6455" {< "0.3~~"}
+  "deb-php-ratchet-rfc6455" {>= "0.2"}
+  "deb-php-react-socket" {< "2~~"}
+  "deb-php-react-socket" {>= "1.0"}
+  "deb-php-symfony-http-foundation" {< "4~~"}
+  "deb-php-symfony-http-foundation" {>= "3.0"}
+  "deb-php-symfony-routing" {< "4~~"}
+  "deb-php-symfony-routing" {>= "3.0"}
+]
+extra-source "php-cboden-ratchet_0.4.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ratchetphp/php-cboden-ratchet_0.4.1-2_all.deb"
+}

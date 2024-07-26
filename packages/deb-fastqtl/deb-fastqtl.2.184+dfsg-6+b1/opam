@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fastqtl_2.184+dfsg-6+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fastqtl"]
+]
+depends: [
+  "deb-libboost-iostreams1-67-0"
+  "deb-libboost-program-options1-67-0"
+  "deb-libc6" {>= "2.25"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgsl23" {>= "2.5"}
+  "deb-libhts2" {>= "1.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-r-mathlib"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libblas3" | "deb- libblas-so-3")
+]
+extra-source "fastqtl_2.184+dfsg-6+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fastqtl/fastqtl_2.184+dfsg-6+b1_amd64.deb"
+}

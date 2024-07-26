@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-pytoolconfig_1.2.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-pytoolconfig"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-packaging" {>= "21.3"}
+  "deb-python3-platformdirs"
+  ("deb-python3-tomli" | "deb- python3" {> "3.11"})
+  ("deb-python3-typing-extensions" | "deb- python3" {> "3.8"})
+]
+extra-source "python3-pytoolconfig_1.2.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pytoolconfig/python3-pytoolconfig_1.2.5-1_all.deb"
+}

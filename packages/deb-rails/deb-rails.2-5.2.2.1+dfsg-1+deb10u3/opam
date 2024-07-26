@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i rails_2:5.2.2.1+dfsg-1+deb10u3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r rails"]
+]
+depends: [
+  "deb-puma" {>= "3.11"}
+  "deb-ruby-bootsnap" {>= "1.1.0"}
+  "deb-ruby-byebug"
+  "deb-ruby-capybara" {< "4.0"}
+  "deb-ruby-capybara" {>= "2.15"}
+  "deb-ruby-chromedriver-helper"
+  "deb-ruby-coffee-rails" {>= "4.2"}
+  "deb-ruby-jbuilder" {< "3.0"}
+  "deb-ruby-jbuilder" {>= "2.5"}
+  "deb-ruby-jquery-rails"
+  "deb-ruby-listen" {< "3.2"}
+  "deb-ruby-listen" {>= "3.0.5"}
+  "deb-ruby-rails" {= "2-5.2.2.1+dfsg-1+deb10u3"}
+  "deb-ruby-sass-rails" {>= "5.0"}
+  "deb-ruby-sdoc"
+  "deb-ruby-selenium-webdriver"
+  "deb-ruby-spring"
+  "deb-ruby-spring-watcher-listen"
+  "deb-ruby-sqlite3"
+  "deb-ruby-turbolinks" {>= "5.0"}
+  "deb-ruby-uglifier" {>= "1.3.0"}
+  "deb-ruby-web-console"
+]
+extra-source "rails_2:5.2.2.1+dfsg-1+deb10u3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rails/rails_5.2.2.1+dfsg-1+deb10u3_all.deb"
+}

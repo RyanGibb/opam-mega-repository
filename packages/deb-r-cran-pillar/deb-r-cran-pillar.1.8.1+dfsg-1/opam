@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-pillar_1.8.1+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-pillar"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.1-2"}
+  "deb-r-cran-cli" {>= "2.3.0"}
+  "deb-r-cran-fansi"
+  "deb-r-cran-glue"
+  "deb-r-cran-lifecycle"
+  "deb-r-cran-rlang" {>= "1.0.2"}
+  "deb-r-cran-utf8" {>= "1.1.0"}
+  "deb-r-cran-vctrs" {>= "0.3.8"}
+]
+extra-source "r-cran-pillar_1.8.1+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-pillar/r-cran-pillar_1.8.1+dfsg-1_all.deb"
+}

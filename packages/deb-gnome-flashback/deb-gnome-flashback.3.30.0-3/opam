@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnome-flashback_3.30.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnome-flashback"]
+]
+depends: [
+  "deb-gnome-flashback-common" {= "3.30.0-3"}
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo2" {>= "1.10.0"}
+  "deb-libcanberra-gtk3-0" {>= "0.25"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.32.2"}
+  "deb-libglib2-0-0" {>= "2.55.2"}
+  "deb-libgnome-bluetooth13" {>= "3.12.0"}
+  "deb-libgnome-desktop-3-17" {>= "3.17.92"}
+  "deb-libgtk-3-0" {>= "3.22.0"}
+  "deb-libibus-1-0-5" {>= "1.5.2"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpolkit-agent-1-0" {>= "0.99"}
+  "deb-libpolkit-gobject-1-0" {>= "0.99"}
+  "deb-libpulse-mainloop-glib0" {>= "0.99.1"}
+  "deb-libpulse0" {>= "0.99.1"}
+  "deb-libupower-glib3" {>= "0.99.0"}
+  "deb-libx11-6" {>= "2-1.2.99.901"}
+  "deb-libx11-xcb1"
+  "deb-libxcb-randr0" {>= "1.1"}
+  "deb-libxext6"
+  "deb-libxfixes3"
+  "deb-libxi6" {>= "2-1.2.99.4"}
+  "deb-libxkbfile1"
+  "deb-libxrandr2" {>= "2-1.5.0"}
+]
+extra-source "gnome-flashback_3.30.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnome-flashback/gnome-flashback_3.30.0-3_amd64.deb"
+}

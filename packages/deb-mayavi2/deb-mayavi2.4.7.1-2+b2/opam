@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mayavi2_4.7.1-2+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mayavi2"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libjs-jquery"
+  "deb-python3" {< "3.10"}
+  "deb-python3" {>= "3.9~"}
+  "deb-python3-any"
+  "deb-python3-apptools"
+  "deb-python3-configobj"
+  "deb-python3-envisage"
+  "deb-python3-numpy"
+  "deb-python3-numpy" {>= "1-1.16.0~rc1"}
+  "deb-python3-pkg-resources"
+  "deb-python3-pyface"
+  "deb-python3-pygments"
+  "deb-python3-traits"
+  "deb-python3-traitsui"
+  "deb-python3-vtk7"
+]
+extra-source "mayavi2_4.7.1-2+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mayavi2/mayavi2_4.7.1-2+b2_amd64.deb"
+}

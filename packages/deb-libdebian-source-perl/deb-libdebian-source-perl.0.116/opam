@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdebian-source-perl_0.116_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdebian-source-perl"]
+]
+depends: [
+  "deb-dpkg" {>= "1.19.3"}
+  "deb-dpkg-dev"
+  "deb-libapt-pkg-perl"
+  "deb-libarray-unique-perl"
+  "deb-libclass-accessor-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-libparse-debcontrol-perl"
+  "deb-libsub-install-perl"
+  "deb-libtie-ixhash-perl"
+  "deb-libwww-mechanize-perl"
+  "deb-libwww-perl"
+  "deb-perl-any"
+]
+extra-source "libdebian-source-perl_0.116_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dh-make-perl/libdebian-source-perl_0.116_all.deb"
+}

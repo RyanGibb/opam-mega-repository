@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i apertium-swe-nor_0.4.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r apertium-swe-nor"]
+]
+depends: [
+  "deb-apertium" {>= "3.8.3"}
+  "deb-apertium-lex-tools" {>= "0.4.2"}
+  "deb-apertium-separable" {>= "0.6.1"}
+  "deb-cg3" {>= "1.3.9"}
+]
+conflicts: [
+  "deb-apertium-nor-swe"
+]
+extra-source "apertium-swe-nor_0.4.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/apertium-swe-nor/apertium-swe-nor_0.4.0-1_all.deb"
+}

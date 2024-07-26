@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkido-utils0.1_0.1.0+dfsg-6+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkido-utils0.1"]
+]
+depends: [
+  "deb-libassimp4"
+  "deb-libbullet2-87"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libkido0-1"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtinyxml2-6-2v5"
+  "deb-libtinyxml2-6a" {>= "5.0.0"}
+  "deb-liburdfdom-model"
+]
+extra-source "libkido-utils0.1_0.1.0+dfsg-6+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kido/libkido-utils0.1_0.1.0+dfsg-6+b1_amd64.deb"
+}

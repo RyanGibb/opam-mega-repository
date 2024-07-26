@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i globus-gram-job-manager-pbs_3.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r globus-gram-job-manager-pbs"]
+]
+depends: [
+  "deb-globus-gass-cache-program" {>= "5"}
+  "deb-globus-gatekeeper" {>= "9"}
+  "deb-globus-gram-job-manager" {>= "13"}
+  "deb-globus-gram-job-manager-scripts" {>= "4"}
+  "deb-perl"
+]
+conflicts: [
+  "deb-globus-gram-job-manager-setup-pbs" {< "4.5"}
+  "deb-globus-gram-job-manager-setup-pbs-doc" {< "4.5"}
+]
+extra-source "globus-gram-job-manager-pbs_3.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/globus-gram-job-manager-pbs/globus-gram-job-manager-pbs_3.0-1_all.deb"
+}

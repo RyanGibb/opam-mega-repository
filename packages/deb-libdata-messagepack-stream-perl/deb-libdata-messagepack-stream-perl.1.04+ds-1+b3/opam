@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdata-messagepack-stream-perl_1.04+ds-1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdata-messagepack-stream-perl"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libdata-messagepack-perl"
+  "deb-libmsgpackc2" {>= "2.1.0"}
+  "deb-perl" {>= "5.32.0-4"}
+  "deb-perl-base"
+]
+extra-source "libdata-messagepack-stream-perl_1.04+ds-1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libd/libdata-messagepack-stream-perl/libdata-messagepack-stream-perl_1.04+ds-1+b3_amd64.deb"
+}

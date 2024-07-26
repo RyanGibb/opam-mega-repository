@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i vdpau-va-driver_0.7.4-7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r vdpau-va-driver"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgl1"
+  "deb-libva2"
+  "deb-libvdpau1" {>= "0.2"}
+  "deb-libx11-6"
+]
+extra-source "vdpau-va-driver_0.7.4-7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/vdpau-video/vdpau-va-driver_0.7.4-7_amd64.deb"
+}

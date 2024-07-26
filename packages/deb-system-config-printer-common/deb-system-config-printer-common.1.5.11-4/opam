@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i system-config-printer-common_1.5.11-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r system-config-printer-common"]
+]
+depends: [
+  "deb-gir1-2-gdkpixbuf-2-0"
+  "deb-gir1-2-glib-2-0"
+  "deb-gir1-2-gtk-3-0"
+  "deb-gir1-2-notify-0-7"
+  "deb-gir1-2-pango-1-0"
+  "deb-python3-any"
+  "deb-python3-cairo"
+  "deb-python3-cups" {>= "1.9.60"}
+  "deb-python3-cupshelpers" {= "1.5.11-4"}
+  "deb-python3-dbus"
+  "deb-python3-gi"
+  "deb-python3-requests"
+]
+extra-source "system-config-printer-common_1.5.11-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/system-config-printer/system-config-printer-common_1.5.11-4_all.deb"
+}

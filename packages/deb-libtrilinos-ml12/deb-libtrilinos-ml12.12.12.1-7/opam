@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libtrilinos-ml12_12.12.1-7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libtrilinos-ml12"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libopenmpi3"
+  "deb-libscotch-6-0"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtrilinos-amesos12"
+  "deb-libtrilinos-aztecoo12"
+  "deb-libtrilinos-epetra12"
+  "deb-libtrilinos-epetraext12"
+  "deb-libtrilinos-galeri12"
+  "deb-libtrilinos-ifpack12"
+  "deb-libtrilinos-teuchos12"
+  "deb-libtrilinos-zoltan12"
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "libtrilinos-ml12_12.12.1-7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/trilinos/libtrilinos-ml12_12.12.1-7_amd64.deb"
+}

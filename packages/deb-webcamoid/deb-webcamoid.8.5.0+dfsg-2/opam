@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i webcamoid_8.5.0+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r webcamoid"]
+]
+depends: [
+  "deb-akqml"
+  "deb-libavkys8" {>= "8.5.0"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5gui5" {>= "5.7.0"}
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libqt5qml5" {>= "5.1.0"}
+  "deb-libqt5quick5" {>= "5.9.0~beta"}
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-qml-module-qt-labs-folderlistmodel"
+  "deb-qml-module-qt-labs-settings"
+  "deb-qml-module-qtgraphicaleffects"
+  "deb-qml-module-qtqml-models2"
+  "deb-qml-module-qtquick-controls"
+  "deb-qml-module-qtquick-controls2"
+  "deb-qml-module-qtquick-dialogs"
+  "deb-qml-module-qtquick-extras"
+  "deb-qml-module-qtquick-privatewidgets"
+  "deb-qml-module-qtquick-templates2"
+  "deb-webcamoid-data"
+  "deb-webcamoid-plugins"
+]
+extra-source "webcamoid_8.5.0+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/w/webcamoid/webcamoid_8.5.0+dfsg-2_amd64.deb"
+}

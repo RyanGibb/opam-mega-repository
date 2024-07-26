@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libignition-common4-graphics4_4.5.1+ds-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libignition-common4-graphics4"]
+]
+depends: [
+  "deb-libc6" {>= "2.32"}
+  "deb-libfreeimage3" {>= "3.18.0+ds2"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libgts-0-7-5" {>= "0.7.6"}
+  "deb-libignition-common4-4" {>= "4.5.1+ds"}
+  "deb-libignition-math6-6" {>= "6.10.0+ds3"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libtinyobjloader2rc10" {>= "2.0.0~rc10+dfsg"}
+  "deb-libtinyxml2-9" {>= "8.0.0"}
+]
+extra-source "libignition-common4-graphics4_4.5.1+ds-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/ignition-common/libignition-common4-graphics4_4.5.1+ds-2+b1_amd64.deb"
+}

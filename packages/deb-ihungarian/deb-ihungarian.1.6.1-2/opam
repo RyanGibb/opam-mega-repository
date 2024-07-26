@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ihungarian_1.6.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ihungarian"]
+]
+depends: [
+  "deb-debconf"
+  "deb-dictionaries-common"
+  "deb-ispell"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "ihungarian_1.6.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/magyarispell/ihungarian_1.6.1-2_amd64.deb"
+}

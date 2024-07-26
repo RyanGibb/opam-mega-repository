@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i abcde_2.9.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r abcde"]
+]
+depends: [
+  "deb-cd-discid"
+  "deb-libmusicbrainz-discid-perl"
+  "deb-libwebservice-musicbrainz-perl" {>= "1.0.4-1.1"}
+  "deb-sensible-utils"
+  "deb-wget"
+  ("deb-cdparanoia" | "deb- icedax")
+  ("deb-vorbis-tools" {>= "1.0beta4-1"} | "deb- lame" | "deb- flac" | "deb- speex" | "deb- musepack-tools" | "deb- opus-tools")
+]
+extra-source "abcde_2.9.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/abcde/abcde_2.9.3-1_all.deb"
+}

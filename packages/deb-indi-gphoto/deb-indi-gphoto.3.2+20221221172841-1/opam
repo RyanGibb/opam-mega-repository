@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i indi-gphoto_3.2+20221221172841-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r indi-gphoto"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libcfitsio10" {>= "4.2.0~"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgphoto2-6" {>= "2.5.10"}
+  "deb-libgphoto2-port12" {>= "2.5.10"}
+  "deb-libindidriver1" {>= "1.9.9+dfsg"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libraw20" {>= "0.19.0"}
+  "deb-libstdc++6" {>= "11"}
+]
+extra-source "indi-gphoto_3.2+20221221172841-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/indi-gphoto/indi-gphoto_3.2+20221221172841-1_amd64.deb"
+}

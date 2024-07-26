@@ -1,0 +1,70 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kdeconnect_22.12.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kdeconnect"]
+]
+depends: [
+  "deb-fuse3" {>= "3"}
+  "deb-kio"
+  "deb-kpeople-vcard"
+  "deb-libc6" {>= "2.34"}
+  "deb-libfakekey0" {>= "0.1"}
+  "deb-libkf5configcore5" {>= "4.97.0"}
+  "deb-libkf5configwidgets5" {>= "5.96.0~"}
+  "deb-libkf5coreaddons5" {>= "5.90.0"}
+  "deb-libkf5dbusaddons5" {>= "5.96.0~"}
+  "deb-libkf5guiaddons5" {>= "5.96.0~"}
+  "deb-libkf5i18n5" {>= "5.96.0~"}
+  "deb-libkf5iconthemes5" {>= "5.96.0~"}
+  "deb-libkf5kcmutils5" {>= "5.96.0~"}
+  "deb-libkf5kiocore5" {>= "5.96.0"}
+  "deb-libkf5kiofilewidgets5" {>= "5.96.0~"}
+  "deb-libkf5kiogui5" {>= "5.96.0~"}
+  "deb-libkf5kiowidgets5" {>= "5.96.0~"}
+  "deb-libkf5notifications5" {>= "5.96.0~"}
+  "deb-libkf5people5" {>= "5.96.0~"}
+  "deb-libkf5pulseaudioqt3" {>= "1.3"}
+  "deb-libkf5service-bin"
+  "deb-libkf5service5" {>= "5.96.0~"}
+  "deb-libkf5solid5" {>= "5.96.0~"}
+  "deb-libkf5waylandclient5" {>= "4-5.96.0~"}
+  "deb-libkf5widgetsaddons5" {>= "4.96.0"}
+  "deb-libkf5windowsystem5" {>= "5.96.0~"}
+  "deb-libqca-qt5-2" {>= "2.1.0~"}
+  "deb-libqca-qt5-2-plugins"
+  "deb-libqt5core5a" {>= "5.15.2~"}
+  "deb-libqt5dbus5" {>= "5.15.2~"}
+  "deb-libqt5multimedia5" {>= "5.15.2~"}
+  "deb-libqt5network5" {>= "5.15.2~"}
+  "deb-libqt5qml5" {>= "5.15.2~"}
+  "deb-libqt5quickcontrols2-5" {>= "5.15.2~"}
+  "deb-libqt5waylandclient5" {>= "5.15.4"}
+  "deb-libqt5widgets5" {>= "5.15.2~"}
+  "deb-libqt5x11extras5" {>= "5.15.2~"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libwayland-client0" {>= "1.20.0"}
+  "deb-libx11-6"
+  "deb-libxtst6"
+  "deb-plasma-framework"
+  "deb-qml-module-org-kde-kirigami2"
+  "deb-qml-module-org-kde-kquickcontrolsaddons"
+  "deb-qml-module-org-kde-people"
+  "deb-qml-module-qt-labs-platform"
+  "deb-qml-module-qtgraphicaleffects"
+  "deb-qml-module-qtmultimedia"
+  "deb-qml-module-qtqml"
+  "deb-qml-module-qtquick-controls2"
+  "deb-qml-module-qtquick-dialogs"
+  "deb-qml-module-qtquick-layouts"
+  "deb-qml-module-qtquick-particles2"
+  "deb-qml-module-qtquick-window2"
+  "deb-qml-module-qtquick2"
+  "deb-sshfs" {>= "3"}
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+  ("deb-libqt5quick5" {>= "5.15.2~"} | "deb- libqt5quick5-gles" {>= "5.15.2~"})
+]
+extra-source "kdeconnect_22.12.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kdeconnect/kdeconnect_22.12.3-1_amd64.deb"
+}

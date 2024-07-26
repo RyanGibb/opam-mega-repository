@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgl1-mesa-dri_20.3.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgl1-mesa-dri"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libdrm-amdgpu1" {>= "2.4.100"}
+  "deb-libdrm-intel1" {>= "2.4.38"}
+  "deb-libdrm-nouveau2" {>= "2.4.66"}
+  "deb-libdrm-radeon1" {>= "2.4.31"}
+  "deb-libdrm2" {>= "2.4.75"}
+  "deb-libelf1" {>= "0.142"}
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libgcc-s1" {>= "3.4"}
+  "deb-libglapi-mesa" {= "20.3.5-1"}
+  "deb-libllvm11" {>= "1-9~svn298832-1~"}
+  "deb-libsensors5" {>= "1-3.5.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libvulkan1" {>= "1.2.131.2"}
+  "deb-libzstd1" {>= "1.4.0"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libgl1-mesa-dri_20.3.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mesa/libgl1-mesa-dri_20.3.5-1_amd64.deb"
+}

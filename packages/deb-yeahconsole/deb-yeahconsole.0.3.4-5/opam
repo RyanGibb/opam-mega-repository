@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i yeahconsole_0.3.4-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r yeahconsole"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libx11-6"
+  ("deb-xterm" {>= "168"} | "deb- rxvt-unicode")
+]
+extra-source "yeahconsole_0.3.4-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/y/yeahconsole/yeahconsole_0.3.4-5_amd64.deb"
+}

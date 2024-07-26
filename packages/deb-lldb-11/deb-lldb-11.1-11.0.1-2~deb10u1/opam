@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lldb-11_1:11.0.1-2~deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lldb-11"]
+]
+depends: [
+  "deb-libc6" {>= "2.15"}
+  "deb-libclang-cpp11" {>= "1-11.0.1"}
+  "deb-libedit2" {>= "3.1-20140620-0"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-liblldb-11" {>= "1-9~svn298832-1~"}
+  "deb-libllvm11" {= "1-11.0.1-2~deb10u1"}
+  "deb-libncurses6" {>= "6"}
+  "deb-libstdc++6" {>= "6"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-llvm-11-dev"
+  "deb-python3-lldb-11"
+]
+extra-source "lldb-11_1:11.0.1-2~deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/llvm-toolchain-11/lldb-11_11.0.1-2~deb10u1_amd64.deb"
+}

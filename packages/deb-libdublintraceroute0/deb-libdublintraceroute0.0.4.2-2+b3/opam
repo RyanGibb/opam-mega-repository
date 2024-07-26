@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdublintraceroute0_0.4.2-2+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdublintraceroute0"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libjsoncpp25" {>= "1.9.5"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libtins4-0"
+]
+extra-source "libdublintraceroute0_0.4.2-2+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dublin-traceroute/libdublintraceroute0_0.4.2-2+b3_amd64.deb"
+}

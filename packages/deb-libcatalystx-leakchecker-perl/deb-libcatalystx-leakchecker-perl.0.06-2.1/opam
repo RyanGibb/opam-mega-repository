@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcatalystx-leakchecker-perl_0.06-2.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcatalystx-leakchecker-perl"]
+]
+depends: [
+  "deb-libcatalyst-perl"
+  "deb-libdevel-cycle-perl"
+  "deb-libmoose-perl"
+  "deb-libmoosex-types-perl"
+  "deb-libnamespace-autoclean-perl"
+  "deb-libnamespace-clean-perl"
+  "deb-libpadwalker-perl"
+  "deb-libtask-weaken-perl"
+  "deb-libtext-simpletable-perl"
+  "deb-perl-any"
+]
+extra-source "libcatalystx-leakchecker-perl_0.06-2.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libcatalystx-leakchecker-perl/libcatalystx-leakchecker-perl_0.06-2.1_all.deb"
+}

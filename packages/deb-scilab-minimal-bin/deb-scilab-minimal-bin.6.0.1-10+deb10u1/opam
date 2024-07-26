@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i scilab-minimal-bin_6.0.1-10+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r scilab-minimal-bin"]
+]
+depends: [
+  "deb-default-jre-headless"
+  "deb-libamd2" {>= "1-4.5.2"}
+  "deb-libarpack2" {>= "2.1"}
+  "deb-libc6" {>= "2.22"}
+  "deb-libcurl4" {>= "7.16.2"}
+  "deb-libfftw3-double3" {>= "3.3.5"}
+  "deb-libgcc1" {>= "1-4.0"}
+  "deb-libgfortran5" {>= "8"}
+  "deb-libgomp1" {>= "4.2.1"}
+  "deb-libhdf5-103"
+  "deb-libmatio4" {>= "1.5.4"}
+  "deb-libncurses6" {>= "6"}
+  "deb-libpcre3"
+  "deb-libquadmath0" {>= "4.6"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtcl8-6" {>= "8.6.0"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-libtk8-6" {>= "8.6.0"}
+  "deb-libumfpack5" {>= "1-4.5.2"}
+  "deb-libxml2" {>= "2.8.0"}
+  "deb-scilab-data" {= "6.0.1-10+deb10u1"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "scilab-minimal-bin_6.0.1-10+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/scilab/scilab-minimal-bin_6.0.1-10+deb10u1_amd64.deb"
+}

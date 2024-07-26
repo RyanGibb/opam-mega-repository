@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ocrfeeder_0.8.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ocrfeeder"]
+]
+depends: [
+  "deb-ghostscript"
+  "deb-gir1-2-goocanvas-2-0"
+  "deb-gir1-2-gtk-3-0"
+  "deb-gir1-2-gtkspell3-3-0"
+  "deb-iso-codes"
+  "deb-python3-any"
+  "deb-python3-enchant"
+  "deb-python3-gi"
+  "deb-python3-lxml"
+  "deb-python3-odf"
+  "deb-python3-pil"
+  "deb-python3-reportlab"
+  "deb-python3-sane"
+  ("deb-tesseract-ocr" | "deb- ocrad" | "deb- gocr" | "deb- cuneiform")
+]
+extra-source "ocrfeeder_0.8.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/ocrfeeder/ocrfeeder_0.8.5-1_all.deb"
+}

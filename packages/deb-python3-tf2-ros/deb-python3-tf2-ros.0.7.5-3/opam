@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-tf2-ros_0.7.5-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-tf2-ros"]
+]
+depends: [
+  "deb-libtf2-ros-dev"
+  "deb-python3-actionlib"
+  "deb-python3-any"
+  "deb-python3-geometry-msgs"
+  "deb-python3-rosgraph"
+  "deb-python3-rospy"
+  "deb-python3-std-msgs"
+  "deb-python3-tf2"
+  "deb-python3-tf2-msgs"
+]
+extra-source "python3-tf2-ros_0.7.5-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ros-geometry2/python3-tf2-ros_0.7.5-3_all.deb"
+}

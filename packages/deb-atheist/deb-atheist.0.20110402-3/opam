@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i atheist_0.20110402-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r atheist"]
+]
+depends: [
+  "deb-curl"
+  "deb-libjs-sphinxdoc" {>= "1.0"}
+  "deb-nmap"
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7~"}
+  "deb-python-loggingx"
+  "deb-python-mock"
+  "deb-python-notify"
+]
+extra-source "atheist_0.20110402-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/atheist/atheist_0.20110402-3_all.deb"
+}

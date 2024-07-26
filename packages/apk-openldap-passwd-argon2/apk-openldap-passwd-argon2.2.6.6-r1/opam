@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openldap-passwd-argon2-2.6.6-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openldap-passwd-argon2"]
+]
+depends: [
+  "apk-argon2-libs" {= "20190702-r5"}
+  "apk-libldap" {= "2.6.6-r1"}
+  "apk-musl" {= "1.2.4_git20230717-r4"}
+  "apk-openldap" {= "2.6.6-r1"}
+]
+extra-source "openldap-passwd-argon2-2.6.6-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/openldap-passwd-argon2-2.6.6-r1.apk"
+}

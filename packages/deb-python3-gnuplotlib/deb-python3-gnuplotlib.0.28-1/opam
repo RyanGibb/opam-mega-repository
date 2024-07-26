@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-gnuplotlib_0.28-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-gnuplotlib"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-numpy"
+  "deb-python3-numpysane" {>= "0.3-1"}
+  ("deb-gnuplot-qt" | "deb- gnuplot-x11" | "deb- gnuplot-nox" | "deb- gnuplot5-qt" | "deb- gnuplot5-x11" | "deb- gnuplot5-nox" | "deb- gnuplot")
+]
+extra-source "python3-gnuplotlib_0.28-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-gnuplotlib/python3-gnuplotlib_0.28-1_all.deb"
+}

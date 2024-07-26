@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcib27_2.1.5-1+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcib27"]
+]
+depends: [
+  "deb-libc6" {>= "2.33"}
+  "deb-libcrmcommon34" {>= "2.1.5"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libgnutls30" {>= "3.7.0"}
+  "deb-libpe-rules26" {>= "2.0.3"}
+  "deb-libqb100" {>= "2.0.3"}
+  "deb-libxml2" {>= "2.7.4"}
+]
+extra-source "libcib27_2.1.5-1+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pacemaker/libcib27_2.1.5-1+deb12u1_amd64.deb"
+}

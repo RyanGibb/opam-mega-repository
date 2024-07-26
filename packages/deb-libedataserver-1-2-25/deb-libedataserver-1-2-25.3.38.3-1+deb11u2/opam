@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libedataserver-1.2-25_3.38.3-1+deb11u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libedataserver-1.2-25"]
+]
+depends: [
+  "deb-evolution-data-server-common" {>= "3.38"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcamel-1-2-62" {>= "3.19.92"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgdata22" {>= "0.15.0"}
+  "deb-libglib2-0-0" {>= "2.45.6"}
+  "deb-libicu67" {>= "67.1-1~"}
+  "deb-libjson-glib-1-0-0" {>= "1.5.2"}
+  "deb-libsecret-1-0" {>= "0.7"}
+  "deb-libsoup2-4-1" {>= "2.58.2"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libxml2" {>= "2.9.0"}
+]
+extra-source "libedataserver-1.2-25_3.38.3-1+deb11u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/evolution-data-server/libedataserver-1.2-25_3.38.3-1+deb11u2_amd64.deb"
+}

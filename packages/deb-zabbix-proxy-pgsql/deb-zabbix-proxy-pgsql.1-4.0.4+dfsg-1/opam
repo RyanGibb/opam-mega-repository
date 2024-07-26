@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i zabbix-proxy-pgsql_1:4.0.4+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r zabbix-proxy-pgsql"]
+]
+depends: [
+  "deb-adduser"
+  "deb-fping"
+  "deb-libc6" {>= "2.17"}
+  "deb-libcurl3-gnutls" {>= "7.28.0"}
+  "deb-libevent-2-1-6" {>= "2.1.8-stable"}
+  "deb-libgnutls30" {>= "3.6.6"}
+  "deb-libldap-2-4-2" {>= "2.4.7"}
+  "deb-libodbc1" {>= "2.3.1"}
+  "deb-libopenipmi0"
+  "deb-libpcre3"
+  "deb-libpq5"
+  "deb-libsnmp30" {>= "5.7.3+dfsg"}
+  "deb-libssh2-1" {>= "1.0"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-lsb-base"
+  "deb-ucf"
+  "deb-zlib1g" {>= "1-1.2.0"}
+]
+conflicts: [
+  "deb-zabbix-proxy-mysql"
+  "deb-zabbix-proxy-sqlite3"
+  "deb-zabbix-server-mysql"
+  "deb-zabbix-server-pgsql"
+]
+extra-source "zabbix-proxy-pgsql_1:4.0.4+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/z/zabbix/zabbix-proxy-pgsql_4.0.4+dfsg-1_amd64.deb"
+}

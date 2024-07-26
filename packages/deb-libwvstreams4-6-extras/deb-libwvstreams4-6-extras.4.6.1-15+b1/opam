@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libwvstreams4.6-extras_4.6.1-15+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libwvstreams4.6-extras"]
+]
+depends: [
+  "deb-libc6" {>= "2.33"}
+  "deb-libcrypt1" {>= "1-4.1.0"}
+  "deb-libdbus-1-3" {>= "1.9.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libwvstreams4-6-base"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libwvstreams4.6-extras_4.6.1-15+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/w/wvstreams/libwvstreams4.6-extras_4.6.1-15+b1_amd64.deb"
+}

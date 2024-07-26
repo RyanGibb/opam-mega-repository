@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add snort-2.9.20-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del snort"]
+]
+depends: [
+  "apk-daq-sfbpf" {= "2.0.7-r1"}
+  "apk-libdnet" {= "1.16.1-r0"}
+  "apk-libnetfilter_queue" {= "1.0.5-r1"}
+  "apk-libpcap" {= "1.10.1-r1"}
+  "apk-musl" {= "1.2.3-r5"}
+  "apk-pcre" {= "8.45-r2"}
+  "apk-xz-libs" {= "5.2.9-r0"}
+  "apk-zlib" {= "1.2.13-r0"}
+  ("apk-yash-binsh" {= "2.53-r2"} | "apk-busybox-binsh" {= "1.35.0-r31"} | "apk-dash-binsh" {= "0.5.11.5-r2"})
+]
+extra-source "snort-2.9.20-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/snort-2.9.20-r0.apk"
+}

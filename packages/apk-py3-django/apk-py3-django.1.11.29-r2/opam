@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py3-django-1.11.29-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py3-django"]
+]
+depends: [
+  "apk-py3-tz" {= "2020.1-r0"}
+  "apk-python3" {= "3.8.10-r0"}
+]
+extra-source "py3-django-1.11.29-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/py3-django-1.11.29-r2.apk"
+}

@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i circle-backend_0.173320-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r circle-backend"]
+]
+depends: [
+  "deb-libattribute-storage-perl"
+  "deb-libclass-method-modifiers-perl"
+  "deb-libdata-dump-perl"
+  "deb-libfile-sharedir-perl"
+  "deb-libio-async-perl"
+  "deb-libmodule-pluggable-perl"
+  "deb-libnet-async-irc-perl"
+  "deb-libnet-async-tangence-perl"
+  "deb-libstring-tagged-perl"
+  "deb-libstruct-dumb-perl"
+  "deb-libtangence-perl"
+  "deb-libyaml-perl"
+  "deb-perl-any"
+]
+extra-source "circle-backend_0.173320-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libcircle-be-perl/circle-backend_0.173320-3_all.deb"
+}

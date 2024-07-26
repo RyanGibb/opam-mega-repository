@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i guile-2.2-dev_2.2.4+1-2+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r guile-2.2-dev"]
+]
+depends: [
+  "deb-guile-2-2-any" {= "2.2.4+1-2+deb10u1"}
+  "deb-guile-2-2-libs" {= "2.2.4+1-2+deb10u1"}
+  "deb-libc6-dev"
+  "deb-libgc-dev"
+  "deb-libgmp-dev"
+  "deb-libltdl-dev"
+  "deb-libncurses5-dev"
+  "deb-libreadline-dev"
+  "deb-pkg-config"
+]
+conflicts: [
+  "deb-libguile-dev"
+]
+extra-source "guile-2.2-dev_2.2.4+1-2+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/guile-2.2/guile-2.2-dev_2.2.4+1-2+deb10u1_amd64.deb"
+}

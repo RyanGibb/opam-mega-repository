@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openmw_0.46.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openmw"]
+]
+depends: [
+  "deb-libavcodec-extra58"
+  "deb-libavformat58" {>= "7-4.1"}
+  "deb-libavutil56" {>= "7-4.0"}
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0"}
+  "deb-libboost-iostreams1-74-0" {>= "1.74.0"}
+  "deb-libboost-program-options1-74-0" {>= "1.74.0"}
+  "deb-libbullet3-06" {>= "3.06+dfsg"}
+  "deb-libc6" {>= "2.30"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgl1"
+  "deb-libmyguiengine3debian1v5" {>= "3.2.2-3~"}
+  "deb-libopenal1" {>= "1.14"}
+  "deb-libopenscenegraph161" {>= "3.6.5+dfsg1"}
+  "deb-libopenthreads21" {>= "3.6.5+dfsg1"}
+  "deb-libsdl2-2-0-0" {>= "2.0.12"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libswresample3" {>= "7-4.0"}
+  "deb-libswscale5" {>= "7-4.0"}
+  "deb-libtinyxml2-6-2v5"
+  "deb-openmw-data" {= "0.46.0-3"}
+]
+extra-source "openmw_0.46.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openmw/openmw_0.46.0-3_amd64.deb"
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i uwsgi-dev_2.0.18-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r uwsgi-dev"]
+]
+depends: [
+  "deb-binutils"
+  "deb-gcc"
+  "deb-libcap-dev"
+  "deb-libpcre3-dev"
+  "deb-libssl-dev"
+  "deb-python"
+  "deb-uuid-dev"
+  "deb-uwsgi-core"
+  "deb-zlib1g-dev"
+  ("deb-libc6-dev" | "deb- libc-dev")
+]
+extra-source "uwsgi-dev_2.0.18-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/u/uwsgi/uwsgi-dev_2.0.18-1_amd64.deb"
+}

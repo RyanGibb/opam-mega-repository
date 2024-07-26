@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openldap-overlay-otp-2.6.5-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openldap-overlay-otp"]
+]
+depends: [
+  "apk-libcrypto3" {= "3.1.6-r0"}
+  "apk-libldap" {= "2.6.5-r0"}
+  "apk-musl" {= "1.2.4-r2"}
+]
+extra-source "openldap-overlay-otp-2.6.5-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/openldap-overlay-otp-2.6.5-r0.apk"
+}

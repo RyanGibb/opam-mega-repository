@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mlterm-common_3.8.6-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mlterm-common"]
+]
+depends: [
+  "deb-libc6" {>= "2.15"}
+  "deb-libcairo2" {>= "1.7.2"}
+  "deb-libfribidi0" {>= "0.19.2"}
+  "deb-libharfbuzz0b" {>= "0.9.9"}
+  "deb-libssh2-1" {>= "1.2.9"}
+  "deb-libx11-6"
+  "deb-libxft2" {> "2.1.1"}
+  "deb-ncurses-term" {>= "5.7+20101128-1"}
+]
+extra-source "mlterm-common_3.8.6-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mlterm/mlterm-common_3.8.6-2_amd64.deb"
+}

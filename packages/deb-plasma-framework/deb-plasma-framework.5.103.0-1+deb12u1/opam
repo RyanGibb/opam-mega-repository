@@ -1,0 +1,57 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i plasma-framework_5.103.0-1+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r plasma-framework"]
+]
+depends: [
+  "deb-kio"
+  "deb-kpackagetool5"
+  "deb-libc6" {>= "2.34"}
+  "deb-libegl1"
+  "deb-libgcc-s1" {>= "3.4"}
+  "deb-libglx0"
+  "deb-libkf5activities5" {>= "5.103.0~"}
+  "deb-libkf5calendarevents5" {>= "5.103.0~"}
+  "deb-libkf5configcore5" {>= "5.103.0~"}
+  "deb-libkf5configgui5" {>= "5.103.0~"}
+  "deb-libkf5coreaddons5" {>= "5.103.0~"}
+  "deb-libkf5declarative5" {>= "5.103.0~"}
+  "deb-libkf5i18n5" {>= "5.103.0~"}
+  "deb-libkf5iconthemes5" {>= "5.103.0~"}
+  "deb-libkf5kiocore5" {>= "5.103.0~"}
+  "deb-libkf5kiowidgets5" {>= "5.103.0~"}
+  "deb-libkf5kirigami2-5" {>= "5.103.0~"}
+  "deb-libkf5notifications5" {>= "5.103.0~"}
+  "deb-libkf5package5" {>= "5.103.0~"}
+  "deb-libkf5plasma5" {>= "5.103.0"}
+  "deb-libkf5plasmaquick5" {>= "5.96.0"}
+  "deb-libkf5quickaddons5" {>= "5.103.0~"}
+  "deb-libkf5widgetsaddons5" {>= "5.103.0~"}
+  "deb-libkf5windowsystem5" {>= "5.103.0~"}
+  "deb-libkf5xmlgui5" {>= "5.103.0~"}
+  "deb-libopengl0"
+  "deb-libqt5core5a" {>= "5.15.2~"}
+  "deb-libqt5qml5" {>= "5.15.2~"}
+  "deb-libqt5widgets5" {>= "5.15.2~"}
+  "deb-libqt5x11extras5" {>= "5.15.2~"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libx11-6"
+  "deb-libxcb-composite0"
+  "deb-libxcb-damage0"
+  "deb-libxcb-render0"
+  "deb-libxcb1"
+  "deb-qml-module-org-kde-kconfig" {>= "5.70.0~"}
+  "deb-qml-module-org-kde-kquickcontrols" {>= "5.70.0~"}
+  "deb-qml-module-org-kde-kquickcontrolsaddons" {>= "5.70.0~"}
+  "deb-qml-module-qtqml-models2"
+  "deb-qml-module-qtquick-controls"
+  "deb-qml-module-qtquick-controls2"
+  "deb-qml-module-qtquick-templates2"
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+  ("deb-libqt5quick5" {>= "5.15.2~"} | "deb- libqt5quick5-gles" {>= "5.15.2~"})
+]
+extra-source "plasma-framework_5.103.0-1+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/plasma-framework/plasma-framework_5.103.0-1+deb12u1_amd64.deb"
+}

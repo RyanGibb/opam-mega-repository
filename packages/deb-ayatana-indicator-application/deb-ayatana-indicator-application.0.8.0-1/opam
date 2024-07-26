@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ayatana-indicator-application_0.8.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ayatana-indicator-application"]
+]
+depends: [
+  "deb-ayatana-indicator-common" {>= "0.8.0"}
+  "deb-init-system-helpers" {>= "1.52"}
+  "deb-libayatana-appindicator3-1" {>= "0.5.0~"}
+  "deb-libayatana-indicator3-7" {>= "0.6.0"}
+  "deb-libc6" {>= "2.4"}
+  "deb-libdbus-glib-1-2" {>= "0.88"}
+  "deb-libdbusmenu-gtk3-4" {>= "0.5.90"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libgtk-3-0" {>= "3.0.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+]
+extra-source "ayatana-indicator-application_0.8.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/ayatana-indicator-application/ayatana-indicator-application_0.8.0-1_amd64.deb"
+}

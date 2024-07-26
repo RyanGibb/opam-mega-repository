@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libnet-dns-cloudflare-ddns-perl_0.63.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libnet-dns-cloudflare-ddns-perl"]
+]
+depends: [
+  "deb-libcloudflare-client-perl"
+  "deb-libindirect-perl"
+  "deb-libipc-system-simple-perl"
+  "deb-libmodern-perl-perl"
+  "deb-libmoose-perl"
+  "deb-libmoosex-strictconstructor-perl"
+  "deb-libnamespace-autoclean-perl"
+  "deb-libreadonly-perl"
+  "deb-libtrycatch-perl"
+  "deb-libtype-tiny-perl"
+  "deb-libwww-perl" {>= "6.03"}
+  "deb-perl"
+]
+extra-source "libnet-dns-cloudflare-ddns-perl_0.63.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libn/libnet-dns-cloudflare-ddns-perl/libnet-dns-cloudflare-ddns-perl_0.63.1-1_all.deb"
+}

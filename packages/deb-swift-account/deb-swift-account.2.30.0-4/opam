@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i swift-account_2.30.0-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r swift-account"]
+]
+depends: [
+  "deb-lsb-base"
+  "deb-openstack-pkg-tools"
+  "deb-python3-any"
+  "deb-python3-pastescript"
+  "deb-python3-swift" {= "2.30.0-4"}
+  "deb-rsync"
+  "deb-swift" {= "2.30.0-4"}
+  "deb-uwsgi-plugin-python3" {>= "2.0.18"}
+]
+extra-source "swift-account_2.30.0-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/swift/swift-account_2.30.0-4_all.deb"
+}

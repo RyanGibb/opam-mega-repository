@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add pango-dev-1.50.14-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del pango-dev"]
+]
+depends: [
+  "apk-cairo-dev" {= "1.17.8-r1"}
+  "apk-fontconfig-dev" {= "2.14.2-r3"}
+  "apk-freetype-dev" {= "2.13.0-r5"}
+  "apk-fribidi-dev" {= "1.0.13-r0"}
+  "apk-glib-dev" {= "2.76.6-r0"}
+  "apk-harfbuzz-dev" {= "7.3.0-r0"}
+  "apk-libxft-dev" {= "2.3.8-r1"}
+  "apk-libxrender-dev" {= "0.9.11-r3"}
+  "apk-pango" {= "1.50.14-r1"}
+  "apk-pango-tools" {= "1.50.14-r1"}
+  "apk-pkgconf" {= "1.9.5-r0"}
+]
+extra-source "pango-dev-1.50.14-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/pango-dev-1.50.14-r1.apk"
+}

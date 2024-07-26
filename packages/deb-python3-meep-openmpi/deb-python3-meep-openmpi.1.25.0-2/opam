@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-meep-openmpi_1.25.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-meep-openmpi"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libctl7" {>= "4.5.0-8"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libmeep-openmpi30" {= "1.25.0-2"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-python3"
+  "deb-python3-numpy"
+]
+conflicts: [
+  "deb-python3-meep"
+  "deb-python3-meep-mpi-default"
+]
+extra-source "python3-meep-openmpi_1.25.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/meep-openmpi/python3-meep-openmpi_1.25.0-2_amd64.deb"
+}

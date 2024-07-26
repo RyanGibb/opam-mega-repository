@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i httraqt_1.4.11-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r httraqt"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libhttrack2" {>= "3.49.4"}
+  "deb-libqt6core6" {>= "6.4.0"}
+  "deb-libqt6dbus6" {>= "6.1.2"}
+  "deb-libqt6gui6" {>= "6.1.2"}
+  "deb-libqt6widgets6" {>= "6.1.2"}
+  "deb-libstdc++6" {>= "5"}
+]
+extra-source "httraqt_1.4.11-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/httraqt/httraqt_1.4.11-1_amd64.deb"
+}

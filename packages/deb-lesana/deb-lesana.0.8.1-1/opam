@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lesana_0.8.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lesana"]
+]
+depends: [
+  "deb-libjs-sphinxdoc" {>= "2.4.3-5~"}
+  "deb-python3-any"
+  "deb-python3-dateutil"
+  "deb-python3-jinja2"
+  "deb-python3-ruamel-yaml"
+  "deb-python3-xapian"
+  "deb-sensible-utils"
+]
+extra-source "lesana_0.8.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lesana/lesana_0.8.1-1_all.deb"
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gridengine-qmon_8.1.9+dfsg-9.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gridengine-qmon"]
+]
+depends: [
+  "deb-gridengine-common" {= "8.1.9+dfsg-9.1"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libjemalloc2" {>= "2.1.1"}
+  "deb-libmunge2" {>= "0.5.8"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxm4" {>= "2.3.4"}
+  "deb-libxt6"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "gridengine-qmon_8.1.9+dfsg-9.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gridengine/gridengine-qmon_8.1.9+dfsg-9.1_amd64.deb"
+}

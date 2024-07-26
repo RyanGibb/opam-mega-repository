@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add glib-dev-2.72.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del glib-dev"]
+]
+depends: [
+  "apk-bzip2-dev" {= "1.0.8-r1"}
+  "apk-docbook-xml" {= "4.5-r6"}
+  "apk-docbook-xsl" {= "1.79.2-r4"}
+  "apk-gettext-dev" {= "0.21-r2"}
+  "apk-glib" {= "2.72.4-r0"}
+  "apk-libffi-dev" {= "3.4.2-r1"}
+  "apk-libintl" {= "0.21-r2"}
+  "apk-libxml2-utils" {= "2.9.14-r2"}
+  "apk-libxslt" {= "1.1.35-r0"}
+  "apk-musl" {= "1.2.3-r3"}
+  "apk-pcre-dev" {= "8.45-r2"}
+  "apk-pkgconf" {= "1.8.1-r0"}
+  "apk-python3" {= "3.10.14-r1"}
+  "apk-util-linux-dev" {= "2.38-r1"}
+  "apk-zlib-dev" {= "1.2.12-r3"}
+]
+extra-source "glib-dev-2.72.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/glib-dev-2.72.4-r0.apk"
+}

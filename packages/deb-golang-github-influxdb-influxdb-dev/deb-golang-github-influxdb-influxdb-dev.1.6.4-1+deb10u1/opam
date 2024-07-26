@@ -1,0 +1,47 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-influxdb-influxdb-dev_1.6.4-1+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-influxdb-influxdb-dev"]
+]
+depends: [
+  "deb-golang-collectd-dev"
+  "deb-golang-github-bmizerany-pat-dev"
+  "deb-golang-github-boltdb-bolt-dev"
+  "deb-golang-github-cespare-xxhash-dev"
+  "deb-golang-github-davecgh-go-spew-dev"
+  "deb-golang-github-dgrijalva-jwt-go-v3-dev"
+  "deb-golang-github-dgryski-go-bits-dev"
+  "deb-golang-github-dgryski-go-bitstream-dev"
+  "deb-golang-github-golang-snappy-dev"
+  "deb-golang-github-google-go-cmp-dev"
+  "deb-golang-github-influxdata-influxql-dev"
+  "deb-golang-github-influxdata-yarpc-dev"
+  "deb-golang-github-influxdb-enterprise-client-dev"
+  "deb-golang-github-influxdb-usage-client-dev" {>= "0.0~git20151204.0.475977e-2~"}
+  "deb-golang-github-jsternberg-zap-logfmt-dev"
+  "deb-golang-github-jwilder-encoding-dev" {>= "0.0~git20160927.0.4dada27"}
+  "deb-golang-github-kimor79-gollectd-dev"
+  "deb-golang-github-klauspost-pgzip-dev"
+  "deb-golang-github-mattn-go-isatty-dev"
+  "deb-golang-github-opentracing-opentracing-go-dev"
+  "deb-golang-github-paulbellamy-ratecounter-dev"
+  "deb-golang-github-peterh-liner-dev"
+  "deb-golang-github-rakyll-statik-dev"
+  "deb-golang-github-retailnext-hllpp-dev"
+  "deb-golang-github-roaringbitmap-roaring-dev"
+  "deb-golang-github-xlab-treeprint-dev"
+  "deb-golang-go-uber-zap-dev"
+  "deb-golang-golang-x-crypto-dev"
+  "deb-golang-golang-x-time-dev"
+  "deb-golang-prometheus-client-dev"
+  "deb-libprotobuf-dev"
+  "deb-protoc-gen-yarpc"
+  ("deb-golang-gogoprotobuf-dev" {>= "0.0~git20150717"} | "deb- golang-github-gogo-protobuf-dev")
+  ("deb-golang-goprotobuf-dev" | "deb- golang-github-golang-protobuf-dev")
+  ("deb-golang-toml-dev" | "deb- golang-github-burntsushi-toml-dev")
+]
+extra-source "golang-github-influxdb-influxdb-dev_1.6.4-1+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/influxdb/golang-github-influxdb-influxdb-dev_1.6.4-1+deb10u1_all.deb"
+}

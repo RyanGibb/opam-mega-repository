@@ -1,0 +1,55 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i nheko_0.11.3-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r nheko"]
+]
+depends: [
+  "deb-gstreamer1-0-nice"
+  "deb-gstreamer1-0-qt5"
+  "deb-libc6" {>= "2.34"}
+  "deb-libcmark0-30-2" {>= "0.30.2"}
+  "deb-libcpp-httplib0-11" {>= "0.11.4+ds"}
+  "deb-libcurl4" {>= "7.16.3"}
+  "deb-libevent-core-2-1-7" {>= "2.1.8-stable"}
+  "deb-libevent-pthreads-2-1-7" {>= "2.1.8-stable"}
+  "deb-libfmt9" {>= "9.1.0+ds1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.22.0"}
+  "deb-libgstreamer-plugins-bad1-0-0" {>= "1.22.0"}
+  "deb-libgstreamer-plugins-base1-0-0" {>= "1.18.0"}
+  "deb-libgstreamer1-0-0" {>= "1.20.0"}
+  "deb-liblmdb0" {>= "0.9.7"}
+  "deb-libolm3" {>= "3.2.7~dfsg"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.14.1"}
+  "deb-libqt5keychain1" {>= "0.7.0"}
+  "deb-libqt5multimedia5" {>= "5.6.0~beta"}
+  "deb-libqt5multimedia5-plugins"
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libqt5qml5" {>= "5.14.1"}
+  "deb-libqt5svg5" {>= "5.6.0~beta"}
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-libre2-9" {>= "20150701+dfsg"}
+  "deb-libspdlog1-10"
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libxcb-ewmh2" {>= "0.4.1"}
+  "deb-libxcb1"
+  "deb-qml-module-qt-labs-animation"
+  "deb-qml-module-qt-labs-platform"
+  "deb-qml-module-qt-labs-settings"
+  "deb-qml-module-qtgraphicaleffects"
+  "deb-qml-module-qtmultimedia"
+  "deb-qml-module-qtquick-controls2"
+  "deb-qml-module-qtquick-layouts"
+  "deb-qml-module-qtquick-particles2"
+  "deb-qml-module-qtquick-window2"
+  "deb-qml-module-qtquick2"
+  ("deb-libqt5gui5" {>= "5.10.0"} | "deb- libqt5gui5-gles" {>= "5.10.0"})
+  ("deb-libqt5quick5" {>= "5.15.1"} | "deb- libqt5quick5-gles" {>= "5.15.1"})
+]
+extra-source "nheko_0.11.3-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/nheko/nheko_0.11.3-2_amd64.deb"
+}

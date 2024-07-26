@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add clang16-16.0.6-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del clang16"]
+]
+depends: [
+  "apk-clang16-headers" {= "16.0.6-r5"}
+  "apk-clang16-libs" {= "16.0.6-r5"}
+  "apk-fortify-headers" {>= "1.1-r2"}
+  "apk-gcc" {= "13.2.1_git20240309-r0"}
+  "apk-libgcc" {= "13.2.1_git20240309-r0"}
+  "apk-libstdc++" {= "13.2.1_git20240309-r0"}
+  "apk-libstdc++-dev" {= "13.2.1_git20240309-r0"}
+  "apk-llvm16-libs" {= "16.0.6-r8"}
+  "apk-llvm16-linker-tools" {= "16.0.6-r8"}
+  "apk-musl" {= "1.2.5-r0"}
+  "apk-musl-dev" {= "1.2.5-r0"}
+  ("apk-busybox-binsh" {= "1.36.1-r29"} | "apk-dash-binsh" {= "0.5.12-r2"} | "apk-yash-binsh" {= "2.56.1-r1"})
+]
+extra-source "clang16-16.0.6-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/clang16-16.0.6-r5.apk"
+}

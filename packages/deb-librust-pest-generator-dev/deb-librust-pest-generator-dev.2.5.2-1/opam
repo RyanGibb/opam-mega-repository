@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-pest-generator-dev_2.5.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-pest-generator-dev"]
+]
+depends: [
+  "deb-librust-pest-dev"
+  "deb-librust-pest-meta-dev"
+  "deb-librust-proc-macro2-1+default-dev"
+  "deb-librust-quote-1+default-dev"
+  "deb-librust-syn-1+default-dev"
+]
+extra-source "librust-pest-generator-dev_2.5.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-pest-generator/librust-pest-generator-dev_2.5.2-1_amd64.deb"
+}

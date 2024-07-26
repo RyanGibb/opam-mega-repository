@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librocksdb6.11_6.11.4-3+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librocksdb6.11"]
+]
+depends: [
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.30"}
+  "deb-libgcc-s1" {>= "3.4"}
+  "deb-libgflags2-2" {>= "2.2.2"}
+  "deb-liblz4-1" {>= "0.0~r130"}
+  "deb-libsnappy1v5" {>= "1.1.8"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libzstd1" {>= "1.4.0"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "librocksdb6.11_6.11.4-3+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rocksdb/librocksdb6.11_6.11.4-3+deb11u1_amd64.deb"
+}

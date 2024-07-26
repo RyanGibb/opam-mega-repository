@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-bioc-destiny_3.4.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-bioc-destiny"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.3-1"}
+  "deb-r-bioc-biobase"
+  "deb-r-bioc-biocgenerics"
+  "deb-r-bioc-pcamethods"
+  "deb-r-bioc-singlecellexperiment"
+  "deb-r-bioc-summarizedexperiment"
+  "deb-r-cran-ggplot-multistats"
+  "deb-r-cran-ggplot2"
+  "deb-r-cran-ggthemes"
+  "deb-r-cran-irlba"
+  "deb-r-cran-knn-covertree"
+  "deb-r-cran-matrix"
+  "deb-r-cran-proxy"
+  "deb-r-cran-rcpp" {>= "0.10.3"}
+  "deb-r-cran-rcppeigen"
+  "deb-r-cran-rcpphnsw"
+  "deb-r-cran-rspectra" {>= "0.14-0"}
+  "deb-r-cran-scales"
+  "deb-r-cran-scatterplot3d"
+  "deb-r-cran-smoother"
+  "deb-r-cran-tidyr"
+  "deb-r-cran-tidyselect"
+  "deb-r-cran-vim"
+]
+extra-source "r-bioc-destiny_3.4.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-bioc-destiny/r-bioc-destiny_3.4.0-1_amd64.deb"
+}

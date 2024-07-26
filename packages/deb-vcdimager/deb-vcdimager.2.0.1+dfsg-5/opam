@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i vcdimager_2.0.1+dfsg-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r vcdimager"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libcdio19" {>= "2.1.0"}
+  "deb-libiso9660-11" {>= "2.0.0"}
+  "deb-libpopt0" {>= "1.14"}
+  "deb-libvcdinfo0" {>= "0.7.23"}
+  "deb-libxml2" {>= "2.7.4"}
+  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+]
+extra-source "vcdimager_2.0.1+dfsg-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/vcdimager/vcdimager_2.0.1+dfsg-5_amd64.deb"
+}

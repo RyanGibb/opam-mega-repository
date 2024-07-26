@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libeantic1_1.3.0+ds-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libeantic1"]
+]
+depends: [
+  "deb-libantic0" {>= "0.2.4"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libflint-arb2" {>= "1-2.23.0"}
+  "deb-libflint17"
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-libstdc++6" {>= "11"}
+]
+conflicts: [
+  "deb-libeantic"
+]
+extra-source "libeantic1_1.3.0+ds-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/e-antic/libeantic1_1.3.0+ds-1_amd64.deb"
+}

@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i jruby_9.3.9.0+ds-8_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r jruby"]
+]
+depends: [
+  "deb-default-jre-headless"
+  "deb-libasm-java" {>= "9.4"}
+  "deb-libbackport9-java" {>= "1.10"}
+  "deb-libbcpkix-java" {>= "1.71"}
+  "deb-libbcprov-java" {>= "1.71"}
+  "deb-libbctls-java" {>= "1.71"}
+  "deb-libbcutil-java" {>= "1.71"}
+  "deb-libdirgra-java"
+  "deb-libheadius-options-java" {>= "1.4"}
+  "deb-libinvokebinder-java" {>= "1.12"}
+  "deb-libjansi1-java"
+  "deb-libjcodings-java" {>= "1.0.58"}
+  "deb-libjffi-java" {>= "1.3.9"}
+  "deb-libjffi-jni" {>= "1.3.9"}
+  "deb-libjitescript-java"
+  "deb-libjline2-java" {>= "2.14.6"}
+  "deb-libjnr-constants-java" {>= "0.10.4"}
+  "deb-libjnr-enxio-java" {>= "0.32.13"}
+  "deb-libjnr-ffi-java" {>= "2.2.7"}
+  "deb-libjnr-netdb-java" {>= "1.1.6"}
+  "deb-libjnr-posix-java" {>= "3.1.10"}
+  "deb-libjnr-unixsocket-java" {>= "0.18"}
+  "deb-libjoda-time-java" {>= "2.10.14"}
+  "deb-libjruby-joni-java"
+  "deb-libjzlib-java"
+  "deb-libyaml-snake-java" {>= "1.33"}
+]
+extra-source "jruby_9.3.9.0+ds-8_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/j/jruby/jruby_9.3.9.0+ds-8_all.deb"
+}

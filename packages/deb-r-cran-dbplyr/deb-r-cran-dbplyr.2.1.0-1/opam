@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-dbplyr_2.1.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-dbplyr"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.3-1"}
+  "deb-r-cran-assertthat" {>= "0.2.0"}
+  "deb-r-cran-blob" {>= "1.2.0"}
+  "deb-r-cran-dbi" {>= "1.0.0"}
+  "deb-r-cran-dplyr" {>= "1.0.3"}
+  "deb-r-cran-ellipsis"
+  "deb-r-cran-glue" {>= "1.2.0"}
+  "deb-r-cran-lifecycle"
+  "deb-r-cran-magrittr"
+  "deb-r-cran-purrr" {>= "0.2.5"}
+  "deb-r-cran-r6" {>= "2.2.2"}
+  "deb-r-cran-rlang" {>= "0.2.0"}
+  "deb-r-cran-tibble" {>= "1.4.2"}
+  "deb-r-cran-tidyselect" {>= "0.2.4"}
+  "deb-r-cran-vctrs"
+  "deb-r-cran-withr"
+]
+extra-source "r-cran-dbplyr_2.1.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-dbplyr/r-cran-dbplyr_2.1.0-1_all.deb"
+}

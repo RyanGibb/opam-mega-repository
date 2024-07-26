@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-log-dispatch-2.69-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-log-dispatch"]
+]
+depends: [
+  "apk-perl-devel-globaldestruction" {= "0.14-r1"}
+  "apk-perl-dist-checkconflicts" {= "0.11-r1"}
+  "apk-perl-module-runtime" {= "0.016-r3"}
+  "apk-perl-params-validate" {= "1.29-r3"}
+]
+extra-source "perl-log-dispatch-2.69-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-log-dispatch-2.69-r0.apk"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i namazu2_2.0.21-22_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r namazu2"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libnmz7"
+  "deb-namazu2-common"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+conflicts: [
+  "deb-namazu" {< "2.0"}
+  "deb-namazu-el"
+  "deb-tknamazu"
+]
+extra-source "namazu2_2.0.21-22_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/namazu2/namazu2_2.0.21-22_amd64.deb"
+}

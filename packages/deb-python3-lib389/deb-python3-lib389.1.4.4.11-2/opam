@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-lib389_1.4.4.11-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-lib389"]
+]
+depends: [
+  "deb-libnss3-tools"
+  "deb-openssl"
+  "deb-python3-any"
+  "deb-python3-argcomplete"
+  "deb-python3-argparse-manpage"
+  "deb-python3-dateutil"
+  "deb-python3-distro"
+  "deb-python3-ldap"
+  "deb-python3-packaging"
+  "deb-python3-pkg-resources"
+  "deb-python3-pyasn1"
+  "deb-python3-pyasn1-modules"
+  "deb-python3-pytest"
+]
+conflicts: [
+  "deb-389-ds-base" {< "1.4.0.18-1~"}
+  "deb-python-lib389" {< "1.3.7.8"}
+]
+extra-source "python3-lib389_1.4.4.11-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/3/389-ds-base/python3-lib389_1.4.4.11-2_all.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i nabi_1.0.0-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r nabi"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.35.9"}
+  "deb-libgtk2-0-0" {>= "2.24.0"}
+  "deb-libhangul1" {>= "0.1.0"}
+  "deb-libice6" {>= "1-1.0.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libsm6"
+  "deb-libx11-6"
+]
+extra-source "nabi_1.0.0-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/nabi/nabi_1.0.0-4+b1_amd64.deb"
+}

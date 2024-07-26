@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i oidc-agent-cli_4.2.6-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r oidc-agent-cli"]
+]
+depends: [
+  "deb-jq"
+  "deb-libc6" {>= "2.33"}
+  "deb-libcjson1" {>= "1.7.5"}
+  "deb-libcurl4" {>= "7.35.0"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libmicrohttpd12" {>= "0.9.50"}
+  "deb-liboidc-agent4" {= "4.2.6-1"}
+  "deb-libqrencode4" {>= "3.2.0"}
+  "deb-libseccomp2" {>= "2.1.1"}
+  "deb-libsecret-1-0" {>= "0.18.4"}
+  "deb-libsodium23" {>= "1.0.14"}
+]
+extra-source "oidc-agent-cli_4.2.6-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/oidc-agent/oidc-agent-cli_4.2.6-1_amd64.deb"
+}

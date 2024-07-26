@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i php-symfony-framework-bundle_5.4.23+dfsg-1+deb12u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r php-symfony-framework-bundle"]
+]
+depends: [
+  "deb-php-common"
+  "deb-php-mbstring"
+  "deb-php-symfony-cache"
+  "deb-php-symfony-config"
+  "deb-php-symfony-dependency-injection"
+  "deb-php-symfony-deprecation-contracts"
+  "deb-php-symfony-error-handler"
+  "deb-php-symfony-event-dispatcher"
+  "deb-php-symfony-filesystem"
+  "deb-php-symfony-finder"
+  "deb-php-symfony-http-foundation"
+  "deb-php-symfony-http-kernel"
+  "deb-php-symfony-routing"
+  "deb-php-xml"
+]
+extra-source "php-symfony-framework-bundle_5.4.23+dfsg-1+deb12u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/symfony/php-symfony-framework-bundle_5.4.23+dfsg-1+deb12u2_all.deb"
+}

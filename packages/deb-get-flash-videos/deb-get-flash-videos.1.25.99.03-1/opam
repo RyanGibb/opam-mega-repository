@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i get-flash-videos_1.25.99.03-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r get-flash-videos"]
+]
+depends: [
+  "deb-libcrypt-blowfish-perl"
+  "deb-libdata-amf-perl"
+  "deb-libhtml-parser-perl"
+  "deb-libhtml-tree-perl"
+  "deb-libio-socket-ssl-perl"
+  "deb-libmodule-find-perl"
+  "deb-libterm-progressbar-perl"
+  "deb-libterm-readkey-perl"
+  "deb-libtie-ixhash-perl"
+  "deb-liburi-perl"
+  "deb-libwww-mechanize-perl"
+  "deb-libwww-perl"
+  "deb-perl"
+  "deb-rtmpdump"
+]
+extra-source "get-flash-videos_1.25.99.03-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/get-flash-videos/get-flash-videos_1.25.99.03-1_all.deb"
+}

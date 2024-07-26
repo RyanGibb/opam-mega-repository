@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lgogdownloader_3.9-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lgogdownloader"]
+]
+depends: [
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-iostreams1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-program-options1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-regex1-74-0"
+  "deb-libc6" {>= "2.34"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libhtmlcxx3v5" {>= "0.87"}
+  "deb-libjsoncpp25" {>= "1.9.5"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libqt5webenginewidgets5" {>= "5.7.1"}
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-librhash0" {>= "1.2.6"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libtinyxml2-9" {>= "8.0.0"}
+]
+extra-source "lgogdownloader_3.9-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lgogdownloader/lgogdownloader_3.9-2_amd64.deb"
+}

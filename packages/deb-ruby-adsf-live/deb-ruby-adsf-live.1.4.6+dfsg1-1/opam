@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-adsf-live_1.4.6+dfsg1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-adsf-live"]
+]
+depends: [
+  "deb-ruby-adsf" {= "1.4.6+dfsg1-1"}
+  "deb-ruby-em-websocket" {>= "0.5"}
+  "deb-ruby-eventmachine" {>= "1.2"}
+  "deb-ruby-listen" {>= "3.0"}
+  "deb-ruby-rack-livereload" {>= "0.3"}
+]
+extra-source "ruby-adsf-live_1.4.6+dfsg1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-adsf/ruby-adsf-live_1.4.6+dfsg1-1_all.deb"
+}

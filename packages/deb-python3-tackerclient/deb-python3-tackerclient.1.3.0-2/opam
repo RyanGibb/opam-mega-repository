@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-tackerclient_1.3.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-tackerclient"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-babel"
+  "deb-python3-cliff"
+  "deb-python3-iso8601"
+  "deb-python3-keystoneclient"
+  "deb-python3-netaddr"
+  "deb-python3-osc-lib"
+  "deb-python3-oslo-i18n"
+  "deb-python3-oslo-log"
+  "deb-python3-oslo-serialization"
+  "deb-python3-oslo-utils" {>= "3.40"}
+  "deb-python3-pbr"
+  "deb-python3-requests"
+  "deb-python3-simplejson"
+  "deb-python3-six" {>= "1.10.0"}
+  "deb-python3-stevedore"
+]
+extra-source "python3-tackerclient_1.3.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-tackerclient/python3-tackerclient_1.3.0-2_all.deb"
+}

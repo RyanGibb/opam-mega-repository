@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mate-panel_1.27.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mate-panel"]
+]
+depends: [
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.14.0"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.25.2"}
+  "deb-libglib2-0-0" {>= "2.59.0"}
+  "deb-libgtk-3-0" {>= "3.21.5"}
+  "deb-libgtk-layer-shell0" {>= "0.1.0"}
+  "deb-libice6" {>= "1-1.0.0"}
+  "deb-libmate-desktop-2-17" {>= "1.24"}
+  "deb-libmate-menu2" {>= "1.22.0"}
+  "deb-libmate-panel-applet-4-1" {= "1.27.0-1"}
+  "deb-libmateweather1" {>= "1.18"}
+  "deb-libpango-1-0-0" {>= "1.18.0"}
+  "deb-librda0" {>= "0.0.3-2~"}
+  "deb-libsm6"
+  "deb-libwayland-client0" {>= "1.20.0"}
+  "deb-libwnck-3-0" {>= "3.32"}
+  "deb-libx11-6"
+  "deb-libxrandr2" {>= "2-1.2.99.3"}
+  "deb-mate-desktop"
+  "deb-mate-menus"
+  "deb-mate-panel-common" {= "1.27.0-1"}
+  "deb-mate-polkit"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "mate-panel_1.27.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mate-panel/mate-panel_1.27.0-1_amd64.deb"
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add cmake-3.18.4-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del cmake"]
+]
+depends: [
+  "apk-expat" {= "2.2.10-r8"}
+  "apk-libarchive" {= "3.5.3-r0"}
+  "apk-libcurl" {= "7.79.1-r3"}
+  "apk-libgcc" {= "10.2.1_pre1-r3"}
+  "apk-libstdc++" {= "10.2.1_pre1-r3"}
+  "apk-libuv" {= "1.40.0-r0"}
+  "apk-musl" {= "1.2.2-r2"}
+  "apk-ncurses-libs" {= "6.2_p20210109-r1"}
+  "apk-rhash-libs" {= "1.4.1-r0"}
+  "apk-zlib" {= "1.2.12-r3"}
+]
+extra-source "cmake-3.18.4-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/cmake-3.18.4-r1.apk"
+}

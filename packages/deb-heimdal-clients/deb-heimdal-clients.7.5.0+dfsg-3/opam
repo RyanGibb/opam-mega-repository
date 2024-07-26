@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i heimdal-clients_7.5.0+dfsg-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r heimdal-clients"]
+]
+depends: [
+  "deb-krb5-config"
+  "deb-libasn1-8-heimdal" {>= "1.4.0+git20110226"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libdb5-3"
+  "deb-libedit2" {>= "2.11-20080614-0"}
+  "deb-libgssapi3-heimdal" {>= "1.4.0+git20110226"}
+  "deb-libhcrypto4-heimdal" {>= "1.4.0+git20110226"}
+  "deb-libhdb9-heimdal" {>= "1.4.0+git20110226"}
+  "deb-libheimbase1-heimdal" {>= "1.4.0+git20110226"}
+  "deb-libheimntlm0-heimdal" {>= "1.4.0+git20110226"}
+  "deb-libhx509-5-heimdal" {>= "1.6~rc2"}
+  "deb-libkadm5clnt7-heimdal" {>= "1.7~git20150920"}
+  "deb-libkadm5srv8-heimdal" {>= "1.6~git20120311"}
+  "deb-libkafs0-heimdal" {>= "1.4.0+git20110226"}
+  "deb-libkrb5-26-heimdal" {>= "1.7~git20150920"}
+  "deb-libotp0-heimdal" {>= "1.4.0+git20110226"}
+  "deb-libroken18-heimdal" {>= "1.7~git20150920"}
+  "deb-libsl0-heimdal" {>= "1.6~git20120311"}
+  "deb-libwind0-heimdal" {>= "1.4.0+git20110226"}
+]
+conflicts: [
+  "deb-otp"
+]
+extra-source "heimdal-clients_7.5.0+dfsg-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/heimdal/heimdal-clients_7.5.0+dfsg-3_amd64.deb"
+}

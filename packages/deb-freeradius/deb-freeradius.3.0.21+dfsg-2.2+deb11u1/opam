@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i freeradius_3.0.21+dfsg-2.2+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r freeradius"]
+]
+depends: [
+  "deb-freeradius-common"
+  "deb-freeradius-config"
+  "deb-libc6" {>= "2.27"}
+  "deb-libcrypt1" {>= "1-4.1.0"}
+  "deb-libct4" {>= "0.64"}
+  "deb-libfreeradius3" {= "3.0.21+dfsg-2.2+deb11u1"}
+  "deb-libgdbm6" {>= "1.16"}
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-libperl5-32" {>= "5.32.0~rc1"}
+  "deb-libreadline8" {>= "6.0"}
+  "deb-libsqlite3-0" {>= "3.7.15"}
+  "deb-libssl1-1" {>= "1.1.1"}
+  "deb-libsystemd0"
+  "deb-libtalloc2" {>= "2.0.4~git20101213"}
+  "deb-libwbclient0" {>= "2-4.2.1+dfsg"}
+  "deb-lsb-base" {>= "3.1-23.2"}
+]
+extra-source "freeradius_3.0.21+dfsg-2.2+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/freeradius/freeradius_3.0.21+dfsg-2.2+deb11u1_amd64.deb"
+}

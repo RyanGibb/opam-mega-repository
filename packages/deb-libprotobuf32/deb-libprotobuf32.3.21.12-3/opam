@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libprotobuf32_3.21.12-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libprotobuf32"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libprotobuf32_3.21.12-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/protobuf/libprotobuf32_3.21.12-3_amd64.deb"
+}

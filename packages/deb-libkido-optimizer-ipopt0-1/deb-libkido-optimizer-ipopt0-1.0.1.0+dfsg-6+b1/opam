@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkido-optimizer-ipopt0.1_0.1.0+dfsg-6+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkido-optimizer-ipopt0.1"]
+]
+depends: [
+  "deb-coinor-libipopt1v5"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libkido0-1"
+  "deb-libstdc++6" {>= "5.2"}
+]
+extra-source "libkido-optimizer-ipopt0.1_0.1.0+dfsg-6+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kido/libkido-optimizer-ipopt0.1_0.1.0+dfsg-6+b1_amd64.deb"
+}

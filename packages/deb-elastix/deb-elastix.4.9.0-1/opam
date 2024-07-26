@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i elastix_4.9.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r elastix"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libcharls2" {>= "2.0.0+dfsg"}
+  "deb-libdcmtk14"
+  "deb-libdouble-conversion1" {>= "2.0.0"}
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libfftw3-double3" {>= "3.3.5"}
+  "deb-libfftw3-single3" {>= "3.3.5"}
+  "deb-libgcc1" {>= "1-4.0"}
+  "deb-libgdcm2-8"
+  "deb-libgomp1" {>= "4.9"}
+  "deb-libhdf5-103"
+  "deb-libhdf5-cpp-103" {>= "1.8.13"}
+  "deb-libicu63" {>= "63.1-1~"}
+  "deb-libinsighttoolkit4-12" {>= "4.12.0-dfsg1-2~"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libnifti2"
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libsz2"
+  "deb-libtiff5" {>= "4.0.3"}
+  "deb-libwrap0" {>= "7.6-4~"}
+  "deb-libxml2" {>= "2.6.27"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "elastix_4.9.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/elastix/elastix_4.9.0-1_amd64.deb"
+}

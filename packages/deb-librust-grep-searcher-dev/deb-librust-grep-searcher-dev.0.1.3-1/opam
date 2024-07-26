@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-grep-searcher-dev_0.1.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-grep-searcher-dev"]
+]
+depends: [
+  "deb-librust-bytecount-0-5+default-dev"
+  "deb-librust-encoding-rs-dev"
+  "deb-librust-encoding-rs-io-dev"
+  "deb-librust-grep-matcher-dev"
+  "deb-librust-log-dev"
+  "deb-librust-memchr+default-dev"
+  ("deb-librust-memmap-0-7+default-dev" | "deb- librust-memmap-0-6+default-dev" {>= "0.6.2-~~"})
+]
+extra-source "librust-grep-searcher-dev_0.1.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-grep-searcher/librust-grep-searcher-dev_0.1.3-1_amd64.deb"
+}

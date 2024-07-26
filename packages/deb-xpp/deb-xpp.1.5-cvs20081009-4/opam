@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xpp_1.5-cvs20081009-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xpp"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libcups2" {>= "1.4.0"}
+  "deb-libfltk1-1" {>= "1.1.6"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libstdc++6" {>= "5"}
+]
+extra-source "xpp_1.5-cvs20081009-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xpp/xpp_1.5-cvs20081009-4_amd64.deb"
+}

@@ -1,0 +1,68 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i plasma-mobile_5.27.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r plasma-mobile"]
+]
+depends: [
+  "deb-bluedevil"
+  "deb-breeze-icon-theme"
+  "deb-fonts-mplus"
+  "deb-fonts-oxygen"
+  "deb-kio"
+  "deb-kpackagetool5"
+  "deb-kpeople-vcard"
+  "deb-libc6" {>= "2.14"}
+  "deb-libkf5configcore5" {>= "5.69.0"}
+  "deb-libkf5configgui5" {>= "4.97.0"}
+  "deb-libkf5configwidgets5" {>= "5.23.0"}
+  "deb-libkf5coreaddons5" {>= "5.77.0"}
+  "deb-libkf5i18n5" {>= "5.102.0~"}
+  "deb-libkf5kiocore5" {>= "5.102.0~"}
+  "deb-libkf5kiogui5" {>= "5.102.0~"}
+  "deb-libkf5kiowidgets5" {>= "5.102.0~"}
+  "deb-libkf5modemmanagerqt6" {>= "5.102.0~"}
+  "deb-libkf5networkmanagerqt6" {>= "5.102.0~"}
+  "deb-libkf5notifications5" {>= "5.102.0~"}
+  "deb-libkf5package5" {>= "5.42.0"}
+  "deb-libkf5plasma5" {>= "5.102.0~"}
+  "deb-libkf5quickaddons5" {>= "5.102.0~"}
+  "deb-libkf5service-bin"
+  "deb-libkf5service5" {>= "5.102.0~"}
+  "deb-libkf5waylandclient5" {>= "4-5.102.0~"}
+  "deb-libkf5windowsystem5" {>= "5.6.0+git20150112.0023+15.04"}
+  "deb-libkworkspace5-5" {>= "4-5.8.1"}
+  "deb-libqt5core5a" {>= "5.15.2~"}
+  "deb-libqt5dbus5" {>= "5.15.2~"}
+  "deb-libqt5qml5" {>= "5.15.2~"}
+  "deb-libqt5widgets5" {>= "5.15.2~"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-maliit-keyboard"
+  "deb-milou"
+  "deb-pipewire"
+  "deb-plasma-nano"
+  "deb-plasma-nm"
+  "deb-plasma-pa"
+  "deb-plasma-settings"
+  "deb-plasma-workspace"
+  "deb-plasma-workspace-wayland"
+  "deb-powerdevil"
+  "deb-qml-module-org-kde-activities"
+  "deb-qml-module-org-kde-bluezqt"
+  "deb-qml-module-org-kde-kio"
+  "deb-qml-module-org-kde-kirigami-addons-labs-mobileform"
+  "deb-qml-module-org-kde-kirigami2"
+  "deb-qml-module-org-kde-kquickcontrols"
+  "deb-qml-module-org-kde-people"
+  "deb-qml-module-org-kde-pipewire"
+  "deb-qml-module-org-kde-qqc2breezestyle"
+  "deb-qml-module-qtfeedback"
+  "deb-qml-module-qtquick-localstorage"
+  "deb-xdg-desktop-portal-kde"
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+  ("deb-libqt5quick5" {>= "5.15.2~"} | "deb- libqt5quick5-gles" {>= "5.15.2~"})
+]
+extra-source "plasma-mobile_5.27.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/plasma-mobile/plasma-mobile_5.27.2-1_amd64.deb"
+}

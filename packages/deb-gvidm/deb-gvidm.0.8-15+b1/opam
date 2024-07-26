@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gvidm_0.8-15+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gvidm"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libgtk2-0-0" {>= "2.8.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libx11-6"
+  "deb-libxinerama1"
+  "deb-libxrandr2" {>= "4.3"}
+  "deb-libxxf86vm1"
+]
+extra-source "gvidm_0.8-15+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gvidm/gvidm_0.8-15+b1_amd64.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kexec-tools_1:2.0.25-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kexec-tools"]
+]
+depends: [
+  "deb-debconf"
+  "deb-dpkg" {>= "1.15.7.2"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libxenmisc4-17"
+  "deb-sysvinit-utils"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "kexec-tools_1:2.0.25-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kexec-tools/kexec-tools_2.0.25-3+b1_amd64.deb"
+}

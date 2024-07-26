@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i hercules_3.13-7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r hercules"]
+]
+depends: [
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.15"}
+  "deb-libcap2" {>= "1-2.10"}
+  "deb-libcap2-bin"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "hercules_3.13-7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/hercules/hercules_3.13-7_amd64.deb"
+}

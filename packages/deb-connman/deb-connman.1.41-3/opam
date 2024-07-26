@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i connman_1.41-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r connman"]
+]
+depends: [
+  "deb-dbus"
+  "deb-iptables"
+  "deb-libc6" {>= "2.34"}
+  "deb-libdbus-1-3" {>= "1.9.14"}
+  "deb-libglib2-0-0" {>= "2.39.4"}
+  "deb-libgnutls30" {>= "3.7.5"}
+  "deb-libreadline8" {>= "6.0"}
+  "deb-libxtables12" {>= "1.6.0+snapshot20161117"}
+  "deb-lsb-base"
+]
+extra-source "connman_1.41-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/connman/connman_1.41-3_amd64.deb"
+}

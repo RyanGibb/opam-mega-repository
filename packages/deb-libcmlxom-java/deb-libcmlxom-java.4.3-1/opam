@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcmlxom-java_4.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcmlxom-java"]
+]
+depends: [
+  "deb-libcommons-io-java" {>= "2.11.0"}
+  "deb-libeuclid-java" {>= "2.1"}
+  "deb-libjaxp1-3-java"
+  "deb-libjoda-time-java" {>= "2.10.14"}
+  "deb-liblog4j2-java" {>= "2.17.2"}
+  "deb-libtagsoup-java"
+  "deb-libxom-java"
+]
+extra-source "libcmlxom-java_4.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cmlxom/libcmlxom-java_4.3-1_all.deb"
+}

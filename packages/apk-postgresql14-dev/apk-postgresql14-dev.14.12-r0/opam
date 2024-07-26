@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add postgresql14-dev-14.12-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del postgresql14-dev"]
+]
+depends: [
+  "apk-clang14" {= "14.0.6-r7"}
+  "apk-icu-dev" {= "73.2-r2"}
+  "apk-libecpg-dev" {= "15.7-r0"}
+  "apk-libpq" {= "15.7-r0"}
+  "apk-libpq-dev" {= "15.7-r0"}
+  "apk-llvm14" {= "14.0.6-r14"}
+  "apk-musl" {= "1.2.4-r2"}
+  "apk-openssl-dev" {> "3"}
+]
+extra-source "postgresql14-dev-14.12-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/postgresql14-dev-14.12-r0.apk"
+}

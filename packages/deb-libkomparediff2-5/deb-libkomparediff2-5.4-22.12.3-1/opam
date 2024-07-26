@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkomparediff2-5_4:22.12.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkomparediff2-5"]
+]
+depends: [
+  "deb-kio"
+  "deb-libc6" {>= "2.14"}
+  "deb-libkf5codecs5" {>= "5.90.0~"}
+  "deb-libkf5configcore5" {>= "5.90.0~"}
+  "deb-libkf5configwidgets5" {>= "5.23.0"}
+  "deb-libkf5coreaddons5" {>= "5.90.0~"}
+  "deb-libkf5i18n5" {>= "5.90.0~"}
+  "deb-libkf5kiocore5" {>= "5.90.0~"}
+  "deb-libkf5xmlgui5" {>= "5.90.0~"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5widgets5" {>= "5.15.0~"}
+  "deb-libstdc++6" {>= "5"}
+  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb- libqt5gui5-gles" {>= "5.15.0~"})
+]
+extra-source "libkomparediff2-5_4:22.12.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libk/libkomparediff2/libkomparediff2-5_22.12.3-1_amd64.deb"
+}

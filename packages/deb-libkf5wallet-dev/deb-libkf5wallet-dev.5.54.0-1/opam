@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkf5wallet-dev_5.54.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkf5wallet-dev"]
+]
+depends: [
+  "deb-libkf5config-dev" {>= "5.54.0~"}
+  "deb-libkf5wallet5" {= "5.54.0-1"}
+  "deb-libkf5windowsystem-dev" {>= "5.54.0~"}
+  "deb-libkwalletbackend5-5" {= "5.54.0-1"}
+  "deb-qtbase5-dev" {>= "5.9.0~"}
+]
+extra-source "libkf5wallet-dev_5.54.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kwallet-kf5/libkf5wallet-dev_5.54.0-1_amd64.deb"
+}

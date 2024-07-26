@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-viant-toolbox-dev_0.33.2-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-viant-toolbox-dev"]
+]
+depends: [
+  "deb-golang-github-aws-aws-sdk-go-dev"
+  "deb-golang-github-go-errors-errors-dev"
+  "deb-golang-github-lunixbochs-vtclean-dev"
+  "deb-golang-github-pkg-errors-dev"
+  "deb-golang-github-stretchr-testify-dev"
+  "deb-golang-golang-x-crypto-dev"
+  "deb-golang-golang-x-net-dev"
+  "deb-golang-golang-x-oauth2-google-dev"
+  "deb-golang-google-api-dev"
+  "deb-golang-google-cloud-dev"
+  "deb-golang-gopkg-yaml-v2-dev"
+]
+extra-source "golang-github-viant-toolbox-dev_0.33.2-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-viant-toolbox/golang-github-viant-toolbox-dev_0.33.2-3_all.deb"
+}

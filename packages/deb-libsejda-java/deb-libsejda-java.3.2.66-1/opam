@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsejda-java_3.2.66-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsejda-java"]
+]
+depends: [
+  "deb-libbcmail-java" {>= "1.58"}
+  "deb-libbcprov-java" {>= "1.58"}
+  "deb-libcommons-io-java" {>= "2.6"}
+  "deb-libcommons-lang3-java" {>= "3.8"}
+  "deb-libgeronimo-validation-1-0-spec-java"
+  "deb-libimgscalr-java" {>= "4.2"}
+  "deb-libmetadata-extractor-java" {>= "2.10.1"}
+  "deb-libslf4j-java" {>= "1.7.25"}
+  "deb-libtwelvemonkeys-java"
+]
+extra-source "libsejda-java_3.2.66-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libs/libsejda-java/libsejda-java_3.2.66-1_all.deb"
+}

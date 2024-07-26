@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sssd-kcm_2.8.2-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sssd-kcm"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libdhash1" {>= "0.4.0"}
+  "deb-libkrb5-3" {>= "1.20~beta1"}
+  "deb-libldb2" {>= "0.9.21"}
+  "deb-libpopt0" {>= "1.14"}
+  "deb-libselinux1" {>= "3.1~"}
+  "deb-libsystemd0"
+  "deb-libtalloc2" {>= "2.0.4~git20101213"}
+  "deb-libtdb1" {>= "1.2.7+git20101214"}
+  "deb-libtevent0" {>= "0.9.9"}
+  "deb-libuuid1" {>= "2.16"}
+  "deb-sssd-common" {= "2.8.2-4"}
+]
+extra-source "sssd-kcm_2.8.2-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sssd/sssd-kcm_2.8.2-4_amd64.deb"
+}

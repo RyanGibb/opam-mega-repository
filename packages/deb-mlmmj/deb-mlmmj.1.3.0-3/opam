@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mlmmj_1.3.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mlmmj"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-default-mta" | "deb- postfix" | "deb- exim4" | "deb- mail-transport-agent")
+]
+extra-source "mlmmj_1.3.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mlmmj/mlmmj_1.3.0-3_amd64.deb"
+}

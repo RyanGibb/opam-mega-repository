@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsoap-lite-perl_1.27-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsoap-lite-perl"]
+]
+depends: [
+  "deb-libclass-inspector-perl"
+  "deb-libfcgi-perl"
+  "deb-libhttp-daemon-perl"
+  "deb-libio-compress-perl"
+  "deb-libio-sessiondata-perl"
+  "deb-libio-socket-ssl-perl"
+  "deb-libio-stringy-perl"
+  "deb-liblwp-protocol-https-perl"
+  "deb-libmime-tools-perl"
+  "deb-libscalar-list-utils-perl"
+  "deb-libtask-weaken-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-libxml-parser-perl"
+  "deb-perl-any"
+]
+extra-source "libsoap-lite-perl_1.27-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libs/libsoap-lite-perl/libsoap-lite-perl_1.27-3_all.deb"
+}

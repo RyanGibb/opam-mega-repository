@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ffmpegthumbs_4:22.12.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ffmpegthumbs"]
+]
+depends: [
+  "deb-kio"
+  "deb-libavcodec-extra59"
+  "deb-libavfilter-extra8"
+  "deb-libavformat-extra59"
+  "deb-libavutil57" {>= "7-5.0"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libkf5configcore5" {>= "5.83.0~"}
+  "deb-libkf5configgui5" {>= "5.83.0~"}
+  "deb-libkf5kiowidgets5" {>= "5.83.0~"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-libswscale6" {>= "7-5.0"}
+  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb- libqt5gui5-gles" {>= "5.15.0~"})
+]
+extra-source "ffmpegthumbs_4:22.12.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/ffmpegthumbs/ffmpegthumbs_22.12.3-1_amd64.deb"
+}

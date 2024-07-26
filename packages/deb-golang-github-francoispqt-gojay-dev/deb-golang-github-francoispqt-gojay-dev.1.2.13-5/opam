@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-francoispqt-gojay-dev_1.2.13-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-francoispqt-gojay-dev"]
+]
+depends: [
+  "deb-golang-github-buger-jsonparser-dev"
+  "deb-golang-github-go-errors-errors-dev"
+  "deb-golang-github-json-iterator-go-dev"
+  "deb-golang-github-mailru-easyjson-dev"
+  "deb-golang-github-stretchr-testify-dev"
+  "deb-golang-github-viant-assertly-dev"
+  "deb-golang-github-viant-toolbox-dev"
+  "deb-golang-golang-x-net-dev"
+]
+extra-source "golang-github-francoispqt-gojay-dev_1.2.13-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-francoispqt-gojay/golang-github-francoispqt-gojay-dev_1.2.13-5_all.deb"
+}

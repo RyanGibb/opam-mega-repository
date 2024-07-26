@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i hugs_98.200609.21-6+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r hugs"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libhugs-base-bundled"
+  "deb-libhugs-haskell98-bundled"
+  "deb-libreadline8" {>= "6.0"}
+]
+conflicts: [
+  "deb-hugs98"
+]
+extra-source "hugs_98.200609.21-6+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/hugs98/hugs_98.200609.21-6+b1_amd64.deb"
+}

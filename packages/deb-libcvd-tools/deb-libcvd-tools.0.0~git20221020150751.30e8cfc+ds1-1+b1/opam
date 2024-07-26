@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcvd-tools_0.0~git20221020150751.30e8cfc+ds1-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcvd-tools"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libcvd2" {>= "0.0~git20221020150751.30e8cfc+ds1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgl1"
+  "deb-libstdc++6" {>= "12"}
+]
+extra-source "libcvd-tools_0.0~git20221020150751.30e8cfc+ds1-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libcvd/libcvd-tools_0.0~git20221020150751.30e8cfc+ds1-1+b1_amd64.deb"
+}

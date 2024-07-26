@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cloud-enum_0.7-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cloud-enum"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-dnspython"
+  "deb-python3-requests"
+  "deb-python3-requests-futures"
+  ("deb-bind9-host" | "deb- host")
+]
+extra-source "cloud-enum_0.7-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cloud-enum/cloud-enum_0.7-2_all.deb"
+}

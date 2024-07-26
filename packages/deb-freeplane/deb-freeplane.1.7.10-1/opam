@@ -1,0 +1,43 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i freeplane_1.7.10-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r freeplane"]
+]
+depends: [
+  "deb-darcula"
+  "deb-groovy" {>= "2.4.8-2"}
+  "deb-ivy"
+  "deb-javahelp2"
+  "deb-jmapviewer" {>= "1.11"}
+  "deb-libavalon-framework-java"
+  "deb-libbatik-java" {>= "1.9-3"}
+  "deb-libcommons-codec-java" {>= "1.7"}
+  "deb-libcommons-io-java"
+  "deb-libcommons-lang-java" {>= "2.6"}
+  "deb-libcommons-logging-java"
+  "deb-libdata-url-java"
+  "deb-libfop-java" {>= "2.1"}
+  "deb-libiconloader-java"
+  "deb-libidw-java"
+  "deb-libjaxp1-3-java"
+  "deb-libjgoodies-forms-java" {>= "1.9.0"}
+  "deb-libjlatexmath-java" {>= "1.0.6"}
+  "deb-libjsyntaxpane-java" {>= "0.9.6~r156"}
+  "deb-libknopflerfish-osgi-framework-java" {>= "6.1.1"}
+  "deb-libmnemonicsetter-java" {>= "0.5"}
+  "deb-librhino-java"
+  "deb-libsvgsalamander-java" {>= "1.1.1"}
+  "deb-libxerces2-java"
+  "deb-libxml-commons-external-java"
+  "deb-libxmlgraphics-commons-java"
+  "deb-simplyhtml" {>= "0.17.3"}
+  ("deb-default-jre" | "deb- java8-runtime")
+]
+conflicts: [
+  "deb-libjortho-freeplane-java"
+]
+extra-source "freeplane_1.7.10-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/freeplane/freeplane_1.7.10-1_all.deb"
+}

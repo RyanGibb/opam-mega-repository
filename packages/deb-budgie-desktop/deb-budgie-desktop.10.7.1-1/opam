@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i budgie-desktop_10.7.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r budgie-desktop"]
+]
+depends: [
+  "deb-budgie-control-center"
+  "deb-budgie-core"
+  "deb-dconf-cli"
+  "deb-network-manager-gnome"
+  "deb-xdotool"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "budgie-desktop_10.7.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/budgie-desktop/budgie-desktop_10.7.1-1_all.deb"
+}

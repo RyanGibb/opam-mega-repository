@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-rollup-plugin-uglify_6.0.4+repack1-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-rollup-plugin-uglify"]
+]
+depends: [
+  "deb-node-babel-core"
+  "deb-node-jest-worker"
+  "deb-node-serialize-javascript"
+  "deb-node-uglify-js"
+  "deb-nodejs" {>= "6"}
+]
+extra-source "node-rollup-plugin-uglify_6.0.4+repack1-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-rollup-plugin-uglify/node-rollup-plugin-uglify_6.0.4+repack1-4_all.deb"
+}

@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xournal_1:0.4.8.2016-7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xournal"]
+]
+depends: [
+  "deb-ghostscript-x"
+  "deb-libart-2-0-2" {>= "2.3.17"}
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo2" {>= "1.6.0"}
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.35.9"}
+  "deb-libgnomecanvas2-0" {>= "2.11.1"}
+  "deb-libgtk2-0-0" {>= "2.14.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpangoft2-1-0-0" {>= "1.14.0"}
+  "deb-libpoppler-glib8" {>= "0.18.0"}
+  "deb-libx11-6"
+  "deb-zlib1g" {>= "1-1.2.0"}
+]
+extra-source "xournal_1:0.4.8.2016-7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xournal/xournal_0.4.8.2016-7_amd64.deb"
+}

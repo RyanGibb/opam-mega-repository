@@ -1,0 +1,47 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lintian_2.15.0_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lintian"]
+]
+depends: [
+  "deb-binutils"
+  "deb-bzip2"
+  "deb-diffstat"
+  "deb-dpkg" {>= "1.17.14"}
+  "deb-dpkg-dev"
+  "deb-file"
+  "deb-gettext"
+  "deb-gpg"
+  "deb-intltool-debian"
+  "deb-libapt-pkg-perl"
+  "deb-libarchive-zip-perl"
+  "deb-libcapture-tiny-perl"
+  "deb-libcgi-pm-perl"
+  "deb-libclass-accessor-perl"
+  "deb-libclone-perl"
+  "deb-libdigest-sha-perl"
+  "deb-libdpkg-perl"
+  "deb-libemail-valid-perl"
+  "deb-libfile-basedir-perl"
+  "deb-libio-async-perl"
+  "deb-libipc-run-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-libparse-debianchangelog-perl"
+  "deb-libpath-tiny-perl"
+  "deb-libtext-levenshtein-perl"
+  "deb-libtimedate-perl"
+  "deb-libtry-tiny-perl"
+  "deb-liburi-perl"
+  "deb-libxml-simple-perl"
+  "deb-libyaml-libyaml-perl"
+  "deb-man-db"
+  "deb-patchutils"
+  "deb-perl"
+  "deb-t1utils"
+  "deb-xz-utils"
+]
+extra-source "lintian_2.15.0_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lintian/lintian_2.15.0_all.deb"
+}

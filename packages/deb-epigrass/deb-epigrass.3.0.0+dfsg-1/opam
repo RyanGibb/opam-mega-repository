@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i epigrass_3.0.0+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r epigrass"]
+]
+depends: [
+  "deb-cython3"
+  "deb-python3-altair"
+  "deb-python3-any"
+  "deb-python3-dbfread"
+  "deb-python3-fiona"
+  "deb-python3-formencode"
+  "deb-python3-gdal"
+  "deb-python3-geopandas"
+  "deb-python3-matplotlib"
+  "deb-python3-networkx"
+  "deb-python3-numpy"
+  "deb-python3-pandas"
+  "deb-python3-pkg-resources"
+  "deb-python3-plotly"
+  "deb-python3-pweave"
+  "deb-python3-pyglet"
+  "deb-python3-pymysql"
+  "deb-python3-redis"
+  "deb-python3-shapely"
+  "deb-python3-sqlalchemy"
+  "deb-python3-sqlobject"
+  "deb-python3-sqlsoup"
+  "deb-python3-tqdm"
+  "deb-redis-server"
+]
+extra-source "epigrass_3.0.0+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/epigrass/epigrass_3.0.0+dfsg-1_amd64.deb"
+}

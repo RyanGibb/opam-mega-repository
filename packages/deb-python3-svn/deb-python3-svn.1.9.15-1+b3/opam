@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-svn_1.9.15-1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-svn"]
+]
+depends: [
+  "deb-libapr1" {>= "1.2.7"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libsvn1" {>= "1.10"}
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-any" {>= "3.6~"}
+]
+extra-source "python3-svn_1.9.15-1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pysvn/python3-svn_1.9.15-1+b3_amd64.deb"
+}

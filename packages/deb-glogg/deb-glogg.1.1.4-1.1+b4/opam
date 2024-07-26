@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i glogg_1.1.4-1.1+b4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r glogg"]
+]
+depends: [
+  "deb-libboost-program-options1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.14.1"}
+  "deb-libqt5widgets5" {>= "5.2.1"}
+  "deb-libstdc++6" {>= "9"}
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "glogg_1.1.4-1.1+b4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/glogg/glogg_1.1.4-1.1+b4_amd64.deb"
+}

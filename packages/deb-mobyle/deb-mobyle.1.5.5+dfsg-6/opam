@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mobyle_1.5.5+dfsg-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mobyle"]
+]
+depends: [
+  "deb-libjs-jquery"
+  "deb-libjs-prototype"
+  "deb-libjs-scriptaculous"
+  "deb-mobyle-utils"
+  "deb-python-any"
+  "deb-python-biopython"
+  "deb-python-lxml"
+  "deb-python-pil"
+  "deb-python-pygraphviz"
+  "deb-python-simplejson"
+  "deb-python-simpletal" {< "5.0~"}
+  "deb-squizz" {>= "0.99b+dfsg"}
+  "deb-ttf-bitstream-vera"
+  ("deb-apache2" {>= "2.4"} | "deb- httpd-cgi")
+]
+extra-source "mobyle_1.5.5+dfsg-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mobyle/mobyle_1.5.5+dfsg-6_all.deb"
+}

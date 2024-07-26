@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libqtmirserver1_0.6.1-7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libqtmirserver1"]
+]
+depends: [
+  "deb-libc6" {>= "2.30"}
+  "deb-libegl1"
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgles2"
+  "deb-liblomiri-url-dispatcher0" {>= "0.1.0"}
+  "deb-liblttng-ust0" {>= "2.5.0"}
+  "deb-libmiral3" {>= "2.0"}
+  "deb-libmirclient9" {>= "1.7"}
+  "deb-libmircommon7" {>= "1.7"}
+  "deb-libmircore1" {>= "1.7"}
+  "deb-libmirserver53" {>= "1.7"}
+  "deb-libqt5core5a"
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.0.2"}
+  "deb-libqt5qml5"
+  "deb-libqt5qml5" {>= "5.0.2"}
+  "deb-libqt5sensors5" {>= "5.6.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libxkbcommon0" {>= "0.5.0"}
+  ("deb-libqt5gui5" {>= "5.15.1"} | "deb- libqt5gui5-gles" {>= "5.15.1"})
+  ("deb-libqt5quick5" {>= "5.1.0"} | "deb- libqt5quick5-gles" {>= "5.1.0"})
+]
+extra-source "libqtmirserver1_0.6.1-7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qtmir/libqtmirserver1_0.6.1-7_amd64.deb"
+}

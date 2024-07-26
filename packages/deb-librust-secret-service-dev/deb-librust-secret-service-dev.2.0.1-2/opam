@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-secret-service-dev_2.0.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-secret-service-dev"]
+]
+depends: [
+  "deb-librust-aes-0-6+default-dev"
+  "deb-librust-block-modes-0-7+default-dev"
+  "deb-librust-hkdf-0-12+default-dev"
+  "deb-librust-lazy-static-dev"
+  "deb-librust-num-0-4+default-dev"
+  "deb-librust-rand-0-8+default-dev"
+  "deb-librust-serde-1+default-dev"
+  "deb-librust-serde-1+derive-dev"
+  "deb-librust-sha2-0-10+default-dev"
+  "deb-librust-zbus-dev"
+  "deb-librust-zbus-macros-dev"
+  "deb-librust-zvariant-derive-dev"
+  "deb-librust-zvariant-dev"
+]
+extra-source "librust-secret-service-dev_2.0.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-secret-service/librust-secret-service-dev_2.0.1-2_amd64.deb"
+}

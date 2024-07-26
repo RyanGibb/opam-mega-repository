@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i satellite-gtk_0.3.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r satellite-gtk"]
+]
+depends: [
+  "deb-gir1-2-handy-1"
+  "deb-gir1-2-modemmanager-1-0"
+  "deb-python3-any"
+  "deb-python3-gi"
+  "deb-python3-gpxpy"
+  "deb-python3-nmea2"
+  "deb-python3-pydbus"
+]
+extra-source "satellite-gtk_0.3.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/satellite-gtk/satellite-gtk_0.3.1-1_all.deb"
+}

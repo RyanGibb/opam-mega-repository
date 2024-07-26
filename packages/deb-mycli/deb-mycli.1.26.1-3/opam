@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mycli_1.26.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mycli"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-cli-helpers"
+  "deb-python3-click"
+  "deb-python3-configobj"
+  "deb-python3-cryptography"
+  "deb-python3-pkg-resources"
+  "deb-python3-prompt-toolkit" {>= "2.0"}
+  "deb-python3-pyaes"
+  "deb-python3-pygments"
+  "deb-python3-pymysql"
+  "deb-python3-pyperclip"
+  "deb-python3-sqlglot"
+  "deb-python3-sqlparse" {>= "0.4"}
+  "deb-python3-tabulate"
+  "deb-python3-terminaltables"
+]
+extra-source "mycli_1.26.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mycli/mycli_1.26.1-3_all.deb"
+}

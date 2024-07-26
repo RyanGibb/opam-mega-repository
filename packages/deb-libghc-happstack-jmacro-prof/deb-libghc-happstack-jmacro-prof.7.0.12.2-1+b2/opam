@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-happstack-jmacro-prof_7.0.12.2-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-happstack-jmacro-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-base64-bytestring-prof"
+  "deb-libghc-cereal-prof"
+  "deb-libghc-digest-prof"
+  "deb-libghc-happstack-jmacro-dev" {= "7.0.12.2-1+b2"}
+  "deb-libghc-happstack-server-prof"
+  "deb-libghc-jmacro-prof"
+  "deb-libghc-utf8-string-prof"
+  "deb-libghc-wl-pprint-text-prof"
+]
+extra-source "libghc-happstack-jmacro-prof_7.0.12.2-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-happstack-jmacro/libghc-happstack-jmacro-prof_7.0.12.2-1+b2_amd64.deb"
+}

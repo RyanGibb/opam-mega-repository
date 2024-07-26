@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i netconsole_0.3.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r netconsole"]
+]
+depends: [
+  "deb-iproute2"
+  "deb-kmod"
+  "deb-lsb-base" {>= "3.0-6"}
+  ("deb-iputils-arping" | "deb- arping")
+]
+extra-source "netconsole_0.3.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/netconsole/netconsole_0.3.1-1_all.deb"
+}

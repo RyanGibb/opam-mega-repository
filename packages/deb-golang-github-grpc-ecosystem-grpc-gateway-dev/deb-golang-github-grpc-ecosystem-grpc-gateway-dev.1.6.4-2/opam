@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-grpc-ecosystem-grpc-gateway-dev_1.6.4-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-grpc-ecosystem-grpc-gateway-dev"]
+]
+depends: [
+  "deb-golang-github-dghubble-sling-dev"
+  "deb-golang-github-ghodss-yaml-dev"
+  "deb-golang-github-rogpeppe-fastuuid-dev"
+  "deb-golang-glog-dev"
+  "deb-golang-golang-x-net-dev"
+  "deb-golang-google-genproto-dev" {>= "0.0~git20190111~"}
+  "deb-golang-google-grpc-dev" {>= "1.6.0"}
+  "deb-golang-goprotobuf-dev" {>= "1.2.0"}
+]
+extra-source "golang-github-grpc-ecosystem-grpc-gateway-dev_1.6.4-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-grpc-ecosystem-grpc-gateway/golang-github-grpc-ecosystem-grpc-gateway-dev_1.6.4-2_all.deb"
+}

@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcatmandu-identifier-perl_0.15-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcatmandu-identifier-perl"]
+]
+depends: [
+  "deb-libbusiness-isbn-data-perl" {>= "20210112.006"}
+  "deb-libbusiness-isbn-perl" {>= "3.006"}
+  "deb-libbusiness-issn-perl" {>= "1.005"}
+  "deb-libcatmandu-perl"
+  "deb-libdata-uuid-mt-perl"
+  "deb-libdata-validate-uri-perl"
+  "deb-libjson-perl"
+  "deb-libmodule-build-tiny-perl"
+  "deb-libmoo-perl"
+  "deb-libscalar-list-utils-perl"
+  "deb-libwww-orcid-perl"
+  "deb-libwww-perl"
+  "deb-perl-any"
+]
+extra-source "libcatmandu-identifier-perl_0.15-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libcatmandu-identifier-perl/libcatmandu-identifier-perl_0.15-2_all.deb"
+}

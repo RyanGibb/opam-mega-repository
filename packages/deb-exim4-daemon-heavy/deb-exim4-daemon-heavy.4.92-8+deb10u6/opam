@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i exim4-daemon-heavy_4.92-8+deb10u6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r exim4-daemon-heavy"]
+]
+depends: [
+  "deb-exim4-base" {>= "4.92"}
+  "deb-libc6" {>= "2.16"}
+  "deb-libdb5-3"
+  "deb-libgnutls-dane0" {>= "3.5.7"}
+  "deb-libgnutls30" {>= "3.6.6"}
+  "deb-libldap-2-4-2" {>= "2.4.7"}
+  "deb-libmariadb3" {>= "3.0.0"}
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-libpcre3"
+  "deb-libperl5-28" {>= "5.28.0"}
+  "deb-libpq5"
+  "deb-libsasl2-2" {>= "2.1.27+dfsg"}
+  "deb-libsqlite3-0" {>= "3.5.9"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+conflicts: [
+  "deb-mail-transport-agent"
+]
+extra-source "exim4-daemon-heavy_4.92-8+deb10u6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/exim4/exim4-daemon-heavy_4.92-8+deb10u6_amd64.deb"
+}

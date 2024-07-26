@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-sqlite3_4.0.6+ds1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-sqlite3"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libnode64"
+  "deb-libsqlite3-0" {>= "3.6.5"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-node-pre-gyp" {>= "0.10.2~"}
+  "deb-nodejs"
+]
+extra-source "node-sqlite3_4.0.6+ds1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-sqlite3/node-sqlite3_4.0.6+ds1-2_amd64.deb"
+}

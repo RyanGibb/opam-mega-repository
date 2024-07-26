@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i biometric-utils_0.9.61-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r biometric-utils"]
+]
+depends: [
+  "deb-biometric-auth"
+  "deb-libc6" {>= "2.4"}
+  "deb-libglib2-0-0" {>= "2.39.4"}
+  "deb-libsqlite3-0" {>= "3.5.9"}
+  "deb-libusb-1-0-0" {>= "2-1.0.8"}
+  "deb-libuuid1" {>= "2.16"}
+  "deb-python3-any"
+  "deb-python3-dbus"
+  "deb-python3-gi"
+  "deb-python3-prettytable"
+  "deb-systemd"
+]
+extra-source "biometric-utils_0.9.61-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/biometric-authentication/biometric-utils_0.9.61-2_amd64.deb"
+}

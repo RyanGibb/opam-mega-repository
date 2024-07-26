@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add rpcbind-1.2.6-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del rpcbind"]
+]
+depends: [
+  "apk-busybox" {= "1.35.0-r18"}
+  "apk-libtirpc" {= "1.3.2-r1"}
+  "apk-musl" {= "1.2.3-r3"}
+]
+extra-source "rpcbind-1.2.6-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/rpcbind-1.2.6-r0.apk"
+}

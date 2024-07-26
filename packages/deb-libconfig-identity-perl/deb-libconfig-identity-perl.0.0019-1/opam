@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libconfig-identity-perl_0.0019-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libconfig-identity-perl"]
+]
+depends: [
+  "deb-libfile-homedir-perl"
+  "deb-libfile-which-perl"
+  "deb-libipc-run-perl"
+  "deb-perl"
+]
+extra-source "libconfig-identity-perl_0.0019-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libconfig-identity-perl/libconfig-identity-perl_0.0019-1_all.deb"
+}

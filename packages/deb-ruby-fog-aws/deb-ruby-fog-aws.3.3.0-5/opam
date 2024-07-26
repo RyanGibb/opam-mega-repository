@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-fog-aws_3.3.0-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-fog-aws"]
+]
+depends: [
+  "deb-ruby-fog-core" {>= "2.1"}
+  "deb-ruby-fog-json" {>= "1.1"}
+  "deb-ruby-fog-xml" {>= "0.1"}
+  "deb-ruby-ipaddress" {>= "0.8"}
+  ("deb-ruby" | "deb- ruby-interpreter")
+]
+extra-source "ruby-fog-aws_3.3.0-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-fog-aws/ruby-fog-aws_3.3.0-5_all.deb"
+}

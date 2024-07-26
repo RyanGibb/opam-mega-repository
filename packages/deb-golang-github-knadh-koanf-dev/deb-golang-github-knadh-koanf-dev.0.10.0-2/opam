@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-knadh-koanf-dev_0.10.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-knadh-koanf-dev"]
+]
+depends: [
+  "deb-golang-github-fatih-structs-dev"
+  "deb-golang-github-fsnotify-fsnotify-dev"
+  "deb-golang-github-hashicorp-hcl-dev"
+  "deb-golang-github-mitchellh-mapstructure-dev"
+  "deb-golang-github-pelletier-go-toml-dev"
+  "deb-golang-github-rhnvrm-simples3-dev"
+  "deb-golang-github-spf13-pflag-dev"
+  "deb-golang-github-stretchr-testify-dev"
+  "deb-golang-gopkg-yaml-v2-dev"
+]
+extra-source "golang-github-knadh-koanf-dev_0.10.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-knadh-koanf/golang-github-knadh-koanf-dev_0.10.0-2_all.deb"
+}

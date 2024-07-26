@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i s-tui_1.0.2-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r s-tui"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-distutils"
+  "deb-python3-pkg-resources"
+  "deb-python3-psutil"
+  "deb-python3-urwid"
+]
+extra-source "s-tui_1.0.2-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/s-tui/s-tui_1.0.2-2_all.deb"
+}

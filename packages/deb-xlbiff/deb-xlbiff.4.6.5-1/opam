@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xlbiff_4.6.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xlbiff"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libx11-6"
+  "deb-libxaw7" {>= "2-1.0.14"}
+  "deb-libxrandr2"
+  "deb-libxt6"
+  "deb-nmh"
+  "deb-python3"
+]
+extra-source "xlbiff_4.6.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xlbiff/xlbiff_4.6.5-1_amd64.deb"
+}

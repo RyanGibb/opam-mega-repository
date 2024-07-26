@@ -1,0 +1,43 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kmailtransport-akonadi_22.12.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kmailtransport-akonadi"]
+]
+depends: [
+  "deb-kio"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libkf5akonadicore5abi2"
+  "deb-libkf5akonadicore5abi2" {>= "4-22.12.3"}
+  "deb-libkf5akonadimime5"
+  "deb-libkf5akonadimime5" {>= "4-22.12.3"}
+  "deb-libkf5akonadiwidgets5abi1"
+  "deb-libkf5akonadiwidgets5abi1" {>= "4-22.12.3"}
+  "deb-libkf5completion5" {>= "4.97.0"}
+  "deb-libkf5configcore5" {>= "4.98.0"}
+  "deb-libkf5configwidgets5" {>= "5.99.0~"}
+  "deb-libkf5coreaddons5" {>= "4.99.0"}
+  "deb-libkf5i18n5" {>= "5.99.0~"}
+  "deb-libkf5kiocore5" {>= "5.99.0~"}
+  "deb-libkf5kiowidgets5" {>= "5.99.0~"}
+  "deb-libkf5mailtransport5"
+  "deb-libkf5mailtransport5" {= "22.12.3-1"}
+  "deb-libkf5mailtransportakonadi5"
+  "deb-libkf5mailtransportakonadi5" {= "22.12.3-1"}
+  "deb-libkf5mime5abi1"
+  "deb-libkf5mime5abi1" {>= "22.12.3"}
+  "deb-libkf5widgetsaddons5" {>= "5.88.0"}
+  "deb-libkpimgapicore5abi1"
+  "deb-libkpimgapicore5abi1" {>= "22.12.3"}
+  "deb-libkpimsmtp5abi1"
+  "deb-libkpimsmtp5abi1" {>= "22.12.3"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5widgets5" {>= "5.7.0~"}
+  "deb-libstdc++6" {>= "5"}
+  ("deb-libqt5gui5" {>= "5.7.0~"} | "deb- libqt5gui5-gles" {>= "5.7.0~"})
+]
+extra-source "kmailtransport-akonadi_22.12.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kmailtransport/kmailtransport-akonadi_22.12.3-1_amd64.deb"
+}

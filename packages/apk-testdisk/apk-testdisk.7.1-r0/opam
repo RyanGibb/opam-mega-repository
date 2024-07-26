@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add testdisk-7.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del testdisk"]
+]
+depends: [
+  "apk-e2fsprogs-libs" {= "1.46.2-r1"}
+  "apk-libjpeg-turbo" {= "2.1.0-r0"}
+  "apk-libuuid" {= "2.37.4-r0"}
+  "apk-musl" {= "1.2.2-r5"}
+  "apk-ncurses-libs" {= "6.2_p20210612-r1"}
+  "apk-ntfs-3g-libs" {= "2017.3.23-r3"}
+  "apk-zlib" {= "1.2.12-r3"}
+]
+extra-source "testdisk-7.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/testdisk-7.1-r0.apk"
+}

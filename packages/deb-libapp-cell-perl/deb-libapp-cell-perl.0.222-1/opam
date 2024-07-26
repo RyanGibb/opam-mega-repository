@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libapp-cell-perl_0.222-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libapp-cell-perl"]
+]
+depends: [
+  "deb-libfile-homedir-perl"
+  "deb-libfile-next-perl"
+  "deb-libfile-sharedir-perl"
+  "deb-liblog-any-perl"
+  "deb-libparams-validate-perl"
+  "deb-libtimedate-perl"
+  "deb-libtry-tiny-perl"
+  "deb-perl"
+]
+extra-source "libapp-cell-perl_0.222-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/liba/libapp-cell-perl/libapp-cell-perl_0.222-1_all.deb"
+}

@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i synaptic_0.90.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r synaptic"]
+]
+depends: [
+  "deb-hicolor-icon-theme"
+  "deb-libapt-pkg6-0" {>= "1.9.0"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libept1-6-0"
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.14.0"}
+  "deb-libgtk-3-0" {>= "3.11.7"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libvte-2-91-0"
+  "deb-libxapian30" {>= "1.4.14~"}
+  "deb-policykit-1"
+]
+conflicts: [
+  "deb-menu" {< "2.1.11"}
+]
+extra-source "synaptic_0.90.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/synaptic/synaptic_0.90.2_amd64.deb"
+}

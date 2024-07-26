@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkpimgapi-dev_20.08.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkpimgapi-dev"]
+]
+depends: [
+  "deb-libkf5calendarcore-dev" {>= "5-5.71.0~"}
+  "deb-libkf5contacts-dev" {>= "5-5.71.0~"}
+  "deb-libkpimgapiblogger5abi1" {= "20.08.3-1"}
+  "deb-libkpimgapicalendar5" {= "20.08.3-1"}
+  "deb-libkpimgapicontacts5" {= "20.08.3-1"}
+  "deb-libkpimgapicore5abi1" {= "20.08.3-1"}
+  "deb-libkpimgapidrive5" {= "20.08.3-1"}
+  "deb-libkpimgapilatitude5" {= "20.08.3-1"}
+  "deb-libkpimgapimaps5" {= "20.08.3-1"}
+  "deb-libkpimgapitasks5" {= "20.08.3-1"}
+  "deb-qtbase5-dev" {>= "5.13.0~"}
+]
+extra-source "libkpimgapi-dev_20.08.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libk/libkgapi/libkpimgapi-dev_20.08.3-1_amd64.deb"
+}

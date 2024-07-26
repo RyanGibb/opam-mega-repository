@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i erlang-folsom_0.8.2+dfsg-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r erlang-folsom"]
+]
+depends: [
+  "deb-erlang-bear" {>= "0.1.3"}
+  "deb-erlang-meck"
+  ("deb-erlang-base" {>= "1-22.0.7+dfsg"} | "deb- erlang-base-hipe" {>= "1-22.0.7+dfsg"})
+]
+extra-source "erlang-folsom_0.8.2+dfsg-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/erlang-folsom/erlang-folsom_0.8.2+dfsg-2+b1_amd64.deb"
+}

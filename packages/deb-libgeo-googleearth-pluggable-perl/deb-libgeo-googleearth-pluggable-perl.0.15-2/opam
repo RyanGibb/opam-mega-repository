@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgeo-googleearth-pluggable-perl_0.15-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgeo-googleearth-pluggable-perl"]
+]
+depends: [
+  "deb-libarchive-zip-perl"
+  "deb-libio-stringy-perl"
+  "deb-libmethod-autoload-perl"
+  "deb-libmodule-pluggable-perl"
+  "deb-libpackage-new-perl"
+  "deb-libxml-libxml-lazybuilder-perl"
+  "deb-perl"
+]
+extra-source "libgeo-googleearth-pluggable-perl_0.15-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libg/libgeo-googleearth-pluggable-perl/libgeo-googleearth-pluggable-perl_0.15-2_all.deb"
+}

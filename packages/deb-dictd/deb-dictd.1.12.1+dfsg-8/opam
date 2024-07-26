@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dictd_1.12.1+dfsg-8_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dictd"]
+]
+depends: [
+  "deb-adduser"
+  "deb-dictzip" {>= "1.12.1+dfsg"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libmaa4" {>= "1.2.0"}
+  "deb-lsb-base" {>= "3.2-13"}
+  "deb-netbase"
+  "deb-ucf" {>= "3"}
+  "deb-update-inetd"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+conflicts: [
+  "deb-dict-server"
+]
+extra-source "dictd_1.12.1+dfsg-8_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dictd/dictd_1.12.1+dfsg-8_amd64.deb"
+}

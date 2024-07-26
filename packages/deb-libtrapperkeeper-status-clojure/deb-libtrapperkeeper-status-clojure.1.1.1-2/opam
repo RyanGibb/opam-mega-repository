@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libtrapperkeeper-status-clojure_1.1.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libtrapperkeeper-status-clojure"]
+]
+depends: [
+  "deb-libcheshire-clojure"
+  "deb-libclojure-java"
+  "deb-libcomidi-clojure"
+  "deb-libjava-jmx-clojure"
+  "deb-libkitchensink-clojure"
+  "deb-libprismatic-schema-clojure"
+  "deb-libpuppetlabs-i18n-clojure"
+  "deb-libpuppetlabs-ring-middleware-clojure"
+  "deb-libring-defaults-clojure"
+  "deb-libslingshot-clojure"
+  "deb-libtools-logging-clojure"
+  "deb-libtrapperkeeper-authorization-clojure"
+  "deb-libtrapperkeeper-clojure"
+  "deb-libtrapperkeeper-scheduler-clojure"
+  "deb-libversioneer-clojure"
+]
+extra-source "libtrapperkeeper-status-clojure_1.1.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/trapperkeeper-status-clojure/libtrapperkeeper-status-clojure_1.1.1-2_all.deb"
+}

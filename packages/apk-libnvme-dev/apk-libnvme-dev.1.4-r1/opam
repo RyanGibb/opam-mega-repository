@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libnvme-dev-1.4-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libnvme-dev"]
+]
+depends: [
+  "apk-json-c-dev" {= "0.16-r3"}
+  "apk-libnvme" {= "1.4-r1"}
+  "apk-libnvmemi" {= "1.4-r1"}
+  "apk-linux-headers" {= "6.3-r0"}
+  "apk-openssl-dev" {= "3.1.6-r0"}
+  "apk-pkgconf" {= "1.9.5-r0"}
+]
+extra-source "libnvme-dev-1.4-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/libnvme-dev-1.4-r1.apk"
+}

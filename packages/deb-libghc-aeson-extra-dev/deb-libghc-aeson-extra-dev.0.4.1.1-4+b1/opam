@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-aeson-extra-dev_0.4.1.1-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-aeson-extra-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-aeson-compat-dev"
+  "deb-libghc-aeson-dev"
+  "deb-libghc-attoparsec-dev"
+  "deb-libghc-attoparsec-iso8601-dev"
+  "deb-libghc-base-compat-batteries-dev"
+  "deb-libghc-exceptions-dev"
+  "deb-libghc-hashable-dev"
+  "deb-libghc-recursion-schemes-dev"
+  "deb-libghc-scientific-dev"
+  "deb-libghc-these-dev"
+  "deb-libghc-unordered-containers-dev"
+  "deb-libghc-vector-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-aeson-extra-dev_0.4.1.1-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-aeson-extra/libghc-aeson-extra-dev_0.4.1.1-4+b1_amd64.deb"
+}

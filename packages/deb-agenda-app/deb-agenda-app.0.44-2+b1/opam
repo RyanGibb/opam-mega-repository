@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i agenda.app_0.44-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r agenda.app"]
+]
+depends: [
+  "deb-gnustep-back0-27" {>= "0.27.0"}
+  "deb-gnustep-base-runtime" {>= "1.26.0"}
+  "deb-gnustep-gui-runtime" {>= "0.27.0"}
+  "deb-libaddresses0"
+  "deb-libc6" {>= "2.4"}
+  "deb-libdbuskit0"
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgnustep-base1-26" {>= "1.26.0"}
+  "deb-libgnustep-gui0-27" {>= "0.27.0"}
+  "deb-libical3" {>= "3.0.0"}
+  "deb-libobjc4" {>= "4.6"}
+  "deb-libuuid1" {>= "2.16"}
+]
+extra-source "agenda.app_0.44-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/agenda.app/agenda.app_0.44-2+b1_amd64.deb"
+}

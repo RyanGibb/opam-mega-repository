@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i buildbot_3.7.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r buildbot"]
+]
+depends: [
+  "deb-lsb-base"
+  "deb-passwd"
+  "deb-python3-alembic" {>= "1.6.0"}
+  "deb-python3-any"
+  "deb-python3-autobahn" {>= "0.16.0"}
+  "deb-python3-dateutil" {>= "1.5"}
+  "deb-python3-idna"
+  "deb-python3-jinja2" {>= "2.1"}
+  "deb-python3-jwt"
+  "deb-python3-msgpack"
+  "deb-python3-openssl"
+  "deb-python3-pkg-resources" {>= "8.0"}
+  "deb-python3-service-identity"
+  "deb-python3-sqlalchemy" {< "1.5"}
+  "deb-python3-sqlalchemy" {>= "1.3.0"}
+  "deb-python3-twisted" {>= "17.9.0"}
+  "deb-python3-txaio" {>= "2.2.2"}
+  "deb-python3-txrequests"
+  "deb-python3-unidiff" {>= "0.6.0"}
+  "deb-python3-yaml"
+  "deb-python3-zope-interface" {>= "4.1.1"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "buildbot_3.7.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/buildbot/buildbot_3.7.0-2_all.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add jack-example-clients-1.9.16-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del jack-example-clients"]
+]
+depends: [
+  "apk-alsa-lib" {= "1.2.4-r2"}
+  "apk-jack" {= "1.9.16-r0"}
+  "apk-libgcc" {= "10.2.1_pre1-r3"}
+  "apk-libsamplerate" {= "0.1.9-r1"}
+  "apk-libsndfile" {= "1.0.29-r1"}
+  "apk-libstdc++" {= "10.2.1_pre1-r3"}
+  "apk-musl" {= "1.2.2-r2"}
+  "apk-opus" {= "1.3.1-r1"}
+  "apk-readline" {= "8.1.0-r0"}
+]
+extra-source "jack-example-clients-1.9.16-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/jack-example-clients-1.9.16-r0.apk"
+}

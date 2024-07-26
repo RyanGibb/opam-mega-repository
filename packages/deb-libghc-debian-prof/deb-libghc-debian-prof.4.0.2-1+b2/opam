@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-debian-prof_4.0.2-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-debian-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-bz2-prof"
+  "deb-libghc-debian-dev" {= "4.0.2-1+b2"}
+  "deb-libghc-either-prof"
+  "deb-libghc-exceptions-prof"
+  "deb-libghc-hostname-prof"
+  "deb-libghc-hunit-prof"
+  "deb-libghc-lens-prof"
+  "deb-libghc-listlike-prof"
+  "deb-libghc-network-uri-prof"
+  "deb-libghc-old-locale-prof"
+  "deb-libghc-process-extras-prof"
+  "deb-libghc-puremd5-prof"
+  "deb-libghc-quickcheck2-prof"
+  "deb-libghc-regex-compat-prof"
+  "deb-libghc-regex-tdfa-prof"
+  "deb-libghc-sha-prof"
+  "deb-libghc-syb-prof"
+  "deb-libghc-temporary-prof"
+  "deb-libghc-th-lift-prof"
+  "deb-libghc-th-orphans-prof"
+  "deb-libghc-utf8-string-prof"
+  "deb-libghc-zlib-prof"
+]
+extra-source "libghc-debian-prof_4.0.2-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-debian/libghc-debian-prof_4.0.2-1+b2_amd64.deb"
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i systraq_20201231-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r systraq"]
+]
+depends: [
+  "deb-adduser"
+  "deb-debsums"
+  "deb-filetraq" {>= "0.2-10"}
+  "deb-make"
+  "deb-net-tools"
+  "deb-procps"
+  ("deb-bsd-mailx" | "deb- heirloom-mailx")
+  ("deb-default-mta" | "deb- mail-transport-agent")
+]
+extra-source "systraq_20201231-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/systraq/systraq_20201231-1_all.deb"
+}

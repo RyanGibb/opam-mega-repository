@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-numpy-dbg_1:1.16.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-numpy-dbg"]
+]
+depends: [
+  "deb-libc6" {>= "2.27"}
+  "deb-python3-dbg"
+  "deb-python3-numpy" {= "1-1.16.2-1"}
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "python3-numpy-dbg_1:1.16.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-numpy/python3-numpy-dbg_1.16.2-1_amd64.deb"
+}

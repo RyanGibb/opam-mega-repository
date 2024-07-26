@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i turing_0.11~beta-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r turing"]
+]
+depends: [
+  "deb-python3"
+  "deb-python3-altgraph"
+  "deb-python3-any" {>= "3.5~"}
+  "deb-python3-autopep8"
+  "deb-python3-cycler"
+  "deb-python3-dateutil"
+  "deb-python3-docutils"
+  "deb-python3-future"
+  "deb-python3-jedi"
+  "deb-python3-kiwisolver"
+  "deb-python3-macholib"
+  "deb-python3-matplotlib"
+  "deb-python3-numpy"
+  "deb-python3-parso"
+  "deb-python3-pefile"
+  "deb-python3-pep8"
+  "deb-python3-pyflakes"
+  "deb-python3-pygments"
+  "deb-python3-pyparsing"
+  "deb-python3-pyqt5"
+  "deb-python3-tz"
+]
+extra-source "turing_0.11~beta-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/turing/turing_0.11~beta-3_all.deb"
+}

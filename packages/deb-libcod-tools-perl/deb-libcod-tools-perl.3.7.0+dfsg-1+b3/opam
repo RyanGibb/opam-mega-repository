@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcod-tools-perl_3.7.0+dfsg-1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcod-tools-perl"]
+]
+depends: [
+  "deb-libc6" {>= "2.22"}
+  "deb-libclone-perl"
+  "deb-libdata-compare-perl"
+  "deb-libdate-calc-perl"
+  "deb-libdatetime-format-rfc3339-perl"
+  "deb-libdbi-perl"
+  "deb-libdigest-sha-perl"
+  "deb-libhtml-parser-perl"
+  "deb-libjson-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-libparse-yapp-perl"
+  "deb-libsymspg1" {>= "2.0.2-1+b2"}
+  "deb-libtext-unidecode-perl"
+  "deb-perl" {>= "5.36.0-7"}
+  "deb-perl-base"
+]
+extra-source "libcod-tools-perl_3.7.0+dfsg-1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cod-tools/libcod-tools-perl_3.7.0+dfsg-1+b3_amd64.deb"
+}

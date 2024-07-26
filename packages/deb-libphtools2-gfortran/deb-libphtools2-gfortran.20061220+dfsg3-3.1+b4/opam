@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libphtools2-gfortran_20061220+dfsg3-3.1+b4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libphtools2-gfortran"]
+]
+depends: [
+  "deb-libc6" {>= "2.27"}
+  "deb-libgcc1" {>= "1-4.0"}
+  "deb-libgfortran5" {>= "8"}
+  "deb-libkernlib1-gfortran"
+  "deb-libmathlib2-gfortran"
+  "deb-libpacklib1-gfortran"
+  "deb-libquadmath0" {>= "4.6"}
+  "deb-montecarlo-base"
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "libphtools2-gfortran_20061220+dfsg3-3.1+b4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mclibs/libphtools2-gfortran_20061220+dfsg3-3.1+b4_amd64.deb"
+}

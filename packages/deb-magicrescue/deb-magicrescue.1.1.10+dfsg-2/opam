@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i magicrescue_1.1.10+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r magicrescue"]
+]
+depends: [
+  "deb-dcraw"
+  "deb-flac"
+  "deb-libc6" {>= "2.34"}
+  "deb-libgdbm-compat4" {>= "1.16"}
+  "deb-libjpeg-turbo-progs"
+  "deb-mpg123"
+  "deb-sqlite3"
+  "deb-unzip"
+  "deb-zip"
+]
+extra-source "magicrescue_1.1.10+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/magicrescue/magicrescue_1.1.10+dfsg-2_amd64.deb"
+}

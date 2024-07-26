@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xwallpaper_0.6.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xwallpaper"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libpixman-1-0" {>= "0.30.0"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libseccomp2" {>= "0.0.0~20120605"}
+  "deb-libxcb-image0" {>= "0.2.1"}
+  "deb-libxcb-randr0" {>= "1.1"}
+  "deb-libxcb-util1" {>= "0.4.0"}
+  "deb-libxcb1"
+  "deb-libxpm4"
+]
+extra-source "xwallpaper_0.6.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xwallpaper/xwallpaper_0.6.5-1_amd64.deb"
+}

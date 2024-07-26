@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i litecoin-qt_0.21.2.1-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r litecoin-qt"]
+]
+depends: [
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0"}
+  "deb-libboost-thread1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libdb5-3++"
+  "deb-libevent-2-1-7" {>= "2.1.8-stable"}
+  "deb-libevent-pthreads-2-1-7" {>= "2.1.8-stable"}
+  "deb-libfmt9" {>= "9.0.0+ds1"}
+  "deb-libgcc-s1" {>= "3.4"}
+  "deb-libleveldb1d" {>= "1.23"}
+  "deb-libminiupnpc17" {>= "1.9.20140610"}
+  "deb-libqrencode4" {>= "3.2.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.0.2"}
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.14.1"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libstdc++6" {>= "12"}
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "litecoin-qt_0.21.2.1-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/litecoin/litecoin-qt_0.21.2.1-1+b1_amd64.deb"
+}

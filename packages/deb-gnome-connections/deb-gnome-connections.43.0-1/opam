@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnome-connections_43.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnome-connections"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.6.0"}
+  "deb-libfreerdp2-2" {>= "2.0.0"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.51.2"}
+  "deb-libgtk-3-0" {>= "3.22.6"}
+  "deb-libgtk-vnc-2-0-0" {>= "0.5.0"}
+  "deb-libgvnc-1-0-0" {>= "0.5.0"}
+  "deb-libhandy-1-0" {>= "1.6.0"}
+  "deb-libsecret-1-0" {>= "0.7"}
+  "deb-libwinpr2-2" {>= "2.0.0"}
+  "deb-libxml2" {>= "2.7.8"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "gnome-connections_43.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnome-connections/gnome-connections_43.0-1_amd64.deb"
+}

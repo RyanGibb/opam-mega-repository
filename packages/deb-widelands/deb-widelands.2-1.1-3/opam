@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i widelands_2:1.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r widelands"]
+]
+depends: [
+  "deb-libc6" {>= "2.35"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglew2-2" {>= "2.2.0-4+b1"}
+  "deb-libglx0"
+  "deb-libicu72" {>= "72.1~rc-1~"}
+  "deb-libminizip1" {>= "1.1"}
+  "deb-libopengl0"
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libsdl2-2-0-0" {>= "2.0.14"}
+  "deb-libsdl2-image-2-0-0" {>= "2.0.5"}
+  "deb-libsdl2-mixer-2-0-0" {>= "2.6.0"}
+  "deb-libsdl2-ttf-2-0-0" {>= "2.0.15"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-widelands-data" {= "2-1.1-3"}
+]
+extra-source "widelands_2:1.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/w/widelands/widelands_1.1-3_amd64.deb"
+}

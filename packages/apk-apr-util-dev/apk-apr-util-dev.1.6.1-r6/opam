@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add apr-util-dev-1.6.1-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del apr-util-dev"]
+]
+depends: [
+  "apk-apr-dev" {= "1.7.0-r0"}
+  "apk-apr-util" {= "1.6.1-r6"}
+  "apk-db-dev" {= "5.3.28-r1"}
+  "apk-expat-dev" {= "2.2.10-r4"}
+  "apk-mariadb-dev" {= "10.4.25-r0"}
+  "apk-openldap-dev" {= "2.4.58-r0"}
+  "apk-openssl-dev" {= "1.1.1o-r0"}
+  "apk-pkgconf" {= "1.7.2-r0"}
+  "apk-postgresql-dev" {= "12.10-r0"}
+  "apk-sqlite-dev" {= "3.32.1-r1"}
+]
+extra-source "apr-util-dev-1.6.1-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/apr-util-dev-1.6.1-r6.apk"
+}

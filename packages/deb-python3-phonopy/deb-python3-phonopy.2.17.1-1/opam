@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-phonopy_2.17.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-phonopy"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-any"
+  "deb-python3-matplotlib"
+  "deb-python3-numpy"
+  "deb-python3-scipy"
+  "deb-python3-spglib"
+  "deb-python3-yaml"
+]
+extra-source "python3-phonopy_2.17.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/phonopy/python3-phonopy_2.17.1-1_amd64.deb"
+}

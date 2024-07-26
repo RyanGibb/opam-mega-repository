@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libnvidia-egl-wayland1_1:1.1.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libnvidia-egl-wayland1"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libwayland-client0" {>= "1.11.0"}
+  "deb-libwayland-server0" {>= "1.2.0"}
+]
+conflicts: [
+  "deb-libnvidia-gl-390"
+  "deb-libnvidia-gl-410" {< "410.93"}
+  "deb-libnvidia-legacy-390xx-egl-wayland1"
+  "deb-nvidia-egl-wayland-common"
+]
+extra-source "libnvidia-egl-wayland1_1:1.1.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/egl-wayland/libnvidia-egl-wayland1_1.1.5-1_amd64.deb"
+}

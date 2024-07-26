@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libocsigenserver-ocaml_5.0.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libocsigenserver-ocaml"]
+]
+depends: [
+  "deb-libangstrom-ocaml"
+  "deb-libcohttp-lwt-ocaml"
+  "deb-libcohttp-lwt-unix-ocaml"
+  "deb-libcohttp-ocaml"
+  "deb-libconduit-lwt-ocaml"
+  "deb-libconduit-ocaml"
+  "deb-libcryptokit-ocaml"
+  "deb-libdomain-name-ocaml"
+  "deb-libfindlib-ocaml"
+  "deb-libhmap-ocaml"
+  "deb-libipaddr-ocaml"
+  "deb-liblwt-log-ocaml"
+  "deb-liblwt-ocaml"
+  "deb-libpcre-ocaml"
+  "deb-libsexplib0-ocaml"
+  "deb-libssl-ocaml"
+  "deb-liburi-ocaml"
+  "deb-libxml-light-ocaml"
+  "deb-libzip-ocaml"
+  "deb-ocaml-base"
+]
+extra-source "libocsigenserver-ocaml_5.0.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/ocsigenserver/libocsigenserver-ocaml_5.0.1-2_amd64.deb"
+}

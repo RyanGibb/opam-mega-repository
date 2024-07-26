@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libweb-mrest-perl_0.288-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libweb-mrest-perl"]
+]
+depends: [
+  "deb-libapp-cell-perl"
+  "deb-libfile-sharedir-perl"
+  "deb-libhttp-message-perl"
+  "deb-libjson-perl"
+  "deb-liblwp-protocol-https-perl"
+  "deb-libmodule-runtime-perl"
+  "deb-libparams-validate-perl"
+  "deb-libpath-router-perl"
+  "deb-libplack-middleware-logerrors-perl"
+  "deb-libplack-middleware-session-perl"
+  "deb-libplack-perl"
+  "deb-libtry-tiny-perl"
+  "deb-liburi-perl"
+  "deb-libweb-machine-perl"
+  "deb-libweb-mrest-cli-perl"
+  "deb-libwww-perl"
+  "deb-perl"
+]
+extra-source "libweb-mrest-perl_0.288-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libw/libweb-mrest-perl/libweb-mrest-perl_0.288-1_all.deb"
+}

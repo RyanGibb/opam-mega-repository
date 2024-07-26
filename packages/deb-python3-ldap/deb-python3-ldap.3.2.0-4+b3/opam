@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-ldap_3.2.0-4+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-ldap"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libldap-2-4-2" {>= "2.4.11"}
+  "deb-python3" {< "3.10"}
+  "deb-python3" {>= "3.9~"}
+  "deb-python3-any"
+  "deb-python3-pyasn1" {>= "0.3.7"}
+  "deb-python3-pyasn1-modules"
+]
+conflicts: [
+  "deb-python3-pyldap" {< "3"}
+]
+extra-source "python3-ldap_3.2.0-4+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-ldap/python3-ldap_3.2.0-4+b3_amd64.deb"
+}

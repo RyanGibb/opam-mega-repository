@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tiemu_3.04~git20220826.cda2db4+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tiemu"]
+]
+depends: [
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglade2-0" {>= "1-2.6.4-2~"}
+  "deb-libglib2-0-0" {>= "2.35.9"}
+  "deb-libgtk2-0-0" {>= "2.24.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libsdl1-2-compat-shim"
+  "deb-libticables2-8" {>= "1.3.6~"}
+  "deb-libticalcs2-13" {>= "1.1.10~"}
+  "deb-libticonv9" {>= "1.1.6~"}
+  "deb-libtifiles2-11" {>= "1.1.8~"}
+  "deb-sensible-utils"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+conflicts: [
+  "deb-gtktiemu"
+  "deb-tiemu-gdb"
+]
+extra-source "tiemu_3.04~git20220826.cda2db4+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tiemu/tiemu_3.04~git20220826.cda2db4+dfsg-2_amd64.deb"
+}

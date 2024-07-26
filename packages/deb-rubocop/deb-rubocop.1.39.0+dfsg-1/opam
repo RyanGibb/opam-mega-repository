@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i rubocop_1.39.0+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r rubocop"]
+]
+depends: [
+  "deb-libruby3-1"
+  "deb-ruby"
+  "deb-ruby-parallel" {>= "1.10"}
+  "deb-ruby-progressbar" {>= "1.7"}
+  "deb-ruby-rainbow" {< "4.0"}
+  "deb-ruby-rainbow" {>= "2.2.2"}
+  "deb-ruby-regexp-parser" {< "3.0"}
+  "deb-ruby-regexp-parser" {>= "1.8"}
+  "deb-ruby-rubocop-ast" {< "2.0"}
+  "deb-ruby-rubocop-ast" {>= "1.23.0"}
+  "deb-ruby-unicode-display-width" {< "3.0"}
+  "deb-ruby-unicode-display-width" {>= "1.4.0"}
+  "deb-ruby-whitequark-parser" {>= "3.1.2.1"}
+]
+extra-source "rubocop_1.39.0+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rubocop/rubocop_1.39.0+dfsg-1_all.deb"
+}

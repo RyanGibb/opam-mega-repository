@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mesa-dri-gallium-20.3.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mesa-dri-gallium"]
+]
+depends: [
+  "apk-expat" {= "2.2.10-r8"}
+  "apk-libdrm" {= "2.4.104-r0"}
+  "apk-libelf" {= "0.182-r0"}
+  "apk-libgcc" {= "10.2.1_pre1-r3"}
+  "apk-libstdc++" {= "10.2.1_pre1-r3"}
+  "apk-llvm10-libs" {= "10.0.1-r1"}
+  "apk-mesa" {= "20.3.3-r0"}
+  "apk-mesa-glapi" {= "20.3.3-r0"}
+  "apk-musl" {= "1.2.2-r2"}
+  "apk-zlib" {= "1.2.12-r3"}
+  "apk-zstd-libs" {= "1.4.9-r0"}
+]
+extra-source "mesa-dri-gallium-20.3.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/mesa-dri-gallium-20.3.3-r0.apk"
+}

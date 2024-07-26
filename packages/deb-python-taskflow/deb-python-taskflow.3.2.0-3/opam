@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-taskflow_3.2.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-taskflow"]
+]
+depends: [
+  "deb-alembic" {>= "0.8.10"}
+  "deb-python-alembic" {>= "0.8.10"}
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7~"}
+  "deb-python-automaton" {>= "1.9.0"}
+  "deb-python-cachetools" {>= "2.0.0"}
+  "deb-python-concurrent-futures"
+  "deb-python-contextlib2" {>= "0.4.0"}
+  "deb-python-debtcollector"
+  "deb-python-enum34" {>= "1.0.4"}
+  "deb-python-eventlet"
+  "deb-python-fasteners"
+  "deb-python-futurist" {>= "1.2.0"}
+  "deb-python-jsonschema"
+  "deb-python-kazoo"
+  "deb-python-kombu" {>= "4.0.0"}
+  "deb-python-networkx"
+  "deb-python-oslo-serialization" {>= "2.18.0"}
+  "deb-python-oslo-utils" {>= "3.33.0"}
+  "deb-python-pbr" {>= "2.0.0"}
+  "deb-python-psycopg2" {>= "2.6.2"}
+  "deb-python-pymysql" {>= "0.7.6"}
+  "deb-python-six" {>= "1.10.0"}
+  "deb-python-sqlalchemy"
+  "deb-python-stevedore" {>= "1.20.0"}
+  "deb-python-tenacity" {>= "3.2.1"}
+]
+extra-source "python-taskflow_3.2.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-taskflow/python-taskflow_3.2.0-3_all.deb"
+}

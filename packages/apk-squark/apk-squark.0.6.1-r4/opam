@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add squark-0.6.1-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del squark"]
+]
+depends: [
+  "apk-haserl" {= "0.9.36-r2"}
+  "apk-libcmph" {= "2.0.2-r2"}
+  "apk-lua5-1-libs" {= "5.1.5-r11"}
+  "apk-musl" {= "1.2.3-r5"}
+  "apk-net-snmp-libs" {= "5.9.3-r2"}
+  ("apk-yash-binsh" {= "2.53-r2"} | "apk-busybox-binsh" {= "1.35.0-r31"} | "apk-dash-binsh" {= "0.5.11.5-r2"})
+]
+extra-source "squark-0.6.1-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/squark-0.6.1-r4.apk"
+}

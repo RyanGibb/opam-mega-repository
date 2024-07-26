@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i konclude_0.7.0+1137~dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r konclude"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libjemalloc2" {>= "5.0.0"}
+  "deb-libqt5concurrent5" {>= "5.6.0~rc"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libqt5xml5" {>= "5.1.0"}
+  "deb-libraptor2-0" {>= "2.0.14"}
+  "deb-librasqal3" {>= "0.9.31"}
+  "deb-librdf0" {>= "1.0.17"}
+  "deb-libstdc++6" {>= "5.2"}
+  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus" | "deb- dbus-x11")
+]
+extra-source "konclude_0.7.0+1137~dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/konclude/konclude_0.7.0+1137~dfsg-1_amd64.deb"
+}

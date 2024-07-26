@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i apt-file_3.2.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r apt-file"]
+]
+depends: [
+  "deb-apt" {>= "1.3~exp1~"}
+  "deb-libapt-pkg-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-libregexp-assemble-perl"
+  "deb-perl-any"
+]
+extra-source "apt-file_3.2.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/apt-file/apt-file_3.2.2_all.deb"
+}

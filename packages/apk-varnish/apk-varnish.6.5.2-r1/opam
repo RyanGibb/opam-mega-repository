@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add varnish-6.5.2-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del varnish"]
+]
+depends: [
+  "apk-busybox" {= "1.32.1-r9"}
+  "apk-gcc" {= "10.2.1_pre1-r3"}
+  "apk-libc-dev" {= "0.7.2-r3"}
+  "apk-libedit" {= "20191231.3.1-r1"}
+  "apk-libgcc" {= "10.2.1_pre1-r3"}
+  "apk-libunwind" {= "1.5.0-r1"}
+  "apk-musl" {= "1.2.2-r2"}
+  "apk-ncurses-libs" {= "6.2_p20210109-r1"}
+  "apk-pcre" {= "8.44-r0"}
+  "apk-varnish-libs" {= "6.5.2-r1"}
+]
+extra-source "varnish-6.5.2-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/varnish-6.5.2-r1.apk"
+}

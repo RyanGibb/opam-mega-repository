@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ebook-speaker_5.5.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ebook-speaker"]
+]
+depends: [
+  "deb-espeak"
+  "deb-libc6" {>= "2.14"}
+  "deb-libmagic1" {>= "5.12"}
+  "deb-libncursesw6" {>= "6"}
+  "deb-libpulse0" {>= "5.0"}
+  "deb-libsox-fmt-mp3"
+  "deb-libsox-fmt-pulse"
+  "deb-libsox3" {>= "14.4.2~"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-sox"
+  "deb-unar"
+  "deb-wget"
+]
+extra-source "ebook-speaker_5.5.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/ebook-speaker/ebook-speaker_5.5.2-1_amd64.deb"
+}

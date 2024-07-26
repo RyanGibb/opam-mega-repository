@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libwww-finger-perl_0.105-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libwww-finger-perl"]
+]
+depends: [
+  "deb-libcommon-sense-perl"
+  "deb-libhttp-link-parser-perl"
+  "deb-libhttp-lrdd-perl"
+  "deb-libjson-perl"
+  "deb-libmodule-pluggable-perl"
+  "deb-libnamespace-clean-perl"
+  "deb-librdf-query-client-perl"
+  "deb-librdf-query-perl"
+  "deb-librdf-trine-perl"
+  "deb-librole-commons-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-libxrd-parser-perl"
+  "deb-perl-any"
+]
+extra-source "libwww-finger-perl_0.105-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libw/libwww-finger-perl/libwww-finger-perl_0.105-2_all.deb"
+}

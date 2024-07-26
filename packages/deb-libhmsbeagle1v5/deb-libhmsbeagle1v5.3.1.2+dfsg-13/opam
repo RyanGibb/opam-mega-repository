@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libhmsbeagle1v5_3.1.2+dfsg-13_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libhmsbeagle1v5"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "12.2.0-10"}
+  ("deb-mesa-opencl-icd" | "deb- opencl-icd")
+]
+conflicts: [
+  "deb-libhmsbeagle1"
+]
+extra-source "libhmsbeagle1v5_3.1.2+dfsg-13_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libh/libhmsbeagle/libhmsbeagle1v5_3.1.2+dfsg-13_amd64.deb"
+}

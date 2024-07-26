@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-pyxnat_1.5-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-pyxnat"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-future"
+  "deb-python3-httplib2"
+  "deb-python3-lxml"
+  "deb-python3-pandas"
+  "deb-python3-requests"
+  "deb-python3-simplejson"
+  "deb-python3-six" {>= "1.15"}
+]
+extra-source "python3-pyxnat_1.5-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pyxnat/python3-pyxnat_1.5-2_all.deb"
+}

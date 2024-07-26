@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-sctk-adwaita-dev_0.4.3-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-sctk-adwaita-dev"]
+]
+depends: [
+  "deb-librust-crossfont-0-5+default-dev"
+  "deb-librust-crossfont-0-5+force-system-fontconfig-dev"
+  "deb-librust-log-0-4+default-dev"
+  "deb-librust-smithay-client-toolkit-0-16+default-dev"
+  "deb-librust-tiny-skia-0-8+default-dev"
+  "deb-librust-tiny-skia-0-8+simd-dev"
+  "deb-librust-tiny-skia-0-8+std-dev"
+]
+extra-source "librust-sctk-adwaita-dev_0.4.3-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-sctk-adwaita/librust-sctk-adwaita-dev_0.4.3-2_amd64.deb"
+}

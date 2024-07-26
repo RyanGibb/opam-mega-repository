@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-meow_3.7.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-meow"]
+]
+depends: [
+  "deb-node-camelcase-keys" {>= "2.0.0"}
+  "deb-node-decamelize" {>= "1.1.2"}
+  "deb-node-loud-rejection" {>= "1.0.0"}
+  "deb-node-map-obj" {>= "1.0.1"}
+  "deb-node-minimist" {>= "1.1.3"}
+  "deb-node-normalize-package-data" {>= "2.3.4"}
+  "deb-node-object-assign" {>= "4.0.1"}
+  "deb-node-read-pkg-up" {>= "1.0.1"}
+  "deb-node-redent" {>= "1.0.0"}
+  "deb-node-trim-newlines" {>= "1.0.0"}
+  "deb-nodejs"
+]
+extra-source "node-meow_3.7.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-meow/node-meow_3.7.0-1_all.deb"
+}

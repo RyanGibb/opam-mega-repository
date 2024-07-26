@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-mintpy_1.5.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-mintpy"]
+]
+depends: [
+  "deb-pre-commit"
+  "deb-python3-any"
+  "deb-python3-cartopy"
+  "deb-python3-cvxopt"
+  "deb-python3-dask"
+  "deb-python3-distributed"
+  "deb-python3-gdal"
+  "deb-python3-h5py"
+  "deb-python3-joblib"
+  "deb-python3-lxml"
+  "deb-python3-matplotlib"
+  "deb-python3-numpy"
+  "deb-python3-pkg-resources"
+  "deb-python3-pyaps3"
+  "deb-python3-pykml"
+  "deb-python3-pyproj"
+  "deb-python3-pyresample"
+  "deb-python3-pysolid"
+  "deb-python3-rich"
+  "deb-python3-scipy"
+  "deb-python3-skimage"
+]
+extra-source "python3-mintpy_1.5.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mintpy/python3-mintpy_1.5.1-1_all.deb"
+}

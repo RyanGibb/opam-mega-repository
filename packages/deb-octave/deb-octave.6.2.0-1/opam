@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i octave_6.2.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r octave"]
+]
+depends: [
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.29"}
+  "deb-libfftw3-double3" {>= "3.3.5"}
+  "deb-libfftw3-single3" {>= "3.3.5"}
+  "deb-libfltk-gl1-3" {>= "1.3.0"}
+  "deb-libfltk1-3" {>= "1.3.3"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgl1"
+  "deb-libglpk40" {>= "4.59"}
+  "deb-liboctave8" {= "6.2.0-1"}
+  "deb-libportaudio2" {>= "19+svn20101113"}
+  "deb-libqhull8-0" {>= "2020.1"}
+  "deb-libqscintilla2-qt5-15" {>= "2.11.2"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5help5" {>= "5.15.1"}
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libqt5printsupport5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.15.1"}
+  "deb-libqt5xml5" {>= "5.0.2"}
+  "deb-libsndfile1" {>= "1.0.20"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libsundials-ida4" {>= "4.1.0"}
+  "deb-libsundials-sunlinsol2" {>= "4.1.0"}
+  "deb-libx11-6"
+  "deb-octave-common" {= "6.2.0-1"}
+  "deb-texinfo"
+  "deb-zlib1g" {>= "1-1.2.2"}
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "octave_6.2.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/octave/octave_6.2.0-1_amd64.deb"
+}

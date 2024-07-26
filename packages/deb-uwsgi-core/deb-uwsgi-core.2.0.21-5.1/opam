@@ -1,0 +1,46 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i uwsgi-core_2.0.21-5.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r uwsgi-core"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libcap2" {>= "1-2.10"}
+  "deb-libcrypt1" {>= "1-4.1.0"}
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-libpcre3"
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libsystemd0"
+  "deb-libuuid1" {>= "2.16"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libyajl2" {>= "2.0.4"}
+  "deb-libyaml-0-2"
+  "deb-libzmq5" {>= "3.2.3+dfsg"}
+  "deb-zlib1g" {>= "1-1.2.0"}
+]
+conflicts: [
+  "deb-uwsgi-plugin-cache"
+  "deb-uwsgi-plugin-carbon"
+  "deb-uwsgi-plugin-cgi"
+  "deb-uwsgi-plugin-echo"
+  "deb-uwsgi-plugin-emperor-zeromq"
+  "deb-uwsgi-plugin-fastrouter"
+  "deb-uwsgi-plugin-http"
+  "deb-uwsgi-plugin-logsocket"
+  "deb-uwsgi-plugin-nagios"
+  "deb-uwsgi-plugin-ping"
+  "deb-uwsgi-plugin-router-static"
+  "deb-uwsgi-plugin-rpc"
+  "deb-uwsgi-plugin-rrdtool"
+  "deb-uwsgi-plugin-rsyslog"
+  "deb-uwsgi-plugin-signal"
+  "deb-uwsgi-plugin-symcall"
+  "deb-uwsgi-plugin-syslog"
+  "deb-uwsgi-plugin-ugreen"
+  "deb-wsgi-plugin-admin"
+]
+extra-source "uwsgi-core_2.0.21-5.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/u/uwsgi/uwsgi-core_2.0.21-5.1_amd64.deb"
+}

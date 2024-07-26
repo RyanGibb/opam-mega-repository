@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcatalystx-simplelogin-perl_0.20-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcatalystx-simplelogin-perl"]
+]
+depends: [
+  "deb-libcatalyst-action-renderview-perl"
+  "deb-libcatalyst-action-rest-perl"
+  "deb-libcatalyst-actionrole-acl-perl"
+  "deb-libcatalyst-perl"
+  "deb-libcatalyst-plugin-authentication-perl"
+  "deb-libcatalyst-plugin-session-perl"
+  "deb-libcatalyst-plugin-session-state-cookie-perl"
+  "deb-libcatalyst-view-tt-perl"
+  "deb-libcatalystx-component-traits-perl"
+  "deb-libcatalystx-injectcomponent-perl"
+  "deb-libhtml-formhandler-perl"
+  "deb-libmoose-perl"
+  "deb-libmoosex-methodattributes-perl"
+  "deb-libmoosex-relatedclassroles-perl"
+  "deb-libmoosex-types-common-perl"
+  "deb-libmoosex-types-perl"
+  "deb-libnamespace-autoclean-perl"
+  "deb-libtry-tiny-perl" {>= "0.24"}
+  "deb-perl"
+]
+extra-source "libcatalystx-simplelogin-perl_0.20-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libcatalystx-simplelogin-perl/libcatalystx-simplelogin-perl_0.20-1_all.deb"
+}

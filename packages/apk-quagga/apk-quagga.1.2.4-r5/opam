@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add quagga-1.2.4-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del quagga"]
+]
+depends: [
+  "apk-busybox" {= "1.35.0-r18"}
+  "apk-c-ares" {= "1.19.1-r1"}
+  "apk-iproute2" {= "5.17.0-r0"}
+  "apk-musl" {= "1.2.3-r3"}
+  "apk-net-snmp-agent-libs" {= "5.9.3-r1"}
+  "apk-net-snmp-libs" {= "5.9.3-r1"}
+  "apk-readline" {= "8.1.2-r0"}
+]
+extra-source "quagga-1.2.4-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/quagga-1.2.4-r5.apk"
+}

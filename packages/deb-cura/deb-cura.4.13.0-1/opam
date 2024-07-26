@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cura_4.13.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cura"]
+]
+depends: [
+  "deb-cura-engine" {< "1-4.14"}
+  "deb-cura-engine" {>= "1-4.13"}
+  "deb-fdm-materials"
+  "deb-fonts-open-sans"
+  "deb-python3-any"
+  "deb-python3-certifi"
+  "deb-python3-charon"
+  "deb-python3-cryptography"
+  "deb-python3-keyring"
+  "deb-python3-pynest2d" {>= "4.13~"}
+  "deb-python3-pyqt5" {>= "5.10"}
+  "deb-python3-pyqt5-qtopengl" {>= "5.10"}
+  "deb-python3-requests"
+  "deb-python3-savitar" {>= "4.8"}
+  "deb-python3-sentry-sdk"
+  "deb-python3-serial"
+  "deb-python3-shapely"
+  "deb-python3-uranium" {>= "4.8"}
+  "deb-qml-module-qt-labs-folderlistmodel"
+  "deb-qml-module-qt-labs-settings"
+  "deb-qml-module-qtqml-models2"
+  "deb-qml-module-qtquick-controls"
+  "deb-qml-module-qtquick-controls2"
+  "deb-qml-module-qtquick-dialogs"
+  "deb-uranium-plugins" {>= "4.8"}
+]
+extra-source "cura_4.13.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cura/cura_4.13.0-1_all.deb"
+}

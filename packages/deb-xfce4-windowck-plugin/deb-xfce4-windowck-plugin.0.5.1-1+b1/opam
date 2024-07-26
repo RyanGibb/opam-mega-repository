@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xfce4-windowck-plugin_0.5.1-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xfce4-windowck-plugin"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.41.1"}
+  "deb-libgtk-3-0" {>= "3.22.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libwnck-3-0" {>= "3.22.0"}
+  "deb-libxfce4panel-2-0-4" {>= "4.14.0"}
+  "deb-libxfce4ui-2-0" {>= "4.15.2"}
+  "deb-libxfce4util7" {>= "4.14.0"}
+  "deb-libxfconf-0-3" {>= "4.14.0"}
+]
+extra-source "xfce4-windowck-plugin_0.5.1-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xfce4-windowck-plugin/xfce4-windowck-plugin_0.5.1-1+b1_amd64.deb"
+}

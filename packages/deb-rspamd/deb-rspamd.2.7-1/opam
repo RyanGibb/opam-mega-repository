@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i rspamd_2.7-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r rspamd"]
+]
+depends: [
+  "deb-adduser"
+  "deb-ca-certificates"
+  "deb-fonts-glyphicons-halflings"
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.4"}
+  "deb-libglib2-0-0" {>= "2.39.4"}
+  "deb-libhyperscan5" {>= "5.4.0"}
+  "deb-libicu67" {>= "67.1-1~"}
+  "deb-libjs-bootstrap4"
+  "deb-libjs-jquery"
+  "deb-libjs-requirejs"
+  "deb-libluajit-5-1-2" {>= "2.0.4+dfsg"}
+  "deb-libpcre2-8-0" {>= "10.22"}
+  "deb-libsodium23" {>= "0.6.1"}
+  "deb-libsqlite3-0" {>= "3.7.15"}
+  "deb-libssl1-1" {>= "1.1.1"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libunwind8"
+  "deb-lsb-base"
+  "deb-perl-any"
+  "deb-zlib1g" {>= "1-1.2.0"}
+]
+extra-source "rspamd_2.7-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rspamd/rspamd_2.7-1_amd64.deb"
+}

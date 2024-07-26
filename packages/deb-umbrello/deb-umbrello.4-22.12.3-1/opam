@@ -1,0 +1,43 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i umbrello_4:22.12.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r umbrello"]
+]
+depends: [
+  "deb-kinit"
+  "deb-kio"
+  "deb-libc6" {>= "2.34"}
+  "deb-libkf5archive5" {>= "4.96.0"}
+  "deb-libkf5completion5" {>= "4.97.0"}
+  "deb-libkf5configcore5" {>= "4.98.0"}
+  "deb-libkf5configgui5" {>= "4.97.0"}
+  "deb-libkf5configwidgets5" {>= "4.98.0"}
+  "deb-libkf5coreaddons5" {>= "4.97.0"}
+  "deb-libkf5crash5" {>= "5.15.0"}
+  "deb-libkf5i18n5" {>= "4.97.0"}
+  "deb-libkf5iconthemes5" {>= "4.96.0"}
+  "deb-libkf5jobwidgets5" {>= "4.96.0"}
+  "deb-libkf5kdelibs4support5" {>= "4.96.0"}
+  "deb-libkf5kiocore5" {>= "5.69.0"}
+  "deb-libkf5kiowidgets5" {>= "5.69.0"}
+  "deb-libkf5texteditor5" {>= "5.9.0"}
+  "deb-libkf5textwidgets5" {>= "4.96.0"}
+  "deb-libkf5widgetsaddons5" {>= "5.88.0"}
+  "deb-libkf5xmlgui5" {>= "4.98.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5printsupport5" {>= "5.2.0"}
+  "deb-libqt5svg5" {>= "5.6.0~beta"}
+  "deb-libqt5webkit5" {>= "5.6.0~rc"}
+  "deb-libqt5widgets5" {>= "5.14.1"}
+  "deb-libqt5xml5" {>= "5.2.0~"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libxslt1-1" {>= "1.1.25"}
+  "deb-umbrello-data" {>= "4-22.12.3-1"}
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "umbrello_4:22.12.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/u/umbrello/umbrello_22.12.3-1_amd64.deb"
+}

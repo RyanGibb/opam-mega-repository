@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i junior-config_1.30_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r junior-config"]
+]
+depends: [
+  "deb-adduser"
+  "deb-blends-common" {>= "0.6.15"}
+  "deb-menu"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "junior-config_1.30_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/debian-junior/junior-config_1.30_all.deb"
+}

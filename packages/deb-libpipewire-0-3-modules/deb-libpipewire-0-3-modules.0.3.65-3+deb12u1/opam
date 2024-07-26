@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpipewire-0.3-modules_0.3.65-3+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpipewire-0.3-modules"]
+]
+depends: [
+  "deb-libavahi-client3" {>= "0.6.16"}
+  "deb-libavahi-common3" {>= "0.6.16"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libdbus-1-3" {>= "1.9.14"}
+  "deb-libglib2-0-0" {>= "2.31.8"}
+  "deb-liblilv-0-0" {>= "0.14.2~dfsg0"}
+  "deb-libpipewire-0-3-0" {= "0.3.65-3+deb12u1"}
+  "deb-libpulse0" {>= "0.99.1"}
+  "deb-libsndfile1" {>= "1.0.20"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libsystemd0"
+]
+extra-source "libpipewire-0.3-modules_0.3.65-3+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pipewire/libpipewire-0.3-modules_0.3.65-3+deb12u1_amd64.deb"
+}

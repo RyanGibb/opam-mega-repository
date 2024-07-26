@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sieve-connect_0.90-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sieve-connect"]
+]
+depends: [
+  "deb-libauthen-sasl-perl" {>= "2.11-1"}
+  "deb-libio-socket-inet6-perl"
+  "deb-libio-socket-ssl-perl"
+  "deb-libmime-base64-perl"
+  "deb-libnet-dns-perl"
+  "deb-libterm-readkey-perl"
+  "deb-perl-any"
+  "deb-sensible-utils"
+]
+extra-source "sieve-connect_0.90-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sieve-connect/sieve-connect_0.90-1.1_all.deb"
+}

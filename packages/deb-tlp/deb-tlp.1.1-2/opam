@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tlp_1.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tlp"]
+]
+depends: [
+  "deb-hdparm"
+  "deb-lsb-base"
+  "deb-pciutils"
+  "deb-rfkill"
+  "deb-usbutils"
+  ("deb-iw" | "deb- wireless-tools")
+]
+conflicts: [
+  "deb-laptop-mode-tools"
+]
+extra-source "tlp_1.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tlp/tlp_1.1-2_all.deb"
+}

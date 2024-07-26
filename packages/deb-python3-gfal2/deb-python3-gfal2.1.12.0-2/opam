@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-gfal2_1.12.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-gfal2"]
+]
+depends: [
+  "deb-libboost-python1-74-0"
+  "deb-libboost-python1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.32"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgfal-transfer2" {>= "2.21.2"}
+  "deb-libgfal2-2" {>= "2.21.2"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+]
+extra-source "python3-gfal2_1.12.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gfal2-bindings/python3-gfal2_1.12.0-2_amd64.deb"
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i texlive-science_2022.20230122-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r texlive-science"]
+]
+depends: [
+  "deb-python3"
+  "deb-tex-common" {>= "6.13"}
+  "deb-texlive-base" {>= "2022.20220405"}
+  "deb-texlive-binaries" {>= "2022.20220321"}
+  "deb-texlive-fonts-recommended" {>= "2022.20220405"}
+  "deb-texlive-lang-greek" {>= "2022.20220405"}
+  "deb-texlive-latex-base" {>= "2022.20220405"}
+  "deb-texlive-latex-recommended" {>= "2022.20220405"}
+]
+extra-source "texlive-science_2022.20230122-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/texlive-extra/texlive-science_2022.20230122-4_all.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-wikicloth_0.8.1+dfsg-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-wikicloth"]
+]
+depends: [
+  "deb-libjs-jquery"
+  "deb-ruby-builder"
+  "deb-ruby-expression-parser" {>= "0.9.1-4~"}
+  "deb-ruby-i18n"
+  "deb-ruby-rinku" {>= "1.7.3-2~"}
+  ("deb-ruby" | "deb- ruby-interpreter")
+]
+extra-source "ruby-wikicloth_0.8.1+dfsg-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-wikicloth/ruby-wikicloth_0.8.1+dfsg-4_all.deb"
+}

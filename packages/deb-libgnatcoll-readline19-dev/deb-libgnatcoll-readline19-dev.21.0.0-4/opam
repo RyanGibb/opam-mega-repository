@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgnatcoll-readline19-dev_21.0.0-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgnatcoll-readline19-dev"]
+]
+depends: [
+  "deb-gnat"
+  "deb-gnat-10"
+  "deb-libgnatcoll-readline20" {= "21.0.0-4"}
+  "deb-libgnatcoll19-dev"
+  "deb-libreadline-dev"
+]
+extra-source "libgnatcoll-readline19-dev_21.0.0-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libg/libgnatcoll-bindings/libgnatcoll-readline19-dev_21.0.0-4_amd64.deb"
+}

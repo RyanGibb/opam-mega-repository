@@ -1,0 +1,49 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kget_4:22.12.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kget"]
+]
+depends: [
+  "deb-kio"
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgpgmepp6" {>= "1.18.0"}
+  "deb-libkf5completion5" {>= "5.91.0~"}
+  "deb-libkf5configcore5" {>= "5.91.0~"}
+  "deb-libkf5configgui5" {>= "5.91.0~"}
+  "deb-libkf5configwidgets5" {>= "5.91.0~"}
+  "deb-libkf5coreaddons5" {>= "5.96.0"}
+  "deb-libkf5dbusaddons5" {>= "5.91.0~"}
+  "deb-libkf5i18n5" {>= "5.91.0~"}
+  "deb-libkf5i18nlocaledata5" {>= "5.103.0"}
+  "deb-libkf5iconthemes5" {>= "5.91.0~"}
+  "deb-libkf5itemviews5" {>= "5.91.0~"}
+  "deb-libkf5kcmutils5" {>= "5.91.0~"}
+  "deb-libkf5kiocore5" {>= "5.91.0~"}
+  "deb-libkf5kiowidgets5" {>= "5.91.0~"}
+  "deb-libkf5notifications5" {>= "5.91.0~"}
+  "deb-libkf5notifyconfig5" {>= "5.91.0~"}
+  "deb-libkf5torrent6abi3" {>= "21.07.70~"}
+  "deb-libkf5wallet-bin"
+  "deb-libkf5wallet5" {>= "5.91.0~"}
+  "deb-libkf5widgetsaddons5" {>= "5.100.0"}
+  "deb-libkf5windowsystem5" {>= "5.92.0"}
+  "deb-libkf5xmlgui5" {>= "5.91.0~"}
+  "deb-libkworkspace5-5" {>= "4-5.8.1"}
+  "deb-libmms0" {>= "0.4"}
+  "deb-libqca-qt5-2" {>= "2.1.0~"}
+  "deb-libqgpgme15" {>= "1.18.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.15.0~"}
+  "deb-libqt5network5" {>= "5.15.0~"}
+  "deb-libqt5sql5" {>= "5.15.0~"}
+  "deb-libqt5widgets5" {>= "5.15.0~"}
+  "deb-libqt5xml5" {>= "5.15.0~"}
+  "deb-libstdc++6" {>= "5.2"}
+  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb- libqt5gui5-gles" {>= "5.15.0~"})
+]
+extra-source "kget_4:22.12.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kget/kget_22.12.3-1_amd64.deb"
+}

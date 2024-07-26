@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkf5mimetreeparser5abi1_4:20.08.3-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkf5mimetreeparser5abi1"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgpgmepp6" {>= "1.14.0"}
+  "deb-libkf5codecs5" {>= "5.71.0~"}
+  "deb-libkf5coreaddons5" {>= "5.2.0"}
+  "deb-libkf5i18n5" {>= "5.71.0~"}
+  "deb-libkf5mime5abi1"
+  "deb-libkf5mime5abi1" {>= "20.08.3"}
+  "deb-libqgpgme7" {>= "1.14.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libstdc++6" {>= "5.2"}
+]
+extra-source "libkf5mimetreeparser5abi1_4:20.08.3-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kf5-messagelib/libkf5mimetreeparser5abi1_20.08.3-5_amd64.deb"
+}

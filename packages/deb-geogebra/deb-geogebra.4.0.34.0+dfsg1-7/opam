@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i geogebra_4.0.34.0+dfsg1-7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r geogebra"]
+]
+depends: [
+  "deb-libcommons-collections3-java"
+  "deb-libcommons-math-java"
+  "deb-libfreehep-graphics2d-java"
+  "deb-libfreehep-graphicsio-emf-java" {>= "2.1.1-emfplus+dfsg1-2"}
+  "deb-libfreehep-graphicsio-java"
+  "deb-libfreehep-graphicsio-pdf-java"
+  "deb-libfreehep-graphicsio-svg-java"
+  "deb-libfreehep-io-java"
+  "deb-libfreehep-util-java"
+  "deb-libfreehep-xml-java"
+  "deb-libjfugue-java"
+  "deb-libjlatexmath-java"
+  "deb-librhino-java" {>= "1.7R3-5"}
+  "deb-mathpiper" {>= "0.81f+svn4469+dfsg3"}
+  ("deb-default-jre" | "deb- java7-runtime" | "deb- java8-runtime" | "deb- java9-runtime" | "deb- java10-runtime" | "deb- java11-runtime")
+]
+extra-source "geogebra_4.0.34.0+dfsg1-7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/geogebra/geogebra_4.0.34.0+dfsg1-7_all.deb"
+}

@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libopenvdb-tools_10.0.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libopenvdb-tools"]
+]
+depends: [
+  "deb-libblosc1" {>= "1.17.0"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.4"}
+  "deb-libglfw3" {>= "3.0"}
+  "deb-libimath-3-1-29" {>= "3.1.6"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-liblog4cplus-2-0-5" {>= "2.0.8"}
+  "deb-libopenexr-3-1-30" {>= "3.1.5"}
+  "deb-libopengl0"
+  "deb-libopenvdb10-0" {>= "10.0.1"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libtbb12" {>= "2021.4.0"}
+  "deb-zlib1g" {>= "1-1.2.0"}
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+extra-source "libopenvdb-tools_10.0.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openvdb/libopenvdb-tools_10.0.1-2_amd64.deb"
+}

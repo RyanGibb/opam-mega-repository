@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mobile-atlas-creator_2.1.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mobile-atlas-creator"]
+]
+depends: [
+  "deb-libactivation-java"
+  "deb-libbsh-java"
+  "deb-libcommons-codec-java"
+  "deb-libcommons-io-java"
+  "deb-libcommons-lang3-java"
+  "deb-libdb-je-java"
+  "deb-libistack-commons-java"
+  "deb-libitext5-java"
+  "deb-libjaxb-api-java"
+  "deb-libjaxb-java"
+  "deb-libjtidy-java"
+  "deb-libkxml2-java"
+  "deb-liblog4j1-2-java"
+  "deb-libmapsforge-java"
+  "deb-libpng-sixlegs-java"
+  "deb-libsvgsalamander-java"
+  ("deb-default-jre" | "deb- java2-runtime" | "deb- java-runtime")
+]
+extra-source "mobile-atlas-creator_2.1.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mobile-atlas-creator/mobile-atlas-creator_2.1.0-1_all.deb"
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i conntrackd_1:1.4.5-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r conntrackd"]
+]
+depends: [
+  "deb-libc6" {>= "2.15"}
+  "deb-libmnl0" {>= "1.0.3-4~"}
+  "deb-libnetfilter-conntrack3"
+  "deb-libnetfilter-cthelper0"
+  "deb-libnetfilter-queue1"
+  "deb-libnfnetlink0"
+  "deb-libsystemd0" {>= "227"}
+]
+extra-source "conntrackd_1:1.4.5-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/conntrack-tools/conntrackd_1.4.5-2_amd64.deb"
+}

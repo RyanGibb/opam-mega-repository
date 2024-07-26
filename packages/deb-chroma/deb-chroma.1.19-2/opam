@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i chroma_1.19-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r chroma"]
+]
+depends: [
+  "deb-chroma-data"
+  "deb-fonts-dejavu-core"
+  "deb-libc6" {>= "2.34"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libsdl-image1-2" {>= "1.2.10"}
+  "deb-libsdl1-2-compat-shim"
+]
+extra-source "chroma_1.19-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/chroma/chroma_1.19-2_amd64.deb"
+}

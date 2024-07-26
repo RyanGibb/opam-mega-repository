@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpetsc-complex3.14-dev_3.14.5+dfsg1-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpetsc-complex3.14-dev"]
+]
+depends: [
+  "deb-gfortran"
+  "deb-libfftw3-dev"
+  "deb-libfftw3-mpi-dev"
+  "deb-libhdf5-mpi-dev" {>= "1.8.8"}
+  "deb-libmumps-dev"
+  "deb-libopenmpi-dev" {< "4.2"}
+  "deb-libopenmpi-dev" {>= "4.1.0"}
+  "deb-libpetsc-complex3-14" {= "3.14.5+dfsg1-4"}
+  "deb-libpetsc3-14-dev-common" {= "3.14.5+dfsg1-4"}
+  "deb-libptscotch-dev"
+  "deb-libscalapack-mpi-dev"
+  "deb-libssl-dev"
+  "deb-libsuitesparse-dev"
+  "deb-libsuperlu-dev" {>= "5.2"}
+  "deb-libsuperlu-dist-dev"
+  "deb-python3"
+  ("deb-gfortran-10" | "deb- gfortran-mod-15")
+  ("deb-ocl-icd-opencl-dev" | "deb- opencl-dev")
+]
+conflicts: [
+  "deb-libpetsc-complex-3-6-2-dev" {<= "3.6.2.dfsg1-3"}
+  "deb-libpetsc-complex-3-6-3-dev" {< "3.6.3.dfsg2-2"}
+  "deb-libpetsc3-6-2-dev" {<= "3.6.2.dfsg1-3"}
+  "deb-libpetsc3-6-3-dev" {< "3.6.3.dfsg2-2"}
+]
+extra-source "libpetsc-complex3.14-dev_3.14.5+dfsg1-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/petsc/libpetsc-complex3.14-dev_3.14.5+dfsg1-4_amd64.deb"
+}

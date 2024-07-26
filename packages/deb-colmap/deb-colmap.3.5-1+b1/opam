@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i colmap_3.5-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r colmap"]
+]
+depends: [
+  "deb-libc6" {>= "2.28"}
+  "deb-libceres1"
+  "deb-libfreeimage3"
+  "deb-libgcc1" {>= "1-4.0"}
+  "deb-libgflags2-2"
+  "deb-libgl1"
+  "deb-libglew2-1" {>= "1.12.0"}
+  "deb-libgomp1" {>= "4.9"}
+  "deb-libgoogle-glog0v5"
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5gui5" {>= "5.4.0"}
+  "deb-libqt5opengl5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.4.0"}
+  "deb-libstdc++6" {>= "7"}
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+extra-source "colmap_3.5-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/colmap/colmap_3.5-1+b1_amd64.deb"
+}

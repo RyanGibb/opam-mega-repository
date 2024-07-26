@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-factominer_2.7-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-factominer"]
+]
+depends: [
+  "deb-libc6" {>= "2.2.5"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.2.20221110-1"}
+  "deb-r-cran-car"
+  "deb-r-cran-cluster"
+  "deb-r-cran-dt"
+  "deb-r-cran-ellipse"
+  "deb-r-cran-emmeans"
+  "deb-r-cran-flashclust"
+  "deb-r-cran-ggplot2"
+  "deb-r-cran-ggrepel"
+  "deb-r-cran-lattice"
+  "deb-r-cran-leaps"
+  "deb-r-cran-mass"
+  "deb-r-cran-multcompview"
+  "deb-r-cran-scatterplot3d"
+]
+extra-source "r-cran-factominer_2.7-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-factominer/r-cran-factominer_2.7-1_amd64.deb"
+}

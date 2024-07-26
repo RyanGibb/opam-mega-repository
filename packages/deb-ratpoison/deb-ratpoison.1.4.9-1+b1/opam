@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ratpoison_1.4.9-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ratpoison"]
+]
+depends: [
+  "deb-libc6" {>= "2.15"}
+  "deb-libx11-6"
+  "deb-libxft2" {> "2.1.1"}
+  "deb-libxrandr2" {>= "2-1.2.99.3"}
+  "deb-libxtst6"
+]
+extra-source "ratpoison_1.4.9-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ratpoison/ratpoison_1.4.9-1+b1_amd64.deb"
+}

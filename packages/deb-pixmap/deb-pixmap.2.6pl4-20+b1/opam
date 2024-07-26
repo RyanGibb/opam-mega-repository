@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pixmap_2.6pl4-20+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pixmap"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libx11-6"
+  "deb-libxaw7"
+  "deb-libxext6"
+  "deb-libxmu6"
+  "deb-libxpm4"
+  "deb-libxt6"
+]
+extra-source "pixmap_2.6pl4-20+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pixmap/pixmap_2.6pl4-20+b1_amd64.deb"
+}

@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-keyman-config_16.0.138-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-keyman-config"]
+]
+depends: [
+  "deb-dbus-x11"
+  "deb-dconf-cli"
+  "deb-gir1-2-webkit2-4-0"
+  "deb-ibus-keyman"
+  "deb-python3-any"
+  "deb-python3-bs4"
+  "deb-python3-gi"
+  "deb-python3-lxml"
+  "deb-python3-magic"
+  "deb-python3-numpy"
+  "deb-python3-pil"
+  "deb-python3-qrcode"
+  "deb-python3-requests"
+  "deb-python3-requests-cache"
+  "deb-python3-sentry-sdk" {>= "1.1"}
+]
+extra-source "python3-keyman-config_16.0.138-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/keyman/python3-keyman-config_16.0.138-4_all.deb"
+}

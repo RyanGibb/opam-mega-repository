@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i simplescreenrecorder-lib_0.4.4-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r simplescreenrecorder-lib"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libopengl0"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libx11-6"
+  "deb-libxfixes3"
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+extra-source "simplescreenrecorder-lib_0.4.4-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/simplescreenrecorder/simplescreenrecorder-lib_0.4.4-3_amd64.deb"
+}

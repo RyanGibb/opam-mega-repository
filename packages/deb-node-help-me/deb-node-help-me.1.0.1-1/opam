@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-help-me_1.0.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-help-me"]
+]
+depends: [
+  "deb-node-callback-stream" {>= "1.0.2"}
+  "deb-node-glob-stream"
+  "deb-node-through2" {>= "2.0.1"}
+  "deb-node-xtend" {>= "4.0.0"}
+  "deb-nodejs"
+]
+extra-source "node-help-me_1.0.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-help-me/node-help-me_1.0.1-1_all.deb"
+}

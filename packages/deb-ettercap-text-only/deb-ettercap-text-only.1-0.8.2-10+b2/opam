@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ettercap-text-only_1:0.8.2-10+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ettercap-text-only"]
+]
+depends: [
+  "deb-ettercap-common" {= "1-0.8.2-10+b2"}
+  "deb-libbsd0" {>= "0.0"}
+  "deb-libc6" {>= "2.7"}
+  "deb-libluajit-5-1-2" {>= "2.0.4+dfsg"}
+  "deb-libncurses6" {>= "6"}
+  "deb-libnet1" {>= "1.1.2.1"}
+  "deb-libpcap0-8" {>= "0.9.8"}
+  "deb-libpcre3"
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+conflicts: [
+  "deb-ettercap"
+  "deb-ettercap-gtk"
+]
+extra-source "ettercap-text-only_1:0.8.2-10+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/ettercap/ettercap-text-only_0.8.2-10+b2_amd64.deb"
+}

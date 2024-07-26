@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i boinc-app-seti-graphics_8.00~svn3725-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r boinc-app-seti-graphics"]
+]
+depends: [
+  "deb-boinc-client"
+  "deb-freeglut3"
+  "deb-libboinc-app7" {>= "7.6.33"}
+  "deb-libboinc7"
+  "deb-libc6" {>= "2.14"}
+  "deb-libfftw3-single3" {>= "3.3.5"}
+  "deb-libgcc1" {>= "1-3.3.1"}
+  "deb-libgl1"
+  "deb-libice6" {>= "1-1.0.0"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libsm6"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libxi6"
+  "deb-libxmu6"
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+conflicts: [
+  "deb-boinc-app-seti"
+]
+extra-source "boinc-app-seti-graphics_8.00~svn3725-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/boinc-app-seti/boinc-app-seti-graphics_8.00~svn3725-3_amd64.deb"
+}

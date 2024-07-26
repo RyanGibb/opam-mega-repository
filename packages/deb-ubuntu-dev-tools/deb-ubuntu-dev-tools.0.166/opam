@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ubuntu-dev-tools_0.166_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ubuntu-dev-tools"]
+]
+depends: [
+  "deb-binutils"
+  "deb-dctrl-tools"
+  "deb-devscripts" {>= "2.11.0~"}
+  "deb-diffstat"
+  "deb-distro-info" {>= "0.2~"}
+  "deb-dpkg-dev"
+  "deb-lsb-release"
+  "deb-perl-any"
+  "deb-python-any"
+  "deb-python-apt" {>= "0.7.93~"}
+  "deb-python-debian" {>= "0.1.20~"}
+  "deb-python-distro-info" {>= "0.4~"}
+  "deb-python-httplib2"
+  "deb-python-launchpadlib" {>= "1.5.7"}
+  "deb-python-lazr-restfulclient"
+  "deb-python-ubuntutools"
+  "deb-sensible-utils"
+  "deb-sudo"
+]
+extra-source "ubuntu-dev-tools_0.166_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/u/ubuntu-dev-tools/ubuntu-dev-tools_0.166_all.deb"
+}

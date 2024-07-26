@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libasyncqt1.6_19.09.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libasyncqt1.6"]
+]
+depends: [
+  "deb-libasynccore1-6" {>= "19.09.1"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqt5core5a" {>= "5.14.1"}
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-libsigc++-2-0-0v5" {>= "2.6.1"}
+  "deb-libstdc++6" {>= "5.2"}
+]
+extra-source "libasyncqt1.6_19.09.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/svxlink/libasyncqt1.6_19.09.1-3_amd64.deb"
+}

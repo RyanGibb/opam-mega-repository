@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-google-cloud-dev_0.9.0-10_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-google-cloud-dev"]
+]
+depends: [
+  "deb-golang-github-golang-mock-dev" {>= "1.0.0"}
+  "deb-golang-github-google-go-cmp-dev"
+  "deb-golang-github-googleapis-gax-go-dev" {>= "0.0~git20170902.8c160ca"}
+  "deb-golang-golang-x-net-dev"
+  "deb-golang-golang-x-oauth2-google-dev"
+  "deb-golang-golang-x-time-dev"
+  "deb-golang-google-api-dev" {>= "0.0~git20180916.19ff876~"}
+  "deb-golang-google-appengine-dev"
+  "deb-golang-google-cloud-compute-metadata-dev" {= "0.9.0-10"}
+  "deb-golang-google-genproto-dev" {>= "0.0~git20190111.db91494~"}
+  "deb-golang-google-grpc-dev" {>= "1.6.0"}
+  "deb-golang-goprotobuf-dev"
+]
+extra-source "golang-google-cloud-dev_0.9.0-10_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-google-cloud/golang-google-cloud-dev_0.9.0-10_all.deb"
+}

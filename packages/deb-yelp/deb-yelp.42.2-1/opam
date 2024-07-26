@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i yelp_42.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r yelp"]
+]
+depends: [
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.67.4"}
+  "deb-libgtk-3-0" {>= "3.13.3"}
+  "deb-libhandy-1-0" {>= "1.5.0"}
+  "deb-libharfbuzz0b" {>= "0.6.0"}
+  "deb-libjavascriptcoregtk-4-1-0" {>= "2.38.0"}
+  "deb-liblzma5" {>= "5.1.1alpha+20110809"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libsoup-3-0-0" {>= "2.4.0"}
+  "deb-libsqlite3-0" {>= "3.5.9"}
+  "deb-libwebkit2gtk-4-1-0" {>= "2.5.3"}
+  "deb-libxml2" {>= "2.6.27"}
+  "deb-libxslt1-1" {>= "1.1.25"}
+  "deb-libyelp0" {= "42.2-1"}
+  "deb-man-db" {>= "2.5.1-1"}
+  "deb-python3-distro"
+  "deb-yelp-xsl" {>= "41~"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "yelp_42.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/y/yelp/yelp_42.2-1_amd64.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-stars_0.2-0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-stars"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "3.5.1-2"}
+  "deb-r-cran-abind"
+  "deb-r-cran-classint" {>= "0.2-2"}
+  "deb-r-cran-ncdf4"
+  "deb-r-cran-ncmeta"
+  "deb-r-cran-rlang"
+  "deb-r-cran-sf" {>= "0.7-0"}
+  "deb-r-cran-units"
+]
+extra-source "r-cran-stars_0.2-0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-stars/r-cran-stars_0.2-0-1_all.deb"
+}

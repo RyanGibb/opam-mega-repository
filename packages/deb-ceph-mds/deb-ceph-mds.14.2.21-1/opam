@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ceph-mds_14.2.21-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ceph-mds"]
+]
+depends: [
+  "deb-ceph"
+  "deb-libc6" {>= "2.30"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgoogle-perftools4"
+  "deb-librados2" {>= "12.0.3"}
+  "deb-libstdc++6" {>= "9"}
+]
+extra-source "ceph-mds_14.2.21-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/ceph/ceph-mds_14.2.21-1_amd64.deb"
+}

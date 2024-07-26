@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-taskflow_3.2.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-taskflow"]
+]
+depends: [
+  "deb-alembic" {>= "0.8.10"}
+  "deb-python3-alembic" {>= "0.8.10"}
+  "deb-python3-any"
+  "deb-python3-automaton" {>= "1.9.0"}
+  "deb-python3-cachetools" {>= "2.0.0"}
+  "deb-python3-contextlib2"
+  "deb-python3-debtcollector"
+  "deb-python3-eventlet"
+  "deb-python3-fasteners"
+  "deb-python3-futurist" {>= "1.2.0"}
+  "deb-python3-jsonschema"
+  "deb-python3-kazoo"
+  "deb-python3-kombu" {>= "4.0.0"}
+  "deb-python3-networkx"
+  "deb-python3-oslo-serialization" {>= "2.18.0"}
+  "deb-python3-oslo-utils" {>= "3.33.0"}
+  "deb-python3-pbr" {>= "2.0.0"}
+  "deb-python3-psycopg2" {>= "2.6.2"}
+  "deb-python3-pymysql" {>= "0.7.6"}
+  "deb-python3-six" {>= "1.10.0"}
+  "deb-python3-sqlalchemy"
+  "deb-python3-stevedore" {>= "1.20.0"}
+  "deb-python3-tenacity" {>= "3.2.1"}
+]
+extra-source "python3-taskflow_3.2.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-taskflow/python3-taskflow_3.2.0-3_all.deb"
+}

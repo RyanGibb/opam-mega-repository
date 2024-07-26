@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add awall-1.12.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del awall"]
+]
+depends: [
+  "apk-busybox" {= "1.35.0-r18"}
+  "apk-drill" {= "1.8.1-r0"}
+  "apk-ip6tables" {= "1.8.8-r1"}
+  "apk-ipset" {= "7.15-r0"}
+  "apk-iptables" {= "1.8.8-r1"}
+  "apk-lua-schema" {= "0_git20170304-r2"}
+  "apk-lua5-4" {= "5.4.4-r5"}
+  "apk-lua5-4-alt-getopt" {= "0.8.0-r0"}
+  "apk-lua5-4-cjson" {= "2.1.0-r10"}
+  "apk-lua5-4-lyaml" {= "6.2.7-r1"}
+  "apk-lua5-4-pc" {= "1.0.0-r11"}
+  "apk-lua5-4-posix" {= "35.1-r0"}
+  "apk-lua5-4-stringy" {= "0.5.1-r2"}
+  "apk-xtables-addons" {= "3.20-r0"}
+]
+extra-source "awall-1.12.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/awall-1.12.1-r0.apk"
+}

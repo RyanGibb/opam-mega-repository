@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i liblemonldap-ng-common-perl_2.0.11+ds-4+deb11u5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r liblemonldap-ng-common-perl"]
+]
+depends: [
+  "deb-debconf"
+  "deb-libapache-session-perl"
+  "deb-libcache-cache-perl"
+  "deb-libconfig-inifiles-perl"
+  "deb-libcrypt-openssl-rsa-perl"
+  "deb-libcrypt-openssl-x509-perl"
+  "deb-libcrypt-rijndael-perl"
+  "deb-libcrypt-urandom-perl"
+  "deb-libhtml-template-perl"
+  "deb-libjson-perl"
+  "deb-libjson-xs-perl"
+  "deb-libmouse-perl"
+  "deb-libplack-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-perl-any"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+conflicts: [
+  "deb-liblemonldap-ng-cli-perl"
+]
+extra-source "liblemonldap-ng-common-perl_2.0.11+ds-4+deb11u5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lemonldap-ng/liblemonldap-ng-common-perl_2.0.11+ds-4+deb11u5_all.deb"
+}

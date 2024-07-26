@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i decopy_0.2.4.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r decopy"]
+]
+depends: [
+  "deb-bzip2"
+  "deb-libimage-exiftool-perl"
+  "deb-python3-any"
+  "deb-python3-debian"
+  "deb-python3-xdg"
+  "deb-xz-utils"
+]
+extra-source "decopy_0.2.4.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/decopy/decopy_0.2.4.1-2_all.deb"
+}

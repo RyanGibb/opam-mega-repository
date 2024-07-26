@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-easydev_0.10.1+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-easydev"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-appdirs"
+  "deb-python3-colorama"
+  "deb-python3-colorlog"
+  "deb-python3-pexpect"
+  "deb-python3-pkg-resources"
+]
+extra-source "python3-easydev_0.10.1+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-easydev/python3-easydev_0.10.1+dfsg-1_all.deb"
+}

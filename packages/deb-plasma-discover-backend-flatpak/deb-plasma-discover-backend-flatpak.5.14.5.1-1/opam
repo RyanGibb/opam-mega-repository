@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i plasma-discover-backend-flatpak_5.14.5.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r plasma-discover-backend-flatpak"]
+]
+depends: [
+  "deb-flatpak"
+  "deb-libappstreamqt2" {>= "0.12.5"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libflatpak0" {>= "0.10.2"}
+  "deb-libglib2-0-0" {>= "2.33.14"}
+  "deb-libkf5configcore5" {>= "4.97.0"}
+  "deb-libkf5coreaddons5" {>= "4.97.0"}
+  "deb-libkf5i18n5" {>= "4.97.0"}
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5gui5" {>= "5.11.0~"}
+  "deb-libqt5network5" {>= "5.11.0~"}
+  "deb-libqt5widgets5" {>= "5.11.0~"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-plasma-discover" {= "5.14.5.1-1"}
+]
+extra-source "plasma-discover-backend-flatpak_5.14.5.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/plasma-discover/plasma-discover-backend-flatpak_5.14.5.1-1_amd64.deb"
+}

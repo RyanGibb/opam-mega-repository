@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add acf-dnscache-0.6.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del acf-dnscache"]
+]
+depends: [
+  "apk-acf-core" {= "0.22.0-r0"}
+  "apk-dnscache" {= "1.05-r47"}
+  "apk-lua-posix" {= "33.4.0-r1"}
+]
+extra-source "acf-dnscache-0.6.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/acf-dnscache-0.6.0-r2.apk"
+}

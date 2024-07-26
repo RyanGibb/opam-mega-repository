@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpynac18_0.7.23-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpynac18"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libflint-2-5-2"
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgmp10" {>= "2-6.1.0"}
+  "deb-libmpfr6" {>= "3.1.3"}
+  "deb-libntl35"
+  "deb-libpython2-7" {>= "2.7"}
+  "deb-libsingular4m1"
+  "deb-libstdc++6" {>= "5.2"}
+]
+extra-source "libpynac18_0.7.23-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pynac/libpynac18_0.7.23-2_amd64.deb"
+}

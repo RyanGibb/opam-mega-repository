@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-bioc-dropletutils_1.10.3+ds-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-bioc-dropletutils"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libhdf5-103-1"
+  "deb-libhdf5-cpp-103-1" {>= "1.10.5"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.4-1"}
+  "deb-r-bioc-beachmat"
+  "deb-r-bioc-biocgenerics"
+  "deb-r-bioc-biocparallel"
+  "deb-r-bioc-delayedarray"
+  "deb-r-bioc-edger"
+  "deb-r-bioc-hdf5array"
+  "deb-r-bioc-rhdf5"
+  "deb-r-bioc-rhdf5lib"
+  "deb-r-bioc-s4vectors"
+  "deb-r-bioc-scuttle"
+  "deb-r-bioc-singlecellexperiment"
+  "deb-r-bioc-summarizedexperiment"
+  "deb-r-cran-bh"
+  "deb-r-cran-dqrng"
+  "deb-r-cran-matrix"
+  "deb-r-cran-r-utils"
+  "deb-r-cran-rcpp"
+]
+extra-source "r-bioc-dropletutils_1.10.3+ds-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-bioc-dropletutils/r-bioc-dropletutils_1.10.3+ds-2_amd64.deb"
+}

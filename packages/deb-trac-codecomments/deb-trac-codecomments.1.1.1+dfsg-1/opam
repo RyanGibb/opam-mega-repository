@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i trac-codecomments_1.1.1+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r trac-codecomments"]
+]
+depends: [
+  "deb-libjs-backbone"
+  "deb-libjs-jquery-ui"
+  "deb-libjs-json"
+  "deb-libjs-underscore"
+  "deb-python" {< "2.8"}
+  "deb-python" {>= "2.6.6-7~"}
+  "deb-trac"
+]
+extra-source "trac-codecomments_1.1.1+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/trac-codecomments/trac-codecomments_1.1.1+dfsg-1_all.deb"
+}

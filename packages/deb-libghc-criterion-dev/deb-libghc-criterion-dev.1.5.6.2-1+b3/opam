@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-criterion-dev_1.5.6.2-1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-criterion-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.14"}
+  "deb-libghc-aeson-dev"
+  "deb-libghc-ansi-wl-pprint-dev"
+  "deb-libghc-base-compat-batteries-dev"
+  "deb-libghc-binary-orphans-dev"
+  "deb-libghc-cassava-dev"
+  "deb-libghc-code-page-dev"
+  "deb-libghc-criterion-measurement-dev"
+  "deb-libghc-exceptions-dev"
+  "deb-libghc-glob-dev"
+  "deb-libghc-js-flot-dev"
+  "deb-libghc-js-jquery-dev"
+  "deb-libghc-microstache-dev"
+  "deb-libghc-mwc-random-dev"
+  "deb-libghc-optparse-applicative-dev"
+  "deb-libghc-statistics-dev"
+  "deb-libghc-transformers-compat-dev"
+  "deb-libghc-vector-algorithms-dev"
+  "deb-libghc-vector-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-criterion-dev_1.5.6.2-1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-criterion/libghc-criterion-dev_1.5.6.2-1+b3_amd64.deb"
+}

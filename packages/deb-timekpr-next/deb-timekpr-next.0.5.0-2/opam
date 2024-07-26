@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i timekpr-next_0.5.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r timekpr-next"]
+]
+depends: [
+  "deb-gir1-2-gtk-3-0"
+  "deb-libgtk-3-0"
+  "deb-policykit-1"
+  "deb-python3"
+  "deb-python3-any"
+  "deb-python3-dbus"
+  "deb-python3-gi"
+  "deb-python3-psutil" {>= "3.4"}
+  ("deb-lxpolkit" | "deb- lxqt-policykit" | "deb- mate-polkit" | "deb- policykit-1-gnome" | "deb- polkit-kde-agent-1" | "deb- polkit-1-auth-agent")
+  ("deb-systemd" | "deb- systemd-shim")
+]
+conflicts: [
+  "deb-timekpr-next-beta"
+]
+extra-source "timekpr-next_0.5.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/timekpr-next/timekpr-next_0.5.0-2_amd64.deb"
+}

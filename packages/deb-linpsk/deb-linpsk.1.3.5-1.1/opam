@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i linpsk_1.3.5-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r linpsk"]
+]
+depends: [
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libfftw3-double3" {>= "3.3.5"}
+  "deb-libgcc1" {>= "1-4.0"}
+  "deb-libgl1"
+  "deb-libhamlib2"
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5gui5" {>= "5.2.0"}
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.2.0~alpha1"}
+  "deb-libstdc++6" {>= "5.2"}
+]
+extra-source "linpsk_1.3.5-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/linpsk/linpsk_1.3.5-1.1_amd64.deb"
+}

@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lomiri-gallery-app_3.0.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lomiri-gallery-app"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libexiv2-27" {>= "0.27.2"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libmediainfo0v5" {>= "0.7.56"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5qml5" {>= "5.0.2"}
+  "deb-libqt5sql5" {>= "5.0.2"}
+  "deb-libqt5sql5-sqlite"
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-lomiri-gallery-app-common" {< "3.0.1-1.1~"}
+  "deb-lomiri-gallery-app-common" {>= "3.0.1-1"}
+  "deb-qml-module-lomiri-components"
+  "deb-qml-module-lomiri-components-extras"
+  "deb-qml-module-lomiri-content"
+  "deb-qml-module-lomiri-layouts"
+  "deb-qml-module-lomiri-thumbnailer"
+  "deb-qml-module-qtquick-window2"
+  "deb-qml-module-qtquick2"
+  ("deb-libqt5gui5" {>= "5.2.0"} | "deb- libqt5gui5-gles" {>= "5.2.0"})
+  ("deb-libqt5quick5" {>= "5.0.2"} | "deb- libqt5quick5-gles" {>= "5.0.2"})
+  ("deb-qml-module-qtmultimedia" | "deb- qml-module-qtmultimedia-gles")
+]
+extra-source "lomiri-gallery-app_3.0.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lomiri-gallery-app/lomiri-gallery-app_3.0.1-1_amd64.deb"
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-wordcloud_2.6-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-wordcloud"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.2-1"}
+  "deb-r-cran-rcolorbrewer"
+  "deb-r-cran-rcpp" {>= "0.9.4"}
+]
+extra-source "r-cran-wordcloud_2.6-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-wordcloud/r-cran-wordcloud_2.6-2_amd64.deb"
+}

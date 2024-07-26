@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i autoradio_3.1-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r autoradio"]
+]
+depends: [
+  "deb-adduser"
+  "deb-gstreamer1-0-plugins-base"
+  "deb-gstreamer1-0-plugins-good"
+  "deb-libcortado-java"
+  "deb-libjs-jquery"
+  "deb-python3"
+  "deb-python3-configobj"
+  "deb-python3-dbus"
+  "deb-python3-django"
+  "deb-python3-docutils"
+  "deb-python3-gst-1-0"
+  "deb-python3-magic"
+  "deb-python3-mutagen"
+  "deb-python3-pil"
+  "deb-python3-reportlab"
+  "deb-python3-six"
+  "deb-speex"
+  "deb-sqlite3"
+]
+extra-source "autoradio_3.1-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/autoradio/autoradio_3.1-6_all.deb"
+}

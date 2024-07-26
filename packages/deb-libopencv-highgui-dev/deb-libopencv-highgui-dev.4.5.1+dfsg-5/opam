@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libopencv-highgui-dev_4.5.1+dfsg-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libopencv-highgui-dev"]
+]
+depends: [
+  "deb-libavcodec-dev"
+  "deb-libavformat-dev"
+  "deb-libdc1394-dev"
+  "deb-libgphoto2-dev"
+  "deb-libjpeg-dev"
+  "deb-libopencv-highgui4-5" {= "4.5.1+dfsg-5"}
+  "deb-libopencv-videoio-dev" {= "4.5.1+dfsg-5"}
+  "deb-libopenexr-dev"
+  "deb-libpng-dev"
+  "deb-libraw1394-dev"
+  "deb-libswresample-dev"
+  "deb-libswscale-dev"
+  "deb-libtiff-dev"
+]
+extra-source "libopencv-highgui-dev_4.5.1+dfsg-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/opencv/libopencv-highgui-dev_4.5.1+dfsg-5_amd64.deb"
+}

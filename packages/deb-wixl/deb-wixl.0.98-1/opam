@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i wixl_0.98-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r wixl"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libgcab-1-0-0" {>= "0.4"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libgsf-1-114" {>= "1.14.8"}
+  "deb-libmsi0" {>= "0.93"}
+  "deb-libuuid1" {>= "2.16"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-wixl-data" {= "0.98-1"}
+]
+extra-source "wixl_0.98-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/msitools/wixl_0.98-1_amd64.deb"
+}

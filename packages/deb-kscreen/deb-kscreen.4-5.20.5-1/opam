@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kscreen_4:5.20.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kscreen"]
+]
+depends: [
+  "deb-kde-cli-tools" {>= "4-5.14"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libkf5configcore5" {>= "5.74~"}
+  "deb-libkf5coreaddons5" {>= "4.100.0"}
+  "deb-libkf5dbusaddons5" {>= "5.74~"}
+  "deb-libkf5declarative5" {>= "5.74~"}
+  "deb-libkf5globalaccel-bin"
+  "deb-libkf5globalaccel5" {>= "5.74~"}
+  "deb-libkf5i18n5" {>= "5.74~"}
+  "deb-libkf5plasma5" {>= "5.74~"}
+  "deb-libkf5plasmaquick5" {>= "5.74~"}
+  "deb-libkf5quickaddons5" {>= "5.74~"}
+  "deb-libkf5screen-bin" {>= "4-5.17.5~"}
+  "deb-libkf5screen7" {>= "4-5.19~"}
+  "deb-libkf5xmlgui5" {>= "5.74~"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.15.0~"}
+  "deb-libqt5qml5" {>= "5.0.2"}
+  "deb-libqt5sensors5" {>= "5.15.0~"}
+  "deb-libqt5widgets5" {>= "5.15.0~"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-plasma-framework"
+  "deb-qml-module-qtgraphicaleffects"
+  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb- libqt5gui5-gles" {>= "5.15.0~"})
+  ("deb-libqt5quick5" {>= "5.4.0"} | "deb- libqt5quick5-gles" {>= "5.4.0"})
+]
+extra-source "kscreen_4:5.20.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kscreen/kscreen_5.20.5-1_amd64.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tilix_1.9.5-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tilix"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgtkd-3-0" {>= "3.10.0"}
+  "deb-libphobos2-ldc-shared100" {>= "1-1.30.0"}
+  "deb-libunwind8"
+  "deb-libvted-3-0" {>= "3.10.0"}
+  "deb-libx11-6"
+  "deb-python3-nautilus"
+  "deb-tilix-common" {= "1.9.5-2"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "tilix_1.9.5-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tilix/tilix_1.9.5-2_amd64.deb"
+}

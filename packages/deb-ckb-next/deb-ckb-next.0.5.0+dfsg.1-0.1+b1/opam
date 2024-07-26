@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ckb-next_0.5.0+dfsg.1-0.1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ckb-next"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libdbusmenu-qt5-2" {>= "0.3.2"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libpulse0" {>= "0.99.1"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.5.1"}
+  "deb-libqt5network5" {>= "5.5.1"}
+  "deb-libqt5widgets5" {>= "5.15.1"}
+  "deb-libqt5x11extras5" {>= "5.6.0"}
+  "deb-libquazip5-1" {>= "0.7.3"}
+  "deb-libstdc++6" {>= "4.8"}
+  "deb-libudev1" {>= "183"}
+  "deb-libxcb-ewmh2" {>= "0.4.1"}
+  "deb-libxcb-screensaver0"
+  "deb-libxcb1"
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "ckb-next_0.5.0+dfsg.1-0.1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/ckb-next/ckb-next_0.5.0+dfsg.1-0.1+b1_amd64.deb"
+}

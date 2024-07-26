@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ben_0.10.1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ben"]
+]
+depends: [
+  "deb-bzip2"
+  "deb-curl"
+  "deb-libben-ocaml"
+  "deb-libc6" {>= "2.35"}
+  "deb-libev4" {>= "1-4.04"}
+  "deb-libjs-jquery"
+  "deb-libpq5" {>= "12~~"}
+  "deb-libtyxml-ocaml"
+  "deb-ocaml-base"
+]
+extra-source "ben_0.10.1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/ben/ben_0.10.1+b1_amd64.deb"
+}

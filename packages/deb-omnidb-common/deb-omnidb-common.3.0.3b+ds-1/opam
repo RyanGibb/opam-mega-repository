@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i omnidb-common_3.0.3b+ds-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r omnidb-common"]
+]
+depends: [
+  "deb-fonts-glyphicons-halflings"
+  "deb-fonts-roboto-unhinted"
+  "deb-libjs-jquery"
+  "deb-python3-any"
+  "deb-python3-cherrypy3"
+  "deb-python3-django" {>= "2-2.2"}
+  "deb-python3-django-auth-ldap"
+  "deb-python3-django-sass"
+  "deb-python3-openpyxl"
+  "deb-python3-paramiko"
+  "deb-python3-pgspecial"
+  "deb-python3-prettytable"
+  "deb-python3-psycopg2"
+  "deb-python3-pyaes"
+  "deb-python3-restrictedpython"
+  "deb-python3-scrypt"
+  "deb-python3-social-django"
+  "deb-python3-sqlparse"
+  "deb-python3-sshtunnel"
+]
+extra-source "omnidb-common_3.0.3b+ds-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/omnidb/omnidb-common_3.0.3b+ds-1_all.deb"
+}

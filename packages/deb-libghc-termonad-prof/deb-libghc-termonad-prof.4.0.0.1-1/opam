@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-termonad-prof_4.0.0.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-termonad-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-adjunctions-prof"
+  "deb-libghc-classy-prelude-prof"
+  "deb-libghc-colour-prof"
+  "deb-libghc-constraints-prof"
+  "deb-libghc-data-default-prof"
+  "deb-libghc-distributive-prof"
+  "deb-libghc-dyre-prof"
+  "deb-libghc-file-embed-prof"
+  "deb-libghc-focuslist-prof"
+  "deb-libghc-gi-gdk-prof"
+  "deb-libghc-gi-gio-prof"
+  "deb-libghc-gi-glib-prof"
+  "deb-libghc-gi-gtk-prof"
+  "deb-libghc-gi-pango-prof"
+  "deb-libghc-gi-vte-prof"
+  "deb-libghc-haskell-gi-base-prof"
+  "deb-libghc-inline-c-prof"
+  "deb-libghc-lens-prof"
+  "deb-libghc-mono-traversable-prof"
+  "deb-libghc-pretty-simple-prof"
+  "deb-libghc-quickcheck2-prof"
+  "deb-libghc-termonad-dev" {= "4.0.0.1-1"}
+  "deb-libghc-xml-conduit-prof"
+  "deb-libghc-xml-html-qq-prof"
+  "deb-libghc-yaml-prof"
+]
+extra-source "libghc-termonad-prof_4.0.0.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-termonad/libghc-termonad-prof_4.0.0.1-1_amd64.deb"
+}

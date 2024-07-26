@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-xhtml2pdf_0.2.2-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-xhtml2pdf"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-html5lib" {>= "1.0"}
+  "deb-python3-httplib2"
+  "deb-python3-pil"
+  "deb-python3-pypdf2" {>= "1.26"}
+  "deb-python3-reportlab" {>= "3.0"}
+  "deb-python3-six"
+]
+extra-source "python3-xhtml2pdf_0.2.2-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xhtml2pdf/python3-xhtml2pdf_0.2.2-2_all.deb"
+}

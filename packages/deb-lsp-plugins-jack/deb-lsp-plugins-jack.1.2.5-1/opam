@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lsp-plugins-jack_1.2.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lsp-plugins-jack"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.12.0"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libsndfile1" {>= "1.0.20"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libx11-6"
+  "deb-libxrandr2" {>= "2-1.5.0"}
+  "deb-lsp-plugins-r3d-glx" {= "1.2.5-1"}
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+]
+extra-source "lsp-plugins-jack_1.2.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lsp-plugins/lsp-plugins-jack_1.2.5-1_amd64.deb"
+}

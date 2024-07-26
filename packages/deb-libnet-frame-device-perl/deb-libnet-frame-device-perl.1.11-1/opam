@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libnet-frame-device-perl_1.11-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libnet-frame-device-perl"]
+]
+depends: [
+  "deb-libclass-gomor-perl"
+  "deb-libnet-frame-dump-perl"
+  "deb-libnet-frame-layer-icmpv6-perl"
+  "deb-libnet-frame-layer-ipv6-perl"
+  "deb-libnet-frame-perl"
+  "deb-libnet-frame-simple-perl"
+  "deb-libnet-ipv6addr-perl"
+  "deb-libnet-libdnet-perl"
+  "deb-libnet-libdnet6-perl"
+  "deb-libnet-pcap-perl"
+  "deb-libnet-write-perl"
+  "deb-libnetwork-ipv4addr-perl"
+  "deb-perl"
+]
+extra-source "libnet-frame-device-perl_1.11-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libn/libnet-frame-device-perl/libnet-frame-device-perl_1.11-1_all.deb"
+}

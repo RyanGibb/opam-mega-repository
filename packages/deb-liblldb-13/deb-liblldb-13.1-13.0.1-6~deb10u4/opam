@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i liblldb-13_1:13.0.1-6~deb10u4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r liblldb-13"]
+]
+depends: [
+  "deb-libc6" {>= "2.15"}
+  "deb-libclang-cpp13" {>= "1-13.0.1"}
+  "deb-libedit2" {>= "3.1-20140620-0"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libllvm13" {= "1-13.0.1-6~deb10u4"}
+  "deb-libncurses6" {>= "6"}
+  "deb-libpython3-7" {>= "3.7.0"}
+  "deb-libstdc++6" {>= "6"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-libxml2" {>= "2.7.4"}
+]
+extra-source "liblldb-13_1:13.0.1-6~deb10u4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/llvm-toolchain-13/liblldb-13_13.0.1-6~deb10u4_amd64.deb"
+}

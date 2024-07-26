@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i scram_0.16.2-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r scram"]
+]
+depends: [
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0"}
+  "deb-libboost-program-options1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libtcmalloc-minimal4"
+  "deb-libxml2" {>= "2.7.4"}
+]
+extra-source "scram_0.16.2-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/scram/scram_0.16.2-3_amd64.deb"
+}

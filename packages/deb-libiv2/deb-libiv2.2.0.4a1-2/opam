@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libiv2_2.0.4a1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libiv2"]
+]
+depends: [
+  "deb-libc6" {>= "2.15"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libtiff5" {>= "4.0.3"}
+  "deb-libx11-6"
+  "deb-libxext6"
+]
+conflicts: [
+  "deb-ivtools"
+]
+extra-source "libiv2_2.0.4a1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/ivtools/libiv2_2.0.4a1-2_amd64.deb"
+}

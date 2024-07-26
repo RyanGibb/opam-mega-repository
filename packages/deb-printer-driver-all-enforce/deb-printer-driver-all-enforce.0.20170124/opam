@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i printer-driver-all-enforce_0.20170124_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r printer-driver-all-enforce"]
+]
+depends: [
+  "deb-printer-driver-brlaser"
+  "deb-printer-driver-c2050"
+  "deb-printer-driver-c2esp"
+  "deb-printer-driver-cjet"
+  "deb-printer-driver-dymo"
+  "deb-printer-driver-escpr"
+  "deb-printer-driver-foo2zjs"
+  "deb-printer-driver-fujixerox"
+  "deb-printer-driver-gutenprint"
+  "deb-printer-driver-hpcups"
+  "deb-printer-driver-hpijs"
+  "deb-printer-driver-m2300w"
+  "deb-printer-driver-min12xxw"
+  "deb-printer-driver-pnm2ppa"
+  "deb-printer-driver-postscript-hp"
+  "deb-printer-driver-ptouch"
+  "deb-printer-driver-pxljr"
+  "deb-printer-driver-sag-gdi"
+  "deb-printer-driver-splix"
+]
+extra-source "printer-driver-all-enforce_0.20170124_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/printing-metas/printer-driver-all-enforce_0.20170124_all.deb"
+}

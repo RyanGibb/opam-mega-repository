@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i guile-gnome2-gtk_2.16.5-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r guile-gnome2-gtk"]
+]
+depends: [
+  "deb-guile-2-2-libs"
+  "deb-guile-cairo" {>= "1.10.0"}
+  "deb-guile-gnome2-glib" {>= "2.16.5"}
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.4"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libffi6" {>= "3.0.4"}
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgc1c2" {>= "1-7.2d"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglade2-0" {>= "1-2.6.4-2~"}
+  "deb-libglib2-0-0" {>= "2.24.0"}
+  "deb-libgtk2-0-0" {>= "2.18.0"}
+  "deb-libgwrap-runtime2" {>= "1.9.15"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpangoft2-1-0-0" {>= "1.14.0"}
+  "deb-libxml2" {>= "2.6.27"}
+]
+extra-source "guile-gnome2-gtk_2.16.5-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/guile-gnome-platform/guile-gnome2-gtk_2.16.5-2_amd64.deb"
+}

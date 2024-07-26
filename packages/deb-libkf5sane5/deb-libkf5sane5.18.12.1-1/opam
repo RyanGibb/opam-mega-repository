@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkf5sane5_18.12.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkf5sane5"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libkf5i18n5" {>= "4.97.0"}
+  "deb-libkf5sane-data" {= "18.12.1-1"}
+  "deb-libkf5textwidgets5" {>= "5.0.0"}
+  "deb-libkf5wallet-bin"
+  "deb-libkf5wallet5" {>= "4.96.0"}
+  "deb-libkf5widgetsaddons5" {>= "4.96.0"}
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5gui5" {>= "5.7.0"}
+  "deb-libqt5widgets5" {>= "5.7.0~"}
+  "deb-libsane" {>= "1.0.24"}
+  "deb-libstdc++6" {>= "4.1.1"}
+]
+extra-source "libkf5sane5_18.12.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libk/libkf5sane/libkf5sane5_18.12.1-1_amd64.deb"
+}

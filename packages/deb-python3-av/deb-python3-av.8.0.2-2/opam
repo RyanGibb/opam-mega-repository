@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-av_8.0.2-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-av"]
+]
+depends: [
+  "deb-libavcodec-extra58"
+  "deb-libavdevice58" {>= "7-4.0"}
+  "deb-libavfilter-extra7"
+  "deb-libavformat58" {>= "7-4.2"}
+  "deb-libavutil56" {>= "7-4.0"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libswresample3" {>= "7-4.0"}
+  "deb-libswscale5" {>= "7-4.0"}
+  "deb-python3" {< "3.10"}
+  "deb-python3" {>= "3.9~"}
+  "deb-python3-any"
+  "deb-python3-numpy"
+]
+extra-source "python3-av_8.0.2-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-av/python3-av_8.0.2-2_amd64.deb"
+}

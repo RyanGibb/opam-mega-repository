@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i streamdeck-ui_1.1.2-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r streamdeck-ui"]
+]
+depends: [
+  "deb-fonts-roboto-unhinted"
+  "deb-libhidapi-libusb0"
+  "deb-python3-any"
+  "deb-python3-elgato-streamdeck"
+  "deb-python3-pil"
+  "deb-python3-pynput"
+  "deb-python3-pyside2-qtcore"
+  "deb-python3-pyside2-qtgui"
+  "deb-python3-pyside2-qtwidgets"
+  "deb-python3-xlib"
+]
+extra-source "streamdeck-ui_1.1.2-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/streamdeck-ui/streamdeck-ui_1.1.2-2_all.deb"
+}

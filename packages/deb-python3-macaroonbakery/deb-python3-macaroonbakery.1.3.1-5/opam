@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-macaroonbakery_1.3.1-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-macaroonbakery"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-nacl"
+  "deb-python3-protobuf"
+  "deb-python3-pymacaroons"
+  "deb-python3-requests"
+  "deb-python3-rfc3339"
+  "deb-python3-six" {< "2.0"}
+  "deb-python3-six" {>= "1.11.0"}
+]
+extra-source "python3-macaroonbakery_1.3.1-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/py-macaroon-bakery/python3-macaroonbakery_1.3.1-5_all.deb"
+}

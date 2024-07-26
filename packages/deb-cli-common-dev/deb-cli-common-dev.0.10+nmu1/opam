@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cli-common-dev_0.10+nmu1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cli-common-dev"]
+]
+depends: [
+  "deb-debhelper" {>= "7.0.8"}
+  "deb-libxml-dom-perl"
+  "deb-perl"
+  ("deb-mono-devel" {>= "4.4~"} | "deb- strong-name-tool")
+  ("deb-mono-utils" {>= "4.4~"} | "deb- cil-disassembler")
+]
+extra-source "cli-common-dev_0.10+nmu1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cli-common/cli-common-dev_0.10+nmu1_all.deb"
+}

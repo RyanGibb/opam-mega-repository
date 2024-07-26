@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-snap-prof_1.1.3.0-1+b4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-snap-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-aeson-prof"
+  "deb-libghc-attoparsec-prof"
+  "deb-libghc-cereal-prof"
+  "deb-libghc-clientsession-prof"
+  "deb-libghc-configurator-prof"
+  "deb-libghc-directory-tree-prof"
+  "deb-libghc-dlist-prof"
+  "deb-libghc-hashable-prof"
+  "deb-libghc-heist-prof"
+  "deb-libghc-lens-prof"
+  "deb-libghc-lifted-base-prof"
+  "deb-libghc-map-syntax-prof"
+  "deb-libghc-monad-control-prof"
+  "deb-libghc-mwc-random-prof"
+  "deb-libghc-pwstore-fast-prof"
+  "deb-libghc-snap-core-prof"
+  "deb-libghc-snap-dev" {= "1.1.3.0-1+b4"}
+  "deb-libghc-snap-server-prof"
+  "deb-libghc-transformers-base-prof"
+  "deb-libghc-unordered-containers-prof"
+  "deb-libghc-xmlhtml-prof"
+]
+extra-source "libghc-snap-prof_1.1.3.0-1+b4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-snap/libghc-snap-prof_1.1.3.0-1+b4_amd64.deb"
+}

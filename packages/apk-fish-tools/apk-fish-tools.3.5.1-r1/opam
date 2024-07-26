@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add fish-tools-3.5.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del fish-tools"]
+]
+depends: [
+  "apk-fish" {= "3.5.1-r1"}
+  "apk-mandoc" {= "1.14.6-r6"}
+  "apk-python3" {= "3.10.14-r1"}
+]
+extra-source "fish-tools-3.5.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/fish-tools-3.5.1-r1.apk"
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add freeradius-sqlite-3.0.26-r7.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del freeradius-sqlite"]
+]
+depends: [
+  "apk-freeradius-sql" {= "3.0.26-r7"}
+  "apk-musl" {= "1.2.4_git20230717-r4"}
+  "apk-sqlite-libs" {= "3.44.2-r0"}
+]
+extra-source "freeradius-sqlite-3.0.26-r7.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/freeradius-sqlite-3.0.26-r7.apk"
+}

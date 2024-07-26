@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i nqp_2022.12+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r nqp"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libjs-angularjs"
+  "deb-libjs-bootstrap"
+  "deb-moarvm" {< "2023.01"}
+  "deb-moarvm" {>= "2022.12"}
+  "deb-nqp-data" {= "2022.12+dfsg-1"}
+]
+extra-source "nqp_2022.12+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/nqp/nqp_2022.12+dfsg-1_amd64.deb"
+}

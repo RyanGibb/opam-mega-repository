@@ -1,0 +1,54 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i php-horde-wicked_2.0.8-8_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r php-horde-wicked"]
+]
+depends: [
+  "deb-php-cli"
+  "deb-php-common"
+  "deb-php-horde" {< "6.0.0~alpha1"}
+  "deb-php-horde" {>= "5.2.23+debian0-2~"}
+  "deb-php-horde-auth" {< "3.0.0~alpha1"}
+  "deb-php-horde-auth" {>= "2.0.0"}
+  "deb-php-horde-autoloader" {< "3.0.0~alpha1"}
+  "deb-php-horde-autoloader" {>= "2.0.0"}
+  "deb-php-horde-core" {< "3.0.0~alpha1"}
+  "deb-php-horde-core" {>= "2.0.0"}
+  "deb-php-horde-db" {< "3.0.0~alpha1"}
+  "deb-php-horde-db" {>= "2.0.0"}
+  "deb-php-horde-exception" {< "3.0.0~alpha1"}
+  "deb-php-horde-exception" {>= "2.0.0"}
+  "deb-php-horde-form" {< "3.0.0~alpha1"}
+  "deb-php-horde-form" {>= "2.0.0"}
+  "deb-php-horde-http" {< "3.0.0~alpha1"}
+  "deb-php-horde-http" {>= "2.0.0"}
+  "deb-php-horde-lock" {< "3.0.0~alpha1"}
+  "deb-php-horde-lock" {>= "2.0.0"}
+  "deb-php-horde-mail" {< "3.0.0~alpha1"}
+  "deb-php-horde-mail" {>= "2.0.0"}
+  "deb-php-horde-mime" {< "3.0.0~alpha1"}
+  "deb-php-horde-mime" {>= "2.0.0"}
+  "deb-php-horde-mime-viewer" {< "3.0.0~alpha1"}
+  "deb-php-horde-mime-viewer" {>= "2.0.0"}
+  "deb-php-horde-notification" {< "3.0.0~alpha1"}
+  "deb-php-horde-notification" {>= "2.0.0"}
+  "deb-php-horde-perms" {< "3.0.0~alpha1"}
+  "deb-php-horde-perms" {>= "2.0.0"}
+  "deb-php-horde-prefs" {< "3.0.0~alpha1"}
+  "deb-php-horde-prefs" {>= "2.0.0"}
+  "deb-php-horde-rpc" {< "3.0.0~alpha1"}
+  "deb-php-horde-rpc" {>= "2.0.0"}
+  "deb-php-horde-text-diff" {< "3.0.0~alpha1"}
+  "deb-php-horde-text-diff" {>= "2.0.0"}
+  "deb-php-horde-url" {< "3.0.0~alpha1"}
+  "deb-php-horde-url" {>= "2.0.0"}
+  "deb-php-horde-util" {< "3.0.0~alpha1"}
+  "deb-php-horde-util" {>= "2.0.0"}
+  "deb-php-horde-vfs" {< "3.0.0~alpha1"}
+  "deb-php-horde-vfs" {>= "2.0.0"}
+]
+extra-source "php-horde-wicked_2.0.8-8_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/php-horde-wicked/php-horde-wicked_2.0.8-8_all.deb"
+}

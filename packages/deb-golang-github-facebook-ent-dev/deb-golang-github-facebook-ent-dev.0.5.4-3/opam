@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-facebook-ent-dev_0.5.4-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-facebook-ent-dev"]
+]
+depends: [
+  "deb-golang-github-data-dog-go-sqlmock-dev"
+  "deb-golang-github-go-openapi-inflect-dev"
+  "deb-golang-github-go-sql-driver-mysql-dev"
+  "deb-golang-github-google-uuid-dev"
+  "deb-golang-github-gorilla-websocket-dev"
+  "deb-golang-github-json-iterator-go-dev"
+  "deb-golang-github-lib-pq-dev"
+  "deb-golang-github-mattn-go-sqlite3-dev"
+  "deb-golang-github-mitchellh-mapstructure-dev"
+  "deb-golang-github-modern-go-reflect2-dev"
+  "deb-golang-github-olekukonko-tablewriter-dev"
+  "deb-golang-github-pkg-errors-dev"
+  "deb-golang-github-spf13-cobra-dev"
+  "deb-golang-github-stretchr-testify-dev"
+  "deb-golang-go-flags-dev"
+  "deb-golang-go-opencensus-dev"
+  "deb-golang-golang-x-sync-dev"
+  "deb-golang-golang-x-tools-dev"
+]
+extra-source "golang-github-facebook-ent-dev_0.5.4-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-facebook-ent/golang-github-facebook-ent-dev_0.5.4-3_all.deb"
+}

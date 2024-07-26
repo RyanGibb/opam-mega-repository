@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-sidekiq_6.0.4+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-sidekiq"]
+]
+depends: [
+  "deb-libjs-bootstrap"
+  "deb-ruby-celluloid" {>= "0.16.0"}
+  "deb-ruby-concurrent"
+  "deb-ruby-connection-pool" {< "3.0"}
+  "deb-ruby-connection-pool" {>= "2.2.2~"}
+  "deb-ruby-json"
+  "deb-ruby-rack-protection" {>= "1.5.0"}
+  "deb-ruby-redis" {>= "3.3.5~"}
+  "deb-ruby-redis-namespace" {< "2.0"}
+  "deb-ruby-redis-namespace" {>= "1.5.2"}
+  ("deb-ruby" | "deb- ruby-interpreter")
+]
+extra-source "ruby-sidekiq_6.0.4+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-sidekiq/ruby-sidekiq_6.0.4+dfsg-2_all.deb"
+}

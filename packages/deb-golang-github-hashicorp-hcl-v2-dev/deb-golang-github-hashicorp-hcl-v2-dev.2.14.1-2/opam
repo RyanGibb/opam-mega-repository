@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-hashicorp-hcl-v2-dev_2.14.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-hashicorp-hcl-v2-dev"]
+]
+depends: [
+  "deb-golang-github-agext-levenshtein-dev"
+  "deb-golang-github-apparentlymart-go-dump-dev"
+  "deb-golang-github-apparentlymart-go-textseg-dev"
+  "deb-golang-github-davecgh-go-spew-dev"
+  "deb-golang-github-go-test-deep-dev"
+  "deb-golang-github-google-go-cmp-dev"
+  "deb-golang-github-kr-pretty-dev"
+  "deb-golang-github-kylelemons-godebug-dev"
+  "deb-golang-github-mitchellh-go-wordwrap-dev"
+  "deb-golang-github-sergi-go-diff-dev"
+  "deb-golang-github-spf13-pflag-dev"
+  "deb-golang-github-zclconf-go-cty-debug-dev"
+  "deb-golang-github-zclconf-go-cty-dev" {>= "1.8.0"}
+  "deb-golang-golang-x-crypto-dev"
+]
+extra-source "golang-github-hashicorp-hcl-v2-dev_2.14.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-hashicorp-hcl-v2/golang-github-hashicorp-hcl-v2-dev_2.14.1-2_all.deb"
+}

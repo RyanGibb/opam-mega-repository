@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i krb5-kpropd_1.17-3+deb10u4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r krb5-kpropd"]
+]
+depends: [
+  "deb-krb5-kdc" {= "1.17-3+deb10u4"}
+  "deb-libc6" {>= "2.8"}
+  "deb-libcom-err2" {>= "1.43.9"}
+  "deb-libgssapi-krb5-2" {>= "1.6.dfsg.2"}
+  "deb-libgssrpc4" {>= "1.6.dfsg.2"}
+  "deb-libk5crypto3" {>= "1.6.dfsg.2"}
+  "deb-libkadm5clnt-mit11" {>= "1.15~beta1"}
+  "deb-libkdb5-9"
+  "deb-libkeyutils1" {>= "1.4"}
+  "deb-libkrb5-3" {>= "1.16"}
+  "deb-libkrb5support0" {>= "1.7dfsg~beta2"}
+  "deb-lsb-base"
+]
+extra-source "krb5-kpropd_1.17-3+deb10u4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/krb5/krb5-kpropd_1.17-3+deb10u4_amd64.deb"
+}

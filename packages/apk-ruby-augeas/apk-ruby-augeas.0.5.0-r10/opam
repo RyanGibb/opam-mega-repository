@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ruby-augeas-0.5.0-r10.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ruby-augeas"]
+]
+depends: [
+  "apk-augeas-libs" {= "1.12.0-r1"}
+  "apk-libucontext" {= "1.2-r0"}
+  "apk-libxml2" {= "2.10.4-r0"}
+  "apk-musl" {= "1.2.3-r5"}
+  "apk-ruby" {= "3.1.5-r0"}
+  "apk-ruby-libs" {= "3.1.5-r0"}
+]
+extra-source "ruby-augeas-0.5.0-r10.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ruby-augeas-0.5.0-r10.apk"
+}

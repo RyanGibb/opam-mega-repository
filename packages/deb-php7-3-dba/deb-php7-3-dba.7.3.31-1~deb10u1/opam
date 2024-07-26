@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i php7.3-dba_7.3.31-1~deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r php7.3-dba"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libdb5-3"
+  "deb-liblmdb0" {>= "0.9.7"}
+  "deb-libqdbm14" {>= "1.8.74"}
+  "deb-php-common" {>= "1-35"}
+  "deb-php7-3-common" {= "7.3.31-1~deb10u1"}
+  "deb-ucf"
+]
+extra-source "php7.3-dba_7.3.31-1~deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/php7.3/php7.3-dba_7.3.31-1~deb10u1_amd64.deb"
+}

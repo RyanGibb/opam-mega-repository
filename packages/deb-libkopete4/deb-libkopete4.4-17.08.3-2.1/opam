@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkopete4_4:17.08.3-2.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkopete4"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libkabc4" {>= "4-4.3.4"}
+  "deb-libkcmutils4" {>= "4-4.4.95"}
+  "deb-libkde3support4" {>= "4-4.3.4"}
+  "deb-libkdecore5" {>= "4-4.4.4-2~"}
+  "deb-libkdeui5" {>= "4-4.3.4"}
+  "deb-libkemoticons4" {>= "4-4.4.95"}
+  "deb-libkio5" {>= "4-4.3.4"}
+  "deb-libqt4-dbus" {>= "4-4.5.3"}
+  "deb-libqt4-network" {>= "4-4.5.3"}
+  "deb-libqt4-qt3support" {>= "4-4.5.3"}
+  "deb-libqt4-xml" {>= "4-4.5.3"}
+  "deb-libqtcore4" {>= "4-4.8.0"}
+  "deb-libqtgui4" {>= "4-4.5.3"}
+  "deb-libsolid4" {>= "4-4.3.4"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libx11-6"
+  "deb-libxss1"
+]
+extra-source "libkopete4_4:17.08.3-2.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kopete/libkopete4_17.08.3-2.1_amd64.deb"
+}

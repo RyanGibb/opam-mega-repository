@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-generic-data-dev_0.8.3.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-generic-data-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-base-orphans-dev"
+  "deb-libghc-contravariant-dev"
+  "deb-libghc-show-combinators-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-generic-data-dev_0.8.3.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-generic-data/libghc-generic-data-dev_0.8.3.0-1_amd64.deb"
+}

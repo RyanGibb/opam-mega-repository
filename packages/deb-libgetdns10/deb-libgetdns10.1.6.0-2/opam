@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgetdns10_1.6.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgetdns10"]
+]
+depends: [
+  "deb-dns-root-data"
+  "deb-libbsd0" {>= "0.2.0"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libev4" {>= "1-4.04"}
+  "deb-libevent-core-2-1-7" {>= "2.1.8-stable"}
+  "deb-libidn2-0" {>= "2.0.0"}
+  "deb-libssl1-1" {>= "1.1.1"}
+  "deb-libunbound8" {>= "1.8.0"}
+  "deb-libuv1" {>= "1.4.2"}
+]
+extra-source "libgetdns10_1.6.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/getdns/libgetdns10_1.6.0-2_amd64.deb"
+}

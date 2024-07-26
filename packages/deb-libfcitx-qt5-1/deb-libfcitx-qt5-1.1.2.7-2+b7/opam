@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libfcitx-qt5-1_1.2.7-2+b7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libfcitx-qt5-1"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libfcitx-config4" {>= "4.2.7"}
+  "deb-libfcitx-qt5-data"
+  "deb-libfcitx-utils0" {>= "4.2.7"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.15.1"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+]
+extra-source "libfcitx-qt5-1_1.2.7-2+b7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fcitx-qt5/libfcitx-qt5-1_1.2.7-2+b7_amd64.deb"
+}

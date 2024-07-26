@@ -1,0 +1,61 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openstack-puppet-modules_0.34_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openstack-puppet-modules"]
+]
+depends: [
+  "deb-puppet-module-aodh"
+  "deb-puppet-module-arioch-redis"
+  "deb-puppet-module-barbican"
+  "deb-puppet-module-camptocamp-openssl"
+  "deb-puppet-module-ceilometer"
+  "deb-puppet-module-ceph"
+  "deb-puppet-module-cinder"
+  "deb-puppet-module-cloudkitty"
+  "deb-puppet-module-congress"
+  "deb-puppet-module-designate"
+  "deb-puppet-module-duritong-sysctl"
+  "deb-puppet-module-glance"
+  "deb-puppet-module-gnocchi"
+  "deb-puppet-module-heat"
+  "deb-puppet-module-horizon"
+  "deb-puppet-module-ironic"
+  "deb-puppet-module-joshuabaird-ipaclient"
+  "deb-puppet-module-keystone"
+  "deb-puppet-module-magnum"
+  "deb-puppet-module-manila"
+  "deb-puppet-module-michaeltchapman-galera"
+  "deb-puppet-module-murano"
+  "deb-puppet-module-neutron"
+  "deb-puppet-module-nova"
+  "deb-puppet-module-octavia"
+  "deb-puppet-module-openstack-extras"
+  "deb-puppet-module-openstacklib"
+  "deb-puppet-module-oslo"
+  "deb-puppet-module-ovn"
+  "deb-puppet-module-panko"
+  "deb-puppet-module-placement"
+  "deb-puppet-module-puppetlabs-apache" {>= "3.1.0"}
+  "deb-puppet-module-puppetlabs-concat"
+  "deb-puppet-module-puppetlabs-haproxy"
+  "deb-puppet-module-puppetlabs-ntp"
+  "deb-puppet-module-puppetlabs-rabbitmq"
+  "deb-puppet-module-puppetlabs-rsync"
+  "deb-puppet-module-puppetlabs-tftp"
+  "deb-puppet-module-puppetlabs-vcsrepo"
+  "deb-puppet-module-richardc-datacat"
+  "deb-puppet-module-rodjek-logrotate"
+  "deb-puppet-module-sahara"
+  "deb-puppet-module-saz-rsyslog"
+  "deb-puppet-module-saz-ssh"
+  "deb-puppet-module-sbitio-monit"
+  "deb-puppet-module-swift"
+  "deb-puppet-module-tempest"
+  "deb-puppet-module-voxpupuli-corosync"
+  "deb-puppet-module-vswitch"
+]
+extra-source "openstack-puppet-modules_0.34_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openstack-meta-packages/openstack-puppet-modules_0.34_all.deb"
+}

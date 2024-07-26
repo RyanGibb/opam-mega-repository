@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-sequoia-ipc-dev_0.28.0-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-sequoia-ipc-dev"]
+]
+depends: [
+  "deb-librust-anyhow-dev"
+  "deb-librust-buffered-reader-1-dev"
+  "deb-librust-capnp-rpc-0-14+default-dev"
+  "deb-librust-dirs-4+default-dev"
+  "deb-librust-fs2-dev"
+  "deb-librust-futures-dev"
+  "deb-librust-lalrpop-dev"
+  "deb-librust-lalrpop-util-dev"
+  "deb-librust-lazy-static-dev"
+  "deb-librust-libc-dev"
+  "deb-librust-memsec-dev" {>= "0.5-~~"}
+  "deb-librust-rand-0-8+default-dev"
+  "deb-librust-sequoia-openpgp-1+compression-bzip2-dev"
+  "deb-librust-sequoia-openpgp-1+compression-deflate-dev"
+  "deb-librust-sequoia-openpgp-1+compression-dev"
+  "deb-librust-sequoia-openpgp-1+crypto-nettle-dev"
+  "deb-librust-sequoia-openpgp-1+default-dev"
+  "deb-librust-sequoia-openpgp-1-dev"
+  "deb-librust-socket2-0-4+default-dev"
+  "deb-librust-tempfile-dev"
+  "deb-librust-thiserror-dev"
+  "deb-librust-tokio-dev"
+  "deb-librust-tokio-util-0-7+compat-dev"
+  "deb-librust-tokio-util-0-7+default-dev"
+]
+extra-source "librust-sequoia-ipc-dev_0.28.0-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-sequoia-ipc/librust-sequoia-ipc-dev_0.28.0-4_amd64.deb"
+}

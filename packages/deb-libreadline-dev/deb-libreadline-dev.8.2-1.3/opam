@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libreadline-dev_8.2-1.3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libreadline-dev"]
+]
+depends: [
+  "deb-libncurses-dev"
+  "deb-libreadline8" {= "8.2-1.3"}
+  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+]
+conflicts: [
+  "deb-libreadline-gplv2-dev"
+  "deb-libreadline5-dev"
+  "deb-libreadline6-dev"
+]
+extra-source "libreadline-dev_8.2-1.3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/readline/libreadline-dev_8.2-1.3_amd64.deb"
+}

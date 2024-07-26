@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-clash-prelude-dev_1.6.4-1+b5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-clash-prelude-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-arrows-dev"
+  "deb-libghc-constraints-dev"
+  "deb-libghc-data-binary-ieee754-dev"
+  "deb-libghc-data-default-class-dev"
+  "deb-libghc-extra-dev"
+  "deb-libghc-ghc-typelits-extra-dev"
+  "deb-libghc-ghc-typelits-knownnat-dev"
+  "deb-libghc-ghc-typelits-natnormalise-dev"
+  "deb-libghc-half-dev"
+  "deb-libghc-hashable-dev"
+  "deb-libghc-interpolate-dev"
+  "deb-libghc-lens-dev"
+  "deb-libghc-quickcheck2-dev"
+  "deb-libghc-recursion-schemes-dev"
+  "deb-libghc-reflection-dev"
+  "deb-libghc-singletons-dev"
+  "deb-libghc-th-abstraction-dev"
+  "deb-libghc-th-lift-dev"
+  "deb-libghc-th-orphans-dev"
+  "deb-libghc-type-errors-dev"
+  "deb-libghc-uniplate-dev"
+  "deb-libghc-vector-dev"
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-libtinfo6" {>= "6"}
+]
+extra-source "libghc-clash-prelude-dev_1.6.4-1+b5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-clash-prelude/libghc-clash-prelude-dev_1.6.4-1+b5_amd64.deb"
+}

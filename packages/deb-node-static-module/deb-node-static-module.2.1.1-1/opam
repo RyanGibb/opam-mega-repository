@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-static-module_2.1.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-static-module"]
+]
+depends: [
+  "deb-node-concat-stream" {>= "1.6.0"}
+  "deb-node-duplexer3"
+  "deb-node-escodegen" {>= "1.9.0"}
+  "deb-node-falafel" {>= "2.1.0"}
+  "deb-node-function-bind"
+  "deb-node-lodash-packages" {>= "4.15.0"}
+  "deb-node-object-inspect" {>= "1.4.0"}
+  "deb-node-quote-stream" {>= "1.0.2"}
+  "deb-node-static-eval" {>= "0.2.0"}
+  "deb-node-through2" {>= "2.0.3"}
+  "deb-nodejs" {>= "4.7"}
+]
+extra-source "node-static-module_2.1.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-static-module/node-static-module_2.1.1-1_all.deb"
+}

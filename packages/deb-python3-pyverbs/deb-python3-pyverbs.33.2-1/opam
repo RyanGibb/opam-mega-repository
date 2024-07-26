@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-pyverbs_33.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-pyverbs"]
+]
+depends: [
+  "deb-ibverbs-providers" {>= "33"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libibverbs1" {>= "33"}
+  "deb-libpython3-9" {>= "3.9.1"}
+  "deb-librdmacm1" {>= "31"}
+  "deb-python3" {< "3.10"}
+  "deb-python3" {>= "3.9~"}
+  "deb-python3-any"
+  "deb-rdma-core" {>= "21"}
+]
+extra-source "python3-pyverbs_33.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rdma-core/python3-pyverbs_33.2-1_amd64.deb"
+}

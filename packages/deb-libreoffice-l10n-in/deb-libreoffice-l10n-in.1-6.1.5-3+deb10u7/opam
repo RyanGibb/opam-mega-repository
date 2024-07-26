@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libreoffice-l10n-in_1:6.1.5-3+deb10u7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libreoffice-l10n-in"]
+]
+depends: [
+  "deb-libreoffice-common" {= "1-6.1.5-3+deb10u7"}
+  "deb-libreoffice-l10n-as"
+  "deb-libreoffice-l10n-bn"
+  "deb-libreoffice-l10n-gu"
+  "deb-libreoffice-l10n-hi"
+  "deb-libreoffice-l10n-ml"
+  "deb-libreoffice-l10n-mr"
+  "deb-libreoffice-l10n-or"
+  "deb-libreoffice-l10n-pa-in"
+  "deb-libreoffice-l10n-ta"
+  "deb-libreoffice-l10n-te"
+]
+extra-source "libreoffice-l10n-in_1:6.1.5-3+deb10u7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libr/libreoffice/libreoffice-l10n-in_6.1.5-3+deb10u7_all.deb"
+}

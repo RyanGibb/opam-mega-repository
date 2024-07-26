@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-igraph_1.3.5-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-igraph"]
+]
+depends: [
+  "deb-libc6" {>= "2.35"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgfortran5" {>= "8"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.2.20221110-2"}
+  "deb-r-cran-magrittr"
+  "deb-r-cran-matrix"
+  "deb-r-cran-pkgconfig" {>= "2.0.0"}
+  "deb-r-cran-rlang"
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "r-cran-igraph_1.3.5-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-igraph/r-cran-igraph_1.3.5-3_amd64.deb"
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i creduce_2.9~20181016-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r creduce"]
+]
+depends: [
+  "deb-clang-format-7"
+  "deb-libbenchmark-timer-perl"
+  "deb-libc6" {>= "2.14"}
+  "deb-libexporter-lite-perl"
+  "deb-libfile-which-perl"
+  "deb-libgcc1" {>= "1-3.4"}
+  "deb-libgetopt-tabular-perl"
+  "deb-libllvm7" {>= "1-7~svn298832-1~"}
+  "deb-libregexp-common-perl"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libterm-readkey-perl"
+]
+extra-source "creduce_2.9~20181016-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/creduce/creduce_2.9~20181016-1_amd64.deb"
+}

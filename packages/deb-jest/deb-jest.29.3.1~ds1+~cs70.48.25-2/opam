@@ -1,0 +1,72 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i jest_29.3.1~ds1+~cs70.48.25-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r jest"]
+]
+depends: [
+  "deb-node-ansi-escapes"
+  "deb-node-ansi-regex"
+  "deb-node-ansi-styles"
+  "deb-node-anymatch"
+  "deb-node-babel-generator"
+  "deb-node-babel-plugin-syntax-typescript"
+  "deb-node-babel-preset-current-node-syntax"
+  "deb-node-babel7"
+  "deb-node-camelcase"
+  "deb-node-chalk"
+  "deb-node-ci-info"
+  "deb-node-cjs-module-lexer"
+  "deb-node-co"
+  "deb-node-convert-source-map"
+  "deb-node-cosmiconfig"
+  "deb-node-deepmerge"
+  "deb-node-detect-newline"
+  "deb-node-emittery"
+  "deb-node-execa"
+  "deb-node-exit"
+  "deb-node-fb-watchman"
+  "deb-node-glob"
+  "deb-node-graceful-fs"
+  "deb-node-is-generator-fn"
+  "deb-node-istanbul"
+  "deb-node-jest-debbundle" {= "29.3.1~ds1+~cs70.48.25-2"}
+  "deb-node-jest-worker" {= "29.3.1~ds1+~cs70.48.25-2"}
+  "deb-node-jsdom"
+  "deb-node-json-stable-stringify"
+  "deb-node-leven"
+  "deb-node-micromatch"
+  "deb-node-minimist"
+  "deb-node-p-limit"
+  "deb-node-parse-json"
+  "deb-node-pirates"
+  "deb-node-prompts"
+  "deb-node-react"
+  "deb-node-react-dom"
+  "deb-node-react-is"
+  "deb-node-react-test-renderer"
+  "deb-node-resolve"
+  "deb-node-resolve-from"
+  "deb-node-rimraf"
+  "deb-node-sane"
+  "deb-node-semver"
+  "deb-node-sinclair-typebox" {>= "0.24.44~"}
+  "deb-node-sinon"
+  "deb-node-slash"
+  "deb-node-source-map"
+  "deb-node-source-map-support"
+  "deb-node-stack-utils"
+  "deb-node-strip-ansi"
+  "deb-node-strip-bom"
+  "deb-node-strip-json-comments"
+  "deb-node-types-babel-core"
+  "deb-node-types-babel-traverse"
+  "deb-node-which"
+  "deb-node-write-file-atomic"
+  "deb-node-yargs"
+  "deb-nodejs-any" {>= "14"}
+]
+extra-source "jest_29.3.1~ds1+~cs70.48.25-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-jest/jest_29.3.1~ds1+~cs70.48.25-2_all.deb"
+}

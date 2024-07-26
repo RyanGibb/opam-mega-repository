@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i vim-tiny_2:9.0.1378-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r vim-tiny"]
+]
+depends: [
+  "deb-libacl1" {>= "2.2.23"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libselinux1" {>= "3.1~"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-vim-common" {= "2-9.0.1378-2"}
+]
+extra-source "vim-tiny_2:9.0.1378-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/vim/vim-tiny_9.0.1378-2_amd64.deb"
+}

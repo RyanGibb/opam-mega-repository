@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-convert-color-0.17-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-convert-color"]
+]
+depends: [
+  "apk-perl" {= "5.38.2-r0"}
+  "apk-perl-list-utilsby" {= "0.12-r2"}
+  "apk-perl-module-pluggable" {= "5.2-r4"}
+]
+extra-source "perl-convert-color-0.17-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-convert-color-0.17-r1.apk"
+}

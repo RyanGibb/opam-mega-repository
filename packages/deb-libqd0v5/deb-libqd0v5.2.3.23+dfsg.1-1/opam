@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libqd0v5_2.3.23+dfsg.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libqd0v5"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgfortran5" {>= "8"}
+  "deb-libstdc++6" {>= "11"}
+]
+conflicts: [
+  "deb-libqd0"
+  "deb-libqd2c2a"
+]
+extra-source "libqd0v5_2.3.23+dfsg.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qd/libqd0v5_2.3.23+dfsg.1-1_amd64.deb"
+}

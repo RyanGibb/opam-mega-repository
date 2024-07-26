@@ -1,0 +1,44 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i erlang_1:21.2.6+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r erlang"]
+]
+depends: [
+  "deb-erlang-asn1"
+  "deb-erlang-common-test"
+  "deb-erlang-crypto"
+  "deb-erlang-debugger"
+  "deb-erlang-dev"
+  "deb-erlang-dialyzer"
+  "deb-erlang-diameter"
+  "deb-erlang-edoc"
+  "deb-erlang-eldap"
+  "deb-erlang-erl-docgen"
+  "deb-erlang-et"
+  "deb-erlang-eunit"
+  "deb-erlang-ftp"
+  "deb-erlang-inets"
+  "deb-erlang-megaco"
+  "deb-erlang-mnesia"
+  "deb-erlang-observer"
+  "deb-erlang-odbc"
+  "deb-erlang-os-mon"
+  "deb-erlang-parsetools"
+  "deb-erlang-public-key"
+  "deb-erlang-reltool"
+  "deb-erlang-runtime-tools"
+  "deb-erlang-snmp"
+  "deb-erlang-ssh"
+  "deb-erlang-ssl"
+  "deb-erlang-syntax-tools"
+  "deb-erlang-tftp"
+  "deb-erlang-tools"
+  "deb-erlang-wx"
+  "deb-erlang-xmerl"
+  ("deb-erlang-base" | "deb- erlang-base-hipe")
+]
+extra-source "erlang_1:21.2.6+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/erlang/erlang_21.2.6+dfsg-1_all.deb"
+}

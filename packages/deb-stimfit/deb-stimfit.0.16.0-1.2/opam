@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i stimfit_0.16.0-1.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r stimfit"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libfftw3-double3" {>= "3.3.10"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libhdf5-103-1"
+  "deb-libhdf5-hl-100"
+  "deb-libpython3-11" {>= "3.11.0"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libsuitesparse-dev"
+  "deb-libwxbase3-2-1" {>= "3.2.1+dfsg"}
+  "deb-libwxgtk3-2-1" {>= "3.2.1+dfsg-2"}
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-11"
+  "deb-python3-any"
+  "deb-python3-matplotlib"
+  "deb-python3-numpy"
+  "deb-python3-wxgtk4-0" {>= "4.0.7"}
+  "deb-zlib1g-dev"
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "stimfit_0.16.0-1.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/stimfit/stimfit_0.16.0-1.2_amd64.deb"
+}

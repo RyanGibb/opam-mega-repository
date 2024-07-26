@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add links-2.23-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del links"]
+]
+depends: [
+  "apk-libbz2" {= "1.0.8-r1"}
+  "apk-libcrypto1-1" {= "1.1.1t-r2"}
+  "apk-libevent" {= "2.1.12-r2"}
+  "apk-libssl1-1" {= "1.1.1t-r2"}
+  "apk-musl" {= "1.2.2-r5"}
+  "apk-zlib" {= "1.2.12-r3"}
+  "apk-zstd-libs" {= "1.4.9-r1"}
+]
+extra-source "links-2.23-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/links-2.23-r0.apk"
+}

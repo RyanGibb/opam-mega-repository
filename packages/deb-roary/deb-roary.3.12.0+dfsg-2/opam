@@ -1,0 +1,43 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i roary_3.12.0+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r roary"]
+]
+depends: [
+  "deb-bedtools"
+  "deb-bioperl"
+  "deb-cd-hit"
+  "deb-fasttree"
+  "deb-libarray-utils-perl"
+  "deb-libdigest-md5-file-perl"
+  "deb-libenv-path-perl"
+  "deb-libexception-class-perl"
+  "deb-libfile-find-rule-perl"
+  "deb-libfile-grep-perl"
+  "deb-libfile-slurper-perl"
+  "deb-libfile-which-perl"
+  "deb-libfindbin-libs-perl"
+  "deb-libgraph-perl"
+  "deb-libgraph-readwrite-perl"
+  "deb-liblog-log4perl-perl"
+  "deb-libmoose-perl"
+  "deb-libperlio-utf8-strict-perl"
+  "deb-libtest-file-perl"
+  "deb-libtest-files-perl"
+  "deb-libtest-most-perl"
+  "deb-libtest-output-perl"
+  "deb-libtext-csv-perl"
+  "deb-mafft"
+  "deb-mcl"
+  "deb-ncbi-blast+"
+  "deb-parallel"
+  "deb-perl"
+  "deb-prank"
+  "deb-r-base-core"
+  "deb-r-cran-ggplot2"
+]
+extra-source "roary_3.12.0+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/roary/roary_3.12.0+dfsg-2_all.deb"
+}

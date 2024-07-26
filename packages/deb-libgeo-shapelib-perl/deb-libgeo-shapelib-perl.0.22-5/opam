@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgeo-shapelib-perl_0.22-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgeo-shapelib-perl"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libshp2" {>= "1.3.0"}
+  "deb-libtree-r-perl"
+  "deb-perl" {>= "5.32.0-5"}
+  "deb-perl-base"
+]
+extra-source "libgeo-shapelib-perl_0.22-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libg/libgeo-shapelib-perl/libgeo-shapelib-perl_0.22-5_amd64.deb"
+}

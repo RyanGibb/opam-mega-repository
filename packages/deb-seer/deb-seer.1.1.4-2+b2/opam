@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i seer_1.1.4-2+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r seer"]
+]
+depends: [
+  "deb-libarmadillo9" {>= "1-9.100.6+dfsg"}
+  "deb-libboost-program-options1-67-0"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgzstream0" {>= "1.5+dfsg"}
+  "deb-libhdf5-103"
+  "deb-libstdc++6" {>= "7"}
+  "deb-libtext-csv-perl"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "seer_1.1.4-2+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/seer/seer_1.1.4-2+b2_amd64.deb"
+}

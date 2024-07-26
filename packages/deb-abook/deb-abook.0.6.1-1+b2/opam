@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i abook_0.6.1-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r abook"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libncursesw6" {>= "6"}
+  "deb-libreadline7" {>= "6.0"}
+  "deb-libtinfo6" {>= "6"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "abook_0.6.1-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/abook/abook_0.6.1-1+b2_amd64.deb"
+}

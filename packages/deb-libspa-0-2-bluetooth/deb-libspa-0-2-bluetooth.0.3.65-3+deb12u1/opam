@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libspa-0.2-bluetooth_0.3.65-3+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libspa-0.2-bluetooth"]
+]
+depends: [
+  "deb-libbluetooth3" {>= "4.91"}
+  "deb-libc6" {>= "2.33"}
+  "deb-libdbus-1-3" {>= "1.9.14"}
+  "deb-libfreeaptx0" {>= "0.1.1"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-liblc3-0" {>= "1.0.1"}
+  "deb-libldacbt-abr2" {>= "2.0.2"}
+  "deb-libldacbt-enc2" {>= "2.0.2"}
+  "deb-libopus0" {>= "1.1"}
+  "deb-libsbc1" {>= "2.0"}
+  "deb-libspa-0-2-modules" {= "0.3.65-3+deb12u1"}
+  "deb-libusb-1-0-0" {>= "2-1.0.16"}
+]
+extra-source "libspa-0.2-bluetooth_0.3.65-3+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pipewire/libspa-0.2-bluetooth_0.3.65-3+deb12u1_amd64.deb"
+}

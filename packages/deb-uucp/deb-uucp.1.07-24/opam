@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i uucp_1.07-24_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r uucp"]
+]
+depends: [
+  "deb-cron" {>= "3.0pl1-42"}
+  "deb-cu" {= "1.07-24"}
+  "deb-libc6" {>= "2.15"}
+  "deb-libpam-runtime" {>= "0.76-13.1"}
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-netbase"
+  ("deb-bsd-mailx" | "deb- mailx")
+  ("deb-openbsd-inetd" | "deb- inet-superserver")
+]
+extra-source "uucp_1.07-24_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/u/uucp/uucp_1.07-24_amd64.deb"
+}

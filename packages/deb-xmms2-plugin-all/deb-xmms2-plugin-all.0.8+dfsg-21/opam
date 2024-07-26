@@ -1,0 +1,56 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xmms2-plugin-all_0.8+dfsg-21_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xmms2-plugin-all"]
+]
+depends: [
+  "deb-xmms2-plugin-airplay"
+  "deb-xmms2-plugin-alsa"
+  "deb-xmms2-plugin-ao"
+  "deb-xmms2-plugin-apefile"
+  "deb-xmms2-plugin-asf"
+  "deb-xmms2-plugin-asx"
+  "deb-xmms2-plugin-avcodec"
+  "deb-xmms2-plugin-cdda"
+  "deb-xmms2-plugin-cue"
+  "deb-xmms2-plugin-curl"
+  "deb-xmms2-plugin-daap"
+  "deb-xmms2-plugin-faad"
+  "deb-xmms2-plugin-flac"
+  "deb-xmms2-plugin-flv"
+  "deb-xmms2-plugin-gme"
+  "deb-xmms2-plugin-gvfs"
+  "deb-xmms2-plugin-html"
+  "deb-xmms2-plugin-ices"
+  "deb-xmms2-plugin-icymetaint"
+  "deb-xmms2-plugin-id3v2"
+  "deb-xmms2-plugin-jack"
+  "deb-xmms2-plugin-karaoke"
+  "deb-xmms2-plugin-m3u"
+  "deb-xmms2-plugin-mad"
+  "deb-xmms2-plugin-mms"
+  "deb-xmms2-plugin-modplug"
+  "deb-xmms2-plugin-mp4"
+  "deb-xmms2-plugin-mpg123"
+  "deb-xmms2-plugin-musepack"
+  "deb-xmms2-plugin-normalize"
+  "deb-xmms2-plugin-ofa"
+  "deb-xmms2-plugin-oss"
+  "deb-xmms2-plugin-pls"
+  "deb-xmms2-plugin-pulse"
+  "deb-xmms2-plugin-rss"
+  "deb-xmms2-plugin-sid"
+  "deb-xmms2-plugin-smb"
+  "deb-xmms2-plugin-speex"
+  "deb-xmms2-plugin-tta"
+  "deb-xmms2-plugin-vocoder"
+  "deb-xmms2-plugin-vorbis"
+  "deb-xmms2-plugin-wavpack"
+  "deb-xmms2-plugin-xml"
+  "deb-xmms2-plugin-xspf"
+]
+extra-source "xmms2-plugin-all_0.8+dfsg-21_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xmms2/xmms2-plugin-all_0.8+dfsg-21_amd64.deb"
+}

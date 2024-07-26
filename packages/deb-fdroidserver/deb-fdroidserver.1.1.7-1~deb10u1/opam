@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fdroidserver_1.1.7-1~deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fdroidserver"]
+]
+depends: [
+  "deb-androguard" {>= "3.1.0~rc2"}
+  "deb-python3-any"
+  "deb-python3-clint"
+  "deb-python3-defusedxml"
+  "deb-python3-git"
+  "deb-python3-libcloud"
+  "deb-python3-mwclient"
+  "deb-python3-paramiko"
+  "deb-python3-pil"
+  "deb-python3-pyasn1"
+  "deb-python3-pyasn1-modules"
+  "deb-python3-qrcode"
+  "deb-python3-requests"
+  "deb-python3-ruamel-yaml"
+  "deb-python3-vagrant"
+  "deb-python3-yaml"
+  "deb-rsync"
+  ("deb-default-jdk-headless" | "deb- default-jdk" | "deb- openjdk-7-jdk" | "deb- openjdk-8-jdk-headless" | "deb- openjdk-10-jdk-headless" | "deb- openjdk-11-jdk-headless" | "deb- oracle-java7-jdk" | "deb- oracle-java8-jdk" | "deb- oracle-java9-jdk" | "deb- oracle-java10-jdk" | "deb- oracle-java11-jdk" | "deb- oracle-java12-jdk" | "deb- oracle-java7-installer" | "deb- oracle-java8-installer" | "deb- oracle-java9-installer" | "deb- oracle-java10-installer" | "deb- oracle-java11-installer" | "deb- oracle-java12-installer")
+]
+extra-source "fdroidserver_1.1.7-1~deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fdroidserver/fdroidserver_1.1.7-1~deb10u1_all.deb"
+}

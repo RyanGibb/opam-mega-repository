@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i granule_1.4.0-7-10_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r granule"]
+]
+depends: [
+  "deb-libassa-3-5-5v5" {> "3.5.0"}
+  "deb-libatkmm-1-6-1v5" {>= "2.28.2"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libglibmm-2-4-1v5" {>= "2.64.2"}
+  "deb-libgtk2-0-0" {>= "2.8.0"}
+  "deb-libgtkmm-2-4-1v5" {>= "1-2.24.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangomm-1-4-1v5" {>= "2.46.1"}
+  "deb-libsigc++-2-0-0v5" {>= "2.8.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libxml2" {>= "2.7.4"}
+]
+extra-source "granule_1.4.0-7-10_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/granule/granule_1.4.0-7-10_amd64.deb"
+}

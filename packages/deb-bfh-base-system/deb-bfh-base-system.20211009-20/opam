@@ -1,0 +1,62 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i bfh-base-system_20211009-20_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r bfh-base-system"]
+]
+depends: [
+  "deb-acl"
+  "deb-apt-utils"
+  "deb-bash-completion"
+  "deb-bc"
+  "deb-ca-certificates"
+  "deb-debconf-utils"
+  "deb-gawk"
+  "deb-git"
+  "deb-gnupg"
+  "deb-htop"
+  "deb-jq"
+  "deb-knot-dnssecutils"
+  "deb-knot-dnsutils"
+  "deb-knot-host"
+  "deb-less"
+  "deb-libnss-sss"
+  "deb-libpam-sss"
+  "deb-libpam-systemd"
+  "deb-lnav"
+  "deb-lsb-release"
+  "deb-lynx"
+  "deb-man-db"
+  "deb-mc"
+  "deb-mtr-tiny"
+  "deb-needrestart"
+  "deb-openssl"
+  "deb-plzip"
+  "deb-powerline"
+  "deb-powerline-gitstatus"
+  "deb-psmisc"
+  "deb-ptpython"
+  "deb-python3"
+  "deb-rsync"
+  "deb-screen"
+  "deb-sssd"
+  "deb-sssd-tools"
+  "deb-sudo"
+  "deb-systemd-oomd"
+  "deb-tarlz"
+  "deb-task-ssh-server"
+  "deb-tcpdump"
+  "deb-traceroute"
+  "deb-vim"
+  "deb-wget"
+  "deb-whois"
+  "deb-zstd"
+  "deb-zutils"
+]
+conflicts: [
+  "deb-resolvconf"
+]
+extra-source "bfh-base-system_20211009-20_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/bfh-metapackages/bfh-base-system_20211009-20_amd64.deb"
+}

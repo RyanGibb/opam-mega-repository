@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-lens-prof_4.18.1-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-lens-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-base-orphans-prof"
+  "deb-libghc-bifunctors-prof"
+  "deb-libghc-call-stack-prof"
+  "deb-libghc-comonad-prof"
+  "deb-libghc-contravariant-prof"
+  "deb-libghc-distributive-prof"
+  "deb-libghc-exceptions-prof"
+  "deb-libghc-free-prof"
+  "deb-libghc-hashable-prof"
+  "deb-libghc-kan-extensions-prof"
+  "deb-libghc-lens-dev" {= "4.18.1-1+b2"}
+  "deb-libghc-parallel-prof"
+  "deb-libghc-profunctors-prof"
+  "deb-libghc-reflection-prof"
+  "deb-libghc-semigroupoids-prof"
+  "deb-libghc-tagged-prof"
+  "deb-libghc-th-abstraction-prof"
+  "deb-libghc-transformers-compat-prof"
+  "deb-libghc-type-equality-prof"
+  "deb-libghc-unordered-containers-prof"
+  "deb-libghc-vector-prof"
+]
+extra-source "libghc-lens-prof_4.18.1-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-lens/libghc-lens-prof_4.18.1-1+b2_amd64.deb"
+}

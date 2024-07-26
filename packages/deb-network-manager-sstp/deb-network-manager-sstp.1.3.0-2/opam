@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i network-manager-sstp_1.3.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r network-manager-sstp"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libglib2-0-0" {>= "2.41.1"}
+  "deb-libgnutls30" {>= "3.7.2"}
+  "deb-libnm0" {>= "1.2.0"}
+  "deb-libsstp-api-0"
+  "deb-network-manager" {>= "1.2.0"}
+  "deb-ppp" {< "2.4.9-2~"}
+  "deb-ppp" {>= "2.4.9-1+~"}
+  "deb-sstp-client" {>= "1.0.12"}
+]
+extra-source "network-manager-sstp_1.3.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/network-manager-sstp/network-manager-sstp_1.3.0-2_amd64.deb"
+}

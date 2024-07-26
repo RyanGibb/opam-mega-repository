@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-gulp-load-plugins_1.5.0-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-gulp-load-plugins"]
+]
+depends: [
+  "deb-node-array-unique" {>= "0.2.1"}
+  "deb-node-fancy-log" {>= "1.2.0"}
+  "deb-node-findup-sync" {>= "0.4.0"}
+  "deb-node-gulplog" {>= "1.0.0"}
+  "deb-node-has-gulplog" {>= "0.1.0"}
+  "deb-node-micromatch" {>= "2.3.8"}
+  "deb-node-resolve" {>= "1.1.7"}
+  "deb-nodejs"
+]
+extra-source "node-gulp-load-plugins_1.5.0-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-gulp-load-plugins/node-gulp-load-plugins_1.5.0-1.1_all.deb"
+}

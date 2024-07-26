@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmapscript-java_7.2.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmapscript-java"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libfribidi0" {>= "0.19.2"}
+  "deb-libgdal20" {>= "1.10.1-0~"}
+  "deb-libgeos-c1v5" {>= "3.4.2"}
+  "deb-libgif7" {>= "5.1"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libharfbuzz0b" {>= "0.6.0"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libmapserver2" {>= "7.0.0"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libpq5"
+  "deb-libproj13" {>= "4.8.0"}
+  "deb-libprotobuf-c1" {>= "1.0.0"}
+  "deb-librsvg2-2" {>= "2.14.4"}
+  "deb-libxml2" {>= "2.6.27"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libmapscript-java_7.2.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mapserver/libmapscript-java_7.2.2-1_amd64.deb"
+}

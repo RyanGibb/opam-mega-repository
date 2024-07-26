@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libbluetooth-dev_5.55-3.1+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libbluetooth-dev"]
+]
+depends: [
+  "deb-libbluetooth3" {= "5.55-3.1+deb11u1"}
+  ("deb-libc6-dev" | "deb- libc-dev")
+]
+conflicts: [
+  "deb-bluez-pan"
+  "deb-libbluetooth-dev"
+  "deb-libsdp2-dev" {<= "1.5.2"}
+]
+extra-source "libbluetooth-dev_5.55-3.1+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/bluez/libbluetooth-dev_5.55-3.1+deb11u1_amd64.deb"
+}

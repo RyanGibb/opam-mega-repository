@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i claws-mail_4.1.1-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r claws-mail"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.10.0"}
+  "deb-libcompfaceg1"
+  "deb-libdbus-glib-1-2" {>= "0.78"}
+  "deb-libenchant-2-2" {>= "2.2.3"}
+  "deb-libetpan20" {>= "1.9.2"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.27.1"}
+  "deb-libglib2-0-0" {>= "2.70.0"}
+  "deb-libgnutls30" {>= "3.7.5"}
+  "deb-libgtk-3-0" {>= "3.21.6"}
+  "deb-libice6" {>= "1-1.0.0"}
+  "deb-libldap-2-5-0" {>= "2.5.4"}
+  "deb-libnettle8"
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-librsvg2-2" {>= "2.14.4"}
+  "deb-libsm6"
+  "deb-xdg-utils"
+]
+extra-source "claws-mail_4.1.1-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/claws-mail/claws-mail_4.1.1-2+b1_amd64.deb"
+}

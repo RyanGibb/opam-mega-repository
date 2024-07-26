@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i man2html_1.6g-14_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r man2html"]
+]
+depends: [
+  "deb-gawk"
+  "deb-libc6" {>= "2.4"}
+  "deb-man-db" {>= "2.4.1"}
+  "deb-man2html-base" {= "1.6g-14"}
+  "deb-sensible-utils"
+  ("deb-apache2" | "deb- httpd-cgi" | "deb- lynx")
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "man2html_1.6g-14_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/man2html/man2html_1.6g-14_amd64.deb"
+}

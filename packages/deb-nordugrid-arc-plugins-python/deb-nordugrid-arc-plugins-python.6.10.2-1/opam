@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i nordugrid-arc-plugins-python_6.10.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r nordugrid-arc-plugins-python"]
+]
+depends: [
+  "deb-libarccommon3v5" {= "6.10.2-1"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglibmm-2-4-1v5" {>= "2.64.2"}
+  "deb-libpython3-9" {>= "3.9.0~b4"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-python3-nordugrid-arc" {= "6.10.2-1"}
+]
+extra-source "nordugrid-arc-plugins-python_6.10.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/nordugrid-arc/nordugrid-arc-plugins-python_6.10.2-1_amd64.deb"
+}

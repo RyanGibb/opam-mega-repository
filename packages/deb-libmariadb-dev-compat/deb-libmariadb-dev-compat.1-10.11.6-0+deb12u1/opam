@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmariadb-dev-compat_1:10.11.6-0+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmariadb-dev-compat"]
+]
+depends: [
+  "deb-libmariadb-dev" {= "1-10.11.6-0+deb12u1"}
+]
+conflicts: [
+  "deb-libmariadb-client-lgpl-dev-compat"
+  "deb-libmariadbclient-dev-compat"
+  "deb-libmysqlclient-dev"
+]
+extra-source "libmariadb-dev-compat_1:10.11.6-0+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mariadb/libmariadb-dev-compat_10.11.6-0+deb12u1_amd64.deb"
+}

@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openscenegraph-plugin-osgearth_2.10.0+dfsg-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openscenegraph-plugin-osgearth"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgdal20"
+  "deb-libgdal20" {>= "2.0.1"}
+  "deb-libgl1"
+  "deb-libopenscenegraph-3-4-131"
+  "deb-libopenthreads20"
+  "deb-libosgearth5" {>= "2.10.0"}
+  "deb-libosgearthannotation5" {>= "2.10.0"}
+  "deb-libosgearthfeatures5" {>= "2.10.0"}
+  "deb-libosgearthsymbology5" {>= "2.8~rc1"}
+  "deb-libosgearthutil5" {>= "2.10.0"}
+  "deb-libprotobuf17"
+  "deb-libsqlite3-0" {>= "3.7.15"}
+  "deb-libstdc++6" {>= "5.2"}
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+extra-source "openscenegraph-plugin-osgearth_2.10.0+dfsg-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/osgearth/openscenegraph-plugin-osgearth_2.10.0+dfsg-1+b1_amd64.deb"
+}

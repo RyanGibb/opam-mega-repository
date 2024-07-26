@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libprotoc-24.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libprotoc"]
+]
+depends: [
+  "apk-abseil-cpp-hash" {= "20230802.1-r0"}
+  "apk-abseil-cpp-log-internal-check-op" {= "20230802.1-r0"}
+  "apk-abseil-cpp-log-internal-conditions" {= "20230802.1-r0"}
+  "apk-abseil-cpp-log-internal-message" {= "20230802.1-r0"}
+  "apk-abseil-cpp-log-internal-nullguard" {= "20230802.1-r0"}
+  "apk-abseil-cpp-raw-hash-set" {= "20230802.1-r0"}
+  "apk-abseil-cpp-spinlock-wait" {= "20230802.1-r0"}
+  "apk-abseil-cpp-status" {= "20230802.1-r0"}
+  "apk-abseil-cpp-statusor" {= "20230802.1-r0"}
+  "apk-abseil-cpp-str-format-internal" {= "20230802.1-r0"}
+  "apk-abseil-cpp-strings" {= "20230802.1-r0"}
+  "apk-abseil-cpp-synchronization" {= "20230802.1-r0"}
+  "apk-abseil-cpp-throw-delegate" {= "20230802.1-r0"}
+  "apk-libgcc" {= "13.2.1_git20231014-r0"}
+  "apk-libprotobuf" {= "24.4-r0"}
+  "apk-libstdc++" {= "13.2.1_git20231014-r0"}
+  "apk-musl" {= "1.2.4_git20230717-r4"}
+]
+extra-source "libprotoc-24.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/libprotoc-24.4-r0.apk"
+}

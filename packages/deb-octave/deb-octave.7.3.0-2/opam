@@ -1,0 +1,63 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i octave_7.3.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r octave"]
+]
+depends: [
+  "deb-libamd2" {>= "1-4.5.2"}
+  "deb-libarpack2" {>= "2.1"}
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.35"}
+  "deb-libccolamd2" {>= "1-4.5.2"}
+  "deb-libcholmod3" {>= "1-4.5.2"}
+  "deb-libcolamd2" {>= "1-4.5.2"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libcxsparse3" {>= "1-4.5.2"}
+  "deb-libfftw3-double3" {>= "3.3.10"}
+  "deb-libfftw3-single3" {>= "3.3.10"}
+  "deb-libfltk-gl1-3" {>= "1.3.0"}
+  "deb-libfltk1-3" {>= "1.3.3"}
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libfreetype6" {>= "2.4.2"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libgfortran5" {>= "8"}
+  "deb-libgl1"
+  "deb-libgl2ps1-4" {>= "1.4.2+dfsg1"}
+  "deb-libglpk40" {>= "4.59"}
+  "deb-libgomp1" {>= "4.2.1"}
+  "deb-libgraphicsmagick++-q16-12" {>= "1.3.26-5~"}
+  "deb-libgraphicsmagick-q16-3" {>= "1.3.5"}
+  "deb-libhdf5-103-1"
+  "deb-libpcre3"
+  "deb-libportaudio2" {>= "19+svn20101113"}
+  "deb-libqhull-r8-0" {>= "2020.1"}
+  "deb-libqrupdate1" {>= "1.1.1"}
+  "deb-libqscintilla2-qt5-15" {>= "2.11.2"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5help5" {>= "5.15.1"}
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libqt5printsupport5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.15.1"}
+  "deb-libqt5xml5" {>= "5.0.2"}
+  "deb-libreadline8" {>= "6.0"}
+  "deb-libsndfile1" {>= "1.0.20"}
+  "deb-libspqr2" {>= "1-5.12.0+dfsg"}
+  "deb-libstdc++6" {>= "12"}
+  "deb-libsuitesparseconfig5" {>= "1-5.0.0"}
+  "deb-libsundials-ida6" {>= "6.4.1+dfsg1"}
+  "deb-libsundials-sunlinsol3" {>= "6.4.1+dfsg1"}
+  "deb-libumfpack5" {>= "1-4.5.2"}
+  "deb-libx11-6"
+  "deb-octave-common" {= "7.3.0-2"}
+  "deb-texinfo"
+  "deb-zlib1g" {>= "1-1.2.11.dfsg"}
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "octave_7.3.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/octave/octave_7.3.0-2_amd64.deb"
+}

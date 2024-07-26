@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgmsh4.1_4.1.5+really4.1.3+ds1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgmsh4.1"]
+]
+depends: [
+  "deb-libann0"
+  "deb-libc6" {>= "2.14"}
+  "deb-libcgns3-3" {>= "3.1.4.2"}
+  "deb-libfltk-gl1-3" {>= "1.3.0"}
+  "deb-libfltk-images1-3"
+  "deb-libfltk1-3" {>= "1.3.4"}
+  "deb-libgcc1" {>= "1-4.0"}
+  "deb-libgl1"
+  "deb-libgl2ps1-4"
+  "deb-libgmp10"
+  "deb-libhdf5-openmpi-103" {>= "1.8.13"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libocct-data-exchange-7-3"
+  "deb-libocct-foundation-7-3"
+  "deb-libocct-modeling-algorithms-7-3"
+  "deb-libocct-modeling-data-7-3"
+  "deb-libocct-ocaf-7-3"
+  "deb-libopenmpi3"
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libx11-6"
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "libgmsh4.1_4.1.5+really4.1.3+ds1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gmsh/libgmsh4.1_4.1.5+really4.1.3+ds1-1_amd64.deb"
+}

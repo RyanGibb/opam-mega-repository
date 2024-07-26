@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i polymake_3.2r4-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r polymake"]
+]
+depends: [
+  "deb-libbliss2"
+  "deb-libc6" {>= "2.14"}
+  "deb-libcdd0d"
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgmp10"
+  "deb-libgmpxx4ldbl"
+  "deb-libgomp1" {>= "4.9"}
+  "deb-liblrs0" {>= "0.70"}
+  "deb-libmpfr6" {>= "3.1.3"}
+  "deb-libnormaliz3"
+  "deb-libpolymake-dev-common" {= "3.2r4-4"}
+  "deb-libppl14"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-ninja-build"
+  "deb-polymake-common" {= "3.2r4-4"}
+]
+extra-source "polymake_3.2r4-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/polymake/polymake_3.2r4-4_amd64.deb"
+}

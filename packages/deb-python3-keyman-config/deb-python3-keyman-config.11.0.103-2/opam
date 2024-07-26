@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-keyman-config_11.0.103-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-keyman-config"]
+]
+depends: [
+  "deb-dconf-cli"
+  "deb-gir1-2-webkit2-4-0"
+  "deb-ibus-kmfl" {>= "10.99.33"}
+  "deb-kmflcomp" {>= "10.99.33"}
+  "deb-python3-any"
+  "deb-python3-bs4"
+  "deb-python3-gi"
+  "deb-python3-lxml"
+  "deb-python3-magic"
+  "deb-python3-numpy"
+  "deb-python3-pil"
+  "deb-python3-requests"
+  "deb-python3-requests-cache"
+]
+extra-source "python3-keyman-config_11.0.103-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/keyman-config/python3-keyman-config_11.0.103-2_all.deb"
+}

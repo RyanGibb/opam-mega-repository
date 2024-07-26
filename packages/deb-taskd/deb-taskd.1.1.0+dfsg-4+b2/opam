@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i taskd_1.1.0+dfsg-4+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r taskd"]
+]
+depends: [
+  "deb-adduser"
+  "deb-gnutls-bin"
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgnutls30" {>= "3.7.5"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libuuid1" {>= "2.16"}
+  "deb-sysvinit-utils"
+]
+extra-source "taskd_1.1.0+dfsg-4+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/taskd/taskd_1.1.0+dfsg-4+b2_amd64.deb"
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-random-source-dev_0.3.0.8-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-random-source-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-flexible-defaults-dev"
+  "deb-libghc-mersenne-random-pure64-dev"
+  "deb-libghc-mwc-random-dev"
+  "deb-libghc-primitive-dev"
+  "deb-libghc-random-dev"
+  "deb-libghc-stateref-dev"
+  "deb-libghc-syb-dev"
+  "deb-libghc-th-extras-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-random-source-dev_0.3.0.8-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-random-source/libghc-random-source-dev_0.3.0.8-1+b2_amd64.deb"
+}

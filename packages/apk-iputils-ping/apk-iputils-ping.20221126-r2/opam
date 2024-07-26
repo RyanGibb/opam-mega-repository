@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add iputils-ping-20221126-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del iputils-ping"]
+]
+depends: [
+  "apk-libcap2" {= "2.69-r1"}
+  "apk-musl" {= "1.2.4_git20230717-r4"}
+]
+extra-source "iputils-ping-20221126-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/iputils-ping-20221126-r2.apk"
+}

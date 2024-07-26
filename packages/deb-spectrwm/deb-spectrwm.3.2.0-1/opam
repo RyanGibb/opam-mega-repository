@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i spectrwm_3.2.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r spectrwm"]
+]
+depends: [
+  "deb-libc6" {>= "2.16"}
+  "deb-libx11-6"
+  "deb-libx11-xcb1"
+  "deb-libxcb-icccm4" {>= "0.4.1"}
+  "deb-libxcb-keysyms1" {>= "0.4.0"}
+  "deb-libxcb-randr0" {>= "1.3"}
+  "deb-libxcb-util0" {>= "0.3.8"}
+  "deb-libxcb-xinput0" {>= "1.13"}
+  "deb-libxcb-xtest0"
+  "deb-libxcb1"
+  "deb-libxcursor1" {> "1.1.2"}
+  "deb-libxft2" {> "2.1.1"}
+  "deb-libxt6"
+  "deb-suckless-tools"
+  ("deb-xterm" | "deb- x-terminal-emulator")
+]
+extra-source "spectrwm_3.2.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/spectrwm/spectrwm_3.2.0-1_amd64.deb"
+}

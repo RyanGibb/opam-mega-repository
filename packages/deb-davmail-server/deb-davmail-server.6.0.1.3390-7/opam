@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i davmail-server_6.0.1.3390-7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r davmail-server"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libcommons-codec-java"
+  "deb-libcommons-logging-java"
+  "deb-libhtmlcleaner-java"
+  "deb-libhttpclient-java"
+  "deb-libjackrabbit-java"
+  "deb-libjcifs-java"
+  "deb-libjettison-java"
+  "deb-libjna-java"
+  "deb-liblog4j1-2-java"
+  "deb-libmail-java"
+  "deb-libslf4j-java"
+  "deb-libstax2-api-java"
+  "deb-libwoodstox-java"
+  "deb-logrotate"
+  ("deb-default-jre-headless" | "deb- java8-runtime-headless" | "deb- java9-runtime-headless" | "deb- java10-runtime-headless" | "deb- java11-runtime-headless")
+]
+extra-source "davmail-server_6.0.1.3390-7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/davmail/davmail-server_6.0.1.3390-7_all.deb"
+}

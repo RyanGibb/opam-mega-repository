@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i bepasty_0.6.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r bepasty"]
+]
+depends: [
+  "deb-fonts-font-awesome"
+  "deb-libjs-bootbox"
+  "deb-libjs-bootstrap4"
+  "deb-libjs-bootswatch"
+  "deb-libjs-jquery"
+  "deb-libjs-jquery-file-upload"
+  "deb-libjs-jquery-ui"
+  "deb-libjs-sphinxdoc" {>= "2.4.3-5~"}
+  "deb-python3-any"
+  "deb-python3-flask"
+  "deb-python3-pygments"
+]
+extra-source "bepasty_0.6.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/bepasty/bepasty_0.6.0-1_all.deb"
+}

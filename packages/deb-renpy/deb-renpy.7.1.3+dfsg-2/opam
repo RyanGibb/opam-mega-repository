@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i renpy_7.1.3+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r renpy"]
+]
+depends: [
+  "deb-fonts-dejavu-core"
+  "deb-fonts-motoya-l-cedar"
+  "deb-fonts-nanum"
+  "deb-fonts-roboto-hinted"
+  "deb-python-any"
+  "deb-python-pygame-sdl2"
+  "deb-python-renpy" {>= "7.1.3+dfsg-2"}
+]
+extra-source "renpy_7.1.3+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/renpy/renpy_7.1.3+dfsg-2_all.deb"
+}

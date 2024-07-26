@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i audiolink_0.05-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r audiolink"]
+]
+depends: [
+  "deb-libdbd-mysql-perl"
+  "deb-libfile-temp-perl"
+  "deb-libmp3-info-perl"
+  "deb-libogg-vorbis-header-pureperl-perl"
+  "deb-perl-any"
+  ("deb-default-mysql-client" | "deb- virtual-mysql-client")
+]
+extra-source "audiolink_0.05-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/audiolink/audiolink_0.05-4_all.deb"
+}

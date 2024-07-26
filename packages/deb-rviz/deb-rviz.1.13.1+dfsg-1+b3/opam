@@ -1,0 +1,71 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i rviz_1.13.1+dfsg-1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r rviz"]
+]
+depends: [
+  "deb-fonts-liberation"
+  "deb-libactionlib0d"
+  "deb-libassimp4"
+  "deb-libboost-atomic1-67-0"
+  "deb-libboost-chrono1-67-0"
+  "deb-libboost-date-time1-67-0"
+  "deb-libboost-filesystem1-67-0"
+  "deb-libboost-program-options1-67-0"
+  "deb-libboost-regex1-67-0" {>= "1.67.0-10"}
+  "deb-libboost-signals1-67-0"
+  "deb-libboost-system1-67-0"
+  "deb-libboost-thread1-67-0"
+  "deb-libc6" {>= "2.14"}
+  "deb-libclass-loader1d"
+  "deb-libconsole-bridge0-4"
+  "deb-libcpp-common0d"
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgl1"
+  "deb-libimage-transport0d"
+  "deb-libinteractive-markers1d"
+  "deb-liblaser-geometry0d"
+  "deb-liblog4cxx10v5"
+  "deb-liblz4-1" {>= "0.0~r113"}
+  "deb-libmessage-filters1d"
+  "deb-libogre-1-9-0v5" {>= "1.9.0+dfsg1-9~"}
+  "deb-libpocofoundation60"
+  "deb-libpython2-7" {>= "2.7"}
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5gui5" {>= "5.2.0"}
+  "deb-libqt5svg5"
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-libresource-retriever0d"
+  "deb-librosbag-storage3d"
+  "deb-librosbag3d"
+  "deb-librosconsole-bridge0d"
+  "deb-librosconsole2d"
+  "deb-libroscpp-serialization0d"
+  "deb-libroscpp2d"
+  "deb-libroslib0d"
+  "deb-libroslz4-1d"
+  "deb-librospack0d"
+  "deb-librostime0d"
+  "deb-librviz3d"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtf1d"
+  "deb-libtf2-1d"
+  "deb-libtf2-ros0d"
+  "deb-libtinyxml2-6-2v5"
+  "deb-libtinyxml2-6a" {>= "5.0.0"}
+  "deb-libtopic-tools1d"
+  "deb-liburdf0d"
+  "deb-liburdfdom-model"
+  "deb-liburdfdom-model-state"
+  "deb-liburdfdom-sensor"
+  "deb-liburdfdom-world"
+  "deb-libx11-6"
+  "deb-libxmlrpcpp2d"
+  "deb-libyaml-cpp0-6" {>= "0.6.2"}
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+extra-source "rviz_1.13.1+dfsg-1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ros-rviz/rviz_1.13.1+dfsg-1+b3_amd64.deb"
+}

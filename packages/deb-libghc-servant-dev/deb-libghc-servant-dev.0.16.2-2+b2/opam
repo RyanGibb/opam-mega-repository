@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-servant-dev_0.16.2-2+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-servant-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-aeson-dev"
+  "deb-libghc-attoparsec-dev"
+  "deb-libghc-base-compat-dev"
+  "deb-libghc-bifunctors-dev"
+  "deb-libghc-case-insensitive-dev"
+  "deb-libghc-http-api-data-dev"
+  "deb-libghc-http-media-dev"
+  "deb-libghc-http-types-dev"
+  "deb-libghc-mmorph-dev"
+  "deb-libghc-network-uri-dev"
+  "deb-libghc-quickcheck2-dev"
+  "deb-libghc-singleton-bool-dev"
+  "deb-libghc-string-conversions-dev"
+  "deb-libghc-tagged-dev"
+  "deb-libghc-vault-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-servant-dev_0.16.2-2+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-servant/libghc-servant-dev_0.16.2-2+b2_amd64.deb"
+}

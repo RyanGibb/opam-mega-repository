@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsnpeff-java_5.1+d+dfsg-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsnpeff-java"]
+]
+depends: [
+  "deb-junit5"
+  "deb-libapfloat-java" {>= "1.10.1"}
+  "deb-libbiojava6-java"
+  "deb-libcharts4j-java" {>= "1.3"}
+  "deb-libcommons-cli-java" {>= "1.5.0"}
+  "deb-libcommons-codec-java" {>= "1.15"}
+  "deb-libcommons-io-java" {>= "2.11.0"}
+  "deb-libcommons-math3-java" {>= "3.6.1"}
+  "deb-libdistlib-java" {>= "1.0"}
+  "deb-libfreemarker-java"
+  "deb-libhtsjdk-java"
+  "deb-libtrove3-java"
+]
+extra-source "libsnpeff-java_5.1+d+dfsg-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/snpeff/libsnpeff-java_5.1+d+dfsg-3_all.deb"
+}

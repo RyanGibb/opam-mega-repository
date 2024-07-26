@@ -1,0 +1,42 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i weston_9.0.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r weston"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libc6" {>= "2.29"}
+  "deb-libcairo2" {>= "1.10.0"}
+  "deb-libcolord2" {>= "1.4.3"}
+  "deb-libdrm2" {>= "2.4.38"}
+  "deb-libegl1"
+  "deb-libevdev2" {>= "0.9.1"}
+  "deb-libgbm1" {>= "17.1.0~rc2"}
+  "deb-libgles2"
+  "deb-libglib2-0-0" {>= "2.31.8"}
+  "deb-libinput10" {>= "1.4.0"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-liblcms2-2" {>= "2.2+git20110628"}
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpixman-1-0" {>= "0.30.0"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libsystemd0"
+  "deb-libwayland-client0" {>= "1.12.0"}
+  "deb-libwayland-cursor0" {>= "1.12.0"}
+  "deb-libwayland-egl1" {>= "1.15.0"}
+  "deb-libwayland-server0" {>= "1.12.0"}
+  "deb-libwebp6" {>= "0.5.1"}
+  "deb-libweston-9-0" {>= "9.0.0"}
+  "deb-libxkbcommon0" {>= "0.5.0"}
+  ("deb-libegl1-mesa" {>= "8.0-2"} | "deb- libegl1-x11")
+]
+conflicts: [
+  "deb-libweston-8-dev"
+]
+extra-source "weston_9.0.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/w/weston/weston_9.0.0-2_amd64.deb"
+}

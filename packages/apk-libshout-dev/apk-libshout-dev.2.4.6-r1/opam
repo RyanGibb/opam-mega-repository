@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libshout-dev-2.4.6-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libshout-dev"]
+]
+depends: [
+  "apk-libogg-dev" {= "1.3.5-r2"}
+  "apk-libshout" {= "2.4.6-r1"}
+  "apk-libtheora-dev" {= "1.1.1-r16"}
+  "apk-libvorbis-dev" {= "1.3.7-r0"}
+  "apk-openssl-dev" {= "3.0.14-r0"}
+  "apk-pkgconf" {= "1.9.4-r0"}
+  "apk-speex-dev" {= "1.2.1-r0"}
+]
+extra-source "libshout-dev-2.4.6-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libshout-dev-2.4.6-r1.apk"
+}

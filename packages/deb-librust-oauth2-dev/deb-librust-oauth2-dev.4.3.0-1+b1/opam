@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-oauth2-dev_4.3.0-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-oauth2-dev"]
+]
+depends: [
+  "deb-librust-base64-0-13+default-dev"
+  "deb-librust-chrono-0-4+clock-dev"
+  "deb-librust-chrono-0-4+serde-dev"
+  "deb-librust-chrono-0-4+std-dev"
+  "deb-librust-curl-0-4+default-dev"
+  "deb-librust-http-0-2+default-dev"
+  "deb-librust-rand-0-8+default-dev"
+  "deb-librust-reqwest-0-11+blocking-dev"
+  "deb-librust-reqwest-0-11+native-tls-dev"
+  "deb-librust-reqwest-0-11+rustls-tls-dev"
+  "deb-librust-serde-1+default-dev"
+  "deb-librust-serde-1+derive-dev"
+  "deb-librust-serde-json-1+default-dev"
+  "deb-librust-serde-path-to-error-0-1+default-dev"
+  "deb-librust-sha2-0-10+default-dev"
+  "deb-librust-thiserror-1+default-dev"
+  "deb-librust-ureq-2+default-dev"
+  "deb-librust-url+serde-dev"
+  "deb-librust-url-dev"
+]
+extra-source "librust-oauth2-dev_4.3.0-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-oauth2/librust-oauth2-dev_4.3.0-1+b1_amd64.deb"
+}

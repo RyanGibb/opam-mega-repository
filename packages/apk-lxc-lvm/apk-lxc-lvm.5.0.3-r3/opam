@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lxc-lvm-5.0.3-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lxc-lvm"]
+]
+depends: [
+  "apk-lvm2" {= "2.03.21-r3"}
+  "apk-lxc" {= "5.0.3-r3"}
+  "apk-util-linux" {= "2.38.1-r8"}
+]
+extra-source "lxc-lvm-5.0.3-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/lxc-lvm-5.0.3-r3.apk"
+}

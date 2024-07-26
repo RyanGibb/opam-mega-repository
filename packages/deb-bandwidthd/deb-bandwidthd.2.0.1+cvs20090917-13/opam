@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i bandwidthd_2.0.1+cvs20090917-13_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r bandwidthd"]
+]
+depends: [
+  "deb-libc6" {>= "2.15"}
+  "deb-libgd3" {>= "2.1.0~alpha~"}
+  "deb-libpcap0-8" {>= "0.9.8"}
+  "deb-lsb-base"
+  "deb-ucf"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+conflicts: [
+  "deb-apache2" {< "2.4"}
+  "deb-bandwidthd-pgsql"
+]
+extra-source "bandwidthd_2.0.1+cvs20090917-13_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/bandwidthd/bandwidthd_2.0.1+cvs20090917-13_amd64.deb"
+}

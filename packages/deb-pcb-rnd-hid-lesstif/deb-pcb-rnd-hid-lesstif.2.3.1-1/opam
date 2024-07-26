@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pcb-rnd-hid-lesstif_2.3.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pcb-rnd-hid-lesstif"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libx11-6"
+  "deb-libxinerama1"
+  "deb-libxm4" {>= "2.3.4"}
+  "deb-libxrender1"
+  "deb-libxt6"
+  "deb-pcb-rnd-core" {= "2.3.1-1"}
+  "deb-pcb-rnd-lib-gui" {= "2.3.1-1"}
+]
+extra-source "pcb-rnd-hid-lesstif_2.3.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pcb-rnd/pcb-rnd-hid-lesstif_2.3.1-1_amd64.deb"
+}

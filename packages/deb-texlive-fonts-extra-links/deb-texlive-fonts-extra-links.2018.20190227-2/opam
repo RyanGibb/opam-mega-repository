@@ -1,0 +1,50 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i texlive-fonts-extra-links_2018.20190227-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r texlive-fonts-extra-links"]
+]
+depends: [
+  "deb-fonts-adf-accanthis"
+  "deb-fonts-adf-berenis"
+  "deb-fonts-adf-gillius"
+  "deb-fonts-adf-universalis"
+  "deb-fonts-cabin"
+  "deb-fonts-comfortaa"
+  "deb-fonts-croscore"
+  "deb-fonts-crosextra-caladea"
+  "deb-fonts-crosextra-carlito"
+  "deb-fonts-dejavu-core"
+  "deb-fonts-dejavu-extra"
+  "deb-fonts-ebgaramond"
+  "deb-fonts-ebgaramond-extra"
+  "deb-fonts-font-awesome"
+  "deb-fonts-freefont-otf"
+  "deb-fonts-freefont-ttf"
+  "deb-fonts-gfs-artemisia"
+  "deb-fonts-gfs-complutum"
+  "deb-fonts-gfs-didot"
+  "deb-fonts-gfs-neohellenic"
+  "deb-fonts-gfs-olga"
+  "deb-fonts-gfs-solomos"
+  "deb-fonts-go"
+  "deb-fonts-junicode"
+  "deb-fonts-lato"
+  "deb-fonts-linuxlibertine"
+  "deb-fonts-lobstertwo"
+  "deb-fonts-noto-hinted"
+  "deb-fonts-noto-mono"
+  "deb-fonts-oflb-asana-math"
+  "deb-fonts-open-sans"
+  "deb-fonts-roboto-unhinted"
+  "deb-fonts-sil-gentium"
+  "deb-fonts-sil-gentium-basic"
+  "deb-fonts-sil-gentiumplus"
+  "deb-fonts-sil-gentiumplus-compact"
+  "deb-fonts-stix"
+  "deb-tex-common" {>= "6"}
+]
+extra-source "texlive-fonts-extra-links_2018.20190227-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/texlive-extra/texlive-fonts-extra-links_2018.20190227-2_all.deb"
+}

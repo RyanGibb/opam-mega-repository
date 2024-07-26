@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libaether-ant-tasks-java_1.0.1-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libaether-ant-tasks-java"]
+]
+depends: [
+  "deb-libmaven-resolver-java" {>= "1.3.1"}
+  "deb-libmaven-resolver-transport-http-java" {>= "1.3.1"}
+  "deb-libmaven3-core-java" {>= "3.6.0"}
+  "deb-libplexus-interpolation-java" {>= "1.25"}
+  "deb-libsisu-plexus-java" {>= "0.3.3"}
+  "deb-libslf4j-java" {>= "1.7.25"}
+]
+extra-source "libaether-ant-tasks-java_1.0.1-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/aether-ant-tasks/libaether-ant-tasks-java_1.0.1-4_all.deb"
+}

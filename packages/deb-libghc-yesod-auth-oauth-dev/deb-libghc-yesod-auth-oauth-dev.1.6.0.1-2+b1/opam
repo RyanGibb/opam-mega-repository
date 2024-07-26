@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-yesod-auth-oauth-dev_1.6.0.1-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-yesod-auth-oauth-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-authenticate-oauth-dev"
+  "deb-libghc-unliftio-dev"
+  "deb-libghc-yesod-auth-dev"
+  "deb-libghc-yesod-core-dev"
+  "deb-libghc-yesod-form-dev"
+  "deb-libgmp10"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libghc-yesod-auth-oauth-dev_1.6.0.1-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-yesod-auth-oauth/libghc-yesod-auth-oauth-dev_1.6.0.1-2+b1_amd64.deb"
+}

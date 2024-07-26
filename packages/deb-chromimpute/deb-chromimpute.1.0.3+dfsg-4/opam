@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i chromimpute_1.0.3+dfsg-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r chromimpute"]
+]
+depends: [
+  "deb-jarwrapper" {>= "0.5"}
+  ("deb-default-jre" | "deb- java7-runtime" | "deb- java8-runtime" | "deb- java9-runtime" | "deb- java10-runtime" | "deb- java11-runtime")
+]
+extra-source "chromimpute_1.0.3+dfsg-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/chromimpute/chromimpute_1.0.3+dfsg-4_all.deb"
+}

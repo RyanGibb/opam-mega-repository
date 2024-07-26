@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gtk+2.0-2.24.32-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gtk+2.0"]
+]
+depends: [
+  "apk-atk" {= "2.36.0-r0"}
+  "apk-busybox" {= "1.31.1-r22"}
+  "apk-cairo" {= "1.16.0-r5"}
+  "apk-cups-libs" {= "2.3.3-r0"}
+  "apk-fontconfig" {= "2.13.1-r2"}
+  "apk-gdk-pixbuf" {= "2.40.0-r4"}
+  "apk-glib" {= "2.64.6-r0"}
+  "apk-gtk-update-icon-cache" {= "2.24.32-r1"}
+  "apk-libintl" {= "0.20.2-r0"}
+  "apk-libx11" {= "1.6.12-r1"}
+  "apk-libxcomposite" {= "0.4.5-r0"}
+  "apk-libxcursor" {= "1.2.0-r0"}
+  "apk-libxdamage" {= "1.1.5-r0"}
+  "apk-libxext" {= "1.3.4-r0"}
+  "apk-libxfixes" {= "5.0.3-r2"}
+  "apk-libxi" {= "1.7.10-r0"}
+  "apk-libxrandr" {= "1.5.2-r0"}
+  "apk-libxrender" {= "0.9.10-r3"}
+  "apk-musl" {= "1.1.24-r10"}
+  "apk-pango" {= "1.44.7-r2"}
+  "apk-shared-mime-info" {= "1.15-r0"}
+]
+extra-source "gtk+2.0-2.24.32-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/gtk+2.0-2.24.32-r1.apk"
+}

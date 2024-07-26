@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i magic-wormhole_0.11.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r magic-wormhole"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-attr" {>= "16.3.0~"}
+  "deb-python3-autobahn" {>= "0.14.1"}
+  "deb-python3-automat"
+  "deb-python3-click"
+  "deb-python3-hkdf"
+  "deb-python3-humanize"
+  "deb-python3-nacl"
+  "deb-python3-six"
+  "deb-python3-spake2" {>= "0.8"}
+  "deb-python3-tqdm" {>= "4.13.0~"}
+  "deb-python3-twisted" {>= "17.5.0~"}
+  "deb-python3-txtorcon" {>= "0.19.3"}
+]
+extra-source "magic-wormhole_0.11.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/magic-wormhole/magic-wormhole_0.11.2-1_all.deb"
+}

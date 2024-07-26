@@ -1,0 +1,61 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ledgersmb_1.6.9+ds-1+deb10u3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ledgersmb"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libcarp-always-perl"
+  "deb-libcgi-emulate-psgi-perl"
+  "deb-libcgi-simple-perl"
+  "deb-libclass-c3-xs-perl"
+  "deb-libconfig-inifiles-perl"
+  "deb-libdata-uuid-perl"
+  "deb-libdatetime-format-strptime-perl"
+  "deb-libdatetime-perl"
+  "deb-libdbd-pg-perl"
+  "deb-libdbi-perl"
+  "deb-libhtml-escape-perl"
+  "deb-libhttp-exception-perl"
+  "deb-libio-stringy-perl"
+  "deb-libjs-dojo-dijit"
+  "deb-libjson-perl"
+  "deb-liblocale-codes-perl"
+  "deb-liblocale-maketext-lexicon-perl" {>= "0.62-1"}
+  "deb-liblog-log4perl-perl"
+  "deb-libmime-lite-perl"
+  "deb-libmime-types-perl"
+  "deb-libmoose-perl"
+  "deb-libmoosex-nonmoose-perl"
+  "deb-libnamespace-autoclean-perl"
+  "deb-libnumber-format-perl"
+  "deb-libpgobject-perl" {>= "1.403.2-1"}
+  "deb-libpgobject-simple-perl" {>= "3.000002-1"}
+  "deb-libpgobject-simple-role-perl" {>= "2.000000-1"}
+  "deb-libpgobject-type-bigfloat-perl"
+  "deb-libpgobject-type-bytestring-perl" {>= "1.1.1-1"}
+  "deb-libpgobject-type-datetime-perl"
+  "deb-libpgobject-util-dbadmin-perl"
+  "deb-libpgobject-util-dbmethod-perl"
+  "deb-libplack-builder-conditionals-perl"
+  "deb-libplack-middleware-reverseproxy-perl"
+  "deb-libplack-perl"
+  "deb-libplack-request-withencoding-perl"
+  "deb-libtemplate-perl" {>= "2.14-1"}
+  "deb-libtext-markdown-perl"
+  "deb-libtry-tiny-perl"
+  "deb-libversion-compare-perl"
+  "deb-libxml-simple-perl"
+  "deb-perl"
+  "deb-perl-any"
+  "deb-postgresql-client"
+  "deb-postgresql-contrib"
+  "deb-starman"
+  "deb-ucf"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "ledgersmb_1.6.9+ds-1+deb10u3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/ledgersmb/ledgersmb_1.6.9+ds-1+deb10u3_all.deb"
+}

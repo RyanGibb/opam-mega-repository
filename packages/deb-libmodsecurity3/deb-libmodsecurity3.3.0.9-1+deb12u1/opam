@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmodsecurity3_3.0.9-1+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmodsecurity3"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libfuzzy2" {>= "2.13"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgeoip1" {>= "1.6.12"}
+  "deb-liblua5-3-0"
+  "deb-libmaxminddb0" {>= "1.0.2"}
+  "deb-libpcre2-8-0" {>= "10.22"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libxml2" {>= "2.8.0"}
+  "deb-libyajl2" {>= "2.0.4"}
+]
+extra-source "libmodsecurity3_3.0.9-1+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/modsecurity/libmodsecurity3_3.0.9-1+deb12u1_amd64.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libglobus-gsi-callback0_6.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libglobus-gsi-callback0"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libglobus-common0" {>= "17"}
+  "deb-libglobus-gsi-cert-utils0" {>= "8"}
+  "deb-libglobus-gsi-openssl-error0" {>= "2"}
+  "deb-libglobus-gsi-sysconfig1" {>= "8"}
+  "deb-libssl1-1" {>= "1.1.0"}
+]
+extra-source "libglobus-gsi-callback0_6.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/globus-gsi-callback/libglobus-gsi-callback0_6.1-1_amd64.deb"
+}

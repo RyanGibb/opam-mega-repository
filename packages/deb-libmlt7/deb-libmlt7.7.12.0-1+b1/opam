@@ -1,0 +1,57 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmlt7_7.12.0-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmlt7"]
+]
+depends: [
+  "deb-libarchive13" {>= "3.2.1"}
+  "deb-libavcodec-extra59"
+  "deb-libavdevice59" {>= "7-5.0"}
+  "deb-libavfilter-extra8"
+  "deb-libavformat-extra59"
+  "deb-libavutil57" {>= "7-5.0"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libebur128-1" {>= "1.2.0"}
+  "deb-libepoxy0" {>= "1.0"}
+  "deb-libexif12" {>= "0.6.21-1~"}
+  "deb-libfftw3-double3" {>= "3.3.10"}
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.24.0"}
+  "deb-libglx0"
+  "deb-libmlt++7" {>= "7.12.0"}
+  "deb-libmovit8"
+  "deb-libopencv-contrib406" {>= "4.6.0+dfsg"}
+  "deb-libopencv-core406" {>= "4.6.0+dfsg"}
+  "deb-libopencv-imgproc406" {>= "4.6.0+dfsg"}
+  "deb-libopencv-video406" {>= "4.6.0+dfsg"}
+  "deb-libopengl0"
+  "deb-libpango-1-0-0" {>= "1.18.0"}
+  "deb-libpangoft2-1-0-0" {>= "1.14.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5svg5" {>= "5.6.0~beta"}
+  "deb-libqt5widgets5" {>= "5.2.0"}
+  "deb-libqt5xml5" {>= "5.0.2"}
+  "deb-librtaudio6" {>= "5.2.0~ds1"}
+  "deb-librubberband2" {>= "3.1.2+dfsg0"}
+  "deb-libsamplerate0" {>= "0.1.7"}
+  "deb-libsdl1-2-compat-shim"
+  "deb-libsdl2-2-0-0" {>= "2.0.12"}
+  "deb-libsox3" {>= "14.4.2~"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libswresample4" {>= "7-5.0"}
+  "deb-libswscale6" {>= "7-5.0"}
+  "deb-libvidstab1-1"
+  "deb-libvorbisfile3" {>= "1.1.2"}
+  "deb-libx11-6"
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "libmlt7_7.12.0-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mlt/libmlt7_7.12.0-1+b1_amd64.deb"
+}

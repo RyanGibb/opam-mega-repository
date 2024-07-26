@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-femme-dev_2.2.1~dfsg-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-femme-dev"]
+]
+depends: [
+  "deb-librust-cfg-if-1+default-dev"
+  "deb-librust-js-sys-dev"
+  "deb-librust-log-dev"
+  "deb-librust-serde-derive-dev"
+  "deb-librust-serde-dev"
+  "deb-librust-serde-json-dev"
+  "deb-librust-wasm-bindgen+default-dev"
+  "deb-librust-wasm-bindgen+serde-serialize-dev"
+  "deb-librust-web-sys-dev"
+]
+extra-source "librust-femme-dev_2.2.1~dfsg-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-femme/librust-femme-dev_2.2.1~dfsg-4_all.deb"
+}

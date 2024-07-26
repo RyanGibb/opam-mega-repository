@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-xenolf-lego-dev_4.9.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-xenolf-lego-dev"]
+]
+depends: [
+  "deb-golang-github-akamai-akamaiopen-edgegrid-golang-dev"
+  "deb-golang-github-aws-aws-sdk-go-dev"
+  "deb-golang-github-burntsushi-toml-dev" {>= "1.2.0"}
+  "deb-golang-github-cenkalti-backoff-dev" {>= "4.1.3"}
+  "deb-golang-github-google-go-querystring-dev"
+  "deb-golang-github-jamesclonk-vultr-dev"
+  "deb-golang-github-miekg-dns-dev" {>= "1.1.50"}
+  "deb-golang-github-nrdcg-desec-dev" {>= "0.6.0"}
+  "deb-golang-github-nrdcg-goinwx-dev" {>= "0.8.1"}
+  "deb-golang-github-ovh-go-ovh-dev"
+  "deb-golang-github-pquerna-otp-dev" {>= "1.3.0"}
+  "deb-golang-github-stretchr-testify-dev" {>= "1.7.0"}
+  "deb-golang-github-urfave-cli-v2-dev"
+  "deb-golang-github-vultr-govultr-dev" {>= "2.7.1"}
+  "deb-golang-github-weppos-dnsimple-go-dev"
+  "deb-golang-golang-x-crypto-dev"
+  "deb-golang-golang-x-net-dev"
+  "deb-golang-golang-x-oauth2-google-dev"
+  "deb-golang-google-api-dev"
+  "deb-golang-gopkg-square-go-jose-v2-dev"
+  "deb-golang-sslmate-src-go-pkcs12-dev"
+]
+extra-source "golang-github-xenolf-lego-dev_4.9.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-xenolf-lego/golang-github-xenolf-lego-dev_4.9.1-1_all.deb"
+}

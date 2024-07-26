@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-debian-dev_4.0.4-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-debian-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.14"}
+  "deb-libghc-bz2-dev"
+  "deb-libghc-either-dev"
+  "deb-libghc-hostname-dev"
+  "deb-libghc-hunit-dev"
+  "deb-libghc-lens-dev"
+  "deb-libghc-listlike-dev"
+  "deb-libghc-network-uri-dev"
+  "deb-libghc-old-locale-dev"
+  "deb-libghc-process-extras-dev"
+  "deb-libghc-puremd5-dev"
+  "deb-libghc-quickcheck2-dev"
+  "deb-libghc-regex-compat-dev"
+  "deb-libghc-regex-tdfa-dev"
+  "deb-libghc-sha-dev"
+  "deb-libghc-syb-dev"
+  "deb-libghc-temporary-dev"
+  "deb-libghc-th-lift-dev"
+  "deb-libghc-th-orphans-dev"
+  "deb-libghc-utf8-string-dev"
+  "deb-libghc-zlib-dev"
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libghc-debian-dev_4.0.4-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-debian/libghc-debian-dev_4.0.4-1+b1_amd64.deb"
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ogre-1.12-tools_1.12.10+dfsg2-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ogre-1.12-tools"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libogre1-12-10" {>= "1.12.10+dfsg1-1~"}
+  "deb-libpugixml1v5" {>= "1.4"}
+  "deb-libstdc++6" {>= "5.2"}
+]
+conflicts: [
+  "deb-ogre-1-8-tools"
+  "deb-ogre-1-9-tools"
+  "deb-ogre-tools"
+]
+extra-source "ogre-1.12-tools_1.12.10+dfsg2-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/ogre-1.12/ogre-1.12-tools_1.12.10+dfsg2-3+b1_amd64.deb"
+}

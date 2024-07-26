@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i clang-tools-15_1:15.0.6-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r clang-tools-15"]
+]
+depends: [
+  "deb-clang-15" {= "1-15.0.6-4+b1"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libclang-cpp15" {>= "1-15.0.6"}
+  "deb-libclang1-15" {>= "1-15.0.6-4+b1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libllvm15"
+  "deb-libstdc++6" {>= "11"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-python3"
+]
+extra-source "clang-tools-15_1:15.0.6-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/llvm-toolchain-15/clang-tools-15_15.0.6-4+b1_amd64.deb"
+}

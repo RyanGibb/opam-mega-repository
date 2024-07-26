@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libenchant-2-2_2.2.15-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libenchant-2-2"]
+]
+depends: [
+  "deb-libaspell15" {>= "0.60.8"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.28.0"}
+  "deb-libhunspell-1-7-0"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-hunspell-en-us" | "deb- hunspell-dictionary" | "deb- myspell-dictionary" | "deb- aspell-dictionary" | "deb- ispell-dictionary")
+]
+extra-source "libenchant-2-2_2.2.15-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/enchant-2/libenchant-2-2_2.2.15-1_amd64.deb"
+}

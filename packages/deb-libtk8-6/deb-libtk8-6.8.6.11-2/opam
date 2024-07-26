@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libtk8.6_8.6.11-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libtk8.6"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libtcl8-6" {>= "8.6.0-2"}
+  "deb-libx11-6"
+  "deb-libxft2" {> "2.1.1"}
+  "deb-libxss1"
+]
+conflicts: [
+  "deb-libtk-img" {< "1.2.5"}
+  "deb-tk40" {<= "4.0p3-2"}
+  "deb-tk8-6" {< "8.6.0-2"}
+]
+extra-source "libtk8.6_8.6.11-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tk8.6/libtk8.6_8.6.11-2_amd64.deb"
+}

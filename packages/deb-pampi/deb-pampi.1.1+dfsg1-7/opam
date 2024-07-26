@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pampi_1.1+dfsg1-7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pampi"]
+]
+depends: [
+  "deb-fonts-katex"
+  "deb-fonts-opendyslexic"
+  "deb-fonts-sil-andika"
+  "deb-hovercraft" {>= "2.7-2"}
+  "deb-jsxgraph"
+  "deb-libjs-bootstrap" {>= "3.4.1+dfsg-2"}
+  "deb-libjs-c3" {>= "0.4.11+dfsg-4"}
+  "deb-libjs-impress" {>= "1.0.0-1"}
+  "deb-libjs-katex"
+  "deb-libjs-marked"
+  "deb-macaulay2-common"
+  "deb-pandoc"
+  "deb-python3-any"
+  "deb-python3-pyqt5-qtwebengine"
+]
+extra-source "pampi_1.1+dfsg1-7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pampi/pampi_1.1+dfsg1-7_all.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i voctomix-core_1.3-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r voctomix-core"]
+]
+depends: [
+  "deb-gir1-2-gst-plugins-base-1-0"
+  "deb-gir1-2-gstreamer-1-0"
+  "deb-gstreamer1-0-plugins-bad"
+  "deb-gstreamer1-0-plugins-base"
+  "deb-gstreamer1-0-plugins-good"
+  "deb-gstreamer1-0-plugins-ugly"
+  "deb-libgstreamer1-0-0" {>= "1.6.1~"}
+  "deb-python3-any"
+  "deb-python3-gi"
+]
+extra-source "voctomix-core_1.3-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/voctomix/voctomix-core_1.3-2_all.deb"
+}

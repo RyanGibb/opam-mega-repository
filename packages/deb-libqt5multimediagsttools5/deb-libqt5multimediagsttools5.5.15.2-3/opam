@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libqt5multimediagsttools5_5.15.2-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libqt5multimediagsttools5"]
+]
+depends: [
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libglib2-0-0" {>= "2.31.8"}
+  "deb-libgstreamer-gl1-0-0" {>= "1.14.0"}
+  "deb-libgstreamer-plugins-base1-0-0" {>= "1.0.0"}
+  "deb-libgstreamer1-0-0" {>= "1.6.0"}
+  "deb-libqt5core5a" {>= "5.15.2+dfsg~"}
+  "deb-libqt5multimedia5" {>= "5.14.1"}
+  "deb-libqt5multimediawidgets5" {>= "5.6.0~beta"}
+  "deb-libqt5network5" {>= "5.15.2+dfsg~"}
+  "deb-libqt5widgets5" {>= "5.15.2+dfsg~"}
+  "deb-libstdc++6" {>= "5"}
+  ("deb-libqt5gui5" {>= "5.15.2+dfsg~"} | "deb- libqt5gui5-gles" {>= "5.15.2+dfsg~"})
+]
+extra-source "libqt5multimediagsttools5_5.15.2-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qtmultimedia-opensource-src/libqt5multimediagsttools5_5.15.2-3_amd64.deb"
+}

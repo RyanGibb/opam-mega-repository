@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i uno-libs-private_1:7.0.4-4+deb11u9_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r uno-libs-private"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libuno-cppu3" {>= "1.4.0"}
+  "deb-libuno-sal3" {>= "5.1.0~alpha"}
+  "deb-libuno-salhelpergcc3-3" {>= "1.4.0"}
+]
+extra-source "uno-libs-private_1:7.0.4-4+deb11u9_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libr/libreoffice/uno-libs-private_7.0.4-4+deb11u9_amd64.deb"
+}

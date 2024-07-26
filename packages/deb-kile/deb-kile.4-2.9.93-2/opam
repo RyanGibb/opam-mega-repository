@@ -1,0 +1,52 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kile_4:2.9.93-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kile"]
+]
+depends: [
+  "deb-kinit"
+  "deb-kio"
+  "deb-konsole-kpart"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libkf5codecs5" {>= "4.96.0"}
+  "deb-libkf5completion5" {>= "4.97.0"}
+  "deb-libkf5configcore5" {>= "5.31.0~"}
+  "deb-libkf5configgui5" {>= "5.31.0~"}
+  "deb-libkf5configwidgets5" {>= "5.23.0"}
+  "deb-libkf5coreaddons5" {>= "5.31.0~"}
+  "deb-libkf5crash5" {>= "5.31.0~"}
+  "deb-libkf5dbusaddons5" {>= "5.31.0~"}
+  "deb-libkf5guiaddons5" {>= "4.96.0"}
+  "deb-libkf5i18n5" {>= "5.31.0~"}
+  "deb-libkf5iconthemes5" {>= "5.31.0~"}
+  "deb-libkf5jobwidgets5" {>= "4.96.0"}
+  "deb-libkf5khtml5" {>= "5.31.0~"}
+  "deb-libkf5kiocore5" {>= "5.69.0"}
+  "deb-libkf5kiofilewidgets5" {>= "5.69.0"}
+  "deb-libkf5kiowidgets5" {>= "5.69.0"}
+  "deb-libkf5parts5" {>= "5.31.0~"}
+  "deb-libkf5service-bin"
+  "deb-libkf5service5" {>= "4.96.0"}
+  "deb-libkf5texteditor5" {>= "5.31.0~"}
+  "deb-libkf5textwidgets5" {>= "4.96.0"}
+  "deb-libkf5widgetsaddons5" {>= "5.13.0"}
+  "deb-libkf5windowsystem5" {>= "5.31.0~"}
+  "deb-libkf5xmlgui5" {>= "5.31.0~"}
+  "deb-libpoppler-qt5-1" {>= "0.24.5"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.14.1"}
+  "deb-libqt5script5" {>= "5.6.0~beta"}
+  "deb-libqt5widgets5" {>= "5.14.1"}
+  "deb-libqt5xml5" {>= "5.6.0~"}
+  "deb-libstdc++6" {>= "4.2.1"}
+  "deb-okular"
+  "deb-perl-any"
+  "deb-texlive-latex-base"
+  ("deb-libqt5gui5" {>= "5.8.0"} | "deb- libqt5gui5-gles" {>= "5.8.0"})
+]
+extra-source "kile_4:2.9.93-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kile/kile_2.9.93-2_amd64.deb"
+}

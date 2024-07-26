@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-pybiggles_1.6.6-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-pybiggles"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libice6" {>= "1-1.0.0"}
+  "deb-libplot2c2"
+  "deb-libsm6"
+  "deb-libx11-6"
+  "deb-libxaw7"
+  "deb-libxext6"
+  "deb-libxmu6"
+  "deb-libxt6"
+  "deb-python" {< "2.8"}
+  "deb-python" {>= "2.7~"}
+  "deb-python-any" {>= "2.7.5-5~"}
+  "deb-python-numpy"
+  "deb-python-numpy" {>= "1-1.8.0"}
+]
+extra-source "python-pybiggles_1.6.6-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-biggles/python-pybiggles_1.6.6-3_amd64.deb"
+}

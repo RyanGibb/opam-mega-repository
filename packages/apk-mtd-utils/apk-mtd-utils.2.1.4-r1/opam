@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mtd-utils-2.1.4-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mtd-utils"]
+]
+depends: [
+  "apk-mtd-utils-dev" {= "2.1.4-r1"}
+  "apk-mtd-utils-flash" {= "2.1.4-r1"}
+  "apk-mtd-utils-jffs" {= "2.1.4-r1"}
+  "apk-mtd-utils-misc" {= "2.1.4-r1"}
+  "apk-mtd-utils-nand" {= "2.1.4-r1"}
+  "apk-mtd-utils-nor" {= "2.1.4-r1"}
+  "apk-mtd-utils-ubi" {= "2.1.4-r1"}
+  "apk-musl" {= "1.2.3-r5"}
+]
+extra-source "mtd-utils-2.1.4-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mtd-utils-2.1.4-r1.apk"
+}

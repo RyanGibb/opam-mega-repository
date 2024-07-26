@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libqt5waylandcompositor5_5.15.8-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libqt5waylandcompositor5"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgl1"
+  "deb-libqt5core5a"
+  "deb-libqt5core5a" {>= "5.15.8+dfsg~"}
+  "deb-libqt5qml5"
+  "deb-libqt5qml5" {>= "5.15.8+dfsg~"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libwayland-server0" {>= "1.9.91"}
+  "deb-libxkbcommon0" {>= "0.5.0"}
+  ("deb-libqt5gui5" {>= "5.15.8+dfsg~"} | "deb- libqt5gui5-gles" {>= "5.15.8+dfsg~"})
+  ("deb-libqt5quick5" {>= "5.15.8+dfsg~"} | "deb- libqt5quick5-gles" {>= "5.15.8+dfsg~"})
+]
+extra-source "libqt5waylandcompositor5_5.15.8-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qtwayland-opensource-src/libqt5waylandcompositor5_5.15.8-2_amd64.deb"
+}

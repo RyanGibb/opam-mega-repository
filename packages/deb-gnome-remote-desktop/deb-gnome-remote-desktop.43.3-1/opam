@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnome-remote-desktop_43.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnome-remote-desktop"]
+]
+depends: [
+  "deb-fuse3"
+  "deb-init-system-helpers" {>= "1.52"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.10.0"}
+  "deb-libepoxy0" {>= "1.4.3"}
+  "deb-libfreerdp-server2-2" {>= "2.8.0+dfsg1"}
+  "deb-libfreerdp2-2" {>= "2.8.0+dfsg1"}
+  "deb-libfuse3-3" {>= "3.2.3"}
+  "deb-libglib2-0-0" {>= "2.68"}
+  "deb-libmutter-11-0" {>= "43"}
+  "deb-libnotify4" {>= "0.7.0"}
+  "deb-libpipewire-0-3-0" {>= "0.3.6"}
+  "deb-libsecret-1-0" {>= "0.7"}
+  "deb-libtss2-esys-3-0-2-0" {>= "2.3.1"}
+  "deb-libtss2-mu0" {>= "3.0.1"}
+  "deb-libtss2-rc0" {>= "3.0.1"}
+  "deb-libtss2-tctildr0" {>= "3.0.1"}
+  "deb-libwinpr2-2" {>= "2.3.0"}
+  "deb-libxkbcommon0" {>= "1.0.0"}
+  "deb-pipewire" {>= "0.3.0"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-pipewire-media-session" | "deb- wireplumber")
+]
+extra-source "gnome-remote-desktop_43.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnome-remote-desktop/gnome-remote-desktop_43.3-1_amd64.deb"
+}

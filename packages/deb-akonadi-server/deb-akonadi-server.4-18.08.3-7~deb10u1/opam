@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i akonadi-server_4:18.08.3-7~deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r akonadi-server"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libkf5akonadiprivate5abi2" {= "4-18.08.3-7~deb10u1"}
+  "deb-libkf5akonadiwidgets5abi1" {= "4-18.08.3-7~deb10u1"}
+  "deb-libkf5configcore5" {>= "4.97.0"}
+  "deb-libkf5coreaddons5" {>= "4.100.0"}
+  "deb-libkf5crash5" {>= "5.15.0"}
+  "deb-libkf5i18n5" {>= "4.97.0"}
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5dbus5" {>= "5.9.0~"}
+  "deb-libqt5gui5" {>= "5.9.0~"}
+  "deb-libqt5network5" {>= "5.9.0~"}
+  "deb-libqt5sql5" {>= "5.9.0~"}
+  "deb-libqt5widgets5" {>= "5.9.0~"}
+  "deb-libqt5xml5" {>= "5.9.0~"}
+  "deb-libstdc++6" {>= "5.2"}
+  ("deb-akonadi-backend-mysql" {= "4-18.08.3-7~deb10u1"} | "deb- akonadi-backend-sqlite" {= "4-18.08.3-7~deb10u1"} | "deb- akonadi-backend-postgresql" {= "4-18.08.3-7~deb10u1"})
+]
+extra-source "akonadi-server_4:18.08.3-7~deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/akonadi/akonadi-server_18.08.3-7~deb10u1_amd64.deb"
+}

@@ -1,0 +1,43 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-express_4.18.2+~4.17.14-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-express"]
+]
+depends: [
+  "deb-node-accepts"
+  "deb-node-array-flatten"
+  "deb-node-body-parser"
+  "deb-node-content-disposition"
+  "deb-node-content-type"
+  "deb-node-cookie" {>= "0.5"}
+  "deb-node-cookie-signature"
+  "deb-node-debug"
+  "deb-node-depd"
+  "deb-node-encodeurl"
+  "deb-node-escape-html"
+  "deb-node-etag" {>= "1.8.1"}
+  "deb-node-finalhandler"
+  "deb-node-fresh"
+  "deb-node-merge-descriptors"
+  "deb-node-methods"
+  "deb-node-on-finished"
+  "deb-node-parseurl"
+  "deb-node-path-to-regexp"
+  "deb-node-proxy-addr"
+  "deb-node-qs"
+  "deb-node-range-parser"
+  "deb-node-safe-buffer"
+  "deb-node-send" {>= "0.18"}
+  "deb-node-serve-static" {>= "1.14.1"}
+  "deb-node-setprototypeof"
+  "deb-node-statuses" {>= "2"}
+  "deb-node-type-is"
+  "deb-node-utils-merge"
+  "deb-node-vary"
+  "deb-nodejs-any"
+]
+extra-source "node-express_4.18.2+~4.17.14-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-express/node-express_4.18.2+~4.17.14-1_all.deb"
+}

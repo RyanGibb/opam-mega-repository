@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i glewlwyd_2.5.2-2+deb11u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r glewlwyd"]
+]
+depends: [
+  "deb-glewlwyd-common"
+  "deb-libc6" {>= "2.14"}
+  "deb-libcbor0" {>= "0.5.0"}
+  "deb-libconfig9"
+  "deb-libcrypt1" {>= "1-4.1.0"}
+  "deb-libgnutls30" {>= "3.7.0"}
+  "deb-libhoel1-4" {>= "1.4.15"}
+  "deb-libiddawc0-9" {>= "0.9"}
+  "deb-libjansson4" {>= "2.7"}
+  "deb-libldap-2-4-2" {>= "2.4.7"}
+  "deb-libnettle8"
+  "deb-liboath0" {>= "1.12.0"}
+  "deb-liborcania2-1" {>= "2.1.0"}
+  "deb-librhonabwy0-9" {>= "0.9"}
+  "deb-libulfius2-7" {>= "2.7.0"}
+  "deb-libyder2-0" {>= "1.4.10"}
+  "deb-lsb-base" {>= "3.0-6"}
+  "deb-sqlite3"
+  "deb-ucf"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-dbconfig-mysql" | "deb- dbconfig-sqlite3" | "deb- dbconfig-pgsql" | "deb- dbconfig-no-thanks")
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "glewlwyd_2.5.2-2+deb11u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/glewlwyd/glewlwyd_2.5.2-2+deb11u2_amd64.deb"
+}

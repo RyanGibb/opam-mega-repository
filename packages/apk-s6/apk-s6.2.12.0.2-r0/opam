@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add s6-2.12.0.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del s6"]
+]
+depends: [
+  "apk-execline" {= "2.9.4.0-r0"}
+  "apk-musl" {= "1.2.4_git20230717-r4"}
+  "apk-s6-ipcserver" {= "2.12.0.2-r0"}
+  "apk-skalibs" {= "2.14.0.1-r0"}
+  ("apk-busybox-binsh" {= "1.36.1-r19"} | "apk-dash-binsh" {= "0.5.12-r2"} | "apk-yash-binsh" {= "2.55-r0"})
+]
+extra-source "s6-2.12.0.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/s6-2.12.0.2-r0.apk"
+}

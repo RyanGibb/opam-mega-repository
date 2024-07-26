@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i debuginfod_0.183-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r debuginfod"]
+]
+depends: [
+  "deb-libarchive13" {>= "3.0.4"}
+  "deb-libc6" {>= "2.17"}
+  "deb-libdebuginfod1" {= "0.183-1"}
+  "deb-libdw1" {>= "0.177"}
+  "deb-libelf1" {>= "0.142"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libmicrohttpd12" {>= "0.9.50"}
+  "deb-libsqlite3-0" {>= "3.7.15"}
+  "deb-libstdc++6" {>= "9"}
+]
+extra-source "debuginfod_0.183-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/elfutils/debuginfod_0.183-1_amd64.deb"
+}

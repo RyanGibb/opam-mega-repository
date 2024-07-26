@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qgis_3.10.14+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qgis"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgdal28" {>= "2.3.0"}
+  "deb-libgeos-c1v5" {>= "3.4.2"}
+  "deb-libgsl25" {>= "2.6"}
+  "deb-libqgis-analysis3-10-14" {>= "3.10.2"}
+  "deb-libqgis-app3-10-14" {>= "3.4.9"}
+  "deb-libqgis-core3-10-14" {>= "3.10.14"}
+  "deb-libqgis-gui3-10-14" {>= "3.10.2"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5keychain1" {>= "0.7.0"}
+  "deb-libqt5network5" {>= "5.14.1"}
+  "deb-libqt5sql5" {>= "5.0.2"}
+  "deb-libqt5webkit5" {>= "5.212.0~alpha3"}
+  "deb-libqt5widgets5" {>= "5.11.0~rc1"}
+  "deb-libqt5xml5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-python3-qgis" {= "3.10.14+dfsg-1"}
+  "deb-qgis-common" {= "3.10.14+dfsg-1"}
+  "deb-qgis-providers" {= "3.10.14+dfsg-1"}
+  "deb-qt5-image-formats-plugins"
+  ("deb-libqt5gui5" {>= "5.8.0"} | "deb- libqt5gui5-gles" {>= "5.8.0"})
+  ("deb-ocl-icd-libopencl1" {>= "1.0"} | "deb- libopencl-1-2-1")
+  ("deb-ocl-icd-libopencl1" | "deb- libopencl1")
+]
+conflicts: [
+  "deb-uim-qt3"
+]
+extra-source "qgis_3.10.14+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qgis/qgis_3.10.14+dfsg-1_amd64.deb"
+}

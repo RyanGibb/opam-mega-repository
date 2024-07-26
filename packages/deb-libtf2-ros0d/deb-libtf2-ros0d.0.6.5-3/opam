@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libtf2-ros0d_0.6.5-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libtf2-ros0d"]
+]
+depends: [
+  "deb-libactionlib0d"
+  "deb-libboost-atomic1-67-0"
+  "deb-libboost-chrono1-67-0"
+  "deb-libboost-date-time1-67-0"
+  "deb-libboost-filesystem1-67-0"
+  "deb-libboost-regex1-67-0" {>= "1.67.0-10"}
+  "deb-libboost-signals1-67-0"
+  "deb-libboost-system1-67-0"
+  "deb-libboost-thread1-67-0"
+  "deb-libc6" {>= "2.17"}
+  "deb-libconsole-bridge0-4"
+  "deb-libcpp-common0d"
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-liblog4cxx10v5"
+  "deb-libmessage-filters1d"
+  "deb-librosconsole2d"
+  "deb-libroscpp-serialization0d"
+  "deb-libroscpp2d"
+  "deb-librostime0d"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtf2-1d"
+  "deb-libxmlrpcpp2d"
+]
+extra-source "libtf2-ros0d_0.6.5-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ros-geometry2/libtf2-ros0d_0.6.5-3_amd64.deb"
+}

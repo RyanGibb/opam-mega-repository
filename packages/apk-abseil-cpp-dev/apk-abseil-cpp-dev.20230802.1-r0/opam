@@ -1,0 +1,112 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add abseil-cpp-dev-20230802.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del abseil-cpp-dev"]
+]
+depends: [
+  "apk-abseil-cpp-atomic-hook-test-helper" {= "20230802.1-r0"}
+  "apk-abseil-cpp-bad-any-cast-impl" {= "20230802.1-r0"}
+  "apk-abseil-cpp-bad-optional-access" {= "20230802.1-r0"}
+  "apk-abseil-cpp-bad-variant-access" {= "20230802.1-r0"}
+  "apk-abseil-cpp-base" {= "20230802.1-r0"}
+  "apk-abseil-cpp-city" {= "20230802.1-r0"}
+  "apk-abseil-cpp-civil-time" {= "20230802.1-r0"}
+  "apk-abseil-cpp-cord" {= "20230802.1-r0"}
+  "apk-abseil-cpp-cord-internal" {= "20230802.1-r0"}
+  "apk-abseil-cpp-cordz-functions" {= "20230802.1-r0"}
+  "apk-abseil-cpp-cordz-handle" {= "20230802.1-r0"}
+  "apk-abseil-cpp-cordz-info" {= "20230802.1-r0"}
+  "apk-abseil-cpp-cordz-sample-token" {= "20230802.1-r0"}
+  "apk-abseil-cpp-crc-cord-state" {= "20230802.1-r0"}
+  "apk-abseil-cpp-crc-cpu-detect" {= "20230802.1-r0"}
+  "apk-abseil-cpp-crc-internal" {= "20230802.1-r0"}
+  "apk-abseil-cpp-crc32c" {= "20230802.1-r0"}
+  "apk-abseil-cpp-debugging-internal" {= "20230802.1-r0"}
+  "apk-abseil-cpp-demangle-internal" {= "20230802.1-r0"}
+  "apk-abseil-cpp-die-if-null" {= "20230802.1-r0"}
+  "apk-abseil-cpp-examine-stack" {= "20230802.1-r0"}
+  "apk-abseil-cpp-exception-safety-testing" {= "20230802.1-r0"}
+  "apk-abseil-cpp-exponential-biased" {= "20230802.1-r0"}
+  "apk-abseil-cpp-failure-signal-handler" {= "20230802.1-r0"}
+  "apk-abseil-cpp-flags" {= "20230802.1-r0"}
+  "apk-abseil-cpp-flags-commandlineflag" {= "20230802.1-r0"}
+  "apk-abseil-cpp-flags-commandlineflag-internal" {= "20230802.1-r0"}
+  "apk-abseil-cpp-flags-config" {= "20230802.1-r0"}
+  "apk-abseil-cpp-flags-internal" {= "20230802.1-r0"}
+  "apk-abseil-cpp-flags-marshalling" {= "20230802.1-r0"}
+  "apk-abseil-cpp-flags-parse" {= "20230802.1-r0"}
+  "apk-abseil-cpp-flags-private-handle-accessor" {= "20230802.1-r0"}
+  "apk-abseil-cpp-flags-program-name" {= "20230802.1-r0"}
+  "apk-abseil-cpp-flags-reflection" {= "20230802.1-r0"}
+  "apk-abseil-cpp-flags-usage" {= "20230802.1-r0"}
+  "apk-abseil-cpp-flags-usage-internal" {= "20230802.1-r0"}
+  "apk-abseil-cpp-graphcycles-internal" {= "20230802.1-r0"}
+  "apk-abseil-cpp-hash" {= "20230802.1-r0"}
+  "apk-abseil-cpp-hash-generator-testing" {= "20230802.1-r0"}
+  "apk-abseil-cpp-hashtablez-sampler" {= "20230802.1-r0"}
+  "apk-abseil-cpp-int128" {= "20230802.1-r0"}
+  "apk-abseil-cpp-kernel-timeout-internal" {= "20230802.1-r0"}
+  "apk-abseil-cpp-leak-check" {= "20230802.1-r0"}
+  "apk-abseil-cpp-log-entry" {= "20230802.1-r0"}
+  "apk-abseil-cpp-log-flags" {= "20230802.1-r0"}
+  "apk-abseil-cpp-log-globals" {= "20230802.1-r0"}
+  "apk-abseil-cpp-log-initialize" {= "20230802.1-r0"}
+  "apk-abseil-cpp-log-internal-check-op" {= "20230802.1-r0"}
+  "apk-abseil-cpp-log-internal-conditions" {= "20230802.1-r0"}
+  "apk-abseil-cpp-log-internal-format" {= "20230802.1-r0"}
+  "apk-abseil-cpp-log-internal-globals" {= "20230802.1-r0"}
+  "apk-abseil-cpp-log-internal-log-sink-set" {= "20230802.1-r0"}
+  "apk-abseil-cpp-log-internal-message" {= "20230802.1-r0"}
+  "apk-abseil-cpp-log-internal-nullguard" {= "20230802.1-r0"}
+  "apk-abseil-cpp-log-internal-proto" {= "20230802.1-r0"}
+  "apk-abseil-cpp-log-internal-test-actions" {= "20230802.1-r0"}
+  "apk-abseil-cpp-log-internal-test-helpers" {= "20230802.1-r0"}
+  "apk-abseil-cpp-log-internal-test-matchers" {= "20230802.1-r0"}
+  "apk-abseil-cpp-log-severity" {= "20230802.1-r0"}
+  "apk-abseil-cpp-log-sink" {= "20230802.1-r0"}
+  "apk-abseil-cpp-low-level-hash" {= "20230802.1-r0"}
+  "apk-abseil-cpp-malloc-internal" {= "20230802.1-r0"}
+  "apk-abseil-cpp-per-thread-sem-test-common" {= "20230802.1-r0"}
+  "apk-abseil-cpp-periodic-sampler" {= "20230802.1-r0"}
+  "apk-abseil-cpp-pow10-helper" {= "20230802.1-r0"}
+  "apk-abseil-cpp-random-distributions" {= "20230802.1-r0"}
+  "apk-abseil-cpp-random-internal-distribution-test-util" {= "20230802.1-r0"}
+  "apk-abseil-cpp-random-internal-platform" {= "20230802.1-r0"}
+  "apk-abseil-cpp-random-internal-pool-urbg" {= "20230802.1-r0"}
+  "apk-abseil-cpp-random-internal-randen" {= "20230802.1-r0"}
+  "apk-abseil-cpp-random-internal-randen-hwaes" {= "20230802.1-r0"}
+  "apk-abseil-cpp-random-internal-randen-hwaes-impl" {= "20230802.1-r0"}
+  "apk-abseil-cpp-random-internal-randen-slow" {= "20230802.1-r0"}
+  "apk-abseil-cpp-random-internal-seed-material" {= "20230802.1-r0"}
+  "apk-abseil-cpp-random-seed-gen-exception" {= "20230802.1-r0"}
+  "apk-abseil-cpp-random-seed-sequences" {= "20230802.1-r0"}
+  "apk-abseil-cpp-raw-hash-set" {= "20230802.1-r0"}
+  "apk-abseil-cpp-raw-logging-internal" {= "20230802.1-r0"}
+  "apk-abseil-cpp-scoped-mock-log" {= "20230802.1-r0"}
+  "apk-abseil-cpp-scoped-set-env" {= "20230802.1-r0"}
+  "apk-abseil-cpp-spinlock-test-common" {= "20230802.1-r0"}
+  "apk-abseil-cpp-spinlock-wait" {= "20230802.1-r0"}
+  "apk-abseil-cpp-stack-consumption" {= "20230802.1-r0"}
+  "apk-abseil-cpp-stacktrace" {= "20230802.1-r0"}
+  "apk-abseil-cpp-status" {= "20230802.1-r0"}
+  "apk-abseil-cpp-statusor" {= "20230802.1-r0"}
+  "apk-abseil-cpp-str-format-internal" {= "20230802.1-r0"}
+  "apk-abseil-cpp-strerror" {= "20230802.1-r0"}
+  "apk-abseil-cpp-string-view" {= "20230802.1-r0"}
+  "apk-abseil-cpp-strings" {= "20230802.1-r0"}
+  "apk-abseil-cpp-strings-internal" {= "20230802.1-r0"}
+  "apk-abseil-cpp-symbolize" {= "20230802.1-r0"}
+  "apk-abseil-cpp-synchronization" {= "20230802.1-r0"}
+  "apk-abseil-cpp-test-instance-tracker" {= "20230802.1-r0"}
+  "apk-abseil-cpp-throw-delegate" {= "20230802.1-r0"}
+  "apk-abseil-cpp-time" {= "20230802.1-r0"}
+  "apk-abseil-cpp-time-internal-test-util" {= "20230802.1-r0"}
+  "apk-abseil-cpp-time-zone" {= "20230802.1-r0"}
+  "apk-linux-headers" {= "6.6-r0"}
+  "apk-pkgconf" {= "2.2.0-r0"}
+]
+extra-source "abseil-cpp-dev-20230802.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/abseil-cpp-dev-20230802.1-r0.apk"
+}

@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i hardinfo_0.5.1+git20180227-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r hardinfo"]
+]
+depends: [
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.27"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.43.2"}
+  "deb-libgtk2-0-0" {>= "2.18.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpangoft2-1-0-0" {>= "1.14.0"}
+  "deb-pciutils" {>= "1-2.1.11-10"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+  "deb-zlib1g-dev"
+]
+extra-source "hardinfo_0.5.1+git20180227-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/hardinfo/hardinfo_0.5.1+git20180227-2_amd64.deb"
+}

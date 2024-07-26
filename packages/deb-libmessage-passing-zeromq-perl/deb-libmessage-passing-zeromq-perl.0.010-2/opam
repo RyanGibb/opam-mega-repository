@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmessage-passing-zeromq-perl_0.010-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmessage-passing-zeromq-perl"]
+]
+depends: [
+  "deb-libanyevent-perl"
+  "deb-libfile-pushd-perl"
+  "deb-libmessage-passing-perl"
+  "deb-libmoo-perl"
+  "deb-libmoox-types-mooselike-perl"
+  "deb-libnamespace-clean-perl"
+  "deb-libposix-atfork-perl"
+  "deb-libsub-name-perl"
+  "deb-libtask-weaken-perl"
+  "deb-libtry-tiny-perl"
+  "deb-libzmq-ffi-perl"
+  "deb-perl"
+]
+extra-source "libmessage-passing-zeromq-perl_0.010-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libm/libmessage-passing-zeromq-perl/libmessage-passing-zeromq-perl_0.010-2_all.deb"
+}

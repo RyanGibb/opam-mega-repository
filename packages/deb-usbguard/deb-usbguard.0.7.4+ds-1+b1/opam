@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i usbguard_0.7.4+ds-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r usbguard"]
+]
+depends: [
+  "deb-dbus"
+  "deb-libaudit1" {>= "1-2.2.1"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcap-ng0" {>= "0.7.9"}
+  "deb-libdbus-1-3" {>= "1.9.14"}
+  "deb-libdbus-glib-1-2" {>= "0.78"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libglib2-0-0" {>= "2.26.0"}
+  "deb-libseccomp2" {>= "0.0.0~20120605"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libusbguard0"
+]
+extra-source "usbguard_0.7.4+ds-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/u/usbguard/usbguard_0.7.4+ds-1+b1_amd64.deb"
+}

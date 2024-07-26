@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i utop_2.9.0-1+b10_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r utop"]
+]
+depends: [
+  "deb-dh-elpa-helper"
+  "deb-elpa-tuareg" {>= "2.2.0"}
+  "deb-emacsen-common"
+  "deb-libcamomile-ocaml-dev"
+  "deb-libcharinfo-width-ocaml"
+  "deb-libfindlib-ocaml"
+  "deb-liblambda-term-ocaml"
+  "deb-liblwt-log-ocaml"
+  "deb-liblwt-ocaml"
+  "deb-libmew-ocaml"
+  "deb-libmew-vi-ocaml"
+  "deb-libocplib-endian-ocaml"
+  "deb-libreact-ocaml"
+  "deb-libresult-ocaml"
+  "deb-libtrie-ocaml"
+  "deb-libutop-ocaml"
+  "deb-libzed-ocaml"
+  "deb-ocaml-base"
+]
+extra-source "utop_2.9.0-1+b10_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/u/utop/utop_2.9.0-1+b10_amd64.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-gdtools_0.2.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-gdtools"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo2" {>= "1.7.2"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.3-1"}
+  "deb-r-cran-rcpp" {>= "0.12.12"}
+  "deb-r-cran-systemfonts" {>= "0.1.1"}
+]
+extra-source "r-cran-gdtools_0.2.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-gdtools/r-cran-gdtools_0.2.3-1_amd64.deb"
+}

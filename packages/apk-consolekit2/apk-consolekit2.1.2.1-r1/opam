@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add consolekit2-1.2.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del consolekit2"]
+]
+depends: [
+  "apk-dbus-libs" {= "1.12.18-r0"}
+  "apk-eudev" {= "3.2.9-r3"}
+  "apk-eudev-libs" {= "3.2.9-r3"}
+  "apk-glib" {= "2.64.6-r0"}
+  "apk-libintl" {= "0.20.2-r0"}
+  "apk-libx11" {= "1.6.12-r1"}
+  "apk-musl" {= "1.1.24-r10"}
+  "apk-polkit" {= "0.116-r1"}
+  "apk-zlib" {= "1.2.12-r3"}
+]
+extra-source "consolekit2-1.2.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/consolekit2-1.2.1-r1.apk"
+}

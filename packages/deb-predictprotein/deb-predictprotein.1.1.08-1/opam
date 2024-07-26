@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i predictprotein_1.1.08-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r predictprotein"]
+]
+depends: [
+  "deb-bioperl"
+  "deb-blast2"
+  "deb-disulfinder"
+  "deb-hmmer"
+  "deb-hmmer2"
+  "deb-librg-exception-perl"
+  "deb-librg-utils-perl"
+  "deb-make"
+  "deb-metastudent"
+  "deb-ncbi-seg"
+  "deb-ncoils"
+  "deb-norsnet"
+  "deb-norsp"
+  "deb-perl"
+  "deb-predictnls"
+  "deb-profbval"
+  "deb-profisis"
+  "deb-profphd"
+  "deb-proftmb"
+  "deb-reprof"
+]
+extra-source "predictprotein_1.1.08-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/predictprotein/predictprotein_1.1.08-1_all.deb"
+}

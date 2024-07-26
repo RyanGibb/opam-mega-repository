@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-haven_2.3.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-haven"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.1-1"}
+  "deb-r-cran-forcats" {>= "0.2.0"}
+  "deb-r-cran-hms"
+  "deb-r-cran-rcpp" {>= "0.11.4"}
+  "deb-r-cran-readr" {>= "0.1.0"}
+  "deb-r-cran-rlang" {>= "0.4.0"}
+  "deb-r-cran-tibble"
+  "deb-r-cran-tidyselect"
+  "deb-r-cran-vctrs" {>= "0.3.0"}
+  "deb-zlib1g" {>= "1-1.2.0"}
+]
+extra-source "r-cran-haven_2.3.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-haven/r-cran-haven_2.3.1-1_amd64.deb"
+}

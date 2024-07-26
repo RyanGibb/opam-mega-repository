@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i inspircd_3.8.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r inspircd"]
+]
+depends: [
+  "deb-libargon2-1" {>= "0~20171227"}
+  "deb-libc6" {>= "2.17"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgnutls30" {>= "3.7.0"}
+  "deb-libhttp-parser2-9" {>= "2.9.2"}
+  "deb-libldap-2-4-2" {>= "2.4.7"}
+  "deb-libmariadb3" {>= "3.0.0"}
+  "deb-libmaxminddb0" {>= "1.0.2"}
+  "deb-libpcre3"
+  "deb-libpq5"
+  "deb-libre2-9" {>= "20131024+dfsg"}
+  "deb-libsqlite3-0" {>= "3.5.9"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libtre5"
+  "deb-lsb-base"
+  "deb-perl-any"
+]
+extra-source "inspircd_3.8.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/inspircd/inspircd_3.8.1-2_amd64.deb"
+}

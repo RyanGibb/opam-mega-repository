@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i twpsk_4.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r twpsk"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libice6" {>= "1-1.0.0"}
+  "deb-libpulse0" {>= "0.99.1"}
+  "deb-libsm6"
+  "deb-libstdc++6" {>= "5"}
+  "deb-libx11-6"
+  "deb-libxm4" {>= "2.3.4"}
+  "deb-libxpm4"
+  "deb-libxt6"
+]
+extra-source "twpsk_4.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/twpsk/twpsk_4.3-1_amd64.deb"
+}

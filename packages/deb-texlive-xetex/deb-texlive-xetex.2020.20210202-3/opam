@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i texlive-xetex_2020.20210202-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r texlive-xetex"]
+]
+depends: [
+  "deb-teckit"
+  "deb-tex-common" {>= "6.13"}
+  "deb-texlive-base" {>= "2020.20200417"}
+  "deb-texlive-binaries" {>= "2020.20200327"}
+  "deb-texlive-latex-base" {>= "2020.20200417"}
+  "deb-texlive-latex-extra" {>= "2020.20200417"}
+  "deb-tipa" {>= "2-1.2-2.1"}
+]
+extra-source "texlive-xetex_2020.20210202-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/texlive-base/texlive-xetex_2020.20210202-3_all.deb"
+}

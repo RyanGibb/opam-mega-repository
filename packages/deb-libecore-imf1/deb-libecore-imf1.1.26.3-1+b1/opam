@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libecore-imf1_1.26.3-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libecore-imf1"]
+]
+depends: [
+  "deb-libc6" {>= "2.33"}
+  "deb-libecore-evas1" {>= "1.26.3-0~eo"}
+  "deb-libecore-input1" {>= "1.26.3-0~eo"}
+  "deb-libecore-wl2-1" {>= "1.26.3-0~eo"}
+  "deb-libecore-x1" {>= "1.26.3-0~eo"}
+  "deb-libecore1" {>= "1.26.3-0~eo"}
+  "deb-libeina1a" {>= "1.26.3-0~eo"}
+  "deb-libevas1" {>= "1.26.3-0~eo"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libscim8v5" {>= "1.4"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libwayland-client0" {>= "1.20.0"}
+  "deb-libx11-6"
+  "deb-libxkbcommon0" {>= "0.5.0"}
+]
+extra-source "libecore-imf1_1.26.3-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/efl/libecore-imf1_1.26.3-1+b1_amd64.deb"
+}

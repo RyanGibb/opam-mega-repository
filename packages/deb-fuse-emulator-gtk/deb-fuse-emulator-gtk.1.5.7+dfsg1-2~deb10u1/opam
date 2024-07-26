@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fuse-emulator-gtk_1.5.7+dfsg1-2~deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fuse-emulator-gtk"]
+]
+depends: [
+  "deb-fuse-emulator-common" {= "1.5.7+dfsg1-2~deb10u1"}
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.15"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.16.0"}
+  "deb-libgtk-3-0" {>= "3.19.12"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libsdl1-2debian" {>= "1.2.11"}
+  "deb-libspectrum8" {>= "1.4.3"}
+  "deb-libx11-6"
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "fuse-emulator-gtk_1.5.7+dfsg1-2~deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fuse-emulator/fuse-emulator-gtk_1.5.7+dfsg1-2~deb10u1_amd64.deb"
+}

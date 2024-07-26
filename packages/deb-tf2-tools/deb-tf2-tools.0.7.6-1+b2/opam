@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tf2-tools_0.7.6-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tf2-tools"]
+]
+depends: [
+  "deb-graphviz"
+  "deb-libactionlib1d" {>= "1.14.0"}
+  "deb-libboost-thread1-74-0" {>= "1.74.0+ds1"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-librosconsole3d" {>= "1.14.3"}
+  "deb-libroscpp-serialization0d" {>= "0.7.2"}
+  "deb-libroscpp4d" {>= "1.15.15+ds"}
+  "deb-librostime1d" {>= "0.7.2"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libtf2-2d" {>= "0.7.6"}
+  "deb-libtf2-ros1d" {>= "0.7.6"}
+  "deb-libxmlrpcpp3d" {>= "1.15.15+ds"}
+  "deb-python3-any"
+  "deb-python3-std-msgs"
+  "deb-python3-tf2"
+  "deb-python3-tf2-msgs"
+  "deb-python3-tf2-ros"
+]
+extra-source "tf2-tools_0.7.6-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ros-geometry2/tf2-tools_0.7.6-1+b2_amd64.deb"
+}

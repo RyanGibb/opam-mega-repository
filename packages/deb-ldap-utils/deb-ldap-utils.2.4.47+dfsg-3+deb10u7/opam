@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ldap-utils_2.4.47+dfsg-3+deb10u7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ldap-utils"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgnutls30" {>= "3.6.5"}
+  "deb-libldap-2-4-2" {= "2.4.47+dfsg-3+deb10u7"}
+  "deb-libsasl2-2" {>= "2.1.27+dfsg"}
+]
+conflicts: [
+  "deb-ldap-client"
+  "deb-openldap-utils"
+  "deb-umich-ldap-utils"
+]
+extra-source "ldap-utils_2.4.47+dfsg-3+deb10u7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openldap/ldap-utils_2.4.47+dfsg-3+deb10u7_amd64.deb"
+}

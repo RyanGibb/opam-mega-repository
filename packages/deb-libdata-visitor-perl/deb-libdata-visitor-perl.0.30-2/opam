@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdata-visitor-perl_0.30-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdata-visitor-perl"]
+]
+depends: [
+  "deb-libclass-load-perl"
+  "deb-libmoose-perl"
+  "deb-libnamespace-clean-perl"
+  "deb-libtie-toobject-perl"
+  "deb-perl"
+]
+extra-source "libdata-visitor-perl_0.30-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libd/libdata-visitor-perl/libdata-visitor-perl_0.30-2_all.deb"
+}

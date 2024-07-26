@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-fbjs_0.8.16-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-fbjs"]
+]
+depends: [
+  "deb-node-core-js" {>= "1.0.0"}
+  "deb-node-isomorphic-fetch" {>= "2.1.1"}
+  "deb-node-loose-envify" {>= "1.0.0"}
+  "deb-node-object-assign" {>= "4.1.0"}
+  "deb-node-promise" {>= "7.1.1"}
+  "deb-node-setimmediate" {>= "1.0.5"}
+  "deb-node-ua-parser-js" {>= "0.7.9"}
+  "deb-nodejs"
+]
+extra-source "node-fbjs_0.8.16-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-fbjs/node-fbjs_0.8.16-1_all.deb"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i heat-cfntools_1.4.2-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r heat-cfntools"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-boto" {>= "2.12.0"}
+  "deb-python3-pbr" {>= "0.6"}
+  "deb-python3-psutil" {>= "1.1.1"}
+  "deb-python3-six" {>= "1.9.0"}
+]
+extra-source "heat-cfntools_1.4.2-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/heat-cfntools/heat-cfntools_1.4.2-3_all.deb"
+}

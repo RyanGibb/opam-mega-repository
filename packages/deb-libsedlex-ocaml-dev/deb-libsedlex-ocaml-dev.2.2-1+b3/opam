@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsedlex-ocaml-dev_2.2-1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsedlex-ocaml-dev"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgen-ocaml-dev"
+  "deb-libmigrate-parsetree-ocaml-dev"
+  "deb-libppx-tools-versioned-ocaml-dev"
+  "deb-libsedlex-ocaml"
+  "deb-ocaml-nox"
+]
+extra-source "libsedlex-ocaml-dev_2.2-1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/ocaml-sedlex/libsedlex-ocaml-dev_2.2-1+b3_amd64.deb"
+}

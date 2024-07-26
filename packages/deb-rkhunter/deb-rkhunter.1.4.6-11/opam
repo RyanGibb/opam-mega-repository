@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i rkhunter_1.4.6-11_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r rkhunter"]
+]
+depends: [
+  "deb-binutils"
+  "deb-file"
+  "deb-lsof"
+  "deb-net-tools"
+  "deb-perl-any"
+  "deb-ucf" {>= "3.0040"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "rkhunter_1.4.6-11_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rkhunter/rkhunter_1.4.6-11_all.deb"
+}

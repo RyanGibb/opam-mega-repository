@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcgi-application-extra-plugin-bundle-perl_0.7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcgi-application-extra-plugin-bundle-perl"]
+]
+depends: [
+  "deb-libcgi-application-plugin-actiondispatch-perl"
+  "deb-libcgi-application-plugin-captcha-perl"
+  "deb-libcgi-application-plugin-config-simple-perl"
+  "deb-libcgi-application-plugin-dbiprofile-perl"
+  "deb-libcgi-application-plugin-formstate-perl"
+  "deb-libcgi-application-plugin-json-perl"
+  "deb-libcgi-application-plugin-linkintegrity-perl"
+  "deb-libcgi-application-plugin-messagestack-perl"
+  "deb-libcgi-application-plugin-protectcsrf-perl"
+  "deb-libcgi-application-plugin-ratelimit-perl"
+  "deb-libcgi-application-plugin-requiressl-perl"
+]
+extra-source "libcgi-application-extra-plugin-bundle-perl_0.7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libcgi-application-extra-plugin-bundle-perl/libcgi-application-extra-plugin-bundle-perl_0.7_all.deb"
+}

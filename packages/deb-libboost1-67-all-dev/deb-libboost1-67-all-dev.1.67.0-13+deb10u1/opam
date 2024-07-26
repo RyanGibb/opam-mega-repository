@@ -1,0 +1,45 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libboost1.67-all-dev_1.67.0-13+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libboost1.67-all-dev"]
+]
+depends: [
+  "deb-libboost-atomic1-67-dev"
+  "deb-libboost-chrono1-67-dev"
+  "deb-libboost-container1-67-dev"
+  "deb-libboost-context1-67-dev"
+  "deb-libboost-coroutine1-67-dev"
+  "deb-libboost-date-time1-67-dev"
+  "deb-libboost-exception1-67-dev"
+  "deb-libboost-fiber1-67-dev"
+  "deb-libboost-filesystem1-67-dev"
+  "deb-libboost-graph-parallel1-67-dev"
+  "deb-libboost-graph1-67-dev"
+  "deb-libboost-iostreams1-67-dev"
+  "deb-libboost-locale1-67-dev"
+  "deb-libboost-log1-67-dev"
+  "deb-libboost-math1-67-dev"
+  "deb-libboost-mpi-python1-67-dev"
+  "deb-libboost-mpi1-67-dev"
+  "deb-libboost-numpy1-67-dev"
+  "deb-libboost-program-options1-67-dev"
+  "deb-libboost-python1-67-dev"
+  "deb-libboost-random1-67-dev"
+  "deb-libboost-regex1-67-dev"
+  "deb-libboost-serialization1-67-dev"
+  "deb-libboost-signals1-67-dev"
+  "deb-libboost-stacktrace1-67-dev"
+  "deb-libboost-system1-67-dev"
+  "deb-libboost-test1-67-dev"
+  "deb-libboost-thread1-67-dev"
+  "deb-libboost-timer1-67-dev"
+  "deb-libboost-type-erasure1-67-dev"
+  "deb-libboost-wave1-67-dev"
+  "deb-libboost1-67-dev"
+  "deb-libboost1-67-tools-dev"
+]
+extra-source "libboost1.67-all-dev_1.67.0-13+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/boost1.67/libboost1.67-all-dev_1.67.0-13+deb10u1_amd64.deb"
+}

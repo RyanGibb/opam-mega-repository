@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i piuparts-slave-from-git-deps_1.0.0+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r piuparts-slave-from-git-deps"]
+]
+depends: [
+  "deb-adduser"
+  "deb-debootstrap" {>= "1.0.89~"}
+  "deb-debsums" {>= "2.2.2~"}
+  "deb-git"
+  "deb-lsb-release"
+  "deb-lsof"
+  "deb-mount"
+  "deb-openssh-client"
+  "deb-python" {>= "2.7"}
+  "deb-python-apt"
+  "deb-python-debian"
+  "deb-python-distro-info"
+  "deb-python-lzma"
+  "deb-screen"
+  "deb-sudo"
+]
+extra-source "piuparts-slave-from-git-deps_1.0.0+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/piuparts/piuparts-slave-from-git-deps_1.0.0+deb10u1_all.deb"
+}

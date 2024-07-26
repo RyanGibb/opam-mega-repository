@@ -1,0 +1,44 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i erlang_1:23.2.6+dfsg-1+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r erlang"]
+]
+depends: [
+  "deb-erlang-asn1-any"
+  "deb-erlang-common-test-any"
+  "deb-erlang-crypto-any"
+  "deb-erlang-debugger-any"
+  "deb-erlang-dev-any"
+  "deb-erlang-dialyzer-any"
+  "deb-erlang-diameter-any"
+  "deb-erlang-edoc-any"
+  "deb-erlang-eldap-any"
+  "deb-erlang-erl-docgen-any"
+  "deb-erlang-et-any"
+  "deb-erlang-eunit-any"
+  "deb-erlang-ftp-any"
+  "deb-erlang-inets-any"
+  "deb-erlang-megaco-any"
+  "deb-erlang-mnesia-any"
+  "deb-erlang-observer-any"
+  "deb-erlang-odbc-any"
+  "deb-erlang-os-mon-any"
+  "deb-erlang-parsetools-any"
+  "deb-erlang-public-key-any"
+  "deb-erlang-reltool-any"
+  "deb-erlang-runtime-tools-any"
+  "deb-erlang-snmp-any"
+  "deb-erlang-ssh-any"
+  "deb-erlang-ssl-any"
+  "deb-erlang-syntax-tools-any"
+  "deb-erlang-tftp-any"
+  "deb-erlang-tools-any"
+  "deb-erlang-wx-any"
+  "deb-erlang-xmerl-any"
+  ("deb-erlang-base-any" | "deb- erlang-base-hipe-any")
+]
+extra-source "erlang_1:23.2.6+dfsg-1+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/erlang/erlang_23.2.6+dfsg-1+deb11u1_all.deb"
+}

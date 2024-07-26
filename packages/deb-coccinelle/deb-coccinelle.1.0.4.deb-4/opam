@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i coccinelle_1.0.4.deb-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r coccinelle"]
+]
+depends: [
+  "deb-libc6" {>= "2.17"}
+  "deb-libparmap-ocaml"
+  "deb-libpcre-ocaml"
+  "deb-libpcre3"
+  "deb-libpycaml-ocaml"
+  "deb-libpython2-7" {>= "2.7"}
+  "deb-ocaml-base-nox"
+  "deb-ocaml-findlib"
+  "deb-python-any"
+  "deb-python-glade2"
+  "deb-python-gobject-2"
+  "deb-python-gtk2"
+]
+extra-source "coccinelle_1.0.4.deb-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/coccinelle/coccinelle_1.0.4.deb-4_amd64.deb"
+}

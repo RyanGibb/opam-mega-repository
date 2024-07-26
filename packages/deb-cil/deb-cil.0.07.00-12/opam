@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cil_0.07.00-12_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cil"]
+]
+depends: [
+  "deb-libclass-accessor-perl"
+  "deb-libdatetime-perl"
+  "deb-libdigest-perl"
+  "deb-libemail-date-perl"
+  "deb-libemail-find-perl"
+  "deb-libemail-simple-perl"
+  "deb-libfile-homedir-perl"
+  "deb-libfile-slurp-perl"
+  "deb-libfile-touch-perl"
+  "deb-perl"
+]
+extra-source "cil_0.07.00-12_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cil/cil_0.07.00-12_all.deb"
+}

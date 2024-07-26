@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tdfsb_0.0.10-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tdfsb"]
+]
+depends: [
+  "deb-freeglut3"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgl1"
+  "deb-libsdl-image1-2" {>= "1.2.10"}
+  "deb-libsdl1-2debian" {>= "1.2.11"}
+  "deb-libsmpeg0"
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxi6"
+  "deb-libxmu6"
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+extra-source "tdfsb_0.0.10-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tdfsb/tdfsb_0.0.10-3_amd64.deb"
+}

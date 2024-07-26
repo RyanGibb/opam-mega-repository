@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-grpc-ecosystem-go-grpc-middleware-dev_1.3.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-grpc-ecosystem-go-grpc-middleware-dev"]
+]
+depends: [
+  "deb-golang-github-go-kit-kit-dev"
+  "deb-golang-github-golang-protobuf-1-3-dev" {>= "1.3.3~"}
+  "deb-golang-github-opentracing-opentracing-go-dev"
+  "deb-golang-github-sirupsen-logrus-dev" {>= "1.4.2~"}
+  "deb-golang-go-uber-zap-dev"
+  "deb-golang-golang-x-net-dev"
+  "deb-golang-google-grpc-dev" {>= "1.27.1~"}
+]
+extra-source "golang-github-grpc-ecosystem-go-grpc-middleware-dev_1.3.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-grpc-ecosystem-go-grpc-middleware/golang-github-grpc-ecosystem-go-grpc-middleware-dev_1.3.0-1_all.deb"
+}

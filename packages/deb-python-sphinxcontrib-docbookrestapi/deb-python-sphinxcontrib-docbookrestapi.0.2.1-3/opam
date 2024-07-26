@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-sphinxcontrib.docbookrestapi_0.2.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-sphinxcontrib.docbookrestapi"]
+]
+depends: [
+  "deb-python" {< "2.8"}
+  "deb-python" {>= "2.7"}
+  "deb-python-any" {>= "2.6.6-7~"}
+  "deb-python-docutils"
+  "deb-python-sphinx"
+  "deb-python-tidylib"
+]
+extra-source "python-sphinxcontrib.docbookrestapi_0.2.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sphinxcontrib-docbookrestapi/python-sphinxcontrib.docbookrestapi_0.2.1-3_all.deb"
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ayatana-indicator-session_22.9.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ayatana-indicator-session"]
+]
+depends: [
+  "deb-ayatana-indicator-common" {>= "0.8.0"}
+  "deb-gsettings-desktop-schemas"
+  "deb-init-system-helpers" {>= "1.52"}
+  "deb-libayatana-common0" {>= "0.9.5"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libglib2-0-0" {>= "2.70.0"}
+  "deb-systemd"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "ayatana-indicator-session_22.9.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/ayatana-indicator-session/ayatana-indicator-session_22.9.1-1_amd64.deb"
+}

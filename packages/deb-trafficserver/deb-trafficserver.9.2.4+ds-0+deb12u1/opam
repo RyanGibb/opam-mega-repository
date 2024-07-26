@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i trafficserver_9.2.4+ds-0+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r trafficserver"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libbrotli1" {>= "0.6.0"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcap2" {>= "1-2.10"}
+  "deb-libcurl4" {>= "7.16.2"}
+  "deb-libgcc-s1" {>= "3.4"}
+  "deb-libhwloc15" {>= "2.9.0"}
+  "deb-liblzma5" {>= "5.1.1alpha+20110809"}
+  "deb-libmaxminddb0" {>= "1.0.2"}
+  "deb-libncursesw6" {>= "6"}
+  "deb-libpcre3"
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libstdc++6" {>= "12"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-libunwind8"
+  "deb-libyaml-cpp0-7" {>= "0.7.0"}
+  "deb-lsb-base"
+  "deb-perl-any"
+  "deb-zlib1g" {>= "1-1.2.0"}
+  ("deb-libluajit2-5-1-2" {>= "2.0.4"} | "deb- libluajit-5-1-2" {>= "2.1.0~beta3"})
+]
+extra-source "trafficserver_9.2.4+ds-0+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/trafficserver/trafficserver_9.2.4+ds-0+deb12u1_amd64.deb"
+}

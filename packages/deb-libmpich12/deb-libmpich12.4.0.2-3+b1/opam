@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmpich12_4.0.2-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmpich12"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgfortran5" {>= "9"}
+  "deb-libhwloc15" {>= "2.9.0"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libucx0" {>= "1.13.1"}
+]
+extra-source "libmpich12_4.0.2-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mpich/libmpich12_4.0.2-3+b1_amd64.deb"
+}

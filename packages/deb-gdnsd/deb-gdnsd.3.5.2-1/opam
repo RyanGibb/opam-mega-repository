@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gdnsd_3.5.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gdnsd"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libc6" {>= "2.27"}
+  "deb-libev4" {>= "1-4.04"}
+  "deb-libmaxminddb0" {>= "1.0.2"}
+  "deb-libsodium23" {>= "0.7.0"}
+  "deb-libunwind8"
+  "deb-liburcu6" {>= "0.11.1"}
+]
+extra-source "gdnsd_3.5.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gdnsd/gdnsd_3.5.2-1_amd64.deb"
+}

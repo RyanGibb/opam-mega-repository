@@ -1,0 +1,49 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcatmandu-perl_1.2020-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcatmandu-perl"]
+]
+depends: [
+  "deb-libany-uri-escape-perl"
+  "deb-libapp-cmd-perl"
+  "deb-libasa-perl"
+  "deb-libcgi-expand-perl"
+  "deb-libclass-method-modifiers-perl"
+  "deb-libclone-perl"
+  "deb-libconfig-onion-perl"
+  "deb-libcpanel-json-xs-perl"
+  "deb-libdata-compare-perl"
+  "deb-libdata-util-perl"
+  "deb-libhash-merge-simple-perl"
+  "deb-libhttp-message-perl"
+  "deb-libio-handle-util-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-liblog-any-perl"
+  "deb-libmime-types-perl"
+  "deb-libmodule-info-perl"
+  "deb-libmoo-perl"
+  "deb-libmoox-aliases-perl"
+  "deb-libnamespace-clean-perl"
+  "deb-libpackage-stash-perl"
+  "deb-libparser-mgc-perl" {>= "0.21"}
+  "deb-libpath-iterator-rule-perl"
+  "deb-libpath-tiny-perl"
+  "deb-librole-tiny-perl"
+  "deb-libstring-camelcase-perl"
+  "deb-libsub-exporter-perl"
+  "deb-libtext-csv-perl"
+  "deb-libtext-hogan-perl"
+  "deb-libthrowable-perl"
+  "deb-libtry-tiny-byclass-perl"
+  "deb-liburi-perl"
+  "deb-liburi-template-perl"
+  "deb-libuuid-tiny-perl"
+  "deb-libwww-perl"
+  "deb-libyaml-libyaml-perl"
+  "deb-perl-any"
+]
+extra-source "libcatmandu-perl_1.2020-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libcatmandu-perl/libcatmandu-perl_1.2020-1_all.deb"
+}

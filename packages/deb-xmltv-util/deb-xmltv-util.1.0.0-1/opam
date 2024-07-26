@@ -1,0 +1,52 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xmltv-util_1.0.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xmltv-util"]
+]
+depends: [
+  "deb-libarchive-zip-perl"
+  "deb-libdata-dump-perl"
+  "deb-libdate-manip-perl"
+  "deb-libdatetime-format-iso8601-perl"
+  "deb-libdatetime-format-sqlite-perl"
+  "deb-libdatetime-format-strptime-perl"
+  "deb-libdatetime-perl"
+  "deb-libdatetime-timezone-perl"
+  "deb-libdbd-sqlite3-perl"
+  "deb-libdbi-perl"
+  "deb-libfile-chdir-perl"
+  "deb-libfile-homedir-perl"
+  "deb-libfile-slurp-perl"
+  "deb-libfile-which-perl"
+  "deb-libhtml-parser-perl"
+  "deb-libhtml-tree-perl"
+  "deb-libhttp-cache-transparent-perl"
+  "deb-libhttp-cookies-perl"
+  "deb-libhttp-message-perl"
+  "deb-libio-stringy-perl"
+  "deb-libjson-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-liblwp-protocol-https-perl"
+  "deb-liblwp-useragent-determined-perl"
+  "deb-libsoap-lite-perl"
+  "deb-libterm-readkey-perl"
+  "deb-libtimedate-perl"
+  "deb-libtry-tiny-perl"
+  "deb-liburi-encode-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-libxml-dom-perl"
+  "deb-libxml-libxml-perl"
+  "deb-libxml-libxslt-perl"
+  "deb-libxml-parser-perl"
+  "deb-libxml-treepp-perl"
+  "deb-libxml-twig-perl"
+  "deb-libxml-writer-perl"
+  "deb-libxmltv-perl" {= "1.0.0-1"}
+  "deb-perl-any"
+]
+extra-source "xmltv-util_1.0.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xmltv/xmltv-util_1.0.0-1_all.deb"
+}

@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libavogadro1_1.2.0-4+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libavogadro1"]
+]
+depends: [
+  "deb-libboost-python1-67-0"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgl1"
+  "deb-libglew2-1" {>= "1.12.0"}
+  "deb-libopenbabel5"
+  "deb-libpython2-7" {>= "2.7"}
+  "deb-libqt4-network" {>= "4-4.5.3"}
+  "deb-libqt4-opengl" {>= "4-4.5.3"}
+  "deb-libqtcore4" {>= "4-4.8.0"}
+  "deb-libqtgui4" {>= "4-4.8.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libsymspg1" {>= "1.11.2"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+conflicts: [
+  "deb-libavogadro0"
+]
+extra-source "libavogadro1_1.2.0-4+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/avogadro/libavogadro1_1.2.0-4+b2_amd64.deb"
+}

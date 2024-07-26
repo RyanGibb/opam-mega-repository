@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gfxreconstruct_0.9.18+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gfxreconstruct"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-liblz4-1" {>= "0.0~r130"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libzstd1" {>= "1.5.2"}
+  "deb-python3"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "gfxreconstruct_0.9.18+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gfxreconstruct/gfxreconstruct_0.9.18+dfsg-1_amd64.deb"
+}

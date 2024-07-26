@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i snakemake_7.21.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r snakemake"]
+]
+depends: [
+  "deb-ca-certificates"
+  "deb-libjs-bootstrap"
+  "deb-libjs-jquery"
+  "deb-python3-any"
+  "deb-python3-appdirs"
+  "deb-python3-configargparse"
+  "deb-python3-connection-pool"
+  "deb-python3-datrie"
+  "deb-python3-docutils"
+  "deb-python3-git"
+  "deb-python3-humanfriendly"
+  "deb-python3-jinja2" {>= "3.0~"}
+  "deb-python3-jsonschema"
+  "deb-python3-nbformat"
+  "deb-python3-pkg-resources"
+  "deb-python3-psutil"
+  "deb-python3-pulp" {>= "2.0~"}
+  "deb-python3-ratelimiter"
+  "deb-python3-requests"
+  "deb-python3-retry"
+  "deb-python3-smart-open" {>= "3.0~"}
+  "deb-python3-stopit"
+  "deb-python3-tabulate"
+  "deb-python3-throttler"
+  "deb-python3-toposort"
+  "deb-python3-wrapt"
+  "deb-python3-yaml"
+]
+extra-source "snakemake_7.21.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/snakemake/snakemake_7.21.0-1_all.deb"
+}

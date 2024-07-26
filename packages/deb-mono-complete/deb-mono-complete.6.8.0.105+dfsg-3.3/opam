@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mono-complete_6.8.0.105+dfsg-3.3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mono-complete"]
+]
+depends: [
+  "deb-ca-certificates-mono" {= "6.8.0.105+dfsg-3.3"}
+  "deb-libmono-2-0-1" {= "6.8.0.105+dfsg-3.3"}
+  "deb-libmono-cil-dev" {= "6.8.0.105+dfsg-3.3"}
+  "deb-libmono-profiler" {= "6.8.0.105+dfsg-3.3"}
+  "deb-mono-4-0-gac" {= "6.8.0.105+dfsg-3.3"}
+  "deb-mono-4-0-service" {= "6.8.0.105+dfsg-3.3"}
+  "deb-mono-csharp-shell" {= "6.8.0.105+dfsg-3.3"}
+  "deb-mono-devel" {= "6.8.0.105+dfsg-3.3"}
+  "deb-mono-mcs" {= "6.8.0.105+dfsg-3.3"}
+  "deb-mono-runtime" {= "6.8.0.105+dfsg-3.3"}
+  "deb-mono-runtime-sgen" {= "6.8.0.105+dfsg-3.3"}
+  "deb-mono-utils" {= "6.8.0.105+dfsg-3.3"}
+  "deb-monodoc-base" {= "6.8.0.105+dfsg-3.3"}
+  "deb-monodoc-manual" {= "6.8.0.105+dfsg-3.3"}
+]
+extra-source "mono-complete_6.8.0.105+dfsg-3.3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mono/mono-complete_6.8.0.105+dfsg-3.3_amd64.deb"
+}

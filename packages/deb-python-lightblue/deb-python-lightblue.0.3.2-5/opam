@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-lightblue_0.3.2-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-lightblue"]
+]
+depends: [
+  "deb-libbluetooth3" {>= "4.91"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libopenobex2"
+  "deb-python" {< "2.8"}
+  "deb-python" {>= "2.7~"}
+  "deb-python-any" {>= "2.7.5-5~"}
+  "deb-python-bluez"
+]
+extra-source "python-lightblue_0.3.2-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-lightblue/python-lightblue_0.3.2-5_amd64.deb"
+}

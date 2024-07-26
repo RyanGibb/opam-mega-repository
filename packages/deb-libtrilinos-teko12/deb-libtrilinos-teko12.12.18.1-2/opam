@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libtrilinos-teko12_12.18.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libtrilinos-teko12"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libopenmpi3" {>= "4.1.0"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libtrilinos-epetra12" {>= "12.18.1"}
+  "deb-libtrilinos-epetraext12" {>= "12.18.1"}
+  "deb-libtrilinos-ifpack2-12" {>= "12.18.1"}
+  "deb-libtrilinos-isorropia12" {>= "12.18.1"}
+  "deb-libtrilinos-kokkos12" {>= "12.18.1"}
+  "deb-libtrilinos-stratimikos12" {>= "12.18.1"}
+  "deb-libtrilinos-teuchos12" {>= "12.18.1"}
+  "deb-libtrilinos-thyra12" {>= "12.18.1"}
+  "deb-libtrilinos-tpetra12" {>= "12.18.1"}
+]
+extra-source "libtrilinos-teko12_12.18.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/trilinos/libtrilinos-teko12_12.18.1-2_amd64.deb"
+}

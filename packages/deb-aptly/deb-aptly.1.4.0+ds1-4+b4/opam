@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i aptly_1.4.0+ds1-4+b4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r aptly"]
+]
+depends: [
+  "deb-bzip2"
+  "deb-gnupg"
+  "deb-gpgv"
+  "deb-libc6" {>= "2.4"}
+  "deb-xz-utils"
+]
+extra-source "aptly_1.4.0+ds1-4+b4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/aptly/aptly_1.4.0+ds1-4+b4_amd64.deb"
+}

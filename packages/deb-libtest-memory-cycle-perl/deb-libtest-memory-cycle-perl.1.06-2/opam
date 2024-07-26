@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libtest-memory-cycle-perl_1.06-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libtest-memory-cycle-perl"]
+]
+depends: [
+  "deb-libdevel-cycle-perl"
+  "deb-libpadwalker-perl"
+  "deb-perl-any"
+]
+extra-source "libtest-memory-cycle-perl_1.06-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libt/libtest-memory-cycle-perl/libtest-memory-cycle-perl_1.06-2_all.deb"
+}

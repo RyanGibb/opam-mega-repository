@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i elpa-lsp-java_0.20211124-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r elpa-lsp-java"]
+]
+depends: [
+  "deb-dh-elpa-helper"
+  "deb-elpa-dap-mode" {>= "0.5"}
+  "deb-elpa-dash" {>= "2.18.0"}
+  "deb-elpa-f" {>= "0.20.0"}
+  "deb-elpa-ht" {>= "2.0"}
+  "deb-elpa-lsp-mode" {>= "6.0"}
+  "deb-elpa-markdown-mode" {>= "2.3"}
+  "deb-elpa-request" {>= "0.3.0"}
+  "deb-elpa-treemacs" {>= "2.5"}
+  "deb-emacsen-common"
+]
+extra-source "elpa-lsp-java_0.20211124-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lsp-java/elpa-lsp-java_0.20211124-2_all.deb"
+}

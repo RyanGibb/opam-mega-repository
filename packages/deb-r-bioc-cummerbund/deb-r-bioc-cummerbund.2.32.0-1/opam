@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-bioc-cummerbund_2.32.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-bioc-cummerbund"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.3-1"}
+  "deb-r-bioc-biobase"
+  "deb-r-bioc-biocgenerics"
+  "deb-r-bioc-biocgenerics" {>= "0.3.2"}
+  "deb-r-bioc-gviz"
+  "deb-r-bioc-rtracklayer"
+  "deb-r-bioc-s4vectors" {>= "0.9.25"}
+  "deb-r-cran-fastcluster"
+  "deb-r-cran-ggplot2"
+  "deb-r-cran-plyr"
+  "deb-r-cran-reshape2"
+  "deb-r-cran-rsqlite"
+]
+extra-source "r-bioc-cummerbund_2.32.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-bioc-cummerbund/r-bioc-cummerbund_2.32.0-1_all.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdart-gui-dev_6.12.1+dfsg4-12+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdart-gui-dev"]
+]
+depends: [
+  "deb-freeglut3-dev"
+  "deb-libdart-dev"
+  "deb-libdart-gui6-12" {= "6.12.1+dfsg4-12+b2"}
+  "deb-libdart-utils-dev"
+  "deb-libxi-dev"
+  "deb-libxmu-dev"
+]
+extra-source "libdart-gui-dev_6.12.1+dfsg4-12+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dart/libdart-gui-dev_6.12.1+dfsg4-12+b2_amd64.deb"
+}

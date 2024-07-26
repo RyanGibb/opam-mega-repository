@@ -1,0 +1,71 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnuradio_3.10.5.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnuradio"]
+]
+depends: [
+  "deb-libboost-program-options1-74-0" {>= "1.74.0+ds1"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libfmt9" {>= "9.1.0+ds1"}
+  "deb-libgcc-s1" {>= "3.3.1"}
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-libgnuradio-analog3-10-5" {>= "3.10.5.1"}
+  "deb-libgnuradio-audio3-10-5" {>= "3.10.5.1"}
+  "deb-libgnuradio-blocks3-10-5" {>= "3.10.5.1"}
+  "deb-libgnuradio-channels3-10-5" {>= "3.10.5.1"}
+  "deb-libgnuradio-digital3-10-5" {>= "3.10.5.1"}
+  "deb-libgnuradio-dtv3-10-5" {>= "3.10.5.1"}
+  "deb-libgnuradio-fec3-10-5" {>= "3.10.5.1"}
+  "deb-libgnuradio-fft3-10-5" {>= "3.10.5.1"}
+  "deb-libgnuradio-filter3-10-5" {>= "3.10.5.1"}
+  "deb-libgnuradio-iio3-10-5" {>= "3.10.5.1"}
+  "deb-libgnuradio-network3-10-5" {>= "3.10.5.1"}
+  "deb-libgnuradio-pdu3-10-5" {>= "3.10.5.1"}
+  "deb-libgnuradio-pmt3-10-5" {>= "3.10.5.1"}
+  "deb-libgnuradio-qtgui3-10-5" {>= "3.10.5.1"}
+  "deb-libgnuradio-runtime3-10-5" {>= "3.10.5.1"}
+  "deb-libgnuradio-soapy3-10-5" {>= "3.10.5.1"}
+  "deb-libgnuradio-trellis3-10-5" {>= "3.10.5.1"}
+  "deb-libgnuradio-uhd3-10-5" {>= "3.10.5.1"}
+  "deb-libgnuradio-video-sdl3-10-5" {>= "3.10.5.1"}
+  "deb-libgnuradio-vocoder3-10-5" {>= "3.10.5.1"}
+  "deb-libgnuradio-wavelet3-10-5" {>= "3.10.5.1"}
+  "deb-libgnuradio-zeromq3-10-5" {>= "3.10.5.1"}
+  "deb-libjs-mathjax"
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-libsoapysdr0-8" {>= "0.8.1"}
+  "deb-libspdlog1-10"
+  "deb-libstdc++6" {>= "11"}
+  "deb-libuhd4-3-0" {>= "4.3.0.0+ds1"}
+  "deb-libvolk2-5" {>= "2.5.2"}
+  "deb-libvolk2-bin"
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-any"
+  "deb-python3-click"
+  "deb-python3-click-plugins"
+  "deb-python3-gi"
+  "deb-python3-gi-cairo"
+  "deb-python3-jsonschema"
+  "deb-python3-lxml"
+  "deb-python3-mako"
+  "deb-python3-numpy"
+  "deb-python3-numpy" {>= "1-1.22.0"}
+  "deb-python3-opengl"
+  "deb-python3-packaging"
+  "deb-python3-pygccxml"
+  "deb-python3-pyqt5"
+  "deb-python3-pyqtgraph"
+  "deb-python3-schema"
+  "deb-python3-sip"
+  "deb-python3-thrift"
+  "deb-python3-yaml"
+  "deb-python3-zmq"
+  ("deb-gnome-terminal" | "deb- x-terminal-emulator")
+]
+extra-source "gnuradio_3.10.5.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnuradio/gnuradio_3.10.5.1-3_amd64.deb"
+}

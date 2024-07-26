@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsasl2-modules-sql_2.1.28+dfsg-10_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsasl2-modules-sql"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libmariadb3" {>= "3.0.0"}
+  "deb-libpq5"
+  "deb-libsasl2-modules" {= "2.1.28+dfsg-10"}
+  "deb-libsqlite3-0" {>= "3.5.9"}
+]
+extra-source "libsasl2-modules-sql_2.1.28+dfsg-10_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cyrus-sasl2/libsasl2-modules-sql_2.1.28+dfsg-10_amd64.deb"
+}

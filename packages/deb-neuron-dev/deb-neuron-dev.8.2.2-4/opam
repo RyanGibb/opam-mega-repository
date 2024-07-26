@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i neuron-dev_8.2.2-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r neuron-dev"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libmeschach-dev"
+  "deb-libopenmpi-dev"
+  "deb-libreadline-dev"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-neuron" {= "8.2.2-4"}
+]
+extra-source "neuron-dev_8.2.2-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/neuron/neuron-dev_8.2.2-4_amd64.deb"
+}

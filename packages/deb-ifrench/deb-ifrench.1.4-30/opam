@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ifrench_1.4-30_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ifrench"]
+]
+depends: [
+  "deb-dictionaries-common"
+  "deb-ispell"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+conflicts: [
+  "deb-ifrench-gut"
+]
+extra-source "ifrench_1.4-30_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/ifrench/ifrench_1.4-30_all.deb"
+}

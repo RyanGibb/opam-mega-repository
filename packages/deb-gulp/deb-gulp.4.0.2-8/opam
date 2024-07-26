@@ -1,0 +1,43 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gulp_4.0.2-8_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gulp"]
+]
+depends: [
+  "deb-node-archy"
+  "deb-node-arr-flatten"
+  "deb-node-chalk"
+  "deb-node-chokidar" {>= "2.0~"}
+  "deb-node-concat-stream"
+  "deb-node-defaults"
+  "deb-node-deprecated"
+  "deb-node-es6-weak-map"
+  "deb-node-find-up"
+  "deb-node-for-own"
+  "deb-node-get-value"
+  "deb-node-globule"
+  "deb-node-gulp-util"
+  "deb-node-interpret"
+  "deb-node-is-unc-path" {>= "1.0~"}
+  "deb-node-liftoff" {>= "3.1~"}
+  "deb-node-minimist"
+  "deb-node-normalize-package-data"
+  "deb-node-orchestrator"
+  "deb-node-parse-json"
+  "deb-node-pinkie-promise"
+  "deb-node-pretty-hrtime"
+  "deb-node-semver" {>= "4.1.0"}
+  "deb-node-set-blocking"
+  "deb-node-string-width"
+  "deb-node-tildify"
+  "deb-node-v8flags"
+  "deb-node-vinyl-fs" {>= "3.0.3-2~"}
+  "deb-node-y18n"
+  "deb-node-yargs-parser"
+  "deb-nodejs"
+]
+extra-source "gulp_4.0.2-8_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-gulp/gulp_4.0.2-8_all.deb"
+}

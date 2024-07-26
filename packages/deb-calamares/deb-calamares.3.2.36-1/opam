@@ -1,0 +1,42 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i calamares_3.2.36-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r calamares"]
+]
+depends: [
+  "deb-kpackagetool5"
+  "deb-libboost-python1-74-0"
+  "deb-libboost-python1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcrypt1" {>= "1-4.1.0"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libkf5configcore5" {>= "4.97.0"}
+  "deb-libkf5coreaddons5" {>= "5.61.0"}
+  "deb-libkf5package5" {>= "5.5.0+git"}
+  "deb-libkf5parts5" {>= "4.96.0"}
+  "deb-libkf5service-bin"
+  "deb-libkf5service5" {>= "4.99.0"}
+  "deb-libkpmcore10" {>= "20.12.2"}
+  "deb-libparted2" {>= "3.1"}
+  "deb-libpwquality1" {>= "1.1.0"}
+  "deb-libpython3-9" {>= "3.9.0~b4"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.14.1"}
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libqt5qml5" {>= "5.10.0"}
+  "deb-libqt5quickwidgets5" {>= "5.3.0"}
+  "deb-libqt5svg5" {>= "5.6.0~beta"}
+  "deb-libqt5webkit5" {>= "5.212.0~alpha3"}
+  "deb-libqt5widgets5" {>= "5.15.1"}
+  "deb-libqt5xml5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libyaml-cpp0-6" {>= "0.6.2"}
+  "deb-os-prober"
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5quick5" {>= "5.0.2"} | "deb- libqt5quick5-gles" {>= "5.0.2"})
+]
+extra-source "calamares_3.2.36-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/calamares/calamares_3.2.36-1_amd64.deb"
+}

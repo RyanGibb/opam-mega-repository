@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-unixutils-prof_1.54.1-7+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-unixutils-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-exceptions-prof"
+  "deb-libghc-process-extras-prof"
+  "deb-libghc-puremd5-prof"
+  "deb-libghc-regex-tdfa-prof"
+  "deb-libghc-unixutils-dev" {= "1.54.1-7+b2"}
+  "deb-libghc-zlib-prof"
+]
+extra-source "libghc-unixutils-prof_1.54.1-7+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-unixutils/libghc-unixutils-prof_1.54.1-7+b2_amd64.deb"
+}

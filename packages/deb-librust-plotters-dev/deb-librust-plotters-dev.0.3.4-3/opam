@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-plotters-dev_0.3.4-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-plotters-dev"]
+]
+depends: [
+  "deb-librust-chrono-dev"
+  "deb-librust-font-kit-0-11+default-dev"
+  "deb-librust-image-dev"
+  "deb-librust-lazy-static-dev"
+  "deb-librust-num-traits-dev"
+  "deb-librust-pathfinder-geometry-dev"
+  "deb-librust-plotters-backend-0-3+default-dev"
+  "deb-librust-plotters-bitmap-0-3-dev"
+  "deb-librust-plotters-svg-0-3+default-dev"
+  "deb-librust-ttf-parser-0-15+default-dev"
+  "deb-librust-wasm-bindgen+default-dev"
+  "deb-librust-web-sys-dev"
+]
+extra-source "librust-plotters-dev_0.3.4-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-plotters/librust-plotters-dev_0.3.4-3_amd64.deb"
+}

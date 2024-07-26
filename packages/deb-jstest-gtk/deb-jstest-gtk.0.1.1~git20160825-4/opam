@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i jstest-gtk_0.1.1~git20160825-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r jstest-gtk"]
+]
+depends: [
+  "deb-libatkmm-1-6-1v5" {>= "2.24.0"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairomm-1-0-1v5" {>= "1.12.0"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglibmm-2-4-1v5" {>= "2.64.2"}
+  "deb-libgtkmm-2-4-1v5" {>= "1-2.24.0"}
+  "deb-libsigc++-2-0-0v5" {>= "2.8.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libx11-6"
+]
+extra-source "jstest-gtk_0.1.1~git20160825-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/j/jstest-gtk/jstest-gtk_0.1.1~git20160825-4_amd64.deb"
+}

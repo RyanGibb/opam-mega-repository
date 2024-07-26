@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add uvncrepeater-014-r7.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del uvncrepeater"]
+]
+depends: [
+  "apk-busybox" {= "1.31.1-r22"}
+  "apk-musl" {= "1.1.24-r10"}
+  "apk-openrc" {>= "0.6"}
+]
+extra-source "uvncrepeater-014-r7.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/uvncrepeater-014-r7.apk"
+}

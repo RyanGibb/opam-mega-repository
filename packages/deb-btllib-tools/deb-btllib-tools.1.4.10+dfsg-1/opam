@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i btllib-tools_1.4.10+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r btllib-tools"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgomp1" {>= "4.9"}
+  "deb-libstdc++6" {>= "12"}
+  "deb-samtools"
+  "deb-wget"
+]
+extra-source "btllib-tools_1.4.10+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/btllib/btllib-tools_1.4.10+dfsg-1_amd64.deb"
+}

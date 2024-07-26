@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i translate-toolkit_2.3.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r translate-toolkit"]
+]
+depends: [
+  "deb-python3"
+  "deb-python3-any"
+  "deb-python3-pkg-resources"
+  "deb-python3-six"
+  "deb-python3-translate"
+]
+extra-source "translate-toolkit_2.3.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/translate-toolkit/translate-toolkit_2.3.1-3_all.deb"
+}

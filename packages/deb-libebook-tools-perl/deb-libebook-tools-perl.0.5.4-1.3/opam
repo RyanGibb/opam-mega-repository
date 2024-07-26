@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libebook-tools-perl_0.5.4-1.3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libebook-tools-perl"]
+]
+depends: [
+  "deb-libarchive-zip-perl"
+  "deb-libbit-vector-perl"
+  "deb-libconfig-inifiles-perl"
+  "deb-libdate-manip-perl"
+  "deb-libdbd-sqlite3-perl"
+  "deb-libdbi-perl"
+  "deb-libencode-detect-perl"
+  "deb-libfile-mimeinfo-perl"
+  "deb-libfile-slurp-perl"
+  "deb-libfile-which-perl"
+  "deb-libhtml-parser-perl"
+  "deb-libimage-size-perl"
+  "deb-liblingua-en-nameparse-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-libmojolicious-perl" {>= "3"}
+  "deb-libossp-uuid-perl"
+  "deb-libpalm-perl"
+  "deb-libstring-crc32-perl"
+  "deb-libtie-ixhash-perl"
+  "deb-libtime-local-perl"
+  "deb-libwww-perl"
+  "deb-libxml-twig-perl"
+  "deb-perl" {>= "5.10.1"}
+  "deb-txt2html"
+]
+extra-source "libebook-tools-perl_0.5.4-1.3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libe/libebook-tools-perl/libebook-tools-perl_0.5.4-1.3_amd64.deb"
+}

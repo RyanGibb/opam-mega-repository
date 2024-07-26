@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cwltool_1.0.20181217162649+dfsg-10_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cwltool"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-mypy"
+  "deb-python3-mypy-extensions"
+  "deb-python3-pkg-resources"
+  "deb-python3-prov"
+  "deb-python3-psutil"
+  "deb-python3-rdflib"
+  "deb-python3-requests"
+  "deb-python3-ruamel-yaml"
+  "deb-python3-schema-salad"
+  "deb-python3-shellescape"
+  "deb-python3-six" {>= "1.9.0"}
+  "deb-python3-typing-extensions"
+]
+extra-source "cwltool_1.0.20181217162649+dfsg-10_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cwltool/cwltool_1.0.20181217162649+dfsg-10_all.deb"
+}

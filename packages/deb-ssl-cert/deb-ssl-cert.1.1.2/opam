@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ssl-cert_1.1.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ssl-cert"]
+]
+depends: [
+  "deb-adduser"
+  "deb-openssl" {>= "0.9.8g-9"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "ssl-cert_1.1.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/ssl-cert/ssl-cert_1.1.2_all.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdart6_6.9.5-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdart6"]
+]
+depends: [
+  "deb-libassimp5" {>= "5.0.1~ds0"}
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0"}
+  "deb-libboost-regex1-74-0"
+  "deb-libc6" {>= "2.29"}
+  "deb-libdart-external-odelcpsolver6" {>= "6.9.5"}
+  "deb-libfcl0-6" {>= "0.6.1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-liboctomap1-9" {>= "1.9.3+dfsg"}
+  "deb-libstdc++6" {>= "9"}
+]
+extra-source "libdart6_6.9.5-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dart/libdart6_6.9.5-3_amd64.deb"
+}

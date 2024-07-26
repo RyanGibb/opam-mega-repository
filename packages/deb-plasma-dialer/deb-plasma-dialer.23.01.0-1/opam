@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i plasma-dialer_23.01.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r plasma-dialer"]
+]
+depends: [
+  "deb-callaudiod"
+  "deb-libc6" {>= "2.34"}
+  "deb-libcallaudio-0-1" {>= "0.1.4"}
+  "deb-libkf5configcore5" {>= "5.101.0~"}
+  "deb-libkf5configgui5" {>= "5.101.0~"}
+  "deb-libkf5contacts5" {>= "5-5.101.0~"}
+  "deb-libkf5coreaddons5" {>= "5.101.0~"}
+  "deb-libkf5dbusaddons5" {>= "5.101.0~"}
+  "deb-libkf5i18n5" {>= "5.101.0~"}
+  "deb-libkf5kiogui5" {>= "5.101.0~"}
+  "deb-libkf5modemmanagerqt6" {>= "5.101.0~"}
+  "deb-libkf5notifications5" {>= "5.101.0~"}
+  "deb-libkf5people5" {>= "5.101.0~"}
+  "deb-libkf5peoplebackend5" {>= "5.101.0~"}
+  "deb-libkf5service-bin"
+  "deb-libkf5service5" {>= "4.96.0"}
+  "deb-libkf5windowsystem5" {>= "5.101.0~"}
+  "deb-libphonenumber8"
+  "deb-libqt5core5a" {>= "5.15.2~"}
+  "deb-libqt5dbus5" {>= "5.15.2~"}
+  "deb-libqt5feedback5" {>= "5.0~git20180329.a14bd0bb"}
+  "deb-libqt5qml5" {>= "5.15.2~"}
+  "deb-libqt5quickcontrols2-5" {>= "5.15.2~"}
+  "deb-libqt5sql5" {>= "5.15.2~"}
+  "deb-libqt5waylandclient5" {>= "5.15.4"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libwayland-client0" {>= "1.20.0"}
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+]
+extra-source "plasma-dialer_23.01.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/plasma-dialer/plasma-dialer_23.01.0-1_amd64.deb"
+}

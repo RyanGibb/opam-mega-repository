@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-pyspatialite_3.0.1-13_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-pyspatialite"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgeos-c1v5" {>= "3.4.2"}
+  "deb-libproj13" {>= "4.8.0"}
+  "deb-libspatialite7" {>= "4.1.0"}
+  "deb-python" {< "2.8"}
+  "deb-python" {>= "2.7~"}
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7.5-5~"}
+]
+extra-source "python-pyspatialite_3.0.1-13_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pyspatialite/python-pyspatialite_3.0.1-13_amd64.deb"
+}

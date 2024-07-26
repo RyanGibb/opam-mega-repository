@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-winapi-util-dev_0.1.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-winapi-util-dev"]
+]
+depends: [
+  "deb-librust-winapi-0-3+consoleapi-dev"
+  "deb-librust-winapi-0-3+default-dev"
+  "deb-librust-winapi-0-3+errhandlingapi-dev"
+  "deb-librust-winapi-0-3+fileapi-dev"
+  "deb-librust-winapi-0-3+minwindef-dev"
+  "deb-librust-winapi-0-3+processenv-dev"
+  "deb-librust-winapi-0-3+std-dev"
+  "deb-librust-winapi-0-3+winbase-dev"
+  "deb-librust-winapi-0-3+wincon-dev"
+  "deb-librust-winapi-0-3+winerror-dev"
+  "deb-librust-winapi-0-3+winnt-dev"
+]
+extra-source "librust-winapi-util-dev_0.1.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-winapi-util/librust-winapi-util-dev_0.1.5-1_amd64.deb"
+}

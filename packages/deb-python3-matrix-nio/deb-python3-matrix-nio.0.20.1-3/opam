@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-matrix-nio_0.20.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-matrix-nio"]
+]
+depends: [
+  "deb-python3-aiofiles"
+  "deb-python3-aiohttp"
+  "deb-python3-aiohttp-socks"
+  "deb-python3-any"
+  "deb-python3-atomicwrites"
+  "deb-python3-cachetools"
+  "deb-python3-future"
+  "deb-python3-h11"
+  "deb-python3-h2"
+  "deb-python3-jsonschema"
+  "deb-python3-logbook"
+  "deb-python3-olm"
+  "deb-python3-peewee"
+  "deb-python3-pycryptodome"
+  "deb-python3-unpaddedbase64"
+]
+extra-source "python3-matrix-nio_0.20.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-matrix-nio/python3-matrix-nio_0.20.1-3_all.deb"
+}

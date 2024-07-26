@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libtrapperkeeper-clojure_1.5.2-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libtrapperkeeper-clojure"]
+]
+depends: [
+  "deb-libbeckon-clojure"
+  "deb-libclj-time-clojure"
+  "deb-libclj-yaml-clojure"
+  "deb-libclojure-java"
+  "deb-libcore-async-clojure"
+  "deb-libjanino-java"
+  "deb-libkitchensink-clojure"
+  "deb-liblogback-java"
+  "deb-libnrepl-clojure"
+  "deb-libprismatic-plumbing-clojure"
+  "deb-libprismatic-schema-clojure"
+  "deb-libraynes-fs-clojure"
+  "deb-libslf4j-java"
+  "deb-libtools-logging-clojure"
+  "deb-libtools-macro-clojure"
+  "deb-libtypesafe-config-clojure"
+]
+extra-source "libtrapperkeeper-clojure_1.5.2-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/trapperkeeper-clojure/libtrapperkeeper-clojure_1.5.2-2_all.deb"
+}

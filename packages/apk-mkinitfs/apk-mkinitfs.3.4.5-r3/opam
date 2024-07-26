@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mkinitfs-3.4.5-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mkinitfs"]
+]
+depends: [
+  "apk-apk-tools" {>= "2.9.1"}
+  "apk-busybox" {>= "1.28.2-r1"}
+  "apk-cryptsetup-libs" {= "2.3.7-r0"}
+  "apk-kmod" {= "27-r0"}
+  "apk-kmod-libs" {= "27-r0"}
+  "apk-lddtree" {>= "1.25"}
+  "apk-libblkid" {= "2.37.4-r0"}
+  "apk-musl" {= "1.1.24-r10"}
+]
+extra-source "mkinitfs-3.4.5-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/mkinitfs-3.4.5-r3.apk"
+}

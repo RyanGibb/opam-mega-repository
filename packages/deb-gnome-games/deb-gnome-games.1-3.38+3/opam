@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnome-games_1:3.38+3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnome-games"]
+]
+depends: [
+  "deb-five-or-more" {>= "1-3.32"}
+  "deb-four-in-a-row" {>= "1-3.38"}
+  "deb-gnome-2048" {>= "3.38"}
+  "deb-gnome-chess" {>= "1-3.38"}
+  "deb-gnome-klotski" {>= "1-3.38"}
+  "deb-gnome-mahjongg" {>= "1-3.38"}
+  "deb-gnome-mines" {>= "1-3.36"}
+  "deb-gnome-nibbles" {>= "1-3.38"}
+  "deb-gnome-robots" {>= "1-3.38"}
+  "deb-gnome-sudoku" {>= "1-3.38"}
+  "deb-gnome-taquin" {>= "3.38"}
+  "deb-gnome-tetravex" {>= "1-3.38"}
+  "deb-hitori" {>= "3.38"}
+  "deb-iagno" {>= "1-3.38"}
+  "deb-lightsoff" {>= "1-3.38"}
+  "deb-quadrapassel" {>= "1-3.36"}
+  "deb-swell-foop" {>= "1-3.34"}
+  "deb-tali" {>= "1-3.38"}
+]
+extra-source "gnome-games_1:3.38+3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/meta-gnome3/gnome-games_3.38+3_all.deb"
+}

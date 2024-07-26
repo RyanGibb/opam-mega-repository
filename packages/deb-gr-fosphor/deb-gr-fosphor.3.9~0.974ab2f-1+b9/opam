@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gr-fosphor_3.9~0.974ab2f-1+b9_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gr-fosphor"]
+]
+depends: [
+  "deb-gnuradio-dev"
+  "deb-libc6" {>= "2.32"}
+  "deb-libgcc-s1" {>= "3.3.1"}
+  "deb-libgnuradio-fosphor3-9-0" {= "3.9~0.974ab2f-1+b9"}
+  "deb-libgnuradio-runtime3-10-5" {>= "3.10.5.0"}
+  "deb-libpython3-11" {>= "3.11.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-any"
+  "deb-python3-numpy"
+  "deb-python3-numpy" {>= "1-1.22.0"}
+]
+extra-source "gr-fosphor_3.9~0.974ab2f-1+b9_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gr-fosphor/gr-fosphor_3.9~0.974ab2f-1+b9_amd64.deb"
+}

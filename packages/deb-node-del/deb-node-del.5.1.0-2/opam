@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-del_5.1.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-del"]
+]
+depends: [
+  "deb-node-globby"
+  "deb-node-graceful-fs"
+  "deb-node-is-glob"
+  "deb-node-is-path-cwd"
+  "deb-node-is-path-inside"
+  "deb-node-p-map"
+  "deb-node-rimraf"
+  "deb-node-slash"
+  "deb-nodejs"
+]
+extra-source "node-del_5.1.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-del/node-del_5.1.0-2_all.deb"
+}

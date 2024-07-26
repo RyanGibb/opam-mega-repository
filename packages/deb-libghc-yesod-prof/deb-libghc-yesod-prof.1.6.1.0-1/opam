@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-yesod-prof_1.6.1.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-yesod-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-aeson-prof"
+  "deb-libghc-conduit-prof"
+  "deb-libghc-data-default-class-prof"
+  "deb-libghc-fast-logger-prof"
+  "deb-libghc-file-embed-prof"
+  "deb-libghc-monad-logger-prof"
+  "deb-libghc-shakespeare-prof"
+  "deb-libghc-streaming-commons-prof"
+  "deb-libghc-unordered-containers-prof"
+  "deb-libghc-wai-extra-prof"
+  "deb-libghc-wai-logger-prof"
+  "deb-libghc-wai-prof"
+  "deb-libghc-warp-prof"
+  "deb-libghc-yaml-prof"
+  "deb-libghc-yesod-core-prof"
+  "deb-libghc-yesod-dev" {= "1.6.1.0-1"}
+  "deb-libghc-yesod-form-prof"
+  "deb-libghc-yesod-persistent-prof"
+]
+extra-source "libghc-yesod-prof_1.6.1.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-yesod/libghc-yesod-prof_1.6.1.0-1_amd64.deb"
+}

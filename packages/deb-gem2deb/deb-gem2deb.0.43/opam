@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gem2deb_0.43_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gem2deb"]
+]
+depends: [
+  "deb-debhelper" {>= "11~"}
+  "deb-devscripts"
+  "deb-gem2deb-test-runner" {= "0.43"}
+  "deb-perl"
+  "deb-rake"
+  "deb-ruby"
+  "deb-ruby-all-dev" {>= "1-2.5"}
+  "deb-ruby-setup"
+]
+extra-source "gem2deb_0.43_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gem2deb/gem2deb_0.43_amd64.deb"
+}

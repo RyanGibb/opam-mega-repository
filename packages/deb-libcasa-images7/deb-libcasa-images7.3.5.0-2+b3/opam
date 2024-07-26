@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcasa-images7_3.5.0-2+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcasa-images7"]
+]
+depends: [
+  "deb-libc6" {>= "2.32"}
+  "deb-libcasa-casa7" {>= "3.5.0"}
+  "deb-libcasa-coordinates7" {>= "3.5.0"}
+  "deb-libcasa-fits7" {>= "3.5.0"}
+  "deb-libcasa-lattices7" {>= "3.5.0"}
+  "deb-libcasa-measures7" {>= "3.5.0"}
+  "deb-libcasa-mirlib7" {>= "3.5.0"}
+  "deb-libcasa-scimath7" {>= "3.5.0"}
+  "deb-libcasa-tables7" {>= "3.5.0"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "11"}
+]
+extra-source "libcasa-images7_3.5.0-2+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/casacore/libcasa-images7_3.5.0-2+b3_amd64.deb"
+}

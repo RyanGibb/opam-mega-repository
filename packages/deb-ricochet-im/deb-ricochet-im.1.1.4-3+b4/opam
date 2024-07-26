@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ricochet-im_1.1.4-3+b4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ricochet-im"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libprotobuf23" {>= "3.12.3"}
+  "deb-libqt5core5a" {>= "5.14.1"}
+  "deb-libqt5network5" {>= "5.14.1"}
+  "deb-libqt5qml5" {>= "5.1.0"}
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libubsan1" {>= "8"}
+  "deb-qml-module-qtmultimedia"
+  "deb-qml-module-qtquick-controls"
+  "deb-qml-module-qtquick-dialogs"
+  "deb-tor" {>= "0.2.5"}
+  ("deb-libqt5gui5" {>= "5.1.0"} | "deb- libqt5gui5-gles" {>= "5.1.0"})
+  ("deb-libqt5quick5" {>= "5.0.2"} | "deb- libqt5quick5-gles" {>= "5.0.2"})
+]
+extra-source "ricochet-im_1.1.4-3+b4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ricochet-im/ricochet-im_1.1.4-3+b4_amd64.deb"
+}

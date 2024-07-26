@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i milter-greylist_4.6.2-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r milter-greylist"]
+]
+depends: [
+  "deb-adduser" {>= "3.11"}
+  "deb-init-system-helpers" {>= "1.51"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcurl4" {>= "7.16.2"}
+  "deb-libgeoip1" {>= "1.6.12"}
+  "deb-libmilter1-0-1"
+  "deb-libopendkim11" {>= "2.11.0~alpha"}
+  "deb-libspf2-2"
+  "deb-lsb-base"
+]
+extra-source "milter-greylist_4.6.2-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/milter-greylist/milter-greylist_4.6.2-3_amd64.deb"
+}

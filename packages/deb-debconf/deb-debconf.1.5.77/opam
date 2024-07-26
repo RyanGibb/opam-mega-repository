@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i debconf_1.5.77_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r debconf"]
+]
+conflicts: [
+  "deb-apt" {< "0.3.12.1"}
+  "deb-cdebconf" {< "0.96"}
+  "deb-debconf-tiny"
+  "deb-debconf-utils" {< "1.3.22"}
+  "deb-dialog" {< "0.9b-20020814-1"}
+  "deb-menu" {<= "2.1.3-1"}
+  "deb-whiptail" {< "0.51.4-11"}
+  "deb-whiptail-utf8" {<= "0.50.17-13"}
+]
+extra-source "debconf_1.5.77_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/debconf/debconf_1.5.77_all.deb"
+}

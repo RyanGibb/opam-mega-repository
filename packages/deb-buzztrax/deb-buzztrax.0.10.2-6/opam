@@ -1,0 +1,58 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i buzztrax_0.10.2-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r buzztrax"]
+]
+depends: [
+  "deb-gstreamer1-0-plugins-bad" {>= "1.1.0"}
+  "deb-gstreamer1-0-plugins-base" {>= "1.1.0"}
+  "deb-gstreamer1-0-plugins-good" {>= "1.1.0"}
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libclutter-1-0-0" {>= "1.11.10"}
+  "deb-libclutter-gtk-1-0-0" {>= "0.91.8"}
+  "deb-libcogl-pango20" {>= "1.17.4"}
+  "deb-libcogl-path20" {>= "1.17.4"}
+  "deb-libcogl20" {>= "1.17.4"}
+  "deb-libdrm2" {>= "2.3.1"}
+  "deb-libegl1"
+  "deb-libfluidsynth1" {>= "1.1.6-4~"}
+  "deb-libfribidi0" {>= "0.19.2"}
+  "deb-libgbm1" {>= "7.11~1"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.39.4"}
+  "deb-libgsf-1-114" {>= "1.14.8"}
+  "deb-libgstreamer-plugins-base1-0-0" {>= "1.1.0"}
+  "deb-libgstreamer1-0-0" {>= "1.6.0"}
+  "deb-libgtk-3-0" {>= "3.9.10"}
+  "deb-libgudev-1-0-0" {>= "146"}
+  "deb-libjson-glib-1-0-0" {>= "0.12.0"}
+  "deb-liborc-0-4-0" {>= "1-0.4.25"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libwayland-client0" {>= "1.0.2"}
+  "deb-libwayland-cursor0" {>= "1.0.2"}
+  "deb-libwayland-egl1" {>= "1.15.0"}
+  "deb-libwayland-server0" {>= "1.0.2"}
+  "deb-libx11-6"
+  "deb-libxcomposite1" {>= "1-0.3-1"}
+  "deb-libxdamage1" {>= "1-1.1"}
+  "deb-libxext6"
+  "deb-libxfixes3"
+  "deb-libxi6"
+  "deb-libxkbcommon0" {>= "0.5.0"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libxrandr2"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-gstreamer1-0-pulseaudio" | "deb- gstreamer1-0-audiosink")
+]
+extra-source "buzztrax_0.10.2-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/buzztrax/buzztrax_0.10.2-6_amd64.deb"
+}

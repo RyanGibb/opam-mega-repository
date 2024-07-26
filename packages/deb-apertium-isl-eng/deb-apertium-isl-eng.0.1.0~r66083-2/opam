@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i apertium-isl-eng_0.1.0~r66083-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r apertium-isl-eng"]
+]
+depends: [
+  "deb-apertium" {>= "3.4"}
+  "deb-cg3"
+]
+conflicts: [
+  "deb-apertium-eng-isl"
+]
+extra-source "apertium-isl-eng_0.1.0~r66083-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/apertium-isl-eng/apertium-isl-eng_0.1.0~r66083-2_all.deb"
+}

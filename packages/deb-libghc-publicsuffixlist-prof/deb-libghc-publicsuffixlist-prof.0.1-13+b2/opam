@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-publicsuffixlist-prof_0.1-13+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-publicsuffixlist-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-cereal-prof"
+  "deb-libghc-conduit-extra-prof"
+  "deb-libghc-conduit-prof"
+  "deb-libghc-data-default-prof"
+  "deb-libghc-exceptions-prof"
+  "deb-libghc-idna-prof"
+  "deb-libghc-publicsuffixlist-dev" {= "0.1-13+b2"}
+  "deb-libghc-resourcet-prof"
+  "deb-libghc-utf8-string-prof"
+]
+extra-source "libghc-publicsuffixlist-prof_0.1-13+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-publicsuffixlist/libghc-publicsuffixlist-prof_0.1-13+b2_amd64.deb"
+}

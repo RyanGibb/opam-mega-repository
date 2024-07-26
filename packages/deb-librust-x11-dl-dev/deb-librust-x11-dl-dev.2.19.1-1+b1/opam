@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-x11-dl-dev_2.19.1-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-x11-dl-dev"]
+]
+depends: [
+  "deb-libgl-dev"
+  "deb-librust-lazy-static-1+default-dev"
+  "deb-librust-libc-0-2+default-dev"
+  "deb-librust-pkg-config-dev"
+  "deb-libx11-dev"
+  "deb-libx11-xcb-dev"
+  "deb-libxcursor-dev"
+  "deb-libxext-dev"
+  "deb-libxft-dev"
+  "deb-libxi-dev"
+  "deb-libxinerama-dev"
+  "deb-libxmu-dev"
+  "deb-libxrandr-dev"
+  "deb-libxrender-dev"
+  "deb-libxss-dev"
+  "deb-libxt-dev"
+  "deb-libxtst-dev"
+  "deb-libxxf86vm-dev"
+]
+extra-source "librust-x11-dl-dev_2.19.1-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-x11-dl/librust-x11-dl-dev_2.19.1-1+b1_amd64.deb"
+}

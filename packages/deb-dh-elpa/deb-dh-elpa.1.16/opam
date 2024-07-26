@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dh-elpa_1.16_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dh-elpa"]
+]
+depends: [
+  "deb-debhelper" {>= "9.20151004"}
+  "deb-libarray-utils-perl"
+  "deb-libconfig-tiny-perl"
+  "deb-libdpkg-perl"
+  "deb-libfile-find-rule-perl"
+  "deb-libtext-glob-perl"
+  "deb-perl"
+  ("deb-emacs-nox" {>= "47"} | "deb- emacs" {>= "47.0"} | "deb- emacs25-nox" | "deb- emacs25")
+  ("deb-libdebian-source-perl" | "deb- dh-make-perl" {>= "0.90"})
+]
+extra-source "dh-elpa_1.16_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dh-elpa/dh-elpa_1.16_all.deb"
+}

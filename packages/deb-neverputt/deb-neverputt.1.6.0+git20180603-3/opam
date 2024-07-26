@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i neverputt_1.6.0+git20180603-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r neverputt"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgl1"
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libopenhmd0"
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libsdl2-2-0-0" {>= "2.0.12+dfsg1"}
+  "deb-libsdl2-ttf-2-0-0" {>= "2.0.14"}
+  "deb-libvorbisfile3" {>= "1.1.2"}
+  "deb-neverputt-data" {= "1.6.0+git20180603-3"}
+]
+extra-source "neverputt_1.6.0+git20180603-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/neverball/neverputt_1.6.0+git20180603-3_amd64.deb"
+}

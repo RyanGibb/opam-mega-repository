@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ure_4:7.4.7-1+deb12u3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ure"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.3.1"}
+  "deb-libicu72" {>= "72.1~rc-1~"}
+  "deb-liblangtag1" {>= "0.4.0"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libuno-cppu3" {>= "4.4.0~alpha"}
+  "deb-libuno-cppuhelpergcc3-3" {>= "4.0.0~alpha"}
+  "deb-libuno-purpenvhelpergcc3-3" {>= "1.4.0"}
+  "deb-libuno-sal3" {>= "6.4.0~beta"}
+  "deb-libuno-salhelpergcc3-3" {>= "3.6.0~beta"}
+  "deb-libxml2" {>= "2.8"}
+  "deb-uno-libs-private" {= "4-7.4.7-1+deb12u3"}
+]
+extra-source "ure_4:7.4.7-1+deb12u3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libr/libreoffice/ure_7.4.7-1+deb12u3_amd64.deb"
+}

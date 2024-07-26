@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add build-base-0.5-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del build-base"]
+]
+depends: [
+  "apk-binutils" {= "2.34-r2"}
+  "apk-file" {= "5.38-r0"}
+  "apk-fortify-headers" {= "1.1-r0"}
+  "apk-g++" {= "9.3.0-r2"}
+  "apk-gcc" {= "9.3.0-r2"}
+  "apk-libc-dev" {= "0.7.2-r3"}
+  "apk-make" {= "4.3-r0"}
+  "apk-patch" {= "2.7.6-r7"}
+]
+extra-source "build-base-0.5-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/build-base-0.5-r2.apk"
+}

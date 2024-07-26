@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-vinyl-fs_2.4.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-vinyl-fs"]
+]
+depends: [
+  "deb-node-duplexify" {>= "3.2.0"}
+  "deb-node-glob-stream" {>= "5.3.2"}
+  "deb-node-graceful-fs" {>= "4.0.0"}
+  "deb-node-gulp-sourcemaps" {>= "1.6.0"}
+  "deb-node-is-valid-glob" {>= "0.3.0"}
+  "deb-node-lazystream" {>= "1.0.0"}
+  "deb-node-lodash-packages"
+  "deb-node-merge-stream" {>= "1.0.0"}
+  "deb-node-mkdirp" {>= "0.5.0"}
+  "deb-node-object-assign" {>= "4.0.0"}
+  "deb-node-strip-bom" {>= "2.0.0"}
+  "deb-node-strip-bom-stream" {>= "1.0.0"}
+  "deb-node-through2" {>= "2.0.0"}
+  "deb-node-through2-filter" {>= "2.0.0"}
+  "deb-node-vali-date" {>= "1.0.0"}
+  "deb-node-vinyl" {>= "1.0.0"}
+  "deb-nodejs"
+]
+extra-source "node-vinyl-fs_2.4.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-vinyl-fs/node-vinyl-fs_2.4.4-1_all.deb"
+}

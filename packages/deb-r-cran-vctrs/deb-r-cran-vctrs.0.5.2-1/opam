@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-vctrs_0.5.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-vctrs"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.2.20221110-2"}
+  "deb-r-cran-cli" {>= "3.4.0"}
+  "deb-r-cran-glue"
+  "deb-r-cran-lifecycle" {>= "1.0.3"}
+  "deb-r-cran-rlang" {>= "1.0.6"}
+]
+extra-source "r-cran-vctrs_0.5.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-vctrs/r-cran-vctrs_0.5.2-1_amd64.deb"
+}

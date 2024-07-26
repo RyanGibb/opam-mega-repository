@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pnopaste_1.7-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pnopaste"]
+]
+depends: [
+  "deb-dbconfig-common"
+  "deb-libcgi-pm-perl"
+  "deb-libgeo-ip-perl"
+  "deb-libsyntax-highlight-engine-kate-perl"
+  "deb-perl-any"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "pnopaste_1.7-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pnopaste/pnopaste_1.7-1_all.deb"
+}

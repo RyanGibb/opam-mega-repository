@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-class-returnvalue-0.55-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-class-returnvalue"]
+]
+depends: [
+  "apk-perl" {= "5.36.2-r0"}
+  "apk-perl-devel-stacktrace" {= "2.04-r4"}
+]
+extra-source "perl-class-returnvalue-0.55-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-class-returnvalue-0.55-r3.apk"
+}

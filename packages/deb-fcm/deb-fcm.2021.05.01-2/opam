@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fcm_2021.05.01-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fcm"]
+]
+depends: [
+  "deb-kdiff3"
+  "deb-libclass-dbi-sqlite-perl"
+  "deb-libconfig-inifiles-perl"
+  "deb-libjs-bootstrap"
+  "deb-libjs-jquery"
+  "deb-libsvn-perl"
+  "deb-libxml-parser-perl"
+  "deb-perl-any"
+  "deb-perl-tk"
+  "deb-subversion"
+]
+extra-source "fcm_2021.05.01-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fcm/fcm_2021.05.01-2_all.deb"
+}

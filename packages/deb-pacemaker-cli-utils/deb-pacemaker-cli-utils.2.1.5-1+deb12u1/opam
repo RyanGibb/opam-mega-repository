@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pacemaker-cli-utils_2.1.5-1+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pacemaker-cli-utils"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libcib27" {>= "2.1.5"}
+  "deb-libcrmcommon34" {>= "2.1.5"}
+  "deb-libcrmservice28" {>= "2.1.4"}
+  "deb-libglib2-0-0" {>= "2.39.4"}
+  "deb-liblrmd28" {>= "2.1.2"}
+  "deb-libncurses6" {>= "6"}
+  "deb-libpacemaker1" {>= "2.1.5"}
+  "deb-libpe-rules26" {>= "2.0.3"}
+  "deb-libpe-status28" {>= "2.1.4"}
+  "deb-libqb100" {>= "2.0.3"}
+  "deb-libstonithd26" {>= "2.1.5"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-resource-agents"
+  ("deb-pacemaker" | "deb- pacemaker-remote")
+]
+extra-source "pacemaker-cli-utils_2.1.5-1+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pacemaker/pacemaker-cli-utils_2.1.5-1+deb12u1_amd64.deb"
+}

@@ -1,0 +1,46 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-clash-lib-dev_1.6.4-1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-clash-lib-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.14"}
+  "deb-libghc-aeson-dev"
+  "deb-libghc-aeson-pretty-dev"
+  "deb-libghc-ansi-terminal-dev"
+  "deb-libghc-async-dev"
+  "deb-libghc-attoparsec-dev"
+  "deb-libghc-base16-bytestring-dev"
+  "deb-libghc-clash-prelude-dev"
+  "deb-libghc-concurrent-supply-dev"
+  "deb-libghc-cryptohash-sha256-dev"
+  "deb-libghc-data-binary-ieee754-dev"
+  "deb-libghc-data-default-dev"
+  "deb-libghc-dlist-dev"
+  "deb-libghc-extra-dev"
+  "deb-libghc-hashable-dev"
+  "deb-libghc-hint-dev"
+  "deb-libghc-interpolate-dev"
+  "deb-libghc-lens-dev"
+  "deb-libghc-ordered-containers-dev"
+  "deb-libghc-pretty-show-dev"
+  "deb-libghc-prettyprinter-dev"
+  "deb-libghc-primitive-dev"
+  "deb-libghc-src-meta-dev"
+  "deb-libghc-temporary-dev"
+  "deb-libghc-terminal-size-dev"
+  "deb-libghc-trifecta-dev"
+  "deb-libghc-unordered-containers-dev"
+  "deb-libghc-vector-binary-instances-dev"
+  "deb-libghc-vector-dev"
+  "deb-libghc-yaml-dev"
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-libyaml-0-2"
+]
+extra-source "libghc-clash-lib-dev_1.6.4-1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-clash-lib/libghc-clash-lib-dev_1.6.4-1+b3_amd64.deb"
+}

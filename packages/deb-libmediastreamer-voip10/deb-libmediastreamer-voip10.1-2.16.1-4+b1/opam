@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmediastreamer-voip10_1:2.16.1-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmediastreamer-voip10"]
+]
+depends: [
+  "deb-libasound2" {>= "1.0.16"}
+  "deb-libavcodec-extra58"
+  "deb-libavutil56" {>= "7-4.0"}
+  "deb-libbctoolbox1" {< "0.7.0"}
+  "deb-libbctoolbox1" {>= "0.6.0"}
+  "deb-libbzrtp0" {>= "1.0.6"}
+  "deb-libc6" {>= "2.27"}
+  "deb-libgl1"
+  "deb-libglew2-1" {>= "1.12.0"}
+  "deb-libgsm1" {>= "1.0.13"}
+  "deb-libmediastreamer-base10" {>= "1-2.16.1"}
+  "deb-libopus0" {>= "1.1"}
+  "deb-libortp13" {>= "1-1.0.2"}
+  "deb-libpulse0" {>= "0.99.1"}
+  "deb-libspeex1" {>= "1.2~beta3-1"}
+  "deb-libspeexdsp1" {>= "1.2~beta3.2-1"}
+  "deb-libsrtp2-1" {>= "2.0.0"}
+  "deb-libswscale5" {>= "7-4.0"}
+  "deb-libtheora0" {>= "0.0.0.alpha7.dfsg"}
+  "deb-libturbojpeg0" {>= "1.4.0"}
+  "deb-libvpx5" {>= "1.6.0"}
+  "deb-libx11-6"
+  "deb-libxv1"
+]
+extra-source "libmediastreamer-voip10_1:2.16.1-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mediastreamer2/libmediastreamer-voip10_2.16.1-4+b1_amd64.deb"
+}

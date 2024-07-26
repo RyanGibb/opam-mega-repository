@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-mixtools_2.0.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-mixtools"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.2.20221110-1"}
+  "deb-r-cran-kernlab"
+  "deb-r-cran-mass"
+  "deb-r-cran-plotly"
+  "deb-r-cran-scales"
+  "deb-r-cran-segmented"
+  "deb-r-cran-survival"
+]
+extra-source "r-cran-mixtools_2.0.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-mixtools/r-cran-mixtools_2.0.0-1_amd64.deb"
+}

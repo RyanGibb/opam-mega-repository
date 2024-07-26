@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i freeglut3-dev_2.8.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r freeglut3-dev"]
+]
+depends: [
+  "deb-freeglut3" {= "2.8.1-3"}
+  "deb-libxext-dev"
+  "deb-libxt-dev"
+  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
+  ("deb-libglu1-mesa-dev" | "deb- libglu-dev")
+]
+extra-source "freeglut3-dev_2.8.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/freeglut/freeglut3-dev_2.8.1-3_amd64.deb"
+}

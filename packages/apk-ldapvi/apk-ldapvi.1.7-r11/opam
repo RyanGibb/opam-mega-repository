@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ldapvi-1.7-r11.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ldapvi"]
+]
+depends: [
+  "apk-glib" {= "2.68.3-r0"}
+  "apk-libcrypto1-1" {= "1.1.1t-r2"}
+  "apk-libldap" {= "2.4.58-r0"}
+  "apk-musl" {= "1.2.2-r5"}
+  "apk-ncurses-libs" {= "6.2_p20210612-r1"}
+  "apk-popt" {= "1.18-r0"}
+  "apk-readline" {= "8.1.0-r0"}
+]
+extra-source "ldapvi-1.7-r11.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/ldapvi-1.7-r11.apk"
+}

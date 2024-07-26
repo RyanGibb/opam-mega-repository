@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i duck_0.13.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r duck"]
+]
+depends: [
+  "deb-devscripts"
+  "deb-dpkg-dev"
+  "deb-libconfig-inifiles-perl"
+  "deb-libconfig-simple-perl"
+  "deb-libdomain-publicsuffix-perl"
+  "deb-libfile-which-perl"
+  "deb-libmailtools-perl"
+  "deb-libnet-dns-perl"
+  "deb-libparallel-forkmanager-perl"
+  "deb-libparse-debcontrol-perl"
+  "deb-libpath-class-perl"
+  "deb-libregexp-common-email-address-perl"
+  "deb-libregexp-common-perl"
+  "deb-libstring-similarity-perl"
+  "deb-libwww-curl-perl"
+  "deb-libxml-xpath-perl"
+  "deb-libyaml-libyaml-perl"
+  "deb-lynx"
+  "deb-perl-any"
+  "deb-publicsuffix"
+]
+extra-source "duck_0.13.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/duck/duck_0.13.2_all.deb"
+}

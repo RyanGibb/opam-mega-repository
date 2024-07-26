@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libayatana-appindicator-dev_0.5.92-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libayatana-appindicator-dev"]
+]
+depends: [
+  "deb-gir1-2-ayatanaappindicator-0-1" {= "0.5.92-1"}
+  "deb-libayatana-appindicator1" {= "0.5.92-1"}
+  "deb-libayatana-indicator-dev" {>= "0.9.0"}
+  "deb-libdbusmenu-glib-dev"
+  "deb-libgtk2-0-dev"
+]
+conflicts: [
+  "deb-libappindicator-dev"
+]
+extra-source "libayatana-appindicator-dev_0.5.92-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/liba/libayatana-appindicator/libayatana-appindicator-dev_0.5.92-1_amd64.deb"
+}

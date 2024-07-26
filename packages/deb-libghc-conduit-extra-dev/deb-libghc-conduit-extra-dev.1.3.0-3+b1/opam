@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-conduit-extra-dev_1.3.0-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-conduit-extra-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-async-dev"
+  "deb-libghc-attoparsec-dev"
+  "deb-libghc-conduit-dev"
+  "deb-libghc-network-dev"
+  "deb-libghc-primitive-dev"
+  "deb-libghc-resourcet-dev"
+  "deb-libghc-streaming-commons-dev"
+  "deb-libghc-typed-process-dev"
+  "deb-libghc-unliftio-core-dev"
+  "deb-libgmp10"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libghc-conduit-extra-dev_1.3.0-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-conduit-extra/libghc-conduit-extra-dev_1.3.0-3+b1_amd64.deb"
+}

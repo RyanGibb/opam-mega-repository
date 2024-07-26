@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librdf-trine-perl_1.019-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librdf-trine-perl"]
+]
+depends: [
+  "deb-libalgorithm-combinatorics-perl"
+  "deb-libcache-lru-perl"
+  "deb-libdbd-sqlite3-perl"
+  "deb-libdbi-perl"
+  "deb-libdbix-connector-perl"
+  "deb-liberror-perl"
+  "deb-libiri-perl"
+  "deb-libjson-perl"
+  "deb-liblog-log4perl-perl"
+  "deb-libmoose-perl"
+  "deb-libmoosex-arrayref-perl"
+  "deb-libossp-uuid-perl"
+  "deb-libset-scalar-perl"
+  "deb-libtext-csv-xs-perl"
+  "deb-libtext-table-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-libxml-commonns-perl"
+  "deb-libxml-namespace-perl"
+  "deb-libxml-sax-perl"
+  "deb-perl"
+]
+extra-source "librdf-trine-perl_1.019-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libr/librdf-trine-perl/librdf-trine-perl_1.019-2_all.deb"
+}

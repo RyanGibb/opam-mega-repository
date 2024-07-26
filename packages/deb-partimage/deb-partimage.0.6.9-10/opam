@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i partimage_0.6.9-10_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r partimage"]
+]
+depends: [
+  "deb-fdisk"
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libnewt0-52" {>= "0.52.23"}
+  "deb-libslang2" {>= "2.2.4"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-zlib1g" {>= "1-1.2.3.3"}
+]
+extra-source "partimage_0.6.9-10_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/partimage/partimage_0.6.9-10_amd64.deb"
+}

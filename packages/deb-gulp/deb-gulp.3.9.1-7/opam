@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gulp_3.9.1-7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gulp"]
+]
+depends: [
+  "deb-node-archy"
+  "deb-node-chalk"
+  "deb-node-defaults"
+  "deb-node-deprecated"
+  "deb-node-globule"
+  "deb-node-gulp-util"
+  "deb-node-interpret"
+  "deb-node-liftoff"
+  "deb-node-minimist"
+  "deb-node-orchestrator"
+  "deb-node-pretty-hrtime"
+  "deb-node-semver" {>= "4.1.0"}
+  "deb-node-tildify"
+  "deb-node-v8flags"
+  "deb-node-vinyl-fs"
+  "deb-nodejs"
+]
+extra-source "gulp_3.9.1-7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-gulp/gulp_3.9.1-7_all.deb"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i jodconverter_2.2.2-14_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r jodconverter"]
+]
+depends: [
+  "deb-libcommons-cli-java"
+  "deb-libcommons-io-java"
+  "deb-libjodconverter-java"
+  "deb-libreoffice-java-common"
+  ("deb-default-jre-headless" | "deb- java-runtime-headless")
+]
+extra-source "jodconverter_2.2.2-14_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/j/jodconverter-cli/jodconverter_2.2.2-14_all.deb"
+}

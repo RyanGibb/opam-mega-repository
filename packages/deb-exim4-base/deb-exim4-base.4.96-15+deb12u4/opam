@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i exim4-base_4.96-15+deb12u4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r exim4-base"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libc6" {>= "2.34"}
+  "deb-libdb5-3"
+  "deb-netbase"
+  ("deb-cron" | "deb- cron-daemon" | "deb- anacron" | "deb- systemd-sysv")
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-exim4-config" {>= "4.94"} | "deb- exim4-config-2")
+]
+conflicts: [
+  "deb-exim"
+  "deb-exim-tls"
+]
+extra-source "exim4-base_4.96-15+deb12u4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/exim4/exim4-base_4.96-15+deb12u4_amd64.deb"
+}

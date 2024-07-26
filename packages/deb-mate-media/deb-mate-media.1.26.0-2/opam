@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mate-media_1.26.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mate-media"]
+]
+depends: [
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libcanberra-gtk3-0" {>= "0.25"}
+  "deb-libcanberra0" {>= "0.2"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.39.4"}
+  "deb-libgtk-3-0" {>= "3.21.4"}
+  "deb-libmate-desktop-2-17" {>= "1.18"}
+  "deb-libmate-panel-applet-4-1" {>= "1.22"}
+  "deb-libmatemixer0" {>= "1.18"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-mate-desktop-common" {>= "1.18"}
+  "deb-mate-media-common" {= "1.26.0-2"}
+]
+extra-source "mate-media_1.26.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mate-media/mate-media_1.26.0-2_amd64.deb"
+}

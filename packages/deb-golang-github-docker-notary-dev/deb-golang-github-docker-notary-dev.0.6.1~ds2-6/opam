@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-docker-notary-dev_0.6.1~ds2-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-docker-notary-dev"]
+]
+depends: [
+  "deb-golang-github-bugsnag-bugsnag-go-dev"
+  "deb-golang-github-cloudflare-cfssl-dev"
+  "deb-golang-github-docker-go-connections-dev" {>= "0.3.0~"}
+  "deb-golang-github-docker-go-dev"
+  "deb-golang-github-dvsekhvalnov-jose2go-dev"
+  "deb-golang-github-go-sql-driver-mysql-dev"
+  "deb-golang-github-gorilla-mux-dev"
+  "deb-golang-github-jinzhu-gorm-dev"
+  "deb-golang-github-lib-pq-dev"
+  "deb-golang-github-mattn-go-sqlite3-dev"
+  "deb-golang-github-miekg-pkcs11-dev" {>= "0.0~git20160602~"}
+  "deb-golang-github-shopify-logrus-bugsnag-dev" {>= "0.0~git20171204~"}
+  "deb-golang-github-sirupsen-logrus-dev" {>= "1.0.2~"}
+  "deb-golang-github-spf13-cobra-dev"
+  "deb-golang-github-spf13-viper-dev"
+  "deb-golang-github-stretchr-testify-dev"
+  "deb-golang-golang-x-crypto-dev"
+  "deb-golang-golang-x-net-dev" {>= "0.0+git20160110~"}
+  "deb-golang-golang-x-sys-dev"
+  "deb-golang-google-grpc-dev" {>= "0.0~git20151002~"}
+  "deb-golang-gopkg-gorethink-gorethink-v3-dev"
+  "deb-golang-goprotobuf-dev"
+]
+extra-source "golang-github-docker-notary-dev_0.6.1~ds2-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/notary/golang-github-docker-notary-dev_0.6.1~ds2-6_all.deb"
+}

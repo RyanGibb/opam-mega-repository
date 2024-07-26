@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i puppet-module-ceph_2.5.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r puppet-module-ceph"]
+]
+depends: [
+  "deb-puppet-common"
+  "deb-puppet-module-duritong-sysctl"
+  "deb-puppet-module-keystone" {>= "12.3.0"}
+  "deb-puppet-module-openstacklib" {>= "12.3.0"}
+  "deb-puppet-module-puppetlabs-apache"
+  "deb-puppet-module-puppetlabs-apt"
+  "deb-puppet-module-puppetlabs-concat"
+  "deb-puppet-module-puppetlabs-inifile"
+  "deb-puppet-module-puppetlabs-stdlib"
+]
+extra-source "puppet-module-ceph_2.5.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/puppet-module-ceph/puppet-module-ceph_2.5.0-1_all.deb"
+}

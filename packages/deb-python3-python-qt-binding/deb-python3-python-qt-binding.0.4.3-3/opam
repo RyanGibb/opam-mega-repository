@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-python-qt-binding_0.4.3-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-python-qt-binding"]
+]
+depends: [
+  "deb-pyqt5-dev"
+  "deb-python3-any"
+  "deb-python3-pyqt5"
+  "deb-sip-dev"
+]
+extra-source "python3-python-qt-binding_0.4.3-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ros-python-qt-binding/python3-python-qt-binding_0.4.3-3_all.deb"
+}

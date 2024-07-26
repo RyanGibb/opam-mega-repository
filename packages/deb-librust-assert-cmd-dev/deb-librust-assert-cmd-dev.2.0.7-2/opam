@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-assert-cmd-dev_2.0.7-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-assert-cmd-dev"]
+]
+depends: [
+  "deb-librust-bstr+default-dev"
+  "deb-librust-concolor-0-0-11+auto-dev"
+  "deb-librust-concolor-0-0-11+default-dev"
+  "deb-librust-concolor-0-0-11+std-dev"
+  "deb-librust-doc-comment-0-3+default-dev"
+  "deb-librust-predicates-core-1+default-dev"
+  "deb-librust-predicates-dev"
+  "deb-librust-predicates-tree-1+default-dev"
+  "deb-librust-wait-timeout-0-2+default-dev"
+  "deb-librust-yansi-dev"
+]
+extra-source "librust-assert-cmd-dev_2.0.7-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-assert-cmd/librust-assert-cmd-dev_2.0.7-2_amd64.deb"
+}

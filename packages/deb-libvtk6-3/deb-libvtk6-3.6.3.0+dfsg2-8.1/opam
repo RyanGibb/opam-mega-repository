@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libvtk6.3_6.3.0+dfsg2-8.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libvtk6.3"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libfreetype6" {>= "2.3.5"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgl1"
+  "deb-libgl2ps1-4" {>= "1.4.2+dfsg1"}
+  "deb-libhdf5-openmpi-103-1" {>= "1.8.13"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libjsoncpp24" {>= "1.9.4"}
+  "deb-libnetcdf-c++4" {>= "4.2"}
+  "deb-libnetcdf18" {>= "4.0.1"}
+  "deb-libogg0" {>= "1.0rc3"}
+  "deb-libopenmpi3" {>= "4.1.0"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libsqlite3-0" {>= "3.5.9"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libtheora0" {>= "1.0"}
+  "deb-libtiff5" {>= "4.0.3"}
+  "deb-libx11-6"
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libxt6"
+  "deb-zlib1g" {>= "1-1.2.3.4"}
+]
+conflicts: [
+  "deb-libvtk6" {> "6.0.0-7"}
+]
+extra-source "libvtk6.3_6.3.0+dfsg2-8.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/vtk6/libvtk6.3_6.3.0+dfsg2-8.1_amd64.deb"
+}

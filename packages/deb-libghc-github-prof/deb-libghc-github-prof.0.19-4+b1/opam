@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-github-prof_0.19-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-github-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-aeson-compat-prof"
+  "deb-libghc-aeson-prof"
+  "deb-libghc-base-compat-prof"
+  "deb-libghc-base16-bytestring-prof"
+  "deb-libghc-binary-orphans-prof"
+  "deb-libghc-byteable-prof"
+  "deb-libghc-cryptohash-prof"
+  "deb-libghc-deepseq-generics-prof"
+  "deb-libghc-exceptions-prof"
+  "deb-libghc-github-dev" {= "0.19-4+b1"}
+  "deb-libghc-hashable-prof"
+  "deb-libghc-http-client-prof"
+  "deb-libghc-http-client-tls-prof"
+  "deb-libghc-http-link-header-prof"
+  "deb-libghc-http-types-prof"
+  "deb-libghc-iso8601-time-prof"
+  "deb-libghc-network-uri-prof"
+  "deb-libghc-semigroups-prof"
+  "deb-libghc-tls-prof"
+  "deb-libghc-transformers-compat-prof"
+  "deb-libghc-unordered-containers-prof"
+  "deb-libghc-vector-instances-prof"
+  "deb-libghc-vector-prof"
+]
+extra-source "libghc-github-prof_0.19-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-github/libghc-github-prof_0.19-4+b1_amd64.deb"
+}

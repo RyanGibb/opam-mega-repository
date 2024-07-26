@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-istanbul_0.4.5+ds+~cs56.14.45-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-istanbul"]
+]
+depends: [
+  "deb-handlebars"
+  "deb-libjs-prettify"
+  "deb-node-abbrev"
+  "deb-node-async"
+  "deb-node-escodegen"
+  "deb-node-esprima"
+  "deb-node-glob" {>= "5.0.15"}
+  "deb-node-js-yaml"
+  "deb-node-mkdirp"
+  "deb-node-nopt"
+  "deb-node-once"
+  "deb-node-resolve" {>= "1.1.0"}
+  "deb-node-supports-color"
+  "deb-node-which" {>= "1.1.1"}
+  "deb-node-wordwrap" {>= "1.0.0"}
+  "deb-nodejs"
+]
+extra-source "node-istanbul_0.4.5+ds+~cs56.14.45-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-istanbul/node-istanbul_0.4.5+ds+~cs56.14.45-1_all.deb"
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-poliastro_0.11.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-poliastro"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-astropy" {>= "3~"}
+  "deb-python3-astroquery"
+  "deb-python3-bs4" {>= "4.5.3"}
+  "deb-python3-matplotlib" {>= "2~"}
+  "deb-python3-numpy"
+  "deb-python3-pandas"
+  "deb-python3-plotly"
+  "deb-python3-requests"
+  "deb-python3-scipy"
+]
+extra-source "python3-poliastro_0.11.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/poliastro/python3-poliastro_0.11.1-1_all.deb"
+}

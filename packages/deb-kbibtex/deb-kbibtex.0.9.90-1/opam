@@ -1,0 +1,50 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kbibtex_0.9.90-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kbibtex"]
+]
+depends: [
+  "deb-kbibtex-data" {= "0.9.90-1"}
+  "deb-kio"
+  "deb-libc6" {>= "2.14"}
+  "deb-libicu67" {>= "67.1-1~"}
+  "deb-libkf5completion5" {>= "4.97.0"}
+  "deb-libkf5configcore5" {>= "5.52.0"}
+  "deb-libkf5configgui5" {>= "4.97.0"}
+  "deb-libkf5configwidgets5" {>= "4.96.0"}
+  "deb-libkf5coreaddons5" {>= "5.51.0~"}
+  "deb-libkf5crash5" {>= "5.51.0~"}
+  "deb-libkf5i18n5" {>= "5.51.0~"}
+  "deb-libkf5iconthemes5" {>= "5.51.0~"}
+  "deb-libkf5itemviews5" {>= "4.96.0"}
+  "deb-libkf5jobwidgets5" {>= "4.96.0"}
+  "deb-libkf5kiocore5" {>= "5.69.0"}
+  "deb-libkf5kiofilewidgets5" {>= "5.69.0"}
+  "deb-libkf5kiogui5" {>= "5.74.0"}
+  "deb-libkf5kiowidgets5" {>= "5.69.0"}
+  "deb-libkf5parts5" {>= "5.51.0~"}
+  "deb-libkf5service-bin"
+  "deb-libkf5service5" {>= "5.51.0~"}
+  "deb-libkf5texteditor5" {>= "5.51.0~"}
+  "deb-libkf5textwidgets5" {>= "4.96.0"}
+  "deb-libkf5wallet-bin"
+  "deb-libkf5wallet5" {>= "5.51.0~"}
+  "deb-libkf5widgetsaddons5" {>= "4.96.0"}
+  "deb-libkf5xmlgui5" {>= "5.51.0~"}
+  "deb-libpoppler-qt5-1" {>= "0.24.5"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.9.0~"}
+  "deb-libqt5network5" {>= "5.14.1"}
+  "deb-libqt5networkauth5" {>= "5.11.2"}
+  "deb-libqt5webenginewidgets5" {>= "5.9.0~"}
+  "deb-libqt5widgets5" {>= "5.15.1"}
+  "deb-libqt5xml5" {>= "5.9.0~"}
+  "deb-libqt5xmlpatterns5" {>= "5.9.0~"}
+  "deb-libstdc++6" {>= "5.2"}
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+]
+extra-source "kbibtex_0.9.90-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kbibtex/kbibtex_0.9.90-1_amd64.deb"
+}

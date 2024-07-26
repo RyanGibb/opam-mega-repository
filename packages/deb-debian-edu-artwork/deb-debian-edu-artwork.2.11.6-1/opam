@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i debian-edu-artwork_2.11.6-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r debian-edu-artwork"]
+]
+depends: [
+  "deb-desktop-base"
+  "deb-libconfig-inifiles-perl"
+  ("deb-debian-edu-artwork-homeworld" | "deb- debian-edu-artwork-buster" | "deb- debian-edu-artwork-futureprototype" | "deb- debian-edu-artwork-softwaves" | "deb- debian-edu-artwork-lines" | "deb- debian-edu-artwork-joy" | "deb- debian-edu-artwork-spacefun")
+]
+extra-source "debian-edu-artwork_2.11.6-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/debian-edu-artwork/debian-edu-artwork_2.11.6-1_all.deb"
+}

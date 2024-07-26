@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libavogadro2-1_1.93.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libavogadro2-1"]
+]
+depends: [
+  "deb-libarchive13" {>= "3.0.4"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libglew2-1" {>= "1.12.0"}
+  "deb-libglx0"
+  "deb-libhdf5-103-1"
+  "deb-libopengl0"
+  "deb-libqt5concurrent5" {>= "5.6.0~rc"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5network5" {>= "5.14.1"}
+  "deb-libqt5widgets5" {>= "5.4.0"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libsymspg1" {>= "1.16.1"}
+  "deb-python3"
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "libavogadro2-1_1.93.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/avogadrolibs/libavogadro2-1_1.93.1-3_amd64.deb"
+}

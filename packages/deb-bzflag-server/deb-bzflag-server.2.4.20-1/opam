@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i bzflag-server_2.4.20-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r bzflag-server"]
+]
+depends: [
+  "deb-libc-ares2" {>= "1.7.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libncurses6" {>= "6"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-lsb-base" {>= "3.0-6"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "bzflag-server_2.4.20-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/bzflag/bzflag-server_2.4.20-1_amd64.deb"
+}

@@ -1,0 +1,44 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-containers-buildah-dev_1.19.6+dfsg1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-containers-buildah-dev"]
+]
+depends: [
+  "deb-golang-ginkgo-dev"
+  "deb-golang-github-appc-cni-dev" {>= "0.7.0~~"}
+  "deb-golang-github-containers-common-dev" {> "0.33.1"}
+  "deb-golang-github-containers-image-dev" {>= "5.10.2"}
+  "deb-golang-github-containers-ocicrypt-dev"
+  "deb-golang-github-containers-storage-dev" {>= "1.24.6"}
+  "deb-golang-github-coreos-bbolt-dev" {>= "1.3.3~"}
+  "deb-golang-github-cyphar-filepath-securejoin-dev"
+  "deb-golang-github-docker-docker-dev" {>= "19.03.4~"}
+  "deb-golang-github-docker-go-units-dev"
+  "deb-golang-github-fsouza-go-dockerclient-dev"
+  "deb-golang-github-hashicorp-go-multierror-dev"
+  "deb-golang-github-ishidawataru-sctp-dev"
+  "deb-golang-github-mattn-go-shellwords-dev"
+  "deb-golang-github-opencontainers-go-digest-dev"
+  "deb-golang-github-opencontainers-image-spec-dev"
+  "deb-golang-github-opencontainers-runc-dev" {>= "1.0.0~rc92~"}
+  "deb-golang-github-opencontainers-runtime-tools-dev"
+  "deb-golang-github-opencontainers-selinux-dev"
+  "deb-golang-github-opencontainers-specs-dev"
+  "deb-golang-github-openshift-api-dev"
+  "deb-golang-github-openshift-imagebuilder-dev"
+  "deb-golang-github-pkg-errors-dev"
+  "deb-golang-github-seccomp-containers-golang-dev"
+  "deb-golang-github-seccomp-libseccomp-golang-dev"
+  "deb-golang-github-sirupsen-logrus-dev"
+  "deb-golang-github-spf13-cobra-dev"
+  "deb-golang-github-spf13-pflag-dev"
+  "deb-golang-gocapability-dev"
+  "deb-golang-golang-x-crypto-dev"
+  "deb-golang-golang-x-sys-dev"
+  "deb-golang-gomega-dev"
+]
+extra-source "golang-github-containers-buildah-dev_1.19.6+dfsg1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-containers-buildah/golang-github-containers-buildah-dev_1.19.6+dfsg1-1_all.deb"
+}

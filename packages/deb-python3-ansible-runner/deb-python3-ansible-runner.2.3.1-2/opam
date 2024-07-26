@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-ansible-runner_2.3.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-ansible-runner"]
+]
+depends: [
+  "deb-ansible"
+  "deb-bubblewrap"
+  "deb-python3-any"
+  "deb-python3-daemon"
+  "deb-python3-distutils"
+  "deb-python3-packaging"
+  "deb-python3-pexpect"
+  "deb-python3-six"
+  "deb-python3-yaml"
+  "deb-sshpass"
+]
+extra-source "python3-ansible-runner_2.3.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/ansible-runner/python3-ansible-runner_2.3.1-2_all.deb"
+}

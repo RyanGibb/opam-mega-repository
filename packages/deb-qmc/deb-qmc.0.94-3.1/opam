@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qmc_0.94-3.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qmc"]
+]
+depends: [
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libstdc++6" {>= "5"}
+]
+extra-source "qmc_0.94-3.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qmc/qmc_0.94-3.1_amd64.deb"
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-systemfixtures_0.6.4-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-systemfixtures"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-fakesleep"
+  "deb-python3-fixtures"
+  "deb-python3-pbr" {>= "1.10"}
+  "deb-python3-requests-mock"
+  "deb-python3-six"
+  "deb-python3-testtools"
+]
+extra-source "python3-systemfixtures_0.6.4-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/systemfixtures/python3-systemfixtures_0.6.4-2_all.deb"
+}

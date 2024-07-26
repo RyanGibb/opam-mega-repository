@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-clock_0.6.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-clock"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.2.20221110-2"}
+  "deb-r-cran-cpp11" {>= "0.4.2"}
+  "deb-r-cran-rlang" {>= "1.0.4"}
+  "deb-r-cran-tzdb" {>= "0.3.0"}
+  "deb-r-cran-vctrs" {>= "0.4.1"}
+]
+extra-source "r-cran-clock_0.6.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-clock/r-cran-clock_0.6.1-2_amd64.deb"
+}

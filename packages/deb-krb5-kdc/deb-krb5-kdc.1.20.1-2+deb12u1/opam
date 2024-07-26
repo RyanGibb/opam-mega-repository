@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i krb5-kdc_1.20.1-2+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r krb5-kdc"]
+]
+depends: [
+  "deb-krb5-config"
+  "deb-krb5-user"
+  "deb-libc6" {>= "2.34"}
+  "deb-libcom-err2" {>= "1.43.9"}
+  "deb-libgssrpc4" {>= "1.6.dfsg.2"}
+  "deb-libk5crypto3" {>= "1.20"}
+  "deb-libkadm5srv-mit12" {>= "1.18.2"}
+  "deb-libkdb5-10" {>= "1.20.1"}
+  "deb-libkrb5-3" {= "1.20.1-2+deb12u1"}
+  "deb-libkrb5support0" {>= "1.20"}
+  "deb-libverto1" {>= "0.2.4"}
+  "deb-sysvinit-utils"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-libverto-libev1" | "deb- libverto-libevent1")
+]
+extra-source "krb5-kdc_1.20.1-2+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/krb5/krb5-kdc_1.20.1-2+deb12u1_amd64.deb"
+}

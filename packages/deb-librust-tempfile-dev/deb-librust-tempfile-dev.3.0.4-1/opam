@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-tempfile-dev_3.0.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-tempfile-dev"]
+]
+depends: [
+  "deb-librust-cfg-if-0-1+default-dev"
+  "deb-librust-libc-dev"
+  "deb-librust-rand-0-5+default-dev"
+  "deb-librust-redox-syscall-0-1+default-dev"
+  "deb-librust-remove-dir-all-0-5+default-dev"
+  "deb-librust-winapi-0-3+default-dev"
+  "deb-librust-winapi-0-3+fileapi-dev"
+  "deb-librust-winapi-0-3+handleapi-dev"
+  "deb-librust-winapi-0-3+winbase-dev"
+]
+extra-source "librust-tempfile-dev_3.0.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-tempfile/librust-tempfile-dev_3.0.4-1_amd64.deb"
+}

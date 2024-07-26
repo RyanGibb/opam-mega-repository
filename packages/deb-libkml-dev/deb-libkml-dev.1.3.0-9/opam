@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkml-dev_1.3.0-9_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkml-dev"]
+]
+depends: [
+  "deb-libboost-dev"
+  "deb-libexpat1-dev"
+  "deb-libkmlbase1" {= "1.3.0-9"}
+  "deb-libkmlconvenience1" {= "1.3.0-9"}
+  "deb-libkmldom1" {= "1.3.0-9"}
+  "deb-libkmlengine1" {= "1.3.0-9"}
+  "deb-libkmlregionator1" {= "1.3.0-9"}
+  "deb-libkmlxsd1" {= "1.3.0-9"}
+  "deb-libminizip-dev"
+  "deb-liburiparser-dev" {>= "0.7.1"}
+  "deb-zlib1g-dev"
+]
+extra-source "libkml-dev_1.3.0-9_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libk/libkml/libkml-dev_1.3.0-9_amd64.deb"
+}

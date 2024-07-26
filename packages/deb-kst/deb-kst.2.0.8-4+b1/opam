@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kst_2.0.8-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kst"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libcfitsio9" {>= "3.480~"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgetdata++7" {>= "0.10.0"}
+  "deb-libgsl25" {>= "2.6"}
+  "deb-libmatio11" {>= "1.5.4"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libqt5printsupport5" {>= "5.2.0"}
+  "deb-libqt5widgets5" {>= "5.14.1"}
+  "deb-libqt5xml5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "5.2"}
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "kst_2.0.8-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kst/kst_2.0.8-4+b1_amd64.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pike8.0-core_8.0.1738-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pike8.0-core"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libcrypt1" {>= "1-4.1.0"}
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-libhogweed6" {>= "2.1~"}
+  "deb-libnettle8" {>= "2.1~"}
+  "deb-libnsl2" {>= "1.0"}
+]
+extra-source "pike8.0-core_8.0.1738-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pike8.0/pike8.0-core_8.0.1738-1+b2_amd64.deb"
+}

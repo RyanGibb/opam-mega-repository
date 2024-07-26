@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ucimf-openvanilla_2.10.11-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ucimf-openvanilla"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libltdl7" {>= "2.4.6"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-openvanilla-imgeneric"
+  "deb-ucimf"
+]
+extra-source "ucimf-openvanilla_2.10.11-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/u/ucimf-openvanilla/ucimf-openvanilla_2.10.11-4_amd64.deb"
+}

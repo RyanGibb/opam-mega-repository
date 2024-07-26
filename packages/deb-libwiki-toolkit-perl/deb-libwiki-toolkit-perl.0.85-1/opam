@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libwiki-toolkit-perl_0.85-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libwiki-toolkit-perl"]
+]
+depends: [
+  "deb-libcgi-pm-perl"
+  "deb-libdbix-fulltextsearch-perl"
+  "deb-libdigest-md5-perl"
+  "deb-libhtml-parser-perl"
+  "deb-libtext-wikiformat-perl"
+  "deb-libtime-piece-perl"
+  "deb-perl"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-libdbd-mysql-perl" | "deb- libdbd-pg-perl" | "deb- libdbd-sqlite3-perl")
+]
+extra-source "libwiki-toolkit-perl_0.85-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libw/libwiki-toolkit-perl/libwiki-toolkit-perl_0.85-1_all.deb"
+}

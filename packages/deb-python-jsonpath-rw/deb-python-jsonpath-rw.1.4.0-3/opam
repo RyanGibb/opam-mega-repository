@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-jsonpath-rw_1.4.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-jsonpath-rw"]
+]
+depends: [
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7.5-5~"}
+  "deb-python-decorator"
+  "deb-python-ply"
+  "deb-python-six"
+  "deb-python2-7-any"
+]
+extra-source "python-jsonpath-rw_1.4.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-jsonpath-rw/python-jsonpath-rw_1.4.0-3_all.deb"
+}

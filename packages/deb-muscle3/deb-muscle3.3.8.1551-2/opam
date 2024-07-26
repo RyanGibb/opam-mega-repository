@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i muscle3_3.8.1551-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r muscle3"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libstdc++6" {>= "5"}
+]
+conflicts: [
+  "deb-muscle-doc"
+]
+extra-source "muscle3_3.8.1551-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/muscle3/muscle3_3.8.1551-2_amd64.deb"
+}

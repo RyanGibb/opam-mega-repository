@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-fb-prof_2.1.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-fb-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-aeson-prof"
+  "deb-libghc-attoparsec-prof"
+  "deb-libghc-conduit-extra-prof"
+  "deb-libghc-conduit-prof"
+  "deb-libghc-cryptonite-prof"
+  "deb-libghc-data-default-prof"
+  "deb-libghc-fb-dev" {= "2.1.1-1"}
+  "deb-libghc-http-client-prof"
+  "deb-libghc-http-conduit-prof"
+  "deb-libghc-http-types-prof"
+  "deb-libghc-memory-prof"
+  "deb-libghc-monad-logger-prof"
+  "deb-libghc-resourcet-prof"
+  "deb-libghc-transformers-base-prof"
+  "deb-libghc-unliftio-core-prof"
+  "deb-libghc-unliftio-prof"
+  "deb-libghc-unordered-containers-prof"
+]
+extra-source "libghc-fb-prof_2.1.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-fb/libghc-fb-prof_2.1.1-1_amd64.deb"
+}

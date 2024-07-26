@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-mqtt-packet_6.9.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-mqtt-packet"]
+]
+depends: [
+  "deb-node-bl"
+  "deb-node-debug"
+  "deb-node-inherits" {>= "2.0.3"}
+  "deb-node-process-nextick-args" {>= "2.0.0"}
+  "deb-node-safe-buffer"
+  "deb-nodejs"
+]
+extra-source "node-mqtt-packet_6.9.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-mqtt-packet/node-mqtt-packet_6.9.0-1_all.deb"
+}

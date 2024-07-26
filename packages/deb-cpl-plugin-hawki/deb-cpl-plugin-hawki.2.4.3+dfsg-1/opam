@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cpl-plugin-hawki_2.4.3+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cpl-plugin-hawki"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libcplcore26" {>= "6.3"}
+  "deb-libcpldfs26" {>= "6.0"}
+  "deb-libcpldrs26" {>= "6.4"}
+  "deb-libcplui26" {>= "6.4"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgomp1" {>= "4.9"}
+  "deb-libgsl23" {>= "2.5"}
+  "deb-libgslcblas0" {>= "2.4"}
+  "deb-libstdc++6" {>= "4.1.1"}
+]
+extra-source "cpl-plugin-hawki_2.4.3+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cpl-plugin-hawki/cpl-plugin-hawki_2.4.3+dfsg-1_amd64.deb"
+}

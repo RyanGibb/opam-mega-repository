@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sysprof_3.46.0-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sysprof"]
+]
+depends: [
+  "deb-libadwaita-1-0" {>= "1.2~alpha"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libglib2-0-0" {>= "2.73.0"}
+  "deb-libgtk-4-1" {>= "4.6"}
+  "deb-libjson-glib-1-0-0" {>= "1.5.2"}
+  "deb-libpolkit-agent-1-0" {>= "0.105"}
+  "deb-libpolkit-gobject-1-0" {>= "0.105"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-libsysprof-4" {= "3.46.0-4"}
+  "deb-libsysprof-ui-5" {= "3.46.0-4"}
+]
+extra-source "sysprof_3.46.0-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sysprof/sysprof_3.46.0-4_amd64.deb"
+}

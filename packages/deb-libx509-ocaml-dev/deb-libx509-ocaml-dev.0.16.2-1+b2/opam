@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libx509-ocaml-dev_0.16.2-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libx509-ocaml-dev"]
+]
+depends: [
+  "deb-libasn1-combinators-ocaml-dev"
+  "deb-libbase64-ocaml-dev"
+  "deb-libcstruct-ocaml-dev"
+  "deb-libdomain-name-ocaml-dev"
+  "deb-libfmt-ocaml-dev"
+  "deb-libgmap-ocaml-dev"
+  "deb-libipaddr-ocaml-dev"
+  "deb-liblogs-ocaml-dev"
+  "deb-libmirage-crypto-ocaml-dev"
+  "deb-libpbkdf-ocaml-dev"
+  "deb-libptime-ocaml-dev"
+  "deb-libsexplib0-ocaml-dev"
+  "deb-libx509-ocaml"
+  "deb-libzarith-ocaml-dev"
+  "deb-ocaml"
+]
+extra-source "libx509-ocaml-dev_0.16.2-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/ocaml-x509/libx509-ocaml-dev_0.16.2-1+b2_amd64.deb"
+}

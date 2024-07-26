@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i weechat-matrix_0.3.0-3.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r weechat-matrix"]
+]
+depends: [
+  "deb-python3-aiohttp"
+  "deb-python3-atomicwrites"
+  "deb-python3-future"
+  "deb-python3-logbook"
+  "deb-python3-magic"
+  "deb-python3-matrix-nio"
+  "deb-python3-openssl"
+  "deb-python3-pygments"
+  "deb-python3-requests"
+  "deb-python3-webcolors"
+]
+extra-source "weechat-matrix_0.3.0-3.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/w/weechat-matrix/weechat-matrix_0.3.0-3.1_amd64.deb"
+}

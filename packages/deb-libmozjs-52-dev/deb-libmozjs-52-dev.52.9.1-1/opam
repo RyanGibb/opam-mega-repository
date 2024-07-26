@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmozjs-52-dev_52.9.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmozjs-52-dev"]
+]
+depends: [
+  "deb-libc6" {>= "2.17"}
+  "deb-libgcc1" {>= "1-3.4"}
+  "deb-libmozjs-52-0" {= "52.9.1-1"}
+  "deb-libreadline7" {>= "6.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libmozjs-52-dev_52.9.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mozjs52/libmozjs-52-dev_52.9.1-1_amd64.deb"
+}

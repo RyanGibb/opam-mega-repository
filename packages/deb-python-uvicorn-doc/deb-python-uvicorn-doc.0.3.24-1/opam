@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-uvicorn-doc_0.3.24-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-uvicorn-doc"]
+]
+depends: [
+  "deb-fonts-font-awesome" {>= "5.0.10+really4.7.0~dfsg-1"}
+  "deb-libjs-bootstrap" {>= "3.4.0+dfsg-1"}
+  "deb-libjs-bootswatch" {>= "3.3.7+dfsg2-1"}
+  "deb-libjs-highlight-js"
+  "deb-libjs-jquery" {>= "3.2.1-1"}
+  "deb-libjs-lunr" {>= "2.3.5~dfsg-6"}
+  "deb-mkdocs" {>= "1.0.4+dfsg-1"}
+]
+extra-source "python-uvicorn-doc_0.3.24-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-uvicorn/python-uvicorn-doc_0.3.24-1_all.deb"
+}

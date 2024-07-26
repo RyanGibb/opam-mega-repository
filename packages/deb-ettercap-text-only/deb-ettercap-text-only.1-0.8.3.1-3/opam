@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ettercap-text-only_1:0.8.3.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ettercap-text-only"]
+]
+depends: [
+  "deb-ettercap-common" {= "1-0.8.3.1-3"}
+  "deb-libbsd0" {>= "0.0"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libncurses6" {>= "6"}
+  "deb-libpcre3"
+  "deb-libtinfo6" {>= "6"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+conflicts: [
+  "deb-ettercap"
+  "deb-ettercap-gtk"
+]
+extra-source "ettercap-text-only_1:0.8.3.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/ettercap/ettercap-text-only_0.8.3.1-3_amd64.deb"
+}

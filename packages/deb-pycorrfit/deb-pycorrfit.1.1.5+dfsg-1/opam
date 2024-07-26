@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pycorrfit_1.1.5+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pycorrfit"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-python3" {< "3.8"}
+  "deb-python3" {>= "3.7~"}
+  "deb-python3-any"
+  "deb-python3-lmfit" {>= "0.9.2"}
+  "deb-python3-matplotlib"
+  "deb-python3-numpy"
+  "deb-python3-scipy"
+  "deb-python3-simplejson"
+  "deb-python3-sympy"
+  "deb-python3-wxgtk4-0"
+  "deb-python3-yaml"
+]
+extra-source "pycorrfit_1.1.5+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pycorrfit/pycorrfit_1.1.5+dfsg-1_amd64.deb"
+}

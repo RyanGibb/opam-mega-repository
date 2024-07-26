@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-tls-prof_1.5.4-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-tls-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-asn1-encoding-prof"
+  "deb-libghc-asn1-types-prof"
+  "deb-libghc-async-prof"
+  "deb-libghc-cereal-prof"
+  "deb-libghc-cryptonite-prof"
+  "deb-libghc-data-default-class-prof"
+  "deb-libghc-hourglass-prof"
+  "deb-libghc-memory-prof"
+  "deb-libghc-network-prof"
+  "deb-libghc-tls-dev" {= "1.5.4-1+b1"}
+  "deb-libghc-x509-prof"
+  "deb-libghc-x509-store-prof"
+  "deb-libghc-x509-validation-prof"
+]
+extra-source "libghc-tls-prof_1.5.4-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-tls/libghc-tls-prof_1.5.4-1+b1_amd64.deb"
+}

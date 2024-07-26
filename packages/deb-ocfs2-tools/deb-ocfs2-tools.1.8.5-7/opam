@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ocfs2-tools_1.8.5-7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ocfs2-tools"]
+]
+depends: [
+  "deb-libaio1" {>= "0.3.93"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcmap4" {>= "1.99.9"}
+  "deb-libcom-err2" {>= "1.43.9"}
+  "deb-libdlm3" {>= "3.0.2"}
+  "deb-libglib2-0-0" {>= "2.24.0"}
+  "deb-libncurses6" {>= "6"}
+  "deb-libreadline7" {>= "6.0"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-libuuid1" {>= "2.16"}
+  "deb-lsb-base" {>= "3.0-6"}
+  "deb-psmisc"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "ocfs2-tools_1.8.5-7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/ocfs2-tools/ocfs2-tools_1.8.5-7_amd64.deb"
+}

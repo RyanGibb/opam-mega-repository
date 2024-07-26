@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-wai-http2-extra-prof_0.1.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-wai-http2-extra-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-http-types-prof"
+  "deb-libghc-psqueues-prof"
+  "deb-libghc-wai-http2-extra-dev" {= "0.1.3-1"}
+  "deb-libghc-wai-prof"
+  "deb-libghc-warp-prof"
+  "deb-libghc-word8-prof"
+]
+extra-source "libghc-wai-http2-extra-prof_0.1.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-wai-http2-extra/libghc-wai-http2-extra-prof_0.1.3-1_amd64.deb"
+}

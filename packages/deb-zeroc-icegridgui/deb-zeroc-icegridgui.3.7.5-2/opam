@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i zeroc-icegridgui_3.7.5-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r zeroc-icegridgui"]
+]
+depends: [
+  "deb-default-jre"
+  "deb-libjgoodies-common-java"
+  "deb-libjgoodies-forms-java"
+  "deb-libjgoodies-looks-java"
+  "deb-libopenjfx-java"
+  "deb-libzeroc-ice3-7-java" {= "3.7.5-2"}
+]
+extra-source "zeroc-icegridgui_3.7.5-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/z/zeroc-ice/zeroc-icegridgui_3.7.5-2_all.deb"
+}

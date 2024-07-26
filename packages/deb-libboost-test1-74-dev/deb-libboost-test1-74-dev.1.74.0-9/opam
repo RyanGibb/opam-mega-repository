@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libboost-test1.74-dev_1.74.0-9_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libboost-test1.74-dev"]
+]
+depends: [
+  "deb-libboost-test1-74-0" {= "1.74.0-9"}
+  "deb-libboost1-74-dev" {= "1.74.0-9"}
+]
+conflicts: [
+  "deb-libboost-test1-42-dev"
+  "deb-libboost-test1-46-dev"
+  "deb-libboost-test1-48-dev"
+  "deb-libboost-test1-49-dev"
+  "deb-libboost-test1-50-dev"
+  "deb-libboost-test1-52-dev"
+  "deb-libboost-test1-53-dev"
+  "deb-libboost-test1-54-dev"
+  "deb-libboost-test1-55-dev"
+  "deb-libboost-test1-57-dev"
+  "deb-libboost-test1-58-dev"
+  "deb-libboost-test1-60-dev"
+  "deb-libboost-test1-61-dev"
+  "deb-libboost-test1-62-dev"
+  "deb-libboost-test1-63-dev"
+  "deb-libboost-test1-65-dev"
+  "deb-libboost-test1-67-dev"
+  "deb-libboost-test1-70-dev"
+  "deb-libboost-test1-71-dev"
+]
+extra-source "libboost-test1.74-dev_1.74.0-9_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/boost1.74/libboost-test1.74-dev_1.74.0-9_amd64.deb"
+}

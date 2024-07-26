@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i scalapack-mpi-test_2.0.2-7+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r scalapack-mpi-test"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libgcc1" {>= "1-4.0"}
+  "deb-libgfortran5" {>= "8"}
+  "deb-libmpich12"
+  "deb-libopenmpi3"
+  "deb-libscalapack-mpich2-0"
+  "deb-libscalapack-openmpi2-0"
+  "deb-scalapack-test-common"
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+conflicts: [
+  "deb-scalapack-mpich-test"
+]
+extra-source "scalapack-mpi-test_2.0.2-7+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/scalapack/scalapack-mpi-test_2.0.2-7+b2_amd64.deb"
+}

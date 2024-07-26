@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libogre-1.9.0v5_1.9.0+dfsg1-12.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libogre-1.9.0v5"]
+]
+depends: [
+  "deb-libboost-thread1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libegl1"
+  "deb-libfreeimage3" {>= "3.18.0+ds2"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgl1"
+  "deb-libstdc++6" {>= "9"}
+  "deb-libx11-6"
+  "deb-libxaw7"
+  "deb-libxrandr2" {>= "4.3"}
+  "deb-libxt6"
+  "deb-libzzip-0-13" {>= "0.13.56"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+conflicts: [
+  "deb-libogre-1-9-0"
+]
+extra-source "libogre-1.9.0v5_1.9.0+dfsg1-12.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/ogre-1.9/libogre-1.9.0v5_1.9.0+dfsg1-12.1_amd64.deb"
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libodoc-ocaml_2.1.1+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libodoc-ocaml"]
+]
+depends: [
+  "deb-libastring-ocaml"
+  "deb-libfmt-ocaml"
+  "deb-libfpath-ocaml"
+  "deb-libodoc-parser-ocaml"
+  "deb-libresult-ocaml"
+  "deb-libtyxml-ocaml"
+  "deb-ocaml-base"
+]
+extra-source "libodoc-ocaml_2.1.1+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/ocaml-odoc/libodoc-ocaml_2.1.1+dfsg-2_amd64.deb"
+}

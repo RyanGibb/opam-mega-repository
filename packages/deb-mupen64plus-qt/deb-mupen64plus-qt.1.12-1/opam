@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mupen64plus-qt_1.12-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mupen64plus-qt"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5gui5" {>= "5.7.0"}
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libqt5sql5" {>= "5.0.2"}
+  "deb-libqt5sql5-sqlite"
+  "deb-libqt5widgets5" {>= "5.11.0~rc1"}
+  "deb-libquazip5-1" {>= "0.7.3"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-mupen64plus-ui-console"
+]
+extra-source "mupen64plus-qt_1.12-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mupen64plus-qt/mupen64plus-qt_1.12-1_amd64.deb"
+}

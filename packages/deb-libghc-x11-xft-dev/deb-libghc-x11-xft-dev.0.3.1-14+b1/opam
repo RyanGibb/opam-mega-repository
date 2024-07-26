@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-x11-xft-dev_0.3.1-14+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-x11-xft-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-utf8-string-dev"
+  "deb-libghc-x11-dev"
+  "deb-libgmp10"
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxft-dev"
+  "deb-libxft2" {> "2.1.1"}
+  "deb-libxinerama1"
+  "deb-libxrandr2"
+  "deb-libxss1"
+]
+extra-source "libghc-x11-xft-dev_0.3.1-14+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-x11-xft/libghc-x11-xft-dev_0.3.1-14+b1_amd64.deb"
+}

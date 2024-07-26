@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libblockdev-plugins-all_2.28-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libblockdev-plugins-all"]
+]
+depends: [
+  "deb-libblockdev-btrfs2" {= "2.28-2"}
+  "deb-libblockdev-crypto2" {= "2.28-2"}
+  "deb-libblockdev-dm2" {= "2.28-2"}
+  "deb-libblockdev-fs2" {= "2.28-2"}
+  "deb-libblockdev-kbd2" {= "2.28-2"}
+  "deb-libblockdev-loop2" {= "2.28-2"}
+  "deb-libblockdev-lvm-dbus2" {= "2.28-2"}
+  "deb-libblockdev-lvm2" {= "2.28-2"}
+  "deb-libblockdev-mdraid2" {= "2.28-2"}
+  "deb-libblockdev-mpath2" {= "2.28-2"}
+  "deb-libblockdev-nvdimm2" {= "2.28-2"}
+  "deb-libblockdev-part-err2" {= "2.28-2"}
+  "deb-libblockdev-part2" {= "2.28-2"}
+  "deb-libblockdev-swap2" {= "2.28-2"}
+  "deb-libblockdev-utils2" {= "2.28-2"}
+  "deb-libblockdev2" {= "2.28-2"}
+]
+extra-source "libblockdev-plugins-all_2.28-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libb/libblockdev/libblockdev-plugins-all_2.28-2_amd64.deb"
+}

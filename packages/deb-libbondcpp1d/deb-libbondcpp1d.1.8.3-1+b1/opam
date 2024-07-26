@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libbondcpp1d_1.8.3-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libbondcpp1d"]
+]
+depends: [
+  "deb-libboost-atomic1-67-0"
+  "deb-libboost-chrono1-67-0"
+  "deb-libboost-date-time1-67-0"
+  "deb-libboost-filesystem1-67-0"
+  "deb-libboost-regex1-67-0" {>= "1.67.0-10"}
+  "deb-libboost-signals1-67-0"
+  "deb-libboost-system1-67-0"
+  "deb-libboost-thread1-67-0"
+  "deb-libc6" {>= "2.17"}
+  "deb-libconsole-bridge0-4"
+  "deb-libcpp-common0d"
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-liblog4cxx10v5"
+  "deb-librosconsole2d"
+  "deb-libroscpp-serialization0d"
+  "deb-libroscpp2d"
+  "deb-librostime0d"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libuuid1" {>= "2.16"}
+  "deb-libxmlrpcpp2d"
+]
+extra-source "libbondcpp1d_1.8.3-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ros-bond-core/libbondcpp1d_1.8.3-1+b1_amd64.deb"
+}

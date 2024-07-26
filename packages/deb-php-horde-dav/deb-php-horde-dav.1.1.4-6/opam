@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i php-horde-dav_1.1.4-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r php-horde-dav"]
+]
+depends: [
+  "deb-php-common"
+  "deb-php-horde-auth" {< "3.0.0~alpha1"}
+  "deb-php-horde-auth" {>= "2.0.0"}
+  "deb-php-horde-core" {< "3.0.0~alpha1"}
+  "deb-php-horde-core" {>= "2.0.0"}
+  "deb-php-horde-http" {< "3.0.0~alpha1"}
+  "deb-php-horde-http" {>= "2.0.0"}
+  "deb-php-horde-stream" {< "2.0.0~alpha1"}
+  "deb-php-horde-stream" {>= "1.2.0"}
+  "deb-php-horde-translation" {< "3.0.0~alpha1"}
+  "deb-php-horde-translation" {>= "2.2.0"}
+  "deb-php-sabre-dav" {< "1.9~"}
+  "deb-php-sabre-dav" {>= "1.8"}
+]
+extra-source "php-horde-dav_1.1.4-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/php-horde-dav/php-horde-dav_1.1.4-6_all.deb"
+}

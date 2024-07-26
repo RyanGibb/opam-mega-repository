@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i utop_1.19.3-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r utop"]
+]
+depends: [
+  "deb-libcamomile-ocaml-dev"
+  "deb-libfindlib-ocaml"
+  "deb-liblambda-term-ocaml"
+  "deb-liblwt-ocaml"
+  "deb-libreact-ocaml"
+  "deb-libresult-ocaml"
+  "deb-libutop-ocaml"
+  "deb-libzed-ocaml"
+  "deb-ocaml-base-nox"
+]
+extra-source "utop_1.19.3-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/u/utop/utop_1.19.3-2+b1_amd64.deb"
+}

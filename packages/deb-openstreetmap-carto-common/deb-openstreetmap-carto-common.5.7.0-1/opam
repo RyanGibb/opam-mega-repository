@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openstreetmap-carto-common_5.7.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openstreetmap-carto-common"]
+]
+depends: [
+  "deb-curl"
+  "deb-fonts-dejavu-core"
+  "deb-fonts-noto-cjk"
+  "deb-fonts-noto-hinted"
+  "deb-fonts-noto-unhinted"
+  "deb-fonts-unifont"
+  "deb-gdal-bin"
+  "deb-mapnik-utils"
+  "deb-python3"
+  "deb-unzip"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "openstreetmap-carto-common_5.7.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openstreetmap-carto/openstreetmap-carto-common_5.7.0-1_all.deb"
+}

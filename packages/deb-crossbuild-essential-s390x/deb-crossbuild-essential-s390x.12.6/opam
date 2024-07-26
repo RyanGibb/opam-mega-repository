@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i crossbuild-essential-s390x_12.6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r crossbuild-essential-s390x"]
+]
+depends: [
+  "deb-dpkg-cross"
+  ("deb-g++-s390x-linux-gnu" {>= "4-8.3"} | "deb- g++-s390x")
+  ("deb-gcc-s390x-linux-gnu" {>= "4-8.3"} | "deb- gcc-s390x")
+]
+extra-source "crossbuild-essential-s390x_12.6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/build-essential/crossbuild-essential-s390x_12.6_all.deb"
+}

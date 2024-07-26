@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i davmail_5.1.0.2891-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r davmail"]
+]
+depends: [
+  "deb-adduser"
+  "deb-init-system-helpers" {>= "1.50"}
+  "deb-jarwrapper" {>= "0.5"}
+  "deb-libcommons-codec-java"
+  "deb-libcommons-httpclient-java"
+  "deb-libcommons-logging-java"
+  "deb-libhtmlcleaner-java"
+  "deb-libjackrabbit-java"
+  "deb-libjcifs-java"
+  "deb-libjettison-java"
+  "deb-liblog4j1-2-java"
+  "deb-libmail-java"
+  "deb-libopenjfx-java"
+  "deb-libservlet-api-java"
+  "deb-libslf4j-java"
+  "deb-libstax2-api-java"
+  "deb-libwoodstox-java"
+  "deb-logrotate"
+  "deb-lsb-base"
+  ("deb-default-jre-headless" | "deb- java7-runtime-headless" | "deb- java8-runtime-headless" | "deb- java9-runtime-headless" | "deb- java10-runtime-headless" | "deb- java11-runtime-headless")
+]
+extra-source "davmail_5.1.0.2891-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/davmail/davmail_5.1.0.2891-2_all.deb"
+}

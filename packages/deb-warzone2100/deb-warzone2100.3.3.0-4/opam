@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i warzone2100_3.3.0-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r warzone2100"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libgl1"
+  "deb-libglew2-1" {>= "1.12.0"}
+  "deb-libharfbuzz0b" {>= "1.2.6"}
+  "deb-libminiupnpc17" {>= "1.9.20140610"}
+  "deb-libogg0" {>= "1.0rc3"}
+  "deb-libopenal1" {>= "1.14"}
+  "deb-libphysfs1" {>= "3.0.2"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libqt5core5a" {>= "5.14.1"}
+  "deb-libqt5script5" {>= "5.6.0~beta"}
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-libsdl2-2-0-0" {>= "2.0.12+dfsg1"}
+  "deb-libstdc++6" {>= "7"}
+  "deb-libtheora0" {>= "1.0~beta1"}
+  "deb-libvorbis0a" {>= "1.1.2"}
+  "deb-libvorbisfile3" {>= "1.1.2"}
+  "deb-warzone2100-data" {<= "3.3.0-4"}
+  "deb-warzone2100-data" {>= "3.3.0"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+]
+extra-source "warzone2100_3.3.0-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/w/warzone2100/warzone2100_3.3.0-4_amd64.deb"
+}

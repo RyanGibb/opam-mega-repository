@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-test-framework-prof_0.8.2.0-2+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-test-framework-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-ansi-terminal-prof"
+  "deb-libghc-ansi-wl-pprint-prof"
+  "deb-libghc-hostname-prof"
+  "deb-libghc-old-locale-prof"
+  "deb-libghc-random-prof"
+  "deb-libghc-regex-posix-prof"
+  "deb-libghc-test-framework-dev" {= "0.8.2.0-2+b2"}
+  "deb-libghc-xml-prof"
+]
+extra-source "libghc-test-framework-prof_0.8.2.0-2+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-test-framework/libghc-test-framework-prof_0.8.2.0-2+b2_amd64.deb"
+}

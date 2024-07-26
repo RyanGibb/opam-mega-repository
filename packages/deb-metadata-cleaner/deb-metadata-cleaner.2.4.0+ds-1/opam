@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i metadata-cleaner_2.4.0+ds-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r metadata-cleaner"]
+]
+depends: [
+  "deb-gir1-2-adw-1"
+  "deb-mat2"
+  "deb-media-types"
+  "deb-python3-any"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "metadata-cleaner_2.4.0+ds-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/metadata-cleaner/metadata-cleaner_2.4.0+ds-1_amd64.deb"
+}

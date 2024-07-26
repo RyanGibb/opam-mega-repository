@@ -1,0 +1,44 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kamoso_20.12.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kamoso"]
+]
+depends: [
+  "deb-gstreamer1-0-plugins-good" {>= "1.10~"}
+  "deb-gstreamer1-0-x" {>= "1.10~"}
+  "deb-kio"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libgstreamer-plugins-base1-0-0" {>= "1.10~"}
+  "deb-libgstreamer1-0-0" {>= "1.10~"}
+  "deb-libkf5configcore5" {>= "5.70.0~"}
+  "deb-libkf5configgui5" {>= "5.70.0~"}
+  "deb-libkf5coreaddons5" {>= "5.61.0"}
+  "deb-libkf5i18n5" {>= "5.70.0~"}
+  "deb-libkf5itemviews5" {>= "4.96.0"}
+  "deb-libkf5kiocore5" {>= "5.70.0~"}
+  "deb-libkf5kiofilewidgets5" {>= "5.70.0~"}
+  "deb-libkf5kiowidgets5" {>= "5.70.0~"}
+  "deb-libkf5notifications5" {>= "5.70.0~"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5qml5" {>= "5.1.0"}
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-qml-module-org-kde-kirigami2"
+  "deb-qml-module-org-kde-purpose"
+  "deb-qml-module-qtgraphicaleffects"
+  "deb-qml-module-qtqml"
+  "deb-qml-module-qtquick-controls2"
+  "deb-qml-module-qtquick-dialogs"
+  "deb-qml-module-qtquick-layouts"
+  "deb-qml-module-qtquick-window2"
+  "deb-qml-module-qtquick2"
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+  ("deb-libqt5quick5" {>= "5.15.1"} | "deb- libqt5quick5-gles" {>= "5.15.1"})
+]
+extra-source "kamoso_20.12.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kamoso/kamoso_20.12.1-1_amd64.deb"
+}

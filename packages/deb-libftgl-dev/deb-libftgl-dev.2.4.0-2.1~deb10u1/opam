@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libftgl-dev_2.4.0-2.1~deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libftgl-dev"]
+]
+depends: [
+  "deb-libfreetype6-dev" {> "2.0.9"}
+  "deb-libftgl2" {= "2.4.0-2.1~deb10u1"}
+  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
+  ("deb-libglu1-mesa-dev" | "deb- libglu-dev")
+]
+extra-source "libftgl-dev_2.4.0-2.1~deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/ftgl/libftgl-dev_2.4.0-2.1~deb10u1_amd64.deb"
+}

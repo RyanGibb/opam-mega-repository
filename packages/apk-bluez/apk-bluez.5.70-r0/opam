@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add bluez-5.70-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del bluez"]
+]
+depends: [
+  "apk-dbus" {= "1.14.10-r0"}
+  "apk-dbus-libs" {= "1.14.10-r0"}
+  "apk-glib" {= "2.78.6-r0"}
+  "apk-json-c" {= "0.17-r0"}
+  "apk-musl" {= "1.2.4_git20230717-r4"}
+  "apk-readline" {= "8.2.1-r2"}
+]
+extra-source "bluez-5.70-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/bluez-5.70-r0.apk"
+}

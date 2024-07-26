@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmoox-configfromfile-perl_0.009-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmoox-configfromfile-perl"]
+]
+depends: [
+  "deb-libconfig-any-perl"
+  "deb-libfile-find-rule-perl"
+  "deb-libmoo-perl"
+  "deb-libmoox-file-configdir-perl"
+  "deb-perl-any"
+]
+extra-source "libmoox-configfromfile-perl_0.009-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libm/libmoox-configfromfile-perl/libmoox-configfromfile-perl_0.009-3_all.deb"
+}

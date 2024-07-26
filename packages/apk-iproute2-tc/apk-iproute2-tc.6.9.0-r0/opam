@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add iproute2-tc-6.9.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del iproute2-tc"]
+]
+depends: [
+  "apk-libcap2" {= "2.70-r0"}
+  "apk-libelf" {= "0.191-r0"}
+  "apk-libmnl" {= "1.0.5-r2"}
+  "apk-libxtables" {= "1.8.10-r3"}
+  "apk-musl" {= "1.2.5-r0"}
+]
+extra-source "iproute2-tc-6.9.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/iproute2-tc-6.9.0-r0.apk"
+}

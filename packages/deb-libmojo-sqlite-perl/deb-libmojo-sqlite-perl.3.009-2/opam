@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmojo-sqlite-perl_3.009-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmojo-sqlite-perl"]
+]
+depends: [
+  "deb-libdbd-sqlite3-perl" {>= "1.68"}
+  "deb-libdbi-perl"
+  "deb-libmojolicious-perl"
+  "deb-libsql-abstract-pg-perl"
+  "deb-liburi-db-perl"
+  "deb-perl-any"
+  ("deb-liburi-perl" {>= "5.12"} | "deb- liburi-perl" {< "5.11"})
+]
+extra-source "libmojo-sqlite-perl_3.009-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libm/libmojo-sqlite-perl/libmojo-sqlite-perl_3.009-2_all.deb"
+}

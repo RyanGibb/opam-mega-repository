@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-persalys_13.1.1+ds-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-persalys"]
+]
+depends: [
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.32"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libopenturns0-21" {>= "1.20"}
+  "deb-libpersalys0" {= "13.1.1+ds-1+b1"}
+  "deb-libpython3-11" {>= "3.11.0"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-any"
+  "deb-python3-openturns"
+]
+extra-source "python3-persalys_13.1.1+ds-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/persalys/python3-persalys_13.1.1+ds-1+b1_amd64.deb"
+}

@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-propellor-prof_5.12-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-propellor-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-ansi-terminal-prof"
+  "deb-libghc-async-prof"
+  "deb-libghc-exceptions-prof"
+  "deb-libghc-hashable-prof"
+  "deb-libghc-hslogger-prof"
+  "deb-libghc-ifelse-prof"
+  "deb-libghc-network-prof"
+  "deb-libghc-propellor-dev" {= "5.12-1"}
+  "deb-libghc-split-prof"
+  "deb-libghc-type-errors-prof"
+  "deb-libghc-unix-compat-prof"
+]
+extra-source "libghc-propellor-prof_5.12-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/propellor/libghc-propellor-prof_5.12-1_amd64.deb"
+}

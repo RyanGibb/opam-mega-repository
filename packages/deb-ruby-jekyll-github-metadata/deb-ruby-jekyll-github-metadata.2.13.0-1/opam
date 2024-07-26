@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-jekyll-github-metadata_2.13.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-jekyll-github-metadata"]
+]
+depends: [
+  "deb-jekyll" {< "5~"}
+  "deb-jekyll" {>= "3.4"}
+  "deb-ruby-octokit" {< "5~"}
+  "deb-ruby-octokit" {>= "4.0"}
+  ("deb-ruby" | "deb- ruby-interpreter")
+]
+extra-source "ruby-jekyll-github-metadata_2.13.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-jekyll-github-metadata/ruby-jekyll-github-metadata_2.13.0-1_all.deb"
+}

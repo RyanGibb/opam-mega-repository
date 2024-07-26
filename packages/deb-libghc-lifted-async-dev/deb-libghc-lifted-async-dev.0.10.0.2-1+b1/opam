@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-lifted-async-dev_0.10.0.2-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-lifted-async-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-async-dev"
+  "deb-libghc-constraints-dev"
+  "deb-libghc-lifted-base-dev"
+  "deb-libghc-monad-control-dev"
+  "deb-libghc-transformers-base-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-lifted-async-dev_0.10.0.2-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-lifted-async/libghc-lifted-async-dev_0.10.0.2-1+b1_amd64.deb"
+}

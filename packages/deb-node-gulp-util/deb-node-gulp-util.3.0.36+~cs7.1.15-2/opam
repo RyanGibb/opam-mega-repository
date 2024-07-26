@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-gulp-util_3.0.36+~cs7.1.15-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-gulp-util"]
+]
+depends: [
+  "deb-node-concat-with-sourcemaps"
+  "deb-node-escape-string-regexp"
+  "deb-node-istextorbinary"
+  "deb-node-lodash-packages"
+  "deb-node-object-assign"
+  "deb-node-readable-stream" {>= "3.0~"}
+  "deb-node-through2"
+]
+extra-source "node-gulp-util_3.0.36+~cs7.1.15-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-gulp-util/node-gulp-util_3.0.36+~cs7.1.15-2_all.deb"
+}

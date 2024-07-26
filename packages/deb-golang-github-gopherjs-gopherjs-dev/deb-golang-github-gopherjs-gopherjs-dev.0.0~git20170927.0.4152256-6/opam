@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-gopherjs-gopherjs-dev_0.0~git20170927.0.4152256-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-gopherjs-gopherjs-dev"]
+]
+depends: [
+  "deb-golang-github-fsnotify-fsnotify-dev"
+  "deb-golang-github-kardianos-osext-dev"
+  "deb-golang-github-kisielk-gotool-dev"
+  "deb-golang-github-neelance-astrewrite-dev"
+  "deb-golang-github-neelance-sourcemap-dev"
+  "deb-golang-github-spf13-cobra-dev"
+  "deb-golang-github-spf13-pflag-dev"
+  "deb-golang-golang-x-crypto-dev"
+  "deb-golang-golang-x-tools-dev"
+]
+extra-source "golang-github-gopherjs-gopherjs-dev_0.0~git20170927.0.4152256-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-gopherjs-gopherjs/golang-github-gopherjs-gopherjs-dev_0.0~git20170927.0.4152256-6_all.deb"
+}

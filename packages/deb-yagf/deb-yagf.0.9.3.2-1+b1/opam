@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i yagf_0.9.3.2-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r yagf"]
+]
+depends: [
+  "deb-libaspell15" {>= "0.60.7~20110707"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libqtcore4" {>= "4-4.7.0~beta1"}
+  "deb-libqtgui4" {>= "4-4.5.3"}
+  "deb-libstdc++6" {>= "5"}
+  ("deb-tesseract-ocr" | "deb- cuneiform")
+]
+extra-source "yagf_0.9.3.2-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/y/yagf/yagf_0.9.3.2-1+b1_amd64.deb"
+}

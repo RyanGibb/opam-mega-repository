@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i jwm_2.4.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r jwm"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.6.0"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libpango-1-0-0" {>= "1.22.0"}
+  "deb-libpangoft2-1-0-0" {>= "1.14.0"}
+  "deb-libpangoxft-1-0-0" {>= "1.14.0"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-librsvg2-2" {>= "2.52.5"}
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxft2" {> "2.1.1"}
+  "deb-libxinerama1" {>= "2-1.1.4"}
+  "deb-libxmu6" {>= "2-1.1.3"}
+  "deb-libxpm4"
+  "deb-libxrender1"
+  ("deb-rxvt-unicode" | "deb- gnome-terminal" | "deb- konsole" | "deb- x-terminal-emulator")
+]
+extra-source "jwm_2.4.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/j/jwm/jwm_2.4.3-1_amd64.deb"
+}

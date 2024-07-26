@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sagetex_3.2+ds-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sagetex"]
+]
+depends: [
+  "deb-imagemagick"
+  "deb-python-sagetex" {= "3.2+ds-2"}
+  "deb-tex-common" {>= "6"}
+  "deb-texlive-font-utils"
+  "deb-texlive-latex-base"
+  "deb-texlive-latex-extra"
+  "deb-texlive-latex-recommended"
+  "deb-texlive-pictures"
+]
+extra-source "sagetex_3.2+ds-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sagetex/sagetex_3.2+ds-2_all.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add squashfs-tools-4.5-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del squashfs-tools"]
+]
+depends: [
+  "apk-lz4-libs" {= "1.9.3-r1"}
+  "apk-lzo" {= "2.10-r2"}
+  "apk-musl" {= "1.2.2-r9"}
+  "apk-xz-libs" {= "5.2.5-r1"}
+  "apk-zlib" {= "1.2.12-r3"}
+  "apk-zstd-libs" {= "1.5.0-r0"}
+]
+extra-source "squashfs-tools-4.5-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/squashfs-tools-4.5-r1.apk"
+}

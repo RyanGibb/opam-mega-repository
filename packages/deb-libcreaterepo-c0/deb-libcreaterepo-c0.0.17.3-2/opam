@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcreaterepo-c0_0.17.3-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcreaterepo-c0"]
+]
+depends: [
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.33"}
+  "deb-libcurl4" {>= "7.16.2"}
+  "deb-libdrpm0" {>= "0.4.1"}
+  "deb-libglib2-0-0" {>= "2.31.8"}
+  "deb-liblzma5" {>= "5.1.1alpha+20120614"}
+  "deb-libmagic1" {>= "5.12"}
+  "deb-libmodulemd2" {>= "2.9.4"}
+  "deb-librpm9" {>= "4.14.0+dfsg1"}
+  "deb-librpmio9" {>= "4.16"}
+  "deb-libsqlite3-0" {>= "3.5.9"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libzck1" {>= "1.1.6"}
+  "deb-zlib1g" {>= "1-1.2.6"}
+]
+extra-source "libcreaterepo-c0_0.17.3-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/createrepo-c/libcreaterepo-c0_0.17.3-2_amd64.deb"
+}

@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mokomaze_0.7.1-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mokomaze"]
+]
+depends: [
+  "deb-fonts-liberation"
+  "deb-libargtable2-0" {>= "7"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libguichan-0-8-1-1v5" {>= "0.8.2"}
+  "deb-libguichan-sdl-0-8-1-1v5" {>= "0.8.2"}
+  "deb-libjson-glib-1-0-0" {>= "1.5.2"}
+  "deb-libode8" {>= "2-0.16.2"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-librsvg2-2" {>= "2.14.4"}
+  "deb-libsdl-image1-2" {>= "1.2.10"}
+  "deb-libsdl-ttf2-0-0"
+  "deb-libsdl1-2-compat-shim"
+  "deb-libstdc++6" {>= "5.2"}
+]
+extra-source "mokomaze_0.7.1-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mokomaze/mokomaze_0.7.1-1+b1_amd64.deb"
+}

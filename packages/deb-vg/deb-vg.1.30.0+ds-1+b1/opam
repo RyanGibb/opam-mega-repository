@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i vg_1.30.0+ds-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r vg"]
+]
+depends: [
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libboost-program-options1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libdivsufsort3" {>= "2.0.1"}
+  "deb-libdw1" {>= "0.126"}
+  "deb-libfastahack0" {>= "0.0+git20160702.bbc645f"}
+  "deb-libgcc-s1" {>= "4.2"}
+  "deb-libgomp1" {>= "6"}
+  "deb-libhts3" {>= "1.10"}
+  "deb-libjansson4" {>= "2.2"}
+  "deb-libjemalloc2" {>= "5.0.0"}
+  "deb-libraptor2-0" {>= "2.0.14"}
+  "deb-libssw0" {>= "1.1"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libtabixpp0" {>= "1.0.0"}
+  "deb-libvcflib1" {>= "1.0.2+dfsg"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+conflicts: [
+  "deb-cgvg"
+]
+extra-source "vg_1.30.0+ds-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/vg/vg_1.30.0+ds-1+b1_amd64.deb"
+}

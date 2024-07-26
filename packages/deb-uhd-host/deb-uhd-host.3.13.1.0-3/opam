@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i uhd-host_3.13.1.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r uhd-host"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libboost-atomic1-67-0"
+  "deb-libboost-chrono1-67-0"
+  "deb-libboost-date-time1-67-0"
+  "deb-libboost-filesystem1-67-0"
+  "deb-libboost-program-options1-67-0"
+  "deb-libboost-regex1-67-0" {>= "1.67.0-10"}
+  "deb-libboost-serialization1-67-0"
+  "deb-libboost-system1-67-0"
+  "deb-libboost-test1-67-0"
+  "deb-libboost-thread1-67-0"
+  "deb-libc6" {>= "2.15"}
+  "deb-libgcc1" {>= "1-4.0"}
+  "deb-libncurses6" {>= "6"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-libuhd3-13-1" {= "3.13.1.0-3"}
+  "deb-libusb-1-0-0" {>= "2-1.0.8"}
+  "deb-python-any"
+  "deb-python3-any"
+  "deb-python3-requests"
+]
+extra-source "uhd-host_3.13.1.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/u/uhd/uhd-host_3.13.1.0-3_amd64.deb"
+}

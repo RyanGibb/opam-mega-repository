@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add nginx-mod-http-lua-1.24.0-r16.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del nginx-mod-http-lua"]
+]
+depends: [
+  "apk-lua-resty-core" {= "0.1.27-r0"}
+  "apk-luajit" {= "2.1_p20230410-r3"}
+  "apk-musl" {= "1.2.4_git20230717-r4"}
+  "apk-nginx" {= "1.24.0-r16"}
+  "apk-nginx-mod-devel-kit" {= "1.24.0-r16"}
+]
+extra-source "nginx-mod-http-lua-1.24.0-r16.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/nginx-mod-http-lua-1.24.0-r16.apk"
+}

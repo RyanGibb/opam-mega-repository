@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnuradio-dev_3.7.13.4-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnuradio-dev"]
+]
+depends: [
+  "deb-gnuradio" {= "3.7.13.4-4+b1"}
+  "deb-libboost-date-time-dev"
+  "deb-libboost-filesystem-dev"
+  "deb-libboost-program-options-dev"
+  "deb-libboost-system-dev"
+  "deb-libboost-test-dev"
+  "deb-libboost-thread-dev"
+  "deb-libcppunit-dev"
+  "deb-libfftw3-dev"
+  "deb-liblog4cpp5-dev"
+  "deb-libvolk1-dev"
+  "deb-python-dev"
+]
+extra-source "gnuradio-dev_3.7.13.4-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnuradio/gnuradio-dev_3.7.13.4-4+b1_amd64.deb"
+}

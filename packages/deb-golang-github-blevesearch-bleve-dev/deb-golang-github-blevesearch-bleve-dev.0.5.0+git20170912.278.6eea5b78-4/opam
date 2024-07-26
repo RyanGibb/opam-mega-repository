@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-blevesearch-bleve-dev_0.5.0+git20170912.278.6eea5b78-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-blevesearch-bleve-dev"]
+]
+depends: [
+  "deb-golang-github-blevesearch-go-porterstemmer-dev"
+  "deb-golang-github-blevesearch-segment-dev"
+  "deb-golang-github-boltdb-bolt-dev"
+  "deb-golang-github-couchbase-moss-dev"
+  "deb-golang-github-rcrowley-go-metrics-dev"
+  "deb-golang-github-seiflotfy-cuckoofilter-dev"
+  "deb-golang-github-spf13-cobra-dev" {>= "0.0~git20170314"}
+  "deb-golang-github-steveyen-gtreap-dev"
+  "deb-golang-github-syndtr-goleveldb-dev"
+  "deb-golang-github-willf-bitset-dev"
+  "deb-golang-golang-x-net-dev"
+  "deb-golang-golang-x-text-dev"
+  "deb-golang-goprotobuf-dev"
+]
+extra-source "golang-github-blevesearch-bleve-dev_0.5.0+git20170912.278.6eea5b78-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-blevesearch-bleve/golang-github-blevesearch-bleve-dev_0.5.0+git20170912.278.6eea5b78-4_all.deb"
+}

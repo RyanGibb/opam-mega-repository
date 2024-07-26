@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i spamassassin_3.4.2-1+deb10u3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r spamassassin"]
+]
+depends: [
+  "deb-adduser"
+  "deb-init-system-helpers" {>= "1.51"}
+  "deb-libarchive-tar-perl"
+  "deb-libhtml-parser-perl"
+  "deb-libhttp-date-perl"
+  "deb-libmail-dkim-perl"
+  "deb-libnet-dns-perl"
+  "deb-libnetaddr-ip-perl"
+  "deb-libsocket6-perl"
+  "deb-libsys-hostname-long-perl"
+  "deb-lsb-base" {>= "3.0-6"}
+  "deb-perl"
+  ("deb-libwww-perl" | "deb- curl" | "deb- w3m")
+]
+extra-source "spamassassin_3.4.2-1+deb10u3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/spamassassin/spamassassin_3.4.2-1+deb10u3_all.deb"
+}

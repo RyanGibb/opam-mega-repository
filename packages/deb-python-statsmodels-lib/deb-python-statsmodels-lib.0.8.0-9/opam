@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-statsmodels-lib_0.8.0-9_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-statsmodels-lib"]
+]
+depends: [
+  "deb-libc6" {>= "2.27"}
+  "deb-python" {< "2.8"}
+  "deb-python" {>= "2.7~"}
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7~"}
+  "deb-python-numpy"
+  "deb-python-numpy" {>= "1-1.16.0~rc1"}
+]
+extra-source "python-statsmodels-lib_0.8.0-9_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/statsmodels/python-statsmodels-lib_0.8.0-9_amd64.deb"
+}

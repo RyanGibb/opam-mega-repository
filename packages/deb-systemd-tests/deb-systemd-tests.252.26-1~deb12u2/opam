@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i systemd-tests_252.26-1~deb12u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r systemd-tests"]
+]
+depends: [
+  "deb-libacl1" {>= "2.2.23"}
+  "deb-libblkid1" {>= "2.37.2"}
+  "deb-libc6" {>= "2.36"}
+  "deb-libcap2" {>= "1-2.10"}
+  "deb-libcrypt1" {>= "1-4.4.0"}
+  "deb-libdbus-1-3" {>= "1.9.14"}
+  "deb-libelogind0"
+  "deb-libgcrypt20" {>= "1.10.0"}
+  "deb-libglib2-0-0" {>= "2.26.0"}
+  "deb-libkmod2" {>= "15"}
+  "deb-liblz4-1" {>= "0.0~r130"}
+  "deb-liblzma5" {>= "5.1.1alpha+20120614"}
+  "deb-libmount1" {>= "2.30"}
+  "deb-libseccomp2" {>= "2.3.1"}
+  "deb-libselinux1" {>= "3.1~"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libsystemd-shared" {= "252.26-1~deb12u2"}
+  "deb-libudev1" {>= "247"}
+  "deb-libzstd1" {>= "1.5.2"}
+  "deb-python3"
+  "deb-systemd" {= "252.26-1~deb12u2"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "systemd-tests_252.26-1~deb12u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/systemd/systemd-tests_252.26-1~deb12u2_amd64.deb"
+}

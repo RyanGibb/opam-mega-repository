@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libt3window-dev_0.3.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libt3window-dev"]
+]
+depends: [
+  "deb-libncurses-dev"
+  "deb-libt3window0" {= "0.3.2-1"}
+  "deb-libtranscript-dev" {>= "0.2.2"}
+  "deb-libunistring-dev"
+]
+extra-source "libt3window-dev_0.3.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libt/libt3window/libt3window-dev_0.3.2-1_amd64.deb"
+}

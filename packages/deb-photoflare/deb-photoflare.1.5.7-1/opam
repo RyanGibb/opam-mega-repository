@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i photoflare_1.5.7-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r photoflare"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgl1"
+  "deb-libgraphicsmagick++-q16-12" {>= "1.3.26-5~"}
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5gui5" {>= "5.8.0"}
+  "deb-libqt5network5" {>= "5.6"}
+  "deb-libqt5printsupport5" {>= "5.6"}
+  "deb-libqt5widgets5" {>= "5.6"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-qt5-image-formats-plugins"
+]
+extra-source "photoflare_1.5.7-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/photoflare/photoflare_1.5.7-1_amd64.deb"
+}

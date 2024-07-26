@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i psensor-server_1.1.5-1.4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r psensor-server"]
+]
+depends: [
+  "deb-libatasmart4" {>= "0.13"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libgtop-2-0-11" {>= "2.22.3"}
+  "deb-libjs-jquery"
+  "deb-libjson-c5" {>= "0.15"}
+  "deb-libmicrohttpd12" {>= "0.9.50"}
+  "deb-libsensors5" {>= "1-3.5.0"}
+  "deb-psensor-common" {= "1.1.5-1.4"}
+]
+extra-source "psensor-server_1.1.5-1.4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/psensor/psensor-server_1.1.5-1.4_amd64.deb"
+}

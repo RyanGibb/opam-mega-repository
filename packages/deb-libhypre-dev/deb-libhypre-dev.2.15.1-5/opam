@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libhypre-dev_2.15.1-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libhypre-dev"]
+]
+depends: [
+  "deb-libhypre-2-15-1" {= "2.15.1-5"}
+  "deb-libsuperlu-dev"
+  "deb-mpi-default-dev"
+  ("deb-libopenblas-dev" | "deb- libatlas-base-dev" | "deb- libblas-dev" | "deb- libblas-so")
+  ("deb-libopenblas-dev" | "deb- libatlas-base-dev" | "deb- liblapack-dev" | "deb- liblapack-so")
+]
+extra-source "libhypre-dev_2.15.1-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/hypre/libhypre-dev_2.15.1-5_amd64.deb"
+}

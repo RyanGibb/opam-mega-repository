@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-biotools_1.2.12-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-biotools"]
+]
+depends: [
+  "deb-clustalw"
+  "deb-python-any"
+  "deb-python3-any" {>= "3.3.2-2~"}
+  "deb-python3-matplotlib"
+  "deb-python3-numpy"
+  ("deb-ncbi-blast+" | "deb- ncbi-blast+-legacy")
+]
+extra-source "python3-biotools_1.2.12-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-biotools/python3-biotools_1.2.12-3_all.deb"
+}

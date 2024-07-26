@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgnuradio-soapy3.10.5_3.10.5.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgnuradio-soapy3.10.5"]
+]
+depends: [
+  "deb-libc6" {>= "2.32"}
+  "deb-libfmt9" {>= "9.1.0+ds1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-libgnuradio-pmt3-10-5" {>= "3.10.5.1"}
+  "deb-libgnuradio-runtime3-10-5" {>= "3.10.5.1"}
+  "deb-libsoapysdr0-8" {>= "0.8.1"}
+  "deb-libspdlog1-10"
+  "deb-libstdc++6" {>= "11"}
+]
+extra-source "libgnuradio-soapy3.10.5_3.10.5.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnuradio/libgnuradio-soapy3.10.5_3.10.5.1-3_amd64.deb"
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add bind-dnssec-tools-9.18.24-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del bind-dnssec-tools"]
+]
+depends: [
+  "apk-bind-libs" {= "9.18.24-r1"}
+  "apk-bind-tools" {= "9.18.24-r1"}
+  "apk-dns-root-hints" {= "2022062901-r0"}
+  "apk-musl" {= "1.2.4_git20230717-r4"}
+]
+extra-source "bind-dnssec-tools-9.18.24-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/bind-dnssec-tools-9.18.24-r1.apk"
+}

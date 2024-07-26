@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-devise_4.5.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-devise"]
+]
+depends: [
+  "deb-ruby-bcrypt" {>= "3.0.1"}
+  "deb-ruby-orm-adapter" {>= "0.5.0"}
+  "deb-ruby-railties" {>= "3.2.6"}
+  "deb-ruby-responders"
+  "deb-ruby-thor"
+  "deb-ruby-thread-safe"
+  "deb-ruby-warden" {>= "1.2.1"}
+  ("deb-ruby" | "deb- ruby-interpreter")
+]
+extra-source "ruby-devise_4.5.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-devise/ruby-devise_4.5.0-3_all.deb"
+}

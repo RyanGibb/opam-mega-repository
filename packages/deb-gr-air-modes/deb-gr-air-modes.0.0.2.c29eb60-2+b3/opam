@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gr-air-modes_0.0.2.c29eb60-2+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gr-air-modes"]
+]
+depends: [
+  "deb-libair-modes0" {= "0.0.2.c29eb60-2+b3"}
+  "deb-libboost-atomic1-67-0"
+  "deb-libboost-chrono1-67-0"
+  "deb-libboost-date-time1-67-0"
+  "deb-libboost-filesystem1-67-0"
+  "deb-libboost-program-options1-67-0"
+  "deb-libboost-system1-67-0"
+  "deb-libboost-thread1-67-0"
+  "deb-libc6" {>= "2.17"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgnuradio-pmt3-7-13"
+  "deb-libgnuradio-runtime3-7-13"
+  "deb-liblog4cpp5v5"
+  "deb-libpython2-7" {>= "2.7"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-python"
+  "deb-python-qt4"
+  "deb-python-zmq"
+]
+extra-source "gr-air-modes_0.0.2.c29eb60-2+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gr-air-modes/gr-air-modes_0.0.2.c29eb60-2+b3_amd64.deb"
+}

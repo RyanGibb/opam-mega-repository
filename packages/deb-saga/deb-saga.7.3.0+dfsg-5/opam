@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i saga_7.3.0+dfsg-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r saga"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libdxflib3" {>= "3.17.0-3+b1"}
+  "deb-libfftw3-double3" {>= "3.3.5"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libgdal28" {>= "2.0.1"}
+  "deb-libgomp1" {>= "4.9"}
+  "deb-libhpdf-2-3-0" {>= "2.3.0"}
+  "deb-libodbc1" {>= "2.3.1"}
+  "deb-libpq5"
+  "deb-libproj19" {>= "5.1.0"}
+  "deb-libqhull8-0" {>= "2020.1"}
+  "deb-libsaga-api-7-3-0"
+  "deb-libsaga-gdi-7-3-0"
+  "deb-libstdc++6" {>= "9"}
+  "deb-libsvm3" {>= "3.21+ds"}
+  "deb-libvigraimpex11" {>= "1.11.1+dfsg"}
+  "deb-libwxbase3-0-0v5" {>= "3.0.5.1+dfsg"}
+  "deb-libwxgtk3-0-gtk3-0v5" {>= "3.0.5.1+dfsg"}
+  "deb-saga-common" {= "7.3.0+dfsg-5"}
+]
+extra-source "saga_7.3.0+dfsg-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/saga/saga_7.3.0+dfsg-5_amd64.deb"
+}

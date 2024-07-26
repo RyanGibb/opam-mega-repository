@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i awscli_2.9.19-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r awscli"]
+]
+depends: [
+  "deb-groff-base"
+  "deb-python3"
+  "deb-python3-any"
+  "deb-python3-awscrt"
+  "deb-python3-colorama"
+  "deb-python3-cryptography" {< "38.0.5"}
+  "deb-python3-cryptography" {>= "3.3.2"}
+  "deb-python3-dateutil"
+  "deb-python3-distro"
+  "deb-python3-docutils"
+  "deb-python3-jmespath"
+  "deb-python3-prompt-toolkit"
+  "deb-python3-pyasn1"
+  "deb-python3-ruamel-yaml"
+  "deb-python3-urllib3"
+]
+extra-source "awscli_2.9.19-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/awscli/awscli_2.9.19-1_all.deb"
+}

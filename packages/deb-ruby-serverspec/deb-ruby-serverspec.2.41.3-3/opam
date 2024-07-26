@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-serverspec_2.41.3-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-serverspec"]
+]
+depends: [
+  "deb-ruby-multi-json"
+  "deb-ruby-rspec" {>= "3.0"}
+  "deb-ruby-rspec-its"
+  "deb-ruby-specinfra" {>= "2.72"}
+  ("deb-ruby" | "deb- ruby-interpreter")
+]
+extra-source "ruby-serverspec_2.41.3-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-serverspec/ruby-serverspec_2.41.3-3_all.deb"
+}

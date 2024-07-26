@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py3-gv-7.0.5-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py3-gv"]
+]
+depends: [
+  "apk-graphviz-libs" {= "7.0.5-r0"}
+  "apk-libgcc" {= "12.2.1_git20220924-r4"}
+  "apk-libstdc++" {= "12.2.1_git20220924-r4"}
+  "apk-musl" {= "1.2.3-r5"}
+  "apk-python3" {= "3.10.14-r1"}
+]
+extra-source "py3-gv-7.0.5-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-gv-7.0.5-r0.apk"
+}

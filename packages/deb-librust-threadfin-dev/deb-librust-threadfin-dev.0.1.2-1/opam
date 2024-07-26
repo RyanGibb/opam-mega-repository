@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-threadfin-dev_0.1.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-threadfin-dev"]
+]
+depends: [
+  "deb-librust-crossbeam-channel-0-5+default-dev"
+  "deb-librust-num-cpus-1+default-dev"
+  "deb-librust-once-cell-1+default-dev"
+  "deb-librust-waker-fn-1+default-dev"
+]
+extra-source "librust-threadfin-dev_0.1.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-threadfin/librust-threadfin-dev_0.1.2-1_all.deb"
+}

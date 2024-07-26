@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libqalculate20_2.8.2-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libqalculate20"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgmp10"
+  "deb-libicu67" {>= "67.1-1~"}
+  "deb-libmpfr6" {>= "4.0.0"}
+  "deb-libqalculate20-data"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libxml2" {>= "2.7.4"}
+]
+conflicts: [
+  "deb-libqalculate14"
+  "deb-libqalculate5"
+  "deb-libqalculate5v5"
+]
+extra-source "libqalculate20_2.8.2-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libq/libqalculate/libqalculate20_2.8.2-1.1_amd64.deb"
+}

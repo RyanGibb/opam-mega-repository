@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libotbmonteverdicore-7.2-1_7.2.0+dfsg-1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libotbmonteverdicore-7.2-1"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgdal28" {>= "1.10.0"}
+  "deb-libinsighttoolkit4-13" {>= "4.13.3withdata-dfsg1"}
+  "deb-libotbapplicationengine-7-2-1" {>= "5.2.0"}
+  "deb-libotbcarto-7-2-1" {>= "5.2.0"}
+  "deb-libotbcommon-7-2-1" {>= "7.0.0"}
+  "deb-libotbgdaladapters-7-2-1" {>= "7.1.0"}
+  "deb-libotbimagebase-7-2-1" {>= "7.0.0"}
+  "deb-libotbimageio-7-2-1" {>= "7.0.0"}
+  "deb-libotbiogdal-7-2-1" {>= "5.4.0"}
+  "deb-libotbmetadata-7-2-1" {>= "7.1.0"}
+  "deb-libotbossimadapters-7-2-1" {>= "5.6.0"}
+  "deb-libotbstreaming-7-2-1" {>= "6.6.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-otb-i18n" {>= "7.2.0+dfsg-1"}
+]
+extra-source "libotbmonteverdicore-7.2-1_7.2.0+dfsg-1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/otb/libotbmonteverdicore-7.2-1_7.2.0+dfsg-1+b3_amd64.deb"
+}

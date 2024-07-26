@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i nut-monitor_2.7.4-8_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r nut-monitor"]
+]
+depends: [
+  "deb-python-any"
+  "deb-python-glade2"
+  "deb-python-gobject-2"
+  "deb-python-gtk2"
+  "deb-python-nut"
+]
+extra-source "nut-monitor_2.7.4-8_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/nut/nut-monitor_2.7.4-8_all.deb"
+}

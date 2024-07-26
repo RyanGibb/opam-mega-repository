@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fcitx-skk_0.1.4-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fcitx-skk"]
+]
+depends: [
+  "deb-fcitx-bin" {>= "1-4.2.8"}
+  "deb-fcitx-data" {>= "1-4.2.8"}
+  "deb-fcitx-modules"
+  "deb-libc6" {>= "2.14"}
+  "deb-libfcitx-config4" {>= "4.2.7"}
+  "deb-libfcitx-qt5-1" {>= "1.0.0"}
+  "deb-libfcitx-utils0" {>= "4.2.7"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-libskk0" {>= "0.0.10"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-skkdic"
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+]
+extra-source "fcitx-skk_0.1.4-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fcitx-skk/fcitx-skk_0.1.4-2_amd64.deb"
+}

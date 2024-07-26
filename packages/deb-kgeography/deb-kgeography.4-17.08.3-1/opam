@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kgeography_4:17.08.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kgeography"]
+]
+depends: [
+  "deb-kgeography-data" {>= "4-17.08.3-1"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libkf5configcore5" {>= "4.98.0"}
+  "deb-libkf5configgui5" {>= "4.97.0"}
+  "deb-libkf5configwidgets5" {>= "4.96.0"}
+  "deb-libkf5coreaddons5" {>= "5.2.0"}
+  "deb-libkf5crash5" {>= "5.15.0"}
+  "deb-libkf5i18n5" {>= "4.97.0"}
+  "deb-libkf5iconthemes5" {>= "4.96.0"}
+  "deb-libkf5itemviews5" {>= "4.96.0"}
+  "deb-libkf5widgetsaddons5" {>= "4.96.0"}
+  "deb-libkf5xmlgui5" {>= "4.98.0"}
+  "deb-libqt5core5a" {>= "5.9.0~beta"}
+  "deb-libqt5gui5" {>= "5.7.0"}
+  "deb-libqt5widgets5" {>= "5.4"}
+  "deb-libqt5xml5" {>= "5.4"}
+  "deb-libstdc++6" {>= "4.1.1"}
+]
+extra-source "kgeography_4:17.08.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kgeography/kgeography_17.08.3-1_amd64.deb"
+}

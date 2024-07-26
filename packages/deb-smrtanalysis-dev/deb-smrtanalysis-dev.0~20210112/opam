@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i smrtanalysis-dev_0~20210112_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r smrtanalysis-dev"]
+]
+depends: [
+  "deb-libpbbam-dev"
+  "deb-libpbseq-dev"
+  "deb-python3-pbcommand"
+  "deb-python3-pbconsensuscore"
+  "deb-python3-pbcore"
+]
+extra-source "smrtanalysis-dev_0~20210112_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/smrtanalysis/smrtanalysis-dev_0~20210112_amd64.deb"
+}

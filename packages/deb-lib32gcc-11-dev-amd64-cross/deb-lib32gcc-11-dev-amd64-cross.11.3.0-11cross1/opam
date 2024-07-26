@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lib32gcc-11-dev-amd64-cross_11.3.0-11cross1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lib32gcc-11-dev-amd64-cross"]
+]
+depends: [
+  "deb-gcc-11-cross-base" {>= "11.3.0-11"}
+  "deb-lib32asan6-amd64-cross" {>= "11.3.0-11cross1"}
+  "deb-lib32atomic1-amd64-cross" {>= "11.3.0-11cross1"}
+  "deb-lib32gcc-s1-amd64-cross" {>= "11.3.0-11cross1"}
+  "deb-lib32gomp1-amd64-cross" {>= "11.3.0-11cross1"}
+  "deb-lib32itm1-amd64-cross" {>= "11.3.0-11cross1"}
+  "deb-lib32quadmath0-amd64-cross" {>= "11.3.0-11cross1"}
+  "deb-lib32ubsan1-amd64-cross" {>= "11.3.0-11cross1"}
+  "deb-libx32asan6-amd64-cross" {>= "11.3.0-11cross1"}
+  "deb-libx32atomic1-amd64-cross" {>= "11.3.0-11cross1"}
+  "deb-libx32gcc-s1-amd64-cross" {>= "11.3.0-11cross1"}
+  "deb-libx32gomp1-amd64-cross" {>= "11.3.0-11cross1"}
+  "deb-libx32itm1-amd64-cross" {>= "11.3.0-11cross1"}
+  "deb-libx32quadmath0-amd64-cross" {>= "11.3.0-11cross1"}
+  "deb-libx32ubsan1-amd64-cross" {>= "11.3.0-11cross1"}
+]
+extra-source "lib32gcc-11-dev-amd64-cross_11.3.0-11cross1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gcc-11-cross/lib32gcc-11-dev-amd64-cross_11.3.0-11cross1_all.deb"
+}

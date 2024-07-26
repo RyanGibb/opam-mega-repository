@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i steptalk_0.10.0-6+b10_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r steptalk"]
+]
+depends: [
+  "deb-gnustep-base-runtime" {>= "1.28.0"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgnustep-base1-28" {>= "1.28.0"}
+  "deb-libobjc4" {>= "4.2.1"}
+  "deb-libreadline8" {>= "6.0"}
+  "deb-libsteptalk0" {= "0.10.0-6+b10"}
+]
+extra-source "steptalk_0.10.0-6+b10_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/steptalk/steptalk_0.10.0-6+b10_amd64.deb"
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i apertium-recursive_1.1.2-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r apertium-recursive"]
+]
+depends: [
+  "deb-libapertium3" {>= "3.8.3"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libicu72" {>= "72.1~rc-1~"}
+  "deb-liblttoolbox3" {>= "3.7.1"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libxml2" {>= "2.7.4"}
+]
+extra-source "apertium-recursive_1.1.2-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/apertium-recursive/apertium-recursive_1.1.2-1+b1_amd64.deb"
+}

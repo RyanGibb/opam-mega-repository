@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-rio-orphans-dev_0.1.1.0-2+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-rio-orphans-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-exceptions-dev"
+  "deb-libghc-fast-logger-dev"
+  "deb-libghc-monad-control-dev"
+  "deb-libghc-monad-logger-dev"
+  "deb-libghc-resourcet-dev"
+  "deb-libghc-rio-dev"
+  "deb-libghc-transformers-base-dev"
+  "deb-libgmp10"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libghc-rio-orphans-dev_0.1.1.0-2+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-rio-orphans/libghc-rio-orphans-dev_0.1.1.0-2+b3_amd64.deb"
+}

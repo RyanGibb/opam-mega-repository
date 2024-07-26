@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libeb16_4.4.3-14_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libeb16"]
+]
+depends: [
+  "deb-libc6" {>= "2.15"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+conflicts: [
+  "deb-eb-utils" {<= "4.3-1"}
+  "deb-libeb"
+  "deb-libeb12"
+  "deb-libeb13"
+  "deb-libeb4"
+  "deb-libeb5"
+  "deb-libeb6"
+  "deb-libeb7"
+]
+extra-source "libeb16_4.4.3-14_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/eb/libeb16_4.4.3-14_amd64.deb"
+}

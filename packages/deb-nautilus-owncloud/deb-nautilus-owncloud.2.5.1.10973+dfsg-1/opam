@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i nautilus-owncloud_2.5.1.10973+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r nautilus-owncloud"]
+]
+depends: [
+  "deb-nautilus"
+  "deb-owncloud-client" {< "2.5.1.10973+dfsg-1.1~"}
+  "deb-owncloud-client" {>= "2.5.1.10973+dfsg-1"}
+  "deb-owncloud-client-data"
+  "deb-python-nautilus"
+  "deb-python3-any"
+]
+extra-source "nautilus-owncloud_2.5.1.10973+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/owncloud-client/nautilus-owncloud_2.5.1.10973+dfsg-1_all.deb"
+}

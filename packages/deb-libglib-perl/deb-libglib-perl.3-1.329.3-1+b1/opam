@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libglib-perl_3:1.329.3-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libglib-perl"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libextutils-depends-perl"
+  "deb-libextutils-pkgconfig-perl"
+  "deb-libglib2-0-0" {>= "2.41.1"}
+  "deb-perl" {>= "5.32.0-4"}
+  "deb-perl-base"
+]
+extra-source "libglib-perl_3:1.329.3-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libg/libglib-perl/libglib-perl_1.329.3-1+b1_amd64.deb"
+}

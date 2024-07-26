@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ros-core-python-dev_1.12_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ros-core-python-dev"]
+]
+depends: [
+  "deb-python-actionlib-msgs"
+  "deb-python-diagnostic-msgs"
+  "deb-python-geometry-msgs"
+  "deb-python-nav-msgs"
+  "deb-python-roscpp-msg"
+  "deb-python-rosgraph-msgs"
+  "deb-python-roslib"
+  "deb-python-roslz4"
+  "deb-python-rospy"
+  "deb-python-sensor-msgs"
+  "deb-python-shape-msgs"
+  "deb-python-std-msgs"
+  "deb-python-std-srvs"
+  "deb-python-stereo-msgs"
+  "deb-python-topic-tools"
+  "deb-python-trajectory-msgs"
+  "deb-python-visualization-msgs"
+  "deb-ros-core-dev"
+]
+extra-source "ros-core-python-dev_1.12_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ros-metapackages/ros-core-python-dev_1.12_all.deb"
+}

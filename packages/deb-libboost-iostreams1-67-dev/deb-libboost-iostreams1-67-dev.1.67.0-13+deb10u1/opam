@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libboost-iostreams1.67-dev_1.67.0-13+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libboost-iostreams1.67-dev"]
+]
+depends: [
+  "deb-libboost-iostreams1-67-0" {= "1.67.0-13+deb10u1"}
+  "deb-libboost-regex1-67-dev" {= "1.67.0-13+deb10u1"}
+  "deb-libboost1-67-dev" {= "1.67.0-13+deb10u1"}
+]
+conflicts: [
+  "deb-libboost-iostreams1-42-dev"
+  "deb-libboost-iostreams1-46-dev"
+  "deb-libboost-iostreams1-48-dev"
+  "deb-libboost-iostreams1-49-dev"
+  "deb-libboost-iostreams1-50-dev"
+  "deb-libboost-iostreams1-52-dev"
+  "deb-libboost-iostreams1-53-dev"
+  "deb-libboost-iostreams1-54-dev"
+  "deb-libboost-iostreams1-55-dev"
+  "deb-libboost-iostreams1-57-dev"
+  "deb-libboost-iostreams1-58-dev"
+  "deb-libboost-iostreams1-60-dev"
+  "deb-libboost-iostreams1-61-dev"
+  "deb-libboost-iostreams1-62-dev"
+  "deb-libboost-iostreams1-63-dev"
+  "deb-libboost-iostreams1-65-dev"
+]
+extra-source "libboost-iostreams1.67-dev_1.67.0-13+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/boost1.67/libboost-iostreams1.67-dev_1.67.0-13+deb10u1_amd64.deb"
+}

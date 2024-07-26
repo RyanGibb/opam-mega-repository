@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i liboauth-lite2-perl_0.11-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r liboauth-lite2-perl"]
+]
+depends: [
+  "deb-libclass-accessor-perl"
+  "deb-libclass-errorhandler-perl"
+  "deb-libdata-dump-perl"
+  "deb-libdigest-sha-perl"
+  "deb-libhash-multivalue-perl"
+  "deb-libio-string-perl"
+  "deb-libjson-xs-perl"
+  "deb-libparams-validate-perl"
+  "deb-libplack-perl"
+  "deb-libscalar-list-utils-perl"
+  "deb-libstring-random-perl"
+  "deb-libtry-tiny-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-libxml-libxml-perl"
+  "deb-perl-any"
+]
+extra-source "liboauth-lite2-perl_0.11-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libo/liboauth-lite2-perl/liboauth-lite2-perl_0.11-2_all.deb"
+}

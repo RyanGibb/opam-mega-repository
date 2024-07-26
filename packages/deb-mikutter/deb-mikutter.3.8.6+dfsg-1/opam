@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mikutter_3.8.6+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mikutter"]
+]
+depends: [
+  "deb-ruby-addressable" {>= "2.3"}
+  "deb-ruby-cairo"
+  "deb-ruby-delayer" {< "0.1"}
+  "deb-ruby-delayer" {>= "0.0"}
+  "deb-ruby-delayer-deferred" {< "3.0"}
+  "deb-ruby-delayer-deferred" {>= "2.0"}
+  "deb-ruby-diva" {< "2.0"}
+  "deb-ruby-diva" {>= "0.3.1"}
+  "deb-ruby-gettext" {>= "3.2.9"}
+  "deb-ruby-gtk2" {>= "3.2.0"}
+  "deb-ruby-hmac" {< "0.5"}
+  "deb-ruby-hmac" {>= "0.4"}
+  "deb-ruby-httpclient"
+  "deb-ruby-instance-storage"
+  "deb-ruby-json" {>= "1.8"}
+  "deb-ruby-locale"
+  "deb-ruby-memoist" {< "0.17"}
+  "deb-ruby-memoist" {>= "0.16"}
+  "deb-ruby-moneta"
+  "deb-ruby-nokogiri"
+  "deb-ruby-oauth" {>= "0.5.1"}
+  "deb-ruby-pluggaloid" {< "2.0"}
+  "deb-ruby-pluggaloid" {>= "1.1.1"}
+  "deb-ruby-text"
+  "deb-ruby-twitter-text" {< "2.1.0"}
+  "deb-ruby-typed-array" {< "0.2"}
+  "deb-ruby-typed-array" {>= "0.1"}
+  ("deb-ruby" | "deb- ruby-interpreter")
+]
+extra-source "mikutter_3.8.6+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mikutter/mikutter_3.8.6+dfsg-1_all.deb"
+}

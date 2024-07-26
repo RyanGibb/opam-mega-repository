@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-devtools_2.4.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-devtools"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.1-3"}
+  "deb-r-cran-cli" {>= "3.3.0"}
+  "deb-r-cran-desc" {>= "1.4.1"}
+  "deb-r-cran-ellipsis" {>= "0.3.2"}
+  "deb-r-cran-fs" {>= "1.5.2"}
+  "deb-r-cran-lifecycle" {>= "1.0.1"}
+  "deb-r-cran-memoise" {>= "2.0.1"}
+  "deb-r-cran-miniui" {>= "0.1.1.1"}
+  "deb-r-cran-pkgbuild" {>= "1.3.1"}
+  "deb-r-cran-pkgdown" {>= "2.0.6"}
+  "deb-r-cran-pkgload" {>= "1.3.0"}
+  "deb-r-cran-profvis" {>= "0.3.7"}
+  "deb-r-cran-rcmdcheck" {>= "1.4.0"}
+  "deb-r-cran-remotes" {>= "2.4.2"}
+  "deb-r-cran-rlang" {>= "1.0.4"}
+  "deb-r-cran-roxygen2" {>= "7.2.1"}
+  "deb-r-cran-rversions" {>= "2.1.1"}
+  "deb-r-cran-sessioninfo" {>= "1.2.2"}
+  "deb-r-cran-testthat" {>= "3.1.5"}
+  "deb-r-cran-urlchecker" {>= "1.0.1"}
+  "deb-r-cran-usethis" {>= "2.1.6"}
+  "deb-r-cran-withr" {>= "2.5.0"}
+]
+extra-source "r-cran-devtools_2.4.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-devtools/r-cran-devtools_2.4.5-1_all.deb"
+}

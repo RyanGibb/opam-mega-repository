@@ -1,0 +1,51 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i khelpcenter_4:20.12.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r khelpcenter"]
+]
+depends: [
+  "deb-kdoctools5"
+  "deb-kinit"
+  "deb-kio"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgrantlee-templates5" {>= "5.0.0"}
+  "deb-libkf5archive5" {>= "5.64.0~"}
+  "deb-libkf5bookmarks5" {>= "5.64.0~"}
+  "deb-libkf5codecs5" {>= "4.96.0"}
+  "deb-libkf5completion5" {>= "4.97.0"}
+  "deb-libkf5configcore5" {>= "5.64.0~"}
+  "deb-libkf5configgui5" {>= "5.64.0~"}
+  "deb-libkf5configwidgets5" {>= "4.96.0"}
+  "deb-libkf5coreaddons5" {>= "5.64.0~"}
+  "deb-libkf5dbusaddons5" {>= "5.64.0~"}
+  "deb-libkf5doctools5" {>= "5.69.0"}
+  "deb-libkf5i18n5" {>= "5.64.0~"}
+  "deb-libkf5khtml5" {>= "5.64.0~"}
+  "deb-libkf5kiocore5" {>= "5.69.0"}
+  "deb-libkf5kiogui5" {>= "5.74.0"}
+  "deb-libkf5kiowidgets5" {>= "5.70.0"}
+  "deb-libkf5parts5" {>= "4.96.0"}
+  "deb-libkf5service-bin"
+  "deb-libkf5service5" {>= "5.64.0~"}
+  "deb-libkf5widgetsaddons5" {>= "4.96.0"}
+  "deb-libkf5windowsystem5" {>= "5.64.0~"}
+  "deb-libkf5xmlgui5" {>= "4.98.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.12.0~"}
+  "deb-libqt5widgets5" {>= "5.14.1"}
+  "deb-libqt5xml5" {>= "5.12.0~"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libxapian30" {>= "1.4.14~"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-perl-any"
+  ("deb-libqt5gui5" {>= "5.12.0~"} | "deb- libqt5gui5-gles" {>= "5.12.0~"})
+]
+conflicts: [
+  "deb-dhelp" {< "0.6.26"}
+]
+extra-source "khelpcenter_4:20.12.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/khelpcenter/khelpcenter_20.12.0-1_amd64.deb"
+}

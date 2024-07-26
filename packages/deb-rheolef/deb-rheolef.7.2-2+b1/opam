@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i rheolef_7.2-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r rheolef"]
+]
+depends: [
+  "deb-libboost-iostreams1-74-0" {>= "1.74.0"}
+  "deb-libboost-mpi1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcholmod3" {>= "1-4.5.2"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-libmumps-ptscotch-5-5" {>= "5.5.1"}
+  "deb-libopenmpi3" {>= "4.1.4"}
+  "deb-libptscotch-7-0" {>= "7.0.1"}
+  "deb-librheolef-dev" {= "7.2-2+b1"}
+  "deb-librheolef1" {>= "7.2"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libumfpack5" {>= "1-4.5.2"}
+  "deb-rheolef-doc" {= "7.2-2"}
+]
+extra-source "rheolef_7.2-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rheolef/rheolef_7.2-2+b1_amd64.deb"
+}

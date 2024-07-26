@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i opendnssec-enforcer-sqlite3_1:2.1.3-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r opendnssec-enforcer-sqlite3"]
+]
+depends: [
+  "deb-libc6" {>= "2.15"}
+  "deb-libdbd-sqlite3-perl"
+  "deb-libgcc1" {>= "1-4.2"}
+  "deb-libldns2" {>= "1.6.11"}
+  "deb-libsqlite3-0" {>= "3.6.0"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-opendnssec-common" {= "1-2.1.3-2"}
+  "deb-sqlite3"
+]
+conflicts: [
+  "deb-opendnssec-enforcer-backend"
+]
+extra-source "opendnssec-enforcer-sqlite3_1:2.1.3-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/opendnssec/opendnssec-enforcer-sqlite3_2.1.3-2_amd64.deb"
+}

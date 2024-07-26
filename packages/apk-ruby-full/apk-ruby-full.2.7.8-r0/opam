@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ruby-full-2.7.8-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ruby-full"]
+]
+depends: [
+  "apk-ruby" {= "2.7.8-r0"}
+  "apk-ruby-bigdecimal" {= "2.7.8-r0"}
+  "apk-ruby-bundler" {= "2.2.20-r0"}
+  "apk-ruby-dbg" {= "2.7.8-r0"}
+  "apk-ruby-etc" {= "2.7.8-r0"}
+  "apk-ruby-fiddle" {= "2.7.8-r0"}
+  "apk-ruby-gdbm" {= "2.7.8-r0"}
+  "apk-ruby-io-console" {= "2.7.8-r0"}
+  "apk-ruby-irb" {= "2.7.8-r0"}
+  "apk-ruby-json" {= "2.7.8-r0"}
+  "apk-ruby-minitest" {= "2.7.8-r0"}
+  "apk-ruby-net-telnet" {= "2.7.8-r0"}
+  "apk-ruby-power_assert" {= "2.7.8-r0"}
+  "apk-ruby-rake" {= "2.7.8-r0"}
+  "apk-ruby-rdoc" {= "2.7.8-r0"}
+  "apk-ruby-sdbm" {= "2.7.8-r0"}
+  "apk-ruby-test-unit" {= "2.7.8-r0"}
+  "apk-ruby-webrick" {= "2.7.8-r0"}
+  "apk-ruby-xmlrpc" {= "2.7.8-r0"}
+]
+extra-source "ruby-full-2.7.8-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/ruby-full-2.7.8-r0.apk"
+}

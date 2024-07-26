@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkwin4-effect-builtins1_4:5.14.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkwin4-effect-builtins1"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libepoxy0" {>= "1.0"}
+  "deb-libkf5configcore5" {>= "4.98.0"}
+  "deb-libkf5configgui5" {>= "4.97.0"}
+  "deb-libkf5configwidgets5" {>= "4.96.0"}
+  "deb-libkf5globalaccel-bin"
+  "deb-libkf5globalaccel5" {>= "4.96.0"}
+  "deb-libkf5i18n5" {>= "4.97.0"}
+  "deb-libkf5iconthemes5" {>= "4.96.0"}
+  "deb-libkf5notifications5" {>= "5.8.0+git20150317.0114+15.04"}
+  "deb-libkf5plasma5" {>= "5.53~"}
+  "deb-libkf5waylandserver5" {>= "4-5.5.0"}
+  "deb-libkf5windowsystem5" {>= "5.25.0"}
+  "deb-libkwineffects11" {= "4-5.14.5-1"}
+  "deb-libkwinglutils11" {>= "4-5.13.1"}
+  "deb-libkwinxrenderutils11" {>= "4-5.1.95+git20150122"}
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5dbus5" {>= "5.11.0~"}
+  "deb-libqt5gui5" {>= "5.11.0~"}
+  "deb-libqt5qml5" {>= "5.0.2"}
+  "deb-libqt5quick5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.11.0~"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libxcb-image0" {>= "0.2"}
+  "deb-libxcb-render0"
+  "deb-libxcb1"
+]
+extra-source "libkwin4-effect-builtins1_4:5.14.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kwin/libkwin4-effect-builtins1_5.14.5-1_amd64.deb"
+}

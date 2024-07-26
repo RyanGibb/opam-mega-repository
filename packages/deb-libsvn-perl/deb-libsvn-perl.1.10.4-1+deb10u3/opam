@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsvn-perl_1.10.4-1+deb10u3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsvn-perl"]
+]
+depends: [
+  "deb-libapr1" {>= "1.2.7"}
+  "deb-libaprutil1" {>= "1.2.7+dfsg"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libperl5-28" {>= "5.28.0"}
+  "deb-libsvn1" {>= "1.10"}
+  "deb-perl" {>= "5.28.1-6+deb10u1"}
+  "deb-perl-base"
+]
+extra-source "libsvn-perl_1.10.4-1+deb10u3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/subversion/libsvn-perl_1.10.4-1+deb10u3_amd64.deb"
+}

@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i nemo-python_3.8.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r nemo-python"]
+]
+depends: [
+  "deb-gir1-2-nemo-3-0" {>= "3.8"}
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.4"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.16.0"}
+  "deb-libgtk-3-0" {>= "3.0.0"}
+  "deb-libnemo-extension1" {>= "2.6.5"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpython2-7" {>= "2.7"}
+]
+conflicts: [
+  "deb-python-nemo"
+]
+extra-source "nemo-python_3.8.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/nemo-python/nemo-python_3.8.0-2_amd64.deb"
+}

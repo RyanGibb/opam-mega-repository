@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i felix-latin_2.0-14_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r felix-latin"]
+]
+depends: [
+  "deb-djvulibre-bin"
+  "deb-felix-latin-data"
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5widgets5" {>= "5.2.0~alpha1"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-qt5-image-formats-plugins"
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+]
+extra-source "felix-latin_2.0-14_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/felix-latin/felix-latin_2.0-14_amd64.deb"
+}

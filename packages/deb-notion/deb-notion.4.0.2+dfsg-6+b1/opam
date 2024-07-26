@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i notion_4.0.2+dfsg-6+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r notion"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libice6" {>= "1-1.0.0"}
+  "deb-liblua5-3-0"
+  "deb-libreadline8" {>= "6.0"}
+  "deb-libsm6"
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxft2" {> "2.1.1"}
+  "deb-libxinerama1" {>= "2-1.1.4"}
+  "deb-libxrandr2" {>= "2-1.2.0"}
+  "deb-menu" {>= "2.1.9"}
+  "deb-x11-utils"
+  ("deb-xterm" | "deb- x-terminal-emulator")
+]
+extra-source "notion_4.0.2+dfsg-6+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/notion/notion_4.0.2+dfsg-6+b1_amd64.deb"
+}

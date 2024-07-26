@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add freeswitch-1.10.11-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del freeswitch"]
+]
+depends: [
+  "apk-lame-libs" {= "3.100-r5"}
+  "apk-ldns" {= "1.8.3-r2"}
+  "apk-libcrypto3" {= "3.3.1-r3"}
+  "apk-libcurl" {= "8.9.0-r0"}
+  "apk-libedit" {= "20240517.3.1-r0"}
+  "apk-libgcc" {= "13.2.1_git20240309-r0"}
+  "apk-libks" {= "1.8.2-r1"}
+  "apk-libncursesw" {= "6.4_p20240420-r0"}
+  "apk-libpq" {= "16.3-r0"}
+  "apk-libshout" {= "2.4.6-r3"}
+  "apk-libsndfile" {= "1.2.2-r0"}
+  "apk-libssl3" {= "3.3.1-r3"}
+  "apk-libstdc++" {= "13.2.1_git20240309-r0"}
+  "apk-libuuid" {= "2.40.1-r1"}
+  "apk-lua5-3-libs" {= "5.3.6-r6"}
+  "apk-mpg123-libs" {= "1.32.6-r0"}
+  "apk-musl" {= "1.2.5-r0"}
+  "apk-opus" {= "1.5.2-r0"}
+  "apk-pcre" {= "8.45-r3"}
+  "apk-portaudio" {= "19.7.0-r2"}
+  "apk-python3" {>= "3.12"}
+  "apk-sofia-sip" {= "1.13.17-r0"}
+  "apk-spandsp3" {= "0_git20201102-r3"}
+  "apk-speex" {= "1.2.1-r2"}
+  "apk-speexdsp" {= "1.2.1-r2"}
+  "apk-sqlite-libs" {= "3.45.3-r1"}
+  "apk-unixodbc" {= "2.3.12-r0"}
+  ("apk-busybox-binsh" {= "1.36.1-r29"} | "apk-dash-binsh" {= "0.5.12-r2"} | "apk-yash-binsh" {= "2.56.1-r1"})
+]
+extra-source "freeswitch-1.10.11-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/freeswitch-1.10.11-r0.apk"
+}

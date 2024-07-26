@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openvswitch-common_3.1.0-2+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openvswitch-common"]
+]
+depends: [
+  "deb-libbpf1" {>= "1-0.7.0"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcap-ng0" {>= "0.7.9"}
+  "deb-libnuma1" {>= "2.0.11"}
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libunbound8" {>= "1.8.0"}
+  "deb-libxdp1" {>= "1.2.9~"}
+  "deb-openssl"
+  "deb-python3-any"
+]
+extra-source "openvswitch-common_3.1.0-2+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openvswitch/openvswitch-common_3.1.0-2+deb12u1_amd64.deb"
+}

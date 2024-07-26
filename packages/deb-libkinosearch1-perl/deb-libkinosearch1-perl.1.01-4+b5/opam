@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkinosearch1-perl_1.01-4+b5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkinosearch1-perl"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-liblingua-stem-snowball-perl"
+  "deb-liblingua-stopwords-perl"
+  "deb-perl" {>= "5.32.0-4"}
+  "deb-perl-base"
+]
+extra-source "libkinosearch1-perl_1.01-4+b5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libk/libkinosearch1-perl/libkinosearch1-perl_1.01-4+b5_amd64.deb"
+}

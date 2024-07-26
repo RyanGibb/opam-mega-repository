@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-qutip_4.5.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-qutip"]
+]
+depends: [
+  "deb-cython3" {>= "0.21"}
+  "deb-g++"
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libgomp1" {>= "4.9"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-python3" {< "3.10"}
+  "deb-python3" {>= "3.9~"}
+  "deb-python3-any"
+  "deb-python3-dev"
+  "deb-python3-matplotlib"
+  "deb-python3-numpy" {>= "1.12"}
+  "deb-python3-scipy" {>= "1.0"}
+]
+extra-source "python3-qutip_4.5.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qutip/python3-qutip_4.5.3-1_amd64.deb"
+}

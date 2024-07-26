@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tictactoe-ng_0.3.2.1-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tictactoe-ng"]
+]
+depends: [
+  "deb-python-any" {>= "2.7.5-5~"}
+  "deb-python-cairo" {>= "1.4.12"}
+  "deb-python-dbus" {>= "0.83"}
+  "deb-python-gobject" {>= "2.16.1"}
+  "deb-python-gtk2" {>= "2.14.1"}
+  "deb-python-telepathy" {>= "0.15.7"}
+  "deb-python-xdg" {>= "0.15"}
+]
+extra-source "tictactoe-ng_0.3.2.1-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tictactoe-ng/tictactoe-ng_0.3.2.1-1.1_all.deb"
+}

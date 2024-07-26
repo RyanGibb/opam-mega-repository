@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libepc-dev_0.4.6-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libepc-dev"]
+]
+depends: [
+  "deb-libavahi-client-dev" {>= "0.6"}
+  "deb-libavahi-glib-dev" {>= "0.6"}
+  "deb-libepc-1-0-3" {= "0.4.6-2+b1"}
+  "deb-libgnutls28-dev"
+  "deb-libsoup2-4-dev"
+]
+extra-source "libepc-dev_0.4.6-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libe/libepc/libepc-dev_0.4.6-2+b1_amd64.deb"
+}

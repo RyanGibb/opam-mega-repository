@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add python3-3.9.17-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del python3"]
+]
+depends: [
+  "apk-expat" {= "2.5.0-r0"}
+  "apk-gdbm" {= "1.19-r0"}
+  "apk-libbz2" {= "1.0.8-r1"}
+  "apk-libcrypto1-1" {= "1.1.1t-r2"}
+  "apk-libffi" {= "3.3-r2"}
+  "apk-libssl1-1" {= "1.1.1t-r2"}
+  "apk-mpdecimal" {= "2.5.1-r1"}
+  "apk-musl" {= "1.2.2-r5"}
+  "apk-ncurses-libs" {= "6.2_p20210612-r1"}
+  "apk-readline" {= "8.1.0-r0"}
+  "apk-sqlite-libs" {= "3.35.5-r0"}
+  "apk-xz-libs" {= "5.2.5-r1"}
+  "apk-zlib" {= "1.2.12-r3"}
+]
+extra-source "python3-3.9.17-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/python3-3.9.17-r0.apk"
+}

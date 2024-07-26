@@ -1,0 +1,41 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i haskell-platform-doc_2014.2.0.0.debian8_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r haskell-platform-doc"]
+]
+depends: [
+  "deb-ghc-doc"
+  "deb-libghc-async-doc"
+  "deb-libghc-attoparsec-doc"
+  "deb-libghc-case-insensitive-doc"
+  "deb-libghc-fgl-doc"
+  "deb-libghc-gluraw-doc"
+  "deb-libghc-glut-doc"
+  "deb-libghc-hashable-doc"
+  "deb-libghc-haskell-src-doc"
+  "deb-libghc-html-doc"
+  "deb-libghc-http-doc"
+  "deb-libghc-hunit-doc"
+  "deb-libghc-network-doc"
+  "deb-libghc-opengl-doc"
+  "deb-libghc-openglraw-doc"
+  "deb-libghc-parallel-doc"
+  "deb-libghc-primitive-doc"
+  "deb-libghc-quickcheck2-doc"
+  "deb-libghc-random-doc"
+  "deb-libghc-regex-base-doc"
+  "deb-libghc-regex-compat-doc"
+  "deb-libghc-regex-posix-doc"
+  "deb-libghc-split-doc"
+  "deb-libghc-syb-doc"
+  "deb-libghc-transformers-doc"
+  "deb-libghc-unordered-containers-doc"
+  "deb-libghc-vector-doc"
+  "deb-libghc-xhtml-doc"
+  "deb-libghc-zlib-doc"
+]
+extra-source "haskell-platform-doc_2014.2.0.0.debian8_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-platform/haskell-platform-doc_2014.2.0.0.debian8_all.deb"
+}

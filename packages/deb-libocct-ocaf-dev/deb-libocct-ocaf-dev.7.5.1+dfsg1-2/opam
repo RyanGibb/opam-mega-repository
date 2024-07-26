@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libocct-ocaf-dev_7.5.1+dfsg1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libocct-ocaf-dev"]
+]
+depends: [
+  "deb-libocct-foundation-dev" {< "7.5.1+dfsg1-2+1~"}
+  "deb-libocct-foundation-dev" {>= "7.5.1+dfsg1-2"}
+  "deb-libocct-modeling-algorithms-dev" {< "7.5.1+dfsg1-2+1~"}
+  "deb-libocct-modeling-algorithms-dev" {>= "7.5.1+dfsg1-2"}
+  "deb-libocct-modeling-data-dev" {< "7.5.1+dfsg1-2+1~"}
+  "deb-libocct-modeling-data-dev" {>= "7.5.1+dfsg1-2"}
+  "deb-libocct-ocaf-7-5" {< "7.5.1+dfsg1-2+1~"}
+  "deb-libocct-ocaf-7-5" {>= "7.5.1+dfsg1-2"}
+  "deb-libocct-visualization-7-5" {< "7.5.1+dfsg1-2+1~"}
+  "deb-libocct-visualization-7-5" {>= "7.5.1+dfsg1-2"}
+]
+conflicts: [
+  "deb-liboce-ocaf-dev"
+  "deb-liboce-ocaf-lite-dev"
+]
+extra-source "libocct-ocaf-dev_7.5.1+dfsg1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/opencascade/libocct-ocaf-dev_7.5.1+dfsg1-2_amd64.deb"
+}

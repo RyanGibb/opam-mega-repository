@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i plasma-vault_5.20.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r plasma-vault"]
+]
+depends: [
+  "deb-cryfs"
+  "deb-encfs"
+  "deb-kio"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libkf5activities5" {>= "5.72.0~"}
+  "deb-libkf5configcore5" {>= "5.72.0~"}
+  "deb-libkf5coreaddons5" {>= "5.72.0~"}
+  "deb-libkf5dbusaddons5" {>= "5.72.0~"}
+  "deb-libkf5i18n5" {>= "5.72.0~"}
+  "deb-libkf5kiocore5" {>= "5.72.0~"}
+  "deb-libkf5kiowidgets5" {>= "5.72.0~"}
+  "deb-libkf5networkmanagerqt6" {>= "5.72.0~"}
+  "deb-libkf5plasma5" {>= "5.72.0~"}
+  "deb-libkf5widgetsaddons5" {>= "5.72.0~"}
+  "deb-libprocesscore9" {>= "4-5.19~"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.14.1"}
+  "deb-libqt5widgets5" {>= "5.12.0~"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-plasma-framework"
+  "deb-qml-module-qtquick-layouts"
+  "deb-qml-module-qtquick2"
+  ("deb-libqt5gui5" {>= "5.12.0~"} | "deb- libqt5gui5-gles" {>= "5.12.0~"})
+]
+extra-source "plasma-vault_5.20.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/plasma-vault/plasma-vault_5.20.5-1_amd64.deb"
+}

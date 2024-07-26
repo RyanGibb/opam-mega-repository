@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-clash-ghc-dev_1.6.4-1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-clash-ghc-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.29"}
+  "deb-libghc-clash-lib-dev"
+  "deb-libghc-clash-prelude-dev"
+  "deb-libghc-concurrent-supply-dev"
+  "deb-libghc-data-binary-ieee754-dev"
+  "deb-libghc-extra-dev"
+  "deb-libghc-ghc-typelits-extra-dev"
+  "deb-libghc-ghc-typelits-knownnat-dev"
+  "deb-libghc-ghc-typelits-natnormalise-dev"
+  "deb-libghc-hashable-dev"
+  "deb-libghc-lens-dev"
+  "deb-libghc-primitive-dev"
+  "deb-libghc-reflection-dev"
+  "deb-libghc-split-dev"
+  "deb-libghc-uniplate-dev"
+  "deb-libghc-unordered-containers-dev"
+  "deb-libghc-utf8-string-dev"
+  "deb-libghc-vector-dev"
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-libyaml-0-2"
+]
+extra-source "libghc-clash-ghc-dev_1.6.4-1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-clash-ghc/libghc-clash-ghc-dev_1.6.4-1+b3_amd64.deb"
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libreply-perl_0.42-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libreply-perl"]
+]
+depends: [
+  "deb-libconfig-ini-reader-ordered-perl"
+  "deb-libdevel-lexalias-perl"
+  "deb-libeval-closure-perl"
+  "deb-libfile-homedir-perl"
+  "deb-libio-pager-perl"
+  "deb-libmodule-runtime-perl"
+  "deb-libpackage-stash-perl"
+  "deb-libpadwalker-perl"
+  "deb-libterm-readkey-perl"
+  "deb-libtry-tiny-perl"
+  "deb-perl-any"
+]
+extra-source "libreply-perl_0.42-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libr/libreply-perl/libreply-perl_0.42-2_all.deb"
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i git-all_1:2.39.2-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r git-all"]
+]
+depends: [
+  "deb-git" {< "1-2.39.2-."}
+  "deb-git" {> "1-2.39.2"}
+  "deb-git-cvs"
+  "deb-git-doc"
+  "deb-git-email"
+  "deb-git-gui"
+  "deb-git-mediawiki"
+  "deb-git-svn"
+  "deb-gitk"
+  "deb-gitweb"
+]
+extra-source "git-all_1:2.39.2-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/git/git-all_2.39.2-1.1_all.deb"
+}

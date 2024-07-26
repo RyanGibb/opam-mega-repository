@@ -1,0 +1,42 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i haruna_0.10.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r haruna"]
+]
+depends: [
+  "deb-kio"
+  "deb-libavcodec-extra59"
+  "deb-libavfilter-extra8"
+  "deb-libavformat-extra59"
+  "deb-libavutil57" {>= "7-5.0"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libkf5configcore5" {>= "4.98.0"}
+  "deb-libkf5configgui5" {>= "5.74.0"}
+  "deb-libkf5configwidgets5" {>= "4.96.0"}
+  "deb-libkf5coreaddons5" {>= "5.53.1"}
+  "deb-libkf5filemetadata3" {>= "5.90.0"}
+  "deb-libkf5i18n5" {>= "5.17.0"}
+  "deb-libkf5kiocore5" {>= "5.77.0"}
+  "deb-libkf5kiowidgets5" {>= "5.100.0"}
+  "deb-libmpv2" {>= "0.29"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.0.2"}
+  "deb-libqt5qml5"
+  "deb-libqt5qml5" {>= "5.14.1"}
+  "deb-libqt5quickcontrols2-5" {>= "5.9.0~rc"}
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-libqt5x11extras5" {>= "5.6.0"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libswscale6" {>= "7-5.0"}
+  "deb-qml-module-org-kde-kirigami2"
+  "deb-qml-module-org-kde-qqc2desktopstyle"
+  "deb-qml-module-qt-labs-platform"
+  "deb-qml-module-qtquick-shapes"
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+  ("deb-libqt5quick5" {>= "5.6.0~beta"} | "deb- libqt5quick5-gles" {>= "5.6.0~beta"})
+]
+extra-source "haruna_0.10.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haruna/haruna_0.10.3-1_amd64.deb"
+}

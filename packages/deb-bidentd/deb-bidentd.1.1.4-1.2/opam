@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i bidentd_1.1.4-1.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r bidentd"]
+]
+depends: [
+  "deb-debconf"
+  "deb-libc6" {>= "2.7"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-netbase"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-openbsd-inetd" | "deb- inet-superserver")
+]
+conflicts: [
+  "deb-ident-server"
+]
+extra-source "bidentd_1.1.4-1.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/bidentd/bidentd_1.1.4-1.2_amd64.deb"
+}

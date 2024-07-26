@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i vagrant_2.2.3+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r vagrant"]
+]
+depends: [
+  "deb-curl"
+  "deb-libarchive-tools"
+  "deb-openssh-client"
+  "deb-rsync"
+  "deb-ruby"
+  "deb-ruby-bcrypt-pbkdf" {>= "1.0.0"}
+  "deb-ruby-childprocess" {>= "0.6.0"}
+  "deb-ruby-ed25519" {>= "1.2.4"}
+  "deb-ruby-erubis" {>= "2.7.0"}
+  "deb-ruby-i18n" {>= "1.1.1"}
+  "deb-ruby-listen" {>= "3.1.5"}
+  "deb-ruby-log4r" {>= "1.1.9"}
+  "deb-ruby-net-scp" {>= "1.2.0"}
+  "deb-ruby-net-sftp" {>= "2.1"}
+  "deb-ruby-net-ssh" {>= "5.1.0"}
+  "deb-ruby-rest-client" {>= "1.6.0"}
+  "deb-ruby-vagrant-cloud" {>= "2.0.2"}
+  "deb-ruby-zip" {>= "1.2.2"}
+]
+extra-source "vagrant_2.2.3+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/vagrant/vagrant_2.2.3+dfsg-1_all.deb"
+}

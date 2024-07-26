@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i apt-listdifferences_1.20230122_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r apt-listdifferences"]
+]
+depends: [
+  "deb-debian-keyring"
+  "deb-devscripts"
+  "deb-python3"
+  "deb-python3-apt"
+  "deb-python3-debian"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-most" | "deb- less")
+]
+extra-source "apt-listdifferences_1.20230122_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/apt-listdifferences/apt-listdifferences_1.20230122_all.deb"
+}

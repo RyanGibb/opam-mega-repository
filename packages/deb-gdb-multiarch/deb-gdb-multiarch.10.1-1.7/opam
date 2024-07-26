@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gdb-multiarch_10.1-1.7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gdb-multiarch"]
+]
+depends: [
+  "deb-gdb" {= "10.1-1.7"}
+  "deb-libbabeltrace1" {>= "1.5.4"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libdebuginfod1" {>= "0.180"}
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libgcc-s1" {>= "3.4"}
+  "deb-libipt2" {>= "2.0"}
+  "deb-liblzma5" {>= "5.1.1alpha+20110809"}
+  "deb-libmpfr6" {>= "3.1.3"}
+  "deb-libncursesw6" {>= "6"}
+  "deb-libpython3-9" {>= "3.9.0~b4"}
+  "deb-libreadline8" {>= "8"}
+  "deb-libsource-highlight4v5" {>= "3.1.9"}
+  "deb-libstdc++6" {>= "7"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-libxxhash0" {>= "0.6.5"}
+  "deb-zlib1g" {>= "1-1.2.0"}
+]
+conflicts: [
+  "deb-gdb-arm-none-eabi"
+]
+extra-source "gdb-multiarch_10.1-1.7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gdb/gdb-multiarch_10.1-1.7_amd64.deb"
+}

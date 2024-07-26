@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-chell-quickcheck2-dev_0.2.5.1-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-chell-quickcheck2-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-chell-dev"
+  "deb-libghc-quickcheck2-dev"
+  "deb-libghc-random-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-chell-quickcheck2-dev_0.2.5.1-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-chell-quickcheck2/libghc-chell-quickcheck2-dev_0.2.5.1-3+b1_amd64.deb"
+}

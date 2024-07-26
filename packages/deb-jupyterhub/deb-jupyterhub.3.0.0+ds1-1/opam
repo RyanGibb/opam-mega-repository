@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i jupyterhub_3.0.0+ds1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r jupyterhub"]
+]
+depends: [
+  "deb-fonts-font-awesome"
+  "deb-libjs-bootstrap"
+  "deb-libjs-jquery"
+  "deb-libjs-prototype"
+  "deb-libjs-requirejs"
+  "deb-node-configurable-http-proxy"
+  "deb-python3-alembic"
+  "deb-python3-any"
+  "deb-python3-async-generator"
+  "deb-python3-bcrypt"
+  "deb-python3-certipy"
+  "deb-python3-dateutil"
+  "deb-python3-jinja2"
+  "deb-python3-jupyter-telemetry"
+  "deb-python3-notebook"
+  "deb-python3-oauthlib"
+  "deb-python3-packaging"
+  "deb-python3-pamela"
+  "deb-python3-prometheus-client"
+  "deb-python3-requests"
+  "deb-python3-sqlalchemy" {>= "1.1"}
+  "deb-python3-tornado"
+  "deb-python3-traitlets"
+  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.10"})
+]
+extra-source "jupyterhub_3.0.0+ds1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/j/jupyterhub/jupyterhub_3.0.0+ds1-1_all.deb"
+}

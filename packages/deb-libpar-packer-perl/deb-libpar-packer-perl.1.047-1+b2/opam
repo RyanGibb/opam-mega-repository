@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpar-packer-perl_1.047-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpar-packer-perl"]
+]
+depends: [
+  "deb-libarchive-zip-perl"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgetopt-argvfile-perl"
+  "deb-libmodule-scandeps-perl" {>= "1.21"}
+  "deb-libpar-dist-perl"
+  "deb-libpar-perl" {>= "1.014"}
+  "deb-libperl5-28" {>= "5.28.0"}
+  "deb-perl" {< "5.28.2~"}
+  "deb-perl" {>= "5.28.1~"}
+  "deb-perl-base"
+]
+extra-source "libpar-packer-perl_1.047-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libp/libpar-packer-perl/libpar-packer-perl_1.047-1+b2_amd64.deb"
+}

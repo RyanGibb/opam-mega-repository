@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i spades_3.13.0+dfsg2-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r spades"]
+]
+depends: [
+  "deb-bamtools"
+  "deb-bwa"
+  "deb-libc6" {>= "2.27"}
+  "deb-libgcc1" {>= "1-4.0"}
+  "deb-libgomp1" {>= "4.9"}
+  "deb-libhat-trie0"
+  "deb-libnlopt0" {>= "2.2.4"}
+  "deb-libssw0"
+  "deb-libstdc++6" {>= "6"}
+  "deb-python"
+  "deb-python-joblib"
+  "deb-python-yaml"
+  "deb-samtools"
+  "deb-zlib1g" {>= "1-1.2.3.3"}
+]
+extra-source "spades_3.13.0+dfsg2-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/spades/spades_3.13.0+dfsg2-2_amd64.deb"
+}

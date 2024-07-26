@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i djvulibre-bin_3.5.27.1-10+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r djvulibre-bin"]
+]
+depends: [
+  "deb-curl"
+  "deb-libc6" {>= "2.14"}
+  "deb-libdjvulibre21" {= "3.5.27.1-10+deb10u1"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libtiff5" {>= "4.0.3"}
+]
+extra-source "djvulibre-bin_3.5.27.1-10+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/djvulibre/djvulibre-bin_3.5.27.1-10+deb10u1_amd64.deb"
+}

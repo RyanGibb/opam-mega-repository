@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fprobe_1.1-8_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fprobe"]
+]
+depends: [
+  "deb-libc6" {>= "2.7"}
+  "deb-libpcap0-8" {>= "0.9.8"}
+  "deb-sysvinit-utils"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "fprobe_1.1-8_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fprobe/fprobe_1.1-8_amd64.deb"
+}

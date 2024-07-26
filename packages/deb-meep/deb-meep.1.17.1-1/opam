@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i meep_1.17.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r meep"]
+]
+depends: [
+  "deb-guile-2-2-libs"
+  "deb-libc6" {>= "2.29"}
+  "deb-libctl7" {>= "4.5.0-8"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libmeep23" {>= "1.17.1"}
+  "deb-libstdc++6" {>= "5"}
+]
+conflicts: [
+  "deb-meep-mpi-default"
+  "deb-meep-mpich2"
+  "deb-meep-openmpi"
+]
+extra-source "meep_1.17.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/meep/meep_1.17.1-1_amd64.deb"
+}

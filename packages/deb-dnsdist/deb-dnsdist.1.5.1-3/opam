@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dnsdist_1.5.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dnsdist"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libc6" {>= "2.25"}
+  "deb-libcap2" {>= "1-2.10"}
+  "deb-libcdb1"
+  "deb-libedit2" {>= "2.11-20080614-0"}
+  "deb-libfstrm0" {>= "0.4.0"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libh2o-evloop0-13" {>= "2.2.5+dfsg2"}
+  "deb-liblmdb0" {>= "0.9.7"}
+  "deb-libluajit-5-1-2" {>= "2.0.4+dfsg"}
+  "deb-libprotobuf23" {>= "3.12.3"}
+  "deb-libre2-9" {>= "20131024+dfsg"}
+  "deb-libsnmp40" {>= "5.9+dfsg"}
+  "deb-libsodium23" {>= "1.0.12"}
+  "deb-libssl1-1" {>= "1.1.1"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libsystemd0"
+]
+extra-source "dnsdist_1.5.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dnsdist/dnsdist_1.5.1-3_amd64.deb"
+}

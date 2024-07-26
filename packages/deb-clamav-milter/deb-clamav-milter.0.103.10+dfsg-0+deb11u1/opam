@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i clamav-milter_0.103.10+dfsg-0+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r clamav-milter"]
+]
+depends: [
+  "deb-adduser"
+  "deb-clamav-base" {>= "0.103.10+dfsg-0+deb11u1"}
+  "deb-dpkg" {>= "1.16.1"}
+  "deb-libc6" {>= "2.28"}
+  "deb-libclamav9" {>= "0.103.10"}
+  "deb-libmilter1-0-1"
+  "deb-logrotate"
+  "deb-lsb-base" {>= "3.2-13"}
+  "deb-procps" {>= "1-3.3.2"}
+  "deb-ucf"
+  ("deb-clamav-freshclam" {>= "0.103.10+dfsg"} | "deb- clamav-data")
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "clamav-milter_0.103.10+dfsg-0+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/clamav/clamav-milter_0.103.10+dfsg-0+deb11u1_amd64.deb"
+}

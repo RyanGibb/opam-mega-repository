@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fricas-hypertex_1.3.6-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fricas-hypertex"]
+]
+depends: [
+  "deb-fricas" {= "1.3.6-6"}
+  "deb-fricas-hypertex-data" {= "1.3.6-6"}
+  "deb-libc6" {>= "2.15"}
+  "deb-libx11-6"
+  "deb-libxpm4"
+]
+extra-source "fricas-hypertex_1.3.6-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fricas/fricas-hypertex_1.3.6-6_amd64.deb"
+}

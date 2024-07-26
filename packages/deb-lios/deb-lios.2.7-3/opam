@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lios_2.7-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lios"]
+]
+depends: [
+  "deb-aspell-en"
+  "deb-espeak"
+  "deb-gir1-2-gst-plugins-base-1-0"
+  "deb-gir1-2-gstreamer-1-0"
+  "deb-gir1-2-gtk-3-0"
+  "deb-gir1-2-vte-2-91"
+  "deb-imagemagick"
+  "deb-poppler-utils"
+  "deb-python3-any" {>= "3.0~"}
+  "deb-python3-enchant"
+  "deb-python3-gi"
+  "deb-python3-gi-cairo"
+  "deb-python3-sane"
+  "deb-python3-speechd"
+  "deb-tesseract-ocr"
+]
+extra-source "lios_2.7-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lios/lios_2.7-3_all.deb"
+}

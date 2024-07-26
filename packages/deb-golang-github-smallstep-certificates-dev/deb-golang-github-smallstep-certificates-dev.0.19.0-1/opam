@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-smallstep-certificates-dev_0.19.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-smallstep-certificates-dev"]
+]
+depends: [
+  "deb-golang-github-aws-aws-sdk-go-dev"
+  "deb-golang-github-fullsailor-pkcs7-dev"
+  "deb-golang-github-go-chi-chi-dev"
+  "deb-golang-github-go-kit-kit-dev"
+  "deb-golang-github-go-piv-piv-go-dev"
+  "deb-golang-github-google-uuid-dev"
+  "deb-golang-github-masterminds-sprig-dev"
+  "deb-golang-github-micromdm-scep-dev"
+  "deb-golang-github-newrelic-go-agent-dev"
+  "deb-golang-github-pkg-errors-dev"
+  "deb-golang-github-rs-xid-dev"
+  "deb-golang-github-sirupsen-logrus-dev"
+  "deb-golang-github-slackhq-nebula-dev" {>= "1.6.1~"}
+  "deb-golang-github-smallstep-nosql-dev"
+  "deb-golang-github-thalesignite-crypto11-dev"
+  "deb-golang-github-urfave-cli-dev"
+  "deb-golang-golang-x-crypto-dev"
+  "deb-golang-golang-x-net-dev"
+  "deb-golang-gopkg-square-go-jose-v2-dev"
+  "deb-golang-step-cli-utils-dev" {>= "0.7.5~"}
+  "deb-golang-step-crypto-dev" {>= "0.17.3~"}
+  "deb-golang-step-linkedca-dev"
+  "deb-libpcsclite-dev"
+]
+extra-source "golang-github-smallstep-certificates-dev_0.19.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-smallstep-certificates/golang-github-smallstep-certificates-dev_0.19.0-1_all.deb"
+}

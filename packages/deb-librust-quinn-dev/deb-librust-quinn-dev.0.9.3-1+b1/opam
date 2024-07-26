@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-quinn-dev_0.9.3-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-quinn-dev"]
+]
+depends: [
+  "deb-librust-async-io-dev"
+  "deb-librust-async-std-dev"
+  "deb-librust-bytes-1+default-dev"
+  "deb-librust-futures-io-dev"
+  "deb-librust-pin-project-lite-0-2+default-dev"
+  "deb-librust-quinn-proto-0-9+native-certs-dev"
+  "deb-librust-quinn-proto-0-9+ring-dev"
+  "deb-librust-quinn-proto-0-9+tls-rustls-dev"
+  "deb-librust-quinn-proto-0-9-dev"
+  "deb-librust-quinn-udp-0-3+default-dev"
+  "deb-librust-rustc-hash-dev"
+  "deb-librust-rustls-dev"
+  "deb-librust-thiserror-dev"
+  "deb-librust-tokio-dev"
+  "deb-librust-tracing-dev"
+  "deb-librust-webpki-0-22-dev"
+]
+extra-source "librust-quinn-dev_0.9.3-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-quinn/librust-quinn-dev_0.9.3-1+b1_amd64.deb"
+}

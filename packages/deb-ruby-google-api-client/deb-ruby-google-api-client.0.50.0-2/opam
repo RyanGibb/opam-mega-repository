@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-google-api-client_0.50.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-google-api-client"]
+]
+depends: [
+  "deb-ruby-addressable" {>= "2.5.1~"}
+  "deb-ruby-googleauth" {>= "0.9~"}
+  "deb-ruby-httpclient" {>= "2.8.1~"}
+  "deb-ruby-mini-mime" {>= "1.0~"}
+  "deb-ruby-representable" {>= "3.0~"}
+  "deb-ruby-retriable" {>= "2.0~"}
+  "deb-ruby-rexml"
+  "deb-ruby-signet" {>= "0.12~"}
+  ("deb-ruby" | "deb- ruby-interpreter")
+]
+extra-source "ruby-google-api-client_0.50.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-google-api-client/ruby-google-api-client_0.50.0-2_all.deb"
+}

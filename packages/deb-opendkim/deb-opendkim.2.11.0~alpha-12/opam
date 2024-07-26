@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i opendkim_2.11.0~alpha-12_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r opendkim"]
+]
+depends: [
+  "deb-adduser"
+  "deb-dns-root-data"
+  "deb-libbsd0" {>= "0.0"}
+  "deb-libc6" {>= "2.15"}
+  "deb-libdb5-3"
+  "deb-libldap-2-4-2" {>= "2.4.7"}
+  "deb-liblua5-1-0"
+  "deb-libmemcached11"
+  "deb-libmemcachedutil2"
+  "deb-libmilter1-0-1" {>= "8.14.1"}
+  "deb-libopendbx1" {>= "1.4.6"}
+  "deb-libopendkim11" {= "2.11.0~alpha-12"}
+  "deb-librbl1" {>= "2.7.2"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libunbound8" {>= "1.8.0"}
+  "deb-libvbr2" {>= "2.7.2"}
+  "deb-lsb-base"
+]
+extra-source "opendkim_2.11.0~alpha-12_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/opendkim/opendkim_2.11.0~alpha-12_amd64.deb"
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i theseus_3.3.0-14_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r theseus"]
+]
+depends: [
+  "deb-clustalo"
+  "deb-libc6" {>= "2.35"}
+  "deb-libgsl27" {>= "2.7.1"}
+  "deb-muscle"
+]
+extra-source "theseus_3.3.0-14_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/theseus/theseus_3.3.0-14_amd64.deb"
+}

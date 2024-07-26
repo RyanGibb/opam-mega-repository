@@ -1,0 +1,47 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i akonadi-import-wizard_4:22.12.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r akonadi-import-wizard"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libkf5akonadicore5abi2"
+  "deb-libkf5akonadicore5abi2" {>= "4-22.12.3"}
+  "deb-libkf5akonadiwidgets5abi1"
+  "deb-libkf5akonadiwidgets5abi1" {>= "4-22.12.3"}
+  "deb-libkf5configcore5" {>= "5.99.0~"}
+  "deb-libkf5contacts5" {>= "5-5.99.0~"}
+  "deb-libkf5coreaddons5" {>= "5.96.0"}
+  "deb-libkf5crash5" {>= "5.99.0~"}
+  "deb-libkf5dbusaddons5" {>= "5.99.0~"}
+  "deb-libkf5i18n5" {>= "4.97.0"}
+  "deb-libkf5identitymanagement5"
+  "deb-libkf5identitymanagement5" {>= "22.12.3"}
+  "deb-libkf5mailcommon5abi2"
+  "deb-libkf5mailcommon5abi2" {>= "4-22.12.3"}
+  "deb-libkf5mailimporter5"
+  "deb-libkf5mailimporter5" {>= "4-22.12.3"}
+  "deb-libkf5mailimporterakonadi5"
+  "deb-libkf5mailimporterakonadi5" {>= "4-22.12.3"}
+  "deb-libkf5mailtransport5"
+  "deb-libkf5mailtransport5" {>= "22.12.3"}
+  "deb-libkf5messageviewer5abi1"
+  "deb-libkf5messageviewer5abi1" {>= "4-22.12.3"}
+  "deb-libkf5pimcommon5abi2"
+  "deb-libkf5pimcommon5abi2" {>= "4-22.12.3"}
+  "deb-libkf5widgetsaddons5" {>= "4.98.0"}
+  "deb-libkf5xmlgui5" {>= "4.96.0"}
+  "deb-libkpimimportwizard5"
+  "deb-libkpimimportwizard5" {= "4-22.12.3-1"}
+  "deb-libqt5core5a" {>= "5.15.2~"}
+  "deb-libqt5widgets5" {>= "5.15.2~"}
+  "deb-libqt5xml5" {>= "5.15.2~"}
+  "deb-libstdc++6" {>= "5"}
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+]
+extra-source "akonadi-import-wizard_4:22.12.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/akonadi-import-wizard/akonadi-import-wizard_22.12.3-1_amd64.deb"
+}

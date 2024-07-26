@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add poppler-dev-22.05.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del poppler-dev"]
+]
+depends: [
+  "apk-cairo-dev" {= "1.17.4-r2"}
+  "apk-glib-dev" {= "2.72.4-r0"}
+  "apk-pkgconf" {= "1.8.1-r0"}
+  "apk-poppler" {= "22.05.0-r0"}
+  "apk-poppler-glib" {= "22.05.0-r0"}
+]
+extra-source "poppler-dev-22.05.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/poppler-dev-22.05.0-r0.apk"
+}

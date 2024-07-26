@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tercpp_0.6.2+svn46-1.1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tercpp"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtercpp0v5" {= "0.6.2+svn46-1.1+b1"}
+  "deb-libtinyxml2-6-2v5"
+]
+extra-source "tercpp_0.6.2+svn46-1.1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tercpp/tercpp_0.6.2+svn46-1.1+b1_amd64.deb"
+}

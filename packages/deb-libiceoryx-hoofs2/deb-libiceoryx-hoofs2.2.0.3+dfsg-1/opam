@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libiceoryx-hoofs2_2.0.3+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libiceoryx-hoofs2"]
+]
+depends: [
+  "deb-libacl1" {>= "2.2.23"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libiceoryx-platform2" {>= "2.0.3+dfsg"}
+  "deb-libstdc++6" {>= "6"}
+]
+extra-source "libiceoryx-hoofs2_2.0.3+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/iceoryx/libiceoryx-hoofs2_2.0.3+dfsg-1_amd64.deb"
+}

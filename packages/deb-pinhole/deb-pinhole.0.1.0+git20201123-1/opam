@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pinhole_0.1.0+git20201123-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pinhole"]
+]
+depends: [
+  "deb-libaperture-0-0" {>= "0.1.0+git20200908"}
+  "deb-libc6" {>= "2.4"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libglib2-0-0" {>= "2.43.92"}
+  "deb-libgtk-3-0" {>= "3.21.5"}
+  "deb-libhandy-1-0" {>= "0.82.0"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-libgdk-pixbuf-2-0-0" {>= "2.23.0"} | "deb- libgdk-pixbuf2-0-0" {>= "2.23.0"})
+]
+conflicts: [
+  "deb-gnome-camera"
+]
+extra-source "pinhole_0.1.0+git20201123-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pinhole/pinhole_0.1.0+git20201123-1_amd64.deb"
+}

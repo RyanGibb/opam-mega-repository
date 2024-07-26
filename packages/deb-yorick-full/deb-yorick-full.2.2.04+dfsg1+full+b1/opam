@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i yorick-full_2.2.04+dfsg1+full+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r yorick-full"]
+]
+depends: [
+  "deb-yorick"
+  "deb-yorick-av"
+  "deb-yorick-cubeview"
+  "deb-yorick-curses"
+  "deb-yorick-dev"
+  "deb-yorick-doc"
+  "deb-yorick-gl"
+  "deb-yorick-gy"
+  "deb-yorick-gyoto"
+  "deb-yorick-hdf5"
+  "deb-yorick-imutil"
+  "deb-yorick-mira"
+  "deb-yorick-ml4"
+  "deb-yorick-mpeg"
+  "deb-yorick-optimpack"
+  "deb-yorick-soy"
+  "deb-yorick-svipc"
+  "deb-yorick-yeti"
+  "deb-yorick-yeti-fftw"
+  "deb-yorick-yeti-regex"
+  "deb-yorick-yeti-tiff"
+  "deb-yorick-ygsl"
+  "deb-yorick-ynfft"
+  "deb-yorick-yutils"
+  "deb-yorick-z"
+]
+extra-source "yorick-full_2.2.04+dfsg1+full+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/y/yorick-full/yorick-full_2.2.04+dfsg1+full+b1_amd64.deb"
+}

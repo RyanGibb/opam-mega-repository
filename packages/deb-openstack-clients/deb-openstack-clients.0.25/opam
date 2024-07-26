@@ -1,0 +1,49 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openstack-clients_0.25_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openstack-clients"]
+]
+depends: [
+  "deb-python3-aodhclient"
+  "deb-python3-barbicanclient"
+  "deb-python3-blazarclient"
+  "deb-python3-ceilometerclient"
+  "deb-python3-cinderclient"
+  "deb-python3-cloudkittyclient"
+  "deb-python3-congressclient"
+  "deb-python3-designateclient"
+  "deb-python3-glanceclient"
+  "deb-python3-glareclient"
+  "deb-python3-gnocchiclient"
+  "deb-python3-heatclient"
+  "deb-python3-ironicclient"
+  "deb-python3-karborclient"
+  "deb-python3-keystoneclient"
+  "deb-python3-magnumclient"
+  "deb-python3-manilaclient"
+  "deb-python3-mistralclient"
+  "deb-python3-monascaclient"
+  "deb-python3-muranoclient"
+  "deb-python3-neutronclient"
+  "deb-python3-novaclient"
+  "deb-python3-octaviaclient"
+  "deb-python3-openstackclient"
+  "deb-python3-osc-placement"
+  "deb-python3-pankoclient"
+  "deb-python3-qinlingclient"
+  "deb-python3-saharaclient"
+  "deb-python3-searchlightclient"
+  "deb-python3-senlinclient"
+  "deb-python3-swiftclient"
+  "deb-python3-tackerclient"
+  "deb-python3-troveclient"
+  "deb-python3-vitrageclient"
+  "deb-python3-watcherclient"
+  "deb-python3-zaqarclient"
+  "deb-python3-zunclient"
+]
+extra-source "openstack-clients_0.25_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openstack-meta-packages/openstack-clients_0.25_all.deb"
+}

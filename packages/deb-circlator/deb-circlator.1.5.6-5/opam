@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i circlator_1.5.6-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r circlator"]
+]
+depends: [
+  "deb-bwa" {>= "0.7.12"}
+  "deb-canu"
+  "deb-fastaq" {>= "3.12.1"}
+  "deb-mummer"
+  "deb-prodigal"
+  "deb-python3-any"
+  "deb-python3-openpyxl"
+  "deb-python3-pymummer"
+  "deb-python3-pysam"
+  "deb-samtools"
+  "deb-spades"
+]
+extra-source "circlator_1.5.6-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/circlator/circlator_1.5.6-5_amd64.deb"
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgnuradio-iio3.10.5_3.10.5.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgnuradio-iio3.10.5"]
+]
+depends: [
+  "deb-libad9361-0" {>= "0.2"}
+  "deb-libboost-thread1-74-0" {>= "1.74.0+ds1"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libfmt9" {>= "9.1.0+ds1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgnuradio-pmt3-10-5" {>= "3.10.5.1"}
+  "deb-libgnuradio-runtime3-10-5" {>= "3.10.5.1"}
+  "deb-libiio0" {>= "0.24"}
+  "deb-libspdlog1-10"
+  "deb-libstdc++6" {>= "11"}
+  "deb-libvolk2-5" {>= "2.5.2"}
+]
+extra-source "libgnuradio-iio3.10.5_3.10.5.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnuradio/libgnuradio-iio3.10.5_3.10.5.1-3_amd64.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i chef-zero_13.1.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r chef-zero"]
+]
+depends: [
+  "deb-ruby-ffi-yajl" {>= "2.2"}
+  "deb-ruby-hashie" {>= "2.0"}
+  "deb-ruby-mixlib-log" {>= "1.3"}
+  "deb-ruby-rack"
+  "deb-ruby-uuidtools" {>= "2.1"}
+  ("deb-ruby" | "deb- ruby-interpreter")
+]
+extra-source "chef-zero_13.1.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/chef-zero/chef-zero_13.1.0-2_all.deb"
+}

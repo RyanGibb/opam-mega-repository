@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i awscli_1.16.113-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r awscli"]
+]
+depends: [
+  "deb-python3"
+  "deb-python3-any"
+  "deb-python3-botocore" {>= "1.12.103"}
+  "deb-python3-colorama"
+  "deb-python3-docutils"
+  "deb-python3-pyasn1"
+  "deb-python3-rsa"
+  "deb-python3-s3transfer"
+  "deb-python3-yaml"
+]
+extra-source "awscli_1.16.113-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/awscli/awscli_1.16.113-1_all.deb"
+}

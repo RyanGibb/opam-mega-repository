@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i clang-tidy-15_1:15.0.6-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r clang-tidy-15"]
+]
+depends: [
+  "deb-clang-tools-15"
+  "deb-libc6" {>= "2.34"}
+  "deb-libclang-common-15-dev"
+  "deb-libclang-cpp15" {>= "1-15.0.6"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libllvm15" {= "1-15.0.6-4+b1"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-python3"
+  "deb-python3-yaml"
+]
+extra-source "clang-tidy-15_1:15.0.6-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/llvm-toolchain-15/clang-tidy-15_15.0.6-4+b1_amd64.deb"
+}

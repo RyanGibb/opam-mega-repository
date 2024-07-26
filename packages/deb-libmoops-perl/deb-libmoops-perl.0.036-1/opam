@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmoops-perl_0.036-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmoops-perl"]
+]
+depends: [
+  "deb-libexporter-tiny-perl" {>= "0.040"}
+  "deb-libimport-into-perl"
+  "deb-libkavorka-perl"
+  "deb-libkeyword-simple-perl"
+  "deb-liblexical-accessor-perl"
+  "deb-libmodule-runtime-perl"
+  "deb-libmoo-perl"
+  "deb-libmoosex-mungehas-perl"
+  "deb-libmoox-late-perl"
+  "deb-libnamespace-autoclean-perl"
+  "deb-libparse-keyword-perl"
+  "deb-libperlx-assert-perl"
+  "deb-libperlx-define-perl"
+  "deb-libstrictures-perl"
+  "deb-libtrue-perl"
+  "deb-libtry-tiny-perl"
+  "deb-libtype-tiny-perl"
+  "deb-libvariable-magic-perl"
+  "deb-perl"
+]
+extra-source "libmoops-perl_0.036-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libm/libmoops-perl/libmoops-perl_0.036-1_all.deb"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pagetools_0.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pagetools"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libnetpbm10"
+  "deb-libstdc++6" {>= "5"}
+  "deb-libtiff5" {>= "4.0.3"}
+]
+extra-source "pagetools_0.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pagetools/pagetools_0.1-3_amd64.deb"
+}

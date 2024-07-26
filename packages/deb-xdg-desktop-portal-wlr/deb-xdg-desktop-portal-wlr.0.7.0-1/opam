@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xdg-desktop-portal-wlr_0.7.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xdg-desktop-portal-wlr"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libdrm2" {>= "2.4.109"}
+  "deb-libelogind0"
+  "deb-libgbm1" {>= "21.3.0~rc1"}
+  "deb-libinih1" {>= "40"}
+  "deb-libpipewire-0-3-0" {>= "0.3.1"}
+  "deb-libwayland-client0" {>= "1.20.0"}
+  "deb-pipewire"
+  "deb-xdg-desktop-portal"
+]
+extra-source "xdg-desktop-portal-wlr_0.7.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xdg-desktop-portal-wlr/xdg-desktop-portal-wlr_0.7.0-1_amd64.deb"
+}

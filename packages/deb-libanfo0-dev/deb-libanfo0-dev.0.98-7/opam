@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libanfo0-dev_0.98-7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libanfo0-dev"]
+]
+depends: [
+  "deb-libanfo0" {= "0.98-7"}
+  "deb-libbz2-dev"
+  "deb-libelk0-dev"
+  "deb-libpopt-dev"
+  "deb-libprotobuf-dev"
+  "deb-zlib1g-dev"
+]
+conflicts: [
+  "deb-libanfo-dev"
+]
+extra-source "libanfo0-dev_0.98-7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/anfo/libanfo0-dev_0.98-7_amd64.deb"
+}

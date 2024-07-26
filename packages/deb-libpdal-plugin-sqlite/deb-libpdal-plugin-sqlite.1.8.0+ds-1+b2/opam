@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpdal-plugin-sqlite_1.8.0+ds-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpdal-plugin-sqlite"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgdal20" {>= "1.8.0"}
+  "deb-libpdal-base7" {>= "1.8~rc1"}
+  "deb-libpdal-util7" {>= "1.1.0"}
+  "deb-libsqlite3-0" {>= "3.6.0"}
+  "deb-libsqlite3-mod-spatialite"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libxml2" {>= "2.7.4"}
+]
+extra-source "libpdal-plugin-sqlite_1.8.0+ds-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pdal/libpdal-plugin-sqlite_1.8.0+ds-1+b2_amd64.deb"
+}

@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsnmp-dev_5.7.3+dfsg-5+deb10u2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsnmp-dev"]
+]
+depends: [
+  "deb-libc6-dev"
+  "deb-libpci-dev"
+  "deb-libsensors4-dev"
+  "deb-libsnmp30" {= "5.7.3+dfsg-5+deb10u2"}
+  "deb-libssl-dev"
+  "deb-libwrap0-dev"
+  "deb-procps"
+]
+conflicts: [
+  "deb-libsnmp15-dev"
+  "deb-libsnmp9-dev"
+  "deb-snmp" {< "5.4~dfsg"}
+]
+extra-source "libsnmp-dev_5.7.3+dfsg-5+deb10u2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/net-snmp/libsnmp-dev_5.7.3+dfsg-5+deb10u2_amd64.deb"
+}

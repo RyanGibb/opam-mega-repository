@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-ekg-dev_0.4.0.15-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-ekg-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libghc-aeson-dev"
+  "deb-libghc-ekg-core-dev"
+  "deb-libghc-ekg-data" {= "0.4.0.15-4"}
+  "deb-libghc-ekg-json-dev"
+  "deb-libghc-network-dev"
+  "deb-libghc-snap-core-dev"
+  "deb-libghc-snap-server-dev"
+  "deb-libghc-unordered-containers-dev"
+  "deb-libgmp10"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libghc-ekg-dev_0.4.0.15-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-ekg/libghc-ekg-dev_0.4.0.15-4+b1_amd64.deb"
+}

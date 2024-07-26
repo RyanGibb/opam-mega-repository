@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i autodns-dhcp_0.9_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r autodns-dhcp"]
+]
+depends: [
+  "deb-dnsutils"
+  ("deb-bind9" | "deb- bind")
+  ("deb-isc-dhcp-server" | "deb- dhcp")
+  ("deb-perl" | "deb- perl5")
+]
+conflicts: [
+  "deb-dhcp-dns"
+]
+extra-source "autodns-dhcp_0.9_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/autodns-dhcp/autodns-dhcp_0.9_all.deb"
+}

@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mimedefang_3.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mimedefang"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libc6" {>= "2.34"}
+  "deb-libio-stringy-perl"
+  "deb-libmailtools-perl"
+  "deb-libmilter1-0-1" {>= "8.14.1"}
+  "deb-libmime-base64-perl"
+  "deb-libmime-tools-perl"
+  "deb-libperl5-36" {>= "5.36.0"}
+  "deb-libunix-syslog-perl"
+  "deb-perl-any"
+  "deb-psmisc"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "mimedefang_3.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mimedefang/mimedefang_3.3-1_amd64.deb"
+}

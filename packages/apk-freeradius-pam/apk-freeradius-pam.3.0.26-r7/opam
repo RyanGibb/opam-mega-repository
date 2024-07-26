@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add freeradius-pam-3.0.26-r7.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del freeradius-pam"]
+]
+depends: [
+  "apk-freeradius" {= "3.0.26-r7"}
+  "apk-linux-pam" {= "1.5.3-r7"}
+  "apk-musl" {= "1.2.4_git20230717-r4"}
+]
+extra-source "freeradius-pam-3.0.26-r7.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/freeradius-pam-3.0.26-r7.apk"
+}

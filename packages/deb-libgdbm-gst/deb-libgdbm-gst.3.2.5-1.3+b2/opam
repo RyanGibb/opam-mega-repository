@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgdbm-gst_3.2.5-1.3+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgdbm-gst"]
+]
+depends: [
+  "deb-gnu-smalltalk" {= "3.2.5-1.3+b2"}
+  "deb-gnu-smalltalk-common" {>= "3.2.5"}
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libgdbm6" {>= "1.16"}
+]
+extra-source "libgdbm-gst_3.2.5-1.3+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnu-smalltalk/libgdbm-gst_3.2.5-1.3+b2_amd64.deb"
+}

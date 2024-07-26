@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i colmap_3.6+really3.6-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r colmap"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libceres1" {>= "1.14.0"}
+  "deb-libfreeimage3" {>= "3.18.0+ds2"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libgl1"
+  "deb-libglew2-1" {>= "1.12.0"}
+  "deb-libgomp1" {>= "6"}
+  "deb-libgoogle-glog0v5"
+  "deb-libqt5core5a" {>= "5.14.1"}
+  "deb-libqt5gui5" {>= "5.1.0"}
+  "deb-libqt5widgets5" {>= "5.4.0"}
+  "deb-libstdc++6" {>= "9"}
+  ("deb-libqt5gui5" {>= "5.4.0"} | "deb- libqt5gui5-gles" {>= "5.4.0"})
+]
+extra-source "colmap_3.6+really3.6-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/colmap/colmap_3.6+really3.6-1_amd64.deb"
+}

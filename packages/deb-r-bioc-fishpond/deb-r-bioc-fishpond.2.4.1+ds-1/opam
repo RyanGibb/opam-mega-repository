@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-bioc-fishpond_2.4.1+ds-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-bioc-fishpond"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.2.20221110-2"}
+  "deb-r-bioc-biocgenerics"
+  "deb-r-bioc-genomicranges"
+  "deb-r-bioc-iranges"
+  "deb-r-bioc-qvalue"
+  "deb-r-bioc-s4vectors"
+  "deb-r-bioc-singlecellexperiment"
+  "deb-r-bioc-summarizedexperiment"
+  "deb-r-cran-abind"
+  "deb-r-cran-gtools"
+  "deb-r-cran-jsonlite"
+  "deb-r-cran-matrix"
+  "deb-r-cran-matrixstats"
+  "deb-r-cran-svmisc"
+]
+extra-source "r-bioc-fishpond_2.4.1+ds-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-bioc-fishpond/r-bioc-fishpond_2.4.1+ds-1_all.deb"
+}

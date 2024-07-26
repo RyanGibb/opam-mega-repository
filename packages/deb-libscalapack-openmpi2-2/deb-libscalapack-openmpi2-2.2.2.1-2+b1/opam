@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libscalapack-openmpi2.2_2.2.1-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libscalapack-openmpi2.2"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libgfortran5" {>= "8"}
+  "deb-libopenmpi3" {>= "4.1.4"}
+  "deb-mpi-default-bin"
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+conflicts: [
+  "deb-scalapack2-mpich"
+]
+extra-source "libscalapack-openmpi2.2_2.2.1-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/scalapack/libscalapack-openmpi2.2_2.2.1-2+b1_amd64.deb"
+}

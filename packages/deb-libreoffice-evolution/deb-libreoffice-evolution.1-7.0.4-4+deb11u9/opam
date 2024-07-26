@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libreoffice-evolution_1:7.0.4-4+deb11u9_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libreoffice-evolution"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libebook-1-2-20"
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.38.0"}
+  "deb-libreoffice-base"
+  "deb-libreoffice-common" {>= "1-7.0.0~alpha~"}
+  "deb-libreoffice-core" {= "1-7.0.4-4+deb11u9"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libuno-cppu3" {>= "4.4.0~alpha"}
+  "deb-libuno-cppuhelpergcc3-3" {>= "4.0.0~alpha"}
+  "deb-libuno-sal3" {>= "5.1.0~alpha"}
+  "deb-libuno-salhelpergcc3-3" {>= "1.4.0"}
+  "deb-ucf" {>= "0.8"}
+  "deb-uno-libs-private"
+]
+extra-source "libreoffice-evolution_1:7.0.4-4+deb11u9_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libr/libreoffice/libreoffice-evolution_7.0.4-4+deb11u9_amd64.deb"
+}

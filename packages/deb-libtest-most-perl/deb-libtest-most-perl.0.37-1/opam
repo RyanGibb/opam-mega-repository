@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libtest-most-perl_0.37-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libtest-most-perl"]
+]
+depends: [
+  "deb-libexception-class-perl"
+  "deb-libtest-deep-perl" {>= "0.119"}
+  "deb-libtest-differences-perl" {>= "0.64"}
+  "deb-libtest-exception-perl" {>= "0.43"}
+  "deb-libtest-warn-perl"
+  "deb-perl"
+  "deb-perl-any"
+]
+extra-source "libtest-most-perl_0.37-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libt/libtest-most-perl/libtest-most-perl_0.37-1_all.deb"
+}

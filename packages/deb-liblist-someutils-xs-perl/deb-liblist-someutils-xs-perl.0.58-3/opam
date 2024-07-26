@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i liblist-someutils-xs-perl_0.58-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r liblist-someutils-xs-perl"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-liblist-someutils-perl"
+  "deb-perl" {>= "5.36.0-4"}
+  "deb-perl-base"
+]
+extra-source "liblist-someutils-xs-perl_0.58-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libl/liblist-someutils-xs-perl/liblist-someutils-xs-perl_0.58-3_amd64.deb"
+}

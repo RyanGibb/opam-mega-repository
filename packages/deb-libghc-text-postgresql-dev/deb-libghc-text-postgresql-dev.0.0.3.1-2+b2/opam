@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-text-postgresql-dev_0.0.3.1-2+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-text-postgresql-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-dlist-dev"
+  "deb-libghc-transformers-compat-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-text-postgresql-dev_0.0.3.1-2+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-text-postgresql/libghc-text-postgresql-dev_0.0.3.1-2+b2_amd64.deb"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i murano-engine_1:14.0.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r murano-engine"]
+]
+depends: [
+  "deb-adduser"
+  "deb-dbconfig-common"
+  "deb-debconf"
+  "deb-murano-common" {= "1-14.0.0-3"}
+  "deb-sysvinit-utils"
+]
+extra-source "murano-engine_1:14.0.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/murano/murano-engine_14.0.0-3_all.deb"
+}

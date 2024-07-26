@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-sphinx-autobuild_0.7.1-2.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-sphinx-autobuild"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-argh"
+  "deb-python3-livereload"
+  "deb-python3-pathtools"
+  "deb-python3-port-for"
+  "deb-python3-tornado"
+  "deb-python3-watchdog"
+  "deb-python3-yaml"
+]
+extra-source "python3-sphinx-autobuild_0.7.1-2.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sphinx-autobuild/python3-sphinx-autobuild_0.7.1-2.1_all.deb"
+}

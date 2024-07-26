@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i placement-api_8.0.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r placement-api"]
+]
+depends: [
+  "deb-adduser"
+  "deb-debconf"
+  "deb-placement-common" {= "8.0.0-2"}
+  "deb-python3-keystoneclient"
+  "deb-python3-openstackclient"
+  "deb-python3-pastescript"
+  "deb-python3-q-text-as-data"
+  "deb-sysvinit-utils"
+  "deb-uwsgi-plugin-python3"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "placement-api_8.0.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/placement/placement-api_8.0.0-2_all.deb"
+}

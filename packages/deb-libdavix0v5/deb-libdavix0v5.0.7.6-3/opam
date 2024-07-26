@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdavix0v5_0.7.6-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdavix0v5"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgsoap-2-8-104"
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libuuid1" {>= "2.16"}
+  "deb-libxml2" {>= "2.7.4"}
+]
+extra-source "libdavix0v5_0.7.6-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/davix/libdavix0v5_0.7.6-3_amd64.deb"
+}

@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i citadel-webcit_917-dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r citadel-webcit"]
+]
+depends: [
+  "deb-adduser"
+  "deb-debconf"
+  "deb-libc6" {>= "2.15"}
+  "deb-libcitadel4" {>= "917"}
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libical3" {>= "3.0.0"}
+  "deb-libjs-prototype"
+  "deb-libjs-scriptaculous"
+  "deb-libmarkdown2" {>= "2.0.6"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-locales"
+  "deb-lsb-base" {>= "3.0-6"}
+  "deb-openssl"
+  "deb-tinymce"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "citadel-webcit_917-dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/w/webcit/citadel-webcit_917-dfsg-2_amd64.deb"
+}

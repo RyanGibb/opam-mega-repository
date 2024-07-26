@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i trac-translatedpages_1.0~svn11919-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r trac-translatedpages"]
+]
+depends: [
+  "deb-python" {< "2.8"}
+  "deb-python" {>= "2.7"}
+  "deb-python-pkg-resources"
+  "deb-trac"
+]
+extra-source "trac-translatedpages_1.0~svn11919-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/trac-translatedpages/trac-translatedpages_1.0~svn11919-2_all.deb"
+}

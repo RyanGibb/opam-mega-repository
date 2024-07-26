@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cpan-listchanges_0.08-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cpan-listchanges"]
+]
+depends: [
+  "deb-libalgorithm-diff-perl"
+  "deb-libcpan-distnameinfo-perl"
+  "deb-libtry-tiny-perl"
+  "deb-libwww-perl"
+  "deb-libyaml-perl"
+  "deb-perl"
+]
+extra-source "cpan-listchanges_0.08-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cpan-listchanges/cpan-listchanges_0.08-1_all.deb"
+}

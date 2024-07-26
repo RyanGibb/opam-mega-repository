@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ghostscript-9.52-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ghostscript"]
+]
+depends: [
+  "apk-cups-libs" {= "2.3.3-r0"}
+  "apk-fontconfig" {= "2.13.1-r2"}
+  "apk-freetype" {= "2.10.4-r2"}
+  "apk-jbig2dec" {= "0.18-r0"}
+  "apk-lcms2" {= "2.9-r1"}
+  "apk-libjpeg-turbo" {= "2.1.0-r0"}
+  "apk-libpng" {= "1.6.37-r1"}
+  "apk-musl" {= "1.1.24-r10"}
+  "apk-tiff" {= "4.1.0-r0"}
+  "apk-zlib" {= "1.2.12-r3"}
+]
+extra-source "ghostscript-9.52-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/ghostscript-9.52-r1.apk"
+}

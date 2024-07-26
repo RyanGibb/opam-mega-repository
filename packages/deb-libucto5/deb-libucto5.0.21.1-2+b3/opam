@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libucto5_0.21.1-2+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libucto5"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libexttextcat-2-0-0" {>= "2.2"}
+  "deb-libfolia14" {>= "2.4"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgomp1" {>= "4.2.1"}
+  "deb-libicu72" {>= "72.1~rc-1~"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libticcutils8" {>= "0.24"}
+]
+extra-source "libucto5_0.21.1-2+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/u/ucto/libucto5_0.21.1-2+b3_amd64.deb"
+}

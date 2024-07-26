@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i profphd_1.0.42-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r profphd"]
+]
+depends: [
+  "deb-librg-utils-perl"
+  "deb-perl-any"
+  "deb-profnet-prof"
+  "deb-profphd-net"
+  "deb-profphd-utils"
+]
+conflicts: [
+  "deb-profphd-data"
+  "deb-profphd-perl"
+]
+extra-source "profphd_1.0.42-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/profphd/profphd_1.0.42-3_all.deb"
+}

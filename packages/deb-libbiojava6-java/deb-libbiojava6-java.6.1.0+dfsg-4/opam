@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libbiojava6-java_6.1.0+dfsg-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libbiojava6-java"]
+]
+depends: [
+  "deb-libciftools-java"
+  "deb-libcommons-codec-java"
+  "deb-libcommons-math-java"
+  "deb-libguava-java"
+  "deb-libitext5-java"
+  "deb-libjackson2-databind-java"
+  "deb-libjaxb-api-java"
+  "deb-libjaxb-java"
+  "deb-libjgrapht-java"
+  "deb-libjmol-java"
+  "deb-libjson-simple-java"
+  "deb-libmmtf-java"
+  "deb-libslf4j-java"
+  "deb-libvecmath-java"
+]
+extra-source "libbiojava6-java_6.1.0+dfsg-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/biojava6-live/libbiojava6-java_6.1.0+dfsg-4_all.deb"
+}

@@ -1,0 +1,78 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kdenlive_22.12.3-2+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kdenlive"]
+]
+depends: [
+  "deb-breeze"
+  "deb-breeze-icon-theme" {>= "4-5.83.0"}
+  "deb-ffmpeg"
+  "deb-gstreamer1-0-plugins-bad"
+  "deb-kded5"
+  "deb-kdenlive-data" {= "22.12.3-2+deb12u1"}
+  "deb-kinit"
+  "deb-kio"
+  "deb-libc6" {>= "2.35"}
+  "deb-libkf5archive5" {>= "4.96.0"}
+  "deb-libkf5bookmarks5" {>= "4.96.0"}
+  "deb-libkf5codecs5" {>= "4.96.0"}
+  "deb-libkf5completion5" {>= "5.83.0"}
+  "deb-libkf5configcore5" {>= "4.98.0"}
+  "deb-libkf5configgui5" {>= "4.97.0"}
+  "deb-libkf5configwidgets5" {>= "5.90.1"}
+  "deb-libkf5coreaddons5" {>= "5.84.0"}
+  "deb-libkf5crash5" {>= "5.15.0"}
+  "deb-libkf5dbusaddons5" {>= "4.97.0"}
+  "deb-libkf5declarative5" {>= "4.96.0"}
+  "deb-libkf5filemetadata3" {>= "5.0.2+git20140925"}
+  "deb-libkf5guiaddons5" {>= "4.96.0"}
+  "deb-libkf5i18n5" {>= "5.17.0"}
+  "deb-libkf5iconthemes5" {>= "4.96.0"}
+  "deb-libkf5itemviews5" {>= "4.96.0"}
+  "deb-libkf5jobwidgets5" {>= "4.96.0"}
+  "deb-libkf5kiocore5" {>= "5.98.0"}
+  "deb-libkf5kiofilewidgets5" {>= "5.69.0"}
+  "deb-libkf5kiogui5" {>= "5.74.0"}
+  "deb-libkf5kiowidgets5" {>= "5.69.0"}
+  "deb-libkf5newstuffwidgets5" {>= "5.93.0"}
+  "deb-libkf5notifications5" {>= "5.35.0"}
+  "deb-libkf5notifyconfig5" {>= "4.96.0"}
+  "deb-libkf5purpose-bin"
+  "deb-libkf5purpose5" {>= "1.1"}
+  "deb-libkf5solid5" {>= "4.97.0"}
+  "deb-libkf5textwidgets5" {>= "4.96.0"}
+  "deb-libkf5widgetsaddons5" {>= "5.100.0"}
+  "deb-libkf5xmlgui5" {>= "5.97.0"}
+  "deb-libmlt++7" {>= "7.12.0"}
+  "deb-libmlt7" {>= "7.12.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.14.1"}
+  "deb-libqt5multimedia5" {>= "5.9.0~rc"}
+  "deb-libqt5network5" {>= "5.15.1"}
+  "deb-libqt5networkauth5" {>= "5.12.2"}
+  "deb-libqt5qml5" {>= "5.9.0~beta"}
+  "deb-libqt5quickcontrols2-5" {>= "5.9.0~rc"}
+  "deb-libqt5quickwidgets5" {>= "5.11.0"}
+  "deb-libqt5svg5" {>= "5.6.0~beta"}
+  "deb-libqt5widgets5" {>= "5.15.1"}
+  "deb-libqt5xml5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-melt"
+  "deb-qml-module-org-kde-kcm"
+  "deb-qml-module-org-kde-newstuff"
+  "deb-qml-module-qtgraphicaleffects"
+  "deb-qml-module-qtqml-models2"
+  "deb-qml-module-qtquick-controls"
+  "deb-qml-module-qtquick-controls2"
+  "deb-qml-module-qtquick-dialogs"
+  "deb-qml-module-qtquick-layouts"
+  "deb-qml-module-qtquick-window2"
+  "deb-qml-module-qtquick2"
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5quick5" {>= "5.6.1"} | "deb- libqt5quick5-gles" {>= "5.6.1"})
+]
+extra-source "kdenlive_22.12.3-2+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kdenlive/kdenlive_22.12.3-2+deb12u1_amd64.deb"
+}

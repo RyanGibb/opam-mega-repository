@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpcl-keypoints1.11_1.11.1+dfsg-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpcl-keypoints1.11"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgomp1" {>= "6"}
+  "deb-libpcl-common1-11" {>= "1.11.1+dfsg"}
+  "deb-libpcl-features1-11" {>= "1.11.1+dfsg"}
+  "deb-libpcl-search1-11" {>= "1.11.1+dfsg"}
+  "deb-libstdc++6" {>= "5.2"}
+]
+extra-source "libpcl-keypoints1.11_1.11.1+dfsg-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pcl/libpcl-keypoints1.11_1.11.1+dfsg-1+b1_amd64.deb"
+}

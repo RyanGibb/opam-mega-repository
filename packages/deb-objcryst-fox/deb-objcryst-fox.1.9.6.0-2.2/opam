@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i objcryst-fox_1.9.6.0-2.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r objcryst-fox"]
+]
+depends: [
+  "deb-freeglut3" {>= "2.8.1"}
+  "deb-libc6" {>= "2.22"}
+  "deb-libfftw3-single3" {>= "3.3.5"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgl1"
+  "deb-libnewmat10ldbl"
+  "deb-libstdc++6" {>= "9"}
+  "deb-libwxbase3-0-0v5" {>= "3.0.4+dfsg"}
+  "deb-libwxgtk3-0-gtk3-0v5" {>= "3.0.4+dfsg-10~"}
+  ("deb-libglu1-mesa" | "deb- libglu1")
+]
+extra-source "objcryst-fox_1.9.6.0-2.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/objcryst-fox/objcryst-fox_1.9.6.0-2.2_amd64.deb"
+}

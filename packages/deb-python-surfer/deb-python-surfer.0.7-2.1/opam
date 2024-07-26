@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-surfer_0.7-2.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-surfer"]
+]
+depends: [
+  "deb-libpython2-7-stdlib"
+  "deb-mayavi2"
+  "deb-python" {< "2.8"}
+  "deb-python" {>= "2.7"}
+  "deb-python-any" {>= "2.6.6-7~"}
+  "deb-python-matplotlib"
+  "deb-python-nibabel"
+  "deb-python-numpy"
+  "deb-python-scipy"
+  ("deb-python-pil" | "deb- python-imaging")
+]
+extra-source "python-surfer_0.7-2.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pysurfer/python-surfer_0.7-2.1_all.deb"
+}

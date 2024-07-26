@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gnupg-gpgconf-2.4.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gnupg-gpgconf"]
+]
+depends: [
+  "apk-libassuan" {= "2.5.6-r1"}
+  "apk-libgcrypt" {= "1.10.3-r0"}
+  "apk-libgpg-error" {= "1.47-r2"}
+  "apk-musl" {= "1.2.4_git20230717-r4"}
+  "apk-pinentry" {= "1.2.1-r1"}
+]
+extra-source "gnupg-gpgconf-2.4.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/gnupg-gpgconf-2.4.4-r0.apk"
+}

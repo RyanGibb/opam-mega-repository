@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i monero_0.17.2.0+~0+20200826-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r monero"]
+]
+depends: [
+  "deb-libboost-chrono1-74-0" {>= "1.74.0"}
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0"}
+  "deb-libboost-program-options1-74-0" {>= "1.74.0"}
+  "deb-libboost-regex1-74-0"
+  "deb-libboost-serialization1-74-0" {>= "1.74.0"}
+  "deb-libboost-thread1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libhidapi-libusb0" {>= "0.8.0~rc1+git20140201.3a66d4e+dfsg"}
+  "deb-libminiupnpc17" {>= "1.9.20140610"}
+  "deb-librandomx0" {>= "1.1.7"}
+  "deb-libreadline8" {>= "7.0~rc1"}
+  "deb-libsodium23" {>= "0.6.0"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libunbound8" {>= "1.8.0"}
+  "deb-libzmq5" {>= "4.0.1+dfsg"}
+]
+extra-source "monero_0.17.2.0+~0+20200826-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/monero/monero_0.17.2.0+~0+20200826-1_amd64.deb"
+}

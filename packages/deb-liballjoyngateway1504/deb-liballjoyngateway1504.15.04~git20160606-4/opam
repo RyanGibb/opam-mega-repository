@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i liballjoyngateway1504_15.04~git20160606-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r liballjoyngateway1504"]
+]
+depends: [
+  "deb-liballjoyn1504"
+  "deb-liballjoynservices1504"
+  "deb-libc6" {>= "2.3.4"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libxml2" {>= "2.6.27"}
+]
+extra-source "liballjoyngateway1504_15.04~git20160606-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/alljoyn-gateway-1504/liballjoyngateway1504_15.04~git20160606-4_amd64.deb"
+}

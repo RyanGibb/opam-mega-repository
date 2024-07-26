@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i therion_5.5.7ds1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r therion"]
+]
+depends: [
+  "deb-bwidget"
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libproj19" {>= "7.0.0"}
+  "deb-libshp2" {>= "1.3.0"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-tcl"
+  "deb-texlive-base"
+  "deb-texlive-metapost"
+]
+extra-source "therion_5.5.7ds1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/therion/therion_5.5.7ds1-2_amd64.deb"
+}

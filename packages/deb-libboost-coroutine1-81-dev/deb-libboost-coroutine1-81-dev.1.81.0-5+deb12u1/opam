@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libboost-coroutine1.81-dev_1.81.0-5+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libboost-coroutine1.81-dev"]
+]
+depends: [
+  "deb-libboost-context1-81-dev" {= "1.81.0-5+deb12u1"}
+  "deb-libboost-coroutine1-81-0" {= "1.81.0-5+deb12u1"}
+  "deb-libboost1-81-dev" {= "1.81.0-5+deb12u1"}
+]
+conflicts: [
+  "deb-libboost-coroutine1-54-dev"
+  "deb-libboost-coroutine1-55-dev"
+  "deb-libboost-coroutine1-57-dev"
+  "deb-libboost-coroutine1-58-dev"
+  "deb-libboost-coroutine1-60-dev"
+  "deb-libboost-coroutine1-61-dev"
+  "deb-libboost-coroutine1-62-dev"
+  "deb-libboost-coroutine1-63-dev"
+  "deb-libboost-coroutine1-65-dev"
+  "deb-libboost-coroutine1-67-dev"
+  "deb-libboost-coroutine1-70-dev"
+  "deb-libboost-coroutine1-71-dev"
+  "deb-libboost-coroutine1-74-dev"
+  "deb-libboost-coroutine1-80-dev"
+]
+extra-source "libboost-coroutine1.81-dev_1.81.0-5+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/boost1.81/libboost-coroutine1.81-dev_1.81.0-5+deb12u1_amd64.deb"
+}

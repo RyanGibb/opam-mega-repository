@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librte-meta-common_22.11.5-1~deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librte-meta-common"]
+]
+depends: [
+  "deb-librte-common-cnxk23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-common-cpt23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-common-dpaax23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-common-iavf23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-common-idpf23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-common-mlx5-23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-common-octeontx23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-common-qat23" {= "22.11.5-1~deb12u1"}
+  "deb-librte-common-sfc-efx23" {= "22.11.5-1~deb12u1"}
+]
+extra-source "librte-meta-common_22.11.5-1~deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dpdk/librte-meta-common_22.11.5-1~deb12u1_amd64.deb"
+}

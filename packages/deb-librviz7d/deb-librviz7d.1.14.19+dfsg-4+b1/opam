@@ -1,0 +1,47 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librviz7d_1.14.19+dfsg-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librviz7d"]
+]
+depends: [
+  "deb-libament-index-cpp0d" {>= "1.5.1"}
+  "deb-libassimp5" {>= "5.2.5~ds0"}
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-program-options1-74-0" {>= "1.74.0+ds1"}
+  "deb-libboost-thread1-74-0" {>= "1.74.0+ds1"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libclass-loader3d" {>= "2.4.0"}
+  "deb-libconsole-bridge1-0" {>= "1.0.1+dfsg2"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglx0"
+  "deb-libimage-transport0d" {>= "1.12.0"}
+  "deb-libinteractive-markers2d" {>= "1.12.0"}
+  "deb-liblaser-geometry0d" {>= "1.6.7"}
+  "deb-libmessage-filters1d" {>= "1.15.15+ds"}
+  "deb-libogre1-12-10" {>= "1.12.10+dfsg1-1~"}
+  "deb-libopengl0"
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5widgets5" {>= "5.14.1"}
+  "deb-librcpputils1d" {>= "2.6.0"}
+  "deb-librcutils1d" {>= "6.0.0"}
+  "deb-libresource-retriever0d" {>= "1.12.7"}
+  "deb-librosconsole3d" {>= "1.14.3"}
+  "deb-libroscpp-serialization0d" {>= "0.7.2"}
+  "deb-libroscpp4d" {>= "1.15.15+ds"}
+  "deb-libroslib0d" {>= "1.15.8"}
+  "deb-librostime1d" {>= "0.7.2"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libtf2-2d" {>= "0.7.6"}
+  "deb-libtf2-ros1d" {>= "0.7.6"}
+  "deb-libtinyxml2-9" {>= "8.0.0"}
+  "deb-liburdf1d" {>= "1.13.2"}
+  "deb-liburdfdom-world3-0" {>= "3.0.1"}
+  "deb-libx11-6"
+  "deb-libyaml-cpp0-7" {>= "0.7.0"}
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+]
+extra-source "librviz7d_1.14.19+dfsg-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ros-rviz/librviz7d_1.14.19+dfsg-4+b1_amd64.deb"
+}

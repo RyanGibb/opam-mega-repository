@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i zephyr-server_3.1.2-1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r zephyr-server"]
+]
+depends: [
+  "deb-libc-ares2" {>= "1.7.0"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcom-err2" {>= "1.01"}
+  "deb-libhesiod0"
+  "deb-libzephyr4"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+conflicts: [
+  "deb-zephyr-server-krb"
+  "deb-zephyr-server-krb45"
+  "deb-zephyr-server-krb5"
+]
+extra-source "zephyr-server_3.1.2-1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/z/zephyr/zephyr-server_3.1.2-1+b3_amd64.deb"
+}

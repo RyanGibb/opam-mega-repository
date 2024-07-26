@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmodule-inspector-perl_1.05-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmodule-inspector-perl"]
+]
+depends: [
+  "deb-libfile-find-rule-perl"
+  "deb-libfile-find-rule-perl-perl"
+  "deb-libfile-find-rule-vcs-perl"
+  "deb-libmodule-extract-perl"
+  "deb-libmodule-manifest-perl"
+  "deb-libmodule-math-depends-perl"
+  "deb-libparams-util-perl"
+  "deb-libppi-perl"
+  "deb-libyaml-tiny-perl"
+  "deb-perl-any"
+]
+extra-source "libmodule-inspector-perl_1.05-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libm/libmodule-inspector-perl/libmodule-inspector-perl_1.05-3_all.deb"
+}

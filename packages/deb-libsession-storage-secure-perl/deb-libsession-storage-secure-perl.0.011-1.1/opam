@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsession-storage-secure-perl_0.011-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsession-storage-secure-perl"]
+]
+depends: [
+  "deb-libcrypt-cbc-perl"
+  "deb-libcrypt-rijndael-perl"
+  "deb-libcrypt-urandom-perl"
+  "deb-libmath-random-isaac-xs-perl"
+  "deb-libmoo-perl"
+  "deb-libmoox-types-mooselike-perl"
+  "deb-libnamespace-clean-perl"
+  "deb-libsereal-decoder-perl"
+  "deb-libsereal-encoder-perl"
+  "deb-libstring-compare-constanttime-perl"
+  "deb-perl-any"
+]
+extra-source "libsession-storage-secure-perl_0.011-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libs/libsession-storage-secure-perl/libsession-storage-secure-perl_0.011-1.1_all.deb"
+}

@@ -1,0 +1,58 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdist-zilla-perl_6.030-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdist-zilla-perl"]
+]
+depends: [
+  "deb-libapp-cmd-perl"
+  "deb-libautobox-perl"
+  "deb-libconfig-ini-perl"
+  "deb-libconfig-mvp-perl"
+  "deb-libconfig-mvp-reader-ini-perl"
+  "deb-libcpan-uploader-perl"
+  "deb-libdata-section-perl"
+  "deb-libdatetime-perl"
+  "deb-libfile-copy-recursive-perl"
+  "deb-libfile-find-rule-perl"
+  "deb-libfile-pushd-perl"
+  "deb-libfile-sharedir-install-perl"
+  "deb-libfile-sharedir-perl"
+  "deb-libhash-merge-simple-perl"
+  "deb-libio-tiecombine-perl"
+  "deb-libjson-perl"
+  "deb-liblog-dispatchouli-perl"
+  "deb-libmixin-linewise-perl"
+  "deb-libmodule-runtime-perl"
+  "deb-libmoose-autobox-perl"
+  "deb-libmoose-perl"
+  "deb-libmoosex-lazyrequire-perl"
+  "deb-libmoosex-role-parameterized-perl"
+  "deb-libmoosex-setonce-perl"
+  "deb-libmoosex-types-perl"
+  "deb-libmoosex-types-perl-perl"
+  "deb-libnamespace-autoclean-perl"
+  "deb-libpath-tiny-perl"
+  "deb-libperl-prereqscanner-perl"
+  "deb-libperl-version-perl"
+  "deb-libpod-simple-perl"
+  "deb-libppi-perl"
+  "deb-libscalar-list-utils-perl"
+  "deb-libsoftware-license-perl" {>= "0.104001"}
+  "deb-libstring-formatter-perl"
+  "deb-libstring-rewriteprefix-perl"
+  "deb-libsub-exporter-formethods-perl"
+  "deb-libterm-encoding-perl"
+  "deb-libterm-readkey-perl"
+  "deb-libtest-deep-perl"
+  "deb-libtext-glob-perl"
+  "deb-libtext-template-perl"
+  "deb-libtry-tiny-perl"
+  "deb-libyaml-tiny-perl"
+  "deb-perl" {>= "5.31.8"}
+  "deb-perl-any"
+]
+extra-source "libdist-zilla-perl_6.030-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libd/libdist-zilla-perl/libdist-zilla-perl_6.030-1_all.deb"
+}

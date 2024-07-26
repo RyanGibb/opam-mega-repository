@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i murano-agent_1:10.0.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r murano-agent"]
+]
+depends: [
+  "deb-adduser"
+  "deb-lsb-base"
+  "deb-python3-any"
+  "deb-python3-anyjson"
+  "deb-python3-cryptography" {>= "2.7"}
+  "deb-python3-eventlet" {>= "0.30.1"}
+  "deb-python3-git"
+  "deb-python3-kombu" {>= "4.6.1"}
+  "deb-python3-oslo-config"
+  "deb-python3-oslo-log"
+  "deb-python3-oslo-service" {>= "2.5.0"}
+  "deb-python3-oslo-utils" {>= "4.8.0"}
+  "deb-python3-pbr" {>= "5.5.1"}
+  "deb-python3-requests"
+  "deb-python3-semantic-version"
+  "deb-python3-yaml"
+]
+extra-source "murano-agent_1:10.0.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/murano-agent/murano-agent_10.0.0-1_all.deb"
+}

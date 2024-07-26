@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i shorewall6-lite_5.2.3.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r shorewall6-lite"]
+]
+depends: [
+  "deb-iptables" {>= "1.4.1"}
+  "deb-lsb-base" {>= "3.0-6"}
+  "deb-shorewall-core" {< "5.2.4~"}
+  "deb-shorewall-core" {>= "5.2.3~"}
+  ("deb-iproute2" | "deb- iproute")
+]
+conflicts: [
+  "deb-ferm"
+  "deb-filtergen"
+  "deb-firewall-easy"
+  "deb-gnome-lokkit"
+  "deb-guarddog"
+  "deb-guidedog"
+  "deb-ipmasq"
+  "deb-ipmenu"
+  "deb-knetfilter"
+  "deb-uif"
+  "deb-webmin-firewall"
+]
+extra-source "shorewall6-lite_5.2.3.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/shorewall6-lite/shorewall6-lite_5.2.3.2-1_all.deb"
+}

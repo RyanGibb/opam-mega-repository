@@ -1,0 +1,50 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lava-server_2023.01-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lava-server"]
+]
+depends: [
+  "deb-adduser"
+  "deb-lava-common" {= "2023.01-2"}
+  "deb-lava-server-doc" {= "2023.01-2"}
+  "deb-libjs-bootstrap"
+  "deb-libjs-excanvas"
+  "deb-libjs-jquery"
+  "deb-libjs-jquery-flot"
+  "deb-libjs-jquery-typeahead"
+  "deb-postgresql-client"
+  "deb-python3-aiohttp"
+  "deb-python3-any" {>= "3.6~"}
+  "deb-python3-celery"
+  "deb-python3-defusedxml"
+  "deb-python3-django"
+  "deb-python3-django-allauth"
+  "deb-python3-django-auth-ldap"
+  "deb-python3-django-environ"
+  "deb-python3-django-filters"
+  "deb-python3-django-tables2"
+  "deb-python3-djangorestframework"
+  "deb-python3-djangorestframework-extensions"
+  "deb-python3-djangorestframework-filters"
+  "deb-python3-docutils"
+  "deb-python3-eventlet"
+  "deb-python3-jinja2"
+  "deb-python3-junit-xml"
+  "deb-python3-psycopg2"
+  "deb-python3-requests"
+  "deb-python3-simplejson"
+  "deb-python3-tap"
+  "deb-python3-tz"
+  "deb-python3-voluptuous"
+  "deb-python3-whitenoise"
+  "deb-python3-yaml"
+  "deb-python3-zmq"
+  "deb-systemd-sysv"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-gunicorn" {>= "19.9.0-4"} | "deb- gunicorn3")
+]
+extra-source "lava-server_2023.01-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lava/lava-server_2023.01-2_all.deb"
+}

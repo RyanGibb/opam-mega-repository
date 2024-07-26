@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libeclipse-jdt-core-manipulation-java_1.11.0+eclipse4.10-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libeclipse-jdt-core-manipulation-java"]
+]
+depends: [
+  "deb-libeclipse-core-expressions-java"
+  "deb-libeclipse-core-filebuffers-java"
+  "deb-libeclipse-core-filesystem-java"
+  "deb-libeclipse-core-jobs-java"
+  "deb-libeclipse-core-resources-java"
+  "deb-libeclipse-core-runtime-java"
+  "deb-libeclipse-jdt-core-java" {>= "3.16"}
+  "deb-libeclipse-jdt-launching-java"
+  "deb-libeclipse-ltk-core-refactoring-java"
+  "deb-libeclipse-text-java" {>= "3.8"}
+  "deb-libequinox-common-java"
+  "deb-libequinox-preferences-java"
+  "deb-libicu4j-java"
+]
+extra-source "libeclipse-jdt-core-manipulation-java_1.11.0+eclipse4.10-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/eclipse-jdt-ui/libeclipse-jdt-core-manipulation-java_1.11.0+eclipse4.10-1_all.deb"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i abntex_0.9~beta2-5.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r abntex"]
+]
+depends: [
+  "deb-dpkg" {>= "1.14.18"}
+  "deb-tex-common" {>= "3"}
+  "deb-texlive-fonts-recommended"
+  "deb-texlive-lang-portuguese"
+  "deb-texlive-latex-recommended"
+]
+extra-source "abntex_0.9~beta2-5.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/abntex/abntex_0.9~beta2-5.1_all.deb"
+}

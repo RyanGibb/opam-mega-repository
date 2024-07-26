@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgoffice-0.10-10_0.10.44-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgoffice-0.10-10"]
+]
+depends: [
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo2" {>= "1.10.0"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.41.1"}
+  "deb-libgoffice-0-10-10-common" {>= "0.10.44-1"}
+  "deb-libgsf-1-114" {>= "1.14.23"}
+  "deb-libgtk-3-0" {>= "3.19.12"}
+  "deb-libpango-1-0-0" {>= "1.18.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-librsvg2-2" {>= "2.14.4"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libxslt1-1" {>= "1.1.25"}
+]
+extra-source "libgoffice-0.10-10_0.10.44-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/goffice/libgoffice-0.10-10_0.10.44-1_amd64.deb"
+}

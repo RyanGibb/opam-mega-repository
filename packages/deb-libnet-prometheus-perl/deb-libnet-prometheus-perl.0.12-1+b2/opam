@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libnet-prometheus-perl_0.12-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libnet-prometheus-perl"]
+]
+depends: [
+  "deb-libc6" {>= "2.3"}
+  "deb-libref-util-perl"
+  "deb-libscalar-list-utils-perl"
+  "deb-libstruct-dumb-perl"
+  "deb-liburi-perl"
+  "deb-perl" {>= "5.36.0-4"}
+  "deb-perl-base"
+]
+extra-source "libnet-prometheus-perl_0.12-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libn/libnet-prometheus-perl/libnet-prometheus-perl_0.12-1+b2_amd64.deb"
+}

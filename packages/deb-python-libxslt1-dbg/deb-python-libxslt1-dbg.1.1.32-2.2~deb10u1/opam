@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-libxslt1-dbg_1.1.32-2.2~deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-libxslt1-dbg"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libpython2-7" {>= "2.7"}
+  "deb-libxslt1-1" {>= "1.1.27"}
+  "deb-python-dbg"
+  "deb-python-libxml2-dbg"
+  "deb-python-libxslt1" {= "1.1.32-2.2~deb10u1"}
+]
+extra-source "python-libxslt1-dbg_1.1.32-2.2~deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libx/libxslt/python-libxslt1-dbg_1.1.32-2.2~deb10u1_amd64.deb"
+}

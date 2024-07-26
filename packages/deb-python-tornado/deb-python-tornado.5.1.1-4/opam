@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-tornado_5.1.1-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-tornado"]
+]
+depends: [
+  "deb-ca-certificates"
+  "deb-libc6" {>= "2.4"}
+  "deb-python" {< "2.8"}
+  "deb-python" {>= "2.7~"}
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7~"}
+  "deb-python-backports-abc"
+  "deb-python-concurrent-futures"
+  "deb-python-singledispatch"
+]
+extra-source "python-tornado_5.1.1-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-tornado/python-tornado_5.1.1-4_amd64.deb"
+}

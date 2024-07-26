@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libxmu-dev_2:1.1.2-2+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libxmu-dev"]
+]
+depends: [
+  "deb-libxext-dev"
+  "deb-libxmu-headers" {= "2-1.1.2-2"}
+  "deb-libxmu6" {= "2-1.1.2-2+b3"}
+  "deb-libxt-dev"
+]
+extra-source "libxmu-dev_2:1.1.2-2+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libx/libxmu/libxmu-dev_1.1.2-2+b3_amd64.deb"
+}

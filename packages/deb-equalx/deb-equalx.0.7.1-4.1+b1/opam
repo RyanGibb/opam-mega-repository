@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i equalx_0.7.1-4.1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r equalx"]
+]
+depends: [
+  "deb-ghostscript"
+  "deb-libc6" {>= "2.14"}
+  "deb-libexempi8" {>= "2.5.0"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgl1"
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5gui5" {>= "5.8.0"}
+  "deb-libqt5sql5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.11.0~rc1"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-poppler-utils"
+  "deb-texlive-latex-base"
+]
+extra-source "equalx_0.7.1-4.1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/equalx/equalx_0.7.1-4.1+b1_amd64.deb"
+}

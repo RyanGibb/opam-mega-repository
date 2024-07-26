@@ -1,0 +1,41 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-hledger-prof_1.18.1-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-hledger-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-aeson-prof"
+  "deb-libghc-ansi-terminal-prof"
+  "deb-libghc-base-compat-batteries-prof"
+  "deb-libghc-cmdargs-prof"
+  "deb-libghc-data-default-prof"
+  "deb-libghc-decimal-prof"
+  "deb-libghc-diff-prof"
+  "deb-libghc-extra-prof"
+  "deb-libghc-hashable-prof"
+  "deb-libghc-hledger-dev" {= "1.18.1-1+b1"}
+  "deb-libghc-hledger-lib-prof"
+  "deb-libghc-lucid-prof"
+  "deb-libghc-math-functions-prof"
+  "deb-libghc-megaparsec-prof"
+  "deb-libghc-old-time-prof"
+  "deb-libghc-pretty-show-prof"
+  "deb-libghc-regex-tdfa-prof"
+  "deb-libghc-safe-prof"
+  "deb-libghc-shakespeare-prof"
+  "deb-libghc-split-prof"
+  "deb-libghc-tabular-prof"
+  "deb-libghc-tasty-prof"
+  "deb-libghc-temporary-prof"
+  "deb-libghc-timeit-prof"
+  "deb-libghc-unordered-containers-prof"
+  "deb-libghc-utf8-string-prof"
+  "deb-libghc-utility-ht-prof"
+  "deb-libghc-wizards-prof"
+]
+extra-source "libghc-hledger-prof_1.18.1-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-hledger/libghc-hledger-prof_1.18.1-1+b1_amd64.deb"
+}

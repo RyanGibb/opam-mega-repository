@@ -1,0 +1,53 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i labplot_2.8.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r labplot"]
+]
+depends: [
+  "deb-kio"
+  "deb-labplot-data" {= "2.8.1-2"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libcantorlibs28" {>= "4-20.12.1"}
+  "deb-libcerf1"
+  "deb-libcfitsio9" {>= "3.480~"}
+  "deb-libfftw3-double3" {>= "3.3.5"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgsl25" {>= "2.6"}
+  "deb-libgslcblas0" {>= "2.6"}
+  "deb-libhdf5-103-1"
+  "deb-libkf5archive5" {>= "5.16.0"}
+  "deb-libkf5completion5" {>= "5.16.0"}
+  "deb-libkf5configcore5" {>= "5.16.0"}
+  "deb-libkf5configgui5" {>= "5.16.0"}
+  "deb-libkf5configwidgets5" {>= "5.23.0"}
+  "deb-libkf5coreaddons5" {>= "5.16.0"}
+  "deb-libkf5crash5" {>= "5.16.0"}
+  "deb-libkf5i18n5" {>= "5.16.0"}
+  "deb-libkf5iconthemes5" {>= "5.16.0"}
+  "deb-libkf5kiowidgets5" {>= "5.69.0"}
+  "deb-libkf5parts5" {>= "5.16.0"}
+  "deb-libkf5syntaxhighlighting5" {>= "5.28.0"}
+  "deb-libkf5textwidgets5" {>= "5.16.0"}
+  "deb-libkf5widgetsaddons5" {>= "5.16.0"}
+  "deb-libkf5xmlgui5" {>= "5.16.0"}
+  "deb-libkuserfeedbackcore1" {>= "1.0.0"}
+  "deb-libkuserfeedbackwidgets1" {>= "1.0.0"}
+  "deb-liblz4-1" {>= "0.0~r122"}
+  "deb-libnetcdf18" {>= "4.0.1"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5network5" {>= "5.6.0"}
+  "deb-libqt5printsupport5" {>= "5.6.0"}
+  "deb-libqt5serialport5" {>= "5.6.0"}
+  "deb-libqt5sql5" {>= "5.6.0"}
+  "deb-libqt5svg5" {>= "5.6.0~beta"}
+  "deb-libqt5widgets5" {>= "5.14.1"}
+  "deb-libqt5xml5" {>= "5.6.0"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "labplot_2.8.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/labplot/labplot_2.8.1-2_amd64.deb"
+}

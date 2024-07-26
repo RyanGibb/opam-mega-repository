@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libwsclean2_2.10.1-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libwsclean2"]
+]
+depends: [
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libcasa-casa5" {>= "3.3.0"}
+  "deb-libcasa-fits5" {>= "3.3.0"}
+  "deb-libcasa-measures5" {>= "3.3.0"}
+  "deb-libcasa-ms5" {>= "3.3.0"}
+  "deb-libcasa-tables5" {>= "3.3.0"}
+  "deb-libcfitsio9" {>= "3.480~"}
+  "deb-libfftw3-double3" {>= "3.3.5"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libgsl25" {>= "2.6"}
+  "deb-libhdf5-103-1"
+  "deb-libhdf5-cpp-103-1" {>= "1.10.5"}
+  "deb-libstdc++6" {>= "9"}
+]
+extra-source "libwsclean2_2.10.1-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/w/wsclean/libwsclean2_2.10.1-1+b2_amd64.deb"
+}

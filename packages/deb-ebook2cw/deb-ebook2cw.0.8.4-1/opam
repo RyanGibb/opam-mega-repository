@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ebook2cw_0.8.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ebook2cw"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libmp3lame0" {>= "3.100"}
+  "deb-libogg0" {>= "1.0rc3"}
+  "deb-libvorbis0a" {>= "1.1.2"}
+  "deb-libvorbisenc2" {>= "1.1.2"}
+]
+extra-source "ebook2cw_0.8.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/ebook2cw/ebook2cw_0.8.4-1_amd64.deb"
+}

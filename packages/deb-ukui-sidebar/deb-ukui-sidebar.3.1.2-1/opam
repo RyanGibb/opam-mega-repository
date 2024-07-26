@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ukui-sidebar_3.1.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ukui-sidebar"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libdconf1" {>= "0.14.0"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libgsettings-qt1" {>= "0.1+14.04.20140408"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.14.1"}
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libqt5sql5" {>= "5.0.2"}
+  "deb-libqt5svg5" {>= "5.6.0~beta"}
+  "deb-libqt5widgets5" {>= "5.15.1"}
+  "deb-libqt5xdg3" {>= "1.0.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libukui-log4qt1" {>= "1.0.1"}
+  "deb-libx11-6"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+]
+extra-source "ukui-sidebar_3.1.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/u/ukui-sidebar/ukui-sidebar_3.1.2-1_amd64.deb"
+}

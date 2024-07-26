@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-crypto-browserify_3.12.0-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-crypto-browserify"]
+]
+depends: [
+  "deb-node-browserify-cipher"
+  "deb-node-browserify-sign"
+  "deb-node-create-ecdh"
+  "deb-node-create-hash"
+  "deb-node-create-hmac"
+  "deb-node-inherits"
+  "deb-node-pbkdf2"
+  "deb-node-public-encrypt"
+  "deb-node-randombytes"
+  "deb-node-randomfill"
+]
+extra-source "node-crypto-browserify_3.12.0-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-crypto-browserify/node-crypto-browserify_3.12.0-6_all.deb"
+}

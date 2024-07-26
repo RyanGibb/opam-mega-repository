@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i moarvm-dev_2022.12+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r moarvm-dev"]
+]
+depends: [
+  "deb-libatomic-ops-dev"
+  "deb-libffi-dev"
+  "deb-libtommath-dev"
+  "deb-libuv1-dev"
+  "deb-moarvm" {= "2022.12+dfsg-1"}
+]
+extra-source "moarvm-dev_2022.12+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/moarvm/moarvm-dev_2022.12+dfsg-1_amd64.deb"
+}

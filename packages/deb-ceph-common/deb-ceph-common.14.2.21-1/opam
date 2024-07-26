@@ -1,0 +1,52 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ceph-common_14.2.21-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ceph-common"]
+]
+depends: [
+  "deb-libaio1" {>= "0.3.93"}
+  "deb-libbabeltrace1" {>= "1.5.4"}
+  "deb-libblkid1" {>= "2.17.2"}
+  "deb-libboost-coroutine1-74-0" {>= "1.74.0"}
+  "deb-libboost-program-options1-74-0" {>= "1.74.0"}
+  "deb-libboost-thread1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.30"}
+  "deb-libcap-ng0" {>= "0.7.9"}
+  "deb-libcephfs2" {>= "12.0.3"}
+  "deb-libcurl3-gnutls" {>= "7.28.0"}
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libgcc-s1" {>= "3.4"}
+  "deb-libgoogle-perftools4"
+  "deb-libkeyutils1" {>= "1.4"}
+  "deb-libldap-2-4-2" {>= "2.4.7"}
+  "deb-libleveldb1d"
+  "deb-liblz4-1" {>= "0.0~r130"}
+  "deb-libncurses6" {>= "6"}
+  "deb-libnspr4" {>= "2-4.9-2~"}
+  "deb-libnss3" {>= "2-3.13.4-2~"}
+  "deb-liboath0" {>= "1.10.0"}
+  "deb-librabbitmq4" {>= "0.6.0"}
+  "deb-librados2" {>= "14.2.0"}
+  "deb-libradosstriper1" {>= "0.87"}
+  "deb-librbd1" {= "14.2.21-1"}
+  "deb-libsnappy1v5" {>= "1.1.8"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-libudev1" {>= "183"}
+  "deb-python3-any"
+  "deb-python3-cephfs" {= "14.2.21-1"}
+  "deb-python3-prettytable"
+  "deb-python3-rados" {= "14.2.21-1"}
+  "deb-python3-rbd" {= "14.2.21-1"}
+  "deb-python3-requests"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+conflicts: [
+  "deb-ceph-client-tools"
+]
+extra-source "ceph-common_14.2.21-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/ceph/ceph-common_14.2.21-1_amd64.deb"
+}

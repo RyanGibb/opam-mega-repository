@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-mississippi_3.0.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-mississippi"]
+]
+depends: [
+  "deb-node-concat-stream" {>= "1.5~"}
+  "deb-node-duplexify" {>= "3.4.2~"}
+  "deb-node-end-of-stream" {>= "1.1~"}
+  "deb-node-flush-write-stream" {>= "1.0~"}
+  "deb-node-from2" {>= "2.1~"}
+  "deb-node-parallel-transform" {>= "1.1~"}
+  "deb-node-pump" {>= "3.0~"}
+  "deb-node-pumpify" {>= "1.3.3~"}
+  "deb-node-stream-each" {>= "1.1~"}
+  "deb-node-through2" {>= "2.0~"}
+  "deb-nodejs"
+]
+extra-source "node-mississippi_3.0.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-mississippi/node-mississippi_3.0.0-1_all.deb"
+}

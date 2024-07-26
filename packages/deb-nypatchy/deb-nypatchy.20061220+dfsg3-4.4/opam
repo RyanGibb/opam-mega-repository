@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i nypatchy_20061220+dfsg3-4.4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r nypatchy"]
+]
+depends: [
+  "deb-cernlib-base" {>= "2006.dfsg.2-12"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgfortran5" {>= "8"}
+  "deb-libkernlib1-gfortran"
+  "deb-libquadmath0" {>= "4.6"}
+]
+extra-source "nypatchy_20061220+dfsg3-4.4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cernlib/nypatchy_20061220+dfsg3-4.4_amd64.deb"
+}

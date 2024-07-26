@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-openshift-api-dev_4.0+git20190508.81d064c-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-openshift-api-dev"]
+]
+depends: [
+  "deb-golang-github-emicklei-go-restful-dev"
+  "deb-golang-github-google-gofuzz-dev"
+  "deb-golang-github-json-iterator-go-dev"
+  "deb-golang-github-spf13-pflag-dev"
+  "deb-golang-glog-dev"
+  "deb-golang-gogoprotobuf-dev"
+  "deb-golang-golang-x-net-dev"
+  "deb-golang-gopkg-inf-v0-dev"
+]
+extra-source "golang-github-openshift-api-dev_4.0+git20190508.81d064c-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-openshift-api/golang-github-openshift-api-dev_4.0+git20190508.81d064c-4_all.deb"
+}

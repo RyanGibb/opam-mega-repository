@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-ffcv_0.0.3-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-ffcv"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libopencv-core406" {>= "4.6.0+dfsg"}
+  "deb-libopencv-imgproc406" {>= "4.6.0+dfsg"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-libturbojpeg0" {>= "1.2.90"}
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-any"
+  "deb-python3-matplotlib"
+  "deb-python3-pandas"
+  "deb-python3-psutil"
+  "deb-python3-terminaltables"
+  "deb-python3-tqdm"
+]
+extra-source "python3-ffcv_0.0.3-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/ffcv/python3-ffcv_0.0.3-2+b1_amd64.deb"
+}

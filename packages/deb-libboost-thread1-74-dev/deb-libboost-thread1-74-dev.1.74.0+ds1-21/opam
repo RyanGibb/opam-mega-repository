@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libboost-thread1.74-dev_1.74.0+ds1-21_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libboost-thread1.74-dev"]
+]
+depends: [
+  "deb-libboost-atomic1-74-dev" {= "1.74.0+ds1-21"}
+  "deb-libboost-chrono1-74-dev" {= "1.74.0+ds1-21"}
+  "deb-libboost-date-time1-74-dev" {= "1.74.0+ds1-21"}
+  "deb-libboost-system1-74-dev" {= "1.74.0+ds1-21"}
+  "deb-libboost-thread1-74-0" {= "1.74.0+ds1-21"}
+  "deb-libboost1-74-dev" {= "1.74.0+ds1-21"}
+]
+conflicts: [
+  "deb-libboost-thread1-42-dev"
+  "deb-libboost-thread1-46-dev"
+  "deb-libboost-thread1-48-dev"
+  "deb-libboost-thread1-49-dev"
+  "deb-libboost-thread1-50-dev"
+  "deb-libboost-thread1-52-dev"
+  "deb-libboost-thread1-53-dev"
+  "deb-libboost-thread1-54-dev"
+  "deb-libboost-thread1-55-dev"
+  "deb-libboost-thread1-57-dev"
+  "deb-libboost-thread1-58-dev"
+  "deb-libboost-thread1-60-dev"
+  "deb-libboost-thread1-61-dev"
+  "deb-libboost-thread1-62-dev"
+  "deb-libboost-thread1-63-dev"
+  "deb-libboost-thread1-65-dev"
+  "deb-libboost-thread1-67-dev"
+  "deb-libboost-thread1-70-dev"
+  "deb-libboost-thread1-71-dev"
+]
+extra-source "libboost-thread1.74-dev_1.74.0+ds1-21_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/boost1.74/libboost-thread1.74-dev_1.74.0+ds1-21_amd64.deb"
+}

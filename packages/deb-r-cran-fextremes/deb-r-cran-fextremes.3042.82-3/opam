@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-fextremes_3042.82-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-fextremes"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.0-3"}
+  "deb-r-cran-fbasics" {>= "290.76"}
+  "deb-r-cran-fgarch"
+  "deb-r-cran-ftrading"
+  "deb-r-cran-timedate"
+  "deb-r-cran-timeseries"
+]
+extra-source "r-cran-fextremes_3042.82-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fextremes/r-cran-fextremes_3042.82-3_all.deb"
+}

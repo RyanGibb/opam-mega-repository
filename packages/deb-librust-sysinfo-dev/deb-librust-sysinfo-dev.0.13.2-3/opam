@@ -1,0 +1,44 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-sysinfo-dev_0.13.2-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-sysinfo-dev"]
+]
+depends: [
+  "deb-librust-cfg-if-0-1+default-dev"
+  "deb-librust-doc-comment-0-3+default-dev"
+  "deb-librust-libc-0-2+default-dev"
+  "deb-librust-ntapi-0-3+default-dev"
+  "deb-librust-once-cell-1+default-dev"
+  "deb-librust-rayon-1+default-dev"
+  "deb-librust-winapi-0-3+combaseapi-dev"
+  "deb-librust-winapi-0-3+default-dev"
+  "deb-librust-winapi-0-3+fileapi-dev"
+  "deb-librust-winapi-0-3+handleapi-dev"
+  "deb-librust-winapi-0-3+ifdef-dev"
+  "deb-librust-winapi-0-3+ioapiset-dev"
+  "deb-librust-winapi-0-3+lmaccess-dev"
+  "deb-librust-winapi-0-3+lmapibuf-dev"
+  "deb-librust-winapi-0-3+lmcons-dev"
+  "deb-librust-winapi-0-3+memoryapi-dev"
+  "deb-librust-winapi-0-3+minwindef-dev"
+  "deb-librust-winapi-0-3+netioapi-dev"
+  "deb-librust-winapi-0-3+objidl-dev"
+  "deb-librust-winapi-0-3+oleauto-dev"
+  "deb-librust-winapi-0-3+pdh-dev"
+  "deb-librust-winapi-0-3+powerbase-dev"
+  "deb-librust-winapi-0-3+psapi-dev"
+  "deb-librust-winapi-0-3+rpcdce-dev"
+  "deb-librust-winapi-0-3+shellapi-dev"
+  "deb-librust-winapi-0-3+synchapi-dev"
+  "deb-librust-winapi-0-3+sysinfoapi-dev"
+  "deb-librust-winapi-0-3+wbemcli-dev"
+  "deb-librust-winapi-0-3+winbase-dev"
+  "deb-librust-winapi-0-3+winerror-dev"
+  "deb-librust-winapi-0-3+winioctl-dev"
+  "deb-librust-winapi-0-3+winnt-dev"
+]
+extra-source "librust-sysinfo-dev_0.13.2-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-sysinfo/librust-sysinfo-dev_0.13.2-3_amd64.deb"
+}

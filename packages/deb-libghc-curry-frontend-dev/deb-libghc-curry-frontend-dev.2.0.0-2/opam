@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-curry-frontend-dev_2.0.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-curry-frontend-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-extra-dev"
+  "deb-libghc-file-embed-dev"
+  "deb-libghc-network-uri-dev"
+  "deb-libghc-set-extra-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-curry-frontend-dev_2.0.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/curry-frontend/libghc-curry-frontend-dev_2.0.0-2_amd64.deb"
+}

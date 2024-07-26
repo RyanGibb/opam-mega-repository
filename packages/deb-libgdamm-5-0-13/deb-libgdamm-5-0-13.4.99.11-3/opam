@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgdamm-5.0-13_4.99.11-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgdamm-5.0-13"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgda-5-0-4" {>= "5.0.2"}
+  "deb-libglib2-0-0" {>= "2.16.0"}
+  "deb-libglibmm-2-4-1v5" {>= "2.54.0"}
+  "deb-libsigc++-2-0-0v5" {>= "2.2.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libxml2" {>= "2.6.27"}
+]
+extra-source "libgdamm-5.0-13_4.99.11-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libg/libgdamm5.0/libgdamm-5.0-13_4.99.11-3_amd64.deb"
+}

@@ -1,0 +1,51 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-etcd-server-dev_3.3.25+dfsg-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-etcd-server-dev"]
+]
+depends: [
+  "deb-golang-github-bgentry-speakeasy-dev" {>= "0.1.0~"}
+  "deb-golang-github-coreos-bbolt-dev"
+  "deb-golang-github-coreos-go-semver-dev" {>= "0.2.0~"}
+  "deb-golang-github-coreos-go-systemd-dev"
+  "deb-golang-github-coreos-pkg-dev" {>= "3~"}
+  "deb-golang-github-creack-pty-dev" {>= "1.1.11~"}
+  "deb-golang-github-dgrijalva-jwt-go-dev" {>= "3.2.0~"}
+  "deb-golang-github-dustin-go-humanize-dev"
+  "deb-golang-github-gogo-protobuf-dev"
+  "deb-golang-github-golang-groupcache-dev" {>= "0.0~git20160516.0.02826c3~"}
+  "deb-golang-github-google-btree-dev"
+  "deb-golang-github-google-uuid-dev"
+  "deb-golang-github-gorilla-websocket-dev"
+  "deb-golang-github-grpc-ecosystem-go-grpc-middleware-dev"
+  "deb-golang-github-grpc-ecosystem-go-grpc-prometheus-dev"
+  "deb-golang-github-grpc-ecosystem-grpc-gateway-dev" {>= "1.2.0~"}
+  "deb-golang-github-jonboulle-clockwork-dev"
+  "deb-golang-github-json-iterator-go-dev"
+  "deb-golang-github-modern-go-reflect2-dev"
+  "deb-golang-github-olekukonko-tablewriter-dev" {>= "0.0~git20170122.0.a0225b3~"}
+  "deb-golang-github-prometheus-client-golang-dev" {>= "1.0.0~"}
+  "deb-golang-github-prometheus-client-model-dev"
+  "deb-golang-github-soheilhy-cmux-dev"
+  "deb-golang-github-spf13-cobra-dev"
+  "deb-golang-github-spf13-pflag-dev"
+  "deb-golang-github-tmc-grpc-websocket-proxy-dev"
+  "deb-golang-github-urfave-cli-dev"
+  "deb-golang-github-xiang90-probing-dev" {>= "0.0.1~"}
+  "deb-golang-go-uber-zap-dev"
+  "deb-golang-golang-x-crypto-dev"
+  "deb-golang-golang-x-net-dev"
+  "deb-golang-golang-x-sys-dev"
+  "deb-golang-golang-x-time-dev"
+  "deb-golang-google-genproto-dev"
+  "deb-golang-google-grpc-dev"
+  "deb-golang-gopkg-cheggaaa-pb-v1-dev"
+  "deb-golang-gopkg-yaml-v2-dev"
+  "deb-golang-goprotobuf-dev"
+  "deb-golang-k8s-sigs-yaml-dev"
+]
+extra-source "golang-etcd-server-dev_3.3.25+dfsg-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/etcd/golang-etcd-server-dev_3.3.25+dfsg-6_all.deb"
+}

@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-gyp_9.3.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-gyp"]
+]
+depends: [
+  "deb-gyp" {>= "0.1+20200513gitcaa6002"}
+  "deb-libnode-dev"
+  "deb-node-fetch"
+  "deb-node-glob"
+  "deb-node-graceful-fs"
+  "deb-node-https-proxy-agent"
+  "deb-node-mkdirp"
+  "deb-node-nopt"
+  "deb-node-npmlog"
+  "deb-node-osenv"
+  "deb-node-rimraf"
+  "deb-node-semver" {>= "7"}
+  "deb-node-tar"
+  "deb-node-which"
+  "deb-nodejs-any"
+]
+extra-source "node-gyp_9.3.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-gyp/node-gyp_9.3.0-2_all.deb"
+}

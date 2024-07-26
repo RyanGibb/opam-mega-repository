@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libafflib0v5_3.7.17-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libafflib0v5"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libcurl4" {>= "7.16.2"}
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+conflicts: [
+  "deb-libafflib0"
+]
+extra-source "libafflib0v5_3.7.17-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/afflib/libafflib0v5_3.7.17-5_amd64.deb"
+}

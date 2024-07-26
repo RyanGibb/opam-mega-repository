@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fcitx5-pinyin_5.0.16-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fcitx5-pinyin"]
+]
+depends: [
+  "deb-fcitx5-chinese-addons-data"
+  "deb-fcitx5-module-punctuation" {= "5.0.16-1"}
+  "deb-libboost-iostreams1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.32"}
+  "deb-libfcitx5-qt1" {>= "5.0.16"}
+  "deb-libfcitx5config6" {>= "5.0.20"}
+  "deb-libfcitx5core7" {>= "5.0.20"}
+  "deb-libfcitx5utils2" {>= "5.0.20"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libimecore0" {>= "1.0.15"}
+  "deb-libimepinyin0" {>= "1.0.15"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libqt5webenginewidgets5" {>= "5.7.1"}
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "11"}
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+]
+conflicts: [
+  "deb-fcitx-data"
+]
+extra-source "fcitx5-pinyin_5.0.16-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fcitx5-chinese-addons/fcitx5-pinyin_5.0.16-1_amd64.deb"
+}

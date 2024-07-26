@@ -1,0 +1,54 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i phpunit_7.5.6-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r phpunit"]
+]
+depends: [
+  "deb-php-cli"
+  "deb-php-codecoverage" {< "7~~"}
+  "deb-php-codecoverage" {>= "6.0.7"}
+  "deb-php-common"
+  "deb-php-deepcopy" {< "2~~"}
+  "deb-php-deepcopy" {>= "1.7"}
+  "deb-php-doctrine-instantiator" {< "2~~"}
+  "deb-php-doctrine-instantiator" {>= "1.1"}
+  "deb-php-file-iterator" {< "3~~"}
+  "deb-php-file-iterator" {>= "2.0.1"}
+  "deb-php-json"
+  "deb-php-mbstring"
+  "deb-php-phar-io-manifest" {< "2~~"}
+  "deb-php-phar-io-manifest" {>= "1.0.2"}
+  "deb-php-phar-io-version" {< "3~~"}
+  "deb-php-phar-io-version" {>= "2.0"}
+  "deb-php-phpspec-prophecy" {< "2~~"}
+  "deb-php-phpspec-prophecy" {>= "1.7"}
+  "deb-php-text-template" {< "2~~"}
+  "deb-php-text-template" {>= "1.2.1"}
+  "deb-php-timer" {< "3~~"}
+  "deb-php-timer" {>= "2.0"}
+  "deb-php-xml"
+  "deb-phpunit-comparator" {< "4~~"}
+  "deb-phpunit-comparator" {>= "3.0"}
+  "deb-phpunit-diff" {< "4~~"}
+  "deb-phpunit-diff" {>= "3.0"}
+  "deb-phpunit-environment" {< "5~~"}
+  "deb-phpunit-environment" {>= "4.0"}
+  "deb-phpunit-exporter" {< "4~~"}
+  "deb-phpunit-exporter" {>= "3.1"}
+  "deb-phpunit-global-state" {< "3~~"}
+  "deb-phpunit-global-state" {>= "2.0"}
+  "deb-phpunit-object-enumerator" {< "4~~"}
+  "deb-phpunit-object-enumerator" {>= "3.0.3"}
+  "deb-phpunit-resource-operations" {< "3~~"}
+  "deb-phpunit-resource-operations" {>= "2.0"}
+  "deb-phpunit-version" {< "3~~"}
+  "deb-phpunit-version" {>= "2.0.1"}
+]
+conflicts: [
+  "deb-phpunit-mock-object"
+]
+extra-source "phpunit_7.5.6-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/phpunit/phpunit_7.5.6-1_all.deb"
+}

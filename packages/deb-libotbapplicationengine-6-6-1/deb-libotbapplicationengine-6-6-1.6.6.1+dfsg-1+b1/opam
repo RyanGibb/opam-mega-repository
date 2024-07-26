@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libotbapplicationengine-6.6-1_6.6.1+dfsg-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libotbapplicationengine-6.6-1"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgdal20" {>= "1.10.0"}
+  "deb-libinsighttoolkit4-12" {>= "4.12.0-dfsg1-2~"}
+  "deb-libotbcommon-6-6-1" {>= "6.6.0~rc1"}
+  "deb-libotbextendedfilename-6-6-1" {>= "6.0.0"}
+  "deb-libotbimagebase-6-6-1" {>= "6.2.0"}
+  "deb-libotbimageio-6-6-1" {>= "5.2.0"}
+  "deb-libotbiogdal-6-6-1" {>= "5.2.0"}
+  "deb-libotbmetadata-6-6-1" {>= "5.2.0"}
+  "deb-libotbossimadapters-6-6-1" {>= "5.8.0"}
+  "deb-libotbstreaming-6-6-1" {>= "6.6.0~rc1"}
+  "deb-libotbtransform-6-6-1" {>= "5.2.0"}
+  "deb-libotbvectordatabase-6-6-1" {>= "5.2.0"}
+  "deb-libotbvectordataio-6-6-1" {>= "5.2.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtinyxml2-6-2v5"
+]
+extra-source "libotbapplicationengine-6.6-1_6.6.1+dfsg-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/otb/libotbapplicationengine-6.6-1_6.6.1+dfsg-1+b1_amd64.deb"
+}

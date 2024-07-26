@@ -1,0 +1,44 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i shotcut_21.01.29+ds-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r shotcut"]
+]
+depends: [
+  "deb-frei0r-plugins"
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libjs-three"
+  "deb-libmlt++3" {>= "6.24.0"}
+  "deb-libmlt6" {>= "6.24.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5gui5" {>= "5.1.0"}
+  "deb-libqt5multimedia5" {>= "5.6.0~beta"}
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libqt5opengl5" {>= "5.0.2"}
+  "deb-libqt5qml5" {>= "5.0.2"}
+  "deb-libqt5quickcontrols2-5" {>= "5.7.1"}
+  "deb-libqt5quickwidgets5" {>= "5.11.0"}
+  "deb-libqt5sql5" {>= "5.0.2"}
+  "deb-libqt5websockets5" {>= "5.6.0"}
+  "deb-libqt5widgets5" {>= "5.11.0~rc1"}
+  "deb-libqt5xml5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-melt"
+  "deb-qml-module-qtgraphicaleffects"
+  "deb-qml-module-qtqml-models2"
+  "deb-qml-module-qtquick-controls"
+  "deb-qml-module-qtquick-controls2"
+  "deb-qml-module-qtquick-dialogs"
+  "deb-qml-module-qtquick-extras"
+  "deb-qml-module-qtquick-layouts"
+  "deb-qml-module-qtquick-window2"
+  "deb-qml-module-qtquick2"
+  "deb-shotcut-data" {>= "21.01.29+ds-1"}
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5quick5" {>= "5.6.1"} | "deb- libqt5quick5-gles" {>= "5.6.1"})
+]
+extra-source "shotcut_21.01.29+ds-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/shotcut/shotcut_21.01.29+ds-1_amd64.deb"
+}

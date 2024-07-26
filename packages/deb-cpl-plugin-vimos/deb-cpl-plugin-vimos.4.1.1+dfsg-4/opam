@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cpl-plugin-vimos_4.1.1+dfsg-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cpl-plugin-vimos"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libcext0" {>= "5.3.1"}
+  "deb-libcfitsio9" {>= "3.480~"}
+  "deb-libcplcore26" {>= "6.4"}
+  "deb-libcpldfs26" {>= "6.0"}
+  "deb-libcpldrs26" {>= "6.4"}
+  "deb-libcplui26" {>= "6.4"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgomp1" {>= "4.9"}
+  "deb-libgsl25" {>= "2.6"}
+  "deb-libstdc++6" {>= "9"}
+]
+extra-source "cpl-plugin-vimos_4.1.1+dfsg-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cpl-plugin-vimos/cpl-plugin-vimos_4.1.1+dfsg-4_amd64.deb"
+}

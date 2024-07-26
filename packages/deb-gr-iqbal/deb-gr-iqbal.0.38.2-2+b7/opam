@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gr-iqbal_0.38.2-2+b7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gr-iqbal"]
+]
+depends: [
+  "deb-libc6" {>= "2.32"}
+  "deb-libgcc-s1" {>= "3.3.1"}
+  "deb-libgnuradio-iqbalance3-9-0" {= "0.38.2-2+b7"}
+  "deb-libgnuradio-runtime3-10-5" {>= "3.10.5.0"}
+  "deb-libpython3-11" {>= "3.11.0"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-any"
+  "deb-python3-numpy"
+  "deb-python3-numpy" {>= "1-1.22.0"}
+]
+extra-source "gr-iqbal_0.38.2-2+b7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gr-iqbal/gr-iqbal_0.38.2-2+b7_amd64.deb"
+}

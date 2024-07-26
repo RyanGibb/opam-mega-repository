@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-github-markup_1.7.0+dfsg-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-github-markup"]
+]
+depends: [
+  "deb-asciidoctor"
+  "deb-libjs-jquery"
+  "deb-python3"
+  "deb-python3-docutils" {>= "0.19~"}
+  "deb-ruby"
+  "deb-ruby-creole"
+  "deb-ruby-org"
+  "deb-ruby-posix-spawn"
+  "deb-ruby-redcloth"
+  "deb-ruby-wikicloth"
+  ("deb-ruby" | "deb- ruby-interpreter")
+]
+extra-source "ruby-github-markup_1.7.0+dfsg-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-github-markup/ruby-github-markup_1.7.0+dfsg-6_all.deb"
+}

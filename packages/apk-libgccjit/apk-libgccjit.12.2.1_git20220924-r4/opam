@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libgccjit-12.2.1_git20220924-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libgccjit"]
+]
+depends: [
+  "apk-gmp" {= "6.2.1-r2"}
+  "apk-mpc1" {= "1.2.1-r1"}
+  "apk-mpfr4" {= "4.1.0-r0"}
+  "apk-musl" {= "1.2.3-r5"}
+  "apk-zlib" {= "1.2.13-r0"}
+  ("apk-isl24" {= "0.24-r1"} | "apk-isl25" {= "0.25-r1"})
+]
+extra-source "libgccjit-12.2.1_git20220924-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libgccjit-12.2.1_git20220924-r4.apk"
+}

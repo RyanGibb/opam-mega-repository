@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libevas1_1.21.1-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libevas1"]
+]
+depends: [
+  "deb-libc6" {>= "2.15"}
+  "deb-libecore1" {>= "1.21.1-0~eo"}
+  "deb-libector1" {>= "1.21.1-0~eo"}
+  "deb-libeet1" {>= "1.21.1-0~eo"}
+  "deb-libeina1a" {>= "1.21.1-0~eo"}
+  "deb-libemile1" {>= "1.21.1-0~eo"}
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libfreetype6" {>= "2.4.11"}
+  "deb-libfribidi0" {>= "1.0.0"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgcrypt20" {>= "1.7.0"}
+  "deb-libgif7" {>= "5.1"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libgnutls30" {>= "3.6.5"}
+  "deb-libharfbuzz0b" {>= "0.9.4"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libluajit-5-1-2" {>= "2.0.4+dfsg"}
+  "deb-liblz4-1" {>= "0.0~r114"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-libsystemd0"
+  "deb-libtiff5" {>= "4.0.3"}
+  "deb-libunwind8"
+  "deb-libwebp6" {>= "0.5.1"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libevas1-engines-drm" | "deb-libevas1-engines-fb" | "deb-libevas1-engines-wayland" | "deb-libevas1-engines-x")
+]
+extra-source "libevas1_1.21.1-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/efl/libevas1_1.21.1-5_amd64.deb"
+}

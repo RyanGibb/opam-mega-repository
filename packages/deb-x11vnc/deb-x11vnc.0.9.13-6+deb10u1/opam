@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i x11vnc_0.9.13-6+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r x11vnc"]
+]
+depends: [
+  "deb-libavahi-client3" {>= "0.6.16"}
+  "deb-libavahi-common3" {>= "0.6.16"}
+  "deb-libc6" {>= "2.15"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libvncclient1" {>= "0.9.10"}
+  "deb-libvncserver1" {>= "0.9.10"}
+  "deb-libx11-6"
+  "deb-libxdamage1" {>= "1-1.1"}
+  "deb-libxext6"
+  "deb-libxfixes3"
+  "deb-libxinerama1"
+  "deb-libxrandr2"
+  "deb-libxtst6"
+  "deb-openssl"
+  "deb-tk"
+  "deb-x11vnc-data" {= "0.9.13-6+deb10u1"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "x11vnc_0.9.13-6+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/x11vnc/x11vnc_0.9.13-6+deb10u1_amd64.deb"
+}

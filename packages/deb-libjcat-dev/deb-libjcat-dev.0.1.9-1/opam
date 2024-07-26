@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libjcat-dev_0.1.9-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libjcat-dev"]
+]
+depends: [
+  "deb-gir1-2-jcat-1-0" {= "0.1.9-1"}
+  "deb-libglib2-0-dev"
+  "deb-libgnutls28-dev"
+  "deb-libgpgme11-dev"
+  "deb-libjcat1" {= "0.1.9-1"}
+  "deb-libjson-glib-dev"
+]
+extra-source "libjcat-dev_0.1.9-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libj/libjcat/libjcat-dev_0.1.9-1_amd64.deb"
+}

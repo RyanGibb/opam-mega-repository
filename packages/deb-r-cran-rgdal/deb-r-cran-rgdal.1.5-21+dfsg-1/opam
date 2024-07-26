@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-rgdal_1.5-21+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-rgdal"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgdal28" {>= "3.0.1"}
+  "deb-libproj19" {>= "7.1.0"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.3-1"}
+  "deb-r-cran-sp" {>= "1.1-0"}
+]
+extra-source "r-cran-rgdal_1.5-21+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-rgdal/r-cran-rgdal_1.5-21+dfsg-1_amd64.deb"
+}

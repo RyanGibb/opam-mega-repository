@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libweb-id-perl_1.927-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libweb-id-perl"]
+]
+depends: [
+  "deb-libcrypt-x509-perl"
+  "deb-libdatetime-perl"
+  "deb-libexporter-tiny-perl"
+  "deb-libfile-sharedir-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-libmatch-simple-perl" {>= "0.008"}
+  "deb-libmoose-perl" {>= "2.0600"}
+  "deb-libnamespace-sweep-perl"
+  "deb-libpath-tiny-perl"
+  "deb-libplack-perl"
+  "deb-librdf-query-perl"
+  "deb-librdf-trine-perl"
+  "deb-libtype-tiny-perl"
+  "deb-libtypes-datetime-perl"
+  "deb-libtypes-uri-perl"
+  "deb-liburi-perl"
+  "deb-perl"
+]
+extra-source "libweb-id-perl_1.927-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libw/libweb-id-perl/libweb-id-perl_1.927-2_all.deb"
+}

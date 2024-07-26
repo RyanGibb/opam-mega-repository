@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i spamass-milter_0.4.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r spamass-milter"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libmilter1-0-1"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-spamc"
+]
+extra-source "spamass-milter_0.4.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/spamass-milter/spamass-milter_0.4.0-2_amd64.deb"
+}

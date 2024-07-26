@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i icewm_3.3.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r icewm"]
+]
+depends: [
+  "deb-icewm-common" {= "3.3.1-1"}
+  "deb-libao4" {>= "1.1.0"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libfribidi0" {>= "0.19.2"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libice6" {>= "1-1.0.0"}
+  "deb-libimlib2" {>= "1.4.5"}
+  "deb-librsvg2-2" {>= "2.14.4"}
+  "deb-libsm6"
+  "deb-libsndfile1" {>= "1.0.20"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libx11-6"
+  "deb-libxcomposite1" {>= "1-0.4.5"}
+  "deb-libxdamage1" {>= "1-1.1"}
+  "deb-libxext6"
+  "deb-libxfixes3"
+  "deb-libxft2" {> "2.1.1"}
+  "deb-libxinerama1" {>= "2-1.1.4"}
+  "deb-libxrandr2" {>= "2-1.2.0"}
+  "deb-libxrender1"
+  "deb-sensible-utils"
+  ("deb-fonts-dejavu-core" | "deb- ttf-dejavu-core" | "deb- custom-icewm-font")
+]
+conflicts: [
+  "deb-icewm-common" {< "1.3.8-3"}
+]
+extra-source "icewm_3.3.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/icewm/icewm_3.3.1-1_amd64.deb"
+}

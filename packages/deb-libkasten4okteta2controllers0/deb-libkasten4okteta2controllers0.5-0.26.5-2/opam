@@ -1,0 +1,42 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libkasten4okteta2controllers0_5:0.26.5-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libkasten4okteta2controllers0"]
+]
+depends: [
+  "deb-kio"
+  "deb-libc6" {>= "2.14"}
+  "deb-libkasten4core0" {= "5-0.26.5-2"}
+  "deb-libkasten4gui0" {= "5-0.26.5-2"}
+  "deb-libkasten4okteta2core0" {= "5-0.26.5-2"}
+  "deb-libkasten4okteta2gui0" {= "5-0.26.5-2"}
+  "deb-libkf5completion5" {>= "5.48.0~"}
+  "deb-libkf5configcore5" {>= "4.98.0"}
+  "deb-libkf5configgui5" {>= "4.97.0"}
+  "deb-libkf5configwidgets5" {>= "5.48.0~"}
+  "deb-libkf5coreaddons5" {>= "4.97.0"}
+  "deb-libkf5i18n5" {>= "5.48.0~"}
+  "deb-libkf5iconthemes5" {>= "5.48.0~"}
+  "deb-libkf5kcmutils5" {>= "5.48.0~"}
+  "deb-libkf5kiocore5" {>= "5.69.0"}
+  "deb-libkf5newstuff5" {>= "5.48.0~"}
+  "deb-libkf5service-bin"
+  "deb-libkf5service5" {>= "5.48.0~"}
+  "deb-libkf5widgetsaddons5" {>= "5.78.0-2"}
+  "deb-libkf5xmlgui5" {>= "5.48.0~"}
+  "deb-libokteta3core0" {= "5-0.26.5-2"}
+  "deb-libokteta3gui0" {= "5-0.26.5-2"}
+  "deb-libqca-qt5-2" {>= "2.1.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5printsupport5" {>= "5.9.0~"}
+  "deb-libqt5script5" {>= "5.9.0~"}
+  "deb-libqt5widgets5" {>= "5.14.1"}
+  "deb-libqt5xml5" {>= "5.9.0~"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+]
+extra-source "libkasten4okteta2controllers0_5:0.26.5-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/okteta/libkasten4okteta2controllers0_0.26.5-2_amd64.deb"
+}

@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i supysonic_0.6.2+ds-3+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r supysonic"]
+]
+depends: [
+  "deb-fonts-glyphicons-halflings"
+  "deb-libjs-bootstrap"
+  "deb-libjs-jquery"
+  "deb-python3-any"
+  "deb-python3-flask" {>= "0.11"}
+  "deb-python3-lxml"
+  "deb-python3-mediafile"
+  "deb-python3-pil"
+  "deb-python3-pony"
+  "deb-python3-requests"
+  "deb-python3-watchdog"
+  "deb-python3-zipstream"
+]
+extra-source "supysonic_0.6.2+ds-3+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/supysonic/supysonic_0.6.2+ds-3+deb11u1_all.deb"
+}

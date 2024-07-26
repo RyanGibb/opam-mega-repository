@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-egenix-mx-base-dbg_3.2.9-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-egenix-mx-base-dbg"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-python-dbg"
+  "deb-python-egenix-mx-base-dev" {= "3.2.9-1"}
+  "deb-python-egenix-mxbeebase" {= "3.2.9-1"}
+  "deb-python-egenix-mxdatetime" {= "3.2.9-1"}
+  "deb-python-egenix-mxproxy" {= "3.2.9-1"}
+  "deb-python-egenix-mxqueue" {= "3.2.9-1"}
+  "deb-python-egenix-mxstack" {= "3.2.9-1"}
+  "deb-python-egenix-mxtexttools" {= "3.2.9-1"}
+  "deb-python-egenix-mxtools" {= "3.2.9-1"}
+  "deb-python-egenix-mxuid" {= "3.2.9-1"}
+  "deb-python-egenix-mxurl" {= "3.2.9-1"}
+]
+extra-source "python-egenix-mx-base-dbg_3.2.9-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/e/egenix-mx-base/python-egenix-mx-base-dbg_3.2.9-1_amd64.deb"
+}

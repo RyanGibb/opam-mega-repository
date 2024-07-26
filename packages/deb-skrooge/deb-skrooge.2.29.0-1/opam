@@ -1,0 +1,64 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i skrooge_2.29.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r skrooge"]
+]
+depends: [
+  "deb-kinit"
+  "deb-kio"
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgrantlee-templates5" {>= "5.0.0"}
+  "deb-libkf5archive5" {>= "5.86.0~"}
+  "deb-libkf5completion5" {>= "5.86.0~"}
+  "deb-libkf5configcore5" {>= "5.86.0~"}
+  "deb-libkf5configgui5" {>= "5.86.0~"}
+  "deb-libkf5configwidgets5" {>= "5.86.0~"}
+  "deb-libkf5coreaddons5" {>= "5.90.0"}
+  "deb-libkf5dbusaddons5" {>= "4.99.0"}
+  "deb-libkf5i18n5" {>= "5.86.0~"}
+  "deb-libkf5iconthemes5" {>= "5.86.0~"}
+  "deb-libkf5kiocore5" {>= "5.86.0~"}
+  "deb-libkf5kiofilewidgets5" {>= "5.86.0~"}
+  "deb-libkf5newstuff5" {>= "5.86.0~"}
+  "deb-libkf5newstuffcore5" {>= "5.86.0~"}
+  "deb-libkf5notifications5" {>= "4.96.0"}
+  "deb-libkf5notifyconfig5" {>= "4.96.0"}
+  "deb-libkf5parts5" {>= "5.86.0~"}
+  "deb-libkf5service-bin"
+  "deb-libkf5service5" {>= "4.96.0"}
+  "deb-libkf5textwidgets5" {>= "4.96.0"}
+  "deb-libkf5wallet-bin"
+  "deb-libkf5wallet5" {>= "5.86.0~"}
+  "deb-libkf5widgetsaddons5" {>= "5.100.0"}
+  "deb-libkf5xmlgui5" {>= "5.86.0~"}
+  "deb-libofx7" {>= "0.9.14"}
+  "deb-libqca-qt5-2" {>= "2.0.2"}
+  "deb-libqca-qt5-2-plugins"
+  "deb-libqt5concurrent5" {>= "5.12.0~"}
+  "deb-libqt5core5a"
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.12.0~"}
+  "deb-libqt5network5" {>= "5.12.0~"}
+  "deb-libqt5printsupport5" {>= "5.12.0~"}
+  "deb-libqt5qml5" {>= "5.12.0~"}
+  "deb-libqt5quickwidgets5" {>= "5.12.0~"}
+  "deb-libqt5script5" {>= "5.6.0~beta"}
+  "deb-libqt5sql5" {>= "5.12.0~"}
+  "deb-libqt5sql5-sqlite"
+  "deb-libqt5svg5" {>= "5.12.0~"}
+  "deb-libqt5webkit5" {>= "5.12.0~"}
+  "deb-libqt5widgets5" {>= "5.14.1"}
+  "deb-libqt5xml5" {>= "5.12.0~"}
+  "deb-libqt5xmlpatterns5" {>= "5.12.0~"}
+  "deb-libsqlcipher0" {>= "1.1.9"}
+  "deb-libstdc++6" {>= "4.5"}
+  "deb-skrooge-common" {= "2.29.0-1"}
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5quick5" {>= "5.12.0~"} | "deb- libqt5quick5-gles" {>= "5.12.0~"})
+]
+extra-source "skrooge_2.29.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/skrooge/skrooge_2.29.0-1_amd64.deb"
+}

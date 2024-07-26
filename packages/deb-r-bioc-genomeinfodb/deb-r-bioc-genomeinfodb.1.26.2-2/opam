@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-bioc-genomeinfodb_1.26.2-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-bioc-genomeinfodb"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.4-1"}
+  "deb-r-bioc-biocgenerics"
+  "deb-r-bioc-biocgenerics" {>= "0.13.8"}
+  "deb-r-bioc-genomeinfodbdata"
+  "deb-r-bioc-iranges" {>= "2.13.12"}
+  "deb-r-bioc-s4vectors" {>= "0.25.12"}
+  "deb-r-cran-rcurl"
+]
+extra-source "r-bioc-genomeinfodb_1.26.2-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-bioc-genomeinfodb/r-bioc-genomeinfodb_1.26.2-2_all.deb"
+}

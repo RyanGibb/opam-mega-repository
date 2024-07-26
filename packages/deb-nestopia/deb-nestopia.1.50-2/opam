@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i nestopia_1.50-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r nestopia"]
+]
+depends: [
+  "deb-libao4" {>= "1.1.0"}
+  "deb-libarchive13" {>= "3.0.4"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libepoxy0" {>= "1.0"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.31.8"}
+  "deb-libgtk-3-0" {>= "3.21.4"}
+  "deb-libsdl2-2-0-0" {>= "2.0.12"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+]
+extra-source "nestopia_1.50-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/nestopia/nestopia_1.50-2_amd64.deb"
+}

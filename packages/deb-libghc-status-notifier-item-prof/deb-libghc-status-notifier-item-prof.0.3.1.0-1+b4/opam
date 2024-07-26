@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-status-notifier-item-prof_0.3.1.0-1+b4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-status-notifier-item-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-byte-order-prof"
+  "deb-libghc-bytestring-to-vector-prof"
+  "deb-libghc-dbus-prof"
+  "deb-libghc-hslogger-prof"
+  "deb-libghc-lens-prof"
+  "deb-libghc-status-notifier-item-dev" {= "0.3.1.0-1+b4"}
+  "deb-libghc-vector-prof"
+]
+extra-source "libghc-status-notifier-item-prof_0.3.1.0-1+b4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-status-notifier-item/libghc-status-notifier-item-prof_0.3.1.0-1+b4_amd64.deb"
+}

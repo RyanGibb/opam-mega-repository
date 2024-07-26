@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libplack-perl_1.0050-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libplack-perl"]
+]
+depends: [
+  "deb-libapache-logformat-compiler-perl"
+  "deb-libcookie-baker-perl"
+  "deb-libdevel-stacktrace-ashtml-perl"
+  "deb-libdevel-stacktrace-perl"
+  "deb-libfile-sharedir-perl"
+  "deb-libfilesys-notify-simple-perl"
+  "deb-libhash-multivalue-perl"
+  "deb-libhttp-entity-parser-perl" {>= "0.25"}
+  "deb-libhttp-headers-fast-perl"
+  "deb-libhttp-message-perl"
+  "deb-libhttp-tiny-perl"
+  "deb-libstream-buffered-perl"
+  "deb-libtest-tcp-perl"
+  "deb-libtry-tiny-perl"
+  "deb-liburi-perl"
+  "deb-libwww-form-urlencoded-perl"
+  "deb-perl-any"
+]
+extra-source "libplack-perl_1.0050-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libp/libplack-perl/libplack-perl_1.0050-1_all.deb"
+}

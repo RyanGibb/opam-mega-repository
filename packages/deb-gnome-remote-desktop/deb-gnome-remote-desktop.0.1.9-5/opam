@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnome-remote-desktop_0.1.9-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnome-remote-desktop"]
+]
+depends: [
+  "deb-libc6" {>= "2.28"}
+  "deb-libcairo2" {>= "1.10.0"}
+  "deb-libfreerdp2-2" {>= "2.2"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libmutter-7-0" {>= "3.37.92-1~"}
+  "deb-libnotify4" {>= "0.7.0"}
+  "deb-libpipewire-0-3-0" {>= "0.3.1"}
+  "deb-libsecret-1-0" {>= "0.7"}
+  "deb-libvncserver1" {>= "0.9.10"}
+  "deb-libwinpr2-2" {>= "2.2"}
+  "deb-pipewire" {>= "0.3.0"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-gnome-shell" {>= "3.37.92-2~"} | "deb- budgie-desktop" {>= "10.5.2"})
+]
+extra-source "gnome-remote-desktop_0.1.9-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnome-remote-desktop/gnome-remote-desktop_0.1.9-5_amd64.deb"
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libxml-libxml-perl_2.0134+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libxml-libxml-perl"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libxml-namespacesupport-perl"
+  "deb-libxml-sax-perl"
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-perl" {>= "5.28.1-4"}
+  "deb-perl-base"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libxml-libxml-perl_2.0134+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libx/libxml-libxml-perl/libxml-libxml-perl_2.0134+dfsg-1_amd64.deb"
+}

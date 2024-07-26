@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-launchpadlib_1.10.6-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-launchpadlib"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-httplib2" {>= "0.4.0"}
+  "deb-python3-keyring" {>= "0.5"}
+  "deb-python3-lazr-restfulclient" {>= "0.11.2"}
+  "deb-python3-lazr-uri" {>= "1.0.2-4~"}
+  "deb-python3-simplejson"
+  "deb-python3-wadllib"
+]
+extra-source "python3-launchpadlib_1.10.6-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-launchpadlib/python3-launchpadlib_1.10.6-2_all.deb"
+}

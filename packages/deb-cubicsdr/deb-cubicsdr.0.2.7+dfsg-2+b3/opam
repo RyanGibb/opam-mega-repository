@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cubicsdr_0.2.7+dfsg-2+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cubicsdr"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglx0"
+  "deb-libhamlib4"
+  "deb-libliquid1" {>= "1.5.0"}
+  "deb-libopengl0"
+  "deb-librtaudio6" {>= "5.2.0~ds1"}
+  "deb-libsoapysdr0-8" {>= "0.8.1"}
+  "deb-libstdc++6" {>= "12"}
+  "deb-libtinyxml2-6-2v5" {>= "2.6.2"}
+  "deb-libwxbase3-2-1" {>= "3.2.1+dfsg"}
+  "deb-libwxgtk-gl3-2-1" {>= "3.2.1+dfsg"}
+  "deb-libwxgtk3-2-1" {>= "3.2.1+dfsg-2"}
+]
+extra-source "cubicsdr_0.2.7+dfsg-2+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cubicsdr/cubicsdr_0.2.7+dfsg-2+b3_amd64.deb"
+}

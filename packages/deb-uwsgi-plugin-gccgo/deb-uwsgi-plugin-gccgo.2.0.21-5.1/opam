@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i uwsgi-plugin-gccgo_2.0.21-5.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r uwsgi-plugin-gccgo"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.3.1"}
+  "deb-libgo21"
+  "deb-uwsgi-core" {= "2.0.21-5.1"}
+]
+extra-source "uwsgi-plugin-gccgo_2.0.21-5.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/u/uwsgi/uwsgi-plugin-gccgo_2.0.21-5.1_amd64.deb"
+}

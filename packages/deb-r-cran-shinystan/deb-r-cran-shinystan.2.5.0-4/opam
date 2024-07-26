@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-shinystan_2.5.0-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-shinystan"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.3-1"}
+  "deb-r-cran-bayesplot" {>= "1.5.0"}
+  "deb-r-cran-colourpicker"
+  "deb-r-cran-dt" {>= "0.2"}
+  "deb-r-cran-dygraphs" {>= "1.1.1.2"}
+  "deb-r-cran-ggplot2" {>= "2.1.1"}
+  "deb-r-cran-gridextra"
+  "deb-r-cran-gtools"
+  "deb-r-cran-markdown" {>= "0.7.4"}
+  "deb-r-cran-reshape2"
+  "deb-r-cran-rsconnect" {>= "0.4.2"}
+  "deb-r-cran-rstan" {>= "2.17.1"}
+  "deb-r-cran-shiny" {>= "1.0.3"}
+  "deb-r-cran-shinyjs" {>= "0.6.0"}
+  "deb-r-cran-shinythemes" {>= "1.0.1"}
+  "deb-r-cran-threejs" {>= "0.2.1"}
+  "deb-r-cran-xtable"
+  "deb-r-cran-xts" {>= "0.9-7"}
+]
+extra-source "r-cran-shinystan_2.5.0-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-shinystan/r-cran-shinystan_2.5.0-4_all.deb"
+}

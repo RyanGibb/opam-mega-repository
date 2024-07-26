@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdist-zilla-plugin-run-perl_0.048-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdist-zilla-plugin-run-perl"]
+]
+depends: [
+  "deb-libdist-zilla-perl"
+  "deb-libmoose-perl"
+  "deb-libnamespace-autoclean-perl"
+  "deb-libpath-tiny-perl"
+  "deb-libstring-formatter-perl"
+  "deb-perl"
+  "deb-perl-base"
+]
+extra-source "libdist-zilla-plugin-run-perl_0.048-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libd/libdist-zilla-plugin-run-perl/libdist-zilla-plugin-run-perl_0.048-1_all.deb"
+}

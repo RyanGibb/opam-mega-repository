@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dl10n_3.00+nmu1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dl10n"]
+]
+depends: [
+  "deb-gettext" {>= "0.11"}
+  "deb-liblocale-gettext-perl"
+  "deb-libmailtools-perl"
+  "deb-libtimedate-perl"
+  "deb-libwww-perl"
+  "deb-perl-modules-5-36"
+  ("deb-perl" | "deb- perl5")
+]
+extra-source "dl10n_3.00+nmu1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dl10n/dl10n_3.00+nmu1_all.deb"
+}

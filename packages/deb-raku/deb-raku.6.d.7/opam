@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i raku_6.d.7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r raku"]
+]
+depends: [
+  "deb-prove6"
+  "deb-raku-file-find"
+  "deb-raku-file-which"
+  "deb-raku-getopt-long"
+  "deb-raku-hash-merge"
+  "deb-raku-json-class"
+  "deb-raku-json-fast"
+  "deb-raku-json-marshal"
+  "deb-raku-json-name"
+  "deb-raku-json-optin"
+  "deb-raku-json-unmarshal"
+  "deb-raku-librarycheck"
+  "deb-raku-log"
+  "deb-raku-meta6"
+  "deb-raku-readline"
+  "deb-raku-tap-harness"
+  "deb-raku-test-meta"
+  "deb-raku-uri"
+  "deb-raku-zef"
+  "deb-rakudo"
+]
+conflicts: [
+  "deb-perl6"
+]
+extra-source "raku_6.d.7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/raku/raku_6.d.7_all.deb"
+}

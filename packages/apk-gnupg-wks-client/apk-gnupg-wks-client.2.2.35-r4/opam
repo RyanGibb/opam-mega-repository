@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gnupg-wks-client-2.2.35-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gnupg-wks-client"]
+]
+depends: [
+  "apk-gnupg-dirmngr" {= "2.2.35-r4"}
+  "apk-gpg" {= "2.2.35-r4"}
+  "apk-gpg-agent" {= "2.2.35-r4"}
+  "apk-libassuan" {= "2.5.6-r0"}
+  "apk-libgcrypt" {= "1.10.1-r0"}
+  "apk-libgpg-error" {= "1.45-r0"}
+  "apk-musl" {= "1.2.3-r3"}
+]
+extra-source "gnupg-wks-client-2.2.35-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/gnupg-wks-client-2.2.35-r4.apk"
+}

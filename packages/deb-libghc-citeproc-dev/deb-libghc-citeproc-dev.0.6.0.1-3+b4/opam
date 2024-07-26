@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-citeproc-dev_0.6.0.1-3+b4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-citeproc-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-aeson-dev"
+  "deb-libghc-attoparsec-dev"
+  "deb-libghc-case-insensitive-dev"
+  "deb-libghc-data-default-dev"
+  "deb-libghc-file-embed-dev"
+  "deb-libghc-pandoc-types-dev"
+  "deb-libghc-safe-dev"
+  "deb-libghc-scientific-dev"
+  "deb-libghc-unicode-collation-dev"
+  "deb-libghc-uniplate-dev"
+  "deb-libghc-vector-dev"
+  "deb-libghc-xml-conduit-dev"
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "libghc-citeproc-dev_0.6.0.1-3+b4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-citeproc/libghc-citeproc-dev_0.6.0.1-3+b4_amd64.deb"
+}

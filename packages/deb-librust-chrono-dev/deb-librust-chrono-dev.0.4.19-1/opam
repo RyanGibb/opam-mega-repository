@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-chrono-dev_0.4.19-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-chrono-dev"]
+]
+depends: [
+  "deb-librust-libc-dev"
+  "deb-librust-num-integer-dev"
+  "deb-librust-num-traits-0-2-dev"
+  "deb-librust-time-dev"
+  "deb-librust-winapi-0-3+default-dev"
+  "deb-librust-winapi-0-3+minwinbase-dev"
+  "deb-librust-winapi-0-3+minwindef-dev"
+  "deb-librust-winapi-0-3+std-dev"
+  "deb-librust-winapi-0-3+timezoneapi-dev"
+]
+extra-source "librust-chrono-dev_0.4.19-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-chrono/librust-chrono-dev_0.4.19-1_amd64.deb"
+}

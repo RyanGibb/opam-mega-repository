@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add neon-dev-0.31.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del neon-dev"]
+]
+depends: [
+  "apk-autoconf" {= "2.71-r0"}
+  "apk-automake" {= "1.16.3-r0"}
+  "apk-expat-dev" {= "2.5.0-r0"}
+  "apk-gzip" {= "1.12-r0"}
+  "apk-libtool" {= "2.4.6-r7"}
+  "apk-neon" {= "0.31.2-r0"}
+  "apk-openssl-dev" {= "1.1.1t-r2"}
+  "apk-pkgconf" {= "1.7.4-r1"}
+  "apk-xmlto" {= "0.0.28-r2"}
+  "apk-zlib-dev" {= "1.2.12-r3"}
+]
+extra-source "neon-dev-0.31.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/neon-dev-0.31.2-r0.apk"
+}

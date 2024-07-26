@@ -1,0 +1,52 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cl-pgloader_3.6.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cl-pgloader"]
+]
+depends: [
+  "deb-cl-abnf"
+  "deb-cl-alexandria"
+  "deb-cl-asdf" {>= "3.0.3"}
+  "deb-cl-asdf-finalizers"
+  "deb-cl-asdf-system-connections"
+  "deb-cl-bordeaux-threads" {>= "0.8.3"}
+  "deb-cl-cffi" {>= "1-0.12.0"}
+  "deb-cl-command-line-arguments"
+  "deb-cl-csv"
+  "deb-cl-db3" {>= "20200212"}
+  "deb-cl-drakma"
+  "deb-cl-esrap"
+  "deb-cl-fad"
+  "deb-cl-flexi-streams"
+  "deb-cl-interpol"
+  "deb-cl-ixf"
+  "deb-cl-local-time"
+  "deb-cl-log"
+  "deb-cl-lparallel"
+  "deb-cl-markdown"
+  "deb-cl-md5"
+  "deb-cl-metabang-bind"
+  "deb-cl-mssql"
+  "deb-cl-mustache"
+  "deb-cl-postmodern"
+  "deb-cl-ppcre"
+  "deb-cl-py-configparser"
+  "deb-cl-qmynd"
+  "deb-cl-quri"
+  "deb-cl-simple-date"
+  "deb-cl-split-sequence"
+  "deb-cl-sqlite"
+  "deb-cl-trivial-backtrace"
+  "deb-cl-trivial-utf-8"
+  "deb-cl-unicode"
+  "deb-cl-usocket"
+  "deb-cl-utilities"
+  "deb-cl-uuid"
+  "deb-cl-yason"
+  "deb-cl-zs3"
+]
+extra-source "cl-pgloader_3.6.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pgloader/cl-pgloader_3.6.2-1_all.deb"
+}

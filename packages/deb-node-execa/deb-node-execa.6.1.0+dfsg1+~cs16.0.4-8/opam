@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-execa_6.1.0+dfsg1+~cs16.0.4-8_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-execa"]
+]
+depends: [
+  "deb-node-get-stream"
+  "deb-node-is-stream" {>= "3"}
+  "deb-node-merge-stream"
+  "deb-node-mimic-fn" {>= "4"}
+  "deb-node-npm-run-path" {>= "5.1.0+~4.0.0~"}
+  "deb-node-shebang-command"
+  "deb-node-signal-exit" {>= "3.0.7~"}
+  "deb-node-strip-eof"
+  "deb-node-which"
+]
+extra-source "node-execa_6.1.0+dfsg1+~cs16.0.4-8_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-execa/node-execa_6.1.0+dfsg1+~cs16.0.4-8_all.deb"
+}

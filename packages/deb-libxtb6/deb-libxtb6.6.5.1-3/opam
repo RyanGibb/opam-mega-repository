@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libxtb6_6.5.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libxtb6"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgfortran5" {>= "10"}
+  "deb-libgomp1" {>= "9"}
+  "deb-libmctc-lib0" {>= "0.3.1"}
+  "deb-libopenblas0"
+]
+extra-source "libxtb6_6.5.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xtb/libxtb6_6.5.1-3_amd64.deb"
+}

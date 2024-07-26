@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add pssh-pyc-2.3.5-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del pssh-pyc"]
+]
+depends: [
+  "apk-python3" {= "3.12.3-r1"}
+  "apk-python3" {>= "3.12"}
+  ("apk-openssh-client-default" {= "9.7_p1-r4"} | "apk-openssh-client-krb5" {= "9.7_p1-r4"})
+]
+extra-source "pssh-pyc-2.3.5-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/pssh-pyc-2.3.5-r2.apk"
+}

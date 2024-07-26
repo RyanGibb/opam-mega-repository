@@ -1,0 +1,44 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i freeipa-client_4.9.11-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r freeipa-client"]
+]
+depends: [
+  "deb-bind9-utils"
+  "deb-certmonger" {>= "0.79.5-2"}
+  "deb-curl"
+  "deb-dnsutils"
+  "deb-freeipa-common" {= "4.9.11-1"}
+  "deb-krb5-user"
+  "deb-libc6" {>= "2.34"}
+  "deb-libcom-err2" {>= "1.43.9"}
+  "deb-libcurl4" {>= "7.16.2"}
+  "deb-libini-config5" {>= "0.4.0"}
+  "deb-libjansson4" {>= "2.14"}
+  "deb-libk5crypto3" {>= "1.20"}
+  "deb-libkrb5-3" {>= "1.13~alpha1+dfsg"}
+  "deb-libldap-2-5-0" {>= "2.5.4"}
+  "deb-libnss-sss"
+  "deb-libnss3-tools"
+  "deb-libpam-sss"
+  "deb-libpopt0" {>= "1.14"}
+  "deb-libsasl2-modules-gssapi-mit"
+  "deb-libssl3" {>= "3.0.0"}
+  "deb-libsss-sudo"
+  "deb-oddjob-mkhomedir"
+  "deb-python3-any"
+  "deb-python3-dnspython"
+  "deb-python3-gssapi"
+  "deb-python3-ipaclient" {= "4.9.11-1"}
+  "deb-python3-ldap"
+  "deb-python3-sss"
+  "deb-sssd" {>= "1.14.0"}
+]
+conflicts: [
+  "deb-systemd-timesyncd"
+]
+extra-source "freeipa-client_4.9.11-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/freeipa/freeipa-client_4.9.11-1_amd64.deb"
+}

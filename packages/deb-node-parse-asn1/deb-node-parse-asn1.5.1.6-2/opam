@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-parse-asn1_5.1.6-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-parse-asn1"]
+]
+depends: [
+  "deb-node-asn1-js"
+  "deb-node-browserify-aes"
+  "deb-node-evp-bytestokey"
+  "deb-node-pbkdf2"
+  "deb-node-safe-buffer"
+]
+extra-source "node-parse-asn1_5.1.6-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-parse-asn1/node-parse-asn1_5.1.6-2_all.deb"
+}

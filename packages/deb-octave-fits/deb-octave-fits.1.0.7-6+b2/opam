@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i octave-fits_1.0.7-6+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r octave-fits"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libcfitsio9" {>= "3.480~"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-liboctave8"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-octave" {>= "6.1.0"}
+]
+extra-source "octave-fits_1.0.7-6+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/octave-fits/octave-fits_1.0.7-6+b2_amd64.deb"
+}

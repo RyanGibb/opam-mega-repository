@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-modern-syslog_1.1.4-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-modern-syslog"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libnode64"
+  "deb-libstdc++6" {>= "5"}
+]
+extra-source "node-modern-syslog_1.1.4-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-modern-syslog/node-modern-syslog_1.1.4-2_amd64.deb"
+}

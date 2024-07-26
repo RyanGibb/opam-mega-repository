@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i deepin-picker_5.0.1-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r deepin-picker"]
+]
+depends: [
+  "deb-dde-qt5integration"
+  "deb-libc6" {>= "2.29"}
+  "deb-libdtkcore5" {>= "5.2.2"}
+  "deb-libdtkgui5" {>= "5.2.2.4"}
+  "deb-libdtkwidget5" {>= "5.2.1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.14.1"}
+  "deb-libqt5widgets5" {>= "5.2.0"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-libx11-6"
+  "deb-libxtst6"
+  ("deb-libqt5gui5" {>= "5.8.0"} | "deb- libqt5gui5-gles" {>= "5.8.0"})
+]
+extra-source "deepin-picker_5.0.1-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/deepin-picker/deepin-picker_5.0.1-2+b1_amd64.deb"
+}

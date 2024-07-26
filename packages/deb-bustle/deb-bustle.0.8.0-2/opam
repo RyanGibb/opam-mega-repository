@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i bustle_0.8.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r bustle"]
+]
+depends: [
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.12.0"}
+  "deb-libffi8" {>= "3.4"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.39.4"}
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-libgtk-3-0" {>= "3.16.2"}
+  "deb-libharfbuzz0b" {>= "0.6.0"}
+  "deb-libpango-1-0-0" {>= "1.18.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpcap0-8" {>= "0.9.8"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "bustle_0.8.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/bustle/bustle_0.8.0-2_amd64.deb"
+}

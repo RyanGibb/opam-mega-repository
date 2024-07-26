@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdar-dev_2.7.8-2+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdar-dev"]
+]
+depends: [
+  "deb-libargon2-dev"
+  "deb-libassuan-dev"
+  "deb-libbz2-dev"
+  "deb-libdar64-6000" {= "2.7.8-2+b3"}
+  "deb-libgcrypt20-dev"
+  "deb-libgpg-error-dev"
+  "deb-liblz4-dev"
+  "deb-liblzma-dev"
+  "deb-liblzo2-dev"
+  "deb-libzstd-dev"
+  "deb-zlib1g-dev"
+]
+extra-source "libdar-dev_2.7.8-2+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dar/libdar-dev_2.7.8-2+b3_amd64.deb"
+}

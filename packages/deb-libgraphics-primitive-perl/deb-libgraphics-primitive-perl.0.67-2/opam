@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgraphics-primitive-perl_0.67-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgraphics-primitive-perl"]
+]
+depends: [
+  "deb-libforest-perl"
+  "deb-libgeometry-primitive-perl"
+  "deb-libgraphics-color-perl"
+  "deb-libjson-any-perl"
+  "deb-libmoose-perl"
+  "deb-libmoosex-clone-perl"
+  "deb-libmoosex-storage-perl"
+  "deb-perl-any"
+]
+extra-source "libgraphics-primitive-perl_0.67-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libg/libgraphics-primitive-perl/libgraphics-primitive-perl_0.67-2_all.deb"
+}

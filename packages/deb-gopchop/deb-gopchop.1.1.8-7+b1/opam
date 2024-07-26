@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gopchop_1.1.8-7+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gopchop"]
+]
+depends: [
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libgtk2-0-0" {>= "2.8.0"}
+  "deb-libmpeg2-4" {>= "0.5.1"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libxv1"
+]
+extra-source "gopchop_1.1.8-7+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gopchop/gopchop_1.1.8-7+b1_amd64.deb"
+}

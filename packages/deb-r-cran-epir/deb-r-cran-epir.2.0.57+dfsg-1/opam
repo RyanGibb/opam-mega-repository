@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-epir_2.0.57+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-epir"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.2.20221110-2"}
+  "deb-r-cran-biasedurn"
+  "deb-r-cran-flextable"
+  "deb-r-cran-lubridate"
+  "deb-r-cran-officer"
+  "deb-r-cran-pander"
+  "deb-r-cran-sf"
+  "deb-r-cran-survival"
+  "deb-r-cran-zoo"
+]
+extra-source "r-cran-epir_2.0.57+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-epir/r-cran-epir_2.0.57+dfsg-1_all.deb"
+}

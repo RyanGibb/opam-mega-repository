@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py3-wheel-0.38.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py3-wheel"]
+]
+depends: [
+  "apk-py3-packaging" {= "21.3-r2"}
+  "apk-python3" {= "3.10.14-r1"}
+]
+extra-source "py3-wheel-0.38.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-wheel-0.38.4-r0.apk"
+}

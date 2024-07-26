@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-cmstatr_0.7.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-cmstatr"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.3-1"}
+  "deb-r-cran-dplyr"
+  "deb-r-cran-generics"
+  "deb-r-cran-ggplot2"
+  "deb-r-cran-ksamples"
+  "deb-r-cran-mass"
+  "deb-r-cran-rlang"
+  "deb-r-cran-tibble"
+]
+extra-source "r-cran-cmstatr_0.7.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-cmstatr/r-cran-cmstatr_0.7.1-1_all.deb"
+}

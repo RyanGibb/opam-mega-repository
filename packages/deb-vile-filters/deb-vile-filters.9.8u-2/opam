@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i vile-filters_9.8u-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r vile-filters"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libcrypt1" {>= "1-4.1.0"}
+  "deb-vile-common" {= "9.8u-2"}
+]
+extra-source "vile-filters_9.8u-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/vile/vile-filters_9.8u-2_amd64.deb"
+}

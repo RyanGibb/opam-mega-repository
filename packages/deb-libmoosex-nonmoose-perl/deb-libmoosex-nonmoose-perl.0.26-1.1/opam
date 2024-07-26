@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmoosex-nonmoose-perl_0.26-1.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmoosex-nonmoose-perl"]
+]
+depends: [
+  "deb-liblist-moreutils-perl"
+  "deb-libmoose-perl" {>= "2.0000"}
+  "deb-libtry-tiny-perl"
+  "deb-perl-any"
+]
+extra-source "libmoosex-nonmoose-perl_0.26-1.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libm/libmoosex-nonmoose-perl/libmoosex-nonmoose-perl_0.26-1.1_all.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i trafficserver-experimental-plugins_9.2.4+ds-0+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r trafficserver-experimental-plugins"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libcjose0" {>= "0.4.1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libhiredis0-14" {>= "0.14.0"}
+  "deb-libjansson4" {>= "2.14"}
+  "deb-libkyotocabinet16v5" {>= "1.2.79"}
+  "deb-libmariadb3" {>= "3.0.0"}
+  "deb-libmaxminddb0" {>= "1.0.2"}
+  "deb-libstdc++6" {>= "12"}
+]
+extra-source "trafficserver-experimental-plugins_9.2.4+ds-0+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/trafficserver/trafficserver-experimental-plugins_9.2.4+ds-0+deb12u1_amd64.deb"
+}

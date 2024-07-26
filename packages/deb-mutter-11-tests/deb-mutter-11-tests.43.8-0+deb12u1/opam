@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mutter-11-tests_43.8-0+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mutter-11-tests"]
+]
+depends: [
+  "deb-at-spi2-core"
+  "deb-dbus-daemon"
+  "deb-dmz-cursor-theme"
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.10.0"}
+  "deb-libcolord2" {>= "1.4.5"}
+  "deb-libgbm1" {>= "21.3.0~rc1"}
+  "deb-libgles2"
+  "deb-libglib2-0-0" {>= "2.69.0"}
+  "deb-libgtk-3-0" {>= "3.21.5"}
+  "deb-libmutter-11-0" {= "43.8-0+deb12u1"}
+  "deb-libmutter-test-11" {= "43.8-0+deb12u1"}
+  "deb-libpipewire-0-3-0" {>= "0.3.33"}
+  "deb-libwayland-client0" {>= "1.21.0"}
+  "deb-libwayland-cursor0" {>= "1.21.0"}
+  "deb-libwayland-server0" {>= "1.21.0"}
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-mutter" {= "43.8-0+deb12u1"}
+  "deb-python3"
+  "deb-python3-dbus"
+  "deb-python3-dbusmock"
+  "deb-xauth"
+  "deb-xvfb"
+  "deb-xwayland"
+]
+extra-source "mutter-11-tests_43.8-0+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mutter/mutter-11-tests_43.8-0+deb12u1_amd64.deb"
+}

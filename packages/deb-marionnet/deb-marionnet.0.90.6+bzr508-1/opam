@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i marionnet_0.90.6+bzr508-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r marionnet"]
+]
+depends: [
+  "deb-graphviz"
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.17"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libfontconfig1" {>= "2.12"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglade2-0" {>= "1-2.6.4-2~"}
+  "deb-libglib2-0-0" {>= "2.35.9"}
+  "deb-libgtk2-0-0" {>= "2.24.0"}
+  "deb-libgtksourceview2-0-0" {>= "2.10.0"}
+  "deb-liblablgtk2-ocaml-dev" {>= "2.12.0-2"}
+  "deb-liblablgtksourceview2-ocaml-dev" {>= "2.14.2"}
+  "deb-libocamlbricks-ocaml-dev" {>= "0.90+bzr454~"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpangoft2-1-0-0" {>= "1.14.0"}
+  "deb-libxml2" {>= "2.6.27"}
+  "deb-lsb-base" {>= "3.2-14"}
+  "deb-uml-utilities"
+  "deb-vde2"
+  "deb-xterm"
+]
+extra-source "marionnet_0.90.6+bzr508-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/marionnet/marionnet_0.90.6+bzr508-1_amd64.deb"
+}

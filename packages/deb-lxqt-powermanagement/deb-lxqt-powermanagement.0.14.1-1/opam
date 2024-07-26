@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i lxqt-powermanagement_0.14.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r lxqt-powermanagement"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libkf5idletime5" {>= "4.96.0"}
+  "deb-libkf5solid5" {>= "5.6.0+git20150114.0006+15.04"}
+  "deb-liblxqt0" {>= "0.14.1~"}
+  "deb-libqt5core5a" {>= "5.11.0~rc1"}
+  "deb-libqt5dbus5" {>= "5.0.2"}
+  "deb-libqt5gui5" {>= "5.7.0"}
+  "deb-libqt5svg5" {>= "5.6.0~beta"}
+  "deb-libqt5widgets5" {>= "5.0.2"}
+  "deb-libqt5xdg3" {>= "1.0.0"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-lxqt-policykit"
+  "deb-upower"
+]
+extra-source "lxqt-powermanagement_0.14.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/lxqt-powermanagement/lxqt-powermanagement_0.14.1-1_amd64.deb"
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i buku_4.1+ds-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r buku"]
+]
+depends: [
+  "deb-python3" {>= "3.4"}
+  "deb-python3-any"
+  "deb-python3-bs4" {>= "4.4.1"}
+  "deb-python3-certifi"
+  "deb-python3-cryptography" {>= "1.3.2"}
+  "deb-python3-html5lib"
+  "deb-python3-urllib3"
+]
+extra-source "buku_4.1+ds-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/b/buku/buku_4.1+ds-2_all.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i console-data_2:1.12-9_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r console-data"]
+]
+depends: [
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+conflicts: [
+  "deb-console-tools-data"
+  "deb-kbd" {<= "0.96a-1"}
+  "deb-kbd-data"
+]
+extra-source "console-data_2:1.12-9_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/console-data/console-data_1.12-9_all.deb"
+}

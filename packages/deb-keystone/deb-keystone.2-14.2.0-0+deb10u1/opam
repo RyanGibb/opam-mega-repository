@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i keystone_2:14.2.0-0+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r keystone"]
+]
+depends: [
+  "deb-adduser"
+  "deb-apache2"
+  "deb-dbconfig-common"
+  "deb-debconf"
+  "deb-libapache2-mod-wsgi-py3"
+  "deb-lsb-base" {>= "3.0-6"}
+  "deb-python-q-text-as-data"
+  "deb-python3-keystone" {= "2-14.2.0-0+deb10u1"}
+  "deb-python3-keystoneclient"
+  "deb-python3-openstackclient"
+  "deb-sqlite3"
+  "deb-ssl-cert"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "keystone_2:14.2.0-0+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/keystone/keystone_14.2.0-0+deb10u1_all.deb"
+}

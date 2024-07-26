@@ -1,0 +1,50 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-gitit-prof_0.12.3.1+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-gitit-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-aeson-prof"
+  "deb-libghc-base64-bytestring-prof"
+  "deb-libghc-blaze-html-prof"
+  "deb-libghc-configfile-prof"
+  "deb-libghc-feed-prof"
+  "deb-libghc-filestore-prof"
+  "deb-libghc-gitit-dev" {= "0.12.3.1+dfsg-1"}
+  "deb-libghc-happstack-server-prof"
+  "deb-libghc-hoauth2-prof"
+  "deb-libghc-hslogger-prof"
+  "deb-libghc-hstringtemplate-prof"
+  "deb-libghc-http-client-tls-prof"
+  "deb-libghc-http-conduit-prof"
+  "deb-libghc-http-prof"
+  "deb-libghc-json-prof"
+  "deb-libghc-network-prof"
+  "deb-libghc-network-uri-prof"
+  "deb-libghc-old-locale-prof"
+  "deb-libghc-old-time-prof"
+  "deb-libghc-pandoc-prof"
+  "deb-libghc-pandoc-types-prof"
+  "deb-libghc-random-prof"
+  "deb-libghc-recaptcha-prof"
+  "deb-libghc-safe-prof"
+  "deb-libghc-sha-prof"
+  "deb-libghc-skylighting-prof"
+  "deb-libghc-split-prof"
+  "deb-libghc-syb-prof"
+  "deb-libghc-tagsoup-prof"
+  "deb-libghc-uri-bytestring-prof"
+  "deb-libghc-url-prof"
+  "deb-libghc-utf8-string-prof"
+  "deb-libghc-uuid-prof"
+  "deb-libghc-xml-conduit-prof"
+  "deb-libghc-xml-prof"
+  "deb-libghc-xss-sanitize-prof"
+  "deb-libghc-zlib-prof"
+]
+extra-source "libghc-gitit-prof_0.12.3.1+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gitit/libghc-gitit-prof_0.12.3.1+dfsg-1_amd64.deb"
+}

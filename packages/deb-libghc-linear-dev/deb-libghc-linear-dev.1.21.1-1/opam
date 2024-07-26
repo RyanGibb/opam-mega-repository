@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-linear-dev_1.21.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-linear-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.29"}
+  "deb-libghc-adjunctions-dev"
+  "deb-libghc-base-orphans-dev"
+  "deb-libghc-bytes-dev"
+  "deb-libghc-cereal-dev"
+  "deb-libghc-distributive-dev"
+  "deb-libghc-hashable-dev"
+  "deb-libghc-lens-dev"
+  "deb-libghc-random-dev"
+  "deb-libghc-reflection-dev"
+  "deb-libghc-semigroupoids-dev"
+  "deb-libghc-semigroups-dev"
+  "deb-libghc-tagged-dev"
+  "deb-libghc-transformers-compat-dev"
+  "deb-libghc-unordered-containers-dev"
+  "deb-libghc-vector-dev"
+  "deb-libghc-void-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-linear-dev_1.21.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-linear/libghc-linear-dev_1.21.1-1_amd64.deb"
+}

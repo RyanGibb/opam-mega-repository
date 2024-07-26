@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i virt-viewer_7.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r virt-viewer"]
+]
+depends: [
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.4"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.25.2"}
+  "deb-libglib2-0-0" {>= "2.38"}
+  "deb-libgovirt2" {>= "0.3.4"}
+  "deb-libgtk-3-0" {>= "3.11.5"}
+  "deb-libgtk-vnc-2-0-0" {>= "0.4.1"}
+  "deb-libgvnc-1-0-0" {>= "0.4.1"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-librest-0-7-0" {>= "0.8.0"}
+  "deb-libsoup2-4-1" {>= "2.4.0"}
+  "deb-libspice-client-glib-2-0-8" {>= "0.35"}
+  "deb-libspice-client-gtk-3-0-5" {>= "0.32"}
+  "deb-libvirt-glib-1-0-0" {>= "0.0.7~"}
+  "deb-libvirt0" {>= "1.2.8~rc2"}
+  "deb-libxml2" {>= "2.7.4"}
+]
+extra-source "virt-viewer_7.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/v/virt-viewer/virt-viewer_7.0-2_amd64.deb"
+}

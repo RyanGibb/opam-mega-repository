@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-bioc-rcpi_1.34.0+ds-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-bioc-rcpi"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.2.2.20221110-1"}
+  "deb-r-bioc-biocgenerics"
+  "deb-r-bioc-biostrings"
+  "deb-r-bioc-gosemsim"
+  "deb-r-cran-doparallel"
+  "deb-r-cran-foreach"
+  "deb-r-cran-rcdk" {>= "3.3.8"}
+  "deb-r-cran-rcurl"
+  "deb-r-cran-rjson"
+]
+extra-source "r-bioc-rcpi_1.34.0+ds-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-bioc-rcpi/r-bioc-rcpi_1.34.0+ds-1_all.deb"
+}

@@ -1,0 +1,53 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnome_1:3.38+3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnome"]
+]
+depends: [
+  "deb-avahi-daemon"
+  "deb-cheese" {>= "3.38"}
+  "deb-cups-pk-helper" {>= "0.2"}
+  "deb-desktop-base"
+  "deb-evolution" {>= "3.36"}
+  "deb-evolution-plugins" {>= "3.36"}
+  "deb-file-roller" {>= "3.38"}
+  "deb-gedit-plugins" {>= "3.36"}
+  "deb-gnome-calendar" {>= "3.38"}
+  "deb-gnome-clocks" {>= "3.38"}
+  "deb-gnome-color-manager" {>= "3.36"}
+  "deb-gnome-core" {= "1-3.38+3"}
+  "deb-gnome-documents" {>= "3.30"}
+  "deb-gnome-getting-started-docs" {>= "3.36"}
+  "deb-gnome-maps" {>= "3.38"}
+  "deb-gnome-music" {>= "3.36"}
+  "deb-gnome-screenshot" {>= "3.38"}
+  "deb-gnome-sound-recorder"
+  "deb-gnome-todo" {>= "3.28"}
+  "deb-gnome-tweaks" {>= "3.30"}
+  "deb-gnome-weather" {>= "3.36"}
+  "deb-gstreamer1-0-libav" {>= "1.10"}
+  "deb-gstreamer1-0-plugins-ugly" {>= "1.10"}
+  "deb-libgsf-bin"
+  "deb-libproxy1-plugin-networkmanager"
+  "deb-libreoffice-calc"
+  "deb-libreoffice-gnome"
+  "deb-libreoffice-impress"
+  "deb-libreoffice-writer"
+  "deb-network-manager-gnome" {>= "1.8"}
+  "deb-orca" {>= "3.38"}
+  "deb-rhythmbox" {>= "3.0"}
+  "deb-rhythmbox-plugin-cdrecorder"
+  "deb-rhythmbox-plugins"
+  "deb-rygel-playbin" {>= "0.36"}
+  "deb-rygel-tracker" {>= "0.36"}
+  "deb-seahorse" {>= "3.36"}
+  "deb-simple-scan" {>= "3.36"}
+  "deb-totem-plugins"
+  "deb-xdg-user-dirs-gtk"
+  ("deb-shotwell" | "deb- gnome-photos" {>= "3.36"})
+]
+extra-source "gnome_1:3.38+3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/meta-gnome3/gnome_3.38+3_amd64.deb"
+}

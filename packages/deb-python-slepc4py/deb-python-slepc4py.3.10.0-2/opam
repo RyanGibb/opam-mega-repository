@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-slepc4py_3.10.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-slepc4py"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libopenmpi3"
+  "deb-libpetsc-real3-10"
+  "deb-libslepc-real3-10"
+  "deb-python" {< "2.8"}
+  "deb-python" {>= "2.7~"}
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7~"}
+  "deb-python-numpy"
+  "deb-python-numpy" {>= "1-1.14.3"}
+  "deb-python-petsc4py" {< "3.11"}
+  "deb-python-petsc4py" {>= "3.10"}
+]
+extra-source "python-slepc4py_3.10.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/slepc4py/python-slepc4py_3.10.0-2_amd64.deb"
+}

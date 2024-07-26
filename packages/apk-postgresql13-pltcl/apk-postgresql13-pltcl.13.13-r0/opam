@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add postgresql13-pltcl-13.13-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del postgresql13-pltcl"]
+]
+depends: [
+  "apk-musl" {= "1.2.2-r9"}
+  "apk-pgtcl" {= "2.1.0-r1"}
+  "apk-postgresql13" {= "13.13-r0"}
+  "apk-tcl" {= "8.6.11-r1"}
+]
+extra-source "postgresql13-pltcl-13.13-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/postgresql13-pltcl-13.13-r0.apk"
+}

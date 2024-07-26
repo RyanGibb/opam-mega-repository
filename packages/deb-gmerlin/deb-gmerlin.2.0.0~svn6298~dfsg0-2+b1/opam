@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gmerlin_2.0.0~svn6298~dfsg0-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gmerlin"]
+]
+depends: [
+  "deb-gmerlin-data" {>= "2.0.0~svn6298~dfsg0-2"}
+  "deb-gmerlin-plugins-base"
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.10.0"}
+  "deb-libgavl2" {>= "2.0.0~svn6298~"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libgmerlin2" {>= "2.0.0~svn6298~"}
+  "deb-libgtk-3-0" {>= "3.21.5"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libuuid1" {>= "2.16"}
+  "deb-libxml2" {>= "2.7.4"}
+]
+extra-source "gmerlin_2.0.0~svn6298~dfsg0-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gmerlin/gmerlin_2.0.0~svn6298~dfsg0-2+b1_amd64.deb"
+}

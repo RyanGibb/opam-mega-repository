@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i coqprime-tools_8.15-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r coqprime-tools"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libcoq-coqprime" {= "8.15-2+b1"}
+  "deb-libecm1" {>= "7.0.5+ds"}
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  ("deb-ocaml-base-nox" | "deb- ocaml-base")
+]
+extra-source "coqprime-tools_8.15-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/coqprime/coqprime-tools_8.15-2+b1_amd64.deb"
+}

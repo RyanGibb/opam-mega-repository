@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libifeffit-perl_2:1.2.11d-12.5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libifeffit-perl"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libgfortran5" {>= "8"}
+  "deb-libpgplot0" {>= "1.3.2"}
+  "deb-perl" {>= "5.36.0-6"}
+  "deb-perl-base"
+]
+conflicts: [
+  "deb-perl-ifeffit"
+]
+extra-source "libifeffit-perl_2:1.2.11d-12.5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/ifeffit/libifeffit-perl_1.2.11d-12.5_amd64.deb"
+}

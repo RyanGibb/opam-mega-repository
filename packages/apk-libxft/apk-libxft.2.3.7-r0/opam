@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libxft-2.3.7-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libxft"]
+]
+depends: [
+  "apk-fontconfig" {= "2.14.1-r0"}
+  "apk-freetype" {= "2.12.1-r0"}
+  "apk-libx11" {= "1.8.7-r0"}
+  "apk-libxrender" {= "0.9.11-r0"}
+  "apk-musl" {= "1.2.3-r5"}
+]
+extra-source "libxft-2.3.7-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libxft-2.3.7-r0.apk"
+}

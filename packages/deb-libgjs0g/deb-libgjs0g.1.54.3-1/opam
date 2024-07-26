@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgjs0g_1.54.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgjs0g"]
+]
+depends: [
+  "deb-gir1-2-glib-2-0" {>= "1.53.4"}
+  "deb-gir1-2-gtk-3-0" {>= "3.20"}
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.10.0"}
+  "deb-libffi6" {>= "3.0.4"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libgirepository-1-0-1" {>= "1.41.4"}
+  "deb-libglib2-0-0" {>= "2.54.0"}
+  "deb-libgtk-3-0" {>= "3.20"}
+  "deb-libmozjs-60-0"
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libreadline7" {>= "6.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libx11-6"
+  "deb-libxext6"
+]
+conflicts: [
+  "deb-libgjs0"
+  "deb-libgjs0a"
+  "deb-libgjs0b"
+  "deb-libgjs0c"
+  "deb-libgjs0d"
+  "deb-libgjs0e"
+  "deb-libgjs0f"
+]
+extra-source "libgjs0g_1.54.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gjs/libgjs0g_1.54.3-1_amd64.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i unburden-home-dir_0.4.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r unburden-home-dir"]
+]
+depends: [
+  "deb-libconfig-file-perl"
+  "deb-libfile-basedir-perl"
+  "deb-libfile-rsync-perl"
+  "deb-libfile-touch-perl"
+  "deb-libfile-which-perl"
+  "deb-libipc-run-perl"
+  "deb-libstring-expand-perl"
+  "deb-libtry-tiny-perl"
+  "deb-perl-any"
+]
+extra-source "unburden-home-dir_0.4.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/u/unburden-home-dir/unburden-home-dir_0.4.2_all.deb"
+}

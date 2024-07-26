@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i uglifyjs_3.4.9-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r uglifyjs"]
+]
+depends: [
+  "deb-node-commander"
+  "deb-node-uglify-js"
+  "deb-nodejs"
+]
+conflicts: [
+  "deb-node-uglify"
+]
+extra-source "uglifyjs_3.4.9-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/u/uglify-js/uglifyjs_3.4.9-5_all.deb"
+}

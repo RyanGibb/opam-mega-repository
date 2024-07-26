@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i librust-tokio-test-dev_0.4.2-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r librust-tokio-test-dev"]
+]
+depends: [
+  "deb-librust-async-stream-0-3+default-dev"
+  "deb-librust-bytes-1+default-dev"
+  "deb-librust-futures-core-0-3+default-dev"
+  "deb-librust-tokio-dev"
+  "deb-librust-tokio-stream-0-1+default-dev"
+]
+extra-source "librust-tokio-test-dev_0.4.2-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rust-tokio-test/librust-tokio-test-dev_0.4.2-1+b1_amd64.deb"
+}

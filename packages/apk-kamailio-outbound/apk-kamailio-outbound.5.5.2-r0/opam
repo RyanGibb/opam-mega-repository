@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add kamailio-outbound-5.5.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del kamailio-outbound"]
+]
+depends: [
+  "apk-kamailio" {= "5.5.2-r0"}
+  "apk-libcrypto1-1" {= "1.1.1w-r1"}
+  "apk-musl" {= "1.2.2-r9"}
+]
+extra-source "kamailio-outbound-5.5.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/kamailio-outbound-5.5.2-r0.apk"
+}

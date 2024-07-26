@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i charmtimetracker_1.12.0-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r charmtimetracker"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5keychain1" {>= "0.7.0"}
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libqt5printsupport5" {>= "5.0.2"}
+  "deb-libqt5sql5" {>= "5.0.2"}
+  "deb-libqt5sql5-sqlite"
+  "deb-libqt5widgets5" {>= "5.2.0"}
+  "deb-libqt5xml5" {>= "5.0.2"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libxcb-screensaver0"
+  "deb-libxcb1"
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "charmtimetracker_1.12.0-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/charmtimetracker/charmtimetracker_1.12.0-3_amd64.deb"
+}

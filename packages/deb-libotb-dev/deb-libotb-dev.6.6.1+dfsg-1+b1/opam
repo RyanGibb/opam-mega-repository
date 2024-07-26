@@ -1,0 +1,85 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libotb-dev_6.6.1+dfsg-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libotb-dev"]
+]
+depends: [
+  "deb-cmake" {>= "2.8.3"}
+  "deb-libboost-date-time-dev"
+  "deb-libboost-filesystem-dev"
+  "deb-libboost-graph-dev"
+  "deb-libboost-program-options-dev"
+  "deb-libboost-system-dev"
+  "deb-libboost-thread-dev"
+  "deb-libgdal-dev" {>= "1.10.0"}
+  "deb-libgeotiff-dev"
+  "deb-libglew-dev"
+  "deb-libglfw3-dev"
+  "deb-libinsighttoolkit4-dev"
+  "deb-libkml-dev"
+  "deb-libmuparser-dev"
+  "deb-libopencv-dev"
+  "deb-libopenthreads-dev"
+  "deb-libossim-dev"
+  "deb-libotbapplicationengine-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbcarto-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbcommandline-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbcommandlineparser-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbcommon-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbcurladapters-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbedge-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbextendedfilename-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbfuzzy-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbgdaladapters-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbice-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbimagebase-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbimageio-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbimagemanipulation-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbiobsq-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbiogdal-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbiokml-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbiolum-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbiomstar-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbioonera-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbiorad-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbiotilemap-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotblearningbase-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbmapla-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbmathparser-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbmetadata-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbmonteverdi-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbmonteverdicore-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbmonteverdigui-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbopenthreadsadapters-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbossimadapters-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbossimplugins-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbpolarimetry-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbprojection-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbqtadapters-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbqtwidget-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbrcc8-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbsampling-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbsiftfast-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbstatistics-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbstreaming-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbsupervised-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbtestkernel-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbtransform-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbvectordatabase-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbvectordataio-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libotbwavelet-6-6-1" {= "6.6.1+dfsg-1+b1"}
+  "deb-libqwt-qt5-dev"
+  "deb-libsvm-dev"
+  "deb-monteverdi" {= "6.6.1+dfsg-1+b1"}
+  "deb-otb-testdriver" {= "6.6.1+dfsg-1+b1"}
+  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
+]
+conflicts: [
+  "deb-libotb3-dev"
+  "deb-libotb4-dev"
+]
+extra-source "libotb-dev_6.6.1+dfsg-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/otb/libotb-dev_6.6.1+dfsg-1+b1_amd64.deb"
+}

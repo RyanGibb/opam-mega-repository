@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libgphoto2-2.5.25-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libgphoto2"]
+]
+depends: [
+  "apk-busybox" {= "1.31.1-r22"}
+  "apk-libexif" {= "0.6.22-r0"}
+  "apk-libjpeg-turbo" {= "2.1.0-r0"}
+  "apk-libltdl" {= "2.4.6-r7"}
+  "apk-libusb" {= "1.0.23-r0"}
+  "apk-musl" {= "1.1.24-r10"}
+]
+extra-source "libgphoto2-2.5.25-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/libgphoto2-2.5.25-r0.apk"
+}

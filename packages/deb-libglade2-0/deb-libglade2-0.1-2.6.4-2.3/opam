@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libglade2-0_1:2.6.4-2.3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libglade2-0"]
+]
+depends: [
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libgtk2-0-0" {>= "2.8.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libxml2" {>= "2.7.4"}
+]
+extra-source "libglade2-0_1:2.6.4-2.3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libg/libglade2/libglade2-0_2.6.4-2.3_amd64.deb"
+}

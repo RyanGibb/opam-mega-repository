@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add zfs-2.2.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del zfs"]
+]
+depends: [
+  "apk-libblkid" {= "2.39.3-r0"}
+  "apk-libcrypto3" {= "3.1.6-r2"}
+  "apk-libintl" {= "0.22.3-r0"}
+  "apk-libuuid" {= "2.39.3-r0"}
+  "apk-musl" {= "1.2.4_git20230717-r4"}
+  "apk-zfs-libs" {= "2.2.2-r0"}
+]
+extra-source "zfs-2.2.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/zfs-2.2.2-r0.apk"
+}

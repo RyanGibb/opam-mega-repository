@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libxapp1_1.2.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libxapp1"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libgnomekbd8" {>= "3.6.0"}
+  "deb-libgtk-3-0" {>= "3.16.2"}
+  "deb-libx11-6"
+  "deb-xapps-common" {>= "1.2.2-1"}
+]
+extra-source "libxapp1_1.2.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xapp/libxapp1_1.2.2-1_amd64.deb"
+}

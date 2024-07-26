@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cod-tools_2.3+dfsg-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cod-tools"]
+]
+depends: [
+  "deb-curl"
+  "deb-gawk"
+  "deb-libc6" {>= "2.14"}
+  "deb-libcapture-tiny-perl"
+  "deb-libcarp-assert-perl"
+  "deb-libclone-perl"
+  "deb-libcod-cif-parser-bison-perl"
+  "deb-libcod-cif-parser-yapp-perl"
+  "deb-libcod-precision-perl"
+  "deb-libcod-usermessage-perl"
+  "deb-libdate-calc-perl"
+  "deb-libdatetime-format-rfc3339-perl"
+  "deb-libdbd-mysql-perl"
+  "deb-libdbd-sqlite3-perl"
+  "deb-libdbi-perl"
+  "deb-libdigest-sha-perl"
+  "deb-libhtml-parser-perl"
+  "deb-libjson-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-libparse-yapp-perl"
+  "deb-libsymspg1" {>= "1.12.1"}
+  "deb-libwww-curl-perl"
+  "deb-libxml-simple-perl"
+  "deb-openbabel"
+  "deb-perl" {>= "5.28.1-3"}
+  "deb-perl-base"
+]
+extra-source "cod-tools_2.3+dfsg-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cod-tools/cod-tools_2.3+dfsg-3_amd64.deb"
+}

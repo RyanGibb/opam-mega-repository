@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-try-tiny-0.30-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-try-tiny"]
+]
+depends: [
+  "apk-perl" {= "5.34.2-r0"}
+  "apk-perl-capture-tiny" {= "0.48-r2"}
+  "apk-perl-pod-coverage" {= "0.23-r2"}
+]
+extra-source "perl-try-tiny-0.30-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/perl-try-tiny-0.30-r3.apk"
+}

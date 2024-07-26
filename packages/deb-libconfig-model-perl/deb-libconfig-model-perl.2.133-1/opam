@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libconfig-model-perl_2.133-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libconfig-model-perl"]
+]
+depends: [
+  "deb-libboolean-perl"
+  "deb-libcarp-assert-more-perl"
+  "deb-libfile-homedir-perl"
+  "deb-libhash-merge-perl"
+  "deb-libjson-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-liblog-log4perl-perl"
+  "deb-libmouse-perl"
+  "deb-libmousex-nativetraits-perl"
+  "deb-libmousex-strictconstructor-perl"
+  "deb-libparse-recdescent-perl"
+  "deb-libpath-tiny-perl" {>= "0.070"}
+  "deb-libpod-pom-perl"
+  "deb-libregexp-common-perl"
+  "deb-perl"
+]
+extra-source "libconfig-model-perl_2.133-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libconfig-model-perl/libconfig-model-perl_2.133-1_all.deb"
+}

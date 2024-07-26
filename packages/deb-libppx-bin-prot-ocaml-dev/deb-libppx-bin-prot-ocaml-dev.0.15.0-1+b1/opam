@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libppx-bin-prot-ocaml-dev_0.15.0-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libppx-bin-prot-ocaml-dev"]
+]
+depends: [
+  "deb-libbase-ocaml-dev"
+  "deb-libocaml-compiler-libs-ocaml-dev"
+  "deb-libppx-bin-prot-ocaml"
+  "deb-libppx-here-ocaml-dev"
+  "deb-libppxlib-ocaml-dev"
+  "deb-libsexplib0-ocaml-dev"
+  "deb-ocaml"
+]
+extra-source "libppx-bin-prot-ocaml-dev_0.15.0-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/ppx-bin-prot/libppx-bin-prot-ocaml-dev_0.15.0-1+b1_amd64.deb"
+}

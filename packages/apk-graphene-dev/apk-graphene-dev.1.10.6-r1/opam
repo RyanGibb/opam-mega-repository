@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add graphene-dev-1.10.6-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del graphene-dev"]
+]
+depends: [
+  "apk-glib-dev" {= "2.70.5-r0"}
+  "apk-graphene" {= "1.10.6-r1"}
+  "apk-pkgconf" {= "1.8.1-r0"}
+]
+extra-source "graphene-dev-1.10.6-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/graphene-dev-1.10.6-r1.apk"
+}

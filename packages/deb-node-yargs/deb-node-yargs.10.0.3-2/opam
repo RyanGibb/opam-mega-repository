@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-yargs_10.0.3-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-yargs"]
+]
+depends: [
+  "deb-node-cliui" {>= "3.2.0"}
+  "deb-node-decamelize" {>= "1.1.1"}
+  "deb-node-find-up" {>= "2.1.0"}
+  "deb-node-get-caller-file" {>= "1.0.1"}
+  "deb-node-os-locale" {>= "2.0.0"}
+  "deb-node-require-directory" {>= "2.1.1"}
+  "deb-node-require-main-filename" {>= "1.0.1"}
+  "deb-node-set-blocking" {>= "2.0.0"}
+  "deb-node-string-width" {>= "2.0.0"}
+  "deb-node-which-module" {>= "2.0.0"}
+  "deb-node-y18n" {>= "3.2.1"}
+  "deb-node-yargs-parser" {>= "8.0.0~"}
+  "deb-nodejs"
+]
+extra-source "node-yargs_10.0.3-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-yargs/node-yargs_10.0.3-2_all.deb"
+}

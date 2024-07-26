@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libintellij-utils-java_183.5153.4-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libintellij-utils-java"]
+]
+depends: [
+  "deb-libbatik-java"
+  "deb-libcommons-compress-java"
+  "deb-libimgscalr-java"
+  "deb-libintellij-java-compatibility-java"
+  "deb-libjdom2-intellij-java"
+  "deb-libjetbrains-annotations-java"
+  "deb-libjna-platform-java"
+  "deb-liblog4j1-2-java"
+  "deb-liblz4-java"
+  "deb-liboro-java"
+  "deb-libtrove-intellij-java"
+  "deb-libxml-commons-external-java"
+  "deb-libxmlgraphics-commons-java"
+]
+extra-source "libintellij-utils-java_183.5153.4-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/intellij-community-idea/libintellij-utils-java_183.5153.4-3_all.deb"
+}

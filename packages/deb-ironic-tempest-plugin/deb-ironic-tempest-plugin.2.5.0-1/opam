@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ironic-tempest-plugin_2.5.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ironic-tempest-plugin"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-fixtures"
+  "deb-python3-oslo-config"
+  "deb-python3-oslo-log"
+  "deb-python3-oslo-serialization"
+  "deb-python3-oslo-utils"
+  "deb-python3-pbr"
+  "deb-python3-tempest"
+  "deb-tempest" {>= "27.0.0"}
+]
+extra-source "ironic-tempest-plugin_2.5.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/ironic-tempest-plugin/ironic-tempest-plugin_2.5.0-1_all.deb"
+}

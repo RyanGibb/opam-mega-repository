@@ -1,0 +1,132 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kdepim-addons_20.08.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kdepim-addons"]
+]
+depends: [
+  "deb-kio"
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgpgmepp6" {>= "1.14.0"}
+  "deb-libgrantlee-templates5" {>= "5.0.0"}
+  "deb-libkf5akonadicalendar5abi1"
+  "deb-libkf5akonadicalendar5abi1" {>= "4-20.08.3"}
+  "deb-libkf5akonadicontact5"
+  "deb-libkf5akonadicontact5" {>= "4-20.08.3"}
+  "deb-libkf5akonadicore5abi2"
+  "deb-libkf5akonadicore5abi2" {>= "4-20.08.3"}
+  "deb-libkf5akonadimime5"
+  "deb-libkf5akonadimime5" {>= "4-20.08.3"}
+  "deb-libkf5akonadinotes5"
+  "deb-libkf5akonadinotes5" {>= "4-20.08.3"}
+  "deb-libkf5akonadiwidgets5abi1"
+  "deb-libkf5akonadiwidgets5abi1" {>= "4-20.08.3"}
+  "deb-libkf5calendarcore5abi2" {>= "5-5.71.0~"}
+  "deb-libkf5calendarevents5" {>= "5.71.0~"}
+  "deb-libkf5calendarsupport5abi1"
+  "deb-libkf5calendarsupport5abi1" {>= "4-20.08.3"}
+  "deb-libkf5calendarutils5"
+  "deb-libkf5calendarutils5" {>= "4-20.08.3"}
+  "deb-libkf5codecs5" {>= "5.4.0+git20141202.0008+15.04"}
+  "deb-libkf5completion5" {>= "4.97.0"}
+  "deb-libkf5configcore5" {>= "5.71.0~"}
+  "deb-libkf5configgui5" {>= "5.71.0~"}
+  "deb-libkf5configwidgets5" {>= "5.23.0"}
+  "deb-libkf5contacts5" {>= "5-5.71.0~"}
+  "deb-libkf5coreaddons5" {>= "5.2.0"}
+  "deb-libkf5eventviews5abi1"
+  "deb-libkf5eventviews5abi1" {>= "4-20.08.3"}
+  "deb-libkf5grantleetheme5"
+  "deb-libkf5grantleetheme5" {>= "20.08.3"}
+  "deb-libkf5gravatar5abi2"
+  "deb-libkf5gravatar5abi2" {>= "4-20.08.3"}
+  "deb-libkf5i18n5" {>= "5.71.0~"}
+  "deb-libkf5iconthemes5" {>= "5.71.0~"}
+  "deb-libkf5identitymanagement5"
+  "deb-libkf5identitymanagement5" {>= "20.08.3"}
+  "deb-libkf5imap5"
+  "deb-libkf5imap5" {>= "20.08.3"}
+  "deb-libkf5incidenceeditor5abi1"
+  "deb-libkf5incidenceeditor5abi1" {>= "20.08.3"}
+  "deb-libkf5itemmodels5" {>= "4.96.0"}
+  "deb-libkf5itemviews5" {>= "4.96.0"}
+  "deb-libkf5jobwidgets5" {>= "4.96.0"}
+  "deb-libkf5kaddressbookgrantlee5"
+  "deb-libkf5kaddressbookgrantlee5" {>= "4-20.08.3"}
+  "deb-libkf5kaddressbookimportexport5"
+  "deb-libkf5kaddressbookimportexport5" {>= "4-20.08.3"}
+  "deb-libkf5kiocore5" {>= "5.71.0~"}
+  "deb-libkf5kiogui5" {>= "5.74.0"}
+  "deb-libkf5kiowidgets5" {>= "5.71.0~"}
+  "deb-libkf5kontactinterface5"
+  "deb-libkf5kontactinterface5" {>= "20.08.3"}
+  "deb-libkf5ksieveui5"
+  "deb-libkf5ksieveui5" {>= "4-20.08.3"}
+  "deb-libkf5libkdepim5"
+  "deb-libkf5libkdepim5" {>= "4-20.08.3"}
+  "deb-libkf5libkleo5"
+  "deb-libkf5libkleo5" {>= "4-20.08.3"}
+  "deb-libkf5mailcommon5abi2"
+  "deb-libkf5mailcommon5abi2" {>= "4-20.08.3"}
+  "deb-libkf5mailimporter5"
+  "deb-libkf5mailimporter5" {>= "4-20.08.3"}
+  "deb-libkf5mailtransport5"
+  "deb-libkf5mailtransport5" {>= "20.08.3"}
+  "deb-libkf5mailtransportakonadi5"
+  "deb-libkf5mailtransportakonadi5" {>= "20.08.3"}
+  "deb-libkf5messagecomposer5abi1"
+  "deb-libkf5messagecomposer5abi1" {>= "4-20.08.3"}
+  "deb-libkf5messagecore5abi1"
+  "deb-libkf5messagecore5abi1" {>= "4-20.08.3"}
+  "deb-libkf5messageviewer5abi1"
+  "deb-libkf5messageviewer5abi1" {>= "4-20.08.3"}
+  "deb-libkf5mime5abi1"
+  "deb-libkf5mime5abi1" {>= "20.08.3"}
+  "deb-libkf5mimetreeparser5abi1"
+  "deb-libkf5mimetreeparser5abi1" {>= "4-20.08.3"}
+  "deb-libkf5pimcommon5abi2"
+  "deb-libkf5pimcommon5abi2" {>= "4-20.08.3"}
+  "deb-libkf5pimcommonakonadi5abi1"
+  "deb-libkf5pimcommonakonadi5abi1" {>= "4-20.08.3"}
+  "deb-libkf5pimtextedit5abi2"
+  "deb-libkf5pimtextedit5abi2" {>= "20.08.3"}
+  "deb-libkf5prison5" {>= "5.71.0~"}
+  "deb-libkf5service-bin"
+  "deb-libkf5service5" {>= "4.99.0"}
+  "deb-libkf5syntaxhighlighting5" {>= "5.71.0~"}
+  "deb-libkf5templateparser5"
+  "deb-libkf5templateparser5" {>= "4-20.08.3"}
+  "deb-libkf5textwidgets5" {>= "5.0.0"}
+  "deb-libkf5tnef5"
+  "deb-libkf5tnef5" {>= "4-20.08.3"}
+  "deb-libkf5webengineviewer5abi1"
+  "deb-libkf5webengineviewer5abi1" {>= "4-20.08.3"}
+  "deb-libkf5widgetsaddons5" {>= "4.96.0"}
+  "deb-libkf5xmlgui5" {>= "5.71.0~"}
+  "deb-libkpimimportwizard5"
+  "deb-libkpimimportwizard5" {>= "4-20.08.3"}
+  "deb-libkpimitinerary5"
+  "deb-libkpimitinerary5" {>= "20.08.3"}
+  "deb-libkpimpkpass5"
+  "deb-libkpimpkpass5" {>= "20.08.3"}
+  "deb-libmarkdown2" {>= "2.0.6"}
+  "deb-libqgpgme7" {>= "1.14.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.14.1"}
+  "deb-libqt5network5" {>= "5.13.0~"}
+  "deb-libqt5qml5" {>= "5.0.2"}
+  "deb-libqt5webenginecore5" {>= "5.13.0~"}
+  "deb-libqt5webenginewidgets5" {>= "5.13.0~"}
+  "deb-libqt5widgets5" {>= "5.14.1"}
+  "deb-libqt5xml5" {>= "5.13.0~"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-plasma-framework"
+  "deb-qml-module-qtquick-controls"
+  "deb-qml-module-qtquick-layouts"
+  ("deb-libqt5gui5" {>= "5.13.0~"} | "deb- libqt5gui5-gles" {>= "5.13.0~"})
+]
+extra-source "kdepim-addons_20.08.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kdepim-addons/kdepim-addons_20.08.3-1_amd64.deb"
+}

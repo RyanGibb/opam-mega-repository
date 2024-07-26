@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-hsx-jmacro-dev_7.3.8.1-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-hsx-jmacro-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-hsp-dev"
+  "deb-libghc-jmacro-dev"
+  "deb-libghc-wl-pprint-text-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-hsx-jmacro-dev_7.3.8.1-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-hsx-jmacro/libghc-hsx-jmacro-dev_7.3.8.1-3+b1_amd64.deb"
+}

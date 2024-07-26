@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-bcdoc_0.16.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-bcdoc"]
+]
+depends: [
+  "deb-python" {< "2.8"}
+  "deb-python" {>= "2.7"}
+  "deb-python-docutils"
+  "deb-python-six" {>= "1.8.0"}
+]
+extra-source "python-bcdoc_0.16.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-bcdoc/python-bcdoc_0.16.0-1_all.deb"
+}

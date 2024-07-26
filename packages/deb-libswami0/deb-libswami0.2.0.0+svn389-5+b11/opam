@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libswami0_2.0.0+svn389-5+b11_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libswami0"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libglade2-0" {>= "1-2.6.4-2~"}
+  "deb-libglib2-0-0" {>= "2.41.1"}
+  "deb-libgnomecanvas2-0" {>= "2.11.1"}
+  "deb-libgtk2-0-0" {>= "2.24.32"}
+  "deb-libinstpatch-1-0-0" {>= "1.0.0~"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-librsvg2-2" {>= "2.14.4"}
+]
+extra-source "libswami0_2.0.0+svn389-5+b11_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/swami/libswami0_2.0.0+svn389-5+b11_amd64.deb"
+}

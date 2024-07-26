@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i php-vlucas-phpdotenv_5.4.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r php-vlucas-phpdotenv"]
+]
+depends: [
+  "deb-php-common"
+  "deb-php-graham-campbell-result-type" {< "2~~"}
+  "deb-php-graham-campbell-result-type" {>= "1.0.2"}
+  "deb-php-mbstring"
+  "deb-php-phpoption" {< "2~~"}
+  "deb-php-phpoption" {>= "1.8"}
+]
+extra-source "php-vlucas-phpdotenv_5.4.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/php-vlucas-phpdotenv/php-vlucas-phpdotenv_5.4.1-1_all.deb"
+}

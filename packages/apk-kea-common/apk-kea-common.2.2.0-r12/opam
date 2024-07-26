@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add kea-common-2.2.0-r12.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del kea-common"]
+]
+depends: [
+  "apk-botan-libs" {= "2.19.3-r3"}
+  "apk-libgcc" {= "12.2.1_git20220924-r10"}
+  "apk-libpq" {= "15.7-r0"}
+  "apk-libstdc++" {= "12.2.1_git20220924-r10"}
+  "apk-log4cplus" {= "2.1.0-r1"}
+  "apk-mariadb-connector-c" {= "3.3.5-r0"}
+  "apk-musl" {= "1.2.4-r2"}
+  ("apk-busybox-binsh" {= "1.36.1-r7"} | "apk-dash-binsh" {= "0.5.12-r2"} | "apk-yash-binsh" {= "2.54-r3"})
+]
+extra-source "kea-common-2.2.0-r12.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/kea-common-2.2.0-r12.apk"
+}

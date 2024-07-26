@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-parsel_1.6.0+dfsg-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-parsel"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-cssselect"
+  "deb-python3-lxml"
+  "deb-python3-six" {>= "1.6.0"}
+  "deb-python3-w3lib" {>= "1.19.0"}
+]
+extra-source "python3-parsel_1.6.0+dfsg-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-parsel/python3-parsel_1.6.0+dfsg-2_all.deb"
+}

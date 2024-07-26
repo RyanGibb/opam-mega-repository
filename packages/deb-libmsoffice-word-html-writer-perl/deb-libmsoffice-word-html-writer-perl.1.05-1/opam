@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmsoffice-word-html-writer-perl_1.05-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmsoffice-word-html-writer-perl"]
+]
+depends: [
+  "deb-libencode-perl"
+  "deb-libmime-types-perl"
+  "deb-libparams-validate-perl"
+  "deb-libscalar-list-utils-perl"
+  "deb-perl-any"
+]
+extra-source "libmsoffice-word-html-writer-perl_1.05-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libm/libmsoffice-word-html-writer-perl/libmsoffice-word-html-writer-perl_1.05-1_all.deb"
+}

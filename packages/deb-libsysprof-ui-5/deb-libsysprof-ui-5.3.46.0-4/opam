@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsysprof-ui-5_3.46.0-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsysprof-ui-5"]
+]
+depends: [
+  "deb-libadwaita-1-0" {>= "1.2~alpha"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libcairo2" {>= "1.14.0"}
+  "deb-libglib2-0-0" {>= "2.73.0"}
+  "deb-libgraphene-1-0-0" {>= "1.5.4"}
+  "deb-libgtk-4-1" {>= "4.6"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libsysprof-4" {>= "3.37.90"}
+]
+extra-source "libsysprof-ui-5_3.46.0-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sysprof/libsysprof-ui-5_3.46.0-4_amd64.deb"
+}

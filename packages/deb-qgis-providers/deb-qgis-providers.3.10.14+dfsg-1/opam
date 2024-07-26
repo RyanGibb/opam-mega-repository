@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qgis-providers_3.10.14+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qgis-providers"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgdal28" {>= "2.0.1"}
+  "deb-libhdf5-103-1"
+  "deb-libnetcdf18" {>= "4.0.1"}
+  "deb-libpq5"
+  "deb-libqca-qt5-2" {>= "2.0.2"}
+  "deb-libqca-qt5-2-plugins"
+  "deb-libqgis-core3-10-14" {>= "3.10.14"}
+  "deb-libqgis-gui3-10-14" {>= "3.10.2"}
+  "deb-libqscintilla2-qt5-15" {>= "2.11.2"}
+  "deb-libqt5core5a"
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5network5" {>= "5.0.2"}
+  "deb-libqt5sql5" {>= "5.7.0"}
+  "deb-libqt5sql5-sqlite"
+  "deb-libqt5webkit5" {>= "5.212.0~alpha3"}
+  "deb-libqt5widgets5" {>= "5.14.1"}
+  "deb-libqt5xml5" {>= "5.0.2"}
+  "deb-libspatialite7" {>= "4.2.0"}
+  "deb-libsqlite3-0" {>= "3.5.9"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-qgis-providers-common" {= "3.10.14+dfsg-1"}
+  ("deb-libqt5gui5" {>= "5.2.0"} | "deb- libqt5gui5-gles" {>= "5.2.0"})
+]
+extra-source "qgis-providers_3.10.14+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qgis/qgis-providers_3.10.14+dfsg-1_amd64.deb"
+}

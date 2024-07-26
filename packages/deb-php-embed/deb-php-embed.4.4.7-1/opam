@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i php-embed_4.4.7-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r php-embed"]
+]
+depends: [
+  "deb-php-common"
+  "deb-php-composer-ca-bundle" {< "2~~"}
+  "deb-php-composer-ca-bundle" {>= "1.0"}
+  "deb-php-curl"
+  "deb-php-json"
+  "deb-php-mbstring"
+  "deb-php-ml-json-ld" {< "2~~"}
+  "deb-php-ml-json-ld" {>= "1.1"}
+  "deb-php-oscarotero-html-parser" {< "0.2~~"}
+  "deb-php-oscarotero-html-parser" {>= "0.1.4"}
+  "deb-php-psr-http-client" {< "2~~"}
+  "deb-php-psr-http-client" {>= "1.0"}
+  "deb-php-psr-http-factory" {< "2~~"}
+  "deb-php-psr-http-factory" {>= "1.0"}
+  "deb-php-psr-http-message" {< "2~~"}
+  "deb-php-psr-http-message" {>= "1.0"}
+  "deb-php-xml"
+]
+extra-source "php-embed_4.4.7-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/php-embed/php-embed_4.4.7-1_all.deb"
+}

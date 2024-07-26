@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mpqc3_0.0~git20170114-4.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mpqc3"]
+]
+depends: [
+  "deb-libc6" {>= "2.15"}
+  "deb-libgcc1" {>= "1-4.0"}
+  "deb-libgfortran5" {>= "8"}
+  "deb-libint2-2"
+  "deb-libmpich12"
+  "deb-libopenbabel5"
+  "deb-libquadmath0" {>= "4.6"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtbb2" {>= "2017~U7"}
+  "deb-mpi-default-bin"
+  "deb-mpqc3-data"
+  "deb-psi3"
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "mpqc3_0.0~git20170114-4.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mpqc3/mpqc3_0.0~git20170114-4.1_amd64.deb"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fonts-yozvox-yozfont_14.04-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fonts-yozvox-yozfont"]
+]
+depends: [
+  "deb-fonts-yozvox-yozfont-antique"
+  "deb-fonts-yozvox-yozfont-cute"
+  "deb-fonts-yozvox-yozfont-edu"
+  "deb-fonts-yozvox-yozfont-new-kana"
+  "deb-fonts-yozvox-yozfont-standard-kana"
+]
+extra-source "fonts-yozvox-yozfont_14.04-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fonts-yozvox-yozfont/fonts-yozvox-yozfont_14.04-2_all.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mysqmail-pure-ftpd-logger_0.4.9-10.3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mysqmail-pure-ftpd-logger"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libdotconf0" {>= "1.0.13"}
+  "deb-libmariadb3" {>= "3.0.0"}
+  "deb-lsb-base"
+  "deb-mysqmail"
+  ("deb-pure-ftpd" | "deb- pure-ftpd-mysql")
+]
+extra-source "mysqmail-pure-ftpd-logger_0.4.9-10.3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mysqmail/mysqmail-pure-ftpd-logger_0.4.9-10.3_amd64.deb"
+}

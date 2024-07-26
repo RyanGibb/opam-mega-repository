@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libopkele3v5_2.0.4+git20140305.9651b55-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libopkele3v5"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtidy5deb1" {>= "1-5.2.0"}
+]
+conflicts: [
+  "deb-libopkele3"
+]
+extra-source "libopkele3v5_2.0.4+git20140305.9651b55-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libo/libopkele/libopkele3v5_2.0.4+git20140305.9651b55-4_amd64.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-skbuild_0.11.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-skbuild"]
+]
+depends: [
+  "deb-cmake"
+  "deb-python3-any"
+  "deb-python3-distro"
+  "deb-python3-packaging"
+  "deb-python3-setuptools" {>= "28.0.0"}
+  "deb-python3-wheel" {>= "0.29.0"}
+]
+extra-source "python3-skbuild_0.11.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/scikit-build/python3-skbuild_0.11.1-2_all.deb"
+}

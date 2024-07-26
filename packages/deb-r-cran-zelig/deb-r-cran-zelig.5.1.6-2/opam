@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-zelig_5.1.6-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-zelig"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "3.5.0-5"}
+  "deb-r-cran-aer"
+  "deb-r-cran-amelia"
+  "deb-r-cran-coda"
+  "deb-r-cran-dplyr" {>= "0.3.0.2"}
+  "deb-r-cran-formula"
+  "deb-r-cran-geepack"
+  "deb-r-cran-jsonlite"
+  "deb-r-cran-mass"
+  "deb-r-cran-matchit"
+  "deb-r-cran-maxlik"
+  "deb-r-cran-mcmcpack"
+  "deb-r-cran-quantreg"
+  "deb-r-cran-sandwich"
+  "deb-r-cran-survey"
+  "deb-r-cran-survival"
+  "deb-r-cran-vgam"
+]
+extra-source "r-cran-zelig_5.1.6-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-zelig/r-cran-zelig_5.1.6-2_all.deb"
+}

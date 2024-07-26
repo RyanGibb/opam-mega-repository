@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-fava_1.9-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-fava"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-babel"
+  "deb-python3-beancount"
+  "deb-python3-cheroot" {>= "6.5.4+ds-2"}
+  "deb-python3-click"
+  "deb-python3-flask" {>= "0.10.1"}
+  "deb-python3-flask-babel"
+  "deb-python3-jinja2"
+  "deb-python3-markdown2"
+  "deb-python3-ply"
+  "deb-python3-simplejson"
+]
+extra-source "python3-fava_1.9-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fava/python3-fava_1.9-4_all.deb"
+}

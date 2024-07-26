@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i xscreensaver-screensaver-bsod_5.45+dfsg1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r xscreensaver-screensaver-bsod"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libgdk-pixbuf-xlib-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.16.0"}
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxft2" {> "2.1.1"}
+  "deb-libxmu6"
+  "deb-libxt6"
+  "deb-xscreensaver-data-extra"
+]
+extra-source "xscreensaver-screensaver-bsod_5.45+dfsg1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/x/xscreensaver/xscreensaver-screensaver-bsod_5.45+dfsg1-2_amd64.deb"
+}

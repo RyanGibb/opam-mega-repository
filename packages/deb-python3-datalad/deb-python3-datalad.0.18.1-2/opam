@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-datalad_0.18.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-datalad"]
+]
+depends: [
+  "deb-p7zip-full"
+  "deb-patool"
+  "deb-python3" {>= "3.7"}
+  "deb-python3-annexremote"
+  "deb-python3-any"
+  "deb-python3-appdirs"
+  "deb-python3-chardet"
+  "deb-python3-distro"
+  "deb-python3-fasteners" {>= "0.14~"}
+  "deb-python3-gitlab"
+  "deb-python3-humanize"
+  "deb-python3-iso8601"
+  "deb-python3-keyring"
+  "deb-python3-mock"
+  "deb-python3-msgpack"
+  "deb-python3-packaging"
+  "deb-python3-pil"
+  "deb-python3-requests" {>= "1.2"}
+  "deb-python3-secretstorage"
+  "deb-python3-six"
+  "deb-python3-tqdm"
+  ("deb-git-annex" {>= "8.20200309~"} | "deb- git-annex-standalone" {>= "8.20200309~"})
+  ("deb-python3" {>= "3.10"} | "deb- python3-importlib-metadata" {>= "3.6~"})
+  ("deb-python3-distutils" | "deb- libpython3-stdlib" {<= "3.6.4~rc1-2"})
+  ("deb-python3-keyrings-alt" | "deb- python3-keyring" {<= "8"})
+]
+extra-source "python3-datalad_0.18.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/datalad/python3-datalad_0.18.1-2_all.deb"
+}

@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kde-style-qtcurve-qt5_1.9-7+b6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kde-style-qtcurve-qt5"]
+]
+depends: [
+  "deb-kio"
+  "deb-libc6" {>= "2.34"}
+  "deb-libkf5archive5" {>= "4.96.0"}
+  "deb-libkf5completion5" {>= "4.97.0"}
+  "deb-libkf5configcore5" {>= "4.97.0"}
+  "deb-libkf5configwidgets5" {>= "4.96.0"}
+  "deb-libkf5coreaddons5" {>= "4.100.0"}
+  "deb-libkf5guiaddons5" {>= "4.96.0"}
+  "deb-libkf5i18n5" {>= "4.97.0"}
+  "deb-libkf5iconthemes5" {>= "4.96.0"}
+  "deb-libkf5kdelibs4support5" {>= "4.96.0"}
+  "deb-libkf5kiowidgets5" {>= "5.69.0"}
+  "deb-libkf5style5" {>= "4.96.0"}
+  "deb-libkf5widgetsaddons5" {>= "4.96.0"}
+  "deb-libkf5windowsystem5" {>= "4.96.0"}
+  "deb-libkf5xmlgui5" {>= "4.98.0"}
+  "deb-libqt5core5a"
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.14.1"}
+  "deb-libqt5printsupport5" {>= "5.0.2"}
+  "deb-libqt5svg5" {>= "5.6.0~beta"}
+  "deb-libqt5widgets5" {>= "5.14.1"}
+  "deb-libqt5x11extras5" {>= "5.6.0"}
+  "deb-libqtcurve-utils2" {>= "1.9"}
+  "deb-libstdc++6" {>= "4.4"}
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "kde-style-qtcurve-qt5_1.9-7+b6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qtcurve/kde-style-qtcurve-qt5_1.9-7+b6_amd64.deb"
+}

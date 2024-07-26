@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qml6-module-qtdatavisualization_6.4.2-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qml6-module-qtdatavisualization"]
+]
+depends: [
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libqt6core6" {>= "6.4.2+dfsg~"}
+  "deb-libqt6datavisualizationqml6" {>= "6.3.0"}
+  "deb-libqt6qml6" {>= "6.4.2+dfsg~"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-qml6-module-qtquick"
+]
+extra-source "qml6-module-qtdatavisualization_6.4.2-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qt6-datavis3d/qml6-module-qtdatavisualization_6.4.2-3_amd64.deb"
+}

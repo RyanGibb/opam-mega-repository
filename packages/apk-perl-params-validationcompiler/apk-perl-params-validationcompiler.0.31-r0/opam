@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-params-validationcompiler-0.31-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-params-validationcompiler"]
+]
+depends: [
+  "apk-perl" {= "5.36.2-r0"}
+  "apk-perl-eval-closure" {= "0.14-r3"}
+  "apk-perl-exception-class" {= "1.45-r0"}
+  "apk-perl-mro-compat" {= "0.15-r1"}
+  "apk-perl-role-tiny" {= "2.002004-r1"}
+  "apk-perl-specio" {= "0.48-r0"}
+  "apk-perl-test-simple" {= "1.302195-r0"}
+  "apk-perl-test-without-module" {= "0.21-r0"}
+  "apk-perl-test2-plugin-nowarnings" {= "0.09-r1"}
+  "apk-perl-test2-suite" {= "0.000155-r0"}
+]
+extra-source "perl-params-validationcompiler-0.31-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-params-validationcompiler-0.31-r0.apk"
+}

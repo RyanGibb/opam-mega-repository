@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add bluez-deprecated-5.76-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del bluez-deprecated"]
+]
+depends: [
+  "apk-dbus" {= "1.14.10-r1"}
+  "apk-eudev-libs" {= "3.2.14-r2"}
+  "apk-glib" {= "2.80.2-r0"}
+  "apk-musl" {= "1.2.5-r0"}
+  "apk-readline" {= "8.2.10-r0"}
+]
+extra-source "bluez-deprecated-5.76-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/bluez-deprecated-5.76-r0.apk"
+}

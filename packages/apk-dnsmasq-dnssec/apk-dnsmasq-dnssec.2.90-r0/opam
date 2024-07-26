@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add dnsmasq-dnssec-2.90-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del dnsmasq-dnssec"]
+]
+depends: [
+  "apk-dnsmasq-common" {= "2.90-r0"}
+  "apk-gmp" {= "6.2.1-r3"}
+  "apk-musl" {= "1.2.4-r2"}
+  "apk-nettle" {= "3.8.1-r2"}
+  ("apk-busybox-binsh" {= "1.36.1-r7"} | "apk-dash-binsh" {= "0.5.12-r2"} | "apk-yash-binsh" {= "2.54-r3"})
+]
+extra-source "dnsmasq-dnssec-2.90-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/dnsmasq-dnssec-2.90-r0.apk"
+}

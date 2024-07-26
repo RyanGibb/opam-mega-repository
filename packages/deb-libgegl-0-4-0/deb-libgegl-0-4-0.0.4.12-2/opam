@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgegl-0.4-0_0.4.12-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgegl-0.4-0"]
+]
+depends: [
+  "deb-libavcodec-extra58"
+  "deb-libavformat58" {>= "7-4.1"}
+  "deb-libbabl-0-1-0" {>= "0.1.58"}
+  "deb-libc6" {>= "2.22"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.31.1"}
+  "deb-libgegl-common" {>= "0.4.12-2"}
+  "deb-libglib2-0-0" {>= "2.41.1"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libjson-glib-1-0-0" {>= "0.12.0"}
+  "deb-liblcms2-2" {>= "2.2+git20110628"}
+  "deb-libopenexr23"
+  "deb-libpango-1-0-0" {>= "1.37.5"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libraw19" {>= "0.16.0"}
+  "deb-librsvg2-2" {>= "2.40.6"}
+  "deb-libsdl1-2debian" {>= "1.2.11"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libswscale5" {>= "7-4.0"}
+  "deb-libtiff5" {>= "4.0.3"}
+  "deb-libumfpack5" {>= "1-4.5.2"}
+  "deb-libwebp6" {>= "0.5.1"}
+]
+extra-source "libgegl-0.4-0_0.4.12-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gegl/libgegl-0.4-0_0.4.12-2_amd64.deb"
+}

@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i liferea_1.12.6-1+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r liferea"]
+]
+depends: [
+  "deb-gir1-2-freedesktop"
+  "deb-gir1-2-gtk-3-0"
+  "deb-gir1-2-peas-1-0"
+  "deb-libc6" {>= "2.7"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
+  "deb-libgirepository-1-0-1" {>= "0.9.3"}
+  "deb-libglib2-0-0" {>= "2.41.1"}
+  "deb-libgtk-3-0" {>= "3.11.5"}
+  "deb-libjson-glib-1-0-0" {>= "0.12.0"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpeas-1-0-0" {>= "1.1.0"}
+  "deb-libsoup2-4-1" {>= "2.41.90"}
+  "deb-libsqlite3-0" {>= "3.5.9"}
+  "deb-libwebkit2gtk-4-0-37" {>= "2.15.3"}
+  "deb-libxml2" {>= "2.9.0"}
+  "deb-libxslt1-1" {>= "1.1.25"}
+  "deb-liferea-data" {= "1.12.6-1+deb10u1"}
+  "deb-python3-7"
+  "deb-python3-any"
+  "deb-python3-cairo"
+  "deb-python3-gi"
+  "deb-python3-notify2"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
+]
+extra-source "liferea_1.12.6-1+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/liferea/liferea_1.12.6-1+deb10u1_amd64.deb"
+}

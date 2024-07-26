@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i deepin-log-viewer_5.9.7+ds1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r deepin-log-viewer"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libdframeworkdbus2" {>= "5.5.5"}
+  "deb-libdtkcore5" {>= "5.5.33~"}
+  "deb-libdtkgui5" {>= "5.5.25~"}
+  "deb-libdtkwidget5" {>= "5.5.48"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libicu72" {>= "72.1~rc-1~"}
+  "deb-libminizip1" {>= "1.1"}
+  "deb-libpolkit-qt5-1-1" {>= "0.112.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.0.2"}
+  "deb-libqt5widgets5" {>= "5.15.1"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libsystemd0"
+  "deb-libxerces-c3-2"
+  "deb-libxlsxwriter4" {>= "1.1.4"}
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+]
+extra-source "deepin-log-viewer_5.9.7+ds1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/deepin-log-viewer/deepin-log-viewer_5.9.7+ds1-2_amd64.deb"
+}

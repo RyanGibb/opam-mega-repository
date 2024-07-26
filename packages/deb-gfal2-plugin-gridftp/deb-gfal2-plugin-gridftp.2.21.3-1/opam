@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gfal2-plugin-gridftp_2.21.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gfal2-plugin-gridftp"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgfal-transfer2" {= "2.21.3-1"}
+  "deb-libgfal2-2" {= "2.21.3-1"}
+  "deb-libglib2-0-0" {>= "2.24.0"}
+  "deb-libglobus-common0" {>= "17"}
+  "deb-libglobus-ftp-client2" {>= "7"}
+  "deb-libglobus-ftp-control1" {>= "8"}
+  "deb-libglobus-gass-copy2" {>= "8"}
+  "deb-libglobus-gss-assist3" {>= "11"}
+  "deb-libglobus-gssapi-gsi4" {>= "13"}
+  "deb-libstdc++6" {>= "5.2"}
+]
+extra-source "gfal2-plugin-gridftp_2.21.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gfal2/gfal2-plugin-gridftp_2.21.3-1_amd64.deb"
+}

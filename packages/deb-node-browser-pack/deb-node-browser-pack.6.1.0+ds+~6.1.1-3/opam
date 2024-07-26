@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-browser-pack_6.1.0+ds+~6.1.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-browser-pack"]
+]
+depends: [
+  "deb-node-combine-source-map"
+  "deb-node-defined"
+  "deb-node-jsonstream"
+  "deb-node-safe-buffer"
+  "deb-node-through2"
+  "deb-node-umd"
+  "deb-nodejs-any"
+]
+extra-source "node-browser-pack_6.1.0+ds+~6.1.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-browser-pack/node-browser-pack_6.1.0+ds+~6.1.1-3_all.deb"
+}

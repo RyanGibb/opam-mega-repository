@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gnome-contacts_43.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gnome-contacts"]
+]
+depends: [
+  "deb-libadwaita-1-0" {>= "1.2~alpha"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libebook-contacts-1-2-4" {>= "3.16.2"}
+  "deb-libedataserver-1-2-27" {>= "3.45"}
+  "deb-libfolks-eds26" {>= "0.15.5-2b"}
+  "deb-libfolks26" {>= "0.15.5-2b"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.23.0"}
+  "deb-libgee-0-8-2" {>= "0.20.0"}
+  "deb-libglib2-0-0" {>= "2.63.3"}
+  "deb-libgoa-1-0-0b" {>= "3.45"}
+  "deb-libgtk-4-1" {>= "4.6"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libportal1" {>= "0.3"}
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "gnome-contacts_43.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnome-contacts/gnome-contacts_43.1-1_amd64.deb"
+}

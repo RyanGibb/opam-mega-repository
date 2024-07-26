@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcgi-struct-xs-perl_1.04-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcgi-struct-xs-perl"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-libtest-deep-perl"
+  "deb-libtest-leaktrace-perl"
+  "deb-perl" {>= "5.36.0-7"}
+  "deb-perl-base"
+]
+extra-source "libcgi-struct-xs-perl_1.04-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libcgi-struct-xs-perl/libcgi-struct-xs-perl_1.04-3_amd64.deb"
+}

@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libleatherman1.4.2_1.4.2+dfsg-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libleatherman1.4.2"]
+]
+depends: [
+  "deb-libboost-atomic1-67-0"
+  "deb-libboost-chrono1-67-0"
+  "deb-libboost-date-time1-67-0"
+  "deb-libboost-filesystem1-67-0"
+  "deb-libboost-locale1-67-0"
+  "deb-libboost-log1-67-0"
+  "deb-libboost-regex1-67-0" {>= "1.67.0-10"}
+  "deb-libboost-system1-67-0"
+  "deb-libboost-thread1-67-0"
+  "deb-libc6" {>= "2.25"}
+  "deb-libcurl4" {>= "7.16.2"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libstdc++6" {>= "5.2"}
+]
+extra-source "libleatherman1.4.2_1.4.2+dfsg-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/leatherman/libleatherman1.4.2_1.4.2+dfsg-2+b1_amd64.deb"
+}

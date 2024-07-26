@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ceph-base_14.2.21-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ceph-base"]
+]
+depends: [
+  "deb-binutils"
+  "deb-ceph-common" {= "14.2.21-1"}
+  "deb-gdisk"
+  "deb-libaio1" {>= "0.3.93"}
+  "deb-libc6" {>= "2.30"}
+  "deb-libgcc-s1" {>= "3.4"}
+  "deb-libgoogle-perftools4"
+  "deb-libleveldb1d"
+  "deb-liblz4-1" {>= "0.0~r130"}
+  "deb-librados2" {>= "12.1.4"}
+  "deb-libsnappy1v5" {>= "1.1.8"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-parted"
+  "deb-python3-any"
+  "deb-uuid-runtime"
+  "deb-xfsprogs"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-cryptsetup-bin" | "deb- cryptsetup")
+  ("deb-hdparm" | "deb- sdparm")
+]
+extra-source "ceph-base_14.2.21-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/ceph/ceph-base_14.2.21-1_amd64.deb"
+}

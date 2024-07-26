@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libbusiness-onlinepayment-ippay-perl_0.12-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libbusiness-onlinepayment-ippay-perl"]
+]
+depends: [
+  "deb-libbusiness-onlinepayment-perl"
+  "deb-liblocale-codes-perl"
+  "deb-libtie-ixhash-perl"
+  "deb-libxml-simple-perl"
+  "deb-libxml-writer-perl"
+  "deb-perl-any"
+]
+extra-source "libbusiness-onlinepayment-ippay-perl_0.12-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libb/libbusiness-onlinepayment-ippay-perl/libbusiness-onlinepayment-ippay-perl_0.12-1_all.deb"
+}

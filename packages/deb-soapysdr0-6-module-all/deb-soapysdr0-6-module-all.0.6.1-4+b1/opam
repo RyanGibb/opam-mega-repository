@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i soapysdr0.6-module-all_0.6.1-4+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r soapysdr0.6-module-all"]
+]
+depends: [
+  "deb-soapysdr0-6-module-airspy"
+  "deb-soapysdr0-6-module-audio"
+  "deb-soapysdr0-6-module-bladerf"
+  "deb-soapysdr0-6-module-hackrf"
+  "deb-soapysdr0-6-module-lms7"
+  "deb-soapysdr0-6-module-osmosdr"
+  "deb-soapysdr0-6-module-redpitaya"
+  "deb-soapysdr0-6-module-remote"
+  "deb-soapysdr0-6-module-rtlsdr"
+  "deb-soapysdr0-6-module-uhd"
+]
+extra-source "soapysdr0.6-module-all_0.6.1-4+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/soapysdr/soapysdr0.6-module-all_0.6.1-4+b1_amd64.deb"
+}

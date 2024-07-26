@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libtrilinos-amesos12_12.18.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libtrilinos-amesos12"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libmumps-5-3" {>= "5.3.5"}
+  "deb-libopenmpi3" {>= "4.1.0"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libtrilinos-epetra12" {>= "12.18.1"}
+  "deb-libtrilinos-epetraext12" {>= "12.18.1"}
+  "deb-libtrilinos-teuchos12" {>= "12.18.1"}
+  "deb-libtrilinos-trilinosss12" {>= "12.18.1"}
+]
+extra-source "libtrilinos-amesos12_12.18.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/trilinos/libtrilinos-amesos12_12.18.1-2_amd64.deb"
+}

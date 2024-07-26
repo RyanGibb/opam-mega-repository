@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgl1-mesa-dev_18.3.6-2+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgl1-mesa-dev"]
+]
+depends: [
+  "deb-libdrm-dev" {>= "2.4.95"}
+  "deb-libglvnd-dev"
+  "deb-libx11-dev"
+  "deb-libx11-xcb-dev"
+  "deb-libxcb-dri2-0-dev"
+  "deb-libxcb-dri3-dev"
+  "deb-libxcb-glx0-dev"
+  "deb-libxcb-present-dev"
+  "deb-libxcb-sync-dev"
+  "deb-libxdamage-dev"
+  "deb-libxext-dev"
+  "deb-libxfixes-dev"
+  "deb-libxshmfence-dev"
+  "deb-libxxf86vm-dev"
+  "deb-mesa-common-dev" {= "18.3.6-2+deb10u1"}
+  "deb-x11proto-dev"
+]
+conflicts: [
+  "deb-libgl-dev"
+]
+extra-source "libgl1-mesa-dev_18.3.6-2+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mesa/libgl1-mesa-dev_18.3.6-2+deb10u1_amd64.deb"
+}

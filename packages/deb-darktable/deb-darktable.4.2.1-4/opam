@@ -1,0 +1,58 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i darktable_4.2.1-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r darktable"]
+]
+depends: [
+  "deb-libavif15" {>= "0.11.1"}
+  "deb-libc6" {>= "2.35"}
+  "deb-libcairo2" {>= "1.14.0"}
+  "deb-libcolord-gtk1" {>= "0.1.20"}
+  "deb-libcolord2" {>= "1.4.3"}
+  "deb-libcups2" {>= "1.7.0"}
+  "deb-libcurl3-gnutls" {>= "7.56.1"}
+  "deb-libexiv2-27" {>= "0.27.5"}
+  "deb-libgcc-s1" {>= "3.3.1"}
+  "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
+  "deb-libglib2-0-0" {>= "2.55.1"}
+  "deb-libgomp1" {>= "6"}
+  "deb-libgphoto2-6" {>= "2.5.10"}
+  "deb-libgphoto2-port12" {>= "2.5.10"}
+  "deb-libgraphicsmagick-q16-3" {>= "1.4+really1.3.35"}
+  "deb-libgtk-3-0" {>= "3.21.6"}
+  "deb-libheif1" {>= "1.8.0"}
+  "deb-libicu72" {>= "72.1~rc-1~"}
+  "deb-libimath-3-1-29" {>= "3.1.6"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libjson-glib-1-0-0" {>= "1.5.2"}
+  "deb-libjxl0-7" {>= "0.7.0"}
+  "deb-liblcms2-2" {>= "2.8"}
+  "deb-liblensfun1" {>= "0.3.3"}
+  "deb-liblua5-4-0" {>= "5.4.4"}
+  "deb-libopenexr-3-1-30" {>= "3.1.5"}
+  "deb-libopenjp2-7" {>= "2.2.0"}
+  "deb-libosmgpsmap-1-0-1" {>= "1.1.0"}
+  "deb-libpango-1-0-0" {>= "1.37.2"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libportmidi0"
+  "deb-libpugixml1v5" {>= "1.6"}
+  "deb-librsvg2-2" {>= "2.52.5"}
+  "deb-libsdl2-2-0-0" {>= "2.0.12"}
+  "deb-libsecret-1-0" {>= "0.7"}
+  "deb-libsoup2-4-1" {>= "2.47.4"}
+  "deb-libsqlite3-0" {>= "3.7.10"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libtiff6" {>= "4.0.3"}
+  "deb-libwebp7" {>= "1.2.4"}
+  "deb-libwebpmux3" {>= "1.2.4"}
+  "deb-libx11-6"
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libxrandr2" {>= "2-1.2.99.3"}
+  "deb-zlib1g" {>= "1-1.2.0"}
+]
+extra-source "darktable_4.2.1-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/darktable/darktable_4.2.1-4_amd64.deb"
+}

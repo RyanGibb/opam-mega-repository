@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-gemmi_0.5.7+ds-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-gemmi"]
+]
+depends: [
+  "deb-libc6" {>= "2.33"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libstdc++6" {>= "12.2.0-12"}
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-any"
+  "deb-zlib1g" {>= "1-1.2.6"}
+]
+extra-source "python3-gemmi_0.5.7+ds-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gemmi/python3-gemmi_0.5.7+ds-2+b1_amd64.deb"
+}

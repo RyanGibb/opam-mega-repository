@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i minidlna_1.2.1+dfsg-2+deb10u3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r minidlna"]
+]
+depends: [
+  "deb-adduser"
+  "deb-libavformat58" {>= "7-4.1"}
+  "deb-libavutil56" {>= "7-4.0"}
+  "deb-libc6" {>= "2.28"}
+  "deb-libexif12" {>= "0.6.21-1~"}
+  "deb-libflac8" {>= "1.3.0"}
+  "deb-libid3tag0" {>= "0.15.1b"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libogg0" {>= "1.0rc3"}
+  "deb-libsqlite3-0" {>= "3.5.9"}
+  "deb-libvorbis0a" {>= "1.1.2"}
+  "deb-lsb-base"
+]
+extra-source "minidlna_1.2.1+dfsg-2+deb10u3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/minidlna/minidlna_1.2.1+dfsg-2+deb10u3_amd64.deb"
+}

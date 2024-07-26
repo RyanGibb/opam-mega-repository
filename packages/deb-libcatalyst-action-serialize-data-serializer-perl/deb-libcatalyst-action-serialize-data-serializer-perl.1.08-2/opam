@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcatalyst-action-serialize-data-serializer-perl_1.08-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcatalyst-action-serialize-data-serializer-perl"]
+]
+depends: [
+  "deb-libcatalyst-action-rest-perl" {>= "1.08"}
+  "deb-libcatalyst-perl" {>= "5.80030"}
+  "deb-libdata-serializer-perl"
+  "deb-libmoose-perl"
+  "deb-libnamespace-autoclean-perl"
+  "deb-perl"
+]
+extra-source "libcatalyst-action-serialize-data-serializer-perl_1.08-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libcatalyst-action-serialize-data-serializer-perl/libcatalyst-action-serialize-data-serializer-perl_1.08-2_all.deb"
+}

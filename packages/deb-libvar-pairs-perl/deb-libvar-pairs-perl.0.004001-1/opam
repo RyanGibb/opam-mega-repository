@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libvar-pairs-perl_0.004001-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libvar-pairs-perl"]
+]
+depends: [
+  "deb-libdevel-callsite-perl"
+  "deb-libpadwalker-perl"
+  "deb-libscope-upper-perl"
+  "deb-perl"
+  ("deb-perl" {>= "5.22"} | "deb- libdata-alias-perl")
+]
+extra-source "libvar-pairs-perl_0.004001-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libv/libvar-pairs-perl/libvar-pairs-perl_0.004001-1_all.deb"
+}

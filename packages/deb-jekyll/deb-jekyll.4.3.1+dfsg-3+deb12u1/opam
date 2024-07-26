@@ -1,0 +1,42 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i jekyll_4.3.1+dfsg-3+deb12u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r jekyll"]
+]
+depends: [
+  "deb-ruby"
+  "deb-ruby-addressable" {>= "2.4"}
+  "deb-ruby-classifier-reborn"
+  "deb-ruby-coderay"
+  "deb-ruby-colorator" {>= "1.0"}
+  "deb-ruby-em-websocket" {>= "0.5"}
+  "deb-ruby-i18n" {>= "1.0"}
+  "deb-ruby-jekyll-sass-converter" {< "4.0"}
+  "deb-ruby-jekyll-sass-converter" {>= "2.0"}
+  "deb-ruby-jekyll-watch" {>= "2.0"}
+  "deb-ruby-kramdown" {>= "2.3.1"}
+  "deb-ruby-kramdown-parser-gfm" {>= "1.0"}
+  "deb-ruby-liquid" {< "6"}
+  "deb-ruby-liquid" {>= "4.0"}
+  "deb-ruby-mercenary" {< "0.5"}
+  "deb-ruby-mercenary" {>= "0.3.6"}
+  "deb-ruby-mime-types"
+  "deb-ruby-pathutil" {>= "0.9"}
+  "deb-ruby-pygments-rb"
+  "deb-ruby-rdiscount"
+  "deb-ruby-redcarpet"
+  "deb-ruby-rouge" {< "5.0"}
+  "deb-ruby-rouge" {>= "3.0"}
+  "deb-ruby-terminal-table" {< "4.0"}
+  "deb-ruby-terminal-table" {>= "1.8"}
+  "deb-ruby-tomlrb"
+  "deb-ruby-webrick" {>= "1.7.0"}
+  "deb-ruby-yajl"
+  "deb-xdg-utils"
+  ("deb-ruby-bundler" | "deb- bundler")
+]
+extra-source "jekyll_4.3.1+dfsg-3+deb12u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/j/jekyll/jekyll_4.3.1+dfsg-3+deb12u1_all.deb"
+}

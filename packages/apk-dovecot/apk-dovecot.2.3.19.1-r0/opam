@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add dovecot-2.3.19.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del dovecot"]
+]
+depends: [
+  "apk-busybox" {= "1.35.0-r18"}
+  "apk-icu-libs" {= "71.1-r2"}
+  "apk-libbz2" {= "1.0.8-r1"}
+  "apk-libcap" {= "2.64-r1"}
+  "apk-libcrypto1-1" {= "1.1.1w-r1"}
+  "apk-libsodium" {= "1.0.18-r0"}
+  "apk-libssl1-1" {= "1.1.1w-r1"}
+  "apk-musl" {= "1.2.3-r3"}
+  "apk-openssl" {= "1.1.1w-r1"}
+  "apk-xz-libs" {= "5.2.5-r1"}
+  "apk-zlib" {= "1.2.12-r3"}
+]
+extra-source "dovecot-2.3.19.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/dovecot-2.3.19.1-r0.apk"
+}

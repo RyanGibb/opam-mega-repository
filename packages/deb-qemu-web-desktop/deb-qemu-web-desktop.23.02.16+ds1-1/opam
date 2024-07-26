@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qemu-web-desktop_23.02.16+ds1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qemu-web-desktop"]
+]
+depends: [
+  "deb-adduser"
+  "deb-apache2"
+  "deb-bridge-utils"
+  "deb-confget"
+  "deb-dnsmasq"
+  "deb-guestfs-tools"
+  "deb-iptables"
+  "deb-libapache2-mod-perl2"
+  "deb-libapache2-mpm-itk"
+  "deb-libcgi-pm-perl"
+  "deb-libemail-valid-perl"
+  "deb-libjson-perl"
+  "deb-liblist-moreutils-perl"
+  "deb-libmail-imapclient-perl"
+  "deb-libnet-dns-perl"
+  "deb-libnet-ldap-perl"
+  "deb-libnet-smtps-perl"
+  "deb-libproc-background-perl"
+  "deb-libproc-processtable-perl"
+  "deb-libsys-cpu-perl"
+  "deb-libsys-cpuload-perl"
+  "deb-libsys-meminfo-perl"
+  "deb-libtext-qrcode-perl"
+  "deb-novnc"
+  "deb-qemu-system-x86"
+  "deb-sysuser-helper" {>= "1.3.3"}
+  "deb-websockify"
+]
+extra-source "qemu-web-desktop_23.02.16+ds1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qemu-web-desktop/qemu-web-desktop_23.02.16+ds1-1_amd64.deb"
+}

@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libreoffice-impress_1:6.1.5-3+deb10u7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libreoffice-impress"]
+]
+depends: [
+  "deb-libc6" {>= "2.28"}
+  "deb-libepoxy0" {>= "1.0"}
+  "deb-libetonyek-0-1-1"
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libmwaw-0-3-3"
+  "deb-libodfgen-0-1-1"
+  "deb-libreoffice-core" {= "1-6.1.5-3+deb10u7"}
+  "deb-libreoffice-draw" {= "1-6.1.5-3+deb10u7"}
+  "deb-librevenge-0-0-0"
+  "deb-libstaroffice-0-0-0"
+  "deb-libstdc++6" {>= "5"}
+  "deb-libxml2" {>= "2.6.27"}
+  "deb-uno-libs3" {>= "5.3.0~alpha"}
+  "deb-ure"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+conflicts: [
+  "deb-libreoffice-ogltrans" {< "1-6.1.4-2~"}
+]
+extra-source "libreoffice-impress_1:6.1.5-3+deb10u7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libr/libreoffice/libreoffice-impress_6.1.5-3+deb10u7_amd64.deb"
+}

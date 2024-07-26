@@ -1,0 +1,84 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kodi-bin_2:19.1+dfsg2-2+deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kodi-bin"]
+]
+depends: [
+  "deb-libasound2" {>= "1.0.27"}
+  "deb-libass9" {>= "1-0.13.6"}
+  "deb-libavahi-client3" {>= "0.6.16"}
+  "deb-libavahi-common3" {>= "0.6.16"}
+  "deb-libavcodec-extra58"
+  "deb-libavfilter-extra7"
+  "deb-libavformat58" {>= "7-4.2.2"}
+  "deb-libavutil56" {>= "7-4.2.2"}
+  "deb-libbluetooth3" {>= "4.91"}
+  "deb-libbluray2" {>= "1-0.9.3"}
+  "deb-libc6" {>= "2.30"}
+  "deb-libcap2" {>= "1-2.10"}
+  "deb-libcdio19" {>= "2.1.0"}
+  "deb-libcec6" {>= "6.0.2"}
+  "deb-libcrossguid0" {>= "0.0+git200150803"}
+  "deb-libcurl3-gnutls" {>= "7.18.0"}
+  "deb-libdbus-1-3" {>= "1.9.14"}
+  "deb-libdrm2" {>= "2.4.75"}
+  "deb-libegl1"
+  "deb-libfmt7" {>= "7.1.3+ds1"}
+  "deb-libfreetype6" {>= "2.2.1"}
+  "deb-libfribidi0" {>= "0.19.2"}
+  "deb-libfstrcmp0"
+  "deb-libgbm1" {>= "17.1.0~rc2"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgcrypt20" {>= "1.8.0"}
+  "deb-libgif7" {>= "5.1"}
+  "deb-libgl1"
+  "deb-libinput10" {>= "0.21.0"}
+  "deb-libiso9660-11" {>= "2.0.0"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-liblcms2-2" {>= "2.2+git20110628"}
+  "deb-liblirc-client0"
+  "deb-liblzo2-2" {>= "2.02"}
+  "deb-libmariadb3" {>= "3.0.0"}
+  "deb-libmicrohttpd12" {>= "0.9.50"}
+  "deb-libnfs13" {>= "2.0.0~"}
+  "deb-libpcre3"
+  "deb-libpcrecpp0v5" {>= "7.7"}
+  "deb-libplist3" {>= "2.2.0"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libpostproc55" {>= "7-4.2.2"}
+  "deb-libpulse0" {>= "0.99.4"}
+  "deb-libpython3-9" {>= "3.9.1"}
+  "deb-libshairplay0" {>= "0.9.0~"}
+  "deb-libsmbclient" {>= "2-4.0.3+dfsg1"}
+  "deb-libsndio7-0" {>= "1.1.0"}
+  "deb-libsqlite3-0" {>= "3.7.11"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libswresample3" {>= "7-4.2.2"}
+  "deb-libswscale5" {>= "7-4.2.2"}
+  "deb-libtag1v5" {>= "1.11"}
+  "deb-libtinyxml2-6-2v5"
+  "deb-libudev1" {>= "183"}
+  "deb-libudfread0" {>= "1.0.0"}
+  "deb-libva-drm2" {>= "1.1.0"}
+  "deb-libva-wayland2" {>= "1.3.0"}
+  "deb-libva-x11-2" {>= "1.0.3"}
+  "deb-libva2" {>= "2.2.0"}
+  "deb-libwayland-client++0" {>= "0.2.8"}
+  "deb-libwayland-cursor++0" {>= "0.2.8"}
+  "deb-libwayland-egl++0" {>= "0.2.8"}
+  "deb-libx11-6"
+  "deb-libxext6"
+  "deb-libxkbcommon0" {>= "0.5.0"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libxrandr2" {>= "2-1.2.99.3"}
+  "deb-libxslt1-1" {>= "1.1.25"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+conflicts: [
+  "deb-libgl1-mesa-swx11"
+]
+extra-source "kodi-bin_2:19.1+dfsg2-2+deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kodi/kodi-bin_19.1+dfsg2-2+deb11u1_amd64.deb"
+}

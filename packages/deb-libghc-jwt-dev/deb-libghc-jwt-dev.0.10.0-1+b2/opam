@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-jwt-dev_0.10.0-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-jwt-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-aeson-dev"
+  "deb-libghc-cryptonite-dev"
+  "deb-libghc-http-types-dev"
+  "deb-libghc-memory-dev"
+  "deb-libghc-network-uri-dev"
+  "deb-libghc-scientific-dev"
+  "deb-libghc-semigroups-dev"
+  "deb-libghc-unordered-containers-dev"
+  "deb-libghc-vector-dev"
+  "deb-libghc-x509-dev"
+  "deb-libghc-x509-store-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-jwt-dev_0.10.0-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-jwt/libghc-jwt-dev_0.10.0-1+b2_amd64.deb"
+}

@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pyhoca-gui_0.5.0.8-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pyhoca-gui"]
+]
+depends: [
+  "deb-gir1-2-notify-0-7"
+  "deb-gnome-colors-common"
+  "deb-libpython2-7-stdlib"
+  "deb-python"
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7~"}
+  "deb-python-cups"
+  "deb-python-gi"
+  "deb-python-notify"
+  "deb-python-pkg-resources"
+  "deb-python-setproctitle"
+  "deb-python-wxgtk3-0"
+  "deb-python-x2go" {>= "0.5.0.6"}
+]
+extra-source "pyhoca-gui_0.5.0.8-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pyhoca-gui/pyhoca-gui_0.5.0.8-1_all.deb"
+}

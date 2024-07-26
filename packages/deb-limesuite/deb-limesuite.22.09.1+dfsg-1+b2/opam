@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i limesuite_22.09.1+dfsg-1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r limesuite"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libfltk1-3" {>= "1.3.1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgl1"
+  "deb-libglew2-2" {>= "2.2.0-4+b1"}
+  "deb-liblimesuite22-09-1" {>= "22.09.1+dfsg-1+b2"}
+  "deb-libstdc++6" {>= "11"}
+  "deb-libwxbase3-2-1" {>= "3.2.1+dfsg"}
+  "deb-libwxgtk-gl3-2-1" {>= "3.2.1+dfsg"}
+  "deb-libwxgtk3-2-1" {>= "3.2.1+dfsg-2"}
+  "deb-python3"
+  "deb-python3-soapysdr"
+]
+extra-source "limesuite_22.09.1+dfsg-1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/limesuite/limesuite_22.09.1+dfsg-1+b2_amd64.deb"
+}

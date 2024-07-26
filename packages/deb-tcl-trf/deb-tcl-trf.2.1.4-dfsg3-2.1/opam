@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tcl-trf_2.1.4-dfsg3-2.1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tcl-trf"]
+]
+depends: [
+  "deb-libbz2-1-0"
+  "deb-libc6" {>= "2.14"}
+  "deb-libcrypt1" {>= "1-4.1.0"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libtcl8-6"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+conflicts: [
+  "deb-libtrf-tcl"
+]
+extra-source "tcl-trf_2.1.4-dfsg3-2.1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tcltrf/tcl-trf_2.1.4-dfsg3-2.1_amd64.deb"
+}

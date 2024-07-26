@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i novnc_1:1.3.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r novnc"]
+]
+depends: [
+  "deb-adduser"
+  "deb-net-tools"
+  "deb-nodejs"
+  "deb-python3-novnc"
+  "deb-python3-numpy"
+  "deb-websockify"
+]
+extra-source "novnc_1:1.3.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/novnc/novnc_1.3.0-1_all.deb"
+}

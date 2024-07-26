@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i cinnamon-desktop-environment_4.8.3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r cinnamon-desktop-environment"]
+]
+depends: [
+  "deb-cinnamon-core" {>= "4.8.3"}
+  "deb-eog"
+  "deb-fonts-liberation"
+  "deb-fonts-noto"
+  "deb-gedit"
+  "deb-gnome-screenshot"
+  "deb-xdg-user-dirs-gtk"
+  ("deb-evince" | "deb- pdf-viewer")
+  ("deb-firefox-esr" | "deb- firefox" | "deb- chromium" | "deb- gnome-www-browser")
+  ("deb-gnome-calculator" | "deb- galculator")
+  ("deb-pidgin" | "deb- empathy")
+  ("deb-thunderbird" | "deb- evolution" | "deb- geary")
+  ("deb-totem" | "deb- vlc")
+]
+extra-source "cinnamon-desktop-environment_4.8.3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/cinnamon-desktop-environment/cinnamon-desktop-environment_4.8.3_all.deb"
+}

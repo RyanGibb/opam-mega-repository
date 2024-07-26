@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-jwt-prof_0.11.0-1+b5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-jwt-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-aeson-prof"
+  "deb-libghc-cryptonite-prof"
+  "deb-libghc-cryptostore-prof"
+  "deb-libghc-http-types-prof"
+  "deb-libghc-jwt-dev" {= "0.11.0-1+b5"}
+  "deb-libghc-memory-prof"
+  "deb-libghc-network-uri-prof"
+  "deb-libghc-scientific-prof"
+  "deb-libghc-semigroups-prof"
+  "deb-libghc-unordered-containers-prof"
+  "deb-libghc-vector-prof"
+  "deb-libghc-x509-prof"
+  "deb-libghc-x509-store-prof"
+]
+extra-source "libghc-jwt-prof_0.11.0-1+b5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-jwt/libghc-jwt-prof_0.11.0-1+b5_amd64.deb"
+}

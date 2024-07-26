@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i labgrid_0.4.1-6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r labgrid"]
+]
+depends: [
+  "deb-iproute2"
+  "deb-python3-any"
+  "deb-python3-labgrid"
+  "deb-socat"
+]
+extra-source "labgrid_0.4.1-6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/labgrid/labgrid_0.4.1-6_all.deb"
+}

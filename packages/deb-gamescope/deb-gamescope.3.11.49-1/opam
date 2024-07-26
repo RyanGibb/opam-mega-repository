@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i gamescope_3.11.49-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r gamescope"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libcap2" {>= "1-2.10"}
+  "deb-libdrm2" {>= "2.4.112"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libliftoff0" {>= "0.3.0"}
+  "deb-libpipewire-0-3-0" {>= "0.3.1"}
+  "deb-libsdl2-2-0-0" {>= "2.0.12"}
+  "deb-libstdc++6" {>= "12"}
+  "deb-libvulkan1" {>= "1.2.131.2"}
+  "deb-libwayland-server0" {>= "1.14.91"}
+  "deb-libwlroots10" {>= "0.15.0"}
+  "deb-libx11-6"
+  "deb-libxcomposite1" {>= "1-0.4.5"}
+  "deb-libxdamage1" {>= "1-1.1"}
+  "deb-libxext6"
+  "deb-libxfixes3" {>= "1-5.0"}
+  "deb-libxkbcommon0" {>= "1.0.0"}
+  "deb-libxrender1"
+  "deb-libxres1" {>= "2-1.2.1"}
+  "deb-libxtst6"
+  "deb-libxxf86vm1"
+  "deb-xwayland"
+]
+extra-source "gamescope_3.11.49-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gamescope/gamescope_3.11.49-1_amd64.deb"
+}

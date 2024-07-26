@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kolourpaint_4:22.12.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kolourpaint"]
+]
+depends: [
+  "deb-kio"
+  "deb-libc6" {>= "2.34"}
+  "deb-libkf5configcore5" {>= "4.97.0"}
+  "deb-libkf5configgui5" {>= "4.97.0"}
+  "deb-libkf5configwidgets5" {>= "5.23.0"}
+  "deb-libkf5coreaddons5" {>= "5.16.0"}
+  "deb-libkf5guiaddons5" {>= "5.90.0~"}
+  "deb-libkf5i18n5" {>= "5.90.0~"}
+  "deb-libkf5jobwidgets5" {>= "5.90.0~"}
+  "deb-libkf5kiocore5" {>= "5.90.0~"}
+  "deb-libkf5kiofilewidgets5" {>= "5.90.0~"}
+  "deb-libkf5kiogui5" {>= "5.90.0"}
+  "deb-libkf5textwidgets5" {>= "5.90.0~"}
+  "deb-libkf5widgetsaddons5" {>= "5.100.0"}
+  "deb-libkf5xmlgui5" {>= "5.90.0~"}
+  "deb-libqt5core5a" {>= "5.15.2~"}
+  "deb-libqt5printsupport5" {>= "5.15.2~"}
+  "deb-libqt5widgets5" {>= "5.15.2~"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+]
+extra-source "kolourpaint_4:22.12.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kolourpaint/kolourpaint_22.12.3-1_amd64.deb"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-libcloud_3.2.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-libcloud"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-cryptography"
+  "deb-python3-lockfile" {>= "0.9"}
+  "deb-python3-requests"
+  "deb-python3-simplejson"
+]
+extra-source "python3-libcloud_3.2.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libcloud/python3-libcloud_3.2.0-2_all.deb"
+}

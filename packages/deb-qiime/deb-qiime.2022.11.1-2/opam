@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qiime_2022.11.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qiime"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-bibtexparser"
+  "deb-python3-dateutil"
+  "deb-python3-decorator"
+  "deb-python3-dill"
+  "deb-python3-flufl-lock"
+  "deb-python3-networkx"
+  "deb-python3-pandas"
+  "deb-python3-psutil"
+  "deb-python3-pyparsing"
+  "deb-python3-tzlocal"
+  "deb-python3-yaml"
+]
+extra-source "qiime_2022.11.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qiime/qiime_2022.11.1-2_all.deb"
+}

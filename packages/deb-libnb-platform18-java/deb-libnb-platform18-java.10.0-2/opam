@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libnb-platform18-java_10.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libnb-platform18-java"]
+]
+depends: [
+  "deb-antlr3" {>= "3.4"}
+  "deb-javahelp2"
+  "deb-junit4" {>= "4.6"}
+  "deb-libasm-java" {>= "7.0"}
+  "deb-libequinox-osgi-java" {>= "3.9.1-4"}
+  "deb-libfelix-framework-java" {>= "4.6.1"}
+  "deb-libfelix-main-java"
+  "deb-libhamcrest-java"
+  "deb-libjna-platform-java"
+  "deb-libjsr305-java"
+  "deb-libnb-org-openide-modules-java" {>= "10.0-2"}
+  "deb-libnb-org-openide-util-java" {>= "10.0-2"}
+  "deb-libnb-org-openide-util-lookup-java" {>= "10.0-2"}
+  "deb-libosgi-compendium-java" {>= "5.0.0"}
+  "deb-libosgi-core-java" {>= "6.0.0"}
+  "deb-libswing-layout-java" {>= "1.0.3"}
+  "deb-testng"
+]
+extra-source "libnb-platform18-java_10.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libn/libnb-platform18-java/libnb-platform18-java_10.0-2_all.deb"
+}

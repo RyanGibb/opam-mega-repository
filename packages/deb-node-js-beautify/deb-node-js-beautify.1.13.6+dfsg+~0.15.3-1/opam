@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-js-beautify_1.13.6+dfsg+~0.15.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-js-beautify"]
+]
+depends: [
+  "deb-node-config-chain"
+  "deb-node-glob"
+  "deb-node-lru-cache"
+  "deb-node-mkdirp"
+  "deb-node-nopt"
+  "deb-node-semver"
+  "deb-node-sigmund"
+  "deb-nodejs"
+]
+extra-source "node-js-beautify_1.13.6+dfsg+~0.15.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-js-beautify/node-js-beautify_1.13.6+dfsg+~0.15.3-1_all.deb"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libfcitx-qt0_1:4.2.9.6-5+deb10u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libfcitx-qt0"]
+]
+depends: [
+  "deb-libc6" {>= "2.8"}
+  "deb-libfcitx-config4" {>= "4.2.7"}
+  "deb-libfcitx-utils0" {>= "4.2.7"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libqt4-dbus" {>= "4-4.8.0"}
+  "deb-libqtcore4" {>= "4-4.7.0~beta1"}
+  "deb-libqtgui4" {>= "4-4.6.1"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libx11-6"
+]
+extra-source "libfcitx-qt0_1:4.2.9.6-5+deb10u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fcitx/libfcitx-qt0_4.2.9.6-5+deb10u1_amd64.deb"
+}

@@ -1,0 +1,58 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i chromium-shell_120.0.6099.224-1~deb11u1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r chromium-shell"]
+]
+depends: [
+  "deb-chromium-common" {= "120.0.6099.224-1~deb11u1"}
+  "deb-libasound2" {>= "1.0.17"}
+  "deb-libatk-bridge2-0-0" {>= "2.5.3"}
+  "deb-libatk1-0-0" {>= "2.2.0"}
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libatspi2-0-0" {>= "2.9.90"}
+  "deb-libc6" {>= "2.30"}
+  "deb-libcairo2" {>= "1.6.0"}
+  "deb-libdbus-1-3" {>= "1.9.14"}
+  "deb-libdouble-conversion3" {>= "2.0.0"}
+  "deb-libdrm2" {>= "2.4.75"}
+  "deb-libevent-2-1-7" {>= "2.1.8-stable"}
+  "deb-libexpat1" {>= "2.1~beta3"}
+  "deb-libflac8" {>= "1.3.0"}
+  "deb-libfontconfig1" {>= "2.12.6"}
+  "deb-libfreetype6" {>= "2.10.1"}
+  "deb-libgbm1" {>= "17.1.0~rc2"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libjpeg62-turbo" {>= "1.3.1"}
+  "deb-libjsoncpp24" {>= "1.9.4"}
+  "deb-libminizip1" {>= "1.1"}
+  "deb-libnspr4" {>= "2-4.9-2~"}
+  "deb-libnss3" {>= "2-3.30"}
+  "deb-libopus0" {>= "1.1"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpng16-16" {>= "1.6.2-1"}
+  "deb-libpulse0" {>= "0.99.1"}
+  "deb-libsnappy1v5" {>= "1.1.8"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libwebp6" {>= "0.5.1"}
+  "deb-libwebpdemux2" {>= "0.5.1"}
+  "deb-libwebpmux3" {>= "0.6.1-2.1+deb11u2"}
+  "deb-libwoff1" {>= "1.0.0"}
+  "deb-libx11-6"
+  "deb-libxcb1" {>= "1.9.2"}
+  "deb-libxcomposite1" {>= "1-0.4.5"}
+  "deb-libxdamage1" {>= "1-1.1"}
+  "deb-libxext6"
+  "deb-libxfixes3"
+  "deb-libxkbcommon0" {>= "0.5.0"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libxnvctrl0"
+  "deb-libxrandr2"
+  "deb-libxslt1-1" {>= "1.1.27"}
+  "deb-zlib1g" {>= "1-1.2.2"}
+]
+extra-source "chromium-shell_120.0.6099.224-1~deb11u1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/chromium/chromium-shell_120.0.6099.224-1~deb11u1_amd64.deb"
+}

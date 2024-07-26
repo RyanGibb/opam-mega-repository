@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kwin-wayland-backend-x11_4:5.20.5-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kwin-wayland-backend-x11"]
+]
+depends: [
+  "deb-kwin-common" {= "4-5.20.5-1"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libepoxy0" {>= "1.0"}
+  "deb-libkf5i18n5" {>= "5.74~"}
+  "deb-libkf5windowsystem5" {>= "5.74~"}
+  "deb-libkwaylandserver5"
+  "deb-libkwaylandserver5" {>= "5.20.4"}
+  "deb-libkwineffects12a" {= "4-5.20.5-1"}
+  "deb-libkwinglutils12" {= "4-5.20.5-1"}
+  "deb-libkwinxrenderutils12" {= "4-5.20.5-1"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libstdc++6" {>= "5"}
+  "deb-libx11-6"
+  "deb-libx11-xcb1" {>= "2-1.6.12"}
+  "deb-libxcb-keysyms1" {>= "0.4.0"}
+  "deb-libxcb-render0"
+  "deb-libxcb1" {>= "1.6"}
+  "deb-libxi6" {>= "2-1.5.99.2"}
+  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb- libqt5gui5-gles" {>= "5.15.0~"})
+]
+extra-source "kwin-wayland-backend-x11_4:5.20.5-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/k/kwin/kwin-wayland-backend-x11_5.20.5-1_amd64.deb"
+}

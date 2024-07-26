@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i pympress_1.7.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r pympress"]
+]
+depends: [
+  "deb-gir1-2-gtk-3-0"
+  "deb-gir1-2-poppler-0-18"
+  "deb-gobject-introspection"
+  "deb-libcairo2"
+  "deb-libgirepository-1-0-1"
+  "deb-libgtk-3-0"
+  "deb-libpoppler-glib8"
+  "deb-python3-any"
+  "deb-python3-gi"
+  "deb-python3-gi-cairo"
+  "deb-python3-watchdog"
+]
+extra-source "pympress_1.7.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pympress/pympress_1.7.1-3_all.deb"
+}

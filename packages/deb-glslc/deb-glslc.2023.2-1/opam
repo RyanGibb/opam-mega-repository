@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i glslc_2023.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r glslc"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libshaderc1" {>= "2022.2-1"}
+  "deb-libstdc++6" {>= "11"}
+]
+extra-source "glslc_2023.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/shaderc/glslc_2023.2-1_amd64.deb"
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i rdiff-backup_2.0.5-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r rdiff-backup"]
+]
+depends: [
+  "deb-libc6" {>= "2.4"}
+  "deb-librsync2" {>= "1.0.0"}
+  "deb-python3" {< "3.10"}
+  "deb-python3" {>= "3.9~"}
+  "deb-python3-any"
+  "deb-python3-pkg-resources"
+  "deb-python3-setuptools"
+]
+extra-source "rdiff-backup_2.0.5-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/rdiff-backup/rdiff-backup_2.0.5-2_amd64.deb"
+}

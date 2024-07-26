@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-shelly-dev_1.8.1-1+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-shelly-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-async-dev"
+  "deb-libghc-enclosed-exceptions-dev"
+  "deb-libghc-exceptions-dev"
+  "deb-libghc-lifted-async-dev"
+  "deb-libghc-lifted-base-dev"
+  "deb-libghc-monad-control-dev"
+  "deb-libghc-system-fileio-dev"
+  "deb-libghc-system-filepath-dev"
+  "deb-libghc-transformers-base-dev"
+  "deb-libghc-unix-compat-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-shelly-dev_1.8.1-1+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-shelly/libghc-shelly-dev_1.8.1-1+b1_amd64.deb"
+}

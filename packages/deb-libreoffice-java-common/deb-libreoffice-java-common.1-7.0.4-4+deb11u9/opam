@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libreoffice-java-common_1:7.0.4-4+deb11u9_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libreoffice-java-common"]
+]
+depends: [
+  "deb-libjuh-java"
+  "deb-libjurt-java"
+  "deb-liblibreoffice-java"
+  "deb-libreoffice-common"
+  "deb-libridl-java"
+  "deb-libunoil-java"
+  "deb-libunoloader-java"
+]
+extra-source "libreoffice-java-common_1:7.0.4-4+deb11u9_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libr/libreoffice/libreoffice-java-common_7.0.4-4+deb11u9_all.deb"
+}

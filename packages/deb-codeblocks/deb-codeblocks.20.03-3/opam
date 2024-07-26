@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i codeblocks_20.03-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r codeblocks"]
+]
+depends: [
+  "deb-codeblocks-common" {= "20.03-3"}
+  "deb-libastyle3"
+  "deb-libc6" {>= "2.14"}
+  "deb-libcodeblocks0" {>= "20.03"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.12.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtinyxml2-6-2v5"
+  "deb-libwxbase3-0-0v5" {>= "3.0.4+dfsg"}
+  "deb-libwxgtk3-0-gtk3-0v5" {>= "3.0.4+dfsg-10~"}
+]
+extra-source "codeblocks_20.03-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/codeblocks/codeblocks_20.03-3_amd64.deb"
+}

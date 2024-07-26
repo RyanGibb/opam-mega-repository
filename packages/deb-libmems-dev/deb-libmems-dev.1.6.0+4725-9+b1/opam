@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmems-dev_1.6.0+4725-9+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmems-dev"]
+]
+depends: [
+  "deb-libboost-filesystem1-74-dev"
+  "deb-libboost-iostreams1-74-dev"
+  "deb-libgenome-dev"
+  "deb-libmems1" {= "1.6.0+4725-9+b1"}
+  "deb-libmuscle-dev"
+]
+extra-source "libmems-dev_1.6.0+4725-9+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libm/libmems/libmems-dev_1.6.0+4725-9+b1_amd64.deb"
+}

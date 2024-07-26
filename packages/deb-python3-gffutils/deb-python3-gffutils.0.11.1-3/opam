@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-gffutils_0.11.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-gffutils"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-argcomplete"
+  "deb-python3-argh"
+  "deb-python3-biopython"
+  "deb-python3-pyfaidx"
+  "deb-python3-simplejson"
+  "deb-python3-six" {>= "1.12.0"}
+]
+extra-source "python3-gffutils_0.11.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-gffutils/python3-gffutils_0.11.1-3_all.deb"
+}

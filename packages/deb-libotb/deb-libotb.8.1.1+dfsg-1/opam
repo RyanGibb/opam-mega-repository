@@ -1,0 +1,48 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libotb_8.1.1+dfsg-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libotb"]
+]
+depends: [
+  "deb-libotbapplicationengine-8-1-1" {= "8.1.1+dfsg-1"}
+  "deb-libotbcarto-8-1-1" {= "8.1.1+dfsg-1"}
+  "deb-libotbcommandline-8-1-1" {= "8.1.1+dfsg-1"}
+  "deb-libotbcommon-8-1-1" {= "8.1.1+dfsg-1"}
+  "deb-libotbcurladapters-8-1-1" {= "8.1.1+dfsg-1"}
+  "deb-libotbextendedfilename-8-1-1" {= "8.1.1+dfsg-1"}
+  "deb-libotbfuzzy-8-1-1" {= "8.1.1+dfsg-1"}
+  "deb-libotbgdaladapters-8-1-1" {= "8.1.1+dfsg-1"}
+  "deb-libotbice-8-1-1" {= "8.1.1+dfsg-1"}
+  "deb-libotbimagebase-8-1-1" {= "8.1.1+dfsg-1"}
+  "deb-libotbimageio-8-1-1" {= "8.1.1+dfsg-1"}
+  "deb-libotbimagemanipulation-8-1-1" {= "8.1.1+dfsg-1"}
+  "deb-libotbiobsq-8-1-1" {= "8.1.1+dfsg-1"}
+  "deb-libotbiogdal-8-1-1" {= "8.1.1+dfsg-1"}
+  "deb-libotbiokml-8-1-1" {= "8.1.1+dfsg-1"}
+  "deb-libotbiolum-8-1-1" {= "8.1.1+dfsg-1"}
+  "deb-libotbiomstar-8-1-1" {= "8.1.1+dfsg-1"}
+  "deb-libotbioonera-8-1-1" {= "8.1.1+dfsg-1"}
+  "deb-libotbiorad-8-1-1" {= "8.1.1+dfsg-1"}
+  "deb-libotblearningbase-8-1-1" {= "8.1.1+dfsg-1"}
+  "deb-libotbmathparser-8-1-1" {= "8.1.1+dfsg-1"}
+  "deb-libotbmathparserx-8-1-1" {= "8.1.1+dfsg-1"}
+  "deb-libotbmetadata-8-1-1" {= "8.1.1+dfsg-1"}
+  "deb-libotbpolarimetry-8-1-1" {= "8.1.1+dfsg-1"}
+  "deb-libotbprojection-8-1-1" {= "8.1.1+dfsg-1"}
+  "deb-libotbqtwidget-8-1-1" {= "8.1.1+dfsg-1"}
+  "deb-libotbsampling-8-1-1" {= "8.1.1+dfsg-1"}
+  "deb-libotbsiftfast-8-1-1" {= "8.1.1+dfsg-1"}
+  "deb-libotbstatistics-8-1-1" {= "8.1.1+dfsg-1"}
+  "deb-libotbstreaming-8-1-1" {= "8.1.1+dfsg-1"}
+  "deb-libotbsupervised-8-1-1" {= "8.1.1+dfsg-1"}
+  "deb-libotbtestkernel-8-1-1" {= "8.1.1+dfsg-1"}
+  "deb-libotbtransform-8-1-1" {= "8.1.1+dfsg-1"}
+  "deb-libotbvectordatabase-8-1-1" {= "8.1.1+dfsg-1"}
+  "deb-libotbvectordataio-8-1-1" {= "8.1.1+dfsg-1"}
+  "deb-libotbwavelet-8-1-1" {= "8.1.1+dfsg-1"}
+]
+extra-source "libotb_8.1.1+dfsg-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/otb/libotb_8.1.1+dfsg-1_amd64.deb"
+}

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libtangence-perl_0.30-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libtangence-perl"]
+]
+depends: [
+  "deb-libfeature-compat-try-perl"
+  "deb-libfuture-asyncawait-perl" {>= "0.60"}
+  "deb-libfuture-perl"
+  "deb-libobject-pad-perl" {>= "0.70"}
+  "deb-libparser-mgc-perl"
+  "deb-libscalar-list-utils-perl"
+  "deb-libstruct-dumb-perl"
+  "deb-libsyntax-keyword-dynamically-perl"
+  "deb-libsyntax-keyword-match-perl"
+  "deb-perl-any"
+]
+extra-source "libtangence-perl_0.30-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libt/libtangence-perl/libtangence-perl_0.30-2_all.deb"
+}

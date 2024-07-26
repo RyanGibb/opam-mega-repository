@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcamlimages-ocaml-dev_1:5.0.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcamlimages-ocaml-dev"]
+]
+depends: [
+  "deb-libcamlimages-ocaml"
+  "deb-libexif-dev"
+  "deb-libfreetype6-dev"
+  "deb-libgif-dev"
+  "deb-libgraphics-ocaml-dev"
+  "deb-libjpeg-dev"
+  "deb-libpng-dev"
+  "deb-libtiff-dev"
+  "deb-libxpm-dev"
+  "deb-ocaml-nox"
+]
+extra-source "libcamlimages-ocaml-dev_1:5.0.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/camlimages/libcamlimages-ocaml-dev_5.0.4-1_amd64.deb"
+}

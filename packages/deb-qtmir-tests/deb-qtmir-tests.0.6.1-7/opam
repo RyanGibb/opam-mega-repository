@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i qtmir-tests_0.6.1-7_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r qtmir-tests"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libmiral3" {>= "2.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5qml5" {>= "5.1.0"}
+  "deb-libqtmirserver1" {>= "0.6.1"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-littler"
+  "deb-lttng-tools"
+  "deb-mir-test-tools"
+  "deb-python3-babeltrace"
+  "deb-python3-evdev"
+  "deb-python3-mir-perf-framework"
+  "deb-qml-module-qtmir"
+  ("deb-libqt5gui5" {>= "5.8.0"} | "deb- libqt5gui5-gles" {>= "5.8.0"})
+  ("deb-libqt5quick5" {>= "5.15.1"} | "deb- libqt5quick5-gles" {>= "5.15.1"})
+  ("deb-qtmir-desktop" {= "0.6.1-7"} | "deb- qtmir-android" {= "0.6.1-7"})
+]
+extra-source "qtmir-tests_0.6.1-7_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qtmir/qtmir-tests_0.6.1-7_amd64.deb"
+}

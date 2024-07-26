@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-lambdabot-haskell-plugins-prof_5.1.0.3-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-lambdabot-haskell-plugins-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-arrows-prof"
+  "deb-libghc-data-memocombinators-prof"
+  "deb-libghc-hoogle-prof"
+  "deb-libghc-http-prof"
+  "deb-libghc-iospec-prof"
+  "deb-libghc-lambdabot-core-prof"
+  "deb-libghc-lambdabot-haskell-plugins-dev" {= "5.1.0.3-3+b1"}
+  "deb-libghc-lambdabot-reference-plugins-prof"
+  "deb-libghc-lambdabot-trusted-prof"
+  "deb-libghc-lifted-base-prof"
+  "deb-libghc-logict-prof"
+  "deb-libghc-monadrandom-prof"
+  "deb-libghc-mueval-prof"
+  "deb-libghc-network-prof"
+  "deb-libghc-numbers-prof"
+  "deb-libghc-oeis-prof"
+  "deb-libghc-quickcheck2-prof"
+  "deb-libghc-regex-tdfa-prof"
+  "deb-libghc-show-prof"
+  "deb-libghc-split-prof"
+  "deb-libghc-src-exts-simple-prof"
+  "deb-libghc-syb-prof"
+  "deb-libghc-utf8-string-prof"
+  "deb-libghc-vector-space-prof"
+]
+extra-source "libghc-lambdabot-haskell-plugins-prof_5.1.0.3-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-lambdabot-haskell-plugins/libghc-lambdabot-haskell-plugins-prof_5.1.0.3-3+b1_amd64.deb"
+}

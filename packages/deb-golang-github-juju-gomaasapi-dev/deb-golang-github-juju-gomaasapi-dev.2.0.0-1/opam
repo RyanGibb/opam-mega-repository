@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i golang-github-juju-gomaasapi-dev_2.0.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r golang-github-juju-gomaasapi-dev"]
+]
+depends: [
+  "deb-golang-github-juju-collections-dev"
+  "deb-golang-github-juju-errors-dev"
+  "deb-golang-github-juju-loggo-dev"
+  "deb-golang-github-juju-schema-dev"
+  "deb-golang-github-juju-testing-dev"
+  "deb-golang-github-juju-version-dev"
+  "deb-golang-gopkg-check-v1-dev"
+  "deb-golang-gopkg-mgo-v2-dev"
+]
+extra-source "golang-github-juju-gomaasapi-dev_2.0.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-juju-gomaasapi/golang-github-juju-gomaasapi-dev_2.0.0-1_all.deb"
+}

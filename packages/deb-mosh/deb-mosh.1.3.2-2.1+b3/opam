@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mosh_1.3.2-2.1+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mosh"]
+]
+depends: [
+  "deb-libc6" {>= "2.17"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libprotobuf23" {>= "3.12.3"}
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-libutempter0" {>= "1.1.5"}
+  "deb-openssh-client"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "mosh_1.3.2-2.1+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mosh/mosh_1.3.2-2.1+b3_amd64.deb"
+}

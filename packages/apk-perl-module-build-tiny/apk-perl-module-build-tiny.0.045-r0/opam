@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-module-build-tiny-0.045-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-module-build-tiny"]
+]
+depends: [
+  "apk-perl" {= "5.36.2-r0"}
+  "apk-perl-extutils-config" {= "0.008-r3"}
+  "apk-perl-extutils-helpers" {= "0.026-r3"}
+  "apk-perl-extutils-installpaths" {= "0.012-r3"}
+]
+extra-source "perl-module-build-tiny-0.045-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-module-build-tiny-0.045-r0.apk"
+}

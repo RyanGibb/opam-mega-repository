@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ceres-solver-doc_1.14.0-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ceres-solver-doc"]
+]
+depends: [
+  "deb-fonts-lato"
+  "deb-libjs-jquery"
+  "deb-libjs-mathjax"
+  "deb-libjs-modernizr"
+  "deb-libjs-underscore"
+]
+extra-source "ceres-solver-doc_1.14.0-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/ceres-solver/ceres-solver-doc_1.14.0-4_all.deb"
+}

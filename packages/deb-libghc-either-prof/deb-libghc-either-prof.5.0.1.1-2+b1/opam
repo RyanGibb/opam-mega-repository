@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-either-prof_5.0.1.1-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-either-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-bifunctors-prof"
+  "deb-libghc-either-dev" {= "5.0.1.1-2+b1"}
+  "deb-libghc-profunctors-prof"
+  "deb-libghc-semigroupoids-prof"
+]
+extra-source "libghc-either-prof_5.0.1.1-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-either/libghc-either-prof_5.0.1.1-2+b1_amd64.deb"
+}

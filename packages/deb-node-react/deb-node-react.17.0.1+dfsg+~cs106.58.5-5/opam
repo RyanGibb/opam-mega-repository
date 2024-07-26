@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i node-react_17.0.1+dfsg+~cs106.58.5-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r node-react"]
+]
+depends: [
+  "deb-node-fbjs"
+  "deb-node-loose-envify"
+  "deb-node-object-assign" {>= "4.1.1"}
+  "deb-node-prop-types"
+  "deb-nodejs"
+]
+extra-source "node-react_17.0.1+dfsg+~cs106.58.5-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/node-react/node-react_17.0.1+dfsg+~cs106.58.5-5_all.deb"
+}

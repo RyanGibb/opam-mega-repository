@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libqwt-dev_6.1.4-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libqwt-dev"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc1" {>= "1-3.0"}
+  "deb-libqt4-designer" {>= "4-4.8.0~"}
+  "deb-libqt4-dev"
+  "deb-libqtcore4" {>= "4-4.8.0~"}
+  "deb-libqtgui4" {>= "4-4.8.0~"}
+  "deb-libqwt-headers" {= "6.1.4-1"}
+  "deb-libqwt6abi1" {= "6.1.4-1"}
+  "deb-libstdc++6" {>= "5"}
+]
+extra-source "libqwt-dev_6.1.4-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/q/qwt/libqwt-dev_6.1.4-1_amd64.deb"
+}

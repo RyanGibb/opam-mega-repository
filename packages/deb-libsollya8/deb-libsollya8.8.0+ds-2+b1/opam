@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libsollya8_8.0+ds-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libsollya8"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libfplll8" {>= "5.4.0"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
+  "deb-libmpfi0" {>= "1.5.1"}
+  "deb-libmpfr6" {>= "3.1.3"}
+  "deb-libstdc++6" {>= "4.1.1"}
+  "deb-libxml2" {>= "2.7.4"}
+]
+conflicts: [
+  "deb-libsollya"
+]
+extra-source "libsollya8_8.0+ds-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sollya/libsollya8_8.0+ds-2+b1_amd64.deb"
+}

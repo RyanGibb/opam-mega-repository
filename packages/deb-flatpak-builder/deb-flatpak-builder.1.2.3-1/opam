@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i flatpak-builder_1.2.3-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r flatpak-builder"]
+]
+depends: [
+  "deb-debugedit" {>= "1-5.0"}
+  "deb-flatpak" {>= "1.12.4"}
+  "deb-gir1-2-flatpak-1-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libelf1" {>= "0.131"}
+  "deb-libglib2-0-0" {>= "2.44"}
+  "deb-libjson-glib-1-0-0" {>= "1.5.2"}
+  "deb-libostree-1-1" {>= "2018.6"}
+  "deb-libsoup2-4-1" {>= "2.41.90"}
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-libyaml-0-2"
+  "deb-ostree" {>= "2017.14"}
+]
+extra-source "flatpak-builder_1.2.3-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/flatpak-builder/flatpak-builder_1.2.3-1_amd64.deb"
+}

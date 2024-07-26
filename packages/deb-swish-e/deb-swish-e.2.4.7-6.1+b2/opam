@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i swish-e_2.4.7-6.1+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r swish-e"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libpcre3"
+  "deb-libxml2" {>= "2.7.4"}
+  "deb-perl" {>= "5.36.0-4"}
+  "deb-perl-base"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+extra-source "swish-e_2.4.7-6.1+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/swish-e/swish-e_2.4.7-6.1+b2_amd64.deb"
+}

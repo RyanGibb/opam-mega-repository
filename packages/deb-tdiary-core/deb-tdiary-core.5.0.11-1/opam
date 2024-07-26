@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tdiary-core_5.0.11-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tdiary-core"]
+]
+depends: [
+  "deb-ruby"
+  "deb-ruby-coffee-script"
+  "deb-ruby-debian"
+  "deb-ruby-emot"
+  "deb-ruby-execjs"
+  "deb-ruby-fastimage"
+  "deb-ruby-hikidoc"
+  "deb-ruby-mail"
+  "deb-ruby-rack"
+  "deb-ruby-sprockets"
+]
+extra-source "tdiary-core_5.0.11-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tdiary/tdiary-core_5.0.11-1_all.deb"
+}

@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python-dcos_0.2.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python-dcos"]
+]
+depends: [
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7.5-5~"}
+  "deb-python-concurrent-futures"
+  "deb-python-git"
+  "deb-python-jsonschema"
+  "deb-python-pager"
+  "deb-python-portalocker"
+  "deb-python-prettytable"
+  "deb-python-pygments"
+  "deb-python-pystache"
+  "deb-python-requests"
+  "deb-python-six" {>= "1.9"}
+  "deb-python-toml"
+]
+extra-source "python-dcos_0.2.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-dcos/python-dcos_0.2.0-2_all.deb"
+}

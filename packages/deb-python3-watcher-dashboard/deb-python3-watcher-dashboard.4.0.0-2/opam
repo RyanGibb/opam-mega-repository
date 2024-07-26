@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-watcher-dashboard_4.0.0-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-watcher-dashboard"]
+]
+depends: [
+  "deb-openstack-dashboard" {>= "3-18.2.0"}
+  "deb-python3-any"
+  "deb-python3-django-horizon"
+  "deb-python3-httplib2"
+  "deb-python3-keystoneclient"
+  "deb-python3-pbr"
+  "deb-python3-watcherclient"
+  "deb-python3-yaml"
+]
+extra-source "python3-watcher-dashboard_4.0.0-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/w/watcher-dashboard/python3-watcher-dashboard_4.0.0-2_all.deb"
+}

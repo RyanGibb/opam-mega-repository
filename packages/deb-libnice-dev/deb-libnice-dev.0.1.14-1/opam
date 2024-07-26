@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libnice-dev_0.1.14-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libnice-dev"]
+]
+depends: [
+  "deb-gir1-2-nice-0-1" {= "0.1.14-1"}
+  "deb-libglib2-0-dev" {>= "2.44"}
+  "deb-libgnutls28-dev" {>= "2.12.0"}
+  "deb-libgupnp-igd-1-0-dev" {>= "0.2.4"}
+  "deb-libnice10" {= "0.1.14-1"}
+]
+extra-source "libnice-dev_0.1.14-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libn/libnice/libnice-dev_0.1.14-1_amd64.deb"
+}

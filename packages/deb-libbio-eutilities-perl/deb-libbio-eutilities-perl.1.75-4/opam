@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libbio-eutilities-perl_1.75-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libbio-eutilities-perl"]
+]
+depends: [
+  "deb-libbio-asn1-entrezgene-perl"
+  "deb-libbio-perl-perl"
+  "deb-libhttp-message-perl"
+  "deb-libtext-csv-perl"
+  "deb-liburi-perl"
+  "deb-libwww-perl"
+  "deb-libxml-simple-perl"
+  "deb-perl"
+]
+extra-source "libbio-eutilities-perl_1.75-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libb/libbio-eutilities-perl/libbio-eutilities-perl_1.75-4_all.deb"
+}

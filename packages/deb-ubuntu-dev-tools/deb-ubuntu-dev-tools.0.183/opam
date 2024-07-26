@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ubuntu-dev-tools_0.183_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ubuntu-dev-tools"]
+]
+depends: [
+  "deb-binutils"
+  "deb-dctrl-tools"
+  "deb-devscripts" {>= "2.11.0~"}
+  "deb-diffstat"
+  "deb-distro-info" {>= "0.2~"}
+  "deb-dpkg-dev"
+  "deb-dput"
+  "deb-lsb-release"
+  "deb-perl-any"
+  "deb-python3"
+  "deb-python3-apt"
+  "deb-python3-debian"
+  "deb-python3-debianbts"
+  "deb-python3-distro-info"
+  "deb-python3-httplib2"
+  "deb-python3-launchpadlib"
+  "deb-python3-lazr-restfulclient"
+  "deb-python3-ubuntutools" {= "0.183"}
+  "deb-sensible-utils"
+  "deb-sudo"
+  "deb-tzdata"
+]
+extra-source "ubuntu-dev-tools_0.183_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/u/ubuntu-dev-tools/ubuntu-dev-tools_0.183_all.deb"
+}

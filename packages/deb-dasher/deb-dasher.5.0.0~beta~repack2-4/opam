@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dasher_5.0.0~beta~repack2-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dasher"]
+]
+depends: [
+  "deb-dasher-data" {= "5.0.0~beta~repack2-4"}
+  "deb-libatk-adaptor"
+  "deb-libatspi2-0-0" {>= "2.9.90"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libgtk-3-0" {>= "3.9.10"}
+  "deb-libpango-1-0-0" {>= "1.14.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-libspeechd2" {>= "0.7.1"}
+  "deb-libstdc++6" {>= "11"}
+]
+extra-source "dasher_5.0.0~beta~repack2-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dasher/dasher_5.0.0~beta~repack2-4_amd64.deb"
+}

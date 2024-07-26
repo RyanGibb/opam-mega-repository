@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-pdm-pep517_1.1.2+ds1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-pdm-pep517"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-boolean"
+  "deb-python3-cerberus"
+  "deb-python3-license-expression"
+  "deb-python3-packaging"
+  "deb-python3-pkg-resources"
+  "deb-python3-pyparsing"
+  "deb-python3-tomli"
+  "deb-python3-tomli-w"
+]
+extra-source "python3-pdm-pep517_1.1.2+ds1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pdm-pep517/python3-pdm-pep517_1.1.2+ds1-1_all.deb"
+}

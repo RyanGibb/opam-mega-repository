@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libcolor-calc-perl_1.074-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libcolor-calc-perl"]
+]
+depends: [
+  "deb-libgraphics-colornames-perl"
+  "deb-libgraphics-colornames-www-perl"
+  "deb-libgraphics-colorobject-perl"
+  "deb-libparams-validate-perl"
+  "deb-perl"
+]
+extra-source "libcolor-calc-perl_1.074-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libc/libcolor-calc-perl/libcolor-calc-perl_1.074-2_all.deb"
+}

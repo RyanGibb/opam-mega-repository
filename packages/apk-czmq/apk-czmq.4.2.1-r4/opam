@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add czmq-4.2.1-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del czmq"]
+]
+depends: [
+  "apk-libuuid" {= "2.40.1-r1"}
+  "apk-libzmq" {= "4.3.5-r2"}
+  "apk-musl" {= "1.2.5-r0"}
+]
+extra-source "czmq-4.2.1-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/czmq-4.2.1-r4.apk"
+}

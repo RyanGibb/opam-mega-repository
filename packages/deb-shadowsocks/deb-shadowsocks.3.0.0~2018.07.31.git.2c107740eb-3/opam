@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i shadowsocks_3.0.0~2018.07.31.git.2c107740eb-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r shadowsocks"]
+]
+depends: [
+  "deb-lsb-base" {>= "3.0-6"}
+  "deb-python-any" {< "2.8"}
+  "deb-python-any" {>= "2.7~"}
+  "deb-python-m2crypto"
+  "deb-python-pkg-resources"
+  "deb-python2-7-any"
+]
+extra-source "shadowsocks_3.0.0~2018.07.31.git.2c107740eb-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/shadowsocks/shadowsocks_3.0.0~2018.07.31.git.2c107740eb-3_all.deb"
+}

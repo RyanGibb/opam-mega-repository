@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i adwaita-qt6_1.4.2-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r adwaita-qt6"]
+]
+depends: [
+  "deb-libadwaitaqt6-1" {>= "1.4.1"}
+  "deb-libadwaitaqt6priv1" {>= "1.4.1"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libqt6core6" {>= "6.4.0"}
+  "deb-libqt6gui6" {>= "6.4.0"}
+  "deb-libqt6widgets6" {>= "6.1.2"}
+  "deb-libstdc++6" {>= "5"}
+]
+extra-source "adwaita-qt6_1.4.2-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/adwaita-qt/adwaita-qt6_1.4.2-3_amd64.deb"
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i mozilla-devscripts_0.54.2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r mozilla-devscripts"]
+]
+depends: [
+  "deb-perl-any"
+  "deb-python-librdf"
+  "deb-python2-any" {< "2.8"}
+  "deb-python2-any" {>= "2.7~"}
+  "deb-python3-any"
+  "deb-unzip"
+  "deb-zip"
+]
+extra-source "mozilla-devscripts_0.54.2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/mozilla-devscripts/mozilla-devscripts_0.54.2_all.deb"
+}

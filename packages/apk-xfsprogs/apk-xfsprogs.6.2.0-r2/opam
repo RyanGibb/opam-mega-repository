@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xfsprogs-6.2.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xfsprogs"]
+]
+depends: [
+  "apk-inih" {= "56-r1"}
+  "apk-libblkid" {= "2.38.1-r8"}
+  "apk-libuuid" {= "2.38.1-r8"}
+  "apk-musl" {= "1.2.4-r2"}
+  "apk-userspace-rcu" {= "0.14.0-r1"}
+]
+extra-source "xfsprogs-6.2.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/xfsprogs-6.2.0-r2.apk"
+}

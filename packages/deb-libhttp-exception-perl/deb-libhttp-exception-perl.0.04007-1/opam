@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libhttp-exception-perl_0.04007-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libhttp-exception-perl"]
+]
+depends: [
+  "deb-libexception-class-perl"
+  "deb-libscalar-list-utils-perl"
+  "deb-libwww-perl"
+  "deb-perl"
+]
+extra-source "libhttp-exception-perl_0.04007-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libh/libhttp-exception-perl/libhttp-exception-perl_0.04007-1_all.deb"
+}

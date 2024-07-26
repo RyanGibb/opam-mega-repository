@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-gdl_0.9.9-13+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-gdl"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgcc-s1" {>= "4.0"}
+  "deb-libgnudatalanguage0" {>= "0.9.9"}
+  "deb-libgomp1" {>= "4.9"}
+  "deb-libpython3-9" {>= "3.9.0~b4"}
+  "deb-libreadline8" {>= "6.0"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libtirpc3" {>= "1.0.2"}
+  "deb-python3" {< "3.10"}
+  "deb-python3" {>= "3.9~"}
+  "deb-python3-numpy"
+  "deb-python3-numpy" {>= "1-1.16.0~rc1"}
+]
+extra-source "python3-gdl_0.9.9-13+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gnudatalanguage/python3-gdl_0.9.9-13+b1_amd64.deb"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-cipher-des-prof_0.0.6-9+b2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-cipher-des-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-byteable-prof"
+  "deb-libghc-cipher-des-dev" {= "0.0.6-9+b2"}
+  "deb-libghc-crypto-cipher-types-prof"
+  "deb-libghc-securemem-prof"
+]
+extra-source "libghc-cipher-des-prof_0.0.6-9+b2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-cipher-des/libghc-cipher-des-prof_0.0.6-9+b2_amd64.deb"
+}

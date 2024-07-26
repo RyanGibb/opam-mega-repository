@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ncmpcpp_0.9.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ncmpcpp"]
+]
+depends: [
+  "deb-libboost-filesystem1-74-0" {>= "1.74.0"}
+  "deb-libboost-locale1-74-0" {>= "1.74.0"}
+  "deb-libboost-program-options1-74-0" {>= "1.74.0"}
+  "deb-libboost-regex1-74-0"
+  "deb-libboost-thread1-74-0" {>= "1.74.0"}
+  "deb-libc6" {>= "2.29"}
+  "deb-libcurl3-gnutls" {>= "7.16.2"}
+  "deb-libfftw3-double3" {>= "3.3.5"}
+  "deb-libgcc-s1" {>= "3.3.1"}
+  "deb-libicu67" {>= "67.1-1~"}
+  "deb-libmpdclient2" {>= "2.9"}
+  "deb-libncursesw6" {>= "6"}
+  "deb-libreadline8" {>= "6.0"}
+  "deb-libstdc++6" {>= "6"}
+  "deb-libtag1v5" {>= "1.11"}
+  "deb-libtinfo6" {>= "6"}
+]
+extra-source "ncmpcpp_0.9.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/ncmpcpp/ncmpcpp_0.9.2-1_amd64.deb"
+}

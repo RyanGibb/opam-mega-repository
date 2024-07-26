@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i shatag_0.5.0-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r shatag"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-pyinotify"
+  "deb-python3-xattr"
+  "deb-python3-yaml"
+]
+extra-source "shatag_0.5.0-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/shatag/shatag_0.5.0-4_all.deb"
+}

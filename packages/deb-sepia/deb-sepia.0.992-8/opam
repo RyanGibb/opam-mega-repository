@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i sepia_0.992-8_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r sepia"]
+]
+depends: [
+  "deb-libbsd-resource-perl"
+  "deb-libdata-dump-perl"
+  "deb-libdevel-lexalias-perl"
+  "deb-libdevel-size-perl"
+  "deb-libio-stringy-perl"
+  "deb-libmodule-corelist-perl"
+  "deb-libmodule-info-perl"
+  "deb-libpadwalker-perl"
+  "deb-libscope-upper-perl"
+  "deb-libwww-perl"
+  "deb-perl-any"
+  ("deb-emacs-nox" | "deb- emacs-gtk" | "deb- emacs25-nox" | "deb- emacs25" | "deb- emacs24" | "deb- emacs23" | "deb- emacs22")
+  ("deb-w3m-el" | "deb- w3m-el-snapshot")
+]
+extra-source "sepia_0.992-8_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/sepia/sepia_0.992-8_all.deb"
+}

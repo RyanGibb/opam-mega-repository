@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i colorhug-client_0.2.8-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r colorhug-client"]
+]
+depends: [
+  "deb-libatk1-0-0" {>= "1.12.4"}
+  "deb-libc6" {>= "2.14"}
+  "deb-libcairo-gobject2" {>= "1.10.0"}
+  "deb-libcairo2" {>= "1.2.4"}
+  "deb-libcanberra-gtk3-0" {>= "0.25"}
+  "deb-libcanberra0" {>= "0.2"}
+  "deb-libcolord-gtk1" {>= "0.1.24"}
+  "deb-libcolord2" {>= "1.4.3"}
+  "deb-libcolorhug2" {>= "1.2.10"}
+  "deb-libgdk-pixbuf2-0-0" {>= "2.25.2"}
+  "deb-libglib2-0-0" {>= "2.39.4"}
+  "deb-libgtk-3-0" {>= "3.11.5"}
+  "deb-libgusb2" {>= "0.2.2"}
+  "deb-libpango-1-0-0" {>= "1.18.0"}
+  "deb-libpangocairo-1-0-0" {>= "1.14.0"}
+  "deb-librsvg2-common"
+  "deb-libsoup2-4-1" {>= "2.33.92"}
+  "deb-libusb-1-0-0" {>= "2-1.0.8"}
+  "deb-libx11-6"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "colorhug-client_0.2.8-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/c/colorhug-client/colorhug-client_0.2.8-3+b1_amd64.deb"
+}

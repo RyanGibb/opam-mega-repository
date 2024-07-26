@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-arcus_4.13.0-3+b4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-arcus"]
+]
+depends: [
+  "deb-libarcus3" {= "4.13.0-3+b4"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libprotobuf32" {>= "3.21.12"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-python3" {< "3.12"}
+  "deb-python3" {>= "3.11~"}
+  "deb-python3-pyqt5"
+  "deb-python3-sip"
+]
+extra-source "python3-arcus_4.13.0-3+b4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/liba/libarcus/python3-arcus_4.13.0-3+b4_amd64.deb"
+}

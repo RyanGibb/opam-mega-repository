@@ -1,0 +1,47 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i openqa-common_4.6.1674490999.b00c12673-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r openqa-common"]
+]
+depends: [
+  "deb-libaliased-perl"
+  "deb-libarchive-extract-perl"
+  "deb-libbsd-resource-perl"
+  "deb-libconfig-inifiles-perl"
+  "deb-libconfig-tiny-perl"
+  "deb-libcpanel-json-xs-perl"
+  "deb-libcss-minifier-xs-perl" {>= "0.01"}
+  "deb-libdata-dump-perl"
+  "deb-libdatetime-format-sqlite-perl"
+  "deb-libdbd-sqlite3-perl"
+  "deb-libdbix-class-dynamicdefault-perl"
+  "deb-libdbix-class-optimisticlocking-perl"
+  "deb-libdbix-class-perl" {>= "0.082801"}
+  "deb-libdbix-class-schema-config-perl"
+  "deb-libfile-copy-recursive-perl"
+  "deb-libfilesys-df-perl"
+  "deb-libio-socket-ssl-perl"
+  "deb-libipc-run-perl"
+  "deb-libjavascript-minifier-xs-perl"
+  "deb-libjs-chosen"
+  "deb-libjson-validator-perl"
+  "deb-libmojo-rabbitmq-client-perl"
+  "deb-libmojolicious-perl" {>= "9.30"}
+  "deb-libmojolicious-plugin-assetpack-perl" {>= "1.36"}
+  "deb-libmojolicious-plugin-renderfile-perl"
+  "deb-libmoose-perl"
+  "deb-libnet-dbus-perl"
+  "deb-libnet-openid-consumer-perl"
+  "deb-libpod-pom-perl"
+  "deb-libregexp-common-perl"
+  "deb-libsort-versions-perl"
+  "deb-libsql-translator-perl"
+  "deb-libtext-markdown-perl"
+  "deb-libtime-moment-perl"
+  "deb-libtime-parsedate-perl"
+]
+extra-source "openqa-common_4.6.1674490999.b00c12673-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/o/openqa/openqa-common_4.6.1674490999.b00c12673-2_all.deb"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-llvmlite_0.39.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-llvmlite"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libllvm14"
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-llvm-14"
+  "deb-python3" {>= "3~"}
+  "deb-python3-any"
+]
+extra-source "python3-llvmlite_0.39.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/l/llvmlite/python3-llvmlite_0.39.1-2_amd64.deb"
+}

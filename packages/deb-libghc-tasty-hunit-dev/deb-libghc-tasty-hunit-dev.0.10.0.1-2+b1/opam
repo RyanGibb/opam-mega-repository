@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-tasty-hunit-dev_0.10.0.1-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-tasty-hunit-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-call-stack-dev"
+  "deb-libghc-tasty-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-tasty-hunit-dev_0.10.0.1-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-tasty-hunit/libghc-tasty-hunit-dev_0.10.0.1-2+b1_amd64.deb"
+}

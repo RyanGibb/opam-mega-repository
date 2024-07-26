@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-canonicaljson_1.1.4-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-canonicaljson"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-frozendict" {>= "0.4"}
+  "deb-python3-simplejson" {>= "3.6.5"}
+  "deb-python3-six"
+]
+extra-source "python3-canonicaljson_1.1.4-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/python-canonicaljson/python3-canonicaljson_1.1.4-2_all.deb"
+}

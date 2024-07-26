@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xen-dev-4.17.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xen-dev"]
+]
+depends: [
+  "apk-argp-standalone" {= "1.5.0-r1"}
+  "apk-attr-dev" {= "2.5.1-r4"}
+  "apk-bison" {= "3.8.2-r1"}
+  "apk-curl-dev" {= "8.9.0-r0"}
+  "apk-dev86" {= "0.16.21-r3"}
+  "apk-e2fsprogs-dev" {= "1.47.0-r2"}
+  "apk-flex" {= "2.6.4-r5"}
+  "apk-gnutls-dev" {= "3.8.4-r0"}
+  "apk-libaio-dev" {= "0.3.113-r1"}
+  "apk-libcap-ng-dev" {= "0.8.3-r3"}
+  "apk-libnl3-dev" {= "3.7.0-r1"}
+  "apk-linux-headers" {= "6.3-r0"}
+  "apk-lzo-dev" {= "2.10-r5"}
+  "apk-ncurses-dev" {= "6.4_p20230506-r0"}
+  "apk-openssl-dev" {> "3"}
+  "apk-pciutils-dev" {= "3.10.0-r0"}
+  "apk-perl" {= "5.36.2-r0"}
+  "apk-perl-dev" {= "5.36.2-r0"}
+  "apk-pkgconf" {= "1.9.5-r0"}
+  "apk-python3-dev" {= "3.11.8-r0"}
+  "apk-spice-dev" {= "0.15.2-r1"}
+  "apk-texinfo" {= "7.0.3-r1"}
+  "apk-util-linux-dev" {= "2.38.1-r8"}
+  "apk-xen-libs" {= "4.17.4-r0"}
+  "apk-xz-dev" {= "5.4.3-r0"}
+  "apk-yajl-dev" {= "2.1.0-r6"}
+  "apk-zlib-dev" {= "1.2.13-r1"}
+  "apk-zstd-dev" {= "1.5.5-r4"}
+]
+extra-source "xen-dev-4.17.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/xen-dev-4.17.4-r0.apk"
+}

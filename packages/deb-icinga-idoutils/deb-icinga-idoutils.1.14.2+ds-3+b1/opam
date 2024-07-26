@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i icinga-idoutils_1.14.2+ds-3+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r icinga-idoutils"]
+]
+depends: [
+  "deb-dbconfig-common"
+  "deb-icinga-common" {= "1.14.2+ds-3"}
+  "deb-libc6" {>= "2.15"}
+  "deb-libdbi1" {>= "0.8.4"}
+  "deb-lsb-base"
+  "deb-ucf"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-libdbd-mysql" | "deb- libdbd-pgsql")
+]
+extra-source "icinga-idoutils_1.14.2+ds-3+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/icinga/icinga-idoutils_1.14.2+ds-3+b1_amd64.deb"
+}

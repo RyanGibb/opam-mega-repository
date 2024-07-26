@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i fwlogwatch_1.4-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r fwlogwatch"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libcrypt1" {>= "1-4.1.0"}
+  "deb-lsb-base"
+  "deb-zlib1g" {>= "1-1.1.4"}
+  ("deb-debconf" {>= "1.2.0"} | "deb- debconf-2-0")
+  ("deb-default-mta" | "deb- mail-transport-agent")
+  ("deb-rsyslog" | "deb- system-log-daemon")
+]
+extra-source "fwlogwatch_1.4-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/f/fwlogwatch/fwlogwatch_1.4-4_amd64.deb"
+}

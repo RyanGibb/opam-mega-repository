@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i slrnface_2.1.1-7+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r slrnface"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libcompfaceg1"
+  "deb-libx11-6"
+  "deb-libxt6"
+  ("deb-slrn" {>= "0.9.7.3"} | "deb- tin" {>= "1-1.6.1-1"})
+]
+extra-source "slrnface_2.1.1-7+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/slrnface/slrnface_2.1.1-7+b1_amd64.deb"
+}

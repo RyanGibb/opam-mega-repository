@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpcl-ros-filters0d_1.7.2-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpcl-ros-filters0d"]
+]
+depends: [
+  "deb-libc6" {>= "2.14"}
+  "deb-libclass-loader1d" {>= "0.5.0"}
+  "deb-libconsole-bridge0-4"
+  "deb-libdynamic-reconfigure-config-init-mutex0d" {>= "1.7.1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libmessage-filters1d" {>= "1.15.9+ds1"}
+  "deb-libnodeletlib1d" {>= "1.10.0"}
+  "deb-libpcl-common1-11" {>= "1.11.1+dfsg"}
+  "deb-libpcl-filters1-11" {>= "1.11.1+dfsg"}
+  "deb-libpcl-ros-filter1d" {>= "1.7.2"}
+  "deb-librosconsole3d" {>= "1.14.3"}
+  "deb-libroscpp-serialization0d" {>= "0.7.2"}
+  "deb-libroscpp3d" {>= "1.15.9+ds1"}
+  "deb-librostime1d" {>= "0.7.2"}
+  "deb-libstdc++6" {>= "9"}
+  "deb-libtf1d" {>= "1.13.2"}
+]
+extra-source "libpcl-ros-filters0d_1.7.2-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ros-perception-pcl/libpcl-ros-filters0d_1.7.2-3_amd64.deb"
+}

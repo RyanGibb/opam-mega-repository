@@ -1,0 +1,45 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-happstack-authenticate-prof_2.6.1-1+b6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-happstack-authenticate-prof"]
+]
+depends: [
+  "deb-ghc-prof"
+  "deb-libghc-acid-state-prof"
+  "deb-libghc-aeson-prof"
+  "deb-libghc-authenticate-prof"
+  "deb-libghc-base64-bytestring-prof"
+  "deb-libghc-boomerang-prof"
+  "deb-libghc-data-default-prof"
+  "deb-libghc-email-validate-prof"
+  "deb-libghc-happstack-authenticate-dev" {= "2.6.1-1+b6"}
+  "deb-libghc-happstack-hsp-prof"
+  "deb-libghc-happstack-jmacro-prof"
+  "deb-libghc-happstack-server-prof"
+  "deb-libghc-hsp-prof"
+  "deb-libghc-hsx-jmacro-prof"
+  "deb-libghc-hsx2hs-prof"
+  "deb-libghc-http-conduit-prof"
+  "deb-libghc-http-types-prof"
+  "deb-libghc-ixset-typed-prof"
+  "deb-libghc-jmacro-prof"
+  "deb-libghc-jwt-prof"
+  "deb-libghc-lens-prof"
+  "deb-libghc-mime-mail-prof"
+  "deb-libghc-pwstore-fast-prof"
+  "deb-libghc-random-prof"
+  "deb-libghc-safecopy-prof"
+  "deb-libghc-shakespeare-prof"
+  "deb-libghc-unordered-containers-prof"
+  "deb-libghc-userid-prof"
+  "deb-libghc-web-routes-boomerang-prof"
+  "deb-libghc-web-routes-happstack-prof"
+  "deb-libghc-web-routes-hsp-prof"
+  "deb-libghc-web-routes-prof"
+  "deb-libghc-web-routes-th-prof"
+]
+extra-source "libghc-happstack-authenticate-prof_2.6.1-1+b6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-happstack-authenticate/libghc-happstack-authenticate-prof_2.6.1-1+b6_amd64.deb"
+}

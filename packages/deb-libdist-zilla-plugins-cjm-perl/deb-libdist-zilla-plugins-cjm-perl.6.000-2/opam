@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libdist-zilla-plugins-cjm-perl_6.000-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libdist-zilla-plugins-cjm-perl"]
+]
+depends: [
+  "deb-libdist-zilla-perl"
+  "deb-libfile-homedir-perl"
+  "deb-libmoose-perl"
+  "deb-libnamespace-autoclean-perl"
+  "deb-libpath-tiny-perl"
+  "deb-perl-any"
+  ("deb-perl" | "deb- libcpan-meta-perl")
+  ("deb-perl" | "deb- libcpan-meta-requirements-perl")
+  ("deb-perl" | "deb- libmodule-metadata-perl")
+]
+extra-source "libdist-zilla-plugins-cjm-perl_6.000-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libd/libdist-zilla-plugins-cjm-perl/libdist-zilla-plugins-cjm-perl_6.000-2_all.deb"
+}

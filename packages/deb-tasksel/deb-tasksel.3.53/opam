@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i tasksel_3.53_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r tasksel"]
+]
+depends: [
+  "deb-apt"
+  "deb-liblocale-gettext-perl"
+  "deb-perl-base" {>= "5.14.0-1"}
+  "deb-tasksel-data"
+  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+]
+conflicts: [
+  "deb-base-config" {< "2.32"}
+  "deb-debconf" {< "1.4.27"}
+]
+extra-source "tasksel_3.53_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/t/tasksel/tasksel_3.53_all.deb"
+}

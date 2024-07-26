@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libaxiom-java_1.2.8-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libaxiom-java"]
+]
+depends: [
+  "deb-libcommons-logging-java" {>= "1.2"}
+  "deb-libjaxen-java" {>= "1.1.6"}
+  "deb-libmail-java" {>= "1.6.5"}
+]
+extra-source "libaxiom-java_1.2.8-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/liba/libaxiom-java/libaxiom-java_1.2.8-3_all.deb"
+}

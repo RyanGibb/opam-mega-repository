@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libgtkglext1-dev_1.2.0-9_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libgtkglext1-dev"]
+]
+depends: [
+  "deb-libgtk2-0-dev"
+  "deb-libgtkglext1" {= "1.2.0-9"}
+  "deb-libice-dev"
+  "deb-libpango1-0-dev"
+  "deb-libpangox-1-0-dev"
+  "deb-libsm-dev"
+  "deb-libxmu-dev"
+  "deb-libxt-dev"
+  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
+  ("deb-libglu1-mesa-dev" | "deb- libglu-dev")
+]
+extra-source "libgtkglext1-dev_1.2.0-9_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/gtkglext/libgtkglext1-dev_1.2.0-9_amd64.deb"
+}

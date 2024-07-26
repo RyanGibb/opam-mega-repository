@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i proftpd-basic_1.3.6-4+deb10u6_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r proftpd-basic"]
+]
+depends: [
+  "deb-adduser"
+  "deb-debianutils" {>= "1.21.0"}
+  "deb-libacl1" {>= "2.2.23"}
+  "deb-libattr1" {>= "1-2.4.44"}
+  "deb-libc6" {>= "2.15"}
+  "deb-libcap2" {>= "1-2.10"}
+  "deb-libhiredis0-14" {>= "0.14.0"}
+  "deb-libmemcached11"
+  "deb-libmemcachedutil2"
+  "deb-libncursesw6" {>= "6"}
+  "deb-libpam-runtime" {>= "0.76-13.1"}
+  "deb-libpam0g" {>= "0.99.7.1"}
+  "deb-libpcre3"
+  "deb-libssl1-1" {>= "1.1.0"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-libwrap0" {>= "7.6-4~"}
+  "deb-lsb-base" {>= "3.0-6"}
+  "deb-netbase" {>= "4.13"}
+  "deb-sed" {>= "4.1.5"}
+  "deb-ucf" {>= "0.30"}
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+conflicts: [
+  "deb-ftp-server"
+]
+extra-source "proftpd-basic_1.3.6-4+deb10u6_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/proftpd-dfsg/proftpd-basic_1.3.6-4+deb10u6_amd64.deb"
+}

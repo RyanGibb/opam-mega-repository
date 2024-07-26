@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add bind-libs-9.16.48-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del bind-libs"]
+]
+depends: [
+  "apk-fstrm" {= "0.6.1-r0"}
+  "apk-json-c" {= "0.16-r0"}
+  "apk-krb5-libs" {= "1.19.4-r0"}
+  "apk-libcrypto1-1" {= "1.1.1w-r1"}
+  "apk-libssl1-1" {= "1.1.1w-r1"}
+  "apk-libuv" {= "1.44.1-r0"}
+  "apk-libxml2" {= "2.9.14-r2"}
+  "apk-musl" {= "1.2.3-r3"}
+  "apk-protobuf-c" {= "1.4.1-r0"}
+  "apk-zlib" {= "1.2.12-r3"}
+]
+extra-source "bind-libs-9.16.48-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/bind-libs-9.16.48-r0.apk"
+}

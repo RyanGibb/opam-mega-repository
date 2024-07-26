@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i argus-client_1:3.0.8.2-6+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r argus-client"]
+]
+depends: [
+  "deb-libc6" {>= "2.29"}
+  "deb-libgeoip1" {>= "1.6.12"}
+  "deb-libmariadb3" {>= "3.0.0"}
+  "deb-libncurses6" {>= "6"}
+  "deb-libreadline8" {>= "6.0"}
+  "deb-libtinfo6" {>= "6"}
+  "deb-libwrap0" {>= "7.6-4~"}
+  "deb-perl-any"
+  "deb-zlib1g" {>= "1-1.1.4"}
+]
+extra-source "argus-client_1:3.0.8.2-6+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/argus-clients/argus-client_3.0.8.2-6+b1_amd64.deb"
+}

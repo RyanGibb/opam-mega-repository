@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmoosex-types-iso8601-perl_0.20-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmoosex-types-iso8601-perl"]
+]
+depends: [
+  "deb-libaliased-perl"
+  "deb-libdatetime-format-duration-perl"
+  "deb-libdatetime-format-iso8601-perl"
+  "deb-libdatetime-perl"
+  "deb-libdatetime-timezone-perl"
+  "deb-libmodule-runtime-perl"
+  "deb-libmoose-perl"
+  "deb-libmoosex-types-datetime-perl"
+  "deb-libmoosex-types-perl"
+  "deb-libnamespace-autoclean-perl"
+  "deb-libsafe-isa-perl"
+  "deb-libtry-tiny-perl"
+  "deb-perl-any"
+]
+extra-source "libmoosex-types-iso8601-perl_0.20-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libm/libmoosex-types-iso8601-perl/libmoosex-types-iso8601-perl_0.20-2_all.deb"
+}

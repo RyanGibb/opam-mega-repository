@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i nwchem_6.8.1-5_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r nwchem"]
+]
+depends: [
+  "deb-libc6" {>= "2.28"}
+  "deb-libgcc1" {>= "1-4.0"}
+  "deb-libgfortran5" {>= "8"}
+  "deb-libopenmpi3"
+  "deb-libpython2-7" {>= "2.7"}
+  "deb-libquadmath0" {>= "4.6"}
+  "deb-libscalapack-openmpi2-0"
+  "deb-mpi-default-bin"
+  "deb-nwchem-data" {= "6.8.1-5"}
+  "deb-zlib1g" {>= "1-1.2.0"}
+  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-liblapack3" | "deb- liblapack-so-3")
+]
+extra-source "nwchem_6.8.1-5_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/n/nwchem/nwchem_6.8.1-5_amd64.deb"
+}

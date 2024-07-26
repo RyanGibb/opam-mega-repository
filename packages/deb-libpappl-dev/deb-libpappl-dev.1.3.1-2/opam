@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libpappl-dev_1.3.1-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libpappl-dev"]
+]
+depends: [
+  "deb-libavahi-client-dev"
+  "deb-libcups2-dev"
+  "deb-libgnutls28-dev"
+  "deb-libjpeg-dev"
+  "deb-libpam0g-dev"
+  "deb-libpappl1" {= "1.3.1-2"}
+  "deb-libpng-dev"
+  "deb-libusb-1-0-0-dev"
+  "deb-zlib1g-dev"
+]
+extra-source "libpappl-dev_1.3.1-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/p/pappl/libpappl-dev_1.3.1-2_amd64.deb"
+}

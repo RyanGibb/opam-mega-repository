@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ibus-libzhuyin_1.10.2+ds-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ibus-libzhuyin"]
+]
+depends: [
+  "deb-libc6" {>= "2.34"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libglib2-0-0" {>= "2.37.3"}
+  "deb-libibus-1-0-5" {>= "1.5.1"}
+  "deb-libopencc1-1" {>= "1.1.4+ds1"}
+  "deb-libstdc++6" {>= "5.2"}
+  "deb-libzhuyin15" {>= "2.7.92"}
+  "deb-python3-any"
+  "deb-python3-gi"
+  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+]
+extra-source "ibus-libzhuyin_1.10.2+ds-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/i/ibus-libzhuyin/ibus-libzhuyin_1.10.2+ds-1_amd64.deb"
+}

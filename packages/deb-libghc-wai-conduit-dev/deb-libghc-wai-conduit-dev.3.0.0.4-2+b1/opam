@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libghc-wai-conduit-dev_3.0.0.4-2+b1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libghc-wai-conduit-dev"]
+]
+depends: [
+  "deb-ghc"
+  "deb-libatomic1" {>= "4.8"}
+  "deb-libc6" {>= "2.2.5"}
+  "deb-libghc-conduit-dev"
+  "deb-libghc-http-types-dev"
+  "deb-libghc-wai-dev"
+  "deb-libgmp10"
+]
+extra-source "libghc-wai-conduit-dev_3.0.0.4-2+b1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/h/haskell-wai-conduit/libghc-wai-conduit-dev_3.0.0.4-2+b1_amd64.deb"
+}

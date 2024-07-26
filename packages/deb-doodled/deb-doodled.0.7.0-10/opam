@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i doodled_0.7.0-10_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r doodled"]
+]
+depends: [
+  "deb-doodle" {= "0.7.0-10"}
+  "deb-gamin"
+  "deb-libc6" {>= "2.15"}
+  "deb-libdoodle1" {>= "0.7.0-6~"}
+  "deb-libextractor3" {>= "1-0.6.0"}
+  ("deb-libgamin0" | "deb- libfam0")
+]
+extra-source "doodled_0.7.0-10_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/doodle/doodled_0.7.0-10_amd64.deb"
+}

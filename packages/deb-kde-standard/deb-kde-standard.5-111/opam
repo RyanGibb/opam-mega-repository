@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i kde-standard_5:111_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r kde-standard"]
+]
+depends: [
+  "deb-akregator" {>= "4-20.08.3"}
+  "deb-ark" {>= "4-20.12.0"}
+  "deb-dragonplayer" {>= "4-20.12.0"}
+  "deb-gwenview" {>= "4-20.12.0"}
+  "deb-juk" {>= "4-20.12.0"}
+  "deb-kaddressbook" {>= "4-20.08.3"}
+  "deb-kate" {>= "4-20.12.0"}
+  "deb-kcalc" {>= "4-20.12.0"}
+  "deb-kde-plasma-desktop" {>= "5-111"}
+  "deb-kde-spectacle" {>= "20.12.0"}
+  "deb-khelpcenter" {>= "4-20.12.0"}
+  "deb-kmail" {>= "4-20.08.3"}
+  "deb-knotes" {>= "4-20.08.3"}
+  "deb-korganizer" {>= "4-20.08.3"}
+  "deb-kwalletmanager" {>= "4-20.12.0"}
+  "deb-okular" {>= "4-20.12.0"}
+  "deb-plasma-dataengines-addons" {>= "4-5.20.5"}
+  "deb-plasma-runners-addons" {>= "4-5.20.5"}
+  "deb-plasma-wallpapers-addons" {>= "4-5.20.5"}
+  "deb-plasma-widgets-addons" {>= "4-5.20.5"}
+  "deb-polkit-kde-agent-1" {>= "4-5.20.5"}
+  "deb-sweeper" {>= "4-20.12.0"}
+  ("deb-plasma-pa" {>= "5.20.5"} | "deb- kmix" {>= "4-20.12.0"})
+]
+extra-source "kde-standard_5:111_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/m/meta-kde/kde-standard_111_amd64.deb"
+}

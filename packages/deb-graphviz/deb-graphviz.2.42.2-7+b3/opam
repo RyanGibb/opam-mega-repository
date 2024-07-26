@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i graphviz_2.42.2-7+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r graphviz"]
+]
+depends: [
+  "deb-libann0" {>= "1.1.2+doc"}
+  "deb-libc6" {>= "2.34"}
+  "deb-libcdt5"
+  "deb-libcgraph6"
+  "deb-libexpat1" {>= "2.0.1"}
+  "deb-libgcc-s1" {>= "3.0"}
+  "deb-libgd3" {>= "2.1.0~alpha~"}
+  "deb-libglib2-0-0" {>= "2.16.0"}
+  "deb-libgts-0-7-5" {>= "0.7.6"}
+  "deb-libgvc6" {>= "2.42.1"}
+  "deb-libgvpr2"
+  "deb-liblab-gamut1"
+  "deb-libstdc++6" {>= "5"}
+  "deb-libx11-6"
+  "deb-libxaw7" {>= "2-1.0.14"}
+  "deb-libxmu6" {>= "2-1.1.3"}
+  "deb-libxt6"
+]
+extra-source "graphviz_2.42.2-7+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/graphviz/graphviz_2.42.2-7+b3_amd64.deb"
+}

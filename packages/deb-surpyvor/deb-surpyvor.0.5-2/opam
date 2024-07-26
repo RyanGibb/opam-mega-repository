@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i surpyvor_0.5-2_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r surpyvor"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-cyvcf2"
+  "deb-python3-matplotlib-venn"
+  "deb-python3-upsetplot"
+  "deb-survivor"
+]
+extra-source "surpyvor_0.5-2_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/s/surpyvor/surpyvor_0.5-2_all.deb"
+}

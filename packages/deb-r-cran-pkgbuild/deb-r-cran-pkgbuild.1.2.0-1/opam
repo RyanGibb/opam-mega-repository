@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i r-cran-pkgbuild_1.2.0-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r r-cran-pkgbuild"]
+]
+depends: [
+  "deb-r-base-core"
+  "deb-r-base-core" {>= "4.0.3-1"}
+  "deb-r-cran-callr" {>= "3.2.0"}
+  "deb-r-cran-cli"
+  "deb-r-cran-crayon"
+  "deb-r-cran-desc"
+  "deb-r-cran-prettyunits"
+  "deb-r-cran-r6"
+  "deb-r-cran-rprojroot"
+  "deb-r-cran-withr" {>= "2.1.2"}
+]
+extra-source "r-cran-pkgbuild_1.2.0-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/r-cran-pkgbuild/r-cran-pkgbuild_1.2.0-1_all.deb"
+}

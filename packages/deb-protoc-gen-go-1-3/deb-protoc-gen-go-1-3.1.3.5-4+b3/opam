@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i protoc-gen-go-1-3_1.3.5-4+b3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r protoc-gen-go-1-3"]
+]
+depends: [
+  "deb-libprotobuf-dev"
+  "deb-protobuf-compiler"
+]
+conflicts: [
+  "deb-protoc-gen-go"
+  "deb-protoc-gen-go-1-5"
+]
+extra-source "protoc-gen-go-1-3_1.3.5-4+b3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/g/golang-github-golang-protobuf-1-3/protoc-gen-go-1-3_1.3.5-4+b3_amd64.deb"
+}

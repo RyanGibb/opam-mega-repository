@@ -1,0 +1,60 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i dolphin_4:20.12.2-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r dolphin"]
+]
+depends: [
+  "deb-baloo-kf5"
+  "deb-kinit"
+  "deb-kio"
+  "deb-libc6" {>= "2.29"}
+  "deb-libdolphinvcs5" {= "4-20.12.2-1"}
+  "deb-libkf5activities5" {>= "5.73.0~"}
+  "deb-libkf5baloo5" {>= "5.73.0~"}
+  "deb-libkf5baloowidgets5" {>= "4-20.04.0~"}
+  "deb-libkf5bookmarks5" {>= "5.73.0~"}
+  "deb-libkf5codecs5" {>= "4.96.0"}
+  "deb-libkf5completion5" {>= "5.73.0~"}
+  "deb-libkf5configcore5" {>= "5.73.0~"}
+  "deb-libkf5configgui5" {>= "5.73.0~"}
+  "deb-libkf5configwidgets5" {>= "5.69.0"}
+  "deb-libkf5coreaddons5" {>= "5.73.0~"}
+  "deb-libkf5crash5" {>= "5.73.0~"}
+  "deb-libkf5dbusaddons5" {>= "5.73.0~"}
+  "deb-libkf5filemetadata3" {>= "5.73.0~"}
+  "deb-libkf5i18n5" {>= "5.73.0~"}
+  "deb-libkf5iconthemes5" {>= "5.73.0~"}
+  "deb-libkf5itemviews5" {>= "4.96.0"}
+  "deb-libkf5jobwidgets5" {>= "5.70.0"}
+  "deb-libkf5kcmutils5" {>= "5.73.0~"}
+  "deb-libkf5kiocore5" {>= "5.77.0"}
+  "deb-libkf5kiofilewidgets5" {>= "5.73.0~"}
+  "deb-libkf5kiogui5" {>= "5.74.0"}
+  "deb-libkf5kiowidgets5" {>= "5.73.0~"}
+  "deb-libkf5newstuff5" {>= "5.73.0~"}
+  "deb-libkf5notifications5" {>= "5.73.0~"}
+  "deb-libkf5parts5" {>= "5.73.0~"}
+  "deb-libkf5service-bin"
+  "deb-libkf5service5" {>= "4.99.0"}
+  "deb-libkf5solid5" {>= "5.74.0"}
+  "deb-libkf5textwidgets5" {>= "5.73.0~"}
+  "deb-libkf5widgetsaddons5" {>= "5.35.0"}
+  "deb-libkf5windowsystem5" {>= "5.73.0~"}
+  "deb-libkf5xmlgui5" {>= "4.98.0"}
+  "deb-libkuserfeedbackcore1" {>= "1.0.0"}
+  "deb-libkuserfeedbackwidgets1" {>= "1.0.0"}
+  "deb-libpackagekitqt5-1" {>= "1.0.2"}
+  "deb-libphonon4qt5-4" {>= "4-4.8.0"}
+  "deb-libqt5core5a" {>= "5.15.1"}
+  "deb-libqt5dbus5" {>= "5.14.0~"}
+  "deb-libqt5widgets5" {>= "5.15.1"}
+  "deb-libqt5xml5" {>= "5.14.0~"}
+  "deb-libstdc++6" {>= "4.6"}
+  "deb-phonon4qt5"
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+]
+extra-source "dolphin_4:20.12.2-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/d/dolphin/dolphin_20.12.2-1_amd64.deb"
+}

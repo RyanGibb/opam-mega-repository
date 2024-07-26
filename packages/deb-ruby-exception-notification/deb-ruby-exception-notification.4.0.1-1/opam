@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i ruby-exception-notification_4.0.1-1_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r ruby-exception-notification"]
+]
+depends: [
+  "deb-ruby"
+  ("deb-ruby-actionmailer" | "deb- ruby-actionmailer-3-2")
+  ("deb-ruby-activesupport" | "deb- ruby-activesupport-3-2")
+]
+extra-source "ruby-exception-notification_4.0.1-1_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/r/ruby-exception-notification/ruby-exception-notification_4.0.1-1_all.deb"
+}

@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i libmail-dmarc-perl_1.20211209-4_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r libmail-dmarc-perl"]
+]
+depends: [
+  "deb-libconfig-tiny-perl"
+  "deb-libdbd-sqlite3-perl"
+  "deb-libdbix-simple-perl"
+  "deb-libemail-mime-perl"
+  "deb-libemail-sender-perl"
+  "deb-libfile-sharedir-perl"
+  "deb-libio-socket-ssl-perl"
+  "deb-libnet-dns-perl"
+  "deb-libnet-idn-encode-perl"
+  "deb-libnet-ip-perl"
+  "deb-libnet-ssleay-perl"
+  "deb-libregexp-common-perl"
+  "deb-libsocket6-perl"
+  "deb-libtest-file-sharedir-perl"
+  "deb-libtest-output-perl"
+  "deb-liburi-perl"
+  "deb-libxml-libxml-perl"
+  "deb-perl-any"
+  "deb-publicsuffix"
+]
+extra-source "libmail-dmarc-perl_1.20211209-4_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/libm/libmail-dmarc-perl/libmail-dmarc-perl_1.20211209-4_all.deb"
+}

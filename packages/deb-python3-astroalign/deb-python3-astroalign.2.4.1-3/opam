@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo dpkg -i python3-astroalign_2.4.1-3_amd64.deb"]
+]
+remove: [
+  ["sh" "-c" "sudo dpkg -r python3-astroalign"]
+]
+depends: [
+  "deb-python3-any"
+  "deb-python3-numpy"
+  "deb-python3-scipy"
+  "deb-python3-sep"
+  "deb-python3-skimage"
+]
+extra-source "python3-astroalign_2.4.1-3_amd64.deb" {
+  src: "http://ftp.debian.org/debian/pool/main/a/astroalign/python3-astroalign_2.4.1-3_all.deb"
+}
