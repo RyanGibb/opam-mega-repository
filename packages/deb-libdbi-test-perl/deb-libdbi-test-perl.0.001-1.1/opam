@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl-any"
-  ("deb-libmodule-pluggable-perl" | "deb- perl" {< "5.17.0"})
+  ("deb-libmodule-pluggable-perl" | "deb-perl" {< "5.17.0"})
 ]
 extra-source "libdbi-test-perl_0.001-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libd/libdbi-test-perl/libdbi-test-perl_0.001-1.1_all.deb"

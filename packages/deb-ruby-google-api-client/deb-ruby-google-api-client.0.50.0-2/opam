@@ -14,7 +14,7 @@ depends: [
   "deb-ruby-retriable" {>= "2.0~"}
   "deb-ruby-rexml"
   "deb-ruby-signet" {>= "0.12~"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-google-api-client_0.50.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-google-api-client/ruby-google-api-client_0.50.0-2_all.deb"

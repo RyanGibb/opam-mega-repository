@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r pd-arraysize"]
 ]
 depends: [
-  ("deb-puredata-core" | "deb- pd")
+  ("deb-puredata-core" | "deb-pd")
 ]
 extra-source "pd-arraysize_0.1-9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pd-arraysize/pd-arraysize_0.1-9_amd64.deb"

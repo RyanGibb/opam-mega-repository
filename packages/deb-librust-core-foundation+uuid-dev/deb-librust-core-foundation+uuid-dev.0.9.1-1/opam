@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-librust-core-foundation-dev" {= "0.9.1-1"}
-  ("deb-librust-uuid-0-8+default-dev" | "deb- librust-uuid-0-7+default-dev")
+  ("deb-librust-uuid-0-8+default-dev" | "deb-librust-uuid-0-7+default-dev")
 ]
 extra-source "librust-core-foundation+uuid-dev_0.9.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-core-foundation/librust-core-foundation+uuid-dev_0.9.1-1_amd64.deb"

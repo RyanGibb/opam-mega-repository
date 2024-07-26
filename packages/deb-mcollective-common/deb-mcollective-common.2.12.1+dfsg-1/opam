@@ -9,7 +9,7 @@ depends: [
   "deb-ruby-json"
   "deb-ruby-stomp" {> "1.2.10-1~"}
   "deb-ruby-systemu"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "mcollective-common_2.12.1+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mcollective/mcollective-common_2.12.1+dfsg-1_all.deb"

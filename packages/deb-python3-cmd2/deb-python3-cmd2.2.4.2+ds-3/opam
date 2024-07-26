@@ -10,8 +10,8 @@ depends: [
   "deb-python3-attr"
   "deb-python3-pyperclip"
   "deb-python3-wcwidth"
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
-  ("deb-python3-typing-extensions" | "deb- python3" {> "3.8"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
+  ("deb-python3-typing-extensions" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-cmd2_2.4.2+ds-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cmd2/python3-cmd2_2.4.2+ds-3_all.deb"

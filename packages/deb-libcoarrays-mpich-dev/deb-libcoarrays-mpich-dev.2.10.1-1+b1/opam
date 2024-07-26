@@ -12,7 +12,7 @@ depends: [
   "deb-libgfortran5" {>= "10"}
   "deb-libmpich12" {>= "4.0.2-3+b1"}
   "deb-mpich"
-  ("deb-gfortran" | "deb- fortran-compiler")
+  ("deb-gfortran" | "deb-fortran-compiler")
 ]
 extra-source "libcoarrays-mpich-dev_2.10.1-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/open-coarrays/libcoarrays-mpich-dev_2.10.1-1+b1_amd64.deb"

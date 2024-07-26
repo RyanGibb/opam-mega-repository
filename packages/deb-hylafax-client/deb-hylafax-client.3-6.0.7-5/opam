@@ -14,7 +14,7 @@ depends: [
   "deb-libtiff6" {>= "4.0.3"}
   "deb-ucf"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-enscript" | "deb- libgnomeprint-data")
+  ("deb-enscript" | "deb-libgnomeprint-data")
 ]
 conflicts: [
   "deb-mgetty-fax"

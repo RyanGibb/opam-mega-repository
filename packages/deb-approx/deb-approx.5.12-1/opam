@@ -11,7 +11,7 @@ depends: [
   "deb-curl"
   "deb-libc6" {>= "2.35"}
   "deb-xz-utils"
-  ("deb-rsyslog" | "deb- system-log-daemon")
+  ("deb-rsyslog" | "deb-system-log-daemon")
 ]
 extra-source "approx_5.12-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/approx/approx_5.12-1_amd64.deb"

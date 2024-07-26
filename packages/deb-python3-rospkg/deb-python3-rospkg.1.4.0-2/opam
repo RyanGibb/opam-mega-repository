@@ -9,7 +9,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-catkin-pkg"
   "deb-python3-yaml"
-  ("deb-python3-distro" | "deb- python3" {< "3.8"})
+  ("deb-python3-distro" | "deb-python3" {< "3.8"})
 ]
 extra-source "python3-rospkg_1.4.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ros-rospkg/python3-rospkg_1.4.0-2_all.deb"

@@ -36,7 +36,7 @@ depends: [
   "deb-octave" {>= "4.4.1"}
   "deb-psychtoolbox-3-common" {= "3.0.15.20190207.dfsg1-1"}
   "deb-psychtoolbox-3-lib" {= "3.0.15.20190207.dfsg1-1"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "octave-psychtoolbox-3_3.0.15.20190207.dfsg1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/psychtoolbox-3/octave-psychtoolbox-3_3.0.15.20190207.dfsg1-1_amd64.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libfreeimage-dev"
   "deb-ruby-inline"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-image-science_1.3.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-image-science/ruby-image-science_1.3.0-1_all.deb"

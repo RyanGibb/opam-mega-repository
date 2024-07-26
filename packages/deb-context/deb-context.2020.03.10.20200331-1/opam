@@ -12,7 +12,7 @@ depends: [
   "deb-texlive-base" {>= "2019"}
   "deb-texlive-binaries" {>= "2019"}
   "deb-texlive-metapost" {>= "2019"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 conflicts: [
   "deb-tetex-bin" {< "2007"}

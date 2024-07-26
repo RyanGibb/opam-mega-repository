@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl"
-  ("deb-libyaml-perl" {>= "0.67"} | "deb- libyaml-syck-perl")
+  ("deb-libyaml-perl" {>= "0.67"} | "deb-libyaml-syck-perl")
 ]
 conflicts: [
   "deb-libyaml-perl" {< "0.67"}

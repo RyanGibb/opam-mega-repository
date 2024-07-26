@@ -13,7 +13,7 @@ depends: [
   "deb-libqt5core5a"
   "deb-libqt5core5a" {>= "5.15.1"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.9.0~beta"} | "deb- libqt5gui5-gles" {>= "5.9.0~beta"})
+  ("deb-libqt5gui5" {>= "5.9.0~beta"} | "deb-libqt5gui5-gles" {>= "5.9.0~beta"})
 ]
 extra-source "hime-qt5-immodule_0.9.11+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/hime/hime-qt5-immodule_0.9.11+dfsg-2_amd64.deb"

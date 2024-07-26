@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-ya2yaml"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-ya2yaml_0.31-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-ya2yaml/ruby-ya2yaml_0.31-1.1_all.deb"

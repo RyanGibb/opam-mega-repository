@@ -18,7 +18,7 @@ depends: [
   "deb-libvorbisfile3" {>= "1.2.0"}
   "deb-libxrandr2"
   "deb-torcs-data" {>= "1.3.7+dfsg"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "torcs_1.3.7+dfsg-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/torcs/torcs_1.3.7+dfsg-5_amd64.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-gedit" {>= "3.12"}
   "deb-python3-any"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
   ("deb-exuberant-ctags" | "deb-universal-ctags")
 ]
 extra-source "gedit-source-code-browser-plugin_3.0.3-6_amd64.deb" {

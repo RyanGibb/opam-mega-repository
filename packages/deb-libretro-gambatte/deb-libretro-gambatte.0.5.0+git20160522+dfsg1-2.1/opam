@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.14"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-retroarch" | "deb- libretro-frontend")
+  ("deb-retroarch" | "deb-libretro-frontend")
 ]
 extra-source "libretro-gambatte_0.5.0+git20160522+dfsg1-2.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libr/libretro-gambatte/libretro-gambatte_0.5.0+git20160522+dfsg1-2.1_amd64.deb"

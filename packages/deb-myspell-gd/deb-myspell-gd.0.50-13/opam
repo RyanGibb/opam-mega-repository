@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r myspell-gd"]
 ]
 depends: [
-  ("deb-dictionaries-common" {>= "0.10"} | "deb- openoffice-org-updatedicts")
+  ("deb-dictionaries-common" {>= "0.10"} | "deb-openoffice-org-updatedicts")
 ]
 conflicts: [
   "deb-openoffice-org" {<= "1.0.3-2"}

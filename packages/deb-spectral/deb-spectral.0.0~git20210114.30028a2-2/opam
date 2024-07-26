@@ -26,8 +26,8 @@ depends: [
   "deb-qml-module-qtmultimedia" {>= "5.12"}
   "deb-qml-module-qtquick-controls2" {>= "5.12"}
   "deb-qml-module-qtquick-layouts" {>= "5.12"}
-  ("deb-libqt5gui5" {>= "5.12"} | "deb- libqt5gui5-gles" {>= "5.12"})
-  ("deb-libqt5quick5" {>= "5.6.0~beta"} | "deb- libqt5quick5-gles" {>= "5.6.0~beta"})
+  ("deb-libqt5gui5" {>= "5.12"} | "deb-libqt5gui5-gles" {>= "5.12"})
+  ("deb-libqt5quick5" {>= "5.6.0~beta"} | "deb-libqt5quick5-gles" {>= "5.6.0~beta"})
 ]
 extra-source "spectral_0.0~git20210114.30028a2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/spectral/spectral_0.0~git20210114.30028a2-2_amd64.deb"

@@ -16,7 +16,7 @@ depends: [
   "deb-libgtkglext1"
   "deb-libpoppler-glib8" {>= "0.18.0"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "pdfcube_0.0.5-2+b5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pdfcube/pdfcube_0.0.5-2+b5_amd64.deb"

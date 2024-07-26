@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-nokogiri" {>= "1.5"}
   "deb-ruby-tdiff" {>= "0.3.2"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-nokogiri-diff_0.2.0-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-nokogiri-diff/ruby-nokogiri-diff_0.2.0-1.1_all.deb"

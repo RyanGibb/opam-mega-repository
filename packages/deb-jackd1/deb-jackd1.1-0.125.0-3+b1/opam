@@ -18,8 +18,8 @@ depends: [
   "deb-libstdc++6" {>= "5"}
   "deb-libzita-alsa-pcmi0" {>= "0.2.0"}
   "deb-libzita-resampler1"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 conflicts: [
   "deb-jack-daemon"

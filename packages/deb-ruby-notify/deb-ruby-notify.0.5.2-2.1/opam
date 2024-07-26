@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libnotify-bin"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-notify_0.5.2-2.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-notify/ruby-notify_0.5.2-2.1_all.deb"

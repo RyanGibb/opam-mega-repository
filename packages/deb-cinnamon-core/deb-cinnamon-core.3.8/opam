@@ -14,7 +14,7 @@ depends: [
   "deb-desktop-base"
   "deb-muffin" {>= "3.8"}
   "deb-nemo" {>= "3.8"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "cinnamon-core_3.8_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cinnamon-desktop-environment/cinnamon-core_3.8_all.deb"

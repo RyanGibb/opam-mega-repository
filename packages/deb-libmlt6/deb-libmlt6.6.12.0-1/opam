@@ -41,7 +41,7 @@ depends: [
   "deb-libswscale5" {>= "7-4.0"}
   "deb-libx11-6"
   "deb-libxml2" {>= "2.7.4"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 conflicts: [
   "deb-libmlt0-2"

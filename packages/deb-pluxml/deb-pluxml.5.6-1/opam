@@ -9,7 +9,7 @@ depends: [
   "deb-php"
   "deb-php-xml"
   "deb-ucf"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "pluxml_5.6-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pluxml/pluxml_5.6-1_all.deb"

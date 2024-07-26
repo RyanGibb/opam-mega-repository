@@ -11,8 +11,8 @@ depends: [
   "deb-devscripts"
   "deb-lintian"
   "deb-quilt"
-  ("deb-dput-ng" | "deb- dput" | "deb- dupload")
-  ("deb-sbuild" | "deb- cowbuilder" | "deb- pbuilder")
+  ("deb-dput-ng" | "deb-dput" | "deb-dupload")
+  ("deb-sbuild" | "deb-cowbuilder" | "deb-pbuilder")
 ]
 extra-source "packaging-dev_0.8.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/packaging-dev/packaging-dev_0.8.2_all.deb"

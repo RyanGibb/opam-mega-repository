@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-simpleidn"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-dnsruby_1.61.5-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dnsruby/ruby-dnsruby_1.61.5-3_all.deb"

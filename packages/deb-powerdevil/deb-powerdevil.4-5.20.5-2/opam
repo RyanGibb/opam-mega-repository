@@ -43,7 +43,7 @@ depends: [
   "deb-libxcb-randr0" {>= "1.3"}
   "deb-libxcb1"
   "deb-powerdevil-data" {= "4-5.20.5-2"}
-  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb- libqt5gui5-gles" {>= "5.15.0~"})
+  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb-libqt5gui5-gles" {>= "5.15.0~"})
 ]
 extra-source "powerdevil_4:5.20.5-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/powerdevil/powerdevil_5.20.5-2_amd64.deb"

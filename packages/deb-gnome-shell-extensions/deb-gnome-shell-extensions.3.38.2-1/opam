@@ -17,7 +17,7 @@ depends: [
   "deb-gnome-shell" {< "3.39"}
   "deb-gnome-shell" {>= "3.38"}
   "deb-gvfs" {>= "1.16.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-shell-extensions_3.38.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-shell-extensions/gnome-shell-extensions_3.38.2-1_all.deb"

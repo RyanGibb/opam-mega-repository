@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-diaspora-prosody-config"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-diaspora-prosody-config_0.0.7-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-diaspora-prosody-config/ruby-diaspora-prosody-config_0.0.7-1_all.deb"

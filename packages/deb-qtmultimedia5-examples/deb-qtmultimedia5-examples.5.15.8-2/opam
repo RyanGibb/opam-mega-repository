@@ -18,8 +18,8 @@ depends: [
   "deb-qml-module-qt-labs-folderlistmodel"
   "deb-qml-module-qtmultimedia" {= "5.15.8-2"}
   "deb-qml-module-qtquick2"
-  ("deb-libqt5gui5" {>= "5.15.8+dfsg~"} | "deb- libqt5gui5-gles" {>= "5.15.8+dfsg~"})
-  ("deb-libqt5quick5" {>= "5.15.8+dfsg~"} | "deb- libqt5quick5-gles" {>= "5.15.8+dfsg~"})
+  ("deb-libqt5gui5" {>= "5.15.8+dfsg~"} | "deb-libqt5gui5-gles" {>= "5.15.8+dfsg~"})
+  ("deb-libqt5quick5" {>= "5.15.8+dfsg~"} | "deb-libqt5quick5-gles" {>= "5.15.8+dfsg~"})
 ]
 extra-source "qtmultimedia5-examples_5.15.8-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtmultimedia-opensource-src/qtmultimedia5-examples_5.15.8-2_amd64.deb"

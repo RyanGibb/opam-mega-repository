@@ -11,8 +11,8 @@ depends: [
   "deb-libdee-1-0-4" {>= "1.2.7+15.04.20150304"}
   "deb-libglib2-0-0" {>= "2.43.92"}
   "deb-libunity-protocol-private0" {= "7.1.4+19.04.20190319-6+b1"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-libunity-scopes-json-def-desktop" {>= "7.1.4+19.04.20190319-6"} | "deb- unity-scopes-json-def")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-libunity-scopes-json-def-desktop" {>= "7.1.4+19.04.20190319-6"} | "deb-unity-scopes-json-def")
 ]
 extra-source "libunity9_7.1.4+19.04.20190319-6+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libu/libunity/libunity9_7.1.4+19.04.20190319-6+b1_amd64.deb"

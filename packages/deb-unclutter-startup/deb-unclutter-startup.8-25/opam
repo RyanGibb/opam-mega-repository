@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r unclutter-startup"]
 ]
 depends: [
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "unclutter-startup_8-25_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/unclutter/unclutter-startup_8-25_all.deb"

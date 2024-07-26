@@ -26,8 +26,8 @@ depends: [
   "deb-python2-7-any"
   "deb-uuid-runtime"
   "deb-xfsprogs"
-  ("deb-cryptsetup-bin" | "deb- cryptsetup")
-  ("deb-hdparm" | "deb- sdparm")
+  ("deb-cryptsetup-bin" | "deb-cryptsetup")
+  ("deb-hdparm" | "deb-sdparm")
 ]
 extra-source "ceph-base_12.2.11+dfsg1-2.1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/ceph/ceph-base_12.2.11+dfsg1-2.1+b1_amd64.deb"

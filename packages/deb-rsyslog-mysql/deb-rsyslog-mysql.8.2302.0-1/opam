@@ -11,7 +11,7 @@ depends: [
   "deb-libmariadb3" {>= "3.0.0"}
   "deb-rsyslog" {= "8.2302.0-1"}
   "deb-ucf"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "rsyslog-mysql_8.2302.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rsyslog/rsyslog-mysql_8.2302.0-1_amd64.deb"

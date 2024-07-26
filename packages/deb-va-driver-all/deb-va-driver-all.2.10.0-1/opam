@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-mesa-va-drivers"
-  ("deb-i965-va-driver" | "deb- i965-va-driver-shaders")
-  ("deb-intel-media-va-driver" | "deb- intel-media-va-driver-non-free")
+  ("deb-i965-va-driver" | "deb-i965-va-driver-shaders")
+  ("deb-intel-media-va-driver" | "deb-intel-media-va-driver-non-free")
 ]
 extra-source "va-driver-all_2.10.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libv/libva/va-driver-all_2.10.0-1_amd64.deb"

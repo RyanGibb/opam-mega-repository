@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl"
-  ("deb-fping" | "deb- iputils-ping" | "deb- netbase" | "deb- dhcp-client" | "deb- isc-dhcp-client")
+  ("deb-fping" | "deb-iputils-ping" | "deb-netbase" | "deb-dhcp-client" | "deb-isc-dhcp-client")
 ]
 extra-source "whereami_0.3.34-0.5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/whereami/whereami_0.3.34-0.5_all.deb"

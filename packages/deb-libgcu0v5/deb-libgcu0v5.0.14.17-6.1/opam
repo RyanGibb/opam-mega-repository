@@ -24,7 +24,7 @@ depends: [
   "deb-libstdc++6" {>= "11"}
   "deb-libx11-6"
   "deb-libxml2" {>= "2.7.4"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 conflicts: [
   "deb-libgcu0"

@@ -16,8 +16,8 @@ depends: [
   "deb-libqt5webengine-data" {= "5.15.2+dfsg-3"}
   "deb-libqt5webenginecore5" {>= "5.15.1"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.15.2+dfsg~"} | "deb- libqt5gui5-gles" {>= "5.15.2+dfsg~"})
-  ("deb-libqt5quick5" {>= "5.15.2+dfsg~"} | "deb- libqt5quick5-gles" {>= "5.15.2+dfsg~"})
+  ("deb-libqt5gui5" {>= "5.15.2+dfsg~"} | "deb-libqt5gui5-gles" {>= "5.15.2+dfsg~"})
+  ("deb-libqt5quick5" {>= "5.15.2+dfsg~"} | "deb-libqt5quick5-gles" {>= "5.15.2+dfsg~"})
 ]
 extra-source "libqt5webengine5_5.15.2+dfsg-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtwebengine-opensource-src/libqt5webengine5_5.15.2+dfsg-3_amd64.deb"

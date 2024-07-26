@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libjs-underscore"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-rails-assets-underscore_1.8.3+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-rails-assets-underscore/ruby-rails-assets-underscore_1.8.3+dfsg-1_all.deb"

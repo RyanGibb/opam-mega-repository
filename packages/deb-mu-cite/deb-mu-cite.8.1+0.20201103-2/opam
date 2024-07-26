@@ -10,7 +10,7 @@ depends: [
   "deb-emacsen-common" {>= "2.0.8"}
   "deb-flim"
   "deb-make"
-  ("deb-emacs-nox" | "deb- emacs" | "deb- emacs25" | "deb- emacs24" | "deb- emacs-snapshot")
+  ("deb-emacs-nox" | "deb-emacs" | "deb-emacs25" | "deb-emacs24" | "deb-emacs-snapshot")
 ]
 extra-source "mu-cite_8.1+0.20201103-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mu-cite/mu-cite_8.1+0.20201103-2_all.deb"

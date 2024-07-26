@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r librasqal3-doc"]
 ]
 depends: [
-  ("deb-lynx" | "deb- www-browser")
+  ("deb-lynx" | "deb-www-browser")
 ]
 extra-source "librasqal3-doc_0.9.33-0.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rasqal/librasqal3-doc_0.9.33-0.1_all.deb"

@@ -10,7 +10,7 @@ depends: [
   "deb-libfile-temp-perl"
   "deb-m4"
   "deb-perl"
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 extra-source "autoconf2.13_2.13-69_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/autoconf2.13/autoconf2.13_2.13-69_all.deb"

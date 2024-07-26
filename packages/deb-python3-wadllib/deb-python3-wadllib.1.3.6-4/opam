@@ -9,7 +9,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-lazr-uri"
   "deb-python3-pkg-resources"
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-wadllib_1.3.6-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-wadllib/python3-wadllib_1.3.6-4_all.deb"

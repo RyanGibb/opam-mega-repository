@@ -9,7 +9,7 @@ depends: [
   "deb-dnsutils"
   "deb-libsort-naturally-perl"
   "deb-sensible-utils"
-  ("deb-vim" | "deb- editor")
+  ("deb-vim" | "deb-editor")
 ]
 extra-source "dnsvi_1.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dnsvi/dnsvi_1.2_all.deb"

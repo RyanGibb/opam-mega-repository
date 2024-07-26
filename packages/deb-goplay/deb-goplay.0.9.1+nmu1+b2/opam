@@ -18,7 +18,7 @@ depends: [
   "deb-libx11-6"
   "deb-libxapian30"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-debtags" {>= "1.12.2"} | "deb- debtags" {<= "1.12"})
+  ("deb-debtags" {>= "1.12.2"} | "deb-debtags" {<= "1.12"})
 ]
 conflicts: [
   "deb-golearn"

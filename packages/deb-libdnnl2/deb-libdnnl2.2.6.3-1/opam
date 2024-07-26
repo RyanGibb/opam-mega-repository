@@ -10,8 +10,8 @@ depends: [
   "deb-libgcc-s1" {>= "3.4"}
   "deb-libgomp1" {>= "4.9"}
   "deb-libstdc++6" {>= "12.2.0-10"}
-  ("deb-ocl-icd-libopencl1" {>= "1.0"} | "deb- libopencl-1-2-1")
-  ("deb-ocl-icd-libopencl1" | "deb- libopencl1")
+  ("deb-ocl-icd-libopencl1" {>= "1.0"} | "deb-libopencl-1-2-1")
+  ("deb-ocl-icd-libopencl1" | "deb-libopencl1")
 ]
 extra-source "libdnnl2_2.6.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/onednn/libdnnl2_2.6.3-1_amd64.deb"

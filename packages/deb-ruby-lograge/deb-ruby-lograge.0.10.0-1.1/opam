@@ -10,7 +10,7 @@ depends: [
   "deb-ruby-activesupport" {>= "4"}
   "deb-ruby-railties" {>= "4"}
   "deb-ruby-request-store"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-lograge_0.10.0-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-lograge/ruby-lograge_0.10.0-1.1_all.deb"

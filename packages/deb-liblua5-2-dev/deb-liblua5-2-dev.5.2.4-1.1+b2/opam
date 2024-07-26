@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-liblua5-2-0" {= "5.2.4-1.1+b2"}
   "deb-libreadline-dev"
-  ("deb-libc6-dev" | "deb- libc-dev")
+  ("deb-libc6-dev" | "deb-libc-dev")
 ]
 extra-source "liblua5.2-dev_5.2.4-1.1+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lua5.2/liblua5.2-dev_5.2.4-1.1+b2_amd64.deb"

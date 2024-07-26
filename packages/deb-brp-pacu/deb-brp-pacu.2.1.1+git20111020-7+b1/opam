@@ -11,7 +11,7 @@ depends: [
   "deb-libglib2-0-0" {>= "2.31.8"}
   "deb-libgtk2-0-0" {>= "2.12.0"}
   "deb-libgtkdatabox0" {>= "0.9.3.1"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "brp-pacu_2.1.1+git20111020-7+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/brp-pacu/brp-pacu_2.1.1+git20111020-7+b1_amd64.deb"

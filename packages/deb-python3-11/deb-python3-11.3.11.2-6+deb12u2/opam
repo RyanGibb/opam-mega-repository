@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libpython3-11-stdlib" {= "3.11.2-6+deb12u2"}
   "deb-python3-11-minimal" {= "3.11.2-6+deb12u2"}
-  ("deb-media-types" | "deb- mime-support")
+  ("deb-media-types" | "deb-mime-support")
 ]
 extra-source "python3.11_3.11.2-6+deb12u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python3.11/python3.11_3.11.2-6+deb12u2_amd64.deb"

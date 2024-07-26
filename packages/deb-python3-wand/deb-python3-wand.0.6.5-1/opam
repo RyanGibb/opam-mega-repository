@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-python3-any"
-  ("deb-libmagickwand-6-q16-6" | "deb- libmagickwand-6-q16hdri-6")
+  ("deb-libmagickwand-6-q16-6" | "deb-libmagickwand-6-q16hdri-6")
 ]
 extra-source "python3-wand_0.6.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/wand/python3-wand_0.6.5-1_all.deb"

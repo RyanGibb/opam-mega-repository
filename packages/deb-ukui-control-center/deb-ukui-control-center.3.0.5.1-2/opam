@@ -59,9 +59,9 @@ depends: [
   "deb-qml-module-qtgraphicaleffects"
   "deb-qml-module-qtquick-controls"
   "deb-qt5-image-formats-plugins"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
-  ("deb-libqt5quick5" {>= "5.9.0~beta"} | "deb- libqt5quick5-gles" {>= "5.9.0~beta"})
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5quick5" {>= "5.9.0~beta"} | "deb-libqt5quick5-gles" {>= "5.9.0~beta"})
 ]
 extra-source "ukui-control-center_3.0.5.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/ukui-control-center/ukui-control-center_3.0.5.1-2_amd64.deb"

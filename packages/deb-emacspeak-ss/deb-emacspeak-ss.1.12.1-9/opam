@@ -12,7 +12,7 @@ depends: [
   "deb-perl-any"
   "deb-tcl"
   "deb-tclx8-4"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "emacspeak-ss_1.12.1-9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/emacspeak-ss/emacspeak-ss_1.12.1-9_amd64.deb"

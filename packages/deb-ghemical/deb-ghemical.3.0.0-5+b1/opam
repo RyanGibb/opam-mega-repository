@@ -20,7 +20,7 @@ depends: [
   "deb-libpango-1-0-0" {>= "1.14.0"}
   "deb-libstdc++6" {>= "9"}
   "deb-mpqc"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "ghemical_3.0.0-5+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/ghemical/ghemical_3.0.0-5+b1_amd64.deb"

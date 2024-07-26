@@ -14,7 +14,7 @@ depends: [
   "deb-libreadline8" {>= "6.0"}
   "deb-libstdc++6" {>= "5"}
   "deb-libtinfo6" {>= "6"}
-  ("deb-libgamin0" | "deb- libfam0")
+  ("deb-libgamin0" | "deb-libfam0")
 ]
 extra-source "apachetop_0.19.7-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/apachetop/apachetop_0.19.7-3_amd64.deb"

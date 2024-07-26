@@ -58,9 +58,9 @@ depends: [
   "deb-libuuid1" {>= "2.16"}
   "deb-libx11-6"
   "deb-ruby"
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-libglu1-mesa" | "deb- libglu1")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-libglu1-mesa" | "deb-libglu1")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "gazebo9_9.6.0-1+b11_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gazebo/gazebo9_9.6.0-1+b11_amd64.deb"

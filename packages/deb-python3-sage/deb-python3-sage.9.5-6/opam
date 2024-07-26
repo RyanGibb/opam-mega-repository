@@ -187,7 +187,7 @@ depends: [
   "deb-xz-utils"
   "deb-yasm"
   "deb-zlib1g-dev"
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "python3-sage_9.5-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sagemath/python3-sage_9.5-6_amd64.deb"

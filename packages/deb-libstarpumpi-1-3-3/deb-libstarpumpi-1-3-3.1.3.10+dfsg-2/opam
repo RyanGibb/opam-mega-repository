@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.34"}
   "deb-libopenmpi3" {>= "4.1.4"}
-  ("deb-libstarpu-1-3-9" {>= "1.3.3+dfsg~"} | "deb- libstarpu-any-1-3-9")
+  ("deb-libstarpu-1-3-9" {>= "1.3.3+dfsg~"} | "deb-libstarpu-any-1-3-9")
 ]
 conflicts: [
   "deb-libstarpu-contribmpi-1-3-3"

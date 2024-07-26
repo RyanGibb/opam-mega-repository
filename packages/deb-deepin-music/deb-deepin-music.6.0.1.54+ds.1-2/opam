@@ -38,7 +38,7 @@ depends: [
   "deb-libvlc5" {>= "2.2.0~pre1"}
   "deb-libvlccore9" {>= "2.0.0"}
   "deb-vlc-plugin-base"
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "deepin-music_6.0.1.54+ds.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/deepin-music/deepin-music_6.0.1.54+ds.1-2_amd64.deb"

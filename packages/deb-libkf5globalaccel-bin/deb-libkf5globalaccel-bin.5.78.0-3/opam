@@ -20,7 +20,7 @@ depends: [
   "deb-libxcb-keysyms1" {>= "0.4.0"}
   "deb-libxcb-xkb1"
   "deb-libxcb1"
-  ("deb-libqt5gui5" {>= "5.14.0~"} | "deb- libqt5gui5-gles" {>= "5.14.0~"})
+  ("deb-libqt5gui5" {>= "5.14.0~"} | "deb-libqt5gui5-gles" {>= "5.14.0~"})
 ]
 extra-source "libkf5globalaccel-bin_5.78.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kglobalaccel/libkf5globalaccel-bin_5.78.0-3_amd64.deb"

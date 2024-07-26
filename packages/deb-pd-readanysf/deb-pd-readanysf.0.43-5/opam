@@ -11,7 +11,7 @@ depends: [
   "deb-libgcc-s1" {>= "3.0"}
   "deb-libgmerlin-avdec2" {>= "1.0.0"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-puredata" | "deb- pd")
+  ("deb-puredata" | "deb-pd")
 ]
 extra-source "pd-readanysf_0.43-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pd-readanysf/pd-readanysf_0.43-5_amd64.deb"

@@ -24,7 +24,7 @@ depends: [
   "deb-libsecret-1-0" {>= "0.7"}
   "deb-libudisks2-0" {>= "2.7.6"}
   "deb-udisks2" {>= "2.7.6"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-disk-utility_43.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-disk-utility/gnome-disk-utility_43.0-1_amd64.deb"

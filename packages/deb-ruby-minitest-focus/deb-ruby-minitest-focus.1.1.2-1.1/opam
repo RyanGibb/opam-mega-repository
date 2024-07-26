@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libruby3-1"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-minitest-focus_1.1.2-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-minitest-focus/ruby-minitest-focus_1.1.2-1.1_all.deb"

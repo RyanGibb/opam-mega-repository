@@ -11,7 +11,7 @@ depends: [
   "deb-postfix"
   "deb-progress-linux-base-system"
   "deb-safe-rm"
-  ("deb-molly-guard" | "deb- progress-linux-container")
+  ("deb-molly-guard" | "deb-progress-linux-container")
 ]
 extra-source "progress-linux-server_20210101-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/progress-linux-metapackages/progress-linux-server_20210101-2_all.deb"

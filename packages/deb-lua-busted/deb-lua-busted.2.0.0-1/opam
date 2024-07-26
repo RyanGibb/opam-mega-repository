@@ -15,7 +15,7 @@ depends: [
   "deb-lua-say"
   "deb-lua-system"
   "deb-lua-term"
-  ("deb-lua5-2" | "deb- lua")
+  ("deb-lua5-2" | "deb-lua")
 ]
 extra-source "lua-busted_2.0.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lua-busted/lua-busted_2.0.0-1_all.deb"

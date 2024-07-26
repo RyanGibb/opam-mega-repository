@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-apache2"
-  ("deb-libapache2-mod-fcgid" | "deb- libapache2-mod-perl2")
+  ("deb-libapache2-mod-fcgid" | "deb-libapache2-mod-perl2")
 ]
 extra-source "rt4-apache2_4.4.4+dfsg-2+deb11u3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/request-tracker4/rt4-apache2_4.4.4+dfsg-2+deb11u3_all.deb"

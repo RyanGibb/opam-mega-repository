@@ -9,7 +9,7 @@ depends: [
   "deb-neovim"
   "deb-ruby-msgpack" {>= "1.0"}
   "deb-ruby-multi-json"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-neovim_0.8.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-neovim/ruby-neovim_0.8.1-1_all.deb"

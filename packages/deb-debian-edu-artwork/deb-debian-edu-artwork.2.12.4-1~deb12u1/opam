@@ -8,8 +8,8 @@ remove: [
 depends: [
   "deb-desktop-base"
   "deb-libconfig-inifiles-perl"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-debian-edu-artwork-emerald" | "deb- debian-edu-artwork-homeworld" | "deb- debian-edu-artwork-buster" | "deb- debian-edu-artwork-futureprototype" | "deb- debian-edu-artwork-softwaves" | "deb- debian-edu-artwork-lines" | "deb- debian-edu-artwork-joy" | "deb- debian-edu-artwork-spacefun")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-debian-edu-artwork-emerald" | "deb-debian-edu-artwork-homeworld" | "deb-debian-edu-artwork-buster" | "deb-debian-edu-artwork-futureprototype" | "deb-debian-edu-artwork-softwaves" | "deb-debian-edu-artwork-lines" | "deb-debian-edu-artwork-joy" | "deb-debian-edu-artwork-spacefun")
 ]
 extra-source "debian-edu-artwork_2.12.4-1~deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/debian-edu-artwork/debian-edu-artwork_2.12.4-1~deb12u1_all.deb"

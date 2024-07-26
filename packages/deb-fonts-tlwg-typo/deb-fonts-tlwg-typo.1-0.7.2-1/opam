@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r fonts-tlwg-typo"]
 ]
 depends: [
-  ("deb-fonts-tlwg-typo-ttf" | "deb- fonts-tlwg-typo-otf")
+  ("deb-fonts-tlwg-typo-ttf" | "deb-fonts-tlwg-typo-otf")
 ]
 extra-source "fonts-tlwg-typo_1:0.7.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fonts-tlwg/fonts-tlwg-typo_0.7.2-1_all.deb"

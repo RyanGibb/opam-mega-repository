@@ -17,7 +17,7 @@ depends: [
   "deb-python3-requests-toolbelt"
   "deb-python3-rich"
   "deb-python3-socks"
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
 ]
 extra-source "httpie_3.2.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/httpie/httpie_3.2.1-1_all.deb"

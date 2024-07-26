@@ -18,7 +18,7 @@ depends: [
   "deb-libtemplate-perl"
   "deb-libtree-simple-perl"
   "deb-rtorrent" {>= "0.7.9"}
-  ("deb-apache2" | "deb- httpd")
+  ("deb-apache2" | "deb-httpd")
 ]
 extra-source "rtpg-www_0.2.11-3.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rtpg/rtpg-www_0.2.11-3.1_all.deb"

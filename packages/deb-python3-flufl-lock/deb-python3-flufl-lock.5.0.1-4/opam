@@ -9,7 +9,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-psutil"
   "deb-python3-public"
-  ("deb-python3-typing-extensions" | "deb- python3" {> "3.8"})
+  ("deb-python3-typing-extensions" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-flufl.lock_5.0.1-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/flufl.lock/python3-flufl.lock_5.0.1-4_all.deb"

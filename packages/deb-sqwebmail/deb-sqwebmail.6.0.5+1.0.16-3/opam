@@ -19,12 +19,12 @@ depends: [
   "deb-libpcre3"
   "deb-maildrop"
   "deb-perl-any"
-  ("deb-apache2" | "deb- httpd-cgi")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-default-mta" | "deb- mail-transport-agent")
-  ("deb-iamerican" | "deb- ispell-dictionary")
-  ("deb-libgamin0" | "deb- libfam0")
-  ("deb-sysvinit-utils" {>= "2.88dsf-50"} | "deb- init-d-script")
+  ("deb-apache2" | "deb-httpd-cgi")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-default-mta" | "deb-mail-transport-agent")
+  ("deb-iamerican" | "deb-ispell-dictionary")
+  ("deb-libgamin0" | "deb-libfam0")
+  ("deb-sysvinit-utils" {>= "2.88dsf-50"} | "deb-init-d-script")
 ]
 extra-source "sqwebmail_6.0.5+1.0.16-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/courier/sqwebmail_6.0.5+1.0.16-3_amd64.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-erlang-mnesia" {= "1-21.2.6+dfsg-1"}
   "deb-libc6" {>= "2.14"}
-  ("deb-erlang-base" {= "1-21.2.6+dfsg-1"} | "deb- erlang-base-hipe" {= "1-21.2.6+dfsg-1"})
+  ("deb-erlang-base" {= "1-21.2.6+dfsg-1"} | "deb-erlang-base-hipe" {= "1-21.2.6+dfsg-1"})
 ]
 extra-source "erlang-runtime-tools_1:21.2.6+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/erlang/erlang-runtime-tools_21.2.6+dfsg-1_amd64.deb"

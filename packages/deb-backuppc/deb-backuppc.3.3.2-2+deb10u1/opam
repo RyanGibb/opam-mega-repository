@@ -19,11 +19,11 @@ depends: [
   "deb-lsb-base"
   "deb-perl-any"
   "deb-ucf"
-  ("deb-apache2" | "deb- httpd")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-default-mta" | "deb- exim4" | "deb- mail-transport-agent")
-  ("deb-iputils-ping" | "deb- inetutils-ping")
-  ("deb-libio-compress-perl" | "deb- libcompress-zlib-perl")
+  ("deb-apache2" | "deb-httpd")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-default-mta" | "deb-exim4" | "deb-mail-transport-agent")
+  ("deb-iputils-ping" | "deb-inetutils-ping")
+  ("deb-libio-compress-perl" | "deb-libcompress-zlib-perl")
 ]
 extra-source "backuppc_3.3.2-2+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/backuppc/backuppc_3.3.2-2+deb10u1_amd64.deb"

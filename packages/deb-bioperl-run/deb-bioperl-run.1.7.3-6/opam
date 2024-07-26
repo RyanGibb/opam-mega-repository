@@ -16,7 +16,7 @@ depends: [
   "deb-libbio-tools-run-remoteblast-perl"
   "deb-libtest-requiresinternet-perl"
   "deb-perl-any"
-  ("deb-hyphy-pt" | "deb- hyphy-mpi")
+  ("deb-hyphy-pt" | "deb-hyphy-mpi")
 ]
 extra-source "bioperl-run_1.7.3-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/bioperl-run/bioperl-run_1.7.3-6_all.deb"

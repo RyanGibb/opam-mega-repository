@@ -17,8 +17,8 @@ depends: [
   "deb-libnet-smtps-perl"
   "deb-libproc-processtable-perl"
   "deb-perl" {>= "5.24"}
-  ("deb-gnupg" | "deb- gnupg1")
-  ("deb-sendmail" | "deb- mail-transport-agent")
+  ("deb-gnupg" | "deb-gnupg1")
+  ("deb-sendmail" | "deb-mail-transport-agent")
 ]
 extra-source "kuvert_2.2.2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kuvert/kuvert_2.2.2+b1_amd64.deb"

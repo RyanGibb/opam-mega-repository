@@ -9,7 +9,7 @@ depends: [
   "deb-autoconf" {> "2.58"}
   "deb-automake" {>= "1.10"}
   "deb-libtool" {> "1.5.8"}
-  ("deb-bsd-mailx" | "deb- mailx")
+  ("deb-bsd-mailx" | "deb-mailx")
 ]
 extra-source "ui-auto_1.2.15-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/ui-auto/ui-auto_1.2.15-1_all.deb"

@@ -19,7 +19,7 @@ depends: [
   "deb-libpango-1-0-0" {>= "1.18.0"}
   "deb-libpangocairo-1-0-0" {>= "1.14.0"}
   "deb-libxml2" {>= "2.7.4"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "minder_1.9.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/minder/minder_1.9.2-1_amd64.deb"

@@ -17,7 +17,7 @@ depends: [
   "deb-liblua5-3-0"
   "deb-liblxi1" {>= "1.8"}
   "deb-libreadline8" {>= "6.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "lxi-tools_2.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lxi-tools/lxi-tools_2.4-1_amd64.deb"

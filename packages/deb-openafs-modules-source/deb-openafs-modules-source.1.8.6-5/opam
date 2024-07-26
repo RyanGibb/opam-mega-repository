@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-debhelper" {>= "8"}
   "deb-perl"
-  ("deb-module-assistant" | "deb- kernel-package")
+  ("deb-module-assistant" | "deb-kernel-package")
 ]
 extra-source "openafs-modules-source_1.8.6-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/openafs/openafs-modules-source_1.8.6-5_all.deb"

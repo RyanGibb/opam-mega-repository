@@ -11,7 +11,7 @@ depends: [
   "deb-libgl1"
   "deb-libglut3-12" {>= "3.4.0"}
   "deb-libstdc++6" {>= "11"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "trend_1.4-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/trend/trend_1.4-3_amd64.deb"

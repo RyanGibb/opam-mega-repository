@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.4"}
-  ("deb-puredata" | "deb- pd")
+  ("deb-puredata" | "deb-pd")
 ]
 extra-source "pd-nusmuk_20151113+repack-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pd-nusmuk/pd-nusmuk_20151113+repack-6_amd64.deb"

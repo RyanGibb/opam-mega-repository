@@ -32,7 +32,7 @@ depends: [
   "deb-libpango-1-0-0" {>= "1.14.0"}
   "deb-libpangocairo-1-0-0" {>= "1.22.0"}
   "deb-nautilus" {>= "3.2"}
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus")
 ]
 extra-source "gnome-sushi_43.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-sushi/gnome-sushi_43.0-2_amd64.deb"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r libquoin-clojure"]
 ]
 depends: [
-  ("deb-libclojure-java" | "deb- libclojure1-8-java")
+  ("deb-libclojure-java" | "deb-libclojure1-8-java")
 ]
 extra-source "libquoin-clojure_0.1.2-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/quoin-clojure/libquoin-clojure_0.1.2-3_all.deb"

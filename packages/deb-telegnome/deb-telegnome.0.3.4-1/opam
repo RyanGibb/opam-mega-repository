@@ -13,7 +13,7 @@ depends: [
   "deb-libglib2-0-0" {>= "2.44"}
   "deb-libgtk-3-0" {>= "3.22"}
   "deb-libuuid1" {>= "2.16"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "telegnome_0.3.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/telegnome/telegnome_0.3.4-1_amd64.deb"

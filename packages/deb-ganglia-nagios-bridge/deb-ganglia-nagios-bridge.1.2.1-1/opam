@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-python"
-  ("deb-icinga2" | "deb- icinga" | "deb- nagios3")
+  ("deb-icinga2" | "deb-icinga" | "deb-nagios3")
 ]
 extra-source "ganglia-nagios-bridge_1.2.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/ganglia-nagios-bridge/ganglia-nagios-bridge_1.2.1-1_amd64.deb"

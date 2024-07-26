@@ -13,7 +13,7 @@ depends: [
   "deb-php-mbstring"
   "deb-php-xml"
   "deb-ucf"
-  ("deb-php-pgsql" | "deb- php-mysql" | "deb- php-sqlite3")
+  ("deb-php-pgsql" | "deb-php-mysql" | "deb-php-sqlite3")
 ]
 extra-source "zabbix-frontend-php_1:6.0.14+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/z/zabbix/zabbix-frontend-php_6.0.14+dfsg-1_all.deb"

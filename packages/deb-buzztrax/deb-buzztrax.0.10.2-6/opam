@@ -50,8 +50,8 @@ depends: [
   "deb-libxkbcommon0" {>= "0.5.0"}
   "deb-libxml2" {>= "2.7.4"}
   "deb-libxrandr2"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-gstreamer1-0-pulseaudio" | "deb- gstreamer1-0-audiosink")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-gstreamer1-0-pulseaudio" | "deb-gstreamer1-0-audiosink")
 ]
 extra-source "buzztrax_0.10.2-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/buzztrax/buzztrax_0.10.2-6_amd64.deb"

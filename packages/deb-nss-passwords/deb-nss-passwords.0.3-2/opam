@@ -10,7 +10,7 @@ depends: [
   "deb-libnspr4" {>= "2-4.9-2~"}
   "deb-libnss3" {>= "2-3.13.4-2~"}
   "deb-libsqlite3-0" {>= "3.25.0"}
-  ("deb-pinentry-curses" | "deb- pinentry")
+  ("deb-pinentry-curses" | "deb-pinentry")
 ]
 extra-source "nss-passwords_0.3-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/nss-passwords/nss-passwords_0.3-2_amd64.deb"

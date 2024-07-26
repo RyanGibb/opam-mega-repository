@@ -22,8 +22,8 @@ depends: [
   "deb-r-cran-nlme"
   "deb-r-cran-sp" {>= "1.0"}
   "deb-r-cran-spdata" {>= "0.2.6.0"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "r-cran-spdep_0.8-1+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-spdep/r-cran-spdep_0.8-1+dfsg-1_amd64.deb"

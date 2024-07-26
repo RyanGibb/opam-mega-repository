@@ -32,7 +32,7 @@ depends: [
   "deb-libxcb1"
   "deb-libxext6"
   "deb-libxv1"
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "libavdevice58_7:4.1.9-0+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/ffmpeg/libavdevice58_4.1.9-0+deb10u1_amd64.deb"

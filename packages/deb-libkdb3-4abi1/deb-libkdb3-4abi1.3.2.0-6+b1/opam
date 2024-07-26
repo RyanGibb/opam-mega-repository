@@ -14,7 +14,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.4.0"}
   "deb-libqt5xml5" {>= "5.4.0"}
   "deb-libstdc++6" {>= "4.5"}
-  ("deb-libqt5gui5" {>= "5.4.0"} | "deb- libqt5gui5-gles" {>= "5.4.0"})
+  ("deb-libqt5gui5" {>= "5.4.0"} | "deb-libqt5gui5-gles" {>= "5.4.0"})
 ]
 extra-source "libkdb3-4abi1_3.2.0-6+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kdb/libkdb3-4abi1_3.2.0-6+b1_amd64.deb"

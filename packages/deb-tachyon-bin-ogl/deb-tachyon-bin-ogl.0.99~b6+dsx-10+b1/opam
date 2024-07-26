@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.34"}
   "deb-libgl1"
   "deb-libx11-6"
-  ("deb-libtachyon-mt-0" {= "0.99~b6+dsx-10+b1"} | "deb- libtachyon")
+  ("deb-libtachyon-mt-0" {= "0.99~b6+dsx-10+b1"} | "deb-libtachyon")
 ]
 extra-source "tachyon-bin-ogl_0.99~b6+dsx-10+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tachyon/tachyon-bin-ogl_0.99~b6+dsx-10+b1_amd64.deb"

@@ -14,7 +14,7 @@ depends: [
   "deb-pluma"
   "deb-pluma-plugins-common"
   "deb-python3-gi"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "pluma-plugin-terminal_1.27.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pluma-plugins/pluma-plugin-terminal_1.27.0-3_amd64.deb"

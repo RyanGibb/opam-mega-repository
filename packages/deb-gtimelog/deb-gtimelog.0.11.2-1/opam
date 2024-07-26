@@ -12,7 +12,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-gi"
   "deb-python3-setuptools"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gtimelog_0.11.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gtimelog/gtimelog_0.11.2-1_all.deb"

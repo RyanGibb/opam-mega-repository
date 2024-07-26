@@ -20,7 +20,7 @@ depends: [
   "deb-libxdamage-dev"
   "deb-libxext-dev"
   "deb-libxfixes-dev"
-  ("deb-libgles2-mesa-dev" {>= "7.1~rc3-1~"} | "deb- libgles2-dev")
+  ("deb-libgles2-mesa-dev" {>= "7.1~rc3-1~"} | "deb-libgles2-dev")
 ]
 extra-source "libcogl-dev_1.22.2-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cogl/libcogl-dev_1.22.2-6_amd64.deb"

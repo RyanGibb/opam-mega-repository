@@ -12,7 +12,7 @@ depends: [
   "deb-libgnutls30" {>= "3.7.5"}
   "deb-libzstd1" {>= "1.5.2"}
   "deb-zlib1g" {>= "1-1.2.3.3"}
-  ("deb-weechat-curses" {= "3.8-1"} | "deb- weechat-headless" {= "3.8-1"})
+  ("deb-weechat-curses" {= "3.8-1"} | "deb-weechat-headless" {= "3.8-1"})
 ]
 extra-source "weechat-plugins_3.8-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/weechat/weechat-plugins_3.8-1_amd64.deb"

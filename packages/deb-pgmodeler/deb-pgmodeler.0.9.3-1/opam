@@ -17,7 +17,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libxml2" {>= "2.7.4"}
   "deb-pgmodeler-common"
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "pgmodeler_0.9.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pgmodeler/pgmodeler_0.9.3-1_amd64.deb"

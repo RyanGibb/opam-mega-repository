@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-facade"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-pathname2_1.8.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-pathname2/ruby-pathname2_1.8.1-1_all.deb"

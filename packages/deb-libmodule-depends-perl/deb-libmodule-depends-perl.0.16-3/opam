@@ -10,7 +10,7 @@ depends: [
   "deb-libenv-sanctify-perl"
   "deb-libfile-chdir-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.13.10"} | "deb- libcpan-meta-perl")
+  ("deb-perl" {>= "5.13.10"} | "deb-libcpan-meta-perl")
 ]
 extra-source "libmodule-depends-perl_0.16-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libm/libmodule-depends-perl/libmodule-depends-perl_0.16-3_all.deb"

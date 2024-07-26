@@ -17,7 +17,7 @@ depends: [
   "deb-libqt5multimediagsttools5"
   "deb-libqt5network5" {>= "5.15.8+dfsg~"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.15.8+dfsg~"} | "deb- libqt5gui5-gles" {>= "5.15.8+dfsg~"})
+  ("deb-libqt5gui5" {>= "5.15.8+dfsg~"} | "deb-libqt5gui5-gles" {>= "5.15.8+dfsg~"})
 ]
 extra-source "libqt5multimedia5-plugins_5.15.8-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtmultimedia-opensource-src/libqt5multimedia5-plugins_5.15.8-2_amd64.deb"

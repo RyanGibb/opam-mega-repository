@@ -21,7 +21,7 @@ depends: [
   "deb-libmono-system4-0-cil" {>= "5.18.0.240"}
   "deb-libpangocairo-1-0-0" {>= "1.46.2"}
   "deb-libsqlite3-0" {>= "3.34.0"}
-  ("deb-libc6" {>= "2.31"} | "deb- libc6-1" {>= "2.31"} | "deb- libc0-1" {>= "2.31"})
+  ("deb-libc6" {>= "2.31"} | "deb-libc6-1" {>= "2.31"} | "deb-libc0-1" {>= "2.31"})
 ]
 extra-source "libhyena-cil_0.5-4.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/hyena/libhyena-cil_0.5-4.1_all.deb"

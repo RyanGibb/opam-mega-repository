@@ -12,7 +12,7 @@ depends: [
   "deb-libjsoncpp-dev"
   "deb-libyaml-dev"
   "deb-libzip-dev"
-  ("deb-libcurl4-openssl-dev" | "deb- libcurl-dev")
+  ("deb-libcurl4-openssl-dev" | "deb-libcurl-dev")
 ]
 extra-source "libignition-fuel-tools1-dev_1.0.0+dfsg4-5+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/ignition-fuel-tools/libignition-fuel-tools1-dev_1.0.0+dfsg4-5+b1_amd64.deb"

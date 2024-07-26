@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ecb"]
 ]
 depends: [
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
-  ("deb-emacs" | "deb- emacsen")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
+  ("deb-emacs" | "deb-emacsen")
 ]
 conflicts: [
   "deb-cedet"

@@ -9,7 +9,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-dnspython"
   "deb-python3-requests"
-  ("deb-python3" {>= "3.2"} | "deb- python3" {< "2.7"} | "deb- python3" {> "2.8"})
+  ("deb-python3" {>= "3.2"} | "deb-python3" {< "2.7"} | "deb-python3" {> "2.8"})
 ]
 extra-source "sublist3r_1.1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sublist3r/sublist3r_1.1-3_all.deb"

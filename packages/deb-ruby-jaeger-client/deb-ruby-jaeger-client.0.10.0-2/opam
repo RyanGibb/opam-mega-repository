@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-opentracing" {>= "0.3"}
   "deb-ruby-thrift"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-jaeger-client_0.10.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-jaeger-client/ruby-jaeger-client_0.10.0-2_all.deb"

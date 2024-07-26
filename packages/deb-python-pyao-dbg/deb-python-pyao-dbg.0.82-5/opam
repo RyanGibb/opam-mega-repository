@@ -11,7 +11,7 @@ depends: [
   "deb-python-dbg" {< "2.8"}
   "deb-python-dbg" {>= "2.6.6-3~"}
   "deb-python-pyao" {= "0.82-5"}
-  ("deb-python2-7-dbg" | "deb- python2-6-dbg")
+  ("deb-python2-7-dbg" | "deb-python2-6-dbg")
 ]
 extra-source "python-pyao-dbg_0.82-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pyao/python-pyao-dbg_0.82-5_amd64.deb"

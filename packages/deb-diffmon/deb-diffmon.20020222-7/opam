@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-bash" {>= "2.0"}
-  ("deb-default-mta" | "deb- mail-transport-agent")
+  ("deb-default-mta" | "deb-mail-transport-agent")
 ]
 extra-source "diffmon_20020222-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/diffmon/diffmon_20020222-7_all.deb"

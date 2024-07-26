@@ -33,7 +33,7 @@ depends: [
   "deb-libuuid1" {>= "2.20.1"}
   "deb-libwnck-3-0" {>= "3.4.7"}
   "deb-libx11-6"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "budgie-core_10.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/budgie-desktop/budgie-core_10.5-1_amd64.deb"

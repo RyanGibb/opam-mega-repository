@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libcxxtools9v5" {= "2.2.1-2"}
-  ("deb-libstdc++6-4-6-dev" | "deb- libstdc++-dev")
+  ("deb-libstdc++6-4-6-dev" | "deb-libstdc++-dev")
 ]
 extra-source "libcxxtools-dev_2.2.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cxxtools/libcxxtools-dev_2.2.1-2_amd64.deb"

@@ -20,7 +20,7 @@ depends: [
   "deb-libpixman-1-0" {>= "0.30.0"}
   "deb-libwnck-3-0" {>= "3.4.0"}
   "deb-libx11-6"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "notify-osd_0.9.35+15.04.20150126-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/notify-osd/notify-osd_0.9.35+15.04.20150126-3_amd64.deb"

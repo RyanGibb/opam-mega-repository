@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libxmlbeans-java" {>= "3.0.2-1"}
-  ("deb-default-jre-headless" | "deb- java2-runtime-headless")
+  ("deb-default-jre-headless" | "deb-java2-runtime-headless")
 ]
 extra-source "xmlbeans_3.0.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xmlbeans/xmlbeans_3.0.2-1_all.deb"

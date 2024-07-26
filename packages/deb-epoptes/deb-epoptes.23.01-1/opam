@@ -23,9 +23,9 @@ depends: [
   "deb-socat"
   "deb-x11vnc"
   "deb-xterm"
-  ("deb-iproute2" | "deb- iproute")
-  ("deb-notification-daemon" | "deb- xfce4-notifyd")
-  ("deb-xvnc4viewer" | "deb- tigervnc-viewer" | "deb- ssvnc" | "deb- xtightvncviewer" | "deb- vnc-viewer" | "deb- realvnc-vnc-viewer")
+  ("deb-iproute2" | "deb-iproute")
+  ("deb-notification-daemon" | "deb-xfce4-notifyd")
+  ("deb-xvnc4viewer" | "deb-tigervnc-viewer" | "deb-ssvnc" | "deb-xtightvncviewer" | "deb-vnc-viewer" | "deb-realvnc-vnc-viewer")
 ]
 extra-source "epoptes_23.01-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/epoptes/epoptes_23.01-1_all.deb"

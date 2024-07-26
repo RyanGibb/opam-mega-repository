@@ -16,7 +16,7 @@ depends: [
   "deb-libmono-i18n4-0-all" {>= "4.0"}
   "deb-libmono-posix4-0-cil" {>= "4.0"}
   "deb-mono-runtime" {>= "4.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-subtitles_1.8-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-subtitles/gnome-subtitles_1.8-1_amd64.deb"

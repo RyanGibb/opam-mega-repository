@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.27"}
-  ("deb-puredata-core" | "deb- pd")
+  ("deb-puredata-core" | "deb-pd")
 ]
 extra-source "pd-comport_0.2-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pd-comport/pd-comport_0.2-4_amd64.deb"

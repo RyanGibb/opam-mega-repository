@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libjs-jquery" {>= "3.3.1~"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-rails-assets-jquery_3.3.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-rails-assets-jquery/ruby-rails-assets-jquery_3.3.1-1_all.deb"

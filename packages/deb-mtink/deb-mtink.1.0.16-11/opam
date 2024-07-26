@@ -10,7 +10,7 @@ depends: [
   "deb-libx11-6"
   "deb-libxm4" {>= "2.3.4"}
   "deb-libxt6"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "mtink_1.0.16-11_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mtink/mtink_1.0.16-11_amd64.deb"

@@ -17,8 +17,8 @@ depends: [
   "deb-python3-numpy"
   "deb-python3-numpy" {>= "1-1.22.0"}
   "deb-python3-scipy"
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "python3-getfem_5.4.2+dfsg1-3+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/getfem/python3-getfem_5.4.2+dfsg1-3+b1_amd64.deb"

@@ -56,9 +56,9 @@ depends: [
   "deb-php-symfony-console" {< "4~~"}
   "deb-php-symfony-console" {>= "3.3"}
   "deb-php-xml"
-  ("deb-dbconfig-sqlite3" | "deb- dbconfig-pgsql" | "deb- dbconfig-mysql" | "deb- dbconfig-no-thanks")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-php-sqlite3" | "deb- php-pgsql" | "deb- php-mysql")
+  ("deb-dbconfig-sqlite3" | "deb-dbconfig-pgsql" | "deb-dbconfig-mysql" | "deb-dbconfig-no-thanks")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-php-sqlite3" | "deb-php-pgsql" | "deb-php-mysql")
 ]
 extra-source "movim_0.14.1-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/movim/movim_0.14.1-5_all.deb"

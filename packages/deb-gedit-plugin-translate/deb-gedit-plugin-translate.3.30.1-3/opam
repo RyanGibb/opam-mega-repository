@@ -14,7 +14,7 @@ depends: [
   "deb-gir1-2-peas-1-0"
   "deb-python3-any"
   "deb-python3-gi"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gedit-plugin-translate_3.30.1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gedit-plugins/gedit-plugin-translate_3.30.1-3_amd64.deb"

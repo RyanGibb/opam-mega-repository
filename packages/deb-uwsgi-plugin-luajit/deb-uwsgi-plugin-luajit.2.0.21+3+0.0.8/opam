@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.14"}
   "deb-uwsgi-core"
-  ("deb-libluajit-5-1-2" {>= "2.0.4+dfsg"} | "deb- libluajit2-5-1-2" {>= "2.1~"})
+  ("deb-libluajit-5-1-2" {>= "2.0.4+dfsg"} | "deb-libluajit2-5-1-2" {>= "2.1~"})
 ]
 extra-source "uwsgi-plugin-luajit_2.0.21+3+0.0.8_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/uwsgi-plugin-luajit/uwsgi-plugin-luajit_2.0.21+3+0.0.8_amd64.deb"

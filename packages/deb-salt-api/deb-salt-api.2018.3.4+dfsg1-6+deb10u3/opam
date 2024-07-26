@@ -9,7 +9,7 @@ depends: [
   "deb-lsb-base" {>= "3.0-6"}
   "deb-python3-any"
   "deb-salt-master"
-  ("deb-python3-systemd" | "deb- sysvinit-core")
+  ("deb-python3-systemd" | "deb-sysvinit-core")
 ]
 extra-source "salt-api_2018.3.4+dfsg1-6+deb10u3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/salt/salt-api_2018.3.4+dfsg1-6+deb10u3_all.deb"

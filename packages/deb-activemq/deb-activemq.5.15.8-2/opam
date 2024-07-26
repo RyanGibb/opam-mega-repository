@@ -11,7 +11,7 @@ depends: [
   "deb-libgeronimo-jacc-1-1-spec-java"
   "deb-liblog4j1-2-java"
   "deb-lsb-base" {>= "3.2-14"}
-  ("deb-default-jre-headless" | "deb- java7-runtime-headless")
+  ("deb-default-jre-headless" | "deb-java7-runtime-headless")
 ]
 extra-source "activemq_5.15.8-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/activemq/activemq_5.15.8-2_all.deb"

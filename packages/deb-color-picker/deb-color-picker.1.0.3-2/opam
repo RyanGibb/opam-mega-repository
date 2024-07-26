@@ -11,7 +11,7 @@ depends: [
   "deb-libqt5core5a" {>= "5.15.1"}
   "deb-libqt5widgets5" {>= "5.2.0~alpha1"}
   "deb-libstdc++6" {>= "4.1.1"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "color-picker_1.0.3-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/color-picker/color-picker_1.0.3-2_amd64.deb"

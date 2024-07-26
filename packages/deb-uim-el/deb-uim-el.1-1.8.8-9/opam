@@ -10,7 +10,7 @@ depends: [
   "deb-libuim8" {>= "1-1.7.0"}
   "deb-uim" {>= "1-1.8.8-9"}
   "deb-uim-data" {>= "1-1.8.8-9"}
-  ("deb-emacs" | "deb- xemacs21-mule" | "deb- xemacs21-mule-canna-wnn" | "deb- emacsen")
+  ("deb-emacs" | "deb-xemacs21-mule" | "deb-xemacs21-mule-canna-wnn" | "deb-emacsen")
 ]
 extra-source "uim-el_1:1.8.8-9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/uim/uim-el_1.8.8-9_amd64.deb"

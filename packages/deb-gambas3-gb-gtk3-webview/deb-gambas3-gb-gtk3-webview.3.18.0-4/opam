@@ -13,7 +13,7 @@ depends: [
   "deb-libgtk-3-0" {>= "3.13.7"}
   "deb-libjavascriptcoregtk-4-0-18" {>= "2.38.3"}
   "deb-libwebkit2gtk-4-0-37" {>= "2.21.1"}
-  ("deb-gambas3-gb-gtk3-x11" {>= "3.18.0-4"} | "deb- gambas3-gb-gtk3-wayland" {>= "3.18.0-4"})
+  ("deb-gambas3-gb-gtk3-x11" {>= "3.18.0-4"} | "deb-gambas3-gb-gtk3-wayland" {>= "3.18.0-4"})
 ]
 extra-source "gambas3-gb-gtk3-webview_3.18.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gambas3/gambas3-gb-gtk3-webview_3.18.0-4_amd64.deb"

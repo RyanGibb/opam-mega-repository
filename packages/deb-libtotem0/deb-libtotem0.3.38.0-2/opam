@@ -25,7 +25,7 @@ depends: [
   "deb-libpangocairo-1-0-0" {>= "1.14.0"}
   "deb-libpeas-1-0-0" {>= "1.1.0"}
   "deb-libtotem-plparser18" {>= "3.26.5"}
-  ("deb-libgdk-pixbuf-2-0-0" {>= "2.23.0"} | "deb- libgdk-pixbuf2-0-0" {>= "2.23.0"})
+  ("deb-libgdk-pixbuf-2-0-0" {>= "2.23.0"} | "deb-libgdk-pixbuf2-0-0" {>= "2.23.0"})
 ]
 extra-source "libtotem0_3.38.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/totem/libtotem0_3.38.0-2_amd64.deb"

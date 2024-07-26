@@ -15,10 +15,10 @@ depends: [
   "deb-php-mbstring"
   "deb-php-xml"
   "deb-php-zip"
-  ("deb-apache2" {>= "2.4.0"} | "deb- httpd")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-libapache2-mod-php" | "deb- libapache2-mod-fcgid" | "deb- php-fpm")
-  ("deb-php-gd" | "deb- php-imagick")
+  ("deb-apache2" {>= "2.4.0"} | "deb-httpd")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-libapache2-mod-php" | "deb-libapache2-mod-fcgid" | "deb-php-fpm")
+  ("deb-php-gd" | "deb-php-imagick")
 ]
 conflicts: [
   "deb-libapache2-mod-php5"

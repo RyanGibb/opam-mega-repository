@@ -8,8 +8,8 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.14"}
   "deb-libgfortran5" {>= "8"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "liblbfgsb0_3.0+dfsg.3-9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lbfgsb/liblbfgsb0_3.0+dfsg.3-9_amd64.deb"

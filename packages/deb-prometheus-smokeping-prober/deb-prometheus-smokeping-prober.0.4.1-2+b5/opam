@@ -10,7 +10,7 @@ depends: [
   "deb-debconf"
   "deb-libc6" {>= "2.4"}
   "deb-libcap2-bin"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "prometheus-smokeping-prober_0.4.1-2+b5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/prometheus-smokeping-prober/prometheus-smokeping-prober_0.4.1-2+b5_amd64.deb"

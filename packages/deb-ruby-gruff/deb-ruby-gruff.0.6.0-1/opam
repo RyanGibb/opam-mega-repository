@@ -9,7 +9,7 @@ depends: [
   "deb-ghostscript"
   "deb-gsfonts"
   "deb-ruby-rmagick" {>= "2.13.4"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-gruff_0.6.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-gruff/ruby-gruff_0.6.0-1_all.deb"

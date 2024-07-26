@@ -43,7 +43,7 @@ depends: [
   "deb-libqt5xml5" {>= "5.3.0"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "calligrasheets_1:3.2.1+dfsg-2+b5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/calligra/calligrasheets_3.2.1+dfsg-2+b5_amd64.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl"
-  ("deb-perl" {>= "5.17.1"} | "deb- libcpan-meta-perl" {>= "2.120910"})
+  ("deb-perl" {>= "5.17.1"} | "deb-libcpan-meta-perl" {>= "2.120910"})
 ]
 extra-source "libmodule-cpanfile-perl_1.1004-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libm/libmodule-cpanfile-perl/libmodule-cpanfile-perl_1.1004-1_all.deb"

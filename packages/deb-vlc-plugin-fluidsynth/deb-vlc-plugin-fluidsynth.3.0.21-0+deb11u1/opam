@@ -10,7 +10,7 @@ depends: [
   "deb-libfluidsynth2" {>= "2.0.5"}
   "deb-libvlccore9"
   "deb-libvlccore9" {>= "3.0.21"}
-  ("deb-fluid-soundfont-gm" | "deb- timgm6mb-soundfont")
+  ("deb-fluid-soundfont-gm" | "deb-timgm6mb-soundfont")
 ]
 extra-source "vlc-plugin-fluidsynth_3.0.21-0+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/vlc/vlc-plugin-fluidsynth_3.0.21-0+deb11u1_amd64.deb"

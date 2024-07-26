@@ -12,7 +12,7 @@ depends: [
   "deb-perl" {>= "5.36.0-4"}
   "deb-perl-base"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "swish-e_2.4.7-6.1+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/swish-e/swish-e_2.4.7-6.1+b2_amd64.deb"

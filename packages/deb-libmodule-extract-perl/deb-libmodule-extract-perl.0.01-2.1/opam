@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl-any"
-  ("deb-libarchive-extract-perl" | "deb- perl" {< "5.17.0"})
+  ("deb-libarchive-extract-perl" | "deb-perl" {< "5.17.0"})
 ]
 extra-source "libmodule-extract-perl_0.01-2.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libm/libmodule-extract-perl/libmodule-extract-perl_0.01-2.1_all.deb"

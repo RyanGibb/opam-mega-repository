@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-adduser"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "tango-common_9.2.5a+dfsg1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tango/tango-common_9.2.5a+dfsg1-2_all.deb"

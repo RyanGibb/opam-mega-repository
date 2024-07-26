@@ -19,7 +19,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libx11-6"
   "deb-libxext6"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "rss-glx_0.9.1-6.1+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rss-glx/rss-glx_0.9.1-6.1+b3_amd64.deb"

@@ -12,7 +12,7 @@ depends: [
   "deb-python3-dbus"
   "deb-python3-gi"
   "deb-python3-pil"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "hydrapaper_3.3.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/hydrapaper/hydrapaper_3.3.1-2_all.deb"

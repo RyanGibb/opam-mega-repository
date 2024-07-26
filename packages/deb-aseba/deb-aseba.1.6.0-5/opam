@@ -29,7 +29,7 @@ depends: [
   "deb-libsdl2-2-0-0" {>= "2.0.8"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-libxml2" {>= "2.7.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "aseba_1.6.0-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/aseba/aseba_1.6.0-5_amd64.deb"

@@ -18,7 +18,7 @@ depends: [
   "deb-libopenmpi3" {>= "4.1.0"}
   "deb-libosmesa6" {>= "10.2~"}
   "deb-zenity"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "gfsview-batch_20121130+dfsg-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gfsview/gfsview-batch_20121130+dfsg-7_amd64.deb"

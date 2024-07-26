@@ -9,7 +9,7 @@ depends: [
   "deb-cryptsetup-bin"
   "deb-libc6" {>= "2.25"}
   "deb-libcrypt1" {>= "1-4.1.0"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "cryptsetup-nuke-password_4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cryptsetup-nuke-password/cryptsetup-nuke-password_4_amd64.deb"

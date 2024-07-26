@@ -10,7 +10,7 @@ depends: [
   "deb-libc6" {>= "2.3"}
   "deb-libmp3lame0" {>= "3.100"}
   "deb-libsndfile1" {>= "1.0.20"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "rotter_0.9-3.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rotter/rotter_0.9-3.1_amd64.deb"

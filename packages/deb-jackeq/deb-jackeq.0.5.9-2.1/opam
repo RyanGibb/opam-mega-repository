@@ -19,7 +19,7 @@ depends: [
   "deb-libpangoft2-1-0-0" {>= "1.14.0"}
   "deb-libxml2" {>= "2.6.27"}
   "deb-swh-plugins" {>= "0.4.3"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "jackeq_0.5.9-2.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jackeq/jackeq_0.5.9-2.1_amd64.deb"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-i18n-data"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-i18n-data_0.10.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-i18n-data/ruby-i18n-data_0.10.0-2_all.deb"

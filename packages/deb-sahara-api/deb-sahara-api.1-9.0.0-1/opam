@@ -14,7 +14,7 @@ depends: [
   "deb-python3-pastescript"
   "deb-sahara-common" {= "1-9.0.0-1"}
   "deb-uwsgi-plugin-python3"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "sahara-api_1:9.0.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sahara/sahara-api_9.0.0-1_all.deb"

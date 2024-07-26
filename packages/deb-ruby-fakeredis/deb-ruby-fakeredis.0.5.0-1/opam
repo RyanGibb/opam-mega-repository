@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-redis"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-fakeredis_0.5.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-fakeredis/ruby-fakeredis_0.5.0-1_all.deb"

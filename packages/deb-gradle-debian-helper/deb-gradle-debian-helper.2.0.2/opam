@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-gradle" {>= "3.4.1-8~"}
   "deb-maven-repo-helper"
-  ("deb-default-jre-headless" | "deb- java7-runtime-headless")
+  ("deb-default-jre-headless" | "deb-java7-runtime-headless")
 ]
 extra-source "gradle-debian-helper_2.0.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gradle-debian-helper/gradle-debian-helper_2.0.2_all.deb"

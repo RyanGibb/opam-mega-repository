@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-erlang-tools" {= "1-23.2.6+dfsg-1+deb11u1"}
   "deb-erlang-wx" {= "1-23.2.6+dfsg-1+deb11u1"}
-  ("deb-erlang-base" {= "1-23.2.6+dfsg-1+deb11u1"} | "deb- erlang-base-hipe" {= "1-23.2.6+dfsg-1+deb11u1"})
+  ("deb-erlang-base" {= "1-23.2.6+dfsg-1+deb11u1"} | "deb-erlang-base-hipe" {= "1-23.2.6+dfsg-1+deb11u1"})
 ]
 extra-source "erlang-reltool_1:23.2.6+dfsg-1+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/erlang/erlang-reltool_23.2.6+dfsg-1+deb11u1_amd64.deb"

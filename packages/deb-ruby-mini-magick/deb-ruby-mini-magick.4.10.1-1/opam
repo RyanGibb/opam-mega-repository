@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-posix-spawn"
-  ("deb-imagemagick" | "deb- graphicsmagick")
+  ("deb-imagemagick" | "deb-graphicsmagick")
 ]
 extra-source "ruby-mini-magick_4.10.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-mini-magick/ruby-mini-magick_4.10.1-1_all.deb"

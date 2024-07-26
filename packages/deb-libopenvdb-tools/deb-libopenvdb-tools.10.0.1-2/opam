@@ -20,7 +20,7 @@ depends: [
   "deb-libstdc++6" {>= "11"}
   "deb-libtbb12" {>= "2021.4.0"}
   "deb-zlib1g" {>= "1-1.2.0"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "libopenvdb-tools_10.0.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/openvdb/libopenvdb-tools_10.0.1-2_amd64.deb"

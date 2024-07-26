@@ -12,7 +12,7 @@ depends: [
   "deb-libregexp-common-perl"
   "deb-libwww-perl"
   "deb-perl-any"
-  ("deb-libtext-csv-xs-perl" | "deb- libtext-csv-perl")
+  ("deb-libtext-csv-xs-perl" | "deb-libtext-csv-perl")
 ]
 extra-source "libfinance-quotehist-perl_1.32-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libf/libfinance-quotehist-perl/libfinance-quotehist-perl_1.32-1_all.deb"

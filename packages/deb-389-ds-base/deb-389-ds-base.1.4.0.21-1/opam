@@ -35,7 +35,7 @@ depends: [
   "deb-python3-semanage"
   "deb-python3-sepolicy"
   "deb-systemd"
-  ("deb-libperl4-corelibs-perl" | "deb- perl" {< "5.12.3-7"})
+  ("deb-libperl4-corelibs-perl" | "deb-perl" {< "5.12.3-7"})
 ]
 extra-source "389-ds-base_1.4.0.21-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/3/389-ds-base/389-ds-base_1.4.0.21-1_amd64.deb"

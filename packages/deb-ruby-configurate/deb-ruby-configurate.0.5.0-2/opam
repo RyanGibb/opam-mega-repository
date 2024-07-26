@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-configurate"]
 ]
 depends: [
-  ("deb-ruby-any" | "deb- ruby-interpreter")
+  ("deb-ruby-any" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-configurate_0.5.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-configurate/ruby-configurate_0.5.0-2_all.deb"

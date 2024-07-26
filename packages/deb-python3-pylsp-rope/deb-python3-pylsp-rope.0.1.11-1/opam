@@ -9,7 +9,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-pylsp"
   "deb-python3-rope"
-  ("deb-python3-typing-extensions" | "deb- python3" {> "3.8"})
+  ("deb-python3-typing-extensions" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-pylsp-rope_0.1.11-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-lsp-rope/python3-pylsp-rope_0.1.11-1_all.deb"

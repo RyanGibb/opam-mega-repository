@@ -10,7 +10,7 @@ depends: [
   "deb-cups-common" {>= "2.4.2-3+deb12u5"}
   "deb-libc6" {>= "2.34"}
   "deb-libcups2" {= "2.4.2-3+deb12u5"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 conflicts: [
   "deb-lpr"

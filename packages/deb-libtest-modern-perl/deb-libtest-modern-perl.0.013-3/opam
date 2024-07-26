@@ -17,7 +17,7 @@ depends: [
   "deb-libtry-tiny-perl"
   "deb-perl-any"
   "deb-sgml-base" {>= "1.28"}
-  ("deb-perl" {>= "5.13.4"} | "deb- libtest-simple-perl" {>= "0.96"})
+  ("deb-perl" {>= "5.13.4"} | "deb-libtest-simple-perl" {>= "0.96"})
 ]
 extra-source "libtest-modern-perl_0.013-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libt/libtest-modern-perl/libtest-modern-perl_0.013-3_all.deb"

@@ -10,7 +10,7 @@ depends: [
   "deb-libc6" {>= "2.14"}
   "deb-libgauche-0-97-0" {>= "0.9.10"}
   "deb-libgl1"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "gauche-gl_0.6-4+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gauche-gl/gauche-gl_0.6-4+b2_amd64.deb"

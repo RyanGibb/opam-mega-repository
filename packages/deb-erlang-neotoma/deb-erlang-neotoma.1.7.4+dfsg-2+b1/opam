@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r erlang-neotoma"]
 ]
 depends: [
-  ("deb-erlang-base" {>= "1-22.0.7+dfsg"} | "deb- erlang-base-hipe" {>= "1-22.0.7+dfsg"})
+  ("deb-erlang-base" {>= "1-22.0.7+dfsg"} | "deb-erlang-base-hipe" {>= "1-22.0.7+dfsg"})
 ]
 extra-source "erlang-neotoma_1.7.4+dfsg-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/neotoma/erlang-neotoma_1.7.4+dfsg-2+b1_amd64.deb"

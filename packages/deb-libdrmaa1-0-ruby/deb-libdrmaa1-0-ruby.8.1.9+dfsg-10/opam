@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-gridengine-drmaa1-0" {>= "8.1.9+dfsg-10"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "libdrmaa1.0-ruby_8.1.9+dfsg-10_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gridengine/libdrmaa1.0-ruby_8.1.9+dfsg-10_all.deb"

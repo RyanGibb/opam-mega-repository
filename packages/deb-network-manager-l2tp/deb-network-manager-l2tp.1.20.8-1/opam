@@ -16,7 +16,7 @@ depends: [
   "deb-ppp" {< "2.4.9-2~"}
   "deb-ppp" {>= "2.4.9-1+~"}
   "deb-xl2tpd"
-  ("deb-strongswan" | "deb- libreswan")
+  ("deb-strongswan" | "deb-libreswan")
 ]
 extra-source "network-manager-l2tp_1.20.8-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/network-manager-l2tp/network-manager-l2tp_1.20.8-1_amd64.deb"

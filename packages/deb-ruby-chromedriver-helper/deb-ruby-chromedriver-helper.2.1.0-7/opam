@@ -9,7 +9,7 @@ depends: [
   "deb-ruby-archive-zip" {>= "0.10"}
   "deb-ruby-nokogiri" {>= "1.8"}
   "deb-ruby-selenium-webdriver"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-chromedriver-helper_2.1.0-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-chromedriver-helper/ruby-chromedriver-helper_2.1.0-7_all.deb"

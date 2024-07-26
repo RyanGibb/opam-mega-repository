@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r marco-common"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "marco-common_1.26.1-3+deb12u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/marco/marco-common_1.26.1-3+deb12u2_all.deb"

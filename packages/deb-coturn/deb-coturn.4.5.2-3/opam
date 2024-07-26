@@ -20,7 +20,7 @@ depends: [
   "deb-libsystemd0"
   "deb-lsb-base" {>= "3.0-6"}
   "deb-sqlite3"
-  ("deb-telnet" | "deb- telnet-client")
+  ("deb-telnet" | "deb-telnet-client")
 ]
 conflicts: [
   "deb-rfc5766-turn-server"

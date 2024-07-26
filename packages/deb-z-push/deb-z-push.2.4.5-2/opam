@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-z-push-common" {= "2.4.5-2"}
-  ("deb-z-push-backend-imap" {= "2.4.5-2"} | "deb- z-push-backend-kopano" {= "2.4.5-2"} | "deb- z-push-backend-combined" {= "2.4.5-2"} | "deb- z-push-backend-ldap" {= "2.4.5-2"})
+  ("deb-z-push-backend-imap" {= "2.4.5-2"} | "deb-z-push-backend-kopano" {= "2.4.5-2"} | "deb-z-push-backend-combined" {= "2.4.5-2"} | "deb-z-push-backend-ldap" {= "2.4.5-2"})
 ]
 extra-source "z-push_2.4.5-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/z/z-push/z-push_2.4.5-2_all.deb"

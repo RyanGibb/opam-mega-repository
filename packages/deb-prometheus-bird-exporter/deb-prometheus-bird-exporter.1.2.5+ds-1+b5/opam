@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.4"}
-  ("deb-bird" | "deb- bird2")
+  ("deb-bird" | "deb-bird2")
 ]
 extra-source "prometheus-bird-exporter_1.2.5+ds-1+b5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/prometheus-bird-exporter/prometheus-bird-exporter_1.2.5+ds-1+b5_amd64.deb"

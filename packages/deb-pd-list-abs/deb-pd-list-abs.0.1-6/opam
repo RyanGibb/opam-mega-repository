@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r pd-list-abs"]
 ]
 depends: [
-  ("deb-puredata-core" | "deb- pd")
+  ("deb-puredata-core" | "deb-pd")
 ]
 extra-source "pd-list-abs_0.1-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pd-list-abs/pd-list-abs_0.1-6_all.deb"

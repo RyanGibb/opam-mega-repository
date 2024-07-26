@@ -11,7 +11,7 @@ depends: [
   "deb-libmp3-info-perl"
   "deb-libogg-vorbis-header-pureperl-perl"
   "deb-perl-any"
-  ("deb-default-mysql-client" | "deb- virtual-mysql-client")
+  ("deb-default-mysql-client" | "deb-virtual-mysql-client")
 ]
 extra-source "audiolink_0.05-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/audiolink/audiolink_0.05-4_all.deb"

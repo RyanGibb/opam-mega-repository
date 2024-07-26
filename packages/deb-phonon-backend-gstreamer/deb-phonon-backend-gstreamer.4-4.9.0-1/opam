@@ -18,8 +18,8 @@ depends: [
   "deb-libqtgui4" {>= "4-4.8.1"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-phonon-backend-gstreamer-common" {= "4-4.9.0-1"}
-  ("deb-gstreamer1-0-alsa" | "deb- gstreamer1-0-audiosink")
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
+  ("deb-gstreamer1-0-alsa" | "deb-gstreamer1-0-audiosink")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
 ]
 extra-source "phonon-backend-gstreamer_4:4.9.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/phonon-backend-gstreamer/phonon-backend-gstreamer_4.9.0-1_amd64.deb"

@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-dpkg-dev" {>= "1.17.0"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-debootstrap" {>= "1.0.97"} | "deb- cdebootstrap")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-debootstrap" {>= "1.0.97"} | "deb-cdebootstrap")
 ]
 extra-source "pbuilder_0.231_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pbuilder/pbuilder_0.231_all.deb"

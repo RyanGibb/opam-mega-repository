@@ -10,7 +10,7 @@ depends: [
   "deb-libgcc1" {>= "1-3.0"}
   "deb-libstdc++6" {>= "5"}
   "deb-libzita-resampler1"
-  ("deb-libjack-jackd2-0" {>= "1.9.5~dfsg-14"} | "deb- libjack-0-116")
+  ("deb-libjack-jackd2-0" {>= "1.9.5~dfsg-14"} | "deb-libjack-0-116")
 ]
 extra-source "zita-njbridge_0.4.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/z/zita-njbridge/zita-njbridge_0.4.1-1_amd64.deb"

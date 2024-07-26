@@ -12,7 +12,7 @@ depends: [
   "deb-ruby-specinfra" {< "3.0.0"}
   "deb-ruby-specinfra" {>= "2.64.0"}
   "deb-ruby-thor"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "itamae_1.9.10-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/itamae/itamae_1.9.10-2_all.deb"

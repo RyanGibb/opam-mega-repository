@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-activerecord" {>= "2-4.2~"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-flipper_0.17.1-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-flipper/ruby-flipper_0.17.1-6_all.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.14"}
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 extra-source "nasm_2.14-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/nasm/nasm_2.14-1_amd64.deb"

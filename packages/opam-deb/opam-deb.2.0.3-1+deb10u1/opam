@@ -15,7 +15,7 @@ depends: [
   "deb-opam-installer" {= "2.0.3-1+deb10u1"}
   "deb-unzip"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-wget" | "deb- curl")
+  ("deb-wget" | "deb-curl")
 ]
 extra-source "opam_2.0.3-1+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/opam/opam_2.0.3-1+deb10u1_amd64.deb"

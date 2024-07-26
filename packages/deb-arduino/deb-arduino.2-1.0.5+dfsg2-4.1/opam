@@ -9,7 +9,7 @@ depends: [
   "deb-arduino-core" {= "2-1.0.5+dfsg2-4.1"}
   "deb-libjna-java"
   "deb-librxtx-java" {>= "2.2pre2-3"}
-  ("deb-default-jre" | "deb- java6-runtime")
+  ("deb-default-jre" | "deb-java6-runtime")
 ]
 extra-source "arduino_2:1.0.5+dfsg2-4.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/arduino/arduino_1.0.5+dfsg2-4.1_all.deb"

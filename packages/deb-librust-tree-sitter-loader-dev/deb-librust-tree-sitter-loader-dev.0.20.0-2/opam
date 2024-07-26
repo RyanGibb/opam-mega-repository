@@ -18,7 +18,7 @@ depends: [
   "deb-librust-tree-sitter-0-20+default-dev"
   "deb-librust-tree-sitter-highlight-0-20+default-dev"
   "deb-librust-tree-sitter-tags-0-20+default-dev"
-  ("deb-librust-dirs-4+default-dev" | "deb- librust-dirs-3+default-dev")
+  ("deb-librust-dirs-4+default-dev" | "deb-librust-dirs-3+default-dev")
 ]
 extra-source "librust-tree-sitter-loader-dev_0.20.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-tree-sitter-loader/librust-tree-sitter-loader-dev_0.20.0-2_amd64.deb"

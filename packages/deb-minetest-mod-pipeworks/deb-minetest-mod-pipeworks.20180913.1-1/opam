@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r minetest-mod-pipeworks"]
 ]
 depends: [
-  ("deb-minetest" | "deb- minetest-server")
+  ("deb-minetest" | "deb-minetest-server")
 ]
 extra-source "minetest-mod-pipeworks_20180913.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/minetest-mod-pipeworks/minetest-mod-pipeworks_20180913.1-1_all.deb"

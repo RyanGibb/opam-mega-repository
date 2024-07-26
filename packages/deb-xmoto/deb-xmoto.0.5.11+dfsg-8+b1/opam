@@ -25,7 +25,7 @@ depends: [
   "deb-libxml2" {>= "2.7.4"}
   "deb-xmoto-data" {= "0.5.11+dfsg-8"}
   "deb-zlib1g" {>= "1-1.2.0"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "xmoto_0.5.11+dfsg-8+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xmoto/xmoto_0.5.11+dfsg-8+b1_amd64.deb"

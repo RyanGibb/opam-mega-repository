@@ -14,7 +14,7 @@ depends: [
   "deb-man-db" {>= "2.5.1-1"}
   "deb-python3-distro"
   "deb-yelp-xsl" {>= "3.27.1"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "yelp_3.31.90-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/y/yelp/yelp_3.31.90-1_amd64.deb"

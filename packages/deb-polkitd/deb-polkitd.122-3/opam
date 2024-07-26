@@ -15,9 +15,9 @@ depends: [
   "deb-libpolkit-agent-1-0" {= "122-3"}
   "deb-libpolkit-gobject-1-0" {= "122-3"}
   "deb-xml-core" {>= "0.14"}
-  ("deb-adduser" | "deb- systemd-sysusers")
-  ("deb-default-dbus-system-bus" | "deb- dbus-system-bus")
-  ("deb-default-logind" | "deb- logind")
+  ("deb-adduser" | "deb-systemd-sysusers")
+  ("deb-default-dbus-system-bus" | "deb-dbus-system-bus")
+  ("deb-default-logind" | "deb-logind")
 ]
 extra-source "polkitd_122-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/policykit-1/polkitd_122-3_amd64.deb"

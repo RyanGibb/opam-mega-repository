@@ -9,7 +9,7 @@ depends: [
   "deb-python-any" {< "2.8"}
   "deb-python-any" {>= "2.7~"}
   "deb-python-gitdb" {>= "2"}
-  ("deb-git" {>= "1-1.7"} | "deb- git-core" {>= "1-1.5.3.7"})
+  ("deb-git" {>= "1-1.7"} | "deb-git-core" {>= "1-1.5.3.7"})
 ]
 extra-source "python-git_2.1.11-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-git/python-git_2.1.11-1_all.deb"

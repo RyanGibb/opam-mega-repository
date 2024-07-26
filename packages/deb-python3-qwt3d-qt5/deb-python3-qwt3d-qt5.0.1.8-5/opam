@@ -19,7 +19,7 @@ depends: [
   "deb-python3-numpy"
   "deb-python3-pyqt5-qtopengl"
   "deb-python3-sip"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 conflicts: [
   "deb-python-qwt3d-qt4"

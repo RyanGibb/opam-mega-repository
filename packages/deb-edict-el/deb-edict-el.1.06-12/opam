@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-edict"
-  ("deb-emacs" | "deb- emacsen")
+  ("deb-emacs" | "deb-emacsen")
 ]
 extra-source "edict-el_1.06-12_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/edict-el/edict-el_1.06-12_all.deb"

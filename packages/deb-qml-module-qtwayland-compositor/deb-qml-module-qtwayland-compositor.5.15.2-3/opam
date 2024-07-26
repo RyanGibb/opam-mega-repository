@@ -13,8 +13,8 @@ depends: [
   "deb-libqt5waylandcompositor5"
   "deb-libqt5waylandcompositor5" {>= "5.14.1"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.15.2+dfsg~"} | "deb- libqt5gui5-gles" {>= "5.15.2+dfsg~"})
-  ("deb-libqt5quick5" {>= "5.15.2+dfsg~"} | "deb- libqt5quick5-gles" {>= "5.15.2+dfsg~"})
+  ("deb-libqt5gui5" {>= "5.15.2+dfsg~"} | "deb-libqt5gui5-gles" {>= "5.15.2+dfsg~"})
+  ("deb-libqt5quick5" {>= "5.15.2+dfsg~"} | "deb-libqt5quick5-gles" {>= "5.15.2+dfsg~"})
 ]
 extra-source "qml-module-qtwayland-compositor_5.15.2-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtwayland-opensource-src/qml-module-qtwayland-compositor_5.15.2-3_amd64.deb"

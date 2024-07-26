@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.3.4"}
   "deb-liblocale-gettext-perl"
   "deb-perl" {>= "5.26.2-7+b1"}
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 extra-source "help2man_1.47.8_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/help2man/help2man_1.47.8_amd64.deb"

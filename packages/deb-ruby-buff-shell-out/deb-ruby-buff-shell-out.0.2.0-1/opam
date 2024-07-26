@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-buff-ruby-engine" {>= "0.1.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-buff-shell-out_0.2.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-buff-shell-out/ruby-buff-shell-out_0.2.0-1_all.deb"

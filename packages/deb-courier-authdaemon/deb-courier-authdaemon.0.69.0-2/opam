@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-courier-authlib" {>= "0.69.0-2"}
   "deb-lsb-base" {>= "3.0-10"}
-  ("deb-sysvinit-utils" {>= "2.88dsf-50"} | "deb- init-d-script")
+  ("deb-sysvinit-utils" {>= "2.88dsf-50"} | "deb-init-d-script")
 ]
 extra-source "courier-authdaemon_0.69.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/courier-authlib/courier-authdaemon_0.69.0-2_amd64.deb"

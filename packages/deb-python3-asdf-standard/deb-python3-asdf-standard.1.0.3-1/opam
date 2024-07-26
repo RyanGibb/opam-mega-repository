@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-python3-any"
-  ("deb-python3-importlib-resources" | "deb- python3" {> "3.9"})
+  ("deb-python3-importlib-resources" | "deb-python3" {> "3.9"})
 ]
 extra-source "python3-asdf-standard_1.0.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/asdf-standard/python3-asdf-standard_1.0.3-1_all.deb"

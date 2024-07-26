@@ -18,8 +18,8 @@ depends: [
   "deb-libuuid1" {>= "2.16"}
   "deb-libvte-2-91-0" {>= "0.54.1"}
   "deb-libx11-6"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus")
 ]
 extra-source "gnome-terminal_3.30.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-terminal/gnome-terminal_3.30.2-2_amd64.deb"

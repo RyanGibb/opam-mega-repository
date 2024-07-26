@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libij-java"
   "deb-procps"
-  ("deb-default-jre" | "deb- java6-runtime")
+  ("deb-default-jre" | "deb-java6-runtime")
 ]
 extra-source "imagej_1.53t-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/imagej/imagej_1.53t-1_all.deb"

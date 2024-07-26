@@ -9,7 +9,7 @@ depends: [
   "deb-gir1-2-handy-1"
   "deb-python3-any"
   "deb-python3-gi"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "portfolio-filemanager_0.9.14-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/portfolio-filemanager/portfolio-filemanager_0.9.14-1_all.deb"

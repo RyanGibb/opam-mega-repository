@@ -12,7 +12,7 @@ depends: [
   "deb-golang-github-jinzhu-inflection-dev"
   "deb-golang-github-jinzhu-now-dev"
   "deb-golang-github-mattn-go-sqlite3-dev"
-  ("deb-golang-pq-dev" | "deb- golang-github-lib-pq-dev")
+  ("deb-golang-pq-dev" | "deb-golang-github-lib-pq-dev")
 ]
 extra-source "golang-github-jinzhu-gorm-dev_1.9.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/golang-github-jinzhu-gorm/golang-github-jinzhu-gorm-dev_1.9.1-1_all.deb"

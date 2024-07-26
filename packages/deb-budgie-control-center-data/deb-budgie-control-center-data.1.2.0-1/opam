@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r budgie-control-center-data"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "budgie-control-center-data_1.2.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/budgie-control-center/budgie-control-center-data_1.2.0-1_all.deb"

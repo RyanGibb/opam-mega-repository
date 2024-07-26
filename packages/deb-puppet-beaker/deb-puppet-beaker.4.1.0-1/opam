@@ -16,7 +16,7 @@ depends: [
   "deb-ruby-pry-byebug"
   "deb-ruby-rsync"
   "deb-ruby-thor"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "puppet-beaker_4.1.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/puppet-beaker/puppet-beaker_4.1.0-1_all.deb"

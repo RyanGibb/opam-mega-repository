@@ -10,7 +10,7 @@ depends: [
   "deb-libevent-core-2-1-7" {>= "2.1.8-stable"}
   "deb-libopenmpi3" {>= "4.1.4"}
   "deb-openmpi-common" {>= "4.1.4-3"}
-  ("deb-openssh-client" | "deb- ssh-client")
+  ("deb-openssh-client" | "deb-ssh-client")
 ]
 conflicts: [
   "deb-openmpi-bin"

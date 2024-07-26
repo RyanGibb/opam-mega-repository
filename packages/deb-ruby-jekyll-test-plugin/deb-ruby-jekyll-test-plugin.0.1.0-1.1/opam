@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-jekyll-test-plugin"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-jekyll-test-plugin_0.1.0-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-jekyll-test-plugin/ruby-jekyll-test-plugin_0.1.0-1.1_all.deb"

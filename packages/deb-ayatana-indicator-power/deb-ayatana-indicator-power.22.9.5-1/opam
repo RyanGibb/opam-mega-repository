@@ -12,8 +12,8 @@ depends: [
   "deb-libc6" {>= "2.34"}
   "deb-libglib2-0-0" {>= "2.39.4"}
   "deb-libnotify4" {>= "0.7.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-upower" | "deb- repowerd")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-upower" | "deb-repowerd")
 ]
 extra-source "ayatana-indicator-power_22.9.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/ayatana-indicator-power/ayatana-indicator-power_22.9.5-1_amd64.deb"

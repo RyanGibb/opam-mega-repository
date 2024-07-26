@@ -13,7 +13,7 @@ depends: [
   "deb-libqt5sql5" {>= "5.15.2+dfsg~"}
   "deb-libqt5widgets5" {>= "5.15.2+dfsg~"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.15.2+dfsg~"} | "deb- libqt5gui5-gles" {>= "5.15.2+dfsg~"})
+  ("deb-libqt5gui5" {>= "5.15.2+dfsg~"} | "deb-libqt5gui5-gles" {>= "5.15.2+dfsg~"})
 ]
 extra-source "qtquickcontrols2-5-examples_5.15.2+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtquickcontrols2-opensource-src/qtquickcontrols2-5-examples_5.15.2+dfsg-2_amd64.deb"

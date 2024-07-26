@@ -16,10 +16,10 @@ depends: [
   "deb-squashfs-tools"
   "deb-x11-utils"
   "deb-xauth"
-  ("deb-dnsmasq" {>= "2.41"} | "deb- tftpd-hpa" | "deb- atftpd")
-  ("deb-dnsmasq" | "deb- isc-dhcp-server" | "deb- dhcp3-server")
-  ("deb-mate-desktop-environment" | "deb- gnome-session" | "deb- x-session-manager" | "deb- x-window-manager")
-  ("deb-openbsd-inetd" | "deb- inet-superserver")
+  ("deb-dnsmasq" {>= "2.41"} | "deb-tftpd-hpa" | "deb-atftpd")
+  ("deb-dnsmasq" | "deb-isc-dhcp-server" | "deb-dhcp3-server")
+  ("deb-mate-desktop-environment" | "deb-gnome-session" | "deb-x-session-manager" | "deb-x-window-manager")
+  ("deb-openbsd-inetd" | "deb-inet-superserver")
 ]
 extra-source "ltsp-server-standalone_5.18.12-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/ltsp/ltsp-server-standalone_5.18.12-3_all.deb"

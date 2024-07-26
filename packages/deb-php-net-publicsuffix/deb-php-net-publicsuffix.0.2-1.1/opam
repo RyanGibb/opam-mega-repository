@@ -9,7 +9,7 @@ depends: [
   "deb-php-intl"
   "deb-php-mbstring"
   "deb-publicsuffix" {>= "20150507"}
-  ("deb-php" | "deb- php-cli")
+  ("deb-php" | "deb-php-cli")
 ]
 extra-source "php-net-publicsuffix_0.2-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/php-net-publicsuffix/php-net-publicsuffix_0.2-1.1_all.deb"

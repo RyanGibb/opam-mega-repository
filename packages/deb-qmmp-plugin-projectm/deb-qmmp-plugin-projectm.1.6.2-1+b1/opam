@@ -15,7 +15,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.4.0"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-qmmp" {>= "1.6.2"}
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "qmmp-plugin-projectm_1.6.2-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qmmp/qmmp-plugin-projectm_1.6.2-1+b1_amd64.deb"

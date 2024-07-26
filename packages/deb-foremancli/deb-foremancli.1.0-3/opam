@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-json"
   "deb-ruby-rest-client"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "foremancli_1.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/foremancli/foremancli_1.0-3_all.deb"

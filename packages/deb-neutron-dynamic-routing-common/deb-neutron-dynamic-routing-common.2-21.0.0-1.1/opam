@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-neutron-common"
   "deb-python3-neutron-dynamic-routing" {= "2-21.0.0-1.1"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "neutron-dynamic-routing-common_2:21.0.0-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/neutron-dynamic-routing/neutron-dynamic-routing-common_21.0.0-1.1_all.deb"

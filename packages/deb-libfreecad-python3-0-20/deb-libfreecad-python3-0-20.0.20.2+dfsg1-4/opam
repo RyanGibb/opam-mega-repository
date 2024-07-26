@@ -44,8 +44,8 @@ depends: [
   "deb-libxerces-c3-2"
   "deb-libzipios++0v5"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libglu1-mesa" | "deb-libglu1")
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "libfreecad-python3-0.20_0.20.2+dfsg1-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/freecad/libfreecad-python3-0.20_0.20.2+dfsg1-4_amd64.deb"

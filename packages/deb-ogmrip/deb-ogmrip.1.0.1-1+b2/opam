@@ -41,8 +41,8 @@ depends: [
   "deb-ogmtools"
   "deb-vorbis-tools" {>= "1.0"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-mplayer-nogui" | "deb- mplayer")
-  ("deb-tesseract-ocr" | "deb- ocrad" | "deb- gocr")
+  ("deb-mplayer-nogui" | "deb-mplayer")
+  ("deb-tesseract-ocr" | "deb-ocrad" | "deb-gocr")
 ]
 conflicts: [
   "deb-libogmrip0"

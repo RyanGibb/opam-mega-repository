@@ -13,7 +13,7 @@ depends: [
   "deb-libqt5printsupport5" {>= "5.0.2"}
   "deb-libqt5widgets5" {>= "5.11.0~rc1"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "libqscintilla2-qt5-15_2.11.6+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qscintilla2/libqscintilla2-qt5-15_2.11.6+dfsg-2_amd64.deb"

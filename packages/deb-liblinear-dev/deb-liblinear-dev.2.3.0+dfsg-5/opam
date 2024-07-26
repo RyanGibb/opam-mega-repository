@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-liblinear4" {= "2.3.0+dfsg-5"}
-  ("deb-libblas-dev" | "deb- libblas-so")
+  ("deb-libblas-dev" | "deb-libblas-so")
 ]
 extra-source "liblinear-dev_2.3.0+dfsg-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libl/liblinear/liblinear-dev_2.3.0+dfsg-5_amd64.deb"

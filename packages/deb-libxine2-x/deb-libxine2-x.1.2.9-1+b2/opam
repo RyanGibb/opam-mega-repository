@@ -27,8 +27,8 @@ depends: [
   "deb-libxinerama1"
   "deb-libxv1"
   "deb-libxvmc1"
-  ("deb-libavcodec58" {>= "7-4.0"} | "deb- libavcodec-extra58" {>= "7-4.0"})
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libavcodec58" {>= "7-4.0"} | "deb-libavcodec-extra58" {>= "7-4.0"})
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "libxine2-x_1.2.9-1+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xine-lib-1.2/libxine2-x_1.2.9-1+b2_amd64.deb"

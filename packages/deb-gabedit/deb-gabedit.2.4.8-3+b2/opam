@@ -18,7 +18,7 @@ depends: [
   "deb-libpango-1-0-0" {>= "1.14.0"}
   "deb-libpangocairo-1-0-0" {>= "1.14.0"}
   "deb-openbabel"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "gabedit_2.4.8-3+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gabedit/gabedit_2.4.8-3+b2_amd64.deb"

@@ -15,8 +15,8 @@ depends: [
   "deb-r-bioc-limma" {>= "3.41.5"}
   "deb-r-cran-locfit"
   "deb-r-cran-rcpp"
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "r-bioc-edger_3.32.1+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-bioc-edger/r-bioc-edger_3.32.1+dfsg-1_amd64.deb"

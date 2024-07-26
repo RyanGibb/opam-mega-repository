@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-eventmachine" {>= "0.12.9"}
   "deb-ruby-http-parser-rb" {>= "0.6.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-em-websocket_0.5.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-em-websocket/ruby-em-websocket_0.5.1-2_all.deb"

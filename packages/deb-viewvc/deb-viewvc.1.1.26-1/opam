@@ -10,7 +10,7 @@ depends: [
   "deb-python-any" {>= "2.7.5-5~"}
   "deb-python-subversion"
   "deb-rcs"
-  ("deb-cvs" | "deb- subversion")
+  ("deb-cvs" | "deb-subversion")
 ]
 extra-source "viewvc_1.1.26-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/viewvc/viewvc_1.1.26-1_all.deb"

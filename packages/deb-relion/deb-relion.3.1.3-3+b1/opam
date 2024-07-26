@@ -14,7 +14,7 @@ depends: [
   "deb-libopenmpi3" {>= "4.1.4"}
   "deb-libstdc++6" {>= "11"}
   "deb-libtiff6" {>= "4.0.3"}
-  ("deb-openmpi-gcc" | "deb- openmpi-bin")
+  ("deb-openmpi-gcc" | "deb-openmpi-bin")
 ]
 conflicts: [
   "deb-relion-cuda"

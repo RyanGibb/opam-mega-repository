@@ -44,7 +44,7 @@ depends: [
   "deb-libtiff5" {>= "4.0.3"}
   "deb-libwebp6" {>= "0.5.1"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "openimageio-tools_2.0.5~dfsg0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/openimageio/openimageio-tools_2.0.5~dfsg0-1_amd64.deb"

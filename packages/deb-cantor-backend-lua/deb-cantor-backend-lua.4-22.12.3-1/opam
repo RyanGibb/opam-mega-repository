@@ -26,8 +26,8 @@ depends: [
   "deb-libqt5help5" {>= "5.8.0~"}
   "deb-libqt5widgets5" {>= "5.8.0~"}
   "deb-libstdc++6" {>= "4.1.1"}
-  ("deb-libluajit-5-1-2" {>= "2.0.4+dfsg"} | "deb- libluajit2-5-1-2" {>= "2.1~"})
-  ("deb-libqt5gui5" {>= "5.8.0~"} | "deb- libqt5gui5-gles" {>= "5.8.0~"})
+  ("deb-libluajit-5-1-2" {>= "2.0.4+dfsg"} | "deb-libluajit2-5-1-2" {>= "2.1~"})
+  ("deb-libqt5gui5" {>= "5.8.0~"} | "deb-libqt5gui5-gles" {>= "5.8.0~"})
 ]
 extra-source "cantor-backend-lua_4:22.12.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cantor/cantor-backend-lua_22.12.3-1_amd64.deb"

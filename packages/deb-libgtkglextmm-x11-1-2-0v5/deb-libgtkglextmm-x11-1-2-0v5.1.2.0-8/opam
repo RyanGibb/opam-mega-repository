@@ -32,8 +32,8 @@ depends: [
   "deb-libx11-6"
   "deb-libxmu6"
   "deb-libxt6"
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 conflicts: [
   "deb-libgtkglextmm-x11-1-2-0"

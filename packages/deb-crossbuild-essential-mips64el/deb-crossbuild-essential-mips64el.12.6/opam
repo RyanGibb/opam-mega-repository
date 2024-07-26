@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-dpkg-cross"
-  ("deb-g++-mips64el-linux-gnuabi64" {>= "4-8.3"} | "deb- g++-mips64el")
-  ("deb-gcc-mips64el-linux-gnuabi64" {>= "4-8.3"} | "deb- gcc-mips64el")
+  ("deb-g++-mips64el-linux-gnuabi64" {>= "4-8.3"} | "deb-g++-mips64el")
+  ("deb-gcc-mips64el-linux-gnuabi64" {>= "4-8.3"} | "deb-gcc-mips64el")
 ]
 extra-source "crossbuild-essential-mips64el_12.6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/build-essential/crossbuild-essential-mips64el_12.6_all.deb"

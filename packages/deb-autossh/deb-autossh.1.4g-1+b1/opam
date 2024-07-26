@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.14"}
-  ("deb-openssh-client" | "deb- ssh-client")
+  ("deb-openssh-client" | "deb-ssh-client")
 ]
 extra-source "autossh_1.4g-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/autossh/autossh_1.4g-1+b1_amd64.deb"

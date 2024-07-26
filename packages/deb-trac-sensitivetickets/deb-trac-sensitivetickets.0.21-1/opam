@@ -9,7 +9,7 @@ depends: [
   "deb-python" {< "2.8"}
   "deb-python" {>= "2.6.6-7~"}
   "deb-trac" {>= "0.11.6"}
-  ("deb-python2-7" | "deb- python2-6")
+  ("deb-python2-7" | "deb-python2-6")
 ]
 extra-source "trac-sensitivetickets_0.21-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/trac-sensitivetickets/trac-sensitivetickets_0.21-1_all.deb"

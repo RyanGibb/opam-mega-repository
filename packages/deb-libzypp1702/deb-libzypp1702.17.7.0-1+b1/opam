@@ -22,7 +22,7 @@ depends: [
   "deb-libxml2" {>= "2.7.4"}
   "deb-rpm"
   "deb-zlib1g" {>= "1-1.2.3.4"}
-  ("deb-gnupg" | "deb- gnupg2")
+  ("deb-gnupg" | "deb-gnupg2")
 ]
 extra-source "libzypp1702_17.7.0-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libz/libzypp/libzypp1702_17.7.0-1+b1_amd64.deb"

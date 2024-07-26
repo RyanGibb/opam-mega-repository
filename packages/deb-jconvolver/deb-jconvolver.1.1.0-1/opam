@@ -12,7 +12,7 @@ depends: [
   "deb-libsndfile1" {>= "1.0.20"}
   "deb-libstdc++6" {>= "5"}
   "deb-libzita-convolver4" {>= "4.0.3"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "jconvolver_1.1.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jconvolver/jconvolver_1.1.0-1_amd64.deb"

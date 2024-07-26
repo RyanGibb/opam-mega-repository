@@ -17,7 +17,7 @@ depends: [
   "deb-libxapp1" {>= "1.0.4"}
   "deb-psmisc"
   "deb-rsync"
-  ("deb-cron-daemon" | "deb- cron")
+  ("deb-cron-daemon" | "deb-cron")
 ]
 extra-source "timeshift_22.11.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/timeshift/timeshift_22.11.2-1_amd64.deb"

@@ -33,7 +33,7 @@ depends: [
   "deb-lmms-common" {>= "1.2.2+dfsg1-6"}
   "deb-stk"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "lmms_1.2.2+dfsg1-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lmms/lmms_1.2.2+dfsg1-6_amd64.deb"

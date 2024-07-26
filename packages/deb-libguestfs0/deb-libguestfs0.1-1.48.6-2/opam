@@ -75,10 +75,10 @@ depends: [
   "deb-xz-utils"
   "deb-zerofree"
   "deb-zstd"
-  ("deb-fdisk" | "deb- util-linux" {< "2.29.2"})
-  ("deb-iproute2" | "deb- iproute")
-  ("deb-kmod" | "deb- module-init-tools")
-  ("deb-systemd-sysv" | "deb- sysvinit-core")
+  ("deb-fdisk" | "deb-util-linux" {< "2.29.2"})
+  ("deb-iproute2" | "deb-iproute")
+  ("deb-kmod" | "deb-module-init-tools")
+  ("deb-systemd-sysv" | "deb-sysvinit-core")
 ]
 extra-source "libguestfs0_1:1.48.6-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libg/libguestfs/libguestfs0_1.48.6-2_amd64.deb"

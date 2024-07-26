@@ -15,8 +15,8 @@ depends: [
   "deb-libplfit0" {>= "0.8.2"}
   "deb-libstdc++6" {>= "11"}
   "deb-libxml2" {>= "2.7.4"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libigraph3_0.10.2+ds-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/igraph/libigraph3_0.10.2+ds-2_amd64.deb"

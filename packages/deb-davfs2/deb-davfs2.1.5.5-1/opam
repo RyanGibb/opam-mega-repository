@@ -9,7 +9,7 @@ depends: [
   "deb-adduser"
   "deb-libc6" {>= "2.15"}
   "deb-libneon27"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "davfs2_1.5.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/davfs2/davfs2_1.5.5-1_amd64.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-dictionaries-common" {>= "0.20"}
   "deb-ispell" {>= "3.3.02"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "iswedish_1.4.5-2.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/swedish/iswedish_1.4.5-2.2_amd64.deb"

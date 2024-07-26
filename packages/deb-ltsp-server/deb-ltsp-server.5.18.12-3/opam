@@ -12,8 +12,8 @@ depends: [
   "deb-lsb-release"
   "deb-openssh-client"
   "deb-tcpd"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-iproute2" | "deb- iproute" | "deb- freebsd-net-tools")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-iproute2" | "deb-iproute" | "deb-freebsd-net-tools")
 ]
 conflicts: [
   "deb-ltsp-utils"

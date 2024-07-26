@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-thread-safe"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-descendants-tracker_0.0.4-2.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-descendants-tracker/ruby-descendants-tracker_0.0.4-2.1_all.deb"

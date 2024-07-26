@@ -16,7 +16,7 @@ depends: [
   "deb-libgtk-4-1" {>= "4.0.0"}
   "deb-libhandy-1-0" {>= "1.1.90"}
   "deb-phoc" {>= "0.13.1"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "phosh-plugins_0.24.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/phosh/phosh-plugins_0.24.0-1_amd64.deb"

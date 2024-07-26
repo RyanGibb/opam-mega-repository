@@ -42,7 +42,7 @@ depends: [
   "deb-libstdc++6" {>= "4.1.1"}
   "deb-libvorbis0a" {>= "1.1.2"}
   "deb-libvorbisenc2" {>= "1.1.2"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "kwave_20.12.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kwave/kwave_20.12.2-1_amd64.deb"

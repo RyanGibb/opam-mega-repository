@@ -8,14 +8,14 @@ remove: [
 depends: [
   "deb-apache2"
   "deb-dbconfig-common"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-mysql-server" | "deb- mariadb-server" | "deb- postgresql")
-  ("deb-php" | "deb- php5")
-  ("deb-php-bcmath" | "deb- php5-common")
-  ("deb-php-cli" | "deb- php5-cli")
-  ("deb-php-curl" | "deb- php5-curl")
-  ("deb-php-mysql" | "deb- php-pgsql" | "deb- php5-mysql" | "deb- php5-pgsql")
-  ("deb-php-xml" | "deb- php5-common")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-mysql-server" | "deb-mariadb-server" | "deb-postgresql")
+  ("deb-php" | "deb-php5")
+  ("deb-php-bcmath" | "deb-php5-common")
+  ("deb-php-cli" | "deb-php5-cli")
+  ("deb-php-curl" | "deb-php5-curl")
+  ("deb-php-mysql" | "deb-php-pgsql" | "deb-php5-mysql" | "deb-php5-pgsql")
+  ("deb-php-xml" | "deb-php5-common")
 ]
 extra-source "yubikey-val_2.38-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/y/yubikey-val/yubikey-val_2.38-2_all.deb"

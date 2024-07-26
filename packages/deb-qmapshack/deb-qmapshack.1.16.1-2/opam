@@ -26,7 +26,7 @@ depends: [
   "deb-libquazip5-1" {>= "0.7.3"}
   "deb-libroutino0" {>= "3.1"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "qmapshack_1.16.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qmapshack/qmapshack_1.16.1-2_amd64.deb"

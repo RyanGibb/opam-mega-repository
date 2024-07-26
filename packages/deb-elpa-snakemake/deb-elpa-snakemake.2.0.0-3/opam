@@ -9,7 +9,7 @@ depends: [
   "deb-dh-elpa-helper"
   "deb-elpa-snakemake-mode" {>= "2.0.0"}
   "deb-emacsen-common"
-  ("deb-emacs-el" {>= "1-28"} | "deb- elpa-transient")
+  ("deb-emacs-el" {>= "1-28"} | "deb-elpa-transient")
 ]
 extra-source "elpa-snakemake_2.0.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/elpa-snakemake/elpa-snakemake_2.0.0-3_all.deb"

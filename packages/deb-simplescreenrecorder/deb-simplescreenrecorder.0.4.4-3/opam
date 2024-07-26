@@ -25,8 +25,8 @@ depends: [
   "deb-libxi6" {>= "2-1.2.99.4"}
   "deb-libxinerama1" {>= "2-1.1.4"}
   "deb-simplescreenrecorder-lib"
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "simplescreenrecorder_0.4.4-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/simplescreenrecorder/simplescreenrecorder_0.4.4-3_amd64.deb"

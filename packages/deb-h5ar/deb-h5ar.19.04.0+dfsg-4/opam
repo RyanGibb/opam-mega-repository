@@ -14,7 +14,7 @@ depends: [
   "deb-libsis-base-java"
   "deb-libsis-jhdf5-jni" {< "19.04.0+dfsg-4.1~"}
   "deb-libsis-jhdf5-jni" {>= "19.04.0+dfsg-4"}
-  ("deb-default-jre" | "deb- java7-runtime" | "deb- java8-runtime" | "deb- java9-runtime" | "deb- java10-runtime" | "deb- java11-runtime")
+  ("deb-default-jre" | "deb-java7-runtime" | "deb-java8-runtime" | "deb-java9-runtime" | "deb-java10-runtime" | "deb-java11-runtime")
 ]
 extra-source "h5ar_19.04.0+dfsg-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libs/libsis-jhdf5-java/h5ar_19.04.0+dfsg-4_all.deb"

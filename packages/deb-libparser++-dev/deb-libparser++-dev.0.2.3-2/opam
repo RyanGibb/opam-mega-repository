@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r libparser++-dev"]
 ]
 depends: [
-  ("deb-libboost1-38-dev" | "deb- libboost1-37-dev" | "deb- libboost1-35-dev" | "deb- libboost-dev")
+  ("deb-libboost1-38-dev" | "deb-libboost1-37-dev" | "deb-libboost1-35-dev" | "deb-libboost-dev")
 ]
 extra-source "libparser++-dev_0.2.3-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libp/libparser++/libparser++-dev_0.2.3-2_all.deb"

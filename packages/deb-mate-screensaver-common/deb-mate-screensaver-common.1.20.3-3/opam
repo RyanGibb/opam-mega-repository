@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r mate-screensaver-common"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "mate-screensaver-common_1.20.3-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mate-screensaver/mate-screensaver-common_1.20.3-3_all.deb"

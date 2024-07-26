@@ -13,7 +13,7 @@ depends: [
   "deb-libsnl0" {>= "0.2.1.svn.18"}
   "deb-libstdc++6" {>= "5"}
   "deb-libx11-6"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "calculix-cgx_2.17+dfsg-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/calculix-cgx/calculix-cgx_2.17+dfsg-2+b1_amd64.deb"

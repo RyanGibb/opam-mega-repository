@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-rspec-support"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-rspec-support_3.8.0c0e1m0s0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-rspec/ruby-rspec-support_3.8.0c0e1m0s0-1_all.deb"

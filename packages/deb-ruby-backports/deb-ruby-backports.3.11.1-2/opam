@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-backports"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-backports_3.11.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-backports/ruby-backports_3.11.1-2_all.deb"

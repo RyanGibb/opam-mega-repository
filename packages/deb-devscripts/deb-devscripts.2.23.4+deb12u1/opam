@@ -22,8 +22,8 @@ depends: [
   "deb-python3-any"
   "deb-sensible-utils"
   "deb-wdiff"
-  ("deb-gnupg" | "deb- gnupg2")
-  ("deb-gpgv" | "deb- gpgv2")
+  ("deb-gnupg" | "deb-gnupg2")
+  ("deb-gpgv" | "deb-gpgv2")
 ]
 extra-source "devscripts_2.23.4+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/devscripts/devscripts_2.23.4+deb12u1_amd64.deb"

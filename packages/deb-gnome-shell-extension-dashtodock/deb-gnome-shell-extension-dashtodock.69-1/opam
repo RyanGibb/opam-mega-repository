@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-gnome-shell" {>= "3.36"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-shell-extension-dashtodock_69-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-shell-extension-dashtodock/gnome-shell-extension-dashtodock_69-1_all.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-rack-mobile-detect"
   "deb-ruby-rails"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-mobile-fu_1.4.0+github-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-mobile-fu/ruby-mobile-fu_1.4.0+github-2_all.deb"

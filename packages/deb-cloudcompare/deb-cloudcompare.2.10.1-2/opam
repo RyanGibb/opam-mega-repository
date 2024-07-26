@@ -28,7 +28,7 @@ depends: [
   "deb-libqt5printsupport5" {>= "5.0.2"}
   "deb-libqt5widgets5" {>= "5.11.0~rc1"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "cloudcompare_2.10.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cloudcompare/cloudcompare_2.10.1-2_amd64.deb"

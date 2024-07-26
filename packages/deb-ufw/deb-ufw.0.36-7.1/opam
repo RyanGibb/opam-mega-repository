@@ -10,7 +10,7 @@ depends: [
   "deb-lsb-base" {>= "3.0-6"}
   "deb-python3-any"
   "deb-ucf"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "ufw_0.36-7.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/ufw/ufw_0.36-7.1_all.deb"

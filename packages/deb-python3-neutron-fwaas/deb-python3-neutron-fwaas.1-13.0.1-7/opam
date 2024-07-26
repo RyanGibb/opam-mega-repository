@@ -31,7 +31,7 @@ depends: [
   "deb-python3-six" {>= "1.10.0"}
   "deb-python3-sqlalchemy"
   "deb-python3-zmq"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "python3-neutron-fwaas_1:13.0.1-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/neutron-fwaas/python3-neutron-fwaas_13.0.1-7_all.deb"

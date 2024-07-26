@@ -47,7 +47,7 @@ depends: [
   "deb-libxslt1-1" {>= "1.1.25"}
   "deb-perl-any"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-guile-2-2" | "deb- guile-2-0")
+  ("deb-guile-2-2" | "deb-guile-2-0")
 ]
 extra-source "gnucash_1:3.4-1+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnucash/gnucash_3.4-1+deb10u1_amd64.deb"

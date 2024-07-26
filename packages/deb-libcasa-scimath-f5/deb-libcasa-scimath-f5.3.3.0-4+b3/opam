@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.29"}
   "deb-libgcc-s1" {>= "4.0"}
   "deb-libgfortran5" {>= "8"}
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libcasa-scimath-f5_3.3.0-4+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/casacore/libcasa-scimath-f5_3.3.0-4+b3_amd64.deb"

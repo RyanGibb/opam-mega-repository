@@ -11,7 +11,7 @@ depends: [
   "deb-libpam0g" {>= "0.99.7.1"}
   "deb-netbase"
   "deb-update-inetd"
-  ("deb-openbsd-inetd" | "deb- inet-superserver")
+  ("deb-openbsd-inetd" | "deb-inet-superserver")
 ]
 extra-source "poppassd_1.8.5-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/poppassd/poppassd_1.8.5-7_amd64.deb"

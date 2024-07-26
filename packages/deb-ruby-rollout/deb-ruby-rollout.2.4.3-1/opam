@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-rollout"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-rollout_2.4.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-rollout/ruby-rollout_2.4.3-1_all.deb"

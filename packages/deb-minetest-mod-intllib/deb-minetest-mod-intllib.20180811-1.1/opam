@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r minetest-mod-intllib"]
 ]
 depends: [
-  ("deb-minetest" | "deb- minetest-server")
+  ("deb-minetest" | "deb-minetest-server")
 ]
 extra-source "minetest-mod-intllib_20180811-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/minetest-mod-intllib/minetest-mod-intllib_20180811-1.1_all.deb"

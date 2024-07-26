@@ -11,7 +11,7 @@ depends: [
   "deb-gir1-2-gtk-3-0"
   "deb-gir1-2-soup-2-4"
   "deb-gnome-shell" {>= "3.14"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-shell-extension-weather_0~20170402.git34506a6-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-shell-extension-weather/gnome-shell-extension-weather_0~20170402.git34506a6-2_all.deb"

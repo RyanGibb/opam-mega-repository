@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libhsqldb-java"
   "deb-squareness"
-  ("deb-default-jre" {>= "2-1.8"} | "deb- java8-runtime")
+  ("deb-default-jre" {>= "2-1.8"} | "deb-java8-runtime")
 ]
 extra-source "entagged_0.35-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/entagged/entagged_0.35-6_all.deb"

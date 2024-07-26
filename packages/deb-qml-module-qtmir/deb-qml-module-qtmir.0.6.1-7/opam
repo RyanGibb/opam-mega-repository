@@ -22,10 +22,10 @@ depends: [
   "deb-libqt5qml5" {>= "5.0.2"}
   "deb-libqtmirserver1" {>= "0.6.1"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-libqt5gui5" {>= "5.9.0~beta"} | "deb- libqt5gui5-gles" {>= "5.9.0~beta"})
-  ("deb-libqt5quick5" {>= "5.14.1"} | "deb- libqt5quick5-gles" {>= "5.14.1"})
-  ("deb-qtmir-desktop" {= "0.6.1-7"} | "deb- qtmir-android" {= "0.6.1-7"})
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-libqt5gui5" {>= "5.9.0~beta"} | "deb-libqt5gui5-gles" {>= "5.9.0~beta"})
+  ("deb-libqt5quick5" {>= "5.14.1"} | "deb-libqt5quick5-gles" {>= "5.14.1"})
+  ("deb-qtmir-desktop" {= "0.6.1-7"} | "deb-qtmir-android" {= "0.6.1-7"})
 ]
 extra-source "qml-module-qtmir_0.6.1-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtmir/qml-module-qtmir_0.6.1-7_amd64.deb"

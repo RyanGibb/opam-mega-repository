@@ -16,7 +16,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.2.0"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "previsat_3.5.1.7+dfsg1-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/previsat/previsat_3.5.1.7+dfsg1-5_amd64.deb"

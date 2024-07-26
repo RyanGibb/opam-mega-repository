@@ -28,7 +28,7 @@ depends: [
   "deb-erlang-tftp"
   "deb-erlang-tools"
   "deb-erlang-xmerl"
-  ("deb-erlang-base" | "deb- erlang-base-hipe")
+  ("deb-erlang-base" | "deb-erlang-base-hipe")
 ]
 extra-source "erlang-nox_1:21.2.6+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/erlang/erlang-nox_21.2.6+dfsg-1_all.deb"

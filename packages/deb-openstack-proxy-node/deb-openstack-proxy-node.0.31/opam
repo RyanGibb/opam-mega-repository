@@ -26,7 +26,7 @@ depends: [
   "deb-openstack-dashboard-apache"
   "deb-openstack-pkg-tools"
   "deb-placement-api"
-  ("deb-neutron-plugin-openvswitch-agent" | "deb- neutron-openvswitch-agent")
+  ("deb-neutron-plugin-openvswitch-agent" | "deb-neutron-openvswitch-agent")
 ]
 extra-source "openstack-proxy-node_0.31_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/openstack-meta-packages/openstack-proxy-node_0.31_all.deb"

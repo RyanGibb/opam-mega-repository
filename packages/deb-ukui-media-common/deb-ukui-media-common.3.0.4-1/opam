@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ukui-media-common"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "ukui-media-common_3.0.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/ukui-media/ukui-media-common_3.0.4-1_all.deb"

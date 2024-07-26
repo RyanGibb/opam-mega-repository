@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-gnuplot-x11"
   "deb-sysstat" {>= "12.0.3-2"}
-  ("deb-tk" | "deb- wish")
+  ("deb-tk" | "deb-wish")
 ]
 extra-source "isag_12.0.3-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sysstat/isag_12.0.3-2_all.deb"

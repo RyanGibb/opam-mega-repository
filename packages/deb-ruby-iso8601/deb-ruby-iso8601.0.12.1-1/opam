@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-iso8601"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-iso8601_0.12.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-iso8601/ruby-iso8601_0.12.1-1_all.deb"

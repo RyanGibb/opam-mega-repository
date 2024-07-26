@@ -31,9 +31,9 @@ depends: [
   "deb-qml-module-qtquick-controls"
   "deb-qml-module-qtquick-layouts"
   "deb-qml-module-qtquick2"
-  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
-  ("deb-libqt5quick5" {>= "5.15.2~"} | "deb- libqt5quick5-gles" {>= "5.15.2~"})
-  ("deb-pulseaudio" | "deb- pipewire-pulse")
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb-libqt5gui5-gles" {>= "5.15.2~"})
+  ("deb-libqt5quick5" {>= "5.15.2~"} | "deb-libqt5quick5-gles" {>= "5.15.2~"})
+  ("deb-pulseaudio" | "deb-pipewire-pulse")
 ]
 extra-source "plasma-pa_4:5.27.5-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/plasma-pa/plasma-pa_5.27.5-2_amd64.deb"

@@ -15,7 +15,7 @@ depends: [
   "deb-librust-regex+default-dev"
   "deb-librust-rpassword-6+default-dev"
   "deb-librust-syslog-dev"
-  ("deb-librust-users-0-11+default-dev" | "deb- librust-users-0-10+default-dev")
+  ("deb-librust-users-0-11+default-dev" | "deb-librust-users-0-10+default-dev")
 ]
 extra-source "librust-pleaser-dev_0.5.3-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-pleaser/librust-pleaser-dev_0.5.3-2_amd64.deb"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r readline-doc"]
 ]
 depends: [
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 extra-source "readline-doc_8.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/readline/readline-doc_8.1-1_all.deb"

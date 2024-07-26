@@ -31,7 +31,7 @@ depends: [
   "deb-python3-any"
   "deb-sysvinit-utils"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libluajit-5-1-2" {>= "2.0.4+dfsg"} | "deb- libluajit2-5-1-2" {>= "2.1~"})
+  ("deb-libluajit-5-1-2" {>= "2.0.4+dfsg"} | "deb-libluajit2-5-1-2" {>= "2.1~"})
 ]
 conflicts: [
   "deb-libhtp1" {< "0.5.16"}

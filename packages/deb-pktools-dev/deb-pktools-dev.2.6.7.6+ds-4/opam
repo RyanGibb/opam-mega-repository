@@ -12,7 +12,7 @@ depends: [
   "deb-libfileclasses1" {= "2.6.7.6+ds-4"}
   "deb-libgdal-dev"
   "deb-libimageclasses1" {= "2.6.7.6+ds-4"}
-  ("deb-libgsl-dev" | "deb- libgsl0-dev")
+  ("deb-libgsl-dev" | "deb-libgsl0-dev")
 ]
 extra-source "pktools-dev_2.6.7.6+ds-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pktools/pktools-dev_2.6.7.6+ds-4_amd64.deb"

@@ -15,7 +15,7 @@ depends: [
   "deb-libhandy-1-0" {>= "1.0.0"}
   "deb-libpango-1-0-0" {>= "1.14.0"}
   "deb-libtracker-sparql-2-0-0" {>= "0.10.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-usage_3.38.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-usage/gnome-usage_3.38.0-1_amd64.deb"

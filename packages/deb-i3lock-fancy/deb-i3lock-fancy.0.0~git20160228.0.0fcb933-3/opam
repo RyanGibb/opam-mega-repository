@@ -9,7 +9,7 @@ depends: [
   "deb-i3lock"
   "deb-imagemagick"
   "deb-scrot"
-  ("deb-gawk" | "deb- cpl-plugin-hawki-calib" | "deb- cpl-plugin-hawki-doc" | "deb- mawk" | "deb- original-awk")
+  ("deb-gawk" | "deb-cpl-plugin-hawki-calib" | "deb-cpl-plugin-hawki-doc" | "deb-mawk" | "deb-original-awk")
 ]
 extra-source "i3lock-fancy_0.0~git20160228.0.0fcb933-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/i3lock-fancy/i3lock-fancy_0.0~git20160228.0.0fcb933-3_amd64.deb"

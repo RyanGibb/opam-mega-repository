@@ -36,8 +36,8 @@ depends: [
   "deb-ruby-syslog-logger" {>= "1.6"}
   "deb-ruby-uuidtools" {>= "2.1.5"}
   "deb-ucf"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "chef_13.8.7-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/chef/chef_13.8.7-4_all.deb"

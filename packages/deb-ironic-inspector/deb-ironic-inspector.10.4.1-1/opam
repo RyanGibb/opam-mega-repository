@@ -12,7 +12,7 @@ depends: [
   "deb-python3-ironic-inspector" {= "10.4.1-1"}
   "deb-python3-openstackclient"
   "deb-python3-q-text-as-data"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "ironic-inspector_10.4.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/ironic-inspector/ironic-inspector_10.4.1-1_all.deb"

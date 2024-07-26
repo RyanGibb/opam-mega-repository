@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r fonts-tlwg-waree"]
 ]
 depends: [
-  ("deb-fonts-tlwg-waree-ttf" | "deb- fonts-tlwg-waree-otf")
+  ("deb-fonts-tlwg-waree-ttf" | "deb-fonts-tlwg-waree-otf")
 ]
 extra-source "fonts-tlwg-waree_1:0.7.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fonts-tlwg/fonts-tlwg-waree_0.7.1-1_all.deb"

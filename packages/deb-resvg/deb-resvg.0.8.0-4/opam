@@ -12,7 +12,7 @@ depends: [
   "deb-libharfbuzz0b" {>= "0.9.28"}
   "deb-libqt5core5a" {>= "5.0.2"}
   "deb-libstdc++6" {>= "4.1.1"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "resvg_0.8.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/resvg/resvg_0.8.0-4_amd64.deb"

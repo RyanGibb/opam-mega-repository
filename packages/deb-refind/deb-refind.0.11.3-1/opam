@@ -10,7 +10,7 @@ depends: [
   "deb-efibootmgr"
   "deb-openssl"
   "deb-parted"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "refind_0.11.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/refind/refind_0.11.3-1_amd64.deb"

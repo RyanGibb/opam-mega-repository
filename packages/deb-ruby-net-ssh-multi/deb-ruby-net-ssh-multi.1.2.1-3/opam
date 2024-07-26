@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-net-ssh" {>= "2.6.5"}
   "deb-ruby-net-ssh-gateway" {>= "1.2.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-net-ssh-multi_1.2.1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-net-ssh-multi/ruby-net-ssh-multi_1.2.1-3_all.deb"

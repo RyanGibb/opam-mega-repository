@@ -19,7 +19,7 @@ depends: [
   "deb-libstdc++6" {>= "5"}
   "deb-libsword1-9-0" {>= "1.9.0+dfsg"}
   "deb-qml-module-qtquick2"
-  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb-libqt5gui5-gles" {>= "5.11.0~rc1"})
 ]
 extra-source "bibletime_3.0-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/bibletime/bibletime_3.0-5_amd64.deb"

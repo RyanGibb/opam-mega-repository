@@ -26,7 +26,7 @@ depends: [
   "deb-libtimedate-perl"
   "deb-libtry-tiny-perl"
   "deb-perl"
-  ("deb-libmoox-types-mooselike-numeric-perl" | "deb- libmoox-types-mooselike-perl" {< "0.25-1~"})
+  ("deb-libmoox-types-mooselike-numeric-perl" | "deb-libmoox-types-mooselike-perl" {< "0.25-1~"})
 ]
 extra-source "libchi-perl_0.60-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libc/libchi-perl/libchi-perl_0.60-4_all.deb"

@@ -12,8 +12,8 @@ depends: [
   "deb-libsdl-mixer1-2"
   "deb-libsdl1-2debian" {>= "1.2.11"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "enemylines7_0.6-4+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/enemylines7/enemylines7_0.6-4+b2_amd64.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-python3-any"
   "deb-python3-serpent" {>= "1.27"}
-  ("deb-python3" | "deb- python3" {> "3.4"})
+  ("deb-python3" | "deb-python3" {> "3.4"})
 ]
 conflicts: [
   "deb-python2-pyro4"

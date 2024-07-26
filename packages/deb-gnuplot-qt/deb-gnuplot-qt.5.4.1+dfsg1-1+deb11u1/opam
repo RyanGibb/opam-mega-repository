@@ -25,7 +25,7 @@ depends: [
   "deb-libwxbase3-0-0v5" {>= "3.0.5.1+dfsg"}
   "deb-libwxgtk3-0-gtk3-0v5" {>= "3.0.5.1+dfsg"}
   "deb-libx11-6"
-  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb-libqt5gui5-gles" {>= "5.11.0~rc1"})
 ]
 conflicts: [
   "deb-gnuplot-nox"

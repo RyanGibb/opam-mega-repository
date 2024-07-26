@@ -10,8 +10,8 @@ depends: [
   "deb-libjcommon-java"
   "deb-libjfreechart-java"
   "deb-libswingx-java"
-  ("deb-default-jre" | "deb- java11-runtime")
-  ("deb-default-jre" | "deb- java8-runtime")
+  ("deb-default-jre" | "deb-java11-runtime")
+  ("deb-default-jre" | "deb-java8-runtime")
 ]
 extra-source "cronometer_0.9.9+dfsg1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cronometer/cronometer_0.9.9+dfsg1-1_all.deb"

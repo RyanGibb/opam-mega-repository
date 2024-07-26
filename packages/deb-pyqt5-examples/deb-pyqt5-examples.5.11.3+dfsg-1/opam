@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libjs-jquery"
-  ("deb-python3-pyqt5" | "deb- python-pyqt5")
+  ("deb-python3-pyqt5" | "deb-python-pyqt5")
 ]
 extra-source "pyqt5-examples_5.11.3+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pyqt5/pyqt5-examples_5.11.3+dfsg-1_all.deb"

@@ -8,8 +8,8 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.34"}
   "deb-libtirpc3" {>= "1.0.2"}
-  ("deb-openbsd-inetd" | "deb- inet-superserver")
-  ("deb-rpcbind" | "deb- portmap")
+  ("deb-openbsd-inetd" | "deb-inet-superserver")
+  ("deb-rpcbind" | "deb-portmap")
 ]
 extra-source "rwalld_0.17-10_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/netkit-rwall/rwalld_0.17-10_amd64.deb"

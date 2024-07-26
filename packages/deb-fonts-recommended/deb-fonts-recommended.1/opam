@@ -16,9 +16,9 @@ depends: [
   "deb-fonts-noto-color-emoji"
   "deb-fonts-symbola"
   "deb-fonts-urw-base35"
-  ("deb-fonts-firacode" | "deb- fonts-mononoki" | "deb- fonts-ricty-diminished")
-  ("deb-fonts-league-spartan" | "deb- fonts-clear-sans")
-  ("deb-fonts-liberation2" | "deb- fonts-croscore")
+  ("deb-fonts-firacode" | "deb-fonts-mononoki" | "deb-fonts-ricty-diminished")
+  ("deb-fonts-league-spartan" | "deb-fonts-clear-sans")
+  ("deb-fonts-liberation2" | "deb-fonts-croscore")
 ]
 extra-source "fonts-recommended_1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fonts-recommended/fonts-recommended_1_all.deb"

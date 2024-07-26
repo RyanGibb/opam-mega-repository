@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.15"}
   "deb-libsdl1-2debian" {>= "1.2.11"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
 ]
 extra-source "gngb_20060309-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gngb/gngb_20060309-4_amd64.deb"

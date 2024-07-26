@@ -23,7 +23,7 @@ depends: [
   "deb-libxml2" {>= "2.7.4"}
   "deb-libxslt1-1" {>= "1.1.25"}
   "deb-lsb-base" {>= "3.0-6"}
-  ("deb-asterisk-config" {= "1-16.28.0~dfsg-0+deb11u4"} | "deb- asterisk-config-custom")
+  ("deb-asterisk-config" {= "1-16.28.0~dfsg-0+deb11u4"} | "deb-asterisk-config-custom")
 ]
 extra-source "asterisk_1:16.28.0~dfsg-0+deb11u4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/asterisk/asterisk_16.28.0~dfsg-0+deb11u4_amd64.deb"

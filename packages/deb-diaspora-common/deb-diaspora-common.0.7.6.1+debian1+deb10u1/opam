@@ -17,12 +17,12 @@ depends: [
   "deb-ruby-rspec"
   "deb-sudo"
   "deb-ucf"
-  ("deb-dbconfig-pgsql" | "deb- dbconfig-mysql" | "deb- dbconfig-no-thanks")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-default-mta" | "deb- mail-transport-agent")
-  ("deb-nginx" | "deb- httpd")
-  ("deb-postgresql" | "deb- default-mysql-server" | "deb- virtual-mysql-server")
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-dbconfig-pgsql" | "deb-dbconfig-mysql" | "deb-dbconfig-no-thanks")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-default-mta" | "deb-mail-transport-agent")
+  ("deb-nginx" | "deb-httpd")
+  ("deb-postgresql" | "deb-default-mysql-server" | "deb-virtual-mysql-server")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "diaspora-common_0.7.6.1+debian1+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/diaspora-installer/diaspora-common_0.7.6.1+debian1+deb10u1_all.deb"

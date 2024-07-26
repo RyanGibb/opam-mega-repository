@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r libgwyddion20-doc"]
 ]
 depends: [
-  ("deb-w3m" | "deb- www-browser")
+  ("deb-w3m" | "deb-www-browser")
 ]
 extra-source "libgwyddion20-doc_2.52-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gwyddion/libgwyddion20-doc_2.52-1_all.deb"

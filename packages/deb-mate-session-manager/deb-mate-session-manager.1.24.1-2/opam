@@ -28,8 +28,8 @@ depends: [
   "deb-libxrender1"
   "deb-libxtst6"
   "deb-mate-desktop-common" {>= "1.24"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-mint-mate-default-settings" | "deb- ubuntu-mate-default-settings" | "deb- debian-mate-default-settings" {>= "1.24.1-2"})
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-mint-mate-default-settings" | "deb-ubuntu-mate-default-settings" | "deb-debian-mate-default-settings" {>= "1.24.1-2"})
 ]
 extra-source "mate-session-manager_1.24.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mate-session-manager/mate-session-manager_1.24.1-2_amd64.deb"

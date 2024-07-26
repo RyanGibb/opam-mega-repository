@@ -17,7 +17,7 @@ depends: [
   "deb-libstdc++6" {>= "4.8"}
   "deb-libx11-6"
   "deb-libxtst6"
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "copyq_3.13.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/copyq/copyq_3.13.0-1_amd64.deb"

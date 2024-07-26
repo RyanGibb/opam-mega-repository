@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-hitimes"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-timers_4.1.1-2.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-timers/ruby-timers_4.1.1-2.1_all.deb"

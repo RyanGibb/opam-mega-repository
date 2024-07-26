@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl"
-  ("deb-perl" {>= "5.19.7"} | "deb- libunicode-collate-perl" {>= "1.04"})
+  ("deb-perl" {>= "5.19.7"} | "deb-libunicode-collate-perl" {>= "1.04"})
 ]
 extra-source "libtext-levenshtein-perl_0.13-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libt/libtext-levenshtein-perl/libtext-levenshtein-perl_0.13-1_all.deb"

@@ -16,7 +16,7 @@ depends: [
   "deb-libqt5quick5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "6"}
   "deb-qml-module-qtquick-controls"
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "ableton-link-utils-gui_3.0.2+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/ableton-link/ableton-link-utils-gui_3.0.2+dfsg-1_amd64.deb"

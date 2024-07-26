@@ -10,7 +10,7 @@ depends: [
   "deb-liblwt-ocaml-dev"
   "deb-ocaml"
   "deb-ocaml-findlib"
-  ("deb-libcurl4-gnutls-dev" | "deb- libcurl-dev")
+  ("deb-libcurl4-gnutls-dev" | "deb-libcurl-dev")
 ]
 extra-source "libcurl-ocaml-dev_0.9.2-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/ocurl/libcurl-ocaml-dev_0.9.2-3_amd64.deb"

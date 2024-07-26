@@ -29,7 +29,7 @@ depends: [
   "deb-libuuid1" {>= "2.16"}
   "deb-libxml2" {>= "2.7.4"}
   "deb-libxslt1-1" {>= "1.1.25"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnote_3.30.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnote/gnote_3.30.0-2_amd64.deb"

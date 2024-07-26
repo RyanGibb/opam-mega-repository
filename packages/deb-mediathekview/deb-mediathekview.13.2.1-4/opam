@@ -28,7 +28,7 @@ depends: [
   "deb-libopenjfx-java" {>= "11"}
   "deb-libswingx-java"
   "deb-libxz-java"
-  ("deb-default-jre" {>= "2-1.9"} | "deb- java9-runtime")
+  ("deb-default-jre" {>= "2-1.9"} | "deb-java9-runtime")
 ]
 extra-source "mediathekview_13.2.1-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mediathekview/mediathekview_13.2.1-4_all.deb"

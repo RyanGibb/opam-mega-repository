@@ -11,7 +11,7 @@ depends: [
   "deb-libmoosex-nonmoose-perl"
   "deb-libxml-generator-perl"
   "deb-perl" {>= "5.10"}
-  ("deb-perl" {>= "5.10.1"} | "deb- libtest-harness-perl" {>= "3.02"})
+  ("deb-perl" {>= "5.10.1"} | "deb-libtest-harness-perl" {>= "3.02"})
 ]
 extra-source "libtap-formatter-junit-perl_0.11-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libt/libtap-formatter-junit-perl/libtap-formatter-junit-perl_0.11-1_all.deb"

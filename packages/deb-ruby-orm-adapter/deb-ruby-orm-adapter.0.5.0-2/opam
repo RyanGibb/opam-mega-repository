@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-orm-adapter"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-orm-adapter_0.5.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-orm-adapter/ruby-orm-adapter_0.5.0-2_all.deb"

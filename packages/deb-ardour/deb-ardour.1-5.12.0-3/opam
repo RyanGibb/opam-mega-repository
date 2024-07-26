@@ -48,7 +48,7 @@ depends: [
   "deb-libvamp-sdk2v5"
   "deb-libx11-6"
   "deb-libxml2" {>= "2.7.4"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "ardour_1:5.12.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/ardour/ardour_5.12.0-3_amd64.deb"

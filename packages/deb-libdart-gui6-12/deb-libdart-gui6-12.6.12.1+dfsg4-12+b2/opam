@@ -16,7 +16,7 @@ depends: [
   "deb-libglx0"
   "deb-libopengl0"
   "deb-libstdc++6" {>= "11"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "libdart-gui6.12_6.12.1+dfsg4-12+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dart/libdart-gui6.12_6.12.1+dfsg4-12+b2_amd64.deb"

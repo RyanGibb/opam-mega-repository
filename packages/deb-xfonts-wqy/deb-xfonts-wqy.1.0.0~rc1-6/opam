@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-xfonts-utils"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "xfonts-wqy_1.0.0~rc1-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xfonts-wqy/xfonts-wqy_1.0.0~rc1-6_all.deb"

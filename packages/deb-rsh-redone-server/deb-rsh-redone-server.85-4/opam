@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.34"}
   "deb-libpam0g" {>= "0.99.7.1"}
-  ("deb-openbsd-inetd" | "deb- inet-superserver")
+  ("deb-openbsd-inetd" | "deb-inet-superserver")
 ]
 conflicts: [
   "deb-rsh-server"

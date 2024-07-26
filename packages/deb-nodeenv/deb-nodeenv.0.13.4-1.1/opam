@@ -9,10 +9,10 @@ depends: [
   "deb-make"
   "deb-python3-any"
   "deb-python3-pkg-resources"
-  ("deb-g++" {>= "4-4.9.1"} | "deb- nodejs")
-  ("deb-gcc" {>= "4-4.9.1"} | "deb- nodejs")
-  ("deb-libssl-dev" | "deb- nodejs")
-  ("deb-python3" | "deb- nodejs")
+  ("deb-g++" {>= "4-4.9.1"} | "deb-nodejs")
+  ("deb-gcc" {>= "4-4.9.1"} | "deb-nodejs")
+  ("deb-libssl-dev" | "deb-nodejs")
+  ("deb-python3" | "deb-nodejs")
 ]
 extra-source "nodeenv_0.13.4-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/nodeenv/nodeenv_0.13.4-1.1_all.deb"

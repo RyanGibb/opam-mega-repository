@@ -28,7 +28,7 @@ depends: [
   "deb-libvorbis0a" {>= "1.1.2"}
   "deb-libvorbisenc2" {>= "1.1.2"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libavcodec58" {>= "7-4.0"} | "deb- libavcodec-extra58" {>= "7-4.0"})
+  ("deb-libavcodec58" {>= "7-4.0"} | "deb-libavcodec-extra58" {>= "7-4.0"})
 ]
 extra-source "libgmerlin-avdec1_1.2.0~dfsg-10_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gmerlin-avdecoder/libgmerlin-avdec1_1.2.0~dfsg-10_amd64.deb"

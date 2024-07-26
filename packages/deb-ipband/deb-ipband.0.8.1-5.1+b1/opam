@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.15"}
   "deb-libpcap0-8" {>= "0.9.8"}
   "deb-sysvinit-utils"
-  ("deb-exim4" | "deb- mail-transport-agent")
+  ("deb-exim4" | "deb-mail-transport-agent")
 ]
 extra-source "ipband_0.8.1-5.1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/ipband/ipband_0.8.1-5.1+b1_amd64.deb"

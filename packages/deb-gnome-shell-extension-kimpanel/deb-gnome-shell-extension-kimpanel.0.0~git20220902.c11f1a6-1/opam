@@ -8,8 +8,8 @@ remove: [
 depends: [
   "deb-gnome-shell" {< "44~"}
   "deb-gnome-shell" {>= "40~"}
-  ("deb-fcitx5" | "deb- fcitx")
-  ("deb-fcitx5-module-kimpanel" | "deb- fcitx-module-kimpanel")
+  ("deb-fcitx5" | "deb-fcitx")
+  ("deb-fcitx5-module-kimpanel" | "deb-fcitx-module-kimpanel")
 ]
 extra-source "gnome-shell-extension-kimpanel_0.0~git20220902.c11f1a6-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-shell-extension-kimpanel/gnome-shell-extension-kimpanel_0.0~git20220902.c11f1a6-1_all.deb"

@@ -11,7 +11,7 @@ depends: [
   "deb-libcommons-cli-java"
   "deb-libprotobuf-java"
   "deb-librhino-java"
-  ("deb-default-jre" | "deb- java6-runtime" | "deb- java7-runtime" | "deb- java8-runtime" | "deb- java9-runtime" | "deb- java10-runtime" | "deb- java11-runtime")
+  ("deb-default-jre" | "deb-java6-runtime" | "deb-java7-runtime" | "deb-java8-runtime" | "deb-java9-runtime" | "deb-java10-runtime" | "deb-java11-runtime")
 ]
 extra-source "ckbuilder_2.3.2+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/ckbuilder/ckbuilder_2.3.2+dfsg-2_all.deb"

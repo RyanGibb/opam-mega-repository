@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-python3-any"
-  ("deb-vim" {>= "2-8.1.0693-2~"} | "deb- neovim" {>= "0.2.2-1~"})
-  ("deb-vim-nox" | "deb- vim-python3")
+  ("deb-vim" {>= "2-8.1.0693-2~"} | "deb-neovim" {>= "0.2.2-1~"})
+  ("deb-vim-nox" | "deb-vim-python3")
 ]
 extra-source "vim-ultisnips_3.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/vim-ultisnips/vim-ultisnips_3.2-2_all.deb"

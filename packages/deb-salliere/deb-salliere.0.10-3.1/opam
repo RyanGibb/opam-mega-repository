@@ -10,7 +10,7 @@ depends: [
   "deb-libcommons-net-java"
   "deb-libcsv-java"
   "deb-libitext-java"
-  ("deb-default-jre" | "deb- java11-runtime")
+  ("deb-default-jre" | "deb-java11-runtime")
 ]
 extra-source "salliere_0.10-3.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/salliere/salliere_0.10-3.1_all.deb"

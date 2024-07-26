@@ -16,7 +16,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.0.2"}
   "deb-libsigc++-2-0-0v5" {>= "2.6.1"}
   "deb-libstdc++6" {>= "11"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "abgate_1.2.0-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/abgate/abgate_1.2.0-1+b1_amd64.deb"

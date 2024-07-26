@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libjs-jquery"
-  ("deb-lynx" | "deb- www-browser")
+  ("deb-lynx" | "deb-www-browser")
 ]
 extra-source "libqdjango-doc_0.6.2-3.3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qdjango/libqdjango-doc_0.6.2-3.3_all.deb"

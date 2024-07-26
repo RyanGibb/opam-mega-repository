@@ -21,7 +21,7 @@ depends: [
   "deb-libosgearthutil5" {>= "2.10.0"}
   "deb-libprotobuf17"
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "osgearth_2.10.0+dfsg-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/osgearth/osgearth_2.10.0+dfsg-1+b1_amd64.deb"

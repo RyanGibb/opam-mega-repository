@@ -15,7 +15,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.14.1"}
   "deb-libqt5xml5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "11"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "pencil2d_0.6.6-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pencil2d/pencil2d_0.6.6-3_amd64.deb"

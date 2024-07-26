@@ -32,8 +32,8 @@ depends: [
   "deb-xdg-utils"
   "deb-zip"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 conflicts: [
   "deb-r-base-latex"

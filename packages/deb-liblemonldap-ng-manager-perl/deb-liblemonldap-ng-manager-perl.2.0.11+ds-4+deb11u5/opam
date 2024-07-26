@@ -16,7 +16,7 @@ depends: [
   "deb-liblemonldap-ng-handler-perl" {= "2.0.11+ds-4+deb11u5"}
   "deb-libregexp-common-perl"
   "deb-perl-any"
-  ("deb-lemonldap-ng-fastcgi-server" {= "2.0.11+ds-4+deb11u5"} | "deb- lemonldap-ng-uwsgi-app" {= "2.0.11+ds-4+deb11u5"} | "deb- apache2" | "deb- httpd-cgi")
+  ("deb-lemonldap-ng-fastcgi-server" {= "2.0.11+ds-4+deb11u5"} | "deb-lemonldap-ng-uwsgi-app" {= "2.0.11+ds-4+deb11u5"} | "deb-apache2" | "deb-httpd-cgi")
 ]
 extra-source "liblemonldap-ng-manager-perl_2.0.11+ds-4+deb11u5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lemonldap-ng/liblemonldap-ng-manager-perl_2.0.11+ds-4+deb11u5_all.deb"

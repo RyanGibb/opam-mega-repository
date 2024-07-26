@@ -10,7 +10,7 @@ depends: [
   "deb-libgcc1" {>= "1-3.0"}
   "deb-libgl1"
   "deb-libstdc++6" {>= "5"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "liboglappth2_1.0.0-2+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libo/liboglappth/liboglappth2_1.0.0-2+b2_amd64.deb"

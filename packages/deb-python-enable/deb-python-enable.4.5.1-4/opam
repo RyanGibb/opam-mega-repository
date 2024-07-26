@@ -24,7 +24,7 @@ depends: [
   "deb-python-traits"
   "deb-python-traitsui"
   "deb-python-wxgtk3-0"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "python-enable_4.5.1-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-enable/python-enable_4.5.1-4_amd64.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libjs-jquery"
   "deb-libjs-underscore"
-  ("deb-lynx" | "deb- www-browser")
+  ("deb-lynx" | "deb-www-browser")
 ]
 extra-source "libnghttp2-doc_1.43.0-1+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/nghttp2/libnghttp2-doc_1.43.0-1+deb11u1_all.deb"

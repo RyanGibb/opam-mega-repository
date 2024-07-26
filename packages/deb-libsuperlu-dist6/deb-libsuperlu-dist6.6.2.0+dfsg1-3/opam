@@ -12,7 +12,7 @@ depends: [
   "deb-libgomp1" {>= "6"}
   "deb-libopenmpi3" {>= "4.0.2"}
   "deb-libstdc++6" {>= "9"}
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "libsuperlu-dist6_6.2.0+dfsg1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/superlu-dist/libsuperlu-dist6_6.2.0+dfsg1-3_amd64.deb"

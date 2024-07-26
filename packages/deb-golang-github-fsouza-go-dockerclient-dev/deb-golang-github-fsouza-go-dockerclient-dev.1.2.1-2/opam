@@ -14,8 +14,8 @@ depends: [
   "deb-golang-golang-x-net-dev"
   "deb-golang-golang-x-sys-dev"
   "deb-golang-logrus-dev"
-  ("deb-golang-github-gorilla-context-dev" | "deb- golang-context-dev")
-  ("deb-golang-github-stretchr-testify-dev" | "deb- golang-testify-dev")
+  ("deb-golang-github-gorilla-context-dev" | "deb-golang-context-dev")
+  ("deb-golang-github-stretchr-testify-dev" | "deb-golang-testify-dev")
 ]
 extra-source "golang-github-fsouza-go-dockerclient-dev_1.2.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/golang-github-fsouza-go-dockerclient/golang-github-fsouza-go-dockerclient-dev_1.2.1-2_all.deb"

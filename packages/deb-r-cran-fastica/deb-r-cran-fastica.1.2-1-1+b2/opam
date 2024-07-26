@@ -13,8 +13,8 @@ depends: [
   "deb-r-base-core" {>= "3.5.1-1"}
   "deb-r-cran-magrittr"
   "deb-r-cran-tibble"
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "r-cran-fastica_1.2-1-1+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-fastica/r-cran-fastica_1.2-1-1+b2_amd64.deb"

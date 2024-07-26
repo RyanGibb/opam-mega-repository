@@ -35,8 +35,8 @@ depends: [
   "deb-qml-module-qtquick-layouts"
   "deb-qml-module-qtquick-window2"
   "deb-qml-module-qtquick2"
-  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb- libqt5gui5-gles" {>= "5.15.0~"})
-  ("deb-libqt5quick5" {>= "5.10.0"} | "deb- libqt5quick5-gles" {>= "5.10.0"})
+  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb-libqt5gui5-gles" {>= "5.15.0~"})
+  ("deb-libqt5quick5" {>= "5.10.0"} | "deb-libqt5quick5-gles" {>= "5.10.0"})
 ]
 extra-source "nextcloud-desktop_3.7.3-1+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/nextcloud-desktop/nextcloud-desktop_3.7.3-1+deb12u1_amd64.deb"

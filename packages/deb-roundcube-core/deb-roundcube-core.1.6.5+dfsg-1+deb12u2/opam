@@ -29,8 +29,8 @@ depends: [
   "deb-php-net-smtp" {>= "1.10.0"}
   "deb-php-pear" {>= "1-1.10.1"}
   "deb-ucf"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-roundcube-mysql" {= "1.6.5+dfsg-1+deb12u2"} | "deb- roundcube-sqlite3" {= "1.6.5+dfsg-1+deb12u2"} | "deb- roundcube-pgsql" {= "1.6.5+dfsg-1+deb12u2"})
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-roundcube-mysql" {= "1.6.5+dfsg-1+deb12u2"} | "deb-roundcube-sqlite3" {= "1.6.5+dfsg-1+deb12u2"} | "deb-roundcube-pgsql" {= "1.6.5+dfsg-1+deb12u2"})
 ]
 extra-source "roundcube-core_1.6.5+dfsg-1+deb12u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/roundcube/roundcube-core_1.6.5+dfsg-1+deb12u2_all.deb"

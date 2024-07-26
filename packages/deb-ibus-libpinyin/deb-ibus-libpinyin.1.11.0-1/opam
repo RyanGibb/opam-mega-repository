@@ -16,7 +16,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-python3-any"
   "deb-python3-gi"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "ibus-libpinyin_1.11.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/ibus-libpinyin/ibus-libpinyin_1.11.0-1_amd64.deb"

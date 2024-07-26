@@ -12,7 +12,7 @@ depends: [
   "deb-python3" {< "3.12"}
   "deb-python3" {>= "3.11~"}
   "deb-python3-any"
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "jack-mixer_17-2+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jack-mixer/jack-mixer_17-2+b2_amd64.deb"

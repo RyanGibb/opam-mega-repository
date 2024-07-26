@@ -14,7 +14,7 @@ depends: [
   "deb-libqt5printsupport5" {>= "5.0.2"}
   "deb-libqt5widgets5" {>= "5.15.1"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "edfbrowser_1.81+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/edfbrowser/edfbrowser_1.81+dfsg-1_amd64.deb"

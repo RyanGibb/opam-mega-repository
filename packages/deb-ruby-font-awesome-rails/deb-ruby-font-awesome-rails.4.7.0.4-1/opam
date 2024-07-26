@@ -9,7 +9,7 @@ depends: [
   "deb-fonts-font-awesome" {>= "4.6.3~"}
   "deb-ruby-activesupport"
   "deb-ruby-railties"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-font-awesome-rails_4.7.0.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-font-awesome-rails/ruby-font-awesome-rails_4.7.0.4-1_all.deb"

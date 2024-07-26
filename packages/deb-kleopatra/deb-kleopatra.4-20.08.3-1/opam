@@ -43,7 +43,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-paperkey"
   "deb-pinentry-qt"
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "kleopatra_4:20.08.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kleopatra/kleopatra_20.08.3-1_amd64.deb"

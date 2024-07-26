@@ -17,8 +17,8 @@ depends: [
   "deb-python3-xlib"
   "deb-python3-yaml"
   "deb-udev"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-passwd" | "deb- adduser")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-passwd" | "deb-adduser")
 ]
 extra-source "solaar_1.1.8+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/solaar/solaar_1.1.8+dfsg-2_all.deb"

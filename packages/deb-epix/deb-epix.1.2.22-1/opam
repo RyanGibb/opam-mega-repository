@@ -11,8 +11,8 @@ depends: [
   "deb-ghostscript"
   "deb-texlive-latex-base"
   "deb-texlive-pictures"
-  ("deb-g++" | "deb- c++-compiler")
-  ("deb-imagemagick" | "deb- graphicsmagick-imagemagick-compat")
+  ("deb-g++" | "deb-c++-compiler")
+  ("deb-imagemagick" | "deb-graphicsmagick-imagemagick-compat")
 ]
 extra-source "epix_1.2.22-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/epix/epix_1.2.22-1_amd64.deb"

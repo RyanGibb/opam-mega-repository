@@ -14,7 +14,7 @@ depends: [
   "deb-python3" {< "3.12"}
   "deb-python3" {>= "3.11~"}
   "deb-python3-any"
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "python3-pyo_1.0.4-1+b5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-pyo/python3-pyo_1.0.4-1+b5_amd64.deb"

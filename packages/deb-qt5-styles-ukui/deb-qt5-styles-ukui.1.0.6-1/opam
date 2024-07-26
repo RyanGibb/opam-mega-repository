@@ -17,7 +17,7 @@ depends: [
   "deb-libqt5x11extras5" {>= "5.6.0"}
   "deb-libstdc++6" {>= "4.1.1"}
   "deb-libxcb1"
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "qt5-styles-ukui_1.0.6-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qt5-ukui-platformtheme/qt5-styles-ukui_1.0.6-1_amd64.deb"

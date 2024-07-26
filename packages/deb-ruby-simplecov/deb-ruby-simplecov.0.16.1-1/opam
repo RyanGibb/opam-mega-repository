@@ -10,7 +10,7 @@ depends: [
   "deb-ruby-json" {< "3"}
   "deb-ruby-json" {>= "1.8"}
   "deb-ruby-simplecov-html" {>= "0.10.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-simplecov_0.16.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-simplecov/ruby-simplecov_0.16.1-1_all.deb"

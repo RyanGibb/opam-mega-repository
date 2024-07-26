@@ -9,8 +9,8 @@ depends: [
   "deb-python-any" {< "2.8"}
   "deb-python-any" {>= "2.7.5-5~"}
   "deb-python-enchant"
-  ("deb-python-gtk2" | "deb- gir1-2-gtk-3-0")
-  ("deb-python-gtk2" | "deb- python-gi")
+  ("deb-python-gtk2" | "deb-gir1-2-gtk-3-0")
+  ("deb-python-gtk2" | "deb-python-gi")
 ]
 extra-source "python-gtkspellcheck_4.0.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pygtkspellcheck/python-gtkspellcheck_4.0.5-1_all.deb"

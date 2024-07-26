@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r feedbackd-common"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "feedbackd-common_0.0.0+git20210125-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/feedbackd/feedbackd-common_0.0.0+git20210125-1_all.deb"

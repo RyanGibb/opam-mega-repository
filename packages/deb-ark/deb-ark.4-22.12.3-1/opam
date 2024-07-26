@@ -36,7 +36,7 @@ depends: [
   "deb-libstdc++6" {>= "5"}
   "deb-libzip4" {>= "1.6.0"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb-libqt5gui5-gles" {>= "5.15.2~"})
 ]
 extra-source "ark_4:22.12.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/ark/ark_22.12.3-1_amd64.deb"

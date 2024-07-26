@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-gnome-shell" {>= "42"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-shell-extensions-extra_20230205-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-shell-extensions-extra/gnome-shell-extensions-extra_20230205-2_all.deb"

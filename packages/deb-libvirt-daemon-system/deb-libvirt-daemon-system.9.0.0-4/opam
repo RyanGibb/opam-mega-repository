@@ -14,9 +14,9 @@ depends: [
   "deb-libvirt-daemon-config-nwfilter" {= "9.0.0-4"}
   "deb-logrotate"
   "deb-polkitd" {>= "121+compat0.1-2"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-iptables" | "deb- firewalld")
-  ("deb-libvirt-daemon-system-systemd" {= "9.0.0-4"} | "deb- libvirt-daemon-system-sysv" {= "9.0.0-4"})
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-iptables" | "deb-firewalld")
+  ("deb-libvirt-daemon-system-systemd" {= "9.0.0-4"} | "deb-libvirt-daemon-system-sysv" {= "9.0.0-4"})
 ]
 extra-source "libvirt-daemon-system_9.0.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libv/libvirt/libvirt-daemon-system_9.0.0-4_amd64.deb"

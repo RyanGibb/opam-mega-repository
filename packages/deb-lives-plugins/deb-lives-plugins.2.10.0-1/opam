@@ -34,8 +34,8 @@ depends: [
   "deb-python3"
   "deb-python3-any"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libavcodec58" {>= "7-4.0"} | "deb- libavcodec-extra58" {>= "7-4.0"})
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libavcodec58" {>= "7-4.0"} | "deb-libavcodec-extra58" {>= "7-4.0"})
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "lives-plugins_2.10.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lives/lives-plugins_2.10.0-1_amd64.deb"

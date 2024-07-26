@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libcdi0" {= "2.1.1-1+deb12u1"}
-  ("deb-gfortran-12" | "deb- gfortran-mod-15")
+  ("deb-gfortran-12" | "deb-gfortran-mod-15")
 ]
 extra-source "libcdi-dev_2.1.1-1+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cdo/libcdi-dev_2.1.1-1+deb12u1_amd64.deb"

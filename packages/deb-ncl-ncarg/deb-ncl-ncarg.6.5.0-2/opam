@@ -44,9 +44,9 @@ depends: [
   "deb-libxrender1"
   "deb-libxt6"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
-  ("deb-tcsh" | "deb- csh" | "deb- c-shell")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
+  ("deb-tcsh" | "deb-csh" | "deb-c-shell")
 ]
 extra-source "ncl-ncarg_6.5.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/ncl/ncl-ncarg_6.5.0-2_amd64.deb"

@@ -16,7 +16,7 @@ depends: [
   "deb-libxneur" {< "0.20.0-99"}
   "deb-libxneur" {>= "0.20.0"}
   "deb-xneur" {>= "0.20.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gxneur_0.20.0-2.1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gxneur/gxneur_0.20.0-2.1+b1_amd64.deb"

@@ -44,8 +44,8 @@ depends: [
   "deb-libxxf86vm1"
   "deb-retroarch-assets"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libavcodec58" {>= "7-4.0"} | "deb- libavcodec-extra58" {>= "7-4.0"})
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libavcodec58" {>= "7-4.0"} | "deb-libavcodec-extra58" {>= "7-4.0"})
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "retroarch_1.7.3+dfsg1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/retroarch/retroarch_1.7.3+dfsg1-1_amd64.deb"

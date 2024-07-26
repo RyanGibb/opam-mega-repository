@@ -10,7 +10,7 @@ depends: [
   "deb-libfftw3-double3" {>= "3.3.5"}
   "deb-libgsl25" {>= "2.6"}
   "deb-libsndfile1" {>= "1.0.20"}
-  ("deb-puredata" | "deb- pd")
+  ("deb-puredata" | "deb-pd")
 ]
 extra-source "pd-iemmatrix_0.3.2-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pd-iemmatrix/pd-iemmatrix_0.3.2-1+b1_amd64.deb"

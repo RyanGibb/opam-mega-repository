@@ -23,8 +23,8 @@ depends: [
   "deb-tzdata"
   "deb-ucf"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-media-types" | "deb- mime-support")
-  ("deb-systemd" | "deb- systemd-tmpfiles")
+  ("deb-media-types" | "deb-mime-support")
+  ("deb-systemd" | "deb-systemd-tmpfiles")
 ]
 extra-source "php8.2-fpm_8.2.20-1~deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/php8.2/php8.2-fpm_8.2.20-1~deb12u1_amd64.deb"

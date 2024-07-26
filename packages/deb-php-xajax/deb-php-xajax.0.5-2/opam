@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r php-xajax"]
 ]
 depends: [
-  ("deb-php" | "deb- php-cgi" | "deb- php-cli")
+  ("deb-php" | "deb-php-cgi" | "deb-php-cli")
 ]
 extra-source "php-xajax_0.5-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/php-xajax/php-xajax_0.5-2_all.deb"

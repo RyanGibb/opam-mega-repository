@@ -8,8 +8,8 @@ remove: [
 depends: [
   "deb-libfreetype-dev"
   "deb-libftgl2" {= "2.4.0-2.1"}
-  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
-  ("deb-libglu1-mesa-dev" | "deb- libglu-dev")
+  ("deb-libgl1-mesa-dev" | "deb-libgl-dev")
+  ("deb-libglu1-mesa-dev" | "deb-libglu-dev")
 ]
 extra-source "libftgl-dev_2.4.0-2.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/ftgl/libftgl-dev_2.4.0-2.1_amd64.deb"

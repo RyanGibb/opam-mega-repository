@@ -35,7 +35,7 @@ depends: [
   "deb-libxcb-keysyms1" {>= "0.4.0"}
   "deb-libxcb-shape0"
   "deb-libxcb1"
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus")
 ]
 extra-source "enlightenment_0.22.4-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/e17/enlightenment_0.22.4-2_amd64.deb"

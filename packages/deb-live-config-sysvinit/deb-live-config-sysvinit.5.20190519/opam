@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r live-config-sysvinit"]
 ]
 depends: [
-  ("deb-sysvinit-core" | "deb- sysvinit" {< "2.88dsf-44"})
+  ("deb-sysvinit-core" | "deb-sysvinit" {< "2.88dsf-44"})
 ]
 conflicts: [
   "deb-live-config-backend"

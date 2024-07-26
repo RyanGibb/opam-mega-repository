@@ -21,7 +21,7 @@ depends: [
   "deb-python3-gi" {>= "2.90.3"}
   "deb-python3-xdg"
   "deb-totem" {= "3.38.0-2"}
-  ("deb-libgdk-pixbuf-2-0-0" {>= "2.23.0"} | "deb- libgdk-pixbuf2-0-0" {>= "2.23.0"})
+  ("deb-libgdk-pixbuf-2-0-0" {>= "2.23.0"} | "deb-libgdk-pixbuf2-0-0" {>= "2.23.0"})
 ]
 extra-source "totem-plugins_3.38.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/totem/totem-plugins_3.38.0-2_amd64.deb"

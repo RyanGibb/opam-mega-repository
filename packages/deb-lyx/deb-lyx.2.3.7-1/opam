@@ -18,7 +18,7 @@ depends: [
   "deb-lyx-common" {= "2.3.7-1"}
   "deb-xdg-utils"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "lyx_2.3.7-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lyx/lyx_2.3.7-1_amd64.deb"

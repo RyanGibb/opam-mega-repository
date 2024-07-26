@@ -13,7 +13,7 @@ depends: [
   "deb-libgcc-s1" {>= "3.0"}
   "deb-libglib2-0-0" {>= "2.37.3"}
   "deb-libstdc++6" {>= "6"}
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus" | "deb- dbus-x11")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus" | "deb-dbus-x11")
 ]
 extra-source "audacious_4.0.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/audacious/audacious_4.0.5-1_amd64.deb"

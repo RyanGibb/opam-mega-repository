@@ -16,7 +16,7 @@ depends: [
   "deb-python3" {>= "3.9~"}
   "deb-python3-any"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-swig2-0" | "deb- swig")
+  ("deb-swig2-0" | "deb-swig")
 ]
 extra-source "python3-sbml5_5.19.0+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libs/libsbml/python3-sbml5_5.19.0+dfsg-1_amd64.deb"

@@ -10,7 +10,7 @@ depends: [
   "deb-emacsen-common" {>= "2.0.8"}
   "deb-flim"
   "deb-make"
-  ("deb-emacs-nox" | "deb- emacs" | "deb- emacsen")
+  ("deb-emacs-nox" | "deb-emacs" | "deb-emacsen")
 ]
 extra-source "mu-cite_8.1+0.20180823-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mu-cite/mu-cite_8.1+0.20180823-1_all.deb"

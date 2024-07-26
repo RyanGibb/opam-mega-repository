@@ -12,7 +12,7 @@ depends: [
   "deb-libglib2-0-0" {>= "2.16.0"}
   "deb-libpurple0" {>= "2.2.0"}
   "deb-pidgin"
-  ("deb-gnome-screensaver" {>= "2.26"} | "deb- kscreensaver" {>= "4.2"})
+  ("deb-gnome-screensaver" {>= "2.26"} | "deb-kscreensaver" {>= "4.2"})
 ]
 extra-source "pidgin-awayonlock_0.5.2-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pidgin-awayonlock/pidgin-awayonlock_0.5.2-1+b1_amd64.deb"

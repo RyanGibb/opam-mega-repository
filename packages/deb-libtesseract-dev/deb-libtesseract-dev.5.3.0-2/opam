@@ -9,7 +9,7 @@ depends: [
   "deb-libarchive-dev"
   "deb-libleptonica-dev"
   "deb-libtesseract5" {= "5.3.0-2"}
-  ("deb-libcurl4-dev" | "deb- libcurl4-gnutls-dev")
+  ("deb-libcurl4-dev" | "deb-libcurl4-gnutls-dev")
 ]
 extra-source "libtesseract-dev_5.3.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tesseract/libtesseract-dev_5.3.0-2_amd64.deb"

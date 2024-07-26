@@ -11,8 +11,8 @@ depends: [
   "deb-libx11-dev" {>= "2-1.0.0"}
   "deb-libxft2" {= "2.3.2-2"}
   "deb-libxrender-dev"
-  ("deb-libc6-dev" | "deb- libc-dev")
-  ("deb-zlib1g-dev" | "deb- libz-dev")
+  ("deb-libc6-dev" | "deb-libc-dev")
+  ("deb-zlib1g-dev" | "deb-libz-dev")
 ]
 extra-source "libxft-dev_2.3.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xft/libxft-dev_2.3.2-2_amd64.deb"

@@ -17,7 +17,7 @@ depends: [
   "deb-uwsgi-core"
   "deb-uwsgi-src" {= "2.0.21-5.1"}
   "deb-zlib1g-dev"
-  ("deb-libc6-dev" | "deb- libc-dev")
+  ("deb-libc6-dev" | "deb-libc-dev")
 ]
 extra-source "uwsgi-dev_2.0.21-5.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/uwsgi/uwsgi-dev_2.0.21-5.1_amd64.deb"

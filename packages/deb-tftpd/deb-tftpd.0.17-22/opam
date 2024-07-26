@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.11"}
-  ("deb-openbsd-inetd" | "deb- inet-superserver")
+  ("deb-openbsd-inetd" | "deb-inet-superserver")
 ]
 extra-source "tftpd_0.17-22_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/netkit-tftp/tftpd_0.17-22_amd64.deb"

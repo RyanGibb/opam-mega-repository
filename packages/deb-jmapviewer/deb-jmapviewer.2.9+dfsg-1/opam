@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r jmapviewer"]
 ]
 depends: [
-  ("deb-default-jre" {>= "2-1.8"} | "deb- java8-runtime")
+  ("deb-default-jre" {>= "2-1.8"} | "deb-java8-runtime")
 ]
 extra-source "jmapviewer_2.9+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jmapviewer/jmapviewer_2.9+dfsg-1_all.deb"

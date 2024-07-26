@@ -11,7 +11,7 @@ depends: [
   "deb-libqt5core5a" {>= "5.15.1"}
   "deb-libqt5widgets5" {>= "5.10.0"}
   "deb-libstdc++6" {>= "4.1.1"}
-  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb-libqt5gui5-gles" {>= "5.11.0~rc1"})
 ]
 extra-source "libqcodeeditor0_1.0+1gitdc644d-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qcodeeditor/libqcodeeditor0_1.0+1gitdc644d-1+b1_amd64.deb"

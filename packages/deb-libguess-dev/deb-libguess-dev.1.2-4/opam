@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libguess1" {= "1.2-4"}
-  ("deb-pkgconf" | "deb- pkg-config")
+  ("deb-pkgconf" | "deb-pkg-config")
 ]
 extra-source "libguess-dev_1.2-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libg/libguess/libguess-dev_1.2-4_amd64.deb"

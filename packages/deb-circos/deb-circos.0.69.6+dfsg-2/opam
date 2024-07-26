@@ -31,7 +31,7 @@ depends: [
   "deb-libsvg-perl"
   "deb-libtext-format-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.15.3"} | "deb- libmath-bigint-perl")
+  ("deb-perl" {>= "5.15.3"} | "deb-libmath-bigint-perl")
 ]
 extra-source "circos_0.69.6+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/circos/circos_0.69.6+dfsg-2_all.deb"

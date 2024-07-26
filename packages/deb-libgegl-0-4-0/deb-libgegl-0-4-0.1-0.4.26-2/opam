@@ -31,7 +31,7 @@ depends: [
   "deb-libtiff5" {>= "4.0.3"}
   "deb-libumfpack5" {>= "1-4.5.2"}
   "deb-libwebp6" {>= "0.5.1"}
-  ("deb-libgdk-pixbuf-2-0-0" {>= "2.31.1"} | "deb- libgdk-pixbuf2-0-0" {>= "2.31.1"})
+  ("deb-libgdk-pixbuf-2-0-0" {>= "2.31.1"} | "deb-libgdk-pixbuf2-0-0" {>= "2.31.1"})
 ]
 extra-source "libgegl-0.4-0_1:0.4.26-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gegl/libgegl-0.4-0_0.4.26-2_amd64.deb"

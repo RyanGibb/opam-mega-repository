@@ -32,7 +32,7 @@ depends: [
   "deb-libxrender1"
   "deb-libxtst6"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "cairo-dock-terminal-plug-in_3.4.1-4+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cairo-dock-plug-ins/cairo-dock-terminal-plug-in_3.4.1-4+b1_amd64.deb"

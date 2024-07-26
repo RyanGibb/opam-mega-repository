@@ -26,8 +26,8 @@ depends: [
   "deb-php-symfony-event-dispatcher"
   "deb-php-symfony-finder"
   "deb-php-xml"
-  ("deb-lighttpd" | "deb- libapache2-mod-php" | "deb- httpd-cgi")
-  ("deb-php-sqlite3" | "deb- php-pgsql" | "deb- php-mysql")
+  ("deb-lighttpd" | "deb-libapache2-mod-php" | "deb-httpd-cgi")
+  ("deb-php-sqlite3" | "deb-php-pgsql" | "deb-php-mysql")
 ]
 extra-source "kanboard_1.2.26+ds-2+deb12u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kanboard/kanboard_1.2.26+ds-2+deb12u2_all.deb"

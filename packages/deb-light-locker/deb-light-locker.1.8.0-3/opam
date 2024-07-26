@@ -19,7 +19,7 @@ depends: [
   "deb-libxext6"
   "deb-libxss1"
   "deb-lightdm"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "light-locker_1.8.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/light-locker/light-locker_1.8.0-3_amd64.deb"

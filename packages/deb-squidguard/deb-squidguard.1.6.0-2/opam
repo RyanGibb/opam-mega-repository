@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.14"}
   "deb-libdb5-3"
   "deb-libldap-2-4-2" {>= "2.4.7"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "squidguard_1.6.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/squidguard/squidguard_1.6.0-2_amd64.deb"

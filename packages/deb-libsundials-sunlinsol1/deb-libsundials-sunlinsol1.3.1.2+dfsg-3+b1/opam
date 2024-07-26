@@ -14,8 +14,8 @@ depends: [
   "deb-libsuitesparseconfig5" {>= "1-5.0.0"}
   "deb-libsundials-nvecserial3" {>= "3.1.1"}
   "deb-libsundials-sunmatrix1" {>= "3.1.2"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libsundials-sunlinsol1_3.1.2+dfsg-3+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sundials/libsundials-sunlinsol1_3.1.2+dfsg-3+b1_amd64.deb"

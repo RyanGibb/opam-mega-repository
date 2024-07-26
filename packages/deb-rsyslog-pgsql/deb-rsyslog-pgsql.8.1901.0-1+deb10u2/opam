@@ -11,7 +11,7 @@ depends: [
   "deb-libpq5"
   "deb-rsyslog" {= "8.1901.0-1+deb10u2"}
   "deb-ucf"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "rsyslog-pgsql_8.1901.0-1+deb10u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rsyslog/rsyslog-pgsql_8.1901.0-1+deb10u2_amd64.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libjs-jquery"
   "deb-node-jquery" {>= "3.5.1+dfsg"}
-  ("deb-lynx" | "deb- www-browser")
+  ("deb-lynx" | "deb-www-browser")
 ]
 extra-source "libomxil-bellagio-doc_0.9.3-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libo/libomxil-bellagio/libomxil-bellagio-doc_0.9.3-6_all.deb"

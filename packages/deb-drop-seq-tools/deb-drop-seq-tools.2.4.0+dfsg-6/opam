@@ -19,7 +19,7 @@ depends: [
   "deb-libpicard-java"
   "deb-libyaml-snake-java"
   "deb-picard-tools"
-  ("deb-default-jre" | "deb- java-runtime")
+  ("deb-default-jre" | "deb-java-runtime")
 ]
 extra-source "drop-seq-tools_2.4.0+dfsg-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/drop-seq/drop-seq-tools_2.4.0+dfsg-6_all.deb"

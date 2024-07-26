@@ -18,7 +18,7 @@ depends: [
   "deb-rsync"
   "deb-sudo"
   "deb-tftpd-hpa"
-  ("deb-telnet" | "deb- telnet-client")
+  ("deb-telnet" | "deb-telnet-client")
 ]
 extra-source "lava_2023.01-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lava/lava_2023.01-2_all.deb"

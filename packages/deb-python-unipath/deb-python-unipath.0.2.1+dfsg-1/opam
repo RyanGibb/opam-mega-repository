@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-python" {< "2.8"}
   "deb-python" {>= "2.6.6-7~"}
-  ("deb-python2-7" | "deb- python2-6")
+  ("deb-python2-7" | "deb-python2-6")
 ]
 extra-source "python-unipath_0.2.1+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-unipath/python-unipath_0.2.1+dfsg-1_all.deb"

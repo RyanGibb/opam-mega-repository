@@ -21,7 +21,7 @@ depends: [
   "deb-libpng-dev"
   "deb-mathgl"
   "deb-udav"
-  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
+  ("deb-libgl1-mesa-dev" | "deb-libgl-dev")
 ]
 extra-source "libmgl-dev_8.0.1-4+b4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mathgl/libmgl-dev_8.0.1-4+b4_amd64.deb"

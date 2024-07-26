@@ -19,7 +19,7 @@ depends: [
   "deb-libpangocairo-1-0-0" {>= "1.14.0"}
   "deb-libpangoft2-1-0-0" {>= "1.14.0"}
   "deb-libstdc++6" {>= "4.1.1"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gerbv_2.7.0-1+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gerbv/gerbv_2.7.0-1+deb10u1_amd64.deb"

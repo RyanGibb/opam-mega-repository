@@ -16,7 +16,7 @@ depends: [
   "deb-python3-requests"
   "deb-unzip"
   "deb-xdg-utils"
-  ("deb-unrar" | "deb- unrar-free")
+  ("deb-unrar" | "deb-unrar-free")
 ]
 extra-source "minigalaxy_1.2.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/minigalaxy/minigalaxy_1.2.2-1_all.deb"

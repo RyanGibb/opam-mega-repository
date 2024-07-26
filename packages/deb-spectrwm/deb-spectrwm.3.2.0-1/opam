@@ -20,7 +20,7 @@ depends: [
   "deb-libxft2" {> "2.1.1"}
   "deb-libxt6"
   "deb-suckless-tools"
-  ("deb-xterm" | "deb- x-terminal-emulator")
+  ("deb-xterm" | "deb-x-terminal-emulator")
 ]
 extra-source "spectrwm_3.2.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/spectrwm/spectrwm_3.2.0-1_amd64.deb"

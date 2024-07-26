@@ -25,8 +25,8 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-python"
   "deb-python3"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "muse_3.0.2+ds1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/muse/muse_3.0.2+ds1-1_amd64.deb"

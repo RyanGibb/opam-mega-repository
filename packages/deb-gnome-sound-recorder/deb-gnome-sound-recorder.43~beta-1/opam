@@ -17,7 +17,7 @@ depends: [
   "deb-gjs"
   "deb-gstreamer1-0-plugins-base"
   "deb-gstreamer1-0-plugins-good" {>= "1.18.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-sound-recorder_43~beta-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-sound-recorder/gnome-sound-recorder_43~beta-1_all.deb"

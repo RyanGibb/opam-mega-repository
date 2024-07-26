@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl"
-  ("deb-perl" {>= "5.10.1"} | "deb- libio-compress-perl" | "deb- libio-compress-bzip2-perl")
+  ("deb-perl" {>= "5.10.1"} | "deb-libio-compress-perl" | "deb-libio-compress-bzip2-perl")
 ]
 extra-source "libterm-ttyrec-plus-perl_0.09-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libt/libterm-ttyrec-plus-perl/libterm-ttyrec-plus-perl_0.09-1_all.deb"

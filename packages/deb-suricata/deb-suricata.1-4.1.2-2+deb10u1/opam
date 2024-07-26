@@ -36,7 +36,7 @@ depends: [
   "deb-python-any" {>= "2.7~"}
   "deb-python-simplejson"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-python" {>= "2.7"} | "deb- python-argparse")
+  ("deb-python" {>= "2.7"} | "deb-python-argparse")
 ]
 conflicts: [
   "deb-libhtp1" {< "0.5.16"}

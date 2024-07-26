@@ -56,7 +56,7 @@ depends: [
   "deb-libtf2-2d" {>= "0.7.5"}
   "deb-libwxbase3-0-0v5" {>= "3.0.5.1+dfsg"}
   "deb-libwxgtk3-0-gtk3-0v5" {>= "3.0.5.1+dfsg"}
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "mrpt-apps_1:2.1.7-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mrpt/mrpt-apps_2.1.7-2_amd64.deb"

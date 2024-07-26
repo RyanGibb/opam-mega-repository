@@ -37,7 +37,7 @@ depends: [
   "deb-nailgun"
   "deb-ruby-jar-dependencies"
   "deb-ruby-psych"
-  ("deb-default-jre" | "deb- java9-runtime")
+  ("deb-default-jre" | "deb-java9-runtime")
 ]
 extra-source "jruby_9.1.17.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jruby/jruby_9.1.17.0-3_all.deb"

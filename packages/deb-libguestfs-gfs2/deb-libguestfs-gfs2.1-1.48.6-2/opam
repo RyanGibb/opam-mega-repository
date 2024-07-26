@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libguestfs0" {= "1-1.48.6-2"}
-  ("deb-gfs2-utils" | "deb- gfs2-tools" | "deb- gfs-tools")
+  ("deb-gfs2-utils" | "deb-gfs2-tools" | "deb-gfs-tools")
 ]
 extra-source "libguestfs-gfs2_1:1.48.6-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libg/libguestfs/libguestfs-gfs2_1.48.6-2_amd64.deb"

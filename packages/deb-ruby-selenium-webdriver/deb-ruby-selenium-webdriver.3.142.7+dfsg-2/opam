@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-childprocess" {>= "0.5"}
   "deb-ruby-zip" {>= "1.2.2"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-selenium-webdriver_3.142.7+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-selenium-webdriver/ruby-selenium-webdriver_3.142.7+dfsg-2_all.deb"

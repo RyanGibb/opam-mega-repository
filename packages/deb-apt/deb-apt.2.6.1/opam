@@ -15,7 +15,7 @@ depends: [
   "deb-libseccomp2" {>= "2.4.2"}
   "deb-libstdc++6" {>= "11"}
   "deb-libsystemd0"
-  ("deb-gpgv" | "deb- gpgv2" | "deb- gpgv1")
+  ("deb-gpgv" | "deb-gpgv2" | "deb-gpgv1")
 ]
 extra-source "apt_2.6.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/apt/apt_2.6.1_amd64.deb"

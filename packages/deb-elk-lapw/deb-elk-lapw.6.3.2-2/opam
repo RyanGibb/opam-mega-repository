@@ -14,8 +14,8 @@ depends: [
   "deb-libopenmpi3" {>= "4.0.5"}
   "deb-libxc5" {>= "4.2.1"}
   "deb-mpi-default-bin"
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "elk-lapw_6.3.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/elkcode/elk-lapw_6.3.2-2_amd64.deb"

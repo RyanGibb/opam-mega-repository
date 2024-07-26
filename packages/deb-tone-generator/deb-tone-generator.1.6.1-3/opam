@@ -14,7 +14,7 @@ depends: [
   "deb-libglib2-0-0" {>= "2.12.0"}
   "deb-libpulse-mainloop-glib0" {>= "0.99.1"}
   "deb-libpulse0" {>= "0.99.1"}
-  ("deb-pulseaudio" | "deb- pipewire-pulse")
+  ("deb-pulseaudio" | "deb-pipewire-pulse")
 ]
 extra-source "tone-generator_1.6.1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tone-generator/tone-generator_1.6.1-3_amd64.deb"

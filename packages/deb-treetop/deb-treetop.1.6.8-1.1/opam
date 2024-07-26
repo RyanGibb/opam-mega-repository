@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-treetop"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "treetop_1.6.8-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-treetop/treetop_1.6.8-1.1_all.deb"

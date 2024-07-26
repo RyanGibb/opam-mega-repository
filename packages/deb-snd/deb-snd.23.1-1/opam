@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-snd-common"
-  ("deb-snd-gui-jack" | "deb- snd-gui-pulse" | "deb- snd-nox")
+  ("deb-snd-gui-jack" | "deb-snd-gui-pulse" | "deb-snd-nox")
 ]
 extra-source "snd_23.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/snd/snd_23.1-1_all.deb"

@@ -10,8 +10,8 @@ depends: [
   "deb-libdeflate0" {>= "1.0"}
   "deb-libzstd1" {>= "1.5.2"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "plink2_2.00~a3.5-220809+dfsg-1+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/plink2/plink2_2.00~a3.5-220809+dfsg-1+b2_amd64.deb"

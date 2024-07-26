@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-asciidoctor" {>= "1.5"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-asciidoctor-plantuml_0.0.8-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-asciidoctor-plantuml/ruby-asciidoctor-plantuml_0.0.8-1_all.deb"

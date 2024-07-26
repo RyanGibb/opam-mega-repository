@@ -13,8 +13,8 @@ depends: [
   "deb-libnamespace-autoclean-perl"
   "deb-libpath-tiny-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.17.1"} | "deb- libcpan-meta-requirements-perl" {>= "2.121"})
-  ("deb-perl" {>= "5.19.3"} | "deb- libscalar-list-utils-perl" {>= "1-1.29"})
+  ("deb-perl" {>= "5.17.1"} | "deb-libcpan-meta-requirements-perl" {>= "2.121"})
+  ("deb-perl" {>= "5.19.3"} | "deb-libscalar-list-utils-perl" {>= "1-1.29"})
 ]
 extra-source "libdist-zilla-plugin-makemaker-awesome-perl_0.47-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libd/libdist-zilla-plugin-makemaker-awesome-perl/libdist-zilla-plugin-makemaker-awesome-perl_0.47-1_all.deb"

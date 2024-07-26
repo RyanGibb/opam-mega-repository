@@ -11,8 +11,8 @@ depends: [
   "deb-python3-packaging"
   "deb-python3-pkg-resources"
   "deb-python3-typing-extensions"
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
-  ("deb-python3-tomli" | "deb- python3" {> "3.11"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
+  ("deb-python3-tomli" | "deb-python3" {> "3.11"})
 ]
 extra-source "python3-setuptools-scm_7.1.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/setuptools-scm/python3-setuptools-scm_7.1.0-3_all.deb"

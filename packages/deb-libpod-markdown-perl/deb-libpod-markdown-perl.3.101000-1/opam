@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl"
-  ("deb-perl" {>= "5.18.0"} | "deb- libpod-simple-perl" {>= "3.27"})
+  ("deb-perl" {>= "5.18.0"} | "deb-libpod-simple-perl" {>= "3.27"})
 ]
 extra-source "libpod-markdown-perl_3.101000-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libp/libpod-markdown-perl/libpod-markdown-perl_3.101000-1_all.deb"

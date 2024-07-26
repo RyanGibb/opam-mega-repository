@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-temple"
   "deb-ruby-tilt"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-haml_5.0.4-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-haml/ruby-haml_5.0.4-3_all.deb"

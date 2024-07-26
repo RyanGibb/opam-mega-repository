@@ -15,7 +15,7 @@ depends: [
   "deb-python-pygments"
   "deb-python-tempita"
   "deb-python-webob"
-  ("deb-python" {>= "2.6"} | "deb- python-simplejson")
+  ("deb-python" {>= "2.6"} | "deb-python-simplejson")
 ]
 extra-source "python-weberror_0.13.1+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-weberror/python-weberror_0.13.1+dfsg-1_all.deb"

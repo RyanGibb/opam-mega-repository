@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-flexmock"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-flexmock_2.0.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-flexmock/ruby-flexmock_2.0.4-1_all.deb"

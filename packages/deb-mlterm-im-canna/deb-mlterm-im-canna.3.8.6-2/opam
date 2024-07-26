@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.14"}
   "deb-libcanna1g" {>= "3.7p3"}
   "deb-mlterm-common" {= "3.8.6-2"}
-  ("deb-mlterm" {= "3.8.6-2"} | "deb- mlterm-tiny" {= "3.8.6-2"})
+  ("deb-mlterm" {= "3.8.6-2"} | "deb-mlterm-tiny" {= "3.8.6-2"})
 ]
 extra-source "mlterm-im-canna_3.8.6-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mlterm/mlterm-im-canna_3.8.6-2_amd64.deb"

@@ -9,7 +9,7 @@ depends: [
   "deb-homer-api" {= "5.0.6+dfsg2-3.2"}
   "deb-kamailio-mysql-modules" {>= "4.3.0"}
   "deb-libdbd-mysql-perl"
-  ("deb-php-mysql" | "deb- php5-mysql")
+  ("deb-php-mysql" | "deb-php5-mysql")
 ]
 conflicts: [
   "deb-homer-api-postgresql"

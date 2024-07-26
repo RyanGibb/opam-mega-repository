@@ -10,7 +10,7 @@ depends: [
   "deb-libc6-dev"
   "deb-libwcstools1" {>= "3.8.4"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-gcc" | "deb- c-compiler")
+  ("deb-gcc" | "deb-c-compiler")
 ]
 extra-source "libfuntools1_1.4.8-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/funtools/libfuntools1_1.4.8-1_amd64.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-lsb-base"
   "deb-squid"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "squid-deb-proxy_0.8.15_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/squid-deb-proxy/squid-deb-proxy_0.8.15_all.deb"

@@ -10,7 +10,7 @@ depends: [
   "deb-libdate-calc-perl"
   "deb-libnet-server-perl"
   "deb-perl"
-  ("deb-libdbd-pg-perl" | "deb- libdbd-mysql-perl" | "deb- libdbd-sqlite3-perl")
+  ("deb-libdbd-pg-perl" | "deb-libdbd-mysql-perl" | "deb-libdbd-sqlite3-perl")
 ]
 extra-source "sqlgrey_1:1.8.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sqlgrey/sqlgrey_1.8.0-1_all.deb"

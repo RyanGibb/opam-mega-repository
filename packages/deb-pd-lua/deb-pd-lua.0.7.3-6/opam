@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.4"}
   "deb-liblua5-2-0" {>= "5.2.4"}
-  ("deb-puredata" | "deb- pd")
+  ("deb-puredata" | "deb-pd")
 ]
 extra-source "pd-lua_0.7.3-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pd-lua/pd-lua_0.7.3-6_amd64.deb"

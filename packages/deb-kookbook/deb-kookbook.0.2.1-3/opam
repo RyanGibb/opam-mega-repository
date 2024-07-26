@@ -16,7 +16,7 @@ depends: [
   "deb-libstdc++6" {>= "11"}
   "deb-qml-module-org-kde-kirigami2"
   "deb-qml-module-qtquick-layouts"
-  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb-libqt5gui5-gles" {>= "5.7.0"})
 ]
 extra-source "kookbook_0.2.1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kookbook/kookbook_0.2.1-3_amd64.deb"

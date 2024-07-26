@@ -57,7 +57,7 @@ depends: [
   "deb-perl"
   "deb-perl-any"
   "deb-starman" {>= "0.3014"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "pinto_0.14000-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pinto/pinto_0.14000-1_all.deb"

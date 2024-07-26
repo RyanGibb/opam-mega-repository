@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-pathname2"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-fixwhich_1.0.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-fixwhich/ruby-fixwhich_1.0.2-2_all.deb"

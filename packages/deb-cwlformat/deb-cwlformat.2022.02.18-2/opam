@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-python3-any"
   "deb-python3-ruamel-yaml"
-  ("deb-python3-importlib-resources" | "deb- python3" {> "3.7"})
+  ("deb-python3-importlib-resources" | "deb-python3" {> "3.7"})
 ]
 extra-source "cwlformat_2022.02.18-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cwlformat/cwlformat_2022.02.18-2_all.deb"

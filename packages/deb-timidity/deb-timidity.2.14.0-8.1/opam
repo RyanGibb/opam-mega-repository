@@ -22,7 +22,7 @@ depends: [
   "deb-libxext6"
   "deb-libxt6"
   "deb-lsb-base"
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "timidity_2.14.0-8.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/timidity/timidity_2.14.0-8.1_amd64.deb"

@@ -11,7 +11,7 @@ depends: [
   "deb-libnsl2" {>= "1.0.2"}
   "deb-libsystemd0"
   "deb-libtirpc3" {>= "1.0.2"}
-  ("deb-rpcbind" | "deb- portmap")
+  ("deb-rpcbind" | "deb-portmap")
 ]
 conflicts: [
   "deb-nis" {< "3.18"}

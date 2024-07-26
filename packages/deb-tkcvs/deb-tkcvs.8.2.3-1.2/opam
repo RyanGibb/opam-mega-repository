@@ -9,7 +9,7 @@ depends: [
   "deb-fonts-dejavu"
   "deb-sensible-utils"
   "deb-tk" {>= "8.4"}
-  ("deb-cvs" | "deb- subversion")
+  ("deb-cvs" | "deb-subversion")
 ]
 extra-source "tkcvs_8.2.3-1.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tkcvs/tkcvs_8.2.3-1.2_all.deb"

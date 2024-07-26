@@ -15,8 +15,8 @@ depends: [
   "deb-erlang-p1-zlib" {>= "1.0.4"}
   "deb-erlang-syntax-tools" {>= "1-21.2.2+dfsg"}
   "deb-libc6" {>= "2.14"}
-  ("deb-erlang-base" {>= "1-19.2"} | "deb- erlang-abi-17-0")
-  ("deb-erlang-base" {>= "1-21.2.2+dfsg"} | "deb- erlang-base-hipe" {>= "1-21.2.2+dfsg"})
+  ("deb-erlang-base" {>= "1-19.2"} | "deb-erlang-abi-17-0")
+  ("deb-erlang-base" {>= "1-21.2.2+dfsg"} | "deb-erlang-base-hipe" {>= "1-21.2.2+dfsg"})
 ]
 extra-source "erlang-p1-xmpp_1.2.8-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/erlang-p1-xmpp/erlang-p1-xmpp_1.2.8-1_amd64.deb"

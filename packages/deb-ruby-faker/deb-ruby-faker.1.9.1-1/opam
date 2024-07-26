@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-i18n" {>= "0.7"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-faker_1.9.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-faker/ruby-faker_1.9.1-1_all.deb"

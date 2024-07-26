@@ -10,8 +10,8 @@ depends: [
   "deb-libgsl27" {>= "2.7.1"}
   "deb-liblapacke" {>= "3.10.1"}
   "deb-perl-any"
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "eigensoft_8.0.0+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/eigensoft/eigensoft_8.0.0+dfsg-1_amd64.deb"

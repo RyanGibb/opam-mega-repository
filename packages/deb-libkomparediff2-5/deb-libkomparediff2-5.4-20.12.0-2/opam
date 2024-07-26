@@ -18,7 +18,7 @@ depends: [
   "deb-libqt5core5a" {>= "5.15.1"}
   "deb-libqt5widgets5" {>= "5.12.0~"}
   "deb-libstdc++6" {>= "4.1.1"}
-  ("deb-libqt5gui5" {>= "5.12.0~"} | "deb- libqt5gui5-gles" {>= "5.12.0~"})
+  ("deb-libqt5gui5" {>= "5.12.0~"} | "deb-libqt5gui5-gles" {>= "5.12.0~"})
 ]
 extra-source "libkomparediff2-5_4:20.12.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libk/libkomparediff2/libkomparediff2-5_20.12.0-2_amd64.deb"

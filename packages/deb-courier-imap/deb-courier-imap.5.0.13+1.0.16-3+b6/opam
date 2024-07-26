@@ -13,10 +13,10 @@ depends: [
   "deb-libcourier-unicode4" {>= "2.1.2"}
   "deb-libgdbm6" {>= "1.16"}
   "deb-libidn12" {>= "1.13"}
-  ("deb-debconf" | "deb- debconf-2-0")
-  ("deb-default-mta" | "deb- mail-transport-agent")
-  ("deb-libgamin0" | "deb- libfam0")
-  ("deb-sysvinit-utils" {>= "2.88dsf-50"} | "deb- init-d-script")
+  ("deb-debconf" | "deb-debconf-2-0")
+  ("deb-default-mta" | "deb-mail-transport-agent")
+  ("deb-libgamin0" | "deb-libfam0")
+  ("deb-sysvinit-utils" {>= "2.88dsf-50"} | "deb-init-d-script")
 ]
 conflicts: [
   "deb-imap-server"

@@ -47,8 +47,8 @@ depends: [
   "deb-libxml2" {>= "2.6.27"}
   "deb-libxrandr2"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libegl1-mesa" {>= "7.8.1"} | "deb- libegl1-x11")
-  ("deb-libwayland-egl1-mesa" {>= "10.0.2"} | "deb- libwayland-egl1")
+  ("deb-libegl1-mesa" {>= "7.8.1"} | "deb-libegl1-x11")
+  ("deb-libwayland-egl1-mesa" {>= "10.0.2"} | "deb-libwayland-egl1")
 ]
 extra-source "libatomicparsley0_2.1.5-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gtkpod/libatomicparsley0_2.1.5-6_amd64.deb"

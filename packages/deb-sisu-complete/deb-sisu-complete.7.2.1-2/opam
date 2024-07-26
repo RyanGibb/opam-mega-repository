@@ -14,8 +14,8 @@ depends: [
   "deb-sisu-postgresql" {= "7.2.1-2"}
   "deb-sisu-sqlite" {= "7.2.1-2"}
   "deb-tree"
-  ("deb-imagemagick" | "deb- graphicsmagick")
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-imagemagick" | "deb-graphicsmagick")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "sisu-complete_7.2.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sisu/sisu-complete_7.2.1-2_all.deb"

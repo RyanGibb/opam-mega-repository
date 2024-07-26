@@ -12,7 +12,7 @@ depends: [
   "deb-libstdc++6" {>= "5"}
   "deb-octave"
   "deb-octave" {>= "7.3.0"}
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "octave-nan_3.7.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/octave-nan/octave-nan_3.7.0-3_amd64.deb"

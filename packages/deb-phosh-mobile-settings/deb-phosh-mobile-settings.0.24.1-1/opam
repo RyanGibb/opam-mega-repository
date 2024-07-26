@@ -15,7 +15,7 @@ depends: [
   "deb-libwayland-client0" {>= "1.20.0"}
   "deb-phoc" {>= "0.21.0~beta1"}
   "deb-phosh" {>= "0.16.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "phosh-mobile-settings_0.24.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/phosh-mobile-settings/phosh-mobile-settings_0.24.1-1_amd64.deb"

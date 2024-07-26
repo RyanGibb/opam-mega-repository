@@ -23,8 +23,8 @@ depends: [
   "deb-r-base-core" {>= "4.2.2.20221110-2"}
   "deb-xauth"
   "deb-zlib1g-dev"
-  ("deb-libblas-dev" | "deb- libatlas-base-dev")
-  ("deb-liblapack-dev" | "deb- libatlas-base-dev")
+  ("deb-libblas-dev" | "deb-libatlas-base-dev")
+  ("deb-liblapack-dev" | "deb-libatlas-base-dev")
 ]
 extra-source "r-base-dev_4.2.2.20221110-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-base/r-base-dev_4.2.2.20221110-2_all.deb"

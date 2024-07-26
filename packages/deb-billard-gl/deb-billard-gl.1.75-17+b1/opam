@@ -12,7 +12,7 @@ depends: [
   "deb-libgl1"
   "deb-libglut3-12" {>= "3.4.0"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "billard-gl_1.75-17+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/billard-gl/billard-gl_1.75-17+b1_amd64.deb"

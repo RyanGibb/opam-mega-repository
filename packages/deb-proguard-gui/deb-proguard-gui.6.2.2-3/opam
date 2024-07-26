@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libproguard-java"
-  ("deb-default-jre" | "deb- java5-runtime")
+  ("deb-default-jre" | "deb-java5-runtime")
 ]
 extra-source "proguard-gui_6.2.2-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/proguard/proguard-gui_6.2.2-3_all.deb"

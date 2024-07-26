@@ -28,8 +28,8 @@ depends: [
   "deb-python-pyparsing"
   "deb-python-simplejson"
   "deb-socat"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-iproute2" | "deb- iproute")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-iproute2" | "deb-iproute")
 ]
 extra-source "ganeti-2.16_2.16.0-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/ganeti/ganeti-2.16_2.16.0-5_all.deb"

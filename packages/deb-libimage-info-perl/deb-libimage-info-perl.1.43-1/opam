@@ -8,9 +8,9 @@ remove: [
 depends: [
   "deb-libio-string-perl"
   "deb-perl-any"
-  ("deb-libimage-base-bundle-perl" | "deb- libimage-xbm-perl")
-  ("deb-libimage-base-bundle-perl" | "deb- libimage-xpm-perl")
-  ("deb-libxml-libxml-perl" | "deb- libxml-simple-perl")
+  ("deb-libimage-base-bundle-perl" | "deb-libimage-xbm-perl")
+  ("deb-libimage-base-bundle-perl" | "deb-libimage-xpm-perl")
+  ("deb-libxml-libxml-perl" | "deb-libxml-simple-perl")
 ]
 extra-source "libimage-info-perl_1.43-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libi/libimage-info-perl/libimage-info-perl_1.43-1_all.deb"

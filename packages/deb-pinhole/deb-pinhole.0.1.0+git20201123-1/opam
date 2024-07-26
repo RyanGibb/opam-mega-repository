@@ -12,8 +12,8 @@ depends: [
   "deb-libglib2-0-0" {>= "2.43.92"}
   "deb-libgtk-3-0" {>= "3.21.5"}
   "deb-libhandy-1-0" {>= "0.82.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-libgdk-pixbuf-2-0-0" {>= "2.23.0"} | "deb- libgdk-pixbuf2-0-0" {>= "2.23.0"})
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-libgdk-pixbuf-2-0-0" {>= "2.23.0"} | "deb-libgdk-pixbuf2-0-0" {>= "2.23.0"})
 ]
 conflicts: [
   "deb-gnome-camera"

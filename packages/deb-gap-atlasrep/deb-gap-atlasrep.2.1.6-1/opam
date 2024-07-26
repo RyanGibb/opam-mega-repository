@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-gap-utils"
-  ("deb-gap-io" | "deb- wget")
+  ("deb-gap-io" | "deb-wget")
 ]
 extra-source "gap-atlasrep_2.1.6-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gap-atlasrep/gap-atlasrep_2.1.6-1_all.deb"

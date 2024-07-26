@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ghostscript"
   "deb-libc6" {>= "2.29"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 conflicts: [
   "deb-pbm2ppa"

@@ -11,7 +11,7 @@ depends: [
   "deb-erlang-parsetools" {>= "1-22.3.3+dfsg"}
   "deb-erlang-public-key" {>= "1-22.3.3+dfsg"}
   "deb-erlang-tools" {>= "1-22.3.3+dfsg"}
-  ("deb-erlang-base" {>= "1-22.3.3+dfsg"} | "deb- erlang-base-hipe" {>= "1-22.3.3+dfsg"})
+  ("deb-erlang-base" {>= "1-22.3.3+dfsg"} | "deb-erlang-base-hipe" {>= "1-22.3.3+dfsg"})
 ]
 extra-source "elixir_1.10.3.dfsg-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/elixir-lang/elixir_1.10.3.dfsg-1.1_amd64.deb"

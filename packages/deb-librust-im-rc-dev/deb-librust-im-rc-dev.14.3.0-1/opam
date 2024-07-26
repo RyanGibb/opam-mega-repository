@@ -11,7 +11,7 @@ depends: [
   "deb-librust-rand-xoshiro-0-4+default-dev"
   "deb-librust-typenum-dev"
   "deb-librust-version-check-0-9+default-dev"
-  ("deb-librust-sized-chunks-0-6+default-dev" | "deb- librust-sized-chunks-0-5+default-dev" {>= "0.5.1-~~"})
+  ("deb-librust-sized-chunks-0-6+default-dev" | "deb-librust-sized-chunks-0-5+default-dev" {>= "0.5.1-~~"})
 ]
 extra-source "librust-im-rc-dev_14.3.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-im-rc/librust-im-rc-dev_14.3.0-1_amd64.deb"

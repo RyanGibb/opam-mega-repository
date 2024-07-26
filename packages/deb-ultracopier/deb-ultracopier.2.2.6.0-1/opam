@@ -14,7 +14,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.14.1"}
   "deb-libqt5xml5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "11"}
-  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb-libqt5gui5-gles" {>= "5.7.0"})
 ]
 extra-source "ultracopier_2.2.6.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/ultracopier/ultracopier_2.2.6.0-1_amd64.deb"

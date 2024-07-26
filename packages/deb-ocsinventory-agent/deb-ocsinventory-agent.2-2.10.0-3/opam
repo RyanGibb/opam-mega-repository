@@ -16,7 +16,7 @@ depends: [
   "deb-libxml-simple-perl"
   "deb-perl-any"
   "deb-ucf"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "ocsinventory-agent_2:2.10.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/ocsinventory-agent/ocsinventory-agent_2.10.0-3_amd64.deb"

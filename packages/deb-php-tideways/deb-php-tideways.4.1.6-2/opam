@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.17"}
   "deb-php-common" {>= "1-7.0+33~"}
   "deb-ucf"
-  ("deb-phpapi-20180731" | "deb- phpapi-20170718")
+  ("deb-phpapi-20180731" | "deb-phpapi-20170718")
 ]
 extra-source "php-tideways_4.1.6-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tideways/php-tideways_4.1.6-2_amd64.deb"

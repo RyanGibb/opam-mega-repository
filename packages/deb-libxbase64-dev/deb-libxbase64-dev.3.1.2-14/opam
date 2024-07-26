@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libxbase64-1" {= "3.1.2-14"}
   "deb-libxbase64-doc" {= "3.1.2-14"}
-  ("deb-libc6-dev" | "deb- libc-dev")
+  ("deb-libc6-dev" | "deb-libc-dev")
 ]
 extra-source "libxbase64-dev_3.1.2-14_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xbase64/libxbase64-dev_3.1.2-14_amd64.deb"

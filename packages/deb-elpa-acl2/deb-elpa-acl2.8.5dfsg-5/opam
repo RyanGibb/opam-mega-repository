@@ -10,7 +10,7 @@ depends: [
   "deb-dh-elpa-helper"
   "deb-emacsen-common"
   "deb-tex-common" {>= "6.13"}
-  ("deb-emacs-gtk" | "deb- emacsen")
+  ("deb-emacs-gtk" | "deb-emacsen")
 ]
 extra-source "elpa-acl2_8.5dfsg-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/acl2/elpa-acl2_8.5dfsg-5_all.deb"

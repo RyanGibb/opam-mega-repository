@@ -39,11 +39,11 @@ depends: [
   "deb-webext-ublock-origin"
   "deb-whois"
   "deb-zip"
-  ("deb-exfatprogs" | "deb- exfat-fuse")
-  ("deb-exfatprogs" | "deb- exfat-utils")
-  ("deb-firefox" | "deb- firefox-esr" | "deb- www-browser")
-  ("deb-task-print-server" | "deb- cups")
-  ("deb-thunderbird" {>= "78"} | "deb- enigmail")
+  ("deb-exfatprogs" | "deb-exfat-fuse")
+  ("deb-exfatprogs" | "deb-exfat-utils")
+  ("deb-firefox" | "deb-firefox-esr" | "deb-www-browser")
+  ("deb-task-print-server" | "deb-cups")
+  ("deb-thunderbird" {>= "78"} | "deb-enigmail")
 ]
 extra-source "progress-linux-desktop_20210101-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/progress-linux-metapackages/progress-linux-desktop_20210101-2_amd64.deb"

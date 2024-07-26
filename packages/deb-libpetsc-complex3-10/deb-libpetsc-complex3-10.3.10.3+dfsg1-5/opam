@@ -24,8 +24,8 @@ depends: [
   "deb-libsuperlu-dist6"
   "deb-libsuperlu5"
   "deb-libumfpack5" {>= "1-4.5.2"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 conflicts: [
   "deb-libpetsc-complex-3-6" {< "3.6.2.dfsg1-4"}

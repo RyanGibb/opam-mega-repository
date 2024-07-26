@@ -12,7 +12,7 @@ depends: [
   "deb-libpcre2-8-0" {>= "10.22"}
   "deb-perl"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "analog_2:6.0.17-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/analog/analog_6.0.17-3_amd64.deb"

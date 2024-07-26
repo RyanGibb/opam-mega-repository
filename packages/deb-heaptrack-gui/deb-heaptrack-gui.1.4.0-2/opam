@@ -23,7 +23,7 @@ depends: [
   "deb-libqt5core5a" {>= "5.15.1"}
   "deb-libqt5widgets5" {>= "5.11.0~rc1"}
   "deb-libstdc++6" {>= "11"}
-  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb-libqt5gui5-gles" {>= "5.7.0"})
 ]
 extra-source "heaptrack-gui_1.4.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/heaptrack/heaptrack-gui_1.4.0-2_amd64.deb"

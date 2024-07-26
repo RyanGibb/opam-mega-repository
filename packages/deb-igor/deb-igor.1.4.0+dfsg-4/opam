@@ -12,7 +12,7 @@ depends: [
   "deb-libgsl27" {>= "2.7.1"}
   "deb-libjemalloc2" {>= "5.0.0"}
   "deb-libstdc++6" {>= "11"}
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "igor_1.4.0+dfsg-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/igor/igor_1.4.0+dfsg-4_amd64.deb"

@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "deb-cryptsetup" {>= "2-2.6.1-4~deb12u2"}
-  ("deb-busybox" | "deb- busybox-static")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-initramfs-tools" {>= "0.137"} | "deb- linux-initramfs-tool")
+  ("deb-busybox" | "deb-busybox-static")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-initramfs-tools" {>= "0.137"} | "deb-linux-initramfs-tool")
 ]
 conflicts: [
   "deb-lvm2" {< "2.03.15-1"}

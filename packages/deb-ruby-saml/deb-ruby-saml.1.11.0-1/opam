@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-nokogiri" {>= "1.5.10"}
   "deb-ruby-uuid" {>= "2.3"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-saml_1.11.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-saml/ruby-saml_1.11.0-1_all.deb"

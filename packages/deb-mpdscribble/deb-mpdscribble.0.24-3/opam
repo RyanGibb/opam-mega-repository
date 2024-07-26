@@ -16,7 +16,7 @@ depends: [
   "deb-libsystemd0"
   "deb-lsb-base"
   "deb-ucf"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "mpdscribble_0.24-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mpdscribble/mpdscribble_0.24-3_amd64.deb"

@@ -10,7 +10,7 @@ depends: [
   "deb-libgcc1" {>= "1-4.0"}
   "deb-libgfortran5" {>= "8"}
   "deb-libquadmath0" {>= "4.6"}
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "liblapack3_3.8.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lapack/liblapack3_3.8.0-2_amd64.deb"

@@ -19,7 +19,7 @@ depends: [
   "deb-libqt5xml5" {>= "5.0.2"}
   "deb-libsqlite3-0" {>= "3.6.11"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.8.0"} | "deb- libqt5gui5-gles" {>= "5.8.0"})
+  ("deb-libqt5gui5" {>= "5.8.0"} | "deb-libqt5gui5-gles" {>= "5.8.0"})
 ]
 extra-source "quiterss_0.19.4+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/quiterss/quiterss_0.19.4+dfsg-1_amd64.deb"

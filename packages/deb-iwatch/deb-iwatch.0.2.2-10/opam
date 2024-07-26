@@ -12,7 +12,7 @@ depends: [
   "deb-libxml-simpleobject-libxml-perl"
   "deb-lsb-base"
   "deb-perl-any"
-  ("deb-default-mta" | "deb- mail-transport-agent")
+  ("deb-default-mta" | "deb-mail-transport-agent")
 ]
 extra-source "iwatch_0.2.2-10_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/iwatch/iwatch_0.2.2-10_all.deb"

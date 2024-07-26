@@ -17,7 +17,7 @@ depends: [
   "deb-libhkl5" {>= "4.99.99.1950"}
   "deb-libstdc++6" {>= "5"}
   "deb-libyaml-0-2"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "ghkl_5.0.0.2456-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/hkl/ghkl_5.0.0.2456-1_amd64.deb"

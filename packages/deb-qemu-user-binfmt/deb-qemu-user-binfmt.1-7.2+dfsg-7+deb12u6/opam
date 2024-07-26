@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-qemu-user" {= "1-7.2+dfsg-7+deb12u6"}
-  ("deb-systemd" | "deb- binfmt-support")
+  ("deb-systemd" | "deb-binfmt-support")
 ]
 conflicts: [
   "deb-qemu-user-static"

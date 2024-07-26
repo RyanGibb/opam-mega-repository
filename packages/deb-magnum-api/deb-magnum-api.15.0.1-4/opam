@@ -16,7 +16,7 @@ depends: [
   "deb-sysvinit-utils"
   "deb-ucf"
   "deb-uwsgi-plugin-python3"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "magnum-api_15.0.1-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/magnum/magnum-api_15.0.1-4_all.deb"

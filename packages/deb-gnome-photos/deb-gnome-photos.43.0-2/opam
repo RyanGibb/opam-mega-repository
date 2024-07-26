@@ -29,7 +29,7 @@ depends: [
   "deb-libtracker-sparql-3-0-0" {>= "3.1.1"}
   "deb-tracker" {>= "3.0"}
   "deb-tracker-extract" {>= "3.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-photos_43.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-photos/gnome-photos_43.0-2_amd64.deb"

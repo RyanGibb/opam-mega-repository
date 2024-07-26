@@ -12,7 +12,7 @@ depends: [
   "deb-pkexec"
   "deb-qml-module-qtquick-window2"
   "deb-qml-module-qtquick2"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "calamares-settings-debian_12.0.9-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/calamares-settings-debian/calamares-settings-debian_12.0.9-1_all.deb"

@@ -13,7 +13,7 @@ depends: [
   "deb-libinireader0" {>= "48"}
   "deb-libsimdjson14" {>= "2.0.1"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-systemd" | "deb- systemd-standalone-sysusers" | "deb- systemd-sysusers")
+  ("deb-systemd" | "deb-systemd-standalone-sysusers" | "deb-systemd-sysusers")
 ]
 extra-source "cloudflare-ddns_2.0.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cloudflare-ddns/cloudflare-ddns_2.0.0-4_amd64.deb"

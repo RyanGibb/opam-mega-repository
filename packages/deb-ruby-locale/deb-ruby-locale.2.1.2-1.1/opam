@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-locale"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-locale_2.1.2-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-locale/ruby-locale_2.1.2-1.1_all.deb"

@@ -9,7 +9,7 @@ depends: [
   "deb-emacsen-common" {>= "2.0.8"}
   "deb-make"
   "deb-ucf" {>= "0.08"}
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 conflicts: [
   "deb-semi"

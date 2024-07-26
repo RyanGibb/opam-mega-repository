@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-guile-2-2"
   "deb-guile-library" {>= "0.2.6.1"}
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 conflicts: [
   "deb-guile-g-wrap" {< "1.9.9-1"}

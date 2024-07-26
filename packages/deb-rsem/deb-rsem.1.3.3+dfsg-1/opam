@@ -13,7 +13,7 @@ depends: [
   "deb-perl-any"
   "deb-python3"
   "deb-r-base-core"
-  ("deb-bowtie" | "deb- bowtie2")
+  ("deb-bowtie" | "deb-bowtie2")
 ]
 extra-source "rsem_1.3.3+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rsem/rsem_1.3.3+dfsg-1_amd64.deb"

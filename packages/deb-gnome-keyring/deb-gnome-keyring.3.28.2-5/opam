@@ -16,8 +16,8 @@ depends: [
   "deb-libglib2-0-0" {>= "2.43.2"}
   "deb-p11-kit" {>= "0.16"}
   "deb-pinentry-gnome3"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus")
 ]
 extra-source "gnome-keyring_3.28.2-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-keyring/gnome-keyring_3.28.2-5_amd64.deb"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r minetest-mod-craftguide"]
 ]
 depends: [
-  ("deb-minetest" {>= "5.0.0"} | "deb- minetest-server" {>= "5.0.0"})
+  ("deb-minetest" {>= "5.0.0"} | "deb-minetest-server" {>= "5.0.0"})
 ]
 extra-source "minetest-mod-craftguide_1.14-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/minetest-mod-craftguide/minetest-mod-craftguide_1.14-1_all.deb"

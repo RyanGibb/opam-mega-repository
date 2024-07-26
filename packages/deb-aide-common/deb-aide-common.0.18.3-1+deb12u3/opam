@@ -9,8 +9,8 @@ depends: [
   "deb-aide" {>= "0.17"}
   "deb-liblockfile1"
   "deb-ucf" {>= "2.0020"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-systemd" | "deb- systemd-standalone-sysusers" | "deb- systemd-sysusers")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-systemd" | "deb-systemd-standalone-sysusers" | "deb-systemd-sysusers")
 ]
 extra-source "aide-common_0.18.3-1+deb12u3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/aide/aide-common_0.18.3-1+deb12u3_all.deb"

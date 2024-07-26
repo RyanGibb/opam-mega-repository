@@ -10,8 +10,8 @@ depends: [
   "deb-unzip"
   "deb-wget"
   "deb-zip"
-  ("deb-liblua5-1-dev" | "deb- liblua5-2-dev" | "deb- liblua5-3-dev")
-  ("deb-lua5-1" | "deb- lua5-2" | "deb- lua5-3")
+  ("deb-liblua5-1-dev" | "deb-liblua5-2-dev" | "deb-liblua5-3-dev")
+  ("deb-lua5-1" | "deb-lua5-2" | "deb-lua5-3")
 ]
 extra-source "luarocks_3.8.0+dfsg1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/luarocks/luarocks_3.8.0+dfsg1-1_all.deb"

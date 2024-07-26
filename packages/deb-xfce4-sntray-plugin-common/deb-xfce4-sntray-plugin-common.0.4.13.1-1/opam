@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r xfce4-sntray-plugin-common"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "xfce4-sntray-plugin-common_0.4.13.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xfce4-sntray-plugin/xfce4-sntray-plugin-common_0.4.13.1-1_all.deb"

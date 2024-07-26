@@ -18,8 +18,8 @@ depends: [
   "deb-mpi-default-bin"
   "deb-mpqc3-data"
   "deb-psi3"
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "mpqc3_0.0~git20170114-4.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mpqc3/mpqc3_0.0~git20170114-4.1_amd64.deb"

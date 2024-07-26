@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-tins"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-term-ansicolor_1.3.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-term-ansicolor/ruby-term-ansicolor_1.3.0-1_all.deb"

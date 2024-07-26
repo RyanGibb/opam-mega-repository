@@ -25,7 +25,7 @@ depends: [
   "deb-libspring-transaction-java"
   "deb-libxerces2-java"
   "deb-libxz-java"
-  ("deb-default-jre-headless" | "deb- java8-runtime-headless")
+  ("deb-default-jre-headless" | "deb-java8-runtime-headless")
 ]
 extra-source "osmosis_0.47-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/osmosis/osmosis_0.47-4_all.deb"

@@ -24,7 +24,7 @@ depends: [
   "deb-python-scipy"
   "deb-python-simplejson"
   "deb-python-traits"
-  ("deb-python-traits" {>= "4.5.0"} | "deb- python-traits4" {>= "4.5.0"})
+  ("deb-python-traits" {>= "4.5.0"} | "deb-python-traits4" {>= "4.5.0"})
 ]
 extra-source "python-nipype_1.1.8-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/nipype/python-nipype_1.1.8-1_all.deb"

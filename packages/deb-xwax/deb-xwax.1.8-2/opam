@@ -11,7 +11,7 @@ depends: [
   "deb-libc6" {>= "2.34"}
   "deb-libsdl-ttf2-0-0"
   "deb-libsdl1-2-compat-shim"
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "xwax_1.8-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xwax/xwax_1.8-2_amd64.deb"

@@ -9,7 +9,7 @@ depends: [
   "deb-libmoosex-types-perl"
   "deb-libparams-util-perl"
   "deb-perl-any"
-  ("deb-perl" {>= "5.11.5"} | "deb- libversion-perl" {>= "1-0.8200"})
+  ("deb-perl" {>= "5.11.5"} | "deb-libversion-perl" {>= "1-0.8200"})
 ]
 extra-source "libmoosex-types-perl-perl_0.101343-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libm/libmoosex-types-perl-perl/libmoosex-types-perl-perl_0.101343-1.1_all.deb"

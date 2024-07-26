@@ -16,8 +16,8 @@ depends: [
   "deb-r-cran-rcpp"
   "deb-r-cran-rcppgsl"
   "deb-seqtk"
-  ("deb-libopenblas-dev" | "deb- libblas-dev" | "deb- libatlas-base-dev" | "deb- libblas-so")
-  ("deb-libopenblas-dev" | "deb- liblapack-dev" | "deb- libatlas-base-dev" | "deb- liblapack-so")
+  ("deb-libopenblas-dev" | "deb-libblas-dev" | "deb-libatlas-base-dev" | "deb-libblas-so")
+  ("deb-libopenblas-dev" | "deb-liblapack-dev" | "deb-libatlas-base-dev" | "deb-liblapack-so")
 ]
 extra-source "mapdamage_2.0.9+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mapdamage/mapdamage_2.0.9+dfsg-1_all.deb"

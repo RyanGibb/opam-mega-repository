@@ -9,7 +9,7 @@ depends: [
   "deb-libcgi-formbuilder-perl"
   "deb-libyaml-syck-perl"
   "deb-perl-any"
-  ("deb-libcgi-pm-perl" | "deb- perl" {< "5.19"})
+  ("deb-libcgi-pm-perl" | "deb-perl" {< "5.19"})
 ]
 extra-source "libcgi-formbuilder-source-yaml-perl_1.0.8-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libc/libcgi-formbuilder-source-yaml-perl/libcgi-formbuilder-source-yaml-perl_1.0.8-5_all.deb"

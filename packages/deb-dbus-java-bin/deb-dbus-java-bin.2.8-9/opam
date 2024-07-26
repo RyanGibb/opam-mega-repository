@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libdbus-java" {= "2.8-9"}
-  ("deb-default-jre-headless" {>= "2-1.7"} | "deb- java7-runtime-headless")
+  ("deb-default-jre-headless" {>= "2-1.7"} | "deb-java7-runtime-headless")
 ]
 extra-source "dbus-java-bin_2.8-9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dbus-java/dbus-java-bin_2.8-9_all.deb"

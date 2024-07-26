@@ -13,7 +13,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.15.1"}
   "deb-libstdc++6" {>= "11"}
   "deb-mozc-data"
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "mozc-utils-gui_2.28.4715.102+dfsg-2.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mozc/mozc-utils-gui_2.28.4715.102+dfsg-2.2_amd64.deb"

@@ -20,8 +20,8 @@ depends: [
   "deb-librust-thiserror-dev"
   "deb-librust-xxhash-rust-0-8+default-dev"
   "deb-librust-xxhash-rust-0-8+xxh3-dev"
-  ("deb-librust-base64-0-13+default-dev" | "deb- librust-base64-0-12+default-dev")
-  ("deb-librust-idna-0-3+default-dev" | "deb- librust-idna-0-2+default-dev")
+  ("deb-librust-base64-0-13+default-dev" | "deb-librust-base64-0-12+default-dev")
+  ("deb-librust-idna-0-3+default-dev" | "deb-librust-idna-0-2+default-dev")
 ]
 extra-source "librust-sequoia-openpgp-dev_1.12.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-sequoia-openpgp/librust-sequoia-openpgp-dev_1.12.0-2_amd64.deb"

@@ -16,7 +16,7 @@ depends: [
   "deb-golang-golang-x-oauth2-dev"
   "deb-golang-google-api-dev"
   "deb-golang-gopkg-square-go-jose-v1-dev"
-  ("deb-golang-dns-dev" | "deb- golang-github-miekg-dns-dev")
+  ("deb-golang-dns-dev" | "deb-golang-github-miekg-dns-dev")
 ]
 extra-source "golang-github-xenolf-lego-dev_0.3.1-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/golang-github-xenolf-lego/golang-github-xenolf-lego-dev_0.3.1-5_all.deb"

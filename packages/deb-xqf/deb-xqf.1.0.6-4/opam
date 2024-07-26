@@ -14,8 +14,8 @@ depends: [
   "deb-libx11-6"
   "deb-qstat" {>= "2.15"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"} | "deb- libgdk-pixbuf2-0-0" {>= "2.22.0"})
-  ("deb-libgdk-pixbuf-xlib-2-0-0" {>= "2.22.0"} | "deb- libgdk-pixbuf2-0-0" {>= "2.22.0"})
+  ("deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"} | "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"})
+  ("deb-libgdk-pixbuf-xlib-2-0-0" {>= "2.22.0"} | "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"})
 ]
 extra-source "xqf_1.0.6-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xqf/xqf_1.0.6-4_amd64.deb"

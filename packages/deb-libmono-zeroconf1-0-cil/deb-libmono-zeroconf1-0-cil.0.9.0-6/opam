@@ -11,7 +11,7 @@ depends: [
   "deb-libmono-posix4-0-cil" {>= "4.0.0~alpha1"}
   "deb-libmono-system-xml4-0-cil" {>= "4.2.0"}
   "deb-libmono-system4-0-cil" {>= "4.2.0"}
-  ("deb-libc6" {>= "2.21"} | "deb- libc6-1" {>= "2.21"} | "deb- libc0-1" {>= "2.21"})
+  ("deb-libc6" {>= "2.21"} | "deb-libc6-1" {>= "2.21"} | "deb-libc0-1" {>= "2.21"})
 ]
 extra-source "libmono-zeroconf1.0-cil_0.9.0-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mono-zeroconf/libmono-zeroconf1.0-cil_0.9.0-6_all.deb"

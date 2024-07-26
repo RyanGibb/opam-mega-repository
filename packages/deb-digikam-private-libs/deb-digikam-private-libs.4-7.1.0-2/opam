@@ -76,7 +76,7 @@ depends: [
   "deb-libx265-192" {>= "3.2"}
   "deb-libxml2" {>= "2.7.4"}
   "deb-libxslt1-1" {>= "1.1.25"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "digikam-private-libs_4:7.1.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/digikam/digikam-private-libs_7.1.0-2_amd64.deb"

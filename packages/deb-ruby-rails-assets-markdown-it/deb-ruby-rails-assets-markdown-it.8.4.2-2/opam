@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libjs-markdown-it" {= "8.4.2-2"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-rails-assets-markdown-it_8.4.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-rails-assets-markdown-it/ruby-rails-assets-markdown-it_8.4.2-2_all.deb"

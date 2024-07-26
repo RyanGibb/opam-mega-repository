@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libassuan0" {= "2.5.2-1"}
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 extra-source "libassuan-dev_2.5.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/liba/libassuan/libassuan-dev_2.5.2-1_amd64.deb"

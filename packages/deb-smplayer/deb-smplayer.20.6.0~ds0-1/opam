@@ -16,8 +16,8 @@ depends: [
   "deb-libstdc++6" {>= "5"}
   "deb-libx11-6"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
-  ("deb-mpv" {>= "0.6.2"} | "deb- mplayer")
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-mpv" {>= "0.6.2"} | "deb-mplayer")
 ]
 extra-source "smplayer_20.6.0~ds0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/smplayer/smplayer_20.6.0~ds0-1_amd64.deb"

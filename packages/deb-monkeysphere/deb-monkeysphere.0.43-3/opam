@@ -12,7 +12,7 @@ depends: [
   "deb-libdigest-sha-perl"
   "deb-openssh-client"
   "deb-perl-any"
-  ("deb-lockfile-progs" | "deb- procmail")
+  ("deb-lockfile-progs" | "deb-procmail")
 ]
 extra-source "monkeysphere_0.43-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/monkeysphere/monkeysphere_0.43-3_all.deb"

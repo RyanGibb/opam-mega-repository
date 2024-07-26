@@ -11,7 +11,7 @@ depends: [
   "deb-ruby-railties" {>= "4.2.0"}
   "deb-ruby-thor" {< "2.0"}
   "deb-ruby-thor" {>= "0.14"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-jquery-rails_4.3.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-jquery-rails/ruby-jquery-rails_4.3.3-1_all.deb"

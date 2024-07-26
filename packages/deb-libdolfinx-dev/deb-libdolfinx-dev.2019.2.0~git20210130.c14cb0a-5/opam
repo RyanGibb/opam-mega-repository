@@ -25,8 +25,8 @@ depends: [
   "deb-pkg-config"
   "deb-python3-ffcx" {< "2019.3~"}
   "deb-python3-ffcx" {>= "2019.2.0~git20210116"}
-  ("deb-g++" | "deb- c++-compiler")
-  ("deb-libdolfinx-real-dev" | "deb- libdolfinx-complex-dev")
+  ("deb-g++" | "deb-c++-compiler")
+  ("deb-libdolfinx-real-dev" | "deb-libdolfinx-complex-dev")
 ]
 conflicts: [
   "deb-libdolfin0-dev"

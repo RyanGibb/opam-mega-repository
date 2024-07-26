@@ -30,7 +30,7 @@ depends: [
   "deb-libweston-5-0" {>= "5.0.0"}
   "deb-libxkbcommon0" {>= "0.5.0"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libegl1-mesa" {>= "8.0-2"} | "deb- libegl1-x11")
+  ("deb-libegl1-mesa" {>= "8.0-2"} | "deb-libegl1-x11")
 ]
 extra-source "weston_5.0.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/weston/weston_5.0.0-3_amd64.deb"

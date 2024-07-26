@@ -11,7 +11,7 @@ depends: [
   "deb-libbatik-java"
   "deb-libjava3d-java"
   "deb-libvecmath-java"
-  ("deb-default-jre" | "deb- java8-runtime")
+  ("deb-default-jre" | "deb-java8-runtime")
 ]
 extra-source "sweethome3d-textures-editor_1.8-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sweethome3d-textures-editor/sweethome3d-textures-editor_1.8-1_all.deb"

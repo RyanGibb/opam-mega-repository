@@ -28,7 +28,7 @@ depends: [
   "deb-libxshmfence1"
   "deb-udev" {>= "149"}
   "deb-xserver-common" {>= "2-1.20.4-1+deb10u4"}
-  ("deb-libegl1-mesa" | "deb- libegl1")
+  ("deb-libegl1-mesa" | "deb-libegl1")
 ]
 conflicts: [
   "deb-xserver-xorg-input-evtouch"

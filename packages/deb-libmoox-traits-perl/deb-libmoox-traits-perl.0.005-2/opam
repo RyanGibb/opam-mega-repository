@@ -9,7 +9,7 @@ depends: [
   "deb-libexporter-tiny-perl"
   "deb-libmodule-runtime-perl"
   "deb-perl-any"
-  ("deb-librole-tiny-perl" {>= "2.002004"} | "deb- librole-tiny-perl" {< "2.002000"})
+  ("deb-librole-tiny-perl" {>= "2.002004"} | "deb-librole-tiny-perl" {< "2.002000"})
 ]
 extra-source "libmoox-traits-perl_0.005-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libm/libmoox-traits-perl/libmoox-traits-perl_0.005-2_all.deb"

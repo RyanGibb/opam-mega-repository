@@ -20,7 +20,7 @@ depends: [
   "deb-libxslt1-1" {>= "1.1.25"}
   "deb-libzen0v5" {>= "0.4.31-2~"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "mediaconch-gui_23.03-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mediaconch/mediaconch-gui_23.03-1_amd64.deb"

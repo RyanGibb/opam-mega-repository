@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-minitest-stub-const"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-minitest-stub-const_0.4-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-minitest-stub-const/ruby-minitest-stub-const_0.4-1.1_all.deb"

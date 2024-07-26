@@ -10,8 +10,8 @@ depends: [
   "deb-liblibreoffice-java"
   "deb-libreoffice-common"
   "deb-libreoffice-java-common"
-  ("deb-default-jre" {>= "2-1.8"} | "deb- java8-runtime" | "deb- jre")
-  ("deb-libreoffice-core-nogui" | "deb- libreoffice-core")
+  ("deb-default-jre" {>= "2-1.8"} | "deb-java8-runtime" | "deb-jre")
+  ("deb-libreoffice-core-nogui" | "deb-libreoffice-core")
 ]
 extra-source "libreoffice-script-provider-bsh_1:7.0.4-4+deb11u9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libr/libreoffice/libreoffice-script-provider-bsh_7.0.4-4+deb11u9_all.deb"

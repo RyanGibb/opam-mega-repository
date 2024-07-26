@@ -16,7 +16,7 @@ depends: [
   "deb-python3-cairo"
   "deb-python3-gi"
   "deb-python3-pexpect"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "mugshot_0.4.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mugshot/mugshot_0.4.3-1_all.deb"

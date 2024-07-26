@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-python3-any"
   "deb-python3-gitdb" {>= "2"}
-  ("deb-git" {>= "1-1.7"} | "deb- git-core" {>= "1-1.5.3.7"})
+  ("deb-git" {>= "1-1.7"} | "deb-git-core" {>= "1-1.5.3.7"})
 ]
 extra-source "python3-git_2.1.11-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-git/python3-git_2.1.11-1_all.deb"

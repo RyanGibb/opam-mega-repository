@@ -12,8 +12,8 @@ depends: [
   "deb-libcommons-cli-java"
   "deb-libjericho-html-java" {>= "3.1"}
   "deb-libxml-commons-external-java"
-  ("deb-default-jdk" | "deb- java6-sdk")
-  ("deb-default-jre" | "deb- java7-runtime" | "deb- java8-runtime" | "deb- java9-runtime" | "deb- java10-runtime" | "deb- java11-runtime")
+  ("deb-default-jdk" | "deb-java6-sdk")
+  ("deb-default-jre" | "deb-java7-runtime" | "deb-java8-runtime" | "deb-java9-runtime" | "deb-java10-runtime" | "deb-java11-runtime")
 ]
 extra-source "ditaa_0.10+ds1-1.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/ditaa/ditaa_0.10+ds1-1.2_all.deb"

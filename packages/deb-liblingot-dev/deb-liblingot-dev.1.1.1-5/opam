@@ -13,7 +13,7 @@ depends: [
   "deb-libjson-c-dev"
   "deb-liblingot0" {= "1.1.1-5"}
   "deb-libpulse-dev"
-  ("deb-libjack-dev" {>= "1-0.117.0"} | "deb- libjack-jackd2-dev")
+  ("deb-libjack-dev" {>= "1-0.117.0"} | "deb-libjack-jackd2-dev")
 ]
 extra-source "liblingot-dev_1.1.1-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lingot/liblingot-dev_1.1.1-5_amd64.deb"

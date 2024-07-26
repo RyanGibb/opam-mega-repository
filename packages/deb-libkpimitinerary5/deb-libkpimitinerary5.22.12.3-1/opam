@@ -29,7 +29,7 @@ depends: [
   "deb-libxml2" {>= "2.9.1"}
   "deb-libzxing2" {>= "1.4.0"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb-libqt5gui5-gles" {>= "5.15.2~"})
 ]
 extra-source "libkpimitinerary5_22.12.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kitinerary/libkpimitinerary5_22.12.3-1_amd64.deb"

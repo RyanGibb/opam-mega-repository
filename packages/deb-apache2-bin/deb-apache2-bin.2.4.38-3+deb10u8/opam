@@ -21,7 +21,7 @@ depends: [
   "deb-libxml2" {>= "2.7.4"}
   "deb-perl-any"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libaprutil1-dbd-sqlite3" | "deb- libaprutil1-dbd-mysql" | "deb- libaprutil1-dbd-odbc" | "deb- libaprutil1-dbd-pgsql" | "deb- libaprutil1-dbd-freetds")
+  ("deb-libaprutil1-dbd-sqlite3" | "deb-libaprutil1-dbd-mysql" | "deb-libaprutil1-dbd-odbc" | "deb-libaprutil1-dbd-pgsql" | "deb-libaprutil1-dbd-freetds")
 ]
 extra-source "apache2-bin_2.4.38-3+deb10u8_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/apache2/apache2-bin_2.4.38-3+deb10u8_amd64.deb"

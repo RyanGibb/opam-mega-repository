@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.14"}
   "deb-pcscd" {> "1.2.0"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "libgcr410_2.4.0-9.2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libg/libgcr410/libgcr410_2.4.0-9.2+b1_amd64.deb"

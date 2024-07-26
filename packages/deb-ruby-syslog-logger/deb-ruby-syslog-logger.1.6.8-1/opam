@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-syslog-logger"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-syslog-logger_1.6.8-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-syslog-logger/ruby-syslog-logger_1.6.8-1_all.deb"

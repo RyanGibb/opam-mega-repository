@@ -15,7 +15,7 @@ depends: [
   "deb-libvterm0" {>= "0.1"}
   "deb-lua-luv" {>= "1.44.2-0"}
   "deb-neovim-runtime" {= "0.7.2-7"}
-  ("deb-libluajit-5-1-2" {>= "2.0.4+dfsg"} | "deb- libluajit2-5-1-2" {>= "2.1~"})
+  ("deb-libluajit-5-1-2" {>= "2.0.4+dfsg"} | "deb-libluajit2-5-1-2" {>= "2.1~"})
 ]
 extra-source "neovim_0.7.2-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/neovim/neovim_0.7.2-7_amd64.deb"

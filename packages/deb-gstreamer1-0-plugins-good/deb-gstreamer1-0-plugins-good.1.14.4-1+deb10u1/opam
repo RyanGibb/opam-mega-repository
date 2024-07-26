@@ -43,7 +43,7 @@ depends: [
   "deb-libxext6"
   "deb-libxfixes3"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "gstreamer1.0-plugins-good_1.14.4-1+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gst-plugins-good1.0/gstreamer1.0-plugins-good_1.14.4-1+deb10u1_amd64.deb"

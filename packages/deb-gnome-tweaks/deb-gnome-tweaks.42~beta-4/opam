@@ -18,7 +18,7 @@ depends: [
   "deb-mutter-common"
   "deb-python3-any"
   "deb-python3-gi" {>= "3.10"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-tweaks_42~beta-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-tweaks/gnome-tweaks_42~beta-4_all.deb"

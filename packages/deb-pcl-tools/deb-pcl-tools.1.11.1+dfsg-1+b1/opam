@@ -37,8 +37,8 @@ depends: [
   "deb-libqt5widgets5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "9"}
   "deb-libvtk7-1p"
-  ("deb-libglu1-mesa" | "deb- libglu1")
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libglu1-mesa" | "deb-libglu1")
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "pcl-tools_1.11.1+dfsg-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pcl/pcl-tools_1.11.1+dfsg-1+b1_amd64.deb"

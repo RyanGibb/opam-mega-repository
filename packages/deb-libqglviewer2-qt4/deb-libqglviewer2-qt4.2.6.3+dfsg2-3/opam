@@ -13,8 +13,8 @@ depends: [
   "deb-libqtcore4" {>= "4-4.7.0~beta1"}
   "deb-libqtgui4" {>= "4-4.5.3"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "libqglviewer2-qt4_2.6.3+dfsg2-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libq/libqglviewer/libqglviewer2-qt4_2.6.3+dfsg2-3_amd64.deb"

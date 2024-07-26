@@ -27,8 +27,8 @@ depends: [
   "deb-libx11-6"
   "deb-libxi6"
   "deb-libxmu6"
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "crack-attack_1.1.14-9.1+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/crack-attack/crack-attack_1.1.14-9.1+b2_amd64.deb"

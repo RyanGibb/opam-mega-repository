@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ocl-icd-libopencl1" {= "2.2.12-2"}
-  ("deb-opencl-c-headers" | "deb- opencl-headers")
+  ("deb-opencl-c-headers" | "deb-opencl-headers")
 ]
 conflicts: [
   "deb-opencl-dev"

@@ -9,8 +9,8 @@ depends: [
   "deb-libc6" {>= "2.7"}
   "deb-netbase"
   "deb-update-inetd"
-  ("deb-openbsd-inetd" | "deb- inet-superserver")
-  ("deb-rpcbind" | "deb- netbase" {< "4.00"})
+  ("deb-openbsd-inetd" | "deb-inet-superserver")
+  ("deb-rpcbind" | "deb-netbase" {< "4.00"})
 ]
 extra-source "rstatd_4.0.1-10+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rstatd/rstatd_4.0.1-10+b1_amd64.deb"

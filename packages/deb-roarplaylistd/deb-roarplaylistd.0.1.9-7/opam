@@ -10,7 +10,7 @@ depends: [
   "deb-libroar2"
   "deb-libxml2" {>= "2.7.4"}
   "deb-lsb-base"
-  ("deb-roaraudio" | "deb- roaraudio-server")
+  ("deb-roaraudio" | "deb-roaraudio-server")
 ]
 extra-source "roarplaylistd_0.1.9-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/roarplaylistd/roarplaylistd_0.1.9-7_amd64.deb"

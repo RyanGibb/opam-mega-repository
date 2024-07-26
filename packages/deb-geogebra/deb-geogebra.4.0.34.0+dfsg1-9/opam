@@ -21,7 +21,7 @@ depends: [
   "deb-libjlatexmath-java"
   "deb-librhino-java" {>= "1.7R3-5"}
   "deb-mathpiper" {>= "0.81f+svn4469+dfsg3"}
-  ("deb-default-jre" | "deb- java7-runtime" | "deb- java8-runtime" | "deb- java9-runtime" | "deb- java10-runtime" | "deb- java11-runtime")
+  ("deb-default-jre" | "deb-java7-runtime" | "deb-java8-runtime" | "deb-java9-runtime" | "deb-java10-runtime" | "deb-java11-runtime")
 ]
 extra-source "geogebra_4.0.34.0+dfsg1-9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/geogebra/geogebra_4.0.34.0+dfsg1-9_all.deb"

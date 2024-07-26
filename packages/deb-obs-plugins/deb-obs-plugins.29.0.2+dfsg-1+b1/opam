@@ -15,8 +15,8 @@ depends: [
   "deb-libqt5core5a" {>= "5.15.1"}
   "deb-libqt5widgets5" {>= "5.14.1"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
-  ("deb-libqt5gui5" {>= "5.2.0~alpha1"} | "deb- libqt5gui5-gles" {>= "5.2.0~alpha1"})
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
+  ("deb-libqt5gui5" {>= "5.2.0~alpha1"} | "deb-libqt5gui5-gles" {>= "5.2.0~alpha1"})
 ]
 extra-source "obs-plugins_29.0.2+dfsg-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/obs-studio/obs-plugins_29.0.2+dfsg-1+b1_amd64.deb"

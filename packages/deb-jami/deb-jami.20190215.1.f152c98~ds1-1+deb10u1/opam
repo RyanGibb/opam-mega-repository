@@ -54,7 +54,7 @@ depends: [
   "deb-libxi6"
   "deb-libxkbcommon0" {>= "0.5.0"}
   "deb-libxrandr2"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "jami_20190215.1.f152c98~ds1-1+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ring/jami_20190215.1.f152c98~ds1-1+deb10u1_amd64.deb"

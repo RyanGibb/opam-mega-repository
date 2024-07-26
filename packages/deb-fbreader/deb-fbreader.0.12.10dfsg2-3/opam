@@ -12,7 +12,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libzlcore0-13"
   "deb-libzltext0-13"
-  ("deb-libzlui-qt4" {>= "0.12.10dfsg2-3"} | "deb- libzlui-gtk" {>= "0.12.10dfsg2-3"})
+  ("deb-libzlui-qt4" {>= "0.12.10dfsg2-3"} | "deb-libzlui-gtk" {>= "0.12.10dfsg2-3"})
 ]
 extra-source "fbreader_0.12.10dfsg2-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fbreader/fbreader_0.12.10dfsg2-3_amd64.deb"

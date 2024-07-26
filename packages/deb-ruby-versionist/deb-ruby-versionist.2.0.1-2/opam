@@ -9,7 +9,7 @@ depends: [
   "deb-ruby-activesupport" {>= "3"}
   "deb-ruby-railties" {>= "3"}
   "deb-yard" {>= "0.9.20~"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-versionist_2.0.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-versionist/ruby-versionist_2.0.1-2_all.deb"

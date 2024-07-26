@@ -16,7 +16,7 @@ depends: [
   "deb-qml-module-qtquick-controls"
   "deb-qml-module-qtquick-controls2"
   "deb-qml-module-qtquick-layouts"
-  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb-libqt5gui5-gles" {>= "5.15.2~"})
 ]
 extra-source "qml-module-org-kde-kirigami-addons-datetime_0.7.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kirigami-addons/qml-module-org-kde-kirigami-addons-datetime_0.7.0-2_amd64.deb"

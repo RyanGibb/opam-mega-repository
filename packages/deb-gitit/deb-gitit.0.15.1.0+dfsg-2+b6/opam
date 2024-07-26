@@ -14,7 +14,7 @@ depends: [
   "deb-libtinfo6" {>= "6"}
   "deb-libyaml-0-2"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-git" | "deb- darcs" | "deb- mercurial")
+  ("deb-git" | "deb-darcs" | "deb-mercurial")
 ]
 extra-source "gitit_0.15.1.0+dfsg-2+b6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gitit/gitit_0.15.1.0+dfsg-2+b6_amd64.deb"

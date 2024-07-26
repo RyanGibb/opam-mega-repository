@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.26"}
   "deb-libssl1-1" {>= "1.1.0"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "suck_4.3.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/suck/suck_4.3.4-1_amd64.deb"

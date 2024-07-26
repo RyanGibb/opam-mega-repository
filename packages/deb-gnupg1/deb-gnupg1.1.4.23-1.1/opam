@@ -11,7 +11,7 @@ depends: [
   "deb-libcurl3-gnutls" {>= "7.16.2"}
   "deb-libreadline8" {>= "6.0"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-gpgv" | "deb- gpgv1")
+  ("deb-gpgv" | "deb-gpgv1")
 ]
 extra-source "gnupg1_1.4.23-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnupg1/gnupg1_1.4.23-1.1_amd64.deb"

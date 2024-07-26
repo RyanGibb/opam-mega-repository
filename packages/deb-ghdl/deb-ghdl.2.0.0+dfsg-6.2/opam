@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ghdl-common" {= "2.0.0+dfsg-6.2"}
-  ("deb-ghdl-mcode" | "deb- ghdl-gcc" | "deb- ghdl-llvm")
+  ("deb-ghdl-mcode" | "deb-ghdl-gcc" | "deb-ghdl-llvm")
 ]
 extra-source "ghdl_2.0.0+dfsg-6.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/ghdl/ghdl_2.0.0+dfsg-6.2_amd64.deb"

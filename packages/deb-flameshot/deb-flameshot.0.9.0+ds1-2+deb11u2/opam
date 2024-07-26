@@ -17,7 +17,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.15.1"}
   "deb-libspdlog1"
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "flameshot_0.9.0+ds1-2+deb11u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/flameshot/flameshot_0.9.0+ds1-2+deb11u2_amd64.deb"

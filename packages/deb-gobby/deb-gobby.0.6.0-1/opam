@@ -21,7 +21,7 @@ depends: [
   "deb-libsigc++-2-0-0v5" {>= "2.8.0"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-libxml++2-6-2v5" {>= "2.40.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gobby_0.6.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gobby/gobby_0.6.0-1_amd64.deb"

@@ -10,7 +10,7 @@ depends: [
   "deb-python3" {< "3.8"}
   "deb-python3" {>= "3.6~"}
   "deb-python3-any" {>= "3.3.2-2~"}
-  ("deb-default-jre" | "deb- java7-runtime-headless")
+  ("deb-default-jre" | "deb-java7-runtime-headless")
 ]
 extra-source "python3-jpy_0.9.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jpy/python3-jpy_0.9.0-2_amd64.deb"

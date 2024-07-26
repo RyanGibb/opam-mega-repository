@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-ejabberd" {= "21.01-2"}
-  ("deb-erlang-base" {>= "1-17"} | "deb- erlang-abi" {= "17.0"})
-  ("deb-erlang-base" {>= "1-23.2.3+dfsg"} | "deb- erlang-base-hipe" {>= "1-23.2.3+dfsg"})
+  ("deb-erlang-base" {>= "1-17"} | "deb-erlang-abi" {= "17.0"})
+  ("deb-erlang-base" {>= "1-23.2.3+dfsg"} | "deb-erlang-base-hipe" {>= "1-23.2.3+dfsg"})
 ]
 extra-source "ejabberd-mod-spam-filter_0.2020.10.21~dfsg0-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/ejabberd-contrib/ejabberd-mod-spam-filter_0.2020.10.21~dfsg0-5_amd64.deb"

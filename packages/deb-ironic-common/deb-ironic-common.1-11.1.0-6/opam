@@ -14,7 +14,7 @@ depends: [
   "deb-python3-ironic" {= "1-11.1.0-6"}
   "deb-sqlite3"
   "deb-sudo"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "ironic-common_1:11.1.0-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/ironic/ironic-common_11.1.0-6_all.deb"

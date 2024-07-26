@@ -25,8 +25,8 @@ depends: [
   "deb-r-cran-rspectra"
   "deb-r-cran-rtsne"
   "deb-r-cran-shapes"
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "r-cran-maotai_0.2.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-maotai/r-cran-maotai_0.2.4-1_amd64.deb"

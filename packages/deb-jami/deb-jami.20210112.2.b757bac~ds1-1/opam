@@ -29,8 +29,8 @@ depends: [
   "deb-libstdc++6" {>= "9"}
   "deb-libwebkit2gtk-4-0-37" {>= "2.15.1"}
   "deb-libx11-6"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "jami_20210112.2.b757bac~ds1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ring/jami_20210112.2.b757bac~ds1-1_amd64.deb"

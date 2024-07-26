@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r mutter-common"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "mutter-common_43.8-0+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mutter/mutter-common_43.8-0+deb12u1_all.deb"

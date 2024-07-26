@@ -9,7 +9,7 @@ depends: [
   "deb-ruby-json"
   "deb-ruby-mime-types"
   "deb-ruby-oauth"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-twitter-oauth_0.4.94-4.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-twitter-oauth/ruby-twitter-oauth_0.4.94-4.1_all.deb"

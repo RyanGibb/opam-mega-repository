@@ -26,7 +26,7 @@ depends: [
   "deb-libxapian30" {>= "1.4.17~"}
   "deb-libxml++2-6-2v5" {>= "2.40.0"}
   "deb-libxml2" {>= "2.7.4"}
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus")
 ]
 extra-source "pinot_1.21-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pinot/pinot_1.21-1+b1_amd64.deb"

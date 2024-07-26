@@ -10,7 +10,7 @@ depends: [
   "deb-libcompfaceg1"
   "deb-libx11-6"
   "deb-libxt6"
-  ("deb-slrn" {>= "0.9.7.3"} | "deb- tin" {>= "1-1.6.1-1"})
+  ("deb-slrn" {>= "0.9.7.3"} | "deb-tin" {>= "1-1.6.1-1"})
 ]
 extra-source "slrnface_2.1.1-7+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/slrnface/slrnface_2.1.1-7+b1_amd64.deb"

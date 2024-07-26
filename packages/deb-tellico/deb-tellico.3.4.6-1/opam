@@ -59,7 +59,7 @@ depends: [
   "deb-libyaz5" {>= "5.27.1"}
   "deb-tellico-data" {= "3.4.6-1"}
   "deb-tellico-scripts" {>= "3.4.6-1"}
-  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb-libqt5gui5-gles" {>= "5.11.0~rc1"})
 ]
 extra-source "tellico_3.4.6-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tellico/tellico_3.4.6-1_amd64.deb"

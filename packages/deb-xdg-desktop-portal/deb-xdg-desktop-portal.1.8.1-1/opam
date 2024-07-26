@@ -14,7 +14,7 @@ depends: [
   "deb-libglib2-0-0" {>= "2.63.3"}
   "deb-libjson-glib-1-0-0" {>= "1.5.2"}
   "deb-libpipewire-0-3-0" {>= "0.3.10"}
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus")
 ]
 extra-source "xdg-desktop-portal_1.8.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xdg-desktop-portal/xdg-desktop-portal_1.8.1-1_amd64.deb"

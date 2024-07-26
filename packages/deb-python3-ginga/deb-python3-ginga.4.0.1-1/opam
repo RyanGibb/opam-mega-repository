@@ -12,7 +12,7 @@ depends: [
   "deb-python3-numpy"
   "deb-python3-pil"
   "deb-python3-qtpy"
-  ("deb-python3-importlib-metadata" | "deb- python3" {< "3.7"} | "deb- python3" {> "3.8"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {< "3.7"} | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-ginga_4.0.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/ginga/python3-ginga_4.0.1-1_all.deb"

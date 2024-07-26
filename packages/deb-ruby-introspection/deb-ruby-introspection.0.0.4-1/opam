@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-instantiator" {>= "0.0.3~"}
   "deb-ruby-metaclass" {>= "0.0.1~"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-introspection_0.0.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-introspection/ruby-introspection_0.0.4-1_all.deb"

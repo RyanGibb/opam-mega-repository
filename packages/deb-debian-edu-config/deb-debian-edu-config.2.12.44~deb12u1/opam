@@ -47,9 +47,9 @@ depends: [
   "deb-swaks"
   "deb-uuid"
   "deb-wget"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-tftp-hpa" | "deb- tftp")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-tftp-hpa" | "deb-tftp")
 ]
 extra-source "debian-edu-config_2.12.44~deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/debian-edu-config/debian-edu-config_2.12.44~deb12u1_all.deb"

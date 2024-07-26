@@ -11,7 +11,7 @@ depends: [
   "deb-libqt5core5a" {>= "5.12.2"}
   "deb-libqt5widgets5" {>= "5.12.2"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb-libqt5gui5-gles" {>= "5.11.0~rc1"})
 ]
 extra-source "libqnodeeditor2_2.1.7-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qnodeeditor/libqnodeeditor2_2.1.7-1_amd64.deb"

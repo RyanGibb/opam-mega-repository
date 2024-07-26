@@ -13,7 +13,7 @@ depends: [
   "deb-ucf"
   "deb-udev"
   "deb-xenstore-utils"
-  ("deb-sysvinit-utils" {>= "3.05-4~"} | "deb- lsb-base")
+  ("deb-sysvinit-utils" {>= "3.05-4~"} | "deb-lsb-base")
 ]
 extra-source "xen-utils-common_4.17.3+10-g091466ba55-1~deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xen/xen-utils-common_4.17.3+10-g091466ba55-1~deb12u1_amd64.deb"

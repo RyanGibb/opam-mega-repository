@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-keyboard-configuration" {= "1.205"}
-  ("deb-console-setup-linux" | "deb- console-setup-freebsd")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-console-setup-linux" | "deb-console-setup-freebsd")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 conflicts: [
   "deb-console-setup"

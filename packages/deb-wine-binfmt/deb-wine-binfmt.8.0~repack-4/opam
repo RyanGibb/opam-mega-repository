@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-wine"
-  ("deb-binfmt-support" | "deb- systemd")
+  ("deb-binfmt-support" | "deb-systemd")
 ]
 extra-source "wine-binfmt_8.0~repack-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/wine/wine-binfmt_8.0~repack-4_all.deb"

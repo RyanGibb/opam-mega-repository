@@ -20,7 +20,7 @@ depends: [
   "deb-libstdc++6" {>= "11"}
   "deb-xygrib-maps"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "xygrib_1.2.6.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xygrib/xygrib_1.2.6.1-2_amd64.deb"

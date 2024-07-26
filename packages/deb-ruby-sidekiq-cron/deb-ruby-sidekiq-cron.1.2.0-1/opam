@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-fugit"
   "deb-ruby-sidekiq" {>= "4.2.1~"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-sidekiq-cron_1.2.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-sidekiq-cron/ruby-sidekiq-cron_1.2.0-1_all.deb"

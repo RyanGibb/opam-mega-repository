@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r heimdal-docs"]
 ]
 depends: [
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 extra-source "heimdal-docs_7.7.0+dfsg-2+deb11u3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/heimdal/heimdal-docs_7.7.0+dfsg-2+deb11u3_all.deb"

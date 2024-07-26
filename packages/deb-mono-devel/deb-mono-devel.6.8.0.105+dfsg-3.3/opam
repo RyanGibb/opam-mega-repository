@@ -47,7 +47,7 @@ depends: [
   "deb-mono-runtime" {>= "3.0~"}
   "deb-mono-xbuild" {= "6.8.0.105+dfsg-3.3"}
   "deb-pkg-config"
-  ("deb-libc6" {>= "2.36"} | "deb- libc6-1" {>= "2.36"} | "deb- libc0-1" {>= "2.36"})
+  ("deb-libc6" {>= "2.36"} | "deb-libc6-1" {>= "2.36"} | "deb-libc0-1" {>= "2.36"})
 ]
 extra-source "mono-devel_6.8.0.105+dfsg-3.3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mono/mono-devel_6.8.0.105+dfsg-3.3_all.deb"

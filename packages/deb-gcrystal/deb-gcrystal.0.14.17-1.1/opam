@@ -15,7 +15,7 @@ depends: [
   "deb-libgtk-3-0" {>= "3.0.0"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-libxml2" {>= "2.7.4"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gcrystal_0.14.17-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-chemistry-utils/gcrystal_0.14.17-1.1_amd64.deb"

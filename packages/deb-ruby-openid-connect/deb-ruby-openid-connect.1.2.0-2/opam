@@ -16,7 +16,7 @@ depends: [
   "deb-ruby-validate-email"
   "deb-ruby-validate-url"
   "deb-ruby-webfinger"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-openid-connect_1.2.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-openid-connect/ruby-openid-connect_1.2.0-2_all.deb"

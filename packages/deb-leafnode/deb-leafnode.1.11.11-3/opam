@@ -11,8 +11,8 @@ depends: [
   "deb-logrotate"
   "deb-netbase"
   "deb-tcpd"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-openbsd-inetd" | "deb- inet-superserver")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-openbsd-inetd" | "deb-inet-superserver")
 ]
 conflicts: [
   "deb-news-transport-system"

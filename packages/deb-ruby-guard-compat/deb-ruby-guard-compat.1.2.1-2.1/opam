@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-guard-compat"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-guard-compat_1.2.1-2.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-guard-compat/ruby-guard-compat_1.2.1-2.1_all.deb"

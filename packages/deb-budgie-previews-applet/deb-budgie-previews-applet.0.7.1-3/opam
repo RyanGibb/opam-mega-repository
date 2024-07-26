@@ -21,7 +21,7 @@ depends: [
   "deb-wmctrl"
   "deb-xdotool"
   "deb-xprintidle"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "budgie-previews-applet_0.7.1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/budgie-extras/budgie-previews-applet_0.7.1-3_all.deb"

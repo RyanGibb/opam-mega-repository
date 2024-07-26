@@ -10,7 +10,7 @@ depends: [
   "deb-libdbi-perl"
   "deb-libio-compress-perl"
   "deb-perl"
-  ("deb-libdbd-mysql-perl" | "deb- libdbd-oracle-perl")
+  ("deb-libdbd-mysql-perl" | "deb-libdbd-oracle-perl")
 ]
 extra-source "ora2pg_20.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/ora2pg/ora2pg_20.0-1_all.deb"

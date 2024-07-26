@@ -9,7 +9,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-click"
   "deb-python3-rich"
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-rich-click_1.6.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-rich-click/python3-rich-click_1.6.0-1_all.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-librust-clap-dev" {= "2.33.3-1"}
-  ("deb-librust-strsim-0-9+default-dev" | "deb- librust-strsim-0-8+default-dev" | "deb- librust-strsim-0-7+default-dev")
+  ("deb-librust-strsim-0-9+default-dev" | "deb-librust-strsim-0-8+default-dev" | "deb-librust-strsim-0-7+default-dev")
 ]
 extra-source "librust-clap+strsim-dev_2.33.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-clap/librust-clap+strsim-dev_2.33.3-1_amd64.deb"

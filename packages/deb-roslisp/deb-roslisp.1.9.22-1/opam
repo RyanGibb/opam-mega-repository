@@ -10,7 +10,7 @@ depends: [
   "deb-cl-std-srvs"
   "deb-python"
   "deb-rospack-tools"
-  ("deb-sbcl" | "deb- lisp-compiler")
+  ("deb-sbcl" | "deb-lisp-compiler")
 ]
 extra-source "roslisp_1.9.22-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ros-roslisp/roslisp_1.9.22-1_all.deb"

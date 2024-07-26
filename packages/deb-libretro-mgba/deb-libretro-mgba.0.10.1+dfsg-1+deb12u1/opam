@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.35"}
   "deb-libinih1" {>= "40"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-retroarch" | "deb- libretro-frontend")
+  ("deb-retroarch" | "deb-libretro-frontend")
 ]
 extra-source "libretro-mgba_0.10.1+dfsg-1+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mgba/libretro-mgba_0.10.1+dfsg-1+deb12u1_amd64.deb"

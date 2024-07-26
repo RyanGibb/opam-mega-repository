@@ -9,7 +9,7 @@ depends: [
   "deb-python3-aiohttp"
   "deb-python3-any"
   "deb-python3-jinja2"
-  ("deb-python3-typing-extensions" | "deb- python3" {> "3.8"})
+  ("deb-python3-typing-extensions" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-aiohttp-jinja2_1.5.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/aiohttp-jinja2/python3-aiohttp-jinja2_1.5.1-1_all.deb"

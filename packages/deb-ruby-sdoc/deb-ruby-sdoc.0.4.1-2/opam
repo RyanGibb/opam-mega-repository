@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-json"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-sdoc_0.4.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-sdoc/ruby-sdoc_0.4.1-2_all.deb"

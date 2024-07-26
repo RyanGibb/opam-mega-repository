@@ -11,7 +11,7 @@ depends: [
   "deb-libgeo-ip-perl"
   "deb-libsyntax-highlight-engine-kate-perl"
   "deb-perl-any"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "pnopaste_1.8-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pnopaste/pnopaste_1.8-1_all.deb"

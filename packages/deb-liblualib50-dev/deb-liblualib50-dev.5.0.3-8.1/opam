@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-liblua50-dev"
   "deb-liblualib50" {= "5.0.3-8.1"}
-  ("deb-libc6-dev" | "deb- libc-dev")
+  ("deb-libc6-dev" | "deb-libc-dev")
 ]
 extra-source "liblualib50-dev_5.0.3-8.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lua50/liblualib50-dev_5.0.3-8.1_amd64.deb"

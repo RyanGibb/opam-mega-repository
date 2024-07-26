@@ -19,7 +19,7 @@ depends: [
   "deb-libpangoft2-1-0-0" {>= "1.14.0"}
   "deb-libx11-6"
   "deb-libxtst6"
-  ("deb-gkrellm" {> "2.0"} | "deb- gkrellm2")
+  ("deb-gkrellm" {> "2.0"} | "deb-gkrellm2")
 ]
 extra-source "gkrellm-leds_0.8.0-1.3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gkrellm-leds/gkrellm-leds_0.8.0-1.3_amd64.deb"

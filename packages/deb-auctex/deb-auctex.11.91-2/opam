@@ -10,7 +10,7 @@ depends: [
   "deb-emacsen-common" {>= "3.0.0"}
   "deb-preview-latex-style"
   "deb-procps"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 conflicts: [
   "deb-preview-latex"

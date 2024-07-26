@@ -16,8 +16,8 @@ depends: [
   "deb-libquadmath0" {>= "4.6"}
   "deb-libscalapack-openmpi2-0"
   "deb-libxc5" {>= "4.2.1-1"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "cp2k_6.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cp2k/cp2k_6.1-2_amd64.deb"

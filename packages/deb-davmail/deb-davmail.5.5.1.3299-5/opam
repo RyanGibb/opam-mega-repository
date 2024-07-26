@@ -24,7 +24,7 @@ depends: [
   "deb-libwoodstox-java"
   "deb-logrotate"
   "deb-lsb-base"
-  ("deb-default-jre-headless" | "deb- java8-runtime-headless" | "deb- java9-runtime-headless" | "deb- java10-runtime-headless" | "deb- java11-runtime-headless")
+  ("deb-default-jre-headless" | "deb-java8-runtime-headless" | "deb-java9-runtime-headless" | "deb-java10-runtime-headless" | "deb-java11-runtime-headless")
 ]
 extra-source "davmail_5.5.1.3299-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/davmail/davmail_5.5.1.3299-5_all.deb"

@@ -14,7 +14,7 @@ depends: [
   "deb-libqt5network5" {>= "5.0.2"}
   "deb-libqt5widgets5" {>= "5.6.0~beta"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
 ]
 extra-source "herculesstudio_1.5.0-2+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/herculesstudio/herculesstudio_1.5.0-2+b2_amd64.deb"

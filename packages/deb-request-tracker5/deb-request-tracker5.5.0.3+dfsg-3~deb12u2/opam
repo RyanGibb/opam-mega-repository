@@ -106,11 +106,11 @@ depends: [
   "deb-perl-doc"
   "deb-rt5-clients" {= "5.0.3+dfsg-3~deb12u2"}
   "deb-ucf"
-  ("deb-dbconfig-common" | "deb- dbconfig-no-thanks")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-default-mta" | "deb- mail-transport-agent")
-  ("deb-rt5-db-sqlite" {= "5.0.3+dfsg-3~deb12u2"} | "deb- rt5-db-postgresql" {= "5.0.3+dfsg-3~deb12u2"} | "deb- rt5-db-mysql" {= "5.0.3+dfsg-3~deb12u2"})
-  ("deb-rt5-standalone" {= "5.0.3+dfsg-3~deb12u2"} | "deb- rt5-apache2" {= "5.0.3+dfsg-3~deb12u2"} | "deb- rt5-fcgi" {= "5.0.3+dfsg-3~deb12u2"})
+  ("deb-dbconfig-common" | "deb-dbconfig-no-thanks")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-default-mta" | "deb-mail-transport-agent")
+  ("deb-rt5-db-sqlite" {= "5.0.3+dfsg-3~deb12u2"} | "deb-rt5-db-postgresql" {= "5.0.3+dfsg-3~deb12u2"} | "deb-rt5-db-mysql" {= "5.0.3+dfsg-3~deb12u2"})
+  ("deb-rt5-standalone" {= "5.0.3+dfsg-3~deb12u2"} | "deb-rt5-apache2" {= "5.0.3+dfsg-3~deb12u2"} | "deb-rt5-fcgi" {= "5.0.3+dfsg-3~deb12u2"})
 ]
 extra-source "request-tracker5_5.0.3+dfsg-3~deb12u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/request-tracker5/request-tracker5_5.0.3+dfsg-3~deb12u2_all.deb"

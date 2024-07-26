@@ -11,8 +11,8 @@ depends: [
   "deb-libgfortran5" {>= "10"}
   "deb-libopenmpi3" {>= "4.0.5"}
   "deb-libscalapack-openmpi2-1" {>= "2.1.0"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libelpa15_2019.11.001-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/elpa/libelpa15_2019.11.001-4_amd64.deb"

@@ -17,7 +17,7 @@ depends: [
   "deb-x2gothinclient-common" {>= "1.5.0.1-6+deb11u1"}
   "deb-xauth"
   "deb-xinit"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "x2gothinclient-displaymanager_1.5.0.1-6+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/x2gothinclient/x2gothinclient-displaymanager_1.5.0.1-6+deb11u1_all.deb"

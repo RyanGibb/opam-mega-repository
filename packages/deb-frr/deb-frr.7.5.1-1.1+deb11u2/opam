@@ -16,7 +16,7 @@ depends: [
   "deb-libsystemd0"
   "deb-libyang1" {>= "1.0.184-1~"}
   "deb-logrotate" {>= "3.2-11"}
-  ("deb-iproute2" | "deb- iproute")
+  ("deb-iproute2" | "deb-iproute")
 ]
 conflicts: [
   "deb-pimd"

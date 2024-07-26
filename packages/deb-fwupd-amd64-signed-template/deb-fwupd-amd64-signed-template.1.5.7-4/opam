@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r fwupd-amd64-signed-template"]
 ]
 depends: [
-  ("deb-make" | "deb- build-essential" | "deb- dpkg-dev")
+  ("deb-make" | "deb-build-essential" | "deb-dpkg-dev")
 ]
 extra-source "fwupd-amd64-signed-template_1.5.7-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fwupd/fwupd-amd64-signed-template_1.5.7-4_amd64.deb"

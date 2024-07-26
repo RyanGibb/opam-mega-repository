@@ -12,7 +12,7 @@ depends: [
   "deb-libswt-cairo-gtk-4-jni"
   "deb-libswt-gtk-4-java"
   "deb-libswt-webkit-gtk-4-jni"
-  ("deb-default-jre" | "deb- java2-runtime")
+  ("deb-default-jre" | "deb-java2-runtime")
 ]
 extra-source "tuxguitar_1.2-25_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tuxguitar/tuxguitar_1.2-25_all.deb"

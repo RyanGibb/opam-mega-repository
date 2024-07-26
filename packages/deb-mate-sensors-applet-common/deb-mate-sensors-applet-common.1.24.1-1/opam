@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r mate-sensors-applet-common"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "mate-sensors-applet-common_1.24.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mate-sensors-applet/mate-sensors-applet-common_1.24.1-1_all.deb"

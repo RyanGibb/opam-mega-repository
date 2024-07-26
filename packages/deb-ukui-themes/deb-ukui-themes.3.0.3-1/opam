@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ukui-themes"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 conflicts: [
   "deb-ubuntukylin-theme"

@@ -18,8 +18,8 @@ depends: [
   "deb-libqt5core5a" {>= "5.15.2~"}
   "deb-libqt5qml5" {>= "5.15.2~"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
-  ("deb-libqt5quick5" {>= "5.15.2~"} | "deb- libqt5quick5-gles" {>= "5.15.2~"})
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb-libqt5gui5-gles" {>= "5.15.2~"})
+  ("deb-libqt5quick5" {>= "5.15.2~"} | "deb-libqt5quick5-gles" {>= "5.15.2~"})
 ]
 extra-source "libkf5declarative5_5.103.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kdeclarative/libkf5declarative5_5.103.0-1_amd64.deb"

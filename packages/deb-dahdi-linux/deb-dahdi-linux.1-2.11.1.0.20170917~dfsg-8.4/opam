@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-fxload"
   "deb-procps"
-  ("deb-dahdi-dkms" | "deb- dahdi-source")
+  ("deb-dahdi-dkms" | "deb-dahdi-source")
 ]
 extra-source "dahdi-linux_1:2.11.1.0.20170917~dfsg-8.4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dahdi-linux/dahdi-linux_2.11.1.0.20170917~dfsg-8.4_all.deb"

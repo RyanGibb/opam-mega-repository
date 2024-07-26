@@ -13,7 +13,7 @@ depends: [
   "deb-libxmu-dev"
   "deb-libxpm-dev"
   "deb-libxt-dev"
-  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
+  ("deb-libgl1-mesa-dev" | "deb-libgl-dev")
 ]
 conflicts: [
   "deb-inventor-dev"

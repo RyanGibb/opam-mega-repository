@@ -13,7 +13,7 @@ depends: [
   "deb-python3-termcolor"
   "deb-python3-tz"
   "deb-python3-yaml"
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
 ]
 extra-source "undertime_3.2.0_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/undertime/undertime_3.2.0_all.deb"

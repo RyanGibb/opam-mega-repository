@@ -13,7 +13,7 @@ depends: [
   "deb-libsdl-mixer1-2"
   "deb-libsdl1-2debian" {>= "1.2.11"}
   "deb-phlipple-data" {>= "0.8.5-5"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "phlipple_0.8.5-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/phlipple/phlipple_0.8.5-5_amd64.deb"

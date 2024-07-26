@@ -12,7 +12,7 @@ depends: [
   "deb-libglib2-0-0" {>= "2.37.3"}
   "deb-libgtk2-0-0" {>= "2.14.0"}
   "deb-liblo7" {>= "0.26~repack"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "ghostess_20120105-1+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/ghostess/ghostess_20120105-1+b2_amd64.deb"

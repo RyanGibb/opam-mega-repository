@@ -25,7 +25,7 @@ depends: [
   "deb-libsdformat9-9" {>= "9.3.0+ds"}
   "deb-libstdc++6" {>= "9"}
   "deb-libuuid1" {>= "2.16"}
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "gazebo-plugin-base_11.1.0+dfsg-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gazebo/gazebo-plugin-base_11.1.0+dfsg-6_amd64.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libfop-java" {= "1-2.8-2"}
-  ("deb-default-jre-headless" | "deb- java2-runtime-headless")
+  ("deb-default-jre-headless" | "deb-java2-runtime-headless")
 ]
 extra-source "fop_1:2.8-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fop/fop_2.8-2_all.deb"

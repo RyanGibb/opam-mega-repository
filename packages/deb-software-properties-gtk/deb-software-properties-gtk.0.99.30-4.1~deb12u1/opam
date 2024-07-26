@@ -17,7 +17,7 @@ depends: [
   "deb-python3-gi"
   "deb-python3-software-properties" {= "0.99.30-4.1~deb12u1"}
   "deb-software-properties-common"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "software-properties-gtk_0.99.30-4.1~deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/software-properties/software-properties-gtk_0.99.30-4.1~deb12u1_all.deb"

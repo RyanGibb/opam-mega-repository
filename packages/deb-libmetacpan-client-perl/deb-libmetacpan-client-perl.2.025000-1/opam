@@ -15,7 +15,7 @@ depends: [
   "deb-libtype-tiny-perl"
   "deb-liburi-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.23.0"} | "deb- libhttp-tiny-perl" {>= "0.056"})
+  ("deb-perl" {>= "5.23.0"} | "deb-libhttp-tiny-perl" {>= "0.056"})
 ]
 extra-source "libmetacpan-client-perl_2.025000-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libm/libmetacpan-client-perl/libmetacpan-client-perl_2.025000-1_all.deb"

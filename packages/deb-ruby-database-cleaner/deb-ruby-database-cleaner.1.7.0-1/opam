@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-database-cleaner"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-database-cleaner_1.7.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-database-cleaner/ruby-database-cleaner_1.7.0-1_all.deb"

@@ -23,7 +23,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-timidity"
   "deb-unzip"
-  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb-libqt5gui5-gles" {>= "5.11.0~rc1"})
 ]
 extra-source "pianobooster_1.0.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pianobooster/pianobooster_1.0.0-3_amd64.deb"

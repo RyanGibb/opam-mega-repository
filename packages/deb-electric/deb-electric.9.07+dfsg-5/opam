@@ -12,7 +12,7 @@ depends: [
   "deb-libjava3d-java"
   "deb-libslf4j-java"
   "deb-libvecmath-java"
-  ("deb-default-jre" | "deb- java7-runtime")
+  ("deb-default-jre" | "deb-java7-runtime")
 ]
 extra-source "electric_9.07+dfsg-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/electric/electric_9.07+dfsg-5_all.deb"

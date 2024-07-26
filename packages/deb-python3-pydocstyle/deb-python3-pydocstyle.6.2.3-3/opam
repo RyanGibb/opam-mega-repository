@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-python3-any"
   "deb-python3-snowballstemmer" {>= "2.2.0"}
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-pydocstyle_6.2.3-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pydocstyle/python3-pydocstyle_6.2.3-3_all.deb"

@@ -12,7 +12,7 @@ depends: [
   "deb-libgtk-3-dev" {>= "3.22.0"}
   "deb-libgtkmm-3-0-1v5" {= "3.24.7-1"}
   "deb-libpangomm-1-4-dev" {>= "2.38.2"}
-  ("deb-libgdk-pixbuf-2-0-dev" {>= "2.35.5"} | "deb- libgdk-pixbuf2-0-dev" {>= "2.35.5"})
+  ("deb-libgdk-pixbuf-2-0-dev" {>= "2.35.5"} | "deb-libgdk-pixbuf2-0-dev" {>= "2.35.5"})
 ]
 extra-source "libgtkmm-3.0-dev_3.24.7-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gtkmm3.0/libgtkmm-3.0-dev_3.24.7-1_amd64.deb"

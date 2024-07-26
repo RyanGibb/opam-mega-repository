@@ -42,7 +42,7 @@ depends: [
   "deb-libqt5printsupport5" {>= "5.11.0~"}
   "deb-libqt5widgets5" {>= "5.11.0~rc1"}
   "deb-libstdc++6" {>= "4.9"}
-  ("deb-libqt5gui5" {>= "5.11.0~"} | "deb- libqt5gui5-gles" {>= "5.11.0~"})
+  ("deb-libqt5gui5" {>= "5.11.0~"} | "deb-libqt5gui5-gles" {>= "5.11.0~"})
 ]
 extra-source "kgpg_4:20.12.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kgpg/kgpg_20.12.0-1_amd64.deb"

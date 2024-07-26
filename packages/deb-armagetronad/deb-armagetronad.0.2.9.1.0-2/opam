@@ -15,7 +15,7 @@ depends: [
   "deb-libsdl1-2debian" {>= "1.2.11"}
   "deb-libstdc++6" {>= "9"}
   "deb-libxml2" {>= "2.8.0"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "armagetronad_0.2.9.1.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/armagetronad/armagetronad_0.2.9.1.0-2_amd64.deb"

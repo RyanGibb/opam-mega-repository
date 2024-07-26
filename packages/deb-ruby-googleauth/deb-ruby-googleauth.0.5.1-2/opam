@@ -13,7 +13,7 @@ depends: [
   "deb-ruby-multi-json" {>= "1.11"}
   "deb-ruby-os" {>= "0.9"}
   "deb-ruby-signet" {>= "0.7"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-googleauth_0.5.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-googleauth/ruby-googleauth_0.5.1-2_all.deb"

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo dpkg -r wine-development"]
 ]
 depends: [
-  ("deb-wine64-development" {< "4.2-4.1~"} | "deb- wine32-development" {< "4.2-4.1~"})
-  ("deb-wine64-development" {>= "4.2-4"} | "deb- wine32-development" {>= "4.2-4"})
+  ("deb-wine64-development" {< "4.2-4.1~"} | "deb-wine32-development" {< "4.2-4.1~"})
+  ("deb-wine64-development" {>= "4.2-4"} | "deb-wine32-development" {>= "4.2-4"})
 ]
 extra-source "wine-development_4.2-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/wine-development/wine-development_4.2-4_all.deb"

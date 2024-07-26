@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-spamassassin" {= "4.0.0-6"}
-  ("deb-systemd" | "deb- rsyslog" | "deb- system-log-daemon")
+  ("deb-systemd" | "deb-rsyslog" | "deb-system-log-daemon")
 ]
 extra-source "spamd_4.0.0-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/spamassassin/spamd_4.0.0-6_all.deb"

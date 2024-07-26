@@ -25,8 +25,8 @@ depends: [
   "deb-libstdc++6" {>= "6"}
   "deb-lsb-base" {>= "3.0-6"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-mariadb-client" | "deb- default-mysql-client" | "deb- virtual-mysql-client")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-mariadb-client" | "deb-default-mysql-client" | "deb-virtual-mysql-client")
 ]
 extra-source "kopano-server_8.7.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kopanocore/kopano-server_8.7.0-3_amd64.deb"

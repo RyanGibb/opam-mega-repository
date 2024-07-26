@@ -9,8 +9,8 @@ depends: [
   "deb-freeglut3"
   "deb-libc6" {>= "2.14"}
   "deb-libchipmunk0d3" {= "6.1.5-1+b1"}
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "chipmunk-dev_6.1.5-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/chipmunk/chipmunk-dev_6.1.5-1+b1_amd64.deb"

@@ -9,7 +9,7 @@ depends: [
   "deb-enscript"
   "deb-python"
   "deb-python-tk"
-  ("deb-cups-client" | "deb- lpr")
+  ("deb-cups-client" | "deb-lpr")
 ]
 extra-source "rhinote_0.7.4-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rhinote/rhinote_0.7.4-3_all.deb"

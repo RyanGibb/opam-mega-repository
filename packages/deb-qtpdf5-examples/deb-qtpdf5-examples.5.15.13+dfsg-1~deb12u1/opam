@@ -14,7 +14,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.15.8+dfsg~"}
   "deb-libstdc++6" {>= "5"}
   "deb-qml-module-qtquick-pdf" {= "5.15.13+dfsg-1~deb12u1"}
-  ("deb-libqt5gui5" {>= "5.15.8+dfsg~"} | "deb- libqt5gui5-gles" {>= "5.15.8+dfsg~"})
+  ("deb-libqt5gui5" {>= "5.15.8+dfsg~"} | "deb-libqt5gui5-gles" {>= "5.15.8+dfsg~"})
 ]
 extra-source "qtpdf5-examples_5.15.13+dfsg-1~deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtwebengine-opensource-src/qtpdf5-examples_5.15.13+dfsg-1~deb12u1_amd64.deb"

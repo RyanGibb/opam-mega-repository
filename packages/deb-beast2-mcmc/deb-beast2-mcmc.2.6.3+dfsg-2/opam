@@ -10,7 +10,7 @@ depends: [
   "deb-libcolt-free-java"
   "deb-libhmsbeagle-java"
   "deb-libjam-java"
-  ("deb-default-jre" | "deb- java9-runtime")
+  ("deb-default-jre" | "deb-java9-runtime")
 ]
 extra-source "beast2-mcmc_2.6.3+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/beast2-mcmc/beast2-mcmc_2.6.3+dfsg-2_all.deb"

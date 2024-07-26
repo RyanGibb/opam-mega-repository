@@ -46,7 +46,7 @@ depends: [
   "deb-libxml2-dev"
   "deb-libzstd-dev"
   "deb-unixodbc-dev"
-  ("deb-libcurl4-gnutls-dev" | "deb- libcurl-ssl-dev")
+  ("deb-libcurl4-gnutls-dev" | "deb-libcurl-ssl-dev")
 ]
 extra-source "libgdal-dev_3.6.2+dfsg-1+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gdal/libgdal-dev_3.6.2+dfsg-1+b2_amd64.deb"

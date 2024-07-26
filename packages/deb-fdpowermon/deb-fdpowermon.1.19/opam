@@ -9,7 +9,7 @@ depends: [
   "deb-acpi"
   "deb-libgtk3-perl"
   "deb-perl-any"
-  ("deb-fdpowermon-icons" | "deb- oxygen-icon-theme")
+  ("deb-fdpowermon-icons" | "deb-oxygen-icon-theme")
 ]
 extra-source "fdpowermon_1.19_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fdpowermon/fdpowermon_1.19_all.deb"

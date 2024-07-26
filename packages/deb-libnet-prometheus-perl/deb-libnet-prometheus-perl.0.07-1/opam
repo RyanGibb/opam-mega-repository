@@ -9,7 +9,7 @@ depends: [
   "deb-libref-util-perl"
   "deb-libstruct-dumb-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.19.5"} | "deb- libscalar-list-utils-perl" {>= "1-1.29"})
+  ("deb-perl" {>= "5.19.5"} | "deb-libscalar-list-utils-perl" {>= "1-1.29"})
 ]
 extra-source "libnet-prometheus-perl_0.07-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libn/libnet-prometheus-perl/libnet-prometheus-perl_0.07-1_all.deb"

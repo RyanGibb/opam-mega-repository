@@ -16,9 +16,9 @@ depends: [
   "deb-libwww-perl"
   "deb-perl-any"
   "deb-ucf"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-libcgi-pm-perl" | "deb- perl" {< "5.19"})
-  ("deb-liblocale-codes-perl" | "deb- perl" {< "5.28"})
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-libcgi-pm-perl" | "deb-perl" {< "5.19"})
+  ("deb-liblocale-codes-perl" | "deb-perl" {< "5.28"})
 ]
 extra-source "w3c-linkchecker_4.81-10_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/w3c-linkchecker/w3c-linkchecker_4.81-10_all.deb"

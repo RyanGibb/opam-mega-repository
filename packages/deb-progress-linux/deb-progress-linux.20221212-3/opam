@@ -9,7 +9,7 @@ depends: [
   "deb-ca-certificates"
   "deb-progress-linux-pgp-keys"
   "deb-progress-linux-ssh-keys"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "progress-linux_20221212-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/progress-linux/progress-linux_20221212-3_all.deb"

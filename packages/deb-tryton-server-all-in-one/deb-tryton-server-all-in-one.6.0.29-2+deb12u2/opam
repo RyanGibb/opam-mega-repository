@@ -14,7 +14,7 @@ depends: [
   "deb-tryton-server-nginx"
   "deb-tryton-server-postgresql"
   "deb-tryton-server-uwsgi"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "tryton-server-all-in-one_6.0.29-2+deb12u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tryton-server/tryton-server-all-in-one_6.0.29-2+deb12u2_all.deb"

@@ -11,7 +11,7 @@ depends: [
   "deb-python3-logfury"
   "deb-python3-requests"
   "deb-python3-tqdm"
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-b2sdk_1.17.3-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-b2sdk/python3-b2sdk_1.17.3-2_all.deb"

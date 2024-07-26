@@ -18,7 +18,7 @@ depends: [
   "deb-libpulse-mainloop-glib0" {>= "5.0"}
   "deb-libpulse0" {>= "5.0"}
   "deb-pulseaudio"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "ayatana-indicator-sound_0.8.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/ayatana-indicator-sound/ayatana-indicator-sound_0.8.2-1_amd64.deb"

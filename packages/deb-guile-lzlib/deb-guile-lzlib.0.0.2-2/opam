@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-liblz-dev"
-  ("deb-guile-3-0" | "deb- guile-2-2")
+  ("deb-guile-3-0" | "deb-guile-2-2")
 ]
 extra-source "guile-lzlib_0.0.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/guile-lzlib/guile-lzlib_0.0.2-2_amd64.deb"

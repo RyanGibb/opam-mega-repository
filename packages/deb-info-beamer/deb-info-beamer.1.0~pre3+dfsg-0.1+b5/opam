@@ -19,7 +19,7 @@ depends: [
   "deb-liblua5-1-0"
   "deb-libswscale5" {>= "7-4.0"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "info-beamer_1.0~pre3+dfsg-0.1+b5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/info-beamer/info-beamer_1.0~pre3+dfsg-0.1+b5_amd64.deb"

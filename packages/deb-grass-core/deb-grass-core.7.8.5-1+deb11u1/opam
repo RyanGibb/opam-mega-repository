@@ -37,9 +37,9 @@ depends: [
   "deb-python3-numpy"
   "deb-python3-numpy" {>= "1-1.16.0~rc1"}
   "deb-zlib1g" {>= "1-1.2.0"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-libglu1-mesa" | "deb- libglu1")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-libglu1-mesa" | "deb-libglu1")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "grass-core_7.8.5-1+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/grass/grass-core_7.8.5-1+deb11u1_amd64.deb"

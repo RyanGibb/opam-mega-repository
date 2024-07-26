@@ -17,8 +17,8 @@ depends: [
   "deb-python-httplib2"
   "deb-python-pip"
   "deb-texlive-latex-base"
-  ("deb-hunspell" | "deb- aspell" | "deb- ispell" | "deb- myspell-dictionary" | "deb- hspell")
-  ("deb-python-wxgtk3-0" | "deb- python-wxgtk2-8")
+  ("deb-hunspell" | "deb-aspell" | "deb-ispell" | "deb-myspell-dictionary" | "deb-hspell")
+  ("deb-python-wxgtk3-0" | "deb-python-wxgtk2-8")
 ]
 extra-source "gnumed-client_1.7.5+dfsg-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnumed-client/gnumed-client_1.7.5+dfsg-3_all.deb"

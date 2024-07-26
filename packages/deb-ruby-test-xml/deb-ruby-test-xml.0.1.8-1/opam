@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-diffy" {>= "3.0"}
   "deb-ruby-nokogiri" {>= "1.3.2"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-test-xml_0.1.8-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-test-xml/ruby-test-xml_0.1.8-1_all.deb"

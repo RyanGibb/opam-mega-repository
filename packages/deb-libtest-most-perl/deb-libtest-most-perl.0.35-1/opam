@@ -12,8 +12,8 @@ depends: [
   "deb-libtest-exception-perl" {>= "0.43"}
   "deb-libtest-warn-perl" {>= "0.30"}
   "deb-perl"
-  ("deb-libtest-simple-perl" {>= "1.302047"} | "deb- perl" {>= "5.25.4"})
-  ("deb-perl" {>= "5.21.8"} | "deb- libtest-harness-perl" {>= "3.35"})
+  ("deb-libtest-simple-perl" {>= "1.302047"} | "deb-perl" {>= "5.25.4"})
+  ("deb-perl" {>= "5.21.8"} | "deb-libtest-harness-perl" {>= "3.35"})
 ]
 extra-source "libtest-most-perl_0.35-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libt/libtest-most-perl/libtest-most-perl_0.35-1_all.deb"

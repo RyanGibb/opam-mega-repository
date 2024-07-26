@@ -13,7 +13,7 @@ depends: [
   "deb-libx11-6"
   "deb-lsb-base"
   "deb-xserver-xorg-core" {>= "2-1.18"}
-  ("deb-bbswitch-dkms" | "deb- bbswitch-source")
+  ("deb-bbswitch-dkms" | "deb-bbswitch-source")
 ]
 extra-source "bumblebee_3.2.1-20_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/bumblebee/bumblebee_3.2.1-20_amd64.deb"

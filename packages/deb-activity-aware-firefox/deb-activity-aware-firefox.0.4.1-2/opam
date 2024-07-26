@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-gawk"
   "deb-kdialog"
-  ("deb-firefox" | "deb- firefox-esr")
+  ("deb-firefox" | "deb-firefox-esr")
 ]
 extra-source "activity-aware-firefox_0.4.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/activity-aware-firefox/activity-aware-firefox_0.4.1-2_all.deb"

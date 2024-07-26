@@ -17,7 +17,7 @@ depends: [
   "deb-python-genshi" {>= "0.4.4"}
   "deb-python-lxml" {>= "0.9"}
   "deb-ucf"
-  ("deb-python-pyinotify" | "deb- python-gamin")
+  ("deb-python-pyinotify" | "deb-python-gamin")
 ]
 extra-source "bcfg2-server_1.4.0~pre2+git141-g6d40dace6358-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/bcfg2/bcfg2-server_1.4.0~pre2+git141-g6d40dace6358-2_all.deb"

@@ -10,7 +10,7 @@ depends: [
   "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
   "deb-libglib2-0-0" {>= "2.64"}
   "deb-libgtk-3-0" {>= "3.21.5"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "budgie-desktop-view_1.2.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/budgie-desktop-view/budgie-desktop-view_1.2.1-1_amd64.deb"

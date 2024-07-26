@@ -17,7 +17,7 @@ depends: [
   "deb-sqlite3"
   "deb-sysvinit-utils"
   "deb-uwsgi-plugin-python3"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "freezer-api_13.0.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/freezer-api/freezer-api_13.0.0-2_all.deb"

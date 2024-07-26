@@ -10,8 +10,8 @@ depends: [
   "deb-libgcc-s1" {>= "3.0"}
   "deb-libltdl7" {>= "2.4.7"}
   "deb-libstdc++6" {>= "11"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "jags_4.3.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jags/jags_4.3.1-1_amd64.deb"

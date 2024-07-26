@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-multi-json"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-multi-json_1.14.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-multi-json/ruby-multi-json_1.14.1-1_all.deb"

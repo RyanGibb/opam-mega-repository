@@ -16,7 +16,7 @@ depends: [
   "deb-python3-dbg" {>= "3.9~"}
   "deb-python3-pyqt5-dbg" {>= "5.15.0+dfsg-1+exp1~"}
   "deb-python3-pyqt5-qsci" {= "2.11.6+dfsg-2"}
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "python3-pyqt5.qsci-dbg_2.11.6+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qscintilla2/python3-pyqt5.qsci-dbg_2.11.6+dfsg-2_amd64.deb"

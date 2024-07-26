@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r jtex-base"]
 ]
 depends: [
-  ("deb-texlive-binaries" | "deb- texlive-base-bin")
+  ("deb-texlive-binaries" | "deb-texlive-base-bin")
 ]
 conflicts: [
   "deb-jtex-bin" {<= "1.9.1"}

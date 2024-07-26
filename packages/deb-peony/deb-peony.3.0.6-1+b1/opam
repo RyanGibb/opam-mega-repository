@@ -21,7 +21,7 @@ depends: [
   "deb-libstdc++6" {>= "4.1.1"}
   "deb-libx11-6"
   "deb-peony-common" {= "3.0.6-1"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "peony_3.0.6-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/peony/peony_3.0.6-1+b1_amd64.deb"

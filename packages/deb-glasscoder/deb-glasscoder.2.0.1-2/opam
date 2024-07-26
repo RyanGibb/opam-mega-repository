@@ -17,7 +17,7 @@ depends: [
   "deb-libssl3" {>= "3.0.0"}
   "deb-libstdc++6" {>= "11"}
   "deb-libtag1v5" {>= "1.9.1-2.2~"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "glasscoder_2.0.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/glasscoder/glasscoder_2.0.1-2_amd64.deb"

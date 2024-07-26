@@ -19,7 +19,7 @@ depends: [
   "deb-libstdc++6" {>= "5"}
   "deb-libvorbisfile3" {>= "1.1.2"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "dsda-doom_0.25.6+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dsda-doom/dsda-doom_0.25.6+dfsg-1_amd64.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libexpat1" {= "2.2.6-2+deb10u4"}
-  ("deb-libc6-dev" | "deb- libc-dev")
+  ("deb-libc6-dev" | "deb-libc-dev")
 ]
 conflicts: [
   "deb-libexpat-dev"

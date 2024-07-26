@@ -10,8 +10,8 @@ depends: [
   "deb-libgcc-s1" {>= "3.0"}
   "deb-libmumps-seq-5-5" {>= "5.5.1"}
   "deb-libstdc++6" {>= "11"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 conflicts: [
   "deb-coinor-libipopt1"

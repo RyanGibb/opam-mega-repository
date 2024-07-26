@@ -17,7 +17,7 @@ depends: [
   "deb-libqt5x11extras5" {>= "5.6.0"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-libx11-6"
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "featherpad_1.3.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/featherpad/featherpad_1.3.5-1_amd64.deb"

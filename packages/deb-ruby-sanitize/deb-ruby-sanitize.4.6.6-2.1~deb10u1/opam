@@ -9,7 +9,7 @@ depends: [
   "deb-ruby-crass" {>= "1.0.2"}
   "deb-ruby-nokogiri" {>= "1.4.4"}
   "deb-ruby-nokogumbo" {>= "1.4"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-sanitize_4.6.6-2.1~deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-sanitize/ruby-sanitize_4.6.6-2.1~deb10u1_all.deb"

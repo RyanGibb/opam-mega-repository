@@ -42,7 +42,7 @@ depends: [
   "deb-qml-module-org-kde-kcoreaddons"
   "deb-qml-module-org-kde-kirigami2"
   "deb-qml-module-org-kde-prison"
-  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb-libqt5gui5-gles" {>= "5.15.2~"})
 ]
 extra-source "plasma-nm_4:5.27.5-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/plasma-nm/plasma-nm_5.27.5-2_amd64.deb"

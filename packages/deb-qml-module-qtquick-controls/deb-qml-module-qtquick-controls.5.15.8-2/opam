@@ -20,8 +20,8 @@ depends: [
   "deb-qml-module-qtquick-layouts"
   "deb-qml-module-qtquick-window2"
   "deb-qml-module-qtquick2"
-  ("deb-libqt5gui5" {>= "5.15.8+dfsg~"} | "deb- libqt5gui5-gles" {>= "5.15.8+dfsg~"})
-  ("deb-libqt5quick5" {>= "5.15.8+dfsg~"} | "deb- libqt5quick5-gles" {>= "5.15.8+dfsg~"})
+  ("deb-libqt5gui5" {>= "5.15.8+dfsg~"} | "deb-libqt5gui5-gles" {>= "5.15.8+dfsg~"})
+  ("deb-libqt5quick5" {>= "5.15.8+dfsg~"} | "deb-libqt5quick5-gles" {>= "5.15.8+dfsg~"})
 ]
 extra-source "qml-module-qtquick-controls_5.15.8-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtquickcontrols-opensource-src/qml-module-qtquick-controls_5.15.8-2_amd64.deb"

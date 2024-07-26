@@ -10,7 +10,7 @@ depends: [
   "deb-libfgetdata6" {= "0.10.0-10"}
   "deb-libgetdata++7" {= "0.10.0-10"}
   "deb-libgetdata8" {= "0.10.0-10"}
-  ("deb-gfortran-10" | "deb- gfortran-mod-15")
+  ("deb-gfortran-10" | "deb-gfortran-mod-15")
 ]
 extra-source "libgetdata-dev_0.10.0-10_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libg/libgetdata/libgetdata-dev_0.10.0-10_amd64.deb"

@@ -37,7 +37,7 @@ depends: [
   "deb-python" {< "2.8"}
   "deb-python" {>= "2.7"}
   "deb-python-any" {>= "2.6.6-7~"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "python-libavg_1.8.2-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/liba/libavg/python-libavg_1.8.2-3_amd64.deb"

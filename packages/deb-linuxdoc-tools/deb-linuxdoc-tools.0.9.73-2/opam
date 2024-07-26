@@ -12,7 +12,7 @@ depends: [
   "deb-perl"
   "deb-sgml-base" {>= "1.28"}
   "deb-sgml-data"
-  ("deb-gawk" | "deb- mawk")
+  ("deb-gawk" | "deb-mawk")
 ]
 extra-source "linuxdoc-tools_0.9.73-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/linuxdoc-tools/linuxdoc-tools_0.9.73-2_amd64.deb"

@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.14"}
   "deb-libncurses6" {>= "6"}
   "deb-libtinfo6" {>= "6"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "nn_6.7.3-10+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/nn/nn_6.7.3-10+b2_amd64.deb"

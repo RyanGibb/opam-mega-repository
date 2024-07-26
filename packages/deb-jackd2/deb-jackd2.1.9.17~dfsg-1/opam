@@ -20,7 +20,7 @@ depends: [
   "deb-libsystemd0"
   "deb-python3-any"
   "deb-python3-dbus"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 conflicts: [
   "deb-jack-daemon"

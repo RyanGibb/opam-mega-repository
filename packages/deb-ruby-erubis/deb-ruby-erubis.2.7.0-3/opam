@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-erubis"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-erubis_2.7.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-erubis/ruby-erubis_2.7.0-3_all.deb"

@@ -12,7 +12,7 @@ depends: [
   "deb-libfribidi0" {>= "0.19.2"}
   "deb-libgl1"
   "deb-libglewmx1-13" {>= "1.12.0"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "libglc0_0.7.2-7+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/quesoglc/libglc0_0.7.2-7+b2_amd64.deb"

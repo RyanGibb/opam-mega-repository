@@ -29,8 +29,8 @@ depends: [
   "deb-sox"
   "deb-vorbis-tools"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "terminatorx_4.0.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/terminatorx/terminatorx_4.0.1-2_amd64.deb"

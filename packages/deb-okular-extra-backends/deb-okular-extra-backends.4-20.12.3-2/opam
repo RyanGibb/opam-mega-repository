@@ -27,7 +27,7 @@ depends: [
   "deb-libstdc++6" {>= "5"}
   "deb-libtiff5" {>= "4.0.3"}
   "deb-libzip4" {>= "0.10"}
-  ("deb-libqt5gui5" {>= "5.12.0~"} | "deb- libqt5gui5-gles" {>= "5.12.0~"})
+  ("deb-libqt5gui5" {>= "5.12.0~"} | "deb-libqt5gui5-gles" {>= "5.12.0~"})
 ]
 extra-source "okular-extra-backends_4:20.12.3-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/okular/okular-extra-backends_20.12.3-2_amd64.deb"

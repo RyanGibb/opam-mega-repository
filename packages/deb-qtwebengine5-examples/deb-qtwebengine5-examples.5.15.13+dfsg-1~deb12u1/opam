@@ -26,7 +26,7 @@ depends: [
   "deb-qml-module-qtquick-window2"
   "deb-qml-module-qtwebengine"
   "deb-qtwebengine5-dev-tools"
-  ("deb-libqt5gui5" {>= "5.15.8+dfsg~"} | "deb- libqt5gui5-gles" {>= "5.15.8+dfsg~"})
+  ("deb-libqt5gui5" {>= "5.15.8+dfsg~"} | "deb-libqt5gui5-gles" {>= "5.15.8+dfsg~"})
 ]
 extra-source "qtwebengine5-examples_5.15.13+dfsg-1~deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtwebengine-opensource-src/qtwebengine5-examples_5.15.13+dfsg-1~deb12u1_amd64.deb"

@@ -20,7 +20,7 @@ depends: [
   "deb-libpangoft2-1-0-0" {>= "1.14.0"}
   "deb-libsymspg1" {>= "2.0.1"}
   "deb-openbabel"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "gabedit_2.5.1+ds-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gabedit/gabedit_2.5.1+ds-1+b1_amd64.deb"

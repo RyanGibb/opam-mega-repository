@@ -54,7 +54,7 @@ depends: [
   "deb-sox"
   "deb-wget"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "liquidsoap_1.3.3-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/liquidsoap/liquidsoap_1.3.3-2_amd64.deb"

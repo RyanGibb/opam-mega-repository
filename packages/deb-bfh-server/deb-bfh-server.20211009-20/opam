@@ -11,7 +11,7 @@ depends: [
   "deb-logrotate"
   "deb-postfix"
   "deb-safe-rm"
-  ("deb-molly-guard" | "deb- bfh-container")
+  ("deb-molly-guard" | "deb-bfh-container")
 ]
 extra-source "bfh-server_20211009-20_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/bfh-metapackages/bfh-server_20211009-20_all.deb"

@@ -50,10 +50,10 @@ depends: [
   "deb-libwxbase3-0-0v5" {>= "3.0.4+dfsg"}
   "deb-libwxgtk3-0-0v5" {>= "3.0.4+dfsg"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libavcodec58" | "deb- libavcodec-extra58")
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-libglu1-mesa" | "deb- libglu1")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libavcodec58" | "deb-libavcodec-extra58")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-libglu1-mesa" | "deb-libglu1")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libmrpt-vision1.5_1:1.5.6-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mrpt/libmrpt-vision1.5_1.5.6-1+b1_amd64.deb"

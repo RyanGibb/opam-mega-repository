@@ -20,7 +20,7 @@ depends: [
   "deb-python3-pyparsing"
   "deb-python3-tz"
   "deb-python3-vine" {>= "5.0"}
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-celery_5.2.6-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/celery/python3-celery_5.2.6-5_all.deb"

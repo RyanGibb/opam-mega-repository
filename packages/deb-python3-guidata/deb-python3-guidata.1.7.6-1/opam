@@ -9,7 +9,7 @@ depends: [
   "deb-python3-any" {>= "3.3.2-2~"}
   "deb-python3-h5py"
   "deb-python3-numpy"
-  ("deb-python3-spyderlib" | "deb- python3-spyder")
+  ("deb-python3-spyderlib" | "deb-python3-spyder")
 ]
 extra-source "python3-guidata_1.7.6-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/guidata/python3-guidata_1.7.6-1_all.deb"

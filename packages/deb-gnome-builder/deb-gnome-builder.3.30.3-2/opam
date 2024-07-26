@@ -54,7 +54,7 @@ depends: [
   "deb-python3-gi"
   "deb-sysprof" {>= "3.30.2"}
   "deb-valac-0-42-vapi"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-builder_3.30.3-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-builder/gnome-builder_3.30.3-2_amd64.deb"

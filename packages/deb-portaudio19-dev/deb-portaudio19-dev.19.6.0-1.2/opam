@@ -9,7 +9,7 @@ depends: [
   "deb-libasound2-dev"
   "deb-libportaudio2" {= "19.6.0-1.2"}
   "deb-libportaudiocpp0" {= "19.6.0-1.2"}
-  ("deb-libjack-jackd2-dev" | "deb- libjack-dev")
+  ("deb-libjack-jackd2-dev" | "deb-libjack-dev")
 ]
 conflicts: [
   "deb-libportaudio-19-dev"

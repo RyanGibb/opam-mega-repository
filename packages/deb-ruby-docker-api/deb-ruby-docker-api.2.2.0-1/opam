@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-excon"
   "deb-ruby-minitar"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-docker-api_2.2.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-docker-api/ruby-docker-api_2.2.0-1_all.deb"

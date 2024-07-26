@@ -10,7 +10,7 @@ depends: [
   "deb-libopenmpi3" {>= "4.1.4"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-libtrilinos-epetra-13-2" {>= "13.2.0"}
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "libtrilinos-pliris-13.2_13.2.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/trilinos/libtrilinos-pliris-13.2_13.2.0-4_amd64.deb"

@@ -15,7 +15,7 @@ depends: [
   "deb-libpango-1-0-0" {>= "1.37.2"}
   "deb-libpangocairo-1-0-0" {>= "1.22.0"}
   "deb-librsvg2-2" {>= "2.46.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-chess_1:43.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-chess/gnome-chess_43.1-1_amd64.deb"

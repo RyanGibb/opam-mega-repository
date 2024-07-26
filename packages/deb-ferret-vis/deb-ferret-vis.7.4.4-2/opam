@@ -14,7 +14,7 @@ depends: [
   "deb-libreadline7" {>= "6.0"}
   "deb-libx11-6"
   "deb-libxgks2"
-  ("deb-tcsh" | "deb- csh" | "deb- c-shell")
+  ("deb-tcsh" | "deb-csh" | "deb-c-shell")
 ]
 extra-source "ferret-vis_7.4.4-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/ferret-vis/ferret-vis_7.4.4-2_amd64.deb"

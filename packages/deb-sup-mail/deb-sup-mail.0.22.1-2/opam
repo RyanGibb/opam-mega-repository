@@ -16,7 +16,7 @@ depends: [
   "deb-ruby-trollop" {>= "1.12~"}
   "deb-ruby-unicode" {>= "0.4.4~"}
   "deb-ruby-xapian" {>= "1.2.15~"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "sup-mail_0.22.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sup-mail/sup-mail_0.22.1-2_all.deb"

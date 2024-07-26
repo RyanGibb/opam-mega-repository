@@ -12,8 +12,8 @@ depends: [
   "deb-libpam-runtime" {>= "0.76-13.1"}
   "deb-libpam0g" {>= "0.99.7.1"}
   "deb-netbase"
-  ("deb-bsd-mailx" | "deb- mailx")
-  ("deb-openbsd-inetd" | "deb- inet-superserver")
+  ("deb-bsd-mailx" | "deb-mailx")
+  ("deb-openbsd-inetd" | "deb-inet-superserver")
 ]
 extra-source "uucp_1.07-24_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/uucp/uucp_1.07-24_amd64.deb"

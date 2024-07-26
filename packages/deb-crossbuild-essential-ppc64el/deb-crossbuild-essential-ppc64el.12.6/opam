@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-dpkg-cross"
-  ("deb-g++-powerpc64le-linux-gnu" {>= "4-8.3"} | "deb- g++-ppc64el")
-  ("deb-gcc-powerpc64le-linux-gnu" {>= "4-8.3"} | "deb- gcc-ppc64el")
+  ("deb-g++-powerpc64le-linux-gnu" {>= "4-8.3"} | "deb-g++-ppc64el")
+  ("deb-gcc-powerpc64le-linux-gnu" {>= "4-8.3"} | "deb-gcc-ppc64el")
 ]
 extra-source "crossbuild-essential-ppc64el_12.6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/build-essential/crossbuild-essential-ppc64el_12.6_all.deb"

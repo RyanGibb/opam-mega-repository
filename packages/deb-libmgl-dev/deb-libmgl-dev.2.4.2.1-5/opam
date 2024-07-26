@@ -15,7 +15,7 @@ depends: [
   "deb-libmgl-wx7-5-0" {= "2.4.2.1-5"}
   "deb-libmgl7-5-0" {= "2.4.2.1-5"}
   "deb-libpng-dev"
-  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
+  ("deb-libgl1-mesa-dev" | "deb-libgl-dev")
 ]
 extra-source "libmgl-dev_2.4.2.1-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mathgl/libmgl-dev_2.4.2.1-5_amd64.deb"

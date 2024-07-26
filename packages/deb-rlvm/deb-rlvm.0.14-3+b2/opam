@@ -42,8 +42,8 @@ depends: [
   "deb-libvorbis0a" {>= "1.1.2"}
   "deb-libvorbisfile3" {>= "1.1.2"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-fonts-vlgothic" | "deb- fonts-japanese-gothic")
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-fonts-vlgothic" | "deb-fonts-japanese-gothic")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "rlvm_0.14-3+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rlvm/rlvm_0.14-3+b2_amd64.deb"

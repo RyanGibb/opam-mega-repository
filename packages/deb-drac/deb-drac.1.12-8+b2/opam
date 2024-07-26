@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.15"}
   "deb-libdb5-3"
   "deb-rpcbind"
-  ("deb-postfix" | "deb- mail-transport-agent")
+  ("deb-postfix" | "deb-mail-transport-agent")
 ]
 extra-source "drac_1.12-8+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/drac/drac_1.12-8+b2_amd64.deb"

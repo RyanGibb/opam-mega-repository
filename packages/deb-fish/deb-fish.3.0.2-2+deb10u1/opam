@@ -16,7 +16,7 @@ depends: [
   "deb-libtinfo6" {>= "6"}
   "deb-man-db"
   "deb-python3"
-  ("deb-lynx" | "deb- www-browser")
+  ("deb-lynx" | "deb-www-browser")
 ]
 extra-source "fish_3.0.2-2+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fish/fish_3.0.2-2+deb10u1_amd64.deb"

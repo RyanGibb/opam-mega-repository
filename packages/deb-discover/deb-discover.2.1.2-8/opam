@@ -10,7 +10,7 @@ depends: [
   "deb-libdiscover2" {= "2.1.2-8"}
   "deb-libexpat1" {>= "2.0.1"}
   "deb-libusb-0-1-4" {>= "2-0.1.12"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 conflicts: [
   "deb-discover1" {< "2.0"}

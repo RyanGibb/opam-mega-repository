@@ -21,8 +21,8 @@ depends: [
   "deb-python3-werkzeug"
   "deb-python3-yaml"
   "deb-ucf"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-libpreludedb7-mysql" | "deb- libpreludedb7-pgsql")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-libpreludedb7-mysql" | "deb-libpreludedb7-pgsql")
 ]
 extra-source "prewikka_4.1.5-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/prewikka/prewikka_4.1.5-3_all.deb"

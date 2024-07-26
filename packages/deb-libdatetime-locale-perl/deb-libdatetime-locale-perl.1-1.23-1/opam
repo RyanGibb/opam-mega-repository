@@ -11,7 +11,7 @@ depends: [
   "deb-libparams-validationcompiler-perl"
   "deb-libspecio-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.25"} | "deb- libscalar-list-utils-perl" {>= "1-1.45"})
+  ("deb-perl" {>= "5.25"} | "deb-libscalar-list-utils-perl" {>= "1-1.45"})
 ]
 extra-source "libdatetime-locale-perl_1:1.23-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libd/libdatetime-locale-perl/libdatetime-locale-perl_1.23-1_all.deb"

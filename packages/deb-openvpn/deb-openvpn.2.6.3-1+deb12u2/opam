@@ -16,7 +16,7 @@ depends: [
   "deb-libpkcs11-helper1" {>= "1.28"}
   "deb-libssl3" {>= "3.0.0"}
   "deb-libsystemd0"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "openvpn_2.6.3-1+deb12u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/openvpn/openvpn_2.6.3-1+deb12u2_amd64.deb"

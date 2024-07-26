@@ -11,7 +11,7 @@ depends: [
   "deb-libquadmath0" {>= "4.6"}
   "deb-r-base-core"
   "deb-r-base-core" {>= "3.5.1-1"}
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "r-cran-ecodist_2.0.1-1+b4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-ecodist/r-cran-ecodist_2.0.1-1+b4_amd64.deb"

@@ -32,8 +32,8 @@ depends: [
   "deb-python3-gi"
   "deb-python3-gi-cairo"
   "deb-python3-notify2"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus")
 ]
 extra-source "liferea_1.14.4-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/liferea/liferea_1.14.4-3_amd64.deb"

@@ -38,7 +38,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libx11-6"
   "deb-python-ball"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "ballview_1.5.0+git20180813.37fc53c-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/ball/ballview_1.5.0+git20180813.37fc53c-3_amd64.deb"

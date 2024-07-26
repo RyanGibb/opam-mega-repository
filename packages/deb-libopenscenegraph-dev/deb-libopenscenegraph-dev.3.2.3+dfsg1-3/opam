@@ -9,7 +9,7 @@ depends: [
   "deb-libglu1-mesa-dev"
   "deb-libopenscenegraph100v5" {= "3.2.3+dfsg1-3"}
   "deb-libopenthreads-dev"
-  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
+  ("deb-libgl1-mesa-dev" | "deb-libgl-dev")
 ]
 extra-source "libopenscenegraph-dev_3.2.3+dfsg1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/openscenegraph/libopenscenegraph-dev_3.2.3+dfsg1-3_amd64.deb"

@@ -11,7 +11,7 @@ depends: [
   "deb-libmariadb3" {>= "3.0.0"}
   "deb-lsb-base"
   "deb-mysqmail"
-  ("deb-pure-ftpd" | "deb- pure-ftpd-mysql")
+  ("deb-pure-ftpd" | "deb-pure-ftpd-mysql")
 ]
 extra-source "mysqmail-pure-ftpd-logger_0.4.9-10.2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mysqmail/mysqmail-pure-ftpd-logger_0.4.9-10.2+b1_amd64.deb"

@@ -22,7 +22,7 @@ depends: [
   "deb-libnetty-java"
   "deb-libservlet-api-java"
   "deb-libstringtemplate4-java"
-  ("deb-default-jre-headless" {>= "2-1.8"} | "deb- java8-runtime-headless")
+  ("deb-default-jre-headless" {>= "2-1.8"} | "deb-java8-runtime-headless")
 ]
 extra-source "jython_2.7.3+repack1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jython/jython_2.7.3+repack1-1_all.deb"

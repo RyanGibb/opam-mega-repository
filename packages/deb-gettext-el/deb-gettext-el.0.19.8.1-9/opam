@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-gettext"
-  ("deb-emacs" | "deb- emacsen")
+  ("deb-emacs" | "deb-emacsen")
 ]
 extra-source "gettext-el_0.19.8.1-9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gettext/gettext-el_0.19.8.1-9_all.deb"

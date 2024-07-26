@@ -11,8 +11,8 @@ depends: [
   "deb-python3-pep517" {>= "0.9"}
   "deb-python3-toml"
   "deb-python3-wheel"
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
-  ("deb-python3-tomli" | "deb- python3" {> "3.11"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
+  ("deb-python3-tomli" | "deb-python3" {> "3.11"})
 ]
 extra-source "python3-build_0.9.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-build/python3-build_0.9.0-1_all.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libjs-mousetrap"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-mousetrap-rails_1.4.6-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-mousetrap-rails/ruby-mousetrap-rails_1.4.6-7_all.deb"

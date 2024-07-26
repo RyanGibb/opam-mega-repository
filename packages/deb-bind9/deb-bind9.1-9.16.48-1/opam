@@ -24,7 +24,7 @@ depends: [
   "deb-lsb-base" {>= "3.2-14"}
   "deb-netbase"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-debconf" | "deb- debconf-2-0")
+  ("deb-debconf" | "deb-debconf-2-0")
 ]
 extra-source "bind9_1:9.16.48-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/bind9/bind9_9.16.48-1_amd64.deb"

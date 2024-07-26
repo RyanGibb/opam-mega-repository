@@ -15,7 +15,7 @@ depends: [
   "deb-libgpgme11" {>= "1.7.1"}
   "deb-libgtk2-0-0" {>= "2.18.0"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-gnupg" | "deb- gnupg2")
+  ("deb-gnupg" | "deb-gnupg2")
 ]
 extra-source "gpa_0.10.0-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gpa/gpa_0.10.0-5_amd64.deb"

@@ -12,7 +12,7 @@ depends: [
   "deb-libvorbis0a" {>= "1.1.2"}
   "deb-libvorbisenc2" {>= "1.1.2"}
   "deb-tcl" {>= "8.6.0-2"}
-  ("deb-libsnack-oss" {= "2.2.10.20090624+dfsg-1"} | "deb- libsnack-alsa" {= "2.2.10.20090624+dfsg-1"})
+  ("deb-libsnack-oss" {= "2.2.10.20090624+dfsg-1"} | "deb-libsnack-alsa" {= "2.2.10.20090624+dfsg-1"})
 ]
 conflicts: [
   "deb-libsnack2"

@@ -26,8 +26,8 @@ depends: [
   "deb-python-six" {>= "1.8.0"}
   "deb-python-tqdm"
   "deb-python-wrapt"
-  ("deb-git-annex" {>= "6.20180913~"} | "deb- git-annex-standalone" {>= "6.20180913~"})
-  ("deb-python-keyrings-alt" | "deb- python-keyring" {<= "8"})
+  ("deb-git-annex" {>= "6.20180913~"} | "deb-git-annex-standalone" {>= "6.20180913~"})
+  ("deb-python-keyrings-alt" | "deb-python-keyring" {<= "8"})
 ]
 extra-source "python-datalad_0.11.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/datalad/python-datalad_0.11.2-2_all.deb"

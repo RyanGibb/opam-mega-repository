@@ -23,7 +23,7 @@ depends: [
   "deb-qml-module-org-kde-quickcharts"
   "deb-qml-module-qtquick-layouts"
   "deb-qml-module-qtquick2"
-  ("deb-libqt5quick5" {>= "5.0.2"} | "deb- libqt5quick5-gles" {>= "5.0.2"})
+  ("deb-libqt5quick5" {>= "5.0.2"} | "deb-libqt5quick5-gles" {>= "5.0.2"})
 ]
 extra-source "qml-module-org-kde-ksysguard_4:5.20.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libk/libksysguard/qml-module-org-kde-ksysguard_5.20.5-1_amd64.deb"

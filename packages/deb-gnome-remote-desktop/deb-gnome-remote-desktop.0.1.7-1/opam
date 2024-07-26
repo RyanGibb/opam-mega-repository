@@ -13,7 +13,7 @@ depends: [
   "deb-libsecret-1-0" {>= "0.7"}
   "deb-libvncserver1" {>= "0.9.10"}
   "deb-pipewire"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-remote-desktop_0.1.7-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-remote-desktop/gnome-remote-desktop_0.1.7-1_amd64.deb"

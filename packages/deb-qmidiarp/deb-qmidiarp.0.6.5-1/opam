@@ -14,7 +14,7 @@ depends: [
   "deb-libqt5gui5" {>= "5.0.2"}
   "deb-libqt5widgets5" {>= "5.2.0~alpha1"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "qmidiarp_0.6.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qmidiarp/qmidiarp_0.6.5-1_amd64.deb"

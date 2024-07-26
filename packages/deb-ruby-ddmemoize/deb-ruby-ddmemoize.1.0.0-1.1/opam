@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-ddmetrics" {>= "1.0"}
   "deb-ruby-ref" {>= "2.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-ddmemoize_1.0.0-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-ddmemoize/ruby-ddmemoize_1.0.0-1.1_all.deb"

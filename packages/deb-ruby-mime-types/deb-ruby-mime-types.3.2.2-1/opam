@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-mime-types-data" {>= "3.2015~"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-mime-types_3.2.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-mime-types/ruby-mime-types_3.2.2-1_all.deb"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-inflecto"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-inflecto_0.0.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-inflecto/ruby-inflecto_0.0.2-1_all.deb"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r libgoa-1.0-common"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "libgoa-1.0-common_3.38.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-online-accounts/libgoa-1.0-common_3.38.0-3_all.deb"

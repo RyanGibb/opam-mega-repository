@@ -11,7 +11,7 @@ depends: [
   "deb-libpam0g" {>= "0.99.7.1"}
   "deb-libwrap0" {>= "7.6-4~"}
   "deb-netbase"
-  ("deb-inetutils-syslogd" | "deb- system-log-daemon")
+  ("deb-inetutils-syslogd" | "deb-system-log-daemon")
 ]
 conflicts: [
   "deb-ftp-server"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-raemon"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-raemon_0.3.0+git.2012.05.18.b78eaae57c-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-raemon/ruby-raemon_0.3.0+git.2012.05.18.b78eaae57c-2_all.deb"

@@ -10,7 +10,7 @@ depends: [
   "deb-libgcc-s1" {>= "3.0"}
   "deb-libstdc++6" {>= "11"}
   "deb-pdns-server" {= "4.7.3-2"}
-  ("deb-libluajit-5-1-2" {>= "2.0.4+dfsg"} | "deb- libluajit2-5-1-2" {>= "2.1~"})
+  ("deb-libluajit-5-1-2" {>= "2.0.4+dfsg"} | "deb-libluajit2-5-1-2" {>= "2.1~"})
 ]
 extra-source "pdns-backend-lua2_4.7.3-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pdns/pdns-backend-lua2_4.7.3-2_amd64.deb"

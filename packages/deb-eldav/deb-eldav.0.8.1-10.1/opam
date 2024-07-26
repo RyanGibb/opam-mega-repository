@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-apel" {>= "10.4+cvs.2003.05.29-1"}
   "deb-nd" {>= "0.7.0"}
-  ("deb-emacs" | "deb- emacsen")
+  ("deb-emacs" | "deb-emacsen")
 ]
 extra-source "eldav_0.8.1-10.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/eldav/eldav_0.8.1-10.1_all.deb"

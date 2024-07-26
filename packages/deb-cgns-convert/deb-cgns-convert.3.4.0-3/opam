@@ -13,7 +13,7 @@ depends: [
   "deb-libtk8-6" {>= "8.6.0"}
   "deb-libx11-6"
   "deb-libxmu6"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "cgns-convert_3.4.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libc/libcgns/cgns-convert_3.4.0-3_amd64.deb"

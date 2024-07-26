@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-dictionaries-common" {>= "0.20"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "wswedish_1.4.5-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/swedish/wswedish_1.4.5-3_all.deb"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-mini-mime"]
 ]
 depends: [
-  ("deb-ruby-any" | "deb- ruby-interpreter")
+  ("deb-ruby-any" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-mini-mime_1.1.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-mini-mime/ruby-mini-mime_1.1.1-2_all.deb"

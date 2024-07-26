@@ -13,7 +13,7 @@ depends: [
   "deb-libruby3-1" {>= "3.1.2"}
   "deb-libtokyocabinet9" {>= "1.4.47"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-tokyocabinet_1.31-6+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-tokyocabinet/ruby-tokyocabinet_1.31-6+b2_amd64.deb"

@@ -14,8 +14,8 @@ depends: [
   "deb-libqt5widgets5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "5"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libglu1-mesa" | "deb-libglu1")
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "libqwtplot3d-qt5-0_0.2.7+svn191+gcc7-3+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qwtplot3d/libqwtplot3d-qt5-0_0.2.7+svn191+gcc7-3+b1_amd64.deb"

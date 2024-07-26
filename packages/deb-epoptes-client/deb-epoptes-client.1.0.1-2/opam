@@ -14,8 +14,8 @@ depends: [
   "deb-screen"
   "deb-socat"
   "deb-x11vnc"
-  ("deb-iproute2" | "deb- iproute")
-  ("deb-xvnc4viewer" | "deb- tigervnc-viewer" | "deb- ssvnc" | "deb- vnc-viewer")
+  ("deb-iproute2" | "deb-iproute")
+  ("deb-xvnc4viewer" | "deb-tigervnc-viewer" | "deb-ssvnc" | "deb-vnc-viewer")
 ]
 extra-source "epoptes-client_1.0.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/epoptes/epoptes-client_1.0.1-2_all.deb"

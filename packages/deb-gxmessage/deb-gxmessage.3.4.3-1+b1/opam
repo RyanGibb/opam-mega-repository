@@ -15,7 +15,7 @@ depends: [
   "deb-libgtk-3-0" {>= "3.0.0"}
   "deb-libpango-1-0-0" {>= "1.14.0"}
   "deb-libpangocairo-1-0-0" {>= "1.14.0"}
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 conflicts: [
   "deb-gmessage"

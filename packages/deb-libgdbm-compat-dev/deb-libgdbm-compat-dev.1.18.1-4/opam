@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libgdbm-compat4" {= "1.18.1-4"}
-  ("deb-libc6-dev" | "deb- libc-dev")
+  ("deb-libc6-dev" | "deb-libc-dev")
 ]
 extra-source "libgdbm-compat-dev_1.18.1-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gdbm/libgdbm-compat-dev_1.18.1-4_amd64.deb"

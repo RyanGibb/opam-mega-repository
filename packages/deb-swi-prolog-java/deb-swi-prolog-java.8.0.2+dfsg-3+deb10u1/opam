@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.14"}
   "deb-swi-prolog-nox" {= "8.0.2+dfsg-3+deb10u1"}
-  ("deb-default-jre-headless" | "deb- java2-runtime")
+  ("deb-default-jre-headless" | "deb-java2-runtime")
 ]
 extra-source "swi-prolog-java_8.0.2+dfsg-3+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/swi-prolog/swi-prolog-java_8.0.2+dfsg-3+deb10u1_amd64.deb"

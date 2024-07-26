@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-hikidoc"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-hikidoc_0.1.0-2.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-hikidoc/ruby-hikidoc_0.1.0-2.1_all.deb"

@@ -11,7 +11,7 @@ depends: [
   "deb-perl-any"
   "deb-routino"
   "deb-sensible-utils"
-  ("deb-apache2" | "deb- httpd")
+  ("deb-apache2" | "deb-httpd")
 ]
 extra-source "routino-www_3.3.3-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/routino/routino-www_3.3.3-2_all.deb"

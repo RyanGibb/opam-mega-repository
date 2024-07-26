@@ -10,9 +10,9 @@ depends: [
   "deb-libkernlib1-dev" {= "20061220+dfsg3-4.4"}
   "deb-libmathlib2-gfortran" {= "20061220+dfsg3-4.4"}
   "deb-libpacklib1-dev" {= "20061220+dfsg3-4.4"}
-  ("deb-libblas-dev" | "deb- libatlas-base-dev" | "deb- libblas-3gf-so")
-  ("deb-libc6-dev" | "deb- libc-dev")
-  ("deb-liblapack-dev" | "deb- libatlas-base-dev" | "deb- liblapack-3gf-so")
+  ("deb-libblas-dev" | "deb-libatlas-base-dev" | "deb-libblas-3gf-so")
+  ("deb-libc6-dev" | "deb-libc-dev")
+  ("deb-liblapack-dev" | "deb-libatlas-base-dev" | "deb-liblapack-3gf-so")
 ]
 conflicts: [
   "deb-blas2-dev"

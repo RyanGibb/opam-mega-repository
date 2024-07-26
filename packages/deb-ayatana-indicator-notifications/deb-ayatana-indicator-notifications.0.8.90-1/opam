@@ -11,7 +11,7 @@ depends: [
   "deb-libc6" {>= "2.4"}
   "deb-libglib2-0-0" {>= "2.39.4"}
   "deb-libglib2-0-bin"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "ayatana-indicator-notifications_0.8.90-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/ayatana-indicator-notifications/ayatana-indicator-notifications_0.8.90-1_amd64.deb"

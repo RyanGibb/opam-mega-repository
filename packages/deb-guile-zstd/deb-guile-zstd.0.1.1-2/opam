@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libzstd-dev"
-  ("deb-guile-3-0" | "deb- guile-2-2")
+  ("deb-guile-3-0" | "deb-guile-2-2")
 ]
 extra-source "guile-zstd_0.1.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/guile-zstd/guile-zstd_0.1.1-2_amd64.deb"

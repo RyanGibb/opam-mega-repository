@@ -11,7 +11,7 @@ depends: [
   "deb-ruby-devise" {>= "4.0~"}
   "deb-ruby-railties"
   "deb-ruby-rotp" {>= "2~"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-devise-two-factor_3.1.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-devise-two-factor/ruby-devise-two-factor_3.1.0-2_all.deb"

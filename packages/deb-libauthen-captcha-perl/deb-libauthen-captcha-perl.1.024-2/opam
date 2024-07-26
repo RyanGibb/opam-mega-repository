@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libstring-random-perl"
   "deb-perl"
-  ("deb-libgd-perl" | "deb- libgd-gd2-noxpm-perl" | "deb- libgd-gd2-perl")
+  ("deb-libgd-perl" | "deb-libgd-gd2-noxpm-perl" | "deb-libgd-gd2-perl")
 ]
 extra-source "libauthen-captcha-perl_1.024-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/liba/libauthen-captcha-perl/libauthen-captcha-perl_1.024-2_all.deb"

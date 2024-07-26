@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-eventmachine"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-em-redis_0.3.0+gh-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-em-redis/ruby-em-redis_0.3.0+gh-2_all.deb"

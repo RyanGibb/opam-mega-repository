@@ -11,7 +11,7 @@ depends: [
   "deb-libmime-tools-perl"
   "deb-liburi-perl"
   "deb-rcs"
-  ("deb-apache2" | "deb- httpd")
+  ("deb-apache2" | "deb-httpd")
 ]
 extra-source "cvsweb_3:3.0.6-8.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cvsweb/cvsweb_3.0.6-8.1_all.deb"

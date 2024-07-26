@@ -19,8 +19,8 @@ depends: [
   "deb-libxi6"
   "deb-libxmu6"
   "deb-openuniverse-common"
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 conflicts: [
   "deb-openuniverse-common" {<= "1.0beta3.1-3"}

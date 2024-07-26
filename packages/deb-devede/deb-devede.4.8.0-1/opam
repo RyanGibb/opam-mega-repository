@@ -17,8 +17,8 @@ depends: [
   "deb-python3-pkg-resources"
   "deb-python3-urllib3"
   "deb-vcdimager"
-  ("deb-fonts-freefont-ttf" | "deb- ttf-freefont")
-  ("deb-mplayer" | "deb- mpv")
+  ("deb-fonts-freefont-ttf" | "deb-ttf-freefont")
+  ("deb-mplayer" | "deb-mpv")
 ]
 extra-source "devede_4.8.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/devede/devede_4.8.0-1_all.deb"

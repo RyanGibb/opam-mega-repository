@@ -13,7 +13,7 @@ depends: [
   "deb-octave" {>= "7.3.0"}
   "deb-octave-statistics" {>= "1.4.0"}
   "deb-octave-struct" {>= "1.0.12"}
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "octave-optim_1.6.2-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/octave-optim/octave-optim_1.6.2-3_amd64.deb"

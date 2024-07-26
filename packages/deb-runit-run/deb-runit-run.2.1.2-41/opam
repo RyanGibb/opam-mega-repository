@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-runit"
-  ("deb-runit-systemd" {>= "2.1.2-39"} | "deb- sysvinit-core")
+  ("deb-runit-systemd" {>= "2.1.2-39"} | "deb-sysvinit-core")
 ]
 conflicts: [
   "deb-runit-init"

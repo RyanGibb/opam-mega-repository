@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-python3-jedi"
-  ("deb-vim-nox" | "deb- vim-python")
+  ("deb-vim-nox" | "deb-vim-python")
 ]
 extra-source "vim-python-jedi_0.13.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-jedi/vim-python-jedi_0.13.2-1_all.deb"

@@ -23,7 +23,7 @@ depends: [
   "deb-libqt5network5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "11"}
   "deb-libtag1v5" {>= "1.11"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 conflicts: [
   "deb-libthumbnailer0"

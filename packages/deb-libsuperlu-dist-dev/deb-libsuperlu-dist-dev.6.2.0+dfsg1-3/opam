@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.14"}
   "deb-libopenmpi3" {>= "4.0.2"}
   "deb-libsuperlu-dist6" {= "6.2.0+dfsg1-3"}
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "libsuperlu-dist-dev_6.2.0+dfsg1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/superlu-dist/libsuperlu-dist-dev_6.2.0+dfsg1-3_amd64.deb"

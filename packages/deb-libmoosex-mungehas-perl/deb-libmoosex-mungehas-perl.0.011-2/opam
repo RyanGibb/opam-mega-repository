@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libscalar-list-utils-perl"
   "deb-perl-any"
-  ("deb-libtype-tiny-perl" | "deb- libeval-closure-perl")
+  ("deb-libtype-tiny-perl" | "deb-libeval-closure-perl")
 ]
 extra-source "libmoosex-mungehas-perl_0.011-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libm/libmoosex-mungehas-perl/libmoosex-mungehas-perl_0.011-2_all.deb"

@@ -10,7 +10,7 @@ depends: [
   "deb-libsub-infix-perl" {>= "0.004"}
   "deb-perl-any"
   "deb-sgml-base" {>= "1.28"}
-  ("deb-perl" {>= "5.19.5"} | "deb- libscalar-list-utils-perl" {>= "1-1.33"})
+  ("deb-perl" {>= "5.19.5"} | "deb-libscalar-list-utils-perl" {>= "1-1.33"})
 ]
 extra-source "libmatch-simple-perl_0.010-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libm/libmatch-simple-perl/libmatch-simple-perl_0.010-3_all.deb"

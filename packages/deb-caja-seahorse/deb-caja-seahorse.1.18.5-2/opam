@@ -16,7 +16,7 @@ depends: [
   "deb-libgpgme11" {>= "1.2.0"}
   "deb-libgtk-3-0" {>= "3.10"}
   "deb-libnotify4" {>= "0.7.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "caja-seahorse_1.18.5-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/caja-seahorse/caja-seahorse_1.18.5-2_amd64.deb"

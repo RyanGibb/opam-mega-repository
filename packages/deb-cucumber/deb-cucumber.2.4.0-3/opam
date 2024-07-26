@@ -14,7 +14,7 @@ depends: [
   "deb-ruby-gherkin" {>= "4"}
   "deb-ruby-multi-json" {>= "1.7.5~"}
   "deb-ruby-multi-test"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "cucumber_2.4.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cucumber/cucumber_2.4.0-3_all.deb"

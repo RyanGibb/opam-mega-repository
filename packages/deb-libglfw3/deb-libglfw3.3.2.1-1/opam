@@ -12,7 +12,7 @@ depends: [
   "deb-libxinerama1"
   "deb-libxrandr2" {>= "2-1.2.99.3"}
   "deb-libxxf86vm1"
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
 ]
 extra-source "libglfw3_3.2.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/glfw3/libglfw3_3.2.1-1_amd64.deb"

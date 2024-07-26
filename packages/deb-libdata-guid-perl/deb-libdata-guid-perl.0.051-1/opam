@@ -9,7 +9,7 @@ depends: [
   "deb-libsub-exporter-perl"
   "deb-libsub-install-perl"
   "deb-perl-any"
-  ("deb-libossp-uuid-perl" | "deb- libdata-uuid-perl")
+  ("deb-libossp-uuid-perl" | "deb-libdata-uuid-perl")
 ]
 extra-source "libdata-guid-perl_0.051-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libd/libdata-guid-perl/libdata-guid-perl_0.051-1_all.deb"

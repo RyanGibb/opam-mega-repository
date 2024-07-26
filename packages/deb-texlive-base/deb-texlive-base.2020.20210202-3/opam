@@ -12,7 +12,7 @@ depends: [
   "deb-texlive-binaries" {>= "2020.20200327"}
   "deb-ucf"
   "deb-xdg-utils"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 conflicts: [
   "deb-tex4ht" {< "20160814"}

@@ -9,7 +9,7 @@ depends: [
   "deb-dictionaries-common" {>= "1.23~"}
   "deb-ispell"
   "deb-perl-any"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "ilithuanian_1.3.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/ispell-lt/ilithuanian_1.3.2-1_all.deb"

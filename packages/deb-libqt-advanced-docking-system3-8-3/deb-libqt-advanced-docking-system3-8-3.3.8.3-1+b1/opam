@@ -12,7 +12,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.15.1"}
   "deb-libstdc++6" {>= "5"}
   "deb-libxcb1"
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "libqt-advanced-docking-system3.8.3_3.8.3-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qt-advanced-docking-system/libqt-advanced-docking-system3.8.3_3.8.3-1+b1_amd64.deb"

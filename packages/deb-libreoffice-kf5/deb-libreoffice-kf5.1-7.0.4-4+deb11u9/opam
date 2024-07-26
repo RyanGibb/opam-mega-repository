@@ -19,7 +19,7 @@ depends: [
   "deb-libuno-cppuhelpergcc3-3" {>= "4.0.0~alpha"}
   "deb-libuno-sal3" {>= "1.4.0"}
   "deb-uno-libs-private"
-  ("deb-libqt5gui5" {>= "5.6"} | "deb- libqt5gui5-gles" {>= "5.6"})
+  ("deb-libqt5gui5" {>= "5.6"} | "deb-libqt5gui5-gles" {>= "5.6"})
 ]
 extra-source "libreoffice-kf5_1:7.0.4-4+deb11u9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libr/libreoffice/libreoffice-kf5_7.0.4-4+deb11u9_amd64.deb"

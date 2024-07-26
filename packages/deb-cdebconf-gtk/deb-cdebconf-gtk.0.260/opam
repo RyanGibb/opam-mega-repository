@@ -14,7 +14,7 @@ depends: [
   "deb-libgtk2-0-0" {>= "2.24"}
   "deb-libpango-1-0-0" {>= "1.14.0"}
   "deb-libpangocairo-1-0-0" {>= "1.14.0"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "cdebconf-gtk_0.260_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cdebconf/cdebconf-gtk_0.260_amd64.deb"

@@ -17,7 +17,7 @@ depends: [
   "deb-mpi-default-bin"
   "deb-mpi-default-dev"
   "deb-pkg-config"
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libdune-common-dev_2.7.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dune-common/libdune-common-dev_2.7.1-2_amd64.deb"

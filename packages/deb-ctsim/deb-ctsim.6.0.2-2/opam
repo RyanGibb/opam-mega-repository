@@ -17,7 +17,7 @@ depends: [
   "deb-libwxbase3-0-0v5" {>= "3.0.4+dfsg"}
   "deb-libwxgtk3-0-0v5" {>= "3.0.4+dfsg"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 conflicts: [
   "deb-ctsim"

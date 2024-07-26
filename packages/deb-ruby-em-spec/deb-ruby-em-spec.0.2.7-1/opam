@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-ruby-eventmachine"
-  ("deb-ruby" | "deb- ruby-interpreter")
-  ("deb-ruby-rspec" | "deb- ruby-bacon" | "deb- ruby-test-unit")
+  ("deb-ruby" | "deb-ruby-interpreter")
+  ("deb-ruby-rspec" | "deb-ruby-bacon" | "deb-ruby-test-unit")
 ]
 extra-source "ruby-em-spec_0.2.7-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-em-spec/ruby-em-spec_0.2.7-1_all.deb"

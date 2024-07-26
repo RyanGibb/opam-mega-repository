@@ -17,7 +17,7 @@ depends: [
   "deb-libqt5dbus5" {>= "5.0.2"}
   "deb-libqt5widgets5" {>= "5.11.0~rc1"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb-libqt5gui5-gles" {>= "5.11.0~rc1"})
 ]
 extra-source "deepin-deb-installer_5.6.0.19-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/deepin-deb-installer/deepin-deb-installer_5.6.0.19-1_amd64.deb"

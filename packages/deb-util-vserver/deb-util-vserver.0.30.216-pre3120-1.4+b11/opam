@@ -14,7 +14,7 @@ depends: [
   "deb-make"
   "deb-net-tools"
   "deb-util-linux" {>= "2.13.1.1-1"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 conflicts: [
   "deb-vpopmail-bin"

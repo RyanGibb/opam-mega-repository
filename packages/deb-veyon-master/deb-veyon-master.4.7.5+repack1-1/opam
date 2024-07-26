@@ -13,8 +13,8 @@ depends: [
   "deb-libstdc++6" {>= "5"}
   "deb-libveyon-core" {= "4.7.5+repack1-1"}
   "deb-veyon-service" {= "4.7.5+repack1-1"}
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
-  ("deb-pkexec" | "deb- policykit-1")
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-pkexec" | "deb-policykit-1")
 ]
 extra-source "veyon-master_4.7.5+repack1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/veyon/veyon-master_4.7.5+repack1-1_amd64.deb"

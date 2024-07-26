@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-mime-types" {>= "1.15~"}
   "deb-ruby-rugged" {>= "0.25~"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-gollum-rugged-adapter_0.4.4.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-gollum-rugged-adapter/ruby-gollum-rugged-adapter_0.4.4.1-2_all.deb"

@@ -13,8 +13,8 @@ depends: [
   "deb-librouter-simple-perl"
   "deb-libwww-perl"
   "deb-perl-any"
-  ("deb-libhttp-daemon-perl" | "deb- libwww-perl" {< "6"})
-  ("deb-libhttp-message-perl" | "deb- libwww-perl" {< "6"})
+  ("deb-libhttp-daemon-perl" | "deb-libwww-perl" {< "6"})
+  ("deb-libhttp-message-perl" | "deb-libwww-perl" {< "6"})
 ]
 extra-source "libjson-rpc-perl_1.06-2.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libj/libjson-rpc-perl/libjson-rpc-perl_1.06-2.1_all.deb"

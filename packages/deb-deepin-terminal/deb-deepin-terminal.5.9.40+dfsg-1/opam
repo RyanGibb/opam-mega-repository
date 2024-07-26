@@ -24,7 +24,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libxcb1"
   "deb-zssh"
-  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb-libqt5gui5-gles" {>= "5.11.0~rc1"})
 ]
 extra-source "deepin-terminal_5.9.40+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/deepin-terminal/deepin-terminal_5.9.40+dfsg-1_amd64.deb"

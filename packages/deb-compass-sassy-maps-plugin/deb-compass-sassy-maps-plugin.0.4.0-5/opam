@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-sass" {>= "3.4"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "compass-sassy-maps-plugin_0.4.0-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/compass-sassy-maps-plugin/compass-sassy-maps-plugin_0.4.0-5_all.deb"

@@ -18,7 +18,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "5"}
   "deb-locales"
-  ("deb-djview4" | "deb- djview")
+  ("deb-djview4" | "deb-djview")
 ]
 conflicts: [
   "deb-collatinus" {< "9.4"}

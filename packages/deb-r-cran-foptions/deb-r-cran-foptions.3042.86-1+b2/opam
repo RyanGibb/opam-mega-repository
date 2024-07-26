@@ -12,8 +12,8 @@ depends: [
   "deb-r-base-core"
   "deb-r-base-core" {>= "3.5.1-1"}
   "deb-r-cran-fbasics" {>= "290.76"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "r-cran-foptions_3042.86-1+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/foptions/r-cran-foptions_3042.86-1+b2_amd64.deb"

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo dpkg -r 0ad-data-common"]
 ]
 depends: [
-  ("deb-fonts-dejavu-core" | "deb- ttf-dejavu-core")
-  ("deb-fonts-freefont-ttf" | "deb- ttf-freefont")
-  ("deb-fonts-texgyre" | "deb- tex-gyre")
+  ("deb-fonts-dejavu-core" | "deb-ttf-dejavu-core")
+  ("deb-fonts-freefont-ttf" | "deb-ttf-freefont")
+  ("deb-fonts-texgyre" | "deb-tex-gyre")
 ]
 extra-source "0ad-data-common_0.0.23.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/0/0ad-data/0ad-data-common_0.0.23.1-1_all.deb"

@@ -16,7 +16,7 @@ depends: [
   "deb-libqt5test5" {>= "5.0.2"}
   "deb-libqt5widgets5" {>= "5.15.1"}
   "deb-libstdc++6" {>= "11"}
-  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb-libqt5gui5-gles" {>= "5.7.0"})
 ]
 extra-source "libopencv-highgui406_4.6.0+dfsg-12_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/opencv/libopencv-highgui406_4.6.0+dfsg-12_amd64.deb"

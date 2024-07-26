@@ -19,7 +19,7 @@ depends: [
   "deb-libx11-6"
   "deb-libyaml-0-2"
   "deb-v-sim-common" {= "3.7.2-8"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "v-sim_3.7.2-8+b4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/v-sim/v-sim_3.7.2-8+b4_amd64.deb"

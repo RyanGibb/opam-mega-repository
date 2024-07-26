@@ -20,7 +20,7 @@ depends: [
   "deb-libqt5core5a" {>= "5.15.1"}
   "deb-libqt5widgets5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "4.1.1"}
-  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb-libqt5gui5-gles" {>= "5.7.0"})
 ]
 extra-source "kid3_3.8.5-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kid3/kid3_3.8.5-3_amd64.deb"

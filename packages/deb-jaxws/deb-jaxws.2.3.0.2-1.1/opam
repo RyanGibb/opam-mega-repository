@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libjaxws-java" {>= "2.3.0.2-1.1"}
-  ("deb-default-jre-headless" {>= "2-1.8"} | "deb- java8-runtime-headless")
+  ("deb-default-jre-headless" {>= "2-1.8"} | "deb-java8-runtime-headless")
 ]
 extra-source "jaxws_2.3.0.2-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jaxws/jaxws_2.3.0.2-1.1_all.deb"

@@ -20,8 +20,8 @@ depends: [
   "deb-libx11-6"
   "deb-systemd"
   "deb-upower"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "ukui-power-manager_3.1.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/ukui-power-manager/ukui-power-manager_3.1.1-1_amd64.deb"

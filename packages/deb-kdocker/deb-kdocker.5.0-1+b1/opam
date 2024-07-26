@@ -17,7 +17,7 @@ depends: [
   "deb-libx11-6"
   "deb-libxmu6"
   "deb-libxpm4"
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
 ]
 extra-source "kdocker_5.0-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kdocker/kdocker_5.0-1+b1_amd64.deb"

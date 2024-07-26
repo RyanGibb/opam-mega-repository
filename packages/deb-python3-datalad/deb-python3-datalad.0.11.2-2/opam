@@ -25,9 +25,9 @@ depends: [
   "deb-python3-six" {>= "1.8.0"}
   "deb-python3-tqdm"
   "deb-python3-wrapt"
-  ("deb-git-annex" {>= "6.20180913~"} | "deb- git-annex-standalone" {>= "6.20180913~"})
-  ("deb-python3-distutils" | "deb- libpython3-stdlib" {<= "3.6.4~rc1-2"})
-  ("deb-python3-keyrings-alt" | "deb- python3-keyring" {<= "8"})
+  ("deb-git-annex" {>= "6.20180913~"} | "deb-git-annex-standalone" {>= "6.20180913~"})
+  ("deb-python3-distutils" | "deb-libpython3-stdlib" {<= "3.6.4~rc1-2"})
+  ("deb-python3-keyrings-alt" | "deb-python3-keyring" {<= "8"})
 ]
 extra-source "python3-datalad_0.11.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/datalad/python3-datalad_0.11.2-2_all.deb"

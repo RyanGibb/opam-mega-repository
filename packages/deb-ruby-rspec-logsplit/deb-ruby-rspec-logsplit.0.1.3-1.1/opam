@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-rspec-logsplit"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-rspec-logsplit_0.1.3-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-rspec-logsplit/ruby-rspec-logsplit_0.1.3-1.1_all.deb"

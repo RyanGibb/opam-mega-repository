@@ -11,7 +11,7 @@ depends: [
   "deb-libgd-text-perl"
   "deb-libtemplate-perl"
   "deb-perl-any"
-  ("deb-libgd-gd2-perl" | "deb- libgd-noxpm-perl")
+  ("deb-libgd-gd2-perl" | "deb-libgd-noxpm-perl")
 ]
 extra-source "libtemplate-plugin-gd-perl_2.66-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libt/libtemplate-plugin-gd-perl/libtemplate-plugin-gd-perl_2.66-4_all.deb"

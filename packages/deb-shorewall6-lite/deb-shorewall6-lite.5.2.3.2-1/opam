@@ -10,7 +10,7 @@ depends: [
   "deb-lsb-base" {>= "3.0-6"}
   "deb-shorewall-core" {< "5.2.4~"}
   "deb-shorewall-core" {>= "5.2.3~"}
-  ("deb-iproute2" | "deb- iproute")
+  ("deb-iproute2" | "deb-iproute")
 ]
 conflicts: [
   "deb-ferm"

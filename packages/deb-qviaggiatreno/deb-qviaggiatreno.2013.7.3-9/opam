@@ -15,7 +15,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.2.0~alpha1"}
   "deb-libqt5xml5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
 ]
 extra-source "qviaggiatreno_2013.7.3-9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qviaggiatreno/qviaggiatreno_2013.7.3-9_amd64.deb"

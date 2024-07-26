@@ -15,7 +15,7 @@ depends: [
   "deb-libgts-0-7-5" {>= "0.7.6"}
   "deb-libopenmpi3"
   "deb-libosmesa6" {>= "10.2~"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "libgfsgl0_20121130+dfsg-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gfsview/libgfsgl0_20121130+dfsg-6_amd64.deb"

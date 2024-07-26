@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r wondershaper"]
 ]
 depends: [
-  ("deb-iproute2" | "deb- iproute")
+  ("deb-iproute2" | "deb-iproute")
 ]
 extra-source "wondershaper_1.1a-10.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/wondershaper/wondershaper_1.1a-10.1_all.deb"

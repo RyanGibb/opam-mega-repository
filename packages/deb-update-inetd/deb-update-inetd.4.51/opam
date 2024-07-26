@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl-any"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "update-inetd_4.51_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/update-inetd/update-inetd_4.51_all.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.34"}
-  ("deb-ksmbd-tools" | "deb- samba")
+  ("deb-ksmbd-tools" | "deb-samba")
 ]
 extra-source "wsdd2_1.8.7+dfsg-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/wsdd2/wsdd2_1.8.7+dfsg-1.1_amd64.deb"

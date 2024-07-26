@@ -22,7 +22,7 @@ depends: [
   "deb-libwayland-server0" {>= "1.8.0"}
   "deb-libx11-6"
   "deb-libxcomposite1" {>= "1-0.4.5"}
-  ("deb-libqt5gui5" {>= "5.15.8+dfsg~"} | "deb- libqt5gui5-gles" {>= "5.15.8+dfsg~"})
+  ("deb-libqt5gui5" {>= "5.15.8+dfsg~"} | "deb-libqt5gui5-gles" {>= "5.15.8+dfsg~"})
 ]
 extra-source "qtwayland5_5.15.8-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtwayland-opensource-src/qtwayland5_5.15.8-2_amd64.deb"

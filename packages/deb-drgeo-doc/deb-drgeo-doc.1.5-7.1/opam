@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r drgeo-doc"]
 ]
 depends: [
-  ("deb-iceweasel" | "deb- www-browser" | "deb- x-www-browser")
+  ("deb-iceweasel" | "deb-www-browser" | "deb-x-www-browser")
 ]
 extra-source "drgeo-doc_1.5-7.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/drgeo-doc/drgeo-doc_1.5-7.1_all.deb"

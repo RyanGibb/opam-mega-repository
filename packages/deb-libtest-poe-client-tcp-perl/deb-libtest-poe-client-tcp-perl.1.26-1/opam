@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libpoe-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.19.6"} | "deb- libsocket-perl" {>= "2.013"})
+  ("deb-perl" {>= "5.19.6"} | "deb-libsocket-perl" {>= "2.013"})
 ]
 extra-source "libtest-poe-client-tcp-perl_1.26-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libt/libtest-poe-client-tcp-perl/libtest-poe-client-tcp-perl_1.26-1_all.deb"

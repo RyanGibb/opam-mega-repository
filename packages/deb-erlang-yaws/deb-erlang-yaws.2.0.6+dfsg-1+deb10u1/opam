@@ -14,7 +14,7 @@ depends: [
   "deb-erlang-xmerl" {>= "1-21.2.6+dfsg"}
   "deb-libc6" {>= "2.4"}
   "deb-libpam0g" {>= "0.99.7.1"}
-  ("deb-erlang-base" {>= "1-21.2.6+dfsg"} | "deb- erlang-base-hipe" {>= "1-21.2.6+dfsg"})
+  ("deb-erlang-base" {>= "1-21.2.6+dfsg"} | "deb-erlang-base-hipe" {>= "1-21.2.6+dfsg"})
   ("deb-erlang-base" | "deb-erlang-base-hipe")
 ]
 extra-source "erlang-yaws_2.0.6+dfsg-1+deb10u1_amd64.deb" {

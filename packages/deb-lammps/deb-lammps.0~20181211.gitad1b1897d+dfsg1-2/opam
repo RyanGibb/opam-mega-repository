@@ -42,12 +42,12 @@ depends: [
   "deb-libxt6"
   "deb-mpi-default-bin"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-libglu1-mesa" | "deb- libglu1")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
-  ("deb-ocl-icd-libopencl1" {>= "1.0"} | "deb- libopencl-1-2-1")
-  ("deb-ocl-icd-libopencl1" {>= "2.2.0"} | "deb- libopencl-2-0-1")
-  ("deb-ocl-icd-libopencl1" | "deb- libopencl1")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-libglu1-mesa" | "deb-libglu1")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
+  ("deb-ocl-icd-libopencl1" {>= "1.0"} | "deb-libopencl-1-2-1")
+  ("deb-ocl-icd-libopencl1" {>= "2.2.0"} | "deb-libopencl-2-0-1")
+  ("deb-ocl-icd-libopencl1" | "deb-libopencl1")
 ]
 extra-source "lammps_0~20181211.gitad1b1897d+dfsg1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lammps/lammps_0~20181211.gitad1b1897d+dfsg1-2_amd64.deb"

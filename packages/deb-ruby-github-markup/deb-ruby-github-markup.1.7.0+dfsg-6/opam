@@ -16,7 +16,7 @@ depends: [
   "deb-ruby-posix-spawn"
   "deb-ruby-redcloth"
   "deb-ruby-wikicloth"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-github-markup_1.7.0+dfsg-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-github-markup/ruby-github-markup_1.7.0+dfsg-6_all.deb"

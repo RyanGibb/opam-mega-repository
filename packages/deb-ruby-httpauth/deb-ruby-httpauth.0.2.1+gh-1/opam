@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-httpauth"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-httpauth_0.2.1+gh-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-httpauth/ruby-httpauth_0.2.1+gh-1_all.deb"

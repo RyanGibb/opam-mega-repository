@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-rails-assets-jquery" {>= "1.6"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 conflicts: [
   "deb-ruby-jquery-ui-rails" {< "5.0.5-4"}

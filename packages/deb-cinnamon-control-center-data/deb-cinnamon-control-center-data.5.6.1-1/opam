@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r cinnamon-control-center-data"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "cinnamon-control-center-data_5.6.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cinnamon-control-center/cinnamon-control-center-data_5.6.1-1_all.deb"

@@ -27,8 +27,8 @@ depends: [
   "deb-libxinerama-dev"
   "deb-libxrandr-dev"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libcurl4-gnutls-dev" | "deb- libcurl-dev")
-  ("deb-zlib1g-dev" | "deb- libz-dev")
+  ("deb-libcurl4-gnutls-dev" | "deb-libcurl-dev")
+  ("deb-zlib1g-dev" | "deb-libz-dev")
 ]
 extra-source "juce-modules-source_7.0.5+ds-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/juce/juce-modules-source_7.0.5+ds-1_amd64.deb"

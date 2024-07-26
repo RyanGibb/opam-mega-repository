@@ -13,7 +13,7 @@ depends: [
   "deb-python3-dbussy"
   "deb-python3-sdnotify"
   "deb-python3-systemd"
-  ("deb-sms4you-xmpp" {= "0.0.7-2"} | "deb- sms4you-email" {= "0.0.7-2"})
+  ("deb-sms4you-xmpp" {= "0.0.7-2"} | "deb-sms4you-email" {= "0.0.7-2"})
 ]
 extra-source "sms4you_0.0.7-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sms4you/sms4you_0.0.7-2_all.deb"

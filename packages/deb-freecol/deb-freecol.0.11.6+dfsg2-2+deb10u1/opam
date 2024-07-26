@@ -10,7 +10,7 @@ depends: [
   "deb-libcommons-cli-java"
   "deb-libcortado-java"
   "deb-libmiglayout-java"
-  ("deb-default-jre" {>= "2-1.8"} | "deb- java8-runtime")
+  ("deb-default-jre" {>= "2-1.8"} | "deb-java8-runtime")
 ]
 extra-source "freecol_0.11.6+dfsg2-2+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/freecol/freecol_0.11.6+dfsg2-2+deb10u1_all.deb"

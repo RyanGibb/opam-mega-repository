@@ -17,7 +17,7 @@ depends: [
   "deb-logrotate"
   "deb-ucf"
   "deb-zlib1g" {>= "1-1.2.0"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "privoxy_3.0.34-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/privoxy/privoxy_3.0.34-1_amd64.deb"

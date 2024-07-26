@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r libtools-macro-clojure"]
 ]
 depends: [
-  ("deb-libclojure-java" | "deb- libclojure1-8-java")
+  ("deb-libclojure-java" | "deb-libclojure1-8-java")
 ]
 extra-source "libtools-macro-clojure_0.1.5-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libt/libtools-macro-clojure/libtools-macro-clojure_0.1.5-2_all.deb"

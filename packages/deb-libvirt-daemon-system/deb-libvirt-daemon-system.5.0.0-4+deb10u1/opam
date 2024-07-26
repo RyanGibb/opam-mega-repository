@@ -29,8 +29,8 @@ depends: [
   "deb-logrotate"
   "deb-lsb-base"
   "deb-policykit-1"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-iptables" {>= "1.8.1-1"} | "deb- firewalld")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-iptables" {>= "1.8.1-1"} | "deb-firewalld")
 ]
 extra-source "libvirt-daemon-system_5.0.0-4+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libv/libvirt/libvirt-daemon-system_5.0.0-4+deb10u1_amd64.deb"

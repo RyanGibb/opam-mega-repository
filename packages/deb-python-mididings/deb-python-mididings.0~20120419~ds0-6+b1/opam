@@ -18,7 +18,7 @@ depends: [
   "deb-python" {>= "2.7"}
   "deb-python-any" {>= "2.6.6-7~"}
   "deb-python-decorator"
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "python-mididings_0~20120419~ds0-6+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mididings/python-mididings_0~20120419~ds0-6+b1_amd64.deb"

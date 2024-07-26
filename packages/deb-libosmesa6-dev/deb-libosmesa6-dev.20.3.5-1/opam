@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libosmesa6" {= "20.3.5-1"}
-  ("deb-mesa-common-dev" {= "20.3.5-1"} | "deb- libgl-dev")
+  ("deb-mesa-common-dev" {= "20.3.5-1"} | "deb-libgl-dev")
 ]
 conflicts: [
   "deb-libosmesa-dev"

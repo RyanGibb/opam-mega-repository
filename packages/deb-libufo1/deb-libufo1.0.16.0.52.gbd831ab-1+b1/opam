@@ -11,7 +11,7 @@ depends: [
   "deb-libjson-glib-1-0-0" {>= "1.5.2"}
   "deb-libpython3-9" {>= "3.9.0~b4"}
   "deb-libufo-data" {= "0.16.0.52.gbd831ab-1"}
-  ("deb-ocl-icd-libopencl1" | "deb- libopencl1")
+  ("deb-ocl-icd-libopencl1" | "deb-libopencl1")
 ]
 extra-source "libufo1_0.16.0.52.gbd831ab-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/ufo-core/libufo1_0.16.0.52.gbd831ab-1+b1_amd64.deb"

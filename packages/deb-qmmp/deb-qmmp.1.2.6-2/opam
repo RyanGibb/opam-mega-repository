@@ -48,7 +48,7 @@ depends: [
   "deb-libwavpack1" {>= "4.40.0"}
   "deb-libwildmidi2" {>= "0.2.3"}
   "deb-libx11-6"
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "qmmp_1.2.6-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qmmp/qmmp_1.2.6-2_amd64.deb"

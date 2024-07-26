@@ -13,8 +13,8 @@ depends: [
   "deb-libtext-wikiformat-perl"
   "deb-libtime-piece-perl"
   "deb-perl-any"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-libdbd-mysql-perl" | "deb- libdbd-pg-perl" | "deb- libdbd-sqlite3-perl")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-libdbd-mysql-perl" | "deb-libdbd-pg-perl" | "deb-libdbd-sqlite3-perl")
 ]
 extra-source "libwiki-toolkit-perl_0.86-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libw/libwiki-toolkit-perl/libwiki-toolkit-perl_0.86-1_all.deb"

@@ -17,7 +17,7 @@ depends: [
   "deb-libkeybinder-3-0-0" {>= "0.3.0"}
   "deb-libpango-1-0-0" {>= "1.14.0"}
   "deb-libsoup2-4-1" {>= "2.41.90"}
-  ("deb-gstreamer1-0-pulseaudio" | "deb- gstreamer1-0-alsa")
+  ("deb-gstreamer1-0-pulseaudio" | "deb-gstreamer1-0-alsa")
 ]
 extra-source "goodvibes_0.7.6-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/goodvibes/goodvibes_0.7.6-1_amd64.deb"

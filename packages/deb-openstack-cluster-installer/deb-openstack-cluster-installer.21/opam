@@ -43,7 +43,7 @@ depends: [
   "deb-sudo"
   "deb-swift"
   "deb-tftpd-hpa"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "openstack-cluster-installer_21_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/openstack-cluster-installer/openstack-cluster-installer_21_all.deb"

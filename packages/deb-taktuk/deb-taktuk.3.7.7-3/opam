@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl-any"
-  ("deb-openssh-client" | "deb- rsh-client")
+  ("deb-openssh-client" | "deb-rsh-client")
 ]
 extra-source "taktuk_3.7.7-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/taktuk/taktuk_3.7.7-3_all.deb"

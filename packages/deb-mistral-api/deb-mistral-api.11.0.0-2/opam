@@ -11,7 +11,7 @@ depends: [
   "deb-lsb-base" {>= "3.0.6"}
   "deb-mistral-common" {= "11.0.0-2"}
   "deb-python3-q-text-as-data"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "mistral-api_11.0.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mistral/mistral-api_11.0.0-2_all.deb"

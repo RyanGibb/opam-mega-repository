@@ -12,7 +12,7 @@ depends: [
   "deb-libkernlib1-gfortran"
   "deb-libpacklib1-gfortran"
   "deb-libquadmath0" {>= "4.6"}
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libmathlib2-gfortran_20061220+dfsg3-4.4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cernlib/libmathlib2-gfortran_20061220+dfsg3-4.4_amd64.deb"

@@ -25,7 +25,7 @@ depends: [
   "deb-libyaml-snake-java"
   "deb-substance" {>= "7.3"}
   "deb-substance-flamingo" {>= "7.3"}
-  ("deb-default-jre" | "deb- java8-runtime")
+  ("deb-default-jre" | "deb-java8-runtime")
 ]
 extra-source "triplea_1.9.0.0.7062-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/triplea/triplea_1.9.0.0.7062-2_all.deb"

@@ -15,7 +15,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.10.0"}
   "deb-libstdc++6" {>= "4.1.1"}
   "deb-libtinfo6" {>= "6"}
-  ("deb-libqt5gui5" {>= "5.9.0~beta"} | "deb- libqt5gui5-gles" {>= "5.9.0~beta"})
+  ("deb-libqt5gui5" {>= "5.9.0~beta"} | "deb-libqt5gui5-gles" {>= "5.9.0~beta"})
 ]
 extra-source "pinentry-qt_1.2.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pinentry/pinentry-qt_1.2.1-1_amd64.deb"

@@ -12,7 +12,7 @@ depends: [
   "deb-libgtk2-0-0" {>= "2.8.0"}
   "deb-libstdc++6" {>= "5"}
   "deb-man-db"
-  ("deb-xterm" | "deb- x-terminal-emulator")
+  ("deb-xterm" | "deb-x-terminal-emulator")
 ]
 extra-source "gman_0.9.3-5.3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gman/gman_0.9.3-5.3_amd64.deb"

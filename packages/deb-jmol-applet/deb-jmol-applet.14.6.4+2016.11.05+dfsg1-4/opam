@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libjmol-java"
-  ("deb-default-jre" | "deb- java2-runtime")
+  ("deb-default-jre" | "deb-java2-runtime")
 ]
 extra-source "jmol-applet_14.6.4+2016.11.05+dfsg1-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jmol/jmol-applet_14.6.4+2016.11.05+dfsg1-4_all.deb"

@@ -49,8 +49,8 @@ depends: [
   "deb-python3" {>= "3.11~"}
   "deb-python3-11"
   "deb-python3-any"
-  ("deb-libluajit-5-1-2" {>= "2.0.4+dfsg"} | "deb- libluajit2-5-1-2" {>= "2.1~"})
-  ("deb-libqt5gui5" {>= "5.9.0~beta"} | "deb- libqt5gui5-gles" {>= "5.9.0~beta"})
+  ("deb-libluajit-5-1-2" {>= "2.0.4+dfsg"} | "deb-libluajit2-5-1-2" {>= "2.1~"})
+  ("deb-libqt5gui5" {>= "5.9.0~beta"} | "deb-libqt5gui5-gles" {>= "5.9.0~beta"})
 ]
 extra-source "obs-studio_29.0.2+dfsg-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/obs-studio/obs-studio_29.0.2+dfsg-1+b1_amd64.deb"

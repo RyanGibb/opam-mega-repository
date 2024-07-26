@@ -13,7 +13,7 @@ depends: [
   "deb-python3" {< "3.12"}
   "deb-python3" {>= "3.11~"}
   "deb-python3-any"
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "python3-rtmidi_1.4.7-1+b4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-rtmidi/python3-rtmidi_1.4.7-1+b4_amd64.deb"

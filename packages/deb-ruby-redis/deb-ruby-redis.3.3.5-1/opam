@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-redis"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-redis_3.3.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-redis/ruby-redis_3.3.5-1_all.deb"

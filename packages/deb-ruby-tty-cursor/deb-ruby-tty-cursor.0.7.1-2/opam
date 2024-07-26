@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-tty-cursor"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-tty-cursor_0.7.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-tty-cursor/ruby-tty-cursor_0.7.1-2_all.deb"

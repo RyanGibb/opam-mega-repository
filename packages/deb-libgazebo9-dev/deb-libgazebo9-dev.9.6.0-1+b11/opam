@@ -40,7 +40,7 @@ depends: [
   "deb-libxml2-dev"
   "deb-qtbase5-dev"
   "deb-ttf-dejavu-core"
-  ("deb-libcurl4-openssl-dev" | "deb- libcurl-dev")
+  ("deb-libcurl4-openssl-dev" | "deb-libcurl-dev")
 ]
 extra-source "libgazebo9-dev_9.6.0-1+b11_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gazebo/libgazebo9-dev_9.6.0-1+b11_amd64.deb"

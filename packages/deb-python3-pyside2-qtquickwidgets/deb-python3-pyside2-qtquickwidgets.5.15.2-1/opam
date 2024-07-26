@@ -23,7 +23,7 @@ depends: [
   "deb-python3-pyside2-qtqml"
   "deb-python3-pyside2-qtquick"
   "deb-python3-pyside2-qtwidgets"
-  ("deb-libqt5gui5" {>= "5.15"} | "deb- libqt5gui5-gles" {>= "5.15"})
+  ("deb-libqt5gui5" {>= "5.15"} | "deb-libqt5gui5-gles" {>= "5.15"})
 ]
 extra-source "python3-pyside2.qtquickwidgets_5.15.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pyside2/python3-pyside2.qtquickwidgets_5.15.2-1_amd64.deb"

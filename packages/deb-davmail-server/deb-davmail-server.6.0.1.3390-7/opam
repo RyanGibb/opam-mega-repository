@@ -21,7 +21,7 @@ depends: [
   "deb-libstax2-api-java"
   "deb-libwoodstox-java"
   "deb-logrotate"
-  ("deb-default-jre-headless" | "deb- java8-runtime-headless" | "deb- java9-runtime-headless" | "deb- java10-runtime-headless" | "deb- java11-runtime-headless")
+  ("deb-default-jre-headless" | "deb-java8-runtime-headless" | "deb-java9-runtime-headless" | "deb-java10-runtime-headless" | "deb-java11-runtime-headless")
 ]
 extra-source "davmail-server_6.0.1.3390-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/davmail/davmail-server_6.0.1.3390-7_all.deb"

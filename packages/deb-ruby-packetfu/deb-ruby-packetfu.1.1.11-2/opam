@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ieee-data"
   "deb-ruby-pcaprub" {>= "0.12"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-packetfu_1.1.11-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-packetfu/ruby-packetfu_1.1.11-2_all.deb"

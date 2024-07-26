@@ -35,7 +35,7 @@ depends: [
   "deb-libwayland-client0" {>= "1.20.0"}
   "deb-libwireplumber-0-4-0" {>= "0.3.95"}
   "deb-libxkbregistry0" {>= "1.0.0"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "waybar_0.9.17-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/waybar/waybar_0.9.17-2_amd64.deb"

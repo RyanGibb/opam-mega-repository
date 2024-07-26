@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.4"}
   "deb-pd-libdir"
-  ("deb-puredata-core" | "deb- pd")
+  ("deb-puredata-core" | "deb-pd")
 ]
 extra-source "pd-markex_0.85-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pd-markex/pd-markex_0.85-3_amd64.deb"

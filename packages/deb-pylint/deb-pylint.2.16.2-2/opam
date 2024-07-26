@@ -15,10 +15,10 @@ depends: [
   "deb-python3-platformdirs" {>= "2.2.0"}
   "deb-python3-setuptools"
   "deb-python3-tomlkit"
-  ("deb-python3-dill" {>= "0.3.6"} | "deb- python3" {< "3.11"})
-  ("deb-python3-dill" {>= "0.3.6"} | "deb- python3" {> "3.11"})
-  ("deb-python3-tomli" | "deb- python3" {> "3.11"})
-  ("deb-python3-typing-extensions" {>= "3.10.0"} | "deb- python3" {> "3.10"})
+  ("deb-python3-dill" {>= "0.3.6"} | "deb-python3" {< "3.11"})
+  ("deb-python3-dill" {>= "0.3.6"} | "deb-python3" {> "3.11"})
+  ("deb-python3-tomli" | "deb-python3" {> "3.11"})
+  ("deb-python3-typing-extensions" {>= "3.10.0"} | "deb-python3" {> "3.10"})
 ]
 extra-source "pylint_2.16.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pylint/pylint_2.16.2-2_all.deb"

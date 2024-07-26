@@ -10,7 +10,7 @@ depends: [
   "deb-libmodule-scandeps-perl" {>= "1.09"}
   "deb-libyaml-tiny-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.19.9"} | "deb- libparse-cpan-meta-perl" {>= "1.4413"})
+  ("deb-perl" {>= "5.19.9"} | "deb-libparse-cpan-meta-perl" {>= "1.4413"})
 ]
 extra-source "libmodule-install-perl_1.19-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libm/libmodule-install-perl/libmodule-install-perl_1.19-1_all.deb"

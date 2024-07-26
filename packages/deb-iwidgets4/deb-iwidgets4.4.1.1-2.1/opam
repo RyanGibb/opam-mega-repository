@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r iwidgets4"]
 ]
 depends: [
-  ("deb-itk3" | "deb- tk-itk4")
+  ("deb-itk3" | "deb-tk-itk4")
 ]
 conflicts: [
   "deb-itcl3-0" {< "3.0.1"}

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-logger-application"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-mono-logger_1.1.0-3.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-mono-logger/ruby-mono-logger_1.1.0-3.1_all.deb"

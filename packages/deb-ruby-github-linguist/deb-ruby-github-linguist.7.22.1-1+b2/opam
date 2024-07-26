@@ -14,7 +14,7 @@ depends: [
   "deb-ruby-escape-utils"
   "deb-ruby-mini-mime"
   "deb-ruby-rugged"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-github-linguist_7.22.1-1+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-github-linguist/ruby-github-linguist_7.22.1-1+b2_amd64.deb"

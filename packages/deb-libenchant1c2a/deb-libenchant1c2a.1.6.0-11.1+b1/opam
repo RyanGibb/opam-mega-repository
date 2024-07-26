@@ -13,7 +13,7 @@ depends: [
   "deb-libhunspell-1-7-0"
   "deb-libstdc++6" {>= "5.2"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-aspell-en" | "deb- myspell-dictionary" | "deb- aspell-dictionary" | "deb- ispell-dictionary" | "deb- hunspell-dictionary")
+  ("deb-aspell-en" | "deb-myspell-dictionary" | "deb-aspell-dictionary" | "deb-ispell-dictionary" | "deb-hunspell-dictionary")
 ]
 extra-source "libenchant1c2a_1.6.0-11.1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/enchant/libenchant1c2a_1.6.0-11.1+b1_amd64.deb"

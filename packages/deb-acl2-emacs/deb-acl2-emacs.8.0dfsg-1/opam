@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-acl2" {>= "8.0dfsg-1"}
   "deb-tex-common" {>= "6"}
-  ("deb-emacs25" | "deb- emacsen")
+  ("deb-emacs25" | "deb-emacsen")
 ]
 conflicts: [
   "deb-acl2" {<= "2.7-9"}

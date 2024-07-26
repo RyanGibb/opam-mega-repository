@@ -12,7 +12,7 @@ depends: [
   "deb-php-font-lib" {>= "0.2"}
   "deb-php-gd"
   "deb-sdop"
-  ("deb-php" | "deb- php-cli")
+  ("deb-php" | "deb-php-cli")
 ]
 extra-source "php-dompdf_0.6.2+dfsg-3.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/php-dompdf/php-dompdf_0.6.2+dfsg-3.1_all.deb"

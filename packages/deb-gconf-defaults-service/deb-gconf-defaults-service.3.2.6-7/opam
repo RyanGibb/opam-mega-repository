@@ -14,7 +14,7 @@ depends: [
   "deb-libgconf-2-4" {>= "3.2.5"}
   "deb-libglib2-0-0" {>= "2.37.3"}
   "deb-libpolkit-gobject-1-0" {>= "0.94"}
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus")
 ]
 conflicts: [
   "deb-gconf2-common" {< "2.24.0-3"}

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6-dev"
-  ("deb-libzephyr4" {= "3.1.2-1+b3"} | "deb- libzephyr4-krb" {= "3.1.2-1+b3"} | "deb- libzephyr4-krb5" {= "3.1.2-1+b3"} | "deb- libzephyr4-krb45" {= "3.1.2-1+b3"})
+  ("deb-libzephyr4" {= "3.1.2-1+b3"} | "deb-libzephyr4-krb" {= "3.1.2-1+b3"} | "deb-libzephyr4-krb5" {= "3.1.2-1+b3"} | "deb-libzephyr4-krb45" {= "3.1.2-1+b3"})
 ]
 extra-source "libzephyr-dev_3.1.2-1+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/z/zephyr/libzephyr-dev_3.1.2-1+b3_amd64.deb"

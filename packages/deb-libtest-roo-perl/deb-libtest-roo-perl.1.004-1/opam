@@ -11,7 +11,7 @@ depends: [
   "deb-libstrictures-perl"
   "deb-libsub-install-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.13.4"} | "deb- libtest-simple-perl" {>= "0.96"})
+  ("deb-perl" {>= "5.13.4"} | "deb-libtest-simple-perl" {>= "0.96"})
 ]
 extra-source "libtest-roo-perl_1.004-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libt/libtest-roo-perl/libtest-roo-perl_1.004-1_all.deb"

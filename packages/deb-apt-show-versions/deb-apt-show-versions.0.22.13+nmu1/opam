@@ -9,7 +9,7 @@ depends: [
   "deb-apt"
   "deb-libapt-pkg-perl"
   "deb-libstorable-perl"
-  ("deb-perl-any" | "deb- perl-5-005" | "deb- perl-5-004")
+  ("deb-perl-any" | "deb-perl-5-005" | "deb-perl-5-004")
 ]
 extra-source "apt-show-versions_0.22.13+nmu1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/apt-show-versions/apt-show-versions_0.22.13+nmu1_all.deb"

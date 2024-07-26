@@ -45,7 +45,7 @@ depends: [
   "deb-libtk8-6" {>= "8.6.0"}
   "deb-libxml2" {>= "2.7.4"}
   "deb-scilab-minimal-bin" {= "6.1.0+dfsg1-7"}
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "scilab-full-bin_6.1.0+dfsg1-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/scilab/scilab-full-bin_6.1.0+dfsg1-7_amd64.deb"

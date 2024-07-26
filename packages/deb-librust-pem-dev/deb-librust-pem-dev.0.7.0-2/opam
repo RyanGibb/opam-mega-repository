@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-librust-lazy-static-1+default-dev"
   "deb-librust-regex-1+default-dev"
-  ("deb-librust-base64-0-12+default-dev" | "deb- librust-base64-0-11+default-dev")
+  ("deb-librust-base64-0-12+default-dev" | "deb-librust-base64-0-11+default-dev")
 ]
 extra-source "librust-pem-dev_0.7.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-pem/librust-pem-dev_0.7.0-2_amd64.deb"

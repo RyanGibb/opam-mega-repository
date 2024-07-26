@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-libtmglib3" {= "3.11.0-2"}
-  ("deb-libblas-dev" | "deb- libblas-so")
-  ("deb-liblapack-dev" | "deb- liblapack-so")
+  ("deb-libblas-dev" | "deb-libblas-so")
+  ("deb-liblapack-dev" | "deb-liblapack-so")
 ]
 extra-source "libtmglib-dev_3.11.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lapack/libtmglib-dev_3.11.0-2_amd64.deb"

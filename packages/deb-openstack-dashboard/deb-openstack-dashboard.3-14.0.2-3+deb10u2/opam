@@ -11,7 +11,7 @@ depends: [
   "deb-libjs-jquery-cookie"
   "deb-python3-any"
   "deb-python3-django-horizon" {= "3-14.0.2-3+deb10u2"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "openstack-dashboard_3:14.0.2-3+deb10u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/horizon/openstack-dashboard_14.0.2-3+deb10u2_all.deb"

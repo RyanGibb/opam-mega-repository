@@ -15,7 +15,7 @@ depends: [
   "deb-python3" {>= "3.11~"}
   "deb-python3-pyqt5" {>= "5.15.0"}
   "deb-python3-pyqt5-sip"
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "python3-pyqt5.qwt_1.02.02-2+b4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pyqt-qwt/python3-pyqt5.qwt_1.02.02-2+b4_amd64.deb"

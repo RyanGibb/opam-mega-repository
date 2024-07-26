@@ -24,8 +24,8 @@ depends: [
   "deb-rsync"
   "deb-sysvinit-utils"
   "deb-vlan"
-  ("deb-fdisk" | "deb- util-linux" {< "2.29.2-3~"})
-  ("deb-nova-compute-kvm" | "deb- nova-compute-hypervisor")
+  ("deb-fdisk" | "deb-util-linux" {< "2.29.2-3~"})
+  ("deb-nova-compute-kvm" | "deb-nova-compute-hypervisor")
 ]
 extra-source "nova-compute_2:26.1.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/nova/nova-compute_26.1.0-4_all.deb"

@@ -11,7 +11,7 @@ depends: [
   "deb-libglib2-0-0" {>= "2.35.9"}
   "deb-libgtk-3-0" {>= "3.21.4"}
   "deb-rdesktop"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "grdesktop_0.23+d040330-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/grdesktop/grdesktop_0.23+d040330-7_amd64.deb"

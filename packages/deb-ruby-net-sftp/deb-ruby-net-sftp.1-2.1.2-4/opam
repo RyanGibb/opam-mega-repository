@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-net-ssh" {>= "2.6.5~"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-net-sftp_1:2.1.2-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-net-sftp/ruby-net-sftp_2.1.2-4_all.deb"

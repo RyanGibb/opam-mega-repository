@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libsbuf6" {= "10.3~svn296373-10"}
-  ("deb-libc0-1-dev" | "deb- libc-dev")
+  ("deb-libc0-1-dev" | "deb-libc-dev")
 ]
 extra-source "libsbuf-dev_10.3~svn296373-10_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/freebsd-libs/libsbuf-dev_10.3~svn296373-10_amd64.deb"

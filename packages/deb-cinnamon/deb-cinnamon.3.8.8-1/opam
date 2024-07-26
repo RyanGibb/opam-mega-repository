@@ -80,8 +80,8 @@ depends: [
   "deb-python3-pil"
   "deb-python3-pyinotify"
   "deb-xapps-common" {>= "1.2"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-gnome-themes-extra" | "deb- gnome-themes-standard")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-gnome-themes-extra" | "deb-gnome-themes-standard")
 ]
 extra-source "cinnamon_3.8.8-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cinnamon/cinnamon_3.8.8-1_amd64.deb"

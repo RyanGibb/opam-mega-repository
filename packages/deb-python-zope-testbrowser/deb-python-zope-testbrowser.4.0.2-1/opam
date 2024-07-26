@@ -14,7 +14,7 @@ depends: [
   "deb-python-webtest"
   "deb-python-zope-interface"
   "deb-python-zope-schema"
-  ("deb-python2-6" | "deb- python2-7")
+  ("deb-python2-6" | "deb-python2-7")
 ]
 conflicts: [
   "deb-zope3"

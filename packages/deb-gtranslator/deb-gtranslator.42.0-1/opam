@@ -22,7 +22,7 @@ depends: [
   "deb-libpango-1-0-0" {>= "1.42.0"}
   "deb-libsoup-3-0-0" {>= "3.0.3"}
   "deb-libxml2" {>= "2.7.4"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gtranslator_42.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gtranslator/gtranslator_42.0-1_amd64.deb"

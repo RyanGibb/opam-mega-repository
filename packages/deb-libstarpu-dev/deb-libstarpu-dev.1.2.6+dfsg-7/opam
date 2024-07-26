@@ -9,10 +9,10 @@ depends: [
   "deb-libhwloc-dev"
   "deb-ocl-icd-opencl-dev"
   "deb-opencl-headers"
-  ("deb-libsocl-1-2-0" {= "1.2.6+dfsg-7"} | "deb- libsocl-any-1-2-0")
-  ("deb-libstarpu-1-2-5" {= "1.2.6+dfsg-7"} | "deb- libstarpu-any-1-2-5")
-  ("deb-libstarpufft-1-2-0" {= "1.2.6+dfsg-7"} | "deb- libstarpu-anyfft-1-2-0")
-  ("deb-libstarpumpi-1-2-3" {= "1.2.6+dfsg-7"} | "deb- libstarpu-anympi-1-2-3")
+  ("deb-libsocl-1-2-0" {= "1.2.6+dfsg-7"} | "deb-libsocl-any-1-2-0")
+  ("deb-libstarpu-1-2-5" {= "1.2.6+dfsg-7"} | "deb-libstarpu-any-1-2-5")
+  ("deb-libstarpufft-1-2-0" {= "1.2.6+dfsg-7"} | "deb-libstarpu-anyfft-1-2-0")
+  ("deb-libstarpumpi-1-2-3" {= "1.2.6+dfsg-7"} | "deb-libstarpu-anympi-1-2-3")
 ]
 conflicts: [
   "deb-libstarpu-contrib-dev"

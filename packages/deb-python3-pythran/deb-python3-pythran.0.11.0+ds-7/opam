@@ -14,8 +14,8 @@ depends: [
   "deb-python3-gast" {>= "0.5.0~"}
   "deb-python3-numpy"
   "deb-python3-ply" {>= "0.34~"}
-  ("deb-g++" | "deb- c++-compiler")
-  ("deb-libopenblas-dev" | "deb- libatlas-base-dev" | "deb- libblas-dev" | "deb- libblas-so")
+  ("deb-g++" | "deb-c++-compiler")
+  ("deb-libopenblas-dev" | "deb-libatlas-base-dev" | "deb-libblas-dev" | "deb-libblas-so")
 ]
 extra-source "python3-pythran_0.11.0+ds-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pythran/python3-pythran_0.11.0+ds-7_amd64.deb"

@@ -14,7 +14,7 @@ depends: [
   "deb-libgtk-3-0" {>= "3.21.4"}
   "deb-libjson-glib-1-0-0" {>= "0.12.0"}
   "deb-libpeas-1-0-0" {>= "1.0.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "budgie-hotcorners-applet_0.7.1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/budgie-extras/budgie-hotcorners-applet_0.7.1-3_amd64.deb"

@@ -9,7 +9,7 @@ depends: [
   "deb-libasound2-dev"
   "deb-libpulse-dev"
   "deb-librtaudio6" {= "5.2.0~ds1-2"}
-  ("deb-libjack-dev" | "deb- libjack-jackd2-dev")
+  ("deb-libjack-dev" | "deb-libjack-jackd2-dev")
 ]
 extra-source "librtaudio-dev_5.2.0~ds1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rtaudio/librtaudio-dev_5.2.0~ds1-2_amd64.deb"

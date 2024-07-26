@@ -12,7 +12,7 @@ depends: [
   "deb-libglib2-0-0" {>= "2.31.8"}
   "deb-libjson-perl"
   "deb-perl-any"
-  ("deb-bsd-mailx" | "deb- mailx")
+  ("deb-bsd-mailx" | "deb-mailx")
 ]
 conflicts: [
   "deb-amanda"

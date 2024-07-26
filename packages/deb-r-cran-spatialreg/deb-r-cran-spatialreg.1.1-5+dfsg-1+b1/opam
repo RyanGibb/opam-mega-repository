@@ -19,7 +19,7 @@ depends: [
   "deb-r-cran-nlme"
   "deb-r-cran-spdata"
   "deb-r-cran-spdep"
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "r-cran-spatialreg_1.1-5+dfsg-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-spatialreg/r-cran-spatialreg_1.1-5+dfsg-1+b1_amd64.deb"

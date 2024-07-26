@@ -15,7 +15,7 @@ depends: [
   "deb-libjson-perl"
   "deb-libyaml-perl"
   "deb-perl-any"
-  ("deb-nodejs-any" | "deb- nodejs" {< "12.22.5~dfsg-4~"})
+  ("deb-nodejs-any" | "deb-nodejs" {< "12.22.5~dfsg-4~"})
 ]
 conflicts: [
   "deb-pkg-js-tools" {< "0.14.0~"}

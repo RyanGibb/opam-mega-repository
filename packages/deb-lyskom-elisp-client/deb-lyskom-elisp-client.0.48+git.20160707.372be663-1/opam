@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo dpkg -r lyskom-elisp-client"]
 ]
 depends: [
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-emacs" | "deb- emacsen")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-emacs" | "deb-emacsen")
 ]
 extra-source "lyskom-elisp-client_0.48+git.20160707.372be663-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lyskom-elisp-client/lyskom-elisp-client_0.48+git.20160707.372be663-1_all.deb"

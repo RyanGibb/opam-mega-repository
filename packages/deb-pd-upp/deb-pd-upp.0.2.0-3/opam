@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r pd-upp"]
 ]
 depends: [
-  ("deb-puredata-core" | "deb- pd")
+  ("deb-puredata-core" | "deb-pd")
 ]
 extra-source "pd-upp_0.2.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pd-upp/pd-upp_0.2.0-3_all.deb"

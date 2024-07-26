@@ -15,8 +15,8 @@ depends: [
   "deb-libxmu6"
   "deb-libxpm4"
   "deb-libxt6"
-  ("deb-debconf" {>= "1.2.9"} | "deb- debconf-2-0")
-  ("deb-xterm" | "deb- x-terminal-emulator")
+  ("deb-debconf" {>= "1.2.9"} | "deb-debconf-2-0")
+  ("deb-xterm" | "deb-x-terminal-emulator")
 ]
 extra-source "seyon_2.20c-32+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/seyon/seyon_2.20c-32+b1_amd64.deb"

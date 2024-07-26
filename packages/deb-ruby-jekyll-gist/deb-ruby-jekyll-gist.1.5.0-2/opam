@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-octokit"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-jekyll-gist_1.5.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-jekyll-gist/ruby-jekyll-gist_1.5.0-2_all.deb"

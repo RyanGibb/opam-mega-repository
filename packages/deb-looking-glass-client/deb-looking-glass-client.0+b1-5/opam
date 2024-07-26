@@ -18,7 +18,7 @@ depends: [
   "deb-libwayland-egl1" {>= "1.15.0"}
   "deb-libx11-6"
   "deb-libxfixes3"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "looking-glass-client_0+b1-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/looking-glass/looking-glass-client_0+b1-5_amd64.deb"

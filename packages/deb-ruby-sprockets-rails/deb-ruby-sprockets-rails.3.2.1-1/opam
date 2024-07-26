@@ -10,7 +10,7 @@ depends: [
   "deb-ruby-activesupport" {>= "2-3.0"}
   "deb-ruby-sprockets" {< "4.0"}
   "deb-ruby-sprockets" {>= "2.8"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-sprockets-rails_3.2.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-sprockets-rails/ruby-sprockets-rails_3.2.1-1_all.deb"

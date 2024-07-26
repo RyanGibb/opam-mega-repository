@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.4"}
-  ("deb-puredata" | "deb- pd")
+  ("deb-puredata" | "deb-pd")
 ]
 extra-source "pd-hexloader_1.7-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pd-hexloader/pd-hexloader_1.7-2_amd64.deb"

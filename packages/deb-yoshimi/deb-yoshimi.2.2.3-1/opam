@@ -19,7 +19,7 @@ depends: [
   "deb-libtinfo6" {>= "6"}
   "deb-yoshimi-data" {= "2.2.3-1"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "yoshimi_2.2.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/y/yoshimi/yoshimi_2.2.3-1_amd64.deb"

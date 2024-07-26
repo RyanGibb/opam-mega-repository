@@ -9,8 +9,8 @@ depends: [
   "deb-libc6" {>= "2.27"}
   "deb-python-dbg"
   "deb-python-numpy" {= "1-1.16.2-1"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "python-numpy-dbg_1:1.16.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-numpy/python-numpy-dbg_1.16.2-1_amd64.deb"

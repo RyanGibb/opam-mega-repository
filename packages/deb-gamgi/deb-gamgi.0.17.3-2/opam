@@ -15,7 +15,7 @@ depends: [
   "deb-libgtk2-0-0" {>= "2.20.0"}
   "deb-libgtkglext1"
   "deb-sensible-utils"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "gamgi_0.17.3-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gamgi/gamgi_0.17.3-2_amd64.deb"

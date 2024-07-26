@@ -9,7 +9,7 @@ depends: [
   "deb-libjs-jquery"
   "deb-libphp-adodb"
   "deb-php-pgsql"
-  ("deb-libapache2-mod-php" | "deb- php-cgi" | "deb- php")
+  ("deb-libapache2-mod-php" | "deb-php-cgi" | "deb-php")
 ]
 extra-source "phppgadmin_5.1+ds-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/phppgadmin/phppgadmin_5.1+ds-4_all.deb"

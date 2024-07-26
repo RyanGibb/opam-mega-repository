@@ -10,7 +10,7 @@ depends: [
   "deb-libssl3" {>= "3.0.0"}
   "deb-odbcinst"
   "deb-virtuoso-opensource-7-common" {= "7.2.5.1+dfsg1-0.3"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "libvirtodbc0_7.2.5.1+dfsg1-0.3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/virtuoso-opensource/libvirtodbc0_7.2.5.1+dfsg1-0.3_amd64.deb"

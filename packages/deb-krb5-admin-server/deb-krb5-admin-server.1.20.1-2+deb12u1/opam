@@ -19,7 +19,7 @@ depends: [
   "deb-libss2" {>= "1.01"}
   "deb-libverto1" {>= "0.2.4"}
   "deb-sysvinit-utils"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "krb5-admin-server_1.20.1-2+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/krb5/krb5-admin-server_1.20.1-2+deb12u1_amd64.deb"

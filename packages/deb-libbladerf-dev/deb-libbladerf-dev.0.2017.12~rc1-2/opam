@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libbladerf1" {= "0.2017.12~rc1-2"}
-  ("deb-libc6-dev" | "deb- libc-dev")
+  ("deb-libc6-dev" | "deb-libc-dev")
 ]
 extra-source "libbladerf-dev_0.2017.12~rc1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/bladerf/libbladerf-dev_0.2017.12~rc1-2_amd64.deb"

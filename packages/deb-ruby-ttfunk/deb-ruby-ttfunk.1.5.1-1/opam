@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-ttfunk"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-ttfunk_1.5.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-ttfunk/ruby-ttfunk_1.5.1-1_all.deb"

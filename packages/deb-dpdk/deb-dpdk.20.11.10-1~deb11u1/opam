@@ -10,7 +10,7 @@ depends: [
   "deb-pciutils"
   "deb-procps"
   "deb-python3-any"
-  ("deb-pci-ids" | "deb- hwdata")
+  ("deb-pci-ids" | "deb-hwdata")
 ]
 extra-source "dpdk_20.11.10-1~deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dpdk/dpdk_20.11.10-1~deb11u1_amd64.deb"

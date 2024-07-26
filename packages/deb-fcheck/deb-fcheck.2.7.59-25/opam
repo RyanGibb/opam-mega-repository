@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-file"
   "deb-nocache"
-  ("deb-bsd-mailx" | "deb- mailx")
+  ("deb-bsd-mailx" | "deb-mailx")
 ]
 extra-source "fcheck_2.7.59-25_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fcheck/fcheck_2.7.59-25_all.deb"

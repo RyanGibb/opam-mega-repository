@@ -9,7 +9,7 @@ depends: [
   "deb-libreoffice-calc"
   "deb-libreoffice-core"
   "deb-libreoffice-java-common"
-  ("deb-default-jre" | "deb- sun-java6-jre" | "deb- java6-runtime" | "deb- jre")
+  ("deb-default-jre" | "deb-sun-java6-jre" | "deb-java6-runtime" | "deb-jre")
 ]
 extra-source "libreoffice-nlpsolver_0.9+LibO6.1.5-3+deb10u7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libr/libreoffice/libreoffice-nlpsolver_0.9+LibO6.1.5-3+deb10u7_all.deb"

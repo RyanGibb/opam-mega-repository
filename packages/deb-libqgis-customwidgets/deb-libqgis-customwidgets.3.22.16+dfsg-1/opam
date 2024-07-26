@@ -12,7 +12,7 @@ depends: [
   "deb-libqt5core5a" {>= "5.15.1"}
   "deb-libstdc++6" {>= "5"}
   "deb-qttools5-dev-tools"
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "libqgis-customwidgets_3.22.16+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qgis/libqgis-customwidgets_3.22.16+dfsg-1_amd64.deb"

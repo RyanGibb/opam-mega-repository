@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-kakasi-ffi"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-kakasi-ffi_1.0.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-kakasi-ffi/ruby-kakasi-ffi_1.0.2-2_amd64.deb"

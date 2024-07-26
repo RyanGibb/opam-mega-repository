@@ -31,7 +31,7 @@ depends: [
   "deb-libxpm4"
   "deb-libxt6"
   "deb-libxv1"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "aiscm_0.22.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/aiscm/aiscm_0.22.1-1_amd64.deb"

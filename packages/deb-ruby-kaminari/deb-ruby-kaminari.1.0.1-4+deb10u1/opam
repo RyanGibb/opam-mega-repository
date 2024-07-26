@@ -10,7 +10,7 @@ depends: [
   "deb-ruby-kaminari-actionview"
   "deb-ruby-kaminari-activerecord"
   "deb-ruby-kaminari-core"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-kaminari_1.0.1-4+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-kaminari/ruby-kaminari_1.0.1-4+deb10u1_all.deb"

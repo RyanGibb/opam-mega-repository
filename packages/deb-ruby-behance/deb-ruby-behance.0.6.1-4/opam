@@ -11,7 +11,7 @@ depends: [
   "deb-ruby-faraday-middleware" {>= "1.0.0"}
   "deb-ruby-rspec"
   "deb-ruby-webmock"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-behance_0.6.1-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-behance/ruby-behance_0.6.1-4_all.deb"

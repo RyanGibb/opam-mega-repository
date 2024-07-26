@@ -43,7 +43,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libxml2" {>= "2.7.4"}
   "deb-libxslt1-1" {>= "1.1.25"}
-  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb-libqt5gui5-gles" {>= "5.15.2~"})
 ]
 extra-source "kio_5.103.0-1+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kio/kio_5.103.0-1+deb12u1_amd64.deb"

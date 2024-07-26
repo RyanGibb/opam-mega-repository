@@ -8,8 +8,8 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.34"}
   "deb-libruby3-1" {>= "3.1.2"}
-  ("deb-vim" {>= "2-8.1.0693-2~"} | "deb- neovim" {>= "0.2.2-1~"})
-  ("deb-vim-nox" | "deb- vim-ruby")
+  ("deb-vim" {>= "2-8.1.0693-2~"} | "deb-neovim" {>= "0.2.2-1~"})
+  ("deb-vim-nox" | "deb-vim-ruby")
 ]
 extra-source "vim-command-t_5.0.5-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/vim-command-t/vim-command-t_5.0.5-1+b1_amd64.deb"

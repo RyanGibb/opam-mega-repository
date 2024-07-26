@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r sisc"]
 ]
 depends: [
-  ("deb-openjdk-jre" | "deb- java2-runtime")
+  ("deb-openjdk-jre" | "deb-java2-runtime")
 ]
 extra-source "sisc_1.16.6-1.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sisc/sisc_1.16.6-1.2_all.deb"

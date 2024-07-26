@@ -12,9 +12,9 @@ depends: [
   "deb-python-any"
   "deb-python-dnspython"
   "deb-ucf"
-  ("deb-apache2" | "deb- httpd")
-  ("deb-cron" | "deb- cron-daemon")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-apache2" | "deb-httpd")
+  ("deb-cron" | "deb-cron-daemon")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "mailman_1:2.1.29-1+deb10u5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mailman/mailman_2.1.29-1+deb10u5_amd64.deb"

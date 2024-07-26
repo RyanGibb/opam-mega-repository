@@ -31,9 +31,9 @@ depends: [
   "deb-policykit-1"
   "deb-ukui-power-manager-common" {= "3.0.0-1"}
   "deb-upower"
-  ("deb-libqt5gui5" {>= "5.8.0"} | "deb- libqt5gui5-gles" {>= "5.8.0"})
-  ("deb-systemd" | "deb- elogind" | "deb- consolekit")
-  ("deb-ukui-notification-daemon" | "deb- notification-daemon" | "deb- mate-notification-daemon")
+  ("deb-libqt5gui5" {>= "5.8.0"} | "deb-libqt5gui5-gles" {>= "5.8.0"})
+  ("deb-systemd" | "deb-elogind" | "deb-consolekit")
+  ("deb-ukui-notification-daemon" | "deb-notification-daemon" | "deb-mate-notification-daemon")
 ]
 extra-source "ukui-power-manager_3.0.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/ukui-power-manager/ukui-power-manager_3.0.0-1_amd64.deb"

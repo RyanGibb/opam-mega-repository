@@ -16,7 +16,7 @@ depends: [
   "deb-libstdc++6" {>= "11"}
   "deb-zlib1g" {>= "1-1.1.4"}
   "deb-zynaddsubfx-data"
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "zynaddsubfx_3.0.6-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/z/zynaddsubfx/zynaddsubfx_3.0.6-5_amd64.deb"

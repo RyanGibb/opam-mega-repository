@@ -12,7 +12,7 @@ depends: [
   "deb-libreadline7" {>= "6.0"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-perl"
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 extra-source "gri_2.12.26-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gri/gri_2.12.26-1+b1_amd64.deb"

@@ -30,7 +30,7 @@ depends: [
   "deb-perl-any"
   "deb-python3"
   "deb-python3-any"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "lives-plugins_3.0.2-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lives/lives-plugins_3.0.2-1.1_amd64.deb"

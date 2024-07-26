@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r live-config"]
 ]
 depends: [
-  ("deb-live-config-systemd" | "deb- live-config-backend")
+  ("deb-live-config-systemd" | "deb-live-config-backend")
 ]
 extra-source "live-config_5.20190519_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/live-config/live-config_5.20190519_all.deb"

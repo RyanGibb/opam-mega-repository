@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libblis2" {= "0.5.1-11"}
-  ("deb-libblis-openmp-dev" | "deb- libblis-pthread-dev" | "deb- libblis-serial-dev")
+  ("deb-libblis-openmp-dev" | "deb-libblis-pthread-dev" | "deb-libblis-serial-dev")
 ]
 extra-source "libblis-dev_0.5.1-11_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/blis/libblis-dev_0.5.1-11_amd64.deb"

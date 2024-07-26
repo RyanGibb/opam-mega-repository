@@ -15,8 +15,8 @@ depends: [
   "deb-ucf" {>= "0.28"}
   "deb-xsltproc"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-apache2" | "deb- httpd-cgi")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-apache2" | "deb-httpd-cgi")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "lurker_2.3-6+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lurker/lurker_2.3-6+b1_amd64.deb"

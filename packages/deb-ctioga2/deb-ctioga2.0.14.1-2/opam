@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-tioga" {>= "1.19"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ctioga2_0.14.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/ctioga2/ctioga2_0.14.1-2_all.deb"

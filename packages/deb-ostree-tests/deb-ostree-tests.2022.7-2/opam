@@ -25,7 +25,7 @@ depends: [
   "deb-python3"
   "deb-python3-yaml"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-bsdextrautils" | "deb- bsdmainutils" {< "12"})
+  ("deb-bsdextrautils" | "deb-bsdmainutils" {< "12"})
 ]
 extra-source "ostree-tests_2022.7-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/ostree/ostree-tests_2022.7-2_amd64.deb"

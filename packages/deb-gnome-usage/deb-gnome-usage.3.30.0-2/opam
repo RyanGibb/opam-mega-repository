@@ -12,7 +12,7 @@ depends: [
   "deb-libgtk-3-0" {>= "3.20.10"}
   "deb-libgtop-2-0-11" {>= "2.34.0"}
   "deb-libpango-1-0-0" {>= "1.14.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-usage_3.30.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-usage/gnome-usage_3.30.0-2_amd64.deb"

@@ -13,7 +13,7 @@ depends: [
   "deb-python3-crypto" {>= "2.6"}
   "deb-python3-zmq" {>= "13.1.0"}
   "deb-salt-common" {= "2018.3.4+dfsg1-6+deb10u3"}
-  ("deb-python3-systemd" | "deb- sysvinit-core")
+  ("deb-python3-systemd" | "deb-sysvinit-core")
 ]
 extra-source "salt-minion_2018.3.4+dfsg1-6+deb10u3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/salt/salt-minion_2018.3.4+dfsg1-6+deb10u3_all.deb"

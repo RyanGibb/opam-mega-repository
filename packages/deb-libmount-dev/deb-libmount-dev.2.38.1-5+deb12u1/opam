@@ -9,7 +9,7 @@ depends: [
   "deb-libblkid-dev"
   "deb-libmount1" {= "2.38.1-5+deb12u1"}
   "deb-libselinux1-dev"
-  ("deb-libc6-dev" | "deb- libc-dev")
+  ("deb-libc6-dev" | "deb-libc-dev")
 ]
 extra-source "libmount-dev_2.38.1-5+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/util-linux/libmount-dev_2.38.1-5+deb12u1_amd64.deb"

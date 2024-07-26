@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-faraday-middleware"
   "deb-ruby-multi-json"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-faraday-middleware-multi-json_0.0.6-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-faraday-middleware-multi-json/ruby-faraday-middleware-multi-json_0.0.6-2_all.deb"

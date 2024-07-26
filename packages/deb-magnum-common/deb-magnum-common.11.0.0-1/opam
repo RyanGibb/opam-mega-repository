@@ -10,7 +10,7 @@ depends: [
   "deb-dbconfig-common"
   "deb-debconf"
   "deb-python3-magnum" {= "11.0.0-1"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "magnum-common_11.0.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/magnum/magnum-common_11.0.0-1_all.deb"

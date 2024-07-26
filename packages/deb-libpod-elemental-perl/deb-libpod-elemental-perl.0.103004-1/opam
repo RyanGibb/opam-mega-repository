@@ -17,7 +17,7 @@ depends: [
   "deb-libsub-exporter-formethods-perl"
   "deb-libsub-exporter-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.19.5"} | "deb- libscalar-list-utils-perl" {>= "1-1.33"})
+  ("deb-perl" {>= "5.19.5"} | "deb-libscalar-list-utils-perl" {>= "1-1.33"})
 ]
 extra-source "libpod-elemental-perl_0.103004-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libp/libpod-elemental-perl/libpod-elemental-perl_0.103004-1_all.deb"

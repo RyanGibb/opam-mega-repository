@@ -15,7 +15,7 @@ depends: [
   "deb-libstdc++6" {>= "4.1.1"}
   "deb-libx11-6"
   "deb-libxcb1"
-  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb-libqt5gui5-gles" {>= "5.7.0"})
 ]
 extra-source "libdtkwm5_2.0.12-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dtkwm/libdtkwm5_2.0.12-3_amd64.deb"

@@ -13,9 +13,9 @@ depends: [
   "deb-libgtk-3-0" {>= "3.9.12"}
   "deb-ssh-askpass"
   "deb-sudo"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-debconf" | "deb- debconf-2-0")
-  ("deb-xterm" | "deb- x-terminal-emulator")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-debconf" | "deb-debconf-2-0")
+  ("deb-xterm" | "deb-x-terminal-emulator")
 ]
 extra-source "gkdebconf_2.1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gkdebconf/gkdebconf_2.1.1_amd64.deb"

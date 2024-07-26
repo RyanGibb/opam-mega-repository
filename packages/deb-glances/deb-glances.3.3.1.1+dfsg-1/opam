@@ -13,7 +13,7 @@ depends: [
   "deb-python3-pkg-resources"
   "deb-python3-psutil" {>= "2.0.0"}
   "deb-sysvinit-utils" {>= "3.05-4~"}
-  ("deb-python3-ujson" | "deb- python3" {< "3.7"})
+  ("deb-python3-ujson" | "deb-python3" {< "3.7"})
 ]
 extra-source "glances_3.3.1.1+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/glances/glances_3.3.1.1+dfsg-1_all.deb"

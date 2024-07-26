@@ -11,7 +11,7 @@ depends: [
   "deb-debconf"
   "deb-lsb-base" {>= "3.0.6"}
   "deb-python-q-text-as-data"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "congress-server_8.0.0+dfsg1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/congress/congress-server_8.0.0+dfsg1-1_all.deb"

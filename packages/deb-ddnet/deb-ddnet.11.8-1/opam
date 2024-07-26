@@ -23,7 +23,7 @@ depends: [
   "deb-libwebsockets8" {>= "1.6.0"}
   "deb-libx11-6"
   "deb-zlib1g" {>= "1-1.2.0"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "ddnet_11.8-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/ddnet/ddnet_11.8-1_amd64.deb"

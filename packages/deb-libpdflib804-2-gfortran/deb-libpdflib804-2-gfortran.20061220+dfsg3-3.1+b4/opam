@@ -14,7 +14,7 @@ depends: [
   "deb-libpacklib1-gfortran"
   "deb-libquadmath0" {>= "4.6"}
   "deb-montecarlo-base"
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libpdflib804-2-gfortran_20061220+dfsg3-3.1+b4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mclibs/libpdflib804-2-gfortran_20061220+dfsg3-3.1+b4_amd64.deb"

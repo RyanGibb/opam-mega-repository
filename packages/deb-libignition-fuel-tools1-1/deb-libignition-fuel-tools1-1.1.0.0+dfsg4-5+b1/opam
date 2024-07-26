@@ -21,7 +21,7 @@ depends: [
   "deb-libyaml-0-2"
   "deb-libzip4" {>= "0.10"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libavcodec58" | "deb- libavcodec-extra58")
+  ("deb-libavcodec58" | "deb-libavcodec-extra58")
 ]
 extra-source "libignition-fuel-tools1-1_1.0.0+dfsg4-5+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/ignition-fuel-tools/libignition-fuel-tools1-1_1.0.0+dfsg4-5+b1_amd64.deb"

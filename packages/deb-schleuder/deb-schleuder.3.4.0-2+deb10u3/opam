@@ -20,9 +20,9 @@ depends: [
   "deb-ruby-sqlite3"
   "deb-ruby-thor"
   "deb-thin"
-  ("deb-cron" | "deb- cron-daemon")
-  ("deb-default-mta" | "deb- postfix" | "deb- mail-transport-agent")
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-cron" | "deb-cron-daemon")
+  ("deb-default-mta" | "deb-postfix" | "deb-mail-transport-agent")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "schleuder_3.4.0-2+deb10u3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/schleuder/schleuder_3.4.0-2+deb10u3_all.deb"

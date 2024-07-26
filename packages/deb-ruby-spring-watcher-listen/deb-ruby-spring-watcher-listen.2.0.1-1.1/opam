@@ -10,7 +10,7 @@ depends: [
   "deb-ruby-listen" {>= "2.7"}
   "deb-ruby-spring" {< "3.0"}
   "deb-ruby-spring" {>= "1.2"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-spring-watcher-listen_2.0.1-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-spring-watcher-listen/ruby-spring-watcher-listen_2.0.1-1.1_all.deb"

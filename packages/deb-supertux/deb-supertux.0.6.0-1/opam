@@ -27,7 +27,7 @@ depends: [
   "deb-libvorbisfile3" {>= "1.1.2"}
   "deb-supertux-data" {= "0.6.0-1"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "supertux_0.6.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/supertux/supertux_0.6.0-1_amd64.deb"

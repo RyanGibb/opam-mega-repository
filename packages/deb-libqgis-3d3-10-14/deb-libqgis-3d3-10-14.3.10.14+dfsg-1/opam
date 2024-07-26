@@ -24,7 +24,7 @@ depends: [
   "deb-qt3d-defaultgeometryloader-plugin"
   "deb-qt3d-gltfsceneio-plugin"
   "deb-qt3d-scene2d-plugin"
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "libqgis-3d3.10.14_3.10.14+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qgis/libqgis-3d3.10.14_3.10.14+dfsg-1_amd64.deb"

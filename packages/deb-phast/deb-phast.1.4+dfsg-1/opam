@@ -9,8 +9,8 @@ depends: [
   "deb-libc6" {>= "2.23"}
   "deb-libpcre3"
   "deb-libtmglib3"
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "phast_1.4+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/phast/phast_1.4+dfsg-1_amd64.deb"

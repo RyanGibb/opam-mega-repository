@@ -13,7 +13,7 @@ depends: [
   "deb-libqt5positioningquick5" {= "5.15.2+dfsg-2"}
   "deb-libqt5qml5" {>= "5.15.2+dfsg~"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5quick5" {>= "5.15.2+dfsg~"} | "deb- libqt5quick5-gles" {>= "5.15.2+dfsg~"})
+  ("deb-libqt5quick5" {>= "5.15.2+dfsg~"} | "deb-libqt5quick5-gles" {>= "5.15.2+dfsg~"})
 ]
 extra-source "qml-module-qtlocation_5.15.2+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtlocation-opensource-src/qml-module-qtlocation_5.15.2+dfsg-2_amd64.deb"

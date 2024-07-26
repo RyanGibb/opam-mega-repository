@@ -14,7 +14,7 @@ depends: [
   "deb-ruby-minitest" {>= "5.1"}
   "deb-ruby-tzinfo" {< "2.0"}
   "deb-ruby-tzinfo" {>= "1.1"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-activesupport_2:5.2.2.1+dfsg-1+deb10u3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rails/ruby-activesupport_5.2.2.1+dfsg-1+deb10u3_all.deb"

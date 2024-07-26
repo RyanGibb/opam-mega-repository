@@ -21,7 +21,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.15.1"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-libudisks2-qt5-0" {>= "5.0.6"}
-  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb-libqt5gui5-gles" {>= "5.11.0~rc1"})
 ]
 extra-source "deepin-album_5.9.1+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/deepin-album/deepin-album_5.9.1+dfsg-1_amd64.deb"

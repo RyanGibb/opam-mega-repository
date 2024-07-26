@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.3"}
   "deb-libpam0g" {>= "0.99.7.1"}
-  ("deb-openbsd-inetd" | "deb- inet-superserver")
+  ("deb-openbsd-inetd" | "deb-inet-superserver")
 ]
 extra-source "rsh-server_0.17-20_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/netkit-rsh/rsh-server_0.17-20_amd64.deb"

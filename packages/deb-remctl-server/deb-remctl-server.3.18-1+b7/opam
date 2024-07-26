@@ -13,7 +13,7 @@ depends: [
   "deb-libpcre2-8-0" {>= "10.22"}
   "deb-libsystemd0"
   "deb-netbase" {>= "4.31"}
-  ("deb-update-inetd" | "deb- inet-superserver")
+  ("deb-update-inetd" | "deb-inet-superserver")
 ]
 extra-source "remctl-server_3.18-1+b7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/remctl/remctl-server_3.18-1+b7_amd64.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.14"}
-  ("deb-python3-mutagen" | "deb- id3v2")
+  ("deb-python3-mutagen" | "deb-id3v2")
 ]
 extra-source "cuetools_1.4.1-0.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cuetools/cuetools_1.4.1-0.2_amd64.deb"

@@ -13,8 +13,8 @@ depends: [
   "deb-libqt5core5a" {>= "5.15.1"}
   "deb-libqt5qml5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "4.1.1"}
-  ("deb-libqt5gui5" {>= "5.14.0~"} | "deb- libqt5gui5-gles" {>= "5.14.0~"})
-  ("deb-libqt5quick5" {>= "5.0.2"} | "deb- libqt5quick5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.14.0~"} | "deb-libqt5gui5-gles" {>= "5.14.0~"})
+  ("deb-libqt5quick5" {>= "5.0.2"} | "deb-libqt5quick5-gles" {>= "5.0.2"})
 ]
 extra-source "qml-module-org-kde-activities_5.78.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kactivities-kf5/qml-module-org-kde-activities_5.78.0-2_amd64.deb"

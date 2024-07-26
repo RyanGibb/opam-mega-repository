@@ -14,8 +14,8 @@ depends: [
   "deb-r-cran-irlba"
   "deb-r-cran-rcpp" {>= "0.12.15"}
   "deb-r-cran-rcpparmadillo"
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "r-cran-mixsqp_0.3-48-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-mixsqp/r-cran-mixsqp_0.3-48-1_amd64.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-liburi-perl"
-  ("deb-lynx" | "deb- www-browser")
+  ("deb-lynx" | "deb-www-browser")
 ]
 extra-source "wikipedia2text_0.14-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/wikipedia2text/wikipedia2text_0.14-4_all.deb"

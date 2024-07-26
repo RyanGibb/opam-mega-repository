@@ -23,7 +23,7 @@ depends: [
   "deb-libswscale5" {>= "7-4.0"}
   "deb-libtiff5" {>= "4.0.3"}
   "deb-lynkeos-app-common" {= "3.4+dfsg1-2"}
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "lynkeos.app_3.4+dfsg1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lynkeos.app/lynkeos.app_3.4+dfsg1-2_amd64.deb"

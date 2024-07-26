@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl"
-  ("deb-perl" {>= "5.13.9"} | "deb- libversion-perl" {>= "1-0.8800"})
+  ("deb-perl" {>= "5.13.9"} | "deb-libversion-perl" {>= "1-0.8800"})
 ]
 extra-source "libcpan-meta-requirements-perl_2.140-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libc/libcpan-meta-requirements-perl/libcpan-meta-requirements-perl_2.140-1_all.deb"

@@ -11,7 +11,7 @@ depends: [
   "deb-perl-any"
   "deb-sgmlspl"
   "deb-texlive-formats-extra"
-  ("deb-lynx" | "deb- links" | "deb- links2" | "deb- w3m")
+  ("deb-lynx" | "deb-links" | "deb-links2" | "deb-w3m")
 ]
 extra-source "docbook-utils_0.6.14-3.4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/docbook-utils/docbook-utils_0.6.14-3.4_all.deb"

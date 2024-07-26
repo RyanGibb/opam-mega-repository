@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r brasero-common"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "brasero-common_3.12.2-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/brasero/brasero-common_3.12.2-6_all.deb"

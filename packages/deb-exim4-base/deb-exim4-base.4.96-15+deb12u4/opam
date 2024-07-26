@@ -10,9 +10,9 @@ depends: [
   "deb-libc6" {>= "2.34"}
   "deb-libdb5-3"
   "deb-netbase"
-  ("deb-cron" | "deb- cron-daemon" | "deb- anacron" | "deb- systemd-sysv")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-exim4-config" {>= "4.94"} | "deb- exim4-config-2")
+  ("deb-cron" | "deb-cron-daemon" | "deb-anacron" | "deb-systemd-sysv")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-exim4-config" {>= "4.94"} | "deb-exim4-config-2")
 ]
 conflicts: [
   "deb-exim"

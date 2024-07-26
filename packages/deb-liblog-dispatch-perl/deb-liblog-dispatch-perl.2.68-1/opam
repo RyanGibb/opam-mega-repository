@@ -14,7 +14,7 @@ depends: [
   "deb-libspecio-perl"
   "deb-libtry-tiny-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.15.0"} | "deb- libsys-syslog-perl")
+  ("deb-perl" {>= "5.15.0"} | "deb-libsys-syslog-perl")
 ]
 extra-source "liblog-dispatch-perl_2.68-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libl/liblog-dispatch-perl/liblog-dispatch-perl_2.68-1_all.deb"

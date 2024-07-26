@@ -30,7 +30,7 @@ depends: [
   "deb-libumfpack5" {>= "1-4.5.2"}
   "deb-libunwind8"
   "deb-libutf8proc2" {>= "2.1"}
-  ("deb-libopenblas-dev" | "deb- libatlas-base-dev" | "deb- libmkl-dev")
+  ("deb-libopenblas-dev" | "deb-libatlas-base-dev" | "deb-libmkl-dev")
 ]
 extra-source "libjulia1_1.0.3+dfsg-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/julia/libjulia1_1.0.3+dfsg-4_amd64.deb"

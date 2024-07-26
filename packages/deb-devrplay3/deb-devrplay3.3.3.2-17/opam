@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.2.5"}
   "deb-librplay3" {>= "3.3.2-2"}
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 extra-source "devrplay3_3.3.2-17_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rplay/devrplay3_3.3.2-17_amd64.deb"

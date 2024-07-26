@@ -9,7 +9,7 @@ depends: [
   "deb-ruby-colorize"
   "deb-ruby-net-scp" {>= "1.1.2"}
   "deb-ruby-net-ssh" {>= "2.8.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-sshkit_1.20.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-sshkit/ruby-sshkit_1.20.0-2_all.deb"

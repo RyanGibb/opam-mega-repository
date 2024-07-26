@@ -13,7 +13,7 @@ depends: [
   "deb-libqt5qml5" {>= "5.15.2+dfsg~"}
   "deb-libqt5webkit5" {>= "5.212.0~alpha3"}
   "deb-libstdc++6" {>= "4.1.1"}
-  ("deb-libqt5quick5" {>= "5.15.2+dfsg~"} | "deb- libqt5quick5-gles" {>= "5.15.2+dfsg~"})
+  ("deb-libqt5quick5" {>= "5.15.2+dfsg~"} | "deb-libqt5quick5-gles" {>= "5.15.2+dfsg~"})
 ]
 extra-source "qml-module-qtwebkit_5.212.0~alpha4-11_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtwebkit-opensource-src/qml-module-qtwebkit_5.212.0~alpha4-11_amd64.deb"

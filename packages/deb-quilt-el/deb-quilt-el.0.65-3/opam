@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-quilt" {= "0.65-3"}
-  ("deb-emacs" | "deb- emacsen")
+  ("deb-emacs" | "deb-emacsen")
 ]
 extra-source "quilt-el_0.65-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/quilt/quilt-el_0.65-3_all.deb"

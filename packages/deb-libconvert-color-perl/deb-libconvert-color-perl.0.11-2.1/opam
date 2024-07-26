@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-liblist-utilsby-perl"
   "deb-perl-any"
-  ("deb-libmodule-pluggable-perl" | "deb- perl" {< "5.17.0"})
+  ("deb-libmodule-pluggable-perl" | "deb-perl" {< "5.17.0"})
 ]
 extra-source "libconvert-color-perl_0.11-2.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libc/libconvert-color-perl/libconvert-color-perl_0.11-2.1_all.deb"

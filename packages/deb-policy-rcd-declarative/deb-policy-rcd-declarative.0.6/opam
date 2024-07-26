@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libre-engine-re2-perl"
   "deb-perl-any"
-  ("deb-policy-rcd-declarative-allow-all" | "deb- policy-rcd-default-policy")
+  ("deb-policy-rcd-declarative-allow-all" | "deb-policy-rcd-default-policy")
 ]
 extra-source "policy-rcd-declarative_0.6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/policy-rcd-declarative/policy-rcd-declarative_0.6_all.deb"

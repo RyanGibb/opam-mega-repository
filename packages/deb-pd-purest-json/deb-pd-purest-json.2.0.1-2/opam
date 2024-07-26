@@ -10,7 +10,7 @@ depends: [
   "deb-libcurl3-gnutls" {>= "7.66.0"}
   "deb-libjson-c5" {>= "0.15"}
   "deb-liboauth0" {>= "0.9.1"}
-  ("deb-puredata" | "deb- pd")
+  ("deb-puredata" | "deb-pd")
 ]
 extra-source "pd-purest-json_2.0.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pd-purest-json/pd-purest-json_2.0.1-2_amd64.deb"

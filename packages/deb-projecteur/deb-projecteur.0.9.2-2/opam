@@ -18,8 +18,8 @@ depends: [
   "deb-qml-module-qtgraphicaleffects"
   "deb-qml-module-qtquick-window2"
   "deb-qml-module-qtquick2"
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
-  ("deb-libqt5quick5" {>= "5.6.1"} | "deb- libqt5quick5-gles" {>= "5.6.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5quick5" {>= "5.6.1"} | "deb-libqt5quick5-gles" {>= "5.6.1"})
 ]
 extra-source "projecteur_0.9.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/projecteur/projecteur_0.9.2-2_amd64.deb"

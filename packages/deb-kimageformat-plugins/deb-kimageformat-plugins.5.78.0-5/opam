@@ -15,7 +15,7 @@ depends: [
   "deb-libqt5core5a" {>= "5.15.1"}
   "deb-libqt5printsupport5" {>= "5.14.0~"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "kimageformat-plugins_5.78.0-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kimageformats/kimageformat-plugins_5.78.0-5_amd64.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libdokujclient-java"
-  ("deb-default-jre-headless" | "deb- java6-runtime-headless")
+  ("deb-default-jre-headless" | "deb-java6-runtime-headless")
 ]
 extra-source "dokujclient_3.9.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dokujclient/dokujclient_3.9.1-1_all.deb"

@@ -18,8 +18,8 @@ depends: [
   "deb-libtracecmd1" {>= "3.0.3"}
   "deb-libtraceevent1" {>= "5.9~rc1"}
   "deb-libtracefs1" {>= "0.0~git20201221.74d7273"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
-  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+  ("deb-libglu1-mesa" | "deb-libglu1")
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb-libqt5gui5-gles" {>= "5.11.0~rc1"})
 ]
 extra-source "libkshark2_2.2.1-1~deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kernelshark/libkshark2_2.2.1-1~deb12u1_amd64.deb"

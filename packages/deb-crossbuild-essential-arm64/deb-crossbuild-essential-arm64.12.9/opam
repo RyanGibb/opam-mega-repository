@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-dpkg-cross"
-  ("deb-g++-aarch64-linux-gnu" {>= "4-10.2"} | "deb- g++-arm64")
-  ("deb-gcc-aarch64-linux-gnu" {>= "4-10.2"} | "deb- gcc-arm64")
+  ("deb-g++-aarch64-linux-gnu" {>= "4-10.2"} | "deb-g++-arm64")
+  ("deb-gcc-aarch64-linux-gnu" {>= "4-10.2"} | "deb-gcc-arm64")
 ]
 extra-source "crossbuild-essential-arm64_12.9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/build-essential/crossbuild-essential-arm64_12.9_all.deb"

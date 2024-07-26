@@ -9,8 +9,8 @@ depends: [
   "deb-ruby-sqlite3"
   "deb-sisu" {= "7.1.11-1"}
   "deb-sqlite3"
-  ("deb-ruby" | "deb- ruby-interpreter")
-  ("deb-ruby-fcgi" | "deb- libfcgi-ruby")
+  ("deb-ruby" | "deb-ruby-interpreter")
+  ("deb-ruby-fcgi" | "deb-libfcgi-ruby")
 ]
 extra-source "sisu-sqlite_7.1.11-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sisu/sisu-sqlite_7.1.11-1_all.deb"

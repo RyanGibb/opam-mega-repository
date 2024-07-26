@@ -16,7 +16,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libudev1" {>= "183"}
   "deb-qastools-common"
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "qasmixer_0.23.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qastools/qasmixer_0.23.0-1_amd64.deb"

@@ -10,7 +10,7 @@ depends: [
   "deb-graphicsmagick"
   "deb-gsfonts"
   "deb-libgraphics-magick-perl"
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 extra-source "webmagick_2.02-11_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/webmagick/webmagick_2.02-11_all.deb"

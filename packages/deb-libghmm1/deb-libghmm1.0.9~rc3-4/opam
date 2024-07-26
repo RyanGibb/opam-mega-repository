@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.29"}
   "deb-libxml2" {>= "2.7.4"}
   "deb-python3"
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libghmm1_0.9~rc3-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/ghmm/libghmm1_0.9~rc3-4_amd64.deb"

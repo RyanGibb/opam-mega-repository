@@ -40,8 +40,8 @@ depends: [
   "deb-libtrilinos-zoltan12" {>= "12.18.1"}
   "deb-libumfpack5" {>= "1-4.5.2"}
   "deb-zlib1g" {>= "1-1.2.0"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libdeal.ii-9.2.0_9.2.0-3+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/deal.ii/libdeal.ii-9.2.0_9.2.0-3+b2_amd64.deb"

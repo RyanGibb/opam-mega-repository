@@ -16,7 +16,7 @@ depends: [
   "deb-libqt5printsupport5" {>= "5.0.2"}
   "deb-libqt5widgets5" {>= "5.10.0"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb-libqt5gui5-gles" {>= "5.11.0~rc1"})
 ]
 extra-source "udav_8.0.1-4+b4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mathgl/udav_8.0.1-4+b4_amd64.deb"

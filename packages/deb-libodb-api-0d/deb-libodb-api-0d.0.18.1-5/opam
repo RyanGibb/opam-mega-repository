@@ -23,8 +23,8 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libtinfo6" {>= "6"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libodb-api-0d_0.18.1-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/odb-api/libodb-api-0d_0.18.1-5_amd64.deb"

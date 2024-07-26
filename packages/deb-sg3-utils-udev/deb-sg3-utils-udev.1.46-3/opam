@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-initramfs-tools-core"
   "deb-sg3-utils"
-  ("deb-initramfs-tools" | "deb- linux-initramfs-tool")
+  ("deb-initramfs-tools" | "deb-linux-initramfs-tool")
 ]
 extra-source "sg3-utils-udev_1.46-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sg3-utils/sg3-utils-udev_1.46-3_all.deb"

@@ -16,7 +16,7 @@ depends: [
   "deb-libsecret-1-0" {>= "0.7"}
   "deb-libsoup2-4-1" {>= "2.4.0"}
   "deb-libxml2" {>= "2.6.27"}
-  ("deb-emacs" | "deb- emacsen")
+  ("deb-emacs" | "deb-emacsen")
 ]
 extra-source "eweouz_0.11+b5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/eweouz/eweouz_0.11+b5_amd64.deb"

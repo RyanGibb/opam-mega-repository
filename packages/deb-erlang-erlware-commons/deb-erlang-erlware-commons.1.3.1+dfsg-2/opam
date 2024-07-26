@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-erlang-crypto" {>= "1-21.2.4+dfsg"}
   "deb-erlang-syntax-tools" {>= "1-21.2.4+dfsg"}
-  ("deb-erlang-base" {>= "1-21.2.4+dfsg"} | "deb- erlang-base-hipe" {>= "1-21.2.4+dfsg"})
+  ("deb-erlang-base" {>= "1-21.2.4+dfsg"} | "deb-erlang-base-hipe" {>= "1-21.2.4+dfsg"})
 ]
 extra-source "erlang-erlware-commons_1.3.1+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/erlang-erlware-commons/erlang-erlware-commons_1.3.1+dfsg-2_amd64.deb"

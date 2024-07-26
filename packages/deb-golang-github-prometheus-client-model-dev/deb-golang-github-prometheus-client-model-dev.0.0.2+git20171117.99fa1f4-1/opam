@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r golang-github-prometheus-client-model-dev"]
 ]
 depends: [
-  ("deb-golang-goprotobuf-dev" | "deb- golang-github-golang-protobuf-dev")
+  ("deb-golang-goprotobuf-dev" | "deb-golang-github-golang-protobuf-dev")
 ]
 extra-source "golang-github-prometheus-client-model-dev_0.0.2+git20171117.99fa1f4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/golang-github-prometheus-client-model/golang-github-prometheus-client-model-dev_0.0.2+git20171117.99fa1f4-1_all.deb"

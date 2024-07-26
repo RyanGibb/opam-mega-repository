@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-bilibop-common" {= "0.6.3"}
   "deb-udev" {>= "242-6"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 conflicts: [
   "deb-bilibop-udev"

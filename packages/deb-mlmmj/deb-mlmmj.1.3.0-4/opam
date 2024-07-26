@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.4"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-default-mta" | "deb- postfix" | "deb- exim4" | "deb- mail-transport-agent")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-default-mta" | "deb-postfix" | "deb-exim4" | "deb-mail-transport-agent")
 ]
 extra-source "mlmmj_1.3.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mlmmj/mlmmj_1.3.0-4_amd64.deb"

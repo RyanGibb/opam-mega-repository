@@ -11,7 +11,7 @@ depends: [
   "deb-perl" {< "5.32.2~"}
   "deb-perl" {>= "5.32.1~"}
   "deb-perl-base"
-  ("deb-libb-debug-perl" | "deb- perl" {< "5.27.3"})
+  ("deb-libb-debug-perl" | "deb-perl" {< "5.27.3"})
 ]
 extra-source "libdevel-cover-perl_1.36-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libd/libdevel-cover-perl/libdevel-cover-perl_1.36-2+b1_amd64.deb"

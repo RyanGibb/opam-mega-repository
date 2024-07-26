@@ -49,7 +49,7 @@ depends: [
   "deb-vinagre" {>= "3.22"}
   "deb-vino" {>= "3.22"}
   "deb-xdg-user-dirs-gtk"
-  ("deb-shotwell" | "deb- gnome-photos" {>= "3.30"})
+  ("deb-shotwell" | "deb-gnome-photos" {>= "3.30"})
 ]
 extra-source "gnome_1:3.30+1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/meta-gnome3/gnome_3.30+1_amd64.deb"

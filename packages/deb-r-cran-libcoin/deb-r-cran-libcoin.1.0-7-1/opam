@@ -10,7 +10,7 @@ depends: [
   "deb-r-base-core"
   "deb-r-base-core" {>= "4.0.3-1"}
   "deb-r-cran-mvtnorm"
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "r-cran-libcoin_1.0-7-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-libcoin/r-cran-libcoin_1.0-7-1_amd64.deb"

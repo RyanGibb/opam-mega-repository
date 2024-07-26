@@ -18,7 +18,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libtiff6" {>= "4.0.3"}
   "deb-libwcs7" {>= "4.8.2"}
-  ("deb-libqt5gui5" {>= "5.8.0"} | "deb- libqt5gui5-gles" {>= "5.8.0"})
+  ("deb-libqt5gui5" {>= "5.8.0"} | "deb-libqt5gui5-gles" {>= "5.8.0"})
 ]
 conflicts: [
   "deb-suckless-tools"

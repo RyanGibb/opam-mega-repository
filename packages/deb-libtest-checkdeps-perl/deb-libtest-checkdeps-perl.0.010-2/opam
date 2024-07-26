@@ -8,8 +8,8 @@ remove: [
 depends: [
   "deb-libcpan-meta-check-perl" {>= "0.007"}
   "deb-perl"
-  ("deb-perl" {>= "5.14"} | "deb- libcpan-meta-perl" {>= "2.120920"})
-  ("deb-perl" {>= "5.14"} | "deb- libmodule-metatadata-perl")
+  ("deb-perl" {>= "5.14"} | "deb-libcpan-meta-perl" {>= "2.120920"})
+  ("deb-perl" {>= "5.14"} | "deb-libmodule-metatadata-perl")
 ]
 extra-source "libtest-checkdeps-perl_0.010-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libt/libtest-checkdeps-perl/libtest-checkdeps-perl_0.010-2_all.deb"

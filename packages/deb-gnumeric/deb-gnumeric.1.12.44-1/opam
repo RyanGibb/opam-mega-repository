@@ -22,7 +22,7 @@ depends: [
   "deb-procps"
   "deb-pxlib1" {>= "0.5.0"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "gnumeric_1.12.44-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnumeric/gnumeric_1.12.44-1_amd64.deb"

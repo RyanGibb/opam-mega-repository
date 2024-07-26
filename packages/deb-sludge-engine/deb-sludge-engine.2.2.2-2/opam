@@ -21,7 +21,7 @@ depends: [
   "deb-libvpx5" {>= "1.6.0"}
   "deb-xdg-utils"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "sludge-engine_2.2.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sludge/sludge-engine_2.2.2-2_amd64.deb"

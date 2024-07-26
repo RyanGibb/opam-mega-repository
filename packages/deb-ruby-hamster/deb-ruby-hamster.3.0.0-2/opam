@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-concurrent" {>= "1.0.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-hamster_3.0.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-hamster/ruby-hamster_3.0.0-2_all.deb"

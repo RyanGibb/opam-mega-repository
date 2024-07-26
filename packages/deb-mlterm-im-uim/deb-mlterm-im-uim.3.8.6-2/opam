@@ -10,7 +10,7 @@ depends: [
   "deb-libuim-scm0" {>= "1-1.5.7"}
   "deb-libuim8" {>= "1-1.5.7"}
   "deb-mlterm-common" {= "3.8.6-2"}
-  ("deb-mlterm" {= "3.8.6-2"} | "deb- mlterm-tiny" {= "3.8.6-2"})
+  ("deb-mlterm" {= "3.8.6-2"} | "deb-mlterm-tiny" {= "3.8.6-2"})
 ]
 extra-source "mlterm-im-uim_3.8.6-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mlterm/mlterm-im-uim_3.8.6-2_amd64.deb"

@@ -12,8 +12,8 @@ depends: [
   "deb-liburi-perl"
   "deb-perl-any"
   "deb-sgml-base" {>= "1.28"}
-  ("deb-libcatalyst-plugin-authentication-perl" | "deb- catalyst-modules")
-  ("deb-libossp-uuid-perl" | "deb- libdata-uuid-perl")
+  ("deb-libcatalyst-plugin-authentication-perl" | "deb-catalyst-modules")
+  ("deb-libossp-uuid-perl" | "deb-libdata-uuid-perl")
 ]
 extra-source "libcatalyst-authentication-credential-http-perl_1.018-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libc/libcatalyst-authentication-credential-http-perl/libcatalyst-authentication-credential-http-perl_1.018-2_all.deb"

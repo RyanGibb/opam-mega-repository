@@ -10,7 +10,7 @@ depends: [
   "deb-libosmpbf-java"
   "deb-libprotobuf-java"
   "deb-libxpp3-java"
-  ("deb-default-jre-headless" {>= "2-1.8"} | "deb- java8-runtime-headless")
+  ("deb-default-jre-headless" {>= "2-1.8"} | "deb-java8-runtime-headless")
 ]
 extra-source "mkgmap-splitter_0.0.0+svn653-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mkgmap-splitter/mkgmap-splitter_0.0.0+svn653-1_all.deb"

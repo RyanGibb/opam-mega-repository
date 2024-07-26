@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r libplank-common"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "libplank-common_0.11.89-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/plank/libplank-common_0.11.89-4_all.deb"

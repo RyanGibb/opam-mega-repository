@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libglib2-0-bin"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "mate-window-applets-common_21.04.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mate-window-applets/mate-window-applets-common_21.04.0-1_all.deb"

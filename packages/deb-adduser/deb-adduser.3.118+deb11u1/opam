@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-passwd"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "adduser_3.118+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/adduser/adduser_3.118+deb11u1_all.deb"

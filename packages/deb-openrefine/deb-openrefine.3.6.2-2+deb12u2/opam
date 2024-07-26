@@ -57,7 +57,7 @@ depends: [
   "deb-libxerial-sqlite-jdbc-java" {>= "3.40.1.0"}
   "deb-procps"
   "deb-velocity" {>= "1.7"}
-  ("deb-default-jre" | "deb- java9-runtime")
+  ("deb-default-jre" | "deb-java9-runtime")
 ]
 extra-source "openrefine_3.6.2-2+deb12u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/openrefine/openrefine_3.6.2-2+deb12u2_all.deb"

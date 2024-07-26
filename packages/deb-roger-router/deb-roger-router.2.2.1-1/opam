@@ -24,7 +24,7 @@ depends: [
   "deb-librm0"
   "deb-libsoup2-4-1" {>= "2.4.0"}
   "deb-libtiff5" {>= "4.0.3"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "roger-router_2.2.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/roger-router/roger-router_2.2.1-1_amd64.deb"

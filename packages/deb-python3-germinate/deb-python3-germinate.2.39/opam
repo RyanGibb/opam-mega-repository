@@ -10,7 +10,7 @@ depends: [
   "deb-python3-apt" {>= "0.7.93.2~"}
   "deb-python3-pkg-resources"
   "deb-python3-six"
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-germinate_2.39_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/germinate/python3-germinate_2.39_all.deb"

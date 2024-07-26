@@ -13,7 +13,7 @@ depends: [
   "deb-libsoup2-4-1" {>= "2.4.0"}
   "deb-lsb-base"
   "deb-ucf"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "mpdscribble_0.22-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mpdscribble/mpdscribble_0.22-6_amd64.deb"

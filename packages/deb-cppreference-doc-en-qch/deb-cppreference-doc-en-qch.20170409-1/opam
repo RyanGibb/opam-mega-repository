@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-fonts-dejavu-core"
-  ("deb-qt4-dev-tools" | "deb- qttools5-dev-tools")
+  ("deb-qt4-dev-tools" | "deb-qttools5-dev-tools")
 ]
 extra-source "cppreference-doc-en-qch_20170409-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cppreference-doc/cppreference-doc-en-qch_20170409-1_all.deb"

@@ -15,7 +15,7 @@ depends: [
   "deb-libglib2-0-0" {>= "2.24.0"}
   "deb-libgtk2-0-0" {>= "2.8.0"}
   "deb-libgtkglext1"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "g3dviewer_0.2.99.5~svn130-13_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/g3dviewer/g3dviewer_0.2.99.5~svn130-13_amd64.deb"

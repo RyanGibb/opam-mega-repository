@@ -19,8 +19,8 @@ depends: [
   "deb-libvorbis0a" {>= "1.1.2"}
   "deb-libvorbisfile3" {>= "1.1.2"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-alsaplayer-alsa" | "deb- alsaplayer-output")
-  ("deb-alsaplayer-gtk" | "deb- alsaplayer-interface")
+  ("deb-alsaplayer-alsa" | "deb-alsaplayer-output")
+  ("deb-alsaplayer-gtk" | "deb-alsaplayer-interface")
 ]
 extra-source "alsaplayer-common_0.99.81-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/alsaplayer/alsaplayer-common_0.99.81-2_amd64.deb"

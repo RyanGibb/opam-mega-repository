@@ -12,7 +12,7 @@ depends: [
   "deb-libncurses6" {>= "6"}
   "deb-libsndfile1" {>= "1.0.20"}
   "deb-libtinfo6" {>= "6"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "meterec_0.9.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/meterec/meterec_0.9.3-1_amd64.deb"

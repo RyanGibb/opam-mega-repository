@@ -21,7 +21,7 @@ depends: [
   "deb-libvncserver1" {>= "0.9.13"}
   "deb-libx11-6"
   "deb-libxext6"
-  ("deb-libqt5gui5" {>= "5.9.0~beta"} | "deb- libqt5gui5-gles" {>= "5.9.0~beta"})
+  ("deb-libqt5gui5" {>= "5.9.0~beta"} | "deb-libqt5gui5-gles" {>= "5.9.0~beta"})
 ]
 extra-source "veyon-plugins_4.7.5+repack1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/veyon/veyon-plugins_4.7.5+repack1-1_amd64.deb"

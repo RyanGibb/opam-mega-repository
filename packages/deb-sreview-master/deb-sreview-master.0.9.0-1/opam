@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-perl-any"
   "deb-sreview-common"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "sreview-master_0.9.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sreview/sreview-master_0.9.0-1_all.deb"

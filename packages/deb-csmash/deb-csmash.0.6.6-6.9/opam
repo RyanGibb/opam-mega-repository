@@ -17,7 +17,7 @@ depends: [
   "deb-libsdl1-2-compat-shim"
   "deb-libstdc++6" {>= "11"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "csmash_0.6.6-6.9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/csmash/csmash_0.6.6-6.9_amd64.deb"

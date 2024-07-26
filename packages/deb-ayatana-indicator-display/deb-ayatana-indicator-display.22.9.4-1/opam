@@ -16,7 +16,7 @@ depends: [
   "deb-libgudev-1-0-0" {>= "146"}
   "deb-libstdc++6" {>= "12"}
   "deb-xsct"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "ayatana-indicator-display_22.9.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/ayatana-indicator-display/ayatana-indicator-display_22.9.4-1_amd64.deb"

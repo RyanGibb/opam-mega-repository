@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo dpkg -r sass-spec"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
-  ("deb-ruby-sass" | "deb- sass")
+  ("deb-ruby" | "deb-ruby-interpreter")
+  ("deb-ruby-sass" | "deb-sass")
 ]
 extra-source "sass-spec_3.5.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sass-spec/sass-spec_3.5.4-1_all.deb"

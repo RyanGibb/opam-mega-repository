@@ -18,7 +18,7 @@ depends: [
   "deb-librime-data"
   "deb-librime1" {>= "1.6.1+dfsg1~"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb-libqt5gui5-gles" {>= "5.7.0"})
 ]
 extra-source "fcitx-rime_0.3.2-9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fcitx-rime/fcitx-rime_0.3.2-9_amd64.deb"

@@ -19,7 +19,7 @@ depends: [
   "deb-libsqlite3-0" {>= "3.5.9"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "crawl-tiles_2:0.23.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/crawl/crawl-tiles_0.23.0-1_amd64.deb"

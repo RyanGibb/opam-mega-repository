@@ -17,7 +17,7 @@ depends: [
   "deb-libunix-syslog-perl"
   "deb-perl-any"
   "deb-psmisc"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "mimedefang_2.84-4+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mimedefang/mimedefang_2.84-4+b1_amd64.deb"

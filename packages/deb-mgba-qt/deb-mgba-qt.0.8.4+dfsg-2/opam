@@ -17,7 +17,7 @@ depends: [
   "deb-libsdl2-2-0-0" {>= "2.0.12"}
   "deb-libstdc++6" {>= "6"}
   "deb-mgba-common" {= "0.8.4+dfsg-2"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "mgba-qt_0.8.4+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mgba/mgba-qt_0.8.4+dfsg-2_amd64.deb"

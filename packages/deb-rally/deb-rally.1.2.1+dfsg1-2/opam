@@ -10,7 +10,7 @@ depends: [
   "deb-dbconfig-common"
   "deb-python3-any"
   "deb-python3-rally" {= "1.2.1+dfsg1-2"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "rally_1.2.1+dfsg1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rally/rally_1.2.1+dfsg1-2_all.deb"

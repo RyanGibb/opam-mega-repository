@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.4"}
   "deb-libhwloc15" {>= "2.4.1+dfsg"}
-  ("deb-libstarpu-1-3-5" {>= "1.3.3+dfsg~"} | "deb- libstarpu-any-1-3-5")
+  ("deb-libstarpu-1-3-5" {>= "1.3.3+dfsg~"} | "deb-libstarpu-any-1-3-5")
 ]
 conflicts: [
   "deb-libstarpu-contribrm-1-3-1"

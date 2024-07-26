@@ -21,7 +21,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.15~"}
   "deb-libstdc++6" {>= "5"}
   "deb-systemsettings"
-  ("deb-libqt5gui5" {>= "5.15~"} | "deb- libqt5gui5-gles" {>= "5.15~"})
+  ("deb-libqt5gui5" {>= "5.15~"} | "deb-libqt5gui5-gles" {>= "5.15~"})
 ]
 extra-source "kamera_4:22.12.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kamera/kamera_22.12.3-1_amd64.deb"

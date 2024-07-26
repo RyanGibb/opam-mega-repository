@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-erlang-asn1" {= "1-21.2.6+dfsg-1"}
   "deb-erlang-ssl" {= "1-21.2.6+dfsg-1"}
-  ("deb-erlang-base" {= "1-21.2.6+dfsg-1"} | "deb- erlang-base-hipe" {= "1-21.2.6+dfsg-1"})
+  ("deb-erlang-base" {= "1-21.2.6+dfsg-1"} | "deb-erlang-base-hipe" {= "1-21.2.6+dfsg-1"})
 ]
 extra-source "erlang-eldap_1:21.2.6+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/erlang/erlang-eldap_21.2.6+dfsg-1_amd64.deb"

@@ -17,7 +17,7 @@ depends: [
   "deb-libxext6"
   "deb-libxft2" {> "2.1.1"}
   "deb-libxt6"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "xscreensaver-gl_6.06+dfsg1-3+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xscreensaver/xscreensaver-gl_6.06+dfsg1-3+deb12u1_amd64.deb"

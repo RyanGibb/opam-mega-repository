@@ -35,7 +35,7 @@ depends: [
   "deb-libxrender1"
   "deb-psmisc"
   "deb-zlib1g" {>= "1-1.2.11.dfsg"}
-  ("deb-x11-utils" | "deb- kdialog" | "deb- zenity")
+  ("deb-x11-utils" | "deb-kdialog" | "deb-zenity")
 ]
 extra-source "thunderbird_1:91.12.0-1~deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/thunderbird/thunderbird_91.12.0-1~deb10u1_amd64.deb"

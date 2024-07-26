@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-mtrc"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-mtrc_0.0.4-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-mtrc/ruby-mtrc_0.0.4-1.1_all.deb"

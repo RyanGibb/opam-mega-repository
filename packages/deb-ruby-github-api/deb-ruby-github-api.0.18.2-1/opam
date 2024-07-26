@@ -11,7 +11,7 @@ depends: [
   "deb-ruby-faraday" {>= "0.8"}
   "deb-ruby-hashie" {>= "3.5.2"}
   "deb-ruby-oauth2" {>= "1.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-github-api_0.18.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-github-api/ruby-github-api_0.18.2-1_all.deb"

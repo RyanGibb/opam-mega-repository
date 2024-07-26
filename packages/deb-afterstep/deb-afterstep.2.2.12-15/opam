@@ -22,7 +22,7 @@ depends: [
   "deb-perl-any"
   "deb-sensible-utils"
   "deb-ucf"
-  ("deb-aterm" | "deb- x-terminal-emulator")
+  ("deb-aterm" | "deb-x-terminal-emulator")
 ]
 extra-source "afterstep_2.2.12-15_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/afterstep/afterstep_2.2.12-15_amd64.deb"

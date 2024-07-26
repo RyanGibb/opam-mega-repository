@@ -16,7 +16,7 @@ depends: [
   "deb-libtracker-sparql-3-0-0" {= "3.4.2-1"}
   "deb-libxml2" {>= "2.7.4"}
   "deb-shared-mime-info"
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus")
 ]
 extra-source "tracker_3.4.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tracker/tracker_3.4.2-1_amd64.deb"

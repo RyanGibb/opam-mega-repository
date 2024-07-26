@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-gettext"
   "deb-ruby-gtk2"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "kindleclip_0.6-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kindleclip/kindleclip_0.6-1_all.deb"

@@ -9,7 +9,7 @@ depends: [
   "deb-dpkg" {>= "1.17.2"}
   "deb-libc6" {>= "2.34"}
   "deb-libidn12" {>= "1.13"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "libhesiod0_3.2.1-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/hesiod/libhesiod0_3.2.1-4_amd64.deb"

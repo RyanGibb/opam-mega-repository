@@ -21,8 +21,8 @@ depends: [
   "deb-libx11-dev"
   "deb-libxext-dev"
   "deb-libxmu-dev"
-  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
-  ("deb-libglu1-mesa-dev" | "deb- libglu-dev")
+  ("deb-libgl1-mesa-dev" | "deb-libgl-dev")
+  ("deb-libglu1-mesa-dev" | "deb-libglu-dev")
 ]
 conflicts: [
   "deb-liboce-visualization-dev"

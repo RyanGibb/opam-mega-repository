@@ -13,7 +13,7 @@ depends: [
   "deb-libgtk-3-0" {>= "3.1.4"}
   "deb-libgtksourceview-3-0-1" {>= "2.91.4"}
   "deb-libpango-1-0-0" {>= "1.14.0"}
-  ("deb-ocaml-nox" | "deb- java-compiler" | "deb- c-compiler" | "deb- c++-compiler" | "deb- ruby" | "deb- gprolog" | "deb- valac" | "deb- fp-compiler" | "deb- rhino" | "deb- guile" | "deb- python3" | "deb- lua" | "deb- golang" | "deb- php")
+  ("deb-ocaml-nox" | "deb-java-compiler" | "deb-c-compiler" | "deb-c++-compiler" | "deb-ruby" | "deb-gprolog" | "deb-valac" | "deb-fp-compiler" | "deb-rhino" | "deb-guile" | "deb-python3" | "deb-lua" | "deb-golang" | "deb-php")
 ]
 extra-source "laby_0.7.0-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/laby/laby_0.7.0-1+b1_amd64.deb"

@@ -15,7 +15,7 @@ depends: [
   "deb-libstdc++6" {>= "5"}
   "deb-libvncclient1" {>= "0.9.13"}
   "deb-veyon-plugins" {= "4.7.5+repack1-1"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "libveyon-core_4.7.5+repack1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/veyon/libveyon-core_4.7.5+repack1-1_amd64.deb"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-sixarm-ruby-unaccent"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-sixarm-ruby-unaccent_1.2.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-sixarm-ruby-unaccent/ruby-sixarm-ruby-unaccent_1.2.0-3_all.deb"

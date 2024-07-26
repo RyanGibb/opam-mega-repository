@@ -36,8 +36,8 @@ depends: [
   "deb-mpi-default-dev"
   "deb-x11proto-core-dev"
   "deb-zlib1g-dev"
-  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
-  ("deb-libglu1-mesa-dev" | "deb- libglu-dev")
+  ("deb-libgl1-mesa-dev" | "deb-libgl-dev")
+  ("deb-libglu1-mesa-dev" | "deb-libglu-dev")
 ]
 conflicts: [
   "deb-libvtk5-dev"

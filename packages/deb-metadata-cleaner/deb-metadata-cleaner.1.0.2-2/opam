@@ -11,7 +11,7 @@ depends: [
   "deb-mat2"
   "deb-media-types"
   "deb-python3-any"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "metadata-cleaner_1.0.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/metadata-cleaner/metadata-cleaner_1.0.2-2_amd64.deb"

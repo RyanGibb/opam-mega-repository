@@ -9,7 +9,7 @@ depends: [
   "deb-ruby-aws-sdk-core" {>= "3.61~"}
   "deb-ruby-aws-sdk-kms" {>= "1~"}
   "deb-ruby-aws-sigv4" {>= "1.1~"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-aws-sdk-s3_1.48.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-aws-sdk-s3/ruby-aws-sdk-s3_1.48.0-3_all.deb"

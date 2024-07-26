@@ -14,7 +14,7 @@ depends: [
   "deb-netbase"
   "deb-openssl"
   "deb-perl-any"
-  ("deb-systemd" | "deb- systemd-standalone-sysusers" | "deb- systemd-sysusers")
+  ("deb-systemd" | "deb-systemd-standalone-sysusers" | "deb-systemd-sysusers")
 ]
 extra-source "stunnel4_3:5.68-2+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/stunnel4/stunnel4_5.68-2+deb12u1_amd64.deb"

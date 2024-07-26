@@ -9,7 +9,7 @@ depends: [
   "deb-python3"
   "deb-python3-pil"
   "deb-python3-pygame"
-  ("deb-mupdf-tools" {>= "1.5"} | "deb- poppler-utils")
+  ("deb-mupdf-tools" {>= "1.5"} | "deb-poppler-utils")
 ]
 conflicts: [
   "deb-keyjnote" {< "0.10.2r-0"}

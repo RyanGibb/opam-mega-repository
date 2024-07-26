@@ -14,7 +14,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.14.1"}
   "deb-libqt5xml5" {>= "5.9"}
   "deb-libstdc++6" {>= "4.1.1"}
-  ("deb-libqt5gui5" {>= "5.9"} | "deb- libqt5gui5-gles" {>= "5.9"})
+  ("deb-libqt5gui5" {>= "5.9"} | "deb-libqt5gui5-gles" {>= "5.9"})
 ]
 extra-source "qspeakers_1.6.7-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qspeakers/qspeakers_1.6.7-1_amd64.deb"

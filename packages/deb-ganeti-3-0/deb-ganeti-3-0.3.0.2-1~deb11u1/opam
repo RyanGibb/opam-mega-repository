@@ -26,7 +26,7 @@ depends: [
   "deb-python3-pyparsing"
   "deb-python3-simplejson"
   "deb-socat"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "ganeti-3.0_3.0.2-1~deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/ganeti/ganeti-3.0_3.0.2-1~deb11u1_all.deb"

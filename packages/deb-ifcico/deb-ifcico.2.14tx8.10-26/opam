@@ -10,7 +10,7 @@ depends: [
   "deb-libc6" {>= "2.14"}
   "deb-libfl2" {>= "2.5.33"}
   "deb-libgdbm-compat4" {>= "1.16"}
-  ("deb-openbsd-inetd" | "deb- inet-superserver")
+  ("deb-openbsd-inetd" | "deb-inet-superserver")
 ]
 extra-source "ifcico_2.14tx8.10-26_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/ifmail/ifcico_2.14tx8.10-26_amd64.deb"

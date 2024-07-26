@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-python3-any"
   "deb-python3-click"
-  ("deb-python3-typing-extensions" | "deb- python3" {> "3.9"})
+  ("deb-python3-typing-extensions" | "deb-python3" {> "3.9"})
 ]
 extra-source "python3-cloup_2.0.0.post1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-cloup/python3-cloup_2.0.0.post1-2_all.deb"

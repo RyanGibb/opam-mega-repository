@@ -11,8 +11,8 @@ depends: [
   "deb-libopenmpi3" {>= "4.1.0"}
   "deb-libpetsc64-complex3-14" {>= "3.14.4+dfsg1"}
   "deb-libscalapack-openmpi2-1" {>= "2.1.0"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 conflicts: [
   "deb-libslepc-complex-3-6" {<= "3.6.1.dfsg1-2"}

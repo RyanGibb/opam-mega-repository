@@ -66,7 +66,7 @@ depends: [
   "deb-t1utils"
   "deb-unzip"
   "deb-xz-utils"
-  ("deb-lzip" | "deb- clzip")
+  ("deb-lzip" | "deb-clzip")
 ]
 extra-source "lintian_2.104.0_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lintian/lintian_2.104.0_all.deb"

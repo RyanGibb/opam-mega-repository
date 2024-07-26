@@ -18,7 +18,7 @@ depends: [
   "deb-python-spf"
   "deb-python-twisted-core"
   "deb-python-twisted-names"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "bley_2.0.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/bley/bley_2.0.0-2_all.deb"

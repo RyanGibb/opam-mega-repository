@@ -11,7 +11,7 @@ depends: [
   "deb-python3-defusedxml"
   "deb-python3-passlib"
   "deb-python3-vobject" {>= "0.9.6"}
-  ("deb-python3-pkg-resources" | "deb- python3" {> "3.9"})
+  ("deb-python3-pkg-resources" | "deb-python3" {> "3.9"})
 ]
 extra-source "python3-radicale_3.1.8-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/radicale/python3-radicale_3.1.8-2_all.deb"

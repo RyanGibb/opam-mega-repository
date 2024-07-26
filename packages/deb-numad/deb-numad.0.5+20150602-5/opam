@@ -9,7 +9,7 @@ depends: [
   "deb-init-system-helpers" {>= "1.18~"}
   "deb-libc6" {>= "2.14"}
   "deb-lsb-base" {>= "3.2-14"}
-  ("deb-systemd-sysv" | "deb- cgmanager")
+  ("deb-systemd-sysv" | "deb-cgmanager")
 ]
 extra-source "numad_0.5+20150602-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/numad/numad_0.5+20150602-5_amd64.deb"

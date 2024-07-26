@@ -12,7 +12,7 @@ depends: [
   "deb-libgtk-3-0" {>= "3.16.2"}
   "deb-libibus-1-0-5" {>= "1.5.1"}
   "deb-libthai0" {>= "0.1.19"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "ibus-libthai_0.1.5-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/ibus-libthai/ibus-libthai_0.1.5-1+b1_amd64.deb"

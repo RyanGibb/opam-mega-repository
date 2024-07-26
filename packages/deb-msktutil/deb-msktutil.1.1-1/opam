@@ -13,7 +13,7 @@ depends: [
   "deb-libkrb5-3" {>= "1.13~alpha1+dfsg"}
   "deb-libldap-2-4-2" {>= "2.4.7"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libsasl2-modules-gssapi-mit" | "deb- libsasl2-gssapi-mit" | "deb- libsasl2-modules-gssapi-heimdal")
+  ("deb-libsasl2-modules-gssapi-mit" | "deb-libsasl2-gssapi-mit" | "deb-libsasl2-modules-gssapi-heimdal")
 ]
 extra-source "msktutil_1.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/msktutil/msktutil_1.1-1_amd64.deb"

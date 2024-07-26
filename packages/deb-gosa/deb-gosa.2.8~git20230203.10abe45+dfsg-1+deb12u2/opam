@@ -22,9 +22,9 @@ depends: [
   "deb-php-xml"
   "deb-smarty-gettext"
   "deb-smarty4"
-  ("deb-apache2" | "deb- lighttpd" | "deb- httpd")
-  ("deb-default-mta" | "deb- mail-transport-agent")
-  ("deb-php-imagick" | "deb- imagemagick" | "deb- graphicsmagick-im-compat")
+  ("deb-apache2" | "deb-lighttpd" | "deb-httpd")
+  ("deb-default-mta" | "deb-mail-transport-agent")
+  ("deb-php-imagick" | "deb-imagemagick" | "deb-graphicsmagick-im-compat")
 ]
 conflicts: [
   "deb-smarty-acl-render"

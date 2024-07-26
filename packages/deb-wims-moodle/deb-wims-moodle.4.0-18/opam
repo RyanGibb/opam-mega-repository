@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-pwgen"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-wims" {>= "4.00"} | "deb- wims-installed-manually")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-wims" {>= "4.00"} | "deb-wims-installed-manually")
 ]
 extra-source "wims-moodle_4.0-18_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/wims-moodle/wims-moodle_4.0-18_all.deb"

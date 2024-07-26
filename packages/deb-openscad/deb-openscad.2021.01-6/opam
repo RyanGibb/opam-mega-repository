@@ -36,7 +36,7 @@ depends: [
   "deb-libx11-6"
   "deb-libxml2" {>= "2.7.4"}
   "deb-libzip4" {>= "0.10"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "openscad_2021.01-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/openscad/openscad_2021.01-6_amd64.deb"

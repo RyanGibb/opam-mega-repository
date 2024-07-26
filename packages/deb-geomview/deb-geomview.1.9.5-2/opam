@@ -19,7 +19,7 @@ depends: [
   "deb-libxm4" {>= "2.3.4"}
   "deb-libxt6"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "geomview_1.9.5-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/geomview/geomview_1.9.5-2_amd64.deb"

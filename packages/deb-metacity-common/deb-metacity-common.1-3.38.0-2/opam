@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r metacity-common"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "metacity-common_1:3.38.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/metacity/metacity-common_3.38.0-2_all.deb"

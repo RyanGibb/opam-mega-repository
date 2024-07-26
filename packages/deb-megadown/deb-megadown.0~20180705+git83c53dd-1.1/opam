@@ -10,7 +10,7 @@ depends: [
   "deb-openssl"
   "deb-pv"
   "deb-python3-any"
-  ("deb-wget" | "deb- curl")
+  ("deb-wget" | "deb-curl")
 ]
 extra-source "megadown_0~20180705+git83c53dd-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/megadown/megadown_0~20180705+git83c53dd-1.1_all.deb"

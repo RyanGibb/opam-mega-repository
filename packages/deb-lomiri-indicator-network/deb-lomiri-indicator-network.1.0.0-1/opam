@@ -21,7 +21,7 @@ depends: [
   "deb-network-manager-openvpn"
   "deb-network-manager-pptp"
   "deb-suru-icon-theme"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 conflicts: [
   "deb-chewie"

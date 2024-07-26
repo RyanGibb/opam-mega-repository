@@ -27,7 +27,7 @@ depends: [
   "deb-schroot" {< "1.7"}
   "deb-schroot" {>= "1.6.10-2~"}
   "deb-sudo"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "mini-buildd_1.0.36+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mini-buildd/mini-buildd_1.0.36+deb10u1_all.deb"

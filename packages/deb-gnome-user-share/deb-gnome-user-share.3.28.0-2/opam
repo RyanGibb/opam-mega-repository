@@ -14,7 +14,7 @@ depends: [
   "deb-libnautilus-extension1a" {>= "3.27.90"}
   "deb-libpango-1-0-0" {>= "1.14.0"}
   "deb-libselinux1" {>= "1.32"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-user-share_3.28.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-user-share/gnome-user-share_3.28.0-2_amd64.deb"

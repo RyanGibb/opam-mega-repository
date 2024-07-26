@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r kwalify"]
 ]
 depends: [
-  ("deb-ruby-any" | "deb- ruby-interpreter")
+  ("deb-ruby-any" | "deb-ruby-interpreter")
 ]
 extra-source "kwalify_0.7.2-9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kwalify/kwalify_0.7.2-9_all.deb"

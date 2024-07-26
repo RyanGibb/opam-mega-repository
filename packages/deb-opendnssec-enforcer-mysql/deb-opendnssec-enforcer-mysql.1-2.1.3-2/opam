@@ -13,7 +13,7 @@ depends: [
   "deb-libmariadb3" {>= "3.0.0"}
   "deb-libxml2" {>= "2.7.4"}
   "deb-opendnssec-common" {= "1-2.1.3-2"}
-  ("deb-default-mysql-client" | "deb- mariadb-client" | "deb- mysql-client")
+  ("deb-default-mysql-client" | "deb-mariadb-client" | "deb-mysql-client")
 ]
 conflicts: [
   "deb-opendnssec-enforcer-backend"

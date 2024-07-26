@@ -19,8 +19,8 @@ depends: [
   "deb-net-tools"
   "deb-nmap"
   "deb-whois"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-iputils-ping" | "deb- ping")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-iputils-ping" | "deb-ping")
 ]
 extra-source "gnome-nettool_42.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-nettool/gnome-nettool_42.0-1_amd64.deb"

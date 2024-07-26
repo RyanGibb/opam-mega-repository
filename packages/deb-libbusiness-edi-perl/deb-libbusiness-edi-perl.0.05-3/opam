@@ -12,7 +12,7 @@ depends: [
   "deb-liblist-moreutils-perl"
   "deb-libuniversal-require-perl"
   "deb-perl-any"
-  ("deb-libcgi-pm-perl" | "deb- perl" {< "5.19"})
+  ("deb-libcgi-pm-perl" | "deb-perl" {< "5.19"})
 ]
 extra-source "libbusiness-edi-perl_0.05-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libb/libbusiness-edi-perl/libbusiness-edi-perl_0.05-3_all.deb"

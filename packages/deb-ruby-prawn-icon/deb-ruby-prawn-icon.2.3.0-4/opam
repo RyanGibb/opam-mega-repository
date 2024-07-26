@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-prawn" {< "3.0.0"}
   "deb-ruby-prawn" {>= "1.1.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-prawn-icon_2.3.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-prawn-icon/ruby-prawn-icon_2.3.0-4_all.deb"

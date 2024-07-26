@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-moneta" {>= "0.7"}
   "deb-ruby-rack"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-upr_0.3.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-upr/ruby-upr_0.3.0-2_all.deb"

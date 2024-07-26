@@ -18,7 +18,7 @@ depends: [
   "deb-libquadmath0" {>= "4.6"}
   "deb-libx11-6"
   "deb-netbase" {>= "4.08"}
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libpawlib2-gfortran_1:2.14.04.dfsg.2-9.1+b4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/paw/libpawlib2-gfortran_2.14.04.dfsg.2-9.1+b4_amd64.deb"

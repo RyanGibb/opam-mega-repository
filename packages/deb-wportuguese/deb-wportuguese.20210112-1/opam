@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-dictionaries-common" {>= "1.0"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "wportuguese_20210112-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/ispell.pt/wportuguese_20210112-1_all.deb"

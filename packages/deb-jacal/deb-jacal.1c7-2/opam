@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-slib" {>= "3a5-1"}
-  ("deb-scm" | "deb- guile")
+  ("deb-scm" | "deb-guile")
 ]
 extra-source "jacal_1c7-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jacal/jacal_1c7-2_all.deb"

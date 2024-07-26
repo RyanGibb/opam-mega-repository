@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-hmac"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-openid_2.9.2debian-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-openid/ruby-openid_2.9.2debian-1_all.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-librust-zip-dev" {= "0.5.8-2"}
-  ("deb-librust-flate2-1-0-13-dev" | "deb- librust-flate2-1-0-12-dev" | "deb- librust-flate2-1-0-11-dev" | "deb- librust-flate2-1-0-10-dev" | "deb- librust-flate2-1-0-9-dev" | "deb- librust-flate2-1-0-8-dev" | "deb- librust-flate2-1-0-7-dev" | "deb- librust-flate2-1-0-6-dev" | "deb- librust-flate2-1-0-5-dev" | "deb- librust-flate2-1-0-4-dev" | "deb- librust-flate2-1-0-3-dev" | "deb- librust-flate2-1-0-2-dev" | "deb- librust-flate2-1-0-1-dev" | "deb- librust-flate2-1-0-0-dev")
+  ("deb-librust-flate2-1-0-13-dev" | "deb-librust-flate2-1-0-12-dev" | "deb-librust-flate2-1-0-11-dev" | "deb-librust-flate2-1-0-10-dev" | "deb-librust-flate2-1-0-9-dev" | "deb-librust-flate2-1-0-8-dev" | "deb-librust-flate2-1-0-7-dev" | "deb-librust-flate2-1-0-6-dev" | "deb-librust-flate2-1-0-5-dev" | "deb-librust-flate2-1-0-4-dev" | "deb-librust-flate2-1-0-3-dev" | "deb-librust-flate2-1-0-2-dev" | "deb-librust-flate2-1-0-1-dev" | "deb-librust-flate2-1-0-0-dev")
 ]
 extra-source "librust-zip+flate2-dev_0.5.8-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-zip/librust-zip+flate2-dev_0.5.8-2_amd64.deb"

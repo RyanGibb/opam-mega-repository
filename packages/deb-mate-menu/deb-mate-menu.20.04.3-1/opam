@@ -20,8 +20,8 @@ depends: [
   "deb-python3-xdg"
   "deb-python3-xlib"
   "deb-xdg-utils"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-mozo" | "deb- menulibre")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-mozo" | "deb-menulibre")
 ]
 extra-source "mate-menu_20.04.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mate-menu/mate-menu_20.04.3-1_all.deb"

@@ -9,7 +9,7 @@ depends: [
   "deb-liblibreoffice-java"
   "deb-libreoffice-core"
   "deb-libreoffice-java-common"
-  ("deb-default-jre" {>= "2-1.8"} | "deb- java-runtime" {>= "8"} | "deb- java8-runtime" | "deb- jre")
+  ("deb-default-jre" {>= "2-1.8"} | "deb-java-runtime" {>= "8"} | "deb-java8-runtime" | "deb-jre")
 ]
 extra-source "libreoffice-wiki-publisher_4:1.2.0+LibO7.4.7-1+deb12u3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libr/libreoffice/libreoffice-wiki-publisher_1.2.0+LibO7.4.7-1+deb12u3_all.deb"

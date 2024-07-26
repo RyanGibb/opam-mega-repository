@@ -9,7 +9,7 @@ depends: [
   "deb-jetty9"
   "deb-libjetty9-extra-java"
   "deb-solr-common" {= "3.6.2+dfsg-20+deb10u2"}
-  ("deb-default-jdk" | "deb- java5-sdk")
+  ("deb-default-jdk" | "deb-java5-sdk")
 ]
 conflicts: [
   "deb-solr-tomcat"

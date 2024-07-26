@@ -18,7 +18,7 @@ depends: [
   "deb-maven-repo-helper" {>= "1.9"}
   "deb-unzip"
   "deb-velocity"
-  ("deb-default-jdk-headless" | "deb- default-jdk")
+  ("deb-default-jdk-headless" | "deb-default-jdk")
 ]
 extra-source "maven-debian-helper_2.3.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/maven-debian-helper/maven-debian-helper_2.3.2_all.deb"

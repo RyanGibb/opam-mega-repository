@@ -26,7 +26,7 @@ depends: [
   "deb-python3-numpy"
   "deb-python3-numpy" {>= "1-1.14.3"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "python3-mathgl_2.4.2.1-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mathgl/python3-mathgl_2.4.2.1-5_amd64.deb"

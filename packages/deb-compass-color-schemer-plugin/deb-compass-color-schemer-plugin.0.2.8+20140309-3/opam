@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-compass-blend-modes-plugin"
   "deb-ruby-sass" {>= "3.4"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "compass-color-schemer-plugin_0.2.8+20140309-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/compass-color-schemer-plugin/compass-color-schemer-plugin_0.2.8+20140309-3_all.deb"

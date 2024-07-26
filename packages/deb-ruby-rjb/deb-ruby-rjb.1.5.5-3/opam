@@ -11,7 +11,7 @@ depends: [
   "deb-libruby2-5" {>= "2.5.0~preview1"}
   "deb-ruby" {< "1-2.6~"}
   "deb-ruby" {>= "1-2.5~0"}
-  ("deb-default-jre" | "deb- java5-runtime")
+  ("deb-default-jre" | "deb-java5-runtime")
 ]
 extra-source "ruby-rjb_1.5.5-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-rjb/ruby-rjb_1.5.5-3_amd64.deb"

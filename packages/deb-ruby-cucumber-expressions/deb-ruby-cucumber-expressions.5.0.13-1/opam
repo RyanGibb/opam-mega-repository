@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-cucumber-expressions"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-cucumber-expressions_5.0.13-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-cucumber-expressions/ruby-cucumber-expressions_5.0.13-1_all.deb"

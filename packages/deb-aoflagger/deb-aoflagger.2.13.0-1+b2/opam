@@ -36,8 +36,8 @@ depends: [
   "deb-libpython2-7" {>= "2.7"}
   "deb-libsigc++-2-0-0v5" {>= "2.8.0"}
   "deb-libstdc++6" {>= "6"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "aoflagger_2.13.0-1+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/aoflagger/aoflagger_2.13.0-1+b2_amd64.deb"

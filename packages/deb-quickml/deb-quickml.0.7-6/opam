@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r quickml"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "quickml_0.7-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/quickml/quickml_0.7-6_all.deb"

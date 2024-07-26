@@ -10,7 +10,7 @@ depends: [
   "deb-libsvnkit-java"
   "deb-statcvs" {>= "1-0.7.0.dfsg-4~"}
   "deb-subversion"
-  ("deb-default-jre" | "deb- java-runtime")
+  ("deb-default-jre" | "deb-java-runtime")
 ]
 extra-source "statsvn_0.7.0.dfsg-10_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/statsvn/statsvn_0.7.0.dfsg-10_all.deb"

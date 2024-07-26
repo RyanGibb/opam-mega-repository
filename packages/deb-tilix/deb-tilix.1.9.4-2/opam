@@ -13,7 +13,7 @@ depends: [
   "deb-libvted-3-0" {>= "3.9.0"}
   "deb-libx11-6"
   "deb-tilix-common" {= "1.9.4-2"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "tilix_1.9.4-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tilix/tilix_1.9.4-2_amd64.deb"

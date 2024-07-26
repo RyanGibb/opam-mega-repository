@@ -23,8 +23,8 @@ depends: [
   "deb-libxcomposite1" {>= "1-0.4.5"}
   "deb-upower" {>= "0.9.0"}
   "deb-xwayland"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus")
 ]
 extra-source "gnome-session-bin_43.0-1+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-session/gnome-session-bin_43.0-1+deb12u1_amd64.deb"

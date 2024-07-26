@@ -11,7 +11,7 @@ depends: [
   "deb-ruby-cairo-gobject"
   "deb-ruby-gettext"
   "deb-ruby-gtk3"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "screenruler_1.2-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/screenruler/screenruler_1.2-3_all.deb"

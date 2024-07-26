@@ -15,7 +15,7 @@ depends: [
   "deb-libsdl-mixer1-2"
   "deb-libsdl1-2debian" {>= "1.2.11"}
   "deb-mu-cade-data" {= "0.11.dfsg1-12"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "mu-cade_0.11.dfsg1-12+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mu-cade/mu-cade_0.11.dfsg1-12+b2_amd64.deb"

@@ -10,7 +10,7 @@ depends: [
   "deb-libc6" {>= "2.34"}
   "deb-libgcc-s1" {>= "3.0"}
   "deb-libgphobos3" {>= "12"}
-  ("deb-libcurl3-gnutls" | "deb- libcurl4")
+  ("deb-libcurl3-gnutls" | "deb-libcurl4")
 ]
 extra-source "dub_1.27.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dub/dub_1.27.0-3_amd64.deb"

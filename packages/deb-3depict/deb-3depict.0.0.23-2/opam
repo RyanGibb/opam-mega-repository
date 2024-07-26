@@ -20,7 +20,7 @@ depends: [
   "deb-libwxgtk-gl3-2-1" {>= "3.2.1+dfsg"}
   "deb-libwxgtk3-2-1" {>= "3.2.1+dfsg-2"}
   "deb-libxml2" {>= "2.7.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "3depict_0.0.23-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/3/3depict/3depict_0.0.23-2_amd64.deb"

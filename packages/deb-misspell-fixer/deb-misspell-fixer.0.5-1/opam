@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r misspell-fixer"]
 ]
 depends: [
-  ("deb-ugrep" | "deb- grep" {>= "2.28"})
+  ("deb-ugrep" | "deb-grep" {>= "2.28"})
 ]
 extra-source "misspell-fixer_0.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/misspell-fixer/misspell-fixer_0.5-1_all.deb"

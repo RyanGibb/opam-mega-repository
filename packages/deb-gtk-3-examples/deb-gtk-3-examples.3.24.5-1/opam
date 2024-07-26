@@ -34,7 +34,7 @@ depends: [
   "deb-libxinerama1"
   "deb-libxkbcommon0" {>= "0.5.0"}
   "deb-libxrandr2"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gtk-3-examples_3.24.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gtk+3.0/gtk-3-examples_3.24.5-1_amd64.deb"

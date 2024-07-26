@@ -12,7 +12,7 @@ depends: [
   "deb-python3-numpy" {>= "1-1.22.0"}
   "deb-python3-opengl"
   "deb-python3-wxgtk4-0"
-  ("deb-xterm" | "deb- x-terminal-emulator")
+  ("deb-xterm" | "deb-x-terminal-emulator")
 ]
 extra-source "grass-gui_8.2.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/grass/grass-gui_8.2.1-1_amd64.deb"

@@ -23,7 +23,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.0.2"}
   "deb-libspdlog1-10"
   "deb-libstdc++6" {>= "11"}
-  ("deb-ocl-icd-libopencl1" | "deb- libopencl1")
+  ("deb-ocl-icd-libopencl1" | "deb-libopencl1")
 ]
 extra-source "libgnuradio-fosphor3.9.0_3.9~0.974ab2f-1+b9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gr-fosphor/libgnuradio-fosphor3.9.0_3.9~0.974ab2f-1+b9_amd64.deb"

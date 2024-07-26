@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.34"}
   "deb-libgcc-s1" {>= "3.0"}
   "deb-libstdc++6" {>= "12.2.0-10"}
-  ("deb-mesa-opencl-icd" | "deb- opencl-icd")
+  ("deb-mesa-opencl-icd" | "deb-opencl-icd")
 ]
 conflicts: [
   "deb-libhmsbeagle1"

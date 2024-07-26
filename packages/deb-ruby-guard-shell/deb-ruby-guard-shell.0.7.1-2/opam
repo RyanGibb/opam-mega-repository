@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-guard" {>= "2.0.0"}
   "deb-ruby-guard-compat" {>= "1.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-guard-shell_0.7.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-guard-shell/ruby-guard-shell_0.7.1-2_all.deb"

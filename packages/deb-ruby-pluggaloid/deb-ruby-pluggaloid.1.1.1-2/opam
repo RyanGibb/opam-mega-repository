@@ -9,7 +9,7 @@ depends: [
   "deb-ruby-delayer"
   "deb-ruby-instance-storage" {< "2.0.0"}
   "deb-ruby-instance-storage" {>= "1.0.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-pluggaloid_1.1.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-pluggaloid/ruby-pluggaloid_1.1.1-2_all.deb"

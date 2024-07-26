@@ -16,8 +16,8 @@ depends: [
   "deb-r-cran-lattice"
   "deb-r-cran-nlme"
   "deb-r-cran-rcpp" {>= "0.12.0"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "r-cran-ape_5.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-ape/r-cran-ape_5.2-1_amd64.deb"

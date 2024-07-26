@@ -13,8 +13,8 @@ depends: [
   "deb-libqt5webenginewidgets5" {>= "5.14.1"}
   "deb-libqt5widgets5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-gambas3-gb-qt5-x11" {>= "3.18.0-4"} | "deb- gambas3-gb-qt5-wayland" {>= "3.18.0-4"})
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-gambas3-gb-qt5-x11" {>= "3.18.0-4"} | "deb-gambas3-gb-qt5-wayland" {>= "3.18.0-4"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "gambas3-gb-qt5-webview_3.18.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gambas3/gambas3-gb-qt5-webview_3.18.0-4_amd64.deb"

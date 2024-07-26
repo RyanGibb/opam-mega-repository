@@ -17,7 +17,7 @@ depends: [
   "deb-libgranite6" {>= "6.0.0"}
   "deb-libgtk-3-0" {>= "3.21.5"}
   "deb-libjson-glib-1-0-0" {>= "1.5.2"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "akira_0.0.16-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/akira/akira_0.0.16-2_amd64.deb"

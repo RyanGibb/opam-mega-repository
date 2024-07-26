@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl"
-  ("deb-libmodule-pluggable-perl" | "deb- perl" {< "5.17.0"})
+  ("deb-libmodule-pluggable-perl" | "deb-perl" {< "5.17.0"})
 ]
 extra-source "libdata-phrasebook-perl_0.35-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libd/libdata-phrasebook-perl/libdata-phrasebook-perl_0.35-1_all.deb"

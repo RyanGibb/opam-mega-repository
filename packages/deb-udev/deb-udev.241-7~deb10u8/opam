@@ -15,7 +15,7 @@ depends: [
   "deb-libudev1" {= "241-7~deb10u8"}
   "deb-lsb-base" {>= "3.0-6"}
   "deb-util-linux" {>= "2.27.1"}
-  ("deb-dpkg" {>= "1.19.3"} | "deb- systemd-sysv")
+  ("deb-dpkg" {>= "1.19.3"} | "deb-systemd-sysv")
 ]
 conflicts: [
   "deb-hal"

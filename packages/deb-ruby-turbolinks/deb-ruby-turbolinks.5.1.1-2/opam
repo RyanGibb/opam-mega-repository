@@ -9,7 +9,7 @@ depends: [
   "deb-ruby-coffee-rails"
   "deb-ruby-turbolinks-source" {< "6.0"}
   "deb-ruby-turbolinks-source" {>= "5.1"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-turbolinks_5.1.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-turbolinks/ruby-turbolinks_5.1.1-2_all.deb"

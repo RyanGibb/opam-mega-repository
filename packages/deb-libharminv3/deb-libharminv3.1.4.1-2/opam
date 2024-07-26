@@ -11,8 +11,8 @@ depends: [
   "deb-libgfortran5" {>= "8"}
   "deb-libquadmath0" {>= "4.6"}
   "deb-libstdc++6" {>= "4.1.1"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libharminv3_1.4.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/harminv/libharminv3_1.4.1-2_amd64.deb"

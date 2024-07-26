@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-oauth"
   "deb-ruby-omniauth"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-omniauth-oauth_1.1.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-omniauth-oauth/ruby-omniauth-oauth_1.1.0-2_all.deb"

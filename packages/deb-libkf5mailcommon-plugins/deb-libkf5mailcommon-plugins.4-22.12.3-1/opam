@@ -12,7 +12,7 @@ depends: [
   "deb-libkf5mailcommon5abi2" {>= "4-22.12.3"}
   "deb-libqt5core5a" {>= "5.15.2~"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb-libqt5gui5-gles" {>= "5.15.2~"})
 ]
 extra-source "libkf5mailcommon-plugins_4:22.12.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libk/libkf5mailcommon/libkf5mailcommon-plugins_22.12.3-1_amd64.deb"

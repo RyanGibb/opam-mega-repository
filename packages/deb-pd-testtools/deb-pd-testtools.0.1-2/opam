@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-pd-ggee"
-  ("deb-puredata" | "deb- pd")
-  ("deb-puredata-extra" | "deb- pd-extra")
+  ("deb-puredata" | "deb-pd")
+  ("deb-puredata-extra" | "deb-pd-extra")
 ]
 extra-source "pd-testtools_0.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pd-testtools/pd-testtools_0.1-2_all.deb"

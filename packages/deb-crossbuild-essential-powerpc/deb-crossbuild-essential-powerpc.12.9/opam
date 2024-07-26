@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-dpkg-cross"
-  ("deb-g++-powerpc-linux-gnu" {>= "4-10.2"} | "deb- g++-powerpc")
-  ("deb-gcc-powerpc-linux-gnu" {>= "4-10.2"} | "deb- gcc-powerpc")
+  ("deb-g++-powerpc-linux-gnu" {>= "4-10.2"} | "deb-g++-powerpc")
+  ("deb-gcc-powerpc-linux-gnu" {>= "4-10.2"} | "deb-gcc-powerpc")
 ]
 extra-source "crossbuild-essential-powerpc_12.9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/build-essential/crossbuild-essential-powerpc_12.9_all.deb"

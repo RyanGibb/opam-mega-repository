@@ -11,7 +11,7 @@ depends: [
   "deb-e2fsprogs"
   "deb-kpartx"
   "deb-mount"
-  ("deb-fdisk" | "deb- util-linux" {< "2.29.2-3~"})
+  ("deb-fdisk" | "deb-util-linux" {< "2.29.2-3~"})
 ]
 extra-source "ganeti-instance-debootstrap_0.16-8_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/ganeti-instance-debootstrap/ganeti-instance-debootstrap_0.16-8_all.deb"

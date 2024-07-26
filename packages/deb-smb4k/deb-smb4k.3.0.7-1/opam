@@ -38,7 +38,7 @@ depends: [
   "deb-libstdc++6" {>= "4.1.1"}
   "deb-samba-common-bin" {>= "2-3.4.7~dfsg"}
   "deb-smbclient" {>= "2-3.4.7~dfsg"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "smb4k_3.0.7-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/smb4k/smb4k_3.0.7-1_amd64.deb"

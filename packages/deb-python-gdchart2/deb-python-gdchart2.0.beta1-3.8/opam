@@ -16,7 +16,7 @@ depends: [
   "deb-python-any" {< "2.8"}
   "deb-python-any" {>= "2.7~"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libgdchart-gd2-noxpm" | "deb- libgdchart-gd2-xpm")
+  ("deb-libgdchart-gd2-noxpm" | "deb-libgdchart-gd2-xpm")
 ]
 conflicts: [
   "deb-python2-3-gdchart2" {< "0.beta1-3.2"}

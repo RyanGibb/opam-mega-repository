@@ -18,7 +18,7 @@ depends: [
   "deb-libsoxr0" {>= "0.1.0"}
   "deb-libvorbisfile3" {>= "1.1.2"}
   "deb-lsb-base"
-  ("deb-libavcodec58" {>= "7-4.0"} | "deb- libavcodec-extra58" {>= "7-4.0"})
+  ("deb-libavcodec58" {>= "7-4.0"} | "deb-libavcodec-extra58" {>= "7-4.0"})
 ]
 conflicts: [
   "deb-squeezelite"

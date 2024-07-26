@@ -11,7 +11,7 @@ depends: [
   "deb-libssl1-1" {>= "1.1.0"}
   "deb-lsb-base"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-udev" | "deb- makedev")
+  ("deb-udev" | "deb-makedev")
 ]
 extra-source "vtun_3.0.3-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/vtun/vtun_3.0.3-4_amd64.deb"

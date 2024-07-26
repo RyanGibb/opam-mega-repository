@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-jekyll" {< "5~"}
   "deb-jekyll" {>= "3.7"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-jekyll-compose_0.12.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-jekyll-compose/ruby-jekyll-compose_0.12.0-4_all.deb"

@@ -30,7 +30,7 @@ depends: [
   "deb-libxml-commons-external-java"
   "deb-libxmlgraphics-commons-java"
   "deb-simplyhtml" {>= "0.17.3"}
-  ("deb-default-jre" | "deb- java8-runtime")
+  ("deb-default-jre" | "deb-java8-runtime")
 ]
 conflicts: [
   "deb-libjortho-freeplane-java"

@@ -10,7 +10,7 @@ depends: [
   "deb-ruby-redis-activesupport" {>= "5~"}
   "deb-ruby-redis-rack" {>= "2.0~"}
   "deb-ruby-redis-store" {>= "1.2~"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-redis-rails_5.0.2-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-redis-rails/ruby-redis-rails_5.0.2-3_all.deb"

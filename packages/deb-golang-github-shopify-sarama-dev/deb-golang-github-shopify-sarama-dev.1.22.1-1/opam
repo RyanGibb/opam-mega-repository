@@ -15,8 +15,8 @@ depends: [
   "deb-golang-github-pierrec-lz4-dev"
   "deb-golang-github-rcrowley-go-metrics-dev"
   "deb-golang-golang-x-net-dev"
-  ("deb-golang-gopkg-eapache-go-resiliency-v1-dev" | "deb- golang-github-eapache-go-resiliency-dev")
-  ("deb-golang-gopkg-eapache-queue-v1-dev" | "deb- golang-github-eapache-queue-dev")
+  ("deb-golang-gopkg-eapache-go-resiliency-v1-dev" | "deb-golang-github-eapache-go-resiliency-dev")
+  ("deb-golang-gopkg-eapache-queue-v1-dev" | "deb-golang-github-eapache-queue-dev")
 ]
 extra-source "golang-github-shopify-sarama-dev_1.22.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/golang-github-shopify-sarama/golang-github-shopify-sarama-dev_1.22.1-1_all.deb"

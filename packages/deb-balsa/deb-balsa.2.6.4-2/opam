@@ -31,7 +31,7 @@ depends: [
   "deb-libwebkit2gtk-4-1-0" {>= "2.31.1"}
   "deb-libxapp1" {>= "1.6.2"}
   "deb-libxml2" {>= "2.7.4"}
-  ("deb-pinentry-gnome3" | "deb- pinentry-x11")
+  ("deb-pinentry-gnome3" | "deb-pinentry-x11")
 ]
 extra-source "balsa_2.6.4-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/balsa/balsa_2.6.4-2_amd64.deb"

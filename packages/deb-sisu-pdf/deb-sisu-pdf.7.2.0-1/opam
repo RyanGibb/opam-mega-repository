@@ -13,7 +13,7 @@ depends: [
   "deb-texlive-latex-recommended"
   "deb-texlive-plain-generic"
   "deb-texlive-xetex"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "sisu-pdf_7.2.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sisu/sisu-pdf_7.2.0-1_all.deb"

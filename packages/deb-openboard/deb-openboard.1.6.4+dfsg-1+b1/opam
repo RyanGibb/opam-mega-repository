@@ -31,7 +31,7 @@ depends: [
   "deb-libx11-6"
   "deb-openboard-common" {>= "1.6.4+dfsg-1"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "openboard_1.6.4+dfsg-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/openboard/openboard_1.6.4+dfsg-1+b1_amd64.deb"

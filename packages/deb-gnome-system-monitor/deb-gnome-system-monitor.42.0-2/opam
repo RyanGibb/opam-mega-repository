@@ -22,7 +22,7 @@ depends: [
   "deb-libsigc++-2-0-0v5" {>= "2.2.0"}
   "deb-libstdc++6" {>= "11"}
   "deb-libsystemd0"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-system-monitor_42.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-system-monitor/gnome-system-monitor_42.0-2_amd64.deb"

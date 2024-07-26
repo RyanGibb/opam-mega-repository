@@ -9,7 +9,7 @@ depends: [
   "deb-ifupdown"
   "deb-init-system-helpers" {>= "1.18~"}
   "deb-lsb-base" {>= "4.1+Debian3"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "resolvconf_1.79_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/resolvconf/resolvconf_1.79_all.deb"

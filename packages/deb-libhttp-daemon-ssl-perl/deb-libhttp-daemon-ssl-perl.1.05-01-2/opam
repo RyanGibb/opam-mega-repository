@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libio-socket-ssl-perl"
   "deb-perl"
-  ("deb-libhttp-daemon-perl" | "deb- libwww-perl" {< "6"})
+  ("deb-libhttp-daemon-perl" | "deb-libwww-perl" {< "6"})
 ]
 extra-source "libhttp-daemon-ssl-perl_1.05-01-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libh/libhttp-daemon-ssl-perl/libhttp-daemon-ssl-perl_1.05-01-2_all.deb"

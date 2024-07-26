@@ -14,7 +14,7 @@ depends: [
   "deb-libopenmpi3" {>= "4.1.4"}
   "deb-libpython3-11" {>= "3.11.0"}
   "deb-libstdc++6" {>= "11"}
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "getdp-sparskit_3.2.0+dfsg1-1.1+b9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/getdp/getdp-sparskit_3.2.0+dfsg1-1.1+b9_amd64.deb"

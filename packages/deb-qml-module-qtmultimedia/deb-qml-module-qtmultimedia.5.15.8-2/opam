@@ -14,8 +14,8 @@ depends: [
   "deb-libqt5qml5" {>= "5.15.8+dfsg~"}
   "deb-libstdc++6" {>= "5"}
   "deb-qml-module-qtquick2"
-  ("deb-libqt5gui5" {>= "5.15.8+dfsg~"} | "deb- libqt5gui5-gles" {>= "5.15.8+dfsg~"})
-  ("deb-libqt5quick5" {>= "5.15.8+dfsg~"} | "deb- libqt5quick5-gles" {>= "5.15.8+dfsg~"})
+  ("deb-libqt5gui5" {>= "5.15.8+dfsg~"} | "deb-libqt5gui5-gles" {>= "5.15.8+dfsg~"})
+  ("deb-libqt5quick5" {>= "5.15.8+dfsg~"} | "deb-libqt5quick5-gles" {>= "5.15.8+dfsg~"})
 ]
 extra-source "qml-module-qtmultimedia_5.15.8-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtmultimedia-opensource-src/qml-module-qtmultimedia_5.15.8-2_amd64.deb"

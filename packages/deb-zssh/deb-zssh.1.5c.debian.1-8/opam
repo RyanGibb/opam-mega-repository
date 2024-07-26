@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.27"}
   "deb-libreadline8" {>= "6.0"}
   "deb-lrzsz"
-  ("deb-openssh-client" | "deb- telnet" | "deb- telnet-ssl")
+  ("deb-openssh-client" | "deb-telnet" | "deb-telnet-ssl")
 ]
 extra-source "zssh_1.5c.debian.1-8_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/z/zssh/zssh_1.5c.debian.1-8_amd64.deb"

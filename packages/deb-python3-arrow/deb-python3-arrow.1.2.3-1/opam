@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-python3-any"
   "deb-python3-dateutil"
-  ("deb-python3-typing-extensions" | "deb- python3" {> "3.8"})
+  ("deb-python3-typing-extensions" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-arrow_1.2.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-arrow/python3-arrow_1.2.3-1_all.deb"

@@ -14,7 +14,7 @@ depends: [
   "deb-libsamplerate0" {>= "0.1.7"}
   "deb-libtinfo6" {>= "6"}
   "deb-lsb-base" {>= "3.0-9"}
-  ("deb-whiptail" | "deb- dialog")
+  ("deb-whiptail" | "deb-dialog")
 ]
 extra-source "alsa-utils_1.1.8-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/alsa-utils/alsa-utils_1.1.8-2_amd64.deb"

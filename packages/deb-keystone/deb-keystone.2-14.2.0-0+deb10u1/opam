@@ -18,7 +18,7 @@ depends: [
   "deb-python3-openstackclient"
   "deb-sqlite3"
   "deb-ssl-cert"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "keystone_2:14.2.0-0+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/keystone/keystone_14.2.0-0+deb10u1_all.deb"

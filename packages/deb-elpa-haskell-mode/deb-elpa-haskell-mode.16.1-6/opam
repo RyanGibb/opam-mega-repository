@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-emacsen-common"
-  ("deb-emacs25" | "deb- emacs24" | "deb- emacs-snapshot" | "deb- emacs")
+  ("deb-emacs25" | "deb-emacs24" | "deb-emacs-snapshot" | "deb-emacs")
 ]
 extra-source "elpa-haskell-mode_16.1-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/haskell-mode/elpa-haskell-mode_16.1-6_all.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-dh-elpa-helper"
   "deb-emacsen-common"
-  ("deb-emacs-snapshot" | "deb- emacs")
+  ("deb-emacs-snapshot" | "deb-emacs")
 ]
 extra-source "elpa-haskell-mode_17.2-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/haskell-mode/elpa-haskell-mode_17.2-5_all.deb"

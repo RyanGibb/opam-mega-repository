@@ -10,7 +10,7 @@ depends: [
   "deb-jekyll" {>= "3.4"}
   "deb-ruby-octokit" {< "5~"}
   "deb-ruby-octokit" {>= "4.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-jekyll-github-metadata_2.13.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-jekyll-github-metadata/ruby-jekyll-github-metadata_2.13.0-1_all.deb"

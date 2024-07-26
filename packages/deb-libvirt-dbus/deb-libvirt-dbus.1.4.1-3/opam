@@ -15,8 +15,8 @@ depends: [
   "deb-libvirt-glib-1-0-0" {>= "0.0.7~"}
   "deb-libvirt0" {>= "3.0.0"}
   "deb-polkitd" {>= "121+compat0.1-2"}
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
-  ("deb-default-dbus-system-bus" | "deb- dbus-system-bus" | "deb- dbus")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus")
+  ("deb-default-dbus-system-bus" | "deb-dbus-system-bus" | "deb-dbus")
 ]
 extra-source "libvirt-dbus_1.4.1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libv/libvirt-dbus/libvirt-dbus_1.4.1-3_amd64.deb"

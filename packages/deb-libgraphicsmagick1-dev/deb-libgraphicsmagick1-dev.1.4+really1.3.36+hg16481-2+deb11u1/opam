@@ -27,7 +27,7 @@ depends: [
   "deb-libzstd-dev"
   "deb-pkg-config"
   "deb-x11proto-core-dev"
-  ("deb-zlib1g-dev" | "deb- libz-dev")
+  ("deb-zlib1g-dev" | "deb-libz-dev")
 ]
 extra-source "libgraphicsmagick1-dev_1.4+really1.3.36+hg16481-2+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/graphicsmagick/libgraphicsmagick1-dev_1.4+really1.3.36+hg16481-2+deb11u1_amd64.deb"

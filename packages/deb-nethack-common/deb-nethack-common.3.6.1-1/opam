@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.14"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "nethack-common_3.6.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/nethack/nethack-common_3.6.1-1_amd64.deb"

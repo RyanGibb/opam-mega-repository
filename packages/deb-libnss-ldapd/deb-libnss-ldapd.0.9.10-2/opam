@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.17"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-nslcd" {>= "0.9.0"} | "deb- nslcd-2")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-nslcd" {>= "0.9.0"} | "deb-nslcd-2")
 ]
 conflicts: [
   "deb-libnss-ldap"

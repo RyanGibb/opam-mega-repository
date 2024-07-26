@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r pyqt5-dev"]
 ]
 depends: [
-  ("deb-python3-sip-dev" | "deb- python-sip-dev")
+  ("deb-python3-sip-dev" | "deb-python-sip-dev")
 ]
 extra-source "pyqt5-dev_5.11.3+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pyqt5/pyqt5-dev_5.11.3+dfsg-1_all.deb"

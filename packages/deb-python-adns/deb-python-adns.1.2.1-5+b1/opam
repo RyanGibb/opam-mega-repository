@@ -10,7 +10,7 @@ depends: [
   "deb-libc6" {>= "2.2.5"}
   "deb-python" {< "2.8"}
   "deb-python" {>= "2.6.6-7~"}
-  ("deb-python2-6" | "deb- python2-7")
+  ("deb-python2-6" | "deb-python2-7")
 ]
 conflicts: [
   "deb-python2-3-adns" {< "1.0.0-6.2"}

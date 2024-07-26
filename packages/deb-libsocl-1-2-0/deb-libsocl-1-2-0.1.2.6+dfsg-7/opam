@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.14"}
-  ("deb-libstarpu-1-2-5" {>= "1.2.5+dfsg~"} | "deb- libstarpu-any-1-2-5")
+  ("deb-libstarpu-1-2-5" {>= "1.2.5+dfsg~"} | "deb-libstarpu-any-1-2-5")
 ]
 conflicts: [
   "deb-libsocl-contrib-1-2-0"

@@ -12,7 +12,7 @@ depends: [
   "deb-libiv-unidraw2" {>= "2.0.4a1"}
   "deb-libiv2" {>= "2.0.4a1"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-xterm" | "deb- x-terminal-emulator")
+  ("deb-xterm" | "deb-x-terminal-emulator")
 ]
 conflicts: [
   "deb-ivtools-dev" {< "1.2.8a1"}

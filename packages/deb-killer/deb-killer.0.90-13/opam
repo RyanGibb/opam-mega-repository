@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-perl-any"
   "deb-xprintidle"
-  ("deb-default-mta" | "deb- exim4" | "deb- mail-transport-agent")
+  ("deb-default-mta" | "deb-exim4" | "deb-mail-transport-agent")
 ]
 extra-source "killer_0.90-13_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/killer/killer_0.90-13_all.deb"

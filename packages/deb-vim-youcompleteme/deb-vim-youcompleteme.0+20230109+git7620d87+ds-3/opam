@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-python3-any"
   "deb-python3-future"
-  ("deb-vim-nox" | "deb- vim-python3" | "deb- neovim")
+  ("deb-vim-nox" | "deb-vim-python3" | "deb-neovim")
   ("deb-ycmd" | "deb-ycmd")
 ]
 extra-source "vim-youcompleteme_0+20230109+git7620d87+ds-3_amd64.deb" {

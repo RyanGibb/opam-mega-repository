@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-rails"
   "deb-ruby-rqrcode" {>= "0.4.2"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-rqrcode-rails3_0.1.7-1.1+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-rqrcode-rails3/ruby-rqrcode-rails3_0.1.7-1.1+deb11u1_all.deb"

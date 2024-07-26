@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-chronic"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-delorean_2.1.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-delorean/ruby-delorean_2.1.0-2_all.deb"

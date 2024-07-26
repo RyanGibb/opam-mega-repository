@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r fonts-tlwg-loma"]
 ]
 depends: [
-  ("deb-fonts-tlwg-loma-ttf" | "deb- fonts-tlwg-loma-otf")
+  ("deb-fonts-tlwg-loma-ttf" | "deb-fonts-tlwg-loma-otf")
 ]
 extra-source "fonts-tlwg-loma_1:0.7.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fonts-tlwg/fonts-tlwg-loma_0.7.1-1_all.deb"

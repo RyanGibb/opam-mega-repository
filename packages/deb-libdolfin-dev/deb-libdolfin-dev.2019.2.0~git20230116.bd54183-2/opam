@@ -27,9 +27,9 @@ depends: [
   "deb-pkg-config"
   "deb-python3-ffc" {< "2019.3~"}
   "deb-python3-ffc" {>= "2019.2"}
-  ("deb-g++" | "deb- c++-compiler")
-  ("deb-libpetsc-real3-18-dev" | "deb- libpetsc3-18-4-dev")
-  ("deb-libslepc-real3-18-dev" | "deb- libslepc3-18-2-dev")
+  ("deb-g++" | "deb-c++-compiler")
+  ("deb-libpetsc-real3-18-dev" | "deb-libpetsc3-18-4-dev")
+  ("deb-libslepc-real3-18-dev" | "deb-libslepc3-18-2-dev")
 ]
 conflicts: [
   "deb-libdolfin0-dev"

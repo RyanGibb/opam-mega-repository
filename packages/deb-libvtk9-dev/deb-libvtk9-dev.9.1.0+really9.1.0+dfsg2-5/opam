@@ -48,8 +48,8 @@ depends: [
   "deb-vtk9" {= "9.1.0+really9.1.0+dfsg2-5"}
   "deb-x11proto-core-dev"
   "deb-zlib1g-dev"
-  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
-  ("deb-libglu1-mesa-dev" | "deb- libglu-dev")
+  ("deb-libgl1-mesa-dev" | "deb-libgl-dev")
+  ("deb-libglu1-mesa-dev" | "deb-libglu-dev")
 ]
 extra-source "libvtk9-dev_9.1.0+really9.1.0+dfsg2-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/vtk9/libvtk9-dev_9.1.0+really9.1.0+dfsg2-5_amd64.deb"

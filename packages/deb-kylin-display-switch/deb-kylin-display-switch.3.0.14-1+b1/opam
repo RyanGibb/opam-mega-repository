@@ -23,8 +23,8 @@ depends: [
   "deb-libx11-6"
   "deb-libxi6" {>= "2-1.2.0"}
   "deb-libxtst6"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb-libqt5gui5-gles" {>= "5.7.0"})
 ]
 extra-source "kylin-display-switch_3.0.14-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kylin-display-switch/kylin-display-switch_3.0.14-1+b1_amd64.deb"

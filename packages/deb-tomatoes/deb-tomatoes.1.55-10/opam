@@ -14,7 +14,7 @@ depends: [
   "deb-libsdl1-2-compat-shim"
   "deb-libstdc++6" {>= "5.2"}
   "deb-tomatoes-data" {= "1.55-10"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "tomatoes_1.55-10_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tomatoes/tomatoes_1.55-10_amd64.deb"

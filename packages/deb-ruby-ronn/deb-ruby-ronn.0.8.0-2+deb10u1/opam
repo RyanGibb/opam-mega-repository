@@ -10,7 +10,7 @@ depends: [
   "deb-ruby-mustache" {>= "0.7.0"}
   "deb-ruby-nokogiri" {>= "1.9.0"}
   "deb-ruby-rdiscount" {>= "2.0.7"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-ronn_0.8.0-2+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-ronn/ruby-ronn_0.8.0-2+deb10u1_all.deb"

@@ -30,8 +30,8 @@ depends: [
   "deb-php-xml"
   "deb-php-zip"
   "deb-phpqrcode"
-  ("deb-default-mysql-client" | "deb- virtual-mysql-client")
-  ("deb-libapache2-mod-php" | "deb- php-cgi" | "deb- php-fpm")
+  ("deb-default-mysql-client" | "deb-virtual-mysql-client")
+  ("deb-libapache2-mod-php" | "deb-php-cgi" | "deb-php-fpm")
 ]
 extra-source "ocsinventory-reports_2.8.1+dfsg1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/ocsinventory-server/ocsinventory-reports_2.8.1+dfsg1-1_all.deb"

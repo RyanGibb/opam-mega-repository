@@ -40,7 +40,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.13.0~"}
   "deb-libqt5xml5" {>= "5.13.0~"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.13.0~"} | "deb- libqt5gui5-gles" {>= "5.13.0~"})
+  ("deb-libqt5gui5" {>= "5.13.0~"} | "deb-libqt5gui5-gles" {>= "5.13.0~"})
 ]
 extra-source "akonadi-import-wizard_4:20.08.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/akonadi-import-wizard/akonadi-import-wizard_20.08.3-1_amd64.deb"

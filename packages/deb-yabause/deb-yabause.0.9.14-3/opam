@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r yabause"]
 ]
 depends: [
-  ("deb-yabause-qt" | "deb- yabause-gtk")
+  ("deb-yabause-qt" | "deb-yabause-gtk")
 ]
 extra-source "yabause_0.9.14-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/y/yabause/yabause_0.9.14-3_all.deb"

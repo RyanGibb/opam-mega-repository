@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.4"}
   "deb-libpocl2" {= "1.2-5"}
-  ("deb-ocl-icd-libopencl1" | "deb- libopencl1")
+  ("deb-ocl-icd-libopencl1" | "deb-libopencl1")
 ]
 extra-source "libpocl-dev_1.2-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pocl/libpocl-dev_1.2-5_amd64.deb"

@@ -9,8 +9,8 @@ depends: [
   "deb-autotools-dev"
   "deb-cpp"
   "deb-file"
-  ("deb-gcc" | "deb- c-compiler")
-  ("deb-libc6-dev" | "deb- libc-dev")
+  ("deb-gcc" | "deb-c-compiler")
+  ("deb-libc6-dev" | "deb-libc-dev")
 ]
 conflicts: [
   "deb-autoconf" {<= "2.12"}

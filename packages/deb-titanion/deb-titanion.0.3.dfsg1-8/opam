@@ -13,7 +13,7 @@ depends: [
   "deb-libsdl-mixer1-2" {>= "1.2.12"}
   "deb-libsdl1-2-compat-shim"
   "deb-titanion-data" {= "0.3.dfsg1-8"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "titanion_0.3.dfsg1-8_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/titanion/titanion_0.3.dfsg1-8_amd64.deb"

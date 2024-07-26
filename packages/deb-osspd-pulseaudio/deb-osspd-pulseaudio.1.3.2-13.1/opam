@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.34"}
   "deb-libpulse0" {>= "0.99.1"}
-  ("deb-pulseaudio" | "deb- pipewire-pulse")
+  ("deb-pulseaudio" | "deb-pipewire-pulse")
 ]
 extra-source "osspd-pulseaudio_1.3.2-13.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/osspd/osspd-pulseaudio_1.3.2-13.1_amd64.deb"

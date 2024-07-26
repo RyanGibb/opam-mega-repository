@@ -10,7 +10,7 @@ depends: [
   "deb-libjcommon-java"
   "deb-libjdom1-java"
   "deb-libjfreechart-java" {>= "1.0.19"}
-  ("deb-default-jre" | "deb- java7-runtime")
+  ("deb-default-jre" | "deb-java7-runtime")
 ]
 conflicts: [
   "deb-statsvn" {< "0.5.0"}

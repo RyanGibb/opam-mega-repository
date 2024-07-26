@@ -17,7 +17,7 @@ depends: [
   "deb-libnss3" {>= "2-3.13.4-2~"}
   "deb-libsasl2-2" {>= "2.1.27+dfsg"}
   "deb-libsocket-getaddrinfo-perl"
-  ("deb-libperl4-corelibs-perl" | "deb- perl" {< "5.12.3-7"})
+  ("deb-libperl4-corelibs-perl" | "deb-perl" {< "5.12.3-7"})
 ]
 conflicts: [
   "deb-389-ds-base" {< "1.4.0.20-1"}

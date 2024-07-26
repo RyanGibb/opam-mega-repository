@@ -10,7 +10,7 @@ depends: [
   "deb-libgcc1" {>= "1-3.0"}
   "deb-libsdl1-2-compat-shim"
   "deb-libstdc++6" {>= "5"}
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
 ]
 extra-source "primrose_6+dfsg1-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/primrose/primrose_6+dfsg1-4_amd64.deb"

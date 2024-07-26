@@ -12,7 +12,7 @@ depends: [
   "deb-python-docutils"
   "deb-python-pkg-resources"
   "deb-python-pyparsing"
-  ("deb-python" {>= "2.7"} | "deb- python-argparse")
+  ("deb-python" {>= "2.7"} | "deb-python-argparse")
 ]
 extra-source "python-catkin-pkg_0.4.10-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ros-catkin-pkg/python-catkin-pkg_0.4.10-1_all.deb"

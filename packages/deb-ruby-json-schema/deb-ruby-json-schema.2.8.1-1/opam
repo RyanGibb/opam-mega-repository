@@ -11,7 +11,7 @@ depends: [
   "deb-ruby-multi-json"
   "deb-ruby-uuidtools"
   "deb-ruby-yajl"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-json-schema_2.8.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-json-schema/ruby-json-schema_2.8.1-1_all.deb"

@@ -19,7 +19,7 @@ depends: [
   "deb-python3-tzlocal"
   "deb-python3-urllib3"
   "deb-python3-yaml"
-  ("deb-python3-etcd" {>= "0.4.3"} | "deb- python3-consul" {>= "0.7.0"} | "deb- python3-kazoo" | "deb- python3-kubernetes")
+  ("deb-python3-etcd" {>= "0.4.3"} | "deb-python3-consul" {>= "0.7.0"} | "deb-python3-kazoo" | "deb-python3-kubernetes")
 ]
 extra-source "patroni_1.5.5-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/patroni/patroni_1.5.5-2_all.deb"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r minetest-mod-protector"]
 ]
 depends: [
-  ("deb-minetest" | "deb- minetest-server")
+  ("deb-minetest" | "deb-minetest-server")
 ]
 extra-source "minetest-mod-protector_20210923+reallyprotector-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/minetest-mod-protector/minetest-mod-protector_20210923+reallyprotector-2_all.deb"

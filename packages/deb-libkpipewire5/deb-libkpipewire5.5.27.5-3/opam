@@ -13,8 +13,8 @@ depends: [
   "deb-libpipewire-0-3-0" {>= "0.3.1"}
   "deb-libqt5core5a" {>= "5.15.1"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.8.0"} | "deb- libqt5gui5-gles" {>= "5.8.0"})
-  ("deb-libqt5quick5" {>= "5.14.1"} | "deb- libqt5quick5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.8.0"} | "deb-libqt5gui5-gles" {>= "5.8.0"})
+  ("deb-libqt5quick5" {>= "5.14.1"} | "deb-libqt5quick5-gles" {>= "5.14.1"})
 ]
 extra-source "libkpipewire5_5.27.5-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kpipewire/libkpipewire5_5.27.5-3_amd64.deb"

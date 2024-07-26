@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-emacsen-common"
-  ("deb-emacs" | "deb- emacsen")
+  ("deb-emacs" | "deb-emacsen")
 ]
 extra-source "howm_1.4.4-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/howm/howm_1.4.4-3_all.deb"

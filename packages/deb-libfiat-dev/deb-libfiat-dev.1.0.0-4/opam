@@ -9,7 +9,7 @@ depends: [
   "deb-fiat-utils" {= "1.0.0-4"}
   "deb-libfckit-dev"
   "deb-libfiat-0" {= "1.0.0-4"}
-  ("deb-gfortran-12" | "deb- gfortran-mod-15")
+  ("deb-gfortran-12" | "deb-gfortran-mod-15")
 ]
 extra-source "libfiat-dev_1.0.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fiat-ecmwf/libfiat-dev_1.0.0-4_amd64.deb"

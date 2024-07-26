@@ -20,7 +20,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libtinyxml2-6-2v5"
   "deb-pink-pony-data" {= "1.4.1-2.1"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "pink-pony_1.4.1-2.1+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pink-pony/pink-pony_1.4.1-2.1+b2_amd64.deb"

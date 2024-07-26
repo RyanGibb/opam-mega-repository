@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-less"
   "deb-ruby-highline" {>= "1.7.2"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-commander_4.4.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-commander/ruby-commander_4.4.5-1_all.deb"

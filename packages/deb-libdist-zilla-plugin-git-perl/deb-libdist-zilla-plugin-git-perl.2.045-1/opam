@@ -24,7 +24,7 @@ depends: [
   "deb-libtry-tiny-perl"
   "deb-libversion-next-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.25.1"} | "deb- libscalar-list-utils-perl" {>= "1-1.45"})
+  ("deb-perl" {>= "5.25.1"} | "deb-libscalar-list-utils-perl" {>= "1-1.45"})
 ]
 extra-source "libdist-zilla-plugin-git-perl_2.045-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libd/libdist-zilla-plugin-git-perl/libdist-zilla-plugin-git-perl_2.045-1_all.deb"

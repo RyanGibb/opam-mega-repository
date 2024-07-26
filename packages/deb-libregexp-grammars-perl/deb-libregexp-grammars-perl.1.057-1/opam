@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libb-hooks-parser-perl" {>= "0.16"}
   "deb-perl-any"
-  ("deb-perl" {>= "5.20"} | "deb- perl" {< "5.18"})
+  ("deb-perl" {>= "5.20"} | "deb-perl" {< "5.18"})
 ]
 extra-source "libregexp-grammars-perl_1.057-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libr/libregexp-grammars-perl/libregexp-grammars-perl_1.057-1_all.deb"

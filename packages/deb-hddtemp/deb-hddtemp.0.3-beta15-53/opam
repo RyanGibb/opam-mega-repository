@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.15"}
   "deb-lsb-base" {>= "3.0-3"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "hddtemp_0.3-beta15-53_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/hddtemp/hddtemp_0.3-beta15-53_amd64.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-python3-any"
   "deb-python3-mdurl"
-  ("deb-python3-typing-extensions" | "deb- python3" {> "3.8"})
+  ("deb-python3-typing-extensions" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-markdown-it_2.1.0-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/markdown-it-py/python3-markdown-it_2.1.0-5_all.deb"

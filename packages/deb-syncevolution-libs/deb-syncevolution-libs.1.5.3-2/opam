@@ -14,7 +14,7 @@ depends: [
   "deb-libneon27-gnutls"
   "deb-libstdc++6" {>= "5.2"}
   "deb-libsyncevolution0" {>= "1.5.2-3~"}
-  ("deb-syncevolution-libs-gnome" {= "1.5.3-2"} | "deb- syncevolution-libs-kde" {= "1.5.3-2"})
+  ("deb-syncevolution-libs-gnome" {= "1.5.3-2"} | "deb-syncevolution-libs-kde" {= "1.5.3-2"})
 ]
 extra-source "syncevolution-libs_1.5.3-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/syncevolution/syncevolution-libs_1.5.3-2_amd64.deb"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-jnunemaker-matchy"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-jnunemaker-matchy_0.4.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-jnunemaker-matchy/ruby-jnunemaker-matchy_0.4.0-1_all.deb"

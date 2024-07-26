@@ -11,7 +11,7 @@ depends: [
   "deb-ruby-eventmachine" {>= "0.7.2"}
   "deb-ruby-hoe" {>= "1.1.1"}
   "deb-sysvinit-utils"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "stompserver_0.9.9gem-4.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/stompserver/stompserver_0.9.9gem-4.1_all.deb"

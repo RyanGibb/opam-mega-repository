@@ -19,7 +19,7 @@ depends: [
   "deb-libqt5printsupport5" {>= "5.4"}
   "deb-libqt5widgets5" {>= "5.4"}
   "deb-libstdc++6" {>= "4.1.1"}
-  ("deb-cron" | "deb- anacron")
+  ("deb-cron" | "deb-anacron")
 ]
 extra-source "kde-config-cron_4:17.08.3-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kcron/kde-config-cron_17.08.3-2_amd64.deb"

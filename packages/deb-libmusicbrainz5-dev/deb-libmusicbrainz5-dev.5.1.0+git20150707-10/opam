@@ -9,7 +9,7 @@ depends: [
   "deb-libmusicbrainz5-2" {= "5.1.0+git20150707-10"}
   "deb-libmusicbrainz5cc2v5" {= "5.1.0+git20150707-10"}
   "deb-libxml2-dev"
-  ("deb-libneon27-gnutls-dev" | "deb- libneon-dev")
+  ("deb-libneon27-gnutls-dev" | "deb-libneon-dev")
 ]
 extra-source "libmusicbrainz5-dev_5.1.0+git20150707-10_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libm/libmusicbrainz5/libmusicbrainz5-dev_5.1.0+git20150707-10_amd64.deb"

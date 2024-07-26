@@ -55,9 +55,9 @@ depends: [
   "deb-sysvinit-utils"
   "deb-zip"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-default-mysql-client" | "deb- virtual-mysql-client")
-  ("deb-php-mysql" | "deb- php5-mysql")
-  ("deb-rsyslog" | "deb- system-log-daemon")
+  ("deb-default-mysql-client" | "deb-virtual-mysql-client")
+  ("deb-php-mysql" | "deb-php5-mysql")
+  ("deb-rsyslog" | "deb-system-log-daemon")
 ]
 extra-source "zoneminder_1.36.33+dfsg1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/z/zoneminder/zoneminder_1.36.33+dfsg1-1_amd64.deb"

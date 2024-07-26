@@ -11,7 +11,7 @@ depends: [
   "deb-libmariadb3" {>= "3.0.0"}
   "deb-libssl1-1" {>= "1.1.0"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-default-mysql-client" | "deb- virtual-mysql-client")
+  ("deb-default-mysql-client" | "deb-virtual-mysql-client")
 ]
 extra-source "kamailio-mysql-modules_5.2.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kamailio/kamailio-mysql-modules_5.2.1-1_amd64.deb"

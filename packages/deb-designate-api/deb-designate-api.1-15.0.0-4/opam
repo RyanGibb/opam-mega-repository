@@ -16,7 +16,7 @@ depends: [
   "deb-python3-q-text-as-data"
   "deb-sysvinit-utils"
   "deb-uwsgi-plugin-python3"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "designate-api_1:15.0.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/designate/designate-api_15.0.0-4_all.deb"

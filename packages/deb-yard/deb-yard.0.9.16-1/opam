@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libjs-jquery"
   "deb-ruby-gettext" {>= "2.2.1~"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "yard_0.9.16-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/y/yard/yard_0.9.16-1_all.deb"

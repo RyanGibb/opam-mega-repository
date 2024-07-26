@@ -24,7 +24,7 @@ depends: [
   "deb-libpangocairo-1-0-0" {>= "1.14.0"}
   "deb-libsecret-1-0" {>= "0.7"}
   "deb-shared-mime-info"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "evince_3.30.2-3+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/evince/evince_3.30.2-3+deb10u1_amd64.deb"

@@ -23,7 +23,7 @@ depends: [
   "deb-memcached"
   "deb-sogo-common" {= "4.0.7-1+deb10u2"}
   "deb-zip"
-  ("deb-tmpreaper" | "deb- systemd")
+  ("deb-tmpreaper" | "deb-systemd")
 ]
 extra-source "sogo_4.0.7-1+deb10u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sogo/sogo_4.0.7-1+deb10u2_amd64.deb"

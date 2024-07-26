@@ -12,7 +12,7 @@ depends: [
   "deb-python3-keystoneclient"
   "deb-python3-q-text-as-data"
   "deb-zaqar-common" {= "15.0.0-1"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "zaqar-server_15.0.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/z/zaqar/zaqar-server_15.0.0-1_all.deb"

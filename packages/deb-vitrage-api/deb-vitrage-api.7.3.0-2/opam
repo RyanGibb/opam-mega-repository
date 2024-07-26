@@ -10,7 +10,7 @@ depends: [
   "deb-lsb-base" {>= "3.0-6"}
   "deb-python3-vitrage" {= "7.3.0-2"}
   "deb-vitrage-common" {= "7.3.0-2"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "vitrage-api_7.3.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/vitrage/vitrage-api_7.3.0-2_all.deb"

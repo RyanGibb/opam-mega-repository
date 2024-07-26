@@ -10,7 +10,7 @@ depends: [
   "deb-libc6" {>= "2.34"}
   "deb-libkrb5-26-heimdal" {>= "1.4.0+git20110226"}
   "deb-libroken19-heimdal" {>= "1.4.0+git20110226"}
-  ("deb-openbsd-inetd" | "deb- inet-superserver")
+  ("deb-openbsd-inetd" | "deb-inet-superserver")
 ]
 extra-source "heimdal-servers_7.8.git20221117.28daf24+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/heimdal/heimdal-servers_7.8.git20221117.28daf24+dfsg-2_amd64.deb"

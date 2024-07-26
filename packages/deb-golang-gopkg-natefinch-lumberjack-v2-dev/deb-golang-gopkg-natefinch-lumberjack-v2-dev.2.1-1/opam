@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-golang-go"
   "deb-golang-gopkg-yaml-v2-dev"
-  ("deb-golang-toml-dev" | "deb- golang-github-burntsushi-toml")
+  ("deb-golang-toml-dev" | "deb-golang-github-burntsushi-toml")
 ]
 extra-source "golang-gopkg-natefinch-lumberjack.v2-dev_2.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/golang-gopkg-natefinch-lumberjack.v2/golang-gopkg-natefinch-lumberjack.v2-dev_2.1-1_all.deb"

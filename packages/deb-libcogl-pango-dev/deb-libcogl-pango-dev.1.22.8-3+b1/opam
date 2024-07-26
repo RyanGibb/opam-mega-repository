@@ -18,7 +18,7 @@ depends: [
   "deb-libxdamage-dev"
   "deb-libxext-dev"
   "deb-libxfixes-dev"
-  ("deb-libgdk-pixbuf-2-0-dev" {>= "2.0"} | "deb- libgdk-pixbuf2-0-dev" {>= "2.0"})
+  ("deb-libgdk-pixbuf-2-0-dev" {>= "2.0"} | "deb-libgdk-pixbuf2-0-dev" {>= "2.0"})
 ]
 extra-source "libcogl-pango-dev_1.22.8-3+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cogl/libcogl-pango-dev_1.22.8-3+b1_amd64.deb"

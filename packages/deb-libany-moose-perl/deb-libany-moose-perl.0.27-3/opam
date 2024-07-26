@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl-any"
-  ("deb-libmouse-perl" | "deb- libmoose-perl")
+  ("deb-libmouse-perl" | "deb-libmoose-perl")
 ]
 extra-source "libany-moose-perl_0.27-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/liba/libany-moose-perl/libany-moose-perl_0.27-3_all.deb"

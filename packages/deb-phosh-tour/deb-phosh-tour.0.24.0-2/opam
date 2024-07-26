@@ -10,7 +10,7 @@ depends: [
   "deb-libc6" {>= "2.34"}
   "deb-libglib2-0-0" {>= "2.67.3+git20210214"}
   "deb-libgtk-4-1" {>= "4.0.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "phosh-tour_0.24.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/phosh-tour/phosh-tour_0.24.0-2_amd64.deb"

@@ -26,8 +26,8 @@ depends: [
   "deb-sqlite3"
   "deb-ucf"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-dbconfig-mysql" | "deb- dbconfig-sqlite3" | "deb- dbconfig-pgsql" | "deb- dbconfig-no-thanks")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-dbconfig-mysql" | "deb-dbconfig-sqlite3" | "deb-dbconfig-pgsql" | "deb-dbconfig-no-thanks")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "glewlwyd_2.7.5-3+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/glewlwyd/glewlwyd_2.7.5-3+deb12u1_amd64.deb"

@@ -10,7 +10,7 @@ depends: [
   "deb-python3-editobj3"
   "deb-python3-pyqt5"
   "deb-timidity"
-  ("deb-evince" | "deb- okular" | "deb- mupdf" | "deb- xpdf")
+  ("deb-evince" | "deb-okular" | "deb-mupdf" | "deb-xpdf")
 ]
 extra-source "songwrite_3-0.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/songwrite/songwrite_3-0.2-1_all.deb"

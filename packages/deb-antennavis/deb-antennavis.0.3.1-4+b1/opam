@@ -11,8 +11,8 @@ depends: [
   "deb-libtk8-6" {>= "8.6.0"}
   "deb-libx11-6"
   "deb-libxmu6"
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "antennavis_0.3.1-4+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/antennavis/antennavis_0.3.1-4+b1_amd64.deb"

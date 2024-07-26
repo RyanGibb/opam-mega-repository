@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r libmpfr-doc"]
 ]
 depends: [
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 extra-source "libmpfr-doc_4.1.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mpfr4/libmpfr-doc_4.1.0-3_all.deb"

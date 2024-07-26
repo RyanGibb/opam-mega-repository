@@ -14,7 +14,7 @@ depends: [
   "deb-libqt5xml5" {>= "5.0.2"}
   "deb-libsndfile1" {>= "1.0.20"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "dgedit_0.10.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dgedit/dgedit_0.10.0-2_amd64.deb"

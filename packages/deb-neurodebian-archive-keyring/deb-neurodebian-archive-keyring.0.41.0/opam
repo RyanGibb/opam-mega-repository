@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-dirmngr"
-  ("deb-gnupg2" | "deb- gnupg")
+  ("deb-gnupg2" | "deb-gnupg")
 ]
 extra-source "neurodebian-archive-keyring_0.41.0_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/neurodebian/neurodebian-archive-keyring_0.41.0_all.deb"

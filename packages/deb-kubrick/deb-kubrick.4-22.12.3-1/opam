@@ -21,8 +21,8 @@ depends: [
   "deb-libqt5svg5" {>= "5.15.2~"}
   "deb-libqt5widgets5" {>= "5.15.2~"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
-  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+  ("deb-libglu1-mesa" | "deb-libglu1")
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb-libqt5gui5-gles" {>= "5.15.2~"})
 ]
 extra-source "kubrick_4:22.12.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kubrick/kubrick_22.12.3-1_amd64.deb"

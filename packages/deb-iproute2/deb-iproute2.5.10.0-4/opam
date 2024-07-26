@@ -16,7 +16,7 @@ depends: [
   "deb-libmnl0" {>= "1.0.3-4~"}
   "deb-libselinux1" {>= "3.1~"}
   "deb-libxtables12" {>= "1.6.0+snapshot20161117"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 conflicts: [
   "deb-arpd"

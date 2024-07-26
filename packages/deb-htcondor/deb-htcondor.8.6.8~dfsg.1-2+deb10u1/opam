@@ -54,7 +54,7 @@ depends: [
   "deb-perl-any"
   "deb-python"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "htcondor_8.6.8~dfsg.1-2+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/condor/htcondor_8.6.8~dfsg.1-2+deb10u1_amd64.deb"

@@ -16,7 +16,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.14.1"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-minizinc" {>= "2.4.1"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "minizinc-ide_2.5.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/minizinc-ide/minizinc-ide_2.5.3-1_amd64.deb"

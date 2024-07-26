@@ -9,7 +9,7 @@ depends: [
   "deb-python" {< "2.8"}
   "deb-python" {>= "2.6.6-7~"}
   "deb-python-pysnmp4"
-  ("deb-python2-7" | "deb- python2-6")
+  ("deb-python2-7" | "deb-python2-6")
 ]
 extra-source "python-pysnmp4-mibs_0.1.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-pysnmp4-mibs/python-pysnmp4-mibs_0.1.3-1_all.deb"

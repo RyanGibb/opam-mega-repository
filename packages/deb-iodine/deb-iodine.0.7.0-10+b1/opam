@@ -12,8 +12,8 @@ depends: [
   "deb-lsb-base"
   "deb-net-tools"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-udev" | "deb- makedev")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-udev" | "deb-makedev")
 ]
 extra-source "iodine_0.7.0-10+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/iodine/iodine_0.7.0-10+b1_amd64.deb"

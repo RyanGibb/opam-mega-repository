@@ -54,7 +54,7 @@ depends: [
   "deb-postgresql-contrib"
   "deb-starman"
   "deb-ucf"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "ledgersmb_1.6.9+ds-2+deb11u3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/ledgersmb/ledgersmb_1.6.9+ds-2+deb11u3_all.deb"

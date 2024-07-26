@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.4"}
   "deb-libx11-6"
-  ("deb-tcl" {>= "8.6.0"} | "deb- tclsh")
+  ("deb-tcl" {>= "8.6.0"} | "deb-tclsh")
 ]
 extra-source "tix_8.4.3-11_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tix/tix_8.4.3-11_amd64.deb"

@@ -16,7 +16,7 @@ depends: [
   "deb-libgstreamer1-0-dev" {>= "1.14.4"}
   "deb-liborc-0-4-dev" {>= "1-0.4.24"}
   "deb-pkg-config"
-  ("deb-libc6-dev" | "deb- libc-dev")
+  ("deb-libc6-dev" | "deb-libc-dev")
 ]
 conflicts: [
   "deb-libgstreamer-plugins-bad1-0-dev" {< "1.13.1"}

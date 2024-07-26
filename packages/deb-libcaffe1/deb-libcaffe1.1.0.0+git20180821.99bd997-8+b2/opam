@@ -24,8 +24,8 @@ depends: [
   "deb-libprotobuf23" {>= "3.12.3"}
   "deb-libpython3-9" {>= "3.9.0~b4"}
   "deb-libstdc++6" {>= "9"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-libopenblas-base" | "deb- libatlas3-base" | "deb- libmkl-rt" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-libopenblas-base" | "deb-libatlas3-base" | "deb-libmkl-rt" | "deb-libblas-so-3")
 ]
 conflicts: [
   "deb-libcaffe-cuda1"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-concurrent"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-concurrent_1.0.5-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-concurrent/ruby-concurrent_1.0.5-3_all.deb"

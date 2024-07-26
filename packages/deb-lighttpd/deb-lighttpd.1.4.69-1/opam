@@ -11,8 +11,8 @@ depends: [
   "deb-libnettle8"
   "deb-libpcre2-8-0" {>= "10.22"}
   "deb-libxxhash0" {>= "0.6.5"}
-  ("deb-media-types" | "deb- mime-support")
-  ("deb-systemd-sysv" | "deb- lsb-base")
+  ("deb-media-types" | "deb-mime-support")
+  ("deb-systemd-sysv" | "deb-lsb-base")
 ]
 conflicts: [
   "deb-lighttpd-mod-geoip"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-freeipmi-tools"
   "deb-libc6" {>= "2.4"}
-  ("deb-daemon" | "deb- systemd-sysv")
+  ("deb-daemon" | "deb-systemd-sysv")
 ]
 extra-source "prometheus-ipmi-exporter_1.2.0+ds-1+b6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/prometheus-ipmi-exporter/prometheus-ipmi-exporter_1.2.0+ds-1+b6_amd64.deb"

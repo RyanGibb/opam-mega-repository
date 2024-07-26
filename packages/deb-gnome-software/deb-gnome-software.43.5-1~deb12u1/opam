@@ -29,7 +29,7 @@ depends: [
   "deb-libxmlb2" {>= "0.3.2"}
   "deb-packagekit" {>= "1.1.11"}
   "deb-software-properties-gtk"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 conflicts: [
   "deb-sessioninstaller"

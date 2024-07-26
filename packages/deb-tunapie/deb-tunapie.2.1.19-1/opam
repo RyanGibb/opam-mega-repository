@@ -9,7 +9,7 @@ depends: [
   "deb-debconf"
   "deb-python-any" {>= "2.7.5-5~"}
   "deb-python-wxgtk3-0"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "tunapie_2.1.19-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tunapie/tunapie_2.1.19-1_all.deb"

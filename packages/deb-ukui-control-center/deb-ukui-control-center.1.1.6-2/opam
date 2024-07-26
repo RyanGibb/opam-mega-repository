@@ -48,7 +48,7 @@ depends: [
   "deb-ukui-screensaver"
   "deb-ukui-settings-daemon"
   "deb-xscreensaver-data"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "ukui-control-center_1.1.6-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/ukui-control-center/ukui-control-center_1.1.6-2_amd64.deb"

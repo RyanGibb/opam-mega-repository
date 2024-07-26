@@ -9,7 +9,7 @@ depends: [
   "deb-libimport-into-perl"
   "deb-libperlio-utf8-strict-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.17.2"} | "deb- libautodie-perl")
+  ("deb-perl" {>= "5.17.2"} | "deb-libautodie-perl")
 ]
 extra-source "libutf8-all-perl_0.024-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libu/libutf8-all-perl/libutf8-all-perl_0.024-1_all.deb"

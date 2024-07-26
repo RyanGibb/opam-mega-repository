@@ -21,8 +21,8 @@ depends: [
   "deb-libxpm4"
   "deb-libxt6"
   "deb-snd-common" {>= "23.1-1"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libglu1-mesa" | "deb-libglu1")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "snd-gui-jack_23.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/snd/snd-gui-jack_23.1-1_amd64.deb"

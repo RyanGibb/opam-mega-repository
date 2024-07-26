@@ -14,8 +14,8 @@ depends: [
   "deb-octave" {>= "4.4.1"}
   "deb-octave-statistics" {>= "1.4.0"}
   "deb-octave-struct" {>= "1.0.12"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "octave-optim_1.5.3-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/octave-optim/octave-optim_1.5.3-2_amd64.deb"

@@ -39,7 +39,7 @@ depends: [
   "deb-libxtst6"
   "deb-libzstd1" {>= "1.5.2"}
   "deb-zlib1g" {>= "1-1.2.2.3"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "goldendict-webengine_23.02.05-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/goldendict-webengine/goldendict-webengine_23.02.05-1_amd64.deb"

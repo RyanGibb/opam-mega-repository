@@ -24,9 +24,9 @@ depends: [
   "deb-php-net-nntp" {>= "1.5.0~rc1"}
   "deb-php-seclib"
   "deb-ucf"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-libapache2-mod-php" | "deb- php")
-  ("deb-php-mysql" | "deb- php-mysqlnd")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-libapache2-mod-php" | "deb-php")
+  ("deb-php-mysql" | "deb-php-mysqlnd")
 ]
 extra-source "spotweb_20130826+dfsg3-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/spotweb/spotweb_20130826+dfsg3-4_all.deb"

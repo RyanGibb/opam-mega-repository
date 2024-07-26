@@ -10,7 +10,7 @@ depends: [
   "deb-libfuse2" {>= "2.6"}
   "deb-libssl1-1" {>= "1.1.0"}
   "deb-zlib1g" {>= "1-1.2.0"}
-  ("deb-libtcl8-6" | "deb- libtcl")
+  ("deb-libtcl8-6" | "deb-libtcl")
 ]
 extra-source "fossil_1:2.15.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fossil/fossil_2.15.2-1_amd64.deb"

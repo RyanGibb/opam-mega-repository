@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r librust-malloc-buf-dev"]
 ]
 depends: [
-  ("deb-librust-libc-0-2+default-dev" | "deb- librust-libc-0-1+default-dev")
+  ("deb-librust-libc-0-2+default-dev" | "deb-librust-libc-0-1+default-dev")
 ]
 extra-source "librust-malloc-buf-dev_1.0.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-malloc-buf/librust-malloc-buf-dev_1.0.0-2_amd64.deb"

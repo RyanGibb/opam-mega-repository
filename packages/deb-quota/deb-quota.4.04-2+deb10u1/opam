@@ -16,7 +16,7 @@ depends: [
   "deb-libtirpc3" {>= "1.0.2"}
   "deb-libwrap0" {>= "7.6-4~"}
   "deb-lsb-base" {>= "3.2-13"}
-  ("deb-debconf" {>= "1.2.9"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "1.2.9"} | "deb-debconf-2-0")
 ]
 extra-source "quota_4.04-2+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/quota/quota_4.04-2+deb10u1_amd64.deb"

@@ -36,7 +36,7 @@ depends: [
   "deb-libxfixes3" {>= "1-4.0.1"}
   "deb-libxi6" {>= "2-1.2.99.4"}
   "deb-libxklavier16" {>= "5.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "cinnamon-settings-daemon_3.8.4-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cinnamon-settings-daemon/cinnamon-settings-daemon_3.8.4-2_amd64.deb"

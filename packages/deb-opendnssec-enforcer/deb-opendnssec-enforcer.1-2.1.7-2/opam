@@ -9,7 +9,7 @@ depends: [
   "deb-opendnssec-common"
   "deb-procps"
   "deb-runit-helper" {>= "2.10.0~"}
-  ("deb-opendnssec-enforcer-sqlite3" | "deb- opendnssec-enforcer-backend")
+  ("deb-opendnssec-enforcer-sqlite3" | "deb-opendnssec-enforcer-backend")
 ]
 conflicts: [
   "deb-runit" {< "2.1.2-36~"}

@@ -9,7 +9,7 @@ depends: [
   "deb-sgml-base"
   "deb-sgml-data"
   "deb-ucf" {>= "0.08"}
-  ("deb-emacs25" | "deb- emacs24")
+  ("deb-emacs25" | "deb-emacs24")
 ]
 extra-source "psgml_1.4.0-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/psgml/psgml_1.4.0-7_all.deb"

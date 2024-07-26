@@ -9,7 +9,7 @@ depends: [
   "deb-imagemagick"
   "deb-libbio-perl-perl"
   "deb-r-cran-rocr"
-  ("deb-gnuplot" | "deb- gnuplot5")
+  ("deb-gnuplot" | "deb-gnuplot5")
 ]
 extra-source "murasaki-common_1.68.6-13_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/murasaki/murasaki-common_1.68.6-13_all.deb"

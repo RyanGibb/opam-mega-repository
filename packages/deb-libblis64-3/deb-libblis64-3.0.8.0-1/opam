@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r libblis64-3"]
 ]
 depends: [
-  ("deb-libblis64-3-openmp" {= "0.8.0-1"} | "deb- libblis64-3-pthread" {= "0.8.0-1"} | "deb- libblis64-3-serial" {= "0.8.0-1"})
+  ("deb-libblis64-3-openmp" {= "0.8.0-1"} | "deb-libblis64-3-pthread" {= "0.8.0-1"} | "deb-libblis64-3-serial" {= "0.8.0-1"})
 ]
 extra-source "libblis64-3_0.8.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/blis/libblis64-3_0.8.0-1_amd64.deb"

@@ -10,7 +10,7 @@ depends: [
   "deb-dbconfig-common"
   "deb-debconf"
   "deb-python3-panko" {= "5.0.0-5"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "panko-common_5.0.0-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/panko/panko-common_5.0.0-5_all.deb"

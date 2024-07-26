@@ -15,7 +15,7 @@ depends: [
   "deb-libppi-perl"
   "deb-libstring-rewriteprefix-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.19.5"} | "deb- libcpan-meta-requirements-perl" {>= "2.124"})
+  ("deb-perl" {>= "5.19.5"} | "deb-libcpan-meta-requirements-perl" {>= "2.124"})
 ]
 extra-source "libperl-prereqscanner-perl_1.023-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libp/libperl-prereqscanner-perl/libperl-prereqscanner-perl_1.023-1_all.deb"

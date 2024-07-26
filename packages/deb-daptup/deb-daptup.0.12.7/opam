@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-liblocale-gettext-perl"
   "deb-perl"
-  ("deb-apt" | "deb- cupt")
+  ("deb-apt" | "deb-cupt")
 ]
 extra-source "daptup_0.12.7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/daptup/daptup_0.12.7_all.deb"

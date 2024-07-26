@@ -10,8 +10,8 @@ depends: [
   "deb-guile-2-0-libs"
   "deb-libc6" {>= "2.2.5"}
   "deb-libgc1c2" {>= "1-7.2d"}
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
-  ("deb-sendmail" | "deb- mail-transport-agent")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
+  ("deb-sendmail" | "deb-mail-transport-agent")
 ]
 extra-source "mcron_1.0.8-1+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mcron/mcron_1.0.8-1+b2_amd64.deb"

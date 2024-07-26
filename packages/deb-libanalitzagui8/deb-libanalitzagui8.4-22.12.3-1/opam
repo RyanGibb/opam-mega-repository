@@ -10,7 +10,7 @@ depends: [
   "deb-libc6" {>= "2.4"}
   "deb-libqt5core5a" {>= "5.15.1"}
   "deb-libstdc++6" {>= "4.1.1"}
-  ("deb-libqt5gui5" {>= "5.6"} | "deb- libqt5gui5-gles" {>= "5.6"})
+  ("deb-libqt5gui5" {>= "5.6"} | "deb-libqt5gui5-gles" {>= "5.6"})
 ]
 extra-source "libanalitzagui8_4:22.12.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/analitza/libanalitzagui8_22.12.3-1_amd64.deb"

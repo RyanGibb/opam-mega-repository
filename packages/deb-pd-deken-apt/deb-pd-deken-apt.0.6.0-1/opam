@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r pd-deken-apt"]
 ]
 depends: [
-  ("deb-puredata-gui" {>= "0.47"} | "deb- pd-deken")
+  ("deb-puredata-gui" {>= "0.47"} | "deb-pd-deken")
 ]
 extra-source "pd-deken-apt_0.6.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/deken/pd-deken-apt_0.6.0-1_all.deb"

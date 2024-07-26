@@ -13,7 +13,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.0.2"}
   "deb-libqwt-qt5-6" {= "6.1.4-2"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "libqwt-qt5-dev_6.1.4-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qwt/libqwt-qt5-dev_6.1.4-2_amd64.deb"

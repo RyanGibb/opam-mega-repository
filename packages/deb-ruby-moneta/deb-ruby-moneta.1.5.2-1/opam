@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-moneta"]
 ]
 depends: [
-  ("deb-ruby-any" | "deb- ruby-interpreter")
+  ("deb-ruby-any" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-moneta_1.5.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-moneta/ruby-moneta_1.5.2-1_all.deb"

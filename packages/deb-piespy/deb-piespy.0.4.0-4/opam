@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r piespy"]
 ]
 depends: [
-  ("deb-default-jre" | "deb- java7-runtime")
+  ("deb-default-jre" | "deb-java7-runtime")
 ]
 extra-source "piespy_0.4.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/piespy/piespy_0.4.0-4_all.deb"

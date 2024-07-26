@@ -10,8 +10,8 @@ depends: [
   "deb-libfile-fcntllock-perl"
   "deb-libperl4-corelibs-perl"
   "deb-perl"
-  ("deb-debconf" {>= "1.2.0"} | "deb- debconf-2-0")
-  ("deb-exim4" | "deb- postfix" | "deb- sendmail" | "deb- mail-transport-agent")
+  ("deb-debconf" {>= "1.2.0"} | "deb-debconf-2-0")
+  ("deb-exim4" | "deb-postfix" | "deb-sendmail" | "deb-mail-transport-agent")
 ]
 extra-source "mailagent_1:3.1-106-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mailagent/mailagent_3.1-106-1_amd64.deb"

@@ -10,7 +10,7 @@ depends: [
   "deb-libsdl-image1-2" {>= "1.2.10"}
   "deb-libsdl-ttf2-0-0"
   "deb-libsdl1-2debian" {>= "1.2.11"}
-  ("deb-erlang-base" {>= "1-20.3.2+dfsg"} | "deb- erlang-base-hipe" {>= "1-20.3.2+dfsg"})
+  ("deb-erlang-base" {>= "1-20.3.2+dfsg"} | "deb-erlang-base-hipe" {>= "1-20.3.2+dfsg"})
   ("deb-erlang-base" | "deb-erlang-base-hipe")
 ]
 conflicts: [

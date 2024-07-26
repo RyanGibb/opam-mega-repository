@@ -10,7 +10,7 @@ depends: [
   "deb-libx11-6"
   "deb-libxext6"
   "deb-yorick" {>= "1.6.02"}
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
 ]
 extra-source "yorick-gl_1.1+cvs20070922+dfsg-6.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/y/yorick-gl/yorick-gl_1.1+cvs20070922+dfsg-6.1_amd64.deb"

@@ -34,7 +34,7 @@ depends: [
   "deb-libxmu6"
   "deb-libxt6"
   "deb-zenity"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "gfsview_20121130+dfsg-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gfsview/gfsview_20121130+dfsg-6_amd64.deb"

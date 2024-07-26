@@ -17,8 +17,8 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libtet1-5"
   "deb-libumfpack5" {>= "1-4.5.2"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libfreefem++_3.61.1+dfsg1-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/freefem++/libfreefem++_3.61.1+dfsg1-4_amd64.deb"

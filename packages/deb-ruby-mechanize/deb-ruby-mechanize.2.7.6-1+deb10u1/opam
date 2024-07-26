@@ -14,7 +14,7 @@ depends: [
   "deb-ruby-nokogiri" {>= "1.6"}
   "deb-ruby-ntlm"
   "deb-ruby-webrobots" {>= "0.0.9"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-mechanize_2.7.6-1+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-mechanize/ruby-mechanize_2.7.6-1+deb10u1_all.deb"

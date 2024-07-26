@@ -9,8 +9,8 @@ depends: [
   "deb-libdate-manip-perl"
   "deb-libroman-perl"
   "deb-perl"
-  ("deb-libcgi-pm-perl" | "deb- perl" {< "5.19"})
-  ("deb-libtext-soundex-perl" | "deb- perl" {< "5.17.0"})
+  ("deb-libcgi-pm-perl" | "deb-perl" {< "5.19"})
+  ("deb-libtext-soundex-perl" | "deb-perl" {< "5.17.0"})
 ]
 extra-source "libgedcom-perl_1.20-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libg/libgedcom-perl/libgedcom-perl_1.20-1_all.deb"

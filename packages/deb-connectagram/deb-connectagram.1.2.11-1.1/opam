@@ -13,7 +13,7 @@ depends: [
   "deb-libqt5network5" {>= "5.14.1"}
   "deb-libqt5widgets5" {>= "5.14.1"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libqt5gui5" {>= "5.8.0"} | "deb- libqt5gui5-gles" {>= "5.8.0"})
+  ("deb-libqt5gui5" {>= "5.8.0"} | "deb-libqt5gui5-gles" {>= "5.8.0"})
 ]
 extra-source "connectagram_1.2.11-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/connectagram/connectagram_1.2.11-1.1_amd64.deb"

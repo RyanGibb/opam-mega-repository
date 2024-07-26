@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-erlang-unicode-util-compat" {>= "0.7.0"}
-  ("deb-erlang-base" {>= "1-19.2"} | "deb- erlang-abi" {= "17.0"})
-  ("deb-erlang-base" {>= "1-23.2.3+dfsg"} | "deb- erlang-base-hipe" {>= "1-23.2.3+dfsg"})
+  ("deb-erlang-base" {>= "1-19.2"} | "deb-erlang-abi" {= "17.0"})
+  ("deb-erlang-base" {>= "1-23.2.3+dfsg"} | "deb-erlang-base-hipe" {>= "1-23.2.3+dfsg"})
 ]
 extra-source "erlang-idna_6.1.1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/erlang-idna/erlang-idna_6.1.1-3_amd64.deb"

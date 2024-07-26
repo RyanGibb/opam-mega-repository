@@ -12,7 +12,7 @@ depends: [
   "deb-libtcl8-6" {>= "8.6.0"}
   "deb-tcllib"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-tcl-itcl4" | "deb- itcl3")
+  ("deb-tcl-itcl4" | "deb-itcl3")
 ]
 extra-source "libapache2-mod-rivet_3.1.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/liba/libapache2-mod-rivet/libapache2-mod-rivet_3.1.1-1_amd64.deb"

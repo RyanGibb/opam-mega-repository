@@ -18,7 +18,7 @@ depends: [
   "deb-libstdc++6" {>= "9"}
   "deb-libtinyxml2-8" {>= "8.0.0"}
   "deb-libz3-4" {>= "4.8.9"}
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "cppcheck-gui_2.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cppcheck/cppcheck-gui_2.3-1_amd64.deb"

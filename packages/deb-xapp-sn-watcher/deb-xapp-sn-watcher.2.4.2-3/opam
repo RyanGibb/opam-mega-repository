@@ -14,7 +14,7 @@ depends: [
   "deb-libgtk-3-0" {>= "3.9.10"}
   "deb-libxapp1" {>= "2.4.0"}
   "deb-xapps-common" {>= "2.4.2-3"}
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus")
 ]
 extra-source "xapp-sn-watcher_2.4.2-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xapp/xapp-sn-watcher_2.4.2-3_amd64.deb"

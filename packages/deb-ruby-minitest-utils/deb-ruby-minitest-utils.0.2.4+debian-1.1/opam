@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-minitest"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-minitest-utils_0.2.4+debian-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-minitest-utils/ruby-minitest-utils_0.2.4+debian-1.1_all.deb"

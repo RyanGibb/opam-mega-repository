@@ -35,7 +35,7 @@ depends: [
   "deb-libwebp-dev"
   "deb-pkg-config"
   "deb-zlib1g-dev"
-  ("deb-fftw3-dev" | "deb- libfftw3-dev")
+  ("deb-fftw3-dev" | "deb-libfftw3-dev")
 ]
 extra-source "libvips-dev_8.10.5-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/vips/libvips-dev_8.10.5-2_amd64.deb"

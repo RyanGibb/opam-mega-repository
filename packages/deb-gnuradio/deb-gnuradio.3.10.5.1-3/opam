@@ -64,7 +64,7 @@ depends: [
   "deb-python3-thrift"
   "deb-python3-yaml"
   "deb-python3-zmq"
-  ("deb-gnome-terminal" | "deb- x-terminal-emulator")
+  ("deb-gnome-terminal" | "deb-x-terminal-emulator")
 ]
 extra-source "gnuradio_3.10.5.1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnuradio/gnuradio_3.10.5.1-3_amd64.deb"

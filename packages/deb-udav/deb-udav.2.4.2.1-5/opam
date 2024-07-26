@@ -28,7 +28,7 @@ depends: [
   "deb-libstdc++6" {>= "4.9"}
   "deb-libsz2"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "udav_2.4.2.1-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mathgl/udav_2.4.2.1-5_amd64.deb"

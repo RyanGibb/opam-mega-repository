@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-stringex"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-stringex_2.8.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-stringex/ruby-stringex_2.8.4-1_all.deb"

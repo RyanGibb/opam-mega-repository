@@ -10,7 +10,7 @@ depends: [
   "deb-python3-buildstream"
   "deb-python3-pkg-resources"
   "deb-python3-requests"
-  ("deb-python3-tomli" | "deb- python3" {> "3.11"})
+  ("deb-python3-tomli" | "deb-python3" {> "3.11"})
 ]
 extra-source "python3-bst-external_0.29.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/bst-external/python3-bst-external_0.29.0-2_all.deb"

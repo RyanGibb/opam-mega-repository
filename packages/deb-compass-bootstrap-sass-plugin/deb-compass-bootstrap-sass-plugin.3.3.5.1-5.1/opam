@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-ruby-bootstrap-sass" {= "3.3.5.1-5.1"}
-  ("deb-ruby" | "deb- ruby-interpreter")
-  ("deb-ruby-compass" | "deb- ruby-sass")
+  ("deb-ruby" | "deb-ruby-interpreter")
+  ("deb-ruby-compass" | "deb-ruby-sass")
 ]
 extra-source "compass-bootstrap-sass-plugin_3.3.5.1-5.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-bootstrap-sass/compass-bootstrap-sass-plugin_3.3.5.1-5.1_all.deb"

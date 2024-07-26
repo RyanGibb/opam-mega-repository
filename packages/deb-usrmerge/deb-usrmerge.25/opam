@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libfile-find-rule-perl"
   "deb-perl-any"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 conflicts: [
   "deb-acl" {< "2.2.52-3~"}

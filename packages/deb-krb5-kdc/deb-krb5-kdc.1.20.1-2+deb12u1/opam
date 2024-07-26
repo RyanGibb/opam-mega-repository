@@ -18,8 +18,8 @@ depends: [
   "deb-libkrb5support0" {>= "1.20"}
   "deb-libverto1" {>= "0.2.4"}
   "deb-sysvinit-utils"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-libverto-libev1" | "deb- libverto-libevent1")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-libverto-libev1" | "deb-libverto-libevent1")
 ]
 extra-source "krb5-kdc_1.20.1-2+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/krb5/krb5-kdc_1.20.1-2+deb12u1_amd64.deb"

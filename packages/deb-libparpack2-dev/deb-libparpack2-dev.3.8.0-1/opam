@@ -8,8 +8,8 @@ remove: [
 depends: [
   "deb-libparpack2" {= "3.8.0-1"}
   "deb-mpi-default-dev"
-  ("deb-libblas-dev" | "deb- libblas-so")
-  ("deb-liblapack-dev" | "deb- liblapack-so")
+  ("deb-libblas-dev" | "deb-libblas-so")
+  ("deb-liblapack-dev" | "deb-liblapack-so")
 ]
 extra-source "libparpack2-dev_3.8.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/arpack/libparpack2-dev_3.8.0-1_amd64.deb"

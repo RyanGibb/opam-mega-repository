@@ -10,7 +10,7 @@ depends: [
   "deb-perl-any"
   "deb-perl-base" {>= "5.8.4-8"}
   "deb-ucf"
-  ("deb-monitoring-plugins-common" | "deb- nagios-plugins-basic" {>= "1.4.5-2"})
+  ("deb-monitoring-plugins-common" | "deb-nagios-plugins-basic" {>= "1.4.5-2"})
 ]
 extra-source "nagios-snmp-plugins_2.1.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/nagios-snmp-plugins/nagios-snmp-plugins_2.1.0-1_all.deb"

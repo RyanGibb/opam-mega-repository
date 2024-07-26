@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-paint" {>= "0.8.3"}
   "deb-ruby-trollop" {>= "1.16.2"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "lolcat_42.0.99-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lolcat/lolcat_42.0.99-1_all.deb"

@@ -15,7 +15,7 @@ depends: [
   "deb-python-zope-i18nmessageid"
   "deb-python-zope-interface"
   "deb-python-zope-schema"
-  ("deb-python2-7" | "deb- python2-6")
+  ("deb-python2-7" | "deb-python2-6")
 ]
 extra-source "python-zope.sendmail_3.7.4-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/z/zope.sendmail/python-zope.sendmail_3.7.4-2_all.deb"

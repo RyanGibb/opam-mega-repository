@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r gnome-shell-pomodoro-data"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-shell-pomodoro-data_0.14.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-shell-pomodoro/gnome-shell-pomodoro-data_0.14.0-1_all.deb"

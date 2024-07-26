@@ -15,7 +15,7 @@ depends: [
   "deb-libgtk-3-0" {>= "3.1.4"}
   "deb-libgtksourceview-3-0-1" {>= "2.91.4"}
   "deb-libpango-1-0-0" {>= "1.14.0"}
-  ("deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"} | "deb- libgdk-pixbuf2-0-0" {>= "2.22.0"})
+  ("deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"} | "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"})
 ]
 extra-source "coqide_8.12.0-3+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/coq/coqide_8.12.0-3+b3_amd64.deb"

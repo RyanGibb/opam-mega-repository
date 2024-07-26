@@ -15,7 +15,7 @@ depends: [
   "deb-libqt5xml5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-p7zip-full"
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
 ]
 extra-source "qnapi_0.1.9-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qnapi/qnapi_0.1.9-1+b1_amd64.deb"

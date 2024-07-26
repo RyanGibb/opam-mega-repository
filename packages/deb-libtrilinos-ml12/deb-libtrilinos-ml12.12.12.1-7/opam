@@ -19,8 +19,8 @@ depends: [
   "deb-libtrilinos-ifpack12"
   "deb-libtrilinos-teuchos12"
   "deb-libtrilinos-zoltan12"
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libtrilinos-ml12_12.12.1-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/trilinos/libtrilinos-ml12_12.12.1-7_amd64.deb"

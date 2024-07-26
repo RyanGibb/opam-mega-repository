@@ -14,7 +14,7 @@ depends: [
   "deb-libsoup2-4-dev" {>= "2.52"}
   "deb-libyaml-dev"
   "deb-uuid-dev"
-  ("deb-libgdk-pixbuf-2-0-dev" | "deb- libgdk-pixbuf2-0-dev")
+  ("deb-libgdk-pixbuf-2-0-dev" | "deb-libgdk-pixbuf2-0-dev")
 ]
 extra-source "libappstream-glib-dev_0.7.18-1+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/appstream-glib/libappstream-glib-dev_0.7.18-1+deb11u1_amd64.deb"

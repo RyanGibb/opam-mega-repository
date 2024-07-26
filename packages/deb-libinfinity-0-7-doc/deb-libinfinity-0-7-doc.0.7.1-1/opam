@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r libinfinity-0.7-doc"]
 ]
 depends: [
-  ("deb-lynx" | "deb- www-browser")
+  ("deb-lynx" | "deb-www-browser")
 ]
 extra-source "libinfinity-0.7-doc_0.7.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libi/libinfinity/libinfinity-0.7-doc_0.7.1-1_all.deb"

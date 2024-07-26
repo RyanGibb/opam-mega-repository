@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-rd" {= "0.6.38-4.1"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "rdtool_0.6.38-4.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rdtool/rdtool_0.6.38-4.1_all.deb"

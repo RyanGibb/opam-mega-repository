@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r topgit"]
 ]
 depends: [
-  ("deb-git" {>= "1-1.7"} | "deb- git-core")
+  ("deb-git" {>= "1-1.7"} | "deb-git-core")
 ]
 extra-source "topgit_0.8-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/topgit/topgit_0.8-2_all.deb"

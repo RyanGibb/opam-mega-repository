@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-perl-any"
   "deb-ucf" {>= "2.009"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "backup-manager_0.7.14-1.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/backup-manager/backup-manager_0.7.14-1.2_all.deb"

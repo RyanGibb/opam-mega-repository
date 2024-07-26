@@ -14,8 +14,8 @@ depends: [
   "deb-r-cran-matrix" {>= "1.1-0"}
   "deb-r-cran-rcpp" {>= "0.11.5"}
   "deb-r-cran-rcppeigen" {>= "0.3.3.3.0"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "r-cran-rspectra_0.16-0-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-rspectra/r-cran-rspectra_0.16-0-1+b1_amd64.deb"

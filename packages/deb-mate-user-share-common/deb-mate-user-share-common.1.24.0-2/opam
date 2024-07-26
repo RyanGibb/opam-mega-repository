@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r mate-user-share-common"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "mate-user-share-common_1.24.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mate-user-share/mate-user-share-common_1.24.0-2_all.deb"

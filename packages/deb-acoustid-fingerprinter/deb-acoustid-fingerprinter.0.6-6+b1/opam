@@ -16,7 +16,7 @@ depends: [
   "deb-libqtgui4" {>= "4-4.5.3"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-libtag1v5" {>= "1.11"}
-  ("deb-libavcodec58" {>= "7-4.0"} | "deb- libavcodec-extra58" {>= "7-4.0"})
+  ("deb-libavcodec58" {>= "7-4.0"} | "deb-libavcodec-extra58" {>= "7-4.0"})
 ]
 extra-source "acoustid-fingerprinter_0.6-6+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/acoustid-fingerprinter/acoustid-fingerprinter_0.6-6+b1_amd64.deb"

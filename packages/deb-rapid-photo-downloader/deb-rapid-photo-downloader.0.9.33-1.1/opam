@@ -40,7 +40,7 @@ depends: [
   "deb-python3-xdg"
   "deb-python3-zmq"
   "deb-qt5-image-formats-plugins"
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
 ]
 extra-source "rapid-photo-downloader_0.9.33-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rapid-photo-downloader/rapid-photo-downloader_0.9.33-1.1_all.deb"

@@ -8,8 +8,8 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.14"}
   "deb-netbase"
-  ("deb-inetutils-inetd" | "deb- inet-superserver")
-  ("deb-inetutils-syslogd" | "deb- system-log-daemon")
+  ("deb-inetutils-inetd" | "deb-inet-superserver")
+  ("deb-inetutils-syslogd" | "deb-system-log-daemon")
 ]
 conflicts: [
   "deb-talkd"

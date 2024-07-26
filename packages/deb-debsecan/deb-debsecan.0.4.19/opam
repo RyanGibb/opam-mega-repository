@@ -9,7 +9,7 @@ depends: [
   "deb-ca-certificates"
   "deb-python" {>= "2.3"}
   "deb-python-apt"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "debsecan_0.4.19_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/debsecan/debsecan_0.4.19_all.deb"

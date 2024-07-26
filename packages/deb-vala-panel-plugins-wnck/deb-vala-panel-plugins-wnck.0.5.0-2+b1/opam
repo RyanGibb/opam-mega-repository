@@ -18,7 +18,7 @@ depends: [
   "deb-libwnck-3-0" {>= "3.4.0"}
   "deb-libx11-6"
   "deb-vala-panel" {= "0.5.0-2+b1"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "vala-panel-plugins-wnck_0.5.0-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/vala-panel/vala-panel-plugins-wnck_0.5.0-2+b1_amd64.deb"

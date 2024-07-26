@@ -14,7 +14,7 @@ depends: [
   "deb-libreadline7" {>= "6.0"}
   "deb-libsystemd0"
   "deb-logrotate" {>= "3.2-11"}
-  ("deb-iproute2" | "deb- iproute")
+  ("deb-iproute2" | "deb-iproute")
 ]
 conflicts: [
   "deb-pimd"

@@ -13,7 +13,7 @@ depends: [
   "deb-libcasa-tables5" {>= "3.3.0"}
   "deb-libgcc-s1" {>= "3.0"}
   "deb-libstdc++6" {>= "9"}
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libcasa-ms5_3.3.0-4+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/casacore/libcasa-ms5_3.3.0-4+b3_amd64.deb"

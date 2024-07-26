@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r coffeescript"]
 ]
 depends: [
-  ("deb-nodejs" {>= "6.11.2~dfsg"} | "deb- nodejs-legacy" {>= "6"})
+  ("deb-nodejs" {>= "6.11.2~dfsg"} | "deb-nodejs-legacy" {>= "6"})
 ]
 extra-source "coffeescript_1.12.8~dfsg-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/coffeescript/coffeescript_1.12.8~dfsg-5_all.deb"

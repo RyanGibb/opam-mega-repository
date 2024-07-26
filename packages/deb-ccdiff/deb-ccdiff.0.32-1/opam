@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libscalar-list-utils-perl"
   "deb-perl-any"
-  ("deb-libalgorithm-diff-xs-perl" | "deb- libalgorithm-diff-perl")
+  ("deb-libalgorithm-diff-xs-perl" | "deb-libalgorithm-diff-perl")
 ]
 extra-source "ccdiff_0.32-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/ccdiff/ccdiff_0.32-1_all.deb"

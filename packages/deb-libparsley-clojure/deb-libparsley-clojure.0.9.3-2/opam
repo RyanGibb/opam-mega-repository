@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libregex-clojure" {>= "1.1.0"}
-  ("deb-libclojure-java" | "deb- libclojure1-8-java")
+  ("deb-libclojure-java" | "deb-libclojure1-8-java")
 ]
 extra-source "libparsley-clojure_0.9.3-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/parsley-clojure/libparsley-clojure_0.9.3-2_all.deb"

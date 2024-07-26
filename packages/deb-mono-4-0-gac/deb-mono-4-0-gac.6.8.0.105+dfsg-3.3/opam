@@ -10,7 +10,7 @@ depends: [
   "deb-libmono-security4-0-cil" {>= "4.6.1.3"}
   "deb-libmono-system-security4-0-cil" {>= "5.18.0.240"}
   "deb-libmono-system4-0-cil" {>= "5.18.0.240"}
-  ("deb-libc6" {>= "2.36"} | "deb- libc6-1" {>= "2.36"} | "deb- libc0-1" {>= "2.36"})
+  ("deb-libc6" {>= "2.36"} | "deb-libc6-1" {>= "2.36"} | "deb-libc0-1" {>= "2.36"})
 ]
 extra-source "mono-4.0-gac_6.8.0.105+dfsg-3.3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mono/mono-4.0-gac_6.8.0.105+dfsg-3.3_all.deb"

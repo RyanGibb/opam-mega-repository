@@ -9,7 +9,7 @@ depends: [
   "deb-printer-driver-hpijs" {>= "3.21.2+dfsg1-2"}
   "deb-python3-any"
   "deb-xz-utils"
-  ("deb-cups-filters" | "deb- foomatic-filters")
+  ("deb-cups-filters" | "deb-foomatic-filters")
 ]
 extra-source "hpijs-ppds_3.21.2+dfsg1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/hplip/hpijs-ppds_3.21.2+dfsg1-2_all.deb"

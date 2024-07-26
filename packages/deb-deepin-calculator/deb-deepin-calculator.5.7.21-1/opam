@@ -17,7 +17,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.15.1"}
   "deb-libqt5xml5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "4.2.1"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "deepin-calculator_5.7.21-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/deepin-calculator/deepin-calculator_5.7.21-1_amd64.deb"

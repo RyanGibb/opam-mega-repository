@@ -8,9 +8,9 @@ remove: [
 depends: [
   "deb-exim4-base" {< "4.94.2-7+deb11u2.1"}
   "deb-exim4-base" {>= "4.94.2-7+deb11u2"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-debconf" {>= "1.4.69"} | "deb- cdebconf" {>= "0.39"})
-  ("deb-exim4-daemon-light" {>= "4.94.2-7+deb11u2"} | "deb- exim4-daemon-heavy" {>= "4.94.2-7+deb11u2"} | "deb- exim4-daemon-custom" {>= "4.94.2-7+deb11u2"})
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-debconf" {>= "1.4.69"} | "deb-cdebconf" {>= "0.39"})
+  ("deb-exim4-daemon-light" {>= "4.94.2-7+deb11u2"} | "deb-exim4-daemon-heavy" {>= "4.94.2-7+deb11u2"} | "deb-exim4-daemon-custom" {>= "4.94.2-7+deb11u2"})
 ]
 extra-source "exim4_4.94.2-7+deb11u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/exim4/exim4_4.94.2-7+deb11u2_all.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.34"}
   "deb-sysvinit-utils"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "setserial_2.17-53+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/setserial/setserial_2.17-53+b1_amd64.deb"

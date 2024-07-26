@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-php-common"
-  ("deb-php" | "deb- php-cgi" | "deb- php-cli")
+  ("deb-php" | "deb-php-cgi" | "deb-php-cli")
 ]
 extra-source "smarty4_4.3.0-1+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/smarty4/smarty4_4.3.0-1+deb12u1_all.deb"

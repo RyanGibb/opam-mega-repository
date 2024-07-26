@@ -14,7 +14,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.6.0~beta"}
   "deb-libqwt-qt5-6" {>= "6.1.2"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.2.0"} | "deb- libqt5gui5-gles" {>= "5.2.0"})
+  ("deb-libqt5gui5" {>= "5.2.0"} | "deb-libqt5gui5-gles" {>= "5.2.0"})
 ]
 extra-source "caneda_0.3.1-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/caneda/caneda_0.3.1-1+b1_amd64.deb"

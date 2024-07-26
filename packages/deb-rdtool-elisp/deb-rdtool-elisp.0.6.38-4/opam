@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r rdtool-elisp"]
 ]
 depends: [
-  ("deb-emacs" | "deb- emacsen")
+  ("deb-emacs" | "deb-emacsen")
 ]
 extra-source "rdtool-elisp_0.6.38-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rdtool/rdtool-elisp_0.6.38-4_all.deb"

@@ -10,8 +10,8 @@ depends: [
   "deb-emacsen-common" {>= "2.0.8"}
   "deb-flim" {>= "1-1.14.6"}
   "deb-semi" {>= "1.14.6+0.20100125"}
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
-  ("deb-emacs-nox" | "deb- emacs" | "deb- emacs25" | "deb- emacs24" | "deb- emacs-snapshot")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
+  ("deb-emacs-nox" | "deb-emacs" | "deb-emacs25" | "deb-emacs24" | "deb-emacs-snapshot")
 ]
 conflicts: [
   "deb-wanderlust2"

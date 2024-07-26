@@ -16,7 +16,7 @@ depends: [
   "deb-libsoup-3-0-0" {>= "3.0.3"}
   "deb-libtext-engine-0-1-0" {>= "0.1.1"}
   "deb-unzip"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-shell-extension-manager_0.4.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-shell-extension-manager/gnome-shell-extension-manager_0.4.0-1_amd64.deb"

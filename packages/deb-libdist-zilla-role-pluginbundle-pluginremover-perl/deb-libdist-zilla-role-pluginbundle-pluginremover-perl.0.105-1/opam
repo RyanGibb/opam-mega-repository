@@ -9,7 +9,7 @@ depends: [
   "deb-libdist-zilla-perl"
   "deb-libmoose-perl"
   "deb-perl-any"
-  ("deb-libscalar-list-utils-perl" | "deb- perl")
+  ("deb-libscalar-list-utils-perl" | "deb-perl")
 ]
 extra-source "libdist-zilla-role-pluginbundle-pluginremover-perl_0.105-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libd/libdist-zilla-role-pluginbundle-pluginremover-perl/libdist-zilla-role-pluginbundle-pluginremover-perl_0.105-1_all.deb"

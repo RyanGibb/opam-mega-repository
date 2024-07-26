@@ -30,7 +30,7 @@ depends: [
   "deb-libsqlite3-0" {>= "3.7.15"}
   "deb-libwebkit2gtk-4-0-37" {>= "2.29.3"}
   "deb-libxml2" {>= "2.7.4"}
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus")
 ]
 conflicts: [
   "deb-swfdec-mozilla"

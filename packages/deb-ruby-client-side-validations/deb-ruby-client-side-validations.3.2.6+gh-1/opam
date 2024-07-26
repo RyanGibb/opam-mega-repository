@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-client-side-validations"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-client-side-validations_3.2.6+gh-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-client-side-validations/ruby-client-side-validations_3.2.6+gh-1_all.deb"

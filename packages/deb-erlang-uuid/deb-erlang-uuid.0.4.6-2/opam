@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-erlang-crypto" {>= "1-20.3.6+dfsg"}
-  ("deb-erlang-base" {>= "1-20.3.6+dfsg"} | "deb- erlang-base-hipe" {>= "1-20.3.6+dfsg"})
+  ("deb-erlang-base" {>= "1-20.3.6+dfsg"} | "deb-erlang-base-hipe" {>= "1-20.3.6+dfsg"})
 ]
 extra-source "erlang-uuid_0.4.6-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/erlang-uuid/erlang-uuid_0.4.6-2_amd64.deb"

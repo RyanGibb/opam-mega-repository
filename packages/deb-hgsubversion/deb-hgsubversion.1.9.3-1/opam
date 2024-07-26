@@ -10,7 +10,7 @@ depends: [
   "deb-python-any" {< "2.8"}
   "deb-python-any" {>= "2.7~"}
   "deb-subversion" {>= "1.5"}
-  ("deb-python-subvertpy" {>= "0.7.4"} | "deb- python-subversion")
+  ("deb-python-subvertpy" {>= "0.7.4"} | "deb-python-subversion")
 ]
 extra-source "hgsubversion_1.9.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/hgsubversion/hgsubversion_1.9.3-1_all.deb"

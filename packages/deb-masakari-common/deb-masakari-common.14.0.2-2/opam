@@ -10,7 +10,7 @@ depends: [
   "deb-dbconfig-common"
   "deb-debconf"
   "deb-python3-masakari" {= "14.0.2-2"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "masakari-common_14.0.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/masakari/masakari-common_14.0.2-2_all.deb"

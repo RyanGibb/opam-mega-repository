@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r hunspell-se"]
 ]
 depends: [
-  ("deb-dictionaries-common" {>= "0.10"} | "deb- openoffice-org-updatedicts")
+  ("deb-dictionaries-common" {>= "0.10"} | "deb-openoffice-org-updatedicts")
 ]
 conflicts: [
   "deb-openoffice-org-core" {< "1-2.4"}

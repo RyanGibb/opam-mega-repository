@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libosinfo-bin"
   "deb-libvirt-daemon-system"
-  ("deb-libvirt-clients" | "deb- libvirt-bin")
+  ("deb-libvirt-clients" | "deb-libvirt-bin")
 ]
 extra-source "cockpit-machines_188-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cockpit/cockpit-machines_188-1_all.deb"

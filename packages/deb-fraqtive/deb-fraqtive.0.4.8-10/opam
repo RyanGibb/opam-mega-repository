@@ -15,7 +15,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.11.0~rc1"}
   "deb-libqt5xml5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "fraqtive_0.4.8-10_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fraqtive/fraqtive_0.4.8-10_amd64.deb"

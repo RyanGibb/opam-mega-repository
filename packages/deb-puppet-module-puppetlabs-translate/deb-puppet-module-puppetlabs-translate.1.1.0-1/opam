@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r puppet-module-puppetlabs-translate"]
 ]
 depends: [
-  ("deb-puppet" {>= "4"} | "deb- puppet-common" {>= "3"})
+  ("deb-puppet" {>= "4"} | "deb-puppet-common" {>= "3"})
 ]
 extra-source "puppet-module-puppetlabs-translate_1.1.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/puppet-module-puppetlabs-translate/puppet-module-puppetlabs-translate_1.1.0-1_all.deb"

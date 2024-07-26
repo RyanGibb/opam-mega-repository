@@ -15,7 +15,7 @@ depends: [
   "deb-libtest-abortable-perl"
   "deb-libtry-tiny-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.25.3"} | "deb- libtest-simple-perl" {>= "1.302045"})
+  ("deb-perl" {>= "5.25.3"} | "deb-libtest-simple-perl" {>= "1.302045"})
 ]
 extra-source "libtest-routine-perl_0.027-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libt/libtest-routine-perl/libtest-routine-perl_0.027-1_all.deb"

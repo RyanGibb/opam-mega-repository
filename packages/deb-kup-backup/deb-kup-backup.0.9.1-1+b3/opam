@@ -31,7 +31,7 @@ depends: [
   "deb-libqt5network5" {>= "5.0.2"}
   "deb-libqt5widgets5" {>= "5.11.0~rc1"}
   "deb-libstdc++6" {>= "4.1.1"}
-  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb-libqt5gui5-gles" {>= "5.11.0~rc1"})
 ]
 extra-source "kup-backup_0.9.1-1+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kup-backup/kup-backup_0.9.1-1+b3_amd64.deb"

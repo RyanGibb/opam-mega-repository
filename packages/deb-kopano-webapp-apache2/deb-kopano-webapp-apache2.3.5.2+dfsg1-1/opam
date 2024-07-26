@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-kopano-webapp-common" {>= "3.5.2+dfsg1-1"}
   "deb-libapache2-mod-php"
-  ("deb-apache2" | "deb- httpd")
+  ("deb-apache2" | "deb-httpd")
 ]
 extra-source "kopano-webapp-apache2_3.5.2+dfsg1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kopano-webapp/kopano-webapp-apache2_3.5.2+dfsg1-1_all.deb"

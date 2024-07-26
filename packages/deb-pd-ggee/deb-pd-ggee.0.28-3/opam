@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.29"}
-  ("deb-puredata" | "deb- pd")
+  ("deb-puredata" | "deb-pd")
 ]
 extra-source "pd-ggee_0.28-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pd-ggee/pd-ggee_0.28-3_amd64.deb"

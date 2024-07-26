@@ -12,7 +12,7 @@ depends: [
   "deb-libncursesw6" {>= "6"}
   "deb-libstdc++6" {>= "11"}
   "deb-libtinfo6" {>= "6"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "sinfo_0.0.48-2.1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sinfo/sinfo_0.0.48-2.1+b1_amd64.deb"

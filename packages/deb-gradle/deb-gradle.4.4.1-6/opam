@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libgradle-core-java" {>= "4.4.1-6"}
   "deb-libgradle-plugins-java" {>= "4.4.1-6"}
-  ("deb-default-jre-headless" {>= "2-1.8"} | "deb- java8-runtime-headless")
+  ("deb-default-jre-headless" {>= "2-1.8"} | "deb-java8-runtime-headless")
 ]
 extra-source "gradle_4.4.1-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gradle/gradle_4.4.1-6_all.deb"

@@ -23,8 +23,8 @@ depends: [
   "deb-qemu-utils"
   "deb-rsync"
   "deb-vlan"
-  ("deb-fdisk" | "deb- util-linux" {< "2.29.2-3~"})
-  ("deb-nova-compute-kvm" | "deb- nova-compute-hypervisor")
+  ("deb-fdisk" | "deb-util-linux" {< "2.29.2-3~"})
+  ("deb-nova-compute-kvm" | "deb-nova-compute-hypervisor")
 ]
 extra-source "nova-compute_2:22.0.1-2+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/nova/nova-compute_22.0.1-2+deb11u1_all.deb"

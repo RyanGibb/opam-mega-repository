@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "deb-libjs-jquery"
-  ("deb-apache2" | "deb- httpd")
-  ("deb-php" | "deb- php5")
-  ("deb-php-xml" | "deb- php5-xsl")
+  ("deb-apache2" | "deb-httpd")
+  ("deb-php" | "deb-php5")
+  ("deb-php-xml" | "deb-php5-xsl")
 ]
 extra-source "phpsysinfo_3.2.5-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/phpsysinfo/phpsysinfo_3.2.5-3_all.deb"

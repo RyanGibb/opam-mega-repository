@@ -9,7 +9,7 @@ depends: [
   "deb-ant"
   "deb-ant-contrib"
   "deb-maven-repo-helper"
-  ("deb-default-jdk-headless" | "deb- default-jdk")
+  ("deb-default-jdk-headless" | "deb-default-jdk")
 ]
 extra-source "eclipse-debian-helper_1.5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/eclipse-debian-helper/eclipse-debian-helper_1.5_all.deb"

@@ -12,7 +12,7 @@ depends: [
   "deb-ruby-gettext"
   "deb-ruby-locale"
   "deb-ruby-net-ldap" {>= "0.9.13"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-activeldap_5.2.2-2+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-activeldap/ruby-activeldap_5.2.2-2+deb10u1_all.deb"

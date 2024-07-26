@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r multex-base"]
 ]
 depends: [
-  ("deb-texlive-binaries" | "deb- texlive-base-bin")
+  ("deb-texlive-binaries" | "deb-texlive-base-bin")
 ]
 conflicts: [
   "deb-multex-bin" {<= "0.8"}

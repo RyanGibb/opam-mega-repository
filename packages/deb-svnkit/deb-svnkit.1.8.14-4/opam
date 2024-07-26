@@ -10,7 +10,7 @@ depends: [
   "deb-libsequence-library-java"
   "deb-libsvnkit-java" {= "1.8.14-4"}
   "deb-libtrilead-ssh2-java" {>= "6401+svn158"}
-  ("deb-default-jre-headless" | "deb- java7-runtime-headless")
+  ("deb-default-jre-headless" | "deb-java7-runtime-headless")
 ]
 extra-source "svnkit_1.8.14-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/svnkit/svnkit_1.8.14-4_all.deb"

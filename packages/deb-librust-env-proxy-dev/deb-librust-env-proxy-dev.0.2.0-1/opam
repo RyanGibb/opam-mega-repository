@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-librust-url-1+default-dev"
-  ("deb-librust-log-0-4+default-dev" | "deb- librust-log-0-3+default-dev")
+  ("deb-librust-log-0-4+default-dev" | "deb-librust-log-0-3+default-dev")
 ]
 extra-source "librust-env-proxy-dev_0.2.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-env-proxy/librust-env-proxy-dev_0.2.0-1_amd64.deb"

@@ -13,7 +13,7 @@ depends: [
   "deb-libeigen3-dev"
   "deb-libfckit-dev"
   "deb-libjemalloc-dev"
-  ("deb-gfortran-10" | "deb- gfortran-mod-15")
+  ("deb-gfortran-10" | "deb-gfortran-mod-15")
 ]
 extra-source "libatlas-ecmwf-dev_0.23.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/atlas-ecmwf/libatlas-ecmwf-dev_0.23.0-1_amd64.deb"

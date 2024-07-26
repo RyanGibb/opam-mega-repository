@@ -17,7 +17,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.12.2"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-qttranslations5-l10n"
-  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb-libqt5gui5-gles" {>= "5.11.0~rc1"})
 ]
 extra-source "xyscan_4.50-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xyscan/xyscan_4.50-1_amd64.deb"

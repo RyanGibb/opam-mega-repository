@@ -15,7 +15,7 @@ depends: [
   "deb-libopenscenegraph-3-4-131"
   "deb-libopenthreads20"
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "libosgearth5_2.10.0+dfsg-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/osgearth/libosgearth5_2.10.0+dfsg-1+b1_amd64.deb"

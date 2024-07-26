@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-expect"
   "deb-sgml-base" {>= "1.28"}
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 extra-source "dejagnu_1.6.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dejagnu/dejagnu_1.6.3-1_all.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-qemu-system-x86"
   "deb-systemd"
-  ("deb-busybox" | "deb- busybox-static")
+  ("deb-busybox" | "deb-busybox-static")
 ]
 extra-source "fakemachine_0.0~git20181105.9316584-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/golang-github-go-debos-fakemachine/fakemachine_0.0~git20181105.9316584-2_amd64.deb"

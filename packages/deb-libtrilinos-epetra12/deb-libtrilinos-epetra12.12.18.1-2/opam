@@ -11,8 +11,8 @@ depends: [
   "deb-libopenmpi3" {>= "4.1.0"}
   "deb-libstdc++6" {>= "9"}
   "deb-libtrilinos-teuchos12" {>= "12.18.1"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libtrilinos-epetra12_12.18.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/trilinos/libtrilinos-epetra12_12.18.1-2_amd64.deb"

@@ -14,7 +14,7 @@ depends: [
   "deb-libsub-exporter-perl"
   "deb-libsub-install-perl"
   "deb-perl" {>= "5.17.10"}
-  ("deb-libmodule-pluggable-perl" | "deb- perl" {< "5.17.0"})
+  ("deb-libmodule-pluggable-perl" | "deb-perl" {< "5.17.0"})
 ]
 extra-source "libapp-cmd-perl_0.331-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/liba/libapp-cmd-perl/libapp-cmd-perl_0.331-1_all.deb"

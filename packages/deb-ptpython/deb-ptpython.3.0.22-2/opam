@@ -11,7 +11,7 @@ depends: [
   "deb-python3-jedi"
   "deb-python3-prompt-toolkit" {>= "3.0.16"}
   "deb-python3-pygments"
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
 ]
 extra-source "ptpython_3.0.22-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/ptpython/ptpython_3.0.22-2_all.deb"

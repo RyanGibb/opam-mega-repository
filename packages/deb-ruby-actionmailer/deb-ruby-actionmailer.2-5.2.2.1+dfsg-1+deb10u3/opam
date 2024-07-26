@@ -13,7 +13,7 @@ depends: [
   "deb-ruby-mail" {>= "2.5.4"}
   "deb-ruby-rails-dom-testing" {< "3.0"}
   "deb-ruby-rails-dom-testing" {>= "2.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-actionmailer_2:5.2.2.1+dfsg-1+deb10u3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rails/ruby-actionmailer_5.2.2.1+dfsg-1+deb10u3_all.deb"

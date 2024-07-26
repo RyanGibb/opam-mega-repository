@@ -14,8 +14,8 @@ depends: [
   "deb-python3-fs" {>= "2.4.11"}
   "deb-python3-pkg-resources"
   "deb-python3-sympy"
-  ("deb-python3-scipy" {>= "1.5.4"} | "deb- python3-munkres" {>= "1.1.4"})
-  ("deb-python3-ufolib2" {>= "0.6.2"} | "deb- python3-defcon" {>= "0.6.0"})
+  ("deb-python3-scipy" {>= "1.5.4"} | "deb-python3-munkres" {>= "1.1.4"})
+  ("deb-python3-ufolib2" {>= "0.6.2"} | "deb-python3-defcon" {>= "0.6.0"})
 ]
 extra-source "python3-fonttools_4.19.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fonttools/python3-fonttools_4.19.1-1_amd64.deb"

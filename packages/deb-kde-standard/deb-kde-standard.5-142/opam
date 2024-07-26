@@ -28,7 +28,7 @@ depends: [
   "deb-plasma-widgets-addons" {>= "4-5.27.2"}
   "deb-polkit-kde-agent-1" {>= "4-5.27.2"}
   "deb-sweeper" {>= "4-22.12.3"}
-  ("deb-plasma-pa" {>= "5.27.2"} | "deb- kmix" {>= "4-22.12.3"})
+  ("deb-plasma-pa" {>= "5.27.2"} | "deb-kmix" {>= "4-22.12.3"})
 ]
 extra-source "kde-standard_5:142_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/meta-kde/kde-standard_142_amd64.deb"

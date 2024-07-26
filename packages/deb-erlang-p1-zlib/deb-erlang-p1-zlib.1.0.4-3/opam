@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.2.5"}
-  ("deb-erlang-base" {>= "1-19.2"} | "deb- erlang-abi-17-0")
-  ("deb-erlang-base" {>= "1-21.1+dfsg"} | "deb- erlang-base-hipe" {>= "1-21.1+dfsg"})
+  ("deb-erlang-base" {>= "1-19.2"} | "deb-erlang-abi-17-0")
+  ("deb-erlang-base" {>= "1-21.1+dfsg"} | "deb-erlang-base-hipe" {>= "1-21.1+dfsg"})
 ]
 extra-source "erlang-p1-zlib_1.0.4-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/erlang-p1-zlib/erlang-p1-zlib_1.0.4-3_amd64.deb"

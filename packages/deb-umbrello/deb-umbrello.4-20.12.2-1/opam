@@ -35,7 +35,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libxml2" {>= "2.7.4"}
   "deb-libxslt1-1" {>= "1.1.25"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "umbrello_4:20.12.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/umbrello/umbrello_20.12.2-1_amd64.deb"

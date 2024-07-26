@@ -10,8 +10,8 @@ depends: [
   "deb-python3-async-timeout"
   "deb-python3-deprecated"
   "deb-python3-packaging"
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
-  ("deb-python3-typing-extensions" | "deb- python3" {> "3.8"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
+  ("deb-python3-typing-extensions" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-redis_4.3.4-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-redis/python3-redis_4.3.4-3_all.deb"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r libncarg-data"]
 ]
 depends: [
-  ("deb-ksh" | "deb- mksh" | "deb- pdksh" | "deb- zsh")
+  ("deb-ksh" | "deb-mksh" | "deb-pdksh" | "deb-zsh")
 ]
 extra-source "libncarg-data_6.6.2.dfsg.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/ncl/libncarg-data_6.6.2.dfsg.1-1_all.deb"

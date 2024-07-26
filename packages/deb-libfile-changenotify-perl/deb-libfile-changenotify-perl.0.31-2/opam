@@ -10,7 +10,7 @@ depends: [
   "deb-libnamespace-autoclean-perl"
   "deb-libtype-tiny-perl"
   "deb-perl-any"
-  ("deb-libmodule-pluggable-perl" | "deb- perl" {< "5.17.9"})
+  ("deb-libmodule-pluggable-perl" | "deb-perl" {< "5.17.9"})
 ]
 extra-source "libfile-changenotify-perl_0.31-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libf/libfile-changenotify-perl/libfile-changenotify-perl_0.31-2_all.deb"

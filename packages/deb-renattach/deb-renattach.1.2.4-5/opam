@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.14"}
-  ("deb-exim4" | "deb- mail-transport-agent")
+  ("deb-exim4" | "deb-mail-transport-agent")
 ]
 extra-source "renattach_1.2.4-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/renattach/renattach_1.2.4-5_amd64.deb"

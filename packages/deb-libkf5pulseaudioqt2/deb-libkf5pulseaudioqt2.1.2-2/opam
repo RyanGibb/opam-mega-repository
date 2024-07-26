@@ -12,7 +12,7 @@ depends: [
   "deb-libqt5core5a" {>= "5.12.2"}
   "deb-libqt5dbus5" {>= "5.10.0~"}
   "deb-libstdc++6" {>= "4.5"}
-  ("deb-libqt5gui5" {>= "5.10.0~"} | "deb- libqt5gui5-gles" {>= "5.10.0~"})
+  ("deb-libqt5gui5" {>= "5.10.0~"} | "deb-libqt5gui5-gles" {>= "5.10.0~"})
 ]
 extra-source "libkf5pulseaudioqt2_1.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pulseaudio-qt/libkf5pulseaudioqt2_1.2-2_amd64.deb"

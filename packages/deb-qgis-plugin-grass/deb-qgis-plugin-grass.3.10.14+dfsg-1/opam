@@ -24,7 +24,7 @@ depends: [
   "deb-qgis" {= "3.10.14+dfsg-1"}
   "deb-qgis-plugin-grass-common" {= "3.10.14+dfsg-1"}
   "deb-qgis-provider-grass" {= "3.10.14+dfsg-1"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "qgis-plugin-grass_3.10.14+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qgis/qgis-plugin-grass_3.10.14+dfsg-1_amd64.deb"

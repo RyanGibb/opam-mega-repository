@@ -9,7 +9,7 @@ depends: [
   "deb-iptables"
   "deb-python3-any" {>= "3.5~"}
   "deb-python3-pkg-resources"
-  ("deb-openssh-client" | "deb- lsh-client" | "deb- dropbear" | "deb- ssh-client")
+  ("deb-openssh-client" | "deb-lsh-client" | "deb-dropbear" | "deb-ssh-client")
 ]
 extra-source "sshuttle_0.78.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sshuttle/sshuttle_0.78.5-1_all.deb"

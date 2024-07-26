@@ -11,7 +11,7 @@ depends: [
   "deb-ruby-httparty" {>= "0.11.0"}
   "deb-ruby-parallel"
   "deb-ruby-rugged"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "octocatalog-diff_1.5.4-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/octocatalog-diff/octocatalog-diff_1.5.4-2_all.deb"

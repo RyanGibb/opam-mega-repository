@@ -14,7 +14,7 @@ depends: [
   "deb-libmemcached11"
   "deb-libstdc++6" {>= "5.2"}
   "deb-libtiff5" {>= "4.0.3"}
-  ("deb-libapache2-mod-fcgid" | "deb- lighttpd")
+  ("deb-libapache2-mod-fcgid" | "deb-lighttpd")
 ]
 extra-source "iipimage-server_1.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/iipimage/iipimage-server_1.0-3_amd64.deb"

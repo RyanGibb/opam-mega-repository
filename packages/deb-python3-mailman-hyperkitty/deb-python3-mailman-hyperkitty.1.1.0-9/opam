@@ -12,7 +12,7 @@ depends: [
   "deb-python3-requests"
   "deb-python3-zope-interface"
   "deb-ucf"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "python3-mailman-hyperkitty_1.1.0-9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mailman-hyperkitty/python3-mailman-hyperkitty_1.1.0-9_all.deb"

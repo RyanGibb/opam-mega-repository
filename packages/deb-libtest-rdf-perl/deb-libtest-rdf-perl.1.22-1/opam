@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-librdf-trine-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.16.1"} | "deb- libscalar-list-utils-perl" {>= "1-1.24"})
+  ("deb-perl" {>= "5.16.1"} | "deb-libscalar-list-utils-perl" {>= "1-1.24"})
 ]
 extra-source "libtest-rdf-perl_1.22-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libt/libtest-rdf-perl/libtest-rdf-perl_1.22-1_all.deb"

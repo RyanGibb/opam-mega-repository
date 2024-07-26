@@ -21,11 +21,11 @@ depends: [
   "deb-sshfs"
   "deb-x11-xserver-utils"
   "deb-xorg"
-  ("deb-freerdp2-x11" | "deb- freerdp-x11" | "deb- rdesktop")
-  ("deb-inputattach" | "deb- joystick" {< "20051019-6"})
-  ("deb-netcat-traditional" | "deb- netcat")
-  ("deb-rsyslog" | "deb- system-log-daemon")
-  ("deb-systemd" {>= "219-1"} | "deb- ntpdate")
+  ("deb-freerdp2-x11" | "deb-freerdp-x11" | "deb-rdesktop")
+  ("deb-inputattach" | "deb-joystick" {< "20051019-6"})
+  ("deb-netcat-traditional" | "deb-netcat")
+  ("deb-rsyslog" | "deb-system-log-daemon")
+  ("deb-systemd" {>= "219-1"} | "deb-ntpdate")
 ]
 extra-source "ltsp-client_5.18.12-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/ltsp/ltsp-client_5.18.12-3_amd64.deb"

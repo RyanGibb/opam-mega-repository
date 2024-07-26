@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libemos0d" {= "2-4.5.9-6"}
-  ("deb-libeccodes-tools" | "deb- libemos-bin-any")
+  ("deb-libeccodes-tools" | "deb-libemos-bin-any")
 ]
 extra-source "libemos-dev_2:4.5.9-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/emoslib/libemos-dev_4.5.9-6_amd64.deb"

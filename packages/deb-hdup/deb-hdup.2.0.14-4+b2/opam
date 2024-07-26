@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.7"}
   "deb-libglib2-0-0" {>= "2.12.0"}
-  ("deb-ssh" | "deb- rsync")
+  ("deb-ssh" | "deb-rsync")
 ]
 extra-source "hdup_2.0.14-4+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/hdup/hdup_2.0.14-4+b2_amd64.deb"

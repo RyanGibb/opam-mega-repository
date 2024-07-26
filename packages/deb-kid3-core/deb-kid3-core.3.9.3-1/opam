@@ -28,8 +28,8 @@ depends: [
   "deb-libtag1v5" {>= "1.13"}
   "deb-libvorbis0a" {>= "1.1.2"}
   "deb-libvorbisfile3" {>= "1.1.2"}
-  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
-  ("deb-libqt5quick5" {>= "5.0.2"} | "deb- libqt5quick5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb-libqt5gui5-gles" {>= "5.11.0~rc1"})
+  ("deb-libqt5quick5" {>= "5.0.2"} | "deb-libqt5quick5-gles" {>= "5.0.2"})
 ]
 extra-source "kid3-core_3.9.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kid3/kid3-core_3.9.3-1_amd64.deb"

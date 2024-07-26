@@ -14,8 +14,8 @@ depends: [
   "deb-libstdc++6" {>= "11"}
   "deb-libxrender1"
   "deb-libxxf86vm1"
-  ("deb-libglu1-mesa" | "deb- libglu1")
-  ("deb-puredata-core" | "deb- pd")
+  ("deb-libglu1-mesa" | "deb-libglu1")
+  ("deb-puredata-core" | "deb-pd")
 ]
 extra-source "gem_1:0.94-8+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gem/gem_0.94-8+b1_amd64.deb"

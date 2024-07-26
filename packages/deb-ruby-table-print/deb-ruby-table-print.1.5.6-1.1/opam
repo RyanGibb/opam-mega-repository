@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-table-print"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-table-print_1.5.6-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-table-print/ruby-table-print_1.5.6-1.1_all.deb"

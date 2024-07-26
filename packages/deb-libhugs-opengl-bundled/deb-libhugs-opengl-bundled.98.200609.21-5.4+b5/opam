@@ -10,7 +10,7 @@ depends: [
   "deb-libc6" {>= "2.2.5"}
   "deb-libgl1"
   "deb-libhugs-base-bundled"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 conflicts: [
   "deb-libhugs-opengl"

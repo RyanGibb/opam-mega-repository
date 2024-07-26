@@ -12,7 +12,7 @@ depends: [
   "deb-tex-common" {>= "6.13"}
   "deb-texlive-binaries"
   "deb-texlive-latex-recommended"
-  ("deb-emacs-gtk" | "deb- emacsen")
+  ("deb-emacs-gtk" | "deb-emacsen")
 ]
 extra-source "maxima-emacs_5.44.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/maxima/maxima-emacs_5.44.0-3_all.deb"

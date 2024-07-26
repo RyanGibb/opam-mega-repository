@@ -10,7 +10,7 @@ depends: [
   "deb-libnmz7" {>= "2.0.21"}
   "deb-namazu2-common" {= "2.0.21-23"}
   "deb-perl-any"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 conflicts: [
   "deb-namazu" {< "2.0"}

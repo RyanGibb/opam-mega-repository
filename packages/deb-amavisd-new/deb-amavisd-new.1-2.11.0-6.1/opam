@@ -27,8 +27,8 @@ depends: [
   "deb-lsb-base" {>= "3.0-6"}
   "deb-pax"
   "deb-perl"
-  ("deb-debconf" | "deb- debconf-2-0")
-  ("deb-perl" {>= "5.10.1"} | "deb- libcompress-raw-zlib-perl" {>= "2.017"})
+  ("deb-debconf" | "deb-debconf-2-0")
+  ("deb-perl" {>= "5.10.1"} | "deb-libcompress-raw-zlib-perl" {>= "2.017"})
 ]
 conflicts: [
   "deb-amavis"

@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.29"}
   "deb-r-base-core"
   "deb-r-base-core" {>= "4.0.2-1"}
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "r-cran-gee_4.13-20-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-gee/r-cran-gee_4.13-20-2_amd64.deb"

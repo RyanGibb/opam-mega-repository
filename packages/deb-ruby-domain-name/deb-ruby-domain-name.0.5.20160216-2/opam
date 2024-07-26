@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-unf"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-domain-name_0.5.20160216-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-domain-name/ruby-domain-name_0.5.20160216-2_all.deb"

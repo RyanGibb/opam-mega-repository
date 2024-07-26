@@ -10,7 +10,7 @@ depends: [
   "deb-python3-backoff"
   "deb-python3-requests"
   "deb-python3-rich"
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-censys_2.1.9-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/censys/python3-censys_2.1.9-2_all.deb"

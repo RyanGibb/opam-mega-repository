@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r libsvnclientadapter-java"]
 ]
 depends: [
-  ("deb-libsvn-java" {>= "1.8~"} | "deb- libsvnkit-java" {>= "1.7.5~"})
+  ("deb-libsvn-java" {>= "1.8~"} | "deb-libsvnkit-java" {>= "1.7.5~"})
 ]
 conflicts: [
   "deb-libnb-svnclientadapter-java"

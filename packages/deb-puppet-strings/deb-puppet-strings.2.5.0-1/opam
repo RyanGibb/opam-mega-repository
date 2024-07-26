@@ -9,7 +9,7 @@ depends: [
   "deb-puppet"
   "deb-ruby-rgen"
   "deb-yard"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "puppet-strings_2.5.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/puppet-strings/puppet-strings_2.5.0-1_all.deb"

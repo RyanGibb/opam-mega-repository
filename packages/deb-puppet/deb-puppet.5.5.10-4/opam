@@ -14,7 +14,7 @@ depends: [
   "deb-ruby-augeas"
   "deb-ruby-deep-merge"
   "deb-ruby-shadow"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "puppet_5.5.10-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/puppet/puppet_5.5.10-4_all.deb"

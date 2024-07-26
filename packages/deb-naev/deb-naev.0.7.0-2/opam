@@ -20,7 +20,7 @@ depends: [
   "deb-libxml2" {>= "2.7.4"}
   "deb-naev-data" {= "0.7.0-2"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "naev_0.7.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/naev/naev_0.7.0-2_amd64.deb"

@@ -14,7 +14,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "4.1.1"}
   "deb-libtcmalloc-minimal4" {>= "2.10"}
-  ("deb-libqt5gui5" {>= "5.8.0"} | "deb- libqt5gui5-gles" {>= "5.8.0"})
+  ("deb-libqt5gui5" {>= "5.8.0"} | "deb-libqt5gui5-gles" {>= "5.8.0"})
 ]
 extra-source "xmpsolve_3.2.1-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mpsolve/xmpsolve_3.2.1-7_amd64.deb"

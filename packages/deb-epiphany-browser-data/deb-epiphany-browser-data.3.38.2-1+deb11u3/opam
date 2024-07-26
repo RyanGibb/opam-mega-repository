@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r epiphany-browser-data"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "epiphany-browser-data_3.38.2-1+deb11u3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/epiphany-browser/epiphany-browser-data_3.38.2-1+deb11u3_all.deb"

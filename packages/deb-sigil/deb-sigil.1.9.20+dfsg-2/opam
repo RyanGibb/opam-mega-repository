@@ -25,7 +25,7 @@ depends: [
   "deb-python3-lxml"
   "deb-sigil-data" {< "1.9.20+dfsg-2+"}
   "deb-sigil-data" {>= "1.9.20+dfsg-2"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "sigil_1.9.20+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sigil/sigil_1.9.20+dfsg-2_amd64.deb"

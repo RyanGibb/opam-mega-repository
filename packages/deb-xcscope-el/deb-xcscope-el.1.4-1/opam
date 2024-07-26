@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-cscope"
-  ("deb-emacs24" | "deb- emacsen")
+  ("deb-emacs24" | "deb-emacsen")
 ]
 conflicts: [
   "deb-cscope-el" {< "15.8a-2"}

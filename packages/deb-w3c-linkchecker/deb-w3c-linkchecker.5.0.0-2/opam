@@ -23,7 +23,7 @@ depends: [
   "deb-libwww-perl"
   "deb-perl-any"
   "deb-ucf"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "w3c-linkchecker_5.0.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/w3c-linkchecker/w3c-linkchecker_5.0.0-2_all.deb"

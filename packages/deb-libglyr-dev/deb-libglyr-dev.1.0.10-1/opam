@@ -9,7 +9,7 @@ depends: [
   "deb-libglib2-0-dev"
   "deb-libglyr1" {= "1.0.10-1"}
   "deb-libsqlite3-dev"
-  ("deb-libcurl4-gnutls-dev" | "deb- libcurl-dev")
+  ("deb-libcurl4-gnutls-dev" | "deb-libcurl-dev")
 ]
 extra-source "libglyr-dev_1.0.10-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/glyr/libglyr-dev_1.0.10-1_amd64.deb"

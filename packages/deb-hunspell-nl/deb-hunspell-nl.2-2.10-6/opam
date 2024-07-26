@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r hunspell-nl"]
 ]
 depends: [
-  ("deb-dictionaries-common" | "deb- openoffice-org-updatedicts")
+  ("deb-dictionaries-common" | "deb-openoffice-org-updatedicts")
 ]
 conflicts: [
   "deb-myspell-nl"

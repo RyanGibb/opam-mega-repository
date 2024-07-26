@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libjs-jquery"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-http-connection_1.4.4-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-http-connection/ruby-http-connection_1.4.4-1.1_all.deb"

@@ -26,7 +26,7 @@ depends: [
   "deb-libxcb1"
   "deb-libxkbcommon0" {>= "0.5.0"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libluajit-5-1-2" {>= "2.0.4+dfsg"} | "deb- libluajit2-5-1-2" {>= "2.1~"})
+  ("deb-libluajit-5-1-2" {>= "2.0.4+dfsg"} | "deb-libluajit2-5-1-2" {>= "2.1~"})
 ]
 extra-source "libobs0_29.0.2+dfsg-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/obs-studio/libobs0_29.0.2+dfsg-1+b1_amd64.deb"

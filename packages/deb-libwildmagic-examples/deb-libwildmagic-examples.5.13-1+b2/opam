@@ -12,8 +12,8 @@ depends: [
   "deb-libwildmagic5" {= "5.13-1+b2"}
   "deb-libx11-6"
   "deb-libxext6"
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "libwildmagic-examples_5.13-1+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libw/libwildmagic/libwildmagic-examples_5.13-1+b2_amd64.deb"

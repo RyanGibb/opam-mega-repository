@@ -13,7 +13,7 @@ depends: [
   "deb-libx11-6"
   "deb-libxml2" {>= "2.7.4"}
   "deb-libxnvctrl0"
-  ("deb-ocl-icd-libopencl1" | "deb- libopencl1")
+  ("deb-ocl-icd-libopencl1" | "deb-libopencl1")
 ]
 extra-source "libhwloc-plugins_2.9.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/hwloc/libhwloc-plugins_2.9.0-1_amd64.deb"

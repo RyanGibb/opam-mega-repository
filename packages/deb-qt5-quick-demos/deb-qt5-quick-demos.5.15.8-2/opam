@@ -21,8 +21,8 @@ depends: [
   "deb-qml-module-qtquick-window2"
   "deb-qml-module-qtquick-xmllistmodel"
   "deb-qml-module-qtquick2"
-  ("deb-libqt5gui5" {>= "5.15.8+dfsg~"} | "deb- libqt5gui5-gles" {>= "5.15.8+dfsg~"})
-  ("deb-libqt5quick5" {>= "5.15.8~"} | "deb- libqt5quick5-gles" {>= "5.15.8~"})
+  ("deb-libqt5gui5" {>= "5.15.8+dfsg~"} | "deb-libqt5gui5-gles" {>= "5.15.8+dfsg~"})
+  ("deb-libqt5quick5" {>= "5.15.8~"} | "deb-libqt5quick5-gles" {>= "5.15.8~"})
 ]
 extra-source "qt5-quick-demos_5.15.8-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtdoc-opensource-src/qt5-quick-demos_5.15.8-2_amd64.deb"

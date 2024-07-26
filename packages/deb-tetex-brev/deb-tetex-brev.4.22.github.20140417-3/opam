@@ -10,7 +10,7 @@ depends: [
   "deb-texlive-fonts-recommended"
   "deb-texlive-latex-base"
   "deb-texlive-latex-recommended"
-  ("deb-texlive-lang-european" | "deb- texlive-latex-base" {< "2013.20130918-1"})
+  ("deb-texlive-lang-european" | "deb-texlive-latex-base" {< "2013.20130918-1"})
 ]
 extra-source "tetex-brev_4.22.github.20140417-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tetex-brev/tetex-brev_4.22.github.20140417-3_all.deb"

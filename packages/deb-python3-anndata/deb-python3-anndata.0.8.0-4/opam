@@ -13,8 +13,8 @@ depends: [
   "deb-python3-packaging"
   "deb-python3-pandas"
   "deb-python3-scipy"
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
-  ("deb-python3-typing-extensions" | "deb- python3" {> "3.8"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
+  ("deb-python3-typing-extensions" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-anndata_0.8.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-anndata/python3-anndata_0.8.0-4_all.deb"

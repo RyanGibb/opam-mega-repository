@@ -10,7 +10,7 @@ depends: [
   "deb-libmime-types-perl"
   "deb-libproc-waitstat-perl"
   "deb-perl-any"
-  ("deb-default-mta" | "deb- mail-transport-agent")
+  ("deb-default-mta" | "deb-mail-transport-agent")
 ]
 extra-source "mime-construct_1.12+really1.11-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mime-construct/mime-construct_1.12+really1.11-1_all.deb"

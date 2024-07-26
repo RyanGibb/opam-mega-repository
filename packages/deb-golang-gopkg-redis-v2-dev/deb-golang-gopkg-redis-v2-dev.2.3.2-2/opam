@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-golang-go"
   "deb-golang-gopkg-bufio-v1-dev"
-  ("deb-golang-check-v1-dev" | "deb- golang-gopkg-check-v1-dev")
+  ("deb-golang-check-v1-dev" | "deb-golang-gopkg-check-v1-dev")
 ]
 extra-source "golang-gopkg-redis.v2-dev_2.3.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/golang-gopkg-redis.v2/golang-gopkg-redis.v2-dev_2.3.2-2_all.deb"

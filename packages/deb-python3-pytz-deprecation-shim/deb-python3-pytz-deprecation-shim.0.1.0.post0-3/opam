@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-python3-any"
-  ("deb-python3-dateutil" | "deb- python3" {> "3.6"})
+  ("deb-python3-dateutil" | "deb-python3" {> "3.6"})
 ]
 extra-source "python3-pytz-deprecation-shim_0.1.0.post0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pytz-deprecation-shim/python3-pytz-deprecation-shim_0.1.0.post0-3_all.deb"

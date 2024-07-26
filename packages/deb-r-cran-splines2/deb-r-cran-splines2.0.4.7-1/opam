@@ -13,7 +13,7 @@ depends: [
   "deb-r-base-core" {>= "4.2.2.20221110-1"}
   "deb-r-cran-rcpp"
   "deb-r-cran-rcpparmadillo"
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "r-cran-splines2_0.4.7-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-splines2/r-cran-splines2_0.4.7-1_amd64.deb"

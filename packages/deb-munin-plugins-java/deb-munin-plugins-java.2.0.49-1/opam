@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-munin-common" {>= "2.0.49-1"}
-  ("deb-default-jre-headless" | "deb- java6-runtime-headless" | "deb- java5-runtime-headless" | "deb- java2-runtime-headless")
+  ("deb-default-jre-headless" | "deb-java6-runtime-headless" | "deb-java5-runtime-headless" | "deb-java2-runtime-headless")
 ]
 extra-source "munin-plugins-java_2.0.49-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/munin/munin-plugins-java_2.0.49-1_all.deb"

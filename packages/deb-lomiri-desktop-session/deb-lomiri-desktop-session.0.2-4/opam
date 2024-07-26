@@ -9,7 +9,7 @@ depends: [
   "deb-dbus"
   "deb-lomiri"
   "deb-lomiri-terminal-app"
-  ("deb-pulseaudio" | "deb- pipewire-pulse")
+  ("deb-pulseaudio" | "deb-pipewire-pulse")
 ]
 extra-source "lomiri-desktop-session_0.2-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lomiri-session/lomiri-desktop-session_0.2-4_all.deb"

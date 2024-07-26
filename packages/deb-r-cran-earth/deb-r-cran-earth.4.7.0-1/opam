@@ -13,7 +13,7 @@ depends: [
   "deb-r-base-core" {>= "3.5.2-1"}
   "deb-r-cran-plotmo" {>= "3.5.1"}
   "deb-r-cran-teachingdemos" {>= "2.10"}
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "r-cran-earth_4.7.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-earth/r-cran-earth_4.7.0-1_amd64.deb"

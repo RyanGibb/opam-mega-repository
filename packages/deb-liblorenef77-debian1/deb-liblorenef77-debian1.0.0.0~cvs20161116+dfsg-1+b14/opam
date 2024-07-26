@@ -10,7 +10,7 @@ depends: [
   "deb-libgcc-s1" {>= "4.0"}
   "deb-libgfortran5" {>= "8"}
   "deb-libpgplot0"
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "liblorenef77-debian1_0.0.0~cvs20161116+dfsg-1+b14_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lorene/liblorenef77-debian1_0.0.0~cvs20161116+dfsg-1+b14_amd64.deb"

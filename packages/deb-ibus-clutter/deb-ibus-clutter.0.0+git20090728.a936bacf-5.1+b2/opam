@@ -36,8 +36,8 @@ depends: [
   "deb-libxi6"
   "deb-libxkbcommon0" {>= "0.5.0"}
   "deb-libxrandr2"
-  ("deb-libegl1-mesa" {>= "7.8.1"} | "deb- libegl1-x11")
-  ("deb-libwayland-egl1-mesa" {>= "10.0.2"} | "deb- libwayland-egl1")
+  ("deb-libegl1-mesa" {>= "7.8.1"} | "deb-libegl1-x11")
+  ("deb-libwayland-egl1-mesa" {>= "10.0.2"} | "deb-libwayland-egl1")
 ]
 extra-source "ibus-clutter_0.0+git20090728.a936bacf-5.1+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/ibus-client-clutter/ibus-clutter_0.0+git20090728.a936bacf-5.1+b2_amd64.deb"

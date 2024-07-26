@@ -14,7 +14,7 @@ depends: [
   "deb-libqtermwidget5-1" {>= "1.2.0"}
   "deb-libstdc++6" {>= "5"}
   "deb-libx11-6"
-  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb-libqt5gui5-gles" {>= "5.11.0~rc1"})
 ]
 extra-source "qterminal_1.2.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qterminal/qterminal_1.2.0-2_amd64.deb"

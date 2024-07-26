@@ -12,7 +12,7 @@ depends: [
   "deb-libidn2-0" {>= "2.0.0"}
   "deb-libkrb5-3" {>= "1.6.dfsg.2"}
   "deb-libprotobuf-c1" {>= "1.0.0"}
-  ("deb-bind9-host" | "deb- host")
+  ("deb-bind9-host" | "deb-host")
 ]
 conflicts: [
   "deb-bind-dnsutils" {< "1-9.13.6~"}

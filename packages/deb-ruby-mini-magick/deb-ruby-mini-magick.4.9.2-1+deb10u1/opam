@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-ruby-posix-spawn"
-  ("deb-imagemagick" {>= "6.6.3~"} | "deb- graphicsmagick")
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-imagemagick" {>= "6.6.3~"} | "deb-graphicsmagick")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-mini-magick_4.9.2-1+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-mini-magick/ruby-mini-magick_4.9.2-1+deb10u1_all.deb"

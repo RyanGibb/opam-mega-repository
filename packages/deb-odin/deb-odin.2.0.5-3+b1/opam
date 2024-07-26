@@ -18,10 +18,10 @@ depends: [
   "deb-libstdc++6" {>= "11"}
   "deb-libvtk9-1" {>= "9.1.0+really9.1.0+dfsg2"}
   "deb-mitools" {= "2.0.5-3+b1"}
-  ("deb-libblas-dev" | "deb- libatlas-base-dev")
-  ("deb-libc6-dev" | "deb- libc-dev")
-  ("deb-libqt5gui5" {>= "5.8.0"} | "deb- libqt5gui5-gles" {>= "5.8.0"})
-  ("deb-xterm" | "deb- x-terminal-emulator")
+  ("deb-libblas-dev" | "deb-libatlas-base-dev")
+  ("deb-libc6-dev" | "deb-libc-dev")
+  ("deb-libqt5gui5" {>= "5.8.0"} | "deb-libqt5gui5-gles" {>= "5.8.0"})
+  ("deb-xterm" | "deb-x-terminal-emulator")
 ]
 extra-source "odin_2.0.5-3+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/odin/odin_2.0.5-3+b1_amd64.deb"

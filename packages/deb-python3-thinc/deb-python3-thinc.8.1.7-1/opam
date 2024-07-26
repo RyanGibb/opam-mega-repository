@@ -36,7 +36,7 @@ depends: [
   "deb-python3-srsly"
   "deb-python3-typeshed"
   "deb-python3-wasabi"
-  ("deb-python3-mypy" | "deb- python3" {< "3.7"})
+  ("deb-python3-mypy" | "deb-python3" {< "3.7"})
 ]
 extra-source "python3-thinc_8.1.7-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-thinc/python3-thinc_8.1.7-1_amd64.deb"

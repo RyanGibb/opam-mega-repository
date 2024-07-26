@@ -9,7 +9,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-django"
   "deb-python3-pint"
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-django-pint_0.7.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-django-pint/python3-django-pint_0.7.1-2_all.deb"

@@ -15,7 +15,7 @@ depends: [
   "deb-libtinfo6" {>= "6"}
   "deb-lsb-base" {>= "3.1"}
   "deb-runit-helper" {>= "2.8.1~"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "irqbalance_1.5.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/irqbalance/irqbalance_1.5.0-3_amd64.deb"

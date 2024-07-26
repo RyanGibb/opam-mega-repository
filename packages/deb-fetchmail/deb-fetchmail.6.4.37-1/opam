@@ -13,7 +13,7 @@ depends: [
   "deb-libgssapi-krb5-2" {>= "1.17"}
   "deb-libkrb5-3" {>= "1.13~alpha1+dfsg"}
   "deb-libssl3" {>= "3.0.7"}
-  ("deb-sysvinit-utils" {>= "3.05-4~"} | "deb- lsb-base")
+  ("deb-sysvinit-utils" {>= "3.05-4~"} | "deb-lsb-base")
 ]
 conflicts: [
   "deb-fetchmail-common"

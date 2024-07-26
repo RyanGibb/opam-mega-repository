@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-perl-any"
   "deb-php"
-  ("deb-apache2" | "deb- httpd")
+  ("deb-apache2" | "deb-httpd")
 ]
 extra-source "simplesamlphp_1.19.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/simplesamlphp/simplesamlphp_1.19.0-1_all.deb"

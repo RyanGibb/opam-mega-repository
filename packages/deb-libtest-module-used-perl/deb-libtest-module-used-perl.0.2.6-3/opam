@@ -10,7 +10,7 @@ depends: [
   "deb-libmodule-used-perl"
   "deb-libppi-perl"
   "deb-perl-any"
-  ("deb-perl" | "deb- libcpan-meta-perl")
+  ("deb-perl" | "deb-libcpan-meta-perl")
 ]
 extra-source "libtest-module-used-perl_0.2.6-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libt/libtest-module-used-perl/libtest-module-used-perl_0.2.6-3_all.deb"

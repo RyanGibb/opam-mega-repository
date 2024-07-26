@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-appraiser-rubocop"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-appraiser-rubocop_1.0.1-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-appraiser-rubocop/ruby-appraiser-rubocop_1.0.1-1.1_all.deb"

@@ -10,7 +10,7 @@ depends: [
   "deb-python3-six"
   "deb-python3-urllib3" {>= "1.22"}
   "deb-python3-yaml"
-  ("deb-netdata-core" {>= "1.29.3-4"} | "deb- netdata-core-no-sse" {>= "1.29.3-4"})
+  ("deb-netdata-core" {>= "1.29.3-4"} | "deb-netdata-core-no-sse" {>= "1.29.3-4"})
 ]
 extra-source "netdata-plugins-python_1.29.3-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/netdata/netdata-plugins-python_1.29.3-4_all.deb"

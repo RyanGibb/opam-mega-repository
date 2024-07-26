@@ -13,7 +13,7 @@ depends: [
   "deb-libnm0" {>= "1.0.0"}
   "deb-libnotify4" {>= "0.7.1"}
   "deb-libpam0g" {>= "0.99.7.1"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "krb5-auth-dialog_3.26.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/krb5-auth-dialog/krb5-auth-dialog_3.26.1-2_amd64.deb"

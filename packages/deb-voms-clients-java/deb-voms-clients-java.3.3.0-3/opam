@@ -9,7 +9,7 @@ depends: [
   "deb-libcommons-cli-java" {>= "1.4"}
   "deb-libcommons-io-java" {>= "2.6"}
   "deb-libvoms-api-java-java" {>= "3.3.0"}
-  ("deb-default-jre-headless" | "deb- java8-runtime-headless")
+  ("deb-default-jre-headless" | "deb-java8-runtime-headless")
 ]
 conflicts: [
   "deb-voms-clients" {< "2.0.12"}

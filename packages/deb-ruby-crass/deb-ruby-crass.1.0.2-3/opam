@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-crass"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-crass_1.0.2-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-crass/ruby-crass_1.0.2-3_all.deb"

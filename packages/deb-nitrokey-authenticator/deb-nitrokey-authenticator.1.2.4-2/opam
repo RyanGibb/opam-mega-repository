@@ -15,7 +15,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "6"}
   "deb-libzbarqt0" {>= "0.23"}
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "nitrokey-authenticator_1.2.4-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/nitrokey-authenticator/nitrokey-authenticator_1.2.4-2_amd64.deb"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r git-flow"]
 ]
 depends: [
-  ("deb-git" | "deb- git-core")
+  ("deb-git" | "deb-git-core")
 ]
 extra-source "git-flow_1.12.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/git-flow/git-flow_1.12.0-1_all.deb"

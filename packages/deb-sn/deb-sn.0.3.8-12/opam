@@ -12,10 +12,10 @@ depends: [
   "deb-psmisc"
   "deb-tcpd"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-default-mta" | "deb- mail-transport-agent")
-  ("deb-heirloom-mailx" | "deb- mailx")
-  ("deb-openbsd-inetd" | "deb- inet-superserver")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-default-mta" | "deb-mail-transport-agent")
+  ("deb-heirloom-mailx" | "deb-mailx")
+  ("deb-openbsd-inetd" | "deb-inet-superserver")
 ]
 conflicts: [
   "deb-news-transport-system"

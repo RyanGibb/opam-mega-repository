@@ -9,8 +9,8 @@ depends: [
   "deb-adduser"
   "deb-analog" {>= "5.21"}
   "deb-perl"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-mailutils" | "deb- mailx")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-mailutils" | "deb-mailx")
 ]
 extra-source "fwanalog_0.6.9-10_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fwanalog/fwanalog_0.6.9-10_all.deb"

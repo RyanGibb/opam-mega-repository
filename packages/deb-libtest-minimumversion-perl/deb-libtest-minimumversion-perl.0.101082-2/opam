@@ -10,7 +10,7 @@ depends: [
   "deb-libfile-find-rule-perl-perl"
   "deb-libperl-minimumversion-perl" {>= "1.32"}
   "deb-perl"
-  ("deb-perl" {>= "5.13.10"} | "deb- libcpan-meta-perl")
+  ("deb-perl" {>= "5.13.10"} | "deb-libcpan-meta-perl")
 ]
 extra-source "libtest-minimumversion-perl_0.101082-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libt/libtest-minimumversion-perl/libtest-minimumversion-perl_0.101082-2_all.deb"

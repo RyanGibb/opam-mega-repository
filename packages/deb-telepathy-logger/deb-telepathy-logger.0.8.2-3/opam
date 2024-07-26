@@ -14,7 +14,7 @@ depends: [
   "deb-libtelepathy-glib0" {>= "0.19.2"}
   "deb-libtelepathy-logger3" {= "0.8.2-3"}
   "deb-libxml2" {>= "2.6.27"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "telepathy-logger_0.8.2-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/telepathy-logger/telepathy-logger_0.8.2-3_amd64.deb"

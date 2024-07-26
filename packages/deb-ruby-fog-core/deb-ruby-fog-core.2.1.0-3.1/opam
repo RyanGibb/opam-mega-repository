@@ -12,7 +12,7 @@ depends: [
   "deb-ruby-mime-types"
   "deb-ruby-net-scp"
   "deb-ruby-net-ssh"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-fog-core_2.1.0-3.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-fog-core/ruby-fog-core_2.1.0-3.1_all.deb"

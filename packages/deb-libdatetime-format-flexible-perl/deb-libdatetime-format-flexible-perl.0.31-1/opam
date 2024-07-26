@@ -11,7 +11,7 @@ depends: [
   "deb-libdatetime-timezone-perl"
   "deb-liblist-moreutils-perl"
   "deb-perl"
-  ("deb-libmodule-pluggable-perl" | "deb- perl" {< "5.17.9"})
+  ("deb-libmodule-pluggable-perl" | "deb-perl" {< "5.17.9"})
 ]
 extra-source "libdatetime-format-flexible-perl_0.31-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libd/libdatetime-format-flexible-perl/libdatetime-format-flexible-perl_0.31-1_all.deb"

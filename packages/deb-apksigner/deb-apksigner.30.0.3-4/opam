@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libapksig-java" {>= "30.0.3-4"}
-  ("deb-default-jre" | "deb- java8-runtime" | "deb- java9-runtime" | "deb- java10-runtime" | "deb- java11-runtime")
+  ("deb-default-jre" | "deb-java8-runtime" | "deb-java9-runtime" | "deb-java10-runtime" | "deb-java11-runtime")
 ]
 extra-source "apksigner_30.0.3-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/android-platform-tools-apksig/apksigner_30.0.3-4_all.deb"

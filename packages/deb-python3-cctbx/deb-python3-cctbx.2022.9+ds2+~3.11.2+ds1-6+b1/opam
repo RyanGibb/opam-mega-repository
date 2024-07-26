@@ -40,8 +40,8 @@ depends: [
   "deb-python3-six"
   "deb-python3-tqdm"
   "deb-python3-wxgtk4-0"
-  ("deb-libantlr3c-3-4-0" | "deb- libantlr3c-antlrdbg-3-4-0")
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libantlr3c-3-4-0" | "deb-libantlr3c-antlrdbg-3-4-0")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "python3-cctbx_2022.9+ds2+~3.11.2+ds1-6+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cctbx/python3-cctbx_2022.9+ds2+~3.11.2+ds1-6+b1_amd64.deb"

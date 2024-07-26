@@ -41,8 +41,8 @@ depends: [
   "deb-qml-module-qtquick-layouts" {>= "5.11.0~"}
   "deb-qml-module-qtquick-window2" {>= "5.11.0~"}
   "deb-qml-module-qtquick2" {>= "5.11.0~"}
-  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
-  ("deb-libqt5quick5" {>= "5.15.2~"} | "deb- libqt5quick5-gles" {>= "5.15.2~"})
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb-libqt5gui5-gles" {>= "5.15.2~"})
+  ("deb-libqt5quick5" {>= "5.15.2~"} | "deb-libqt5quick5-gles" {>= "5.15.2~"})
 ]
 extra-source "ktouch_4:22.12.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/ktouch/ktouch_22.12.3-1_amd64.deb"

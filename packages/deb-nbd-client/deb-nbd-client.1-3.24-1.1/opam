@@ -10,7 +10,7 @@ depends: [
   "deb-libgnutls30" {>= "3.7.5"}
   "deb-libnl-3-200" {>= "3.2.7"}
   "deb-libnl-genl-3-200" {>= "3.2.7"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "nbd-client_1:3.24-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/nbd/nbd-client_3.24-1.1_amd64.deb"

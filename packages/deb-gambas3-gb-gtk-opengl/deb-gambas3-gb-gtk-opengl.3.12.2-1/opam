@@ -28,7 +28,7 @@ depends: [
   "deb-libx11-6"
   "deb-libxmu6"
   "deb-libxt6"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "gambas3-gb-gtk-opengl_3.12.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gambas3/gambas3-gb-gtk-opengl_3.12.2-1_amd64.deb"

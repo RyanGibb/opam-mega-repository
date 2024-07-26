@@ -10,7 +10,7 @@ depends: [
   "deb-libc6" {>= "2.28"}
   "deb-lsb-base"
   "deb-udev"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "mdadm_4.1-11_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mdadm/mdadm_4.1-11_amd64.deb"

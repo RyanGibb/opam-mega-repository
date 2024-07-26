@@ -18,7 +18,7 @@ depends: [
   "deb-python3-requests" {>= "2.5.0"}
   "deb-python3-snowballstemmer" {>= "1.1"}
   "deb-sphinx-common" {= "5.3.0-4"}
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.10"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.10"})
 ]
 conflicts: [
   "deb-python-sphinx"

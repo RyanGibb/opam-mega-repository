@@ -31,7 +31,7 @@ depends: [
   "deb-libsoup2-4-1" {>= "2.4.0"}
   "deb-libsqlite3-0" {>= "3.5.9"}
   "deb-libxml2" {>= "2.6.27"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "almanah_0.11.1-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/almanah/almanah_0.11.1-2+b1_amd64.deb"

@@ -12,8 +12,8 @@ depends: [
   "deb-r-cran-expm"
   "deb-r-cran-mvtnorm"
   "deb-r-cran-survival"
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "r-cran-msm_1.7-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-msm/r-cran-msm_1.7-1_amd64.deb"

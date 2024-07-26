@@ -9,8 +9,8 @@ depends: [
   "deb-freeglut3"
   "deb-python-any" {< "2.8"}
   "deb-python-any" {>= "2.7~"}
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
   ("deb-python" | "deb-python2")
 ]
 extra-source "python-opengl_3.1.0+dfsg-2_amd64.deb" {

@@ -24,7 +24,7 @@ depends: [
   "deb-libstk-4-5-0"
   "deb-libx11-6"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "libcsound64-6.0_1:6.12.2~dfsg-3.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/csound/libcsound64-6.0_6.12.2~dfsg-3.1_amd64.deb"

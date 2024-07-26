@@ -15,7 +15,7 @@ depends: [
   "deb-python3"
   "deb-python3-any"
   "deb-sysvinit-utils"
-  ("deb-netbase" | "deb- systemd-sysv")
+  ("deb-netbase" | "deb-systemd-sysv")
 ]
 conflicts: [
   "deb-fso-gpsd"

@@ -19,7 +19,7 @@ depends: [
   "deb-libtrilinos-thyra12" {>= "12.18.1"}
   "deb-libtrilinos-tpetra12" {>= "12.18.1"}
   "deb-libtrilinos-zoltan2-12" {>= "12.18.1"}
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "libtrilinos-ifpack2-12_12.18.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/trilinos/libtrilinos-ifpack2-12_12.18.1-2_amd64.deb"

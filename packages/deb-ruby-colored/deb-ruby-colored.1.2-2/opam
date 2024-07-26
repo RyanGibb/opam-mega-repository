@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-colored"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-colored_1.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-colored/ruby-colored_1.2-2_all.deb"

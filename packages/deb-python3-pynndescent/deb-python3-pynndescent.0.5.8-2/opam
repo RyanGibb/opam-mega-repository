@@ -12,7 +12,7 @@ depends: [
   "deb-python3-numba"
   "deb-python3-scipy"
   "deb-python3-sklearn"
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-pynndescent_0.5.8-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-pynndescent/python3-pynndescent_0.5.8-2_amd64.deb"

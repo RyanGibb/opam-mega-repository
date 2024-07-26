@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-parse-cron"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-parse-cron_0.1.4-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-parse-cron/ruby-parse-cron_0.1.4-1.1_all.deb"

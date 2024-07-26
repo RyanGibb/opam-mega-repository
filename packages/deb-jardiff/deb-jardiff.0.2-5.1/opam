@@ -9,7 +9,7 @@ depends: [
   "deb-java-wrappers"
   "deb-libasm-java" {>= "5.0"}
   "deb-libcommons-cli-java"
-  ("deb-default-jre-headless" | "deb- java2-runtime-headless")
+  ("deb-default-jre-headless" | "deb-java2-runtime-headless")
 ]
 extra-source "jardiff_0.2-5.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jardiff/jardiff_0.2-5.1_all.deb"

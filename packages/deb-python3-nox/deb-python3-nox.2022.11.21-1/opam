@@ -11,8 +11,8 @@ depends: [
   "deb-python3-colorlog"
   "deb-python3-packaging"
   "deb-python3-virtualenv"
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
-  ("deb-python3-typing-extensions" | "deb- python3" {> "3.8"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
+  ("deb-python3-typing-extensions" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-nox_2022.11.21-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-nox/python3-nox_2022.11.21-1_all.deb"

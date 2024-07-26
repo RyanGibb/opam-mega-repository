@@ -12,7 +12,7 @@ depends: [
   "deb-python3-debconf"
   "deb-sensible-utils"
   "deb-ucf" {>= "0.28"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "apt-listchanges_3.24_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/apt-listchanges/apt-listchanges_3.24_all.deb"

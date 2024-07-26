@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.4"}
   "deb-libwrap0" {>= "7.6-4~"}
   "deb-netbase"
-  ("deb-openbsd-inetd" | "deb- xinetd")
+  ("deb-openbsd-inetd" | "deb-xinetd")
 ]
 extra-source "talkd_0.17-17_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/netkit-ntalk/talkd_0.17-17_amd64.deb"

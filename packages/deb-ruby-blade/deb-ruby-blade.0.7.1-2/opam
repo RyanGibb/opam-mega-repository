@@ -17,7 +17,7 @@ depends: [
   "deb-ruby-thor" {>= "0.19.1"}
   "deb-ruby-useragent" {>= "0.16.7"}
   "deb-thin" {>= "1.6.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-blade_0.7.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-blade/ruby-blade_0.7.1-2_all.deb"

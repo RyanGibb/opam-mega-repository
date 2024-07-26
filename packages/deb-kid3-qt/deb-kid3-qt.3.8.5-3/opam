@@ -13,7 +13,7 @@ depends: [
   "deb-libqt5multimedia5-plugins"
   "deb-libqt5widgets5" {>= "5.14.1"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb-libqt5gui5-gles" {>= "5.11.0~rc1"})
 ]
 extra-source "kid3-qt_3.8.5-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kid3/kid3-qt_3.8.5-3_amd64.deb"

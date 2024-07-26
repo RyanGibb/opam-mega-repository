@@ -12,7 +12,7 @@ depends: [
   "deb-xmms2-plugin-id3v2"
   "deb-xmms2-plugin-mad"
   "deb-xmms2-plugin-vorbis"
-  ("deb-xmms2-plugin-alsa" | "deb- xmms2-plugin-output")
+  ("deb-xmms2-plugin-alsa" | "deb-xmms2-plugin-output")
 ]
 conflicts: [
   "deb-xmms2-plugin-nulstripper"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r gzip"]
 ]
 depends: [
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 extra-source "gzip_1.10-4+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gzip/gzip_1.10-4+deb11u1_amd64.deb"

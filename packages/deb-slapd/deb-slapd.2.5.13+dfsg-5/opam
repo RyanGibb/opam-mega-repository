@@ -20,7 +20,7 @@ depends: [
   "deb-perl-any"
   "deb-psmisc"
   "deb-sysvinit-utils"
-  ("deb-perl-any" {> "5.8.0"} | "deb- libmime-base64-perl")
+  ("deb-perl-any" {> "5.8.0"} | "deb-libmime-base64-perl")
 ]
 conflicts: [
   "deb-ldap-server"

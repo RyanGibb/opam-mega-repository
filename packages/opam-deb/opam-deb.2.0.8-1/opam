@@ -15,7 +15,7 @@ depends: [
   "deb-opam-doc" {= "2.0.8-1"}
   "deb-opam-installer" {= "2.0.8-1"}
   "deb-unzip"
-  ("deb-wget" | "deb- curl")
+  ("deb-wget" | "deb-curl")
 ]
 extra-source "opam_2.0.8-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/opam/opam_2.0.8-1_amd64.deb"

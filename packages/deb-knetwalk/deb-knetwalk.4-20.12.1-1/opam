@@ -24,7 +24,7 @@ depends: [
   "deb-libstdc++6" {>= "4.1.1"}
   "deb-qml-module-org-kde-games-core"
   "deb-qml-module-qtquick2"
-  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb-libqt5gui5-gles" {>= "5.7.0"})
 ]
 extra-source "knetwalk_4:20.12.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/knetwalk/knetwalk_20.12.1-1_amd64.deb"

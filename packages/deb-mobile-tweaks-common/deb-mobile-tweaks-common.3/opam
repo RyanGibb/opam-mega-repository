@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-adduser"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "mobile-tweaks-common_3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mobile-tweaks/mobile-tweaks-common_3_all.deb"

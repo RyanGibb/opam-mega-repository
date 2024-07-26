@@ -21,7 +21,7 @@ depends: [
   "deb-libxext6"
   "deb-libxfixes3"
   "deb-libxrandr2" {>= "2-1.2.0"}
-  ("deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"} | "deb- libgdk-pixbuf2-0-0" {>= "2.22.0"})
+  ("deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"} | "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"})
 ]
 extra-source "libcogl20_1.22.8-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cogl/libcogl20_1.22.8-2_amd64.deb"

@@ -42,7 +42,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-perl-any"
   "deb-phonon4qt5"
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "kphotoalbum_5.7.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kphotoalbum/kphotoalbum_5.7.0-1_amd64.deb"

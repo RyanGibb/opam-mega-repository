@@ -82,7 +82,7 @@ depends: [
   "deb-python3-tinycss2"
   "deb-python3-tz"
   "deb-xapps-common" {>= "1.9.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "cinnamon_4.8.6-2+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cinnamon/cinnamon_4.8.6-2+deb11u1_amd64.deb"

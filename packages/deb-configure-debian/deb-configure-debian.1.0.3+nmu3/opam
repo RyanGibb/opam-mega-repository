@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-liblocale-gettext-perl"
   "deb-perl-any"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "configure-debian_1.0.3+nmu3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/configure-debian/configure-debian_1.0.3+nmu3_all.deb"

@@ -9,7 +9,7 @@ depends: [
   "deb-libnet-snmp-perl"
   "deb-perl-any"
   "deb-ucf"
-  ("deb-monitoring-plugins-common" | "deb- nagios-plugins-basic" {>= "1.4.5-2"})
+  ("deb-monitoring-plugins-common" | "deb-nagios-plugins-basic" {>= "1.4.5-2"})
 ]
 extra-source "nagios-snmp-plugins_2.1.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/nagios-snmp-plugins/nagios-snmp-plugins_2.1.0-3_all.deb"

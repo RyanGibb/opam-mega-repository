@@ -13,7 +13,7 @@ depends: [
   "deb-r-base-core"
   "deb-r-base-core" {>= "4.2.0-1"}
   "deb-r-cran-rcpp" {>= "0.11.0"}
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "r-cran-rtsne_0.16-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-rtsne/r-cran-rtsne_0.16-1_amd64.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.15"}
   "deb-libpvm3"
-  ("deb-openssh-client" | "deb- rsh-client")
+  ("deb-openssh-client" | "deb-rsh-client")
 ]
 extra-source "pvm_3.4.6-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pvm/pvm_3.4.6-3_amd64.deb"

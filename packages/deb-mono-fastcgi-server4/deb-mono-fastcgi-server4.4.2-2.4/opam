@@ -17,7 +17,7 @@ depends: [
   "deb-mono-runtime" {>= "3.0~"}
   "deb-mono-xsp4-base" {= "4.2-2.4"}
   "deb-perl"
-  ("deb-libc6" {>= "2.36"} | "deb- libc6-1" {>= "2.36"} | "deb- libc0-1" {>= "2.36"})
+  ("deb-libc6" {>= "2.36"} | "deb-libc6-1" {>= "2.36"} | "deb-libc0-1" {>= "2.36"})
 ]
 extra-source "mono-fastcgi-server4_4.2-2.4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xsp/mono-fastcgi-server4_4.2-2.4_all.deb"

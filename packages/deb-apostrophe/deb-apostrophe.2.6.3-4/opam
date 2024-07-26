@@ -13,7 +13,7 @@ depends: [
   "deb-gir1-2-webkit2-4-1"
   "deb-python3-any"
   "deb-python3-pypandoc"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "apostrophe_2.6.3-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/apostrophe/apostrophe_2.6.3-4_amd64.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.3.2"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "gitlab-shell_8.4.3+dfsg1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gitlab-shell/gitlab-shell_8.4.3+dfsg1-1_amd64.deb"

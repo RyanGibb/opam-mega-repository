@@ -14,7 +14,7 @@ depends: [
   "deb-libqt5network5" {>= "5.0.2"}
   "deb-libqt5widgets5" {>= "5.11.0~rc1"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-nasm" | "deb- fasm" | "deb- binutils")
+  ("deb-nasm" | "deb-fasm" | "deb-binutils")
 ]
 extra-source "sasm_3.10.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sasm/sasm_3.10.1-1_amd64.deb"

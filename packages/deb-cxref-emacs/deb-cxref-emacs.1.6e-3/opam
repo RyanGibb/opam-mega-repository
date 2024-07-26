@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-emacsen-common" {>= "1.4.14"}
-  ("deb-emacs" | "deb- emacsen")
+  ("deb-emacs" | "deb-emacsen")
 ]
 extra-source "cxref-emacs_1.6e-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cxref/cxref-emacs_1.6e-3_all.deb"

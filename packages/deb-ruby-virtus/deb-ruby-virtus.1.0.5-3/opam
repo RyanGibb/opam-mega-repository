@@ -10,7 +10,7 @@ depends: [
   "deb-ruby-coercible"
   "deb-ruby-descendants-tracker"
   "deb-ruby-equalizer"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-virtus_1.0.5-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-virtus/ruby-virtus_1.0.5-3_all.deb"

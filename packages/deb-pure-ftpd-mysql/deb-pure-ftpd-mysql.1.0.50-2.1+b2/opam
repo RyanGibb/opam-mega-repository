@@ -15,7 +15,7 @@ depends: [
   "deb-libssl3" {>= "3.0.0"}
   "deb-pure-ftpd-common" {= "1.0.50-2.1"}
   "deb-sysvinit-utils"
-  ("deb-openbsd-inetd" | "deb- inet-superserver")
+  ("deb-openbsd-inetd" | "deb-inet-superserver")
 ]
 conflicts: [
   "deb-ftp-server"

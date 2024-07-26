@@ -26,7 +26,7 @@ depends: [
   "deb-libpoppler-glib8" {>= "0.18.0"}
   "deb-libpulse0" {>= "0.99.1"}
   "deb-libxml2" {>= "2.7.4"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "gsequencer_4.4.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gsequencer/gsequencer_4.4.3-1_amd64.deb"

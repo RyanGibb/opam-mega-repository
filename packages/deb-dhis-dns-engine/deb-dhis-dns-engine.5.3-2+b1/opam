@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-dhis-server"
   "deb-libc6" {>= "2.4"}
-  ("deb-bind9" | "deb- bind")
+  ("deb-bind9" | "deb-bind")
 ]
 extra-source "dhis-dns-engine_5.3-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dhis-dns-engine/dhis-dns-engine_5.3-2+b1_amd64.deb"

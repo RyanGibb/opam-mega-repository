@@ -9,7 +9,7 @@ depends: [
   "deb-ruby-multi-json" {>= "1.7"}
   "deb-ruby-omniauth" {>= "1.1"}
   "deb-ruby-omniauth-oauth" {>= "1.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-omniauth-bitbucket_0.0.2-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-omniauth-bitbucket/ruby-omniauth-bitbucket_0.0.2-1.1_all.deb"

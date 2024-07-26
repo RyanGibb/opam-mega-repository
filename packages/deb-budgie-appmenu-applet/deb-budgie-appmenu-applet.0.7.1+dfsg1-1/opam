@@ -23,7 +23,7 @@ depends: [
   "deb-libpeas-1-0-0" {>= "1.2.0"}
   "deb-libwnck-3-0" {>= "3.4.0"}
   "deb-vala-panel-appmenu-common" {= "0.7.1+dfsg1-1"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "budgie-appmenu-applet_0.7.1+dfsg1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/vala-panel-appmenu/budgie-appmenu-applet_0.7.1+dfsg1-1_amd64.deb"

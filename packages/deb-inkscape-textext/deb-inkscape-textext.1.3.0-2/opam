@@ -11,10 +11,10 @@ depends: [
   "deb-python3-any"
   "deb-python3-lxml"
   "deb-texlive-latex-base"
-  ("deb-gir1-2-gtk-3-0" | "deb- python3-tk")
-  ("deb-gir1-2-gtksource-3-0" | "deb- python3-tk")
-  ("deb-python3-gi" | "deb- python3-tk")
-  ("deb-python3-gi-cairo" | "deb- python3-tk")
+  ("deb-gir1-2-gtk-3-0" | "deb-python3-tk")
+  ("deb-gir1-2-gtksource-3-0" | "deb-python3-tk")
+  ("deb-python3-gi" | "deb-python3-tk")
+  ("deb-python3-gi-cairo" | "deb-python3-tk")
 ]
 extra-source "inkscape-textext_1.3.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/inkscape-textext/inkscape-textext_1.3.0-2_all.deb"

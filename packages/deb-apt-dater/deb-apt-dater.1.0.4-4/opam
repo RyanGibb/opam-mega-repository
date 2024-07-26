@@ -18,7 +18,7 @@ depends: [
   "deb-openssh-client"
   "deb-perl-any"
   "deb-tmux"
-  ("deb-lockfile-progs" | "deb- procmail")
+  ("deb-lockfile-progs" | "deb-procmail")
 ]
 extra-source "apt-dater_1.0.4-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/apt-dater/apt-dater_1.0.4-4_amd64.deb"

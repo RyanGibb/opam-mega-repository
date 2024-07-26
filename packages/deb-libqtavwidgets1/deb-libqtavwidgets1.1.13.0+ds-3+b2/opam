@@ -16,7 +16,7 @@ depends: [
   "deb-libx11-6"
   "deb-libxext6"
   "deb-libxv1"
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "libqtavwidgets1_1.13.0+ds-3+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtav/libqtavwidgets1_1.13.0+ds-3+b2_amd64.deb"

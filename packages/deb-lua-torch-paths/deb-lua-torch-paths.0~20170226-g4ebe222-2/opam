@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.14"}
-  ("deb-lua5-1" | "deb- luajit")
+  ("deb-lua5-1" | "deb-luajit")
 ]
 extra-source "lua-torch-paths_0~20170226-g4ebe222-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lua-torch-paths/lua-torch-paths_0~20170226-g4ebe222-2_amd64.deb"

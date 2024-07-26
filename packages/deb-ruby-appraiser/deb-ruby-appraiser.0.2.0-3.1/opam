@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-colored"
   "deb-ruby-json"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-appraiser_0.2.0-3.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-appraiser/ruby-appraiser_0.2.0-3.1_all.deb"

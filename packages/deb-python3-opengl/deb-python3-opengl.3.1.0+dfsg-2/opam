@@ -8,8 +8,8 @@ remove: [
 depends: [
   "deb-freeglut3"
   "deb-python3-any"
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "python3-opengl_3.1.0+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pyopengl/python3-opengl_3.1.0+dfsg-2_all.deb"

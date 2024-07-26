@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.15"}
   "deb-libwrap0" {>= "7.6-4~"}
-  ("deb-ipppd" | "deb- isdnutils")
+  ("deb-ipppd" | "deb-isdnutils")
 ]
 extra-source "ibod_1.5.0-6+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/ibod/ibod_1.5.0-6+b1_amd64.deb"

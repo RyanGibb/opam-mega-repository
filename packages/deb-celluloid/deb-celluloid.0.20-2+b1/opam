@@ -14,7 +14,7 @@ depends: [
   "deb-libmpv2" {>= "0.32"}
   "deb-libpango-1-0-0" {>= "1.14.0"}
   "deb-libpangocairo-1-0-0" {>= "1.14.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "celluloid_0.20-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/celluloid/celluloid_0.20-2+b1_amd64.deb"

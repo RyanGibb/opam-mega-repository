@@ -28,8 +28,8 @@ depends: [
   "deb-libxml2-dev"
   "deb-pkg-config"
   "deb-zlib1g-dev"
-  ("deb-libc6-dev" | "deb- libc-dev")
-  ("deb-libcurl4-gnutls-dev" | "deb- libcurl-ssl-dev")
+  ("deb-libc6-dev" | "deb-libc-dev")
+  ("deb-libcurl4-gnutls-dev" | "deb-libcurl-ssl-dev")
 ]
 extra-source "libmapnik-dev_3.0.22+ds-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mapnik/libmapnik-dev_3.0.22+ds-1_amd64.deb"

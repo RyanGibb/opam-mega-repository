@@ -10,7 +10,7 @@ depends: [
   "deb-ruby-atlassian-jwt"
   "deb-ruby-multipart-post"
   "deb-ruby-oauth" {>= "0.5"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-jira_2.0.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-jira/ruby-jira_2.0.0-2_all.deb"

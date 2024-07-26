@@ -9,7 +9,7 @@ depends: [
   "deb-golang-github-14rcole-gopopulate-dev"
   "deb-libglib2-0-dev"
   "deb-libostree-dev"
-  ("deb-pkgconf" | "deb- pkg-config")
+  ("deb-pkgconf" | "deb-pkg-config")
 ]
 extra-source "golang-github-ostreedev-ostree-go-dev_0.0+git20190702.759a8c1-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/golang-github-ostreedev-ostree-go/golang-github-ostreedev-ostree-go-dev_0.0+git20190702.759a8c1-5_all.deb"

@@ -12,7 +12,7 @@ depends: [
   "deb-libsnmp-base"
   "deb-libsnmp40" {= "5.9.3+dfsg-2"}
   "deb-lsb-base"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "snmpd_5.9.3+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/net-snmp/snmpd_5.9.3+dfsg-2_amd64.deb"

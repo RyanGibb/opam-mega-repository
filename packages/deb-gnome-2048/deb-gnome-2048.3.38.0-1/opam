@@ -16,7 +16,7 @@ depends: [
   "deb-libgtk-3-0" {>= "3.23.1"}
   "deb-libpango-1-0-0" {>= "1.14.0"}
   "deb-libpangocairo-1-0-0" {>= "1.14.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-2048_3.38.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-2048/gnome-2048_3.38.0-1_amd64.deb"

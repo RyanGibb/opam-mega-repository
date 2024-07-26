@@ -16,8 +16,8 @@ depends: [
   "deb-libsystemd0"
   "deb-p11-kit" {>= "0.16"}
   "deb-pinentry-gnome3"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus")
 ]
 extra-source "gnome-keyring_42.1-1+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-keyring/gnome-keyring_42.1-1+b2_amd64.deb"

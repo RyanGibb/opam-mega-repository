@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-rack"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-rack-cors_1.1.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-rack-cors/ruby-rack-cors_1.1.1-1_all.deb"

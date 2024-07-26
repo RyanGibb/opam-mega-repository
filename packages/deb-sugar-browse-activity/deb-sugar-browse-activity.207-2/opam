@@ -23,7 +23,7 @@ depends: [
   "deb-python3-dbus"
   "deb-python3-gi"
   "deb-python3-sugar3"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "sugar-browse-activity_207-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sugar-browse-activity/sugar-browse-activity_207-2_all.deb"

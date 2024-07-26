@@ -16,7 +16,7 @@ depends: [
   "deb-libsecret-1-0" {>= "0.7"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-libzulucryptpluginmanager1-0-0" {= "5.7.1-2"}
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "libzulucrypt-plugins_5.7.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/z/zulucrypt/libzulucrypt-plugins_5.7.1-2_amd64.deb"

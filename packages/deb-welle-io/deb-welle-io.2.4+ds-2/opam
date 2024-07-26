@@ -38,8 +38,8 @@ depends: [
   "deb-qml-module-qtquick-templates2"
   "deb-qml-module-qtquick-window2"
   "deb-qml-module-qtquick2"
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
-  ("deb-libqt5quick5" {>= "5.6.1"} | "deb- libqt5quick5-gles" {>= "5.6.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5quick5" {>= "5.6.1"} | "deb-libqt5quick5-gles" {>= "5.6.1"})
 ]
 extra-source "welle.io_2.4+ds-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/welle.io/welle.io_2.4+ds-2_amd64.deb"

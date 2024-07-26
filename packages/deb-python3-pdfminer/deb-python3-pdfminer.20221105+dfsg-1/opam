@@ -9,7 +9,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-charset-normalizer"
   "deb-python3-cryptography" {>= "36.0.0"}
-  ("deb-python3-typing-extensions" | "deb- python3" {> "3.8"})
+  ("deb-python3-typing-extensions" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-pdfminer_20221105+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pdfminer/python3-pdfminer_20221105+dfsg-1_all.deb"

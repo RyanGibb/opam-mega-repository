@@ -31,7 +31,7 @@ depends: [
   "deb-libwayland-egl1" {>= "1.15.0"}
   "deb-libxcb1"
   "deb-xwayland"
-  ("deb-kwin-wayland-backend-drm" {= "4-5.14.5-1"} | "deb- kwin-wayland-backend-fbdev" {= "4-5.14.5-1"} | "deb- kwin-wayland-backend-x11" {= "4-5.14.5-1"} | "deb- kwin-wayland-backend-virtual" {= "4-5.14.5-1"} | "deb- kwin-wayland-backend-wayland" {= "4-5.14.5-1"})
+  ("deb-kwin-wayland-backend-drm" {= "4-5.14.5-1"} | "deb-kwin-wayland-backend-fbdev" {= "4-5.14.5-1"} | "deb-kwin-wayland-backend-x11" {= "4-5.14.5-1"} | "deb-kwin-wayland-backend-virtual" {= "4-5.14.5-1"} | "deb-kwin-wayland-backend-wayland" {= "4-5.14.5-1"})
 ]
 extra-source "kwin-wayland_4:5.14.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kwin/kwin-wayland_5.14.5-1_amd64.deb"

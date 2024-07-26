@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-fonts-entypo"
   "deb-ruby-railties" {>= "2-4.1"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-entypo-rails_3.0.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-entypo-rails/ruby-entypo-rails_3.0.0-3_all.deb"

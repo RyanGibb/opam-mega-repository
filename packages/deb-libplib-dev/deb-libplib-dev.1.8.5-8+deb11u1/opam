@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-freeglut3-dev"
   "deb-libplib1" {= "1.8.5-8+deb11u1"}
-  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
+  ("deb-libgl1-mesa-dev" | "deb-libgl-dev")
 ]
 conflicts: [
   "deb-plib1-8-4-dev"

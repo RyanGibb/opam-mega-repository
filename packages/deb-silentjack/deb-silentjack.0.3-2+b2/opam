@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.2.5"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "silentjack_0.3-2+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/silentjack/silentjack_0.3-2+b2_amd64.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl"
-  ("deb-libgd-perl" | "deb- libgd-gd2-noxpm-perl" | "deb- libgd-gd2-perl")
+  ("deb-libgd-perl" | "deb-libgd-gd2-noxpm-perl" | "deb-libgd-gd2-perl")
 ]
 extra-source "libgd-barcode-perl_1.15-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libg/libgd-barcode-perl/libgd-barcode-perl_1.15-7_all.deb"

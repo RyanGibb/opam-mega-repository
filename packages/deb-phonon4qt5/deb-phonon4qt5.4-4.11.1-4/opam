@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-libphonon4qt5-4" {>= "4-4.11.1-4"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-phonon4qt5-backend-vlc" | "deb- phonon4qt5-backend")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-phonon4qt5-backend-vlc" | "deb-phonon4qt5-backend")
 ]
 extra-source "phonon4qt5_4:4.11.1-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/phonon/phonon4qt5_4.11.1-4_amd64.deb"

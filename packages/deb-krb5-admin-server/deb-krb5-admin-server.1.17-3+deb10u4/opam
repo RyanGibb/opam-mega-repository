@@ -20,7 +20,7 @@ depends: [
   "deb-libss2" {>= "1.01"}
   "deb-libverto1" {>= "0.2.4"}
   "deb-lsb-base" {>= "3.0-6"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "krb5-admin-server_1.17-3+deb10u4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/krb5/krb5-admin-server_1.17-3+deb10u4_amd64.deb"

@@ -13,7 +13,7 @@ depends: [
   "deb-libqt5versit5a" {>= "5.0~git20190618.8fec622c"}
   "deb-libqt5versitorganizer5a" {>= "5.0~git20190618.8fec622c"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "qml-module-qtorganizer_5.0~git20201102.f9a8f0fc+dfsg1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtpim-opensource-src/qml-module-qtorganizer_5.0~git20201102.f9a8f0fc+dfsg1-3_amd64.deb"

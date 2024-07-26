@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r xemacs21"]
 ]
 depends: [
-  ("deb-xemacs21-mule" {>= "21.4.24-9"} | "deb- xemacs21-mule-canna-wnn" {>= "21.4.24-9"} | "deb- xemacs21-nomule" {>= "21.4.24-9"})
+  ("deb-xemacs21-mule" {>= "21.4.24-9"} | "deb-xemacs21-mule-canna-wnn" {>= "21.4.24-9"} | "deb-xemacs21-nomule" {>= "21.4.24-9"})
 ]
 conflicts: [
   "deb-xemacs"

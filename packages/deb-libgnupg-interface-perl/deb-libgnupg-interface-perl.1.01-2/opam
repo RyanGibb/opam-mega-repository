@@ -12,7 +12,7 @@ depends: [
   "deb-libmoox-handlesvia-perl"
   "deb-libmoox-late-perl"
   "deb-perl-any"
-  ("deb-gnupg" {>= "2.2.9"} | "deb- gnupg1")
+  ("deb-gnupg" {>= "2.2.9"} | "deb-gnupg1")
 ]
 extra-source "libgnupg-interface-perl_1.01-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libg/libgnupg-interface-perl/libgnupg-interface-perl_1.01-2_all.deb"

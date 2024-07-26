@@ -12,7 +12,7 @@ depends: [
   "deb-python3-dbus"
   "deb-python3-gi"
   "deb-python3-mpd"
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus")
 ]
 extra-source "mpdris2_0.9.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mpdris2/mpdris2_0.9.1-2_all.deb"

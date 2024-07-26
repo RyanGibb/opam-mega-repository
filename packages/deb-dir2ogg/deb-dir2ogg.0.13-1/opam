@@ -9,7 +9,7 @@ depends: [
   "deb-python3"
   "deb-python3-mutagen"
   "deb-vorbis-tools"
-  ("deb-mpg123" | "deb- mpg321")
+  ("deb-mpg123" | "deb-mpg321")
 ]
 extra-source "dir2ogg_0.13-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dir2ogg/dir2ogg_0.13-1_all.deb"

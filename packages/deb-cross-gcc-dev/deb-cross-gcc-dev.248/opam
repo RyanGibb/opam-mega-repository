@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-make"
-  ("deb-realpath" | "deb- coreutils" {>= "8.26-1"})
+  ("deb-realpath" | "deb-coreutils" {>= "8.26-1"})
 ]
 extra-source "cross-gcc-dev_248_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cross-gcc/cross-gcc-dev_248_all.deb"

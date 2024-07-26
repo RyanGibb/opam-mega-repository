@@ -17,7 +17,7 @@ depends: [
   "deb-libsm6"
   "deb-libstdc++6" {>= "5.2"}
   "deb-pinball-data" {= "0.3.1-14.1"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "pinball_0.3.1-14.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pinball/pinball_0.3.1-14.1_amd64.deb"

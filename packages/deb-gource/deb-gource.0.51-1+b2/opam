@@ -19,7 +19,7 @@ depends: [
   "deb-libsdl2-image-2-0-0" {>= "2.0.2"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-libtinyxml2-6-2v5"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "gource_0.51-1+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gource/gource_0.51-1+b2_amd64.deb"

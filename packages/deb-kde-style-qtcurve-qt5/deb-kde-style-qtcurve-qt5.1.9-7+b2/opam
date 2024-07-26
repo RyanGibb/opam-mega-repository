@@ -31,7 +31,7 @@ depends: [
   "deb-libqt5x11extras5" {>= "5.6.0"}
   "deb-libqtcurve-utils2" {>= "1.9"}
   "deb-libstdc++6" {>= "4.4.0"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "kde-style-qtcurve-qt5_1.9-7+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtcurve/kde-style-qtcurve-qt5_1.9-7+b2_amd64.deb"

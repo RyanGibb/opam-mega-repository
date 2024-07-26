@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-rouge"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-rouge_3.3.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-rouge/ruby-rouge_3.3.0-1_all.deb"

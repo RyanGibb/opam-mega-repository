@@ -10,7 +10,7 @@ depends: [
   "deb-libwww-opensearch-perl"
   "deb-libwww-perl"
   "deb-surfraw"
-  ("deb-lynx" | "deb- www-browser")
+  ("deb-lynx" | "deb-www-browser")
 ]
 extra-source "surfraw-extra_2.3.0-0.3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/surfraw/surfraw-extra_2.3.0-0.3_all.deb"

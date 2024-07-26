@@ -9,8 +9,8 @@ depends: [
   "deb-g++"
   "deb-libmpich12" {= "3.4.1-5~deb11u1"}
   "deb-mpich" {= "3.4.1-5~deb11u1"}
-  ("deb-gfortran" | "deb- fortran-compiler")
-  ("deb-gfortran-10" | "deb- gfortran-mod-15")
+  ("deb-gfortran" | "deb-fortran-compiler")
+  ("deb-gfortran-10" | "deb-gfortran-mod-15")
 ]
 extra-source "libmpich-dev_3.4.1-5~deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mpich/libmpich-dev_3.4.1-5~deb11u1_amd64.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-python3" {>= "3.3"}
   "deb-python3-pylibacl" {> "0.5.1-1.1"}
-  ("deb-openssh-client" | "deb- openssh-server")
+  ("deb-openssh-client" | "deb-openssh-server")
 ]
 extra-source "fssync_1.6-1.1+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fssync/fssync_1.6-1.1+deb12u1_all.deb"

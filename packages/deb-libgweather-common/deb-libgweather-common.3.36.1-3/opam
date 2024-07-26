@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r libgweather-common"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "libgweather-common_3.36.1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libg/libgweather/libgweather-common_3.36.1-3_all.deb"

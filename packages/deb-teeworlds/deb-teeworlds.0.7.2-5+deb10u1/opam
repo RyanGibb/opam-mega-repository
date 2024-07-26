@@ -16,7 +16,7 @@ depends: [
   "deb-libx11-6"
   "deb-teeworlds-data" {= "0.7.2-5+deb10u1"}
   "deb-zlib1g" {>= "1-1.2.0"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "teeworlds_0.7.2-5+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/teeworlds/teeworlds_0.7.2-5+deb10u1_amd64.deb"

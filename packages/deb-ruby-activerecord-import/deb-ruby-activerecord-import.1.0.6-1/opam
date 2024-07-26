@@ -9,7 +9,7 @@ depends: [
   "deb-bundler"
   "deb-ruby-activerecord"
   "deb-ruby-seamless-database-pool"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-activerecord-import_1.0.6-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-activerecord-import/ruby-activerecord-import_1.0.6-1_all.deb"

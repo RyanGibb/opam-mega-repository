@@ -22,7 +22,7 @@ depends: [
   "deb-php-doctrine-persistence"
   "deb-php-psr-cache"
   "deb-php-symfony-console"
-  ("deb-php-mysql" | "deb- php-pgsql" | "deb- php-sqlite3" | "deb- php-sybase")
+  ("deb-php-mysql" | "deb-php-pgsql" | "deb-php-sqlite3" | "deb-php-sybase")
 ]
 extra-source "php-doctrine-orm_2.14.1+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/doctrine/php-doctrine-orm_2.14.1+dfsg-1_all.deb"

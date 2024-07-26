@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-python3-any"
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
-  ("deb-python3-typing-extensions" | "deb- python3" {> "3.8"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
+  ("deb-python3-typing-extensions" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-structlog_22.3.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-structlog/python3-structlog_22.3.0-2_all.deb"

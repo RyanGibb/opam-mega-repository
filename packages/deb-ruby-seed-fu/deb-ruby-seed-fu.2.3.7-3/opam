@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-activerecord" {>= "3.1"}
   "deb-ruby-activesupport" {>= "3.1"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-seed-fu_2.3.7-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-seed-fu/ruby-seed-fu_2.3.7-3_all.deb"

@@ -16,7 +16,7 @@ depends: [
   "deb-libunixsocket-java"
   "deb-libzemberek-java"
   "deb-libzemberek-tr-java"
-  ("deb-default-jre-headless" | "deb- openjdk-6-jre-headless")
+  ("deb-default-jre-headless" | "deb-openjdk-6-jre-headless")
 ]
 extra-source "zemberek-server_0.7.1-12.3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/z/zemberek-server/zemberek-server_0.7.1-12.3_all.deb"

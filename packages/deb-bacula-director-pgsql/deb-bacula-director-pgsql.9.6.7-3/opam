@@ -9,8 +9,8 @@ depends: [
   "deb-bacula-common-pgsql" {< "9.6.7-3.1~"}
   "deb-bacula-common-pgsql" {>= "9.6.7-3"}
   "deb-postgresql-client" {>= "7.4"}
-  ("deb-dbconfig-pgsql" | "deb- dbconfig-no-thanks")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-dbconfig-pgsql" | "deb-dbconfig-no-thanks")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 conflicts: [
   "deb-bacula-director-database"

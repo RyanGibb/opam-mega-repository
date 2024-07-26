@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-librust-pkg-config-0-3+default-dev"
   "deb-nettle-dev" {>= "3.5.1~~"}
-  ("deb-librust-bindgen-0-55-dev" | "deb- librust-bindgen-0-54-dev" | "deb- librust-bindgen-0-53-dev" {>= "0.53.1-~~"})
+  ("deb-librust-bindgen-0-55-dev" | "deb-librust-bindgen-0-54-dev" | "deb-librust-bindgen-0-53-dev" {>= "0.53.1-~~"})
 ]
 extra-source "librust-nettle-sys-dev_2.0.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-nettle-sys/librust-nettle-sys-dev_2.0.5-1_amd64.deb"

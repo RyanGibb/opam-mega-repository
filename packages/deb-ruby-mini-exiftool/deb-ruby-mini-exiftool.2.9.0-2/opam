@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-mini-exiftool"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-mini-exiftool_2.9.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-mini-exiftool/ruby-mini-exiftool_2.9.0-2_all.deb"

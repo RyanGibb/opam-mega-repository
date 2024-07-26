@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-emacsen-common"
-  ("deb-python-nose" | "deb- python3-nose")
+  ("deb-python-nose" | "deb-python3-nose")
 ]
 extra-source "elpa-nose_0.1.1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/nose-el/elpa-nose_0.1.1-3_all.deb"

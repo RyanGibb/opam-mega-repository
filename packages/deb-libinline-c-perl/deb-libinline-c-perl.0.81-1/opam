@@ -10,7 +10,7 @@ depends: [
   "deb-libparse-recdescent-perl"
   "deb-libpegex-perl" {>= "0.66"}
   "deb-perl"
-  ("deb-gcc" | "deb- c-compiler")
+  ("deb-gcc" | "deb-c-compiler")
 ]
 extra-source "libinline-c-perl_0.81-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libi/libinline-c-perl/libinline-c-perl_0.81-1_all.deb"

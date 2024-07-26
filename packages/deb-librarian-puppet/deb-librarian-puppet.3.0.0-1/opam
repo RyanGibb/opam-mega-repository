@@ -11,7 +11,7 @@ depends: [
   "deb-ruby-librarian" {>= "0.6.3~"}
   "deb-ruby-puppet-forge"
   "deb-ruby-rsync"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "librarian-puppet_3.0.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libr/librarian-puppet/librarian-puppet_3.0.0-1_all.deb"

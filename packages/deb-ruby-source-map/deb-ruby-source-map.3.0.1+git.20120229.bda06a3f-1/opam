@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-json"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-source-map_3.0.1+git.20120229.bda06a3f-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-source-map/ruby-source-map_3.0.1+git.20120229.bda06a3f-1_all.deb"

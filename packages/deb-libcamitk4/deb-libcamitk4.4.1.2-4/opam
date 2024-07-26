@@ -19,7 +19,7 @@ depends: [
   "deb-libvtk7-1p-qt"
   "deb-libvtkgdcm3-0"
   "deb-libxerces-c3-2"
-  ("deb-libqt5gui5" {>= "5.2.0"} | "deb- libqt5gui5-gles" {>= "5.2.0"})
+  ("deb-libqt5gui5" {>= "5.2.0"} | "deb-libqt5gui5-gles" {>= "5.2.0"})
 ]
 extra-source "libcamitk4_4.1.2-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/camitk/libcamitk4_4.1.2-4_amd64.deb"

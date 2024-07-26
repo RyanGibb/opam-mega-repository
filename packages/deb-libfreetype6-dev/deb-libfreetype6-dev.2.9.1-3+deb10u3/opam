@@ -8,8 +8,8 @@ remove: [
 depends: [
   "deb-libfreetype6" {= "2.9.1-3+deb10u3"}
   "deb-libpng-dev"
-  ("deb-libc6-dev" | "deb- libc-dev")
-  ("deb-zlib1g-dev" | "deb- libz-dev")
+  ("deb-libc6-dev" | "deb-libc-dev")
+  ("deb-zlib1g-dev" | "deb-libz-dev")
 ]
 extra-source "libfreetype6-dev_2.9.1-3+deb10u3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/freetype/libfreetype6-dev_2.9.1-3+deb10u3_amd64.deb"

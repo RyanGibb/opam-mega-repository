@@ -11,7 +11,7 @@ depends: [
   "deb-python3-toposort"
   "deb-sbuild" {>= "0.67.0"}
   "deb-schroot" {>= "1.6.10-2"}
-  ("deb-debootstrap" | "deb- cdebootstrap" | "deb- qemu-user-static")
+  ("deb-debootstrap" | "deb-cdebootstrap" | "deb-qemu-user-static")
 ]
 extra-source "debomatic_0.24-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/debomatic/debomatic_0.24-1_all.deb"

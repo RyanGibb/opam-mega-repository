@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.14"}
-  ("deb-gcc" | "deb- c-compiler")
+  ("deb-gcc" | "deb-c-compiler")
 ]
 extra-source "intercal_30:0.30-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/intercal/intercal_0.30-2_amd64.deb"

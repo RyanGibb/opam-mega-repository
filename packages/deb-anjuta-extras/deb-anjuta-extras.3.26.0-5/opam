@@ -18,7 +18,7 @@ depends: [
   "deb-libpango-1-0-0" {>= "1.18.0"}
   "deb-libpangocairo-1-0-0" {>= "1.14.0"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "anjuta-extras_3.26.0-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/anjuta-extras/anjuta-extras_3.26.0-5_amd64.deb"

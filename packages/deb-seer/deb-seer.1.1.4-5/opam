@@ -15,7 +15,7 @@ depends: [
   "deb-libstdc++6" {>= "9"}
   "deb-libtext-csv-perl"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "seer_1.1.4-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/seer/seer_1.1.4-5_amd64.deb"

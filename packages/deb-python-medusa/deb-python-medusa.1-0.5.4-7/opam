@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-python" {< "2.8"}
   "deb-python" {>= "2.6.6-7~"}
-  ("deb-python2-6" | "deb- python2-7")
+  ("deb-python2-6" | "deb-python2-7")
 ]
 extra-source "python-medusa_1:0.5.4-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-medusa/python-medusa_0.5.4-7_all.deb"

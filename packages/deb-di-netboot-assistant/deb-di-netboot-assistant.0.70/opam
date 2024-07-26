@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ca-certificates"
-  ("deb-wget" | "deb- curl")
+  ("deb-wget" | "deb-curl")
 ]
 extra-source "di-netboot-assistant_0.70_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/di-netboot-assistant/di-netboot-assistant_0.70_all.deb"

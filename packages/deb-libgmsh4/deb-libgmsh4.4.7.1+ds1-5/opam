@@ -26,7 +26,7 @@ depends: [
   "deb-libstdc++6" {>= "9"}
   "deb-libvoro++1" {>= "0.4.6"}
   "deb-libx11-6"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "libgmsh4_4.7.1+ds1-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gmsh/libgmsh4_4.7.1+ds1-5_amd64.deb"

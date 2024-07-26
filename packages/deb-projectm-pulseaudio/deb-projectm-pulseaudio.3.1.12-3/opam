@@ -16,7 +16,7 @@ depends: [
   "deb-libstdc++6" {>= "11"}
   "deb-projectm-data"
   "deb-pulseaudio"
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "projectm-pulseaudio_3.1.12-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/projectm/projectm-pulseaudio_3.1.12-3_amd64.deb"

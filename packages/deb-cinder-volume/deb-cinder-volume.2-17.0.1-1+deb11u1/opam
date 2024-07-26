@@ -12,7 +12,7 @@ depends: [
   "deb-lvm2"
   "deb-python3-any"
   "deb-qemu-utils"
-  ("deb-tgt" | "deb- open-iscsi")
+  ("deb-tgt" | "deb-open-iscsi")
 ]
 extra-source "cinder-volume_2:17.0.1-1+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cinder/cinder-volume_17.0.1-1+deb11u1_all.deb"

@@ -14,7 +14,7 @@ depends: [
   "deb-libqt5dbus5" {>= "5.0.2"}
   "deb-libqt5widgets5" {>= "5.15.1"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb-libqt5gui5-gles" {>= "5.7.0"})
 ]
 extra-source "libfcitx5-qt1_5.0.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fcitx5-qt/libfcitx5-qt1_5.0.3-1_amd64.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libsuperlu5" {= "5.2.2+dfsg1-2"}
-  ("deb-libopenblas-dev" | "deb- libatlas-base-dev" | "deb- libblas-dev" | "deb- libblas-so")
+  ("deb-libopenblas-dev" | "deb-libatlas-base-dev" | "deb-libblas-dev" | "deb-libblas-so")
 ]
 conflicts: [
   "deb-libsuperlu3-dev"

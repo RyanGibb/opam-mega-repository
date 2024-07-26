@@ -13,7 +13,7 @@ depends: [
   "deb-gir1-2-soup-3-0"
   "deb-gnome-shell" {< "44~"}
   "deb-gnome-shell" {>= "40~"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-shell-extension-weather_119-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-shell-extension-weather/gnome-shell-extension-weather_119-1_all.deb"

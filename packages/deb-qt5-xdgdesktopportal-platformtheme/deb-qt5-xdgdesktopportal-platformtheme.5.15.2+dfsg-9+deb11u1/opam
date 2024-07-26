@@ -11,7 +11,7 @@ depends: [
   "deb-libqt5core5a" {>= "5.15.1"}
   "deb-libqt5dbus5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.9.0"} | "deb- libqt5gui5-gles" {>= "5.9.0"})
+  ("deb-libqt5gui5" {>= "5.9.0"} | "deb-libqt5gui5-gles" {>= "5.9.0"})
 ]
 extra-source "qt5-xdgdesktopportal-platformtheme_5.15.2+dfsg-9+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtbase-opensource-src/qt5-xdgdesktopportal-platformtheme_5.15.2+dfsg-9+deb11u1_amd64.deb"

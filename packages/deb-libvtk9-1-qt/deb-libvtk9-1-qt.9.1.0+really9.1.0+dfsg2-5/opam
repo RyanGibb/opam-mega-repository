@@ -12,7 +12,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.14.1"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-libvtk9-1" {>= "9.1.0+really9.1.0+dfsg2"}
-  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb-libqt5gui5-gles" {>= "5.11.0~rc1"})
 ]
 extra-source "libvtk9.1-qt_9.1.0+really9.1.0+dfsg2-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/vtk9/libvtk9.1-qt_9.1.0+really9.1.0+dfsg2-5_amd64.deb"

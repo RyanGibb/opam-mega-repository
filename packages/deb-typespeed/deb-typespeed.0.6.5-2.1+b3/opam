@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.14"}
   "deb-libncurses6" {>= "6"}
   "deb-libtinfo6" {>= "6"}
-  ("deb-fileutils" {>= "4.0-5"} | "deb- coreutils" {> "5"})
+  ("deb-fileutils" {>= "4.0-5"} | "deb-coreutils" {> "5"})
 ]
 conflicts: [
   "deb-suidmanager" {< "0.50"}

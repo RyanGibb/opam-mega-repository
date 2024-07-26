@@ -34,7 +34,7 @@ depends: [
   "deb-libswing-layout-java"
   "deb-libswingx-java" {< "1-1.6.4"}
   "deb-libunirest-java-java"
-  ("deb-liblog4j2-java" {>= "2.10.0-2"} | "deb- liblog4j2-java" {< "2.10"})
+  ("deb-liblog4j2-java" {>= "2.10.0-2"} | "deb-liblog4j2-java" {< "2.10"})
 ]
 extra-source "jabref_3.8.2+ds-12_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jabref/jabref_3.8.2+ds-12_all.deb"

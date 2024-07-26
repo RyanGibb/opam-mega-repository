@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-emacsen-common"
   "deb-scheme48"
-  ("deb-emacs" | "deb- emacsen")
+  ("deb-emacs" | "deb-emacsen")
 ]
 extra-source "cmuscheme48-el_1.9.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/scheme48/cmuscheme48-el_1.9.2-2_all.deb"

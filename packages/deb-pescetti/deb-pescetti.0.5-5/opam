@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-jarwrapper" {>= "0.5"}
   "deb-libitext-java"
-  ("deb-default-jre" | "deb- java11-runtime")
+  ("deb-default-jre" | "deb-java11-runtime")
 ]
 extra-source "pescetti_0.5-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pescetti/pescetti_0.5-5_all.deb"

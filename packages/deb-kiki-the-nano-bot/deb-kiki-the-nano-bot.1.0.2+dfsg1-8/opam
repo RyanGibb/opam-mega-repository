@@ -16,7 +16,7 @@ depends: [
   "deb-libsdl-mixer1-2"
   "deb-libsdl1-2debian" {>= "1.2.11"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "kiki-the-nano-bot_1.0.2+dfsg1-8_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kiki-the-nano-bot/kiki-the-nano-bot_1.0.2+dfsg1-8_amd64.deb"

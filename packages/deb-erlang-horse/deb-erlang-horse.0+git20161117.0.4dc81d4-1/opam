@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r erlang-horse"]
 ]
 depends: [
-  ("deb-erlang-base-hipe" | "deb- erlang-base" | "deb- erlang-abi-17-0")
+  ("deb-erlang-base-hipe" | "deb-erlang-base" | "deb-erlang-abi-17-0")
 ]
 extra-source "erlang-horse_0+git20161117.0.4dc81d4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/erlang-horse/erlang-horse_0+git20161117.0.4dc81d4-1_amd64.deb"

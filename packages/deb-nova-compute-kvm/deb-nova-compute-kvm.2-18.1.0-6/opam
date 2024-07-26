@@ -13,7 +13,7 @@ depends: [
   "deb-nova-compute"
   "deb-python3-libvirt" {>= "1.2.5"}
   "deb-qemu-block-extra"
-  ("deb-qemu-kvm" | "deb- kvm")
+  ("deb-qemu-kvm" | "deb-kvm")
 ]
 conflicts: [
   "deb-nova-compute-ironic"

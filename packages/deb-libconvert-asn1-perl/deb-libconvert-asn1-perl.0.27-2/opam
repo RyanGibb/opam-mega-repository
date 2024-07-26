@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl"
-  ("deb-perl" {>= "5.15.3"} | "deb- libmath-bigint-perl")
+  ("deb-perl" {>= "5.15.3"} | "deb-libmath-bigint-perl")
 ]
 extra-source "libconvert-asn1-perl_0.27-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libc/libconvert-asn1-perl/libconvert-asn1-perl_0.27-2_all.deb"

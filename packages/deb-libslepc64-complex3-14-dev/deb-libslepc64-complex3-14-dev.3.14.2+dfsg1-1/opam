@@ -11,7 +11,7 @@ depends: [
   "deb-libparpack2-dev"
   "deb-libpetsc64-complex3-14-dev"
   "deb-libslepc64-complex3-14" {= "3.14.2+dfsg1-1"}
-  ("deb-gfortran-10" | "deb- gfortran-mod-15")
+  ("deb-gfortran-10" | "deb-gfortran-mod-15")
 ]
 conflicts: [
   "deb-libslepc2-3-2-dev"

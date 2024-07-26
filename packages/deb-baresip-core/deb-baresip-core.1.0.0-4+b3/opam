@@ -29,7 +29,7 @@ depends: [
   "deb-libtwolame0" {>= "0.3.6"}
   "deb-libvo-amrwbenc0" {>= "0.1.3"}
   "deb-libvpx7" {>= "1.10.0"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "baresip-core_1.0.0-4+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/baresip/baresip-core_1.0.0-4+b3_amd64.deb"

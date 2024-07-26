@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-activemodel" {>= "3.0"}
   "deb-ruby-mail" {>= "2.2.5"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-validate-email_0.1.6+git-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-validate-email/ruby-validate-email_0.1.6+git-1_all.deb"

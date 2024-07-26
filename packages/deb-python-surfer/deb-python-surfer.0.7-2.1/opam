@@ -15,7 +15,7 @@ depends: [
   "deb-python-nibabel"
   "deb-python-numpy"
   "deb-python-scipy"
-  ("deb-python-pil" | "deb- python-imaging")
+  ("deb-python-pil" | "deb-python-imaging")
 ]
 extra-source "python-surfer_0.7-2.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pysurfer/python-surfer_0.7-2.1_all.deb"

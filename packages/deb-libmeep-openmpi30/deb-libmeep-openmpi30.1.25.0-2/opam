@@ -16,7 +16,7 @@ depends: [
   "deb-libhdf5-openmpi-103-1" {>= "1.8.14"}
   "deb-libopenmpi3" {>= "4.1.4"}
   "deb-libstdc++6" {>= "11"}
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 conflicts: [
   "deb-libmeep-lam4-12"

@@ -20,7 +20,7 @@ depends: [
   "deb-marble-qt-data" {>= "4-20.12.3-1"}
   "deb-phonon4qt5"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "libmarblewidget-qt5-28_4:20.12.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/marble/libmarblewidget-qt5-28_20.12.3-1_amd64.deb"

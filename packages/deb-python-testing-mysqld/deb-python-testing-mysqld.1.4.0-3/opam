@@ -10,7 +10,7 @@ depends: [
   "deb-python-any" {>= "2.7~"}
   "deb-python-pymysql"
   "deb-python-testing-common-database"
-  ("deb-default-mysql-server" {>= "1.0.2"} | "deb- virtual-mysql-server")
+  ("deb-default-mysql-server" {>= "1.0.2"} | "deb-virtual-mysql-server")
 ]
 extra-source "python-testing.mysqld_1.4.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-testing.mysqld/python-testing.mysqld_1.4.0-3_all.deb"

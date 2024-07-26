@@ -29,8 +29,8 @@ depends: [
   "deb-qml-module-org-kde-kirigami2"
   "deb-qml-module-qt-labs-platform"
   "deb-qml-module-qtquick-shapes"
-  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
-  ("deb-libqt5quick5" {>= "5.6.0~beta"} | "deb- libqt5quick5-gles" {>= "5.6.0~beta"})
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb-libqt5gui5-gles" {>= "5.7.0"})
+  ("deb-libqt5quick5" {>= "5.6.0~beta"} | "deb-libqt5quick5-gles" {>= "5.6.0~beta"})
 ]
 extra-source "haruna_0.5.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/haruna/haruna_0.5.0-2_amd64.deb"

@@ -13,7 +13,7 @@ depends: [
   "deb-libmission-control-plugins0" {= "1-5.16.4-2"}
   "deb-libnm0" {>= "1.0.0"}
   "deb-libtelepathy-glib0" {>= "0.20"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 conflicts: [
   "deb-telepathy-mission-control"

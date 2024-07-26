@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.14"}
-  ("deb-libtachyon-mt-0" {= "0.99~b6+dsx-9"} | "deb- libtachyon")
+  ("deb-libtachyon-mt-0" {= "0.99~b6+dsx-9"} | "deb-libtachyon")
 ]
 extra-source "tachyon-bin-nox_0.99~b6+dsx-9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tachyon/tachyon-bin-nox_0.99~b6+dsx-9_amd64.deb"

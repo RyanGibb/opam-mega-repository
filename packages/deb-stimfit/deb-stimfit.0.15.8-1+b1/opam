@@ -23,9 +23,9 @@ depends: [
   "deb-python2-7"
   "deb-zlib1g" {>= "1-1.1.4"}
   "deb-zlib1g-dev"
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
-  ("deb-python-wxgtk3-0" | "deb- python-wxgtk2-8" {>= "2.8.9"})
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
+  ("deb-python-wxgtk3-0" | "deb-python-wxgtk2-8" {>= "2.8.9"})
 ]
 extra-source "stimfit_0.15.8-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/stimfit/stimfit_0.15.8-1+b1_amd64.deb"

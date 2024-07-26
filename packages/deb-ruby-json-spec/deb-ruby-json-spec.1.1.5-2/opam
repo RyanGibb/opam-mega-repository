@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-multi-json"
   "deb-ruby-rspec"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-json-spec_1.1.5-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-json-spec/ruby-json-spec_1.1.5-2_all.deb"

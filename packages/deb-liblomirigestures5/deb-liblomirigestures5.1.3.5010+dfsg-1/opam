@@ -11,8 +11,8 @@ depends: [
   "deb-libqt5qml5"
   "deb-libqt5qml5" {>= "5.12.8~"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
-  ("deb-libqt5quick5" {>= "5.12.8~"} | "deb- libqt5quick5-gles" {>= "5.12.8~"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5quick5" {>= "5.12.8~"} | "deb-libqt5quick5-gles" {>= "5.12.8~"})
 ]
 extra-source "liblomirigestures5_1.3.5010+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lomiri-ui-toolkit/liblomirigestures5_1.3.5010+dfsg-1_amd64.deb"

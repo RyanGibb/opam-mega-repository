@@ -12,7 +12,7 @@ depends: [
   "deb-libswt-cairo-gtk-4-jni"
   "deb-libswt-gtk-4-java"
   "deb-libswt-gtk-4-jni"
-  ("deb-default-jre" | "deb- java8-runtime")
+  ("deb-default-jre" | "deb-java8-runtime")
 ]
 extra-source "stegosuite_0.8.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/stegosuite/stegosuite_0.8.0-2_all.deb"

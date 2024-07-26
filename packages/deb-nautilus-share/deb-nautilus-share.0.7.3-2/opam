@@ -19,7 +19,7 @@ depends: [
   "deb-libpangocairo-1-0-0" {>= "1.14.0"}
   "deb-nautilus" {>= "2.10"}
   "deb-samba-common" {>= "3.0.27a"}
-  ("deb-samba-common-bin" | "deb- samba-common" {< "2-3.4.0~pre2-1~0"})
+  ("deb-samba-common-bin" | "deb-samba-common" {< "2-3.4.0~pre2-1~0"})
 ]
 extra-source "nautilus-share_0.7.3-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/nautilus-share/nautilus-share_0.7.3-2_amd64.deb"

@@ -27,7 +27,7 @@ depends: [
   "deb-libxshmfence1"
   "deb-libzstd1" {>= "1.5.2"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-python3-any" | "deb- python3-minimal-any")
+  ("deb-python3-any" | "deb-python3-minimal-any")
 ]
 extra-source "mesa-vulkan-drivers_22.3.6-1+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mesa/mesa-vulkan-drivers_22.3.6-1+deb12u1_amd64.deb"

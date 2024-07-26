@@ -39,7 +39,7 @@ depends: [
   "deb-libstdc++6" {>= "4.6"}
   "deb-libtag1v5" {>= "1.11"}
   "deb-phonon4qt5"
-  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb-libqt5gui5-gles" {>= "5.11.0~rc1"})
 ]
 extra-source "juk_4:20.12.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/juk/juk_20.12.3-1_amd64.deb"

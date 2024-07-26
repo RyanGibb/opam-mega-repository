@@ -10,7 +10,7 @@ depends: [
   "deb-python3-numpy"
   "deb-python3-pydantic"
   "deb-python3-srsly"
-  ("deb-python3-typing-extensions" | "deb- python3" {> "3.8"})
+  ("deb-python3-typing-extensions" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-confection_0.0.4-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-confection/python3-confection_0.0.4-2_all.deb"

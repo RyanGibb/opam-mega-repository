@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.14"}
-  ("deb-udev" {>= "0.053"} | "deb- makedev" {>= "2.3.1-77"})
+  ("deb-udev" {>= "0.053"} | "deb-makedev" {>= "2.3.1-77"})
 ]
 conflicts: [
   "deb-intel-rng-tools"

@@ -22,8 +22,8 @@ depends: [
   "deb-librsvg2-dev"
   "deb-libwv-dev"
   "deb-libx11-dev"
-  ("deb-libcairo-dev" | "deb- libcairo2-dev")
-  ("deb-libxslt-dev" | "deb- libxslt1-dev")
+  ("deb-libcairo-dev" | "deb-libcairo2-dev")
+  ("deb-libxslt-dev" | "deb-libxslt1-dev")
 ]
 extra-source "libabiword-dev_3.0.4~dfsg-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/abiword/libabiword-dev_3.0.4~dfsg-3_amd64.deb"

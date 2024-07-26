@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-java-wrappers"
   "deb-libdtdinst-java"
-  ("deb-default-jre" | "deb- java-runtime")
+  ("deb-default-jre" | "deb-java-runtime")
 ]
 extra-source "dtdinst_20220510-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jing-trang/dtdinst_20220510-2_all.deb"

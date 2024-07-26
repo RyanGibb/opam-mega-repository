@@ -15,7 +15,7 @@ depends: [
   "deb-man-db"
   "deb-python3"
   "deb-python3-distutils"
-  ("deb-lynx" | "deb- www-browser")
+  ("deb-lynx" | "deb-www-browser")
 ]
 extra-source "fish_3.1.2-3+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fish/fish_3.1.2-3+deb11u1_amd64.deb"

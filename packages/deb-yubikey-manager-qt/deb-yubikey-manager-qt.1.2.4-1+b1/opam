@@ -27,7 +27,7 @@ depends: [
   "deb-qml-module-qtquick-layouts"
   "deb-qml-module-qtquick-window2"
   "deb-qml-module-qtquick2"
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "yubikey-manager-qt_1.2.4-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/y/yubikey-manager-qt/yubikey-manager-qt_1.2.4-1+b1_amd64.deb"

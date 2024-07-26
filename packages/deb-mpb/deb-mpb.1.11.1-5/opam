@@ -12,8 +12,8 @@ depends: [
   "deb-libfftw3-double3" {>= "3.3.10"}
   "deb-libhdf5-openmpi-103-1" {>= "1.8.14"}
   "deb-mpb-scm"
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "mpb_1.11.1-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mpb/mpb_1.11.1-5_amd64.deb"

@@ -11,7 +11,7 @@ depends: [
   "deb-python3-jinja2"
   "deb-python3-pluggy"
   "deb-python3-pygments"
-  ("deb-python3-pkg-resources" | "deb- python3" {> "3.8"})
+  ("deb-python3-pkg-resources" | "deb-python3" {> "3.8"})
 ]
 extra-source "diff-cover_7.4.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/diff-cover/diff-cover_7.4.0-3_all.deb"

@@ -12,8 +12,8 @@ depends: [
   "deb-libpng16-16" {>= "1.6.2-1"}
   "deb-libportaudio2" {>= "19+svn20101113"}
   "deb-libstdc++6" {>= "4.1.1"}
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "cultivation_9+dfsg1-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cultivation/cultivation_9+dfsg1-2+b1_amd64.deb"

@@ -14,7 +14,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-pulseaudio"
-  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb-libqt5gui5-gles" {>= "5.7.0"})
 ]
 extra-source "pavucontrol-qt_0.16.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pavucontrol-qt/pavucontrol-qt_0.16.0-1_amd64.deb"

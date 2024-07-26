@@ -23,7 +23,7 @@ depends: [
   "deb-liburi-perl" {>= "1.52"}
   "deb-libwww-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.19.5"} | "deb- libscalar-list-utils-perl" {>= "1-1.33"})
+  ("deb-perl" {>= "5.19.5"} | "deb-libscalar-list-utils-perl" {>= "1-1.33"})
 ]
 extra-source "librdf-linkeddata-perl_1.940-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libr/librdf-linkeddata-perl/librdf-linkeddata-perl_1.940-1_all.deb"

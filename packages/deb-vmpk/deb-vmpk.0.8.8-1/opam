@@ -15,7 +15,7 @@ depends: [
   "deb-libqt5dbus5" {>= "5.0.2"}
   "deb-libqt5widgets5" {>= "5.2.0~alpha1"}
   "deb-libstdc++6" {>= "4.1.1"}
-  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb-libqt5gui5-gles" {>= "5.7.0"})
 ]
 extra-source "vmpk_0.8.8-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/vmpk/vmpk_0.8.8-1_amd64.deb"

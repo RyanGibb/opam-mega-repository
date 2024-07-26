@@ -9,7 +9,7 @@ depends: [
   "deb-ant"
   "deb-ivy"
   "deb-maven-repo-helper"
-  ("deb-default-jre-headless" | "deb- java7-runtime-headless")
+  ("deb-default-jre-headless" | "deb-java7-runtime-headless")
 ]
 extra-source "ivy-debian-helper_1.0_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/ivy-debian-helper/ivy-debian-helper_1.0_all.deb"

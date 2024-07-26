@@ -40,9 +40,9 @@ def convert_dep_to_opam(dep, version=None):
         return f'"{sanitize_package_name(pkg).strip()}" {{>= "{ver.strip()}"}}'
     else:
         if version == None:
-            return f'"{sanitize_package_name(dep).strip()}"'
+            return f'"{sanitize_package_name(dep.strip()).strip()}"'
         else:
-            return f'"{sanitize_package_name(dep).strip()}" {{= "{version}"}}'
+            return f'"{sanitize_package_name(dep.strip()).strip()}" {{= "{version}"}}'
 
 def handle_conflicts(dep):
     return f'"{dep[1:].strip()}"'

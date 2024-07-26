@@ -20,7 +20,7 @@ depends: [
   "deb-ejabberd-mod-shcommands"
   "deb-ejabberd-mod-statsdx"
   "deb-ejabberd-mod-webpresence"
-  ("deb-erlang-base" {>= "1-17"} | "deb- erlang-abi-17-0")
+  ("deb-erlang-base" {>= "1-17"} | "deb-erlang-abi-17-0")
 ]
 extra-source "ejabberd-contrib_0.2018.12.10~dfsg0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/ejabberd-contrib/ejabberd-contrib_0.2018.12.10~dfsg0-3_all.deb"

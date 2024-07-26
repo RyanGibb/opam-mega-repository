@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-emacsen-common"
-  ("deb-w3m" | "deb- w3m-ssl" {>= "0.3"} | "deb- w3mmee" {>= "0.3"})
+  ("deb-w3m" | "deb-w3m-ssl" {>= "0.3"} | "deb-w3mmee" {>= "0.3"})
 ]
 conflicts: [
   "deb-w3m-el"

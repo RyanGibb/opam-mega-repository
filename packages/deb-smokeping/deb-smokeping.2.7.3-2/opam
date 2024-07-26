@@ -22,7 +22,7 @@ depends: [
   "deb-lsb-base" {>= "3.0-6"}
   "deb-perl"
   "deb-ucf" {>= "0.28"}
-  ("deb-default-mta" | "deb- mail-transport-agent")
+  ("deb-default-mta" | "deb-mail-transport-agent")
 ]
 extra-source "smokeping_2.7.3-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/smokeping/smokeping_2.7.3-2_all.deb"

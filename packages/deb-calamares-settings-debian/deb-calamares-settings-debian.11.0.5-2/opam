@@ -11,7 +11,7 @@ depends: [
   "deb-keyutils"
   "deb-qml-module-qtquick-window2"
   "deb-qml-module-qtquick2"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "calamares-settings-debian_11.0.5-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/calamares-settings-debian/calamares-settings-debian_11.0.5-2_all.deb"

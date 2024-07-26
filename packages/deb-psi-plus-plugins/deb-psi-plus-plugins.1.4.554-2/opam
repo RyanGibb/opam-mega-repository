@@ -25,7 +25,7 @@ depends: [
   "deb-libtidy5deb1" {>= "1-5.2.0"}
   "deb-libx11-6"
   "deb-libxcb1"
-  ("deb-psi-plus" {= "1.4.554-2"} | "deb- psi-plus-webkit" {= "1.4.554-2"})
+  ("deb-psi-plus" {= "1.4.554-2"} | "deb-psi-plus-webkit" {= "1.4.554-2"})
 ]
 extra-source "psi-plus-plugins_1.4.554-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/psi-plus/psi-plus-plugins_1.4.554-2_amd64.deb"

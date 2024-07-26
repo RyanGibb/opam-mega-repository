@@ -10,7 +10,7 @@ depends: [
   "deb-libbsd0" {>= "0.0"}
   "deb-libc6" {>= "2.3.4"}
   "deb-xserver-common" {>= "2-1.20.4-1+deb10u4"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "xserver-xorg-legacy_2:1.20.4-1+deb10u4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xorg-server/xserver-xorg-legacy_1.20.4-1+deb10u4_amd64.deb"

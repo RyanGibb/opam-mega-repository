@@ -13,7 +13,7 @@ depends: [
   "deb-libstdc++6" {>= "5"}
   "deb-python3" {>= "3~"}
   "deb-python3-pyqt5" {= "5.15.9+dfsg-1"}
-  ("deb-libqt5gui5" {>= "5.15"} | "deb- libqt5gui5-gles" {>= "5.15"})
+  ("deb-libqt5gui5" {>= "5.15"} | "deb-libqt5gui5-gles" {>= "5.15"})
 ]
 extra-source "python3-pyqt5.qtsvg_5.15.9+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pyqt5/python3-pyqt5.qtsvg_5.15.9+dfsg-1_amd64.deb"

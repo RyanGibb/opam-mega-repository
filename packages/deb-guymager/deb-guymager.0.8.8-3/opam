@@ -20,7 +20,7 @@ depends: [
   "deb-libstdc++6" {>= "5"}
   "deb-smartmontools"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libparted0" | "deb- libparted")
+  ("deb-libparted0" | "deb-libparted")
 ]
 extra-source "guymager_0.8.8-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/guymager/guymager_0.8.8-3_amd64.deb"

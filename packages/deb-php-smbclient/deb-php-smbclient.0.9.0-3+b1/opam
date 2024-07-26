@@ -10,7 +10,7 @@ depends: [
   "deb-libsmbclient" {>= "2-4.1.1"}
   "deb-php-common" {>= "1-7.0+33~"}
   "deb-ucf"
-  ("deb-phpapi-20180731" | "deb- phpapi-20170718")
+  ("deb-phpapi-20180731" | "deb-phpapi-20170718")
 ]
 extra-source "php-smbclient_0.9.0-3+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/php-smbclient/php-smbclient_0.9.0-3+b1_amd64.deb"

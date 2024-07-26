@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-excon"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-excon_0.60.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-excon/ruby-excon_0.60.0-1_all.deb"

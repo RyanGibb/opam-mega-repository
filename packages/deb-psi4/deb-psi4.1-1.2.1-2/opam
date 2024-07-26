@@ -23,8 +23,8 @@ depends: [
   "deb-python3-numpy"
   "deb-python3-pybind11"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "psi4_1:1.2.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/psi4/psi4_1.2.1-2_amd64.deb"

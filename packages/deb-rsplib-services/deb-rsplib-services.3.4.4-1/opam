@@ -14,7 +14,7 @@ depends: [
   "deb-librsplib3" {>= "2.7.8"}
   "deb-libstdc++6" {>= "4.4"}
   "deb-rsplib-tools" {= "3.4.4-1"}
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "rsplib-services_3.4.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rsplib/rsplib-services_3.4.4-1_amd64.deb"

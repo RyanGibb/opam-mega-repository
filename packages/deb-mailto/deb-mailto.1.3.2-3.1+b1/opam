@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.34"}
-  ("deb-apache" | "deb- httpd")
-  ("deb-exim4" | "deb- mail-transport-agent")
+  ("deb-apache" | "deb-httpd")
+  ("deb-exim4" | "deb-mail-transport-agent")
 ]
 extra-source "mailto_1.3.2-3.1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mailto/mailto_1.3.2-3.1+b1_amd64.deb"

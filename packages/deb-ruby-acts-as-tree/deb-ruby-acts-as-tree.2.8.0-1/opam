@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-activerecord"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-acts-as-tree_2.8.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-acts-as-tree/ruby-acts-as-tree_2.8.0-1_all.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.34"}
   "deb-libfuse2" {>= "2.8"}
-  ("deb-osspd-pulseaudio" | "deb- osspd-backend")
+  ("deb-osspd-pulseaudio" | "deb-osspd-backend")
 ]
 conflicts: [
   "deb-oss-compat"

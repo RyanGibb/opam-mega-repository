@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.4"}
-  ("deb-procmail" | "deb- maildrop" | "deb- deliver")
-  ("deb-sendmail-bin" | "deb- mail-transport-agent")
+  ("deb-procmail" | "deb-maildrop" | "deb-deliver")
+  ("deb-sendmail-bin" | "deb-mail-transport-agent")
 ]
 extra-source "sensible-mda_8.15.2-14~deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sendmail/sensible-mda_8.15.2-14~deb10u1_amd64.deb"

@@ -25,7 +25,7 @@ depends: [
   "deb-libsynctex2" {>= "2022.20220321.62855"}
   "deb-sphinx-rtd-theme-common" {>= "1.2.0+dfsg"}
   "deb-zlib1g" {>= "1-1.2.0"}
-  ("deb-libqt5gui5" {>= "5.6.0~beta"} | "deb- libqt5gui5-gles" {>= "5.6.0~beta"})
+  ("deb-libqt5gui5" {>= "5.6.0~beta"} | "deb-libqt5gui5-gles" {>= "5.6.0~beta"})
 ]
 extra-source "sioyek_2.0.0+dfsg-3+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sioyek/sioyek_2.0.0+dfsg-3+b2_amd64.deb"

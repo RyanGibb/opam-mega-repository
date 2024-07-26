@@ -8,8 +8,8 @@ remove: [
 depends: [
   "deb-desktop-base"
   "deb-neurodebian-popularity-contest"
-  ("deb-adwaita-icon-theme" | "deb- gnome-icon-theme")
-  ("deb-ssh-askpass-gnome" | "deb- ssh-askpass")
+  ("deb-adwaita-icon-theme" | "deb-gnome-icon-theme")
+  ("deb-ssh-askpass-gnome" | "deb-ssh-askpass")
 ]
 extra-source "neurodebian-desktop_0.41.2+nmu1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/neurodebian/neurodebian-desktop_0.41.2+nmu1_all.deb"

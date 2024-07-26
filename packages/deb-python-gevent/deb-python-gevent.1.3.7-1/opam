@@ -11,7 +11,7 @@ depends: [
   "deb-python" {>= "2.7~"}
   "deb-python-any" {< "2.8"}
   "deb-python-any" {>= "2.7~"}
-  ("deb-python-greenlet" {>= "0.3.2"} | "deb- python-codespeak-lib" {< "1.0"})
+  ("deb-python-greenlet" {>= "0.3.2"} | "deb-python-codespeak-lib" {< "1.0"})
 ]
 extra-source "python-gevent_1.3.7-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-gevent/python-gevent_1.3.7-1_amd64.deb"

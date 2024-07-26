@@ -13,7 +13,7 @@ depends: [
   "deb-libstdc++6" {>= "4.6"}
   "deb-libx11-6"
   "deb-libzita-convolver4" {>= "4.0.3"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "zam-plugins_3.14~repack3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/z/zam-plugins/zam-plugins_3.14~repack3-1_amd64.deb"

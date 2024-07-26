@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libhamcrest-java"
-  ("deb-default-jre-headless" | "deb- java5-runtime-headless")
+  ("deb-default-jre-headless" | "deb-java5-runtime-headless")
 ]
 extra-source "junit4_4.13.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/junit4/junit4_4.13.1-2_all.deb"

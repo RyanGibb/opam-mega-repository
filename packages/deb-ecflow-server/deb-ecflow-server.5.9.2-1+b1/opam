@@ -13,7 +13,7 @@ depends: [
   "deb-libgcc-s1" {>= "3.0"}
   "deb-libssl3" {>= "3.0.0"}
   "deb-libstdc++6" {>= "11"}
-  ("deb-ksh" | "deb- mksh" | "deb- pdksh" | "deb- zsh")
+  ("deb-ksh" | "deb-mksh" | "deb-pdksh" | "deb-zsh")
 ]
 extra-source "ecflow-server_5.9.2-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/ecflow/ecflow-server_5.9.2-1+b1_amd64.deb"

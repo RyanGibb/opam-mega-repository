@@ -16,7 +16,7 @@ depends: [
   "deb-python3-psycopg2"
   "deb-python3-urllib3"
   "deb-python3-yaml"
-  ("deb-python3-etcd" {>= "0.4.3"} | "deb- python3-consul" {>= "0.7.0"} | "deb- python3-kazoo" | "deb- python3-kubernetes" | "deb- python3-pysyncobj")
+  ("deb-python3-etcd" {>= "0.4.3"} | "deb-python3-consul" {>= "0.7.0"} | "deb-python3-kazoo" | "deb-python3-kubernetes" | "deb-python3-pysyncobj")
 ]
 extra-source "patroni_3.0.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/patroni/patroni_3.0.2-1_all.deb"

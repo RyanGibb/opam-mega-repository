@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-fast-stemmer" {>= "1.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-classifier-reborn_2.2.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-classifier-reborn/ruby-classifier-reborn_2.2.0-1_all.deb"

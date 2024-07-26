@@ -14,7 +14,7 @@ depends: [
   "deb-libsdl-mixer1-2"
   "deb-libsdl1-2debian" {>= "1.2.11"}
   "deb-torus-trooper-data" {= "0.22.dfsg1-12"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "torus-trooper_0.22.dfsg1-12+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/torus-trooper/torus-trooper_0.22.dfsg1-12+b1_amd64.deb"

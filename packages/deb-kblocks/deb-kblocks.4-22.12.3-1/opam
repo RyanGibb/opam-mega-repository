@@ -22,7 +22,7 @@ depends: [
   "deb-libqt5svg5" {>= "5.15.0~"}
   "deb-libqt5widgets5" {>= "5.15.0~"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb- libqt5gui5-gles" {>= "5.15.0~"})
+  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb-libqt5gui5-gles" {>= "5.15.0~"})
 ]
 extra-source "kblocks_4:22.12.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kblocks/kblocks_22.12.3-1_amd64.deb"

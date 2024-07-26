@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "deb-m4"
-  ("deb-pcb-gtk" | "deb- pcb-lesstif")
-  ("deb-tcl" | "deb- tclsh")
-  ("deb-tk" | "deb- wish")
+  ("deb-pcb-gtk" | "deb-pcb-lesstif")
+  ("deb-tcl" | "deb-tclsh")
+  ("deb-tk" | "deb-wish")
 ]
 extra-source "pcb-common_1:4.2.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pcb/pcb-common_4.2.2-1_all.deb"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r tinyjsd"]
 ]
 depends: [
-  ("deb-thunderbird" {>= "24.0"} | "deb- icedove" {>= "24.0"})
+  ("deb-thunderbird" {>= "24.0"} | "deb-icedove" {>= "24.0"})
 ]
 extra-source "tinyjsd_1.2+git1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tinyjsd/tinyjsd_1.2+git1-1_all.deb"

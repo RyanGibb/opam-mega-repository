@@ -9,7 +9,7 @@ depends: [
   "deb-lua-torch-graph"
   "deb-lua-torch-nn"
   "deb-lua-torch-torch7"
-  ("deb-lua5-1" | "deb- luajit")
+  ("deb-lua5-1" | "deb-luajit")
 ]
 extra-source "lua-torch-nngraph_0~20170208-g3ed3b9b-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lua-torch-nngraph/lua-torch-nngraph_0~20170208-g3ed3b9b-3_all.deb"

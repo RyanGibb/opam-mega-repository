@@ -28,7 +28,7 @@ depends: [
   "deb-lsb-base"
   "deb-netbase"
   "deb-zlib1g" {>= "1-1.2.0"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "gnunet_0.19.3-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnunet/gnunet_0.19.3-2_amd64.deb"

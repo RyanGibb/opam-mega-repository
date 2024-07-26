@@ -22,8 +22,8 @@ depends: [
   "deb-liblog4cpp5v5"
   "deb-libpython2-7" {>= "2.7"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-ocl-icd-libopencl1" {>= "1.0"} | "deb- libopencl-1-1-1")
-  ("deb-ocl-icd-libopencl1" | "deb- libopencl1")
+  ("deb-ocl-icd-libopencl1" {>= "1.0"} | "deb-libopencl-1-1-1")
+  ("deb-ocl-icd-libopencl1" | "deb-libopencl1")
 ]
 extra-source "libgnuradio-fosphor3.7.12_3.7.0.2.7b6b996-3+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gr-fosphor/libgnuradio-fosphor3.7.12_3.7.0.2.7b6b996-3+b2_amd64.deb"

@@ -11,7 +11,7 @@ depends: [
   "deb-libpam0g" {>= "0.99.7.1"}
   "deb-libssl1-1" {>= "1.1.0"}
   "deb-openssl"
-  ("deb-openbsd-inetd" | "deb- inet-superserver")
+  ("deb-openbsd-inetd" | "deb-inet-superserver")
 ]
 conflicts: [
   "deb-ftp-server"

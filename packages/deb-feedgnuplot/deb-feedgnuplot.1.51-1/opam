@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-liblist-moreutils-perl"
   "deb-perl-any"
-  ("deb-gnuplot-qt" | "deb- gnuplot-x11" | "deb- gnuplot-nox" | "deb- gnuplot5-qt" | "deb- gnuplot5-x11" | "deb- gnuplot5-nox" | "deb- gnuplot")
+  ("deb-gnuplot-qt" | "deb-gnuplot-x11" | "deb-gnuplot-nox" | "deb-gnuplot5-qt" | "deb-gnuplot5-x11" | "deb-gnuplot5-nox" | "deb-gnuplot")
 ]
 extra-source "feedgnuplot_1.51-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/feedgnuplot/feedgnuplot_1.51-1_all.deb"

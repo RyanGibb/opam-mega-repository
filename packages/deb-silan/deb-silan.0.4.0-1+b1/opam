@@ -10,7 +10,7 @@ depends: [
   "deb-libavutil56" {>= "7-4.0"}
   "deb-libc6" {>= "2.14"}
   "deb-libsndfile1" {>= "1.0.20"}
-  ("deb-libavcodec58" {>= "7-4.0"} | "deb- libavcodec-extra58" {>= "7-4.0"})
+  ("deb-libavcodec58" {>= "7-4.0"} | "deb-libavcodec-extra58" {>= "7-4.0"})
 ]
 extra-source "silan_0.4.0-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/silan/silan_0.4.0-1+b1_amd64.deb"

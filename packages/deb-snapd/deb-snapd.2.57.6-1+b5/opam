@@ -18,8 +18,8 @@ depends: [
   "deb-squashfs-tools"
   "deb-systemd"
   "deb-udev"
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
-  ("deb-gnupg1" | "deb- gnupg")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus")
+  ("deb-gnupg1" | "deb-gnupg")
 ]
 conflicts: [
   "deb-snap" {< "2013-11-29-1ubuntu1"}

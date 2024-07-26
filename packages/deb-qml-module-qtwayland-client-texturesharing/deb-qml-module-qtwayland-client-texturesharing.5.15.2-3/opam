@@ -14,8 +14,8 @@ depends: [
   "deb-libqt5waylandclient5" {>= "5.10.1"}
   "deb-libstdc++6" {>= "5"}
   "deb-libwayland-client0" {>= "1.9.91"}
-  ("deb-libqt5gui5" {>= "5.15.2+dfsg~"} | "deb- libqt5gui5-gles" {>= "5.15.2+dfsg~"})
-  ("deb-libqt5quick5" {>= "5.15.2+dfsg~"} | "deb- libqt5quick5-gles" {>= "5.15.2+dfsg~"})
+  ("deb-libqt5gui5" {>= "5.15.2+dfsg~"} | "deb-libqt5gui5-gles" {>= "5.15.2+dfsg~"})
+  ("deb-libqt5quick5" {>= "5.15.2+dfsg~"} | "deb-libqt5quick5-gles" {>= "5.15.2+dfsg~"})
 ]
 extra-source "qml-module-qtwayland-client-texturesharing_5.15.2-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtwayland-opensource-src/qml-module-qtwayland-client-texturesharing_5.15.2-3_amd64.deb"

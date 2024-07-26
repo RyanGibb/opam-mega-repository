@@ -9,7 +9,7 @@ depends: [
   "deb-libbatik-java"
   "deb-libhtsjdk-java"
   "deb-libjheatchart-java"
-  ("deb-default-jre" | "deb- java7-runtime" | "deb- java8-runtime" | "deb- java9-runtime" | "deb- java10-runtime" | "deb- java11-runtime")
+  ("deb-default-jre" | "deb-java7-runtime" | "deb-java8-runtime" | "deb-java9-runtime" | "deb-java10-runtime" | "deb-java11-runtime")
 ]
 extra-source "chromhmm_1.21+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/chromhmm/chromhmm_1.21+dfsg-1_all.deb"

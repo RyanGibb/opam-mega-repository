@@ -14,7 +14,7 @@ depends: [
   "deb-sqlite3"
   "deb-sudo"
   "deb-sysvinit-utils"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "ironic-common_1:21.1.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/ironic/ironic-common_21.1.0-3_all.deb"

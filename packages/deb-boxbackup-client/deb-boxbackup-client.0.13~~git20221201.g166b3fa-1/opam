@@ -17,7 +17,7 @@ depends: [
   "deb-sysvinit-utils"
   "deb-ucf"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "boxbackup-client_0.13~~git20221201.g166b3fa-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/boxbackup/boxbackup-client_0.13~~git20221201.g166b3fa-1_amd64.deb"

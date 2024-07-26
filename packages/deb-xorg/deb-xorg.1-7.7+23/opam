@@ -24,7 +24,7 @@ depends: [
   "deb-xkb-data"
   "deb-xorg-docs-core"
   "deb-xserver-xorg" {>= "1-7.7+23"}
-  ("deb-xterm" | "deb- x-terminal-emulator")
+  ("deb-xterm" | "deb-x-terminal-emulator")
 ]
 extra-source "xorg_1:7.7+23_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xorg/xorg_7.7+23_amd64.deb"

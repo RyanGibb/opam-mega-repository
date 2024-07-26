@@ -14,7 +14,7 @@ depends: [
   "deb-libstdc++6" {>= "9"}
   "deb-libtinyxml2-8" {>= "8.0.0"}
   "deb-mount" {> "2.19.1"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "encfs_1.9.5-1+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/encfs/encfs_1.9.5-1+b2_amd64.deb"

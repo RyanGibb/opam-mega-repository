@@ -14,7 +14,7 @@ depends: [
   "deb-libgtk-3-0" {>= "3.21.5"}
   "deb-libreadline8" {>= "6.0"}
   "deb-libsqlite3-0" {>= "3.5.9"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnomint_1.3.0-4+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnomint/gnomint_1.3.0-4+b1_amd64.deb"

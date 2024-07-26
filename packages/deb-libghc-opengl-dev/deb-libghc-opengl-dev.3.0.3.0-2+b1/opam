@@ -14,7 +14,7 @@ depends: [
   "deb-libghc-statevar-dev"
   "deb-libgl1"
   "deb-libgmp10"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "libghc-opengl-dev_3.0.3.0-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/haskell-opengl/libghc-opengl-dev_3.0.3.0-2+b1_amd64.deb"

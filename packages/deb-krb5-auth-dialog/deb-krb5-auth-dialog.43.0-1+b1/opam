@@ -12,7 +12,7 @@ depends: [
   "deb-libgtk-3-0" {>= "3.21.4"}
   "deb-libkrb5-3" {>= "1.8+dfsg"}
   "deb-libpam0g" {>= "0.99.7.1"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "krb5-auth-dialog_43.0-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/krb5-auth-dialog/krb5-auth-dialog_43.0-1+b1_amd64.deb"

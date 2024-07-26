@@ -11,7 +11,7 @@ depends: [
   "deb-libqt5core5a" {>= "5.15.1"}
   "deb-libraw20" {>= "0.19.0"}
   "deb-libstdc++6" {>= "4.1.1"}
-  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb- libqt5gui5-gles" {>= "5.15.0~"})
+  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb-libqt5gui5-gles" {>= "5.15.0~"})
 ]
 extra-source "libkf5kdcraw5_22.12.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libk/libkf5kdcraw/libkf5kdcraw5_22.12.3-1_amd64.deb"

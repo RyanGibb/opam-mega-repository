@@ -20,7 +20,7 @@ depends: [
   "deb-libxpm4"
   "deb-libxt6"
   "deb-snd-common" {>= "23.1-1"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "snd-gui-pulse_23.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/snd/snd-gui-pulse_23.1-1_amd64.deb"

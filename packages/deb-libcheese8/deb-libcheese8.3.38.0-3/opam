@@ -17,7 +17,7 @@ depends: [
   "deb-libglib2-0-0" {>= "2.39.90"}
   "deb-libgstreamer-plugins-base1-0-0" {>= "1.0.0"}
   "deb-libgstreamer1-0-0" {>= "1.4.0"}
-  ("deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"} | "deb- libgdk-pixbuf2-0-0" {>= "2.22.0"})
+  ("deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"} | "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"})
 ]
 extra-source "libcheese8_3.38.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cheese/libcheese8_3.38.0-3_amd64.deb"

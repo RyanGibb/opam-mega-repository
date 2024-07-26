@@ -15,9 +15,9 @@ depends: [
   "deb-libset-scalar-perl"
   "deb-liburi-perl" {>= "1.52"}
   "deb-perl"
-  ("deb-libcgi-pm-perl" | "deb- perl" {< "5.19"})
-  ("deb-libmodule-pluggable-perl" | "deb- perl" {< "5.17.0"})
-  ("deb-perl" {>= "5.12"} | "deb- libfile-spec-perl")
+  ("deb-libcgi-pm-perl" | "deb-perl" {< "5.19"})
+  ("deb-libmodule-pluggable-perl" | "deb-perl" {< "5.17.0"})
+  ("deb-perl" {>= "5.12"} | "deb-libfile-spec-perl")
 ]
 extra-source "librdf-query-perl_2.918-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libr/librdf-query-perl/librdf-query-perl_2.918-1_all.deb"

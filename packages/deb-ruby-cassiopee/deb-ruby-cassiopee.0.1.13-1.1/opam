@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-text" {>= "0.2.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-cassiopee_0.1.13-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-cassiopee/ruby-cassiopee_0.1.13-1.1_all.deb"

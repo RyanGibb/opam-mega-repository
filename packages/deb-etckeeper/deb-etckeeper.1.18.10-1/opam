@@ -8,8 +8,8 @@ remove: [
 depends: [
   "deb-python-any" {< "2.8"}
   "deb-python-any" {>= "2.7~"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-git" {>= "1-1.7"} | "deb- mercurial" | "deb- bzr" {>= "1.5~"} | "deb- darcs")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-git" {>= "1-1.7"} | "deb-mercurial" | "deb-bzr" {>= "1.5~"} | "deb-darcs")
 ]
 conflicts: [
   "deb-bzr" {< "1.5~"}

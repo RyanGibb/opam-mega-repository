@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-iso"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-i18n-spec_0.6.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-i18n-spec/ruby-i18n-spec_0.6.0-2_all.deb"

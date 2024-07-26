@@ -11,7 +11,7 @@ depends: [
   "deb-python3-six" {>= "1.4.0"}
   "deb-python3-tz"
   "deb-python3-tzlocal"
-  ("deb-python3-funcsigs" | "deb- python3" {> "3.5"})
+  ("deb-python3-funcsigs" | "deb-python3" {> "3.5"})
 ]
 extra-source "python3-apscheduler_3.9.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/apscheduler/python3-apscheduler_3.9.1-2_all.deb"

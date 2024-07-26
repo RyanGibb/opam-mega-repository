@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl-any"
-  ("deb-libgd-perl" | "deb- libgd-gd2-noxpm-perl" | "deb- libgd-gd2-perl")
+  ("deb-libgd-perl" | "deb-libgd-gd2-noxpm-perl" | "deb-libgd-gd2-perl")
 ]
 extra-source "libgd-text-perl_0.86-10_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libg/libgd-text-perl/libgd-text-perl_0.86-10_all.deb"

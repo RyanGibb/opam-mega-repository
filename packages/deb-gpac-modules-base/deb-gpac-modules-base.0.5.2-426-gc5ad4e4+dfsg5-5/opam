@@ -26,8 +26,8 @@ depends: [
   "deb-libxv1"
   "deb-libxvidcore4" {>= "1.2.2"}
   "deb-zlib1g" {>= "1-1.2.3.3"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libglu1-mesa" | "deb-libglu1")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "gpac-modules-base_0.5.2-426-gc5ad4e4+dfsg5-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gpac/gpac-modules-base_0.5.2-426-gc5ad4e4+dfsg5-5_amd64.deb"

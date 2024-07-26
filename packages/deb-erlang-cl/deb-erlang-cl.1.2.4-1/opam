@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.4"}
-  ("deb-erlang-base" {>= "1-21.1+dfsg"} | "deb- erlang-base-hipe" {>= "1-21.1+dfsg"})
-  ("deb-ocl-icd-libopencl1" {>= "1.0"} | "deb- libopencl-1-1-1")
-  ("deb-ocl-icd-libopencl1" | "deb- libopencl1")
+  ("deb-erlang-base" {>= "1-21.1+dfsg"} | "deb-erlang-base-hipe" {>= "1-21.1+dfsg"})
+  ("deb-ocl-icd-libopencl1" {>= "1.0"} | "deb-libopencl-1-1-1")
+  ("deb-ocl-icd-libopencl1" | "deb-libopencl1")
 ]
 extra-source "erlang-cl_1.2.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/erlang-cl/erlang-cl_1.2.4-1_amd64.deb"

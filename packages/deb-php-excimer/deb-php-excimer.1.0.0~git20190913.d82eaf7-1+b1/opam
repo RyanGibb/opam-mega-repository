@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.17"}
   "deb-php-common" {>= "1-7.0+33~"}
   ("deb-libapache2-mod-php7-4" | "deb-libphp7-4-embed" | "deb-php7-4-cgi" | "deb-php7-4-cli" | "deb-php7-4-fpm" | "deb-php7-4-phpdbg")
-  ("deb-php" | "deb- php-cli")
+  ("deb-php" | "deb-php-cli")
 ]
 extra-source "php-excimer_1.0.0~git20190913.d82eaf7-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/php-excimer/php-excimer_1.0.0~git20190913.d82eaf7-1+b1_amd64.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-emacsen-common" {>= "2.0.5"}
   "deb-libtext-iconv-perl"
-  ("deb-debconf" {>= "1.5.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "1.5.5"} | "deb-debconf-2-0")
 ]
 extra-source "dictionaries-common_1.28.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dictionaries-common/dictionaries-common_1.28.1_all.deb"

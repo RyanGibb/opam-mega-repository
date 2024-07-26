@@ -9,7 +9,7 @@ depends: [
   "deb-librust-cfg-if-0-1+default-dev"
   "deb-librust-libc-0-2-dev"
   "deb-libsleef-dev"
-  ("deb-librust-bindgen-0-47+default-dev" | "deb- librust-bindgen-0-46+default-dev")
+  ("deb-librust-bindgen-0-47+default-dev" | "deb-librust-bindgen-0-46+default-dev")
 ]
 extra-source "librust-sleef-sys-dev_0.1.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-sleef-sys/librust-sleef-sys-dev_0.1.1-2_amd64.deb"

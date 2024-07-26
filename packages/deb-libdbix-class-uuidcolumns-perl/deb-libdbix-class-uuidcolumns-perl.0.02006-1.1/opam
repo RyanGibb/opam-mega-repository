@@ -10,7 +10,7 @@ depends: [
   "deb-libdbix-class-perl"
   "deb-perl"
   "deb-perl-any"
-  ("deb-libuuid-perl" | "deb- libossp-uuid-perl")
+  ("deb-libuuid-perl" | "deb-libossp-uuid-perl")
 ]
 extra-source "libdbix-class-uuidcolumns-perl_0.02006-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libd/libdbix-class-uuidcolumns-perl/libdbix-class-uuidcolumns-perl_0.02006-1.1_all.deb"

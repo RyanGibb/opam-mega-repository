@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r maven-repo-helper"]
 ]
 depends: [
-  ("deb-default-jre-headless" {>= "2-1.7"} | "deb- java7-runtime-headless")
+  ("deb-default-jre-headless" {>= "2-1.7"} | "deb-java7-runtime-headless")
 ]
 extra-source "maven-repo-helper_1.10_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/maven-repo-helper/maven-repo-helper_1.10_all.deb"

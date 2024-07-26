@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.34"}
   "deb-libjpeg-turbo-progs"
-  ("deb-imagemagick" | "deb- imagemagick-6-q16hdri" | "deb- graphicsmagick-imagemagick-compat")
+  ("deb-imagemagick" | "deb-imagemagick-6-q16hdri" | "deb-graphicsmagick-imagemagick-compat")
 ]
 extra-source "jhead_1:3.06.0.1-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jhead/jhead_3.06.0.1-6_amd64.deb"

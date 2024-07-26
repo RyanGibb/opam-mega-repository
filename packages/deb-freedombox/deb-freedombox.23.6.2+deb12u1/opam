@@ -93,7 +93,7 @@ depends: [
   "deb-uwsgi-plugin-python3"
   "deb-wget"
   "deb-zram-tools"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "freedombox_23.6.2+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/freedombox/freedombox_23.6.2+deb12u1_all.deb"

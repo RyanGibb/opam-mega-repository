@@ -9,7 +9,7 @@ depends: [
   "deb-ruby-activesupport"
   "deb-ruby-multipart-post"
   "deb-ruby-oauth" {>= "0.5"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-jira_1.5.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-jira/ruby-jira_1.5.0-1_all.deb"

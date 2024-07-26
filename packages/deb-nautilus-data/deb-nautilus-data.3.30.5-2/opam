@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r nautilus-data"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "nautilus-data_3.30.5-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/nautilus/nautilus-data_3.30.5-2_all.deb"

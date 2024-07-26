@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-uudeview"
-  ("deb-tcl8-3" | "deb- tclsh")
+  ("deb-tcl8-3" | "deb-tclsh")
 ]
 extra-source "brag_1.4.1-2.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/brag/brag_1.4.1-2.2_all.deb"

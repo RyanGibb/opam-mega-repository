@@ -11,7 +11,7 @@ depends: [
   "deb-libwww-perl"
   "deb-lynx"
   "deb-perl-any"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "gwhois_20120626.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gwhois/gwhois_20120626.0-1_all.deb"

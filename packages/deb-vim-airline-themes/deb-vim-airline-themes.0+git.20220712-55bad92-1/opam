@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-vim-airline"
-  ("deb-vim" {>= "2-8.1.0693-2~"} | "deb- neovim" {>= "0.2.2-1~"})
+  ("deb-vim" {>= "2-8.1.0693-2~"} | "deb-neovim" {>= "0.2.2-1~"})
 ]
 extra-source "vim-airline-themes_0+git.20220712-55bad92-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/vim-airline-themes/vim-airline-themes_0+git.20220712-55bad92-1_all.deb"

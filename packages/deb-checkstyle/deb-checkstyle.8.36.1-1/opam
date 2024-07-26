@@ -16,7 +16,7 @@ depends: [
   "deb-libpicocli-java"
   "deb-libreflections-java"
   "deb-libsaxonhe-java" {>= "9.8.0.8~"}
-  ("deb-default-jre-headless" | "deb- java7-runtime-headless")
+  ("deb-default-jre-headless" | "deb-java7-runtime-headless")
 ]
 extra-source "checkstyle_8.36.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/checkstyle/checkstyle_8.36.1-1_all.deb"

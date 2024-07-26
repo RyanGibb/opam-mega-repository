@@ -18,9 +18,9 @@ depends: [
   "deb-libxext-dev"
   "deb-libxinerama-dev"
   "deb-libxrandr-dev"
-  ("deb-libcurl4-gnutls-dev" | "deb- libcurl-dev")
-  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
-  ("deb-zlib1g-dev" | "deb- libz-dev")
+  ("deb-libcurl4-gnutls-dev" | "deb-libcurl-dev")
+  ("deb-libgl1-mesa-dev" | "deb-libgl-dev")
+  ("deb-zlib1g-dev" | "deb-libz-dev")
 ]
 extra-source "juce-modules-source_5.4.1+really5.4.1~repack-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/juce/juce-modules-source_5.4.1+really5.4.1~repack-3_all.deb"

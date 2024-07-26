@@ -17,7 +17,7 @@ depends: [
   "deb-python3-psutil"
   "deb-python3-secretstorage" {>= "1.0~"}
   "deb-python3-urllib3"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "ayatana-webmail_21.2.6+dfsg1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/ayatana-webmail/ayatana-webmail_21.2.6+dfsg1-1_all.deb"

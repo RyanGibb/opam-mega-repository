@@ -9,7 +9,7 @@ depends: [
   "deb-libglib2-0-dev"
   "deb-libgpod4" {= "0.8.3-16"}
   "deb-libimobiledevice-dev"
-  ("deb-libgdk-pixbuf-2-0-dev" | "deb- libgdk-pixbuf2-0-dev")
+  ("deb-libgdk-pixbuf-2-0-dev" | "deb-libgdk-pixbuf2-0-dev")
 ]
 extra-source "libgpod-dev_0.8.3-16_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libg/libgpod/libgpod-dev_0.8.3-16_amd64.deb"

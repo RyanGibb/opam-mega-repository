@@ -10,8 +10,8 @@ depends: [
   "deb-libimage-exiftool-perl"
   "deb-libjs-mootools"
   "deb-libjson-perl"
-  ("deb-exiftran" | "deb- libjpeg-turbo-progs")
-  ("deb-zip" | "deb- p7zip-full")
+  ("deb-exiftran" | "deb-libjpeg-turbo-progs")
+  ("deb-zip" | "deb-p7zip-full")
 ]
 extra-source "fgallery_1.9.1+ds-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fgallery/fgallery_1.9.1+ds-1_all.deb"

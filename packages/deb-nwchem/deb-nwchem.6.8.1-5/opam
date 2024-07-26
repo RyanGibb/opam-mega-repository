@@ -16,8 +16,8 @@ depends: [
   "deb-mpi-default-bin"
   "deb-nwchem-data" {= "6.8.1-5"}
   "deb-zlib1g" {>= "1-1.2.0"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "nwchem_6.8.1-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/nwchem/nwchem_6.8.1-5_amd64.deb"

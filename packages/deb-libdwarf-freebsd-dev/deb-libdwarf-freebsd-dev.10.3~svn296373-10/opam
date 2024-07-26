@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libdwarf-freebsd-3" {= "10.3~svn296373-10"}
   "deb-libelf-freebsd-dev"
-  ("deb-libc0-1-dev" | "deb- libc-dev")
+  ("deb-libc0-1-dev" | "deb-libc-dev")
 ]
 conflicts: [
   "deb-libdwarf-dev"

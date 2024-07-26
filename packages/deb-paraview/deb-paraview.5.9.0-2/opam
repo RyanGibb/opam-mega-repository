@@ -45,7 +45,7 @@ depends: [
   "deb-python3-twisted"
   "deb-tcl"
   "deb-zlib1g" {>= "1-1.2.3.4"}
-  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb-libqt5gui5-gles" {>= "5.11.0~rc1"})
 ]
 extra-source "paraview_5.9.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/paraview/paraview_5.9.0-2_amd64.deb"

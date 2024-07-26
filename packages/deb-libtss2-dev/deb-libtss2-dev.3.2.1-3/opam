@@ -19,7 +19,7 @@ depends: [
   "deb-libtss2-tcti-pcap0" {= "3.2.1-3"}
   "deb-libtss2-tcti-swtpm0" {= "3.2.1-3"}
   "deb-libtss2-tctildr0" {= "3.2.1-3"}
-  ("deb-libcurl4-openssl-dev" | "deb- libcurl-ssl-dev")
+  ("deb-libcurl4-openssl-dev" | "deb-libcurl-ssl-dev")
 ]
 extra-source "libtss2-dev_3.2.1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tpm2-tss/libtss2-dev_3.2.1-3_amd64.deb"

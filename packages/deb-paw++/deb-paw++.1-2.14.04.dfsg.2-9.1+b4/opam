@@ -19,7 +19,7 @@ depends: [
   "deb-libxt6"
   "deb-netbase" {>= "4.08"}
   "deb-paw-common"
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "paw++_1:2.14.04.dfsg.2-9.1+b4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/paw/paw++_2.14.04.dfsg.2-9.1+b4_amd64.deb"

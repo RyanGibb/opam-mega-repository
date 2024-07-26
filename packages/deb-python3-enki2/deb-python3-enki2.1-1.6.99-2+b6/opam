@@ -19,7 +19,7 @@ depends: [
   "deb-libstdc++6" {>= "11"}
   "deb-python3" {< "3.12"}
   "deb-python3" {>= "3.11~"}
-  ("deb-libqt5gui5" {>= "5.2.0"} | "deb- libqt5gui5-gles" {>= "5.2.0"})
+  ("deb-libqt5gui5" {>= "5.2.0"} | "deb-libqt5gui5-gles" {>= "5.2.0"})
 ]
 extra-source "python3-enki2_1:1.6.99-2+b6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/enki-aseba/python3-enki2_1.6.99-2+b6_amd64.deb"

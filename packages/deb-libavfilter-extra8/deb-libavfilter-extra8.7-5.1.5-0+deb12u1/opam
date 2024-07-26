@@ -33,8 +33,8 @@ depends: [
   "deb-libzimg2" {>= "0.3.1"}
   "deb-libzmq5" {>= "3.2.3+dfsg"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-ocl-icd-libopencl1" {>= "1.0"} | "deb- libopencl-1-2-1")
-  ("deb-ocl-icd-libopencl1" | "deb- libopencl1")
+  ("deb-ocl-icd-libopencl1" {>= "1.0"} | "deb-libopencl-1-2-1")
+  ("deb-ocl-icd-libopencl1" | "deb-libopencl1")
 ]
 conflicts: [
   "deb-libavfilter8"

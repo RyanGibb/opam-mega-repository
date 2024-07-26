@@ -43,8 +43,8 @@ depends: [
   "deb-libxxf86vm1"
   "deb-retroarch-assets" {>= "1.7.6+git20221024+dfsg"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
-  ("deb-libqt5gui5" {>= "5.2.0"} | "deb- libqt5gui5-gles" {>= "5.2.0"})
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
+  ("deb-libqt5gui5" {>= "5.2.0"} | "deb-libqt5gui5-gles" {>= "5.2.0"})
 ]
 extra-source "retroarch_1.14.0+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/retroarch/retroarch_1.14.0+dfsg-1_amd64.deb"

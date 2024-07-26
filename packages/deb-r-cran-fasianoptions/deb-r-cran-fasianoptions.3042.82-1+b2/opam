@@ -13,8 +13,8 @@ depends: [
   "deb-r-base-core" {>= "3.5.1-1"}
   "deb-r-cran-fbasics" {>= "2160.81-2"}
   "deb-r-cran-foptions" {>= "270.74"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "r-cran-fasianoptions_3042.82-1+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fasianoptions/r-cran-fasianoptions_3042.82-1+b2_amd64.deb"

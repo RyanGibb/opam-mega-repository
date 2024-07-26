@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libmpj-java"
-  ("deb-openjdk-17-jre-headless" | "deb- java-runtime-headless")
+  ("deb-openjdk-17-jre-headless" | "deb-java-runtime-headless")
 ]
 extra-source "bbmap_39.01+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/bbmap/bbmap_39.01+dfsg-2_all.deb"

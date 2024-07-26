@@ -14,7 +14,7 @@ depends: [
   "deb-r-cran-matrix" {>= "1.1-0"}
   "deb-r-cran-pkgkitten"
   "deb-r-cran-rcpp" {>= "0.11.0-1"}
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "r-cran-rcppeigen_0.3.3.9.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-rcppeigen/r-cran-rcppeigen_0.3.3.9.1-1_amd64.deb"

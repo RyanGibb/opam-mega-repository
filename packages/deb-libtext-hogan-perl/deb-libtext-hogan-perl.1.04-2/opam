@@ -9,7 +9,7 @@ depends: [
   "deb-libclone-perl"
   "deb-libtext-trim-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.21.4"} | "deb- libscalar-list-utils-perl")
+  ("deb-perl" {>= "5.21.4"} | "deb-libscalar-list-utils-perl")
 ]
 extra-source "libtext-hogan-perl_1.04-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libt/libtext-hogan-perl/libtext-hogan-perl_1.04-2_all.deb"

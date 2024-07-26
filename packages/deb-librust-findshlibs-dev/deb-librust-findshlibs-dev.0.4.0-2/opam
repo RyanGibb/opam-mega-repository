@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-librust-cfg-if-dev"
   "deb-librust-lazy-static-1+default-dev"
-  ("deb-librust-bindgen-0-47-dev" | "deb- librust-bindgen-0-46-dev" | "deb- librust-bindgen-0-45-dev" | "deb- librust-bindgen-0-44-dev" | "deb- librust-bindgen-0-43-dev" | "deb- librust-bindgen-0-42-dev" | "deb- librust-bindgen-0-41-dev" | "deb- librust-bindgen-0-40-dev" | "deb- librust-bindgen-0-39-dev" | "deb- librust-bindgen-0-38-dev" | "deb- librust-bindgen-0-37-dev" | "deb- librust-bindgen-0-36-dev")
+  ("deb-librust-bindgen-0-47-dev" | "deb-librust-bindgen-0-46-dev" | "deb-librust-bindgen-0-45-dev" | "deb-librust-bindgen-0-44-dev" | "deb-librust-bindgen-0-43-dev" | "deb-librust-bindgen-0-42-dev" | "deb-librust-bindgen-0-41-dev" | "deb-librust-bindgen-0-40-dev" | "deb-librust-bindgen-0-39-dev" | "deb-librust-bindgen-0-38-dev" | "deb-librust-bindgen-0-37-dev" | "deb-librust-bindgen-0-36-dev")
 ]
 extra-source "librust-findshlibs-dev_0.4.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-findshlibs/librust-findshlibs-dev_0.4.0-2_amd64.deb"

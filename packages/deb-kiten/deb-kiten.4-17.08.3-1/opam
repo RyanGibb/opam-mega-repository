@@ -27,7 +27,7 @@ depends: [
   "deb-libqt5gui5" {>= "5.4"}
   "deb-libqt5widgets5" {>= "5.4"}
   "deb-libstdc++6" {>= "4.1.1"}
-  ("deb-fonts-vlgothic" | "deb- fonts-japanese-gothic")
+  ("deb-fonts-vlgothic" | "deb-fonts-japanese-gothic")
 ]
 extra-source "kiten_4:17.08.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kiten/kiten_17.08.3-1_amd64.deb"

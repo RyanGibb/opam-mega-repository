@@ -9,7 +9,7 @@ depends: [
   "deb-libjna-java"
   "deb-libvecmath-java"
   "deb-spring" {>= "105.0.1+dfsg-2"}
-  ("deb-default-jre" | "deb- java7-runtime")
+  ("deb-default-jre" | "deb-java7-runtime")
 ]
 extra-source "spring-javaai_105.0.1+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/spring/spring-javaai_105.0.1+dfsg-2_all.deb"

@@ -18,7 +18,7 @@ depends: [
   "deb-libqt5xml5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-qml-module-qtquick-controls"
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "csoundqt_0.9.8.1~dfsg0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/csoundqt/csoundqt_0.9.8.1~dfsg0-1_amd64.deb"

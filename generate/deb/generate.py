@@ -31,9 +31,9 @@ def convert_dep_to_opam(dep):
         operator = operator.replace('<<', '<')
         operator = operator.replace('>>', '>')
         constraint = f'{operator} "{sanitize_version(version)}"'
-        return f'"{sanitize_package_name(pkg).strip()}" {{{constraint}}}'
+        return f'"{sanitize_package_name(pkg.strip()).strip()}" {{{constraint}}}'
     else:
-        return f'"{sanitize_package_name(dep).strip()}"'
+        return f'"{sanitize_package_name(dep.strip()).strip()}"'
 
 def parse_dependency(dep):
     if ' (' in dep:

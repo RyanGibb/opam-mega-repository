@@ -10,7 +10,7 @@ depends: [
   "deb-e2fsprogs"
   "deb-libc6" {>= "2.15"}
   "deb-pbuilder"
-  ("deb-qemu-system" | "deb- kvm")
+  ("deb-qemu-system" | "deb-kvm")
 ]
 extra-source "qemubuilder_0.89_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cowdancer/qemubuilder_0.89_amd64.deb"

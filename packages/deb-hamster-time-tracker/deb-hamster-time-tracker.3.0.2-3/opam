@@ -15,7 +15,7 @@ depends: [
   "deb-python3-distutils"
   "deb-python3-gi"
   "deb-python3-xdg"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "hamster-time-tracker_3.0.2-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/hamster-time-tracker/hamster-time-tracker_3.0.2-3_all.deb"

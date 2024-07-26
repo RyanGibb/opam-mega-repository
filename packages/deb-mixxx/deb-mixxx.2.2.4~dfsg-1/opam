@@ -50,7 +50,7 @@ depends: [
   "deb-libvorbisfile3" {>= "1.1.2"}
   "deb-libx11-6"
   "deb-mixxx-data" {= "2.2.4~dfsg-1"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "mixxx_2.2.4~dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mixxx/mixxx_2.2.4~dfsg-1_amd64.deb"

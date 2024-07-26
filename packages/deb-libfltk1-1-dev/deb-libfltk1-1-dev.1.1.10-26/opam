@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libfltk1-1" {= "1.1.10-26"}
   "deb-libx11-dev"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 conflicts: [
   "deb-libfltk-dev"

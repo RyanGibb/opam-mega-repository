@@ -29,8 +29,8 @@ depends: [
   "deb-libx11-6" {>= "2-1.2.99.901"}
   "deb-libxi6" {>= "2-1.2.99.4"}
   "deb-lsb-release"
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "mumble_1.3.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mumble/mumble_1.3.4-1_amd64.deb"

@@ -12,7 +12,7 @@ depends: [
   "deb-lsb-base" {>= "3.0.6"}
   "deb-murano-common" {= "1-6.0.0-2"}
   "deb-python3-openstackclient"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "murano-api_1:6.0.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/murano/murano-api_6.0.0-2_all.deb"

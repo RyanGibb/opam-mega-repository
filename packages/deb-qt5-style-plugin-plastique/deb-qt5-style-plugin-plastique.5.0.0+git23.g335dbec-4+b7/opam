@@ -11,7 +11,7 @@ depends: [
   "deb-libqt5core5a" {>= "5.15.1"}
   "deb-libqt5widgets5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "qt5-style-plugin-plastique_5.0.0+git23.g335dbec-4+b7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtstyleplugins-src/qt5-style-plugin-plastique_5.0.0+git23.g335dbec-4+b7_amd64.deb"

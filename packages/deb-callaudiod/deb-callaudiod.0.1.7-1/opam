@@ -10,7 +10,7 @@ depends: [
   "deb-libglib2-0-0" {>= "2.37.3"}
   "deb-libpulse-mainloop-glib0" {>= "0.99.1"}
   "deb-libpulse0" {>= "0.99.1"}
-  ("deb-pulseaudio" | "deb- pipewire-pulse")
+  ("deb-pulseaudio" | "deb-pipewire-pulse")
 ]
 extra-source "callaudiod_0.1.7-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/callaudiod/callaudiod_0.1.7-1_amd64.deb"

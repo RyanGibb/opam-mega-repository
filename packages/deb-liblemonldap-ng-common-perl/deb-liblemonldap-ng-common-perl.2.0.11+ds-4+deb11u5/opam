@@ -22,7 +22,7 @@ depends: [
   "deb-liburi-perl"
   "deb-libwww-perl"
   "deb-perl-any"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 conflicts: [
   "deb-liblemonldap-ng-cli-perl"

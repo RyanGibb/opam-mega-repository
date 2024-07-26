@@ -22,8 +22,8 @@ depends: [
   "deb-libuno-salhelpergcc3-3" {>= "1.4.0"}
   "deb-ucf" {>= "0.8"}
   "deb-uno-libs-private"
-  ("deb-libreoffice-core-nogui" {= "4-7.4.7-1+deb12u3"} | "deb- libreoffice-core" {= "4-7.4.7-1+deb12u3"})
-  ("deb-libreoffice-draw-nogui" {= "4-7.4.7-1+deb12u3"} | "deb- libreoffice-draw" {= "4-7.4.7-1+deb12u3"})
+  ("deb-libreoffice-core-nogui" {= "4-7.4.7-1+deb12u3"} | "deb-libreoffice-core" {= "4-7.4.7-1+deb12u3"})
+  ("deb-libreoffice-draw-nogui" {= "4-7.4.7-1+deb12u3"} | "deb-libreoffice-draw" {= "4-7.4.7-1+deb12u3"})
 ]
 conflicts: [
   "deb-libreoffice-impress"

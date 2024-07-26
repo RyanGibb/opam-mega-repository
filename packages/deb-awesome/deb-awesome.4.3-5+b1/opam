@@ -34,8 +34,8 @@ depends: [
   "deb-libxkbcommon0" {>= "0.5.0"}
   "deb-lua-lgi" {>= "0.9.2"}
   "deb-menu"
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
-  ("deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"} | "deb- libgdk-pixbuf2-0-0" {>= "2.22.0"})
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus")
+  ("deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"} | "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"})
 ]
 extra-source "awesome_4.3-5+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/awesome/awesome_4.3-5+b1_amd64.deb"

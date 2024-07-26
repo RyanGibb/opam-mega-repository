@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "deb-dnsutils"
-  ("deb-bind9" | "deb- bind")
-  ("deb-isc-dhcp-server" | "deb- dhcp")
-  ("deb-perl" | "deb- perl5")
+  ("deb-bind9" | "deb-bind")
+  ("deb-isc-dhcp-server" | "deb-dhcp")
+  ("deb-perl" | "deb-perl5")
 ]
 conflicts: [
   "deb-dhcp-dns"

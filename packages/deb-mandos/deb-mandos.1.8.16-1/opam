@@ -13,10 +13,10 @@ depends: [
   "deb-python3-dbus"
   "deb-python3-gi"
   "deb-python3-urwid"
-  ("deb-debconf" {>= "1.5.5"} | "deb- debconf-2-0")
-  ("deb-gnupg2" | "deb- gnupg")
-  ("deb-libgnutls30" {>= "3.6.6"} | "deb- libgnutls30" {< "3.6.0"})
-  ("deb-systemd-sysv" | "deb- lsb-base" {>= "3.0-6"})
+  ("deb-debconf" {>= "1.5.5"} | "deb-debconf-2-0")
+  ("deb-gnupg2" | "deb-gnupg")
+  ("deb-libgnutls30" {>= "3.6.6"} | "deb-libgnutls30" {< "3.6.0"})
+  ("deb-systemd-sysv" | "deb-lsb-base" {>= "3.0-6"})
 ]
 extra-source "mandos_1.8.16-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mandos/mandos_1.8.16-1_all.deb"

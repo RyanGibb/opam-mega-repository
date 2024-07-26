@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.2.5"}
-  ("deb-puredata-core" | "deb- puredata")
+  ("deb-puredata-core" | "deb-puredata")
 ]
 extra-source "puredata-import_1.3-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/puredata-import/puredata-import_1.3-5_amd64.deb"

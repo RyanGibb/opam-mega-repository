@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r erlang-xmerl"]
 ]
 depends: [
-  ("deb-erlang-base" {= "1-21.2.6+dfsg-1"} | "deb- erlang-base-hipe" {= "1-21.2.6+dfsg-1"})
+  ("deb-erlang-base" {= "1-21.2.6+dfsg-1"} | "deb-erlang-base-hipe" {= "1-21.2.6+dfsg-1"})
 ]
 extra-source "erlang-xmerl_1:21.2.6+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/erlang/erlang-xmerl_21.2.6+dfsg-1_amd64.deb"

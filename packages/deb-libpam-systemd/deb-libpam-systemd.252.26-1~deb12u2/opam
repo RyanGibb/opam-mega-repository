@@ -12,7 +12,7 @@ depends: [
   "deb-libpam0g" {>= "0.99.7.1"}
   "deb-systemd" {= "252.26-1~deb12u2"}
   "deb-systemd-sysv"
-  ("deb-default-dbus-system-bus" | "deb- dbus-system-bus")
+  ("deb-default-dbus-system-bus" | "deb-dbus-system-bus")
 ]
 extra-source "libpam-systemd_252.26-1~deb12u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/systemd/libpam-systemd_252.26-1~deb12u2_amd64.deb"

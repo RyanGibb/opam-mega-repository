@@ -29,11 +29,11 @@ depends: [
   "deb-librust-pyo3-macros-0-17-3+pyproto-dev"
   "deb-librust-serde-1+default-dev"
   "deb-librust-unindent-dev"
-  ("deb-librust-eyre-0-6+default-dev" | "deb- librust-eyre-0-5+default-dev" | "deb- librust-eyre-0-4+default-dev")
-  ("deb-librust-hashbrown-0-12+default-dev" | "deb- librust-hashbrown-0-11+default-dev" | "deb- librust-hashbrown-0-10+default-dev" | "deb- librust-hashbrown-0-9+default-dev")
-  ("deb-librust-indexmap-1-9+default-dev" | "deb- librust-indexmap-1-8+default-dev" | "deb- librust-indexmap-1-7+default-dev" | "deb- librust-indexmap-1-6+default-dev")
-  ("deb-librust-num-complex-0-4+default-dev" | "deb- librust-num-complex-0-3+default-dev" | "deb- librust-num-complex-0-2+default-dev")
-  ("deb-librust-parking-lot-0-12+default-dev" | "deb- librust-parking-lot-0-11+default-dev")
+  ("deb-librust-eyre-0-6+default-dev" | "deb-librust-eyre-0-5+default-dev" | "deb-librust-eyre-0-4+default-dev")
+  ("deb-librust-hashbrown-0-12+default-dev" | "deb-librust-hashbrown-0-11+default-dev" | "deb-librust-hashbrown-0-10+default-dev" | "deb-librust-hashbrown-0-9+default-dev")
+  ("deb-librust-indexmap-1-9+default-dev" | "deb-librust-indexmap-1-8+default-dev" | "deb-librust-indexmap-1-7+default-dev" | "deb-librust-indexmap-1-6+default-dev")
+  ("deb-librust-num-complex-0-4+default-dev" | "deb-librust-num-complex-0-3+default-dev" | "deb-librust-num-complex-0-2+default-dev")
+  ("deb-librust-parking-lot-0-12+default-dev" | "deb-librust-parking-lot-0-11+default-dev")
 ]
 extra-source "librust-pyo3-dev_0.17.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-pyo3/librust-pyo3-dev_0.17.3-1_amd64.deb"

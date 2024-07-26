@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-polyglot"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-polyglot_0.3.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-polyglot/ruby-polyglot_0.3.4-1_all.deb"

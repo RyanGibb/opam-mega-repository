@@ -18,7 +18,7 @@ depends: [
   "deb-libxm4" {>= "2.3.4"}
   "deb-libxt6"
   "deb-xfonts-scalable"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 conflicts: [
   "deb-libinventor0"

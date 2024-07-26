@@ -13,7 +13,7 @@ depends: [
   "deb-libqt5sql5-sqlite"
   "deb-libqt5widgets5" {>= "5.2.0"}
   "deb-libstdc++6" {>= "4.2.1"}
-  ("deb-libqt5gui5" {>= "5.2"} | "deb- libqt5gui5-gles" {>= "5.2"})
+  ("deb-libqt5gui5" {>= "5.2"} | "deb-libqt5gui5-gles" {>= "5.2"})
 ]
 extra-source "speedcrunch_0.12.0-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/speedcrunch/speedcrunch_0.12.0-5_amd64.deb"

@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-dpkg-cross"
-  ("deb-g++-mipsisa32r6el-linux-gnu" {>= "4-10.2"} | "deb- g++-mipsr6el")
-  ("deb-gcc-mipsisa32r6el-linux-gnu" {>= "4-10.2"} | "deb- gcc-mipsr6el")
+  ("deb-g++-mipsisa32r6el-linux-gnu" {>= "4-10.2"} | "deb-g++-mipsr6el")
+  ("deb-gcc-mipsisa32r6el-linux-gnu" {>= "4-10.2"} | "deb-gcc-mipsr6el")
 ]
 extra-source "crossbuild-essential-mipsr6el_12.9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/build-essential-mipsen/crossbuild-essential-mipsr6el_12.9_all.deb"

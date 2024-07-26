@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-gnome-human-icon-theme"
   "deb-gtk2-engines-murrine" {>= "0.90.3"}
-  ("deb-shiki-colors-metacity-theme" | "deb- shiki-colors-xfwm-theme")
+  ("deb-shiki-colors-metacity-theme" | "deb-shiki-colors-xfwm-theme")
 ]
 extra-source "shiki-human-theme_4.6-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/shiki-colors-murrine/shiki-human-theme_4.6-2_all.deb"

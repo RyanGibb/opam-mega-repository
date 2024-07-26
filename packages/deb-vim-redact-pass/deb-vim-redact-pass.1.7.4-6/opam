@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r vim-redact-pass"]
 ]
 depends: [
-  ("deb-vim" {>= "2-8.1.0693-2~"} | "deb- neovim" {>= "0.2.2-1~"})
+  ("deb-vim" {>= "2-8.1.0693-2~"} | "deb-neovim" {>= "0.2.2-1~"})
 ]
 extra-source "vim-redact-pass_1.7.4-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/password-store/vim-redact-pass_1.7.4-6_all.deb"

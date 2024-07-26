@@ -17,7 +17,7 @@ depends: [
   "deb-libpangomm-1-4-1v5" {>= "2.40.0"}
   "deb-libsigc++-2-0-0v5" {>= "2.8.0"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "regexxer_0.10-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/regexxer/regexxer_0.10-4_amd64.deb"

@@ -19,7 +19,7 @@ depends: [
   "deb-python3-gi-cairo"
   "deb-python3-pyatspi"
   "deb-python3-xlib"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "accerciser_3.40.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/accerciser/accerciser_3.40.0-2_all.deb"

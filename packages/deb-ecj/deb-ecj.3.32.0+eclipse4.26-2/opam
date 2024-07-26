@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-java-wrappers"
   "deb-libeclipse-jdt-core-java"
-  ("deb-default-jre-headless" {>= "2-1.11"} | "deb- java11-runtime-headless")
+  ("deb-default-jre-headless" {>= "2-1.11"} | "deb-java11-runtime-headless")
 ]
 extra-source "ecj_3.32.0+eclipse4.26-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/eclipse-jdt-core/ecj_3.32.0+eclipse4.26-2_all.deb"

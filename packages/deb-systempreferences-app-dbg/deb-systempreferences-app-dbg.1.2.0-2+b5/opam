@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-gnustep-common"
-  ("deb-systempreferences-app" {= "1.2.0-2+b5"} | "deb- libpreferencepanes1" {= "1.2.0-2+b5"})
+  ("deb-systempreferences-app" {= "1.2.0-2+b5"} | "deb-libpreferencepanes1" {= "1.2.0-2+b5"})
 ]
 extra-source "systempreferences.app-dbg_1.2.0-2+b5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/systempreferences.app/systempreferences.app-dbg_1.2.0-2+b5_amd64.deb"

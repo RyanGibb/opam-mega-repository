@@ -8,9 +8,9 @@ remove: [
 depends: [
   "deb-dpkg-dev"
   "deb-patch"
-  ("deb-gcc" | "deb- c-compiler")
-  ("deb-kmod" | "deb- kldutils")
-  ("deb-make" | "deb- build-essential")
+  ("deb-gcc" | "deb-c-compiler")
+  ("deb-kmod" | "deb-kldutils")
+  ("deb-make" | "deb-build-essential")
 ]
 extra-source "dkms_3.0.10-8+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dkms/dkms_3.0.10-8+deb12u1_all.deb"

@@ -12,7 +12,7 @@ depends: [
   "deb-libmldbm-perl"
   "deb-libtimedate-perl"
   "deb-perl-any"
-  ("deb-perl" {>= "5.8.3"} | "deb- libstorable-perl")
+  ("deb-perl" {>= "5.8.3"} | "deb-libstorable-perl")
 ]
 extra-source "graphdefang_2.84-4+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mimedefang/graphdefang_2.84-4+b1_amd64.deb"

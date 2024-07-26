@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-rails-assets-bootstrap" {>= "3"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-rails-assets-bootstrap-markdown_2.10.0-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-rails-assets-bootstrap-markdown/ruby-rails-assets-bootstrap-markdown_2.10.0-1.1_all.deb"

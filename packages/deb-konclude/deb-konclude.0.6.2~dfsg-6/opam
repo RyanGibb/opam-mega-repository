@@ -14,7 +14,7 @@ depends: [
   "deb-libqt5network5" {>= "5.0.2"}
   "deb-libqt5xml5" {>= "5.1.0"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus" | "deb- dbus-x11")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus" | "deb-dbus-x11")
 ]
 extra-source "konclude_0.6.2~dfsg-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/konclude/konclude_0.6.2~dfsg-6_amd64.deb"

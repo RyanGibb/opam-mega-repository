@@ -12,7 +12,7 @@ depends: [
   "deb-lsb-base"
   "deb-virtuoso-opensource-7-bin" {= "7.2.5.1+dfsg1-0.1"}
   "deb-virtuoso-opensource-7-common" {= "7.2.5.1+dfsg1-0.1"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "virtuoso-opensource-7_7.2.5.1+dfsg1-0.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/virtuoso-opensource/virtuoso-opensource-7_7.2.5.1+dfsg1-0.1_amd64.deb"

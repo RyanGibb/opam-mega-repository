@@ -13,7 +13,7 @@ depends: [
   "deb-python3-libcomps" {>= "0.1.15-1~"}
   "deb-python3-libdnf" {>= "0.48.0-1~"}
   "deb-python3-rpm" {>= "4.14.0-1~"}
-  ("deb-python3-distutils" | "deb- libpython3-stdlib" {< "3.7~"})
+  ("deb-python3-distutils" | "deb-libpython3-stdlib" {< "3.7~"})
 ]
 extra-source "python3-dnf_4.5.2-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dnf/python3-dnf_4.5.2-6_all.deb"

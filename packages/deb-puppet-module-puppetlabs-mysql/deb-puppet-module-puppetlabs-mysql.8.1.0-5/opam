@@ -9,7 +9,7 @@ depends: [
   "deb-puppet-module-nanliu-staging"
   "deb-puppet-module-puppetlabs-stdlib"
   "deb-puppet-module-puppetlabs-translate"
-  ("deb-puppet" {>= "4"} | "deb- puppet-common" {>= "3"})
+  ("deb-puppet" {>= "4"} | "deb-puppet-common" {>= "3"})
 ]
 extra-source "puppet-module-puppetlabs-mysql_8.1.0-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/puppet-module-puppetlabs-mysql/puppet-module-puppetlabs-mysql_8.1.0-5_all.deb"

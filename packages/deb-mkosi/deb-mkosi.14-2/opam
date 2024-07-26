@@ -13,7 +13,7 @@ depends: [
   "deb-python3-any"
   "deb-systemd-container" {>= "233-1"}
   "deb-xz-utils"
-  ("deb-fdisk" | "deb- util-linux" {< "2.29.2-3~"})
+  ("deb-fdisk" | "deb-util-linux" {< "2.29.2-3~"})
 ]
 extra-source "mkosi_14-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mkosi/mkosi_14-2_all.deb"

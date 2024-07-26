@@ -16,8 +16,8 @@ depends: [
   "deb-libqt5multimedia5" {>= "5.6.0~beta"}
   "deb-libqt5widgets5" {>= "5.15.1"}
   "deb-libstdc++6" {>= "11"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
-  ("deb-libqt5gui5" {>= "5.2.0"} | "deb- libqt5gui5-gles" {>= "5.2.0"})
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
+  ("deb-libqt5gui5" {>= "5.2.0"} | "deb-libqt5gui5-gles" {>= "5.2.0"})
 ]
 extra-source "fmit_1.2.14-0.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fmit/fmit_1.2.14-0.1_amd64.deb"

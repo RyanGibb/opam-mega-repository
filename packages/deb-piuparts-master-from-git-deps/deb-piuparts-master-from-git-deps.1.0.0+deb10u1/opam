@@ -19,7 +19,7 @@ depends: [
   "deb-python-yaml"
   "deb-tango-icon-theme"
   "deb-xz-utils"
-  ("deb-apache2" | "deb- httpd")
+  ("deb-apache2" | "deb-httpd")
 ]
 extra-source "piuparts-master-from-git-deps_1.0.0+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/piuparts/piuparts-master-from-git-deps_1.0.0+deb10u1_all.deb"

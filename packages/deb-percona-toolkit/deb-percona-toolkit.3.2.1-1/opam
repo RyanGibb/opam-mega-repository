@@ -11,7 +11,7 @@ depends: [
   "deb-libdbi-perl"
   "deb-libterm-readkey-perl"
   "deb-perl-any"
-  ("deb-fdisk" | "deb- util-linux" {< "2.29.2-3~"})
+  ("deb-fdisk" | "deb-util-linux" {< "2.29.2-3~"})
 ]
 conflicts: [
   "deb-maatkit"

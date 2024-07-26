@@ -32,8 +32,8 @@ depends: [
   "deb-libx11-6"
   "deb-libx264-164" {>= "2-0.164.3095+gitbaee400"}
   "deb-libzita-resampler1" {>= "1.8.0"}
-  ("deb-libluajit-5-1-2" {>= "2.1.0~beta3+dfsg"} | "deb- libluajit2-5-1-2" {>= "2.1~"})
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libluajit-5-1-2" {>= "2.1.0~beta3+dfsg"} | "deb-libluajit2-5-1-2" {>= "2.1~"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "nageru_2.2.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/nageru/nageru_2.2.1-1_amd64.deb"

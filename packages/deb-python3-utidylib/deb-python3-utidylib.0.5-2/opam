@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-python3-any"
   "deb-python3-six"
-  ("deb-libtidy5deb1" | "deb- libtidy5" | "deb- libtidy-0-99-0" {>= "20051018"})
+  ("deb-libtidy5deb1" | "deb-libtidy5" | "deb-libtidy-0-99-0" {>= "20051018"})
 ]
 extra-source "python3-utidylib_0.5-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/utidylib/python3-utidylib_0.5-2_all.deb"

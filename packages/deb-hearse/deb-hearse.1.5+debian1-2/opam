@@ -8,8 +8,8 @@ remove: [
 depends: [
   "deb-libwww-perl"
   "deb-perl-any"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-nethack-common" | "deb- nethack")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-nethack-common" | "deb-nethack")
 ]
 extra-source "hearse_1.5+debian1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/hearse/hearse_1.5+debian1-2_all.deb"

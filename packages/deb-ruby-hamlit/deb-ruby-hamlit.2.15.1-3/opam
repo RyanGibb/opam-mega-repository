@@ -13,7 +13,7 @@ depends: [
   "deb-ruby-temple" {>= "0.8.2"}
   "deb-ruby-thor"
   "deb-ruby-tilt"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-hamlit_2.15.1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-hamlit/ruby-hamlit_2.15.1-3_amd64.deb"

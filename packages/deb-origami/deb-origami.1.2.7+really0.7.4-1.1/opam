@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-bash" {>= "3.2"}
-  ("deb-wget" | "deb- curl")
+  ("deb-wget" | "deb-curl")
 ]
 extra-source "origami_1.2.7+really0.7.4-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/origami/origami_1.2.7+really0.7.4-1.1_all.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-rt" {= "1.0.3.0-6"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "rttool_1.0.3.0-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rttool/rttool_1.0.3.0-6_all.deb"

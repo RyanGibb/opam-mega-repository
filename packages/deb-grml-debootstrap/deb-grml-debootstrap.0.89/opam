@@ -10,8 +10,8 @@ depends: [
   "deb-e2fsprogs"
   "deb-gawk"
   "deb-kmod"
-  ("deb-debootstrap" {>= "0.3.3.3"} | "deb- cdebootstrap" {>= "0.3.16"})
-  ("deb-fdisk" | "deb- util-linux" {< "2.29.2-3~"})
+  ("deb-debootstrap" {>= "0.3.3.3"} | "deb-cdebootstrap" {>= "0.3.16"})
+  ("deb-fdisk" | "deb-util-linux" {< "2.29.2-3~"})
 ]
 extra-source "grml-debootstrap_0.89_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/grml-debootstrap/grml-debootstrap_0.89_all.deb"

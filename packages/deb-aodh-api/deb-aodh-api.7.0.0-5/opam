@@ -15,7 +15,7 @@ depends: [
   "deb-python3-openstackclient"
   "deb-python3-pastescript"
   "deb-uwsgi-plugin-python3"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "aodh-api_7.0.0-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/aodh/aodh-api_7.0.0-5_all.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.27"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-retroarch" | "deb- libretro-frontend")
+  ("deb-retroarch" | "deb-libretro-frontend")
 ]
 extra-source "libretro-mgba_0.7.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mgba/libretro-mgba_0.7.0-1_amd64.deb"

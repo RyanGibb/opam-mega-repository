@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.34"}
   "deb-libperl5-36" {>= "5.36.0"}
-  ("deb-weechat-curses" {= "3.8-1"} | "deb- weechat-headless" {= "3.8-1"})
+  ("deb-weechat-curses" {= "3.8-1"} | "deb-weechat-headless" {= "3.8-1"})
 ]
 extra-source "weechat-perl_3.8-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/weechat/weechat-perl_3.8-1_amd64.deb"

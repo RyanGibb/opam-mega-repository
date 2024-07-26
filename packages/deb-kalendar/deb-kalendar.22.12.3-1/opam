@@ -55,8 +55,8 @@ depends: [
   "deb-qml-module-qt-labs-qmlmodels"
   "deb-qml-module-qtlocation"
   "deb-qml-module-qtpositioning"
-  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
-  ("deb-libqt5quick5" {>= "5.15.2~"} | "deb- libqt5quick5-gles" {>= "5.15.2~"})
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb-libqt5gui5-gles" {>= "5.15.2~"})
+  ("deb-libqt5quick5" {>= "5.15.2~"} | "deb-libqt5quick5-gles" {>= "5.15.2~"})
 ]
 extra-source "kalendar_22.12.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kalendar/kalendar_22.12.3-1_amd64.deb"

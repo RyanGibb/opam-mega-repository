@@ -113,7 +113,7 @@ depends: [
   "deb-wifite"
   "deb-winregfs"
   "deb-wipe"
-  ("deb-crack" | "deb- crack-md5")
+  ("deb-crack" | "deb-crack-md5")
 ]
 extra-source "forensics-all_3.44_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/forensics-all/forensics-all_3.44_all.deb"

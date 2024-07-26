@@ -19,7 +19,7 @@ depends: [
   "deb-libqt5xml5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "5"}
   "deb-libsynctex2" {>= "2020.20200327.54578"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "texworks_0.6.5-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/texworks/texworks_0.6.5-2_amd64.deb"

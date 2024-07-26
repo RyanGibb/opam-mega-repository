@@ -12,7 +12,7 @@ depends: [
   "deb-libc6" {>= "2.4"}
   "deb-libglib2-0-0" {>= "2.42.2"}
   "deb-libparted2" {>= "3.1"}
-  ("deb-fdisk" | "deb- util-linux" {< "2.29.2-3~"})
+  ("deb-fdisk" | "deb-util-linux" {< "2.29.2-3~"})
 ]
 extra-source "libblockdev-part2_2.20-7+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libb/libblockdev/libblockdev-part2_2.20-7+deb10u1_amd64.deb"

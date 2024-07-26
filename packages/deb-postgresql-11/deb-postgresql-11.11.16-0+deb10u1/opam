@@ -26,8 +26,8 @@ depends: [
   "deb-ssl-cert"
   "deb-tzdata"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-locales" | "deb- locales-all")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-locales" | "deb-locales-all")
 ]
 extra-source "postgresql-11_11.16-0+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/postgresql-11/postgresql-11_11.16-0+deb10u1_amd64.deb"

@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.4"}
   "deb-libcanberra0" {= "0.30-10"}
   "deb-libpulse0" {>= "0.99.1"}
-  ("deb-pulseaudio" | "deb- pipewire-pulse")
+  ("deb-pulseaudio" | "deb-pipewire-pulse")
 ]
 extra-source "libcanberra-pulse_0.30-10_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libc/libcanberra/libcanberra-pulse_0.30-10_amd64.deb"

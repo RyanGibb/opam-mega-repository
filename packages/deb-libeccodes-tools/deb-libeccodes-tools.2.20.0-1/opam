@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.7"}
   "deb-libeccodes0" {>= "2.20.0"}
   "deb-libnetcdf18" {>= "4.0.1"}
-  ("deb-mksh" | "deb- pdksh" | "deb- zsh" | "deb- ksh")
+  ("deb-mksh" | "deb-pdksh" | "deb-zsh" | "deb-ksh")
 ]
 conflicts: [
   "deb-libgrib-api-tools"

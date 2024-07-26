@@ -14,7 +14,7 @@ depends: [
   "deb-libkido0-1"
   "deb-libstdc++6" {>= "5.2"}
   "deb-liburdfdom-world"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "libkido-gui0.1_0.1.0+dfsg-6+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kido/libkido-gui0.1_0.1.0+dfsg-6+b1_amd64.deb"

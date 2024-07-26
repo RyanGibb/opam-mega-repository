@@ -23,7 +23,7 @@ depends: [
   "deb-libqt5x11extras5" {>= "5.6.0"}
   "deb-libstdc++6" {>= "5"}
   "deb-libxcb1"
-  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb-libqt5gui5-gles" {>= "5.15.2~"})
 ]
 extra-source "kwin-decoration-oxygen_4:5.27.5-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/oxygen/kwin-decoration-oxygen_5.27.5-2_amd64.deb"

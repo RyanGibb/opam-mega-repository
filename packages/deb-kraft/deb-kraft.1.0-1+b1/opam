@@ -31,7 +31,7 @@ depends: [
   "deb-python3-pypdf2"
   "deb-python3-reportlab"
   "deb-python3-six"
-  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb-libqt5gui5-gles" {>= "5.11.0~rc1"})
 ]
 extra-source "kraft_1.0-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kraft/kraft_1.0-1+b1_amd64.deb"

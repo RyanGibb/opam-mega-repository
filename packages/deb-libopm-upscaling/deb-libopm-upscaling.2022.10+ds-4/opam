@@ -15,8 +15,8 @@ depends: [
   "deb-libopm-grid"
   "deb-libstdc++6" {>= "11"}
   "deb-libumfpack5" {>= "1-4.5.2"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libopm-upscaling_2022.10+ds-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/opm-upscaling/libopm-upscaling_2022.10+ds-4_amd64.deb"

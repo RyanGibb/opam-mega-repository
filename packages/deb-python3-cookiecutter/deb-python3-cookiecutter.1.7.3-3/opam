@@ -16,7 +16,7 @@ depends: [
   "deb-python3-six" {>= "1.10"}
   "deb-python3-slugify"
   "deb-python3-yaml"
-  ("deb-python3-whichcraft" | "deb- python3" {> "3.3"})
+  ("deb-python3-whichcraft" | "deb-python3" {> "3.3"})
 ]
 extra-source "python3-cookiecutter_1.7.3-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cookiecutter/python3-cookiecutter_1.7.3-3_all.deb"

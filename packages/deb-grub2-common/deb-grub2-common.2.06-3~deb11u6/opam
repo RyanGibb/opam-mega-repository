@@ -12,7 +12,7 @@ depends: [
   "deb-libefiboot1" {>= "37"}
   "deb-libefivar1" {>= "37"}
   "deb-liblzma5" {>= "5.1.1alpha+20120614"}
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 conflicts: [
   "deb-grub-legacy"

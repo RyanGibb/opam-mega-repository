@@ -10,8 +10,8 @@ depends: [
   "deb-php" {>= "2-7.3~"}
   "deb-php-mbstring"
   "deb-php-xml"
-  ("deb-apache2" | "deb- httpd")
-  ("deb-php-mysql" | "deb- php-pgsql" | "deb- php-sqlite3" | "deb- php-mysqlnd")
+  ("deb-apache2" | "deb-httpd")
+  ("deb-php-mysql" | "deb-php-pgsql" | "deb-php-sqlite3" | "deb-php-mysqlnd")
 ]
 extra-source "mediawiki_1:1.35.13-1+deb11u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mediawiki/mediawiki_1.35.13-1+deb11u2_all.deb"

@@ -10,7 +10,7 @@ depends: [
   "deb-ruby-diff-lcs" {>= "1.1~"}
   "deb-ruby-mime-types" {>= "2.6.1~"}
   "deb-ruby-posix-spawn" {>= "0.3.11~"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-grit_2.8.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-grit/ruby-grit_2.8.2-2_all.deb"

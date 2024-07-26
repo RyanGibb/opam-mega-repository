@@ -21,8 +21,8 @@ depends: [
   "deb-libxi6"
   "deb-libxinerama1"
   "deb-xz-utils"
-  ("deb- libgcc1")
-  ("deb-libcrypt1" | "deb- libc6" {< "2.29-4"})
+  ("deb-libcrypt1" | "deb-libc6" {< "2.29-4"})
+  ("deb-libgcc1")
 ]
 extra-source "steam-libs_1:1.0.0.75+ds-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/steam-installer/steam-libs_1.0.0.75+ds-6_amd64.deb"

@@ -10,7 +10,7 @@ depends: [
   "deb-libpcap0-8" {>= "0.9.8"}
   "deb-sysvinit-utils"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "darkstat_3.0.719-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/darkstat/darkstat_3.0.719-1.1_amd64.deb"

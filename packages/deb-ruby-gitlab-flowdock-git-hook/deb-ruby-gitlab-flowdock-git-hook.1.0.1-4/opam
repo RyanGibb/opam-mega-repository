@@ -9,7 +9,7 @@ depends: [
   "deb-ruby-flowdock" {>= "0.7~"}
   "deb-ruby-grit" {>= "2.8.2-2~"}
   "deb-ruby-multi-json"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-gitlab-flowdock-git-hook_1.0.1-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-gitlab-flowdock-git-hook/ruby-gitlab-flowdock-git-hook_1.0.1-4_all.deb"

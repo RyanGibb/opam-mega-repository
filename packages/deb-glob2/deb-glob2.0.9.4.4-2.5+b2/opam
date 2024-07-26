@@ -22,7 +22,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libvorbisfile3" {>= "1.1.2"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "glob2_0.9.4.4-2.5+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/glob2/glob2_0.9.4.4-2.5+b2_amd64.deb"

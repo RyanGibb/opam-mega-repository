@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-python3-any"
   "deb-python3-rich" {>= "10.7.0"}
-  ("deb-python3-typing-extensions" | "deb- python3" {> "3.8"})
+  ("deb-python3-typing-extensions" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-textual_0.1.13-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/textual/python3-textual_0.1.13-1_all.deb"

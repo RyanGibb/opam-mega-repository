@@ -8,8 +8,8 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.14"}
   "deb-libpcre3"
-  ("deb-debconf" | "deb- debconf-2-0")
-  ("deb-emacs21" | "deb- emacsen")
+  ("deb-debconf" | "deb-debconf-2-0")
+  ("deb-emacs21" | "deb-emacsen")
 ]
 extra-source "remembrance-agent_2.12-7+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/remem/remembrance-agent_2.12-7+b2_amd64.deb"

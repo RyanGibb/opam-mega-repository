@@ -9,7 +9,7 @@ depends: [
   "deb-docdiff"
   "deb-ruby-hikidoc"
   "deb-ruby-uconv"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "hiki_1.0.0-2.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/hiki/hiki_1.0.0-2.1_all.deb"

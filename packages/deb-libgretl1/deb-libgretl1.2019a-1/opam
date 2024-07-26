@@ -15,8 +15,8 @@ depends: [
   "deb-libgomp1" {>= "4.9"}
   "deb-libxml2" {>= "2.7.4"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 conflicts: [
   "deb-libesl0"

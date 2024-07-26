@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl-any"
-  ("deb-perl" | "deb- libscalar-list-utils-perl")
+  ("deb-perl" | "deb-libscalar-list-utils-perl")
 ]
 extra-source "libdata-walk-perl_2.01-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libd/libdata-walk-perl/libdata-walk-perl_2.01-2_all.deb"

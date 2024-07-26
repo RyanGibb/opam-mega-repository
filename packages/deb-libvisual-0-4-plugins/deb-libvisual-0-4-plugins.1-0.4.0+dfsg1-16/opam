@@ -12,7 +12,7 @@ depends: [
   "deb-libgl1"
   "deb-libstdc++6" {>= "5"}
   "deb-libvisual-0-4-0" {>= "0.4.0-4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "libvisual-0.4-plugins_1:0.4.0+dfsg1-16_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libv/libvisual-plugins/libvisual-0.4-plugins_0.4.0+dfsg1-16_amd64.deb"

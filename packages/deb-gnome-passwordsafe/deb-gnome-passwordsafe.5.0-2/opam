@@ -14,7 +14,7 @@ depends: [
   "deb-python3-pwquality"
   "deb-python3-pycryptodome"
   "deb-python3-pykeepass" {>= "3.2.1"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-passwordsafe_5.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-passwordsafe/gnome-passwordsafe_5.0-2_all.deb"

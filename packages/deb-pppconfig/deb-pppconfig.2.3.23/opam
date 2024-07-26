@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-init-system-helpers" {>= "1.18~"}
   "deb-ppp" {>= "2.3.7"}
-  ("deb-whiptail" | "deb- dialog")
+  ("deb-whiptail" | "deb-dialog")
 ]
 conflicts: [
   "deb-nscd" {< "2.3.2.ds1-14"}

@@ -12,7 +12,7 @@ depends: [
   "deb-python3-setuptools"
   "deb-python3-six"
   "deb-python3-traits"
-  ("deb-python3-importlib-resources" | "deb- python3" {> "3.9"})
+  ("deb-python3-importlib-resources" | "deb-python3" {> "3.9"})
 ]
 extra-source "python3-envisage_6.1.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-envisage/python3-envisage_6.1.0-1_all.deb"

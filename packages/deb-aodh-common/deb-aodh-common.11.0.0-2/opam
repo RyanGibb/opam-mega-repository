@@ -13,7 +13,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-aodh" {= "11.0.0-2"}
   "deb-sqlite3"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "aodh-common_11.0.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/aodh/aodh-common_11.0.0-2_all.deb"

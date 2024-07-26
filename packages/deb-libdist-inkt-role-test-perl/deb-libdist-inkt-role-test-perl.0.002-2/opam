@@ -15,9 +15,9 @@ depends: [
   "deb-libtype-tiny-perl"
   "deb-perl-any"
   "deb-sgml-base" {>= "1.28"}
-  ("deb-perl" {>= "5.13.9"} | "deb- libhttp-tiny-perl")
-  ("deb-perl" {>= "5.13.9"} | "deb- libjson-pp-perl")
-  ("deb-perl" {>= "5.13.9"} | "deb- libmodule-metadata-perl")
+  ("deb-perl" {>= "5.13.9"} | "deb-libhttp-tiny-perl")
+  ("deb-perl" {>= "5.13.9"} | "deb-libjson-pp-perl")
+  ("deb-perl" {>= "5.13.9"} | "deb-libmodule-metadata-perl")
 ]
 extra-source "libdist-inkt-role-test-perl_0.002-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libd/libdist-inkt-role-test-perl/libdist-inkt-role-test-perl_0.002-2_all.deb"

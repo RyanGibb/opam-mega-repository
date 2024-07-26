@@ -11,7 +11,7 @@ depends: [
   "deb-libncurses6" {>= "6"}
   "deb-libtinfo6" {>= "6"}
   "deb-passwd"
-  ("deb-openbsd-inetd" | "deb- inet-superserver")
+  ("deb-openbsd-inetd" | "deb-inet-superserver")
 ]
 extra-source "telnetd_0.17-41.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/netkit-telnet/telnetd_0.17-41.2_amd64.deb"

@@ -38,8 +38,8 @@ depends: [
   "deb-netbase" {>= "4.07"}
   "deb-perl-any"
   "deb-zlib1g" {>= "1-1.2.6"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-default-mta" | "deb- mail-transport-agent")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-default-mta" | "deb-mail-transport-agent")
 ]
 extra-source "cyrus-common_3.0.8-6+deb10u6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cyrus-imapd/cyrus-common_3.0.8-6+deb10u6_amd64.deb"

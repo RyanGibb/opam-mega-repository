@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-shellany"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-shellany_0.0.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-shellany/ruby-shellany_0.0.1-2_all.deb"

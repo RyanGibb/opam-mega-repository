@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-gjs"
   "deb-ibus"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 conflicts: [
   "deb-avro"

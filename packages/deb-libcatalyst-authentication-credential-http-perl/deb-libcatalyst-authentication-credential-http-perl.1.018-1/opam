@@ -11,8 +11,8 @@ depends: [
   "deb-libstring-escape-perl"
   "deb-liburi-perl"
   "deb-perl"
-  ("deb-libcatalyst-plugin-authentication-perl" | "deb- catalyst-modules")
-  ("deb-libossp-uuid-perl" | "deb- libdata-uuid-perl")
+  ("deb-libcatalyst-plugin-authentication-perl" | "deb-catalyst-modules")
+  ("deb-libossp-uuid-perl" | "deb-libdata-uuid-perl")
 ]
 extra-source "libcatalyst-authentication-credential-http-perl_1.018-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libc/libcatalyst-authentication-credential-http-perl/libcatalyst-authentication-credential-http-perl_1.018-1_all.deb"

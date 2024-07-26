@@ -15,7 +15,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-r-mathlib"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "fastqtl_2.184+dfsg-6+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fastqtl/fastqtl_2.184+dfsg-6+b1_amd64.deb"

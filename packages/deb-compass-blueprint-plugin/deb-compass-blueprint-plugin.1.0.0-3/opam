@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-sass" {>= "3.3"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "compass-blueprint-plugin_1.0.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/compass-blueprint-plugin/compass-blueprint-plugin_1.0.0-3_all.deb"

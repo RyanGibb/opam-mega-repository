@@ -10,7 +10,7 @@ depends: [
   "deb-libdbi-perl"
   "deb-oar-common" {= "2.5.9-1"}
   "deb-perl-any"
-  ("deb-oar-user-pgsql" {= "2.5.9-1"} | "deb- oar-user-mysql" {= "2.5.9-1"})
+  ("deb-oar-user-pgsql" {= "2.5.9-1"} | "deb-oar-user-mysql" {= "2.5.9-1"})
 ]
 extra-source "oar-user_2.5.9-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/oar/oar-user_2.5.9-1_amd64.deb"

@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-libjs-jquery"
-  ("deb-python-flask" | "deb- python3-flask")
-  ("deb-python-openslide" | "deb- python3-openslide")
+  ("deb-python-flask" | "deb-python3-flask")
+  ("deb-python-openslide" | "deb-python3-openslide")
 ]
 extra-source "python-openslide-examples_1.1.1-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/openslide-python/python-openslide-examples_1.1.1-4_all.deb"

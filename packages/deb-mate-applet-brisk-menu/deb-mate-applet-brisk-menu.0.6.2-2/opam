@@ -14,7 +14,7 @@ depends: [
   "deb-libnotify4" {>= "0.7.0"}
   "deb-libx11-6"
   "deb-mate-panel" {>= "1.22.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "mate-applet-brisk-menu_0.6.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/brisk-menu/mate-applet-brisk-menu_0.6.2-2_amd64.deb"

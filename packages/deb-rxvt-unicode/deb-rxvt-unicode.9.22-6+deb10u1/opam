@@ -18,7 +18,7 @@ depends: [
   "deb-libx11-6"
   "deb-libxft2" {> "2.1.1"}
   "deb-libxrender1"
-  ("deb-ncurses-base" {>= "6.1+20180210-4"} | "deb- ncurses-term" {>= "5.8-1"})
+  ("deb-ncurses-base" {>= "6.1+20180210-4"} | "deb-ncurses-term" {>= "5.8-1"})
 ]
 conflicts: [
   "deb-rxvt-unicode-256color" {< "9.22-2"}

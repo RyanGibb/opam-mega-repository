@@ -21,7 +21,7 @@ depends: [
   "deb-libspqr2" {>= "1-5.4.0+dfsg"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-libsuitesparseconfig5" {>= "1-5.0.0"}
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libceres1_1.14.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/ceres-solver/libceres1_1.14.0-4_amd64.deb"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r musescore-common"]
 ]
 depends: [
-  ("deb-musescore-general-soundfont-small" | "deb- musescore-compatible-soundfont")
+  ("deb-musescore-general-soundfont-small" | "deb-musescore-compatible-soundfont")
 ]
 extra-source "musescore-common_2.3.2+dfsg4-15_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/musescore2/musescore-common_2.3.2+dfsg4-15_all.deb"

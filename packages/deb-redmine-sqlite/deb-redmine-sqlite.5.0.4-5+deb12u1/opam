@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-sqlite3" {>= "1.4.0~"}
   "deb-sqlite3"
-  ("deb-dbconfig-sqlite3" | "deb- dbconfig-no-thanks")
+  ("deb-dbconfig-sqlite3" | "deb-dbconfig-no-thanks")
 ]
 extra-source "redmine-sqlite_5.0.4-5+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/redmine/redmine-sqlite_5.0.4-5+deb12u1_all.deb"

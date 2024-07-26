@@ -13,8 +13,8 @@ depends: [
   "deb-libmono-system4-0-cil" {>= "4.2.0"}
   "deb-libx11-6" {>= "2-1.6.0"}
   "deb-libxxf86vm1"
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 conflicts: [
   "deb-libtaoframework-opengl2-1-cil"

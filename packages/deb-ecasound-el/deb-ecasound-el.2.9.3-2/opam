@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ecasound"
-  ("deb-emacs24" | "deb- xemacs21" | "deb- emacsen")
+  ("deb-emacs24" | "deb-xemacs21" | "deb-emacsen")
 ]
 extra-source "ecasound-el_2.9.3-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/ecasound/ecasound-el_2.9.3-2_all.deb"

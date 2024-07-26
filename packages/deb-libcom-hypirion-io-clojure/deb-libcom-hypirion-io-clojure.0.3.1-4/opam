@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r libcom-hypirion-io-clojure"]
 ]
 depends: [
-  ("deb-libclojure-java" | "deb- libclojure1-8-java")
+  ("deb-libclojure-java" | "deb-libclojure1-8-java")
 ]
 extra-source "libcom-hypirion-io-clojure_0.3.1-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/com-hypirion-io-clojure/libcom-hypirion-io-clojure_0.3.1-4_all.deb"

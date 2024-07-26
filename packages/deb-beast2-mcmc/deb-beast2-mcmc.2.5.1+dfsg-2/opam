@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libhmsbeagle-java" {>= "1.1r1092"}
   "deb-libjam-java"
-  ("deb-default-jre" | "deb- java9-runtime")
+  ("deb-default-jre" | "deb-java9-runtime")
 ]
 extra-source "beast2-mcmc_2.5.1+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/beast2-mcmc/beast2-mcmc_2.5.1+dfsg-2_all.deb"

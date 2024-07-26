@@ -13,7 +13,7 @@ depends: [
   "deb-libqt5network5" {>= "5.0.2"}
   "deb-libqt5widgets5" {>= "5.11.0~rc1"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libqt5gui5" {>= "5.2.0"} | "deb- libqt5gui5-gles" {>= "5.2.0"})
+  ("deb-libqt5gui5" {>= "5.2.0"} | "deb-libqt5gui5-gles" {>= "5.2.0"})
 ]
 extra-source "herculesstudio_1.5.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/herculesstudio/herculesstudio_1.5.0-4_amd64.deb"

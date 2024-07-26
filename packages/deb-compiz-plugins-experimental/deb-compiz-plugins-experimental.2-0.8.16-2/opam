@@ -30,7 +30,7 @@ depends: [
   "deb-libxml2" {>= "2.6.27"}
   "deb-libxrandr2"
   "deb-libxss1"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 conflicts: [
   "deb-compiz-plugins" {< "2-0.8.14-1"}

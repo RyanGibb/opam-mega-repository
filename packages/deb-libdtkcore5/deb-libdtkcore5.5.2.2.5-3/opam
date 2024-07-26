@@ -14,7 +14,7 @@ depends: [
   "deb-libqt5xml5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "4.9"}
   "deb-lshw"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "libdtkcore5_5.2.2.5-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dtkcore/libdtkcore5_5.2.2.5-3_amd64.deb"

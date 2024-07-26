@@ -17,9 +17,9 @@ depends: [
   "deb-libscope-upper-perl"
   "deb-libwww-perl"
   "deb-perl"
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
-  ("deb-emacs25-nox" | "deb- emacs25" | "deb- emacs24" | "deb- emacs23" | "deb- emacs22")
-  ("deb-w3m-el" {>= "1.4.5"} | "deb- w3m-el-snapshot")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
+  ("deb-emacs25-nox" | "deb-emacs25" | "deb-emacs24" | "deb-emacs23" | "deb-emacs22")
+  ("deb-w3m-el" {>= "1.4.5"} | "deb-w3m-el-snapshot")
 ]
 extra-source "sepia_0.992-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sepia/sepia_0.992-6_all.deb"

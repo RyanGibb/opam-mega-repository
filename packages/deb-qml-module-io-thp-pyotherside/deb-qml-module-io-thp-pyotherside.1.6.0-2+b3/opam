@@ -15,8 +15,8 @@ depends: [
   "deb-libqt5svg5" {>= "5.6.0~beta"}
   "deb-libstdc++6" {>= "5"}
   "deb-python3-any"
-  ("deb-libqt5gui5" {>= "5.12.2"} | "deb- libqt5gui5-gles" {>= "5.12.2"})
-  ("deb-libqt5quick5" {>= "5.4.0"} | "deb- libqt5quick5-gles" {>= "5.4.0"})
+  ("deb-libqt5gui5" {>= "5.12.2"} | "deb-libqt5gui5-gles" {>= "5.12.2"})
+  ("deb-libqt5quick5" {>= "5.4.0"} | "deb-libqt5quick5-gles" {>= "5.4.0"})
 ]
 extra-source "qml-module-io-thp-pyotherside_1.6.0-2+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pyotherside/qml-module-io-thp-pyotherside_1.6.0-2+b3_amd64.deb"

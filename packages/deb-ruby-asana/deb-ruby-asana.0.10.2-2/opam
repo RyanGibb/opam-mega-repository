@@ -10,7 +10,7 @@ depends: [
   "deb-ruby-faraday-middleware" {>= "1.0~"}
   "deb-ruby-faraday-middleware-multi-json" {>= "0.0"}
   "deb-ruby-oauth2" {>= "1.4.4~"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-asana_0.10.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-asana/ruby-asana_0.10.2-2_all.deb"

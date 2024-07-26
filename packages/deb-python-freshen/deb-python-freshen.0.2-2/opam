@@ -11,7 +11,7 @@ depends: [
   "deb-python-nose"
   "deb-python-pyparsing"
   "deb-python-yaml"
-  ("deb-python2-7" | "deb- python2-6")
+  ("deb-python2-7" | "deb-python2-6")
 ]
 extra-source "python-freshen_0.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/freshen/python-freshen_0.2-2_all.deb"

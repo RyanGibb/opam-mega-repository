@@ -13,8 +13,8 @@ depends: [
   "deb-ocaml"
   "deb-ocaml-findlib"
   "deb-tk-dev"
-  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
-  ("deb-libglu1-mesa-dev" | "deb- xlibmesa-glu-dev" | "deb- libglu-dev")
+  ("deb-libgl1-mesa-dev" | "deb-libgl-dev")
+  ("deb-libglu1-mesa-dev" | "deb-xlibmesa-glu-dev" | "deb-libglu-dev")
 ]
 extra-source "liblablgl-ocaml-dev_1:1.06-1+b6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lablgl/liblablgl-ocaml-dev_1.06-1+b6_amd64.deb"

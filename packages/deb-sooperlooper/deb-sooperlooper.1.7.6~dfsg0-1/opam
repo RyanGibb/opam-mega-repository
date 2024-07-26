@@ -20,7 +20,7 @@ depends: [
   "deb-libwxbase3-0-0v5" {>= "3.0.5.1+dfsg"}
   "deb-libwxgtk3-0-gtk3-0v5" {>= "3.0.5.1+dfsg"}
   "deb-libxml2" {>= "2.7.4"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "sooperlooper_1.7.6~dfsg0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sooperlooper/sooperlooper_1.7.6~dfsg0-1_amd64.deb"

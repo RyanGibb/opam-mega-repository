@@ -20,7 +20,7 @@ depends: [
   "deb-libtinfo6" {>= "6"}
   "deb-libtirpc3" {>= "1.0.2"}
   "deb-libuuid1" {>= "2.20.1"}
-  ("deb-media-types" | "deb- mime-support")
+  ("deb-media-types" | "deb-mime-support")
 ]
 extra-source "libpython3.11-stdlib_3.11.2-6+deb12u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python3.11/libpython3.11-stdlib_3.11.2-6+deb12u2_amd64.deb"

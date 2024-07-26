@@ -12,7 +12,7 @@ depends: [
   "deb-libidn2-0" {>= "2.0.0"}
   "deb-libssl1-1" {>= "1.1.1"}
   "deb-libtinfo6" {>= "6"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "s-nail_14.9.22-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/s-nail/s-nail_14.9.22-1_amd64.deb"

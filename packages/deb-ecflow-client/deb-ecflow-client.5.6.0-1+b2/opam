@@ -20,7 +20,7 @@ depends: [
   "deb-python3"
   "deb-python3-any"
   "deb-python3-fuse"
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "ecflow-client_5.6.0-1+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/ecflow/ecflow-client_5.6.0-1+b2_amd64.deb"

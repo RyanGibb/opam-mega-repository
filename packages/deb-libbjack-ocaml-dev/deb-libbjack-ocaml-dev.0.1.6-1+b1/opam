@@ -14,7 +14,7 @@ depends: [
   "deb-libsamplerate0-dev"
   "deb-ocaml"
   "deb-ocaml-findlib"
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "libbjack-ocaml-dev_0.1.6-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/ocaml-bjack/libbjack-ocaml-dev_0.1.6-1+b1_amd64.deb"

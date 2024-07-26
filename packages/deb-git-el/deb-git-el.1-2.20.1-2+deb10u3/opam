@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-git" {>= "1-1.7.4.1-2~"}
-  ("deb-emacs" | "deb- emacsen")
+  ("deb-emacs" | "deb-emacsen")
 ]
 extra-source "git-el_1:2.20.1-2+deb10u3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/git/git-el_2.20.1-2+deb10u3_all.deb"

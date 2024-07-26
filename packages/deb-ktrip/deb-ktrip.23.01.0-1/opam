@@ -20,7 +20,7 @@ depends: [
   "deb-qml-module-org-kde-i18n-localedata" {>= "5.60"}
   "deb-qml-module-org-kde-kirigami-addons-datetime" {>= "0.2"}
   "deb-qml-module-org-kde-kpublictransport" {>= "21.12.3"}
-  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb- libqt5gui5-gles" {>= "5.15.0~"})
+  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb-libqt5gui5-gles" {>= "5.15.0~"})
 ]
 extra-source "ktrip_23.01.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/ktrip/ktrip_23.01.0-1_amd64.deb"

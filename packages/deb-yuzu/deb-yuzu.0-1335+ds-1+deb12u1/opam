@@ -34,7 +34,7 @@ depends: [
   "deb-libva2" {>= "1.0.3"}
   "deb-libzstd1" {>= "1.5.2"}
   "deb-sse4-2-support"
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "yuzu_0-1335+ds-1+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/y/yuzu/yuzu_0-1335+ds-1+deb12u1_amd64.deb"

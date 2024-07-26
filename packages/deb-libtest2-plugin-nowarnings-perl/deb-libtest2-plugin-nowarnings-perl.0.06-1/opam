@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl"
-  ("deb-libtest-simple-perl" {>= "1.302047"} | "deb- perl" {>= "5.25.4"})
+  ("deb-libtest-simple-perl" {>= "1.302047"} | "deb-perl" {>= "5.25.4"})
 ]
 extra-source "libtest2-plugin-nowarnings-perl_0.06-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libt/libtest2-plugin-nowarnings-perl/libtest2-plugin-nowarnings-perl_0.06-1_all.deb"

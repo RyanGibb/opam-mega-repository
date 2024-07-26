@@ -10,7 +10,7 @@ depends: [
   "deb-perl-any"
   "deb-python3-any"
   "deb-sphinx-rtd-theme-common" {>= "0.5.1+dfsg"}
-  ("deb-virtualenv" | "deb- python3-virtualenv" {>= "1.7"} | "deb- python3-9-venv")
+  ("deb-virtualenv" | "deb-python3-virtualenv" {>= "1.7"} | "deb-python3-9-venv")
 ]
 extra-source "dh-virtualenv_1.2.2-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dh-virtualenv/dh-virtualenv_1.2.2-1.1_all.deb"

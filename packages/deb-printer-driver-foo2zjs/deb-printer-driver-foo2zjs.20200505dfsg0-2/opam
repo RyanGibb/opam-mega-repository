@@ -12,7 +12,7 @@ depends: [
   "deb-libjbig0" {>= "2.0"}
   "deb-liblcms2-utils"
   "deb-printer-driver-foo2zjs-common" {>= "20200505dfsg0-2"}
-  ("deb-cups-filters" | "deb- foomatic-filters")
+  ("deb-cups-filters" | "deb-foomatic-filters")
 ]
 extra-source "printer-driver-foo2zjs_20200505dfsg0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/foo2zjs/printer-driver-foo2zjs_20200505dfsg0-2_amd64.deb"

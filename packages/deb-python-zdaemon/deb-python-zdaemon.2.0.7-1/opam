@@ -10,7 +10,7 @@ depends: [
   "deb-python" {>= "2.6.6-7~"}
   "deb-python-pkg-resources"
   "deb-python-zconfig"
-  ("deb-python2-7" | "deb- python2-6")
+  ("deb-python2-7" | "deb-python2-6")
 ]
 conflicts: [
   "deb-zope3"

@@ -11,7 +11,7 @@ depends: [
   "deb-libglpk40" {>= "4.59"}
   "deb-libhwloc5" {>= "1.11.12"}
   "deb-libstdc++6" {>= "4.1.1"}
-  ("deb-ocl-icd-libopencl1" | "deb- libopencl1")
+  ("deb-ocl-icd-libopencl1" | "deb-libopencl1")
 ]
 conflicts: [
   "deb-libstarpu-contrib-1-2-5"

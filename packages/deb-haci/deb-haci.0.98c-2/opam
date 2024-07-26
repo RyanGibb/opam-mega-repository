@@ -25,7 +25,7 @@ depends: [
   "deb-libstorable-perl"
   "deb-libtemplate-perl"
   "deb-libtime-local-perl"
-  ("deb-apache2" | "deb- httpd")
+  ("deb-apache2" | "deb-httpd")
 ]
 extra-source "haci_0.98c-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/haci/haci_0.98c-2_all.deb"

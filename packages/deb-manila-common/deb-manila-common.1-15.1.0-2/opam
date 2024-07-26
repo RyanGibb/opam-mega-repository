@@ -10,7 +10,7 @@ depends: [
   "deb-dbconfig-common"
   "deb-python3-any"
   "deb-python3-manila" {= "1-15.1.0-2"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "manila-common_1:15.1.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/manila/manila-common_15.1.0-2_all.deb"

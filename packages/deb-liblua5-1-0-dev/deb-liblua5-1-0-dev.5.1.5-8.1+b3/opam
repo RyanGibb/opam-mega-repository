@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-liblua5-1-0" {= "5.1.5-8.1+b3"}
   "deb-libreadline-dev"
-  ("deb-libc6-dev" | "deb- libc-dev")
+  ("deb-libc6-dev" | "deb-libc-dev")
 ]
 conflicts: [
   "deb-liblua5-1-dev"

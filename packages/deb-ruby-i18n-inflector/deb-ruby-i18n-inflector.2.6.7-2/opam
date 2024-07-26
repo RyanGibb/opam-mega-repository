@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-i18n"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-i18n-inflector_2.6.7-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-i18n-inflector/ruby-i18n-inflector_2.6.7-2_all.deb"

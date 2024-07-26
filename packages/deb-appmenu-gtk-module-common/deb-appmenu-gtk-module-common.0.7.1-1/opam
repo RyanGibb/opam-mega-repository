@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libglib2-0-bin"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "appmenu-gtk-module-common_0.7.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/appmenu-gtk-module/appmenu-gtk-module-common_0.7.1-1_all.deb"

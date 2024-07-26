@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-rainbow" {>= "2.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-process-daemon_1.0.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-process-daemon/ruby-process-daemon_1.0.1-2_all.deb"

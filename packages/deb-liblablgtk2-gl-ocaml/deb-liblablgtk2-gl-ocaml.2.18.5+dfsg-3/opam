@@ -22,7 +22,7 @@ depends: [
   "deb-libpangocairo-1-0-0" {>= "1.14.0"}
   "deb-libpangoft2-1-0-0" {>= "1.14.0"}
   "deb-ocaml-base-nox"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "liblablgtk2-gl-ocaml_2.18.5+dfsg-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lablgtk2/liblablgtk2-gl-ocaml_2.18.5+dfsg-3_amd64.deb"

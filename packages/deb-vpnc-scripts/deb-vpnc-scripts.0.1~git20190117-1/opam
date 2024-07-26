@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r vpnc-scripts"]
 ]
 depends: [
-  ("deb-iproute2" | "deb- net-tools")
+  ("deb-iproute2" | "deb-net-tools")
 ]
 extra-source "vpnc-scripts_0.1~git20190117-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/vpnc-scripts/vpnc-scripts_0.1~git20190117-1_all.deb"

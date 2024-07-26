@@ -28,8 +28,8 @@ depends: [
   "deb-libxfixes-dev"
   "deb-libxi-dev"
   "deb-libxrandr-dev"
-  ("deb-libgdk-pixbuf-2-0-dev" | "deb- libgdk-pixbuf2-0-dev")
-  ("deb-libgles2-mesa-dev" {>= "7.1~rc3-1~"} | "deb- libgles2-dev")
+  ("deb-libgdk-pixbuf-2-0-dev" | "deb-libgdk-pixbuf2-0-dev")
+  ("deb-libgles2-mesa-dev" {>= "7.1~rc3-1~"} | "deb-libgles2-dev")
 ]
 conflicts: [
   "deb-libmutter-0-dev"

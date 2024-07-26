@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-htmlentities" {>= "4.3.1"}
   "deb-ruby-rbpdf-font" {= "1.19.5+ds.1-1"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-rbpdf_1.19.5+ds.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-rbpdf/ruby-rbpdf_1.19.5+ds.1-1_all.deb"

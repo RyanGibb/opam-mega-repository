@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-mustermann" {>= "1.0.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-mustermann-grape_1.0.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-mustermann-grape/ruby-mustermann-grape_1.0.0-1_all.deb"

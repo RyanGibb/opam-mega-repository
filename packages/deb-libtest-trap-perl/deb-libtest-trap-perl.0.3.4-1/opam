@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libdata-dump-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.21.6"} | "deb- libtest-simple-perl" {>= "1.001010"} | "deb- libtest-tester-perl")
+  ("deb-perl" {>= "5.21.6"} | "deb-libtest-simple-perl" {>= "1.001010"} | "deb-libtest-tester-perl")
 ]
 extra-source "libtest-trap-perl_0.3.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libt/libtest-trap-perl/libtest-trap-perl_0.3.4-1_all.deb"

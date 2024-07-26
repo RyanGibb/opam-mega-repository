@@ -9,7 +9,7 @@ depends: [
   "deb-libjson-any-perl"
   "deb-libtest-differences-perl"
   "deb-perl-any"
-  ("deb-libtest-simple-perl" | "deb- libtest-tester-perl" | "deb- perl")
+  ("deb-libtest-simple-perl" | "deb-libtest-tester-perl" | "deb-perl")
 ]
 extra-source "libtest-json-perl_0.11-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libt/libtest-json-perl/libtest-json-perl_0.11-4_all.deb"

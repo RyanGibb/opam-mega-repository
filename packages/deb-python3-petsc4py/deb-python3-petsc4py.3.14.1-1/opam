@@ -9,7 +9,7 @@ depends: [
   "deb-python-petsc4py-doc"
   "deb-python3-any"
   "deb-python3-numpy"
-  ("deb-python3-petsc4py-real" | "deb- python3-petsc4py-complex" | "deb- python3-petsc4py-real3-14" | "deb- python3-petsc4py-complex3-14" | "deb- python3-petsc4py-64-real" | "deb- python3-petsc4py-64-complex" | "deb- python3-petsc4py-64-real3-14" | "deb- python3-petsc4py-64-complex3-14")
+  ("deb-python3-petsc4py-real" | "deb-python3-petsc4py-complex" | "deb-python3-petsc4py-real3-14" | "deb-python3-petsc4py-complex3-14" | "deb-python3-petsc4py-64-real" | "deb-python3-petsc4py-64-complex" | "deb-python3-petsc4py-64-real3-14" | "deb-python3-petsc4py-64-complex3-14")
 ]
 extra-source "python3-petsc4py_3.14.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/petsc4py/python3-petsc4py_3.14.1-1_all.deb"

@@ -18,7 +18,7 @@ depends: [
   "deb-libsdl2-mixer-2-0-0" {>= "2.0.2"}
   "deb-libsdl2-net-2-0-0" {>= "2.0.1"}
   "deb-libvorbisfile3" {>= "1.1.2"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "prboom-plus_2:2.5.1.5+svn4539+dfsg1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/prboom-plus/prboom-plus_2.5.1.5+svn4539+dfsg1-1_amd64.deb"

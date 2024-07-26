@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.14"}
-  ("deb-iamerican" | "deb- ibritish" | "deb- ispell-dictionary")
-  ("deb-ispell" | "deb- aspell")
+  ("deb-iamerican" | "deb-ibritish" | "deb-ispell-dictionary")
+  ("deb-ispell" | "deb-aspell")
 ]
 extra-source "spell_1.0-24+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/spell/spell_1.0-24+b2_amd64.deb"

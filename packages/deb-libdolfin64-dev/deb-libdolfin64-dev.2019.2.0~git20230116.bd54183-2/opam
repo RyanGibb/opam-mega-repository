@@ -27,9 +27,9 @@ depends: [
   "deb-pkg-config"
   "deb-python3-ffc" {< "2019.3~"}
   "deb-python3-ffc" {>= "2019.2"}
-  ("deb-g++" | "deb- c++-compiler")
-  ("deb-libpetsc64-real3-18-dev" | "deb- libpetsc64-3-18-4-dev")
-  ("deb-libslepc64-real3-18-dev" | "deb- libslepc64-3-18-2-dev")
+  ("deb-g++" | "deb-c++-compiler")
+  ("deb-libpetsc64-real3-18-dev" | "deb-libpetsc64-3-18-4-dev")
+  ("deb-libslepc64-real3-18-dev" | "deb-libslepc64-3-18-2-dev")
 ]
 extra-source "libdolfin64-dev_2019.2.0~git20230116.bd54183-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dolfin/libdolfin64-dev_2019.2.0~git20230116.bd54183-2_amd64.deb"

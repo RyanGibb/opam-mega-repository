@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-vim-addon-mw-utils"
   "deb-vim-tlib"
-  ("deb-vim" {>= "2-8.1.0693-2~"} | "deb- neovim" {>= "0.2.2-1~"})
+  ("deb-vim" {>= "2-8.1.0693-2~"} | "deb-neovim" {>= "0.2.2-1~"})
 ]
 extra-source "vim-snipmate_0.87-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/vim-snipmate/vim-snipmate_0.87-7_all.deb"

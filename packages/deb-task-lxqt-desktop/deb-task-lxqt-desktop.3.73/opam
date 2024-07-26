@@ -10,7 +10,7 @@ depends: [
   "deb-sddm"
   "deb-task-desktop"
   "deb-tasksel" {= "3.73"}
-  ("deb-sddm-theme-debian-elarun" | "deb- sddm-theme")
+  ("deb-sddm-theme-debian-elarun" | "deb-sddm-theme")
 ]
 extra-source "task-lxqt-desktop_3.73_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tasksel/task-lxqt-desktop_3.73_all.deb"

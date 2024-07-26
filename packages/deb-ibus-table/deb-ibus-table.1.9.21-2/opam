@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ibus" {>= "1.5.0"}
   "deb-python3-any"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "ibus-table_1.9.21-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/ibus-table/ibus-table_1.9.21-2_all.deb"

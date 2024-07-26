@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-fakeweb"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-fakeweb_1.3.0+git20170806+dfsg1-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-fakeweb/ruby-fakeweb_1.3.0+git20170806+dfsg1-1.1_all.deb"

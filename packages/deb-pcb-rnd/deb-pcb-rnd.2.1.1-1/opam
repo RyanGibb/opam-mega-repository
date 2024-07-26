@@ -31,7 +31,7 @@ depends: [
   "deb-libxmu6"
   "deb-libxrender1"
   "deb-libxt6"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "pcb-rnd_2.1.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pcb-rnd/pcb-rnd_2.1.1-1_amd64.deb"

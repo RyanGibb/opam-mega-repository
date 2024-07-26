@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-dkms" {>= "2.1.0.0"}
-  ("deb-sysvinit-utils" {>= "3.05-4~"} | "deb- lsb-base" {>= "3.0-6"})
+  ("deb-sysvinit-utils" {>= "3.05-4~"} | "deb-lsb-base" {>= "3.0-6"})
 ]
 conflicts: [
   "deb-ngcp-rtpengine-kernel-dkms"

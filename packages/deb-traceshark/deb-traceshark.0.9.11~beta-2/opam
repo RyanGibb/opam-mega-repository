@@ -12,7 +12,7 @@ depends: [
   "deb-libqt5core5a" {>= "5.14.1"}
   "deb-libqt5widgets5" {>= "5.11.0~rc1"}
   "deb-libstdc++6" {>= "4.1.1"}
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "traceshark_0.9.11~beta-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/traceshark/traceshark_0.9.11~beta-2_amd64.deb"

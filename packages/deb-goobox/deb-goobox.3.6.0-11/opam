@@ -18,7 +18,7 @@ depends: [
   "deb-libgtk-3-0" {>= "3.21.5"}
   "deb-libmusicbrainz5-2" {>= "5.1.0+git20150707"}
   "deb-libpango-1-0-0" {>= "1.14.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "goobox_3.6.0-11_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/goobox/goobox_3.6.0-11_amd64.deb"

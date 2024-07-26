@@ -21,7 +21,7 @@ depends: [
   "deb-sudo"
   "deb-telnet"
   "deb-tftpd-hpa"
-  ("deb-ntp" | "deb- ntpdate")
+  ("deb-ntp" | "deb-ntpdate")
 ]
 extra-source "lava_2019.01-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lava/lava_2019.01-5_all.deb"

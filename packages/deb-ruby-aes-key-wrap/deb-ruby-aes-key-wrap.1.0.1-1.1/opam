@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-aes-key-wrap"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-aes-key-wrap_1.0.1-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-aes-key-wrap/ruby-aes-key-wrap_1.0.1-1.1_all.deb"

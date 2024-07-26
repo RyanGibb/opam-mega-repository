@@ -10,7 +10,7 @@ depends: [
   "deb-python-any" {>= "2.7.5-5~"}
   "deb-python-mock" {>= "2"}
   "deb-python-pytest"
-  ("deb-python-pytest" {>= "3.0.3"} | "deb- python-pytest" {< "3"})
+  ("deb-python-pytest" {>= "3.0.3"} | "deb-python-pytest" {< "3"})
 ]
 extra-source "python-pytest-mock_1.7.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pytest-mock/python-pytest-mock_1.7.1-1_all.deb"

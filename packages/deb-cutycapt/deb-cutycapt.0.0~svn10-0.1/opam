@@ -16,7 +16,7 @@ depends: [
   "deb-libqt5webkit5" {>= "5.6.0~rc"}
   "deb-libqt5widgets5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
 ]
 extra-source "cutycapt_0.0~svn10-0.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cutycapt/cutycapt_0.0~svn10-0.1_amd64.deb"

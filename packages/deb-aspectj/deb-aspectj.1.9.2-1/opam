@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libaspectj-java" {= "1.9.2-1"}
-  ("deb-default-jre-headless" | "deb- java8-runtime-headless")
+  ("deb-default-jre-headless" | "deb-java8-runtime-headless")
 ]
 extra-source "aspectj_1.9.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/aspectj/aspectj_1.9.2-1_all.deb"

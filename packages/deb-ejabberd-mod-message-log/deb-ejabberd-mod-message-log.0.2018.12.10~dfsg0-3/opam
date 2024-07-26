@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-ejabberd" {= "18.12.1-2"}
-  ("deb-erlang-base" {>= "1-17"} | "deb- erlang-abi-17-0")
-  ("deb-erlang-base" {>= "1-21.2.2+dfsg"} | "deb- erlang-base-hipe" {>= "1-21.2.2+dfsg"})
+  ("deb-erlang-base" {>= "1-17"} | "deb-erlang-abi-17-0")
+  ("deb-erlang-base" {>= "1-21.2.2+dfsg"} | "deb-erlang-base-hipe" {>= "1-21.2.2+dfsg"})
 ]
 extra-source "ejabberd-mod-message-log_0.2018.12.10~dfsg0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/ejabberd-contrib/ejabberd-mod-message-log_0.2018.12.10~dfsg0-3_amd64.deb"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r pyrex-mode"]
 ]
 depends: [
-  ("deb-python-mode" | "deb- emacs22")
+  ("deb-python-mode" | "deb-emacs22")
 ]
 extra-source "pyrex-mode_0.9.9-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pyrex/pyrex-mode_0.9.9-1_all.deb"

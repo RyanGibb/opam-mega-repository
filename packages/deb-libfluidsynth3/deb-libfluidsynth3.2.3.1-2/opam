@@ -18,8 +18,8 @@ depends: [
   "deb-libsdl2-2-0-0" {>= "2.0.12"}
   "deb-libsndfile1" {>= "1.0.20"}
   "deb-libstdc++6" {>= "11"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
-  ("deb-timgm6mb-soundfont" {>= "1.3-3~"} | "deb- sf3-soundfont-gm")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
+  ("deb-timgm6mb-soundfont" {>= "1.3-3~"} | "deb-sf3-soundfont-gm")
 ]
 extra-source "libfluidsynth3_2.3.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fluidsynth/libfluidsynth3_2.3.1-2_amd64.deb"

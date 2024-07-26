@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-debconf"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "mysqmail_0.4.9-10.3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mysqmail/mysqmail_0.4.9-10.3_all.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.14"}
   "deb-libpython2-7" {>= "2.7"}
-  ("deb-weechat-curses" {= "2.3-1+deb10u1"} | "deb- weechat-headless" {= "2.3-1+deb10u1"})
+  ("deb-weechat-curses" {= "2.3-1+deb10u1"} | "deb-weechat-headless" {= "2.3-1+deb10u1"})
 ]
 extra-source "weechat-python_2.3-1+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/weechat/weechat-python_2.3-1+deb10u1_amd64.deb"

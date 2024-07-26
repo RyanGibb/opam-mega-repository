@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.28"}
   "deb-libfuse2" {>= "2.8"}
   "deb-lsb-base" {>= "3.2-14"}
-  ("deb-osspd-pulseaudio" | "deb- osspd-backend")
+  ("deb-osspd-pulseaudio" | "deb-osspd-backend")
 ]
 conflicts: [
   "deb-oss-compat"

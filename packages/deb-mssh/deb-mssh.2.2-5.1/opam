@@ -12,7 +12,7 @@ depends: [
   "deb-libpango-1-0-0" {>= "1.14.0"}
   "deb-libvte-2-91-0" {>= "0.47.90"}
   "deb-openssh-client"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "mssh_2.2-5.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mssh/mssh_2.2-5.1_amd64.deb"

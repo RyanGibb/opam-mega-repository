@@ -44,8 +44,8 @@ depends: [
   "deb-qml-module-org-kde-kquickcontrolsaddons"
   "deb-qml-module-org-kde-qqc2desktopstyle"
   "deb-qml-module-qtquick-dialogs"
-  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb- libqt5gui5-gles" {>= "5.15.0~"})
-  ("deb-libqt5quick5" {>= "5.15.0~"} | "deb- libqt5quick5-gles" {>= "5.15.0~"})
+  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb-libqt5gui5-gles" {>= "5.15.0~"})
+  ("deb-libqt5quick5" {>= "5.15.0~"} | "deb-libqt5quick5-gles" {>= "5.15.0~"})
 ]
 extra-source "plasma-discover_5.20.5-3+deb11u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/plasma-discover/plasma-discover_5.20.5-3+deb11u2_amd64.deb"

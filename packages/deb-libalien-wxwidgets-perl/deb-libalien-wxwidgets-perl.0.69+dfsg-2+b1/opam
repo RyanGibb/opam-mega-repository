@@ -12,8 +12,8 @@ depends: [
   "deb-libwxgtk3-0-gtk3-dev" {>= "3.0.4+dfsg-4"}
   "deb-perl"
   "deb-perl-base"
-  ("deb-gcc" | "deb- c-compiler")
-  ("deb-libmodule-pluggable-perl" | "deb- perl" {< "5.17.9"})
+  ("deb-gcc" | "deb-c-compiler")
+  ("deb-libmodule-pluggable-perl" | "deb-perl" {< "5.17.9"})
 ]
 extra-source "libalien-wxwidgets-perl_0.69+dfsg-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/liba/libalien-wxwidgets-perl/libalien-wxwidgets-perl_0.69+dfsg-2+b1_amd64.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-jekyll" {< "5~"}
   "deb-jekyll" {>= "3.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-jekyll-optional-front-matter_0.3.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-jekyll-optional-front-matter/ruby-jekyll-optional-front-matter_0.3.2-1_all.deb"

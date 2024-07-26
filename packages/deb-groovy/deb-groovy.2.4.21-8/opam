@@ -19,7 +19,7 @@ depends: [
   "deb-libqdox-java"
   "deb-libservlet-api-java"
   "deb-libxstream-java"
-  ("deb-default-jre-headless" {>= "2-1.7"} | "deb- java7-runtime-headless")
+  ("deb-default-jre-headless" {>= "2-1.7"} | "deb-java7-runtime-headless")
 ]
 extra-source "groovy_2.4.21-8_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/groovy/groovy_2.4.21-8_all.deb"

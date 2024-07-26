@@ -11,7 +11,7 @@ depends: [
   "deb-libqt5organizer5" {>= "5.0~git20190618.8fec622c"}
   "deb-libqt5widgets5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "qtpim5-examples_5.0~git20190618.8fec622c+dfsg1-8+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtpim-opensource-src/qtpim5-examples_5.0~git20190618.8fec622c+dfsg1-8+b1_amd64.deb"

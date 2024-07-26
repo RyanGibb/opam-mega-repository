@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libgcrypt20" {= "1.8.4-5+deb10u1"}
   "deb-libgpg-error-dev"
-  ("deb-libc6-dev" | "deb- libc-dev")
+  ("deb-libc6-dev" | "deb-libc-dev")
 ]
 conflicts: [
   "deb-libgcrypt-dev"

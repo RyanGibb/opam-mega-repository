@@ -30,8 +30,8 @@ depends: [
   "deb-libva2" {>= "1.7.3"}
   "deb-libvidstab1-1"
   "deb-libzmq5" {>= "3.2.3+dfsg"}
-  ("deb-ocl-icd-libopencl1" {>= "1.0"} | "deb- libopencl-1-2-1")
-  ("deb-ocl-icd-libopencl1" | "deb- libopencl1")
+  ("deb-ocl-icd-libopencl1" {>= "1.0"} | "deb-libopencl-1-2-1")
+  ("deb-ocl-icd-libopencl1" | "deb-libopencl1")
 ]
 conflicts: [
   "deb-libavfilter7"

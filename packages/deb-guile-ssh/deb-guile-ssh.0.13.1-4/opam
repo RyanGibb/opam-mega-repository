@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libguile-ssh13"
-  ("deb-guile-3-0" | "deb- guile-2-2")
+  ("deb-guile-3-0" | "deb-guile-2-2")
 ]
 extra-source "guile-ssh_0.13.1-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/guile-ssh/guile-ssh_0.13.1-4_amd64.deb"

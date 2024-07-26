@@ -17,7 +17,7 @@ depends: [
   "deb-libthrowable-perl" {>= "0.200003"}
   "deb-libtry-tiny-perl"
   "deb-perl" {>= "5.23.1"}
-  ("deb-libscalar-list-utils-perl" {>= "1-1.45"} | "deb- perl" {>= "5.25.1"})
+  ("deb-libscalar-list-utils-perl" {>= "1-1.45"} | "deb-perl" {>= "5.25.1"})
 ]
 extra-source "libemail-sender-perl_1.300031-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libe/libemail-sender-perl/libemail-sender-perl_1.300031-2_all.deb"

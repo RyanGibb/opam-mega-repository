@@ -10,7 +10,7 @@ depends: [
   "deb-php-common" {>= "1-7.0+33~"}
   "deb-php-gd"
   "deb-pslib1" {>= "0.4.0"}
-  ("deb-phpapi-20180731" | "deb- phpapi-20170718")
+  ("deb-phpapi-20180731" | "deb-phpapi-20170718")
 ]
 extra-source "php-ps_1.4.1-1+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/php-ps/php-ps_1.4.1-1+b2_amd64.deb"

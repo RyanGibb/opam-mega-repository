@@ -9,7 +9,7 @@ depends: [
   "deb-ruby-fog-core" {>= "2.1~"}
   "deb-ruby-fog-json" {>= "1.0"}
   "deb-ruby-ipaddress" {>= "0.8"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-fog-openstack_1.0.8-2.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-fog-openstack/ruby-fog-openstack_1.0.8-2.1_all.deb"

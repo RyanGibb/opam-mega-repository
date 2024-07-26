@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libjs-highlight-js"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-rails-assets-highlightjs_9.12.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-rails-assets-highlightjs/ruby-rails-assets-highlightjs_9.12.0-2_all.deb"

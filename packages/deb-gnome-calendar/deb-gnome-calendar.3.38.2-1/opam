@@ -23,7 +23,7 @@ depends: [
   "deb-libpango-1-0-0" {>= "1.22.0"}
   "deb-libpangocairo-1-0-0" {>= "1.14.0"}
   "deb-libsoup2-4-1" {>= "2.41.90"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-calendar_3.38.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-calendar/gnome-calendar_3.38.2-1_amd64.deb"

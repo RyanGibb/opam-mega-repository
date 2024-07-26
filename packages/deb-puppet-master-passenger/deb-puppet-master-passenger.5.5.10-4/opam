@@ -10,7 +10,7 @@ depends: [
   "deb-libapache2-mod-passenger"
   "deb-lsb-base"
   "deb-puppet" {= "5.5.10-4"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "puppet-master-passenger_5.5.10-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/puppet/puppet-master-passenger_5.5.10-4_all.deb"

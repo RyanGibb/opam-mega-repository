@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-colorator"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-colorator_1.1.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-colorator/ruby-colorator_1.1.0-1_all.deb"

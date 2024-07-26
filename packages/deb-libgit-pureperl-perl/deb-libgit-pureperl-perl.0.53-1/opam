@@ -15,7 +15,7 @@ depends: [
   "deb-libmoosex-strictconstructor-perl"
   "deb-libmoosex-types-path-class-perl"
   "deb-perl"
-  ("deb-libarchive-extract-perl" | "deb- perl" {< "5.17.0"})
+  ("deb-libarchive-extract-perl" | "deb-perl" {< "5.17.0"})
 ]
 extra-source "libgit-pureperl-perl_0.53-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libg/libgit-pureperl-perl/libgit-pureperl-perl_0.53-1_all.deb"

@@ -14,7 +14,7 @@ depends: [
   "deb-python-ipaddress"
   "deb-python-milter"
   "deb-python-nacl"
-  ("deb-python-dnspython" | "deb- python-dns")
+  ("deb-python-dnspython" | "deb-python-dns")
 ]
 extra-source "dkimpy-milter_1.0.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dkimpy-milter/dkimpy-milter_1.0.3-1_all.deb"

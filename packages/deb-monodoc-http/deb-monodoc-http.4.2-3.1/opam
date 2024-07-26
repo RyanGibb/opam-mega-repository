@@ -9,7 +9,7 @@ depends: [
   "deb-libjs-xmlextras"
   "deb-monodoc-base"
   "deb-monodoc-manual"
-  ("deb-mono-xsp4" | "deb- mono-apache-server4" | "deb- mono-fastcgi-server4")
+  ("deb-mono-xsp4" | "deb-mono-apache-server4" | "deb-mono-fastcgi-server4")
 ]
 extra-source "monodoc-http_4.2-3.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mono-tools/monodoc-http_4.2-3.1_all.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-omniauth-multipassword"
   "deb-ruby-timfel-krb5-auth" {>= "0.8"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-omniauth-kerberos_0.3.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-omniauth-kerberos/ruby-omniauth-kerberos_0.3.0-3_all.deb"

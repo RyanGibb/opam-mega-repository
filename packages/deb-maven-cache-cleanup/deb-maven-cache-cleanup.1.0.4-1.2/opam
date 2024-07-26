@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-java-wrappers"
-  ("deb-default-jre-headless" | "deb- java7-runtime-headless")
+  ("deb-default-jre-headless" | "deb-java7-runtime-headless")
 ]
 extra-source "maven-cache-cleanup_1.0.4-1.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/maven-cache-cleanup/maven-cache-cleanup_1.0.4-1.2_all.deb"

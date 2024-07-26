@@ -74,7 +74,7 @@ depends: [
   "deb-libsvm-dev"
   "deb-monteverdi" {= "6.6.1+dfsg-1+b1"}
   "deb-otb-testdriver" {= "6.6.1+dfsg-1+b1"}
-  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
+  ("deb-libgl1-mesa-dev" | "deb-libgl-dev")
 ]
 conflicts: [
   "deb-libotb3-dev"

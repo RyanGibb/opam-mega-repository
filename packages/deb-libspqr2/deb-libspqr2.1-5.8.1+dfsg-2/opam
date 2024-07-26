@@ -10,8 +10,8 @@ depends: [
   "deb-libcholmod3" {>= "1-4.5.2"}
   "deb-libgcc-s1" {>= "4.0"}
   "deb-libsuitesparseconfig5" {>= "1-5.0.0"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libspqr2_1:5.8.1+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/suitesparse/libspqr2_5.8.1+dfsg-2_amd64.deb"

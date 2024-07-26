@@ -16,9 +16,9 @@ depends: [
   "deb-libqt5widgets5" {>= "5.1.0"}
   "deb-librtaudio6" {>= "5.2.0~ds1"}
   "deb-libstdc++6" {>= "11"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
-  ("deb-libqt5quick5" {>= "5.15.1"} | "deb- libqt5quick5-gles" {>= "5.15.1"})
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5quick5" {>= "5.15.1"} | "deb-libqt5quick5-gles" {>= "5.15.1"})
 ]
 extra-source "jacktrip-gui_1.7.0+ds-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jacktrip/jacktrip-gui_1.7.0+ds-1_amd64.deb"

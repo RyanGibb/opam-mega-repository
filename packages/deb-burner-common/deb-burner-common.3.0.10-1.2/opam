@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r burner-common"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "burner-common_3.0.10-1.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kylin-burner/burner-common_3.0.10-1.2_all.deb"

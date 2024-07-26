@@ -97,11 +97,11 @@ depends: [
   "deb-perl-doc"
   "deb-rt4-clients" {= "4.4.6+dfsg-1.1+deb12u1"}
   "deb-ucf"
-  ("deb-dbconfig-common" | "deb- dbconfig-no-thanks")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-default-mta" | "deb- mail-transport-agent")
-  ("deb-rt4-db-sqlite" {= "4.4.6+dfsg-1.1+deb12u1"} | "deb- rt4-db-postgresql" {= "4.4.6+dfsg-1.1+deb12u1"} | "deb- rt4-db-mysql" {= "4.4.6+dfsg-1.1+deb12u1"})
-  ("deb-rt4-standalone" {= "4.4.6+dfsg-1.1+deb12u1"} | "deb- rt4-apache2" {= "4.4.6+dfsg-1.1+deb12u1"} | "deb- rt4-fcgi" {= "4.4.6+dfsg-1.1+deb12u1"})
+  ("deb-dbconfig-common" | "deb-dbconfig-no-thanks")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-default-mta" | "deb-mail-transport-agent")
+  ("deb-rt4-db-sqlite" {= "4.4.6+dfsg-1.1+deb12u1"} | "deb-rt4-db-postgresql" {= "4.4.6+dfsg-1.1+deb12u1"} | "deb-rt4-db-mysql" {= "4.4.6+dfsg-1.1+deb12u1"})
+  ("deb-rt4-standalone" {= "4.4.6+dfsg-1.1+deb12u1"} | "deb-rt4-apache2" {= "4.4.6+dfsg-1.1+deb12u1"} | "deb-rt4-fcgi" {= "4.4.6+dfsg-1.1+deb12u1"})
 ]
 conflicts: [
   "deb-rt4-extension-assettracker"

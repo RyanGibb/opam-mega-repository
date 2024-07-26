@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-dictionaries-common" {>= "0.20"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "wamerican-insane_2020.12.07-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/scowl/wamerican-insane_2020.12.07-2_all.deb"

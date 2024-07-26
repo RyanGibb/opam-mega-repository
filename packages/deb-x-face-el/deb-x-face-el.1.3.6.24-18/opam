@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-compface"
   "deb-emacsen-common" {>= "2.0.8"}
-  ("deb-emacs-nox" | "deb- emacs" | "deb- emacsen")
+  ("deb-emacs-nox" | "deb-emacs" | "deb-emacsen")
 ]
 extra-source "x-face-el_1.3.6.24-18_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/x-face-el/x-face-el_1.3.6.24-18_all.deb"

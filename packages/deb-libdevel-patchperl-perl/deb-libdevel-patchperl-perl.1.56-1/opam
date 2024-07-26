@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libfile-pushd-perl"
   "deb-perl"
-  ("deb-libmodule-pluggable-perl" | "deb- perl" {< "5.17.9"})
+  ("deb-libmodule-pluggable-perl" | "deb-perl" {< "5.17.9"})
 ]
 extra-source "libdevel-patchperl-perl_1.56-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libd/libdevel-patchperl-perl/libdevel-patchperl-perl_1.56-1_all.deb"

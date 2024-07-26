@@ -35,7 +35,7 @@ depends: [
   "deb-webext-privacy-badger"
   "deb-webext-ublock-origin-firefox"
   "deb-zip"
-  ("deb-firefox" | "deb- firefox-esr" | "deb- www-browser")
+  ("deb-firefox" | "deb-firefox-esr" | "deb-www-browser")
 ]
 extra-source "bfh-desktop_20211009-20_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/bfh-metapackages/bfh-desktop_20211009-20_amd64.deb"

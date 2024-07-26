@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r librust-yaml-rust-dev"]
 ]
 depends: [
-  ("deb-librust-linked-hash-map-0-5+default-dev" | "deb- librust-linked-hash-map-0-4+default-dev" | "deb- librust-linked-hash-map-0-3+default-dev" | "deb- librust-linked-hash-map-0-2+default-dev" | "deb- librust-linked-hash-map-0-1+default-dev" | "deb- librust-linked-hash-map-0-0+default-dev" {>= "0.0.9~~"})
+  ("deb-librust-linked-hash-map-0-5+default-dev" | "deb-librust-linked-hash-map-0-4+default-dev" | "deb-librust-linked-hash-map-0-3+default-dev" | "deb-librust-linked-hash-map-0-2+default-dev" | "deb-librust-linked-hash-map-0-1+default-dev" | "deb-librust-linked-hash-map-0-0+default-dev" {>= "0.0.9~~"})
 ]
 extra-source "librust-yaml-rust-dev_0.4.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-yaml-rust/librust-yaml-rust-dev_0.4.2-1_amd64.deb"

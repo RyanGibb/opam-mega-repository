@@ -13,7 +13,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.14.1"}
   "deb-libsigc++-2-0-0v5" {>= "2.8.0"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb-libqt5gui5-gles" {>= "5.11.0~rc1"})
 ]
 extra-source "umps3_3.0.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/umps3/umps3_3.0.4-1_amd64.deb"

@@ -12,7 +12,7 @@ depends: [
   "deb-libkf5kiowidgets5" {>= "5.69.0"}
   "deb-libqt5core5a" {>= "5.15.1"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libqt5gui5" {>= "5.2.0"} | "deb- libqt5gui5-gles" {>= "5.2.0"})
+  ("deb-libqt5gui5" {>= "5.2.0"} | "deb-libqt5gui5-gles" {>= "5.2.0"})
 ]
 extra-source "pentobi-kde-thumbnailer_18.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pentobi/pentobi-kde-thumbnailer_18.3-1_amd64.deb"

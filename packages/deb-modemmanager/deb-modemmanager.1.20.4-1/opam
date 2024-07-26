@@ -17,7 +17,7 @@ depends: [
   "deb-libqmi-glib5" {>= "1.32.0"}
   "deb-libqmi-proxy"
   "deb-libqrtr-glib0" {>= "1.0.0"}
-  ("deb-polkitd" | "deb- policykit-1")
+  ("deb-polkitd" | "deb-policykit-1")
 ]
 extra-source "modemmanager_1.20.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/modemmanager/modemmanager_1.20.4-1_amd64.deb"

@@ -37,8 +37,8 @@ depends: [
   "deb-libwebkit2gtk-4-1-0" {>= "2.27.2"}
   "deb-libxml2" {>= "2.7.8"}
   "deb-libytnef0" {>= "1.9.3"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-gnome-keyring" | "deb- kwalletmanager")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-gnome-keyring" | "deb-kwalletmanager")
 ]
 extra-source "geary_43.0-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/geary/geary_43.0-1+b1_amd64.deb"

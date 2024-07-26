@@ -13,7 +13,7 @@ depends: [
   "deb-libgstreamer1-0-0" {>= "1.0.0"}
   "deb-libgtk-3-0" {>= "3.22.0"}
   "deb-libhandy-0-0-0" {>= "0.0.5"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-metronome_0.1.1-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-metronome/gnome-metronome_0.1.1-1+b1_amd64.deb"

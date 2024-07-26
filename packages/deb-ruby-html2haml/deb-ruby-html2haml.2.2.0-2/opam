@@ -11,7 +11,7 @@ depends: [
   "deb-ruby-nokogiri" {>= "1.6~"}
   "deb-ruby-ruby-parser" {>= "3.5~"}
   "deb-ruby-tilt"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-html2haml_2.2.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-html2haml/ruby-html2haml_2.2.0-2_all.deb"

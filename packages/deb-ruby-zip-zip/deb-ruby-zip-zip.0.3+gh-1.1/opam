@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-zip" {>= "1.0.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-zip-zip_0.3+gh-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-zip-zip/ruby-zip-zip_0.3+gh-1.1_all.deb"

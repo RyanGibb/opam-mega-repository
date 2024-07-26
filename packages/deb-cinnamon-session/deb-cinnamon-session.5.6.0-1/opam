@@ -26,8 +26,8 @@ depends: [
   "deb-libxrender1"
   "deb-libxtst6"
   "deb-upower"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus")
 ]
 extra-source "cinnamon-session_5.6.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cinnamon-session/cinnamon-session_5.6.0-1_amd64.deb"

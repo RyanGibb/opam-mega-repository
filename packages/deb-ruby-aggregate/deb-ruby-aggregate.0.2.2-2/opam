@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-aggregate"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-aggregate_0.2.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-aggregate/ruby-aggregate_0.2.2-2_all.deb"

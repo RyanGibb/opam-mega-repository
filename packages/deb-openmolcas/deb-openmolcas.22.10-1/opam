@@ -16,8 +16,8 @@ depends: [
   "deb-python3-lxml"
   "deb-python3-pyparsing"
   "deb-python3-six"
-  ("deb-libopenblas64-0" | "deb- libblas64-so-3")
-  ("deb-libopenblas64-0" | "deb- liblapack64-so-3")
+  ("deb-libopenblas64-0" | "deb-libblas64-so-3")
+  ("deb-libopenblas64-0" | "deb-liblapack64-so-3")
 ]
 extra-source "openmolcas_22.10-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/openmolcas/openmolcas_22.10-1_amd64.deb"

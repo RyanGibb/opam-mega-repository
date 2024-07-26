@@ -13,9 +13,9 @@ depends: [
   "deb-python3-dbus"
   "deb-python3-gi"
   "deb-python3-psutil" {>= "3.4"}
-  ("deb-lxpolkit" | "deb- lxqt-policykit" | "deb- mate-polkit" | "deb- policykit-1-gnome" | "deb- polkit-kde-agent-1" | "deb- polkit-1-auth-agent")
-  ("deb-pkexec" | "deb- policykit-1")
-  ("deb-systemd" | "deb- systemd-shim")
+  ("deb-lxpolkit" | "deb-lxqt-policykit" | "deb-mate-polkit" | "deb-policykit-1-gnome" | "deb-polkit-kde-agent-1" | "deb-polkit-1-auth-agent")
+  ("deb-pkexec" | "deb-policykit-1")
+  ("deb-systemd" | "deb-systemd-shim")
 ]
 conflicts: [
   "deb-timekpr-next-beta"

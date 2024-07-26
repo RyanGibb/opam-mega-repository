@@ -16,9 +16,9 @@ depends: [
   "deb-libreadline8" {>= "6.0"}
   "deb-libsamplerate0" {>= "0.1.7"}
   "deb-libstdc++6" {>= "12.2.0-10"}
-  ("deb-bochs-wx" | "deb- bochs-gui")
-  ("deb-bochsbios" {= "2.7+dfsg-4"} | "deb- seabios")
-  ("deb-vgabios" {>= "0.8~"} | "deb- seabios")
+  ("deb-bochs-wx" | "deb-bochs-gui")
+  ("deb-bochsbios" {= "2.7+dfsg-4"} | "deb-seabios")
+  ("deb-vgabios" {>= "0.8~"} | "deb-seabios")
 ]
 extra-source "bochs_2.7+dfsg-4+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/bochs/bochs_2.7+dfsg-4+b2_amd64.deb"

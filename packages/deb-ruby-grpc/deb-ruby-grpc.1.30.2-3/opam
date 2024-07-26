@@ -12,7 +12,7 @@ depends: [
   "deb-ruby-google-protobuf" {>= "3.9.1~"}
   "deb-ruby-googleapis-common-protos-types"
   "deb-ruby-googleauth" {>= "0.5.1~"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 conflicts: [
   "deb-ruby-grpc" {< "1.13.0~pre2~"}

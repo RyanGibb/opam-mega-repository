@@ -17,7 +17,7 @@ depends: [
   "deb-libsemver-java"
   "deb-libslf4j-java"
   "deb-libwala-java" {>= "1.5.1"}
-  ("deb-default-jre" | "deb- java11-runtime")
+  ("deb-default-jre" | "deb-java11-runtime")
 ]
 extra-source "libscout_2.3.2-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libs/libscout/libscout_2.3.2-3_all.deb"

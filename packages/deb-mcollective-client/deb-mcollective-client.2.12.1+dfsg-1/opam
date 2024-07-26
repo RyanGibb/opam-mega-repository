@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-mcollective-common" {>= "2.12.1+dfsg-1"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "mcollective-client_2.12.1+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mcollective/mcollective-client_2.12.1+dfsg-1_all.deb"

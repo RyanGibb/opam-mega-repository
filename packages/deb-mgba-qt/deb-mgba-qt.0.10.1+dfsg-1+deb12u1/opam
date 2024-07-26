@@ -18,7 +18,7 @@ depends: [
   "deb-libstdc++6" {>= "6"}
   "deb-libswscale6" {>= "7-5.0"}
   "deb-mgba-common" {= "0.10.1+dfsg-1+deb12u1"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "mgba-qt_0.10.1+dfsg-1+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mgba/mgba-qt_0.10.1+dfsg-1+deb12u1_amd64.deb"

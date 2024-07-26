@@ -10,7 +10,7 @@ depends: [
   "deb-libncursesw6" {>= "6"}
   "deb-libreadline8" {>= "6.0"}
   "deb-libtinfo6" {>= "6"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "abook_0.6.1-1+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/abook/abook_0.6.1-1+b3_amd64.deb"

@@ -10,7 +10,7 @@ depends: [
   "deb-python3-attr" {>= "21.3"}
   "deb-python3-cattr" {>= "22.2"}
   "deb-python3-fonttools"
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-statmake_0.6.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-statmake/python3-statmake_0.6.0-1_all.deb"

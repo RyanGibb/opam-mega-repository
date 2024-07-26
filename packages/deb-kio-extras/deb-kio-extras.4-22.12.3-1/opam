@@ -50,7 +50,7 @@ depends: [
   "deb-libtirpc3" {>= "1.0.2"}
   "deb-libxcursor1" {> "1.1.2"}
   "deb-phonon4qt5"
-  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb-libqt5gui5-gles" {>= "5.15.2~"})
 ]
 extra-source "kio-extras_4:22.12.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kio-extras/kio-extras_22.12.3-1_amd64.deb"

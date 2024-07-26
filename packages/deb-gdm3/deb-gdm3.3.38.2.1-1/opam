@@ -45,8 +45,8 @@ depends: [
   "deb-ucf"
   "deb-x11-common" {>= "1-7.6+11"}
   "deb-x11-xserver-utils"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-gnome-session" | "deb- x-session-manager" | "deb- x-window-manager" | "deb- x-terminal-emulator")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-gnome-session" | "deb-x-session-manager" | "deb-x-window-manager" | "deb-x-terminal-emulator")
 ]
 extra-source "gdm3_3.38.2.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gdm3/gdm3_3.38.2.1-1_amd64.deb"

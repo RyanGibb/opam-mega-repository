@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-ruby-mysql2" {>= "0.5.0~"}
-  ("deb-dbconfig-mysql" | "deb- dbconfig-no-thanks")
-  ("deb-default-mysql-client" | "deb- virtual-mysql-client")
+  ("deb-dbconfig-mysql" | "deb-dbconfig-no-thanks")
+  ("deb-default-mysql-client" | "deb-virtual-mysql-client")
 ]
 extra-source "redmine-mysql_5.0.4-5+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/redmine/redmine-mysql_5.0.4-5+deb12u1_all.deb"

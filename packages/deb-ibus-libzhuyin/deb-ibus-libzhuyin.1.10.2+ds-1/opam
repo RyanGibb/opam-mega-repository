@@ -15,7 +15,7 @@ depends: [
   "deb-libzhuyin15" {>= "2.7.92"}
   "deb-python3-any"
   "deb-python3-gi"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "ibus-libzhuyin_1.10.2+ds-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/ibus-libzhuyin/ibus-libzhuyin_1.10.2+ds-1_amd64.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-lua-torch-torch7"
-  ("deb-luajit" | "deb- lua5-1")
+  ("deb-luajit" | "deb-lua5-1")
 ]
 extra-source "lua-torch-graph_0~20161121-g37dac07-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lua-torch-graph/lua-torch-graph_0~20161121-g37dac07-3_all.deb"

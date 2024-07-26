@@ -12,7 +12,7 @@ depends: [
   "deb-python3-numba"
   "deb-python3-numpy"
   "deb-python3-scipy"
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-epimodels_0.4.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-epimodels/python3-epimodels_0.4.0-1_all.deb"

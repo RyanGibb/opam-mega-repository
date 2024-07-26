@@ -14,9 +14,9 @@ depends: [
   "deb-python3-platformdirs" {>= "2.4"}
   "deb-python3-setuptools-whl"
   "deb-python3-wheel-whl"
-  ("deb-python3-importlib-metadata" {>= "3.6"} | "deb- python3" {> "3.8"})
-  ("deb-python3-importlib-resources" | "deb- python3" {> "3.7"})
-  ("deb-python3-setuptools-whl" {>= "60"} | "deb- python3-distutils")
+  ("deb-python3-importlib-metadata" {>= "3.6"} | "deb-python3" {> "3.8"})
+  ("deb-python3-importlib-resources" | "deb-python3" {> "3.7"})
+  ("deb-python3-setuptools-whl" {>= "60"} | "deb-python3-distutils")
 ]
 extra-source "python3-virtualenv_20.17.1+ds-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-virtualenv/python3-virtualenv_20.17.1+ds-1_all.deb"

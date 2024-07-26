@@ -12,7 +12,7 @@ depends: [
   "deb-python3-incremental"
   "deb-python3-jinja2"
   "deb-python3-pkg-resources"
-  ("deb-python3-tomli" | "deb- python3" {> "3.11"})
+  ("deb-python3-tomli" | "deb-python3" {> "3.11"})
 ]
 extra-source "towncrier_22.12.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/towncrier/towncrier_22.12.0-1_all.deb"

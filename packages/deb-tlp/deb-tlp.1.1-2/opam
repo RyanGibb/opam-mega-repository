@@ -11,7 +11,7 @@ depends: [
   "deb-pciutils"
   "deb-rfkill"
   "deb-usbutils"
-  ("deb-iw" | "deb- wireless-tools")
+  ("deb-iw" | "deb-wireless-tools")
 ]
 conflicts: [
   "deb-laptop-mode-tools"

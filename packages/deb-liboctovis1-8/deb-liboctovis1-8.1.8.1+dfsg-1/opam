@@ -11,8 +11,8 @@ depends: [
   "deb-liboctomap1-8" {= "1.8.1+dfsg-1"}
   "deb-libqglviewer2-qt4"
   "deb-libstdc++6" {>= "5"}
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "liboctovis1.8_1.8.1+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/octomap/liboctovis1.8_1.8.1+dfsg-1_amd64.deb"

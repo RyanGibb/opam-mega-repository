@@ -9,7 +9,7 @@ depends: [
   "deb-ruby-fast-gettext" {>= "1.1.0"}
   "deb-ruby-gettext" {>= "3.0.2"}
   "deb-ruby-locale"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-gettext-setup_0.30-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-gettext-setup/ruby-gettext-setup_0.30-2_all.deb"

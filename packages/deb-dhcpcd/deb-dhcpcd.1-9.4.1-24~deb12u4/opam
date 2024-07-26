@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-dhcpcd-base"
-  ("deb-sysvinit-utils" {>= "3.05-4~"} | "deb- lsb-base" {>= "3.0-6"})
+  ("deb-sysvinit-utils" {>= "3.05-4~"} | "deb-lsb-base" {>= "3.0-6"})
 ]
 extra-source "dhcpcd_1:9.4.1-24~deb12u4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dhcpcd5/dhcpcd_9.4.1-24~deb12u4_all.deb"

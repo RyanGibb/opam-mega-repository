@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r cheese-common"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "cheese-common_3.31.90-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cheese/cheese-common_3.31.90-1_all.deb"

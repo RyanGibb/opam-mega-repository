@@ -15,7 +15,7 @@ depends: [
   "deb-libglib2-0-0" {>= "2.16.0"}
   "deb-libgtk2-0-0" {>= "2.24.0"}
   "deb-libstdc++6" {>= "11"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 conflicts: [
   "deb-calf-ladspa"

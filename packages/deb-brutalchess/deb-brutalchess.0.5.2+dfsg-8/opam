@@ -21,7 +21,7 @@ depends: [
   "deb-libxi6"
   "deb-libxmu6"
   "deb-libxt6"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "brutalchess_0.5.2+dfsg-8_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/brutalchess/brutalchess_0.5.2+dfsg-8_amd64.deb"

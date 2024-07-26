@@ -23,7 +23,7 @@ depends: [
   "deb-ruby-atk" {>= "3.4.3-2"}
   "deb-ruby-gdk3" {>= "3.4.3-2"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-gtk3_3.4.3-2+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-gnome/ruby-gtk3_3.4.3-2+b2_amd64.deb"

@@ -32,7 +32,7 @@ depends: [
   "deb-python3" {< "3.12"}
   "deb-python3" {>= "3.11~"}
   "deb-python3-any"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "hugin-tools_2022.0.0+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/hugin/hugin-tools_2022.0.0+dfsg-2_amd64.deb"

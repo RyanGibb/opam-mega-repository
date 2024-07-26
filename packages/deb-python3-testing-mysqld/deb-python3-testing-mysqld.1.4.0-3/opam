@@ -9,7 +9,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-pymysql"
   "deb-python3-testing-common-database" {>= "1.1.0"}
-  ("deb-default-mysql-server" {>= "1.0.2"} | "deb- virtual-mysql-server")
+  ("deb-default-mysql-server" {>= "1.0.2"} | "deb-virtual-mysql-server")
 ]
 extra-source "python3-testing.mysqld_1.4.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-testing.mysqld/python3-testing.mysqld_1.4.0-3_all.deb"

@@ -10,7 +10,7 @@ depends: [
   "deb-ruby-faraday" {>= "0.9"}
   "deb-ruby-jwt" {>= "1.5"}
   "deb-ruby-multi-json" {>= "1.10"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-signet_0.7.3-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-signet/ruby-signet_0.7.3-2_all.deb"

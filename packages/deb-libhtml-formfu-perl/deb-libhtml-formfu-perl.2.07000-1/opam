@@ -33,7 +33,7 @@ depends: [
   "deb-libyaml-libyaml-perl"
   "deb-perl"
   "deb-perl-base"
-  ("deb-libcgi-pm-perl" | "deb- perl" {< "5.19"})
+  ("deb-libcgi-pm-perl" | "deb-perl" {< "5.19"})
 ]
 extra-source "libhtml-formfu-perl_2.07000-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libh/libhtml-formfu-perl/libhtml-formfu-perl_2.07000-1_all.deb"

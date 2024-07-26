@@ -9,7 +9,7 @@ depends: [
   "deb-corosync" {>= "2.0.0"}
   "deb-perl"
   "deb-resource-agents"
-  ("deb-pacemaker" {>= "1.1.13"} | "deb- pacemaker-remote" {>= "1.1.13"})
+  ("deb-pacemaker" {>= "1.1.13"} | "deb-pacemaker-remote" {>= "1.1.13"})
 ]
 extra-source "resource-agents-paf_2.2.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/resource-agents-paf/resource-agents-paf_2.2.1-1_all.deb"

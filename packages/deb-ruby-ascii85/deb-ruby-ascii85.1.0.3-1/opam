@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-ascii85"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-ascii85_1.0.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-ascii85/ruby-ascii85_1.0.3-1_all.deb"

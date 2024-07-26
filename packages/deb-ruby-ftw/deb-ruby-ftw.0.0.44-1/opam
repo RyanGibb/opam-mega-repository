@@ -10,7 +10,7 @@ depends: [
   "deb-ruby-backports"
   "deb-ruby-cabin"
   "deb-ruby-http-parser-rb"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-ftw_0.0.44-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-ftw/ruby-ftw_0.0.44-1_all.deb"

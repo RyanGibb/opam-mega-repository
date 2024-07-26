@@ -9,7 +9,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-numpy"
   "deb-python3-numpy" {>= "1-1.22.0"}
-  ("deb-python3-dolfinx-real" | "deb- python3-dolfinx-complex")
+  ("deb-python3-dolfinx-real" | "deb-python3-dolfinx-complex")
 ]
 extra-source "python3-dolfinx_1:0.5.2-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fenics-dolfinx/python3-dolfinx_0.5.2-2+b1_amd64.deb"

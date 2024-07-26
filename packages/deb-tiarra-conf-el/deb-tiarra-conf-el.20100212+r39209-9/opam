@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-emacsen-common" {>= "2.0.8"}
-  ("deb-emacs" | "deb- emacsen")
+  ("deb-emacs" | "deb-emacsen")
 ]
 extra-source "tiarra-conf-el_20100212+r39209-9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tiarra/tiarra-conf-el_20100212+r39209-9_all.deb"

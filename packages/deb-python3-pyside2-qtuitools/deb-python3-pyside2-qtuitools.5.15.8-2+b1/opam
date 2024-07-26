@@ -19,7 +19,7 @@ depends: [
   "deb-python3-pyside2-qtgui"
   "deb-python3-pyside2-qtwidgets"
   "deb-python3-pyside2-qtxml"
-  ("deb-libqt5gui5" {>= "5.15"} | "deb- libqt5gui5-gles" {>= "5.15"})
+  ("deb-libqt5gui5" {>= "5.15"} | "deb-libqt5gui5-gles" {>= "5.15"})
 ]
 extra-source "python3-pyside2.qtuitools_5.15.8-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pyside2/python3-pyside2.qtuitools_5.15.8-2+b1_amd64.deb"

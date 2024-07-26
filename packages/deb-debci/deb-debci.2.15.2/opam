@@ -35,7 +35,7 @@ depends: [
   "deb-ruby-sqlite3"
   "deb-ruby-thor"
   "deb-sudo"
-  ("deb-netcat-openbsd" | "deb- netcat-traditional")
+  ("deb-netcat-openbsd" | "deb-netcat-traditional")
 ]
 extra-source "debci_2.15.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/debci/debci_2.15.2_all.deb"

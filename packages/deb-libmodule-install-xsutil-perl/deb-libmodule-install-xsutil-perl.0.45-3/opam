@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libmodule-install-perl"
   "deb-perl-any"
-  ("deb-perl" | "deb- libextutils-parsexs-perl" {>= "3.180000"})
+  ("deb-perl" | "deb-libextutils-parsexs-perl" {>= "3.180000"})
 ]
 extra-source "libmodule-install-xsutil-perl_0.45-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libm/libmodule-install-xsutil-perl/libmodule-install-xsutil-perl_0.45-3_all.deb"

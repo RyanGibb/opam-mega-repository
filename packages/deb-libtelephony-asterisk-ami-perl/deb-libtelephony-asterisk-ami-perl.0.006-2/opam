@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl"
-  ("deb-perl" {>= "5.19.8"} | "deb- libio-socket-ip-perl" {>= "0.26"})
+  ("deb-perl" {>= "5.19.8"} | "deb-libio-socket-ip-perl" {>= "0.26"})
 ]
 extra-source "libtelephony-asterisk-ami-perl_0.006-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libt/libtelephony-asterisk-ami-perl/libtelephony-asterisk-ami-perl_0.006-2_all.deb"

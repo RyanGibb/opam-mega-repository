@@ -15,7 +15,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.14.1"}
   "deb-libstdc++6" {>= "11"}
   "deb-libtiled1" {>= "1.8.2-1"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "tiled_1.8.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tiled-qt/tiled_1.8.2-1_amd64.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-fission"
   "deb-ruby-fog-core"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-fog-vmfusion_0.1.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-fog-vmfusion/ruby-fog-vmfusion_0.1.0-2_all.deb"

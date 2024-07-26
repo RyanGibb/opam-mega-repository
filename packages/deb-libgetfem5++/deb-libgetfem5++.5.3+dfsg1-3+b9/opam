@@ -12,7 +12,7 @@ depends: [
   "deb-libqhull8-0" {>= "2020.1"}
   "deb-libstdc++6" {>= "9"}
   "deb-libsuperlu5" {>= "5.2.2+dfsg1"}
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "libgetfem5++_5.3+dfsg1-3+b9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/getfem++/libgetfem5++_5.3+dfsg1-3+b9_amd64.deb"

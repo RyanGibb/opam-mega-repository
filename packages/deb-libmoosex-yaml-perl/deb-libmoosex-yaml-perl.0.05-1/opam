@@ -10,7 +10,7 @@ depends: [
   "deb-libnamespace-clean-perl"
   "deb-libsub-exporter-perl"
   "deb-perl-any"
-  ("deb-libyaml-libyaml-perl" | "deb- libyaml-perl" | "deb- libyaml-syck-perl")
+  ("deb-libyaml-libyaml-perl" | "deb-libyaml-perl" | "deb-libyaml-syck-perl")
 ]
 extra-source "libmoosex-yaml-perl_0.05-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libm/libmoosex-yaml-perl/libmoosex-yaml-perl_0.05-1_all.deb"

@@ -13,8 +13,8 @@ depends: [
   "deb-libgomp1" {>= "4.9"}
   "deb-libquadmath0" {>= "4.6"}
   "deb-libspooles2-2"
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "calculix-ccx_2.11-1+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/calculix-ccx/calculix-ccx_2.11-1+b3_amd64.deb"

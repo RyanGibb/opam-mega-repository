@@ -10,7 +10,7 @@ depends: [
   "deb-libodc-0d" {= "1.4.6-2"}
   "deb-mpi-default-dev"
   "deb-odc" {= "1.4.6-2"}
-  ("deb-gfortran-12" | "deb- gfortran-mod-15")
+  ("deb-gfortran-12" | "deb-gfortran-mod-15")
 ]
 conflicts: [
   "deb-libodb-dev"

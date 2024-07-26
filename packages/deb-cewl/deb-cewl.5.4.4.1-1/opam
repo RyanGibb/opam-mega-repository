@@ -13,7 +13,7 @@ depends: [
   "deb-ruby-nokogiri"
   "deb-ruby-spider"
   "deb-ruby-zip"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "cewl_5.4.4.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cewl/cewl_5.4.4.1-1_all.deb"

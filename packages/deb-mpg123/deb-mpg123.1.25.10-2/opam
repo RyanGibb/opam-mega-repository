@@ -14,7 +14,7 @@ depends: [
   "deb-libout123-0" {>= "1.23.8"}
   "deb-libportaudio2" {>= "19+svn20101113"}
   "deb-libpulse0" {>= "0.99.1"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "mpg123_1.25.10-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mpg123/mpg123_1.25.10-2_amd64.deb"

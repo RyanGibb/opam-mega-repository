@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r python3-slepc4py"]
 ]
 depends: [
-  ("deb-python3-slepc4py-real" | "deb- python3-slepc4py-complex")
+  ("deb-python3-slepc4py-real" | "deb-python3-slepc4py-complex")
 ]
 extra-source "python3-slepc4py_3.10.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/slepc4py/python3-slepc4py_3.10.0-2_all.deb"

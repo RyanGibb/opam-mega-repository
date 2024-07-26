@@ -14,7 +14,7 @@ depends: [
   "deb-python3-pastescript"
   "deb-python3-q-text-as-data"
   "deb-uwsgi-plugin-python3"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "cloudkitty-api_13.0.0-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cloudkitty/cloudkitty-api_13.0.0-6_all.deb"

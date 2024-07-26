@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r gnuplot"]
 ]
 depends: [
-  ("deb-gnuplot-qt" | "deb- gnuplot-x11" | "deb- gnuplot-nox")
+  ("deb-gnuplot-qt" | "deb-gnuplot-x11" | "deb-gnuplot-nox")
 ]
 extra-source "gnuplot_5.4.1+dfsg1-1+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnuplot/gnuplot_5.4.1+dfsg1-1+deb11u1_all.deb"

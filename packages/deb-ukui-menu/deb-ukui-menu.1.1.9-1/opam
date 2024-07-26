@@ -26,7 +26,7 @@ depends: [
   "deb-python3-xlib"
   "deb-ukui-menus"
   "deb-xdg-utils"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "ukui-menu_1.1.9-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/ukui-menu/ukui-menu_1.1.9-1_all.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libcdio-dev" {= "2.0.0-2"}
   "deb-libiso9660-11" {= "2.0.0-2"}
-  ("deb-libc6-dev" | "deb- libc-dev")
+  ("deb-libc6-dev" | "deb-libc-dev")
 ]
 extra-source "libiso9660-dev_2.0.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libc/libcdio/libiso9660-dev_2.0.0-2_amd64.deb"

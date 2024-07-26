@@ -41,7 +41,7 @@ depends: [
   "deb-libwant-perl"
   "deb-libyaml-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.17.2"} | "deb- libautodie-perl" {>= "2.12"})
+  ("deb-perl" {>= "5.17.2"} | "deb-libautodie-perl" {>= "2.12"})
 ]
 extra-source "libperl5i-perl_2.13.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libp/libperl5i-perl/libperl5i-perl_2.13.2-1_amd64.deb"

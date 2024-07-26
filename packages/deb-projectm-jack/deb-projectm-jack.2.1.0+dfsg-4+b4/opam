@@ -17,8 +17,8 @@ depends: [
   "deb-libqtcore4" {>= "4-4.5.3"}
   "deb-libqtgui4" {>= "4-4.5.3"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libglu1-mesa" | "deb-libglu1")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "projectm-jack_2.1.0+dfsg-4+b4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/projectm/projectm-jack_2.1.0+dfsg-4+b4_amd64.deb"

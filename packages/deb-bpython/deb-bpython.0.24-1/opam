@@ -15,7 +15,7 @@ depends: [
   "deb-python3-pygments"
   "deb-python3-requests"
   "deb-python3-xdg"
-  ("deb-python3-typing-extensions" | "deb- python3" {> "3.8"})
+  ("deb-python3-typing-extensions" | "deb-python3" {> "3.8"})
 ]
 extra-source "bpython_0.24-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/bpython/bpython_0.24-1_all.deb"

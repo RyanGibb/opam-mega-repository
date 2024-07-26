@@ -16,7 +16,7 @@ depends: [
   "deb-python3-pyotp"
   "deb-python3-pyzbar"
   "deb-python3-yoyo"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-authenticator_3.32.2+dfsg1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-authenticator/gnome-authenticator_3.32.2+dfsg1-2_all.deb"

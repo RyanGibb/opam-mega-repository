@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-python-any" {>= "2.7.5-5~"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "ntlmaps_0.9.9.0.1-11.5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/ntlmaps/ntlmaps_0.9.9.0.1-11.5_all.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-forwardable-extended" {>= "2.6"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-pathutil_0.16.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-pathutil/ruby-pathutil_0.16.1-1_all.deb"

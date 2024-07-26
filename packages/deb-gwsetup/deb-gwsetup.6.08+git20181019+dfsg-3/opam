@@ -9,7 +9,7 @@ depends: [
   "deb-geneweb"
   "deb-libc6" {>= "2.29"}
   "deb-lsb-base" {>= "3.0-6"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "gwsetup_6.08+git20181019+dfsg-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/geneweb/gwsetup_6.08+git20181019+dfsg-3_amd64.deb"

@@ -19,7 +19,7 @@ depends: [
   "deb-libpangocairo-1-0-0" {>= "1.14.0"}
   "deb-libpangoft2-1-0-0" {>= "1.14.0"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
 ]
 extra-source "alsaplayer-gtk_0.99.81-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/alsaplayer/alsaplayer-gtk_0.99.81-2_amd64.deb"

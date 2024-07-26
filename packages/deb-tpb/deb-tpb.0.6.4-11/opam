@@ -14,7 +14,7 @@ depends: [
   "deb-libxext6"
   "deb-libxinerama1"
   "deb-libxosd2" {>= "2.2.14"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "tpb_0.6.4-11_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tpb/tpb_0.6.4-11_amd64.deb"

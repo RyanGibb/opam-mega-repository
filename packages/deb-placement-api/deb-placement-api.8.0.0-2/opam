@@ -15,7 +15,7 @@ depends: [
   "deb-python3-q-text-as-data"
   "deb-sysvinit-utils"
   "deb-uwsgi-plugin-python3"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "placement-api_8.0.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/placement/placement-api_8.0.0-2_all.deb"

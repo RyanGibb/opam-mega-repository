@@ -19,9 +19,9 @@ depends: [
   "deb-mate-settings-daemon" {>= "1.26"}
   "deb-mate-terminal" {>= "1.26"}
   "deb-mate-themes" {>= "3.22.23"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-fonts-cantarell" | "deb- fonts-ubuntu")
-  ("deb-mate-notification-daemon" {>= "1.26"} | "deb- notification-daemon")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-fonts-cantarell" | "deb-fonts-ubuntu")
+  ("deb-mate-notification-daemon" {>= "1.26"} | "deb-notification-daemon")
 ]
 conflicts: [
   "deb-caja-gksu"

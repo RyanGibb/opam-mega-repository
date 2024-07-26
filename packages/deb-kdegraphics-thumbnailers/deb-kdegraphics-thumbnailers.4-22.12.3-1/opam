@@ -15,7 +15,7 @@ depends: [
   "deb-libqmobipocket2" {>= "4-16.12.0"}
   "deb-libqt5core5a" {>= "5.15.2~"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb-libqt5gui5-gles" {>= "5.15.2~"})
 ]
 extra-source "kdegraphics-thumbnailers_4:22.12.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kdegraphics-thumbnailers/kdegraphics-thumbnailers_22.12.3-1_amd64.deb"

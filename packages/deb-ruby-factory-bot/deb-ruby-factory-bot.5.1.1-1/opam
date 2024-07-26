@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-activesupport"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-factory-bot_5.1.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-factory-bot/ruby-factory-bot_5.1.1-1_all.deb"

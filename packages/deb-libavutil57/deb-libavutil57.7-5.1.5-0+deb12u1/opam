@@ -14,8 +14,8 @@ depends: [
   "deb-libva2" {>= "2.1.0"}
   "deb-libvdpau1" {>= "0.2"}
   "deb-libx11-6"
-  ("deb-ocl-icd-libopencl1" {>= "1.0"} | "deb- libopencl-1-2-1")
-  ("deb-ocl-icd-libopencl1" | "deb- libopencl1")
+  ("deb-ocl-icd-libopencl1" {>= "1.0"} | "deb-libopencl-1-2-1")
+  ("deb-ocl-icd-libopencl1" | "deb-libopencl1")
 ]
 extra-source "libavutil57_7:5.1.5-0+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/ffmpeg/libavutil57_5.1.5-0+deb12u1_amd64.deb"

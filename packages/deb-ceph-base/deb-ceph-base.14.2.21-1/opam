@@ -24,8 +24,8 @@ depends: [
   "deb-uuid-runtime"
   "deb-xfsprogs"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-cryptsetup-bin" | "deb- cryptsetup")
-  ("deb-hdparm" | "deb- sdparm")
+  ("deb-cryptsetup-bin" | "deb-cryptsetup")
+  ("deb-hdparm" | "deb-sdparm")
 ]
 extra-source "ceph-base_14.2.21-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/ceph/ceph-base_14.2.21-1_amd64.deb"

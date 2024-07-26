@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r libownet-php"]
 ]
 depends: [
-  ("deb-php" | "deb- php-cli")
+  ("deb-php" | "deb-php-cli")
 ]
 extra-source "libownet-php_3.2p4+dfsg1-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/owfs/libownet-php_3.2p4+dfsg1-4_all.deb"

@@ -17,8 +17,8 @@ depends: [
   "deb-librust-syn-1+extra-traits-dev"
   "deb-librust-syn-1+fold-dev"
   "deb-librust-syn-1+full-dev"
-  ("deb-librust-phf-0-10+default-dev" | "deb- librust-phf-0-9+default-dev" | "deb- librust-phf-0-8+default-dev")
-  ("deb-librust-phf-0-10+macros-dev" | "deb- librust-phf-0-9+macros-dev" | "deb- librust-phf-0-8+macros-dev")
+  ("deb-librust-phf-0-10+default-dev" | "deb-librust-phf-0-9+default-dev" | "deb-librust-phf-0-8+default-dev")
+  ("deb-librust-phf-0-10+macros-dev" | "deb-librust-phf-0-9+macros-dev" | "deb-librust-phf-0-8+macros-dev")
 ]
 extra-source "librust-cssparser-dev_0.29.6-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-cssparser/librust-cssparser-dev_0.29.6-3_amd64.deb"

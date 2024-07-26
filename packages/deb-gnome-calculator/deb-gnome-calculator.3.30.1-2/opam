@@ -15,7 +15,7 @@ depends: [
   "deb-libmpfr6" {>= "3.1.3"}
   "deb-libsoup2-4-1" {>= "2.42"}
   "deb-libxml2" {>= "2.7.4"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-calculator_3.30.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-calculator/gnome-calculator_3.30.1-2_amd64.deb"

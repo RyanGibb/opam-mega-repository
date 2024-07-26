@@ -10,7 +10,7 @@ depends: [
   "deb-libklu1" {>= "1-4.5.2"}
   "deb-libsundials-nvecserial4" {>= "4.1.0"}
   "deb-libsundials-sunmatrix2" {>= "4.1.0"}
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libsundials-sunlinsol2_4.1.0+dfsg-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sundials/libsundials-sunlinsol2_4.1.0+dfsg-4_amd64.deb"

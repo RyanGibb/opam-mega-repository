@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-svg-graph"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-svg-graph_1.0.5-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-svg-graph/ruby-svg-graph_1.0.5-3_all.deb"

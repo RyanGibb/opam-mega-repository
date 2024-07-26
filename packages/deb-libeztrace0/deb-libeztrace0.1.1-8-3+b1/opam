@@ -16,7 +16,7 @@ depends: [
   "deb-libpapi5-7"
   "deb-libquadmath0" {>= "4.6"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libstarpu-1-2-5" {>= "1.2.5+dfsg~"} | "deb- libstarpu-any-1-2-5")
+  ("deb-libstarpu-1-2-5" {>= "1.2.5+dfsg~"} | "deb-libstarpu-any-1-2-5")
 ]
 extra-source "libeztrace0_1.1-8-3+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/eztrace/libeztrace0_1.1-8-3+b1_amd64.deb"

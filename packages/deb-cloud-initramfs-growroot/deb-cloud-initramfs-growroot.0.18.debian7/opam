@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-cloud-utils" {>= "0.26-2~"}
   "deb-initramfs-tools"
-  ("deb-fdisk" | "deb- util-linux" {< "2.29.2-3~"})
+  ("deb-fdisk" | "deb-util-linux" {< "2.29.2-3~"})
 ]
 extra-source "cloud-initramfs-growroot_0.18.debian7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cloud-initramfs-tools/cloud-initramfs-growroot_0.18.debian7_all.deb"

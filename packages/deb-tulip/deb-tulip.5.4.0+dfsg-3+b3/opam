@@ -31,7 +31,7 @@ depends: [
   "deb-libtulip-python-5-4" {>= "5.4.0+dfsg"}
   "deb-python3"
   "deb-python3-sip"
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "tulip_5.4.0+dfsg-3+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tulip/tulip_5.4.0+dfsg-3+b3_amd64.deb"

@@ -15,7 +15,7 @@ depends: [
   "deb-libplib1" {>= "1.8.5"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-stormbaancoureur-data" {= "2.1.6-3.1"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "stormbaancoureur_2.1.6-3.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/stormbaancoureur/stormbaancoureur_2.1.6-3.1_amd64.deb"

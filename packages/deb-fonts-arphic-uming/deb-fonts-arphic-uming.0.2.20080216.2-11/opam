@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r fonts-arphic-uming"]
 ]
 depends: [
-  ("deb-debconf" | "deb- debconf-2-0")
+  ("deb-debconf" | "deb-debconf-2-0")
 ]
 conflicts: [
   "deb-fonts-arphic-uming-mbe"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-apache2"
   "deb-netdata-web" {>= "1.37.1-2"}
-  ("deb-netdata-core" {>= "1.37.1-2"} | "deb- netdata-core-no-sse" {>= "1.37.1-2"})
+  ("deb-netdata-core" {>= "1.37.1-2"} | "deb-netdata-core-no-sse" {>= "1.37.1-2"})
 ]
 extra-source "netdata-apache2_1.37.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/netdata/netdata-apache2_1.37.1-2_all.deb"

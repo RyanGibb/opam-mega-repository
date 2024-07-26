@@ -9,7 +9,7 @@ depends: [
   "deb-liblocale-gettext-perl"
   "deb-xkb-data" {< "2.35.1A"}
   "deb-xkb-data" {>= "2.35.1~"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "keyboard-configuration_1.221_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/console-setup/keyboard-configuration_1.221_all.deb"

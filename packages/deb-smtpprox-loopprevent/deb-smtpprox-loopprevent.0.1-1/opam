@@ -10,7 +10,7 @@ depends: [
   "deb-libmailtools-perl"
   "deb-lsb-base"
   "deb-perl"
-  ("deb-libmsdw-smtp-perl" | "deb- dkimproxy" {<= "1.4.1-3"})
+  ("deb-libmsdw-smtp-perl" | "deb-dkimproxy" {<= "1.4.1-3"})
 ]
 extra-source "smtpprox-loopprevent_0.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/smtpprox-loopprevent/smtpprox-loopprevent_0.1-1_all.deb"

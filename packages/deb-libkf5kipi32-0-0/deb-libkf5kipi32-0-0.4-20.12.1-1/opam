@@ -17,7 +17,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.12.2"}
   "deb-libqt5xml5" {>= "5.2.0~"}
   "deb-libstdc++6" {>= "4.1.1"}
-  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb-libqt5gui5-gles" {>= "5.7.0"})
 ]
 extra-source "libkf5kipi32.0.0_4:20.12.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libk/libkf5kipi/libkf5kipi32.0.0_20.12.1-1_amd64.deb"

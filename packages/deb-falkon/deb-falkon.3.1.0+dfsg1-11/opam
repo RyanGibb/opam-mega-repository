@@ -34,7 +34,7 @@ depends: [
   "deb-libstdc++6" {>= "5"}
   "deb-libxcb1"
   "deb-qml-module-qtwebengine"
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 conflicts: [
   "deb-qupzilla" {< "3.0.0~"}

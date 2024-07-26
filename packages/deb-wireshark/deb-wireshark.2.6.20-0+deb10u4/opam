@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r wireshark"]
 ]
 depends: [
-  ("deb-wireshark-qt" | "deb- wireshark-gtk")
+  ("deb-wireshark-qt" | "deb-wireshark-gtk")
 ]
 conflicts: [
   "deb-ethereal" {< "1.0.0-3"}

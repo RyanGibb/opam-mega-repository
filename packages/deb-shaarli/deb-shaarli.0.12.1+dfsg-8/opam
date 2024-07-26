@@ -34,7 +34,7 @@ depends: [
   "deb-php-pubsubhubbub-publisher"
   "deb-php-slim" {< "4~~"}
   "deb-php-slim" {>= "3.0"}
-  ("deb-libapache2-mod-php" | "deb- php-cgi" | "deb- php-fpm" | "deb- php")
+  ("deb-libapache2-mod-php" | "deb-php-cgi" | "deb-php-fpm" | "deb-php")
 ]
 extra-source "shaarli_0.12.1+dfsg-8_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/shaarli/shaarli_0.12.1+dfsg-8_all.deb"

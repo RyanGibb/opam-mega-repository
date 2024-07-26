@@ -10,7 +10,7 @@ depends: [
   "deb-libavformat58" {>= "7-4.0"}
   "deb-libc6" {>= "2.14"}
   "deb-libswresample3" {>= "7-4.0"}
-  ("deb-libavcodec58" {>= "7-4.0"} | "deb- libavcodec-extra58" {>= "7-4.0"})
+  ("deb-libavcodec58" {>= "7-4.0"} | "deb-libavcodec-extra58" {>= "7-4.0"})
 ]
 extra-source "cmus-plugin-ffmpeg_2.7.1+git20160225-2+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cmus/cmus-plugin-ffmpeg_2.7.1+git20160225-2+b2_amd64.deb"

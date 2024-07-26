@@ -33,10 +33,10 @@ depends: [
   "deb-libx11-6"
   "deb-libyaml-0-2"
   "deb-python3"
-  ("deb-gfortran-12" | "deb- gfortran-mod-15")
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
-  ("deb-ocl-icd-libopencl1" | "deb- libopencl1")
+  ("deb-gfortran-12" | "deb-gfortran-mod-15")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
+  ("deb-ocl-icd-libopencl1" | "deb-libopencl1")
 ]
 extra-source "libpetsc-real3.18-dbg_3.18.5+dfsg1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/petsc/libpetsc-real3.18-dbg_3.18.5+dfsg1-1_amd64.deb"

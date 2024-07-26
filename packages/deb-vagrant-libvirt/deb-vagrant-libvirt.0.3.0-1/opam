@@ -10,7 +10,7 @@ depends: [
   "deb-ruby-fog-libvirt" {>= "0.3.0"}
   "deb-ruby-nokogiri" {>= "1.6"}
   "deb-vagrant"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "vagrant-libvirt_0.3.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/vagrant-libvirt/vagrant-libvirt_0.3.0-1_all.deb"

@@ -10,7 +10,7 @@ depends: [
   "deb-ruby-bson"
   "deb-ruby-json"
   "deb-ruby-msgpack"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-rabl_0.13.1-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-rabl/ruby-rabl_0.13.1-1.1_all.deb"

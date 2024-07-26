@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r mate-calc-common"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "mate-calc-common_1.26.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mate-calc/mate-calc-common_1.26.0-1_all.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-dictionaries-common"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "wdutch_1:2.20.19-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dutch/wdutch_2.20.19-2_all.deb"

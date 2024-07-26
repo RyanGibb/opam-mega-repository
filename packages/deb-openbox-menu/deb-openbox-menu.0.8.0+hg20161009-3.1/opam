@@ -11,7 +11,7 @@ depends: [
   "deb-libgtk2-0-0" {>= "2.8.0"}
   "deb-libmenu-cache3" {>= "0.4.0"}
   "deb-openbox"
-  ("deb-lxmenu-data" | "deb- gnome-menus" | "deb- libgarcon-common")
+  ("deb-lxmenu-data" | "deb-gnome-menus" | "deb-libgarcon-common")
 ]
 extra-source "openbox-menu_0.8.0+hg20161009-3.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/openbox-menu/openbox-menu_0.8.0+hg20161009-3.1_amd64.deb"

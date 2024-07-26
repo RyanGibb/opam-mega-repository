@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-initramfs-tools"
   "deb-udev"
-  ("deb-busybox" | "deb- busybox-initramfs")
+  ("deb-busybox" | "deb-busybox-initramfs")
 ]
 conflicts: [
   "deb-live-boot-backend"

@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.34"}
   "deb-sysvinit-utils"
   "deb-tcl"
-  ("deb-acpi" | "deb- acpitool")
+  ("deb-acpi" | "deb-acpitool")
 ]
 extra-source "i8kutils_1.43+nmu1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/i8kutils/i8kutils_1.43+nmu1+b1_amd64.deb"

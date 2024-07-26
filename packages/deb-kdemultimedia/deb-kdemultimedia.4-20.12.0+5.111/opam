@@ -11,7 +11,7 @@ depends: [
   "deb-juk" {>= "4-20.12.0"}
   "deb-kde-config-cddb" {>= "4-20.12.0"}
   "deb-kio-audiocd" {>= "4-20.12.0"}
-  ("deb-plasma-pa" {>= "5.20.5"} | "deb- kmix" {>= "4-20.12.0"})
+  ("deb-plasma-pa" {>= "5.20.5"} | "deb-kmix" {>= "4-20.12.0"})
 ]
 extra-source "kdemultimedia_4:20.12.0+5.111_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/meta-kde/kdemultimedia_20.12.0+5.111_amd64.deb"

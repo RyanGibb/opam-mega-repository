@@ -26,7 +26,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.5.0"}
   "deb-libqt5x11extras5" {>= "5.6.0"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb-libqt5gui5-gles" {>= "5.7.0"})
 ]
 extra-source "libdmr0.1_5.10.8-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/deepin-movie-reborn/libdmr0.1_5.10.8-2_amd64.deb"

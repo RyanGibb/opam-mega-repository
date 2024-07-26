@@ -10,7 +10,7 @@ depends: [
   "deb-python3-paste"
   "deb-python3-pastedeploy-tpl" {= "3.0.1-5"}
   "deb-python3-pkg-resources"
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-pastedeploy_3.0.1-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pastedeploy/python3-pastedeploy_3.0.1-5_all.deb"

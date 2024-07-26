@@ -11,7 +11,7 @@ depends: [
   "deb-libsdl-image1-2" {>= "1.2.10"}
   "deb-libsdl-mixer1-2"
   "deb-libsdl1-2debian" {>= "1.2.11"}
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
 ]
 extra-source "gnujump_1.0.8-3+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnujump/gnujump_1.0.8-3+b1_amd64.deb"

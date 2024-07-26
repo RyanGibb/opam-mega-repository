@@ -9,7 +9,7 @@ depends: [
   "deb-autodep8" {>= "0.2~"}
   "deb-autopkgtest" {>= "5.5~"}
   "deb-debci" {= "2.0"}
-  ("deb-lxc" | "deb- schroot")
+  ("deb-lxc" | "deb-schroot")
 ]
 extra-source "debci-worker_2.0_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/debci/debci-worker_2.0_all.deb"

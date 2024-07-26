@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libjs-jquery"
   "deb-libjs-jquery-fullscreen"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-rails-assets-jquery-fullscreen_1.1.4~dfsg-2.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-rails-assets-jquery-fullscreen/ruby-rails-assets-jquery-fullscreen_1.1.4~dfsg-2.1_all.deb"

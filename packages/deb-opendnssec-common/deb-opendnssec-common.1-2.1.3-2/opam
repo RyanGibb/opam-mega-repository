@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-adduser"
   "deb-ucf"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 conflicts: [
   "deb-opendnssec-auditor" {< "1-1.4.0~"}

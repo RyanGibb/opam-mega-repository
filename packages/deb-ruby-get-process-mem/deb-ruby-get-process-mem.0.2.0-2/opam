@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-get-process-mem"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-get-process-mem_0.2.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-get-process-mem/ruby-get-process-mem_0.2.0-2_all.deb"

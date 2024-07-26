@@ -12,7 +12,7 @@ depends: [
   "deb-libgmp10"
   "deb-libpcre3"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "ganeti-haskell-2.16_2.16.0-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/ganeti/ganeti-haskell-2.16_2.16.0-5_amd64.deb"

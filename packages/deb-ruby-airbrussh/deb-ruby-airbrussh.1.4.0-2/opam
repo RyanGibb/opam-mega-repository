@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-sshkit" {>= "1.7.1"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-airbrussh_1.4.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-airbrussh/ruby-airbrussh_1.4.0-2_all.deb"

@@ -12,7 +12,7 @@ depends: [
   "deb-procps"
   "deb-ssl-cert" {>= "1.0.11"}
   "deb-ucf"
-  ("deb-debconf" {>= "0.5.00"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5.00"} | "deb-debconf-2-0")
 ]
 extra-source "postgresql-common_200+deb10u5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/postgresql-common/postgresql-common_200+deb10u5_all.deb"

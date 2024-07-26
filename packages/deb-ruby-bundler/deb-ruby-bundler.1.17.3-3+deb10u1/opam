@@ -10,7 +10,7 @@ depends: [
   "deb-ruby-net-http-persistent" {>= "2.7-1"}
   "deb-ruby-thor" {>= "0.19.4~"}
   "deb-rubygems-integration"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-bundler_1.17.3-3+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/bundler/ruby-bundler_1.17.3-3+deb10u1_all.deb"

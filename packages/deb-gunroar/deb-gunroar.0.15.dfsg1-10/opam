@@ -13,7 +13,7 @@ depends: [
   "deb-libgphobos3" {>= "12"}
   "deb-libsdl-mixer1-2" {>= "1.2.12"}
   "deb-libsdl1-2-compat-shim"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "gunroar_0.15.dfsg1-10_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gunroar/gunroar_0.15.dfsg1-10_amd64.deb"

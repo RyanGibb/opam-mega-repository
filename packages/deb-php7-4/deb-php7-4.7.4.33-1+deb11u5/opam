@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-php7-4-common"
-  ("deb-libapache2-mod-php7-4" | "deb- php7-4-fpm" | "deb- php7-4-cgi")
+  ("deb-libapache2-mod-php7-4" | "deb-php7-4-fpm" | "deb-php7-4-cgi")
 ]
 extra-source "php7.4_7.4.33-1+deb11u5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/php7.4/php7.4_7.4.33-1+deb11u5_all.deb"

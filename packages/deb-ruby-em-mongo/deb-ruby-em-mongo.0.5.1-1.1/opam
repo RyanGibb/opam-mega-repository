@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-bson"
   "deb-ruby-eventmachine"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-em-mongo_0.5.1-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-em-mongo/ruby-em-mongo_0.5.1-1.1_all.deb"

@@ -14,7 +14,7 @@ depends: [
   "deb-libtinyxml2-dev"
   "deb-libyaml-dev"
   "deb-libzip-dev"
-  ("deb-libcurl4-openssl-dev" | "deb- libcurl-dev")
+  ("deb-libcurl4-openssl-dev" | "deb-libcurl-dev")
 ]
 extra-source "libignition-fuel-tools-dev_7.0.0+ds-3+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/ignition-fuel-tools/libignition-fuel-tools-dev_7.0.0+ds-3+b1_amd64.deb"

@@ -23,7 +23,7 @@ depends: [
   "deb-sudo"
   "deb-u-boot-tools"
   "deb-xz-utils"
-  ("deb-binfmt-support" | "deb- systemd")
+  ("deb-binfmt-support" | "deb-systemd")
 ]
 extra-source "freedom-maker_0.32_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/freedom-maker/freedom-maker_0.32_all.deb"

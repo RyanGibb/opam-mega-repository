@@ -25,7 +25,7 @@ depends: [
   "deb-perl"
   "deb-ucf"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "tvtime_1.0.11-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tvtime/tvtime_1.0.11-5_amd64.deb"

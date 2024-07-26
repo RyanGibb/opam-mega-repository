@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-pd-libdir"
   "deb-pd-pddp"
-  ("deb-puredata-core" | "deb- pd")
+  ("deb-puredata-core" | "deb-pd")
 ]
 extra-source "pd-purepd_0.1.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pd-purepd/pd-purepd_0.1.1-2_all.deb"

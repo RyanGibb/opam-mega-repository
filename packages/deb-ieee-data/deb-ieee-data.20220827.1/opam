@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ieee-data"]
 ]
 depends: [
-  ("deb-wget" | "deb- libwww-perl" | "deb- curl")
+  ("deb-wget" | "deb-libwww-perl" | "deb-curl")
 ]
 extra-source "ieee-data_20220827.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/ieee-data/ieee-data_20220827.1_all.deb"

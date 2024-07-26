@@ -12,7 +12,7 @@ depends: [
   "deb-net-tools"
   "deb-perl-any"
   "deb-ucf" {>= "3.0040"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "rkhunter_1.4.6-11_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rkhunter/rkhunter_1.4.6-11_all.deb"

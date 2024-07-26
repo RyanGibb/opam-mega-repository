@@ -14,7 +14,7 @@ depends: [
   "deb-r-cran-mass"
   "deb-r-cran-robustbase"
   "deb-r-cran-rrcov"
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "r-cran-robust_0.7-1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-robust/r-cran-robust_0.7-1-1_amd64.deb"

@@ -9,7 +9,7 @@ depends: [
   "deb-python3-gi"
   "deb-python3-nautilus" {>= "1.1-2"}
   "deb-tortoisehg" {>= "5.6.1-1"}
-  ("deb-gnome-icon-theme-full" | "deb- gnome-icon-theme")
+  ("deb-gnome-icon-theme-full" | "deb-gnome-icon-theme")
 ]
 extra-source "tortoisehg-nautilus_5.6.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tortoisehg/tortoisehg-nautilus_5.6.1-1_all.deb"

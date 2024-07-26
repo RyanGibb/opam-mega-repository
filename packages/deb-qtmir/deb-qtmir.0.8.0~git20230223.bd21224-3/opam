@@ -16,7 +16,7 @@ depends: [
   "deb-libqt5dbus5" {>= "5.14.1"}
   "deb-libqtmirserver2" {>= "0.6.1"}
   "deb-libstdc++6" {>= "11"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "qtmir_0.8.0~git20230223.bd21224-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtmir/qtmir_0.8.0~git20230223.bd21224-3_amd64.deb"

@@ -13,7 +13,7 @@ depends: [
   "deb-libwrap0" {>= "7.6-4~"}
   "deb-lsb-base" {>= "3.2-13"}
   "deb-ucf" {>= "0.28"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "imapproxy_1.2.8~svn20171105-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/up-imapproxy/imapproxy_1.2.8~svn20171105-2_amd64.deb"

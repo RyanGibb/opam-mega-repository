@@ -13,7 +13,7 @@ depends: [
   "deb-libc6" {>= "2.14"}
   "deb-libkrb5-3" {>= "1.6.dfsg.2"}
   "deb-libldap-2-4-2" {>= "2.4.7"}
-  ("deb-libsasl2-modules-gssapi-mit" | "deb- libsasl2-modules-gssapi-heimdal")
+  ("deb-libsasl2-modules-gssapi-mit" | "deb-libsasl2-modules-gssapi-heimdal")
 ]
 extra-source "libapache2-mod-webauthldap_4.7.0-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/webauth/libapache2-mod-webauthldap_4.7.0-7_amd64.deb"

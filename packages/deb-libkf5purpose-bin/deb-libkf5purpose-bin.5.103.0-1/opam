@@ -27,7 +27,7 @@ depends: [
   "deb-qml-module-org-kde-kquickcontrolsaddons" {>= "5.70.0~"}
   "deb-qml-module-org-kde-prison"
   "deb-qml-module-qtquick-dialogs"
-  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb-libqt5gui5-gles" {>= "5.15.2~"})
 ]
 extra-source "libkf5purpose-bin_5.103.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/purpose/libkf5purpose-bin_5.103.0-1_amd64.deb"

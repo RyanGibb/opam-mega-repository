@@ -12,7 +12,7 @@ depends: [
   "deb-librust-encoding-rs-io-dev"
   "deb-librust-grep-matcher-dev"
   "deb-librust-log-dev"
-  ("deb-librust-memmap-0-7+default-dev" | "deb- librust-memmap-0-6+default-dev" {>= "0.6.2-~~"})
+  ("deb-librust-memmap-0-7+default-dev" | "deb-librust-memmap-0-6+default-dev" {>= "0.6.2-~~"})
 ]
 extra-source "librust-grep-searcher-dev_0.1.7-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-grep-searcher/librust-grep-searcher-dev_0.1.7-1_amd64.deb"

@@ -10,7 +10,7 @@ depends: [
   "deb-dhis-server"
   "deb-dhis-tools-genkeys"
   "deb-libc6" {>= "2.4"}
-  ("deb-bind9" | "deb- bind")
+  ("deb-bind9" | "deb-bind")
 ]
 extra-source "dhis-tools-dns_5.0-8+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dhis-tools-dns/dhis-tools-dns_5.0-8+b1_amd64.deb"

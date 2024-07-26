@@ -15,9 +15,9 @@ depends: [
   "deb-librrds-perl"
   "deb-perl" {>= "5.6.1"}
   "deb-rrdtool"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-ksh" | "deb- mksh" | "deb- pdksh" | "deb- zsh")
-  ("deb-libperl4-corelibs-perl" | "deb- perl" {< "5.12.3-7"})
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-ksh" | "deb-mksh" | "deb-pdksh" | "deb-zsh")
+  ("deb-libperl4-corelibs-perl" | "deb-perl" {< "5.12.3-7"})
 ]
 extra-source "flowscan_1.006-13.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/flowscan/flowscan_1.006-13.2_all.deb"

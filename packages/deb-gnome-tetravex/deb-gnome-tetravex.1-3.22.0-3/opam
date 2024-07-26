@@ -10,7 +10,7 @@ depends: [
   "deb-libcairo2" {>= "1.2.4"}
   "deb-libglib2-0-0" {>= "2.40.0"}
   "deb-libgtk-3-0" {>= "3.11.5"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-tetravex_1:3.22.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-tetravex/gnome-tetravex_3.22.0-3_amd64.deb"

@@ -29,7 +29,7 @@ depends: [
   "deb-libpangocairo-1-0-0" {>= "1.14.0"}
   "deb-tracker" {>= "1.99"}
   "deb-tracker-extract"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 conflicts: [
   "deb-libreoffice-gtk3" {<= "1-5.1.1-1"}

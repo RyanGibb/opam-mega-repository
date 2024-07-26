@@ -15,7 +15,7 @@ depends: [
   "deb-r-cran-ggplot2" {>= "2.1.0"}
   "deb-r-cran-gridextra"
   "deb-r-cran-plyr" {>= "1.8.0"}
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "r-cran-bayesfm_0.1.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-bayesfm/r-cran-bayesfm_0.1.4-1_amd64.deb"

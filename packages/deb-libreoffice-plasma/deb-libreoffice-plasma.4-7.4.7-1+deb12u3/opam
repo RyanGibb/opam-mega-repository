@@ -19,7 +19,7 @@ depends: [
   "deb-libuno-cppuhelpergcc3-3" {>= "1.4.0"}
   "deb-libuno-sal3" {>= "5.1.0~alpha"}
   "deb-uno-libs-private"
-  ("deb-libqt5gui5" {>= "5.6"} | "deb- libqt5gui5-gles" {>= "5.6"})
+  ("deb-libqt5gui5" {>= "5.6"} | "deb-libqt5gui5-gles" {>= "5.6"})
 ]
 extra-source "libreoffice-plasma_4:7.4.7-1+deb12u3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libr/libreoffice/libreoffice-plasma_7.4.7-1+deb12u3_amd64.deb"

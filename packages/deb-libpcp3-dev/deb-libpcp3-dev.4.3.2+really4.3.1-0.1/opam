@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libpcp3" {= "4.3.2+really4.3.1-0.1"}
-  ("deb-libc6-dev" | "deb- libc-dev")
+  ("deb-libc6-dev" | "deb-libc-dev")
 ]
 extra-source "libpcp3-dev_4.3.2+really4.3.1-0.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pcp/libpcp3-dev_4.3.2+really4.3.1-0.1_amd64.deb"

@@ -31,8 +31,8 @@ depends: [
   "deb-python-irc"
   "deb-python-mutagen"
   "deb-python2-7"
-  ("deb-libavcodec58" {>= "7-4.0"} | "deb- libavcodec-extra58" {>= "7-4.0"})
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libavcodec58" {>= "7-4.0"} | "deb-libavcodec-extra58" {>= "7-4.0"})
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "idjc_0.8.17-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/idjc/idjc_0.8.17-1+b1_amd64.deb"

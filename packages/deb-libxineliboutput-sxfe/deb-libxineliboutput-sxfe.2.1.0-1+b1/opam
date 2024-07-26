@@ -21,7 +21,7 @@ depends: [
   "deb-libxinerama1"
   "deb-libxrender1"
   "deb-vdr-plugin-xineliboutput" {= "2.1.0-1+b1"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "libxineliboutput-sxfe_2.1.0-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/vdr-plugin-xineliboutput/libxineliboutput-sxfe_2.1.0-1+b1_amd64.deb"

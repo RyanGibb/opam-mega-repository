@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl"
-  ("deb-gnuplot-qt" | "deb- gnuplot-x11" | "deb- gnuplot-nox")
+  ("deb-gnuplot-qt" | "deb-gnuplot-x11" | "deb-gnuplot-nox")
 ]
 extra-source "libalien-gnuplot-perl_1.033-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/liba/libalien-gnuplot-perl/libalien-gnuplot-perl_1.033-1_all.deb"

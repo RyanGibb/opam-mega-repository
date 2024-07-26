@@ -14,8 +14,8 @@ depends: [
   "deb-libsocket-perl"
   "deb-lsb-base"
   "deb-perl-any"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-mailutils" | "deb- mailx")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-mailutils" | "deb-mailx")
 ]
 conflicts: [
   "deb-fiaif"

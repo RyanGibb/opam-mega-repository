@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-ruby-version"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-ruby-version_1.0.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-ruby-version/ruby-ruby-version_1.0.1-2_all.deb"

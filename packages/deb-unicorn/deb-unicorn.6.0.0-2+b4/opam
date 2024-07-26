@@ -13,7 +13,7 @@ depends: [
   "deb-ruby-kgio"
   "deb-ruby-rack"
   "deb-ruby-raindrops"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "unicorn_6.0.0-2+b4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/unicorn/unicorn_6.0.0-2+b4_amd64.deb"

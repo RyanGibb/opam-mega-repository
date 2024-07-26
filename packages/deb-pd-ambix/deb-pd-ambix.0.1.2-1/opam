@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libambix0" {>= "0.1"}
   "deb-libc6" {>= "2.34"}
-  ("deb-puredata" | "deb- pd")
+  ("deb-puredata" | "deb-pd")
 ]
 extra-source "pd-ambix_0.1.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/liba/libambix/pd-ambix_0.1.2-1_amd64.deb"

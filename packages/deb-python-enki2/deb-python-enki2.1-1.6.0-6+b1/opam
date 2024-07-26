@@ -21,7 +21,7 @@ depends: [
   "deb-python" {>= "2.7~"}
   "deb-python-any" {< "2.8"}
   "deb-python-any" {>= "2.7~"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "python-enki2_1:1.6.0-6+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/enki-aseba/python-enki2_1.6.0-6+b1_amd64.deb"

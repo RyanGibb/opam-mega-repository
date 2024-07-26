@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-java-wrappers"
-  ("deb-default-jre" | "deb- java8-runtime")
+  ("deb-default-jre" | "deb-java8-runtime")
 ]
 extra-source "basex_9.0.1+ds-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/basex/basex_9.0.1+ds-1_all.deb"

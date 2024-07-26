@@ -9,7 +9,7 @@ depends: [
   "deb-ruby-activemodel" {>= "2-5.2.0"}
   "deb-ruby-activesupport" {>= "2-5.2.0"}
   "deb-ruby-builder" {>= "3.1"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-activemodel-serializers-xml_1.0.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-activemodel-serializers-xml/ruby-activemodel-serializers-xml_1.0.2-2_all.deb"

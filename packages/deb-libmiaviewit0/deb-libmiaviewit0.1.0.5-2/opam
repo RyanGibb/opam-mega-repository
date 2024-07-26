@@ -16,7 +16,7 @@ depends: [
   "deb-libsigc++-2-0-0v5" {>= "2.6.1"}
   "deb-libstdc++6" {>= "6"}
   "deb-libvistaio14" {>= "1.2.14"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "libmiaviewit0_1.0.5-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/miaviewit/libmiaviewit0_1.0.5-2_amd64.deb"

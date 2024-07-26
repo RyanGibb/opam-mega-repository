@@ -18,7 +18,7 @@ depends: [
   "deb-libsndfile1" {>= "1.0.20"}
   "deb-libx11-6"
   "deb-libxml2" {>= "2.7.4"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "libags-audio2_2.1.53-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gsequencer/libags-audio2_2.1.53-2_amd64.deb"

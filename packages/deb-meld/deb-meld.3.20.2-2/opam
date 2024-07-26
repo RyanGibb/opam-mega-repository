@@ -15,7 +15,7 @@ depends: [
   "deb-python3-cairo"
   "deb-python3-gi" {>= "3.20"}
   "deb-python3-gi-cairo"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "meld_3.20.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/meld/meld_3.20.2-2_all.deb"

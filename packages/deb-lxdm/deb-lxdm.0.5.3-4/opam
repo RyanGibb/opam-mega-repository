@@ -23,8 +23,8 @@ depends: [
   "deb-libx11-6"
   "deb-libxcb1"
   "deb-lsb-base"
-  ("deb-debconf" {>= "1.2.9"} | "deb- debconf-2-0")
-  ("deb-x11-utils" | "deb- xmessage")
+  ("deb-debconf" {>= "1.2.9"} | "deb-debconf-2-0")
+  ("deb-x11-utils" | "deb-xmessage")
 ]
 extra-source "lxdm_0.5.3-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lxdm/lxdm_0.5.3-4_amd64.deb"

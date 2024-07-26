@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r jed-extra"]
 ]
 depends: [
-  ("deb-jed" | "deb- xjed")
+  ("deb-jed" | "deb-xjed")
 ]
 extra-source "jed-extra_2.5.7-9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jed-extra/jed-extra_2.5.7-9_all.deb"

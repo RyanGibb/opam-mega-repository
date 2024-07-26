@@ -14,7 +14,7 @@ depends: [
   "deb-libgtkglext1"
   "deb-libpango-1-0-0" {>= "1.14.0"}
   "deb-libx11-6"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "gliv_1.9.7-2+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gliv/gliv_1.9.7-2+b3_amd64.deb"

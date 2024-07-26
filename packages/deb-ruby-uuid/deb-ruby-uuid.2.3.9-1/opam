@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-macaddr"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-uuid_2.3.9-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-uuid/ruby-uuid_2.3.9-1_all.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-python3-any"
   "deb-python3-colorama"
-  ("deb-python3-cached-property" | "deb- python3" {> "3.8"})
+  ("deb-python3-cached-property" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-griffe_0.25.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-griffe/python3-griffe_0.25.5-1_all.deb"

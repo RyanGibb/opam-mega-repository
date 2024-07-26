@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.4"}
   "deb-pd-libdir"
-  ("deb-puredata-core" | "deb- pd")
+  ("deb-puredata-core" | "deb-pd")
 ]
 extra-source "pd-ekext_0.1.1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pd-ekext/pd-ekext_0.1.1-3_amd64.deb"

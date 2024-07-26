@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libecj-java" {>= "3.16.0-1"}
-  ("deb-default-jre-headless" {>= "2-1.8"} | "deb- java8-runtime-headless")
+  ("deb-default-jre-headless" {>= "2-1.8"} | "deb-java8-runtime-headless")
 ]
 extra-source "ecj_3.16.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/ecj/ecj_3.16.0-1_all.deb"

@@ -29,7 +29,7 @@ depends: [
   "deb-libxrender1"
   "deb-libxtst6"
   "deb-libxxf86vm1"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "cairo-dock-xgamma-plug-in_3.4.1-4+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cairo-dock-plug-ins/cairo-dock-xgamma-plug-in_3.4.1-4+b1_amd64.deb"

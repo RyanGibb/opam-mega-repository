@@ -20,7 +20,7 @@ depends: [
   "deb-libpangoft2-1-0-0" {>= "1.14.0"}
   "deb-libsoup2-4-1" {>= "2.26.1"}
   "deb-libx11-6"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "libgrits5_0.8.1-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libg/libgrits/libgrits5_0.8.1-5_amd64.deb"

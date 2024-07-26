@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libgfarm1" {= "2.7.20+dfsg-1+b2"}
-  ("deb-pkgconf" | "deb- pkg-config")
+  ("deb-pkgconf" | "deb-pkg-config")
 ]
 conflicts: [
   "deb-libgfarm-dev"

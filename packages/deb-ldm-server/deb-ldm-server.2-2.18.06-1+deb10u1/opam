@@ -10,7 +10,7 @@ depends: [
   "deb-python3"
   "deb-update-inetd"
   "deb-x11-common"
-  ("deb-openbsd-inetd" | "deb- inet-superserver")
+  ("deb-openbsd-inetd" | "deb-inet-superserver")
 ]
 extra-source "ldm-server_2:2.18.06-1+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/ldm/ldm-server_2.18.06-1+deb10u1_all.deb"

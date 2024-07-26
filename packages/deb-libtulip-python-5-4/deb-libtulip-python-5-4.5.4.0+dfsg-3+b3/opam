@@ -14,7 +14,7 @@ depends: [
   "deb-libstdc++6" {>= "11"}
   "deb-libtulip-core-5-4" {>= "5.4.0+dfsg"}
   "deb-libtulip-gui-5-4" {>= "5.4.0+dfsg"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 conflicts: [
   "deb-libtulip-python"

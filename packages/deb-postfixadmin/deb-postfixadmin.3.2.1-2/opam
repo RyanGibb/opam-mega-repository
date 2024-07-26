@@ -11,10 +11,10 @@ depends: [
   "deb-php-imap"
   "deb-php-mbstring"
   "deb-wwwconfig-common"
-  ("deb-apache2" | "deb- lighttpd" | "deb- httpd")
-  ("deb-default-mysql-client" | "deb- postgresql-client" | "deb- mariadb-client")
-  ("deb-libapache2-mod-php" | "deb- php-cgi" | "deb- php-fpm" | "deb- php")
-  ("deb-php-mysql" | "deb- php-mysqlnd" | "deb- php-pgsql" | "deb- php-sqlite3")
+  ("deb-apache2" | "deb-lighttpd" | "deb-httpd")
+  ("deb-default-mysql-client" | "deb-postgresql-client" | "deb-mariadb-client")
+  ("deb-libapache2-mod-php" | "deb-php-cgi" | "deb-php-fpm" | "deb-php")
+  ("deb-php-mysql" | "deb-php-mysqlnd" | "deb-php-pgsql" | "deb-php-sqlite3")
 ]
 extra-source "postfixadmin_3.2.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/postfixadmin/postfixadmin_3.2.1-2_all.deb"

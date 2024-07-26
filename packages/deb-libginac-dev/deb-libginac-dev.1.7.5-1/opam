@@ -10,7 +10,7 @@ depends: [
   "deb-libc6-dev"
   "deb-libcln-dev"
   "deb-libginac6" {= "1.7.5-1"}
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 extra-source "libginac-dev_1.7.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/ginac/libginac-dev_1.7.5-1_amd64.deb"

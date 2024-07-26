@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.4"}
   "deb-libglib2-0-0" {>= "2.44.0"}
   "deb-libsystemd0"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "libgdm1_3.30.2-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gdm3/libgdm1_3.30.2-3_amd64.deb"

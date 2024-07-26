@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r autoproject"]
 ]
 depends: [
-  ("deb-automake" | "deb- automaken")
+  ("deb-automake" | "deb-automaken")
 ]
 extra-source "autoproject_0.20-13_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/autoproject/autoproject_0.20-13_all.deb"

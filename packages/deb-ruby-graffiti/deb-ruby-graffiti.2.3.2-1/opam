@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-sequel"
   "deb-syncache"
-  ("deb-ruby-pg" | "deb- ruby-mysql2" | "deb- ruby-sqlite3")
+  ("deb-ruby-pg" | "deb-ruby-mysql2" | "deb-ruby-sqlite3")
 ]
 extra-source "ruby-graffiti_2.3.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-graffiti/ruby-graffiti_2.3.2-1_all.deb"

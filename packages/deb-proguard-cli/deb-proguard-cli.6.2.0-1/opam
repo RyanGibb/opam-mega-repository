@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libproguard-java"
-  ("deb-default-jre-headless" | "deb- java5-runtime-headless")
+  ("deb-default-jre-headless" | "deb-java5-runtime-headless")
 ]
 extra-source "proguard-cli_6.2.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/proguard/proguard-cli_6.2.0-1_all.deb"

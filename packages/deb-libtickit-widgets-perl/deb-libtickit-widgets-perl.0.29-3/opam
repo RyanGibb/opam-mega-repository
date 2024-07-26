@@ -10,7 +10,7 @@ depends: [
   "deb-libstruct-dumb-perl"
   "deb-libtickit-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.19.5"} | "deb- libscalar-list-utils-perl" {>= "1-1.33"})
+  ("deb-perl" {>= "5.19.5"} | "deb-libscalar-list-utils-perl" {>= "1-1.33"})
 ]
 extra-source "libtickit-widgets-perl_0.29-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libt/libtickit-widgets-perl/libtickit-widgets-perl_0.29-3_all.deb"

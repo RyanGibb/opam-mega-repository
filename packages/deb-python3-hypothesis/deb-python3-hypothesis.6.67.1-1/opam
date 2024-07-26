@@ -10,7 +10,7 @@ depends: [
   "deb-python3-attr"
   "deb-python3-dateutil"
   "deb-python3-sortedcontainers"
-  ("deb-python3-exceptiongroup" | "deb- python3" {> "3.11"})
+  ("deb-python3-exceptiongroup" | "deb-python3" {> "3.11"})
 ]
 extra-source "python3-hypothesis_6.67.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-hypothesis/python3-hypothesis_6.67.1-1_all.deb"

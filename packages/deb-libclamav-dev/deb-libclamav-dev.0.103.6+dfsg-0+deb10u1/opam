@@ -12,7 +12,7 @@ depends: [
   "deb-libssl-dev"
   "deb-libtommath-dev"
   "deb-zlib1g-dev"
-  ("deb-libc6-dev" | "deb- libc-dev")
+  ("deb-libc6-dev" | "deb-libc-dev")
 ]
 extra-source "libclamav-dev_0.103.6+dfsg-0+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/clamav/libclamav-dev_0.103.6+dfsg-0+deb10u1_amd64.deb"

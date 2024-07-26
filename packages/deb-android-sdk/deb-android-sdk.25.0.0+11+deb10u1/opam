@@ -10,7 +10,7 @@ depends: [
   "deb-android-sdk-common" {>= "25.0.0+11+deb10u1"}
   "deb-android-sdk-platform-tools" {>= "20"}
   "deb-proguard-cli"
-  ("deb-default-jdk-headless" {>= "2-1.8"} | "deb- default-jdk" {>= "2-1.8"} | "deb- oracle-java8-jdk" | "deb- oracle-java9-jdk" | "deb- oracle-java10-jdk" | "deb- oracle-java11-jdk" | "deb- oracle-java12-jdk" | "deb- oracle-java8-installer" | "deb- oracle-java9-installer" | "deb- oracle-java10-installer" | "deb- oracle-java11-installer" | "deb- oracle-java12-installer")
+  ("deb-default-jdk-headless" {>= "2-1.8"} | "deb-default-jdk" {>= "2-1.8"} | "deb-oracle-java8-jdk" | "deb-oracle-java9-jdk" | "deb-oracle-java10-jdk" | "deb-oracle-java11-jdk" | "deb-oracle-java12-jdk" | "deb-oracle-java8-installer" | "deb-oracle-java9-installer" | "deb-oracle-java10-installer" | "deb-oracle-java11-installer" | "deb-oracle-java12-installer")
 ]
 extra-source "android-sdk_25.0.0+11+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/android-sdk-meta/android-sdk_25.0.0+11+deb10u1_amd64.deb"

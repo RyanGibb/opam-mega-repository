@@ -29,8 +29,8 @@ depends: [
   "deb-shared-mime-info"
   "deb-webp-pixbuf-loader"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
 ]
 extra-source "eom_1.26.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/eom/eom_1.26.0-2_amd64.deb"

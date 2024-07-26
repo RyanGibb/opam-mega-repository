@@ -10,7 +10,7 @@ depends: [
   "deb-libglu1-mesa-dev"
   "deb-libopenscenegraph161" {= "3.6.5+dfsg1-7+b1"}
   "deb-libopenthreads-dev"
-  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
+  ("deb-libgl1-mesa-dev" | "deb-libgl-dev")
 ]
 conflicts: [
   "deb-libopenscenegraph-3-4-dev"

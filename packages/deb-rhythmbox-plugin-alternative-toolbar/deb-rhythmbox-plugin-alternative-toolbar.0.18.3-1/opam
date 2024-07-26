@@ -9,7 +9,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-gi"
   "deb-rhythmbox" {>= "3.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "rhythmbox-plugin-alternative-toolbar_0.18.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rhythmbox-plugin-alternative-toolbar/rhythmbox-plugin-alternative-toolbar_0.18.3-1_all.deb"

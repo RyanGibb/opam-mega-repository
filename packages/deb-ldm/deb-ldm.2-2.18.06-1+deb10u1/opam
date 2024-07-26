@@ -22,8 +22,8 @@ depends: [
   "deb-libxext6"
   "deb-procps"
   "deb-python3"
-  ("deb-openssh-client" | "deb- ssh")
-  ("deb-xserver-xorg" | "deb- xserver")
+  ("deb-openssh-client" | "deb-ssh")
+  ("deb-xserver-xorg" | "deb-xserver")
 ]
 extra-source "ldm_2:2.18.06-1+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/ldm/ldm_2.18.06-1+deb10u1_amd64.deb"

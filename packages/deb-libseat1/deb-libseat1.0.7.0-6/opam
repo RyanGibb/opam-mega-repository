@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.33"}
   "deb-libelogind0"
-  ("deb-seatd" | "deb- logind")
+  ("deb-seatd" | "deb-logind")
 ]
 extra-source "libseat1_0.7.0-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/seatd/libseat1_0.7.0-6_amd64.deb"

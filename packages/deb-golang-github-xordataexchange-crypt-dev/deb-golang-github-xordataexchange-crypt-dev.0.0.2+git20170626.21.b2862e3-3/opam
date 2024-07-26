@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-golang-github-armon-consul-api-dev"
   "deb-golang-golang-x-crypto-dev"
-  ("deb-golang-github-coreos-etcd-dev" | "deb- golang-etcd-server-dev")
+  ("deb-golang-github-coreos-etcd-dev" | "deb-golang-etcd-server-dev")
 ]
 extra-source "golang-github-xordataexchange-crypt-dev_0.0.2+git20170626.21.b2862e3-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/golang-github-xordataexchange-crypt/golang-github-xordataexchange-crypt-dev_0.0.2+git20170626.21.b2862e3-3_all.deb"

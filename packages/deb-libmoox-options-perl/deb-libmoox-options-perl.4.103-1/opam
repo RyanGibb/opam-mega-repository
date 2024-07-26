@@ -20,7 +20,7 @@ depends: [
   "deb-libstrictures-perl" {>= "2"}
   "deb-libunicode-linebreak-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.19.5"} | "deb- libmodule-metadata-perl" {>= "1.000019"})
+  ("deb-perl" {>= "5.19.5"} | "deb-libmodule-metadata-perl" {>= "1.000019"})
 ]
 extra-source "libmoox-options-perl_4.103-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libm/libmoox-options-perl/libmoox-options-perl_4.103-1_all.deb"

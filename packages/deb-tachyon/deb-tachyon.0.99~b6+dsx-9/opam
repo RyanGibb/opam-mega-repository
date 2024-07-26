@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r tachyon"]
 ]
 depends: [
-  ("deb-tachyon-bin-nox" | "deb- tachyon-bin")
+  ("deb-tachyon-bin-nox" | "deb-tachyon-bin")
 ]
 extra-source "tachyon_0.99~b6+dsx-9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tachyon/tachyon_0.99~b6+dsx-9_all.deb"

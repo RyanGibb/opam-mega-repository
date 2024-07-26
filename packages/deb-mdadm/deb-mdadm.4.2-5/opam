@@ -11,7 +11,7 @@ depends: [
   "deb-libudev1" {>= "183"}
   "deb-lsb-base"
   "deb-udev"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "mdadm_4.2-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mdadm/mdadm_4.2-5_amd64.deb"

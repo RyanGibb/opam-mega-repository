@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo dpkg -r libglfw3-dev"]
 ]
 depends: [
-  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
-  ("deb-libglfw3" {= "3.3.8-1"} | "deb- libglfw3-wayland" {= "3.3.8-1"})
+  ("deb-libgl1-mesa-dev" | "deb-libgl-dev")
+  ("deb-libglfw3" {= "3.3.8-1"} | "deb-libglfw3-wayland" {= "3.3.8-1"})
 ]
 conflicts: [
   "deb-libglfw-dev"

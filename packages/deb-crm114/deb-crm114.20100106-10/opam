@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.29"}
   "deb-libtre5"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "crm114_20100106-10_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/crm114/crm114_20100106-10_amd64.deb"

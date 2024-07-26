@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-hashie" {>= "1.1.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-powerbar_1.0.18-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-powerbar/ruby-powerbar_1.0.18-1_all.deb"

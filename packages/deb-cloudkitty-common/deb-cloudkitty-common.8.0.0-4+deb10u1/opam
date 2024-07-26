@@ -10,7 +10,7 @@ depends: [
   "deb-dbconfig-common"
   "deb-debconf"
   "deb-python3-cloudkitty" {= "8.0.0-4+deb10u1"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "cloudkitty-common_8.0.0-4+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cloudkitty/cloudkitty-common_8.0.0-4+deb10u1_all.deb"

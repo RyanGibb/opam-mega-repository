@@ -26,8 +26,8 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libswresample3" {>= "7-4.0"}
   "deb-libswscale5" {>= "7-4.0"}
-  ("deb-libavcodec58" {>= "7-4.0"} | "deb- libavcodec-extra58" {>= "7-4.0"})
-  ("deb-libavfilter7" {>= "7-4.0"} | "deb- libavfilter-extra7" {>= "7-4.0"})
+  ("deb-libavcodec58" {>= "7-4.0"} | "deb-libavcodec-extra58" {>= "7-4.0"})
+  ("deb-libavfilter7" {>= "7-4.0"} | "deb-libavfilter-extra7" {>= "7-4.0"})
 ]
 extra-source "ffdiaporama_2.1+dfsg-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/ffdiaporama/ffdiaporama_2.1+dfsg-1+b1_amd64.deb"

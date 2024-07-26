@@ -12,9 +12,9 @@ depends: [
   "deb-fonts-noto"
   "deb-gnome-screenshot"
   "deb-xdg-user-dirs-gtk"
-  ("deb-evince" | "deb- pdf-viewer")
-  ("deb-gedit" | "deb- gnome-text-editor")
-  ("deb-gnome-calculator" | "deb- galculator")
+  ("deb-evince" | "deb-pdf-viewer")
+  ("deb-gedit" | "deb-gnome-text-editor")
+  ("deb-gnome-calculator" | "deb-galculator")
 ]
 extra-source "cinnamon-desktop-environment_5.6.0_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cinnamon-desktop-environment/cinnamon-desktop-environment_5.6.0_amd64.deb"

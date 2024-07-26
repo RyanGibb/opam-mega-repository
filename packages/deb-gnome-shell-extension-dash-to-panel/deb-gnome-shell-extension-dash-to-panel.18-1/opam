@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-gnome-shell" {>= "3.18"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-shell-extension-dash-to-panel_18-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-shell-extension-dash-to-panel/gnome-shell-extension-dash-to-panel_18-1_all.deb"

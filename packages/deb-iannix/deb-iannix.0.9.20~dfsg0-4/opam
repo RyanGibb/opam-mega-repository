@@ -17,7 +17,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.12.2"}
   "deb-libqt5xml5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libqt5gui5" {>= "5.8.0"} | "deb- libqt5gui5-gles" {>= "5.8.0"})
+  ("deb-libqt5gui5" {>= "5.8.0"} | "deb-libqt5gui5-gles" {>= "5.8.0"})
 ]
 extra-source "iannix_0.9.20~dfsg0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/iannix/iannix_0.9.20~dfsg0-4_amd64.deb"

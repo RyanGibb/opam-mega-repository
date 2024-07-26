@@ -13,7 +13,7 @@ depends: [
   "deb-python3-cups"
   "deb-python3-daemon" {>= "2.0"}
   "deb-python3-pkg-resources"
-  ("deb-rsyslog" | "deb- system-log-daemon")
+  ("deb-rsyslog" | "deb-system-log-daemon")
 ]
 extra-source "cloudprint_0.14-12_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cloudprint/cloudprint_0.14-12_all.deb"

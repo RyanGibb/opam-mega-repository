@@ -23,7 +23,7 @@ depends: [
   "deb-libxrender1"
   "deb-lsb-base" {>= "3.0-6"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-debconf" {>= "1.2.9"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "1.2.9"} | "deb-debconf-2-0")
 ]
 extra-source "slim_1.3.6-5.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/slim/slim_1.3.6-5.1_amd64.deb"

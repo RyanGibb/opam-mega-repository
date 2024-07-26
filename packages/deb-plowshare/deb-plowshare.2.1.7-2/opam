@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-curl" {>= "7.24"}
-  ("deb-recode" | "deb- libhtml-parser-perl")
+  ("deb-recode" | "deb-libhtml-parser-perl")
 ]
 extra-source "plowshare_2.1.7-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/plowshare/plowshare_2.1.7-2_all.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-i18n-spec"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-doorkeeper-i18n_5.0.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-doorkeeper-i18n/ruby-doorkeeper-i18n_5.0.2-2_all.deb"

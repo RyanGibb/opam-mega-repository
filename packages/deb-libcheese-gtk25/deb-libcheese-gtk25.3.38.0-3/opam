@@ -18,7 +18,7 @@ depends: [
   "deb-libglib2-0-0" {>= "2.39.90"}
   "deb-libgtk-3-0" {>= "3.13.4"}
   "deb-libx11-6"
-  ("deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"} | "deb- libgdk-pixbuf2-0-0" {>= "2.22.0"})
+  ("deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"} | "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"})
 ]
 extra-source "libcheese-gtk25_3.38.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cheese/libcheese-gtk25_3.38.0-3_amd64.deb"

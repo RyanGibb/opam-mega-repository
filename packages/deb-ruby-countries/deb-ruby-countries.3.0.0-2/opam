@@ -9,7 +9,7 @@ depends: [
   "deb-ruby-i18n-data" {>= "0.8.0"}
   "deb-ruby-sixarm-ruby-unaccent" {>= "1.1"}
   "deb-ruby-unicode-utils" {>= "1.4"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-countries_3.0.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-countries/ruby-countries_3.0.0-2_all.deb"

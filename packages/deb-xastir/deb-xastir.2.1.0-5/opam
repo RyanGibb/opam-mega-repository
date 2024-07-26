@@ -38,7 +38,7 @@ depends: [
   "deb-libzstd1" {>= "1.3.2"}
   "deb-xastir-data"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "xastir_2.1.0-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xastir/xastir_2.1.0-5_amd64.deb"

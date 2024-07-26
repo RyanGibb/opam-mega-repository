@@ -8,8 +8,8 @@ remove: [
 depends: [
   "deb-console-setup-linux"
   "deb-perl-base" {>= "5.8.3-2"}
-  ("deb-debconf" | "deb- debconf-2-0")
-  ("deb-kbd" | "deb- console-tools")
+  ("deb-debconf" | "deb-debconf-2-0")
+  ("deb-kbd" | "deb-console-tools")
 ]
 conflicts: [
   "deb-console-tools-cyrillic"

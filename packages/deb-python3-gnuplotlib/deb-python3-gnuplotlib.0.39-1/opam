@@ -10,7 +10,7 @@ depends: [
   "deb-python3-distutils"
   "deb-python3-numpy"
   "deb-python3-numpysane" {>= "0.3-1"}
-  ("deb-gnuplot-qt" | "deb- gnuplot-x11" | "deb- gnuplot-nox" | "deb- gnuplot5-qt" | "deb- gnuplot5-x11" | "deb- gnuplot5-nox" | "deb- gnuplot")
+  ("deb-gnuplot-qt" | "deb-gnuplot-x11" | "deb-gnuplot-nox" | "deb-gnuplot5-qt" | "deb-gnuplot5-x11" | "deb-gnuplot5-nox" | "deb-gnuplot")
 ]
 extra-source "python3-gnuplotlib_0.39-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-gnuplotlib/python3-gnuplotlib_0.39-1_all.deb"

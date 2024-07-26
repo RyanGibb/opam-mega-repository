@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.4"}
   "deb-libxmmsclient-glib1" {>= "0.6DrMattDestruction"}
   "deb-libxmmsclient6" {>= "0.8"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-xmmsclient_0.8+dfsg-21_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xmms2/ruby-xmmsclient_0.8+dfsg-21_amd64.deb"

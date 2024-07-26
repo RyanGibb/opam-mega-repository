@@ -9,7 +9,7 @@ depends: [
   "deb-aspell"
   "deb-perl-any"
   "deb-sgmlspl"
-  ("deb-opensp" | "deb- sp")
+  ("deb-opensp" | "deb-sp")
 ]
 extra-source "sgml-spell-checker_0.0.20040919-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sgml-spell-checker/sgml-spell-checker_0.0.20040919-5_all.deb"

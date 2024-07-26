@@ -20,7 +20,7 @@ depends: [
   "deb-libkf5identitymanagement5" {>= "20.08.3"}
   "deb-libqt5core5a" {>= "5.15.1"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "libkf5alarmcalendar5abi1_4:20.08.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kalarmcal/libkf5alarmcalendar5abi1_20.08.3-1_amd64.deb"

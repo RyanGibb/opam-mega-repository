@@ -22,7 +22,7 @@ depends: [
   "deb-libsqlite3-0" {>= "3.5.9"}
   "deb-libsystemd0"
   "deb-policykit-1" {>= "0.103"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "colord_1.4.5-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/colord/colord_1.4.5-3_amd64.deb"

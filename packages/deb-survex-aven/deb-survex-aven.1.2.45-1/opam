@@ -18,7 +18,7 @@ depends: [
   "deb-libwxbase3-0-0v5" {>= "3.0.5.1+dfsg"}
   "deb-libwxgtk3-0-gtk3-0v5" {>= "3.0.5.1+dfsg"}
   "deb-survex" {= "1.2.45-1"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "survex-aven_1.2.45-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/survex/survex-aven_1.2.45-1_amd64.deb"

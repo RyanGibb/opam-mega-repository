@@ -20,8 +20,8 @@ depends: [
   "deb-python-parted"
   "deb-python-yaml"
   "deb-sudo"
-  ("deb-fdisk" | "deb- util-linux" {< "2.29.2-3~"})
-  ("deb-u-boot-tools" | "deb- uboot-mkimage")
+  ("deb-fdisk" | "deb-util-linux" {< "2.29.2-3~"})
+  ("deb-u-boot-tools" | "deb-uboot-mkimage")
 ]
 extra-source "linaro-image-tools_2016.05-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/linaro-image-tools/linaro-image-tools_2016.05-1.1_amd64.deb"

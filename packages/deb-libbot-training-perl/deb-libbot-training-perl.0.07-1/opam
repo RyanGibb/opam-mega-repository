@@ -14,7 +14,7 @@ depends: [
   "deb-libmousex-getopt-perl"
   "deb-libnamespace-clean-perl"
   "deb-perl"
-  ("deb-libmodule-pluggable-perl" | "deb- perl" {< "5.17.9"})
+  ("deb-libmodule-pluggable-perl" | "deb-perl" {< "5.17.9"})
 ]
 extra-source "libbot-training-perl_0.07-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libb/libbot-training-perl/libbot-training-perl_0.07-1_all.deb"

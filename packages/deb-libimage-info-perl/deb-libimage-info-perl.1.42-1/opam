@@ -8,10 +8,10 @@ remove: [
 depends: [
   "deb-libio-string-perl"
   "deb-perl"
-  ("deb-libimage-base-bundle-perl" | "deb- libimage-xbm-perl")
-  ("deb-libimage-base-bundle-perl" | "deb- libimage-xpm-perl")
-  ("deb-libxml-libxml-perl" | "deb- libxml-simple-perl")
-  ("deb-perl" {>= "5.21.7"} | "deb- libio-stringy-perl")
+  ("deb-libimage-base-bundle-perl" | "deb-libimage-xbm-perl")
+  ("deb-libimage-base-bundle-perl" | "deb-libimage-xpm-perl")
+  ("deb-libxml-libxml-perl" | "deb-libxml-simple-perl")
+  ("deb-perl" {>= "5.21.7"} | "deb-libio-stringy-perl")
 ]
 extra-source "libimage-info-perl_1.42-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libi/libimage-info-perl/libimage-info-perl_1.42-1_all.deb"

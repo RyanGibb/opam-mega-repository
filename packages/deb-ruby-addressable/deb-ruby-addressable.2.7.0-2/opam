@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-public-suffix" {>= "2.0.2~"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-addressable_2.7.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-addressable/ruby-addressable_2.7.0-2_all.deb"

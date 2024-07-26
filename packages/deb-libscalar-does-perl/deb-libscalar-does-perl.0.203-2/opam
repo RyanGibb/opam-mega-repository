@@ -13,7 +13,7 @@ depends: [
   "deb-liburi-perl"
   "deb-perl-any"
   "deb-sgml-base" {>= "1.28"}
-  ("deb-perl" {>= "5.16.1"} | "deb- libscalar-list-utils-perl" {>= "1-1.24"})
+  ("deb-perl" {>= "5.16.1"} | "deb-libscalar-list-utils-perl" {>= "1-1.24"})
 ]
 extra-source "libscalar-does-perl_0.203-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libs/libscalar-does-perl/libscalar-does-perl_0.203-2_all.deb"

@@ -9,7 +9,7 @@ depends: [
   "deb-libgd-graph-perl"
   "deb-perl-any"
   "deb-sgml-base" {>= "1.28"}
-  ("deb-libgd-perl" | "deb- libgd-gd2-noxpm-perl" | "deb- libgd-gd2-perl")
+  ("deb-libgd-perl" | "deb-libgd-gd2-noxpm-perl" | "deb-libgd-gd2-perl")
 ]
 extra-source "libgd-graph3d-perl_0.63-10_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libg/libgd-graph3d-perl/libgd-graph3d-perl_0.63-10_all.deb"

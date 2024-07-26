@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-adduser"
   "deb-passwd"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "user-setup_1.88_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/user-setup/user-setup_1.88_all.deb"

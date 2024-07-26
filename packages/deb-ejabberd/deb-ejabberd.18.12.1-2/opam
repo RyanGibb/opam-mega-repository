@@ -35,9 +35,9 @@ depends: [
   "deb-erlang-xmerl" {>= "1-19.2"}
   "deb-lsb-base"
   "deb-ucf"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-erlang-base" {>= "1-19.2"} | "deb- erlang-abi-17-0")
-  ("deb-erlang-base" {>= "1-21.2.2+dfsg"} | "deb- erlang-base-hipe" {>= "1-21.2.2+dfsg"})
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-erlang-base" {>= "1-19.2"} | "deb-erlang-abi-17-0")
+  ("deb-erlang-base" {>= "1-21.2.2+dfsg"} | "deb-erlang-base-hipe" {>= "1-21.2.2+dfsg"})
 ]
 extra-source "ejabberd_18.12.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/ejabberd/ejabberd_18.12.1-2_amd64.deb"

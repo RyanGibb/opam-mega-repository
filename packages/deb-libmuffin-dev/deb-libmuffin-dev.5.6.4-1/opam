@@ -28,7 +28,7 @@ depends: [
   "deb-libxfixes-dev"
   "deb-libxi-dev"
   "deb-libxrandr-dev"
-  ("deb-libgles2-mesa-dev" | "deb- libgles2-dev")
+  ("deb-libgles2-mesa-dev" | "deb-libgles2-dev")
 ]
 extra-source "libmuffin-dev_5.6.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/muffin/libmuffin-dev_5.6.4-1_amd64.deb"

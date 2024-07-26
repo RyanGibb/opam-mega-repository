@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r gsettings-desktop-schemas"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gsettings-desktop-schemas_3.38.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gsettings-desktop-schemas/gsettings-desktop-schemas_3.38.0-2_all.deb"

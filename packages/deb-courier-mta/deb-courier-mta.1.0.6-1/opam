@@ -16,8 +16,8 @@ depends: [
   "deb-libnet-cidr-perl"
   "deb-libperl5-28" {>= "5.28.0"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-sysvinit-utils" {>= "2.88dsf-50"} | "deb- init-d-script")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-sysvinit-utils" {>= "2.88dsf-50"} | "deb-init-d-script")
 ]
 conflicts: [
   "deb-mail-transport-agent"

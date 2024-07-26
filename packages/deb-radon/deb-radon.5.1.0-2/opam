@@ -10,8 +10,8 @@ depends: [
   "deb-python3-future"
   "deb-python3-mando" {>= "0.6"}
   "deb-python3-pkg-resources"
-  ("deb-python3-colorama" | "deb- python3" {< "3.5"})
-  ("deb-python3-colorama" | "deb- python3" {> "3.5"})
+  ("deb-python3-colorama" | "deb-python3" {< "3.5"})
+  ("deb-python3-colorama" | "deb-python3" {> "3.5"})
 ]
 extra-source "radon_5.1.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/radon/radon_5.1.0-2_all.deb"

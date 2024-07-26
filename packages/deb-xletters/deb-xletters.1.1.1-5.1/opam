@@ -11,7 +11,7 @@ depends: [
   "deb-libxaw7"
   "deb-libxt6"
   "deb-netcat-openbsd"
-  ("deb-wenglish" | "deb- wordlist")
+  ("deb-wenglish" | "deb-wordlist")
 ]
 extra-source "xletters_1.1.1-5.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xletters/xletters_1.1.1-5.1_amd64.deb"

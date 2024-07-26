@@ -9,7 +9,7 @@ depends: [
   "deb-adduser"
   "deb-debug-me"
   "deb-lsb-base" {>= "3.0-6"}
-  ("deb-default-mta" | "deb- mail-transport-agent")
+  ("deb-default-mta" | "deb-mail-transport-agent")
 ]
 extra-source "debug-me-server_1.20200820-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/debug-me/debug-me-server_1.20200820-1_all.deb"

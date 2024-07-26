@@ -10,7 +10,7 @@ depends: [
   "deb-libcw6"
   "deb-libncurses6" {>= "6"}
   "deb-libtinfo6" {>= "6"}
-  ("deb-debconf" | "deb- debconf-2-0")
+  ("deb-debconf" | "deb-debconf-2-0")
 ]
 extra-source "cwcp_3.5.1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/unixcw/cwcp_3.5.1-3_amd64.deb"

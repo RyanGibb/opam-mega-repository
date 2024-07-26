@@ -9,8 +9,8 @@ depends: [
   "deb-python3-psycopg2"
   "deb-tryton-server"
   "deb-ucf"
-  ("deb-dbconfig-pgsql" | "deb- dbconfig-no-thanks")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-dbconfig-pgsql" | "deb-dbconfig-no-thanks")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "tryton-server-postgresql_6.0.29-2+deb12u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tryton-server/tryton-server-postgresql_6.0.29-2+deb12u2_all.deb"

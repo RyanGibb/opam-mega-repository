@@ -11,7 +11,7 @@ depends: [
   "deb-ruby-fixwhich"
   "deb-ruby-threach"
   "deb-ruby-trollop" {>= "2.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-crb-blast_0.6.9-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-crb-blast/ruby-crb-blast_0.6.9-2_all.deb"

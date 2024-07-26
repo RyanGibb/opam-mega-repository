@@ -34,7 +34,7 @@ depends: [
   "deb-texlive-pstricks"
   "deb-xdg-utils"
   "deb-zlib1g" {>= "1-1.2.0"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "asymptote_2.47-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/asymptote/asymptote_2.47-2_amd64.deb"

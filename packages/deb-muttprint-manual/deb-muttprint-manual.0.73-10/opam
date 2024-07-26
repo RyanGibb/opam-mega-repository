@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r muttprint-manual"]
 ]
 depends: [
-  ("deb-lynx" | "deb- www-browser" | "deb- xpdf" | "deb- pdf-viewer")
+  ("deb-lynx" | "deb-www-browser" | "deb-xpdf" | "deb-pdf-viewer")
 ]
 extra-source "muttprint-manual_0.73-10_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/muttprint/muttprint-manual_0.73-10_all.deb"

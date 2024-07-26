@@ -14,7 +14,7 @@ depends: [
   "deb-ruby-multi-json" {>= "1.10"}
   "deb-ruby-puppet-forge" {>= "2.2.8~"}
   "deb-ruby-rugged" {>= "0.24.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "r10k_3.1.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r10k/r10k_3.1.0-1_all.deb"

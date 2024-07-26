@@ -9,8 +9,8 @@ depends: [
   "deb-debconf" {>= "0.5"}
   "deb-php-xml"
   "deb-rrdtool"
-  ("deb-apache" | "deb- apache-ssl" | "deb- apache-perl" | "deb- apache2" | "deb- httpd-cgi")
-  ("deb-php" | "deb- php-cgi" | "deb- libapache2-mod-php")
+  ("deb-apache" | "deb-apache-ssl" | "deb-apache-perl" | "deb-apache2" | "deb-httpd-cgi")
+  ("deb-php" | "deb-php-cgi" | "deb-libapache2-mod-php")
 ]
 extra-source "ganglia-webfrontend_3.6.1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/ganglia-web/ganglia-webfrontend_3.6.1-3_all.deb"

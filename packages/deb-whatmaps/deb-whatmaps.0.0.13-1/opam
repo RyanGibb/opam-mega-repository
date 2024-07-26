@@ -10,7 +10,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-apt"
   "deb-python3-pkg-resources"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "whatmaps_0.0.13-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/whatmaps/whatmaps_0.0.13-1_all.deb"

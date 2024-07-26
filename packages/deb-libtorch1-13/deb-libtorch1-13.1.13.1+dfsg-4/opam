@@ -44,9 +44,9 @@ depends: [
   "deb-libxnnpack0" {>= "0.0~git20220216.ae108ef"}
   "deb-libzmq5" {>= "3.2.3+dfsg"}
   "deb-libzstd1" {>= "1.5.2"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
-  ("deb-ocl-icd-libopencl1" | "deb- libopencl1")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
+  ("deb-ocl-icd-libopencl1" | "deb-libopencl1")
 ]
 extra-source "libtorch1.13_1.13.1+dfsg-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pytorch/libtorch1.13_1.13.1+dfsg-4_amd64.deb"

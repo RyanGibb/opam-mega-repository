@@ -16,7 +16,7 @@ depends: [
   "deb-python3-q-text-as-data"
   "deb-sysvinit-utils"
   "deb-uwsgi-plugin-python3"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "cinder-api_2:21.1.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cinder/cinder-api_21.1.0-3_all.deb"

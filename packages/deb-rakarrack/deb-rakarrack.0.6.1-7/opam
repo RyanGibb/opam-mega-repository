@@ -16,7 +16,7 @@ depends: [
   "deb-libstdc++6" {>= "5"}
   "deb-libx11-6"
   "deb-libxpm4"
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "rakarrack_0.6.1-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rakarrack/rakarrack_0.6.1-7_amd64.deb"

@@ -23,8 +23,8 @@ depends: [
   "deb-libstdc++6" {>= "5"}
   "deb-libx11-6"
   "deb-libxi6" {>= "2-1.2.99.4"}
-  ("deb-libqt5gui5" {>= "5.12.2"} | "deb- libqt5gui5-gles" {>= "5.12.2"})
-  ("deb-libqt5quick5" {>= "5.15.1"} | "deb- libqt5quick5-gles" {>= "5.15.1"})
+  ("deb-libqt5gui5" {>= "5.12.2"} | "deb-libqt5gui5-gles" {>= "5.12.2"})
+  ("deb-libqt5quick5" {>= "5.15.1"} | "deb-libqt5quick5-gles" {>= "5.15.1"})
 ]
 extra-source "liblomiritoolkit5_1.3.5010+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lomiri-ui-toolkit/liblomiritoolkit5_1.3.5010+dfsg-1_amd64.deb"

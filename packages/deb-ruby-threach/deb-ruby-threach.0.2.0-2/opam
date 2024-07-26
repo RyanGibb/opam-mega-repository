@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-threach"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-threach_0.2.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-threach/ruby-threach_0.2.0-2_all.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-dictionaries-common"
   "deb-hunspell"
-  ("deb-hunspell-de-de" | "deb- hunspell-de-at" | "deb- hunspell-de-ch")
+  ("deb-hunspell-de-de" | "deb-hunspell-de-at" | "deb-hunspell-de-ch")
 ]
 extra-source "hunspell-de-med_20220425-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/medicalterms/hunspell-de-med_20220425-1_all.deb"

@@ -33,7 +33,7 @@ depends: [
   "deb-libtry-tiny-perl"
   "deb-libyaml-libyaml-perl"
   "deb-perl"
-  ("deb-libmodule-pluggable-perl" | "deb- perl" {< "5.17.0"})
+  ("deb-libmodule-pluggable-perl" | "deb-perl" {< "5.17.0"})
 ]
 extra-source "libkiokudb-perl_0.57-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libk/libkiokudb-perl/libkiokudb-perl_0.57-1_all.deb"

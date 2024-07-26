@@ -9,7 +9,7 @@ depends: [
   "deb-libxml-namespacesupport-perl"
   "deb-libxml-sax-perl"
   "deb-perl"
-  ("deb-libxml-libxml-perl" | "deb- libxml-sax-expat-perl")
+  ("deb-libxml-libxml-perl" | "deb-libxml-sax-expat-perl")
 ]
 extra-source "libxml-simple-perl_2.25-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libx/libxml-simple-perl/libxml-simple-perl_2.25-1_all.deb"

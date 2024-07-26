@@ -13,7 +13,7 @@ depends: [
   "deb-libkpipewire5" {= "5.27.5-3"}
   "deb-libqt5core5a" {>= "5.15.1"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.12.2"} | "deb- libqt5gui5-gles" {>= "5.12.2"})
+  ("deb-libqt5gui5" {>= "5.12.2"} | "deb-libqt5gui5-gles" {>= "5.12.2"})
 ]
 extra-source "libkpipewiredmabuf5_5.27.5-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kpipewire/libkpipewiredmabuf5_5.27.5-3_amd64.deb"

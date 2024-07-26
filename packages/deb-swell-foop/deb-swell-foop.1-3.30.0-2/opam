@@ -12,7 +12,7 @@ depends: [
   "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
   "deb-libglib2-0-0" {>= "2.37.3"}
   "deb-libgtk-3-0" {>= "3.12"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "swell-foop_1:3.30.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/swell-foop/swell-foop_3.30.0-2_amd64.deb"

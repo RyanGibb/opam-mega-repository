@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-fp-units-rtl-3-2-0"
-  ("deb-lcl-gtk2-2-0" {= "2.0.10+dfsg-4+b2"} | "deb- lcl-qt5-2-0" {= "2.0.10+dfsg-4+b2"})
+  ("deb-lcl-gtk2-2-0" {= "2.0.10+dfsg-4+b2"} | "deb-lcl-qt5-2-0" {= "2.0.10+dfsg-4+b2"})
 ]
 extra-source "lcl-units-2.0_2.0.10+dfsg-4+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lazarus/lcl-units-2.0_2.0.10+dfsg-4+b2_amd64.deb"

@@ -13,9 +13,9 @@ depends: [
   "deb-libstdc++6" {>= "6"}
   "deb-libxi6"
   "deb-libxmu6"
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-libglu1-mesa" | "deb- libglu1")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-libglu1-mesa" | "deb-libglu1")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libsimbody3.6_3.6.1+dfsg-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/simbody/libsimbody3.6_3.6.1+dfsg-7_amd64.deb"

@@ -12,7 +12,7 @@ depends: [
   "deb-libqt5dbus5" {>= "5.0.2"}
   "deb-libqt5widgets5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "qprogram-starter_1.7.4-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/shutdown-qapps/qprogram-starter_1.7.4-1+b1_amd64.deb"

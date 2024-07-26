@@ -23,7 +23,7 @@ depends: [
   "deb-python3-vagrant"
   "deb-python3-yaml"
   "deb-rsync"
-  ("deb-default-jdk-headless" | "deb- default-jdk" | "deb- openjdk-7-jdk" | "deb- openjdk-8-jdk-headless" | "deb- openjdk-10-jdk-headless" | "deb- openjdk-11-jdk-headless" | "deb- oracle-java7-jdk" | "deb- oracle-java8-jdk" | "deb- oracle-java9-jdk" | "deb- oracle-java10-jdk" | "deb- oracle-java11-jdk" | "deb- oracle-java12-jdk" | "deb- oracle-java7-installer" | "deb- oracle-java8-installer" | "deb- oracle-java9-installer" | "deb- oracle-java10-installer" | "deb- oracle-java11-installer" | "deb- oracle-java12-installer")
+  ("deb-default-jdk-headless" | "deb-default-jdk" | "deb-openjdk-7-jdk" | "deb-openjdk-8-jdk-headless" | "deb-openjdk-10-jdk-headless" | "deb-openjdk-11-jdk-headless" | "deb-oracle-java7-jdk" | "deb-oracle-java8-jdk" | "deb-oracle-java9-jdk" | "deb-oracle-java10-jdk" | "deb-oracle-java11-jdk" | "deb-oracle-java12-jdk" | "deb-oracle-java7-installer" | "deb-oracle-java8-installer" | "deb-oracle-java9-installer" | "deb-oracle-java10-installer" | "deb-oracle-java11-installer" | "deb-oracle-java12-installer")
 ]
 extra-source "fdroidserver_1.1.7-1~deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fdroidserver/fdroidserver_1.1.7-1~deb10u1_all.deb"

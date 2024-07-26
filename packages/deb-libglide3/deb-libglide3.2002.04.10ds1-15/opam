@@ -12,7 +12,7 @@ depends: [
   "deb-libxxf86dga1"
   "deb-libxxf86vm1"
   "deb-pciutils"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "libglide3_2002.04.10ds1-15_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/glide/libglide3_2002.04.10ds1-15_amd64.deb"

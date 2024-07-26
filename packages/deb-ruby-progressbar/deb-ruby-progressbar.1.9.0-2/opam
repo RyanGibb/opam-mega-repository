@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-progressbar"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-progressbar_1.9.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-progressbar/ruby-progressbar_1.9.0-2_all.deb"

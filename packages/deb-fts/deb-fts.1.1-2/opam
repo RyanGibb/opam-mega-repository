@@ -13,7 +13,7 @@ depends: [
   "deb-python-fuse"
   "deb-python-pkg-resources"
   "deb-ucf"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "fts_1.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fts/fts_1.1-2_all.deb"

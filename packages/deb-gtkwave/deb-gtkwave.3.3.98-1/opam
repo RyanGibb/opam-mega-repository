@@ -20,7 +20,7 @@ depends: [
   "deb-libtcl8-6" {>= "8.6.0"}
   "deb-libtk8-6" {>= "8.6.0"}
   "deb-zlib1g" {>= "1-1.2.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gtkwave_3.3.98-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gtkwave/gtkwave_3.3.98-1_amd64.deb"

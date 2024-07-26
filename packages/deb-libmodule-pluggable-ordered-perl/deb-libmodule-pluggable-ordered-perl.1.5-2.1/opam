@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libuniversal-require-perl"
   "deb-perl-any"
-  ("deb-libmodule-pluggable-perl" | "deb- perl" {< "5.17.0"})
+  ("deb-libmodule-pluggable-perl" | "deb-perl" {< "5.17.0"})
 ]
 extra-source "libmodule-pluggable-ordered-perl_1.5-2.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libm/libmodule-pluggable-ordered-perl/libmodule-pluggable-ordered-perl_1.5-2.1_all.deb"

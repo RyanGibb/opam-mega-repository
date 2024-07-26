@@ -10,7 +10,7 @@ depends: [
   "deb-ruby-fog-json" {>= "1.0"}
   "deb-ruby-ipaddress" {>= "0.8"}
   "deb-ruby-xml-simple" {>= "1.1"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-fog-aliyun_0.3.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-fog-aliyun/ruby-fog-aliyun_0.3.2-2_all.deb"

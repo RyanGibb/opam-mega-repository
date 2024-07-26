@@ -8,8 +8,8 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.4"}
   "deb-libpam0g" {>= "0.99.7.1"}
-  ("deb-erlang-base" {>= "1-19.2"} | "deb- erlang-abi" {= "17.0"})
-  ("deb-erlang-base" {>= "1-23.2.3+dfsg"} | "deb- erlang-base-hipe" {>= "1-23.2.3+dfsg"})
+  ("deb-erlang-base" {>= "1-19.2"} | "deb-erlang-abi" {= "17.0"})
+  ("deb-erlang-base" {>= "1-23.2.3+dfsg"} | "deb-erlang-base-hipe" {>= "1-23.2.3+dfsg"})
 ]
 extra-source "erlang-p1-pam_1.0.10-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/erlang-p1-pam/erlang-p1-pam_1.0.10-3_amd64.deb"

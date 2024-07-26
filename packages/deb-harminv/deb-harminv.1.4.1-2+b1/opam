@@ -12,8 +12,8 @@ depends: [
   "deb-libharminv3" {>= "1.4"}
   "deb-libquadmath0" {>= "4.6"}
   "deb-libstdc++6" {>= "4.1.1"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "harminv_1.4.1-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/harminv/harminv_1.4.1-2+b1_amd64.deb"

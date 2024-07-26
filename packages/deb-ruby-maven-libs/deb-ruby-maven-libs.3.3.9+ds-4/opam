@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-maven"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-maven-libs_3.3.9+ds-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-maven-libs/ruby-maven-libs_3.3.9+ds-4_all.deb"

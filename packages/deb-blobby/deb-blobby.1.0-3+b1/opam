@@ -14,7 +14,7 @@ depends: [
   "deb-libsdl2-2-0-0" {>= "2.0.4"}
   "deb-libstdc++6" {>= "6"}
   "deb-libtinyxml2-6-2v5"
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
 ]
 extra-source "blobby_1.0-3+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/blobby/blobby_1.0-3+b1_amd64.deb"

@@ -9,7 +9,7 @@ depends: [
   "deb-libemail-simple-perl"
   "deb-libmro-compat-perl"
   "deb-perl"
-  ("deb-libmodule-pluggable-perl" | "deb- perl" {< "5.17.0"})
+  ("deb-libmodule-pluggable-perl" | "deb-perl" {< "5.17.0"})
 ]
 extra-source "libemail-abstract-perl_3.008-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libe/libemail-abstract-perl/libemail-abstract-perl_3.008-2_all.deb"

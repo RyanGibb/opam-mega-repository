@@ -10,7 +10,7 @@ depends: [
   "deb-fonts-arphic-gkai00mp"
   "deb-fonts-dejavu-core"
   "deb-fonts-dustin"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-prawn-manual-builder_0.2.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-prawn-manual-builder/ruby-prawn-manual-builder_0.2.0-1_all.deb"

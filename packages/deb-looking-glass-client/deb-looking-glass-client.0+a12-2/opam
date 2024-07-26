@@ -18,7 +18,7 @@ depends: [
   "deb-libsdl2-2-0-0" {>= "2.0.9"}
   "deb-libsdl2-ttf-2-0-0" {>= "2.0.14"}
   "deb-libx11-6"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "looking-glass-client_0+a12-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/looking-glass/looking-glass-client_0+a12-2_amd64.deb"

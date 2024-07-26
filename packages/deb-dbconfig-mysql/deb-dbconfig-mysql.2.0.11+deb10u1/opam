@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-dbconfig-common" {= "2.0.11+deb10u1"}
-  ("deb-default-mysql-client" | "deb- virtual-mysql-client")
+  ("deb-default-mysql-client" | "deb-virtual-mysql-client")
 ]
 conflicts: [
   "deb-dbconfig-no-thanks"

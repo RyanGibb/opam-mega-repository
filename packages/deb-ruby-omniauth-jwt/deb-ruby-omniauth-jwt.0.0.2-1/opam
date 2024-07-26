@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-jwt"
   "deb-ruby-omniauth" {>= "1.1"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-omniauth-jwt_0.0.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-omniauth-jwt/ruby-omniauth-jwt_0.0.2-1_all.deb"

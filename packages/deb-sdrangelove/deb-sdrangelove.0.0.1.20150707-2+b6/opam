@@ -22,7 +22,7 @@ depends: [
   "deb-librtlsdr0"
   "deb-libstdc++6" {>= "5.2"}
   "deb-libusb-1-0-0" {>= "2-1.0.8"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "sdrangelove_0.0.1.20150707-2+b6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sdrangelove/sdrangelove_0.0.1.20150707-2+b6_amd64.deb"

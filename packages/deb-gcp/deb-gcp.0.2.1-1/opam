@@ -9,7 +9,7 @@ depends: [
   "deb-python3"
   "deb-python3-dbus"
   "deb-python3-gi"
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus")
 ]
 extra-source "gcp_0.2.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gcp/gcp_0.2.1-1_all.deb"

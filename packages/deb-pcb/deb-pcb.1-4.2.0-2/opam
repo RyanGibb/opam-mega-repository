@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-pcb-common"
-  ("deb-pcb-gtk" | "deb- pcb-lesstif")
+  ("deb-pcb-gtk" | "deb-pcb-lesstif")
 ]
 extra-source "pcb_1:4.2.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pcb/pcb_4.2.0-2_all.deb"

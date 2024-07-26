@@ -18,7 +18,7 @@ depends: [
   "deb-libstdc++6" {>= "5"}
   "deb-trackballs-data"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "trackballs_1.3.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/trackballs/trackballs_1.3.1-1_amd64.deb"

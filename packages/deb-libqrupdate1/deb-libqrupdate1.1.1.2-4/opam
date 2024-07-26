@@ -8,8 +8,8 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.4"}
   "deb-libgfortran5" {>= "8"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libqrupdate1_1.1.2-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qrupdate/libqrupdate1_1.1.2-4_amd64.deb"

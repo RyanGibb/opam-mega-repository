@@ -14,7 +14,7 @@ depends: [
   "deb-libsdl2-2-0-0" {>= "2.0.12"}
   "deb-libsdl2-image-2-0-0" {>= "2.0.5"}
   "deb-libsdl2-mixer-2-0-0" {>= "2.6.0"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "dreamchess_0.3.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dreamchess/dreamchess_0.3.0-2_amd64.deb"

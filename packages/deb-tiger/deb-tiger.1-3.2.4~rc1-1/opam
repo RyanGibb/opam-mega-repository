@@ -11,7 +11,7 @@ depends: [
   "deb-libc6" {>= "2.2.5"}
   "deb-net-tools"
   "deb-ucf"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "tiger_1:3.2.4~rc1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tiger/tiger_3.2.4~rc1-1_amd64.deb"

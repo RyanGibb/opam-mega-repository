@@ -15,7 +15,7 @@ depends: [
   "deb-libstdc++6" {>= "5"}
   "deb-libwayland-client0" {>= "1.20.0"}
   "deb-libx11-6"
-  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb-libqt5gui5-gles" {>= "5.15.2~"})
 ]
 extra-source "libkf5guiaddons5_5.103.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kguiaddons/libkf5guiaddons5_5.103.0-1_amd64.deb"

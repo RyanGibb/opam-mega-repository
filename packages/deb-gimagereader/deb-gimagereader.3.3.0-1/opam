@@ -32,7 +32,7 @@ depends: [
   "deb-libuuid1" {>= "2.16"}
   "deb-libxml++2-6-2v5" {>= "2.40.0"}
   "deb-libzip4" {>= "0.11.2"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gimagereader_3.3.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gimagereader/gimagereader_3.3.0-1_amd64.deb"

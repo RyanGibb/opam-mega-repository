@@ -12,7 +12,7 @@ depends: [
   "deb-libx11-6"
   "deb-perl" {>= "5.36.0-7"}
   "deb-perl-base"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "libopengl-perl_0.7000+dfsg-8_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libo/libopengl-perl/libopengl-perl_0.7000+dfsg-8_amd64.deb"

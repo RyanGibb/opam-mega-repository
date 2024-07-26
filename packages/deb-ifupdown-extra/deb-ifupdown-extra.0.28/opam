@@ -12,8 +12,8 @@ depends: [
   "deb-lsb-base"
   "deb-net-tools"
   "deb-netcat"
-  ("deb-iputils-arping" | "deb- arping")
-  ("deb-iputils-ping" | "deb- ping")
+  ("deb-iputils-arping" | "deb-arping")
+  ("deb-iputils-ping" | "deb-ping")
 ]
 conflicts: [
   "deb-debian-goodies" {< "0.39"}

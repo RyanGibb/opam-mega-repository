@@ -13,7 +13,7 @@ depends: [
   "deb-libqt5sql5-sqlite"
   "deb-libstdc++6" {>= "5"}
   "deb-qtchooser"
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "qhelpgenerator-qt5_5.15.8-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qttools-opensource-src/qhelpgenerator-qt5_5.15.8-2_amd64.deb"

@@ -8,8 +8,8 @@ remove: [
 depends: [
   "deb-libdbd-pg-perl"
   "deb-postgresql-client"
-  ("deb-dbconfig-pgsql" | "deb- dbconfig-no-thanks")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-dbconfig-pgsql" | "deb-dbconfig-no-thanks")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "rt5-db-postgresql_5.0.3+dfsg-3~deb12u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/request-tracker5/rt5-db-postgresql_5.0.3+dfsg-3~deb12u2_all.deb"

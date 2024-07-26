@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-rails-i18n"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-rails-i18n_5.1.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-rails-i18n/ruby-rails-i18n_5.1.2-2_all.deb"

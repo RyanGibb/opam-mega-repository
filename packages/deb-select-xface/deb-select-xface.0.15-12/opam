@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-emacsen-common" {>= "2.0.8"}
-  ("deb-emacs-nox" | "deb- emacs" | "deb- emacsen")
+  ("deb-emacs-nox" | "deb-emacs" | "deb-emacsen")
 ]
 extra-source "select-xface_0.15-12_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/select-xface/select-xface_0.15-12_all.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl"
-  ("deb-libperl4-corelibs-perl" | "deb- perl" {< "5.12.3-7"})
+  ("deb-libperl4-corelibs-perl" | "deb-perl" {< "5.12.3-7"})
 ]
 conflicts: [
   "deb-rplay-perl"

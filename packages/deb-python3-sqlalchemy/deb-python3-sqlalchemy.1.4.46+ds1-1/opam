@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-python3-any"
   "deb-python3-greenlet"
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-sqlalchemy_1.4.46+ds1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sqlalchemy/python3-sqlalchemy_1.4.46+ds1-1_all.deb"

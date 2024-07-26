@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-erlang-mnesia" {>= "1-23.2.6+dfsg"}
   "deb-erlang-yaws" {= "2.0.8+dfsg-3"}
-  ("deb-erlang-base" {>= "1-23.2.6+dfsg"} | "deb- erlang-base-hipe" {>= "1-23.2.6+dfsg"})
+  ("deb-erlang-base" {>= "1-23.2.6+dfsg"} | "deb-erlang-base-hipe" {>= "1-23.2.6+dfsg"})
 ]
 extra-source "erlang-yapp_2.0.8+dfsg-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/y/yaws/erlang-yapp_2.0.8+dfsg-3_amd64.deb"

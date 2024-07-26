@@ -21,7 +21,7 @@ depends: [
   "deb-libstdc++6" {>= "9"}
   "deb-libzstd1" {>= "1.4.0"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-ocl-icd-libopencl1" | "deb- libopencl1")
+  ("deb-ocl-icd-libopencl1" | "deb-libopencl1")
 ]
 extra-source "mesa-opencl-icd_20.3.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mesa/mesa-opencl-icd_20.3.5-1_amd64.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-mocha" {>= "1.1"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-bourne_1.6.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-bourne/ruby-bourne_1.6.0-3_all.deb"

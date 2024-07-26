@@ -31,7 +31,7 @@ depends: [
   "deb-ucf" {>= "0.8"}
   "deb-uno-libs-private"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libreoffice-core-nogui" {= "4-7.4.7-1+deb12u3"} | "deb- libreoffice-core" {= "4-7.4.7-1+deb12u3"})
+  ("deb-libreoffice-core-nogui" {= "4-7.4.7-1+deb12u3"} | "deb-libreoffice-core" {= "4-7.4.7-1+deb12u3"})
 ]
 conflicts: [
   "deb-libreoffice-writer"

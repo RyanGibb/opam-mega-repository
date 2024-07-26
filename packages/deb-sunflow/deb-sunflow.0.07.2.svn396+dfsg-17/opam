@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libsunflow-java"
   "deb-python-any" {>= "2.7.5-5~"}
-  ("deb-default-jre" | "deb- java8-runtime")
+  ("deb-default-jre" | "deb-java8-runtime")
 ]
 extra-source "sunflow_0.07.2.svn396+dfsg-17_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sunflow/sunflow_0.07.2.svn396+dfsg-17_all.deb"

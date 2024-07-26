@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r multiboot"]
 ]
 depends: [
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 extra-source "multiboot_0.6.96+20101113-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/multiboot/multiboot_0.6.96+20101113-2_all.deb"

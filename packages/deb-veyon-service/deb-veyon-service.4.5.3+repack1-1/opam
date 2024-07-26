@@ -17,7 +17,7 @@ depends: [
   "deb-libstdc++6" {>= "4.1.1"}
   "deb-libveyon-core" {= "4.5.3+repack1-1"}
   "deb-x11vnc"
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "veyon-service_4.5.3+repack1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/veyon/veyon-service_4.5.3+repack1-1_amd64.deb"

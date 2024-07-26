@@ -12,9 +12,9 @@ depends: [
   "deb-perl"
   "deb-shorewall-core" {< "5.2.4~"}
   "deb-shorewall-core" {>= "5.2.3~"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-debconf" {>= "1.4.69"} | "deb- cdebconf" {>= "0.39"})
-  ("deb-iproute2" | "deb- iproute")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-debconf" {>= "1.4.69"} | "deb-cdebconf" {>= "0.39"})
+  ("deb-iproute2" | "deb-iproute")
 ]
 extra-source "shorewall_5.2.3.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/shorewall/shorewall_5.2.3.4-1_all.deb"

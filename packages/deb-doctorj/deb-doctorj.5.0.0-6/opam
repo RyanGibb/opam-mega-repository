@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r doctorj"]
 ]
 depends: [
-  ("deb-default-jre-headless" {>= "2-1.7"} | "deb- java7-runtime-headless")
+  ("deb-default-jre-headless" {>= "2-1.7"} | "deb-java7-runtime-headless")
 ]
 extra-source "doctorj_5.0.0-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/doctorj/doctorj_5.0.0-6_all.deb"

@@ -11,7 +11,7 @@ depends: [
   "deb-libcommons-logging-java"
   "deb-libjets3t-java" {= "0.8.1+dfsg-4"}
   "deb-liblog4j1-2-java"
-  ("deb-default-jre" | "deb- java5-runtime")
+  ("deb-default-jre" | "deb-java5-runtime")
 ]
 extra-source "jets3t_0.8.1+dfsg-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jets3t/jets3t_0.8.1+dfsg-4_all.deb"

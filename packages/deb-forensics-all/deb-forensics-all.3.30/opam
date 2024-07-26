@@ -113,7 +113,7 @@ depends: [
   "deb-wipe"
   "deb-xmount"
   "deb-yara"
-  ("deb-crack" | "deb- crack-md5")
+  ("deb-crack" | "deb-crack-md5")
 ]
 extra-source "forensics-all_3.30_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/forensics-all/forensics-all_3.30_all.deb"

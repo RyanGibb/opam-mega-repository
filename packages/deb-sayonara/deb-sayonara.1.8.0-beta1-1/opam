@@ -26,7 +26,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-pydbus"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "sayonara_1.8.0-beta1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sayonara/sayonara_1.8.0-beta1-1_amd64.deb"

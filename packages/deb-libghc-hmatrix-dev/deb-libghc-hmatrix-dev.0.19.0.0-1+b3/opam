@@ -17,8 +17,8 @@ depends: [
   "deb-libghc-vector-dev"
   "deb-libgmp10"
   "deb-liblapack-dev"
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libghc-hmatrix-dev_0.19.0.0-1+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/haskell-hmatrix/libghc-hmatrix-dev_0.19.0.0-1+b3_amd64.deb"

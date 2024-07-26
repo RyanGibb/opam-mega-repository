@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-aspell" {>= "0.60.7~20110707-1.3"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "aspell-no_2.2-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/norwegian/aspell-no_2.2-4_all.deb"

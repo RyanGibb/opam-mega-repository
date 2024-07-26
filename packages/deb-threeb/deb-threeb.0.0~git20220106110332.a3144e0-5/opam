@@ -11,7 +11,7 @@ depends: [
   "deb-libgcc-s1" {>= "3.0"}
   "deb-libgvars3-headless0" {>= "0.0~git20220105194034.62f5a78"}
   "deb-libstdc++6" {>= "11"}
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "threeb_0.0~git20220106110332.a3144e0-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/threeb/threeb_0.0~git20220106110332.a3144e0-5_amd64.deb"

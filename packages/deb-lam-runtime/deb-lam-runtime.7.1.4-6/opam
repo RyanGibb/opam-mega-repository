@@ -10,8 +10,8 @@ depends: [
   "deb-libgcc1" {>= "1-3.0"}
   "deb-liblam4"
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-openssh-client" | "deb- ssh-client" | "deb- rsh-client")
-  ("deb-openssh-server" | "deb- ssh-server" | "deb- rsh-server")
+  ("deb-openssh-client" | "deb-ssh-client" | "deb-rsh-client")
+  ("deb-openssh-server" | "deb-ssh-server" | "deb-rsh-server")
 ]
 conflicts: [
   "deb-lam"

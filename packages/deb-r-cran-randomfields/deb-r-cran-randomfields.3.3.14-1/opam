@@ -13,7 +13,7 @@ depends: [
   "deb-r-base-core" {>= "4.1.2-2"}
   "deb-r-cran-randomfieldsutils" {>= "1.1"}
   "deb-r-cran-sp"
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "r-cran-randomfields_3.3.14-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-randomfields/r-cran-randomfields_3.3.14-1_amd64.deb"

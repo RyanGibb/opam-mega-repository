@@ -8,8 +8,8 @@ remove: [
 depends: [
   "deb-perl-any"
   "deb-smbclient"
-  ("deb-apache2" | "deb- httpd-cgi")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-apache2" | "deb-httpd-cgi")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "smb2www_980804-45_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/smb2www/smb2www_980804-45_all.deb"

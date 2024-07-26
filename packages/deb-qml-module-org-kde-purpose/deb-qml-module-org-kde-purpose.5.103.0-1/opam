@@ -17,7 +17,7 @@ depends: [
   "deb-qml-module-qtquick-controls2"
   "deb-qml-module-qtquick-layouts"
   "deb-qml-module-qtquick2"
-  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb-libqt5gui5-gles" {>= "5.15.2~"})
 ]
 extra-source "qml-module-org-kde-purpose_5.103.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/purpose/qml-module-org-kde-purpose_5.103.0-1_amd64.deb"

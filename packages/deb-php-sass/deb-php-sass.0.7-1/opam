@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.14"}
   "deb-libsass1"
-  ("deb-phpapi-20190902" | "deb- phpapi-20180731")
+  ("deb-phpapi-20190902" | "deb-phpapi-20180731")
 ]
 extra-source "php-sass_0.7-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sassphp/php-sass_0.7-1_amd64.deb"

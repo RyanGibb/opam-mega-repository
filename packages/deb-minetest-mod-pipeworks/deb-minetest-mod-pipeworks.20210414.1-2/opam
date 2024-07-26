@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-minetest-mod-basic-materials"
-  ("deb-minetest" | "deb- minetest-server")
+  ("deb-minetest" | "deb-minetest-server")
 ]
 extra-source "minetest-mod-pipeworks_20210414.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/minetest-mod-pipeworks/minetest-mod-pipeworks_20210414.1-2_all.deb"

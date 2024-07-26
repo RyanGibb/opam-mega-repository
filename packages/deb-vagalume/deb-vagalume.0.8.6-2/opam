@@ -26,7 +26,7 @@ depends: [
   "deb-libproxy1v5" {>= "0.4.11"}
   "deb-librsvg2-common"
   "deb-libxml2" {>= "2.7.4"}
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus")
 ]
 extra-source "vagalume_0.8.6-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/vagalume/vagalume_0.8.6-2_amd64.deb"

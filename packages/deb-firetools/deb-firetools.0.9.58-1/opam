@@ -14,7 +14,7 @@ depends: [
   "deb-libqt5svg5"
   "deb-libqt5widgets5" {>= "5.11.0~rc1"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-xterm" | "deb- x-terminal-emulator")
+  ("deb-xterm" | "deb-x-terminal-emulator")
 ]
 extra-source "firetools_0.9.58-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/firetools/firetools_0.9.58-1_amd64.deb"

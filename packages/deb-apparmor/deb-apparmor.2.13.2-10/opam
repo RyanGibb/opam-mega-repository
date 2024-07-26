@@ -10,7 +10,7 @@ depends: [
   "deb-libc6" {>= "2.17"}
   "deb-lsb-base"
   "deb-python3-any"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "apparmor_2.13.2-10_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/apparmor/apparmor_2.13.2-10_amd64.deb"

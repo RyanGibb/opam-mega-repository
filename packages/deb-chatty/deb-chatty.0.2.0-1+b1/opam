@@ -23,7 +23,7 @@ depends: [
   "deb-libpurple0" {>= "2.8.0"}
   "deb-libsqlite3-0" {>= "3.7.15"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "chatty_0.2.0-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/chatty/chatty_0.2.0-1+b1_amd64.deb"

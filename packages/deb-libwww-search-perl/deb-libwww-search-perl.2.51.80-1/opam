@@ -16,7 +16,7 @@ depends: [
   "deb-libwww-mechanize-perl"
   "deb-libwww-perl"
   "deb-perl"
-  ("deb-libcgi-pm-perl" | "deb- perl" {< "5.19"})
+  ("deb-libcgi-pm-perl" | "deb-perl" {< "5.19"})
 ]
 extra-source "libwww-search-perl_2.51.80-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libw/libwww-search-perl/libwww-search-perl_2.51.80-1_all.deb"

@@ -28,7 +28,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.15.1"}
   "deb-libstdc++6" {>= "9"}
   "deb-wsjtx-data" {= "2.3.0+repack-2"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "wsjtx_2.3.0+repack-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/wsjtx/wsjtx_2.3.0+repack-2_amd64.deb"

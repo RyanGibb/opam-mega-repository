@@ -16,7 +16,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libtinyxml2-6-2v5"
   "deb-opencity-data" {= "0.0.6.5stable-5"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "opencity_0.0.6.5stable-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/opencity/opencity_0.0.6.5stable-5_amd64.deb"

@@ -11,8 +11,8 @@ depends: [
   "deb-debconf" {>= "1.2.0"}
   "deb-libc6" {>= "2.14"}
   "deb-mono-runtime" {>= "2.10"}
-  ("deb-mono-apache-server" {< "4.4"} | "deb- mono-apache-server4" {< "4.4"})
-  ("deb-mono-apache-server" {>= "4.2"} | "deb- mono-apache-server4" {>= "4.2"})
+  ("deb-mono-apache-server" {< "4.4"} | "deb-mono-apache-server4" {< "4.4"})
+  ("deb-mono-apache-server" {>= "4.2"} | "deb-mono-apache-server4" {>= "4.2"})
 ]
 extra-source "libapache2-mod-mono_3.8-3+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mod-mono/libapache2-mod-mono_3.8-3+b2_amd64.deb"

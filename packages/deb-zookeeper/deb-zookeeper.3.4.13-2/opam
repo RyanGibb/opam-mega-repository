@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-adduser"
   "deb-libzookeeper-java" {= "3.4.13-2"}
-  ("deb-default-jre-headless" | "deb- java6-runtime-headless")
+  ("deb-default-jre-headless" | "deb-java6-runtime-headless")
 ]
 extra-source "zookeeper_3.4.13-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/z/zookeeper/zookeeper_3.4.13-2_all.deb"

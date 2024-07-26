@@ -10,7 +10,7 @@ depends: [
   "deb-libc6" {>= "2.14"}
   "deb-libtcl8-6" {>= "8.6.0"}
   "deb-procps"
-  ("deb-tcl8-6" | "deb- tcl")
+  ("deb-tcl8-6" | "deb-tcl")
 ]
 conflicts: [
   "deb-lmod"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-minetest-mod-throwing"
-  ("deb-minetest" | "deb- minetest-server")
+  ("deb-minetest" | "deb-minetest-server")
 ]
 extra-source "minetest-mod-throwing-arrows_1.1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/minetest-mod-throwing-arrows/minetest-mod-throwing-arrows_1.1-3_all.deb"

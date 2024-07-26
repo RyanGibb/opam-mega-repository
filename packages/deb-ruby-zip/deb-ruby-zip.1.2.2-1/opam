@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-unzip"
   "deb-zip"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-zip_1.2.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-zip/ruby-zip_1.2.2-1_amd64.deb"

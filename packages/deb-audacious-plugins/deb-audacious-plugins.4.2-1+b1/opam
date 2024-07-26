@@ -63,8 +63,8 @@ depends: [
   "deb-libxml2" {>= "2.7.4"}
   "deb-libxrender1"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "audacious-plugins_4.2-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/audacious-plugins/audacious-plugins_4.2-1+b1_amd64.deb"

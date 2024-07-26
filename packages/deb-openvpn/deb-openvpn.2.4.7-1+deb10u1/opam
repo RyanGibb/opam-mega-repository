@@ -15,7 +15,7 @@ depends: [
   "deb-libssl1-1" {>= "1.1.1"}
   "deb-libsystemd0"
   "deb-lsb-base" {>= "3.0-6"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "openvpn_2.4.7-1+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/openvpn/openvpn_2.4.7-1+deb10u1_amd64.deb"

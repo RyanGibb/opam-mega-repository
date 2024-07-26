@@ -17,7 +17,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-python-qt-binding"
   "deb-python3-sip"
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "python3-rviz_1.14.4+dfsg-3+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ros-rviz/python3-rviz_1.14.4+dfsg-3+b1_amd64.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.34"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "alsaplayer-jack_0.99.81-2+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/alsaplayer/alsaplayer-jack_0.99.81-2+b3_amd64.deb"

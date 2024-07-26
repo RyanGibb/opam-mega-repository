@@ -13,7 +13,7 @@ depends: [
   "deb-perl"
   "deb-perl-tk"
   "deb-ucf"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "colplot_5.2.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/colplot/colplot_5.2.0-1_all.deb"

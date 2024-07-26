@@ -51,7 +51,7 @@ depends: [
   "deb-libwebsockets16" {>= "3.2.0"}
   "deb-libx11-6"
   "deb-libxml2" {>= "2.7.4"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "ardour_1:6.5.0+ds0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/ardour/ardour_6.5.0+ds0-1_amd64.deb"

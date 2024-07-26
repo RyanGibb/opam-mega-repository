@@ -9,7 +9,7 @@ depends: [
   "deb-cockpit-bridge" {>= "215"}
   "deb-libvirt-daemon-system"
   "deb-libvirt-dbus"
-  ("deb-libvirt-clients" | "deb- libvirt-bin")
+  ("deb-libvirt-clients" | "deb-libvirt-bin")
 ]
 extra-source "cockpit-machines_288-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cockpit-machines/cockpit-machines_288-1_all.deb"

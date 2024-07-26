@@ -11,7 +11,7 @@ depends: [
   "deb-ruby-multi-json"
   "deb-ruby-posix-spawn"
   "deb-ruby-yajl"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-pygments.rb_1.2.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-pygments.rb/ruby-pygments.rb_1.2.0-4_all.deb"

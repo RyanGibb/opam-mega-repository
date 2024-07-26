@@ -16,7 +16,7 @@ depends: [
   "deb-libwbxml2-0" {>= "0.10.0"}
   "deb-virtuoso-opensource-6-1-bin" {= "6.1.6+dfsg2-4+b2"}
   "deb-virtuoso-opensource-6-1-common" {= "6.1.6+dfsg2-4+b2"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "virtuoso-opensource-6.1_6.1.6+dfsg2-4+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/virtuoso-opensource/virtuoso-opensource-6.1_6.1.6+dfsg2-4+b2_amd64.deb"

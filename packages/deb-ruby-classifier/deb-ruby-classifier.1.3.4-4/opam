@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-fast-stemmer"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-classifier_1.3.4-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-classifier/ruby-classifier_1.3.4-4_all.deb"

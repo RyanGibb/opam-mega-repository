@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-t-code-common" {= "2-2.3.1-9"}
-  ("deb-emacs-nox" | "deb- emacs" | "deb- xemacs21-mule" | "deb- xemacs21-mule-canna-wnn" | "deb- emacsen")
+  ("deb-emacs-nox" | "deb-emacs" | "deb-xemacs21-mule" | "deb-xemacs21-mule-canna-wnn" | "deb-emacsen")
 ]
 extra-source "t-code_2:2.3.1-9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/t-code/t-code_2.3.1-9_all.deb"

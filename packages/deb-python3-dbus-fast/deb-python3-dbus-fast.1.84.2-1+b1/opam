@@ -11,7 +11,7 @@ depends: [
   "deb-python3" {< "3.12"}
   "deb-python3" {>= "3.11~"}
   "deb-python3-any"
-  ("deb-python3-async-timeout" | "deb- python3" {> "3.11"})
+  ("deb-python3-async-timeout" | "deb-python3" {> "3.11"})
 ]
 extra-source "python3-dbus-fast_1.84.2-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dbus-fast/python3-dbus-fast_1.84.2-1+b1_amd64.deb"

@@ -9,7 +9,7 @@ depends: [
   "deb-default-jre"
   "deb-jarwrapper" {>= "0.5"}
   "deb-libdicomscope-jni"
-  ("deb-tk8-6" | "deb- tk8-5" | "deb- tk8-4" | "deb- wish")
+  ("deb-tk8-6" | "deb-tk8-5" | "deb-tk8-4" | "deb-wish")
 ]
 extra-source "dicomscope_3.6.0-20_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dicomscope/dicomscope_3.6.0-20_all.deb"

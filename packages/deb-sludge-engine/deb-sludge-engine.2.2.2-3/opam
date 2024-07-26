@@ -19,7 +19,7 @@ depends: [
   "deb-libvorbis0a" {>= "1.1.2"}
   "deb-libvpx6" {>= "1.6.0"}
   "deb-xdg-utils"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "sludge-engine_2.2.2-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sludge/sludge-engine_2.2.2-3_amd64.deb"

@@ -17,9 +17,9 @@ depends: [
   "deb-python3-pkg-resources"
   "deb-python3-sympy"
   "deb-unicode-data" {>= "14.0.0"}
-  ("deb-python3-scipy" {>= "1.8.1"} | "deb- python3-munkres" {>= "1.1.4"})
-  ("deb-python3-ufolib2" {>= "0.13.1"} | "deb- python3-defcon" {>= "0.6.0"})
-  ("deb-python3-unicodedata2" {>= "14.0.0"} | "deb- python3-all" {>= "3.11.0"})
+  ("deb-python3-scipy" {>= "1.8.1"} | "deb-python3-munkres" {>= "1.1.4"})
+  ("deb-python3-ufolib2" {>= "0.13.1"} | "deb-python3-defcon" {>= "0.6.0"})
+  ("deb-python3-unicodedata2" {>= "14.0.0"} | "deb-python3-all" {>= "3.11.0"})
 ]
 extra-source "python3-fonttools_4.38.0-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fonttools/python3-fonttools_4.38.0-1+b1_amd64.deb"

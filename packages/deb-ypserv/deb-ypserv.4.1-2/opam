@@ -16,7 +16,7 @@ depends: [
   "deb-lsb-base" {>= "3.0-6"}
   "deb-make"
   "deb-ucf"
-  ("deb-rpcbind" | "deb- portmap")
+  ("deb-rpcbind" | "deb-portmap")
 ]
 conflicts: [
   "deb-nis" {< "4"}

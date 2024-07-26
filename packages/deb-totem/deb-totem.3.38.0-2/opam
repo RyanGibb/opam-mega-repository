@@ -25,7 +25,7 @@ depends: [
   "deb-libtotem0" {>= "3.38.0-2"}
   "deb-libx11-6"
   "deb-totem-common" {>= "3.38.0-2"}
-  ("deb-libgdk-pixbuf-2-0-0" {>= "2.23.0"} | "deb- libgdk-pixbuf2-0-0" {>= "2.23.0"})
+  ("deb-libgdk-pixbuf-2-0-0" {>= "2.23.0"} | "deb-libgdk-pixbuf2-0-0" {>= "2.23.0"})
 ]
 extra-source "totem_3.38.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/totem/totem_3.38.0-2_amd64.deb"

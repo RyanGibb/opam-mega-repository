@@ -14,7 +14,7 @@ depends: [
   "deb-libxmu-dev"
   "deb-qtbase5-dev"
   "deb-qtbase5-dev-tools"
-  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
+  ("deb-libgl1-mesa-dev" | "deb-libgl-dev")
 ]
 extra-source "libqglviewer-dev-qt5_2.6.3+dfsg2-9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libq/libqglviewer/libqglviewer-dev-qt5_2.6.3+dfsg2-9_amd64.deb"

@@ -17,7 +17,7 @@ depends: [
   "deb-libqt6widgets6" {>= "6.3.0"}
   "deb-libqt6xml6" {>= "6.1.2"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "qjackctl_0.9.9-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qjackctl/qjackctl_0.9.9-1_amd64.deb"

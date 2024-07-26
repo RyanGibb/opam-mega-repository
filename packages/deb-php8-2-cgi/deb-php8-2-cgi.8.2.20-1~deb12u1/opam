@@ -19,7 +19,7 @@ depends: [
   "deb-tzdata"
   "deb-ucf"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-media-types" | "deb- mime-support")
+  ("deb-media-types" | "deb-mime-support")
 ]
 extra-source "php8.2-cgi_8.2.20-1~deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/php8.2/php8.2-cgi_8.2.20-1~deb12u1_amd64.deb"

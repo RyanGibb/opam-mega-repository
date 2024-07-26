@@ -9,7 +9,7 @@ depends: [
   "deb-neutron-common" {= "2-21.0.0-7"}
   "deb-sudo"
   "deb-sysvinit-utils"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "neutron-openvswitch-agent_2:21.0.0-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/neutron/neutron-openvswitch-agent_21.0.0-7_all.deb"

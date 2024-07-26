@@ -14,8 +14,8 @@ depends: [
   "deb-libscalapack-openmpi2-1" {>= "2.1.0"}
   "deb-mpi-default-bin"
   "deb-nwchem-data" {= "7.0.2-1"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "nwchem_7.0.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/nwchem/nwchem_7.0.2-1_amd64.deb"

@@ -11,7 +11,7 @@ depends: [
   "deb-python3-libarchive-c"
   "deb-python3-magic"
   "deb-python3-pkg-resources"
-  ("deb-python3-distutils" | "deb- libpython3-5-stdlib" | "deb- libpython3-6-stdlib" {< "3.6.5~rc1-2"})
+  ("deb-python3-distutils" | "deb-libpython3-5-stdlib" | "deb-libpython3-6-stdlib" {< "3.6.5~rc1-2"})
 ]
 extra-source "diffoscope_113_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/diffoscope/diffoscope_113_all.deb"

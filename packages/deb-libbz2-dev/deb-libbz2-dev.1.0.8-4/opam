@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libbz2-1-0" {= "1.0.8-4"}
-  ("deb-libc6-dev" | "deb- libc-dev")
+  ("deb-libc6-dev" | "deb-libc-dev")
 ]
 extra-source "libbz2-dev_1.0.8-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/bzip2/libbz2-dev_1.0.8-4_amd64.deb"

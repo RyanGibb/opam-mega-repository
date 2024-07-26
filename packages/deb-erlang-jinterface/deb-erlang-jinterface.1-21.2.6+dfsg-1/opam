@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r erlang-jinterface"]
 ]
 depends: [
-  ("deb-default-jre-headless" | "deb- java2-runtime-headless" | "deb- java1-runtime-headless" | "deb- java2-runtime" | "deb- java1-runtime")
+  ("deb-default-jre-headless" | "deb-java2-runtime-headless" | "deb-java1-runtime-headless" | "deb-java2-runtime" | "deb-java1-runtime")
 ]
 extra-source "erlang-jinterface_1:21.2.6+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/erlang/erlang-jinterface_21.2.6+dfsg-1_all.deb"

@@ -14,7 +14,7 @@ depends: [
   "deb-libsdl1-2debian" {>= "1.2.11"}
   "deb-ssft"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-zenity" | "deb- kdebase-bin")
+  ("deb-zenity" | "deb-kdebase-bin")
 ]
 extra-source "infon-viewer_0~r198-8+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/infon/infon-viewer_0~r198-8+b3_amd64.deb"

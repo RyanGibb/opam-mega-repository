@@ -10,7 +10,7 @@ depends: [
   "deb-libcommons-lang-java"
   "deb-libhtsjdk-java"
   "deb-scala-library"
-  ("deb-default-jre" | "deb- java-runtime")
+  ("deb-default-jre" | "deb-java-runtime")
 ]
 conflicts: [
   "deb-pilon-non-free"

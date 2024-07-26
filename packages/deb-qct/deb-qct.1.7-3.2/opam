@@ -9,7 +9,7 @@ depends: [
   "deb-python-any" {< "2.8"}
   "deb-python-any" {>= "2.7.5-5~"}
   "deb-python-qt4"
-  ("deb-mercurial" | "deb- bzr" | "deb- monotone" | "deb- subversion" | "deb- cvs")
+  ("deb-mercurial" | "deb-bzr" | "deb-monotone" | "deb-subversion" | "deb-cvs")
 ]
 extra-source "qct_1.7-3.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qct/qct_1.7-3.2_all.deb"

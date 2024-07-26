@@ -12,10 +12,10 @@ depends: [
   "deb-libyaml-perl"
   "deb-perl-any"
   "deb-postgresql-client"
-  ("deb-php" | "deb- php5")
-  ("deb-php-cli" | "deb- php5-cli")
-  ("deb-php-pgsql" | "deb- php5-pgsql")
-  ("deb-php-xml" | "deb- php5")
+  ("deb-php" | "deb-php5")
+  ("deb-php-cli" | "deb-php5-cli")
+  ("deb-php-pgsql" | "deb-php5-pgsql")
+  ("deb-php-xml" | "deb-php5")
 ]
 extra-source "davical_1.1.12-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/davical/davical_1.1.12-2_all.deb"

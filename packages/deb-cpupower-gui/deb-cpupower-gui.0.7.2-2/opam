@@ -13,7 +13,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-dbus"
   "deb-python3-gi"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "cpupower-gui_0.7.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cpupower-gui/cpupower-gui_0.7.2-2_amd64.deb"

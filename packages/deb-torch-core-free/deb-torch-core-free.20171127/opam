@@ -25,7 +25,7 @@ depends: [
   "deb-luajit" {>= "2.1.0~"}
   "deb-luarocks"
   "deb-torch-trepl"
-  ("deb-libopenblas-base" | "deb- libatlas-base" | "deb- libblas-so-3")
+  ("deb-libopenblas-base" | "deb-libatlas-base" | "deb-libblas-so-3")
 ]
 extra-source "torch-core-free_20171127_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/meta-torch-core-free/torch-core-free_20171127_amd64.deb"

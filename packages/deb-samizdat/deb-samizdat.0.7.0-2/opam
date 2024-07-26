@@ -11,7 +11,7 @@ depends: [
   "deb-ruby-rack"
   "deb-ruby-rmagick"
   "deb-ruby-whitewash"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "samizdat_0.7.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/samizdat/samizdat_0.7.0-2_all.deb"

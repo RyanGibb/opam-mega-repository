@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.14"}
   "deb-pd-ggee"
   "deb-pd-libdir"
-  ("deb-puredata-core" | "deb- pd")
+  ("deb-puredata-core" | "deb-pd")
 ]
 extra-source "pd-pddp_0.2.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pd-pddp/pd-pddp_0.2.1-2_amd64.deb"

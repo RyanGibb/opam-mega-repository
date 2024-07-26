@@ -13,8 +13,8 @@ depends: [
   "deb-libwvstreams4-6-base"
   "deb-libwvstreams4-6-extras"
   "deb-ppp" {>= "2.3.0"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-debconf" {>= "0.5.00"} | "deb- cdebconf")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-debconf" {>= "0.5.00"} | "deb-cdebconf")
 ]
 extra-source "wvdial_1.61-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/wvdial/wvdial_1.61-5_amd64.deb"

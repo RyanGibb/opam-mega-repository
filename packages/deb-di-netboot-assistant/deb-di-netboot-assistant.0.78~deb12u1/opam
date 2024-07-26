@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-binutils"
   "deb-ca-certificates"
-  ("deb-wget" | "deb- curl")
+  ("deb-wget" | "deb-curl")
 ]
 extra-source "di-netboot-assistant_0.78~deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/di-netboot-assistant/di-netboot-assistant_0.78~deb12u1_all.deb"

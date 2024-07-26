@@ -38,7 +38,7 @@ depends: [
   "deb-python3-numpy"
   "deb-python3-xdg"
   ("deb-gstreamer1-0-plugins-bad" | "deb-gstreamer1-0-alsa" | "deb-gstreamer1-0-plugins-good")
-  ("deb-gstreamer1-0-x" | "deb- gstreamer1-0-videosink")
+  ("deb-gstreamer1-0-x" | "deb-gstreamer1-0-videosink")
 ]
 extra-source "pitivi_2020.09.2-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pitivi/pitivi_2020.09.2-3_amd64.deb"

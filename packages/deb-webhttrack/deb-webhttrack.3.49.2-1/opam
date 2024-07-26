@@ -10,7 +10,7 @@ depends: [
   "deb-libhttrack2" {>= "3.49.2"}
   "deb-webhttrack-common"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-iceape-browser" | "deb- iceweasel" | "deb- icecat" | "deb- mozilla" | "deb- firefox" | "deb- mozilla-firefox" | "deb- www-browser")
+  ("deb-iceape-browser" | "deb-iceweasel" | "deb-icecat" | "deb-mozilla" | "deb-firefox" | "deb-mozilla-firefox" | "deb-www-browser")
 ]
 extra-source "webhttrack_3.49.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/httrack/webhttrack_3.49.2-1_amd64.deb"

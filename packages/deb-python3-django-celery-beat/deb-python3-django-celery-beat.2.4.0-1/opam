@@ -11,7 +11,7 @@ depends: [
   "deb-python3-crontab"
   "deb-python3-django"
   "deb-python3-django-timezone-field" {>= "5~"}
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-django-celery-beat_2.4.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-django-celery-beat/python3-django-celery-beat_2.4.0-1_all.deb"

@@ -17,7 +17,7 @@ depends: [
   "deb-perl" {>= "5.8.4"}
   "deb-vorbis-tools"
   "deb-wodim"
-  ("deb-mpg321" | "deb- mpg123")
+  ("deb-mpg321" | "deb-mpg123")
 ]
 extra-source "mp3roaster_0.3.0-6.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mp3roaster/mp3roaster_0.3.0-6.1_all.deb"

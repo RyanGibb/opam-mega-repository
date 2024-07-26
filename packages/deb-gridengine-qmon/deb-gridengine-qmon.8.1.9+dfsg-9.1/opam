@@ -15,7 +15,7 @@ depends: [
   "deb-libxext6"
   "deb-libxm4" {>= "2.3.4"}
   "deb-libxt6"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "gridengine-qmon_8.1.9+dfsg-9.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gridengine/gridengine-qmon_8.1.9+dfsg-9.1_amd64.deb"

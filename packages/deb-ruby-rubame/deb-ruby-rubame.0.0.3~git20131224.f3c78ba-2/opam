@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-websocket" {>= "1.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-rubame_0.0.3~git20131224.f3c78ba-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-rubame/ruby-rubame_0.0.3~git20131224.f3c78ba-2_all.deb"

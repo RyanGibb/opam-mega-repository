@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-i18n"
   "deb-ruby-polyglot" {>= "0.3"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-treetop_1.6.8-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-treetop/ruby-treetop_1.6.8-1_all.deb"

@@ -9,7 +9,7 @@ depends: [
   "deb-gir1-2-mediaart-2-0" {= "1.9.4-3"}
   "deb-libglib2-0-dev"
   "deb-libmediaart-2-0-0" {= "1.9.4-3"}
-  ("deb-libgdk-pixbuf-2-0-dev" | "deb- libgdk-pixbuf2-0-dev")
+  ("deb-libgdk-pixbuf-2-0-dev" | "deb-libgdk-pixbuf2-0-dev")
 ]
 extra-source "libmediaart-2.0-dev_1.9.4-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libm/libmediaart/libmediaart-2.0-dev_1.9.4-3_amd64.deb"

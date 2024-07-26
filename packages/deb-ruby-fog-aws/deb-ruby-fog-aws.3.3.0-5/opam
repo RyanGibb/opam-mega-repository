@@ -10,7 +10,7 @@ depends: [
   "deb-ruby-fog-json" {>= "1.1"}
   "deb-ruby-fog-xml" {>= "0.1"}
   "deb-ruby-ipaddress" {>= "0.8"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-fog-aws_3.3.0-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-fog-aws/ruby-fog-aws_3.3.0-5_all.deb"

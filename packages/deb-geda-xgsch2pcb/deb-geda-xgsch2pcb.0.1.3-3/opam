@@ -14,7 +14,7 @@ depends: [
   "deb-python-any" {>= "2.7.5-5~"}
   "deb-python-dbus"
   "deb-python-gtk2" {>= "2.8"}
-  ("deb-python-gobject" | "deb- python-gtk2" {< "2.10"})
+  ("deb-python-gobject" | "deb-python-gtk2" {< "2.10"})
 ]
 extra-source "geda-xgsch2pcb_0.1.3-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/geda-xgsch2pcb/geda-xgsch2pcb_0.1.3-3_all.deb"

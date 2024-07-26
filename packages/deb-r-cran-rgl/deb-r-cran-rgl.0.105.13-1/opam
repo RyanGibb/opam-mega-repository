@@ -23,7 +23,7 @@ depends: [
   "deb-r-cran-magrittr"
   "deb-r-cran-manipulatewidgets"
   "deb-r-cran-shiny"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "r-cran-rgl_0.105.13-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rgl/r-cran-rgl_0.105.13-1_amd64.deb"

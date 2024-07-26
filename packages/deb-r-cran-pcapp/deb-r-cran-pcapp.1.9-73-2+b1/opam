@@ -12,8 +12,8 @@ depends: [
   "deb-r-base-core"
   "deb-r-base-core" {>= "4.0.0-3"}
   "deb-r-cran-mvtnorm"
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "r-cran-pcapp_1.9-73-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-pcapp/r-cran-pcapp_1.9-73-2+b1_amd64.deb"

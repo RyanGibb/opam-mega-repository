@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libperl5-36" {= "5.36.0-7+deb12u1"}
   "deb-perl-any" {= "5.36.0-7+deb12u1"}
-  ("deb-libc6-dev" | "deb- libc-dev")
+  ("deb-libc6-dev" | "deb-libc-dev")
 ]
 extra-source "libperl-dev_5.36.0-7+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/perl/libperl-dev_5.36.0-7+deb12u1_amd64.deb"

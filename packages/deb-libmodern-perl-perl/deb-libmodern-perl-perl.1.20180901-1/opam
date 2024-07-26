@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl"
-  ("deb-perl" {>= "5.19.5"} | "deb- libautodie-perl" {>= "2.22"})
+  ("deb-perl" {>= "5.19.5"} | "deb-libautodie-perl" {>= "2.22"})
 ]
 extra-source "libmodern-perl-perl_1.20180901-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libm/libmodern-perl-perl/libmodern-perl-perl_1.20180901-1_all.deb"

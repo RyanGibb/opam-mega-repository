@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r minetest-mod-mobs-redo"]
 ]
 depends: [
-  ("deb-minetest" | "deb- minetest-server")
+  ("deb-minetest" | "deb-minetest-server")
 ]
 extra-source "minetest-mod-mobs-redo_20181016-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/minetest-mod-mobs-redo/minetest-mod-mobs-redo_20181016-1.1_all.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl-any"
-  ("deb-libcgi-pm-perl" | "deb- perl" {< "5.19"})
+  ("deb-libcgi-pm-perl" | "deb-perl" {< "5.19"})
 ]
 extra-source "libbiblio-thesaurus-perl_0.43-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libb/libbiblio-thesaurus-perl/libbiblio-thesaurus-perl_0.43-3_all.deb"

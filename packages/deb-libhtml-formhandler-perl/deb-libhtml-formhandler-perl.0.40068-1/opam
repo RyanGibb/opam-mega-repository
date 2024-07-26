@@ -29,7 +29,7 @@ depends: [
   "deb-libsub-name-perl"
   "deb-libtry-tiny-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.19.5"} | "deb- libscalar-list-utils-perl" {>= "1-1.33"})
+  ("deb-perl" {>= "5.19.5"} | "deb-libscalar-list-utils-perl" {>= "1-1.33"})
 ]
 extra-source "libhtml-formhandler-perl_0.40068-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libh/libhtml-formhandler-perl/libhtml-formhandler-perl_0.40068-1_all.deb"

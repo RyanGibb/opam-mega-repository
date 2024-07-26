@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-compass-breakpoint-plugin"
   "deb-ruby-sass"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "compass-singularitygs-plugin_1.8.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/compass-singularitygs-plugin/compass-singularitygs-plugin_1.8.0-1_all.deb"

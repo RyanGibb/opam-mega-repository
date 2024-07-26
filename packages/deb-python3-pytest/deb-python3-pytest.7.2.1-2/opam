@@ -14,9 +14,9 @@ depends: [
   "deb-python3-pkg-resources"
   "deb-python3-pluggy" {>= "0.12"}
   "deb-python3-py"
-  ("deb-python3-exceptiongroup" | "deb- python3" {> "3.11"})
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
-  ("deb-python3-tomli" | "deb- python3" {> "3.11"})
+  ("deb-python3-exceptiongroup" | "deb-python3" {> "3.11"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
+  ("deb-python3-tomli" | "deb-python3" {> "3.11"})
 ]
 extra-source "python3-pytest_7.2.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pytest/python3-pytest_7.2.1-2_all.deb"

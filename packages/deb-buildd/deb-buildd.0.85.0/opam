@@ -17,7 +17,7 @@ depends: [
   "deb-sbuild" {>= "0.85.0"}
   "deb-schroot"
   "deb-sysvinit-utils"
-  ("deb-default-mta" | "deb- mail-transport-agent")
+  ("deb-default-mta" | "deb-mail-transport-agent")
 ]
 extra-source "buildd_0.85.0_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sbuild/buildd_0.85.0_all.deb"

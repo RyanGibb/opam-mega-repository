@@ -25,7 +25,7 @@ depends: [
   "deb-rep"
   "deb-rep-gtk" {>= "0.90.7"}
   "deb-sawfish-data" {= "1-1.11.90-1.2"}
-  ("deb-gnome-terminal" | "deb- x-terminal-emulator")
+  ("deb-gnome-terminal" | "deb-x-terminal-emulator")
 ]
 conflicts: [
   "deb-sawfish-themer"

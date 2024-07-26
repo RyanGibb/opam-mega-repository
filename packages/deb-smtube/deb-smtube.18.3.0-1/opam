@@ -16,7 +16,7 @@ depends: [
   "deb-libqt5webkit5" {>= "5.6.0~rc"}
   "deb-libqt5widgets5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-smplayer" | "deb- mpv" | "deb- mplayer" | "deb- vlc" | "deb- totem" | "deb- dragonplayer")
+  ("deb-smplayer" | "deb-mpv" | "deb-mplayer" | "deb-vlc" | "deb-totem" | "deb-dragonplayer")
 ]
 extra-source "smtube_18.3.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/smtube/smtube_18.3.0-1_amd64.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.3.2"}
   "deb-tree"
-  ("deb-gnupg2" | "deb- gnupg")
+  ("deb-gnupg2" | "deb-gnupg")
 ]
 extra-source "gopass_1.2.0-2+b10_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gopass/gopass_1.2.0-2+b10_amd64.deb"

@@ -28,9 +28,9 @@ depends: [
   "deb-mate-power-manager-common" {= "1.20.3-2"}
   "deb-policykit-1"
   "deb-upower"
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
-  ("deb-mate-notification-daemon" | "deb- notification-daemon")
-  ("deb-systemd" | "deb- elogind" | "deb- consolekit")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus")
+  ("deb-mate-notification-daemon" | "deb-notification-daemon")
+  ("deb-systemd" | "deb-elogind" | "deb-consolekit")
 ]
 extra-source "mate-power-manager_1.20.3-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mate-power-manager/mate-power-manager_1.20.3-2_amd64.deb"

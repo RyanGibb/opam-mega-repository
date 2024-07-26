@@ -35,8 +35,8 @@ depends: [
   "deb-lomiri-schemas" {>= "0.1.3"}
   "deb-qml-module-gsettings1-0"
   "deb-qml-module-qtmultimedia"
-  ("deb-libqt5gui5" {>= "5.6"} | "deb- libqt5gui5-gles" {>= "5.6"})
-  ("deb-libqt5quick5" {>= "5.15.1"} | "deb- libqt5quick5-gles" {>= "5.15.1"})
+  ("deb-libqt5gui5" {>= "5.6"} | "deb-libqt5gui5-gles" {>= "5.6"})
+  ("deb-libqt5quick5" {>= "5.15.1"} | "deb-libqt5quick5-gles" {>= "5.15.1"})
 ]
 extra-source "liblomiri-private0_0.1.2-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lomiri/liblomiri-private0_0.1.2-3_amd64.deb"

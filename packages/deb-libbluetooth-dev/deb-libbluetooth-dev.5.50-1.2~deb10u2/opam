@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libbluetooth3" {= "5.50-1.2~deb10u2"}
-  ("deb-libc6-dev" | "deb- libc-dev")
+  ("deb-libc6-dev" | "deb-libc-dev")
 ]
 conflicts: [
   "deb-bluez-pan"

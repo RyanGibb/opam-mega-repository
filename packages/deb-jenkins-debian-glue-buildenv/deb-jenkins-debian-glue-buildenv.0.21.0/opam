@@ -22,9 +22,9 @@ depends: [
   "deb-quilt"
   "deb-rsync"
   "deb-ruby"
-  ("deb-parallel" | "deb- moreutils")
-  ("deb-reprepro" | "deb- freight")
-  ("deb-subversion-tools" {<= "1.6.18dfsg-1"} | "deb- svn2cl")
+  ("deb-parallel" | "deb-moreutils")
+  ("deb-reprepro" | "deb-freight")
+  ("deb-subversion-tools" {<= "1.6.18dfsg-1"} | "deb-svn2cl")
 ]
 conflicts: [
   "deb-jenkins-debian-glue-buildenv-git"

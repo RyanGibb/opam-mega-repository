@@ -33,7 +33,7 @@ depends: [
   "deb-libvorbisfile3" {>= "1.1.2"}
   "deb-libxml2" {>= "2.7.4"}
   "deb-tracker" {>= "2.2.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "tracker-extract_2.3.5-2.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tracker-miners/tracker-extract_2.3.5-2.1_amd64.deb"

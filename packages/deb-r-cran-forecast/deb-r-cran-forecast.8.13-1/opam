@@ -23,7 +23,7 @@ depends: [
   "deb-r-cran-tseries"
   "deb-r-cran-urca"
   "deb-r-cran-zoo"
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "r-cran-forecast_8.13-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-forecast/r-cran-forecast_8.13-1_amd64.deb"

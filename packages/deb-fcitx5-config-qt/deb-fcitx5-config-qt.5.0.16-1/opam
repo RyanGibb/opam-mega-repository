@@ -21,7 +21,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libx11-6"
   "deb-libxkbfile1" {>= "1-1.1.0"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "fcitx5-config-qt_5.0.16-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fcitx5-configtool/fcitx5-config-qt_5.0.16-1_amd64.deb"

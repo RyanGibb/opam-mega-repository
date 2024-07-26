@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.4"}
-  ("deb-puredata-core" | "deb- pd")
+  ("deb-puredata-core" | "deb-pd")
 ]
 extra-source "pd-vbap_1.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pd-vbap/pd-vbap_1.1-2_amd64.deb"

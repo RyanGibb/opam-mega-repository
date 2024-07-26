@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libacl1" {= "2.3.1-3"}
   "deb-libattr1-dev" {>= "1-2.4.46-8"}
-  ("deb-libc6-dev" | "deb- libc-dev")
+  ("deb-libc6-dev" | "deb-libc-dev")
 ]
 conflicts: [
   "deb-acl-dev"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-emacsen-common" {>= "2.0.8"}
-  ("deb-emacs-nox" | "deb- emacs" | "deb- emacs25" | "deb- emacs24" | "deb- emacs-snapshot")
+  ("deb-emacs-nox" | "deb-emacs" | "deb-emacs25" | "deb-emacs24" | "deb-emacs-snapshot")
 ]
 extra-source "apel_10.8+0.20201106-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/apel/apel_10.8+0.20201106-1_all.deb"

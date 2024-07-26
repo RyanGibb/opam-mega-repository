@@ -18,7 +18,7 @@ depends: [
   "deb-libxinerama1"
   "deb-libxrandr2" {>= "4.3"}
   "deb-libxrender1"
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
 ]
 extra-source "compton_0.1~beta2+20150922-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/compton/compton_0.1~beta2+20150922-1_amd64.deb"

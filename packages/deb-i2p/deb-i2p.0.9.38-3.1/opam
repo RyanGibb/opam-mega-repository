@@ -14,7 +14,7 @@ depends: [
   "deb-lsb-base"
   "deb-service-wrapper"
   "deb-ucf" {>= "0.28"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "i2p_0.9.38-3.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/i2p/i2p_0.9.38-3.1_all.deb"

@@ -18,8 +18,8 @@ depends: [
   "deb-libxi6"
   "deb-libxmu-dev"
   "deb-libxmu6"
-  ("deb-g++" | "deb- c++-compiler")
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-g++" | "deb-c++-compiler")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "taopm_1.0-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/taopm/taopm_1.0-6_amd64.deb"

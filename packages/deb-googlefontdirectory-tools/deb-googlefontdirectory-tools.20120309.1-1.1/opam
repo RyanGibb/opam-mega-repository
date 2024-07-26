@@ -10,7 +10,7 @@ depends: [
   "deb-fonttools"
   "deb-python-any" {>= "2.7.5-5~"}
   "deb-python-fontforge"
-  ("deb-fontforge-nox" | "deb- fontforge")
+  ("deb-fontforge-nox" | "deb-fontforge")
 ]
 extra-source "googlefontdirectory-tools_20120309.1-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/googlefontdirectory-tools/googlefontdirectory-tools_20120309.1-1.1_all.deb"

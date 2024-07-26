@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libruby3-1"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-po-to-json_1.0.1-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-po-to-json/ruby-po-to-json_1.0.1-1.1_all.deb"

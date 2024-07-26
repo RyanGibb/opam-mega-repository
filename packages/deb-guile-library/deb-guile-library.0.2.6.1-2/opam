@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r guile-library"]
 ]
 depends: [
-  ("deb-guile-3-0" | "deb- guile-2-2")
+  ("deb-guile-3-0" | "deb-guile-2-2")
 ]
 extra-source "guile-library_0.2.6.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/guile-lib/guile-library_0.2.6.1-2_amd64.deb"

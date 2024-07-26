@@ -23,9 +23,9 @@ depends: [
   "deb-libjs-select2-js"
   "deb-php-xml"
   "deb-rrdtool"
-  ("deb-apache2" | "deb- httpd-cgi")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-php" | "deb- php-cgi" | "deb- libapache2-mod-php")
+  ("deb-apache2" | "deb-httpd-cgi")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-php" | "deb-php-cgi" | "deb-libapache2-mod-php")
 ]
 extra-source "ganglia-webfrontend_3.7.5+debian-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/ganglia-web/ganglia-webfrontend_3.7.5+debian-3_all.deb"

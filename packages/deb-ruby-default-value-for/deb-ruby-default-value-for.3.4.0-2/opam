@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-activerecord"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-default-value-for_3.4.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-default-value-for/ruby-default-value-for_3.4.0-2_all.deb"

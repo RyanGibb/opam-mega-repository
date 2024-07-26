@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-fog-core"
   "deb-ruby-fog-xml"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-fog-terremark_0.0.3-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-fog-terremark/ruby-fog-terremark_0.0.3-2_all.deb"

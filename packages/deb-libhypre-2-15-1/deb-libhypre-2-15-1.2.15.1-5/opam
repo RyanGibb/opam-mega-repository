@@ -12,8 +12,8 @@ depends: [
   "deb-libstdc++6" {>= "5"}
   "deb-libsuperlu-dist6" {>= "6.1.1+dfsg1"}
   "deb-libsuperlu5" {>= "5.2.1+dfsg1"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libhypre-2.15.1_2.15.1-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/hypre/libhypre-2.15.1_2.15.1-5_amd64.deb"

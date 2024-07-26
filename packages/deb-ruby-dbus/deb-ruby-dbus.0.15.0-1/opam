@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-dbus"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-dbus_0.15.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-dbus/ruby-dbus_0.15.0-1_all.deb"

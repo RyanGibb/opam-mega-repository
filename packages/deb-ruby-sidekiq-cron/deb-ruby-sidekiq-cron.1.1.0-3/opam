@@ -10,7 +10,7 @@ depends: [
   "deb-ruby-redis-namespace" {>= "1.5.2"}
   "deb-ruby-rufus-scheduler" {>= "3.3~"}
   "deb-ruby-sidekiq" {>= "4.2.1~"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-sidekiq-cron_1.1.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-sidekiq-cron/ruby-sidekiq-cron_1.1.0-3_all.deb"

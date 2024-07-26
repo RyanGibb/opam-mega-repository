@@ -14,7 +14,7 @@ depends: [
   "deb-libxml-sax-base-perl"
   "deb-libxml-sax-perl"
   "deb-perl"
-  ("deb-libcgi-pm-perl" | "deb- perl" {< "5.19"})
+  ("deb-libcgi-pm-perl" | "deb-perl" {< "5.19"})
 ]
 extra-source "libhttp-oai-perl_4.08-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libh/libhttp-oai-perl/libhttp-oai-perl_4.08-1_all.deb"

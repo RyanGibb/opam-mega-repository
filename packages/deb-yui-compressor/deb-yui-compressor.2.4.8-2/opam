@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-java-wrappers"
   "deb-libjargs-java"
-  ("deb-default-jre-headless" | "deb- java5-runtime-headless")
+  ("deb-default-jre-headless" | "deb-java5-runtime-headless")
 ]
 extra-source "yui-compressor_2.4.8-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/y/yui-compressor/yui-compressor_2.4.8-2_all.deb"

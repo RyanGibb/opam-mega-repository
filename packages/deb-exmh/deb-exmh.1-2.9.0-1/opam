@@ -8,9 +8,9 @@ remove: [
 depends: [
   "deb-mime-support"
   "deb-xterm"
-  ("deb-nmh" | "deb- mh")
-  ("deb-tcl" | "deb- tclsh")
-  ("deb-tk" | "deb- wish")
+  ("deb-nmh" | "deb-mh")
+  ("deb-tcl" | "deb-tclsh")
+  ("deb-tk" | "deb-wish")
 ]
 extra-source "exmh_1:2.9.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/exmh/exmh_2.9.0-1_all.deb"

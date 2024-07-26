@@ -14,7 +14,7 @@ depends: [
   "deb-libjs-jquery"
   "deb-liblemonldap-ng-handler-perl" {= "2.0.2+ds-7+deb10u7"}
   "deb-perl"
-  ("deb-lemonldap-ng-fastcgi-server" {= "2.0.2+ds-7+deb10u7"} | "deb- lemonldap-ng-uwsgi-app" {= "2.0.2+ds-7+deb10u7"} | "deb- apache2" | "deb- httpd-cgi")
+  ("deb-lemonldap-ng-fastcgi-server" {= "2.0.2+ds-7+deb10u7"} | "deb-lemonldap-ng-uwsgi-app" {= "2.0.2+ds-7+deb10u7"} | "deb-apache2" | "deb-httpd-cgi")
 ]
 extra-source "liblemonldap-ng-manager-perl_2.0.2+ds-7+deb10u7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lemonldap-ng/liblemonldap-ng-manager-perl_2.0.2+ds-7+deb10u7_all.deb"

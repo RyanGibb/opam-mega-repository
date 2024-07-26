@@ -22,7 +22,7 @@ depends: [
   "deb-perl"
   "deb-tofrodos"
   "deb-wget"
-  ("deb-xorriso" | "deb- genisoimage")
+  ("deb-xorriso" | "deb-genisoimage")
 ]
 extra-source "debian-cd_3.1.25_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/debian-cd/debian-cd_3.1.25_all.deb"

@@ -32,8 +32,8 @@ depends: [
   "deb-qml-module-qtquick-controls"
   "deb-qml-module-qtquick-dialogs"
   "deb-qml-module-qtquick-layouts"
-  ("deb-libqt5gui5" {>= "5.12.0~"} | "deb- libqt5gui5-gles" {>= "5.12.0~"})
-  ("deb-libqt5quick5" {>= "5.0.2"} | "deb- libqt5quick5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.12.0~"} | "deb-libqt5gui5-gles" {>= "5.12.0~"})
+  ("deb-libqt5quick5" {>= "5.0.2"} | "deb-libqt5quick5-gles" {>= "5.0.2"})
 ]
 extra-source "peruse_1.2+dfsg+20191117-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/peruse/peruse_1.2+dfsg+20191117-1+b1_amd64.deb"

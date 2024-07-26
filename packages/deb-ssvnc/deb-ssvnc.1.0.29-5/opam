@@ -22,7 +22,7 @@ depends: [
   "deb-tk"
   "deb-xterm"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-bind9-host" | "deb- host")
+  ("deb-bind9-host" | "deb-host")
 ]
 extra-source "ssvnc_1.0.29-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/ssvnc/ssvnc_1.0.29-5_amd64.deb"

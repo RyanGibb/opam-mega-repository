@@ -16,7 +16,7 @@ depends: [
   "deb-libtraceevent1" {>= "5.4"}
   "deb-pkexec"
   "deb-trace-cmd" {>= "2.9.3"}
-  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb-libqt5gui5-gles" {>= "5.11.0~rc1"})
 ]
 extra-source "kernelshark_2.9.3+really2.2.1-1~deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kernelshark/kernelshark_2.9.3+really2.2.1-1~deb12u1_amd64.deb"

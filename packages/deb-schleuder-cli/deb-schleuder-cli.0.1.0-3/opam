@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-thor"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "schleuder-cli_0.1.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/schleuder-cli/schleuder-cli_0.1.0-3_all.deb"

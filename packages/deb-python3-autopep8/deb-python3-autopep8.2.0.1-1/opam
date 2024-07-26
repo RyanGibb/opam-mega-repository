@@ -11,7 +11,7 @@ depends: [
   "deb-python3-pep8"
   "deb-python3-pkg-resources"
   "deb-python3-pycodestyle" {>= "2.10.0"}
-  ("deb-python3-tomli" | "deb- python3" {> "3.11"})
+  ("deb-python3-tomli" | "deb-python3" {> "3.11"})
 ]
 extra-source "python3-autopep8_2.0.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/autopep8/python3-autopep8_2.0.1-1_all.deb"

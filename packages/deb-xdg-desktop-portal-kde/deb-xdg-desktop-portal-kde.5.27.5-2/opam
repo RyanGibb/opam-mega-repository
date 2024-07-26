@@ -35,8 +35,8 @@ depends: [
   "deb-libwayland-client0" {>= "1.20.0"}
   "deb-libxkbcommon0" {>= "0.5.0"}
   "deb-xdg-desktop-portal"
-  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
-  ("deb-libqt5quick5" {>= "5.15.2~"} | "deb- libqt5quick5-gles" {>= "5.15.2~"})
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb-libqt5gui5-gles" {>= "5.15.2~"})
+  ("deb-libqt5quick5" {>= "5.15.2~"} | "deb-libqt5quick5-gles" {>= "5.15.2~"})
 ]
 extra-source "xdg-desktop-portal-kde_5.27.5-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xdg-desktop-portal-kde/xdg-desktop-portal-kde_5.27.5-2_amd64.deb"

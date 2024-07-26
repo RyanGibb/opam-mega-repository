@@ -46,8 +46,8 @@ depends: [
   "deb-ssl-cert"
   "deb-swaks"
   "deb-uuid"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-tftp-hpa" | "deb- tftp")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-tftp-hpa" | "deb-tftp")
 ]
 extra-source "debian-edu-config_2.10.65+deb10u8_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/debian-edu-config/debian-edu-config_2.10.65+deb10u8_all.deb"

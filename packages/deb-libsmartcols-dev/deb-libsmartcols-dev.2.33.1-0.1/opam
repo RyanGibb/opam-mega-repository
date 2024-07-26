@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libsmartcols1" {= "2.33.1-0.1"}
-  ("deb-libc6-dev" | "deb- libc-dev")
+  ("deb-libc6-dev" | "deb-libc-dev")
 ]
 extra-source "libsmartcols-dev_2.33.1-0.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/util-linux/libsmartcols-dev_2.33.1-0.1_amd64.deb"

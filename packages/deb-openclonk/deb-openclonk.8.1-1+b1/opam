@@ -24,7 +24,7 @@ depends: [
   "deb-libx11-6"
   "deb-openclonk-data" {= "8.1-1"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "openclonk_8.1-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/openclonk/openclonk_8.1-1+b1_amd64.deb"

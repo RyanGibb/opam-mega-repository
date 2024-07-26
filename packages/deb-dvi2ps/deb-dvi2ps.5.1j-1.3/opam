@@ -10,8 +10,8 @@ depends: [
   "deb-libfreetype6" {>= "2.2.1"}
   "deb-libkpathsea6"
   "deb-vflib3"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-texlive-base-bin" | "deb- tetex-bin")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-texlive-base-bin" | "deb-tetex-bin")
 ]
 conflicts: [
   "deb-dvi2ps-fontdata-a2n" {< "1.0-6"}

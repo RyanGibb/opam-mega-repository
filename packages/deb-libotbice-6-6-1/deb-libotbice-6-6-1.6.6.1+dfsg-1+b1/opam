@@ -24,7 +24,7 @@ depends: [
   "deb-libotbstreaming-6-6-1" {>= "6.6.0~rc1"}
   "deb-libotbtransform-6-6-1" {>= "5.2.0"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "libotbice-6.6-1_6.6.1+dfsg-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/otb/libotbice-6.6-1_6.6.1+dfsg-1+b1_amd64.deb"

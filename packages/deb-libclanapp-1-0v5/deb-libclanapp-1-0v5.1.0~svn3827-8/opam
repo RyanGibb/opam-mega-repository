@@ -20,7 +20,7 @@ depends: [
   "deb-libxi6"
   "deb-libxxf86vm1"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 conflicts: [
   "deb-libclanapp-1-0"

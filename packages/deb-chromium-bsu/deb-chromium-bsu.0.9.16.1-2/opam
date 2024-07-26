@@ -16,8 +16,8 @@ depends: [
   "deb-libsdl2-2-0-0" {>= "2.0.8"}
   "deb-libsdl2-image-2-0-0" {>= "2.0.2"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-fonts-uralic" | "deb- ttf-uralic")
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-fonts-uralic" | "deb-ttf-uralic")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "chromium-bsu_0.9.16.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/chromium-bsu/chromium-bsu_0.9.16.1-2_amd64.deb"

@@ -78,7 +78,7 @@ depends: [
   "deb-t1utils"
   "deb-unzip"
   "deb-xz-utils"
-  ("deb-plzip" | "deb- lzip-decompressor")
+  ("deb-plzip" | "deb-lzip-decompressor")
 ]
 extra-source "lintian_2.116.3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lintian/lintian_2.116.3_all.deb"

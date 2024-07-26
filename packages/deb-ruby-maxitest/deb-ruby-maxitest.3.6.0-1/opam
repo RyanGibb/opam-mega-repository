@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-minitest" {< "5.14.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-maxitest_3.6.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-maxitest/ruby-maxitest_3.6.0-1_all.deb"

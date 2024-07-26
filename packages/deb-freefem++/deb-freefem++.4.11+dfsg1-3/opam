@@ -17,7 +17,7 @@ depends: [
   "deb-libscalapack-openmpi2-2" {>= "2.2.1"}
   "deb-libstdc++6" {>= "11"}
   "deb-libumfpack5" {>= "1-4.5.2"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "freefem++_4.11+dfsg1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/freefem++/freefem++_4.11+dfsg1-3_amd64.deb"

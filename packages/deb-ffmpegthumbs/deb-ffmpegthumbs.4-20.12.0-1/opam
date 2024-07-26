@@ -21,7 +21,7 @@ depends: [
   "deb-libstdc++6" {>= "4.6"}
   "deb-libswscale5" {>= "7-4.0"}
   "deb-libtag1v5" {>= "1.9.1-2.2~"}
-  ("deb-libqt5gui5" {>= "5.2.0~"} | "deb- libqt5gui5-gles" {>= "5.2.0~"})
+  ("deb-libqt5gui5" {>= "5.2.0~"} | "deb-libqt5gui5-gles" {>= "5.2.0~"})
 ]
 extra-source "ffmpegthumbs_4:20.12.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/ffmpegthumbs/ffmpegthumbs_20.12.0-1_amd64.deb"

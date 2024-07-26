@@ -18,7 +18,7 @@ depends: [
   "deb-libsdl2-2-0-0" {>= "2.0.12"}
   "deb-libsdl2-ttf-2-0-0" {>= "2.0.15"}
   "deb-libstdc++6" {>= "11"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "osk-sdl_0.67.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/osk-sdl/osk-sdl_0.67.1-2_amd64.deb"

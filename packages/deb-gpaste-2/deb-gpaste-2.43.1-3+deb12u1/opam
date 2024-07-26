@@ -17,7 +17,7 @@ depends: [
   "deb-libgtk-4-1" {>= "4.6.0~"}
   "deb-libx11-6"
   "deb-libxi6" {>= "2-1.2.99.4"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 conflicts: [
   "deb-gpaste"

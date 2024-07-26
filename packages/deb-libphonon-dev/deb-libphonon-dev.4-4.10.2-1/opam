@@ -13,7 +13,7 @@ depends: [
   "deb-libqtcore4" {>= "4-4.8.1"}
   "deb-libqtgui4" {>= "4-4.8.1"}
   "deb-libstdc++6" {>= "4.1.1"}
-  ("deb-phonon-backend-null" | "deb- phonon")
+  ("deb-phonon-backend-null" | "deb-phonon")
 ]
 extra-source "libphonon-dev_4:4.10.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/phonon/libphonon-dev_4.10.2-1_amd64.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-python3-any"
-  ("deb-xclip" | "deb- xsel" | "deb- wl-clipboard" | "deb- python3-gi" | "deb- python3-pyqt5")
+  ("deb-xclip" | "deb-xsel" | "deb-wl-clipboard" | "deb-python3-gi" | "deb-python3-pyqt5")
 ]
 extra-source "python3-pyperclip_1.8.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-pyperclip/python3-pyperclip_1.8.2-2_all.deb"

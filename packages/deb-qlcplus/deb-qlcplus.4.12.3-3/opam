@@ -24,7 +24,7 @@ depends: [
   "deb-libusb-0-1-4" {>= "2-0.1.12"}
   "deb-libusb-1-0-0" {>= "2-1.0.12"}
   "deb-qlcplus-data" {= "4.12.3-3"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "qlcplus_4.12.3-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qlcplus/qlcplus_4.12.3-3_amd64.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libbluray2" {< "1-1.3.4-1.1~"}
   "deb-libbluray2" {>= "1-1.3.4-1"}
-  ("deb-default-jre-headless" | "deb- java2-runtime-headless")
+  ("deb-default-jre-headless" | "deb-java2-runtime-headless")
 ]
 extra-source "libbluray-bdj_1:1.3.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libb/libbluray/libbluray-bdj_1.3.4-1_all.deb"

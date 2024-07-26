@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libnxml0" {= "0.18.3-8"}
-  ("deb-libcurl4-gnutls-dev" | "deb- libcurl-dev")
+  ("deb-libcurl4-gnutls-dev" | "deb-libcurl-dev")
 ]
 extra-source "libnxml0-dev_0.18.3-8_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libn/libnxml/libnxml0-dev_0.18.3-8_amd64.deb"

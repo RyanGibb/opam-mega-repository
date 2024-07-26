@@ -38,9 +38,9 @@ depends: [
   "deb-libumfpack5" {>= "1-4.5.2"}
   "deb-libx11-6"
   "deb-zlib1g" {>= "1-1.2.0.2"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-libglu1-mesa" | "deb- libglu1")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-libglu1-mesa" | "deb-libglu1")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "liboctave6_4.4.1-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/octave/liboctave6_4.4.1-5_amd64.deb"

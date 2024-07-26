@@ -11,7 +11,7 @@ depends: [
   "deb-python-any" {>= "2.6.6-7~"}
   "deb-python-mpd"
   "deb-python-pylons"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "fookebox_0.7.2-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fookebox/fookebox_0.7.2-3_all.deb"

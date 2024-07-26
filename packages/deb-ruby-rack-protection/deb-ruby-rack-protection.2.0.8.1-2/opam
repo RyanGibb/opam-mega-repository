@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-rack"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-rack-protection_2.0.8.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-sinatra/ruby-rack-protection_2.0.8.1-2_all.deb"

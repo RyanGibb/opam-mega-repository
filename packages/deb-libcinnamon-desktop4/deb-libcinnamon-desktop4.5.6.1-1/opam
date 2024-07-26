@@ -16,7 +16,7 @@ depends: [
   "deb-libxext6"
   "deb-libxkbfile1" {>= "1-1.1.0"}
   "deb-libxrandr2" {>= "2-1.2.99.3"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "libcinnamon-desktop4_5.6.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cinnamon-desktop/libcinnamon-desktop4_5.6.1-1_amd64.deb"

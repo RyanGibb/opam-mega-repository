@@ -35,7 +35,7 @@ depends: [
   "deb-ruby-webrick" {>= "1.7.0"}
   "deb-ruby-yajl"
   "deb-xdg-utils"
-  ("deb-ruby-bundler" | "deb- bundler")
+  ("deb-ruby-bundler" | "deb-bundler")
 ]
 extra-source "jekyll_4.3.1+dfsg-3+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jekyll/jekyll_4.3.1+dfsg-3+deb12u1_all.deb"

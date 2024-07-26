@@ -11,7 +11,7 @@ depends: [
   "deb-libqt5core5a" {>= "5.15.1"}
   "deb-libqt5widgets5" {>= "5.2.0"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "hexalate_1.2.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/hexalate/hexalate_1.2.0-1_amd64.deb"

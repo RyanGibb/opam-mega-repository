@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.14"}
   "deb-libcdaudio1" {>= "0.99.12p2"}
   "deb-libreadline8" {>= "6.0"}
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 extra-source "cdcd_0.6.6-13.1+b4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cdcd/cdcd_0.6.6-13.1+b4_amd64.deb"

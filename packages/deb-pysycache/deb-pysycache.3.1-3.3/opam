@@ -12,11 +12,11 @@ depends: [
   "deb-pysycache-sounds"
   "deb-python-any"
   "deb-python-pygame"
-  ("deb-pysycache-buttons-ice" | "deb- pysycache-buttons-beerabbit" | "deb- pysycache-buttons-crapaud" | "deb- pysycache-buttons-wolf")
-  ("deb-pysycache-click-dinosaurs" | "deb- pysycache-click-sea")
-  ("deb-pysycache-dblclick-appleandpear" | "deb- pysycache-dblclick-butterfly")
-  ("deb-pysycache-move-animals" | "deb- pysycache-move-food" | "deb- pysycache-move-plants" | "deb- pysycache-move-sky" | "deb- pysycache-move-sports")
-  ("deb-pysycache-puzzle-cartoons" | "deb- pysycache-puzzle-photos")
+  ("deb-pysycache-buttons-ice" | "deb-pysycache-buttons-beerabbit" | "deb-pysycache-buttons-crapaud" | "deb-pysycache-buttons-wolf")
+  ("deb-pysycache-click-dinosaurs" | "deb-pysycache-click-sea")
+  ("deb-pysycache-dblclick-appleandpear" | "deb-pysycache-dblclick-butterfly")
+  ("deb-pysycache-move-animals" | "deb-pysycache-move-food" | "deb-pysycache-move-plants" | "deb-pysycache-move-sky" | "deb-pysycache-move-sports")
+  ("deb-pysycache-puzzle-cartoons" | "deb-pysycache-puzzle-photos")
 ]
 extra-source "pysycache_3.1-3.3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pysycache/pysycache_3.1-3.3_all.deb"

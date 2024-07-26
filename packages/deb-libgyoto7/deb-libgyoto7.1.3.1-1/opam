@@ -27,8 +27,8 @@ depends: [
   "deb-python-numpy" {>= "1-1.16.0~rc1"}
   "deb-python3-numpy"
   "deb-python3-numpy" {>= "1-1.16.0~rc1"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libgyoto7_1.3.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gyoto/libgyoto7_1.3.1-1_amd64.deb"

@@ -27,10 +27,10 @@ depends: [
   "deb-python3-secretstorage"
   "deb-python3-six"
   "deb-python3-tqdm"
-  ("deb-git-annex" {>= "8.20200309~"} | "deb- git-annex-standalone" {>= "8.20200309~"})
-  ("deb-python3" {>= "3.10"} | "deb- python3-importlib-metadata" {>= "3.6~"})
-  ("deb-python3-distutils" | "deb- libpython3-stdlib" {<= "3.6.4~rc1-2"})
-  ("deb-python3-keyrings-alt" | "deb- python3-keyring" {<= "8"})
+  ("deb-git-annex" {>= "8.20200309~"} | "deb-git-annex-standalone" {>= "8.20200309~"})
+  ("deb-python3" {>= "3.10"} | "deb-python3-importlib-metadata" {>= "3.6~"})
+  ("deb-python3-distutils" | "deb-libpython3-stdlib" {<= "3.6.4~rc1-2"})
+  ("deb-python3-keyrings-alt" | "deb-python3-keyring" {<= "8"})
 ]
 extra-source "python3-datalad_0.18.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/datalad/python3-datalad_0.18.1-2_all.deb"

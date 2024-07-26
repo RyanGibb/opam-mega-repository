@@ -16,7 +16,7 @@ depends: [
   "deb-sbuild" {< "0.78.1-2.1~"}
   "deb-sbuild" {>= "0.78.1-2"}
   "deb-schroot"
-  ("deb-default-mta" | "deb- mail-transport-agent")
+  ("deb-default-mta" | "deb-mail-transport-agent")
 ]
 extra-source "buildd_0.78.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sbuild/buildd_0.78.1-2_all.deb"

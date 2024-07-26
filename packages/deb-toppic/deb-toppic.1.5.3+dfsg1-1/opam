@@ -19,7 +19,7 @@ depends: [
   "deb-libstdc++6" {>= "11"}
   "deb-libxerces-c3-2"
   "deb-toppic-common" {= "1.5.3+dfsg1-1"}
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "toppic_1.5.3+dfsg1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/toppic/toppic_1.5.3+dfsg1-1_amd64.deb"

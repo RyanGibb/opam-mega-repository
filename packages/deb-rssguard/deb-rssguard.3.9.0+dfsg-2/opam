@@ -18,7 +18,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.14.1"}
   "deb-libqt5xml5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb-libqt5gui5-gles" {>= "5.11.0~rc1"})
 ]
 extra-source "rssguard_3.9.0+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rssguard/rssguard_3.9.0+dfsg-2_amd64.deb"

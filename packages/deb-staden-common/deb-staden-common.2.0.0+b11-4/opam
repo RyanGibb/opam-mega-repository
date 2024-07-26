@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r staden-common"]
 ]
 depends: [
-  ("deb-tk8-6" | "deb- wish")
+  ("deb-tk8-6" | "deb-wish")
 ]
 extra-source "staden-common_2.0.0+b11-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/staden/staden-common_2.0.0+b11-4_all.deb"

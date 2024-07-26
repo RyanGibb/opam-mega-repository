@@ -13,7 +13,7 @@ depends: [
   "deb-libyaml-perl"
   "deb-oar-user"
   "deb-perl"
-  ("deb-apache2" | "deb- httpd-cgi")
+  ("deb-apache2" | "deb-httpd-cgi")
 ]
 extra-source "oar-restful-api_2.5.8-1+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/oar/oar-restful-api_2.5.8-1+deb10u1_amd64.deb"

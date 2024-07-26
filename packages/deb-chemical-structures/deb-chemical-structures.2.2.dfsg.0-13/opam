@@ -9,7 +9,7 @@ depends: [
   "deb-debconf"
   "deb-openbabel"
   "deb-python"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "chemical-structures_2.2.dfsg.0-13_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/chemical-structures/chemical-structures_2.2.dfsg.0-13_all.deb"

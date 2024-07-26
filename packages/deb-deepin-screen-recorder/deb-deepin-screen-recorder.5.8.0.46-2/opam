@@ -26,7 +26,7 @@ depends: [
   "deb-libxext6"
   "deb-libxfixes3"
   "deb-libxtst6"
-  ("deb-libqt5gui5" {>= "5.8.0"} | "deb- libqt5gui5-gles" {>= "5.8.0"})
+  ("deb-libqt5gui5" {>= "5.8.0"} | "deb-libqt5gui5-gles" {>= "5.8.0"})
 ]
 conflicts: [
   "deb-deepin-screenshot"

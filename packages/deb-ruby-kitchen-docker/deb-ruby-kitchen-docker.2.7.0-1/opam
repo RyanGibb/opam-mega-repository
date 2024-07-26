@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-test-kitchen" {>= "1.0.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-kitchen-docker_2.7.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-kitchen-docker/ruby-kitchen-docker_2.7.0-1_all.deb"

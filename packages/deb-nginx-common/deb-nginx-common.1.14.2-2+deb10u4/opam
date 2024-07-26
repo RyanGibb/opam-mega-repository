@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-lsb-base" {>= "3.0-6"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "nginx-common_1.14.2-2+deb10u4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/nginx/nginx-common_1.14.2-2+deb10u4_all.deb"

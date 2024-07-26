@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.34"}
   "deb-libglib2-0-0" {>= "2.55.2"}
   "deb-libxfce4util7" {>= "4.17.3"}
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus")
 ]
 extra-source "xfconf_4.18.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xfconf/xfconf_4.18.0-2_amd64.deb"

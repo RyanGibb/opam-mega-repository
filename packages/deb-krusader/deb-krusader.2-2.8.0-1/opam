@@ -45,7 +45,7 @@ depends: [
   "deb-libqt5xml5" {>= "5.12~"}
   "deb-libstdc++6" {>= "4.1.1"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libqt5gui5" {>= "5.12~"} | "deb- libqt5gui5-gles" {>= "5.12~"})
+  ("deb-libqt5gui5" {>= "5.12~"} | "deb-libqt5gui5-gles" {>= "5.12~"})
 ]
 extra-source "krusader_2:2.8.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/krusader/krusader_2.8.0-1_amd64.deb"

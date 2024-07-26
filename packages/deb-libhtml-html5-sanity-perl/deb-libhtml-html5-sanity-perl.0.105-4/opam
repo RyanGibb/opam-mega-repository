@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libxml-libxml-perl"
   "deb-perl"
-  ("deb-liblocale-codes-perl" | "deb- perl" {< "5.28"})
+  ("deb-liblocale-codes-perl" | "deb-perl" {< "5.28"})
 ]
 extra-source "libhtml-html5-sanity-perl_0.105-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libh/libhtml-html5-sanity-perl/libhtml-html5-sanity-perl_0.105-4_all.deb"

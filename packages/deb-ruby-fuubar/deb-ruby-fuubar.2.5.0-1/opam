@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-progressbar" {>= "1.9"}
   "deb-ruby-rspec" {>= "3.5"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-fuubar_2.5.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-fuubar/ruby-fuubar_2.5.0-1_all.deb"

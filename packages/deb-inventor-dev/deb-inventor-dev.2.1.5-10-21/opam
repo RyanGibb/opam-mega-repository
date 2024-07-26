@@ -9,7 +9,7 @@ depends: [
   "deb-libc6-dev"
   "deb-libinventor1" {= "2.1.5-10-21"}
   "deb-libmotif-dev"
-  ("deb-xlibmesa-dev" | "deb- libgl-dev")
+  ("deb-xlibmesa-dev" | "deb-libgl-dev")
 ]
 conflicts: [
   "deb-libcoin20-dev"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-nodejs"
   "deb-ruby-multi-json"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-execjs_2.6.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-execjs/ruby-execjs_2.6.0-1_all.deb"

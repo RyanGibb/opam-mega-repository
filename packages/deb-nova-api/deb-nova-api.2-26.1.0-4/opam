@@ -15,7 +15,7 @@ depends: [
   "deb-python3-pastescript"
   "deb-sysvinit-utils"
   "deb-uwsgi-plugin-python3"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "nova-api_2:26.1.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/nova/nova-api_26.1.0-4_all.deb"

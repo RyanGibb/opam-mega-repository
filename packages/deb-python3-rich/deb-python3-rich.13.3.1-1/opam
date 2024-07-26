@@ -9,7 +9,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-markdown-it"
   "deb-python3-pygments" {>= "2.14.0"}
-  ("deb-python3-typing-extensions" {>= "3.7.4"} | "deb- python3" {> "3.9"})
+  ("deb-python3-typing-extensions" {>= "3.7.4"} | "deb-python3" {> "3.9"})
 ]
 extra-source "python3-rich_13.3.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rich/python3-rich_13.3.1-1_all.deb"

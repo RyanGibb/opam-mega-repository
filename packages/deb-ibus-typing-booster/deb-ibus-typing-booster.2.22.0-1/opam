@@ -14,7 +14,7 @@ depends: [
   "deb-python3-enchant"
   "deb-python3-packaging"
   "deb-python3-xdg"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "ibus-typing-booster_2.22.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/ibus-typing-booster/ibus-typing-booster_2.22.0-1_all.deb"

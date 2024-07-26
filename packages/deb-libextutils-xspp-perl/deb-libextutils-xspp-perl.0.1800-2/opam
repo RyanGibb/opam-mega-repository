@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl"
-  ("deb-perl" {>= "5.15.6"} | "deb- libextutils-parsexs-perl" {>= "3.070000"})
+  ("deb-perl" {>= "5.15.6"} | "deb-libextutils-parsexs-perl" {>= "3.070000"})
 ]
 extra-source "libextutils-xspp-perl_0.1800-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libe/libextutils-xspp-perl/libextutils-xspp-perl_0.1800-2_all.deb"

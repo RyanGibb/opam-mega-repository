@@ -12,7 +12,7 @@ depends: [
   "deb-libopenmpi3"
   "deb-librelion+mpi-1-4-1"
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-openmpi-gcc" | "deb- openmpi-bin")
+  ("deb-openmpi-gcc" | "deb-openmpi-bin")
 ]
 conflicts: [
   "deb-relion-bin"

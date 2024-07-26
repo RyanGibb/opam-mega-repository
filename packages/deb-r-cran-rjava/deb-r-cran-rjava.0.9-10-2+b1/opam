@@ -15,7 +15,7 @@ depends: [
   "deb-r-base-core"
   "deb-r-base-core" {>= "3.5.1-1"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-openjdk-9-jre" | "deb- default-jre")
+  ("deb-openjdk-9-jre" | "deb-default-jre")
 ]
 extra-source "r-cran-rjava_0.9-10-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rjava/r-cran-rjava_0.9-10-2+b1_amd64.deb"

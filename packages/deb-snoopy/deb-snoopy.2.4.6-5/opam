@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.7"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "snoopy_2.4.6-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/snoopy/snoopy_2.4.6-5_amd64.deb"

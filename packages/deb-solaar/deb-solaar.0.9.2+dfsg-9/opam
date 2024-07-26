@@ -11,8 +11,8 @@ depends: [
   "deb-python-gi"
   "deb-python-pyudev"
   "deb-udev"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-passwd" | "deb- adduser")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-passwd" | "deb-adduser")
 ]
 extra-source "solaar_0.9.2+dfsg-9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/solaar/solaar_0.9.2+dfsg-9_all.deb"

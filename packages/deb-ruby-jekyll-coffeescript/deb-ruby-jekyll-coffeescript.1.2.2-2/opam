@@ -11,7 +11,7 @@ depends: [
   "deb-ruby-coffee-script" {>= "2.2"}
   "deb-ruby-coffee-script-source" {< "2~"}
   "deb-ruby-coffee-script-source" {>= "1.12"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-jekyll-coffeescript_1.2.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-jekyll-coffeescript/ruby-jekyll-coffeescript_1.2.2-2_all.deb"

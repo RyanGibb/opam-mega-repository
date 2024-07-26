@@ -31,8 +31,8 @@ depends: [
   "deb-texlive-latex-extra"
   "deb-texlive-latex-recommended"
   "deb-unzip"
-  ("deb-imagemagick" {>= "7-6.5.5"} | "deb- graphicsmagick-imagemagick-compat")
-  ("deb-libio-compress-perl" | "deb- libcompress-zlib-perl")
+  ("deb-imagemagick" {>= "7-6.5.5"} | "deb-graphicsmagick-imagemagick-compat")
+  ("deb-libio-compress-perl" | "deb-libcompress-zlib-perl")
 ]
 extra-source "auto-multiple-choice-common_1.5.0~rc2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/auto-multiple-choice/auto-multiple-choice-common_1.5.0~rc2-2_all.deb"

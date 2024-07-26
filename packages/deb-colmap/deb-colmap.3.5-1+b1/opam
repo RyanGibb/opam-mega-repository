@@ -20,7 +20,7 @@ depends: [
   "deb-libqt5opengl5" {>= "5.0.2"}
   "deb-libqt5widgets5" {>= "5.4.0"}
   "deb-libstdc++6" {>= "7"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "colmap_3.5-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/colmap/colmap_3.5-1+b1_amd64.deb"

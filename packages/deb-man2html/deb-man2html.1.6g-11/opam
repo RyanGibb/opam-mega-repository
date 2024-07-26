@@ -11,8 +11,8 @@ depends: [
   "deb-libc6" {>= "2.4"}
   "deb-man-db" {>= "2.4.1"}
   "deb-man2html-base" {= "1.6g-11"}
-  ("deb-apache2" | "deb- httpd-cgi" | "deb- lynx")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-apache2" | "deb-httpd-cgi" | "deb-lynx")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "man2html_1.6g-11_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/man2html/man2html_1.6g-11_amd64.deb"

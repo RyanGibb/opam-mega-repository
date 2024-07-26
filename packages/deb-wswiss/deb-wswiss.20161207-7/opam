@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-dictionaries-common" {>= "1.0"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "wswiss_20161207-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/igerman98/wswiss_20161207-7_all.deb"

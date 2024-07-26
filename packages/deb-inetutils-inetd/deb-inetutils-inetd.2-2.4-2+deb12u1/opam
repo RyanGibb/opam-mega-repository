@@ -10,7 +10,7 @@ depends: [
   "deb-sysvinit-utils" {>= "3.05-4~"}
   "deb-tcpd"
   "deb-update-inetd"
-  ("deb-inetutils-syslogd" | "deb- system-log-daemon")
+  ("deb-inetutils-syslogd" | "deb-system-log-daemon")
 ]
 conflicts: [
   "deb-inet-superserver"

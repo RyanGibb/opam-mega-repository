@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r php-fpdf"]
 ]
 depends: [
-  ("deb-php" | "deb- php-cli" | "deb- php-common" | "deb- php7-4" | "deb- php7-4-cli")
+  ("deb-php" | "deb-php-cli" | "deb-php-common" | "deb-php7-4" | "deb-php7-4-cli")
 ]
 extra-source "php-fpdf_3:1.8.4.dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/php-fpdf/php-fpdf_1.8.4.dfsg-1_all.deb"

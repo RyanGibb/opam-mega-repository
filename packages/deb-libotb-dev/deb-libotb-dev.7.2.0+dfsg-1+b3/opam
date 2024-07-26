@@ -70,7 +70,7 @@ depends: [
   "deb-libsvm-dev"
   "deb-monteverdi" {= "7.2.0+dfsg-1+b3"}
   "deb-otb-testdriver" {= "7.2.0+dfsg-1+b3"}
-  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
+  ("deb-libgl1-mesa-dev" | "deb-libgl-dev")
 ]
 conflicts: [
   "deb-libotb3-dev"

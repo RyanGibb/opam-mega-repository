@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.29"}
   "deb-r-base-core"
   "deb-r-base-core" {>= "4.2.2-1"}
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "r-cran-spc_1:0.6.7-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-spc/r-cran-spc_0.6.7-1_amd64.deb"

@@ -10,7 +10,7 @@ depends: [
   "deb-librust-extprim-dev" {= "1.7.0-2"}
   "deb-librust-serde-1+default-dev"
   "deb-librust-serde-1+derive-dev"
-  ("deb-librust-rand-0-7+default-dev" | "deb- librust-rand-0-6+default-dev")
+  ("deb-librust-rand-0-7+default-dev" | "deb-librust-rand-0-6+default-dev")
 ]
 extra-source "librust-extprim+default-dev_1.7.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-extprim/librust-extprim+default-dev_1.7.0-2_amd64.deb"

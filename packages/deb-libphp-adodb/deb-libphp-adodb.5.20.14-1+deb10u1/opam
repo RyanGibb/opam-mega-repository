@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-php-common"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "libphp-adodb_5.20.14-1+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libp/libphp-adodb/libphp-adodb_5.20.14-1+deb10u1_all.deb"

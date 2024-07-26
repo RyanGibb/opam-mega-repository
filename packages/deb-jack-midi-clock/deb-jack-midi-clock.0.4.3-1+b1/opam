@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.4"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "jack-midi-clock_0.4.3-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jack-midi-clock/jack-midi-clock_0.4.3-1+b1_amd64.deb"

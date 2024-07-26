@@ -13,7 +13,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "5"}
   "deb-wpasupplicant"
-  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb-libqt5gui5-gles" {>= "5.7.0"})
 ]
 extra-source "wpagui_2:2.10-12+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/wpa/wpagui_2.10-12+deb12u1_amd64.deb"

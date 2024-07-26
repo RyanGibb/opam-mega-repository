@@ -12,7 +12,7 @@ depends: [
   "deb-libgee-0-8-2" {>= "0.8.3"}
   "deb-libglib2-0-0" {>= "2.35.8"}
   "deb-mailnag" {>= "1.1.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-shell-mailnag_3.28.0-0.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-shell-mailnag/gnome-shell-mailnag_3.28.0-0.1_amd64.deb"

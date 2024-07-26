@@ -11,7 +11,7 @@ depends: [
   "deb-icinga-cgi-bin" {= "1.14.2+ds-3+b1"}
   "deb-icinga-common" {= "1.14.2+ds-3"}
   "deb-ucf"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "icinga-cgi_1.14.2+ds-3+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/icinga/icinga-cgi_1.14.2+ds-3+b1_amd64.deb"

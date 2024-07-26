@@ -23,7 +23,7 @@ depends: [
   "deb-libnotify4" {>= "0.7.6"}
   "deb-libstdc++6" {>= "11"}
   "deb-libuuid1" {>= "2.16"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "ayatana-indicator-datetime_22.9.1-1+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/ayatana-indicator-datetime/ayatana-indicator-datetime_22.9.1-1+deb12u1_amd64.deb"

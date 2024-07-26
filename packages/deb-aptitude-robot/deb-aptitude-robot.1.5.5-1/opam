@@ -12,7 +12,7 @@ depends: [
   "deb-perl"
   "deb-perl-any"
   "deb-psmisc"
-  ("deb-sysvinit-utils" {>= "3.05-4~"} | "deb- lsb-base")
+  ("deb-sysvinit-utils" {>= "3.05-4~"} | "deb-lsb-base")
 ]
 extra-source "aptitude-robot_1.5.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/aptitude-robot/aptitude-robot_1.5.5-1_all.deb"

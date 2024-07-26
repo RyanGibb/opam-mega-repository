@@ -9,7 +9,7 @@ depends: [
   "deb-dh-elpa-helper"
   "deb-elpa-helm" {>= "2.0"}
   "deb-emacsen-common"
-  ("deb-silversearcher-ag" | "deb- ack")
+  ("deb-silversearcher-ag" | "deb-ack")
 ]
 extra-source "elpa-helm-ag_0.59-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/emacs-helm-ag/elpa-helm-ag_0.59-1_all.deb"

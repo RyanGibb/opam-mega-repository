@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-rack"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-rack-flash3_1.0.5-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-rack-flash3/ruby-rack-flash3_1.0.5-2_all.deb"

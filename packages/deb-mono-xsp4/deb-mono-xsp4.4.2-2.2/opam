@@ -15,8 +15,8 @@ depends: [
   "deb-mono-runtime" {>= "3.0~"}
   "deb-mono-xsp4-base" {= "4.2-2.2"}
   "deb-procps"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-libc6" {>= "2.31"} | "deb- libc6-1" {>= "2.31"} | "deb- libc0-1" {>= "2.31"})
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-libc6" {>= "2.31"} | "deb-libc6-1" {>= "2.31"} | "deb-libc0-1" {>= "2.31"})
 ]
 extra-source "mono-xsp4_4.2-2.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xsp/mono-xsp4_4.2-2.2_all.deb"

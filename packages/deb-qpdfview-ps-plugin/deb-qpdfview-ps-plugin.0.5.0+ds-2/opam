@@ -13,7 +13,7 @@ depends: [
   "deb-libspectre1" {>= "0.2.3"}
   "deb-libstdc++6" {>= "4.1.1"}
   "deb-qpdfview" {= "0.5.0+ds-2"}
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "qpdfview-ps-plugin_0.5.0+ds-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qpdfview/qpdfview-ps-plugin_0.5.0+ds-2_amd64.deb"

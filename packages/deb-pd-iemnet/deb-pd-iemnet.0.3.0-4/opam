@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.34"}
-  ("deb-puredata" | "deb- pd")
+  ("deb-puredata" | "deb-pd")
 ]
 extra-source "pd-iemnet_0.3.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pd-iemnet/pd-iemnet_0.3.0-4_amd64.deb"

@@ -11,7 +11,7 @@ depends: [
   "deb-libgl1"
   "deb-libquadmath0" {>= "4.6"}
   "deb-libreadline7" {>= "6.0"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "evolver-ogl_2.70+ds-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/evolver/evolver-ogl_2.70+ds-4_amd64.deb"

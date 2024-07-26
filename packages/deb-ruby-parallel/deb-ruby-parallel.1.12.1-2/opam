@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-progressbar"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-parallel_1.12.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-parallel/ruby-parallel_1.12.1-2_all.deb"

@@ -23,7 +23,7 @@ depends: [
   "deb-libtdb1" {>= "1.2.7+git20101214"}
   "deb-libtotem-plparser18" {>= "3.26.0"}
   "deb-libxml2" {>= "2.7.8"}
-  ("deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"} | "deb- libgdk-pixbuf2-0-0" {>= "2.22.0"})
+  ("deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"} | "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"})
 ]
 extra-source "librhythmbox-core10_3.4.4-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rhythmbox/librhythmbox-core10_3.4.4-4_amd64.deb"

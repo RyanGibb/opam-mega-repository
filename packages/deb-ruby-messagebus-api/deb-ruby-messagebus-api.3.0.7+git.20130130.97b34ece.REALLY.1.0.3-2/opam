@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-multipart-post"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-messagebus-api_3.0.7+git.20130130.97b34ece.REALLY.1.0.3-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-messagebus-api/ruby-messagebus-api_3.0.7+git.20130130.97b34ece.REALLY.1.0.3-2_all.deb"

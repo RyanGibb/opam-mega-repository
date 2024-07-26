@@ -10,7 +10,7 @@ depends: [
   "deb-liblua5-1-0"
   "deb-php-common" {>= "1-7.0+33~"}
   ("deb-libapache2-mod-php7-4" | "deb-libphp7-4-embed" | "deb-php7-4-cgi" | "deb-php7-4-cli" | "deb-php7-4-fpm" | "deb-php7-4-phpdbg")
-  ("deb-php" | "deb- php-cli")
+  ("deb-php" | "deb-php-cli")
 ]
 extra-source "php-luasandbox_3.0.3-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/php-luasandbox/php-luasandbox_3.0.3-2+b1_amd64.deb"

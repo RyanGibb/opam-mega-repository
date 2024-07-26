@@ -15,7 +15,7 @@ depends: [
   "deb-python3-q-text-as-data"
   "deb-sysvinit-utils"
   "deb-uwsgi-plugin-python3"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "neutron-api_2:21.0.0-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/neutron/neutron-api_21.0.0-7_all.deb"

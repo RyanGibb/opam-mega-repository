@@ -11,7 +11,7 @@ depends: [
   "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
   "deb-libglib2-0-0" {>= "2.35.9"}
   "deb-libgtk2-0-0" {>= "2.24.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gerbv_2.7.0-2+deb11u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gerbv/gerbv_2.7.0-2+deb11u2_amd64.deb"

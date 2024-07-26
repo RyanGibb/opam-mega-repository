@@ -18,7 +18,7 @@ depends: [
   "deb-libxfixes3"
   "deb-libxrender1"
   "deb-libxsettings-client0"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 conflicts: [
   "deb-compiz-dev" {< "2-0.8.14-1"}

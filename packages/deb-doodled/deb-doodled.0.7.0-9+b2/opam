@@ -11,7 +11,7 @@ depends: [
   "deb-libc6" {>= "2.15"}
   "deb-libdoodle1" {>= "0.7.0-6~"}
   "deb-libextractor3" {>= "0.6.3"}
-  ("deb-libgamin0" | "deb- libfam0")
+  ("deb-libgamin0" | "deb-libfam0")
 ]
 extra-source "doodled_0.7.0-9+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/doodle/doodled_0.7.0-9+b2_amd64.deb"

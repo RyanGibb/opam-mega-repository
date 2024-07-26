@@ -29,7 +29,7 @@ depends: [
   "deb-libstdc++6" {>= "4.1.1"}
   "deb-preview-latex-style"
   "deb-texlive-pictures"
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "ktikz_0.13.1+ds1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/ktikz/ktikz_0.13.1+ds1-1_amd64.deb"

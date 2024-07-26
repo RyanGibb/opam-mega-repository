@@ -17,7 +17,7 @@ depends: [
   "deb-libqt5xml5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "11"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb-libqt5gui5-gles" {>= "5.11.0~rc1"})
 ]
 extra-source "leocad_21.06-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/leocad/leocad_21.06-1+b1_amd64.deb"

@@ -20,7 +20,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-python-any"
   "deb-python-dbus"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 conflicts: [
   "deb-jack-daemon"

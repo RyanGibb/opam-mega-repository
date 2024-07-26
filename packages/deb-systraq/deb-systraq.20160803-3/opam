@@ -12,8 +12,8 @@ depends: [
   "deb-make"
   "deb-net-tools"
   "deb-procps"
-  ("deb-bsd-mailx" | "deb- heirloom-mailx")
-  ("deb-exim4" | "deb- mail-transport-agent")
+  ("deb-bsd-mailx" | "deb-heirloom-mailx")
+  ("deb-exim4" | "deb-mail-transport-agent")
 ]
 extra-source "systraq_20160803-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/systraq/systraq_20160803-3_all.deb"

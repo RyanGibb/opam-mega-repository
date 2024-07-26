@@ -19,7 +19,7 @@ depends: [
   "deb-libtiff6" {>= "4.0.3"}
   "deb-python3"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb-libqt5gui5-gles" {>= "5.11.0~rc1"})
 ]
 conflicts: [
   "deb-mrtrix"

@@ -18,7 +18,7 @@ depends: [
   "deb-libgnome-desktop-3-19" {>= "3.17.92"}
   "deb-libgstreamer1-0-0" {>= "1.0.0"}
   "deb-libgtk-3-0" {>= "3.21.5"}
-  ("deb-libgdk-pixbuf-2-0-0" {>= "2.25.2"} | "deb- libgdk-pixbuf2-0-0" {>= "2.25.2"})
+  ("deb-libgdk-pixbuf-2-0-0" {>= "2.25.2"} | "deb-libgdk-pixbuf2-0-0" {>= "2.25.2"})
 ]
 extra-source "cheese_3.38.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cheese/cheese_3.38.0-3_amd64.deb"

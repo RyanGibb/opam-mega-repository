@@ -23,7 +23,7 @@ depends: [
   "deb-sudo"
   "deb-u-boot-tools"
   "deb-xz-utils" {>= "5.2.2"}
-  ("deb-fdisk" | "deb- util-linux" {< "2.29.2-3~"})
+  ("deb-fdisk" | "deb-util-linux" {< "2.29.2-3~"})
 ]
 extra-source "freedom-maker_0.28_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/freedom-maker/freedom-maker_0.28_all.deb"

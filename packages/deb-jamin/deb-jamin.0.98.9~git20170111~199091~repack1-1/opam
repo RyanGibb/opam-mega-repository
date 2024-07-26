@@ -20,7 +20,7 @@ depends: [
   "deb-libpangocairo-1-0-0" {>= "1.14.0"}
   "deb-libxml2" {>= "2.7.4"}
   "deb-swh-plugins"
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "jamin_0.98.9~git20170111~199091~repack1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jamin/jamin_0.98.9~git20170111~199091~repack1-1_amd64.deb"

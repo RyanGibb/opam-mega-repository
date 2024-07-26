@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-debconf"
   "deb-dictionaries-common"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "wgaelic_0.50-13.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/igaelic/wgaelic_0.50-13.1_all.deb"

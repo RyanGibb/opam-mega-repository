@@ -13,8 +13,8 @@ depends: [
   "deb-libpacklib1-gfortran"
   "deb-libquadmath0" {>= "4.6"}
   "deb-netbase" {>= "4.08"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-openbsd-inetd" | "deb- inet-superserver")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-openbsd-inetd" | "deb-inet-superserver")
 ]
 conflicts: [
   "deb-harden-servers"

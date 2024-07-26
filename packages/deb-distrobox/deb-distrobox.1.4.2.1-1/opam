@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r distrobox"]
 ]
 depends: [
-  ("deb-podman" | "deb- docker-io")
+  ("deb-podman" | "deb-docker-io")
 ]
 extra-source "distrobox_1.4.2.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/distrobox/distrobox_1.4.2.1-1_all.deb"

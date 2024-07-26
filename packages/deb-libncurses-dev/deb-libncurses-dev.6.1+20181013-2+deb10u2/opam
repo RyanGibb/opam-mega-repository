@@ -10,7 +10,7 @@ depends: [
   "deb-libncursesw6" {= "6.1+20181013-2+deb10u2"}
   "deb-libtinfo6" {= "6.1+20181013-2+deb10u2"}
   "deb-ncurses-bin" {>= "6.0+20151017"}
-  ("deb-libc6-dev" | "deb- libc-dev")
+  ("deb-libc6-dev" | "deb-libc-dev")
 ]
 conflicts: [
   "deb-ncurses-dev"

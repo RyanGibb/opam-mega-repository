@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.15"}
-  ("deb-puredata-core" | "deb- pd")
+  ("deb-puredata-core" | "deb-pd")
 ]
 extra-source "pd-ext13_0.17.1-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pd-ext13/pd-ext13_0.17.1-4_amd64.deb"

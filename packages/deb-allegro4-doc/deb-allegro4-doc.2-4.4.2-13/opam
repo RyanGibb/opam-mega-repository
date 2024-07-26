@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r allegro4-doc"]
 ]
 depends: [
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 conflicts: [
   "deb-liballegro-doc" {<= "2-4.3"}

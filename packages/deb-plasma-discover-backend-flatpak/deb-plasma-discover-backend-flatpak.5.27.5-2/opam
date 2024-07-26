@@ -21,7 +21,7 @@ depends: [
   "deb-libqt5network5" {>= "5.15.2~"}
   "deb-libstdc++6" {>= "5"}
   "deb-plasma-discover" {= "5.27.5-2"}
-  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb-libqt5gui5-gles" {>= "5.15.2~"})
 ]
 extra-source "plasma-discover-backend-flatpak_5.27.5-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/plasma-discover/plasma-discover-backend-flatpak_5.27.5-2_amd64.deb"

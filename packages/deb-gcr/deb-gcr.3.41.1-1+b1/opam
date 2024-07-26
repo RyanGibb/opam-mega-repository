@@ -15,8 +15,8 @@ depends: [
   "deb-libgtk-3-0" {>= "3.22.0"}
   "deb-libsecret-1-0" {>= "0.20"}
   "deb-libsystemd0"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus")
 ]
 extra-source "gcr_3.41.1-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gcr/gcr_3.41.1-1+b1_amd64.deb"

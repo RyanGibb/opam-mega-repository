@@ -10,7 +10,7 @@ depends: [
   "deb-python3"
   "deb-python3-dbus"
   "deb-udisks2"
-  ("deb-udisks2" {< "2.7"} | "deb- libblockdev-mdraid2")
+  ("deb-udisks2" {< "2.7"} | "deb-libblockdev-mdraid2")
 ]
 extra-source "cockpit-storaged_188-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cockpit/cockpit-storaged_188-1_all.deb"

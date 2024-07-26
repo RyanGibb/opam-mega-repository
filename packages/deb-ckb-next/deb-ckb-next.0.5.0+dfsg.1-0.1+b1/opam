@@ -21,7 +21,7 @@ depends: [
   "deb-libxcb-ewmh2" {>= "0.4.1"}
   "deb-libxcb-screensaver0"
   "deb-libxcb1"
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "ckb-next_0.5.0+dfsg.1-0.1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/ckb-next/ckb-next_0.5.0+dfsg.1-0.1+b1_amd64.deb"

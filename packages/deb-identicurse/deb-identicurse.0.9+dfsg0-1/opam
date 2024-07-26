@@ -10,7 +10,7 @@ depends: [
   "deb-python" {>= "2.6.6-7~"}
   "deb-python-oauth"
   "deb-python-pkg-resources"
-  ("deb-python2-7" | "deb- python2-6")
+  ("deb-python2-7" | "deb-python2-6")
 ]
 extra-source "identicurse_0.9+dfsg0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/identicurse/identicurse_0.9+dfsg0-1_all.deb"

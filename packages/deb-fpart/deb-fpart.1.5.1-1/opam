@@ -10,7 +10,7 @@ depends: [
   "deb-libc6" {>= "2.7"}
   "deb-rsync"
   "deb-sudo"
-  ("deb-bsd-mailx" | "deb- mailx")
+  ("deb-bsd-mailx" | "deb-mailx")
 ]
 extra-source "fpart_1.5.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fpart/fpart_1.5.1-1_amd64.deb"

@@ -11,7 +11,7 @@ depends: [
   "deb-ruby-ejs"
   "deb-ruby-jquery-rails"
   "deb-ruby-railties"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-backbone-on-rails_1.2.0.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-backbone-on-rails/ruby-backbone-on-rails_1.2.0.0-2_all.deb"

@@ -11,7 +11,7 @@ depends: [
   "deb-etckeeper"
   "deb-libgtk3-perl"
   "deb-lsb-base"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "debian-edu-install_2.10.21_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/debian-edu-install/debian-edu-install_2.10.21_all.deb"

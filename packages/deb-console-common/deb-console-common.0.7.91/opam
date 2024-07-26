@@ -10,7 +10,7 @@ depends: [
   "deb-debianutils" {>= "1.13"}
   "deb-kbd"
   "deb-sysvinit-utils"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "console-common_0.7.91_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/console-common/console-common_0.7.91_all.deb"

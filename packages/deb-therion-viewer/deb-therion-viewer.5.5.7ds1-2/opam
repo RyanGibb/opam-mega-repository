@@ -18,7 +18,7 @@ depends: [
   "deb-libwxgtk3-0-gtk3-0v5" {>= "3.0.5.1+dfsg"}
   "deb-libx11-6"
   "deb-therion"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "therion-viewer_5.5.7ds1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/therion/therion-viewer_5.5.7ds1-2_amd64.deb"

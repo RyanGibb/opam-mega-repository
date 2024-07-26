@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libjs-perfect-scrollbar" {= "1.4.0-4"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-rails-assets-perfect-scrollbar_1.4.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-rails-assets-perfect-scrollbar/ruby-rails-assets-perfect-scrollbar_1.4.0-4_all.deb"

@@ -15,7 +15,7 @@ depends: [
   "deb-libmoosex-util-perl"
   "deb-libnamespace-autoclean-perl"
   "deb-perl-any"
-  ("deb-perl" | "deb- libscalar-list-utils-perl")
+  ("deb-perl" | "deb-libscalar-list-utils-perl")
 ]
 extra-source "libmoosex-attributeshortcuts-perl_0.037-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libm/libmoosex-attributeshortcuts-perl/libmoosex-attributeshortcuts-perl_0.037-2_all.deb"

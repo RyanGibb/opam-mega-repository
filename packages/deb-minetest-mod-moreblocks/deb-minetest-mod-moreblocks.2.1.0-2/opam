@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r minetest-mod-moreblocks"]
 ]
 depends: [
-  ("deb-minetest" | "deb- minetest-server")
+  ("deb-minetest" | "deb-minetest-server")
 ]
 extra-source "minetest-mod-moreblocks_2.1.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/minetest-mod-moreblocks/minetest-mod-moreblocks_2.1.0-2_all.deb"

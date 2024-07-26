@@ -9,8 +9,8 @@ depends: [
   "deb-libc6" {>= "2.4"}
   "deb-libgcc1" {>= "1-4.0"}
   "deb-libgfortran5" {>= "8"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libslicot0_5.0+20101122-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/slicot/libslicot0_5.0+20101122-4_amd64.deb"

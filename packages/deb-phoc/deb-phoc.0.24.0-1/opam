@@ -17,7 +17,7 @@ depends: [
   "deb-libxcb1"
   "deb-libxkbcommon0" {>= "0.7.0"}
   "deb-mutter-common"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "phoc_0.24.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/phoc/phoc_0.24.0-1_amd64.deb"

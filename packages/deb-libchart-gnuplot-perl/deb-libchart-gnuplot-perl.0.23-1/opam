@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl"
-  ("deb-gnuplot-nox" | "deb- gnuplot-x11")
+  ("deb-gnuplot-nox" | "deb-gnuplot-x11")
 ]
 extra-source "libchart-gnuplot-perl_0.23-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libc/libchart-gnuplot-perl/libchart-gnuplot-perl_0.23-1_all.deb"

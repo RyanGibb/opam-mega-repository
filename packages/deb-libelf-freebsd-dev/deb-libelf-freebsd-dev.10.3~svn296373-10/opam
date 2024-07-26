@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libelf-freebsd-1" {= "10.3~svn296373-10"}
-  ("deb-libc0-1-dev" | "deb- libc-dev")
+  ("deb-libc0-1-dev" | "deb-libc-dev")
 ]
 conflicts: [
   "deb-libelf-dev"

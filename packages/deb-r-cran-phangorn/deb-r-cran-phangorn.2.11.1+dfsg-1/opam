@@ -19,7 +19,7 @@ depends: [
   "deb-r-cran-matrix"
   "deb-r-cran-quadprog"
   "deb-r-cran-rcpp"
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "r-cran-phangorn_2.11.1+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-phangorn/r-cran-phangorn_2.11.1+dfsg-1_amd64.deb"

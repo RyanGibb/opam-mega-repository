@@ -9,8 +9,8 @@ depends: [
   "deb-python-any" {>= "2.7.5-5~"}
   "deb-python-editobj" {>= "0.5.6-1"}
   "deb-python-tk" {>= "2.3"}
-  ("deb-evince" | "deb- postscript-viewer")
-  ("deb-timidity" | "deb- playmidi" | "deb- pmidi")
+  ("deb-evince" | "deb-postscript-viewer")
+  ("deb-timidity" | "deb-playmidi" | "deb-pmidi")
 ]
 extra-source "songwrite_0.14-11_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/songwrite/songwrite_0.14-11_all.deb"

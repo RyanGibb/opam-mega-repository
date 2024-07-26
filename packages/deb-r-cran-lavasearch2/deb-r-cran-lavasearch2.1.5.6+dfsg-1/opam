@@ -23,8 +23,8 @@ depends: [
   "deb-r-cran-rcpparmadillo"
   "deb-r-cran-reshape2"
   "deb-r-cran-sandwich"
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "r-cran-lavasearch2_1.5.6+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-lavasearch2/r-cran-lavasearch2_1.5.6+dfsg-1_amd64.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-coffee-script"
   "deb-ruby-railties"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-coffee-rails_5.0.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-coffee-rails/ruby-coffee-rails_5.0.0-3_all.deb"

@@ -40,7 +40,7 @@ depends: [
   "deb-liburdfdom-world3-0" {>= "3.0.1"}
   "deb-libx11-6"
   "deb-libyaml-cpp0-7" {>= "0.7.0"}
-  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb-libqt5gui5-gles" {>= "5.7.0"})
 ]
 extra-source "librviz7d_1.14.19+dfsg-4+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ros-rviz/librviz7d_1.14.19+dfsg-4+b1_amd64.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-doc-base"
-  ("deb-lynx" | "deb- www-browser")
+  ("deb-lynx" | "deb-www-browser")
 ]
 extra-source "libgtksourceviewmm-3.0-doc_3.18.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libg/libgtksourceviewmm/libgtksourceviewmm-3.0-doc_3.18.0-4_all.deb"

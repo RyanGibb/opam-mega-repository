@@ -10,8 +10,8 @@ depends: [
   "deb-libc6" {>= "2.34"}
   "deb-libjack0" {= "1-0.126.0-2"}
   "deb-libsamplerate0" {>= "0.1.7"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 conflicts: [
   "deb-jack-daemon"

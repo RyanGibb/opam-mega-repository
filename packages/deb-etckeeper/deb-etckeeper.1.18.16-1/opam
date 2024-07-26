@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-python3-any"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-git" | "deb- mercurial" | "deb- brz" | "deb- darcs")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-git" | "deb-mercurial" | "deb-brz" | "deb-darcs")
 ]
 extra-source "etckeeper_1.18.16-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/etckeeper/etckeeper_1.18.16-1_all.deb"

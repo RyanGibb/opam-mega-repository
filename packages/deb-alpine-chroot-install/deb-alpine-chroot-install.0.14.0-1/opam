@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r alpine-chroot-install"]
 ]
 depends: [
-  ("deb-curl" | "deb- wget")
+  ("deb-curl" | "deb-wget")
 ]
 extra-source "alpine-chroot-install_0.14.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/alpine-chroot-install/alpine-chroot-install_0.14.0-1_all.deb"

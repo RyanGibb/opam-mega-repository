@@ -15,7 +15,7 @@ depends: [
   "deb-libgusb2" {>= "0.2.4"}
   "deb-libpolkit-gobject-1-0" {>= "0.99"}
   "deb-libudisks2-0" {>= "2.0.91"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-multi-writer_3.30.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-multi-writer/gnome-multi-writer_3.30.0-2_amd64.deb"

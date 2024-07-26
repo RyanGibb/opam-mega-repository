@@ -12,7 +12,7 @@ depends: [
   "deb-libtimedate-perl"
   "deb-libwww-perl"
   "deb-perl-modules-5-36"
-  ("deb-perl" | "deb- perl5")
+  ("deb-perl" | "deb-perl5")
 ]
 extra-source "dl10n_3.00+nmu1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dl10n/dl10n_3.00+nmu1_all.deb"

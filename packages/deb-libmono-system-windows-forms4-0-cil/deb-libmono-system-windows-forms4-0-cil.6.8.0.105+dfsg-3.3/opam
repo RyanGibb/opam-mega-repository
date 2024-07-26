@@ -19,7 +19,7 @@ depends: [
   "deb-libmono-system4-0-cil" {>= "5.18.0.240"}
   "deb-libmono-webbrowser4-0-cil" {>= "1.0"}
   "deb-libx11-6" {>= "2-1.6.0"}
-  ("deb-libc6" {>= "2.36"} | "deb- libc6-1" {>= "2.36"} | "deb- libc0-1" {>= "2.36"})
+  ("deb-libc6" {>= "2.36"} | "deb-libc6-1" {>= "2.36"} | "deb-libc0-1" {>= "2.36"})
 ]
 extra-source "libmono-system-windows-forms4.0-cil_6.8.0.105+dfsg-3.3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mono/libmono-system-windows-forms4.0-cil_6.8.0.105+dfsg-3.3_all.deb"

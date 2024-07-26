@@ -10,7 +10,7 @@ depends: [
   "deb-libgcc-s1" {>= "3.0"}
   "deb-libscim8v5" {>= "1.4"}
   "deb-mlterm-common" {= "3.9.0-1+b1"}
-  ("deb-mlterm" {= "3.9.0-1+b1"} | "deb- mlterm-tiny" {= "3.9.0-1+b1"})
+  ("deb-mlterm" {= "3.9.0-1+b1"} | "deb-mlterm-tiny" {= "3.9.0-1+b1"})
 ]
 extra-source "mlterm-im-scim_3.9.0-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mlterm/mlterm-im-scim_3.9.0-1+b1_amd64.deb"

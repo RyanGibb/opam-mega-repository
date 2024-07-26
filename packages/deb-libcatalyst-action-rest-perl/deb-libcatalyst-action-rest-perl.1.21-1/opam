@@ -15,7 +15,7 @@ depends: [
   "deb-libparams-validate-perl"
   "deb-liburi-find-perl"
   "deb-perl"
-  ("deb-libmodule-pluggable-perl" | "deb- perl" {< "5.17.0"})
+  ("deb-libmodule-pluggable-perl" | "deb-perl" {< "5.17.0"})
 ]
 extra-source "libcatalyst-action-rest-perl_1.21-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libc/libcatalyst-action-rest-perl/libcatalyst-action-rest-perl_1.21-1_all.deb"

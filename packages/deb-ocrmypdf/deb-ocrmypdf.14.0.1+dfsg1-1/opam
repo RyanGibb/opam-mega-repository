@@ -22,8 +22,8 @@ depends: [
   "deb-python3-tqdm"
   "deb-tesseract-ocr" {>= "4.0.0"}
   "deb-zlib1g"
-  ("deb-python3-importlib-resources" | "deb- python3" {> "3.9"})
-  ("deb-python3-typing-extensions" | "deb- python3" {> "3.10"})
+  ("deb-python3-importlib-resources" | "deb-python3" {> "3.9"})
+  ("deb-python3-typing-extensions" | "deb-python3" {> "3.10"})
 ]
 extra-source "ocrmypdf_14.0.1+dfsg1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/ocrmypdf/ocrmypdf_14.0.1+dfsg1-1_all.deb"

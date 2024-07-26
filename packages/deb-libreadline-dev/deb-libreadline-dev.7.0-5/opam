@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libncurses-dev"
   "deb-libreadline7" {= "7.0-5"}
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 conflicts: [
   "deb-libreadline-gplv2-dev"

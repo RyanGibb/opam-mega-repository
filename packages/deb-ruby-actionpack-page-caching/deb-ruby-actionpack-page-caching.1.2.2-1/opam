@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-actionpack" {>= "2-5.0.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-actionpack-page-caching_1.2.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-actionpack-page-caching/ruby-actionpack-page-caching_1.2.2-1_all.deb"

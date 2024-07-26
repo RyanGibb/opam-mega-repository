@@ -11,7 +11,7 @@ depends: [
   "deb-libx11-6"
   "deb-libxext6"
   "deb-zlib1g" {>= "1-1.2.0"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "libgeomview-1.9.5_1.9.5-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/geomview/libgeomview-1.9.5_1.9.5-3_amd64.deb"

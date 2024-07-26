@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-ruby-hrx"
-  ("deb-ruby-any" | "deb- ruby-interpreter")
-  ("deb-ruby-sass" | "deb- sass")
+  ("deb-ruby-any" | "deb-ruby-interpreter")
+  ("deb-ruby-sass" | "deb-sass")
 ]
 extra-source "sass-spec_3.6.3-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sass-spec/sass-spec_3.6.3-1.1_all.deb"

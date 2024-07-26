@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r xnee-doc"]
 ]
 depends: [
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 extra-source "xnee-doc_3.19-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xnee/xnee-doc_3.19-3_all.deb"

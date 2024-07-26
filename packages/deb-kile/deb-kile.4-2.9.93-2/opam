@@ -45,7 +45,7 @@ depends: [
   "deb-okular"
   "deb-perl-any"
   "deb-texlive-latex-base"
-  ("deb-libqt5gui5" {>= "5.8.0"} | "deb- libqt5gui5-gles" {>= "5.8.0"})
+  ("deb-libqt5gui5" {>= "5.8.0"} | "deb-libqt5gui5-gles" {>= "5.8.0"})
 ]
 extra-source "kile_4:2.9.93-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kile/kile_2.9.93-2_amd64.deb"

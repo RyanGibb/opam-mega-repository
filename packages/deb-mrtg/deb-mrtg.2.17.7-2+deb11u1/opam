@@ -10,7 +10,7 @@ depends: [
   "deb-libgd3" {>= "2.1.0~alpha~"}
   "deb-libsnmp-session-perl" {>= "1.14~git20130523.186a005-1"}
   "deb-perl-any"
-  ("deb-debconf" {>= "1.2.0"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "1.2.0"} | "deb-debconf-2-0")
 ]
 extra-source "mrtg_2.17.7-2+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mrtg/mrtg_2.17.7-2+deb11u1_amd64.deb"

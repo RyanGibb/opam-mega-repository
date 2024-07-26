@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r libopenblas0"]
 ]
 depends: [
-  ("deb-libopenblas0-pthread" | "deb- libopenblas0-openmp" | "deb- libopenblas0-serial")
+  ("deb-libopenblas0-pthread" | "deb-libopenblas0-openmp" | "deb-libopenblas0-serial")
 ]
 extra-source "libopenblas0_0.3.13+ds-3+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/openblas/libopenblas0_0.3.13+ds-3+deb11u1_amd64.deb"

@@ -10,7 +10,7 @@ depends: [
   "deb-libnamespace-clean-perl"
   "deb-libparams-validate-perl"
   "deb-perl-any"
-  ("deb-libsql-abstract-classic-perl" | "deb- libsql-abstract-perl")
+  ("deb-libsql-abstract-classic-perl" | "deb-libsql-abstract-perl")
 ]
 extra-source "libsql-abstract-more-perl_1.39-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libs/libsql-abstract-more-perl/libsql-abstract-more-perl_1.39-1_all.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-rails" {>= "4.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-data-migrate_5.3.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-data-migrate/ruby-data-migrate_5.3.1-1_all.deb"

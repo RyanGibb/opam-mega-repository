@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r golang-github-vdemeester-shakers-dev"]
 ]
 depends: [
-  ("deb-golang-check-v1-dev" {>= "0.0+git20150729.11d3bc7-3~"} | "deb- golang-github-go-check-check-dev")
+  ("deb-golang-check-v1-dev" {>= "0.0+git20150729.11d3bc7-3~"} | "deb-golang-github-go-check-check-dev")
 ]
 extra-source "golang-github-vdemeester-shakers-dev_0.0~git20160210.0.24d7f1d-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/golang-github-vdemeester-shakers/golang-github-vdemeester-shakers-dev_0.0~git20160210.0.24d7f1d-2_all.deb"

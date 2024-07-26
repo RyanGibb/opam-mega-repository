@@ -9,7 +9,7 @@ depends: [
   "deb-dpkg" {>= "1.8.0"}
   "deb-perl-any"
   "deb-util-linux"
-  ("deb-dctrl-tools" | "deb- grep-dctrl" {>= "0.11"})
+  ("deb-dctrl-tools" | "deb-grep-dctrl" {>= "0.11"})
 ]
 extra-source "dlocate_1.07+nmu1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dlocate/dlocate_1.07+nmu1_all.deb"

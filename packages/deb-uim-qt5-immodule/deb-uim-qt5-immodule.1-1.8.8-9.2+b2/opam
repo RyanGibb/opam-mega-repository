@@ -16,7 +16,7 @@ depends: [
   "deb-libuim-scm0" {>= "1-1.5.7"}
   "deb-libuim8" {>= "1-1.8.6"}
   "deb-uim" {= "1-1.8.8-9.2+b2"}
-  ("deb-libqt5gui5" {>= "5.6.0~beta"} | "deb- libqt5gui5-gles" {>= "5.6.0~beta"})
+  ("deb-libqt5gui5" {>= "5.6.0~beta"} | "deb-libqt5gui5-gles" {>= "5.6.0~beta"})
 ]
 extra-source "uim-qt5-immodule_1:1.8.8-9.2+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/uim/uim-qt5-immodule_1.8.8-9.2+b2_amd64.deb"

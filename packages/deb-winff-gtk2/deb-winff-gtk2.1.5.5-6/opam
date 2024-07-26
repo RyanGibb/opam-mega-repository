@@ -16,7 +16,7 @@ depends: [
   "deb-libpango-1-0-0" {>= "1.14.0"}
   "deb-libx11-6"
   "deb-winff-data"
-  ("deb-xterm" | "deb- x-terminal-emulator")
+  ("deb-xterm" | "deb-x-terminal-emulator")
 ]
 extra-source "winff-gtk2_1.5.5-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/winff/winff-gtk2_1.5.5-6_amd64.deb"

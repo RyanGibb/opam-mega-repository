@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r erlang-mnesia"]
 ]
 depends: [
-  ("deb-erlang-base" {= "1-23.2.6+dfsg-1+deb11u1"} | "deb- erlang-base-hipe" {= "1-23.2.6+dfsg-1+deb11u1"})
+  ("deb-erlang-base" {= "1-23.2.6+dfsg-1+deb11u1"} | "deb-erlang-base-hipe" {= "1-23.2.6+dfsg-1+deb11u1"})
 ]
 extra-source "erlang-mnesia_1:23.2.6+dfsg-1+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/erlang/erlang-mnesia_23.2.6+dfsg-1+deb11u1_amd64.deb"

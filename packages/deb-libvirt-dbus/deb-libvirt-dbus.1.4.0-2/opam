@@ -16,7 +16,7 @@ depends: [
   "deb-libvirt0" {>= "3.0.0"}
   "deb-policykit-1"
   "deb-sysuser-helper" {< "1.4"}
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus")
 ]
 extra-source "libvirt-dbus_1.4.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libv/libvirt-dbus/libvirt-dbus_1.4.0-2_amd64.deb"

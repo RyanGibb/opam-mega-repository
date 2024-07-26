@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r debian-edu-router-deployserver"]
 ]
 depends: [
-  ("deb-apache2" | "deb- httpd")
+  ("deb-apache2" | "deb-httpd")
 ]
 extra-source "debian-edu-router-deployserver_2.12.8~deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/debian-edu-router/debian-edu-router-deployserver_2.12.8~deb12u1_all.deb"

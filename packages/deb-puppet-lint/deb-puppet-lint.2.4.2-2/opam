@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r puppet-lint"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "puppet-lint_2.4.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/puppet-lint/puppet-lint_2.4.2-2_all.deb"

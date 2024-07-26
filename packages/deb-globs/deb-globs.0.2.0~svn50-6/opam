@@ -13,7 +13,7 @@ depends: [
   "deb-python-any" {< "2.8"}
   "deb-python-any" {>= "2.7~"}
   "deb-python-glade2"
-  ("deb-libgl1-mesa-glx" | "deb- libgl1" | "deb- fglrx-glx")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1" | "deb-fglrx-glx")
 ]
 extra-source "globs_0.2.0~svn50-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/globs/globs_0.2.0~svn50-6_amd64.deb"

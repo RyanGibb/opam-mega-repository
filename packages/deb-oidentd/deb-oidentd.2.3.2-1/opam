@@ -12,7 +12,7 @@ depends: [
   "deb-libnetfilter-conntrack3"
   "deb-lsb-base" {>= "3.0-6"}
   "deb-netbase"
-  ("deb-iproute2" | "deb- net-tools")
+  ("deb-iproute2" | "deb-net-tools")
 ]
 conflicts: [
   "deb-ident-server"

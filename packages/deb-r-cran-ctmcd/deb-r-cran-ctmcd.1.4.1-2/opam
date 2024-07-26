@@ -16,7 +16,7 @@ depends: [
   "deb-r-cran-numderiv"
   "deb-r-cran-rcpp" {>= "0.12.17"}
   "deb-r-cran-rcpparmadillo"
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "r-cran-ctmcd_1.4.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-ctmcd/r-cran-ctmcd_1.4.1-2_amd64.deb"

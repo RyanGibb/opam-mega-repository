@@ -9,7 +9,7 @@ depends: [
   "deb-libxml-libxml-perl"
   "deb-libxml-libxslt-perl"
   "deb-perl-any"
-  ("deb-libcgi-pm-perl" | "deb- perl" {< "5.19"})
+  ("deb-libcgi-pm-perl" | "deb-perl" {< "5.19"})
 ]
 extra-source "libcgi-xmlapplication-perl_1.1.5-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libc/libcgi-xmlapplication-perl/libcgi-xmlapplication-perl_1.1.5-2_all.deb"

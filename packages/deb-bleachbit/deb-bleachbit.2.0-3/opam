@@ -9,7 +9,7 @@ depends: [
   "deb-policykit-1"
   "deb-python-any"
   "deb-python-gtk2"
-  ("deb-python" | "deb- python-simplejson")
+  ("deb-python" | "deb-python-simplejson")
 ]
 extra-source "bleachbit_2.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/bleachbit/bleachbit_2.0-3_all.deb"

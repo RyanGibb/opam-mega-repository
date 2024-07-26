@@ -11,7 +11,7 @@ depends: [
   "deb-git"
   "deb-jq"
   "deb-rsync"
-  ("deb-docker-io" | "deb- docker-ce" | "deb- podman")
+  ("deb-docker-io" | "deb-docker-ce" | "deb-podman")
 ]
 extra-source "due_3.0.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/due/due_3.0.0-1_all.deb"

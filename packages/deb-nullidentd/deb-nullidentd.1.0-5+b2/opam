@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.2.5"}
   "deb-netbase"
   "deb-update-inetd"
-  ("deb-openbsd-inetd" | "deb- inet-superserver")
+  ("deb-openbsd-inetd" | "deb-inet-superserver")
 ]
 extra-source "nullidentd_1.0-5+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/nullidentd/nullidentd_1.0-5+b2_amd64.deb"

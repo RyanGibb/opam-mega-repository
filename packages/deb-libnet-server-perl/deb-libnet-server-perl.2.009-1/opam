@@ -13,7 +13,7 @@ depends: [
   "deb-libnet-ssleay-perl"
   "deb-libsocket6-perl"
   "deb-perl"
-  ("deb-libcgi-pm-perl" | "deb- perl" {< "5.19"})
+  ("deb-libcgi-pm-perl" | "deb-perl" {< "5.19"})
 ]
 extra-source "libnet-server-perl_2.009-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libn/libnet-server-perl/libnet-server-perl_2.009-1_all.deb"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r totem-common"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "totem-common_43.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/totem/totem-common_43.0-2_all.deb"

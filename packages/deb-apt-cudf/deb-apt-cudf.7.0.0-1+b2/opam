@@ -10,7 +10,7 @@ depends: [
   "deb-libc6" {>= "2.35"}
   "deb-perl-any"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-aspcud" | "deb- cudf-solver")
+  ("deb-aspcud" | "deb-cudf-solver")
 ]
 extra-source "apt-cudf_7.0.0-1+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dose3/apt-cudf_7.0.0-1+b2_amd64.deb"

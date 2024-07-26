@@ -27,8 +27,8 @@ depends: [
   "deb-qml-module-qtquick-controls" {>= "5.15.0~"}
   "deb-qml-module-qtquick-layouts" {>= "5.15.0~"}
   "deb-qml-module-qtquick2" {>= "5.15.0~"}
-  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb- libqt5gui5-gles" {>= "5.15.0~"})
-  ("deb-libqt5quick5" {>= "5.15.0~"} | "deb- libqt5quick5-gles" {>= "5.15.0~"})
+  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb-libqt5gui5-gles" {>= "5.15.0~"})
+  ("deb-libqt5quick5" {>= "5.15.0~"} | "deb-libqt5quick5-gles" {>= "5.15.0~"})
 ]
 extra-source "kwin-bismuth_3.1.4-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/bismuth/kwin-bismuth_3.1.4-4_amd64.deb"

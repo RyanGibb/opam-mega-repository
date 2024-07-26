@@ -10,7 +10,7 @@ depends: [
   "deb-dbconfig-common"
   "deb-debconf"
   "deb-python3-octavia" {= "11.0.0-2"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "octavia-common_11.0.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/octavia/octavia-common_11.0.0-2_all.deb"

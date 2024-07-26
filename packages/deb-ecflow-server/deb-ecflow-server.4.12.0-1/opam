@@ -15,7 +15,7 @@ depends: [
   "deb-libc6" {>= "2.14"}
   "deb-libgcc1" {>= "1-3.0"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-ksh" | "deb- mksh" | "deb- pdksh" | "deb- zsh")
+  ("deb-ksh" | "deb-mksh" | "deb-pdksh" | "deb-zsh")
 ]
 extra-source "ecflow-server_4.12.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/ecflow/ecflow-server_4.12.0-1_amd64.deb"

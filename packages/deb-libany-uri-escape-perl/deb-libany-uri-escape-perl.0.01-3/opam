@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl"
-  ("deb-liburi-perl" | "deb- liburi-escape-xs-perl")
+  ("deb-liburi-perl" | "deb-liburi-escape-xs-perl")
 ]
 extra-source "libany-uri-escape-perl_0.01-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/liba/libany-uri-escape-perl/libany-uri-escape-perl_0.01-3_all.deb"

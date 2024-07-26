@@ -15,7 +15,7 @@ depends: [
   "deb-libsdl-image1-2" {>= "1.2.10"}
   "deb-libsdl-ttf2-0-0"
   "deb-libsdl1-2debian" {>= "1.2.11"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "gravit_0.5.1+dfsg-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gravit/gravit_0.5.1+dfsg-5_amd64.deb"

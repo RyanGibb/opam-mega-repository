@@ -14,7 +14,7 @@ depends: [
   "deb-libqt5xml5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "5"}
   "deb-padthv1-common" {= "0.9.20-1"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "padthv1-lv2_0.9.20-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/padthv1/padthv1-lv2_0.9.20-1_amd64.deb"

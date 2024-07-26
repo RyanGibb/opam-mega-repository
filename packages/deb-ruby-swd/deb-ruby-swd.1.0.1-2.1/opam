@@ -11,7 +11,7 @@ depends: [
   "deb-ruby-attr-required" {>= "0.0.5"}
   "deb-ruby-httpclient" {>= "2.4"}
   "deb-ruby-i18n"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-swd_1.0.1-2.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-swd/ruby-swd_1.0.1-2.1_all.deb"

@@ -10,7 +10,7 @@ depends: [
   "deb-python" {< "2.8"}
   "deb-python" {>= "2.6.6-7~"}
   "deb-python-numpy"
-  ("deb-python2-7" | "deb- python2-6")
+  ("deb-python2-7" | "deb-python2-6")
 ]
 extra-source "python-fftw_0.2.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-fftw/python-fftw_0.2.2-1_amd64.deb"

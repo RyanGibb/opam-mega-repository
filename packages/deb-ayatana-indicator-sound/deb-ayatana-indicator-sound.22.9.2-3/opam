@@ -17,8 +17,8 @@ depends: [
   "deb-libnotify4" {>= "0.7.0"}
   "deb-libpulse-mainloop-glib0" {>= "5.0"}
   "deb-libpulse0" {>= "5.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-pulseaudio" | "deb- pipewire-pulse")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-pulseaudio" | "deb-pipewire-pulse")
 ]
 extra-source "ayatana-indicator-sound_22.9.2-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/ayatana-indicator-sound/ayatana-indicator-sound_22.9.2-3_amd64.deb"

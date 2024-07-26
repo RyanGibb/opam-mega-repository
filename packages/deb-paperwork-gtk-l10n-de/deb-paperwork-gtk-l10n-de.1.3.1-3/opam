@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-paperwork-gtk"
-  ("deb-aspell-de" | "deb- aspell-de-1901")
-  ("deb-tesseract-ocr-deu" | "deb- cuneiform")
+  ("deb-aspell-de" | "deb-aspell-de-1901")
+  ("deb-tesseract-ocr-deu" | "deb-cuneiform")
 ]
 extra-source "paperwork-gtk-l10n-de_1.3.1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/paperwork/paperwork-gtk-l10n-de_1.3.1-3_all.deb"

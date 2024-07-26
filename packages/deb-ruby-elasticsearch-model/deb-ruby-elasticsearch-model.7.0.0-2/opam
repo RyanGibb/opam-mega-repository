@@ -9,7 +9,7 @@ depends: [
   "deb-ruby-activesupport" {> "3"}
   "deb-ruby-elasticsearch" {> "1"}
   "deb-ruby-hashie"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-elasticsearch-model_7.0.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-elasticsearch-model/ruby-elasticsearch-model_7.0.0-2_all.deb"

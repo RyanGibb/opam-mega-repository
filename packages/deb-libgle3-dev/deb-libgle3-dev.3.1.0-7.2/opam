@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6-dev"
   "deb-libgle3" {= "3.1.0-7.2"}
-  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
+  ("deb-libgl1-mesa-dev" | "deb-libgl-dev")
 ]
 conflicts: [
   "deb-glutg3-dev" {< "3.7-13"}

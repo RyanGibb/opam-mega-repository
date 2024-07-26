@@ -9,8 +9,8 @@ depends: [
   "deb-libc6" {>= "2.4"}
   "deb-libxml2" {>= "2.7.4"}
   "deb-perl-any"
-  ("deb-cups-filters" {>= "1.0.42"} | "deb- foomatic-filters")
-  ("deb-wget" | "deb- curl")
+  ("deb-cups-filters" {>= "1.0.42"} | "deb-foomatic-filters")
+  ("deb-wget" | "deb-curl")
 ]
 extra-source "foomatic-db-engine_4.0.13-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/foomatic-db-engine/foomatic-db-engine_4.0.13-5_amd64.deb"

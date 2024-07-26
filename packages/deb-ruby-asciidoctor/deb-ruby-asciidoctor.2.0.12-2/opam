@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-asciidoctor"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-asciidoctor_2.0.12-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/asciidoctor/ruby-asciidoctor_2.0.12-2_all.deb"

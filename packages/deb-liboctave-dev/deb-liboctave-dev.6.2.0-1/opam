@@ -16,11 +16,11 @@ depends: [
   "deb-liboctave8" {= "6.2.0-1"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-octave" {= "6.2.0-1"}
-  ("deb-libblas-dev" | "deb- libblas-so")
-  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
-  ("deb-libhdf5-dev" | "deb- libhdf5-openmpi-dev" | "deb- libhdf5-mpich-dev")
-  ("deb-liblapack-dev" | "deb- liblapack-so")
-  ("deb-libreadline-dev" | "deb- libreadline-gplv2-dev")
+  ("deb-libblas-dev" | "deb-libblas-so")
+  ("deb-libgl1-mesa-dev" | "deb-libgl-dev")
+  ("deb-libhdf5-dev" | "deb-libhdf5-openmpi-dev" | "deb-libhdf5-mpich-dev")
+  ("deb-liblapack-dev" | "deb-liblapack-so")
+  ("deb-libreadline-dev" | "deb-libreadline-gplv2-dev")
 ]
 extra-source "liboctave-dev_6.2.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/octave/liboctave-dev_6.2.0-1_amd64.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-python3-any"
   "deb-python3-wcwidth"
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-prettytable_3.6.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/prettytable/python3-prettytable_3.6.0-1_all.deb"

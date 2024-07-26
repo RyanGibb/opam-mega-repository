@@ -11,7 +11,7 @@ depends: [
   "deb-ruby-sigar" {>= "0.7.3~"}
   "deb-ruby-state-machines"
   "deb-ruby-thor"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-eye_0.7-5.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-eye/ruby-eye_0.7-5.1_all.deb"

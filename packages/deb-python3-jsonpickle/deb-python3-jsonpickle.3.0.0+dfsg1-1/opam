@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-python3-any"
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
-  ("deb-python3-pkg-resources" | "deb- python3" {< "3.11"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
+  ("deb-python3-pkg-resources" | "deb-python3" {< "3.11"})
 ]
 extra-source "python3-jsonpickle_3.0.0+dfsg1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jsonpickle/python3-jsonpickle_3.0.0+dfsg1-1_all.deb"

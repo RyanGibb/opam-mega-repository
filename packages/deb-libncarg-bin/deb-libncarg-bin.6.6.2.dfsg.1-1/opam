@@ -11,7 +11,7 @@ depends: [
   "deb-libgfortran5" {>= "8"}
   "deb-libncarg-dev" {= "6.6.2.dfsg.1-1"}
   "deb-libncarg0" {>= "6.6.2.dfsg.1"}
-  ("deb-tcsh" | "deb- csh" | "deb- c-shell")
+  ("deb-tcsh" | "deb-csh" | "deb-c-shell")
 ]
 extra-source "libncarg-bin_6.6.2.dfsg.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/ncl/libncarg-bin_6.6.2.dfsg.1-1_amd64.deb"

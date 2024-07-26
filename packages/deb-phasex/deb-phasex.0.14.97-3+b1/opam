@@ -15,7 +15,7 @@ depends: [
   "deb-libpango-1-0-0" {>= "1.14.0"}
   "deb-libsamplerate0" {>= "0.1.7"}
   "deb-libx11-6"
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "phasex_0.14.97-3+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/phasex/phasex_0.14.97-3+b1_amd64.deb"

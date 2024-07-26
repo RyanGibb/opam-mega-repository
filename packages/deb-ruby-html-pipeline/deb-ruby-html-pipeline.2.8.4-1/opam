@@ -9,7 +9,7 @@ depends: [
   "deb-ruby-activesupport"
   "deb-ruby-commonmarker"
   "deb-ruby-nokogiri" {>= "1.4"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-html-pipeline_2.8.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-html-pipeline/ruby-html-pipeline_2.8.4-1_all.deb"

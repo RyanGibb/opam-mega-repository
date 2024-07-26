@@ -11,7 +11,7 @@ depends: [
   "deb-python3-itsdangerous" {>= "2.0"}
   "deb-python3-jinja2" {>= "3.0"}
   "deb-python3-werkzeug" {>= "2.2.2"}
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.10"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.10"})
 ]
 extra-source "python3-flask_2.2.2-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/flask/python3-flask_2.2.2-3_all.deb"

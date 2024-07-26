@@ -42,7 +42,7 @@ depends: [
   "deb-libx11-6"
   "deb-libxext6"
   "deb-libxi6" {>= "2-1.2.99.4"}
-  ("deb-default-logind" | "deb- logind")
+  ("deb-default-logind" | "deb-logind")
 ]
 extra-source "gnome-settings-daemon_3.38.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-settings-daemon/gnome-settings-daemon_3.38.2-1_amd64.deb"

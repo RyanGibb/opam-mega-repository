@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl-any"
-  ("deb-lynx" | "deb- www-browser")
+  ("deb-lynx" | "deb-www-browser")
 ]
 extra-source "libwwwbrowser-perl_2.23-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libw/libwwwbrowser-perl/libwwwbrowser-perl_2.23-4_all.deb"

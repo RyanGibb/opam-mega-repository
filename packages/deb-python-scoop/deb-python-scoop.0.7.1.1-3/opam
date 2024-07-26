@@ -10,7 +10,7 @@ depends: [
   "deb-python-any" {>= "2.7~"}
   "deb-python-greenlet" {>= "0.3.4~"}
   "deb-python-zmq" {>= "13.1.0~"}
-  ("deb-python" {>= "2.7"} | "deb- python-argparse")
+  ("deb-python" {>= "2.7"} | "deb-python-argparse")
 ]
 extra-source "python-scoop_0.7.1.1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/scoop/python-scoop_0.7.1.1-3_all.deb"

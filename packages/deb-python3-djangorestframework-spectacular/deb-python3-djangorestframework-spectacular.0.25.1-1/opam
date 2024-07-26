@@ -13,7 +13,7 @@ depends: [
   "deb-python3-jsonschema"
   "deb-python3-uritemplate" {>= "3~"}
   "deb-python3-yaml"
-  ("deb-python3-typing-extensions" | "deb- python3" {> "3.8"})
+  ("deb-python3-typing-extensions" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-djangorestframework-spectacular_0.25.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-drf-spectacular/python3-djangorestframework-spectacular_0.25.1-1_all.deb"

@@ -10,7 +10,7 @@ depends: [
   "deb-libstrongswan" {= "5.7.2-1+deb10u2"}
   "deb-strongswan-libcharon"
   "deb-strongswan-starter"
-  ("deb-iproute2" | "deb- iproute")
+  ("deb-iproute2" | "deb-iproute")
 ]
 extra-source "strongswan-charon_5.7.2-1+deb10u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/strongswan/strongswan-charon_5.7.2-1+deb10u2_amd64.deb"

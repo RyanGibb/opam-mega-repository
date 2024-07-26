@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r repmgr"]
 ]
 depends: [
-  ("deb-postgresql-11-repmgr" | "deb- postgresql-10-repmgr" | "deb- postgresql-9-6-repmgr" | "deb- postgresql-9-5-repmgr" | "deb- postgresql-9-4-repmgr" | "deb- postgresql-9-3-repmgr" | "deb- postgresql-9-2-repmgr" | "deb- postgresql-9-1-repmgr" | "deb- postgresql-9-0-repmgr")
+  ("deb-postgresql-11-repmgr" | "deb-postgresql-10-repmgr" | "deb-postgresql-9-6-repmgr" | "deb-postgresql-9-5-repmgr" | "deb-postgresql-9-4-repmgr" | "deb-postgresql-9-3-repmgr" | "deb-postgresql-9-2-repmgr" | "deb-postgresql-9-1-repmgr" | "deb-postgresql-9-0-repmgr")
 ]
 extra-source "repmgr_4.2.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/repmgr/repmgr_4.2.0-2_all.deb"

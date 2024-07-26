@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.17"}
   "deb-sysvinit-utils"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "wide-dhcpv6-relay_20080615-23_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/wide-dhcpv6/wide-dhcpv6-relay_20080615-23_amd64.deb"

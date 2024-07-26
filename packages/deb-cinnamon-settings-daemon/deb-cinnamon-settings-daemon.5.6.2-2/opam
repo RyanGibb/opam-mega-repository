@@ -37,7 +37,7 @@ depends: [
   "deb-libxi6" {>= "2-1.2.99.4"}
   "deb-libxklavier16" {>= "5.0"}
   "deb-python3-tinycss"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "cinnamon-settings-daemon_5.6.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cinnamon-settings-daemon/cinnamon-settings-daemon_5.6.2-2_amd64.deb"

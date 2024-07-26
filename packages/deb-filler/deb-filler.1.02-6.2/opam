@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r filler"]
 ]
 depends: [
-  ("deb-default-jre" | "deb- java1-runtime" | "deb- java2-runtime")
+  ("deb-default-jre" | "deb-java1-runtime" | "deb-java2-runtime")
 ]
 extra-source "filler_1.02-6.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/filler/filler_1.02-6.2_all.deb"

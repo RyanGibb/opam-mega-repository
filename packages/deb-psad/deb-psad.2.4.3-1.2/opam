@@ -20,9 +20,9 @@ depends: [
   "deb-perl-any"
   "deb-psmisc"
   "deb-whois"
-  ("deb-bsd-mailx" | "deb- mailx" | "deb- mailutils")
-  ("deb-default-mta" | "deb- mail-transport-agent")
-  ("deb-rsyslog" | "deb- system-log-daemon")
+  ("deb-bsd-mailx" | "deb-mailx" | "deb-mailutils")
+  ("deb-default-mta" | "deb-mail-transport-agent")
+  ("deb-rsyslog" | "deb-system-log-daemon")
 ]
 extra-source "psad_2.4.3-1.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/psad/psad_2.4.3-1.2_amd64.deb"

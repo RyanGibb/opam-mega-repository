@@ -18,7 +18,7 @@ depends: [
   "deb-libsys-hostname-long-perl"
   "deb-lsb-base" {>= "3.0-6"}
   "deb-perl"
-  ("deb-libwww-perl" | "deb- curl" | "deb- w3m")
+  ("deb-libwww-perl" | "deb-curl" | "deb-w3m")
 ]
 extra-source "spamassassin_3.4.2-1+deb10u3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/spamassassin/spamassassin_3.4.2-1+deb10u3_all.deb"

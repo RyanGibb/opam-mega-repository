@@ -14,7 +14,7 @@ depends: [
   "deb-libsdl-mixer1-2" {>= "1.2.12"}
   "deb-libsdl1-2-compat-shim"
   "deb-val-and-rick-data" {= "0.1a.dfsg1-7"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "val-and-rick_0.1a.dfsg1-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/val-and-rick/val-and-rick_0.1a.dfsg1-7_amd64.deb"

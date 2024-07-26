@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r td2planet"]
 ]
 depends: [
-  ("deb-ruby-any" | "deb- ruby-interpreter")
+  ("deb-ruby-any" | "deb-ruby-interpreter")
 ]
 extra-source "td2planet_0.3.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/td2planet/td2planet_0.3.0-4_all.deb"

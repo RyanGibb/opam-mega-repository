@@ -12,7 +12,7 @@ depends: [
   "deb-golang-golang-x-oauth2-google-dev"
   "deb-golang-google-genproto-dev"
   "deb-golang-goprotobuf-dev" {>= "0.0~git20161116~"}
-  ("deb-golang-glog-dev" | "deb- golang-github-golang-glog-dev")
+  ("deb-golang-glog-dev" | "deb-golang-github-golang-glog-dev")
 ]
 extra-source "golang-google-grpc-dev_1.11.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/golang-google-grpc/golang-google-grpc-dev_1.11.0-1_all.deb"

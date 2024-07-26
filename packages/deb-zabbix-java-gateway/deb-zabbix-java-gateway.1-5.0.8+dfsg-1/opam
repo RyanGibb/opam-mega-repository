@@ -12,7 +12,7 @@ depends: [
   "deb-liblogback-java"
   "deb-libslf4j-java"
   "deb-lsb-base"
-  ("deb-default-jre-headless" | "deb- java7-runtime-headless" | "deb- java8-runtime-headless" | "deb- java9-runtime-headless" | "deb- java10-runtime-headless" | "deb- java11-runtime-headless")
+  ("deb-default-jre-headless" | "deb-java7-runtime-headless" | "deb-java8-runtime-headless" | "deb-java9-runtime-headless" | "deb-java10-runtime-headless" | "deb-java11-runtime-headless")
 ]
 extra-source "zabbix-java-gateway_1:5.0.8+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/z/zabbix/zabbix-java-gateway_5.0.8+dfsg-1_all.deb"

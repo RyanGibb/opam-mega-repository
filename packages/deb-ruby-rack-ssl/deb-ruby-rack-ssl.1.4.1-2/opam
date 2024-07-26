@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-rack"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-rack-ssl_1.4.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-rack-ssl/ruby-rack-ssl_1.4.1-2_all.deb"

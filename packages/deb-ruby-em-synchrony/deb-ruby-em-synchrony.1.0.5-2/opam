@@ -16,7 +16,7 @@ depends: [
   "deb-ruby-mongo"
   "deb-ruby-mysql2"
   "deb-ruby-remcached"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-em-synchrony_1.0.5-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-em-synchrony/ruby-em-synchrony_1.0.5-2_all.deb"

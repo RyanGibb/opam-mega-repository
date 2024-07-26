@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl-any"
-  ("deb-perl" {>= "5.17.9"} | "deb- libextutils-parsexs-perl" {>= "3.180030"})
+  ("deb-perl" {>= "5.17.9"} | "deb-libextutils-parsexs-perl" {>= "3.180030"})
 ]
 extra-source "libextutils-typemaps-default-perl_1.05-2.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libe/libextutils-typemaps-default-perl/libextutils-typemaps-default-perl_1.05-2.1_all.deb"

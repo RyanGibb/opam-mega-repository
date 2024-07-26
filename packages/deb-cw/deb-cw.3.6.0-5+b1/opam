@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.34"}
   "deb-libcw7"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "cw_3.6.0-5+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/unixcw/cw_3.6.0-5+b1_amd64.deb"

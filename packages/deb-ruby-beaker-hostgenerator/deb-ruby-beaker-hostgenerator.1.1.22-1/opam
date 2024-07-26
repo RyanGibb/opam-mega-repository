@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-deep-merge"
   "deb-ruby-stringify-hash"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-beaker-hostgenerator_1.1.22-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-beaker-hostgenerator/ruby-beaker-hostgenerator_1.1.22-1_all.deb"

@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.14"}
   "deb-libdevmapper1-02-1" {>= "2-1.02.20"}
   "deb-perl-any"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "lilo_1:24.2-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lilo/lilo_24.2-4_amd64.deb"

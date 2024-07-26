@@ -18,7 +18,7 @@ depends: [
   "deb-libwrap0" {>= "7.6-4~"}
   "deb-lsb-base" {>= "3.2-13"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-bareos-database-postgresql" {= "16.2.6-5"} | "deb- bareos-database-mysql" {= "16.2.6-5"} | "deb- bareos-database-sqlite3" {= "16.2.6-5"})
+  ("deb-bareos-database-postgresql" {= "16.2.6-5"} | "deb-bareos-database-mysql" {= "16.2.6-5"} | "deb-bareos-database-sqlite3" {= "16.2.6-5"})
 ]
 extra-source "bareos-database-common_16.2.6-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/bareos/bareos-database-common_16.2.6-5_amd64.deb"

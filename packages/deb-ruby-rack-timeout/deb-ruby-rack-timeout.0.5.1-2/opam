@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-rack-timeout"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-rack-timeout_0.5.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-rack-timeout/ruby-rack-timeout_0.5.1-2_all.deb"

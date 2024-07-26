@@ -15,7 +15,7 @@ depends: [
   "deb-libdevmapper1-02-1" {>= "2-1.02.97"}
   "deb-libgpgme11" {>= "1.4.1"}
   "deb-libseccomp2" {>= "2.4.1"}
-  ("deb-crun" | "deb- runc" {>= "1.0.0~rc92~"})
+  ("deb-crun" | "deb-runc" {>= "1.0.0~rc92~"})
 ]
 extra-source "podman_3.0.1+dfsg1-3+deb11u5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libp/libpod/podman_3.0.1+dfsg1-3+deb11u5_amd64.deb"

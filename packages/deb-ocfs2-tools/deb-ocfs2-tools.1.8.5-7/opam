@@ -18,7 +18,7 @@ depends: [
   "deb-libuuid1" {>= "2.16"}
   "deb-lsb-base" {>= "3.0-6"}
   "deb-psmisc"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "ocfs2-tools_1.8.5-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/ocfs2-tools/ocfs2-tools_1.8.5-7_amd64.deb"

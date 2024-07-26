@@ -12,8 +12,8 @@ depends: [
   "deb-libqt5core5a" {>= "5.12.2"}
   "deb-libqt5widgets5" {>= "5.11.0~rc1"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.8.0"} | "deb- libqt5gui5-gles" {>= "5.8.0"})
-  ("deb-tesseract-ocr" | "deb- cuneiform")
+  ("deb-libqt5gui5" {>= "5.8.0"} | "deb-libqt5gui5-gles" {>= "5.8.0"})
+  ("deb-tesseract-ocr" | "deb-cuneiform")
 ]
 extra-source "yagf_0.9.5+repack1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/y/yagf/yagf_0.9.5+repack1-1_amd64.deb"

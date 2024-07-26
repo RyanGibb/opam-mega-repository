@@ -8,8 +8,8 @@ remove: [
 depends: [
   "deb-libphutil" {= "0~git20190207-1"}
   "deb-php-xml"
-  ("deb-php-cli" | "deb- php5-cli")
-  ("deb-php-curl" | "deb- php5-curl")
+  ("deb-php-cli" | "deb-php5-cli")
+  ("deb-php-curl" | "deb-php5-curl")
 ]
 conflicts: [
   "deb-arc"

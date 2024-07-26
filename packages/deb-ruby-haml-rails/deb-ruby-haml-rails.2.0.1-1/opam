@@ -12,7 +12,7 @@ depends: [
   "deb-ruby-haml" {>= "4.0.6~"}
   "deb-ruby-html2haml" {>= "2.0~"}
   "deb-ruby-railties"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-haml-rails_2.0.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-haml-rails/ruby-haml-rails_2.0.1-1_all.deb"

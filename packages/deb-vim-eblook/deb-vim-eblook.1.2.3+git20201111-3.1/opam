@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-eblook"
-  ("deb-vim-athena" | "deb- vim-gtk3" | "deb- vim-nox" | "deb- python3-pyvim")
+  ("deb-vim-athena" | "deb-vim-gtk3" | "deb-vim-nox" | "deb-python3-pyvim")
 ]
 extra-source "vim-eblook_1.2.3+git20201111-3.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/vim-eblook/vim-eblook_1.2.3+git20201111-3.1_all.deb"

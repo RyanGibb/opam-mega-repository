@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-fonts-freefont-ttf"
-  ("deb-tuxpaint-stamps-default" | "deb- tuxpaint-stamps")
+  ("deb-tuxpaint-stamps-default" | "deb-tuxpaint-stamps")
 ]
 extra-source "tuxpaint-data_1:0.9.23-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tuxpaint/tuxpaint-data_0.9.23-1_all.deb"

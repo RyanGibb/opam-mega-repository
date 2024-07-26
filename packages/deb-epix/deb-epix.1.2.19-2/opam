@@ -11,8 +11,8 @@ depends: [
   "deb-ghostscript"
   "deb-texlive-latex-base"
   "deb-texlive-pictures"
-  ("deb-g++" | "deb- c++-compiler")
-  ("deb-imagemagick" | "deb- graphicsmagick-imagemagick-compat")
+  ("deb-g++" | "deb-c++-compiler")
+  ("deb-imagemagick" | "deb-graphicsmagick-imagemagick-compat")
 ]
 conflicts: [
   "deb-epix1" {< "1.2.6-2"}

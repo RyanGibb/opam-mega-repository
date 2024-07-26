@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libbsd-dev" {>= "0.1.3"}
   "deb-libedit2" {= "3.1-20191231-2+b1"}
-  ("deb-libncurses-dev" | "deb- libtinfo-dev")
+  ("deb-libncurses-dev" | "deb-libtinfo-dev")
 ]
 extra-source "libedit-dev_3.1-20191231-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libe/libedit/libedit-dev_3.1-20191231-2+b1_amd64.deb"

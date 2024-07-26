@@ -9,7 +9,7 @@ depends: [
   "deb-python" {< "2.8"}
   "deb-python" {>= "2.7"}
   "deb-python-any" {>= "2.6.6-7~"}
-  ("deb-xclip" | "deb- xsel" | "deb- python-gi" | "deb- python-qt4")
+  ("deb-xclip" | "deb-xsel" | "deb-python-gi" | "deb-python-qt4")
 ]
 extra-source "python-pyperclip_1.6.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-pyperclip/python-pyperclip_1.6.4-1_all.deb"

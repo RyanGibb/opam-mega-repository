@@ -30,8 +30,8 @@ depends: [
   "deb-perl-any"
   "deb-procps"
   "deb-sox"
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
-  ("deb-mpv" | "deb- mplayer")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
+  ("deb-mpv" | "deb-mplayer")
 ]
 extra-source "lives_3.0.2-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lives/lives_3.0.2-1.1_amd64.deb"

@@ -19,8 +19,8 @@ depends: [
   "deb-libqt5webenginewidgets5" {>= "5.14.1"}
   "deb-libqt5widgets5" {>= "5.15.1"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libglu1-mesa" | "deb-libglu1")
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "libballview1.5_1.5.0+git20180813.37fc53c-6+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/ball/libballview1.5_1.5.0+git20180813.37fc53c-6+b3_amd64.deb"

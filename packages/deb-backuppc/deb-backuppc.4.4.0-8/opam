@@ -18,11 +18,11 @@ depends: [
   "deb-libtime-parsedate-perl"
   "deb-perl-any"
   "deb-ucf"
-  ("deb-apache2" | "deb- httpd")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-default-mta" | "deb- exim4" | "deb- mail-transport-agent")
-  ("deb-iputils-ping" | "deb- inetutils-ping")
-  ("deb-sysvinit-utils" {>= "3.05-4~"} | "deb- lsb-base")
+  ("deb-apache2" | "deb-httpd")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-default-mta" | "deb-exim4" | "deb-mail-transport-agent")
+  ("deb-iputils-ping" | "deb-inetutils-ping")
+  ("deb-sysvinit-utils" {>= "3.05-4~"} | "deb-lsb-base")
 ]
 extra-source "backuppc_4.4.0-8_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/backuppc/backuppc_4.4.0-8_amd64.deb"

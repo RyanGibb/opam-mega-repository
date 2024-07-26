@@ -20,7 +20,7 @@ depends: [
   "deb-libpangoft2-1-0-0" {>= "1.14.0"}
   "deb-libstdc++6" {>= "5"}
   "deb-man-db"
-  ("deb-xterm" | "deb- x-terminal-emulator")
+  ("deb-xterm" | "deb-x-terminal-emulator")
 ]
 extra-source "gman_0.9.3-5.2+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gman/gman_0.9.3-5.2+b2_amd64.deb"

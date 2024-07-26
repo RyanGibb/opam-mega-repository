@@ -70,7 +70,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.15.1"}
   "deb-libqt5xml5" {>= "5.13.0~"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "knotes_4:20.08.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/knotes/knotes_20.08.3-1_amd64.deb"

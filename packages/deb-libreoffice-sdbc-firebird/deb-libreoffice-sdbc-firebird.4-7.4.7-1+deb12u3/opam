@@ -16,7 +16,7 @@ depends: [
   "deb-libuno-sal3" {>= "1-7.3.0~beta1"}
   "deb-libuno-salhelpergcc3-3" {>= "1.4.0"}
   "deb-uno-libs-private"
-  ("deb-libreoffice-core-nogui" | "deb- libreoffice-core")
+  ("deb-libreoffice-core-nogui" | "deb-libreoffice-core")
 ]
 extra-source "libreoffice-sdbc-firebird_4:7.4.7-1+deb12u3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libr/libreoffice/libreoffice-sdbc-firebird_7.4.7-1+deb12u3_amd64.deb"

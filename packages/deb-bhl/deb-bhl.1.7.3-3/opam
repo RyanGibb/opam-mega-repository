@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r bhl"]
 ]
 depends: [
-  ("deb-emacs" | "deb- emacsen")
+  ("deb-emacs" | "deb-emacsen")
 ]
 extra-source "bhl_1.7.3-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/bhl/bhl_1.7.3-3_all.deb"

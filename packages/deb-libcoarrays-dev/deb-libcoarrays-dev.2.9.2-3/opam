@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo dpkg -r libcoarrays-dev"]
 ]
 depends: [
-  ("deb-gfortran" | "deb- fortran-compiler")
-  ("deb-gfortran-10" | "deb- gfortran-mod-15")
+  ("deb-gfortran" | "deb-fortran-compiler")
+  ("deb-gfortran-10" | "deb-gfortran-mod-15")
 ]
 extra-source "libcoarrays-dev_2.9.2-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/open-coarrays/libcoarrays-dev_2.9.2-3_amd64.deb"

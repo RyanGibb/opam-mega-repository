@@ -31,7 +31,7 @@ depends: [
   "deb-libtag1v5" {>= "1.11"}
   "deb-libudev1" {>= "183"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "cantata_2.4.2.ds1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cantata/cantata_2.4.2.ds1-1_amd64.deb"

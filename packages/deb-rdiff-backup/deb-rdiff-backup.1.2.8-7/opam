@@ -10,7 +10,7 @@ depends: [
   "deb-librsync1" {>= "0.9.6"}
   "deb-python" {< "2.8"}
   "deb-python" {>= "2.6.6-7~"}
-  ("deb-python2-7" | "deb- python2-6")
+  ("deb-python2-7" | "deb-python2-6")
 ]
 extra-source "rdiff-backup_1.2.8-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rdiff-backup/rdiff-backup_1.2.8-7_amd64.deb"

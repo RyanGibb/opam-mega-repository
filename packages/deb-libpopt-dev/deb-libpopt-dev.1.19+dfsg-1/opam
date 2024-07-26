@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libpopt0" {= "1.19+dfsg-1"}
-  ("deb-libc6-dev" | "deb- libc-dev")
+  ("deb-libc6-dev" | "deb-libc-dev")
 ]
 extra-source "libpopt-dev_1.19+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/popt/libpopt-dev_1.19+dfsg-1_amd64.deb"

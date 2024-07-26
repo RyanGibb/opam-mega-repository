@@ -11,7 +11,7 @@ depends: [
   "deb-libglib2-0-0" {>= "2.67.3"}
   "deb-libgnutls30" {>= "3.7.5"}
   "deb-ucf"
-  ("deb-debconf" {>= "1.2.9"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "1.2.9"} | "deb-debconf-2-0")
 ]
 extra-source "nbd-server_1:3.24-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/nbd/nbd-server_3.24-1.1_amd64.deb"

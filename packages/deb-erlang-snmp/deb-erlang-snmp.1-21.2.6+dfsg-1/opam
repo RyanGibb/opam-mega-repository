@@ -9,7 +9,7 @@ depends: [
   "deb-erlang-crypto" {= "1-21.2.6+dfsg-1"}
   "deb-erlang-mnesia" {= "1-21.2.6+dfsg-1"}
   "deb-erlang-runtime-tools" {= "1-21.2.6+dfsg-1"}
-  ("deb-erlang-base" {= "1-21.2.6+dfsg-1"} | "deb- erlang-base-hipe" {= "1-21.2.6+dfsg-1"})
+  ("deb-erlang-base" {= "1-21.2.6+dfsg-1"} | "deb-erlang-base-hipe" {= "1-21.2.6+dfsg-1"})
 ]
 extra-source "erlang-snmp_1:21.2.6+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/erlang/erlang-snmp_21.2.6+dfsg-1_amd64.deb"

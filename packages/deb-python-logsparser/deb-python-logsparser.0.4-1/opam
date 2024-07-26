@@ -11,7 +11,7 @@ depends: [
   "deb-python-geoip"
   "deb-python-lxml"
   "deb-python-tz"
-  ("deb-python2-7" | "deb- python2-6")
+  ("deb-python2-7" | "deb-python2-6")
 ]
 extra-source "python-logsparser_0.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pylogsparser/python-logsparser_0.4-1_all.deb"

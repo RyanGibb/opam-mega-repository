@@ -15,7 +15,7 @@ depends: [
   "deb-libtrilinos-zoltan-dev"
   "deb-python3"
   "deb-valgrind-mpi"
-  ("deb-gfortran-12" | "deb- gfortran-mod-15")
+  ("deb-gfortran-12" | "deb-gfortran-mod-15")
 ]
 extra-source "libpetsc64-complex3.18-dev_3.18.5+dfsg1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/petsc/libpetsc64-complex3.18-dev_3.18.5+dfsg1-1_amd64.deb"

@@ -10,7 +10,7 @@ depends: [
   "deb-libgmp10"
   "deb-perl" {>= "5.28.0-3"}
   "deb-perl-base"
-  ("deb-libmath-bigint-perl" {>= "1.999812"} | "deb- perl" {>= "5.29.1"})
+  ("deb-libmath-bigint-perl" {>= "1.999812"} | "deb-perl" {>= "5.29.1"})
 ]
 extra-source "libmath-bigint-gmp-perl_1.6006-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libm/libmath-bigint-gmp-perl/libmath-bigint-gmp-perl_1.6006-1+b1_amd64.deb"

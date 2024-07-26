@@ -11,7 +11,7 @@ depends: [
   "deb-libc6" {>= "2.34"}
   "deb-libgcc-s1" {>= "3.0"}
   "deb-libstdc++6" {>= "11"}
-  ("deb-gnupg" | "deb- gnupg2")
+  ("deb-gnupg" | "deb-gnupg2")
 ]
 extra-source "gpg-remailer_3.04.07-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gpg-remailer/gpg-remailer_3.04.07-1_amd64.deb"

@@ -28,9 +28,9 @@ depends: [
   "deb-pkg-config"
   "deb-python3-ffcx" {< "1-0.6.0"}
   "deb-python3-ffcx" {>= "1-0.5.0~"}
-  ("deb-g++" | "deb- c++-compiler")
-  ("deb-libdolfinx-real-dev" {< "1-0.6~"} | "deb- libdolfinx-complex-dev" {< "1-0.6~"})
-  ("deb-libdolfinx-real-dev" {>= "1-0.5.2-2"} | "deb- libdolfinx-complex-dev" {>= "1-0.5.2-2"})
+  ("deb-g++" | "deb-c++-compiler")
+  ("deb-libdolfinx-real-dev" {< "1-0.6~"} | "deb-libdolfinx-complex-dev" {< "1-0.6~"})
+  ("deb-libdolfinx-real-dev" {>= "1-0.5.2-2"} | "deb-libdolfinx-complex-dev" {>= "1-0.5.2-2"})
 ]
 conflicts: [
   "deb-libdolfin0-dev"

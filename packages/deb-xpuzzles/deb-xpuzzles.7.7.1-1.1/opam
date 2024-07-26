@@ -14,7 +14,7 @@ depends: [
   "deb-libx11-6"
   "deb-libxpm4"
   "deb-libxt6"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 conflicts: [
   "deb-xmpuzzles"

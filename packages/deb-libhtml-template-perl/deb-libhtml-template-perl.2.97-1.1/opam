@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl-any"
-  ("deb-libcgi-pm-perl" | "deb- perl" {< "5.19"})
+  ("deb-libcgi-pm-perl" | "deb-perl" {< "5.19"})
 ]
 extra-source "libhtml-template-perl_2.97-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libh/libhtml-template-perl/libhtml-template-perl_2.97-1.1_all.deb"

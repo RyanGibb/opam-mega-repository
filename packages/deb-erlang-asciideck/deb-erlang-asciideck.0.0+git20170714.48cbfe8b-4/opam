@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r erlang-asciideck"]
 ]
 depends: [
-  ("deb-erlang-base" {>= "1-20.3.6+dfsg"} | "deb- erlang-base-hipe" {>= "1-20.3.6+dfsg"})
+  ("deb-erlang-base" {>= "1-20.3.6+dfsg"} | "deb-erlang-base-hipe" {>= "1-20.3.6+dfsg"})
 ]
 extra-source "erlang-asciideck_0.0+git20170714.48cbfe8b-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/erlang-asciideck/erlang-asciideck_0.0+git20170714.48cbfe8b-4_amd64.deb"

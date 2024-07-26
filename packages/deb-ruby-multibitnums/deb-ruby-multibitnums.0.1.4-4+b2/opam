@@ -11,7 +11,7 @@ depends: [
   "deb-libruby" {>= "1-3.1~0"}
   "deb-libruby3-1" {>= "3.1.2"}
   "deb-ruby-narray"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-multibitnums_0.1.4-4+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-multibitnums/ruby-multibitnums_0.1.4-4+b2_amd64.deb"

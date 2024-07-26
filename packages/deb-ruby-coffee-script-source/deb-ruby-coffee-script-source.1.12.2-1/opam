@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libjs-coffeescript" {>= "1.12.2~"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-coffee-script-source_1.12.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-coffee-script-source/ruby-coffee-script-source_1.12.2-1_all.deb"

@@ -33,7 +33,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libtiff5" {>= "4.0.3"}
   "deb-libxml2" {>= "2.6.27"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "aeskulap_0.2.2-beta2+git20180219.8787e95-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/aeskulap/aeskulap_0.2.2-beta2+git20180219.8787e95-2_amd64.deb"

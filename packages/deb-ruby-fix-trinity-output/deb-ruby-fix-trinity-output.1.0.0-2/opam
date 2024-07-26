@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-trollop" {>= "2.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-fix-trinity-output_1.0.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-fix-trinity-output/ruby-fix-trinity-output_1.0.0-2_all.deb"

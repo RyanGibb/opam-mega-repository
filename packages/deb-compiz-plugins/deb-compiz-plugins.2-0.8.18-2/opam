@@ -17,7 +17,7 @@ depends: [
   "deb-libx11-6"
   "deb-libxml2" {>= "2.7.4"}
   "deb-libxrender1"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 conflicts: [
   "deb-compiz-plugins" {< "2-0.8.14-1"}

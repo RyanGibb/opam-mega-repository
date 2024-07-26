@@ -14,7 +14,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libtool-bin"
   "deb-pkg-config"
-  ("deb-guile-2-0" | "deb- guile")
+  ("deb-guile-2-0" | "deb-guile")
 ]
 extra-source "freehdl_0.0.8-2.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/freehdl/freehdl_0.0.8-2.2_amd64.deb"

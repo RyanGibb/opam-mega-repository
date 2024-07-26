@@ -70,7 +70,7 @@ depends: [
   "deb-librust-winapi-0-3+wincon-dev"
   "deb-librust-winapi-0-3+winerror-dev"
   "deb-librust-winapi-0-3+winnt-dev"
-  ("deb-librust-env-logger-0-6+default-dev" | "deb- librust-env-logger-0-5+default-dev")
+  ("deb-librust-env-logger-0-6+default-dev" | "deb-librust-env-logger-0-5+default-dev")
 ]
 extra-source "librust-cargo-dev_0.32.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-cargo/librust-cargo-dev_0.32.0-2_amd64.deb"

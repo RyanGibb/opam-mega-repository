@@ -12,7 +12,7 @@ depends: [
   "deb-libjsonrpccpp-server0" {= "0.7.0-2.1"}
   "deb-libjsonrpccpp-stub0" {= "0.7.0-2.1"}
   "deb-libmicrohttpd-dev" {>= "0.9.71"}
-  ("deb-libcurl4-openssl-dev" | "deb- libcurl4-nss-dev")
+  ("deb-libcurl4-openssl-dev" | "deb-libcurl4-nss-dev")
 ]
 extra-source "libjsonrpccpp-dev_0.7.0-2.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libj/libjson-rpc-cpp/libjsonrpccpp-dev_0.7.0-2.1_amd64.deb"

@@ -34,8 +34,8 @@ depends: [
   "deb-libxml2" {>= "2.7.4"}
   "deb-macaulay2-common" {= "1.21+ds-3"}
   "deb-singular-data"
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "macaulay2_1.21+ds-3+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/macaulay2/macaulay2_1.21+ds-3+b1_amd64.deb"

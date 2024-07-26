@@ -16,7 +16,7 @@ depends: [
   "deb-ruby-redis" {>= "3.3.5~"}
   "deb-ruby-redis-namespace" {< "2.0"}
   "deb-ruby-redis-namespace" {>= "1.5.2"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-sidekiq_6.0.4+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-sidekiq/ruby-sidekiq_6.0.4+dfsg-2_all.deb"

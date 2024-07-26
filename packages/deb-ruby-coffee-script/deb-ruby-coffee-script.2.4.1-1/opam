@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-coffee-script-source"
   "deb-ruby-execjs"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-coffee-script_2.4.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-coffee-script/ruby-coffee-script_2.4.1-1_all.deb"

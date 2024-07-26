@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.34"}
   "deb-libgfortran5" {>= "10"}
   "deb-libscotch-7-0" {>= "7.0.1"}
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libmumps-64pord-scotch-5.5_5.5.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mumps/libmumps-64pord-scotch-5.5_5.5.1-1_amd64.deb"

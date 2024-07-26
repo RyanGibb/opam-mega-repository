@@ -10,7 +10,7 @@ depends: [
   "deb-libgcc-s1" {>= "3.0"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-libva2" {>= "2.12"}
-  ("deb-intel-media-va-driver" {= "23.1.1+dfsg1-1"} | "deb- intel-media-va-driver-non-free" {>= "23.1.1+dfsg1"})
+  ("deb-intel-media-va-driver" {= "23.1.1+dfsg1-1"} | "deb-intel-media-va-driver-non-free" {>= "23.1.1+dfsg1"})
 ]
 extra-source "libigfxcmrt7_23.1.1+dfsg1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/intel-media-driver/libigfxcmrt7_23.1.1+dfsg1-1_amd64.deb"

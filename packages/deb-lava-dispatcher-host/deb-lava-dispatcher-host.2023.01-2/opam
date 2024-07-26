@@ -11,9 +11,9 @@ depends: [
   "deb-python3-jinja2"
   "deb-python3-pyudev"
   "deb-python3-requests"
-  ("deb-base-files" {< "11.1"} | "deb- bpftool" | "deb- linux-tools-common")
-  ("deb-base-files" {< "11.1"} | "deb- linux-headers-amd64" | "deb- linux-headers-arm64" | "deb- linux-headers-generic")
-  ("deb-base-files" {< "11.1"} | "deb- python3-bpfcc" {>= "0.21"})
+  ("deb-base-files" {< "11.1"} | "deb-bpftool" | "deb-linux-tools-common")
+  ("deb-base-files" {< "11.1"} | "deb-linux-headers-amd64" | "deb-linux-headers-arm64" | "deb-linux-headers-generic")
+  ("deb-base-files" {< "11.1"} | "deb-python3-bpfcc" {>= "0.21"})
 ]
 extra-source "lava-dispatcher-host_2023.01-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lava/lava-dispatcher-host_2023.01-2_all.deb"

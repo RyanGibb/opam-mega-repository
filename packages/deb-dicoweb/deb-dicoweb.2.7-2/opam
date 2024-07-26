@@ -10,7 +10,7 @@ depends: [
   "deb-python3-django" {>= "1.4.5"}
   "deb-python3-memcache"
   "deb-python3-wikitrans"
-  ("deb-libapache2-mod-passenger" | "deb- libapache2-mod-wsgi")
+  ("deb-libapache2-mod-passenger" | "deb-libapache2-mod-wsgi")
 ]
 extra-source "dicoweb_2.7-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dico/dicoweb_2.7-2_all.deb"

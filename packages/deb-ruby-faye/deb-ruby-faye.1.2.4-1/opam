@@ -13,7 +13,7 @@ depends: [
   "deb-ruby-multi-json" {>= "1.0.0"}
   "deb-ruby-rack" {>= "1.0.0"}
   "deb-ruby-websocket-driver" {>= "0.5.1"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-faye_1.2.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-faye/ruby-faye_1.2.4-1_all.deb"

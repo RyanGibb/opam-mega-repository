@@ -27,7 +27,7 @@ depends: [
   "deb-libtoxcore2" {>= "0.2.10"}
   "deb-libx11-6"
   "deb-libxss1"
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "qtox_1.17.6-0.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtox/qtox_1.17.6-0.1_amd64.deb"

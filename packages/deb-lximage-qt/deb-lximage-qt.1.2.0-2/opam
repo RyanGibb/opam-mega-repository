@@ -20,7 +20,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libx11-6"
   "deb-libxfixes3"
-  ("deb-libqt5gui5" {>= "5.10.0"} | "deb- libqt5gui5-gles" {>= "5.10.0"})
+  ("deb-libqt5gui5" {>= "5.10.0"} | "deb-libqt5gui5-gles" {>= "5.10.0"})
 ]
 extra-source "lximage-qt_1.2.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lximage-qt/lximage-qt_1.2.0-2_amd64.deb"

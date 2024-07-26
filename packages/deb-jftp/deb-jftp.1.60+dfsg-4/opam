@@ -18,7 +18,7 @@ depends: [
   "deb-libmiglayout-java"
   "deb-libswt-gtk-4-java"
   "deb-libyanfs-java"
-  ("deb-default-jre" | "deb- java6-runtime")
+  ("deb-default-jre" | "deb-java6-runtime")
 ]
 extra-source "jftp_1.60+dfsg-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jftp/jftp_1.60+dfsg-4_all.deb"

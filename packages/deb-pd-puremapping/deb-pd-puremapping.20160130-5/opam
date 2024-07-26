@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r pd-puremapping"]
 ]
 depends: [
-  ("deb-puredata" | "deb- pd")
+  ("deb-puredata" | "deb-pd")
 ]
 extra-source "pd-puremapping_20160130-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pd-puremapping/pd-puremapping_20160130-5_all.deb"

@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-dpkg-cross"
-  ("deb-g++-mips-linux-gnu" {>= "4-10.2"} | "deb- g++-mips")
-  ("deb-gcc-mips-linux-gnu" {>= "4-10.2"} | "deb- gcc-mips")
+  ("deb-g++-mips-linux-gnu" {>= "4-10.2"} | "deb-g++-mips")
+  ("deb-gcc-mips-linux-gnu" {>= "4-10.2"} | "deb-gcc-mips")
 ]
 extra-source "crossbuild-essential-mips_12.9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/build-essential-mipsen/crossbuild-essential-mips_12.9_all.deb"

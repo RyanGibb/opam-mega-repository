@@ -12,7 +12,7 @@ depends: [
   "deb-libaprutil1-ldap"
   "deb-libc6" {>= "2.14"}
   "deb-libldap-2-4-2" {>= "2.4.7"}
-  ("deb-libaprutil1-dbd-sqlite3" | "deb- libaprutil1-dbd-mysql" | "deb- libaprutil1-dbd-odbc" | "deb- libaprutil1-dbd-pgsql" | "deb- libaprutil1-dbd-freetds")
+  ("deb-libaprutil1-dbd-sqlite3" | "deb-libaprutil1-dbd-mysql" | "deb-libaprutil1-dbd-odbc" | "deb-libaprutil1-dbd-pgsql" | "deb-libaprutil1-dbd-freetds")
 ]
 extra-source "lua-apr_0.23.2.dfsg-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lua-apr/lua-apr_0.23.2.dfsg-4_amd64.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.33"}
-  ("deb-default-mta" | "deb- mail-transport-agent")
+  ("deb-default-mta" | "deb-mail-transport-agent")
 ]
 extra-source "sxid_4.20130802-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sxid/sxid_4.20130802-7_amd64.deb"

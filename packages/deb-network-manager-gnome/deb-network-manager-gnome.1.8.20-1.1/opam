@@ -23,9 +23,9 @@ depends: [
   "deb-libsecret-1-0" {>= "0.7"}
   "deb-libselinux1" {>= "2.1.9"}
   "deb-network-manager" {>= "1.8"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
-  ("deb-policykit-1-gnome" | "deb- polkit-1-auth-agent")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus")
+  ("deb-policykit-1-gnome" | "deb-polkit-1-auth-agent")
 ]
 extra-source "network-manager-gnome_1.8.20-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/network-manager-applet/network-manager-gnome_1.8.20-1.1_amd64.deb"

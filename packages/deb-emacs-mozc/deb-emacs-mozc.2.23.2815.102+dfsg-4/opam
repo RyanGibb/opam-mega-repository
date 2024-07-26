@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-emacs-mozc-bin" {= "2.23.2815.102+dfsg-4"}
-  ("deb-emacs" | "deb- emacs23" | "deb- emacs24")
+  ("deb-emacs" | "deb-emacs23" | "deb-emacs24")
 ]
 conflicts: [
   "deb-emacsen-common" {< "2.0.0"}

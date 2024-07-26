@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-metaid"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-metaid_1.0-8.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-metaid/ruby-metaid_1.0-8.1_all.deb"

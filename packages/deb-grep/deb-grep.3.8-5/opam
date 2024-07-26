@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r grep"]
 ]
 depends: [
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 conflicts: [
   "deb-rgrep"

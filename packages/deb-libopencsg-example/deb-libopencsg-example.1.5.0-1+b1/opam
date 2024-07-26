@@ -13,7 +13,7 @@ depends: [
   "deb-libglut3-12" {>= "3.4.0"}
   "deb-libopencsg1" {= "1.5.0-1+b1"}
   "deb-libstdc++6" {>= "9"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "libopencsg-example_1.5.0-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/opencsg/libopencsg-example_1.5.0-1+b1_amd64.deb"

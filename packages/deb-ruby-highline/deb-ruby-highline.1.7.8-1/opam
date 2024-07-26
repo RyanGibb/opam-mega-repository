@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-highline"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-highline_1.7.8-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-highline/ruby-highline_1.7.8-1_all.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libjlha-java"
-  ("deb-default-jre-headless" | "deb- java-runtime-headless" | "deb- java2-runtime-headless")
+  ("deb-default-jre-headless" | "deb-java-runtime-headless" | "deb-java2-runtime-headless")
 ]
 conflicts: [
   "deb-lha" {< "1.14i-10.4"}

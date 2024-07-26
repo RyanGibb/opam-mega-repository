@@ -12,7 +12,7 @@ depends: [
   "deb-libsdl1-2-compat-shim"
   "deb-libx11-dev"
   "deb-libxext-dev"
-  ("deb-libglu1-mesa-dev" | "deb- libglu-dev")
+  ("deb-libglu1-mesa-dev" | "deb-libglu-dev")
 ]
 conflicts: [
   "deb-libsdl-dev"

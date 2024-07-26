@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-pd-list-abs"
-  ("deb-puredata" | "deb- pd")
+  ("deb-puredata" | "deb-pd")
 ]
 extra-source "pd-kollabs_2~repack-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pd-kollabs/pd-kollabs_2~repack-2_all.deb"

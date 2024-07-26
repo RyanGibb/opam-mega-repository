@@ -11,8 +11,8 @@ depends: [
   "deb-libgfortran5" {>= "8"}
   "deb-libmpich12" {>= "3.4~a2+really3.3.2"}
   "deb-mpi-default-bin"
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 conflicts: [
   "deb-scalapack2-mpich"

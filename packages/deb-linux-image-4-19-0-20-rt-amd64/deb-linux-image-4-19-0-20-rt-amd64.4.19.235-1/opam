@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-kmod"
   "deb-linux-base" {>= "4.3~"}
-  ("deb-initramfs-tools" {>= "0.120+deb8u2"} | "deb- linux-initramfs-tool")
+  ("deb-initramfs-tools" {>= "0.120+deb8u2"} | "deb-linux-initramfs-tool")
 ]
 conflicts: [
   "deb-linux-image-4-19-0-20-rt-amd64-unsigned"

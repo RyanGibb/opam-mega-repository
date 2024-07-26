@@ -10,7 +10,7 @@ depends: [
   "deb-libgfortran5" {>= "8"}
   "deb-r-base-core"
   "deb-r-base-core" {>= "4.2.1-3"}
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "r-cran-desolve_1.34-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-desolve/r-cran-desolve_1.34-1_amd64.deb"

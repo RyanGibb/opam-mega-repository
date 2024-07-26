@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-rails-assets-jquery" {>= "1.4.2"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-rails-assets-jquery.are-you-sure_1.9.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-rails-assets-jquery.are-you-sure/ruby-rails-assets-jquery.are-you-sure_1.9.0-2_all.deb"

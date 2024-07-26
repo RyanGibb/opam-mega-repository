@@ -20,7 +20,7 @@ depends: [
   "deb-libstdc++6" {>= "11"}
   "deb-libsystemd0"
   "deb-publicsuffix"
-  ("deb-libluajit-5-1-2" {>= "2.0.4+dfsg"} | "deb- libluajit2-5-1-2" {>= "2.1~"})
+  ("deb-libluajit-5-1-2" {>= "2.0.4+dfsg"} | "deb-libluajit2-5-1-2" {>= "2.1~"})
 ]
 extra-source "pdns-recursor_4.8.8-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pdns-recursor/pdns-recursor_4.8.8-1_amd64.deb"

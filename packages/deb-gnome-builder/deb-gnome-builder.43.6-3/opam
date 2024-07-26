@@ -52,7 +52,7 @@ depends: [
   "deb-libxml2" {>= "2.9.0"}
   "deb-python3-any"
   "deb-python3-gi"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-builder_43.6-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-builder/gnome-builder_43.6-3_amd64.deb"

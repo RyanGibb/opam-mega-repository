@@ -19,7 +19,7 @@ depends: [
   "deb-libprocps8" {>= "2-3.3.16-1"}
   "deb-libtinfo6" {>= "6"}
   "deb-procps"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "cpu-x_4.1.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cpu-x/cpu-x_4.1.0-1_amd64.deb"

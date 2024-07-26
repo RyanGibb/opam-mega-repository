@@ -11,7 +11,7 @@ depends: [
   "deb-dconf-cli"
   "deb-network-manager-gnome"
   "deb-xdotool"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "budgie-desktop_10.7.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/budgie-desktop/budgie-desktop_10.7.1-1_all.deb"

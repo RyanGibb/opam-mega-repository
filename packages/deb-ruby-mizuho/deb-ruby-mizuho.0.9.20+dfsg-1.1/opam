@@ -11,7 +11,7 @@ depends: [
   "deb-ruby-nokogiri"
   "deb-ruby-sqlite3"
   "deb-source-highlight"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-mizuho_0.9.20+dfsg-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-mizuho/ruby-mizuho_0.9.20+dfsg-1.1_all.deb"

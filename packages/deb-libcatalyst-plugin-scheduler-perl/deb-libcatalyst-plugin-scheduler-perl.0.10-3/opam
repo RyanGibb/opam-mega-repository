@@ -15,7 +15,7 @@ depends: [
   "deb-libmro-compat-perl"
   "deb-libset-scalar-perl"
   "deb-perl-any"
-  ("deb-libyaml-syck-perl" | "deb- libyaml-perl")
+  ("deb-libyaml-syck-perl" | "deb-libyaml-perl")
 ]
 extra-source "libcatalyst-plugin-scheduler-perl_0.10-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libc/libcatalyst-plugin-scheduler-perl/libcatalyst-plugin-scheduler-perl_0.10-3_all.deb"

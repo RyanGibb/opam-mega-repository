@@ -19,7 +19,7 @@ depends: [
   "deb-libstk-4-6-2" {>= "4.6.2+dfsg"}
   "deb-libwebsockets17" {>= "1.6.0"}
   "deb-libx11-6"
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "csound-plugins_1.0.2~dfsg1-3+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/csound-plugins/csound-plugins_1.0.2~dfsg1-3+b1_amd64.deb"

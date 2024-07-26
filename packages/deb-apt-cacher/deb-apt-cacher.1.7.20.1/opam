@@ -19,7 +19,7 @@ depends: [
   "deb-lsb-base" {>= "3.2-14"}
   "deb-perl-any"
   "deb-update-inetd"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "apt-cacher_1.7.20.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/apt-cacher/apt-cacher_1.7.20.1_all.deb"

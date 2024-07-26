@@ -8,9 +8,9 @@ remove: [
 depends: [
   "deb-adduser"
   "deb-ucf"
-  ("deb-bsd-mailx" | "deb- mailx")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-tcsh" | "deb- c-shell")
+  ("deb-bsd-mailx" | "deb-mailx")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-tcsh" | "deb-c-shell")
 ]
 extra-source "gridengine-common_8.1.9+dfsg-9.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gridengine/gridengine-common_8.1.9+dfsg-9.1_all.deb"

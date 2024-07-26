@@ -10,7 +10,7 @@ depends: [
   "deb-ruby-rspec" {>= "3.0"}
   "deb-ruby-rspec-its"
   "deb-ruby-specinfra" {>= "2.72"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-serverspec_2.41.3-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-serverspec/ruby-serverspec_2.41.3-3_all.deb"

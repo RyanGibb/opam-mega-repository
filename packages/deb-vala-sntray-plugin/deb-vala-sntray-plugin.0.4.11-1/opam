@@ -14,7 +14,7 @@ depends: [
   "deb-libpango-1-0-0" {>= "1.14.0"}
   "deb-libvalapanel0" {>= "0.4.61"}
   "deb-xfce4-sntray-plugin-common"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "vala-sntray-plugin_0.4.11-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xfce4-sntray-plugin/vala-sntray-plugin_0.4.11-1_amd64.deb"

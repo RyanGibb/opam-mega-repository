@@ -14,8 +14,8 @@ depends: [
   "deb-r-base-core" {>= "4.0.3-1"}
   "deb-r-cran-matrix" {>= "1.0-12"}
   "deb-r-cran-rcppeigen"
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "r-cran-tmb_1.7.18-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-tmb/r-cran-tmb_1.7.18-2_amd64.deb"

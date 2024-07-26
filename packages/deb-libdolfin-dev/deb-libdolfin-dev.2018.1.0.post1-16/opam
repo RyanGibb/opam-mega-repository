@@ -26,8 +26,8 @@ depends: [
   "deb-pkg-config"
   "deb-python3-ffc" {< "2018.2~"}
   "deb-python3-ffc" {>= "2018.1"}
-  ("deb-libpetsc-real3-10-dev" | "deb- libpetsc3-10-3-dev")
-  ("deb-libslepc-real3-10-dev" | "deb- libslepc3-10-1-dev")
+  ("deb-libpetsc-real3-10-dev" | "deb-libpetsc3-10-3-dev")
+  ("deb-libslepc-real3-10-dev" | "deb-libslepc3-10-1-dev")
 ]
 conflicts: [
   "deb-libdolfin0-dev"

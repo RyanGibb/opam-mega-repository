@@ -14,7 +14,7 @@ depends: [
   "deb-lsb-base" {>= "3.0-6"}
   "deb-sane-utils"
   "deb-update-inetd"
-  ("deb-openbsd-inetd" | "deb- inet-superserver")
+  ("deb-openbsd-inetd" | "deb-inet-superserver")
 ]
 extra-source "scanbd_1.5.1-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/scanbd/scanbd_1.5.1-6_amd64.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-jekyll" {< "4"}
   "deb-jekyll" {>= "3.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-jekyll-avatar_0.7.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-jekyll-avatar/ruby-jekyll-avatar_0.7.0-1_all.deb"

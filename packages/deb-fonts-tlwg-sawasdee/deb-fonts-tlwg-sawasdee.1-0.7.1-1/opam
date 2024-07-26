@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r fonts-tlwg-sawasdee"]
 ]
 depends: [
-  ("deb-fonts-tlwg-sawasdee-ttf" | "deb- fonts-tlwg-sawasdee-otf")
+  ("deb-fonts-tlwg-sawasdee-ttf" | "deb-fonts-tlwg-sawasdee-otf")
 ]
 extra-source "fonts-tlwg-sawasdee_1:0.7.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fonts-tlwg/fonts-tlwg-sawasdee_0.7.1-1_all.deb"

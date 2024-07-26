@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libbcprov-java"
   "deb-libcommons-lang3-java"
-  ("deb-default-jre-headless" | "deb- java8-runtime-headless")
+  ("deb-default-jre-headless" | "deb-java8-runtime-headless")
 ]
 extra-source "pdftk-java_3.0.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pdftk-java/pdftk-java_3.0.2-2_all.deb"

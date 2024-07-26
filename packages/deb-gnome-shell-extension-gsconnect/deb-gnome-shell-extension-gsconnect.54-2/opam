@@ -15,7 +15,7 @@ depends: [
   "deb-gnome-shell" {>= "43"}
   "deb-libglib2-0-bin"
   "deb-python3"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-shell-extension-gsconnect_54-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-shell-extension-gsconnect/gnome-shell-extension-gsconnect_54-2_all.deb"

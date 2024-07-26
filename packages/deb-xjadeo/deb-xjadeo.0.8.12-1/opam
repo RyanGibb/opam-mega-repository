@@ -23,7 +23,7 @@ depends: [
   "deb-libxext6"
   "deb-libxpm4"
   "deb-libxv1"
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "xjadeo_0.8.12-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xjadeo/xjadeo_0.8.12-1_amd64.deb"

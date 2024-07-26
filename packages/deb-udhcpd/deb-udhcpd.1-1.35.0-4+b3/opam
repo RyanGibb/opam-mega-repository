@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-lsb-base"
-  ("deb-busybox" {> "1-1.35.0"} | "deb- busybox-static" {> "1-1.35.0"})
+  ("deb-busybox" {> "1-1.35.0"} | "deb-busybox-static" {> "1-1.35.0"})
 ]
 extra-source "udhcpd_1:1.35.0-4+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/busybox/udhcpd_1.35.0-4+b3_amd64.deb"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r webext-debianbuttons"]
 ]
 depends: [
-  ("deb-firefox-esr" {>= "50"} | "deb- firefox" {>= "50"})
+  ("deb-firefox-esr" {>= "50"} | "deb-firefox" {>= "50"})
 ]
 extra-source "webext-debianbuttons_2.3-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/debianbuttons/webext-debianbuttons_2.3-2_all.deb"

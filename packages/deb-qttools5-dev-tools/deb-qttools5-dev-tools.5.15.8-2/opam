@@ -25,8 +25,8 @@ depends: [
   "deb-qt5-assistant" {= "5.15.8-2"}
   "deb-qtattributionsscanner-qt5" {= "5.15.8-2"}
   "deb-qtchooser"
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
-  ("deb-libqt5quick5" {>= "5.15.8+dfsg~"} | "deb- libqt5quick5-gles" {>= "5.15.8+dfsg~"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5quick5" {>= "5.15.8+dfsg~"} | "deb-libqt5quick5-gles" {>= "5.15.8+dfsg~"})
 ]
 extra-source "qttools5-dev-tools_5.15.8-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qttools-opensource-src/qttools5-dev-tools_5.15.8-2_amd64.deb"

@@ -17,7 +17,7 @@ depends: [
   "deb-python3" {< "3.10"}
   "deb-python3" {>= "3.9~"}
   "deb-python3-any"
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "python3-openshot_0.2.5+dfsg1-4+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libo/libopenshot/python3-openshot_0.2.5+dfsg1-4+b2_amd64.deb"

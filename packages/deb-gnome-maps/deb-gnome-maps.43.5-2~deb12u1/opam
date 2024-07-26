@@ -31,7 +31,7 @@ depends: [
   "deb-librest-1-0-0" {>= "0.9.1"}
   "deb-libshumate-1-0-1" {>= "1.0.1"}
   "deb-libxml2" {>= "2.7.4"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-maps_43.5-2~deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-maps/gnome-maps_43.5-2~deb12u1_amd64.deb"

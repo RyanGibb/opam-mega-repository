@@ -24,7 +24,7 @@ depends: [
   "deb-libwiretap13" {>= "4.0.11-1~deb12u1"}
   "deb-libwsutil14" {>= "3.7.0"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "wireshark-common_4.0.11-1~deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/wireshark/wireshark-common_4.0.11-1~deb12u1_amd64.deb"

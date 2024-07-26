@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-json"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-influxdb_0.2.3-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-influxdb/ruby-influxdb_0.2.3-2_all.deb"

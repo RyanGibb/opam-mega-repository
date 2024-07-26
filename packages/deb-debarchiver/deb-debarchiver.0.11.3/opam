@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-adduser"
   "deb-opalmod" {>= "0.1.10"}
-  ("deb-apt-utils" | "deb- dpkg-dev")
+  ("deb-apt-utils" | "deb-dpkg-dev")
 ]
 extra-source "debarchiver_0.11.3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/debarchiver/debarchiver_0.11.3_all.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-dctrl-tools"
-  ("deb-sbuild" | "deb- xdeb" | "deb- pdebuild-cross")
+  ("deb-sbuild" | "deb-xdeb" | "deb-pdebuild-cross")
 ]
 extra-source "xbuilder_1.0.1+nmu1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xbuilder/xbuilder_1.0.1+nmu1_all.deb"

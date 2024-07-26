@@ -12,7 +12,7 @@ depends: [
   "deb-libc6" {>= "2.4"}
   "deb-libglib2-0-0" {>= "2.37.3"}
   "deb-python3-any"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "ibus-anthy_1.5.10-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/ibus-anthy/ibus-anthy_1.5.10-2_amd64.deb"

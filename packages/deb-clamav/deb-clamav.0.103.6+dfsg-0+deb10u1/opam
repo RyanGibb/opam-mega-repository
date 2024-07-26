@@ -12,7 +12,7 @@ depends: [
   "deb-libjson-c3" {>= "0.10"}
   "deb-libssl1-1" {>= "1.1.0"}
   "deb-zlib1g" {>= "1-1.2.3.3"}
-  ("deb-clamav-freshclam" {>= "0.103.6+dfsg"} | "deb- clamav-data")
+  ("deb-clamav-freshclam" {>= "0.103.6+dfsg"} | "deb-clamav-data")
 ]
 extra-source "clamav_0.103.6+dfsg-0+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/clamav/clamav_0.103.6+dfsg-0+deb10u1_amd64.deb"

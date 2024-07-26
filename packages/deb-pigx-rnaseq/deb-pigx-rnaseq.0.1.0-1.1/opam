@@ -38,7 +38,7 @@ depends: [
   "deb-samtools"
   "deb-snakemake"
   "deb-trim-galore"
-  ("deb-hisat2" | "deb- rna-star")
+  ("deb-hisat2" | "deb-rna-star")
 ]
 extra-source "pigx-rnaseq_0.1.0-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pigx-rnaseq/pigx-rnaseq_0.1.0-1.1_all.deb"

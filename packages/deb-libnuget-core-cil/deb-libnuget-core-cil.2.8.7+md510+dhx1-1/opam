@@ -18,7 +18,7 @@ depends: [
   "deb-libmono-system-xml4-0-cil" {>= "4.2.0"}
   "deb-libmono-system4-0-cil" {>= "4.2.0"}
   "deb-libmono-windowsbase4-0-cil" {>= "4.2.0"}
-  ("deb-libc6" {>= "2.21"} | "deb- libc6-1" {>= "2.21"} | "deb- libc0-1" {>= "2.21"})
+  ("deb-libc6" {>= "2.21"} | "deb-libc6-1" {>= "2.21"} | "deb-libc0-1" {>= "2.21"})
 ]
 extra-source "libnuget-core-cil_2.8.7+md510+dhx1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/nuget/libnuget-core-cil_2.8.7+md510+dhx1-1_all.deb"

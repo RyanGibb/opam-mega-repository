@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r mate-desktop-common"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "mate-desktop-common_1.24.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mate-desktop/mate-desktop-common_1.24.1-2_all.deb"

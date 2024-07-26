@@ -10,7 +10,7 @@ depends: [
   "deb-ruby-cairo-gobject"
   "deb-ruby-gettext"
   "deb-ruby-gtk2"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "screenruler_0.960+bzr41+deb10-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/screenruler/screenruler_0.960+bzr41+deb10-4_all.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-emacsen-common" {>= "2.0.8"}
-  ("deb-emacs-nox" | "deb- emacs" | "deb- emacs25" | "deb- emacs24" | "deb- emacs23" | "deb- emacs22" | "deb- emacs-snapshot")
+  ("deb-emacs-nox" | "deb-emacs" | "deb-emacs25" | "deb-emacs24" | "deb-emacs23" | "deb-emacs22" | "deb-emacs-snapshot")
 ]
 extra-source "goby_1.1+0.20180214-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/goby/goby_1.1+0.20180214-3_all.deb"

@@ -10,7 +10,7 @@ depends: [
   "deb-python3-dnspython"
   "deb-python3-requests"
   "deb-python3-requests-futures"
-  ("deb-bind9-host" | "deb- host")
+  ("deb-bind9-host" | "deb-host")
 ]
 extra-source "cloud-enum_0.7-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cloud-enum/cloud-enum_0.7-2_all.deb"

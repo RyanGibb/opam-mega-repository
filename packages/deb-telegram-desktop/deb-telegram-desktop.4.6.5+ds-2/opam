@@ -53,7 +53,7 @@ depends: [
   "deb-libxxhash0" {>= "0.6.5"}
   "deb-qt5-image-formats-plugins"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libqt5gui5" {>= "5.15.2"} | "deb- libqt5gui5-gles" {>= "5.15.2"})
+  ("deb-libqt5gui5" {>= "5.15.2"} | "deb-libqt5gui5-gles" {>= "5.15.2"})
 ]
 extra-source "telegram-desktop_4.6.5+ds-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/telegram-desktop/telegram-desktop_4.6.5+ds-2_amd64.deb"

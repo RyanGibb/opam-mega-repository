@@ -22,8 +22,8 @@ depends: [
   "deb-libxcb1"
   "deb-qml-module-qtquick2"
   "deb-x11-common"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-xserver-xorg" | "deb- xserver")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-xserver-xorg" | "deb-xserver")
 ]
 extra-source "sddm_0.18.0-1+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sddm/sddm_0.18.0-1+deb10u1_amd64.deb"

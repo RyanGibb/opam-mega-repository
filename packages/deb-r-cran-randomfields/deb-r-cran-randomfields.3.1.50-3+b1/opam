@@ -16,8 +16,8 @@ depends: [
   "deb-r-base-core" {>= "3.5.1-1"}
   "deb-r-cran-randomfieldsutils" {>= "0.3.25"}
   "deb-r-cran-sp"
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "r-cran-randomfields_3.1.50-3+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-randomfields/r-cran-randomfields_3.1.50-3+b1_amd64.deb"

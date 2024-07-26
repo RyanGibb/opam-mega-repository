@@ -13,7 +13,7 @@ depends: [
   "deb-ruby-rspec-expectations" {>= "3.8"}
   "deb-ruby-rspec-mocks" {>= "3.8"}
   "deb-ruby-rspec-support" {>= "3.8"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-rspec-rails_3.8.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-rspec-rails/ruby-rspec-rails_3.8.1-2_all.deb"

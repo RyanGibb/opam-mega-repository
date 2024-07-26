@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-jwt" {>= "2.1.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-atlassian-jwt_0.2.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-atlassian-jwt/ruby-atlassian-jwt_0.2.0-3_all.deb"

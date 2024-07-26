@@ -8,8 +8,8 @@ remove: [
 depends: [
   "deb-libdbd-pg-perl"
   "deb-postgresql-client"
-  ("deb-dbconfig-pgsql" | "deb- dbconfig-no-thanks")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-dbconfig-pgsql" | "deb-dbconfig-no-thanks")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "rt4-db-postgresql_4.4.6+dfsg-1.1+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/request-tracker4/rt4-db-postgresql_4.4.6+dfsg-1.1+deb12u1_all.deb"

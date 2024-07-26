@@ -9,7 +9,7 @@ depends: [
   "deb-libcrypt-rc4-perl"
   "deb-libtext-pdf-perl"
   "deb-perl"
-  ("deb-tcsh" | "deb- csh" | "deb- c-shell")
+  ("deb-tcsh" | "deb-csh" | "deb-c-shell")
 ]
 extra-source "libcam-pdf-perl_1.60-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libc/libcam-pdf-perl/libcam-pdf-perl_1.60-3_all.deb"

@@ -9,7 +9,7 @@ depends: [
   "deb-libatlas3-base"
   "deb-libc6" {>= "2.29"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "emmax_0~beta.20100307-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/emmax/emmax_0~beta.20100307-1+b1_amd64.deb"

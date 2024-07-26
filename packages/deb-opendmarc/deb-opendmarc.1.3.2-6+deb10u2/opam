@@ -14,8 +14,8 @@ depends: [
   "deb-libspf2-2"
   "deb-lsb-base"
   "deb-publicsuffix"
-  ("deb-dbconfig-mysql" | "deb- dbconfig-no-thanks")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-dbconfig-mysql" | "deb-dbconfig-no-thanks")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "opendmarc_1.3.2-6+deb10u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/opendmarc/opendmarc_1.3.2-6+deb10u2_amd64.deb"

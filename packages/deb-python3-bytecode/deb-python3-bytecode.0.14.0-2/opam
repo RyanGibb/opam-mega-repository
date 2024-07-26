@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-python3-any"
-  ("deb-python3-typing-extensions" | "deb- python3" {> "3.10"})
+  ("deb-python3-typing-extensions" | "deb-python3" {> "3.10"})
 ]
 extra-source "python3-bytecode_0.14.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-bytecode/python3-bytecode_0.14.0-2_all.deb"

@@ -13,7 +13,7 @@ depends: [
   "deb-libparams-validate-perl"
   "deb-libsql-abstract-perl"
   "deb-perl"
-  ("deb-libcgi-pm-perl" | "deb- perl" {< "5.19"})
+  ("deb-libcgi-pm-perl" | "deb-perl" {< "5.19"})
 ]
 extra-source "libcgi-uploader-perl_2.18-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libc/libcgi-uploader-perl/libcgi-uploader-perl_2.18-2_all.deb"

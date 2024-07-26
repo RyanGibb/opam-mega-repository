@@ -15,7 +15,7 @@ depends: [
   "deb-libsdl-ttf2-0-0"
   "deb-libsdl1-2debian" {>= "1.2.11"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "briquolo_0.5.7-9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/briquolo/briquolo_0.5.7-9_amd64.deb"

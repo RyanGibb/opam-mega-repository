@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-spider"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-spider_0.5.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-spider/ruby-spider_0.5.0-4_all.deb"

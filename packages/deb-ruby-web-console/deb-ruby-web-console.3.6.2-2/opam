@@ -10,7 +10,7 @@ depends: [
   "deb-ruby-activemodel" {>= "2-5.0~"}
   "deb-ruby-bindex"
   "deb-ruby-railties" {>= "2-5.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-web-console_3.6.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-web-console/ruby-web-console_3.6.2-2_all.deb"

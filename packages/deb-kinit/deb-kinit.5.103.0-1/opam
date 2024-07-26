@@ -25,7 +25,7 @@ depends: [
   "deb-libstdc++6" {>= "5"}
   "deb-libx11-6"
   "deb-libxcb1"
-  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb-libqt5gui5-gles" {>= "5.15.2~"})
 ]
 extra-source "kinit_5.103.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kinit/kinit_5.103.0-1_amd64.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-debianutils" {>= "1.7"}
   "deb-libc6" {>= "2.4"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "xringd_1.20-27+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xringd/xringd_1.20-27+b1_amd64.deb"

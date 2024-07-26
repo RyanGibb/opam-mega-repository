@@ -23,8 +23,8 @@ depends: [
   "deb-libsuperlu-dev" {>= "5.2"}
   "deb-libsuperlu-dist-dev"
   "deb-python3"
-  ("deb-gfortran-10" | "deb- gfortran-mod-15")
-  ("deb-ocl-icd-opencl-dev" | "deb- opencl-dev")
+  ("deb-gfortran-10" | "deb-gfortran-mod-15")
+  ("deb-ocl-icd-opencl-dev" | "deb-opencl-dev")
 ]
 extra-source "libpetsc64-real3.14-dev_3.14.5+dfsg1-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/petsc/libpetsc64-real3.14-dev_3.14.5+dfsg1-4_amd64.deb"

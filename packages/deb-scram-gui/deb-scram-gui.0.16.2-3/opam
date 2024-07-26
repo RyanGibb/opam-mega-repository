@@ -19,7 +19,7 @@ depends: [
   "deb-libtcmalloc-minimal4"
   "deb-libxml2" {>= "2.7.4"}
   "deb-scram"
-  ("deb-libqt5gui5" {>= "5.9.1"} | "deb- libqt5gui5-gles" {>= "5.9.1"})
+  ("deb-libqt5gui5" {>= "5.9.1"} | "deb-libqt5gui5-gles" {>= "5.9.1"})
 ]
 extra-source "scram-gui_0.16.2-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/scram/scram-gui_0.16.2-3_amd64.deb"

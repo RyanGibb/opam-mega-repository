@@ -16,9 +16,9 @@ depends: [
   "deb-perl" {>= "5.36.0-7"}
   "deb-perl-base"
   "deb-update-inetd"
-  ("deb-bsd-mailx" | "deb- mailx")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-openbsd-inetd" | "deb- inet-superserver")
+  ("deb-bsd-mailx" | "deb-mailx")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-openbsd-inetd" | "deb-inet-superserver")
 ]
 conflicts: [
   "deb-amanda"

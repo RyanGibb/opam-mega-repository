@@ -9,7 +9,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-nacl"
   "deb-python3-pkg-resources"
-  ("deb-python3-dnspython" {>= "1.16.0"} | "deb- python3-dns")
+  ("deb-python3-dnspython" {>= "1.16.0"} | "deb-python3-dns")
 ]
 extra-source "python3-dkim_1.0.6-0+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dkimpy/python3-dkim_1.0.6-0+deb11u1_all.deb"

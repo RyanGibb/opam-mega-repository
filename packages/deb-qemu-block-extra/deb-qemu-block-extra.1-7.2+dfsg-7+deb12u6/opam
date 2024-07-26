@@ -14,7 +14,7 @@ depends: [
   "deb-librados2" {>= "16.2.11+ds"}
   "deb-librbd1" {>= "16.2.6+ds"}
   "deb-libssh-4" {>= "0.8.4"}
-  ("deb-qemu-system-x86" {= "1-7.2+dfsg-7+deb12u6"} | "deb- qemu-system-arm" {= "1-7.2+dfsg-7+deb12u6"} | "deb- qemu-system-mips" {= "1-7.2+dfsg-7+deb12u6"} | "deb- qemu-system-ppc" {= "1-7.2+dfsg-7+deb12u6"} | "deb- qemu-system-sparc" {= "1-7.2+dfsg-7+deb12u6"} | "deb- qemu-system-misc" {= "1-7.2+dfsg-7+deb12u6"} | "deb- qemu-utils" {= "1-7.2+dfsg-7+deb12u6"})
+  ("deb-qemu-system-x86" {= "1-7.2+dfsg-7+deb12u6"} | "deb-qemu-system-arm" {= "1-7.2+dfsg-7+deb12u6"} | "deb-qemu-system-mips" {= "1-7.2+dfsg-7+deb12u6"} | "deb-qemu-system-ppc" {= "1-7.2+dfsg-7+deb12u6"} | "deb-qemu-system-sparc" {= "1-7.2+dfsg-7+deb12u6"} | "deb-qemu-system-misc" {= "1-7.2+dfsg-7+deb12u6"} | "deb-qemu-utils" {= "1-7.2+dfsg-7+deb12u6"})
 ]
 extra-source "qemu-block-extra_1:7.2+dfsg-7+deb12u6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-block-extra_7.2+dfsg-7+deb12u6_amd64.deb"

@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.29"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libsdp0_6.2.0-4+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/coinor-csdp/libsdp0_6.2.0-4+b1_amd64.deb"

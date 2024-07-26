@@ -19,7 +19,7 @@ depends: [
   "deb-libwayland-client0" {>= "1.20.0"}
   "deb-libwayland-server0" {>= "1.8.0"}
   "deb-qml-module-qtwayland-compositor"
-  ("deb-libqt5gui5" {>= "5.15.8+dfsg~"} | "deb- libqt5gui5-gles" {>= "5.15.8+dfsg~"})
+  ("deb-libqt5gui5" {>= "5.15.8+dfsg~"} | "deb-libqt5gui5-gles" {>= "5.15.8+dfsg~"})
 ]
 extra-source "qtwayland5-examples_5.15.8-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtwayland-opensource-src/qtwayland5-examples_5.15.8-2_amd64.deb"

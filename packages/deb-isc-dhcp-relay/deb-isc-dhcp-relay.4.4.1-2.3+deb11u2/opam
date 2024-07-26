@@ -12,7 +12,7 @@ depends: [
   "deb-libirs-export161"
   "deb-libisc-export1105"
   "deb-lsb-base" {>= "3.0-6"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 conflicts: [
   "deb-dhcp-relay"

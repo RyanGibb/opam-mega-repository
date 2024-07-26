@@ -17,7 +17,7 @@ depends: [
   "deb-libstdc++6" {>= "5"}
   "deb-qml-module-qtquick-controls"
   "deb-qml-module-qtquick-dialogs"
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
 ]
 extra-source "2048-qt_0.1.6-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/2/2048-qt/2048-qt_0.1.6-1+b1_amd64.deb"

@@ -9,7 +9,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-pycryptodome"
   "deb-python3-texttable"
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-py7zr_0.11.3+dfsg-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/py7zr/python3-py7zr_0.11.3+dfsg-5_amd64.deb"

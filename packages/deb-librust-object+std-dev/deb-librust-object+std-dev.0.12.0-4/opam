@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-librust-object-dev" {= "0.12.0-4"}
-  ("deb-librust-goblin-0-2+std-dev" | "deb- librust-goblin-0-1+std-dev" | "deb- librust-goblin-0-0+std-dev" {>= "0.0.22-~~"})
+  ("deb-librust-goblin-0-2+std-dev" | "deb-librust-goblin-0-1+std-dev" | "deb-librust-goblin-0-0+std-dev" {>= "0.0.22-~~"})
 ]
 extra-source "librust-object+std-dev_0.12.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-object/librust-object+std-dev_0.12.0-4_amd64.deb"

@@ -18,7 +18,7 @@ depends: [
   "deb-python3-pyqt5-qtwebchannel" {>= "5.15.1"}
   "deb-python3-pyqt5-sip" {< "13"}
   "deb-python3-pyqt5-sip" {>= "12.8"}
-  ("deb-libqt5gui5" {>= "5.3.0"} | "deb- libqt5gui5-gles" {>= "5.3.0"})
+  ("deb-libqt5gui5" {>= "5.3.0"} | "deb-libqt5gui5-gles" {>= "5.3.0"})
 ]
 extra-source "python3-pyqt5.qtwebengine_5.15.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pyqt5webengine/python3-pyqt5.qtwebengine_5.15.2-2_amd64.deb"

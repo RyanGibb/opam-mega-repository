@@ -19,7 +19,7 @@ depends: [
   "deb-libsoftware-license-perl" {>= "0.103012"}
   "deb-perl"
   "deb-perl-base"
-  ("deb-libmodule-pluggable-perl" | "deb- perl" {< "5.17.9"})
+  ("deb-libmodule-pluggable-perl" | "deb-perl" {< "5.17.9"})
 ]
 extra-source "libmodule-cpants-analyse-perl_0.99-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libm/libmodule-cpants-analyse-perl/libmodule-cpants-analyse-perl_0.99-1_all.deb"

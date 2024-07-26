@@ -8,8 +8,8 @@ remove: [
 depends: [
   "deb-liblapacke" {= "3.8.0-2"}
   "deb-libtmglib-dev"
-  ("deb-libblas-dev" | "deb- libblas-so")
-  ("deb-liblapack-dev" | "deb- liblapack-so")
+  ("deb-libblas-dev" | "deb-libblas-so")
+  ("deb-liblapack-dev" | "deb-liblapack-so")
 ]
 extra-source "liblapacke-dev_3.8.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lapack/liblapacke-dev_3.8.0-2_amd64.deb"

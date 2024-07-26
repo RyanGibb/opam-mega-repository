@@ -68,7 +68,7 @@ depends: [
   "deb-tracker"
   "deb-yelp" {>= "3.38"}
   "deb-zenity" {>= "3.32"}
-  ("deb-firefox-esr" {>= "78"} | "deb- firefox" {>= "78"} | "deb- chromium" | "deb- chromium-browser" | "deb- epiphany-browser")
+  ("deb-firefox-esr" {>= "78"} | "deb-firefox" {>= "78"} | "deb-chromium" | "deb-chromium-browser" | "deb-epiphany-browser")
 ]
 extra-source "gnome-core_1:3.38+3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/meta-gnome3/gnome-core_3.38+3_amd64.deb"

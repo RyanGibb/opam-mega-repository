@@ -11,7 +11,7 @@ depends: [
   "deb-libgnutls30" {>= "3.6.5"}
   "deb-libseccomp2" {>= "2.1.0"}
   "deb-libselinux1" {>= "1.32"}
-  ("deb-cgroupfs-mount" | "deb- systemd")
+  ("deb-cgroupfs-mount" | "deb-systemd")
 ]
 extra-source "liblxc1_1:3.1.0+really3.0.3-8_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lxc/liblxc1_3.1.0+really3.0.3-8_amd64.deb"

@@ -9,7 +9,7 @@ depends: [
   "deb-libjs-jquery"
   "deb-libjs-jquery-fancybox"
   "deb-libjs-jquery-ui"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-simplecov-html_0.12.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-simplecov-html/ruby-simplecov-html_0.12.3-1_all.deb"

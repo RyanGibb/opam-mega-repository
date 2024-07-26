@@ -14,7 +14,7 @@ depends: [
   "deb-python-gobject"
   "deb-python-gtk2"
   "deb-python-xdg"
-  ("deb-alsa-utils" | "deb- pulseaudio-utils")
+  ("deb-alsa-utils" | "deb-pulseaudio-utils")
 ]
 extra-source "gespeaker_0.8.6-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gespeaker/gespeaker_0.8.6-1_all.deb"

@@ -11,7 +11,7 @@ depends: [
   "deb-libsfml-network2-5" {= "2.5.1+dfsg-2+b2"}
   "deb-libsfml-system2-5" {= "2.5.1+dfsg-2+b2"}
   "deb-libsfml-window2-5" {= "2.5.1+dfsg-2+b2"}
-  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
+  ("deb-libgl1-mesa-dev" | "deb-libgl-dev")
 ]
 extra-source "libsfml-dev_2.5.1+dfsg-2+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libs/libsfml/libsfml-dev_2.5.1+dfsg-2+b2_amd64.deb"

@@ -10,7 +10,7 @@ depends: [
   "deb-install-info"
   "deb-libglib2-0-dev"
   "deb-libhkl5" {= "5.0.0.2661-1+b1"}
-  ("deb-libgsl-dev" | "deb- libgsl0-dev")
+  ("deb-libgsl-dev" | "deb-libgsl0-dev")
 ]
 extra-source "libhkl-dev_5.0.0.2661-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/hkl/libhkl-dev_5.0.0.2661-1+b1_amd64.deb"

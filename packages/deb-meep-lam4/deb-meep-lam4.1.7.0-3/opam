@@ -24,7 +24,7 @@ depends: [
   "deb-libquadmath0" {>= "4.6"}
   "deb-libstdc++6" {>= "5"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "meep-lam4_1.7.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/meep-lam4/meep-lam4_1.7.0-3_amd64.deb"

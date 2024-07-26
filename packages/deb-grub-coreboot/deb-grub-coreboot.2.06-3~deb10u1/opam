@@ -10,7 +10,7 @@ depends: [
   "deb-grub-coreboot-bin" {= "2.06-3~deb10u1"}
   "deb-grub2-common" {= "2.06-3~deb10u1"}
   "deb-ucf"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 conflicts: [
   "deb-grub" {< "0.97-54"}

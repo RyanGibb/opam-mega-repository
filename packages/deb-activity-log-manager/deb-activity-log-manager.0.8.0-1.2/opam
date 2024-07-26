@@ -10,7 +10,7 @@ depends: [
   "deb-python-cairo"
   "deb-python-gtk2"
   "deb-python-zeitgeist"
-  ("deb-zeitgeist-core" {>= "0.7~"} | "deb- zeitgeist" {>= "0.7~"})
+  ("deb-zeitgeist-core" {>= "0.7~"} | "deb-zeitgeist" {>= "0.7~"})
 ]
 extra-source "activity-log-manager_0.8.0-1.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/activity-log-manager/activity-log-manager_0.8.0-1.2_all.deb"

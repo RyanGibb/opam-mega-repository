@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-node-turbolinks"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-turbolinks-source_5.1.0+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-turbolinks-source/ruby-turbolinks-source_5.1.0+dfsg-2_all.deb"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-riddle"]
 ]
 depends: [
-  ("deb-ruby-any" | "deb- ruby-interpreter")
+  ("deb-ruby-any" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-riddle_2.3.1-2~deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-riddle/ruby-riddle_2.3.1-2~deb10u1_all.deb"

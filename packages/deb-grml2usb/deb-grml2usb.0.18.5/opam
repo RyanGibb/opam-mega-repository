@@ -11,8 +11,8 @@ depends: [
   "deb-python3"
   "deb-python3-parted"
   "deb-rsync"
-  ("deb-syslinux" | "deb- grub-pc-bin")
-  ("deb-syslinux" | "deb- grub2-common")
+  ("deb-syslinux" | "deb-grub-pc-bin")
+  ("deb-syslinux" | "deb-grub2-common")
 ]
 extra-source "grml2usb_0.18.5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/grml2usb/grml2usb_0.18.5_amd64.deb"

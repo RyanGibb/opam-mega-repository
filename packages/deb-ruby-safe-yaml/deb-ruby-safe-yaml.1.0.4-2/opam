@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-safe-yaml"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-safe-yaml_1.0.4-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-safe-yaml/ruby-safe-yaml_1.0.4-2_all.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-activesupport" {>= "3.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-climate-control_0.0.3-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-climate-control/ruby-climate-control_0.0.3-1.1_all.deb"

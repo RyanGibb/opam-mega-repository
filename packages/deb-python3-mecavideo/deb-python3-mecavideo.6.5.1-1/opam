@@ -14,8 +14,8 @@ depends: [
   "deb-python3-pyqtgraph"
   "deb-shared-mime-info"
   "deb-xdg-utils"
-  ("deb-evince" | "deb- postscript-viewer")
-  ("deb-iceweasel" | "deb- firefox-esr" | "deb- www-browser")
+  ("deb-evince" | "deb-postscript-viewer")
+  ("deb-iceweasel" | "deb-firefox-esr" | "deb-www-browser")
 ]
 conflicts: [
   "deb-python-mecavideo" {< "6.4"}

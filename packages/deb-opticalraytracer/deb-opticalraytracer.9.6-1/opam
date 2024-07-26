@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r opticalraytracer"]
 ]
 depends: [
-  ("deb-default-jre" {>= "2-1.7"} | "deb- java7-runtime")
+  ("deb-default-jre" {>= "2-1.7"} | "deb-java7-runtime")
 ]
 extra-source "opticalraytracer_9.6-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/opticalraytracer/opticalraytracer_9.6-1_all.deb"

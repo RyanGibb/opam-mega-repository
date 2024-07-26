@@ -15,7 +15,7 @@ depends: [
   "deb-python3-distro-info"
   "deb-ucf"
   "deb-xz-utils"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "unattended-upgrades_1.11.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/unattended-upgrades/unattended-upgrades_1.11.2_all.deb"

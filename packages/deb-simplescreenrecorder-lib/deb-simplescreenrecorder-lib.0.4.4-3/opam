@@ -12,7 +12,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libx11-6"
   "deb-libxfixes3"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "simplescreenrecorder-lib_0.4.4-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/simplescreenrecorder/simplescreenrecorder-lib_0.4.4-3_amd64.deb"

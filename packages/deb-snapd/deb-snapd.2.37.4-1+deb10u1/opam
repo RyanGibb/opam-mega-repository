@@ -18,7 +18,7 @@ depends: [
   "deb-squashfs-tools"
   "deb-systemd"
   "deb-udev"
-  ("deb-gnupg1" | "deb- gnupg")
+  ("deb-gnupg1" | "deb-gnupg")
 ]
 conflicts: [
   "deb-snap" {< "2013-11-29-1ubuntu1"}

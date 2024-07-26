@@ -21,7 +21,7 @@ depends: [
   "deb-libpeas-1-0-0" {>= "1.0.0"}
   "deb-libplank1" {>= "0.11.2"}
   "deb-libzeitgeist-2-0-0" {>= "0.9.9"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "budgie-applications-menu-applet_1.1.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/budgie-extras/budgie-applications-menu-applet_1.1.0-1_amd64.deb"

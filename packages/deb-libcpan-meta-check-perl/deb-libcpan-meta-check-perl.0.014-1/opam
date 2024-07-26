@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "deb-perl"
-  ("deb-perl" {>= "5.17.1"} | "deb- libcpan-meta-requirements-perl")
-  ("deb-perl" {>= "5.19.5"} | "deb- libcpan-meta-perl" {>= "2.132830"})
-  ("deb-perl" {>= "5.21.1"} | "deb- libmodule-metadata-perl" {>= "1.000023"})
+  ("deb-perl" {>= "5.17.1"} | "deb-libcpan-meta-requirements-perl")
+  ("deb-perl" {>= "5.19.5"} | "deb-libcpan-meta-perl" {>= "2.132830"})
+  ("deb-perl" {>= "5.21.1"} | "deb-libmodule-metadata-perl" {>= "1.000023"})
 ]
 extra-source "libcpan-meta-check-perl_0.014-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libc/libcpan-meta-check-perl/libcpan-meta-check-perl_0.014-1_all.deb"

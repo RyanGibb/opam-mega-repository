@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r r-doc-info"]
 ]
 depends: [
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 extra-source "r-doc-info_4.0.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-base/r-doc-info_4.0.4-1_all.deb"

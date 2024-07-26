@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r fuse-emulator-common"]
 ]
 depends: [
-  ("deb-opense-basic" | "deb- spectrum-roms")
+  ("deb-opense-basic" | "deb-spectrum-roms")
 ]
 extra-source "fuse-emulator-common_1.5.7+dfsg1-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fuse-emulator/fuse-emulator-common_1.5.7+dfsg1-4_all.deb"

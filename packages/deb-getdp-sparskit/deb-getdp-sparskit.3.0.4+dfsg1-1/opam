@@ -13,7 +13,7 @@ depends: [
   "deb-libgsl23" {>= "2.5"}
   "deb-libpython2-7" {>= "2.7"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "getdp-sparskit_3.0.4+dfsg1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/getdp/getdp-sparskit_3.0.4+dfsg1-1_amd64.deb"

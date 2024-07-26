@@ -9,7 +9,7 @@ depends: [
   "deb-ruby-activesupport"
   "deb-ruby-nokogiri"
   "deb-ruby-rails-deprecated-sanitizer"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-rails-dom-testing_2.0.3-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-rails-dom-testing/ruby-rails-dom-testing_2.0.3-4_all.deb"

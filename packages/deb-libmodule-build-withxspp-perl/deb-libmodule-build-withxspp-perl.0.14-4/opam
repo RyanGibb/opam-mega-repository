@@ -10,7 +10,7 @@ depends: [
   "deb-libextutils-xspp-perl"
   "deb-libmodule-build-perl"
   "deb-perl-any"
-  ("deb-perl" | "deb- libextutils-parsexs-perl" {>= "3.040000"})
+  ("deb-perl" | "deb-libextutils-parsexs-perl" {>= "3.040000"})
 ]
 extra-source "libmodule-build-withxspp-perl_0.14-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libm/libmodule-build-withxspp-perl/libmodule-build-withxspp-perl_0.14-4_all.deb"

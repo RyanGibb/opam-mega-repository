@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.4"}
   "deb-pd-libdir"
-  ("deb-puredata-core" | "deb- pd")
+  ("deb-puredata-core" | "deb-pd")
 ]
 extra-source "pd-motex_1.1.4-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pd-motex/pd-motex_1.1.4-7_amd64.deb"

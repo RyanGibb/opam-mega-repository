@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-erlang-eunit" {>= "1-21.1+dfsg"}
-  ("deb-erlang-base" {>= "1-21.1+dfsg"} | "deb- erlang-base-hipe" {>= "1-21.1+dfsg"})
-  ("deb-erlang-base" | "deb- erlang-abi-17-0")
+  ("deb-erlang-base" {>= "1-21.1+dfsg"} | "deb-erlang-base-hipe" {>= "1-21.1+dfsg"})
+  ("deb-erlang-base" | "deb-erlang-abi-17-0")
 ]
 extra-source "erlang-redis-client_1.2.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/erlang-redis-client/erlang-redis-client_1.2.0-1_amd64.deb"

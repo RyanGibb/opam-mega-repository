@@ -9,7 +9,7 @@ depends: [
   "deb-ruby-atomic" {>= "1.0.0"}
   "deb-ruby-peek"
   "deb-ruby-redis"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-peek-redis_1.2.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-peek-redis/ruby-peek-redis_1.2.0-1_all.deb"

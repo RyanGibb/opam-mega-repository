@@ -15,7 +15,7 @@ depends: [
   "deb-libreadline8" {>= "6.0"}
   "deb-libusb-1-0-0" {>= "2-1.0.8"}
   "deb-nickle"
-  ("deb-default-jre" | "deb- java2-runtime")
+  ("deb-default-jre" | "deb-java2-runtime")
 ]
 conflicts: [
   "deb-altusmetrum-themes"

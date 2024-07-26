@@ -25,7 +25,7 @@ depends: [
   "deb-python3-pyside2-qtwidgets"
   "deb-python3-pyside2-qtxml"
   "deb-python3-yaml"
-  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb-libqt5gui5-gles" {>= "5.7.0"})
 ]
 extra-source "freecad-python3_0.19.1+dfsg1-2+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/freecad/freecad-python3_0.19.1+dfsg1-2+deb11u1_amd64.deb"

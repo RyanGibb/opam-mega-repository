@@ -15,8 +15,8 @@ depends: [
   "deb-libharminv3" {>= "1.4.1"}
   "deb-libhdf5-103-1"
   "deb-libstdc++6" {>= "11"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 conflicts: [
   "deb-libmeep-lam4-12"

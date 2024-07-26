@@ -16,7 +16,7 @@ depends: [
   "deb-r-cran-mvtnorm"
   "deb-r-cran-rcpp" {>= "1.0.2"}
   "deb-r-cran-rcppeigen"
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "r-cran-rpf_1.0.5+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-rpf/r-cran-rpf_1.0.5+dfsg-1_amd64.deb"

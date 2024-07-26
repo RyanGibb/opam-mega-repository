@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libphonon4"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 conflicts: [
   "deb-phonon-backend"

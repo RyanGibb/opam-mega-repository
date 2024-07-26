@@ -9,7 +9,7 @@ depends: [
   "deb-adduser"
   "deb-freeipmi-tools"
   "deb-libc6" {>= "2.34"}
-  ("deb-daemon" | "deb- systemd-sysv")
+  ("deb-daemon" | "deb-systemd-sysv")
 ]
 extra-source "prometheus-ipmi-exporter_1.6.1-2+b5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/prometheus-ipmi-exporter/prometheus-ipmi-exporter_1.6.1-2+b5_amd64.deb"

@@ -14,7 +14,7 @@ depends: [
   "deb-libqt5webenginecore5" {>= "5.14.1"}
   "deb-libstdc++6" {>= "5"}
   "deb-qml-module-qtquick2"
-  ("deb-libqt5quick5" {>= "5.15.8+dfsg~"} | "deb- libqt5quick5-gles" {>= "5.15.8+dfsg~"})
+  ("deb-libqt5quick5" {>= "5.15.8+dfsg~"} | "deb-libqt5quick5-gles" {>= "5.15.8+dfsg~"})
 ]
 extra-source "qml-module-qtwebengine_5.15.13+dfsg-1~deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtwebengine-opensource-src/qml-module-qtwebengine_5.15.13+dfsg-1~deb12u1_amd64.deb"

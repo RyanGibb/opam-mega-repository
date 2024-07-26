@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-syslinux-common" {>= "4"}
-  ("deb-grub-pc" | "deb- grub-efi-amd64" | "deb- grub-efi-ia32")
+  ("deb-grub-pc" | "deb-grub-efi-amd64" | "deb-grub-efi-ia32")
 ]
 extra-source "grub-imageboot_0.6+nmu1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/grub-imageboot/grub-imageboot_0.6+nmu1_all.deb"

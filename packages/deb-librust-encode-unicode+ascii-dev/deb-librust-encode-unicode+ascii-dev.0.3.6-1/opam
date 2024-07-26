@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-librust-encode-unicode-dev" {= "0.3.6-1"}
-  ("deb-librust-ascii-1-dev" | "deb- librust-ascii-0-dev" {>= "0.8-~~"})
+  ("deb-librust-ascii-1-dev" | "deb-librust-ascii-0-dev" {>= "0.8-~~"})
 ]
 extra-source "librust-encode-unicode+ascii-dev_0.3.6-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-encode-unicode/librust-encode-unicode+ascii-dev_0.3.6-1_amd64.deb"

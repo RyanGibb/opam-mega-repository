@@ -15,7 +15,7 @@ depends: [
   "deb-qml-module-qtquick-controls"
   "deb-qml-module-qtquick-controls2"
   "deb-qml-module-qtwebview"
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "piperka-client_0.2.2-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/piperka-client/piperka-client_0.2.2-1+b1_amd64.deb"

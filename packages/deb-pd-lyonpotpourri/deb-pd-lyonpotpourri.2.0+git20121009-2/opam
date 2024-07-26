@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.14"}
   "deb-pd-libdir"
-  ("deb-puredata-core" | "deb- pd")
+  ("deb-puredata-core" | "deb-pd")
 ]
 extra-source "pd-lyonpotpourri_2.0+git20121009-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pd-lyonpotpourri/pd-lyonpotpourri_2.0+git20121009-2_amd64.deb"

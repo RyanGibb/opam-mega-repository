@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r monodoc-manual"]
 ]
 depends: [
-  ("deb-monodoc-http" | "deb- monodoc-viewer")
+  ("deb-monodoc-http" | "deb-monodoc-viewer")
 ]
 extra-source "monodoc-manual_6.8.0.105+dfsg-3.3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mono/monodoc-manual_6.8.0.105+dfsg-3.3_all.deb"

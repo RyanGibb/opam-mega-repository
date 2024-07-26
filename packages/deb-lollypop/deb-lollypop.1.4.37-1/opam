@@ -21,7 +21,7 @@ depends: [
   "deb-python3-gi-cairo"
   "deb-python3-gst-1-0"
   "deb-python3-pil"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "lollypop_1.4.37-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lollypop/lollypop_1.4.37-1_all.deb"

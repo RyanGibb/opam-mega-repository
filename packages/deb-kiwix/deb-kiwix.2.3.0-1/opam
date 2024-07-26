@@ -18,7 +18,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.15.1"}
   "deb-libstdc++6" {>= "11"}
   "deb-libzim8" {>= "8.0.0"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "kiwix_2.3.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kiwix/kiwix_2.3.0-1_amd64.deb"

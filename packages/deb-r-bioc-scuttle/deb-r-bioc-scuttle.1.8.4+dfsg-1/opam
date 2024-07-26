@@ -22,7 +22,7 @@ depends: [
   "deb-r-bioc-summarizedexperiment"
   "deb-r-cran-matrix"
   "deb-r-cran-rcpp"
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "r-bioc-scuttle_1.8.4+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-bioc-scuttle/r-bioc-scuttle_1.8.4+dfsg-1_amd64.deb"

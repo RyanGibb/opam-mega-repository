@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libjs-jquery"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnucash-common_1:3.4-1+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnucash/gnucash-common_3.4-1+deb10u1_all.deb"

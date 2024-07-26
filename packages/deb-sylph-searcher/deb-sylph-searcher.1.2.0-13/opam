@@ -20,7 +20,7 @@ depends: [
   "deb-libpangoft2-1-0-0" {>= "1.14.0"}
   "deb-libpq5"
   "deb-libsylph1" {>= "1.1.0"}
-  ("deb-unidic-mecab" | "deb- mecab-naist-jdic" | "deb- mecab-ipadic")
+  ("deb-unidic-mecab" | "deb-mecab-naist-jdic" | "deb-mecab-ipadic")
 ]
 extra-source "sylph-searcher_1.2.0-13_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sylph-searcher/sylph-searcher_1.2.0-13_amd64.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libbsh-java" {= "2.0b4-20"}
   "deb-libjline-java"
-  ("deb-default-jre-headless" | "deb- java1-runtime-headless" | "deb- java2-runtime-headless")
+  ("deb-default-jre-headless" | "deb-java1-runtime-headless" | "deb-java2-runtime-headless")
 ]
 extra-source "bsh_2.0b4-20_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/bsh/bsh_2.0b4-20_all.deb"

@@ -21,8 +21,8 @@ depends: [
   "deb-libspqr2" {= "1-5.4.0+dfsg-1"}
   "deb-libsuitesparseconfig5" {= "1-5.4.0+dfsg-1"}
   "deb-libumfpack5" {= "1-5.4.0+dfsg-1"}
-  ("deb-libblas-dev" | "deb- libblas-so")
-  ("deb-liblapack-dev" | "deb- liblapack-so")
+  ("deb-libblas-dev" | "deb-libblas-so")
+  ("deb-liblapack-dev" | "deb-liblapack-so")
 ]
 conflicts: [
   "deb-libsuitesparse-metis-dev"

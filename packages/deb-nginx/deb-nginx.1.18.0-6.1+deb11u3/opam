@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo dpkg -r nginx"]
 ]
 depends: [
-  ("deb-nginx-core" {< "1.18.0-6.1+deb11u3.1~"} | "deb- nginx-full" {< "1.18.0-6.1+deb11u3.1~"} | "deb- nginx-light" {< "1.18.0-6.1+deb11u3.1~"} | "deb- nginx-extras" {< "1.18.0-6.1+deb11u3.1~"})
-  ("deb-nginx-core" {>= "1.18.0-6.1+deb11u3"} | "deb- nginx-full" {>= "1.18.0-6.1+deb11u3"} | "deb- nginx-light" {>= "1.18.0-6.1+deb11u3"} | "deb- nginx-extras" {>= "1.18.0-6.1+deb11u3"})
+  ("deb-nginx-core" {< "1.18.0-6.1+deb11u3.1~"} | "deb-nginx-full" {< "1.18.0-6.1+deb11u3.1~"} | "deb-nginx-light" {< "1.18.0-6.1+deb11u3.1~"} | "deb-nginx-extras" {< "1.18.0-6.1+deb11u3.1~"})
+  ("deb-nginx-core" {>= "1.18.0-6.1+deb11u3"} | "deb-nginx-full" {>= "1.18.0-6.1+deb11u3"} | "deb-nginx-light" {>= "1.18.0-6.1+deb11u3"} | "deb-nginx-extras" {>= "1.18.0-6.1+deb11u3"})
 ]
 extra-source "nginx_1.18.0-6.1+deb11u3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/nginx/nginx_1.18.0-6.1+deb11u3_all.deb"

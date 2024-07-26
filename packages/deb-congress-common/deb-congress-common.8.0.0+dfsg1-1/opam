@@ -12,7 +12,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-congress" {= "8.0.0+dfsg1-1"}
   "deb-sqlite3"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "congress-common_8.0.0+dfsg1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/congress/congress-common_8.0.0+dfsg1-1_all.deb"

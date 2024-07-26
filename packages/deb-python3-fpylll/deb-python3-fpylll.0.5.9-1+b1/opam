@@ -16,7 +16,7 @@ depends: [
   "deb-python3" {>= "3.11~"}
   "deb-python3-any"
   "deb-python3-numpy"
-  ("deb-python3-cysignals-bare" | "deb- python3-cysignals")
+  ("deb-python3-cysignals-bare" | "deb-python3-cysignals")
 ]
 extra-source "python3-fpylll_0.5.9-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fpylll/python3-fpylll_0.5.9-1+b1_amd64.deb"

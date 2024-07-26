@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libhealpix0" {= "3.60+ds-1+b4"}
-  ("deb-gfortran-12" | "deb- gfortran-mod-15")
+  ("deb-gfortran-12" | "deb-gfortran-mod-15")
 ]
 extra-source "libhealpix-dev_3.60+ds-1+b4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/healpix-fortran/libhealpix-dev_3.60+ds-1+b4_amd64.deb"

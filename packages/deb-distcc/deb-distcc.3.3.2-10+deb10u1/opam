@@ -14,7 +14,7 @@ depends: [
   "deb-libpopt0" {>= "1.14"}
   "deb-lsb-base" {>= "3.2-13"}
   "deb-netbase" {>= "4.09"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "distcc_3.3.2-10+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/distcc/distcc_3.3.2-10+deb10u1_amd64.deb"

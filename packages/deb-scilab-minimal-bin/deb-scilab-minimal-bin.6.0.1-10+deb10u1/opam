@@ -28,8 +28,8 @@ depends: [
   "deb-libxml2" {>= "2.8.0"}
   "deb-scilab-data" {= "6.0.1-10+deb10u1"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "scilab-minimal-bin_6.0.1-10+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/scilab/scilab-minimal-bin_6.0.1-10+deb10u1_amd64.deb"

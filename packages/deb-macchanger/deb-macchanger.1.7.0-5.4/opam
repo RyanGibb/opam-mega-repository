@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.4"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 extra-source "macchanger_1.7.0-5.4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/macchanger/macchanger_1.7.0-5.4_amd64.deb"

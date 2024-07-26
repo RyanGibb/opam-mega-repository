@@ -9,7 +9,7 @@ depends: [
   "deb-python3-any" {>= "3.7~"}
   "deb-python3-cffi"
   "deb-python3-cffi-backend"
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "python3-jack-client_0.5.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-jack-client/python3-jack-client_0.5.3-1_all.deb"

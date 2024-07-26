@@ -11,7 +11,7 @@ depends: [
   "deb-libcommons-lang-java"
   "deb-libjargs-java"
   "deb-libxerces2-java"
-  ("deb-default-jre" | "deb- java10-runtime" | "deb- java11-runtime")
+  ("deb-default-jre" | "deb-java10-runtime" | "deb-java11-runtime")
 ]
 extra-source "cgview_0.0.20100111-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cgview/cgview_0.0.20100111-4_amd64.deb"

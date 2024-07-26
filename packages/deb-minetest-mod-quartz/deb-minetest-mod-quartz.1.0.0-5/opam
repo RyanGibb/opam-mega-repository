@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r minetest-mod-quartz"]
 ]
 depends: [
-  ("deb-minetest" | "deb- minetest-server")
+  ("deb-minetest" | "deb-minetest-server")
 ]
 extra-source "minetest-mod-quartz_1.0.0-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/minetest-mod-quartz/minetest-mod-quartz_1.0.0-5_all.deb"

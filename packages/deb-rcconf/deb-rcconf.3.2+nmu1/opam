@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-perl"
   "deb-sysv-rc"
-  ("deb-whiptail" | "deb- whiptail-provider" | "deb- dialog")
+  ("deb-whiptail" | "deb-whiptail-provider" | "deb-dialog")
 ]
 conflicts: [
   "deb-file-rc"

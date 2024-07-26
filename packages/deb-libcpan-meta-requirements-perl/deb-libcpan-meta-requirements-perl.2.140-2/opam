@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl-any"
-  ("deb-perl" | "deb- libversion-perl")
+  ("deb-perl" | "deb-libversion-perl")
 ]
 extra-source "libcpan-meta-requirements-perl_2.140-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libc/libcpan-meta-requirements-perl/libcpan-meta-requirements-perl_2.140-2_all.deb"

@@ -16,7 +16,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-dbus"
   "deb-python3-gi"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "caribou-antler_0.4.21-8_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/caribou/caribou-antler_0.4.21-8_all.deb"

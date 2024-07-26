@@ -9,8 +9,8 @@ depends: [
   "deb-tryton-server"
   "deb-tryton-server-uwsgi"
   "deb-ucf"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-python3-certbot-nginx" | "deb- nginx")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-python3-certbot-nginx" | "deb-nginx")
 ]
 extra-source "tryton-server-nginx_6.0.29-2+deb12u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tryton-server/tryton-server-nginx_6.0.29-2+deb12u2_all.deb"

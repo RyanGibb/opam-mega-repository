@@ -15,7 +15,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libtcl8-6" {>= "8.6.0"}
   "deb-libx11-6"
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "din_5.2.1-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/din/din_5.2.1-6_amd64.deb"

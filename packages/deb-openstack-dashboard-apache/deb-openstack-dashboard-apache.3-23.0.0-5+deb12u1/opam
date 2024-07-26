@@ -10,7 +10,7 @@ depends: [
   "deb-debconf"
   "deb-libapache2-mod-wsgi-py3"
   "deb-openstack-dashboard" {= "3-23.0.0-5+deb12u1"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "openstack-dashboard-apache_3:23.0.0-5+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/horizon/openstack-dashboard-apache_23.0.0-5+deb12u1_all.deb"

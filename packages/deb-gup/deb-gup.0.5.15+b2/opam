@@ -9,7 +9,7 @@ depends: [
   "deb-adduser"
   "deb-libc6" {>= "2.14"}
   "deb-libcrypt1" {>= "1-4.1.0"}
-  ("deb-default-mta" | "deb- mail-transport-agent")
+  ("deb-default-mta" | "deb-mail-transport-agent")
 ]
 extra-source "gup_0.5.15+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gup/gup_0.5.15+b2_amd64.deb"

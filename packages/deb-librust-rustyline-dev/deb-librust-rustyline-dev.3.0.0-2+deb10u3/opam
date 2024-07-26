@@ -21,7 +21,7 @@ depends: [
   "deb-librust-winapi-0-3+winbase-dev"
   "deb-librust-winapi-0-3+wincon-dev"
   "deb-librust-winapi-0-3+winuser-dev"
-  ("deb-librust-nix-0-13+default-dev" | "deb- librust-nix-0-12+default-dev" | "deb- librust-nix-0-11+default-dev")
+  ("deb-librust-nix-0-13+default-dev" | "deb-librust-nix-0-12+default-dev" | "deb-librust-nix-0-11+default-dev")
 ]
 extra-source "librust-rustyline-dev_3.0.0-2+deb10u3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-rustyline/librust-rustyline-dev_3.0.0-2+deb10u3_amd64.deb"

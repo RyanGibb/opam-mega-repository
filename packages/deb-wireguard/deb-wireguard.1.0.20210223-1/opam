@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-wireguard-tools" {>= "1.0.20210223-1"}
-  ("deb-wireguard-modules" {>= "0.0.20191219"} | "deb- wireguard-dkms" {>= "0.0.20200121-2"})
+  ("deb-wireguard-modules" {>= "0.0.20191219"} | "deb-wireguard-dkms" {>= "0.0.20200121-2"})
 ]
 extra-source "wireguard_1.0.20210223-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/wireguard/wireguard_1.0.20210223-1_all.deb"

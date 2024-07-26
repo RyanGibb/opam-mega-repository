@@ -13,8 +13,8 @@ depends: [
   "deb-r-base-core" {>= "4.2.2.20221110-1"}
   "deb-r-cran-rcpp" {>= "0.12.0"}
   "deb-r-cran-rcpparmadillo"
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "r-cran-bayesm_3.1-5+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-bayesm/r-cran-bayesm_3.1-5+dfsg-1_amd64.deb"

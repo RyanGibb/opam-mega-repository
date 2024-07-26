@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-liboop-dev" {>= "1.0"}
   "deb-libruli4" {= "0.36-2"}
-  ("deb-libc6-dev" | "deb- libc-dev")
+  ("deb-libc6-dev" | "deb-libc-dev")
 ]
 conflicts: [
   "deb-libruli-dev"

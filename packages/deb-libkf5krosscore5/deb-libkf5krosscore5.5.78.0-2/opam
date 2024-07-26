@@ -13,7 +13,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.14.0~"}
   "deb-libqt5xml5" {>= "5.14.0~"}
   "deb-libstdc++6" {>= "4.1.1"}
-  ("deb-libqt5gui5" {>= "5.14.0~"} | "deb- libqt5gui5-gles" {>= "5.14.0~"})
+  ("deb-libqt5gui5" {>= "5.14.0~"} | "deb-libqt5gui5-gles" {>= "5.14.0~"})
 ]
 extra-source "libkf5krosscore5_5.78.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kross/libkf5krosscore5_5.78.0-2_amd64.deb"

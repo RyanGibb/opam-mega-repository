@@ -10,7 +10,7 @@ depends: [
   "deb-ibus-keyman" {>= "16.0.138-4"}
   "deb-libglib2-0-bin"
   "deb-python3-keyman-config" {= "16.0.138-4"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "keyman_16.0.138-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/keyman/keyman_16.0.138-4_all.deb"

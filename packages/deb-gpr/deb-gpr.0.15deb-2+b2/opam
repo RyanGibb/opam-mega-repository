@@ -12,8 +12,8 @@ depends: [
   "deb-libpopt0" {>= "1.14"}
   "deb-libppd0" {>= "2-0.10"}
   "deb-ppdfilt"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-lprng" | "deb- cups-bsd" | "deb- lpr-ppd" | "deb- lpr")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-lprng" | "deb-cups-bsd" | "deb-lpr-ppd" | "deb-lpr")
 ]
 extra-source "gpr_0.15deb-2+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gpr/gpr_0.15deb-2+b2_amd64.deb"

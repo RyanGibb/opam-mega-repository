@@ -25,7 +25,7 @@ depends: [
   "deb-libxcb-xfixes0"
   "deb-libxcb1" {>= "1.6"}
   "deb-libxi6" {>= "2-1.2.99.4"}
-  ("deb-libqt5gui5" {>= "5.12.5"} | "deb- libqt5gui5-gles" {>= "5.12.5"})
+  ("deb-libqt5gui5" {>= "5.12.5"} | "deb-libqt5gui5-gles" {>= "5.12.5"})
 ]
 conflicts: [
   "deb-libqt5dxcb-plugin"

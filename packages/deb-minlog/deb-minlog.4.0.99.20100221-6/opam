@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r minlog"]
 ]
 depends: [
-  ("deb-racket" | "deb- guile")
+  ("deb-racket" | "deb-guile")
 ]
 extra-source "minlog_4.0.99.20100221-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/minlog/minlog_4.0.99.20100221-6_all.deb"

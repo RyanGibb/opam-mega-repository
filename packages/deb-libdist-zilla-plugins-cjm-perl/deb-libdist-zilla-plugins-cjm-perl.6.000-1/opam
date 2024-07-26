@@ -12,9 +12,9 @@ depends: [
   "deb-libnamespace-autoclean-perl"
   "deb-libpath-tiny-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.15.7"} | "deb- libcpan-meta-perl" {>= "2.113640"})
-  ("deb-perl" {>= "5.15.8"} | "deb- libmodule-metadata-perl")
-  ("deb-perl" {>= "5.17.1"} | "deb- libcpan-meta-requirements-perl")
+  ("deb-perl" {>= "5.15.7"} | "deb-libcpan-meta-perl" {>= "2.113640"})
+  ("deb-perl" {>= "5.15.8"} | "deb-libmodule-metadata-perl")
+  ("deb-perl" {>= "5.17.1"} | "deb-libcpan-meta-requirements-perl")
 ]
 extra-source "libdist-zilla-plugins-cjm-perl_6.000-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libd/libdist-zilla-plugins-cjm-perl/libdist-zilla-plugins-cjm-perl_6.000-1_all.deb"

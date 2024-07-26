@@ -11,7 +11,7 @@ depends: [
   "deb-libglib2-0-0" {>= "2.44"}
   "deb-libgtk-3-0" {>= "3.21.5"}
   "deb-xdg-desktop-portal" {>= "1.1.1"}
-  ("deb-dbus-user-session" | "deb- dbus-x11")
+  ("deb-dbus-user-session" | "deb-dbus-x11")
 ]
 extra-source "xdg-desktop-portal-gtk_1.2.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xdg-desktop-portal-gtk/xdg-desktop-portal-gtk_1.2.0-1_amd64.deb"

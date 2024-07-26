@@ -9,7 +9,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-attr" {>= "22.1.0"}
   "deb-python3-fonttools" {>= "4.29.1"}
-  ("deb-python3-typing-extensions" | "deb- python3" {> "3.8"})
+  ("deb-python3-typing-extensions" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-ufolib2_0.14.0+dfsg1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/ufolib2/python3-ufolib2_0.14.0+dfsg1-1_all.deb"

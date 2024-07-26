@@ -64,7 +64,7 @@ depends: [
   "deb-xdg-desktop-portal-gnome" {>= "41~"}
   "deb-yelp" {>= "3.38"}
   "deb-zenity" {>= "3.32"}
-  ("deb-gnome-terminal" {>= "3.44"} | "deb- gnome-console" {>= "42~beta"})
+  ("deb-gnome-terminal" {>= "3.44"} | "deb-gnome-console" {>= "42~beta"})
 ]
 extra-source "gnome-core_1:43+1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/meta-gnome3/gnome-core_43+1_amd64.deb"

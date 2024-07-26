@@ -13,7 +13,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-gi"
   "deb-python3-icalendar"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "confy_0.6.3-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/confy/confy_0.6.3-2_all.deb"

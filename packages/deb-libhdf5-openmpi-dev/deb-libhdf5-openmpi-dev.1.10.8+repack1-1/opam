@@ -17,7 +17,7 @@ depends: [
   "deb-libopenmpi-dev"
   "deb-libssl-dev"
   "deb-zlib1g-dev"
-  ("deb-libcurl4-openssl-dev" | "deb- libcurl-dev")
+  ("deb-libcurl4-openssl-dev" | "deb-libcurl-dev")
 ]
 extra-source "libhdf5-openmpi-dev_1.10.8+repack1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/hdf5/libhdf5-openmpi-dev_1.10.8+repack1-1_amd64.deb"

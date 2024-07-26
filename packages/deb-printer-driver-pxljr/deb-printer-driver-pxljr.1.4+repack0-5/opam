@@ -11,7 +11,7 @@ depends: [
   "deb-libjpeg62-turbo" {>= "1.3.1"}
   "deb-python3"
   "deb-xz-utils"
-  ("deb-cups-filters" {>= "1.0.42"} | "deb- foomatic-filters" {>= "4.0.0~bzr156"})
+  ("deb-cups-filters" {>= "1.0.42"} | "deb-foomatic-filters" {>= "4.0.0~bzr156"})
 ]
 extra-source "printer-driver-pxljr_1.4+repack0-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pxljr/printer-driver-pxljr_1.4+repack0-5_amd64.deb"

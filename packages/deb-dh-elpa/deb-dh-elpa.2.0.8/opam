@@ -13,8 +13,8 @@ depends: [
   "deb-libfile-find-rule-perl"
   "deb-libtext-glob-perl"
   "deb-perl-any"
-  ("deb-emacs-nox" {>= "47"} | "deb- emacs" {>= "47.0"})
-  ("deb-libdebian-source-perl" | "deb- dh-make-perl" {>= "0.90"})
+  ("deb-emacs-nox" {>= "47"} | "deb-emacs" {>= "47.0"})
+  ("deb-libdebian-source-perl" | "deb-dh-make-perl" {>= "0.90"})
 ]
 extra-source "dh-elpa_2.0.8_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dh-elpa/dh-elpa_2.0.8_all.deb"

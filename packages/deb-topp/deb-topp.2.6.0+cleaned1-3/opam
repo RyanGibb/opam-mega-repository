@@ -16,7 +16,7 @@ depends: [
   "deb-libstdc++6" {>= "9"}
   "deb-libxerces-c3-2"
   "deb-openms-common" {= "2.6.0+cleaned1-3"}
-  ("deb-libqt5gui5" {>= "5.11.3"} | "deb- libqt5gui5-gles" {>= "5.11.3"})
+  ("deb-libqt5gui5" {>= "5.11.3"} | "deb-libqt5gui5-gles" {>= "5.11.3"})
 ]
 extra-source "topp_2.6.0+cleaned1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/openms/topp_2.6.0+cleaned1-3_amd64.deb"

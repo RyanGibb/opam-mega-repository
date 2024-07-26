@@ -9,7 +9,7 @@ depends: [
   "deb-libexport-attrs-perl"
   "deb-libtest-mockmodule-perl"
   "deb-perl-any"
-  ("deb-perl" | "deb- libscalar-list-utils-perl")
+  ("deb-perl" | "deb-libscalar-list-utils-perl")
 ]
 extra-source "libtest-mock-time-perl_0.1.7-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libt/libtest-mock-time-perl/libtest-mock-time-perl_0.1.7-4_all.deb"

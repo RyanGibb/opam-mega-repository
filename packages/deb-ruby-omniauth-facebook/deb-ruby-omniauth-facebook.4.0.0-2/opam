@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-omniauth-oauth2" {>= "1.2~"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-omniauth-facebook_4.0.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-omniauth-facebook/ruby-omniauth-facebook_4.0.0-2_all.deb"

@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-libcdio18" {= "2.0.0-2"}
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
-  ("deb-libc6-dev" | "deb- libc-dev")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
+  ("deb-libc6-dev" | "deb-libc-dev")
 ]
 extra-source "libcdio-dev_2.0.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libc/libcdio/libcdio-dev_2.0.0-2_amd64.deb"

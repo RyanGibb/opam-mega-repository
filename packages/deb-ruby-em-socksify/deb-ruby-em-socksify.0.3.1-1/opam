@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-eventmachine" {>= "1.0.3-4~"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-em-socksify_0.3.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-em-socksify/ruby-em-socksify_0.3.1-1_all.deb"

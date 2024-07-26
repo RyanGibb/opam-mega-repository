@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-emacs"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "lyskom-elisp-client_0.48+git.20200923.ec349ff4-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lyskom-elisp-client/lyskom-elisp-client_0.48+git.20200923.ec349ff4-3_all.deb"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-open4"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-open4_1.3.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-open4/ruby-open4_1.3.4-1_all.deb"

@@ -22,7 +22,7 @@ depends: [
   "deb-python3-oauthlib"
   "deb-python3-wimsapi"
   "deb-sqlite3"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "wims-lti_0.4.4-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/wims-lti/wims-lti_0.4.4-4_all.deb"

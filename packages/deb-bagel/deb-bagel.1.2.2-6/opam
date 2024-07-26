@@ -12,8 +12,8 @@ depends: [
   "deb-libmpich12" {>= "4.0.2-3+b1"}
   "deb-libstdc++6" {>= "11"}
   "deb-libxc9" {>= "5.0.0"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "bagel_1.2.2-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/bagel/bagel_1.2.2-6_amd64.deb"

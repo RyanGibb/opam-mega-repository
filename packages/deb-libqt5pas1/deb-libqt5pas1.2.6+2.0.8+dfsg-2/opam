@@ -14,7 +14,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.14.1"}
   "deb-libqt5x11extras5" {>= "5.6.0"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "libqt5pas1_2.6+2.0.8+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libq/libqtpas/libqt5pas1_2.6+2.0.8+dfsg-2_amd64.deb"

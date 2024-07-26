@@ -14,7 +14,7 @@ depends: [
   "deb-libqt5xml5" {>= "5.0.2"}
   "deb-libsndfile1" {>= "1.0.20"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "drumkv1-lv2_0.9.20-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/drumkv1/drumkv1-lv2_0.9.20-1_amd64.deb"

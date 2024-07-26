@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libiksemel3" {= "1.4-3+b1"}
-  ("deb-libc6-dev" | "deb- libc-dev")
+  ("deb-libc6-dev" | "deb-libc-dev")
 ]
 extra-source "libiksemel-dev_1.4-3+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libi/libiksemel/libiksemel-dev_1.4-3+b1_amd64.deb"

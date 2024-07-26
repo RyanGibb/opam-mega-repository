@@ -18,7 +18,7 @@ depends: [
   "deb-r-bioc-savr"
   "deb-r-cran-ggplot2"
   "deb-r-cran-quantreg"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 conflicts: [
   "deb-qc-pipeline"

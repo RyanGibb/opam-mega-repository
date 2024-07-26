@@ -25,7 +25,7 @@ depends: [
   "deb-libsignon-qt5-1" {>= "8.57+20150423"}
   "deb-libstdc++6" {>= "5"}
   "deb-signon-ui-service"
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
 ]
 extra-source "signon-ui-x11_0.17+15.10.20150810-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/signon-ui/signon-ui-x11_0.17+15.10.20150810-2+b1_amd64.deb"

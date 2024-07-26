@@ -26,8 +26,8 @@ depends: [
   "deb-libwinpr2-2" {>= "2.3.0"}
   "deb-libxkbcommon0" {>= "1.0.0"}
   "deb-pipewire" {>= "0.3.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-pipewire-media-session" | "deb- wireplumber")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-pipewire-media-session" | "deb-wireplumber")
 ]
 extra-source "gnome-remote-desktop_43.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-remote-desktop/gnome-remote-desktop_43.3-1_amd64.deb"

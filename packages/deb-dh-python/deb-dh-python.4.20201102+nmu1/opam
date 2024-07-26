@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-python3-any"
-  ("deb-python3-distutils" | "deb- python3" {< "3.6.5~rc1-1"})
+  ("deb-python3-distutils" | "deb-python3" {< "3.6.5~rc1-1"})
 ]
 extra-source "dh-python_4.20201102+nmu1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dh-python/dh-python_4.20201102+nmu1_all.deb"

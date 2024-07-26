@@ -23,7 +23,7 @@ depends: [
   "deb-libpq5"
   "deb-libsasl2-2" {>= "2.1.27+dfsg"}
   "deb-libsqlite3-0" {>= "3.5.9"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 conflicts: [
   "deb-mail-transport-agent"

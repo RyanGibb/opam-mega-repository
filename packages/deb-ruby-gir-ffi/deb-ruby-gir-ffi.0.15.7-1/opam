@@ -11,7 +11,7 @@ depends: [
   "deb-ruby-ffi"
   "deb-ruby-ffi-bit-masks"
   "deb-ruby-indentation"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-gir-ffi_0.15.7-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-gir-ffi/ruby-gir-ffi_0.15.7-1_all.deb"

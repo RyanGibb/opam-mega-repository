@@ -33,7 +33,7 @@ depends: [
   "deb-libqt5xml5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-libtag1v5" {>= "1.9.1-2.2~"}
-  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb-libqt5gui5-gles" {>= "5.7.0"})
 ]
 extra-source "krename_5.0.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/krename/krename_5.0.2-1_amd64.deb"

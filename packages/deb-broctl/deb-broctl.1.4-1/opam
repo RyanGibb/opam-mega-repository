@@ -11,7 +11,7 @@ depends: [
   "deb-python"
   "deb-python-any" {>= "2.7.5-5~"}
   "deb-trace-summary"
-  ("deb-exim4" | "deb- mail-transport-agent")
+  ("deb-exim4" | "deb-mail-transport-agent")
 ]
 extra-source "broctl_1.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/broctl/broctl_1.4-1_all.deb"

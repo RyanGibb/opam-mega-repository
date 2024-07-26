@@ -12,8 +12,8 @@ depends: [
   "deb-make"
   "deb-net-tools"
   "deb-procps"
-  ("deb-bsd-mailx" | "deb- heirloom-mailx")
-  ("deb-default-mta" | "deb- mail-transport-agent")
+  ("deb-bsd-mailx" | "deb-heirloom-mailx")
+  ("deb-default-mta" | "deb-mail-transport-agent")
 ]
 extra-source "systraq_20201231-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/systraq/systraq_20201231-1_all.deb"

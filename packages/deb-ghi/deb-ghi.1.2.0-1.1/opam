@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-git"
   "deb-ruby-pygments-rb"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ghi_1.2.0-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-ghi/ghi_1.2.0-1.1_all.deb"

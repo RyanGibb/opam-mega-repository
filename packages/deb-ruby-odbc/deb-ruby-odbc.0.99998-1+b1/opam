@@ -11,7 +11,7 @@ depends: [
   "deb-libruby2-5" {>= "2.5.0~preview1"}
   "deb-ruby" {< "1-2.6~"}
   "deb-ruby" {>= "1-2.5~0"}
-  ("deb-unixodbc" | "deb- libiodbc2")
+  ("deb-unixodbc" | "deb-libiodbc2")
 ]
 extra-source "ruby-odbc_0.99998-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-odbc/ruby-odbc_0.99998-1+b1_amd64.deb"

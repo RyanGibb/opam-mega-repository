@@ -15,7 +15,7 @@ depends: [
   "deb-libx11-6"
   "deb-lsb-base"
   "deb-udev"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "lcdproc_0.5.9-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lcdproc/lcdproc_0.5.9-3_amd64.deb"

@@ -26,7 +26,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libzstd1" {>= "1.3.3"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libqt5gui5" {>= "5.8.0"} | "deb- libqt5gui5-gles" {>= "5.8.0"})
+  ("deb-libqt5gui5" {>= "5.8.0"} | "deb-libqt5gui5-gles" {>= "5.8.0"})
 ]
 extra-source "libpappsomspp0_0.8.15-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libp/libpappsomspp/libpappsomspp0_0.8.15-1+b1_amd64.deb"

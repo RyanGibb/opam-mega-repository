@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-anthy"
-  ("deb-emacs24" | "deb- emacsen")
+  ("deb-emacs24" | "deb-emacsen")
 ]
 conflicts: [
   "deb-xemacs21-nomule"

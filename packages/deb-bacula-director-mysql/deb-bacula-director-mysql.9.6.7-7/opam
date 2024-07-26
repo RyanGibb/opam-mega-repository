@@ -8,9 +8,9 @@ remove: [
 depends: [
   "deb-bacula-common-mysql" {< "9.6.7-7.1~"}
   "deb-bacula-common-mysql" {>= "9.6.7-7"}
-  ("deb-dbconfig-mysql" | "deb- dbconfig-no-thanks")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-default-mysql-client" | "deb- virtual-mysql-client")
+  ("deb-dbconfig-mysql" | "deb-dbconfig-no-thanks")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-default-mysql-client" | "deb-virtual-mysql-client")
 ]
 conflicts: [
   "deb-bacula-director-database"

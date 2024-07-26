@@ -9,7 +9,7 @@ depends: [
   "deb-libinline-java-perl"
   "deb-libxml-libxml-perl"
   "deb-perl"
-  ("deb-libsaxonhe-java" | "deb- libsaxonb-java")
+  ("deb-libsaxonhe-java" | "deb-libsaxonb-java")
 ]
 extra-source "libxml-saxon-xslt2-perl_0.010-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libx/libxml-saxon-xslt2-perl/libxml-saxon-xslt2-perl_0.010-3_all.deb"

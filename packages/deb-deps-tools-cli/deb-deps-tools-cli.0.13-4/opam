@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libdeps-perl"
   "deb-perl-any"
-  ("deb-libdeps-renderer-dot-perl" | "deb- libdeps-renderer")
+  ("deb-libdeps-renderer-dot-perl" | "deb-libdeps-renderer")
 ]
 conflicts: [
   "deb-graph-includes" {< "0.12"}

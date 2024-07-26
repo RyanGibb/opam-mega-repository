@@ -8,8 +8,8 @@ remove: [
 depends: [
   "deb-debconf" {>= "0.5"}
   "deb-ttf-bitstream-vera"
-  ("deb-apache" | "deb- apache-ssl" | "deb- apache-perl" | "deb- apache2" | "deb- httpd-cgi")
-  ("deb-php" | "deb- php-cgi" | "deb- libapache2-mod-php")
+  ("deb-apache" | "deb-apache-ssl" | "deb-apache-perl" | "deb-apache2" | "deb-httpd-cgi")
+  ("deb-php" | "deb-php-cgi" | "deb-libapache2-mod-php")
 ]
 extra-source "loganalyzer_4.1.5+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/loganalyzer/loganalyzer_4.1.5+dfsg-2_all.deb"

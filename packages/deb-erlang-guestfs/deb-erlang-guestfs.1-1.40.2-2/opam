@@ -10,7 +10,7 @@ depends: [
   "deb-libguestfs0" {>= "1-1.39.8"}
   "deb-libvirt0" {>= "0.0.3"}
   "deb-libxml2" {>= "2.6.27"}
-  ("deb-erlang-base" {>= "1-21.2.6+dfsg"} | "deb- erlang-base-hipe" {>= "1-21.2.6+dfsg"})
+  ("deb-erlang-base" {>= "1-21.2.6+dfsg"} | "deb-erlang-base-hipe" {>= "1-21.2.6+dfsg"})
   ("deb-erlang-base" | "deb-erlang-base-hipe")
 ]
 conflicts: [

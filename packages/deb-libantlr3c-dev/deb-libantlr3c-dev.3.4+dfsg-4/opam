@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r libantlr3c-dev"]
 ]
 depends: [
-  ("deb-libantlr3c-3-4-0" {= "3.4+dfsg-4"} | "deb- libantlr3c-antlrdbg-3-4-0" {= "3.4+dfsg-4"})
+  ("deb-libantlr3c-3-4-0" {= "3.4+dfsg-4"} | "deb-libantlr3c-antlrdbg-3-4-0" {= "3.4+dfsg-4"})
 ]
 extra-source "libantlr3c-dev_3.4+dfsg-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/liba/libantlr3c/libantlr3c-dev_3.4+dfsg-4_amd64.deb"

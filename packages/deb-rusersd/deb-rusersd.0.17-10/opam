@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.4"}
-  ("deb-openbsd-inetd" | "deb- inet-superserver")
-  ("deb-rpcbind" | "deb- portmap")
+  ("deb-openbsd-inetd" | "deb-inet-superserver")
+  ("deb-rpcbind" | "deb-portmap")
 ]
 extra-source "rusersd_0.17-10_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/netkit-rusers/rusersd_0.17-10_amd64.deb"

@@ -9,7 +9,7 @@ depends: [
   "deb-python" {< "2.8"}
   "deb-python" {>= "2.6.6-7~"}
   "deb-python-tk" {>= "2.4.3"}
-  ("deb-python2-6" | "deb- python2-7")
+  ("deb-python2-6" | "deb-python2-7")
 ]
 extra-source "python-pmw_1.3.2-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-pmw/python-pmw_1.3.2-6_all.deb"

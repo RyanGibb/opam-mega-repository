@@ -10,7 +10,7 @@ depends: [
   "deb-libfcgi0ldbl"
   "deb-libsystemd0"
   "deb-lsb-base" {>= "3.0-6"}
-  ("deb-spawn-fcgi" {>= "1.6.1"} | "deb- systemd")
+  ("deb-spawn-fcgi" {>= "1.6.1"} | "deb-systemd")
 ]
 extra-source "fcgiwrap_1.1.0-12_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fcgiwrap/fcgiwrap_1.1.0-12_amd64.deb"

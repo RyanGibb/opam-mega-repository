@@ -30,7 +30,7 @@ depends: [
   "deb-libwebsockets17" {>= "2.4.1"}
   "deb-libxmlrpc-core-c3"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-sysvinit-utils" {>= "3.05-4~"} | "deb- lsb-base" {>= "3.0-6"})
+  ("deb-sysvinit-utils" {>= "3.05-4~"} | "deb-lsb-base" {>= "3.0-6"})
 ]
 conflicts: [
   "deb-ngcp-rtpengine-daemon"

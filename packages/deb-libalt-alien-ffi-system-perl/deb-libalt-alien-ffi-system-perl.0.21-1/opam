@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libffi-dev"
   "deb-perl"
-  ("deb-pkg-config" | "deb- libpkgconfig-perl")
+  ("deb-pkg-config" | "deb-libpkgconfig-perl")
 ]
 conflicts: [
   "deb-libalien-ffi-perl"

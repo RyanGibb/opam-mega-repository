@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-liburi-perl"
   "deb-perl"
-  ("deb-libcgi-pm-perl" | "deb- perl" {< "5.19"})
+  ("deb-libcgi-pm-perl" | "deb-perl" {< "5.19"})
 ]
 extra-source "liburi-find-perl_20160806-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libu/liburi-find-perl/liburi-find-perl_20160806-2_all.deb"

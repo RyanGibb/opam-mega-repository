@@ -14,8 +14,8 @@ depends: [
   "deb-libuno-sal3" {>= "1-7.3.0~beta1"}
   "deb-libuno-salhelpergcc3-3" {>= "1.4.0"}
   "deb-uno-libs-private"
-  ("deb-libreoffice-base-nogui" | "deb- libreoffice-base")
-  ("deb-libreoffice-core-nogui" | "deb- libreoffice-core")
+  ("deb-libreoffice-base-nogui" | "deb-libreoffice-base")
+  ("deb-libreoffice-core-nogui" | "deb-libreoffice-core")
 ]
 conflicts: [
   "deb-libreoffice-report-builder-bin"

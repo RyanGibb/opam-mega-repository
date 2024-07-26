@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r minetest-mod-basic-materials"]
 ]
 depends: [
-  ("deb-minetest" | "deb- minetest-server")
+  ("deb-minetest" | "deb-minetest-server")
 ]
 extra-source "minetest-mod-basic-materials_20210130-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/minetest-mod-basic-materials/minetest-mod-basic-materials_20210130-2_all.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl"
-  ("deb-perl" {>= "5.15.0"} | "deb- libsys-syslog-perl")
+  ("deb-perl" {>= "5.15.0"} | "deb-libsys-syslog-perl")
 ]
 extra-source "liblog-fast-perl_2.0.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libl/liblog-fast-perl/liblog-fast-perl_2.0.1-1_all.deb"

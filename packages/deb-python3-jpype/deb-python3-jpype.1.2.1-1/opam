@@ -14,7 +14,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-numpy"
   "deb-python3-numpy" {>= "1-1.16.0~rc1"}
-  ("deb-default-jre" | "deb- java6-runtime-headless")
+  ("deb-default-jre" | "deb-java6-runtime-headless")
 ]
 extra-source "python3-jpype_1.2.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-jpype/python3-jpype_1.2.1-1_amd64.deb"

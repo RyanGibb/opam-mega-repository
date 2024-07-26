@@ -16,7 +16,7 @@ depends: [
   "deb-libx11-6"
   "deb-libxext6"
   "deb-libxv1"
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "gpac-modules-base_1.0.1+dfsg1-4+deb11u3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gpac/gpac-modules-base_1.0.1+dfsg1-4+deb11u3_amd64.deb"

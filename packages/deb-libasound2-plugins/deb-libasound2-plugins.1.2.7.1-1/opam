@@ -14,7 +14,7 @@ depends: [
   "deb-libsamplerate0" {>= "0.1.7"}
   "deb-libspeexdsp1" {>= "1.2.0"}
   "deb-libswresample4" {>= "7-5.0"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "libasound2-plugins_1.2.7.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/alsa-plugins/libasound2-plugins_1.2.7.1-1_amd64.deb"

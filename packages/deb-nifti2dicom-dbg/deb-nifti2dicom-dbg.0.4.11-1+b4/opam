@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r nifti2dicom-dbg"]
 ]
 depends: [
-  ("deb-nifti2dicom" {= "0.4.11-1+b4"} | "deb- qnifti2dicom" {= "0.4.11-1+b4"})
+  ("deb-nifti2dicom" {= "0.4.11-1+b4"} | "deb-qnifti2dicom" {= "0.4.11-1+b4"})
 ]
 extra-source "nifti2dicom-dbg_0.4.11-1+b4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/nifti2dicom/nifti2dicom-dbg_0.4.11-1+b4_amd64.deb"

@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.14"}
   "deb-tcl8-6"
   "deb-tcl8-6-tdbc" {>= "1.0.5"}
-  ("deb-libmariadb3" | "deb- libmariadbclient18" | "deb- libmysqlclient18" | "deb- libmysqlclient20")
+  ("deb-libmariadb3" | "deb-libmariadbclient18" | "deb-libmysqlclient18" | "deb-libmysqlclient20")
 ]
 extra-source "tcl8.6-tdbc-mysql_1.1.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tdbcmysql/tcl8.6-tdbc-mysql_1.1.0-2_amd64.deb"

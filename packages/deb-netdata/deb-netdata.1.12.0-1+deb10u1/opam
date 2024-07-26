@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-netdata-plugins-bash"
   "deb-netdata-web"
-  ("deb-netdata-core" | "deb- netdata-core-no-sse")
+  ("deb-netdata-core" | "deb-netdata-core-no-sse")
 ]
 extra-source "netdata_1.12.0-1+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/netdata/netdata_1.12.0-1+deb10u1_all.deb"

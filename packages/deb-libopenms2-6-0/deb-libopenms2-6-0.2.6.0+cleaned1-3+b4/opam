@@ -30,7 +30,7 @@ depends: [
   "deb-libxerces-c3-2"
   "deb-openms-common" {= "2.6.0+cleaned1-3"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 conflicts: [
   "deb-libopenms2-5-0"

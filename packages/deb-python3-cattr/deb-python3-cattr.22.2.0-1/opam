@@ -8,8 +8,8 @@ remove: [
 depends: [
   "deb-python3-any"
   "deb-python3-attr"
-  ("deb-python3-exceptiongroup" | "deb- python3" {> "3.11"})
-  ("deb-python3-typing-extensions" | "deb- python3" {> "3.8"})
+  ("deb-python3-exceptiongroup" | "deb-python3" {> "3.11"})
+  ("deb-python3-typing-extensions" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-cattr_22.2.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-cattrs/python3-cattr_22.2.0-1_all.deb"

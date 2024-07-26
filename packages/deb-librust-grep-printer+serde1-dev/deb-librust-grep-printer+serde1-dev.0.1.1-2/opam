@@ -10,7 +10,7 @@ depends: [
   "deb-librust-serde-derive-dev"
   "deb-librust-serde-dev"
   "deb-librust-serde-json-dev"
-  ("deb-librust-base64-0-10+default-dev" | "deb- librust-base64-0-9+default-dev" {>= "0.9.2-~~"})
+  ("deb-librust-base64-0-10+default-dev" | "deb-librust-base64-0-9+default-dev" {>= "0.9.2-~~"})
 ]
 extra-source "librust-grep-printer+serde1-dev_0.1.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-grep-printer/librust-grep-printer+serde1-dev_0.1.1-2_amd64.deb"

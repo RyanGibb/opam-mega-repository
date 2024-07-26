@@ -11,7 +11,7 @@ depends: [
   "deb-libglew2-1" {>= "1.12.0"}
   "deb-libx11-6"
   "deb-libxext6"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "mesa-utils_8.4.0-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mesa-demos/mesa-utils_8.4.0-1+b1_amd64.deb"

@@ -10,7 +10,7 @@ depends: [
   "deb-libncurses6" {>= "6"}
   "deb-libpfqueue0" {>= "0.5.6"}
   "deb-libtinfo6" {>= "6"}
-  ("deb-postfix" | "deb- exim4-base")
+  ("deb-postfix" | "deb-exim4-base")
 ]
 extra-source "pfqueue_0.5.6-9+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pfqueue/pfqueue_0.5.6-9+b3_amd64.deb"

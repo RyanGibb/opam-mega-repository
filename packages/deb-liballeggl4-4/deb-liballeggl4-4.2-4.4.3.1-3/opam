@@ -13,7 +13,7 @@ depends: [
   "deb-libxcursor1" {> "1.1.2"}
   "deb-libxpm4"
   "deb-libxxf86vm1"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "liballeggl4.4_2:4.4.3.1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/allegro4.4/liballeggl4.4_4.4.3.1-3_amd64.deb"

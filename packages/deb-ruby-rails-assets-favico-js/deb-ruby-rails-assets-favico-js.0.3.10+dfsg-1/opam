@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libjs-favico-js"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-rails-assets-favico.js_0.3.10+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-rails-assets-favico.js/ruby-rails-assets-favico.js_0.3.10+dfsg-1_all.deb"

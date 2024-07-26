@@ -22,7 +22,7 @@ depends: [
   "deb-php-pclzip"
   "deb-php-xml"
   "deb-php-xml-htmlsax3"
-  ("deb-php-mysql" | "deb- php-pgsql" | "deb- php-sqlite3")
+  ("deb-php-mysql" | "deb-php-pgsql" | "deb-php-sqlite3")
 ]
 extra-source "spip_3.2.11-3+deb11u10_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/spip/spip_3.2.11-3+deb11u10_all.deb"

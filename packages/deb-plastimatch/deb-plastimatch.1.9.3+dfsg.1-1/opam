@@ -14,8 +14,8 @@ depends: [
   "deb-libgomp1" {>= "4.9"}
   "deb-libinsighttoolkit4-13" {>= "4.13.3withdata-dfsg1"}
   "deb-libstdc++6" {>= "9"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "plastimatch_1.9.3+dfsg.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/plastimatch/plastimatch_1.9.3+dfsg.1-1_amd64.deb"

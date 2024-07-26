@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libmediainfo0v5"
   "deb-python3-any"
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-pymediainfo_6.0.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pymediainfo/python3-pymediainfo_6.0.1-2_all.deb"

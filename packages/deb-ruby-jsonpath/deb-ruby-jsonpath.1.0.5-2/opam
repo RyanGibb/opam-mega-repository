@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-multi-json"
   "deb-ruby-to-regexp" {>= "0.2.1~"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-jsonpath_1.0.5-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-jsonpath/ruby-jsonpath_1.0.5-2_all.deb"

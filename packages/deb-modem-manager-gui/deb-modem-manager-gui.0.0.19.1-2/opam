@@ -16,8 +16,8 @@ depends: [
   "deb-libgtkspell3-3-0" {>= "3.0.3"}
   "deb-mobile-broadband-provider-info"
   "deb-policykit-1"
-  ("deb-modemmanager" {>= "0.5.2"} | "deb- ofono" {>= "1.9"})
-  ("deb-network-manager" {>= "0.9.4.0"} | "deb- connman" {>= "1.12"} | "deb- ppp" {>= "2.4.5"})
+  ("deb-modemmanager" {>= "0.5.2"} | "deb-ofono" {>= "1.9"})
+  ("deb-network-manager" {>= "0.9.4.0"} | "deb-connman" {>= "1.12"} | "deb-ppp" {>= "2.4.5"})
 ]
 extra-source "modem-manager-gui_0.0.19.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/modem-manager-gui/modem-manager-gui_0.0.19.1-2_amd64.deb"

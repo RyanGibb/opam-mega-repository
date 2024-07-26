@@ -16,7 +16,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libx11-6"
   "deb-libzita-resampler1"
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "gxtuner_3.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gxtuner/gxtuner_3.0-2_amd64.deb"

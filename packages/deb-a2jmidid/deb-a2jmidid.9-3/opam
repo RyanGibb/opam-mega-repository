@@ -11,7 +11,7 @@ depends: [
   "deb-libdbus-1-3" {>= "1.9.14"}
   "deb-python3-any"
   "deb-python3-dbus"
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "a2jmidid_9-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/a2jmidid/a2jmidid_9-3_amd64.deb"

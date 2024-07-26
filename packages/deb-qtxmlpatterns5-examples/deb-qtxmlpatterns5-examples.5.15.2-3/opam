@@ -11,7 +11,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.0.2"}
   "deb-libqt5xmlpatterns5" {>= "5.9.0"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "qtxmlpatterns5-examples_5.15.2-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtxmlpatterns-opensource-src/qtxmlpatterns5-examples_5.15.2-3_amd64.deb"

@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.14"}
   "deb-netpbm"
   "deb-texlive-base"
-  ("deb-imagemagick" | "deb- graphicsmagick-imagemagick-compat")
+  ("deb-imagemagick" | "deb-graphicsmagick-imagemagick-compat")
 ]
 extra-source "latex2rtf_2.3.16-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/latex2rtf/latex2rtf_2.3.16-1_amd64.deb"

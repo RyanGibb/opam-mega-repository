@@ -17,7 +17,7 @@ depends: [
   "deb-libwww-perl"
   "deb-lsb-base"
   "deb-perl-any"
-  ("deb-liblocale-gettext-perl" | "deb- libintl-perl")
+  ("deb-liblocale-gettext-perl" | "deb-libintl-perl")
 ]
 conflicts: [
   "deb-vdradmin"

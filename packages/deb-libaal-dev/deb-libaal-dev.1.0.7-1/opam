@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r libaal-dev"]
 ]
 depends: [
-  ("deb-libc6-dev" | "deb- libc-dev")
+  ("deb-libc6-dev" | "deb-libc-dev")
 ]
 extra-source "libaal-dev_1.0.7-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/liba/libaal/libaal-dev_1.0.7-1_amd64.deb"

@@ -13,7 +13,7 @@ depends: [
   "deb-libxml2" {>= "2.8.0"}
   "deb-rpki-trust-anchors"
   "deb-rsync"
-  ("deb-systemd" | "deb- systemd-standalone-sysusers" | "deb- systemd-sysusers")
+  ("deb-systemd" | "deb-systemd-standalone-sysusers" | "deb-systemd-sysusers")
 ]
 extra-source "fort-validator_1.5.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fort-validator/fort-validator_1.5.4-1_amd64.deb"

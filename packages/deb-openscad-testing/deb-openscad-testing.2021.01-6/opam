@@ -15,7 +15,7 @@ depends: [
   "deb-python3" {>= "3.5~"}
   "deb-unzip"
   "deb-xauth"
-  ("deb-xserver-xorg-core" | "deb- xvfb")
+  ("deb-xserver-xorg-core" | "deb-xvfb")
 ]
 extra-source "openscad-testing_2021.01-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/openscad/openscad-testing_2021.01-6_amd64.deb"

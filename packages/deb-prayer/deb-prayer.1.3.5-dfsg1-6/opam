@@ -18,7 +18,7 @@ depends: [
   "deb-lsb-base" {>= "3.0-6"}
   "deb-ssl-cert" {>= "1.0.11"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-default-mta" | "deb- mail-transport-agent")
+  ("deb-default-mta" | "deb-mail-transport-agent")
 ]
 extra-source "prayer_1.3.5-dfsg1-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/prayer/prayer_1.3.5-dfsg1-6_amd64.deb"

@@ -12,7 +12,7 @@ depends: [
   "deb-libmecab2" {>= "0.996"}
   "deb-libpq5"
   "deb-libsylph1" {>= "1.1.0"}
-  ("deb-unidic-mecab" | "deb- mecab-naist-jdic" | "deb- mecab-ipadic")
+  ("deb-unidic-mecab" | "deb-mecab-naist-jdic" | "deb-mecab-ipadic")
 ]
 extra-source "sylph-searcher_1.2.0-15_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sylph-searcher/sylph-searcher_1.2.0-15_amd64.deb"

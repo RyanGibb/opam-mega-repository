@@ -18,7 +18,7 @@ depends: [
   "deb-libvorbisfile3" {>= "1.1.2"}
   "deb-lugaru-data" {= "1.2-4"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "lugaru_1.2-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lugaru/lugaru_1.2-4_amd64.deb"

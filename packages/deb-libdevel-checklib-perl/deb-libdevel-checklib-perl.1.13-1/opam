@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl"
-  ("deb-gcc" | "deb- c-compiler")
+  ("deb-gcc" | "deb-c-compiler")
 ]
 extra-source "libdevel-checklib-perl_1.13-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libd/libdevel-checklib-perl/libdevel-checklib-perl_1.13-1_all.deb"

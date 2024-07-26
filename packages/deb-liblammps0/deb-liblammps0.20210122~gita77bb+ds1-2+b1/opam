@@ -23,10 +23,10 @@ depends: [
   "deb-libvtk9" {>= "9.0.1+dfsg1"}
   "deb-libzstd1" {>= "1.4.0"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
-  ("deb-ocl-icd-libopencl1" {>= "1.0"} | "deb- libopencl-1-2-1")
-  ("deb-ocl-icd-libopencl1" | "deb- libopencl1")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
+  ("deb-ocl-icd-libopencl1" {>= "1.0"} | "deb-libopencl-1-2-1")
+  ("deb-ocl-icd-libopencl1" | "deb-libopencl1")
 ]
 extra-source "liblammps0_20210122~gita77bb+ds1-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lammps/liblammps0_20210122~gita77bb+ds1-2+b1_amd64.deb"

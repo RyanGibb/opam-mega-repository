@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r yapra"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "yapra_0.1.2-7.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/y/yapra/yapra_0.1.2-7.1_all.deb"

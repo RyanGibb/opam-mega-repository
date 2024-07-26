@@ -25,8 +25,8 @@ depends: [
   "deb-qml-module-qtsensors"
   "deb-qml-module-qzxing"
   "deb-qml-module-usermetrics"
-  ("deb-libqt5gui5" {>= "5.2.0"} | "deb- libqt5gui5-gles" {>= "5.2.0"})
-  ("deb-qml-module-qtmultimedia" | "deb- qml-module-qtmultimedia-gles")
+  ("deb-libqt5gui5" {>= "5.2.0"} | "deb-libqt5gui5-gles" {>= "5.2.0"})
+  ("deb-qml-module-qtmultimedia" | "deb-qml-module-qtmultimedia-gles")
 ]
 extra-source "lomiri-camera-app_4.0.2+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lomiri-camera-app/lomiri-camera-app_4.0.2+dfsg-1_amd64.deb"

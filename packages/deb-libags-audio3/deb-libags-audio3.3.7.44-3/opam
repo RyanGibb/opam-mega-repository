@@ -22,7 +22,7 @@ depends: [
   "deb-libsndfile1" {>= "1.0.20"}
   "deb-libsoup2-4-1" {>= "2.49.91.1"}
   "deb-libxml2" {>= "2.9.1"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "libags-audio3_3.7.44-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gsequencer/libags-audio3_3.7.44-3_amd64.deb"

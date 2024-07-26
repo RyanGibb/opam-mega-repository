@@ -20,7 +20,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.14.1"}
   "deb-libqwt-qt5-6" {>= "6.1.2"}
   "deb-libstdc++6" {>= "11"}
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "libotbmonteverdigui-8.1-1_8.1.1+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/otb/libotbmonteverdigui-8.1-1_8.1.1+dfsg-1_amd64.deb"

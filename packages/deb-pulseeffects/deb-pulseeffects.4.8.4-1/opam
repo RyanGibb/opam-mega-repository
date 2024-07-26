@@ -28,7 +28,7 @@ depends: [
   "deb-libsndfile1" {>= "1.0.20"}
   "deb-libstdc++6" {>= "9"}
   "deb-pulseaudio"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "pulseeffects_4.8.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pulseeffects/pulseeffects_4.8.4-1_amd64.deb"

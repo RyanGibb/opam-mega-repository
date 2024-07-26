@@ -14,7 +14,7 @@ depends: [
   "deb-perl-any"
   "deb-tcl"
   "deb-tclx8-4"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "emacspeak_53.0+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/emacspeak/emacspeak_53.0+dfsg-2_all.deb"

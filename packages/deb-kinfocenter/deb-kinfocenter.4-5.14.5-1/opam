@@ -41,7 +41,7 @@ depends: [
   "deb-libx11-6"
   "deb-plasma-workspace" {>= "4-5.14"}
   "deb-usbutils"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "kinfocenter_4:5.14.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kinfocenter/kinfocenter_5.14.5-1_amd64.deb"

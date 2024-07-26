@@ -18,7 +18,7 @@ depends: [
   "deb-libstdc++6" {>= "9"}
   "deb-libuv1" {>= "1.11.0"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb-libqt5gui5-gles" {>= "5.11.0~rc1"})
 ]
 extra-source "cmake-qt-gui_3.18.4-2+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cmake/cmake-qt-gui_3.18.4-2+deb11u1_amd64.deb"

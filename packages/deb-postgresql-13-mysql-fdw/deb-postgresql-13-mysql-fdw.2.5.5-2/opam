@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.14"}
   "deb-postgresql-13"
-  ("deb-default-libmysqlclient-dev" | "deb- libmysqlclient-dev")
+  ("deb-default-libmysqlclient-dev" | "deb-libmysqlclient-dev")
 ]
 extra-source "postgresql-13-mysql-fdw_2.5.5-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/postgresql-mysql-fdw/postgresql-13-mysql-fdw_2.5.5-2_amd64.deb"

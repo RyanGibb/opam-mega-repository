@@ -23,7 +23,7 @@ depends: [
   "deb-libsqlite3-0" {>= "3.5.9"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-wsjtx-data"
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "js8call_2.2.0+ds-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/js8call/js8call_2.2.0+ds-5_amd64.deb"

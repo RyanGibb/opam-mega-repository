@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-fonts-isabella"
   "deb-ruby-sdl"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "magicmaze_1.4.3.6+dfsg-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/magicmaze/magicmaze_1.4.3.6+dfsg-3_all.deb"

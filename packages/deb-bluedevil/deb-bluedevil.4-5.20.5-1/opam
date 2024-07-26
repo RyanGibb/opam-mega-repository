@@ -33,7 +33,7 @@ depends: [
   "deb-qml-module-org-kde-kquickcontrolsaddons" {>= "5.74.0~"}
   "deb-qml-module-qtquick-layouts" {>= "5.15.0~"}
   "deb-qml-module-qtquick2" {>= "5.15.0~"}
-  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb- libqt5gui5-gles" {>= "5.15.0~"})
+  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb-libqt5gui5-gles" {>= "5.15.0~"})
 ]
 extra-source "bluedevil_4:5.20.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/bluedevil/bluedevil_5.20.5-1_amd64.deb"

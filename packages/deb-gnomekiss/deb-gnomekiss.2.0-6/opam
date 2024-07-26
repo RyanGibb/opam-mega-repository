@@ -13,7 +13,7 @@ depends: [
   "deb-libgdk-pixbuf2-0-0" {>= "2.22.0"}
   "deb-libglib2-0-0" {>= "2.35.9"}
   "deb-libgtk-3-0" {>= "3.21.4"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnomekiss_2.0-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnomekiss/gnomekiss_2.0-6_amd64.deb"

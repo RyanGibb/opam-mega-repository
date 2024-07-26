@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r docker-clean"]
 ]
 depends: [
-  ("deb-docker-io" | "deb- docker-ce")
+  ("deb-docker-io" | "deb-docker-ce")
 ]
 extra-source "docker-clean_2.0.4-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/docker-clean/docker-clean_2.0.4-5_all.deb"

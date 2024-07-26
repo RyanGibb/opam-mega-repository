@@ -14,7 +14,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "5"}
   "deb-samplv1-common" {= "0.8.6-1"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "samplv1_0.8.6-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/samplv1/samplv1_0.8.6-1_amd64.deb"

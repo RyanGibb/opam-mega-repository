@@ -35,7 +35,7 @@ depends: [
   "deb-libslf4j-java"
   "deb-libvamsas-client-java"
   "deb-varna"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "jalview_2.11.1.3+dfsg2-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jalview/jalview_2.11.1.3+dfsg2-5_all.deb"

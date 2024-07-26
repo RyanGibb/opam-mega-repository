@@ -8,8 +8,8 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.2.5"}
   "deb-libx11-6"
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "libpugl-0-0_0~svn32+dfsg0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pugl/libpugl-0-0_0~svn32+dfsg0-2_amd64.deb"

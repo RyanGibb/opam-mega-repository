@@ -26,7 +26,7 @@ depends: [
   "deb-python3-requests"
   "deb-python3-vobject"
   "deb-python3-xdg"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "qreator_16.06.1-7.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qreator/qreator_16.06.1-7.1_all.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-librust-libc-0-2+default-dev"
   "deb-librust-log-0-4+default-dev"
-  ("deb-librust-rand-0-5+default-dev" | "deb- librust-rand-0-4+default-dev")
+  ("deb-librust-rand-0-5+default-dev" | "deb-librust-rand-0-4+default-dev")
 ]
 extra-source "librust-jobserver-dev_0.1.11-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-jobserver/librust-jobserver-dev_0.1.11-1_amd64.deb"

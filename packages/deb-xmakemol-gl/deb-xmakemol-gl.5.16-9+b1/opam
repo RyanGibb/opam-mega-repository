@@ -12,8 +12,8 @@ depends: [
   "deb-libxm4" {>= "2.3.4"}
   "deb-libxpm4"
   "deb-libxt6"
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 conflicts: [
   "deb-xmakemol"

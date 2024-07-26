@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.29"}
   "deb-libgcc-s1" {>= "3.0"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-puredata" | "deb- pd")
+  ("deb-puredata" | "deb-pd")
 ]
 extra-source "pd-creb_0.9.2+darcs20151027-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pd-creb/pd-creb_0.9.2+darcs20151027-4_amd64.deb"

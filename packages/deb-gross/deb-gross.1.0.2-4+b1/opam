@@ -9,7 +9,7 @@ depends: [
   "deb-adduser"
   "deb-libc-ares2" {>= "1.7.0"}
   "deb-libc6" {>= "2.17"}
-  ("deb-postfix" | "deb- exim4-daemon-light" | "deb- exim4-daemon-heavy" | "deb- sendmail")
+  ("deb-postfix" | "deb-exim4-daemon-light" | "deb-exim4-daemon-heavy" | "deb-sendmail")
 ]
 extra-source "gross_1.0.2-4+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gross/gross_1.0.2-4+b1_amd64.deb"

@@ -18,7 +18,7 @@ depends: [
   "deb-libpnglite0" {>= "0.1.17"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-libtinyxml2-6-2v5"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "openctm-tools_1.0.3+dfsg1-2.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/openctm/openctm-tools_1.0.3+dfsg1-2.1_amd64.deb"

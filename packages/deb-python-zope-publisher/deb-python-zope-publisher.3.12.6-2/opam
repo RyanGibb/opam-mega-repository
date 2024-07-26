@@ -20,7 +20,7 @@ depends: [
   "deb-python-zope-location"
   "deb-python-zope-proxy"
   "deb-python-zope-security"
-  ("deb-python2-7" | "deb- python2-6")
+  ("deb-python2-7" | "deb-python2-6")
 ]
 conflicts: [
   "deb-zope3"

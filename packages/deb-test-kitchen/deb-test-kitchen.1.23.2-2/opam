@@ -14,7 +14,7 @@ depends: [
   "deb-ruby-net-ssh-gateway" {>= "1.2.0"}
   "deb-ruby-safe-yaml" {>= "1.0"}
   "deb-ruby-thor" {>= "0.18"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "test-kitchen_1.23.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/test-kitchen/test-kitchen_1.23.2-2_all.deb"

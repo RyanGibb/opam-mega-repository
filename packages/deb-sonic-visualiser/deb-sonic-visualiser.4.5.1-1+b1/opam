@@ -32,7 +32,7 @@ depends: [
   "deb-libsndfile1" {>= "1.0.20"}
   "deb-libsord-0-0" {>= "0.12.0~dfsg0"}
   "deb-libstdc++6" {>= "11"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "sonic-visualiser_4.5.1-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sonic-visualiser/sonic-visualiser_4.5.1-1+b1_amd64.deb"

@@ -18,7 +18,7 @@ depends: [
   "deb-libxmlunit-java"
   "deb-libxpp3-java"
   "deb-libyaml-snake-java"
-  ("deb-default-jre-headless" | "deb- java8-runtime-headless")
+  ("deb-default-jre-headless" | "deb-java8-runtime-headless")
 ]
 extra-source "apktool_2.5.0+dfsg.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/apktool/apktool_2.5.0+dfsg.1-2_all.deb"

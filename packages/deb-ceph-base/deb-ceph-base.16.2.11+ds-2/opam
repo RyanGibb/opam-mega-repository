@@ -29,8 +29,8 @@ depends: [
   "deb-uuid-runtime"
   "deb-xfsprogs"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-cryptsetup-bin" | "deb- cryptsetup")
-  ("deb-hdparm" | "deb- sdparm")
+  ("deb-cryptsetup-bin" | "deb-cryptsetup")
+  ("deb-hdparm" | "deb-sdparm")
 ]
 extra-source "ceph-base_16.2.11+ds-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/ceph/ceph-base_16.2.11+ds-2_amd64.deb"

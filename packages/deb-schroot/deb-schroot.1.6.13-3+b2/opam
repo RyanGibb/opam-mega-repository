@@ -16,7 +16,7 @@ depends: [
   "deb-libuuid1" {>= "2.16"}
   "deb-lsb-base"
   "deb-schroot-common" {= "1.6.13-3"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "schroot_1.6.13-3+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/schroot/schroot_1.6.13-3+b2_amd64.deb"

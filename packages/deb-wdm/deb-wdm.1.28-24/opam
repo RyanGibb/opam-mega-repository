@@ -25,8 +25,8 @@ depends: [
   "deb-x11-common"
   "deb-x11-utils"
   "deb-x11-xserver-utils"
-  ("deb-debconf" {>= "1.5.20"} | "deb- debconf-2-0")
-  ("deb-xserver-xorg" | "deb- xserver")
+  ("deb-debconf" {>= "1.5.20"} | "deb-debconf-2-0")
+  ("deb-xserver-xorg" | "deb-xserver")
 ]
 extra-source "wdm_1.28-24_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/wdm/wdm_1.28-24_amd64.deb"

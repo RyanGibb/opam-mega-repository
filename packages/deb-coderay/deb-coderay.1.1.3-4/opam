@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-coderay"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "coderay_1.1.3-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/coderay/coderay_1.1.3-4_all.deb"

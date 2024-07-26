@@ -23,7 +23,7 @@ depends: [
   "deb-libvorbis0a" {>= "1.1.2"}
   "deb-libxvidcore4" {>= "1.2.2"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "libgpac10_1.0.1+dfsg1-4+deb11u3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gpac/libgpac10_1.0.1+dfsg1-4+deb11u3_amd64.deb"

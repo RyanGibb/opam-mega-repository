@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r cupt-dbg"]
 ]
 depends: [
-  ("deb-libcupt4-2" {= "2.10.3"} | "deb- cupt" {= "2.10.3"} | "deb- libcupt4-2-downloadmethod-curl" {= "2.10.3"} | "deb- libcupt4-2-downloadmethod-wget" {= "2.10.3"})
+  ("deb-libcupt4-2" {= "2.10.3"} | "deb-cupt" {= "2.10.3"} | "deb-libcupt4-2-downloadmethod-curl" {= "2.10.3"} | "deb-libcupt4-2-downloadmethod-wget" {= "2.10.3"})
 ]
 extra-source "cupt-dbg_2.10.3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cupt/cupt-dbg_2.10.3_amd64.deb"

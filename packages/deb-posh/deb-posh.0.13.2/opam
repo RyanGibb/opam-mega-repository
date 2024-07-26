@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.14"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "posh_0.13.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/posh/posh_0.13.2_amd64.deb"

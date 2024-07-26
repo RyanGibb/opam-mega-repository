@@ -26,9 +26,9 @@ depends: [
   "deb-libunix-syslog-perl"
   "deb-pax"
   "deb-perl-any"
-  ("deb-debconf" | "deb- debconf-2-0")
-  ("deb-perl" | "deb- libcompress-raw-zlib-perl")
-  ("deb-systemd" | "deb- systemd-standalone-sysusers" | "deb- systemd-sysusers")
+  ("deb-debconf" | "deb-debconf-2-0")
+  ("deb-perl" | "deb-libcompress-raw-zlib-perl")
+  ("deb-systemd" | "deb-systemd-standalone-sysusers" | "deb-systemd-sysusers")
 ]
 conflicts: [
   "deb-amavis"

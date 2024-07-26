@@ -12,7 +12,7 @@ depends: [
   "deb-python-irc" {>= "3.0"}
   "deb-python-pkg-resources"
   "deb-python-stemmer" {>= "1.2"}
-  ("deb-python" {>= "2.7"} | "deb- python-argparse" {>= "1.1"})
+  ("deb-python" {>= "2.7"} | "deb-python-argparse" {>= "1.1"})
 ]
 extra-source "python-cobe_2.1.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-cobe/python-cobe_2.1.2-1_all.deb"

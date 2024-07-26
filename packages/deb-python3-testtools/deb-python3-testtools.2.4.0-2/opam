@@ -16,7 +16,7 @@ depends: [
   "deb-python3-six" {>= "1.4.0"}
   "deb-python3-traceback2"
   "deb-python3-unittest2"
-  ("deb-python3-distutils" | "deb- libpython3-5-stdlib")
+  ("deb-python3-distutils" | "deb-libpython3-5-stdlib")
 ]
 extra-source "python3-testtools_2.4.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-testtools/python3-testtools_2.4.0-2_all.deb"

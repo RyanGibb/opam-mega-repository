@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-google-cloud-env"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-google-cloud-core_1.2.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-google-cloud-core/ruby-google-cloud-core_1.2.0-2_all.deb"

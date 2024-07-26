@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-ucf" {>= "0.29"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-fonts-dejavu-core" | "deb- ttf-bitstream-vera" | "deb- fonts-liberation" | "deb- fonts-freefont")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-fonts-dejavu-core" | "deb-ttf-bitstream-vera" | "deb-fonts-liberation" | "deb-fonts-freefont")
 ]
 extra-source "fontconfig-config_2.13.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fontconfig/fontconfig-config_2.13.1-2_all.deb"

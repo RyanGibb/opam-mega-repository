@@ -21,7 +21,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-mupen64plus-data"
   "deb-zlib1g" {>= "1-1.2.3.3"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "libmupen64plus2_2.5.9+341+gf82b37bf-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mupen64plus-core/libmupen64plus2_2.5.9+341+gf82b37bf-1_amd64.deb"

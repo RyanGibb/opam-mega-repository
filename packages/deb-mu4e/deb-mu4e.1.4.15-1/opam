@@ -9,7 +9,7 @@ depends: [
   "deb-emacsen-common" {>= "2.0.8"}
   "deb-maildir-utils" {< "1.4.15-1.1~"}
   "deb-maildir-utils" {>= "1.4.15-1"}
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 conflicts: [
   "deb-maildir-utils" {< "0.9.8.4"}

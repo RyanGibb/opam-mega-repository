@@ -10,7 +10,7 @@ depends: [
   "deb-libcgroup1" {>= "0.36.2"}
   "deb-libxml2" {>= "2.7.4"}
   "deb-vzquota"
-  ("deb-iproute2" | "deb- iproute")
+  ("deb-iproute2" | "deb-iproute")
 ]
 extra-source "vzctl_4.9.4-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/vzctl/vzctl_4.9.4-6_amd64.deb"

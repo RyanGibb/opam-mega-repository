@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-python3-any"
-  ("deb-wl-clipboard" | "deb- xclip" | "deb- python3-gi")
+  ("deb-wl-clipboard" | "deb-xclip" | "deb-python3-gi")
 ]
 extra-source "pubpaste_0.8.3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pubpaste/pubpaste_0.8.3_all.deb"

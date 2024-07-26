@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r cup"]
 ]
 depends: [
-  ("deb-default-jre-headless" | "deb- java8-runtime-headless")
+  ("deb-default-jre-headless" | "deb-java8-runtime-headless")
 ]
 extra-source "cup_0.11b-20160615-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cup/cup_0.11b-20160615-2_all.deb"

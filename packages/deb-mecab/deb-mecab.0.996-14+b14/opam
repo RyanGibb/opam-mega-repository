@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.34"}
   "deb-libmecab2" {>= "0.996"}
-  ("deb-mecab-jumandic" | "deb- mecab-ipadic")
+  ("deb-mecab-jumandic" | "deb-mecab-ipadic")
 ]
 extra-source "mecab_0.996-14+b14_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mecab/mecab_0.996-14+b14_amd64.deb"

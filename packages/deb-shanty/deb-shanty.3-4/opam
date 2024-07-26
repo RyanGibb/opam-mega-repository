@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl"
-  ("deb-libgd-gd2-perl" | "deb- libgd-gd2-noxpm-perl")
+  ("deb-libgd-gd2-perl" | "deb-libgd-gd2-noxpm-perl")
 ]
 extra-source "shanty_3-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/shanty/shanty_3-4_all.deb"

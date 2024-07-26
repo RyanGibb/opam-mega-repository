@@ -30,7 +30,7 @@ depends: [
   "deb-libxml2" {>= "2.7.4"}
   "deb-shared-mime-info"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "atril_1.20.3-1+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/atril/atril_1.20.3-1+deb10u1_amd64.deb"

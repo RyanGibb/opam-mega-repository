@@ -32,7 +32,7 @@ depends: [
   "deb-libxext6"
   "deb-libxml2" {>= "2.9.0"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-ocl-icd-libopencl1" | "deb- libopencl1")
+  ("deb-ocl-icd-libopencl1" | "deb-libopencl1")
 ]
 extra-source "libwine_5.0.3-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/wine/libwine_5.0.3-3_amd64.deb"

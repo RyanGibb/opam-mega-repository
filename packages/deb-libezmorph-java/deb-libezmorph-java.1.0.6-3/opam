@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r libezmorph-java"]
 ]
 depends: [
-  ("deb-default-jre-headless" | "deb- java2-runtime-headless")
+  ("deb-default-jre-headless" | "deb-java2-runtime-headless")
 ]
 extra-source "libezmorph-java_1.0.6-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libe/libezmorph-java/libezmorph-java_1.0.6-3_all.deb"

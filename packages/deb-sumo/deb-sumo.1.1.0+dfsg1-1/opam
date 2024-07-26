@@ -15,7 +15,7 @@ depends: [
   "deb-libproj13" {>= "4.8.0"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-libxerces-c3-2"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "sumo_1.1.0+dfsg1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sumo/sumo_1.1.0+dfsg1-1_amd64.deb"

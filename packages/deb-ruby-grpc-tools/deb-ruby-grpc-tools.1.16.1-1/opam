@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-protobuf-compiler-grpc"
   "deb-ruby-grpc"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 conflicts: [
   "deb-ruby-grpc-tools" {< "1.13.0~pre2~"}

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.34"}
-  ("deb-daemon" | "deb- systemd-sysv")
+  ("deb-daemon" | "deb-systemd-sysv")
 ]
 extra-source "prometheus-mqtt-exporter_0.1.7-1+b4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/prometheus-mqtt-exporter/prometheus-mqtt-exporter_0.1.7-1+b4_amd64.deb"

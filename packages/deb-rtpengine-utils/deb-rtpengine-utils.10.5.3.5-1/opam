@@ -14,7 +14,7 @@ depends: [
   "deb-libio-socket-ip-perl"
   "deb-libsocket6-perl"
   "deb-perl-any"
-  ("deb-netcat-openbsd" | "deb- netcat")
+  ("deb-netcat-openbsd" | "deb-netcat")
 ]
 conflicts: [
   "deb-ngcp-rtpengine-utils"

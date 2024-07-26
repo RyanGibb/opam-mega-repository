@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.33"}
   "deb-libnetaddr-ip-perl"
   "deb-spamc"
-  ("deb-debconf" {>= "1.2.0"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "1.2.0"} | "deb-debconf-2-0")
   ("deb-exim4-daemon-heavy" | "deb-exim4-daemon-light")
 ]
 extra-source "sa-exim_4.2.1-20+b1_amd64.deb" {

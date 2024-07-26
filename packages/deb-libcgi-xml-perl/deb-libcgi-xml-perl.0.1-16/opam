@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libxml-parser-perl"
   "deb-perl-any"
-  ("deb-libcgi-pm-perl" | "deb- perl" {< "5.19"})
+  ("deb-libcgi-pm-perl" | "deb-perl" {< "5.19"})
 ]
 extra-source "libcgi-xml-perl_0.1-16_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libc/libcgi-xml-perl/libcgi-xml-perl_0.1-16_all.deb"

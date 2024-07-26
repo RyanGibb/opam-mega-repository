@@ -14,7 +14,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.2.0~alpha1"}
   "deb-libstdc++6" {>= "5"}
   "deb-pfstools" {= "2.2.0-5+b1"}
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "pfsview_2.2.0-5+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pfstools/pfsview_2.2.0-5+b1_amd64.deb"

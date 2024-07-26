@@ -15,7 +15,7 @@ depends: [
   "deb-libqt5printsupport5" {>= "5.0.2"}
   "deb-libqt5widgets5" {>= "5.6.0~rc"}
   "deb-libstdc++6" {>= "4.1.1"}
-  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb-libqt5gui5-gles" {>= "5.7.0"})
 ]
 extra-source "dtkwidget5-examples_5.5.48-1+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dtkwidget/dtkwidget5-examples_5.5.48-1+b3_amd64.deb"

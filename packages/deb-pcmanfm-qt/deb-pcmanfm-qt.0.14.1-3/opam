@@ -18,7 +18,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libxcb1"
   "deb-lxqt-sudo"
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus" | "deb- dbus-x11")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus" | "deb-dbus-x11")
 ]
 extra-source "pcmanfm-qt_0.14.1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pcmanfm-qt/pcmanfm-qt_0.14.1-3_amd64.deb"

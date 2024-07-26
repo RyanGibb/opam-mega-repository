@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-uim" {>= "1-1.8.8-9"}
   "deb-uim-data" {= "1-1.8.8-9"}
-  ("deb-skkdic" | "deb- skkdic-extra" | "deb- skkserv" | "deb- dbskkd-cdb")
+  ("deb-skkdic" | "deb-skkdic-extra" | "deb-skkserv" | "deb-dbskkd-cdb")
 ]
 extra-source "uim-skk_1:1.8.8-9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/uim/uim-skk_1.8.8-9_all.deb"

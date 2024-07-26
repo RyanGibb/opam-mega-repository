@@ -14,7 +14,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.2.0"}
   "deb-libqt5xml5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.2.0"} | "deb- libqt5gui5-gles" {>= "5.2.0"})
+  ("deb-libqt5gui5" {>= "5.2.0"} | "deb-libqt5gui5-gles" {>= "5.2.0"})
 ]
 extra-source "faustworks_0.5~repack0-6+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/faustworks/faustworks_0.5~repack0-6+b1_amd64.deb"

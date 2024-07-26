@@ -16,7 +16,7 @@ depends: [
   "deb-libopenxr-dev"
   "deb-libvulkan-dev"
   "deb-mesa-common-dev"
-  ("deb-libgdk-pixbuf-2-0-dev" | "deb- libgdk-pixbuf2-0-dev")
+  ("deb-libgdk-pixbuf-2-0-dev" | "deb-libgdk-pixbuf2-0-dev")
 ]
 extra-source "libgxr-dev_0.15.1-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gxr/libgxr-dev_0.15.1-4_amd64.deb"

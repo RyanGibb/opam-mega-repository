@@ -22,7 +22,7 @@ depends: [
   "deb-libprotobuf17"
   "deb-libsqlite3-0" {>= "3.7.15"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "openscenegraph-plugin-osgearth_2.10.0+dfsg-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/osgearth/openscenegraph-plugin-osgearth_2.10.0+dfsg-1+b1_amd64.deb"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-timecop"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-timecop_0.8.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-timecop/ruby-timecop_0.8.0-1_all.deb"

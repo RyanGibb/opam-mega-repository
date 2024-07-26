@@ -14,7 +14,7 @@ depends: [
   "deb-libstdc++6" {>= "11"}
   "deb-opam-installer" {= "2.1.2-1"}
   "deb-unzip"
-  ("deb-wget" | "deb- curl")
+  ("deb-wget" | "deb-curl")
 ]
 extra-source "opam_2.1.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/opam/opam_2.1.2-1_amd64.deb"

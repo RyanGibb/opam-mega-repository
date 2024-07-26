@@ -15,7 +15,7 @@ depends: [
   "deb-libmoosex-semiaffordanceaccessor-perl"
   "deb-libproc-daemon-perl"
   "deb-perl-any"
-  ("deb-perl" | "deb- libio-socket-ip-perl")
+  ("deb-perl" | "deb-libio-socket-ip-perl")
 ]
 extra-source "libaudio-mpd-perl_2.004-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/liba/libaudio-mpd-perl/libaudio-mpd-perl_2.004-3_all.deb"

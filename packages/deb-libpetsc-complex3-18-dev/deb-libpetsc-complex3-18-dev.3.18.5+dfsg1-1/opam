@@ -15,7 +15,7 @@ depends: [
   "deb-libtrilinos-zoltan-dev"
   "deb-python3"
   "deb-valgrind-mpi"
-  ("deb-gfortran-12" | "deb- gfortran-mod-15")
+  ("deb-gfortran-12" | "deb-gfortran-mod-15")
 ]
 conflicts: [
   "deb-libpetsc-complex-3-6-2-dev" {<= "3.6.2.dfsg1-3"}

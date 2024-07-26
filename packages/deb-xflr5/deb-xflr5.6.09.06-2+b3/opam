@@ -13,7 +13,7 @@ depends: [
   "deb-libqtcore4" {>= "4-4.7.0~beta1"}
   "deb-libqtgui4" {>= "4-4.5.3"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
 ]
 extra-source "xflr5_6.09.06-2+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xflr5/xflr5_6.09.06-2+b3_amd64.deb"

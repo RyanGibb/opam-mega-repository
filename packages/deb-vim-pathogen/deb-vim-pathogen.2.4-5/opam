@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-vim-addon-manager"
-  ("deb-vim-gtk3" | "deb- vim-athena" | "deb- vim-nox")
+  ("deb-vim-gtk3" | "deb-vim-athena" | "deb-vim-nox")
 ]
 extra-source "vim-pathogen_2.4-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/vim-pathogen/vim-pathogen_2.4-5_all.deb"

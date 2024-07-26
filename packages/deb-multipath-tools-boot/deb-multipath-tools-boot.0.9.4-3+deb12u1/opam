@@ -9,7 +9,7 @@ depends: [
   "deb-lsb-base"
   "deb-multipath-tools" {< "0.9.4-3+deb12u1.1~"}
   "deb-multipath-tools" {>= "0.9.4-3+deb12u1"}
-  ("deb-initramfs-tools" | "deb- linux-initramfs-tool")
+  ("deb-initramfs-tools" | "deb-linux-initramfs-tool")
 ]
 extra-source "multipath-tools-boot_0.9.4-3+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/multipath-tools/multipath-tools-boot_0.9.4-3+deb12u1_all.deb"

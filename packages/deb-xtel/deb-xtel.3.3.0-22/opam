@@ -17,7 +17,7 @@ depends: [
   "deb-libxt6"
   "deb-netpbm"
   "deb-xfonts-utils" {>= "1-7.5+2"}
-  ("deb-openbsd-inetd" | "deb- inet-superserver")
+  ("deb-openbsd-inetd" | "deb-inet-superserver")
 ]
 extra-source "xtel_3.3.0-22_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xtel/xtel_3.3.0-22_amd64.deb"

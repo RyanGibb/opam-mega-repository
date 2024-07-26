@@ -8,8 +8,8 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.29"}
   "deb-libgfortran5" {>= "10"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "wannier90_3.1.0+ds-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/wannier90/wannier90_3.1.0+ds-7_amd64.deb"

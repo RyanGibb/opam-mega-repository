@@ -13,7 +13,7 @@ depends: [
   "deb-libmusic1v5"
   "deb-libopenmpi3"
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "music-bin_1.0.7-4+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/music/music-bin_1.0.7-4+b1_amd64.deb"

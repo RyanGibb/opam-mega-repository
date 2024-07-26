@@ -9,7 +9,7 @@ depends: [
   "deb-apache2"
   "deb-simba" {= "0.8.4-6"}
   "deb-wwwconfig-common"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "websimba_0.8.4-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/simba/websimba_0.8.4-6_all.deb"

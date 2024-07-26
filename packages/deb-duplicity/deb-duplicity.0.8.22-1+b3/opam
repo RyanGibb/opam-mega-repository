@@ -15,7 +15,7 @@ depends: [
   "deb-python3-fasteners"
   "deb-python3-future"
   "deb-python3-lockfile"
-  ("deb-gnupg" | "deb- gnupg1")
+  ("deb-gnupg" | "deb-gnupg1")
 ]
 extra-source "duplicity_0.8.22-1+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/duplicity/duplicity_0.8.22-1+b3_amd64.deb"

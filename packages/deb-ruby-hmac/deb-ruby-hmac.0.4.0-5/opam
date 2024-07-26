@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-hmac"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-hmac_0.4.0-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-hmac/ruby-hmac_0.4.0-5_all.deb"

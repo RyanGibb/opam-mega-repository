@@ -18,8 +18,8 @@ depends: [
   "deb-libstdc++6" {>= "11"}
   "deb-libvte-2-91-0" {>= "0.49.92"}
   "deb-libxapian30" {>= "1.4.19~"}
-  ("deb-pkexec" | "deb- policykit-1")
-  ("deb-polkitd" | "deb- policykit-1")
+  ("deb-pkexec" | "deb-policykit-1")
+  ("deb-polkitd" | "deb-policykit-1")
 ]
 extra-source "synaptic_0.91.3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/synaptic/synaptic_0.91.3_amd64.deb"

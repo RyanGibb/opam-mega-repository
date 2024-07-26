@@ -14,7 +14,7 @@ depends: [
   "deb-sahara-common" {= "1-16.0.0-2"}
   "deb-sysvinit-utils"
   "deb-uwsgi-plugin-python3"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "sahara-api_1:16.0.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sahara/sahara-api_16.0.0-2_all.deb"

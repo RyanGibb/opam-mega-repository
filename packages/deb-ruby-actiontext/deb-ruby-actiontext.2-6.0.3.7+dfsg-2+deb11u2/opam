@@ -11,7 +11,7 @@ depends: [
   "deb-ruby-activestorage" {= "2-6.0.3.7+dfsg-2+deb11u2"}
   "deb-ruby-activesupport" {= "2-6.0.3.7+dfsg-2+deb11u2"}
   "deb-ruby-nokogiri" {>= "1.8.5"}
-  ("deb-ruby" {>= "1-2.5.0"} | "deb- ruby-interpreter")
+  ("deb-ruby" {>= "1-2.5.0"} | "deb-ruby-interpreter")
 ]
 extra-source "ruby-actiontext_2:6.0.3.7+dfsg-2+deb11u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rails/ruby-actiontext_6.0.3.7+dfsg-2+deb11u2_all.deb"

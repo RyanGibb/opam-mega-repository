@@ -27,7 +27,7 @@ depends: [
   "deb-libqt5dbus5" {>= "5.9.0~"}
   "deb-libqt5widgets5" {>= "5.9.0~"}
   "deb-libstdc++6" {>= "4.1.1"}
-  ("deb-libqt5gui5" {>= "5.9.0~"} | "deb- libqt5gui5-gles" {>= "5.9.0~"})
+  ("deb-libqt5gui5" {>= "5.9.0~"} | "deb-libqt5gui5-gles" {>= "5.9.0~"})
 ]
 extra-source "plasma-browser-integration_5.20.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/plasma-browser-integration/plasma-browser-integration_5.20.5-1_amd64.deb"

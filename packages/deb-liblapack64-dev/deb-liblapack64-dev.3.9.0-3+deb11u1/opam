@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-liblapack64-3" {= "3.9.0-3+deb11u1"}
-  ("deb-libblas64-dev" | "deb- libblas64-so")
+  ("deb-libblas64-dev" | "deb-libblas64-so")
 ]
 extra-source "liblapack64-dev_3.9.0-3+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lapack/liblapack64-dev_3.9.0-3+deb11u1_amd64.deb"

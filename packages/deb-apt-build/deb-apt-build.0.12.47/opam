@@ -16,7 +16,7 @@ depends: [
   "deb-libapt-pkg-perl" {>= "0.1.11"}
   "deb-libc6" {>= "2.4"}
   "deb-perl-any"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "apt-build_0.12.47_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/apt-build/apt-build_0.12.47_amd64.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.35"}
   "deb-puredata-core" {>= "0.52.1~"}
-  ("deb-puredata" | "deb- pd")
+  ("deb-puredata" | "deb-pd")
 ]
 extra-source "pd-cyclone_0.6.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pd-cyclone/pd-cyclone_0.6.1-2_amd64.deb"

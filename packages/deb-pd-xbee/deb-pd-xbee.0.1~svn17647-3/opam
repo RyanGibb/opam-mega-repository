@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.7"}
-  ("deb-puredata" | "deb- pd")
+  ("deb-puredata" | "deb-pd")
 ]
 extra-source "pd-xbee_0.1~svn17647-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pd-mrpeach/pd-xbee_0.1~svn17647-3_amd64.deb"

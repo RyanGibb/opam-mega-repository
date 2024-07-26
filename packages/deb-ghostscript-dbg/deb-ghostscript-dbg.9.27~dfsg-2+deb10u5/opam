@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ghostscript-dbg"]
 ]
 depends: [
-  ("deb-libgs9" {= "9.27~dfsg-2+deb10u5"} | "deb- ghostscript" {= "9.27~dfsg-2+deb10u5"} | "deb- ghostscript-x" {= "9.27~dfsg-2+deb10u5"})
+  ("deb-libgs9" {= "9.27~dfsg-2+deb10u5"} | "deb-ghostscript" {= "9.27~dfsg-2+deb10u5"} | "deb-ghostscript-x" {= "9.27~dfsg-2+deb10u5"})
 ]
 extra-source "ghostscript-dbg_9.27~dfsg-2+deb10u5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/ghostscript/ghostscript-dbg_9.27~dfsg-2+deb10u5_amd64.deb"

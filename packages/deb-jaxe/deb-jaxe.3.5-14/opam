@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libjaxe-java"
-  ("deb-default-jre" | "deb- java-runtime")
+  ("deb-default-jre" | "deb-java-runtime")
 ]
 extra-source "jaxe_3.5-14_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jaxe/jaxe_3.5-14_all.deb"

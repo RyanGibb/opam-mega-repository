@@ -14,7 +14,7 @@ depends: [
   "deb-gstreamer1-0-plugins-good"
   "deb-python3-any"
   "deb-python3-gi"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "soundconverter_4.0.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/soundconverter/soundconverter_4.0.0-1_all.deb"

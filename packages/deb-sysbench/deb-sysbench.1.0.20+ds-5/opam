@@ -10,7 +10,7 @@ depends: [
   "deb-libc6" {>= "2.33"}
   "deb-libmariadb3" {>= "3.0.0"}
   "deb-libpq5"
-  ("deb-libluajit2-5-1-2" {>= "2.0.4"} | "deb- libluajit-5-1-2" {>= "2.1.0~beta3"})
+  ("deb-libluajit2-5-1-2" {>= "2.0.4"} | "deb-libluajit-5-1-2" {>= "2.1.0~beta3"})
 ]
 extra-source "sysbench_1.0.20+ds-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sysbench/sysbench_1.0.20+ds-5_amd64.deb"

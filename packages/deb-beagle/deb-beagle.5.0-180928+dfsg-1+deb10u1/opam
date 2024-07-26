@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libhtsjdk-java"
-  ("deb-default-jre" | "deb- java11-runtime")
+  ("deb-default-jre" | "deb-java11-runtime")
 ]
 extra-source "beagle_5.0-180928+dfsg-1+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/beagle/beagle_5.0-180928+dfsg-1+deb10u1_all.deb"

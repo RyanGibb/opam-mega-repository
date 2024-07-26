@@ -14,7 +14,7 @@ depends: [
   "deb-libjs-jquery"
   "deb-nagios4-common" {= "4.4.6-4"}
   "deb-ucf" {>= "0.28"}
-  ("deb-libapache2-mod-php" | "deb- php" | "deb- php-cgi")
+  ("deb-libapache2-mod-php" | "deb-php" | "deb-php-cgi")
 ]
 extra-source "nagios4-cgi_4.4.6-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/nagios4/nagios4-cgi_4.4.6-4_amd64.deb"

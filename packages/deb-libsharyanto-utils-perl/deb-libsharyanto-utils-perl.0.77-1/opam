@@ -12,7 +12,7 @@ depends: [
   "deb-libtemplate-tiny-perl"
   "deb-liburi-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.19.11"} | "deb- libexperimental-perl")
+  ("deb-perl" {>= "5.19.11"} | "deb-libexperimental-perl")
 ]
 extra-source "libsharyanto-utils-perl_0.77-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libs/libsharyanto-utils-perl/libsharyanto-utils-perl_0.77-1_all.deb"

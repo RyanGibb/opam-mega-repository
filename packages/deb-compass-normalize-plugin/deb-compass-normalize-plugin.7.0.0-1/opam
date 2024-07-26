@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-sass"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "compass-normalize-plugin_7.0.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/compass-normalize-plugin/compass-normalize-plugin_7.0.0-1_all.deb"

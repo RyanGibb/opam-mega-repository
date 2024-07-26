@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libbdd0c2" {= "2.4+dfsg-1"}
-  ("deb-libc6-dev" | "deb- libc-dev")
+  ("deb-libc6-dev" | "deb-libc-dev")
 ]
 extra-source "libbdd-dev_2.4+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/buddy/libbdd-dev_2.4+dfsg-1_amd64.deb"

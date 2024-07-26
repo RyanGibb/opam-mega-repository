@@ -44,7 +44,7 @@ depends: [
   "deb-libtiff5" {>= "4.0.3"}
   "deb-libx11-6"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "k3d_0.8.0.6-8+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/k3d/k3d_0.8.0.6-8+b3_amd64.deb"

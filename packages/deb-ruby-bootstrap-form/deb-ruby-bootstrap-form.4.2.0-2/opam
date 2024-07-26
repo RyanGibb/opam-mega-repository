@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-actionpack" {>= "5.0"}
   "deb-ruby-activemodel" {>= "5.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-bootstrap-form_4.2.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-bootstrap-form/ruby-bootstrap-form_4.2.0-2_all.deb"

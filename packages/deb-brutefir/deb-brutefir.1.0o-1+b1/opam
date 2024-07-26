@@ -10,7 +10,7 @@ depends: [
   "deb-libc6" {>= "2.15"}
   "deb-libfftw3-double3" {>= "3.3.5"}
   "deb-libfftw3-single3" {>= "3.3.5"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "brutefir_1.0o-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/brutefir/brutefir_1.0o-1+b1_amd64.deb"

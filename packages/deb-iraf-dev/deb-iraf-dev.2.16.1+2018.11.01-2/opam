@@ -12,7 +12,7 @@ depends: [
   "deb-libcfitsio-dev"
   "deb-libcurl4-gnutls-dev"
   "deb-libexpat1-dev"
-  ("deb-gcc" | "deb- c-compiler")
+  ("deb-gcc" | "deb-c-compiler")
 ]
 extra-source "iraf-dev_2.16.1+2018.11.01-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/iraf/iraf-dev_2.16.1+2018.11.01-2_amd64.deb"

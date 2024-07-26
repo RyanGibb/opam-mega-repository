@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-aspell-uk"
   "deb-paperwork-gtk"
-  ("deb-tesseract-ocr-ukr" | "deb- cuneiform")
+  ("deb-tesseract-ocr-ukr" | "deb-cuneiform")
 ]
 extra-source "paperwork-gtk-l10n-uk_1.3.1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/paperwork/paperwork-gtk-l10n-uk_1.3.1-3_all.deb"

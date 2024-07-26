@@ -15,8 +15,8 @@ depends: [
   "deb-libqt5xml5" {>= "5.0.2"}
   "deb-libsqlite3-0" {>= "3.5.9"}
   "deb-libstdc++6" {>= "11"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
-  ("deb-universal-ctags" | "deb- exuberant-ctags")
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-universal-ctags" | "deb-exuberant-ctags")
 ]
 extra-source "codequery_0.26.0+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/codequery/codequery_0.26.0+dfsg-1_amd64.deb"

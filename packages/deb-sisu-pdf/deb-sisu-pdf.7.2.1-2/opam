@@ -16,7 +16,7 @@ depends: [
   "deb-texlive-pictures"
   "deb-texlive-plain-generic"
   "deb-texlive-xetex"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "sisu-pdf_7.2.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sisu/sisu-pdf_7.2.1-2_all.deb"

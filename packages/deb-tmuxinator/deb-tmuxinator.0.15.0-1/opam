@@ -10,7 +10,7 @@ depends: [
   "deb-ruby-thor"
   "deb-ruby-xdg"
   "deb-tmux"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "tmuxinator_0.15.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tmuxinator/tmuxinator_0.15.0-1_all.deb"

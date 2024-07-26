@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-zeitwerk"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-zeitwerk_2.4.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-zeitwerk/ruby-zeitwerk_2.4.2-1_all.deb"

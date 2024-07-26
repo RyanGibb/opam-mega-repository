@@ -9,8 +9,8 @@ depends: [
   "deb-courier-base" {= "1.0.6-1"}
   "deb-libc6" {>= "2.3.4"}
   "deb-libcgi-pm-perl"
-  ("deb-apache2" | "deb- httpd")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-apache2" | "deb-httpd")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "courier-webadmin_1.0.6-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/courier/courier-webadmin_1.0.6-1_amd64.deb"

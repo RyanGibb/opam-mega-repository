@@ -10,7 +10,7 @@ depends: [
   "deb-libsnmp-session-perl"
   "deb-perl-any"
   "deb-ucf"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "iog_1.03-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/iog/iog_1.03-6_all.deb"

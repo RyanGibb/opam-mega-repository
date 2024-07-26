@@ -14,7 +14,7 @@ depends: [
   "deb-libpng16-16" {>= "1.6.2-1"}
   "deb-libsdl2-2-0-0" {>= "2.0.4"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
 ]
 extra-source "ezquake_2.2+git20150324-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/ezquake/ezquake_2.2+git20150324-1_amd64.deb"

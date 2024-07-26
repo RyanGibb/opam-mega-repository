@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r minetest-mod-torches"]
 ]
 depends: [
-  ("deb-minetest" | "deb- minetest-server")
+  ("deb-minetest" | "deb-minetest-server")
 ]
 extra-source "minetest-mod-torches_5-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/minetest-mod-torches/minetest-mod-torches_5-3_all.deb"

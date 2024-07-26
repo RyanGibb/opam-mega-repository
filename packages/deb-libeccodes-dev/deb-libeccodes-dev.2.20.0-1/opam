@@ -11,7 +11,7 @@ depends: [
   "deb-libjpeg-dev"
   "deb-libpng-dev"
   "deb-zlib1g-dev"
-  ("deb-gfortran-10" | "deb- gfortran-mod-15")
+  ("deb-gfortran-10" | "deb-gfortran-mod-15")
 ]
 conflicts: [
   "deb-libgrib-api-dev"

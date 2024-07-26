@@ -10,7 +10,7 @@ depends: [
   "deb-bacula-sd" {= "9.4.2-2+deb10u1"}
   "deb-libc6" {>= "2.4"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-bacula-common-sqlite3" {= "9.4.2-2+deb10u1"} | "deb- bacula-common-pgsql" {= "9.4.2-2+deb10u1"} | "deb- bacula-common-mysql" {= "9.4.2-2+deb10u1"})
+  ("deb-bacula-common-sqlite3" {= "9.4.2-2+deb10u1"} | "deb-bacula-common-pgsql" {= "9.4.2-2+deb10u1"} | "deb-bacula-common-mysql" {= "9.4.2-2+deb10u1"})
 ]
 extra-source "bacula-bscan_9.4.2-2+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/bacula/bacula-bscan_9.4.2-2+deb10u1_amd64.deb"

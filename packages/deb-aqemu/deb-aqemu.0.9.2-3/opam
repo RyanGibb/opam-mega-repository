@@ -14,8 +14,8 @@ depends: [
   "deb-libqt5widgets5" {>= "5.12.2"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-libvncclient1" {>= "0.9.10"}
-  ("deb-libqt5gui5" {>= "5.2.0"} | "deb- libqt5gui5-gles" {>= "5.2.0"})
-  ("deb-qemu-kvm" | "deb- qemu-system-x86" | "deb- qemu-system-arm" | "deb- qemu-system-mips" | "deb- qemu-system-ppc" | "deb- qemu-system-sparc" | "deb- qemu-system-misc")
+  ("deb-libqt5gui5" {>= "5.2.0"} | "deb-libqt5gui5-gles" {>= "5.2.0"})
+  ("deb-qemu-kvm" | "deb-qemu-system-x86" | "deb-qemu-system-arm" | "deb-qemu-system-mips" | "deb-qemu-system-ppc" | "deb-qemu-system-sparc" | "deb-qemu-system-misc")
 ]
 extra-source "aqemu_0.9.2-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/aqemu/aqemu_0.9.2-3_amd64.deb"

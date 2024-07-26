@@ -23,7 +23,7 @@ depends: [
   "deb-libstdc++6" {>= "12.2.0-9"}
   "deb-libtinyxml2-6-2v5" {>= "2.6.2"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "desmume_0.9.11-4.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/desmume/desmume_0.9.11-4.1_amd64.deb"

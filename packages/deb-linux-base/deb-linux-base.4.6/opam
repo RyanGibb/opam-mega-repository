@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r linux-base"]
 ]
 depends: [
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "linux-base_4.6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/linux-base/linux-base_4.6_all.deb"

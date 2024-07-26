@@ -22,7 +22,7 @@ depends: [
   "deb-libswresample4" {>= "7-5.0"}
   "deb-libswscale6" {>= "7-5.0"}
   "deb-libzmq5" {>= "3.2.3+dfsg"}
-  ("deb-libqt5gui5" {>= "5.10.0"} | "deb- libqt5gui5-gles" {>= "5.10.0"})
+  ("deb-libqt5gui5" {>= "5.10.0"} | "deb-libqt5gui5-gles" {>= "5.10.0"})
 ]
 extra-source "libopenshot21_0.2.7+dfsg1-4+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libo/libopenshot/libopenshot21_0.2.7+dfsg1-4+b1_amd64.deb"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r vagrant-hostmanager"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "vagrant-hostmanager_1.8.9-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/vagrant-hostmanager/vagrant-hostmanager_1.8.9-1_all.deb"

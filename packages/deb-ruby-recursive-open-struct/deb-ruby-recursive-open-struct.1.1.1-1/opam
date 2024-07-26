@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-recursive-open-struct"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-recursive-open-struct_1.1.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-recursive-open-struct/ruby-recursive-open-struct_1.1.1-1_all.deb"

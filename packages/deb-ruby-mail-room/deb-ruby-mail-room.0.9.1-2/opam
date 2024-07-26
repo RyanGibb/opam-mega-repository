@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-mail-room"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-mail-room_0.9.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-mail-room/ruby-mail-room_0.9.1-2_all.deb"

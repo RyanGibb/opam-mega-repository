@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo dpkg -r reboot-notifier"]
 ]
 depends: [
-  ("deb-bsd-mailx" | "deb- mailx")
-  ("deb-default-mta" | "deb- mail-transport-agent")
+  ("deb-bsd-mailx" | "deb-mailx")
+  ("deb-default-mta" | "deb-mail-transport-agent")
 ]
 conflicts: [
   "deb-update-notifier-common"

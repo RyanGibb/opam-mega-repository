@@ -19,7 +19,7 @@ depends: [
   "deb-libpng16-16" {>= "1.6.2-1"}
   "deb-libsdl1-2debian" {>= "1.2.11"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 extra-source "mjpegtools_1:2.1.0+debian-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mjpegtools/mjpegtools_2.1.0+debian-5_amd64.deb"

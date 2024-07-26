@@ -16,7 +16,7 @@ depends: [
   "deb-python-psycopg2" {>= "2.4.2-1~"}
   "deb-python2-7"
   "deb-ucf"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "pybit-web_1.0.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pybit/pybit-web_1.0.0-4_all.deb"

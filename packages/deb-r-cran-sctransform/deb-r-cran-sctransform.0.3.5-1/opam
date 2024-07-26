@@ -24,8 +24,8 @@ depends: [
   "deb-r-cran-rcpparmadillo"
   "deb-r-cran-reshape2"
   "deb-r-cran-rlang"
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "r-cran-sctransform_0.3.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-sctransform/r-cran-sctransform_0.3.5-1_amd64.deb"

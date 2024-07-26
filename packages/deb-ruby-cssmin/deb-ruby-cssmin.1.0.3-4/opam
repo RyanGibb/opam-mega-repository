@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-cssmin"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-cssmin_1.0.3-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-cssmin/ruby-cssmin_1.0.3-4_all.deb"

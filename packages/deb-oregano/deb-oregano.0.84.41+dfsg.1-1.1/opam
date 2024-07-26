@@ -15,7 +15,7 @@ depends: [
   "deb-libgtksourceview-3-0-1" {>= "2.91.4"}
   "deb-libpango-1-0-0" {>= "1.14.0"}
   "deb-libxml2" {>= "2.7.4"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "oregano_0.84.41+dfsg.1-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/oregano/oregano_0.84.41+dfsg.1-1.1_amd64.deb"

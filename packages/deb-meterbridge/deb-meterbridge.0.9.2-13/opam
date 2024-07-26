@@ -10,7 +10,7 @@ depends: [
   "deb-libc6" {>= "2.4"}
   "deb-libsdl-image1-2" {>= "1.2.10"}
   "deb-libsdl1-2debian" {>= "1.2.11"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "meterbridge_0.9.2-13_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/meterbridge/meterbridge_0.9.2-13_amd64.deb"

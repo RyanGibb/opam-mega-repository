@@ -15,7 +15,7 @@ depends: [
   "deb-python3-pastescript"
   "deb-python3-q-text-as-data"
   "deb-uwsgi-plugin-python3"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "neutron-api_2:17.2.1-0+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/neutron/neutron-api_17.2.1-0+deb11u1_all.deb"

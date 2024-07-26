@@ -9,7 +9,7 @@ depends: [
   "deb-ruby-eventmachine" {>= "1.0.7-3~"}
   "deb-ruby-http-parser-rb" {>= "0.6.0-3~"}
   "deb-ruby-simple-oauth" {>= "0.3.1~"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-twitter-stream_0.1.16-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-twitter-stream/ruby-twitter-stream_0.1.16-3_all.deb"

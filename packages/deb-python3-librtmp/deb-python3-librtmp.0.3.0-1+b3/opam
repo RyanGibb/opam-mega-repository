@@ -13,7 +13,7 @@ depends: [
   "deb-python3-any" {>= "3.3.2-2~"}
   "deb-python3-cffi"
   "deb-python3-cffi-backend"
-  ("deb-python3" {>= "3.4"} | "deb- python3-singledispatch")
+  ("deb-python3" {>= "3.4"} | "deb-python3-singledispatch")
 ]
 extra-source "python3-librtmp_0.3.0-1+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-librtmp/python3-librtmp_0.3.0-1+b3_amd64.deb"

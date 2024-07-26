@@ -11,8 +11,8 @@ depends: [
   "deb-libgfortran5" {>= "8"}
   "deb-libgomp1" {>= "6"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 conflicts: [
   "deb-libfreecontact0"

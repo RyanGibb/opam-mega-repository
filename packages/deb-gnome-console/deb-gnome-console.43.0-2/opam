@@ -14,7 +14,7 @@ depends: [
   "deb-libgtop-2-0-11" {>= "2.22.3"}
   "deb-libpango-1-0-0" {>= "1.14.0"}
   "deb-libvte-2-91-gtk4-0" {>= "0.69.91"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-console_43.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-console/gnome-console_43.0-2_amd64.deb"

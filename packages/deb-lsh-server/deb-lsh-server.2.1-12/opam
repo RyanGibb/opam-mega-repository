@@ -17,7 +17,7 @@ depends: [
   "deb-lsb-base" {>= "3.0-6"}
   "deb-lsh-utils" {= "2.1-12"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "lsh-server_2.1-12_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lsh-utils/lsh-server_2.1-12_amd64.deb"

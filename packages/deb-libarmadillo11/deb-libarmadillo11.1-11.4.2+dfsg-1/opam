@@ -11,8 +11,8 @@ depends: [
   "deb-libgcc-s1" {>= "3.0"}
   "deb-libstdc++6" {>= "4.1.1"}
   "deb-libsuperlu5" {>= "5.3.0+dfsg1"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libarmadillo11_1:11.4.2+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/armadillo/libarmadillo11_11.4.2+dfsg-1_amd64.deb"

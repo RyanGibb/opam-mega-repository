@@ -10,7 +10,7 @@ depends: [
   "deb-libgfortran5" {>= "10"}
   "deb-libopenmpi3" {>= "4.1.4"}
   "deb-libscalapack-openmpi2-2" {>= "2.2.1"}
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libmumps-5.5_5.5.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mumps/libmumps-5.5_5.5.1-1_amd64.deb"

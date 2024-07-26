@@ -15,7 +15,7 @@ depends: [
   "deb-erlang-observer"
   "deb-erlang-reltool"
   "deb-erlang-wx"
-  ("deb-erlang-base" | "deb- erlang-base-hipe")
+  ("deb-erlang-base" | "deb-erlang-base-hipe")
 ]
 extra-source "erlang-x11_1:21.2.6+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/erlang/erlang-x11_21.2.6+dfsg-1_all.deb"

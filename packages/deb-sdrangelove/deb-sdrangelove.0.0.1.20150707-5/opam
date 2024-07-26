@@ -19,7 +19,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.14.1"}
   "deb-librtlsdr0" {>= "0.6.0"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "sdrangelove_0.0.1.20150707-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sdrangelove/sdrangelove_0.0.1.20150707-5_amd64.deb"

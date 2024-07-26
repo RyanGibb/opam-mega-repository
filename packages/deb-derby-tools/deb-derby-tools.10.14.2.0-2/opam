@@ -9,7 +9,7 @@ depends: [
   "deb-java-wrappers"
   "deb-libderby-java"
   "deb-libderbyclient-java"
-  ("deb-default-jre" | "deb- java6-runtime-headless")
+  ("deb-default-jre" | "deb-java6-runtime-headless")
 ]
 extra-source "derby-tools_10.14.2.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/derby/derby-tools_10.14.2.0-2_all.deb"

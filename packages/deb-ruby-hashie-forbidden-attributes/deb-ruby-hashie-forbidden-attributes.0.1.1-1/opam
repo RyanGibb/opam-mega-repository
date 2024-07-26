@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-hashie" {>= "3.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-hashie-forbidden-attributes_0.1.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-hashie-forbidden-attributes/ruby-hashie-forbidden-attributes_0.1.1-1_all.deb"

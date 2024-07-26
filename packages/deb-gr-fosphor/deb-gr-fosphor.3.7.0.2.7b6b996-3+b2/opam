@@ -25,7 +25,7 @@ depends: [
   "deb-libpython2-7" {>= "2.7"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-python"
-  ("deb-ocl-icd-libopencl1" | "deb- libopencl1")
+  ("deb-ocl-icd-libopencl1" | "deb-libopencl1")
 ]
 extra-source "gr-fosphor_3.7.0.2.7b6b996-3+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gr-fosphor/gr-fosphor_3.7.0.2.7b6b996-3+b2_amd64.deb"

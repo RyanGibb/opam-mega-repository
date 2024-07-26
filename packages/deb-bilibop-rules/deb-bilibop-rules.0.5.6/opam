@@ -9,7 +9,7 @@ depends: [
   "deb-bilibop-common" {= "0.5.6"}
   "deb-initramfs-tools"
   "deb-udev"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 conflicts: [
   "deb-bilibop-udev"

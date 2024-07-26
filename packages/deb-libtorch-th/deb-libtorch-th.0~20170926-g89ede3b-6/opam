@@ -8,8 +8,8 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.27"}
   "deb-libgomp1" {>= "4.9"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libtorch-th_0~20170926-g89ede3b-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lua-torch-torch7/libtorch-th_0~20170926-g89ede3b-6_amd64.deb"

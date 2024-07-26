@@ -27,8 +27,8 @@ depends: [
   "deb-libsdl1-2-compat-shim"
   "deb-libstdc++6" {>= "11"}
   "deb-libvorbisfile3" {>= "1.1.2"}
-  ("deb-fonts-vlgothic" | "deb- fonts-japanese-gothic")
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-fonts-vlgothic" | "deb-fonts-japanese-gothic")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "rlvm_0.14-5.1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rlvm/rlvm_0.14-5.1+b1_amd64.deb"

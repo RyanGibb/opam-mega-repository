@@ -13,7 +13,7 @@ depends: [
   "deb-libjson-perl"
   "deb-libssl1-1" {>= "1.1.0"}
   "deb-perl-any"
-  ("deb-bsd-mailx" | "deb- mailx")
+  ("deb-bsd-mailx" | "deb-mailx")
 ]
 conflicts: [
   "deb-amanda"

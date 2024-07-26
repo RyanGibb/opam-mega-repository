@@ -9,7 +9,7 @@ depends: [
   "deb-ruby-fog-core"
   "deb-ruby-fog-xml"
   "deb-ruby-nokogiri"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-fog-profitbricks_0.0.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-fog-profitbricks/ruby-fog-profitbricks_0.0.1-2_all.deb"

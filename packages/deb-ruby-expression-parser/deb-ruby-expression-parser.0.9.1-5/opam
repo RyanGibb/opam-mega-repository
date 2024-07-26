@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-expression-parser"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-expression-parser_0.9.1-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-expression-parser/ruby-expression-parser_0.9.1-5_all.deb"

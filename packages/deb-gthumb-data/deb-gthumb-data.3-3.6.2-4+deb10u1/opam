@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r gthumb-data"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gthumb-data_3:3.6.2-4+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gthumb/gthumb-data_3.6.2-4+deb10u1_all.deb"

@@ -35,7 +35,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.11.0~rc1"}
   "deb-libstdc++6" {>= "4.1.1"}
   "deb-libtelepathy-qt5-0" {>= "0.9.7~"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "kde-telepathy-contact-list_20.08.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/ktp-contact-list/kde-telepathy-contact-list_20.08.0-1_amd64.deb"

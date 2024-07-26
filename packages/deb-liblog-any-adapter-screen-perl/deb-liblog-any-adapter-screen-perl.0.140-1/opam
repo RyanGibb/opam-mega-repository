@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-liblog-any-perl"
   "deb-perl"
-  ("deb-liblog-any-perl" {>= "1.00"} | "deb- liblog-any-adapter-perl")
+  ("deb-liblog-any-perl" {>= "1.00"} | "deb-liblog-any-adapter-perl")
 ]
 extra-source "liblog-any-adapter-screen-perl_0.140-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libl/liblog-any-adapter-screen-perl/liblog-any-adapter-screen-perl_0.140-1_all.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-doc-base"
   "deb-libjs-jquery"
-  ("deb-lynx" | "deb- www-browser")
+  ("deb-lynx" | "deb-www-browser")
 ]
 extra-source "librobottestingframework-doc_2.0.1+ds1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/robot-testing-framework/librobottestingframework-doc_2.0.1+ds1-2_all.deb"

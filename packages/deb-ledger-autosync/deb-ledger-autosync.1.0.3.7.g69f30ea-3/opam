@@ -9,7 +9,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-ofxclient"
   "deb-python3-ofxparse" {>= "0.14"}
-  ("deb-hledger" | "deb- ledger")
+  ("deb-hledger" | "deb-ledger")
 ]
 extra-source "ledger-autosync_1.0.3.7.g69f30ea-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/ledger-autosync/ledger-autosync_1.0.3.7.g69f30ea-3_all.deb"

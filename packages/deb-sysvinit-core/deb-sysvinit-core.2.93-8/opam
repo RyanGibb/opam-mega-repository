@@ -12,8 +12,8 @@ depends: [
   "deb-libselinux1" {>= "1.32"}
   "deb-libsepol1" {>= "2.4"}
   "deb-sysvinit-utils" {>= "2.86.ds1-66"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-sysv-rc" | "deb- file-rc" | "deb- openrc")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-sysv-rc" | "deb-file-rc" | "deb-openrc")
 ]
 conflicts: [
   "deb-systemd-sysv"

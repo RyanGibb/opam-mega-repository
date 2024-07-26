@@ -15,8 +15,8 @@ depends: [
   "deb-perl"
   "deb-perl-base"
   "deb-time"
-  ("deb-bsd-mailx" | "deb- mailx")
-  ("deb-default-mta" | "deb- mail-transport-agent")
+  ("deb-bsd-mailx" | "deb-mailx")
+  ("deb-default-mta" | "deb-mail-transport-agent")
 ]
 conflicts: [
   "deb-inewsinn"

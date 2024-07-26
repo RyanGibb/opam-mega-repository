@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-guile-bytestructures" {>= "1.0.7-3~"}
   "deb-libgit2-dev" {>= "1.0"}
-  ("deb-guile-3-0" | "deb- guile-2-2")
+  ("deb-guile-3-0" | "deb-guile-2-2")
 ]
 extra-source "guile-git_0.4.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/guile-git/guile-git_0.4.0-3_amd64.deb"

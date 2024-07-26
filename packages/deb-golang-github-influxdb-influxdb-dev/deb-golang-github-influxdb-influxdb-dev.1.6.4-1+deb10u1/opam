@@ -38,9 +38,9 @@ depends: [
   "deb-golang-prometheus-client-dev"
   "deb-libprotobuf-dev"
   "deb-protoc-gen-yarpc"
-  ("deb-golang-gogoprotobuf-dev" {>= "0.0~git20150717"} | "deb- golang-github-gogo-protobuf-dev")
-  ("deb-golang-goprotobuf-dev" | "deb- golang-github-golang-protobuf-dev")
-  ("deb-golang-toml-dev" | "deb- golang-github-burntsushi-toml-dev")
+  ("deb-golang-gogoprotobuf-dev" {>= "0.0~git20150717"} | "deb-golang-github-gogo-protobuf-dev")
+  ("deb-golang-goprotobuf-dev" | "deb-golang-github-golang-protobuf-dev")
+  ("deb-golang-toml-dev" | "deb-golang-github-burntsushi-toml-dev")
 ]
 extra-source "golang-github-influxdb-influxdb-dev_1.6.4-1+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/influxdb/golang-github-influxdb-influxdb-dev_1.6.4-1+deb10u1_all.deb"

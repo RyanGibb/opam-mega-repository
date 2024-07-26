@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-librust-object+std-dev" {= "0.12.0-4"}
   "deb-librust-object-dev" {= "0.12.0-4"}
-  ("deb-librust-parity-wasm-0-41+default-dev" | "deb- librust-parity-wasm-0-40+default-dev" | "deb- librust-parity-wasm-0-39+default-dev" | "deb- librust-parity-wasm-0-38+default-dev")
+  ("deb-librust-parity-wasm-0-41+default-dev" | "deb-librust-parity-wasm-0-40+default-dev" | "deb-librust-parity-wasm-0-39+default-dev" | "deb-librust-parity-wasm-0-38+default-dev")
 ]
 extra-source "librust-object+wasm-dev_0.12.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-object/librust-object+wasm-dev_0.12.0-4_amd64.deb"

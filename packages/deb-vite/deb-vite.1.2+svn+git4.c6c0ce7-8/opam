@@ -18,8 +18,8 @@ depends: [
   "deb-libqt5widgets5" {>= "5.15.1"}
   "deb-libqt5xml5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "11"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libglu1-mesa" | "deb-libglu1")
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "vite_1.2+svn+git4.c6c0ce7-8_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/vite/vite_1.2+svn+git4.c6c0ce7-8_amd64.deb"

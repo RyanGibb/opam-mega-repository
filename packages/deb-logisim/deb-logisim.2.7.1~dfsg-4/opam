@@ -10,7 +10,7 @@ depends: [
   "deb-javahelp2"
   "deb-libcolorpicker-java"
   "deb-libfontchooser-java"
-  ("deb-default-jre" | "deb- java7-runtime" | "deb- java8-runtime" | "deb- java9-runtime" | "deb- java10-runtime" | "deb- java11-runtime")
+  ("deb-default-jre" | "deb-java7-runtime" | "deb-java8-runtime" | "deb-java9-runtime" | "deb-java10-runtime" | "deb-java11-runtime")
 ]
 extra-source "logisim_2.7.1~dfsg-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/logisim/logisim_2.7.1~dfsg-4_all.deb"

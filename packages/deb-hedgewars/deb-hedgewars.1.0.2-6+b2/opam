@@ -28,7 +28,7 @@ depends: [
   "deb-libstdc++6" {>= "5"}
   "deb-qt5-style-plugins"
   "deb-zlib1g" {>= "1-1.2.0"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "hedgewars_1.0.2-6+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/hedgewars/hedgewars_1.0.2-6+b2_amd64.deb"

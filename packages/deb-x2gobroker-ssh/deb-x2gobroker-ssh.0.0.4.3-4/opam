@@ -11,7 +11,7 @@ depends: [
   "deb-procps"
   "deb-x2gobroker" {< "0.0.4.3-4.1~"}
   "deb-x2gobroker" {>= "0.0.4.3-4"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "x2gobroker-ssh_0.0.4.3-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/x2gobroker/x2gobroker-ssh_0.0.4.3-4_amd64.deb"

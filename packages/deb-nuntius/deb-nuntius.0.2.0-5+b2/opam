@@ -12,7 +12,7 @@ depends: [
   "deb-libgtk-3-0" {>= "3.13.7"}
   "deb-libjson-glib-1-0-0" {>= "1.5.2"}
   "deb-libqrencode4" {>= "3.2.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "nuntius_0.2.0-5+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/nuntius-linux/nuntius_0.2.0-5+b2_amd64.deb"

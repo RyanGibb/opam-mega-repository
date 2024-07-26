@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.28"}
   "deb-libpam-modules"
   "deb-libpam0g" {>= "0.99.7.1"}
-  ("deb-openbsd-inetd" | "deb- inet-superserver")
+  ("deb-openbsd-inetd" | "deb-inet-superserver")
 ]
 conflicts: [
   "deb-ftp-server"

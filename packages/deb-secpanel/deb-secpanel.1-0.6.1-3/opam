@@ -9,8 +9,8 @@ depends: [
   "deb-openssh-client"
   "deb-ssh-askpass"
   "deb-tk"
-  ("deb-tcl" | "deb- tclsh")
-  ("deb-xterm" | "deb- x-terminal-emulator")
+  ("deb-tcl" | "deb-tclsh")
+  ("deb-xterm" | "deb-x-terminal-emulator")
 ]
 extra-source "secpanel_1:0.6.1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/secpanel/secpanel_0.6.1-3_all.deb"

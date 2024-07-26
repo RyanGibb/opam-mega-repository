@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r libgtk-4-common"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "libgtk-4-common_4.8.3+ds-2+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gtk4/libgtk-4-common_4.8.3+ds-2+deb12u1_all.deb"

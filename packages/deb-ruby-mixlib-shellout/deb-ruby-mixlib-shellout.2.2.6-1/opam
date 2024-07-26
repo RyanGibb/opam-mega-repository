@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-mixlib-shellout"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-mixlib-shellout_2.2.6-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-mixlib-shellout/ruby-mixlib-shellout_2.2.6-1_all.deb"

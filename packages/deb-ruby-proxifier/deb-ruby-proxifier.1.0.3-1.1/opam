@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-proxifier"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-proxifier_1.0.3-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-proxifier/ruby-proxifier_1.0.3-1.1_all.deb"

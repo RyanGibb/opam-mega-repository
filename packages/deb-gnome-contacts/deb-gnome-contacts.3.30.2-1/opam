@@ -23,7 +23,7 @@ depends: [
   "deb-libgtk-3-0" {>= "3.22.0"}
   "deb-libpango-1-0-0" {>= "1.37.5"}
   "deb-libwayland-server0" {>= "1.0.2"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-contacts_3.30.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-contacts/gnome-contacts_3.30.2-1_amd64.deb"

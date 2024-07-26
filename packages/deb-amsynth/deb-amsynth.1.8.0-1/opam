@@ -21,7 +21,7 @@ depends: [
   "deb-libpangocairo-1-0-0" {>= "1.14.0"}
   "deb-libpangoft2-1-0-0" {>= "1.14.0"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "amsynth_1.8.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/amsynth/amsynth_1.8.0-1_amd64.deb"

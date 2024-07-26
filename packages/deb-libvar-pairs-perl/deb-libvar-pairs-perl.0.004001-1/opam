@@ -10,7 +10,7 @@ depends: [
   "deb-libpadwalker-perl"
   "deb-libscope-upper-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.22"} | "deb- libdata-alias-perl")
+  ("deb-perl" {>= "5.22"} | "deb-libdata-alias-perl")
 ]
 extra-source "libvar-pairs-perl_0.004001-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libv/libvar-pairs-perl/libvar-pairs-perl_0.004001-1_all.deb"

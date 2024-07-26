@@ -11,7 +11,7 @@ depends: [
   "deb-libgdal32" {>= "3.0.0"}
   "deb-libstdc++6" {>= "11"}
   "deb-libxerces-c3-2"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "libcitygml2_2.4.3-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libc/libcitygml/libcitygml2_2.4.3-1+b1_amd64.deb"

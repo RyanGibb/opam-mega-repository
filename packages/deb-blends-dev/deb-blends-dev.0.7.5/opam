@@ -11,7 +11,7 @@ depends: [
   "deb-python3"
   "deb-python3-apt"
   "deb-python3-blends"
-  ("deb-make" | "deb- build-essential")
+  ("deb-make" | "deb-build-essential")
 ]
 extra-source "blends-dev_0.7.5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/blends/blends-dev_0.7.5_all.deb"

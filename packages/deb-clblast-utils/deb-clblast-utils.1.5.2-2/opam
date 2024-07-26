@@ -10,7 +10,7 @@ depends: [
   "deb-libclblast1" {>= "1.5.1"}
   "deb-libgcc-s1" {>= "3.0"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-ocl-icd-libopencl1" | "deb- libopencl1")
+  ("deb-ocl-icd-libopencl1" | "deb-libopencl1")
 ]
 extra-source "clblast-utils_1.5.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/clblast/clblast-utils_1.5.2-2_amd64.deb"

@@ -9,7 +9,7 @@ depends: [
   "deb-libproj25" {= "9.1.1-1+b1"}
   "deb-libsqlite3-dev"
   "deb-libtiff-dev"
-  ("deb-libcurl4-gnutls-dev" | "deb- libcurl-ssl-dev")
+  ("deb-libcurl4-gnutls-dev" | "deb-libcurl-ssl-dev")
 ]
 extra-source "libproj-dev_9.1.1-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/proj/libproj-dev_9.1.1-1+b1_amd64.deb"

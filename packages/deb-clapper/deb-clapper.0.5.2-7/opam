@@ -20,7 +20,7 @@ depends: [
   "deb-libgstreamer-plugins-base1-0-0" {>= "1.20.0"}
   "deb-libgstreamer1-0-0" {>= "1.18.0"}
   "deb-libgtk-4-1" {>= "4.6.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "clapper_0.5.2-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/clapper/clapper_0.5.2-7_amd64.deb"

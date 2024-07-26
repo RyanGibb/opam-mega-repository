@@ -12,8 +12,8 @@ depends: [
   "deb-libgfortran5" {>= "10"}
   "deb-libopenmpi3" {>= "4.1.2"}
   "deb-libscalapack-openmpi2-2" {>= "2.2.1"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "quantum-espresso_6.7-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/espresso/quantum-espresso_6.7-2+b1_amd64.deb"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-cmdparse"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-cmdparse_2.0.6-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-cmdparse/ruby-cmdparse_2.0.6-1_all.deb"

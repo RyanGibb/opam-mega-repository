@@ -9,8 +9,8 @@ depends: [
   "deb-libreoffice-base"
   "deb-libreoffice-common"
   "deb-libreoffice-writer"
-  ("deb-libmariadb-java" | "deb- libreoffice-mysql-connector")
-  ("deb-mariadb-client" | "deb- default-mysql-client")
+  ("deb-libmariadb-java" | "deb-libreoffice-mysql-connector")
+  ("deb-mariadb-client" | "deb-default-mysql-client")
 ]
 extra-source "libreoffice-canzeley-client_0.5.1-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libr/libreoffice-canzeley-client/libreoffice-canzeley-client_0.5.1-4_all.deb"

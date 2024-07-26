@@ -15,7 +15,7 @@ depends: [
   "deb-libstdc++6" {>= "11"}
   "deb-man-db"
   "deb-stardict-gtk" {= "3.0.7+git20220909+dfsg-4"}
-  ("deb-ncal" | "deb- bsdmainutils")
+  ("deb-ncal" | "deb-bsdmainutils")
 ]
 extra-source "stardict-plugin_3.0.7+git20220909+dfsg-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/stardict/stardict-plugin_3.0.7+git20220909+dfsg-4_amd64.deb"

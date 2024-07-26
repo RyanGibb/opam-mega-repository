@@ -14,8 +14,8 @@ depends: [
   "deb-make"
   "deb-patch"
   "deb-perl-any"
-  ("deb-curl" | "deb- wget")
-  ("deb-libc6-dev" | "deb- libc-dev")
+  ("deb-curl" | "deb-wget")
+  ("deb-libc6-dev" | "deb-libc-dev")
 ]
 extra-source "perlbrew_0.96-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/perlbrew/perlbrew_0.96-1_all.deb"

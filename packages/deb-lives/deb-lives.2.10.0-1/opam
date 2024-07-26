@@ -34,8 +34,8 @@ depends: [
   "deb-procps"
   "deb-sox"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
-  ("deb-mpv" | "deb- mplayer")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
+  ("deb-mpv" | "deb-mplayer")
 ]
 extra-source "lives_2.10.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lives/lives_2.10.0-1_amd64.deb"

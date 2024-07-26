@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-amq-protocol" {>= "1.9"}
   "deb-ruby-eventmachine"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 conflicts: [
   "deb-ruby-amq-client"

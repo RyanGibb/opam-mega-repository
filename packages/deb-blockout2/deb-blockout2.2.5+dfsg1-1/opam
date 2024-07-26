@@ -13,7 +13,7 @@ depends: [
   "deb-libsdl-mixer1-2"
   "deb-libsdl1-2-compat-shim"
   "deb-libstdc++6" {>= "5"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "blockout2_2.5+dfsg1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/blockout2/blockout2_2.5+dfsg1-1_amd64.deb"

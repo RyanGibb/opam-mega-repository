@@ -33,7 +33,7 @@ depends: [
   "deb-libtinyxml2-8" {>= "8.0.0"}
   "deb-liburdf1d" {>= "1.13.2"}
   "deb-liburdfdom-world"
-  ("deb-libqt5gui5" {>= "5.2.0"} | "deb- libqt5gui5-gles" {>= "5.2.0"})
+  ("deb-libqt5gui5" {>= "5.2.0"} | "deb-libqt5gui5-gles" {>= "5.2.0"})
 ]
 extra-source "rviz_1.14.4+dfsg-3+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ros-rviz/rviz_1.14.4+dfsg-3+b1_amd64.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.27"}
   "deb-libx11-6"
-  ("deb-osspd" | "deb- oss-compat")
+  ("deb-osspd" | "deb-oss-compat")
 ]
 conflicts: [
   "deb-libsnack-alsa"

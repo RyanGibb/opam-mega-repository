@@ -10,7 +10,7 @@ depends: [
   "deb-python3-gi"
   "deb-python3-parse"
   "deb-python3-yapsy"
-  ("deb-fdisk" | "deb- util-linux" {< "2.29.2-3~"})
+  ("deb-fdisk" | "deb-util-linux" {< "2.29.2-3~"})
 ]
 extra-source "weresync_1.0.9-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/weresync/weresync_1.0.9-1_all.deb"

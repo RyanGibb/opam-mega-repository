@@ -10,7 +10,7 @@ depends: [
   "deb-g++"
   "deb-gcc"
   "deb-libc6" {>= "2.34"}
-  ("deb-binfmt-support" | "deb- systemd")
+  ("deb-binfmt-support" | "deb-systemd")
 ]
 extra-source "binfmtc_0.17-2.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/binfmtc/binfmtc_0.17-2.2_amd64.deb"

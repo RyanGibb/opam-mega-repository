@@ -27,7 +27,7 @@ depends: [
   "deb-python3-unidiff" {>= "0.6.0"}
   "deb-python3-yaml"
   "deb-python3-zope-interface" {>= "4.1.1"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "buildbot_3.7.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/buildbot/buildbot_3.7.0-2_all.deb"

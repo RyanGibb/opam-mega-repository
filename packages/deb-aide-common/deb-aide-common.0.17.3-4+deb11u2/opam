@@ -8,9 +8,9 @@ remove: [
 depends: [
   "deb-liblockfile1"
   "deb-ucf" {>= "2.0020"}
-  ("deb-aide" {>= "0.17"} | "deb- aide-dynamic" {>= "0.17"})
-  ("deb-bsd-mailx" | "deb- mailx")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-aide" {>= "0.17"} | "deb-aide-dynamic" {>= "0.17"})
+  ("deb-bsd-mailx" | "deb-mailx")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "aide-common_0.17.3-4+deb11u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/aide/aide-common_0.17.3-4+deb11u2_all.deb"

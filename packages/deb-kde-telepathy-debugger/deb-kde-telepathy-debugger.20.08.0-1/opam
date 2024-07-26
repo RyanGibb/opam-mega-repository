@@ -20,7 +20,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.4"}
   "deb-libstdc++6" {>= "4.1.1"}
   "deb-libtelepathy-qt5-0" {>= "0.9.8~"}
-  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb-libqt5gui5-gles" {>= "5.7.0"})
 ]
 extra-source "kde-telepathy-debugger_20.08.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/ktp-common-internals/kde-telepathy-debugger_20.08.0-1_amd64.deb"

@@ -9,7 +9,7 @@ depends: [
   "deb-apt" {>= "1.1~exp9"}
   "deb-bzip2"
   "deb-systemd"
-  ("deb-bsd-mailx" | "deb- mailx")
+  ("deb-bsd-mailx" | "deb-mailx")
 ]
 conflicts: [
   "deb-apticron"

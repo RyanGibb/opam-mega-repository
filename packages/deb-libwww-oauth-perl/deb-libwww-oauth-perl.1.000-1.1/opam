@@ -12,7 +12,7 @@ depends: [
   "deb-liburi-perl"
   "deb-libwww-form-urlencoded-perl"
   "deb-perl-any"
-  ("deb-perl" {>= "5.19.5"} | "deb- libscalar-list-utils-perl" {>= "1-1.33"})
+  ("deb-perl" {>= "5.19.5"} | "deb-libscalar-list-utils-perl" {>= "1-1.33"})
 ]
 extra-source "libwww-oauth-perl_1.000-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libw/libwww-oauth-perl/libwww-oauth-perl_1.000-1.1_all.deb"

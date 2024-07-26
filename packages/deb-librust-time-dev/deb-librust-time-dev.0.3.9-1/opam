@@ -12,8 +12,8 @@ depends: [
   "deb-librust-quickcheck-dev"
   "deb-librust-rand-dev"
   "deb-librust-serde-dev"
-  ("deb-librust-time-macros-0-2-4+default-dev" | "deb- librust-time-macros-0-2-3+default-dev")
-  ("deb-librust-time-macros-0-2-4+large-dates-dev" | "deb- librust-time-macros-0-2-3+large-dates-dev")
+  ("deb-librust-time-macros-0-2-4+default-dev" | "deb-librust-time-macros-0-2-3+default-dev")
+  ("deb-librust-time-macros-0-2-4+large-dates-dev" | "deb-librust-time-macros-0-2-3+large-dates-dev")
 ]
 extra-source "librust-time-dev_0.3.9-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-time/librust-time-dev_0.3.9-1_amd64.deb"

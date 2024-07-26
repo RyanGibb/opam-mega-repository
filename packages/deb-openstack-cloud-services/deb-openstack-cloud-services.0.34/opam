@@ -9,7 +9,7 @@ depends: [
   "deb-dbconfig-common"
   "deb-ntp"
   "deb-rabbitmq-server"
-  ("deb-default-mysql-server" | "deb- mysql-server")
+  ("deb-default-mysql-server" | "deb-mysql-server")
 ]
 extra-source "openstack-cloud-services_0.34_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/openstack-meta-packages/openstack-cloud-services_0.34_all.deb"

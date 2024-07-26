@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r minetest-mod-meshport"]
 ]
 depends: [
-  ("deb-minetest" | "deb- minetest-server")
+  ("deb-minetest" | "deb-minetest-server")
 ]
 extra-source "minetest-mod-meshport_0.2.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/minetest-mod-meshport/minetest-mod-meshport_0.2.2-2_all.deb"

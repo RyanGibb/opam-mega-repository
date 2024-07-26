@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-rack"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-rack-proxy_0.6.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-rack-proxy/ruby-rack-proxy_0.6.1-2_all.deb"

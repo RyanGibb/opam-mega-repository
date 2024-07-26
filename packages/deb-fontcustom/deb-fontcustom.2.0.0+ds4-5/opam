@@ -13,7 +13,7 @@ depends: [
   "deb-ruby-thor"
   "deb-woff-tools"
   "deb-woff2"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "fontcustom_2.0.0+ds4-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fontcustom/fontcustom_2.0.0+ds4-5_all.deb"

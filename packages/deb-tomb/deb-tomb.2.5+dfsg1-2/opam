@@ -11,7 +11,7 @@ depends: [
   "deb-gnupg"
   "deb-sudo"
   "deb-zsh"
-  ("deb-pinentry-curses" | "deb- pinentry")
+  ("deb-pinentry-curses" | "deb-pinentry")
 ]
 extra-source "tomb_2.5+dfsg1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tomb/tomb_2.5+dfsg1-2_all.deb"

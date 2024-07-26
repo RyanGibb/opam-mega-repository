@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl"
-  ("deb-btrfs-progs" {>= "3.18.2"} | "deb- btrfs-tools" {>= "3.18.2"})
+  ("deb-btrfs-progs" {>= "3.18.2"} | "deb-btrfs-tools" {>= "3.18.2"})
 ]
 extra-source "btrbk_0.27.1-1+deb10u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/btrbk/btrbk_0.27.1-1+deb10u2_all.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libpython3-9-stdlib" {= "3.9.2-1"}
   "deb-python3-9-minimal" {= "3.9.2-1"}
-  ("deb-media-types" | "deb- mime-support")
+  ("deb-media-types" | "deb-mime-support")
 ]
 extra-source "python3.9_3.9.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python3.9/python3.9_3.9.2-1_amd64.deb"

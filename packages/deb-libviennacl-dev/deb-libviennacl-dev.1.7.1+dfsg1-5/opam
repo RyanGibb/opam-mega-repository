@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libboost-dev"
-  ("deb-ocl-icd-opencl-dev" | "deb- opencl-dev")
+  ("deb-ocl-icd-opencl-dev" | "deb-opencl-dev")
 ]
 extra-source "libviennacl-dev_1.7.1+dfsg1-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/viennacl/libviennacl-dev_1.7.1+dfsg1-5_all.deb"

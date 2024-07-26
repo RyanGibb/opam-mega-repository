@@ -12,7 +12,7 @@ depends: [
   "deb-libgcin" {>= "2.9.0+dfsg1"}
   "deb-libqt5core5a"
   "deb-libqt5core5a" {>= "5.15.1"}
-  ("deb-libqt5gui5" {>= "5.9.0~beta"} | "deb- libqt5gui5-gles" {>= "5.9.0~beta"})
+  ("deb-libqt5gui5" {>= "5.9.0~beta"} | "deb-libqt5gui5-gles" {>= "5.9.0~beta"})
 ]
 extra-source "gcin-qt5-immodule_2.9.0+dfsg1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gcin/gcin-qt5-immodule_2.9.0+dfsg1-2_amd64.deb"

@@ -17,7 +17,7 @@ depends: [
   "deb-r-cran-stabledist"
   "deb-r-cran-timedate"
   "deb-r-cran-timeseries" {>= "2100.84"}
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "r-cran-fbasics_3042.89-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fbasics/r-cran-fbasics_3042.89-2+b1_amd64.deb"

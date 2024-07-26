@@ -21,7 +21,7 @@ depends: [
   "deb-libstdc++6" {>= "4.1.1"}
   "deb-libsynctex2" {>= "2022.20220321.62855"}
   "deb-qpdfview-pdf-poppler-plugin"
-  ("deb-libqt5gui5" {>= "5.12.2"} | "deb- libqt5gui5-gles" {>= "5.12.2"})
+  ("deb-libqt5gui5" {>= "5.12.2"} | "deb-libqt5gui5-gles" {>= "5.12.2"})
 ]
 extra-source "qpdfview_0.5.0+ds-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qpdfview/qpdfview_0.5.0+ds-2_amd64.deb"

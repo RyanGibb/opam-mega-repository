@@ -10,7 +10,7 @@ depends: [
   "deb-dbconfig-common"
   "deb-python3-trove" {= "1-18.0.0-2"}
   "deb-sqlite3"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "trove-common_1:18.0.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/openstack-trove/trove-common_18.0.0-2_all.deb"

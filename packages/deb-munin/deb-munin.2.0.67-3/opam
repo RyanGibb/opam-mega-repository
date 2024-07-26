@@ -22,8 +22,8 @@ depends: [
   "deb-netbase"
   "deb-perl-any"
   "deb-rrdtool"
-  ("deb-cron" | "deb- cron-daemon" | "deb- systemd-sysv")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-cron" | "deb-cron-daemon" | "deb-systemd-sysv")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "munin_2.0.67-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/munin/munin_2.0.67-3_all.deb"

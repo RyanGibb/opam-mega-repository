@@ -9,8 +9,8 @@ depends: [
   "deb-perl-any"
   "deb-sbuild" {>= "0.77.0-5"}
   "deb-schroot"
-  ("deb-apt-cacher-ng" | "deb- apt-cacher")
-  ("deb-cron" | "deb- cron-daemon")
+  ("deb-apt-cacher-ng" | "deb-apt-cacher")
+  ("deb-cron" | "deb-cron-daemon")
 ]
 extra-source "sbuild-debian-developer-setup_0.78.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sbuild/sbuild-debian-developer-setup_0.78.1-2_all.deb"

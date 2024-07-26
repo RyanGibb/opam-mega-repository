@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "deb-emacsen-common" {>= "2.0.8"}
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
-  ("deb-emacs-nox" | "deb- emacs" | "deb- emacs-snapshot")
-  ("deb-w3m" {>= "0.3"} | "deb- w3m-ssl" {>= "0.3"} | "deb- w3mmee" {>= "0.3"})
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
+  ("deb-emacs-nox" | "deb-emacs" | "deb-emacs-snapshot")
+  ("deb-w3m" {>= "0.3"} | "deb-w3m-ssl" {>= "0.3"} | "deb-w3mmee" {>= "0.3"})
 ]
 conflicts: [
   "deb-apel" {< "10.5"}

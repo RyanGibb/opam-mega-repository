@@ -14,7 +14,7 @@ depends: [
   "deb-libgtk-3-0" {>= "3.21.5"}
   "deb-libkeybinder-3-0-0" {>= "0.3.0"}
   "deb-libpango-1-0-0" {>= "1.14.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "peek_1.5.1+git20230114-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/peek/peek_1.5.1+git20230114-1_amd64.deb"

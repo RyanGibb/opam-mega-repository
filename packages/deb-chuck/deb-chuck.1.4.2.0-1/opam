@@ -13,7 +13,7 @@ depends: [
   "deb-libpulse0" {>= "0.99.1"}
   "deb-libsndfile1" {>= "1.0.20"}
   "deb-libstdc++6" {>= "11"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "chuck_1.4.2.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/chuck/chuck_1.4.2.0-1_amd64.deb"

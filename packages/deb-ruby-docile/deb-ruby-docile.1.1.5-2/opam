@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-docile"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-docile_1.1.5-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-docile/ruby-docile_1.1.5-2_all.deb"

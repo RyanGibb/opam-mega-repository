@@ -10,7 +10,7 @@ depends: [
   "deb-liblocale-gettext-perl"
   "deb-perl-base" {>= "5.14.0-1"}
   "deb-tasksel-data"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 conflicts: [
   "deb-base-config" {< "2.32"}

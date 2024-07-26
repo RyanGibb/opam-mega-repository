@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r fonts-tlwg-norasi"]
 ]
 depends: [
-  ("deb-fonts-tlwg-norasi-ttf" | "deb- fonts-tlwg-norasi-otf")
+  ("deb-fonts-tlwg-norasi-ttf" | "deb-fonts-tlwg-norasi-otf")
 ]
 extra-source "fonts-tlwg-norasi_1:0.7.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fonts-tlwg/fonts-tlwg-norasi_0.7.2-1_all.deb"

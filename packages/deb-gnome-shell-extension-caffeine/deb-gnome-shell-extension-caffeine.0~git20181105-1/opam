@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-gnome-shell" {< "3.31"}
   "deb-gnome-shell" {>= "3.10"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-shell-extension-caffeine_0~git20181105-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-shell-extension-caffeine/gnome-shell-extension-caffeine_0~git20181105-1_all.deb"

@@ -13,7 +13,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-rclone"
-  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb-libqt5gui5-gles" {>= "5.7.0"})
 ]
 extra-source "rclone-browser_1.8.0-1.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rclone-browser/rclone-browser_1.8.0-1.2_amd64.deb"

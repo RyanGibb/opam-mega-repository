@@ -10,8 +10,8 @@ depends: [
   "deb-libaudio-cd-perl"
   "deb-perl-any"
   "deb-sgml-base" {>= "1.28"}
-  ("deb-cdparanoia" | "deb- cdda2wav")
-  ("deb-vorbis-tools" | "deb- flac")
+  ("deb-cdparanoia" | "deb-cdda2wav")
+  ("deb-vorbis-tools" | "deb-flac")
 ]
 extra-source "yaret_2.1.0-5.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/y/yaret/yaret_2.1.0-5.2_all.deb"

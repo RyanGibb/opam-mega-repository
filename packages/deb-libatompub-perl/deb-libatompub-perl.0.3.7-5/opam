@@ -16,8 +16,8 @@ depends: [
   "deb-libperl6-export-attrs-perl"
   "deb-libxml-atom-service-perl"
   "deb-perl-any"
-  ("deb-libhttp-date-perl" | "deb- libwww-perl" {< "6"})
-  ("deb-libhttp-message-perl" | "deb- libwww-perl" {< "6"})
+  ("deb-libhttp-date-perl" | "deb-libwww-perl" {< "6"})
+  ("deb-libhttp-message-perl" | "deb-libwww-perl" {< "6"})
 ]
 extra-source "libatompub-perl_0.3.7-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/liba/libatompub-perl/libatompub-perl_0.3.7-5_all.deb"

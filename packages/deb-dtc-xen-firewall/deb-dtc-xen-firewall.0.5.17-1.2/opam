@@ -9,7 +9,7 @@ depends: [
   "deb-debconf"
   "deb-iptables"
   "deb-lsb-base"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "dtc-xen-firewall_0.5.17-1.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dtc-xen/dtc-xen-firewall_0.5.17-1.2_all.deb"

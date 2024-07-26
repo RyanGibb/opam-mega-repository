@@ -35,7 +35,7 @@ depends: [
   "deb-ostree" {>= "2020.8"}
   "deb-shared-mime-info"
   "deb-socat"
-  ("deb-polkitd" | "deb- policykit-1")
+  ("deb-polkitd" | "deb-policykit-1")
 ]
 extra-source "flatpak-tests_1.14.8-1~deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/flatpak/flatpak-tests_1.14.8-1~deb12u1_amd64.deb"

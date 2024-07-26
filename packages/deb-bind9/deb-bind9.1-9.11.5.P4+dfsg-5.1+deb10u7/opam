@@ -31,7 +31,7 @@ depends: [
   "deb-lsb-base" {>= "3.2-14"}
   "deb-net-tools"
   "deb-netbase"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "bind9_1:9.11.5.P4+dfsg-5.1+deb10u7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/bind9/bind9_9.11.5.P4+dfsg-5.1+deb10u7_amd64.deb"

@@ -14,7 +14,7 @@ depends: [
   "deb-libqt5webkit5" {>= "5.212.0~alpha3"}
   "deb-libqt5widgets5" {>= "5.15.1"}
   "deb-libstdc++6" {>= "4.1.1"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "cb2bib_2.0.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cb2bib/cb2bib_2.0.1-2_amd64.deb"

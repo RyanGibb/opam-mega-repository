@@ -9,8 +9,8 @@ depends: [
   "deb-libc6" {>= "2.14"}
   "deb-libopenmpi3"
   "deb-zlib1g" {>= "1-1.2.2"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libp4est-1.1_1.1-5+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/p4est/libp4est-1.1_1.1-5+b1_amd64.deb"

@@ -9,8 +9,8 @@ depends: [
   "deb-debconf"
   "deb-libc6" {>= "2.4"}
   "deb-libcap2-bin"
-  ("deb-daemon" | "deb- systemd-sysv")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-daemon" | "deb-systemd-sysv")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "prometheus-homeplug-exporter_0.3.0-2+b6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/prometheus-homeplug-exporter/prometheus-homeplug-exporter_0.3.0-2+b6_amd64.deb"

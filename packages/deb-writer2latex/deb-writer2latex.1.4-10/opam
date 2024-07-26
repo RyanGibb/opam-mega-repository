@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libwriter2latex-java"
   "deb-tex-common" {>= "6.13"}
-  ("deb-default-jre" | "deb- java6-runtime")
+  ("deb-default-jre" | "deb-java6-runtime")
 ]
 extra-source "writer2latex_1.4-10_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/writer2latex/writer2latex_1.4-10_all.deb"

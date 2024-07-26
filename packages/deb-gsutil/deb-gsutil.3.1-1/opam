@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl"
-  ("deb-libhtml-form-perl" | "deb- libwww-perl" {< "6"})
+  ("deb-libhtml-form-perl" | "deb-libwww-perl" {< "6"})
 ]
 extra-source "gsutil_3.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gsutil/gsutil_3.1-1_all.deb"

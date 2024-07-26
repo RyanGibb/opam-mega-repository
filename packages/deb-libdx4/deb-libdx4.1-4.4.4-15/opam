@@ -13,7 +13,7 @@ depends: [
   "deb-libnetcdf19" {>= "3.6.1"}
   "deb-libx11-6"
   "deb-libxt6"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "libdx4_1:4.4.4-15_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dx/libdx4_4.4.4-15_amd64.deb"

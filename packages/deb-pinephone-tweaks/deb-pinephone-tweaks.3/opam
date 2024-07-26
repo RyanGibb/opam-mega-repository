@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-mobile-tweaks-common" {>= "3"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 conflicts: [
   "deb-mobile-tweaks"

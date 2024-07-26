@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r myspell-nb"]
 ]
 depends: [
-  ("deb-dictionaries-common" {> "0.10"} | "deb- openoffice-org-updatedicts")
+  ("deb-dictionaries-common" {> "0.10"} | "deb-openoffice-org-updatedicts")
 ]
 extra-source "myspell-nb_2.2-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/norwegian/myspell-nb_2.2-4_all.deb"

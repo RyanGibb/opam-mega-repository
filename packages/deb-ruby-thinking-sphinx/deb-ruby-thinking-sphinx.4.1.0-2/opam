@@ -12,7 +12,7 @@ depends: [
   "deb-ruby-joiner" {>= "0.2.0"}
   "deb-ruby-middleware" {>= "0.1.0"}
   "deb-ruby-riddle" {>= "1.5.11"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-thinking-sphinx_4.1.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-thinking-sphinx/ruby-thinking-sphinx_4.1.0-2_all.deb"

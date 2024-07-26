@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.14"}
   "deb-libgcc1" {>= "1-3.0"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-retroarch" | "deb- libretro-frontend" | "deb- gnome-games-app")
+  ("deb-retroarch" | "deb-libretro-frontend" | "deb-gnome-games-app")
 ]
 extra-source "libretro-bsnes-mercury-balanced_094+git20160126-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libr/libretro-bsnes-mercury/libretro-bsnes-mercury-balanced_094+git20160126-3_amd64.deb"

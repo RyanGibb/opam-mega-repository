@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r libtools-logging-clojure"]
 ]
 depends: [
-  ("deb-libclojure-java" | "deb- libclojure1-8-java")
+  ("deb-libclojure-java" | "deb-libclojure1-8-java")
 ]
 extra-source "libtools-logging-clojure_0.2.3-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libt/libtools-logging-clojure/libtools-logging-clojure_0.2.3-6_all.deb"

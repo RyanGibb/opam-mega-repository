@@ -9,7 +9,7 @@ depends: [
   "deb-apel"
   "deb-emacsen-common" {>= "2.0.8"}
   "deb-perl"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "oneliner-el_0.3.6-9.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/oneliner-el/oneliner-el_0.3.6-9.1_all.deb"

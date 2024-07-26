@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-publicsuffix"
   "deb-python3-any"
-  ("deb-python3-six" | "deb- python3" {> "3.6"})
+  ("deb-python3-six" | "deb-python3" {> "3.6"})
 ]
 extra-source "python3-tld_0.11.11-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-tld/python3-tld_0.11.11-4_all.deb"

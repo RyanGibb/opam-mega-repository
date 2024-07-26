@@ -35,7 +35,7 @@ depends: [
   "deb-texlive-fonts-extra"
   "deb-texlive-latex-recommended"
   "deb-texlive-science"
-  ("deb-fonts-lyx" | "deb- ttf-lyx")
+  ("deb-fonts-lyx" | "deb-ttf-lyx")
 ]
 extra-source "cadabra_1.46-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cadabra/cadabra_1.46-5_amd64.deb"

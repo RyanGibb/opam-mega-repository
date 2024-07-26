@@ -12,7 +12,7 @@ depends: [
   "deb-libmono-system-core4-0-cil" {>= "4.2.0"}
   "deb-libmono-system-xml4-0-cil" {>= "4.2.0"}
   "deb-libmono-system4-0-cil" {>= "4.2.0"}
-  ("deb-libc6" {>= "2.21"} | "deb- libc6-1" {>= "2.21"} | "deb- libc0-1" {>= "2.21"})
+  ("deb-libc6" {>= "2.21"} | "deb-libc6-1" {>= "2.21"} | "deb-libc0-1" {>= "2.21"})
 ]
 extra-source "libmono-addins0.2-cil_1.0+git20130406.adcd75b-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mono-addins/libmono-addins0.2-cil_1.0+git20130406.adcd75b-4_all.deb"

@@ -35,7 +35,7 @@ depends: [
   "deb-libx11-6"
   "deb-libxtst6"
   "deb-zlib1g" {>= "1-1.2.2.3"}
-  ("deb-libqt5gui5" {>= "5.2.0"} | "deb- libqt5gui5-gles" {>= "5.2.0"})
+  ("deb-libqt5gui5" {>= "5.2.0"} | "deb-libqt5gui5-gles" {>= "5.2.0"})
 ]
 extra-source "goldendict_1.5.0~rc2+git20200409+ds-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/goldendict/goldendict_1.5.0~rc2+git20200409+ds-2_amd64.deb"

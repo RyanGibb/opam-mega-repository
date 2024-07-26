@@ -14,7 +14,7 @@ depends: [
   "deb-libqt6network6" {>= "6.1.2"}
   "deb-libqt6widgets6" {>= "6.3.0"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "qmidinet_0.9.8-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qmidinet/qmidinet_0.9.8-1_amd64.deb"

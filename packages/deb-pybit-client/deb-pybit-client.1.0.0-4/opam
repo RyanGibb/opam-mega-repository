@@ -19,7 +19,7 @@ depends: [
   "deb-python2-7"
   "deb-sbuild"
   "deb-subversion"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "pybit-client_1.0.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pybit/pybit-client_1.0.0-4_all.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libcgi-pm-perl"
   "deb-perl"
-  ("deb-apache2" | "deb- httpd")
+  ("deb-apache2" | "deb-httpd")
 ]
 extra-source "usemod-wiki_1.2.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/usemod-wiki/usemod-wiki_1.2.1-2_all.deb"

@@ -10,7 +10,7 @@ depends: [
   "deb-libc6" {>= "2.27"}
   "deb-libstrongswan" {= "5.9.1-1+deb11u4"}
   "deb-lsb-base" {>= "3.0-6"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 conflicts: [
   "deb-openswan"

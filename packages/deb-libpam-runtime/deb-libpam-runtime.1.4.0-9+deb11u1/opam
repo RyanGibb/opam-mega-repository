@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-libpam-modules" {>= "1.0.1-6"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-debconf" {>= "1.5.19"} | "deb- cdebconf")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-debconf" {>= "1.5.19"} | "deb-cdebconf")
 ]
 conflicts: [
   "deb-libpam0g-util"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-log4r"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-log4r_1.1.10-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-log4r/ruby-log4r_1.1.10-4_all.deb"

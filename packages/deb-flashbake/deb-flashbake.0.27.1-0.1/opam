@@ -11,7 +11,7 @@ depends: [
   "deb-python-enum34" {>= "1.0.3"}
   "deb-python-feedparser" {>= "4.1"}
   "deb-python-setuptools"
-  ("deb-git-core" | "deb- git" {>= "1-1.7"})
+  ("deb-git-core" | "deb-git" {>= "1-1.7"})
 ]
 extra-source "flashbake_0.27.1-0.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/flashbake/flashbake_0.27.1-0.1_all.deb"

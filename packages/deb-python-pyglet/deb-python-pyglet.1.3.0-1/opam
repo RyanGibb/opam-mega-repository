@@ -10,9 +10,9 @@ depends: [
   "deb-python-any" {< "2.8"}
   "deb-python-any" {>= "2.7.5-5~"}
   "deb-python-future"
-  ("deb-libgl1" | "deb- libgl1-mesa-swx11")
-  ("deb-libglu1" | "deb- libglu1-mesa")
-  ("deb-python-ctypes" | "deb- python" {>= "2.5"})
+  ("deb-libgl1" | "deb-libgl1-mesa-swx11")
+  ("deb-libglu1" | "deb-libglu1-mesa")
+  ("deb-python-ctypes" | "deb-python" {>= "2.5"})
 ]
 extra-source "python-pyglet_1.3.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pyglet/python-pyglet_1.3.0-1_all.deb"

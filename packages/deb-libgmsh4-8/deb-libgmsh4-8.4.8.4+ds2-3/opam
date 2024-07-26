@@ -27,7 +27,7 @@ depends: [
   "deb-libstdc++6" {>= "11"}
   "deb-libvoro++1" {>= "0.4.6"}
   "deb-libx11-6"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "libgmsh4.8_4.8.4+ds2-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gmsh/libgmsh4.8_4.8.4+ds2-3_amd64.deb"

@@ -14,7 +14,7 @@ depends: [
   "deb-libgutenprint9" {>= "5.3.1"}
   "deb-libusb-1-0-0" {>= "2-1.0.8"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-cups-filters" {>= "1.0.36"} | "deb- ghostscript-cups" {< "9.08"})
+  ("deb-cups-filters" {>= "1.0.36"} | "deb-ghostscript-cups" {< "9.08"})
 ]
 extra-source "printer-driver-gutenprint_5.3.1-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gutenprint/printer-driver-gutenprint_5.3.1-7_amd64.deb"

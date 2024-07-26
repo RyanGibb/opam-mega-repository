@@ -10,7 +10,7 @@ depends: [
   "deb-guile-cairo" {= "1.11.2-5"}
   "deb-libcairo2-dev" {>= "1.4.10"}
   "deb-sgml-base" {>= "1.28"}
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 extra-source "guile-cairo-dev_1.11.2-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/guile-cairo/guile-cairo-dev_1.11.2-5_amd64.deb"

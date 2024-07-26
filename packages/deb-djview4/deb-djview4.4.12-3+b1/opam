@@ -17,7 +17,7 @@ depends: [
   "deb-libstdc++6" {>= "5"}
   "deb-libtiff6" {>= "4.0.3"}
   "deb-sensible-utils"
-  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb-libqt5gui5-gles" {>= "5.11.0~rc1"})
 ]
 conflicts: [
   "deb-djview" {<= "3.5.20-5"}

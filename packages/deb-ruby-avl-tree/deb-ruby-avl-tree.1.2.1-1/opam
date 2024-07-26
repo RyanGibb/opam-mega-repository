@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-atomic"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-avl-tree_1.2.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-avl-tree/ruby-avl-tree_1.2.1-1_all.deb"

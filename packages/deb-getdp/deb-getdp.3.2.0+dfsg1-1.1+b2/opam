@@ -16,7 +16,7 @@ depends: [
   "deb-libpython3-9" {>= "3.9.0~b4"}
   "deb-libslepc-real3-14" {>= "3.14.0+dfsg1"}
   "deb-libstdc++6" {>= "9"}
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "getdp_3.2.0+dfsg1-1.1+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/getdp/getdp_3.2.0+dfsg1-1.1+b2_amd64.deb"

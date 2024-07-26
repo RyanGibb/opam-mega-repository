@@ -52,7 +52,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libtag1v5" {>= "1.9.1-2.2~"}
   "deb-phonon4qt5"
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "ktorrent_5.2.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/ktorrent/ktorrent_5.2.0-2_amd64.deb"

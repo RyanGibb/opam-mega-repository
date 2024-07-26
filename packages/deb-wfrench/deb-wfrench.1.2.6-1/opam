@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-debconf"
   "deb-dictionaries-common" {>= "1.0"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "wfrench_1.2.6-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/wfrench/wfrench_1.2.6-1_all.deb"

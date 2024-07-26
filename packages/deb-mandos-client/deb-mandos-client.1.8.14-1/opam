@@ -16,10 +16,10 @@ depends: [
   "deb-libgpgme11" {>= "1.2.0"}
   "deb-libnl-3-200" {>= "3.2.7"}
   "deb-libnl-route-3-200" {>= "3.2.7"}
-  ("deb-cryptsetup" {< "2-2.0.3-1"} | "deb- cryptsetup-initramfs")
-  ("deb-debconf" {>= "1.5.5"} | "deb- debconf-2-0")
-  ("deb-gnutls-bin" {>= "3.6.6"} | "deb- libgnutls30" {< "3.6.0"})
-  ("deb-initramfs-tools" {>= "0.99"} | "deb- dracut" {>= "044+241-3"})
+  ("deb-cryptsetup" {< "2-2.0.3-1"} | "deb-cryptsetup-initramfs")
+  ("deb-debconf" {>= "1.5.5"} | "deb-debconf-2-0")
+  ("deb-gnutls-bin" {>= "3.6.6"} | "deb-libgnutls30" {< "3.6.0"})
+  ("deb-initramfs-tools" {>= "0.99"} | "deb-dracut" {>= "044+241-3"})
 ]
 conflicts: [
   "deb-dracut-config-generic"

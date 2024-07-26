@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-cpp"
   "deb-f2c"
-  ("deb-perl" | "deb- perl5")
+  ("deb-perl" | "deb-perl5")
 ]
 extra-source "fort77_1.15-11_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fort77/fort77_1.15-11_all.deb"

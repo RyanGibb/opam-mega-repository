@@ -12,7 +12,7 @@ depends: [
   "deb-libmono-system-web4-0-cil" {>= "2.10.3"}
   "deb-libmono-system-xml4-0-cil" {>= "3.2.1"}
   "deb-libmono-system4-0-cil" {>= "3.2.8"}
-  ("deb-libc6" {>= "2.19"} | "deb- libc6-1" {>= "2.19"} | "deb- libc0-1" {>= "2.19"})
+  ("deb-libc6" {>= "2.19"} | "deb-libc6-1" {>= "2.19"} | "deb-libc0-1" {>= "2.19"})
 ]
 extra-source "liblog4net1.2-cil_1.2.10+dfsg-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/log4net/liblog4net1.2-cil_1.2.10+dfsg-7_all.deb"

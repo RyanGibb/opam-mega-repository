@@ -15,10 +15,10 @@ depends: [
   "deb-libtry-tiny-perl" {>= "0.19"}
   "deb-libtype-tiny-perl" {>= "1.000005"}
   "deb-perl" {>= "5.17.4"}
-  ("deb-perl" {>= "5.17.7"} | "deb- libterm-readline-perl" {>= "1.11"})
-  ("deb-perl" {>= "5.17.8"} | "deb- libfile-spec-perl" {>= "3.40"})
-  ("deb-perl" {>= "5.21.10"} | "deb- libtest-simple-perl" {>= "1.001013"})
-  ("deb-perl" {>= "5.21.4"} | "deb- libdata-dumper-perl" {>= "2.154"})
+  ("deb-perl" {>= "5.17.7"} | "deb-libterm-readline-perl" {>= "1.11"})
+  ("deb-perl" {>= "5.17.8"} | "deb-libfile-spec-perl" {>= "3.40"})
+  ("deb-perl" {>= "5.21.10"} | "deb-libtest-simple-perl" {>= "1.001013"})
+  ("deb-perl" {>= "5.21.4"} | "deb-libdata-dumper-perl" {>= "2.154"})
 ]
 extra-source "libpath-router-perl_0.15-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libp/libpath-router-perl/libpath-router-perl_0.15-1_all.deb"

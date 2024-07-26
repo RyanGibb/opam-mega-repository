@@ -68,7 +68,7 @@ depends: [
   "deb-golang-gopkg-yaml-v3-dev"
   "deb-golang-k8s-sigs-structured-merge-diff-dev"
   "deb-golang-toml-dev"
-  ("deb-golang-github-influxdata-tail-dev" {>= "1.0.0+git20180327.c434825-2~"} | "deb- golang-github-hpcloud-tail-dev")
+  ("deb-golang-github-influxdata-tail-dev" {>= "1.0.0+git20180327.c434825-2~"} | "deb-golang-github-hpcloud-tail-dev")
 ]
 extra-source "golang-github-containers-libpod-dev_3.0.1+dfsg1-3+deb11u5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libp/libpod/golang-github-containers-libpod-dev_3.0.1+dfsg1-3+deb11u5_all.deb"

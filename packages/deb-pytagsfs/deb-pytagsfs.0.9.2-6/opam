@@ -12,7 +12,7 @@ depends: [
   "deb-python-inotifyx"
   "deb-python-mutagen"
   "deb-python-sclapp" {>= "0.5.2"}
-  ("deb-python2-7" | "deb- python2-6")
+  ("deb-python2-7" | "deb-python2-6")
 ]
 extra-source "pytagsfs_0.9.2-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pytagsfs/pytagsfs_0.9.2-6_all.deb"

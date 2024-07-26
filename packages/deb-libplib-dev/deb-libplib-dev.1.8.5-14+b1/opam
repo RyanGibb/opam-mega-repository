@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libglut-dev"
   "deb-libplib1" {= "1.8.5-14+b1"}
-  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
+  ("deb-libgl1-mesa-dev" | "deb-libgl-dev")
 ]
 extra-source "libplib-dev_1.8.5-14+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/plib/libplib-dev_1.8.5-14+b1_amd64.deb"

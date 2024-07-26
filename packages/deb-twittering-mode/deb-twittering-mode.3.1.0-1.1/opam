@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-emacsen-common" {>= "2.0.8"}
-  ("deb-curl" | "deb- gnutls-bin" | "deb- openssl")
-  ("deb-emacs" | "deb- emacs25")
+  ("deb-curl" | "deb-gnutls-bin" | "deb-openssl")
+  ("deb-emacs" | "deb-emacs25")
 ]
 extra-source "twittering-mode_3.1.0-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/twittering-mode/twittering-mode_3.1.0-1.1_all.deb"

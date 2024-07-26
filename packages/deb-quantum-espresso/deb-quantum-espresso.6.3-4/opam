@@ -14,8 +14,8 @@ depends: [
   "deb-libopenmpi3"
   "deb-libquadmath0" {>= "4.6"}
   "deb-libscalapack-openmpi2-0"
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "quantum-espresso_6.3-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/espresso/quantum-espresso_6.3-4_amd64.deb"

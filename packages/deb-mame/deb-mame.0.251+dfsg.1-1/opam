@@ -29,7 +29,7 @@ depends: [
   "deb-libxi6"
   "deb-mame-data" {= "0.251+dfsg.1-1"}
   "deb-zlib1g" {>= "1-1.2.2"}
-  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb-libqt5gui5-gles" {>= "5.11.0~rc1"})
 ]
 extra-source "mame_0.251+dfsg.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mame/mame_0.251+dfsg.1-1_amd64.deb"

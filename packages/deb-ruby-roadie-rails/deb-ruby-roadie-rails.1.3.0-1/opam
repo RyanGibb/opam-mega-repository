@@ -9,7 +9,7 @@ depends: [
   "deb-ruby-railties" {< "2-5.3"}
   "deb-ruby-railties" {>= "2-3.0"}
   "deb-ruby-roadie" {>= "3.1"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-roadie-rails_1.3.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-roadie-rails/ruby-roadie-rails_1.3.0-1_all.deb"

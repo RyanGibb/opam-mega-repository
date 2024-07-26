@@ -22,7 +22,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.10.0~"}
   "deb-libstdc++6" {>= "4.1.1"}
   "deb-phonon4qt5"
-  ("deb-libqt5gui5" {>= "5.10.0~"} | "deb- libqt5gui5-gles" {>= "5.10.0~"})
+  ("deb-libqt5gui5" {>= "5.10.0~"} | "deb-libqt5gui5-gles" {>= "5.10.0~"})
 ]
 extra-source "blinken_4:20.12.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/blinken/blinken_20.12.1-1_amd64.deb"

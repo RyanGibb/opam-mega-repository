@@ -26,7 +26,7 @@ depends: [
   "deb-libvtk6-3-qt"
   "deb-libxpa1" {>= "2.1.14"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
 ]
 extra-source "qfitsview_3.3+p1+dfsg-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dpuser/qfitsview_3.3+p1+dfsg-2+b1_amd64.deb"

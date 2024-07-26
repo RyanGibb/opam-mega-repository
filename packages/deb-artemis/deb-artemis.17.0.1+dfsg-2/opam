@@ -19,7 +19,7 @@ depends: [
   "deb-liblog4j1-2-java"
   "deb-libpicard-java"
   "deb-libpostgresql-jdbc-java"
-  ("deb-default-jre" | "deb- java8-runtime" | "deb- java9-runtime" | "deb- java10-runtime" | "deb- java11-runtime")
+  ("deb-default-jre" | "deb-java8-runtime" | "deb-java9-runtime" | "deb-java10-runtime" | "deb-java11-runtime")
 ]
 extra-source "artemis_17.0.1+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/artemis/artemis_17.0.1+dfsg-2_amd64.deb"

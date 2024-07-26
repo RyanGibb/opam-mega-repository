@@ -17,7 +17,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.10.0"}
   "deb-libstdc++6" {>= "5"}
   "deb-libx11-6"
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "qt5-gtk2-platformtheme_5.0.0+git23.g335dbec-4+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtstyleplugins-src/qt5-gtk2-platformtheme_5.0.0+git23.g335dbec-4+b3_amd64.deb"

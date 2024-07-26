@@ -52,7 +52,7 @@ depends: [
   "deb-qml-module-org-kde-kquickcontrolsaddons"
   "deb-qml-module-qtquick-layouts"
   "deb-qml-module-qtquick2"
-  ("deb-libqt5gui5" {>= "5.10.0~"} | "deb- libqt5gui5-gles" {>= "5.10.0~"})
+  ("deb-libqt5gui5" {>= "5.10.0~"} | "deb-libqt5gui5-gles" {>= "5.10.0~"})
 ]
 extra-source "kate_4:20.12.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kate/kate_20.12.2-1_amd64.deb"

@@ -20,9 +20,9 @@ depends: [
   "deb-psmisc"
   "deb-sed" {>= "4.1.2"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-bsd-mailx" | "deb- mailx")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-exim4-daemon-light" | "deb- mail-transport-agent")
+  ("deb-bsd-mailx" | "deb-mailx")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-exim4-daemon-light" | "deb-mail-transport-agent")
 ]
 conflicts: [
   "deb-capi4hylafax" {< "1-01.02.03-4"}

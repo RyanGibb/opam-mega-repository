@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-mail" {>= "2.4.3"}
   "deb-ruby-term-ansicolor" {>= "1.0.7"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "tj3_3.7.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tj3/tj3_3.7.1-1_all.deb"

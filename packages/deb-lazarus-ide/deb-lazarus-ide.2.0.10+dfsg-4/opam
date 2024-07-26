@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r lazarus-ide"]
 ]
 depends: [
-  ("deb-lazarus-ide-gtk2-2-0" | "deb- lazarus-ide-qt5-2-0")
+  ("deb-lazarus-ide-gtk2-2-0" | "deb-lazarus-ide-qt5-2-0")
 ]
 extra-source "lazarus-ide_2.0.10+dfsg-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lazarus/lazarus-ide_2.0.10+dfsg-4_all.deb"

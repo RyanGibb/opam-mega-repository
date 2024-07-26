@@ -13,8 +13,8 @@ depends: [
   "deb-libx11-6"
   "deb-libxext6"
   "deb-libxinerama1"
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "xdiskusage_1.48-10.1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xdiskusage/xdiskusage_1.48-10.1+b1_amd64.deb"

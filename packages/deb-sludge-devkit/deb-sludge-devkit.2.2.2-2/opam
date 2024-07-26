@@ -31,7 +31,7 @@ depends: [
   "deb-libxt6"
   "deb-sludge-engine" {>= "2.2.2-2"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "sludge-devkit_2.2.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sludge/sludge-devkit_2.2.2-2_amd64.deb"

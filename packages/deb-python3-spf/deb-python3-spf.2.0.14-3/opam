@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-python3-any"
   "deb-python3-authres"
-  ("deb-python3-dns" | "deb- python3-dnspython" {>= "1.16.0"})
+  ("deb-python3-dns" | "deb-python3-dnspython" {>= "1.16.0"})
 ]
 extra-source "python3-spf_2.0.14-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pyspf/python3-spf_2.0.14-3_all.deb"

@@ -22,9 +22,9 @@ depends: [
   "deb-python3-gi-cairo"
   "deb-python3-setuptools-scm"
   "deb-python3-yaml"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus")
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
 ]
 extra-source "guake_3.9.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/guake/guake_3.9.0-2_all.deb"

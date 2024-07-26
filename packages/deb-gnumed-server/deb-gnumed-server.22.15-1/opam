@@ -15,9 +15,9 @@ depends: [
   "deb-python3-psycopg2"
   "deb-rsync"
   "deb-sudo"
-  ("deb-bsd-mailx" | "deb- mail-reader")
-  ("deb-cron" | "deb- anacron")
-  ("deb-gnupg" | "deb- gnupg2")
+  ("deb-bsd-mailx" | "deb-mail-reader")
+  ("deb-cron" | "deb-anacron")
+  ("deb-gnupg" | "deb-gnupg2")
 ]
 extra-source "gnumed-server_22.15-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnumed-server/gnumed-server_22.15-1_all.deb"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r asterisk-core-sounds-es"]
 ]
 depends: [
-  ("deb-asterisk-core-sounds-es-gsm" | "deb- asterisk-core-sounds-es-g722" | "deb- asterisk-core-sounds-es-wav")
+  ("deb-asterisk-core-sounds-es-gsm" | "deb-asterisk-core-sounds-es-g722" | "deb-asterisk-core-sounds-es-wav")
 ]
 extra-source "asterisk-core-sounds-es_1.6.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/asterisk-core-sounds/asterisk-core-sounds-es_1.6.1-1_all.deb"

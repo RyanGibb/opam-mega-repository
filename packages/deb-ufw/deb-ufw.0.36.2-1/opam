@@ -9,7 +9,7 @@ depends: [
   "deb-iptables"
   "deb-python3-any"
   "deb-ucf"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "ufw_0.36.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/ufw/ufw_0.36.2-1_all.deb"

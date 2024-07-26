@@ -9,7 +9,7 @@ depends: [
   "deb-arctica-greeter"
   "deb-desktop-base" {>= "10~"}
   "deb-libglib2-0-bin"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "arctica-greeter-theme-debian-futureprototype_0.99.3.0-1+deb12u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/arctica-greeter/arctica-greeter-theme-debian-futureprototype_0.99.3.0-1+deb12u2_all.deb"

@@ -10,7 +10,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-django"
   "deb-python3-typing-extensions"
-  ("deb-famfamfam-flag-png" | "deb- famfamfam-flag-gif")
+  ("deb-famfamfam-flag-png" | "deb-famfamfam-flag-gif")
 ]
 extra-source "python3-django-countries_7.3.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/django-countries/python3-django-countries_7.3.2-1_all.deb"

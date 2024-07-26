@@ -22,7 +22,7 @@ depends: [
   "deb-libmapsforge-java"
   "deb-libpng-sixlegs-java"
   "deb-libsvgsalamander-java"
-  ("deb-default-jre" | "deb- java2-runtime" | "deb- java-runtime")
+  ("deb-default-jre" | "deb-java2-runtime" | "deb-java-runtime")
 ]
 extra-source "mobile-atlas-creator_2.1.4+dfsg.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mobile-atlas-creator/mobile-atlas-creator_2.1.4+dfsg.1-1_all.deb"

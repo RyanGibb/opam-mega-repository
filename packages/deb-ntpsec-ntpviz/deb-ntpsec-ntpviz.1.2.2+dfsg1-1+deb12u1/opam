@@ -10,8 +10,8 @@ depends: [
   "deb-fonts-liberation"
   "deb-python3"
   "deb-python3-ntp" {= "1.2.2+dfsg1-1+deb12u1"}
-  ("deb-gnuplot-nox" | "deb- gnuplot")
-  ("deb-systemd" | "deb- cron" | "deb- cron-daemon")
+  ("deb-gnuplot-nox" | "deb-gnuplot")
+  ("deb-systemd" | "deb-cron" | "deb-cron-daemon")
 ]
 extra-source "ntpsec-ntpviz_1.2.2+dfsg1-1+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/ntpsec/ntpsec-ntpviz_1.2.2+dfsg1-1+deb12u1_amd64.deb"

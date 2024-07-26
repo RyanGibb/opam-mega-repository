@@ -10,7 +10,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-requests"
   "deb-python3-requests-toolbelt"
-  ("deb-python3-typing-extensions" | "deb- python3" {> "3.8"})
+  ("deb-python3-typing-extensions" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-rt_3.0.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-rt/python3-rt_3.0.4-1_all.deb"

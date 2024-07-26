@@ -11,7 +11,7 @@ depends: [
   "deb-python3-dateutil"
   "deb-python3-pkg-resources"
   "deb-python3-rebulk" {>= "3.1.0"}
-  ("deb-python3-importlib-resources" | "deb- python3" {> "3.9"})
+  ("deb-python3-importlib-resources" | "deb-python3" {> "3.9"})
 ]
 extra-source "python3-guessit_3.4.3-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/guessit/python3-guessit_3.4.3-2_all.deb"

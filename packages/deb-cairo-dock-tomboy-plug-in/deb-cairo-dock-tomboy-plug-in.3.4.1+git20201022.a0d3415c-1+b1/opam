@@ -13,7 +13,7 @@ depends: [
   "deb-libglib2-0-0" {>= "2.24.0"}
   "deb-libgtk-3-0" {>= "3.0.0"}
   "deb-sgml-base" {>= "1.28"}
-  ("deb-gnote" | "deb- tomboy")
+  ("deb-gnote" | "deb-tomboy")
 ]
 extra-source "cairo-dock-tomboy-plug-in_3.4.1+git20201022.a0d3415c-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cairo-dock-plug-ins/cairo-dock-tomboy-plug-in_3.4.1+git20201022.a0d3415c-1+b1_amd64.deb"

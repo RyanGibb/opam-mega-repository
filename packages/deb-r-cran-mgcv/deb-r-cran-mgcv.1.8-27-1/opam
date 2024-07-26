@@ -14,8 +14,8 @@ depends: [
   "deb-r-base-core" {>= "3.5.2-1"}
   "deb-r-cran-matrix"
   "deb-r-cran-nlme" {>= "3.1-64"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "r-cran-mgcv_1.8-27-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mgcv/r-cran-mgcv_1.8-27-1_amd64.deb"

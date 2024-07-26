@@ -18,7 +18,7 @@ depends: [
   "deb-libpango-1-0-0" {>= "1.14.0"}
   "deb-libpangocairo-1-0-0" {>= "1.14.0"}
   "deb-libpangoft2-1-0-0" {>= "1.14.0"}
-  ("deb-ocaml-nox" | "deb- java-compiler" | "deb- c-compiler" | "deb- c++-compiler" | "deb- ruby" | "deb- gprolog" | "deb- valac" | "deb- fp-compiler" | "deb- rhino" | "deb- guile" | "deb- python3" | "deb- lua")
+  ("deb-ocaml-nox" | "deb-java-compiler" | "deb-c-compiler" | "deb-c++-compiler" | "deb-ruby" | "deb-gprolog" | "deb-valac" | "deb-fp-compiler" | "deb-rhino" | "deb-guile" | "deb-python3" | "deb-lua")
 ]
 extra-source "laby_0.6.4-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/laby/laby_0.6.4-2+b1_amd64.deb"

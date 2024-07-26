@@ -9,7 +9,7 @@ depends: [
   "deb-libnet-ssh-perl"
   "deb-libstring-shellquote-perl"
   "deb-perl"
-  ("deb-openssh-client" | "deb- ssh-client")
+  ("deb-openssh-client" | "deb-ssh-client")
 ]
 extra-source "libnet-scp-perl_0.08-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libn/libnet-scp-perl/libnet-scp-perl_0.08-4_all.deb"

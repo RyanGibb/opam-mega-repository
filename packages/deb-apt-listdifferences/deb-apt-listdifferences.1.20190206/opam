@@ -11,8 +11,8 @@ depends: [
   "deb-python3-any"
   "deb-python3-apt"
   "deb-python3-debian"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-most" | "deb- less")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-most" | "deb-less")
 ]
 extra-source "apt-listdifferences_1.20190206_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/apt-listdifferences/apt-listdifferences_1.20190206_all.deb"

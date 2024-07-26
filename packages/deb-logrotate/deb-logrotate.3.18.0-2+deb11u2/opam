@@ -10,7 +10,7 @@ depends: [
   "deb-libc6" {>= "2.27"}
   "deb-libpopt0" {>= "1.14"}
   "deb-libselinux1" {>= "3.1~"}
-  ("deb-cron" | "deb- anacron" | "deb- cron-daemon" | "deb- systemd-sysv")
+  ("deb-cron" | "deb-anacron" | "deb-cron-daemon" | "deb-systemd-sysv")
 ]
 extra-source "logrotate_3.18.0-2+deb11u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/logrotate/logrotate_3.18.0-2+deb11u2_amd64.deb"

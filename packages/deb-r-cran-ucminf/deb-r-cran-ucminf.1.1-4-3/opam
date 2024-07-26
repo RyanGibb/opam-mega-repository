@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.14"}
   "deb-r-base-core"
   "deb-r-base-core" {>= "4.0.2-1"}
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "r-cran-ucminf_1.1-4-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-ucminf/r-cran-ucminf_1.1-4-3_amd64.deb"

@@ -11,7 +11,7 @@ depends: [
   "deb-libtime-local-perl"
   "deb-perl"
   "deb-perl-any"
-  ("deb-apache2" | "deb- httpd")
+  ("deb-apache2" | "deb-httpd")
 ]
 extra-source "lightsquid_1.8-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lightsquid/lightsquid_1.8-6_all.deb"

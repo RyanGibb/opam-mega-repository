@@ -10,7 +10,7 @@ depends: [
   "deb-libncurses6" {>= "6"}
   "deb-libreadline7" {>= "6.0"}
   "deb-libtinfo6" {>= "6"}
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 extra-source "gnugo_3.8-9+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnugo/gnugo_3.8-9+b3_amd64.deb"

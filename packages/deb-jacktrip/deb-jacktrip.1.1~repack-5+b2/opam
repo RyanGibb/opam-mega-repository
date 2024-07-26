@@ -14,7 +14,7 @@ depends: [
   "deb-libqt5network5" {>= "5.0.2"}
   "deb-librtaudio6"
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "jacktrip_1.1~repack-5+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jacktrip/jacktrip_1.1~repack-5+b2_amd64.deb"

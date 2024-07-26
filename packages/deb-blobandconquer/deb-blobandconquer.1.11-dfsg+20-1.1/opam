@@ -16,8 +16,8 @@ depends: [
   "deb-libstdc++6" {>= "5"}
   "deb-libx11-6"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "blobandconquer_1.11-dfsg+20-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/blobandconquer/blobandconquer_1.11-dfsg+20-1.1_amd64.deb"

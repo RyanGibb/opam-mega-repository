@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-peek" {>= "0.1.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-peek-performance-bar_1.3.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-peek-performance-bar/ruby-peek-performance-bar_1.3.0-1_all.deb"

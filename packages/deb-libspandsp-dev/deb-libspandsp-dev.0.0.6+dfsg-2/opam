@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libjpeg-dev"
   "deb-libspandsp2" {= "0.0.6+dfsg-2"}
-  ("deb-libtiff-dev" | "deb- libtiff5-dev")
+  ("deb-libtiff-dev" | "deb-libtiff5-dev")
 ]
 extra-source "libspandsp-dev_0.0.6+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/spandsp/libspandsp-dev_0.0.6+dfsg-2_amd64.deb"

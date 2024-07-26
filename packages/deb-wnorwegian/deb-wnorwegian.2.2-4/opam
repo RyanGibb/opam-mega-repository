@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-dictionaries-common"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "wnorwegian_2.2-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/norwegian/wnorwegian_2.2-4_all.deb"

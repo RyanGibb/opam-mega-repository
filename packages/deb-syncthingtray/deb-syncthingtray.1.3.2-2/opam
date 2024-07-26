@@ -21,7 +21,7 @@ depends: [
   "deb-libqt5webenginewidgets5" {>= "5.14.1"}
   "deb-libqt5widgets5" {>= "5.11.0~rc1"}
   "deb-libstdc++6" {>= "12"}
-  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb-libqt5gui5-gles" {>= "5.11.0~rc1"})
 ]
 extra-source "syncthingtray_1.3.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/syncthingtray/syncthingtray_1.3.2-2_amd64.deb"

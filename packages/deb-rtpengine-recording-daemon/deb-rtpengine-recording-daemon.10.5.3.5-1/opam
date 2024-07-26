@@ -19,7 +19,7 @@ depends: [
   "deb-libsystemd0"
   "deb-nfs-common"
   "deb-rtpengine-daemon"
-  ("deb-sysvinit-utils" {>= "3.05-4~"} | "deb- lsb-base" {>= "3.0-6"})
+  ("deb-sysvinit-utils" {>= "3.05-4~"} | "deb-lsb-base" {>= "3.0-6"})
 ]
 conflicts: [
   "deb-ngcp-rtpengine-recording-daemon"

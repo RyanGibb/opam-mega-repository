@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-libglew2-1" {= "2.1.0-4+b1"}
-  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
-  ("deb-libglu1-mesa-dev" | "deb- libglu-dev")
+  ("deb-libgl1-mesa-dev" | "deb-libgl-dev")
+  ("deb-libglu1-mesa-dev" | "deb-libglu-dev")
 ]
 conflicts: [
   "deb-libglew1-6-dev"

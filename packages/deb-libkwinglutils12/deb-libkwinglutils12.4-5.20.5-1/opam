@@ -11,7 +11,7 @@ depends: [
   "deb-libqt5core5a" {>= "5.15.1"}
   "deb-libstdc++6" {>= "5"}
   "deb-libxcb1"
-  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb- libqt5gui5-gles" {>= "5.15.0~"})
+  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb-libqt5gui5-gles" {>= "5.15.0~"})
 ]
 extra-source "libkwinglutils12_4:5.20.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kwin/libkwinglutils12_5.20.5-1_amd64.deb"

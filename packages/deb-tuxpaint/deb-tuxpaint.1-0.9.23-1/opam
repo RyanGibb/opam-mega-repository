@@ -24,7 +24,7 @@ depends: [
   "deb-netpbm"
   "deb-tuxpaint-data" {= "1-0.9.23-1"}
   "deb-zlib1g" {>= "1-1.2.0"}
-  ("deb-tuxpaint-plugins-default" {>= "1-0.9.22-1"} | "deb- tuxpaint-plugins")
+  ("deb-tuxpaint-plugins-default" {>= "1-0.9.22-1"} | "deb-tuxpaint-plugins")
 ]
 extra-source "tuxpaint_1:0.9.23-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tuxpaint/tuxpaint_0.9.23-1_amd64.deb"

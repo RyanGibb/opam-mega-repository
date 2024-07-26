@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-libglew2-2" {= "2.2.0-4+b1"}
-  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
-  ("deb-libglu1-mesa-dev" | "deb- libglu-dev")
+  ("deb-libgl1-mesa-dev" | "deb-libgl-dev")
+  ("deb-libglu1-mesa-dev" | "deb-libglu-dev")
 ]
 extra-source "libglew-dev_2.2.0-4+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/glew/libglew-dev_2.2.0-4+b1_amd64.deb"

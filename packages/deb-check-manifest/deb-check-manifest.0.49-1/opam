@@ -9,7 +9,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-build" {>= "0.1"}
   "deb-python3-pkg-resources"
-  ("deb-python3-tomli" | "deb- python3" {> "3.11"})
+  ("deb-python3-tomli" | "deb-python3" {> "3.11"})
 ]
 extra-source "check-manifest_0.49-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/check-manifest/check-manifest_0.49-1_all.deb"

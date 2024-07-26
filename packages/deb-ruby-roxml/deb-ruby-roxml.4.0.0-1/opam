@@ -9,7 +9,7 @@ depends: [
   "deb-ruby-activesupport" {>= "2-4.0"}
   "deb-ruby-libxml"
   "deb-ruby-nokogiri" {>= "1.3.3"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-roxml_4.0.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-roxml/ruby-roxml_4.0.0-1_all.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-systemu"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-macaddr_1.7.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-macaddr/ruby-macaddr_1.7.1-2_all.deb"

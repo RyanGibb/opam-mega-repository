@@ -9,7 +9,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-numpy"
   "deb-python3-petsc4py"
-  ("deb-python3-slepc4py-real" | "deb- python3-slepc4py-complex" | "deb- python3-slepc4py-real3-14" | "deb- python3-slepc4py-complex3-14" | "deb- python3-slepc4py-64-real" | "deb- python3-slepc4py-64-complex" | "deb- python3-slepc4py-64-real3-14" | "deb- python3-slepc4py-64-complex3-14")
+  ("deb-python3-slepc4py-real" | "deb-python3-slepc4py-complex" | "deb-python3-slepc4py-real3-14" | "deb-python3-slepc4py-complex3-14" | "deb-python3-slepc4py-64-real" | "deb-python3-slepc4py-64-complex" | "deb-python3-slepc4py-64-real3-14" | "deb-python3-slepc4py-64-complex3-14")
 ]
 extra-source "python3-slepc4py_3.14.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/slepc4py/python3-slepc4py_3.14.0-2_all.deb"

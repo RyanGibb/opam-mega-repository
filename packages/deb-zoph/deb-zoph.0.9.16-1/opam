@@ -16,9 +16,9 @@ depends: [
   "deb-php-xml"
   "deb-php-zip"
   "deb-unzip"
-  ("deb-dbconfig-mysql" | "deb- dbconfig-no-thanks")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-default-mysql-server" | "deb- virtual-mysql-server")
+  ("deb-dbconfig-mysql" | "deb-dbconfig-no-thanks")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-default-mysql-server" | "deb-virtual-mysql-server")
 ]
 extra-source "zoph_0.9.16-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/z/zoph/zoph_0.9.16-1_all.deb"

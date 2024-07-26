@@ -11,7 +11,7 @@ depends: [
   "deb-autopoint"
   "deb-libtool" {>= "2.4.2"}
   "deb-perl-any"
-  ("deb-libdebhelper-perl" | "deb- debhelper" {< "12.6~"})
+  ("deb-libdebhelper-perl" | "deb-debhelper" {< "12.6~"})
 ]
 extra-source "dh-autoreconf_20_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dh-autoreconf/dh-autoreconf_20_all.deb"

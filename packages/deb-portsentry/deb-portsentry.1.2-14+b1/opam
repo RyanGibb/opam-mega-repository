@@ -10,7 +10,7 @@ depends: [
   "deb-libfile-temp-perl"
   "deb-net-tools"
   "deb-procps"
-  ("deb-debconf" {>= "1.2.9"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "1.2.9"} | "deb-debconf-2-0")
 ]
 extra-source "portsentry_1.2-14+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/portsentry/portsentry_1.2-14+b1_amd64.deb"

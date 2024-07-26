@@ -12,7 +12,7 @@ depends: [
   "deb-libgphobos3" {>= "12"}
   "deb-libsdl-mixer1-2" {>= "1.2.12"}
   "deb-libsdl1-2-compat-shim"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "tatan_1.0.dfsg2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tatan/tatan_1.0.dfsg2-1_amd64.deb"

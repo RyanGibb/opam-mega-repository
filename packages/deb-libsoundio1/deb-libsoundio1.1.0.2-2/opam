@@ -9,7 +9,7 @@ depends: [
   "deb-libasound2" {>= "1.0.27"}
   "deb-libc6" {>= "2.17"}
   "deb-libpulse0" {>= "0.99.1"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "libsoundio1_1.0.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libs/libsoundio/libsoundio1_1.0.2-2_amd64.deb"

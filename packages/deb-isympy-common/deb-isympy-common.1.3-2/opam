@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r isympy-common"]
 ]
 depends: [
-  ("deb-python-any" | "deb- python-any")
+  ("deb-python-any" | "deb-python-any")
 ]
 conflicts: [
   "deb-isympy" {< "1.0-2"}

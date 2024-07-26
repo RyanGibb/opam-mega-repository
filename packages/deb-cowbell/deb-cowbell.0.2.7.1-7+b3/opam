@@ -20,7 +20,7 @@ depends: [
   "deb-libtag1v5" {>= "1.9.1-2.2~"}
   "deb-libtagc0"
   "deb-mono-runtime" {>= "3.0~"}
-  ("deb-libc6" {>= "2.28"} | "deb- libc6-1" {>= "2.28"} | "deb- libc0-1" {>= "2.28"})
+  ("deb-libc6" {>= "2.28"} | "deb-libc6-1" {>= "2.28"} | "deb-libc0-1" {>= "2.28"})
 ]
 extra-source "cowbell_0.2.7.1-7+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cowbell/cowbell_0.2.7.1-7+b3_amd64.deb"

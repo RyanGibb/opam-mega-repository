@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-ffi-rzmq-core" {>= "1.0.6~"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-ffi-rzmq_2.0.6-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-ffi-rzmq/ruby-ffi-rzmq_2.0.6-2_all.deb"

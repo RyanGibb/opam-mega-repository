@@ -10,7 +10,7 @@ depends: [
   "deb-python3-any"
   "deb-screen"
   "deb-socat"
-  ("deb-iproute2" | "deb- iproute")
+  ("deb-iproute2" | "deb-iproute")
 ]
 extra-source "epoptes-client_23.01-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/epoptes/epoptes-client_23.01-1_all.deb"

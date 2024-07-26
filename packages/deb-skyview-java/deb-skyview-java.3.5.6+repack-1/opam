@@ -12,7 +12,7 @@ depends: [
   "deb-libfits-java"
   "deb-libij-java"
   "deb-libjsamp-java"
-  ("deb-default-jre" | "deb- java7-runtime" | "deb- java8-runtime" | "deb- java9-runtime" | "deb- java10-runtime" | "deb- java11-runtime")
+  ("deb-default-jre" | "deb-java7-runtime" | "deb-java8-runtime" | "deb-java9-runtime" | "deb-java10-runtime" | "deb-java11-runtime")
 ]
 extra-source "skyview-java_3.5.6+repack-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/skyview/skyview-java_3.5.6+repack-1_all.deb"

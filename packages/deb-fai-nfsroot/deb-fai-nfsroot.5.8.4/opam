@@ -9,7 +9,7 @@ depends: [
   "deb-fai-client" {>= "5.2"}
   "deb-fai-setup-storage"
   "deb-syslinux-efi"
-  ("deb-pxelinux" | "deb- syslinux-common")
+  ("deb-pxelinux" | "deb-syslinux-common")
 ]
 extra-source "fai-nfsroot_5.8.4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fai/fai-nfsroot_5.8.4_all.deb"

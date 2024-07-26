@@ -9,7 +9,7 @@ depends: [
   "deb-libtickit-perl"
   "deb-libtickit-widgets-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.17.7"} | "deb- libscalar-list-utils-perl" {>= "1-1.26"})
+  ("deb-perl" {>= "5.17.7"} | "deb-libscalar-list-utils-perl" {>= "1-1.26"})
 ]
 extra-source "libtickit-widget-tabbed-perl_0.021-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libt/libtickit-widget-tabbed-perl/libtickit-widget-tabbed-perl_0.021-2_all.deb"

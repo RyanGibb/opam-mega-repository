@@ -12,7 +12,7 @@ depends: [
   "deb-python-numpy"
   "deb-python-scipy"
   "deb-python-six" {>= "1.9.0"}
-  ("deb-libblas-dev" | "deb- libblas-so")
+  ("deb-libblas-dev" | "deb-libblas-so")
 ]
 extra-source "python-theano_1.0.3+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/theano/python-theano_1.0.3+dfsg-1_amd64.deb"

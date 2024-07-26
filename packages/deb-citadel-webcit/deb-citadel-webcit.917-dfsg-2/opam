@@ -21,7 +21,7 @@ depends: [
   "deb-openssl"
   "deb-tinymce"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "citadel-webcit_917-dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/webcit/citadel-webcit_917-dfsg-2_amd64.deb"

@@ -9,8 +9,8 @@ depends: [
   "deb-libterm-readkey-perl"
   "deb-libwww-perl"
   "deb-perl-any"
-  ("deb-default-mta" | "deb- mail-transport-agent")
-  ("deb-libterm-readline-perl-perl" | "deb- libterm-readline-gnu-perl")
+  ("deb-default-mta" | "deb-mail-transport-agent")
+  ("deb-libterm-readline-perl-perl" | "deb-libterm-readline-gnu-perl")
 ]
 extra-source "rt4-clients_4.4.4+dfsg-2+deb11u3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/request-tracker4/rt4-clients_4.4.4+dfsg-2+deb11u3_all.deb"

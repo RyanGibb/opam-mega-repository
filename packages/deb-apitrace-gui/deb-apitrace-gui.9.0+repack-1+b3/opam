@@ -15,7 +15,7 @@ depends: [
   "deb-libsnappy1v5" {>= "1.1.8"}
   "deb-libstdc++6" {>= "9"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "apitrace-gui_9.0+repack-1+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/apitrace/apitrace-gui_9.0+repack-1+b3_amd64.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-bc"
-  ("deb-zfs-fuse" | "deb- zfsutils-linux" | "deb- zfsutils")
+  ("deb-zfs-fuse" | "deb-zfsutils-linux" | "deb-zfsutils")
 ]
 extra-source "zfsnap_1.11.1-5.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/z/zfsnap/zfsnap_1.11.1-5.1_all.deb"

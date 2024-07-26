@@ -56,7 +56,7 @@ depends: [
   "deb-libxrandr2"
   "deb-libxslt1-1" {>= "1.1.27"}
   "deb-zlib1g" {>= "1-1.2.2"}
-  ("deb-libgtk-3-0" | "deb- xdg-desktop-portal-backend")
+  ("deb-libgtk-3-0" | "deb-xdg-desktop-portal-backend")
 ]
 conflicts: [
   "deb-libgl1-mesa-swx11"

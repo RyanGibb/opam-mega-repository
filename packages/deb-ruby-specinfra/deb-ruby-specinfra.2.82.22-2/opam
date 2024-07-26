@@ -9,7 +9,7 @@ depends: [
   "deb-ruby-net-scp"
   "deb-ruby-net-ssh"
   "deb-ruby-net-telnet"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-specinfra_2.82.22-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-specinfra/ruby-specinfra_2.82.22-2_all.deb"

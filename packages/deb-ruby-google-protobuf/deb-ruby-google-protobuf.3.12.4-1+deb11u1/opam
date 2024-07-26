@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.11"}
   "deb-libruby2-7" {>= "2.7.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 conflicts: [
   "deb-ruby-google-protobuf" {< "3.6.0~"}

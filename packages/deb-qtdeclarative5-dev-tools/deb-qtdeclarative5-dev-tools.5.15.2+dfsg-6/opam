@@ -16,8 +16,8 @@ depends: [
   "deb-libqt5widgets5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-qtchooser"
-  ("deb-libqt5gui5" {>= "5.2.0"} | "deb- libqt5gui5-gles" {>= "5.2.0"})
-  ("deb-libqt5quick5" {>= "5.6.1"} | "deb- libqt5quick5-gles" {>= "5.6.1"})
+  ("deb-libqt5gui5" {>= "5.2.0"} | "deb-libqt5gui5-gles" {>= "5.2.0"})
+  ("deb-libqt5quick5" {>= "5.6.1"} | "deb-libqt5quick5-gles" {>= "5.6.1"})
 ]
 extra-source "qtdeclarative5-dev-tools_5.15.2+dfsg-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtdeclarative-opensource-src/qtdeclarative5-dev-tools_5.15.2+dfsg-6_amd64.deb"

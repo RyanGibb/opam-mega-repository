@@ -10,7 +10,7 @@ depends: [
   "deb-libssl3" {>= "3.0.0"}
   "deb-libsystemd-shared" {= "252.26-1~deb12u2"}
   "deb-systemd" {= "252.26-1~deb12u2"}
-  ("deb-default-dbus-system-bus" | "deb- dbus-system-bus")
+  ("deb-default-dbus-system-bus" | "deb-dbus-system-bus")
 ]
 conflicts: [
   "deb-resolvconf"

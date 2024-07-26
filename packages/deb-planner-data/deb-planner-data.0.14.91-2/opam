@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r planner-data"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "planner-data_0.14.91-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/planner/planner-data_0.14.91-2_all.deb"

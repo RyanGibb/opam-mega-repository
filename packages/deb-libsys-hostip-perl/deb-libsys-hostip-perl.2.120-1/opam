@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl"
-  ("deb-iproute2" | "deb- net-tools")
+  ("deb-iproute2" | "deb-net-tools")
 ]
 extra-source "libsys-hostip-perl_2.120-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libs/libsys-hostip-perl/libsys-hostip-perl_2.120-1_all.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libperl4-corelibs-perl"
   "deb-perl"
-  ("deb-debconf" {>= "1.2.0"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "1.2.0"} | "deb-debconf-2-0")
 ]
 extra-source "dist_1:3.5-236-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dist/dist_3.5-236-1_all.deb"

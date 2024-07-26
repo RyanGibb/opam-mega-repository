@@ -12,7 +12,7 @@ depends: [
   "deb-libqt5core5a"
   "deb-libqt5core5a" {>= "5.15.2+dfsg~"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.15.2+dfsg~"} | "deb- libqt5gui5-gles" {>= "5.15.2+dfsg~"})
+  ("deb-libqt5gui5" {>= "5.15.2+dfsg~"} | "deb-libqt5gui5-gles" {>= "5.15.2+dfsg~"})
 ]
 extra-source "libqt53danimation5_5.15.2+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qt3d-opensource-src/libqt53danimation5_5.15.2+dfsg-2_amd64.deb"

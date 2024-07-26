@@ -41,7 +41,7 @@ depends: [
   "deb-libxklavier16" {>= "5.0"}
   "deb-libxtst6"
   "deb-python3-tinycss"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "cinnamon-settings-daemon_4.8.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cinnamon-settings-daemon/cinnamon-settings-daemon_4.8.5-1_amd64.deb"

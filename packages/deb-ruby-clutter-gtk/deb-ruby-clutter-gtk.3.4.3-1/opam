@@ -10,7 +10,7 @@ depends: [
   "deb-ruby-clutter" {>= "3.4.3-1"}
   "deb-ruby-clutter-gdk" {>= "3.4.3-1"}
   "deb-ruby-gtk3" {>= "3.4.3-1"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-clutter-gtk_3.4.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-gnome/ruby-clutter-gtk_3.4.3-1_all.deb"

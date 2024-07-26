@@ -35,7 +35,7 @@ depends: [
   "deb-xfce4-weather-plugin"
   "deb-xfce4-whiskermenu-plugin"
   "deb-xfce4-xkb-plugin"
-  ("deb-xfce4-notifyd" | "deb- notification-daemon" | "deb- notify-osd")
+  ("deb-xfce4-notifyd" | "deb-notification-daemon" | "deb-notify-osd")
 ]
 extra-source "xfce4-goodies_4.14.0_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xfce4-goodies/xfce4-goodies_4.14.0_amd64.deb"

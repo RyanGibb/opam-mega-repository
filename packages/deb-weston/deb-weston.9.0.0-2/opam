@@ -32,7 +32,7 @@ depends: [
   "deb-libwebp6" {>= "0.5.1"}
   "deb-libweston-9-0" {>= "9.0.0"}
   "deb-libxkbcommon0" {>= "0.5.0"}
-  ("deb-libegl1-mesa" {>= "8.0-2"} | "deb- libegl1-x11")
+  ("deb-libegl1-mesa" {>= "8.0-2"} | "deb-libegl1-x11")
 ]
 conflicts: [
   "deb-libweston-8-dev"

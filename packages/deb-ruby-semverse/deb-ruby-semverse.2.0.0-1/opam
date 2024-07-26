@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-semverse"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-semverse_2.0.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-semverse/ruby-semverse_2.0.0-1_all.deb"

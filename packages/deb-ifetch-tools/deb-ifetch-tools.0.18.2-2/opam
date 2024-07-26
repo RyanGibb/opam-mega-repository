@@ -12,7 +12,7 @@ depends: [
   "deb-ruby"
   "deb-ruby-net-http-digest-auth"
   "deb-ruby-rmagick"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "ifetch-tools_0.18.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/ifetch-tools/ifetch-tools_0.18.2-2_all.deb"

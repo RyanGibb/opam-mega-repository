@@ -17,7 +17,7 @@ depends: [
   "deb-libqt5script5" {>= "5.6.0~beta"}
   "deb-libqt5widgets5" {>= "5.11.0~rc1"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libqt5gui5" {>= "5.9"} | "deb- libqt5gui5-gles" {>= "5.9"})
+  ("deb-libqt5gui5" {>= "5.9"} | "deb-libqt5gui5-gles" {>= "5.9"})
 ]
 extra-source "ostinato_1.2.0-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/ostinato/ostinato_1.2.0-1+b1_amd64.deb"

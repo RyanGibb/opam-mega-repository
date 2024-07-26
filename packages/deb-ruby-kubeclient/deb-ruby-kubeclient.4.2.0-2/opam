@@ -9,7 +9,7 @@ depends: [
   "deb-ruby-http" {>= "3.0~"}
   "deb-ruby-recursive-open-struct" {>= "1.0.4~"}
   "deb-ruby-rest-client" {>= "2.0~"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-kubeclient_4.2.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-kubeclient/ruby-kubeclient_4.2.0-2_all.deb"

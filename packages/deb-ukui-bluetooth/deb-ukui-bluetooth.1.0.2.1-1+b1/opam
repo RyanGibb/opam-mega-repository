@@ -22,8 +22,8 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libukui-log4qt1" {>= "1.0.1"}
   "deb-libx11-6"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-libqt5gui5" {>= "5.8.0"} | "deb- libqt5gui5-gles" {>= "5.8.0"})
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-libqt5gui5" {>= "5.8.0"} | "deb-libqt5gui5-gles" {>= "5.8.0"})
 ]
 extra-source "ukui-bluetooth_1.0.2.1-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/ukui-bluetooth/ukui-bluetooth_1.0.2.1-1+b1_amd64.deb"

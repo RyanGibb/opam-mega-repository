@@ -13,7 +13,7 @@ depends: [
   "deb-libgsound0" {>= "1.0.2"}
   "deb-libgtk-3-0" {>= "3.24.0"}
   "deb-librsvg2-2" {>= "2.32.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "iagno_1:3.38.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/iagno/iagno_3.38.0-1_amd64.deb"

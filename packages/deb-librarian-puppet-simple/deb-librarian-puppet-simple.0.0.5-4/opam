@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-git"
   "deb-ruby-thor"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 conflicts: [
   "deb-librarian-puppet"

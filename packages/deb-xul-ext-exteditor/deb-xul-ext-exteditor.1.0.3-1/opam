@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r xul-ext-exteditor"]
 ]
 depends: [
-  ("deb-thunderbird" {>= "3.1"} | "deb- icedove" {>= "3.1"})
+  ("deb-thunderbird" {>= "3.1"} | "deb-icedove" {>= "3.1"})
 ]
 extra-source "xul-ext-exteditor_1.0.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xul-ext-exteditor/xul-ext-exteditor_1.0.3-1_all.deb"

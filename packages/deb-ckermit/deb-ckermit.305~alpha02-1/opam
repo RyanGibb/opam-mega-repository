@@ -15,7 +15,7 @@ depends: [
   "deb-libpam0g" {>= "0.99.7.1"}
   "deb-libssl1-1" {>= "1.1.0"}
   "deb-libtinfo6" {>= "6"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "ckermit_305~alpha02-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/ckermit/ckermit_305~alpha02-1_amd64.deb"

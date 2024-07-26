@@ -10,7 +10,7 @@ depends: [
   "deb-python"
   "deb-python-netsyslog"
   "deb-python-pynag" {>= "0.9.1"}
-  ("deb-icinga2" | "deb- icinga" | "deb- nagios3")
+  ("deb-icinga2" | "deb-icinga" | "deb-nagios3")
 ]
 extra-source "syslog-nagios-bridge_1.0.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/syslog-nagios-bridge/syslog-nagios-bridge_1.0.3-1_amd64.deb"

@@ -21,7 +21,7 @@ depends: [
   "deb-libquicktime2" {>= "2-1.2.4"}
   "deb-libtiff5" {>= "4.0.3"}
   "deb-libv4lconvert0" {>= "0.5.0"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "gmerlin-plugins-base_1.2.0~dfsg+1-6.1+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gmerlin/gmerlin-plugins-base_1.2.0~dfsg+1-6.1+b3_amd64.deb"

@@ -15,7 +15,7 @@ depends: [
   "deb-libgudev-1-0-0"
   "deb-libpolkit-gobject-1-0" {>= "0.99"}
   "deb-libudev1" {>= "183"}
-  ("deb-default-logind" | "deb- logind")
+  ("deb-default-logind" | "deb-logind")
 ]
 extra-source "urfkill_0.5.0-7+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/urfkill/urfkill_0.5.0-7+b1_amd64.deb"

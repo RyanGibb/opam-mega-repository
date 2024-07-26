@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r idl-font-lock-el"]
 ]
 depends: [
-  ("deb-emacs24" | "deb- emacsen")
+  ("deb-emacs24" | "deb-emacsen")
 ]
 extra-source "idl-font-lock-el_1.5-9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/idl-font-lock-el/idl-font-lock-el_1.5-9_all.deb"

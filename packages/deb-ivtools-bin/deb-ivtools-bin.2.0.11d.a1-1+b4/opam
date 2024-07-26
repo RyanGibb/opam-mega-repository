@@ -12,7 +12,7 @@ depends: [
   "deb-libiv-unidraw2" {>= "2.0.11d.a1"}
   "deb-libiv2" {>= "2.0.11d.a1"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-xterm" | "deb- x-terminal-emulator")
+  ("deb-xterm" | "deb-x-terminal-emulator")
 ]
 extra-source "ivtools-bin_2.0.11d.a1-1+b4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/ivtools/ivtools-bin_2.0.11d.a1-1+b4_amd64.deb"

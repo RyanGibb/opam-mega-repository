@@ -24,7 +24,7 @@ depends: [
   "deb-libxi6"
   "deb-libxxf86dga1"
   "deb-libxxf86vm1"
-  ("deb-libavcodec58" {>= "7-4.0"} | "deb- libavcodec-extra58" {>= "7-4.0"})
+  ("deb-libavcodec58" {>= "7-4.0"} | "deb-libavcodec-extra58" {>= "7-4.0"})
 ]
 extra-source "libavifile-0.7c2_1:0.7.48~20090503.ds-20.1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/avifile/libavifile-0.7c2_0.7.48~20090503.ds-20.1+b1_amd64.deb"

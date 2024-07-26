@@ -27,7 +27,7 @@ depends: [
   "deb-libx11-6"
   "deb-libzen0v5" {>= "0.4.31-2~"}
   "deb-mesa-vdpau-drivers"
-  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb-libqt5gui5-gles" {>= "5.7.0"})
 ]
 extra-source "kylin-video_3.1.3-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kylin-video/kylin-video_3.1.3-5_amd64.deb"

@@ -11,8 +11,8 @@ depends: [
   "deb-python3-numpy"
   "deb-python3-pandas"
   "deb-python3-scipy"
-  ("deb-python3-matplotlib" | "deb- python3" {< "3.6"})
-  ("deb-python3-matplotlib" | "deb- python3" {> "3.6"})
+  ("deb-python3-matplotlib" | "deb-python3" {< "3.6"})
+  ("deb-python3-matplotlib" | "deb-python3" {> "3.6"})
 ]
 extra-source "python3-treetime_0.9.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-treetime/python3-treetime_0.9.4-1_all.deb"

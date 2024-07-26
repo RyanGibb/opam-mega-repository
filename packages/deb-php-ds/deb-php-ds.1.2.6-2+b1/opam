@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.14"}
   "deb-php-common" {>= "1-7.0+33~"}
-  ("deb-phpapi-20180731" | "deb- phpapi-20170718")
+  ("deb-phpapi-20180731" | "deb-phpapi-20170718")
 ]
 extra-source "php-ds_1.2.6-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/php-ds/php-ds_1.2.6-2+b1_amd64.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libantlr3-runtime-java" {= "3.5.2-9"}
   "deb-libstringtemplate4-java"
-  ("deb-default-jre-headless" | "deb- java7-runtime-headless")
+  ("deb-default-jre-headless" | "deb-java7-runtime-headless")
 ]
 extra-source "antlr3_3.5.2-9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/antlr3/antlr3_3.5.2-9_all.deb"

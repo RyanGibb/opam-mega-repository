@@ -9,7 +9,7 @@ depends: [
   "deb-libreoffice-common" {= "1-6.1.5-3+deb10u7"}
   "deb-libreoffice-help-common" {= "1-6.1.5-3+deb10u7"}
   "deb-libreoffice-l10n-ja"
-  ("deb-firefox-esr" | "deb- epiphany-browser" | "deb- konqueror" | "deb- chromium" | "deb- firefox")
+  ("deb-firefox-esr" | "deb-epiphany-browser" | "deb-konqueror" | "deb-chromium" | "deb-firefox")
 ]
 extra-source "libreoffice-help-ja_1:6.1.5-3+deb10u7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libr/libreoffice/libreoffice-help-ja_6.1.5-3+deb10u7_all.deb"

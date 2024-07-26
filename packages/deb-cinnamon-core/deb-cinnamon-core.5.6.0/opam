@@ -15,9 +15,9 @@ depends: [
   "deb-muffin" {>= "5.6"}
   "deb-nemo" {>= "5.6"}
   "deb-xserver-xorg"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-gnome-terminal" | "deb- x-terminal-emulator")
-  ("deb-lightdm" | "deb- gdm3" | "deb- x-display-manager")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-gnome-terminal" | "deb-x-terminal-emulator")
+  ("deb-lightdm" | "deb-gdm3" | "deb-x-display-manager")
 ]
 extra-source "cinnamon-core_5.6.0_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cinnamon-desktop-environment/cinnamon-core_5.6.0_all.deb"

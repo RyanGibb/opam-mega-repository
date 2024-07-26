@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-jar-dependencies"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-jar-dependencies_0.3.10-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-jar-dependencies/ruby-jar-dependencies_0.3.10-2_all.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-liburi-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.19.8"} | "deb- libio-socket-ip-perl" {>= "0.26"})
+  ("deb-perl" {>= "5.19.8"} | "deb-libio-socket-ip-perl" {>= "0.26"})
 ]
 extra-source "libnet-http-perl_6.18-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libn/libnet-http-perl/libnet-http-perl_6.18-1_all.deb"

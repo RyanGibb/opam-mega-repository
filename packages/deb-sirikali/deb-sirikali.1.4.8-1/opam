@@ -15,7 +15,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.14.1"}
   "deb-libsecret-1-0" {>= "0.7"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "sirikali_1.4.8-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sirikali/sirikali_1.4.8-1_amd64.deb"

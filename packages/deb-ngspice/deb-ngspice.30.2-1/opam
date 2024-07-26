@@ -18,7 +18,7 @@ depends: [
   "deb-libxext6"
   "deb-libxmu6"
   "deb-libxt6"
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 extra-source "ngspice_30.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/ngspice/ngspice_30.2-1_amd64.deb"

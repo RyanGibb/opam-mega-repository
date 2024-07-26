@@ -12,7 +12,7 @@ depends: [
   "deb-python3-pkg-resources"
   "deb-python3-public"
   "deb-sphinx-rtd-theme-common" {>= "1.2.0+dfsg"}
-  ("deb-python3-typing-extensions" | "deb- python3" {> "3.8"})
+  ("deb-python3-typing-extensions" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-aiosmtpd_1.4.3-1.1+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-aiosmtpd/python3-aiosmtpd_1.4.3-1.1+deb12u1_all.deb"

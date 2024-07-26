@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-adduser" {>= "3.11"}
-  ("deb-debconf" {>= "0.2.80"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.2.80"} | "deb-debconf-2-0")
 ]
 extra-source "snort-rules-default_2.9.7.0-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/snort/snort-rules-default_2.9.7.0-5_all.deb"

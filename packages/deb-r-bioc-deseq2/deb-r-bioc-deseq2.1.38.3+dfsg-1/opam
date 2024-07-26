@@ -25,8 +25,8 @@ depends: [
   "deb-r-cran-matrixstats"
   "deb-r-cran-rcpp" {>= "0.11.0"}
   "deb-r-cran-rcpparmadillo"
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "r-bioc-deseq2_1.38.3+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-bioc-deseq2/r-bioc-deseq2_1.38.3+dfsg-1_amd64.deb"

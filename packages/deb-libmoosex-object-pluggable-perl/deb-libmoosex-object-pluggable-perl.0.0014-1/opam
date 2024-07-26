@@ -12,7 +12,7 @@ depends: [
   "deb-libnamespace-autoclean-perl"
   "deb-libtry-tiny-perl"
   "deb-perl"
-  ("deb-libmodule-pluggable-perl" | "deb- perl" {< "5.17.0"})
+  ("deb-libmodule-pluggable-perl" | "deb-perl" {< "5.17.0"})
 ]
 extra-source "libmoosex-object-pluggable-perl_0.0014-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libm/libmoosex-object-pluggable-perl/libmoosex-object-pluggable-perl_0.0014-1_all.deb"

@@ -29,7 +29,7 @@ depends: [
   "deb-r-cran-rcpp" {>= "1.0.2"}
   "deb-r-cran-rcpparmadillo"
   "deb-r-cran-viridis"
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "r-bioc-degnorm_1.8.2+ds-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-bioc-degnorm/r-bioc-degnorm_1.8.2+ds-1_amd64.deb"

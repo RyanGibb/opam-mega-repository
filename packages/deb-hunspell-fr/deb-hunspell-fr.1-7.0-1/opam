@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r hunspell-fr"]
 ]
 depends: [
-  ("deb-hunspell-fr-classical" | "deb- hunspell-fr-revised" | "deb- hunspell-fr-comprehensive")
+  ("deb-hunspell-fr-classical" | "deb-hunspell-fr-revised" | "deb-hunspell-fr-comprehensive")
 ]
 extra-source "hunspell-fr_1:7.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/hunspell-fr/hunspell-fr_7.0-1_all.deb"

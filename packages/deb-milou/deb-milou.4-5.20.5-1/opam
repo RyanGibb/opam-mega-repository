@@ -18,8 +18,8 @@ depends: [
   "deb-libqt5widgets5" {>= "5.15.0~"}
   "deb-libstdc++6" {>= "4.1.1"}
   "deb-plasma-framework"
-  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb- libqt5gui5-gles" {>= "5.15.0~"})
-  ("deb-libqt5quick5" {>= "5.15.0~"} | "deb- libqt5quick5-gles" {>= "5.15.0~"})
+  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb-libqt5gui5-gles" {>= "5.15.0~"})
+  ("deb-libqt5quick5" {>= "5.15.0~"} | "deb-libqt5quick5-gles" {>= "5.15.0~"})
 ]
 extra-source "milou_4:5.20.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/milou/milou_5.20.5-1_amd64.deb"

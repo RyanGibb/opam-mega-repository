@@ -15,7 +15,7 @@ depends: [
   "deb-libmro-compat-perl"
   "deb-libstring-shellquote-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.13.9"} | "deb- libjson-pp-perl")
+  ("deb-perl" {>= "5.13.9"} | "deb-libjson-pp-perl")
 ]
 extra-source "libobject-remote-perl_0.004000-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libo/libobject-remote-perl/libobject-remote-perl_0.004000-1_all.deb"

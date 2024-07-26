@@ -40,8 +40,8 @@ depends: [
   "deb-libx11-6"
   "deb-libxv1"
   "deb-libzxing2" {>= "1.4.0"}
-  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
-  ("deb-libqt5quick5" {>= "5.2.0~beta1"} | "deb- libqt5quick5-gles" {>= "5.2.0~beta1"})
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb-libqt5gui5-gles" {>= "5.7.0"})
+  ("deb-libqt5quick5" {>= "5.2.0~beta1"} | "deb-libqt5quick5-gles" {>= "5.2.0~beta1"})
 ]
 extra-source "libmediastreamer12_1:5.1.64+dfsg-3+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mediastreamer2/libmediastreamer12_5.1.64+dfsg-3+b3_amd64.deb"

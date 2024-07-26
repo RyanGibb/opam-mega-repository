@@ -13,7 +13,7 @@ depends: [
   "deb-librole-tiny-perl"
   "deb-libstrictures-perl"
   "deb-perl-any"
-  ("deb-libtype-tiny-perl" {>= "2"} | "deb- libtype-tie-perl")
+  ("deb-libtype-tiny-perl" {>= "2"} | "deb-libtype-tie-perl")
 ]
 extra-source "liblist-objects-withutils-perl_2.028003-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libl/liblist-objects-withutils-perl/liblist-objects-withutils-perl_2.028003-4_all.deb"

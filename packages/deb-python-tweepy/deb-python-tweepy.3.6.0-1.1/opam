@@ -12,7 +12,7 @@ depends: [
   "deb-python-requests-oauthlib"
   "deb-python-six" {>= "1.10.0"}
   "deb-python-socks"
-  ("deb-python-simplejson" | "deb- python" {>= "2.6"})
+  ("deb-python-simplejson" | "deb-python" {>= "2.6"})
 ]
 extra-source "python-tweepy_3.6.0-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tweepy/python-tweepy_3.6.0-1.1_all.deb"

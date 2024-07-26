@@ -14,9 +14,9 @@ depends: [
   "deb-libqt5quickwidgets5" {= "5.15.8+dfsg-3"}
   "deb-qt5-qmltooling-plugins"
   "deb-qtdeclarative5-dev-tools"
-  ("deb-libqt5quick5" {= "5.15.8+dfsg-3"} | "deb- libqt5quick5-gles" {>= "5.15"})
-  ("deb-libqt5quickparticles5" {= "5.15.8+dfsg-3"} | "deb- libqt5quickparticles5-gles" {>= "5.15"})
-  ("deb-qtbase5-dev" | "deb- qtbase5-gles-dev")
+  ("deb-libqt5quick5" {= "5.15.8+dfsg-3"} | "deb-libqt5quick5-gles" {>= "5.15"})
+  ("deb-libqt5quickparticles5" {= "5.15.8+dfsg-3"} | "deb-libqt5quickparticles5-gles" {>= "5.15"})
+  ("deb-qtbase5-dev" | "deb-qtbase5-gles-dev")
 ]
 extra-source "qtdeclarative5-dev_5.15.8+dfsg-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtdeclarative-opensource-src/qtdeclarative5-dev_5.15.8+dfsg-3_amd64.deb"

@@ -12,7 +12,7 @@ depends: [
   "deb-iptables"
   "deb-lsb-base"
   "deb-netbase"
-  ("deb-isc-dhcp-client" | "deb- dhcpcd" | "deb- dhcpcd5" | "deb- pump")
+  ("deb-isc-dhcp-client" | "deb-dhcpcd" | "deb-dhcpcd5" | "deb-pump")
 ]
 conflicts: [
   "deb-ifupdown"

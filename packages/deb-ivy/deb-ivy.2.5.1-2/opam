@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ivy"]
 ]
 depends: [
-  ("deb-default-jre-headless" | "deb- java2-runtime-headless")
+  ("deb-default-jre-headless" | "deb-java2-runtime-headless")
 ]
 extra-source "ivy_2.5.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/ivy/ivy_2.5.1-2_all.deb"

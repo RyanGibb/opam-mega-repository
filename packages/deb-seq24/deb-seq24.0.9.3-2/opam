@@ -16,7 +16,7 @@ depends: [
   "deb-libgtkmm-2-4-1v5" {>= "1-2.24.0"}
   "deb-libsigc++-2-0-0v5" {>= "2.2.0"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "seq24_0.9.3-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/seq24/seq24_0.9.3-2_amd64.deb"

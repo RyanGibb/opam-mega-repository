@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.4"}
   "deb-libisns0"
   "deb-open-isns-utils"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "open-isns-discoveryd_0.100-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/open-isns/open-isns-discoveryd_0.100-3_amd64.deb"

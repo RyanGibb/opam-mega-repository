@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r jenkins-debian-glue"]
 ]
 depends: [
-  ("deb-sudo" | "deb- sudo-ldap")
+  ("deb-sudo" | "deb-sudo-ldap")
 ]
 conflicts: [
   "deb-jenkins-debian-glue-buildenv-git"

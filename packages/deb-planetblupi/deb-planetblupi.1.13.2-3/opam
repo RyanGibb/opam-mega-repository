@@ -14,7 +14,7 @@ depends: [
   "deb-libsdl2-mixer-2-0-0" {>= "2.0.2"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-planetblupi-common" {>= "1.13.2-3"}
-  ("deb-planetblupi-music-ogg" {>= "1.13.2-3"} | "deb- planetblupi-music-midi" {>= "1.13.2-3"})
+  ("deb-planetblupi-music-ogg" {>= "1.13.2-3"} | "deb-planetblupi-music-midi" {>= "1.13.2-3"})
 ]
 extra-source "planetblupi_1.13.2-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/planetblupi/planetblupi_1.13.2-3_amd64.deb"

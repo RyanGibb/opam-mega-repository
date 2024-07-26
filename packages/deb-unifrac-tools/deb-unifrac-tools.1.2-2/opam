@@ -15,7 +15,7 @@ depends: [
   "deb-libstdc++6" {>= "11"}
   "deb-libsz2" {>= "1.0.6"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 conflicts: [
   "deb-libssu-tools"

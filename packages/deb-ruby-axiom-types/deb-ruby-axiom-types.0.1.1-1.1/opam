@@ -9,7 +9,7 @@ depends: [
   "deb-ruby-descendants-tracker"
   "deb-ruby-ice-nine"
   "deb-ruby-thread-safe"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-axiom-types_0.1.1-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-axiom-types/ruby-axiom-types_0.1.1-1.1_all.deb"

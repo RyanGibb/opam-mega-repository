@@ -23,7 +23,7 @@ depends: [
   "deb-libsystemd0"
   "deb-libtinfo6" {>= "6"}
   "deb-lsb-base"
-  ("deb-polkitd" | "deb- policykit-1")
+  ("deb-polkitd" | "deb-policykit-1")
 ]
 extra-source "brltty_6.5-7+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/brltty/brltty_6.5-7+deb12u1_amd64.deb"

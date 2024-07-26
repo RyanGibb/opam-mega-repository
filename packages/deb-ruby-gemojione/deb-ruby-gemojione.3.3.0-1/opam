@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-json"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-gemojione_3.3.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-gemojione/ruby-gemojione_3.3.0-1_all.deb"

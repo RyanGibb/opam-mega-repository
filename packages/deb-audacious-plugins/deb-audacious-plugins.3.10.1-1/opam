@@ -57,7 +57,7 @@ depends: [
   "deb-libxml2" {>= "2.7.4"}
   "deb-libxrender1"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "audacious-plugins_3.10.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/audacious-plugins/audacious-plugins_3.10.1-1_amd64.deb"

@@ -33,7 +33,7 @@ depends: [
   "deb-liburi-perl"
   "deb-libyaml-libyaml-perl"
   "deb-perl"
-  ("deb-liblog-any-perl" {>= "1.00"} | "deb- liblog-any-adapter-perl")
+  ("deb-liblog-any-perl" {>= "1.00"} | "deb-liblog-any-adapter-perl")
 ]
 extra-source "libpoet-perl_0.16-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libp/libpoet-perl/libpoet-perl_0.16-1_all.deb"

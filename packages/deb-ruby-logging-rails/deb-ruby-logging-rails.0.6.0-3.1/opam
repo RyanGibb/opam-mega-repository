@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-logging" {>= "1.8"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-logging-rails_0.6.0-3.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-logging-rails/ruby-logging-rails_0.6.0-3.1_all.deb"

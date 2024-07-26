@@ -9,7 +9,7 @@ depends: [
   "deb-ruby-actionpack" {>= "4"}
   "deb-ruby-redis-rack" {>= "1.5.0"}
   "deb-ruby-redis-store" {>= "1.1.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-redis-actionpack_5.0.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-redis-actionpack/ruby-redis-actionpack_5.0.1-2_all.deb"

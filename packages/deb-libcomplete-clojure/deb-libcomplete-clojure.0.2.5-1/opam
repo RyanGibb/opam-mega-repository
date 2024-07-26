@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r libcomplete-clojure"]
 ]
 depends: [
-  ("deb-libclojure-java" | "deb- libclojure1-8-java")
+  ("deb-libclojure-java" | "deb-libclojure1-8-java")
 ]
 extra-source "libcomplete-clojure_0.2.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/complete-clojure/libcomplete-clojure_0.2.5-1_all.deb"

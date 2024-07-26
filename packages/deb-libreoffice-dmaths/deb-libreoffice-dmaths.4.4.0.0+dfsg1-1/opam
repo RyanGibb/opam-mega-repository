@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-zenity"
-  ("deb-libreoffice-writer" | "deb- libreoffice-draw")
+  ("deb-libreoffice-writer" | "deb-libreoffice-draw")
 ]
 extra-source "libreoffice-dmaths_4.4.0.0+dfsg1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dmaths/libreoffice-dmaths_4.4.0.0+dfsg1-1_all.deb"

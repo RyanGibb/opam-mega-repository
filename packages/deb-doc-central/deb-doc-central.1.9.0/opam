@@ -11,7 +11,7 @@ depends: [
   "deb-python3"
   "deb-python3-debian"
   "deb-sensible-utils"
-  ("deb-apache2" | "deb- httpd-cgi")
+  ("deb-apache2" | "deb-httpd-cgi")
 ]
 extra-source "doc-central_1.9.0_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/doc-central/doc-central_1.9.0_all.deb"

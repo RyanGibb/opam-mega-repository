@@ -16,7 +16,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libx11-6"
   "deb-libxxf86vm1"
-  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb- libqt5gui5-gles" {>= "5.15.0~"})
+  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb-libqt5gui5-gles" {>= "5.15.0~"})
 ]
 extra-source "kgamma5_5.20.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kgamma5/kgamma5_5.20.5-1_amd64.deb"

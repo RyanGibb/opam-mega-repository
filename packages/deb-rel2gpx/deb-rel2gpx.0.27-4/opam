@@ -11,7 +11,7 @@ depends: [
   "deb-libwww-perl"
   "deb-libxml-perl"
   "deb-perl-any"
-  ("deb-perl" {>= "5.15.8"} | "deb- libmath-complex-perl")
+  ("deb-perl" {>= "5.15.8"} | "deb-libmath-complex-perl")
 ]
 extra-source "rel2gpx_0.27-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rel2gpx/rel2gpx_0.27-4_all.deb"

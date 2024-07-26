@@ -32,7 +32,7 @@ depends: [
   "deb-libxt6"
   "deb-python"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "libgwyddion2-0_2.52-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gwyddion/libgwyddion2-0_2.52-1_amd64.deb"

@@ -22,7 +22,7 @@ depends: [
   "deb-python3-requests"
   "deb-python3-tz"
   "deb-xdg-utils"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-feeds_0.16.2+dfsg1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-feeds/gnome-feeds_0.16.2+dfsg1-3_all.deb"

@@ -14,7 +14,7 @@ depends: [
   "deb-libgtk2-perl"
   "deb-libxml-dom-perl"
   "deb-perl"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "email-reminder_0.7.8-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/email-reminder/email-reminder_0.7.8-5_all.deb"

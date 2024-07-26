@@ -10,8 +10,8 @@ depends: [
   "deb-libimlib2" {>= "1.4.5"}
   "deb-libx11-6"
   "deb-libxft2" {> "2.1.1"}
-  ("deb-libperl4-corelibs-perl" | "deb- perl" {< "5.12.3-7"})
-  ("deb-perl" | "deb- perl5")
+  ("deb-libperl4-corelibs-perl" | "deb-perl" {< "5.12.3-7"})
+  ("deb-perl" | "deb-perl5")
 ]
 extra-source "mgp_1.13a+upstream20090219-12_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mgp/mgp_1.13a+upstream20090219-12_amd64.deb"

@@ -11,7 +11,7 @@ depends: [
   "deb-libglib2-0-0" {>= "2.31.8"}
   "deb-lsb-base" {>= "3.2-14"}
   "deb-python-any"
-  ("deb-python" {>= "2.7"} | "deb- python-argparse")
+  ("deb-python" {>= "2.7"} | "deb-python-argparse")
 ]
 extra-source "xnbd-common_0.3.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xnbd/xnbd-common_0.3.0-3_amd64.deb"

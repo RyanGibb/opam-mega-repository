@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-concurrent" {>= "1.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-i18n_1.5.3-1+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-i18n/ruby-i18n_1.5.3-1+deb10u1_all.deb"

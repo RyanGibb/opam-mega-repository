@@ -15,7 +15,7 @@ depends: [
   "deb-libtinfo6" {>= "6"}
   "deb-libx11-6"
   "deb-libzephyr4"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "zephyr-clients_3.1.2-1.1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/z/zephyr/zephyr-clients_3.1.2-1.1+b1_amd64.deb"

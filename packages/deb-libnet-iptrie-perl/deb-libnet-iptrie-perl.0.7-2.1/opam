@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libnetaddr-ip-perl"
   "deb-perl-any"
-  ("deb-perl" {>= "5.11.3"} | "deb- libscalar-list-utils-perl")
+  ("deb-perl" {>= "5.11.3"} | "deb-libscalar-list-utils-perl")
 ]
 extra-source "libnet-iptrie-perl_0.7-2.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libn/libnet-iptrie-perl/libnet-iptrie-perl_0.7-2.1_all.deb"

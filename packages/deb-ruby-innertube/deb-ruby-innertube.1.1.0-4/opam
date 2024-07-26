@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-innertube"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-innertube_1.1.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-innertube/ruby-innertube_1.1.0-4_all.deb"

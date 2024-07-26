@@ -13,7 +13,7 @@ depends: [
   "deb-librole-tiny-perl" {>= "1.003003"}
   "deb-libsub-quote-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.19.5"} | "deb- libscalar-list-utils-perl" {>= "1-1.33"})
+  ("deb-perl" {>= "5.19.5"} | "deb-libscalar-list-utils-perl" {>= "1-1.33"})
 ]
 extra-source "libspecio-perl_0.43-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libs/libspecio-perl/libspecio-perl_0.43-1_all.deb"

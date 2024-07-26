@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-ffi" {>= "1.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-ffi-bit-masks_0.1.1-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-ffi-bit-masks/ruby-ffi-bit-masks_0.1.1-1.1_all.deb"

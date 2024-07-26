@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.4"}
-  ("deb-daemon" | "deb- systemd-sysv")
+  ("deb-daemon" | "deb-systemd-sysv")
 ]
 extra-source "prometheus-exporter-exporter_0.4.0-1+b7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/prometheus-exporter-exporter/prometheus-exporter-exporter_0.4.0-1+b7_amd64.deb"

@@ -9,7 +9,7 @@ depends: [
   "deb-libasm-java"
   "deb-libbluray2" {< "1-1.1.0-1.1~"}
   "deb-libbluray2" {>= "1-1.1.0-1"}
-  ("deb-default-jre-headless" | "deb- java2-runtime-headless")
+  ("deb-default-jre-headless" | "deb-java2-runtime-headless")
 ]
 extra-source "libbluray-bdj_1:1.1.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libb/libbluray/libbluray-bdj_1.1.0-1_all.deb"

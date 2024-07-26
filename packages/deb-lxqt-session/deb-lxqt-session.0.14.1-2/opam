@@ -20,7 +20,7 @@ depends: [
   "deb-libx11-6"
   "deb-lxqt-qtplugin"
   "deb-x11-xkb-utils"
-  ("deb-lxqt-themes" | "deb- lxqt-theme")
+  ("deb-lxqt-themes" | "deb-lxqt-theme")
 ]
 extra-source "lxqt-session_0.14.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lxqt-session/lxqt-session_0.14.1-2_amd64.deb"

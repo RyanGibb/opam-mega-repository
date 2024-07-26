@@ -10,7 +10,7 @@ depends: [
   "deb-libc6" {>= "2.34"}
   "deb-libglib2-0-0" {>= "2.56"}
   "deb-libgtk-3-0" {>= "3.16.2"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "budgie-wallstreet_1.5.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/budgie-extras/budgie-wallstreet_1.5.0-2_amd64.deb"

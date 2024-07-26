@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libffi6" {= "3.2.1-9"}
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 conflicts: [
   "deb-libffi4-dev"

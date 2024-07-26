@@ -20,8 +20,8 @@ depends: [
   "deb-libwebpmux3"
   "deb-xdg-utils"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus")
 ]
 extra-source "simple-scan_42.5-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/simple-scan/simple-scan_42.5-2_amd64.deb"

@@ -20,7 +20,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libsymspg1" {>= "1.11.2"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 conflicts: [
   "deb-libavogadro0"

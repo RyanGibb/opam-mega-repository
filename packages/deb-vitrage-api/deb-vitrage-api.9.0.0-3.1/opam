@@ -10,7 +10,7 @@ depends: [
   "deb-python3-vitrage" {= "9.0.0-3.1"}
   "deb-sysvinit-utils"
   "deb-vitrage-common" {= "9.0.0-3.1"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "vitrage-api_9.0.0-3.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/vitrage/vitrage-api_9.0.0-3.1_all.deb"

@@ -19,12 +19,12 @@ depends: [
   "deb-libsm6"
   "deb-libstdc++6" {>= "4.1.1"}
   "deb-libx11-6"
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-libglu1-mesa" | "deb- libglu1")
-  ("deb-libsocl-1-2-0" {>= "1.2.3+dfsg~"} | "deb- libsocl-any-1-2-0")
-  ("deb-libstarpu-1-2-5" {>= "1.2.5+dfsg~"} | "deb- libstarpu-any-1-2-5")
-  ("deb-libstarpumpi-1-2-3" {>= "1.2.4+dfsg~"} | "deb- libstarpu-anympi-1-2-3")
-  ("deb-ocl-icd-libopencl1" | "deb- libopencl1")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-libglu1-mesa" | "deb-libglu1")
+  ("deb-libsocl-1-2-0" {>= "1.2.3+dfsg~"} | "deb-libsocl-any-1-2-0")
+  ("deb-libstarpu-1-2-5" {>= "1.2.5+dfsg~"} | "deb-libstarpu-any-1-2-5")
+  ("deb-libstarpumpi-1-2-3" {>= "1.2.4+dfsg~"} | "deb-libstarpu-anympi-1-2-3")
+  ("deb-ocl-icd-libopencl1" | "deb-libopencl1")
 ]
 conflicts: [
   "deb-starpu-contrib-examples"

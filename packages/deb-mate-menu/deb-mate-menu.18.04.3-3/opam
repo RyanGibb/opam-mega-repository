@@ -22,8 +22,8 @@ depends: [
   "deb-python-xdg"
   "deb-python-xlib"
   "deb-xdg-utils"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-mozo" | "deb- menulibre")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-mozo" | "deb-menulibre")
 ]
 extra-source "mate-menu_18.04.3-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mate-menu/mate-menu_18.04.3-3_all.deb"

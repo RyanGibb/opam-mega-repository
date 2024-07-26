@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-imagej"
   "deb-libjson-simple-java"
-  ("deb-default-jre" {>= "2-1.8"} | "deb- java8-runtime")
+  ("deb-default-jre" {>= "2-1.8"} | "deb-java8-runtime")
 ]
 extra-source "orthanc-imagej_1.2+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/orthanc-imagej/orthanc-imagej_1.2+dfsg-1_all.deb"

@@ -10,7 +10,7 @@ depends: [
   "deb-libfcitx-gclient1" {>= "1-4.2.9.5"}
   "deb-libglib2-0-0" {>= "2.12.0"}
   "deb-mlterm-common" {= "3.9.0-1"}
-  ("deb-mlterm" {= "3.9.0-1"} | "deb- mlterm-tiny" {= "3.9.0-1"})
+  ("deb-mlterm" {= "3.9.0-1"} | "deb-mlterm-tiny" {= "3.9.0-1"})
 ]
 extra-source "mlterm-im-fcitx_3.9.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mlterm/mlterm-im-fcitx_3.9.0-1_amd64.deb"

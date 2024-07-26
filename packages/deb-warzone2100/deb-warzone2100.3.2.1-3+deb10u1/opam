@@ -34,7 +34,7 @@ depends: [
   "deb-warzone2100-data" {<= "3.2.1-3+deb10u1"}
   "deb-warzone2100-data" {>= "3.2.1"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "warzone2100_3.2.1-3+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/warzone2100/warzone2100_3.2.1-3+deb10u1_amd64.deb"

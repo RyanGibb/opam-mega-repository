@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-dpkg-cross"
-  ("deb-g++-s390x-linux-gnu" {>= "4-8.3"} | "deb- g++-s390x")
-  ("deb-gcc-s390x-linux-gnu" {>= "4-8.3"} | "deb- gcc-s390x")
+  ("deb-g++-s390x-linux-gnu" {>= "4-8.3"} | "deb-g++-s390x")
+  ("deb-gcc-s390x-linux-gnu" {>= "4-8.3"} | "deb-gcc-s390x")
 ]
 extra-source "crossbuild-essential-s390x_12.6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/build-essential/crossbuild-essential-s390x_12.6_all.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl"
-  ("deb-perl" {>= "5.19.8"} | "deb- libio-socket-ip-perl" {>= "0.25"} | "deb- libio-socket-inet6-perl")
+  ("deb-perl" {>= "5.19.8"} | "deb-libio-socket-ip-perl" {>= "0.25"} | "deb-libio-socket-inet6-perl")
 ]
 extra-source "libnet-inet6glue-perl_0.603-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libn/libnet-inet6glue-perl/libnet-inet6glue-perl_0.603-2_all.deb"

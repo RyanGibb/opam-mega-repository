@@ -14,7 +14,7 @@ depends: [
   "deb-python3-apt"
   "deb-python3-gi"
   "deb-usb-ids"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "isenkram-cli_0.51_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/isenkram/isenkram-cli_0.51_all.deb"

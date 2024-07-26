@@ -39,8 +39,8 @@ depends: [
   "deb-wamerican"
   "deb-wget"
   "deb-xz-utils"
-  ("deb-default-logind" | "deb- logind")
-  ("deb-telnet" | "deb- telnet-client")
+  ("deb-default-logind" | "deb-logind")
+  ("deb-telnet" | "deb-telnet-client")
 ]
 extra-source "live-task-standard_12.0.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/live-tasks/live-task-standard_12.0.2_all.deb"

@@ -9,7 +9,7 @@ depends: [
   "deb-libclass-adapter-perl"
   "deb-libparams-util-perl"
   "deb-perl-any"
-  ("deb-libmodule-pluggable-perl" | "deb- perl" {< "5.17.0"})
+  ("deb-libmodule-pluggable-perl" | "deb-perl" {< "5.17.0"})
 ]
 extra-source "libsms-send-perl_1.06-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libs/libsms-send-perl/libsms-send-perl_1.06-4_all.deb"

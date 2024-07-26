@@ -20,7 +20,7 @@ depends: [
   "deb-libpangocairo-1-0-0" {>= "1.14.0"}
   "deb-libpangoft2-1-0-0" {>= "1.14.0"}
   "deb-libx11-6"
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus")
 ]
 extra-source "libunique-1.0-0_1.1.6-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libu/libunique/libunique-1.0-0_1.1.6-6_amd64.deb"

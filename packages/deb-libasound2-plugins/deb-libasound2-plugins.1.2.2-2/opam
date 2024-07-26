@@ -13,7 +13,7 @@ depends: [
   "deb-libc6" {>= "2.15"}
   "deb-libpulse0" {>= "0.99.1-1~"}
   "deb-libsamplerate0" {>= "0.1.7"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "libasound2-plugins_1.2.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/alsa-plugins/libasound2-plugins_1.2.2-2_amd64.deb"

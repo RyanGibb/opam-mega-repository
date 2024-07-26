@@ -18,8 +18,8 @@ depends: [
   "deb-python3-pyqt5-qtsql"
   "deb-python3-sip"
   "deb-python3-yaml"
-  ("deb-python3-importlib-resources" | "deb- python3" {> "3.9"})
-  ("deb-qutebrowser-qtwebengine" | "deb- qutebrowser-qtwebkit")
+  ("deb-python3-importlib-resources" | "deb-python3" {> "3.9"})
+  ("deb-qutebrowser-qtwebengine" | "deb-qutebrowser-qtwebkit")
 ]
 extra-source "qutebrowser_2.5.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qutebrowser/qutebrowser_2.5.3-1_all.deb"

@@ -35,8 +35,8 @@ depends: [
   "deb-libxml2" {>= "2.7.4"}
   "deb-mate-desktop-common" {>= "1.18"}
   "deb-ukui-media-common" {= "3.0.4-1"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "ukui-media_3.0.4-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/ukui-media/ukui-media_3.0.4-1+b1_amd64.deb"

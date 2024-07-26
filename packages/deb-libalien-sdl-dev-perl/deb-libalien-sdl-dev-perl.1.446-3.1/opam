@@ -19,7 +19,7 @@ depends: [
   "deb-libsdl1-2-dev"
   "deb-libsmpeg-dev"
   "deb-libtiff-dev"
-  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
+  ("deb-libgl1-mesa-dev" | "deb-libgl-dev")
 ]
 extra-source "libalien-sdl-dev-perl_1.446-3.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/liba/libalien-sdl-perl/libalien-sdl-dev-perl_1.446-3.1_all.deb"

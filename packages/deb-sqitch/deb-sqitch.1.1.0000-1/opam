@@ -34,8 +34,8 @@ depends: [
   "deb-liburi-db-perl" {>= "0.19"}
   "deb-liburi-perl"
   "deb-perl-any"
-  ("deb-libdbd-pg-perl" | "deb- libdbd-sqlite3-perl" | "deb- libdbd-mysql-perl" | "deb- libdbd-firebird-perl")
-  ("deb-postgresql-client" | "deb- sqlite3" | "deb- default-mysql-client" | "deb- virtual-mysql-client" | "deb- firebird2-5-classic" | "deb- firebird2-5-super")
+  ("deb-libdbd-pg-perl" | "deb-libdbd-sqlite3-perl" | "deb-libdbd-mysql-perl" | "deb-libdbd-firebird-perl")
+  ("deb-postgresql-client" | "deb-sqlite3" | "deb-default-mysql-client" | "deb-virtual-mysql-client" | "deb-firebird2-5-classic" | "deb-firebird2-5-super")
 ]
 extra-source "sqitch_1.1.0000-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sqitch/sqitch_1.1.0000-1_all.deb"

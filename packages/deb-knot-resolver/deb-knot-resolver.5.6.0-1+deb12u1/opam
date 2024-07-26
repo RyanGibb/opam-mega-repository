@@ -26,8 +26,8 @@ depends: [
   "deb-libzscanner4" {>= "3.1.1"}
   "deb-lua-sec"
   "deb-lua-socket"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-libluajit-5-1-2" {>= "2.0.4+dfsg"} | "deb- libluajit2-5-1-2" {>= "2.1~"})
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-libluajit-5-1-2" {>= "2.0.4+dfsg"} | "deb-libluajit2-5-1-2" {>= "2.1~"})
 ]
 extra-source "knot-resolver_5.6.0-1+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/knot-resolver/knot-resolver_5.6.0-1+deb12u1_amd64.deb"

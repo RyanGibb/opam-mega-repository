@@ -33,9 +33,9 @@ depends: [
   "deb-texlive-latex-base"
   "deb-units-filter" {>= "3.5"}
   "deb-wims-modules" {>= "1-4.15d~dfsg1-3"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-imagemagick" {>= "4-5.4.4.5-1"} | "deb- graphicsmagick-imagemagick-compat")
-  ("deb-mailutils" | "deb- mailx")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-imagemagick" {>= "4-5.4.4.5-1"} | "deb-graphicsmagick-imagemagick-compat")
+  ("deb-mailutils" | "deb-mailx")
 ]
 extra-source "wims_1:4.15d~dfsg1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/wims/wims_4.15d~dfsg1-3_amd64.deb"

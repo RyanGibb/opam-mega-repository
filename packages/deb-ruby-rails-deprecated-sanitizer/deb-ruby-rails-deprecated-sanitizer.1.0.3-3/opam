@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-activesupport" {>= "2-4.2.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-rails-deprecated-sanitizer_1.0.3-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-rails-deprecated-sanitizer/ruby-rails-deprecated-sanitizer_1.0.3-3_all.deb"

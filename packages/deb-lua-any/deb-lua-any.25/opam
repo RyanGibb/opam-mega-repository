@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r lua-any"]
 ]
 depends: [
-  ("deb-lua5-1" | "deb- lua")
+  ("deb-lua5-1" | "deb-lua")
 ]
 extra-source "lua-any_25_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dh-lua/lua-any_25_all.deb"

@@ -36,7 +36,7 @@ depends: [
   "deb-libsphinxbase3" {>= "0.8+5prealpha"}
   "deb-libstdc++6" {>= "4.6"}
   "deb-libswresample4" {>= "7-5.0"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "subtitlecomposer_0.7.1-4+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/subtitlecomposer/subtitlecomposer_0.7.1-4+b3_amd64.deb"

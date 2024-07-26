@@ -11,7 +11,7 @@ depends: [
   "deb-python3-dateutil"
   "deb-python3-requests"
   "deb-python3-yaml"
-  ("deb-ffmpeg" | "deb- libavtools")
+  ("deb-ffmpeg" | "deb-libavtools")
 ]
 extra-source "svtplay-dl_3.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/svtplay-dl/svtplay-dl_3.0-2_all.deb"

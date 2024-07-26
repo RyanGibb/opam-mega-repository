@@ -42,7 +42,7 @@ depends: [
   "deb-python3-yaml"
   "deb-python3-zmq"
   "deb-xsltproc"
-  ("deb-pep8" | "deb- python3-pep8")
+  ("deb-pep8" | "deb-python3-pep8")
 ]
 extra-source "lava-dev_2020.12-5+deb11u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lava/lava-dev_2020.12-5+deb11u2_all.deb"

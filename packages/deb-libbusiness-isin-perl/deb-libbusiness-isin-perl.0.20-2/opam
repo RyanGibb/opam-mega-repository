@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl"
-  ("deb-liblocale-codes-perl" | "deb- perl" {< "5.28"})
+  ("deb-liblocale-codes-perl" | "deb-perl" {< "5.28"})
 ]
 extra-source "libbusiness-isin-perl_0.20-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libb/libbusiness-isin-perl/libbusiness-isin-perl_0.20-2_all.deb"

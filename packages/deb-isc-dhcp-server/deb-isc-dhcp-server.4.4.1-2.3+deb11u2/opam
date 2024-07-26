@@ -12,7 +12,7 @@ depends: [
   "deb-libirs-export161"
   "deb-libisc-export1105"
   "deb-lsb-base"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "isc-dhcp-server_4.4.1-2.3+deb11u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/isc-dhcp/isc-dhcp-server_4.4.1-2.3+deb11u2_amd64.deb"

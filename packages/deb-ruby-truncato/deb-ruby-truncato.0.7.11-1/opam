@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-htmlentities" {>= "4.3.1~"}
   "deb-ruby-nokogiri" {>= "1.7~"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-truncato_0.7.11-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-truncato/ruby-truncato_0.7.11-1_all.deb"

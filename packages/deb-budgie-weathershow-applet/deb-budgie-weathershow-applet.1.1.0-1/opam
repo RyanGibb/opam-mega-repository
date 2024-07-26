@@ -19,7 +19,7 @@ depends: [
   "deb-libpeas-1-0-0" {>= "1.0.0"}
   "deb-libsoup2-4-1" {>= "2.41.90"}
   "deb-procps"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "budgie-weathershow-applet_1.1.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/budgie-extras/budgie-weathershow-applet_1.1.0-1_amd64.deb"

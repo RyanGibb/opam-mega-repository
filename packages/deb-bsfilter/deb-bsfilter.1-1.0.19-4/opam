@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-sdbm" {>= "1.0.0-1"}
-  ("deb-ruby-any" | "deb- ruby-interpreter")
+  ("deb-ruby-any" | "deb-ruby-interpreter")
 ]
 extra-source "bsfilter_1:1.0.19-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/bsfilter/bsfilter_1.0.19-4_all.deb"

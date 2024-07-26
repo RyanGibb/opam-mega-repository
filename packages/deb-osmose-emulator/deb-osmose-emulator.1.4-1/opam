@@ -17,7 +17,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "osmose-emulator_1.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/osmose-emulator/osmose-emulator_1.4-1_amd64.deb"

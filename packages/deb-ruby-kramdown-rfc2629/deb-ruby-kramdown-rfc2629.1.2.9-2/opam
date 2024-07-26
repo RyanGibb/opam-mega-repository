@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-kramdown" {>= "1.16"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-kramdown-rfc2629_1.2.9-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-kramdown-rfc2629/ruby-kramdown-rfc2629_1.2.9-2_all.deb"

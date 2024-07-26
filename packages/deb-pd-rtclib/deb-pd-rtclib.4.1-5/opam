@@ -10,7 +10,7 @@ depends: [
   "deb-pd-libdir"
   "deb-pd-list-abs"
   "deb-pd-zexy"
-  ("deb-puredata" | "deb- pd")
+  ("deb-puredata" | "deb-pd")
 ]
 extra-source "pd-rtclib_4.1-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pd-rtclib/pd-rtclib_4.1-5_all.deb"

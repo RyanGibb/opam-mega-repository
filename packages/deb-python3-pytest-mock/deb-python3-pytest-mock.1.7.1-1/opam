@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-python3-any" {>= "3.4~"}
   "deb-python3-pytest"
-  ("deb-python3-pytest" {>= "3.0.3"} | "deb- python3-pytest" {< "3"})
+  ("deb-python3-pytest" {>= "3.0.3"} | "deb-python3-pytest" {< "3"})
 ]
 extra-source "python3-pytest-mock_1.7.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pytest-mock/python3-pytest-mock_1.7.1-1_all.deb"

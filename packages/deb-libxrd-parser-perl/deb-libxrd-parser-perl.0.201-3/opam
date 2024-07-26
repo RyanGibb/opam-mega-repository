@@ -13,7 +13,7 @@ depends: [
   "deb-libwww-perl"
   "deb-libxml-libxml-perl"
   "deb-perl"
-  ("deb-librole-commons-perl" | "deb- libobject-authority-perl")
+  ("deb-librole-commons-perl" | "deb-libobject-authority-perl")
 ]
 extra-source "libxrd-parser-perl_0.201-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libx/libxrd-parser-perl/libxrd-parser-perl_0.201-3_all.deb"

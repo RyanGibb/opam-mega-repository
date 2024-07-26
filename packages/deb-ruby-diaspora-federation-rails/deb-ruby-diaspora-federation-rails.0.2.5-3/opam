@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-actionpack" {>= "4.2~"}
   "deb-ruby-diaspora-federation" {>= "0.2.5~"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-diaspora-federation-rails_0.2.5-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-diaspora-federation-rails/ruby-diaspora-federation-rails_0.2.5-3_all.deb"

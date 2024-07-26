@@ -14,7 +14,7 @@ depends: [
   "deb-libstdc++6" {>= "9"}
   "deb-libx11-6"
   "deb-libxext6"
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "drumgizmo_0.9.19-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/drumgizmo/drumgizmo_0.9.19-1_amd64.deb"

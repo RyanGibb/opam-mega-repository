@@ -14,7 +14,7 @@ depends: [
   "deb-python3-pyotp"
   "deb-python3-validators"
   "deb-python3-zxcvbn"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "secrets_7.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/secrets/secrets_7.2-1_all.deb"

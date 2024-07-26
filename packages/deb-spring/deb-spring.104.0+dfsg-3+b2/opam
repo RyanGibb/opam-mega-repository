@@ -28,7 +28,7 @@ depends: [
   "deb-libxcursor1" {> "1.1.2"}
   "deb-spring-common" {= "104.0+dfsg-3"}
   "deb-zlib1g" {>= "1-1.2.0"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "spring_104.0+dfsg-3+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/spring/spring_104.0+dfsg-3+b2_amd64.deb"

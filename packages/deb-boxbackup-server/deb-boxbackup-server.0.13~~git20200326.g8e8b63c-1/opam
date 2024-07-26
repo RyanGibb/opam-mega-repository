@@ -17,7 +17,7 @@ depends: [
   "deb-perl"
   "deb-ucf"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "boxbackup-server_0.13~~git20200326.g8e8b63c-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/boxbackup/boxbackup-server_0.13~~git20200326.g8e8b63c-1_amd64.deb"

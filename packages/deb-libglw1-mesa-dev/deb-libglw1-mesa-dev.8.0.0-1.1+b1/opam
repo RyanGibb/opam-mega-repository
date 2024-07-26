@@ -10,7 +10,7 @@ depends: [
   "deb-libx11-dev"
   "deb-libxt-dev"
   "deb-mesa-common-dev"
-  ("deb-libmotif-dev" | "deb- lesstif2-dev")
+  ("deb-libmotif-dev" | "deb-lesstif2-dev")
 ]
 conflicts: [
   "deb-libgl1-mesa-swx11-dev" {< "6.5.2-4"}

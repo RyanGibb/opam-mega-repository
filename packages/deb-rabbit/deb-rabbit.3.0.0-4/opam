@@ -19,7 +19,7 @@ depends: [
   "deb-ruby-rouge"
   "deb-ruby-rsvg2"
   "deb-ruby-rt"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "rabbit_3.0.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rabbit/rabbit_3.0.0-4_all.deb"

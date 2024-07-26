@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.3.2"}
-  ("deb-daemon" | "deb- systemd-sysv")
+  ("deb-daemon" | "deb-systemd-sysv")
 ]
 extra-source "prometheus-alertmanager_0.15.3+ds-3+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/prometheus-alertmanager/prometheus-alertmanager_0.15.3+ds-3+b1_amd64.deb"

@@ -31,7 +31,7 @@ depends: [
   "deb-ruby-safe-yaml"
   "deb-ruby-toml" {>= "0.1.2-2~"}
   "deb-xdg-utils"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "jekyll_3.8.3+dfsg-4+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jekyll/jekyll_3.8.3+dfsg-4+deb10u1_all.deb"

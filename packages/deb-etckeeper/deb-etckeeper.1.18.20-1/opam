@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo dpkg -r etckeeper"]
 ]
 depends: [
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-git" | "deb- mercurial" | "deb- brz" | "deb- darcs")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-git" | "deb-mercurial" | "deb-brz" | "deb-darcs")
 ]
 extra-source "etckeeper_1.18.20-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/etckeeper/etckeeper_1.18.20-1_all.deb"

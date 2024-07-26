@@ -12,7 +12,7 @@ depends: [
   "deb-libglib2-0-0" {>= "2.35.9"}
   "deb-libgtk-3-0" {>= "3.0.0"}
   "deb-libmate-desktop-2-17" {>= "1.18"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "caja-open-terminal_1.26.1-1.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/caja-extensions/caja-open-terminal_1.26.1-1.2_amd64.deb"

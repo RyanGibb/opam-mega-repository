@@ -12,9 +12,9 @@ depends: [
   "deb-libtie-ixhash-perl"
   "deb-perl-any"
   "deb-php"
-  ("deb-apache2" | "deb- httpd-cgi")
-  ("deb-libdbd-mysql-perl" | "deb- libdbd-pg-perl")
-  ("deb-php-mysql" | "deb- php-pgsql")
+  ("deb-apache2" | "deb-httpd-cgi")
+  ("deb-libdbd-mysql-perl" | "deb-libdbd-pg-perl")
+  ("deb-php-mysql" | "deb-php-pgsql")
 ]
 extra-source "oar-web-status_2.5.9-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/oar/oar-web-status_2.5.9-1_all.deb"

@@ -13,7 +13,7 @@ depends: [
   "deb-libgtk-3-0" {>= "3.3.16"}
   "deb-libgtksourceview-3-0-1" {>= "2.91.4"}
   "deb-libpango-1-0-0" {>= "1.14.0"}
-  ("deb-git" | "deb- git-core")
+  ("deb-git" | "deb-git-core")
 ]
 extra-source "giggle_0.7-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/giggle/giggle_0.7-3_amd64.deb"

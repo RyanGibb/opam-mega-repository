@@ -19,7 +19,7 @@ depends: [
   "deb-libspdlog1-10"
   "deb-libstdc++6" {>= "11"}
   "deb-libvolk2-5" {>= "2.5.2"}
-  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb-libqt5gui5-gles" {>= "5.11.0~rc1"})
 ]
 extra-source "libgnuradio-qtgui3.10.5_3.10.5.1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnuradio/libgnuradio-qtgui3.10.5_3.10.5.1-3_amd64.deb"

@@ -12,7 +12,7 @@ depends: [
   "deb-perl-any"
   "deb-wakeonlan"
   "deb-x11-utils"
-  ("deb-cron" | "deb- cron-daemon")
+  ("deb-cron" | "deb-cron-daemon")
 ]
 extra-source "shutdown-at-night_0.21_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/shutdown-at-night/shutdown-at-night_0.21_all.deb"

@@ -14,7 +14,7 @@ depends: [
   "deb-texlive-latex-base"
   "deb-texlive-latex-extra"
   "deb-texlive-latex-recommended"
-  ("deb-python2-7" | "deb- python2-6")
+  ("deb-python2-7" | "deb-python2-6")
 ]
 extra-source "ptex2tex_0.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/ptex2tex/ptex2tex_0.4-1_all.deb"

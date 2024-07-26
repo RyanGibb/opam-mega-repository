@@ -14,7 +14,7 @@ depends: [
   "deb-libsdl1-2-compat-shim"
   "deb-libstdc++6" {>= "4.1.1"}
   "deb-libswscale6" {>= "7-5.0"}
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "libde265-examples_1.0.11-1+deb12u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libd/libde265/libde265-examples_1.0.11-1+deb12u2_amd64.deb"

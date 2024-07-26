@@ -15,7 +15,7 @@ depends: [
   "deb-libmono-system4-0-cil" {>= "5.18.0.240"}
   "deb-libreadline7"
   "deb-mono-runtime" {>= "3.0~"}
-  ("deb-libc6" {>= "2.28"} | "deb- libc6-1" {>= "2.28"} | "deb- libc0-1" {>= "2.28"})
+  ("deb-libc6" {>= "2.28"} | "deb-libc6-1" {>= "2.28"} | "deb-libc0-1" {>= "2.28"})
 ]
 extra-source "sdb_1.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sdb/sdb_1.2-2_all.deb"

@@ -14,7 +14,7 @@ depends: [
   "deb-libhandy-1-0" {>= "1.5.0"}
   "deb-libx11-6"
   "deb-libxext6"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-screenshot_41.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-screenshot/gnome-screenshot_41.0-2_amd64.deb"

@@ -28,7 +28,7 @@ depends: [
   "deb-sogo-common" {= "5.8.0-1"}
   "deb-sysvinit-utils"
   "deb-zip"
-  ("deb-systemd" | "deb- tmpreaper")
+  ("deb-systemd" | "deb-tmpreaper")
 ]
 extra-source "sogo_5.8.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sogo/sogo_5.8.0-1_amd64.deb"

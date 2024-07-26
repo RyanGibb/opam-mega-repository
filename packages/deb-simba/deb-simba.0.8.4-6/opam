@@ -18,7 +18,7 @@ depends: [
   "deb-libxml-rss-perl"
   "deb-mariadb-client-10-5"
   "deb-perl"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "simba_0.8.4-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/simba/simba_0.8.4-6_all.deb"

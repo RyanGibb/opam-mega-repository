@@ -32,7 +32,7 @@ depends: [
   "deb-libtracker-sparql-3-0-0" {>= "3.4.0~beta"}
   "deb-libxml2" {>= "2.7.4"}
   "deb-tracker" {>= "3.4.0~"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "tracker-extract_3.4.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tracker-miners/tracker-extract_3.4.3-1_amd64.deb"

@@ -16,7 +16,7 @@ depends: [
   "deb-libhandy-1-0" {>= "0.82.0"}
   "deb-libjson-glib-1-0-0" {>= "1.5.2"}
   "deb-libsoup2-4-1" {>= "2.49.91.1"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "tootle_1.0-alpha2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tootle/tootle_1.0-alpha2-1_amd64.deb"

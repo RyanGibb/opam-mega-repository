@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.14"}
   "deb-libssl3" {>= "3.0.0"}
-  ("deb-libtcl8-6" {>= "8.6.11+dfsg-1~"} | "deb- libtcl")
+  ("deb-libtcl8-6" {>= "8.6.11+dfsg-1~"} | "deb-libtcl")
 ]
 conflicts: [
   "deb-libtls0"

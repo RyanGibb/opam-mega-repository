@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-comerr-dev"
   "deb-libext2fs2" {= "1.46.2-2"}
-  ("deb-libc6-dev" | "deb- libc-dev")
+  ("deb-libc6-dev" | "deb-libc-dev")
 ]
 extra-source "libext2fs-dev_1.46.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/e2fsprogs/libext2fs-dev_1.46.2-2_amd64.deb"

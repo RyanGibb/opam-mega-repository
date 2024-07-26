@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-rails" {>= "2-4.1~"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-snorlax_0.1.8-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-snorlax/ruby-snorlax_0.1.8-1.1_all.deb"

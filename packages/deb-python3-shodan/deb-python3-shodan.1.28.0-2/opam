@@ -12,7 +12,7 @@ depends: [
   "deb-python3-colorama"
   "deb-python3-requests"
   "deb-python3-xlsxwriter"
-  ("deb-python3-ipaddress" | "deb- python3" {> "2.8"})
+  ("deb-python3-ipaddress" | "deb-python3" {> "2.8"})
 ]
 extra-source "python3-shodan_1.28.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-shodan/python3-shodan_1.28.0-2_all.deb"

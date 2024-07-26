@@ -13,7 +13,7 @@ depends: [
   "deb-python-pyptlib" {>= "0.0.6"}
   "deb-python-twisted-core"
   "deb-python-yaml"
-  ("deb-python" {>= "2.7"} | "deb- python-argparse")
+  ("deb-python" {>= "2.7"} | "deb-python-argparse")
 ]
 extra-source "obfsproxy_0.2.13-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/obfsproxy/obfsproxy_0.2.13-3_all.deb"

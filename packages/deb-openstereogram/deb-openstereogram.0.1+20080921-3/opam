@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-jarwrapper" {>= "0.5"}
   "deb-libnb-absolutelayout-java"
-  ("deb-default-jre" | "deb- java6-runtime" | "deb- java7-runtime" | "deb- java8-runtime" | "deb- java9-runtime" | "deb- java10-runtime" | "deb- java11-runtime")
+  ("deb-default-jre" | "deb-java6-runtime" | "deb-java7-runtime" | "deb-java8-runtime" | "deb-java9-runtime" | "deb-java10-runtime" | "deb-java11-runtime")
 ]
 extra-source "openstereogram_0.1+20080921-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/openstereogram/openstereogram_0.1+20080921-3_all.deb"

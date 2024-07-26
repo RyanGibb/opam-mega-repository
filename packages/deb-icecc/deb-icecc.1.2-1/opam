@@ -14,7 +14,7 @@ depends: [
   "deb-liblzo2-2"
   "deb-libstdc++6" {>= "5.2"}
   "deb-lsb-base"
-  ("deb-g++" | "deb- c++-compiler" | "deb- c-compiler")
+  ("deb-g++" | "deb-c++-compiler" | "deb-c-compiler")
 ]
 extra-source "icecc_1.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/icecc/icecc_1.2-1_amd64.deb"

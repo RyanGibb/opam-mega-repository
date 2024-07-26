@@ -11,7 +11,7 @@ depends: [
   "deb-python3"
   "deb-python3-any"
   "deb-python3-expeyes"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "expeyes-web_5.3.0+repack-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/expeyes/expeyes-web_5.3.0+repack-3_all.deb"

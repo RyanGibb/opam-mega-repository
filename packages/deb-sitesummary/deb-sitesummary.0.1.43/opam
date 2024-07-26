@@ -10,7 +10,7 @@ depends: [
   "deb-libcgi-pm-perl"
   "deb-net-tools"
   "deb-perl"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "sitesummary_0.1.43_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sitesummary/sitesummary_0.1.43_all.deb"

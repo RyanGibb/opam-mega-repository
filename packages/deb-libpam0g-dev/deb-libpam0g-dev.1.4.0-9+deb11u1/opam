@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libpam0g" {= "1.4.0-9+deb11u1"}
-  ("deb-libc6-dev" | "deb- libc-dev")
+  ("deb-libc6-dev" | "deb-libc-dev")
 ]
 extra-source "libpam0g-dev_1.4.0-9+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pam/libpam0g-dev_1.4.0-9+deb11u1_amd64.deb"

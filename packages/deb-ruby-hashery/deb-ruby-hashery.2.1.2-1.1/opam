@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-hashery"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-hashery_2.1.2-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-hashery/ruby-hashery_2.1.2-1.1_all.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-python3"
   "deb-python3-gi"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "cinnamon-desktop-data_3.8.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cinnamon-desktop/cinnamon-desktop-data_3.8.1-2_all.deb"

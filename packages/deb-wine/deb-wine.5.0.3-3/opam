@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo dpkg -r wine"]
 ]
 depends: [
-  ("deb-wine64" {< "5.0.3-3.1~"} | "deb- wine32" {< "5.0.3-3.1~"})
-  ("deb-wine64" {>= "5.0.3-3"} | "deb- wine32" {>= "5.0.3-3"})
+  ("deb-wine64" {< "5.0.3-3.1~"} | "deb-wine32" {< "5.0.3-3.1~"})
+  ("deb-wine64" {>= "5.0.3-3"} | "deb-wine32" {>= "5.0.3-3"})
 ]
 extra-source "wine_5.0.3-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/wine/wine_5.0.3-3_all.deb"

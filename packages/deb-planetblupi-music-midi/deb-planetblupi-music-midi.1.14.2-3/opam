@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r planetblupi-music-midi"]
 ]
 depends: [
-  ("deb-fluidr3mono-gm-soundfont" | "deb- timgm6mb-soundfont" | "deb- fluid-soundfont-gm")
+  ("deb-fluidr3mono-gm-soundfont" | "deb-timgm6mb-soundfont" | "deb-fluid-soundfont-gm")
 ]
 extra-source "planetblupi-music-midi_1.14.2-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/planetblupi/planetblupi-music-midi_1.14.2-3_all.deb"

@@ -12,7 +12,7 @@ depends: [
   "deb-libqt5xml5" {>= "5.1.0"}
   "deb-libquazip5-1" {>= "0.7.3"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libqt5gui5" {>= "5.8.0"} | "deb- libqt5gui5-gles" {>= "5.8.0"})
+  ("deb-libqt5gui5" {>= "5.8.0"} | "deb-libqt5gui5-gles" {>= "5.8.0"})
 ]
 extra-source "libodsstream0_0.7.11-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libo/libodsstream/libodsstream0_0.7.11-1_amd64.deb"

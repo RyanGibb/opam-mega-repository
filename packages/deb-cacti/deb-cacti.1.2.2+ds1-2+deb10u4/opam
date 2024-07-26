@@ -44,9 +44,9 @@ depends: [
   "deb-rrdtool"
   "deb-snmp"
   "deb-ucf"
-  ("deb-dbconfig-mysql" | "deb- dbconfig-no-thanks")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-libapache2-mod-php" | "deb- php")
+  ("deb-dbconfig-mysql" | "deb-dbconfig-no-thanks")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-libapache2-mod-php" | "deb-php")
 ]
 extra-source "cacti_1.2.2+ds1-2+deb10u4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cacti/cacti_1.2.2+ds1-2+deb10u4_all.deb"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-net-http-digest-auth"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-net-http-digest-auth_1.4-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-net-http-digest-auth/ruby-net-http-digest-auth_1.4-2_all.deb"

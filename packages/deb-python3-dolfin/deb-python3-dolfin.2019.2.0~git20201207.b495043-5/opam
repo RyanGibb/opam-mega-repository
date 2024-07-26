@@ -25,7 +25,7 @@ depends: [
   "deb-python3-sympy"
   "deb-python3-ufl" {< "2019.3~"}
   "deb-python3-ufl" {>= "2019.2"}
-  ("deb-python3-dolfin-real" | "deb- python3-dolfin64-real")
+  ("deb-python3-dolfin-real" | "deb-python3-dolfin64-real")
 ]
 extra-source "python3-dolfin_2019.2.0~git20201207.b495043-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dolfin/python3-dolfin_2019.2.0~git20201207.b495043-5_amd64.deb"

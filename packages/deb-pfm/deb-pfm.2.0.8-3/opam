@@ -11,7 +11,7 @@ depends: [
   "deb-sensible-utils"
   "deb-tcl" {>= "8.5"}
   "deb-tk" {>= "8.5"}
-  ("deb-libpgtcl" | "deb- libpgtcl1-5")
+  ("deb-libpgtcl" | "deb-libpgtcl1-5")
 ]
 extra-source "pfm_2.0.8-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pfm/pfm_2.0.8-3_all.deb"

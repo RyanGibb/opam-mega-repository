@@ -32,7 +32,7 @@ depends: [
   "deb-libtry-tiny-perl"
   "deb-libuniversal-require-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.21.4"} | "deb- libscalar-list-utils-perl" {>= "1-1.40~"})
+  ("deb-perl" {>= "5.21.4"} | "deb-libscalar-list-utils-perl" {>= "1-1.40~"})
 ]
 extra-source "libdbix-class-schema-loader-perl_0.07049-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libd/libdbix-class-schema-loader-perl/libdbix-class-schema-loader-perl_0.07049-1_all.deb"

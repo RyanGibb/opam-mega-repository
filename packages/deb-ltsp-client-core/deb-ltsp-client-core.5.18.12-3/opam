@@ -18,10 +18,10 @@ depends: [
   "deb-python"
   "deb-syslinux-common"
   "deb-tftp-hpa"
-  ("deb-fdisk" | "deb- util-linux" {< "2.29.2-3~"})
-  ("deb-iproute2" | "deb- iproute")
-  ("deb-kbd" | "deb- console-tools")
-  ("deb-pxelinux" | "deb- syslinux-common" {<= "3-6"})
+  ("deb-fdisk" | "deb-util-linux" {< "2.29.2-3~"})
+  ("deb-iproute2" | "deb-iproute")
+  ("deb-kbd" | "deb-console-tools")
+  ("deb-pxelinux" | "deb-syslinux-common" {<= "3-6"})
 ]
 extra-source "ltsp-client-core_5.18.12-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/ltsp/ltsp-client-core_5.18.12-3_amd64.deb"

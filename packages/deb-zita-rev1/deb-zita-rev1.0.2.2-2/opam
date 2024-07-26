@@ -14,7 +14,7 @@ depends: [
   "deb-libpng16-16" {>= "1.6.2-1"}
   "deb-libstdc++6" {>= "5"}
   "deb-libx11-6"
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "zita-rev1_0.2.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/z/zita-rev1/zita-rev1_0.2.2-2_amd64.deb"

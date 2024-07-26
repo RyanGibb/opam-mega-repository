@@ -10,7 +10,7 @@ depends: [
   "deb-gir1-2-gtk-3-0" {>= "3.16.0"}
   "deb-libevdocument3-4" {>= "3.38.0"}
   "deb-libevview3-3" {>= "3.35.1"}
-  ("deb-gir1-2-gdkpixbuf-2-0" {>= "2.40"} | "deb- libgdk-pixbuf2-0-dev" {>= "2.40"})
+  ("deb-gir1-2-gdkpixbuf-2-0" {>= "2.40"} | "deb-libgdk-pixbuf2-0-dev" {>= "2.40"})
 ]
 extra-source "gir1.2-evince-3.0_3.38.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/evince/gir1.2-evince-3.0_3.38.2-1_amd64.deb"

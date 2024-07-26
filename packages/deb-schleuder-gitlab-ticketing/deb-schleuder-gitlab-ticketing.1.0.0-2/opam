@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-gitlab" {>= "4.8~"}
   "deb-schleuder"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "schleuder-gitlab-ticketing_1.0.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/schleuder-gitlab-ticketing/schleuder-gitlab-ticketing_1.0.0-2_all.deb"

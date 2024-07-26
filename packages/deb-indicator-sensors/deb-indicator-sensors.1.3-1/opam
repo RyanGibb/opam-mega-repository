@@ -19,7 +19,7 @@ depends: [
   "deb-libudisks2-0" {>= "2.1.0"}
   "deb-libx11-6"
   "deb-libxnvctrl0"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "indicator-sensors_1.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/indicator-sensors/indicator-sensors_1.3-1_amd64.deb"

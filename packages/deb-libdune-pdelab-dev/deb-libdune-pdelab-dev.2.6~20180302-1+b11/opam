@@ -35,9 +35,9 @@ depends: [
   "deb-libsuitesparseconfig5" {>= "1-5.0.0"}
   "deb-libsuperlu5" {>= "5.2.1+dfsg1"}
   "deb-libumfpack5" {>= "1-4.5.2"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
-  ("deb-libsuperlu-dev" | "deb- libsuperlu3-dev")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
+  ("deb-libsuperlu-dev" | "deb-libsuperlu3-dev")
 ]
 extra-source "libdune-pdelab-dev_2.6~20180302-1+b11_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dune-pdelab/libdune-pdelab-dev_2.6~20180302-1+b11_amd64.deb"

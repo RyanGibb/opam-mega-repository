@@ -17,7 +17,7 @@ depends: [
   "deb-libxml-libxslt-perl"
   "deb-libxml-xpath-perl"
   "deb-perl"
-  ("deb-libcgi-pm-perl" | "deb- perl" {< "5.19"})
+  ("deb-libcgi-pm-perl" | "deb-perl" {< "5.19"})
 ]
 extra-source "libxml-atom-perl_0.42-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libx/libxml-atom-perl/libxml-atom-perl_0.42-2_all.deb"

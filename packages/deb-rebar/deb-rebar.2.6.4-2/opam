@@ -17,7 +17,7 @@ depends: [
   "deb-erlang-snmp"
   "deb-erlang-syntax-tools"
   "deb-erlang-tools"
-  ("deb-erlang-base" | "deb- erlang-base-hipe")
+  ("deb-erlang-base" | "deb-erlang-base-hipe")
 ]
 extra-source "rebar_2.6.4-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rebar/rebar_2.6.4-2_amd64.deb"

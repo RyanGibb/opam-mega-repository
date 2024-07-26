@@ -22,7 +22,7 @@ depends: [
   "deb-libwebkit2gtk-4-1-0" {>= "2.5.3"}
   "deb-libxml2" {>= "2.7.4"}
   "deb-psmisc"
-  ("deb-default-dbus-system-bus" | "deb- dbus-system-bus")
+  ("deb-default-dbus-system-bus" | "deb-dbus-system-bus")
 ]
 extra-source "evolution_3.46.4-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/evolution/evolution_3.46.4-2_amd64.deb"

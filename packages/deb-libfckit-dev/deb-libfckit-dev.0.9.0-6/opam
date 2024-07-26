@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-libfckit0d" {= "0.9.0-6"}
-  ("deb-gfortran" | "deb- fortran-compiler")
-  ("deb-gfortran-10" | "deb- gfortran-mod-15")
+  ("deb-gfortran" | "deb-fortran-compiler")
+  ("deb-gfortran-10" | "deb-gfortran-mod-15")
 ]
 extra-source "libfckit-dev_0.9.0-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fckit/libfckit-dev_0.9.0-6_amd64.deb"

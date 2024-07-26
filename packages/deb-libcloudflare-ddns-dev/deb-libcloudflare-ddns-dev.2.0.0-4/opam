@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libcloudflare-ddns2" {= "2.0.0-4"}
   "deb-libsimdjson-dev"
-  ("deb-libcurl4-openssl-dev" | "deb- libcurl-dev")
+  ("deb-libcurl4-openssl-dev" | "deb-libcurl-dev")
 ]
 extra-source "libcloudflare-ddns-dev_2.0.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cloudflare-ddns/libcloudflare-ddns-dev_2.0.0-4_amd64.deb"

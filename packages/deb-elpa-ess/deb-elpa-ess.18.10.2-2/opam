@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-dh-elpa-helper"
   "deb-emacsen-common" {>= "2.0.8"}
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 conflicts: [
   "deb-dhelp" {<= "0.3.12"}

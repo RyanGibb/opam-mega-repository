@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-multi-xml"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-multi-xml_0.6.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-multi-xml/ruby-multi-xml_0.6.0-1_all.deb"

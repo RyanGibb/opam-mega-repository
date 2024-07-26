@@ -11,7 +11,7 @@ depends: [
   "deb-libroken18-heimdal" {>= "1.7~git20150920"}
   "deb-lsb-base" {>= "3.0-6"}
   "deb-openafs-client"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "openafs-fileserver_1.8.2-1+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/openafs/openafs-fileserver_1.8.2-1+deb10u1_amd64.deb"

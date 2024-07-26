@@ -11,7 +11,7 @@ depends: [
   "deb-libsafe-isa-perl"
   "deb-pdl"
   "deb-perl-any"
-  ("deb-gnuplot-nox" | "deb- gnuplot-x11" | "deb- gnuplot-qt")
+  ("deb-gnuplot-nox" | "deb-gnuplot-x11" | "deb-gnuplot-qt")
 ]
 extra-source "libpdl-graphics-gnuplot-perl_2.023-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libp/libpdl-graphics-gnuplot-perl/libpdl-graphics-gnuplot-perl_2.023-1_all.deb"

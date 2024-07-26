@@ -23,7 +23,7 @@ depends: [
   "deb-libusb-1-0-0" {>= "2-1.0.16"}
   "deb-poppler-utils"
   "deb-procps"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "cups_2.4.2-3+deb12u5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cups/cups_2.4.2-3+deb12u5_amd64.deb"

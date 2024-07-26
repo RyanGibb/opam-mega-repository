@@ -20,9 +20,9 @@ depends: [
   "deb-qml-module-qtquick-window2"
   "deb-qml-module-qtquick2"
   "deb-suru-icon-theme" {>= "14.04+15.10.20150707-0ubuntu1"}
-  ("deb-libqt5gui5" {>= "5.4.0"} | "deb- libqt5gui5-gles" {>= "5.4.0"})
-  ("deb-libqt5quick5" {>= "5.6.0~beta"} | "deb- libqt5quick5-gles" {>= "5.6.0~beta"})
-  ("deb-libreoffice-vanilla" {>= "5.0.0"} | "deb- libreoffice" {>= "5.0.0"})
+  ("deb-libqt5gui5" {>= "5.4.0"} | "deb-libqt5gui5-gles" {>= "5.4.0"})
+  ("deb-libqt5quick5" {>= "5.6.0~beta"} | "deb-libqt5quick5-gles" {>= "5.6.0~beta"})
+  ("deb-libreoffice-vanilla" {>= "5.0.0"} | "deb-libreoffice" {>= "5.0.0"})
 ]
 extra-source "lomiri-docviewer-app_3.0.3+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lomiri-docviewer-app/lomiri-docviewer-app_3.0.3+dfsg-1_amd64.deb"

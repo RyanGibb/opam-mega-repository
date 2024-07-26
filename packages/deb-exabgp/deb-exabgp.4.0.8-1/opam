@@ -10,7 +10,7 @@ depends: [
   "deb-lsb-base" {>= "3.2-14"}
   "deb-python-pkg-resources"
   "deb-ucf"
-  ("deb-python3-exabgp" {= "4.0.8-1"} | "deb- python-exabgp" {= "4.0.8-1"})
+  ("deb-python3-exabgp" {= "4.0.8-1"} | "deb-python-exabgp" {= "4.0.8-1"})
 ]
 extra-source "exabgp_4.0.8-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/exabgp/exabgp_4.0.8-1_all.deb"

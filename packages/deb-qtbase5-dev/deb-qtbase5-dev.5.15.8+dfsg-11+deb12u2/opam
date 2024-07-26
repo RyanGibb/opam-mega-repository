@@ -23,7 +23,7 @@ depends: [
   "deb-qt5-qmake" {= "5.15.8+dfsg-11+deb12u2"}
   "deb-qtbase5-dev-tools" {= "5.15.8+dfsg-11+deb12u2"}
   "deb-qtchooser"
-  ("deb-libglu1-mesa-dev" | "deb- libglu-dev")
+  ("deb-libglu1-mesa-dev" | "deb-libglu-dev")
 ]
 conflicts: [
   "deb-qtbase5-gles-dev"

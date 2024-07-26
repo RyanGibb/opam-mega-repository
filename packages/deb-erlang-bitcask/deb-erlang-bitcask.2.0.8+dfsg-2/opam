@@ -10,7 +10,7 @@ depends: [
   "deb-erlang-eunit" {>= "1-20.3.6+dfsg"}
   "deb-erlang-meck" {>= "0.8.2"}
   "deb-libc6" {>= "2.14"}
-  ("deb-erlang-base" {>= "1-20.3.6+dfsg"} | "deb- erlang-base-hipe" {>= "1-20.3.6+dfsg"})
+  ("deb-erlang-base" {>= "1-20.3.6+dfsg"} | "deb-erlang-base-hipe" {>= "1-20.3.6+dfsg"})
 ]
 extra-source "erlang-bitcask_2.0.8+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/erlang-bitcask/erlang-bitcask_2.0.8+dfsg-2_amd64.deb"

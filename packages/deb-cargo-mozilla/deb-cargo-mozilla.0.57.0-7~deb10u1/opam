@@ -16,7 +16,7 @@ depends: [
   "deb-libssl1-1" {>= "1.1.0"}
   "deb-rustc-mozilla"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-gcc" | "deb- clang" | "deb- c-compiler")
+  ("deb-gcc" | "deb-clang" | "deb-c-compiler")
 ]
 conflicts: [
   "deb-cargo"

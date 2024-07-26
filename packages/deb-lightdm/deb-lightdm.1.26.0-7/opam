@@ -16,9 +16,9 @@ depends: [
   "deb-libxcb1"
   "deb-libxdmcp6"
   "deb-lsb-base" {>= "3.0-6"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-libpam-systemd" | "deb- logind")
-  ("deb-lightdm-gtk-greeter" | "deb- lightdm-greeter")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-libpam-systemd" | "deb-logind")
+  ("deb-lightdm-gtk-greeter" | "deb-lightdm-greeter")
 ]
 extra-source "lightdm_1.26.0-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lightdm/lightdm_1.26.0-7_amd64.deb"

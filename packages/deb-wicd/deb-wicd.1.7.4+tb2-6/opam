@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-wicd-daemon" {= "1.7.4+tb2-6"}
-  ("deb-wicd-gtk" {= "1.7.4+tb2-6"} | "deb- wicd-curses" {= "1.7.4+tb2-6"} | "deb- wicd-cli" {= "1.7.4+tb2-6"} | "deb- wicd-client")
+  ("deb-wicd-gtk" {= "1.7.4+tb2-6"} | "deb-wicd-curses" {= "1.7.4+tb2-6"} | "deb-wicd-cli" {= "1.7.4+tb2-6"} | "deb-wicd-client")
 ]
 extra-source "wicd_1.7.4+tb2-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/wicd/wicd_1.7.4+tb2-6_all.deb"

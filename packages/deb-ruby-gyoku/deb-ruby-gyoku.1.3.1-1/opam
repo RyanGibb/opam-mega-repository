@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-builder" {>= "2.1.2"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-gyoku_1.3.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-gyoku/ruby-gyoku_1.3.1-1_all.deb"

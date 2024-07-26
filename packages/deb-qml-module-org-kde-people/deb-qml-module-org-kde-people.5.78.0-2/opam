@@ -13,7 +13,7 @@ depends: [
   "deb-libqt5qml5" {>= "5.14.0~"}
   "deb-libqt5widgets5" {>= "5.14.0~"}
   "deb-libstdc++6" {>= "4.1.1"}
-  ("deb-libqt5gui5" {>= "5.14.0~"} | "deb- libqt5gui5-gles" {>= "5.14.0~"})
+  ("deb-libqt5gui5" {>= "5.14.0~"} | "deb-libqt5gui5-gles" {>= "5.14.0~"})
 ]
 extra-source "qml-module-org-kde-people_5.78.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kpeople/qml-module-org-kde-people_5.78.0-2_amd64.deb"

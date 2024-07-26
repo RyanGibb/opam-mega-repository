@@ -20,7 +20,7 @@ depends: [
   "deb-libical3" {>= "3.0.0"}
   "deb-libpango-1-0-0" {>= "1.14.0"}
   "deb-libsoup-3-0-0" {>= "3.0.3"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-calendar_43.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-calendar/gnome-calendar_43.1-2_amd64.deb"

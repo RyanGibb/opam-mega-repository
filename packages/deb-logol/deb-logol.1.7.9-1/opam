@@ -21,7 +21,7 @@ depends: [
   "deb-libxerces2-java"
   "deb-logol-bin"
   "deb-ruby"
-  ("deb-default-jre" | "deb- java7-runtime")
+  ("deb-default-jre" | "deb-java7-runtime")
 ]
 extra-source "logol_1.7.9-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/logol/logol_1.7.9-1_all.deb"

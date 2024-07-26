@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libjs-markdown-it-html5-embed" {>= "1.0.0+ds-6~"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-markdown-it-html5-embed_1.0.0+dfsg-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-markdown-it-html5-embed/ruby-markdown-it-html5-embed_1.0.0+dfsg-5_all.deb"

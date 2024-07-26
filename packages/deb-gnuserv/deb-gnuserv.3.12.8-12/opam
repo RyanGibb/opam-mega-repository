@@ -9,7 +9,7 @@ depends: [
   "deb-emacsen-common" {>= "1.4.14"}
   "deb-libc6" {>= "2.34"}
   "deb-libxau6" {>= "1-1.0.9"}
-  ("deb-emacs" | "deb- emacsen")
+  ("deb-emacs" | "deb-emacsen")
 ]
 extra-source "gnuserv_3.12.8-12_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnuserv/gnuserv_3.12.8-12_amd64.deb"

@@ -15,7 +15,7 @@ depends: [
   "deb-libqtcore4" {>= "4-4.8.0"}
   "deb-libqtgui4" {>= "4-4.8.0"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "mcrl2_201409.0-1+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mcrl2/mcrl2_201409.0-1+b2_amd64.deb"

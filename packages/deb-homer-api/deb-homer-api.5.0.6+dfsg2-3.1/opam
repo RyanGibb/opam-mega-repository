@@ -10,10 +10,10 @@ depends: [
   "deb-kamailio" {>= "4.3.0"}
   "deb-kamailio-extra-modules" {>= "4.3.0"}
   "deb-kamailio-geoip-modules" {>= "4.3.0"}
-  ("deb-apache" | "deb- apache-ssl" | "deb- apache-perl" | "deb- apache2" | "deb- httpd-cgi")
-  ("deb-apache2" {>= "2.4.6-4~"} | "deb- httpd")
+  ("deb-apache" | "deb-apache-ssl" | "deb-apache-perl" | "deb-apache2" | "deb-httpd-cgi")
+  ("deb-apache2" {>= "2.4.6-4~"} | "deb-httpd")
   ("deb-homer-api-mysql" | "deb-homer-api-postgresql")
-  ("deb-php" | "deb- php5" | "deb- php-cgi" | "deb- libapache2-mod-php")
+  ("deb-php" | "deb-php5" | "deb-php-cgi" | "deb-libapache2-mod-php")
 ]
 extra-source "homer-api_5.0.6+dfsg2-3.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/homer-api/homer-api_5.0.6+dfsg2-3.1_amd64.deb"

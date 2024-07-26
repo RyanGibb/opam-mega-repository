@@ -11,7 +11,7 @@ depends: [
   "deb-libmoose-perl"
   "deb-libmoosex-types-perl-perl"
   "deb-perl-any"
-  ("deb-perl" | "deb- libscalar-list-utils-perl")
+  ("deb-perl" | "deb-libscalar-list-utils-perl")
 ]
 extra-source "libdist-zilla-plugin-modulebuildtiny-perl_0.015-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libd/libdist-zilla-plugin-modulebuildtiny-perl/libdist-zilla-plugin-modulebuildtiny-perl_0.015-2_all.deb"

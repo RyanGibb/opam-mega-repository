@@ -12,7 +12,7 @@ depends: [
   "deb-python3-9-any"
   "deb-python3-numpy"
   "deb-python3-numpy" {>= "1-1.16.0~rc1"}
-  ("deb-gfortran-9" | "deb- gfortran-mod-15")
+  ("deb-gfortran-9" | "deb-gfortran-mod-15")
 ]
 extra-source "libcmor-dev_3.6.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cmor/libcmor-dev_3.6.1-1_amd64.deb"

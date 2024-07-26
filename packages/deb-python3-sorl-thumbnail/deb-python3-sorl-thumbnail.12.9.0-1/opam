@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-python3-any"
   "deb-python3-django"
-  ("deb-python3-pil" | "deb- python3-pgmagick" | "deb- imagemagick" | "deb- graphicsmagick")
+  ("deb-python3-pil" | "deb-python3-pgmagick" | "deb-imagemagick" | "deb-graphicsmagick")
 ]
 extra-source "python3-sorl-thumbnail_12.9.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sorl-thumbnail/python3-sorl-thumbnail_12.9.0-1_all.deb"

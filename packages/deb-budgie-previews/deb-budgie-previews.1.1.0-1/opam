@@ -15,7 +15,7 @@ depends: [
   "deb-libwnck-3-0" {>= "3.2.0"}
   "deb-xinput"
   "deb-xprintidle"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "budgie-previews_1.1.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/budgie-extras/budgie-previews_1.1.0-1_amd64.deb"

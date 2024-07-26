@@ -10,9 +10,9 @@ depends: [
   "deb-dctrl-tools"
   "deb-dpkg-dev"
   "deb-patch"
-  ("deb-gcc" | "deb- c-compiler")
-  ("deb-kmod" | "deb- kldutils")
-  ("deb-make" | "deb- build-essential")
+  ("deb-gcc" | "deb-c-compiler")
+  ("deb-kmod" | "deb-kldutils")
+  ("deb-make" | "deb-build-essential")
 ]
 extra-source "dkms_2.8.4-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dkms/dkms_2.8.4-3_all.deb"

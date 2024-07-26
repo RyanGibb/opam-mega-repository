@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-lsb-base"
-  ("deb-busybox" {> "1-1.35.0"} | "deb- busybox-static" {> "1-1.35.0"})
+  ("deb-busybox" {> "1-1.35.0"} | "deb-busybox-static" {> "1-1.35.0"})
 ]
 conflicts: [
   "deb-linux-kernel-log-daemon"

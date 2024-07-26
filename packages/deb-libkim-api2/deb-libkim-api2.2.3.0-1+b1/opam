@@ -10,7 +10,7 @@ depends: [
   "deb-libgcc-s1" {>= "3.0"}
   "deb-libgfortran5" {>= "10"}
   "deb-libstdc++6" {>= "11"}
-  ("deb-gfortran-12" | "deb- gfortran-mod-15")
+  ("deb-gfortran-12" | "deb-gfortran-mod-15")
 ]
 extra-source "libkim-api2_2.3.0-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kim-api/libkim-api2_2.3.0-1+b1_amd64.deb"

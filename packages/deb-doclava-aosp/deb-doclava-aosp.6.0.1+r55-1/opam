@@ -10,7 +10,7 @@ depends: [
   "deb-libguava-java"
   "deb-libjsilver-aosp-java"
   "deb-libtagsoup-java"
-  ("deb-default-jre-headless" {>= "2-1.7"} | "deb- java7-runtime-headless")
+  ("deb-default-jre-headless" {>= "2-1.7"} | "deb-java7-runtime-headless")
 ]
 extra-source "doclava-aosp_6.0.1+r55-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/android-platform-external-doclava/doclava-aosp_6.0.1+r55-1_all.deb"

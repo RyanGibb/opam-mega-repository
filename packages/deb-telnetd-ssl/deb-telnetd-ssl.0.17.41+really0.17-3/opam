@@ -11,7 +11,7 @@ depends: [
   "deb-libssl3" {>= "3.0.0"}
   "deb-openssl"
   "deb-passwd"
-  ("deb-openbsd-inetd" | "deb- inet-superserver")
+  ("deb-openbsd-inetd" | "deb-inet-superserver")
 ]
 conflicts: [
   "deb-telnetd"

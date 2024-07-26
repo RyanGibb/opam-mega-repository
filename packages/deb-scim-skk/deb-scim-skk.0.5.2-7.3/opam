@@ -13,7 +13,7 @@ depends: [
   "deb-libscim8v5" {>= "1.4"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-scim" {< "1.5"}
-  ("deb-skkdic" | "deb- skkdic-extra" | "deb- skkserv" | "deb- dbskkd-cdb")
+  ("deb-skkdic" | "deb-skkdic-extra" | "deb-skkserv" | "deb-dbskkd-cdb")
 ]
 extra-source "scim-skk_0.5.2-7.3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/scim-skk/scim-skk_0.5.2-7.3_amd64.deb"

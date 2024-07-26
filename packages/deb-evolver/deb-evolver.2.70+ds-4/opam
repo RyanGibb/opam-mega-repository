@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r evolver"]
 ]
 depends: [
-  ("deb-evolver-nox" | "deb- evolver-ogl")
+  ("deb-evolver-nox" | "deb-evolver-ogl")
 ]
 extra-source "evolver_2.70+ds-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/evolver/evolver_2.70+ds-4_all.deb"

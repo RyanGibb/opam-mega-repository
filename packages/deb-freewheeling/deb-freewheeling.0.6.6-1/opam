@@ -25,7 +25,7 @@ depends: [
   "deb-libvorbisfile3" {>= "1.1.2"}
   "deb-libx11-6"
   "deb-libxml2" {>= "2.7.4"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "freewheeling_0.6.6-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/freewheeling/freewheeling_0.6.6-1_amd64.deb"

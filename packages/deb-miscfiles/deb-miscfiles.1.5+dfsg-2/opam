@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-dictionaries-common" {>= "1.0"}
   "deb-perl"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "miscfiles_1.5+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/miscfiles/miscfiles_1.5+dfsg-2_all.deb"

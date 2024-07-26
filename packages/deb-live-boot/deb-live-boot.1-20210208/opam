@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r live-boot"]
 ]
 depends: [
-  ("deb-live-boot-initramfs-tools" | "deb- live-boot-backend")
+  ("deb-live-boot-initramfs-tools" | "deb-live-boot-backend")
 ]
 extra-source "live-boot_1:20210208_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/live-boot/live-boot_20210208_all.deb"

@@ -9,8 +9,8 @@ depends: [
   "deb-menu"
   "deb-psmisc"
   "deb-sudo"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-xterm" | "deb- x-terminal-emulator")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-xterm" | "deb-x-terminal-emulator")
 ]
 extra-source "debian-installer-launcher_39_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/debian-installer-launcher/debian-installer-launcher_39_all.deb"

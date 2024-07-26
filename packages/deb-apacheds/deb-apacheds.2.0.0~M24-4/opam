@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-adduser"
   "deb-libapacheds-java" {= "2.0.0~M24-4"}
-  ("deb-default-jre-headless" | "deb- java7-runtime-headless")
+  ("deb-default-jre-headless" | "deb-java7-runtime-headless")
 ]
 extra-source "apacheds_2.0.0~M24-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/apache-directory-server/apacheds_2.0.0~M24-4_all.deb"

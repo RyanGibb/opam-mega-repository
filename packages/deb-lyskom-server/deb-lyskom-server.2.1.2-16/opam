@@ -11,9 +11,9 @@ depends: [
   "deb-libc6" {>= "2.14"}
   "deb-liboop4" {>= "1.0.1~"}
   "deb-lsb-base" {>= "3.0-6"}
-  ("deb-cron" | "deb- cron-daemon")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-rsyslog" | "deb- system-log-daemon")
+  ("deb-cron" | "deb-cron-daemon")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-rsyslog" | "deb-system-log-daemon")
 ]
 extra-source "lyskom-server_2.1.2-16_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lyskom-server/lyskom-server_2.1.2-16_amd64.deb"

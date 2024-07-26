@@ -14,7 +14,7 @@ depends: [
   "deb-libselinux1" {>= "3.1~"}
   "deb-libudev1" {= "247.3-7+deb11u5"}
   "deb-util-linux" {>= "2.27.1"}
-  ("deb-dpkg" {>= "1.19.3"} | "deb- systemd-sysv")
+  ("deb-dpkg" {>= "1.19.3"} | "deb-systemd-sysv")
 ]
 conflicts: [
   "deb-hal"

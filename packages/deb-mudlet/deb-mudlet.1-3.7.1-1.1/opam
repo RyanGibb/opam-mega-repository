@@ -27,7 +27,7 @@ depends: [
   "deb-lua-sql-sqlite3"
   "deb-lua-zip"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "mudlet_1:3.7.1-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mudlet/mudlet_3.7.1-1.1_amd64.deb"

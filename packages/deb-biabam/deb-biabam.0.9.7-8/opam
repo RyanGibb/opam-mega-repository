@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-sharutils"
-  ("deb-default-mta" | "deb- mail-transport-agent")
+  ("deb-default-mta" | "deb-mail-transport-agent")
 ]
 extra-source "biabam_0.9.7-8_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/biabam/biabam_0.9.7-8_all.deb"

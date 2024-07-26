@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r minetest-mod-lucky-block"]
 ]
 depends: [
-  ("deb-minetest" | "deb- minetest-server")
+  ("deb-minetest" | "deb-minetest-server")
 ]
 extra-source "minetest-mod-lucky-block_20181017-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/minetest-mod-lucky-block/minetest-mod-lucky-block_20181017-2_all.deb"

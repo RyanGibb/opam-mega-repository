@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-activemodel"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-email-validator_1.4.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-email-validator/ruby-email-validator_1.4.0-1_all.deb"

@@ -78,8 +78,8 @@ depends: [
   "deb-librust-winapi-0-3+wincon-dev"
   "deb-librust-winapi-0-3+winerror-dev"
   "deb-librust-winapi-0-3+winnt-dev"
-  ("deb-librust-core-foundation-0-9+default-dev" | "deb- librust-core-foundation-0-8+default-dev" | "deb- librust-core-foundation-0-7+default-dev")
-  ("deb-librust-core-foundation-0-9+mac-os-10-7-support-dev" | "deb- librust-core-foundation-0-8+mac-os-10-7-support-dev" | "deb- librust-core-foundation-0-7+mac-os-10-7-support-dev")
+  ("deb-librust-core-foundation-0-9+default-dev" | "deb-librust-core-foundation-0-8+default-dev" | "deb-librust-core-foundation-0-7+default-dev")
+  ("deb-librust-core-foundation-0-9+mac-os-10-7-support-dev" | "deb-librust-core-foundation-0-8+mac-os-10-7-support-dev" | "deb-librust-core-foundation-0-7+mac-os-10-7-support-dev")
 ]
 extra-source "librust-cargo-dev_0.43.1-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-cargo/librust-cargo-dev_0.43.1-4_amd64.deb"

@@ -10,8 +10,8 @@ depends: [
   "deb-libqt5core5a" {>= "5.15.1"}
   "deb-libqt5systeminfo5" {>= "5.0~git20181230.e3332ee3"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.5.1~"} | "deb- libqt5gui5-gles" {>= "5.5.1~"})
-  ("deb-libqt5quick5" {>= "5.5.1~"} | "deb- libqt5quick5-gles" {>= "5.5.1~"})
+  ("deb-libqt5gui5" {>= "5.5.1~"} | "deb-libqt5gui5-gles" {>= "5.5.1~"})
+  ("deb-libqt5quick5" {>= "5.5.1~"} | "deb-libqt5quick5-gles" {>= "5.5.1~"})
 ]
 extra-source "qtsystems5-examples_5.0~git20181230.e3332ee3-4+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtsystems-opensource-src/qtsystems5-examples_5.0~git20181230.e3332ee3-4+b3_amd64.deb"

@@ -17,7 +17,7 @@ depends: [
   "deb-libselinux1" {>= "3.1~"}
   "deb-libtirpc3" {>= "1.0.2"}
   "deb-libxtables12" {>= "1.6.0+snapshot20161117"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 conflicts: [
   "deb-arpd"

@@ -10,8 +10,8 @@ depends: [
   "deb-erlang-syntax-tools" {>= "1-23.2.3+dfsg"}
   "deb-libc6" {>= "2.14"}
   "deb-libexpat1" {>= "2.0.1"}
-  ("deb-erlang-base" {>= "1-19.2"} | "deb- erlang-abi" {= "17.0"})
-  ("deb-erlang-base" {>= "1-23.2.3+dfsg"} | "deb- erlang-base-hipe" {>= "1-23.2.3+dfsg"})
+  ("deb-erlang-base" {>= "1-19.2"} | "deb-erlang-abi" {= "17.0"})
+  ("deb-erlang-base" {>= "1-23.2.3+dfsg"} | "deb-erlang-base-hipe" {>= "1-23.2.3+dfsg"})
 ]
 extra-source "erlang-p1-xml_1.1.45-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/erlang-p1-xml/erlang-p1-xml_1.1.45-3_amd64.deb"

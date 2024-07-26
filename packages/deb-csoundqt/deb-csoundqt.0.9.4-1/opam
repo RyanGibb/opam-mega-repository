@@ -21,7 +21,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.6.0~beta"}
   "deb-libqt5xml5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
 ]
 extra-source "csoundqt_0.9.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/csoundqt/csoundqt_0.9.4-1_amd64.deb"

@@ -9,7 +9,7 @@ depends: [
   "deb-ruby"
   "deb-ruby-debian"
   "deb-ruby-gpgme"
-  ("deb-docker-io" | "deb- docker-ce")
+  ("deb-docker-io" | "deb-docker-ce")
 ]
 extra-source "whalebuilder_0.7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/whalebuilder/whalebuilder_0.7_all.deb"

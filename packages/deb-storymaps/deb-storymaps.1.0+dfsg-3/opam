@@ -10,7 +10,7 @@ depends: [
   "deb-libfreemarker-java"
   "deb-libgoogle-gson-java"
   "deb-libpiccolo-java"
-  ("deb-default-jre" | "deb- java7-runtime" | "deb- java8-runtime" | "deb- java9-runtime")
+  ("deb-default-jre" | "deb-java7-runtime" | "deb-java8-runtime" | "deb-java9-runtime")
 ]
 extra-source "storymaps_1.0+dfsg-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/storymaps/storymaps_1.0+dfsg-3_all.deb"

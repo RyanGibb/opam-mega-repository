@@ -18,7 +18,7 @@ depends: [
   "deb-python3-distro"
   "deb-python3-pkg-resources"
   "deb-sudo"
-  ("deb-fdisk" | "deb- util-linux" {< "2.29.2-3~"})
+  ("deb-fdisk" | "deb-util-linux" {< "2.29.2-3~"})
 ]
 conflicts: [
   "deb-network-manager"

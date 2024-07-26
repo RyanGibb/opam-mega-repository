@@ -16,8 +16,8 @@ depends: [
   "deb-ruby-posix-spawn"
   "deb-ruby-redcloth"
   "deb-ruby-wikicloth"
-  ("deb-ruby" | "deb- ruby-interpreter")
-  ("deb-ruby-redcarpet" | "deb- ruby-rdiscount" | "deb- ruby-maruku" | "deb- ruby-kramdown")
+  ("deb-ruby" | "deb-ruby-interpreter")
+  ("deb-ruby-redcarpet" | "deb-ruby-rdiscount" | "deb-ruby-maruku" | "deb-ruby-kramdown")
 ]
 extra-source "ruby-github-markup_1.7.0+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-github-markup/ruby-github-markup_1.7.0+dfsg-2_all.deb"

@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-apel"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-emacs" | "deb- emacsen")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-emacs" | "deb-emacsen")
 ]
 extra-source "initz_0.0.11+20030603cvs-17.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/initz/initz_0.0.11+20030603cvs-17.2_all.deb"

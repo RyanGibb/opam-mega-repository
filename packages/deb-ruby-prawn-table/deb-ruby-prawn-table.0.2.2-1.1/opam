@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-prawn"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-prawn-table_0.2.2-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-prawn-table/ruby-prawn-table_0.2.2-1.1_all.deb"

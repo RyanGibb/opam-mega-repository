@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r memtest86"]
 ]
 depends: [
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "memtest86_4.3.7-3+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/memtest86/memtest86_4.3.7-3+b1_amd64.deb"

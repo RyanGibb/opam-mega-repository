@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r gtkpod-data"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gtkpod-data_2.1.5-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gtkpod/gtkpod-data_2.1.5-6_all.deb"

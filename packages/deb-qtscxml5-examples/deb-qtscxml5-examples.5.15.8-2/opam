@@ -14,7 +14,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.15.8+dfsg~"}
   "deb-libstdc++6" {>= "5"}
   "deb-qml-module-qtscxml"
-  ("deb-libqt5gui5" {>= "5.15.8+dfsg~"} | "deb- libqt5gui5-gles" {>= "5.15.8+dfsg~"})
+  ("deb-libqt5gui5" {>= "5.15.8+dfsg~"} | "deb-libqt5gui5-gles" {>= "5.15.8+dfsg~"})
 ]
 extra-source "qtscxml5-examples_5.15.8-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtscxml-everywhere-src/qtscxml5-examples_5.15.8-2_amd64.deb"

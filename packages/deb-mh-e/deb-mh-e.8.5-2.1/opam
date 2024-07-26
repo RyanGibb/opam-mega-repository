@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo dpkg -r mh-e"]
 ]
 depends: [
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
-  ("deb-emacs25" | "deb- emacs24" | "deb- emacs" | "deb- xemacs21")
-  ("deb-nmh" | "deb- mailutils-mh")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
+  ("deb-emacs25" | "deb-emacs24" | "deb-emacs" | "deb-xemacs21")
+  ("deb-nmh" | "deb-mailutils-mh")
 ]
 extra-source "mh-e_8.5-2.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mh-e/mh-e_8.5-2.1_all.deb"

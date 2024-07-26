@@ -30,7 +30,7 @@ depends: [
   "deb-python3-matplotlib"
   "deb-python3-numpy"
   "deb-python3-yaml"
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "python3-bornagain_1.18.0-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/bornagain/python3-bornagain_1.18.0-1+b1_amd64.deb"

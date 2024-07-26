@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.15"}
   "deb-libgssapi-krb5-2" {>= "1.17"}
   "deb-libssl1-1" {>= "1.1.0"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "conserver-client_8.2.6-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/conserver/conserver-client_8.2.6-2_amd64.deb"

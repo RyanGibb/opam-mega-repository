@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-nenv" {>= "0.1"}
   "deb-ruby-shellany"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-notiffany_0.1.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-notiffany/ruby-notiffany_0.1.1-2_all.deb"

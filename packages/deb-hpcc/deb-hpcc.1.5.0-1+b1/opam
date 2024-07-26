@@ -10,7 +10,7 @@ depends: [
   "deb-libc6" {>= "2.14"}
   "deb-libopenmpi3"
   "deb-mpi-default-bin"
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "hpcc_1.5.0-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/hpcc/hpcc_1.5.0-1+b1_amd64.deb"

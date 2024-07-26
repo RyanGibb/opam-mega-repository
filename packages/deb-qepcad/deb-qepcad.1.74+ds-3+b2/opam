@@ -13,7 +13,7 @@ depends: [
   "deb-libreadline8" {>= "6.0"}
   "deb-libstdc++6" {>= "11"}
   "deb-singular"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "qepcad_1.74+ds-3+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qepcad/qepcad_1.74+ds-3+b2_amd64.deb"

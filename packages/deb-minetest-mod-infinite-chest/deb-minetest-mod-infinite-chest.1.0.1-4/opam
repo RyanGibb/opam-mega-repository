@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r minetest-mod-infinite-chest"]
 ]
 depends: [
-  ("deb-minetest" | "deb- minetest-server")
+  ("deb-minetest" | "deb-minetest-server")
 ]
 extra-source "minetest-mod-infinite-chest_1.0.1-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/minetest-mod-infinite-chest/minetest-mod-infinite-chest_1.0.1-4_all.deb"

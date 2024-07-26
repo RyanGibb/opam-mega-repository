@@ -13,7 +13,7 @@ depends: [
   "deb-python3-q-text-as-data"
   "deb-sysvinit-utils"
   "deb-watcher-common" {= "9.0.0-2"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "watcher-api_9.0.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/watcher/watcher-api_9.0.0-2_all.deb"

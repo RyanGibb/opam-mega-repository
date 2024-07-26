@@ -9,7 +9,7 @@ depends: [
   "deb-python-any" {< "2.8"}
   "deb-python-any" {>= "2.7~"}
   "deb-python-six"
-  ("deb-libtidy5deb1" | "deb- libtidy5" | "deb- libtidy-0-99-0" {>= "20051018"})
+  ("deb-libtidy5deb1" | "deb-libtidy5" | "deb-libtidy-0-99-0" {>= "20051018"})
 ]
 extra-source "python-utidylib_0.5-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/utidylib/python-utidylib_0.5-2_all.deb"

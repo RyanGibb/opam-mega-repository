@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ladspa-sdk"
   "deb-pkg-config"
-  ("deb-libasound2-dev" | "deb- libdssialsacompat-dev")
+  ("deb-libasound2-dev" | "deb-libdssialsacompat-dev")
 ]
 extra-source "dssi-dev_1.1.1~dfsg0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dssi/dssi-dev_1.1.1~dfsg0-1_all.deb"

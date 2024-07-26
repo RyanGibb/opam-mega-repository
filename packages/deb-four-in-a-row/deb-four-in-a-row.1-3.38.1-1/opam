@@ -12,7 +12,7 @@ depends: [
   "deb-libglib2-0-0" {>= "2.39.90"}
   "deb-libgsound0" {>= "1.0.2"}
   "deb-libgtk-3-0" {>= "3.24.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "four-in-a-row_1:3.38.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/four-in-a-row/four-in-a-row_3.38.1-1_amd64.deb"

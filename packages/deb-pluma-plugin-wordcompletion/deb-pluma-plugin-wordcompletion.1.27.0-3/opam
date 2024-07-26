@@ -13,7 +13,7 @@ depends: [
   "deb-libpeas-1-0-0" {>= "1.14.1"}
   "deb-pluma"
   "deb-pluma-plugins-common"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "pluma-plugin-wordcompletion_1.27.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pluma-plugins/pluma-plugin-wordcompletion_1.27.0-3_amd64.deb"

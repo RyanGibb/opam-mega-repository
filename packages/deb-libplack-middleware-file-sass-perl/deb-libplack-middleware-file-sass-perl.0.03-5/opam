@@ -9,7 +9,7 @@ depends: [
   "deb-libplack-perl"
   "deb-perl-any"
   "deb-sgml-base" {>= "1.28"}
-  ("deb-ruby-sass" | "deb- libhaml-ruby" {< "3.1"} | "deb- libtext-sass-perl")
+  ("deb-ruby-sass" | "deb-libhaml-ruby" {< "3.1"} | "deb-libtext-sass-perl")
 ]
 extra-source "libplack-middleware-file-sass-perl_0.03-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libp/libplack-middleware-file-sass-perl/libplack-middleware-file-sass-perl_0.03-5_all.deb"

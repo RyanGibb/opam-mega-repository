@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libjs-bootstrap-switch"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-bootstrap-switch-rails_3.3.4+dfsg+REALLY.3.3.3-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-bootstrap-switch-rails/ruby-bootstrap-switch-rails_3.3.4+dfsg+REALLY.3.3.3-2_all.deb"

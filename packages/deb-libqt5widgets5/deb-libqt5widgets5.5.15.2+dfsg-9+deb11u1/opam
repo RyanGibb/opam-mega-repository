@@ -11,7 +11,7 @@ depends: [
   "deb-libqt5core5a"
   "deb-libqt5core5a" {>= "5.15.1"}
   "deb-libstdc++6" {>= "10"}
-  ("deb-libqt5gui5" {>= "5.15.1"} | "deb- libqt5gui5-gles" {>= "5.15.1"})
+  ("deb-libqt5gui5" {>= "5.15.1"} | "deb-libqt5gui5-gles" {>= "5.15.1"})
 ]
 extra-source "libqt5widgets5_5.15.2+dfsg-9+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtbase-opensource-src/libqt5widgets5_5.15.2+dfsg-9+deb11u1_amd64.deb"

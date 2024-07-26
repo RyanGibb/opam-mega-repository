@@ -12,10 +12,10 @@ depends: [
   "deb-libperl4-corelibs-perl"
   "deb-passwd"
   "deb-perl"
-  ("deb-cvs" | "deb- subversion" | "deb- git")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-iputils-ping" | "deb- ping")
-  ("deb-openssh-client" | "deb- ssh")
+  ("deb-cvs" | "deb-subversion" | "deb-git")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-iputils-ping" | "deb-ping")
+  ("deb-openssh-client" | "deb-ssh")
 ]
 extra-source "rancid_3.9-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rancid/rancid_3.9-1_amd64.deb"

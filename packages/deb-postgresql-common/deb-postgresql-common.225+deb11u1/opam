@@ -12,7 +12,7 @@ depends: [
   "deb-postgresql-client-common" {= "225+deb11u1"}
   "deb-ssl-cert" {>= "1.0.11"}
   "deb-ucf"
-  ("deb-debconf" {>= "0.5.00"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5.00"} | "deb-debconf-2-0")
 ]
 extra-source "postgresql-common_225+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/postgresql-common/postgresql-common_225+deb11u1_all.deb"

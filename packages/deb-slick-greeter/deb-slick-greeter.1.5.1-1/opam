@@ -22,7 +22,7 @@ depends: [
   "deb-lightdm"
   "deb-python3"
   "deb-python3-gi"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "slick-greeter_1.5.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/slick-greeter/slick-greeter_1.5.1-1_amd64.deb"

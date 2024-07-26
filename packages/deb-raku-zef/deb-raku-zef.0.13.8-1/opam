@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-raku-getopt-long"
   "deb-rakudo"
-  ("deb-curl" | "deb- wget")
+  ("deb-curl" | "deb-wget")
 ]
 conflicts: [
   "deb-perl6-zef"

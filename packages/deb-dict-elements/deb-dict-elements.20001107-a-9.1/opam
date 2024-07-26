@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r dict-elements"]
 ]
 depends: [
-  ("deb-dictd" | "deb- dict-server")
+  ("deb-dictd" | "deb-dict-server")
 ]
 extra-source "dict-elements_20001107-a-9.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dict-elements/dict-elements_20001107-a-9.1_all.deb"

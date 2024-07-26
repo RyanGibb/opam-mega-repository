@@ -15,7 +15,7 @@ depends: [
   "deb-libstdc++6" {>= "4.1.1"}
   "deb-libtinfo6" {>= "6"}
   "deb-python3"
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "kconfig-frontends_4.11.0.1+dfsg-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kconfig-frontends/kconfig-frontends_4.11.0.1+dfsg-6_amd64.deb"

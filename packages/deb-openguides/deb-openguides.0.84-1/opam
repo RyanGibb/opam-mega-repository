@@ -34,9 +34,9 @@ depends: [
   "deb-libwww-perl"
   "deb-libxml-rss-perl"
   "deb-perl-any"
-  ("deb-apache2" | "deb- httpd")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-libdbd-sqlite3-perl" | "deb- libdbd-pg-perl" | "deb- libdbd-mysql-perl")
+  ("deb-apache2" | "deb-httpd")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-libdbd-sqlite3-perl" | "deb-libdbd-pg-perl" | "deb-libdbd-mysql-perl")
 ]
 extra-source "openguides_0.84-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/openguides/openguides_0.84-1_all.deb"

@@ -22,8 +22,8 @@ depends: [
   "deb-libsuperlu-dev" {>= "5.2"}
   "deb-libsuperlu-dist-dev"
   "deb-python3"
-  ("deb-gfortran-10" | "deb- gfortran-mod-15")
-  ("deb-ocl-icd-opencl-dev" | "deb- opencl-dev")
+  ("deb-gfortran-10" | "deb-gfortran-mod-15")
+  ("deb-ocl-icd-opencl-dev" | "deb-opencl-dev")
 ]
 conflicts: [
   "deb-libpetsc-complex-3-6-2-dev" {<= "3.6.2.dfsg1-3"}

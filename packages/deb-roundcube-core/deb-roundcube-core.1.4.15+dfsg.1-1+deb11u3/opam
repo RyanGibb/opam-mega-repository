@@ -28,9 +28,9 @@ depends: [
   "deb-php-net-socket" {>= "1.0.14"}
   "deb-php-pear" {>= "1-1.10.1"}
   "deb-ucf"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-libapache2-mod-php" | "deb- php")
-  ("deb-roundcube-mysql" {= "1.4.15+dfsg.1-1+deb11u3"} | "deb- roundcube-sqlite3" {= "1.4.15+dfsg.1-1+deb11u3"} | "deb- roundcube-pgsql" {= "1.4.15+dfsg.1-1+deb11u3"})
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-libapache2-mod-php" | "deb-php")
+  ("deb-roundcube-mysql" {= "1.4.15+dfsg.1-1+deb11u3"} | "deb-roundcube-sqlite3" {= "1.4.15+dfsg.1-1+deb11u3"} | "deb-roundcube-pgsql" {= "1.4.15+dfsg.1-1+deb11u3"})
 ]
 extra-source "roundcube-core_1.4.15+dfsg.1-1+deb11u3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/roundcube/roundcube-core_1.4.15+dfsg.1-1+deb11u3_all.deb"

@@ -13,7 +13,7 @@ depends: [
   "deb-golang-github-stretchr-objx-dev"
   "deb-golang-github-stretchr-testify-dev"
   "deb-golang-golang-x-net-dev"
-  ("deb-golang-glog-dev" | "deb- golang-github-golang-glog-dev")
+  ("deb-golang-glog-dev" | "deb-golang-github-golang-glog-dev")
 ]
 extra-source "golang-github-mesos-mesos-go-dev_0.0.6+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/golang-github-mesos-mesos-go/golang-github-mesos-mesos-go-dev_0.0.6+dfsg-2_all.deb"

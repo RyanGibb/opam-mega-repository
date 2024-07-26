@@ -14,7 +14,7 @@ depends: [
   "deb-ruby-sprockets-rails" {< "4.0"}
   "deb-ruby-sprockets-rails" {>= "2.0"}
   "deb-ruby-tilt" {>= "1.1"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-sass-rails_5.0.6-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-sass-rails/ruby-sass-rails_5.0.6-2_all.deb"

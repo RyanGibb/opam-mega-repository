@@ -16,7 +16,7 @@ depends: [
   "deb-libxml2" {>= "2.7.4"}
   "deb-libxslt1-1" {>= "1.1.25"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libavcodec58" {>= "7-4.0"} | "deb- libavcodec-extra58" {>= "7-4.0"})
+  ("deb-libavcodec58" {>= "7-4.0"} | "deb-libavcodec-extra58" {>= "7-4.0"})
 ]
 extra-source "shotdetect_1.0.86-5+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/shotdetect/shotdetect_1.0.86-5+b2_amd64.deb"

@@ -21,7 +21,7 @@ depends: [
   "deb-python3-ruamel-yaml"
   "deb-python3-sip"
   "deb-python3-yaml"
-  ("deb-qutebrowser-qtwebengine" | "deb- qutebrowser-qtwebkit")
+  ("deb-qutebrowser-qtwebengine" | "deb-qutebrowser-qtwebkit")
 ]
 extra-source "qutebrowser_1.6.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qutebrowser/qutebrowser_1.6.1-2_all.deb"

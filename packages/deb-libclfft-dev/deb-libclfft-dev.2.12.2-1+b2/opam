@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libclfft2" {= "2.12.2-1+b2"}
-  ("deb-ocl-icd-opencl-dev" | "deb- opencl-dev")
+  ("deb-ocl-icd-opencl-dev" | "deb-opencl-dev")
 ]
 extra-source "libclfft-dev_2.12.2-1+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/clfft/libclfft-dev_2.12.2-1+b2_amd64.deb"

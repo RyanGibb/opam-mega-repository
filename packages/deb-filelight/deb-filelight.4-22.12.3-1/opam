@@ -27,8 +27,8 @@ depends: [
   "deb-qml-module-org-kde-kcoreaddons"
   "deb-qml-module-org-kde-quickcharts"
   "deb-qml-module-qt-labs-platform"
-  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
-  ("deb-libqt5quick5" {>= "5.15.2~"} | "deb- libqt5quick5-gles" {>= "5.15.2~"})
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb-libqt5gui5-gles" {>= "5.15.2~"})
+  ("deb-libqt5quick5" {>= "5.15.2~"} | "deb-libqt5quick5-gles" {>= "5.15.2~"})
 ]
 extra-source "filelight_4:22.12.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/filelight/filelight_22.12.3-1_amd64.deb"

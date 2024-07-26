@@ -24,7 +24,7 @@ depends: [
   "deb-libsejda-java" {>= "4.1.1"}
   "deb-libslf4j-java" {>= "1.7.30"}
   "deb-openjfx" {>= "11"}
-  ("deb-default-jre" {>= "2-1.9"} | "deb- java9-runtime")
+  ("deb-default-jre" {>= "2-1.9"} | "deb-java9-runtime")
 ]
 extra-source "pdfsam_4.2.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pdfsam/pdfsam_4.2.2-1_all.deb"

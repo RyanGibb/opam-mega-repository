@@ -11,7 +11,7 @@ depends: [
   "deb-libstdc++6" {>= "5"}
   "deb-libzita-alsa-pcmi0" {>= "0.2.0"}
   "deb-libzita-resampler1" {>= "1.6.2"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "zita-ajbridge_0.8.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/z/zita-ajbridge/zita-ajbridge_0.8.4-1_amd64.deb"

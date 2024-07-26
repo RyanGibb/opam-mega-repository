@@ -12,7 +12,7 @@ depends: [
   "deb-libgcc-s1" {>= "3.0"}
   "deb-libgl1"
   "deb-libstdc++6" {>= "11"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "psychtoolbox-3-lib_3.0.18.12.dfsg1-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/psychtoolbox-3/psychtoolbox-3-lib_3.0.18.12.dfsg1-1.1_amd64.deb"

@@ -11,7 +11,7 @@ depends: [
   "deb-libgspell-1-2" {>= "1.8.2"}
   "deb-libgtk-3-0" {>= "3.0.0"}
   "deb-libmousepad0" {>= "0.5.8"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "mousepad_0.5.10-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mousepad/mousepad_0.5.10-2_amd64.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.3.4"}
   "deb-libchasen2" {>= "2.4.5"}
-  ("deb-naist-jdic-utf8" {>= "1-0.4.3-3"} | "deb- naist-jdic" {>= "1-0.4.3-3"} | "deb- ipadic" {>= "2.6.3"})
+  ("deb-naist-jdic-utf8" {>= "1-0.4.3-3"} | "deb-naist-jdic" {>= "1-0.4.3-3"} | "deb-ipadic" {>= "2.6.3"})
 ]
 extra-source "chasen_2.4.5-44+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/chasen/chasen_2.4.5-44+b1_amd64.deb"

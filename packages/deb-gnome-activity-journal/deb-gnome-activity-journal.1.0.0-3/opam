@@ -14,7 +14,7 @@ depends: [
   "deb-python3-gi-cairo"
   "deb-python3-xdg"
   "deb-python3-zeitgeist" {>= "1.0.3"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-activity-journal_1.0.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-activity-journal/gnome-activity-journal_1.0.0-3_all.deb"

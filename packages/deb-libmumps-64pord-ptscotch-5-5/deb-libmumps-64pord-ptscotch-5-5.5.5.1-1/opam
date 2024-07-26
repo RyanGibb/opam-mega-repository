@@ -11,7 +11,7 @@ depends: [
   "deb-libopenmpi3" {>= "4.1.4"}
   "deb-libptscotch-7-0" {>= "7.0.1"}
   "deb-libscalapack-openmpi2-2" {>= "2.2.1"}
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libmumps-64pord-ptscotch-5.5_5.5.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mumps/libmumps-64pord-ptscotch-5.5_5.5.1-1_amd64.deb"

@@ -11,7 +11,7 @@ depends: [
   "deb-librust-failure-0-1+default-dev"
   "deb-librust-failure-derive-0-1+default-dev"
   "deb-librust-serde-json-1+default-dev"
-  ("deb-librust-colored-2+default-dev" | "deb- librust-colored-1+default-dev" {>= "1.5-~~"})
+  ("deb-librust-colored-2+default-dev" | "deb-librust-colored-1+default-dev" {>= "1.5-~~"})
 ]
 extra-source "librust-assert-cli-dev_0.6.3-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-assert-cli/librust-assert-cli-dev_0.6.3-4_amd64.deb"

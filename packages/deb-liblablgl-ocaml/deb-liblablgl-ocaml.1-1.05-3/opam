@@ -16,7 +16,7 @@ depends: [
   "deb-libxext6"
   "deb-libxmu6"
   "deb-ocaml-base-nox"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "liblablgl-ocaml_1:1.05-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lablgl/liblablgl-ocaml_1.05-3_amd64.deb"

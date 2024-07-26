@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-python3-any"
-  ("deb-hyphen-en-us" | "deb- hyphen-hyphenation-patterns")
+  ("deb-hyphen-en-us" | "deb-hyphen-hyphenation-patterns")
 ]
 extra-source "python3-pyphen_0.9.5-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pyphen/python3-pyphen_0.9.5-3_all.deb"

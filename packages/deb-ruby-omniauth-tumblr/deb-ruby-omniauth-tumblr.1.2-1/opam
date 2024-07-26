@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-omniauth-oauth"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-omniauth-tumblr_1.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-omniauth-tumblr/ruby-omniauth-tumblr_1.2-1_all.deb"

@@ -33,9 +33,9 @@ depends: [
   "deb-libspatialite7" {>= "2.4.0"}
   "deb-libsqlite3-0" {>= "3.5.9"}
   "deb-libstdc++6" {>= "11"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
-  ("deb-ocl-icd-libopencl1" {>= "1.0"} | "deb- libopencl-1-2-1")
-  ("deb-ocl-icd-libopencl1" | "deb- libopencl1")
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-ocl-icd-libopencl1" {>= "1.0"} | "deb-libopencl-1-2-1")
+  ("deb-ocl-icd-libopencl1" | "deb-libopencl1")
 ]
 extra-source "libqgis-app3.22.16_3.22.16+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qgis/libqgis-app3.22.16_3.22.16+dfsg-1_amd64.deb"

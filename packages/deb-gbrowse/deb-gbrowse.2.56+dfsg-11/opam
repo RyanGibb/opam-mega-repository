@@ -24,8 +24,8 @@ depends: [
   "deb-lsb-base"
   "deb-perl-any"
   "deb-sqlite3"
-  ("deb-apache2" | "deb- httpd-cgi")
-  ("deb-libgd-gd2-noxpm-perl" | "deb- libgd-gd2-perl")
+  ("deb-apache2" | "deb-httpd-cgi")
+  ("deb-libgd-gd2-noxpm-perl" | "deb-libgd-gd2-perl")
 ]
 extra-source "gbrowse_2.56+dfsg-11_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gbrowse/gbrowse_2.56+dfsg-11_all.deb"

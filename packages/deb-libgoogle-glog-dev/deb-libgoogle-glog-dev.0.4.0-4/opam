@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libgflags-dev"
   "deb-libgoogle-glog0v5" {= "0.4.0-4"}
-  ("deb-libunwind-dev" | "deb- libunwind7-dev")
+  ("deb-libunwind-dev" | "deb-libunwind7-dev")
 ]
 extra-source "libgoogle-glog-dev_0.4.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/google-glog/libgoogle-glog-dev_0.4.0-4_amd64.deb"

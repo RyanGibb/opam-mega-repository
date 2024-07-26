@@ -54,9 +54,9 @@ depends: [
   "deb-libxml2" {>= "2.7.4"}
   "deb-libzstd1" {>= "1.5.2"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-liblapack3" | "deb- liblapack-so-3")
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
-  ("deb-libqt5quick5" {>= "5.0.2"} | "deb- libqt5quick5-gles" {>= "5.0.2"})
+  ("deb-liblapack3" | "deb-liblapack-so-3")
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5quick5" {>= "5.0.2"} | "deb-libqt5quick5-gles" {>= "5.0.2"})
 ]
 conflicts: [
   "deb-fw4spl"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r python-greenlet-dev"]
 ]
 depends: [
-  ("deb-python-greenlet" {= "0.4.15-2"} | "deb- python3-greenlet" {= "0.4.15-2"})
+  ("deb-python-greenlet" {= "0.4.15-2"} | "deb-python3-greenlet" {= "0.4.15-2"})
 ]
 extra-source "python-greenlet-dev_0.4.15-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-greenlet/python-greenlet-dev_0.4.15-2_amd64.deb"

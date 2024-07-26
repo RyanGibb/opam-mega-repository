@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-thread-safe" {>= "0.1~"}
   "deb-tzdata"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-tzinfo_1.2.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-tzinfo/ruby-tzinfo_1.2.5-1_all.deb"

@@ -9,7 +9,7 @@ depends: [
   "deb-moreutils"
   "deb-prometheus-node-exporter"
   "deb-python3-apt"
-  ("deb-daemon" | "deb- systemd-sysv")
+  ("deb-daemon" | "deb-systemd-sysv")
 ]
 extra-source "prometheus-node-exporter-collectors_0.0~git20230203.6f710f8-1+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/prometheus-node-exporter-collectors/prometheus-node-exporter-collectors_0.0~git20230203.6f710f8-1+deb12u1_all.deb"

@@ -89,7 +89,7 @@ depends: [
   "deb-uwsgi"
   "deb-uwsgi-plugin-python3"
   "deb-wget"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "freedombox_21.4.4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/freedombox/freedombox_21.4.4_all.deb"

@@ -12,7 +12,7 @@ depends: [
   "deb-libqt5webview5"
   "deb-libstdc++6" {>= "5"}
   "deb-qml-module-qtwebengine"
-  ("deb-libqt5quick5" {>= "5.15.8~"} | "deb- libqt5quick5-gles" {>= "5.15.8~"})
+  ("deb-libqt5quick5" {>= "5.15.8~"} | "deb-libqt5quick5-gles" {>= "5.15.8~"})
 ]
 extra-source "qml-module-qtwebview_5.15.8-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtwebview-opensource-src/qml-module-qtwebview_5.15.8-2+b1_amd64.deb"

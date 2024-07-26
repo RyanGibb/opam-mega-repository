@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-rails-assets-jquery" {>= "1.11"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-rails-assets-corejs-typeahead_1.2.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-rails-assets-corejs-typeahead/ruby-rails-assets-corejs-typeahead_1.2.1-2_all.deb"

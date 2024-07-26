@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libglbinding2" {= "2.1.1-2"}
-  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
+  ("deb-libgl1-mesa-dev" | "deb-libgl-dev")
 ]
 extra-source "libglbinding-dev_2.1.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/glbinding/libglbinding-dev_2.1.1-2_amd64.deb"

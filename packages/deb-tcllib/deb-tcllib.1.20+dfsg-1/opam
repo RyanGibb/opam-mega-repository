@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-tcl" {>= "8.6.0-2"}
-  ("deb-iproute2" | "deb- freebsd-net-tools" | "deb- hurd")
+  ("deb-iproute2" | "deb-freebsd-net-tools" | "deb-hurd")
 ]
 extra-source "tcllib_1.20+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tcllib/tcllib_1.20+dfsg-1_all.deb"

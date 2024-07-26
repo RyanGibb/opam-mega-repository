@@ -13,7 +13,7 @@ depends: [
   "deb-libxml2" {>= "2.7.4"}
   "deb-psmisc"
   "deb-python3-any"
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus")
 ]
 extra-source "gconf2_3.2.6-8_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gconf/gconf2_3.2.6-8_amd64.deb"

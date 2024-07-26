@@ -13,7 +13,7 @@ depends: [
   "deb-python-pkg-resources"
   "deb-trac"
   "deb-trac-bitten-slave"
-  ("deb-python2-7" | "deb- python2-6")
+  ("deb-python2-7" | "deb-python2-6")
 ]
 extra-source "trac-bitten_0.6+final-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/trac-bitten/trac-bitten_0.6+final-3_all.deb"

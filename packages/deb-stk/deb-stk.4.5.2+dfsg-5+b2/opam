@@ -14,7 +14,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libstk-4-5-0" {= "4.5.2+dfsg-5+b2"}
   "deb-tk"
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "stk_4.5.2+dfsg-5+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/stk/stk_4.5.2+dfsg-5+b2_amd64.deb"

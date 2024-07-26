@@ -10,7 +10,7 @@ depends: [
   "deb-ruby-http-cookie"
   "deb-ruby-http-form-data" {>= "2.0~"}
   "deb-ruby-http-parser-rb"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-http_3.3.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-http/ruby-http_3.3.0-2_all.deb"

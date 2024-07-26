@@ -16,8 +16,8 @@ depends: [
   "deb-python-wicd" {= "1.7.4+tb2-6"}
   "deb-wireless-tools"
   "deb-wpasupplicant"
-  ("deb-dhcpcd5" | "deb- isc-dhcp-client" | "deb- pump" | "deb- udhcpc")
-  ("deb-iputils-ping" | "deb- inetutils-ping")
+  ("deb-dhcpcd5" | "deb-isc-dhcp-client" | "deb-pump" | "deb-udhcpc")
+  ("deb-iputils-ping" | "deb-inetutils-ping")
 ]
 extra-source "wicd-daemon_1.7.4+tb2-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/wicd/wicd-daemon_1.7.4+tb2-6_all.deb"

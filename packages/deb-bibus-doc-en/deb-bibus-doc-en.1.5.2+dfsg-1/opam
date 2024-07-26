@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r bibus-doc-en"]
 ]
 depends: [
-  ("deb-w3m" | "deb- www-browser")
+  ("deb-w3m" | "deb-www-browser")
 ]
 extra-source "bibus-doc-en_1.5.2+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/bibus/bibus-doc-en_1.5.2+dfsg-1_all.deb"

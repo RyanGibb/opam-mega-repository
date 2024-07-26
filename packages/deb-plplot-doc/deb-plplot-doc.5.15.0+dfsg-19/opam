@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r plplot-doc"]
 ]
 depends: [
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 extra-source "plplot-doc_5.15.0+dfsg-19_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/plplot/plplot-doc_5.15.0+dfsg-19_all.deb"

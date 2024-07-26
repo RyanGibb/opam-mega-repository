@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.4"}
   "deb-libgl1"
   "deb-librnd3" {= "3.2.2-1"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "librnd3-lib-gl_3.2.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libr/librnd/librnd3-lib-gl_3.2.2-1_amd64.deb"

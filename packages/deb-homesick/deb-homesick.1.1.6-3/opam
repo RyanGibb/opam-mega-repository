@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-git" {>= "1.8.0"}
   "deb-ruby-thor"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "homesick_1.1.6-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/homesick/homesick_1.1.6-3_all.deb"

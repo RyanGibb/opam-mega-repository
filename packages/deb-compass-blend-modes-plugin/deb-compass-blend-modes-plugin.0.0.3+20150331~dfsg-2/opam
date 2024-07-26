@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-sass" {>= "3.3"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "compass-blend-modes-plugin_0.0.3+20150331~dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/compass-blend-modes-plugin/compass-blend-modes-plugin_0.0.3+20150331~dfsg-2_all.deb"

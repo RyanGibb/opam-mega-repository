@@ -18,7 +18,7 @@ depends: [
   "deb-libnotify4" {>= "0.7.0"}
   "deb-libpango-1-0-0" {>= "1.14.0"}
   "deb-p7zip-full"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "file-roller_3.30.1-2+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/file-roller/file-roller_3.30.1-2+deb10u1_amd64.deb"

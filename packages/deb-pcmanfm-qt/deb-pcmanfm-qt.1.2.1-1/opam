@@ -17,8 +17,8 @@ depends: [
   "deb-libstdc++6" {>= "11"}
   "deb-libxcb1"
   "deb-lxqt-sudo"
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus" | "deb- dbus-x11")
-  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus" | "deb-dbus-x11")
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb-libqt5gui5-gles" {>= "5.11.0~rc1"})
 ]
 extra-source "pcmanfm-qt_1.2.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pcmanfm-qt/pcmanfm-qt_1.2.1-1_amd64.deb"

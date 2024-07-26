@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-node-xtend"
-  ("deb-nodejs-any" | "deb- nodejs" {< "12.22.5~dfsg-4~"})
+  ("deb-nodejs-any" | "deb-nodejs" {< "12.22.5~dfsg-4~"})
 ]
 extra-source "node-acorn_8.8.1+ds+~cs25.17.7-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/acorn/node-acorn_8.8.1+ds+~cs25.17.7-2_all.deb"

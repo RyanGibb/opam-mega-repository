@@ -11,7 +11,7 @@ depends: [
   "deb-ruby-gettext-i18n-rails" {>= "0.7.1"}
   "deb-ruby-po-to-json" {>= "1.0.0"}
   "deb-ruby-rails" {>= "2-3.2.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-gettext-i18n-rails-js_1.3.0+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-gettext-i18n-rails-js/ruby-gettext-i18n-rails-js_1.3.0+dfsg-2_all.deb"

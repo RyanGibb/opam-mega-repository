@@ -9,8 +9,8 @@ depends: [
   "deb-libc6" {>= "2.29"}
   "deb-libgfortran5" {>= "10"}
   "deb-libtmglib64-3" {>= "3.9.0"}
-  ("deb-libblas64-3" | "deb- libblas64-so-3")
-  ("deb-liblapack64-3" | "deb- liblapack64-so-3")
+  ("deb-libblas64-3" | "deb-libblas64-so-3")
+  ("deb-liblapack64-3" | "deb-liblapack64-so-3")
 ]
 extra-source "liblapack64-test_3.9.0-3+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lapack/liblapack64-test_3.9.0-3+deb11u1_amd64.deb"

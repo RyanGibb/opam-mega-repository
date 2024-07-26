@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r vala-panel-appmenu-common"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "vala-panel-appmenu-common_0.7.1+dfsg1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/vala-panel-appmenu/vala-panel-appmenu-common_0.7.1+dfsg1-1_all.deb"

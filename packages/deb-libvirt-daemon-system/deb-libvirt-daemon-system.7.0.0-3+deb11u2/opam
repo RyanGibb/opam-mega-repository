@@ -14,9 +14,9 @@ depends: [
   "deb-libvirt-daemon-config-nwfilter" {= "7.0.0-3+deb11u2"}
   "deb-logrotate"
   "deb-policykit-1"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-iptables" {>= "1.8.1-1"} | "deb- firewalld")
-  ("deb-libvirt-daemon-system-systemd" {= "7.0.0-3+deb11u2"} | "deb- libvirt-daemon-system-sysv" {= "7.0.0-3+deb11u2"})
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-iptables" {>= "1.8.1-1"} | "deb-firewalld")
+  ("deb-libvirt-daemon-system-systemd" {= "7.0.0-3+deb11u2"} | "deb-libvirt-daemon-system-sysv" {= "7.0.0-3+deb11u2"})
 ]
 extra-source "libvirt-daemon-system_7.0.0-3+deb11u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libv/libvirt/libvirt-daemon-system_7.0.0-3+deb11u2_amd64.deb"

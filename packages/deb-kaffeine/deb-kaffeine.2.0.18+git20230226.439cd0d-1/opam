@@ -34,7 +34,7 @@ depends: [
   "deb-libxss1"
   "deb-vlc-plugin-base"
   "deb-vlc-plugin-video-output"
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "kaffeine_2.0.18+git20230226.439cd0d-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kaffeine/kaffeine_2.0.18+git20230226.439cd0d-1_amd64.deb"

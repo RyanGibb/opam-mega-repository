@@ -23,7 +23,7 @@ depends: [
   "deb-libpython3-11" {>= "3.11.0"}
   "deb-libreadline8" {>= "6.0"}
   "deb-libsqlite3-0" {>= "3.5.9"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "gnubg_1.07.001-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnubg/gnubg_1.07.001-1+b1_amd64.deb"

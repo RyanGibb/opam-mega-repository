@@ -11,7 +11,7 @@ depends: [
   "deb-ipxe-qemu"
   "deb-mmdebstrap" {>= "1.3.0"}
   "deb-passwd"
-  ("deb-qemu-kvm" | "deb- qemu-system-arm" | "deb- qemu-system-mips" | "deb- qemu-system-misc" | "deb- qemu-system-ppc" | "deb- qemu-system-sparc" | "deb- qemu-system-x86")
+  ("deb-qemu-kvm" | "deb-qemu-system-arm" | "deb-qemu-system-mips" | "deb-qemu-system-misc" | "deb-qemu-system-ppc" | "deb-qemu-system-sparc" | "deb-qemu-system-x86")
 ]
 extra-source "debvm_0.2.10+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/debvm/debvm_0.2.10+deb12u1_all.deb"

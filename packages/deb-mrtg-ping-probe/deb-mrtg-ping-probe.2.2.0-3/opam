@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-mrtg" {>= "2"}
   "deb-perl"
-  ("deb-iputils-ping" | "deb- ping")
+  ("deb-iputils-ping" | "deb-ping")
 ]
 extra-source "mrtg-ping-probe_2.2.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mrtg-ping-probe/mrtg-ping-probe_2.2.0-3_all.deb"

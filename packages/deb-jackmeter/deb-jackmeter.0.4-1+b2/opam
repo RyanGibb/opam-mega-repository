@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.14"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "jackmeter_0.4-1+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jackmeter/jackmeter_0.4-1+b2_amd64.deb"

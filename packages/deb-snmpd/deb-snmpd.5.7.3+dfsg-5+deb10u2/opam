@@ -13,7 +13,7 @@ depends: [
   "deb-libsnmp-base"
   "deb-libsnmp30" {= "5.7.3+dfsg-5+deb10u2"}
   "deb-lsb-base" {>= "3.2-13"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "snmpd_5.7.3+dfsg-5+deb10u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/net-snmp/snmpd_5.7.3+dfsg-5+deb10u2_amd64.deb"

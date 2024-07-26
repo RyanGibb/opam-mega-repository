@@ -9,7 +9,7 @@ depends: [
   "deb-python" {< "2.8"}
   "deb-python" {>= "2.6.6-7~"}
   "deb-trac"
-  ("deb-python2-6" | "deb- python2-7")
+  ("deb-python2-6" | "deb-python2-7")
 ]
 extra-source "trac-virtualticketpermissions_1.0.0+svn4153-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/trac-virtualticketpermissions/trac-virtualticketpermissions_1.0.0+svn4153-1_all.deb"

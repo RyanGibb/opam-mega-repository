@@ -24,8 +24,8 @@ depends: [
   "deb-lsb-base" {>= "3.2-14"}
   "deb-procps"
   "deb-x11-xserver-utils"
-  ("deb-debconf" {>= "1.2.9"} | "deb- debconf-2-0")
-  ("deb-x11-utils" | "deb- xbase-clients" | "deb- xmessage")
+  ("deb-debconf" {>= "1.2.9"} | "deb-debconf-2-0")
+  ("deb-x11-utils" | "deb-xbase-clients" | "deb-xmessage")
 ]
 extra-source "xdm_1:1.1.11-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xdm/xdm_1.1.11-3_amd64.deb"

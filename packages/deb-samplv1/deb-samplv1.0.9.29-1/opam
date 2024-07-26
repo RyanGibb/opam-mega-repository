@@ -17,7 +17,7 @@ depends: [
   "deb-libsndfile1" {>= "1.0.20"}
   "deb-libstdc++6" {>= "5"}
   "deb-samplv1-common" {= "0.9.29-1"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "samplv1_0.9.29-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/samplv1/samplv1_0.9.29-1_amd64.deb"

@@ -15,8 +15,8 @@ depends: [
   "deb-libtango-tools"
   "deb-libtango9" {>= "9.3.4+dfsg1"}
   "deb-lsb-base"
-  ("deb-dbconfig-mysql" | "deb- dbconfig-no-thanks")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-dbconfig-mysql" | "deb-dbconfig-no-thanks")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "tango-db_9.3.4+dfsg1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tango/tango-db_9.3.4+dfsg1-2_amd64.deb"

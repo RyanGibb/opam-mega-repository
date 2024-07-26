@@ -12,7 +12,7 @@ depends: [
   "deb-libncurses6" {>= "6"}
   "deb-libstdc++6" {>= "5"}
   "deb-libtinfo6" {>= "6"}
-  ("deb-wamerican" | "deb- wordlist")
+  ("deb-wamerican" | "deb-wordlist")
 ]
 extra-source "bsdgames_2.17-29+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/bsdgames/bsdgames_2.17-29+b1_amd64.deb"

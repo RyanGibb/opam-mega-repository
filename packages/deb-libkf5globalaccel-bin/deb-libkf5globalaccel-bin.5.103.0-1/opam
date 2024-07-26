@@ -22,7 +22,7 @@ depends: [
   "deb-libxcb-record0"
   "deb-libxcb-xkb1"
   "deb-libxcb1"
-  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb-libqt5gui5-gles" {>= "5.15.2~"})
 ]
 extra-source "libkf5globalaccel-bin_5.103.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kglobalaccel/libkf5globalaccel-bin_5.103.0-1_amd64.deb"

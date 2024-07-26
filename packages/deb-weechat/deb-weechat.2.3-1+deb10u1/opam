@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r weechat"]
 ]
 depends: [
-  ("deb-weechat-curses" {>= "2.3-1+deb10u1"} | "deb- weechat-headless" {>= "2.3-1+deb10u1"})
+  ("deb-weechat-curses" {>= "2.3-1+deb10u1"} | "deb-weechat-headless" {>= "2.3-1+deb10u1"})
 ]
 extra-source "weechat_2.3-1+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/weechat/weechat_2.3-1+deb10u1_all.deb"

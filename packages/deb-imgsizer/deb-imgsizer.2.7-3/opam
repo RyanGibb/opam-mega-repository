@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-python" {>= "2.4"}
-  ("deb-imagemagick" | "deb- file")
-  ("deb-imagemagick" | "deb- libjpeg-progs")
+  ("deb-imagemagick" | "deb-file")
+  ("deb-imagemagick" | "deb-libjpeg-progs")
 ]
 extra-source "imgsizer_2.7-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/imgsizer/imgsizer_2.7-3_all.deb"

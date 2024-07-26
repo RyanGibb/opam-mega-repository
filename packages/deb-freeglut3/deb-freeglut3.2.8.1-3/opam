@@ -11,7 +11,7 @@ depends: [
   "deb-libxext6"
   "deb-libxi6" {>= "2-1.2.99.4"}
   "deb-libxxf86vm1"
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
 ]
 extra-source "freeglut3_2.8.1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/freeglut/freeglut3_2.8.1-3_amd64.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-jarwrapper" {>= "0.5"}
-  ("deb-default-jre" | "deb- java5-runtime" | "deb- java6-runtime" | "deb- java7-runtime")
+  ("deb-default-jre" | "deb-java5-runtime" | "deb-java6-runtime" | "deb-java7-runtime")
 ]
 extra-source "carmetal_3.5.2+dfsg-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/carmetal/carmetal_3.5.2+dfsg-1.1_all.deb"

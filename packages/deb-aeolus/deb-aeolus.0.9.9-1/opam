@@ -16,7 +16,7 @@ depends: [
   "deb-libx11-6"
   "deb-libzita-alsa-pcmi0" {>= "0.2.0"}
   "deb-stops"
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "aeolus_0.9.9-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/aeolus/aeolus_0.9.9-1_amd64.deb"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-flipper"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-flipper_0.13.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-flipper/ruby-flipper_0.13.0-3_all.deb"

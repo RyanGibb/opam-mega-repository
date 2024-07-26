@@ -18,7 +18,7 @@ depends: [
   "deb-libpopt0" {>= "1.14"}
   "deb-libvistaio14" {>= "1.2.14"}
   "deb-libx11-6"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "mialmpick_0.2.14-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mialmpick/mialmpick_0.2.14-2_amd64.deb"

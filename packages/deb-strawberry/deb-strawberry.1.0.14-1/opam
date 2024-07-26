@@ -38,7 +38,7 @@ depends: [
   "deb-libvlc5" {>= "2.1.0"}
   "deb-libx11-6"
   "deb-sqlite3"
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "strawberry_1.0.14-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/strawberry/strawberry_1.0.14-1_amd64.deb"

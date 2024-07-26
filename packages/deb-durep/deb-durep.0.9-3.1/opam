@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl-any"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "durep_0.9-3.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/durep/durep_0.9-3.1_all.deb"

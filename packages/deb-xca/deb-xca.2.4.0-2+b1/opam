@@ -16,7 +16,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.14.1"}
   "deb-libssl3" {>= "3.0.0"}
   "deb-libstdc++6" {>= "4.3"}
-  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb-libqt5gui5-gles" {>= "5.11.0~rc1"})
 ]
 extra-source "xca_2.4.0-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xca/xca_2.4.0-2+b1_amd64.deb"

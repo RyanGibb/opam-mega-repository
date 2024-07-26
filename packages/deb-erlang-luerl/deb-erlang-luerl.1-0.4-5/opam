@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo dpkg -r erlang-luerl"]
 ]
 depends: [
-  ("deb-erlang-base" {>= "1-23.2.3+dfsg"} | "deb- erlang-base-hipe" {>= "1-23.2.3+dfsg"})
-  ("deb-erlang-base" | "deb- erlang-abi" {= "17.0"})
+  ("deb-erlang-base" {>= "1-23.2.3+dfsg"} | "deb-erlang-base-hipe" {>= "1-23.2.3+dfsg"})
+  ("deb-erlang-base" | "deb-erlang-abi" {= "17.0"})
 ]
 extra-source "erlang-luerl_1:0.4-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/erlang-luerl/erlang-luerl_0.4-5_amd64.deb"

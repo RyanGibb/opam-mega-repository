@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.2.5"}
-  ("deb-puredata" | "deb- pd")
+  ("deb-puredata" | "deb-pd")
 ]
 extra-source "pd-windowing_0.1-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pd-windowing/pd-windowing_0.1-4_amd64.deb"

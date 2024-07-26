@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-cabin"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-cabin_0.8.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-cabin/ruby-cabin_0.8.1-1_all.deb"

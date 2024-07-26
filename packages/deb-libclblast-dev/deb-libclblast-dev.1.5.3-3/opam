@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libclblast1" {= "1.5.3-3"}
-  ("deb-ocl-icd-opencl-dev" | "deb- opencl-dev")
+  ("deb-ocl-icd-opencl-dev" | "deb-opencl-dev")
 ]
 extra-source "libclblast-dev_1.5.3-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/clblast/libclblast-dev_1.5.3-3_amd64.deb"

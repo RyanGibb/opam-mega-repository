@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-hashie" {>= "3.4.6~"}
   "deb-ruby-rack" {>= "1.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-omniauth_1.8.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-omniauth/ruby-omniauth_1.8.1-1_all.deb"

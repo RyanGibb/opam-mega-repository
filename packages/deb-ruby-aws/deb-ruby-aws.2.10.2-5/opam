@@ -9,7 +9,7 @@ depends: [
   "deb-ruby-http-connection"
   "deb-ruby-uuidtools"
   "deb-ruby-xml-simple"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-aws_2.10.2-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-aws/ruby-aws_2.10.2-5_all.deb"

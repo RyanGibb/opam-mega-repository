@@ -11,7 +11,7 @@ depends: [
   "deb-libqt5core5a" {>= "5.15.1"}
   "deb-libqt5svg5" {>= "5.6.0~beta"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb-libqt5gui5-gles" {>= "5.11.0~rc1"})
 ]
 extra-source "libqt5xdgiconloader3_3.10.0-2+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libq/libqtxdg/libqt5xdgiconloader3_3.10.0-2+b2_amd64.deb"

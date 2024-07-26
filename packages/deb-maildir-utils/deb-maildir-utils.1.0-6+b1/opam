@@ -14,7 +14,7 @@ depends: [
   "deb-libgmime-2-6-0" {>= "2.6.4"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-libxapian30" {>= "1.4.6~"}
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 conflicts: [
   "deb-mailutils" {< "1-2.99.97-3"}

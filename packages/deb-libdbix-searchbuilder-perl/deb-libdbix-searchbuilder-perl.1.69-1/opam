@@ -13,7 +13,7 @@ depends: [
   "deb-libdbix-dbschema-perl"
   "deb-libwant-perl"
   "deb-perl-any"
-  ("deb-libdbd-pg-perl" | "deb- libdbd-mysql-perl" | "deb- libdbd-sqlite3-perl" | "deb- libdbd-odbc-perl" | "deb- libdbd-sqlite2-perl" | "deb- libdbd-informix-perl" | "deb- libdbd-sybase-perl" | "deb- libdbd-oracle-perl")
+  ("deb-libdbd-pg-perl" | "deb-libdbd-mysql-perl" | "deb-libdbd-sqlite3-perl" | "deb-libdbd-odbc-perl" | "deb-libdbd-sqlite2-perl" | "deb-libdbd-informix-perl" | "deb-libdbd-sybase-perl" | "deb-libdbd-oracle-perl")
 ]
 extra-source "libdbix-searchbuilder-perl_1.69-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libd/libdbix-searchbuilder-perl/libdbix-searchbuilder-perl_1.69-1_all.deb"

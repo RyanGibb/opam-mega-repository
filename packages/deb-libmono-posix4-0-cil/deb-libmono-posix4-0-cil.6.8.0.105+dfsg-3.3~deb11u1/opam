@@ -9,7 +9,7 @@ depends: [
   "deb-libmono-corlib4-5-cil" {>= "5.18.0.240"}
   "deb-libmono-system4-0-cil" {>= "5.18.0.240"}
   "deb-mono-runtime" {>= "2.10.1"}
-  ("deb-libc6" {>= "2.31"} | "deb- libc6-1" {>= "2.31"} | "deb- libc0-1" {>= "2.31"})
+  ("deb-libc6" {>= "2.31"} | "deb-libc6-1" {>= "2.31"} | "deb-libc0-1" {>= "2.31"})
 ]
 extra-source "libmono-posix4.0-cil_6.8.0.105+dfsg-3.3~deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mono/libmono-posix4.0-cil_6.8.0.105+dfsg-3.3~deb11u1_all.deb"

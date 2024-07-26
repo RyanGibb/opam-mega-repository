@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.14"}
-  ("deb-default-mta" | "deb- mail-transport-agent")
+  ("deb-default-mta" | "deb-mail-transport-agent")
 ]
 extra-source "altermime_0.3.10-12_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/altermime/altermime_0.3.10-12_amd64.deb"

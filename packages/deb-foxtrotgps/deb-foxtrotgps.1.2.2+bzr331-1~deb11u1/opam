@@ -19,7 +19,7 @@ depends: [
   "deb-libpango-1-0-0" {>= "1.14.0"}
   "deb-libsqlite3-0" {>= "3.5.9"}
   "deb-libxml2" {>= "2.7.4"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "foxtrotgps_1.2.2+bzr331-1~deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/foxtrotgps/foxtrotgps_1.2.2+bzr331-1~deb11u1_amd64.deb"

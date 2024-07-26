@@ -20,7 +20,7 @@ depends: [
   "deb-lsb-base" {>= "3.2-13"}
   "deb-perl-any"
   "deb-psmisc"
-  ("deb-perl-any" {> "5.8.0"} | "deb- libmime-base64-perl")
+  ("deb-perl-any" {> "5.8.0"} | "deb-libmime-base64-perl")
 ]
 conflicts: [
   "deb-ldap-server"

@@ -13,7 +13,7 @@ depends: [
   "deb-libgtk-3-0" {>= "3.22.0"}
   "deb-libvalapanel0" {>= "0.5.0"}
   "deb-vala-panel" {= "0.5.0-2+b1"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "vala-panel-plugins-base_0.5.0-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/vala-panel/vala-panel-plugins-base_0.5.0-2+b1_amd64.deb"

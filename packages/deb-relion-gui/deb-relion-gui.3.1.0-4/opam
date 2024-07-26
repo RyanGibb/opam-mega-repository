@@ -14,7 +14,7 @@ depends: [
   "deb-libstdc++6" {>= "9"}
   "deb-libtiff5" {>= "4.0.3"}
   "deb-relion"
-  ("deb-openmpi-gcc" | "deb- openmpi-bin")
+  ("deb-openmpi-gcc" | "deb-openmpi-bin")
 ]
 conflicts: [
   "deb-relion-cuda-gui"

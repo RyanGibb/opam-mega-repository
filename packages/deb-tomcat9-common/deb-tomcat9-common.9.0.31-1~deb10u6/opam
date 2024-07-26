@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libtomcat9-java" {>= "9.0.31-1~deb10u6"}
-  ("deb-default-jre-headless" | "deb- java8-runtime-headless" | "deb- java8-runtime")
+  ("deb-default-jre-headless" | "deb-java8-runtime-headless" | "deb-java8-runtime")
 ]
 extra-source "tomcat9-common_9.0.31-1~deb10u6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tomcat9/tomcat9-common_9.0.31-1~deb10u6_all.deb"

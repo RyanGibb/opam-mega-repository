@@ -14,14 +14,14 @@ depends: [
   "deb-libparse-pmfile-perl" {>= "0.36"}
   "deb-libstring-shellquote-perl"
   "deb-perl" {>= "5.19.4"}
-  ("deb-perl" {>= "5.19.10"} | "deb- libparse-cpan-meta-perl" {>= "1.4414"})
-  ("deb-perl" {>= "5.21.5"} | "deb- libjson-pp-perl" {>= "2.27300"})
-  ("deb-perl" {>= "5.23.0"} | "deb- libcpan-meta-perl" {>= "2.150005"})
-  ("deb-perl" {>= "5.23.0"} | "deb- libcpan-meta-requirements-perl" {>= "2.133"})
-  ("deb-perl" {>= "5.23.0"} | "deb- libcpan-meta-yaml-perl" {>= "0.016"})
-  ("deb-perl" {>= "5.23.0"} | "deb- libhttp-tiny-perl" {>= "0.056"} | "deb- curl" | "deb- wget")
-  ("deb-perl" {>= "5.23.0"} | "deb- libmodule-metadata-perl" {>= "1.000027"})
-  ("deb-perl" {>= "5.23.9"} | "deb- libversion-perl" {>= "1-0.9912"})
+  ("deb-perl" {>= "5.19.10"} | "deb-libparse-cpan-meta-perl" {>= "1.4414"})
+  ("deb-perl" {>= "5.21.5"} | "deb-libjson-pp-perl" {>= "2.27300"})
+  ("deb-perl" {>= "5.23.0"} | "deb-libcpan-meta-perl" {>= "2.150005"})
+  ("deb-perl" {>= "5.23.0"} | "deb-libcpan-meta-requirements-perl" {>= "2.133"})
+  ("deb-perl" {>= "5.23.0"} | "deb-libcpan-meta-yaml-perl" {>= "0.016"})
+  ("deb-perl" {>= "5.23.0"} | "deb-libhttp-tiny-perl" {>= "0.056"} | "deb-curl" | "deb-wget")
+  ("deb-perl" {>= "5.23.0"} | "deb-libmodule-metadata-perl" {>= "1.000027"})
+  ("deb-perl" {>= "5.23.9"} | "deb-libversion-perl" {>= "1-0.9912"})
 ]
 extra-source "cpanminus_1.7044-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cpanminus/cpanminus_1.7044-1_all.deb"

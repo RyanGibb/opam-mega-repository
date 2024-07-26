@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.14"}
   "deb-libexpat1" {>= "2.0.1"}
   "deb-libudunits2-data"
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 extra-source "libudunits2-0_2.2.26-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/udunits/libudunits2-0_2.2.26-5_amd64.deb"

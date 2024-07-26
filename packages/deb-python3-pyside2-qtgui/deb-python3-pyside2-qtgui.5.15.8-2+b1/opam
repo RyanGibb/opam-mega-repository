@@ -16,7 +16,7 @@ depends: [
   "deb-python3" {< "3.12"}
   "deb-python3" {>= "3.11~"}
   "deb-python3-pyside2-qtcore"
-  ("deb-libqt5gui5" {>= "5.15.1"} | "deb- libqt5gui5-gles" {>= "5.15.1"})
+  ("deb-libqt5gui5" {>= "5.15.1"} | "deb-libqt5gui5-gles" {>= "5.15.1"})
 ]
 extra-source "python3-pyside2.qtgui_5.15.8-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pyside2/python3-pyside2.qtgui_5.15.8-2+b1_amd64.deb"

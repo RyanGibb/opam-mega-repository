@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-beautify"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-beautify_0.97.4-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-beautify/ruby-beautify_0.97.4-4_all.deb"

@@ -23,7 +23,7 @@ depends: [
   "deb-libxtst6"
   "deb-libzeitgeist-2-0-0" {>= "0.3.2"}
   "deb-zeitgeist-core" {>= "0.9.14"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "diodon_1.8.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/diodon/diodon_1.8.0-1_amd64.deb"

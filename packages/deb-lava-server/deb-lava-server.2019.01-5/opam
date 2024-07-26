@@ -42,7 +42,7 @@ depends: [
   "deb-python3-yaml"
   "deb-python3-zmq"
   "deb-systemd-sysv"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "lava-server_2019.01-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lava/lava-server_2019.01-5_all.deb"

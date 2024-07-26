@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.34"}
   "deb-libldap-2-5-0" {>= "2.5.4"}
-  ("deb-sendmail-bin" | "deb- mail-transport-agent")
+  ("deb-sendmail-bin" | "deb-mail-transport-agent")
 ]
 conflicts: [
   "deb-courier-mta"

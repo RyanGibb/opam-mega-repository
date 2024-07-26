@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-multi-json"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-elasticsearch-api_1.0.12-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-elasticsearch/ruby-elasticsearch-api_1.0.12-1_all.deb"

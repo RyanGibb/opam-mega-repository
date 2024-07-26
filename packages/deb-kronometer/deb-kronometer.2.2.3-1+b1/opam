@@ -19,7 +19,7 @@ depends: [
   "deb-libqt5dbus5" {>= "5.9.0"}
   "deb-libqt5widgets5" {>= "5.9.0"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.9.0"} | "deb- libqt5gui5-gles" {>= "5.9.0"})
+  ("deb-libqt5gui5" {>= "5.9.0"} | "deb-libqt5gui5-gles" {>= "5.9.0"})
 ]
 extra-source "kronometer_2.2.3-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kronometer/kronometer_2.2.3-1+b1_amd64.deb"

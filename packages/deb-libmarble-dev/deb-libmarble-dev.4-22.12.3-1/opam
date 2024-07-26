@@ -17,7 +17,7 @@ depends: [
   "deb-qtbase5-dev" {>= "5.15.1"}
   "deb-qtdeclarative5-dev" {>= "5.14.0~"}
   "deb-qtwebengine5-dev" {>= "5.14.0~"}
-  ("deb-libqt5gui5" {>= "5.14.0~"} | "deb- libqt5gui5-gles" {>= "5.14.0~"})
+  ("deb-libqt5gui5" {>= "5.14.0~"} | "deb-libqt5gui5-gles" {>= "5.14.0~"})
 ]
 extra-source "libmarble-dev_4:22.12.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/marble/libmarble-dev_22.12.3-1_amd64.deb"

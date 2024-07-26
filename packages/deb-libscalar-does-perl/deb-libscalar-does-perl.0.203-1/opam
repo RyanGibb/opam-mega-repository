@@ -12,7 +12,7 @@ depends: [
   "deb-libtype-tiny-perl"
   "deb-liburi-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.16.1"} | "deb- libscalar-list-utils-perl" {>= "1-1.24"})
+  ("deb-perl" {>= "5.16.1"} | "deb-libscalar-list-utils-perl" {>= "1-1.24"})
 ]
 extra-source "libscalar-does-perl_0.203-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libs/libscalar-does-perl/libscalar-does-perl_0.203-1_all.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-cup" {>= "0.11a+20060608"}
-  ("deb-default-jre" | "deb- java2-runtime")
+  ("deb-default-jre" | "deb-java2-runtime")
 ]
 extra-source "jasmin-sable_2.5.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jasmin-sable/jasmin-sable_2.5.0-2_all.deb"

@@ -11,7 +11,7 @@ depends: [
   "deb-lsb-base" {>= "3.0.6"}
   "deb-python-q-text-as-data"
   "deb-python3-openstackclient"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "ironic-api_1:11.1.0-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/ironic/ironic-api_11.1.0-6_all.deb"

@@ -10,8 +10,8 @@ depends: [
   "deb-libc6" {>= "2.29"}
   "deb-libgfortran5" {>= "8"}
   "deb-libopenmpi3" {>= "4.0.5"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libparpack2_3.8.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/arpack/libparpack2_3.8.0-1_amd64.deb"

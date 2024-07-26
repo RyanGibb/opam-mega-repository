@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r libfast5-dev"]
 ]
 depends: [
-  ("deb-libhdf5-dev" | "deb- libhdf5-mpich-dev" | "deb- libhdf5-openmpi-dev")
+  ("deb-libhdf5-dev" | "deb-libhdf5-mpich-dev" | "deb-libhdf5-openmpi-dev")
 ]
 extra-source "libfast5-dev_0.6.5-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fast5/libfast5-dev_0.6.5-2_all.deb"

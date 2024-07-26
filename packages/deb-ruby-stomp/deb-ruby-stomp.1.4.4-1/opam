@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-stomp"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-stomp_1.4.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-stomp/ruby-stomp_1.4.4-1_all.deb"

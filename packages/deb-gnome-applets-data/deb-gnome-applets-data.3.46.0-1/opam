@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r gnome-applets-data"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-applets-data_3.46.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-applets/gnome-applets-data_3.46.0-1_all.deb"

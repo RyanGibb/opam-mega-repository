@@ -55,10 +55,10 @@ depends: [
   "deb-python3"
   "deb-python3-docutils"
   "deb-uuid"
-  ("deb-apache2-suexec-pristine" | "deb- apache2-suexec")
-  ("deb-gcc" | "deb- c-compiler")
-  ("deb-libc6-dev" | "deb- libc-dev")
-  ("deb-libimage-magick-perl" | "deb- perlmagick")
+  ("deb-apache2-suexec-pristine" | "deb-apache2-suexec")
+  ("deb-gcc" | "deb-c-compiler")
+  ("deb-libc6-dev" | "deb-libc-dev")
+  ("deb-libimage-magick-perl" | "deb-perlmagick")
 ]
 conflicts: [
   "deb-parallel"

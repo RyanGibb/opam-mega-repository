@@ -43,7 +43,7 @@ depends: [
   "deb-libxcb-xfixes0"
   "deb-libxcb1"
   "deb-qdbus-qt5" {>= "5.10.0~"}
-  ("deb-libqt5gui5" {>= "5.10.0~"} | "deb- libqt5gui5-gles" {>= "5.10.0~"})
+  ("deb-libqt5gui5" {>= "5.10.0~"} | "deb-libqt5gui5-gles" {>= "5.10.0~"})
 ]
 extra-source "kde-spectacle_20.12.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kde-spectacle/kde-spectacle_20.12.3-1_amd64.deb"

@@ -9,7 +9,7 @@ depends: [
   "deb-adduser"
   "deb-logrotate"
   "deb-ucf"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "clamav-base_1.0.5+dfsg-1~deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/clamav/clamav-base_1.0.5+dfsg-1~deb12u1_all.deb"

@@ -41,7 +41,7 @@ depends: [
   "deb-simple-scan" {>= "3.36"}
   "deb-totem-plugins"
   "deb-xdg-user-dirs-gtk"
-  ("deb-shotwell" | "deb- gnome-photos" {>= "3.36"})
+  ("deb-shotwell" | "deb-gnome-photos" {>= "3.36"})
 ]
 extra-source "gnome_1:43+1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/meta-gnome3/gnome_43+1_amd64.deb"

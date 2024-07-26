@@ -15,8 +15,8 @@ depends: [
   "deb-libqt5x11extras5" {>= "5.6.0"}
   "deb-libstdc++6" {>= "5"}
   "deb-libx11-6"
-  ("deb-libqt5gui5" {>= "5.15.1"} | "deb- libqt5gui5-gles" {>= "5.15.1"})
-  ("deb-qt5-style-kvantum-themes" | "deb- qt5-style-kvantum-theme")
+  ("deb-libqt5gui5" {>= "5.15.1"} | "deb-libqt5gui5-gles" {>= "5.15.1"})
+  ("deb-qt5-style-kvantum-themes" | "deb-qt5-style-kvantum-theme")
 ]
 extra-source "qt5-style-kvantum_1.0.7-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qt5-style-kvantum/qt5-style-kvantum_1.0.7-1_amd64.deb"

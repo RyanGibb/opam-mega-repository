@@ -10,7 +10,7 @@ depends: [
   "deb-libncbi6-dev" {= "6.1.20170106+dfsg1-10"}
   "deb-libvibrant6b" {= "6.1.20170106+dfsg1-10"}
   "deb-libxmu-dev"
-  ("deb-libglu1-mesa-dev" | "deb- libglu-dev")
+  ("deb-libglu1-mesa-dev" | "deb-libglu-dev")
 ]
 extra-source "libvibrant6-dev_6.1.20170106+dfsg1-10_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/ncbi-tools6/libvibrant6-dev_6.1.20170106+dfsg1-10_amd64.deb"

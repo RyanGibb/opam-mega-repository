@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-rubytorrent"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-rubytorrent_0.3-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-rubytorrent/ruby-rubytorrent_0.3-5_all.deb"

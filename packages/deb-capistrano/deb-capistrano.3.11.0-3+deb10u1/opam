@@ -9,7 +9,7 @@ depends: [
   "deb-rake" {>= "10.0.0"}
   "deb-ruby-i18n"
   "deb-ruby-sshkit" {>= "1.3"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "capistrano_3.11.0-3+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/capistrano/capistrano_3.11.0-3+deb10u1_all.deb"

@@ -16,8 +16,8 @@ depends: [
   "deb-libjs-moment-timezone"
   "deb-libjs-mustache" {>= "2.3.0-1~"}
   "deb-libjs-rickshaw"
-  ("deb-daemon" | "deb- systemd-sysv")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-daemon" | "deb-systemd-sysv")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "prometheus_2.7.1+ds-3+b11_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/prometheus/prometheus_2.7.1+ds-3+b11_amd64.deb"

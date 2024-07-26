@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-librust-gettext-sys-0-21+default-dev"
   "deb-librust-gettext-sys-0-21+gettext-system-dev"
-  ("deb-librust-locale-config-0-3+default-dev" | "deb- librust-locale-config-0-2+default-dev" {>= "0.2.2-~~"})
+  ("deb-librust-locale-config-0-3+default-dev" | "deb-librust-locale-config-0-2+default-dev" {>= "0.2.2-~~"})
 ]
 extra-source "librust-gettext-rs-dev_0.7.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-gettext-rs/librust-gettext-rs-dev_0.7.0-3_amd64.deb"

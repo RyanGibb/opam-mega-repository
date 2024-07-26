@@ -16,8 +16,8 @@ depends: [
   "deb-plymouth-themes"
   "deb-policykit-1"
   "deb-syslinux"
-  ("deb-pulseaudio-x11" | "deb- pulseaudio")
-  ("deb-x2gothinclient-displaymanager" | "deb- x2gothinclient-minidesktop")
+  ("deb-pulseaudio-x11" | "deb-pulseaudio")
+  ("deb-x2gothinclient-displaymanager" | "deb-x2gothinclient-minidesktop")
 ]
 extra-source "x2gothinclient-chroot_1.5.0.1-6+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/x2gothinclient/x2gothinclient-chroot_1.5.0.1-6+deb11u1_all.deb"

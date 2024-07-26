@@ -9,7 +9,7 @@ depends: [
   "deb-ruby-childprocess"
   "deb-ruby-faraday"
   "deb-ruby-selenium-webdriver"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-blade-sauce-labs-plugin_0.7.3+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-blade-sauce-labs-plugin/ruby-blade-sauce-labs-plugin_0.7.3+dfsg-1_all.deb"

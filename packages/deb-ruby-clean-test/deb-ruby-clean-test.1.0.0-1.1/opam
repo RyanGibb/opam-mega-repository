@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-faker"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-clean-test_1.0.0-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-clean-test/ruby-clean-test_1.0.0-1.1_all.deb"

@@ -21,7 +21,7 @@ depends: [
   "deb-libsratom-0-0" {>= "0.4.6~dfsg0"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-libtinfo6" {>= "6"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "ecasound_2.9.1-7+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/ecasound/ecasound_2.9.1-7+b3_amd64.deb"

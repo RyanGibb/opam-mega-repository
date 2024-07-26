@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libipc-run-perl"
   "deb-perl-any"
-  ("deb-gnupg" | "deb- gnupg1")
+  ("deb-gnupg" | "deb-gnupg1")
 ]
 extra-source "libpgp-sign-perl_1.04-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libp/libpgp-sign-perl/libpgp-sign-perl_1.04-1_all.deb"

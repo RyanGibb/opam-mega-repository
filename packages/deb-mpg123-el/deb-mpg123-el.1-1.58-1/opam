@@ -8,8 +8,8 @@ remove: [
 depends: [
   "deb-aumix"
   "deb-emacsen-common" {>= "1.4.14"}
-  ("deb-emacs" | "deb- emacsen")
-  ("deb-mpg123" | "deb- mpg321" | "deb- vorbis-tools")
+  ("deb-emacs" | "deb-emacsen")
+  ("deb-mpg123" | "deb-mpg321" | "deb-vorbis-tools")
 ]
 extra-source "mpg123-el_1:1.58-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mpg123-el/mpg123-el_1.58-1_all.deb"

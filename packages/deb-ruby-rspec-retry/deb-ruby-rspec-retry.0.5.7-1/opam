@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-rspec-core"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-rspec-retry_0.5.7-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-rspec-retry/ruby-rspec-retry_0.5.7-1_all.deb"

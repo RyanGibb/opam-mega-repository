@@ -27,7 +27,7 @@ depends: [
   "deb-libwsutil12" {>= "3.3.0"}
   "deb-wireshark-common" {= "3.4.10-0+deb11u1"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "wireshark-qt_3.4.10-0+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/wireshark/wireshark-qt_3.4.10-0+deb11u1_amd64.deb"

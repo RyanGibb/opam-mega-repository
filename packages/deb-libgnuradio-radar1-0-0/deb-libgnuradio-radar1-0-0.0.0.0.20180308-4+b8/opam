@@ -19,7 +19,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libuhd3-15-0" {>= "3.15.0.0"}
   "deb-libvolk2-4" {>= "2.4.0"}
-  ("deb-libqt5gui5" {>= "5.2.0"} | "deb- libqt5gui5-gles" {>= "5.2.0"})
+  ("deb-libqt5gui5" {>= "5.2.0"} | "deb-libqt5gui5-gles" {>= "5.2.0"})
 ]
 extra-source "libgnuradio-radar1.0.0_0.0.0.20180308-4+b8_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gr-radar/libgnuradio-radar1.0.0_0.0.0.20180308-4+b8_amd64.deb"

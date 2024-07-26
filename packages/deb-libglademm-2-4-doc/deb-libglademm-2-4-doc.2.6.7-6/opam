@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-doc-base"
-  ("deb-lynx" | "deb- www-browser")
+  ("deb-lynx" | "deb-www-browser")
 ]
 conflicts: [
   "deb-libglademm-2-4-dev" {< "2.6.5-1"}

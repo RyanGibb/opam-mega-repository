@@ -19,7 +19,7 @@ depends: [
   "deb-libx11-6"
   "deb-libxext6"
   "deb-libxss1"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "compiz-plugins-experimental_2:0.8.18-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/compiz-plugins-experimental/compiz-plugins-experimental_0.8.18-3_amd64.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.34"}
   "deb-libssl3" {>= "3.0.0"}
-  ("deb-ocl-icd-libopencl1" | "deb- libopencl1")
+  ("deb-ocl-icd-libopencl1" | "deb-libopencl1")
 ]
 extra-source "hcxkeys_6.2.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/hcxkeys/hcxkeys_6.2.1-2_amd64.deb"

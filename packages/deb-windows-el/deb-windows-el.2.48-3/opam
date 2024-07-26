@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r windows-el"]
 ]
 depends: [
-  ("deb-emacs24" | "deb- emacsen")
+  ("deb-emacs24" | "deb-emacsen")
 ]
 extra-source "windows-el_2.48-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/windows-el/windows-el_2.48-3_all.deb"

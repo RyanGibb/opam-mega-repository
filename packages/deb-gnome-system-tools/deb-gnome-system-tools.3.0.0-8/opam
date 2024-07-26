@@ -19,8 +19,8 @@ depends: [
   "deb-libpango-1-0-0" {>= "1.14.0"}
   "deb-libpangocairo-1-0-0" {>= "1.14.0"}
   "deb-libpolkit-gobject-1-0" {>= "0.99"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-policykit-1-gnome" | "deb- mate-polkit")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-policykit-1-gnome" | "deb-mate-polkit")
 ]
 conflicts: [
   "deb-gnome-network-admin"

@@ -10,7 +10,7 @@ depends: [
   "deb-liboauth-dev"
   "deb-libsqlite3-dev"
   "deb-libu1db1" {= "13.10-6.3"}
-  ("deb-libcurl4-nss-dev" | "deb- libcurl4-gnutls-dev" | "deb- libcurl4-openssl-dev")
+  ("deb-libcurl4-nss-dev" | "deb-libcurl4-gnutls-dev" | "deb-libcurl4-openssl-dev")
 ]
 extra-source "libu1db-dev_13.10-6.3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/u1db/libu1db-dev_13.10-6.3_amd64.deb"

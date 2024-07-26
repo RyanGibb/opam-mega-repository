@@ -21,7 +21,7 @@ depends: [
   "deb-libsdl2-2-0-0" {>= "2.0.12"}
   "deb-libstdc++6" {>= "9"}
   "deb-openmw-data" {= "0.46.0-3"}
-  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb-libqt5gui5-gles" {>= "5.11.0~rc1"})
 ]
 extra-source "openmw-cs_0.46.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/openmw/openmw-cs_0.46.0-3_amd64.deb"

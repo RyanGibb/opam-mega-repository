@@ -39,7 +39,7 @@ depends: [
   "deb-libxt6"
   "deb-libzip4" {>= "0.10"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "repsnapper_2.5a5-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/repsnapper/repsnapper_2.5a5-2_amd64.deb"

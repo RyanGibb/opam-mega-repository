@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libtest-pod-content-perl"
   "deb-perl-any"
-  ("deb-perl" {>= "5.11.1"} | "deb- libtest-simple-perl" {>= "0.94"})
+  ("deb-perl" {>= "5.11.1"} | "deb-libtest-simple-perl" {>= "0.94"})
 ]
 extra-source "libtest-consistentversion-perl_0.3.0-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libt/libtest-consistentversion-perl/libtest-consistentversion-perl_0.3.0-1.1_all.deb"

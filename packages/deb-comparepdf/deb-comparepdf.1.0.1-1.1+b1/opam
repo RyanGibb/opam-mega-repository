@@ -11,7 +11,7 @@ depends: [
   "deb-libpoppler-qt5-1" {>= "0.24.5"}
   "deb-libqt5core5a" {>= "5.12.2"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "comparepdf_1.0.1-1.1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/comparepdf/comparepdf_1.0.1-1.1+b1_amd64.deb"

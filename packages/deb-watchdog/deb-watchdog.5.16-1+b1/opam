@@ -8,8 +8,8 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.17"}
   "deb-lsb-base" {>= "3.2-14"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-makedev" {>= "2.3.1-24"} | "deb- udev")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-makedev" {>= "2.3.1-24"} | "deb-udev")
 ]
 extra-source "watchdog_5.16-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/watchdog/watchdog_5.16-1+b1_amd64.deb"

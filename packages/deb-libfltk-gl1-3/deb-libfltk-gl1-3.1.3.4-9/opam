@@ -19,7 +19,7 @@ depends: [
   "deb-libxft2" {> "2.1.1"}
   "deb-libxinerama1"
   "deb-libxrender1"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "libfltk-gl1.3_1.3.4-9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fltk1.3/libfltk-gl1.3_1.3.4-9_amd64.deb"

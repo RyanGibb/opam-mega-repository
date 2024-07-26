@@ -21,8 +21,8 @@ depends: [
   "deb-python3-any"
   "deb-python3-pil"
   "deb-python3-png"
-  ("deb-libgl1" | "deb- libgl1-mesa-swx11")
-  ("deb-libglu1" | "deb- libglu1-mesa")
+  ("deb-libgl1" | "deb-libgl1-mesa-swx11")
+  ("deb-libglu1" | "deb-libglu1-mesa")
 ]
 extra-source "python3-pyglet_1.5.27+ds-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pyglet/python3-pyglet_1.5.27+ds-2_all.deb"

@@ -11,7 +11,7 @@ depends: [
   "deb-libfile-which-perl"
   "deb-libhtml-element-extended-perl" {>= "1.18-0"}
   "deb-perl"
-  ("deb-libdate-calc-perl" | "deb- libdate-manip-perl" | "deb- libdatetime-perl")
+  ("deb-libdate-calc-perl" | "deb-libdate-manip-perl" | "deb-libdatetime-perl")
 ]
 extra-source "libhtml-calendarmonth-perl_2.04-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libh/libhtml-calendarmonth-perl/libhtml-calendarmonth-perl_2.04-2_all.deb"

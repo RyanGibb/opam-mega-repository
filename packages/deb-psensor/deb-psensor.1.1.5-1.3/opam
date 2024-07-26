@@ -21,7 +21,7 @@ depends: [
   "deb-libx11-6"
   "deb-libxnvctrl0"
   "deb-psensor-common" {= "1.1.5-1.3"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "psensor_1.1.5-1.3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/psensor/psensor_1.1.5-1.3_amd64.deb"

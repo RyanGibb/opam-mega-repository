@@ -15,7 +15,7 @@ depends: [
   "deb-librados2" {>= "0.72.2"}
   "deb-librbd1" {>= "12.0.3"}
   "deb-libssh-4" {>= "0.8.4"}
-  ("deb-qemu-system-x86" {= "1-5.2+dfsg-11+deb11u3"} | "deb- qemu-system-arm" {= "1-5.2+dfsg-11+deb11u3"} | "deb- qemu-system-mips" {= "1-5.2+dfsg-11+deb11u3"} | "deb- qemu-system-ppc" {= "1-5.2+dfsg-11+deb11u3"} | "deb- qemu-system-sparc" {= "1-5.2+dfsg-11+deb11u3"} | "deb- qemu-system-misc" {= "1-5.2+dfsg-11+deb11u3"} | "deb- qemu-system-s390x" {= "1-5.2+dfsg-11+deb11u3"} | "deb- qemu-system-x86-xen" {= "1-5.2+dfsg-11+deb11u3"})
+  ("deb-qemu-system-x86" {= "1-5.2+dfsg-11+deb11u3"} | "deb-qemu-system-arm" {= "1-5.2+dfsg-11+deb11u3"} | "deb-qemu-system-mips" {= "1-5.2+dfsg-11+deb11u3"} | "deb-qemu-system-ppc" {= "1-5.2+dfsg-11+deb11u3"} | "deb-qemu-system-sparc" {= "1-5.2+dfsg-11+deb11u3"} | "deb-qemu-system-misc" {= "1-5.2+dfsg-11+deb11u3"} | "deb-qemu-system-s390x" {= "1-5.2+dfsg-11+deb11u3"} | "deb-qemu-system-x86-xen" {= "1-5.2+dfsg-11+deb11u3"})
 ]
 extra-source "qemu-block-extra_1:5.2+dfsg-11+deb11u3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-block-extra_5.2+dfsg-11+deb11u3_amd64.deb"

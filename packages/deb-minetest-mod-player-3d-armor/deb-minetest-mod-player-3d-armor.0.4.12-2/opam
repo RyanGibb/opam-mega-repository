@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r minetest-mod-player-3d-armor"]
 ]
 depends: [
-  ("deb-minetest" | "deb- minetest-server")
+  ("deb-minetest" | "deb-minetest-server")
 ]
 extra-source "minetest-mod-player-3d-armor_0.4.12-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/minetest-mod-3d-armor/minetest-mod-player-3d-armor_0.4.12-2_all.deb"

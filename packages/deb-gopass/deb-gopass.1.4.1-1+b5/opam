@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-tree"
-  ("deb-gnupg2" | "deb- gnupg")
+  ("deb-gnupg2" | "deb-gnupg")
 ]
 extra-source "gopass_1.4.1-1+b5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gopass/gopass_1.4.1-1+b5_amd64.deb"

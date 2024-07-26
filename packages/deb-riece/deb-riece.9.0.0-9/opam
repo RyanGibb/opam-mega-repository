@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-debconf"
   "deb-emacsen-common" {>= "2.0.8"}
-  ("deb-emacs" | "deb- emacsen")
+  ("deb-emacs" | "deb-emacsen")
 ]
 conflicts: [
   "deb-riece-async"

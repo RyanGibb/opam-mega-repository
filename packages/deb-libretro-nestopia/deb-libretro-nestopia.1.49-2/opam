@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.27"}
   "deb-libgcc1" {>= "1-3.0"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-retroarch" | "deb- libretro-frontend")
+  ("deb-retroarch" | "deb-libretro-frontend")
 ]
 extra-source "libretro-nestopia_1.49-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/nestopia/libretro-nestopia_1.49-2_amd64.deb"

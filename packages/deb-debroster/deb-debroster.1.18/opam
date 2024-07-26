@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-unsort"
-  ("deb-eterm" | "deb- xterm")
+  ("deb-eterm" | "deb-xterm")
 ]
 extra-source "debroster_1.18_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/debroster/debroster_1.18_all.deb"

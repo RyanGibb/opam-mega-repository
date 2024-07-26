@@ -19,8 +19,8 @@ depends: [
   "deb-python3-requests"
   "deb-python3-toml"
   "deb-python3-twisted"
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
-  ("deb-python3-importlib-resources" | "deb- python3" {> "3.9"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
+  ("deb-python3-importlib-resources" | "deb-python3" {> "3.9"})
 ]
 extra-source "pydoctor_22.9.1-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pydoctor/pydoctor_22.9.1-4_all.deb"

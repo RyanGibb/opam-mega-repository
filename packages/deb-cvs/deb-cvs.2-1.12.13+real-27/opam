@@ -12,7 +12,7 @@ depends: [
   "deb-libgssapi-krb5-2" {>= "1.17"}
   "deb-libkrb5-3" {>= "1.6.dfsg.2"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 conflicts: [
   "deb-cvs-doc"

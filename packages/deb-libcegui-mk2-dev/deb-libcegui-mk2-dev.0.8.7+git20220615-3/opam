@@ -21,7 +21,7 @@ depends: [
   "deb-libtiff-dev"
   "deb-libxerces-c3-2"
   "deb-lua-expat-dev"
-  ("deb-zlib1g-dev" | "deb- libz-dev")
+  ("deb-zlib1g-dev" | "deb-libz-dev")
 ]
 extra-source "libcegui-mk2-dev_0.8.7+git20220615-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cegui-mk2/libcegui-mk2-dev_0.8.7+git20220615-3_amd64.deb"

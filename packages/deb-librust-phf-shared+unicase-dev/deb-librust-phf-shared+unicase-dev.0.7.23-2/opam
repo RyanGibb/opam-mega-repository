@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-librust-phf-shared-dev" {= "0.7.23-2"}
-  ("deb-librust-unicase-2+default-dev" | "deb- librust-unicase-1+default-dev" {>= "1.4~~"})
+  ("deb-librust-unicase-2+default-dev" | "deb-librust-unicase-1+default-dev" {>= "1.4~~"})
 ]
 extra-source "librust-phf-shared+unicase-dev_0.7.23-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-phf-shared/librust-phf-shared+unicase-dev_0.7.23-2_amd64.deb"

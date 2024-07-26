@@ -10,7 +10,7 @@ depends: [
   "deb-ruby-any"
   "deb-xsltproc"
   "deb-zip"
-  ("deb-docbook-xsl" | "deb- docbook-xsl-ns")
+  ("deb-docbook-xsl" | "deb-docbook-xsl-ns")
 ]
 extra-source "dbtoepub_0+svn9904-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dbtoepub/dbtoepub_0+svn9904-7_all.deb"

@@ -15,7 +15,7 @@ depends: [
   "deb-python3-cinder" {= "2-21.1.0-3"}
   "deb-sqlite3"
   "deb-thin-provisioning-tools"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "cinder-common_2:21.1.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cinder/cinder-common_21.1.0-3_all.deb"

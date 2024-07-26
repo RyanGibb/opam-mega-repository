@@ -19,8 +19,8 @@ depends: [
   "deb-libx11-6"
   "deb-xdg-desktop-portal" {>= "1.15.0"}
   "deb-xdg-desktop-portal-gtk"
-  ("deb-dbus-user-session" | "deb- dbus-x11")
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dbus-user-session" | "deb-dbus-x11")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "xdg-desktop-portal-gnome_43.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xdg-desktop-portal-gnome/xdg-desktop-portal-gnome_43.1-2_amd64.deb"

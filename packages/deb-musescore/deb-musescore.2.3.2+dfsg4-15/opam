@@ -36,8 +36,8 @@ depends: [
   "deb-shared-mime-info"
   "deb-xdg-utils"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
-  ("deb-libqt5quick5" {>= "5.6.1"} | "deb- libqt5quick5-gles" {>= "5.6.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5quick5" {>= "5.6.1"} | "deb-libqt5quick5-gles" {>= "5.6.1"})
 ]
 extra-source "musescore_2.3.2+dfsg4-15_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/musescore2/musescore_2.3.2+dfsg4-15_amd64.deb"

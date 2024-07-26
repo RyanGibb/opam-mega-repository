@@ -25,7 +25,7 @@ depends: [
   "deb-libxml2" {>= "2.7.4"}
   "deb-tracker"
   "deb-xdg-utils"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "bijiben_3.38.0-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/bijiben/bijiben_3.38.0-1+b1_amd64.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl"
-  ("deb-libsendmail-milter-perl" {>= "0.18"} | "deb- libsendmail-pmilter-perl" {>= "0.80"})
+  ("deb-libsendmail-milter-perl" {>= "0.18"} | "deb-libsendmail-pmilter-perl" {>= "0.80"})
 ]
 extra-source "libmail-milter-perl_0.07-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libm/libmail-milter-perl/libmail-milter-perl_0.07-1_all.deb"

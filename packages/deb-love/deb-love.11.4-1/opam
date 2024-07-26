@@ -18,7 +18,7 @@ depends: [
   "deb-libtheora0" {>= "1.0"}
   "deb-libvorbisfile3" {>= "1.1.2"}
   "deb-zlib1g" {>= "1-1.2.0"}
-  ("deb-libluajit-5-1-2" {>= "2.0.4+dfsg"} | "deb- libluajit2-5-1-2" {>= "2.1~"})
+  ("deb-libluajit-5-1-2" {>= "2.0.4+dfsg"} | "deb-libluajit2-5-1-2" {>= "2.1~"})
 ]
 extra-source "love_11.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/love/love_11.4-1_amd64.deb"

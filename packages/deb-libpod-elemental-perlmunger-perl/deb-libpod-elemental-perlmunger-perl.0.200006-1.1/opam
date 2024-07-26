@@ -12,7 +12,7 @@ depends: [
   "deb-libpod-elemental-perl" {>= "0.103000"}
   "deb-libppi-perl"
   "deb-perl-any"
-  ("deb-perl" {>= "5.19.5"} | "deb- libscalar-list-util-perl" {>= "1.33"})
+  ("deb-perl" {>= "5.19.5"} | "deb-libscalar-list-util-perl" {>= "1.33"})
 ]
 extra-source "libpod-elemental-perlmunger-perl_0.200006-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libp/libpod-elemental-perlmunger-perl/libpod-elemental-perlmunger-perl_0.200006-1.1_all.deb"

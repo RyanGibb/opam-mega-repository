@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.34"}
   "deb-libgmp10" {>= "2-6.2.1+dfsg1"}
-  ("deb-debconf" {>= "0.5.00"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5.00"} | "deb-debconf-2-0")
 ]
 conflicts: [
   "deb-dhid" {< "5.1-5"}

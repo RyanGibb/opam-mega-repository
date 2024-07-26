@@ -10,7 +10,7 @@ depends: [
   "deb-python3-future"
   "deb-python3-requests" {>= "2.2.1"}
   "deb-python3-requests-futures"
-  ("deb-vim-nox" | "deb- vim-python3")
+  ("deb-vim-nox" | "deb-vim-python3")
   ("deb-ycmd" | "deb-ycmd")
 ]
 extra-source "vim-youcompleteme_0+20200825+git2afee9d+ds-2_amd64.deb" {

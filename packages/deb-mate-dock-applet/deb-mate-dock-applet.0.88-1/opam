@@ -22,7 +22,7 @@ depends: [
   "deb-python3-pil"
   "deb-python3-xdg"
   "deb-python3-xlib"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "mate-dock-applet_0.88-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mate-dock-applet/mate-dock-applet_0.88-1_amd64.deb"

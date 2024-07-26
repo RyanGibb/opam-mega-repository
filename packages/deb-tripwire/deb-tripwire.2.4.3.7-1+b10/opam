@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r tripwire"]
 ]
 depends: [
-  ("deb-postfix" | "deb- mail-transport-agent")
+  ("deb-postfix" | "deb-mail-transport-agent")
 ]
 extra-source "tripwire_2.4.3.7-1+b10_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tripwire/tripwire_2.4.3.7-1+b10_amd64.deb"

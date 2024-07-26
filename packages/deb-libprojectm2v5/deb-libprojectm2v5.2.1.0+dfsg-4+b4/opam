@@ -16,7 +16,7 @@ depends: [
   "deb-libgomp1" {>= "4.2.1"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-projectm-data"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "libprojectm2v5_2.1.0+dfsg-4+b4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/projectm/libprojectm2v5_2.1.0+dfsg-4+b4_amd64.deb"

@@ -16,7 +16,7 @@ depends: [
   "deb-libpangocairo-1-0-0" {>= "1.14.0"}
   "deb-libreadline7" {>= "6.0"}
   "deb-libxml2" {>= "2.7.4"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "teg_0.11.2+debian-8_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/teg/teg_0.11.2+debian-8_amd64.deb"

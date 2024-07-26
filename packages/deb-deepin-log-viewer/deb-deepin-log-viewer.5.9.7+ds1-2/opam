@@ -22,7 +22,7 @@ depends: [
   "deb-libsystemd0"
   "deb-libxerces-c3-2"
   "deb-libxlsxwriter4" {>= "1.1.4"}
-  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb-libqt5gui5-gles" {>= "5.7.0"})
 ]
 extra-source "deepin-log-viewer_5.9.7+ds1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/deepin-log-viewer/deepin-log-viewer_5.9.7+ds1-2_amd64.deb"

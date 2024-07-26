@@ -34,7 +34,7 @@ depends: [
   "deb-python" {>= "2.7~"}
   "deb-python-any" {< "2.8"}
   "deb-python-any" {>= "2.7~"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "kicad_5.0.2+dfsg1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kicad/kicad_5.0.2+dfsg1-1_amd64.deb"

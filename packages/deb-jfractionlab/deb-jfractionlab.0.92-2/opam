@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libtablelayout-java"
-  ("deb-default-jre" | "deb- java7-runtime")
+  ("deb-default-jre" | "deb-java7-runtime")
 ]
 extra-source "jfractionlab_0.92-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jfractionlab/jfractionlab_0.92-2_all.deb"

@@ -25,7 +25,7 @@ depends: [
   "deb-libxinerama1" {>= "2-1.1.4"}
   "deb-libxpm4"
   "deb-libxrender1"
-  ("deb-libperl4-corelibs-perl" | "deb- perl" {< "5.12.3-7"})
+  ("deb-libperl4-corelibs-perl" | "deb-perl" {< "5.12.3-7"})
 ]
 extra-source "fvwm_1:2.7.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fvwm/fvwm_2.7.0-2_amd64.deb"

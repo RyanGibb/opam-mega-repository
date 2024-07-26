@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-guile-3-0-libs"
   "deb-libc6" {>= "2.14"}
-  ("deb-weechat-curses" {= "3.0-1+deb11u1"} | "deb- weechat-headless" {= "3.0-1+deb11u1"})
+  ("deb-weechat-curses" {= "3.0-1+deb11u1"} | "deb-weechat-headless" {= "3.0-1+deb11u1"})
 ]
 extra-source "weechat-guile_3.0-1+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/weechat/weechat-guile_3.0-1+deb11u1_amd64.deb"

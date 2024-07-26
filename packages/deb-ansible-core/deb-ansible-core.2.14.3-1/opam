@@ -17,7 +17,7 @@ depends: [
   "deb-python3-pycryptodome"
   "deb-python3-resolvelib" {< "0.10"}
   "deb-python3-yaml" {>= "5.1~"}
-  ("deb-openssh-client" | "deb- python3-paramiko" {>= "2.6.0"})
+  ("deb-openssh-client" | "deb-python3-paramiko" {>= "2.6.0"})
 ]
 extra-source "ansible-core_2.14.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/ansible-core/ansible-core_2.14.3-1_all.deb"

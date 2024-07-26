@@ -23,7 +23,7 @@ depends: [
   "deb-qml-module-qtquick-dialogs"
   "deb-qml-module-qtquick-layouts"
   "deb-qml-module-qtquick-window2"
-  ("deb-libqt5gui5" {>= "5.15~"} | "deb- libqt5gui5-gles" {>= "5.15~"})
+  ("deb-libqt5gui5" {>= "5.15~"} | "deb-libqt5gui5-gles" {>= "5.15~"})
 ]
 extra-source "kalgebramobile_4:22.12.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kalgebra/kalgebramobile_22.12.3-1_amd64.deb"

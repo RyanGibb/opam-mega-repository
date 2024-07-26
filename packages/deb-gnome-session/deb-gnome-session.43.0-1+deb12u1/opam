@@ -11,7 +11,7 @@ depends: [
   "deb-gnome-session-common" {= "43.0-1+deb12u1"}
   "deb-gnome-settings-daemon" {>= "3.37.0"}
   "deb-gnome-shell" {>= "3.37.91"}
-  ("deb-xdg-desktop-portal-gnome" | "deb- xdg-desktop-portal-backend")
+  ("deb-xdg-desktop-portal-gnome" | "deb-xdg-desktop-portal-backend")
 ]
 extra-source "gnome-session_43.0-1+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-session/gnome-session_43.0-1+deb12u1_all.deb"

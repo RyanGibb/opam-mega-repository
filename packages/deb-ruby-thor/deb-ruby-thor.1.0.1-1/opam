@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-thor"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-thor_1.0.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-thor/ruby-thor_1.0.1-1_all.deb"

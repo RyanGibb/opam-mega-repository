@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r erlang-cf"]
 ]
 depends: [
-  ("deb-erlang-base" {>= "1-22.0.7+dfsg"} | "deb- erlang-base-hipe" {>= "1-22.0.7+dfsg"})
+  ("deb-erlang-base" {>= "1-22.0.7+dfsg"} | "deb-erlang-base-hipe" {>= "1-22.0.7+dfsg"})
 ]
 extra-source "erlang-cf_0.3.1-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/erlang-cf/erlang-cf_0.3.1-1+b1_amd64.deb"

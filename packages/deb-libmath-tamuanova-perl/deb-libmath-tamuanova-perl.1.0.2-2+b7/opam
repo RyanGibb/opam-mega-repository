@@ -10,7 +10,7 @@ depends: [
   "deb-libtamuanova-0-2" {>= "0.2"}
   "deb-perl" {>= "5.28.0-3"}
   "deb-perl-base"
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "libmath-tamuanova-perl_1.0.2-2+b7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libm/libmath-tamuanova-perl/libmath-tamuanova-perl_1.0.2-2+b7_amd64.deb"

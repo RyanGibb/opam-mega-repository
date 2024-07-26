@@ -23,7 +23,7 @@ depends: [
   "deb-libxext6"
   "deb-libxpm4"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "giada_0.16.2.2+ds1-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/giada/giada_0.16.2.2+ds1-1+b1_amd64.deb"

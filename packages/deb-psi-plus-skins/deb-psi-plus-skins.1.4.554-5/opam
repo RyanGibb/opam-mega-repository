@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-psi-plus-plugins"
-  ("deb-psi-plus" | "deb- psi-plus-webkit")
+  ("deb-psi-plus" | "deb-psi-plus-webkit")
 ]
 extra-source "psi-plus-skins_1.4.554-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/psi-plus/psi-plus-skins_1.4.554-5_all.deb"

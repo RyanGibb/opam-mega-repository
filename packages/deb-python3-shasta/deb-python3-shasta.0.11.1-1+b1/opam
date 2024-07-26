@@ -16,8 +16,8 @@ depends: [
   "deb-ncbi-blast+"
   "deb-python3" {< "3.12"}
   "deb-python3" {>= "3.11~"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "python3-shasta_0.11.1-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/shasta/python3-shasta_0.11.1-1+b1_amd64.deb"

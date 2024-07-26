@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl"
-  ("deb-liblog-message-simple-perl" | "deb- perl" {< "5.17.0"})
+  ("deb-liblog-message-simple-perl" | "deb-perl" {< "5.17.0"})
 ]
 extra-source "libterm-ui-perl_0.46-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libt/libterm-ui-perl/libterm-ui-perl_0.46-1_all.deb"

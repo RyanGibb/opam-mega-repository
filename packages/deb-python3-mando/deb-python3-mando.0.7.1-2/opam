@@ -8,8 +8,8 @@ remove: [
 depends: [
   "deb-python3-any"
   "deb-python3-six"
-  ("deb-python3" {>= "3.2"} | "deb- python3" {> "2.7"})
-  ("deb-python3-funcsigs" | "deb- python3" {> "3.3"})
+  ("deb-python3" {>= "3.2"} | "deb-python3" {> "2.7"})
+  ("deb-python3-funcsigs" | "deb-python3" {> "3.3"})
 ]
 extra-source "python3-mando_0.7.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mando/python3-mando_0.7.1-2_all.deb"

@@ -20,10 +20,10 @@ depends: [
   "deb-php-xml"
   "deb-phpqrcode"
   "deb-sysvinit-utils"
-  ("deb-dbconfig-mysql" | "deb- dbconfig-pgsql" | "deb- dbconfig-no-thanks")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-libapache2-mod-php" {>= "5.6.0"} | "deb- php-cgi" {>= "5.6.0"} | "deb- php" {>= "5.6.0"})
-  ("deb-php-mysql" | "deb- php-pgsql")
+  ("deb-dbconfig-mysql" | "deb-dbconfig-pgsql" | "deb-dbconfig-no-thanks")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-libapache2-mod-php" {>= "5.6.0"} | "deb-php-cgi" {>= "5.6.0"} | "deb-php" {>= "5.6.0"})
+  ("deb-php-mysql" | "deb-php-pgsql")
 ]
 extra-source "tt-rss_21~git20210204.b4cbc79+dfsg-1.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tt-rss/tt-rss_21~git20210204.b4cbc79+dfsg-1.2_all.deb"

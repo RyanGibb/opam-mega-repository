@@ -20,7 +20,7 @@ depends: [
   "deb-libxmu6"
   "deb-libxpm4"
   "deb-libxrender1"
-  ("deb-rxvt-unicode-256color" | "deb- rxvt-unicode" | "deb- rxvt-unicode-lite" | "deb- gnome-terminal" | "deb- konsole" | "deb- x-terminal-emulator")
+  ("deb-rxvt-unicode-256color" | "deb-rxvt-unicode" | "deb-rxvt-unicode-lite" | "deb-gnome-terminal" | "deb-konsole" | "deb-x-terminal-emulator")
 ]
 extra-source "jwm_2.3.7-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jwm/jwm_2.3.7-2_amd64.deb"

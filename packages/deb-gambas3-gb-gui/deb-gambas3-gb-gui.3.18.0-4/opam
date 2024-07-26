@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.3.4"}
-  ("deb-gambas3-gb-gtk3" {>= "3.18.0-4"} | "deb- gambas3-gb-qt5" {>= "3.18.0-4"})
+  ("deb-gambas3-gb-gtk3" {>= "3.18.0-4"} | "deb-gambas3-gb-qt5" {>= "3.18.0-4"})
 ]
 extra-source "gambas3-gb-gui_3.18.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gambas3/gambas3-gb-gui_3.18.0-4_amd64.deb"

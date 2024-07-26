@@ -13,7 +13,7 @@ depends: [
   "deb-libpango-1-0-0" {>= "1.14.0"}
   "deb-policykit-1"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-system-log_3.9.90-8_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-system-log/gnome-system-log_3.9.90-8_amd64.deb"

@@ -19,7 +19,7 @@ depends: [
   "deb-python-memcache"
   "deb-python-paramiko"
   "deb-python-swiftclient"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "sftpcloudfs_0.12.2-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sftpcloudfs/sftpcloudfs_0.12.2-3_all.deb"

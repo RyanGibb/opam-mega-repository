@@ -8,8 +8,8 @@ remove: [
 depends: [
   "deb-ruby-multi-json"
   "deb-ruby-request-store"
-  ("deb-ruby" | "deb- ruby-interpreter")
-  ("deb-ruby-oj" | "deb- ruby-json")
+  ("deb-ruby" | "deb-ruby-interpreter")
+  ("deb-ruby-oj" | "deb-ruby-json")
 ]
 extra-source "ruby-gon_6.2.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-gon/ruby-gon_6.2.1-1_all.deb"

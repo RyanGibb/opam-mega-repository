@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-python3-any"
   "deb-python3-asdf"
-  ("deb-python3-importlib-resources" | "deb- python3" {> "3.9"})
+  ("deb-python3-importlib-resources" | "deb-python3" {> "3.9"})
 ]
 extra-source "python3-asdf-wcs-schemas_0.1.1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/asdf-wcs-schemas/python3-asdf-wcs-schemas_0.1.1-3_all.deb"

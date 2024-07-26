@@ -16,7 +16,7 @@ depends: [
   "deb-libxcursor1" {> "1.1.2"}
   "deb-libxfixes3"
   "deb-libxtst6"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "mousetweaks_3.32.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mousetweaks/mousetweaks_3.32.0-4_amd64.deb"

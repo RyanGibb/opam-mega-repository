@@ -25,8 +25,8 @@ depends: [
   "deb-python3-watchdog"
   "deb-python3-yaml"
   "deb-sphinx-rtd-theme-common"
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.10"})
-  ("deb-python3-typing-extensions" | "deb- python3" {> "3.8"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.10"})
+  ("deb-python3-typing-extensions" | "deb-python3" {> "3.8"})
 ]
 extra-source "mkdocs_1.4.2+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-mkdocs/mkdocs_1.4.2+dfsg-2_all.deb"

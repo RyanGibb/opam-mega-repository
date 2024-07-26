@@ -9,7 +9,7 @@ depends: [
   "deb-adduser"
   "deb-libc6" {>= "2.15"}
   "deb-passwd"
-  ("deb-openbsd-inetd" | "deb- inet-superserver")
+  ("deb-openbsd-inetd" | "deb-inet-superserver")
 ]
 extra-source "telnetd_0.17-42_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/netkit-telnet/telnetd_0.17-42_amd64.deb"

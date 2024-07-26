@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libhsqldb-java" {= "2.4.1-2"}
-  ("deb-default-jre-headless" | "deb- java8-runtime-headless")
+  ("deb-default-jre-headless" | "deb-java8-runtime-headless")
 ]
 extra-source "hsqldb-utils_2.4.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/hsqldb/hsqldb-utils_2.4.1-2_all.deb"

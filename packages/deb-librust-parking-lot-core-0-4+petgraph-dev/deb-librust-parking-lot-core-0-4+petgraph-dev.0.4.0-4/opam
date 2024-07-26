@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-librust-parking-lot-core-0-4-dev" {= "0.4.0-4"}
-  ("deb-librust-petgraph-0-5+default-dev" | "deb- librust-petgraph-0-4+default-dev" {>= "0.4.5-~~"})
+  ("deb-librust-petgraph-0-5+default-dev" | "deb-librust-petgraph-0-4+default-dev" {>= "0.4.5-~~"})
 ]
 extra-source "librust-parking-lot-core-0.4+petgraph-dev_0.4.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-parking-lot-core-0.4/librust-parking-lot-core-0.4+petgraph-dev_0.4.0-4_amd64.deb"

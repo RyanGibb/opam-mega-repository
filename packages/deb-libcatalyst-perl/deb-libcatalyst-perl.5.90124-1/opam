@@ -53,7 +53,7 @@ depends: [
   "deb-perl"
   "deb-perl" {>= "5.15.8"}
   "deb-perl-base"
-  ("deb-libmoose-perl" {>= "2.1300"} | "deb- libmoosex-role-withoverloading-perl")
+  ("deb-libmoose-perl" {>= "2.1300"} | "deb-libmoosex-role-withoverloading-perl")
 ]
 conflicts: [
   "deb-libcatalyst-plugin-unicode-encoding-perl"

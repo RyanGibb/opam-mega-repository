@@ -20,7 +20,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libxpa1" {>= "2.1.14"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "qfitsview_4.0+dfsg-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dpuser/qfitsview_4.0+dfsg-3_amd64.deb"

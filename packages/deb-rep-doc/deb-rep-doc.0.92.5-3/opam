@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r rep-doc"]
 ]
 depends: [
-  ("deb-info" | "deb- info-browser")
+  ("deb-info" | "deb-info-browser")
 ]
 conflicts: [
   "deb-librep-doc"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-librust-string-dev" {= "0.2.1-2+b1"}
-  ("deb-librust-bytes-1+default-dev" | "deb- librust-bytes-0+default-dev" {>= "0.4-~~"})
+  ("deb-librust-bytes-1+default-dev" | "deb-librust-bytes-0+default-dev" {>= "0.4-~~"})
 ]
 extra-source "librust-string+bytes-dev_0.2.1-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-string/librust-string+bytes-dev_0.2.1-2+b1_amd64.deb"

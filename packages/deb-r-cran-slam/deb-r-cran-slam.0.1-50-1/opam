@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.4"}
   "deb-r-base-core"
   "deb-r-base-core" {>= "4.1.2-1"}
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "r-cran-slam_0.1-50-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-slam/r-cran-slam_0.1-50-1_amd64.deb"

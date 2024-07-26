@@ -15,7 +15,7 @@ depends: [
   "deb-qml-module-qtquick-window2" {>= "5.3"}
   "deb-qml-module-qtquick2" {>= "5.4"}
   "deb-qml-module-qtwebengine"
-  ("deb-libqt5gui5" {>= "5.4"} | "deb- libqt5gui5-gles" {>= "5.4"})
+  ("deb-libqt5gui5" {>= "5.4"} | "deb-libqt5gui5-gles" {>= "5.4"})
 ]
 extra-source "qml-module-morph-web_1.0.2+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/morph-browser/qml-module-morph-web_1.0.2+dfsg-1_amd64.deb"

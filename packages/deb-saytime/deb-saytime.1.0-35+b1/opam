@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.34"}
   "deb-oss-compat"
   "deb-sox"
-  ("deb-libsox-fmt-oss" | "deb- libsox-fmt-alsa")
+  ("deb-libsox-fmt-oss" | "deb-libsox-fmt-alsa")
 ]
 extra-source "saytime_1.0-35+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/saytime/saytime_1.0-35+b1_amd64.deb"

@@ -12,7 +12,7 @@ depends: [
   "deb-python3-kitchen"
   "deb-python3-requests"
   "deb-python3-six"
-  ("deb-xsel" | "deb- xclip")
+  ("deb-xsel" | "deb-xclip")
 ]
 extra-source "rtv_1.27.0+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rtv/rtv_1.27.0+dfsg-2_all.deb"

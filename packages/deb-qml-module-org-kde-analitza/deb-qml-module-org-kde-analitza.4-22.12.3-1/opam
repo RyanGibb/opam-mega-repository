@@ -18,8 +18,8 @@ depends: [
   "deb-qml-module-qtquick-controls"
   "deb-qml-module-qtquick-layouts"
   "deb-qml-module-qtquick2"
-  ("deb-libqt5gui5" {>= "5.6"} | "deb- libqt5gui5-gles" {>= "5.6"})
-  ("deb-libqt5quick5" {>= "5.6.0~beta"} | "deb- libqt5quick5-gles" {>= "5.6.0~beta"})
+  ("deb-libqt5gui5" {>= "5.6"} | "deb-libqt5gui5-gles" {>= "5.6"})
+  ("deb-libqt5quick5" {>= "5.6.0~beta"} | "deb-libqt5quick5-gles" {>= "5.6.0~beta"})
 ]
 extra-source "qml-module-org-kde-analitza_4:22.12.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/analitza/qml-module-org-kde-analitza_22.12.3-1_amd64.deb"

@@ -11,8 +11,8 @@ depends: [
   "deb-libfribidi-dev"
   "deb-libglc0" {= "0.7.2-7+b2"}
   "deb-zlib1g-dev"
-  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
-  ("deb-libglu1-mesa-dev" | "deb- libglu-dev")
+  ("deb-libgl1-mesa-dev" | "deb-libgl-dev")
+  ("deb-libglu1-mesa-dev" | "deb-libglu-dev")
 ]
 extra-source "libglc-dev_0.7.2-7+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/quesoglc/libglc-dev_0.7.2-7+b2_amd64.deb"

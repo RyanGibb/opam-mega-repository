@@ -10,7 +10,7 @@ depends: [
   "deb-pcf2bdf"
   "deb-perl-any"
   "deb-xfonts-utils"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "xfonts-traditional_1.8.0_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xfonts-traditional/xfonts-traditional_1.8.0_all.deb"

@@ -25,7 +25,7 @@ depends: [
   "deb-rsync"
   "deb-socat"
   "deb-zlib1g" {>= "1-1.2.0"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 conflicts: [
   "deb-mariadb-tokudb-engine-10-0"

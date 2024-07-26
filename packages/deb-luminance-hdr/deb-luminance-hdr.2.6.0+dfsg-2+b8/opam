@@ -33,7 +33,7 @@ depends: [
   "deb-libraw20" {>= "0.16.0"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-libtiff5" {>= "4.0.3"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "luminance-hdr_2.6.0+dfsg-2+b8_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/luminance-hdr/luminance-hdr_2.6.0+dfsg-2+b8_amd64.deb"

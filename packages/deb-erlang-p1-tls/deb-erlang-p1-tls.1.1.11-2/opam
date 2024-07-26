@@ -11,8 +11,8 @@ depends: [
   "deb-erlang-public-key" {>= "1-23.2.3+dfsg"}
   "deb-libc6" {>= "2.14"}
   "deb-libssl1-1" {>= "1.1.0"}
-  ("deb-erlang-base" {>= "1-19.2"} | "deb- erlang-abi" {= "17.0"})
-  ("deb-erlang-base" {>= "1-23.2.3+dfsg"} | "deb- erlang-base-hipe" {>= "1-23.2.3+dfsg"})
+  ("deb-erlang-base" {>= "1-19.2"} | "deb-erlang-abi" {= "17.0"})
+  ("deb-erlang-base" {>= "1-23.2.3+dfsg"} | "deb-erlang-base-hipe" {>= "1-23.2.3+dfsg"})
 ]
 extra-source "erlang-p1-tls_1.1.11-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/erlang-p1-tls/erlang-p1-tls_1.1.11-2_amd64.deb"

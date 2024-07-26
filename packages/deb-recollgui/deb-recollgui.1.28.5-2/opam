@@ -14,7 +14,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.14.1"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-recollcmd" {= "1.28.5-2"}
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "recollgui_1.28.5-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/recoll/recollgui_1.28.5-2_amd64.deb"

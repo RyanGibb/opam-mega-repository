@@ -17,7 +17,7 @@ depends: [
   "deb-libzemberek-java"
   "deb-libzemberek-tr-java"
   "deb-sgml-base" {>= "1.28"}
-  ("deb-default-jre-headless" | "deb- openjdk-6-jre-headless")
+  ("deb-default-jre-headless" | "deb-openjdk-6-jre-headless")
 ]
 extra-source "zemberek-server_0.7.1-12.4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/z/zemberek-server/zemberek-server_0.7.1-12.4_all.deb"

@@ -11,7 +11,7 @@ depends: [
   "deb-terminal-app"
   "deb-textedit-app"
   "deb-zipper-app"
-  ("deb-price-app" | "deb- preview-app")
+  ("deb-price-app" | "deb-preview-app")
 ]
 extra-source "gnustep_7.10_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/meta-gnustep/gnustep_7.10_all.deb"

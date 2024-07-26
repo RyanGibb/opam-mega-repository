@@ -14,7 +14,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-dbus"
   "deb-python3-gi"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "firewall-config_0.6.3-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/firewalld/firewall-config_0.6.3-5_all.deb"

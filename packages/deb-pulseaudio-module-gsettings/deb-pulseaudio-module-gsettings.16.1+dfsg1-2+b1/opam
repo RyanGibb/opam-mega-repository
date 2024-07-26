@@ -10,7 +10,7 @@ depends: [
   "deb-libglib2-0-0" {>= "2.67.1"}
   "deb-libpulse0" {= "16.1+dfsg1-2+b1"}
   "deb-pulseaudio" {= "16.1+dfsg1-2+b1"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "pulseaudio-module-gsettings_16.1+dfsg1-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pulseaudio/pulseaudio-module-gsettings_16.1+dfsg1-2+b1_amd64.deb"

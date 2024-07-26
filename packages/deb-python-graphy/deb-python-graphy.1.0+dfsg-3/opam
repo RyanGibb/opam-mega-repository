@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-python" {< "2.8"}
   "deb-python" {>= "2.6.6-7~"}
-  ("deb-python2-6" | "deb- python2-7")
+  ("deb-python2-6" | "deb-python2-7")
 ]
 extra-source "python-graphy_1.0+dfsg-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/graphy/python-graphy_1.0+dfsg-3_all.deb"

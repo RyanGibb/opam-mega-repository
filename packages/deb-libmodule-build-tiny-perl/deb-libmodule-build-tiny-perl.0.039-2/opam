@@ -10,9 +10,9 @@ depends: [
   "deb-libextutils-helpers-perl"
   "deb-libextutils-installpaths-perl"
   "deb-perl-any"
-  ("deb-perl" | "deb- libcpan-meta-perl")
-  ("deb-perl" | "deb- libjson-pp-perl")
-  ("deb-perl" | "deb- libtest-harness-perl")
+  ("deb-perl" | "deb-libcpan-meta-perl")
+  ("deb-perl" | "deb-libjson-pp-perl")
+  ("deb-perl" | "deb-libtest-harness-perl")
 ]
 extra-source "libmodule-build-tiny-perl_0.039-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libm/libmodule-build-tiny-perl/libmodule-build-tiny-perl_0.039-2_all.deb"

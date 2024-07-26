@@ -56,10 +56,10 @@ depends: [
   "deb-python3-docutils"
   "deb-rsync"
   "deb-uuid"
-  ("deb-apache2-suexec-pristine" | "deb- apache2-suexec")
-  ("deb-gcc" | "deb- clang" | "deb- tcc")
-  ("deb-libc6-dev" | "deb- libc-dev")
-  ("deb-libimage-magick-perl" | "deb- perlmagick")
+  ("deb-apache2-suexec-pristine" | "deb-apache2-suexec")
+  ("deb-gcc" | "deb-clang" | "deb-tcc")
+  ("deb-libc6-dev" | "deb-libc-dev")
+  ("deb-libimage-magick-perl" | "deb-perlmagick")
 ]
 conflicts: [
   "deb-parallel"

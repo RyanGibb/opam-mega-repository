@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-io-like" {>= "0.3.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-archive-zip_0.11.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-archive-zip/ruby-archive-zip_0.11.0-1_all.deb"

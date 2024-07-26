@@ -25,7 +25,7 @@ depends: [
   "deb-libxfce4ui-2-0" {>= "4.11.1"}
   "deb-libxfce4util7" {>= "4.9.0"}
   "deb-libxfconf-0-3" {>= "4.10"}
-  ("deb-gstreamer1-0-alsa" | "deb- gstreamer1-0-audiosink")
+  ("deb-gstreamer1-0-alsa" | "deb-gstreamer1-0-audiosink")
 ]
 extra-source "parole_4.16.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/parole/parole_4.16.0-1_amd64.deb"

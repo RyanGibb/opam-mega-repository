@@ -11,7 +11,7 @@ depends: [
   "deb-libcrack2" {>= "2.8.12"}
   "deb-libpam-runtime" {>= "1.0.1-6"}
   "deb-libpam0g" {>= "1.1.1"}
-  ("deb-wamerican" | "deb- wordlist")
+  ("deb-wamerican" | "deb-wordlist")
 ]
 extra-source "libpam-cracklib_1.3.1-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pam/libpam-cracklib_1.3.1-5_amd64.deb"

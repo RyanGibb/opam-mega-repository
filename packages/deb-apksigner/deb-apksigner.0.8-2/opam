@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-jarwrapper"
-  ("deb-default-jre-headless" {>= "1-1.8"} | "deb- java8-runtime-headless")
+  ("deb-default-jre-headless" {>= "1-1.8"} | "deb-java8-runtime-headless")
 ]
 extra-source "apksigner_0.8-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/android-platform-tools-apksig/apksigner_0.8-2_all.deb"

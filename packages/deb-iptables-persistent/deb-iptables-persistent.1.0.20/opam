@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-netfilter-persistent" {= "1.0.20"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "iptables-persistent_1.0.20_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/iptables-persistent/iptables-persistent_1.0.20_all.deb"

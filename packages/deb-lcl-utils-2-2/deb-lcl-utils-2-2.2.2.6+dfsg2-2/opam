@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-fp-compiler"
   "deb-libc6" {>= "2.34"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "lcl-utils-2.2_2.2.6+dfsg2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lazarus/lcl-utils-2.2_2.2.6+dfsg2-2_amd64.deb"

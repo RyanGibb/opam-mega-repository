@@ -15,8 +15,8 @@ depends: [
   "deb-libssl1-1" {>= "1.1.0"}
   "deb-lsb-base"
   "deb-procps"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-tcsh" | "deb- c-shell")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-tcsh" | "deb-c-shell")
 ]
 extra-source "gridengine-exec_8.1.9+dfsg-9.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gridengine/gridengine-exec_8.1.9+dfsg-9.1_amd64.deb"

@@ -11,9 +11,9 @@ depends: [
   "deb-iproute2"
   "deb-lsb-base"
   "deb-net-tools"
-  ("deb-iputils-arping" | "deb- arping")
-  ("deb-iputils-ping" | "deb- ping")
-  ("deb-netcat-openbsd" | "deb- ncat")
+  ("deb-iputils-arping" | "deb-arping")
+  ("deb-iputils-ping" | "deb-ping")
+  ("deb-netcat-openbsd" | "deb-ncat")
 ]
 conflicts: [
   "deb-debian-goodies" {< "0.39"}

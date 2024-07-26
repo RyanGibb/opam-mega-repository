@@ -12,7 +12,7 @@ depends: [
   "deb-libsvn-notify-perl"
   "deb-perl"
   "deb-subversion"
-  ("deb-libxmlrpc-lite-perl" | "deb- libsoap-lite-perl" {< "1.08"})
+  ("deb-libxmlrpc-lite-perl" | "deb-libsoap-lite-perl" {< "1.08"})
 ]
 extra-source "libsvn-hooks-perl_1.34-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libs/libsvn-hooks-perl/libsvn-hooks-perl_1.34-2_all.deb"

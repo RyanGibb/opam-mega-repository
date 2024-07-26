@@ -11,7 +11,7 @@ depends: [
   "deb-libqt5qml5"
   "deb-libqt5qml5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5quickparticles5" {>= "5.15.1"} | "deb- libqt5quickparticles5-gles" {>= "5.15.1"})
+  ("deb-libqt5quickparticles5" {>= "5.15.1"} | "deb-libqt5quickparticles5-gles" {>= "5.15.1"})
 ]
 extra-source "qml-module-qtquick-particles2_5.15.2+dfsg-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtdeclarative-opensource-src/qml-module-qtquick-particles2_5.15.2+dfsg-6_amd64.deb"

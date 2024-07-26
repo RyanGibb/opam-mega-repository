@@ -14,7 +14,7 @@ depends: [
   "deb-libplib1"
   "deb-libstdc++6" {>= "5"}
   "deb-openuniverse-common"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 conflicts: [
   "deb-openuniverse-common" {<= "1.0beta3.1-3"}

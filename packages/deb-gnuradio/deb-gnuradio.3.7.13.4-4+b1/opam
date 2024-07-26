@@ -75,7 +75,7 @@ depends: [
   "deb-python-sip"
   "deb-python-wxgtk3-0"
   "deb-python-zmq"
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "gnuradio_3.7.13.4-4+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnuradio/gnuradio_3.7.13.4-4+b1_amd64.deb"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r gnustep-back0.27"]
 ]
 depends: [
-  ("deb-gnustep-back0-27-cairo" | "deb- gnustep-back0-27-alt")
+  ("deb-gnustep-back0-27-cairo" | "deb-gnustep-back0-27-alt")
 ]
 extra-source "gnustep-back0.27_0.27.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnustep-back/gnustep-back0.27_0.27.0-2_all.deb"

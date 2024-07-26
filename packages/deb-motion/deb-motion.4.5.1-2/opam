@@ -18,7 +18,7 @@ depends: [
   "deb-libpq5"
   "deb-libsqlite3-0" {>= "3.5.9"}
   "deb-libswscale6" {>= "7-5.0"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "motion_4.5.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/motion/motion_4.5.1-2_amd64.deb"

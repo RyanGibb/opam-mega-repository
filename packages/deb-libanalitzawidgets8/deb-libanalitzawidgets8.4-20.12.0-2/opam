@@ -14,7 +14,7 @@ depends: [
   "deb-libqt5svg5" {>= "5.6.0~beta"}
   "deb-libqt5widgets5" {>= "5.6"}
   "deb-libstdc++6" {>= "4.1.1"}
-  ("deb-libqt5gui5" {>= "5.6"} | "deb- libqt5gui5-gles" {>= "5.6"})
+  ("deb-libqt5gui5" {>= "5.6"} | "deb-libqt5gui5-gles" {>= "5.6"})
 ]
 extra-source "libanalitzawidgets8_4:20.12.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/analitza/libanalitzawidgets8_20.12.0-2_amd64.deb"

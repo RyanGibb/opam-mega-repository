@@ -11,7 +11,7 @@ depends: [
   "deb-python3-debian"
   "deb-python3-debmutate"
   "deb-python3-ruamel-yaml"
-  ("deb-python3-typing-extensions" | "deb- python3" {> "3.8"})
+  ("deb-python3-typing-extensions" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-upstream-ontologist_0.1.35-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/upstream-ontologist/python3-upstream-ontologist_0.1.35-1_all.deb"

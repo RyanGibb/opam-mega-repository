@@ -22,7 +22,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libtiff5" {>= "4.0.3"}
   "deb-zlib1g" {>= "1-1.2.3.3"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "imagevis3d_3.1.0-7+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/imagevis3d/imagevis3d_3.1.0-7+b2_amd64.deb"

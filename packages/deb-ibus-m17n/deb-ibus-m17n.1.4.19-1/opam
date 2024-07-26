@@ -12,7 +12,7 @@ depends: [
   "deb-libgtk-3-0" {>= "3.3.16"}
   "deb-libibus-1-0-5" {>= "1.5.1"}
   "deb-libm17n-0" {>= "1.6.3"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "ibus-m17n_1.4.19-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/ibus-m17n/ibus-m17n_1.4.19-1_amd64.deb"

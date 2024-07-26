@@ -17,8 +17,8 @@ depends: [
   "deb-libsratom-0-0" {>= "0.6.0"}
   "deb-libstdc++6" {>= "4.1.1"}
   "deb-libsuil-0-0" {>= "0.10.0"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
-  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb- libqt5gui5-gles" {>= "5.11.0~rc1"})
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
+  ("deb-libqt5gui5" {>= "5.11.0~rc1"} | "deb-libqt5gui5-gles" {>= "5.11.0~rc1"})
 ]
 extra-source "jalv_1.6.6-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jalv/jalv_1.6.6-1_amd64.deb"

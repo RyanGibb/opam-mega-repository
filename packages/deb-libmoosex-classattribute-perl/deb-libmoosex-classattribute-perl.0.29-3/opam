@@ -10,7 +10,7 @@ depends: [
   "deb-libnamespace-autoclean-perl"
   "deb-libnamespace-clean-perl"
   "deb-perl-any"
-  ("deb-libscalar-list-utils-perl" | "deb- perl")
+  ("deb-libscalar-list-utils-perl" | "deb-perl")
 ]
 extra-source "libmoosex-classattribute-perl_0.29-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libm/libmoosex-classattribute-perl/libmoosex-classattribute-perl_0.29-3_all.deb"

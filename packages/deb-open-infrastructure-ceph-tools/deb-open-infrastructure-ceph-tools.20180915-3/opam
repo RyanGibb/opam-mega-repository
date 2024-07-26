@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r open-infrastructure-ceph-tools"]
 ]
 depends: [
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "open-infrastructure-ceph-tools_20180915-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/open-infrastructure-storage-tools/open-infrastructure-ceph-tools_20180915-3_all.deb"

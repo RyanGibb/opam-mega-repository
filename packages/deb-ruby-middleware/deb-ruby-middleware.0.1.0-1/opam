@@ -12,7 +12,7 @@ depends: [
   "deb-ruby-rspec-expectations" {> "2.8.0"}
   "deb-ruby-rspec-mocks" {> "2.8.0"}
   "deb-yard" {> "0.7.5"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-middleware_0.1.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-middleware/ruby-middleware_0.1.0-1_all.deb"

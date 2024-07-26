@@ -23,7 +23,7 @@ depends: [
   "deb-libqtcore4" {>= "4-4.7.0~beta1"}
   "deb-libqtgui4" {>= "4-4.8.0"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "meshlab_1.3.2+dfsg1-4+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/meshlab/meshlab_1.3.2+dfsg1-4+b1_amd64.deb"

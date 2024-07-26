@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-activesupport"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-http-accept-language_2.1.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-http-accept-language/ruby-http-accept-language_2.1.1-2_all.deb"

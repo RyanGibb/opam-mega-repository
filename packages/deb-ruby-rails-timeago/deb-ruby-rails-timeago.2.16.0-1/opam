@@ -9,7 +9,7 @@ depends: [
   "deb-libjs-jquery-timeago" {>= "1.5.4~"}
   "deb-ruby-actionpack" {>= "2-3.1~"}
   "deb-ruby-activesupport" {>= "2-3.1~"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-rails-timeago_2.16.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-rails-timeago/ruby-rails-timeago_2.16.0-1_all.deb"

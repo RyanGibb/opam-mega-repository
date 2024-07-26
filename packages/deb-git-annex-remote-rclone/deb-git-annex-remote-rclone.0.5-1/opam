@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-rclone"
-  ("deb-git-annex" | "deb- git-annex-standalone")
+  ("deb-git-annex" | "deb-git-annex-standalone")
 ]
 extra-source "git-annex-remote-rclone_0.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/git-annex-remote-rclone/git-annex-remote-rclone_0.5-1_all.deb"

@@ -14,7 +14,7 @@ depends: [
   "deb-libx11-6"
   "deb-lxsession-data"
   "deb-policykit-1"
-  ("deb-lxlock" | "deb- xdg-utils")
+  ("deb-lxlock" | "deb-xdg-utils")
 ]
 extra-source "lxsession-logout_0.5.5-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lxsession/lxsession-logout_0.5.5-2+b1_amd64.deb"

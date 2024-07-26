@@ -12,7 +12,7 @@ depends: [
   "deb-ruby-gio2" {>= "3.4.3-2"}
   "deb-ruby-glib2" {>= "3.4.3-2"}
   "deb-ruby-pango" {>= "3.4.3-2"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-rsvg2_3.4.3-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-gnome/ruby-rsvg2_3.4.3-2_all.deb"

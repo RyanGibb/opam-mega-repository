@@ -17,7 +17,7 @@ depends: [
   "deb-libstring-shellquote-perl"
   "deb-perl"
   "deb-perl-any"
-  ("deb-libhttp-tiny-perl" {>= "0.056"} | "deb- curl" | "deb- wget")
+  ("deb-libhttp-tiny-perl" {>= "0.056"} | "deb-curl" | "deb-wget")
 ]
 extra-source "cpanminus_1.7044-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cpanminus/cpanminus_1.7044-2_all.deb"

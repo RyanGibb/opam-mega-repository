@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-rakudo"
-  ("deb-curl" | "deb- wget")
+  ("deb-curl" | "deb-wget")
 ]
 extra-source "perl6-zef_0.9.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/perl6-zef/perl6-zef_0.9.4-1_all.deb"

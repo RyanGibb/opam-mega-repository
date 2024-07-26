@@ -10,7 +10,7 @@ depends: [
   "deb-python3-cryptography"
   "deb-python3-jwt"
   "deb-python3-requests"
-  ("deb-python3-mock" | "deb- python3" {> "3.3"})
+  ("deb-python3-mock" | "deb-python3" {> "3.3"})
 ]
 extra-source "python3-msal_1.21.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/microsoft-authentication-library-for-python/python3-msal_1.21.0-1_all.deb"

@@ -20,7 +20,7 @@ depends: [
   "deb-python3-netifaces"
   "deb-python3-openvswitch" {>= "3.1.0-2+deb12u1"}
   "deb-uuid-runtime"
-  ("deb-kmod" | "deb- module-init-tools")
+  ("deb-kmod" | "deb-module-init-tools")
 ]
 extra-source "openvswitch-switch_3.1.0-2+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/openvswitch/openvswitch-switch_3.1.0-2+deb12u1_amd64.deb"

@@ -16,7 +16,7 @@ depends: [
   "deb-gir1-2-gweather-3-0" {>= "3.17.2"}
   "deb-gjs" {>= "1.49.4"}
   "deb-libglib2-0-bin" {>= "2.40"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-weather_3.26.0-6~deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-weather/gnome-weather_3.26.0-6~deb10u1_all.deb"

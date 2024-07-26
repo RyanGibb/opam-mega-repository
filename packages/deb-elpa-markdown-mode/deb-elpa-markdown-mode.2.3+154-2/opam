@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-emacsen-common" {>= "2.0.8"}
-  ("deb-emacs" | "deb- emacsen")
+  ("deb-emacs" | "deb-emacsen")
 ]
 extra-source "elpa-markdown-mode_2.3+154-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/markdown-mode/elpa-markdown-mode_2.3+154-2_all.deb"

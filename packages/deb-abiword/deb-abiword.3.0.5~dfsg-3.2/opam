@@ -28,7 +28,7 @@ depends: [
   "deb-libwpg-0-3-3"
   "deb-libxml2" {>= "2.7.4"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-fonts-urw-base35" {>= "20200910-2~"} | "deb- gsfonts")
+  ("deb-fonts-urw-base35" {>= "20200910-2~"} | "deb-gsfonts")
 ]
 extra-source "abiword_3.0.5~dfsg-3.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/abiword/abiword_3.0.5~dfsg-3.2_amd64.deb"

@@ -17,7 +17,7 @@ depends: [
   "deb-libvlccore9" {>= "3.0.21"}
   "deb-libwayland-client0" {>= "1.0.2"}
   "deb-libx11-6"
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "vlc-plugin-qt_3.0.21-0+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/vlc/vlc-plugin-qt_3.0.21-0+deb11u1_amd64.deb"

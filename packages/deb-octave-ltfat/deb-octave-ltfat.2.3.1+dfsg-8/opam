@@ -14,8 +14,8 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-octave" {>= "6.1.0"}
   "deb-octave-ltfat-common" {= "2.3.1+dfsg-8"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "octave-ltfat_2.3.1+dfsg-8_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/octave-ltfat/octave-ltfat_2.3.1+dfsg-8_amd64.deb"

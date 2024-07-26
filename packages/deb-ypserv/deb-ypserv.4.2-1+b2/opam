@@ -16,7 +16,7 @@ depends: [
   "deb-make"
   "deb-sysvinit-utils"
   "deb-ucf"
-  ("deb-rpcbind" | "deb- portmap")
+  ("deb-rpcbind" | "deb-portmap")
 ]
 conflicts: [
   "deb-nis" {< "4"}

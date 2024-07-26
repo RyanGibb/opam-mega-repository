@@ -11,9 +11,9 @@ depends: [
   "deb-python3-setuptools"
   "deb-python3-six"
   "deb-python3-typing-extensions"
-  ("deb-python3-typing-extensions" {>= "3.10.0"} | "deb- python3" {> "3.11"})
-  ("deb-python3-wrapt" | "deb- python3" {< "3.11"})
-  ("deb-python3-wrapt" | "deb- python3" {> "3.11"})
+  ("deb-python3-typing-extensions" {>= "3.10.0"} | "deb-python3" {> "3.11"})
+  ("deb-python3-wrapt" | "deb-python3" {< "3.11"})
+  ("deb-python3-wrapt" | "deb-python3" {> "3.11"})
 ]
 extra-source "python3-astroid_2.14.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/astroid/python3-astroid_2.14.2-1_all.deb"

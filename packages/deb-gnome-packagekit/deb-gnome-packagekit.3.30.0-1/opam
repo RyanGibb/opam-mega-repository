@@ -13,7 +13,7 @@ depends: [
   "deb-libpackagekit-glib2-18" {>= "0.9.4"}
   "deb-libpolkit-gobject-1-0" {>= "0.101"}
   "deb-packagekit" {>= "1.0.4"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-packagekit_3.30.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-packagekit/gnome-packagekit_3.30.0-1_amd64.deb"

@@ -17,7 +17,7 @@ depends: [
   "deb-libtrio2" {>= "1.16"}
   "deb-libvorbisidec1" {>= "1.2.1+git20180316"}
   "deb-zlib1g" {>= "1-1.2.3.4"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "mednafen_1.26.1+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mednafen/mednafen_1.26.1+dfsg-1_amd64.deb"

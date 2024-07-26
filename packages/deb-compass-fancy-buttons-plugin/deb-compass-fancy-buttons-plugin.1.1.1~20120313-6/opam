@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-sass" {>= "3.3"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "compass-fancy-buttons-plugin_1.1.1~20120313-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/compass-fancy-buttons-plugin/compass-fancy-buttons-plugin_1.1.1~20120313-6_all.deb"

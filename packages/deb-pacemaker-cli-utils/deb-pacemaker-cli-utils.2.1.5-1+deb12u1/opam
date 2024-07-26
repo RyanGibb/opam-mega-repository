@@ -21,7 +21,7 @@ depends: [
   "deb-libtinfo6" {>= "6"}
   "deb-libxml2" {>= "2.7.4"}
   "deb-resource-agents"
-  ("deb-pacemaker" | "deb- pacemaker-remote")
+  ("deb-pacemaker" | "deb-pacemaker-remote")
 ]
 extra-source "pacemaker-cli-utils_2.1.5-1+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pacemaker/pacemaker-cli-utils_2.1.5-1+deb12u1_amd64.deb"

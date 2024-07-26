@@ -9,7 +9,7 @@ depends: [
   "deb-libassuan0" {>= "2.4.2"}
   "deb-libc6" {>= "2.34"}
   "deb-libgpg-error0" {>= "1.36"}
-  ("deb-gnupg" {>= "2.1.21-4"} | "deb- gpg")
+  ("deb-gnupg" {>= "2.1.21-4"} | "deb-gpg")
 ]
 extra-source "libgpgme11_1.18.0-3+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gpgme1.0/libgpgme11_1.18.0-3+b1_amd64.deb"

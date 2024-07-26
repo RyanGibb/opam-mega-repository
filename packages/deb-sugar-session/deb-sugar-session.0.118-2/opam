@@ -20,7 +20,7 @@ depends: [
   "deb-python3-jarabe"
   "deb-python3-sugar3"
   "deb-sugar-themes" {>= "0.118"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "sugar-session_0.118-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sugar/sugar-session_0.118-2_all.deb"

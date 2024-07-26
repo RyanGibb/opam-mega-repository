@@ -28,8 +28,8 @@ depends: [
   "deb-libstdc++6" {>= "11"}
   "deb-python3-pychromecast"
   "deb-qml-module-qt-labs-platform"
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
-  ("deb-libqt5quick5" {>= "5.6.0~beta"} | "deb- libqt5quick5-gles" {>= "5.6.0~beta"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5quick5" {>= "5.6.0~beta"} | "deb-libqt5quick5-gles" {>= "5.6.0~beta"})
 ]
 extra-source "photoqt_3.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/photoqt/photoqt_3.0-1_amd64.deb"

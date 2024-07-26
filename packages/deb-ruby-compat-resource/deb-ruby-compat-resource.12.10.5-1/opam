@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-compat-resource"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-compat-resource_12.10.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-compat-resource/ruby-compat-resource_12.10.5-1_all.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-nokogiri"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-nori_2.6.0-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-nori/ruby-nori_2.6.0-1.1_all.deb"

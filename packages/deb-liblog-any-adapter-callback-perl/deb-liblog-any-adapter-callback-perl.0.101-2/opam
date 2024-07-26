@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl-any"
-  ("deb-liblog-any-perl" | "deb- liblog-any-adapter-perl")
+  ("deb-liblog-any-perl" | "deb-liblog-any-adapter-perl")
 ]
 extra-source "liblog-any-adapter-callback-perl_0.101-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libl/liblog-any-adapter-callback-perl/liblog-any-adapter-callback-perl_0.101-2_all.deb"

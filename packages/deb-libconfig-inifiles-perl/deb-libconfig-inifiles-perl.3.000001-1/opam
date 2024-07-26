@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r libconfig-inifiles-perl"]
 ]
 depends: [
-  ("deb-perl" {>= "5.19.5"} | "deb- libscalar-list-utils-perl" {>= "1-1.33"})
+  ("deb-perl" {>= "5.19.5"} | "deb-libscalar-list-utils-perl" {>= "1-1.33"})
 ]
 extra-source "libconfig-inifiles-perl_3.000001-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libc/libconfig-inifiles-perl/libconfig-inifiles-perl_3.000001-1_all.deb"

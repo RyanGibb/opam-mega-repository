@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-elasticsearch-api" {= "6.8.2-2"}
   "deb-ruby-elasticsearch-transport" {= "6.8.2-2"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-elasticsearch_6.8.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-elasticsearch/ruby-elasticsearch_6.8.2-2_all.deb"

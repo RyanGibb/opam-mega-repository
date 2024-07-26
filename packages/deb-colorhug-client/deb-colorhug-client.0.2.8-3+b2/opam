@@ -21,7 +21,7 @@ depends: [
   "deb-libpangocairo-1-0-0" {>= "1.14.0"}
   "deb-librsvg2-common"
   "deb-libsoup2-4-1" {>= "2.33.92"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "colorhug-client_0.2.8-3+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/colorhug-client/colorhug-client_0.2.8-3+b2_amd64.deb"

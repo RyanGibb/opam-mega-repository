@@ -13,7 +13,7 @@ depends: [
   "deb-gir1-2-peas-1-0"
   "deb-python3-any"
   "deb-python3-gi"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "eog-plugin-export-to-folder_3.26.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/eog-plugins/eog-plugin-export-to-folder_3.26.5-1_amd64.deb"

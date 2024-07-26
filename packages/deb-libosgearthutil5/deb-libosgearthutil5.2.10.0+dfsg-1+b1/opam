@@ -19,7 +19,7 @@ depends: [
   "deb-libosgearthsymbology5" {>= "2.8~rc1"}
   "deb-libprotobuf17"
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "libosgearthutil5_2.10.0+dfsg-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/osgearth/libosgearthutil5_2.10.0+dfsg-1+b1_amd64.deb"

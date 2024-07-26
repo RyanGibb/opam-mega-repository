@@ -12,7 +12,7 @@ depends: [
   "deb-librust-winapi-0-3+fileapi-dev"
   "deb-librust-winapi-0-3+handleapi-dev"
   "deb-librust-winapi-0-3+wincon-dev"
-  ("deb-librust-dirs-4+default-dev" | "deb- librust-dirs-3+default-dev")
+  ("deb-librust-dirs-4+default-dev" | "deb-librust-dirs-3+default-dev")
 ]
 extra-source "librust-term-dev_0.5.2-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-term/librust-term-dev_0.5.2-4_amd64.deb"

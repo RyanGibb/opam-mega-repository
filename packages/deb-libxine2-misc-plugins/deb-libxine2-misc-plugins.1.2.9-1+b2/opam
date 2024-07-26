@@ -32,7 +32,7 @@ depends: [
   "deb-libwavpack1" {>= "4.40.0"}
   "deb-libxine2-bin" {= "1.2.9-1+b2"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "libxine2-misc-plugins_1.2.9-1+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xine-lib-1.2/libxine2-misc-plugins_1.2.9-1+b2_amd64.deb"

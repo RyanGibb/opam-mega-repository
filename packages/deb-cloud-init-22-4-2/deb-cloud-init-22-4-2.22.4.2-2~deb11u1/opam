@@ -23,7 +23,7 @@ depends: [
   "deb-python3-requests"
   "deb-python3-serial"
   "deb-python3-yaml"
-  ("deb-fdisk" | "deb- util-linux" {< "2.29.2-3~"})
+  ("deb-fdisk" | "deb-util-linux" {< "2.29.2-3~"})
 ]
 conflicts: [
   "deb-cloud-init"

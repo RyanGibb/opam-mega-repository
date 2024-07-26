@@ -21,7 +21,7 @@ depends: [
   "deb-lsb-base"
   "deb-perl-any"
   "deb-sysvinit-utils" {>= "2.88dsf-50"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "courier-base_1.0.6-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/courier/courier-base_1.0.6-1_amd64.deb"

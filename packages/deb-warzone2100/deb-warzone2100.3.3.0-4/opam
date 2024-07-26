@@ -28,7 +28,7 @@ depends: [
   "deb-warzone2100-data" {<= "3.3.0-4"}
   "deb-warzone2100-data" {>= "3.3.0"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "warzone2100_3.3.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/warzone2100/warzone2100_3.3.0-4_amd64.deb"

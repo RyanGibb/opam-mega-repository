@@ -11,7 +11,7 @@ depends: [
   "deb-libqt5pas1" {>= "2.6~beta-2"}
   "deb-libx11-6"
   "deb-winff-data"
-  ("deb-xterm" | "deb- x-terminal-emulator")
+  ("deb-xterm" | "deb-x-terminal-emulator")
 ]
 extra-source "winff-qt_1.5.5-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/winff/winff-qt_1.5.5-6_amd64.deb"

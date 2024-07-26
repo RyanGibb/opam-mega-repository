@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-emacsen-common"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "ilisp_5.12.0+cvs.2004.12.26-28_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/ilisp/ilisp_5.12.0+cvs.2004.12.26-28_all.deb"

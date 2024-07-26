@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-fonts-font-awesome"
   "deb-libjs-bootstrap"
-  ("deb-netdata-core" {>= "1.37.1-2"} | "deb- netdata-core-no-sse" {>= "1.37.1-2"})
+  ("deb-netdata-core" {>= "1.37.1-2"} | "deb-netdata-core-no-sse" {>= "1.37.1-2"})
 ]
 conflicts: [
   "deb-netdata-data"

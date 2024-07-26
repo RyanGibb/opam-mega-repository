@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-omniauth-openid-connect" {>= "0.3.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-omniauth-ultraauth_0.0.2-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-omniauth-ultraauth/ruby-omniauth-ultraauth_0.0.2-1.1_all.deb"

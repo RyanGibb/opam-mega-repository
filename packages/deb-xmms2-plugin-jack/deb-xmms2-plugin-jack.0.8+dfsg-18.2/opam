@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.4"}
   "deb-libglib2-0-0" {>= "2.31.8"}
   "deb-xmms2-core" {= "0.8+dfsg-18.2"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "xmms2-plugin-jack_0.8+dfsg-18.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xmms2/xmms2-plugin-jack_0.8+dfsg-18.2_amd64.deb"

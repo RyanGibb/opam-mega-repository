@@ -13,7 +13,7 @@ depends: [
   "deb-libreadline8" {>= "6.0"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-libtinfo6" {>= "6"}
-  ("deb-hunspell-en-us" | "deb- hunspell-dictionary" | "deb- myspell-dictionary")
+  ("deb-hunspell-en-us" | "deb-hunspell-dictionary" | "deb-myspell-dictionary")
 ]
 extra-source "hunspell_1.7.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/hunspell/hunspell_1.7.0-3_amd64.deb"

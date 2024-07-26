@@ -16,7 +16,7 @@ depends: [
   "deb-python3-gi"
   "deb-python3-pil"
   "deb-python3-svgwrite"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "budgie-clockworks-applet_1.1.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/budgie-extras/budgie-clockworks-applet_1.1.0-1_all.deb"

@@ -17,7 +17,7 @@ depends: [
   "deb-libxi6"
   "deb-libxmu6"
   "deb-netpbm"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "xracer_0.96.9.1-9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xracer/xracer_0.96.9.1-9_amd64.deb"

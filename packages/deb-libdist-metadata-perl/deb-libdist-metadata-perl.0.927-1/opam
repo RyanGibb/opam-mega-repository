@@ -12,7 +12,7 @@ depends: [
   "deb-libpath-class-perl"
   "deb-libtry-tiny-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.15.8"} | "deb- libmodule-metadata-perl")
+  ("deb-perl" {>= "5.15.8"} | "deb-libmodule-metadata-perl")
 ]
 extra-source "libdist-metadata-perl_0.927-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libd/libdist-metadata-perl/libdist-metadata-perl_0.927-1_all.deb"

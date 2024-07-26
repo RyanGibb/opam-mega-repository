@@ -9,7 +9,7 @@ depends: [
   "deb-ruby-beefcake"
   "deb-ruby-mtrc"
   "deb-ruby-trollop"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-riemann-client_0.2.3-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-riemann-client/ruby-riemann-client_0.2.3-1.1_all.deb"

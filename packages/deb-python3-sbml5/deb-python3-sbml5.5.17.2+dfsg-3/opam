@@ -13,7 +13,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libxml2" {>= "2.7.4"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-swig2-0" | "deb- swig")
+  ("deb-swig2-0" | "deb-swig")
 ]
 extra-source "python3-sbml5_5.17.2+dfsg-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libs/libsbml/python3-sbml5_5.17.2+dfsg-3_amd64.deb"

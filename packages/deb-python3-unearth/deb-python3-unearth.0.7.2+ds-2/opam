@@ -9,7 +9,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-packaging"
   "deb-python3-requests"
-  ("deb-python3-cached-property" | "deb- python3" {> "3.8"})
+  ("deb-python3-cached-property" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-unearth_0.7.2+ds-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/unearth/python3-unearth_0.7.2+ds-2_all.deb"

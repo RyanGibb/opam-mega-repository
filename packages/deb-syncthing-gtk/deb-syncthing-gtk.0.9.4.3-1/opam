@@ -16,7 +16,7 @@ depends: [
   "deb-python-bcrypt"
   "deb-python-dateutil"
   "deb-python-gi-cairo"
-  ("deb-python-gobject" | "deb- python-gi")
+  ("deb-python-gobject" | "deb-python-gi")
 ]
 extra-source "syncthing-gtk_0.9.4.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/syncthing-gtk/syncthing-gtk_0.9.4.3-1_all.deb"

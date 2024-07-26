@@ -12,7 +12,7 @@ depends: [
   "deb-libgtk-3-dev"
   "deb-libgtkada18" {= "18-2"}
   "deb-libpango1-0-dev"
-  ("deb-libcairo2-dev" | "deb- libcairo-dev")
+  ("deb-libcairo2-dev" | "deb-libcairo-dev")
 ]
 extra-source "libgtkada18-dev_18-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libg/libgtkada/libgtkada18-dev_18-2_amd64.deb"

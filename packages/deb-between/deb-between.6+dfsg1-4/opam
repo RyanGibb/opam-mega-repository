@@ -11,7 +11,7 @@ depends: [
   "deb-libgl1"
   "deb-libsdl1-2-compat-shim"
   "deb-libstdc++6" {>= "5"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "between_6+dfsg1-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/between/between_6+dfsg1-4_amd64.deb"

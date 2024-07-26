@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-gocr"
   "deb-xli"
-  ("deb-tk" | "deb- wish")
+  ("deb-tk" | "deb-wish")
 ]
 extra-source "gocr-tk_0.52-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gocr/gocr-tk_0.52-3_all.deb"

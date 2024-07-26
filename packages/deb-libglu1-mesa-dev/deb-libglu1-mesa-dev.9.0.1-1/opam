@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libglu1-mesa" {= "9.0.1-1"}
-  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
+  ("deb-libgl1-mesa-dev" | "deb-libgl-dev")
 ]
 conflicts: [
   "deb-mesa-glide2-dev" {< "5.0.0-1"}

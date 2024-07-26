@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-liboglappth2" {= "1.0.0-2"}
-  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
-  ("deb-libglu1-mesa-dev" | "deb- libglu-dev")
+  ("deb-libgl1-mesa-dev" | "deb-libgl-dev")
+  ("deb-libglu1-mesa-dev" | "deb-libglu-dev")
 ]
 extra-source "liboglappth-dev_1.0.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libo/liboglappth/liboglappth-dev_1.0.0-2_amd64.deb"

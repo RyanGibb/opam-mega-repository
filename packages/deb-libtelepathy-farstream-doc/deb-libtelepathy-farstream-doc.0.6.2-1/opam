@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r libtelepathy-farstream-doc"]
 ]
 depends: [
-  ("deb-lynx" | "deb- www-browser")
+  ("deb-lynx" | "deb-www-browser")
 ]
 extra-source "libtelepathy-farstream-doc_0.6.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/telepathy-farstream/libtelepathy-farstream-doc_0.6.2-1_all.deb"

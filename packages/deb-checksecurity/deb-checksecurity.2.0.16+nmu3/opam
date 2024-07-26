@@ -8,8 +8,8 @@ remove: [
 depends: [
   "deb-perl" {>= "5.8.0"}
   "deb-util-linux" {>= "2.15~rc1-1"}
-  ("deb-cron" {>= "3.0pl1-74"} | "deb- anacron" | "deb- fcron")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-cron" {>= "3.0pl1-74"} | "deb-anacron" | "deb-fcron")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 conflicts: [
   "deb-lockfile-progs" {< "0.1.7"}

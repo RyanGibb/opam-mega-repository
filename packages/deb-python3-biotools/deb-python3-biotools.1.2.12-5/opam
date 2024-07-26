@@ -10,7 +10,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-matplotlib"
   "deb-python3-numpy"
-  ("deb-ncbi-blast+" | "deb- ncbi-blast+-legacy")
+  ("deb-ncbi-blast+" | "deb-ncbi-blast+-legacy")
 ]
 extra-source "python3-biotools_1.2.12-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-biotools/python3-biotools_1.2.12-5_all.deb"

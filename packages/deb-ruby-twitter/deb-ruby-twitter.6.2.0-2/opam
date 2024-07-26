@@ -16,7 +16,7 @@ depends: [
   "deb-ruby-multipart-post" {>= "2.0~"}
   "deb-ruby-naught" {>= "1.1~"}
   "deb-ruby-simple-oauth" {>= "0.3~"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 conflicts: [
   "deb-ruby-twitter4r"

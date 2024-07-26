@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.14"}
   "deb-libexpat1" {>= "2.0.1"}
-  ("deb-gpg" | "deb- gnupg")
+  ("deb-gpg" | "deb-gnupg")
 ]
 extra-source "debsig-verify_0.19+b10_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/debsig-verify/debsig-verify_0.19+b10_amd64.deb"

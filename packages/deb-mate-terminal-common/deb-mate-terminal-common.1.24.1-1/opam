@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r mate-terminal-common"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "mate-terminal-common_1.24.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mate-terminal/mate-terminal-common_1.24.1-1_all.deb"

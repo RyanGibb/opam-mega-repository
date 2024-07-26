@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-colorize" {>= "0.7"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-origami_2.0.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/origami-pdf/ruby-origami_2.0.0-1_all.deb"

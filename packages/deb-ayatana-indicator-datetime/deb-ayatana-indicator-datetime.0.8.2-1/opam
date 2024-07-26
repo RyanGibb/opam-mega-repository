@@ -18,7 +18,7 @@ depends: [
   "deb-libical3" {>= "3.0.0"}
   "deb-liblomiri-url-dispatcher0" {>= "0.1.0"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "ayatana-indicator-datetime_0.8.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/ayatana-indicator-datetime/ayatana-indicator-datetime_0.8.2-1_amd64.deb"

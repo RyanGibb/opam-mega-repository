@@ -13,8 +13,8 @@ depends: [
   "deb-libsm-dev"
   "deb-libxmu-dev"
   "deb-libxt-dev"
-  ("deb-libgl1-mesa-dev" | "deb- libgl-dev")
-  ("deb-libglu1-mesa-dev" | "deb- libglu-dev")
+  ("deb-libgl1-mesa-dev" | "deb-libgl-dev")
+  ("deb-libglu1-mesa-dev" | "deb-libglu-dev")
 ]
 extra-source "libgtkglext1-dev_1.2.0-11_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gtkglext/libgtkglext1-dev_1.2.0-11_amd64.deb"

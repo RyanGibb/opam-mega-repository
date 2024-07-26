@@ -21,7 +21,7 @@ depends: [
   "deb-libxext6"
   "deb-libxfixes3"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 conflicts: [
   "deb-gtk-recordmydesktop" {< "0.3.5"}

@@ -26,7 +26,7 @@ depends: [
   "deb-ruby-atk" {>= "3.4.3-2"}
   "deb-ruby-gdk-pixbuf2" {>= "3.4.3-2"}
   "deb-ruby-pango" {= "3.4.3-2+b2"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-gtk2_3.4.3-2+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-gnome/ruby-gtk2_3.4.3-2+b2_amd64.deb"

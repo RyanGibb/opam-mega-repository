@@ -63,7 +63,7 @@ depends: [
   "deb-libxt6"
   "deb-libzipios++0v5"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "libfreecad-python3-0.18_0.18~pre1+dfsg1-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/freecad/libfreecad-python3-0.18_0.18~pre1+dfsg1-5_amd64.deb"

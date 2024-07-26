@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libxerces2-java"
-  ("deb-default-jre" | "deb- java6-runtime")
+  ("deb-default-jre" | "deb-java6-runtime")
 ]
 extra-source "pcalendar_3.4.1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pcalendar/pcalendar_3.4.1-3_all.deb"

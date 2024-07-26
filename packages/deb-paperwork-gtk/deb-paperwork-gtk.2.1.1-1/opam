@@ -17,8 +17,8 @@ depends: [
   "deb-python3-pycountry"
   "deb-python3-pyocr"
   "deb-python3-xdg"
-  ("deb-adwaita-icon-theme" | "deb- gnome-icon-theme-symbolic")
-  ("deb-tesseract-ocr" | "deb- cuneiform")
+  ("deb-adwaita-icon-theme" | "deb-gnome-icon-theme-symbolic")
+  ("deb-tesseract-ocr" | "deb-cuneiform")
 ]
 extra-source "paperwork-gtk_2.1.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/paperwork/paperwork-gtk_2.1.1-1_all.deb"

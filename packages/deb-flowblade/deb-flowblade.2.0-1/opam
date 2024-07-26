@@ -21,7 +21,7 @@ depends: [
   "deb-python-numpy"
   "deb-python-pil"
   "deb-swh-plugins"
-  ("deb-python-mlt" | "deb- python-mlt5" | "deb- python-mlt2")
+  ("deb-python-mlt" | "deb-python-mlt5" | "deb-python-mlt2")
 ]
 extra-source "flowblade_2.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/flowblade/flowblade_2.0-1_all.deb"

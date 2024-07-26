@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.34"}
-  ("deb-nftables" | "deb- ipset")
-  ("deb-nftables" | "deb- iptables")
+  ("deb-nftables" | "deb-ipset")
+  ("deb-nftables" | "deb-iptables")
 ]
 extra-source "crowdsec-firewall-bouncer_0.0.25-4~deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/crowdsec-firewall-bouncer/crowdsec-firewall-bouncer_0.0.25-4~deb12u1_amd64.deb"

@@ -15,7 +15,7 @@ depends: [
   "deb-python3-mygpoclient"
   "deb-python3-podcastparser"
   "deb-python3-requests" {>= "2.24"}
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus")
 ]
 extra-source "gpodder_3.11.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gpodder/gpodder_3.11.1-1_all.deb"

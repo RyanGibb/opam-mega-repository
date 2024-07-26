@@ -9,7 +9,7 @@ depends: [
   "deb-g++"
   "deb-libmpich12" {= "3.3-3"}
   "deb-mpich" {= "3.3-3"}
-  ("deb-gfortran" | "deb- fortran-compiler")
+  ("deb-gfortran" | "deb-fortran-compiler")
 ]
 extra-source "libmpich-dev_3.3-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mpich/libmpich-dev_3.3-3_amd64.deb"

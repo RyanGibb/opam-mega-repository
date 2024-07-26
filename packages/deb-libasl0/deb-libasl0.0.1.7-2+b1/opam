@@ -14,9 +14,9 @@ depends: [
   "deb-libmatio4" {>= "1.5.4"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-libvtk6-3"
-  ("deb-ocl-icd-libopencl1" {>= "1.0"} | "deb- libopencl-1-1-1")
-  ("deb-ocl-icd-libopencl1" {>= "1.0"} | "deb- libopencl-1-2-1")
-  ("deb-ocl-icd-libopencl1" | "deb- libopencl1")
+  ("deb-ocl-icd-libopencl1" {>= "1.0"} | "deb-libopencl-1-1-1")
+  ("deb-ocl-icd-libopencl1" {>= "1.0"} | "deb-libopencl-1-2-1")
+  ("deb-ocl-icd-libopencl1" | "deb-libopencl1")
 ]
 extra-source "libasl0_0.1.7-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/asl/libasl0_0.1.7-2+b1_amd64.deb"

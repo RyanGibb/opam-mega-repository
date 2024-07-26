@@ -24,7 +24,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.14.1"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-wsjtx-data"
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "jtdx_2.2.159-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jtdx/jtdx_2.2.159-1+b1_amd64.deb"

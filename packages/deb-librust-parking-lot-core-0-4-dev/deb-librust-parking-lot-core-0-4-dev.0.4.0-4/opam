@@ -18,7 +18,7 @@ depends: [
   "deb-librust-winapi-0-3+winbase-dev"
   "deb-librust-winapi-0-3+winerror-dev"
   "deb-librust-winapi-0-3+winnt-dev"
-  ("deb-librust-smallvec-1+default-dev" | "deb- librust-smallvec-0+default-dev" {>= "0.6-~~"})
+  ("deb-librust-smallvec-1+default-dev" | "deb-librust-smallvec-0+default-dev" {>= "0.6-~~"})
 ]
 extra-source "librust-parking-lot-core-0.4-dev_0.4.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-parking-lot-core-0.4/librust-parking-lot-core-0.4-dev_0.4.0-4_amd64.deb"

@@ -9,7 +9,7 @@ depends: [
   "deb-adduser"
   "deb-blends-common" {>= "0.6.15"}
   "deb-menu"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "science-config_1.14.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/debian-science/science-config_1.14.2_all.deb"

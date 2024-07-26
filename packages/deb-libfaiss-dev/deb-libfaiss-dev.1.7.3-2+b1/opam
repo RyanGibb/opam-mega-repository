@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo dpkg -r libfaiss-dev"]
 ]
 depends: [
-  ("deb-libblas-dev" | "deb- libblas-so")
-  ("deb-liblapack-dev" | "deb- liblapack-so")
+  ("deb-libblas-dev" | "deb-libblas-so")
+  ("deb-liblapack-dev" | "deb-liblapack-so")
 ]
 extra-source "libfaiss-dev_1.7.3-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/faiss/libfaiss-dev_1.7.3-2+b1_amd64.deb"

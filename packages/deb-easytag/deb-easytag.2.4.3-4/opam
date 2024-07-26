@@ -23,7 +23,7 @@ depends: [
   "deb-libvorbis0a" {>= "1.1.2"}
   "deb-libvorbisfile3" {>= "1.1.2"}
   "deb-libwavpack1" {>= "4.40.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "easytag_2.4.3-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/easytag/easytag_2.4.3-4_amd64.deb"

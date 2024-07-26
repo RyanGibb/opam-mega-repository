@@ -9,7 +9,7 @@ depends: [
   "deb-doc-base" {>= "0.8.10"}
   "deb-info2www"
   "deb-python"
-  ("deb-apache2" | "deb- httpd-cgi")
+  ("deb-apache2" | "deb-httpd-cgi")
 ]
 extra-source "doc-central_1.8.3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/doc-central/doc-central_1.8.3_all.deb"

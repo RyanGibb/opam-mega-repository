@@ -22,7 +22,7 @@ depends: [
   "deb-liburi-template-perl"
   "deb-libxml-regexp-perl"
   "deb-perl-any"
-  ("deb-liblog-any-perl" {>= "1.00"} | "deb- liblog-any-adapter-perl")
+  ("deb-liblog-any-perl" {>= "1.00"} | "deb-liblog-any-adapter-perl")
 ]
 extra-source "libdata-hal-perl_1.001-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libd/libdata-hal-perl/libdata-hal-perl_1.001-1_all.deb"

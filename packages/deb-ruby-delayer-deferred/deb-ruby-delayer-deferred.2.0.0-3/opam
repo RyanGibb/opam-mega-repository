@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-delayer" {< "0.1"}
   "deb-ruby-delayer" {>= "0.0.2"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-delayer-deferred_2.0.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-delayer-deferred/ruby-delayer-deferred_2.0.0-3_all.deb"

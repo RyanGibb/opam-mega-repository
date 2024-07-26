@@ -11,7 +11,7 @@ depends: [
   "deb-python3-pybtex"
   "deb-python3-pybtex-docutils" {>= "1.0.0"}
   "deb-python3-sphinx" {>= "2.1"}
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.10"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.10"})
 ]
 extra-source "python3-sphinxcontrib.bibtex_2.5.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sphinxcontrib-bibtex/python3-sphinxcontrib.bibtex_2.5.0-1_all.deb"

@@ -24,7 +24,7 @@ depends: [
   "deb-libxerces-c3-2"
   "deb-python3"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "sumo_1.8.0+dfsg2-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sumo/sumo_1.8.0+dfsg2-5_amd64.deb"

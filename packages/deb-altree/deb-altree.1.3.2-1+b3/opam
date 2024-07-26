@@ -11,7 +11,7 @@ depends: [
   "deb-libmath-tamuanova-perl"
   "deb-perl" {>= "5.36.0-4"}
   "deb-perl-base"
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "altree_1.3.2-1+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/altree/altree_1.3.2-1+b3_amd64.deb"

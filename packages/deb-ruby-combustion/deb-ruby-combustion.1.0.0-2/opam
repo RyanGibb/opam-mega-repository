@@ -9,7 +9,7 @@ depends: [
   "deb-ruby-activesupport" {>= "3.0.0"}
   "deb-ruby-railties" {>= "3.0.0"}
   "deb-ruby-thor" {>= "0.14.6"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-combustion_1.0.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-combustion/ruby-combustion_1.0.0-2_all.deb"

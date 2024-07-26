@@ -14,7 +14,7 @@ depends: [
   "deb-libhts3" {>= "1.10"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-r-mathlib"
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "qtltools_1.3.1+dfsg-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtltools/qtltools_1.3.1+dfsg-2+b1_amd64.deb"

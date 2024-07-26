@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-cliver"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-cliver_0.3.2-3.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-cliver/ruby-cliver_0.3.2-3.1_all.deb"

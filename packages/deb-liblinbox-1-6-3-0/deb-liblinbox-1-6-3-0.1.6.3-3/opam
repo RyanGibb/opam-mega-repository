@@ -12,7 +12,7 @@ depends: [
   "deb-libgmp10"
   "deb-libgomp1" {>= "9"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "liblinbox-1.6.3-0_1.6.3-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/linbox/liblinbox-1.6.3-0_1.6.3-3_amd64.deb"

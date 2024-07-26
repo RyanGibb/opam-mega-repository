@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.14"}
   "deb-python3-any"
   "deb-xz-utils"
-  ("deb-cups-filters" | "deb- foomatic-filters")
+  ("deb-cups-filters" | "deb-foomatic-filters")
 ]
 extra-source "printer-driver-m2300w_0.51-15_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/m2300w/printer-driver-m2300w_0.51-15_amd64.deb"

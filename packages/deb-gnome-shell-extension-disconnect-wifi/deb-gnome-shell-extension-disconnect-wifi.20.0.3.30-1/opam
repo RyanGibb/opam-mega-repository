@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-gnome-shell" {>= "3.22"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-shell-extension-disconnect-wifi_20.0.3.30-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-shell-extension-disconnect-wifi/gnome-shell-extension-disconnect-wifi_20.0.3.30-1_all.deb"

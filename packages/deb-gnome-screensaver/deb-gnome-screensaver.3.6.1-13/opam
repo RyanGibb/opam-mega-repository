@@ -22,7 +22,7 @@ depends: [
   "deb-libxext6"
   "deb-libxklavier16" {>= "5.0"}
   "deb-libxxf86vm1"
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus")
 ]
 extra-source "gnome-screensaver_3.6.1-13_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-screensaver/gnome-screensaver_3.6.1-13_amd64.deb"

@@ -9,7 +9,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-packaging"
   "deb-python3-sphinx"
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-pallets-sphinx-themes_2.0.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-pallets-sphinx-themes/python3-pallets-sphinx-themes_2.0.3-1_all.deb"

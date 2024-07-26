@@ -20,7 +20,7 @@ depends: [
   "deb-libsndfile1" {>= "1.0.20"}
   "deb-libswscale5" {>= "7-4.0"}
   "deb-libxml2" {>= "2.7.4"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "lebiniou_3.30-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lebiniou/lebiniou_3.30-1_amd64.deb"

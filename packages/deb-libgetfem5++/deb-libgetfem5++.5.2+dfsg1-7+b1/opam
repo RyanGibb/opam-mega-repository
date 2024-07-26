@@ -13,7 +13,7 @@ depends: [
   "deb-libqhull7"
   "deb-libstdc++6" {>= "5.2"}
   "deb-libsuperlu5"
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "libgetfem5++_5.2+dfsg1-7+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/getfem++/libgetfem5++_5.2+dfsg1-7+b1_amd64.deb"

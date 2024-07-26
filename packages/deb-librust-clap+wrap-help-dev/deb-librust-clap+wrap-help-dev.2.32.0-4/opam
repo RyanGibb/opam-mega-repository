@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-librust-clap-dev" {= "2.32.0-4"}
   "deb-librust-term-size-0-3+default-dev"
-  ("deb-librust-textwrap-0-11+term-size-dev" | "deb- librust-textwrap-0-10+term-size-dev")
+  ("deb-librust-textwrap-0-11+term-size-dev" | "deb-librust-textwrap-0-10+term-size-dev")
 ]
 extra-source "librust-clap+wrap-help-dev_2.32.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-clap/librust-clap+wrap-help-dev_2.32.0-4_amd64.deb"

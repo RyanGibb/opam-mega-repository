@@ -10,7 +10,7 @@ depends: [
   "deb-librust-serde-1+default-dev"
   "deb-librust-serde-json-1+default-dev"
   "deb-librust-serde-json-1+preserve-order-dev"
-  ("deb-librust-dirs-4+default-dev" | "deb- librust-dirs-3+default-dev")
+  ("deb-librust-dirs-4+default-dev" | "deb-librust-dirs-3+default-dev")
 ]
 extra-source "librust-tree-sitter-config-dev_0.19.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-tree-sitter-config/librust-tree-sitter-config-dev_0.19.0-2_amd64.deb"

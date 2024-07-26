@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.17"}
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 extra-source "numdiff_5.9.0-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/numdiff/numdiff_5.9.0-1+b1_amd64.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libboost-regex-dev"
   "deb-libsource-highlight4v5" {= "3.1.8-1.2+b1"}
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 extra-source "libsource-highlight-dev_3.1.8-1.2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/source-highlight/libsource-highlight-dev_3.1.8-1.2+b1_amd64.deb"

@@ -11,7 +11,7 @@ depends: [
   "deb-libtrove-java"
   "deb-tor"
   "deb-tor-geoipdb"
-  ("deb-default-jre" | "deb- java8-runtime" | "deb- java9-runtime" | "deb- java10-runtime" | "deb- java11-runtime")
+  ("deb-default-jre" | "deb-java8-runtime" | "deb-java9-runtime" | "deb-java10-runtime" | "deb-java11-runtime")
 ]
 extra-source "selektor_3.13.72-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/selektor/selektor_3.13.72-2_all.deb"

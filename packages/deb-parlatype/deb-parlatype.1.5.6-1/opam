@@ -11,7 +11,7 @@ depends: [
   "deb-libglib2-0-0" {>= "2.41.2"}
   "deb-libgtk-3-0" {>= "3.21.4"}
   "deb-libparlatype1" {>= "1.5"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "parlatype_1.5.6-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/parlatype/parlatype_1.5.6-1_amd64.deb"

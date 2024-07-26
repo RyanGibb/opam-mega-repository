@@ -18,7 +18,7 @@ depends: [
   "deb-libx11-6"
   "deb-libxext6"
   "deb-libzita-resampler1"
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "drumgizmo_0.9.14-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/drumgizmo/drumgizmo_0.9.14-3_amd64.deb"

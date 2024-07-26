@@ -12,7 +12,7 @@ depends: [
   "deb-libsasl2-2" {>= "2.1.28+dfsg"}
   "deb-libwrap0" {>= "7.6-4~"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-cyrus-imapd" {= "3.6.1-4+deb12u2"} | "deb- cyrus-pop3d" {= "3.6.1-4+deb12u2"})
+  ("deb-cyrus-imapd" {= "3.6.1-4+deb12u2"} | "deb-cyrus-pop3d" {= "3.6.1-4+deb12u2"})
 ]
 extra-source "cyrus-replication_3.6.1-4+deb12u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cyrus-imapd/cyrus-replication_3.6.1-4+deb12u2_amd64.deb"

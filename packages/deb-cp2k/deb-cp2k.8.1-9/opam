@@ -18,8 +18,8 @@ depends: [
   "deb-libscalapack-openmpi2-1" {>= "2.1.0"}
   "deb-libsymspg1" {>= "1.16.1"}
   "deb-libxc5" {>= "4.2.1"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "cp2k_8.1-9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cp2k/cp2k_8.1-9_amd64.deb"

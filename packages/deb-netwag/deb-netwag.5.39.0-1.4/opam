@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-netwox" {>= "5.39.0-1.4"}
   "deb-tk"
-  ("deb-xterm" | "deb- x-terminal-emulator")
+  ("deb-xterm" | "deb-x-terminal-emulator")
 ]
 extra-source "netwag_5.39.0-1.4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/netw-ib-ox-ag/netwag_5.39.0-1.4_all.deb"

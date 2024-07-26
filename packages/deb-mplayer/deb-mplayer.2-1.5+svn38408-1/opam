@@ -63,7 +63,7 @@ depends: [
   "deb-libxxf86dga1" {>= "2-1.1.5"}
   "deb-libxxf86vm1"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "mplayer_2:1.5+svn38408-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mplayer/mplayer_1.5+svn38408-1_amd64.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-adduser"
   "deb-libc6" {>= "2.34"}
-  ("deb-daemon" | "deb- systemd-sysv")
+  ("deb-daemon" | "deb-systemd-sysv")
 ]
 extra-source "prometheus-postgres-exporter_0.11.1-3+b5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/prometheus-postgres-exporter/prometheus-postgres-exporter_0.11.1-3+b5_amd64.deb"

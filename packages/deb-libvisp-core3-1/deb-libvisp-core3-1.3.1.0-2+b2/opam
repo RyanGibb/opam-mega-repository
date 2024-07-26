@@ -32,8 +32,8 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libxml2" {>= "2.7.4"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libvisp-core3.1_3.1.0-2+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/visp/libvisp-core3.1_3.1.0-2+b2_amd64.deb"

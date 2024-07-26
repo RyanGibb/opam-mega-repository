@@ -34,7 +34,7 @@ depends: [
   "deb-python3-xlrd"
   "deb-python3-yaml"
   "deb-python3-zmq"
-  ("deb-python3-pyglet" | "deb- python3-pygame")
+  ("deb-python3-pyglet" | "deb-python3-pygame")
 ]
 conflicts: [
   "deb-libavbin0" {= "7-4+b1"}

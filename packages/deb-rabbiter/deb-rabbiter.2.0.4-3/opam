@@ -11,7 +11,7 @@ depends: [
   "deb-ruby-gio2" {>= "2.1.1"}
   "deb-ruby-twitter"
   "deb-ruby-twitter-oauth"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "rabbiter_2.0.4-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rabbiter/rabbiter_2.0.4-3_all.deb"

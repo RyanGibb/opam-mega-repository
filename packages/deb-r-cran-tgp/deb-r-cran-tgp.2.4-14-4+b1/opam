@@ -14,8 +14,8 @@ depends: [
   "deb-r-base-core"
   "deb-r-base-core" {>= "3.5.1-1"}
   "deb-r-cran-maptree"
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "r-cran-tgp_2.4-14-4+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-tgp/r-cran-tgp_2.4-14-4+b1_amd64.deb"

@@ -11,8 +11,8 @@ depends: [
   "deb-python3-pydantic"
   "deb-python3-typer"
   "deb-python3-typeshed"
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
-  ("deb-python3-typing-extensions" | "deb- python3" {> "3.8"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
+  ("deb-python3-typing-extensions" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-rstcheck_6.1.1+~1.0.3-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rstcheck/python3-rstcheck_6.1.1+~1.0.3-2_all.deb"

@@ -9,7 +9,7 @@ depends: [
   "deb-bsdmainutils"
   "deb-e2fsprogs"
   "deb-gawk"
-  ("deb-fdisk" | "deb- util-linux" {< "2.29.2-3~"})
+  ("deb-fdisk" | "deb-util-linux" {< "2.29.2-3~"})
 ]
 extra-source "boot-info-script_0.77-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/boot-info-script/boot-info-script_0.77-1_all.deb"

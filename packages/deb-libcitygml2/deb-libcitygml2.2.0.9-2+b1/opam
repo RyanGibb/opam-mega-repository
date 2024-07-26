@@ -13,7 +13,7 @@ depends: [
   "deb-libgl1"
   "deb-libstdc++6" {>= "5.2"}
   "deb-libxerces-c3-2"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "libcitygml2_2.0.9-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libc/libcitygml/libcitygml2_2.0.9-2+b1_amd64.deb"

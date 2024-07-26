@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-mokutil"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "shim-signed-common_1.39~1+deb11u1+15.7-1~deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/shim-signed/shim-signed-common_1.39~1+deb11u1+15.7-1~deb11u1_all.deb"

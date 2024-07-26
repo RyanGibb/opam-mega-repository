@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r bareos-dbg"]
 ]
 depends: [
-  ("deb-bareos-storage" {= "16.2.6-5"} | "deb- bareos-bconsole" {= "16.2.6-5"} | "deb- bareos-common" {= "16.2.6-5"} | "deb- bareos-database-common" {= "16.2.6-5"} | "deb- bareos-database-mysql" {= "16.2.6-5"} | "deb- bareos-database-postgresql" {= "16.2.6-5"} | "deb- bareos-database-sqlite3" {= "16.2.6-5"} | "deb- bareos-database-tools" {= "16.2.6-5"} | "deb- bareos-director" {= "16.2.6-5"} | "deb- bareos-filedaemon" {= "16.2.6-5"} | "deb- bareos-storage" {= "16.2.6-5"} | "deb- bareos-storage-tape" {= "16.2.6-5"} | "deb- bareos-storage-fifo" {= "16.2.6-5"} | "deb- bareos-tools" {= "16.2.6-5"})
+  ("deb-bareos-storage" {= "16.2.6-5"} | "deb-bareos-bconsole" {= "16.2.6-5"} | "deb-bareos-common" {= "16.2.6-5"} | "deb-bareos-database-common" {= "16.2.6-5"} | "deb-bareos-database-mysql" {= "16.2.6-5"} | "deb-bareos-database-postgresql" {= "16.2.6-5"} | "deb-bareos-database-sqlite3" {= "16.2.6-5"} | "deb-bareos-database-tools" {= "16.2.6-5"} | "deb-bareos-director" {= "16.2.6-5"} | "deb-bareos-filedaemon" {= "16.2.6-5"} | "deb-bareos-storage" {= "16.2.6-5"} | "deb-bareos-storage-tape" {= "16.2.6-5"} | "deb-bareos-storage-fifo" {= "16.2.6-5"} | "deb-bareos-tools" {= "16.2.6-5"})
 ]
 conflicts: [
   "deb-bacula-sd-dbg"

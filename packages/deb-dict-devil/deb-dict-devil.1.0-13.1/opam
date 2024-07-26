@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r dict-devil"]
 ]
 depends: [
-  ("deb-dictd" | "deb- dict-server")
+  ("deb-dictd" | "deb-dict-server")
 ]
 extra-source "dict-devil_1.0-13.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dict-devil/dict-devil_1.0-13.1_all.deb"

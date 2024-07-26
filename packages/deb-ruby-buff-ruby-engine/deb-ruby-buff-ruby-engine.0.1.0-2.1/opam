@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-buff-ruby-engine"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-buff-ruby-engine_0.1.0-2.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-buff-ruby-engine/ruby-buff-ruby-engine_0.1.0-2.1_all.deb"

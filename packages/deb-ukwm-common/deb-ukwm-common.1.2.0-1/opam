@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ukwm-common"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "ukwm-common_1.2.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/ukwm/ukwm-common_1.2.0-1_all.deb"

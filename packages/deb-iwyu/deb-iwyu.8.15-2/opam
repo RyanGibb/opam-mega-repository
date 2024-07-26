@@ -11,7 +11,7 @@ depends: [
   "deb-libllvm11" {>= "1-9~svn298832-1~"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-python3"
-  ("deb-clang" | "deb- clang-4-0" | "deb- clang-5-0" | "deb- clang-6-0" | "deb- clang-7" | "deb- clang-8" | "deb- clang-9" | "deb- clang-10" | "deb- clang-11" | "deb- clang-12")
+  ("deb-clang" | "deb-clang-4-0" | "deb-clang-5-0" | "deb-clang-6-0" | "deb-clang-7" | "deb-clang-8" | "deb-clang-9" | "deb-clang-10" | "deb-clang-11" | "deb-clang-12")
 ]
 extra-source "iwyu_8.15-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/iwyu/iwyu_8.15-2_amd64.deb"

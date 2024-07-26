@@ -10,7 +10,7 @@ depends: [
   "deb-fai-setup-storage"
   "deb-patch"
   "deb-syslinux-efi"
-  ("deb-pxelinux" | "deb- syslinux-common")
+  ("deb-pxelinux" | "deb-syslinux-common")
 ]
 extra-source "fai-nfsroot_6.0.3+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fai/fai-nfsroot_6.0.3+deb12u1_all.deb"

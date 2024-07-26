@@ -9,8 +9,8 @@ depends: [
   "deb-libc6" {>= "2.29"}
   "deb-libgcc-s1" {>= "3.0"}
   "deb-libstdc++6" {>= "11"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libbasix0.5_0.5.1-1+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fenics-basix/libbasix0.5_0.5.1-1+b2_amd64.deb"

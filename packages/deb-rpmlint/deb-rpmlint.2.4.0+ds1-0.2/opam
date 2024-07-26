@@ -20,8 +20,8 @@ depends: [
   "deb-python3-zstandard"
   "deb-rpm2cpio"
   "deb-zstd"
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
-  ("deb-python3-tomli" | "deb- python3" {> "3.11"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
+  ("deb-python3-tomli" | "deb-python3" {> "3.11"})
 ]
 extra-source "rpmlint_2.4.0+ds1-0.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rpmlint/rpmlint_2.4.0+ds1-0.2_all.deb"

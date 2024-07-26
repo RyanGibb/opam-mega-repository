@@ -128,8 +128,8 @@ depends: [
   "deb-x11-utils"
   "deb-x11-xserver-utils"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
-  ("deb-gdb-minimal" | "deb- gdb")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus")
+  ("deb-gdb-minimal" | "deb-gdb")
 ]
 conflicts: [
   "deb-kde-workspace"

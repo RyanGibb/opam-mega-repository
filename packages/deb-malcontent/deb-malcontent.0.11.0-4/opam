@@ -11,7 +11,7 @@ depends: [
   "deb-gir1-2-malcontent-0" {>= "0.11.0-4"}
   "deb-python3"
   "deb-python3-gi"
-  ("deb-polkitd" | "deb- policykit-1")
+  ("deb-polkitd" | "deb-policykit-1")
 ]
 extra-source "malcontent_0.11.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/malcontent/malcontent_0.11.0-4_all.deb"

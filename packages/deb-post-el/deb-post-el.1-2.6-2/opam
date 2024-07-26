@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r post-el"]
 ]
 depends: [
-  ("deb-emacs" | "deb- emacsen")
+  ("deb-emacs" | "deb-emacsen")
 ]
 extra-source "post-el_1:2.6-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/post-el/post-el_2.6-2_all.deb"

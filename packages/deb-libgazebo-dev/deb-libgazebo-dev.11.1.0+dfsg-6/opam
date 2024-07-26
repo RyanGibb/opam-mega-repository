@@ -34,7 +34,7 @@ depends: [
   "deb-libtbb-dev"
   "deb-libxml2-dev"
   "deb-qtbase5-dev"
-  ("deb-libcurl4-openssl-dev" | "deb- libcurl-dev")
+  ("deb-libcurl4-openssl-dev" | "deb-libcurl-dev")
 ]
 extra-source "libgazebo-dev_11.1.0+dfsg-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gazebo/libgazebo-dev_11.1.0+dfsg-6_amd64.deb"

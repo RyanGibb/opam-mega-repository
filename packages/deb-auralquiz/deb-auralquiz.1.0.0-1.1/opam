@@ -16,7 +16,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libtag1v5" {>= "1.9.1-2.2~"}
   "deb-phonon4qt5"
-  ("deb-phonon-backend-vlc" | "deb- phonon-backend-xine" | "deb- phonon-backend-gstreamer")
+  ("deb-phonon-backend-vlc" | "deb-phonon-backend-xine" | "deb-phonon-backend-gstreamer")
 ]
 extra-source "auralquiz_1.0.0-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/auralquiz/auralquiz_1.0.0-1.1_amd64.deb"

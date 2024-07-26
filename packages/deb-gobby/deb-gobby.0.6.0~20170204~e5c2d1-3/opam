@@ -30,7 +30,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libxml++2-6-2v5" {>= "2.40.0"}
   "deb-libxml2" {>= "2.6.27"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gobby_0.6.0~20170204~e5c2d1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gobby/gobby_0.6.0~20170204~e5c2d1-3_amd64.deb"

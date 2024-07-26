@@ -15,7 +15,7 @@ depends: [
   "deb-libgcrypt20" {>= "1.8.4"}
   "deb-sudo"
   "deb-zsh"
-  ("deb-pinentry-curses" | "deb- pinentry")
+  ("deb-pinentry-curses" | "deb-pinentry")
 ]
 extra-source "tomb_2.9+dfsg1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tomb/tomb_2.9+dfsg1-1_amd64.deb"

@@ -12,7 +12,7 @@ depends: [
   "deb-libgsasl7" {>= "1.1"}
   "deb-libsecret-1-0" {>= "0.7"}
   "deb-ucf"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 conflicts: [
   "deb-msmtp-gnome"

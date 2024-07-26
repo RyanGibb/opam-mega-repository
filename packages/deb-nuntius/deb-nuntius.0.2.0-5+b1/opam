@@ -17,7 +17,7 @@ depends: [
   "deb-libpango-1-0-0" {>= "1.14.0"}
   "deb-libpangocairo-1-0-0" {>= "1.14.0"}
   "deb-libqrencode4" {>= "3.2.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "nuntius_0.2.0-5+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/nuntius-linux/nuntius_0.2.0-5+b1_amd64.deb"

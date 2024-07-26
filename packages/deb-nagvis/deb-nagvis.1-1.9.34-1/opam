@@ -13,7 +13,7 @@ depends: [
   "deb-php-net-socket"
   "deb-php-sqlite3"
   "deb-ucf"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "nagvis_1:1.9.34-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/nagvis/nagvis_1.9.34-1_all.deb"

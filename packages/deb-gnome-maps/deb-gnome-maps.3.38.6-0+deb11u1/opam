@@ -34,7 +34,7 @@ depends: [
   "deb-libglib2-0-bin" {>= "2.40.0-3"}
   "deb-librest-0-7-0" {>= "0.7"}
   "deb-libxml2" {>= "2.7.4"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-maps_3.38.6-0+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-maps/gnome-maps_3.38.6-0+deb11u1_amd64.deb"

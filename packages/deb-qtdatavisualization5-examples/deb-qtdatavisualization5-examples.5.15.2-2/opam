@@ -13,8 +13,8 @@ depends: [
   "deb-libqt5widgets5" {>= "5.15.2+dfsg~"}
   "deb-libstdc++6" {>= "5"}
   "deb-qml-module-qtdatavisualization" {= "5.15.2-2"}
-  ("deb-libqt5gui5" {>= "5.15.2+dfsg~"} | "deb- libqt5gui5-gles" {>= "5.15.2+dfsg~"})
-  ("deb-libqt5quick5" {>= "5.15.2+dfsg~"} | "deb- libqt5quick5-gles" {>= "5.15.2+dfsg~"})
+  ("deb-libqt5gui5" {>= "5.15.2+dfsg~"} | "deb-libqt5gui5-gles" {>= "5.15.2+dfsg~"})
+  ("deb-libqt5quick5" {>= "5.15.2+dfsg~"} | "deb-libqt5quick5-gles" {>= "5.15.2+dfsg~"})
 ]
 extra-source "qtdatavisualization5-examples_5.15.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtdatavis3d-everywhere-src/qtdatavisualization5-examples_5.15.2-2_amd64.deb"

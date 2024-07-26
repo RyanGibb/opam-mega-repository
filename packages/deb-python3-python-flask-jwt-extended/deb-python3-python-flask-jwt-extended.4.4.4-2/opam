@@ -11,7 +11,7 @@ depends: [
   "deb-python3-flask" {>= "2.0"}
   "deb-python3-jwt"
   "deb-python3-werkzeug"
-  ("deb-python3-typing-extensions" | "deb- python3" {> "3.8"})
+  ("deb-python3-typing-extensions" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-python-flask-jwt-extended_4.4.4-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-flask-jwt-extended/python3-python-flask-jwt-extended_4.4.4-2_all.deb"

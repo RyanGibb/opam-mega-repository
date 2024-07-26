@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-advi"
   "deb-texlive-latex-base"
-  ("deb-emacs" | "deb- emacsen")
+  ("deb-emacs" | "deb-emacsen")
 ]
 extra-source "whizzytex_1.3.7-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/whizzytex/whizzytex_1.3.7-1_all.deb"

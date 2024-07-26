@@ -26,7 +26,7 @@ depends: [
   "deb-libxml2" {>= "2.6.27"}
   "deb-sofa-data"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "sofa-apps_1.0~beta4-12+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sofa-framework/sofa-apps_1.0~beta4-12+b2_amd64.deb"

@@ -42,9 +42,9 @@ depends: [
   "deb-libxext6"
   "deb-libxfixes3" {>= "1-6.0.0"}
   "deb-libxi6" {>= "2-1.2.99.4"}
-  ("deb-default-logind" | "deb- logind")
-  ("deb-libspa-0-2-bluetooth" | "deb- pulseaudio-module-bluetooth")
-  ("deb-pipewire-audio" | "deb- pulseaudio")
+  ("deb-default-logind" | "deb-logind")
+  ("deb-libspa-0-2-bluetooth" | "deb-pulseaudio-module-bluetooth")
+  ("deb-pipewire-audio" | "deb-pulseaudio")
 ]
 extra-source "gnome-settings-daemon_43.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-settings-daemon/gnome-settings-daemon_43.0-4_amd64.deb"

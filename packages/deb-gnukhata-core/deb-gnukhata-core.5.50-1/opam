@@ -24,7 +24,7 @@ depends: [
   "deb-python-webob"
   "deb-python-wsgicors"
   "deb-supervisor"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "gnukhata-core_5.50-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnukhata-core/gnukhata-core_5.50-1_all.deb"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r elpa-gnuplot-mode"]
 ]
 depends: [
-  ("deb-gnuplot-qt" | "deb- gnuplot-x11" | "deb- gnuplot")
+  ("deb-gnuplot-qt" | "deb-gnuplot-x11" | "deb-gnuplot")
 ]
 extra-source "elpa-gnuplot-mode_1:0.7.0-2014-12-31-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnuplot-mode/elpa-gnuplot-mode_0.7.0-2014-12-31-1_all.deb"

@@ -11,7 +11,7 @@ depends: [
   "deb-libpcap0-8" {>= "0.9.8"}
   "deb-lsb-base"
   "deb-ucf"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 conflicts: [
   "deb-apache2" {< "2.4"}

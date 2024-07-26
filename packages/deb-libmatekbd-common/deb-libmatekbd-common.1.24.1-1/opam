@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r libmatekbd-common"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "libmatekbd-common_1.24.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libm/libmatekbd/libmatekbd-common_1.24.1-1_all.deb"

@@ -26,7 +26,7 @@ depends: [
   "deb-libqt5svg5" {>= "5.7.0~"}
   "deb-libqt5widgets5" {>= "5.7.0~"}
   "deb-libstdc++6" {>= "4.1.1"}
-  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb-libqt5gui5-gles" {>= "5.7.0"})
 ]
 extra-source "kigo_4:20.12.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kigo/kigo_20.12.1-1_amd64.deb"

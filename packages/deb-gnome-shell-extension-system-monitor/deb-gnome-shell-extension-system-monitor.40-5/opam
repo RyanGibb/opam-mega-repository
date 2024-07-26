@@ -9,7 +9,7 @@ depends: [
   "deb-gir1-2-gtop-2-0"
   "deb-gnome-shell" {< "44~"}
   "deb-gnome-shell" {>= "3.26~"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-shell-extension-system-monitor_40-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-shell-extension-system-monitor/gnome-shell-extension-system-monitor_40-5_all.deb"

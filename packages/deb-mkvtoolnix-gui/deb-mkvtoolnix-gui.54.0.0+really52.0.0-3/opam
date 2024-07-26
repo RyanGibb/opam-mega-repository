@@ -24,7 +24,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.11.0~rc1"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-mkvtoolnix" {= "54.0.0+really52.0.0-3"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 conflicts: [
   "deb-mkvtoolnix" {< "35.0.0-1"}

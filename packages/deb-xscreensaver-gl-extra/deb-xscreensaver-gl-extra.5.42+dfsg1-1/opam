@@ -20,7 +20,7 @@ depends: [
   "deb-libxt6"
   "deb-libxxf86vm1"
   "deb-xscreensaver-gl"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "xscreensaver-gl-extra_5.42+dfsg1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xscreensaver/xscreensaver-gl-extra_5.42+dfsg1-1_amd64.deb"

@@ -18,7 +18,7 @@ depends: [
   "deb-libqhull-dev"
   "deb-libqsastime-dev"
   "deb-libshp-dev"
-  ("deb-gfortran-9" | "deb- gfortran-mod-15")
+  ("deb-gfortran-9" | "deb-gfortran-mod-15")
 ]
 extra-source "libplplot-dev_5.15.0+dfsg-19_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/plplot/libplplot-dev_5.15.0+dfsg-19_amd64.deb"

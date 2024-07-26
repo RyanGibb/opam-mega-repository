@@ -9,7 +9,7 @@ depends: [
   "deb-lua-bitop"
   "deb-lua-socket"
   "deb-python3-minecraftpi"
-  ("deb-minetest" | "deb- minetest-server")
+  ("deb-minetest" | "deb-minetest-server")
 ]
 extra-source "minetest-mod-pycraft_0.22-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/minetest-mod-pycraft/minetest-mod-pycraft_0.22-4_all.deb"

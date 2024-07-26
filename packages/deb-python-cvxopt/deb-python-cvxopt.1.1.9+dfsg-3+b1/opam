@@ -20,8 +20,8 @@ depends: [
   "deb-python" {>= "2.7~"}
   "deb-python-any" {< "2.8"}
   "deb-python-any" {>= "2.7.5-5~"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "python-cvxopt_1.1.9+dfsg-3+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cvxopt/python-cvxopt_1.1.9+dfsg-3+b1_amd64.deb"

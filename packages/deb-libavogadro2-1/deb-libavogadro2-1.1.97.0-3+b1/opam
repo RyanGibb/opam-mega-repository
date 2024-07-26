@@ -20,7 +20,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.14.1"}
   "deb-libstdc++6" {>= "11"}
   "deb-libsymspg1" {>= "2.0.2-1+b2"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "libavogadro2-1_1.97.0-3+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/avogadrolibs/libavogadro2-1_1.97.0-3+b1_amd64.deb"

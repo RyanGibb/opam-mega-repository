@@ -33,7 +33,7 @@ depends: [
   "deb-libstdc++6" {>= "5"}
   "deb-libx11-6"
   "deb-libxres1" {>= "2-1.2.1"}
-  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb-libqt5gui5-gles" {>= "5.15.2~"})
 ]
 extra-source "libprocessui9_4:5.27.5-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libk/libksysguard/libprocessui9_5.27.5-2_amd64.deb"

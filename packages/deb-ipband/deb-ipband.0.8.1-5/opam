@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.15"}
   "deb-libpcap0-8" {>= "0.9.8"}
   "deb-lsb-base" {>= "3.0-6"}
-  ("deb-exim4" | "deb- mail-transport-agent")
+  ("deb-exim4" | "deb-mail-transport-agent")
 ]
 extra-source "ipband_0.8.1-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/ipband/ipband_0.8.1-5_amd64.deb"

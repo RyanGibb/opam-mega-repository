@@ -9,7 +9,7 @@ depends: [
   "deb-base-files" {>= "4.0.1"}
   "deb-emacsen-common" {>= "2.0.8"}
   "deb-make"
-  ("deb-emacs" | "deb- emacs-gtk" | "deb- emacs-lucid" | "deb- emacs-nox" | "deb- emacsen")
+  ("deb-emacs" | "deb-emacs-gtk" | "deb-emacs-lucid" | "deb-emacs-nox" | "deb-emacsen")
 ]
 extra-source "speechd-el_2.11-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/speechd-el/speechd-el_2.11-2_all.deb"

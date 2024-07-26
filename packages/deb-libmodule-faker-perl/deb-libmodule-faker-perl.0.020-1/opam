@@ -14,8 +14,8 @@ depends: [
   "deb-libpath-class-perl"
   "deb-libtext-template-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.17.1"} | "deb- libcpan-meta-requirements-perl")
-  ("deb-perl" {>= "5.19.1"} | "deb- libcpan-meta-perl" {>= "2.130880"})
+  ("deb-perl" {>= "5.17.1"} | "deb-libcpan-meta-requirements-perl")
+  ("deb-perl" {>= "5.19.1"} | "deb-libcpan-meta-perl" {>= "2.130880"})
 ]
 extra-source "libmodule-faker-perl_0.020-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libm/libmodule-faker-perl/libmodule-faker-perl_0.020-1_all.deb"

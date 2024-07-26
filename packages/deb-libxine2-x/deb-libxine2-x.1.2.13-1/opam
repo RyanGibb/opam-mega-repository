@@ -27,7 +27,7 @@ depends: [
   "deb-libxine2-bin" {= "1.2.13-1"}
   "deb-libxv1"
   "deb-libxvmc1" {>= "2-1.0.12"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "libxine2-x_1.2.13-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xine-lib-1.2/libxine2-x_1.2.13-1_amd64.deb"

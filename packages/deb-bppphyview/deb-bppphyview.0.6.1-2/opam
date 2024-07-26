@@ -15,7 +15,7 @@ depends: [
   "deb-libqt5printsupport5" {>= "5.0.2"}
   "deb-libqt5widgets5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "9"}
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "bppphyview_0.6.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/bppphyview/bppphyview_0.6.1-2_amd64.deb"

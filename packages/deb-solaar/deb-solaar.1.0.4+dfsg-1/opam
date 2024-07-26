@@ -13,8 +13,8 @@ depends: [
   "deb-python3-gi"
   "deb-python3-pyudev"
   "deb-udev"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-passwd" | "deb- adduser")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-passwd" | "deb-adduser")
 ]
 extra-source "solaar_1.0.4+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/solaar/solaar_1.0.4+dfsg-1_all.deb"

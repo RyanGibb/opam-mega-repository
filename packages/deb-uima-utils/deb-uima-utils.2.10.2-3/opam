@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libuima-core-java" {>= "2.10.2-3"}
   "deb-libuima-tools-java" {>= "2.10.2-3"}
-  ("deb-default-jre" | "deb- java5-runtime")
+  ("deb-default-jre" | "deb-java5-runtime")
 ]
 extra-source "uima-utils_2.10.2-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/uimaj/uima-utils_2.10.2-3_all.deb"

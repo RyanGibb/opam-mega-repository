@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-librust-grep-printer-dev" {= "0.1.1-2"}
-  ("deb-librust-base64-0-10+default-dev" | "deb- librust-base64-0-9+default-dev" {>= "0.9.2-~~"})
+  ("deb-librust-base64-0-10+default-dev" | "deb-librust-base64-0-9+default-dev" {>= "0.9.2-~~"})
 ]
 extra-source "librust-grep-printer+base64-dev_0.1.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-grep-printer/librust-grep-printer+base64-dev_0.1.1-2_amd64.deb"

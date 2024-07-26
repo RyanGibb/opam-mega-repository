@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-librust-structopt-0-3+default-dev"
-  ("deb-librust-generic-array-0-14+default-dev" | "deb- librust-generic-array-0-13+default-dev" | "deb- librust-generic-array-0-12+default-dev")
+  ("deb-librust-generic-array-0-14+default-dev" | "deb-librust-generic-array-0-13+default-dev" | "deb-librust-generic-array-0-12+default-dev")
 ]
 extra-source "librust-sha1collisiondetection-dev_0.2.6-1+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-sha1collisiondetection/librust-sha1collisiondetection-dev_0.2.6-1+b2_amd64.deb"

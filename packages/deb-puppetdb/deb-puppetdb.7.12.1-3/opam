@@ -59,8 +59,8 @@ depends: [
   "deb-libtrapperkeeper-webserver-jetty9-clojure"
   "deb-libversioneer-clojure"
   "deb-ucf"
-  ("deb-dbconfig-pgsql" | "deb- dbconfig-no-thanks")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-dbconfig-pgsql" | "deb-dbconfig-no-thanks")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "puppetdb_7.12.1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/puppetdb/puppetdb_7.12.1-3_all.deb"

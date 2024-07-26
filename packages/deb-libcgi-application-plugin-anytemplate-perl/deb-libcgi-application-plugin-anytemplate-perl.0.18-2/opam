@@ -9,7 +9,7 @@ depends: [
   "deb-libcgi-application-basic-plugin-bundle-perl"
   "deb-libcgi-application-perl"
   "deb-perl"
-  ("deb-libclone-perl" | "deb- libclone-pp-perl")
+  ("deb-libclone-perl" | "deb-libclone-pp-perl")
 ]
 extra-source "libcgi-application-plugin-anytemplate-perl_0.18-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libc/libcgi-application-plugin-anytemplate-perl/libcgi-application-plugin-anytemplate-perl_0.18-2_all.deb"

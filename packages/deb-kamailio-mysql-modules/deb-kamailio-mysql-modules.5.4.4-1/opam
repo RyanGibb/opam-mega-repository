@@ -9,7 +9,7 @@ depends: [
   "deb-kamailio" {= "5.4.4-1"}
   "deb-libc6" {>= "2.4"}
   "deb-libmariadb3" {>= "3.0.0"}
-  ("deb-default-mysql-client" | "deb- virtual-mysql-client")
+  ("deb-default-mysql-client" | "deb-virtual-mysql-client")
 ]
 extra-source "kamailio-mysql-modules_5.4.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kamailio/kamailio-mysql-modules_5.4.4-1_amd64.deb"

@@ -153,10 +153,10 @@ depends: [
   "deb-x11-utils"
   "deb-x11-xserver-utils"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
-  ("deb-gdb-minimal" | "deb- gdb")
-  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb- libqt5gui5-gles" {>= "5.15.0~"})
-  ("deb-libqt5quick5" {>= "5.15.1"} | "deb- libqt5quick5-gles" {>= "5.15.1"})
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus")
+  ("deb-gdb-minimal" | "deb-gdb")
+  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb-libqt5gui5-gles" {>= "5.15.0~"})
+  ("deb-libqt5quick5" {>= "5.15.1"} | "deb-libqt5quick5-gles" {>= "5.15.1"})
 ]
 extra-source "plasma-workspace_4:5.20.5-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/plasma-workspace/plasma-workspace_5.20.5-6_amd64.deb"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r golang-any"]
 ]
 depends: [
-  ("deb-golang-go" {>= "2-1.15~1"} | "deb- gccgo-go" {>= "2-1.15~1"})
+  ("deb-golang-go" {>= "2-1.15~1"} | "deb-gccgo-go" {>= "2-1.15~1"})
 ]
 extra-source "golang-any_2:1.15~1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/golang-defaults/golang-any_1.15~1_amd64.deb"

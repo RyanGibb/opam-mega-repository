@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ant"]
 ]
 depends: [
-  ("deb-default-jre-headless" {>= "2-1.8"} | "deb- java8-runtime-headless")
+  ("deb-default-jre-headless" {>= "2-1.8"} | "deb-java8-runtime-headless")
 ]
 extra-source "ant_1.10.9-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/ant/ant_1.10.9-4_all.deb"

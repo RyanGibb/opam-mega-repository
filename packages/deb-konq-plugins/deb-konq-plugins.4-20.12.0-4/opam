@@ -38,7 +38,7 @@ depends: [
   "deb-libqt5webenginewidgets5" {>= "5.14.1"}
   "deb-libqt5widgets5" {>= "5.14.1"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "konq-plugins_4:20.12.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/konqueror/konq-plugins_20.12.0-4_amd64.deb"

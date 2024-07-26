@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-gambas3-gb-opengl" {>= "3.18.0-4"}
   "deb-libc6" {>= "2.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "gambas3-gb-opengl-glu_3.18.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gambas3/gambas3-gb-opengl-glu_3.18.0-4_amd64.deb"

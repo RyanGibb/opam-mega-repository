@@ -22,7 +22,7 @@ depends: [
   "deb-liburi-perl"
   "deb-libwww-form-urlencoded-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.19.2"} | "deb- libhttp-tiny-perl" {>= "0.034"})
+  ("deb-perl" {>= "5.19.2"} | "deb-libhttp-tiny-perl" {>= "0.034"})
 ]
 extra-source "libplack-perl_1.0047-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libp/libplack-perl/libplack-perl_1.0047-1_all.deb"

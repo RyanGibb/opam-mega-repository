@@ -19,7 +19,7 @@ depends: [
   "deb-python-pil"
   "deb-python-reportlab"
   "deb-python-sane"
-  ("deb-tesseract-ocr" | "deb- ocrad" | "deb- gocr" | "deb- cuneiform")
+  ("deb-tesseract-ocr" | "deb-ocrad" | "deb-gocr" | "deb-cuneiform")
 ]
 extra-source "ocrfeeder_0.8.1-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/ocrfeeder/ocrfeeder_0.8.1-4_all.deb"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.14"}
-  ("deb-debconf" {>= "0.5.00"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5.00"} | "deb-debconf-2-0")
 ]
 extra-source "logtool_1.2.8-10_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/logtool/logtool_1.2.8-10_amd64.deb"

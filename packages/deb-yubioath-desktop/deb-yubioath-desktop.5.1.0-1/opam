@@ -22,8 +22,8 @@ depends: [
   "deb-qml-module-qtquick-controls"
   "deb-qml-module-qtquick-controls2"
   "deb-qml-module-qtquick-dialogs"
-  ("deb-libqt5gui5" {>= "5.12.2"} | "deb- libqt5gui5-gles" {>= "5.12.2"})
-  ("deb-libqt5quick5" {>= "5.4.0"} | "deb- libqt5quick5-gles" {>= "5.4.0"})
+  ("deb-libqt5gui5" {>= "5.12.2"} | "deb-libqt5gui5-gles" {>= "5.12.2"})
+  ("deb-libqt5quick5" {>= "5.4.0"} | "deb-libqt5quick5-gles" {>= "5.4.0"})
 ]
 extra-source "yubioath-desktop_5.1.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/y/yubioath-desktop/yubioath-desktop_5.1.0-1_amd64.deb"

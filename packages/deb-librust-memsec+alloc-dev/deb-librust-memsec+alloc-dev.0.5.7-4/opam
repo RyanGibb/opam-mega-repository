@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-librust-memsec-dev" {= "0.5.7-4"}
-  ("deb-librust-getrandom-0-2+default-dev" | "deb- librust-getrandom-0-1+default-dev")
+  ("deb-librust-getrandom-0-2+default-dev" | "deb-librust-getrandom-0-1+default-dev")
 ]
 extra-source "librust-memsec+alloc-dev_0.5.7-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-memsec/librust-memsec+alloc-dev_0.5.7-4_amd64.deb"

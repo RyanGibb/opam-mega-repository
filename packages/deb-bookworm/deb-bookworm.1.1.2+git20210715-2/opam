@@ -23,7 +23,7 @@ depends: [
   "deb-python3-any"
   "deb-unar"
   "deb-unzip"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 conflicts: [
   "deb-com-github-babluboy-bookworm"

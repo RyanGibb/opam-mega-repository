@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.3.2"}
-  ("deb-daemon" | "deb- systemd-sysv")
+  ("deb-daemon" | "deb-systemd-sysv")
 ]
 extra-source "prometheus-bind-exporter_0.2~git20161221+dfsg-3+b20_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/prometheus-bind-exporter/prometheus-bind-exporter_0.2~git20161221+dfsg-3+b20_amd64.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-rd"
   "deb-tdiary-core"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "tdiary-style-rd_0.0.3-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tdiary-style-rd/tdiary-style-rd_0.0.3-3_all.deb"

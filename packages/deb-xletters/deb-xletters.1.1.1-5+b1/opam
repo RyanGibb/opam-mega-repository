@@ -14,7 +14,7 @@ depends: [
   "deb-libxext6"
   "deb-libxt6"
   "deb-netcat-traditional"
-  ("deb-wenglish" | "deb- wordlist")
+  ("deb-wenglish" | "deb-wordlist")
 ]
 extra-source "xletters_1.1.1-5+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/xletters/xletters_1.1.1-5+b1_amd64.deb"

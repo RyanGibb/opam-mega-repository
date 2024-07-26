@@ -20,7 +20,7 @@ depends: [
   "deb-python-any" {< "2.8"}
   "deb-python-any" {>= "2.7~"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-mime-support" | "deb- python-pil-imagetk")
+  ("deb-mime-support" | "deb-python-pil-imagetk")
 ]
 extra-source "python-pil_5.4.1-2+deb10u3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pillow/python-pil_5.4.1-2+deb10u3_amd64.deb"

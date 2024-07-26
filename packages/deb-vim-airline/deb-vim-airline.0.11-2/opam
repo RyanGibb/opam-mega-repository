@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r vim-airline"]
 ]
 depends: [
-  ("deb-vim" {>= "2-8.1.0693-2~"} | "deb- neovim" {>= "0.2.2-1~"})
+  ("deb-vim" {>= "2-8.1.0693-2~"} | "deb-neovim" {>= "0.2.2-1~"})
 ]
 extra-source "vim-airline_0.11-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/vim-airline/vim-airline_0.11-2_all.deb"

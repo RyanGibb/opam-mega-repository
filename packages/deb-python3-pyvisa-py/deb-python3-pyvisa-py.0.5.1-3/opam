@@ -9,7 +9,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-pyvisa"
   "deb-python3-typing-extensions"
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-pyvisa-py_0.5.1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pyvisa-py/python3-pyvisa-py_0.5.1-3_all.deb"

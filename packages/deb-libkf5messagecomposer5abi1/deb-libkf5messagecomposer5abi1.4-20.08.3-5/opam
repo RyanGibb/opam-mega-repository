@@ -67,7 +67,7 @@ depends: [
   "deb-libqt5network5" {>= "5.13.0~"}
   "deb-libqt5widgets5" {>= "5.13.0~"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libqt5gui5" {>= "5.13.0~"} | "deb- libqt5gui5-gles" {>= "5.13.0~"})
+  ("deb-libqt5gui5" {>= "5.13.0~"} | "deb-libqt5gui5-gles" {>= "5.13.0~"})
 ]
 extra-source "libkf5messagecomposer5abi1_4:20.08.3-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kf5-messagelib/libkf5messagecomposer5abi1_20.08.3-5_amd64.deb"

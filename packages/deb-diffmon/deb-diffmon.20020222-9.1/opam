@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r diffmon"]
 ]
 depends: [
-  ("deb-default-mta" | "deb- mail-transport-agent")
+  ("deb-default-mta" | "deb-mail-transport-agent")
 ]
 extra-source "diffmon_20020222-9.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/diffmon/diffmon_20020222-9.1_all.deb"

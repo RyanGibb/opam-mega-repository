@@ -18,7 +18,7 @@ depends: [
   "deb-libx11-6"
   "deb-libxss1"
   "deb-shared-mime-info"
-  ("deb-libqt5gui5" {>= "5.12.2"} | "deb- libqt5gui5-gles" {>= "5.12.2"})
+  ("deb-libqt5gui5" {>= "5.12.2"} | "deb-libqt5gui5-gles" {>= "5.12.2"})
 ]
 extra-source "liblxqt1_1.2.0-8_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libl/liblxqt/liblxqt1_1.2.0-8_amd64.deb"

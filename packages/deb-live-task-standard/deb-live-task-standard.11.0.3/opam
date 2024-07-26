@@ -40,7 +40,7 @@ depends: [
   "deb-wamerican"
   "deb-wget"
   "deb-xz-utils"
-  ("deb-default-logind" | "deb- logind")
+  ("deb-default-logind" | "deb-logind")
 ]
 extra-source "live-task-standard_11.0.3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/live-tasks/live-task-standard_11.0.3_all.deb"

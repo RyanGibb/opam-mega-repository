@@ -9,7 +9,7 @@ depends: [
   "deb-librust-ctor-dev"
   "deb-librust-difference-2+default-dev"
   "deb-librust-output-vt100-dev"
-  ("deb-librust-ansi-term-0-12+default-dev" | "deb- librust-ansi-term-0-11+default-dev")
+  ("deb-librust-ansi-term-0-12+default-dev" | "deb-librust-ansi-term-0-11+default-dev")
 ]
 extra-source "librust-pretty-assertions-dev_0.6.1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-pretty-assertions/librust-pretty-assertions-dev_0.6.1-3_amd64.deb"

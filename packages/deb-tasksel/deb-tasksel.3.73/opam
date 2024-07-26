@@ -9,7 +9,7 @@ depends: [
   "deb-apt"
   "deb-liblocale-gettext-perl"
   "deb-tasksel-data"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 conflicts: [
   "deb-base-config" {< "2.32"}

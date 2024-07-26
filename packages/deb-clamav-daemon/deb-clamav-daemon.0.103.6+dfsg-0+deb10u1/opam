@@ -19,8 +19,8 @@ depends: [
   "deb-procps" {>= "1-3.3.2"}
   "deb-ucf"
   "deb-zlib1g" {>= "1-1.2.0.2"}
-  ("deb-clamav-freshclam" {>= "0.103.6+dfsg"} | "deb- clamav-data")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-clamav-freshclam" {>= "0.103.6+dfsg"} | "deb-clamav-data")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "clamav-daemon_0.103.6+dfsg-0+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/clamav/clamav-daemon_0.103.6+dfsg-0+deb10u1_amd64.deb"

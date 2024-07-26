@@ -12,7 +12,7 @@ depends: [
   "deb-libssl1-1" {>= "1.1.0"}
   "deb-lsb-base" {>= "3.2-14"}
   "deb-pure-ftpd-common" {= "1.0.47-3"}
-  ("deb-openbsd-inetd" | "deb- inet-superserver")
+  ("deb-openbsd-inetd" | "deb-inet-superserver")
 ]
 conflicts: [
   "deb-ftp-server"

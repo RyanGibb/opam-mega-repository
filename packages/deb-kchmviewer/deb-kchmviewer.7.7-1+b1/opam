@@ -18,7 +18,7 @@ depends: [
   "deb-libqt5xml5" {>= "5.1.0"}
   "deb-libstdc++6" {>= "5"}
   "deb-libzip4" {>= "0.10"}
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "kchmviewer_7.7-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kchmviewer/kchmviewer_7.7-1+b1_amd64.deb"

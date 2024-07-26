@@ -14,7 +14,7 @@ depends: [
   "deb-python3-jinja2"
   "deb-python3-netaddr"
   "deb-python3-yaml"
-  ("deb-openssh-client" | "deb- python3-paramiko" {>= "2.6.0"})
+  ("deb-openssh-client" | "deb-python3-paramiko" {>= "2.6.0"})
 ]
 extra-source "ansible_7.3.0+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/ansible/ansible_7.3.0+dfsg-1_all.deb"

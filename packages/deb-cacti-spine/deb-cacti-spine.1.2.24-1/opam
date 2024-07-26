@@ -12,8 +12,8 @@ depends: [
   "deb-libmariadb3" {>= "3.0.0"}
   "deb-libsnmp40" {>= "5.9.3+dfsg"}
   "deb-ucf"
-  ("deb-dbconfig-mysql" | "deb- dbconfig-no-thanks")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-dbconfig-mysql" | "deb-dbconfig-no-thanks")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "cacti-spine_1.2.24-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cacti-spine/cacti-spine_1.2.24-1_amd64.deb"

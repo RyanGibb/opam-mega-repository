@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-tomlrb"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-tomlrb_1.2.8-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-tomlrb/ruby-tomlrb_1.2.8-1_all.deb"

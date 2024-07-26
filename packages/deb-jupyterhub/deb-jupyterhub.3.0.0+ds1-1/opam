@@ -29,7 +29,7 @@ depends: [
   "deb-python3-sqlalchemy" {>= "1.1"}
   "deb-python3-tornado"
   "deb-python3-traitlets"
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.10"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.10"})
 ]
 extra-source "jupyterhub_3.0.0+ds1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jupyterhub/jupyterhub_3.0.0+ds1-1_all.deb"

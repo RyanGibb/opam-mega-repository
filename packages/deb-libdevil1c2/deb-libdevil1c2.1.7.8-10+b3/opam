@@ -19,7 +19,7 @@ depends: [
   "deb-libtiff6" {>= "4.0.3"}
   "deb-libx11-6"
   "deb-libxext6"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 conflicts: [
   "deb-libdevil1"

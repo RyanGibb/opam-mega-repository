@@ -9,7 +9,7 @@ depends: [
   "deb-postgresql"
   "deb-ruby-pg"
   "deb-sisu" {= "7.2.1-2"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "sisu-postgresql_7.2.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sisu/sisu-postgresql_7.2.1-2_all.deb"

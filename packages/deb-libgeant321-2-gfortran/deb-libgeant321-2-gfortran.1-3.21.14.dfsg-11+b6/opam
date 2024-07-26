@@ -24,7 +24,7 @@ depends: [
   "deb-libxbae4m" {>= "4.60.2"}
   "deb-libxm4" {>= "2.3.3"}
   "deb-libxt6"
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libgeant321-2-gfortran_1:3.21.14.dfsg-11+b6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/geant321/libgeant321-2-gfortran_3.21.14.dfsg-11+b6_amd64.deb"

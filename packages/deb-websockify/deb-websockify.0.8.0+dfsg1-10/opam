@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.4"}
   "deb-python-numpy"
-  ("deb-python-websockify" {>= "0.8.0+dfsg1-10"} | "deb- python3-websockify" {>= "0.8.0+dfsg1-10"})
+  ("deb-python-websockify" {>= "0.8.0+dfsg1-10"} | "deb-python3-websockify" {>= "0.8.0+dfsg1-10"})
 ]
 extra-source "websockify_0.8.0+dfsg1-10_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/websockify/websockify_0.8.0+dfsg1-10_amd64.deb"

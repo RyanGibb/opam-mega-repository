@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libzemberek-java"
   "deb-sgml-base" {>= "1.28"}
-  ("deb-libzemberek-tr-java" | "deb- libzemberek-tk-java")
+  ("deb-libzemberek-tr-java" | "deb-libzemberek-tk-java")
 ]
 extra-source "zemberek-java-demo_2.1.1-8.4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/z/zemberek/zemberek-java-demo_2.1.1-8.4_all.deb"

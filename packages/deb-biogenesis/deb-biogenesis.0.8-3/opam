@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r biogenesis"]
 ]
 depends: [
-  ("deb-default-jre" | "deb- java6-runtime")
+  ("deb-default-jre" | "deb-java6-runtime")
 ]
 extra-source "biogenesis_0.8-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/biogenesis/biogenesis_0.8-3_all.deb"

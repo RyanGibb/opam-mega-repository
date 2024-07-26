@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r librust-unicode-bidi-dev"]
 ]
 depends: [
-  ("deb-librust-serde-1+derive-dev" | "deb- librust-serde-0+derive-dev" {>= "0.8-~~"})
+  ("deb-librust-serde-1+derive-dev" | "deb-librust-serde-0+derive-dev" {>= "0.8-~~"})
 ]
 extra-source "librust-unicode-bidi-dev_0.3.8-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-unicode-bidi/librust-unicode-bidi-dev_0.3.8-2_amd64.deb"

@@ -9,7 +9,7 @@ depends: [
   "deb-libcdio-cdda-dev"
   "deb-libcdio-dev" {>= "0.94"}
   "deb-libcdio-paranoia2" {= "10.2+2.0.1-1"}
-  ("deb-libc6-dev" | "deb- libc-dev")
+  ("deb-libc6-dev" | "deb-libc-dev")
 ]
 extra-source "libcdio-paranoia-dev_10.2+2.0.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libc/libcdio-paranoia/libcdio-paranoia-dev_10.2+2.0.1-1_amd64.deb"

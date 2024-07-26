@@ -28,8 +28,8 @@ depends: [
   "deb-libxrandr2"
   "deb-libxrender1"
   "deb-libxtst6"
-  ("deb-gnote" | "deb- tomboy")
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-gnote" | "deb-tomboy")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "cairo-dock-tomboy-plug-in_3.4.1-4+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cairo-dock-plug-ins/cairo-dock-tomboy-plug-in_3.4.1-4+b1_amd64.deb"

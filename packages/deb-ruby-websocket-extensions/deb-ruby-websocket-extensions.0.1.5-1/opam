@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-websocket-extensions"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-websocket-extensions_0.1.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-websocket-extensions/ruby-websocket-extensions_0.1.5-1_all.deb"

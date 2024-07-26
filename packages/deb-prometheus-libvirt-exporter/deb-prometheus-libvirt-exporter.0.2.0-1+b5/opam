@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.14"}
   "deb-libvirt0" {>= "6.0.0~rc1"}
-  ("deb-daemon" | "deb- systemd-sysv")
+  ("deb-daemon" | "deb-systemd-sysv")
 ]
 extra-source "prometheus-libvirt-exporter_0.2.0-1+b5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/prometheus-libvirt-exporter/prometheus-libvirt-exporter_0.2.0-1+b5_amd64.deb"

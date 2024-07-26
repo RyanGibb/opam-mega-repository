@@ -16,8 +16,8 @@ depends: [
   "deb-python-any" {>= "2.7.5-5~"}
   "deb-python-numpy"
   "deb-python-numpy" {>= "1-1.14.3"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "python-sparse_1.1.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pysparse/python-sparse_1.1.1-2_amd64.deb"

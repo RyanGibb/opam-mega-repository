@@ -19,9 +19,9 @@ depends: [
   "deb-libstdc++6" {>= "9"}
   "deb-libxml2" {>= "2.7.4"}
   "deb-soundscaperenderer-common" {= "0.5.0~dfsg-4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
-  ("deb-libqt5gui5" {>= "5.2.0"} | "deb- libqt5gui5-gles" {>= "5.2.0"})
+  ("deb-libglu1-mesa" | "deb-libglu1")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
+  ("deb-libqt5gui5" {>= "5.2.0"} | "deb-libqt5gui5-gles" {>= "5.2.0"})
 ]
 extra-source "soundscaperenderer_0.5.0~dfsg-4+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/soundscaperenderer/soundscaperenderer_0.5.0~dfsg-4+b1_amd64.deb"

@@ -12,7 +12,7 @@ depends: [
   "deb-libncurses6" {>= "6"}
   "deb-libtinfo6" {>= "6"}
   "deb-pbuilder"
-  ("deb-qemu-system" | "deb- kvm")
+  ("deb-qemu-system" | "deb-kvm")
 ]
 extra-source "qemubuilder_0.88_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cowdancer/qemubuilder_0.88_amd64.deb"

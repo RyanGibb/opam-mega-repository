@@ -16,7 +16,7 @@ depends: [
   "deb-libxi6"
   "deb-libxtst6"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb-libqt5gui5-gles" {>= "5.7.0"})
 ]
 extra-source "keepassx_2.0.3+git20190121.1682ab9-2.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/keepassx/keepassx_2.0.3+git20190121.1682ab9-2.2_amd64.deb"

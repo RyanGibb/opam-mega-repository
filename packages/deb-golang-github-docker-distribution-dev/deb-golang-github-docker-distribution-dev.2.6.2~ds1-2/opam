@@ -20,8 +20,8 @@ depends: [
   "deb-golang-github-stevvooe-resumable-dev"
   "deb-golang-golang-x-crypto-dev"
   "deb-golang-golang-x-net-dev"
-  ("deb-golang-gopkg-check-v1-dev" | "deb- golang-check-v1-dev")
-  ("deb-golang-gopkg-yaml-v2-dev" | "deb- golang-yaml-v2-dev")
+  ("deb-golang-gopkg-check-v1-dev" | "deb-golang-check-v1-dev")
+  ("deb-golang-gopkg-yaml-v2-dev" | "deb-golang-yaml-v2-dev")
 ]
 extra-source "golang-github-docker-distribution-dev_2.6.2~ds1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/docker-registry/golang-github-docker-distribution-dev_2.6.2~ds1-2_all.deb"

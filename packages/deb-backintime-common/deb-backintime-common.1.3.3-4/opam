@@ -12,7 +12,7 @@ depends: [
   "deb-python3-keyring"
   "deb-python3-packaging"
   "deb-rsync"
-  ("deb-cron" | "deb- cron-daemon")
+  ("deb-cron" | "deb-cron-daemon")
 ]
 extra-source "backintime-common_1.3.3-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/backintime/backintime-common_1.3.3-4_all.deb"

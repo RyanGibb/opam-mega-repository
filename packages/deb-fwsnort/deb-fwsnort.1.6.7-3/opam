@@ -11,7 +11,7 @@ depends: [
   "deb-libnet-rawip-perl"
   "deb-libnetaddr-ip-perl"
   "deb-perl-any"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "fwsnort_1.6.7-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fwsnort/fwsnort_1.6.7-3_all.deb"

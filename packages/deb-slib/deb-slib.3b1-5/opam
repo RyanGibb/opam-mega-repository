@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r slib"]
 ]
 depends: [
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 conflicts: [
   "deb-guile-1-6-libs" {<= "1.6.7-1.1"}

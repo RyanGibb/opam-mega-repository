@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.4"}
-  ("deb-emacs25-nox" | "deb- emacs25" | "deb- emacs24" | "deb- emacs23" | "deb- emacs21" | "deb- xemacs21-mule" | "deb- xemacs21-mule-canna-wnn" | "deb- xemacs21-gnome-mule-canna-wnn" | "deb- xemacs21-gnome-mule" | "deb- emacs-snapshot")
+  ("deb-emacs25-nox" | "deb-emacs25" | "deb-emacs24" | "deb-emacs23" | "deb-emacs21" | "deb-xemacs21-mule" | "deb-xemacs21-mule-canna-wnn" | "deb-xemacs21-gnome-mule-canna-wnn" | "deb-xemacs21-gnome-mule" | "deb-emacs-snapshot")
 ]
 extra-source "yc-el_5.0.0-8_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/y/yc-el/yc-el_5.0.0-8_amd64.deb"

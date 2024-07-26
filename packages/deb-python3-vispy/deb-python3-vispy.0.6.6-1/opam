@@ -14,7 +14,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-freetype"
   "deb-python3-numpy"
-  ("deb-libgl1-mesa-glx" | "deb- libgl1")
+  ("deb-libgl1-mesa-glx" | "deb-libgl1")
 ]
 extra-source "python3-vispy_0.6.6-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-vispy/python3-vispy_0.6.6-1_amd64.deb"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ubuntu-dbgsym-keyring"]
 ]
 depends: [
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "ubuntu-dbgsym-keyring_2018.09.18.1-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/ubuntu-keyring/ubuntu-dbgsym-keyring_2018.09.18.1-5_all.deb"

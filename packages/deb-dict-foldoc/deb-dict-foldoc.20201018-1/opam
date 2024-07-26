@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-base-files" {> "4"}
-  ("deb-dictd" | "deb- dict-server")
+  ("deb-dictd" | "deb-dict-server")
 ]
 extra-source "dict-foldoc_20201018-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dict-foldoc/dict-foldoc_20201018-1_all.deb"

@@ -16,7 +16,7 @@ depends: [
   "deb-libreturn-type-perl"
   "deb-libtype-tiny-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.22"} | "deb- libdata-alias-perl")
+  ("deb-perl" {>= "5.22"} | "deb-libdata-alias-perl")
 ]
 extra-source "libkavorka-perl_0.039-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libk/libkavorka-perl/libkavorka-perl_0.039-3_all.deb"

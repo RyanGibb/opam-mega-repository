@@ -34,7 +34,7 @@ depends: [
   "deb-qml-module-qtquick-controls2" {>= "5.9.0~"}
   "deb-qml-module-qtquick-layouts" {>= "5.9.0~"}
   "deb-qml-module-qtquick2" {>= "5.9.0~"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "print-manager_4:20.12.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/print-manager/print-manager_20.12.0-1_amd64.deb"

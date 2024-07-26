@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r systempreferences.app-dbg"]
 ]
 depends: [
-  ("deb-systempreferences-app" {= "1.2.0-2+b8"} | "deb- libpreferencepanes1" {= "1.2.0-2+b8"})
+  ("deb-systempreferences-app" {= "1.2.0-2+b8"} | "deb-libpreferencepanes1" {= "1.2.0-2+b8"})
 ]
 extra-source "systempreferences.app-dbg_1.2.0-2+b8_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/systempreferences.app/systempreferences.app-dbg_1.2.0-2+b8_amd64.deb"

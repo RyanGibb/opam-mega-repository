@@ -37,7 +37,7 @@ depends: [
   "deb-libtag1v5" {>= "1.11"}
   "deb-libx11-6"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "clementine_1.4.0~rc1+git867-g9ef681b0e+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/clementine/clementine_1.4.0~rc1+git867-g9ef681b0e+dfsg-1_amd64.deb"

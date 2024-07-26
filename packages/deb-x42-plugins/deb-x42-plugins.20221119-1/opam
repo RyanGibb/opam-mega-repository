@@ -22,7 +22,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libx11-6"
   "deb-libzita-convolver4" {>= "4.0.3"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "x42-plugins_20221119-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/x/x42-plugins/x42-plugins_20221119-1_amd64.deb"

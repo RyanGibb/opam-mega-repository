@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.34"}
   "deb-libcsound64-6-0" {>= "1-6.00~dfsg"}
-  ("deb-puredata-core" | "deb- pd")
+  ("deb-puredata-core" | "deb-pd")
 ]
 extra-source "pd-csound_2:1.01.0-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pd-csound/pd-csound_1.01.0-5_amd64.deb"

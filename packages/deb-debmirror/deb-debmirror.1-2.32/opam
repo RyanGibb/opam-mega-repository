@@ -15,7 +15,7 @@ depends: [
   "deb-perl" {>= "5.10"}
   "deb-rsync"
   "deb-xz-utils"
-  ("deb-perl" {>= "5.22"} | "deb- libnet-inet6glue-perl")
+  ("deb-perl" {>= "5.22"} | "deb-libnet-inet6glue-perl")
 ]
 extra-source "debmirror_1:2.32_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/debmirror/debmirror_2.32_all.deb"

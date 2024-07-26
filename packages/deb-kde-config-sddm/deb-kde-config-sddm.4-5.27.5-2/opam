@@ -26,7 +26,7 @@ depends: [
   "deb-qml-module-qtquick-layouts"
   "deb-qml-module-qtquick2"
   "deb-systemsettings"
-  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb-libqt5gui5-gles" {>= "5.15.2~"})
 ]
 extra-source "kde-config-sddm_4:5.27.5-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sddm-kcm/kde-config-sddm_5.27.5-2_amd64.deb"

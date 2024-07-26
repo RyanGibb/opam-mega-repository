@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-librust-lscolors-dev" {= "0.7.1-1+b1"}
-  ("deb-librust-ansi-term-0-12+default-dev" | "deb- librust-ansi-term-0-11+default-dev")
+  ("deb-librust-ansi-term-0-12+default-dev" | "deb-librust-ansi-term-0-11+default-dev")
 ]
 extra-source "librust-lscolors+ansi-term-dev_0.7.1-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-lscolors/librust-lscolors+ansi-term-dev_0.7.1-1+b1_amd64.deb"

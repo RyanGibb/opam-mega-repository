@@ -22,8 +22,8 @@ depends: [
   "deb-r-base-core" {>= "3.5.2-1"}
   "deb-xauth"
   "deb-zlib1g-dev"
-  ("deb-libblas-dev" | "deb- libatlas-base-dev")
-  ("deb-liblapack-dev" | "deb- libatlas-base-dev")
+  ("deb-libblas-dev" | "deb-libatlas-base-dev")
+  ("deb-liblapack-dev" | "deb-libatlas-base-dev")
 ]
 extra-source "r-base-dev_3.5.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-base/r-base-dev_3.5.2-1_all.deb"

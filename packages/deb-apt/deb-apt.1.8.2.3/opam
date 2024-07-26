@@ -14,7 +14,7 @@ depends: [
   "deb-libgnutls30" {>= "3.6.6"}
   "deb-libseccomp2" {>= "1.0.1"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-gpgv" | "deb- gpgv2" | "deb- gpgv1")
+  ("deb-gpgv" | "deb-gpgv2" | "deb-gpgv1")
 ]
 extra-source "apt_1.8.2.3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/apt/apt_1.8.2.3_amd64.deb"

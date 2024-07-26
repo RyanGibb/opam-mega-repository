@@ -17,7 +17,7 @@ depends: [
   "deb-librasqal3" {>= "0.9.31"}
   "deb-librdf0" {>= "1.0.17"}
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus" | "deb- dbus-x11")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus" | "deb-dbus-x11")
 ]
 extra-source "konclude_0.7.0+1137~dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/konclude/konclude_0.7.0+1137~dfsg-1_amd64.deb"

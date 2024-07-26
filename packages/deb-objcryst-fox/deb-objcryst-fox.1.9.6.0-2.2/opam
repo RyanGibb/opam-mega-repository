@@ -15,7 +15,7 @@ depends: [
   "deb-libstdc++6" {>= "9"}
   "deb-libwxbase3-0-0v5" {>= "3.0.4+dfsg"}
   "deb-libwxgtk3-0-gtk3-0v5" {>= "3.0.4+dfsg-10~"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "objcryst-fox_1.9.6.0-2.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/objcryst-fox/objcryst-fox_1.9.6.0-2.2_amd64.deb"

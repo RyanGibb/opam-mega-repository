@@ -16,7 +16,7 @@ depends: [
   "deb-python3-pastescript"
   "deb-python3-q-text-as-data"
   "deb-uwsgi-plugin-python3"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "designate-api_1:11.0.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/designate/designate-api_11.0.0-2_all.deb"

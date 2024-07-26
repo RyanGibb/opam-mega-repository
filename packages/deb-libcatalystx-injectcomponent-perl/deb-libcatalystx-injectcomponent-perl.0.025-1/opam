@@ -9,7 +9,7 @@ depends: [
   "deb-libcatalyst-perl"
   "deb-libclass-inspector-perl"
   "deb-perl"
-  ("deb-libmodule-pluggable-perl" | "deb- perl" {< "5.17.0"})
+  ("deb-libmodule-pluggable-perl" | "deb-perl" {< "5.17.0"})
 ]
 extra-source "libcatalystx-injectcomponent-perl_0.025-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libc/libcatalystx-injectcomponent-perl/libcatalystx-injectcomponent-perl_0.025-1_all.deb"

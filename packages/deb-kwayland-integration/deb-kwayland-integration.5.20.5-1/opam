@@ -13,7 +13,7 @@ depends: [
   "deb-libkf5windowsystem5" {>= "5.74~"}
   "deb-libqt5core5a" {>= "5.15.1"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb- libqt5gui5-gles" {>= "5.15.0~"})
+  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb-libqt5gui5-gles" {>= "5.15.0~"})
 ]
 extra-source "kwayland-integration_5.20.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kwayland-integration/kwayland-integration_5.20.5-1_amd64.deb"

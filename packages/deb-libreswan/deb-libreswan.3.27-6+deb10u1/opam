@@ -26,7 +26,7 @@ depends: [
   "deb-libsystemd0"
   "deb-libunbound8" {>= "1.8.0"}
   "deb-systemd"
-  ("deb-iproute2" | "deb- iproute" {>= "20071016"})
+  ("deb-iproute2" | "deb-iproute" {>= "20071016"})
 ]
 conflicts: [
   "deb-ike-server"

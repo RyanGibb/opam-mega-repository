@@ -25,7 +25,7 @@ depends: [
   "deb-libx11-6"
   "deb-libxext6"
   "deb-libxmu6"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "freetennis_0.4.8-10+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/freetennis/freetennis_0.4.8-10+b3_amd64.deb"

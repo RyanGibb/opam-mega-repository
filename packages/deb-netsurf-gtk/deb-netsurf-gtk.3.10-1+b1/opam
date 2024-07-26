@@ -20,7 +20,7 @@ depends: [
   "deb-libssl1-1" {>= "1.1.1"}
   "deb-netsurf-common" {= "3.10-1"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libgdk-pixbuf-2-0-0" {>= "2.25.2"} | "deb- libgdk-pixbuf2-0-0" {>= "2.25.2"})
+  ("deb-libgdk-pixbuf-2-0-0" {>= "2.25.2"} | "deb-libgdk-pixbuf2-0-0" {>= "2.25.2"})
 ]
 extra-source "netsurf-gtk_3.10-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/netsurf/netsurf-gtk_3.10-1+b1_amd64.deb"

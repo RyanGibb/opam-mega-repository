@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-pry"
   "deb-ruby-byebug"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-pry-byebug_3.6.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-pry-byebug/ruby-pry-byebug_3.6.0-1_all.deb"

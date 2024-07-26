@@ -20,7 +20,7 @@ depends: [
   "deb-libtemplate-perl"
   "deb-python3-any"
   "deb-python3-matplotlib"
-  ("deb-erlang-base" {>= "1-22.1.1+dfsg"} | "deb- erlang-base-hipe" {>= "1-22.1.1+dfsg"})
+  ("deb-erlang-base" {>= "1-22.1.1+dfsg"} | "deb-erlang-base-hipe" {>= "1-22.1.1+dfsg"})
 ]
 extra-source "tsung_1.7.0-3.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tsung/tsung_1.7.0-3.1_amd64.deb"

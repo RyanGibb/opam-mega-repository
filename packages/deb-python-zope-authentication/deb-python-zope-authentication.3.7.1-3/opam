@@ -15,7 +15,7 @@ depends: [
   "deb-python-zope-interface"
   "deb-python-zope-schema"
   "deb-python-zope-security"
-  ("deb-python2-7" | "deb- python2-6")
+  ("deb-python2-7" | "deb-python2-6")
 ]
 extra-source "python-zope.authentication_3.7.1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/z/zope.authentication/python-zope.authentication_3.7.1-3_all.deb"

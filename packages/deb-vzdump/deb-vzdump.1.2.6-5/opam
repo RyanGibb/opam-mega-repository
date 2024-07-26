@@ -11,7 +11,7 @@ depends: [
   "deb-perl"
   "deb-rsync"
   "deb-vzctl"
-  ("deb-exim4" | "deb- mail-transport-agent")
+  ("deb-exim4" | "deb-mail-transport-agent")
 ]
 extra-source "vzdump_1.2.6-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/vzdump/vzdump_1.2.6-5_all.deb"

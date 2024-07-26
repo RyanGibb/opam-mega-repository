@@ -25,7 +25,7 @@ depends: [
   "deb-libx11-6"
   "deb-phonon4qt5"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "texstudio_4.3.1+ds-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/texstudio/texstudio_4.3.1+ds-2_amd64.deb"

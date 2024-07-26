@@ -28,7 +28,7 @@ depends: [
   "deb-libx11-6"
   "deb-libxext6"
   "deb-remmina-common" {= "1.3.3+dfsg-2"}
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus")
 ]
 extra-source "remmina_1.3.3+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/remmina/remmina_1.3.3+dfsg-2_amd64.deb"

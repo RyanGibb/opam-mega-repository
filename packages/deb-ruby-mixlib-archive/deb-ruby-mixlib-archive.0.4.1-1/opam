@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-mixlib-log"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-mixlib-archive_0.4.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-mixlib-archive/ruby-mixlib-archive_0.4.1-1_all.deb"

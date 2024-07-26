@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r libqxmpp-doc"]
 ]
 depends: [
-  ("deb-lynx" | "deb- www-browser")
+  ("deb-lynx" | "deb-www-browser")
 ]
 extra-source "libqxmpp-doc_1.0.0-4+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qxmpp/libqxmpp-doc_1.0.0-4+deb10u1_all.deb"

@@ -67,7 +67,7 @@ depends: [
   "deb-libxfixes3"
   "deb-mutter" {>= "3.30.0"}
   "deb-python3"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 conflicts: [
   "deb-gnome-screensaver" {< "3.6"}

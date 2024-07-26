@@ -13,7 +13,7 @@ depends: [
   "deb-libnl-3-200" {>= "3.2.7"}
   "deb-libnl-genl-3-200" {>= "3.2.7"}
   "deb-ucf"
-  ("deb-debconf" {>= "1.2.9"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "1.2.9"} | "deb-debconf-2-0")
 ]
 extra-source "nbd-server_1:3.19-3+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/nbd/nbd-server_3.19-3+deb10u1_amd64.deb"

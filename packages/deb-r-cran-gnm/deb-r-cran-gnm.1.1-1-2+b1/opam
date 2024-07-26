@@ -14,7 +14,7 @@ depends: [
   "deb-r-cran-nnet"
   "deb-r-cran-qvcalc" {>= "0.8-3"}
   "deb-r-cran-relimp"
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "r-cran-gnm_1.1-1-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-gnm/r-cran-gnm_1.1-1-2+b1_amd64.deb"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r endeavour-common"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "endeavour-common_43.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/endeavour/endeavour-common_43.0-1_all.deb"

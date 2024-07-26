@@ -16,7 +16,7 @@ depends: [
   "deb-r-cran-rcpp" {>= "0.11.4"}
   "deb-r-cran-rcpparmadillo"
   "deb-r-cran-survival"
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "r-cran-etm_1.1.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-etm/r-cran-etm_1.1.1-1_amd64.deb"

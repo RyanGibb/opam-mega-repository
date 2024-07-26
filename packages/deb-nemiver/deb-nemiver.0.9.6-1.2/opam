@@ -35,7 +35,7 @@ depends: [
   "deb-libvte-2-91-0"
   "deb-libxml2" {>= "2.7.4"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "nemiver_0.9.6-1.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/nemiver/nemiver_0.9.6-1.2_amd64.deb"

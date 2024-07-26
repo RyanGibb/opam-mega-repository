@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-rack"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-sham-rack_1.4.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-sham-rack/ruby-sham-rack_1.4.1-2_all.deb"

@@ -18,7 +18,7 @@ depends: [
   "deb-libslf4j-java"
   "deb-libxz-java"
   "deb-libyaml-snake-java"
-  ("deb-default-jre-headless" | "deb- java8-runtime-headless")
+  ("deb-default-jre-headless" | "deb-java8-runtime-headless")
 ]
 extra-source "bnd_5.0.1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/bnd/bnd_5.0.1-3_all.deb"

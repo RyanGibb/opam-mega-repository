@@ -20,8 +20,8 @@ depends: [
   "deb-libqt5xdgiconloader3" {>= "3.2.0~"}
   "deb-libstdc++6" {>= "5"}
   "deb-libx11-6"
-  ("deb-dde-qt5xcb-plugin" | "deb- qt5dxcb-plugin")
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-dde-qt5xcb-plugin" | "deb-qt5dxcb-plugin")
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 conflicts: [
   "deb-libqt5deepintheme-plugin"

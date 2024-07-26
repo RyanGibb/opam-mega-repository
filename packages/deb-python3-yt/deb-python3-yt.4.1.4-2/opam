@@ -29,7 +29,7 @@ depends: [
   "deb-python3-tomli-w"
   "deb-python3-tqdm"
   "deb-python3-unyt"
-  ("deb-python3-tomli" | "deb- python3" {> "3.11"})
+  ("deb-python3-tomli" | "deb-python3" {> "3.11"})
 ]
 extra-source "python3-yt_4.1.4-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/y/yt/python3-yt_4.1.4-2_amd64.deb"

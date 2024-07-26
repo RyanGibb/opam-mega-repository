@@ -15,7 +15,7 @@ depends: [
   "deb-python3-mistune"
   "deb-python3-praw"
   "deb-python3-requests"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "giara_1.0.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/giara/giara_1.0.1-2_amd64.deb"

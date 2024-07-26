@@ -19,7 +19,7 @@ depends: [
   "deb-libwrap0" {>= "7.6-4~"}
   "deb-lsb-base" {>= "3.2-13"}
   "deb-psmisc"
-  ("deb-perl" {> "5.8.0"} | "deb- libmime-base64-perl")
+  ("deb-perl" {> "5.8.0"} | "deb-libmime-base64-perl")
 ]
 conflicts: [
   "deb-ldap-server"

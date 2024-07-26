@@ -15,8 +15,8 @@ depends: [
   "deb-libslicot0" {>= "5.0+20101122"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-octave" {>= "4.4.1"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "octave-control_3.1.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/octave-control/octave-control_3.1.0-3_amd64.deb"

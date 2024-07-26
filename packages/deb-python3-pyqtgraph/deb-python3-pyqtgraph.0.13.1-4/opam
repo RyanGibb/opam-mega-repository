@@ -13,7 +13,7 @@ depends: [
   "deb-python3-scipy"
   "deb-qt6-base-dev-tools"
   "deb-qtbase5-dev-tools"
-  ("deb-python3-pyqt5" | "deb- libpyside2-py3" | "deb- python3-pyqt6")
+  ("deb-python3-pyqt5" | "deb-libpyside2-py3" | "deb-python3-pyqt6")
 ]
 extra-source "python3-pyqtgraph_0.13.1-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-pyqtgraph/python3-pyqtgraph_0.13.1-4_all.deb"

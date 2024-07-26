@@ -14,7 +14,7 @@ depends: [
   "deb-mono-runtime" {< "5.18.0.241"}
   "deb-mono-runtime" {>= "5.18.0.240"}
   "deb-mono-runtime-common" {>= "5.18.0.240+dfsg"}
-  ("deb-libc6" {>= "2.28"} | "deb- libc6-1" {>= "2.28"} | "deb- libc0-1" {>= "2.28"})
+  ("deb-libc6" {>= "2.28"} | "deb-libc6-1" {>= "2.28"} | "deb-libc0-1" {>= "2.28"})
 ]
 extra-source "libmono-system4.0-cil_5.18.0.240+dfsg-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mono/libmono-system4.0-cil_5.18.0.240+dfsg-3_all.deb"

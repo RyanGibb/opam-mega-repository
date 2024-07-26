@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-dirty-memoize"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-dirty-memoize_0.0.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-dirty-memoize/ruby-dirty-memoize_0.0.4-1_all.deb"

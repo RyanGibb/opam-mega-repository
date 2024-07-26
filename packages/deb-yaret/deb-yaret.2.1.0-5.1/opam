@@ -9,8 +9,8 @@ depends: [
   "deb-libappconfig-perl"
   "deb-libaudio-cd-perl"
   "deb-perl-any"
-  ("deb-cdparanoia" | "deb- cdda2wav")
-  ("deb-vorbis-tools" | "deb- flac")
+  ("deb-cdparanoia" | "deb-cdda2wav")
+  ("deb-vorbis-tools" | "deb-flac")
 ]
 extra-source "yaret_2.1.0-5.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/y/yaret/yaret_2.1.0-5.1_all.deb"

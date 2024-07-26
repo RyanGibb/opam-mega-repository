@@ -21,7 +21,7 @@ depends: [
   "deb-sensible-utils"
   "deb-swish++"
   "deb-ucf" {>= "0.8"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "dhelp_0.6.27_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dhelp/dhelp_0.6.27_all.deb"

@@ -17,8 +17,8 @@ depends: [
   "deb-r-cran-matrix"
   "deb-r-cran-pkgconfig" {>= "2.0.0"}
   "deb-r-cran-rlang"
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "r-cran-igraph_1.3.5-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-igraph/r-cran-igraph_1.3.5-3_amd64.deb"

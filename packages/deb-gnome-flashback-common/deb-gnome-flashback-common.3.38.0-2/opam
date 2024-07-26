@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r gnome-flashback-common"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-flashback-common_3.38.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-flashback/gnome-flashback-common_3.38.0-2_all.deb"

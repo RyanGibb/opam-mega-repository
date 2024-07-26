@@ -14,7 +14,7 @@ depends: [
   "deb-libgoogle-glog0v6" {>= "0.6.0"}
   "deb-libspqr2" {>= "1-5.12.0+dfsg"}
   "deb-libstdc++6" {>= "12"}
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libceres3_2.1.0+really2.1.0+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/ceres-solver/libceres3_2.1.0+really2.1.0+dfsg-1_amd64.deb"

@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.36"}
   "deb-libpcap0-8" {>= "0.9.8"}
   "deb-net-tools"
-  ("deb-ifupdown" | "deb- ifupdown2")
+  ("deb-ifupdown" | "deb-ifupdown2")
 ]
 extra-source "ucarp_1.5.2+git20192404.1a9aaf7-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/ucarp/ucarp_1.5.2+git20192404.1a9aaf7-1_amd64.deb"

@@ -17,7 +17,7 @@ depends: [
   "deb-libxmu6"
   "deb-libxt6"
   "deb-python-any"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "viewmol_2.4.1-25_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/viewmol/viewmol_2.4.1-25_amd64.deb"

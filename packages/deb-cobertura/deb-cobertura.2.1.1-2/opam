@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libcobertura-java" {= "2.1.1-2"}
-  ("deb-default-jre-headless" {>= "1-1.6"} | "deb- java6-runtime-headless")
+  ("deb-default-jre-headless" {>= "1-1.6"} | "deb-java6-runtime-headless")
 ]
 extra-source "cobertura_2.1.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cobertura/cobertura_2.1.1-2_all.deb"

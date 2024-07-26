@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libhdf5-dev" {>= "1.8.6-1~"}
   "deb-libnetcdf18" {= "1-4.7.4-1"}
-  ("deb-libcurl4-gnutls-dev" | "deb- libcurl-ssl-dev")
+  ("deb-libcurl4-gnutls-dev" | "deb-libcurl-ssl-dev")
 ]
 extra-source "libnetcdf-dev_1:4.7.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/netcdf/libnetcdf-dev_4.7.4-1_amd64.deb"

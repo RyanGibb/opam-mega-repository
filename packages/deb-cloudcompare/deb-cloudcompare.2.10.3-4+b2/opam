@@ -23,8 +23,8 @@ depends: [
   "deb-libqt5widgets5" {>= "5.14.1"}
   "deb-libstdc++6" {>= "9"}
   "deb-libswscale5" {>= "7-4.0"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libglu1-mesa" | "deb-libglu1")
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "cloudcompare_2.10.3-4+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cloudcompare/cloudcompare_2.10.3-4+b2_amd64.deb"

@@ -20,7 +20,7 @@ depends: [
   "deb-libsm6"
   "deb-libxml2" {>= "2.7.4"}
   "deb-shared-mime-info"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "atril_1.24.0-1+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/atril/atril_1.24.0-1+deb11u1_amd64.deb"

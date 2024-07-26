@@ -14,7 +14,7 @@ depends: [
   "deb-libssh2-1" {>= "1.2.5"}
   "deb-libssl1-1" {>= "1.1.0"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-gcc" | "deb- clang" | "deb- c-compiler")
+  ("deb-gcc" | "deb-clang" | "deb-c-compiler")
   ("deb-rustc-mozilla" | "deb-rustc-web")
 ]
 extra-source "cargo_0.47.0-3+b1_amd64.deb" {

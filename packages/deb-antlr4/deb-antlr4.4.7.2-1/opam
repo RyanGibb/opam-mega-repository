@@ -11,7 +11,7 @@ depends: [
   "deb-libjsonp-java"
   "deb-libstringtemplate4-java"
   "deb-libtreelayout-java"
-  ("deb-default-jre-headless" | "deb- java6-runtime-headless")
+  ("deb-default-jre-headless" | "deb-java6-runtime-headless")
 ]
 extra-source "antlr4_4.7.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/antlr4/antlr4_4.7.2-1_all.deb"

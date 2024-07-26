@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.34"}
   "deb-libgfortran5" {>= "8"}
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "libblas-test_3.11.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lapack/libblas-test_3.11.0-2_amd64.deb"

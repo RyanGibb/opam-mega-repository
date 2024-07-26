@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-unicode-display-width" {>= "1.1.1"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-terminal-table_1.8.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-terminal-table/ruby-terminal-table_1.8.0-1_all.deb"

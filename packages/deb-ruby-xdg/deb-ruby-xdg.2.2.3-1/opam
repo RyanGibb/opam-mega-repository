@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-xdg"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-xdg_2.2.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-xdg/ruby-xdg_2.2.3-1_all.deb"

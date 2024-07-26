@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r rexical"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "rexical_1.0.7-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rexical/rexical_1.0.7-1_all.deb"

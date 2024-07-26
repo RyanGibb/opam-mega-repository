@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.29"}
   "deb-libgcc-s1" {>= "3.0"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "liblinear4_2.3.0+dfsg-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libl/liblinear/liblinear4_2.3.0+dfsg-5_amd64.deb"

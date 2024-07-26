@@ -9,7 +9,7 @@ depends: [
   "deb-libcos4-dev"
   "deb-liblog4tango-dev" {= "9.3.4+dfsg1-1"}
   "deb-libtango9" {= "9.3.4+dfsg1-1"}
-  ("deb-libzmq5-dev" | "deb- libzmq3-dev")
+  ("deb-libzmq5-dev" | "deb-libzmq3-dev")
 ]
 conflicts: [
   "deb-libtango7-dev"

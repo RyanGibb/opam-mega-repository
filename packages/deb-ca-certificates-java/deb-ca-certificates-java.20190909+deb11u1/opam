@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ca-certificates" {>= "20121114"}
   "deb-libnss3" {>= "3.12.10-2~"}
-  ("deb-default-jre-headless" | "deb- java8-runtime-headless")
+  ("deb-default-jre-headless" | "deb-java8-runtime-headless")
 ]
 extra-source "ca-certificates-java_20190909+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/ca-certificates-java/ca-certificates-java_20190909+deb11u1_all.deb"

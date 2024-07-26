@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-in-parallel"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-in-parallel_0.1.17-1.3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-in-parallel/ruby-in-parallel_0.1.17-1.3_all.deb"

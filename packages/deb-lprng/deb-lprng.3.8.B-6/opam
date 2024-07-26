@@ -11,7 +11,7 @@ depends: [
   "deb-libk5crypto3" {>= "1.6.dfsg.2"}
   "deb-libkrb5-3" {>= "1.16"}
   "deb-sysvinit-utils"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 conflicts: [
   "deb-apsfilter" {< "4.9.1-10"}

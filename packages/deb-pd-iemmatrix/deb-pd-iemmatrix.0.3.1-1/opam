@@ -11,7 +11,7 @@ depends: [
   "deb-libgsl23" {>= "2.5"}
   "deb-libgslcblas0" {>= "2.4"}
   "deb-libsndfile1" {>= "1.0.20"}
-  ("deb-puredata" | "deb- pd")
+  ("deb-puredata" | "deb-pd")
 ]
 extra-source "pd-iemmatrix_0.3.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pd-iemmatrix/pd-iemmatrix_0.3.1-1_amd64.deb"

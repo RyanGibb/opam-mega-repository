@@ -11,7 +11,7 @@ depends: [
   "deb-libgcc-s1" {>= "3.0"}
   "deb-libpulse0" {>= "0.99.1"}
   "deb-libstdc++6" {>= "11"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "librtaudio6_5.2.0~ds1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rtaudio/librtaudio6_5.2.0~ds1-2_amd64.deb"

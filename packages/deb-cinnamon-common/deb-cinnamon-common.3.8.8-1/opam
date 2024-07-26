@@ -12,7 +12,7 @@ depends: [
   "deb-gvfs-bin"
   "deb-python3-any"
   "deb-xdg-utils"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "cinnamon-common_3.8.8-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cinnamon/cinnamon-common_3.8.8-1_all.deb"

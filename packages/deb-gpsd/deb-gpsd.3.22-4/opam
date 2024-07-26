@@ -15,7 +15,7 @@ depends: [
   "deb-lsb-base" {>= "3.2-13"}
   "deb-python3"
   "deb-python3-any"
-  ("deb-netbase" | "deb- systemd-sysv")
+  ("deb-netbase" | "deb-systemd-sysv")
 ]
 conflicts: [
   "deb-fso-gpsd"

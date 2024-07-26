@@ -21,7 +21,7 @@ depends: [
   "deb-libssh-4" {>= "0.8.1"}
   "deb-libvte-2-91-0" {>= "0.51.90"}
   "deb-remmina-common" {= "1.4.29+dfsg-1"}
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus")
 ]
 extra-source "remmina_1.4.29+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/remmina/remmina_1.4.29+dfsg-1_amd64.deb"

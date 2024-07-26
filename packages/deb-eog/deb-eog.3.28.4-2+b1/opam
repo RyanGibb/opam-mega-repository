@@ -25,7 +25,7 @@ depends: [
   "deb-libx11-6"
   "deb-shared-mime-info" {>= "0.20"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "eog_3.28.4-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/eog/eog_3.28.4-2+b1_amd64.deb"

@@ -12,7 +12,7 @@ depends: [
   "deb-python-launchpadlib"
   "deb-python-xdg"
   "deb-sensible-utils"
-  ("deb-python" | "deb- ipython")
+  ("deb-python" | "deb-ipython")
 ]
 extra-source "lptools_0.2.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lptools/lptools_0.2.0-3_all.deb"

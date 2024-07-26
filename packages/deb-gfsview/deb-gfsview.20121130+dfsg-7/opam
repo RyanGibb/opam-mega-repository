@@ -22,7 +22,7 @@ depends: [
   "deb-libstartup-notification0" {>= "0.2"}
   "deb-libx11-6"
   "deb-zenity"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "gfsview_20121130+dfsg-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gfsview/gfsview_20121130+dfsg-7_amd64.deb"

@@ -10,7 +10,7 @@ depends: [
   "deb-curl"
   "deb-debconf"
   "deb-perl-any"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "put-dns_0.0.2-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/put-dns/put-dns_0.0.2-7_all.deb"

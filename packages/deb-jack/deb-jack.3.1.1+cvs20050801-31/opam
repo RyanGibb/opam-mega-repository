@@ -11,9 +11,9 @@ depends: [
   "deb-python-cddb"
   "deb-python-eyed3" {>= "0.7"}
   "deb-sensible-utils"
-  ("deb-cdparanoia" | "deb- cdda2wav")
-  ("deb-python-pyvorbis" {>= "0.5"} | "deb- python-mutagen")
-  ("deb-vorbis-tools" | "deb- flac" | "deb- lame")
+  ("deb-cdparanoia" | "deb-cdda2wav")
+  ("deb-python-pyvorbis" {>= "0.5"} | "deb-python-mutagen")
+  ("deb-vorbis-tools" | "deb-flac" | "deb-lame")
 ]
 extra-source "jack_3.1.1+cvs20050801-31_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jack/jack_3.1.1+cvs20050801-31_amd64.deb"

@@ -17,7 +17,7 @@ depends: [
   "deb-libxaw7" {>= "2-1.0.14"}
   "deb-libxft2" {> "2.1.1"}
   "deb-libxt6"
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 extra-source "ngspice_39.3+ds-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/ngspice/ngspice_39.3+ds-1_amd64.deb"

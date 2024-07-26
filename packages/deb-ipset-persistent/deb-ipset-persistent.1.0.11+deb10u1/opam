@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ipset"
   "deb-netfilter-persistent" {= "1.0.11+deb10u1"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "ipset-persistent_1.0.11+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/iptables-persistent/ipset-persistent_1.0.11+deb10u1_all.deb"

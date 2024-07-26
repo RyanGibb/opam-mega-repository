@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-perl"
-  ("deb-wbritish" | "deb- wamerican" | "deb- wordlist")
+  ("deb-wbritish" | "deb-wamerican" | "deb-wordlist")
 ]
 extra-source "sugarplum_0.9.10-18_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sugarplum/sugarplum_0.9.10-18_all.deb"

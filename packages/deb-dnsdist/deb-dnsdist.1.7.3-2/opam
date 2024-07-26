@@ -22,7 +22,7 @@ depends: [
   "deb-libssl3" {>= "3.0.0"}
   "deb-libstdc++6" {>= "12.2.0-10"}
   "deb-libsystemd0"
-  ("deb-libluajit-5-1-2" {>= "2.0.4+dfsg"} | "deb- libluajit2-5-1-2" {>= "2.1~"})
+  ("deb-libluajit-5-1-2" {>= "2.0.4+dfsg"} | "deb-libluajit2-5-1-2" {>= "2.1~"})
 ]
 extra-source "dnsdist_1.7.3-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dnsdist/dnsdist_1.7.3-2_amd64.deb"

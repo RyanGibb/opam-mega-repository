@@ -16,7 +16,7 @@ depends: [
   "deb-libglib2-0-0" {>= "2.37.3"}
   "deb-libgtk-3-0" {>= "3.20.0"}
   "deb-librsvg2-2" {>= "2.32.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "aisleriot_1:3.22.7-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/aisleriot/aisleriot_3.22.7-2_amd64.deb"

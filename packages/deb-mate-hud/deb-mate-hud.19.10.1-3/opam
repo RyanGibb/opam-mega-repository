@@ -16,7 +16,7 @@ depends: [
   "deb-python3-setproctitle"
   "deb-python3-xlib"
   "deb-rofi"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "mate-hud_19.10.1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mate-hud/mate-hud_19.10.1-3_all.deb"

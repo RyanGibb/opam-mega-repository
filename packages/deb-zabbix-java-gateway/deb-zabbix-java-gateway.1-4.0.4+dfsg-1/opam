@@ -12,7 +12,7 @@ depends: [
   "deb-liblogback-java"
   "deb-libslf4j-java"
   "deb-lsb-base"
-  ("deb-default-jre" | "deb- java7-runtime" | "deb- java8-runtime" | "deb- java9-runtime" | "deb- java10-runtime" | "deb- java11-runtime")
+  ("deb-default-jre" | "deb-java7-runtime" | "deb-java8-runtime" | "deb-java9-runtime" | "deb-java10-runtime" | "deb-java11-runtime")
 ]
 extra-source "zabbix-java-gateway_1:4.0.4+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/z/zabbix/zabbix-java-gateway_4.0.4+dfsg-1_all.deb"

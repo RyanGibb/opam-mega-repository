@@ -9,7 +9,7 @@ depends: [
   "deb-cryptsetup-bin" {>= "2-1.6.0"}
   "deb-dmsetup"
   "deb-libc6" {>= "2.15"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "cryptsetup-run_2:2.1.0-5+deb10u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cryptsetup/cryptsetup-run_2.1.0-5+deb10u2_amd64.deb"

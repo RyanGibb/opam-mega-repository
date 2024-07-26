@@ -25,7 +25,7 @@ depends: [
   "deb-libx11-6"
   "deb-libxmu6"
   "deb-libxt6"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "libgtkglext1_1.2.0-9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gtkglext/libgtkglext1_1.2.0-9_amd64.deb"

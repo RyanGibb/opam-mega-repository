@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r clfswm"]
 ]
 depends: [
-  ("deb-clisp-module-clx" | "deb- cl-clx-sbcl" | "deb- cmucl-source")
+  ("deb-clisp-module-clx" | "deb-cl-clx-sbcl" | "deb-cmucl-source")
 ]
 extra-source "clfswm_20111015.git51b0a02-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/clfswm/clfswm_20111015.git51b0a02-3_all.deb"

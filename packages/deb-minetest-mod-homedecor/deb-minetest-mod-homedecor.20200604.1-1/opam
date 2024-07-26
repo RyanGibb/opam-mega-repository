@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-minetest-mod-basic-materials"
   "deb-minetest-mod-unifieddyes"
-  ("deb-minetest" | "deb- minetest-server")
+  ("deb-minetest" | "deb-minetest-server")
 ]
 extra-source "minetest-mod-homedecor_20200604.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/minetest-mod-homedecor/minetest-mod-homedecor_20200604.1-1_all.deb"

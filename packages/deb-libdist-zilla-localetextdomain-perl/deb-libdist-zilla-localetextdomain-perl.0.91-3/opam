@@ -15,7 +15,7 @@ depends: [
   "deb-libnamespace-autoclean-perl"
   "deb-libpath-tiny-perl"
   "deb-perl"
-  ("deb-liblocale-codes-perl" | "deb- perl" {< "5.28"})
+  ("deb-liblocale-codes-perl" | "deb-perl" {< "5.28"})
 ]
 extra-source "libdist-zilla-localetextdomain-perl_0.91-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libd/libdist-zilla-localetextdomain-perl/libdist-zilla-localetextdomain-perl_0.91-3_all.deb"

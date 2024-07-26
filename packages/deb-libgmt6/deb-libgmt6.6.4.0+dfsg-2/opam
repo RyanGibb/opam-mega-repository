@@ -14,8 +14,8 @@ depends: [
   "deb-libnetcdf19" {>= "4.0.1"}
   "deb-libpcre2-8-0" {>= "10.22"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libgmt6_6.4.0+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gmt/libgmt6_6.4.0+dfsg-2_amd64.deb"

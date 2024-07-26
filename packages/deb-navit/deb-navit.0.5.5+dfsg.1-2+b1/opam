@@ -18,7 +18,7 @@ depends: [
   "deb-libspeechd2" {>= "0.7.1"}
   "deb-navit-data" {= "0.5.5+dfsg.1-2"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-navit-gui-internal" {= "0.5.5+dfsg.1-2+b1"} | "deb- navit-gui-gtk" {= "0.5.5+dfsg.1-2+b1"})
+  ("deb-navit-gui-internal" {= "0.5.5+dfsg.1-2+b1"} | "deb-navit-gui-gtk" {= "0.5.5+dfsg.1-2+b1"})
 ]
 extra-source "navit_0.5.5+dfsg.1-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/navit/navit_0.5.5+dfsg.1-2+b1_amd64.deb"

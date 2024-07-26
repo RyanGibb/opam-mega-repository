@@ -11,7 +11,7 @@ depends: [
   "deb-python-dnspython"
   "deb-python-ipcalc"
   "deb-python-ldns"
-  ("deb-python" {>= "2.7"} | "deb- python-argparse")
+  ("deb-python" {>= "2.7"} | "deb-python-argparse")
 ]
 extra-source "sshfp_1.2.2-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sshfp/sshfp_1.2.2-6_all.deb"

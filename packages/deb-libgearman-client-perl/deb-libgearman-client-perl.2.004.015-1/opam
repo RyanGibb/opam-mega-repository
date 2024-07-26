@@ -10,7 +10,7 @@ depends: [
   "deb-liblist-moreutils-perl"
   "deb-libstring-crc32-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.19.8"} | "deb- libio-socket-ip-perl")
+  ("deb-perl" {>= "5.19.8"} | "deb-libio-socket-ip-perl")
 ]
 extra-source "libgearman-client-perl_2.004.015-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libg/libgearman-client-perl/libgearman-client-perl_2.004.015-1_all.deb"

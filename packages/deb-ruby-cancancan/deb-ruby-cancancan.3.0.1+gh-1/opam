@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-cancancan"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-cancancan_3.0.1+gh-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-cancancan/ruby-cancancan_3.0.1+gh-1_all.deb"

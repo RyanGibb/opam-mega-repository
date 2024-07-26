@@ -9,8 +9,8 @@ depends: [
   "deb-ifmail"
   "deb-libc6" {>= "2.14"}
   "deb-libgdbm-compat4" {>= "1.16"}
-  ("deb-default-mta" | "deb- mail-transport-agent")
-  ("deb-inn" | "deb- inn2" | "deb- news-transport-system")
+  ("deb-default-mta" | "deb-mail-transport-agent")
+  ("deb-inn" | "deb-inn2" | "deb-news-transport-system")
 ]
 extra-source "ifgate_2.14tx8.10-26_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/ifmail/ifgate_2.14tx8.10-26_amd64.deb"

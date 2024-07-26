@@ -9,7 +9,7 @@ depends: [
   "deb-libgmp-dev"
   "deb-libhogweed6" {= "3.7.3-1"}
   "deb-libnettle8" {= "3.7.3-1"}
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 conflicts: [
   "deb-libnettle-dev"

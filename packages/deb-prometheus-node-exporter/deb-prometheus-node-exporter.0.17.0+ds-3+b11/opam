@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.3.2"}
   "deb-moreutils"
-  ("deb-daemon" | "deb- systemd-sysv")
+  ("deb-daemon" | "deb-systemd-sysv")
 ]
 extra-source "prometheus-node-exporter_0.17.0+ds-3+b11_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/prometheus-node-exporter/prometheus-node-exporter_0.17.0+ds-3+b11_amd64.deb"

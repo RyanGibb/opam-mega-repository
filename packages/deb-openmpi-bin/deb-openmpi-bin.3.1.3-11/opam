@@ -13,7 +13,7 @@ depends: [
   "deb-libopenmpi3"
   "deb-openmpi-common" {>= "3.1.3-11"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-openssh-client" | "deb- ssh-client")
+  ("deb-openssh-client" | "deb-ssh-client")
 ]
 conflicts: [
   "deb-openmpi-bin"

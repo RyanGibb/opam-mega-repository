@@ -15,7 +15,7 @@ depends: [
   "deb-libmpfr6" {>= "3.1.3"}
   "deb-libzstd1" {>= "1.3.2"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-binutils-hppa64-linux-gnu" | "deb- binutils-hppa64")
+  ("deb-binutils-hppa64-linux-gnu" | "deb-binutils-hppa64")
 ]
 extra-source "gcc-10-hppa64-linux-gnu_10.2.1-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gcc-10/gcc-10-hppa64-linux-gnu_10.2.1-6_amd64.deb"

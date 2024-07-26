@@ -15,7 +15,7 @@ depends: [
   "deb-libqt5network5" {>= "5.0.2"}
   "deb-libqt5widgets5" {>= "5.9.0~beta"}
   "deb-libstdc++6" {>= "4.1.1"}
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "deepin-shortcut-viewer_5.0.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/deepin-shortcut-viewer/deepin-shortcut-viewer_5.0.1-1_amd64.deb"

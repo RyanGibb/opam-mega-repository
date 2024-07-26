@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.4"}
   "deb-libgroonga0" {= "13.0.0+dfsg-3~deb12u1"}
   "deb-libmecab2" {>= "0.996"}
-  ("deb-mecab-naist-jdic" | "deb- mecab-jumandic-utf8")
+  ("deb-mecab-naist-jdic" | "deb-mecab-jumandic-utf8")
 ]
 extra-source "groonga-tokenizer-mecab_13.0.0+dfsg-3~deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/groonga/groonga-tokenizer-mecab_13.0.0+dfsg-3~deb12u1_amd64.deb"

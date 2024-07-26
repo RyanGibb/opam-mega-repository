@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-ansi"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-ae_1.8.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-ae/ruby-ae_1.8.2-1_all.deb"

@@ -9,7 +9,7 @@ depends: [
   "deb-ruby-htmlentities" {>= "4.3.3~"}
   "deb-ruby-launchy"
   "deb-ruby-mail" {>= "2.2"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-email-spec_2.2.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-email-spec/ruby-email-spec_2.2.0-1_all.deb"

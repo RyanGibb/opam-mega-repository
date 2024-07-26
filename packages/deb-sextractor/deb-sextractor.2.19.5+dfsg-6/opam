@@ -9,7 +9,7 @@ depends: [
   "deb-libatlas3-base"
   "deb-libc6" {>= "2.27"}
   "deb-libfftw3-single3" {>= "3.3.5"}
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "sextractor_2.19.5+dfsg-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sextractor/sextractor_2.19.5+dfsg-6_amd64.deb"

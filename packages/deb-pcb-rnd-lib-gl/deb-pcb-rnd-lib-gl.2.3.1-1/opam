@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.4"}
   "deb-libgl1"
   "deb-pcb-rnd-core" {= "2.3.1-1"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "pcb-rnd-lib-gl_2.3.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pcb-rnd/pcb-rnd-lib-gl_2.3.1-1_amd64.deb"

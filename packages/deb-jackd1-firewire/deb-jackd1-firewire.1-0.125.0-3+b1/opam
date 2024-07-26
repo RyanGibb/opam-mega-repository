@@ -12,7 +12,7 @@ depends: [
   "deb-libdb5-3"
   "deb-libffado2"
   "deb-libjack0" {>= "1-0.125.0"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 conflicts: [
   "deb-jackd-firewire"

@@ -13,7 +13,7 @@ depends: [
   "deb-ruby-rouge"
   "deb-ruby-sanitize" {>= "6.0~"}
   "deb-ruby-stringex"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-gollum-lib_4.2.7.10~gitlab.2+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-gollum-lib/ruby-gollum-lib_4.2.7.10~gitlab.2+dfsg-1_all.deb"

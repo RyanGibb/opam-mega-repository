@@ -23,7 +23,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.12"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-libusb-1-0-0" {>= "2-1.0.9"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "calibre-bin_5.12.0+dfsg-1+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/calibre/calibre-bin_5.12.0+dfsg-1+deb11u1_amd64.deb"

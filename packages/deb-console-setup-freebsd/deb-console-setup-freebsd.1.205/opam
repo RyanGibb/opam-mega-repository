@@ -9,7 +9,7 @@ depends: [
   "deb-kbdcontrol"
   "deb-keyboard-configuration" {= "1.205"}
   "deb-vidcontrol"
-  ("deb-init-system-helpers" {>= "1.29~"} | "deb- initscripts")
+  ("deb-init-system-helpers" {>= "1.29~"} | "deb-initscripts")
 ]
 conflicts: [
   "deb-console-setup-linux"

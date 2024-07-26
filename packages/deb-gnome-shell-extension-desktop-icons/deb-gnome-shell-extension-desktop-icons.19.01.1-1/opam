@@ -10,7 +10,7 @@ depends: [
   "deb-gnome-shell" {>= "3.30"}
   "deb-nautilus" {>= "3.30.4"}
   "deb-xdg-desktop-portal"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-shell-extension-desktop-icons_19.01.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-shell-extension-desktop-icons/gnome-shell-extension-desktop-icons_19.01.1-1_all.deb"

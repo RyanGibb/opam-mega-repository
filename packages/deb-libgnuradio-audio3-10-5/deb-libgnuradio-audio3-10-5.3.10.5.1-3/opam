@@ -16,7 +16,7 @@ depends: [
   "deb-libportaudio2" {>= "19+svn20101113"}
   "deb-libspdlog1-10"
   "deb-libstdc++6" {>= "11"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "libgnuradio-audio3.10.5_3.10.5.1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnuradio/libgnuradio-audio3.10.5_3.10.5.1-3_amd64.deb"

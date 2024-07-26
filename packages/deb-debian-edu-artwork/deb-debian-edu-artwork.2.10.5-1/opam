@@ -9,8 +9,8 @@ depends: [
   "deb-desktop-base" {>= "9.0.7"}
   "deb-libconfig-inifiles-perl"
   "deb-libglib2-0-bin"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-debian-edu-artwork-buster" | "deb- debian-edu-artwork-softwaves" | "deb- debian-edu-artwork-lines")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-debian-edu-artwork-buster" | "deb-debian-edu-artwork-softwaves" | "deb-debian-edu-artwork-lines")
 ]
 extra-source "debian-edu-artwork_2.10.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/debian-edu-artwork/debian-edu-artwork_2.10.5-1_all.deb"

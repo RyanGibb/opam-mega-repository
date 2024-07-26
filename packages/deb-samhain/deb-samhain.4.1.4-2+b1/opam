@@ -14,7 +14,7 @@ depends: [
   "deb-libpcre3"
   "deb-libprelude23"
   "deb-zlib1g" {>= "1-1.2.0"}
-  ("deb-debconf" {>= "1.2.9"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "1.2.9"} | "deb-debconf-2-0")
 ]
 extra-source "samhain_4.1.4-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/samhain/samhain_4.1.4-2+b1_amd64.deb"

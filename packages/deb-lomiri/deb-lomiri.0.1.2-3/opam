@@ -57,8 +57,8 @@ depends: [
   "deb-qml-module-qtquick-xmllistmodel"
   "deb-qml-module-qtsysteminfo"
   "deb-qtmir"
-  ("deb-libqt5gui5" {>= "5.6"} | "deb- libqt5gui5-gles" {>= "5.6"})
-  ("deb-libqt5quick5" {>= "5.6"} | "deb- libqt5quick5-gles" {>= "5.6"})
+  ("deb-libqt5gui5" {>= "5.6"} | "deb-libqt5gui5-gles" {>= "5.6"})
+  ("deb-libqt5quick5" {>= "5.6"} | "deb-libqt5quick5-gles" {>= "5.6"})
 ]
 conflicts: [
   "deb-lomiri-system-settings-wizard"

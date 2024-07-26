@@ -12,8 +12,8 @@ depends: [
   "deb-golang-go"
   "deb-golang-golang-x-crypto-dev"
   "deb-golang-gopkg-fatih-pool-v2-dev"
-  ("deb-golang-check-v1-dev" | "deb- golang-gopkg-check-v1-dev")
-  ("deb-golang-goprotobuf-dev" | "deb- golang-github-golang-protobuf-dev")
+  ("deb-golang-check-v1-dev" | "deb-golang-gopkg-check-v1-dev")
+  ("deb-golang-goprotobuf-dev" | "deb-golang-github-golang-protobuf-dev")
 ]
 extra-source "golang-gopkg-dancannon-gorethink.v2-dev_2.0.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/golang-gopkg-dancannon-gorethink.v2/golang-gopkg-dancannon-gorethink.v2-dev_2.0.4-1_all.deb"

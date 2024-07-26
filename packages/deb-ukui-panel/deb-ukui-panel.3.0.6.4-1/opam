@@ -28,8 +28,8 @@ depends: [
   "deb-libxcb-shape0"
   "deb-libxcb-util1" {>= "0.4.0"}
   "deb-libxcb1" {>= "1.6"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "ukui-panel_3.0.6.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/ukui-panel/ukui-panel_3.0.6.4-1_amd64.deb"

@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.14"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libdsdp-5.8gf_5.8-9.4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dsdp/libdsdp-5.8gf_5.8-9.4_amd64.deb"

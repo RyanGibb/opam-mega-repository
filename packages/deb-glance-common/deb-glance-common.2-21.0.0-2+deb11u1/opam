@@ -11,7 +11,7 @@ depends: [
   "deb-debconf"
   "deb-python3-any"
   "deb-python3-glance" {= "2-21.0.0-2+deb11u1"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "glance-common_2:21.0.0-2+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/glance/glance-common_21.0.0-2+deb11u1_all.deb"

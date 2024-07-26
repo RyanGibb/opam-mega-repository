@@ -11,7 +11,7 @@ depends: [
   "deb-libc6" {>= "2.34"}
   "deb-libglib2-0-0" {>= "2.71.3"}
   "deb-libselinux1" {>= "3.1~"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-user-share_43.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-user-share/gnome-user-share_43.0-1_amd64.deb"

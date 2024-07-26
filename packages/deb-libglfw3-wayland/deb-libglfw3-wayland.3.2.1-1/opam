@@ -10,7 +10,7 @@ depends: [
   "deb-libwayland-client0" {>= "1.9.91"}
   "deb-libwayland-cursor0" {>= "1.0.2"}
   "deb-libxkbcommon0" {>= "0.5.0"}
-  ("deb-libwayland-egl1-mesa" {>= "10.0.2"} | "deb- libwayland-egl1")
+  ("deb-libwayland-egl1-mesa" {>= "10.0.2"} | "deb-libwayland-egl1")
 ]
 conflicts: [
   "deb-libglfw3"

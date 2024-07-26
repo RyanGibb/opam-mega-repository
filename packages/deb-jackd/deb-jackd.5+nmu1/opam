@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r jackd"]
 ]
 depends: [
-  ("deb-jackd2" | "deb- jackd1")
+  ("deb-jackd2" | "deb-jackd1")
 ]
 extra-source "jackd_5+nmu1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jackd-defaults/jackd_5+nmu1_all.deb"

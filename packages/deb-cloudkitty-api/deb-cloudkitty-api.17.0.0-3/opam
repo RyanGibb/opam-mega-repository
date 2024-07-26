@@ -14,7 +14,7 @@ depends: [
   "deb-python3-q-text-as-data"
   "deb-sysvinit-utils"
   "deb-uwsgi-plugin-python3"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "cloudkitty-api_17.0.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cloudkitty/cloudkitty-api_17.0.0-3_all.deb"

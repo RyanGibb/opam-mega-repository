@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-ast" {>= "2.2"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-whitequark-parser_2.4.0.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-whitequark-parser/ruby-whitequark-parser_2.4.0.2-1_all.deb"

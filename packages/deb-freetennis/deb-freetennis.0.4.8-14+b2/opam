@@ -14,7 +14,7 @@ depends: [
   "deb-libgtk2-0-0" {>= "2.24.0"}
   "deb-libsdl-mixer1-2" {>= "1.2.12"}
   "deb-libsdl1-2-compat-shim"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "freetennis_0.4.8-14+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/freetennis/freetennis_0.4.8-14+b2_amd64.deb"

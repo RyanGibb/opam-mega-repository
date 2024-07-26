@@ -21,7 +21,7 @@ depends: [
   "deb-qml-module-qtquick-layouts"
   "deb-qml-module-qtquick-window2"
   "deb-qml-module-qtquick2"
-  ("deb-libqt5gui5" {>= "5.14.0~"} | "deb- libqt5gui5-gles" {>= "5.14.0~"})
+  ("deb-libqt5gui5" {>= "5.14.0~"} | "deb-libqt5gui5-gles" {>= "5.14.0~"})
 ]
 extra-source "kontrast_20.12.1-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kontrast/kontrast_20.12.1-1+b1_amd64.deb"

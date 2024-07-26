@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r grml-rescueboot"]
 ]
 depends: [
-  ("deb-grub-pc" | "deb- grub-efi-amd64")
+  ("deb-grub-pc" | "deb-grub-efi-amd64")
 ]
 extra-source "grml-rescueboot_0.5.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/grml-rescueboot/grml-rescueboot_0.5.2_all.deb"

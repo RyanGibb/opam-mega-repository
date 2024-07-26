@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libjs-jquery-scrollto"
   "deb-ruby-railties"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-jquery-scrollto-rails_1.4.3+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-jquery-scrollto-rails/ruby-jquery-scrollto-rails_1.4.3+dfsg-1_all.deb"

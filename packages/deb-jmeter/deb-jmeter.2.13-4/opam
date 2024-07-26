@@ -46,7 +46,7 @@ depends: [
   "deb-libxmlgraphics-commons-java"
   "deb-libxstream-java"
   "deb-velocity"
-  ("deb-default-jre" | "deb- java2-runtime")
+  ("deb-default-jre" | "deb-java2-runtime")
 ]
 extra-source "jmeter_2.13-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/jakarta-jmeter/jmeter_2.13-4_all.deb"

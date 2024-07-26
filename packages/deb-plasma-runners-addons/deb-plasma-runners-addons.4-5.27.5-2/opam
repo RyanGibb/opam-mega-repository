@@ -22,7 +22,7 @@ depends: [
   "deb-libqt5network5" {>= "5.15.1"}
   "deb-libqt5widgets5" {>= "5.15.0~"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb- libqt5gui5-gles" {>= "5.15.0~"})
+  ("deb-libqt5gui5" {>= "5.15.0~"} | "deb-libqt5gui5-gles" {>= "5.15.0~"})
 ]
 extra-source "plasma-runners-addons_4:5.27.5-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kdeplasma-addons/plasma-runners-addons_5.27.5-2_amd64.deb"

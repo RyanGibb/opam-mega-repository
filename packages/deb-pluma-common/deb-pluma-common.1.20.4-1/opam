@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-python"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "pluma-common_1.20.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pluma/pluma-common_1.20.4-1_all.deb"

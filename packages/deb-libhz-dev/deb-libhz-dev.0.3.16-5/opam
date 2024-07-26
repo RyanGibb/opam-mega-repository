@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libhz0" {= "0.3.16-5"}
-  ("deb-libc6-dev" | "deb- libc-dev")
+  ("deb-libc6-dev" | "deb-libc-dev")
 ]
 extra-source "libhz-dev_0.3.16-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/z/zh-autoconvert/libhz-dev_0.3.16-5_amd64.deb"

@@ -37,7 +37,7 @@ depends: [
   "deb-libvorbisfile3" {>= "1.1.2"}
   "deb-libxml2" {>= "2.7.4"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "asterisk-modules_1:16.2.1~dfsg-1+deb10u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/asterisk/asterisk-modules_16.2.1~dfsg-1+deb10u2_amd64.deb"

@@ -21,8 +21,8 @@ depends: [
   "deb-librust-string-cache-0-8+default-dev"
   "deb-librust-term-0-5+default-dev"
   "deb-librust-unicode-xid-0-2+default-dev"
-  ("deb-librust-ena-0-14+default-dev" | "deb- librust-ena-0-13+default-dev")
-  ("deb-librust-itertools-0-9+default-dev" | "deb- librust-itertools-0-8+default-dev")
+  ("deb-librust-ena-0-14+default-dev" | "deb-librust-ena-0-13+default-dev")
+  ("deb-librust-itertools-0-9+default-dev" | "deb-librust-itertools-0-8+default-dev")
 ]
 extra-source "librust-lalrpop-dev_0.17.2-7+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-lalrpop/librust-lalrpop-dev_0.17.2-7+b1_amd64.deb"

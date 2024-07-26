@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-emacsen-common"
   "deb-install-info"
-  ("deb-emacs" | "deb- emacsen")
+  ("deb-emacs" | "deb-emacsen")
 ]
 extra-source "elpa-geiser_0.8.1-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/geiser/elpa-geiser_0.8.1-4_all.deb"

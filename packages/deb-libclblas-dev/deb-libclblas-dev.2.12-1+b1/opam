@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libclblas2" {= "2.12-1+b1"}
-  ("deb-ocl-icd-opencl-dev" | "deb- opencl-dev")
+  ("deb-ocl-icd-opencl-dev" | "deb-opencl-dev")
 ]
 extra-source "libclblas-dev_2.12-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/clblas/libclblas-dev_2.12-1+b1_amd64.deb"

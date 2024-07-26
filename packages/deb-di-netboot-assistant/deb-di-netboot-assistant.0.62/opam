@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r di-netboot-assistant"]
 ]
 depends: [
-  ("deb-wget" | "deb- curl")
+  ("deb-wget" | "deb-curl")
 ]
 extra-source "di-netboot-assistant_0.62_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/di-netboot-assistant/di-netboot-assistant_0.62_all.deb"

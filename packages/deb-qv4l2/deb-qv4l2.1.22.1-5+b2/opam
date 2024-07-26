@@ -16,7 +16,7 @@ depends: [
   "deb-libstdc++6" {>= "5"}
   "deb-libv4l-0" {= "1.22.1-5+b2"}
   "deb-libv4lconvert0" {>= "0.9.0~test5"}
-  ("deb-libqt5gui5" {>= "5.10.0"} | "deb- libqt5gui5-gles" {>= "5.10.0"})
+  ("deb-libqt5gui5" {>= "5.10.0"} | "deb-libqt5gui5-gles" {>= "5.10.0"})
 ]
 extra-source "qv4l2_1.22.1-5+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/v4l-utils/qv4l2_1.22.1-5+b2_amd64.deb"

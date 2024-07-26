@@ -10,7 +10,7 @@ depends: [
   "deb-fortune-mod" {>= "9708-31"}
   "deb-grep" {>= "2.4.2-3"}
   "deb-sed" {>= "3.02-8"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "fortunes-fr_0.65+nmu3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fortunes-fr/fortunes-fr_0.65+nmu3_all.deb"

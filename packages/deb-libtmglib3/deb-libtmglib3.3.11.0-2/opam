@@ -8,8 +8,8 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.29"}
   "deb-libgcc-s1" {>= "4.0"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libtmglib3_3.11.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lapack/libtmglib3_3.11.0-2_amd64.deb"

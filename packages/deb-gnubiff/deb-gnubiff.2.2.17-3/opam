@@ -17,7 +17,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libx11-6"
   "deb-sox"
-  ("deb-libgamin0" | "deb- libfam0")
+  ("deb-libgamin0" | "deb-libfam0")
 ]
 conflicts: [
   "deb-gbiff"

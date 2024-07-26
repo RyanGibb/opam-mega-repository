@@ -18,7 +18,7 @@ depends: [
   "deb-phosh-core" {= "24"}
   "deb-totem-plugins"
   "deb-xdg-user-dirs-gtk"
-  ("deb-phosh-phone" {= "24"} | "deb- phosh-tablet" {= "24"})
+  ("deb-phosh-phone" {= "24"} | "deb-phosh-tablet" {= "24"})
 ]
 extra-source "phosh-full_24_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/meta-phosh/phosh-full_24_amd64.deb"

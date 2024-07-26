@@ -37,7 +37,7 @@ depends: [
   "deb-erlang-tools"
   "deb-erlang-wx"
   "deb-erlang-xmerl"
-  ("deb-erlang-base" | "deb- erlang-base-hipe")
+  ("deb-erlang-base" | "deb-erlang-base-hipe")
 ]
 extra-source "erlang_1:21.2.6+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/erlang/erlang_21.2.6+dfsg-1_all.deb"

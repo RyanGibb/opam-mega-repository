@@ -16,7 +16,7 @@ depends: [
   "deb-openmpi-bin" {>= "3.0.0-1"}
   "deb-openmpi-common" {>= "4.1.4-3"}
   "deb-zlib1g-dev"
-  ("deb-gfortran-12" | "deb- gfortran-mod-15")
+  ("deb-gfortran-12" | "deb-gfortran-mod-15")
 ]
 conflicts: [
   "deb-libopenmpi-dev"

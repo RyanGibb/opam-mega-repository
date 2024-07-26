@@ -13,9 +13,9 @@ depends: [
   "deb-lsb-base" {>= "3.0-6"}
   "deb-makedumpfile"
   "deb-ucf"
-  ("deb-bsdextrautils" | "deb- bsdmainutils")
-  ("deb-busybox" | "deb- busybox-static")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-bsdextrautils" | "deb-bsdmainutils")
+  ("deb-busybox" | "deb-busybox-static")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "kdump-tools_1:1.6.8.4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kdump-tools/kdump-tools_1.6.8.4_amd64.deb"

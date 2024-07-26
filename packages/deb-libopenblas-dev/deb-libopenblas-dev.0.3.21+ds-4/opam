@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libopenblas0" {= "0.3.21+ds-4"}
-  ("deb-libopenblas-pthread-dev" | "deb- libopenblas-openmp-dev" | "deb- libopenblas-serial-dev")
+  ("deb-libopenblas-pthread-dev" | "deb-libopenblas-openmp-dev" | "deb-libopenblas-serial-dev")
 ]
 extra-source "libopenblas-dev_0.3.21+ds-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/openblas/libopenblas-dev_0.3.21+ds-4_amd64.deb"

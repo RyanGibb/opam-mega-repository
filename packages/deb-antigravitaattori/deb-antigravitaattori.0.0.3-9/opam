@@ -15,7 +15,7 @@ depends: [
   "deb-libsdl1-2debian" {>= "1.2.11"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-libtinyxml2-6-2v5"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "antigravitaattori_0.0.3-9_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/antigrav/antigravitaattori_0.0.3-9_amd64.deb"

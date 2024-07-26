@@ -11,7 +11,7 @@ depends: [
   "deb-lsb-base"
   "deb-python3-openstackclient"
   "deb-python3-q-text-as-data"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "barbican-api_1:11.0.0-3+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/barbican/barbican-api_11.0.0-3+deb11u1_all.deb"

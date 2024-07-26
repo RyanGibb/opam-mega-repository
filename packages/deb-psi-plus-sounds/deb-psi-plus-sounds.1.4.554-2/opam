@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r psi-plus-sounds"]
 ]
 depends: [
-  ("deb-psi-plus" | "deb- psi-plus-webkit")
+  ("deb-psi-plus" | "deb-psi-plus-webkit")
 ]
 extra-source "psi-plus-sounds_1.4.554-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/psi-plus/psi-plus-sounds_1.4.554-2_all.deb"

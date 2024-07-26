@@ -16,9 +16,9 @@ depends: [
   "deb-ucf"
   "deb-uwsgi"
   "deb-uwsgi-plugin-python3"
-  ("deb-dbconfig-sqlite3" | "deb- dbconfig-pgsql" | "deb- dbconfig-mysql" | "deb- dbconfig-no-thanks")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-python3-psycopg2" | "deb- python3-mysqldb")
+  ("deb-dbconfig-sqlite3" | "deb-dbconfig-pgsql" | "deb-dbconfig-mysql" | "deb-dbconfig-no-thanks")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-python3-psycopg2" | "deb-python3-mysqldb")
 ]
 extra-source "mailman3-web_0+20180916-8_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mailman-suite/mailman3-web_0+20180916-8_all.deb"

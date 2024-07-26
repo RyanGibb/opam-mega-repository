@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r golang-github-bmizerany-assert-dev"]
 ]
 depends: [
-  ("deb-golang-github-kr-pretty-dev" | "deb- golang-pretty-dev")
+  ("deb-golang-github-kr-pretty-dev" | "deb-golang-pretty-dev")
 ]
 extra-source "golang-github-bmizerany-assert-dev_0.0~git20120716-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/golang-github-bmizerany-assert/golang-github-bmizerany-assert-dev_0.0~git20120716-4_all.deb"

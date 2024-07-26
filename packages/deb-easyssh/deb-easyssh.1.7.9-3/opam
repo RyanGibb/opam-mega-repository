@@ -14,7 +14,7 @@ depends: [
   "deb-libjson-glib-1-0-0" {>= "1.5.2"}
   "deb-libpango-1-0-0" {>= "1.14.0"}
   "deb-libvte-2-91-0"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 conflicts: [
   "deb-com-github-muriloventuroso-easyssh"

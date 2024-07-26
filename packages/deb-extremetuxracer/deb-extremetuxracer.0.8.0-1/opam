@@ -15,7 +15,7 @@ depends: [
   "deb-libsfml-system2-5"
   "deb-libsfml-window2-5"
   "deb-libstdc++6" {>= "5.2"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "extremetuxracer_0.8.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/extremetuxracer/extremetuxracer_0.8.0-1_amd64.deb"

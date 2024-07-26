@@ -16,7 +16,7 @@ depends: [
   "deb-python3-packaging"
   "deb-python3-pycryptodome"
   "deb-python3-yaml"
-  ("deb-openssh-client" | "deb- python3-paramiko" {>= "2.6.0"})
+  ("deb-openssh-client" | "deb-python3-paramiko" {>= "2.6.0"})
 ]
 extra-source "ansible_2.10.7+merged+base+2.10.8+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/ansible/ansible_2.10.7+merged+base+2.10.8+dfsg-1_all.deb"

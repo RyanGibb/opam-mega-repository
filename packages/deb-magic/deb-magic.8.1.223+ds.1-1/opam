@@ -13,7 +13,7 @@ depends: [
   "deb-libx11-6"
   "deb-tcl"
   "deb-tk"
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "magic_8.1.223+ds.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/magic/magic_8.1.223+ds.1-1_amd64.deb"

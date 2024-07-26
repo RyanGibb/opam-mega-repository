@@ -13,7 +13,7 @@ depends: [
   "deb-python3-openstackclient"
   "deb-python3-q-text-as-data"
   "deb-watcher-common" {= "5.0.0-1"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "watcher-api_5.0.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/watcher/watcher-api_5.0.0-1_all.deb"

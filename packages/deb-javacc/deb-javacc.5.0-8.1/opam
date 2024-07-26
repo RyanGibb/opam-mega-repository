@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-junit"
-  ("deb-default-jre-headless" {>= "2-1.5"} | "deb- java5-runtime-headless")
+  ("deb-default-jre-headless" {>= "2-1.5"} | "deb-java5-runtime-headless")
 ]
 extra-source "javacc_5.0-8.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/j/javacc/javacc_5.0-8.1_all.deb"

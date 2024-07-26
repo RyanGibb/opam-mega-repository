@@ -12,7 +12,7 @@ depends: [
   "deb-ruby-method-source"
   "deb-ruby-thor" {< "2.0"}
   "deb-ruby-thor" {>= "0.18.1"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-railties_2:5.2.2.1+dfsg-1+deb10u3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rails/ruby-railties_5.2.2.1+dfsg-1+deb10u3_all.deb"

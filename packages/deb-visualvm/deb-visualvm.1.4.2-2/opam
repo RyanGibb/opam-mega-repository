@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libnb-platform18-java" {>= "10.0"}
   "deb-libvisualvm-jni"
-  ("deb-default-jdk" {>= "2-1.11"} | "deb- java11-sdk")
+  ("deb-default-jdk" {>= "2-1.11"} | "deb-java11-sdk")
 ]
 extra-source "visualvm_1.4.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/visualvm/visualvm_1.4.2-2_all.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-actionmailer" {>= "2-3.0~"}
   "deb-ruby-premailer" {>= "1.11.1~"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-premailer-rails_1.10.3-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-premailer-rails/ruby-premailer-rails_1.10.3-3_all.deb"

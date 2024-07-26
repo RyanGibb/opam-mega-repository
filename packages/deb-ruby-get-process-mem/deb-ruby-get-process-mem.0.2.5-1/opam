@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-ffi"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-get-process-mem_0.2.5-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-get-process-mem/ruby-get-process-mem_0.2.5-1_all.deb"

@@ -10,7 +10,7 @@ depends: [
   "deb-ruby-nio4r" {< "3.0"}
   "deb-ruby-nio4r" {>= "2.0"}
   "deb-ruby-websocket-driver" {>= "0.6.1"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-actioncable_2:5.2.2.1+dfsg-1+deb10u3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rails/ruby-actioncable_5.2.2.1+dfsg-1+deb10u3_all.deb"

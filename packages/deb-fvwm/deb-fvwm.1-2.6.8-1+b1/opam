@@ -29,7 +29,7 @@ depends: [
   "deb-libxpm4"
   "deb-libxrender1"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libperl4-corelibs-perl" | "deb- perl" {< "5.12.3-7"})
+  ("deb-libperl4-corelibs-perl" | "deb-perl" {< "5.12.3-7"})
 ]
 extra-source "fvwm_1:2.6.8-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fvwm/fvwm_2.6.8-1+b1_amd64.deb"

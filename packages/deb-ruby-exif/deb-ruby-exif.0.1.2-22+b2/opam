@@ -11,7 +11,7 @@ depends: [
   "deb-libruby" {< "1-3.2~"}
   "deb-libruby" {>= "1-3.1~0"}
   "deb-libruby3-1" {>= "3.1.2"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-exif_0.1.2-22+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-exif/ruby-exif_0.1.2-22+b2_amd64.deb"

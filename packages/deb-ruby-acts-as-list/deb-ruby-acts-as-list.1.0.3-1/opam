@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-activerecord" {>= "4.2"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-acts-as-list_1.0.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-acts-as-list/ruby-acts-as-list_1.0.3-1_all.deb"

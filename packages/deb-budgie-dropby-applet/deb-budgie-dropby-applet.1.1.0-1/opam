@@ -18,7 +18,7 @@ depends: [
   "deb-util-linux" {>= "2.31.1"}
   "deb-wmctrl"
   "deb-zenity"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "budgie-dropby-applet_1.1.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/budgie-extras/budgie-dropby-applet_1.1.0-1_all.deb"

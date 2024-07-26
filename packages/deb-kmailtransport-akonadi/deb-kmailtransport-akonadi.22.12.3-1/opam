@@ -36,7 +36,7 @@ depends: [
   "deb-libqt5core5a" {>= "5.15.1"}
   "deb-libqt5widgets5" {>= "5.7.0~"}
   "deb-libstdc++6" {>= "5"}
-  ("deb-libqt5gui5" {>= "5.7.0~"} | "deb- libqt5gui5-gles" {>= "5.7.0~"})
+  ("deb-libqt5gui5" {>= "5.7.0~"} | "deb-libqt5gui5-gles" {>= "5.7.0~"})
 ]
 extra-source "kmailtransport-akonadi_22.12.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kmailtransport/kmailtransport-akonadi_22.12.3-1_amd64.deb"

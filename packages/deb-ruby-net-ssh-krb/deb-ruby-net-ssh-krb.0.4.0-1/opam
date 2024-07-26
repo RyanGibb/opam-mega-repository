@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-gssapi" {>= "1.2.0"}
   "deb-ruby-net-ssh" {>= "2.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-net-ssh-krb_0.4.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-net-ssh-krb/ruby-net-ssh-krb_0.4.0-1_all.deb"

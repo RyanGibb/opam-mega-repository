@@ -46,8 +46,8 @@ depends: [
   "deb-ruby-sanitize" {>= "6.0~"}
   "deb-ruby-task-list" {>= "2.3.2~"}
   "deb-ruby-zip" {>= "2.3.0~"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-redmine-sqlite" | "deb- redmine-mysql" | "deb- redmine-pgsql")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-redmine-sqlite" | "deb-redmine-mysql" | "deb-redmine-pgsql")
 ]
 extra-source "redmine_5.0.4-5+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/redmine/redmine_5.0.4-5+deb12u1_all.deb"

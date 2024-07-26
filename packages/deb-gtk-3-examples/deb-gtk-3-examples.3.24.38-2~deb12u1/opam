@@ -17,7 +17,7 @@ depends: [
   "deb-libpango-1-0-0" {>= "1.44.3"}
   "deb-libpangocairo-1-0-0" {>= "1.44.0"}
   "deb-libx11-6"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gtk-3-examples_3.24.38-2~deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gtk+3.0/gtk-3-examples_3.24.38-2~deb12u1_amd64.deb"

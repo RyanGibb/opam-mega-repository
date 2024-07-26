@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-python3-any"
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.8"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-poetry-core_1.4.0-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/poetry-core/python3-poetry-core_1.4.0-4_all.deb"

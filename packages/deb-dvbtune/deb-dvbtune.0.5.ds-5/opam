@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.4"}
   "deb-libxml2" {>= "2.7.4"}
-  ("deb-udev" | "deb- makedev")
+  ("deb-udev" | "deb-makedev")
 ]
 extra-source "dvbtune_0.5.ds-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dvbtune/dvbtune_0.5.ds-5_amd64.deb"

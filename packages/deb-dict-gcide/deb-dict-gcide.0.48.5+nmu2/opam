@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r dict-gcide"]
 ]
 depends: [
-  ("deb-dictd" | "deb- dict-server")
+  ("deb-dictd" | "deb-dict-server")
 ]
 extra-source "dict-gcide_0.48.5+nmu2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/dict-gcide/dict-gcide_0.48.5+nmu2_all.deb"

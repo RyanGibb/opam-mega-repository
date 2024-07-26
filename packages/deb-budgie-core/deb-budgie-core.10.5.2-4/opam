@@ -38,7 +38,7 @@ depends: [
   "deb-libwnck-3-0" {>= "3.36.0"}
   "deb-libx11-6"
   "deb-libxcomposite1" {>= "1-0.4.5"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "budgie-core_10.5.2-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/budgie-desktop/budgie-core_10.5.2-4_amd64.deb"

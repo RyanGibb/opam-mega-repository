@@ -11,7 +11,7 @@ depends: [
   "deb-python" {>= "2.7"}
   "deb-python-any" {>= "2.6.6-7~"}
   "deb-python-gi"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gjots2_3.0.2-0.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gjots2/gjots2_3.0.2-0.1_all.deb"

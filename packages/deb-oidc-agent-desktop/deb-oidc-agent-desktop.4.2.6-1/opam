@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-oidc-agent-cli" {>= "4.2.6-1"}
   "deb-yad"
-  ("deb-xterm" | "deb- x-terminal-emulator")
+  ("deb-xterm" | "deb-x-terminal-emulator")
 ]
 extra-source "oidc-agent-desktop_4.2.6-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/oidc-agent/oidc-agent-desktop_4.2.6-1_all.deb"

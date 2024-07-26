@@ -36,7 +36,7 @@ depends: [
   "deb-libxcb-shm0"
   "deb-libxcb1"
   "deb-libxtst6"
-  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb-libqt5gui5-gles" {>= "5.15.2~"})
 ]
 extra-source "krfb_4:22.12.3-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/krfb/krfb_22.12.3-1_amd64.deb"

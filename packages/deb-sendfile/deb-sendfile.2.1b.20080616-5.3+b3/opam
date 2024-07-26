@@ -10,8 +10,8 @@ depends: [
   "deb-libdpkg-perl"
   "deb-libreadline7" {>= "6.0"}
   "deb-update-inetd"
-  ("deb-openbsd-inetd" | "deb- inet-superserver")
-  ("deb-perl" | "deb- perl5")
+  ("deb-openbsd-inetd" | "deb-inet-superserver")
+  ("deb-perl" | "deb-perl5")
 ]
 extra-source "sendfile_2.1b.20080616-5.3+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sendfile/sendfile_2.1b.20080616-5.3+b3_amd64.deb"

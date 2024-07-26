@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-librust-petgraph-dev"
   "deb-librust-petgraph-dev" {= "0.5.0-1"}
-  ("deb-librust-quickcheck-0-9-dev" | "deb- librust-quickcheck-0-8-dev")
+  ("deb-librust-quickcheck-0-9-dev" | "deb-librust-quickcheck-0-8-dev")
 ]
 extra-source "librust-petgraph+all-dev_0.5.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-petgraph/librust-petgraph+all-dev_0.5.0-1_amd64.deb"

@@ -57,7 +57,7 @@ depends: [
   "deb-libxpm4"
   "deb-ocaml-base"
   "deb-sox"
-  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb- libjack-0-125")
+  ("deb-libjack-jackd2-0" {>= "1.9.10+20150825"} | "deb-libjack-0-125")
 ]
 extra-source "liquidsoap_2.1.3-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/liquidsoap/liquidsoap_2.1.3-2_amd64.deb"

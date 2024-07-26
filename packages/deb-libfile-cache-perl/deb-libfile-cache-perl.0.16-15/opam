@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libdigest-md5-perl"
   "deb-perl"
-  ("deb-perl" {>= "5.8.0"} | "deb- libstorable-perl")
+  ("deb-perl" {>= "5.8.0"} | "deb-libstorable-perl")
 ]
 extra-source "libfile-cache-perl_0.16-15_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libf/libfile-cache-perl/libfile-cache-perl_0.16-15_all.deb"

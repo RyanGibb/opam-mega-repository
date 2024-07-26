@@ -21,8 +21,8 @@ depends: [
   "deb-sysvinit-utils"
   "deb-uuid-runtime"
   "deb-xorriso"
-  ("deb-busybox" | "deb- busybox-static" | "deb- busybox-cvs" | "deb- busybox-cvs-static")
-  ("deb-fdisk" | "deb- util-linux" {< "2.29.2-3~"})
+  ("deb-busybox" | "deb-busybox-static" | "deb-busybox-cvs" | "deb-busybox-cvs-static")
+  ("deb-fdisk" | "deb-util-linux" {< "2.29.2-3~"})
 ]
 conflicts: [
   "deb-bootcd-backup"

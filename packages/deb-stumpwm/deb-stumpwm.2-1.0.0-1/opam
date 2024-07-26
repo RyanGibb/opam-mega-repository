@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-cl-ppcre"
-  ("deb-cl-clx-sbcl" | "deb- cmucl-source")
+  ("deb-cl-clx-sbcl" | "deb-cmucl-source")
 ]
 extra-source "stumpwm_2:1.0.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/stumpwm/stumpwm_1.0.0-1_all.deb"

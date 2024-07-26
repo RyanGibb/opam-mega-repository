@@ -19,7 +19,7 @@ depends: [
   "deb-libstring-escape-perl"
   "deb-libtry-tiny-perl"
   "deb-perl-any"
-  ("deb-libscalar-list-utils-perl" {>= "1-1.45"} | "deb- perl" {>= "5.25.1"})
+  ("deb-libscalar-list-utils-perl" {>= "1-1.45"} | "deb-perl" {>= "5.25.1"})
 ]
 extra-source "licensecheck_3.0.31-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/licensecheck/licensecheck_3.0.31-3_all.deb"

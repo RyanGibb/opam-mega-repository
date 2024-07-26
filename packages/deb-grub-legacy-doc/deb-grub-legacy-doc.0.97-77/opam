@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r grub-legacy-doc"]
 ]
 depends: [
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 extra-source "grub-legacy-doc_0.97-77_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/grub/grub-legacy-doc_0.97-77_all.deb"

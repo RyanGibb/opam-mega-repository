@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-cup" {>= "0.11a+20060608"}
   "deb-java-wrappers"
-  ("deb-default-jre" | "deb- java7-runtime" | "deb- java6-runtime")
+  ("deb-default-jre" | "deb-java7-runtime" | "deb-java6-runtime")
 ]
 extra-source "weka_3.6.14-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/weka/weka_3.6.14-3_all.deb"

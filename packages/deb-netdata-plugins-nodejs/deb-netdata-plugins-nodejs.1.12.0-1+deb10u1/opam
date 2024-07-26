@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r netdata-plugins-nodejs"]
 ]
 depends: [
-  ("deb-netdata-core" {>= "1.12.0-1+deb10u1"} | "deb- netdata-core-no-sse" {>= "1.12.0-1+deb10u1"})
+  ("deb-netdata-core" {>= "1.12.0-1+deb10u1"} | "deb-netdata-core-no-sse" {>= "1.12.0-1+deb10u1"})
 ]
 extra-source "netdata-plugins-nodejs_1.12.0-1+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/netdata/netdata-plugins-nodejs_1.12.0-1+deb10u1_all.deb"

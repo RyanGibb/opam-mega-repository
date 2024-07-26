@@ -10,7 +10,7 @@ depends: [
   "deb-libcdb1"
   "deb-libdb5-3"
   "deb-skkdic-cdb"
-  ("deb-openbsd-inetd" | "deb- inet-superserver")
+  ("deb-openbsd-inetd" | "deb-inet-superserver")
 ]
 conflicts: [
   "deb-skkserv"

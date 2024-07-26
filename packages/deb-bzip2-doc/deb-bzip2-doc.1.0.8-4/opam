@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r bzip2-doc"]
 ]
 depends: [
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 extra-source "bzip2-doc_1.0.8-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/bzip2/bzip2-doc_1.0.8-4_all.deb"

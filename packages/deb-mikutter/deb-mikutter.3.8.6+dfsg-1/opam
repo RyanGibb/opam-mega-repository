@@ -33,7 +33,7 @@ depends: [
   "deb-ruby-twitter-text" {< "2.1.0"}
   "deb-ruby-typed-array" {< "0.2"}
   "deb-ruby-typed-array" {>= "0.1"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "mikutter_3.8.6+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mikutter/mikutter_3.8.6+dfsg-1_all.deb"

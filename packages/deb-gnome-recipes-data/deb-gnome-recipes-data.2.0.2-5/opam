@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r gnome-recipes-data"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gnome-recipes-data_2.0.2-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-recipes/gnome-recipes-data_2.0.2-5_all.deb"

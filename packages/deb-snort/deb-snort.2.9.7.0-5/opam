@@ -18,8 +18,8 @@ depends: [
   "deb-snort-common-libraries" {>= "2.9.7.0-5"}
   "deb-snort-rules-default" {>= "2.9.7.0-5"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-rsyslog" | "deb- system-log-daemon")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-rsyslog" | "deb-system-log-daemon")
 ]
 conflicts: [
   "deb-snort-mysql"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libmailutils-dev"
   "deb-mailutils-common" {= "1-3.10-3"}
-  ("deb-guile-2-2" | "deb- guile")
+  ("deb-guile-2-2" | "deb-guile")
 ]
 extra-source "mailutils-guile_1:3.10-3+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mailutils/mailutils-guile_3.10-3+b1_amd64.deb"

@@ -20,8 +20,8 @@ depends: [
   "deb-liblog4j1-2-java"
   "deb-libmail-java"
   "deb-librsyntaxtextarea-java"
-  ("deb-default-jdk" | "deb- java6-sdk")
-  ("deb-default-jre" | "deb- java7-runtime" | "deb- java8-runtime" | "deb- java9-runtime" | "deb- java10-runtime" | "deb- java11-runtime")
+  ("deb-default-jdk" | "deb-java6-sdk")
+  ("deb-default-jre" | "deb-java7-runtime" | "deb-java8-runtime" | "deb-java9-runtime" | "deb-java10-runtime" | "deb-java11-runtime")
 ]
 extra-source "umlet_13.3-1.3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/umlet/umlet_13.3-1.3_all.deb"

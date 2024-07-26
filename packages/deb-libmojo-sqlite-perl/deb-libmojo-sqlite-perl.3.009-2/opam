@@ -12,7 +12,7 @@ depends: [
   "deb-libsql-abstract-pg-perl"
   "deb-liburi-db-perl"
   "deb-perl-any"
-  ("deb-liburi-perl" {>= "5.12"} | "deb- liburi-perl" {< "5.11"})
+  ("deb-liburi-perl" {>= "5.12"} | "deb-liburi-perl" {< "5.11"})
 ]
 extra-source "libmojo-sqlite-perl_3.009-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libm/libmojo-sqlite-perl/libmojo-sqlite-perl_3.009-2_all.deb"

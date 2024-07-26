@@ -10,7 +10,7 @@ depends: [
   "deb-libc6" {>= "2.15"}
   "deb-libgl1"
   "deb-libstdc++6" {>= "5"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "maqview_0.2.5-10_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/maqview/maqview_0.2.5-10_amd64.deb"

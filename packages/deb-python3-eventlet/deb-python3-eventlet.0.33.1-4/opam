@@ -11,7 +11,7 @@ depends: [
   "deb-python3-dnspython"
   "deb-python3-greenlet"
   "deb-python3-six" {>= "1.10.0"}
-  ("deb-python3-monotonic" {>= "1.4"} | "deb- python3" {> "3.5"})
+  ("deb-python3-monotonic" {>= "1.4"} | "deb-python3" {> "3.5"})
 ]
 extra-source "python3-eventlet_0.33.1-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-eventlet/python3-eventlet_0.33.1-4_all.deb"

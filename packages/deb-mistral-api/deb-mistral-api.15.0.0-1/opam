@@ -14,7 +14,7 @@ depends: [
   "deb-python3-q-text-as-data"
   "deb-sysvinit-utils"
   "deb-uwsgi-plugin-python3"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "mistral-api_15.0.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mistral/mistral-api_15.0.0-1_all.deb"

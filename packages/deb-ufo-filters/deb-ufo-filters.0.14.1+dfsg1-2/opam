@@ -20,8 +20,8 @@ depends: [
   "deb-libufo0"
   "deb-ufo-filters-data" {= "0.14.1+dfsg1-2"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-ocl-icd-libopencl1" {>= "1.0"} | "deb- libopencl-1-2-1")
-  ("deb-ocl-icd-libopencl1" | "deb- libopencl1")
+  ("deb-ocl-icd-libopencl1" {>= "1.0"} | "deb-libopencl-1-2-1")
+  ("deb-ocl-icd-libopencl1" | "deb-libopencl1")
 ]
 extra-source "ufo-filters_0.14.1+dfsg1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/ufo-filters/ufo-filters_0.14.1+dfsg1-2_amd64.deb"

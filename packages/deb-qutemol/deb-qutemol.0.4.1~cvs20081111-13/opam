@@ -15,7 +15,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-libwxbase3-0-0v5" {>= "3.0.4+dfsg"}
   "deb-libwxgtk3-0-gtk3-0v5" {>= "3.0.4+dfsg"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "qutemol_0.4.1~cvs20081111-13_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qutemol/qutemol_0.4.1~cvs20081111-13_amd64.deb"

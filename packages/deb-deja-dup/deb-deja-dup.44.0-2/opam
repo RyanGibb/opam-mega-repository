@@ -17,7 +17,7 @@ depends: [
   "deb-libpango-1-0-0" {>= "1.18.0"}
   "deb-libsecret-1-0" {>= "0.18.6"}
   "deb-libsoup-3-0-0" {>= "3.0.3"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "deja-dup_44.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/d/deja-dup/deja-dup_44.0-2_amd64.deb"

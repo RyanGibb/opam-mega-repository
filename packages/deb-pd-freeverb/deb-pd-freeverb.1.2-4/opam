@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.2.5"}
-  ("deb-puredata-core" | "deb- pd")
+  ("deb-puredata-core" | "deb-pd")
 ]
 extra-source "pd-freeverb_1.2-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pd-freeverb/pd-freeverb_1.2-4_amd64.deb"

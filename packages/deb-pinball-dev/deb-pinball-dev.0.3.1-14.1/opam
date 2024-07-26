@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6-dev"
   "deb-pinball" {= "0.3.1-14.1"}
-  ("deb-libstdc++6-4-4-dev" | "deb- libstdc++-dev")
+  ("deb-libstdc++6-4-4-dev" | "deb-libstdc++-dev")
 ]
 extra-source "pinball-dev_0.3.1-14.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pinball/pinball-dev_0.3.1-14.1_amd64.deb"

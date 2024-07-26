@@ -8,8 +8,8 @@ remove: [
 depends: [
   "deb-keyboard-configuration" {= "1.221"}
   "deb-xkb-data" {>= "0.9"}
-  ("deb-console-setup-linux" | "deb- console-setup-freebsd" | "deb- hurd")
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-console-setup-linux" | "deb-console-setup-freebsd" | "deb-hurd")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 conflicts: [
   "deb-console-setup-mini"

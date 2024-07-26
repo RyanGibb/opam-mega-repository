@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libwxbase3-0-0v5" {= "3.0.4+dfsg-8"}
   "deb-wx3-0-headers" {= "3.0.4+dfsg-8"}
-  ("deb-libc6-dev" | "deb- libc-dev")
+  ("deb-libc6-dev" | "deb-libc-dev")
 ]
 extra-source "libwxbase3.0-dev_3.0.4+dfsg-8_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/wxwidgets3.0/libwxbase3.0-dev_3.0.4+dfsg-8_amd64.deb"

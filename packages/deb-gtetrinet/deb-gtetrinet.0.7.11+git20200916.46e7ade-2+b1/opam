@@ -13,7 +13,7 @@ depends: [
   "deb-libgdk-pixbuf-2-0-0" {>= "2.22.0"}
   "deb-libglib2-0-0" {>= "2.41.1"}
   "deb-libgtk-3-0" {>= "3.9.10"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "gtetrinet_0.7.11+git20200916.46e7ade-2+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gtetrinet/gtetrinet_0.7.11+git20200916.46e7ade-2+b1_amd64.deb"

@@ -13,7 +13,7 @@ depends: [
   "deb-r-cran-quadprog"
   "deb-r-cran-quantmod" {>= "0.4-9"}
   "deb-r-cran-zoo"
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "r-cran-tseries_0.10-48-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tseries/r-cran-tseries_0.10-48-1_amd64.deb"

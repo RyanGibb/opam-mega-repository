@@ -64,7 +64,7 @@ depends: [
   "deb-libx11-6"
   "deb-libxmlrpcpp2d"
   "deb-libyaml-cpp0-6" {>= "0.6.2"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "rviz_1.13.1+dfsg-1+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ros-rviz/rviz_1.13.1+dfsg-1+b3_amd64.deb"

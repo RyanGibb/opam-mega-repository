@@ -15,7 +15,7 @@ depends: [
   "deb-libgtk-3-0" {>= "3.3.16"}
   "deb-libnautilus-extension4" {>= "43.1"}
   "deb-libnotify4" {>= "0.7.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "seahorse-nautilus_3.11.92+git20230129.d59dc92f-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/seahorse-nautilus/seahorse-nautilus_3.11.92+git20230129.d59dc92f-1_amd64.deb"

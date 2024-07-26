@@ -8,8 +8,8 @@ remove: [
 depends: [
   "deb-emacsen-common" {>= "2.0.8"}
   "deb-mew-bin" {>= "1-5.3"}
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
-  ("deb-emacs-nox" | "deb- emacs" | "deb- emacs25" | "deb- emacs24" | "deb- emacs23" | "deb- emacs22" | "deb- emacs-snapshot")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
+  ("deb-emacs-nox" | "deb-emacs" | "deb-emacs25" | "deb-emacs24" | "deb-emacs23" | "deb-emacs22" | "deb-emacs-snapshot")
 ]
 conflicts: [
   "deb-mew-beta"

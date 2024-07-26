@@ -10,7 +10,7 @@ depends: [
   "deb-python-any" {>= "2.7~"}
   "deb-python-gammu" {>= "0.24"}
   "deb-python-six"
-  ("deb-python-wxgtk3-0" | "deb- python-wxgtk2-8")
+  ("deb-python-wxgtk3-0" | "deb-python-wxgtk2-8")
 ]
 extra-source "wammu_0.44-1.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/wammu/wammu_0.44-1.1_all.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-librust-enum-primitive-derive-0-2+default-dev"
   "deb-librust-num-traits-0-2+default-dev"
-  ("deb-librust-nom-7+default-dev" | "deb- librust-nom-6+default-dev" | "deb- librust-nom-5+default-dev" {>= "5.0.1-~~"})
+  ("deb-librust-nom-7+default-dev" | "deb-librust-nom-6+default-dev" | "deb-librust-nom-5+default-dev" {>= "5.0.1-~~"})
 ]
 extra-source "librust-dhcp4r-dev_0.2.3-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rust-dhcp4r/librust-dhcp4r-dev_0.2.3-3_amd64.deb"

@@ -30,7 +30,7 @@ depends: [
   "deb-systemd"
   "deb-ukui-power-manager-common" {= "1.1.2-1"}
   "deb-upower"
-  ("deb-mate-notification-daemon" | "deb- notification-daemon")
+  ("deb-mate-notification-daemon" | "deb-notification-daemon")
 ]
 extra-source "ukui-power-manager_1.1.2-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/ukui-power-manager/ukui-power-manager_1.1.2-1_amd64.deb"

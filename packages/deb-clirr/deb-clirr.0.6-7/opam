@@ -10,7 +10,7 @@ depends: [
   "deb-libbcel-java"
   "deb-libcommons-cli-java"
   "deb-libcommons-lang-java"
-  ("deb-default-jre" | "deb- java6-runtime" | "deb- java7-runtime")
+  ("deb-default-jre" | "deb-java6-runtime" | "deb-java7-runtime")
 ]
 extra-source "clirr_0.6-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/clirr/clirr_0.6-7_all.deb"

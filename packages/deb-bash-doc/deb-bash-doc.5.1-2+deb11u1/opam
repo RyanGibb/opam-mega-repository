@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r bash-doc"]
 ]
 depends: [
-  ("deb-dpkg" {>= "1.15.4"} | "deb- install-info")
+  ("deb-dpkg" {>= "1.15.4"} | "deb-install-info")
 ]
 extra-source "bash-doc_5.1-2+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/bash/bash-doc_5.1-2+deb11u1_all.deb"

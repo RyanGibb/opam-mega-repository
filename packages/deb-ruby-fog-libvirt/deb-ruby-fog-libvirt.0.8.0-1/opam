@@ -11,7 +11,7 @@ depends: [
   "deb-ruby-fog-xml" {>= "0.1.1"}
   "deb-ruby-json"
   "deb-ruby-libvirt" {>= "0.7.0"}
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-fog-libvirt_0.8.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-fog-libvirt/ruby-fog-libvirt_0.8.0-1_all.deb"

@@ -11,10 +11,10 @@ depends: [
   "deb-libjs-underscore" {>= "1.9.1~dfsg"}
   "deb-php-gd"
   "deb-php-getid3" {>= "1.9.20+dfsg"}
-  ("deb-apache2" | "deb- httpd")
-  ("deb-default-mysql-client" | "deb- virtual-mysql-client")
-  ("deb-libapache2-mod-php" | "deb- php")
-  ("deb-php-mysql" | "deb- php-mysqlnd")
+  ("deb-apache2" | "deb-httpd")
+  ("deb-default-mysql-client" | "deb-virtual-mysql-client")
+  ("deb-libapache2-mod-php" | "deb-php")
+  ("deb-php-mysql" | "deb-php-mysqlnd")
 ]
 extra-source "wordpress_5.7.11+dfsg1-0+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/w/wordpress/wordpress_5.7.11+dfsg1-0+deb11u1_all.deb"

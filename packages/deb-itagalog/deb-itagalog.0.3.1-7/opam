@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-dictionaries-common" {>= "1.23~"}
   "deb-ispell"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "itagalog_0.3.1-7_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/ispell-tl/itagalog_0.3.1-7_all.deb"

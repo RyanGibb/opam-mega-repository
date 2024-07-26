@@ -28,7 +28,7 @@ depends: [
   "deb-libstdc++6" {>= "4.5"}
   "deb-linux-perf"
   "deb-policykit-1"
-  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb-libqt5gui5-gles" {>= "5.7.0"})
 ]
 extra-source "hotspot_1.3.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/hotspot/hotspot_1.3.0-2_amd64.deb"

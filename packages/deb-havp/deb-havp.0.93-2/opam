@@ -13,7 +13,7 @@ depends: [
   "deb-libgcc1" {>= "1-3.0"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-lsb-base"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "havp_0.93-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/h/havp/havp_0.93-2_amd64.deb"

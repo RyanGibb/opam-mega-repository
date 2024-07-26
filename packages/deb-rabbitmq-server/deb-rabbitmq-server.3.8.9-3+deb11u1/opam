@@ -24,7 +24,7 @@ depends: [
   "deb-lsb-base"
   "deb-python3-any"
   "deb-socat"
-  ("deb-erlang-base" | "deb- erlang-base-hipe")
+  ("deb-erlang-base" | "deb-erlang-base-hipe")
 ]
 extra-source "rabbitmq-server_3.8.9-3+deb11u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rabbitmq-server/rabbitmq-server_3.8.9-3+deb11u1_all.deb"

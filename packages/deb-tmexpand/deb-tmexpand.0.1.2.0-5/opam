@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r tmexpand"]
 ]
 depends: [
-  ("deb-jed" | "deb- xjed")
+  ("deb-jed" | "deb-xjed")
 ]
 extra-source "tmexpand_0.1.2.0-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/tmexpand/tmexpand_0.1.2.0-5_all.deb"

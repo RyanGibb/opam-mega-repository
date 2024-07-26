@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libtool"
   "deb-pkg-config"
-  ("deb-automake" | "deb- automaken")
+  ("deb-automake" | "deb-automaken")
 ]
 extra-source "mm-common_0.9.12-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mm-common/mm-common_0.9.12-1_all.deb"

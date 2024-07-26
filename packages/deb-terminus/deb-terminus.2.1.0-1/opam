@@ -15,7 +15,7 @@ depends: [
   "deb-libkeybinder-3-0-0" {>= "0.3.0"}
   "deb-libpango-1-0-0" {>= "1.14.0"}
   "deb-libvte-2-91-0" {>= "0.44.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "terminus_2.1.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/t/terminus/terminus_2.1.0-1_amd64.deb"

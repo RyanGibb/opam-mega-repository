@@ -12,7 +12,7 @@ depends: [
   "deb-golang-go4-dev"
   "deb-golang-golang-x-net-dev"
   "deb-golang-gopkg-inf-v0-dev"
-  ("deb-golang-go-semver-dev" | "deb- golang-github-coreos-go-semver-dev")
+  ("deb-golang-go-semver-dev" | "deb-golang-github-coreos-go-semver-dev")
 ]
 extra-source "golang-github-appc-spec-dev_0.8.11+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/golang-github-appc-spec/golang-github-appc-spec-dev_0.8.11+dfsg-2_all.deb"

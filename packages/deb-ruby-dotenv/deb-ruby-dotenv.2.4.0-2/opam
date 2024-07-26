@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-dotenv"]
 ]
 depends: [
-  ("deb-ruby-any" | "deb- ruby-interpreter")
+  ("deb-ruby-any" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-dotenv_2.4.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-dotenv/ruby-dotenv_2.4.0-2_all.deb"

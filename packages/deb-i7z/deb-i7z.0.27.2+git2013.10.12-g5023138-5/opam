@@ -10,7 +10,7 @@ depends: [
   "deb-libncurses6" {>= "6"}
   "deb-libtinfo6" {>= "6"}
   "deb-msr-tools"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "i7z_0.27.2+git2013.10.12-g5023138-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/i7z/i7z_0.27.2+git2013.10.12-g5023138-5_amd64.deb"

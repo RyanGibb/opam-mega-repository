@@ -18,7 +18,7 @@ depends: [
   "deb-libsdl2-2-0-0" {>= "2.0.12"}
   "deb-libsdl2-image-2-0-0" {>= "2.0.5"}
   "deb-libstdc++6" {>= "11"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "logstalgia_1.1.4-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/logstalgia/logstalgia_1.1.4-1_amd64.deb"

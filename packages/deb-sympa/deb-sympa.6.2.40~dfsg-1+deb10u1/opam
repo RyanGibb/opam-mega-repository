@@ -57,9 +57,9 @@ depends: [
   "deb-perl" {>= "5.8"}
   "deb-perl-any"
   "deb-sqlite3"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-default-mta" | "deb- mail-transport-agent")
-  ("deb-rsyslog" | "deb- system-log-daemon")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-default-mta" | "deb-mail-transport-agent")
+  ("deb-rsyslog" | "deb-system-log-daemon")
 ]
 conflicts: [
   "deb-wwsympa"

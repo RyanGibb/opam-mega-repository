@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.29"}
-  ("deb-puredata" | "deb- pd")
+  ("deb-puredata" | "deb-pd")
 ]
 extra-source "pd-iemlib_1.22.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pd-iemlib/pd-iemlib_1.22.1-1_amd64.deb"

@@ -46,7 +46,7 @@ depends: [
   "deb-python3" {>= "3.9~"}
   "deb-python3-9"
   "deb-python3-any"
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "obs-studio_26.1.2+dfsg1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/obs-studio/obs-studio_26.1.2+dfsg1-2_amd64.deb"

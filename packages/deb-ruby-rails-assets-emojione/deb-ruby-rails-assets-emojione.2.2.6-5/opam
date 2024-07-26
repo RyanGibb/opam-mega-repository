@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libjs-emojione"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-rails-assets-emojione_2.2.6-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-rails-assets-emojione/ruby-rails-assets-emojione_2.2.6-5_all.deb"

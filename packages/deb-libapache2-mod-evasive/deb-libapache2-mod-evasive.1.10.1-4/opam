@@ -9,7 +9,7 @@ depends: [
   "deb-apache2-bin"
   "deb-apache2-bin" {>= "2.4.16"}
   "deb-libc6" {>= "2.4"}
-  ("deb-bsd-mailx" | "deb- mailx")
+  ("deb-bsd-mailx" | "deb-mailx")
 ]
 extra-source "libapache2-mod-evasive_1.10.1-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/liba/libapache-mod-evasive/libapache2-mod-evasive_1.10.1-4_amd64.deb"

@@ -13,7 +13,7 @@ depends: [
   "deb-libqt5dbus5" {>= "5.0.2"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-lomiri-thumbnailer-service"
-  ("deb-libqt5gui5" {>= "5.0.2"} | "deb- libqt5gui5-gles" {>= "5.0.2"})
+  ("deb-libqt5gui5" {>= "5.0.2"} | "deb-libqt5gui5-gles" {>= "5.0.2"})
 ]
 extra-source "liblomiri-thumbnailer-qt1.0_3.0.1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lomiri-thumbnailer/liblomiri-thumbnailer-qt1.0_3.0.1-1_amd64.deb"

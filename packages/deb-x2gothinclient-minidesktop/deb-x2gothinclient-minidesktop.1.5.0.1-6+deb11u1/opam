@@ -20,11 +20,11 @@ depends: [
   "deb-x2gothinclient-common" {>= "1.5.0.1-6+deb11u1"}
   "deb-xauth"
   "deb-xinit"
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-firefox-esr" | "deb- firefox" | "deb- chromium" | "deb- x-www-browser")
-  ("deb-mate-media-pulse" | "deb- hello")
-  ("deb-mate-settings-daemon-pulse" | "deb- hello")
-  ("deb-nuvola-icon-theme" | "deb- hicolor-icon-theme")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-firefox-esr" | "deb-firefox" | "deb-chromium" | "deb-x-www-browser")
+  ("deb-mate-media-pulse" | "deb-hello")
+  ("deb-mate-settings-daemon-pulse" | "deb-hello")
+  ("deb-nuvola-icon-theme" | "deb-hicolor-icon-theme")
 ]
 conflicts: [
   "deb-x2gothinclient"

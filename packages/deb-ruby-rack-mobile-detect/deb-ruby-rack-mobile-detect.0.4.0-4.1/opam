@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-ruby-rack"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-rack-mobile-detect_0.4.0-4.1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-rack-mobile-detect/ruby-rack-mobile-detect_0.4.0-4.1_all.deb"

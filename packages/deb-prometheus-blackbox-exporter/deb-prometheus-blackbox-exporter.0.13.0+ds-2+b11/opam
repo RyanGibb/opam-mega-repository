@@ -9,7 +9,7 @@ depends: [
   "deb-debconf"
   "deb-libc6" {>= "2.3.2"}
   "deb-libcap2-bin"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "prometheus-blackbox-exporter_0.13.0+ds-2+b11_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/prometheus-blackbox-exporter/prometheus-blackbox-exporter_0.13.0+ds-2+b11_amd64.deb"

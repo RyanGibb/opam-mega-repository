@@ -26,7 +26,7 @@ depends: [
   "deb-libxfixes3"
   "deb-libxtst6"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "vino_3.22.0-6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/vino/vino_3.22.0-6_amd64.deb"

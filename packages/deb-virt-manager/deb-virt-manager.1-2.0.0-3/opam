@@ -19,7 +19,7 @@ depends: [
   "deb-python3-gi-cairo"
   "deb-python3-libvirt" {>= "0.7.1"}
   "deb-virtinst" {>= "1-2.0.0-3"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "virt-manager_1:2.0.0-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/virt-manager/virt-manager_2.0.0-3_all.deb"

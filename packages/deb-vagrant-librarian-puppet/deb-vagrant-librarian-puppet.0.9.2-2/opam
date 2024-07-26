@@ -9,7 +9,7 @@ depends: [
   "deb-librarian-puppet" {>= "2.2.1"}
   "deb-puppet" {>= "4.3.2"}
   "deb-vagrant"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "vagrant-librarian-puppet_0.9.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/v/vagrant-librarian-puppet/vagrant-librarian-puppet_0.9.2-2_all.deb"

@@ -23,7 +23,7 @@ depends: [
   "deb-libwww-robotrules-perl"
   "deb-netbase"
   "deb-perl"
-  ("deb-libhttp-message-perl" {>= "6.18"} | "deb- libhttp-message-perl" {< "6.17"})
+  ("deb-libhttp-message-perl" {>= "6.18"} | "deb-libhttp-message-perl" {< "6.17"})
 ]
 extra-source "libwww-perl_6.36-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libw/libwww-perl/libwww-perl_6.36-2_all.deb"

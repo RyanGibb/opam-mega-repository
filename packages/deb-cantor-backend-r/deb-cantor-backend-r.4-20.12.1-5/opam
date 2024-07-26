@@ -25,7 +25,7 @@ depends: [
   "deb-libqt5widgets5" {>= "5.8.0~"}
   "deb-libstdc++6" {>= "5.2"}
   "deb-r-base-core"
-  ("deb-libqt5gui5" {>= "5.8.0~"} | "deb- libqt5gui5-gles" {>= "5.8.0~"})
+  ("deb-libqt5gui5" {>= "5.8.0~"} | "deb-libqt5gui5-gles" {>= "5.8.0~"})
 ]
 extra-source "cantor-backend-r_4:20.12.1-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cantor/cantor-backend-r_20.12.1-5_amd64.deb"

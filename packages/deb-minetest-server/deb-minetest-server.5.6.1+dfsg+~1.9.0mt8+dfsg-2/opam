@@ -23,7 +23,7 @@ depends: [
   "deb-minetest-data" {= "5.6.1+dfsg+~1.9.0mt8+dfsg-2"}
   "deb-sysvinit-utils"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libluajit-5-1-2" {>= "2.0.4+dfsg"} | "deb- libluajit2-5-1-2" {>= "2.1~"})
+  ("deb-libluajit-5-1-2" {>= "2.0.4+dfsg"} | "deb-libluajit2-5-1-2" {>= "2.1~"})
 ]
 extra-source "minetest-server_5.6.1+dfsg+~1.9.0mt8+dfsg-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/minetest/minetest-server_5.6.1+dfsg+~1.9.0mt8+dfsg-2_amd64.deb"

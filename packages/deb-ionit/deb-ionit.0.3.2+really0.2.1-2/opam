@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-python3-any"
   "deb-python3-jinja2"
-  ("deb-python3-yaml" | "deb- python3-ruamel-yaml")
+  ("deb-python3-yaml" | "deb-python3-ruamel-yaml")
 ]
 extra-source "ionit_0.3.2+really0.2.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/ionit/ionit_0.3.2+really0.2.1-2_all.deb"

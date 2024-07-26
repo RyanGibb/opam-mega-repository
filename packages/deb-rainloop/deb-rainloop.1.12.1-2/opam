@@ -13,8 +13,8 @@ depends: [
   "deb-php-pclzip"
   "deb-php-seclib"
   "deb-php-xml"
-  ("deb-nginx" | "deb- apache2" | "deb- httpd")
-  ("deb-php-fpm" | "deb- libapache2-mod-php")
+  ("deb-nginx" | "deb-apache2" | "deb-httpd")
+  ("deb-php-fpm" | "deb-libapache2-mod-php")
 ]
 extra-source "rainloop_1.12.1-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rainloop/rainloop_1.12.1-2_all.deb"

@@ -9,7 +9,7 @@ depends: [
   "deb-ruby-activesupport"
   "deb-ruby-html-pipeline"
   "deb-ruby-rack"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-task-list_2.0.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-task-list/ruby-task-list_2.0.0-2_all.deb"

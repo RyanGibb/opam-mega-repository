@@ -15,8 +15,8 @@ depends: [
   "deb-libpangocairo-1-0-0" {>= "1.14.0"}
   "deb-libupower-glib3" {>= "0.99.8"}
   "deb-upower" {>= "0.99"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
-  ("deb-default-dbus-session-bus" | "deb- dbus-session-bus")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
+  ("deb-default-dbus-session-bus" | "deb-dbus-session-bus")
 ]
 extra-source "gnome-power-manager_43.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnome-power-manager/gnome-power-manager_43.0-1_amd64.deb"

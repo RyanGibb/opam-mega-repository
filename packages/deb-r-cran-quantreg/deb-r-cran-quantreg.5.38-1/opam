@@ -14,8 +14,8 @@ depends: [
   "deb-r-cran-matrix"
   "deb-r-cran-matrixmodels"
   "deb-r-cran-sparsem"
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "r-cran-quantreg_5.38-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/r-cran-quantreg/r-cran-quantreg_5.38-1_amd64.deb"

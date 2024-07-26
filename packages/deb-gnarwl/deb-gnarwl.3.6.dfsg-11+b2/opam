@@ -11,7 +11,7 @@ depends: [
   "deb-libgdbm6" {>= "1.16"}
   "deb-libldap-2-4-2" {>= "2.4.7"}
   "deb-ucf"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "gnarwl_3.6.dfsg-11+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gnarwl/gnarwl_3.6.dfsg-11+b2_amd64.deb"

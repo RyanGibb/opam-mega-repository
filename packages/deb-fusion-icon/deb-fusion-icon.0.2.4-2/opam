@@ -14,7 +14,7 @@ depends: [
   "deb-python-compizconfig" {>= "0.8.14~0"}
   "deb-python-gi"
   "deb-x11-utils"
-  ("deb-compiz-gtk" | "deb- emerald")
+  ("deb-compiz-gtk" | "deb-emerald")
 ]
 extra-source "fusion-icon_0.2.4-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/f/fusion-icon/fusion-icon_0.2.4-2_all.deb"

@@ -35,8 +35,8 @@ depends: [
   "deb-libx11-6"
   "deb-libxml2" {>= "2.7.4"}
   "deb-libzip4" {>= "0.10"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
-  ("deb-libqt5gui5" {>= "5.8.0"} | "deb- libqt5gui5-gles" {>= "5.8.0"})
+  ("deb-libglu1-mesa" | "deb-libglu1")
+  ("deb-libqt5gui5" {>= "5.8.0"} | "deb-libqt5gui5-gles" {>= "5.8.0"})
 ]
 extra-source "openscad_2021.01-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/openscad/openscad_2021.01-1_amd64.deb"

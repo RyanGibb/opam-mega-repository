@@ -11,7 +11,7 @@ depends: [
   "deb-python3" {< "3.12"}
   "deb-python3" {>= "3.11~"}
   "deb-python3-any"
-  ("deb-python3-cysignal-bare" | "deb- python3-cysignals-pari")
+  ("deb-python3-cysignal-bare" | "deb-python3-cysignals-pari")
 ]
 extra-source "python3-cypari2_2.1.2-4+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/cypari2/python3-cypari2_2.1.2-4+b1_amd64.deb"

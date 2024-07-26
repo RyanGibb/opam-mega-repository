@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-libc6" {>= "2.7"}
-  ("deb-openbsd-inetd" | "deb- inet-superserver" | "deb- micro-inetd" | "deb- netcat-traditional" | "deb- systemd-sysv")
+  ("deb-openbsd-inetd" | "deb-inet-superserver" | "deb-micro-inetd" | "deb-netcat-traditional" | "deb-systemd-sysv")
 ]
 extra-source "micro-httpd_20140814-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/micro-httpd/micro-httpd_20140814-2_amd64.deb"

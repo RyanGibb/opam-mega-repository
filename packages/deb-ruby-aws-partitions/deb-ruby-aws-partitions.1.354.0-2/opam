@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ruby-aws-partitions"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-aws-partitions_1.354.0-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-aws-partitions/ruby-aws-partitions_1.354.0-2_all.deb"

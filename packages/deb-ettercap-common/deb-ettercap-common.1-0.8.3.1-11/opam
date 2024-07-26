@@ -17,7 +17,7 @@ depends: [
   "deb-libpcre2-8-0" {>= "10.22"}
   "deb-libssl3" {>= "3.0.0"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libluajit-5-1-2" {>= "2.0.4+dfsg"} | "deb- libluajit2-5-1-2" {>= "2.1~"})
+  ("deb-libluajit-5-1-2" {>= "2.0.4+dfsg"} | "deb-libluajit2-5-1-2" {>= "2.1~"})
 ]
 extra-source "ettercap-common_1:0.8.3.1-11_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/e/ettercap/ettercap-common_0.8.3.1-11_amd64.deb"

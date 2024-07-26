@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.14"}
   "deb-libfftw3-double3" {>= "3.3.5"}
   "deb-libfftw3-single3" {>= "3.3.5"}
-  ("deb-puredata-core" | "deb- pd")
+  ("deb-puredata-core" | "deb-pd")
 ]
 extra-source "pd-bsaylor_0.1-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pd-bsaylor/pd-bsaylor_0.1-5_amd64.deb"

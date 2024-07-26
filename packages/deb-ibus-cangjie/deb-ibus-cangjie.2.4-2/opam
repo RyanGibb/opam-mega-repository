@@ -11,7 +11,7 @@ depends: [
   "deb-python3-any"
   "deb-python3-gi"
   "deb-python3-pycangjie" {>= "1.0"}
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "ibus-cangjie_2.4-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/ibus-cangjie/ibus-cangjie_2.4-2_all.deb"

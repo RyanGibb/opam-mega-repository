@@ -70,7 +70,7 @@ depends: [
   "deb-udiskie"
   "deb-unattended-upgrades"
   "deb-wget"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "freedombox_19.1+deb10u2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/plinth/freedombox_19.1+deb10u2_all.deb"

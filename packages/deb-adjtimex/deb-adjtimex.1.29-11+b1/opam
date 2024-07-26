@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libc6" {>= "2.34"}
   "deb-sysvinit-utils"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "adjtimex_1.29-11+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/a/adjtimex/adjtimex_1.29-11+b1_amd64.deb"

@@ -15,7 +15,7 @@ depends: [
   "deb-libstdc++6" {>= "11"}
   "deb-r-base-core"
   "deb-r-mathlib" {>= "4.2.2.20221110"}
-  ("deb-libblas3" | "deb- libblas-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
 ]
 extra-source "qtltools_1.3.1+dfsg-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qtltools/qtltools_1.3.1+dfsg-4_amd64.deb"

@@ -22,7 +22,7 @@ depends: [
   "deb-libmrpt-system2-5" {>= "1-2.5.8+ds"}
   "deb-libopengl0"
   "deb-libstdc++6" {>= "11"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "libmrpt-opengl2.5_1:2.5.8+ds-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mrpt/libmrpt-opengl2.5_2.5.8+ds-2_amd64.deb"

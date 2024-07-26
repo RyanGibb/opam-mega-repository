@@ -16,8 +16,8 @@ depends: [
   "deb-libopenmpi3" {>= "4.1.4"}
   "deb-libstdc++6" {>= "11"}
   "deb-zlib1g" {>= "1-1.2.0"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "libgromacs7_2022.5-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/gromacs/libgromacs7_2022.5-2_amd64.deb"

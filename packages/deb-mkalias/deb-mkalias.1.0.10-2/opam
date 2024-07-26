@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r mkalias"]
 ]
 depends: [
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "mkalias_1.0.10-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mkalias/mkalias_1.0.10-2_all.deb"

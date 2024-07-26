@@ -24,9 +24,9 @@ depends: [
   "deb-python3-tomlkit"
   "deb-python3-unearth"
   "deb-python3-virtualenv"
-  ("deb-python3-importlib-metadata" | "deb- python3" {> "3.10"})
-  ("deb-python3-tomli" | "deb- python3" {> "3.11"})
-  ("deb-python3-typing-extensions" | "deb- python3" {> "3.8"})
+  ("deb-python3-importlib-metadata" | "deb-python3" {> "3.10"})
+  ("deb-python3-tomli" | "deb-python3" {> "3.11"})
+  ("deb-python3-typing-extensions" | "deb-python3" {> "3.8"})
 ]
 extra-source "python3-pdm_2.2.1+ds1-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pdm/python3-pdm_2.2.1+ds1-1_all.deb"

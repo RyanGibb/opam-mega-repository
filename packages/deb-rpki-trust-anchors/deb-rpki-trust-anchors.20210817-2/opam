@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r rpki-trust-anchors"]
 ]
 depends: [
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "rpki-trust-anchors_20210817-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/rpki-trust-anchors/rpki-trust-anchors_20210817-2_all.deb"

@@ -9,10 +9,10 @@ depends: [
   "deb-libc6" {>= "2.14"}
   "deb-libmupen64plus2"
   "deb-mupen64plus-data"
-  ("deb-mupen64plus-audio-all" | "deb- mupen64plus-audio")
-  ("deb-mupen64plus-input-all" | "deb- mupen64plus-input")
-  ("deb-mupen64plus-rsp-all" | "deb- mupen64plus-rsp")
-  ("deb-mupen64plus-video-all" | "deb- mupen64plus-video")
+  ("deb-mupen64plus-audio-all" | "deb-mupen64plus-audio")
+  ("deb-mupen64plus-input-all" | "deb-mupen64plus-input")
+  ("deb-mupen64plus-rsp-all" | "deb-mupen64plus-rsp")
+  ("deb-mupen64plus-video-all" | "deb-mupen64plus-video")
 ]
 extra-source "mupen64plus-ui-console_2.5-5_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/m/mupen64plus-ui-console/mupen64plus-ui-console_2.5-5_amd64.deb"

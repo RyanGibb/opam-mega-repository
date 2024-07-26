@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r ukui-settings-daemon-common"]
 ]
 depends: [
-  ("deb-dconf-gsettings-backend" | "deb- gsettings-backend")
+  ("deb-dconf-gsettings-backend" | "deb-gsettings-backend")
 ]
 extra-source "ukui-settings-daemon-common_3.1.1.1-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/u/ukui-settings-daemon/ukui-settings-daemon-common_3.1.1.1-3_all.deb"

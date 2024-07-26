@@ -10,7 +10,7 @@ depends: [
   "deb-libc6" {>= "2.4"}
   "deb-libdotconf0" {>= "1.0.13"}
   "deb-passwd"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "sbox-dtc_1.11.7-1+b2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/sbox-dtc/sbox-dtc_1.11.7-1+b2_amd64.deb"

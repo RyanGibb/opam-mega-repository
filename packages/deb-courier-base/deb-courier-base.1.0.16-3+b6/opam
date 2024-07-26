@@ -20,8 +20,8 @@ depends: [
   "deb-lsb-base"
   "deb-perl-any"
   "deb-sysvinit-utils" {>= "2.88dsf-50"}
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
-  ("deb-libgamin0" | "deb- libfam0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
+  ("deb-libgamin0" | "deb-libfam0")
 ]
 extra-source "courier-base_1.0.16-3+b6_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/c/courier/courier-base_1.0.16-3+b6_amd64.deb"

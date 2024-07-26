@@ -9,7 +9,7 @@ depends: [
   "deb-libc6" {>= "2.4"}
   "deb-liblibreoffice-java"
   "deb-ure"
-  ("deb-default-jre" {>= "2-1.8"} | "deb- java-runtime" {>= "8"} | "deb- java8-runtime" | "deb- jre")
+  ("deb-default-jre" {>= "2-1.8"} | "deb-java-runtime" {>= "8"} | "deb-java8-runtime" | "deb-jre")
 ]
 extra-source "libofficebean-java_4:7.4.7-1+deb12u3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libr/libreoffice/libofficebean-java_7.4.7-1+deb12u3_amd64.deb"

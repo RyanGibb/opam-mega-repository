@@ -12,7 +12,7 @@ depends: [
   "deb-python-extras"
   "deb-python-pbr"
   "deb-python2-7-any"
-  ("deb-python" {>= "2.7"} | "deb- python-argparse")
+  ("deb-python" {>= "2.7"} | "deb-python-argparse")
 ]
 extra-source "python-gear_0.5.8-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/python-gear/python-gear_0.5.8-4_all.deb"

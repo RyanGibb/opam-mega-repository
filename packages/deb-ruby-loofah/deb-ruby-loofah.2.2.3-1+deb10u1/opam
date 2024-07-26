@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-ruby-crass"
   "deb-ruby-nokogiri"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-loofah_2.2.3-1+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-loofah/ruby-loofah_2.2.3-1+deb10u1_all.deb"

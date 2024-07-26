@@ -13,9 +13,9 @@ depends: [
   "deb-libfam0"
   "deb-libgdbm6" {>= "1.16"}
   "deb-libidn11" {>= "1.13"}
-  ("deb-debconf" | "deb- debconf-2-0")
-  ("deb-default-mta" | "deb- mail-transport-agent")
-  ("deb-sysvinit-utils" {>= "2.88dsf-50"} | "deb- init-d-script")
+  ("deb-debconf" | "deb-debconf-2-0")
+  ("deb-default-mta" | "deb-mail-transport-agent")
+  ("deb-sysvinit-utils" {>= "2.88dsf-50"} | "deb-init-d-script")
 ]
 conflicts: [
   "deb-imap-server"

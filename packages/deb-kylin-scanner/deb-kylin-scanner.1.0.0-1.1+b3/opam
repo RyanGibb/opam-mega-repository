@@ -19,7 +19,7 @@ depends: [
   "deb-libsane1" {>= "1.0.27"}
   "deb-libstdc++6" {>= "11"}
   "deb-libtesseract5"
-  ("deb-libqt5gui5" {>= "5.7.0"} | "deb- libqt5gui5-gles" {>= "5.7.0"})
+  ("deb-libqt5gui5" {>= "5.7.0"} | "deb-libqt5gui5-gles" {>= "5.7.0"})
 ]
 extra-source "kylin-scanner_1.0.0-1.1+b3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kylin-scanner/kylin-scanner_1.0.0-1.1+b3_amd64.deb"

@@ -18,7 +18,7 @@ depends: [
   "deb-libvorbisfile3" {>= "1.1.2"}
   "deb-libx11-6"
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "berusky2_0.10-7+deb10u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/b/berusky2/berusky2_0.10-7+deb10u1_amd64.deb"

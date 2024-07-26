@@ -15,7 +15,7 @@ depends: [
   "deb-libsdl-mixer1-2"
   "deb-libsdl1-2debian" {>= "1.2.11"}
   "deb-raincat-data" {>= "1.1.1.2-4"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "raincat_1.1.1.2-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/raincat/raincat_1.1.1.2-4_amd64.deb"

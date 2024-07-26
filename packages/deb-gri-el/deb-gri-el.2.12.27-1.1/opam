@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-gri" {>= "2.12.1-2"}
-  ("deb-emacs" | "deb- emacsen")
+  ("deb-emacs" | "deb-emacsen")
 ]
 conflicts: [
   "deb-gri" {<= "2.12.1-1"}

@@ -22,7 +22,7 @@ depends: [
   "deb-libpangocairo-1-0-0" {>= "1.42.4"}
   "deb-libpoppler-glib8"
   "deb-mono-runtime" {>= "3.0~"}
-  ("deb-libc6" {>= "2.29"} | "deb- libc6-1" {>= "2.29"} | "deb- libc0-1" {>= "2.29"})
+  ("deb-libc6" {>= "2.29"} | "deb-libc6-1" {>= "2.29"} | "deb-libc0-1" {>= "2.29"})
 ]
 extra-source "pdfmod_0.9.1-8.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/pdfmod/pdfmod_0.9.1-8.2_all.deb"

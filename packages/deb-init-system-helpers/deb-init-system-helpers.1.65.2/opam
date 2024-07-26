@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo dpkg -r init-system-helpers"]
 ]
 depends: [
-  ("deb-usrmerge" | "deb- usr-is-merged")
+  ("deb-usrmerge" | "deb-usr-is-merged")
 ]
 extra-source "init-system-helpers_1.65.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.65.2_all.deb"

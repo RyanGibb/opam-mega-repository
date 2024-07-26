@@ -12,9 +12,9 @@ depends: [
   "deb-python3-any" {>= "3.3~"}
   "deb-python3-dev"
   "deb-scons" {>= "2.0.0"}
-  ("deb-gcc" {>= "5.0"} | "deb- g++" {>= "4.4"} | "deb- clang" {>= "3.0"})
-  ("deb-python-appdirs" | "deb- base-files" {< "7.2"})
-  ("deb-python3-appdirs" | "deb- base-files" {< "7.2"})
+  ("deb-gcc" {>= "5.0"} | "deb-g++" {>= "4.4"} | "deb-clang" {>= "3.0"})
+  ("deb-python-appdirs" | "deb-base-files" {< "7.2"})
+  ("deb-python3-appdirs" | "deb-base-files" {< "7.2"})
 ]
 extra-source "nuitka_0.6.1.1+ds-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/nuitka/nuitka_0.6.1.1+ds-1_all.deb"

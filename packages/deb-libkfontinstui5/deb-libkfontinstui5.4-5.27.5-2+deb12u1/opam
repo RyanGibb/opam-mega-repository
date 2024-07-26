@@ -18,7 +18,7 @@ depends: [
   "deb-libx11-6"
   "deb-libxcb-image0" {>= "0.2"}
   "deb-libxft2" {> "2.1.1"}
-  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb- libqt5gui5-gles" {>= "5.15.2~"})
+  ("deb-libqt5gui5" {>= "5.15.2~"} | "deb-libqt5gui5-gles" {>= "5.15.2~"})
 ]
 extra-source "libkfontinstui5_4:5.27.5-2+deb12u1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/plasma-workspace/libkfontinstui5_5.27.5-2+deb12u1_amd64.deb"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libjs-jquery-atwho" {>= "1.5.4~"}
   "deb-libjs-jquery-caret-js"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-jquery-atwho-rails_1.5.4+dfsg-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-jquery-atwho-rails/ruby-jquery-atwho-rails_1.5.4+dfsg-1_all.deb"

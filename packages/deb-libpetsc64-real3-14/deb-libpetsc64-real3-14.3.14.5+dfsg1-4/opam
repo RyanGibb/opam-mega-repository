@@ -21,9 +21,9 @@ depends: [
   "deb-libscalapack-openmpi2-1" {>= "2.1.0"}
   "deb-libsuperlu-dist6" {>= "6.2.0+dfsg1"}
   "deb-libumfpack5" {>= "1-5.6.0"}
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
-  ("deb-ocl-icd-libopencl1" | "deb- libopencl1")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
+  ("deb-ocl-icd-libopencl1" | "deb-libopencl1")
 ]
 extra-source "libpetsc64-real3.14_3.14.5+dfsg1-4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/p/petsc/libpetsc64-real3.14_3.14.5+dfsg1-4_amd64.deb"

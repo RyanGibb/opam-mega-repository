@@ -18,7 +18,7 @@ depends: [
   "deb-libstdc++6" {>= "5.2"}
   "deb-mpv"
   "deb-sox"
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "qwinff_0.2.1+git20201215-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/q/qwinff/qwinff_0.2.1+git20201215-2_amd64.deb"

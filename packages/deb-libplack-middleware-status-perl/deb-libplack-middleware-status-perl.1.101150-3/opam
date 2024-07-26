@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-libplack-perl"
   "deb-perl-any"
-  ("deb-libhttp-message-perl" | "deb- libwww-perl" {< "6"})
+  ("deb-libhttp-message-perl" | "deb-libwww-perl" {< "6"})
 ]
 extra-source "libplack-middleware-status-perl_1.101150-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/libp/libplack-middleware-status-perl/libplack-middleware-status-perl_1.101150-3_all.deb"

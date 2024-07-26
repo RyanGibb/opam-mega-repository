@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "deb-dkms" {>= "2.1.0.0"}
-  ("deb-linux-headers-amd64" | "deb- linux-headers-generic")
+  ("deb-linux-headers-amd64" | "deb-linux-headers-generic")
 ]
 extra-source "kpatch-dkms_0.6.0-0.2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/k/kpatch/kpatch-dkms_0.6.0-0.2_amd64.deb"

@@ -10,7 +10,7 @@ depends: [
   "deb-ruby-concurrent"
   "deb-ruby-concurrent-ext"
   "deb-ruby-railties"
-  ("deb-ruby" | "deb- ruby-interpreter")
+  ("deb-ruby" | "deb-ruby-interpreter")
 ]
 extra-source "ruby-peek_1.1.0-1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/r/ruby-peek/ruby-peek_1.1.0-1_all.deb"

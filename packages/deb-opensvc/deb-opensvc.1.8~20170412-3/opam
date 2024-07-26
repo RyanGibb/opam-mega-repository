@@ -8,7 +8,7 @@ remove: [
 depends: [
   "deb-lsb-base" {>= "3.0-6"}
   "deb-python"
-  ("deb-debconf" {>= "0.5"} | "deb- debconf-2-0")
+  ("deb-debconf" {>= "0.5"} | "deb-debconf-2-0")
 ]
 extra-source "opensvc_1.8~20170412-3_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/o/opensvc/opensvc_1.8~20170412-3_all.deb"

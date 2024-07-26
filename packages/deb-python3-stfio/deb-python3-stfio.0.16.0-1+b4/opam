@@ -19,8 +19,8 @@ depends: [
   "deb-python3-any"
   "deb-python3-numpy"
   "deb-zlib1g-dev"
-  ("deb-libblas3" | "deb- libblas-so-3")
-  ("deb-liblapack3" | "deb- liblapack-so-3")
+  ("deb-libblas3" | "deb-libblas-so-3")
+  ("deb-liblapack3" | "deb-liblapack-so-3")
 ]
 extra-source "python3-stfio_0.16.0-1+b4_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/s/stimfit/python3-stfio_0.16.0-1+b4_amd64.deb"

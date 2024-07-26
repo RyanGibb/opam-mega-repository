@@ -25,7 +25,7 @@ depends: [
   "deb-libxfixes3"
   "deb-libxi6" {>= "2-1.2.99.4"}
   "deb-zlib1g" {>= "1-1.1.4"}
-  ("deb-libqt5gui5" {>= "5.14.1"} | "deb- libqt5gui5-gles" {>= "5.14.1"})
+  ("deb-libqt5gui5" {>= "5.14.1"} | "deb-libqt5gui5-gles" {>= "5.14.1"})
 ]
 extra-source "lxqt-config_1.2.0-1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/l/lxqt-config/lxqt-config_1.2.0-1+b1_amd64.deb"

@@ -10,7 +10,7 @@ depends: [
   "deb-libc6" {>= "2.14"}
   "deb-libgettextpo0"
   "deb-perl-any"
-  ("deb-libwine-dev" {= "4.0-2"} | "deb- libwine-dev-i386" {= "4.0-2"})
+  ("deb-libwine-dev" {= "4.0-2"} | "deb-libwine-dev-i386" {= "4.0-2"})
 ]
 conflicts: [
   "deb-wine32-tools"

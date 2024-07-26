@@ -21,7 +21,7 @@ depends: [
   "deb-libtcl8-6" {>= "8.6.0"}
   "deb-libtogl2"
   "deb-zlib1g" {>= "1-1.2.3.3"}
-  ("deb-libglu1-mesa" | "deb- libglu1")
+  ("deb-libglu1-mesa" | "deb-libglu1")
 ]
 extra-source "libnglib-6.2_6.2.2006+really6.2.1905+dfsg-5.1+b1_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/n/netgen/libnglib-6.2_6.2.2006+really6.2.1905+dfsg-5.1+b1_amd64.deb"

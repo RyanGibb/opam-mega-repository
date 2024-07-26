@@ -20,7 +20,7 @@ depends: [
   "deb-libsigc++-2-0-0v5" {>= "2.2.0"}
   "deb-libssl3" {>= "3.0.0"}
   "deb-libstdc++6" {>= "11"}
-  ("deb-pkexec" | "deb- policykit-1")
+  ("deb-pkexec" | "deb-policykit-1")
 ]
 extra-source "grub-customizer_5.2.2-2_amd64.deb" {
   src: "http://ftp.debian.org/debian/pool/main/g/grub-customizer/grub-customizer_5.2.2-2_amd64.deb"
